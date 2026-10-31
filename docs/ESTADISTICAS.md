@@ -15,7 +15,7 @@ El navegador consulta solo el archivo `/data/traffic.json` generado durante el d
 
 ## Activación de estadísticas reales
 
-Este repositorio tiene programado un GitHub Actions diario que construye un resumen agregado. El primer despliegue **no tiene acceso a Cloudflare**; la interfaz muestra «Sin datos» sin fingir cifras.
+Este repositorio tiene programado un GitHub Actions diario que construye un resumen agregado. El despliegue todavía **no tiene acceso autorizado a Cloudflare**, pero conserva una **instantánea histórica verificada**: captura del 31/10/2026, últimas 24 horas en ese momento, Observatorio Nacional con 3 páginas vistas y 0 visitas registradas. MIDAS y Psicohistoria figuran como «Sin datos». **No representa valores en directo ni cifras diarias ni acumuladas**, y es sustituida visualmente por la serie automática en cuanto se disponga de ella.
 
 Para autorizar únicamente una lectura desde la **cuenta IDEA LAB**:
 
@@ -43,3 +43,7 @@ La API GraphQL de Web Analytics podría tener limitaciones del plan gratuito o d
 - Si no hay conexión válida, aparece **Sin datos**, nunca un cero no verificado.
 
 Fuentes: https://developers.cloudflare.com/analytics/graphql-api/getting-started/authentication/api-token-auth/ y https://developers.cloudflare.com/web-analytics/faq/.
+
+## Incidencia de conexión pendiente (31/10/2026)
+
+La causa de la pantalla «Estadísticas en preparación» fue que el workflow se ejecutó sin los dos secretos de Cloudflare necesarios. Un despliegue completado correctamente solo acredita la publicación de la interfaz, no la importación de métricas. La integración no debe describirse como funcional en tiempo real sin una ejecución de GraphQL validada. El primer corte manual está en `data/traffic-snapshot.json`, separado del flujo automático, con origen y periodo identificados.
