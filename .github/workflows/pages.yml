@@ -25,10 +25,15 @@ jobs:
         run: python3 scripts/validate_public.py
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Crear distribución de lista blanca
+        run: |
+          mkdir -p dist
+          cp index.html favicon.svg logo-idea-lab.svg icon-180.svg social-preview.svg dist/
+          test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 5
       - name: Empaquetar web corporativa
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: dist/
       - name: Publicar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
