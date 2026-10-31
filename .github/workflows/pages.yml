@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '27 5 * * *'
 permissions:
   contents: read
   pages: write
@@ -21,6 +23,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Validar agregados y separación de cuentas
+        run: python3 -m unittest discover -s scripts -p 'test_traffic.py' -v
+      - name: Construir resumen estadístico público
+        env:
+          IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
+          IDEALAB_CF_ACCOUNT_ID: ${{ secrets.IDEALAB_CF_ACCOUNT_ID }}
+        run: python3 scripts/build_traffic.py
       - name: Auditar independencia y artefactos
         run: python3 scripts/validate_public.py
       - name: Preparar GitHub Pages
@@ -28,8 +37,11 @@ jobs:
       - name: Crear distribución de lista blanca
         run: |
           mkdir -p dist
-          cp index.html favicon.svg logo-idea-lab.svg icon-180.svg social-preview.svg dist/
-          test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 5
+          cp index.html stats.js favicon.svg logo-idea-lab.svg icon-180.svg social-preview.svg dist/
+          mkdir -p dist/data
+          cp data/traffic.json dist/data/traffic.json
+          test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 6
+          test -f dist/data/traffic.json
       - name: Empaquetar web corporativa
         uses: actions/upload-pages-artifact@v4
         with:
