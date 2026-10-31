@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "status": "manual_verified_snapshot",
+  "observationDate": "2026-10-31",
+  "period": "Últimas 24 horas en el momento de la captura",
+  "source": "Captura del panel de Cloudflare Web Analytics aportada por el responsable de IDEA LAB",
+  "values": {
+    "observatorio": {
+      "visits": 0,
+      "pageViews": 3
+    }
+  }
+}
