@@ -50,27 +50,31 @@ function chart(rows,field){
       '<span>'+escape(r.day.slice(5))+'</span></div>';
    }).join("")+'</div>';
 }
-function draw(records,period=7,metric="pageViews"){
+function draw(records,period=7,metric="visits",meta={}){
  const rows=metricDays(records,period);
- const perSite=sites.map(s=>({s,views:total(rows,s.id,"pageViews"),visits:total(rows,s.id,"visits")}));
- const allKnown=perSite.every(x=>x.views!==null&&x.visits!==null);
+ const perSite=sites.map(s=>({s,pageViews:total(rows,s.id,"pageViews"),visits:total(rows,s.id,"visits")}));
+ const allKnown=perSite.every(x=>x.pageViews!==null&&x.visits!==null);
  const visits=allKnown?perSite.reduce((v,s)=>v+s.visits,0):null;
- const pageViews=allKnown?perSite.reduce((v,s)=>v+s.views,0):null;
- const maximum=Math.max(1,...perSite.map(x=>x[metric]??0));
- root.innerHTML='<div class="stat-head"><div><span class="eyebrow">Audiencia de nuestros productos</span><h3>Tráfico y alcance digital</h3><p>Datos agregados y verificables. Las visitas no equivalen a personas distintas.</p></div>'+
+ const pageViews=allKnown?perSite.reduce((v,s)=>v+s.pageViews,0):null;
+ const maximum=Math.max(1,...perSite.map(x=>x.visits??0));
+ root.innerHTML='<div class="stat-head"><div><span class="eyebrow">Audiencia de nuestros productos</span><h3>Visitas a nuestras webs públicas</h3><p>Entradas registradas a cada web y páginas consultadas dentro de ellas. No equivalen a personas únicas.</p></div>'+
  '<div class="stat-filters"><label>Periodo<select id="stat-period"><option value="7"'+(period===7?" selected":"")+'>7 días</option><option value="30"'+(period===30?" selected":"")+'>30 días</option></select></label>'+
- '<label>Medida<select id="stat-metric"><option value="pageViews"'+(metric==="pageViews"?" selected":"")+'>Páginas vistas</option><option value="visits"'+(metric==="visits"?" selected":"")+'>Visitas</option></select></label></div></div>'+
+ '<label>Medida<select id="stat-metric"><option value="visits"'+(metric==="visits"?" selected":"")+'>Visitas</option><option value="pageViews"'+(metric==="pageViews"?" selected":"")+'>Páginas vistas</option></select></label></div></div>'+
  '<div class="stat-kpis"><article><span>Visitas registradas</span><strong>'+escape(display(visits))+'</strong></article>'+
  '<article><span>Páginas vistas</span><strong>'+escape(display(pageViews))+'</strong></article>'+
- '<article><span>Productos medidos</span><strong>3</strong></article></div>'+
- '<div class="stat-content"><div class="stat-box"><div class="stat-box-title"><strong>Evolución diaria</strong><span>'+period+' días</span></div>'+
+ '<article><span>Webs monitorizadas</span><strong>3</strong></article></div>'+
+ '<div class="stat-content"><div class="stat-box"><div class="stat-box-title"><strong>Evolución diaria</strong><span>'+escape(metric==="visits"?"Visitas":"Páginas vistas")+' · '+period+' días</span></div>'+
  chart(rows,metric)+'</div>'+
- '<div class="stat-box"><div class="stat-box-title"><strong>Comparativa por producto</strong><span>'+escape(metric==="visits"?"Visitas":"Páginas vistas")+'</span></div>'+
- '<div class="stat-site-list">'+perSite.map(x=>'<article><div class="stat-site-title"><a href="'+escape(x.s.href)+'">'+escape(x.s.label)+'</a><strong>'+escape(display(x[metric]))+'</strong></div>'+
- '<p>'+escape(x.s.description)+'</p><div class="stat-progress"><i style="width:'+(x[metric]===null?0:Math.round(x[metric]/maximum*100))+'%"></i></div></article>').join("")+'</div></div></div>'+
- '<p class="stat-source">Fuente: analítica web agregada. Datos actualizados hasta '+escape(rows.at(-1)?.day||"fecha no disponible")+'. No medimos todavía clics internos ni interacción con los modelos. Los bloqueadores pueden excluir visitas.</p>';
- root.querySelector("#stat-period").addEventListener("change",ev=>draw(records,Number(ev.target.value),metric));
- root.querySelector("#stat-metric").addEventListener("change",ev=>draw(records,period,ev.target.value));
+ '<div class="stat-box"><div class="stat-box-title"><strong>Visitas por web pública</strong><span>Visitas y páginas vistas</span></div>'+
+ '<div class="stat-site-list">'+perSite.map(x=>'<article><div class="stat-site-title"><a href="'+escape(x.s.href)+'">'+escape(x.s.label)+'</a>'+
+ '<strong class="stat-site-visits">'+escape(display(x.visits))+' <small>visitas</small></strong></div>'+
+ '<p>'+escape(x.s.description)+' · <strong class="stat-site-pageviews">'+escape(display(x.pageViews))+' páginas vistas</strong></p>'+
+ '<div class="stat-progress" title="Proporción de visitas registradas"><i style="width:'+(x.visits===null?0:Math.round(x.visits/maximum*100))+'%"></i></div></article>').join("")+'</div></div></div>'+
+ '<p class="stat-source">Fuente: Cloudflare Web Analytics · Último día con datos: '+escape(rows.at(-1)?.day||"no disponible")+
+ '. '+(meta.generatedAt?'Última extracción: '+escape(meta.generatedAt.replace("T"," ").slice(0,16))+' UTC. ':'')+
+ 'Visitas = entradas registradas; páginas vistas = visualizaciones. No son personas únicas. Algunos bloqueadores impiden contabilizar visitas.</p>';
+ root.querySelector("#stat-period").addEventListener("change",ev=>draw(records,Number(ev.target.value),metric,meta));
+ root.querySelector("#stat-metric").addEventListener("change",ev=>draw(records,period,ev.target.value,meta));
 }
 function checkSnapshot(data){
  if(!data || data.schema!==1 || data.status!=="manual_verified_snapshot" ||
@@ -119,7 +123,7 @@ if(root){
   .then(r=>{if(!r.ok)throw Error("UNAVAILABLE");return r.json()})
   .then(d=>{
     const rows=checkData(d);
-    if(rows)draw(rows);
+    if(rows)draw(rows,7,"visits",d);
     else void notReady("Pendiente de conexión con el proveedor.");
   }).catch(()=>void notReady("No se pudo consultar la exportación automática."));
 }

@@ -25,6 +25,7 @@ jobs:
         run: |
           python3 -m unittest discover -s scripts -p 'test_traffic.py' -v
           node --check stats.js
+          node --test scripts/test_stats_ui.mjs
       - name: Verificar generación sin secretos ni datos simulados
         run: |
           python3 scripts/build_traffic.py
