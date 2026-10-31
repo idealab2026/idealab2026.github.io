@@ -1,0 +1,32 @@
+name: Validar dashboard público de estadísticas
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'stats.js'
+      - 'data/traffic.json'
+      - 'scripts/**'
+      - 'docs/ESTADISTICAS.md'
+      - '.github/workflows/pages.yml'
+      - '.github/workflows/stats-pr.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout institucional
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Python y JavaScript
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_traffic.py' -v
+          node --check stats.js
+      - name: Verificar generación sin secretos ni datos simulados
+        run: |
+          python3 scripts/build_traffic.py
+          python3 scripts/validate_public.py
+          test "$(python3 -c 'import json; print(json.load(open("data/traffic.json"))["status"])')" = "unconfigured"
