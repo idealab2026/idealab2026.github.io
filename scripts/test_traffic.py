@@ -11,6 +11,14 @@ traffic=module_from_spec(spec)
 spec.loader.exec_module(traffic)
 
 class TrafficExportTests(unittest.TestCase):
+    def test_manual_snapshot_uses_only_proven_values(self):
+        snapshot=json.loads((ROOT/"data"/"traffic-snapshot.json").read_text(encoding="utf-8"))
+        self.assertEqual(snapshot["status"],"manual_verified_snapshot")
+        self.assertEqual(snapshot["observationDate"],"2026-10-31")
+        self.assertEqual(snapshot["values"]["observatorio"],{"visits":0,"pageViews":3})
+        self.assertNotIn("midas",snapshot["values"])
+        self.assertNotIn("psicohistoria",snapshot["values"])
+        self.assertIn("24 horas",snapshot["period"])
     def test_prefixes_are_exact_and_not_any_path(self):
         self.assertEqual(traffic.site_for_path("/dashboard-gobierno/finanzas-publicas.html"),"observatorio")
         self.assertEqual(traffic.site_for_path("/laboratorio-cuantitativo/research.html"),"midas")

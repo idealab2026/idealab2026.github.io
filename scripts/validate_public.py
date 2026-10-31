@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 import re, sys, json
 
 ROOT = Path(__file__).resolve().parents[1]
-required = ("index.html", "stats.js", "data/traffic.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg")
+required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg")
 errors = [f"Missing public asset: {file}" for file in required if not (ROOT / file).is_file()]
 html = (ROOT / "index.html").read_text(encoding="utf-8") if (ROOT / "index.html").exists() else ""
 class Scanner(HTMLParser):
@@ -46,6 +46,25 @@ if (ROOT / "data/traffic.json").exists():
             errors.append("Unconfigured metric provider cannot publish readings")
     except (ValueError,KeyError,AttributeError,TypeError):
         errors.append("Invalid aggregate statistics JSON")
+
+if (ROOT / "data/traffic-snapshot.json").exists():
+    try:
+        snapshot=json.loads((ROOT / "data/traffic-snapshot.json").read_text(encoding="utf-8"))
+        if set(snapshot) != {"schema","status","observationDate","period","source","values"}:
+            errors.append("Unexpected snapshot fields")
+        if snapshot.get("schema") != 1 or snapshot.get("status") != "manual_verified_snapshot":
+            errors.append("Unverified snapshot")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", snapshot.get("observationDate", "")):
+            errors.append("Invalid snapshot date")
+        values=snapshot.get("values")
+        if not isinstance(values,dict) or not set(values).issubset({"observatorio","midas","psicohistoria"}):
+            errors.append("Invalid snapshot products")
+        else:
+            for point in values.values():
+                if set(point) != {"visits","pageViews"} or any(type(v)!=int or v<0 for v in point.values()):
+                    errors.append("Invalid snapshot metrics")
+    except (ValueError,TypeError,AttributeError,KeyError):
+        errors.append("Invalid snapshot JSON")
 
 for path in ROOT.rglob("*"):
     if not path.is_file() or ".git" in path.parts: continue

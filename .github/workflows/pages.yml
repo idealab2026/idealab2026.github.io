@@ -40,8 +40,10 @@ jobs:
           cp index.html stats.js favicon.svg logo-idea-lab.svg icon-180.svg social-preview.svg dist/
           mkdir -p dist/data
           cp data/traffic.json dist/data/traffic.json
+          cp data/traffic-snapshot.json dist/data/traffic-snapshot.json
           test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 6
           test -f dist/data/traffic.json
+          test -f dist/data/traffic-snapshot.json
       - name: Empaquetar web corporativa
         uses: actions/upload-pages-artifact@v4
         with:

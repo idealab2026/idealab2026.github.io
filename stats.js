@@ -72,10 +72,47 @@ function draw(records,period=7,metric="pageViews"){
  root.querySelector("#stat-period").addEventListener("change",ev=>draw(records,Number(ev.target.value),metric));
  root.querySelector("#stat-metric").addEventListener("change",ev=>draw(records,period,ev.target.value));
 }
-function notReady(reason){
+function checkSnapshot(data){
+ if(!data || data.schema!==1 || data.status!=="manual_verified_snapshot" ||
+   !/^\d{4}-\d{2}-\d{2}$/.test(data.observationDate||"") ||
+   typeof data.period!=="string" || data.period.length>100 ||
+   typeof data.values!=="object" || data.values===null) return null;
+ const valid={};
+ for(const site of sites){
+  const raw=data.values[site.id];
+  if(!raw)continue;
+  if(finite(raw.visits)===null||finite(raw.pageViews)===null)return null;
+  valid[site.id]={visits:raw.visits,pageViews:raw.pageViews};
+ }
+ return Object.keys(valid).length?{...data,values:valid}:null;
+}
+function showSnapshot(data,reason){
+ const items=sites.map(site=>{
+  const metric=data.values[site.id];
+  return '<article class="stat-snapshot-card"><div class="stat-site-title"><a href="'+escape(site.href)+'">'+escape(site.label)+'</a></div>'+
+   '<div class="stat-snapshot-counts"><span>Visitas <strong>'+escape(display(metric?.visits))+'</strong></span>'+
+   '<span>Páginas vistas <strong>'+escape(display(metric?.pageViews))+'</strong></span></div>'+
+   '<small>'+escape(metric?'Medición histórica contrastada':'Medición no disponible')+'</small></article>';
+ }).join("");
+ root.innerHTML='<div class="stat-await">'+
+  '<span class="eyebrow">Primera medición contrastada</span>'+
+  '<h3 class="stat-snapshot-title">Tráfico de nuestras webs</h3>'+
+  '<p><strong>Consulta del '+escape(data.observationDate)+'</strong> · '+escape(data.period)+'. Esta es una instantánea histórica, <strong>no son las visitas actuales ni acumuladas</strong>.</p>'+
+  '<div class="stat-snapshot-cards">'+items+'</div>'+
+  '<p class="stat-source">Fuente: captura del panel de Cloudflare Web Analytics. '+escape(reason)+
+  ' La actualización automática todavía no está autorizada.</p></div>';
+}
+async function notReady(reason){
+ try{
+  const response=await fetch("/data/traffic-snapshot.json",{cache:"no-store",credentials:"omit"});
+  if(response.ok){
+   const data=checkSnapshot(await response.json());
+   if(data){showSnapshot(data,reason);return}
+  }
+ }catch{}
  root.innerHTML='<div class="stat-await"><strong>Estadísticas en preparación</strong><p>'+escape(reason)+'</p>'+
  '<div class="stat-products">'+sites.map(s=>'<a href="'+escape(s.href)+'"><span>'+escape(s.label)+'</span><small>Sin datos publicados</small></a>').join("")+'</div>'+
- '<p>La medición de las webs está activa, pero aún no se ha configurado la exportación de cifras agregadas a este panel. No presentamos ceros ni estimaciones como visitas reales.</p></div>';
+ '<p>Las webs están instrumentadas, pero aún no se ha autorizado la exportación de estadísticas agregadas.</p></div>';
 }
 if(root){
  fetch("/data/traffic.json",{cache:"no-store",credentials:"omit"})
@@ -83,6 +120,6 @@ if(root){
   .then(d=>{
     const rows=checkData(d);
     if(rows)draw(rows);
-    else notReady("Pendiente de una primera actualización verificada desde el proveedor.");
-  }).catch(()=>notReady("No se ha podido obtener el informe. Consulta directamente la analítica del proveedor."));
+    else void notReady("Pendiente de conexión con el proveedor.");
+  }).catch(()=>void notReady("No se pudo consultar la exportación automática."));
 }
