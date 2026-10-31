@@ -54,7 +54,7 @@ if (ROOT / "data/traffic-snapshot.json").exists():
             errors.append("Unexpected snapshot fields")
         if snapshot.get("schema") != 1 or snapshot.get("status") != "manual_verified_snapshot":
             errors.append("Unverified snapshot")
-        if not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", snapshot.get("observationDate", "")):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", snapshot.get("observationDate", "")):
             errors.append("Invalid snapshot date")
         values=snapshot.get("values")
         if not isinstance(values,dict) or not set(values).issubset({"observatorio","midas","psicohistoria"}):
