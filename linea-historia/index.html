@@ -31,189 +31,37 @@ main{max-width:1740px;margin:auto;padding:clamp(18px,3vw,50px)}.eyebrow{font-siz
 .group-results{display:grid;gap:6px;max-height:290px;overflow-y:auto;margin-top:10px;padding-right:5px}
 .group-result{border:1px solid #35516a;background:#10293e;color:#e3eef8;text-align:left;border-radius:8px;padding:8px 10px;line-height:1.35;font-size:.78rem}
 .group-result:hover{border-color:var(--gold)}
-.hint{padding:10px 0 0;color:#9db0c3;font-size:.75rem}.details{display:grid;grid-template-columns:1fr auto;gap:15px;min-height:126px}.details h2{font-size:1.4rem;line-height:1.3;font-family:Georgia,serif;margin:7px 0}.details p{color:var(--muted);line-height:1.55;margin:0 0 7px;overflow-wrap:anywhere}.year{font-size:.78rem;color:var(--gold);font-weight:800}.tag{display:inline-block;font-size:.67rem;color:#fff;background:#26445b;padding:5px 8px;border-radius:6px;margin:4px 6px 0 0}.add-grid{display:grid;grid-template-columns:2fr 1fr 1.1fr;gap:10px}.add-grid input,.add-grid select,.add-grid textarea{border:1px solid #3b5772;border-radius:9px;padding:11px;background:#071b2c;color:white;width:100%}.add-grid textarea{grid-column:1/-1;min-height:75px}.add-grid button{justify-self:start}.hide{display:none}.notice{font-size:.75rem;line-height:1.5;color:#9ab0c4;margin:18px 0}.notice a{color:var(--gold)}footer{color:#8ea5ba;font-size:.75rem;border-top:1px solid var(--line);padding:20px clamp(18px,3vw,52px);margin-top:36px}
+.hint{padding:10px 0 0;color:#9db0c3;font-size:.75rem}.details{display:grid;grid-template-columns:1fr auto;gap:15px;min-height:126px}.details h2{font-size:1.4rem;line-height:1.3;font-family:Georgia,serif;margin:7px 0}.details p{color:var(--muted);line-height:1.55;margin:0 0 7px;overflow-wrap:anywhere}.year{font-size:.78rem;color:var(--gold);font-weight:800}.tag{display:inline-block;font-size:.67rem;color:#fff;background:#26445b;padding:5px 8px;border-radius:6px;margin:4px 6px 0 0}.add-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.1fr;gap:10px}.add-grid input,.add-grid select,.add-grid textarea{border:1px solid #3b5772;border-radius:9px;padding:11px;background:#071b2c;color:white;width:100%}.add-grid textarea{grid-column:1/-1;min-height:75px}.add-grid button{justify-self:start}.hide{display:none}.notice{font-size:.75rem;line-height:1.5;color:#9ab0c4;margin:18px 0}.notice a{color:var(--gold)}footer{color:#8ea5ba;font-size:.75rem;border-top:1px solid var(--line);padding:20px clamp(18px,3vw,52px);margin-top:36px}
 @media(max-width:700px){h1{font-size:2.65rem}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.stat{min-width:0}.search{max-width:none;min-width:100%;margin-left:0}.add-grid{grid-template-columns:1fr}.details{display:block}.timeline-inner{min-height:620px}.panel{padding:12px}}
+
+/* Cronología continua y franjas de duración */
+.era-strip{height:37px;position:relative;background:#0a1e30;border-bottom:1px solid #41566a}
+.era-block{position:absolute;top:0;height:37px;padding:10px 12px;font-size:.76rem;font-weight:800;color:#e5b768;border-left:1px solid #e5b76870;background:#d8a85e0b;white-space:nowrap;overflow:hidden}
+.era-block:nth-child(even){background:#5e9fba18}
+.era-block small{font-size:.66rem;font-weight:500;color:#c0d0df;margin-left:10px}
+.ticks{height:41px}
+.lane{height:auto}
+.era-guide{position:absolute;top:0;bottom:0;border-left:1px dashed #9ba9ba32;pointer-events:none}
+.lane-name{min-width:170px}
+.event{height:44px;display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:1px;padding:3px 9px;transform:none;border-radius:7px}
+.event:hover,.event.selected{transform:none}
+.event .event-name{font-size:.76rem;line-height:1.3;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.event .event-years{font-size:.67rem;line-height:1.3;font-weight:700;color:var(--item);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.event.duration{background:#1a3a50}
+.event-count{position:absolute;top:4px;right:6px;color:#0b2032;background:var(--item);padding:1px 4px;border-radius:6px;font-weight:800;font-size:.65rem}
+.duration-track{position:absolute;height:12px;z-index:1;pointer-events:none;border-radius:4px;background:color-mix(in srgb,var(--item) 62%,#0d2638);border:1px solid var(--item)}
+.duration-track::after{content:"";position:absolute;right:-3px;top:-3px;width:5px;height:17px;border-radius:3px;background:var(--item)}
+.figure-tools .action[disabled]{opacity:.35;cursor:default}
+@media(max-width:700px){.era-block{font-size:.7rem}.era-block small{display:none}.event{height:43px}.add-grid{grid-template-columns:1fr}}
+.timeline-scroll{cursor:grab;touch-action:pan-x pan-y}.timeline-scroll .event{cursor:pointer}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
-<main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Desplázate horizontalmente para comparar periodos y vidas simultáneas. Cada franja muestra los nombres y las fechas; amplía el zoom para separar los registros más densos.</p>
+<main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
 <div class="stats"><div class="stat"><small>Registros disponibles</small><strong id="total">—</strong></div><div class="stat"><small>Visibles en la selección</small><strong id="visible">—</strong></div><div class="stat"><small>Categorías</small><strong id="categories">7</strong></div><div class="stat"><small>Origen</small><strong>Archivo histórico</strong></div></div>
-<section class="panel" aria-label="Controles de cronología"><div class="controls"><div class="group" id="periods"><span class="group-label">Periodo</span></div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"><button class="action" id="toggle-add">+ Añadir registro</button><button class="action" id="export">Exportar mis datos</button><label class="action" for="import" style="cursor:pointer">Importar JSON</label><input type="file" accept=".json,application/json" id="import" class="hide"></div><div id="filters" class="filters"></div></section>
-<section class="panel" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Cronología</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Las tarjetas indican fechas de referencia aproximadas y los tramos subrayados, duraciones documentadas. Los registros muy próximos se agrupan al alejar el zoom; amplía o pulsa una agrupación para explorarlos. Las fechas importadas requieren verificación.</div></section>
+<section class="panel" aria-label="Controles de cronología"><div class="controls"><div class="group" id="periods"><span class="group-label">Ir a la época</span></div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"><button class="action" id="toggle-add">+ Añadir registro</button><button class="action" id="export">Exportar mis datos</button><label class="action" for="import" style="cursor:pointer">Importar JSON</label><input type="file" accept=".json,application/json" id="import" class="hide"></div><div id="filters" class="filters"></div></section>
+<section class="panel" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Una sola cronología desde el tiempo profundo hasta hoy. Las franjas representan los años reales de inicio y fin y muestran su duración. La escala horizontal cambia según la época: el ancho de diferentes épocas no es proporcional a su duración. Las fechas importadas requieren verificación histórica.</div></section>
 <section class="panel details" aria-live="polite"><div id="detail"><span class="year">Explorador histórico</span><h2>Selecciona un registro de la línea de tiempo</h2><p>Aquí aparecerán su descripción y la celda de origen del archivo, si procede.</p></div><button class="action" id="clear-detail" aria-label="Deseleccionar registro">Cerrar</button></section>
-<section class="panel hide" id="add-panel"><strong>Añadir un registro a mi cronología</strong><p class="muted">Se guarda exclusivamente en este navegador. Exporta un JSON para conservarlo o trasladarlo a otro dispositivo.</p><form id="add-form" class="add-grid"><input id="new-title" required maxlength="300" placeholder="Nombre del acontecimiento o persona"><input id="new-year" required type="number" step="0.01" placeholder="Año (a.C. negativo)"><select id="new-cat"></select><textarea id="new-note" maxlength="1200" placeholder="Descripción, fuente, contexto…"></textarea><button class="action primary" type="submit">Guardar registro</button></form></section>
+<section class="panel hide" id="add-panel"><strong>Añadir un registro a mi cronología</strong><p class="muted">Se guarda exclusivamente en este navegador. Exporta un JSON para conservarlo o trasladarlo a otro dispositivo.</p><form id="add-form" class="add-grid"><input id="new-title" required maxlength="300" placeholder="Nombre del acontecimiento o persona"><input id="new-year" required type="number" step="0.01" placeholder="Inicio (a.C. negativo)"><input id="new-end-year" type="number" step="0.01" placeholder="Fin (opcional)"><select id="new-cat"></select><textarea id="new-note" maxlength="1200" placeholder="Descripción, fuente, contexto…"></textarea><button class="action primary" type="submit">Guardar registro</button></form></section>
 <p class="notice">Este es un archivo de exploración, no una enciclopedia validada. La importación conserva posibles erratas, imprecisiones o interpretaciones del documento original. Los cambios añadidos desde la web son locales; no se sincronizan automáticamente entre dispositivos.</p></main>
 <footer>© 2026 IDEA LAB · Laboratorio de historia, datos y visualización</footer>
-<script>
-(function(){
-"use strict";
-var periods=[{k:"Contemporánea",a:1780,b:2030},{k:"Edad moderna",a:1450,b:1800},{k:"Edad media",a:450,b:1510},{k:"Antigüedad",a:-5000,b:500},{k:"Prehistoria",a:-110000,b:-3000},{k:"Tiempo profundo",a:-260000000,b:-100000}];
-var cats=["Acontecimientos","Personajes","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
-var colors=["#65bdc2","#c68dcb","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];var base=[],custom=[],period=periods[0],cat="Todas",query="",selected=null,zoom=1;
-var byId=function(id){return document.getElementById(id)};var el=function(tag,c,cls){var n=document.createElement(tag);if(c!=null)n.textContent=c;if(cls)n.className=cls;return n};
-var yearText=function(y){var n=Math.abs(y);if(n>=1000000)return "hace aprox. "+(n/1000000).toLocaleString("es-ES",{maximumFractionDigits:2})+" millones de años";if(y<0)return Math.round(n).toLocaleString("es-ES")+" a. C.";return String(Math.floor(y))+" d. C."};
-var safeStorage=function(){try{var d=JSON.parse(localStorage.getItem("idealab-historia-v1")||"[]");return Array.isArray(d)?d.filter(valid):[]}catch(e){return[]}};
-var valid=function(o){return o&&typeof o.t==="string"&&o.t.length<=500&&Number.isFinite(Number(o.y))&&Math.abs(Number(o.y))<=300000000&&cats.includes(o.c)};
-var save=function(){try{localStorage.setItem("idealab-historia-v1",JSON.stringify(custom))}catch(e){alert("No se pudo guardar. Exporta los datos antes de cerrar.")}};
-var categoryUI=function(){var f=byId("filters");f.replaceChildren();["Todas"].concat(cats).forEach(function(c,i){var b=el("button",c,"chip");b.type="button";b.setAttribute("aria-pressed",cat===c);if(i){var dot=el("i",null,"dot");dot.style.background=colors[i-1];b.prepend(dot)}b.addEventListener("click",function(){cat=c;categoryUI();render()});f.appendChild(b)})};
-var pUI=function(){var p=byId("periods");p.querySelectorAll("button").forEach(function(x){x.remove()});periods.forEach(function(k){var b=el("button",k.k,"chip");b.type="button";b.setAttribute("aria-pressed",period.k===k.k);b.addEventListener("click",function(){period=k;zoom=1;pUI();render();byId("viewport").scrollLeft=0});p.appendChild(b)})};
-var visible=function(){return base.concat(custom).filter(function(d){return Number(d.y)<=period.b&&(Number.isFinite(Number(d.e))?Number(d.e):Number(d.y))>=period.a&&(cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query))})};
-
-function detail(d){
-  selected=d;
-  var root=byId("detail");root.replaceChildren();
-  var end=Number(d.e);
-  var dateLabel=yearText(Number(d.y))+(Number.isFinite(end)&&end>Number(d.y)?" — "+yearText(end):"");
-  root.append(el("span",dateLabel,"year"));
-  root.append(el("h2",d.t));
-  if(d.d)root.append(el("p",d.d));
-  if(d.s)root.append(el("span",d.s,"tag"));
-  root.append(el("span",d.c,"tag"));
-}
-function groupDetail(group){
-  selected=group;
-  var root=byId("detail");root.replaceChildren();
-  root.append(el("span",group.groupLabel,"year"));
-  root.append(el("h2",group.children.length+" registros del periodo"));
-  root.append(el("p","Selecciona un acontecimiento para consultar su ficha completa."));
-  var list=el("div",null,"group-results");
-  group.children.forEach(function(d){
-    var b=el("button",yearText(Number(d.y))+" · "+d.t,"group-result");
-    b.type="button";b.addEventListener("click",function(){detail(d)});
-    list.append(b);
-  });
-  root.append(list);
-}
-function groupedRecords(items,c){
-  if(c!=="Actualidad"||query)return items;
-  var step=zoom<=2?1:zoom<=4?0.25:1/12;
-  var groups=new Map();
-  items.forEach(function(d){
-    var key=Math.floor((Number(d.y)+0.0000001)/step);
-    if(!groups.has(key))groups.set(key,[]);
-    groups.get(key).push(d);
-  });
-  var result=[];
-  groups.forEach(function(list,key){
-    if(list.length===1){result.push(list[0]);return}
-    var start=key*step,year=Math.floor(start+0.00001),sub="";
-    if(zoom===2)sub=" · T"+(Math.floor((start-year)*4+0.0001)+1);
-    if(zoom===4)sub=" · mes "+(Math.floor((start-year)*12+0.0001)+1);
-    result.push({id:"group-"+key+"-"+zoom,t:list[0].t,y:start,c:c,
-      children:list,groupLabel:year+sub,count:list.length});
-  });
-  return result.sort(function(a,b){return a.y-b.y});
-}
-function niceStep(raw){
-  var pow=Math.pow(10,Math.floor(Math.log10(Math.max(raw,0.00001))));
-  for(var i=0,choices=[1,2,2.5,5,10];i<choices.length;i++){
-    if(choices[i]*pow>=raw)return choices[i]*pow;
-  }
-  return 10*pow;
-}
-function render(){
-  var data=visible(),can=byId("canvas");
-  can.replaceChildren();
-  byId("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
-  byId("visible").textContent=data.length.toLocaleString("es-ES");
-  byId("period-name").textContent=period.k+" · "+yearText(period.a)+" — "+yearText(period.b);
-  byId("zoom-level").textContent="Zoom ×"+zoom;
-  byId("zoom-out").disabled=zoom<=1;
-  byId("zoom-in").disabled=zoom>=8;
-
-  var span=period.b-period.a,gutter=170;
-  var baseWidth=period.k==="Contemporánea"?Math.max(3400,span*17):
-    period.k==="Edad moderna"?Math.max(2300,span*9):
-    period.k==="Edad media"?Math.max(2600,span*3):
-    period.k==="Antigüedad"?Math.max(2600,span*.65):
-    2700;
-  var plotWidth=Math.round(baseWidth*zoom),width=plotWidth+gutter;
-  can.style.width=width+"px";
-  var scale=function(y){return gutter+Math.max(0,Math.min(1,(Number(y)-period.a)/span))*plotWidth};
-  var pxPerYear=plotWidth/span;
-  var axis=el("div",null,"ticks");
-  var step=niceStep(175/pxPerYear);
-  var first=Math.ceil(period.a/step)*step;
-  var guard=0;
-  for(var t=first;t<=period.b&&guard<200;t+=step,guard++){
-    var x=scale(t),mark=el("div",null,"tick");
-    mark.style.left=x+"px";
-    mark.append(el("span",yearText(t)));
-    axis.append(mark);
-  }
-  can.append(axis);
-  var count=0;
-  cats.forEach(function(c,i){
-    if(cat!=="Todas"&&cat!==c)return;
-    var items=data.filter(function(d){return d.c===c}).sort(function(a,b){return Number(a.y)-Number(b.y)});
-    if(!items.length&&cat==="Todas")return;
-    var drawn=groupedRecords(items,c);
-    var lane=el("div",null,"lane");
-    lane.style.setProperty("--lane-color",colors[i]);
-    var name=el("span",null,"lane-name"),swatch=el("i");
-    name.append(swatch,document.createTextNode(c+" · "+items.length));
-    lane.append(name);
-    if(!items.length){lane.style.height="82px";lane.append(el("span","Sin registros en este periodo","empty-lane"))}
-    var rowEnds=[],cardWidth=zoom>=4?244:zoom===2?224:204;
-    drawn.forEach(function(d){
-      var startX=scale(d.y);
-      var end=Number(d.e);
-      var duration=Number.isFinite(end)&&end>Number(d.y);
-      var trueWidth=duration?Math.max(0,scale(end)-startX):0;
-      var w=Math.max(cardWidth,Math.min(trueWidth,650));
-      w=Math.min(w,width-startX-8);
-      w=Math.max(64,w);
-      var row=0;
-      while(row<rowEnds.length&&rowEnds[row]>startX-9)row++;
-      rowEnds[row]=startX+w+9;
-      var b=el("button",null,"event"+(duration?" duration":""));
-      b.type="button";b.style.setProperty("--item",colors[i]);
-      b.style.left=startX+"px";b.style.top=(37+row*35)+"px";b.style.width=w+"px";
-      b.title=(d.groupLabel?d.groupLabel+" · ":"")+d.t+(d.count?" · "+d.count+" registros":"");
-      b.setAttribute("aria-label",d.count?d.groupLabel+", "+d.count+" registros: "+d.t:yearText(d.y)+", "+d.t);
-      b.append(el("span",d.groupLabel||(Number(d.y)>=1000&&Number(d.y)<3000?String(Math.floor(Number(d.y))):yearText(d.y)),"event-date"));
-      b.append(el("span",d.t,"event-name"));
-      if(d.count)b.append(el("span","+"+(d.count-1),"event-count"));
-      if(selected&&(selected.id===d.id||(d.children&&d.children.some(function(x){return x.id===selected.id}))))b.classList.add("selected");
-      b.addEventListener("click",function(){
-        if(d.children)groupDetail(d);else detail(d);
-        can.querySelectorAll(".selected").forEach(function(x){x.classList.remove("selected")});
-        b.classList.add("selected");
-      });
-      lane.append(b);
-      if(duration&&trueWidth>0){
-        var band=el("span",null,"duration-band");
-        band.style.setProperty("--item",colors[i]);
-        band.style.left=startX+"px";
-        band.style.top=(65+row*35)+"px";
-        band.style.width=trueWidth+"px";
-        band.setAttribute("aria-hidden","true");
-        lane.append(band);
-      }
-    });
-    if(items.length)lane.style.height=Math.max(84,75+rowEnds.length*35)+"px";
-    can.append(lane);count++;
-  });
-  can.style.minHeight=(58+count*82)+"px";
-}
-function setZoom(next){
-  var viewport=byId("viewport"),oldWidth=canWidth(),oldCenter=viewport.scrollLeft+viewport.clientWidth/2;
-  var fraction=Math.max(0,Math.min(1,(oldCenter-170)/Math.max(1,oldWidth-170)));
-  zoom=Math.max(1,Math.min(8,next));render();
-  viewport.scrollLeft=170+fraction*(canWidth()-170)-viewport.clientWidth/2;
-}
-function canWidth(){return byId("canvas").getBoundingClientRect().width}
-function jumpToYear(year){
-  var viewport=byId("viewport");
-  var fraction=Math.max(0,Math.min(1,(year-period.a)/(period.b-period.a)));
-  viewport.scrollLeft=170+fraction*(canWidth()-170)-viewport.clientWidth/2;
-}
-function init(){pUI();categoryUI();byId("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});byId("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});byId("jump-present").addEventListener("click",function(){jumpToYear(period.k==="Contemporánea"?2000:Math.round((period.a+period.b)/2))});var sel=byId("new-cat");cats.forEach(function(c){var opt=el("option",c);opt.value=c;sel.append(opt)});custom=safeStorage();fetch("./data.json",{cache:"no-cache"}).then(function(r){if(!r.ok)throw Error("Datos no disponibles");return r.json()}).then(function(d){base=Array.isArray(d.items)?d.items.filter(valid):[];render();jumpToYear(1900)}).catch(function(e){byId("period-name").textContent="No se pudo cargar el archivo histórico";render()});
-byId("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
-byId("toggle-add").addEventListener("click",function(){byId("add-panel").classList.toggle("hide");if(!byId("add-panel").classList.contains("hide"))byId("new-title").focus()});
-byId("clear-detail").addEventListener("click",function(){selected=null;byId("detail").replaceChildren(el("p","Selecciona otro punto para consultar su ficha."));render()});
-byId("add-form").addEventListener("submit",function(e){e.preventDefault();var entry={id:"local-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),t:byId("new-title").value.trim(),y:Number(byId("new-year").value),c:byId("new-cat").value,d:byId("new-note").value.trim(),s:"Registro personal · este navegador"};if(!valid(entry)){alert("Revisa título, fecha y categoría.");return}custom.push(entry);save();e.target.reset();var m=periods.find(function(p){return entry.y>=p.a&&entry.y<=p.b});if(m)period=m;cat="Todas";pUI();categoryUI();detail(entry);render();byId("add-panel").classList.add("hide")});
-byId("export").addEventListener("click",function(){var content=JSON.stringify({version:1,kind:"idealab-historia-private",items:custom},null,2);var a=el("a");a.href=URL.createObjectURL(new Blob([content],{type:"application/json"}));a.download="mi-cronologia.json";a.click();setTimeout(function(){URL.revokeObjectURL(a.href)},1000)});
-byId("import").addEventListener("change",async function(e){var file=e.target.files[0];if(!file)return;try{var doc=JSON.parse(await file.text());if(!Array.isArray(doc.items))throw Error("Formato no válido");var clean=doc.items.filter(valid).map(function(x){return{id:String(x.id||"local-"+Math.random()),t:x.t.slice(0,500),y:Number(x.y),c:x.c,d:String(x.d||"").slice(0,1200),s:"Importado por el usuario"}});if(!confirm("Importar "+clean.length+" registros personales adicionales?"))return;var ids=new Set(custom.map(function(v){return v.id}));clean.forEach(function(v){if(!ids.has(v.id))custom.push(v)});save();render();alert("Importación completada en este navegador.")}catch(err){alert("No se pudo importar: "+err.message)}e.target.value=""});
-}init();
-})();
-</script></body></html>
+<script defer src="./timeline-v4.js"></script></body></html>
