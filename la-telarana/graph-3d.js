@@ -17,6 +17,7 @@ function make(options){
  let nodes=[],edges=[],pos=new Map(),selection=null,hover=null,mode="focus",theme="todos",search="",yaw=-.45,pitch=.28,zoom=1,panX=0,panY=0,w=1000,h=700,dpr=1,drag=null,down=new Map(),hits=[],edgeHits=[],bandHits=[],cached=new Map(),queued=false,hoverEdge=null;
  const index=new Map(),PI=Math.PI;
  function group(n){
+  if(n&&n.topic3d&&topics.some(t=>t[0]===n.topic3d))return n.topic3d;
   if(tagged[n.id])return tagged[n.id];
   const s=(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLowerCase();
   return /mossad|inteligenc|espionaj|secreto/.test(s)?"inteligencia":/israel|iran|palestin|hamás|hamas|egipt/.test(s)?"oriente":/españ|congreso|gobierno español/.test(s)?"espana":/nazi|guerra mundial/.test(s)?"historia":/tecnol|software|digital/.test(s)?"tecnologia":/banc|financ|invers/.test(s)?"finanzas":"global";
