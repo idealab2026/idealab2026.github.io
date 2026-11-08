@@ -175,59 +175,196 @@ function periodUI(){
  });
 }
 
-var lastCardFocus=null;
+var lastCardFocus=null,wikiRequestVersion=0,wikiAbort=null,wikiCache=new Map();
+var wikiAliases={
+ "ww i":"Primera Guerra Mundial","ww ii":"Segunda Guerra Mundial",
+ "eeuu":"Estados Unidos","urs s":"Unión Soviética","urss":"Unión Soviética",
+ "imperio romano":"Imperio romano","imperio britanico":"Imperio británico",
+ "imperio otomano":"Imperio otomano","guerra del rif":"Guerra del Rif"
+};
+function wikiPlain(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim()}
+function wikipediaSearchName(d){
+ var raw=String(displayName(d)||d.t||"").trim();
+ // Strip Excel chronology suffixes, which do not belong to article titles.
+ raw=raw.replace(/\s*\(\s*\d{3,4}\s*[-–—]\s*(?:\d{2,4}|ACT)\s*\)\s*$/i,"");
+ raw=raw.replace(/\s+\b\d{1,4}\s*(?:a\.?\s*c\.?|d\.?\s*c\.?)?\s*[-–—]\s*(?:\d{1,4}\s*(?:a\.?\s*c\.?|d\.?\s*c\.?)?|ACT|actualidad)\s*$/i,"");
+ raw=raw.replace(/\s*\(\s*\d{3,4}\s*\)\s*[-–—]\s*.+$/i,"");
+ raw=raw.replace(/\s*\(\s*\d{3,4}\s*\)\s*$/i,"");
+ raw=raw.trim().replace(/\s+[-–—]\s*$/,"");
+ var canonical=wikiPlain(raw);
+ if(wikiAliases[canonical])return wikiAliases[canonical];
+ return raw||d.t;
+}
+function wikiSearchURL(term){return "https://es.wikipedia.org/w/index.php?search="+encodeURIComponent(term)}
+function wikiArticleURL(title){return "https://es.wikipedia.org/wiki/"+encodeURIComponent(String(title).replace(/ /g,"_"))}
+function wikiExternalLink(parent,href,label,cls){
+ var a=el("a",label,cls||"note-wiki");
+ a.href=href;a.target="_blank";a.rel="noopener noreferrer";a.referrerPolicy="no-referrer";parent.append(a);return a;
+}
+function wikiAPI(params,signal){
+ var uri=new URL("https://es.wikipedia.org/w/api.php");
+ uri.searchParams.set("format","json");uri.searchParams.set("formatversion","2");
+ uri.searchParams.set("origin","*");
+ Object.keys(params).forEach(function(k){uri.searchParams.set(k,String(params[k]))});
+ return fetch(uri.toString(),{signal:signal,credentials:"omit"}).then(function(r){
+  if(!r.ok)throw Error("Wikipedia ha respondido con "+r.status);
+  return r.json();
+ });
+}
+function wikiMatchTitle(d,result,query){
+ var target=wikiPlain(query);
+ if(!target||!Array.isArray(result)||!result.length)return null;
+ var perfect=result.find(function(x){return wikiPlain(x.title)===target});
+ if(perfect)return perfect.title;
+ var q=target.split(" ").filter(function(x){return x.length>2});
+ if(!q.length)return null;
+ var best=null,score=0;
+ result.forEach(function(item){
+  var title=wikiPlain(item.title),words=title.split(" ");
+  var matched=q.filter(function(w){return words.includes(w)}).length;
+  var coverage=matched/q.length,precision=matched/Math.max(q.length,words.length);
+  var strength=coverage*.75+precision*.25;
+  if(strength>score){score=strength;best=item}
+ });
+ return score>=.76&&q.length>=2?best.title:null;
+}
+function stopWikiRequest(){
+ wikiRequestVersion++;
+ if(wikiAbort){wikiAbort.abort();wikiAbort=null}
+}
 function closeNote(){
  var layer=$("note-layer");
  if(layer.classList.contains("hide"))return;
+ stopWikiRequest();
  layer.classList.add("hide");
  document.body.classList.remove("history-note-open");
  if(lastCardFocus&&typeof lastCardFocus.focus==="function")lastCardFocus.focus();
  lastCardFocus=null;
 }
-function showNote(d){
- var layer=$("note-layer"),root=$("note-body");root.replaceChildren();
+function wikiDateLine(d){
+ var label=yearText(sy(d));
+ if(duration(d))label+=" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d);
+ return label;
+}
+function wikiOpenDrawer(){
+ var layer=$("note-layer");
  if(layer.classList.contains("hide"))lastCardFocus=document.activeElement;
- $("note-kicker").textContent=d.c+" · Ficha histórica";
+ layer.classList.remove("hide");
+ document.body.classList.add("history-note-open");
+ // Not a modal: leave focus and interactions on the timeline available.
+ $("note-dialog").scrollTop=0;
+}
+function wikiFooter(parent,title){
+ var footer=el("div",null,"wiki-credits");
+ footer.append(el("span","Fuente: colaboradores de Wikipedia · texto disponible bajo licencia CC BY-SA 4.0."));
+ wikiExternalLink(footer,"https://creativecommons.org/licenses/by-sa/4.0/deed.es","Licencia","wiki-credit-link");
+ wikiExternalLink(footer,"https://es.wikipedia.org/w/index.php?title="+encodeURIComponent(title)+"&action=history","Autores e historial","wiki-credit-link");
+ parent.append(footer);
+}
+function wikiAppendText(container,raw){
+ // Plain-text extraction prevents injection of remote HTML or scripts.
+ var lines=String(raw||"").replace(/\r/g,"").split("\n"),part=[];
+ function flush(){
+  if(!part.length)return;
+  container.append(el("p",part.join(" ").trim(),"wiki-paragraph"));part=[];
+ }
+ lines.forEach(function(line){
+  var text=line.trim(),heading=/^(={2,6})\s*(.+?)\s*\1$/.exec(text);
+  if(heading){
+   flush();
+   container.append(el(heading[1].length<=2?"h3":"h4",heading[2],"wiki-section-title"));
+  }else if(!text){flush()}
+  else{part.push(text)}
+ });
+ flush();
+}
+function wikiRenderArticle(d,root,page){
+ root.replaceChildren();
+ $("note-kicker").textContent=d.c+" · Wikipedia";
+ $("note-title").textContent=String(page.title||wikipediaSearchName(d));
+ root.append(el("div",wikiDateLine(d),"note-date"));
+ var figure=page.thumbnail&&page.thumbnail.source;
+ if(typeof figure==="string"&&/^https:\/\/upload\.wikimedia\.org\//i.test(figure)){
+  var photo=el("img",null,"wiki-lead-image");
+  photo.src=figure;photo.alt="Imagen del artículo "+page.title;photo.loading="lazy";
+  photo.referrerPolicy="no-referrer";
+  photo.onerror=function(){photo.remove()};
+  root.append(photo);
+ }
+ var text=el("article",null,"wiki-article");
+ wikiAppendText(text,page.extract);
+ root.append(text);
+ var actualURL=wikiArticleURL(page.title);
+ var links=el("div",null,"wiki-actions");
+ wikiExternalLink(links,actualURL,"Abrir artículo original ↗");
+ root.append(links);
+ wikiFooter(root,page.title);
+ if(d.isTraditional)root.append(el("p","Las fechas bíblicas de la cronología proceden del archivo original y no constituyen dataciones históricas demostradas.","note-warning"));
+}
+function wikiFallback(d,root,term,reason){
+ if($("note-layer").classList.contains("hide"))return;
+ $("note-kicker").textContent=d.c+" · Wikipedia";
  $("note-title").textContent=displayName(d);
- var dates=yearText(sy(d));
- if(duration(d))dates+=" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d);
- root.append(el("div",dates,"note-date"));
- var geography=continentsOf(d);
- root.append(el("p",geography.length?"Continentes: "+geography.join(" · ")+(d._geoKind==="manual"?" (indicado manualmente)":" (asignación provisional por lugares mencionados)"):"Continente: sin localizar en el archivo","source-note"));
- root.append(el("p",d.d||"El Excel original no incluye una nota descriptiva para esta entrada. Puedes consultar Wikipedia o ampliar manualmente el registro.","note-description"));
- if(d.isTraditional)root.append(el("p","Cronología bíblica tradicional: las fechas del archivo no deben interpretarse como dataciones históricas demostradas.","note-warning"));
- if(d.s)root.append(el("p","Origen: "+d.s,"source-note"));
- var wiki=(typeof d.w==="string"&&/^https:\/\/es\.wikipedia\.org\/wiki\/[^ ]+$/i.test(d.w))?d.w:null;
- var query=displayName(d).replace(/\s+\b\d{3,4}\s*(?:a\.?\s*c\.?)?\s*[-–—].*$/i,"").trim();
- if(d.c==="Pontífices")query+=" papa";
- var href=wiki||"https://es.wikipedia.org/w/index.php?search="+encodeURIComponent(query||d.t);
- var a=el("a",wiki?"Abrir artículo en Wikipedia ↗":"Buscar en Wikipedia ↗","note-wiki");
- a.href=href;a.target="_blank";a.rel="noopener noreferrer";a.referrerPolicy="no-referrer";root.append(a);
- layer.classList.remove("hide");document.body.classList.add("history-note-open");$("note-dialog").focus();
+ root.replaceChildren();
+ root.append(el("div",wikiDateLine(d),"note-date"));
+ root.append(el("p",reason||"No se ha encontrado un artículo de Wikipedia suficientemente coincidente con este registro.","wiki-error"));
+ if(d.d)root.append(el("p","Nota original: "+d.d,"source-note"));
+ wikiExternalLink(root,wikiSearchURL(term),"Buscar este registro en Wikipedia ↗");
+}
+async function wikiLoadArticle(d,root,term,requestId,signal){
+ var cacheKey=d.w||term;
+ try{
+  var page=wikiCache.get(cacheKey);
+  if(!page){
+   var title=null;
+   if(typeof d.w==="string"&&/^https:\/\/es\.wikipedia\.org\/wiki\/[^?# ]+$/i.test(d.w)){
+    title=decodeURIComponent(d.w.split("/wiki/")[1]).replace(/_/g," ");
+   }else{
+    var results=await wikiAPI({action:"query",list:"search",srsearch:term,srnamespace:0,srlimit:6,srprop:"",utf8:1},signal);
+    title=wikiMatchTitle(d,results.query&&results.query.search,term);
+   }
+   if(!title)throw Error("No se ha encontrado una coincidencia fiable. Para evitar atribuir un artículo incorrecto, utiliza la búsqueda en Wikipedia.");
+   var details=await wikiAPI({action:"query",prop:"extracts|pageimages",titles:title,redirects:1,explaintext:1,exsectionformat:"wiki",piprop:"thumbnail",pithumbsize:600},signal);
+   page=details.query&&details.query.pages&&details.query.pages[0];
+   if(!page||page.missing||!page.extract||!String(page.extract).trim())throw Error("No hay texto disponible de este artículo mediante la API de Wikipedia.");
+   if(wikiCache.size>=50)wikiCache.delete(wikiCache.keys().next().value);
+   wikiCache.set(cacheKey,page);
+  }
+  if(requestId!==wikiRequestVersion||$("note-layer").classList.contains("hide"))return;
+  wikiRenderArticle(d,root,page);
+ }catch(err){
+  if(requestId!==wikiRequestVersion||err.name==="AbortError")return;
+  wikiFallback(d,root,term,"No se ha podido mostrar el artículo: "+err.message);
+ }
+}
+function showNote(d){
+ stopWikiRequest();
+ var root=$("note-body"),term=wikipediaSearchName(d);
+ $("note-kicker").textContent=d.c+" · Wikipedia";
+ $("note-title").textContent=displayName(d);
+ root.replaceChildren();
+ root.append(el("div",wikiDateLine(d),"note-date"));
+ root.append(el("p","Consultando el artículo en Wikipedia…","wiki-loading"));
+ wikiOpenDrawer();
+ wikiAbort=typeof AbortController!=="undefined"?new AbortController():null;
+ wikiLoadArticle(d,root,term,wikiRequestVersion,wikiAbort?wikiAbort.signal:undefined);
 }
 function showGroupNote(group){
- var layer=$("note-layer"),root=$("note-body");root.replaceChildren();
- if(layer.classList.contains("hide"))lastCardFocus=document.activeElement;
- $("note-kicker").textContent="Registros agrupados";
+ stopWikiRequest();
+ var root=$("note-body");root.replaceChildren();
+ $("note-kicker").textContent="Artículos de Wikipedia";
  $("note-title").textContent=group.groupLabel+" · "+group.children.length+" registros";
- root.append(el("p","Selecciona una de las entradas para abrir su nota y su enlace a Wikipedia."));
+ root.append(el("p","Selecciona un registro para leer su artículo de Wikipedia en este panel."));
  var list=el("div",null,"note-group-list");
  group.children.forEach(function(d){
   var b=el("button",yearText(sy(d))+" · "+d.t,"group-result");b.type="button";
   b.addEventListener("click",function(){detail(d)});
   list.append(b);
  });
- root.append(list);layer.classList.remove("hide");document.body.classList.add("history-note-open");$("note-dialog").focus();
+ root.append(list);wikiOpenDrawer();
 }
-
-function detail(d){
- selected=d;
- showNote(d);
-}
-function groupedDetail(group){
- selected=group;
- showGroupNote(group);
-}
+function detail(d){selected=d;showNote(d)}
+function groupedDetail(group){selected=group;showGroupNote(group)}
 function grouped(items,c){
  if(c!=="Actualidad"||query)return items;
  var step=zoom<=1?1:zoom<=2?.5:zoom<=4?.25:1/12,g=new Map();
