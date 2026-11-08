@@ -75,7 +75,7 @@ function setView(){var g=view==="graph";$("network").classList.toggle("hidden",!
 function render(){var q=$("search").value.toLocaleLowerCase("es").trim();$("count-nodes").textContent=data.nodes.length;$("count-edges").textContent=data.edges.length;$("count-evidence").textContent=data.edges.filter(function(e){return e.confidence==="documentado"}).length;$("demo-label").classList.remove("hidden");$("demo-label").textContent=seedError?"ERROR: NO SE CARGÓ LA BASE":demo?"EJEMPLO FICTICIO":"BASE ONENOTE · FUENTES POR CONTRASTAR";setView();renderGraph(q);renderGallery(q)}
 function transform(){return "translate("+cam.x+" "+cam.y+") scale("+cam.s+")"}
 function wrapGraphText(value,maxChars,maxLines){
- var words=String(value||"").trim().split(/\\s+/).filter(Boolean),lines=[],current="";
+ var words=String(value||"").trim().split(/\s+/).filter(Boolean),lines=[],current="";
  words.forEach(function(word){if(lines.length>=maxLines)return;
  if((current?current.length+1:0)+word.length<=maxChars){current+=(current?" ":"")+word;return}
  if(current){lines.push(current);current="";if(lines.length>=maxLines)return}
