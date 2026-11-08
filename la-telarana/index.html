@@ -63,6 +63,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./one-note-seed.js?v=20261108-2"></script>
 <script src="./podcast-vaquero-150.js?v=20261108-2"></script>
 <script src="./photo-catalog.js?v=20261109-1"></script>
+<script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script>
 (function(){
 "use strict";
@@ -466,12 +467,60 @@ function optimizedLayout(nodes,edges){
  var after=graphCrossingsAtPositions(nodes,usableEdges,positioned);
  return {positions:positioned,before:before,after:after};
 }
+function graphCrossingTotal(nodes,edges,points){
+ var valid=edges.filter(function(e){return points.has(e.a)&&points.has(e.b)&&e.a!==e.b});
+ return graphCrossingsAtPositions(nodes,valid,points);
+}
+function positionCustomNodes(coords){
+ var extra=data.nodes.filter(function(n){return !coords.has(n.id)});
+ if(!extra.length)return;
+ var occupied=Array.from(coords.values());
+ extra.forEach(function(n,idx){
+  var neighbours=data.edges.filter(function(e){return e.a===n.id||e.b===n.id})
+   .map(function(e){return coords.get(e.a===n.id?e.b:e.a)}).filter(Boolean);
+  var cx=neighbours.length?neighbours.reduce(function(sum,p){return sum+p.x},0)/neighbours.length:6200+350*(idx%3);
+  var cy=neighbours.length?neighbours.reduce(function(sum,p){return sum+p.y},0)/neighbours.length:500+250*Math.floor(idx/3);
+  var best=null,bestScore=Infinity;
+  for(var ring=1;ring<=9;ring++)for(var step=0;step<24;step++){
+   var theta=(step/24)*Math.PI*2+idx*.28;
+   var p={x:Math.round(cx+ring*275*Math.cos(theta)),y:Math.round(cy+ring*185*Math.sin(theta))};
+   var collisions=occupied.filter(function(v){return Math.abs(v.x-p.x)<250&&Math.abs(v.y-p.y)<170}).length;
+   var score=collisions*1e7+(p.x-cx)*(p.x-cx)+(p.y-cy)*(p.y-cy);
+   if(score<bestScore){best=p;bestScore=score}
+   if(collisions===0)break;
+  }
+  coords.set(n.id,best||{x:cx+300,y:cy+220});occupied.push(best||{x:cx+300,y:cy+220});
+ });
+}
 function organizeGraph(){
- var result=optimizedLayout(data.nodes,data.edges);
+ var oldPoints=new Map(data.nodes.map(function(n){return[n.id,pointPos(n)]}));
+ var before=graphCrossingTotal(data.nodes,data.edges,oldPoints);
+ var baked=window.IDEA_TELARANA_LAYOUT_V2,known=baked&&baked.positions;
+ var matched=known?data.nodes.filter(function(n){return Array.isArray(known[n.id])}).length:0;
+ var result,positions;
+ if(known&&matched>=Math.min(75,Math.ceil(data.nodes.length*.75))){
+  positions=new Map();
+  data.nodes.forEach(function(n){var p=known[n.id];if(p)positions.set(n.id,{x:Number(p[0]),y:Number(p[1])})});
+  positionCustomNodes(positions);
+  result={positions:positions,before:before,after:graphCrossingTotal(data.nodes,data.edges,positions)};
+ }else{
+  result=optimizedLayout(data.nodes,data.edges);
+ }
+ if(result.after>result.before){
+  // Evitar que una reorganización empeore el resultado anterior.
+  $("layout-graph").title="La disposición actual tiene menos cruces que la propuesta; no se ha cambiado.";
+  return
+ }
  result.positions.forEach(function(p,id){var n=getNode(id);if(n){n.x=p.x;n.y=p.y}});
  if(!demo)store();
- fitGraph();render();
- var btn=$("layout-graph");btn.title="Reordenación optimizada: "+result.before+" cruces antes, "+result.after+" después (aproximación geométrica)";
+ var focus=selection&&selection.kind==="node"?getNode(selection.id):getNode("vf150-mossad");
+ if(!focus)focus=data.nodes.find(function(n){return n.id===data.edges[0]?.a})||data.nodes[0];
+ if(focus&&matched){
+  var center=pointPos(focus);cam.s=.72;cam.x=550-(center.x+CARD_W/2)*cam.s;cam.y=325-(center.y+CARD_H/2)*cam.s;
+ }else fitGraph();
+ hoveredNodeId=null;render();
+ var btn=$("layout-graph");
+ btn.title="Cruces geométricos entre líneas: antes "+result.before+" · después "+result.after+". Usa 'Conexiones: foco' para explorar sin saturación.";
 }
 $("layout-graph").addEventListener("click",function(){if(confirm("¿Reorganizar la disposición del grafo? Se conservarán las entidades y relaciones, pero cambiará su posición."))organizeGraph()});
 $("edge-mode").addEventListener("click",function(){
