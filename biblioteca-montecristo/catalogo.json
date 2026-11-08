@@ -472,7 +472,8 @@
           "duration": "PT8M14S",
           "url": "https://www.youtube.com/watch?v=BSoTWtrNVPc"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=El%20conde%20de%20Montecristo%20Alejandro%20Dumas"
     },
     {
       "slug": "sapiens",
@@ -670,7 +671,8 @@
           "duration": "PT3M49S",
           "url": "https://www.youtube.com/watch?v=tnYPdgXAeUY"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=Sapiens.%20De%20animales%20a%20dioses%20Yuval%20Noah%20Harari"
     },
     {
       "slug": "esto-no-existe",
@@ -778,7 +780,8 @@
           "duration": "PT5M50S",
           "url": "https://www.youtube.com/watch?v=FTyjg3qwXeM"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=Esto%20no%20existe%20Juan%20Soto%20Ivars"
     },
     {
       "slug": "libertad-igualdad",
@@ -904,7 +907,8 @@
           "duration": "PT4M58S",
           "url": "https://www.youtube.com/watch?v=m7e8w1wkh9w"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=Libertad%20o%20igualdad%20Daniel%20Lacalle"
     },
     {
       "slug": "utopia",
@@ -1012,7 +1016,8 @@
           "duration": "PT8M15S",
           "url": "https://www.youtube.com/watch?v=RefniDIVtZw"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=Utop%C3%ADa%20Tom%C3%A1s%20Moro"
     },
     {
       "slug": "la-ola-que-viene",
@@ -1156,7 +1161,8 @@
           "duration": "PT5M55S",
           "url": "https://www.youtube.com/watch?v=jxyLtYfYGpc"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=La%20ola%20que%20viene%20Mustafa%20Suleyman"
     },
     {
       "slug": "psicologia-dinero",
@@ -1354,7 +1360,8 @@
           "duration": "PT9M11S",
           "url": "https://www.youtube.com/watch?v=rix-sH2byxE"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=La%20psicolog%C3%ADa%20del%20dinero%20Morgan%20Housel"
     },
     {
       "slug": "1984",
@@ -1597,7 +1604,8 @@
           "duration": "PT8M11S",
           "url": "https://www.youtube.com/watch?v=bX9nITnXfYY"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=1984%20George%20Orwell"
     },
     {
       "slug": "espana-solucion",
@@ -1633,7 +1641,8 @@
           "duration": "PT10M33S",
           "url": "https://www.youtube.com/watch?v=V2dHYG3YhDA"
         }
-      ]
+      ],
+      "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=Espa%C3%B1a%20tiene%20soluci%C3%B3n%20Iv%C3%A1n%20Espinosa%20de%20los%20Monteros"
     }
   ]
 }
