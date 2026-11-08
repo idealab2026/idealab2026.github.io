@@ -51,6 +51,7 @@ jobs:
             cp "$site/index.html" "dist/$site/index.html"
           done
           cp linea-historia/data.json dist/linea-historia/data.json
+          cp linea-historia/timeline-v4.js dist/linea-historia/timeline-v4.js
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp biblioteca-montecristo/app.js biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
           cp -R biblioteca-montecristo/infografias dist/biblioteca-montecristo/
@@ -60,6 +61,9 @@ jobs:
           test -f dist/biblioteca-montecristo/infografias/index.json
           test -f dist/linea-historia/index.html
           test -f dist/linea-historia/data.json
+          test -s dist/linea-historia/timeline-v4.js
+          node --check dist/linea-historia/timeline-v4.js
+          grep -q 'src="./timeline-v4.js"' dist/linea-historia/index.html
           test -f dist/la-telarana/index.html
           test -s dist/la-telarana/one-note-seed.js
           grep -q "IDEA_TELARANA_ONENOTE" dist/la-telarana/one-note-seed.js
