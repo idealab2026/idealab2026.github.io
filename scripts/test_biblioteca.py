@@ -66,6 +66,10 @@ class BibliotecaTests(unittest.TestCase):
             for vid, image_path in block.get("chapters", {}).items():
                 self.assertIn(vid, {c["id"] for c in slugs[slug]["chapters"]})
                 paths.append((vid, image_path))
+            for volume in block.get("volumes", []):
+                self.assertRegex(volume["id"], r"^tomo-[a-z0-9-]+$")
+                self.assertEqual(volume["image"], f"./infografias/{slug}/{volume['id']}.png")
+                paths.append((volume["id"], volume["image"]))
             for name, image_path in paths:
                 expected = f"./infografias/{slug}/{name}.png"
                 self.assertEqual(image_path, expected)
