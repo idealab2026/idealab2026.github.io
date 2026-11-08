@@ -154,7 +154,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-vaquero-150.js?v=20261108-2"></script>
 <script src="./photo-catalog.js?v=20261109-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
-<script src="./graph-3d.js?v=20261109-3"></script>
+<script src="./graph-3d.js?v=20261109-4"></script>
 <script>
 (function(){
 "use strict";
@@ -693,7 +693,7 @@ if(window.IdeaLabGraph3D){
  graph3d=window.IdeaLabGraph3D.create({
   canvas:$("canvas3d"),tooltip:$("tooltip3d"),
   getPhoto:function(n){return displayPhoto(n)},
-  onSelect:function(hit){selection={kind:hit.kind,id:hit.id};inspect();render()}
+  onSelect:function(hit){if(hit.kind==="theme"){$("theme3d").value=hit.id;graph3d.setTheme(hit.id);return}selection={kind:hit.kind,id:hit.id};inspect();render()}
  });
 }
 render();if(graph3d)graph3d.fit();hydrateWikipediaPhotos();
