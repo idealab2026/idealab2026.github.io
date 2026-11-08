@@ -109,6 +109,35 @@ function make(options){
   ctx.fillText(title+" · "+(theme==="todos"?nodes.length:nodes.filter(n=>group(n)===theme).length)+" entidades",16,75);
   ctx.fillStyle="#93aabf";ctx.font="11px system-ui";ctx.fillText("Arrastra para rotar · dos dedos para mover · zoom solo con + / −",16,93);
  }
+ function fitView(){
+  // Ajuste real del contenido: usa todas las posiciones visibles tras la proyección.
+  const box=canvas.getBoundingClientRect();
+  if(box.width<10||box.height<10||!nodes.length)return;
+  w=box.width;h=box.height;
+  const shown=nodes.filter(n=>(theme==="todos"||group(n)===theme)&&(!search||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(search)));
+  const target=shown.length?shown:nodes;
+  const projected=target.map(n=>proj(pos.get(n.id)||{x:0,y:0,z:0}));
+  const xmin=Math.min(...projected.map(p=>p.x)),xmax=Math.max(...projected.map(p=>p.x));
+  const ymin=Math.min(...projected.map(p=>p.y)),ymax=Math.max(...projected.map(p=>p.y));
+  // El inspector en fullscreen cubre la parte derecha de la escena.
+  const panel=canvas.closest(".graph-panel");
+  const inspectorOpen=panel&&panel.classList.contains("drawer-open");
+  const aside=inspectorOpen?panel.querySelector(".inspector"):null;
+  const reserved=aside?Math.min(aside.getBoundingClientRect().width,w*.55):0;
+  const left=36,right=w-reserved-36,top=h<530?92:115,bottom=h-(h<530?82:100);
+  const usableX=Math.max(80,right-left),usableY=Math.max(80,bottom-top);
+  const baseZoom=Math.max(.0001,zoom);
+  const dx=Math.max(1,(xmax-xmin)/baseZoom),dy=Math.max(1,(ymax-ymin)/baseZoom);
+  const fitZoom=clip(Math.min((usableX-55)/dx,(usableY-60)/dy),.08,7);
+  // Ajuste + centrado exacto para la orientación de cámara actual.
+  zoom=fitZoom;
+  const center=proj({x:0,y:0,z:0});
+  const expectedX=(xmin+xmax)/2-w/2-panX,expectedY=(ymin+ymax)/2-h/2-panY;
+  panX=(left+right)/2-w/2-(expectedX/baseZoom)*fitZoom;
+  panY=(top+bottom)/2-h/2-(expectedY/baseZoom)*fitZoom;
+  redraw();
+  return{zoom,visible:target.length,availableWidth:usableX,availableHeight:usableY};
+ }
  function redraw(){if(queued)return;queued=true;requestAnimationFrame(render)}
  function hit(p){
   for(let i=hits.length-1;i>=0;i--){const n=hits[i];if(Math.hypot(p.x-n.x,p.y-n.y)<n.r)return{kind:"node",id:n.id}}
@@ -137,9 +166,11 @@ function make(options){
   setData(a,b){nodes=a;edges=b;index.clear();for(const n of a)index.set(n.id,n);if(this.sig!==a.map(n=>n.id).join("|")+"#"+b.length){this.sig=a.map(n=>n.id).join("|")+"#"+b.length;arrange()}redraw()},
   setSelection(s){selection=s;redraw()},setQuery(s){search=s||"";redraw()},setEdgeMode(s){mode=s;redraw()},
   setTheme(s){theme=topics.some(t=>t[0]===s)?s:"todos";hover=null;hint.hidden=true;
-   if(theme!=="todos"){const i=topics.findIndex(t=>t[0]===theme),angle=-PI/2+2*PI*i/topics.length;yaw=-angle-PI/2;pitch=.25;zoom=1.5;panX=panY=0}
-   else this.reset();redraw()},
-  zoom(f){zoom=clip(zoom*f,.3,5);redraw()},reset(){yaw=-.45;pitch=.28;zoom=1;panX=panY=0;redraw()},
+   if(theme!=="todos"){const i=topics.findIndex(t=>t[0]===theme),angle=-PI/2+2*PI*i/topics.length;yaw=-angle-PI/2;pitch=.25;zoom=1;panX=panY=0;fitView()}
+   else this.reset()},
+  zoom(f){zoom=clip(zoom*f,.08,7);redraw()},
+  fit:fitView,
+  reset(){yaw=-.45;pitch=.28;zoom=1;panX=panY=0;fitView()},
   organize(){arrange();this.reset()},redraw
  };
 }
