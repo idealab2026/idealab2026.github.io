@@ -221,25 +221,10 @@ function showGroupNote(group){
 
 function detail(d){
  selected=d;
- var root=$("detail");root.replaceChildren();
- var dates=yearText(sy(d));
- if(duration(d))dates+=" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d);
- root.append(el("span",dates,"year"),el("h2",displayName(d)));
- if(d.d)root.append(el("p",d.d));
- if(d._origin&&d._origin!=="explicit")root.append(el("p","Intervalo interpretado del texto importado. Las fechas todavía requieren verificación documental."));
- if(d.s)root.append(el("span",d.s,"tag"));
- root.append(el("span",d.c,"tag"));
  showNote(d);
 }
 function groupedDetail(group){
  selected=group;
- var root=$("detail");root.replaceChildren();
- root.append(el("span",group.groupLabel,"year"),el("h2",group.children.length+" registros agrupados"));
- var list=el("div",null,"group-results");
- group.children.forEach(function(d){
-  var b=el("button",yearText(sy(d))+" · "+d.t,"group-result");b.type="button";
-  b.addEventListener("click",function(){detail(d)});list.append(b);
- });root.append(list);
  showGroupNote(group);
 }
 function grouped(items,c){
@@ -533,9 +518,6 @@ function init(){
   base=Array.isArray(data.items)?data.items.filter(valid):[];render();jumpToYear(1900);
  }).catch(function(){render();$("period-name").textContent="No se pudo cargar el archivo histórico"});
  $("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
- $("clear-detail").addEventListener("click",function(){
-  selected=null;closeNote();$("detail").replaceChildren(el("p","Selecciona un registro para ver sus datos."));render();
- });
 
 }
 init();
