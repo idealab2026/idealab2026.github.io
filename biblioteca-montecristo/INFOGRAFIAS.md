@@ -32,7 +32,17 @@ Importar tras revisar (confirmación explícita de que la imagen es apta para pu
 
     python3 scripts/notebooklm_infografias.py import --book conde-montecristo --video-id YOUTUBE_VIDEO_ID --png ~/Downloads/capitulo.png --confirm-public
 
-Para una obra completa se omite --video-id en download e import. El importador comprueba el PNG, retira metadatos auxiliares y escribe su ruta bajo biblioteca-montecristo/infografias/ con la entrada correspondiente en infografias/index.json. Solo después de revisar el git diff se puede crear un commit y subir las imágenes.
+Para una obra completa se omite --video-id en download e import. Si el libro
+está dividido en cuadernos (por ejemplo, los dos tomos de Montecristo), NO se
+debe importar una infografía de un tomo como si resumiera la obra completa.
+En su lugar, importar los dos PNG por separado:
+
+    python3 scripts/notebooklm_infografias.py import --book conde-montecristo --volume tomo-i --png ~/Downloads/tomo-i.png --confirm-public
+    python3 scripts/notebooklm_infografias.py import --book conde-montecristo --volume tomo-ii --png ~/Downloads/tomo-ii.png --confirm-public
+
+La web mostrará ambos tomos en la ficha del libro, claramente diferenciados.
+Cuando exista una síntesis realmente completa, podrá incorporarse como imagen
+del libro entero. El importador comprueba el PNG, retira metadatos auxiliares y escribe su ruta bajo biblioteca-montecristo/infografias/ con la entrada correspondiente en infografias/index.json. Solo después de revisar el git diff se puede crear un commit y subir las imágenes.
 
 ## Criterios editoriales
 

@@ -105,12 +105,14 @@ def sanitized_png(raw: bytes) -> bytes:
     return PNG_SIG + b"".join(chunks)
 
 
-def import_file(book_slug: str, video_id: str | None, source: Path, explicit_review: bool):
+def import_file(book_slug: str, video_id: str | None, source: Path, explicit_review: bool, volume: str | None = None):
     book, chapter = find_item(book_slug, video_id)
     if not explicit_review:
         raise ValueError("Revisa visualmente el PNG y ejecuta de nuevo con --confirm-public. IDEA LAB es público.")
+    if volume and (video_id or not re.fullmatch(r"tomo-[a-z0-9-]+", volume)):
+        raise ValueError("--volume debe ser tomo-i, tomo-ii, etc., y no admite --video-id.")
     data = sanitized_png(source.read_bytes())
-    name = video_id or "libro"
+    name = volume or video_id or "libro"
     target_dir = BASE / "infografias" / book_slug
     target_dir.mkdir(parents=True, exist_ok=True)
     target = target_dir / f"{name}.png"
@@ -120,6 +122,15 @@ def import_file(book_slug: str, video_id: str | None, source: Path, explicit_rev
     rel = "./infografias/" + book_slug + "/" + name + ".png"
     if video_id:
         row.setdefault("chapters", {})[video_id] = rel
+    elif volume:
+        items = row.setdefault("volumes", [])
+        label = volume.replace("-", " ").title().replace(" Ii", " II").replace(" Iii", " III")
+        value = {"id": volume, "label": label, "image": rel}
+        existing = next((i for i, x in enumerate(items) if x["id"] == volume), None)
+        if existing is None:
+            items.append(value)
+        else:
+            items[existing] = value
     else:
         row["book"] = rel
     INDEX.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -140,11 +151,13 @@ def main():
     imp = sub.add_parser("import", help="Importar un PNG generado por NotebookLM y ya revisado")
     imp.add_argument("--book", required=True)
     imp.add_argument("--video-id")
+    imp.add_argument("--volume", help="Tomo de obra dividida: tomo-i, tomo-ii, etc.")
     imp.add_argument("--png", type=Path, required=True)
     imp.add_argument("--confirm-public", action="store_true")
     down = sub.add_parser("download", help="Descargar un artefacto concreto e importarlo tras revisión")
     down.add_argument("--book", required=True)
     down.add_argument("--video-id")
+    down.add_argument("--volume", help="Tomo al que pertenece la infografía.")
     down.add_argument("--notebook-id", required=True)
     down.add_argument("--artifact-id", required=True, help="ID exacto del artefacto terminado, evita confundir imágenes.")
     down.add_argument("--output", type=Path, required=True)
@@ -153,7 +166,7 @@ def main():
         if args.command == "generate":
             make_generation(args)
         elif args.command == "import":
-            import_file(args.book, args.video_id, args.png, args.confirm_public)
+            import_file(args.book, args.video_id, args.png, args.confirm_public, args.volume)
         else:
             find_item(args.book, args.video_id)
             args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -164,7 +177,8 @@ def main():
             print("Descarga verificada. Revisa el PNG antes de publicarlo:", args.output)
             print("Importa con:", "python3 scripts/notebooklm_infografias.py import --book",
                   args.book, "--png", shlex.quote(str(args.output)),
-                  ("--video-id " + args.video_id) if args.video_id else "", "--confirm-public")
+                  ("--video-id " + args.video_id) if args.video_id else "",
+                  ("--volume " + args.volume) if args.volume else "", "--confirm-public")
     except (ValueError, OSError, RuntimeError, subprocess.CalledProcessError) as err:
         print("ERROR:", err, file=sys.stderr)
         return 1
