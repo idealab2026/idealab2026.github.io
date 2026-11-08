@@ -187,6 +187,7 @@ $("network").addEventListener("wheel",function(e){
  cam.x-=e.deltaX*scale*unit;cam.y-=e.deltaY*scale*unit;
  $("camera").setAttribute("transform",transform());
 },{passive:false});
+["gesturestart","gesturechange","gestureend"].forEach(function(eventName){$("network").addEventListener(eventName,function(e){e.preventDefault()},{passive:false})});
 function organizeGraph(){
  var byId=new Map(data.nodes.map(function(n){return[n.id,n]})),adj=new Map(data.nodes.map(function(n){return[n.id,[]]}));
  data.edges.forEach(function(e){if(adj.has(e.a)&&adj.has(e.b)){adj.get(e.a).push(e.b);adj.get(e.b).push(e.a)}});
