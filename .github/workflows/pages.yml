@@ -56,6 +56,7 @@ jobs:
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp la-telarana/podcast-vaquero-150.js dist/la-telarana/podcast-vaquero-150.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
+          cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp biblioteca-montecristo/app.js biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
           cp -R biblioteca-montecristo/infografias dist/biblioteca-montecristo/
           test -f dist/biblioteca-montecristo/app.js
@@ -74,6 +75,8 @@ jobs:
           grep -q "IDEA_TELARANA_PODCAST_150" dist/la-telarana/podcast-vaquero-150.js
           test -s dist/la-telarana/photo-catalog.js
           grep -q "IDEA_TELARANA_WIKIPEDIA_PORTRAITS" dist/la-telarana/photo-catalog.js
+          test -s dist/la-telarana/layout-seed-v2.js
+          grep -q "IDEA_TELARANA_LAYOUT_V2" dist/la-telarana/layout-seed-v2.js
           test -f dist/biblioteca-montecristo/index.html
           test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 6
           test -f dist/data/traffic.json
