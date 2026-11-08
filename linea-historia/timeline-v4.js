@@ -22,7 +22,7 @@ var dateRe=/\b(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?\s*[-–—]\s*(\d{2,4})\s*((?:a|d
 function valid(d){
  return d&&typeof d.t==="string"&&d.t.length<=500&&Number.isFinite(Number(d.y))&&
  Math.abs(Number(d.y))<=260000000&&cats.includes(d.c)&&
- (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>Number(d.y)&&Number(d.e)<=2031));
+ (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>=Number(d.y)&&Number(d.e)<=2031));
 }
 function loadLocal(){
  try{var raw=JSON.parse(localStorage.getItem("idealab-historia-v1")||"[]");
