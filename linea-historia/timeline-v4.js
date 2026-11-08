@@ -8,6 +8,63 @@ var periods=[
 {k:"Edad moderna",a:1492,b:1789,w:3600,at:1600},
 {k:"Contemporánea",a:1789,b:2031,w:6100,at:1925}
 ];
+
+/* Geographic links are inferred solely from explicit place references.
+   Unknown locations remain unclassified; users may override with g: []. */
+var GEO=["Europa","Asia","África","América","Oceanía","Antártida","Mundial"];
+var continent="Todos",DECADE_PX=92;
+for(var pi=2;pi<periods.length;pi++)
+ periods[pi].w=(periods[pi].b-periods[pi].a)*DECADE_PX/10;
+function geoFold(str){
+ return String(str||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+}
+var geoPatterns=[
+ ["Europa","europa|europeo|europea|espana|espanol|espanola|francia|frances|francesa|alemania|aleman|alemana|italia|italiano|italiana|grecia|griego|griega|roma|romano|romana|peninsula iberica|britania|britanico|britanica|inglaterra|ingles|inglesa|reino unido|portugal|paises bajos|holanda|belgica|suiza|austria|irlanda|escocia|gales|suecia|noruega|dinamarca|finlandia|islandia|polonia|ucrania|rumania|hungria|checoslovaquia|chequia|eslovaquia|balcanes|serbia|croacia|bosnia|eslovenia|bulgaria|macedonia|albania|bielorrusia|letonia|lituania|estonia|vaticano|napoles|sicilia|sacro imperio|bizantino|constantinopla|atenas|esparta|verdun|trafalgar|carolingio|franquista|lindisfarne|peloponeso|termopilas|cordoba"],
+ ["Asia","asia|asiatico|asiatica|china|chino|japon|japones|japonesa|india|indio|pakistan|bangladesh|nepal|tibet|mongolia|mongol|iran|persia|persa|iraq|irak|mesopotamia|sumeria|sumerio|babilonia|acadia|asirios|israel|israeli|judea|galilea|jerusalen|palestina|libano|siria|sirio|jordania|arabia|yemen|oman|turquia|anatolia|otomano|otomana|corea|tailandia|vietnam|indonesia|filipinas|afganistan|uzbekistan|kazajistan|azerbaiyan|armenia|georgia|baku|singapur|malasia|camboya|birmania|myanmar|laos|qatar|emiratos arabes|kuwait|dinastia tang|dinastia qing|dinastia ming"],
+ ["África","africa|africano|africana|egipto|egipcio|sudafrica|sudafricano|etiopia|eritrea|sudan|libia|tunez|argelia|marruecos|marroqui|nigeria|kenia|kenya|uganda|namibia|angola|mozambique|zimbabue|zambia|ruanda|cabo verde|senegal|mali|ghana|camerun|congo|tanzania|somalia|magreb|cartago|punica|punico|alejandria"],
+ ["América","america|americano|americana|estados unidos|eeuu|e e u u|usa|canada|mexico|mexicano|mexicana|guatemala|honduras|el salvador|costa rica|nicaragua|panama|cuba|haiti|dominicana|puerto rico|venezuela|colombia|ecuador|peru|bolivia|chile|argentina|uruguay|paraguay|brasil|brasileno|amazonia|andes|azteca|aztecas|maya|inca|yucatan|caribe|washington|nueva york|california|texas|alaska"],
+ ["Oceanía","oceania|australia|australiano|australiana|nueva zelanda|fiyi|papua|polinesia|micronesia|melanesia"],
+ ["Antártida","antartida|antartico|antartica|polo sur"]
+].map(function(pair){
+ return [pair[0],new RegExp("(?:^|[^a-z0-9])(?:"+pair[1]+")(?=$|[^a-z0-9])","i")];
+});
+function continentsOf(d){
+ if(d._geo)return d._geo;
+ if(Array.isArray(d.g)&&d.g.some(function(v){return GEO.includes(v)})){
+  d._geo=GEO.filter(function(v){return d.g.includes(v)});
+  d._geoKind="manual";return d._geo;
+ }
+ var title=geoFold(d.t),description="";
+ if(d.c==="Pontífices"){
+  description=(d.d||"").split("·").slice(2).join(" ");
+  description=description.replace(/\bImperio romano\b/gi,"").replace(/\bEstados Pontificios\b/gi,"");
+ }else if(d.c==="Literatura"||d.c==="Filosofía"){
+  description=(d.d||"").split("·").slice(0,3).join(" ");
+ }
+ var reference=title+" "+geoFold(description),out=[];
+ geoPatterns.forEach(function(pair){if(pair[1].test(reference))out.push(pair[0])});
+ if(/(?:^|[^a-z])(?:rusia|ruso|rusa|urss|union sovietica)(?=$|[^a-z])/.test(title))
+  out.push("Europa","Asia");
+ if(/imperio romano|imperio otomano|guerras? punicas?/.test(title))
+  out.push("Europa","África","Asia");
+ if(/imperio britanico|guerras? mundiales?|pandemia|covid.?19|escala mundial|guerra fria|global/.test(title))
+  out.push("Mundial");
+ d._geo=GEO.filter(function(c){return out.includes(c)});
+ d._geoKind=d._geo.length?"text":"unknown";
+ return d._geo;
+}
+function matchesContinent(d){
+ var found=continentsOf(d);
+ return continent==="Todos"||(continent==="Sin localizar"?found.length===0:found.includes(continent));
+}
+function geoStatus(all,filtered){
+ var identified=all.filter(function(d){return continentsOf(d).length>0}).length;
+ $("geo-status").textContent=(continent==="Todos"?
+  identified+" con referencia continental · "+(all.length-identified)+" sin localizar":
+  filtered.length+" registros · "+(continent==="Sin localizar"?"sin referencia geográfica":"vinculados a "+continent))+
+  " · clasificación provisional";
+}
+
 var cats=["Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
 var colors=["#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
 var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1;
@@ -20,7 +77,9 @@ function yearText(y){
 }
 var dateRe=/\b(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?\s*[-–—]\s*(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?/i;
 function valid(d){
- return d&&typeof d.t==="string"&&d.t.length<=500&&Number.isFinite(Number(d.y))&&
+ return d&&typeof d.t==="string"&&d.t.length<=500&&
+ (d.g==null||(Array.isArray(d.g)&&d.g.length<=GEO.length&&d.g.every(function(v){return GEO.includes(v)})))&&
+ Number.isFinite(Number(d.y))&&
  Math.abs(Number(d.y))<=260000000&&cats.includes(d.c)&&
  (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>=Number(d.y)&&Number(d.e)<=2031));
 }
@@ -74,10 +133,11 @@ function displayName(d){
  return d.t;
 }
 function visible(){
- return base.concat(custom).filter(function(d){
+ var all=base.concat(custom).filter(function(d){
   enrich(d);
   return (cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query));
  });
+ var result=all.filter(matchesContinent);geoStatus(all,result);return result;
 }
 function axisX(y){
  var x=170,n=Number(y);
