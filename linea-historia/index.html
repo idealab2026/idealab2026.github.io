@@ -218,7 +218,7 @@ body.historia-fullscreen{overflow:hidden}
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
 <div class="stats"><div class="stat"><small>Registros disponibles</small><strong id="total">—</strong></div><div class="stat"><small>Visibles en la selección</small><strong id="visible">—</strong></div><div class="stat"><small>Categorías</small><strong id="categories">8</strong></div><div class="stat"><small>Origen</small><strong>Archivo histórico</strong></div></div>
-<section class="panel" aria-label="Controles de cronología"><div class="controls"><div class="group" id="periods"><span class="group-label">Ir a la época</span></div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"><button class="action" id="toggle-add">+ Añadir registro</button><button class="action" id="export">Exportar mis datos</button><label class="action" for="import" style="cursor:pointer">Importar JSON</label><input type="file" accept=".json,application/json" id="import" class="hide"></div><div class="geo-toolbar">
+<section class="panel" aria-label="Controles de cronología"><div class="controls"><div class="group" id="periods"><span class="group-label">Ir a la época</span></div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"></div><div class="geo-toolbar">
 <label for="continent" class="geo-label">Continente</label>
 <select id="continent" aria-label="Filtrar por continente">
 <option value="Todos">Todos los continentes</option>
@@ -244,14 +244,8 @@ body.historia-fullscreen{overflow:hidden}
   <div class="hint">Cada columna reúne una categoría; los registros están ordenados por su fecha inicial, desde los más antiguos hasta los más recientes. Pulsa una tarjeta para consultar la nota y Wikipedia.</div>
 </section>
 <section class="panel details" aria-live="polite"><div id="detail"><span class="year">Explorador histórico</span><h2>Selecciona un registro de la línea de tiempo</h2><p>Aquí aparecerán su descripción y la celda de origen del archivo, si procede.</p></div><button class="action" id="clear-detail" aria-label="Deseleccionar registro">Cerrar</button></section>
-<section class="panel hide" id="add-panel"><strong>Añadir un registro a mi cronología</strong><p class="muted">Se guarda exclusivamente en este navegador. Exporta un JSON para conservarlo o trasladarlo a otro dispositivo.</p><form id="add-form" class="add-grid"><input id="new-title" required maxlength="300" placeholder="Nombre del acontecimiento o persona"><input id="new-year" required type="number" step="0.01" placeholder="Inicio (a.C. negativo)"><input id="new-end-year" type="number" step="0.01" placeholder="Fin (opcional)"><select id="new-cat" aria-label="Categoría"></select><select id="new-continent" aria-label="Continente (opcional)">
-<option value="">Continente (opcional)</option>
-<option value="Europa">Europa</option><option value="Asia">Asia</option>
-<option value="África">África</option><option value="América">América</option>
-<option value="Oceanía">Oceanía</option><option value="Antártida">Antártida</option>
-<option value="Mundial">Mundial</option>
-</select><textarea id="new-note" maxlength="1200" placeholder="Descripción, fuente, contexto…"></textarea><button class="action primary" type="submit">Guardar registro</button></form></section>
-<p class="notice">Este es un archivo de exploración, no una enciclopedia validada. La importación conserva posibles erratas, imprecisiones o interpretaciones del documento original. Los cambios añadidos desde la web son locales; no se sincronizan automáticamente entre dispositivos.</p>
+
+<p class="notice">Este es un archivo de exploración, no una enciclopedia validada. Las fuentes históricas pueden contener erratas, imprecisiones o interpretaciones. Los registros personales guardados anteriormente en este navegador siguen visibles, pero la web funciona ahora en modo consulta.</p>
 <div id="note-layer" class="note-layer hide" role="presentation">
  <section id="note-dialog" class="note-sheet" role="dialog" aria-modal="true" aria-labelledby="note-title" tabindex="-1">
   <div class="note-header">
