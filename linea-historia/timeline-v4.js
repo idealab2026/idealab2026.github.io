@@ -214,7 +214,7 @@ function render(){
    if(dur){
     var track=el("span",null,"duration-track");
     track.style.setProperty("--item",colors[i]);track.style.left=x+"px";
-    track.style.top=(top+33)+"px";track.style.width=Math.max(3,full)+"px";
+    track.style.top=(top+41)+"px";track.style.width=Math.max(3,full)+"px";
     track.setAttribute("aria-hidden","true");lane.append(track);
    }
    lane.append(b);
@@ -238,6 +238,15 @@ function init(){
  $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
  $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
  $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
+ var vdrag=$("viewport"),dragging=false,downX=0,downScroll=0;
+ vdrag.addEventListener("pointerdown",function(e){
+  if(e.pointerType!=="mouse"||e.button!==0||e.target.closest("button"))return;
+  dragging=true;downX=e.clientX;downScroll=vdrag.scrollLeft;
+  if(vdrag.setPointerCapture)vdrag.setPointerCapture(e.pointerId);
+ });
+ vdrag.addEventListener("pointermove",function(e){if(!dragging)return;vdrag.scrollLeft=downScroll-(e.clientX-downX);e.preventDefault()});
+ vdrag.addEventListener("pointerup",function(){dragging=false});
+ vdrag.addEventListener("pointercancel",function(){dragging=false});
  $("viewport").addEventListener("scroll",function(){
   var v=$("viewport"),p=eraAt(yearAt(v.scrollLeft+v.clientWidth/2));
   if(p.k!==period.k){period=p;periodUI()}
