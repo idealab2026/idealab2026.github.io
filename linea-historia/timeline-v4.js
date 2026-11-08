@@ -501,6 +501,19 @@ function init(){
  $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
  $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
  $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
+ function jumpFromInput(){
+  var value=$("jump-year").value,year=Number(value);
+  if(value===""||!Number.isInteger(year)||year<periods[0].a||year>2031){
+   alert("Introduce un año válido entre "+periods[0].a+" y 2031 (negativo para a. C.).");
+   return;
+  }
+  if(year===0){jumpToYear(0);return}
+  if(viewMode==="columns")setView("timeline");
+  jumpToYear(year);
+ }
+ $("jump-year-go").addEventListener("click",jumpFromInput);
+ $("jump-year").addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();jumpFromInput()}});
+
  var vdrag=$("viewport"),dragging=false,downX=0,downScroll=0;
  vdrag.addEventListener("pointerdown",function(e){
   if(e.pointerType!=="mouse"||e.button!==0||e.target.closest("button"))return;
