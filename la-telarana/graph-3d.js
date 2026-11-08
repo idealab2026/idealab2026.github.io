@@ -14,7 +14,7 @@ const tagged={};for(const [topic,names] of Object.entries(groups))for(const slug
 const clip=(n,a,b)=>Math.max(a,Math.min(b,n));
 function make(options){
  const canvas=options.canvas,ctx=canvas.getContext("2d"),hint=options.tooltip;
- let nodes=[],edges=[],pos=new Map(),selection=null,hover=null,mode="focus",theme="todos",search="",yaw=-.45,pitch=.28,zoom=1,panX=0,panY=0,w=1000,h=700,dpr=1,drag=null,down=new Map(),hits=[],edgeHits=[],cached=new Map(),queued=false,hoverEdge=null;
+ let nodes=[],edges=[],pos=new Map(),selection=null,hover=null,mode="focus",theme="todos",search="",yaw=-.45,pitch=.28,zoom=1,panX=0,panY=0,w=1000,h=700,dpr=1,drag=null,down=new Map(),hits=[],edgeHits=[],bandHits=[],cached=new Map(),queued=false,hoverEdge=null;
  const index=new Map(),PI=Math.PI;
  function group(n){
   if(tagged[n.id])return tagged[n.id];
@@ -76,7 +76,7 @@ function make(options){
   const focus=hover||(selection?.kind==="node"?selection.id:null);
   const selectedEdge=selection?.kind==="edge"?edges.find(e=>e.id===selection.id):null;
   const activeEndpoints=new Set(selectedEdge?[selectedEdge.a,selectedEdge.b]:[]);
-  edgeHits=[];hits=[];
+  edgeHits=[];hits=[];bandHits=[];
   edges.filter(e=>pr.has(e.a)&&pr.has(e.b)).sort((a,b)=>(pr.get(b.a).depth+pr.get(b.b).depth)-(pr.get(a.a).depth+pr.get(a.b).depth)).forEach(e=>{
    const a=pr.get(e.a),b=pr.get(e.b),aNode=index.get(e.a),bNode=index.get(e.b),linked=focus&&(e.a===focus||e.b===focus),same=theme!=="todos"&&group(aNode)===theme&&group(bNode)===theme,selected=selection?.kind==="edge"&&selection.id===e.id,hot=hoverEdge===e.id;
    let alpha=focus&&mode==="focus"?(linked?.96:.04):theme!=="todos"?(same?.86:(group(aNode)===theme||group(bNode)===theme)?.3:.025):.36;
@@ -128,6 +128,7 @@ function make(options){
    parts.forEach((line,j)=>ctx.fillText(line,cx,cy-(parts.length-1)*lineHeight/2-11+j*lineHeight));
    ctx.fillStyle="#c1d1df";ctx.font="600 11px system-ui";ctx.fillText(count+" entidades",cx,cy+boxHeight/2-17);
    ctx.restore();
+   bandHits.push({id,x:cx-boxWidth/2,y:cy-boxHeight/2,w:boxWidth,h:boxHeight});
   });
   const title=theme==="todos"?"Todas las comunidades":topics.find(t=>t[0]===theme)[1];
   ctx.textAlign="left";ctx.fillStyle="#d2e1ee";ctx.font="600 12px system-ui";
@@ -168,6 +169,7 @@ function make(options){
   // Los nodos están por delante de las líneas; las líneas se detectan por
   // distancia real al segmento, no por el orden de dibujo.
   for(let i=hits.length-1;i>=0;i--){const n=hits[i];if(Math.hypot(p.x-n.x,p.y-n.y)<=n.r)return{kind:"node",id:n.id}}
+  for(let i=bandHits.length-1;i>=0;i--){const b=bandHits[i];if(p.x>=b.x&&p.x<=b.x+b.w&&p.y>=b.y&&p.y<=b.y+b.h)return{kind:"theme",id:b.id}}
   let nearest=null,nearestDistance=14;
   edgeHits.forEach(e=>{
    const dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,t=clip(((p.x-e.a.x)*dx+(p.y-e.a.y)*dy)/(dx*dx+dy*dy||1),0,1);
@@ -190,6 +192,7 @@ function make(options){
    hint.hidden=!found;
    if(found){
     if(id){hint.textContent=index.get(id)?.name||""}
+    else if(found.kind==="theme"){hint.textContent="Explorar tema: "+(topics.find(t=>t[0]===found.id)?.[1]||found.id)}
     else{const e=edges.find(e=>e.id===lineId);hint.textContent=e?(index.get(e.a)?.name||"Entidad")+" ↔ "+(index.get(e.b)?.name||"Entidad")+" · "+e.type:"Relación"}
     hint.style.left=clip(p.x+15,0,w-260)+"px";hint.style.top=clip(p.y-15,0,h-65)+"px";
    }
