@@ -75,7 +75,7 @@ if history.is_file():
     try:
         doc = json.loads(history.read_text(encoding="utf-8"))
         rows = doc.get("items")
-        if doc.get("version") != 1 or not isinstance(rows, list) or not (1000 <= len(rows) <= 10000):
+        if doc.get("version") not in (1, 2) or not isinstance(rows, list) or not (1000 <= len(rows) <= 10000):
             errors.append("Unexpected history import format or cardinality")
         elif any(not isinstance(r, dict) or not all(k in r for k in ("id", "y", "t", "c")) for r in rows):
             errors.append("Invalid history record")
