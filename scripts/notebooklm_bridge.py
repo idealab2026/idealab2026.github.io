@@ -133,7 +133,10 @@ def parse_request(issue):
         return None
     if vid and vol:
         return None
-    find_item(obj["book"], vid)
+    try:
+        find_item(obj["book"], vid)
+    except ValueError:
+        return None
     return obj
 
 
