@@ -46,6 +46,10 @@ jobs:
             cp "$site/index.html" "dist/$site/index.html"
           done
           cp linea-historia/data.json dist/linea-historia/data.json
+          cp biblioteca-montecristo/app.js biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
+          test -f dist/biblioteca-montecristo/app.js
+          test -f dist/biblioteca-montecristo/styles.css
+          test -f dist/biblioteca-montecristo/catalogo.json
           test -f dist/linea-historia/index.html
           test -f dist/linea-historia/data.json
           test -f dist/la-telarana/index.html
