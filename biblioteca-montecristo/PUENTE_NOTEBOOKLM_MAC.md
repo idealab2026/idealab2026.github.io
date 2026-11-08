@@ -109,6 +109,49 @@ Para desactivarlo cuando lo desees:
 Los logs están en ~/Library/Logs/IDEA-LAB/ y la cola local en
 ~/.local/state/idea-lab/notebooklm-bridge.json, ambas privadas de macOS.
 
+## Correspondencia exacta con la lista de YouTube (obligatoria por episodio)
+
+**La unidad de generación es el vídeo de YouTube.** En esta lista algunos
+vídeos cubren varios capítulos (por ejemplo, 1–5), y otros un solo capítulo
+(51, 53, 54, etc.). El vídeo y la infografía comparten un ID de YouTube.
+
+Las imágenes de *tomo I* o *tomo II* son resúmenes generales: **no son**
+infografías de ningún capítulo y no deben figurar en las fichas de episodios.
+
+El catálogo recuperado actualmente tiene 51 vídeos de *Montecristo*, con
+saltos en los capítulos 31 y 52 y dos vídeos etiquetados 34. Esto es una
+limitación del catálogo disponible, no una confirmación de ausencia en la
+lista original. Nunca debemos rellenar huecos inventando vídeos.
+
+Antes de generar, inspeccionar y asociar las **fuentes concretas** del
+cuaderno (estas órdenes no publican IDs privados):
+
+    cd ~/Developer/idea-lab-web
+    git pull --ff-only
+    python3 scripts/notebooklm_source_mapper.py --book conde-montecristo --volume tomo-i
+    python3 scripts/notebooklm_source_mapper.py --book conde-montecristo --volume tomo-ii
+
+Si el informe muestra asociaciones inequívocas, guardarlas localmente:
+
+    python3 scripts/notebooklm_source_mapper.py --book conde-montecristo --volume tomo-i --apply
+    python3 scripts/notebooklm_source_mapper.py --book conde-montecristo --volume tomo-ii --apply
+
+La herramienta solo vincula cuando encuentra una fuente con URL idéntica a
+la del vídeo, una fuente del capítulo exacto o un conjunto completo de
+fuentes para el intervalo. **Nunca** asigna un PDF del tomo completo
+a un solo capítulo. Si hay ambigüedad, informa PENDIENTE y exige
+selección manual de fuentes mediante `map-episode`.
+
+Ejemplo de solicitud **por vídeo**, capítulo 51 (no resumen del tomo):
+
+    <!-- IDEA_LAB_NLM_REQUEST_V1
+    {"version":1,"action":"infographic","book":"conde-montecristo","video_id":"oVMG6QzBK64","volume":null}
+    -->
+
+En cada PNG que revisemos, el encabezado debe identificar el capítulo real
+del vídeo. No publicar una lámina que mezcle sucesos de otros capítulos
+con independencia de que NotebookLM la haya generado.
+
 ## Solicitar desde ChatGPT
 
 Usuario: "Utiliza el NotebookLM de El conde de Montecristo, tomo I, para
