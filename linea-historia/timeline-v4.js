@@ -87,10 +87,6 @@ function loadLocal(){
  try{var raw=JSON.parse(localStorage.getItem("idealab-historia-v1")||"[]");
  return Array.isArray(raw)?raw.filter(valid):[]}catch(e){return[]}
 }
-function save(){
- try{localStorage.setItem("idealab-historia-v1",JSON.stringify(custom))}
- catch(e){alert("No se pudo guardar. Exporta tus datos antes de cerrar.")}
-}
 function enrich(d){
  if(d._computed)return d;
  var start=Number(d.y),end=d.e==null?NaN:Number(d.e),origin="explicit",ongoing=false;
@@ -529,8 +525,7 @@ function init(){
   var v=$("viewport"),p=eraAt(yearAt(v.scrollLeft+v.clientWidth/2));
   if(p.k!==period.k){period=p;periodUI()}
  });
- var sel=$("new-cat");
- cats.forEach(function(c){var op=el("option",c);op.value=c;sel.append(op)});
+ // Previous local entries remain readable; removing UI never destroys user data.
  custom=loadLocal();
  fetch("./data.json",{cache:"no-cache"}).then(function(r){
   if(!r.ok)throw Error("Archivo histórico no disponible");return r.json();
@@ -538,42 +533,10 @@ function init(){
   base=Array.isArray(data.items)?data.items.filter(valid):[];render();jumpToYear(1900);
  }).catch(function(){render();$("period-name").textContent="No se pudo cargar el archivo histórico"});
  $("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
- $("toggle-add").addEventListener("click",function(){
-  $("add-panel").classList.toggle("hide");if(!$("add-panel").classList.contains("hide"))$("new-title").focus();
- });
  $("clear-detail").addEventListener("click",function(){
   selected=null;closeNote();$("detail").replaceChildren(el("p","Selecciona un registro para ver sus datos."));render();
  });
- $("add-form").addEventListener("submit",function(e){
-  e.preventDefault();
-  var d={id:"local-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),
-   t:$("new-title").value.trim(),y:Number($("new-year").value),
-   c:$("new-cat").value,d:$("new-note").value.trim(),s:"Registro personal · este navegador"};
-  if($("new-end-year").value!=="")d.e=Number($("new-end-year").value);
-  if(GEO.includes($("new-continent").value))d.g=[$("new-continent").value];
-  if(!valid(d)){alert("Revisa nombre, inicio, fin y categoría.");return}
-  custom.push(d);save();e.target.reset();cat="Todas";continent="Todos";$("continent").value="Todos";categoryUI();enrich(d);detail(d);render();jumpToYear(sy(d));$("add-panel").classList.add("hide");
- });
- $("export").addEventListener("click",function(){
-  var payload=JSON.stringify({version:1,kind:"idealab-historia-private",items:custom},null,2),a=el("a");
-  a.href=URL.createObjectURL(new Blob([payload],{type:"application/json"}));a.download="mi-cronologia.json";a.click();
-  setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
- });
- $("import").addEventListener("change",async function(e){
-  var file=e.target.files[0];if(!file)return;
-  try{
-   var data=JSON.parse(await file.text());if(!Array.isArray(data.items))throw Error("Formato no válido");
-   var cleaned=data.items.filter(valid).map(function(x){
-    return{id:String(x.id||"local-"+Math.random()),t:x.t.slice(0,500),y:Number(x.y),
-     e:x.e==null?undefined:Number(x.e),c:x.c,g:Array.isArray(x.g)?x.g.filter(function(v){return GEO.includes(v)}):undefined,d:String(x.d||"").slice(0,1200),s:"Importado por el usuario"};
-   });
-   if(!confirm("¿Importar "+cleaned.length+" registros en este navegador?"))return;
-   var ids=new Set(custom.map(function(v){return v.id}));
-   cleaned.forEach(function(x){if(!ids.has(x.id)){custom.push(x);ids.add(x.id)}});
-   save();render();alert("Importación completada.");
-  }catch(err){alert("No se pudo importar: "+err.message)}
-  e.target.value="";
- });
+
 }
 init();
 })();
