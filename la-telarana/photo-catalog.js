@@ -205,5 +205,185 @@ window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS={
   "vf150-begona-gomez": {
     "lang": "es",
     "title": "Begoña Gómez"
+  },
+  "cv26-pedro-banos": {
+    "lang": "es",
+    "title": "Pedro Baños"
+  },
+  "cv26-villarejo": {
+    "lang": "es",
+    "title": "José Manuel Villarejo"
+  },
+  "cv26-sanz-roldan": {
+    "lang": "es",
+    "title": "Félix Sanz Roldán"
+  },
+  "cv26-rey-emerito": {
+    "lang": "es",
+    "title": "Juan Carlos I de España"
+  },
+  "cv26-jordi-pujol": {
+    "lang": "es",
+    "title": "Jordi Pujol"
+  },
+  "cv26-pujol-ferrusola": {
+    "lang": "es",
+    "title": "Jordi Pujol Ferrusola"
+  },
+  "cv26-emilio-botin": {
+    "lang": "es",
+    "title": "Emilio Botín"
+  },
+  "cv26-javier-rosa": {
+    "lang": "es",
+    "title": "Javier de la Rosa"
+  },
+  "cv26-corcuera": {
+    "lang": "es",
+    "title": "José Luis Corcuera"
+  },
+  "cv26-bono": {
+    "lang": "es",
+    "title": "José Bono"
+  },
+  "cv26-rajoy": {
+    "lang": "es",
+    "title": "Mariano Rajoy"
+  },
+  "cv26-soraya": {
+    "lang": "es",
+    "title": "Soraya Sáenz de Santamaría"
+  },
+  "cv26-robles": {
+    "lang": "es",
+    "title": "Margarita Robles"
+  },
+  "cv26-cospedal": {
+    "lang": "es",
+    "title": "María Dolores de Cospedal"
+  },
+  "cv26-barcenas": {
+    "lang": "es",
+    "title": "Luis Bárcenas"
+  },
+  "cv26-fernandez-diaz": {
+    "lang": "es",
+    "title": "Jorge Fernández Díaz"
+  },
+  "cv26-santos-cerdan": {
+    "lang": "es",
+    "title": "Santos Cerdán"
+  },
+  "cv26-risto-mejide": {
+    "lang": "es",
+    "title": "Risto Mejide"
+  },
+  "cv26-rubalcaba": {
+    "lang": "es",
+    "title": "Alfredo Pérez Rubalcaba"
+  },
+  "cv26-florentino": {
+    "lang": "es",
+    "title": "Florentino Pérez"
+  },
+  "cv26-jose-blanco": {
+    "lang": "es",
+    "title": "José Blanco López"
+  },
+  "cv26-carmen-calvo": {
+    "lang": "es",
+    "title": "Carmen Calvo"
+  },
+  "cv26-aznar": {
+    "lang": "es",
+    "title": "José María Aznar"
+  },
+  "cv26-carrero": {
+    "lang": "es",
+    "title": "Luis Carrero Blanco"
+  },
+  "cv26-calderon": {
+    "lang": "es",
+    "title": "Javier Calderón Fernández"
+  },
+  "cv26-manglano": {
+    "lang": "es",
+    "title": "Emilio Alonso Manglano"
+  },
+  "cv26-carvajal": {
+    "lang": "es",
+    "title": "Hugo Carvajal"
+  },
+  "cv26-sebastian": {
+    "lang": "es",
+    "title": "Miguel Sebastián"
+  },
+  "cv26-maza": {
+    "lang": "es",
+    "title": "José Manuel Maza"
+  },
+  "cv26-fraga": {
+    "lang": "es",
+    "title": "Manuel Fraga"
+  },
+  "cv26-carrillo": {
+    "lang": "es",
+    "title": "Santiago Carrillo"
+  },
+  "cv26-curiel": {
+    "lang": "es",
+    "title": "Enrique Curiel"
+  },
+  "cv26-roson": {
+    "lang": "es",
+    "title": "Juan José Rosón"
+  },
+  "cv26-suarez": {
+    "lang": "es",
+    "title": "Adolfo Suárez"
+  },
+  "cv26-ferreras": {
+    "lang": "es",
+    "title": "Antonio García Ferreras"
+  },
+  "cv26-zapatero": {
+    "lang": "es",
+    "title": "José Luis Rodríguez Zapatero"
+  },
+  "cv26-pedro-sanchez": {
+    "lang": "es",
+    "title": "Pedro Sánchez"
+  },
+  "cv26-felipe-gonzalez": {
+    "lang": "es",
+    "title": "Felipe González"
+  },
+  "cv26-marlaska": {
+    "lang": "es",
+    "title": "Fernando Grande-Marlaska"
+  },
+  "cv26-pablo-iglesias": {
+    "lang": "es",
+    "title": "Pablo Iglesias Turrión"
+  },
+  "cv26-saiz": {
+    "lang": "es",
+    "title": "Alberto Saiz"
+  },
+  "cv26-kissinger": {
+    "lang": "en",
+    "title": "Henry Kissinger"
+  },
+  "cv26-trump": {
+    "lang": "en",
+    "title": "Donald Trump"
+  },
+  "cv26-bush": {
+    "lang": "en",
+    "title": "George W. Bush"
+  },
+  "cv26-maduro": {
+    "lang": "es",
+    "title": "Nicolás Maduro"
   }
 };
