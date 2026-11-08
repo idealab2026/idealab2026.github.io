@@ -156,23 +156,25 @@ function yearAt(px){
 }
 function eraAt(year){return periods.find(function(p){return year>=p.a&&year<p.b})||periods[periods.length-1]}
 function categoryUI(){
- var f=$("filters");f.replaceChildren();
- ["Todas"].concat(cats).forEach(function(c,i){
-  var b=el("button",c,"chip");b.type="button";b.setAttribute("aria-pressed",cat===c);
-  if(i){var swatch=el("i",null,"dot");swatch.style.background=colors[i-1];b.prepend(swatch)}
-  b.addEventListener("click",function(){
-   cat=c;categoryUI();render();
-   if(c==="Historia bíblica")jumpToYear(-1700);
-  });f.append(b);
- });
+ var select=$("filters");
+ if(select.options.length!==cats.length+1){
+  select.replaceChildren();
+  ["Todas"].concat(cats).forEach(function(c){
+   var option=el("option",c);option.value=c;select.append(option);
+  });
+ }
+ select.value=cat;
+ select.style.setProperty("--selection-color",cat==="Todas"?"#e5b768":colors[cats.indexOf(cat)]);
 }
 function periodUI(){
- var root=$("periods");root.querySelectorAll("button").forEach(function(x){x.remove()});
- periods.forEach(function(p){
-  var b=el("button",p.k,"chip");b.type="button";b.setAttribute("aria-pressed",p.k===period.k);
-  b.addEventListener("click",function(){period=p;periodUI();jumpToYear(p.at)});
-  root.append(b);
- });
+ var select=$("periods");
+ if(select.options.length!==periods.length){
+  select.replaceChildren();
+  periods.forEach(function(p){
+   var option=el("option",p.k);option.value=p.k;select.append(option);
+  });
+ }
+ select.value=period.k;
 }
 
 var lastCardFocus=null,wikiRequestVersion=0,wikiAbort=null,wikiCache=new Map();
@@ -614,6 +616,20 @@ function setZoom(next){
 }
 function init(){
  periodUI();categoryUI();
+ $("periods").addEventListener("change",function(e){
+  var next=periods.find(function(p){return p.k===e.target.value});
+  if(!next)return;
+  period=next;periodUI();savedYear=next.at;
+  if(viewMode==="timeline")jumpToYear(next.at);
+ });
+ $("filters").addEventListener("change",function(e){
+  if(e.target.value!=="Todas"&&!cats.includes(e.target.value))return;
+  cat=e.target.value;categoryUI();render();
+  if(cat==="Historia bíblica"){
+   savedYear=-1700;
+   if(viewMode==="timeline")jumpToYear(-1700);
+  }
+ });
  $("continent").addEventListener("change",function(e){
   continent=e.target.value;
   if(!["Todos","Sin localizar"].concat(GEO).includes(continent))continent="Todos";
