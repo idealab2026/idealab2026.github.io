@@ -67,7 +67,7 @@ function geoStatus(all,filtered){
 
 var cats=["Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
 var colors=["#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
-var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1;
+var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1,viewMode="timeline",savedYear=1900,nativeFullscreen=false;
 var el=function(tag,t,cls){var x=document.createElement(tag);if(t!=null)x.textContent=t;if(cls)x.className=cls;return x};
 var $=function(id){return document.getElementById(id)};
 function yearText(y){
@@ -270,10 +270,82 @@ function niceStep(n){
  for(var choice of [1,2,2.5,5,10])if(choice*p>=n)return choice*p;
  return p*10;
 }
+
+/* The column view is independent of the geometric chronology: within
+   each category, entries sort strictly by their starting year. */
+function renderColumns(records){
+ var grid=$("columns-grid");grid.replaceChildren();
+ var count=0,shownCats=cat==="Todas"?cats:[cat];
+ shownCats.forEach(function(category){
+  var index=cats.indexOf(category);
+  var entries=records.filter(function(d){return d.c===category})
+   .sort(function(a,b){return sy(a)-sy(b)||String(a.t).localeCompare(String(b.t),"es")});
+  var column=el("section",null,"history-column");column.style.setProperty("--col-accent",colors[index]||"#e5b768");
+  var head=el("div",null,"history-column-head");
+  head.append(el("span",category),el("span",entries.length.toLocaleString("es-ES"),"history-column-count"));
+  column.append(head);
+  var list=el("div",null,"history-column-items");
+  if(!entries.length)list.append(el("p","Sin registros para esta categoría y los filtros aplicados.","history-column-empty"));
+  entries.forEach(function(d){
+   var item=el("button",null,"history-column-item");item.type="button";
+   var label=displayName(d),start=sy(d);
+   item.append(el("span",yearText(start),"column-year"),el("span",label,"column-title"));
+   if(duration(d)){
+    var time=el("span","Fin: "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d),"column-duration");
+    item.append(time);
+   }
+   item.setAttribute("aria-label",label+" · "+yearText(start));
+   item.addEventListener("click",function(){detail(d)});
+   list.append(item);
+  });
+  column.append(list);grid.append(column);count+=entries.length;
+ });
+ $("columns-summary").textContent=count.toLocaleString("es-ES")+" registros · "+shownCats.length+" columnas · de más antiguo a más reciente";
+}
+function setTimelineMaximized(on){
+ var panel=$("timeline-panel"),button=$("toggle-fullscreen");
+ panel.classList.toggle("is-maximized",on);
+ document.body.classList.toggle("historia-fullscreen",on);
+ button.setAttribute("aria-pressed",on?"true":"false");
+ button.textContent=on?"⤢ Salir de pantalla completa":"⛶ Pantalla completa";
+ button.title=on?"Volver a la vista normal":"Ampliar la cronología a la ventana completa";
+ if(on){
+  if(document.documentElement&&typeof document.documentElement.requestFullscreen==="function"&&!document.fullscreenElement){
+   try{
+    Promise.resolve(document.documentElement.requestFullscreen()).catch(function(){nativeFullscreen=false});
+   }catch(e){nativeFullscreen=false}
+  }
+ }else if(document.fullscreenElement&&typeof document.exitFullscreen==="function"){
+  Promise.resolve(document.exitFullscreen()).catch(function(){});
+ }
+}
+function setView(next){
+ if(next!=="columns"&&next!=="timeline")return;
+ if(viewMode===next)return;
+ if(viewMode==="timeline"){
+  var vp=$("viewport");
+  if(vp.clientWidth)savedYear=yearAt(vp.scrollLeft+vp.clientWidth/2);
+  if($("timeline-panel").classList.contains("is-maximized"))setTimelineMaximized(false);
+ }
+ viewMode=next;
+ $("timeline-panel").classList.toggle("hide",next!=="timeline");
+ $("columns-panel").classList.toggle("hide",next!=="columns");
+ [["tab-timeline","timeline"],["tab-columns","columns"]].forEach(function(pair){
+  var tab=$(pair[0]),active=pair[1]===next;
+  tab.classList.toggle("active",active);
+  tab.setAttribute("aria-selected",active?"true":"false");
+  tab.tabIndex=active?0:-1;
+ });
+ render();
+ if(next==="timeline")jumpToYear(savedYear);
+}
+
 function render(){
- var records=visible(),can=$("canvas");can.replaceChildren();
+ var records=visible();
  $("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
  $("visible").textContent=records.length.toLocaleString("es-ES");
+ if(viewMode==="columns"){renderColumns(records);return;}
+ var can=$("canvas");can.replaceChildren();
  $("period-name").textContent="Historia universal · eje continuo · "+yearText(periods[0].a)+" — "+yearText(2026);
  $("zoom-level").textContent="Zoom ×"+zoom;$("zoom-out").disabled=zoom<=1;$("zoom-in").disabled=zoom>=8;
  var width=canvasWidth();can.style.width=width+"px";
@@ -364,19 +436,35 @@ function init(){
  $("continent").addEventListener("change",function(e){
   continent=e.target.value;
   if(!["Todos","Sin localizar"].concat(GEO).includes(continent))continent="Todos";
-  var focus=yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2);
+  var focus=viewMode==="columns"?savedYear:yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2);
   render();
   if(continent!=="Todos"){
    var choices=visible();
    if(choices.length){
     var nearest=choices.reduce(function(best,d){return Math.abs(sy(d)-focus)<Math.abs(sy(best)-focus)?d:best});
-    jumpToYear(sy(nearest));
+    if(viewMode==="columns")savedYear=sy(nearest);else jumpToYear(sy(nearest));
    }
   }
  });$("categories").textContent=cats.length;
  $("note-close").addEventListener("click",closeNote);
  $("note-layer").addEventListener("click",function(e){if(e.target===$("note-layer"))closeNote()});
- document.addEventListener("keydown",function(e){if(e.key==="Escape")closeNote()});
+ document.addEventListener("keydown",function(e){
+  if(e.key!=="Escape")return;
+  if(!$("note-layer").classList.contains("hide"))closeNote();
+  else if($("timeline-panel").classList.contains("is-maximized"))setTimelineMaximized(false);
+ });
+ document.addEventListener("fullscreenchange",function(){
+  if(document.fullscreenElement){nativeFullscreen=true}
+  else if(nativeFullscreen){
+   nativeFullscreen=false;
+   if($("timeline-panel").classList.contains("is-maximized"))setTimelineMaximized(false);
+  }
+ });
+ $("toggle-fullscreen").addEventListener("click",function(){
+  setTimelineMaximized(!$("timeline-panel").classList.contains("is-maximized"));
+ });
+ $("tab-timeline").addEventListener("click",function(){setView("timeline")});
+ $("tab-columns").addEventListener("click",function(){setView("columns")});
  $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
  $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
  $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
