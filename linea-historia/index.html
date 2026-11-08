@@ -74,14 +74,49 @@ main{max-width:1740px;margin:auto;padding:clamp(18px,3vw,50px)}.eyebrow{font-siz
 .note-group-list{display:grid;gap:8px;max-height:50dvh;overflow-y:auto}
 .note-group-list .group-result{width:100%}
 @media(max-width:700px){.note-sheet{max-height:88dvh}.note-header{padding:16px 16px 12px}.note-body{padding:14px 16px 20px}}
+
+/* V5: selector geográfico y retícula decenal legible */
+.geo-toolbar{display:flex;align-items:center;gap:11px;flex-wrap:wrap;padding:12px 2px 1px;border-top:1px solid #28445c;margin-top:13px}
+.geo-label{font-size:.78rem;font-weight:800;color:#d5e5f2}
+#continent{min-width:196px;max-width:100%;border:1px solid #45647b;border-radius:10px;padding:9px 12px;background:#081b2e;color:#e9f2fa;cursor:pointer}
+#continent:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+#geo-status{font-size:.73rem;line-height:1.5}
+.decade-grid{position:absolute;top:0;bottom:0;z-index:0;pointer-events:none;
+ background-image:linear-gradient(to right,rgba(170,199,222,.14) 1px,transparent 1px);
+ background-size:var(--decade-width) 100%;background-repeat:repeat-x}
+.tick.decade-tick{border-left-color:#536b7e}
+.tick.decade-major{border-left-color:#b08b57;border-left-style:solid}
+.tick.decade-tick span{font-size:.7rem;white-space:nowrap}
+.event{z-index:2}.duration-track{z-index:1}.lane-name{z-index:6}
+@media(max-width:700px){.geo-toolbar{gap:8px}#continent{min-width:175px;flex:1}.geo-toolbar #geo-status{flex-basis:100%}}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
 <div class="stats"><div class="stat"><small>Registros disponibles</small><strong id="total">—</strong></div><div class="stat"><small>Visibles en la selección</small><strong id="visible">—</strong></div><div class="stat"><small>Categorías</small><strong id="categories">8</strong></div><div class="stat"><small>Origen</small><strong>Archivo histórico</strong></div></div>
-<section class="panel" aria-label="Controles de cronología"><div class="controls"><div class="group" id="periods"><span class="group-label">Ir a la época</span></div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"><button class="action" id="toggle-add">+ Añadir registro</button><button class="action" id="export">Exportar mis datos</button><label class="action" for="import" style="cursor:pointer">Importar JSON</label><input type="file" accept=".json,application/json" id="import" class="hide"></div><div id="filters" class="filters"></div></section>
-<section class="panel" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Una sola cronología desde el tiempo profundo hasta hoy. Las franjas representan los años reales de inicio y fin y muestran su duración. La escala horizontal cambia según la época: el ancho de diferentes épocas no es proporcional a su duración. Las fechas importadas requieren verificación histórica.</div></section>
+<section class="panel" aria-label="Controles de cronología"><div class="controls"><div class="group" id="periods"><span class="group-label">Ir a la época</span></div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"><button class="action" id="toggle-add">+ Añadir registro</button><button class="action" id="export">Exportar mis datos</button><label class="action" for="import" style="cursor:pointer">Importar JSON</label><input type="file" accept=".json,application/json" id="import" class="hide"></div><div class="geo-toolbar">
+<label for="continent" class="geo-label">Continente</label>
+<select id="continent" aria-label="Filtrar por continente">
+<option value="Todos">Todos los continentes</option>
+<option value="Europa">Europa</option>
+<option value="Asia">Asia</option>
+<option value="África">África</option>
+<option value="América">América</option>
+<option value="Oceanía">Oceanía</option>
+<option value="Antártida">Antártida</option>
+<option value="Mundial">Mundial / global</option>
+<option value="Sin localizar">Sin localizar</option>
+</select>
+<span id="geo-status" class="muted" aria-live="polite">Ubicaciones según referencias geográficas del archivo.</span>
+</div><div id="filters" class="filters"></div></section>
+<section class="panel" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Una sola cronología desde el tiempo profundo hasta hoy. Las franjas representan los años reales de inicio y fin y muestran su duración. Desde el 3000 a. C. hay una marca cada 10 años, también al cambiar de época. Los tiempos más antiguos usan escalas adaptadas. El filtro continental es provisional: solo clasifica referencias geográficas identificables; los casos dudosos quedan «Sin localizar».</div></section>
 <section class="panel details" aria-live="polite"><div id="detail"><span class="year">Explorador histórico</span><h2>Selecciona un registro de la línea de tiempo</h2><p>Aquí aparecerán su descripción y la celda de origen del archivo, si procede.</p></div><button class="action" id="clear-detail" aria-label="Deseleccionar registro">Cerrar</button></section>
-<section class="panel hide" id="add-panel"><strong>Añadir un registro a mi cronología</strong><p class="muted">Se guarda exclusivamente en este navegador. Exporta un JSON para conservarlo o trasladarlo a otro dispositivo.</p><form id="add-form" class="add-grid"><input id="new-title" required maxlength="300" placeholder="Nombre del acontecimiento o persona"><input id="new-year" required type="number" step="0.01" placeholder="Inicio (a.C. negativo)"><input id="new-end-year" type="number" step="0.01" placeholder="Fin (opcional)"><select id="new-cat"></select><textarea id="new-note" maxlength="1200" placeholder="Descripción, fuente, contexto…"></textarea><button class="action primary" type="submit">Guardar registro</button></form></section>
+<section class="panel hide" id="add-panel"><strong>Añadir un registro a mi cronología</strong><p class="muted">Se guarda exclusivamente en este navegador. Exporta un JSON para conservarlo o trasladarlo a otro dispositivo.</p><form id="add-form" class="add-grid"><input id="new-title" required maxlength="300" placeholder="Nombre del acontecimiento o persona"><input id="new-year" required type="number" step="0.01" placeholder="Inicio (a.C. negativo)"><input id="new-end-year" type="number" step="0.01" placeholder="Fin (opcional)"><select id="new-cat" aria-label="Categoría"></select><select id="new-continent" aria-label="Continente (opcional)">
+<option value="">Continente (opcional)</option>
+<option value="Europa">Europa</option><option value="Asia">Asia</option>
+<option value="África">África</option><option value="América">América</option>
+<option value="Oceanía">Oceanía</option><option value="Antártida">Antártida</option>
+<option value="Mundial">Mundial</option>
+</select><textarea id="new-note" maxlength="1200" placeholder="Descripción, fuente, contexto…"></textarea><button class="action primary" type="submit">Guardar registro</button></form></section>
 <p class="notice">Este es un archivo de exploración, no una enciclopedia validada. La importación conserva posibles erratas, imprecisiones o interpretaciones del documento original. Los cambios añadidos desde la web son locales; no se sincronizan automáticamente entre dispositivos.</p>
 <div id="note-layer" class="note-layer hide" role="presentation">
  <section id="note-dialog" class="note-sheet" role="dialog" aria-modal="true" aria-labelledby="note-title" tabindex="-1">
