@@ -8,8 +8,8 @@ var periods=[
 {k:"Edad moderna",a:1492,b:1789,w:3600,at:1600},
 {k:"Contemporánea",a:1789,b:2031,w:6100,at:1925}
 ];
-var cats=["Acontecimientos","Personajes","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
-var colors=["#65bdc2","#c68dcb","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
+var cats=["Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
+var colors=["#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
 var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1;
 var el=function(tag,t,cls){var x=document.createElement(tag);if(t!=null)x.textContent=t;if(cls)x.className=cls;return x};
 var $=function(id){return document.getElementById(id)};
@@ -68,7 +68,7 @@ function howLong(d){
  return n<1?Math.max(1,Math.round(n*12))+" meses":(Math.round(n*10)/10).toLocaleString("es-ES")+(Math.abs(n-1)<.001?" año":" años");
 }
 function displayName(d){
- if(d._origin!=="title")return d.t;
+ if(!duration(d))return d.t;
  var m=dateRe.exec(d.t);
  if(m&&m.index>2&&/^\s*(?:\(\s*\d+\s*años?\s*\))?\s*$/i.test(d.t.slice(m.index+m[0].length)))return d.t.slice(0,m.index).trim();
  return d.t;
@@ -104,7 +104,10 @@ function categoryUI(){
  ["Todas"].concat(cats).forEach(function(c,i){
   var b=el("button",c,"chip");b.type="button";b.setAttribute("aria-pressed",cat===c);
   if(i){var swatch=el("i",null,"dot");swatch.style.background=colors[i-1];b.prepend(swatch)}
-  b.addEventListener("click",function(){cat=c;categoryUI();render()});f.append(b);
+  b.addEventListener("click",function(){
+   cat=c;categoryUI();render();
+   if(c==="Historia bíblica")jumpToYear(-1700);
+  });f.append(b);
  });
 }
 function periodUI(){
@@ -115,6 +118,49 @@ function periodUI(){
   root.append(b);
  });
 }
+
+var lastCardFocus=null;
+function closeNote(){
+ var layer=$("note-layer");
+ if(layer.classList.contains("hide"))return;
+ layer.classList.add("hide");
+ if(lastCardFocus&&typeof lastCardFocus.focus==="function")lastCardFocus.focus();
+ lastCardFocus=null;
+}
+function showNote(d){
+ var layer=$("note-layer"),root=$("note-body");root.replaceChildren();
+ if(layer.classList.contains("hide"))lastCardFocus=document.activeElement;
+ $("note-kicker").textContent=d.c+" · Ficha histórica";
+ $("note-title").textContent=displayName(d);
+ var dates=yearText(sy(d));
+ if(duration(d))dates+=" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d);
+ root.append(el("div",dates,"note-date"));
+ root.append(el("p",d.d||"El Excel original no incluye una nota descriptiva para esta entrada. Puedes consultar Wikipedia o ampliar manualmente el registro.","note-description"));
+ if(d.isTraditional)root.append(el("p","Cronología bíblica tradicional: las fechas del archivo no deben interpretarse como dataciones históricas demostradas.","note-warning"));
+ if(d.s)root.append(el("p","Origen: "+d.s,"source-note"));
+ var wiki=(typeof d.w==="string"&&/^https:\/\/es\.wikipedia\.org\/wiki\/[^ ]+$/i.test(d.w))?d.w:null;
+ var query=displayName(d).replace(/\s+\b\d{3,4}\s*(?:a\.?\s*c\.?)?\s*[-–—].*$/i,"").trim();
+ if(d.c==="Pontífices")query+=" papa";
+ var href=wiki||"https://es.wikipedia.org/w/index.php?search="+encodeURIComponent(query||d.t);
+ var a=el("a",wiki?"Abrir artículo en Wikipedia ↗":"Buscar en Wikipedia ↗","note-wiki");
+ a.href=href;a.target="_blank";a.rel="noopener noreferrer";a.referrerPolicy="no-referrer";root.append(a);
+ layer.classList.remove("hide");$("note-dialog").focus();
+}
+function showGroupNote(group){
+ var layer=$("note-layer"),root=$("note-body");root.replaceChildren();
+ if(layer.classList.contains("hide"))lastCardFocus=document.activeElement;
+ $("note-kicker").textContent="Registros agrupados";
+ $("note-title").textContent=group.groupLabel+" · "+group.children.length+" registros";
+ root.append(el("p","Selecciona una de las entradas para abrir su nota y su enlace a Wikipedia."));
+ var list=el("div",null,"note-group-list");
+ group.children.forEach(function(d){
+  var b=el("button",yearText(sy(d))+" · "+d.t,"group-result");b.type="button";
+  b.addEventListener("click",function(){detail(d)});
+  list.append(b);
+ });
+ root.append(list);layer.classList.remove("hide");$("note-dialog").focus();
+}
+
 function detail(d){
  selected=d;
  var root=$("detail");root.replaceChildren();
@@ -125,6 +171,7 @@ function detail(d){
  if(d._origin&&d._origin!=="explicit")root.append(el("p","Intervalo interpretado del texto importado. Las fechas todavía requieren verificación documental."));
  if(d.s)root.append(el("span",d.s,"tag"));
  root.append(el("span",d.c,"tag"));
+ showNote(d);
 }
 function groupedDetail(group){
  selected=group;
@@ -135,6 +182,7 @@ function groupedDetail(group){
   var b=el("button",yearText(sy(d))+" · "+d.t,"group-result");b.type="button";
   b.addEventListener("click",function(){detail(d)});list.append(b);
  });root.append(list);
+ showGroupNote(group);
 }
 function grouped(items,c){
  if(c!=="Actualidad"||query)return items;
@@ -234,7 +282,10 @@ function setZoom(next){
  zoom=Math.max(1,Math.min(8,next));render();jumpToYear(y);
 }
 function init(){
- periodUI();categoryUI();
+ periodUI();categoryUI();$("categories").textContent=cats.length;
+ $("note-close").addEventListener("click",closeNote);
+ $("note-layer").addEventListener("click",function(e){if(e.target===$("note-layer"))closeNote()});
+ document.addEventListener("keydown",function(e){if(e.key==="Escape")closeNote()});
  $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
  $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
  $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
@@ -264,7 +315,7 @@ function init(){
   $("add-panel").classList.toggle("hide");if(!$("add-panel").classList.contains("hide"))$("new-title").focus();
  });
  $("clear-detail").addEventListener("click",function(){
-  selected=null;$("detail").replaceChildren(el("p","Selecciona un registro para ver sus datos."));render();
+  selected=null;closeNote();$("detail").replaceChildren(el("p","Selecciona un registro para ver sus datos."));render();
  });
  $("add-form").addEventListener("submit",function(e){
   e.preventDefault();
