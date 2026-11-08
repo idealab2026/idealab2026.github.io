@@ -104,7 +104,10 @@ function categoryUI(){
  ["Todas"].concat(cats).forEach(function(c,i){
   var b=el("button",c,"chip");b.type="button";b.setAttribute("aria-pressed",cat===c);
   if(i){var swatch=el("i",null,"dot");swatch.style.background=colors[i-1];b.prepend(swatch)}
-  b.addEventListener("click",function(){cat=c;categoryUI();render()});f.append(b);
+  b.addEventListener("click",function(){
+   cat=c;categoryUI();render();
+   if(c==="Historia bíblica")jumpToYear(-1700);
+  });f.append(b);
  });
 }
 function periodUI(){
