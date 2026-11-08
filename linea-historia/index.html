@@ -89,6 +89,42 @@ main{max-width:1740px;margin:auto;padding:clamp(18px,3vw,50px)}.eyebrow{font-siz
 .tick.decade-tick span{font-size:.7rem;white-space:nowrap}
 .event{z-index:2}.duration-track{z-index:1}.lane-name{z-index:6}
 @media(max-width:700px){.geo-toolbar{gap:8px}#continent{min-width:175px;flex:1}.geo-toolbar #geo-status{flex-basis:100%}}
+
+/* V6 · two layouts, fullscreen chronology, fixed decade axis */
+.view-tabs{display:flex;align-items:center;gap:7px;margin:18px 0 12px;border-bottom:1px solid #294057;padding:0 2px 9px}
+.view-tab{border:1px solid #38556d;background:#102337;color:#bacee0;padding:10px 17px;border-radius:9px;font-size:.83rem;font-weight:750}
+.view-tab:hover{color:white;border-color:#c69c55}
+.view-tab.active{border-color:var(--gold);background:#e5b768;color:#102337}
+.timeline-panel.hide,.columns-panel.hide{display:none}
+.timeline-scroll{overflow:auto;max-height:min(74dvh,870px);overscroll-behavior:contain;scrollbar-gutter:stable}
+.timeline-inner>.era-strip{position:sticky;top:0;z-index:30;isolation:isolate}
+.timeline-inner>.ticks{position:sticky;top:37px;z-index:29;isolation:isolate;box-shadow:0 3px 9px #06172855}
+.timeline-panel .figure-head{flex:none}
+.fullscreen-button{font-weight:750;border-color:#c49b5d;color:#efd1a0}
+.fullscreen-button[aria-pressed=true]{background:#e5b768;color:#0b1c2b}
+body.historia-fullscreen{overflow:hidden}
+.timeline-panel.is-maximized{position:fixed;inset:0;z-index:1800;display:flex;flex-direction:column;width:100vw;height:100dvh;min-height:0;max-height:none;margin:0;padding:clamp(9px,1.2vw,20px);border-radius:0;background:#102337}
+.timeline-panel.is-maximized .figure-head{margin-bottom:8px}
+.timeline-panel.is-maximized .timeline-scroll{flex:1 1 auto;min-height:0;max-height:none}
+.timeline-panel.is-maximized .hint{flex:none;padding:9px 0 0;font-size:.7rem}
+.columns-grid{display:flex;align-items:stretch;gap:12px;min-height:240px;overflow-x:auto;padding-bottom:10px;scrollbar-color:#57718b #081727}
+.history-column{flex:0 0 clamp(248px,23vw,336px);display:flex;flex-direction:column;min-height:150px;max-height:min(76dvh,820px);border:1px solid #334f66;border-radius:12px;background:#0a1c2f;overflow:hidden}
+.history-column-head{display:flex;justify-content:space-between;align-items:center;gap:8px;border-bottom:2px solid var(--col-accent);background:#18334a;padding:12px 13px;color:#edf4fc;font-size:.81rem;font-weight:800}
+.history-column-count{font-size:.72rem;color:#d2e3ef;font-variant-numeric:tabular-nums}
+.history-column-items{display:flex;flex-direction:column;gap:8px;padding:10px;overflow-y:auto;min-height:0;flex:1;scrollbar-color:#57718b #081727}
+.history-column-item{display:block;width:100%;padding:10px 11px;border:1px solid #37546d;border-left:4px solid var(--col-accent);background:#142c40;border-radius:8px;text-align:left;color:#e6eff9}
+.history-column-item:hover,.history-column-item:focus-visible{border-color:#e5b768;background:#213e54}
+.column-year{display:block;color:#ecc77b;font-size:.7rem;font-weight:750;margin-bottom:5px}
+.column-title{display:block;color:#eef5fb;font-size:.81rem;font-weight:750;line-height:1.4;overflow-wrap:anywhere}
+.column-duration{display:block;color:#a6c2d9;font-size:.72rem;margin-top:5px}
+.history-column-empty{color:var(--muted);font-size:.81rem;line-height:1.5;padding:13px}
+@media(max-width:700px){
+ .view-tab{flex:1;text-align:center;padding:9px 8px}
+ .figure-tools{gap:5px}.fullscreen-button{padding:6px 8px}
+ .timeline-scroll{max-height:68dvh}
+ .history-column{flex-basis:min(82vw,310px);max-height:70dvh}
+ .timeline-panel.is-maximized{padding:9px}.timeline-panel.is-maximized .hint{font-size:.65rem}
+}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
@@ -108,7 +144,16 @@ main{max-width:1740px;margin:auto;padding:clamp(18px,3vw,50px)}.eyebrow{font-siz
 </select>
 <span id="geo-status" class="muted" aria-live="polite">Ubicaciones según referencias geográficas del archivo.</span>
 </div><div id="filters" class="filters"></div></section>
-<section class="panel" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Una sola cronología desde el tiempo profundo hasta hoy. Las franjas representan los años reales de inicio y fin y muestran su duración. Desde el 3000 a. C. hay una marca cada 10 años, también al cambiar de época. Los tiempos más antiguos usan escalas adaptadas. El filtro continental es provisional: solo clasifica referencias geográficas identificables; los casos dudosos quedan «Sin localizar».</div></section>
+<nav class="view-tabs" role="tablist" aria-label="Vista de historia">
+  <button type="button" id="tab-timeline" class="view-tab active" role="tab" aria-controls="timeline-panel" aria-selected="true">Línea temporal</button>
+  <button type="button" id="tab-columns" class="view-tab" role="tab" aria-controls="columns-panel" aria-selected="false">Vista por columnas</button>
+</nav>
+<section id="timeline-panel" class="panel timeline-panel" role="tabpanel" aria-labelledby="tab-timeline" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button><button class="action fullscreen-button" type="button" id="toggle-fullscreen" aria-pressed="false" title="Ampliar la cronología a la ventana completa">⛶ Pantalla completa</button></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Una sola cronología desde el tiempo profundo hasta hoy. Las franjas representan los años reales de inicio y fin y muestran su duración. Desde el 3000 a. C. hay una marca cada 10 años, también al cambiar de época. Los tiempos más antiguos usan escalas adaptadas. El filtro continental es provisional: solo clasifica referencias geográficas identificables; los casos dudosos quedan «Sin localizar».</div></section>
+<section id="columns-panel" class="panel columns-panel hide" role="tabpanel" aria-labelledby="tab-columns">
+  <div class="figure-head"><strong>Elementos ordenados por antigüedad</strong><span class="muted" id="columns-summary">Orden cronológico: de más antiguo a más reciente, por categoría</span></div>
+  <div id="columns-grid" class="columns-grid" role="region" aria-label="Registros cronológicos agrupados por categoría"></div>
+  <div class="hint">Cada columna reúne una categoría; los registros están ordenados por su fecha inicial, desde los más antiguos hasta los más recientes. Pulsa una tarjeta para consultar la nota y Wikipedia.</div>
+</section>
 <section class="panel details" aria-live="polite"><div id="detail"><span class="year">Explorador histórico</span><h2>Selecciona un registro de la línea de tiempo</h2><p>Aquí aparecerán su descripción y la celda de origen del archivo, si procede.</p></div><button class="action" id="clear-detail" aria-label="Deseleccionar registro">Cerrar</button></section>
 <section class="panel hide" id="add-panel"><strong>Añadir un registro a mi cronología</strong><p class="muted">Se guarda exclusivamente en este navegador. Exporta un JSON para conservarlo o trasladarlo a otro dispositivo.</p><form id="add-form" class="add-grid"><input id="new-title" required maxlength="300" placeholder="Nombre del acontecimiento o persona"><input id="new-year" required type="number" step="0.01" placeholder="Inicio (a.C. negativo)"><input id="new-end-year" type="number" step="0.01" placeholder="Fin (opcional)"><select id="new-cat" aria-label="Categoría"></select><select id="new-continent" aria-label="Continente (opcional)">
 <option value="">Continente (opcional)</option>
