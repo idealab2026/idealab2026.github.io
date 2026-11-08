@@ -136,9 +136,13 @@ Si el informe muestra asociaciones inequívocas, guardarlas localmente:
     python3 scripts/notebooklm_source_mapper.py --book conde-montecristo --volume tomo-i --apply
     python3 scripts/notebooklm_source_mapper.py --book conde-montecristo --volume tomo-ii --apply
 
+La herramienta también reconoce de forma estricta PDFs numerados, como
+`51.pdf`, `52.pdf`, ..., `100.pdf`: cada archivo se vincula exclusivamente
+con su capítulo homónimo, sin interpretar la posición en el listado.
+
 La herramienta solo vincula cuando encuentra una fuente con URL idéntica a
-la del vídeo, una fuente del capítulo exacto o un conjunto completo de
-fuentes para el intervalo. **Nunca** asigna un PDF del tomo completo
+la del vídeo, una fuente del capítulo exacto (incluido `51.pdf`) o un conjunto
+completo de fuentes para el intervalo. **Nunca** asigna un PDF del tomo completo
 a un solo capítulo. Si hay ambigüedad, informa PENDIENTE y exige
 selección manual de fuentes mediante `map-episode`.
 
