@@ -352,7 +352,7 @@ function showPodcastNotes(panel,notes){
  });
  panel.append(section)
 }
-function inspect(){var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para ver sus detalles, editarla o eliminarla."));return;}
+function inspect(){syncInspectorDrawer();if(isGraphExpanded())$("inspector").scrollTop=0;var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para ver sus detalles, editarla o eliminarla."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
 if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showPodcastNotes(p,obj.podcastNotes);var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",obj.confidence==="documentado"?"Documentada":obj.confidence==="indicio"?"Indicio":"Hipótesis","badge"));if(obj.note)p.append(N("p",obj.note));if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,"Abrir minuto de la relación");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
@@ -590,12 +590,37 @@ $("edge-mode").addEventListener("click",function(){
 });
 
 var graphPanel=$("graph-panel");
+var inspector=$("inspector"),inspectorHome=inspector.parentNode,inspectorNext=inspector.nextSibling;
+var graphModal=$("modal"),modalHome=graphModal.parentNode,modalNext=graphModal.nextSibling;
 function isFallbackFullscreen(){return graphPanel.classList.contains("is-fullscreen")}
+function isGraphExpanded(){return document.fullscreenElement===graphPanel||isFallbackFullscreen()}
+function syncInspectorDrawer(){
+ var active=isGraphExpanded(),open=active&&!!selection;
+ graphPanel.classList.toggle("drawer-open",open);
+ inspector.setAttribute("aria-hidden",String(active&&!open));
+}
+function syncFullscreenInspector(){
+ if(isGraphExpanded()){
+  // The browser fullscreen element only displays its own descendants.
+  // Move the EXISTING inspector (and editor modal) rather than duplicating
+  // the details, IDs or event listeners. Restore both on exit.
+  if(inspector.parentNode!==graphPanel)graphPanel.appendChild(inspector);
+  if(graphModal.parentNode!==graphPanel)graphPanel.appendChild(graphModal);
+ }else{
+  if(inspector.parentNode!==inspectorHome)inspectorHome.insertBefore(inspector,inspectorNext);
+  if(graphModal.parentNode!==modalHome)modalHome.insertBefore(graphModal,modalNext);
+ }
+ syncInspectorDrawer();
+}
 function syncFullscreenButton(){
- var active=document.fullscreenElement===graphPanel||isFallbackFullscreen(),btn=$("fullscreen");
+ var active=isGraphExpanded(),btn=$("fullscreen");
  btn.textContent=active?"⛶ Salir de pantalla completa":"⛶ Pantalla completa";btn.setAttribute("aria-pressed",String(active));
  btn.title=active?"Cerrar pantalla completa (Esc)":"Mostrar la pizarra en ventana completa";
+ syncFullscreenInspector();
 }
+$("inspector-drawer-close").addEventListener("click",function(){
+ selection=null;inspect();render();
+});
 function exitFallbackFullscreen(){graphPanel.classList.remove("is-fullscreen");document.body.classList.remove("graph-expanded");syncFullscreenButton()}
 $("fullscreen").addEventListener("click",async function(){
  if(document.fullscreenElement===graphPanel){try{await document.exitFullscreen()}catch(e){}syncFullscreenButton();return}
@@ -607,7 +632,13 @@ $("fullscreen").addEventListener("click",async function(){
  syncFullscreenButton();
 });
 document.addEventListener("fullscreenchange",syncFullscreenButton);
-document.addEventListener("keydown",function(e){if(e.key==="Escape"&&isFallbackFullscreen())exitFallbackFullscreen()});
+document.addEventListener("keydown",function(e){
+ if(e.key!=="Escape")return;
+ if(isFallbackFullscreen()){
+  if(graphPanel.classList.contains("drawer-open")){selection=null;inspect();render();e.stopPropagation();return}
+  exitFallbackFullscreen();
+ }
+});
 $("export").addEventListener("click",function(){var json=JSON.stringify(demo?{nodes:[],edges:[]}:data,null,2),blob=new Blob([json],{type:"application/json"}),link=N("a");link.href=URL.createObjectURL(blob);link.download="mi-telarana.json";link.click();setTimeout(function(){URL.revokeObjectURL(link.href)},1000)});
 ["import","import-merge"].forEach(function(target){$(target).addEventListener("change",async function(e){var file=e.target.files[0];if(!file)return;var merge=target==="import-merge";try{
  var v=JSON.parse(await file.text());if(!Array.isArray(v.nodes)||!Array.isArray(v.edges))throw Error("JSON incompatible");
