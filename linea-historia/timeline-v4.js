@@ -216,6 +216,10 @@ function wikiMatchTitle(d,result,query){
  if(!target||!Array.isArray(result)||!result.length)return null;
  var perfect=result.find(function(x){return wikiPlain(x.title)===target});
  if(perfect)return perfect.title;
+ if(d.c==="Cine"||d.c==="Literatura"){
+  var related=result.find(function(x){return wikiPlain(x.title).startsWith(target+" ")&&/\(/.test(x.title)});
+  if(related&&target.split(" ").length===1)return related.title;
+ }
  var q=target.split(" ").filter(function(x){return x.length>2});
  if(!q.length)return null;
  var best=null,score=0;
@@ -290,6 +294,11 @@ function wikiRenderArticle(d,root,page){
   photo.referrerPolicy="no-referrer";
   photo.onerror=function(){photo.remove()};
   root.append(photo);
+  if(typeof page.pageimage==="string"&&page.pageimage.length<300){
+   var credit=el("p",null,"wiki-image-credit");
+   wikiExternalLink(credit,"https://commons.wikimedia.org/wiki/File:"+encodeURIComponent(page.pageimage.replace(/ /g,"_")),"Autoría y licencia de la imagen ↗","wiki-credit-link");
+   root.append(credit);
+  }
  }
  var text=el("article",null,"wiki-article");
  wikiAppendText(text,page.extract);
@@ -324,7 +333,7 @@ async function wikiLoadArticle(d,root,term,requestId,signal){
     title=wikiMatchTitle(d,results.query&&results.query.search,term);
    }
    if(!title)throw Error("No se ha encontrado una coincidencia fiable. Para evitar atribuir un artículo incorrecto, utiliza la búsqueda en Wikipedia.");
-   var details=await wikiAPI({action:"query",prop:"extracts|pageimages",titles:title,redirects:1,explaintext:1,exsectionformat:"wiki",piprop:"thumbnail",pithumbsize:600},signal);
+   var details=await wikiAPI({action:"query",prop:"extracts|pageimages",titles:title,redirects:1,explaintext:1,exsectionformat:"wiki",piprop:"thumbnail|name",pithumbsize:600},signal);
    page=details.query&&details.query.pages&&details.query.pages[0];
    if(!page||page.missing||!page.extract||!String(page.extract).trim())throw Error("No hay texto disponible de este artículo mediante la API de Wikipedia.");
    if(wikiCache.size>=50)wikiCache.delete(wikiCache.keys().next().value);
