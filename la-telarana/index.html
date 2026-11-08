@@ -51,7 +51,7 @@ body.graph-expanded{overflow:hidden}
 </main>
 <div class="modal hidden" id="modal" aria-hidden="true"><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><h2 id="dialog-title">Editar</h2><form id="editor"><div id="fields" class="form-grid"></div><div class="form-actions"><button type="button" class="btn" id="cancel">Cancelar</button><button type="submit" class="btn primary">Guardar</button></div></form></div></div>
 <script src="./one-note-seed.js?v=20261108-2"></script>
-<script src="./podcast-vaquero-150.js?v=20261108-1"></script>
+<script src="./podcast-vaquero-150.js?v=20261108-2"></script>
 <script>
 (function(){
 "use strict";
@@ -127,13 +127,12 @@ function load(){
   modified=one.nodes+one.edges>0;
   try{localStorage.setItem("idealab-onenote-seed-v2","1")}catch(e){}
  }
- if(window.IDEA_TELARANA_PODCAST_150&&!localStorage.getItem("idealab-podcast-vaquero150-v1")){
+ if(window.IDEA_TELARANA_PODCAST_150&&!localStorage.getItem("idealab-podcast-vaquero150-v2")){
   var imported=mergePodcastStudy(window.IDEA_TELARANA_PODCAST_150);
   modified=modified||imported.nodes+imported.edges+imported.notes>0;
-  if(modified)store();
-  try{localStorage.setItem("idealab-podcast-vaquero150-v1","1")}catch(e){}
+  try{localStorage.setItem("idealab-podcast-vaquero150-v2","1")}catch(e){}
  }
- if(modified&&!localStorage.getItem("idealab-podcast-vaquero150-v1"))store();
+ if(modified)store();
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
 function getNode(id){return data.nodes.find(function(n){return n.id===id})}
@@ -229,7 +228,7 @@ function showPodcastNotes(panel,notes){
 }
 function inspect(){var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para ver sus detalles, editarla o eliminarla."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
-if(selection.kind==="node"){var image=safePhoto(obj.photo);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img)}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source)p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showPodcastNotes(p,obj.podcastNotes);var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
+if(selection.kind==="node"){var image=safePhoto(obj.photo);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img)}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showPodcastNotes(p,obj.podcastNotes);var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",obj.confidence==="documentado"?"Documentada":obj.confidence==="indicio"?"Indicio":"Hipótesis","badge"));if(obj.note)p.append(N("p",obj.note));if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,"Abrir minuto de la relación");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
 var actions=N("div",null,"actions"),edit=N("button","Editar","btn"),del=N("button","Eliminar","btn danger");edit.addEventListener("click",function(){openEditor(selection.kind,obj)});del.addEventListener("click",function(){if(!confirm("¿Eliminar este elemento y sus relaciones dependientes?"))return;if(demo){data={nodes:[],edges:[]};demo=false}if(selection.kind==="node"){data.nodes=data.nodes.filter(function(x){return x.id!==obj.id});data.edges=data.edges.filter(function(e){return e.a!==obj.id&&e.b!==obj.id})}else data.edges=data.edges.filter(function(e){return e.id!==obj.id});selection=null;store();inspect();render()});actions.append(edit,del);p.append(actions)}
 var editorMode="node",editingId=null;
