@@ -52,11 +52,69 @@ body.graph-expanded{overflow:hidden}
 #network .node.dimmed{opacity:.42}
 #edge-mode[aria-pressed="true"]{border-color:#b88e5b;color:#ffd3a3}
 .photo-credit{display:block;font-size:.73rem;color:#a2c3d9;margin:5px 0 12px;text-decoration:underline;text-underline-offset:2px}
+
+/* Ficha lateral en pantalla completa. Reutiliza el inspector original:
+   una sola ficha y un solo estado de selección, sin duplicar identificadores. */
+.inspector .inspector-drawer-close{display:none}
+.graph-panel:fullscreen>.inspector,
+.graph-panel:-webkit-full-screen>.inspector,
+.graph-panel.is-fullscreen>.inspector{
+  position:absolute;z-index:12;top:0;right:0;bottom:0;
+  width:min(430px,39vw);min-width:300px;height:100%;max-height:100%;
+  margin:0;padding:18px 20px 28px;
+  border:0;border-left:1px solid #536779;border-radius:0;
+  background:#192735;box-shadow:-15px 0 45px #05090baa;
+  overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;
+  scrollbar-color:#60768d #142130;
+  opacity:0;visibility:hidden;pointer-events:none;transform:translateX(105%);
+  transition:transform .2s ease,opacity .2s ease,visibility .2s;
+}
+.graph-panel:fullscreen.drawer-open>.inspector,
+.graph-panel:-webkit-full-screen.drawer-open>.inspector,
+.graph-panel.is-fullscreen.drawer-open>.inspector{
+  transform:translateX(0);opacity:1;visibility:visible;pointer-events:auto;
+}
+.graph-panel:fullscreen>.inspector .inspector-drawer-close,
+.graph-panel:-webkit-full-screen>.inspector .inspector-drawer-close,
+.graph-panel.is-fullscreen>.inspector .inspector-drawer-close{
+  display:grid;place-items:center;position:sticky;top:0;float:right;
+  z-index:3;width:35px;height:35px;margin:-6px -8px 8px 8px;
+  background:#293a4b;border:1px solid #6b7d8b;border-radius:9px;
+  color:#fff;font-size:23px;line-height:1;cursor:pointer;
+}
+.graph-panel:fullscreen>.inspector .inspector-drawer-close:hover,
+.graph-panel.is-fullscreen>.inspector .inspector-drawer-close:hover{
+  border-color:var(--warm);background:#394b5e;
+}
+.graph-panel:fullscreen>.inspector .overview,
+.graph-panel:-webkit-full-screen>.inspector .overview,
+.graph-panel.is-fullscreen>.inspector .overview{display:none}
+.graph-panel:fullscreen>.inspector .sectionlabel,
+.graph-panel:-webkit-full-screen>.inspector .sectionlabel,
+.graph-panel.is-fullscreen>.inspector .sectionlabel{margin:5px 0 13px;padding-top:6px}
+@media(max-width:700px){
+ .graph-panel:fullscreen>.inspector,
+ .graph-panel:-webkit-full-screen>.inspector,
+ .graph-panel.is-fullscreen>.inspector{
+   top:auto;left:0;right:0;bottom:0;width:100%;min-width:0;
+   height:min(68dvh,590px);border:0;border-top:1px solid #6c7b8a;
+   border-radius:15px 15px 0 0;transform:translateY(105%);
+   box-shadow:0 -15px 35px #05090baa;
+ }
+ .graph-panel:fullscreen.drawer-open>.inspector,
+ .graph-panel:-webkit-full-screen.drawer-open>.inspector,
+ .graph-panel.is-fullscreen.drawer-open>.inspector{transform:translateY(0)}
+}
+@media(prefers-reduced-motion:reduce){
+ .graph-panel:fullscreen>.inspector,
+ .graph-panel:-webkit-full-screen>.inspector,
+ .graph-panel.is-fullscreen>.inspector{transition:none}
+}
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn primary" id="add-node">+ Añadir entidad</button><button class="btn" id="add-edge">+ Añadir relación</button><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Exportar estudio</button><label for="import-merge" class="btn" style="cursor:pointer">Fusionar JSON</label><input id="import-merge" type="file" accept="application/json,.json" class="hidden"><label for="import" class="btn" style="cursor:pointer">Reemplazar JSON</label><input type="file" accept="application/json,.json" id="import" class="hidden"></div>
 <div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Arrastra el fondo para desplazarte · zoom con + / −</span><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
-<aside class="panel inspector"><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión. Podrás editar su contexto, fuentes y relaciones.</p><p class="minor">Arrastra las fichas para reorganizar el grafo; utiliza +/− para ajustar el zoom.</p></div></aside></div>
+<aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión. Podrás editar su contexto, fuentes y relaciones.</p><p class="minor">Arrastra las fichas para reorganizar el grafo; utiliza +/− para ajustar el zoom.</p></div></aside></div>
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La base documental de OneNote, incluidas sus fotografías y transcripciones originales, es pública. Algunas fichas reproducen opiniones y afirmaciones no verificadas: no deben confundirse con hechos acreditados. Los cambios privados añadidos desde este navegador se guardan exclusivamente en localStorage y no se suben a IDEA LAB. Exporta copias de seguridad; borrar los datos del navegador puede eliminar el estudio. No introduzcas datos especialmente sensibles de terceros sin una base legítima.</p>
 </main>
 <div class="modal hidden" id="modal" aria-hidden="true"><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><h2 id="dialog-title">Editar</h2><form id="editor"><div id="fields" class="form-grid"></div><div class="form-actions"><button type="button" class="btn" id="cancel">Cancelar</button><button type="submit" class="btn primary">Guardar</button></div></form></div></div>
@@ -294,7 +352,7 @@ function showPodcastNotes(panel,notes){
  });
  panel.append(section)
 }
-function inspect(){var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para ver sus detalles, editarla o eliminarla."));return;}
+function inspect(){syncInspectorDrawer();if(isGraphExpanded())$("inspector").scrollTop=0;var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para ver sus detalles, editarla o eliminarla."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
 if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showPodcastNotes(p,obj.podcastNotes);var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",obj.confidence==="documentado"?"Documentada":obj.confidence==="indicio"?"Indicio":"Hipótesis","badge"));if(obj.note)p.append(N("p",obj.note));if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,"Abrir minuto de la relación");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
@@ -532,12 +590,37 @@ $("edge-mode").addEventListener("click",function(){
 });
 
 var graphPanel=$("graph-panel");
+var inspector=$("inspector"),inspectorHome=inspector.parentNode,inspectorNext=inspector.nextSibling;
+var graphModal=$("modal"),modalHome=graphModal.parentNode,modalNext=graphModal.nextSibling;
 function isFallbackFullscreen(){return graphPanel.classList.contains("is-fullscreen")}
+function isGraphExpanded(){return document.fullscreenElement===graphPanel||isFallbackFullscreen()}
+function syncInspectorDrawer(){
+ var active=isGraphExpanded(),open=active&&!!selection;
+ graphPanel.classList.toggle("drawer-open",open);
+ inspector.setAttribute("aria-hidden",String(active&&!open));
+}
+function syncFullscreenInspector(){
+ if(isGraphExpanded()){
+  // The browser fullscreen element only displays its own descendants.
+  // Move the EXISTING inspector (and editor modal) rather than duplicating
+  // the details, IDs or event listeners. Restore both on exit.
+  if(inspector.parentNode!==graphPanel)graphPanel.appendChild(inspector);
+  if(graphModal.parentNode!==graphPanel)graphPanel.appendChild(graphModal);
+ }else{
+  if(inspector.parentNode!==inspectorHome)inspectorHome.insertBefore(inspector,inspectorNext);
+  if(graphModal.parentNode!==modalHome)modalHome.insertBefore(graphModal,modalNext);
+ }
+ syncInspectorDrawer();
+}
 function syncFullscreenButton(){
- var active=document.fullscreenElement===graphPanel||isFallbackFullscreen(),btn=$("fullscreen");
+ var active=isGraphExpanded(),btn=$("fullscreen");
  btn.textContent=active?"⛶ Salir de pantalla completa":"⛶ Pantalla completa";btn.setAttribute("aria-pressed",String(active));
  btn.title=active?"Cerrar pantalla completa (Esc)":"Mostrar la pizarra en ventana completa";
+ syncFullscreenInspector();
 }
+$("inspector-drawer-close").addEventListener("click",function(){
+ selection=null;inspect();render();
+});
 function exitFallbackFullscreen(){graphPanel.classList.remove("is-fullscreen");document.body.classList.remove("graph-expanded");syncFullscreenButton()}
 $("fullscreen").addEventListener("click",async function(){
  if(document.fullscreenElement===graphPanel){try{await document.exitFullscreen()}catch(e){}syncFullscreenButton();return}
@@ -549,7 +632,13 @@ $("fullscreen").addEventListener("click",async function(){
  syncFullscreenButton();
 });
 document.addEventListener("fullscreenchange",syncFullscreenButton);
-document.addEventListener("keydown",function(e){if(e.key==="Escape"&&isFallbackFullscreen())exitFallbackFullscreen()});
+document.addEventListener("keydown",function(e){
+ if(e.key!=="Escape")return;
+ if(isFallbackFullscreen()){
+  if(graphPanel.classList.contains("drawer-open")){selection=null;inspect();render();e.stopPropagation();return}
+  exitFallbackFullscreen();
+ }
+});
 $("export").addEventListener("click",function(){var json=JSON.stringify(demo?{nodes:[],edges:[]}:data,null,2),blob=new Blob([json],{type:"application/json"}),link=N("a");link.href=URL.createObjectURL(blob);link.download="mi-telarana.json";link.click();setTimeout(function(){URL.revokeObjectURL(link.href)},1000)});
 ["import","import-merge"].forEach(function(target){$(target).addEventListener("change",async function(e){var file=e.target.files[0];if(!file)return;var merge=target==="import-merge";try{
  var v=JSON.parse(await file.text());if(!Array.isArray(v.nodes)||!Array.isArray(v.edges))throw Error("JSON incompatible");
