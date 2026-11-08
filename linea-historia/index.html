@@ -125,6 +125,79 @@ body.historia-fullscreen{overflow:hidden}
  .history-column{flex-basis:min(82vw,310px);max-height:70dvh}
  .timeline-panel.is-maximized{padding:9px}.timeline-panel.is-maximized .hint{font-size:.65rem}
 }
+
+/* V7 · One continuous duration bar, with its caption pinned inside the bar
+   as the horizontal timeline scrolls. No duplicate overlay strip. */
+.event.duration.timeline-span{
+  display:block;
+  height:46px;
+  padding:0;
+  border:1px solid var(--item);
+  border-left:3px solid var(--item);
+  background:color-mix(in srgb,var(--item) 21%,#11283e);
+  box-shadow:inset 0 -4px 0 color-mix(in srgb,var(--item) 76%,transparent),0 2px 5px #030e1b66;
+  overflow:visible;
+  white-space:normal;
+  isolation:isolate;
+  cursor:pointer;
+}
+.event.duration.timeline-span:hover,
+.event.duration.timeline-span:focus-visible,
+.event.duration.timeline-span.selected{
+  background:color-mix(in srgb,var(--item) 30%,#18354b);
+  border-color:var(--item);
+  box-shadow:inset 0 -4px 0 var(--item),0 0 0 2px var(--item);
+  z-index:5;
+}
+.event.duration.timeline-span .duration-label{
+  position:sticky;
+  left:183px;
+  top:auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:2px;
+  width:min(310px,100%);
+  max-width:100%;
+  height:100%;
+  margin:0;
+  padding:4px 9px;
+  border-radius:5px;
+  background:color-mix(in srgb,var(--item) 16%,#132c40);
+  box-shadow:5px 0 13px -9px #050f1d;
+  color:#f4f9ff;
+  pointer-events:none;
+}
+.event.duration.timeline-span .duration-label .event-name{
+  flex:none;
+  width:100%;
+  font-size:.75rem;
+  line-height:1.3;
+  font-weight:800;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.event.duration.timeline-span .duration-label .event-years{
+  flex:none;
+  display:block;
+  width:100%;
+  font-size:.68rem;
+  line-height:1.2;
+  font-weight:750;
+  color:color-mix(in srgb,var(--item) 68%,white);
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+/* Intervals too short for all text preserve their precise width.
+   Full name, dates and duration remain available by click/hover. */
+.event.duration.timeline-span.short-interval .duration-label{padding:4px 3px}
+.event.duration.timeline-span.short-interval .event-name,
+.event.duration.timeline-span.short-interval .event-years{font-size:.66rem}
+@media(max-width:700px){
+ .event.duration.timeline-span .duration-label{left:12px;width:min(265px,100%)}
+}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
