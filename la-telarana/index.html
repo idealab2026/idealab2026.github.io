@@ -42,21 +42,32 @@ body.graph-expanded{overflow:hidden}
 .inspector .podcast-entry small{color:#c6a77d;font-size:.69rem;display:block}
 .inspector .podcast-entry a,.inspector .podcast-link{color:#9acde6;font-size:.77rem;text-decoration:underline;text-underline-offset:3px}
 .inspector .podcast-entry .rumour{color:#e9b274;font-size:.74rem;font-weight:700}
+
+/* Enfoque de relaciones: las conexiones ajenas se atenúan sin perder los datos. */
+#network .edge.focused{stroke-opacity:.94;stroke-width:2.5}
+#network .edge.quiet{stroke-opacity:.035;pointer-events:none}
+#network .edge.preview{stroke-opacity:.13}
+#network .edge.selected{stroke-opacity:1;stroke-width:3.2}
+#network .edge-hit.inactive{pointer-events:none}
+#network .node.dimmed{opacity:.42}
+#edge-mode[aria-pressed="true"]{border-color:#b88e5b;color:#ffd3a3}
+.photo-credit{display:block;font-size:.73rem;color:#a2c3d9;margin:5px 0 12px;text-decoration:underline;text-underline-offset:2px}
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn primary" id="add-node">+ Añadir entidad</button><button class="btn" id="add-edge">+ Añadir relación</button><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Exportar estudio</button><label for="import-merge" class="btn" style="cursor:pointer">Fusionar JSON</label><input id="import-merge" type="file" accept="application/json,.json" class="hidden"><label for="import" class="btn" style="cursor:pointer">Reemplazar JSON</label><input type="file" accept="application/json,.json" id="import" class="hidden"></div>
-<div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Arrastra el fondo para desplazarte · zoom con + / −</span><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Reordenar entidades por grupos de relaciones">Organizar</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
+<div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Arrastra el fondo para desplazarte · zoom con + / −</span><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
 <aside class="panel inspector"><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión. Podrás editar su contexto, fuentes y relaciones.</p><p class="minor">Arrastra las fichas para reorganizar el grafo; utiliza +/− para ajustar el zoom.</p></div></aside></div>
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La base documental de OneNote, incluidas sus fotografías y transcripciones originales, es pública. Algunas fichas reproducen opiniones y afirmaciones no verificadas: no deben confundirse con hechos acreditados. Los cambios privados añadidos desde este navegador se guardan exclusivamente en localStorage y no se suben a IDEA LAB. Exporta copias de seguridad; borrar los datos del navegador puede eliminar el estudio. No introduzcas datos especialmente sensibles de terceros sin una base legítima.</p>
 </main>
 <div class="modal hidden" id="modal" aria-hidden="true"><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><h2 id="dialog-title">Editar</h2><form id="editor"><div id="fields" class="form-grid"></div><div class="form-actions"><button type="button" class="btn" id="cancel">Cancelar</button><button type="submit" class="btn primary">Guardar</button></div></form></div></div>
 <script src="./one-note-seed.js?v=20261108-2"></script>
 <script src="./podcast-vaquero-150.js?v=20261108-2"></script>
+<script src="./photo-catalog.js?v=20261109-1"></script>
 <script>
 (function(){
 "use strict";
 var DEMO={nodes:[{id:"demo-a",name:"Persona A",kind:"Persona",subtitle:"Ejemplo",note:"Identidad ficticia de demostración",x:250,y:220},{id:"demo-b",name:"Persona B",kind:"Persona",subtitle:"Ejemplo",note:"Identidad ficticia de demostración",x:720,y:210},{id:"demo-c",name:"Organización X",kind:"Organización",subtitle:"Ejemplo",note:"Entidad ficticia",x:510,y:430}],edges:[{id:"demo-e1",a:"demo-a",b:"demo-c",type:"Colaboración",confidence:"documentado",note:"Relación ficticia de prueba"},{id:"demo-e2",a:"demo-b",b:"demo-c",type:"Vínculo por investigar",confidence:"hipotesis",note:"Hipótesis ficticia"}]};
-var data={nodes:[],edges:[]},demo=false,seedError=false,view="graph",selection=null,cam={x:0,y:0,s:1},drag=null;var CARD_W=200,CARD_H=120;
+var data={nodes:[],edges:[]},demo=false,seedError=false,view="graph",selection=null,cam={x:0,y:0,s:1},drag=null;var CARD_W=200,CARD_H=120,edgeMode="focus",hoveredNodeId=null;var photoLookup=new Map(),photoPages=new Map();
 var $=function(id){return document.getElementById(id)},N=function(tag,txt,cls){var e=document.createElement(tag);if(txt!=null)e.textContent=txt;if(cls)e.className=cls;return e},NS="http://www.w3.org/2000/svg";
 var S=function(tag,attr){var e=document.createElementNS(NS,tag);Object.keys(attr||{}).forEach(function(k){e.setAttribute(k,String(attr[k]))});return e};
 function store(){if(demo){data={nodes:[],edges:[]};demo=false;}try{localStorage.setItem("idealab-telarana-v1",JSON.stringify(data))}catch(e){alert("Almacenamiento lleno. Exporta el estudio para evitar pérdidas.")}}
@@ -135,6 +146,40 @@ function load(){
  if(modified)store();
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
+function displayPhoto(n){return safePhoto(n&&n.photo)||photoLookup.get(n&&n.id)||""}
+function wikipediaPhotoPage(n){return photoPages.get(n&&n.id)||""}
+function isCommonsImage(url){
+ try{var u=new URL(url);return u.protocol==="https:"&&u.hostname==="upload.wikimedia.org"&&u.pathname.indexOf("/wikipedia/commons/")===0}
+ catch(e){return false}
+}
+async function hydrateWikipediaPhotos(){
+ var titles=window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS;
+ if(!titles||typeof fetch!=="function")return;
+ var todo={en:[],es:[]};
+ data.nodes.forEach(function(n){var item=titles[n.id];if(!item||displayPhoto(n)||!todo[item.lang])return;todo[item.lang].push({id:n.id,title:item.title})});
+ async function getBatch(lang,batch){
+  var q=new URLSearchParams({action:"query",format:"json",origin:"*",redirects:"1",prop:"pageimages",piprop:"thumbnail",pithumbsize:"260",titles:batch.map(function(b){return b.title}).join("|")});
+  try{
+   var res=await fetch("https://"+lang+".wikipedia.org/w/api.php?"+q.toString(),{credentials:"omit",mode:"cors"});
+   if(!res.ok)throw Error("MediaWiki "+res.status);
+   var d=await res.json(),query=d.query||{},mappings=new Map();
+   (query.normalized||[]).concat(query.redirects||[]).forEach(function(pair){mappings.set(pair.from,pair.to)});
+   var pages=new Map(Object.values(query.pages||{}).filter(function(p){return p&&p.title}).map(function(p){return[p.title,p]}));
+   var updates=0;
+   batch.forEach(function(item){
+    var title=item.title,seen=new Set();
+    while(mappings.has(title)&&!seen.has(title)){seen.add(title);title=mappings.get(title)}
+    var result=pages.get(title),image=result&&result.thumbnail&&result.thumbnail.source;
+    if(!isCommonsImage(image))return;
+    photoLookup.set(item.id,image);
+    photoPages.set(item.id,"https://"+lang+".wikipedia.org/wiki/"+encodeURIComponent(title.replace(/ /g,"_")));
+    updates++;
+   });
+   if(updates){render();if(selection&&selection.kind==="node")inspect()}
+  }catch(e){/* Una fuente no disponible no se reemplaza por imágenes sin verificar. */}
+ }
+ for(var lang of ["es","en"]){var list=todo[lang];for(var i=0;i<list.length;i+=12){await getBatch(lang,list.slice(i,i+12))}}
+}
 function getNode(id){return data.nodes.find(function(n){return n.id===id})}
 function pointPos(n){return{x:Number(n.x)||150,y:Number(n.y)||150}}
 function setView(){var g=view==="graph";$("network").classList.toggle("hidden",!g);$("gallery").classList.toggle("hidden",g);$("zoom").classList.toggle("hidden",!g);$("legend").classList.toggle("hidden",!g);$("mode").textContent=g?"Ver panel de fotografías":"Ver mapa relacional";$("view-title").textContent=g?"Mapa relacional":"Panel fotográfico"}
@@ -167,6 +212,26 @@ function nodeAnchor(from,to){
  var ex=Math.min((CARD_W/2+5)/Math.max(Math.abs(dx),.01),(CARD_H/2+5)/Math.max(Math.abs(dy),.01));
  return {x1:ax+dx*sx,y1:ay+dy*sx,x2:bx-dx*ex,y2:by-dy*ex};
 }
+function refreshEdgeFocus(){
+ var focusId=hoveredNodeId||(selection&&selection.kind==="node"?selection.id:null),selEdge=selection&&selection.kind==="edge"?selection.id:null;
+ var focusNeighbors=new Set(focusId?[focusId]:[]);
+ if(focusId)data.edges.forEach(function(e){if(e.a===focusId)focusNeighbors.add(e.b);if(e.b===focusId)focusNeighbors.add(e.a)});
+ var all=edgeMode==="all",g=$("camera");
+ g.querySelectorAll("path.edge").forEach(function(edge){
+  var selected=selEdge===edge.dataset.edgeId;
+  var active=!!focusId&&(edge.dataset.a===focusId||edge.dataset.b===focusId);
+  edge.classList.toggle("quiet",!all&&!active&&!selected&&!!focusId);
+  edge.classList.toggle("preview",!all&&!focusId&&!selected);
+  edge.classList.toggle("focused",!all&&active);
+ });
+ g.querySelectorAll("path.edge-hit").forEach(function(hit){
+  var active=!!focusId&&(hit.dataset.a===focusId||hit.dataset.b===focusId);
+  hit.classList.toggle("inactive",!all&&!active&&hit.dataset.edgeId!==selEdge);
+ });
+ g.querySelectorAll("g.node").forEach(function(node){
+  node.classList.toggle("dimmed",!all&&!!focusId&&!focusNeighbors.has(node.dataset.id));
+ });
+}
 function renderGraph(q){
  var g=$("camera");g.replaceChildren();g.setAttribute("transform",transform());
  var filtered=new Set(data.nodes.filter(function(n){return !q||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(q)}).map(function(n){return n.id}));
@@ -174,8 +239,8 @@ function renderGraph(q){
   var a=getNode(e.a),b=getNode(e.b);if(!a||!b||!filtered.has(a.id)||!filtered.has(b.id))return;
   var p=nodeAnchor(a,b),d="M "+p.x1+" "+p.y1+" L "+p.x2+" "+p.y2;
   var isSelected=selection&&selection.kind==="edge"&&selection.id===e.id;
-  var line=S("path",{d:d,"class":"edge "+(e.confidence||"")+(isSelected?" selected":"")});line.append(S("title",{}));line.lastChild.textContent=a.name+" ↔ "+b.name+" · "+(e.type||"Relación");g.append(line);
-  var hit=S("path",{d:d,"class":"edge-hit","aria-label":a.name+" ↔ "+b.name+": "+(e.type||"Relación")});
+  var line=S("path",{d:d,"class":"edge "+(e.confidence||"")+(isSelected?" selected":"")});line.dataset.a=e.a;line.dataset.b=e.b;line.dataset.edgeId=e.id;line.append(S("title",{}));line.lastChild.textContent=a.name+" ↔ "+b.name+" · "+(e.type||"Relación");g.append(line);
+  var hit=S("path",{d:d,"class":"edge-hit","aria-label":a.name+" ↔ "+b.name+": "+(e.type||"Relación")});hit.dataset.a=e.a;hit.dataset.b=e.b;hit.dataset.edgeId=e.id;
   hit.addEventListener("pointerdown",function(ev){ev.stopPropagation()});
   hit.addEventListener("click",function(ev){ev.stopPropagation();selection={kind:"edge",id:e.id};inspect();renderGraph($("search").value.toLocaleLowerCase("es").trim())});
   hit.append(S("title",{}));hit.lastChild.textContent=a.name+" ↔ "+b.name+" · "+(e.type||"Relación");g.append(hit);
@@ -186,13 +251,14 @@ function renderGraph(q){
   var p=pointPos(n),group=S("g",{transform:"translate("+p.x+" "+p.y+")","class":"node "+(selection&&selection.kind==="node"&&selection.id===n.id?"selected":"")});
   group.dataset.id=n.id;
   group.append(S("rect",{x:0,y:0,width:CARD_W,height:CARD_H,rx:12}));
-  var photo=safePhoto(n.photo);
+  var photo=displayPhoto(n);
   if(photo){group.append(S("image",{x:9,y:9,width:61,height:101,href:photo,preserveAspectRatio:"xMidYMid slice"}))}
   else{group.append(S("circle",{cx:39,cy:52,r:27,"class":"node-avatar"}));var init=S("text",{x:39,y:60,"text-anchor":"middle","class":"node-letter"});init.textContent=(n.name||"?").charAt(0).toUpperCase();group.append(init)}
   addGraphTextLines(group,n.name||"Entidad",80,29,17,2,"node-name",15);
   addGraphTextLines(group,n.subtitle||n.kind||"",80,70,19,2,"node-subtitle",13);
   addGraphTextLines(group,n.kind||"",80,110,18,1,"node-kind",11);
   var full=S("title",{});full.textContent=n.name+(n.subtitle?" — "+n.subtitle:"");group.append(full);
+  group.addEventListener("pointerenter",function(){hoveredNodeId=n.id;refreshEdgeFocus()});group.addEventListener("pointerleave",function(){if(hoveredNodeId===n.id)hoveredNodeId=null;refreshEdgeFocus()});
   group.addEventListener("pointerdown",function(e){if(e.button!=null&&e.button!==0)return;e.stopPropagation();drag={type:"node",id:n.id,pointerId:e.pointerId,x:e.clientX,y:e.clientY,moved:false};group.classList.add("dragging");try{group.setPointerCapture(e.pointerId)}catch(ex){}});
   group.addEventListener("pointermove",function(e){if(!drag||drag.type!=="node"||drag.id!==n.id||drag.pointerId!==e.pointerId)return;e.stopPropagation();var unit=svgUnitsPerPixel(),dx=(e.clientX-drag.x)*unit/cam.s,dy=(e.clientY-drag.y)*unit/cam.s;if(Math.abs(dx)+Math.abs(dy)>.08){var p=pointPos(n);n.x=p.x+dx;n.y=p.y+dy;drag.moved=true;drag.x=e.clientX;drag.y=e.clientY;group.setAttribute("transform","translate("+n.x+" "+n.y+")")}})
   function releaseNode(e){if(!drag||drag.type!=="node"||drag.id!==n.id||drag.pointerId!==e.pointerId)return;e.stopPropagation();var moved=drag.moved;drag=null;if(moved){if(!demo)store()}else{selection={kind:"node",id:n.id};inspect()}render()}
@@ -200,8 +266,9 @@ function renderGraph(q){
   group.addEventListener("click",function(e){e.stopPropagation()});
   g.append(group);
  });
+ refreshEdgeFocus();
 }
-function renderGallery(q){var gallery=$("gallery");gallery.replaceChildren();var list=data.nodes.filter(function(n){return !q||(n.name+" "+(n.note||"")).toLocaleLowerCase("es").includes(q)});list.forEach(function(n){var card=N("button",null,"gallery-card");var photo=safePhoto(n.photo);if(photo){var im=N("img");im.src=photo;im.alt="Retrato de "+n.name;im.loading="lazy";im.onerror=function(){im.remove();card.prepend(N("div",(n.name||"?").charAt(0),"ph"))};card.append(im)}else card.append(N("div",(n.name||"?").charAt(0),"ph"));card.append(N("strong",n.name));card.append(N("small",n.subtitle||n.kind||""));card.addEventListener("click",function(){selection={kind:"node",id:n.id};inspect();render()});gallery.append(card)})}
+function renderGallery(q){var gallery=$("gallery");gallery.replaceChildren();var list=data.nodes.filter(function(n){return !q||(n.name+" "+(n.note||"")).toLocaleLowerCase("es").includes(q)});list.forEach(function(n){var card=N("button",null,"gallery-card");var photo=displayPhoto(n);if(photo){var im=N("img");im.src=photo;im.alt="Retrato de "+n.name;im.loading="lazy";im.onerror=function(){im.remove();card.prepend(N("div",(n.name||"?").charAt(0),"ph"))};card.append(im)}else card.append(N("div",(n.name||"?").charAt(0),"ph"));card.append(N("strong",n.name));card.append(N("small",n.subtitle||n.kind||""));card.addEventListener("click",function(){selection={kind:"node",id:n.id};inspect();render()});gallery.append(card)})}
 function youtubeTimeLabel(sec){
  sec=Math.max(0,Math.floor(Number(sec)||0));
  var hh=Math.floor(sec/3600),mm=Math.floor((sec%3600)/60),ss=sec%60;
@@ -228,7 +295,7 @@ function showPodcastNotes(panel,notes){
 }
 function inspect(){var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para ver sus detalles, editarla o eliminarla."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
-if(selection.kind==="node"){var image=safePhoto(obj.photo);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img)}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showPodcastNotes(p,obj.podcastNotes);var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
+if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showPodcastNotes(p,obj.podcastNotes);var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",obj.confidence==="documentado"?"Documentada":obj.confidence==="indicio"?"Indicio":"Hipótesis","badge"));if(obj.note)p.append(N("p",obj.note));if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,"Abrir minuto de la relación");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
 var actions=N("div",null,"actions"),edit=N("button","Editar","btn"),del=N("button","Eliminar","btn danger");edit.addEventListener("click",function(){openEditor(selection.kind,obj)});del.addEventListener("click",function(){if(!confirm("¿Eliminar este elemento y sus relaciones dependientes?"))return;if(demo){data={nodes:[],edges:[]};demo=false}if(selection.kind==="node"){data.nodes=data.nodes.filter(function(x){return x.id!==obj.id});data.edges=data.edges.filter(function(e){return e.a!==obj.id&&e.b!==obj.id})}else data.edges=data.edges.filter(function(e){return e.id!==obj.id});selection=null;store();inspect();render()});actions.append(edit,del);p.append(actions)}
 var editorMode="node",editingId=null;
@@ -407,6 +474,14 @@ function organizeGraph(){
  var btn=$("layout-graph");btn.title="Reordenación optimizada: "+result.before+" cruces antes, "+result.after+" después (aproximación geométrica)";
 }
 $("layout-graph").addEventListener("click",function(){if(confirm("¿Reorganizar la disposición del grafo? Se conservarán las entidades y relaciones, pero cambiará su posición."))organizeGraph()});
+$("edge-mode").addEventListener("click",function(){
+ edgeMode=edgeMode==="focus"?"all":"focus";
+ var btn=$("edge-mode");btn.textContent=edgeMode==="focus"?"Conexiones: foco":"Conexiones: todas";
+ btn.setAttribute("aria-pressed",String(edgeMode==="focus"));
+ btn.title=edgeMode==="focus"?"Resaltar sólo los vínculos de la entidad seleccionada":"Mostrar todas las relaciones";
+ refreshEdgeFocus();
+});
+
 var graphPanel=$("graph-panel");
 function isFallbackFullscreen(){return graphPanel.classList.contains("is-fullscreen")}
 function syncFullscreenButton(){
@@ -436,6 +511,6 @@ $("export").addEventListener("click",function(){var json=JSON.stringify(demo?{no
  var result;if(merge)result=mergeStudy({nodes:ns,edges:es});else{data={nodes:ns,edges:es};result={nodes:ns.length,edges:es.length}}
  demo=false;selection=null;store();inspect();fitGraph();render();alert((merge?"Fusión completada. ":"Importación completada. ")+result.nodes+" entidades y "+result.edges+" relaciones añadidas.");
  }catch(err){alert("No se pudo importar: "+err.message)}e.target.value=""})});
-load();fitGraph();render();
+load();fitGraph();render();hydrateWikipediaPhotos();
 })();
 </script></body></html>
