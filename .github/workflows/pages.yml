@@ -56,6 +56,7 @@ jobs:
           cp linea-historia/timeline-v4.js dist/linea-historia/timeline-v4.js
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp la-telarana/podcast-vaquero-150.js dist/la-telarana/podcast-vaquero-150.js
+          cp la-telarana/podcast-coronel-villarejo-2026.js dist/la-telarana/podcast-coronel-villarejo-2026.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
@@ -75,6 +76,9 @@ jobs:
           grep -q "IDEA_TELARANA_ONENOTE" dist/la-telarana/one-note-seed.js
           test -s dist/la-telarana/podcast-vaquero-150.js
           grep -q "IDEA_TELARANA_PODCAST_150" dist/la-telarana/podcast-vaquero-150.js
+          test -s dist/la-telarana/podcast-coronel-villarejo-2026.js
+          node --check dist/la-telarana/podcast-coronel-villarejo-2026.js
+          grep -q "IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO" dist/la-telarana/podcast-coronel-villarejo-2026.js
           test -s dist/la-telarana/photo-catalog.js
           grep -q "IDEA_TELARANA_WIKIPEDIA_PORTRAITS" dist/la-telarana/photo-catalog.js
           test -s dist/la-telarana/layout-seed-v2.js
