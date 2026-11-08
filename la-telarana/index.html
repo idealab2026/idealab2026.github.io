@@ -16,12 +16,12 @@ main{max-width:1750px;margin:auto;padding:clamp(17px,2.8vw,42px)}.eyebrow{color:
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La base documental de OneNote, incluidas sus fotografías y transcripciones originales, es pública. Algunas fichas reproducen opiniones y afirmaciones no verificadas: no deben confundirse con hechos acreditados. Los cambios privados añadidos desde este navegador se guardan exclusivamente en localStorage y no se suben a IDEA LAB. Exporta copias de seguridad; borrar los datos del navegador puede eliminar el estudio. No introduzcas datos especialmente sensibles de terceros sin una base legítima.</p>
 </main>
 <div class="modal hidden" id="modal" aria-hidden="true"><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><h2 id="dialog-title">Editar</h2><form id="editor"><div id="fields" class="form-grid"></div><div class="form-actions"><button type="button" class="btn" id="cancel">Cancelar</button><button type="submit" class="btn primary">Guardar</button></div></form></div></div>
-<script src="./one-note-seed.js"></script>
+<script src="./one-note-seed.js?v=20261108-2"></script>
 <script>
 (function(){
 "use strict";
 var DEMO={nodes:[{id:"demo-a",name:"Persona A",kind:"Persona",subtitle:"Ejemplo",note:"Identidad ficticia de demostración",x:250,y:220},{id:"demo-b",name:"Persona B",kind:"Persona",subtitle:"Ejemplo",note:"Identidad ficticia de demostración",x:720,y:210},{id:"demo-c",name:"Organización X",kind:"Organización",subtitle:"Ejemplo",note:"Entidad ficticia",x:510,y:430}],edges:[{id:"demo-e1",a:"demo-a",b:"demo-c",type:"Colaboración",confidence:"documentado",note:"Relación ficticia de prueba"},{id:"demo-e2",a:"demo-b",b:"demo-c",type:"Vínculo por investigar",confidence:"hipotesis",note:"Hipótesis ficticia"}]};
-var data={nodes:[],edges:[]},demo=false,view="graph",selection=null,cam={x:0,y:0,s:1},drag=null;
+var data={nodes:[],edges:[]},demo=false,seedError=false,view="graph",selection=null,cam={x:0,y:0,s:1},drag=null;
 var $=function(id){return document.getElementById(id)},N=function(tag,txt,cls){var e=document.createElement(tag);if(txt!=null)e.textContent=txt;if(cls)e.className=cls;return e},NS="http://www.w3.org/2000/svg";
 var S=function(tag,attr){var e=document.createElementNS(NS,tag);Object.keys(attr||{}).forEach(function(k){e.setAttribute(k,String(attr[k]))});return e};
 function store(){if(demo){data={nodes:[],edges:[]};demo=false;}try{localStorage.setItem("idealab-telarana-v1",JSON.stringify(data))}catch(e){alert("Almacenamiento lleno. Exporta el estudio para evitar pérdidas.")}}
@@ -43,13 +43,13 @@ function fitGraph(){if(!data.nodes.length){cam={x:0,y:0,s:1};return}
 function load(){
  try{var d=JSON.parse(localStorage.getItem("idealab-telarana-v1")||"null");if(d&&Array.isArray(d.nodes)&&Array.isArray(d.edges)){data={nodes:d.nodes.slice(0,2000),edges:d.edges.slice(0,5000)};demo=false;if(window.IDEA_TELARANA_ONENOTE&&!localStorage.getItem("idealab-onenote-seed-v2")){mergeStudy(window.IDEA_TELARANA_ONENOTE);localStorage.setItem("idealab-onenote-seed-v2","1");store()}return}}catch(e){}
  if(window.IDEA_TELARANA_ONENOTE){data=JSON.parse(JSON.stringify(window.IDEA_TELARANA_ONENOTE));demo=false;try{localStorage.setItem("idealab-onenote-seed-v2","1")}catch(e){}return}
- data=JSON.parse(JSON.stringify(DEMO));demo=true
+ data={nodes:[],edges:[]};demo=false;seedError=true
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
 function getNode(id){return data.nodes.find(function(n){return n.id===id})}
 function pointPos(n){return{x:Number(n.x)||150,y:Number(n.y)||150}}
 function setView(){var g=view==="graph";$("network").classList.toggle("hidden",!g);$("gallery").classList.toggle("hidden",g);$("zoom").classList.toggle("hidden",!g);$("legend").classList.toggle("hidden",!g);$("mode").textContent=g?"Ver panel de fotografías":"Ver mapa relacional";$("view-title").textContent=g?"Mapa relacional":"Panel fotográfico"}
-function render(){var q=$("search").value.toLocaleLowerCase("es").trim();$("count-nodes").textContent=data.nodes.length;$("count-edges").textContent=data.edges.length;$("count-evidence").textContent=data.edges.filter(function(e){return e.confidence==="documentado"}).length;$("demo-label").classList.remove("hidden");$("demo-label").textContent=demo?"EJEMPLO FICTICIO":"BASE ONENOTE · FUENTES POR CONTRASTAR";setView();renderGraph(q);renderGallery(q)}
+function render(){var q=$("search").value.toLocaleLowerCase("es").trim();$("count-nodes").textContent=data.nodes.length;$("count-edges").textContent=data.edges.length;$("count-evidence").textContent=data.edges.filter(function(e){return e.confidence==="documentado"}).length;$("demo-label").classList.remove("hidden");$("demo-label").textContent=seedError?"ERROR: NO SE CARGÓ LA BASE":demo?"EJEMPLO FICTICIO":"BASE ONENOTE · FUENTES POR CONTRASTAR";setView();renderGraph(q);renderGallery(q)}
 function transform(){return "translate("+cam.x+" "+cam.y+") scale("+cam.s+")"}
 function renderGraph(q){var g=$("camera");g.replaceChildren();g.setAttribute("transform",transform());var filtered=new Set(data.nodes.filter(function(n){return !q||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(q)}).map(function(n){return n.id}));
 data.edges.forEach(function(e){var a=getNode(e.a),b=getNode(e.b);if(!a||!b||!filtered.has(a.id)||!filtered.has(b.id))return;var ap=pointPos(a),bp=pointPos(b);var line=S("line",{x1:ap.x+85,y1:ap.y+45,x2:bp.x+85,y2:bp.y+45,"class":"edge "+(e.confidence||"")});g.append(line);var hit=S("line",{x1:ap.x+85,y1:ap.y+45,x2:bp.x+85,y2:bp.y+45,"class":"edge-hit"});hit.addEventListener("click",function(){selection={kind:"edge",id:e.id};inspect()});g.append(hit);var lbl=S("text",{x:(ap.x+bp.x)/2+85,y:(ap.y+bp.y)/2+37,"text-anchor":"middle","class":"edge-title"});lbl.textContent=String(e.type||"Vínculo").slice(0,35);g.append(lbl)});
