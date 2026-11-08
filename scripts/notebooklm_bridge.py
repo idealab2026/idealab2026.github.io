@@ -232,7 +232,12 @@ def next_requests(state, config):
         number = str(issue["number"])
         if number in state:
             continue
-        if issue.get("createdAt", "") < activated:
+        try:
+            opened = dt.datetime.fromisoformat(issue["createdAt"].replace("Z", "+00:00"))
+            active_since = dt.datetime.fromisoformat(activated.replace("Z", "+00:00"))
+        except (KeyError, TypeError, ValueError):
+            continue
+        if opened < active_since:
             continue
         try:
             req = parse_request(issue)
@@ -335,6 +340,23 @@ def poll():
             break
 
 
+def attach_artifact(args):
+    state = load_json(STATE_PATH, {})
+    job = state.get(str(args.issue))
+    if not job or job.get("phase") not in ("submitted", "uncertain"):
+        raise ValueError("El número de solicitud no está pendiente de identificar.")
+    if not VALID_ID.fullmatch(args.artifact_id):
+        raise ValueError("ID de infografía inválido.")
+    available = infographic_rows(job["notebook"])
+    item = next((x for x in available if artifact_id(x) == args.artifact_id), None)
+    if item is None:
+        raise ValueError("No se encuentra esa infografía en el cuaderno privado correspondiente.")
+    job["artifact_id"] = args.artifact_id
+    job["phase"] = "submitted"
+    save_json(STATE_PATH, state)
+    print("Infografía vinculada a la solicitud #", args.issue, "sin publicar identificadores.")
+
+
 def show_status():
     state = load_json(STATE_PATH, {})
     if not state:
@@ -394,6 +416,9 @@ def main():
     me.add_argument("--video-id", required=True)
     me.add_argument("--notebook-id", required=True)
     me.add_argument("--source-ids", required=True)
+    att = sub.add_parser("attach", help="Vincular manualmente un artefacto inequívoco si hay varios")
+    att.add_argument("--issue", type=int, required=True)
+    att.add_argument("--artifact-id", required=True)
     p = sub.add_parser("publish", help="Preparar PR público después de revisión local")
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
@@ -415,6 +440,8 @@ def main():
             poll()
         elif args.command == "status":
             show_status()
+        elif args.command == "attach":
+            attach_artifact(args)
         elif args.command == "publish":
             publish(args)
     except (RuntimeError, ValueError, OSError, subprocess.TimeoutExpired) as err:
