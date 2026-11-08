@@ -12,7 +12,7 @@ var periods=[
 /* Geographic links are inferred solely from explicit place references.
    Unknown locations remain unclassified; users may override with g: []. */
 var GEO=["Europa","Asia","África","América","Oceanía","Antártida","Mundial"];
-var continent="Todos",YEAR_PX=96,yearAxisLayer=null,yearWindowKey="";
+var continent="Todos",YEAR_PX=96,yearAxisLayer=null,yearGridLayers=[],yearWindowKey="";
 for(var pi=2;pi<periods.length;pi++)
  periods[pi].w=(periods[pi].b-periods[pi].a)*YEAR_PX;
 function geoFold(str){
@@ -329,22 +329,39 @@ function updateAnnualHeader(){
  var left=Math.max(axisX(-3000),viewport.scrollLeft-pad);
  var right=Math.min(axisX(2031),viewport.scrollLeft+(viewport.clientWidth||1400)+pad);
  if(right<left){
-  if(yearWindowKey!=="outside"){yearAxisLayer.replaceChildren();yearWindowKey="outside";}
+  if(yearWindowKey!=="outside"){
+   yearAxisLayer.replaceChildren();
+   yearGridLayers.forEach(function(layer){layer.replaceChildren()});
+   yearWindowKey="outside";
+  }
   return;
  }
  var first=Math.max(-3000,Math.floor(yearAt(left))-1);
  var last=Math.min(2031,Math.ceil(yearAt(right))+1);
  var key=first+":"+last+":"+zoom;
  if(key===yearWindowKey)return;
- var ticks=[];
+ // Render header ticks and lane guides from the exact SAME x coordinates.
+ // CSS repeating gradients over the ~500,000px canvas can drift by several
+ // pixels under browser compositing / fractional zoom, so never use them.
+ var ticks=[],positions=[];
  for(var year=first;year<=last;year++){
-  var milestone=year%100===0,decade=year%10===0;
+  var x=axisX(year),milestone=year%100===0,decade=year%10===0;
   var tick=el("div",null,"tick year-tick"+(decade?" year-decade":"")+(milestone?" year-century":""));
-  tick.style.left=axisX(year)+"px";
+  tick.style.left=x+"px";
   tick.append(el("span",year===0?"Cambio de era":yearText(year)));
   ticks.push(tick);
+  positions.push({x:x,decade:decade,century:milestone});
  }
  yearAxisLayer.replaceChildren(...ticks);
+ yearGridLayers.forEach(function(layer){
+  var guides=positions.map(function(pos){
+   var line=el("span",null,"year-guide"+(pos.decade?" decade-guide":"")+(pos.century?" century-guide":""));
+   line.style.left=pos.x+"px";
+   line.setAttribute("aria-hidden","true");
+   return line;
+  });
+  layer.replaceChildren(...guides);
+ });
  yearWindowKey=key;
 }
 
@@ -375,6 +392,7 @@ function render(){
  // are attached to the DOM. Avoid rendering 5,032 labels at every zoom/filter change.
  yearAxisLayer=el("div",null,"year-label-layer");
  yearAxisLayer.style.width=width+"px";
+ yearGridLayers=[];
  yearWindowKey="";
  axis.append(yearAxisLayer);
  can.append(regions,axis);
@@ -385,11 +403,9 @@ function render(){
   if(!items.length&&cat==="Todas")return;
   var list=grouped(items,c),lane=el("div",null,"lane");
   lane.style.setProperty("--lane-color",colors[i]);
-  var yearGrid=el("span",null,"year-grid");
-  yearGrid.style.left=axisX(-3000)+"px";
-  yearGrid.style.width=(width-axisX(-3000))+"px";
-  yearGrid.style.setProperty("--year-width",YEAR_PX*zoom+"px");
+  var yearGrid=el("div",null,"year-guide-layer");
   yearGrid.setAttribute("aria-hidden","true");
+  yearGridLayers.push(yearGrid);
   lane.append(yearGrid);
   periods.slice(1).forEach(function(p){
    var guide=el("span",null,"era-guide");guide.style.left=axisX(p.a)+"px";lane.append(guide);
