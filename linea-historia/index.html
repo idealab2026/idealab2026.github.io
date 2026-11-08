@@ -232,6 +232,68 @@ body.historia-fullscreen{overflow:hidden}
 }
 .year-guide.decade-guide{border-left-color:rgba(196,155,93,.31)}
 .year-guide.century-guide{border-left-color:rgba(226,182,107,.45)}
+
+/* V10: panel de información no modal, anclado a la derecha de la ventana.
+   La cronología permanece visible, enfocada y usable con la ficha abierta. */
+:root{--history-drawer-width:clamp(340px,30vw,440px)}
+.note-layer{
+ position:fixed;inset:0;z-index:2500;
+ display:block;padding:0;
+ pointer-events:none;
+ background:none;
+ backdrop-filter:none;
+ -webkit-backdrop-filter:none;
+}
+.note-layer.hide{display:none}
+.note-sheet{
+ position:absolute;top:0;right:0;bottom:0;
+ display:block;
+ width:var(--history-drawer-width);
+ height:100dvh;max-height:none;
+ border:0;border-left:1px solid #58758b;border-radius:0;
+ border-top:3px solid var(--gold);
+ background:#12283d;
+ box-shadow:-16px 0 50px #0008;
+ overflow-x:hidden;overflow-y:auto;
+ overscroll-behavior:contain;
+ scrollbar-color:#55748c #102337;
+ pointer-events:auto;
+}
+.note-header{
+ position:sticky;top:0;z-index:2;background:#12283d;
+}
+.note-sheet:focus{outline:none}
+.note-sheet .note-close{cursor:pointer}
+/* On large screens the history and its inspector occupy separate areas. */
+@media(min-width:1050px){
+ body.history-note-open #timeline-panel:not(.is-maximized),
+ body.history-note-open #columns-panel:not(.hide){
+  margin-right:var(--history-drawer-width);
+ }
+ body.history-note-open #timeline-panel.is-maximized{
+  padding-right:calc(var(--history-drawer-width) + clamp(9px,1.2vw,20px));
+ }
+}
+/* Narrow screens keep the timeline visible above a docked bottom sheet. */
+@media(max-width:1049px){
+ .note-sheet{
+  top:auto;left:0;right:0;bottom:0;
+  width:100%;
+  height:min(65dvh,630px);max-height:min(65dvh,630px);
+  border:0;border-top:3px solid var(--gold);
+  border-radius:15px 15px 0 0;
+  box-shadow:0 -12px 36px #0009;
+ }
+ .note-header{padding:14px 17px 12px}
+ .note-body{padding:13px 17px 24px}
+}
+@media(prefers-reduced-motion:no-preference){
+ .note-sheet{animation:history-panel-slide-in .16s ease-out}
+ @keyframes history-panel-slide-in{
+  from{opacity:.8;transform:translateX(18px)}
+  to{opacity:1;transform:translateX(0)}
+ }
+}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
@@ -265,7 +327,7 @@ body.historia-fullscreen{overflow:hidden}
 
 <p class="notice">Este es un archivo de exploración, no una enciclopedia validada. Las fuentes históricas pueden contener erratas, imprecisiones o interpretaciones. Los registros personales guardados anteriormente en este navegador siguen visibles, pero la web funciona ahora en modo consulta.</p>
 <div id="note-layer" class="note-layer hide" role="presentation">
- <section id="note-dialog" class="note-sheet" role="dialog" aria-modal="true" aria-labelledby="note-title" tabindex="-1">
+ <section id="note-dialog" class="note-sheet" role="dialog" aria-modal="false" aria-labelledby="note-title" tabindex="-1">
   <div class="note-header">
    <div><div class="note-kicker" id="note-kicker">Ficha histórica</div><h2 id="note-title">Ficha del registro</h2></div>
    <button type="button" id="note-close" class="note-close" aria-label="Cerrar ficha">×</button>

@@ -180,6 +180,7 @@ function closeNote(){
  var layer=$("note-layer");
  if(layer.classList.contains("hide"))return;
  layer.classList.add("hide");
+ document.body.classList.remove("history-note-open");
  if(lastCardFocus&&typeof lastCardFocus.focus==="function")lastCardFocus.focus();
  lastCardFocus=null;
 }
@@ -202,7 +203,7 @@ function showNote(d){
  var href=wiki||"https://es.wikipedia.org/w/index.php?search="+encodeURIComponent(query||d.t);
  var a=el("a",wiki?"Abrir artículo en Wikipedia ↗":"Buscar en Wikipedia ↗","note-wiki");
  a.href=href;a.target="_blank";a.rel="noopener noreferrer";a.referrerPolicy="no-referrer";root.append(a);
- layer.classList.remove("hide");$("note-dialog").focus();
+ layer.classList.remove("hide");document.body.classList.add("history-note-open");$("note-dialog").focus();
 }
 function showGroupNote(group){
  var layer=$("note-layer"),root=$("note-body");root.replaceChildren();
@@ -216,7 +217,7 @@ function showGroupNote(group){
   b.addEventListener("click",function(){detail(d)});
   list.append(b);
  });
- root.append(list);layer.classList.remove("hide");$("note-dialog").focus();
+ root.append(list);layer.classList.remove("hide");document.body.classList.add("history-note-open");$("note-dialog").focus();
 }
 
 function detail(d){
@@ -475,7 +476,7 @@ function init(){
   }
  });$("categories").textContent=cats.length;
  $("note-close").addEventListener("click",closeNote);
- $("note-layer").addEventListener("click",function(e){if(e.target===$("note-layer"))closeNote()});
+ // Non-modal side panel: clicks on the timeline are not intercepted.
  document.addEventListener("keydown",function(e){
   if(e.key!=="Escape")return;
   if(!$("note-layer").classList.contains("hide"))closeNote();
