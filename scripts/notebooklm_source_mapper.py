@@ -41,6 +41,20 @@ def chapter_interval(title):
     return tuple(range(start, end+1))
 
 
+def source_scope(title):
+    """Unambiguously map a source title to a chapter interval.
+
+    Local NotebookLM imports may be named '51.pdf' (exact chapter number),
+    rather than 'Capítulo 51'. Do NOT infer chapters from arbitrary filenames.
+    """
+    name = str(title).strip()
+    numeric = re.fullmatch(r"([1-9][0-9]{0,2})[.]pdf", name, re.IGNORECASE)
+    if numeric:
+        chapter = int(numeric.group(1))
+        return (chapter,) if chapter <= 300 else None
+    return chapter_interval(name)
+
+
 def source_objects(raw):
     data = json.loads(raw)
     if isinstance(data, dict):
@@ -87,7 +101,7 @@ def suggestions(episodes, sources):
         sid = source_id(src)
         if not sid:
             continue
-        scope = chapter_interval(source_title(src))
+        scope = source_scope(source_title(src))
         if scope:
             by_scope.setdefault(scope, set()).add(sid)
         vid = youtube_video_id(str(src.get("url", "")))
