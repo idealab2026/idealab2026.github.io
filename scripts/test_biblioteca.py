@@ -71,7 +71,7 @@ class BibliotecaTests(unittest.TestCase):
                 self.assertEqual(image_path, expected)
                 file = ROOT / "biblioteca-montecristo" / image_path.removeprefix("./")
                 self.assertTrue(file.is_file(), file)
-                self.assertEqual(file.read_bytes()[:8], b"\\x89PNG\\r\\n\\x1a\\n")
+                self.assertEqual(file.read_bytes()[:8], bytes([137, 80, 78, 71, 13, 10, 26, 10]))
 
     def test_web_assets(self):
         for item in ["index.html", "app.js", "styles.css", "catalogo.json", "infografias/index.json"]:
