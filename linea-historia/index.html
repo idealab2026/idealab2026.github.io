@@ -8,14 +8,37 @@ header{display:flex;align-items:center;justify-content:space-between;gap:1rem;pa
 main{max-width:1740px;margin:auto;padding:clamp(18px,3vw,50px)}.eyebrow{font-size:.72rem;letter-spacing:.19em;font-weight:800;text-transform:uppercase;color:var(--gold)}h1{font-family:Georgia,serif;font-weight:500;line-height:1.04;font-size:clamp(2.6rem,5.7vw,6rem);margin:14px 0;letter-spacing:-.045em}h1 em{font-weight:400;color:var(--gold)}.sub{max-width:900px;line-height:1.65;color:var(--muted);margin:0 0 26px;font-size:1rem}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.stat{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:11px 16px;min-width:140px}.stat small{display:block;color:var(--muted);font-size:.7rem;margin-bottom:4px}.stat strong{font-size:1.18rem}
 .panel{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:16px;margin-bottom:16px}.controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.group{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.group-label{color:var(--muted);font-size:.78rem;font-weight:700;margin-right:5px}.chip{background:#142e44;border:1px solid #35516a;color:#d8e9f9;border-radius:100px;padding:8px 12px;font-weight:650;font-size:.78rem}.chip:hover{border-color:var(--gold)}.chip[aria-pressed=true]{background:var(--gold);color:#1a2430;border-color:var(--gold)}.search{margin-left:auto;flex:1;min-width:170px;max-width:380px;background:#071b2c;border:1px solid #35516a;border-radius:10px;color:#fff;padding:10px 13px}
 .action{border:1px solid #466078;background:transparent;color:#e3ebf3;border-radius:10px;font-size:.8rem;padding:9px 12px}.action:hover{border-color:var(--gold)}.action.primary{background:var(--gold);color:#102337;border-color:var(--gold);font-weight:800}.filters{display:flex;flex-wrap:wrap;gap:7px;padding-top:13px;margin-top:13px;border-top:1px solid #294057}.dot{display:inline-block;height:8px;width:8px;border-radius:50%;margin-right:6px;background:var(--dot)}
-.figure-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px}.figure-head strong{font-size:.95rem}.muted{color:var(--muted);font-size:.79rem}.timeline-scroll{overflow-x:auto;overflow-y:hidden;border-radius:11px;border:1px solid #2a4158;background:#081b2e;scrollbar-color:#57718b #081727}.timeline-inner{position:relative;min-height:610px}.ticks{position:relative;height:65px;border-bottom:1px solid #496079}.tick{position:absolute;top:4px;bottom:0;border-left:1px dashed #3a4d61}.tick span{position:absolute;top:8px;left:7px;white-space:nowrap;color:#acbac9;font-size:.77rem;font-variant-numeric:tabular-nums}.lane{position:relative;height:74px;border-bottom:1px solid #183349}.lane-name{position:sticky;left:0;z-index:3;display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:0 0 9px 0;background:#173249;color:#e5f0fc;font-size:.71rem;font-weight:800;pointer-events:none}.point{position:absolute;transform:translate(-50%,0);border:2px solid #081b2e;border-radius:99px;min-width:12px;min-height:12px;padding:0;box-shadow:0 0 0 1px #ffffff55;transition:transform .12s,box-shadow .12s}.point:hover,.point.selected{transform:translate(-50%,-3px) scale(1.45);box-shadow:0 0 0 3px #ffffff55;z-index:2}.hint{padding:10px 0 0;color:#9db0c3;font-size:.75rem}.details{display:grid;grid-template-columns:1fr auto;gap:15px;min-height:126px}.details h2{font-size:1.4rem;line-height:1.3;font-family:Georgia,serif;margin:7px 0}.details p{color:var(--muted);line-height:1.55;margin:0 0 7px;overflow-wrap:anywhere}.year{font-size:.78rem;color:var(--gold);font-weight:800}.tag{display:inline-block;font-size:.67rem;color:#fff;background:#26445b;padding:5px 8px;border-radius:6px;margin:4px 6px 0 0}.add-grid{display:grid;grid-template-columns:2fr 1fr 1.1fr;gap:10px}.add-grid input,.add-grid select,.add-grid textarea{border:1px solid #3b5772;border-radius:9px;padding:11px;background:#071b2c;color:white;width:100%}.add-grid textarea{grid-column:1/-1;min-height:75px}.add-grid button{justify-self:start}.hide{display:none}.notice{font-size:.75rem;line-height:1.5;color:#9ab0c4;margin:18px 0}.notice a{color:var(--gold)}footer{color:#8ea5ba;font-size:.75rem;border-top:1px solid var(--line);padding:20px clamp(18px,3vw,52px);margin-top:36px}
+.figure-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px}.figure-head strong{font-size:.95rem}.muted{color:var(--muted);font-size:.79rem}.timeline-scroll{overflow-x:auto;overflow-y:hidden;border-radius:11px;border:1px solid #2a4158;background:#081b2e;scrollbar-color:#57718b #081727}
+.timeline-inner{position:relative;min-height:300px}
+.ticks{position:relative;height:58px;border-bottom:1px solid #496079;background:#0a1e30}
+.tick{position:absolute;top:0;bottom:0;border-left:1px dashed #466177;pointer-events:none}
+.tick span{position:absolute;top:9px;left:8px;white-space:nowrap;color:#b7c9d9;font-size:.75rem;font-variant-numeric:tabular-nums}
+.lane{position:relative;border-bottom:1px solid #244057;background:repeating-linear-gradient(90deg,transparent 0,transparent 134px,#ffffff02 135px)}
+.lane:nth-child(2n){background-color:#0b2235}
+.lane-name{position:sticky;left:0;top:0;z-index:5;display:inline-flex;align-items:center;gap:7px;padding:8px 11px;min-width:166px;max-width:175px;border-radius:0 0 10px 0;background:#18354b;color:#eaf2fb;font-size:.72rem;font-weight:800;pointer-events:none;box-shadow:2px 2px 12px #081b2e88}
+.lane-name i{display:inline-block;width:8px;height:8px;border-radius:3px;background:var(--lane-color)}
+.event{position:absolute;display:flex;align-items:center;gap:7px;height:30px;min-width:0;max-width:none;padding:3px 9px;border-radius:7px;border:1px solid color-mix(in srgb,var(--item) 58%,#29455b);border-left:4px solid var(--item);background:#142c41;color:#f0f5fa;text-align:left;white-space:nowrap;overflow:hidden;box-shadow:0 2px 4px #030e1b55;transition:background .15s,box-shadow .15s;z-index:1}
+.event:hover,.event:focus-visible,.event.selected{background:#25445d;box-shadow:0 0 0 2px var(--item);z-index:4}
+.event .event-date{flex:none;font-size:.63rem;color:var(--item);font-weight:850;font-variant-numeric:tabular-nums}
+.event .event-name{overflow:hidden;text-overflow:ellipsis;font-size:.73rem;font-weight:660;line-height:1.2}
+.event .event-count{flex:none;color:#071b2c;background:var(--item);border-radius:9px;padding:1px 5px;font-size:.62rem;font-weight:800}
+.event.duration{border-bottom-color:#31526a}
+.duration-band{position:absolute;height:4px;border-radius:3px;background:var(--item);z-index:2;pointer-events:none;box-shadow:0 0 6px color-mix(in srgb,var(--item) 35%,transparent)}
+.event-point{position:absolute;left:-4px;top:10px;height:7px;width:7px;border-radius:50%;background:var(--item)}
+.figure-tools{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.figure-tools .action{padding:6px 10px;min-width:34px}
+.empty-lane{position:absolute;top:38px;left:178px;color:var(--muted);font-size:.78rem}
+.group-results{display:grid;gap:6px;max-height:290px;overflow-y:auto;margin-top:10px;padding-right:5px}
+.group-result{border:1px solid #35516a;background:#10293e;color:#e3eef8;text-align:left;border-radius:8px;padding:8px 10px;line-height:1.35;font-size:.78rem}
+.group-result:hover{border-color:var(--gold)}
+.hint{padding:10px 0 0;color:#9db0c3;font-size:.75rem}.details{display:grid;grid-template-columns:1fr auto;gap:15px;min-height:126px}.details h2{font-size:1.4rem;line-height:1.3;font-family:Georgia,serif;margin:7px 0}.details p{color:var(--muted);line-height:1.55;margin:0 0 7px;overflow-wrap:anywhere}.year{font-size:.78rem;color:var(--gold);font-weight:800}.tag{display:inline-block;font-size:.67rem;color:#fff;background:#26445b;padding:5px 8px;border-radius:6px;margin:4px 6px 0 0}.add-grid{display:grid;grid-template-columns:2fr 1fr 1.1fr;gap:10px}.add-grid input,.add-grid select,.add-grid textarea{border:1px solid #3b5772;border-radius:9px;padding:11px;background:#071b2c;color:white;width:100%}.add-grid textarea{grid-column:1/-1;min-height:75px}.add-grid button{justify-self:start}.hide{display:none}.notice{font-size:.75rem;line-height:1.5;color:#9ab0c4;margin:18px 0}.notice a{color:var(--gold)}footer{color:#8ea5ba;font-size:.75rem;border-top:1px solid var(--line);padding:20px clamp(18px,3vw,52px);margin-top:36px}
 @media(max-width:700px){h1{font-size:2.65rem}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.stat{min-width:0}.search{max-width:none;min-width:100%;margin-left:0}.add-grid{grid-template-columns:1fr}.details{display:block}.timeline-inner{min-height:620px}.panel{padding:12px}}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
-<main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Arrastra la cronología hacia los lados y selecciona cualquier punto para investigar su contexto.</p>
+<main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Desplázate horizontalmente para comparar periodos y vidas simultáneas. Cada franja muestra los nombres y las fechas; amplía el zoom para separar los registros más densos.</p>
 <div class="stats"><div class="stat"><small>Registros disponibles</small><strong id="total">—</strong></div><div class="stat"><small>Visibles en la selección</small><strong id="visible">—</strong></div><div class="stat"><small>Categorías</small><strong id="categories">7</strong></div><div class="stat"><small>Origen</small><strong>Archivo histórico</strong></div></div>
 <section class="panel" aria-label="Controles de cronología"><div class="controls"><div class="group" id="periods"><span class="group-label">Periodo</span></div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"><button class="action" id="toggle-add">+ Añadir registro</button><button class="action" id="export">Exportar mis datos</button><label class="action" for="import" style="cursor:pointer">Importar JSON</label><input type="file" accept=".json,application/json" id="import" class="hide"></div><div id="filters" class="filters"></div></section>
-<section class="panel" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Cronología</strong><span class="muted">Desplazamiento horizontal · clic en un punto para ver detalle</span></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Las posiciones importadas del Excel representan fechas de referencia aproximadas. Las descripciones y fechas históricas todavía requieren verificación documental.</div></section>
+<section class="panel" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Cronología</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Las tarjetas indican fechas de referencia aproximadas y los tramos subrayados, duraciones documentadas. Los registros muy próximos se agrupan al alejar el zoom; amplía o pulsa una agrupación para explorarlos. Las fechas importadas requieren verificación.</div></section>
 <section class="panel details" aria-live="polite"><div id="detail"><span class="year">Explorador histórico</span><h2>Selecciona un registro de la línea de tiempo</h2><p>Aquí aparecerán su descripción y la celda de origen del archivo, si procede.</p></div><button class="action" id="clear-detail" aria-label="Deseleccionar registro">Cerrar</button></section>
 <section class="panel hide" id="add-panel"><strong>Añadir un registro a mi cronología</strong><p class="muted">Se guarda exclusivamente en este navegador. Exporta un JSON para conservarlo o trasladarlo a otro dispositivo.</p><form id="add-form" class="add-grid"><input id="new-title" required maxlength="300" placeholder="Nombre del acontecimiento o persona"><input id="new-year" required type="number" step="0.01" placeholder="Año (a.C. negativo)"><select id="new-cat"></select><textarea id="new-note" maxlength="1200" placeholder="Descripción, fuente, contexto…"></textarea><button class="action primary" type="submit">Guardar registro</button></form></section>
 <p class="notice">Este es un archivo de exploración, no una enciclopedia validada. La importación conserva posibles erratas, imprecisiones o interpretaciones del documento original. Los cambios añadidos desde la web son locales; no se sincronizan automáticamente entre dispositivos.</p></main>
@@ -25,26 +48,166 @@ main{max-width:1740px;margin:auto;padding:clamp(18px,3vw,50px)}.eyebrow{font-siz
 "use strict";
 var periods=[{k:"Contemporánea",a:1780,b:2030},{k:"Edad moderna",a:1450,b:1800},{k:"Edad media",a:450,b:1510},{k:"Antigüedad",a:-5000,b:500},{k:"Prehistoria",a:-110000,b:-3000},{k:"Tiempo profundo",a:-260000000,b:-100000}];
 var cats=["Acontecimientos","Personajes","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
-var colors=["#65bdc2","#c68dcb","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];var base=[],custom=[],period=periods[0],cat="Todas",query="",selected=null;
+var colors=["#65bdc2","#c68dcb","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];var base=[],custom=[],period=periods[0],cat="Todas",query="",selected=null,zoom=1;
 var byId=function(id){return document.getElementById(id)};var el=function(tag,c,cls){var n=document.createElement(tag);if(c!=null)n.textContent=c;if(cls)n.className=cls;return n};
 var yearText=function(y){var n=Math.abs(y);if(n>=1000000)return "hace aprox. "+(n/1000000).toLocaleString("es-ES",{maximumFractionDigits:2})+" millones de años";if(y<0)return Math.round(n).toLocaleString("es-ES")+" a. C.";return String(Math.floor(y))+" d. C."};
 var safeStorage=function(){try{var d=JSON.parse(localStorage.getItem("idealab-historia-v1")||"[]");return Array.isArray(d)?d.filter(valid):[]}catch(e){return[]}};
 var valid=function(o){return o&&typeof o.t==="string"&&o.t.length<=500&&Number.isFinite(Number(o.y))&&Math.abs(Number(o.y))<=300000000&&cats.includes(o.c)};
 var save=function(){try{localStorage.setItem("idealab-historia-v1",JSON.stringify(custom))}catch(e){alert("No se pudo guardar. Exporta los datos antes de cerrar.")}};
 var categoryUI=function(){var f=byId("filters");f.replaceChildren();["Todas"].concat(cats).forEach(function(c,i){var b=el("button",c,"chip");b.type="button";b.setAttribute("aria-pressed",cat===c);if(i){var dot=el("i",null,"dot");dot.style.background=colors[i-1];b.prepend(dot)}b.addEventListener("click",function(){cat=c;categoryUI();render()});f.appendChild(b)})};
-var pUI=function(){var p=byId("periods");p.querySelectorAll("button").forEach(function(x){x.remove()});periods.forEach(function(k){var b=el("button",k.k,"chip");b.type="button";b.setAttribute("aria-pressed",period.k===k.k);b.addEventListener("click",function(){period=k;pUI();render()});p.appendChild(b)})};
-var visible=function(){return base.concat(custom).filter(function(d){return Number(d.y)>=period.a&&Number(d.y)<=period.b&&(cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query))})};
-function detail(d){selected=d;var root=byId("detail");root.replaceChildren();root.append(el("span",yearText(Number(d.y)),"year"));root.append(el("h2",d.t));if(d.d)root.append(el("p",d.d));if(d.s)root.append(el("span",d.s,"tag"));root.append(el("span",d.c,"tag"));}
-function render(){
-var data=visible(),can=byId("canvas");can.replaceChildren();byId("total").textContent=(base.length+custom.length).toLocaleString("es-ES");byId("visible").textContent=data.length.toLocaleString("es-ES");byId("period-name").textContent=period.k+" · "+yearText(period.a)+" — "+yearText(period.b);
-var width=Math.max(1500,Math.min(9000,Math.abs(period.b-period.a)*(period.k==="Contemporánea"?11:period.k==="Edad moderna"?7:period.k==="Edad media"?3:1.2)));
-if(period.k==="Prehistoria"||period.k==="Tiempo profundo")width=2500;can.style.width=Math.round(width)+"px";
-var scale=function(y){return ((Number(y)-period.a)/(period.b-period.a))*width};
-var axis=el("div",null,"ticks");for(var t=0;t<=10;t++){var x=width*t/10,v=period.a+(period.b-period.a)*t;if(t===10)x-=65;var mark=el("div",null,"tick");mark.style.left=x+"px";mark.append(el("span",yearText(v)));axis.append(mark)}can.append(axis);
-cats.forEach(function(c,i){if(cat!=="Todas"&&cat!==c)return;var items=data.filter(function(d){return d.c===c}).sort(function(a,b){return a.y-b.y});var lane=el("div",null,"lane");var name=el("span",c+" · "+items.length,"lane-name");lane.append(name);for(var j=0;j<items.length;j++){var d=items[j],node=el("button",null,"point");node.type="button";node.title=yearText(d.y)+" · "+d.t;node.style.background=colors[i];node.style.left=Math.max(6,Math.min(width-6,scale(d.y)))+"px";node.style.top=(29+(j%4)*10)+"px";node.style.width=(c==="Actualidad"?"11px":"14px");node.style.height=node.style.width;if(selected&&selected.id===d.id)node.classList.add("selected");node.addEventListener("click",function(record){return function(){detail(record);can.querySelectorAll(".selected").forEach(function(x){x.classList.remove("selected")});this.classList.add("selected")}}(d));lane.append(node)}can.append(lane)});
-var lanes=can.querySelectorAll(".lane").length;can.style.minHeight=(65+lanes*74)+"px";
+var pUI=function(){var p=byId("periods");p.querySelectorAll("button").forEach(function(x){x.remove()});periods.forEach(function(k){var b=el("button",k.k,"chip");b.type="button";b.setAttribute("aria-pressed",period.k===k.k);b.addEventListener("click",function(){period=k;zoom=1;pUI();render();byId("viewport").scrollLeft=0});p.appendChild(b)})};
+var visible=function(){return base.concat(custom).filter(function(d){return Number(d.y)<=period.b&&(Number.isFinite(Number(d.e))?Number(d.e):Number(d.y))>=period.a&&(cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query))})};
+
+function detail(d){
+  selected=d;
+  var root=byId("detail");root.replaceChildren();
+  var end=Number(d.e);
+  var dateLabel=yearText(Number(d.y))+(Number.isFinite(end)&&end>Number(d.y)?" — "+yearText(end):"");
+  root.append(el("span",dateLabel,"year"));
+  root.append(el("h2",d.t));
+  if(d.d)root.append(el("p",d.d));
+  if(d.s)root.append(el("span",d.s,"tag"));
+  root.append(el("span",d.c,"tag"));
 }
-function init(){pUI();categoryUI();var sel=byId("new-cat");cats.forEach(function(c){var opt=el("option",c);opt.value=c;sel.append(opt)});custom=safeStorage();fetch("./data.json",{cache:"no-cache"}).then(function(r){if(!r.ok)throw Error("Datos no disponibles");return r.json()}).then(function(d){base=Array.isArray(d.items)?d.items.filter(valid):[];render()}).catch(function(e){byId("period-name").textContent="No se pudo cargar el archivo histórico";render()});
+function groupDetail(group){
+  selected=group;
+  var root=byId("detail");root.replaceChildren();
+  root.append(el("span",group.groupLabel,"year"));
+  root.append(el("h2",group.children.length+" registros del periodo"));
+  root.append(el("p","Selecciona un acontecimiento para consultar su ficha completa."));
+  var list=el("div",null,"group-results");
+  group.children.forEach(function(d){
+    var b=el("button",yearText(Number(d.y))+" · "+d.t,"group-result");
+    b.type="button";b.addEventListener("click",function(){detail(d)});
+    list.append(b);
+  });
+  root.append(list);
+}
+function groupedRecords(items,c){
+  if(c!=="Actualidad"||query)return items;
+  var step=zoom<=2?1:zoom<=4?0.25:1/12;
+  var groups=new Map();
+  items.forEach(function(d){
+    var key=Math.floor((Number(d.y)+0.0000001)/step);
+    if(!groups.has(key))groups.set(key,[]);
+    groups.get(key).push(d);
+  });
+  var result=[];
+  groups.forEach(function(list,key){
+    if(list.length===1){result.push(list[0]);return}
+    var start=key*step,year=Math.floor(start+0.00001),sub="";
+    if(zoom===2)sub=" · T"+(Math.floor((start-year)*4+0.0001)+1);
+    if(zoom===4)sub=" · mes "+(Math.floor((start-year)*12+0.0001)+1);
+    result.push({id:"group-"+key+"-"+zoom,t:list[0].t,y:start,c:c,
+      children:list,groupLabel:year+sub,count:list.length});
+  });
+  return result.sort(function(a,b){return a.y-b.y});
+}
+function niceStep(raw){
+  var pow=Math.pow(10,Math.floor(Math.log10(Math.max(raw,0.00001))));
+  for(var i=0,choices=[1,2,2.5,5,10];i<choices.length;i++){
+    if(choices[i]*pow>=raw)return choices[i]*pow;
+  }
+  return 10*pow;
+}
+function render(){
+  var data=visible(),can=byId("canvas");
+  can.replaceChildren();
+  byId("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
+  byId("visible").textContent=data.length.toLocaleString("es-ES");
+  byId("period-name").textContent=period.k+" · "+yearText(period.a)+" — "+yearText(period.b);
+  byId("zoom-level").textContent="Zoom ×"+zoom;
+  byId("zoom-out").disabled=zoom<=1;
+  byId("zoom-in").disabled=zoom>=8;
+
+  var span=period.b-period.a,gutter=170;
+  var baseWidth=period.k==="Contemporánea"?Math.max(3400,span*17):
+    period.k==="Edad moderna"?Math.max(2300,span*9):
+    period.k==="Edad media"?Math.max(2600,span*3):
+    period.k==="Antigüedad"?Math.max(2600,span*.65):
+    2700;
+  var plotWidth=Math.round(baseWidth*zoom),width=plotWidth+gutter;
+  can.style.width=width+"px";
+  var scale=function(y){return gutter+Math.max(0,Math.min(1,(Number(y)-period.a)/span))*plotWidth};
+  var pxPerYear=plotWidth/span;
+  var axis=el("div",null,"ticks");
+  var step=niceStep(175/pxPerYear);
+  var first=Math.ceil(period.a/step)*step;
+  var guard=0;
+  for(var t=first;t<=period.b&&guard<200;t+=step,guard++){
+    var x=scale(t),mark=el("div",null,"tick");
+    mark.style.left=x+"px";
+    mark.append(el("span",yearText(t)));
+    axis.append(mark);
+  }
+  can.append(axis);
+  var count=0;
+  cats.forEach(function(c,i){
+    if(cat!=="Todas"&&cat!==c)return;
+    var items=data.filter(function(d){return d.c===c}).sort(function(a,b){return Number(a.y)-Number(b.y)});
+    if(!items.length&&cat==="Todas")return;
+    var drawn=groupedRecords(items,c);
+    var lane=el("div",null,"lane");
+    lane.style.setProperty("--lane-color",colors[i]);
+    var name=el("span",null,"lane-name"),swatch=el("i");
+    name.append(swatch,document.createTextNode(c+" · "+items.length));
+    lane.append(name);
+    if(!items.length){lane.style.height="82px";lane.append(el("span","Sin registros en este periodo","empty-lane"))}
+    var rowEnds=[],cardWidth=zoom>=4?244:zoom===2?224:204;
+    drawn.forEach(function(d){
+      var startX=scale(d.y);
+      var end=Number(d.e);
+      var duration=Number.isFinite(end)&&end>Number(d.y);
+      var trueWidth=duration?Math.max(0,scale(end)-startX):0;
+      var w=Math.max(cardWidth,Math.min(trueWidth,650));
+      w=Math.min(w,width-startX-8);
+      w=Math.max(64,w);
+      var row=0;
+      while(row<rowEnds.length&&rowEnds[row]>startX-9)row++;
+      rowEnds[row]=startX+w+9;
+      var b=el("button",null,"event"+(duration?" duration":""));
+      b.type="button";b.style.setProperty("--item",colors[i]);
+      b.style.left=startX+"px";b.style.top=(37+row*35)+"px";b.style.width=w+"px";
+      b.title=(d.groupLabel?d.groupLabel+" · ":"")+d.t+(d.count?" · "+d.count+" registros":"");
+      b.setAttribute("aria-label",d.count?d.groupLabel+", "+d.count+" registros: "+d.t:yearText(d.y)+", "+d.t);
+      b.append(el("span",d.groupLabel||(Number(d.y)>=1000&&Number(d.y)<3000?String(Math.floor(Number(d.y))):yearText(d.y)),"event-date"));
+      b.append(el("span",d.t,"event-name"));
+      if(d.count)b.append(el("span","+"+(d.count-1),"event-count"));
+      if(selected&&(selected.id===d.id||(d.children&&d.children.some(function(x){return x.id===selected.id}))))b.classList.add("selected");
+      b.addEventListener("click",function(){
+        if(d.children)groupDetail(d);else detail(d);
+        can.querySelectorAll(".selected").forEach(function(x){x.classList.remove("selected")});
+        b.classList.add("selected");
+      });
+      lane.append(b);
+      if(duration&&trueWidth>0){
+        var band=el("span",null,"duration-band");
+        band.style.setProperty("--item",colors[i]);
+        band.style.left=startX+"px";
+        band.style.top=(65+row*35)+"px";
+        band.style.width=trueWidth+"px";
+        band.setAttribute("aria-hidden","true");
+        lane.append(band);
+      }
+    });
+    if(items.length)lane.style.height=Math.max(84,75+rowEnds.length*35)+"px";
+    can.append(lane);count++;
+  });
+  can.style.minHeight=(58+count*82)+"px";
+}
+function setZoom(next){
+  var viewport=byId("viewport"),oldWidth=canWidth(),oldCenter=viewport.scrollLeft+viewport.clientWidth/2;
+  var fraction=Math.max(0,Math.min(1,(oldCenter-170)/Math.max(1,oldWidth-170)));
+  zoom=Math.max(1,Math.min(8,next));render();
+  viewport.scrollLeft=170+fraction*(canWidth()-170)-viewport.clientWidth/2;
+}
+function canWidth(){return byId("canvas").getBoundingClientRect().width}
+function jumpToYear(year){
+  var viewport=byId("viewport");
+  var fraction=Math.max(0,Math.min(1,(year-period.a)/(period.b-period.a)));
+  viewport.scrollLeft=170+fraction*(canWidth()-170)-viewport.clientWidth/2;
+}
+function init(){pUI();categoryUI();byId("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});byId("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});byId("jump-present").addEventListener("click",function(){jumpToYear(period.k==="Contemporánea"?2000:Math.round((period.a+period.b)/2))});var sel=byId("new-cat");cats.forEach(function(c){var opt=el("option",c);opt.value=c;sel.append(opt)});custom=safeStorage();fetch("./data.json",{cache:"no-cache"}).then(function(r){if(!r.ok)throw Error("Datos no disponibles");return r.json()}).then(function(d){base=Array.isArray(d.items)?d.items.filter(valid):[];render();jumpToYear(1900)}).catch(function(e){byId("period-name").textContent="No se pudo cargar el archivo histórico";render()});
 byId("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
 byId("toggle-add").addEventListener("click",function(){byId("add-panel").classList.toggle("hide");if(!byId("add-panel").classList.contains("hide"))byId("new-title").focus()});
 byId("clear-detail").addEventListener("click",function(){selected=null;byId("detail").replaceChildren(el("p","Selecciona otro punto para consultar su ficha."));render()});
