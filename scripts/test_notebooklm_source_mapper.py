@@ -33,6 +33,46 @@ class EpisodeMappingTests(unittest.TestCase):
         self.assertEqual(matched, {"oVMG6QzBK64":["abcdef1234567890"]})
         self.assertEqual(skipped, [])
 
+    def test_numeric_pdf_names_match_exact_chapters(self):
+        self.assertEqual(m.source_scope("51.pdf"), (51,))
+        self.assertEqual(m.source_scope("100.pdf"), (100,))
+        self.assertEqual(m.source_scope(" 72.PDF "), (72,))
+        self.assertIsNone(m.source_scope("00.pdf"))
+        self.assertIsNone(m.source_scope("1000.pdf"))
+        self.assertIsNone(m.source_scope("montecristo-51.pdf"))
+        self.assertIsNone(m.source_scope("51–100.pdf"))
+        self.assertIsNone(m.source_scope("tomo-II.pdf"))
+
+    def test_real_montecristo_tomo_ii_filenames(self):
+        videos = [c for c in MONTE["chapters"]
+                  if (m.chapter_interval(c["title"]) or (0,))[0] >= 51]
+        sources = [{"id": f"sourceid{number:08d}", "title": f"{number}.pdf",
+                    "source_type": "pdf", "url": None}
+                   for number in range(51, 101)]
+        matched, unmatched = m.suggestions(videos, sources)
+        self.assertEqual(len(videos), 21)
+        self.assertEqual(len(matched), 21)
+        self.assertEqual(unmatched, [])
+        self.assertEqual(matched["oVMG6QzBK64"], ["sourceid00000051"])
+        self.assertEqual(matched["BSoTWtrNVPc"], ["sourceid00000072"])
+        self.assertNotIn("sourceid00000052", [src for ids in matched.values() for src in ids])
+
+    def test_numeric_pdf_duplicates_must_be_rejected(self):
+        videos = [{"id":"oVMG6QzBK64","title":"Cap. 51"}]
+        sources = [{"id":"abcabcabcabc","title":"51.pdf"},
+                   {"id":"defdefdefdef","title":"51.pdf"}]
+        matched, skipped = m.suggestions(videos, sources)
+        self.assertEqual(matched, {})
+        self.assertEqual(len(skipped), 1)
+
+    def test_grouped_video_with_numeric_pdf_files(self):
+        videos = [{"id":"KwKDcgK-NVc","title":"Cap. 1 a 5"}]
+        sources = [{"id":f"sourceeeee{n:05d}","title":f"{n}.pdf"}
+                   for n in range(1,6)]
+        matched, skipped = m.suggestions(videos,sources)
+        self.assertEqual(len(matched["KwKDcgK-NVc"]), 5)
+        self.assertEqual(skipped, [])
+
     def test_entire_book_cannot_be_used_for_one_video(self):
         videos = [{"id":"oVMG6QzBK64","title":"Montecristo II. Capítulo 51"}]
         sources = [{"id":"abcdef1234567890","title":"El conde de Montecristo II, texto completo"}]
