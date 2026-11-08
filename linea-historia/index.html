@@ -369,6 +369,62 @@ body.historia-fullscreen{overflow:hidden}
  .history-toolbar .filters{max-height:92px;overflow-y:auto}
  .timeline-panel.is-maximized .history-toolbar{max-height:180px;overflow-y:auto}
 }
+
+/* V12: una única línea horizontal de navegación y filtros. */
+.history-toolbar.history-toolbar-single{
+ display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;
+ column-gap:12px;row-gap:0;width:100%;min-width:0;
+ padding:7px 10px;margin:-2px 0 9px;
+ overflow-x:auto;overflow-y:hidden;
+ scrollbar-width:thin;scrollbar-color:#496b84 transparent;
+}
+.history-toolbar-single .history-toolbar-field{
+ display:flex;align-items:center;gap:6px;flex:0 0 auto;min-width:0;
+ white-space:nowrap;
+}
+.history-toolbar-single .history-toolbar-field label{
+ font-size:.71rem;font-weight:750;color:#adc1d1;white-space:nowrap;
+}
+.history-toolbar-single .history-toolbar-field select{
+ display:block;height:34px;margin:0;padding:5px 25px 5px 9px;
+ border:1px solid #42627b;border-radius:8px;
+ background-color:#0c263a;color:#e8f2fb;
+ font-size:.77rem;font-weight:650;cursor:pointer;
+}
+.history-toolbar-single #periods{width:174px}
+.history-toolbar-single #continent{width:174px;max-width:none;min-width:0;flex:initial}
+.history-toolbar-single #filters{
+ width:160px;
+ border-left:3px solid var(--selection-color,#e5b768);
+}
+.history-toolbar-single .history-toolbar-search{
+ flex:1 0 185px;width:auto;min-width:185px;max-width:none;
+ height:34px;margin:0;padding:5px 9px;font-size:.78rem;
+}
+.history-toolbar-single .history-status-sr{
+ position:absolute!important;width:1px;height:1px;overflow:hidden;
+ clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;
+}
+.timeline-panel.is-maximized .history-toolbar-single{
+ max-height:none;overflow-x:auto;overflow-y:hidden;flex:0 0 auto;
+}
+@media(max-width:950px){
+ .history-toolbar.history-toolbar-single{
+  display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;
+  gap:10px;
+ }
+ .history-toolbar-single .history-toolbar-search{flex:0 0 205px;min-width:205px;max-width:none;width:205px}
+}
+@media(max-width:700px){
+ .history-toolbar.history-toolbar-single{
+  display:flex;max-height:none;overflow-x:auto;overflow-y:hidden;
+  padding:6px 7px;gap:9px;
+ }
+ .history-toolbar-single #periods{width:155px}
+ .history-toolbar-single #continent{width:153px;flex:initial}
+ .history-toolbar-single #filters{width:148px}
+ .timeline-panel.is-maximized .history-toolbar-single{max-height:none;overflow-x:auto;overflow-y:hidden}
+}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
@@ -378,24 +434,31 @@ body.historia-fullscreen{overflow:hidden}
   <button type="button" id="tab-timeline" class="view-tab active" role="tab" aria-controls="timeline-panel" aria-selected="true">Línea temporal</button>
   <button type="button" id="tab-columns" class="view-tab" role="tab" aria-controls="columns-panel" aria-selected="false">Vista por columnas</button>
 </nav>
-<section id="timeline-panel" class="panel timeline-panel" role="tabpanel" aria-labelledby="tab-timeline" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button><input id="jump-year" class="year-jump" type="number" step="1" min="-260000000" max="2031" placeholder="Año (− a. C.)" aria-label="Año al que desplazarse"><button class="action" type="button" id="jump-year-go" aria-label="Ir al año indicado">Ir al año</button><button class="action fullscreen-button" type="button" id="toggle-fullscreen" aria-pressed="false" title="Ampliar la cronología a la ventana completa">⛶ Pantalla completa</button></div></div><div id="history-toolbar" class="history-toolbar" aria-label="Navegación y filtros históricos">
-  <div class="history-toolbar-eras"><div class="group" id="periods"><span class="group-label">Ir a la época</span></div></div>
-  <div class="history-toolbar-context"><div class="geo-toolbar">
-<label for="continent" class="geo-label">Continente</label>
-<select id="continent" aria-label="Filtrar por continente">
-<option value="Todos">Todos los continentes</option>
-<option value="Europa">Europa</option>
-<option value="Asia">Asia</option>
-<option value="África">África</option>
-<option value="América">América</option>
-<option value="Oceanía">Oceanía</option>
-<option value="Antártida">Antártida</option>
-<option value="Mundial">Mundial / global</option>
-<option value="Sin localizar">Sin localizar</option>
-</select>
-<span id="geo-status" class="muted" aria-live="polite">Ubicaciones según referencias geográficas del archivo.</span>
-</div><input class="search" type="search" id="search" placeholder="Buscar acontecimientos, personas, obras…" aria-label="Buscar en la cronología"></div>
-  <div id="filters" class="filters"></div>
+<section id="timeline-panel" class="panel timeline-panel" role="tabpanel" aria-labelledby="tab-timeline" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button><input id="jump-year" class="year-jump" type="number" step="1" min="-260000000" max="2031" placeholder="Año (− a. C.)" aria-label="Año al que desplazarse"><button class="action" type="button" id="jump-year-go" aria-label="Ir al año indicado">Ir al año</button><button class="action fullscreen-button" type="button" id="toggle-fullscreen" aria-pressed="false" title="Ampliar la cronología a la ventana completa">⛶ Pantalla completa</button></div></div><div id="history-toolbar" class="history-toolbar history-toolbar-single" aria-label="Navegación y filtros históricos">
+  <div class="history-toolbar-field history-period-field">
+    <label for="periods">Época</label>
+    <select id="periods" aria-label="Ir a la época"></select>
+  </div>
+  <div class="history-toolbar-field history-continent-field">
+    <label for="continent">Continente</label>
+    <select id="continent" aria-label="Filtrar por continente">
+      <option value="Todos">Todos los continentes</option>
+      <option value="Europa">Europa</option>
+      <option value="Asia">Asia</option>
+      <option value="África">África</option>
+      <option value="América">América</option>
+      <option value="Oceanía">Oceanía</option>
+      <option value="Antártida">Antártida</option>
+      <option value="Mundial">Mundial / global</option>
+      <option value="Sin localizar">Sin localizar</option>
+    </select>
+  </div>
+  <div class="history-toolbar-field history-category-field">
+    <label for="filters">Categoría</label>
+    <select id="filters" aria-label="Filtrar por categoría"></select>
+  </div>
+  <input class="search history-toolbar-search" type="search" id="search" placeholder="Buscar en la historia…" aria-label="Buscar acontecimientos, personas u obras">
+  <span id="geo-status" class="history-status-sr" role="status" aria-live="polite">Clasificación geográfica provisional</span>
 </div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div><div class="hint">Una sola cronología desde el tiempo profundo hasta hoy. Las franjas representan los años reales de inicio y fin y muestran su duración. Desde el 3000 a. C. se muestra cada año individualmente, incluso al cruzar de época. Los tiempos más antiguos usan escalas adaptadas. El filtro continental es provisional: solo clasifica referencias geográficas identificables; los casos dudosos quedan «Sin localizar».</div></section>
 <section id="columns-panel" class="panel columns-panel hide" role="tabpanel" aria-labelledby="tab-columns">
   <div class="figure-head"><strong>Elementos ordenados por antigüedad</strong><span class="muted" id="columns-summary">Orden cronológico: de más antiguo a más reciente, por categoría</span></div>
