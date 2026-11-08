@@ -12,9 +12,9 @@ var periods=[
 /* Geographic links are inferred solely from explicit place references.
    Unknown locations remain unclassified; users may override with g: []. */
 var GEO=["Europa","Asia","África","América","Oceanía","Antártida","Mundial"];
-var continent="Todos",DECADE_PX=92;
+var continent="Todos",YEAR_PX=96,yearAxisLayer=null,yearWindowKey="";
 for(var pi=2;pi<periods.length;pi++)
- periods[pi].w=(periods[pi].b-periods[pi].a)*DECADE_PX/10;
+ periods[pi].w=(periods[pi].b-periods[pi].a)*YEAR_PX;
 function geoFold(str){
  return String(str||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 }
@@ -340,6 +340,33 @@ function setView(next){
  if(next==="timeline")jumpToYear(savedYear);
 }
 
+/* Every annual mark is real and exact; only the visible tick labels are
+   mounted to keep the 500k-pixel continuous canvas responsive. */
+function updateAnnualHeader(){
+ if(viewMode!=="timeline"||!yearAxisLayer)return;
+ var viewport=$("viewport"),pad=YEAR_PX*zoom*2;
+ var left=Math.max(axisX(-3000),viewport.scrollLeft-pad);
+ var right=Math.min(axisX(2031),viewport.scrollLeft+(viewport.clientWidth||1400)+pad);
+ if(right<left){
+  if(yearWindowKey!=="outside"){yearAxisLayer.replaceChildren();yearWindowKey="outside";}
+  return;
+ }
+ var first=Math.max(-3000,Math.floor(yearAt(left))-1);
+ var last=Math.min(2031,Math.ceil(yearAt(right))+1);
+ var key=first+":"+last+":"+zoom;
+ if(key===yearWindowKey)return;
+ var ticks=[];
+ for(var year=first;year<=last;year++){
+  var milestone=year%100===0,decade=year%10===0;
+  var tick=el("div",null,"tick year-tick"+(decade?" year-decade":"")+(milestone?" year-century":""));
+  tick.style.left=axisX(year)+"px";
+  tick.append(el("span",year===0?"Cambio de era":yearText(year)));
+  ticks.push(tick);
+ }
+ yearAxisLayer.replaceChildren(...ticks);
+ yearWindowKey=key;
+}
+
 function render(){
  var records=visible();
  $("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
@@ -363,13 +390,12 @@ function render(){
    }
   }
  });
- // Continuous decades begin at 3000 BCE; no reset when an epoch ends.
- for(var decade=-3000;decade<=2030;decade+=10){
-  var decadeTick=el("div",null,"tick decade-tick"+(decade%100===0?" decade-major":""));
-  decadeTick.style.left=axisX(decade)+"px";
-  decadeTick.append(el("span",decade===0?"Cambio de era":yearText(decade)));
-  axis.append(decadeTick);
- }
+ // Labels are virtualized: a year every 96 px, but only years in the viewport
+ // are attached to the DOM. Avoid rendering 5,032 labels at every zoom/filter change.
+ yearAxisLayer=el("div",null,"year-label-layer");
+ yearAxisLayer.style.width=width+"px";
+ yearWindowKey="";
+ axis.append(yearAxisLayer);
  can.append(regions,axis);
  var count=0;
  cats.forEach(function(c,i){
@@ -378,12 +404,12 @@ function render(){
   if(!items.length&&cat==="Todas")return;
   var list=grouped(items,c),lane=el("div",null,"lane");
   lane.style.setProperty("--lane-color",colors[i]);
-  var decadeGrid=el("span",null,"decade-grid");
-  decadeGrid.style.left=axisX(-3000)+"px";
-  decadeGrid.style.width=(width-axisX(-3000))+"px";
-  decadeGrid.style.setProperty("--decade-width",DECADE_PX*zoom+"px");
-  decadeGrid.setAttribute("aria-hidden","true");
-  lane.append(decadeGrid);
+  var yearGrid=el("span",null,"year-grid");
+  yearGrid.style.left=axisX(-3000)+"px";
+  yearGrid.style.width=(width-axisX(-3000))+"px";
+  yearGrid.style.setProperty("--year-width",YEAR_PX*zoom+"px");
+  yearGrid.setAttribute("aria-hidden","true");
+  lane.append(yearGrid);
   periods.slice(1).forEach(function(p){
    var guide=el("span",null,"era-guide");guide.style.left=axisX(p.a)+"px";lane.append(guide);
   });
@@ -425,9 +451,11 @@ function render(){
   can.append(lane);count++;
  });
  can.style.minHeight=(78+count*96)+"px";
+ updateAnnualHeader();
 }
 function jumpToYear(year){
  var v=$("viewport");v.scrollLeft=axisX(year)-v.clientWidth/2;
+ updateAnnualHeader();
  var next=eraAt(year);if(period.k!==next.k){period=next;periodUI()}
 }
 function setZoom(next){
@@ -457,6 +485,7 @@ function init(){
   else if($("timeline-panel").classList.contains("is-maximized"))setTimelineMaximized(false);
  });
  document.addEventListener("fullscreenchange",function(){
+  updateAnnualHeader();
   if(document.fullscreenElement){nativeFullscreen=true}
   else if(nativeFullscreen){
    nativeFullscreen=false;
@@ -465,6 +494,7 @@ function init(){
  });
  $("toggle-fullscreen").addEventListener("click",function(){
   setTimelineMaximized(!$("timeline-panel").classList.contains("is-maximized"));
+  updateAnnualHeader();
  });
  $("tab-timeline").addEventListener("click",function(){setView("timeline")});
  $("tab-columns").addEventListener("click",function(){setView("columns")});
@@ -481,6 +511,7 @@ function init(){
  vdrag.addEventListener("pointerup",function(){dragging=false});
  vdrag.addEventListener("pointercancel",function(){dragging=false});
  $("viewport").addEventListener("scroll",function(){
+  updateAnnualHeader();
   var v=$("viewport"),p=eraAt(yearAt(v.scrollLeft+v.clientWidth/2));
   if(p.k!==period.k){period=p;periodUI()}
  });
