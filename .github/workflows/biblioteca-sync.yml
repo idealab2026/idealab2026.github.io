@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Instalar lector de metadatos públicos
-        run: python -m pip install --disable-pip-version-check 'yt-dlp>=2026.10.0'
+        run: python -m pip install --disable-pip-version-check 'yt-dlp'
       - name: Buscar episodios nuevos en listas existentes
         run: python scripts/sync_biblioteca.py
       - name: Guardar solo cambios verificados
