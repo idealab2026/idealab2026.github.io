@@ -523,6 +523,7 @@ function init(){
  vdrag.addEventListener("pointermove",function(e){if(!dragging)return;vdrag.scrollLeft=downScroll-(e.clientX-downX);e.preventDefault()});
  vdrag.addEventListener("pointerup",function(){dragging=false});
  vdrag.addEventListener("pointercancel",function(){dragging=false});
+ if(typeof window!=="undefined")window.addEventListener("resize",updateAnnualHeader);
  $("viewport").addEventListener("scroll",function(){
   updateAnnualHeader();
   var v=$("viewport"),p=eraAt(yearAt(v.scrollLeft+v.clientWidth/2));
