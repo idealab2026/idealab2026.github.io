@@ -1,0 +1,291 @@
+(function(){
+"use strict";
+var periods=[
+{k:"Tiempo profundo",a:-260000000,b:-110000,w:2600,at:-230000000},
+{k:"Prehistoria",a:-110000,b:-3000,w:3000,at:-9000},
+{k:"Antigüedad",a:-3000,b:476,w:3800,at:-400},
+{k:"Edad media",a:476,b:1492,w:3800,at:1000},
+{k:"Edad moderna",a:1492,b:1789,w:3600,at:1600},
+{k:"Contemporánea",a:1789,b:2031,w:6100,at:1925}
+];
+var cats=["Acontecimientos","Personajes","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
+var colors=["#65bdc2","#c68dcb","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
+var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1;
+var el=function(tag,t,cls){var x=document.createElement(tag);if(t!=null)x.textContent=t;if(cls)x.className=cls;return x};
+var $=function(id){return document.getElementById(id)};
+function yearText(y){
+ var n=Math.abs(y);
+ if(n>=1000000)return "hace aprox. "+(n/1000000).toLocaleString("es-ES",{maximumFractionDigits:1})+" millones de años";
+ return y<0?Math.round(n).toLocaleString("es-ES")+" a. C.":String(Math.floor(y))+" d. C.";
+}
+var dateRe=/\b(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?\s*[-–—]\s*(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?/i;
+function valid(d){
+ return d&&typeof d.t==="string"&&d.t.length<=500&&Number.isFinite(Number(d.y))&&
+ Math.abs(Number(d.y))<=260000000&&cats.includes(d.c)&&
+ (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>Number(d.y)&&Number(d.e)<=2031));
+}
+function loadLocal(){
+ try{var raw=JSON.parse(localStorage.getItem("idealab-historia-v1")||"[]");
+ return Array.isArray(raw)?raw.filter(valid):[]}catch(e){return[]}
+}
+function save(){
+ try{localStorage.setItem("idealab-historia-v1",JSON.stringify(custom))}
+ catch(e){alert("No se pudo guardar. Exporta tus datos antes de cerrar.")}
+}
+function enrich(d){
+ if(d._computed)return d;
+ var start=Number(d.y),end=d.e==null?NaN:Number(d.e),origin="explicit",ongoing=false;
+ if(!Number.isFinite(end)||end<=start){
+  origin="";
+  var txt=(d.c==="Filosofía"||d.c==="Literatura")?(d.d||"").split("·")[0]:(d.t||"");
+  if(d.c==="Cine"&&!/^[^()]+\(\s*\d{3,4}\s*[-–—]\s*\d{3,4}\s*\)\s*$/.test(txt))txt="";
+  var match=dateRe.exec(txt),bc=/a\.?\s*c\.?/i,ad=/d\.?\s*c\.?/i;
+  if(match){
+   var a=+match[1],b=+match[3],am=match[2]||"",bm=match[4]||"",anyBC=bc.test(am)||bc.test(bm);
+   if(bc.test(am)||(anyBC&&!ad.test(am)))a=-a;
+   if(bc.test(bm)||(anyBC&&!ad.test(bm)))b=-b;
+   if(b>a&&b-a<=10000&&b<=2031&&Math.abs(Number(d.y)-a)<=Math.max(100,b-a+25)){
+    start=a;end=b;origin=d.c==="Filosofía"||d.c==="Literatura"?"description":"title";
+   }
+  }
+  if(!origin&&d.c==="Acontecimientos"){
+   var open=/\b(\d{3,4})\s*[-–—]\s*(?:ACT(?:UALIDAD)?|PRESENTE|VIGENTE)\b/i.exec(txt);
+   if(open&&Math.abs(Number(d.y)-Number(open[1]))<100){
+    start=Number(open[1]);
+    end=Math.min(2030,Date.now()?new Date().getFullYear()+((new Date().getMonth()+1)/12):2026);
+    origin="title";ongoing=true;
+   }
+  }
+ }
+ d._start=start;d._end=end;d._origin=origin;d._ongoing=ongoing;d._computed=true;
+ return d;
+}
+function sy(d){return d._start==null?Number(d.y):d._start}
+function ey(d){return d._end==null?Number(d.e):d._end}
+function duration(d){return !d.children&&Number.isFinite(ey(d))&&ey(d)>sy(d)}
+function howLong(d){
+ var n=ey(d)-sy(d);
+ return n<1?Math.max(1,Math.round(n*12))+" meses":(Math.round(n*10)/10).toLocaleString("es-ES")+(Math.abs(n-1)<.001?" año":" años");
+}
+function displayName(d){
+ if(d._origin!=="title")return d.t;
+ var m=dateRe.exec(d.t);
+ if(m&&m.index>2&&/^\s*(?:\(\s*\d+\s*años?\s*\))?\s*$/i.test(d.t.slice(m.index+m[0].length)))return d.t.slice(0,m.index).trim();
+ return d.t;
+}
+function visible(){
+ return base.concat(custom).filter(function(d){
+  enrich(d);
+  return (cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query));
+ });
+}
+function axisX(y){
+ var x=170,n=Number(y);
+ for(var i=0;i<periods.length;i++){
+  var p=periods[i],w=p.w*zoom;
+  if(n<p.b||i===periods.length-1)return x+Math.max(0,Math.min(1,(n-p.a)/(p.b-p.a)))*w;
+  x+=w;
+ }
+ return x;
+}
+function canvasWidth(){return 170+periods.reduce(function(a,p){return a+p.w*zoom},0)}
+function yearAt(px){
+ var x=Math.max(0,px-170);
+ for(var i=0;i<periods.length;i++){
+  var p=periods[i],w=p.w*zoom;
+  if(x<=w||i===periods.length-1)return p.a+(Math.max(0,Math.min(1,x/w)))*(p.b-p.a);
+  x-=w;
+ }
+ return 2026;
+}
+function eraAt(year){return periods.find(function(p){return year>=p.a&&year<p.b})||periods[periods.length-1]}
+function categoryUI(){
+ var f=$("filters");f.replaceChildren();
+ ["Todas"].concat(cats).forEach(function(c,i){
+  var b=el("button",c,"chip");b.type="button";b.setAttribute("aria-pressed",cat===c);
+  if(i){var swatch=el("i",null,"dot");swatch.style.background=colors[i-1];b.prepend(swatch)}
+  b.addEventListener("click",function(){cat=c;categoryUI();render()});f.append(b);
+ });
+}
+function periodUI(){
+ var root=$("periods");root.querySelectorAll("button").forEach(function(x){x.remove()});
+ periods.forEach(function(p){
+  var b=el("button",p.k,"chip");b.type="button";b.setAttribute("aria-pressed",p.k===period.k);
+  b.addEventListener("click",function(){period=p;periodUI();jumpToYear(p.at)});
+  root.append(b);
+ });
+}
+function detail(d){
+ selected=d;
+ var root=$("detail");root.replaceChildren();
+ var dates=yearText(sy(d));
+ if(duration(d))dates+=" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d);
+ root.append(el("span",dates,"year"),el("h2",displayName(d)));
+ if(d.d)root.append(el("p",d.d));
+ if(d._origin&&d._origin!=="explicit")root.append(el("p","Intervalo interpretado del texto importado. Las fechas todavía requieren verificación documental."));
+ if(d.s)root.append(el("span",d.s,"tag"));
+ root.append(el("span",d.c,"tag"));
+}
+function groupedDetail(group){
+ selected=group;
+ var root=$("detail");root.replaceChildren();
+ root.append(el("span",group.groupLabel,"year"),el("h2",group.children.length+" registros agrupados"));
+ var list=el("div",null,"group-results");
+ group.children.forEach(function(d){
+  var b=el("button",yearText(sy(d))+" · "+d.t,"group-result");b.type="button";
+  b.addEventListener("click",function(){detail(d)});list.append(b);
+ });root.append(list);
+}
+function grouped(items,c){
+ if(c!=="Actualidad"||query)return items;
+ var step=zoom<=1?1:zoom<=2?.5:zoom<=4?.25:1/12,g=new Map();
+ items.forEach(function(d){
+  var key=Math.floor((sy(d)+.0000001)/step);
+  if(!g.has(key))g.set(key,[]);
+  g.get(key).push(d);
+ });
+ var rows=[];
+ g.forEach(function(a,key){
+  if(a.length===1){rows.push(a[0]);return}
+  var y=key*step,yr=Math.floor(y+.000001),sub="";
+  if(zoom===2)sub=" · S"+(1+Math.floor((y-yr)*2+.00001));
+  if(zoom===4)sub=" · T"+(1+Math.floor((y-yr)*4+.00001));
+  if(zoom===8)sub=" · mes "+(1+Math.floor((y-yr)*12+.00001));
+  rows.push({id:"group-"+key+"-"+zoom,t:a[0].t,y:y,c:c,children:a,groupLabel:yr+sub,count:a.length});
+ });
+ return rows.sort(function(a,b){return sy(a)-sy(b)});
+}
+function niceStep(n){
+ var p=Math.pow(10,Math.floor(Math.log10(Math.max(n,.000001))));
+ for(var choice of [1,2,2.5,5,10])if(choice*p>=n)return choice*p;
+ return p*10;
+}
+function render(){
+ var records=visible(),can=$("canvas");can.replaceChildren();
+ $("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
+ $("visible").textContent=records.length.toLocaleString("es-ES");
+ $("period-name").textContent="Historia universal · eje continuo · "+yearText(periods[0].a)+" — "+yearText(2026);
+ $("zoom-level").textContent="Zoom ×"+zoom;$("zoom-out").disabled=zoom<=1;$("zoom-in").disabled=zoom>=8;
+ var width=canvasWidth();can.style.width=width+"px";
+ var regions=el("div",null,"era-strip"),axis=el("div",null,"ticks");
+ periods.forEach(function(p){
+  var x=axisX(p.a),w=p.w*zoom;
+  var era=el("div",p.k,"era-block");era.style.left=x+"px";era.style.width=w+"px";
+  era.append(el("small","escala propia"));regions.append(era);
+  var step=niceStep(175*(p.b-p.a)/w),first=Math.ceil(p.a/step)*step;
+  for(var y=first,i=0;y<p.b&&i<200;y+=step,i++){
+   var tick=el("div",null,"tick");tick.style.left=axisX(y)+"px";
+   tick.append(el("span",yearText(y)));axis.append(tick);
+  }
+ });
+ can.append(regions,axis);
+ var count=0;
+ cats.forEach(function(c,i){
+  if(cat!=="Todas"&&cat!==c)return;
+  var items=records.filter(function(d){return d.c===c}).sort(function(a,b){return sy(a)-sy(b)});
+  if(!items.length&&cat==="Todas")return;
+  var list=grouped(items,c),lane=el("div",null,"lane");
+  lane.style.setProperty("--lane-color",colors[i]);
+  periods.slice(1).forEach(function(p){
+   var guide=el("span",null,"era-guide");guide.style.left=axisX(p.a)+"px";lane.append(guide);
+  });
+  var lname=el("span",null,"lane-name"),swatch=el("i");
+  lname.append(swatch,document.createTextNode(c+" · "+items.length));lane.append(lname);
+  var ends=[];
+  list.forEach(function(d){
+   var start=sy(d),x=axisX(start),dur=duration(d);
+   var full=dur?Math.max(0,axisX(ey(d))-x):0;
+   var w=Math.max(dur?295:245,Math.min(full,540));
+   w=Math.max(50,Math.min(w,width-x-8));
+   var necessary=Math.max(w,full),row=0;
+   while(row<ends.length&&ends[row]>x-10)row++;
+   ends[row]=x+necessary+12;
+   var top=42+row*54,b=el("button",null,"event"+(dur?" duration":""));
+   b.type="button";b.style.setProperty("--item",colors[i]);b.style.left=x+"px";b.style.top=top+"px";b.style.width=w+"px";
+   var t=d.children?d.t:displayName(d),date=dur?yearText(start)+" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d):d.groupLabel||yearText(start);
+   b.append(el("span",t,"event-name"),el("span",date,"event-years"));
+   if(d.count)b.append(el("span","+"+(d.count-1),"event-count"));
+   b.title=t+" · "+date;b.setAttribute("aria-label",b.title);
+   if(selected&&(selected.id===d.id||(d.children&&d.children.some(function(z){return z.id===selected.id}))))b.classList.add("selected");
+   b.addEventListener("click",function(){
+    if(d.children)groupedDetail(d);else detail(d);
+    can.querySelectorAll(".selected").forEach(function(z){z.classList.remove("selected")});b.classList.add("selected");
+   });
+   if(dur){
+    var track=el("span",null,"duration-track");
+    track.style.setProperty("--item",colors[i]);track.style.left=x+"px";
+    track.style.top=(top+33)+"px";track.style.width=Math.max(3,full)+"px";
+    track.setAttribute("aria-hidden","true");lane.append(track);
+   }
+   lane.append(b);
+  });
+  if(!items.length)lane.append(el("span","Sin registros","empty-lane"));
+  lane.style.height=Math.max(96,100+ends.length*54)+"px";
+  can.append(lane);count++;
+ });
+ can.style.minHeight=(78+count*96)+"px";
+}
+function jumpToYear(year){
+ var v=$("viewport");v.scrollLeft=axisX(year)-v.clientWidth/2;
+ var next=eraAt(year);if(period.k!==next.k){period=next;periodUI()}
+}
+function setZoom(next){
+ var v=$("viewport"),y=yearAt(v.scrollLeft+v.clientWidth/2);
+ zoom=Math.max(1,Math.min(8,next));render();jumpToYear(y);
+}
+function init(){
+ periodUI();categoryUI();
+ $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
+ $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
+ $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
+ $("viewport").addEventListener("scroll",function(){
+  var v=$("viewport"),p=eraAt(yearAt(v.scrollLeft+v.clientWidth/2));
+  if(p.k!==period.k){period=p;periodUI()}
+ });
+ var sel=$("new-cat");
+ cats.forEach(function(c){var op=el("option",c);op.value=c;sel.append(op)});
+ custom=loadLocal();
+ fetch("./data.json",{cache:"no-cache"}).then(function(r){
+  if(!r.ok)throw Error("Archivo histórico no disponible");return r.json();
+ }).then(function(data){
+  base=Array.isArray(data.items)?data.items.filter(valid):[];render();jumpToYear(1900);
+ }).catch(function(){render();$("period-name").textContent="No se pudo cargar el archivo histórico"});
+ $("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
+ $("toggle-add").addEventListener("click",function(){
+  $("add-panel").classList.toggle("hide");if(!$("add-panel").classList.contains("hide"))$("new-title").focus();
+ });
+ $("clear-detail").addEventListener("click",function(){
+  selected=null;$("detail").replaceChildren(el("p","Selecciona un registro para ver sus datos."));render();
+ });
+ $("add-form").addEventListener("submit",function(e){
+  e.preventDefault();
+  var d={id:"local-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),
+   t:$("new-title").value.trim(),y:Number($("new-year").value),
+   c:$("new-cat").value,d:$("new-note").value.trim(),s:"Registro personal · este navegador"};
+  if($("new-end-year").value!=="")d.e=Number($("new-end-year").value);
+  if(!valid(d)){alert("Revisa nombre, inicio, fin y categoría.");return}
+  custom.push(d);save();e.target.reset();cat="Todas";categoryUI();enrich(d);detail(d);render();jumpToYear(sy(d));$("add-panel").classList.add("hide");
+ });
+ $("export").addEventListener("click",function(){
+  var payload=JSON.stringify({version:1,kind:"idealab-historia-private",items:custom},null,2),a=el("a");
+  a.href=URL.createObjectURL(new Blob([payload],{type:"application/json"}));a.download="mi-cronologia.json";a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
+ });
+ $("import").addEventListener("change",async function(e){
+  var file=e.target.files[0];if(!file)return;
+  try{
+   var data=JSON.parse(await file.text());if(!Array.isArray(data.items))throw Error("Formato no válido");
+   var cleaned=data.items.filter(valid).map(function(x){
+    return{id:String(x.id||"local-"+Math.random()),t:x.t.slice(0,500),y:Number(x.y),
+     e:x.e==null?undefined:Number(x.e),c:x.c,d:String(x.d||"").slice(0,1200),s:"Importado por el usuario"};
+   });
+   if(!confirm("¿Importar "+cleaned.length+" registros en este navegador?"))return;
+   var ids=new Set(custom.map(function(v){return v.id}));
+   cleaned.forEach(function(x){if(!ids.has(x.id)){custom.push(x);ids.add(x.id)}});
+   save();render();alert("Importación completada.");
+  }catch(err){alert("No se pudo importar: "+err.message)}
+  e.target.value="";
+ });
+}
+init();
+})();
