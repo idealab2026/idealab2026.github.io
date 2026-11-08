@@ -44,8 +44,37 @@ class BibliotecaTests(unittest.TestCase):
                 self.assertEqual(split.hostname, "www.youtube.com")
                 self.assertIn("list", parse_qs(split.query))
 
+    def test_amazon_es_links(self):
+        from urllib.parse import unquote
+        for book in self.data["books"]:
+            url = book["amazonUrl"]
+            self.assertTrue(url.startswith("https://www.amazon.es/s?"), url)
+            self.assertIn(book["title"], unquote(url), book["slug"])
+            self.assertIn(book["author"], unquote(url), book["slug"])
+
+    def test_notebooklm_public_image_index(self):
+        from pathlib import PurePosixPath
+        images = ROOT / "biblioteca-montecristo" / "infografias"
+        index = json.loads((images / "index.json").read_text(encoding="utf-8"))
+        self.assertEqual(index["version"], 1)
+        slugs = {b["slug"]: b for b in self.data["books"]}
+        for slug, block in index["books"].items():
+            self.assertIn(slug, slugs)
+            paths = []
+            if block.get("book"):
+                paths.append(("libro", block["book"]))
+            for vid, image_path in block.get("chapters", {}).items():
+                self.assertIn(vid, {c["id"] for c in slugs[slug]["chapters"]})
+                paths.append((vid, image_path))
+            for name, image_path in paths:
+                expected = f"./infografias/{slug}/{name}.png"
+                self.assertEqual(image_path, expected)
+                file = ROOT / "biblioteca-montecristo" / image_path.removeprefix("./")
+                self.assertTrue(file.is_file(), file)
+                self.assertEqual(file.read_bytes()[:8], b"\\x89PNG\\r\\n\\x1a\\n")
+
     def test_web_assets(self):
-        for item in ["index.html", "app.js", "styles.css", "catalogo.json"]:
+        for item in ["index.html", "app.js", "styles.css", "catalogo.json", "infografias/index.json"]:
             self.assertTrue((ROOT / "biblioteca-montecristo" / item).is_file(), item)
 
 if __name__ == "__main__":
