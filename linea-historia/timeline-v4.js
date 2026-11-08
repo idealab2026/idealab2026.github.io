@@ -392,29 +392,32 @@ function render(){
   var ends=[];
   list.forEach(function(d){
    var start=sy(d),x=axisX(start),dur=duration(d);
+   // The duration IS the card. Do not stretch the timeline endpoint to fit text.
+   // Long intervals have a sticky inline caption constrained by the end of their bar.
    var full=dur?Math.max(0,axisX(ey(d))-x):0;
-   var w=Math.max(dur?295:245,Math.min(full,540));
-   w=Math.max(50,Math.min(w,width-x-8));
-   var necessary=Math.max(w,full),row=0;
+   var w=dur?Math.max(12,full):245;
+   w=Math.max(12,Math.min(w,width-x-8));
+   var row=0;
    while(row<ends.length&&ends[row]>x-10)row++;
-   ends[row]=x+necessary+12;
-   var top=42+row*54,b=el("button",null,"event"+(dur?" duration":""));
+   ends[row]=x+w+12;
+   var top=42+row*54,b=el("button",null,"event"+(dur?" duration timeline-span":""));
    b.type="button";b.style.setProperty("--item",colors[i]);b.style.left=x+"px";b.style.top=top+"px";b.style.width=w+"px";
    var t=d.children?d.t:displayName(d),date=dur?yearText(start)+" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d):d.groupLabel||yearText(start);
-   b.append(el("span",t,"event-name"),el("span",date,"event-years"));
-   if(d.count)b.append(el("span","+"+(d.count-1),"event-count"));
+   if(dur){
+    var inlineLabel=el("span",null,"duration-label");
+    inlineLabel.append(el("span",t,"event-name"),el("span",date,"event-years"));
+    b.append(inlineLabel);
+    if(w<275)b.classList.add("short-interval");
+   }else{
+    b.append(el("span",t,"event-name"),el("span",date,"event-years"));
+    if(d.count)b.append(el("span","+"+(d.count-1),"event-count"));
+   }
    b.title=t+" · "+date;b.setAttribute("aria-label",b.title);
    if(selected&&(selected.id===d.id||(d.children&&d.children.some(function(z){return z.id===selected.id}))))b.classList.add("selected");
    b.addEventListener("click",function(){
     if(d.children)groupedDetail(d);else detail(d);
     can.querySelectorAll(".selected").forEach(function(z){z.classList.remove("selected")});b.classList.add("selected");
    });
-   if(dur){
-    var track=el("span",null,"duration-track");
-    track.style.setProperty("--item",colors[i]);track.style.left=x+"px";
-    track.style.top=(top+41)+"px";track.style.width=Math.max(3,full)+"px";
-    track.setAttribute("aria-hidden","true");lane.append(track);
-   }
    lane.append(b);
   });
   if(!items.length)lane.append(el("span","Sin registros","empty-lane"));
