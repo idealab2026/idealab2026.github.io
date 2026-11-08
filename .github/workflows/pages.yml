@@ -41,6 +41,15 @@ jobs:
           mkdir -p dist/data
           cp data/traffic.json dist/data/traffic.json
           cp data/traffic-snapshot.json dist/data/traffic-snapshot.json
+          for site in linea-historia la-telarana biblioteca-montecristo; do
+            mkdir -p "dist/$site"
+            cp "$site/index.html" "dist/$site/index.html"
+          done
+          cp linea-historia/data.json dist/linea-historia/data.json
+          test -f dist/linea-historia/index.html
+          test -f dist/linea-historia/data.json
+          test -f dist/la-telarana/index.html
+          test -f dist/biblioteca-montecristo/index.html
           test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 6
           test -f dist/data/traffic.json
           test -f dist/data/traffic-snapshot.json
