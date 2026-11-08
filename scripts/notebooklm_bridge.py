@@ -212,7 +212,11 @@ def github_issues():
     out = command(["gh", "issue", "list", "-R", REPO, "--state", "open",
                    "--limit", "100", "--json", "number,title,body,author,state,createdAt"])
     issues = json.loads(out)
-    return issues if isinstance(issues, list) else []
+    # GitHub's default issue listing is newest-first; honor playlist job order
+    # by processing the oldest valid request before newer ones.
+    if not isinstance(issues, list):
+        return []
+    return sorted(issues, key=lambda issue: int(issue.get("number", 0)))
 
 
 def enroll():

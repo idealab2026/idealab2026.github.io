@@ -69,6 +69,17 @@ class BridgeTests(unittest.TestCase):
         del cfg["books"][BOOK]["episodes"][VIDEO]
         self.assertIsNone(bridge.select_mapping(cfg, request(vid=VIDEO)))
 
+    def test_queue_orders_oldest_issue_first(self):
+        newest = issue(request())
+        newest["number"] = 51
+        newest["createdAt"] = "2026-11-09T12:00:00Z"
+        oldest = issue(request())
+        oldest["number"] = 32
+        oldest["createdAt"] = "2026-11-09T11:00:00Z"
+        with patch.object(bridge, "command", return_value=json.dumps([newest, oldest])):
+            listed = bridge.github_issues()
+        self.assertEqual([x["number"] for x in listed], [32, 51])
+
     def test_job_epoch_rejects_old_issues(self):
         now = dt.datetime.now(dt.timezone.utc)
         fresh = issue(request())
