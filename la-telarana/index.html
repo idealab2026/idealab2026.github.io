@@ -31,6 +31,10 @@ body.graph-expanded{overflow:hidden}
 .zoom button:focus-visible{outline:2px solid var(--warm)}
 .graph-hint{position:absolute;top:17px;left:155px;color:#8195a9;z-index:2;font-size:.64rem;pointer-events:none}
 @media(max-width:650px){.graph-hint{display:none}.zoom{right:10px;bottom:8px}.zoom button{padding:8px 10px}.legend{bottom:102px;left:12px;right:12px}.graph-panel:fullscreen .legend,.graph-panel.is-fullscreen .legend{bottom:92px}}
+.inspector .original-label{font-size:.69rem;text-transform:uppercase;letter-spacing:.07em;font-weight:750;margin:15px 0 7px}
+.inspector .original-note{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.64;font-size:.85rem;color:#d3deec;margin:0 0 14px;padding:14px 15px;background:#121d29;border:1px solid #384b61;border-radius:10px;max-height:none}
+.inspector .portrait{max-height:170px;object-fit:contain;object-position:center}
+.inspector .original-note::selection{background:#785d44;color:#fff}
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn primary" id="add-node">+ Añadir entidad</button><button class="btn" id="add-edge">+ Añadir relación</button><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Exportar estudio</button><label for="import-merge" class="btn" style="cursor:pointer">Fusionar JSON</label><input id="import-merge" type="file" accept="application/json,.json" class="hidden"><label for="import" class="btn" style="cursor:pointer">Reemplazar JSON</label><input type="file" accept="application/json,.json" id="import" class="hidden"></div>
@@ -138,7 +142,7 @@ function renderGraph(q){
 function renderGallery(q){var gallery=$("gallery");gallery.replaceChildren();var list=data.nodes.filter(function(n){return !q||(n.name+" "+(n.note||"")).toLocaleLowerCase("es").includes(q)});list.forEach(function(n){var card=N("button",null,"gallery-card");var photo=safePhoto(n.photo);if(photo){var im=N("img");im.src=photo;im.alt="Retrato de "+n.name;im.loading="lazy";im.onerror=function(){im.remove();card.prepend(N("div",(n.name||"?").charAt(0),"ph"))};card.append(im)}else card.append(N("div",(n.name||"?").charAt(0),"ph"));card.append(N("strong",n.name));card.append(N("small",n.subtitle||n.kind||""));card.addEventListener("click",function(){selection={kind:"node",id:n.id};inspect();render()});gallery.append(card)})}
 function inspect(){var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para ver sus detalles, editarla o eliminarla."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
-if(selection.kind==="node"){var image=safePhoto(obj.photo);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img)}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.note)p.append(N("p",obj.note));if(obj.source)p.append(N("p","Fuente: "+obj.source,"source-hint"));if(obj.archiveNote){var d=N("details"),s=N("summary","Ver transcripción original de OneNote (sin verificar)");d.append(s,N("p",obj.archiveNote));p.append(d)}var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
+if(selection.kind==="node"){var image=safePhoto(obj.photo);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img)}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source)p.append(N("p","Fuente: "+obj.source,"source-hint"));var num=data.edges.filter(function(e){return e.a===obj.id||e.b===obj.id}).length;p.append(N("p",num+" conexiones en este mapa."));}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",obj.confidence==="documentado"?"Documentada":obj.confidence==="indicio"?"Indicio":"Hipótesis","badge"));if(obj.note)p.append(N("p",obj.note));if(obj.source)p.append(N("p","Fuente: "+obj.source));}
 var actions=N("div",null,"actions"),edit=N("button","Editar","btn"),del=N("button","Eliminar","btn danger");edit.addEventListener("click",function(){openEditor(selection.kind,obj)});del.addEventListener("click",function(){if(!confirm("¿Eliminar este elemento y sus relaciones dependientes?"))return;if(demo){data={nodes:[],edges:[]};demo=false}if(selection.kind==="node"){data.nodes=data.nodes.filter(function(x){return x.id!==obj.id});data.edges=data.edges.filter(function(e){return e.a!==obj.id&&e.b!==obj.id})}else data.edges=data.edges.filter(function(e){return e.id!==obj.id});selection=null;store();inspect();render()});actions.append(edit,del);p.append(actions)}
 var editorMode="node",editingId=null;
@@ -188,27 +192,121 @@ $("network").addEventListener("wheel",function(e){
  $("camera").setAttribute("transform",transform());
 },{passive:false});
 ["gesturestart","gesturechange","gestureend"].forEach(function(eventName){$("network").addEventListener(eventName,function(e){e.preventDefault()},{passive:false})});
-function organizeGraph(){
- var byId=new Map(data.nodes.map(function(n){return[n.id,n]})),adj=new Map(data.nodes.map(function(n){return[n.id,[]]}));
- data.edges.forEach(function(e){if(adj.has(e.a)&&adj.has(e.b)){adj.get(e.a).push(e.b);adj.get(e.b).push(e.a)}});
- var seen=new Set(),clusters=[];
- data.nodes.forEach(function(n){
+function graphCrossingsAtPositions(nodes,edges,coordinates){
+ var p=coordinates,valid=edges.filter(function(e){return p.has(e.a)&&p.has(e.b)&&e.a!==e.b});
+ function orient(a,b,c){return(b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x)}
+ var crosses=0;
+ for(var i=0;i<valid.length;i++)for(var j=i+1;j<valid.length;j++){
+  var a=valid[i],b=valid[j];
+  if(a.a===b.a||a.a===b.b||a.b===b.a||a.b===b.b)continue;
+  var p1=p.get(a.a),p2=p.get(a.b),q1=p.get(b.a),q2=p.get(b.b);
+  var o1=orient(p1,p2,q1),o2=orient(p1,p2,q2),o3=orient(q1,q2,p1),o4=orient(q1,q2,p2);
+  if(o1*o2< -1e-8&&o3*o4< -1e-8)crosses++;
+ }
+ return crosses;
+}
+function optimizedLayout(nodes,edges){
+ if(!nodes.length)return{positions:new Map(),before:0,after:0};
+ var ids=new Set(nodes.map(function(n){return n.id})),adj=new Map(nodes.map(function(n){return[n.id,[]]}));
+ var usableEdges=edges.filter(function(e){return ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b});
+ usableEdges.forEach(function(e){adj.get(e.a).push(e.b);adj.get(e.b).push(e.a)});
+ var seen=new Set(),components=[];
+ nodes.forEach(function(n){
   if(seen.has(n.id))return;
-  var queue=[n.id],part=[];seen.add(n.id);
-  for(var i=0;i<queue.length;i++){var key=queue[i];part.push(key);adj.get(key).forEach(function(next){if(!seen.has(next)){seen.add(next);queue.push(next)}})}
-  clusters.push(part);
+  var queue=[n.id];seen.add(n.id);
+  for(var i=0;i<queue.length;i++)adj.get(queue[i]).forEach(function(other){if(!seen.has(other)){seen.add(other);queue.push(other)}});
+  components.push(queue);
  });
- clusters.sort(function(a,b){return b.length-a.length});
- var ordered=[];
- clusters.forEach(function(part){
-  var root=part.slice().sort(function(a,b){return adj.get(b).length-adj.get(a).length})[0],queue=[root],visited=new Set([root]);
-  for(var i=0;i<queue.length;i++){
-   var id=queue[i];ordered.push(id);
-   adj.get(id).slice().sort(function(a,b){return adj.get(b).length-adj.get(a).length}).forEach(function(next){if(part.includes(next)&&!visited.has(next)){visited.add(next);queue.push(next)}});
+ components.sort(function(a,b){return b.length-a.length||(a[0]<b[0]?-1:1)});
+ var before=graphCrossingsAtPositions(nodes,usableEdges,new Map(nodes.map(function(n){return[n.id,{x:Number(n.x)||150,y:Number(n.y)||150}]})));
+ var baseSlots=new Map();
+ var large=components[0].length>=8 && nodes.length-components[0].length>=3;
+ var majorCols=large?Math.max(3,Math.min(6,Math.ceil(Math.sqrt(components[0].length*1.1)))):Math.max(2,Math.min(6,Math.ceil(Math.sqrt(nodes.length*1.1))));
+ var minorCols=large?2:0;
+ if(large){
+  components[0].forEach(function(id,i){baseSlots.set(id,{x:i%majorCols,y:Math.floor(i/majorCols)})});
+  var cursor=0;
+  components.slice(1).forEach(function(comp){
+   if(comp.length>1&&cursor%minorCols!==0)cursor+=minorCols-cursor%minorCols;
+   comp.forEach(function(id,i){
+    var at=cursor+i;baseSlots.set(id,{x:majorCols+Math.floor(0)+at%minorCols,y:Math.floor(at/minorCols)})
+   });
+   cursor+=comp.length;
+  });
+ }else{
+  var cursor=0;
+  components.forEach(function(comp){
+   if(comp.length>1&&cursor%majorCols!==0)cursor+=majorCols-cursor%majorCols;
+   comp.forEach(function(id,i){var at=cursor+i;baseSlots.set(id,{x:at%majorCols,y:Math.floor(at/majorCols)})});
+   cursor+=comp.length;
+  });
+ }
+ var slots=new Map(baseSlots),globalEdges=usableEdges;
+ function energy(idsInComponent,localEdges,slotsMap){
+  var points=new Map(),extent=0,hits=0;
+  idsInComponent.forEach(function(id){var pos=slotsMap.get(id);points.set(id,{x:pos.x*270,y:pos.y*188})});
+  localEdges.forEach(function(e){
+   var a=points.get(e.a),b=points.get(e.b),dx=b.x-a.x,dy=b.y-a.y,den=dx*dx+dy*dy;
+   extent+=Math.sqrt(den)/250;
+   if(den<1)return;
+   idsInComponent.forEach(function(id){
+    if(id===e.a||id===e.b)return;
+    var c=points.get(id),t=((c.x-a.x)*dx+(c.y-a.y)*dy)/den;
+    if(t<=.08||t>=.92)return;
+    var nearX=a.x+t*dx-c.x,nearY=a.y+t*dy-c.y;
+    if(Math.abs(nearX)<110&&Math.abs(nearY)<69)hits++;
+   });
+  });
+  return 1000*graphCrossingsAtPositions([],localEdges,points)+420*hits+4*extent;
+ }
+ var rngState=0x51f2a9b7;
+ function rand(){rngState^=rngState<<13;rngState^=rngState>>>17;rngState^=rngState<<5;return(rngState>>>0)/4294967296}
+ components.forEach(function(comp){
+  if(comp.length<2)return;
+  var edgesForComp=globalEdges.filter(function(e){return comp.includes(e.a)&&comp.includes(e.b)});
+  if(!edgesForComp.length)return;
+  var original=comp.map(function(id){return slots.get(id)}),best=comp.map(function(x){return x}),bestScore=energy(comp,edgesForComp,slots);
+  function place(order){order.forEach(function(id,i){slots.set(id,original[i])})}
+  // Búsqueda multiarranque con aceptación probabilística para escapar de mínimos locales.
+  var restarts=comp.length>=10?5:3,steps=comp.length>=10?1250:200;
+  for(var restart=0;restart<restarts;restart++){
+   var order=comp.slice();
+   if(restart>0){for(var ix=order.length-1;ix>0;ix--){var swapIdx=Math.floor(rand()*(ix+1)),temp=order[ix];order[ix]=order[swapIdx];order[swapIdx]=temp}}
+   place(order);var current=energy(comp,edgesForComp,slots);
+   for(var iter=0;iter<steps;iter++){
+    var i=Math.floor(rand()*order.length),j=Math.floor(rand()*order.length);
+    if(i===j)continue;
+    var tmp=order[i];order[i]=order[j];order[j]=tmp;place(order);
+    var proposed=energy(comp,edgesForComp,slots),temperature=75*Math.pow(1-iter/steps,1.9)+.5;
+    if(proposed<=current||rand()<Math.exp((current-proposed)/temperature)){
+     current=proposed;
+     if(proposed<bestScore){bestScore=proposed;best=order.slice()}
+    }else{tmp=order[i];order[i]=order[j];order[j]=tmp;place(order)}
+   }
   }
+  // Afinado por intercambio exhaustivo: reduce los cruces sin alterar la retícula.
+  var changed=true,passes=0;
+  while(changed&&passes++<6){
+   changed=false;place(best);
+   outer:for(var i=0;i<best.length;i++)for(var j=i+1;j<best.length;j++){
+    var tryOrder=best.slice(),tmp=tryOrder[i];tryOrder[i]=tryOrder[j];tryOrder[j]=tmp;place(tryOrder);
+    var value=energy(comp,edgesForComp,slots);
+    if(value+1e-5<bestScore){best=tryOrder;bestScore=value;changed=true;break outer}
+   }
+  }
+  place(best);
  });
- ordered.forEach(function(id,i){var n=byId.get(id);n.x=45+(i%5)*265;n.y=45+Math.floor(i/5)*175});
- if(!demo)store();fitGraph();render();
+ var positioned=new Map();
+ slots.forEach(function(p,id){positioned.set(id,{x:48+270*p.x,y:52+188*p.y})});
+ var after=graphCrossingsAtPositions(nodes,usableEdges,positioned);
+ return {positions:positioned,before:before,after:after};
+}
+function organizeGraph(){
+ var result=optimizedLayout(data.nodes,data.edges);
+ result.positions.forEach(function(p,id){var n=getNode(id);if(n){n.x=p.x;n.y=p.y}});
+ if(!demo)store();
+ fitGraph();render();
+ var btn=$("layout-graph");btn.title="Reordenación optimizada: "+result.before+" cruces antes, "+result.after+" después (aproximación geométrica)";
 }
 $("layout-graph").addEventListener("click",function(){if(confirm("¿Reorganizar la disposición del grafo? Se conservarán las entidades y relaciones, pero cambiará su posición."))organizeGraph()});
 var graphPanel=$("graph-panel");
