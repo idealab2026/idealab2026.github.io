@@ -355,7 +355,7 @@ function optimizedLayout(nodes,edges){
   var original=comp.map(function(id){return slots.get(id)}),best=comp.map(function(x){return x}),bestScore=energy(comp,edgesForComp,slots);
   function place(order){order.forEach(function(id,i){slots.set(id,original[i])})}
   // Búsqueda multiarranque con aceptación probabilística para escapar de mínimos locales.
-  var restarts=comp.length>=10?5:3,steps=comp.length>=10?1250:200;
+  var restarts=comp.length>35?2:comp.length>=10?4:3,steps=comp.length>35?240:comp.length>=10?650:200;
   for(var restart=0;restart<restarts;restart++){
    var order=comp.slice();
    if(restart>0){for(var ix=order.length-1;ix>0;ix--){var swapIdx=Math.floor(rand()*(ix+1)),temp=order[ix];order[ix]=order[swapIdx];order[swapIdx]=temp}}
@@ -370,6 +370,18 @@ function optimizedLayout(nodes,edges){
      if(proposed<bestScore){bestScore=proposed;best=order.slice()}
     }else{tmp=order[i];order[i]=order[j];order[j]=tmp;place(order)}
    }
+  }
+  // En componentes muy grandes, un afinado acotado evita bloquear el navegador.
+  if(comp.length>35){
+   place(best);
+   for(var trial=0;trial<240;trial++){
+    var ii=Math.floor(rand()*best.length),jj=Math.floor(rand()*best.length);
+    if(ii===jj)continue;
+    var proposal=best.slice(),swap=proposal[ii];proposal[ii]=proposal[jj];proposal[jj]=swap;place(proposal);
+    var candidate=energy(comp,edgesForComp,slots);
+    if(candidate+1e-5<bestScore){best=proposal;bestScore=candidate}
+   }
+   place(best);return;
   }
   // Afinado por intercambio exhaustivo: reduce los cruces sin alterar la retícula.
   var changed=true,passes=0;
