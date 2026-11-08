@@ -68,7 +68,7 @@ function howLong(d){
  return n<1?Math.max(1,Math.round(n*12))+" meses":(Math.round(n*10)/10).toLocaleString("es-ES")+(Math.abs(n-1)<.001?" año":" años");
 }
 function displayName(d){
- if(d._origin!=="title")return d.t;
+ if(!duration(d))return d.t;
  var m=dateRe.exec(d.t);
  if(m&&m.index>2&&/^\s*(?:\(\s*\d+\s*años?\s*\))?\s*$/i.test(d.t.slice(m.index+m[0].length)))return d.t.slice(0,m.index).trim();
  return d.t;
