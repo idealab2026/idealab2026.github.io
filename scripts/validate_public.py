@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 import re, sys, json
 
 ROOT = Path(__file__).resolve().parents[1]
-required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg")
+required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html")
 errors = [f"Missing public asset: {file}" for file in required if not (ROOT / file).is_file()]
 html = (ROOT / "index.html").read_text(encoding="utf-8") if (ROOT / "index.html").exists() else ""
 class Scanner(HTMLParser):
@@ -21,12 +21,14 @@ scanner = Scanner()
 scanner.feed(html)
 for link in scanner.links:
     if link.startswith("/") and link not in ("/",):
-        if not (ROOT / link.lstrip("/")).is_file():
+        if not ((ROOT / link.lstrip("/")).is_file() or (ROOT / link.lstrip("/") / "index.html").is_file()):
             errors.append("Missing local asset: " + link)
 for token in ("segundo-cerebro", "tfm", "tfg", "personal_mamg", "mamg97", "gmail.com", "cloudflare", "worker", "drive.google.com"):
     # Do not echo any matched private data in errors or action logs.
     if token in html.lower(): errors.append("Unapproved source identity marker detected")
-if len(list(ROOT.rglob("*.html"))) != 1: errors.append("Unexpected HTML page in corporate public root")
+allowed_html = {"index.html", "linea-historia/index.html", "la-telarana/index.html", "biblioteca-montecristo/index.html"}
+found_html = {str(path.relative_to(ROOT)) for path in ROOT.rglob("*.html") if ".git" not in path.parts}
+if found_html != allowed_html: errors.append("Unexpected or missing HTML page in public distribution")
 if (ROOT / "data/traffic.json").exists():
     try:
         stats=json.loads((ROOT / "data/traffic.json").read_text(encoding="utf-8"))
@@ -65,6 +67,20 @@ if (ROOT / "data/traffic-snapshot.json").exists():
                     errors.append("Invalid snapshot metrics")
     except (ValueError,TypeError,AttributeError,KeyError):
         errors.append("Invalid snapshot JSON")
+
+
+# Validate imported historic data contract without publishing upstream Drive identities.
+history = ROOT / "linea-historia/data.json"
+if history.is_file():
+    try:
+        doc = json.loads(history.read_text(encoding="utf-8"))
+        rows = doc.get("items")
+        if doc.get("version") != 1 or not isinstance(rows, list) or not (1000 <= len(rows) <= 10000):
+            errors.append("Unexpected history import format or cardinality")
+        elif any(not isinstance(r, dict) or not all(k in r for k in ("id", "y", "t", "c")) for r in rows):
+            errors.append("Invalid history record")
+    except (ValueError, TypeError, AttributeError):
+        errors.append("Invalid history JSON")
 
 for path in ROOT.rglob("*"):
     if not path.is_file() or ".git" in path.parts: continue
