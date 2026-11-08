@@ -27,7 +27,7 @@ var S=function(tag,attr){var e=document.createElementNS(NS,tag);Object.keys(attr
 function store(){if(demo){data={nodes:[],edges:[]};demo=false;}try{localStorage.setItem("idealab-telarana-v1",JSON.stringify(data))}catch(e){alert("Almacenamiento lleno. Exporta el estudio para evitar pérdidas.")}}
 function mergeStudy(v){
  var byId=new Map(data.nodes.map(function(n){return[n.id,n]})),byName=new Map(data.nodes.map(function(n){return[String(n.name).trim().toLocaleLowerCase("es"),n]})),ids=new Map(),addedNodes=0,addedEdges=0;
- v.nodes.forEach(function(n){if(!n||!n.name||!n.id)return;var match=byId.get(n.id)||byName.get(String(n.name).trim().toLocaleLowerCase("es"));if(match){ids.set(n.id,match.id);if(n.archiveNote&&!match.archiveNote)match.archiveNote=String(n.archiveNote).slice(0,12000);return}
+ v.nodes.forEach(function(n){if(!n||!n.name||!n.id)return;var match=byId.get(n.id)||byName.get(String(n.name).trim().toLocaleLowerCase("es"));if(match){ids.set(n.id,match.id);if(n.archiveNote&&!match.archiveNote)match.archiveNote=String(n.archiveNote).slice(0,12000);if(n.photo&&!match.photo)match.photo=safePhoto(n.photo);return}
  var x={id:String(n.id),name:String(n.name).slice(0,140),kind:String(n.kind||"Persona").slice(0,60),subtitle:String(n.subtitle||"").slice(0,240),note:String(n.note||"").slice(0,3000),source:String(n.source||"").slice(0,600),archiveNote:String(n.archiveNote||"").slice(0,12000),photo:safePhoto(n.photo),x:Number(n.x)||150,y:Number(n.y)||150};
  data.nodes.push(x);byId.set(x.id,x);byName.set(x.name.trim().toLocaleLowerCase("es"),x);ids.set(n.id,x.id);addedNodes++});
  var keys=new Set(data.edges.map(function(e){return[e.a,e.b].sort().join(":")+"|"+e.type}));
