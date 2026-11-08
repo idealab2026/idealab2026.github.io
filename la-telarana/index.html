@@ -153,7 +153,7 @@ body.graph-expanded{overflow:hidden}
 </main>
 <script src="./one-note-seed.js?v=20261108-2"></script>
 <script src="./podcast-vaquero-150.js?v=20261108-2"></script>
-<script src="./podcast-coronel-villarejo-2026.js?v=20261109-1"></script>
+<script src="./podcast-coronel-villarejo-2026.js?v=20261109-2"></script>
 <script src="./photo-catalog.js?v=20261109-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261109-4"></script>
@@ -425,20 +425,22 @@ function youtubeTimeLabel(sec){
  return(hh?String(hh)+":":"")+String(mm).padStart(hh?2:1,"0")+":"+String(ss).padStart(2,"0")
 }
 function podcastSourceLink(parent,url,title){
- if(!/^https:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)/i.test(String(url||"")))return;
- var link=N("a",title||"Abrir momento del podcast");
- link.href=String(url);link.target="_blank";link.rel="noopener noreferrer";link.className="podcast-link";parent.append(link)
+ var parsed;try{parsed=new URL(String(url||""))}catch(e){return}
+ if(parsed.protocol!=="https:")return;
+ var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com"];
+ if(!hosts.includes(parsed.hostname))return;
+ var link=N("a",title||"Consultar fuente");link.href=parsed.href;link.target="_blank";link.rel="noopener noreferrer";link.className="podcast-link";parent.append(link)
 }
 function showPodcastNotes(panel,notes){
  if(!Array.isArray(notes)||!notes.length)return;
  var section=N("section",null,"podcast-section");
- section.append(N("h3","Información añadida desde podcasts"));
+ section.append(N("h3","Fuentes y aportaciones"));
  notes.forEach(function(note){
   var entry=N("div",null,"podcast-entry"),title=N("small",(note.title||"Podcast")+" · "+(note.publishedAt||""));
   entry.append(title);
-  if(note.status==="rumor"||note.status==="alegacion"||note.status==="incierto")entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad o afirmación pendiente de cotejo":"Alegación sin verificación independiente","rumour"));
+  if(note.status==="rumor"||note.status==="alegacion"||note.status==="incierto"||note.status==="fuente-externa")entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad o afirmación pendiente de cotejo":note.status==="fuente-externa"?"Referencia periodística externa":"Alegación sin verificación independiente","rumour"));
   entry.append(N("p",note.text||""));
-  podcastSourceLink(entry,note.source,"Escuchar en "+youtubeTimeLabel(note.timeSec));
+  podcastSourceLink(entry,note.source,note.status==="fuente-externa"?"Consultar artículo original":"Escuchar en "+youtubeTimeLabel(note.timeSec));
   section.append(entry)
  });
  panel.append(section)
