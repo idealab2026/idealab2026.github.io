@@ -203,7 +203,7 @@ function mergePodcastStudy(v){
 }
 // Fusión editorial del episodio con el grafo público. Identidad canónica,
 // agrupación por pareja de entidades y fuentes adicionales por relación.
-function normalizeEntityName(s){return String(s||"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ")}
+function normalizeEntityName(s){return String(s||"").normalize("NFD").replace(/\p{M}/gu,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ")}
 function mergeNewEpisode(v){
  if(!v||!Array.isArray(v.nodes)||!Array.isArray(v.edges))return{nodes:0,edges:0,notes:0,enrichedRelations:0};
  var aliases={"jose luis corcuera":"jose luis corcuera","juan carlos i":"juan carlos i","cesid":"cesid","centro nacional de inteligencia cni":"centro nacional de inteligencia cni"};
