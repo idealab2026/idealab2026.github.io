@@ -21,7 +21,7 @@ from notebooklm_infografias import find_item
 
 TITLE_RE = re.compile(
     r"\b(?:capitulo|cap(?:itulo)?)\s*[:.#\-\s]*"
-    r"(\d{1,3})(?:\s*(?:a|al|[-–])\s*(\d{1,3}))?", re.IGNORECASE)
+    r"(\d{1,3})(?!\d)(?:\s*(?:a|al|[-–])\s*(\d{1,3})(?!\d))?", re.IGNORECASE)
 
 
 def normalize(text):
