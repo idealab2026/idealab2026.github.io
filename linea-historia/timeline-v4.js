@@ -456,6 +456,12 @@ function setView(next){
   if($("timeline-panel").classList.contains("is-maximized"))setTimelineMaximized(false);
  }
  viewMode=next;
+ // Keep one shared toolbar: its filter buttons and listeners travel with it.
+ // In columns mode the same controls remain available above the category columns.
+ var toolbar=$("history-toolbar");
+ var destination=next==="columns"?$("columns-panel"):$("timeline-panel");
+ var before=next==="columns"?$("columns-grid"):$("viewport");
+ if(toolbar.parentNode!==destination)destination.insertBefore(toolbar,before);
  $("timeline-panel").classList.toggle("hide",next!=="timeline");
  $("columns-panel").classList.toggle("hide",next!=="columns");
  [["tab-timeline","timeline"],["tab-columns","columns"]].forEach(function(pair){
