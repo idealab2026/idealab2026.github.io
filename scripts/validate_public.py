@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 import re, sys, json
 
 ROOT = Path(__file__).resolve().parents[1]
-required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json")
+required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json", "biblioteca-montecristo/infografias/index.json")
 errors = [f"Missing public asset: {file}" for file in required if not (ROOT / file).is_file()]
 html = (ROOT / "index.html").read_text(encoding="utf-8") if (ROOT / "index.html").exists() else ""
 class Scanner(HTMLParser):
