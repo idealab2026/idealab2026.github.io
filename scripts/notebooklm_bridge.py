@@ -267,14 +267,18 @@ def request_new(number, req, state, config):
         argv.extend(["--source-ids", ",".join(sources)])
     try:
         command(argv, timeout=180)
-        job["phase"] = "submitted"
-        save_json(STATE_PATH, state)
-        issue_comment(number, "Solicitud enviada a NotebookLM desde el Mac de IDEA LAB. Generación en curso; pendiente de revisión visual antes de publicar.")
-        print("Generación solicitada:", number, req["book"])
     except Exception:
         job["phase"] = "uncertain"
         save_json(STATE_PATH, state)
         print("Solicitud incierta #", number, ": revisa NotebookLM; NO se reenvía automáticamente.")
+        return True
+    job["phase"] = "submitted"
+    save_json(STATE_PATH, state)
+    try:
+        issue_comment(number, "Solicitud enviada a NotebookLM desde el Mac de IDEA LAB. Generación en curso; pendiente de revisión visual antes de publicar.")
+    except Exception:
+        print("No se pudo comentar la solicitud, pero NotebookLM ya está generando.")
+    print("Generación solicitada:", number, req["book"])
     return True
 
 
