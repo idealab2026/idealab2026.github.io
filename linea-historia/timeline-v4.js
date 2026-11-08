@@ -8,6 +8,63 @@ var periods=[
 {k:"Edad moderna",a:1492,b:1789,w:3600,at:1600},
 {k:"Contemporánea",a:1789,b:2031,w:6100,at:1925}
 ];
+
+/* Geographic links are inferred solely from explicit place references.
+   Unknown locations remain unclassified; users may override with g: []. */
+var GEO=["Europa","Asia","África","América","Oceanía","Antártida","Mundial"];
+var continent="Todos",DECADE_PX=92;
+for(var pi=2;pi<periods.length;pi++)
+ periods[pi].w=(periods[pi].b-periods[pi].a)*DECADE_PX/10;
+function geoFold(str){
+ return String(str||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+}
+var geoPatterns=[
+ ["Europa","europa|europeo|europea|espana|espanol|espanola|francia|frances|francesa|alemania|aleman|alemana|italia|italiano|italiana|grecia|griego|griega|roma|romano|romana|peninsula iberica|britania|britanico|britanica|inglaterra|ingles|inglesa|reino unido|portugal|paises bajos|holanda|belgica|suiza|austria|irlanda|escocia|gales|suecia|noruega|dinamarca|finlandia|islandia|polonia|ucrania|rumania|hungria|checoslovaquia|chequia|eslovaquia|balcanes|serbia|croacia|bosnia|eslovenia|bulgaria|macedonia|albania|bielorrusia|letonia|lituania|estonia|vaticano|napoles|sicilia|sacro imperio|bizantino|constantinopla|atenas|esparta|verdun|trafalgar|carolingio|franquista|lindisfarne|peloponeso|termopilas|cordoba"],
+ ["Asia","asia|asiatico|asiatica|china|chino|japon|japones|japonesa|india|indio|pakistan|bangladesh|nepal|tibet|mongolia|mongol|iran|persia|persa|iraq|irak|mesopotamia|sumeria|sumerio|babilonia|acadia|asirios|israel|israeli|judea|galilea|jerusalen|palestina|libano|siria|sirio|jordania|arabia|yemen|oman|turquia|anatolia|otomano|otomana|corea|tailandia|vietnam|indonesia|filipinas|afganistan|uzbekistan|kazajistan|azerbaiyan|armenia|georgia|baku|singapur|malasia|camboya|birmania|myanmar|laos|qatar|emiratos arabes|kuwait|dinastia tang|dinastia qing|dinastia ming"],
+ ["África","africa|africano|africana|egipto|egipcio|sudafrica|sudafricano|etiopia|eritrea|sudan|libia|tunez|argelia|marruecos|marroqui|nigeria|kenia|kenya|uganda|namibia|angola|mozambique|zimbabue|zambia|ruanda|cabo verde|senegal|mali|ghana|camerun|congo|tanzania|somalia|magreb|cartago|punica|punico|alejandria"],
+ ["América","america|americano|americana|estados unidos|eeuu|e e u u|usa|canada|mexico|mexicano|mexicana|guatemala|honduras|el salvador|costa rica|nicaragua|panama|cuba|haiti|dominicana|puerto rico|venezuela|colombia|ecuador|peru|bolivia|chile|argentina|uruguay|paraguay|brasil|brasileno|amazonia|andes|azteca|aztecas|maya|inca|yucatan|caribe|washington|nueva york|california|texas|alaska"],
+ ["Oceanía","oceania|australia|australiano|australiana|nueva zelanda|fiyi|papua|polinesia|micronesia|melanesia"],
+ ["Antártida","antartida|antartico|antartica|polo sur"]
+].map(function(pair){
+ return [pair[0],new RegExp("(?:^|[^a-z0-9])(?:"+pair[1]+")(?=$|[^a-z0-9])","i")];
+});
+function continentsOf(d){
+ if(d._geo)return d._geo;
+ if(Array.isArray(d.g)&&d.g.some(function(v){return GEO.includes(v)})){
+  d._geo=GEO.filter(function(v){return d.g.includes(v)});
+  d._geoKind="manual";return d._geo;
+ }
+ var title=geoFold(d.t),description="";
+ if(d.c==="Pontífices"){
+  description=(d.d||"").split("·").slice(2).join(" ");
+  description=description.replace(/\bImperio romano\b/gi,"").replace(/\bEstados Pontificios\b/gi,"");
+ }else if(d.c==="Literatura"||d.c==="Filosofía"){
+  description=(d.d||"").split("·").slice(0,3).join(" ");
+ }
+ var reference=title+" "+geoFold(description),out=[];
+ geoPatterns.forEach(function(pair){if(pair[1].test(reference))out.push(pair[0])});
+ if(/(?:^|[^a-z])(?:rusia|ruso|rusa|urss|union sovietica)(?=$|[^a-z])/.test(title))
+  out.push("Europa","Asia");
+ if(/imperio romano|imperio otomano|guerras? punicas?/.test(title))
+  out.push("Europa","África","Asia");
+ if(/imperio britanico|guerras? mundiales?|pandemia|covid.?19|escala mundial|guerra fria|global/.test(title))
+  out.push("Mundial");
+ d._geo=GEO.filter(function(c){return out.includes(c)});
+ d._geoKind=d._geo.length?"text":"unknown";
+ return d._geo;
+}
+function matchesContinent(d){
+ var found=continentsOf(d);
+ return continent==="Todos"||(continent==="Sin localizar"?found.length===0:found.includes(continent));
+}
+function geoStatus(all,filtered){
+ var identified=all.filter(function(d){return continentsOf(d).length>0}).length;
+ $("geo-status").textContent=(continent==="Todos"?
+  identified+" con referencia continental · "+(all.length-identified)+" sin localizar":
+  filtered.length+" registros · "+(continent==="Sin localizar"?"sin referencia geográfica":"vinculados a "+continent))+
+  " · clasificación provisional";
+}
+
 var cats=["Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
 var colors=["#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
 var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1;
@@ -20,7 +77,9 @@ function yearText(y){
 }
 var dateRe=/\b(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?\s*[-–—]\s*(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?/i;
 function valid(d){
- return d&&typeof d.t==="string"&&d.t.length<=500&&Number.isFinite(Number(d.y))&&
+ return d&&typeof d.t==="string"&&d.t.length<=500&&
+ (d.g==null||(Array.isArray(d.g)&&d.g.length<=GEO.length&&d.g.every(function(v){return GEO.includes(v)})))&&
+ Number.isFinite(Number(d.y))&&
  Math.abs(Number(d.y))<=260000000&&cats.includes(d.c)&&
  (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>=Number(d.y)&&Number(d.e)<=2031));
 }
@@ -74,10 +133,11 @@ function displayName(d){
  return d.t;
 }
 function visible(){
- return base.concat(custom).filter(function(d){
+ var all=base.concat(custom).filter(function(d){
   enrich(d);
   return (cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query));
  });
+ var result=all.filter(matchesContinent);geoStatus(all,result);return result;
 }
 function axisX(y){
  var x=170,n=Number(y);
@@ -135,6 +195,8 @@ function showNote(d){
  var dates=yearText(sy(d));
  if(duration(d))dates+=" — "+(d._ongoing?"actualidad":yearText(ey(d)))+" · "+howLong(d);
  root.append(el("div",dates,"note-date"));
+ var geography=continentsOf(d);
+ root.append(el("p",geography.length?"Continentes: "+geography.join(" · ")+(d._geoKind==="manual"?" (indicado manualmente)":" (asignación provisional por lugares mencionados)"):"Continente: sin localizar en el archivo","source-note"));
  root.append(el("p",d.d||"El Excel original no incluye una nota descriptiva para esta entrada. Puedes consultar Wikipedia o ampliar manualmente el registro.","note-description"));
  if(d.isTraditional)root.append(el("p","Cronología bíblica tradicional: las fechas del archivo no deben interpretarse como dataciones históricas demostradas.","note-warning"));
  if(d.s)root.append(el("p","Origen: "+d.s,"source-note"));
@@ -220,12 +282,22 @@ function render(){
   var x=axisX(p.a),w=p.w*zoom;
   var era=el("div",p.k,"era-block");era.style.left=x+"px";era.style.width=w+"px";
   era.append(el("small","escala propia"));regions.append(era);
-  var step=niceStep(175*(p.b-p.a)/w),first=Math.ceil(p.a/step)*step;
-  for(var y=first,i=0;y<p.b&&i<200;y+=step,i++){
-   var tick=el("div",null,"tick");tick.style.left=axisX(y)+"px";
-   tick.append(el("span",yearText(y)));axis.append(tick);
+  // Deep-time and prehistory retain a coarse scale.
+  if(p.a< -3000){
+   var step=niceStep(175*(p.b-p.a)/w),first=Math.ceil(p.a/step)*step;
+   for(var y=first,i=0;y<p.b&&i<200;y+=step,i++){
+    var tick=el("div",null,"tick");tick.style.left=axisX(y)+"px";
+    tick.append(el("span",yearText(y)));axis.append(tick);
+   }
   }
  });
+ // Continuous decades begin at 3000 BCE; no reset when an epoch ends.
+ for(var decade=-3000;decade<=2030;decade+=10){
+  var decadeTick=el("div",null,"tick decade-tick"+(decade%100===0?" decade-major":""));
+  decadeTick.style.left=axisX(decade)+"px";
+  decadeTick.append(el("span",decade===0?"Cambio de era":yearText(decade)));
+  axis.append(decadeTick);
+ }
  can.append(regions,axis);
  var count=0;
  cats.forEach(function(c,i){
@@ -234,6 +306,12 @@ function render(){
   if(!items.length&&cat==="Todas")return;
   var list=grouped(items,c),lane=el("div",null,"lane");
   lane.style.setProperty("--lane-color",colors[i]);
+  var decadeGrid=el("span",null,"decade-grid");
+  decadeGrid.style.left=axisX(-3000)+"px";
+  decadeGrid.style.width=(width-axisX(-3000))+"px";
+  decadeGrid.style.setProperty("--decade-width",DECADE_PX*zoom+"px");
+  decadeGrid.setAttribute("aria-hidden","true");
+  lane.append(decadeGrid);
   periods.slice(1).forEach(function(p){
    var guide=el("span",null,"era-guide");guide.style.left=axisX(p.a)+"px";lane.append(guide);
   });
@@ -282,7 +360,20 @@ function setZoom(next){
  zoom=Math.max(1,Math.min(8,next));render();jumpToYear(y);
 }
 function init(){
- periodUI();categoryUI();$("categories").textContent=cats.length;
+ periodUI();categoryUI();
+ $("continent").addEventListener("change",function(e){
+  continent=e.target.value;
+  if(!["Todos","Sin localizar"].concat(GEO).includes(continent))continent="Todos";
+  var focus=yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2);
+  render();
+  if(continent!=="Todos"){
+   var choices=visible();
+   if(choices.length){
+    var nearest=choices.reduce(function(best,d){return Math.abs(sy(d)-focus)<Math.abs(sy(best)-focus)?d:best});
+    jumpToYear(sy(nearest));
+   }
+  }
+ });$("categories").textContent=cats.length;
  $("note-close").addEventListener("click",closeNote);
  $("note-layer").addEventListener("click",function(e){if(e.target===$("note-layer"))closeNote()});
  document.addEventListener("keydown",function(e){if(e.key==="Escape")closeNote()});
@@ -323,8 +414,9 @@ function init(){
    t:$("new-title").value.trim(),y:Number($("new-year").value),
    c:$("new-cat").value,d:$("new-note").value.trim(),s:"Registro personal · este navegador"};
   if($("new-end-year").value!=="")d.e=Number($("new-end-year").value);
+  if(GEO.includes($("new-continent").value))d.g=[$("new-continent").value];
   if(!valid(d)){alert("Revisa nombre, inicio, fin y categoría.");return}
-  custom.push(d);save();e.target.reset();cat="Todas";categoryUI();enrich(d);detail(d);render();jumpToYear(sy(d));$("add-panel").classList.add("hide");
+  custom.push(d);save();e.target.reset();cat="Todas";continent="Todos";$("continent").value="Todos";categoryUI();enrich(d);detail(d);render();jumpToYear(sy(d));$("add-panel").classList.add("hide");
  });
  $("export").addEventListener("click",function(){
   var payload=JSON.stringify({version:1,kind:"idealab-historia-private",items:custom},null,2),a=el("a");
@@ -337,7 +429,7 @@ function init(){
    var data=JSON.parse(await file.text());if(!Array.isArray(data.items))throw Error("Formato no válido");
    var cleaned=data.items.filter(valid).map(function(x){
     return{id:String(x.id||"local-"+Math.random()),t:x.t.slice(0,500),y:Number(x.y),
-     e:x.e==null?undefined:Number(x.e),c:x.c,d:String(x.d||"").slice(0,1200),s:"Importado por el usuario"};
+     e:x.e==null?undefined:Number(x.e),c:x.c,g:Array.isArray(x.g)?x.g.filter(function(v){return GEO.includes(v)}):undefined,d:String(x.d||"").slice(0,1200),s:"Importado por el usuario"};
    });
    if(!confirm("¿Importar "+cleaned.length+" registros en este navegador?"))return;
    var ids=new Set(custom.map(function(v){return v.id}));
