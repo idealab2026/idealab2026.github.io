@@ -11,3 +11,9 @@
 .image-lightbox img{max-width:100%;height:auto;display:block;margin-top:10px}
 .image-lightbox .button{display:block;margin-left:auto}
 @media(max-width:600px){.amazon-card-link{font-size:.65rem;padding:9px 5px;margin:0 7px 8px}.image-lightbox{max-width:98vw;padding:7px}.book-open .book-info{padding:10px}}
+
+.volume-graphic{padding:17px;border-bottom:1px solid var(--line)}
+.volume-graphic:last-child{border-bottom:0}
+.volume-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.volume-heading strong{font:500 1.45rem Georgia,serif;color:var(--ink)}
+@media(max-width:600px){.volume-graphic{padding:9px}.volume-heading strong{font-size:1.16rem}}
