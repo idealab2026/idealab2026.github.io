@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-09",
+  "scope": "Acontecimientos fechados verificados durante la revisión de fuentes de La Telaraña. El episodio puede referirse al hecho, pero no constituye la fuente probatoria principal.",
+  "reviewProtocol": {
+    "required": [
+      "fecha",
+      "precision de fecha",
+      "fuente original",
+      "contraste externo",
+      "protagonistas",
+      "estado probatorio"
+    ],
+    "notAllowed": "Publicar rumores, tesis conspirativas o culpabilidades no acreditadas como hechos. Si la fecha del hecho no está clara, mantener pendiente y no añadir a la cronología.",
+    "identity": "El identificador del acontecimiento es estable y compartible. La fuente original del podcast no se transforma en fuente primaria del evento histórico."
+  },
+  "items": [
+    {
+      "id": "study-v1-carrero-1973",
+      "y": 1973.9671232876713,
+      "t": "Atentado mortal contra Luis Carrero Blanco en Madrid",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Fuente 1/33 · contrastada con documentación externa",
+      "d": "El 20 de diciembre de 1973, el presidente del Gobierno de la dictadura franquista, Luis Carrero Blanco, murió por la explosión de una bomba colocada por ETA en Madrid. El atentado tuvo un gran impacto político en los últimos años del franquismo. La documentación contemporánea estadounidense recoge la reivindicación de ETA. La referencia en el podcast se registra como mención de un acontecimiento; no valida especulaciones sobre supuesta participación de la CIA.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1973-12-20",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 1,
+        "sourceUrl": "https://www.youtube.com/watch?v=cmQVMU80ggk",
+        "confirmedBy": {
+          "label": "Archivo General de la Administración · Ministerio de Cultura",
+          "url": "https://www.cultura.gob.es/gl/cultura/areas/archivos/mc/archivos/aga/actividades-y-exposiciones/destacados/magnicidios.html"
+        },
+        "relatedTelarana": [
+          "cv26-carrero",
+          "cv26-kissinger"
+        ],
+        "methodologicalLimits": "La autoría material atribuida a ETA cuenta con respaldo documental; la hipótesis de intervención de la CIA no se incorpora como hecho."
+      }
+    },
+    {
+      "id": "study-v1-23f-1981",
+      "y": 1981.145205479452,
+      "t": "Intento de golpe de Estado del 23-F durante la investidura de Calvo-Sotelo",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Fuente 1/33 · contrastada con documentación externa",
+      "d": "El 23 de febrero de 1981, un grupo de guardias civiles armados encabezado por Antonio Tejero irrumpió en el Congreso y detuvo la investidura de Leopoldo Calvo-Sotelo. El golpe fracasó. La sesión y el asalto constan en el Diario de Sesiones del Congreso; posteriores declaraciones del entrevistado sobre actores ocultos o motivaciones no forman parte de este hecho acreditado.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1981-02-23",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 1,
+        "sourceUrl": "https://www.youtube.com/watch?v=cmQVMU80ggk",
+        "confirmedBy": {
+          "label": "Congreso de los Diputados · Diario de Sesiones de 23/02/1981",
+          "url": "https://www.congreso.es/public_oficiales/L1/CONG/DS/PL/PL_146.PDF"
+        },
+        "relatedTelarana": [
+          "cv26-rey-emerito",
+          "cv26-suarez",
+          "cv26-manglano"
+        ],
+        "methodologicalLimits": "No presentar alegaciones del entrevistado acerca de conspiraciones o responsables adicionales como resultados probados."
+      }
+    },
+    {
+      "id": "study-v1-11m-2004",
+      "y": 2004.191256830601,
+      "t": "Atentados terroristas del 11-M contra trenes de Cercanías en Madrid",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Fuente 1/33 · contrastada con documentación externa",
+      "d": "El 11 de marzo de 2004 se produjeron atentados con explosivos en trenes de Cercanías de Madrid. La declaración oficial de luto del Gobierno y la investigación posterior documentan los hechos. La entrevista de Villarejo expone teorías alternativas sobre servicios de inteligencia: se conservan en La Telaraña como afirmaciones controvertidas, no como explicación histórica verificada.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2004-03-11",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 1,
+        "sourceUrl": "https://www.youtube.com/watch?v=cmQVMU80ggk",
+        "confirmedBy": {
+          "label": "Boletín Oficial del Estado · Real Decreto 419/2004",
+          "url": "https://boe.es/diario_boe/txt.php?id=BOE-A-2004-4525"
+        },
+        "relatedTelarana": [
+          "cv26-aznar",
+          "cv26-villarejo"
+        ],
+        "methodologicalLimits": "La cronología recoge el atentado acreditado, no versiones sin sustento sobre una autoría estatal alternativa."
+      }
+    },
+    {
+      "id": "study-v1-kitchen-2013",
+      "y": 2013.495890410959,
+      "t": "Inicio de las actuaciones policiales investigadas como Operación Kitchen",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Fuente 1/33 · contrastada con documentación externa",
+      "d": "En julio de 2013 comenzaron las actuaciones de vigilancia y captación de información sobre el entorno de Luis Bárcenas posteriormente investigadas por la Audiencia Nacional en la pieza Kitchen de la operación Tándem. El procedimiento examinó indicios de utilización de medios policiales y fondos reservados. La fecha es aproximada al mes: no hay base aquí para fijar un único día de inicio.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2013-07",
+        "datePrecision": "mes",
+        "status": "hecho_documentado",
+        "sourceOrder": 1,
+        "sourceUrl": "https://www.youtube.com/watch?v=cmQVMU80ggk",
+        "confirmedBy": {
+          "label": "Congreso de los Diputados · informe y documentación de comisión sobre Kitchen",
+          "url": "https://www.congreso.es/backoffice_doc/prensa/notas_prensa/87915_1643879930633.pdf"
+        },
+        "relatedTelarana": [
+          "cv26-villarejo",
+          "cv26-barcenas",
+          "cv26-fernandez-diaz"
+        ],
+        "methodologicalLimits": "El inicio se fija a julio de 2013 sin día exacto y las responsabilidades individuales se distinguen de la existencia de diligencias judiciales."
+      }
+    },
+    {
+      "id": "study-v1-tandem-2017",
+      "y": 2017.8383561643836,
+      "t": "Detención de José Manuel Villarejo en la Operación Tándem",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Fuente 1/33 · contrastada con documentación externa",
+      "d": "El 3 de noviembre de 2017 la Policía detuvo al comisario José Manuel Villarejo y a otros investigados en la operación Tándem, bajo supervisión judicial. El procedimiento de la Audiencia Nacional generó numerosas piezas separadas. Una detención o investigación no equivale por sí misma a la acreditación de todos los hechos narrados por Villarejo ni de todas las imputaciones.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2017-11-03",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 1,
+        "sourceUrl": "https://www.youtube.com/watch?v=cmQVMU80ggk",
+        "confirmedBy": {
+          "label": "El País · cronología periodística del caso Tándem",
+          "url": "https://elpais.com/espana/2023-07-25/la-audiencia-encaja-la-primera-pieza-del-puzle-sobre-el-presunto-grupo-criminal-de-villarejo.html"
+        },
+        "relatedTelarana": [
+          "cv26-villarejo"
+        ],
+        "methodologicalLimits": "Referencia periodística independiente sobre la fecha de detención, no prueba indiscriminada de alegaciones relacionadas."
+      }
+    },
+    {
+      "id": "study-v2-ceuta-aviso-2026",
+      "y": 2026.572602739726,
+      "t": "El CNI comunica avisos sobre convocatorias de entrada en Ceuta",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Fuente 2/33 · contrastada con documentación externa",
+      "d": "El 29 de julio de 2026, el CNI transmitió a la Delegación del Gobierno en Ceuta (13:52) y a la Guardia Civil (13:53) información sobre llamamientos difundidos en redes sociales para cruzar la frontera al día siguiente. También remitió una nota a servicios de inteligencia marroquíes. Los mensajes publicados documentan la existencia y hora de los avisos; no demuestran que los receptores conocieran anticipadamente el volumen real de personas que cruzarían.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2026-07-29",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "La Moncloa · 40 informes y comunicaciones oficiales sobre Ceuta",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx"
+        },
+        "relatedTelarana": [
+          "ce26-cni",
+          "ce26-delegacion",
+          "ce26-guardia-civil",
+          "ce26-avisos"
+        ],
+        "methodologicalLimits": "El episodio 2 solo se ha estudiado preliminarmente; esta cronología procede de documentos oficiales, no de frases transcritas del podcast."
+      }
+    },
+    {
+      "id": "study-v2-ceuta-crisis-2026",
+      "y": 2026.5753424657535,
+      "t": "Crisis fronteriza y entrada masiva en Ceuta (30–31 julio de 2026)",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Fuente 2/33 · contrastada con documentación externa",
+      "d": "Durante el 30 y 31 de julio de 2026 se produjo una entrada masiva de personas en Ceuta por tierra y mar. El Gobierno publicó posteriormente informes de Policía Nacional, Guardia Civil, CNI y CIFAS sobre la situación y las comunicaciones previas. El registro no atribuye la organización de los hechos a un servicio de inteligencia extranjero: esa hipótesis requiere evidencias específicas no establecidas por estos documentos.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2026-07-30",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "La Moncloa · cronología y comunicaciones oficiales de julio de 2026",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx"
+        },
+        "relatedTelarana": [
+          "ce26-ceuta-crisis",
+          "ce26-hipotesis-marruecos"
+        ],
+        "methodologicalLimits": "Fecha de inicio 30/07/2026, crisis desarrollada también el 31/07/2026. La descripción del podcast no acredita ninguna operación clandestina."
+      }
+    },
+    {
+      "id": "study-v2-ceuta-publicacion-2026",
+      "y": 2026.6876712328767,
+      "t": "Publicación de 40 informes oficiales sobre la crisis de Ceuta",
+      "c": "Actualidad",
+      "s": "Investigación IDEA LAB · Fuente 2/33 · contrastada con documentación externa",
+      "d": "El 9 de septiembre de 2026, el Gobierno de España puso a disposición pública cuarenta documentos y comunicaciones sobre la crisis fronteriza de julio. La publicación incluye material de CENIF, Guardia Civil, CNI y CIFAS y permite contrastar qué información se comunicó y cuándo. Este hecho administrativo es independiente del análisis e hipótesis expresados después en la entrevista.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2026-09-09",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "La Moncloa · publicación de documentos de 09/09/2026",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx"
+        },
+        "relatedTelarana": [
+          "ce26-espana-gobierno",
+          "ce26-debate-alertas"
+        ],
+        "methodologicalLimits": "Publicación constatada oficialmente; no convertir todas las interpretaciones políticas que se hagan de esos documentos en hechos probados."
+      }
+    }
+  ]
+}
