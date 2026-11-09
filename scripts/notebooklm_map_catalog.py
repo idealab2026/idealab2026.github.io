@@ -124,15 +124,16 @@ def chapter_key(slug: str, title: str, *, source: bool = False):
         ch = re.search(r"\bcap(?:itulo)?\s+(\d{1,2})\b", raw)
         if vol == 1:
             return ("book", 1) if not ch else None
+        # PDFs are "1. LIBRO SEGUNDO - INTRODUCCIÓN.pdf" through
+        # "10. LIBRO SEGUNDO - CONCLUSIÓN.pdf". If a source claims both
+        # a numbered prefix and a different explicit chapter, reject it.
+        numbered = re.match(r"^(\d{1,2})\s+libro\s+segundo\b", raw) if source else None
         if ch:
+            if numbered and int(numbered.group(1)) != int(ch.group(1)):
+                return None
             return ("book", 2, int(ch.group(1)))
-        if source:
-            # PDFs are "1. LIBRO SEGUNDO - INTRODUCCIÓN.pdf" through
-            # "10. LIBRO SEGUNDO - CONCLUSIÓN.pdf". The leading number,
-            # only in this book/volume, is its chapter number.
-            numbered = re.match(r"^(\d{1,2})\s+libro\s+segundo\b", raw)
-            if numbered and 1 <= int(numbered.group(1)) <= 10:
-                return ("book", 2, int(numbered.group(1)))
+        if numbered and 1 <= int(numbered.group(1)) <= 10:
+            return ("book", 2, int(numbered.group(1)))
         return None
     if slug == "1984":
         if "goldstein" in raw and "libro" in raw:
