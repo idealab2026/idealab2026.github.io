@@ -706,6 +706,34 @@
       }
     },
     {
+      "id": "study-v8-archivo-causa-financiacion-podemos-2022",
+      "y": 2022.4849315068493,
+      "t": "La Audiencia Nacional ejecuta el archivo de una causa por presunta financiación ilegal de Podemos",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 08 · contraste judicial independiente; NO afirmación acreditada del vídeo",
+      "d": "Una providencia del Juzgado Central de Instrucción número 6 de Madrid de 27 de junio de 2022 recogió lo dispuesto por la Sala de lo Penal de la Audiencia Nacional: el sobreseimiento y archivo de las actuaciones relativas al presunto delito de financiación ilegal de partido político en la causa examinada, dejando sin efecto diligencias investigadoras. El documento es una fuente judicial primaria que permite contextualizar futuras alegaciones sobre financiación de Podemos sin asumirlas. La sinopsis del pódcast de Villarejo de octubre de 2025 menciona a Podemos, pero no se ha verificado que el invitado cite este procedimiento concreto.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2022-06-27",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 8,
+        "sourceTitle": "Vaquero Podcast #67 · Villarejo · contexto externo independiente de la entrevista",
+        "sourceUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac",
+        "confirmedBy": {
+          "label": "Poder Judicial · JCI n.º 6 · Providencia de archivo del 27/06/2022",
+          "url": "https://www.poderjudicial.es/stfls/AUDIENCIA%20NACIONAL/JURISPRUDENCIA/2022-6-27%20Provid%20JCI%206%20archivo.pdf"
+        },
+        "relatedTelarana": [
+          "f08-archivo-2022",
+          "f08-podemos"
+        ],
+        "methodologicalLimits": "La providencia acredita el archivo de un procedimiento concreto, no necesariamente todos los procesos sobre el partido ni la inocencia de cada afirmación que pueda aparecer en otras fuentes. No hay transcripción íntegra de la entrevista y no se atribuye esta referencia a Villarejo."
+      }
+    },
+    {
       "id": "study-v7-supremo-ausbanc-manos-limpias-2024",
       "y": 2024.2021857923498,
       "t": "El Supremo absuelve a Luis Pineda y Miguel Bernad en la causa Ausbanc–Manos Limpias",
