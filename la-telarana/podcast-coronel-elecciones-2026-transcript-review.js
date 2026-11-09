@@ -185,7 +185,10 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "text": "Periodista identificado por los participantes como coautor de «Ceuta invadida» junto a Villarejo. La autoría se declara en la entrevista; no se ha localizado aquí una ficha bibliográfica independiente que permita comprobar edición, ISBN y datos de publicación."
         }
       ],
-      "topic3d": "intelligence"
+      "topic3d": "intelligence",
+      "photo": "https://www.todoliteratura.es/fotos/1/JoaquA_n_Abad_putas_P.jpg",
+      "photoCredit": "Todoliteratura · entrevista al periodista",
+      "photoEvidenceUrl": "https://www.todoliteratura.es/fotos/1/JoaquA_n_Abad_putas_P.jpg"
     },
     {
       "id": "ce26-jose-bono",
