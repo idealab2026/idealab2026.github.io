@@ -535,6 +535,36 @@
       }
     },
     {
+      "id": "study-v2-ceuta-resolucion-parlamento-europeo-2026",
+      "y": 2026.7095890410958,
+      "t": "El Parlamento Europeo aprueba una resolución sobre la crisis de Ceuta y la instrumentalización migratoria",
+      "c": "Actualidad",
+      "s": "Investigación IDEA LAB · contraste institucional de la fuente 02",
+      "d": "El 17 de septiembre de 2026, el Parlamento Europeo aprobó, por 339 votos a favor, 225 en contra y 16 abstenciones, una resolución que caracteriza los acontecimientos migratorios de Ceuta dentro del debate sobre amenazas híbridas e instrumentalización de personas migrantes. Solicita mayor protección de las fronteras y cooperación europea. Es una posición política documentada de la Eurocámara, no una sentencia penal ni una investigación que demuestre las alegaciones específicas de Villarejo sobre una supuesta reunión clandestina de marzo, agentes identificados o complicidad del Gobierno español.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2026-09-17",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceTitle": "Entrevista Villarejo, fuente 02: contexto externo; NO declaración atribuida al entrevistado",
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "Parlamento Europeo · Resolución 2026/2870(RSP), 17/09/2026",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29"
+        },
+        "relatedTelarana": [
+          "ce26-parlamento-europeo",
+          "ce26-resolucion-pe-2026",
+          "ce26-ceuta-crisis",
+          "ce26-alegacion-operacion-marruecos"
+        ],
+        "methodologicalLimits": "La existencia y el resultado de la resolución son verificables. La valoración política sobre instrumentalización migratoria no identifica responsables de una operación concreta ni verifica la supuesta reunión del 15 de marzo ni acusa formalmente al Gobierno español."
+      }
+    },
+    {
       "id": "study-v2-elecciones-convocatoria-2026",
       "y": 2026.7589041095891,
       "t": "Se aprueba el decreto de convocatoria de elecciones generales para el 29 de noviembre",
