@@ -175,7 +175,13 @@ function make(options){
   for(let x=0;x<w;x+=44){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke()}
   for(let y=0;y<h;y+=44){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke()}
   drawOrb();
-  const visible=nodes.filter(n=>!search||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(search));
+  const queryKey=String(search||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
+  const normalize=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
+  const names=queryKey?nodes.filter(n=>normalize(n.name).includes(queryKey)):[];
+  const matched=queryKey?(names.length?names:nodes.filter(n=>normalize((n.subtitle||"")+" "+(n.note||"")).includes(queryKey))):nodes;
+  const displayed=new Set(matched.map(n=>n.id));
+  if(queryKey)edges.forEach(e=>{if(displayed.has(e.a)||displayed.has(e.b)){displayed.add(e.a);displayed.add(e.b)}});
+  const visible=queryKey?nodes.filter(n=>displayed.has(n.id)):nodes;
   const pr=new Map(visible.map(n=>[n.id,proj(pos.get(n.id)||{x:0,y:0,z:0})]));
   drawRegions(visible,pr);
   const focus=hover||(selection?.kind==="node"?selection.id:null);
@@ -360,6 +366,16 @@ function make(options){
   setSelection(s){selection=s;redraw()},setQuery(s){search=s||"";redraw()},setEdgeMode(s){mode=s;redraw()},
   setTheme(s){markInteraction();theme=topics.some(t=>t[0]===s)?s:"todos";hover=null;hoverEdge=null;hint.hidden=true;
    yaw=-.45;pitch=.24;basePitch=.24;zoom=1;panX=panY=0;fitView()},
+  focusNode(id){
+   const p=pos.get(id);if(!p)return false;
+   markInteraction();hover=null;hoverEdge=null;
+   // Gira el hemisferio visible hacia el nodo y amplía la ficha seleccionada.
+   yaw=Math.atan2(p.x,p.z);
+   const r=Math.hypot(p.x,p.z);
+   pitch=Math.atan2(p.y,r);basePitch=pitch;
+   panX=0;panY=0;zoom=Math.max(zoom,.65);
+   redraw();return true;
+  },
   zoom(f){zoomAt(w/2,h/2,f)},
   fit:fitView,
   reset(){markInteraction();yaw=-.45;pitch=.24;basePitch=.24;zoom=1;panX=panY=0;fitView()},
