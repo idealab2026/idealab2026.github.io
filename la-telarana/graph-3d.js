@@ -179,8 +179,8 @@ function make(options){
   const normalize=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
   const names=queryKey?nodes.filter(n=>normalize(n.name).includes(queryKey)):[];
   const matched=queryKey?(names.length?names:nodes.filter(n=>normalize((n.subtitle||"")+" "+(n.note||"")).includes(queryKey))):nodes;
-  const displayed=new Set(matched.map(n=>n.id));
-  if(queryKey)edges.forEach(e=>{if(displayed.has(e.a)||displayed.has(e.b)){displayed.add(e.a);displayed.add(e.b)}});
+  const seeds=new Set(matched.map(n=>n.id)),displayed=new Set(seeds);
+  if(queryKey)edges.forEach(e=>{if(seeds.has(e.a)||seeds.has(e.b)){displayed.add(e.a);displayed.add(e.b)}});
   const visible=queryKey?nodes.filter(n=>displayed.has(n.id)):nodes;
   const pr=new Map(visible.map(n=>[n.id,proj(pos.get(n.id)||{x:0,y:0,z:0})]));
   drawRegions(visible,pr);
