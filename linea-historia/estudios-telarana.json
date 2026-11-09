@@ -189,6 +189,38 @@
       }
     },
     {
+      "id": "study-vf150-mashal-1997",
+      "y": 1997.731506849315,
+      "t": "Intento de asesinato de Khaled Mashal por agentes del Mossad en Amán",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · contraste externo sobre Vaquero Podcast #150 (sin número en inventario original)",
+      "d": "El 25 de septiembre de 1997, agentes del Mossad intentaron asesinar en Amán al dirigente político de Hamás Khaled Mashal mediante una sustancia tóxica. La operación fracasó y dos agentes fueron detenidos. El rey Husein de Jordania reclamó a Israel un antídoto, que fue entregado, y se negoció la liberación de agentes israelíes a cambio de la excarcelación de Ahmed Yasín y otros presos. El resumen de la comisión israelí publicado en 1998 documenta la operación; el hecho es independiente de las explicaciones del podcast.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "date": "1997-09-25",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": null,
+        "sourceCatalogStatus": "pendiente_de_reconciliar_con_inventario_33",
+        "sourceTitle": "Vaquero Podcast #150 · Eric Frattini (contexto complementario)",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "confirmedBy": {
+          "label": "Israel Government Press Office · resumen de la Comisión Ciechanover (1998), reproducción documental",
+          "url": "https://jewishvirtuallibrary.org/jsource/Society_%26_Culture/mashal.html"
+        },
+        "relatedTelarana": [
+          "vf150-khaled-meshaal",
+          "vf150-mossad",
+          "vf150-danny-yatom",
+          "vf150-hussein-jordania",
+          "vf150-ahmed-yassin"
+        ],
+        "methodologicalLimits": "El informe gubernamental prueba que la operación existió y fue reconocida; no verifica automáticamente todos los detalles narrados por Frattini ni sus valoraciones. La identificación del objetivo se aporta mediante contexto documental externo."
+      }
+    },
+    {
       "id": "study-v1-11m-2004",
       "y": 2004.191256830601,
       "t": "Atentados terroristas del 11-M contra trenes de Cercanías en Madrid",
@@ -213,6 +245,67 @@
           "cv26-villarejo"
         ],
         "methodologicalLimits": "La cronología recoge el atentado acreditado, no versiones sin sustento sobre una autoría estatal alternativa."
+      }
+    },
+    {
+      "id": "study-vf150-yassin-2004",
+      "y": 2004.22131147541,
+      "t": "Muerte de Ahmed Yasín en un ataque israelí en Gaza",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · contraste externo sobre Vaquero Podcast #150 (sin número en inventario original)",
+      "d": "El 22 de marzo de 2004, Ahmed Yasín, clérigo palestino y fundador de Hamás, murió en un ataque israelí con misiles cuando salía de una mezquita en Ciudad de Gaza. También murieron otras personas y hubo heridos. El secretario general de Naciones Unidas condenó el asesinato ese mismo día; la noticia consta igualmente en crónicas contemporáneas. Esta ficha recoge el acontecimiento acreditado, sin dar por demostradas las hipótesis operativas detalladas en la entrevista de Frattini.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "date": "2004-03-22",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": null,
+        "sourceCatalogStatus": "pendiente_de_reconciliar_con_inventario_33",
+        "sourceTitle": "Vaquero Podcast #150 · Eric Frattini (contexto complementario)",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "confirmedBy": {
+          "label": "Naciones Unidas · declaración del secretario general del 22/03/2004",
+          "url": "https://www.un.org/unispal/document/auto-insert-212878/"
+        },
+        "relatedTelarana": [
+          "vf150-ahmed-yassin",
+          "vf150-hamas",
+          "vf150-fuerzas-israel"
+        ],
+        "methodologicalLimits": "No presentar como probado el supuesto mecanismo de preparación del asesinato relatado por el entrevistado sin documentación específica. Las cifras de otras víctimas pueden diferir entre los informes de la época."
+      }
+    },
+    {
+      "id": "study-vf150-rantisi-2004",
+      "y": 2004.292349726776,
+      "t": "Muerte de Abdel Aziz al-Rantisi en un ataque israelí en Gaza",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · contraste externo sobre Vaquero Podcast #150 (sin número en inventario original)",
+      "d": "El 17 de abril de 2004, Abdel Aziz al-Rantisi, médico, cofundador de Hamás y dirigente del movimiento en Gaza tras la muerte de Ahmed Yasín, murió después de que misiles israelíes alcanzaran su automóvil en Ciudad de Gaza. La noticia fue recogida ese mismo día por medios internacionales; también se informó de otras víctimas. Se incorpora como hecho histórico verificable y no como confirmación general de las afirmaciones del episodio sobre las operaciones encubiertas.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "date": "2004-04-17",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": null,
+        "sourceCatalogStatus": "pendiente_de_reconciliar_con_inventario_33",
+        "sourceTitle": "Vaquero Podcast #150 · Eric Frattini (contexto complementario)",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "confirmedBy": {
+          "label": "The Guardian · noticia de agencias publicada el 17/04/2004",
+          "url": "https://www.theguardian.com/world/2004/apr/17/israel3"
+        },
+        "relatedTelarana": [
+          "vf150-abdel-aziz-al-rantisi",
+          "vf150-ahmed-yassin",
+          "vf150-hamas",
+          "vf150-fuerzas-israel"
+        ],
+        "methodologicalLimits": "La fecha y la muerte en el ataque están acreditadas en crónicas contemporáneas; no extrapolar a estos hechos otras acusaciones, motivaciones no documentadas o detalles operativos del podcast."
       }
     },
     {
