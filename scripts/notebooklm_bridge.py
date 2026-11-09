@@ -435,6 +435,14 @@ def poll():
     for issue, job in list(state.items()):
         if job.get("phase") == "submitted":
             check_submitted(issue, job, state)
+    # Private, idempotent JPG copies on the user's Desktop. Export failures
+    # must not block NotebookLM polling or cause a second remote generation.
+    try:
+        from notebooklm_export_desktop import export_known
+        export_known(state, verbose=False)
+    except Exception as exc:
+        print("ATENCIÓN: no se pudo actualizar la copia JPEG del Escritorio:",
+              type(exc).__name__)
     running = sum(j.get("phase") in ("submitted", "launching", "uncertain") for j in state.values())
     if running:
         print("Solicitudes activas o inciertas:", running, "(no se enviarán otras automáticamente)")
