@@ -5,6 +5,8 @@
   "total": 33,
   "counts": {
     "reviewedPublished": 1,
+    "inReview": 1,
+    "notStarted": 31,
     "pending": 32,
     "missingOriginalUrl": 1
   },
@@ -31,6 +33,28 @@
   "nextSource": {
     "order": 2,
     "videoId": "qARZpON9_j0",
-    "status": "pendiente"
-  }
+    "status": "en_revision"
+  },
+  "inReview": [
+    {
+      "order": 2,
+      "videoId": "qARZpON9_j0",
+      "title": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA",
+      "status": "contexto_documental_publicado_pendiente_transcripcion",
+      "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+      "publishedAt": "2026-10-12",
+      "publicData": "podcast-coronel-elecciones-2026-preliminar.js",
+      "sourceNodesDocumented": 21,
+      "sourceRelationsDocumented": 19,
+      "novelEntitiesMerged": 13,
+      "novelRelationsMerged": 18,
+      "existingEntityNotesEnriched": 9,
+      "existingRelationsEnriched": 1,
+      "rawTranscriptAvailable": false,
+      "verifiedMinuteReferences": 0,
+      "reviewComplete": false,
+      "qualityNotes": "Proveniencia separada: sinopsis del productor y 40 documentos de Ceuta publicadas por Moncloa. Faltan transcripción, extracción de citas literales, identificación íntegra de personas y minuto exacto de declaraciones.",
+      "primaryOfficialSource": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx"
+    }
+  ]
 }
