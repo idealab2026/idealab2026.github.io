@@ -78,7 +78,7 @@
     "committedVerifiedEvents": 8,
     "fromReviewedSource": 5,
     "fromSourceInReview": 3,
-    "publishedInPages": false,
+    "publishedInPages": true,
     "eventsBySource": {
       "1": [
         "study-v1-carrero-1973",
@@ -92,6 +92,8 @@
         "study-v2-ceuta-crisis-2026",
         "study-v2-ceuta-publicacion-2026"
       ]
-    }
+    },
+    "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42653628984",
+    "publishedCheckDate": "2026-11-09"
   }
 }
