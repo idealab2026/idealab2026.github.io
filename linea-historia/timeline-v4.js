@@ -550,7 +550,7 @@ function wikiRenderImage(root,page,requestId,signal){
  var status=el("div","Comprobando imagen de Wikipedia…","wiki-image-status");
  var photo=el("img",null,"wiki-lead-image");
  photo.alt="Imagen vinculada al artículo: "+page.title;
- photo.loading="lazy";photo.decoding="async";photo.referrerPolicy="no-referrer";
+ photo.loading="eager";photo.decoding="async";photo.referrerPolicy="no-referrer";
  photo.style.display="none";
  var caption=el("figcaption",null,"wiki-image-caption");
  caption.append(el("span","Imagen: Wikimedia Commons"));
