@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 var periods=[
-{k:"Tiempo profundo",a:-260000000,b:-110000,w:2600,at:-230000000},
+{k:"Tiempo profundo",a:-541000000,b:-110000,w:3400,at:-400000000},
 {k:"Prehistoria",a:-110000,b:-3000,w:3000,at:-9000},
 {k:"Antigüedad",a:-3000,b:476,w:3800,at:-400},
 {k:"Edad media",a:476,b:1492,w:3800,at:1000},
@@ -65,8 +65,8 @@ function geoStatus(all,filtered){
   " · clasificación provisional";
 }
 
-var cats=["Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
-var colors=["#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
+var cats=["Eras geológicas","Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
+var colors=["#d5a66d","#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
 var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1,viewMode="timeline",savedYear=1900,nativeFullscreen=false;
 var el=function(tag,t,cls){var x=document.createElement(tag);if(t!=null)x.textContent=t;if(cls)x.className=cls;return x};
 var $=function(id){return document.getElementById(id)};
@@ -80,7 +80,7 @@ function valid(d){
  return d&&typeof d.t==="string"&&d.t.length<=500&&
  (d.g==null||(Array.isArray(d.g)&&d.g.length<=GEO.length&&d.g.every(function(v){return GEO.includes(v)})))&&
  Number.isFinite(Number(d.y))&&
- Math.abs(Number(d.y))<=260000000&&cats.includes(d.c)&&
+ Math.abs(Number(d.y))<=550000000&&cats.includes(d.c)&&
  (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>=Number(d.y)&&Number(d.e)<=2031));
 }
 function loadLocal(){
@@ -89,7 +89,7 @@ function loadLocal(){
 }
 function enrich(d){
  if(d._computed)return d;
- var start=Number(d.y),end=d.e==null?NaN:Number(d.e),origin="explicit",ongoing=false;
+ var start=Number(d.y),end=d.e==null?NaN:Number(d.e),origin="explicit",ongoing=!!d.ongoing;
  if(!Number.isFinite(end)||end<=start){
   origin="";
   var txt=(d.c==="Filosofía"||d.c==="Literatura")?(d.d||"").split("·")[0]:(d.t||"");
@@ -120,6 +120,7 @@ function ey(d){return d._end==null?Number(d.e):d._end}
 function duration(d){return !d.children&&Number.isFinite(ey(d))&&ey(d)>sy(d)}
 function howLong(d){
  var n=ey(d)-sy(d);
+ if(n>=1000000)return (n/1000000).toLocaleString("es-ES",{maximumFractionDigits:1})+" millones de años";
  return n<1?Math.max(1,Math.round(n*12))+" meses":(Math.round(n*10)/10).toLocaleString("es-ES")+(Math.abs(n-1)<.001?" año":" años");
 }
 function displayName(d){
@@ -289,6 +290,11 @@ function wikiRenderArticle(d,root,page){
  $("note-kicker").textContent=d.c+" · Wikipedia";
  $("note-title").textContent=String(page.title||wikipediaSearchName(d));
  root.append(el("div",wikiDateLine(d),"note-date"));
+ if(d.c==="Eras geológicas"){
+  var dating=el("p","Fechas aproximadas actualizadas según la Comisión Internacional de Estratigrafía (versión 2026/06).","source-note");
+  wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Consultar la escala geológica oficial ↗","wiki-credit-link");
+  root.append(dating);
+ }
  var figure=page.thumbnail&&page.thumbnail.source;
  if(typeof figure==="string"&&/^https:\/\/upload\.wikimedia\.org\//i.test(figure)){
   var photo=el("img",null,"wiki-lead-image");
@@ -478,6 +484,108 @@ function setView(next){
 
 /* Every annual mark is real and exact; only the visible tick labels are
    mounted to keep the 500k-pixel continuous canvas responsive. */
+
+/* Compact overview navigation. Its six segments deliberately have equal width:
+   time scales differ by epoch, so a uniformly linear miniature would make
+   all of human history invisible. Mapping is strictly monotonic and invertible. */
+var miniDensityVersion=-1,miniDragging=false;
+function miniClamp(n,min,max){return Math.min(max,Math.max(min,n))}
+function miniRatio(year){
+ var n=Number(year);
+ for(var i=0;i<periods.length;i++){
+  var p=periods[i];
+  if(n<p.b||i===periods.length-1)
+   return (i+miniClamp((n-p.a)/(p.b-p.a),0,1))/periods.length;
+ }
+ return 1;
+}
+function miniYear(ratio){
+ var pos=miniClamp(Number(ratio)||0,0,1)*periods.length;
+ var i=Math.min(periods.length-1,Math.floor(pos)),p=periods[i];
+ return p.a+(pos-i)*(p.b-p.a);
+}
+function drawMiniEras(){
+ var container=$("history-minimap-eras");container.replaceChildren();
+ ["Profundo","Prehist.","Antig.","Media","Moderna","Actual"].forEach(function(label,i){
+  var era=el("span",label,"history-mini-era");
+  era.title=periods[i].k+" · "+yearText(periods[i].a)+" — "+yearText(periods[i].b);
+  container.append(era);
+ });
+}
+function drawMiniDensity(){
+ var grid=$("history-minimap-density");grid.replaceChildren();
+ var source=base.concat(custom),bins=new Array(144).fill(0);
+ source.forEach(function(d){
+  enrich(d);
+  var index=Math.min(bins.length-1,Math.max(0,Math.floor(miniRatio(sy(d))*bins.length)));
+  bins[index]++;
+ });
+ var top=Math.max(1,...bins);
+ bins.forEach(function(count,i){
+  if(!count)return;
+  var bar=el("span",null,"history-mini-density-bin");
+  bar.style.left=(i/bins.length*100)+"%";
+  bar.style.width=(100/bins.length)+"%";
+  bar.style.height=(3+17*Math.sqrt(count/top))+"px";
+  grid.append(bar);
+ });
+ miniDensityVersion=source.length;
+}
+function updateMinimap(){
+ if(viewMode!=="timeline")return;
+ var view=$("viewport"),track=$("history-minimap-track");
+ if(!track||!view)return;
+ if(miniDensityVersion!==base.length+custom.length)drawMiniDensity();
+ var w=track.clientWidth||290,vw=view.clientWidth||1400;
+ var l=miniRatio(yearAt(view.scrollLeft));
+ var r=miniRatio(yearAt(view.scrollLeft+vw));
+ var midYear=yearAt(view.scrollLeft+vw/2),mid=miniRatio(midYear);
+ var span=Math.max(6,(r-l)*w);
+ span=Math.min(w,span);
+ var left=miniClamp(mid*w-span/2,0,w-span);
+ var windowEl=$("history-minimap-window"),cursor=$("history-minimap-cursor");
+ windowEl.style.left=left+"px";windowEl.style.width=span+"px";
+ cursor.style.left=miniClamp(mid*w,1,w-1)+"px";
+ var era=periods.find(function(p){return midYear>=p.a&&midYear<p.b})||periods[periods.length-1];
+ $("history-minimap-now").textContent=era.k+" · "+yearText(midYear);
+ track.setAttribute("aria-valuenow",String(Math.round(mid*1000)));
+ track.setAttribute("aria-valuetext",era.k+" · "+yearText(midYear));
+}
+function initMinimap(){
+ drawMiniEras();
+ var track=$("history-minimap-track");
+ function navigate(e){
+  var rect=track.getBoundingClientRect();
+  var width=rect.width||track.clientWidth||290;
+  var ratio=miniClamp((e.clientX-rect.left)/width,0,1);
+  jumpToYear(miniYear(ratio));
+ }
+ track.addEventListener("pointerdown",function(e){
+  if(e.button!=null&&e.button!==0)return;
+  miniDragging=true;
+  if(typeof track.setPointerCapture==="function"){
+   try{track.setPointerCapture(e.pointerId)}catch(err){}
+  }
+  navigate(e);if(typeof e.preventDefault==="function")e.preventDefault();
+ });
+ track.addEventListener("pointermove",function(e){
+  if(!miniDragging)return;
+  navigate(e);if(typeof e.preventDefault==="function")e.preventDefault();
+ });
+ function endDrag(){miniDragging=false}
+ track.addEventListener("pointerup",endDrag);
+ track.addEventListener("pointercancel",endDrag);
+ track.addEventListener("lostpointercapture",endDrag);
+ track.addEventListener("keydown",function(e){
+  if(!["ArrowLeft","ArrowRight","Home","End"].includes(e.key))return;
+  var v=$("viewport"),current=miniRatio(yearAt(v.scrollLeft+(v.clientWidth||1400)/2));
+  var target=e.key==="Home"?0:e.key==="End"?1:miniClamp(current+(e.key==="ArrowRight"?.01:-.01),0,1);
+  jumpToYear(miniYear(target));
+  if(typeof e.preventDefault==="function")e.preventDefault();
+ });
+ updateMinimap();
+}
+
 function updateAnnualHeader(){
  if(viewMode!=="timeline"||!yearAxisLayer)return;
  var viewport=$("viewport"),pad=YEAR_PX*zoom*2;
@@ -604,10 +712,12 @@ function render(){
  });
  can.style.minHeight=(78+count*96)+"px";
  updateAnnualHeader();
+ updateMinimap();
 }
 function jumpToYear(year){
  var v=$("viewport");v.scrollLeft=axisX(year)-v.clientWidth/2;
  updateAnnualHeader();
+ updateMinimap();
  var next=eraAt(year);if(period.k!==next.k){period=next;periodUI()}
 }
 function setZoom(next){
@@ -615,7 +725,7 @@ function setZoom(next){
  zoom=Math.max(1,Math.min(8,next));render();jumpToYear(y);
 }
 function init(){
- periodUI();categoryUI();
+ periodUI();categoryUI();initMinimap();
  $("periods").addEventListener("change",function(e){
   var next=periods.find(function(p){return p.k===e.target.value});
   if(!next)return;
@@ -625,9 +735,9 @@ function init(){
  $("filters").addEventListener("change",function(e){
   if(e.target.value!=="Todas"&&!cats.includes(e.target.value))return;
   cat=e.target.value;categoryUI();render();
-  if(cat==="Historia bíblica"){
-   savedYear=-1700;
-   if(viewMode==="timeline")jumpToYear(-1700);
+  if(cat==="Historia bíblica"||cat==="Eras geológicas"){
+   savedYear=cat==="Eras geológicas"?-400000000:-1700;
+   if(viewMode==="timeline")jumpToYear(savedYear);
   }
  });
  $("continent").addEventListener("change",function(e){
@@ -660,7 +770,7 @@ function init(){
  });
  $("toggle-fullscreen").addEventListener("click",function(){
   setTimelineMaximized(!$("timeline-panel").classList.contains("is-maximized"));
-  updateAnnualHeader();
+  updateAnnualHeader();updateMinimap();
  });
  $("tab-timeline").addEventListener("click",function(){setView("timeline")});
  $("tab-columns").addEventListener("click",function(){setView("columns")});
@@ -689,9 +799,9 @@ function init(){
  vdrag.addEventListener("pointermove",function(e){if(!dragging)return;vdrag.scrollLeft=downScroll-(e.clientX-downX);e.preventDefault()});
  vdrag.addEventListener("pointerup",function(){dragging=false});
  vdrag.addEventListener("pointercancel",function(){dragging=false});
- if(typeof window!=="undefined")window.addEventListener("resize",updateAnnualHeader);
+ if(typeof window!=="undefined")window.addEventListener("resize",function(){updateAnnualHeader();updateMinimap()});
  $("viewport").addEventListener("scroll",function(){
-  updateAnnualHeader();
+  updateAnnualHeader();updateMinimap();
   var v=$("viewport"),p=eraAt(yearAt(v.scrollLeft+v.clientWidth/2));
   if(p.k!==period.k){period=p;periodUI()}
  });
