@@ -36,6 +36,8 @@ jobs:
         run: node scripts/test_telarana_3d.mjs
       - name: Validar biografías independientes y testimonios
         run: node scripts/test_telarana_person_bios.mjs
+      - name: Validar integración documental entre La Telaraña y Línea de la Historia
+        run: node scripts/test_telarana_timeline.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
@@ -57,6 +59,7 @@ jobs:
             cp "$site/index.html" "dist/$site/index.html"
           done
           cp linea-historia/data.json dist/linea-historia/data.json
+          cp linea-historia/estudios-telarana.json dist/linea-historia/estudios-telarana.json
           cp linea-historia/timeline-v4.js dist/linea-historia/timeline-v4.js
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp la-telarana/podcast-vaquero-150.js dist/la-telarana/podcast-vaquero-150.js
@@ -75,6 +78,7 @@ jobs:
           test -f dist/biblioteca-montecristo/infografias/index.json
           test -f dist/linea-historia/index.html
           test -f dist/linea-historia/data.json
+          test -s dist/linea-historia/estudios-telarana.json
           test -s dist/linea-historia/timeline-v4.js
           node --check dist/linea-historia/timeline-v4.js
           grep -q 'src="./timeline-v4.js"' dist/linea-historia/index.html
