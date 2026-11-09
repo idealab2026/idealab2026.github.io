@@ -3,8 +3,8 @@
   "kind": "idealab-montecristo",
   "channelId": "UC_Z6Sw20aaDQYg49671pzzg",
   "channelUrl": "https://www.youtube.com/channel/UC_Z6Sw20aaDQYg49671pzzg",
-  "source": "YouTube videos indexed via vidIQ on 2026-11-08; not a complete automatic playlist export",
-  "lastSynced": "2026-11-08",
+  "source": "YouTube public playlists; supplemented by initially verified vidIQ catalog",
+  "lastSynced": "2026-11-09",
   "books": [
     {
       "slug": "conde-montecristo",
@@ -471,6 +471,15 @@
           "date": "2026-10-15T16:06:38Z",
           "duration": "PT8M14S",
           "url": "https://www.youtube.com/watch?v=BSoTWtrNVPc"
+        },
+        {
+          "id": "wiDqdxhIaDo",
+          "number": 31,
+          "title": "El conde de Motecristo. Cap 31: Italia. Simbad el Marino",
+          "description": "",
+          "date": "",
+          "duration": null,
+          "url": "https://www.youtube.com/watch?v=wiDqdxhIaDo"
         }
       ],
       "amazonUrl": "https://www.amazon.es/s?i=stripbooks&k=El%20conde%20de%20Montecristo%20Alejandro%20Dumas"
