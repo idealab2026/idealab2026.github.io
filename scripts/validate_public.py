@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 import re, sys, json
 
 ROOT = Path(__file__).resolve().parents[1]
-required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json", "biblioteca-montecristo/infografias/index.json")
+required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json", "biblioteca-montecristo/infografias/index.json", "biblioteca-montecristo/progreso.html", "biblioteca-montecristo/progreso.js", "biblioteca-montecristo/progreso.json", "biblioteca-montecristo/progreso-corregidas.json")
 errors = [f"Missing public asset: {file}" for file in required if not (ROOT / file).is_file()]
 html = (ROOT / "index.html").read_text(encoding="utf-8") if (ROOT / "index.html").exists() else ""
 class Scanner(HTMLParser):
@@ -26,7 +26,7 @@ for link in scanner.links:
 for token in ("segundo-cerebro", "tfm", "tfg", "personal_mamg", "mamg97", "gmail.com", "cloudflare", "worker", "drive.google.com"):
     # Do not echo any matched private data in errors or action logs.
     if token in html.lower(): errors.append("Unapproved source identity marker detected")
-allowed_html = {"index.html", "linea-historia/index.html", "la-telarana/index.html", "biblioteca-montecristo/index.html"}
+allowed_html = {"index.html", "linea-historia/index.html", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/progreso.html"}
 found_html = {str(path.relative_to(ROOT)) for path in ROOT.rglob("*.html") if ".git" not in path.parts}
 if found_html != allowed_html: errors.append("Unexpected or missing HTML page in public distribution")
 if (ROOT / "data/traffic.json").exists():
