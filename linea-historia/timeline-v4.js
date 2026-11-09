@@ -75,7 +75,7 @@ function yearText(y){
  if(n>=1000000)return "hace aprox. "+(n/1000000).toLocaleString("es-ES",{maximumFractionDigits:1})+" millones de años";
  return y<0?Math.round(n).toLocaleString("es-ES")+" a. C.":String(Math.floor(y))+" d. C.";
 }
-var dateRe=/\b(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?\s*[-–—]\s*(\d{2,4})\s*((?:a|d)\.?\s*c\.?)?/i;
+var dateRe=/\b(\d{1,3}(?:[.,]\d{3})+|\d{2,4})\s*((?:a|d)\.?\s*c\.?)?\s*[-–—]\s*(\d{1,3}(?:[.,]\d{3})+|\d{2,4})\s*((?:a|d)\.?\s*c\.?)?/i;
 function valid(d){
  return d&&typeof d.t==="string"&&d.t.length<=500&&
  (d.g==null||(Array.isArray(d.g)&&d.g.length<=GEO.length&&d.g.every(function(v){return GEO.includes(v)})))&&
@@ -96,7 +96,7 @@ function enrich(d){
   if(d.c==="Cine"&&!/^[^()]+\(\s*\d{3,4}\s*[-–—]\s*\d{3,4}\s*\)\s*$/.test(txt))txt="";
   var match=dateRe.exec(txt),bc=/a\.?\s*c\.?/i,ad=/d\.?\s*c\.?/i;
   if(match){
-   var a=+match[1],b=+match[3],am=match[2]||"",bm=match[4]||"",anyBC=bc.test(am)||bc.test(bm);
+   var a=Number(match[1].replace(/[.,]/g,"")),b=Number(match[3].replace(/[.,]/g,"")),am=match[2]||"",bm=match[4]||"",anyBC=bc.test(am)||bc.test(bm);
    if(bc.test(am)||(anyBC&&!ad.test(am)))a=-a;
    if(bc.test(bm)||(anyBC&&!ad.test(bm)))b=-b;
    if(b>a&&b-a<=10000&&b<=2031&&Math.abs(Number(d.y)-a)<=Math.max(100,b-a+25)){
@@ -183,7 +183,7 @@ var wikiAliases={
  "ww i":"Primera Guerra Mundial","ww ii":"Segunda Guerra Mundial",
  "eeuu":"Estados Unidos","urs s":"Unión Soviética","urss":"Unión Soviética",
  "imperio romano":"Imperio romano","imperio britanico":"Imperio británico",
- "imperio otomano":"Imperio otomano","guerra del rif":"Guerra del Rif"
+ "imperio otomano":"Imperio otomano","imperio egipcio":"Antiguo Egipto","guerra del rif":"Guerra del Rif"
 };
 function wikiPlain(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim()}
 function wikipediaSearchName(d){
