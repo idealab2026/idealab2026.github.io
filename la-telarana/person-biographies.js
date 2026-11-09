@@ -119,6 +119,18 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "vf150-abdel-aziz-al-rantisi": {
       "lang": "en",
       "title": "Abdel Aziz al-Rantisi"
+    },
+    "ce26-pedro-banos": {
+      "lang": "es",
+      "title": "Pedro Baños"
+    },
+    "ce26-villarejo": {
+      "lang": "es",
+      "title": "José Manuel Villarejo"
+    },
+    "ce26-sanchez": {
+      "lang": "es",
+      "title": "Pedro Sánchez"
     }
   },
   "curated": {
@@ -203,6 +215,27 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.theguardian.com/world/2004/apr/17/israel3",
       "sourceTitle": "The Guardian · crónica contemporánea del 17/04/2004",
       "also": "https://jewishvirtuallibrary.org/jsource/biography/Rantissi.html",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-pedro-banos": {
+      "text": "Pedro Baños es coronel del Ejército de Tierra español en situación de reserva, diplomado de Estado Mayor y divulgador sobre geopolítica, inteligencia y seguridad. Entre sus destinos profesionales se cuentan la jefatura de Contrainteligencia del Cuerpo de Ejército Europeo, la enseñanza de Estrategia en el CESEDEN y tareas de análisis geopolítico del Ministerio de Defensa. Es escritor y presentador de «El Canal del Coronel». En la fuente 02 entrevista al excomisario José Manuel Villarejo para abordar la crisis de Ceuta, la relación con Marruecos y las controversias sobre los servicios de inteligencia, según la sinopsis editorial. No se dispone todavía de la transcripción para identificar sus preguntas o afirmaciones literales, ni sus minutos.",
+      "source": "https://bpeciudadreal.castillalamancha.es/noticias/pedro-banos-gracias-por-tu-visita-y-por-tu-ameno-dialogo-sobre-nuestra-encrucijada-mundial",
+      "sourceTitle": "Biblioteca Pública del Estado en Ciudad Real · trayectoria profesional de Pedro Baños",
+      "also": "https://zarza.com/podcasts/el-canal-del-coronel-7082028/episodio/elecciones-2026-el-escandalo-que-podria-sacudir-espana/",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-villarejo": {
+      "text": "José Manuel Villarejo es un excomisario de la Policía Nacional española, conocido por su relación con distintas investigaciones judiciales de la denominada Operación Tándem, dividida en múltiples piezas sobre encargos y actuaciones profesionales. La situación procesal de cada pieza y sus recursos debe comprobarse por separado; los procedimientos abiertos no autorizan a atribuirle todas las acusaciones publicadas. La fuente 02 lo identifica como invitado de Pedro Baños para conversar sobre la crisis de Ceuta de julio de 2026, la seguridad nacional, el CNI, Marruecos, el narcotráfico y posibles filtraciones. Estas últimas se presentan como hipótesis o alegaciones del programa, no como actuaciones ilegales demostradas. Sin transcripción no es posible atribuir frases concretas a Villarejo ni reconstruir sus argumentos por minuto.",
+      "source": "https://www.rtve.es/temas/jose-manuel-villarejo/121230/",
+      "sourceTitle": "RTVE Noticias · seguimiento documentado de José Manuel Villarejo",
+      "also": "https://zarza.com/podcasts/el-canal-del-coronel-7082028/episodio/elecciones-2026-el-escandalo-que-podria-sacudir-espana/",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-sanchez": {
+      "text": "Pedro Sánchez Pérez-Castejón (Madrid, 1972) es economista, doctor en Economía y político español. Es secretario general del PSOE y presidente del Gobierno desde junio de 2018. Anteriormente fue concejal en Madrid y diputado en el Congreso. En relación con la fuente 02, la referencia documental verificada es institucional: el 3 de septiembre de 2026 se comprometió ante el Congreso a publicar informes y comunicaciones sobre la crisis de Ceuta, que La Moncloa hizo públicos el día 9. La sinopsis aborda consecuencias políticas de la crisis, pero no permite atribuir a Sánchez ninguna intervención personal en operaciones clandestinas ni demostrar chantajes, filtraciones o responsabilidades delictivas sin pruebas específicas.",
+      "source": "https://www.lamoncloa.gob.es/presidente/biografia/Paginas/index.aspx",
+      "sourceTitle": "La Moncloa · biografía oficial de Pedro Sánchez",
+      "also": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
       "reviewedAt": "2026-11-09"
     }
   }
