@@ -11,12 +11,14 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import fcntl
 import json
 import os
 import re
 import shutil
 import subprocess
 import sys
+from contextlib import contextmanager
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,6 +30,7 @@ OWNER = "idealab2026"
 HOME = Path.home()
 CONFIG_PATH = HOME / ".config/idea-lab/notebooklm-bridge.json"
 STATE_PATH = HOME / ".local/state/idea-lab/notebooklm-bridge.json"
+LOCK_PATH = HOME / ".local/state/idea-lab/notebooklm-bridge.lock"
 PENDING = HOME / "Pictures/IDEA-LAB/NotebookLM/Pendientes"
 MARK = "IDEA_LAB_NLM_REQUEST_V1"
 REQ = re.compile(r"<!-- " + MARK + r"\s*\n(\{[^\n]*\})\s*\n-->", re.ASCII)
@@ -66,6 +69,30 @@ def save_json(path: Path, value):
         stream.write("\n")
     os.chmod(tmp, 0o600)
     tmp.replace(path)
+
+
+@contextmanager
+def exclusive_state_lock():
+    """Serialize Mac LaunchAgent and manual CLI invocations across processes.
+
+    Holding the OS lock across NotebookLM creation and GitHub comments prevents
+    two pollers from independently starting requests using a stale JSON state.
+    """
+    LOCK_PATH.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
+    fd = os.open(LOCK_PATH, os.O_RDWR | os.O_CREAT, 0o600)
+    held = False
+    try:
+        try:
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            held = True
+        except BlockingIOError:
+            yield False
+            return
+        yield True
+    finally:
+        if held:
+            fcntl.flock(fd, fcntl.LOCK_UN)
+        os.close(fd)
 
 
 def private_config():
@@ -261,12 +288,71 @@ def next_requests(state, config):
             yield number, req
 
 
+def submitted_comment_exists(number):
+    """Fail closed on network errors rather than launching an existing request."""
+    raw = command(["gh", "api",
+                   f"repos/{REPO}/issues/{int(number)}/comments?per_page=100"])
+    comments = json.loads(raw)
+    if not isinstance(comments, list):
+        raise RuntimeError("Respuesta de comentarios de GitHub no verificable.")
+    return any(
+        isinstance(c, dict) and
+        (c.get("user") or {}).get("login", "").lower() == OWNER and
+        str(c.get("body") or "").startswith(
+            "Solicitud enviada a NotebookLM desde el Mac de IDEA LAB.")
+        for c in comments)
+
+
+def quarantine_existing_request(number, req, state, config):
+    """Acknowledge a remote submission with missing local state, never replay it."""
+    mapping = select_mapping(config, req)
+    if mapping is None:
+        raise ValueError("Sin mapeo privado no se puede conciliar esta solicitud.")
+    notebook, sources = mapping
+    if not submitted_comment_exists(number):
+        raise ValueError("No hay evidencia pública de que ya se haya enviado a NotebookLM.")
+    if number in state:
+        raise ValueError("La solicitud ya está registrada en el estado local.")
+    state[number] = {
+        "request": req, "phase": "deferred", "notebook": notebook,
+        "source_ids": sources, "before": [],
+        "reason": "remote_submission_without_local_state",
+        "deferred_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+    }
+    save_json(STATE_PATH, state)
+    print("Solicitud #", number, "EN CUARENTENA: GitHub confirma el envío,",
+          "pero faltaba registro local. No se ha creado una nueva infografía.")
+    print("Requiere identificar manualmente su artefacto antes de liberar ese cuaderno.")
+
+
+def quarantine_remote(args):
+    check_identity()
+    state = load_json(STATE_PATH, {})
+    number = str(args.issue)
+    if number in state:
+        raise ValueError("La solicitud ya existe en el estado local.")
+    matching = [
+        issue for issue in github_issues() if str(issue.get("number")) == number
+    ]
+    if len(matching) != 1:
+        raise ValueError("La incidencia pública no se encontró inequívocamente.")
+    req = parse_request(matching[0])
+    if not req:
+        raise ValueError("La incidencia no tiene una solicitud IDEA LAB válida.")
+    quarantine_existing_request(number, req, state, private_config())
+
+
 def request_new(number, req, state, config):
     mapping = select_mapping(config, req)
     if mapping is None:
         print("Pendiente de mapear las fuentes de la solicitud #", number)
         return False
     notebook, sources = mapping
+    # Another invocation may have launched this issue before its state was
+    # persisted. A trusted public submission comment is evidence against retry.
+    if submitted_comment_exists(number):
+        quarantine_existing_request(number, req, state, config)
+        return True
     # Snapshot before starting avoids confusing an older graphic with the new one.
     before = [artifact_id(x) for x in infographic_rows(notebook)]
     job = {"request": req, "phase": "launching", "before": before,
@@ -474,6 +560,8 @@ def main():
     d = sub.add_parser("defer-uncertain", help="Aplazar una solicitud incierta sin repetirla y liberar la cola")
     d.add_argument("--issue", type=int, required=True)
     d.add_argument("--confirm-no-artifact", action="store_true")
+    qr = sub.add_parser("quarantine-remote", help="Evitar relanzar una solicitud ya enviada cuyo estado local falta")
+    qr.add_argument("--issue", type=int, required=True)
     att = sub.add_parser("attach", help="Vincular manualmente un artefacto inequívoco si hay varios")
     att.add_argument("--issue", type=int, required=True)
     att.add_argument("--artifact-id", required=True)
@@ -481,6 +569,17 @@ def main():
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
     args = parser.parse_args()
+    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish"}
+    if args.command in mutating:
+        with exclusive_state_lock() as acquired:
+            if not acquired:
+                print("Otro proceso NotebookLM está ejecutando una operación. No se inicia una segunda.")
+                return 0
+            return execute_command(args)
+    return execute_command(args)
+
+
+def execute_command(args):
     try:
         if args.command == "init":
             enroll()
@@ -502,6 +601,8 @@ def main():
             attach_artifact(args)
         elif args.command == "defer-uncertain":
             defer_uncertain(args)
+        elif args.command == "quarantine-remote":
+            quarantine_remote(args)
         elif args.command == "publish":
             publish(args)
     except (RuntimeError, ValueError, OSError, subprocess.TimeoutExpired) as err:
