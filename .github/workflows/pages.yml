@@ -77,6 +77,7 @@ jobs:
           cp la-telarana/podcast-coronel-villarejo-2026-revision.js dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           cp la-telarana/podcast-coronel-elecciones-2026-preliminar.js dist/la-telarana/podcast-coronel-elecciones-2026-preliminar.js
           cp la-telarana/podcast-coronel-elecciones-2026-transcript-review.js dist/la-telarana/podcast-coronel-elecciones-2026-transcript-review.js
+          cp la-telarana/podcast-vaquero-145-editorial.js dist/la-telarana/podcast-vaquero-145-editorial.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
@@ -111,6 +112,9 @@ jobs:
           test -s dist/la-telarana/podcast-coronel-elecciones-2026-transcript-review.js
           node --check dist/la-telarana/podcast-coronel-elecciones-2026-transcript-review.js
           grep -q "IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW" dist/la-telarana/index.html
+          test -s dist/la-telarana/podcast-vaquero-145-editorial.js
+          node --check dist/la-telarana/podcast-vaquero-145-editorial.js
+          grep -q 'IDEA_TELARANA_SOURCE03_EDITORIAL' dist/la-telarana/index.html
           grep -q "v2-exhaustiva-20261109" dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           grep -q "IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO" dist/la-telarana/podcast-coronel-villarejo-2026.js
           test -s dist/la-telarana/photo-catalog.js
