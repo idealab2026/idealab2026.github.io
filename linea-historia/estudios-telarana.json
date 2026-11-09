@@ -419,6 +419,65 @@
       }
     },
     {
+      "id": "study-v2-ceuta-seguridad-nacional-2026",
+      "y": 2026.6465753424657,
+      "t": "España declara situación de interés para la Seguridad Nacional en Ceuta",
+      "c": "Actualidad",
+      "s": "Investigación IDEA LAB · contexto documental externo para fuente 02 (entrevista sin transcripción)",
+      "d": "El Gobierno aprobó el Real Decreto 681/2026, de 25 de agosto, declarando la situación de interés para la Seguridad Nacional en la ciudad de Ceuta tras la crisis migratoria de los días 30 y 31 de julio. La disposición fue publicada en el BOE de 26 de agosto y surtió efectos desde esa fecha, estableciendo una coordinación reforzada de recursos del Estado. Esta declaración es una medida administrativa legalmente documentada, no prueba de que se conociera por anticipado la escala de la crisis ni de la autoría de su organización.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2026-08-25",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceTitle": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA · contextualización",
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "BOE · Real Decreto 681/2026 de 25 de agosto (BOE-A-2026-18149)",
+          "url": "https://www.boe.es/eli/es/rd/2026/08/25/681/con"
+        },
+        "relatedTelarana": [
+          "ce26-espana-gobierno",
+          "ce26-ceuta-crisis",
+          "ce26-interior",
+          "ce26-defensa"
+        ],
+        "methodologicalLimits": "La norma demuestra una decisión de respuesta estatal posterior a la entrada masiva. No acredita por sí sola el relato causal del podcast ni permite inferir coordinación clandestina de autoridades o servicios de inteligencia."
+      }
+    },
+    {
+      "id": "study-v2-ceuta-plan-choque-2026",
+      "y": 2026.6657534246576,
+      "t": "El Gobierno aprueba un plan de choque de 309 millones de euros para Ceuta",
+      "c": "Actualidad",
+      "s": "Investigación IDEA LAB · contexto documental externo para fuente 02 (entrevista sin transcripción)",
+      "d": "El Consejo de Ministros anunció el 1 de septiembre de 2026 un Real Decreto-ley de medidas urgentes para responder a las consecuencias de la crisis de Ceuta. El plan prevé movilizar 309 millones de euros durante los últimos cuatro meses del año, distribuidos en servicios esenciales (21 millones), seguridad (90 millones), acogida humanitaria (118 millones) y apoyo a empresas y trabajadores (80 millones). La cuantía es compromiso de movilización y no equivale a gasto efectivamente ejecutado. La decisión se documenta en una fuente gubernamental independiente de la entrevista.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2026-09-01",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceTitle": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA · contextualización",
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "La Moncloa · Consejo de Ministros, 01/09/2026, plan de 309 millones",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/010926-rueda-prensa-ministros.aspx"
+        },
+        "relatedTelarana": [
+          "ce26-espana-gobierno",
+          "ce26-ceuta-crisis",
+          "ce26-sanchez"
+        ],
+        "methodologicalLimits": "Las cifras proceden de la aprobación pública de medidas y no de una auditoría de su ejecución presupuestaria. No atribuir al episodio afirmaciones sobre estos importes mientras falte la transcripción."
+      }
+    },
+    {
       "id": "study-v2-ceuta-publicacion-2026",
       "y": 2026.6876712328767,
       "t": "Publicación de 40 informes oficiales sobre la crisis de Ceuta",
