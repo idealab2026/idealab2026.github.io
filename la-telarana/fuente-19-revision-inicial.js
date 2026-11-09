@@ -1,4 +1,4 @@
-/* Fuente 19: menciones textuales y clasificación probatoria, NO hechos ilícitos acreditados. */
+/* Capa inicial; las participaciones editoriales no certifican las interpretaciones del episodio. */
 window.IDEA_TELARANA_F19_REVIEW = {
   "metadata": {
     "id": "idealab-f19-source",
@@ -210,6 +210,29 @@ window.IDEA_TELARANA_F19_REVIEW = {
       ],
       "x": 8735,
       "y": 2895
+    },
+    {
+      "id": "f19-memorias",
+      "name": "Memorias de Pez",
+      "kind": "Canal",
+      "subtitle": "Proyecto divulgativo de historia y geopolítica",
+      "note": "Participación anunciada expresamente en el título del episodio; no se identifica por su nombre civil sin desambiguación.",
+      "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 8200,
+      "y": 1500,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f19-source",
+          "title": "Mesa de análisis · China y nuevo orden mundial",
+          "publishedAt": "",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+          "status": "resumen-editorial",
+          "text": "Participación anunciada expresamente en el título del episodio; no se identifica por su nombre civil sin desambiguación."
+        }
+      ]
     }
   ],
   "edges": [
@@ -386,6 +409,28 @@ window.IDEA_TELARANA_F19_REVIEW = {
           "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
           "status": "resumen-editorial",
           "text": "Mención localizada aproximadamente en 0% del texto automático, sin minuto ni hablante validado. Actor central en rivalidad comercial y política."
+        }
+      ]
+    },
+    {
+      "id": "f19-editorial-f19-memorias",
+      "a": "f19-episodio",
+      "b": "f19-memorias",
+      "type": "Participante anunciado por título del episodio",
+      "confidence": "documentado",
+      "note": "Participación anunciada expresamente en el título del episodio; no se identifica por su nombre civil sin desambiguación.",
+      "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+      "episodeId": "idealab-f19-source",
+      "claimStatus": "identificacion_editorial",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f19-source",
+          "title": "Mesa de análisis · China y nuevo orden mundial",
+          "publishedAt": "",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+          "status": "resumen-editorial",
+          "text": "Participación anunciada expresamente en el título del episodio; no se identifica por su nombre civil sin desambiguación."
         }
       ]
     }
