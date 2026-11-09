@@ -537,46 +537,88 @@ function wikiAppendText(container,raw){
 function wikiImageNotice(root,term){
  if(root.querySelector&&root.querySelector(".wiki-image-empty"))return;
  var notice=el("div",null,"wiki-image-empty");
- notice.append(el("span","Wikipedia no dispone de una imagen libre identificada para esta entrada."));
+ notice.append(el("span","No se ha podido recuperar una imagen verificable desde los servicios de Wikimedia para esta ficha."));
  wikiExternalLink(notice,
   "https://commons.wikimedia.org/w/index.php?search="+encodeURIComponent(term)+"&title=Special:MediaSearch&type=image",
-  "Buscar imágenes en Wikimedia Commons ↗","wiki-credit-link");
+  "Explorar las fotografías de Wikimedia Commons ↗","wiki-credit-link");
  root.append(notice);
 }
 function wikiRenderImage(root,page,requestId,signal){
- var image=page._resolvedImage||wikiPicture(page);
- if(!image){wikiImageNotice(root,page.title);return}
+ // Do not hide the encyclopaedia text while remote image services are queried.
+ var candidates=[],seen=new Set(),index=0,current=null,rescueStarted=false;
  var fig=el("figure",null,"wiki-figure");
+ var status=el("div","Comprobando imagen de Wikipedia…","wiki-image-status");
  var photo=el("img",null,"wiki-lead-image");
- photo.alt="Imagen asociada al artículo de Wikipedia: "+page.title;
+ photo.alt="Imagen vinculada al artículo: "+page.title;
  photo.loading="lazy";photo.decoding="async";photo.referrerPolicy="no-referrer";
+ photo.style.display="none";
  var caption=el("figcaption",null,"wiki-image-caption");
  caption.append(el("span","Imagen: Wikimedia Commons"));
  var credit=null;
- function setImage(p){
+ fig.append(status,photo,caption);root.append(fig);
+ function active(){
+  return requestId===wikiRequestVersion&&!$("note-layer").classList.contains("hide");
+ }
+ function add(candidate){
+  if(!candidate||!wikiPhotoURLValid(candidate.source))return;
+  if(seen.has(candidate.source))return;
+  seen.add(candidate.source);candidates.push(candidate);
+ }
+ function attribution(p){
   if(credit){credit.remove();credit=null}
   if(p.file){
-   credit=wikiExternalLink(caption,
-    (p.sourceKind==="pageimages"?"https://es.wikipedia.org/wiki/Archivo:":"https://commons.wikimedia.org/wiki/File:")+
-      encodeURIComponent(p.file.replace(/ /g,"_")),
-    "Ver archivo, autoría y licencia ↗","wiki-credit-link");
+   var label="Ver archivo, autoría y licencia ↗";
+   var prefix=p.sourceKind==="pageimages"?
+     "https://es.wikipedia.org/wiki/Archivo:":
+     "https://commons.wikimedia.org/wiki/File:";
+   credit=wikiExternalLink(caption,prefix+encodeURIComponent(p.file.replace(/ /g,"_")),
+     label,"wiki-credit-link");
+  }else{
+   credit=wikiExternalLink(caption,wikiArticleURL(page.title),
+     "Origen de la imagen ↗","wiki-credit-link");
   }
-  photo.src=p.source;
  }
- photo.onerror=function(){
-  if(page._imageFallbackAttempted){fig.remove();wikiImageNotice(root,page.title);return}
-  page._imageFallbackAttempted=true;
-  wikiFetchWikidataImage(page,signal).then(function(p){
-   if(requestId!==wikiRequestVersion||$("note-layer").classList.contains("hide"))return;
-   if(p&&p.source!==photo.src){page._resolvedImage=p;setImage(p)}
-   else{fig.remove();wikiImageNotice(root,page.title)}
-  }).catch(function(err){
-   if(err.name==="AbortError"||requestId!==wikiRequestVersion)return;
-   fig.remove();wikiImageNotice(root,page.title);
+ function fail(){
+  if(!active())return;
+  fig.remove();
+  wikiImageNotice(root,page.title);
+ }
+ function recover(){
+  if(rescueStarted){fail();return}
+  rescueStarted=true;
+  status.textContent="Buscando una imagen alternativa en Wikidata y Wikipedia…";
+  Promise.allSettled([
+   wikiFetchWikidataImage(page,signal),
+   wikiFetchSummaryImage(page,signal)
+  ]).then(function(results){
+   if(!active())return;
+   results.forEach(function(r){if(r.status==="fulfilled")add(r.value)});
+   next();
   });
+ }
+ function next(){
+  if(!active())return;
+  if(index>=candidates.length){recover();return}
+  current=candidates[index++];
+  status.textContent="Cargando imagen…";
+  photo.style.display="none";
+  attribution(current);
+  photo.src=current.source;
+ }
+ photo.onload=function(){
+  if(!active())return;
+  status.remove();photo.style.display="block";
+  page._resolvedImage=current;
  };
- fig.append(photo,caption);root.append(fig);
- setImage(image);
+ photo.onerror=function(){
+  if(!active())return;
+  next();
+ };
+ add(page._resolvedImage);
+ add(wikiPicture(page));
+ add(wikiPagePropsPhoto(page));
+ add(wikiKnownPhoto(page));
+ next();
 }
 function wikiRenderArticle(d,root,page,requestId,signal){
  root.replaceChildren();
@@ -641,10 +683,8 @@ async function wikiLoadArticle(d,root,term,requestId,signal){
     return;
    }
    page=result.page;
-   if(!wikiPicture(page)){
-    try{page._resolvedImage=await wikiFetchWikidataImage(page,signal)}
-    catch(error){if(error.name==="AbortError")throw error}
-   }
+   // Resolve pictures asynchronously in the drawer: the article text should
+   // never wait for a Wikidata or Commons photo service.
    if(wikiCache.size>=80)wikiCache.delete(wikiCache.keys().next().value);
    wikiCache.set(cacheKey,page);
   }
