@@ -696,7 +696,52 @@ async function wikiLoadArticle(d,root,term,requestId,signal){
   wikiFallback(d,root,term,"Wikipedia no ha podido responder correctamente: "+err.message);
  }
 }
+/* La ficha documental prevalece sobre búsquedas automáticas de Wikipedia. */
+function documentedLink(parent,href,label){
+ try{
+  var u=new URL(href,location.href);if(u.protocol!=="https:")return;
+  var a=el("a",label,"research-link");
+  a.href=u.href;a.target="_blank";a.rel="noopener noreferrer";
+  parent.append(a);
+ }catch(e){}
+}
+function studyDate(date,precision){
+ var v=String(date||"");
+ if(!/^\d{4}-\d{2}(?:-\d{2})?$/.test(v))return"Fecha por verificar";
+ var p=v.split("-").map(Number);
+ var options=precision==="mes"?{month:"long",year:"numeric",timeZone:"UTC"}:{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"};
+ return new Intl.DateTimeFormat("es",options).format(new Date(Date.UTC(p[0],p[1]-1,p[2]||1)));
+}
+function showStudyNote(d){
+ stopWikiRequest();
+ var info=d.investigation||{},root=$("note-body");
+ $("note-kicker").textContent="Estudio documental · IDEA LAB";
+ $("note-title").textContent=displayName(d);
+ root.replaceChildren();
+ root.append(el("div",studyDate(info.date,info.datePrecision),"note-date"));
+ root.append(el("div","Hecho documentado con contraste externo","research-evidence"));
+ root.append(el("h3","Qué ocurrió","wiki-section-title"));
+ root.append(el("p",d.d||"Sin descripción documental.","source-note"));
+ root.append(el("h3","Fuente de contraste","wiki-section-title"));
+ var proof=el("div",null,"research-sources");
+ if(info.confirmedBy&&info.confirmedBy.url)documentedLink(proof,info.confirmedBy.url,info.confirmedBy.label||"Consultar fuente de contraste");
+ root.append(proof);
+ root.append(el("h3","Referencia en La Telaraña","wiki-section-title"));
+ root.append(el("p","Estudio de la fuente "+(info.sourceOrder||"?")+"/33. El testimonio no sustituye a la documentación del hecho.","source-note"));
+ var contextual=el("div",null,"research-sources");
+ if(info.sourceUrl)documentedLink(contextual,info.sourceUrl,"Consultar el episodio");
+ if(Array.isArray(info.relatedTelarana)&&info.relatedTelarana.length){
+  documentedLink(contextual,"https://idealab2026.github.io/la-telarana/?entidad="+encodeURIComponent(info.relatedTelarana[0]),"Ver protagonista y relaciones en La Telaraña");
+ }
+ root.append(contextual);
+ if(info.methodologicalLimits){
+  root.append(el("h3","Límites de la evidencia","wiki-section-title"));
+  root.append(el("p",info.methodologicalLimits,"research-limits"));
+ }
+ wikiOpenDrawer();
+}
 function showNote(d){
+ if(d&&d.investigation){showStudyNote(d);return}
  stopWikiRequest();
  var root=$("note-body"),term=wikipediaSearchName(d);
  $("note-kicker").textContent=d.c+" · Wikipedia";
