@@ -179,24 +179,129 @@ function periodUI(){
 }
 
 var lastCardFocus=null,wikiRequestVersion=0,wikiAbort=null,wikiCache=new Map();
+/* Deterministic aliases for source-sheet abbreviations, legacy names and
+   titles that do not match a canonical encyclopaedia entry. */
 var wikiAliases={
- "ww i":"Primera Guerra Mundial","ww ii":"Segunda Guerra Mundial",
- "eeuu":"Estados Unidos","urs s":"Unión Soviética","urss":"Unión Soviética",
+ "ww i":"Primera Guerra Mundial","wwii":"Segunda Guerra Mundial",
+ "ww ii":"Segunda Guerra Mundial","eeuu":"Estados Unidos",
+ "urs s":"Unión Soviética","urss":"Unión Soviética",
  "imperio romano":"Imperio romano","imperio britanico":"Imperio británico",
- "imperio otomano":"Imperio otomano","imperio egipcio":"Antiguo Egipto","guerra del rif":"Guerra del Rif"
+ "imperio otomano":"Imperio otomano","imperio egipcio":"Antiguo Egipto",
+ "imperio persa":"Imperio aqueménida","imperio asirio":"Imperio asirio",
+ "imperio hitita":"Imperio hitita","imperio mongol":"Imperio mongol",
+ "imperio carolingio":"Imperio carolingio","imperio neerlandes":"Imperio neerlandés",
+ "guerra del rif":"Guerra del Rif","minoicos":"Civilización minoica",
+ "sumerios":"Sumeria","acadios":"Imperio acadio","olmecas":"Cultura olmeca",
+ "aztecas":"Imperio azteca","reconquista":"Reconquista",
+ "tartesos":"Tartessos","ii republica espanola":"Segunda República española",
+ "i rep":"Primera República española","republica romana":"República romana",
+ "republica china":"República de China",
+ "dinastia song":"Dinastía Song","dinastia qing":"Dinastía Qing",
+ "dinastia ming":"Dinastía Ming","dinastia han":"Dinastía Han",
+ "dinastia tang":"Dinastía Tang","dinastia qin":"Dinastía Qin",
+ "era glaciacion":"Glaciación","younger dryas":"Dryas Reciente",
+ "gautama buddha":"Buda Gautama","mahatma ghandi":"Mahatma Gandhi",
+ "margaret tatcher":"Margaret Thatcher","wolfang amadeus mozart":"Wolfgang Amadeus Mozart",
+ "soren kierkegaard":"Søren Kierkegaard",
+ "jesucristo":"Jesús de Nazaret","rey mebaragesi":"Enmebaragesi",
+ "sargon i de acad":"Sargón de Acad","naram sin":"Naram-Sin de Acad",
+ "bjor n piel de hierro":"Björn Ragnarsson","almanzor":"Almanzor",
+ "ragnar lothbrok":"Ragnar Lodbrok",
+ "gengis kan":"Gengis Kan","kublai kan":"Kublai Kan",
+ "ii republica":"Segunda República española",
+ "batalla de verdun":"Batalla de Verdún",
+ "descubrimiento de america":"Descubrimiento de América",
+ "cristianismo se hace religion oficial en el imperio romano":"Edicto de Tesalónica",
+ "invencion de la imprenta":"Imprenta",
+ "invencion de la rueda":"Rueda",
+ "invencion de la escritura":"Escritura",
+ "invencion de la polvora en china":"Pólvora"
 };
-function wikiPlain(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim()}
+var wikiById={
+ "c-3-74":"2001: una odisea del espacio","c-3-81":"Barry Lyndon",
+ "c-3-85":"Apocalypse Now","c-3-88":"Blade Runner",
+ "c-5-85":"Arrebato (película)","c-7-85":"Alien, el octavo pasajero",
+ "c-10-49":"Iván Zulueta","c-12-34":"Jacques Rivette",
+ "c-14-38":"François Truffaut","c-16-34":"Stanley Kubrick",
+ "c-18-43":"Ridley Scott",
+ "l-4":"Poema de Gilgamesh","l-6":"Poema de Gilgamesh",
+ "l-7":"Enuma Elish","l-8":"Rigveda",
+ "l-9":"Shijing","l-16":"Orestíada",
+ "l-17":"Edipo rey","l-18":"Historias (Heródoto)",
+ "l-22":"De la naturaleza de las cosas","l-23":"Eneida",
+ "l-24":"Las metamorfosis","l-26":"El asno de oro",
+ "l-29":"Beowulf","l-31":"Genji Monogatari",
+ "l-33":"Divina comedia","l-34":"Decamerón",
+ "l-35":"Canzoniere","l-36":"Los cuentos de Canterbury",
+ "l-37":"La Celestina","l-38":"Orlando furioso",
+ "l-39":"Utopía (libro)","l-41":"Lazarillo de Tormes",
+ "h-SB40":"Guerra del Rif",
+ "h-CZ30":"Antiguo Egipto",
+ "h-SI20":"Dictadura de Primo de Rivera",
+ "h-SP14":"Dictablanda de Dámaso Berenguer",
+ "h-SQ20":"Segunda República española",
+ "h-OG27":"Primera cruzada",
+ "h-NB35":"Reconquista",
+ "h-PW21":"Guerra de Granada",
+ "h-QA30":"Conquista de México",
+ "h-SD21":"Revolución de Octubre","h-JQ25":"Primera guerra púnica",
+ "h-JW25":"Segunda guerra púnica","h-IU34":"República romana",
+ "h-JR35":"Guerras púnicas","p-2":"Pedro (apóstol)"
+};
+function wikiPlain(s){
+ return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es")
+  .replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();
+}
+function wikiStripDates(raw){
+ var s=String(raw||"").trim().replace(/\u00a0/g," ");
+ // Correct an Excel concatenation such as «Nicolás II1868 - 1918».
+ s=s.replace(/([IVX])(?=\d{4}\s*[-–—]\s*\d{4}\s*$)/g,"$1 ");
+ // Film title / director / film year: keep only the named work.
+ s=s.replace(/\s*\(\s*\d{4}\s*\)\s*[-–—]\s*.+$/,"");
+ // Standalone film-year and person-life suffixes.
+ s=s.replace(/\s*\(\s*\d{1,4}\s*[-–—]\s*(?:\d{1,4})?\s*\)\s*$/,"");
+ s=s.replace(/\s*\(\s*\d{4}\s*\)\s*$/,"");
+ s=s.replace(/\s*\(\s*\d{1,4}\s*(?:[ad]\.\s*c\.?|[ad]\.c\.?)\s*\)\s*$/i,"");
+ s=s.replace(/\s*\(\s*\d{2,4}\s*(?:[ad]\.\s*c\.?|[ad]\.c\.?)\s*[-–—]\s*\d{2,4}\s*(?:[ad]\.\s*c\.?|[ad]\.c\.?)\s*\)\s*$/i,"");
+ // YYYY a. C. — YYYY d. C., with optional thousands separators.
+ s=s.replace(/\s+\b\d{1,3}(?:[.,]\d{3})+\s*(?:[ad]\.?\s*c\.?)?\s*[-–—]\s*\d{1,3}(?:[.,]\d{3})*\s*(?:[ad]\.?\s*c\.?)?.*$/i,"");
+ s=s.replace(/\s+\b\d{2,4}\s*(?:[ad]\.?\s*c\.?)?\s*[-–—]\s*(?:\d{1,4}\s*(?:[ad]\.?\s*c\.?)?|ACT|actualidad|presente)\s*(?:\([^)]*\)|\.?\s*)$/i,"");
+ // A single event date at the end, or an introductory «Año 64 -».
+ s=s.replace(/\s*\(\s*\d{3,4}\s*\)\s*$/,"").replace(/\s+(?:\d{2,4})\s*(?:[ad]\.?\s*c\.?)?\s*$/i,"");
+ s=s.replace(/^(?:Año\s+)?\d{2,4}\s*[-–—]\s*/i,"");
+ return s.replace(/\s+\(\s*\d+\s*años?\s*\)\s*$/i,"").replace(/\s*[-–—]\s*$/,"").trim();
+}
 function wikipediaSearchName(d){
- var raw=String(displayName(d)||d.t||"").trim();
- // Strip Excel chronology suffixes, which do not belong to article titles.
- raw=raw.replace(/\s*\(\s*\d{3,4}\s*[-–—]\s*(?:\d{2,4}|ACT)\s*\)\s*$/i,"");
- raw=raw.replace(/\s+\b\d{1,4}\s*(?:a\.?\s*c\.?|d\.?\s*c\.?)?\s*[-–—]\s*(?:\d{1,4}\s*(?:a\.?\s*c\.?|d\.?\s*c\.?)?|ACT|actualidad)\s*$/i,"");
- raw=raw.replace(/\s*\(\s*\d{3,4}\s*\)\s*[-–—]\s*.+$/i,"");
- raw=raw.replace(/\s*\(\s*\d{3,4}\s*\)\s*$/i,"");
- raw=raw.trim().replace(/\s+[-–—]\s*$/,"");
- var canonical=wikiPlain(raw);
- if(wikiAliases[canonical])return wikiAliases[canonical];
+ var raw=wikiStripDates(d.t);
+ if(wikiById[d.id])return wikiById[d.id];
+ if(d.c==="Pontífices"){
+  raw=raw.replace(/^S\.\s*/i,"").replace(/\s*\([^)]*\)\s*/g," ").replace(/\s+/g," ").trim();
+  // Pontiff names are often shared with monarchs, saints and ordinary people.
+  return raw+" (papa)";
+ }
+ var key=wikiPlain(raw);
+ if(wikiAliases[key])return wikiAliases[key];
  return raw||d.t;
+}
+function wikiCandidates(d){
+ var main=wikipediaSearchName(d),a=[main];
+ var clean=wikiStripDates(d.t),name=wikiPlain(clean);
+ if(d.c==="Pontífices"){
+  var pope=main.replace(/\s+\(papa\)$/i,"");
+  a.push("papa "+pope,pope);
+ }else{
+  a.push(clean);
+  if(d.c==="Cine"&&clean.includes(","))a.push(clean.split(",")[0]);
+  if(d.c==="Personajes"&&name.includes(" de "))a.push(clean.replace(/\s+de\s+.+$/i,""));
+ }
+ if(wikiAliases[name])a.unshift(wikiAliases[name]);
+ return Array.from(new Set(a.filter(function(t){return typeof t==="string"&&t.trim()&&t.length<=180}))).slice(0,4);
+}
+function wikiIsComposite(d){
+ // Do not silently substitute the article for just one of multiple events.
+ if(d.c==="Actualidad")return /[;]|\b(?:y|mientras|además)\b/i.test(d.t)&&d.t.split(/\s*[;]\s*|\s+\by\b\s+/i).length>1;
+ if(d.c==="Literatura")return /\s+(?:y|\/)\s+/i.test(d.t)&&!wikiById[d.id];
+ return false;
 }
 function wikiSearchURL(term){return "https://es.wikipedia.org/w/index.php?search="+encodeURIComponent(term)}
 function wikiArticleURL(title){return "https://es.wikipedia.org/wiki/"+encodeURIComponent(String(title).replace(/ /g,"_"))}
@@ -204,36 +309,139 @@ function wikiExternalLink(parent,href,label,cls){
  var a=el("a",label,cls||"note-wiki");
  a.href=href;a.target="_blank";a.rel="noopener noreferrer";a.referrerPolicy="no-referrer";parent.append(a);return a;
 }
-function wikiAPI(params,signal){
- var uri=new URL("https://es.wikipedia.org/w/api.php");
+
+function wikiAPIOn(endpoint,params,signal){
+ var uri=new URL(endpoint);
  uri.searchParams.set("format","json");uri.searchParams.set("formatversion","2");
  uri.searchParams.set("origin","*");
  Object.keys(params).forEach(function(k){uri.searchParams.set(k,String(params[k]))});
  return fetch(uri.toString(),{signal:signal,credentials:"omit"}).then(function(r){
-  if(!r.ok)throw Error("Wikipedia ha respondido con "+r.status);
+  if(!r.ok)throw Error("La API de Wikimedia ha respondido con "+r.status);
   return r.json();
+ }).then(function(body){
+  if(body&&body.error)throw Error(body.error.info||body.error.code||"Error de la API de Wikimedia");
+  return body;
  });
 }
+function wikiAPI(params,signal){
+ return wikiAPIOn("https://es.wikipedia.org/w/api.php",params,signal);
+}
+function wikiTokens(s){
+ var stop=new Set(["de","del","la","el","los","las","y","en","un","una","por","para","con","al","s","san","santa"]);
+ return wikiPlain(s).split(" ").filter(function(w){return w&&!stop.has(w)});
+}
 function wikiMatchTitle(d,result,query){
- var target=wikiPlain(query);
- if(!target||!Array.isArray(result)||!result.length)return null;
- var perfect=result.find(function(x){return wikiPlain(x.title)===target});
- if(perfect)return perfect.title;
- if(d.c==="Cine"||d.c==="Literatura"){
-  var related=result.find(function(x){return wikiPlain(x.title).startsWith(target+" ")&&/\(/.test(x.title)});
-  if(related&&target.split(" ").length===1)return related.title;
+ if(!Array.isArray(result)||!result.length)return null;
+ var target=wikiPlain(query),qt=wikiTokens(query);
+ var exact=result.find(function(p){return wikiPlain(p.title)===target});
+ if(exact)return exact.title;
+ if(qt.length<2)return null;
+ var candidates=result.map(function(item){
+  var name=wikiPlain(item.title),wt=wikiTokens(item.title);
+  var overlap=qt.filter(function(w){return wt.includes(w)}).length;
+  var recall=overlap/qt.length,precision=overlap/Math.max(1,wt.length);
+  var score=recall*.78+precision*.22;
+  var pape=/\bpapa\b/.test(name),film=/\bpelicula\b/.test(name);
+  if(d.c==="Pontífices"&&!pape)score-=.12;
+  if(d.c==="Cine"&&!film&&/\(.*\)/.test(item.title))score-=.04;
+  if(name.startsWith(target+" "))score+=.04;
+  return {title:item.title,score:score};
+ }).sort(function(x,y){return y.score-x.score});
+ // Never automatically substitute a weak or ambiguous result.
+ return candidates[0].score>=.87 &&
+  (candidates.length<2 || candidates[0].score-candidates[1].score>=.06)
+  ?candidates[0].title:null;
+}
+function wikiArticleTitleFromLink(raw){
+ if(typeof raw!=="string")return null;
+ var m=/^https:\/\/es\.wikipedia\.org\/wiki\/([^?# ]+)$/i.exec(raw);
+ if(!m)return null;
+ try{return decodeURIComponent(m[1]).replace(/_/g," ")}catch(e){return null}
+}
+function wikiIsValidArticle(page){
+ return !!(page&&!page.missing&&page.ns===0&&
+  !("disambiguation" in (page.pageprops||{}))&&
+  typeof page.extract==="string"&&page.extract.trim().length>0);
+}
+async function wikiFetchArticle(title,signal){
+ var response=await wikiAPI({
+  action:"query",prop:"extracts|pageimages|pageprops",
+  titles:title,redirects:1,explaintext:1,exsectionformat:"wiki",
+  piprop:"thumbnail|name",pithumbsize:680,pilicense:"free",
+  ppprop:"disambiguation|wikibase_item"
+ },signal);
+ var pages=response.query&&response.query.pages||[];
+ return pages.find(wikiIsValidArticle)||null;
+}
+async function wikiFindArticle(d,signal){
+ var direct=wikiArticleTitleFromLink(d.w),names=wikiCandidates(d);
+ var candidateTitles=direct?[direct].concat(names):names;
+ var attempted=new Set(),suggestions=[];
+ if(wikiIsComposite(d)){
+  return {
+   page:null,suggestions:[],term:names[0],kind:"composite",
+   searchParts:d.t.split(/\s*;\s*|\s+\by\b\s+/i)
+     .map(function(p){return wikiStripDates(p).trim()})
+     .filter(function(p){return p.length>=4}).slice(0,4)
+  };
  }
- var q=target.split(" ").filter(function(x){return x.length>2});
- if(!q.length)return null;
- var best=null,score=0;
- result.forEach(function(item){
-  var title=wikiPlain(item.title),words=title.split(" ");
-  var matched=q.filter(function(w){return words.includes(w)}).length;
-  var coverage=matched/q.length,precision=matched/Math.max(q.length,words.length);
-  var strength=coverage*.75+precision*.25;
-  if(strength>score){score=strength;best=item}
+ // A known article title is queried before a broad full-text search.
+ // One failed candidate is fine, but avoid dozens of sequential API calls.
+ for(var i=0;i<Math.min(candidateTitles.length,d.c==="Pontífices"?2:2);i++){
+  var title=candidateTitles[i];
+  if(attempted.has(wikiPlain(title)))continue;
+  attempted.add(wikiPlain(title));
+  var page=await wikiFetchArticle(title,signal);
+  if(page)return {page:page,term:names[0],kind:"exact"};
+ }
+ for(var k=0;k<Math.min(2,names.length);k++){
+  var term=names[k];
+  var results=await wikiAPI({
+   action:"query",list:"search",srsearch:term,
+   srnamespace:0,srlimit:8,srprop:"",utf8:1
+  },signal);
+  var choices=results.query&&results.query.search||[];
+  choices.forEach(function(choice){
+   if(!suggestions.some(function(x){return wikiPlain(x)===wikiPlain(choice.title)}))
+    suggestions.push(choice.title);
+  });
+  var title=wikiMatchTitle(d,choices,term);
+  if(title){
+   var matched=await wikiFetchArticle(title,signal);
+   if(matched)return {page:matched,term:term,kind:"search"};
+  }
+ }
+ return {page:null,term:names[0],suggestions:suggestions.slice(0,5),kind:"unmatched"};
+}
+async function wikiFetchWikidataImage(page,signal){
+ var item=page.pageprops&&page.pageprops.wikibase_item;
+ if(!/^Q\d+$/.test(String(item||"")))return null;
+ var response=await wikiAPIOn("https://www.wikidata.org/w/api.php",{
+  action:"wbgetentities",ids:item,props:"claims"
+ },signal);
+ var e=response.entities&&response.entities[item];
+ var values=e&&e.claims&&e.claims.P18||[];
+ var image=values.find(function(x){
+  return x.mainsnak&&x.mainsnak.datavalue&&typeof x.mainsnak.datavalue.value==="string";
  });
- return score>=.76&&q.length>=2?best.title:null;
+ if(!image)return null;
+ var file=image.mainsnak.datavalue.value;
+ if(file.length>250||!/\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file))return null;
+ var data=await wikiAPIOn("https://commons.wikimedia.org/w/api.php",{
+  action:"query",titles:"File:"+file,prop:"imageinfo",
+  iiprop:"url|mime",iiurlwidth:680
+ },signal);
+ var imagePage=data.query&&data.query.pages&&data.query.pages[0];
+ var info=imagePage&&imagePage.imageinfo&&imagePage.imageinfo[0];
+ var url=info&&(info.thumburl||info.url);
+ if(!/^https:\/\/upload\.wikimedia\.org\//.test(String(url||""))||
+  !/^image\/(?:jpeg|png|webp|gif|svg\+xml)$/i.test(String(info.mime||"")))return null;
+ return {source:url,file:file,sourceKind:"wikidata"};
+}
+function wikiPicture(page){
+ var thumb=page.thumbnail&&page.thumbnail.source;
+ return /^https:\/\/upload\.wikimedia\.org\//.test(String(thumb||""))
+  ?{source:thumb,file:page.pageimage||null,sourceKind:"pageimages"}:null;
 }
 function stopWikiRequest(){
  wikiRequestVersion++;
@@ -285,73 +493,126 @@ function wikiAppendText(container,raw){
  });
  flush();
 }
-function wikiRenderArticle(d,root,page){
+
+function wikiImageNotice(root,term){
+ if(root.querySelector&&root.querySelector(".wiki-image-empty"))return;
+ var notice=el("div",null,"wiki-image-empty");
+ notice.append(el("span","Wikipedia no dispone de una imagen libre identificada para esta entrada."));
+ wikiExternalLink(notice,
+  "https://commons.wikimedia.org/w/index.php?search="+encodeURIComponent(term)+"&title=Special:MediaSearch&type=image",
+  "Buscar imágenes en Wikimedia Commons ↗","wiki-credit-link");
+ root.append(notice);
+}
+function wikiRenderImage(root,page,requestId,signal){
+ var image=page._resolvedImage||wikiPicture(page);
+ if(!image){wikiImageNotice(root,page.title);return}
+ var fig=el("figure",null,"wiki-figure");
+ var photo=el("img",null,"wiki-lead-image");
+ photo.alt="Imagen asociada al artículo de Wikipedia: "+page.title;
+ photo.loading="lazy";photo.decoding="async";photo.referrerPolicy="no-referrer";
+ var caption=el("figcaption",null,"wiki-image-caption");
+ caption.append(el("span","Imagen: Wikimedia Commons"));
+ var credit=null;
+ function setImage(p){
+  if(credit){credit.remove();credit=null}
+  if(p.file){
+   credit=wikiExternalLink(caption,
+    (p.sourceKind==="pageimages"?"https://es.wikipedia.org/wiki/Archivo:":"https://commons.wikimedia.org/wiki/File:")+
+      encodeURIComponent(p.file.replace(/ /g,"_")),
+    "Ver archivo, autoría y licencia ↗","wiki-credit-link");
+  }
+  photo.src=p.source;
+ }
+ photo.onerror=function(){
+  if(page._imageFallbackAttempted){fig.remove();wikiImageNotice(root,page.title);return}
+  page._imageFallbackAttempted=true;
+  wikiFetchWikidataImage(page,signal).then(function(p){
+   if(requestId!==wikiRequestVersion||$("note-layer").classList.contains("hide"))return;
+   if(p&&p.source!==photo.src){page._resolvedImage=p;setImage(p)}
+   else{fig.remove();wikiImageNotice(root,page.title)}
+  }).catch(function(err){
+   if(err.name==="AbortError"||requestId!==wikiRequestVersion)return;
+   fig.remove();wikiImageNotice(root,page.title);
+  });
+ };
+ fig.append(photo,caption);root.append(fig);
+ setImage(image);
+}
+function wikiRenderArticle(d,root,page,requestId,signal){
  root.replaceChildren();
  $("note-kicker").textContent=d.c+" · Wikipedia";
  $("note-title").textContent=String(page.title||wikipediaSearchName(d));
  root.append(el("div",wikiDateLine(d),"note-date"));
  if(d.c==="Eras geológicas"){
-  var dating=el("p","Fechas aproximadas actualizadas según la Comisión Internacional de Estratigrafía (versión 2026/06).","source-note");
-  wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Consultar la escala geológica oficial ↗","wiki-credit-link");
+  var dating=el("p","Fechas aproximadas según la Comisión Internacional de Estratigrafía.","source-note");
+  wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Escala geológica oficial ↗","wiki-credit-link");
   root.append(dating);
  }
- var figure=page.thumbnail&&page.thumbnail.source;
- if(typeof figure==="string"&&/^https:\/\/upload\.wikimedia\.org\//i.test(figure)){
-  var photo=el("img",null,"wiki-lead-image");
-  photo.src=figure;photo.alt="Imagen del artículo "+page.title;photo.loading="lazy";
-  photo.referrerPolicy="no-referrer";
-  photo.onerror=function(){photo.remove()};
-  root.append(photo);
-  if(typeof page.pageimage==="string"&&page.pageimage.length<300){
-   var credit=el("p",null,"wiki-image-credit");
-   wikiExternalLink(credit,"https://commons.wikimedia.org/wiki/File:"+encodeURIComponent(page.pageimage.replace(/ /g,"_")),"Autoría y licencia de la imagen ↗","wiki-credit-link");
-   root.append(credit);
-  }
- }
+ // The lead image must belong to the resolved article, not an image-search guess.
+ wikiRenderImage(root,page,requestId,signal);
  var text=el("article",null,"wiki-article");
  wikiAppendText(text,page.extract);
  root.append(text);
- var actualURL=wikiArticleURL(page.title);
  var links=el("div",null,"wiki-actions");
- wikiExternalLink(links,actualURL,"Abrir artículo original ↗");
+ wikiExternalLink(links,wikiArticleURL(page.title),"Abrir artículo original ↗");
  root.append(links);
  wikiFooter(root,page.title);
- if(d.isTraditional)root.append(el("p","Las fechas bíblicas de la cronología proceden del archivo original y no constituyen dataciones históricas demostradas.","note-warning"));
+ if(d.isTraditional)root.append(el("p","Las fechas bíblicas del Excel no son dataciones históricas demostradas.","note-warning"));
 }
-function wikiFallback(d,root,term,reason){
+function wikiFallback(d,root,term,reason,suggestions,searchParts){
  if($("note-layer").classList.contains("hide"))return;
- $("note-kicker").textContent=d.c+" · Wikipedia";
+ $("note-kicker").textContent=d.c+" · búsqueda";
  $("note-title").textContent=displayName(d);
  root.replaceChildren();
  root.append(el("div",wikiDateLine(d),"note-date"));
- root.append(el("p",reason||"No se ha encontrado un artículo de Wikipedia suficientemente coincidente con este registro.","wiki-error"));
- if(d.d)root.append(el("p","Nota original: "+d.d,"source-note"));
- wikiExternalLink(root,wikiSearchURL(term),"Buscar este registro en Wikipedia ↗");
+ var message=String(reason||"No se ha encontrado un artículo suficientemente coincidente.");
+ root.append(el("p",message,"wiki-error"));
+ if(d.d)root.append(el("p","Información del archivo: "+d.d,"source-note"));
+ if(Array.isArray(searchParts)&&searchParts.length>1){
+  root.append(el("h3","Buscar cada acontecimiento por separado","wiki-section-title"));
+  var events=el("div",null,"wiki-suggestions");
+  searchParts.forEach(function(part){
+   wikiExternalLink(events,wikiSearchURL(part),part+" ↗","wiki-suggestion");
+  });
+  root.append(events);
+ }
+ if(Array.isArray(suggestions)&&suggestions.length){
+  root.append(el("h3","Posibles artículos relacionados","wiki-section-title"));
+  var list=el("div",null,"wiki-suggestions");
+  suggestions.slice(0,5).forEach(function(title){
+   wikiExternalLink(list,wikiArticleURL(title),title+" ↗","wiki-suggestion");
+  });
+  root.append(list);
+ }
+ wikiExternalLink(root,wikiSearchURL(term),"Buscar en Wikipedia ↗");
 }
 async function wikiLoadArticle(d,root,term,requestId,signal){
- var cacheKey=d.w||term;
+ var cacheKey=d.w||d.id||term;
  try{
   var page=wikiCache.get(cacheKey);
   if(!page){
-   var title=null;
-   if(typeof d.w==="string"&&/^https:\/\/es\.wikipedia\.org\/wiki\/[^?# ]+$/i.test(d.w)){
-    title=decodeURIComponent(d.w.split("/wiki/")[1]).replace(/_/g," ");
-   }else{
-    var results=await wikiAPI({action:"query",list:"search",srsearch:term,srnamespace:0,srlimit:6,srprop:"",utf8:1},signal);
-    title=wikiMatchTitle(d,results.query&&results.query.search,term);
+   var result=await wikiFindArticle(d,signal);
+   if(!result.page){
+    if(requestId!==wikiRequestVersion)return;
+    var reason=result.kind==="composite"?
+     "Este registro incluye varios acontecimientos u obras: no sería correcto atribuirle un solo artículo.":
+     "No se ha identificado de forma fiable un artículo único. Puedes consultar las páginas relacionadas.";
+    wikiFallback(d,root,result.term||term,reason,result.suggestions||[],result.searchParts||[]);
+    return;
    }
-   if(!title)throw Error("No se ha encontrado una coincidencia fiable. Para evitar atribuir un artículo incorrecto, utiliza la búsqueda en Wikipedia.");
-   var details=await wikiAPI({action:"query",prop:"extracts|pageimages",titles:title,redirects:1,explaintext:1,exsectionformat:"wiki",piprop:"thumbnail|name",pithumbsize:600},signal);
-   page=details.query&&details.query.pages&&details.query.pages[0];
-   if(!page||page.missing||!page.extract||!String(page.extract).trim())throw Error("No hay texto disponible de este artículo mediante la API de Wikipedia.");
-   if(wikiCache.size>=50)wikiCache.delete(wikiCache.keys().next().value);
+   page=result.page;
+   if(!wikiPicture(page)){
+    try{page._resolvedImage=await wikiFetchWikidataImage(page,signal)}
+    catch(error){if(error.name==="AbortError")throw error}
+   }
+   if(wikiCache.size>=80)wikiCache.delete(wikiCache.keys().next().value);
    wikiCache.set(cacheKey,page);
   }
   if(requestId!==wikiRequestVersion||$("note-layer").classList.contains("hide"))return;
-  wikiRenderArticle(d,root,page);
+  wikiRenderArticle(d,root,page,requestId,signal);
  }catch(err){
   if(requestId!==wikiRequestVersion||err.name==="AbortError")return;
-  wikiFallback(d,root,term,"No se ha podido mostrar el artículo: "+err.message);
+  wikiFallback(d,root,term,"Wikipedia no ha podido responder correctamente: "+err.message);
  }
 }
 function showNote(d){
