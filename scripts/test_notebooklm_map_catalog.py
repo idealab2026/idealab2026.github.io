@@ -84,11 +84,11 @@ class MapCatalogTests(unittest.TestCase):
                 self.assertEqual(m.chapter_key("esto-no-existe", video),
                                  m.chapter_key("esto-no-existe", pdf, source=True))
         episodes = [{"id": f"vid-{i}", "title": vid} for i, (vid, _) in enumerate(pairs)]
-        sources = [{"id": f"src-{i}", "title": pdf} for i, (_, pdf) in enumerate(pairs)]
+        sources = [{"id": f"sourceid{i:05d}", "title": pdf} for i, (_, pdf) in enumerate(pairs)]
         mapped = m.candidate_sources("esto-no-existe", episodes, sources)
         self.assertEqual(len(mapped), 10)
         for i in range(10):
-            self.assertEqual(mapped[f"vid-{i}"], f"src-{i}")
+            self.assertEqual(mapped[f"vid-{i}"], f"sourceid{i:05d}")
         self.assertIsNone(m.chapter_key("esto-no-existe", "IV V - DOCUMENTO.pdf", source=True))
 
     def test_real_utopia_pdfs_and_second_book_word_order(self):
