@@ -219,8 +219,9 @@ body.graph-expanded{overflow:hidden}
 <script src="./source05-psoe-map-context.js?v=20261109-source05-1"></script>
 <script src="./podcast-wild-253-villarejo.js?v=20261109-source06-full-transcript"></script>
 <script src="./podcast-wild-312-chicote.js?v=20261109-source07-1"></script>
-<script src="./photo-catalog.js?v=20261109-source07-1"></script>
-<script src="./person-biographies.js?v=20261109-source07-bios"></script>
+<script src="./podcast-vaquero-67-villarejo.js?v=20261109-source08-1"></script>
+<script src="./photo-catalog.js?v=20261109-source08-1"></script>
+<script src="./person-biographies.js?v=20261109-source08-bios"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261109-orbe2-zoom"></script>
 <script>
@@ -392,6 +393,10 @@ function load(){
  if(window.IDEA_TELARANA_SOURCE07_PODCAST){
   mergeNewEpisode(window.IDEA_TELARANA_SOURCE07_PODCAST);
  }
+ // Fuente 08: solo metadatos del episodio y un contraste judicial independiente, sin transcripción.
+ if(window.IDEA_TELARANA_SOURCE08_EDITORIAL){
+  mergeNewEpisode(window.IDEA_TELARANA_SOURCE08_EDITORIAL);
+ }
  seedError=!data.nodes.length;
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
@@ -524,7 +529,7 @@ function youtubeTimeLabel(sec){
 function podcastSourceLink(parent,url,title){
  var parsed;try{parsed=new URL(String(url||""))}catch(e){return}
  if(parsed.protocol!=="https:")return;
- var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com","jewishvirtuallibrary.org","www.jewishvirtuallibrary.org","www.everycrsreport.com","everycrsreport.com","ecfr.eu","www.ecfr.eu","www.cfr.org","cfr.org","www.un.org","un.org","www.theguardian.com","theguardian.com","podcasts.happyscribe.com","podcasts.apple.com","docs.google.com","jordiwild.com","www.jordiwild.com","web.gencat.cat","www.parlament.cat","metacast.app","www.history.navy.mil","www.congreso.es","congreso.es","investigacionapi.com","books.apple.com","es.wikipedia.org"];
+ var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com","jewishvirtuallibrary.org","www.jewishvirtuallibrary.org","www.everycrsreport.com","everycrsreport.com","ecfr.eu","www.ecfr.eu","www.cfr.org","cfr.org","www.un.org","un.org","www.theguardian.com","theguardian.com","podcasts.happyscribe.com","podcasts.apple.com","docs.google.com","jordiwild.com","www.jordiwild.com","web.gencat.cat","www.parlament.cat","metacast.app","www.history.navy.mil","www.congreso.es","congreso.es","investigacionapi.com","books.apple.com","es.wikipedia.org","www.poderjudicial.es","poderjudicial.es","www.ivoox.com","ivoox.com"];
  if(!hosts.includes(parsed.hostname)&&!["zarza.com","www.zarza.com","newtral.es","www.newtral.es"].includes(parsed.hostname))return;
  var link=N("a",title||"Consultar fuente");link.href=parsed.href;link.target="_blank";link.rel="noopener noreferrer";link.className="podcast-link";parent.append(link)
 }
