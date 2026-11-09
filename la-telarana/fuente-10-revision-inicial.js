@@ -1,4 +1,4 @@
-/* Fuente 10: solo entidades citadas en la transcripción; no establecer causalidades sin pruebas. */
+/* Capa inicial; las participaciones editoriales no certifican las interpretaciones del episodio. */
 window.IDEA_TELARANA_F10_REVIEW = {
   "metadata": {
     "id": "idealab-f10-source",
@@ -141,6 +141,29 @@ window.IDEA_TELARANA_F10_REVIEW = {
       ],
       "x": 9420,
       "y": 1400
+    },
+    {
+      "id": "f10-banos",
+      "name": "Pedro Baños",
+      "kind": "Persona",
+      "subtitle": "Coronel retirado; presentador del Canal del Coronel",
+      "note": "Identificado como presentador por la identidad editorial del canal. La transcripción automática no reproduce siempre su nombre literalmente; se consigna participación editorial y no una cita concreta.",
+      "source": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
+      "topic3d": "espana",
+      "photo": "",
+      "x": 8200,
+      "y": 1500,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f10-source",
+          "title": "La historia oculta de España · Juan Manuel de Prada",
+          "publishedAt": "",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
+          "status": "resumen-editorial",
+          "text": "Identificado como presentador por la identidad editorial del canal. La transcripción automática no reproduce siempre su nombre literalmente; se consigna participación editorial y no una cita concreta."
+        }
+      ]
     }
   ],
   "edges": [
@@ -251,6 +274,28 @@ window.IDEA_TELARANA_F10_REVIEW = {
           "source": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
           "status": "resumen-editorial",
           "text": "Mención localizada aproximadamente en el 6% del texto ASR; no equivale a minuto ni a verificación del relato. Mencionado al comentar guerra europea; las valoraciones son del entrevistado."
+        }
+      ]
+    },
+    {
+      "id": "f10-editorial-f10-banos",
+      "a": "f10-episodio",
+      "b": "f10-banos",
+      "type": "Presenta o conduce el episodio (atribución editorial)",
+      "confidence": "documentado",
+      "note": "Identificado como presentador por la identidad editorial del canal. La transcripción automática no reproduce siempre su nombre literalmente; se consigna participación editorial y no una cita concreta.",
+      "source": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
+      "episodeId": "idealab-f10-source",
+      "claimStatus": "identificacion_editorial",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f10-source",
+          "title": "La historia oculta de España · Juan Manuel de Prada",
+          "publishedAt": "",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
+          "status": "resumen-editorial",
+          "text": "Identificado como presentador por la identidad editorial del canal. La transcripción automática no reproduce siempre su nombre literalmente; se consigna participación editorial y no una cita concreta."
         }
       ]
     }
