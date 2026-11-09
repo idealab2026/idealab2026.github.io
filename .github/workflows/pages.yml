@@ -107,6 +107,10 @@ jobs:
           test -s dist/la-telarana/graph-3d.js
           node --check dist/la-telarana/graph-3d.js
           grep -q 'src="./graph-3d.js' dist/la-telarana/index.html
+          mkdir -p dist/icsa
+          cp icsa/index.html icsa/privacidad.html dist/icsa/
+          test -s dist/icsa/index.html
+          test -s dist/icsa/privacidad.html
           test -f dist/biblioteca-montecristo/index.html
           test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 6
           test -f dist/data/traffic.json
