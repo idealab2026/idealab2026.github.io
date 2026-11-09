@@ -213,6 +213,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-coronel-villarejo-2026.js?v=20261109-2"></script>
 <script src="./podcast-coronel-villarejo-2026-revision.js?v=20261109-4"></script>
 <script src="./podcast-coronel-elecciones-2026-preliminar.js?v=20261109-1"></script>
+<script src="./podcast-coronel-elecciones-2026-transcript-review.js?v=20261109-1"></script>
 <script src="./photo-catalog.js?v=20261109-3"></script>
 <script src="./person-biographies.js?v=20261109-4"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
@@ -227,7 +228,7 @@ var S=function(tag,attr){var e=document.createElementNS(NS,tag);Object.keys(attr
 function sanitizePodcastNotes(value){
  if(!Array.isArray(value))return[];
  return value.filter(function(n){return n&&typeof n.text==="string"&&n.episodeId}).slice(0,45).map(function(n){
-  return {episodeId:String(n.episodeId).slice(0,120),title:String(n.title||"Podcast").slice(0,180),publishedAt:String(n.publishedAt||"").slice(0,30),timeSec:Math.max(0,Number(n.timeSec)||0),source:String(n.source||"").slice(0,600),status:String(n.status||"relato").slice(0,50),text:String(n.text||"").slice(0,2500)}
+  return {episodeId:String(n.episodeId).slice(0,120),title:String(n.title||"Podcast").slice(0,180),publishedAt:String(n.publishedAt||"").slice(0,30),timeSec:n.timeSec===null||n.timeSec===undefined?null:Math.max(0,Number(n.timeSec)||0),source:String(n.source||"").slice(0,600),status:String(n.status||"relato").slice(0,50),text:String(n.text||"").slice(0,2500)}
  })
 }
 function appendPodcastNotes(target,entries){
@@ -305,7 +306,7 @@ function mergeNewEpisode(v){
    var norm=normalizeEntityName(e.type);
    // Preferir conservar el vínculo que se parece más al del episodio.
    var matched=existing.find(function(x){return normalizeEntityName(x.type)===norm})||existing[0];
-   newNotes+=appendPodcastNotes(matched,e.podcastNotes||[{episodeId:v.metadata.id,title:v.metadata.title,publishedAt:v.metadata.publishedAt,timeSec:0,text:e.note,source:e.source,status:e.claimStatus||"alegacion"}]);
+   newNotes+=appendPodcastNotes(matched,e.podcastNotes||[{episodeId:v.metadata.id,title:v.metadata.title,publishedAt:v.metadata.publishedAt,timeSec:null,text:e.note,source:e.source,status:e.claimStatus||"alegacion"}]);
    if(!Array.isArray(matched.relatedTypes))matched.relatedTypes=[];
    if(norm!==normalizeEntityName(matched.type)&&!matched.relatedTypes.includes(e.type)){
     matched.relatedTypes.push(String(e.type).slice(0,140));
@@ -361,6 +362,10 @@ function load(){
  }
  if(window.IDEA_TELARANA_EPISODE_CEUTA_2026){
   mergeNewEpisode(window.IDEA_TELARANA_EPISODE_CEUTA_2026);
+ }
+ // Análisis derivado del texto completo: todas las alegaciones no corroboradas permanecen como hipótesis.
+ if(window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW){
+  mergeNewEpisode(window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW);
  }
  seedError=!data.nodes.length;
 }
@@ -625,7 +630,7 @@ function showPodcastNotes(panel,notes,heading){
   entry.append(title);
   if(["rumor","alegacion","incierto","fuente-externa","contradiccion","verificacion-externa","resumen-editorial"].includes(note.status))entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad pendiente de cotejo":note.status==="fuente-externa"?"Documento externo (no es la transcripción)":note.status==="resumen-editorial"?"Sinopsis editorial; sin minuto verificado":note.status==="contradiccion"?"Contraste documental: discrepancia":note.status==="verificacion-externa"?"Datos y límites contrastados":"Alegación sin verificación independiente","rumour"));
   entry.append(N("p",note.text||""));
-  podcastSourceLink(entry,note.source,note.status==="resumen-editorial"?"Consultar sinopsis del episodio":["fuente-externa","contradiccion","verificacion-externa"].includes(note.status)?"Consultar documentación externa":"Escuchar en "+youtubeTimeLabel(note.timeSec));
+  podcastSourceLink(entry,note.source,note.status==="resumen-editorial"?"Consultar sinopsis del episodio":["fuente-externa","contradiccion","verificacion-externa"].includes(note.status)?"Consultar documentación externa":note.timeSec===null?"Escuchar episodio · minuto no verificado":"Escuchar en "+youtubeTimeLabel(note.timeSec));
   section.append(entry)
  });
  panel.append(section)
