@@ -421,5 +421,41 @@ window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS={
   "twp253-pequeno-nicolas": {
     "lang": "es",
     "title": "Pequeño Nicolás"
+  },
+  "twp312-javier-chicote": {
+    "lang": "es",
+    "title": "Javier Chicote"
+  },
+  "twp312-luis-roldan": {
+    "lang": "es",
+    "title": "Luis Roldán"
+  },
+  "twp312-miguel-bernad": {
+    "lang": "es",
+    "title": "Miguel Bernad"
+  },
+  "twp312-luis-pineda": {
+    "lang": "es",
+    "title": "Luis Pineda"
+  },
+  "twp312-francisco-correa": {
+    "lang": "es",
+    "title": "Francisco Correa"
+  },
+  "twp312-jose-luis-abalos": {
+    "lang": "es",
+    "title": "José Luis Ábalos"
+  },
+  "twp312-delcy-rodriguez": {
+    "lang": "es",
+    "title": "Delcy Rodríguez"
+  },
+  "twp312-begona-gomez": {
+    "lang": "es",
+    "title": "Begoña Gómez"
+  },
+  "twp312-victor-aldama": {
+    "lang": "es",
+    "title": "Víctor de Aldama"
   }
 };
