@@ -104,7 +104,7 @@ function showSnapshot(data,reason){
   '<p><strong>Consulta del '+escape(data.observationDate)+'</strong> · '+escape(data.period)+'. Esta es una instantánea histórica, <strong>no son las visitas actuales ni acumuladas</strong>.</p>'+
   '<div class="stat-snapshot-cards">'+items+'</div>'+
   '<p class="stat-source">Fuente: captura del panel de Cloudflare Web Analytics. '+escape(reason)+
-  ' La actualización automática todavía no está autorizada.</p></div>';
+  ' Nunca se publican cifras actuales sin verificarlas.</p></div>';
 }
 async function notReady(reason){
  try{
@@ -124,6 +124,8 @@ if(root){
   .then(d=>{
     const rows=checkData(d);
     if(rows)draw(rows,7,"visits",d);
+    else if(d&&d.status==="unavailable")
+      void notReady("La extracción automática no ha podido verificarse en esta publicación.");
     else void notReady("Pendiente de conexión con el proveedor.");
   }).catch(()=>void notReady("No se pudo consultar la exportación automática."));
 }
