@@ -49,6 +49,8 @@ jobs:
         run: node scripts/test_telarana_source03.mjs
       - name: Validar fuente 04 · antecedentes históricos y enlaces documentales
         run: node scripts/test_telarana_source04.mjs
+      - name: Validar procedencia y cautelas de fuente 05 · mapa político
+        run: node scripts/test_telarana_source05.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
@@ -83,6 +85,7 @@ jobs:
           cp la-telarana/podcast-coronel-elecciones-2026-transcript-review.js dist/la-telarana/podcast-coronel-elecciones-2026-transcript-review.js
           cp la-telarana/podcast-vaquero-145-editorial.js dist/la-telarana/podcast-vaquero-145-editorial.js
           cp la-telarana/podcast-duque-lerma-historia.js dist/la-telarana/podcast-duque-lerma-historia.js
+          cp la-telarana/source05-psoe-map-context.js dist/la-telarana/source05-psoe-map-context.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
@@ -123,6 +126,9 @@ jobs:
           test -s dist/la-telarana/podcast-duque-lerma-historia.js
           node --check dist/la-telarana/podcast-duque-lerma-historia.js
           grep -q 'IDEA_TELARANA_SOURCE04_HISTORICAL' dist/la-telarana/index.html
+          test -s dist/la-telarana/source05-psoe-map-context.js
+          node --check dist/la-telarana/source05-psoe-map-context.js
+          grep -q 'IDEA_TELARANA_SOURCE05_EDITORIAL' dist/la-telarana/index.html
           grep -q "v2-exhaustiva-20261109" dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           grep -q "IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO" dist/la-telarana/podcast-coronel-villarejo-2026.js
           test -s dist/la-telarana/photo-catalog.js
