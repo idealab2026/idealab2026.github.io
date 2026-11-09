@@ -1,13 +1,13 @@
 {
   "version": 1,
   "updatedAt": "2026-11-09",
-  "scope": "Seguimiento de 33 fuentes; inventario completo privado en Mac. Investigación complementaria sin orden confirmado contabilizada por separado.",
-  "total": 33,
+  "scope": "33 fuentes del inventario original, más 1 vídeo añadido expresamente por el usuario sin asignarle un número original desconocido. La fuente complementaria Frattini sigue fuera del recuento.",
+  "total": 34,
   "counts": {
     "reviewedPublished": 1,
     "inReview": 1,
-    "notStarted": 31,
-    "pending": 32,
+    "notStarted": 32,
+    "pending": 33,
     "missingOriginalUrl": 1
   },
   "reviewed": [
@@ -141,6 +141,24 @@
     "checkRule": "El check verde se muestra únicamente si reviewComplete es true y status es revision_publicada",
     "supplementalOutsideCount": true,
     "unidentifiedSourceLabel": "Fuente sin identificar · inventario no disponible",
-    "sort": "source_order"
-  }
+    "sort": "source_order",
+    "originalCatalogTotal": 33,
+    "addedSourceCount": 1,
+    "reviewCompletenessRule": "El check verde requiere revisión integral del texto y verificación documental; la sola inserción del enlace no significa revisión."
+  },
+  "originalCatalogTotal": 33,
+  "pendingSources": [
+    {
+      "order": 34,
+      "videoId": "j_5Tj0kIj2c",
+      "title": "Vídeo j_5Tj0kIj2c · título pendiente de confirmar",
+      "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c&t=1535s",
+      "originalStartSeconds": 1535,
+      "status": "pendiente_revision",
+      "reviewComplete": false,
+      "origin": "Añadida por el usuario el 09/11/2026",
+      "metadataVerified": false,
+      "qualityNotes": "Identificador y momento 25:35 facilitados por el usuario. Metadatos y contenido pendientes de comprobación. Revisar duplicados al recuperar el inventario original."
+    }
+  ]
 }
