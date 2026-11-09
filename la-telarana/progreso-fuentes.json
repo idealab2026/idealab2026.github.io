@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-10",
   "scope": "Registro de revisión interno de 69 entradas: 67 fuentes de 8 notebooks CULTURA y 2 aportaciones de usuario; tres duplicaciones de videos entre notebooks -> 66 fuentes distintas. La web La Telaraña NO debe publicar este listado. No presentar títulos como hechos verificados.",
   "total": 69,
   "counts": {
-    "reviewedPublished": 1,
-    "inReview": 10,
+    "reviewedPublished": 3,
+    "inReview": 8,
     "notStarted": 58,
-    "pending": 68,
+    "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
     "uniqueSources": 66
@@ -41,12 +41,60 @@
       "title": "Entrevista a José Manuel Villarejo",
       "reviewComplete": true,
       "completionCriteria": "Revisión documental publicada (versión v2 exhaustiva), con alegaciones separadas de hechos contrastados. La ficha puede recibir futuras rectificaciones sin perder su estado de procesamiento."
+    },
+    {
+      "order": 18,
+      "videoId": "MljyjDGTxkk",
+      "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "title": "EPSTEIN, el PROBLEMA de EEUU con ISRAEL y la GUERRA de las ÉLITES OCCIDENTALES con Lorenzo Ramirez",
+      "status": "revision_textual_y_documental_completada",
+      "reviewDate": "2026-11-10",
+      "reviewRevision": "v1-textual-contrastada",
+      "entitiesReviewed": 21,
+      "relationsReviewed": 20,
+      "structuredTopicsReviewed": 15,
+      "transcriptCharacters": 129774,
+      "rawTranscriptAvailable": true,
+      "transcriptStoredInDrive": true,
+      "docTranscriptionCreated": true,
+      "fullTranscriptVerifiedDriveReadback": true,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "imageRuntimeVerified": false,
+      "reviewComplete": true,
+      "timelineVerifiedEventsCommitted": 3,
+      "sourceState": "Edición documental publicada y cotejo por temas con fuentes externas. Alegaciones sin prueba categorizadas como tales; retratos aún pendientes de validación visual.",
+      "completionCriteria": "Procesamiento del texto íntegro y principales bloques, biografías y relaciones clasificadas, contrastes institucionales y QA de estructura. No implica aceptación de las alegaciones; el cotejo de audio y la revisión visual de retratos siguen como controles de calidad posteriores."
+    },
+    {
+      "order": 21,
+      "videoId": "DRgeXx3rJl0",
+      "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+      "title": "El Nuevo ORDEN MUNDIAL que nos OCULTAN | Lorenzo Ramírez",
+      "status": "revision_textual_y_documental_completada",
+      "reviewDate": "2026-11-10",
+      "reviewRevision": "v1-textual-contrastada",
+      "entitiesReviewed": 34,
+      "relationsReviewed": 33,
+      "structuredTopicsReviewed": 16,
+      "transcriptCharacters": 137414,
+      "rawTranscriptAvailable": true,
+      "transcriptStoredInDrive": true,
+      "docTranscriptionCreated": true,
+      "fullTranscriptVerifiedDriveReadback": true,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "imageRuntimeVerified": false,
+      "reviewComplete": true,
+      "timelineVerifiedEventsCommitted": 5,
+      "sourceState": "Edición documental publicada y cotejo por temas con fuentes externas. Alegaciones sin prueba categorizadas como tales; retratos aún pendientes de validación visual.",
+      "completionCriteria": "Procesamiento del texto íntegro y principales bloques, biografías y relaciones clasificadas, contrastes institucionales y QA de estructura. No implica aceptación de las alegaciones; el cotejo de audio y la revisión visual de retratos siguen como controles de calidad posteriores."
     }
   ],
   "nextSource": {
     "order": 9,
     "videoId": "10vGOskN6hY",
-    "status": "pendiente_inicio_tras_fuentes_18_y_21",
+    "status": "transcripcion_en_drive_pendiente_revision",
     "sourceType": "youtube"
   },
   "inReview": [
@@ -312,36 +360,6 @@
       "qualityNotes": "Creado Doc nativo de IDEA LAB que contiene ficha, método y referencias, pero NO la transcripción íntegra del podcast. VidIQ sin créditos; Descript rechaza URL YouTube por no ser enlace de archivo audiovisual directo; NotebookLM aún no accesible. NO atribuir citas, capítulos, minutos ni supuestas conexiones directas entre Maduro, Zapatero e Iglesias sin transcripción. Resolución judicial 27/06/2022 conservada solo como contexto independiente. No marcar completado."
     },
     {
-      "order": 18,
-      "videoId": "MljyjDGTxkk",
-      "title": "EPSTEIN, el PROBLEMA de EEUU con ISRAEL y la GUERRA de las ÉLITES OCCIDENTALES con Lorenzo Ramirez",
-      "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
-      "status": "indice_editorial_analizado_transcripcion_pendiente",
-      "reviewComplete": false,
-      "docTranscriptCreated": true,
-      "transcriptDocHasFullText": false,
-      "sourceNodesDocumented": 5,
-      "sourceRelationsDocumented": 4,
-      "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Índice editorial y contraste DOJ del 30/01/2026; transcripción íntegra pendiente; solo vínculos editoriales y hechos independientes; el documento de trabajo permanece privado en Drive y su URL no se publica en el archivo web."
-    },
-    {
-      "order": 21,
-      "videoId": "DRgeXx3rJl0",
-      "title": "El Nuevo ORDEN MUNDIAL que nos OCULTAN | Lorenzo Ramírez",
-      "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
-      "status": "indice_editorial_analizado_transcripcion_pendiente",
-      "reviewComplete": false,
-      "docTranscriptCreated": true,
-      "transcriptDocHasFullText": false,
-      "sourceNodesDocumented": 10,
-      "sourceRelationsDocumented": 9,
-      "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Índice minutado del productor y contexto USAID del 20/01/2025; transcripción íntegra pendiente; solo vínculos editoriales y hechos independientes; el documento de trabajo permanece privado en Drive y su URL no se publica en el archivo web."
-    },
-    {
       "order": 69,
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
@@ -361,9 +379,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 35,
-    "fromReviewedSource": 5,
-    "fromSourceInReview": 23,
+    "committedVerifiedEvents": 41,
+    "fromReviewedSource": 13,
+    "fromSourceInReview": 21,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -563,14 +581,16 @@
         "reviewComplete": true,
         "tracking": {
           "initiated": true,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": true,
           "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 123020,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -599,7 +619,9 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 81876,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -617,13 +639,15 @@
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": "https://docs.google.com/document/d/1r38sp5kWzETO_3-FcO2pmv52Ddqs7x798tdsl3IHfMk/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "configurada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 92493,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         },
         "summaryEvidence": "https://www.ivoox.com/vida-secreta-de-felipe-vi-el-audios-mp3_rf_180376510_1.html",
         "publishedAt": "2026-09-10",
@@ -652,13 +676,15 @@
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": "https://docs.google.com/document/d/1Ac09bBMLeIit4AJrhYyyPswEO_MZmd5JfN6IgrbvsWQ/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 84334,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         },
         "sourceData": "podcast-duque-lerma-historia.js",
         "chapterTimecodesAvailable": true,
@@ -701,7 +727,8 @@
         "reviewedEditorialNodes": 4,
         "editorialEdges": 3,
         "publisherCountDiscrepancyFlagged": true,
-        "transcriptNotApplicable": true
+        "transcriptNotApplicable": true,
+        "transcriptRequired": false
       },
       {
         "order": 6,
@@ -724,8 +751,10 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09",
-          "docTranscriptionIndexUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit"
+          "lastUpdated": "2026-11-10",
+          "docTranscriptionIndexUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit",
+          "transcriptCharactersReadBack": 258825,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         },
         "sourceData": "podcast-wild-253-villarejo.js",
         "externalTranscriptUrl": "https://podcasts.happyscribe.com/the-wild-project/the-wild-project-253-ft-comisario-villarejo-la-mentira-del-11m-intentan-matarle-espias-rusas",
@@ -762,13 +791,15 @@
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 314815,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         },
         "sourceData": "podcast-wild-312-chicote.js",
         "externalTranscriptUrl": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
@@ -799,13 +830,15 @@
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": "https://docs.google.com/document/d/1O5yATkwfw_tm3BrHC4fLDCwA0MtMIUe_ewzpFwjjfQk/edit",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 102113,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         },
         "sourceData": "podcast-vaquero-67-villarejo.js",
         "episodeDurationSeconds": 7093,
@@ -835,18 +868,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 9,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 139679,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -859,18 +894,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 31,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 76846,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -883,18 +920,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 32,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 142446,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -907,18 +946,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 33,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 76846,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -931,18 +972,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 34,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 274234,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -955,18 +998,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 10,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 147938,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -976,7 +1021,7 @@
         "sourceUrl": "",
         "originalUrl": "",
         "videoId": null,
-        "type": "pdf",
+        "type": "pdf_document",
         "duplicateOf": null,
         "importLine": 11,
         "status": "pendiente",
@@ -991,7 +1036,8 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
-        }
+        },
+        "transcriptRequired": false
       },
       {
         "order": 16,
@@ -1003,18 +1049,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 12,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 99327,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1027,18 +1075,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 13,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 62966,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1051,18 +1101,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 14,
-        "status": "revision_iniciada_doc_indice_en_drive_texto_integro_pendiente",
-        "reviewComplete": false,
+        "status": "revision_textual_documental_publicada_con_advertencias",
+        "reviewComplete": true,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
-          "complete": false,
-          "inReview": true,
+          "complete": true,
+          "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 129774,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1075,18 +1127,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 15,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 96975,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1099,18 +1153,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 16,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 143531,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1123,18 +1179,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 17,
-        "status": "revision_iniciada_doc_indice_en_drive_texto_integro_pendiente",
-        "reviewComplete": false,
+        "status": "revision_textual_documental_publicada_con_advertencias",
+        "reviewComplete": true,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
-          "complete": false,
-          "inReview": true,
+          "complete": true,
+          "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 137414,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1147,18 +1205,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 18,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 20978,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1171,18 +1231,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 19,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 149259,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1195,18 +1257,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 20,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 74415,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1219,18 +1283,20 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 21,
-        "status": "pendiente",
+        "status": "transcripcion_guardada_analisis_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10",
+          "transcriptCharactersReadBack": 162636,
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
       {
@@ -1487,14 +1553,15 @@
         "reviewComplete": false,
         "tracking": {
           "initiated": false,
-          "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": null,
+          "transcriptSharedWithSource": 4
         }
       },
       {
