@@ -479,3 +479,31 @@ window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS={
     "title": "Pablo Iglesias Turrión"
   }
 };
+
+/* Nuevos candidatos de retrato en Wikimedia; disponibilidad visual a validar. */
+Object.assign(window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS, {
+  "f18-gisbert": {
+    "lang": "es",
+    "title": "Rubén Gisbert"
+  },
+  "f18-epstein": {
+    "lang": "en",
+    "title": "Jeffrey Epstein"
+  },
+  "f21-trump": {
+    "lang": "en",
+    "title": "Donald Trump"
+  },
+  "f21-putin": {
+    "lang": "en",
+    "title": "Vladimir Putin"
+  },
+  "f21-musk": {
+    "lang": "en",
+    "title": "Elon Musk"
+  },
+  "f21-vonderleyen": {
+    "lang": "en",
+    "title": "Ursula von der Leyen"
+  }
+});
