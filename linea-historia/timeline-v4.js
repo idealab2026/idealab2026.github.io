@@ -378,7 +378,12 @@ async function wikiFindArticle(d,signal){
  var candidateTitles=direct?[direct].concat(names):names;
  var attempted=new Set(),suggestions=[];
  if(wikiIsComposite(d)){
-  return {page:null,suggestions:[],term:names[0],kind:"composite"};
+  return {
+   page:null,suggestions:[],term:names[0],kind:"composite",
+   searchParts:d.t.split(/\s*;\s*|\s+\by\b\s+/i)
+     .map(function(p){return wikiStripDates(p).trim()})
+     .filter(function(p){return p.length>=4}).slice(0,4)
+  };
  }
  // A known article title is queried before a broad full-text search.
  // One failed candidate is fine, but avoid dozens of sequential API calls.
@@ -553,7 +558,7 @@ function wikiRenderArticle(d,root,page,requestId,signal){
  wikiFooter(root,page.title);
  if(d.isTraditional)root.append(el("p","Las fechas bíblicas del Excel no son dataciones históricas demostradas.","note-warning"));
 }
-function wikiFallback(d,root,term,reason,suggestions){
+function wikiFallback(d,root,term,reason,suggestions,searchParts){
  if($("note-layer").classList.contains("hide"))return;
  $("note-kicker").textContent=d.c+" · búsqueda";
  $("note-title").textContent=displayName(d);
@@ -562,6 +567,14 @@ function wikiFallback(d,root,term,reason,suggestions){
  var message=String(reason||"No se ha encontrado un artículo suficientemente coincidente.");
  root.append(el("p",message,"wiki-error"));
  if(d.d)root.append(el("p","Información del archivo: "+d.d,"source-note"));
+ if(Array.isArray(searchParts)&&searchParts.length>1){
+  root.append(el("h3","Buscar cada acontecimiento por separado","wiki-section-title"));
+  var events=el("div",null,"wiki-suggestions");
+  searchParts.forEach(function(part){
+   wikiExternalLink(events,wikiSearchURL(part),part+" ↗","wiki-suggestion");
+  });
+  root.append(events);
+ }
  if(Array.isArray(suggestions)&&suggestions.length){
   root.append(el("h3","Posibles artículos relacionados","wiki-section-title"));
   var list=el("div",null,"wiki-suggestions");
@@ -583,7 +596,7 @@ async function wikiLoadArticle(d,root,term,requestId,signal){
     var reason=result.kind==="composite"?
      "Este registro incluye varios acontecimientos u obras: no sería correcto atribuirle un solo artículo.":
      "No se ha identificado de forma fiable un artículo único. Puedes consultar las páginas relacionadas.";
-    wikiFallback(d,root,result.term||term,reason,result.suggestions||[]);
+    wikiFallback(d,root,result.term||term,reason,result.suggestions||[],result.searchParts||[]);
     return;
    }
    page=result.page;
