@@ -27,7 +27,15 @@
       "primaryData": "podcast-coronel-villarejo-2026.js",
       "reviewOverlay": "podcast-coronel-villarejo-2026-revision.js",
       "sourceState": "fuente revisada y publicada, con alegaciones no acreditadas explicitadas",
-      "furtherWork": "Recontrastar las afirmaciones controversiales cuando existan nuevas fuentes primarias, sin reabrir el estado de procesamiento de este episodio"
+      "furtherWork": "Recontrastar las afirmaciones controversiales cuando existan nuevas fuentes primarias, sin reabrir el estado de procesamiento de este episodio",
+      "timelineVerifiedEventsCommitted": 5,
+      "timelineEventIds": [
+        "study-v1-carrero-1973",
+        "study-v1-23f-1981",
+        "study-v1-11m-2004",
+        "study-v1-kitchen-2013",
+        "study-v1-tandem-2017"
+      ]
     }
   ],
   "nextSource": {
@@ -54,7 +62,36 @@
       "verifiedMinuteReferences": 0,
       "reviewComplete": false,
       "qualityNotes": "Proveniencia separada: sinopsis del productor y 40 documentos de Ceuta publicadas por Moncloa. Faltan transcripción, extracción de citas literales, identificación íntegra de personas y minuto exacto de declaraciones.",
-      "primaryOfficialSource": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx"
+      "primaryOfficialSource": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
+      "timelineVerifiedEventsCommitted": 3,
+      "timelineEventIds": [
+        "study-v2-ceuta-aviso-2026",
+        "study-v2-ceuta-crisis-2026",
+        "study-v2-ceuta-publicacion-2026"
+      ]
     }
-  ]
+  ],
+  "timeline": {
+    "dataset": "../linea-historia/estudios-telarana.json",
+    "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
+    "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento.",
+    "committedVerifiedEvents": 8,
+    "fromReviewedSource": 5,
+    "fromSourceInReview": 3,
+    "publishedInPages": false,
+    "eventsBySource": {
+      "1": [
+        "study-v1-carrero-1973",
+        "study-v1-23f-1981",
+        "study-v1-11m-2004",
+        "study-v1-kitchen-2013",
+        "study-v1-tandem-2017"
+      ],
+      "2": [
+        "study-v2-ceuta-aviso-2026",
+        "study-v2-ceuta-crisis-2026",
+        "study-v2-ceuta-publicacion-2026"
+      ]
+    }
+  }
 }
