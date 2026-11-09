@@ -1194,11 +1194,49 @@ function init(){
  });
  // Previous local entries remain readable; removing UI never destroys user data.
  custom=loadLocal();
- fetch("./data.json",{cache:"no-cache"}).then(function(r){
-  if(!r.ok)throw Error("Archivo histórico no disponible");return r.json();
- }).then(function(data){
-  base=Array.isArray(data.items)?data.items.filter(valid):[];render();jumpToYear(1900);
- }).catch(function(){render();$("period-name").textContent="No se pudo cargar el archivo histórico"});
+ // Historia original + catálogo contrastado de estudios de La Telaraña.
+ // El segundo archivo es opcional; cualquier fallo conserva los registros base.
+ function readJSON(path){
+  return fetch(path,{cache:"no-cache"}).then(function(response){
+   if(!response.ok)throw Error("No disponible: "+path);
+   return response.json();
+  });
+ }
+ Promise.all([readJSON("./data.json"),
+  readJSON("./estudios-telarana.json").catch(function(){return{items:[]}})
+ ]).then(function(results){
+  var historical=Array.isArray(results[0].items)?results[0].items.filter(valid):[];
+  var additional=Array.isArray(results[1].items)?results[1].items:[];
+  var seenIds=new Set(historical.map(function(d){return d.id}));
+  function keyFor(d){
+   return String(d.t||"").toLocaleLowerCase("es").normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim()+
+    "|"+Math.floor(Number(d.y));
+  }
+  var seenEvents=new Set(historical.map(keyFor));
+  additional.forEach(function(d){
+   var info=d&&d.investigation||{};
+   if(!valid(d)||!/^study-v[12]-[a-z0-9-]+$/.test(d.id||"")||
+      info.status!=="hecho_documentado"||
+      !/^\d{4}-\d{2}(?:-\d{2})?$/.test(info.date||"")||
+      !info.confirmedBy||!String(info.confirmedBy.url||"").startsWith("https://")||
+      !String(info.sourceUrl||"").startsWith("https://")||
+      !Array.isArray(info.relatedTelarana)||seenIds.has(d.id))return;
+   var key=keyFor(d);
+   if(seenEvents.has(key))return;
+   historical.push(d);seenIds.add(d.id);seenEvents.add(key);
+  });
+  base=historical;
+  var requested=null;
+  try{requested=new URLSearchParams(location.search).get("evento")}catch(e){}
+  var event=requested&&base.find(function(d){return d.id===requested});
+  if(event){
+   period=eraAt(sy(event));periodUI();render();
+   jumpToYear(sy(event));detail(event);
+  }else{render();jumpToYear(1900)}
+ }).catch(function(){
+  render();$("period-name").textContent="No se pudo cargar el archivo histórico";
+ });
  $("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
 
 }
