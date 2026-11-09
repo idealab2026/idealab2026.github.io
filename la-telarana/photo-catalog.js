@@ -385,5 +385,9 @@ window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS={
   "cv26-maduro": {
     "lang": "es",
     "title": "Nicolás Maduro"
+  },
+  "vf150-khaled-meshaal": {
+    "lang": "es",
+    "title": "Jaled Meshal"
   }
 };
