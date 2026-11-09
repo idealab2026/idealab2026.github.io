@@ -75,28 +75,86 @@ function make(options){
   const density=clip(Math.min(w/1600,h/900),.36,1);
   return clip((emphasized?30:22)*p.scale,emphasized?7.5:4.3,emphasized?32:23)*density;
  }
+ function drawOrb(){
+  const cx=w/2+panX,cy=h/2+panY,rr=ORB_RADIUS*Math.min(w/1450,h/950)*zoom;
+  const aura=ctx.createRadialGradient(cx-rr*.18,cy-rr*.23,rr*.08,cx,cy,rr*1.17);
+  aura.addColorStop(0,"rgba(77,160,210,.17)");
+  aura.addColorStop(.58,"rgba(45,107,160,.09)");
+  aura.addColorStop(.9,"rgba(81,137,172,.05)");
+  aura.addColorStop(1,"rgba(81,137,172,0)");
+  ctx.fillStyle=aura;ctx.beginPath();ctx.arc(cx,cy,rr*1.17,0,2*PI);ctx.fill();
+  ctx.beginPath();ctx.arc(cx,cy,rr,0,2*PI);
+  ctx.strokeStyle="rgba(144,196,226,.22)";ctx.lineWidth=1.15;ctx.stroke();
+  // Meridianos/ecuador muy tenues: ofrecen pistas de volumen sin parecer rejilla.
+  ctx.strokeStyle="rgba(115,176,213,.055)";ctx.lineWidth=.8;
+  for(let ring=0;ring<3;ring++){
+   ctx.beginPath();
+   for(let j=0;j<=90;j++){
+    const t=j*2*PI/90,lat=(ring-1)*.45;
+    const p=proj({x:ORB_RADIUS*Math.cos(lat)*Math.cos(t),
+      y:ORB_RADIUS*Math.sin(lat),z:ORB_RADIUS*Math.cos(lat)*Math.sin(t)});
+    if(!j)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);
+   }
+   ctx.stroke();
+  }
+ }
  function drawRegions(visible,pr){
   bandHits=[];
-  for(const [id,label,tint] of topics){
-   const members=visible.filter(n=>group(n)===id&&pr.has(n.id));
-   if(!members.length)continue;
-   const pts=members.map(n=>pr.get(n.id)),xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);
-   // Límites calculados desde TODOS los nodos proyectados, no desde un sector fijo.
-   const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
-   const left=minX-43,top=minY-102,width=Math.max(240,maxX-minX+86),height=Math.max(142,maxY-minY+145);
-   const active=theme===id,muted=theme!=="todos"&&!active;
-   ctx.save();ctx.globalAlpha=muted?.22:1;
-   ctx.beginPath();ctx.roundRect(left,top,width,height,23);
-   ctx.fillStyle=color(tint,active?.10:.045);ctx.fill();
-   ctx.strokeStyle=color(tint,active?.86:.44);ctx.lineWidth=active?2.3:1.2;ctx.stroke();
-   ctx.textAlign="left";ctx.textBaseline="top";
-   ctx.font="750 17px system-ui";ctx.fillStyle=active?"#fff":tint;
-   ctx.fillText(label,left+17,top+18,Math.max(140,width-34));
-   ctx.font="600 11px system-ui";ctx.fillStyle="#c2d0dd";
-   ctx.fillText(members.length+" entidades",left+17,top+46);
+  const middle={x:w/2+panX,y:h/2+panY};
+  const radius=ORB_RADIUS*Math.min(w/1450,h/950)*zoom;
+  const groups=topics.map(([id,label,tint])=>{
+   const cap=caps.get(id),members=visible.filter(n=>group(n)===id&&pr.has(n.id));
+   return{id,label,tint,cap,members,centre:cap?proj({
+    x:cap.n.x*ORB_RADIUS,y:cap.n.y*ORB_RADIUS,z:cap.n.z*ORB_RADIUS}):null};
+  }).filter(t=>t.cap&&t.members.length).sort((a,b)=>b.centre.depth-a.centre.depth);
+  const labels=[];
+  for(const t of groups){
+   const active=theme===t.id,muted=theme!=="todos"&&!active;
+   const near=clip(.67-t.centre.depth/(ORB_RADIUS*2.5),.17,1);
+   const alpha=(active?1:muted?.17:1)*near;
+   ctx.save();ctx.globalAlpha=alpha;
+   ctx.beginPath();
+   for(let j=0;j<=64;j++){
+    const world=surfacePoint(t.cap.n,t.cap.u,t.cap.v,
+      j*2*PI/64,t.cap.angle,ORB_RADIUS+8);
+    const p=proj(world);
+    if(!j)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);
+   }
+   ctx.closePath();
+   ctx.fillStyle=color(t.tint,active?.13:.072);ctx.fill();
+   ctx.strokeStyle=color(t.tint,active?.9:.52);
+   ctx.lineWidth=active?2.3:1.4;ctx.stroke();
    ctx.restore();
-   // El área es visual; solo su cabecera es pulsable (no tapa las aristas).
-   bandHits.push({id,x:left,y:top,w:Math.min(width,270),h:72});
+   const dx=t.centre.x-middle.x,dy=t.centre.y-middle.y,len=Math.hypot(dx,dy);
+   const d=len>22?len:radius*.7;
+   const vx=len>22?dx/len:Math.cos(topics.findIndex(row=>row[0]===t.id)*GOLDEN_ANGLE);
+   const vy=len>22?dy/len:Math.sin(topics.findIndex(row=>row[0]===t.id)*GOLDEN_ANGLE);
+   const labelR=Math.max(radius*.70,Math.min(radius*1.18,d+46));
+   labels.push({...t,alpha,active,x:middle.x+vx*labelR,y:middle.y+vy*labelR});
+  }
+  // Etiquetas flotantes, compactas, sin rectángulos temáticos sobre las neuronas.
+  const rects=[];
+  for(const t of labels){
+   const bw=clip(t.label.length*7.15+38,118,215),bh=43;
+   let px=clip(t.x-bw/2,12,w-bw-12),py=clip(t.y-bh/2,108,h-bh-15);
+   for(let iteration=0;iteration<18;iteration++){
+    const collide=rects.find(r=>px<r.x+r.w+8&&px+bw+8>r.x&&py<r.y+r.h+7&&py+bh+7>r.y);
+    if(!collide)break;
+    py=clip(py+(py+bh/2<collide.y+collide.h/2?-15:15),108,h-bh-15);
+    if(iteration===9)px=clip(px+35,12,w-bw-12);
+   }
+   rects.push({x:px,y:py,w:bw,h:bh});
+   ctx.save();ctx.globalAlpha=theme!=="todos"&&!t.active?.25:clip(t.alpha+.20,.4,1);
+   ctx.beginPath();ctx.roundRect(px,py,bw,bh,13);
+   ctx.fillStyle="rgba(12,26,39,.89)";ctx.fill();
+   ctx.strokeStyle=color(t.tint,t.active?.9:.55);ctx.lineWidth=t.active?1.7:1;ctx.stroke();
+   ctx.textAlign="left";ctx.textBaseline="top";
+   ctx.fillStyle=t.tint;ctx.font="700 12px system-ui";
+   ctx.fillText(t.label,px+11,py+7,bw-22);
+   ctx.fillStyle="#a9bbca";ctx.font="600 10px system-ui";
+   ctx.fillText(t.members.length+" entidades",px+11,py+25);
+   ctx.restore();
+   bandHits.push({id:t.id,x:px,y:py,w:bw,h:bh});
   }
  }
  function render(){
@@ -110,6 +168,7 @@ function make(options){
   ctx.strokeStyle="rgba(115,153,182,.055)";ctx.lineWidth=.7;
   for(let x=0;x<w;x+=44){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke()}
   for(let y=0;y<h;y+=44){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke()}
+  drawOrb();
   const visible=nodes.filter(n=>!search||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(search));
   const pr=new Map(visible.map(n=>[n.id,proj(pos.get(n.id)||{x:0,y:0,z:0})]));
   drawRegions(visible,pr);
