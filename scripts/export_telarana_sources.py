@@ -4,6 +4,7 @@
 Uso:
     python3 scripts/export_telarana_sources.py --all
     python3 scripts/export_telarana_sources.py --video-id qARZpON9_j0
+    python3 scripts/export_telarana_sources.py --inventory   # TSV, sin archivos
 
 Solo lectura. No crea contenido en NotebookLM ni sube documentos a GitHub.
 Las transcripciones y fuentes exportadas permanecen en el Mac del usuario.
@@ -150,7 +151,7 @@ def main() -> int:
                 url = url.get("url") or url.get("href") or ""
             source_id = str(row.get("id") or row.get("source_id") or "")
             video_id = youtube_id(str(url))
-            if not source_id:
+            if not source_id and not args.inventory:
                 continue
             if args.video_id and video_id != args.video_id:
                 continue
@@ -174,7 +175,7 @@ def main() -> int:
                 source["video_id"], source["source_type"],
                 source["notebook_id"], source["source_id"],
             ])
-        keys = {source["video_id"] or source["url"] or source["source_id"] for source in sources}
+        keys = {source["video_id"] or source["url"] or source["source_id"] or (source["notebook_id"]+":"+source["title"]) for source in sources}
         missing_urls = sum(not source["url"] for source in sources)
         print(
             f"Inventario: {len(sources)} entradas, {len(keys)} identificadores distintos, "
