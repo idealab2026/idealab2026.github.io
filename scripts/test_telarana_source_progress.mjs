@@ -45,8 +45,12 @@ assert(s5.tracking.initiated&&s5.tracking.inReview&&!s5.tracking.docTranscriptio
 assert(s5.transcriptNotApplicable&&s5.publisherVerified==="Partido Popular");
 const s6=feed.sourceCatalog.entries.find(x=>x.order===6);
 assert(s6.tracking.initiated&&s6.tracking.inReview&&s6.tracking.docTranscriptionCreated);
-assert.equal(s6.tracking.transcriptContentImported,false);
-assert.equal(s6.docTranscriptHasFullText,false);
+assert.equal(s6.tracking.transcriptContentImported,true);
+assert.equal(s6.docTranscriptHasFullText,true);
+assert.equal(s6.transcriptSha256VerifiedDriveRoundTrip,true);
+assert.equal(s6.transcriptTopicIndexCount,13);
+assert.equal(s6.originalTranscriptChars,257517);
+assert.equal(s6.originalTranscriptSha256,"34e777038c189bf0ab64d64bc7ea220e954c5f55bc55ce32e1d5e7b50eab6bc6");
 assert.equal(s6.fullTranscriptAccessibleExternally,true);
 assert(s6.externalTranscriptUrl.includes("podcasts.happyscribe.com"));
 assert.equal(s6.reviewComplete,false);
