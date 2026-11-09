@@ -262,7 +262,7 @@ function make(options){
   if(time-lastMotionFrame>=45){
    const dt=Math.min(time-lastMotionFrame,85);lastMotionFrame=time;
    if(motionEnabled&&typeof document!=="undefined"&&!document.hidden&&
-    !down.size&&time>=quietUntil&&canvas.getBoundingClientRect().width>4){
+    !down.size&&!hover&&!hoverEdge&&time>=quietUntil&&canvas.getBoundingClientRect().width>4){
     yaw+=dt*.000023;
     pitch=basePitch+Math.sin(time*.00015)*.027;
     redraw();
@@ -307,7 +307,7 @@ function make(options){
    if(down.size>1||drag.pan){panX+=dx;panY+=dy}else{yaw+=dx*.008;pitch=clip(pitch+dy*.005,-1.1,1.1);basePitch=pitch}redraw();
   }else{
    const found=hit(p),id=found?.kind==="node"?found.id:null,lineId=found?.kind==="edge"?found.id:null;
-   if(id!==hover||lineId!==hoverEdge){hover=id;hoverEdge=lineId;redraw()}
+   if(id!==hover||lineId!==hoverEdge){hover=id;hoverEdge=lineId;if(found)markInteraction();redraw()}
    hint.hidden=!found;
    if(found){
     if(id){hint.textContent=index.get(id)?.name||""}
