@@ -247,6 +247,26 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "twp312-delcy-rodriguez": {
       "lang": "es",
       "title": "Delcy Rodríguez"
+    },
+    "f08-roberto-vaquero": {
+      "lang": "es",
+      "title": "Roberto Vaquero"
+    },
+    "f08-villarejo": {
+      "lang": "es",
+      "title": "José Manuel Villarejo"
+    },
+    "f08-maduro": {
+      "lang": "es",
+      "title": "Nicolás Maduro"
+    },
+    "f08-zapatero": {
+      "lang": "es",
+      "title": "José Luis Rodríguez Zapatero"
+    },
+    "f08-iglesias": {
+      "lang": "es",
+      "title": "Pablo Iglesias Turrión"
     }
   },
   "curated": {
@@ -573,6 +593,41 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
       "sourceTitle": "Transcripción externa · bloque Delcy Rodríguez 01:57–02:10",
       "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7060s",
+      "reviewedAt": "2026-11-09"
+    },
+    "f08-roberto-vaquero": {
+      "text": "Roberto Vaquero (Madrid, 1986) es escritor, historiador y divulgador español. Cursó Geografía e Historia y un máster de Historia Contemporánea en la UNED, y es autor de ensayos, novelas y artículos en medios culturales. Presenta Vaquero Podcast y participa activamente en la vida política. En octubre de 2025 recibió al excomisario José Manuel Villarejo en el episodio 67 de su programa. La participación del anfitrión no equivale a suscribir las acusaciones del invitado ni demuestra acuerdos entre terceras personas mencionadas durante la promoción.",
+      "source": "https://www.esferalibros.com/autores/roberto-vaquero/",
+      "sourceTitle": "La Esfera de los Libros · perfil de autor",
+      "also": "https://www.ivoox.com/villarejo-destapa-toda-verdad-sobre-maduro-zapatero-audios-mp3_rf_161157471_1.html",
+      "reviewedAt": "2026-11-09"
+    },
+    "f08-villarejo": {
+      "text": "José Manuel Villarejo Pérez es un excomisario del Cuerpo Nacional de Policía español, conocido por investigaciones judiciales en piezas de la operación Tándem y por haber grabado numerosas conversaciones con empresarios, agentes y políticos. Compareció ante una comisión de investigación del Congreso el 20 de octubre de 2021; la existencia de la comparecencia puede verificarse institucionalmente. La promoción del episodio 67 de Vaquero Podcast anuncia sus opiniones sobre Venezuela, Podemos y Zapatero. La biografía y el testimonio son cosas distintas: una acusación del entrevistado no es prueba de financiación ilegal ni de delito de los mencionados.",
+      "source": "https://www.congreso.es/es/fotonoticias?_fotonoticias_fotonId=3623&_fotonoticias_mvcPath=detalle&p_p_id=fotonoticias&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal",
+      "sourceTitle": "Congreso de los Diputados · comparecencia de Villarejo en 2021",
+      "also": "https://www.rtve.es/temas/jose-manuel-villarejo/121230/",
+      "reviewedAt": "2026-11-09"
+    },
+    "f08-maduro": {
+      "text": "Nicolás Maduro Moros (Caracas, 1962) es un político venezolano que fue ministro de Relaciones Exteriores durante el Gobierno de Hugo Chávez, vicepresidente y sucesor presidencial tras la muerte de Chávez en 2013. Su gobierno ha sido objeto de controversias por las elecciones, los derechos civiles y las instituciones venezolanas. El título de la fuente 08 lo menciona, pero su presencia nominal no prueba relaciones delictivas, transferencias de fondos o coordinación con políticos españoles. La transcripción del episodio todavía está pendiente y no se atribuyen aquí palabras concretas a Villarejo.",
+      "source": "https://www.britannica.com/biography/Nicolas-Maduro",
+      "sourceTitle": "Encyclopaedia Britannica · biografía de Nicolás Maduro",
+      "also": "https://www.youtube.com/watch?v=i4aTDf0yBac",
+      "reviewedAt": "2026-11-09"
+    },
+    "f08-zapatero": {
+      "text": "José Luis Rodríguez Zapatero (Valladolid, 1960) fue presidente del Gobierno español de 2004 a 2011, diputado por León y secretario general del PSOE durante parte de su trayectoria. Su etapa gubernamental incluyó reformas civiles y sociales y decisiones importantes sobre seguridad y política exterior. Aparece en el título y sinopsis del episodio 67 del Vaquero Podcast, donde se anuncian críticas de Villarejo. Sin la grabación transcrita no podemos concretar qué afirma el invitado, y ni el título ni las insinuaciones editoriales acreditan negocios ilegales con Venezuela.",
+      "source": "https://www.lamoncloa.gob.es/presidente/presidentes/paginas/rodriguezzapatero_bio.aspx",
+      "sourceTitle": "La Moncloa · biografía del expresidente",
+      "also": "https://www.youtube.com/watch?v=i4aTDf0yBac",
+      "reviewedAt": "2026-11-09"
+    },
+    "f08-iglesias": {
+      "text": "Pablo Iglesias Turrión (Madrid, 1978) es politólogo, profesor y expolítico español. Fue fundador y primer secretario general de Podemos, diputado y vicepresidente segundo del Gobierno de España desde enero de 2020 hasta marzo de 2021. La ficha del Congreso acredita su formación y actividad parlamentaria. El nombre de Iglesias figura en el título de la entrevista de Villarejo en Vaquero Podcast #67, pero ese título no verifica ninguna relación de financiación irregular con Venezuela. Una providencia de la Audiencia Nacional de 2022 ordenó el archivo de la causa de financiación ilegal de partido político allí examinada.",
+      "source": "https://www.congreso.es/es/busqueda-de-diputados?_diputadomodule_mostrarFicha=true&codParlamentario=319&idLegislatura=XIV&mostrarAgenda=false&p_p_id=diputadomodule&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal",
+      "sourceTitle": "Congreso de los Diputados · ficha parlamentaria de Pablo Iglesias",
+      "also": "https://www.poderjudicial.es/stfls/AUDIENCIA%20NACIONAL/JURISPRUDENCIA/2022-6-27%20Provid%20JCI%206%20archivo.pdf",
       "reviewedAt": "2026-11-09"
     }
   }
