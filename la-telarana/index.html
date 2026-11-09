@@ -519,7 +519,7 @@ function youtubeTimeLabel(sec){
 function podcastSourceLink(parent,url,title){
  var parsed;try{parsed=new URL(String(url||""))}catch(e){return}
  if(parsed.protocol!=="https:")return;
- var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com","jewishvirtuallibrary.org","www.jewishvirtuallibrary.org","www.everycrsreport.com","everycrsreport.com","ecfr.eu","www.ecfr.eu","www.cfr.org","cfr.org","www.un.org","un.org","www.theguardian.com","theguardian.com"];
+ var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com","jewishvirtuallibrary.org","www.jewishvirtuallibrary.org","www.everycrsreport.com","everycrsreport.com","ecfr.eu","www.ecfr.eu","www.cfr.org","cfr.org","www.un.org","un.org","www.theguardian.com","theguardian.com","podcasts.happyscribe.com","podcasts.apple.com","jordiwild.com","www.jordiwild.com","web.gencat.cat","www.parlament.cat"];
  if(!hosts.includes(parsed.hostname)&&!["zarza.com","www.zarza.com","newtral.es","www.newtral.es"].includes(parsed.hostname))return;
  var link=N("a",title||"Consultar fuente");link.href=parsed.href;link.target="_blank";link.rel="noopener noreferrer";link.className="podcast-link";parent.append(link)
 }
