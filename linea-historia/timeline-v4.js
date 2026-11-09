@@ -616,6 +616,7 @@ function wikiRenderImage(root,page,requestId,signal){
  };
  add(page._resolvedImage);
  add(wikiPicture(page));
+ add(wikiPhotoFromFile(page.pageimage,"pageimages-file"));
  add(wikiPagePropsPhoto(page));
  add(wikiKnownPhoto(page));
  next();
