@@ -154,7 +154,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./one-note-seed.js?v=20261108-2"></script>
 <script src="./podcast-vaquero-150.js?v=20261108-2"></script>
 <script src="./podcast-coronel-villarejo-2026.js?v=20261109-2"></script>
-<script src="./podcast-coronel-villarejo-2026-revision.js?v=20261109-3"></script>
+<script src="./podcast-coronel-villarejo-2026-revision.js?v=20261109-4"></script>
 <script src="./photo-catalog.js?v=20261109-2"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261109-5"></script>
@@ -439,7 +439,7 @@ function showPodcastNotes(panel,notes){
  notes.forEach(function(note){
   var entry=N("div",null,"podcast-entry"),title=N("small",(note.title||"Podcast")+" · "+(note.publishedAt||""));
   entry.append(title);
-  if(["rumor","alegacion","incierto","fuente-externa","contradiccion","verificacion-externa"].includes(note.status))entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad pendiente de cotejo":note.status==="fuente-externa"?"Referencia periodística externa":note.status==="contradiccion"?"Contraste documental: discrepancia":note.status==="verificacion-externa"?"Hecho contrastado externamente":"Alegación sin verificación independiente","rumour"));
+  if(["rumor","alegacion","incierto","fuente-externa","contradiccion","verificacion-externa"].includes(note.status))entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad pendiente de cotejo":note.status==="fuente-externa"?"Referencia periodística externa":note.status==="contradiccion"?"Contraste documental: discrepancia":note.status==="verificacion-externa"?"Datos y límites contrastados":"Alegación sin verificación independiente","rumour"));
   entry.append(N("p",note.text||""));
   podcastSourceLink(entry,note.source,["fuente-externa","contradiccion","verificacion-externa"].includes(note.status)?"Consultar documento de contraste":"Escuchar en "+youtubeTimeLabel(note.timeSec));
   section.append(entry)
