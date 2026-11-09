@@ -363,6 +363,36 @@
       }
     },
     {
+      "id": "study-v2-pegasus-revelacion-2022",
+      "y": 2022.331506849315,
+      "t": "El Gobierno confirma el espionaje Pegasus contra Sánchez y Robles",
+      "c": "Actualidad",
+      "s": "Investigación IDEA LAB · Fuente 02 · contraste independiente a entrevista",
+      "d": "El 2 de mayo de 2022, el ministro de la Presidencia Félix Bolaños anunció informes técnicos del Centro Criptológico Nacional que acreditaban intrusiones mediante Pegasus en los teléfonos móviles del presidente Pedro Sánchez y la ministra de Defensa Margarita Robles, ocurridas en 2021. Se trasladó el asunto a la Justicia. La existencia de las infecciones fue verificada; las investigaciones no identificaron al autor. La entrevista de 2026 hace conjeturas sobre posibles autores y contenidos extraídos, que no se dan por demostradas.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2022-05-02",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceTitle": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA · entrevista a Villarejo",
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "RTVE · declaraciones oficiales de Bolaños el 02/05/2022",
+          "url": "https://www.rtve.es/noticias/20220502/gobierno-anuncia-sanchez-robles-espiados-pegasus/2345960.shtml"
+        },
+        "relatedTelarana": [
+          "ce26-pegasus",
+          "ce26-sanchez",
+          "ce26-robles",
+          "ce26-bolanos"
+        ],
+        "methodologicalLimits": "La fecha corresponde al anuncio público, no a las intrusiones de 2021. La autoría de Pegasus, supuestas grabaciones de chantaje y finalidades políticas no se desprenden de estos informes."
+      }
+    },
+    {
       "id": "study-v2-ceuta-aviso-2026",
       "y": 2026.572602739726,
       "t": "El CNI comunica avisos sobre convocatorias de entrada en Ceuta",
@@ -502,6 +532,34 @@
           "ce26-debate-alertas"
         ],
         "methodologicalLimits": "Publicación constatada oficialmente; no convertir todas las interpretaciones políticas que se hagan de esos documentos en hechos probados."
+      }
+    },
+    {
+      "id": "study-v2-elecciones-convocatoria-2026",
+      "y": 2026.7589041095891,
+      "t": "Se aprueba el decreto de convocatoria de elecciones generales para el 29 de noviembre",
+      "c": "Actualidad",
+      "s": "Investigación IDEA LAB · Fuente 02 · contraste independiente a entrevista",
+      "d": "El 5 de octubre de 2026 se dictó el Real Decreto 806/2026 por el que se disolvieron el Congreso de los Diputados y el Senado y se convocaron elecciones generales para el domingo 29 de noviembre. Se publicó el 6 de octubre, fecha de entrada en vigor. La convocatoria es un hecho jurídico documentado. En la entrevista de octubre Villarejo atribuye la decisión a supuestos informes secretos y presiones, sin presentar evidencia que demuestre esa causalidad.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2026-10-05",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 2,
+        "sourceTitle": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA · entrevista a Villarejo",
+        "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
+        "confirmedBy": {
+          "label": "BOE · Real Decreto 806/2026 de disolución y convocatoria electoral",
+          "url": "https://www.boe.es/eli/es/rd/2026/10/05/806"
+        },
+        "relatedTelarana": [
+          "ce26-elecciones-29n",
+          "ce26-sanchez"
+        ],
+        "methodologicalLimits": "Evento fechado por aprobación de la norma el 05/10/2026 y entrada en vigor el 06/10/2026. El acto electoral del 29 de noviembre es futuro a fecha del registro y no se da por celebrado; los motivos políticos que atribuye Villarejo permanecen como hipótesis."
       }
     }
   ]
