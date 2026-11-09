@@ -1,4 +1,4 @@
-/* Biografías contextualizadas; separar roles comprobados de declaraciones controversiales. */
+/* Biografías contextualizadas; distinguir datos y alegaciones. */
 window.IDEA_TELARANA_BIOGRAPHIES = {
   "version": 1,
   "reviewedAt": "2026-11-10",
@@ -959,12 +959,6 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "sourceTitle": "Referencia biográfica independiente o identificación editorial",
       "reviewedAt": "2026-11-10"
     },
-    "f19-diax": {
-      "text": "Fernando Díaz Villanueva es periodista y divulgador español que analiza economía, historia y política internacional. En la fuente 19 aparece anunciado como participante del debate sobre China y Estados Unidos; no se le atribuye un pasaje sin identificar su voz.",
-      "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
-      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
-      "reviewedAt": "2026-11-10"
-    },
     "f19-calero": {
       "text": "Juan Francisco Calero es periodista y divulgador español especializado en tecnología y automoción. Aparece anunciado como participante en la mesa de debate de la fuente 19. Las opiniones individuales no se atribuyen sin identificación del hablante.",
       "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
@@ -998,6 +992,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "f25-lorenzo": {
       "text": "Lorenzo Ramírez es periodista y analista económico español, especializado en política monetaria, geopolítica y mercados. Participa en distintas fuentes de este inventario sobre banca central, conflictos internacionales, Unión Europea y tecnología; sus interpretaciones se distinguen de los hechos institucionales corroborados.",
       "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f19-diaz": {
+      "text": "Fernando Díaz Villanueva es periodista y divulgador español que analiza economía, historia y política internacional. En la fuente 19 aparece anunciado como participante del debate sobre China y Estados Unidos; no se le atribuye un pasaje sin identificar su voz.",
+      "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
       "sourceTitle": "Referencia biográfica independiente o identificación editorial",
       "reviewedAt": "2026-11-10"
     }
