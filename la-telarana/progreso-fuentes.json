@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 1,
-    "inReview": 7,
-    "notStarted": 61,
+    "inReview": 8,
+    "notStarted": 60,
     "pending": 68,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -44,10 +44,10 @@
     }
   ],
   "nextSource": {
-    "order": 8,
-    "videoId": "i4aTDf0yBac",
-    "sourceType": "youtube",
-    "status": "pendiente_inicio"
+    "order": 9,
+    "videoId": "10vGOskN6hY",
+    "status": "pendiente_inicio",
+    "sourceType": "youtube"
   },
   "inReview": [
     {
@@ -276,15 +276,49 @@
         "study-v7-supremo-ausbanc-manos-limpias-2024"
       ],
       "qualityNotes": "La ficha tiene 19 apartados temporales y notas documentales originales, pero no el texto íntegro; está localizable externamente en Metacast. La copia completa de NotebookLM o un archivo aportado por el usuario siguen pendientes. Se han clasificado testimonios del entrevistado sin dar por probadas acusaciones. Hechos independientes: Congreso 2018, Armada de EE.UU. 2002, galardón APM 2019, Supremo Gürtel 2020 y absolución Ausbanc-Manos Limpias 2024. La fecha de la visita personal a Guantánamo no está verificada."
+    },
+    {
+      "order": 8,
+      "videoId": "i4aTDf0yBac",
+      "title": "VILLAREJO DESTAPA TODA la VERDAD sobre MADURO, ZAPATERO e IGLESIAS | Comisario Villarejo #67",
+      "sourceUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac",
+      "status": "metadatos_editoriales_y_contraste_judicial_doc_drive_creado_texto_integral_pendiente",
+      "reviewComplete": false,
+      "docTranscriptCreated": true,
+      "docTranscriptUrl": "https://docs.google.com/document/d/1O5yATkwfw_tm3BrHC4fLDCwA0MtMIUe_ewzpFwjjfQk/edit",
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": false,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "verifiedParticipants": [
+        "Roberto Vaquero",
+        "José Manuel Villarejo"
+      ],
+      "titleMentions": [
+        "Nicolás Maduro",
+        "José Luis Rodríguez Zapatero",
+        "Pablo Iglesias Turrión"
+      ],
+      "sourceNodesDocumented": 8,
+      "sourceRelationsDocumented": 7,
+      "contextualizedBiographies": 5,
+      "portraitLookupCandidates": 5,
+      "imageRuntimeVerified": false,
+      "sourceTimelineVerifiedEventsCommitted": 1,
+      "timelineEventIds": [
+        "study-v8-archivo-causa-financiacion-podemos-2022"
+      ],
+      "externalReference": "https://www.poderjudicial.es/stfls/AUDIENCIA%20NACIONAL/JURISPRUDENCIA/2022-6-27%20Provid%20JCI%206%20archivo.pdf",
+      "qualityNotes": "Creado Doc nativo de IDEA LAB que contiene ficha, método y referencias, pero NO la transcripción íntegra del podcast. VidIQ sin créditos; Descript rechaza URL YouTube por no ser enlace de archivo audiovisual directo; NotebookLM aún no accesible. NO atribuir citas, capítulos, minutos ni supuestas conexiones directas entre Maduro, Zapatero e Iglesias sin transcripción. Resolución judicial 27/06/2022 conservada solo como contexto independiente. No marcar completado."
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 32,
+    "committedVerifiedEvents": 33,
     "fromReviewedSource": 5,
-    "fromSourceInReview": 20,
+    "fromSourceInReview": 21,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -319,6 +353,9 @@
         "study-v7-premio-chicote-apm-2019",
         "study-v7-supremo-guertel-2020",
         "study-v7-supremo-ausbanc-manos-limpias-2024"
+      ],
+      "8": [
+        "study-v8-archivo-causa-financiacion-podemos-2022"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -712,19 +749,36 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 8,
-        "status": "pendiente",
+        "status": "en_revision",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
-          "docTranscriptionCreated": false,
+          "initiated": true,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1O5yATkwfw_tm3BrHC4fLDCwA0MtMIUe_ewzpFwjjfQk/edit",
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
-        }
+          "lastUpdated": "2026-11-09"
+        },
+        "sourceData": "podcast-vaquero-67-villarejo.js",
+        "episodeDurationSeconds": 7093,
+        "episodePublishedDateIvoox": "2025-10-22",
+        "episodeReleaseDateConflicting": "2025-10-21",
+        "fullTranscriptAvailable": false,
+        "docTranscriptHasFullText": false,
+        "transcriptAttemptedProviders": [
+          "vidIQ",
+          "Descript from YouTube page",
+          "NotebookLM not connected"
+        ],
+        "sourceNotes": "1 episodio, 8 nodos, 7 vínculos de menciones editoriales o contexto judicial, 5 biografías, 1 hito judicial externo",
+        "contextNodes": 8,
+        "contextRelations": 7,
+        "biographiesContextualized": 5,
+        "photoLookupsConfigured": 5,
+        "historicalEventsIndependent": 1
       },
       {
         "order": 9,
