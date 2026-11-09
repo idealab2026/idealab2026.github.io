@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 1,
-    "inReview": 3,
-    "notStarted": 65,
+    "inReview": 4,
+    "notStarted": 64,
     "pending": 68,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -44,10 +44,11 @@
     }
   ],
   "nextSource": {
-    "order": 3,
-    "videoId": "vUxPc3dTw5Y",
-    "status": "en_revision",
-    "textPending": true
+    "order": 5,
+    "videoId": null,
+    "sourceUrl": "https://latramapsoe.es/",
+    "status": "pendiente_inicio",
+    "sourceType": "web_page"
   },
   "inReview": [
     {
@@ -160,15 +161,47 @@
       "imageActorsPrepared": 3,
       "personProfilesPrepared": 3,
       "qualityNotes": "Iniciada mediante ficha editorial iVoox/Apple Podcasts, 3 personas identificadas y 5 nodos/5 vínculos clasificados. Existe documento de Drive preparado, pero no contiene transcripción; el servicio vidIQ carece de créditos. No reconstruir declaraciones literales ni afirmar rumores sobre vida sexual, espionaje o delitos sin texto y fuentes primarias."
+    },
+    {
+      "order": 4,
+      "videoId": "DLgQ78xC-54",
+      "title": "La cara oculta de la Historia - El duque de Lerma y la corrupción política en España",
+      "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "publishedAt": "2024-04-04",
+      "status": "cinco_capitulos_contextualizados_sin_transcripcion_integra",
+      "reviewComplete": false,
+      "docTranscriptCreated": true,
+      "transcriptDocUrl": "https://docs.google.com/document/d/1Ac09bBMLeIit4AJrhYyyPswEO_MZmd5JfN6IgrbvsWQ/edit?usp=drivesdk",
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": false,
+      "chapterTimecodesVerifiedFromYouTubeDescription": true,
+      "exactQuoteTimesVerified": 0,
+      "graphNodesDocumented": 18,
+      "graphRelationsDocumented": 23,
+      "contextualizedBiographies": 9,
+      "portraitUrlsConfigured": 3,
+      "wikimediaPortraitLookups": 5,
+      "imageRuntimeVerified": false,
+      "timelineVerifiedEventsCommitted": 7,
+      "timelineEventIds": [
+        "study-v4-antonio-perez-detencion-1579",
+        "study-v4-alteraciones-aragon-1591",
+        "study-v4-lerma-compra-valladolid-1600",
+        "study-v4-corte-traslado-valladolid-1601",
+        "study-v4-lerma-venta-corona-1601",
+        "study-v4-regencia-maria-cristina-1833",
+        "study-v4-straperlo-congreso-1935"
+      ],
+      "qualityNotes": "El episodio tiene cinco capítulos históricos. Solo se han revisado metadatos y referencias externas: PARES, RAH, Simancas, artículo académico Ayer y archivos del Congreso. No se dispone de la transcripción de la fuente. «Pedro de Villamizar» solo aparece como capítulo; identidad no resuelta. No afirmar declaraciones de la historiadora ni un delito específico sin documentación y análisis historiográfico."
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 20,
+    "committedVerifiedEvents": 27,
     "fromReviewedSource": 5,
-    "fromSourceInReview": 8,
+    "fromSourceInReview": 15,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -187,6 +220,15 @@
         "study-v2-pegasus-revelacion-2022",
         "study-v2-elecciones-convocatoria-2026",
         "study-v2-ceuta-resolucion-parlamento-europeo-2026"
+      ],
+      "4": [
+        "study-v4-antonio-perez-detencion-1579",
+        "study-v4-alteraciones-aragon-1591",
+        "study-v4-lerma-compra-valladolid-1600",
+        "study-v4-corte-traslado-valladolid-1601",
+        "study-v4-lerma-venta-corona-1601",
+        "study-v4-regencia-maria-cristina-1833",
+        "study-v4-straperlo-congreso-1935"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -433,19 +475,29 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 4,
-        "status": "pendiente",
+        "status": "en_revision",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
-          "docTranscriptionCreated": false,
+          "initiated": true,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1Ac09bBMLeIit4AJrhYyyPswEO_MZmd5JfN6IgrbvsWQ/edit?usp=drivesdk",
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
-        }
+          "lastUpdated": "2026-11-09"
+        },
+        "sourceData": "podcast-duque-lerma-historia.js",
+        "chapterTimecodesAvailable": true,
+        "fullTranscriptAvailable": false,
+        "historicalContextVerified": true,
+        "contextEntities": 18,
+        "contextRelations": 23,
+        "contextHistoricalEvents": 7,
+        "imagePortraitsConfigured": 3,
+        "imageWikipediaCandidates": 5,
+        "unresolvedHistoricalIdentity": "Pedro de Villamizar (epígrafe del vídeo, no biografía validada)"
       },
       {
         "order": 5,
