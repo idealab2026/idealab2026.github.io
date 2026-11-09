@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-10",
   "scope": "Acontecimientos fechados verificados durante la revisión de fuentes de La Telaraña. El episodio puede referirse al hecho, pero no constituye la fuente probatoria principal.",
   "reviewProtocol": {
     "required": [
@@ -1015,6 +1015,176 @@
           "f21-usaid"
         ],
         "methodologicalLimits": "Contexto documental fechado, no una reconstrucción del texto pronunciado ni prueba de las interpretaciones del programa."
+      }
+    },
+    {
+      "id": "study-f21-schuman-1950",
+      "y": 1950.3506849315067,
+      "t": "Robert Schuman presenta su propuesta de integración del carbón y el acero",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "La declaración de Robert Schuman, elaborada en cooperación con Jean Monnet, propuso poner bajo una autoridad común la producción de carbón y acero para reducir el riesgo de nuevas guerras europeas. Es un hito institucional documentado; la caracterización como golpe de Estado en la entrevista es un juicio político, no un hecho aceptado.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1950-05-09",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://commission.europa.eu/news-and-media/news/celebrating-75-years-europe-vision-reality-2025-05-09_en"
+        },
+        "relatedTelarana": [
+          "f21-schuman",
+          "f21-monnet",
+          "f21-eu"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f21-usaid-1961",
+      "y": 1961.7083333333333,
+      "t": "La Ley de Ayuda Exterior de 1961 establece la base de USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "La ley estadounidense de ayuda exterior de septiembre de 1961 ordenó centralizar programas de asistencia. Es contexto fundacional independiente de las afirmaciones de Lorenzo Ramírez sobre usos políticos posteriores.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "1961-09",
+        "datePrecision": "mes",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://history.state.gov/milestones/1961-1968/pl-480"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "f21-usaid-orden"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f21-rand-2019",
+      "y": 2019.309589041096,
+      "t": "RAND publica un resumen de opciones estadounidenses para presionar a Rusia",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "RAND publicó un resumen de investigación sobre opciones económicas, políticas y militares para imponer costes a Rusia. El trabajo analiza costes y riesgos. No demuestra que fuera un plan gubernamental vinculante ni una decisión de desindustrializar Europa.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2019-04-24",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://www.rand.org/pubs/research_briefs/RB10014.html"
+        },
+        "relatedTelarana": [
+          "f21-rand",
+          "f21-russia"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f21-stargate-2025",
+      "y": 2025.054794520548,
+      "t": "OpenAI y sus socios anuncian el proyecto Stargate",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "El 21 de enero de 2025 se anunció el proyecto de inversión en infraestructura de inteligencia artificial en EEUU, con SoftBank, OpenAI, Oracle y MGX como financiadores iniciales. Las cifras anunciadas son compromisos y previsiones, no desembolsos comprobados de todo el importe.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "2025-01-21",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://openai.com/es-ES/index/announcing-the-stargate-project/"
+        },
+        "relatedTelarana": [
+          "f21-stargate",
+          "f21-openai"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f18-epstein-act-2025",
+      "y": 2025.8821917808218,
+      "t": "Se promulga en EEUU la Epstein Files Transparency Act",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 18 · referencia externa contrastada",
+      "d": "La ley estadounidense de transparencia documental sobre Epstein se promulgó el 19 de noviembre de 2025. La promulgación es antecedente acreditado del anuncio de publicación posterior de archivos.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "2025-11-19",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 18,
+        "sourceTitle": "Epstein, Israel y élites · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files"
+        },
+        "relatedTelarana": [
+          "f18-doj",
+          "f18-epstein",
+          "f18-episodio"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f18-doj-fbi-memo-2025",
+      "y": 2025.5416666666667,
+      "t": "El DOJ y el FBI difunden sus conclusiones de revisión del material Epstein",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 18 · referencia externa contrastada",
+      "d": "Un memorando DOJ/FBI de julio de 2025 señaló que su revisión no halló una lista incriminatoria de clientes ni pruebas creíbles de chantaje a personas prominentes. Se registra como conclusión institucional fechada de aquella revisión, no como prueba definitiva de ausencia de toda información adicional.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "2025-07",
+        "datePrecision": "mes",
+        "status": "hecho_documentado",
+        "sourceOrder": 18,
+        "sourceTitle": "Epstein, Israel y élites · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://www.justice.gov/opa/media/1407001/dl"
+        },
+        "relatedTelarana": [
+          "f18-doj",
+          "f18-epstein"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
       }
     }
   ]
