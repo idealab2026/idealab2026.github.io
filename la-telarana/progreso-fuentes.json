@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 1,
-    "inReview": 6,
-    "notStarted": 62,
+    "inReview": 7,
+    "notStarted": 61,
     "pending": 68,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -44,10 +44,10 @@
     }
   ],
   "nextSource": {
-    "order": 7,
-    "videoId": "oGIlCmHsc4g",
-    "status": "pendiente_inicio",
-    "sourceType": "youtube"
+    "order": 8,
+    "videoId": "i4aTDf0yBac",
+    "sourceType": "youtube",
+    "status": "pendiente_inicio"
   },
   "inReview": [
     {
@@ -245,15 +245,46 @@
       "verifiedFullTranscriptContent": true,
       "transcriptSha256VerifiedDriveRoundTrip": true,
       "firstPassTopicIndexCount": 13
+    },
+    {
+      "order": 7,
+      "videoId": "oGIlCmHsc4g",
+      "title": "The Wild Project #312 - Javi Chicote | Dentro de la cárcel más secreta del mundo, Espías y corruptos",
+      "sourceUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
+      "status": "transcripcion_externa_localizada_19_temas_indexados_doc_drive_sin_texto_integrado",
+      "reviewComplete": false,
+      "sourceType": "youtube",
+      "docTranscriptCreated": true,
+      "docTranscriptUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
+      "transcriptDocHasFullText": false,
+      "transcriptTextFromNotebookLmImported": false,
+      "externalTranscriptAvailable": true,
+      "externalTranscriptUrl": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
+      "transcriptTimecodeSource": "Metacast · transcripción automática con minutajes aproximados",
+      "transcriptAudioMatched": false,
+      "graphNodesContextualized": 24,
+      "graphRelationsContextualized": 24,
+      "biographiesContextualized": 8,
+      "portraitLookupsConfigured": 9,
+      "imagesRuntimeVerified": 0,
+      "timelineVerifiedEventsCommitted": 5,
+      "timelineEventIds": [
+        "study-v7-guantanamo-primeros-detenidos-2002",
+        "study-v7-mocion-censura-2018",
+        "study-v7-premio-chicote-apm-2019",
+        "study-v7-supremo-guertel-2020",
+        "study-v7-supremo-ausbanc-manos-limpias-2024"
+      ],
+      "qualityNotes": "La ficha tiene 19 apartados temporales y notas documentales originales, pero no el texto íntegro; está localizable externamente en Metacast. La copia completa de NotebookLM o un archivo aportado por el usuario siguen pendientes. Se han clasificado testimonios del entrevistado sin dar por probadas acusaciones. Hechos independientes: Congreso 2018, Armada de EE.UU. 2002, galardón APM 2019, Supremo Gürtel 2020 y absolución Ausbanc-Manos Limpias 2024. La fecha de la visita personal a Guantánamo no está verificada."
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 27,
+    "committedVerifiedEvents": 32,
     "fromReviewedSource": 5,
-    "fromSourceInReview": 15,
+    "fromSourceInReview": 20,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -281,6 +312,13 @@
         "study-v4-lerma-venta-corona-1601",
         "study-v4-regencia-maria-cristina-1833",
         "study-v4-straperlo-congreso-1935"
+      ],
+      "7": [
+        "study-v7-guantanamo-primeros-detenidos-2002",
+        "study-v7-mocion-censura-2018",
+        "study-v7-premio-chicote-apm-2019",
+        "study-v7-supremo-guertel-2020",
+        "study-v7-supremo-ausbanc-manos-limpias-2024"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -637,19 +675,32 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 7,
-        "status": "pendiente",
+        "status": "en_revision",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
-          "docTranscriptionCreated": false,
+          "initiated": true,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
-        }
+          "lastUpdated": "2026-11-09"
+        },
+        "sourceData": "podcast-wild-312-chicote.js",
+        "externalTranscriptUrl": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
+        "fullTranscriptAccessibleExternally": true,
+        "docTranscriptHasFullText": false,
+        "episodePublishedAt": "2025-01-23",
+        "episodeDurationMinutes": 314,
+        "indexedEpisodeSections": 19,
+        "graphContextNodes": 24,
+        "graphContextEdges": 24,
+        "curatedBiographies": 8,
+        "portraitLookupCandidates": 9,
+        "portraitRuntimeVerified": 0,
+        "timelineVerifiedEvents": 5
       },
       {
         "order": 8,
