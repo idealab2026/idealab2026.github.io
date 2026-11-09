@@ -4,6 +4,13 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const source=fs.readFileSync('la-telarana/graph-3d.js','utf8');
+const page=fs.readFileSync('la-telarana/index.html','utf8');
+const fullPanel=page.match(/\.graph-panel > #stage3d,\s*\.graph-panel > #network\{([^}]*)\}/);
+assert(fullPanel,'3D stage and SVG must share full-panel CSS sizing');
+assert(/position:\s*absolute;/.test(fullPanel[1]),'stage must be positioned within its panel');
+assert(/height:\s*100%;/.test(fullPanel[1]),'stage height must equal panel height');
+const canvasFill=page.match(/\.graph-panel > #stage3d canvas\{([^}]*)\}/);
+assert(canvasFill&&/height:\s*100%;/.test(canvasFill[1]),'3D canvas must fill its stage');
 let time=0;
 const frames=[];
 const env={
