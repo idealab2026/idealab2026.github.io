@@ -115,7 +115,14 @@ var direct=0,contextual=0;
 d.nodes.forEach(function(n){
  var key=n.id.replace(/^cv26-/,""),note=n.podcastNotes&&n.podcastNotes[0];
  if(!note)return;
- if(note.status==="fuente-externa")return;
+ if(note.status==="fuente-externa"){
+  note.text="Esta referencia se conserva exclusivamente como contexto periodístico sobre una reunión política. "+
+  note.text+" La identidad del asistente procede del artículo enlazado, NO de una mención inequívoca en la transcripción de Villarejo. "+
+  "No inferir delito, autorización de acciones, recepción concreta de materiales ni conocimiento de su contenido por el mero hecho de aparecer en la relación periodística. "+
+  "Para completar el expediente habría que contrastar artículos, declaraciones y documentación judicial originales.";
+  n.review={kind:"contexto externo",source:note.source,reviewDate:"2026-11-09",scope:"no atribuible directamente a entrevista"};
+  return;
+ }
  var authored=blocks[key]||persons[key]||orgs[key];
  if(authored){direct++;} else {
   var rel=d.edges.filter(function(e){return e.a===n.id||e.b===n.id});
@@ -151,6 +158,15 @@ var relationDetails={
 };
 function secs(n){var s=Math.max(0,Number(n)||0);return Math.floor(s/3600)+":"+String(Math.floor(s%3600/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
 d.edges.forEach(function(e){
+ if(e.podcastNotes&&e.podcastNotes[0]&&e.podcastNotes[0].status==="fuente-externa"){
+  e.note="VÍNCULO EXTRAÍDO DE PRENSA, NO DEL AUDIO: "+e.note+
+   " La información disponible sobre la reunión en Ferraz es una referencia externa al podcast. "+
+   "El registro NO supone que esta persona haya cometido ilícitos ni que conozcamos qué documentación recibió o revisó. "+
+   "La cita procede del artículo periodístico enlazado y debe contrastarse con sus fuentes primarias.";
+  e.podcastNotes[0].text=e.note;
+  e.review={source:e.podcastNotes[0].source,reviewDate:"2026-11-09",evidence:"fuente periodistica externa"};
+  return;
+ }
  var a=e.a.replace(/^cv26-/,""),b=e.b.replace(/^cv26-/,""),key=[a,b].join("|"),reverse=[b,a].join("|");
  var linked=blocks[a]||blocks[b];
  var focus=relationDetails[key]||relationDetails[reverse];
