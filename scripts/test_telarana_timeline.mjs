@@ -41,6 +41,7 @@ assert.equal(bySource[1],5,"Carga histórica de la fuente 1");
 assert.equal(bySource[2],8,"Ocho hitos contrastados de la fuente 02");
 assert.equal(bySource[4],7,"Siete hitos de historia española de la fuente 04");
 assert.equal(bySource[7],5,"Cinco hechos independientes documentados de la fuente 07");
+assert.equal(bySource[8],1,"Una resolución judicial externa que contextualiza la fuente 08");
 assert.equal(bySource.suplementaria,7,"Siete hechos contrastados de fuente no numerada");
 assert.equal(progress.timeline.committedVerifiedEvents,feed.items.length,"Progreso histórico inconsistente");
 assert.equal(progress.timeline.fromSupplementalResearch,bySource.suplementaria,"La investigación suplementaria debe contabilizarse por separado");
