@@ -220,6 +220,8 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-wild-253-villarejo.js?v=20261109-source06-full-transcript"></script>
 <script src="./podcast-wild-312-chicote.js?v=20261109-source07-1"></script>
 <script src="./podcast-vaquero-67-villarejo.js?v=20261109-source08-1"></script>
+<script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261109-f18-1"></script>
+<script src="./fuente-21-orden-mundial-editorial.js?v=20261109-f21-1"></script>
 <script src="./photo-catalog.js?v=20261109-source08-1"></script>
 <script src="./person-biographies.js?v=20261109-source08-bios"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
@@ -397,6 +399,9 @@ function load(){
  if(window.IDEA_TELARANA_SOURCE08_EDITORIAL){
   mergeNewEpisode(window.IDEA_TELARANA_SOURCE08_EDITORIAL);
  }
+ // Fuentes 18 y 21: índice editorial verificado; NO hay transcripción íntegra todavía.
+ if(window.IDEA_TELARANA_SOURCE18_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE18_EDITORIAL);
+ if(window.IDEA_TELARANA_SOURCE21_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE21_EDITORIAL);
  seedError=!data.nodes.length;
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
