@@ -38,6 +38,8 @@ jobs:
         run: node scripts/test_telarana_person_bios.mjs
       - name: Validar integración documental entre La Telaraña y Línea de la Historia
         run: node scripts/test_telarana_timeline.mjs
+      - name: Validar tabla de progreso de fuentes
+        run: node scripts/test_telarana_source_progress.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
@@ -64,6 +66,8 @@ jobs:
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp la-telarana/podcast-vaquero-150.js dist/la-telarana/podcast-vaquero-150.js
           cp la-telarana/investigacion-frattini-contexto.js dist/la-telarana/investigacion-frattini-contexto.js
+          cp la-telarana/progreso-fuentes.json dist/la-telarana/progreso-fuentes.json
+          cp la-telarana/source-progress.js dist/la-telarana/source-progress.js
           cp la-telarana/podcast-coronel-villarejo-2026.js dist/la-telarana/podcast-coronel-villarejo-2026.js
           cp la-telarana/podcast-coronel-villarejo-2026-revision.js dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           cp la-telarana/podcast-coronel-elecciones-2026-preliminar.js dist/la-telarana/podcast-coronel-elecciones-2026-preliminar.js
@@ -88,6 +92,10 @@ jobs:
           grep -q "IDEA_TELARANA_ONENOTE" dist/la-telarana/one-note-seed.js
           test -s dist/la-telarana/podcast-vaquero-150.js
           grep -q "IDEA_TELARANA_PODCAST_150" dist/la-telarana/podcast-vaquero-150.js
+          test -s dist/la-telarana/progreso-fuentes.json
+          test -s dist/la-telarana/source-progress.js
+          node --check dist/la-telarana/source-progress.js
+          grep -q "source-progress.js" dist/la-telarana/index.html
           test -s dist/la-telarana/investigacion-frattini-contexto.js
           node --check dist/la-telarana/investigacion-frattini-contexto.js
           grep -q "IDEA_TELARANA_FRATTINI_EXTERNAL" dist/la-telarana/investigacion-frattini-contexto.js
