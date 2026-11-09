@@ -53,7 +53,7 @@
       "order": 2,
       "videoId": "qARZpON9_j0",
       "title": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA",
-      "status": "revision_textual_integra_publicada_pendiente_minutajes_y_verificacion_exhaustiva",
+      "status": "contrastes_18_afirmaciones_y_8_hitos_publicados_aun_sin_audio_minutado",
       "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
       "publishedAt": "2026-10-12",
       "publicData": "podcast-coronel-elecciones-2026-preliminar.js",
@@ -66,9 +66,9 @@
       "rawTranscriptAvailable": true,
       "verifiedMinuteReferences": 0,
       "reviewComplete": false,
-      "qualityNotes": "Los 15.484 términos aproximados y la secuencia textual han sido analizados. La transcripción es una línea sin separación por hablante y sin marcas temporales; no atribuir minutos ni presentar acusaciones como hechos. Faltan cotejo con audio, minutos localizados, contraste extendido sobre afirmaciones graves y referencias bibliográficas del libro.",
+      "qualityNotes": "Transcripción completa revisada, sin minutajes ni identificación de hablante por segmento. Contrastadas 18 afirmaciones o bloques con fuentes externas, incluidos avisos oficiales del CNI, resolución de la Eurocámara, retornos y límites jurídicos. Cotejo del audio y minutajes todavía no disponible. No hay prueba pública para varias acusaciones de gravedad: relaciones ilícitas, espionaje contra Bolaños, supuesta reunión 15/03 ni detalles privados.",
       "primaryOfficialSource": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
-      "timelineVerifiedEventsCommitted": 7,
+      "timelineVerifiedEventsCommitted": 8,
       "timelineEventIds": [
         "study-v2-ceuta-aviso-2026",
         "study-v2-ceuta-crisis-2026",
@@ -76,7 +76,8 @@
         "study-v2-ceuta-seguridad-nacional-2026",
         "study-v2-ceuta-plan-choque-2026",
         "study-v2-pegasus-revelacion-2022",
-        "study-v2-elecciones-convocatoria-2026"
+        "study-v2-elecciones-convocatoria-2026",
+        "study-v2-ceuta-resolucion-parlamento-europeo-2026"
       ],
       "biographiesContextualized": 3,
       "biographiesContextualizedIds": [
@@ -104,6 +105,21 @@
           "date": "2026-10-05",
           "event": "Convocatoria oficial de elecciones del 29N por Real Decreto 806/2026",
           "url": "https://www.boe.es/eli/es/rd/2026/10/05/806"
+        },
+        {
+          "date": "2026-07-29",
+          "event": "CNI: WhatsApp y aviso a Guardia Civil, más nota a DGST y DGED marroquíes",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx"
+        },
+        {
+          "date": "2026-09-17",
+          "event": "Parlamento Europeo: Resolución 2026/2870(RSP) sobre amenazas híbridas e instrumentalización de la migración",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Comisión Europea: principios de retorno individual, derecho de asilo y no devolución",
+          "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/irregular-migration-and-return/effective-firm-and-fair-eu-return-and-readmission-policy-0_en"
         }
       ],
       "transcriptProvenance": "Texto generado mediante nlm source content y aportado directamente por el usuario el 09/11/2026. No se sube el texto original al sitio público.",
@@ -113,10 +129,10 @@
       "transcriptAudioMatched": false,
       "textualReviewComplete": true,
       "transcriptReviewFile": "podcast-coronel-elecciones-2026-transcript-review.js",
-      "transcriptReviewNodes": 28,
-      "transcriptReviewEdges": 27,
+      "transcriptReviewNodes": 33,
+      "transcriptReviewEdges": 34,
       "verifiedIndependentBiographies": 13,
-      "structuredClaims": 14,
+      "structuredClaims": 18,
       "unsupportedDatedClaimsExcludedFromTimeline": 5,
       "citationAnchorsNeedTimecoding": true
     }
@@ -125,9 +141,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 19,
+    "committedVerifiedEvents": 20,
     "fromReviewedSource": 5,
-    "fromSourceInReview": 3,
+    "fromSourceInReview": 8,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -144,7 +160,8 @@
         "study-v2-ceuta-seguridad-nacional-2026",
         "study-v2-ceuta-plan-choque-2026",
         "study-v2-pegasus-revelacion-2022",
-        "study-v2-elecciones-convocatoria-2026"
+        "study-v2-elecciones-convocatoria-2026",
+        "study-v2-ceuta-resolucion-parlamento-europeo-2026"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -318,11 +335,11 @@
         "importLine": 2,
         "status": "en_revision",
         "reviewComplete": false,
-        "contextEvents": 5,
+        "contextEvents": 8,
         "biographiesContextualized": 3,
         "textualReviewComplete": true,
         "transcriptAvailable": true,
-        "claimsAudited": 14
+        "claimsAudited": 18
       },
       {
         "order": 3,
