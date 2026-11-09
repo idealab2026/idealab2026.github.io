@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 1,
-    "inReview": 5,
-    "notStarted": 63,
+    "inReview": 6,
+    "notStarted": 62,
     "pending": 68,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -44,8 +44,8 @@
     }
   ],
   "nextSource": {
-    "order": 6,
-    "videoId": "fxvXXVrkRb4",
+    "order": 7,
+    "videoId": "oGIlCmHsc4g",
     "status": "pendiente_inicio",
     "sourceType": "youtube"
   },
@@ -211,6 +211,29 @@
       "judicialFilesIndependentlyVerified": 0,
       "userRequestedSourceConsolidation": true,
       "qualityNotes": "Portal partidista con alegaciones judiciales contra numerosas personas. Solo se ha verificado que el PP lo promociona, su temática y el estado de su presentación. No se han validado causas, imputaciones o condenas una por una. Las cifras estadísticas del sitio parecen mezclar universos distintos. No publicar en La Telaraña acusaciones individuales sin autos y resoluciones."
+    },
+    {
+      "order": 6,
+      "videoId": "fxvXXVrkRb4",
+      "title": "The Wild Project #253 ft Comisario Villarejo | La mentira del 11M, Intentan matarle, Espías rusas",
+      "sourceUrl": "https://www.youtube.com/watch?v=fxvXXVrkRb4",
+      "status": "transcripcion_externa_indexada_doc_creado_sin_texto_integrado",
+      "reviewComplete": false,
+      "docTranscriptCreated": true,
+      "docTranscriptUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit?usp=drivesdk",
+      "transcriptDocHasFullText": false,
+      "transcriptTextFromNotebookLmImported": false,
+      "externalFullTranscriptAvailable": true,
+      "externalTranscriptUrl": "https://podcasts.happyscribe.com/the-wild-project/the-wild-project-253-ft-comisario-villarejo-la-mentira-del-11m-intentan-matarle-espias-rusas",
+      "captionsSource": "HappyScribe, reconocimiento automático de voz con marcas de tiempo",
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 8,
+      "sourceRelationsDocumented": 8,
+      "biographiesContextualized": 3,
+      "imagesViaWikipediaCandidate": 3,
+      "imagesRuntimeVerified": 0,
+      "sourceTimelineVerifiedEventsCommitted": 0,
+      "qualityNotes": "Documento Drive creado con enlace a transcripción completa de terceros y resumen índice, pero NO contiene copia íntegra. Extraer fuente NotebookLM 21bd9782-b363-4992-bb5a-f945bcc6ca9c para importar texto propio y guardar checksum. La transcripción disponible externamente es automática, contiene errores y no equivale a prueba de las acusaciones. No aprobar revisión sin contrastar declaraciones y cotejar audio."
     }
   ],
   "timeline": {
@@ -559,19 +582,28 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 6,
-        "status": "pendiente",
+        "status": "en_revision",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
-          "docTranscriptionCreated": false,
+          "initiated": true,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit?usp=drivesdk",
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
-        }
+          "lastUpdated": "2026-11-09"
+        },
+        "sourceData": "podcast-wild-253-villarejo.js",
+        "externalTranscriptUrl": "https://podcasts.happyscribe.com/the-wild-project/the-wild-project-253-ft-comisario-villarejo-la-mentira-del-11m-intentan-matarle-espias-rusas",
+        "fullTranscriptAccessibleExternally": true,
+        "docTranscriptHasFullText": false,
+        "sourceNodesContextualized": 8,
+        "sourceRelationsContextualized": 8,
+        "sourceBiographiesPrepared": 3,
+        "directImageCountVerified": 0,
+        "imageWikipediaLookupCandidates": 3
       },
       {
         "order": 7,
