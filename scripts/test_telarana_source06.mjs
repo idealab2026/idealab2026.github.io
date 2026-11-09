@@ -29,7 +29,8 @@ const ids=new Set(d.nodes.map(n=>n.id));
 assert.equal(ids.size,8);
 for(const n of d.nodes){
  assert(n.note.length>120,"No identity/context: "+n.id);
- assert(n.podcastNotes.every(x=>x.timeSec!==undefined&&x.timeSec!==null),"Missing timed reference: "+n.id);
+ assert(n.podcastNotes.some(x=>typeof x.timeSec==="number"),"Missing timed topic reference: "+n.id);
+ assert(n.podcastNotes.every(x=>typeof x.timeSec==="number"||(x.timeSec===null&&x.status==="archivo_original_usuario"&&x.source.includes("docs.google.com"))),"Untimed notes must be explicitly identified as source document without verified minute: "+n.id);
 }
 for(const edge of d.edges){
  assert(ids.has(edge.a)&&ids.has(edge.b),"Unknown endpoint "+edge.id);
