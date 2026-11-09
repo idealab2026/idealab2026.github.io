@@ -176,6 +176,20 @@ body.graph-expanded{overflow:hidden}
  height:100%;
 }
 
+/* Biografías independientes: identidad profesional primero, relato después.
+   Las fuentes de prensa/enciclopedia no se confunden con las del podcast. */
+.inspector .biography-section{border-top:1px solid #4b5b6b;margin-top:19px;padding-top:13px}
+.inspector .biography-section h3,.inspector .research-section h3{font-size:.94rem;color:#e7b479;font-weight:800;margin:7px 0 11px}
+.inspector .biography-section p{font-size:.86rem;line-height:1.67;color:#e0e9f1;margin:0 0 11px;text-align:left}
+.inspector .biography-source{font-size:.73rem;color:#9ab9cb;display:block;margin:9px 0 15px}
+.inspector .biography-source a{color:#9dd7ef;text-decoration:underline;text-underline-offset:2px}
+.inspector .biography-limited{font-size:.77rem;color:#bac5d0;line-height:1.55;background:#142331;border-left:2px solid #607f94;padding:10px 12px;border-radius:3px}
+.inspector .research-section{border-top:1px solid #435365;margin-top:13px;padding-top:12px}
+.inspector .research-section .original-note{max-height:240px;overflow:auto;margin-top:9px}
+.inspector .research-section details{background:#121d29;border:1px solid #3c4e60;border-radius:8px;padding:10px}
+.inspector .research-section summary{cursor:pointer;color:#cfdfeb;font-size:.82rem}
+.inspector .research-section .source-hint{font-size:.74rem;line-height:1.5}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Descargar datos</button><span class="readonly-note" aria-label="Web pública de solo lectura">Consulta pública · Solo lectura</span></div>
@@ -189,6 +203,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-coronel-villarejo-2026-revision.js?v=20261109-4"></script>
 <script src="./podcast-coronel-elecciones-2026-preliminar.js?v=20261109-1"></script>
 <script src="./photo-catalog.js?v=20261109-2"></script>
+<script src="./person-biographies.js?v=20261109-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261109-orbe2-zoom"></script>
 <script>
@@ -468,10 +483,128 @@ function podcastSourceLink(parent,url,title){
  if(!hosts.includes(parsed.hostname)&&!["zarza.com","www.zarza.com","newtral.es","www.newtral.es"].includes(parsed.hostname))return;
  var link=N("a",title||"Consultar fuente");link.href=parsed.href;link.target="_blank";link.rel="noopener noreferrer";link.className="podcast-link";parent.append(link)
 }
-function showPodcastNotes(panel,notes){
+/* Biografía separada de alegaciones y transcripciones de los entrevistados.
+   Solo se consultan artículos con identidad editorial ya mapeada; nunca
+   se hace una búsqueda automática por nombre de un homónimo. */
+var biographyCache=new Map(),biographyRequests=new Map();
+function biographyCatalog(){
+ return window.IDEA_TELARANA_BIOGRAPHIES||{wikiPages:{},curated:{}};
+}
+function biographyPage(node){
+ var catalogs=[biographyCatalog().wikiPages||{},window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS||{}];
+ for(var entries of catalogs){
+  var item=entries[node.id];
+  if(item&&["es","en"].includes(item.lang)&&typeof item.title==="string"&&item.title.length<160)
+   return{lang:item.lang,title:item.title};
+ }
+ return null;
+}
+function biographyUrl(lang,title){
+ if(!["en","es"].includes(lang)||typeof title!=="string")return"";
+ return "https://"+lang+".wikipedia.org/wiki/"+encodeURIComponent(title.replace(/ /g,"_"));
+}
+async function wikipediaBiographyPage(lang,title){
+ if(!["en","es"].includes(lang))return null;
+ var params=new URLSearchParams({
+  action:"query",format:"json",origin:"*",redirects:"1",
+  prop:"extracts|langlinks|pageprops",exintro:"1",explaintext:"1",
+  exsentences:"4",lllang:"es",lllimit:"1",titles:title
+ });
+ var res=await fetch("https://"+lang+".wikipedia.org/w/api.php?"+params.toString(),{
+  credentials:"omit",mode:"cors"
+ });
+ if(!res.ok)throw Error("Wikipedia "+res.status);
+ var json=await res.json(),pages=Object.values(json.query&&json.query.pages||{});
+ var page=pages.find(function(p){return p&&p.pageid>0&&!p.missing&&!p.invalid});
+ if(!page||page.pageprops&&Object.prototype.hasOwnProperty.call(page.pageprops,"disambiguation"))
+  return null;
+ var extract=String(page.extract||"").replace(/\s+/g," ").trim();
+ var link=Array.isArray(page.langlinks)?page.langlinks.find(function(l){return l.lang==="es"}):null;
+ return{title:page.title,lang:lang,text:extract,spanishTitle:link&&(link["*"]||link.title)||""};
+}
+async function getIndependentBiography(node){
+ var cached=biographyCache.get(node.id);if(cached)return cached;
+ if(biographyRequests.has(node.id))return biographyRequests.get(node.id);
+ var spec=biographyPage(node);if(!spec)return null;
+ var request=(async function(){
+  try{
+   var first=await wikipediaBiographyPage(spec.lang,spec.title);
+   if(!first)return null;
+   var best=first;
+   if(spec.lang==="en"&&first.spanishTitle){
+    try{
+     var spanish=await wikipediaBiographyPage("es",first.spanishTitle);
+     if(spanish&&spanish.text)best=spanish;
+    }catch(e){/* Conservar artículo original inglés verificado. */}
+   }
+   if(!best.text)return null;
+   var bio={text:best.text.slice(0,1250),lang:best.lang,
+    source:biographyUrl(best.lang,best.title),title:best.title};
+   biographyCache.set(node.id,bio);return bio;
+  }catch(e){return null}
+  finally{biographyRequests.delete(node.id)}
+ })();
+ biographyRequests.set(node.id,request);return request;
+}
+function showPersonBiography(panel,node){
+ var section=N("section",null,"biography-section");
+ section.append(N("h3","Quién es / trayectoria"));
+ var catalog=biographyCatalog(),curated=(catalog.curated||{})[node.id];
+ var context=N("p");section.append(context);
+ var refs=N("div",null,"biography-source");section.append(refs);
+ function citation(url,label){
+  if(!/^https:\/\//.test(url))return;
+  var link=N("a",label);link.href=url;link.target="_blank";link.rel="noopener noreferrer";
+  if(refs.childNodes.length)refs.append(document.createTextNode(" · "));
+  refs.append(link);
+ }
+ if(curated&&curated.text&&curated.source){
+  context.textContent=curated.text;
+  citation(curated.source,curated.sourceTitle||"Fuente biográfica independiente");
+  if(curated.also)citation(curated.also,"Contraste adicional");
+  panel.append(section);return;
+ }
+ var role=String(node.subtitle||"").trim();
+ var usableRole=role&&!/^perfil citado en el episodio$/i.test(role);
+ var awaiting=biographyPage(node);
+ context.textContent=usableRole?
+  "Perfil profesional registrado: "+role+".":"Aún no hay una reseña biográfica independiente de identidad confirmada.";
+ var note=N("div",awaiting?"Consultando biografía pública independiente…":
+  "Biografía externa pendiente de identificar o verificar. No se atribuyen nacionalidad, residencia ni trayectoria a partir de una entrevista.","biography-limited");
+ section.append(note);panel.append(section);
+ if(!awaiting||typeof fetch!=="function")return;
+ getIndependentBiography(node).then(function(result){
+  if(!context.isConnected||!note.isConnected)return;
+  if(!result){
+   note.textContent="No se ha podido verificar una biografía independiente en este momento. La trayectoria profesional queda pendiente de revisión documental.";
+   return;
+  }
+  context.textContent=result.text;
+  citation(result.source,"Biografía: Wikipedia"+(result.lang==="en"?" (inglés)":""));
+  note.remove();
+ });
+}
+function showPersonResearch(panel,node){
+ var section=N("section",null,"research-section");
+ section.append(N("h3","Qué dicen las fuentes"));
+ if(node.archiveNote){
+  if(node.note)section.append(N("p",node.note,"source-hint"));
+  var details=N("details"),summary=N("summary","Consultar texto original de OneNote · sin verificación independiente");
+  details.append(summary,N("div",node.archiveNote,"original-note"));section.append(details);
+ }else if(node.note&&(!Array.isArray(node.podcastNotes)||!node.podcastNotes.length)){
+  section.append(N("p",node.note,"source-hint"));
+ }
+ if(Array.isArray(node.podcastNotes)&&node.podcastNotes.length){
+  showPodcastNotes(section,node.podcastNotes,"Aportaciones de podcasts y documentos");
+ }else if(!node.archiveNote&&!node.note){
+  section.append(N("p","No hay testimonios o documentos procesados para esta persona.","source-hint"));
+ }
+ panel.append(section);
+}
+function showPodcastNotes(panel,notes,heading){
  if(!Array.isArray(notes)||!notes.length)return;
  var section=N("section",null,"podcast-section");
- section.append(N("h3","Fuentes y aportaciones"));
+ section.append(N("h3",heading||"Fuentes y aportaciones"));
  notes.forEach(function(note){
   var entry=N("div",null,"podcast-entry"),title=N("small",(note.title||"Podcast")+" · "+(note.publishedAt||""));
   entry.append(title);
@@ -525,7 +658,7 @@ function showRelationshipEndpoints(panel,edge){
 }
 function inspect(){syncInspectorDrawer();if(isGraphExpanded())$("inspector").scrollTop=0;var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para consultar sus detalles y fuentes."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
-if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.archiveNote){p.append(N("div","Transcripción original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"));}else if(obj.note){p.append(N("p",obj.note));}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showPodcastNotes(p,obj.podcastNotes);showNodeRelationships(p,obj);}
+if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.kind==="Persona"){showPersonBiography(p,obj);showPersonResearch(p,obj)}else{if(obj.archiveNote){p.append(N("div","Texto original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"))}else if(obj.note){p.append(N("p",obj.note))}showPodcastNotes(p,obj.podcastNotes)}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showNodeRelationships(p,obj);}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",relationStatusLabel(obj),"badge"));showRelationshipEndpoints(p,obj);if(obj.note)p.append(N("p",obj.note));if(Array.isArray(obj.relatedTypes)&&obj.relatedTypes.length){var tags=N("p","Otros tipos de vínculo descritos: "+obj.relatedTypes.join(" · "),"source-hint");p.append(tags)}showPodcastNotes(p,obj.podcastNotes);if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,"Abrir minuto de la relación");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
 }
 // Solo lectura: no existen acciones de editar o eliminar.
