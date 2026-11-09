@@ -66,9 +66,12 @@ def chapter_scope(filename: str) -> tuple[int, int] | None:
     text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
     text = re.sub(r"[^a-z0-9 .:#ºn°\s–-]", " ", text)
     text = re.sub(r"\s+", " ", text)
-    match = CHAPTER_RE.search(text)
-    if not match:
+    matches = list(CHAPTER_RE.finditer(text))
+    # Two independent chapter identifiers (e.g. original video number and
+    # Parte II/Capitulo VII) are not grounds for an automatic attribution.
+    if len(matches) != 1:
         return None
+    match = matches[0]
     first = int(match.group(1))
     last = int(match.group(2) or first)
     if not 1 <= first <= last <= 300 or last - first > 20:
