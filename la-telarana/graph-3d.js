@@ -72,10 +72,14 @@ function make(options){
  }
  function color(hex,a){const v=parseInt(hex.slice(1),16);return "rgba("+((v>>16)&255)+","+((v>>8)&255)+","+(v&255)+","+a+")"}
  function visualRadius(p,emphasized=false){
-  // Vista general: densidad adaptativa. En pantallas estrechas, los nodos
-  // se representan como puntos pequeños y mantienen un área táctil amplia.
+  // El tamaño sigue a la escala real del orbe. La densidad móvil SOLO
+  // compacta la vista panorámica; al ampliar desaparece progresivamente.
+  // Antes el máximo de 23px multiplicado por .36 impedía ver fotografías.
   const density=clip(Math.min(w/1600,h/900),.36,1);
-  return clip((emphasized?30:22)*p.scale,emphasized?7.5:4.3,emphasized?32:23)*density;
+  const detail=clip((p.scale-.16)/1.30,0,1);
+  const multiplier=density+(1-density)*detail;
+  const size=(emphasized?30:22)*p.scale*multiplier;
+  return clip(size,1.5,emphasized?66:56);
  }
  function drawOrb(){
   const cx=w/2+panX,cy=h/2+panY,rr=ORB_RADIUS*Math.min(w/1450,h/950)*zoom;
@@ -202,11 +206,13 @@ function make(options){
    const p=pr.get(n.id),selected=selection?.kind==="node"&&selection.id===n.id,isHover=hover===n.id,isEndpoint=activeEndpoints.has(n.id),tint=topics.find(t=>t[0]===group(n))[2],onTheme=theme==="todos"||group(n)===theme;
    const rad=visualRadius(p,selected||isHover||isEndpoint);
    const density=clip(Math.min(w/1600,h/900),.36,1);
+   const detail=clip((p.scale-.16)/1.30,0,1);
+   const ringDensity=density+(1-density)*detail;
    const visibleDepth=clip(.70-p.depth/(ORB_RADIUS*2.9),.27,1);
    ctx.globalAlpha=(isEndpoint?1:(onTheme?focus&&mode==="focus"&&n.id!==focus?.58:1:.20))*visibleDepth;
-   ctx.beginPath();ctx.arc(p.x,p.y,rad+2*density*density,0,2*PI);
+   ctx.beginPath();ctx.arc(p.x,p.y,rad+Math.max(1,2*ringDensity),0,2*PI);
    ctx.fillStyle="#1a2b39";ctx.fill();
-   ctx.lineWidth=(selected||isEndpoint?3.4:2)*density;
+   ctx.lineWidth=(selected||isEndpoint?3.4:2)*ringDensity;
    ctx.strokeStyle=isEndpoint?"#fff2cb":tint;ctx.stroke();
    if(rad<5){
     // En la vista panorámica los avatares y letras diminutas se vuelven ilegibles.
@@ -217,8 +223,8 @@ function make(options){
    if(photo){
     let entry=cached.get(photo);if(!entry){const img=new Image();entry={img,state:"loading"};cached.set(photo,entry);img.onload=()=>{entry.state="ok";redraw()};img.onerror=()=>{entry.state="error";redraw()};img.src=photo}
     if(entry.state==="ok"){const img=entry.img;ctx.save();ctx.beginPath();ctx.arc(p.x,p.y,rad-1,0,2*PI);ctx.clip();const r=Math.max(2*rad/img.width,2*rad/img.height);ctx.drawImage(img,p.x-img.width*r/2,p.y-img.height*r/2,img.width*r,img.height*r);ctx.restore()}
-    else{ctx.font=clip(rad*1.15,7,14)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.33)}
-   }else{ctx.font=clip(rad*1.15,7,14)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.33)}
+    else{ctx.font="700 "+clip(rad*.82,8,38)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.28)}
+   }else{ctx.font="700 "+clip(rad*.82,8,38)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.28)}
    }
    if(selected||isHover||isEndpoint){
     const name=n.name.length>25?n.name.slice(0,24)+"…":n.name;
