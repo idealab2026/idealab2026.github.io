@@ -233,7 +233,7 @@
       "imagesViaWikipediaCandidate": 3,
       "imagesRuntimeVerified": 0,
       "sourceTimelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Transcripción textual íntegra de 257.517 caracteres y 50.473 palabras aportada por el usuario (Texto pegado(2).txt) importada en Google Docs nativo de IDEA LAB. Lectura posterior confirma todos los 170 bloques y extremos. Se ha guardado SHA-256 de archivo de origen. No se ha corroborado que el texto coincida exactamente con el contenido alojado en NotebookLM ni se ha cotejado el audio. Las acusaciones requieren verificación documental independiente; no marcar fuente completada.",
+      "qualityNotes": "Transcripción textual íntegra de 257.517 caracteres y 50.473 palabras aportada por el usuario (Texto pegado(2).txt) importada en Google Docs nativo de IDEA LAB. Lectura posterior confirma todos los 170 bloques y extremos. Se ha guardado SHA-256 de archivo de origen. No se ha corroborado que el texto coincida exactamente con el contenido alojado en NotebookLM ni se ha cotejado el audio. Las acusaciones requieren verificación documental independiente; no marcar fuente completada. Validación criptográfica: el SHA-256 recalculado desde el texto recuperado de Google Docs coincide exactamente con el SHA-256 del fichero original. Documento índice privado ampliado con 13 asuntos rastreables por posición y cadena de búsqueda; todavía no completada la contrastación de hechos.",
       "transcriptDocUrl": "https://docs.google.com/document/d/1SDtx6vm2W6_zSbPJ2NlRNCGNImtdJjycy-i3bUoT-2o/edit",
       "transcriptIndexDocUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit",
       "transcriptTextFromUserImported": true,
@@ -242,7 +242,9 @@
       "transcriptOriginalBlocks": 170,
       "transcriptOriginalSha256": "34e777038c189bf0ab64d64bc7ea220e954c5f55bc55ce32e1d5e7b50eab6bc6",
       "fullTranscriptVerifiedDriveReadback": true,
-      "verifiedFullTranscriptContent": true
+      "verifiedFullTranscriptContent": true,
+      "transcriptSha256VerifiedDriveRoundTrip": true,
+      "firstPassTopicIndexCount": 13
     }
   ],
   "timeline": {
@@ -621,7 +623,9 @@
         "originalTranscriptParagraphs": 170,
         "originalTranscriptSha256": "34e777038c189bf0ab64d64bc7ea220e954c5f55bc55ce32e1d5e7b50eab6bc6",
         "userSuppliedTranscriptName": "Texto pegado(2).txt",
-        "transcriptAudioMatched": false
+        "transcriptAudioMatched": false,
+        "transcriptSha256VerifiedDriveRoundTrip": true,
+        "transcriptTopicIndexCount": 13
       },
       {
         "order": 7,
