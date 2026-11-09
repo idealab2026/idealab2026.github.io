@@ -5,10 +5,10 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
     "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
     "url": "https://www.youtube.com/watch?v=MljyjDGTxkk",
     "publishedAt": "2026-02-08",
-    "reviewStage": "revision_textual_y_contrastes_documentales_focalizados_20261110",
+    "reviewStage": "revision_documental_texto_automatico_y_contrastes_2026-11-10",
     "transcriptAvailable": true,
     "sourceOrder": 18,
-    "methodologicalNote": "Solo integrantes anunciados y documentación externa independiente; la entrevista completa no se ha transcrito. Un título o una mención no son prueba de una conexión ilícita.",
+    "methodologicalNote": "Transcripción automática íntegra disponible y leída en Drive privado; ausencia de minutajes y cotejo de audio. Las hipótesis en el episodio no acreditan por sí solas delitos, operaciones o vínculos entre terceros.",
     "transcriptSource": "Google Docs privado IDEA LAB, texto automático de NotebookLM",
     "transcriptCharacters": 129774,
     "transcriptTimecodesAvailable": false,
@@ -20,7 +20,7 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "name": "Podcast · Epstein, EEUU e Israel (F18)",
       "kind": "Fuente",
       "subtitle": "Entrevista de Rubén Gisbert a Lorenzo Ramírez",
-      "note": "Fuente con transcripción íntegra de NotebookLM conservada en Drive privado. Identificación de interlocutores y bloques temáticos contrastados con texto automático. NO hay cotejo de audio ni minutajes, y las hipótesis de los participantes no se afirman como hechos.",
+      "note": "Entrevista del 8 de febrero de 2026; su transcripción automática íntegra se conserva en Drive institucional. Comprende archivos Epstein, EEUU-Israel-Irán, élites económicas y criptomonedas. Atribuciones y acusaciones se califican por su base probatoria; no hay minutajes verificados.",
       "topic3d": "global",
       "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
       "x": 5500,
@@ -33,26 +33,55 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "name": "Rubén Gisbert",
       "kind": "Persona",
       "subtitle": "Comunicador y abogado español",
-      "note": "Abogado y comunicador español. Promovió en sus canales el encuentro con Lorenzo Ramírez sobre el caso Epstein y geopolítica. En esta revisión únicamente está verificado su papel editorial; no se han extraído sus afirmaciones literales.",
+      "note": "Abogado y comunicador español. En el directo del 8 de febrero de 2026 presenta a Lorenzo Ramírez y plantea cuestiones sobre documentos Epstein, Oriente Medio, tecnología y mercados. Sus planteamientos en la conversación no constituyen verificación documental.",
       "topic3d": "espana",
       "source": "https://t.me/s/rubengisbertoficial?before=4100",
       "x": 5740,
       "y": 1820,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Epstein, Israel y élites occidentales",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Actúa como presentador y formula preguntas sobre la publicación del expediente Epstein, negociaciones geopolíticas y el papel del poder financiero. El texto automático no está diarizado ni cotejado con audio."
+        }
+      ]
     },
     {
       "id": "f18-lorenzo",
       "name": "Lorenzo Ramírez",
       "kind": "Persona",
       "subtitle": "Periodista y analista económico y geopolítico",
-      "note": "Periodista y analista especializado en economía, relaciones internacionales y sistema financiero. Fue anunciado como invitado para comentar la publicación de documentos de Epstein y el escenario geopolítico. No se imputan opiniones específicas sin transcripción.",
+      "note": "Periodista y analista económico y geopolítico. En la entrevista examina la publicación de archivos Epstein, la relación de Trump con las instituciones estadounidenses, las tensiones con Irán, los intereses financieros y Bitcoin. Parte de sus explicaciones son hipótesis, no relaciones demostradas.",
       "topic3d": "global",
       "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
       "x": 5980,
       "y": 1840,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Epstein, Israel y élites occidentales",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Analiza el anuncio de publicación de archivos de Jeffrey Epstein y expone su hipótesis sobre disputas internas en la política estadounidense. No se ha acreditado mediante estos documentos un mecanismo de chantaje o control de los dirigentes citados."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Epstein, Israel y élites occidentales",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Discute escenarios de negociaciones con Irán, las relaciones comerciales con China y la evolución de Bitcoin; sus pronósticos y explicaciones causales deben contrastarse independientemente."
+        }
+      ]
     },
     {
       "id": "f18-epstein",
