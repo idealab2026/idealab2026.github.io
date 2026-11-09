@@ -44,14 +44,25 @@ def chapter_interval(title):
 def source_scope(title):
     """Unambiguously map a source title to a chapter interval.
 
-    Local NotebookLM imports may be named '51.pdf' (exact chapter number),
-    rather than 'Capítulo 51'. Do NOT infer chapters from arbitrary filenames.
+    Local NotebookLM imports may be named '51.pdf' or
+    '26. La posada del Pont du Gard.pdf'. The latter is a numbered, descriptive
+    PDF chapter filename, not a year or a generic document. We still reject
+    unlabeled arbitrary filenames or partial numeric prefixes.
     """
     name = str(title).strip()
     numeric = re.fullmatch(r"([1-9][0-9]{0,2})[.]pdf", name, re.IGNORECASE)
     if numeric:
         chapter = int(numeric.group(1))
         return (chapter,) if chapter <= 300 else None
+    descriptive_pdf = re.fullmatch(
+        r"([1-9][0-9]{0,2})[.]\s+([^\r\n]+)[.]pdf", name, re.IGNORECASE
+    )
+    if descriptive_pdf:
+        chapter = int(descriptive_pdf.group(1))
+        subtitle = descriptive_pdf.group(2).strip()
+        if chapter <= 300 and any(c.isalpha() for c in subtitle):
+            return (chapter,)
+        return None
     return chapter_interval(name)
 
 
