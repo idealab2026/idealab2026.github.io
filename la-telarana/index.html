@@ -497,8 +497,8 @@ function searchCandidates(q){
 }
 function searchNeighbourhood(q){
  if(!q)return null;
- var ids=new Set(searchCandidates(q).map(function(n){return n.id}));
- data.edges.forEach(function(e){if(ids.has(e.a)||ids.has(e.b)){ids.add(e.a);ids.add(e.b)}});
+ var seeds=new Set(searchCandidates(q).map(function(n){return n.id})),ids=new Set(seeds);
+ data.edges.forEach(function(e){if(seeds.has(e.a)||seeds.has(e.b)){ids.add(e.a);ids.add(e.b)}});
  return ids
 }
 function focusOnSearchEntity(n){
