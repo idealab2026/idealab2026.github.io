@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-09",
+  "scope": "Seguimiento metodologico de 33 fuentes; inventario completo permanece privado en el Excel del usuario",
+  "total": 33,
+  "counts": {
+    "reviewedPublished": 1,
+    "pending": 32,
+    "missingOriginalUrl": 1
+  },
+  "reviewed": [
+    {
+      "order": 1,
+      "videoId": "cmQVMU80ggk",
+      "sourceUrl": "https://www.youtube.com/watch?v=cmQVMU80ggk",
+      "status": "revision_publicada",
+      "reviewDate": "2026-11-09",
+      "reviewRevision": "v2-exhaustiva-20261109",
+      "entitiesReviewed": 116,
+      "relationsReviewed": 136,
+      "additionalNodesThisReview": 0,
+      "additionalEdgesThisReview": 0,
+      "evidenceChecks": 7,
+      "documentaryLimits": "Las alegaciones de la persona entrevistada no equivalen a hechos probados. Cinco menciones proceden de prensa externa y se distinguen expresamente. La transcripcion fue obtenida en la fase anterior; la revision actual añade contraste documental.",
+      "primaryData": "podcast-coronel-villarejo-2026.js",
+      "reviewOverlay": "podcast-coronel-villarejo-2026-revision.js",
+      "sourceState": "fuente revisada y publicada, con alegaciones no acreditadas explicitadas",
+      "furtherWork": "Recontrastar las afirmaciones controversiales cuando existan nuevas fuentes primarias, sin reabrir el estado de procesamiento de este episodio"
+    }
+  ],
+  "nextSource": {
+    "order": 2,
+    "videoId": "qARZpON9_j0",
+    "status": "pendiente"
+  }
+}
