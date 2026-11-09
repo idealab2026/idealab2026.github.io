@@ -1044,7 +1044,7 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
       "b": "ce26-alegacion-operacion-marruecos",
       "type": "Causalidad alegada basada en narcotráfico",
       "confidence": "hipotesis",
-      "note": "Villarejo presenta una explicación sobre redes económicas y motivación de servicios marroquíes. Ni el porcentaje de PIB ni la organización imputada quedan demostrados.",
+      "note": "Villarejo presenta una explicación sobre redes económicas y motivación de servicios marroquíes. No se han demostrado ni el porcentaje de PIB atribuido a la droga ni la organización estatal imputada.",
       "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
       "episodeId": "coronel-villarejo-ceuta-2026-10-12",
       "claimStatus": "afirmacion_entrevista_sin_prueba_independiente",
@@ -1056,7 +1056,7 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
           "status": "alegacion",
-          "text": "Villarejo presenta una explicación sobre redes económicas y motivación de servicios marroquíes. Ni el porcentaje de PIB ni la organización imputada quedan demostrados."
+          "text": "Villarejo presenta una explicación sobre redes económicas y motivación de servicios marroquíes. No se han demostrado ni el porcentaje de PIB atribuido a la droga ni la organización estatal imputada."
         }
       ]
     },
