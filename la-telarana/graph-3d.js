@@ -236,33 +236,24 @@ function make(options){
   ctx.fillStyle="#93aabf";ctx.font="11px system-ui";ctx.fillText("Arrastra para rotar · dos dedos para mover · zoom con pellizco o + / −",16,93);
  }
  function fitView(){
-  // Ajuste real del contenido: usa todas las posiciones visibles tras la proyección.
+  // Centrar todo el ORBE, no la caja de los nodos. Así la rotación no altera
+  // el encuadre ni recorta el hemisferio oculto o los rótulos flotantes.
   const box=canvas.getBoundingClientRect();
   if(box.width<10||box.height<10||!nodes.length)return;
   w=box.width;h=box.height;
-  const shown=nodes.filter(n=>(theme==="todos"||group(n)===theme)&&(!search||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(search)));
-  const target=shown.length?shown:nodes;
-  const projected=target.map(n=>proj(pos.get(n.id)||{x:0,y:0,z:0}));
-  const xmin=Math.min(...projected.map(p=>p.x)),xmax=Math.max(...projected.map(p=>p.x));
-  const ymin=Math.min(...projected.map(p=>p.y)),ymax=Math.max(...projected.map(p=>p.y));
-  // El inspector en fullscreen cubre la parte derecha de la escena.
   const panel=canvas.closest(".graph-panel");
-  const inspectorOpen=panel&&panel.classList.contains("drawer-open");
-  const aside=inspectorOpen?panel.querySelector(".inspector"):null;
+  const aside=panel&&panel.classList.contains("drawer-open")?
+   panel.querySelector(".inspector"):null;
   const reserved=aside?Math.min(aside.getBoundingClientRect().width,w*.55):0;
-  const left=36,right=w-reserved-36,top=h<530?92:115,bottom=h-(h<530?82:100);
-  const usableX=Math.max(80,right-left),usableY=Math.max(80,bottom-top);
-  const baseZoom=Math.max(.0001,zoom);
-  const dx=Math.max(1,(xmax-xmin)/baseZoom),dy=Math.max(1,(ymax-ymin)/baseZoom);
-  const fitZoom=clip(Math.min((usableX-55)/dx,(usableY-60)/dy),.08,7);
-  // Ajuste + centrado exacto para la orientación de cámara actual.
-  zoom=fitZoom;
-  const center=proj({x:0,y:0,z:0});
-  const expectedX=(xmin+xmax)/2-w/2-panX,expectedY=(ymin+ymax)/2-h/2-panY;
-  panX=(left+right)/2-w/2-(expectedX/baseZoom)*fitZoom;
-  panY=(top+bottom)/2-h/2-(expectedY/baseZoom)*fitZoom;
+  const left=30,right=w-reserved-30,top=h<530?76:105,bottom=h-(h<530?58:80);
+  const usableX=Math.max(70,right-left),usableY=Math.max(70,bottom-top);
+  const base=Math.min(w/1450,h/950);
+  const outerRadius=ORB_RADIUS*base*1.33;
+  zoom=clip(Math.min(usableX/(2*outerRadius),usableY/(2*outerRadius)),.055,7);
+  panX=(left+right)/2-w/2;
+  panY=(top+bottom)/2-h/2;
   redraw();
-  return{zoom,visible:target.length,availableWidth:usableX,availableHeight:usableY};
+  return{zoom,visible:nodes.length,availableWidth:usableX,availableHeight:usableY};
  }
  function now(){return typeof performance!=="undefined"?performance.now():Date.now()}
  function markInteraction(){quietUntil=now()+3200}
