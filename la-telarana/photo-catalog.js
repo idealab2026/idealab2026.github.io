@@ -457,5 +457,25 @@ window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS={
   "twp312-victor-aldama": {
     "lang": "es",
     "title": "Víctor de Aldama"
+  },
+  "f08-roberto-vaquero": {
+    "lang": "es",
+    "title": "Roberto Vaquero"
+  },
+  "f08-villarejo": {
+    "lang": "es",
+    "title": "José Manuel Villarejo"
+  },
+  "f08-maduro": {
+    "lang": "es",
+    "title": "Nicolás Maduro"
+  },
+  "f08-zapatero": {
+    "lang": "es",
+    "title": "José Luis Rodríguez Zapatero"
+  },
+  "f08-iglesias": {
+    "lang": "es",
+    "title": "Pablo Iglesias Turrión"
   }
 };
