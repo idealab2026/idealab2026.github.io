@@ -14,6 +14,7 @@ import datetime as dt
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -37,6 +38,12 @@ VALID_ID = re.compile(r"[A-Za-z0-9_-]{8,100}\Z")
 
 
 def command(argv: list[str], timeout: int = 90, capture=True, cwd=None):
+    # uv installs notebooklm CLI in ~/.local/bin. GUI-launched shells may omit
+    # that directory from PATH; resolve only this trusted, fixed local binary.
+    if argv and argv[0] == "nlm" and not shutil.which("nlm"):
+        local_nlm = HOME / ".local/bin/nlm"
+        if local_nlm.is_file() and os.access(local_nlm, os.X_OK):
+            argv = [str(local_nlm), *argv[1:]]
     result = subprocess.run(argv, check=False, text=True, encoding="utf-8",
                             capture_output=capture, timeout=timeout, cwd=cwd)
     if result.returncode != 0:
@@ -351,10 +358,36 @@ def poll():
             break
 
 
+def defer_uncertain(args):
+    """Release a blocked queue without retrying or misreporting a job as done.
+
+    This is an explicit, user-approved deferral. It does NOT confirm that the
+    remote service did nothing; a late artifact must be reconciled manually.
+    """
+    check_identity()
+    state = load_json(STATE_PATH, {})
+    job = state.get(str(args.issue))
+    if not job or job.get("phase") != "uncertain":
+        raise ValueError("Solo puede aplazarse una solicitud en estado uncertain.")
+    if not args.confirm_no_artifact:
+        raise ValueError("Se necesita --confirm-no-artifact tras comprobar NotebookLM.")
+    before = set(job.get("before", []))
+    rows = infographic_rows(job["notebook"])
+    created = [x for x in rows if artifact_id(x) and artifact_id(x) not in before]
+    if created:
+        raise RuntimeError("Hay nuevos artefactos en NotebookLM. No se aplaza: utiliza attach o revisa Studio.")
+    job["phase"] = "deferred"
+    job["deferred_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    save_json(STATE_PATH, state)
+    print("Solicitud #", args.issue, "APLAZADA, no completada ni reenviada.")
+    print("La cola queda liberada. El capítulo aplazado requiere revisión manual.")
+    print("Un artefacto tardío NO se atribuirá automáticamente a otra solicitud.")
+
+
 def attach_artifact(args):
     state = load_json(STATE_PATH, {})
     job = state.get(str(args.issue))
-    if not job or job.get("phase") not in ("submitted", "uncertain"):
+    if not job or job.get("phase") not in ("submitted", "uncertain", "deferred"):
         raise ValueError("El número de solicitud no está pendiente de identificar.")
     if not VALID_ID.fullmatch(args.artifact_id):
         raise ValueError("ID de infografía inválido.")
@@ -427,6 +460,9 @@ def main():
     me.add_argument("--video-id", required=True)
     me.add_argument("--notebook-id", required=True)
     me.add_argument("--source-ids", required=True)
+    d = sub.add_parser("defer-uncertain", help="Aplazar una solicitud incierta sin repetirla y liberar la cola")
+    d.add_argument("--issue", type=int, required=True)
+    d.add_argument("--confirm-no-artifact", action="store_true")
     att = sub.add_parser("attach", help="Vincular manualmente un artefacto inequívoco si hay varios")
     att.add_argument("--issue", type=int, required=True)
     att.add_argument("--artifact-id", required=True)
@@ -453,6 +489,8 @@ def main():
             show_status()
         elif args.command == "attach":
             attach_artifact(args)
+        elif args.command == "defer-uncertain":
+            defer_uncertain(args)
         elif args.command == "publish":
             publish(args)
     except (RuntimeError, ValueError, OSError, subprocess.TimeoutExpired) as err:
