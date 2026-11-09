@@ -199,13 +199,55 @@ body.graph-expanded{overflow:hidden}
 .inspector .timeline-connection small{font-size:.68rem;color:#b8d6db}
 .inspector .timeline-connection strong{font-size:.82rem;line-height:1.4}
 .inspector .timeline-connection:hover{border-color:#d6af73;color:#fff}
+
+/* Auditoría visible de las 33 fuentes, separada de las investigaciones sin numerar. */
+.source-review{margin-top:20px;padding:20px;border-radius:13px;border:1px solid #3d4f60;background:#171f29}
+.source-review-heading{display:flex;flex-wrap:wrap;gap:9px;align-items:baseline;justify-content:space-between}
+.source-review h2{font:500 clamp(1.25rem,2.6vw,1.7rem)/1.2 Georgia,serif;margin:0;color:#f0f4f9}
+.source-review-summary{font-size:.78rem;font-weight:700;color:#b8cad9}
+.source-review-track{height:9px;width:100%;overflow:hidden;border-radius:9px;background:#34404d;margin:15px 0 9px}
+.source-review-fill{width:0;height:100%;border-radius:9px;background:#47cc91;transition:width .2s ease}
+.source-review-help{font-size:.75rem;color:#a2b4c4;line-height:1.5;margin:0 0 13px}
+.source-review-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.source-review-table th{text-align:left;padding:9px 8px;border-bottom:1px solid #506074;text-transform:uppercase;letter-spacing:.07em;font-size:.67rem;color:#a4b7cb}
+.source-review-table td{border-bottom:1px solid #303d4c;padding:9px 8px;vertical-align:middle;font-size:.79rem}
+.source-review-table .source-index{width:46px;color:#a3b5c7;font-variant-numeric:tabular-nums}
+.source-review-table .source-status-cell{width:152px;text-align:right}
+.source-review-table .source-name{overflow-wrap:anywhere;color:#e3edf7}
+.source-review-table .source-name a,.source-additional-name a{text-decoration:underline;text-underline-offset:2px;color:#b9dcf2}
+.source-review-table .source-name a:hover,.source-additional-name a:hover{color:#f0ba82}
+.source-review-table .source-placeholder{color:#7d8997}
+.source-review-table .source-unknown{background:#131b24}
+.source-status{display:inline-block;font-size:.73rem;font-weight:750;padding:4px 7px;border:1px solid transparent;border-radius:7px}
+.source-status.source-done{color:#66dba2;background:#153d30;border-color:#327453}
+.source-status.source-active{color:#efc082;background:#45331c;border-color:#81633c}
+.source-status.source-pending{color:#a4afbd;background:#252e39;border-color:#455364}
+.source-review-additional{padding:13px 2px 0}
+.source-additional-label{font-size:.73rem;color:#bac9d9;margin:4px 0 10px;font-weight:700}
+.source-additional-row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-top:1px solid #364352;padding-top:11px}
+.source-additional-name{font-size:.81rem;line-height:1.45}
+@media(max-width:600px){.source-review{padding:14px}.source-review-table td,.source-review-table th{padding:8px 4px}.source-review-table .source-index{width:32px}.source-review-table .source-status-cell{width:125px}.source-status{font-size:.66rem;padding:4px}.source-review-summary{font-size:.72rem}}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Descargar datos</button><span class="readonly-note" aria-label="Web pública de solo lectura">Consulta pública · Solo lectura</span></div>
 <div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Orbe 3D · gira arrastrando · pellizca para ampliar nodos y fotografías</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia y nazismo</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="motion3d" aria-pressed="true" title="Pausar o reanudar la rotación suave">⏸ Orbe</button><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
 <aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
+<section class="source-review" id="fuentes" aria-labelledby="source-review-title">
+ <div class="source-review-heading"><h2 id="source-review-title">Fuentes · seguimiento de revisión</h2><span class="source-review-summary" id="source-review-summary" aria-live="polite">Consultando registro…</span></div>
+ <div class="source-review-track"><div id="source-review-fill" class="source-review-fill" role="progressbar" aria-label="Fuentes completamente revisadas" aria-valuemin="0" aria-valuenow="0" aria-valuemax="33"></div></div>
+ <p class="source-review-help">El ✓ verde significa revisión completa. Las fuentes parciales no cuentan como terminadas. Los nombres de las fuentes 3–33 se incorporarán al recuperar el inventario original.</p>
+ <table class="source-review-table"><thead><tr><th scope="col">Nº</th><th scope="col">Fuente</th><th scope="col" style="text-align:right">Estado</th></tr></thead>
+ <tbody id="source-review-rows">
+ <tr><td class="source-index">01</td><td class="source-name">Entrevista a José Manuel Villarejo</td><td class="source-status-cell"><span class="source-status source-done">✓ Completada</span></td></tr>
+ <tr><td class="source-index">02</td><td class="source-name">Elecciones 2026 / Ceuta</td><td class="source-status-cell"><span class="source-status source-active">◔ En revisión</span></td></tr>
+ <tr><td class="source-index">03–33</td><td class="source-name source-placeholder">31 fuentes aún sin identificar</td><td class="source-status-cell"><span class="source-status source-pending">○ Pendientes</span></td></tr>
+ </tbody></table>
+ <div id="source-review-additional" class="source-review-additional"><div class="source-additional-label">Investigaciones complementarias sin número confirmado</div><div class="source-additional-row"><span class="source-additional-name">Eric Frattini · Vaquero Podcast #150</span><span class="source-status source-active">◔ Parcial</span></div></div>
+</section>
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La Telaraña es una consulta pública de solo lectura. Las fichas y relaciones se cargan desde los archivos del repositorio de IDEA LAB; ningún visitante puede cambiar la base publicada desde esta web. Las operaciones de navegación y disposición del mapa no se guardan. Las transcripciones de OneNote y los resúmenes de podcasts pueden contener opiniones o afirmaciones sin verificar: no deben confundirse con hechos acreditados.</p>
 </main>
+<script defer src="./source-progress.js?v=20261109-1"></script>
 <script src="./one-note-seed.js?v=20261108-2"></script>
 <script src="./podcast-vaquero-150.js?v=20261108-2"></script>
 <script src="./investigacion-frattini-contexto.js?v=20261109-1"></script>
