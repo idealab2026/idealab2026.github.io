@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 1,
-    "inReview": 4,
-    "notStarted": 64,
+    "inReview": 5,
+    "notStarted": 63,
     "pending": 68,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -44,11 +44,10 @@
     }
   ],
   "nextSource": {
-    "order": 5,
-    "videoId": null,
-    "sourceUrl": "https://latramapsoe.es/",
+    "order": 6,
+    "videoId": "fxvXXVrkRb4",
     "status": "pendiente_inicio",
-    "sourceType": "web_page"
+    "sourceType": "youtube"
   },
   "inReview": [
     {
@@ -193,6 +192,25 @@
         "study-v4-straperlo-congreso-1935"
       ],
       "qualityNotes": "El episodio tiene cinco capítulos históricos. Solo se han revisado metadatos y referencias externas: PARES, RAH, Simancas, artículo académico Ayer y archivos del Congreso. No se dispone de la transcripción de la fuente. «Pedro de Villamizar» solo aparece como capítulo; identidad no resuelta. No afirmar declaraciones de la historiadora ni un delito específico sin documentación y análisis historiográfico."
+    },
+    {
+      "order": 5,
+      "videoId": null,
+      "title": "Mapa de la corrupción del PSOE",
+      "sourceUrl": "https://latramapsoe.es/",
+      "publishedAt": "2026-06-14",
+      "status": "procedencia_y_metodologia_revisadas_documentacion_judicial_individual_pendiente",
+      "reviewComplete": false,
+      "sourceType": "web_page",
+      "transcriptRequired": false,
+      "docTranscriptCreated": false,
+      "publisher": "Partido Popular",
+      "publisherEvidence": "https://www.pp.es/actualidad/videos/latramapsoe-es/",
+      "sourceNodesDocumented": 4,
+      "sourceRelationsDocumented": 3,
+      "judicialFilesIndependentlyVerified": 0,
+      "userRequestedSourceConsolidation": true,
+      "qualityNotes": "Portal partidista con alegaciones judiciales contra numerosas personas. Solo se ha verificado que el PP lo promociona, su temática y el estado de su presentación. No se han validado causas, imputaciones o condenas una por una. Las cifras estadísticas del sitio parecen mezclar universos distintos. No publicar en La Telaraña acusaciones individuales sin autos y resoluciones."
     }
   ],
   "timeline": {
@@ -509,19 +527,27 @@
         "type": "web_page",
         "duplicateOf": null,
         "importLine": 5,
-        "status": "pendiente",
+        "status": "en_revision",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
-        }
+          "lastUpdated": "2026-11-09"
+        },
+        "sourceData": "source05-psoe-map-context.js",
+        "publisherVerified": "Partido Popular",
+        "provenanceVerifiedUrl": "https://www.pp.es/actualidad/videos/latramapsoe-es/",
+        "individualCasesVerified": 0,
+        "reviewedEditorialNodes": 4,
+        "editorialEdges": 3,
+        "publisherCountDiscrepancyFlagged": true,
+        "transcriptNotApplicable": true
       },
       {
         "order": 6,
