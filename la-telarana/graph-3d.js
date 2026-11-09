@@ -61,6 +61,33 @@ function make(options){
   return{x:w/2+panX+x*scale,y:h/2+panY+y*scale,depth,scale};
  }
  function color(hex,a){const v=parseInt(hex.slice(1),16);return "rgba("+((v>>16)&255)+","+((v>>8)&255)+","+(v&255)+","+a+")"}
+ function visualRadius(p,emphasized=false){
+  return clip((emphasized?30:22)*p.scale,emphasized?7.5:4.3,emphasized?32:23);
+ }
+ function drawRegions(visible,pr){
+  bandHits=[];
+  for(const [id,label,tint] of topics){
+   const members=visible.filter(n=>group(n)===id&&pr.has(n.id));
+   if(!members.length)continue;
+   const pts=members.map(n=>pr.get(n.id)),xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);
+   // Límites calculados desde TODOS los nodos proyectados, no desde un sector fijo.
+   const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
+   const left=minX-43,top=minY-102,width=Math.max(240,maxX-minX+86),height=Math.max(142,maxY-minY+145);
+   const active=theme===id,muted=theme!=="todos"&&!active;
+   ctx.save();ctx.globalAlpha=muted?.22:1;
+   ctx.beginPath();ctx.roundRect(left,top,width,height,23);
+   ctx.fillStyle=color(tint,active?.10:.045);ctx.fill();
+   ctx.strokeStyle=color(tint,active?.86:.44);ctx.lineWidth=active?2.3:1.2;ctx.stroke();
+   ctx.textAlign="left";ctx.textBaseline="top";
+   ctx.font="750 17px system-ui";ctx.fillStyle=active?"#fff":tint;
+   ctx.fillText(label,left+17,top+18,Math.max(140,width-34));
+   ctx.font="600 11px system-ui";ctx.fillStyle="#c2d0dd";
+   ctx.fillText(members.length+" entidades",left+17,top+46);
+   ctx.restore();
+   // El área es visual; solo su cabecera es pulsable (no tapa las aristas).
+   bandHits.push({id,x:left,y:top,w:Math.min(width,270),h:72});
+  }
+ }
  function render(){
   queued=false;const box=canvas.getBoundingClientRect();if(box.width<3||box.height<3)return;
   w=box.width;h=box.height;dpr=Math.min(devicePixelRatio||1,2);
@@ -72,29 +99,13 @@ function make(options){
   ctx.strokeStyle="rgba(115,153,182,.055)";ctx.lineWidth=.7;
   for(let x=0;x<w;x+=44){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke()}
   for(let y=0;y<h;y+=44){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke()}
-  topics.forEach(([id,label,tint],i)=>{
-   const base=-PI/2+i*2*PI/topics.length,half=PI/topics.length*.94;
-   const selected=theme===id,fade=theme!=="todos"&&!selected;
-   for(let j=0;j<14;j++){
-    const a=base-half+(2*half*j)/14,b=base-half+(2*half*(j+1))/14;
-    const pp=[420,1650].flatMap(r=>[a,b].map(theta=>proj({x:r*Math.cos(theta),y:-380,z:r*Math.sin(theta)})));
-    ctx.beginPath();ctx.moveTo(pp[0].x,pp[0].y);ctx.lineTo(pp[2].x,pp[2].y);ctx.lineTo(pp[3].x,pp[3].y);ctx.lineTo(pp[1].x,pp[1].y);ctx.closePath();
-    ctx.fillStyle=color(tint,selected?.26:fade?.017:.06);ctx.fill();
-   }
-   ctx.beginPath();for(let j=0;j<=16;j++){
-    const a=base-half+2*half*j/16,p=proj({x:1680*Math.cos(a),y:-380,z:1680*Math.sin(a)});
-    if(j===0)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y)
-   }
-   ctx.lineWidth=selected?3:1.2;ctx.strokeStyle=color(tint,selected?.9:fade?.09:.3);ctx.stroke();
-   // El título temático se dibuja después de las entidades, dentro de la franja.
-   // No desperdiciar el área del sector con rótulos diminutos en su perímetro.
-  });
   const visible=nodes.filter(n=>!search||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(search));
   const pr=new Map(visible.map(n=>[n.id,proj(pos.get(n.id)||{x:0,y:0,z:0})]));
+  drawRegions(visible,pr);
   const focus=hover||(selection?.kind==="node"?selection.id:null);
   const selectedEdge=selection?.kind==="edge"?edges.find(e=>e.id===selection.id):null;
   const activeEndpoints=new Set(selectedEdge?[selectedEdge.a,selectedEdge.b]:[]);
-  edgeHits=[];hits=[];bandHits=[];
+  edgeHits=[];hits=[];
   edges.filter(e=>pr.has(e.a)&&pr.has(e.b)).sort((a,b)=>(pr.get(b.a).depth+pr.get(b.b).depth)-(pr.get(a.a).depth+pr.get(a.b).depth)).forEach(e=>{
    const a=pr.get(e.a),b=pr.get(e.b),aNode=index.get(e.a),bNode=index.get(e.b),linked=focus&&(e.a===focus||e.b===focus),same=theme!=="todos"&&group(aNode)===theme&&group(bNode)===theme,selected=selection?.kind==="edge"&&selection.id===e.id,hot=hoverEdge===e.id;
    let alpha=focus&&mode==="focus"?(linked?.96:.04):theme!=="todos"?(same?.86:(group(aNode)===theme||group(bNode)===theme)?.3:.025):.36;
