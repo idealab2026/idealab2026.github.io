@@ -19,6 +19,11 @@ for(const id of ["vf150-khaled-meshaal","vf150-danny-yatom","vf150-hussein-jorda
  const b=window.IDEA_TELARANA_BIOGRAPHIES.curated[id];
  assert(b&&b.text.length>=200&&/^https:\/\//.test(b.source), "Missing sourced biography: "+id);
 }
+for(const id of ["ce26-pedro-banos","ce26-villarejo","ce26-sanchez"]){
+ const b=window.IDEA_TELARANA_BIOGRAPHIES.curated[id];
+ assert(b&&b.text.length>=300&&/^https:\/\//.test(b.source),"Source 02 biography missing evidence: "+id);
+ assert(/transcripci[oó]n|sinopsis|fuente 02/i.test(b.text),"Source 02 biography must separate literal source from external context: "+id);
+}
 assert(Object.keys(entries).length>=110,"minimum 110 exact public biography mappings");
 const base=JSON.parse(fs.readFileSync("la-telarana/one-note-seed.js","utf8").split("window.IDEA_TELARANA_ONENOTE = ")[1].trim().replace(/;$/,""));
 const p1=JSON.parse(fs.readFileSync("la-telarana/podcast-vaquero-150.js","utf8").split("window.IDEA_TELARANA_PODCAST_150 = ")[1].trim().replace(/;$/,""));
