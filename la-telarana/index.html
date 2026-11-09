@@ -147,7 +147,7 @@ body.graph-expanded{overflow:hidden}
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Descargar datos</button><span class="readonly-note" aria-label="Web pública de solo lectura">Consulta pública · Solo lectura</span></div>
-<div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Gira con el ratón · desplaza con dos dedos · zoom con + / −</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia y nazismo</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
+<div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Gira arrastrando · desplaza con dos dedos · pellizca para zoom</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia y nazismo</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
 <aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La Telaraña es una consulta pública de solo lectura. Las fichas y relaciones se cargan desde los archivos del repositorio de IDEA LAB; ningún visitante puede cambiar la base publicada desde esta web. Las operaciones de navegación y disposición del mapa no se guardan. Las transcripciones de OneNote y los resúmenes de podcasts pueden contener opiniones o afirmaciones sin verificar: no deben confundirse con hechos acreditados.</p>
 </main>
@@ -158,7 +158,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-coronel-elecciones-2026-preliminar.js?v=20261109-1"></script>
 <script src="./photo-catalog.js?v=20261109-2"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
-<script src="./graph-3d.js?v=20261109-5"></script>
+<script src="./graph-3d.js?v=20261109-6"></script>
 <script>
 (function(){
 "use strict";
@@ -505,7 +505,17 @@ function svgUnitsPerPixel(){
  var svg=$("network"),rect=svg.getBoundingClientRect();
  return 1/Math.max(.001,Math.min(rect.width/1100,rect.height/650));
 }
-function zoomBy(factor){if(dimensionMode==="3d"&&graph3d){graph3d.zoom(factor);return}cam.s=Math.max(.2,Math.min(4,cam.s*factor));$("camera").setAttribute("transform",transform())}
+function zoom2DAt(e,factor){
+ var svg=$("network"),rect=svg.getBoundingClientRect(),p={x:550,y:325};
+ if(e&&Number.isFinite(e.clientX)&&Number.isFinite(e.clientY)){
+  try{var pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;p=pt.matrixTransform(svg.getScreenCTM().inverse())}
+  catch(ex){p={x:(e.clientX-rect.left)*1100/rect.width,y:(e.clientY-rect.top)*650/rect.height}}
+ }
+ var next=Math.max(.2,Math.min(6,cam.s*factor)),ratio=next/cam.s;
+ cam.x=p.x-(p.x-cam.x)*ratio;cam.y=p.y-(p.y-cam.y)*ratio;cam.s=next;
+ $("camera").setAttribute("transform",transform());
+}
+function zoomBy(factor){if(dimensionMode==="3d"&&graph3d){graph3d.zoom(factor);return}zoom2DAt(null,factor)}
 $("zoom-in").addEventListener("click",function(){zoomBy(1.22)});
 $("zoom-out").addEventListener("click",function(){zoomBy(1/1.22)});
 $("zoom-reset").addEventListener("click",function(){if(dimensionMode==="3d"&&graph3d){graph3d.fit();return}fitGraph();render()});
@@ -526,12 +536,20 @@ $("network").addEventListener("pointerup",endPan);
 $("network").addEventListener("pointercancel",endPan);
 $("network").addEventListener("wheel",function(e){
  e.preventDefault();
- if(e.ctrlKey||e.metaKey)return; // Pinza de trackpad: nunca modifica el zoom.
- var unit=svgUnitsPerPixel(),scale=e.deltaMode===1?16:e.deltaMode===2?450:1;
- cam.x-=e.deltaX*scale*unit;cam.y-=e.deltaY*scale*unit;
- $("camera").setAttribute("transform",transform());
+ var scale=e.deltaMode===1?16:e.deltaMode===2?450:1;
+ if(e.ctrlKey||e.metaKey)zoom2DAt(e,Math.exp(-Math.max(-320,Math.min(320,e.deltaY*scale))*.008));
+ else{
+  var unit=svgUnitsPerPixel();cam.x-=e.deltaX*scale*unit;cam.y-=e.deltaY*scale*unit;
+  $("camera").setAttribute("transform",transform());
+ }
 },{passive:false});
-["gesturestart","gesturechange","gestureend"].forEach(function(eventName){$("network").addEventListener(eventName,function(e){e.preventDefault()},{passive:false})});
+var gesture2DScale=1;
+$("network").addEventListener("gesturestart",function(e){e.preventDefault();gesture2DScale=e.scale||1},{passive:false});
+$("network").addEventListener("gesturechange",function(e){
+ e.preventDefault();var current=e.scale||1;
+ zoom2DAt(e,current/(gesture2DScale||1));gesture2DScale=current
+},{passive:false});
+$("network").addEventListener("gestureend",function(e){e.preventDefault();gesture2DScale=1},{passive:false});
 function graphCrossingsAtPositions(nodes,edges,coordinates){
  var p=coordinates,valid=edges.filter(function(e){return p.has(e.a)&&p.has(e.b)&&e.a!==e.b});
  function orient(a,b,c){return(b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x)}
