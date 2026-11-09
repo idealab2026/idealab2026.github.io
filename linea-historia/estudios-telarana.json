@@ -1186,6 +1186,34 @@
         ],
         "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
       }
+    },
+    {
+      "id": "study-f09-psoe-primary-2017",
+      "y": 2017.3835616438357,
+      "t": "Pedro Sánchez gana las primarias del PSOE para recuperar la secretaría general",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 09 · acta oficial del PSOE",
+      "d": "El 21 de mayo de 2017 Pedro Sánchez ganó las primarias socialistas ante Susana Díaz y Patxi López. La victoria electoral está respaldada por la información oficial y los resultados publicados por el PSOE. Esta constatación NO corrobora acusaciones que el entrevistado formula sobre cómo se financió o movilizó la campaña.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2017-05-21",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 9,
+        "sourceTitle": "Villarejo en Vaquero Podcast · fuente 09",
+        "sourceUrl": "https://www.youtube.com/watch?v=10vGOskN6hY",
+        "confirmedBy": {
+          "label": "PSOE · resultados del escrutinio de primarias 21/05/2017",
+          "url": "https://www.psoe.es/actualidad/documentos-de-interes/resultados-del-escrutinio-de-las-primarias-2017/"
+        },
+        "relatedTelarana": [
+          "f09-sanchez",
+          "f09-psoe"
+        ],
+        "methodologicalLimits": "El resultado de las primarias está probado. Las declaraciones sobre financiación irregular o influencias no quedan verificadas por ello."
+      }
     }
   ]
 }
