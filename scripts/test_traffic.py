@@ -29,6 +29,11 @@ class TrafficExportTests(unittest.TestCase):
         out=traffic.make_placeholder()
         self.assertEqual(out["status"],"unconfigured")
         self.assertEqual(out["days"],[])
+    def test_unavailable_state_never_publishes_unverified_values(self):
+        out=traffic.make_unavailable()
+        self.assertEqual(out["status"],"unavailable")
+        self.assertEqual(out["days"],[])
+        self.assertIsNone(out["generatedAt"])
     def test_only_aggregated_metrics_and_no_unrelated_paths(self):
         day=dt.date(2026,10,31)
         rows=[

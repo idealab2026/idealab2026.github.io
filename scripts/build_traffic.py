@@ -55,6 +55,14 @@ def make_placeholder():
         "days": []
     }
 
+def make_unavailable():
+    # The site can deploy without claiming unverified traffic numbers.
+    return {
+        "schema": 1, "status": "unavailable", "generatedAt": None,
+        "source": "Cloudflare Web Analytics · extracción no verificable",
+        "days": []
+    }
+
 def build_public_summary(rows, today=None):
     today=today or dt.datetime.now(dt.timezone.utc).date()
     first=max(FIRST_DAY, today-dt.timedelta(days=29))
@@ -127,10 +135,13 @@ def main():
     else:
         try:
             out=build_public_summary(query_cloudflare(token,account))
-        except (ValueError,urllib.error.URLError,TimeoutError) as err:
-            # Fail closed, so no inaccurate data is published.
-            raise SystemExit("VERIFIED_ANALYTICS_UNAVAILABLE: "+type(err).__name__) from None
-        print("Public aggregate prepared from verified GraphQL response.")
+        except (ValueError,urllib.error.URLError,TimeoutError):
+            # Fail closed for the DATA: do not publish any unverifiable counts.
+            # The public website itself is independent of analytics availability.
+            out=make_unavailable()
+            print("Web Analytics unavailable: published no unverifiable counts.")
+        else:
+            print("Public aggregate prepared from verified GraphQL response.")
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     OUTPUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
