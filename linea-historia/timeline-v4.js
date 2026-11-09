@@ -218,7 +218,7 @@ var wikiAliases={
  "invencion de la polvora en china":"Pólvora"
 };
 var wikiById={
- "c-3-74":"2001: A Space Odyssey","c-3-81":"Barry Lyndon",
+ "c-3-74":"2001: una odisea del espacio","c-3-81":"Barry Lyndon",
  "c-3-85":"Apocalypse Now","c-3-88":"Blade Runner",
  "c-5-85":"Arrebato (película)","c-7-85":"Alien, el octavo pasajero",
  "c-10-49":"Iván Zulueta","c-12-34":"Jacques Rivette",
@@ -244,7 +244,9 @@ var wikiById={
  "h-NB35":"Reconquista",
  "h-PW21":"Guerra de Granada",
  "h-QA30":"Conquista de México",
- "h-SD21":"Revolución de Octubre"
+ "h-SD21":"Revolución de Octubre","h-JQ25":"Primera guerra púnica",
+ "h-JW25":"Segunda guerra púnica","h-IU34":"República romana",
+ "h-JR35":"Guerras púnicas","p-2":"Pedro (apóstol)"
 };
 function wikiPlain(s){
  return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es")
@@ -252,11 +254,15 @@ function wikiPlain(s){
 }
 function wikiStripDates(raw){
  var s=String(raw||"").trim().replace(/\u00a0/g," ");
+ // Correct an Excel concatenation such as «Nicolás II1868 - 1918».
+ s=s.replace(/([IVX])(?=\d{4}\s*[-–—]\s*\d{4}\s*$)/g,"$1 ");
  // Film title / director / film year: keep only the named work.
  s=s.replace(/\s*\(\s*\d{4}\s*\)\s*[-–—]\s*.+$/,"");
  // Standalone film-year and person-life suffixes.
  s=s.replace(/\s*\(\s*\d{1,4}\s*[-–—]\s*(?:\d{1,4})?\s*\)\s*$/,"");
  s=s.replace(/\s*\(\s*\d{4}\s*\)\s*$/,"");
+ s=s.replace(/\s*\(\s*\d{1,4}\s*(?:[ad]\.\s*c\.?|[ad]\.c\.?)\s*\)\s*$/i,"");
+ s=s.replace(/\s*\(\s*\d{2,4}\s*(?:[ad]\.\s*c\.?|[ad]\.c\.?)\s*[-–—]\s*\d{2,4}\s*(?:[ad]\.\s*c\.?|[ad]\.c\.?)\s*\)\s*$/i,"");
  // YYYY a. C. — YYYY d. C., with optional thousands separators.
  s=s.replace(/\s+\b\d{1,3}(?:[.,]\d{3})+\s*(?:[ad]\.?\s*c\.?)?\s*[-–—]\s*\d{1,3}(?:[.,]\d{3})*\s*(?:[ad]\.?\s*c\.?)?.*$/i,"");
  s=s.replace(/\s+\b\d{2,4}\s*(?:[ad]\.?\s*c\.?)?\s*[-–—]\s*(?:\d{1,4}\s*(?:[ad]\.?\s*c\.?)?|ACT|actualidad|presente)\s*(?:\([^)]*\)|\.?\s*)$/i,"");
@@ -267,12 +273,12 @@ function wikiStripDates(raw){
 }
 function wikipediaSearchName(d){
  var raw=wikiStripDates(d.t);
+ if(wikiById[d.id])return wikiById[d.id];
  if(d.c==="Pontífices"){
   raw=raw.replace(/^S\.\s*/i,"").replace(/\s*\([^)]*\)\s*/g," ").replace(/\s+/g," ").trim();
   // Pontiff names are often shared with monarchs, saints and ordinary people.
   return raw+" (papa)";
  }
- if(wikiById[d.id])return wikiById[d.id];
  var key=wikiPlain(raw);
  if(wikiAliases[key])return wikiAliases[key];
  return raw||d.t;
