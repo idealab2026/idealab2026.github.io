@@ -389,5 +389,25 @@ window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS={
   "vf150-khaled-meshaal": {
     "lang": "es",
     "title": "Jaled Meshal"
+  },
+  "f04-antonio-perez": {
+    "lang": "es",
+    "title": "Antonio Pérez del Hierro"
+  },
+  "f04-felipe-ii": {
+    "lang": "es",
+    "title": "Felipe II de España"
+  },
+  "f04-felipe-iii": {
+    "lang": "es",
+    "title": "Felipe III de España"
+  },
+  "f04-fernando-munoz": {
+    "lang": "es",
+    "title": "Agustín Fernando Muñoz y Sánchez"
+  },
+  "f04-alejandro-lerroux": {
+    "lang": "es",
+    "title": "Alejandro Lerroux"
   }
 };
