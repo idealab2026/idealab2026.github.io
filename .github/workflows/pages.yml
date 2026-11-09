@@ -63,6 +63,7 @@ jobs:
           cp linea-historia/timeline-v4.js dist/linea-historia/timeline-v4.js
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp la-telarana/podcast-vaquero-150.js dist/la-telarana/podcast-vaquero-150.js
+          cp la-telarana/investigacion-frattini-contexto.js dist/la-telarana/investigacion-frattini-contexto.js
           cp la-telarana/podcast-coronel-villarejo-2026.js dist/la-telarana/podcast-coronel-villarejo-2026.js
           cp la-telarana/podcast-coronel-villarejo-2026-revision.js dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           cp la-telarana/podcast-coronel-elecciones-2026-preliminar.js dist/la-telarana/podcast-coronel-elecciones-2026-preliminar.js
@@ -87,6 +88,9 @@ jobs:
           grep -q "IDEA_TELARANA_ONENOTE" dist/la-telarana/one-note-seed.js
           test -s dist/la-telarana/podcast-vaquero-150.js
           grep -q "IDEA_TELARANA_PODCAST_150" dist/la-telarana/podcast-vaquero-150.js
+          test -s dist/la-telarana/investigacion-frattini-contexto.js
+          node --check dist/la-telarana/investigacion-frattini-contexto.js
+          grep -q "IDEA_TELARANA_FRATTINI_EXTERNAL" dist/la-telarana/investigacion-frattini-contexto.js
           test -s dist/la-telarana/podcast-coronel-villarejo-2026.js
           node --check dist/la-telarana/podcast-coronel-villarejo-2026.js
           test -s dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
