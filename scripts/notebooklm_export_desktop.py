@@ -152,6 +152,8 @@ def export_known(state: dict, root: Path = DESKTOP, *,
             if not source.is_file() or source.resolve().parent != permitted_root:
                 raise ValueError("PNG original inexistente o fuera de Pendientes")
             dest = image_destination(book, episode, str(issue), vol, pos, root)
+            if dest.is_symlink():
+                raise ValueError("Destino es un enlace simbólico; no se exportará")
             if not dest.is_file():
                 converter(source.read_bytes(), dest)
             if not dest.is_file() or dest.stat().st_size < 128:
@@ -180,15 +182,20 @@ def export_known(state: dict, root: Path = DESKTOP, *,
                     "Exportada JPG" if file else phase,
                     "Pendiente", str(file) if file else "",
                 ])
+    total_videos = sum(len(b["chapters"]) for b in catalog["books"])
+    done_videos = sum(vid is not None for _, vid, _ in entries)
+    done_general = len(entries) - done_videos
     summary = {
-        "exported": len(entries),
-        "total_videos": sum(len(b["chapters"]) for b in catalog["books"]),
+        "exported_videos": done_videos,
+        "exported_generals": done_general,
+        "total_videos": total_videos,
         "errors": problems,
         "root": str(root),
         "inventory": str(inventory),
     }
     if verbose:
-        print(f"Originales JPEG clasificados: {len(entries)} / {summary['total_videos']} vídeos")
+        print(f"Originales JPEG por vídeo: {done_videos} / {total_videos}")
+        print(f"Infografías generales JPEG: {done_general}")
         print("Carpeta:", root)
         print("Inventario:", inventory)
         for err in problems:
