@@ -1,13 +1,13 @@
 {
   "version": 1,
   "updatedAt": "2026-11-09",
-  "scope": "33 fuentes identificadas e inventariadas el 09/11/2026 en NotebookLM (9 España, 20 Geopolítica, 4 Historia Moderna). El CSV original permanece en Descargas del Mac; la web únicamente tiene sincronizadas las fichas 1 y 2. Hay 1 fuente adicional facilitada por el usuario (nº 34). No confundir títulos no sincronizados con fuentes sin identificar.",
-  "total": 34,
+  "scope": "Inventario INTERNO: 67 entradas candidatas de 8 cuadernos CULTURA; 33 originales con título y URL recuperados (32 URL + 1 PDF sin URL). Otras 34 aún pendientes de extracción/deduplicación. El vídeo sobre el papa Francisco se mantiene como aportación separada sin numeración hasta cotejar si ya aparece en alguno de los 8 cuadernos. No publicar la tabla en GitHub Pages.",
+  "total": 67,
   "counts": {
     "reviewedPublished": 1,
     "inReview": 1,
-    "notStarted": 32,
-    "pending": 33,
+    "notStarted": 65,
+    "pending": 66,
     "missingOriginalUrl": 1
   },
   "reviewed": [
@@ -137,28 +137,30 @@
     }
   ],
   "catalogDisplay": {
-    "showAllSlots": true,
-    "checkRule": "El check verde se muestra únicamente si reviewComplete es true y status es revision_publicada",
+    "showAllSlots": false,
+    "checkRule": "Solo revisión completa publicada con evidencias y QA.",
     "supplementalOutsideCount": true,
     "unidentifiedSourceLabel": "Inventariada ayer en NotebookLM · título y enlace pendientes de sincronizar con la web",
     "sort": "source_order",
     "originalCatalogTotal": 33,
-    "addedSourceCount": 1,
-    "reviewCompletenessRule": "El check verde requiere revisión integral del texto y verificación documental; la sola inserción del enlace no significa revisión."
+    "addedSourceCount": "pending_dedup",
+    "reviewCompletenessRule": "El check verde requiere revisión integral del texto y verificación documental; la sola inserción del enlace no significa revisión.",
+    "sourceScope": "internal_only_not_public_site",
+    "expandedNotebookEntryTotal": 67
   },
   "originalCatalogTotal": 33,
   "pendingSources": [
     {
-      "order": 34,
+      "order": null,
       "videoId": "j_5Tj0kIj2c",
       "title": "Luces y Sombras del Papa Francisco - Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c&t=1535s",
       "originalStartSeconds": 1535,
-      "status": "pendiente_revision",
+      "status": "pendiente_cotejar_si_ya_esta_en_notebook",
       "reviewComplete": false,
       "origin": "Añadida por el usuario el 09/11/2026",
       "metadataVerified": true,
-      "qualityNotes": "Fuente añadida por el usuario y todavía no analizada. Mantener enlace con marca de tiempo 25:35.",
+      "qualityNotes": "Fuente añadida por el usuario; comprobar si ya consta entre las 34 fuentes de los nuevos cuadernos antes de contarla adicionalmente.",
       "metadataVerification": "Título visible en la pestaña de YouTube abierta por el usuario"
     }
   ],
@@ -166,7 +168,7 @@
     "identifiedOn": "2026-11-09",
     "source": "Inventario exportado desde NotebookLM, respaldado por CSV local en Descargas del Mac",
     "originalTotal": 33,
-    "titleUrlSyncState": "pendiente_de_sincronizar_archivo_local",
+    "titleUrlSyncState": "33 fuentes originales recuperadas de Biblioteca ChatGPT; faltan metadatos individuales de los otros 34 registros.",
     "unavailableDoesNotMeanUnidentified": true,
     "notebooks": [
       {
@@ -183,12 +185,49 @@
         "title": "CULTURA - HISTORIA MODERNA",
         "count": 4,
         "url": "https://notebook.google.com/notebook/8b94ad58-a53c-4851-894a-88c5ff598a2b"
+      },
+      {
+        "title": "CULTURA - HISTORIA - HISTORIA DE ESPAÑA",
+        "count": 1,
+        "url": "https://notebook.google.com/notebook/63805905-8f17-4f73-93d4-435b8aac485a"
+      },
+      {
+        "title": "CULTURA - GEOPOLÍTICA - EL CONFLICTO ENTRE EE.UU. E IRÁN",
+        "count": 1,
+        "url": "https://notebook.google.com/notebook/0671199b-6864-4c72-93a0-fd5a8d1043f8"
+      },
+      {
+        "title": "CULTURA - HISTORIA, ARQUEOLOGÍA",
+        "count": 17,
+        "url": "https://notebook.google.com/notebook/3ea814f1-e14b-4dcd-8bf9-49eee9a46878"
+      },
+      {
+        "title": "CULTURA - RELIGIÓN - JUDAÍSMO",
+        "count": 11,
+        "url": "https://notebook.google.com/notebook/fed80b4d-ea4a-4a59-9439-80811e2a6130"
+      },
+      {
+        "title": "CULTURA - CRISTIANISMO",
+        "count": 4,
+        "url": "https://notebook.google.com/notebook/e657f31c-b7bb-4f80-bd7a-816c7b0786e0"
       }
     ],
     "artifactNames": [
       "telarana_inventario_fuentes_notebooklm.csv",
       "telarana_fuentes_notebooklm.csv",
       "geopolitica_fuentes.csv"
-    ]
+    ],
+    "originalEntries": 33,
+    "currentNotebookSourceEntries": 67,
+    "addedByExpandedAudit": 34,
+    "recoveredIndividualLinks": 32,
+    "recoveredOriginalEntries": 33,
+    "pendingIndividualSourcesFromAddedNotebooks": 34,
+    "uniqueUrlCountConfirmed": false,
+    "auditStatus": "Los 8 cuadernos y sus cantidades están verificados en NotebookLM; 34 registros nuevos requieren extraer título, URL y comprobar duplicados.",
+    "currentNotebooks": 8,
+    "totalCultureNotebooksObserved": 26,
+    "totalCultureEntriesObserved": 346,
+    "exclusionNote": "Otros 18 cuadernos Cultura (279 entradas) no se incorporan automáticamente a La Telaraña; son en su mayoría libros y materiales de proyectos distintos."
   }
 }
