@@ -53,7 +53,7 @@
       "order": 2,
       "videoId": "qARZpON9_j0",
       "title": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA",
-      "status": "contexto_documental_publicado_pendiente_transcripcion",
+      "status": "contexto_externo_ampliado_pendiente_revision_integra",
       "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
       "publishedAt": "2026-10-12",
       "publicData": "podcast-coronel-elecciones-2026-preliminar.js",
@@ -66,13 +66,33 @@
       "rawTranscriptAvailable": false,
       "verifiedMinuteReferences": 0,
       "reviewComplete": false,
-      "qualityNotes": "Proveniencia separada: sinopsis del productor y 40 documentos de Ceuta publicadas por Moncloa. Faltan transcripción, extracción de citas literales, identificación íntegra de personas y minuto exacto de declaraciones.",
+      "qualityNotes": "Fuente audiovisual: solo sinopsis editorial disponible para atribuciones, no transcripción íntegra ni minutajes. Verificados 5 acontecimientos contextuales con Moncloa/BOE y 3 biografías independientes. No cerrar hasta revisar los 94 min de audio y distinguir declaración literal, verificación, hipótesis y réplicas.",
       "primaryOfficialSource": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
-      "timelineVerifiedEventsCommitted": 3,
+      "timelineVerifiedEventsCommitted": 5,
       "timelineEventIds": [
         "study-v2-ceuta-aviso-2026",
         "study-v2-ceuta-crisis-2026",
-        "study-v2-ceuta-publicacion-2026"
+        "study-v2-ceuta-publicacion-2026",
+        "study-v2-ceuta-seguridad-nacional-2026",
+        "study-v2-ceuta-plan-choque-2026"
+      ],
+      "biographiesContextualized": 3,
+      "biographiesContextualizedIds": [
+        "ce26-pedro-banos",
+        "ce26-villarejo",
+        "ce26-sanchez"
+      ],
+      "additionalOfficialContrasts": [
+        {
+          "date": "2026-08-25",
+          "event": "Declaración de interés para Seguridad Nacional por Real Decreto 681/2026",
+          "url": "https://www.boe.es/eli/es/rd/2026/08/25/681/con"
+        },
+        {
+          "date": "2026-09-01",
+          "event": "Plan de choque de 309 millones para Ceuta aprobado en Consejo de Ministros",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/010926-rueda-prensa-ministros.aspx"
+        }
       ]
     }
   ],
@@ -80,7 +100,7 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 15,
+    "committedVerifiedEvents": 17,
     "fromReviewedSource": 5,
     "fromSourceInReview": 3,
     "publishedInPages": true,
@@ -95,7 +115,9 @@
       "2": [
         "study-v2-ceuta-aviso-2026",
         "study-v2-ceuta-crisis-2026",
-        "study-v2-ceuta-publicacion-2026"
+        "study-v2-ceuta-publicacion-2026",
+        "study-v2-ceuta-seguridad-nacional-2026",
+        "study-v2-ceuta-plan-choque-2026"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -268,7 +290,9 @@
         "duplicateOf": null,
         "importLine": 2,
         "status": "en_revision",
-        "reviewComplete": false
+        "reviewComplete": false,
+        "contextEvents": 5,
+        "biographiesContextualized": 3
       },
       {
         "order": 3,
