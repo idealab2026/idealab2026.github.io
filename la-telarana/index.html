@@ -969,6 +969,15 @@ if(window.IdeaLabGraph3D){
   onSelect:function(hit){if(hit.kind==="theme"){$("theme3d").value=hit.id;graph3d.setTheme(hit.id);return}selection={kind:hit.kind,id:hit.id};inspect();render()}
  });
 }
-render();if(graph3d){graph3d.fit();updateMotionButton()}hydrateWikipediaPhotos();
+// Permitir abrir desde un acontecimiento fechado de Línea de la Historia.
+// La consulta debe coincidir exactamente con un identificador publicado.
+var relatedEntity=null;
+try{relatedEntity=new URLSearchParams(window.location.search).get("entidad")}catch(e){}
+if(relatedEntity&&getNode(relatedEntity)){
+ selection={kind:"node",id:relatedEntity};
+}
+render();if(graph3d){graph3d.fit();updateMotionButton()}
+if(selection)inspect();
+hydrateWikipediaPhotos();
 })();
 </script></body></html>
