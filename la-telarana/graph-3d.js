@@ -178,18 +178,30 @@ function make(options){
   edgeHits=[];hits=[];
   edges.filter(e=>pr.has(e.a)&&pr.has(e.b)).sort((a,b)=>(pr.get(b.a).depth+pr.get(b.b).depth)-(pr.get(a.a).depth+pr.get(a.b).depth)).forEach(e=>{
    const a=pr.get(e.a),b=pr.get(e.b),aNode=index.get(e.a),bNode=index.get(e.b),linked=focus&&(e.a===focus||e.b===focus),same=theme!=="todos"&&group(aNode)===theme&&group(bNode)===theme,selected=selection?.kind==="edge"&&selection.id===e.id,hot=hoverEdge===e.id;
-   let alpha=focus&&mode==="focus"?(linked?.96:.04):theme!=="todos"?(same?.86:(group(aNode)===theme||group(bNode)===theme)?.3:.025):.36;
-   if(selected||hot)alpha=1;
+   let alpha=focus&&mode==="focus"?(linked?.94:.022):theme!=="todos"?(same?.75:(group(aNode)===theme||group(bNode)===theme)?.25:.022):.23;
+   const depthFade=clip(.70-(a.depth+b.depth)/(ORB_RADIUS*5),.22,1);
+   alpha*=depthFade;if(selected||hot)alpha=1;
    const ink=selected?"#ffffff":hot?"#ffd48f":linked?"#f2c48b":same?topics.find(t=>t[0]===theme)[2]:e.confidence==="hipotesis"?"#e6a37f":"#9ac3dc";
-   ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.lineWidth=selected?5:hot?4.3:linked?3.8:same?3:2.25;
-   ctx.strokeStyle=color(ink,alpha);ctx.shadowColor=ink;ctx.shadowBlur=selected||hot||linked?13:0;ctx.stroke();ctx.shadowBlur=0;
-   if(alpha>.13)edgeHits.push({id:e.id,a,b,alpha});
+   // Arco suave cercano a la superficie de la esfera: apariencia neuronal.
+   const p1=pos.get(e.a),p2=pos.get(e.b),joint=unit({
+    x:p1.x+p2.x,y:p1.y+p2.y,z:p1.z+p2.z});
+   const c=proj({x:joint.x*ORB_RADIUS*.89,y:joint.y*ORB_RADIUS*.89,
+    z:joint.z*ORB_RADIUS*.89});
+   ctx.beginPath();ctx.moveTo(a.x,a.y);
+   ctx.quadraticCurveTo(c.x,c.y,b.x,b.y);
+   ctx.lineWidth=selected?3.8:hot?3:linked?2.6:same?2:1.3;
+   ctx.strokeStyle=color(ink,alpha);ctx.shadowColor=ink;
+   ctx.shadowBlur=selected||hot||linked?9:0;
+   if(e.confidence==="hipotesis")ctx.setLineDash([3,7]);
+   ctx.stroke();ctx.shadowBlur=0;ctx.setLineDash([]);
+   if(alpha>.11)edgeHits.push({id:e.id,a,b,c,alpha});
   });
   visible.sort((a,b)=>pr.get(b.id).depth-pr.get(a.id).depth).forEach(n=>{
    const p=pr.get(n.id),selected=selection?.kind==="node"&&selection.id===n.id,isHover=hover===n.id,isEndpoint=activeEndpoints.has(n.id),tint=topics.find(t=>t[0]===group(n))[2],onTheme=theme==="todos"||group(n)===theme;
    const rad=visualRadius(p,selected||isHover||isEndpoint);
    const density=clip(Math.min(w/1600,h/900),.36,1);
-   ctx.globalAlpha=isEndpoint?1:(onTheme?focus&&mode==="focus"&&n.id!==focus?.58:1:.20);
+   const visibleDepth=clip(.70-p.depth/(ORB_RADIUS*2.9),.27,1);
+   ctx.globalAlpha=(isEndpoint?1:(onTheme?focus&&mode==="focus"&&n.id!==focus?.58:1:.20))*visibleDepth;
    ctx.beginPath();ctx.arc(p.x,p.y,rad+2*density*density,0,2*PI);
    ctx.fillStyle="#1a2b39";ctx.fill();
    ctx.lineWidth=(selected||isEndpoint?3.4:2)*density;
@@ -258,9 +270,18 @@ function make(options){
   for(let i=bandHits.length-1;i>=0;i--){const b=bandHits[i];if(p.x>=b.x&&p.x<=b.x+b.w&&p.y>=b.y&&p.y<=b.y+b.h)return{kind:"theme",id:b.id}}
   let nearest=null,nearestDistance=14;
   edgeHits.forEach(e=>{
-   const dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,t=clip(((p.x-e.a.x)*dx+(p.y-e.a.y)*dy)/(dx*dx+dy*dy||1),0,1);
-   const distance=Math.hypot(p.x-e.a.x-t*dx,p.y-e.a.y-t*dy);
-   if(distance<nearestDistance){nearestDistance=distance;nearest={kind:"edge",id:e.id}}
+   let previous=e.a;
+   // Distancia al arco cuadrático, no a la antigua recta.
+   for(let i=1;i<=12;i++){
+    const t=i/12,u=1-t;
+    const q={x:u*u*e.a.x+2*u*t*e.c.x+t*t*e.b.x,
+     y:u*u*e.a.y+2*u*t*e.c.y+t*t*e.b.y};
+    const dx=q.x-previous.x,dy=q.y-previous.y;
+    const fraction=clip(((p.x-previous.x)*dx+(p.y-previous.y)*dy)/(dx*dx+dy*dy||1),0,1);
+    const distance=Math.hypot(p.x-previous.x-fraction*dx,p.y-previous.y-fraction*dy);
+    if(distance<nearestDistance){nearestDistance=distance;nearest={kind:"edge",id:e.id}}
+    previous=q;
+   }
   });
   return nearest;
  }
