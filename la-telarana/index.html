@@ -223,6 +223,19 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261109-f18-1"></script>
 <script src="./fuente-21-orden-mundial-editorial.js?v=20261109-f21-1"></script>
 <script src="./fuente-09-villarejo-revision.js?v=20261110-f09-1"></script>
+<script src="./fuente-10-revision-inicial.js?v=20261110-f10-1"></script>
+<script src="./fuente-11-revision-inicial.js?v=20261110-f11-1"></script>
+<script src="./fuente-12-revision-inicial.js?v=20261110-f12-1"></script>
+<script src="./fuente-13-revision-inicial.js?v=20261110-f13-1"></script>
+<script src="./fuente-14-revision-inicial.js?v=20261110-f14-1"></script>
+<script src="./fuente-16-revision-inicial.js?v=20261110-f16-1"></script>
+<script src="./fuente-17-revision-inicial.js?v=20261110-f17-1"></script>
+<script src="./fuente-19-revision-inicial.js?v=20261110-f19-1"></script>
+<script src="./fuente-20-revision-inicial.js?v=20261110-f20-1"></script>
+<script src="./fuente-22-revision-inicial.js?v=20261110-f22-1"></script>
+<script src="./fuente-23-revision-inicial.js?v=20261110-f23-1"></script>
+<script src="./fuente-24-revision-inicial.js?v=20261110-f24-1"></script>
+<script src="./fuente-25-revision-inicial.js?v=20261110-f25-1"></script>
 <script src="./photo-catalog.js?v=20261109-source08-1"></script>
 <script src="./person-biographies.js?v=20261109-source08-bios"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
@@ -404,6 +417,20 @@ function load(){
  if(window.IDEA_TELARANA_SOURCE18_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE18_EDITORIAL);
  if(window.IDEA_TELARANA_SOURCE21_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE21_EDITORIAL);
  if(window.IDEA_TELARANA_SOURCE09_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_SOURCE09_REVIEW);
+ // Fuentes adicionales: evidencia de mención textual, sin transformar alegaciones en hechos.
+ if(window.IDEA_TELARANA_F10_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F10_REVIEW);
+ if(window.IDEA_TELARANA_F11_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F11_REVIEW);
+ if(window.IDEA_TELARANA_F12_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F12_REVIEW);
+ if(window.IDEA_TELARANA_F13_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F13_REVIEW);
+ if(window.IDEA_TELARANA_F14_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F14_REVIEW);
+ if(window.IDEA_TELARANA_F16_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F16_REVIEW);
+ if(window.IDEA_TELARANA_F17_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F17_REVIEW);
+ if(window.IDEA_TELARANA_F19_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F19_REVIEW);
+ if(window.IDEA_TELARANA_F20_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F20_REVIEW);
+ if(window.IDEA_TELARANA_F22_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F22_REVIEW);
+ if(window.IDEA_TELARANA_F23_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F23_REVIEW);
+ if(window.IDEA_TELARANA_F24_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F24_REVIEW);
+ if(window.IDEA_TELARANA_F25_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F25_REVIEW);
  seedError=!data.nodes.length;
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
