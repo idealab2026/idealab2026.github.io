@@ -197,6 +197,75 @@ class BridgeTests(unittest.TestCase):
                 bridge.quarantine_existing_request("67", request(vid=VIDEO), {}, {})
             save.assert_not_called()
 
+    def test_github_errors_do_not_disclose_raw_stderr(self):
+        from unittest.mock import MagicMock
+        secret = "ghp_FAKE_SECRET_MUST_NOT_BE_LOGGED"
+        runner = MagicMock(returncode=1, stdout="", stderr=f"error HTTP 403 {secret}")
+        with patch.object(bridge.subprocess, "run", return_value=runner):
+            with self.assertRaises(RuntimeError) as cm:
+                bridge.command(["gh", "issue", "list", "-R", bridge.REPO])
+        message = str(cm.exception)
+        self.assertIn("permisos", message)
+        self.assertIn("gh issue list", message)
+        self.assertNotIn(secret, message)
+
+    def test_cannot_write_desktop_does_not_affect_poll(self):
+        # LaunchAgents often cannot access ~/Desktop due to macOS TCC.
+        # The background poll no longer writes there; PNGs stay in Pictures.
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value={}), \
+             patch.object(bridge, "next_requests", return_value=[]), \
+             patch.object(bridge, "retry_github_comments") as retry, \
+             patch("notebooklm_export_desktop.export_known",
+                   side_effect=PermissionError("Desktop not allowed")) as export:
+            bridge.poll()
+            retry.assert_called_once_with({})
+            export.assert_not_called()
+
+    def test_download_comment_failure_keeps_image_state_and_queues_comment(self):
+        state = {"102": {"phase": "downloaded", "path": "/tmp/image.png"}}
+        job = state["102"]
+        with patch.object(bridge, "issue_comment", side_effect=RuntimeError("gh unavailable")), \
+             patch.object(bridge, "save_json") as saved:
+            bridge.comment_or_queue("102", bridge.DOWNLOADED_COMMENT, job, state)
+            self.assertEqual(job["phase"], "downloaded")
+            self.assertEqual(job["github_comments_pending"], [bridge.DOWNLOADED_COMMENT])
+            saved.assert_called_once()
+
+    def test_replay_github_comments_verifies_remote_before_posting(self):
+        state = {"102": {"phase": "downloaded",
+                          "github_comments_pending": [bridge.DOWNLOADED_COMMENT]}}
+        with patch.object(bridge, "remote_comment_exists", return_value=True), \
+             patch.object(bridge, "issue_comment") as post, \
+             patch.object(bridge, "save_json") as saved:
+            bridge.retry_github_comments(state)
+            post.assert_not_called()
+            self.assertNotIn("github_comments_pending", state["102"])
+            saved.assert_called_once()
+        state["102"]["github_comments_pending"] = [bridge.DOWNLOADED_COMMENT]
+        with patch.object(bridge, "remote_comment_exists", return_value=False), \
+             patch.object(bridge, "issue_comment") as post, \
+             patch.object(bridge, "save_json"):
+            bridge.retry_github_comments(state)
+            post.assert_called_once_with("102", bridge.DOWNLOADED_COMMENT)
+
+    def test_failing_github_retries_do_not_block_other_work(self):
+        state = {"102": {"phase": "downloaded",
+                          "github_comments_pending": [bridge.DOWNLOADED_COMMENT]}}
+        pending = [("200", request(book=BOOK, vid=VIDEO))]
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "remote_comment_exists",
+                          side_effect=RuntimeError("gh transient")), \
+             patch.object(bridge, "next_requests", return_value=pending), \
+             patch.object(bridge, "select_mapping", return_value=("another-notebook", ["src"])), \
+             patch.object(bridge, "request_new", return_value=True) as submit:
+            bridge.poll()
+            submit.assert_called_once()
+            self.assertEqual(state["102"]["phase"], "downloaded")
+
     def test_saved_config_is_user_only(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "private" / "config.json"
