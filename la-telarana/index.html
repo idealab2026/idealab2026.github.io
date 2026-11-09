@@ -213,7 +213,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-coronel-villarejo-2026-revision.js?v=20261109-4"></script>
 <script src="./podcast-coronel-elecciones-2026-preliminar.js?v=20261109-1"></script>
 <script src="./photo-catalog.js?v=20261109-2"></script>
-<script src="./person-biographies.js?v=20261109-2"></script>
+<script src="./person-biographies.js?v=20261109-3"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261109-orbe2-zoom"></script>
 <script>
@@ -493,7 +493,7 @@ function youtubeTimeLabel(sec){
 function podcastSourceLink(parent,url,title){
  var parsed;try{parsed=new URL(String(url||""))}catch(e){return}
  if(parsed.protocol!=="https:")return;
- var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com"];
+ var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com","jewishvirtuallibrary.org","www.jewishvirtuallibrary.org","www.everycrsreport.com","everycrsreport.com","ecfr.eu","www.ecfr.eu","www.cfr.org","cfr.org","www.un.org","un.org","www.theguardian.com","theguardian.com"];
  if(!hosts.includes(parsed.hostname)&&!["zarza.com","www.zarza.com","newtral.es","www.newtral.es"].includes(parsed.hostname))return;
  var link=N("a",title||"Consultar fuente");link.href=parsed.href;link.target="_blank";link.rel="noopener noreferrer";link.className="podcast-link";parent.append(link)
 }
@@ -710,7 +710,7 @@ function showRelationshipEndpoints(panel,edge){
 function inspect(){syncInspectorDrawer();if(isGraphExpanded())$("inspector").scrollTop=0;var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para consultar sus detalles y fuentes."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
 if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.kind==="Persona"){showPersonBiography(p,obj);showPersonResearch(p,obj)}else{if(obj.archiveNote){p.append(N("div","Texto original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"))}else if(obj.note){p.append(N("p",obj.note))}showPodcastNotes(p,obj.podcastNotes)}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showTimelineForNode(p,obj);showNodeRelationships(p,obj);}
-else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",relationStatusLabel(obj),"badge"));showRelationshipEndpoints(p,obj);if(obj.note)p.append(N("p",obj.note));if(Array.isArray(obj.relatedTypes)&&obj.relatedTypes.length){var tags=N("p","Otros tipos de vínculo descritos: "+obj.relatedTypes.join(" · "),"source-hint");p.append(tags)}showPodcastNotes(p,obj.podcastNotes);if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,"Abrir minuto de la relación");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
+else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",relationStatusLabel(obj),"badge"));showRelationshipEndpoints(p,obj);if(obj.note)p.append(N("p",obj.note));if(Array.isArray(obj.relatedTypes)&&obj.relatedTypes.length){var tags=N("p","Otros tipos de vínculo descritos: "+obj.relatedTypes.join(" · "),"source-hint");p.append(tags)}showPodcastNotes(p,obj.podcastNotes);if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,/^(https:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i.test(obj.source)?"Abrir minuto de la relación":"Consultar documento de evidencia");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
 }
 // Solo lectura: no existen acciones de editar o eliminar.
 $("mode").addEventListener("click",function(){view=view==="graph"?"gallery":"graph";render()});
