@@ -171,6 +171,14 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "ce26-pablo-iglesias": {
       "lang": "es",
       "title": "Pablo Iglesias Turrión"
+    },
+    "vf150-roberto-vaquero": {
+      "lang": "es",
+      "title": "Roberto Vaquero"
+    },
+    "rv145-felipe-vi": {
+      "lang": "es",
+      "title": "Felipe VI de España"
     }
   },
   "curated": {
@@ -336,6 +344,27 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "text": "Pablo Iglesias Turrión (Madrid, 1978) es politólogo, profesor y expolítico español, cofundador de Podemos y vicepresidente segundo del Gobierno entre 2020 y 2021. Fue diputado en varias legislaturas y tiene formación académica en Ciencia Política, Derecho y Comunicación. La entrevista lo utiliza como ejemplo en un discurso crítico sobre el sistema de partidos y la vivienda. Esas descalificaciones y las inferencias sobre patrimonio no deben confundirse con datos biográficos o acusaciones acreditadas.",
       "source": "https://www.congreso.es/es/busqueda-de-diputados?_diputadomodule_mostrarFicha=true&codParlamentario=319&idLegislatura=XIV",
       "sourceTitle": "Congreso de los Diputados · ficha parlamentaria",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-joaquin-abad": {
+      "text": "Joaquín Abad es un periodista y escritor español con una larga trayectoria en la prensa de Almería. Fue director de La Crónica de Almería y publicó investigaciones, reportajes y novelas, entre ellas obras vinculadas a los bajos fondos de la ciudad y la historia de Andorra. No debe confundirse con el escritor colombiano Héctor Abad Faciolince. En el episodio 145 de Vaquero Podcast (10/09/2026) figura como invitado de Roberto Vaquero. La sinopsis anuncia que contará experiencias relativas a presunto espionaje y grabaciones; sin transcripción ni pruebas independientes no se establece como hecho la existencia de delitos ni la participación de personas concretas.",
+      "source": "https://joaquinabad.es/joaquin-abad/autor/29/",
+      "sourceTitle": "Sitio profesional de Joaquín Abad · trayectoria",
+      "also": "https://www.ivoox.com/vida-secreta-de-felipe-vi-el-audios-mp3_rf_180376510_1.html",
+      "reviewedAt": "2026-11-09"
+    },
+    "vf150-roberto-vaquero": {
+      "text": "Roberto Vaquero es escritor, historiador y comunicador español. Ha publicado ensayos y novelas, mantiene actividad pública en el ámbito del debate político y presenta Vaquero Podcast, un espacio de entrevistas sobre historia, seguridad, geopolítica y actualidad. En la fuente 03 entrevista al periodista Joaquín Abad. En La Telaraña, su vínculo con el invitado se limita a esa relación periodística acreditada; no se le atribuyen las afirmaciones polémicas de la sinopsis como si fueran conclusiones propias o hechos verificados.",
+      "source": "https://www.esferalibros.com/autores/roberto-vaquero/",
+      "sourceTitle": "La Esfera de los Libros · perfil de autor",
+      "also": "https://www.ivoox.com/vida-secreta-de-felipe-vi-el-audios-mp3_rf_180376510_1.html",
+      "reviewedAt": "2026-11-09"
+    },
+    "rv145-felipe-vi": {
+      "text": "Felipe VI (Madrid, 1968) es el rey de España desde el 19 de junio de 2014, fecha de su proclamación ante las Cortes tras la abdicación de Juan Carlos I. Fue príncipe de Asturias y recibió formación militar y universitaria antes de asumir la jefatura del Estado. Su nombre figura en el título del episodio 145 del pódcast de Roberto Vaquero, pero ese hecho no verifica ninguna insinuación relativa a su vida privada. Esta ficha conserva únicamente el contexto institucional acreditado y una mención al título editorial del episodio.",
+      "source": "https://www.rtve.es/noticias/proclamacion-felipe-vi/biografia/",
+      "sourceTitle": "RTVE · biografía histórica de Felipe VI",
+      "also": "https://www.casareal.es/ES/FamiliaReal/ReyFelipe/Paginas/album_fotografico.aspx",
       "reviewedAt": "2026-11-09"
     }
   }
