@@ -122,14 +122,24 @@ function make(options){
   visible.sort((a,b)=>pr.get(b.id).depth-pr.get(a.id).depth).forEach(n=>{
    const p=pr.get(n.id),selected=selection?.kind==="node"&&selection.id===n.id,isHover=hover===n.id,isEndpoint=activeEndpoints.has(n.id),tint=topics.find(t=>t[0]===group(n))[2],onTheme=theme==="todos"||group(n)===theme;
    const rad=visualRadius(p,selected||isHover||isEndpoint);
+   const density=clip(Math.min(w/1600,h/900),.36,1);
    ctx.globalAlpha=isEndpoint?1:(onTheme?focus&&mode==="focus"&&n.id!==focus?.58:1:.20);
-   ctx.beginPath();ctx.arc(p.x,p.y,rad+3,0,2*PI);ctx.fillStyle="#1a2b39";ctx.fill();ctx.lineWidth=selected||isEndpoint?3.4:2;ctx.strokeStyle=isEndpoint?"#fff2cb":tint;ctx.stroke();
+   ctx.beginPath();ctx.arc(p.x,p.y,rad+2*density*density,0,2*PI);
+   ctx.fillStyle="#1a2b39";ctx.fill();
+   ctx.lineWidth=(selected||isEndpoint?3.4:2)*density;
+   ctx.strokeStyle=isEndpoint?"#fff2cb":tint;ctx.stroke();
+   if(rad<5){
+    // En la vista panorámica los avatares y letras diminutas se vuelven ilegibles.
+    ctx.beginPath();ctx.arc(p.x,p.y,Math.max(1,rad*.72),0,2*PI);
+    ctx.fillStyle=tint;ctx.fill();
+   }else{
    const photo=options.getPhoto?.(n);
    if(photo){
     let entry=cached.get(photo);if(!entry){const img=new Image();entry={img,state:"loading"};cached.set(photo,entry);img.onload=()=>{entry.state="ok";redraw()};img.onerror=()=>{entry.state="error";redraw()};img.src=photo}
     if(entry.state==="ok"){const img=entry.img;ctx.save();ctx.beginPath();ctx.arc(p.x,p.y,rad-1,0,2*PI);ctx.clip();const r=Math.max(2*rad/img.width,2*rad/img.height);ctx.drawImage(img,p.x-img.width*r/2,p.y-img.height*r/2,img.width*r,img.height*r);ctx.restore()}
-    else{ctx.font="700 14px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+5)}
-   }else{ctx.font="700 14px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+5)}
+    else{ctx.font=clip(rad*1.15,7,14)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.33)}
+   }else{ctx.font=clip(rad*1.15,7,14)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.33)}
+   }
    if(selected||isHover||isEndpoint){
     const name=n.name.length>25?n.name.slice(0,24)+"…":n.name;
     ctx.font="600 11px system-ui";let lw=Math.min(220,ctx.measureText(name).width+14);
