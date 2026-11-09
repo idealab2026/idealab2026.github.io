@@ -4,7 +4,7 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
     "id": "idealab-f18-epstein-lorenzo",
     "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
     "url": "https://www.youtube.com/watch?v=MljyjDGTxkk",
-    "publishedAt": "",
+    "publishedAt": "2026-02-08",
     "reviewStage": "fuente_editorial_transcripcion_pendiente",
     "transcriptAvailable": false,
     "sourceOrder": 18,
