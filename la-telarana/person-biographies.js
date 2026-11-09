@@ -99,6 +99,26 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "cv26-cembrero": {
       "lang": "es",
       "title": "Ignacio Cembrero"
+    },
+    "vf150-khaled-meshaal": {
+      "lang": "es",
+      "title": "Jaled Meshal"
+    },
+    "vf150-danny-yatom": {
+      "lang": "en",
+      "title": "Danny Yatom"
+    },
+    "vf150-hussein-jordania": {
+      "lang": "es",
+      "title": "Husein I de Jordania"
+    },
+    "vf150-ahmed-yassin": {
+      "lang": "es",
+      "title": "Ahmed Yasín"
+    },
+    "vf150-abdel-aziz-al-rantisi": {
+      "lang": "en",
+      "title": "Abdel Aziz al-Rantisi"
     }
   },
   "curated": {
@@ -148,6 +168,41 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://transparencia.gob.es/servicios-buscador/contenido/curriculums.htm?id=CV_37610",
       "sourceTitle": "Currículum oficial · Portal de Transparencia",
       "also": "https://www.psoe.es/actualidad/noticias-actualidad/ion-antolin-llorente-nuevo-director-de-comunicacion-del-psoe/",
+      "reviewedAt": "2026-11-09"
+    },
+    "vf150-khaled-meshaal": {
+      "text": "Jaled Mashal o Khaled Meshaal (nacido en 1956 en Silwad, Cisjordania) es un político palestino y dirigente histórico de Hamás. Pasó parte de su juventud en Kuwait y desarrolló actividad política en Jordania, Siria y Catar. Presidió el buró político de Hamás entre 1996 y 2017. En 1997 sobrevivió a un intento de asesinato de agentes del Mossad en Amán. El incidente provocó una crisis diplomática entre Jordania e Israel y llevó a la entrega de un antídoto. Esta trayectoria procede de fuentes externas: no se presenta como una transcripción literal del podcast.",
+      "source": "https://ecfr.eu/special/mapping_palestinian_politics/khaled_mashal/",
+      "sourceTitle": "European Council on Foreign Relations · perfil biográfico",
+      "also": "https://www.everycrsreport.com/reports/R41514.html",
+      "reviewedAt": "2026-11-09"
+    },
+    "vf150-danny-yatom": {
+      "text": "Danny Yatom (nacido en 1945) es un militar, exresponsable de inteligencia y político israelí. Alcanzó el grado de general en las Fuerzas de Defensa de Israel y fue secretario militar de primeros ministros israelíes antes de dirigir el Mossad entre 1996 y 1998. También ocupó un escaño en la Knéset. Renunció a la dirección del Mossad en febrero de 1998 tras las críticas a la operación fallida contra Khaled Mashal en Jordania. El episodio alude a su actuación durante la crisis del antídoto; la información biográfica y el contexto institucional se contrastan por separado.",
+      "source": "https://www.tandfonline.com/doi/full/10.1080/02684527.2024.2332030",
+      "sourceTitle": "Intelligence and National Security · entrevista académica a Yatom (2024)",
+      "also": "https://www.cbsnews.com/news/israels-spy-agency-chief-quits/",
+      "reviewedAt": "2026-11-09"
+    },
+    "vf150-hussein-jordania": {
+      "text": "Husein bin Talal (Amán, 1935–1999) fue rey de Jordania desde 1952 hasta su muerte, aunque asumió plenamente sus atribuciones constitucionales en 1953. Su reinado abarcó la guerra de 1967, los conflictos con organizaciones palestinas y la firma del tratado de paz con Israel de 1994. En 1997 intervino para exigir un antídoto y una solución diplomática después de un intento de asesinato del Mossad en Amán. Su papel como monarca y negociador está documentado independientemente de las declaraciones de los entrevistados.",
+      "source": "https://rhc.jo/en/king-hussein-bin-talal-1935-1999",
+      "sourceTitle": "Casa Real Hachemí de Jordania · biografía histórica",
+      "also": "https://www.everycrsreport.com/reports/R41514.html",
+      "reviewedAt": "2026-11-09"
+    },
+    "vf150-ahmed-yassin": {
+      "text": "Ahmed Yasín (fallecido en 2004) fue un clérigo y dirigente islamista palestino, principal fundador de Hamás en Gaza en 1987. Había impulsado redes religiosas y sociales vinculadas a los Hermanos Musulmanes. Permaneció encarcelado en Israel hasta que fue liberado en 1997 en el acuerdo surgido tras el intento de asesinato de Khaled Mashal en Jordania. Murió el 22 de marzo de 2004 en un ataque de misiles israelí cuando salía de una mezquita en Gaza. La biografía se distingue de las interpretaciones del podcast acerca de la planificación de esa operación.",
+      "source": "https://www.cfr.org/backgrounders/what-hamas",
+      "sourceTitle": "Council on Foreign Relations · historia y origen de Hamás",
+      "also": "https://www.theguardian.com/world/2004/mar/22/israel.guardianobituaries",
+      "reviewedAt": "2026-11-09"
+    },
+    "vf150-abdel-aziz-al-rantisi": {
+      "text": "Abdel Aziz al-Rantisi (1947–2004) fue médico pediatra y dirigente palestino, cofundador de Hamás. Se formó en Medicina en Egipto y ejerció en la Franja de Gaza. Tras el asesinato de Ahmed Yasín en marzo de 2004, asumió una posición de liderazgo de Hamás en Gaza. El 17 de abril de 2004 murió en un ataque israelí con misiles contra su automóvil en Gaza, junto con otras personas. Estas son referencias biográficas e históricas independientes; el episodio de Frattini se conserva aparte como fuente de las afirmaciones del invitado.",
+      "source": "https://www.theguardian.com/world/2004/apr/17/israel3",
+      "sourceTitle": "The Guardian · crónica contemporánea del 17/04/2004",
+      "also": "https://jewishvirtuallibrary.org/jsource/biography/Rantissi.html",
       "reviewedAt": "2026-11-09"
     }
   }
