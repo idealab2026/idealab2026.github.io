@@ -1,0 +1,47 @@
+/* Integridad de los hitos fechados compartidos entre ambos proyectos. */
+import assert from "node:assert/strict";
+import fs from "node:fs";
+const history=JSON.parse(fs.readFileSync("linea-historia/data.json","utf8"));
+const feed=JSON.parse(fs.readFileSync("linea-historia/estudios-telarana.json","utf8"));
+const timeline=fs.readFileSync("linea-historia/timeline-v4.js","utf8");
+const historyHTML=fs.readFileSync("linea-historia/index.html","utf8");
+const graphHTML=fs.readFileSync("la-telarana/index.html","utf8");
+const progress=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
+assert(Array.isArray(feed.items)&&feed.items.length>0,"El catálogo no puede estar vacío");
+assert(feed.reviewProtocol&&feed.reviewProtocol.required.length>=5,"Faltan controles del protocolo documental");
+const ids=new Set(history.items.map(x=>x.id));
+const feedIds=new Set(),dedupKeys=new Set();
+const bySource={};
+const normal=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+for(const e of feed.items){
+ assert(!feedIds.has(e.id),"ID duplicado: "+e.id);
+ assert(!ids.has(e.id),"ID ya presente en la línea histórica: "+e.id);
+ assert(/^study-v[12]-[a-z0-9-]+$/.test(e.id),"ID editorial sin prefijo de fuente");
+ feedIds.add(e.id);
+ const inv=e.investigation||{};
+ assert(inv.status==="hecho_documentado","Solo se pueden publicar hechos contrastados");
+ assert(/^\d{4}-\d{2}(?:-\d{2})?$/.test(inv.date||""),"Fecha inválida");
+ const year=Number(inv.date.slice(0,4));
+ assert(Math.floor(e.y)===year,"El año del eje no coincide con la fecha");
+ assert(e.c==="Acontecimientos"||e.c==="Actualidad","Categoría histórica inválida");
+ assert(e.d&&e.d.length>120,"Descripción insuficiente");
+ assert(Array.isArray(e.g)&&e.g.every(v=>["Europa","Asia","África","América","Oceanía","Antártida","Mundial"].includes(v)),"Geografía inválida");
+ assert(inv.confirmedBy&&/^https:\/\//.test(inv.confirmedBy.url),"Falta fuente contrastada externa");
+ assert(/^https:\/\/www\.youtube\.com\/watch\?v=/.test(inv.sourceUrl),"Falta episodio");
+ assert(Array.isArray(inv.relatedTelarana)&&inv.relatedTelarana.length>=1,"Sin enlace a La Telaraña");
+ assert(inv.methodologicalLimits&&inv.methodologicalLimits.length>=60,"Sin límites de la evidencia");
+ const key=normal(e.t)+"|"+year;
+ assert(!dedupKeys.has(key),"Evento repetido: "+key);
+ dedupKeys.add(key);
+ bySource[inv.sourceOrder]=(bySource[inv.sourceOrder]||0)+1;
+}
+assert.equal(bySource[1],5,"Carga histórica de la fuente 1");
+assert.equal(bySource[2],3,"Contexto externo de la fuente 2");
+assert.equal(progress.counts.reviewedPublished,1,"Una cronología no completa fuentes pendientes");
+assert(timeline.includes('readJSON("./estudios-telarana.json")'),"El visor no consume el catálogo");
+assert(timeline.includes("function showStudyNote("),"Faltan fichas documentales");
+assert(timeline.includes("if(d&&d.investigation){showStudyNote(d);return}"),"La ficha documental debe prevalecer frente a Wikipedia");
+assert(timeline.includes('get("evento")'),"El enlace directo a un acontecimiento no está implementado");
+assert(graphHTML.includes('get("entidad")'),"Falta navegación a personas desde la cronología");
+assert(historyHTML.includes("timeline-v4.js?v="),"No se actualizó la caché del visor");
+console.log("OK: "+feed.items.length+" acontecimientos contrastados, sin duplicados ni alegaciones convertidas en hechos");
