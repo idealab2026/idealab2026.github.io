@@ -11,6 +11,8 @@ Las transcripciones y fuentes exportadas permanecen en el Mac del usuario.
 from __future__ import annotations
 
 import argparse
+import csv
+import shutil
 import json
 import re
 import subprocess
@@ -25,6 +27,19 @@ BOOKS = {
     "cultura geopolitica espana",
     "cultura geopolitica",
     "cultura historia moderna",
+}
+
+# Ocho cuadernos relevantes para La Telaraña (auditoría del 09/11/2026).
+# Los recuentos son orientativos: nunca excluir fuentes si cambian.
+INVENTORY_BOOKS = {
+    "cultura geopolitica espana": 9,
+    "cultura geopolitica": 20,
+    "cultura geopolitica el conflicto entre ee uu e iran": 1,
+    "cultura historia moderna": 4,
+    "cultura historia historia de espana": 1,
+    "cultura historia arqueologia": 17,
+    "cultura religion judaismo": 11,
+    "cultura cristianismo": 4,
 }
 VIDEO_ID = re.compile(r"[a-zA-Z0-9_-]{11}\Z")
 
@@ -47,8 +62,9 @@ def get_items(value: object, keys: tuple[str, ...]) -> list[dict]:
 
 def call_nlm(*args: str, timeout: int = 180) -> str:
     try:
+        exe = shutil.which("nlm") or str(Path.home() / ".local/bin/nlm")
         run = subprocess.run(
-            ["nlm", *args], check=False, text=True,
+            [exe, *args], check=False, text=True,
             capture_output=True, timeout=timeout,
         )
     except FileNotFoundError:
@@ -97,24 +113,28 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--all", action="store_true", help="Exportar las 33 fuentes de CULTURA")
+    group.add_argument("--inventory", action="store_true", help="Imprimir títulos y enlaces de los 8 cuadernos, sin descargar archivos")
     group.add_argument("--video-id", help="Exportar una fuente de YouTube por ID exacto")
     args = parser.parse_args()
     if args.video_id and not VIDEO_ID.fullmatch(args.video_id):
         parser.error("El ID de YouTube debe contener 11 caracteres válidos.")
 
     books = get_items(get_json("notebook", "list", "--json"), ("notebooks",))
+    selected = INVENTORY_BOOKS if args.inventory else BOOKS
     targets = [
         b for b in books
-        if normalize(b.get("title") or b.get("name")) in BOOKS
+        if normalize(b.get("title") or b.get("name")) in selected
     ]
     if not targets:
         raise RuntimeError("No encuentro los cuadernos CULTURA. Comprueba nlm notebook list.")
-    if args.all and len(targets) != 3:
-        raise RuntimeError(
-            "Faltan cuadernos. Encontrados: " + ", ".join(
-                str(b.get("title") or b.get("name")) for b in targets
-            )
-        )
+    if (args.all or args.inventory) and len(targets) != len(selected):
+        missing = sorted(set(selected) - {
+            normalize(b.get("title") or b.get("name")) for b in targets
+        })
+        raise RuntimeError("Faltan cuadernos: " + ", ".join(missing))
+    targets.sort(key=lambda b: list(selected).index(
+        normalize(b.get("title") or b.get("name"))
+    ))
 
     sources: list[dict] = []
     for book in targets:
@@ -123,7 +143,7 @@ def main() -> int:
         if not notebook_id:
             raise RuntimeError("El cuaderno no tiene ID: " + title)
         rows = get_items(get_json("source", "list", notebook_id, "--json"), ("sources",))
-        print(f"{title}: {len(rows)} fuentes")
+        print(f"{title}: {len(rows)} fuentes", file=sys.stderr if args.inventory else sys.stdout)
         for row in rows:
             url = row.get("url") or row.get("source_url") or row.get("original_url") or ""
             if isinstance(url, dict):
@@ -132,16 +152,36 @@ def main() -> int:
             video_id = youtube_id(str(url))
             if not source_id:
                 continue
-            if not args.all and video_id != args.video_id:
+            if args.video_id and video_id != args.video_id:
                 continue
             sources.append({
                 "notebook": title, "source_id": source_id,
                 "title": str(row.get("title") or row.get("name") or ""),
                 "url": str(url), "video_id": video_id,
+                "source_type": str(row.get("source_type") or row.get("type") or ""),
+                "notebook_id": notebook_id,
             })
 
     if not sources:
         raise RuntimeError("No hay fuentes coincidentes; no se exporta nada.")
+
+    if args.inventory:
+        writer = csv.writer(sys.stdout, delimiter="\\t", lineterminator="\\n")
+        writer.writerow(["numero", "cuaderno", "titulo", "enlace_original", "video_id", "tipo", "notebook_id", "source_id"])
+        for number, source in enumerate(sources, 1):
+            writer.writerow([
+                number, source["notebook"], source["title"], source["url"],
+                source["video_id"], source["source_type"],
+                source["notebook_id"], source["source_id"],
+            ])
+        keys = {source["video_id"] or source["url"] or source["source_id"] for source in sources}
+        missing_urls = sum(not source["url"] for source in sources)
+        print(
+            f"Inventario: {len(sources)} entradas, {len(keys)} identificadores distintos, "
+            f"{missing_urls} sin enlace original. Datos copiados solo si canalizas stdout a pbcopy.",
+            file=sys.stderr,
+        )
+        return 0
 
     output = Path.home() / "Downloads" / (
         "telarana_fuentes_textos.zip" if args.all
