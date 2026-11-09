@@ -28,10 +28,11 @@ jobs:
       - name: Validar catálogo y scripts de la biblioteca
         run: |
           node --check biblioteca-montecristo/app.js
-          python3 -m py_compile scripts/sync_biblioteca.py scripts/notebooklm_infografias.py scripts/notebooklm_bridge.py scripts/notebooklm_bridge_launchd.py scripts/notebooklm_source_mapper.py scripts/notebooklm_export_desktop.py scripts/export_telarana_sources.py
+          python3 -m py_compile scripts/sync_biblioteca.py scripts/notebooklm_infografias.py scripts/notebooklm_bridge.py scripts/notebooklm_bridge_launchd.py scripts/notebooklm_source_mapper.py scripts/notebooklm_export_desktop.py scripts/notebooklm_export_all.py scripts/export_telarana_sources.py
           python3 -m unittest discover -s scripts -p 'test_notebooklm_bridge.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_source_mapper.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_export_desktop.py' -v
+          python3 -m unittest discover -s scripts -p 'test_notebooklm_export_all.py' -v
           python3 -m unittest discover -s scripts -p 'test_biblioteca.py' -v
       - name: Validar distribución 3D y gestos de zoom
         run: node scripts/test_telarana_3d.mjs
