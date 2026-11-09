@@ -63,7 +63,7 @@ window.IDEA_TELARANA_SOURCE03_EDITORIAL = {
       "kind": "Persona",
       "subtitle": "Rey de España desde 2014 · mencionado en título editorial",
       "note": "Felipe VI (Madrid, 1968) fue proclamado rey de España el 19 de junio de 2014 después de la abdicación de Juan Carlos I. Su biografía institucional es verificable. Su nombre aparece en el título del episodio #145, pero el título no acredita ninguna de las insinuaciones sobre su vida privada ni su participación en redes ilícitas. No se registran datos personales especulativos.",
-      "photo": "",
+      "photo": "https://www.casareal.es/ES/Documents/fotos_oficiales/1_rey_gala.jpg",
       "source": "https://www.rtve.es/noticias/proclamacion-felipe-vi/biografia/",
       "topic3d": "politica",
       "podcastNotes": [
@@ -76,7 +76,9 @@ window.IDEA_TELARANA_SOURCE03_EDITORIAL = {
           "status": "resumen-editorial",
           "text": "El título promocional menciona a Felipe VI, sin que se disponga de una transcripción que acredite lo dicho, su contexto o su veracidad. No se atribuyen al monarca conductas no documentadas."
         }
-      ]
+      ],
+      "photoCredit": "Casa de S. M. el Rey · fotografía oficial de Estela de Castro",
+      "photoEvidenceUrl": "https://www.casareal.es/ES/Documents/fotos_oficiales/1_rey_gala.jpg"
     },
     {
       "id": "rv145-episodio",
