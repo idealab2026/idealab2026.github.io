@@ -1,4 +1,4 @@
-/* Fuente 17: menciones textuales y clasificación probatoria, NO hechos ilícitos acreditados. */
+/* Capa inicial; las participaciones editoriales no certifican las interpretaciones del episodio. */
 window.IDEA_TELARANA_F17_REVIEW = {
   "metadata": {
     "id": "idealab-f17-source",
@@ -187,6 +187,29 @@ window.IDEA_TELARANA_F17_REVIEW = {
       ],
       "x": 8500,
       "y": 2895
+    },
+    {
+      "id": "f17-margallo",
+      "name": "José Manuel García-Margallo",
+      "kind": "Persona",
+      "subtitle": "Exministro de Asuntos Exteriores español (2011–2016)",
+      "note": "Invitado identificado en el título del vídeo y en el cierre de la entrevista, cuyo reconocimiento automático presenta una variante de su apellido. El Congreso y el Ministerio de Exteriores documentan su trayectoria. Las opiniones geopolíticas son suyas, no hechos automáticos.",
+      "source": "https://www.youtube.com/watch?v=3DkVY51_CHs",
+      "topic3d": "espana",
+      "photo": "",
+      "x": 8200,
+      "y": 1500,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f17-source",
+          "title": "El orden mundial ha cambiado · José Manuel García-Margallo",
+          "publishedAt": "",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=3DkVY51_CHs",
+          "status": "resumen-editorial",
+          "text": "Invitado identificado en el título del vídeo y en el cierre de la entrevista, cuyo reconocimiento automático presenta una variante de su apellido. El Congreso y el Ministerio de Exteriores documentan su trayectoria. Las opiniones geopolíticas son suyas, no hechos automáticos."
+        }
+      ]
     }
   ],
   "edges": [
@@ -341,6 +364,28 @@ window.IDEA_TELARANA_F17_REVIEW = {
           "source": "https://www.youtube.com/watch?v=3DkVY51_CHs",
           "status": "resumen-editorial",
           "text": "Mención localizada aproximadamente en 0% del texto automático, sin minuto ni hablante validado. Intereses diplomáticos españoles y relación con Marruecos son tema de entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f17-editorial-f17-margallo",
+      "a": "f17-episodio",
+      "b": "f17-margallo",
+      "type": "Invitado identificado editorialmente",
+      "confidence": "documentado",
+      "note": "Invitado identificado en el título del vídeo y en el cierre de la entrevista, cuyo reconocimiento automático presenta una variante de su apellido. El Congreso y el Ministerio de Exteriores documentan su trayectoria. Las opiniones geopolíticas son suyas, no hechos automáticos.",
+      "source": "https://www.youtube.com/watch?v=3DkVY51_CHs",
+      "episodeId": "idealab-f17-source",
+      "claimStatus": "identificacion_editorial",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f17-source",
+          "title": "El orden mundial ha cambiado · José Manuel García-Margallo",
+          "publishedAt": "",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=3DkVY51_CHs",
+          "status": "resumen-editorial",
+          "text": "Invitado identificado en el título del vídeo y en el cierre de la entrevista, cuyo reconocimiento automático presenta una variante de su apellido. El Congreso y el Ministerio de Exteriores documentan su trayectoria. Las opiniones geopolíticas son suyas, no hechos automáticos."
         }
       ]
     }
