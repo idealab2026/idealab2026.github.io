@@ -960,6 +960,62 @@
         ],
         "methodologicalLimits": "Evento fechado por aprobación de la norma el 05/10/2026 y entrada en vigor el 06/10/2026. El acto electoral del 29 de noviembre es futuro a fecha del registro y no se da por celebrado; los motivos políticos que atribuye Villarejo permanecen como hipótesis."
       }
+    },
+    {
+      "id": "study-f18-doj-epstein-release-2026",
+      "y": 2026.0808219178082,
+      "t": "El DOJ anuncia una nueva publicación de documentos del caso Epstein",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 18 · documento institucional independiente",
+      "d": "El Departamento de Justicia de Estados Unidos anunció el 30 de enero de 2026 la publicación de más de tres millones de páginas adicionales de documentos relacionados con Jeffrey Epstein, que elevaron el acumulado a aproximadamente 3,5 millones. El hecho comprobado es la comunicación y publicación del archivo, no la veracidad de cada afirmación presente en sus documentos.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "2026-01-30",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 18,
+        "sourceTitle": "EPSTEIN, EEUU con Israel y las élites occidentales (Lorenzo Ramírez)",
+        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+        "confirmedBy": {
+          "label": "Departamento de Justicia de EEUU · comunicado 30/01/2026",
+          "url": "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files"
+        },
+        "relatedTelarana": [
+          "f18-episodio",
+          "f18-doj"
+        ],
+        "methodologicalLimits": "Se registra un acto documental de comunicación oficial. No se infiere de ese acto implicación penal de personas mencionadas, conexiones con servicios secretos ni contenido exacto del episodio."
+      }
+    },
+    {
+      "id": "study-f21-usaid-review-2025",
+      "y": 2025.0534246575342,
+      "t": "EEUU ordena revisar y pausar la ayuda exterior, incluidos programas USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · contraste institucional independiente",
+      "d": "El 20 de enero de 2025, la orden ejecutiva 14169 del Gobierno estadounidense puso en marcha una pausa y revisión de la asistencia exterior, incluidos los programas USAID. El hecho precede al episodio del 19 de marzo de 2025 en el que el productor anuncia un apartado sobre USAID. Las reformas y transferencias posteriores de 2025 no se atribuyen retroactivamente a la conversación.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "2025-01-20",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El Nuevo Orden Mundial que nos ocultan · Lorenzo Ramírez #68",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "USAID Office of Inspector General · evaluación 03/11/2026",
+          "url": "https://oig.usaid.gov/node/8228"
+        },
+        "relatedTelarana": [
+          "f21-episodio",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Contexto documental fechado, no una reconstrucción del texto pronunciado ni prueba de las interpretaciones del programa."
+      }
     }
   ]
 }
