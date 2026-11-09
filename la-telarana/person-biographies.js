@@ -1,4 +1,4 @@
-/* Biografías independientes y contexto textual con separación de hechos y declaraciones de entrevistas. */
+/* Biografías contextualizadas; separar roles comprobados de declaraciones controversiales. */
 window.IDEA_TELARANA_BIOGRAPHIES = {
   "version": 1,
   "reviewedAt": "2026-11-10",
@@ -789,6 +789,216 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "text": "Ursula von der Leyen es política alemana y presidenta de la Comisión Europea desde 2019. El programa la sitúa en el debate sobre nuevas políticas de defensa y competencias de la UE; los juicios de legitimidad del invitado no equivalen a resoluciones judiciales.",
       "source": "https://commission.europa.eu/about/organisation/president_en",
       "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f10-prada": {
+      "text": "Juan Manuel de Prada es novelista, ensayista y columnista español. Las fuentes 10 y 12 recogen sus opiniones sobre Franco, la Segunda República, la División Azul, historiografía y literatura. Su condición de escritor es independiente de que sus interpretaciones sean compartidas o estén documentalmente acreditadas.",
+      "source": "https://es.wikipedia.org/wiki/Juan_Manuel_de_Prada",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f12-prada": {
+      "text": "Juan Manuel de Prada es novelista, ensayista y columnista español. Las fuentes 10 y 12 recogen sus opiniones sobre Franco, la Segunda República, la División Azul, historiografía y literatura. Su condición de escritor es independiente de que sus interpretaciones sean compartidas o estén documentalmente acreditadas.",
+      "source": "https://es.wikipedia.org/wiki/Juan_Manuel_de_Prada",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f10-banos": {
+      "text": "Pedro Baños es coronel español en la reserva, escritor y divulgador de geopolítica, presentador de El Canal del Coronel. En la fuente 10 entrevista a Juan Manuel de Prada y en la 16 aborda Ceuta y relaciones internacionales con otros interlocutores. Los argumentos de los invitados no se atribuyen a él sin identificar al hablante.",
+      "source": "https://es.wikipedia.org/wiki/Pedro_Ba%C3%B1os_Bajo",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f16-banos": {
+      "text": "Pedro Baños es coronel español en la reserva, escritor y divulgador de geopolítica, presentador de El Canal del Coronel. En la fuente 10 entrevista a Juan Manuel de Prada y en la 16 aborda Ceuta y relaciones internacionales con otros interlocutores. Los argumentos de los invitados no se atribuyen a él sin identificar al hablante.",
+      "source": "https://es.wikipedia.org/wiki/Pedro_Ba%C3%B1os_Bajo",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f10-franco": {
+      "text": "Francisco Franco (1892–1975) fue un militar español, jefe del bando sublevado durante la Guerra Civil y dictador de España desde 1939 hasta su muerte. Los episodios 10, 11 y 12 contienen valoraciones contrapuestas o ideologizadas sobre su régimen; deben evaluarse con historiografía y documentación primaria, no presentarse como hechos por ser declaraciones de entrevistados.",
+      "source": "https://es.wikipedia.org/wiki/Francisco_Franco",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-franco": {
+      "text": "Francisco Franco (1892–1975) fue un militar español, jefe del bando sublevado durante la Guerra Civil y dictador de España desde 1939 hasta su muerte. Los episodios 10, 11 y 12 contienen valoraciones contrapuestas o ideologizadas sobre su régimen; deben evaluarse con historiografía y documentación primaria, no presentarse como hechos por ser declaraciones de entrevistados.",
+      "source": "https://es.wikipedia.org/wiki/Francisco_Franco",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f12-franco": {
+      "text": "Francisco Franco (1892–1975) fue un militar español, jefe del bando sublevado durante la Guerra Civil y dictador de España desde 1939 hasta su muerte. Los episodios 10, 11 y 12 contienen valoraciones contrapuestas o ideologizadas sobre su régimen; deben evaluarse con historiografía y documentación primaria, no presentarse como hechos por ser declaraciones de entrevistados.",
+      "source": "https://es.wikipedia.org/wiki/Francisco_Franco",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-paz": {
+      "text": "Fernando Paz es historiador, escritor y conferenciante español, entrevistado en la fuente 11 sobre la Guerra Civil. Sus afirmaciones sobre la Constitución republicana, legitimidades políticas y destrucción patrimonial se registran como tesis de autor, que necesitan revisión documental independiente.",
+      "source": "https://www.youtube.com/watch?v=ifklD4aJXv8",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-azana": {
+      "text": "Manuel Azaña (1880–1940) fue escritor y político español, presidente del Consejo de Ministros y posteriormente presidente de la Segunda República. Su papel en la crisis republicana y la Guerra Civil se comenta en la fuente 11; las responsabilidades causales atribuidas por un entrevistado requieren referencias históricas.",
+      "source": "https://es.wikipedia.org/wiki/Manuel_Aza%C3%B1a",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-mola": {
+      "text": "Emilio Mola (1887–1937) fue general del Ejército español y uno de los organizadores principales de la conspiración militar de julio de 1936. Se cita en el episodio sobre la Guerra Civil; la intervención de distintos actores debe documentarse mediante archivos e investigaciones históricas.",
+      "source": "https://es.wikipedia.org/wiki/Emilio_Mola",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-negrin": {
+      "text": "Juan Negrín (1892–1956) fue médico y político español, ministro de Hacienda y presidente del Gobierno republicano durante buena parte de la Guerra Civil. La fuente 11 menciona su trayectoria en el contexto de la política republicana.",
+      "source": "https://es.wikipedia.org/wiki/Juan_Negr%C3%ADn",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f10-hitler": {
+      "text": "Adolf Hitler (1889–1945) fue dictador de Alemania nazi desde 1933 hasta 1945 y principal responsable del régimen que emprendió una guerra de agresión en Europa y organizó el Holocausto. Su nombre aparece en las fuentes 10–13 como figura histórica; rumores biográficos y anécdotas del podcast requieren cotejo.",
+      "source": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/attentat-auf-adolf-hitler/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-hitler": {
+      "text": "Adolf Hitler (1889–1945) fue dictador de Alemania nazi desde 1933 hasta 1945 y principal responsable del régimen que emprendió una guerra de agresión en Europa y organizó el Holocausto. Su nombre aparece en las fuentes 10–13 como figura histórica; rumores biográficos y anécdotas del podcast requieren cotejo.",
+      "source": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/attentat-auf-adolf-hitler/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f12-hitler": {
+      "text": "Adolf Hitler (1889–1945) fue dictador de Alemania nazi desde 1933 hasta 1945 y principal responsable del régimen que emprendió una guerra de agresión en Europa y organizó el Holocausto. Su nombre aparece en las fuentes 10–13 como figura histórica; rumores biográficos y anécdotas del podcast requieren cotejo.",
+      "source": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/attentat-auf-adolf-hitler/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f13-hitler": {
+      "text": "Adolf Hitler (1889–1945) fue dictador de Alemania nazi desde 1933 hasta 1945 y principal responsable del régimen que emprendió una guerra de agresión en Europa y organizó el Holocausto. Su nombre aparece en las fuentes 10–13 como figura histórica; rumores biográficos y anécdotas del podcast requieren cotejo.",
+      "source": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/attentat-auf-adolf-hitler/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-mussolini": {
+      "text": "Benito Mussolini (1883–1945) fue dirigente fascista italiano y gobernó Italia como dictador desde la década de 1920. La fuente 11 lo menciona por la intervención italiana en la Guerra Civil y la 13 por su papel en la Segunda Guerra Mundial.",
+      "source": "https://es.wikipedia.org/wiki/Benito_Mussolini",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f13-mussolini": {
+      "text": "Benito Mussolini (1883–1945) fue dirigente fascista italiano y gobernó Italia como dictador desde la década de 1920. La fuente 11 lo menciona por la intervención italiana en la Guerra Civil y la 13 por su papel en la Segunda Guerra Mundial.",
+      "source": "https://es.wikipedia.org/wiki/Benito_Mussolini",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f11-primo": {
+      "text": "José Antonio Primo de Rivera (1903–1936) fue abogado, político y fundador de Falange Española en 1933. Fue ejecutado en Alicante en noviembre de 1936. Su papel histórico se contextualiza sin asumir juicios ideológicos del entrevistado.",
+      "source": "https://es.wikipedia.org/wiki/Jos%C3%A9_Antonio_Primo_de_Rivera",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f12-maranon": {
+      "text": "Gregorio Marañón (1887–1960) fue médico endocrinólogo, ensayista e intelectual español. La fuente 12 trata sus posicionamientos políticos, su relación con el exilio y sus textos sobre España; los detalles concretos deben verificarse mediante cartas y publicaciones originales.",
+      "source": "https://es.wikipedia.org/wiki/Gregorio_Mara%C3%B1%C3%B3n",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f13-hernandez": {
+      "text": "Jesús Hernández es autor y divulgador de historia contemporánea especializado en la Segunda Guerra Mundial. En The Wild Project #293 habla de Hitler, operaciones militares, resistencia y relatos históricos. No confundirlo con otros personajes públicos homónimos.",
+      "source": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f13-stalin": {
+      "text": "Iósif Stalin (1878–1953) fue dirigente de la Unión Soviética desde finales de la década de 1920 hasta 1953. Su figura se relaciona con la conducción soviética de la Segunda Guerra Mundial, objeto de la fuente 13.",
+      "source": "https://es.wikipedia.org/wiki/I%C3%B3sif_Stalin",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f13-churchill": {
+      "text": "Winston Churchill (1874–1965) fue político británico y primer ministro de Reino Unido durante la mayor parte de la Segunda Guerra Mundial. Se menciona como dirigente aliado y referente estratégico en la fuente 13.",
+      "source": "https://es.wikipedia.org/wiki/Winston_Churchill",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f13-roosevelt": {
+      "text": "Franklin Delano Roosevelt (1882–1945) presidió Estados Unidos desde 1933 hasta su muerte en abril de 1945. Dirigió al país durante la Gran Depresión y la mayor parte de su participación en la Segunda Guerra Mundial; el episodio 13 lo menciona como líder aliado.",
+      "source": "https://es.wikipedia.org/wiki/Franklin_D._Roosevelt",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f14-binladen": {
+      "text": "Osama bin Laden (1957–2011) fue fundador y máximo dirigente histórico de Al Qaeda, organización responsable de los atentados del 11 de septiembre de 2001. El expediente distingue lo que establece la Comisión de Investigación de teorías posteriores que no cuentan con respaldo documental.",
+      "source": "https://9-11commission.gov/report/911Report_Ch1.htm",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f14-bush": {
+      "text": "George W. Bush fue presidente de Estados Unidos entre enero de 2001 y enero de 2009. Durante su mandato ocurrieron los atentados del 11-S y comenzó la posterior intervención estadounidense en Afganistán. Su papel institucional no acredita conocimiento previo ni conspiración por mera mención.",
+      "source": "https://www.georgewbushlibrary.gov/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f16-gisbert": {
+      "text": "Rubén Gisbert es abogado y comunicador español. Participa en debates de actualidad geopolítica y política interna; en la fuente 16 aparece como colaborador anunciado del Canal del Coronel. Sus interpretaciones se tratan como declaraciones y no pruebas.",
+      "source": "https://www.youtube.com/watch?v=J4bqUufijTo",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f16-iturralde": {
+      "text": "Alberto Iturralde es analista y operador de mercados conocido por sus intervenciones sobre bolsa y coyuntura económica española. La fuente 16 lo presenta como participante del debate sobre Ceuta y escenario internacional; sus opiniones requieren contraste específico.",
+      "source": "https://www.youtube.com/watch?v=J4bqUufijTo",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f17-margallo": {
+      "text": "José Manuel García-Margallo (n. 1944) es político, abogado y economista español, antiguo eurodiputado y ministro de Asuntos Exteriores y Cooperación entre 2011 y 2016. La fuente 17 recoge sus posiciones sobre Marruecos, Europa y el equilibrio mundial; su trayectoria está documentada en fichas oficiales.",
+      "source": "https://www.congreso.es/es/busqueda-de-diputados?codParlamentario=180&idLegislatura=XII&mostrarFicha=true",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f19-diax": {
+      "text": "Fernando Díaz Villanueva es periodista y divulgador español que analiza economía, historia y política internacional. En la fuente 19 aparece anunciado como participante del debate sobre China y Estados Unidos; no se le atribuye un pasaje sin identificar su voz.",
+      "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f19-calero": {
+      "text": "Juan Francisco Calero es periodista y divulgador español especializado en tecnología y automoción. Aparece anunciado como participante en la mesa de debate de la fuente 19. Las opiniones individuales no se atribuyen sin identificación del hablante.",
+      "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f19-lorenzo": {
+      "text": "Lorenzo Ramírez es periodista y analista económico español, especializado en política monetaria, geopolítica y mercados. Participa en distintas fuentes de este inventario sobre banca central, conflictos internacionales, Unión Europea y tecnología; sus interpretaciones se distinguen de los hechos institucionales corroborados.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f20-lorenzo": {
+      "text": "Lorenzo Ramírez es periodista y analista económico español, especializado en política monetaria, geopolítica y mercados. Participa en distintas fuentes de este inventario sobre banca central, conflictos internacionales, Unión Europea y tecnología; sus interpretaciones se distinguen de los hechos institucionales corroborados.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f23-lorenzo": {
+      "text": "Lorenzo Ramírez es periodista y analista económico español, especializado en política monetaria, geopolítica y mercados. Participa en distintas fuentes de este inventario sobre banca central, conflictos internacionales, Unión Europea y tecnología; sus interpretaciones se distinguen de los hechos institucionales corroborados.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f24-lorenzo": {
+      "text": "Lorenzo Ramírez es periodista y analista económico español, especializado en política monetaria, geopolítica y mercados. Participa en distintas fuentes de este inventario sobre banca central, conflictos internacionales, Unión Europea y tecnología; sus interpretaciones se distinguen de los hechos institucionales corroborados.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
+      "reviewedAt": "2026-11-10"
+    },
+    "f25-lorenzo": {
+      "text": "Lorenzo Ramírez es periodista y analista económico español, especializado en política monetaria, geopolítica y mercados. Participa en distintas fuentes de este inventario sobre banca central, conflictos internacionales, Unión Europea y tecnología; sus interpretaciones se distinguen de los hechos institucionales corroborados.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Referencia biográfica independiente o identificación editorial",
       "reviewedAt": "2026-11-10"
     }
   }
