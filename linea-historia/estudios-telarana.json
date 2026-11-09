@@ -16,6 +16,207 @@
   },
   "items": [
     {
+      "id": "study-v4-antonio-perez-detencion-1579",
+      "y": 1579.5698630136985,
+      "t": "Detención de Antonio Pérez y de la princesa de Éboli",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 04 · referencia histórica independiente del episodio",
+      "d": "El 28 de julio de 1579 fueron detenidos el secretario real Antonio Pérez y Ana de Mendoza, princesa de Éboli, en el contexto de los conflictos internos de la corte de Felipe II. El Archivo Histórico Nacional conserva información sobre sus detenciones y el proceso que llevó a Pérez a huir de Castilla. Este episodio está incluido como contexto independiente de un capítulo del vídeo, no como una cita atribuida a Margarita Torres.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1579-07-28",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 4,
+        "sourceTitle": "El duque de Lerma y la corrupción política · Margarita Torres en El Canal del Coronel",
+        "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+        "confirmedBy": {
+          "label": "PARES · Archivo Histórico Nacional · Antonio Pérez (1540–1611)",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/45072"
+        },
+        "relatedTelarana": [
+          "f04-antonio-perez",
+          "f04-felipe-ii"
+        ],
+        "methodologicalLimits": "La fecha de arresto y los protagonistas están documentados. Las motivaciones atribuidas al rey y las interpretaciones sobre el asesinato de Juan de Escobedo requieren un examen separado y no se presentan aquí como hechos deducidos del vídeo."
+      }
+    },
+    {
+      "id": "study-v4-alteraciones-aragon-1591",
+      "y": 1591.3671232876711,
+      "t": "Las alteraciones de Aragón se desencadenan en torno al proceso de Antonio Pérez",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 04 · referencia histórica independiente del episodio",
+      "d": "En mayo de 1591 las actuaciones para trasladar al secretario Antonio Pérez a prisión inquisitorial provocaron disturbios en Zaragoza y una crisis política sobre jurisdicción y fueros de Aragón. La historiografía y el archivo estatal documentan la entrada del Ejército real en el territorio en noviembre de ese año. Se representa con precisión mensual, sin inventar día concreto para el inicio de la crisis.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1591-05",
+        "datePrecision": "mes",
+        "status": "hecho_documentado",
+        "sourceOrder": 4,
+        "sourceTitle": "El duque de Lerma y la corrupción política · Margarita Torres en El Canal del Coronel",
+        "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+        "confirmedBy": {
+          "label": "PARES · Alteraciones de Aragón (1591–1593)",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/106908"
+        },
+        "relatedTelarana": [
+          "f04-antonio-perez",
+          "f04-felipe-ii",
+          "f04-alteraciones-aragon"
+        ],
+        "methodologicalLimits": "La fecha es mensual y sintetiza un proceso prolongado. No equivale a un día preciso del comienzo ni a una transcripción del podcast."
+      }
+    },
+    {
+      "id": "study-v4-lerma-compra-valladolid-1600",
+      "y": 1600.967213114754,
+      "t": "El duque de Lerma compra la casa-palacio de Camarasa en Valladolid",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 04 · referencia histórica independiente del episodio",
+      "d": "El 20 de diciembre de 1600 Francisco Gómez de Sandoval y Rojas, duque de Lerma, adquirió del marqués de Camarasa un inmueble destacado de Valladolid. La operación está documentada en escrituras conservadas por el Archivo General de Simancas; se realizó semanas antes de la decisión formal de mudar la Corte. La compra no demuestra por sí sola cuánto se ganó ni constituye una condena penal.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1600-12-20",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 4,
+        "sourceTitle": "El duque de Lerma y la corrupción política · Margarita Torres en El Canal del Coronel",
+        "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+        "confirmedBy": {
+          "label": "Archivo General de Simancas · Fondo Casa Real de Valladolid, unidad documental 13.3",
+          "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/ags/exposiciones-actividades/exposiciones-virtuales/palacio-real.html"
+        },
+        "relatedTelarana": [
+          "f04-lerma",
+          "f04-ventas-1601"
+        ],
+        "methodologicalLimits": "Hecho acreditado mediante documentos notariales históricos. El cómputo de beneficios y la intencionalidad del traslado son interpretaciones separadas y requieren su propia evidencia."
+      }
+    },
+    {
+      "id": "study-v4-corte-traslado-valladolid-1601",
+      "y": 1601.0246575342467,
+      "t": "Se promulga el traslado de la Corte de Madrid a Valladolid",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 04 · referencia histórica independiente del episodio",
+      "d": "La decisión de trasladar la Corte de Madrid a Valladolid se promulgó la noche del 10 de enero de 1601, durante el reinado de Felipe III. Los reyes y la administración cortesana comenzaron a instalarse en Valladolid en febrero, donde permanecieron hasta 1606. Se trata de un hecho administrativo documentado por el Archivo General de Simancas.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1601-01-10",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 4,
+        "sourceTitle": "El duque de Lerma y la corrupción política · Margarita Torres en El Canal del Coronel",
+        "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+        "confirmedBy": {
+          "label": "Archivo General de Simancas · El Palacio Real de Valladolid (1601–1876)",
+          "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/ags/exposiciones-actividades/exposiciones-virtuales/palacio-real.html"
+        },
+        "relatedTelarana": [
+          "f04-lerma",
+          "f04-felipe-iii",
+          "f04-corte-valladolid"
+        ],
+        "methodologicalLimits": "La fecha corresponde a la promulgación de la mudanza; la instalación se prolongó durante semanas. La evidencia no prueba por sí misma un acuerdo ilícito."
+      }
+    },
+    {
+      "id": "study-v4-lerma-venta-corona-1601",
+      "y": 1601.9424657534246,
+      "t": "Lerma otorga escrituras de venta de inmuebles de Valladolid a Felipe III",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 04 · referencia histórica independiente del episodio",
+      "d": "Las escrituras de 11 de diciembre de 1601 registran una venta de varias propiedades del duque de Lerma a Felipe III en Valladolid. El archivo conserva documentos de aceptación por el rey fechados también en diciembre. Junto con la compra previa y el traslado de la Corte, constituye una secuencia patrimonial de alto interés para el estudio de la influencia y enriquecimiento cortesano.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1601-12-11",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 4,
+        "sourceTitle": "El duque de Lerma y la corrupción política · Margarita Torres en El Canal del Coronel",
+        "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+        "confirmedBy": {
+          "label": "Archivo General de Simancas · Casa Real de Valladolid, unidad documental 13.1",
+          "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/ags/exposiciones-actividades/exposiciones-virtuales/palacio-real.html"
+        },
+        "relatedTelarana": [
+          "f04-lerma",
+          "f04-felipe-iii",
+          "f04-ventas-1601"
+        ],
+        "methodologicalLimits": "La compraventa está acreditada. No se calcula aquí una plusvalía exacta ni se etiqueta automáticamente como delito sin prueba de las condiciones y costes."
+      }
+    },
+    {
+      "id": "study-v4-regencia-maria-cristina-1833",
+      "y": 1833.7561643835616,
+      "t": "María Cristina presenta su manifiesto político como regente de España",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 04 · referencia histórica independiente del episodio",
+      "d": "Después de la muerte de Fernando VII, María Cristina de Borbón asumió la regencia durante la minoría de Isabel II. El 4 de octubre de 1833 emitió un manifiesto político. El Congreso de los Diputados sitúa su regencia entre 1833 y 1840. Las investigaciones modernas sobre inversiones y relaciones empresariales de la pareja Borbón-Muñoz se contextualizan en esta etapa y décadas posteriores, sin convertir el manifiesto en evidencia de negocios ilícitos.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1833-10-04",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 4,
+        "sourceTitle": "El duque de Lerma y la corrupción política · Margarita Torres en El Canal del Coronel",
+        "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+        "confirmedBy": {
+          "label": "Congreso de los Diputados · Regencia de María Cristina (1833–1840)",
+          "url": "https://www.congreso.es/es/cem/regmcris"
+        },
+        "relatedTelarana": [
+          "f04-maria-cristina",
+          "f04-fernando-munoz"
+        ],
+        "methodologicalLimits": "El manifiesto y la fecha de la regencia están acreditados. Los negocios posteriores de María Cristina y Muñoz requieren fuentes documentales específicas; no se atribuyen al momento de 1833."
+      }
+    },
+    {
+      "id": "study-v4-straperlo-congreso-1935",
+      "y": 1935.805479452055,
+      "t": "El escándalo del Straperlo llega al debate de las Cortes de la Segunda República",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 04 · referencia histórica independiente del episodio",
+      "d": "En octubre de 1935 se hizo público el escándalo por los permisos para una ruleta comercializada por Daniel Strauss. El Congreso conserva las actas y documentación del expediente de la Comisión Especial que investigó el asunto, con debates de 22 de octubre de 1935 y conclusiones sobre autenticidad documental y ética de cargos públicos. El escándalo afectó al Partido Republicano Radical y su entorno gubernamental.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1935-10-22",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 4,
+        "sourceTitle": "El duque de Lerma y la corrupción política · Margarita Torres en El Canal del Coronel",
+        "sourceUrl": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+        "confirmedBy": {
+          "label": "Congreso de los Diputados · El caso Straperlo, expediente e historia parlamentaria",
+          "url": "https://www.congreso.es/es/cem/vidparl1933"
+        },
+        "relatedTelarana": [
+          "f04-straperlo",
+          "f04-daniel-strauss",
+          "f04-congreso-comision",
+          "f04-alejandro-lerroux"
+        ],
+        "methodologicalLimits": "La fecha corresponde al debate parlamentario de octubre de 1935 y no al inicio en 1934 de las gestiones comerciales de Strauss. Las conclusiones parlamentarias no equivalen a condenas penales individuales."
+      }
+    },
+    {
       "id": "study-vf150-eichmann-1960",
       "y": 1960.3579234972678,
       "t": "Captura de Adolf Eichmann por agentes israelíes en Argentina",
