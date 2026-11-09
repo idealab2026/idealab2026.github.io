@@ -222,6 +222,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-vaquero-67-villarejo.js?v=20261109-source08-1"></script>
 <script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261109-f18-1"></script>
 <script src="./fuente-21-orden-mundial-editorial.js?v=20261109-f21-1"></script>
+<script src="./fuente-09-villarejo-revision.js?v=20261110-f09-1"></script>
 <script src="./photo-catalog.js?v=20261109-source08-1"></script>
 <script src="./person-biographies.js?v=20261109-source08-bios"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
@@ -402,6 +403,7 @@ function load(){
  // Fuentes 18 y 21: índice editorial verificado; NO hay transcripción íntegra todavía.
  if(window.IDEA_TELARANA_SOURCE18_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE18_EDITORIAL);
  if(window.IDEA_TELARANA_SOURCE21_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE21_EDITORIAL);
+ if(window.IDEA_TELARANA_SOURCE09_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_SOURCE09_REVIEW);
  seedError=!data.nodes.length;
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
