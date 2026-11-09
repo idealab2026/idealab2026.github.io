@@ -409,5 +409,17 @@ window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS={
   "f04-alejandro-lerroux": {
     "lang": "es",
     "title": "Alejandro Lerroux"
+  },
+  "twp253-jordi-wild": {
+    "lang": "es",
+    "title": "Jordi Wild"
+  },
+  "twp253-jordi-pujol": {
+    "lang": "es",
+    "title": "Jordi Pujol"
+  },
+  "twp253-pequeno-nicolas": {
+    "lang": "es",
+    "title": "Pequeño Nicolás"
   }
 };
