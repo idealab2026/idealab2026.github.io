@@ -39,7 +39,7 @@ for(const e of feed.items){
 }
 assert.equal(bySource[1],5,"Carga histórica de la fuente 1");
 assert.equal(bySource[2],3,"Contexto externo de la fuente 2");
-assert.equal(bySource.suplementaria,4,"Cuatro hechos contrastados de fuente no numerada");
+assert.equal(bySource.suplementaria,7,"Siete hechos contrastados de fuente no numerada");
 assert.equal(progress.timeline.committedVerifiedEvents,feed.items.length,"Progreso histórico inconsistente");
 assert.equal(progress.timeline.fromSupplementalResearch,bySource.suplementaria,"La investigación suplementaria debe contabilizarse por separado");
 assert.equal(progress.counts.reviewedPublished,1,"Una cronología no completa fuentes pendientes");
@@ -48,5 +48,12 @@ assert(timeline.includes("function showStudyNote("),"Faltan fichas documentales"
 assert(timeline.includes("if(d&&d.investigation){showStudyNote(d);return}"),"La ficha documental debe prevalecer frente a Wikipedia");
 assert(timeline.includes('get("evento")'),"El enlace directo a un acontecimiento no está implementado");
 assert(graphHTML.includes('get("entidad")'),"Falta navegación a personas desde la cronología");
+const contextSource=fs.readFileSync("la-telarana/investigacion-frattini-contexto.js","utf8");
+const context=JSON.parse(contextSource.split("window.IDEA_TELARANA_FRATTINI_EXTERNAL = ")[1].trim().replace(/;$/,""));
+assert(context.nodes.some(n=>n.id==="vf150-khaled-meshaal"),"Falta Khaled Mashal en el grafo");
+assert(context.edges.length>=5&&context.edges.every(e=>e.confidence==="documentado"&&/^https:\/\//.test(e.source)),"Faltan vínculos sustentados por documentos");
+assert(graphHTML.includes('investigacion-frattini-contexto.js?v='),"Falta cargar el contexto histórico");
+assert(graphHTML.includes('mergePodcastStudy(window.IDEA_TELARANA_FRATTINI_EXTERNAL)'),"Falta integrar el contexto en el grafo");
+assert(graphHTML.includes('study-(?:v\\d+|vf\\d+)-'),"La Telaraña no acepta la navegación inversa desde fuentes complementarias");
 assert(historyHTML.includes("timeline-v4.js?v="),"No se actualizó la caché del visor");
 console.log("OK: "+feed.items.length+" acontecimientos contrastados, sin duplicados ni alegaciones convertidas en hechos");
