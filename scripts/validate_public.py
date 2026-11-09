@@ -32,7 +32,7 @@ if found_html != allowed_html: errors.append("Unexpected or missing HTML page in
 if (ROOT / "data/traffic.json").exists():
     try:
         stats=json.loads((ROOT / "data/traffic.json").read_text(encoding="utf-8"))
-        if stats.get("schema") != 1 or stats.get("status") not in ("unconfigured","verified"):
+        if stats.get("schema") != 1 or stats.get("status") not in ("unconfigured","unavailable","verified"):
             errors.append("Invalid aggregate statistics schema")
         if not isinstance(stats.get("days"),list) or len(stats["days"])>45:
             errors.append("Invalid aggregate statistics days")
@@ -44,8 +44,8 @@ if (ROOT / "data/traffic.json").exists():
             for point in row.get("values", {}).values():
                 if sorted(point.keys()) != ["pageViews","visits"] or any(type(v)!=int or v<0 for v in point.values()):
                     errors.append("Invalid aggregate metric values")
-        if stats.get("status")=="unconfigured" and stats.get("days"):
-            errors.append("Unconfigured metric provider cannot publish readings")
+        if stats.get("status") in ("unconfigured","unavailable") and stats.get("days"):
+            errors.append("Unavailable metric provider cannot publish readings")
     except (ValueError,KeyError,AttributeError,TypeError):
         errors.append("Invalid aggregate statistics JSON")
 
