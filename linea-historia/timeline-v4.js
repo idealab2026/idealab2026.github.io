@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 var periods=[
-{k:"Tiempo profundo",a:-260000000,b:-110000,w:2600,at:-230000000},
+{k:"Tiempo profundo",a:-541000000,b:-110000,w:3400,at:-400000000},
 {k:"Prehistoria",a:-110000,b:-3000,w:3000,at:-9000},
 {k:"Antigüedad",a:-3000,b:476,w:3800,at:-400},
 {k:"Edad media",a:476,b:1492,w:3800,at:1000},
@@ -65,8 +65,8 @@ function geoStatus(all,filtered){
   " · clasificación provisional";
 }
 
-var cats=["Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
-var colors=["#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
+var cats=["Eras geológicas","Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"];
+var colors=["#d5a66d","#65bdc2","#c68dcb","#bd9ce0","#e6a06b","#8ba7ea","#9cce9b","#f0c96f","#f29ca4"];
 var base=[],custom=[],period=periods[5],cat="Todas",query="",selected=null,zoom=1,viewMode="timeline",savedYear=1900,nativeFullscreen=false;
 var el=function(tag,t,cls){var x=document.createElement(tag);if(t!=null)x.textContent=t;if(cls)x.className=cls;return x};
 var $=function(id){return document.getElementById(id)};
@@ -80,7 +80,7 @@ function valid(d){
  return d&&typeof d.t==="string"&&d.t.length<=500&&
  (d.g==null||(Array.isArray(d.g)&&d.g.length<=GEO.length&&d.g.every(function(v){return GEO.includes(v)})))&&
  Number.isFinite(Number(d.y))&&
- Math.abs(Number(d.y))<=260000000&&cats.includes(d.c)&&
+ Math.abs(Number(d.y))<=550000000&&cats.includes(d.c)&&
  (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>=Number(d.y)&&Number(d.e)<=2031));
 }
 function loadLocal(){
@@ -89,7 +89,7 @@ function loadLocal(){
 }
 function enrich(d){
  if(d._computed)return d;
- var start=Number(d.y),end=d.e==null?NaN:Number(d.e),origin="explicit",ongoing=false;
+ var start=Number(d.y),end=d.e==null?NaN:Number(d.e),origin="explicit",ongoing=!!d.ongoing;
  if(!Number.isFinite(end)||end<=start){
   origin="";
   var txt=(d.c==="Filosofía"||d.c==="Literatura")?(d.d||"").split("·")[0]:(d.t||"");
@@ -120,6 +120,7 @@ function ey(d){return d._end==null?Number(d.e):d._end}
 function duration(d){return !d.children&&Number.isFinite(ey(d))&&ey(d)>sy(d)}
 function howLong(d){
  var n=ey(d)-sy(d);
+ if(n>=1000000)return (n/1000000).toLocaleString("es-ES",{maximumFractionDigits:1})+" millones de años";
  return n<1?Math.max(1,Math.round(n*12))+" meses":(Math.round(n*10)/10).toLocaleString("es-ES")+(Math.abs(n-1)<.001?" año":" años");
 }
 function displayName(d){
@@ -625,9 +626,9 @@ function init(){
  $("filters").addEventListener("change",function(e){
   if(e.target.value!=="Todas"&&!cats.includes(e.target.value))return;
   cat=e.target.value;categoryUI();render();
-  if(cat==="Historia bíblica"){
-   savedYear=-1700;
-   if(viewMode==="timeline")jumpToYear(-1700);
+  if(cat==="Historia bíblica"||cat==="Eras geológicas"){
+   savedYear=cat==="Eras geológicas"?-400000000:-1700;
+   if(viewMode==="timeline")jumpToYear(savedYear);
   }
  });
  $("continent").addEventListener("change",function(e){
