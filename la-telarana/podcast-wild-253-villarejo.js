@@ -9,15 +9,25 @@ window.IDEA_TELARANA_SOURCE06_PODCAST = {
     "durationMinutesApprox": 303,
     "originalNotebookSourceId": "21bd9782-b363-4992-bb5a-f945bcc6ca9c",
     "transcriptLocation": "https://podcasts.happyscribe.com/the-wild-project/the-wild-project-253-ft-comisario-villarejo-la-mentira-del-11m-intentan-matarle-espias-rusas",
-    "transcriptDocUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit?usp=drivesdk",
+    "transcriptDocUrl": "https://docs.google.com/document/d/1SDtx6vm2W6_zSbPJ2NlRNCGNImtdJjycy-i3bUoT-2o/edit",
     "docCreated": true,
-    "fullTranscriptImportedToDoc": false,
+    "fullTranscriptImportedToDoc": true,
     "transcriptPresentOnThirdPartySite": true,
     "transcriptLanguage": "es",
     "transcriptVerifiedAgainstAudio": false,
     "timestampSource": "transcripción automática HappyScribe; las marcas corresponden a fragmentos aproximados",
-    "reviewStage": "initial_timecoded_topic_review_from_external_transcript",
-    "claimLimits": "El texto de transcripción es testimonio, no prueba de acusaciones. Solo se han incorporado menciones, identidades y participaciones; ninguna acusación sobre delitos no acreditados se presenta como hecho."
+    "reviewStage": "user_full_transcript_native_google_doc_confirmed_documentary_review_pending",
+    "claimLimits": "El texto de transcripción es testimonio, no prueba de acusaciones. Solo se han incorporado menciones, identidades y participaciones; ninguna acusación sobre delitos no acreditados se presenta como hecho. El documento aportado no incluye diarización ni tiempo por frase; los minutajes de HappyScribe son otra transcripción automática y aún no se han cotejado con el audio.",
+    "transcriptIndexDocUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit",
+    "fullTranscriptVerifiedDriveReadback": true,
+    "fullTranscriptSource": "Archivo aportado por el usuario en conversación: Texto pegado(2).txt",
+    "originalTranscriptCharacters": 257517,
+    "originalTranscriptWords": 50473,
+    "originalTranscriptUtf8Bytes": 262991,
+    "originalTranscriptBlocks": 170,
+    "originalTranscriptSha256": "34e777038c189bf0ab64d64bc7ea220e954c5f55bc55ce32e1d5e7b50eab6bc6",
+    "transcriptAudioMatched": false,
+    "notebookLmSourceContentMatched": false
   },
   "nodes": [
     {
@@ -67,7 +77,7 @@ window.IDEA_TELARANA_SOURCE06_PODCAST = {
       "name": "The Wild Project #253 · entrevista a Villarejo",
       "kind": "Publicación",
       "subtitle": "Entrevista publicada en YouTube el 04/01/2024; 5 h aproximadamente",
-      "note": "Episodio de larga duración de The Wild Project, conducido por Jordi Wild y protagonizado por José Manuel Villarejo. Publicado en YouTube el 4 de enero de 2024 y distribuido mediante Apple Podcasts el 5 de enero. HappyScribe ofrece una transcripción automática completa e indexada por marcas de tiempo que requiere comprobación ante nombres propios, cifras y acusaciones. El documento de IDEA LAB conserva su localización y un índice, no una reproducción íntegra del texto.",
+      "note": "Episodio de larga duración de The Wild Project, conducido por Jordi Wild y protagonizado por José Manuel Villarejo. Publicado en YouTube el 4 de enero de 2024 y distribuido mediante Apple Podcasts el 5 de enero. HappyScribe ofrece una transcripción automática completa e indexada por marcas de tiempo que requiere comprobación ante nombres propios, cifras y acusaciones. El texto completo aportado por el usuario ya está conservado en un Google Doc nativo de IDEA LAB con 257.517 caracteres y comprobación de lectura. Los minutajes proceden de una transcripción externa y aún deben cotejarse con el audio.",
       "source": "https://podcasts.apple.com/es/podcast/the-wild-project-253-ft-comisario-villarejo-la/id1501968107?i=1000640601330",
       "podcastNotes": [
         {
@@ -78,6 +88,15 @@ window.IDEA_TELARANA_SOURCE06_PODCAST = {
           "status": "hecho_editorial",
           "source": "https://podcasts.apple.com/es/podcast/the-wild-project-253-ft-comisario-villarejo-la/id1501968107?i=1000640601330",
           "text": "Episodio de larga duración de The Wild Project, conducido por Jordi Wild y protagonizado por José Manuel Villarejo. Publicado en YouTube el 4 de enero de 2024 y distribuido mediante Apple Podcasts el 5 de enero. HappyScribe ofrece una transcripción automática completa e indexada por marcas de tiempo que requiere comprobación ante nombres propios, cifras y acusaciones. El documento de IDEA LAB conserva su localización y un índice, no una reproducción íntegra del texto."
+        },
+        {
+          "episodeId": "wild-project-253-villarejo-2024",
+          "title": "Fuente 06 · Transcripción completa archivada en Google Drive",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://docs.google.com/document/d/1SDtx6vm2W6_zSbPJ2NlRNCGNImtdJjycy-i3bUoT-2o/edit",
+          "status": "archivo_original_usuario",
+          "text": "Transcripción textual completa aportada por el usuario y guardada en Google Docs, 257.517 caracteres y 170 bloques. No incluye marcas de tiempo originales ni identificación de hablantes y contiene reconocimientos de voz que pueden ser incorrectos. Documento fuente primario para cotejos y extracción de nombres; las afirmaciones del invitado no son hechos probados."
         }
       ],
       "topic3d": "inteligencia",
