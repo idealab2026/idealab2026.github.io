@@ -214,6 +214,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-coronel-villarejo-2026-revision.js?v=20261109-4"></script>
 <script src="./podcast-coronel-elecciones-2026-preliminar.js?v=20261109-1"></script>
 <script src="./podcast-coronel-elecciones-2026-transcript-review.js?v=20261109-2"></script>
+<script src="./podcast-vaquero-145-editorial.js?v=20261109-1"></script>
 <script src="./photo-catalog.js?v=20261109-3"></script>
 <script src="./person-biographies.js?v=20261109-5"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
@@ -366,6 +367,10 @@ function load(){
  // Análisis derivado del texto completo: todas las alegaciones no corroboradas permanecen como hipótesis.
  if(window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW){
   mergeNewEpisode(window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW);
+ }
+ // Fuente 03: únicamente metadatos editoriales y participantes contrastados; el audio no está transcrito.
+ if(window.IDEA_TELARANA_SOURCE03_EDITORIAL){
+  mergeNewEpisode(window.IDEA_TELARANA_SOURCE03_EDITORIAL);
  }
  seedError=!data.nodes.length;
 }
