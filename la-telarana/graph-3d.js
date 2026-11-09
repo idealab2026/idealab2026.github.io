@@ -208,8 +208,32 @@ function make(options){
  canvas.addEventListener("pointerup",e=>{const p=point(e),click=drag&&!drag.moved&&down.size===1;down.delete(e.pointerId);if(!down.size)drag=null;if(click){const entity=hit(p);if(entity)options.onSelect?.(entity)}redraw()});
  canvas.addEventListener("pointercancel",e=>{down.delete(e.pointerId);if(!down.size)drag=null});
  canvas.addEventListener("pointerleave",()=>{hover=null;hoverEdge=null;hint.hidden=true;redraw()});
- canvas.addEventListener("wheel",e=>{e.preventDefault();if(e.ctrlKey||e.metaKey)return;const k=e.deltaMode===1?16:1;panX-=e.deltaX*k;panY-=e.deltaY*k;redraw()},{passive:false});
- for(const event of ["gesturestart","gesturechange","gestureend"])canvas.addEventListener(event,e=>e.preventDefault(),{passive:false});
+ // El zoom mantiene fijo el punto situado bajo el cursor / los dedos.
+ function zoomAt(px,py,factor){
+  const next=clip(zoom*factor,.06,10),ratio=next/zoom;
+  if(Math.abs(ratio-1)<.00001)return;
+  panX=px-w/2-(px-w/2-panX)*ratio;
+  panY=py-h/2-(py-h/2-panY)*ratio;
+  zoom=next;redraw();
+ }
+ // Chrome/Edge en macOS: un pellizco en el trackpad emite ctrl+wheel.
+ // La rueda normal y el desplazamiento con dos dedos siguen moviendo el grafo.
+ canvas.addEventListener("wheel",e=>{
+  e.preventDefault();
+  const p=point(e),k=e.deltaMode===1?16:e.deltaMode===2?h:1;
+  if(e.ctrlKey||e.metaKey)zoomAt(p.x,p.y,Math.exp(-clip(e.deltaY*k,-320,320)*.008));
+  else{panX-=e.deltaX*k;panY-=e.deltaY*k;redraw()}
+ },{passive:false});
+ // Safari emite eventos gesture*; aplicar solo el incremento del gesto.
+ let lastGestureScale=1;
+ canvas.addEventListener("gesturestart",e=>{e.preventDefault();lastGestureScale=e.scale||1},{passive:false});
+ canvas.addEventListener("gesturechange",e=>{
+  e.preventDefault();
+  const current=e.scale||1;
+  const p=point(e);zoomAt(p.x,p.y,current/(lastGestureScale||1));
+  lastGestureScale=current;
+ },{passive:false});
+ canvas.addEventListener("gestureend",e=>{e.preventDefault();lastGestureScale=1},{passive:false});
  new ResizeObserver(redraw).observe(canvas);
  return {
   topics:topics.map(t=>({id:t[0],label:t[1]})),
@@ -217,7 +241,7 @@ function make(options){
   setSelection(s){selection=s;redraw()},setQuery(s){search=s||"";redraw()},setEdgeMode(s){mode=s;redraw()},
   setTheme(s){theme=topics.some(t=>t[0]===s)?s:"todos";hover=null;hoverEdge=null;hint.hidden=true;
    yaw=-.45;pitch=.28;zoom=1;panX=panY=0;fitView()},
-  zoom(f){zoom=clip(zoom*f,.08,7);redraw()},
+  zoom(f){zoomAt(w/2,h/2,f)},
   fit:fitView,
   reset(){yaw=-.45;pitch=.28;zoom=1;panX=panY=0;fitView()},
   organize(){arrange();this.reset()},redraw
