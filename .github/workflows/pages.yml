@@ -68,6 +68,8 @@ jobs:
           cp linea-historia/data.json dist/linea-historia/data.json
           cp linea-historia/estudios-telarana.json dist/linea-historia/estudios-telarana.json
           cp linea-historia/timeline-v4.js dist/linea-historia/timeline-v4.js
+          cp linea-historia/favicon.png dist/linea-historia/favicon.png
+          test -s dist/linea-historia/favicon.png
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp la-telarana/podcast-vaquero-150.js dist/la-telarana/podcast-vaquero-150.js
           cp la-telarana/investigacion-frattini-contexto.js dist/la-telarana/investigacion-frattini-contexto.js
