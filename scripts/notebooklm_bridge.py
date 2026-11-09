@@ -38,6 +38,36 @@ VALID_BOOK = re.compile(r"[a-z0-9-]{2,60}\Z")
 VALID_VOLUME = re.compile(r"tomo-[a-z0-9-]{1,22}\Z")
 VALID_VIDEO = re.compile(r"[A-Za-z0-9_-]{11}\Z")
 VALID_ID = re.compile(r"[A-Za-z0-9_-]{8,100}\Z")
+SUBMITTED_COMMENT = ("Solicitud enviada a NotebookLM desde el Mac de IDEA LAB. "
+                     "Generación en curso; pendiente de revisión visual antes de publicar.")
+DOWNLOADED_COMMENT = ("Infografía descargada en el Mac. PENDIENTE de revisión editorial, "
+                      "privacidad y aprobación explícita para publicar. "
+                      "No se ha subido ninguna imagen.")
+# Only these two whitelisted public comments may be retried automatically.
+ALLOWED_COMMENTS = (SUBMITTED_COMMENT, DOWNLOADED_COMMENT)
+
+
+def cli_failure_hint(argv: list[str], stderr: str) -> str:
+    """Useful, redact-safe diagnosis; never print raw stderr, tokens or IDs."""
+    program = Path(argv[0]).name if argv else ""
+    if program != "gh":
+        return "Revisa la sesión de NotebookLM y el límite de uso."
+    low = (stderr or "").lower()
+    operation = " ".join(argv[1:3]) if len(argv) >= 3 else "operación"
+    if any(x in low for x in ("rate limit", "secondary rate", "too many requests")):
+        reason = "límite de llamadas GitHub (esperar y reintentar)"
+    elif any(x in low for x in ("authentication", "not logged", "unauthorized",
+                                "bad credentials", "http 401")):
+        reason = "autenticación de GitHub (comprobar gh auth status)"
+    elif any(x in low for x in ("timeout", "connection", "network",
+                                "could not resolve", "dial tcp", "tls handshake")):
+        reason = "conectividad GitHub (se reintentará en el próximo ciclo)"
+    elif any(x in low for x in ("http 403", "forbidden")):
+        reason = "permisos o restricciones de GitHub (HTTP 403)"
+    else:
+        reason = "causa no identificada; ejecutar gh auth status y gh api rate_limit"
+    return f"Operación gh {operation}: {reason}."
+
 
 
 def command(argv: list[str], timeout: int = 90, capture=True, cwd=None):
@@ -50,8 +80,10 @@ def command(argv: list[str], timeout: int = 90, capture=True, cwd=None):
     result = subprocess.run(argv, check=False, text=True, encoding="utf-8",
                             capture_output=capture, timeout=timeout, cwd=cwd)
     if result.returncode != 0:
-        raise RuntimeError(f"Fallo de {argv[0]} (código {result.returncode}). "
-                           "Revisa autenticación, conexión y límites en el Mac.")
+        raise RuntimeError(
+            f"Fallo de {Path(argv[0]).name} (código {result.returncode}). "
+            + cli_failure_hint(argv, result.stderr if capture else "")
+        )
     return result.stdout if capture else ""
 
 
@@ -239,7 +271,59 @@ def status_text(row):
 
 def issue_comment(number, message):
     # Only fixed messages; no user-supplied text, source names, paths or tokens.
+    if message not in ALLOWED_COMMENTS:
+        raise ValueError("Comentario GitHub no autorizado.")
     command(["gh", "issue", "comment", str(number), "-R", REPO, "--body", message])
+
+
+def remote_comment_exists(number: str, message: str) -> bool:
+    """Check before retrying a comment to avoid posting duplicated checks."""
+    if message not in ALLOWED_COMMENTS:
+        raise ValueError("Comentario GitHub no autorizado.")
+    raw = command(["gh", "api",
+                   f"repos/{REPO}/issues/{int(number)}/comments?per_page=100"])
+    comments = json.loads(raw)
+    if not isinstance(comments, list):
+        raise RuntimeError("Respuesta de GitHub inesperada.")
+    return any((c.get("user") or {}).get("login", "").lower() == OWNER
+               and c.get("body") == message
+               for c in comments if isinstance(c, dict))
+
+
+def comment_or_queue(number: str, message: str, job: dict, state: dict) -> None:
+    """Never block a downloaded PNG because its GitHub check cannot be posted."""
+    if message not in ALLOWED_COMMENTS:
+        raise ValueError("Comentario GitHub no autorizado.")
+    try:
+        issue_comment(number, message)
+    except (RuntimeError, OSError, subprocess.TimeoutExpired) as exc:
+        pending = job.setdefault("github_comments_pending", [])
+        if message not in pending:
+            pending.append(message)
+            save_json(STATE_PATH, state)
+        print(f"GitHub no confirmó el comentario de #{number}; "
+              "se conservará y reintentará. ", type(exc).__name__)
+
+
+def retry_github_comments(state: dict) -> None:
+    """Restore public checkmarks idempotently when GitHub becomes available."""
+    for number, job in state.items():
+        pending = list(job.get("github_comments_pending", []))
+        for message in pending:
+            if message not in ALLOWED_COMMENTS:
+                print("Comentario pendiente no reconocido; no se enviará.")
+                continue
+            try:
+                if not remote_comment_exists(number, message):
+                    issue_comment(number, message)
+            except (RuntimeError, ValueError, OSError, subprocess.TimeoutExpired) as exc:
+                print(f"No se pudo sincronizar el check de #{number}; "
+                      "se volverá a intentar.", type(exc).__name__)
+                break
+            job["github_comments_pending"].remove(message)
+            if not job["github_comments_pending"]:
+                job.pop("github_comments_pending")
+            save_json(STATE_PATH, state)
 
 
 def github_issues():
@@ -374,10 +458,7 @@ def request_new(number, req, state, config):
         return True
     job["phase"] = "submitted"
     save_json(STATE_PATH, state)
-    try:
-        issue_comment(number, "Solicitud enviada a NotebookLM desde el Mac de IDEA LAB. Generación en curso; pendiente de revisión visual antes de publicar.")
-    except Exception:
-        print("No se pudo comentar la solicitud, pero NotebookLM ya está generando.")
+    comment_or_queue(number, SUBMITTED_COMMENT, job, state)
     print("Generación solicitada:", number, req["book"])
     return True
 
@@ -424,7 +505,7 @@ def check_submitted(number, job, state):
     job["phase"] = "downloaded"
     job["path"] = str(path)
     save_json(STATE_PATH, state)
-    issue_comment(number, "Infografía descargada en el Mac. PENDIENTE de revisión editorial, privacidad y aprobación explícita para publicar. No se ha subido ninguna imagen.")
+    comment_or_queue(number, DOWNLOADED_COMMENT, job, state)
     print("Infografía disponible localmente:", path)
 
 
@@ -435,14 +516,11 @@ def poll():
     for issue, job in list(state.items()):
         if job.get("phase") == "submitted":
             check_submitted(issue, job, state)
-    # Private, idempotent JPG copies on the user's Desktop. Export failures
-    # must not block NotebookLM polling or cause a second remote generation.
-    try:
-        from notebooklm_export_desktop import export_known
-        export_known(state, verbose=False)
-    except Exception as exc:
-        print("ATENCIÓN: no se pudo actualizar la copia JPEG del Escritorio:",
-              type(exc).__name__)
+    # A macOS LaunchAgent is not guaranteed TCC access to ~/Desktop.
+    # Keep automatic downloads in ~/Pictures; export JPGs to Desktop manually
+    # from an interactive Terminal using notebooklm_export_desktop.py.
+    # Sync any GitHub confirmation that was temporarily lost to network/auth.
+    retry_github_comments(state)
     running = sum(j.get("phase") in ("submitted", "launching", "uncertain") for j in state.values())
     if running:
         print("Solicitudes activas o inciertas:", running, "(no se enviarán otras automáticamente)")
