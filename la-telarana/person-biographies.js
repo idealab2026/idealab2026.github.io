@@ -131,6 +131,46 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "ce26-sanchez": {
       "lang": "es",
       "title": "Pedro Sánchez"
+    },
+    "ce26-bolanos": {
+      "lang": "es",
+      "title": "Félix Bolaños"
+    },
+    "ce26-robles": {
+      "lang": "es",
+      "title": "Margarita Robles"
+    },
+    "ce26-casteleiro": {
+      "lang": "es",
+      "title": "Esperanza Casteleiro"
+    },
+    "ce26-jose-bono": {
+      "lang": "es",
+      "title": "José Bono"
+    },
+    "ce26-zapatero": {
+      "lang": "es",
+      "title": "José Luis Rodríguez Zapatero"
+    },
+    "ce26-jose-blanco": {
+      "lang": "es",
+      "title": "José Blanco López"
+    },
+    "ce26-mohammed-vi": {
+      "lang": "es",
+      "title": "Mohamed VI de Marruecos"
+    },
+    "ce26-moulay-hassan": {
+      "lang": "es",
+      "title": "Moulay Hassan"
+    },
+    "ce26-hassan-ii": {
+      "lang": "es",
+      "title": "Hasán II de Marruecos"
+    },
+    "ce26-pablo-iglesias": {
+      "lang": "es",
+      "title": "Pablo Iglesias Turrión"
     }
   },
   "curated": {
@@ -236,6 +276,66 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.lamoncloa.gob.es/presidente/biografia/Paginas/index.aspx",
       "sourceTitle": "La Moncloa · biografía oficial de Pedro Sánchez",
       "also": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-bolanos": {
+      "text": "Félix Bolaños García (Madrid, 1975) es jurista y político español. Ha sido secretario general de Presidencia y, desde noviembre de 2023, ministro de la Presidencia, Justicia y Relaciones con las Cortes. El episodio plantea una supuesta filtración de información a Marruecos a través de relaciones de personas de su entorno. Esa historia es una alegación del invitado sin informes de inteligencia accesibles, y no implica ni acredita colaboración voluntaria o conocimiento por parte del ministro.",
+      "source": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-felix-bolanos.aspx",
+      "sourceTitle": "La Moncloa · biografía del ministro",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-robles": {
+      "text": "Margarita Robles Fernández (León, 1957) es magistrada y política española. Fue secretaria de Estado de Interior en los años noventa, magistrada del Tribunal Supremo y ministra de Defensa desde junio de 2018. Villarejo critica su gestión de la crisis de Ceuta y formula acusaciones sobre actuaciones antiguas relacionadas con el caso Roldán. La entrevista no aporta resoluciones judiciales ni documentación para probar estas últimas acusaciones; la trayectoria profesional procede de la ficha oficial.",
+      "source": "https://www.lamoncloa.gob.es/gobierno/paginas/biografias-xv-legislatura/ministra-margarita-robles.aspx",
+      "sourceTitle": "La Moncloa · biografía de la ministra",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-casteleiro": {
+      "text": "Esperanza Casteleiro Llamazares (Madrid, 1956) es funcionaria especializada en inteligencia española, vinculada al CNI desde 1983. Fue secretaria general del centro entre 2004 y 2008, secretaria de Estado de Defensa y fue nombrada directora del CNI en mayo de 2022. Villarejo elogia su profesionalidad y asegura que no se le permitió acudir a determinada comisión parlamentaria durante la crisis de Ceuta. El nombramiento y la carrera son verificables; la restricción de comparecencia no se acredita en el episodio.",
+      "source": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2022/100522-rp-cministros.aspx",
+      "sourceTitle": "La Moncloa · nombramiento como directora del CNI",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-jose-bono": {
+      "text": "José Bono Martínez (Salobre, Albacete, 1950) es un político español que presidió Castilla-La Mancha entre 1983 y 2004, fue ministro de Defensa de 2004 a 2006 y presidente del Congreso entre 2008 y 2011. Su carrera pública está documentada por el Congreso. La entrevista atribuye a Bono presuntas relaciones con empresas de suministros militares y con responsables de Tetuán. No se presentan contratos, investigaciones judiciales o pruebas que confirmen tales imputaciones, por lo que se conservan como alegaciones pendientes de verificación.",
+      "source": "https://www.congreso.es/es/presidentes-del-congreso-de-los-diputados?codigo=200008",
+      "sourceTitle": "Congreso de los Diputados · biografía histórica",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-zapatero": {
+      "text": "José Luis Rodríguez Zapatero (Valladolid, 1960) es jurista y político del PSOE. Fue secretario general del partido desde 2000 y presidente del Gobierno de España entre 2004 y 2011. Durante su etapa al frente del Ejecutivo se aprobaron reformas sociales y tuvo lugar la retirada de las tropas españolas de Irak. Villarejo lo menciona entre los dirigentes vinculados, según su interpretación, a redes de intereses con Marruecos y Venezuela. No aporta pruebas que establezcan un delito o un negocio ilícito de Zapatero.",
+      "source": "https://www.lamoncloa.gob.es/presidente/presidentes/paginas/rodriguezzapatero_bio.aspx",
+      "sourceTitle": "La Moncloa · biografía del expresidente",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-jose-blanco": {
+      "text": "José Blanco López (Palas de Rei, 1962), conocido como Pepiño Blanco, es un político español que fue vicesecretario general del PSOE y ministro de Fomento entre 2009 y 2011. Fue diputado por Lugo durante distintas legislaturas. La entrevista lo menciona como una influencia en la trayectoria partidaria de Pedro Sánchez. Las valoraciones del invitado sobre su relación con otros políticos no deben extrapolarse más allá de lo expuesto en el episodio, y se mantiene separada la identidad documentada de cualquier insinuación personal.",
+      "source": "https://www.congreso.es/es/busqueda-de-diputados?_diputadomodule_mostrarFicha=true&codParlamentario=96&idLegislatura=X",
+      "sourceTitle": "Congreso de los Diputados · ficha parlamentaria",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-mohammed-vi": {
+      "text": "Mohamed VI (Rabat, 1963) es rey de Marruecos desde 1999, tras suceder a su padre, Hasán II, y jefe supremo de las Fuerzas Armadas Reales. Su hijo Moulay Hassan figura oficialmente como príncipe heredero y, en 2026, recibió atribuciones de coordinación militar. En la entrevista, Villarejo formula acusaciones políticas y rumores sobre la vida privada del entorno palaciego. No hay prueba suficiente en la transcripción para validar las acusaciones ni las especulaciones familiares.",
+      "source": "https://maroc.ma/es/noticias/comunicado-del-gabinete-real-3",
+      "sourceTitle": "Gobierno de Marruecos · comunicado de la Casa Real (2026)",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-moulay-hassan": {
+      "text": "Moulay Hassan (Rabat, 2003) es el príncipe heredero de Marruecos. Participa en actos oficiales y militares, y en mayo de 2026 la Casa Real comunicó que asumiría la coordinación de oficinas y servicios del Estado Mayor General de las Fuerzas Armadas Reales. El episodio utiliza su posición sucesoria para desarrollar rumores personales que no han sido demostrados. En esta ficha se conservan únicamente el perfil institucional verificable y la advertencia de que existen especulaciones no acreditadas.",
+      "source": "https://maroc.ma/es/noticias/comunicado-del-gabinete-real-3",
+      "sourceTitle": "Casa Real marroquí · nombramiento oficial de mayo de 2026",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-hassan-ii": {
+      "text": "Hasán II (1929–1999) fue rey de Marruecos desde 1961 hasta su fallecimiento. Le sucedió su hijo Mohamed VI. Su reinado estuvo marcado por la consolidación de las estructuras estatales de Marruecos, conflictos internos y transformaciones diplomáticas. Villarejo lo menciona para contrastar distintas etapas de la monarquía marroquí y el entorno palaciego. Los relatos del entrevistado sobre intrigas privadas no constituyen una fuente biográfica contrastada.",
+      "source": "https://maroc.ma/es/noticias/comunicado-del-gabinete-real-3",
+      "sourceTitle": "Casa Real marroquí · filiación y sucesión oficiales",
+      "reviewedAt": "2026-11-09"
+    },
+    "ce26-pablo-iglesias": {
+      "text": "Pablo Iglesias Turrión (Madrid, 1978) es politólogo, profesor y expolítico español, cofundador de Podemos y vicepresidente segundo del Gobierno entre 2020 y 2021. Fue diputado en varias legislaturas y tiene formación académica en Ciencia Política, Derecho y Comunicación. La entrevista lo utiliza como ejemplo en un discurso crítico sobre el sistema de partidos y la vivienda. Esas descalificaciones y las inferencias sobre patrimonio no deben confundirse con datos biográficos o acusaciones acreditadas.",
+      "source": "https://www.congreso.es/es/busqueda-de-diputados?_diputadomodule_mostrarFicha=true&codParlamentario=319&idLegislatura=XIV",
+      "sourceTitle": "Congreso de los Diputados · ficha parlamentaria",
       "reviewedAt": "2026-11-09"
     }
   }
