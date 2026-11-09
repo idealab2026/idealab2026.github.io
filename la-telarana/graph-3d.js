@@ -22,20 +22,37 @@ function make(options){
   const s=(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLowerCase();
   return /mossad|inteligenc|espionaj|secreto/.test(s)?"inteligencia":/israel|iran|palestin|hamás|hamas|egipt/.test(s)?"oriente":/españ|congreso|gobierno español/.test(s)?"espana":/nazi|guerra mundial/.test(s)?"historia":/tecnol|software|digital/.test(s)?"tecnologia":/banc|financ|invers/.test(s)?"finanzas":"global";
  }
+ // Temas distribuidos en islas, dimensionados por el número de nodos.
+ const layoutRows=[["inteligencia","oriente","global"],["espana","historia","finanzas"],[null,"tecnologia",null]];
+ const NODE_SPACING=152, THEME_GAP_X=720, THEME_GAP_Y=520;
  function arrange(){
   pos=new Map();
-  topics.forEach(([name],i)=>{
-   const subset=nodes.filter(n=>group(n)===name).sort((a,b)=>{
-    const degree=n=>edges.filter(e=>e.a===n.id||e.b===n.id).length;
-    return degree(b)-degree(a)||a.name.localeCompare(b.name);
-   });
-   const a=-PI/2+2*PI*i/topics.length,arc=2*PI/topics.length;
+  const degree=new Map(nodes.map(n=>[n.id,0]));
+  for(const e of edges){degree.set(e.a,(degree.get(e.a)||0)+1);degree.set(e.b,(degree.get(e.b)||0)+1)}
+  const sets=new Map(),dims=new Map();
+  for(const [name] of topics){
+   const subset=nodes.filter(n=>group(n)===name).sort((a,b)=>(degree.get(b.id)||0)-(degree.get(a.id)||0)||a.name.localeCompare(b.name,"es"));
+   sets.set(name,subset);
+   const cols=Math.max(1,Math.ceil(Math.sqrt(subset.length*1.14)));
+   const rows=Math.max(1,Math.ceil(subset.length/cols));
+   dims.set(name,{cols,rows,width:(cols-1)*NODE_SPACING+NODE_SPACING*.52,height:(rows-1)*NODE_SPACING*.92});
+  }
+  const colWidths=[0,1,2].map(c=>Math.max(...layoutRows.map(row=>row[c]?dims.get(row[c]).width:0),360));
+  const rowHeights=layoutRows.map(row=>Math.max(...row.map(name=>name?dims.get(name).height:0),270));
+  const fullW=colWidths.reduce((a,b)=>a+b,0)+THEME_GAP_X*2;
+  const fullH=rowHeights.reduce((a,b)=>a+b,0)+THEME_GAP_Y*2;
+  const centersX=[],centersY=[];
+  let x=-fullW/2;colWidths.forEach(width=>{centersX.push(x+width/2);x+=width+THEME_GAP_X});
+  let y=-fullH/2;rowHeights.forEach(height=>{centersY.push(y+height/2);y+=height+THEME_GAP_Y});
+  for(let r=0;r<layoutRows.length;r++)for(let c=0;c<3;c++){
+   const topic=layoutRows[r][c];if(!topic)continue;
+   const subset=sets.get(topic),shape=dims.get(topic),topicDepth=(c-1)*185+(r-1)*95;
    subset.forEach((n,j)=>{
-    const col=j%9,row=Math.floor(j/9),angle=a+(col-4)*arc*.095+(row%2)*.03;
-    const radius=590+row*275+(j%3)*36;
-    pos.set(n.id,{x:radius*Math.cos(angle),y:(j%5-2)*150+row*70,z:radius*Math.sin(angle)});
+    const col=j%shape.cols,row=Math.floor(j/shape.cols),stagger=row%2?NODE_SPACING*.26:0;
+    pos.set(n.id,{x:centersX[c]+(col-(shape.cols-1)/2)*NODE_SPACING+stagger,
+     y:centersY[r]+(row-(shape.rows-1)/2)*NODE_SPACING*.92,z:topicDepth+((j*3)%7-3)*23});
    });
-  });
+  }
  }
  function proj(v){
   const x=v.x*Math.cos(yaw)-v.z*Math.sin(yaw),z=v.x*Math.sin(yaw)+v.z*Math.cos(yaw);
