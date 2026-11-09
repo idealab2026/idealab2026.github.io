@@ -190,6 +190,15 @@ body.graph-expanded{overflow:hidden}
 .inspector .research-section summary{cursor:pointer;color:#cfdfeb;font-size:.82rem}
 .inspector .research-section .source-hint{font-size:.74rem;line-height:1.5}
 
+
+.inspector .timeline-connections{border-top:1px solid #425365;margin-top:16px;padding-top:12px}
+.inspector .timeline-connections h3{font-size:.86rem;color:#dfb576;margin:9px 0}
+.inspector .timeline-connection{display:flex;flex-direction:column;gap:4px;padding:11px 12px;
+ margin:8px 0;background:#112333;border:1px solid #416275;border-radius:9px;
+ color:#dfedfa;text-decoration:none}
+.inspector .timeline-connection small{font-size:.68rem;color:#b8d6db}
+.inspector .timeline-connection strong{font-size:.82rem;line-height:1.4}
+.inspector .timeline-connection:hover{border-color:#d6af73;color:#fff}
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Descargar datos</button><span class="readonly-note" aria-label="Web pública de solo lectura">Consulta pública · Solo lectura</span></div>
@@ -618,6 +627,43 @@ function showPodcastNotes(panel,notes,heading){
 function relationStatusLabel(edge){
  return edge.confidence==="documentado"?"Documentada":edge.confidence==="indicio"?"Indicio":"Hipótesis";
 }
+/* Hitos fechados contrastados publicados por el proyecto hermano.
+   Solo lectura: este catálogo no puede modificar las entidades del grafo. */
+var timelineHitos=[];
+function showTimelineForNode(panel,node){
+ var matches=timelineHitos.filter(function(e){
+  return e.investigation&&e.investigation.status==="hecho_documentado"&&
+   Array.isArray(e.investigation.relatedTelarana)&&
+   e.investigation.relatedTelarana.includes(node.id);
+ }).sort(function(a,b){return Number(a.y)-Number(b.y)});
+ if(!matches.length)return;
+ var section=N("section",null,"timeline-connections");
+ section.append(N("h3","Acontecimientos en la Línea de la Historia ("+matches.length+")"));
+ matches.forEach(function(event){
+  var link=N("a",null,"timeline-connection");
+  link.href="../linea-historia/?evento="+encodeURIComponent(event.id);
+  link.target="_blank";link.rel="noopener noreferrer";
+  var date=event.investigation.date||String(Math.floor(event.y));
+  link.append(N("small",date+" · hecho contrastado"));
+  link.append(N("strong",event.t));
+  section.append(link);
+ });
+ panel.append(section);
+}
+async function hydrateTimelineConnections(){
+ if(typeof fetch!=="function")return;
+ try{
+  var response=await fetch("../linea-historia/estudios-telarana.json",{cache:"no-cache"});
+  if(!response.ok)return;
+  var doc=await response.json();
+  timelineHitos=Array.isArray(doc.items)?doc.items.filter(function(e){
+   return e&&/^study-v[12]-[a-z0-9-]+$/.test(e.id||"")&&
+    e.investigation&&e.investigation.status==="hecho_documentado"&&
+    Array.isArray(e.investigation.relatedTelarana);
+  }):[];
+  if(selection&&selection.kind==="node")inspect();
+ }catch(e){/* La Telaraña sigue operativa si falla la carga del catálogo externo. */}
+}
 function showNodeRelationships(panel,node){
  var links=data.edges.filter(function(e){return e.a===node.id||e.b===node.id});
  var section=N("section",null,"relations-section");
@@ -658,7 +704,7 @@ function showRelationshipEndpoints(panel,edge){
 }
 function inspect(){syncInspectorDrawer();if(isGraphExpanded())$("inspector").scrollTop=0;var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para consultar sus detalles y fuentes."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
-if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.kind==="Persona"){showPersonBiography(p,obj);showPersonResearch(p,obj)}else{if(obj.archiveNote){p.append(N("div","Texto original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"))}else if(obj.note){p.append(N("p",obj.note))}showPodcastNotes(p,obj.podcastNotes)}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showNodeRelationships(p,obj);}
+if(selection.kind==="node"){var image=displayPhoto(obj);if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.kind==="Persona"){showPersonBiography(p,obj);showPersonResearch(p,obj)}else{if(obj.archiveNote){p.append(N("div","Texto original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"))}else if(obj.note){p.append(N("p",obj.note))}showPodcastNotes(p,obj.podcastNotes)}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showTimelineForNode(p,obj);showNodeRelationships(p,obj);}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",relationStatusLabel(obj),"badge"));showRelationshipEndpoints(p,obj);if(obj.note)p.append(N("p",obj.note));if(Array.isArray(obj.relatedTypes)&&obj.relatedTypes.length){var tags=N("p","Otros tipos de vínculo descritos: "+obj.relatedTypes.join(" · "),"source-hint");p.append(tags)}showPodcastNotes(p,obj.podcastNotes);if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,"Abrir minuto de la relación");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
 }
 // Solo lectura: no existen acciones de editar o eliminar.
@@ -979,5 +1025,6 @@ if(relatedEntity&&getNode(relatedEntity)){
 render();if(graph3d){graph3d.fit();updateMotionButton()}
 if(selection)inspect();
 hydrateWikipediaPhotos();
+hydrateTimelineConnections();
 })();
 </script></body></html>
