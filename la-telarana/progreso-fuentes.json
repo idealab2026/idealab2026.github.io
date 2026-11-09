@@ -1,7 +1,7 @@
 {
   "version": 1,
   "updatedAt": "2026-11-09",
-  "scope": "Seguimiento metodologico de 33 fuentes; inventario completo permanece privado en el Excel del usuario",
+  "scope": "Seguimiento de 33 fuentes; inventario completo privado en Mac. Investigación complementaria sin orden confirmado contabilizada por separado.",
   "total": 33,
   "counts": {
     "reviewedPublished": 1,
@@ -74,8 +74,8 @@
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
-    "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento.",
-    "committedVerifiedEvents": 8,
+    "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
+    "committedVerifiedEvents": 12,
     "fromReviewedSource": 5,
     "fromSourceInReview": 3,
     "publishedInPages": true,
@@ -91,9 +91,35 @@
         "study-v2-ceuta-aviso-2026",
         "study-v2-ceuta-crisis-2026",
         "study-v2-ceuta-publicacion-2026"
+      ],
+      "pendiente-de-numero-frattini-150": [
+        "study-vf150-eichmann-1960",
+        "study-vf150-munich-1972",
+        "study-vf150-lillehammer-1973",
+        "study-vf150-salameh-1979"
       ]
     },
     "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42653628984",
-    "publishedCheckDate": "2026-11-09"
-  }
+    "publishedCheckDate": "2026-11-09",
+    "fromSupplementalResearch": 4
+  },
+  "supplementalResearch": [
+    {
+      "title": "Vaquero Podcast #150 · Eric Frattini",
+      "url": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "publishedAt": "2026-09-28",
+      "status": "cronologia_contrastada_numero_de_fuente_pendiente",
+      "catalogOrder": null,
+      "graphNodesAlreadyRecorded": 80,
+      "graphRelationsAlreadyRecorded": 99,
+      "verifiedTimelineEvents": 4,
+      "studyLimit": "Los nodos son un resumen atribuido de subtitulos y no implican transcripcion exhaustiva. No se incrementa el contador de las 33 fuentes hasta recuperar y reconciliar el inventario original.",
+      "historicalReferences": [
+        "Yad Vashem",
+        "Comite Olimpico Internacional",
+        "Gobierno de Noruega",
+        "El Pais (1979)"
+      ]
+    }
+  ]
 }
