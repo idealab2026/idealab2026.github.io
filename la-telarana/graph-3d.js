@@ -57,7 +57,8 @@ function make(options){
  function proj(v){
   const x=v.x*Math.cos(yaw)-v.z*Math.sin(yaw),z=v.x*Math.sin(yaw)+v.z*Math.cos(yaw);
   const y=v.y*Math.cos(pitch)-z*Math.sin(pitch),depth=v.y*Math.sin(pitch)+z*Math.cos(pitch);
-  const scale=Math.min(w/1450,h/950)*zoom*2100/(2100+depth);
+  // Perspectiva suave: una focal corta plegaba las filas y superponía nodos.
+  const scale=Math.min(w/1450,h/950)*zoom*2100/(2100+depth*.20);
   return{x:w/2+panX+x*scale,y:h/2+panY+y*scale,depth,scale};
  }
  function color(hex,a){const v=parseInt(hex.slice(1),16);return "rgba("+((v>>16)&255)+","+((v>>8)&255)+","+(v&255)+","+a+")"}
