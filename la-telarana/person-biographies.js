@@ -207,6 +207,18 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "f04-alejandro-lerroux": {
       "lang": "es",
       "title": "Alejandro Lerroux"
+    },
+    "twp253-jordi-wild": {
+      "lang": "es",
+      "title": "Jordi Wild"
+    },
+    "twp253-pequeno-nicolas": {
+      "lang": "es",
+      "title": "Pequeño Nicolás"
+    },
+    "twp253-jordi-pujol": {
+      "lang": "es",
+      "title": "Jordi Pujol"
     }
   },
   "curated": {
@@ -456,6 +468,27 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/52300/imprimir",
       "sourceTitle": "PARES · Archivo de autoridad Alejandro Lerroux",
       "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp253-jordi-wild": {
+      "text": "Jordi Carrillo de Albornoz Torres (Manresa, 1984), conocido profesionalmente como Jordi Wild, es creador de contenido y presentador del pódcast de entrevistas The Wild Project, que inició en 2020, tras desarrollar su canal El Rincón de Giorgio. Publicó, entre otras obras, Así es la puta vida. En enero de 2024 entrevistó durante unas cinco horas al excomisario José Manuel Villarejo en el episodio #253. Conducir una entrevista no supone validar las afirmaciones del invitado. El contenido controvertido se atribuye expresamente a quien lo declara y requiere comprobación independiente.",
+      "source": "https://jordiwild.com/",
+      "sourceTitle": "Jordi Wild · sitio profesional",
+      "also": "https://www.youtube.com/watch?v=fxvXXVrkRb4",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp253-pequeno-nicolas": {
+      "text": "Francisco Nicolás Gómez Iglesias, conocido como «el Pequeño Nicolás», adquirió notoriedad pública en 2014 por su presencia en actos institucionales y distintas causas judiciales. En mayo de 2024 el Tribunal Supremo lo absolvió de determinados delitos de usurpación de funciones y cohecho relacionados con el viaje a Ribadeo, tras revisar una condena anterior. Ese fallo no resuelve todas las causas y acusaciones históricas sobre su persona. Durante The Wild Project #253, Villarejo afirma que nunca lo vio personalmente y formula conjeturas sobre sus relaciones con los servicios de inteligencia; esas conjeturas no se presentan como hechos documentados.",
+      "source": "https://www.rtve.es/noticias/20240522/supremo-absuelve-a-pequeno-nicolas-del-delito-usurpacion-funciones-cohecho-por-viaje-a-ribadeo/16114636.shtml",
+      "sourceTitle": "RTVE · resolución del Tribunal Supremo de 2024",
+      "also": "https://www.youtube.com/watch?v=fxvXXVrkRb4",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp253-jordi-pujol": {
+      "text": "Jordi Pujol i Soley (Barcelona, 1930) es médico y político español, fundador de Convergència Democràtica de Catalunya y presidente de la Generalitat de Cataluña durante seis legislaturas, entre 1980 y 2003. Su trayectoria institucional está documentada por el Parlament de Catalunya y por la Generalitat. En The Wild Project #253, la familia Pujol aparece en el relato de Villarejo sobre investigaciones policiales y contactos vinculados a la denominada Operación Cataluña. La conversación acredita que se hicieron esas referencias, pero no determina por sí sola si se produjo cada reunión, operación, beneficio o irregularidad descrita.",
+      "source": "https://web.gencat.cat/es/generalitat/qui-som/historia-generalitat/generalitat-contemporania",
+      "sourceTitle": "Generalitat de Catalunya · historia de sus gobiernos",
+      "also": "https://www.parlament.cat/web/composicio/diputats-fitxa/index.html?p_codi=188&p_legislatura=1",
       "reviewedAt": "2026-11-09"
     }
   }
