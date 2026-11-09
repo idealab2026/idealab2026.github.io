@@ -40,6 +40,7 @@ class BulkExportTests(unittest.TestCase):
         self.assertIsNone(bulk.chapter_scope("Resumen del libro"))
         self.assertIsNone(bulk.chapter_scope("Capítulos 5 a 150"))
         self.assertIsNone(bulk.chapter_scope("Imagen del año 2026"))
+        self.assertIsNone(bulk.chapter_scope("Capitulo 15 - Parte 2 Capitulo 7"))
 
     def test_montecristo_tomos_and_unclassified(self):
         f, label, category = bulk.categories(
