@@ -55,6 +55,8 @@ jobs:
         run: node scripts/test_telarana_source06.mjs
       - name: Validar fuente 07 · periodismo, notas y cinco hitos históricos
         run: node scripts/test_telarana_source07.mjs
+      - name: Validar fuente 08 · menciones editoriales y contexto judicial sin imputaciones
+        run: node scripts/test_telarana_source08.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
@@ -92,6 +94,7 @@ jobs:
           cp la-telarana/source05-psoe-map-context.js dist/la-telarana/source05-psoe-map-context.js
           cp la-telarana/podcast-wild-253-villarejo.js dist/la-telarana/podcast-wild-253-villarejo.js
           cp la-telarana/podcast-wild-312-chicote.js dist/la-telarana/podcast-wild-312-chicote.js
+          cp la-telarana/podcast-vaquero-67-villarejo.js dist/la-telarana/podcast-vaquero-67-villarejo.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
@@ -141,6 +144,9 @@ jobs:
           test -s dist/la-telarana/podcast-wild-312-chicote.js
           node --check dist/la-telarana/podcast-wild-312-chicote.js
           grep -q 'IDEA_TELARANA_SOURCE07_PODCAST' dist/la-telarana/index.html
+          test -s dist/la-telarana/podcast-vaquero-67-villarejo.js
+          node --check dist/la-telarana/podcast-vaquero-67-villarejo.js
+          grep -q 'IDEA_TELARANA_SOURCE08_EDITORIAL' dist/la-telarana/index.html
           grep -q "v2-exhaustiva-20261109" dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           grep -q "IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO" dist/la-telarana/podcast-coronel-villarejo-2026.js
           test -s dist/la-telarana/photo-catalog.js
