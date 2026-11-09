@@ -48,7 +48,7 @@ assert(events.some(x=>x.investigation.date==="2024-03-15"&&/absuelve/i.test(x.t)
 const row=progress.sourceCatalog.entries.find(x=>x.order===7);
 assert(row.tracking.docTranscriptionCreated===true&&row.tracking.transcriptContentImported===false);
 assert(row.reviewComplete===false&&row.docTranscriptHasFullText===false);
-assert.equal(progress.timeline.committedVerifiedEvents,32);
+assert.equal(progress.timeline.committedVerifiedEvents,history.items.length,"Timeline global can grow when subsequent sources are reviewed");
 assert.equal(progress.timeline.eventsBySource["7"].length,5);
 assert(html.includes('podcast-wild-312-chicote.js?v='));
 assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_SOURCE07_PODCAST)"));
