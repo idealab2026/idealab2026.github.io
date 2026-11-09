@@ -1,14 +1,18 @@
-/* Fuente 18: solo participantes anunciados, temas de sinopsis y hechos externos. SIN TRANSCRIPCIÓN. */
+/* Análisis de transcripción automática completa; los vínculos de mención NO son vínculos sustantivos. Texto íntegro privado en Drive. */
 window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
   "metadata": {
     "id": "idealab-f18-epstein-lorenzo",
     "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
     "url": "https://www.youtube.com/watch?v=MljyjDGTxkk",
     "publishedAt": "2026-02-08",
-    "reviewStage": "fuente_editorial_transcripcion_pendiente",
-    "transcriptAvailable": false,
+    "reviewStage": "revision_textual_y_contrastes_documentales_focalizados_20261110",
+    "transcriptAvailable": true,
     "sourceOrder": 18,
-    "methodologicalNote": "Solo integrantes anunciados y documentación externa independiente; la entrevista completa no se ha transcrito. Un título o una mención no son prueba de una conexión ilícita."
+    "methodologicalNote": "Solo integrantes anunciados y documentación externa independiente; la entrevista completa no se ha transcrito. Un título o una mención no son prueba de una conexión ilícita.",
+    "transcriptSource": "Google Docs privado IDEA LAB, texto automático de NotebookLM",
+    "transcriptCharacters": 129774,
+    "transcriptTimecodesAvailable": false,
+    "transcriptAudioMatched": false
   },
   "nodes": [
     {
@@ -16,7 +20,7 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "name": "Podcast · Epstein, EEUU e Israel (F18)",
       "kind": "Fuente",
       "subtitle": "Entrevista de Rubén Gisbert a Lorenzo Ramírez",
-      "note": "Fuente 18 del inventario de NotebookLM; se conoce la sinopsis editorial. Transcripción íntegra pendiente. La ficha documenta únicamente el tema y participantes, sin atribuir declaraciones exactas.",
+      "note": "Fuente con transcripción íntegra de NotebookLM conservada en Drive privado. Identificación de interlocutores y bloques temáticos contrastados con texto automático. NO hay cotejo de audio ni minutajes, y las hipótesis de los participantes no se afirman como hechos.",
       "topic3d": "global",
       "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
       "x": 5500,
@@ -75,6 +79,374 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "y": 1880,
       "photo": "",
       "podcastNotes": []
+    },
+    {
+      "id": "f18-trump",
+      "name": "Donald Trump",
+      "kind": "Persona",
+      "subtitle": "Presidente estadounidense; empresario y político",
+      "note": "Lo presentan como centro de decisiones de la política exterior y de controversias sobre la publicación del expediente Epstein. No se ha demostrado en esta revisión un chantaje personal.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 3% del texto automático, sin minutaje: «egia de seguridad nacional de Trump bueno pues prácticamente la veníamos avanzando y la veníamos contando Es verdad que ahora cuando uno une los puntos pues empieza a dar cuenta de». Contexto editorial: Lo presentan como centro de decisiones de la política exterior y de controversias sobre la publicación del expediente Epstein. No se ha demostrado en esta revisión un chantaje personal."
+        }
+      ],
+      "x": 5650,
+      "y": 3000
+    },
+    {
+      "id": "f18-netanyahu",
+      "name": "Benjamin Netanyahu",
+      "kind": "Persona",
+      "subtitle": "Político israelí; primer ministro",
+      "note": "La conversación le vincula al análisis sobre Irán e Israel. Las atribuciones de control indirecto del Gobierno estadounidense son hipótesis de los interlocutores.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 21% del texto automático, sin minutaje: « esa película que nos cuentan Netanyahu y sus secuaces un Netanu y unos políticos que lo aprovechan siendo ateos Entonces fíjate toda amalgama qué amalgama tenemos aquí ¿Qué es lo ». Contexto editorial: La conversación le vincula al análisis sobre Irán e Israel. Las atribuciones de control indirecto del Gobierno estadounidense son hipótesis de los interlocutores."
+        }
+      ],
+      "x": 5885,
+      "y": 3000
+    },
+    {
+      "id": "f18-gates",
+      "name": "Bill Gates",
+      "kind": "Persona",
+      "subtitle": "Cofundador de Microsoft y filántropo",
+      "note": "El entrevistado lo utiliza para ilustrar su interpretación de los cambios de influencia entre grandes empresarios. No se establece delito.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "tecnologia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 31% del texto automático, sin minutaje: «porque ya no cuela el mensaje Bill Gates es el claro ejemplo Bill Gates había que quitarlo ya absolutamente de medio porque era un zombi y él mismo no se había dado cuenta que era ». Contexto editorial: El entrevistado lo utiliza para ilustrar su interpretación de los cambios de influencia entre grandes empresarios. No se establece delito."
+        }
+      ],
+      "x": 6120,
+      "y": 3000
+    },
+    {
+      "id": "f18-soros",
+      "name": "George Soros",
+      "kind": "Persona",
+      "subtitle": "Inversor y fundador de Open Society Foundations",
+      "note": "Se alude a supuestas redes de financiación e influencia política. Faltan documentos de subvenciones y destinatarios concretos para crear relaciones financieras.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 71% del texto automático, sin minutaje: «e claramente la influencia de Soros que dices bueno Soros Open Society USate toda esa ala oscura el deep state dentro del partido demócrata Dice \"Oiga pero Peterfil no se enfrenta ». Contexto editorial: Se alude a supuestas redes de financiación e influencia política. Faltan documentos de subvenciones y destinatarios concretos para crear relaciones financieras."
+        }
+      ],
+      "x": 6355,
+      "y": 3000
+    },
+    {
+      "id": "f18-thiel",
+      "name": "Peter Thiel",
+      "kind": "Persona",
+      "subtitle": "Empresario tecnológico y cofundador de Palantir",
+      "note": "Su trayectoria se invoca en una tesis sobre poder tecnológico. No se ha verificado ninguna operación encubierta derivada de esta entrevista.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "tecnologia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «todo el ámbito tecnológico de Peterill de Palantir Entonces a su trabajo original él sumó una serie de iniciativas Yo no sé si moto propio porque le fueran dirigiendo a ellas en la». Contexto editorial: Su trayectoria se invoca en una tesis sobre poder tecnológico. No se ha verificado ninguna operación encubierta derivada de esta entrevista."
+        }
+      ],
+      "x": 6590,
+      "y": 3000
+    },
+    {
+      "id": "f18-palantir",
+      "name": "Palantir Technologies",
+      "kind": "Organización",
+      "subtitle": "Compañía de software y análisis de datos",
+      "note": "Tema de discusión sobre empresas tecnológicas y uso de datos; no implica por sí mismo intervención ilícita.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "tecnologia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «to tecnológico de Peterill de Palantir Entonces a su trabajo original él sumó una serie de iniciativas Yo no sé si moto propio porque le fueran dirigiendo a ellas en las cuales él ». Contexto editorial: Tema de discusión sobre empresas tecnológicas y uso de datos; no implica por sí mismo intervención ilícita."
+        }
+      ],
+      "x": 6825,
+      "y": 3000
+    },
+    {
+      "id": "f18-dimon",
+      "name": "Jamie Dimon",
+      "kind": "Persona",
+      "subtitle": "Ejecutivo bancario; director ejecutivo de JPMorgan Chase",
+      "note": "Aparece en una hipótesis grave de relaciones bancarias y de inteligencia; tal hipótesis no está demostrada y no se publica como vínculo penal.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 19% del texto automático, sin minutaje: «gan que es el banco además de Jamie Demon Jamie Demon es otro tipo que venía del Bank One de Chicago y que gracias también a esa red de crimen organizado ligada a la inteligencia i». Contexto editorial: Aparece en una hipótesis grave de relaciones bancarias y de inteligencia; tal hipótesis no está demostrada y no se publica como vínculo penal."
+        }
+      ],
+      "x": 7060,
+      "y": 3000
+    },
+    {
+      "id": "f18-jp-morgan",
+      "name": "JPMorgan Chase",
+      "kind": "Organización",
+      "subtitle": "Grupo bancario internacional estadounidense",
+      "note": "Se comenta su posición en finanzas internacionales. La actividad bancaria legítima debe separarse de imputaciones no probadas.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 18% del texto automático, sin minutaje: «ns y luego posteriormente con JP Morgan un GP Morgan que logra ser el mayor banco prácticamente del planeta bueno en occidente el mayor banco del sistema euroólar entre otras por l». Contexto editorial: Se comenta su posición en finanzas internacionales. La actividad bancaria legítima debe separarse de imputaciones no probadas."
+        }
+      ],
+      "x": 5650,
+      "y": 3190
+    },
+    {
+      "id": "f18-iran",
+      "name": "Irán",
+      "kind": "País",
+      "subtitle": "Estado de Oriente Medio",
+      "note": "El episodio plantea posibles resultados de negociaciones y escenarios militares de 2026. Son predicciones, no cronología acreditada.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 8% del texto automático, sin minutaje: « todas las luces ese ataque a Irán Ese sábado por la noche se iba a producir el ataque Irán Había movimientos estaba prácticamente todo pactado Entonces en este caso es muy posible». Contexto editorial: El episodio plantea posibles resultados de negociaciones y escenarios militares de 2026. Son predicciones, no cronología acreditada."
+        }
+      ],
+      "x": 5885,
+      "y": 3190
+    },
+    {
+      "id": "f18-israel",
+      "name": "Israel",
+      "kind": "País",
+      "subtitle": "Estado de Oriente Medio",
+      "note": "Actor político del debate sobre seguridad regional y el caso Epstein; no se le atribuye en el grafo autoría institucional de una conspiración.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 8% del texto automático, sin minutaje: «ento maga pertenecen al lobby israelí con lo cual claro ahí hay un problema muy importante en la anterior desclasificación que se produce en diciembre que tuvo menos eh publicidad ». Contexto editorial: Actor político del debate sobre seguridad regional y el caso Epstein; no se le atribuye en el grafo autoría institucional de una conspiración."
+        }
+      ],
+      "x": 6120,
+      "y": 3190
+    },
+    {
+      "id": "f18-xi",
+      "name": "Xi Jinping",
+      "kind": "Persona",
+      "subtitle": "Presidente de la República Popular China",
+      "note": "Se plantea la rivalidad y la interdependencia comercial entre China y EEUU. La transcripción automática altera su nombre, ya normalizado.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 4% del texto automático, sin minutaje: «que va a haber una cumbre con Jin Pin en abril y bueno le faltó decir que se va a nacional chino se va a nacionalizar chino pasado mañana ¿no Sí sí hay una serie de tendencias que ». Contexto editorial: Se plantea la rivalidad y la interdependencia comercial entre China y EEUU. La transcripción automática altera su nombre, ya normalizado."
+        }
+      ],
+      "x": 6355,
+      "y": 3190
+    },
+    {
+      "id": "f18-china",
+      "name": "China",
+      "kind": "País",
+      "subtitle": "Estado asiático; potencia industrial y comercial",
+      "note": "Tema de análisis estratégico y comercial; no se deduce coordinación oculta con terceros.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 4% del texto automático, sin minutaje: «nto total a corto plazo entre China y Estados Unidos porque a corto plazo se necesitan y tienen que proceder a a cortar sus relaciones de una manera bueno pues muy quirúrgica muy p». Contexto editorial: Tema de análisis estratégico y comercial; no se deduce coordinación oculta con terceros."
+        }
+      ],
+      "x": 6590,
+      "y": 3190
+    },
+    {
+      "id": "f18-zelenski",
+      "name": "Volodímir Zelenski",
+      "kind": "Persona",
+      "subtitle": "Político ucraniano; presidente de Ucrania",
+      "note": "La conversación contiene conjeturas sobre negociaciones y riesgos personales; no se presentan como amenazas verificadas.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 55% del texto automático, sin minutaje: «es estar mañana aplaudiendo a Zelenski pasado eh criticando a Marruecos o hablar de lo que pueda estar pasando en Ucrania en Polonia en Francia en Reino Unido Lo que tienes que hac». Contexto editorial: La conversación contiene conjeturas sobre negociaciones y riesgos personales; no se presentan como amenazas verificadas."
+        }
+      ],
+      "x": 6825,
+      "y": 3190
+    },
+    {
+      "id": "f18-bitcoin",
+      "name": "Bitcoin",
+      "kind": "Concepto",
+      "subtitle": "Criptoactivo y red de pagos descentralizada",
+      "note": "Debate sobre oferta monetaria, volatilidad, productos financieros y presuntas financiaciones. No se han probado vínculos financieros ilícitos.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 90% del texto automático, sin minutaje: « poco lo que está pasando con Bitcoin que ayer cundía el pánico el mercado cripto pero de una manera que yo no hacía mucho tiempo que no veía Ha sido la peor semana cripto de la hi». Contexto editorial: Debate sobre oferta monetaria, volatilidad, productos financieros y presuntas financiaciones. No se han probado vínculos financieros ilícitos."
+        }
+      ],
+      "x": 7060,
+      "y": 3190
+    },
+    {
+      "id": "f18-sanchez",
+      "name": "Pedro Sánchez",
+      "kind": "Persona",
+      "subtitle": "Político español; presidente del Gobierno",
+      "note": "Mencionado en un debate sobre identificación digital y plataformas. Sin acta legislativa o resolución no se atribuye una política de vigilancia total.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "espana",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 55% del texto automático, sin minutaje: «e hecho y no sí pero de hecho Pedro Sánchez bueno ahora vamos a hablar al final de Pedro Sánchez pero me llevaba esto por el por los proxis que tenemos en España eh de estos intere». Contexto editorial: Mencionado en un debate sobre identificación digital y plataformas. Sin acta legislativa o resolución no se atribuye una política de vigilancia total."
+        }
+      ],
+      "x": 5650,
+      "y": 3380
+    },
+    {
+      "id": "f18-vox",
+      "name": "Vox",
+      "kind": "Organización",
+      "subtitle": "Partido político español",
+      "note": "El episodio formula valoraciones políticas sobre alianzas; no se registran como financiación ni coordinación clandestinas.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "topic3d": "espana",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 52% del texto automático, sin minutaje: « decir el principal aliado de Vox es Israel El principal aliado de Vox ideológico e servil es el mundo anglo el mundo anglosajón todo lo que tenga que ver con la OTAN pero fundamen». Contexto editorial: El episodio formula valoraciones políticas sobre alianzas; no se registran como financiación ni coordinación clandestinas."
+        }
+      ],
+      "x": 5885,
+      "y": 3380
     }
   ],
   "edges": [
@@ -125,6 +497,358 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "episodeId": "idealab-f18-epstein-lorenzo",
       "claimStatus": "contexto-externo-verificado",
       "podcastNotes": []
+    },
+    {
+      "id": "f18-mentions-trump",
+      "a": "f18-episodio",
+      "b": "f18-trump",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 3%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 3% del texto automático, sin minutaje: «egia de seguridad nacional de Trump bueno pues prácticamente la veníamos avanzando y la veníamos contando Es verdad que ahora cuando uno une los puntos pues empieza a dar cuenta de». Contexto editorial: Lo presentan como centro de decisiones de la política exterior y de controversias sobre la publicación del expediente Epstein. No se ha demostrado en esta revisión un chantaje personal."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-netanyahu",
+      "a": "f18-episodio",
+      "b": "f18-netanyahu",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 21%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 21% del texto automático, sin minutaje: « esa película que nos cuentan Netanyahu y sus secuaces un Netanu y unos políticos que lo aprovechan siendo ateos Entonces fíjate toda amalgama qué amalgama tenemos aquí ¿Qué es lo ». Contexto editorial: La conversación le vincula al análisis sobre Irán e Israel. Las atribuciones de control indirecto del Gobierno estadounidense son hipótesis de los interlocutores."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-gates",
+      "a": "f18-episodio",
+      "b": "f18-gates",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 31%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 31% del texto automático, sin minutaje: «porque ya no cuela el mensaje Bill Gates es el claro ejemplo Bill Gates había que quitarlo ya absolutamente de medio porque era un zombi y él mismo no se había dado cuenta que era ». Contexto editorial: El entrevistado lo utiliza para ilustrar su interpretación de los cambios de influencia entre grandes empresarios. No se establece delito."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-soros",
+      "a": "f18-episodio",
+      "b": "f18-soros",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 71%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 71% del texto automático, sin minutaje: «e claramente la influencia de Soros que dices bueno Soros Open Society USate toda esa ala oscura el deep state dentro del partido demócrata Dice \"Oiga pero Peterfil no se enfrenta ». Contexto editorial: Se alude a supuestas redes de financiación e influencia política. Faltan documentos de subvenciones y destinatarios concretos para crear relaciones financieras."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-thiel",
+      "a": "f18-episodio",
+      "b": "f18-thiel",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 20%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «todo el ámbito tecnológico de Peterill de Palantir Entonces a su trabajo original él sumó una serie de iniciativas Yo no sé si moto propio porque le fueran dirigiendo a ellas en la». Contexto editorial: Su trayectoria se invoca en una tesis sobre poder tecnológico. No se ha verificado ninguna operación encubierta derivada de esta entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-palantir",
+      "a": "f18-episodio",
+      "b": "f18-palantir",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 20%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «to tecnológico de Peterill de Palantir Entonces a su trabajo original él sumó una serie de iniciativas Yo no sé si moto propio porque le fueran dirigiendo a ellas en las cuales él ». Contexto editorial: Tema de discusión sobre empresas tecnológicas y uso de datos; no implica por sí mismo intervención ilícita."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-dimon",
+      "a": "f18-episodio",
+      "b": "f18-dimon",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 19%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 19% del texto automático, sin minutaje: «gan que es el banco además de Jamie Demon Jamie Demon es otro tipo que venía del Bank One de Chicago y que gracias también a esa red de crimen organizado ligada a la inteligencia i». Contexto editorial: Aparece en una hipótesis grave de relaciones bancarias y de inteligencia; tal hipótesis no está demostrada y no se publica como vínculo penal."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-jp-morgan",
+      "a": "f18-episodio",
+      "b": "f18-jp-morgan",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 18%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 18% del texto automático, sin minutaje: «ns y luego posteriormente con JP Morgan un GP Morgan que logra ser el mayor banco prácticamente del planeta bueno en occidente el mayor banco del sistema euroólar entre otras por l». Contexto editorial: Se comenta su posición en finanzas internacionales. La actividad bancaria legítima debe separarse de imputaciones no probadas."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-iran",
+      "a": "f18-episodio",
+      "b": "f18-iran",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 8%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 8% del texto automático, sin minutaje: « todas las luces ese ataque a Irán Ese sábado por la noche se iba a producir el ataque Irán Había movimientos estaba prácticamente todo pactado Entonces en este caso es muy posible». Contexto editorial: El episodio plantea posibles resultados de negociaciones y escenarios militares de 2026. Son predicciones, no cronología acreditada."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-israel",
+      "a": "f18-episodio",
+      "b": "f18-israel",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 8%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 8% del texto automático, sin minutaje: «ento maga pertenecen al lobby israelí con lo cual claro ahí hay un problema muy importante en la anterior desclasificación que se produce en diciembre que tuvo menos eh publicidad ». Contexto editorial: Actor político del debate sobre seguridad regional y el caso Epstein; no se le atribuye en el grafo autoría institucional de una conspiración."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-xi",
+      "a": "f18-episodio",
+      "b": "f18-xi",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 4%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 4% del texto automático, sin minutaje: «que va a haber una cumbre con Jin Pin en abril y bueno le faltó decir que se va a nacional chino se va a nacionalizar chino pasado mañana ¿no Sí sí hay una serie de tendencias que ». Contexto editorial: Se plantea la rivalidad y la interdependencia comercial entre China y EEUU. La transcripción automática altera su nombre, ya normalizado."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-china",
+      "a": "f18-episodio",
+      "b": "f18-china",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 4%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 4% del texto automático, sin minutaje: «nto total a corto plazo entre China y Estados Unidos porque a corto plazo se necesitan y tienen que proceder a a cortar sus relaciones de una manera bueno pues muy quirúrgica muy p». Contexto editorial: Tema de análisis estratégico y comercial; no se deduce coordinación oculta con terceros."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-zelenski",
+      "a": "f18-episodio",
+      "b": "f18-zelenski",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 55%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 55% del texto automático, sin minutaje: «es estar mañana aplaudiendo a Zelenski pasado eh criticando a Marruecos o hablar de lo que pueda estar pasando en Ucrania en Polonia en Francia en Reino Unido Lo que tienes que hac». Contexto editorial: La conversación contiene conjeturas sobre negociaciones y riesgos personales; no se presentan como amenazas verificadas."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-bitcoin",
+      "a": "f18-episodio",
+      "b": "f18-bitcoin",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 90%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 90% del texto automático, sin minutaje: « poco lo que está pasando con Bitcoin que ayer cundía el pánico el mercado cripto pero de una manera que yo no hacía mucho tiempo que no veía Ha sido la peor semana cripto de la hi». Contexto editorial: Debate sobre oferta monetaria, volatilidad, productos financieros y presuntas financiaciones. No se han probado vínculos financieros ilícitos."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-sanchez",
+      "a": "f18-episodio",
+      "b": "f18-sanchez",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 55%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "Mención localizada aproximadamente al 55% del texto automático, sin minutaje: «e hecho y no sí pero de hecho Pedro Sánchez bueno ahora vamos a hablar al final de Pedro Sánchez pero me llevaba esto por el por los proxis que tenemos en España eh de estos intere». Contexto editorial: Mencionado en un debate sobre identificación digital y plataformas. Sin acta legislativa o resolución no se atribuye una política de vigilancia total."
+        }
+      ]
+    },
+    {
+      "id": "f18-mentions-vox",
+      "a": "f18-episodio",
+      "b": "f18-vox",
+      "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
+      "confidence": "documentado",
+      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 52%.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "Mención localizada aproximadamente al 52% del texto automático, sin minutaje: « decir el principal aliado de Vox es Israel El principal aliado de Vox ideológico e servil es el mundo anglo el mundo anglosajón todo lo que tenga que ver con la OTAN pero fundamen». Contexto editorial: El episodio formula valoraciones políticas sobre alianzas; no se registran como financiación ni coordinación clandestinas."
+        }
+      ]
     }
   ]
 };
