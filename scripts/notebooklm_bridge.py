@@ -353,7 +353,18 @@ def poll():
     if running:
         print("Solicitudes activas o inciertas:", running, "(no se enviarán otras automáticamente)")
         return
+    # A deferred request may still complete remotely after a timeout. Never
+    # start another request in the same notebook: its new artifact could be
+    # mistaken for the later request's result. Other notebooks are independent.
+    deferred_notebooks = {
+        j.get("notebook") for j in state.values() if j.get("phase") == "deferred"
+    }
     for number, req in next_requests(state, config):
+        mapping = select_mapping(config, req)
+        if mapping and mapping[0] in deferred_notebooks:
+            print("Solicitud #", number, "aplazada: existe un trabajo incierto",
+                  "en ese cuaderno. Continuando con otros cuadernos.")
+            continue
         if request_new(number, req, state, config):
             break
 
