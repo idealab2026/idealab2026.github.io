@@ -1,7 +1,7 @@
 {
   "version": 1,
   "updatedAt": "2026-11-09",
-  "scope": "33 fuentes del inventario original, más 1 vídeo añadido expresamente por el usuario sin asignarle un número original desconocido. La fuente complementaria Frattini sigue fuera del recuento.",
+  "scope": "33 fuentes identificadas e inventariadas el 09/11/2026 en NotebookLM (9 España, 20 Geopolítica, 4 Historia Moderna). El CSV original permanece en Descargas del Mac; la web únicamente tiene sincronizadas las fichas 1 y 2. Hay 1 fuente adicional facilitada por el usuario (nº 34). No confundir títulos no sincronizados con fuentes sin identificar.",
   "total": 34,
   "counts": {
     "reviewedPublished": 1,
@@ -140,7 +140,7 @@
     "showAllSlots": true,
     "checkRule": "El check verde se muestra únicamente si reviewComplete es true y status es revision_publicada",
     "supplementalOutsideCount": true,
-    "unidentifiedSourceLabel": "Fuente sin identificar · inventario no disponible",
+    "unidentifiedSourceLabel": "Inventariada ayer en NotebookLM · título y enlace pendientes de sincronizar con la web",
     "sort": "source_order",
     "originalCatalogTotal": 33,
     "addedSourceCount": 1,
@@ -151,14 +151,44 @@
     {
       "order": 34,
       "videoId": "j_5Tj0kIj2c",
-      "title": "Vídeo j_5Tj0kIj2c · título pendiente de confirmar",
+      "title": "Luces y Sombras del Papa Francisco - Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c&t=1535s",
       "originalStartSeconds": 1535,
       "status": "pendiente_revision",
       "reviewComplete": false,
       "origin": "Añadida por el usuario el 09/11/2026",
-      "metadataVerified": false,
-      "qualityNotes": "Identificador y momento 25:35 facilitados por el usuario. Metadatos y contenido pendientes de comprobación. Revisar duplicados al recuperar el inventario original."
+      "metadataVerified": true,
+      "qualityNotes": "Fuente añadida por el usuario y todavía no analizada. Mantener enlace con marca de tiempo 25:35.",
+      "metadataVerification": "Título visible en la pestaña de YouTube abierta por el usuario"
     }
-  ]
+  ],
+  "inventory": {
+    "identifiedOn": "2026-11-09",
+    "source": "Inventario exportado desde NotebookLM, respaldado por CSV local en Descargas del Mac",
+    "originalTotal": 33,
+    "titleUrlSyncState": "pendiente_de_sincronizar_archivo_local",
+    "unavailableDoesNotMeanUnidentified": true,
+    "notebooks": [
+      {
+        "title": "CULTURA - GEOPOLÍTICA - ESPAÑA",
+        "count": 9,
+        "url": "https://notebook.google.com/notebook/229398f4-df06-4cdb-9fc3-0740ce288437"
+      },
+      {
+        "title": "CULTURA - GEOPOLÍTICA",
+        "count": 20,
+        "url": "https://notebook.google.com/notebook/646ce21e-8873-4b85-8031-d2289c2e872e"
+      },
+      {
+        "title": "CULTURA - HISTORIA MODERNA",
+        "count": 4,
+        "url": "https://notebook.google.com/notebook/8b94ad58-a53c-4851-894a-88c5ff598a2b"
+      }
+    ],
+    "artifactNames": [
+      "telarana_inventario_fuentes_notebooklm.csv",
+      "telarana_fuentes_notebooklm.csv",
+      "geopolitica_fuentes.csv"
+    ]
+  }
 }
