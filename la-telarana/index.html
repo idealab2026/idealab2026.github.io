@@ -208,6 +208,7 @@ body.graph-expanded{overflow:hidden}
 </main>
 <script src="./one-note-seed.js?v=20261108-2"></script>
 <script src="./podcast-vaquero-150.js?v=20261108-2"></script>
+<script src="./investigacion-frattini-contexto.js?v=20261109-1"></script>
 <script src="./podcast-coronel-villarejo-2026.js?v=20261109-2"></script>
 <script src="./podcast-coronel-villarejo-2026-revision.js?v=20261109-4"></script>
 <script src="./podcast-coronel-elecciones-2026-preliminar.js?v=20261109-1"></script>
@@ -349,6 +350,10 @@ function load(){
  }
  if(window.IDEA_TELARANA_PODCAST_150){
   mergePodcastStudy(window.IDEA_TELARANA_PODCAST_150);
+ }
+ // Datos adicionales acreditados por documentos externos, no por transcripcion del podcast.
+ if(window.IDEA_TELARANA_FRATTINI_EXTERNAL){
+  mergePodcastStudy(window.IDEA_TELARANA_FRATTINI_EXTERNAL);
  }
  if(window.IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO){
   mergeNewEpisode(window.IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO);
@@ -657,7 +662,7 @@ async function hydrateTimelineConnections(){
   if(!response.ok)return;
   var doc=await response.json();
   timelineHitos=Array.isArray(doc.items)?doc.items.filter(function(e){
-   return e&&/^study-v[12]-[a-z0-9-]+$/.test(e.id||"")&&
+   return e&&/^study-(?:v\d+|vf\d+)-[a-z0-9-]+$/.test(e.id||"")&&
     e.investigation&&e.investigation.status==="hecho_documentado"&&
     Array.isArray(e.investigation.relatedTelarana);
   }):[];
