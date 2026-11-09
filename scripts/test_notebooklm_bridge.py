@@ -145,6 +145,58 @@ class BridgeTests(unittest.TestCase):
             self.assertEqual(bridge.command(["nlm", "notebook", "list"]), "ok")
             self.assertEqual(runner.call_args.args[0][0], str(local_nlm))
 
+    def test_exclusive_lock_prevents_simultaneous_pollers(self):
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(bridge, "LOCK_PATH", Path(tmp) / "state" / "bridge.lock"):
+            with bridge.exclusive_state_lock() as first:
+                self.assertTrue(first)
+                with bridge.exclusive_state_lock() as second:
+                    self.assertFalse(second)
+            with bridge.exclusive_state_lock() as third:
+                self.assertTrue(third)
+
+    def test_submission_comments_require_trusted_account(self):
+        good = {"user": {"login": bridge.OWNER},
+                "body": "Solicitud enviada a NotebookLM desde el Mac de IDEA LAB. Generación en curso."}
+        bad = {"user": {"login": "other"},
+               "body": "Solicitud enviada a NotebookLM desde el Mac de IDEA LAB."}
+        with patch.object(bridge, "command", return_value=json.dumps([bad, good])):
+            self.assertTrue(bridge.submitted_comment_exists("67"))
+        with patch.object(bridge, "command", return_value=json.dumps([bad])):
+            self.assertFalse(bridge.submitted_comment_exists("67"))
+        with patch.object(bridge, "command", return_value="{}"):
+            with self.assertRaises(RuntimeError):
+                bridge.submitted_comment_exists("67")
+
+    def test_remote_comment_without_state_quarantines_not_retries(self):
+        state = {}
+        req = request(vid=VIDEO)
+        cfg = {"books": {BOOK: {"episodes": {VIDEO: {
+            "notebook": "private-notebook", "sources": ["private-source"]}}}}}
+        with patch.object(bridge, "select_mapping", return_value=("private-notebook", ["private-source"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=True), \
+             patch.object(bridge, "save_json") as save:
+            bridge.quarantine_existing_request("67", req, state, cfg)
+            save.assert_called_once()
+            self.assertEqual(state["67"]["phase"], "deferred")
+            self.assertEqual(state["67"]["reason"], "remote_submission_without_local_state")
+            self.assertEqual(state["67"]["notebook"], "private-notebook")
+        with patch.object(bridge, "select_mapping", return_value=("private-notebook", ["private-source"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=True), \
+             patch.object(bridge, "quarantine_existing_request") as quarantine, \
+             patch.object(bridge, "infographic_rows") as rows:
+            self.assertTrue(bridge.request_new("67", req, {}, cfg))
+            quarantine.assert_called_once()
+            rows.assert_not_called()
+
+    def test_quarantine_does_not_fabricate_unverified_remote_submission(self):
+        with patch.object(bridge, "select_mapping", return_value=("private-notebook", ["private-source"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "save_json") as save:
+            with self.assertRaises(ValueError):
+                bridge.quarantine_existing_request("67", request(vid=VIDEO), {}, {})
+            save.assert_not_called()
+
     def test_saved_config_is_user_only(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "private" / "config.json"
