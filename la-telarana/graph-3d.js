@@ -63,7 +63,10 @@ function make(options){
  }
  function color(hex,a){const v=parseInt(hex.slice(1),16);return "rgba("+((v>>16)&255)+","+((v>>8)&255)+","+(v&255)+","+a+")"}
  function visualRadius(p,emphasized=false){
-  return clip((emphasized?30:22)*p.scale,emphasized?7.5:4.3,emphasized?32:23);
+  // Vista general: densidad adaptativa. En pantallas estrechas, los nodos
+  // se representan como puntos pequeños y mantienen un área táctil amplia.
+  const density=clip(Math.min(w/1600,h/900),.36,1);
+  return clip((emphasized?30:22)*p.scale,emphasized?7.5:4.3,emphasized?32:23)*density;
  }
  function drawRegions(visible,pr){
   bandHits=[];
