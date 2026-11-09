@@ -179,6 +179,34 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "rv145-felipe-vi": {
       "lang": "es",
       "title": "Felipe VI de España"
+    },
+    "f04-antonio-perez": {
+      "lang": "es",
+      "title": "Antonio Pérez del Hierro"
+    },
+    "f04-felipe-ii": {
+      "lang": "es",
+      "title": "Felipe II de España"
+    },
+    "f04-lerma": {
+      "lang": "es",
+      "title": "Francisco de Sandoval y Rojas, I duque de Lerma"
+    },
+    "f04-felipe-iii": {
+      "lang": "es",
+      "title": "Felipe III de España"
+    },
+    "f04-maria-cristina": {
+      "lang": "es",
+      "title": "María Cristina de Borbón-Dos Sicilias"
+    },
+    "f04-fernando-munoz": {
+      "lang": "es",
+      "title": "Agustín Fernando Muñoz y Sánchez"
+    },
+    "f04-alejandro-lerroux": {
+      "lang": "es",
+      "title": "Alejandro Lerroux"
     }
   },
   "curated": {
@@ -365,6 +393,69 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.rtve.es/noticias/proclamacion-felipe-vi/biografia/",
       "sourceTitle": "RTVE · biografía histórica de Felipe VI",
       "also": "https://www.casareal.es/ES/FamiliaReal/ReyFelipe/Paginas/album_fotografico.aspx",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-margarita-torres": {
+      "text": "Margarita Cecilia Torres Sevilla, nacida en La Bañeza, es doctora en Historia Medieval por la Universidad de León (1997) y profesora titular de esa universidad, especializada en élites nobiliarias y el Reino de León. Su trayectoria y publicaciones pueden consultarse en el portal científico universitario. En el vídeo del 4 de abril de 2024 interviene como historiadora invitada y analiza casos históricos de corrupción política. Solo se dispone por ahora del índice de capítulos; no se atribuyen palabras ni interpretaciones literales de la investigadora.",
+      "source": "https://portalcientifico.unileon.es/investigadores/97202/detalle?lang=en",
+      "sourceTitle": "Universidad de León · perfil investigador",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-antonio-perez": {
+      "text": "Antonio Pérez del Hierro (hacia 1540–1611) fue secretario de Felipe II. Participó en la compleja vida política de la Monarquía y fue detenido junto a la princesa de Éboli en 1579. En 1590 escapó a Aragón, donde invocó las garantías del derecho foral, y su proceso se vinculó a los disturbios de 1591. El Archivo Histórico Nacional conserva testimonios y expedientes; las interpretaciones contrapuestas sobre el caso Escobedo, los motivos del rey y las conductas atribuidas a Pérez requieren una discusión documental específica.",
+      "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/45072",
+      "sourceTitle": "PARES · Archivo Histórico Nacional",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-felipe-ii": {
+      "text": "Felipe II (1527–1598), rey de la Monarquía Hispánica desde 1556, fue hijo de Carlos I y de Isabel de Portugal. Su reinado abarcó conflictos religiosos y militares europeos, la administración de las posesiones ultramarinas y tensiones entre los distintos ordenamientos jurídicos de sus reinos. El secretario Antonio Pérez desempeñó cargos importantes en su Corte y después cayó en desgracia. Los problemas políticos derivados de su detención y fuga deben distinguirse de atribuciones de culpabilidad histórica que no se desprenden por sí solas del episodio audiovisual.",
+      "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/45072",
+      "sourceTitle": "PARES · archivos de Antonio Pérez durante Felipe II",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-lerma": {
+      "text": "Francisco Gómez de Sandoval y Rojas (Tordesillas, hacia 1553 – Valladolid, 1625), primer duque de Lerma, fue valido de Felipe III y el hombre político más influyente de la Monarquía entre 1598 y 1618. Ejerció de intermediario entre el rey y los órganos de gobierno y situó personas de confianza en puestos importantes. El Archivo General de Simancas registra su compra de un palacio en Valladolid en diciembre de 1600, la mudanza de la Corte en enero de 1601 y ventas patrimoniales a la Corona ese diciembre. La secuencia es documental; las plusvalías y la interpretación como corrupción deben comprobarse con metodología histórica.",
+      "source": "https://historia-hispanica.rah.es/biografias/19721-francisco-gomez-de-sandoval-y-rojas",
+      "sourceTitle": "Real Academia de la Historia · biografía",
+      "also": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/ags/exposiciones-actividades/exposiciones-virtuales/palacio-real.html",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-felipe-iii": {
+      "text": "Felipe III (1578–1621) fue rey de la Monarquía Hispánica desde 1598. Su reinado se caracteriza en la historia política por el peso institucional del valimiento, especialmente el de Francisco de Sandoval y Rojas, duque de Lerma. La Corte se trasladó de Madrid a Valladolid entre 1601 y 1606, mientras se desarrollaron operaciones patrimoniales documentadas en el Archivo General de Simancas. El hecho de que el rey comprara inmuebles del valido en 1601 es histórico; una valoración de legalidad y beneficio corresponde a un análisis específico y no al mero parentesco o a una sospecha.",
+      "source": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/ags/exposiciones-actividades/exposiciones-virtuales/palacio-real.html",
+      "sourceTitle": "Ministerio de Cultura · Archivo General de Simancas",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-maria-cristina": {
+      "text": "María Cristina de Borbón-Dos Sicilias (1806–1878) fue reina consorte de Fernando VII y regente de España de 1833 a 1840 durante la minoría de Isabel II. Tras enviudar se casó con Fernando Muñoz, duque de Riánsares, y ambos desarrollaron intereses empresariales, financieros e inmobiliarios. Un estudio de Miguel Ángel López-Morell en la revista Ayer analiza sus negocios y la construcción de su patrimonio a partir de fuentes primarias. Los juicios historiográficos sobre corrupción no sustituyen sentencias y deben mantener su contexto institucional.",
+      "source": "https://www.congreso.es/es/cem/regmcris",
+      "sourceTitle": "Congreso de los Diputados · Regencia de María Cristina",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-fernando-munoz": {
+      "text": "Fernando Muñoz Sánchez (1808–1873), duque de Riánsares, fue esposo de María Cristina de Borbón-Dos Sicilias tras la muerte de Fernando VII. Su relación con la regente y las actividades mercantiles de la pareja influyeron en la economía política de la España decimonónica. La historiografía ha estudiado su patrimonio y sus inversiones, entre ellas negocios desarrollados a través de sociedades y redes de influencia. La existencia de dichas sociedades debe distinguirse de las valoraciones morales o judiciales sobre sus actuaciones.",
+      "source": "https://doi.org/10.55509/ayer/1099",
+      "sourceTitle": "Revista Ayer · estudio sobre patrimonio Borbón-Muñoz",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-daniel-strauss": {
+      "text": "Daniel Strauss fue el empresario neerlandés que promovió en España la ruleta Straperlo durante los años treinta del siglo XX. Sus gestiones para conseguir autorización de juego y sus posteriores denuncias originaron un escándalo en la Segunda República. El Congreso de los Diputados conserva el expediente de la comisión investigadora, incluidas alegaciones, contratos y dictámenes que permiten estudiar el caso a partir de pruebas parlamentarias contemporáneas. La versión del propio empresario debe distinguirse de las comprobaciones de los miembros de la comisión.",
+      "source": "https://www.congreso.es/es/cem/vidparl1933",
+      "sourceTitle": "Congreso de los Diputados · investigación del Straperlo",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "reviewedAt": "2026-11-09"
+    },
+    "f04-alejandro-lerroux": {
+      "text": "Alejandro Lerroux García (1864–1949) fue un político republicano español, fundador y dirigente del Partido Republicano Radical y presidente del Consejo de Ministros en distintas etapas de la Segunda República. En octubre de 1935 estalló el escándalo del Straperlo, que afectó a miembros de su entorno político y erosionó a su partido. La documentación del Congreso describe las distintas personas investigadas, por lo que no debe atribuirse por simple asociación a Lerroux cada soborno o gestión mencionada en el expediente.",
+      "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/52300/imprimir",
+      "sourceTitle": "PARES · Archivo de autoridad Alejandro Lerroux",
+      "also": "https://www.youtube.com/watch?v=DLgQ78xC-54",
       "reviewedAt": "2026-11-09"
     }
   }
