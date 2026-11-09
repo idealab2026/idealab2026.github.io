@@ -509,6 +509,41 @@ body.history-note-open .timeline-panel.is-maximized .history-minimap{
  .history-minimap-foot{font-size:.52rem}
  .history-mini-era{font-size:.49rem}
 }
+
+/* Wikipedia: ilustración verificada por artículo, con enlace de atribución.
+   En ningún caso mostramos una imagen inferida por semejanza de palabras. */
+.wiki-figure{
+ display:flex;flex-direction:column;align-items:stretch;gap:6px;
+ padding:8px;margin:1px 0 15px;
+ border:1px solid #3b566c;border-radius:8px;background:#102336;
+}
+.wiki-figure .wiki-lead-image{
+ display:block;max-width:100%;width:auto;max-height:260px;
+ object-fit:contain;margin:0 auto;border:0;border-radius:5px;
+ background:#102336;
+}
+.wiki-image-caption{
+ display:flex;justify-content:space-between;align-items:center;gap:5px 10px;
+ flex-wrap:wrap;font-size:.65rem;line-height:1.35;color:#b7cad9;
+}
+.wiki-image-caption .wiki-credit-link{font-size:.65rem}
+.wiki-image-empty{
+ display:flex;flex-direction:column;gap:7px;
+ border:1px dashed #597186;border-radius:8px;padding:12px;
+ margin:1px 0 15px;color:#b9cbdc;font-size:.76rem;line-height:1.55;
+}
+.wiki-suggestions{display:flex;flex-direction:column;gap:7px;margin:10px 0 17px}
+.wiki-suggestion{
+ display:block;padding:8px 11px;border:1px solid #3f6078;
+ border-radius:7px;background:#152f44;
+ color:#e6d0a1;text-decoration:none;overflow-wrap:anywhere;
+ font-size:.79rem;
+}
+.wiki-suggestion:hover{border-color:#ecc078;background:#233d50}
+.note-body>.wiki-section-title{font-family:Georgia,serif;margin:19px 0 9px;font-size:1rem}
+@media(max-width:1049px){
+ .wiki-figure .wiki-lead-image{max-height:185px}
+}
 </style></head>
 <body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
