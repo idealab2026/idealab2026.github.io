@@ -517,7 +517,8 @@ function wikiRenderImage(root,page,requestId,signal){
   if(credit){credit.remove();credit=null}
   if(p.file){
    credit=wikiExternalLink(caption,
-    "https://commons.wikimedia.org/wiki/File:"+encodeURIComponent(p.file.replace(/ /g,"_")),
+    (p.sourceKind==="pageimages"?"https://es.wikipedia.org/wiki/Archivo:":"https://commons.wikimedia.org/wiki/File:")+
+      encodeURIComponent(p.file.replace(/ /g,"_")),
     "Ver archivo, autoría y licencia ↗","wiki-credit-link");
   }
   photo.src=p.source;
