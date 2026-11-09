@@ -65,6 +65,36 @@ class MapCatalogTests(unittest.TestCase):
         self.assertEqual(m.candidate_sources("la-ola-que-viene", eps, src), {"aaaabbbbccc": "sourceid00001"})
         self.assertEqual(m.candidate_sources("la-ola-que-viene", eps, []), {})
 
+    def test_diagnostics_print_only_source_titles_not_identifiers(self):
+        from unittest.mock import patch
+        from io import StringIO
+        from contextlib import redirect_stdout
+        import notebooklm_map_catalog as mapper
+        notebooks = [{"id":"notebookid012345","title":"CULTURA - LIBROS - ESTO NO EXISTE"}]
+        sources = [{"id":"sourceid012345","title":"Parte II - La narrativa"}]
+        cfg = {"books":{"esto-no-existe":{"notebooks":{"libro":"notebookid012345"},
+               "episodes":{}}}}
+        def dispatch(argv, **kw):
+            if argv[:3] == ["nlm","notebook","list"]:
+                return json.dumps(notebooks)
+            if argv[:3] == ["nlm","source","list"]:
+                return json.dumps(sources)
+            return json.dumps([])
+        with patch.object(mapper, "check_identity"), \
+             patch.object(mapper, "command", side_effect=dispatch), \
+             patch.object(mapper, "private_config", return_value=cfg), \
+             patch.object(mapper, "save_json") as save:
+            capture = StringIO()
+            with redirect_stdout(capture):
+                mapper.run(False, diagnose_missing=True)
+            output = capture.getvalue()
+            self.assertIn("ya asociadas", output)
+            self.assertIn("VIDEOS SIN FUENTE VERIFICADA", output)
+            self.assertIn("Parte II - La narrativa", output)
+            self.assertNotIn("sourceid012345", output)
+            self.assertNotIn("notebookid012345", output)
+            save.assert_not_called()
+
     def test_catalog_has_all_eight_additional_books(self):
         self.assertEqual(len(CAT["books"]), 9)
         self.assertEqual(set(m.ALIASES), set(BOOKS) - {"conde-montecristo"})

@@ -144,7 +144,7 @@ def candidate_sources(slug: str, chapters: list[dict], sources: list[dict]):
     return targets
 
 
-def run(apply: bool):
+def run(apply: bool, diagnose_missing: bool = False):
     check_identity()
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     notebooks = records(command(["nlm", "notebook", "list", "--json"], timeout=120))
@@ -168,8 +168,21 @@ def run(apply: bool):
         candidates = candidate_sources(slug, book["chapters"], sources)
         existing = config.get("books", {}).get(slug, {}).get("episodes", {})
         safe_new = {vid: sid for vid, sid in candidates.items() if vid not in existing}
+        missing = [ep for ep in book["chapters"] if ep["id"] not in existing
+                   and ep["id"] not in candidates]
         print(f"{book['title']}: {len(book['chapters'])} vídeos | {len(sources)} fuentes | "
-              f"{len(candidates)} asociaciones inequívocas | {len(safe_new)} nuevas")
+              f"{len(candidates)} asociaciones inequívocas | {len(safe_new)} nuevas | "
+              f"{len(existing)} ya asociadas | {len(missing)} sin fuente verificada")
+        if diagnose_missing and missing:
+            print("  VIDEOS SIN FUENTE VERIFICADA (solo titulos, sin IDs):")
+            for ep in missing:
+                print("    -", str(ep["title"])[:115])
+            print("  TITULOS DE FUENTES DEL CUADERNO (solo en Terminal local):")
+            for src in sources:
+                title = source_title(src)
+                if title:
+                    key = chapter_key(slug, title, source=True)
+                    print("    -", title[:115], "|", str(key) if key else "no reconocible")
         mapped_books += 1
         if apply:
             rows = config.setdefault("books", {}).setdefault(slug, {"notebooks": {}, "episodes": {}})
@@ -192,12 +205,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--apply", action="store_true",
                         help="Guardar únicamente los emparejamientos con fuente única")
+    parser.add_argument("--diagnose-missing", action="store_true",
+                        help="Mostrar títulos de episodios sin asociación y los títulos de sus fuentes")
     args = parser.parse_args()
     with exclusive_state_lock() as locked:
         if not locked:
             print("Otro proceso está utilizando NotebookLM. Sin cambios.", file=sys.stderr)
             return 2
-        run(args.apply)
+        run(args.apply, args.diagnose_missing)
     return 0
 
 
