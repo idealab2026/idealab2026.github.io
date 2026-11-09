@@ -53,7 +53,7 @@
       "order": 2,
       "videoId": "qARZpON9_j0",
       "title": "Elecciones 2026: EL ESCÁNDALO QUE PODRÍA SACUDIR ESPAÑA",
-      "status": "contexto_externo_ampliado_pendiente_revision_integra",
+      "status": "revision_textual_integra_publicada_pendiente_minutajes_y_verificacion_exhaustiva",
       "sourceUrl": "https://www.youtube.com/watch?v=qARZpON9_j0",
       "publishedAt": "2026-10-12",
       "publicData": "podcast-coronel-elecciones-2026-preliminar.js",
@@ -63,18 +63,20 @@
       "novelRelationsMerged": 18,
       "existingEntityNotesEnriched": 9,
       "existingRelationsEnriched": 1,
-      "rawTranscriptAvailable": false,
+      "rawTranscriptAvailable": true,
       "verifiedMinuteReferences": 0,
       "reviewComplete": false,
-      "qualityNotes": "Fuente audiovisual: solo sinopsis editorial disponible para atribuciones, no transcripción íntegra ni minutajes. Verificados 5 acontecimientos contextuales con Moncloa/BOE y 3 biografías independientes. No cerrar hasta revisar los 94 min de audio y distinguir declaración literal, verificación, hipótesis y réplicas.",
+      "qualityNotes": "Los 15.484 términos aproximados y la secuencia textual han sido analizados. La transcripción es una línea sin separación por hablante y sin marcas temporales; no atribuir minutos ni presentar acusaciones como hechos. Faltan cotejo con audio, minutos localizados, contraste extendido sobre afirmaciones graves y referencias bibliográficas del libro.",
       "primaryOfficialSource": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
-      "timelineVerifiedEventsCommitted": 5,
+      "timelineVerifiedEventsCommitted": 7,
       "timelineEventIds": [
         "study-v2-ceuta-aviso-2026",
         "study-v2-ceuta-crisis-2026",
         "study-v2-ceuta-publicacion-2026",
         "study-v2-ceuta-seguridad-nacional-2026",
-        "study-v2-ceuta-plan-choque-2026"
+        "study-v2-ceuta-plan-choque-2026",
+        "study-v2-pegasus-revelacion-2022",
+        "study-v2-elecciones-convocatoria-2026"
       ],
       "biographiesContextualized": 3,
       "biographiesContextualizedIds": [
@@ -92,15 +94,38 @@
           "date": "2026-09-01",
           "event": "Plan de choque de 309 millones para Ceuta aprobado en Consejo de Ministros",
           "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/010926-rueda-prensa-ministros.aspx"
+        },
+        {
+          "date": "2022-05-02",
+          "event": "Anuncio público de Pegasus sobre Sánchez y Robles",
+          "url": "https://www.rtve.es/noticias/20220502/gobierno-anuncia-sanchez-robles-espiados-pegasus/2345960.shtml"
+        },
+        {
+          "date": "2026-10-05",
+          "event": "Convocatoria oficial de elecciones del 29N por Real Decreto 806/2026",
+          "url": "https://www.boe.es/eli/es/rd/2026/10/05/806"
         }
-      ]
+      ],
+      "transcriptProvenance": "Texto generado mediante nlm source content y aportado directamente por el usuario el 09/11/2026. No se sube el texto original al sitio público.",
+      "transcriptCharacters": 81232,
+      "transcriptWordsApprox": 15484,
+      "transcriptAnalyzedEntirety": true,
+      "transcriptAudioMatched": false,
+      "textualReviewComplete": true,
+      "transcriptReviewFile": "podcast-coronel-elecciones-2026-transcript-review.js",
+      "transcriptReviewNodes": 28,
+      "transcriptReviewEdges": 27,
+      "verifiedIndependentBiographies": 13,
+      "structuredClaims": 14,
+      "unsupportedDatedClaimsExcludedFromTimeline": 5,
+      "citationAnchorsNeedTimecoding": true
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 17,
+    "committedVerifiedEvents": 19,
     "fromReviewedSource": 5,
     "fromSourceInReview": 3,
     "publishedInPages": true,
@@ -117,7 +142,9 @@
         "study-v2-ceuta-crisis-2026",
         "study-v2-ceuta-publicacion-2026",
         "study-v2-ceuta-seguridad-nacional-2026",
-        "study-v2-ceuta-plan-choque-2026"
+        "study-v2-ceuta-plan-choque-2026",
+        "study-v2-pegasus-revelacion-2022",
+        "study-v2-elecciones-convocatoria-2026"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -292,7 +319,10 @@
         "status": "en_revision",
         "reviewComplete": false,
         "contextEvents": 5,
-        "biographiesContextualized": 3
+        "biographiesContextualized": 3,
+        "textualReviewComplete": true,
+        "transcriptAvailable": true,
+        "claimsAudited": 14
       },
       {
         "order": 3,
