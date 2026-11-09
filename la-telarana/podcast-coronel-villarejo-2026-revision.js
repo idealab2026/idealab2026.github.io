@@ -155,11 +155,15 @@ d.edges.forEach(function(e){
  var linked=blocks[a]||blocks[b];
  var focus=relationDetails[key]||relationDetails[reverse];
  if(!linked){
-  var related=d.edges.filter(function(x){return(x.a===e.a||x.b===e.a||x.a===e.b||x.b===e.b)&&x.id!==e.id});
-  var key2=related.map(function(x){return x.a.replace(/^cv26-/,"")}).concat(related.map(function(x){return x.b.replace(/^cv26-/,"") })).find(function(k){return blocks[k]});
-  linked=blocks[key2]||"La entrevista relaciona a estas dos entidades durante una exposición sobre instituciones, política o inteligencia; no aporta en este tramo una demostración documental independiente de todas sus referencias.";
+  // NO seleccionar una trama por vecindad del grafo: introduce falsos contextos.
+  // Para vínculos secundarios recurrir únicamente a las explicaciones de sus extremos.
+  var pa=(persons[a]||orgs[a]||"").split(". ").slice(0,2).join(". ");
+  var pb=(persons[b]||orgs[b]||"").split(". ").slice(0,2).join(". ");
+  linked="Alcance del primer elemento: "+(pa||"Mención secundaria de la entrevista")+
+   ". Alcance del segundo elemento: "+(pb||"Mención secundaria en la conversación")+
+   ". Esta relación está apoyada en el pasaje concreto que consta al principio de su ficha.";
  }
- var contextual=linked.split(". ").slice(0,3).join(". ");
+ var contextual=(blocks[a]||blocks[b])?linked.split(". ").slice(0,3).join(". "):linked;
  var evidence=e.confidence==="documentado"?
    "La vinculación descrita es institucional, biográfica o un hecho histórico susceptible de cotejo; esa conexión no convalida acusaciones adicionales.":
    e.confidence==="indicio"?
