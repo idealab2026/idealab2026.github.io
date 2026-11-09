@@ -1214,6 +1214,174 @@
         ],
         "methodologicalLimits": "El resultado de las primarias está probado. Las declaraciones sobre financiación irregular o influencias no quedan verificadas por ello."
       }
+    },
+    {
+      "id": "study-f11-constitucion-1931",
+      "y": 1931.9369863013699,
+      "t": "Las Cortes aprueban la Constitución de la Segunda República española",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 11 · contraste institucional",
+      "d": "La Constitución republicana fue aprobada el 9 de diciembre de 1931, tras varios meses de discusión parlamentaria. Incluyó garantías y derechos civiles y sociales. La afirmación de un entrevistado de que 'invitaba a la guerra civil' es una interpretación política, no un hecho jurídico ni una causalidad establecida.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1931-12-09",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 11,
+        "sourceTitle": "Investigación La Telaraña · fuente 11",
+        "sourceUrl": "https://www.youtube.com/watch?v=ifklD4aJXv8",
+        "confirmedBy": {
+          "label": "Congreso de los Diputados · tramitación Constitución de 1931",
+          "url": "https://www.congreso.es/es/cem/vidparl1931-7"
+        },
+        "relatedTelarana": [
+          "f11-1931",
+          "f11-azana"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f10-division-azul-1941",
+      "y": 1941.4794520547946,
+      "t": "Se organiza oficialmente la División Azul española",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 10 · contraste institucional",
+      "d": "La División Española de Voluntarios, conocida como División Azul, fue organizada el 25 de junio de 1941 para combatir junto al ejército alemán en la invasión de la Unión Soviética. El archivo del Ministerio de Cultura documenta fechas, mandos y composición. Se distingue este hecho del debate editorial sobre sus motivaciones y consecuencias.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1941-06-25",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 10,
+        "sourceTitle": "Investigación La Telaraña · fuente 10",
+        "sourceUrl": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
+        "confirmedBy": {
+          "label": "PARES · Dirección General de Patrimonio Cultural · División Azul",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/145056"
+        },
+        "relatedTelarana": [
+          "f10-division-azul",
+          "f10-franco"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f13-valquiria-1944",
+      "y": 1944.549180327869,
+      "t": "Fracasa el atentado del 20 de julio contra Adolf Hitler",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste institucional",
+      "d": "El 20 de julio de 1944 Claus Schenk Graf von Stauffenberg y un grupo de conspiradores intentaron matar a Hitler mediante una bomba, con la esperanza de derribar el régimen nazi. La operación fracasó y se desencadenó represión contra los participantes. Este episodio está documentado en los archivos federales alemanes.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1944-07-20",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "Investigación La Telaraña · fuente 13",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "Bundesarchiv · Attentat auf Adolf Hitler · 20 Juli 1944",
+          "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/attentat-auf-adolf-hitler/"
+        },
+        "relatedTelarana": [
+          "f13-valquiria",
+          "f13-hitler"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f14-11s-2001",
+      "y": 2001.6931506849314,
+      "t": "Atentados terroristas del 11 de septiembre en Estados Unidos",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 14 · contraste institucional",
+      "d": "El 11 de septiembre de 2001 cuatro aviones fueron secuestrados por miembros de Al Qaeda. A las 8:46:40, el vuelo American Airlines 11 se estrelló contra la torre norte del World Trade Center; a las 9:03, el vuelo 175 impactó en la torre sur. La Comisión Nacional de Investigación documentó la cronología. No equivale a avalar hipótesis no probadas sobre participación estatal.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "2001-09-11",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 14,
+        "sourceTitle": "Investigación La Telaraña · fuente 14",
+        "sourceUrl": "https://www.youtube.com/watch?v=iPwbiY1F3Rg",
+        "confirmedBy": {
+          "label": "9/11 Commission · The 9/11 Commission Report",
+          "url": "https://9-11commission.gov/report/911Report_Ch9.htm"
+        },
+        "relatedTelarana": [
+          "f14-sept11",
+          "f14-wtc",
+          "f14-alqaeda"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f19-china-omc-2001",
+      "y": 2001.9424657534246,
+      "t": "China se convierte en el miembro 143 de la Organización Mundial del Comercio",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 19 · contraste institucional",
+      "d": "China ingresó oficialmente en la OMC el 11 de diciembre de 2001. Es un hecho económico institucional contrastado. La comparación del impacto global de este acontecimiento con el 11-S, realizada en la fuente 19, es un juicio analítico y no un dato verificable por sí solo.",
+      "g": [
+        "América del Norte"
+      ],
+      "investigation": {
+        "date": "2001-12-11",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 19,
+        "sourceTitle": "Investigación La Telaraña · fuente 19",
+        "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+        "confirmedBy": {
+          "label": "Organización Mundial del Comercio · ficha de adhesión de China",
+          "url": "https://www.wto.org/english/thewto_e/acc_e/a1_chine_e.htm"
+        },
+        "relatedTelarana": [
+          "f19-china",
+          "f19-omc"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f25-bis-1930",
+      "y": 1930.372602739726,
+      "t": "Abre sus puertas en Basilea el Banco de Pagos Internacionales",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 25 · contraste institucional",
+      "d": "El Banco de Pagos Internacionales (BIS) comenzó a operar el 17 de mayo de 1930 en Basilea. Su origen estuvo vinculado a las reparaciones de la Primera Guerra Mundial y evolucionó como foro de colaboración de bancos centrales. Su existencia y funciones se documentan institucionalmente; el calificativo de mando clandestino mundial no queda acreditado.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1930-05-17",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 25,
+        "sourceTitle": "Investigación La Telaraña · fuente 25",
+        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
+        "confirmedBy": {
+          "label": "BIS · historia institucional del Banco de Pagos Internacionales",
+          "url": "https://www.bis.org/about/history/overview"
+        },
+        "relatedTelarana": [
+          "f25-bis"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
     }
   ]
 }
