@@ -199,9 +199,23 @@ body.graph-expanded{overflow:hidden}
 .inspector .timeline-connection strong{font-size:.82rem;line-height:1.4}
 .inspector .timeline-connection:hover{border-color:#d6af73;color:#fff}
 
+
+/* Resultados visibles: no ocultar una búsqueda sin coincidencias en el orbe */
+.search-results{display:block;margin:-3px 0 14px;background:#17232e;border:1px solid #3d5163;border-radius:12px;padding:12px 14px;color:#e7eef7}
+.search-results-head{display:flex;gap:9px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:9px;font-size:.78rem;font-weight:750;color:#dfbc8a}
+.search-results-head small{font-size:.72rem;color:#a5b8c9;font-weight:500}
+.search-results-list{display:flex;gap:8px;flex-wrap:wrap}
+.search-result{display:flex;align-items:center;gap:9px;min-height:47px;background:#223342;border:1px solid #455e73;border-radius:9px;color:#edf5fc;min-width:170px;max-width:min(320px,100%);padding:7px 11px;text-align:left;cursor:pointer}
+.search-result:hover,.search-result:focus-visible,.search-result.is-selected{border-color:#e3aa69;background:#334150}
+.search-result-name{font-weight:750;font-size:.83rem}.search-result-sub{display:block;margin-top:3px;color:#afc3d5;font-weight:400;font-size:.69rem}
+.search-result-badge{width:29px;height:29px;border-radius:100%;display:grid;place-items:center;background:#394c5d;color:#ecc88e;font-family:Georgia,serif;font-size:1.1rem;flex-shrink:0}
+.search-results-empty{font-size:.8rem;color:#b9c9d6}
+@media(max-width:600px){.search-result{min-width:calc(50% - 4px);flex:1}.search-results{padding:10px}}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
+<div id="search-results" class="search-results hidden" role="region" aria-label="Resultados de la búsqueda" aria-live="polite"></div>
 <div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Orbe 3D · gira arrastrando · pellizca para ampliar nodos y fotografías</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia y nazismo</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="motion3d" aria-pressed="true" title="Pausar o reanudar la rotación suave">⏸ Orbe</button><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
 <aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
 
@@ -220,26 +234,26 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-wild-253-villarejo.js?v=20261109-source06-full-transcript"></script>
 <script src="./podcast-wild-312-chicote.js?v=20261109-source07-1"></script>
 <script src="./podcast-vaquero-67-villarejo.js?v=20261109-source08-1"></script>
-<script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261109-f18-1"></script>
-<script src="./fuente-21-orden-mundial-editorial.js?v=20261109-f21-1"></script>
-<script src="./fuente-09-villarejo-revision.js?v=20261110-f09-1"></script>
-<script src="./fuente-10-revision-inicial.js?v=20261110-f10-1"></script>
-<script src="./fuente-11-revision-inicial.js?v=20261110-f11-1"></script>
-<script src="./fuente-12-revision-inicial.js?v=20261110-f12-1"></script>
-<script src="./fuente-13-revision-inicial.js?v=20261110-f13-1"></script>
-<script src="./fuente-14-revision-inicial.js?v=20261110-f14-1"></script>
-<script src="./fuente-16-revision-inicial.js?v=20261110-f16-1"></script>
-<script src="./fuente-17-revision-inicial.js?v=20261110-f17-1"></script>
-<script src="./fuente-19-revision-inicial.js?v=20261110-f19-1"></script>
-<script src="./fuente-20-revision-inicial.js?v=20261110-f20-1"></script>
-<script src="./fuente-22-revision-inicial.js?v=20261110-f22-1"></script>
-<script src="./fuente-23-revision-inicial.js?v=20261110-f23-1"></script>
-<script src="./fuente-24-revision-inicial.js?v=20261110-f24-1"></script>
-<script src="./fuente-25-revision-inicial.js?v=20261110-f25-1"></script>
-<script src="./photo-catalog.js?v=20261109-source08-1"></script>
-<script src="./person-biographies.js?v=20261109-source08-bios"></script>
+<script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-21-orden-mundial-editorial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-09-villarejo-revision.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-10-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-11-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-12-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-13-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-14-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-16-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-17-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-19-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-20-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-22-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-23-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-24-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./fuente-25-revision-inicial.js?v=20261110-search-centre-2"></script>
+<script src="./photo-catalog.js?v=20261110-search-centre-2"></script>
+<script src="./person-biographies.js?v=20261110-search-centre-2"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
-<script src="./graph-3d.js?v=20261109-orbe2-zoom"></script>
+<script src="./graph-3d.js?v=20261110-search-centre-2"></script>
 <script>
 (function(){
 "use strict";
@@ -471,7 +485,50 @@ async function hydrateWikipediaPhotos(){
 function getNode(id){return data.nodes.find(function(n){return n.id===id})}
 function pointPos(n){return{x:Number(n.x)||150,y:Number(n.y)||150}}
 function setView(){var g=view==="graph";$("network").classList.toggle("hidden",!g||dimensionMode==="3d");$("stage3d").classList.toggle("hidden",!g||dimensionMode!=="3d");$("gallery").classList.toggle("hidden",g);$("zoom").classList.toggle("hidden",!g);$("legend").classList.toggle("hidden",!g);$("three-toolbar").classList.toggle("hidden",!g);$("theme3d").disabled=dimensionMode!=="3d";$("mode").textContent=g?"Ver panel de fotografías":"Ver mapa relacional";$("view-title").textContent=g?(dimensionMode==="3d"?"Mapa relacional 3D":"Mapa relacional 2D"):"Panel fotográfico";$("dimension-toggle").textContent=dimensionMode==="3d"?"Vista 2D":"Vista 3D"}
-function render(){var q=$("search").value.toLocaleLowerCase("es").trim();$("count-nodes").textContent=data.nodes.length;$("count-edges").textContent=data.edges.length;$("count-evidence").textContent=data.edges.filter(function(e){return e.confidence==="documentado"}).length;setView();if(dimensionMode==="3d"&&graph3d){graph3d.setData(data.nodes,data.edges);graph3d.setSelection(selection);graph3d.setQuery(q);graph3d.setEdgeMode(edgeMode)}else if(dimensionMode==="2d")renderGraph(q);renderGallery(q)}
+// Priorizar nombres; una mención en notas no debe eclipsar a la persona buscada.
+function searchCandidates(q){
+ var key=normalizeEntityName(q);if(!key)return[];
+ var names=data.nodes.filter(function(n){return normalizeEntityName(n.name).includes(key)});
+ if(names.length)return names.sort(function(a,b){
+  var ak=normalizeEntityName(a.name),bk=normalizeEntityName(b.name);
+  return Number(bk===key)-Number(ak===key)||Number(bk.startsWith(key))-Number(ak.startsWith(key))||a.name.localeCompare(b.name,"es");
+ });
+ return data.nodes.filter(function(n){return normalizeEntityName((n.subtitle||"")+" "+(n.note||"")).includes(key)}).slice(0,30);
+}
+function searchNeighbourhood(q){
+ if(!q)return null;
+ var ids=new Set(searchCandidates(q).map(function(n){return n.id}));
+ data.edges.forEach(function(e){if(ids.has(e.a)||ids.has(e.b)){ids.add(e.a);ids.add(e.b)}});
+ return ids
+}
+function focusOnSearchEntity(n){
+ if(!n)return;
+ selection={kind:"node",id:n.id};
+ inspect();render();
+ if(view==="graph"){
+  if(dimensionMode==="3d"&&graph3d&&graph3d.focusNode)graph3d.focusNode(n.id);
+  else if(dimensionMode==="2d"){
+   cam.s=Math.max(.8,Math.min(2,cam.s));cam.x=550-(Number(n.x||0)+CARD_W/2)*cam.s;cam.y=325-(Number(n.y||0)+CARD_H/2)*cam.s;renderGraph($("search").value.trim().toLocaleLowerCase("es"));
+  }
+ }
+}
+function renderSearchResults(q){
+ var box=$("search-results");box.replaceChildren();box.classList.toggle("hidden",!q);if(!q)return;
+ var matches=searchCandidates(q),head=N("div",null,"search-results-head"),title=N("span",matches.length+" resultado"+(matches.length===1?"":"s")+" para «"+q+"»");
+ head.append(title);head.append(N("small",matches.length?"Selecciona una entidad para centrar el mapa":"Comprueba la búsqueda o actualiza la página"));
+ box.append(head);
+ if(!matches.length){box.append(N("p","No existe una coincidencia en los datos cargados. Comprueba que utilizas la versión actualizada.","search-results-empty"));return}
+ var cards=N("div",null,"search-results-list");
+ matches.slice(0,12).forEach(function(n){var button=N("button",null,"search-result"+(selection&&selection.kind==="node"&&selection.id===n.id?" is-selected":""));
+  button.type="button";
+  button.append(N("span",(n.name||"?").charAt(0),"search-result-badge"));
+  var wrap=N("span"),name=N("span",n.name,"search-result-name"),sub=N("span",n.subtitle||n.kind||"Entidad","search-result-sub");
+  wrap.append(name,sub);button.append(wrap);button.addEventListener("click",function(){focusOnSearchEntity(n)});cards.append(button);
+ });
+ box.append(cards);
+ if(matches.length>12)box.append(N("small","Mostrando las 12 primeras coincidencias. Escribe más letras para afinar.","search-results-empty"));
+}
+function render(){var q=$("search").value.toLocaleLowerCase("es").trim();$("count-nodes").textContent=data.nodes.length;$("count-edges").textContent=data.edges.length;$("count-evidence").textContent=data.edges.filter(function(e){return e.confidence==="documentado"}).length;setView();renderSearchResults(q);if(dimensionMode==="3d"&&graph3d){graph3d.setData(data.nodes,data.edges);graph3d.setSelection(selection);graph3d.setQuery(q);graph3d.setEdgeMode(edgeMode)}else if(dimensionMode==="2d")renderGraph(q);if(view!=="graph")renderGallery(q)}
 function transform(){return "translate("+cam.x+" "+cam.y+") scale("+cam.s+")"}
 function wrapGraphText(value,maxChars,maxLines){
  var words=String(value||"").trim().split(/\s+/).filter(Boolean),lines=[],current="";
@@ -522,7 +579,7 @@ function refreshEdgeFocus(){
 }
 function renderGraph(q){
  var g=$("camera");g.replaceChildren();g.setAttribute("transform",transform());
- var filtered=new Set(data.nodes.filter(function(n){return !q||(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLocaleLowerCase("es").includes(q)}).map(function(n){return n.id}));
+ var filtered=searchNeighbourhood(q)||new Set(data.nodes.map(function(n){return n.id}));
  data.edges.forEach(function(e){
   var a=getNode(e.a),b=getNode(e.b);if(!a||!b||!filtered.has(a.id)||!filtered.has(b.id))return;
   var p=nodeAnchor(a,b),d="M "+p.x1+" "+p.y1+" L "+p.x2+" "+p.y2;
@@ -797,7 +854,15 @@ $("motion3d").addEventListener("click",function(){
  if(!graph3d)return;
  graph3d.setMotion(!graph3d.isMotionEnabled());updateMotionButton();
 });
-$("search").addEventListener("input",render);
+$("search").addEventListener("input",function(){
+ var q=$("search").value.trim(),matches=searchCandidates(q);
+ // Si existe un único nombre inequívoco, enseñar su ficha sin clic adicional.
+ if(q.length>=4&&matches.length===1&&normalizeEntityName(matches[0].name).includes(normalizeEntityName(q))&&(!selection||selection.id!==matches[0].id)){
+  focusOnSearchEntity(matches[0]);return;
+ }
+ render();
+});
+$("search").addEventListener("keydown",function(e){if(e.key==="Enter"){var matches=searchCandidates($("search").value.trim());if(matches.length){e.preventDefault();focusOnSearchEntity(matches[0])}}});
 function svgUnitsPerPixel(){
  var svg=$("network"),rect=svg.getBoundingClientRect();
  return 1/Math.max(.001,Math.min(rect.width/1100,rect.height/650));
@@ -1091,12 +1156,12 @@ if(window.IdeaLabGraph3D){
 }
 // Permitir abrir desde un acontecimiento fechado de Línea de la Historia.
 // La consulta debe coincidir exactamente con un identificador publicado.
-var relatedEntity=null;
-try{relatedEntity=new URLSearchParams(window.location.search).get("entidad")}catch(e){}
-if(relatedEntity&&getNode(relatedEntity)){
- selection={kind:"node",id:relatedEntity};
-}
-render();if(graph3d){graph3d.fit();updateMotionButton()}
+var relatedEntity=null,initialSearch=null;
+try{var queryParams=new URLSearchParams(window.location.search);relatedEntity=queryParams.get("entidad");initialSearch=queryParams.get("buscar")}catch(e){}
+if(initialSearch){$("search").value=initialSearch}
+if(relatedEntity&&getNode(relatedEntity)){selection={kind:"node",id:relatedEntity}}
+else if(initialSearch){var initialMatches=searchCandidates(initialSearch);if(initialMatches.length===1)selection={kind:"node",id:initialMatches[0].id}}
+render();if(graph3d){graph3d.fit();updateMotionButton();if(selection&&selection.kind==="node"&&graph3d.focusNode)graph3d.focusNode(selection.id)}
 if(selection)inspect();
 hydrateWikipediaPhotos();
 hydrateTimelineConnections();
