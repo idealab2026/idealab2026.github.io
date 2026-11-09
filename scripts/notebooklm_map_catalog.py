@@ -106,6 +106,9 @@ def chapter_key(slug: str, title: str, *, source: bool = False):
         elif source:
             # Real NotebookLM PDFs are named "I - ... PARTE II.pdf", not
             # "Cap I". Only a leading roman numeral I–VI is acceptable.
+            # Dos numerales consecutivos (p.ej. "IV V - DOCUMENTO") son ambiguos.
+            if re.match(r"^(?:vi|iv|v|iii|ii|i)\s+(?:vi|iv|v|iii|ii|i)\b", raw):
+                return None
             initial = re.match(r"^(vi|iv|v|iii|ii|i)\s+", raw)
             if not initial:
                 return None
