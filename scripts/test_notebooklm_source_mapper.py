@@ -107,7 +107,8 @@ class EpisodeMappingTests(unittest.TestCase):
     def test_gaps_and_duplicates_in_current_catalog(self):
         spans=[m.chapter_interval(x["title"]) for x in MONTE["chapters"]]
         recorded=[n for span in spans if span for n in span]
-        self.assertNotIn(31,recorded)
+        # El catálogo incorpora ahora el capítulo 31; el hueco histórico quedó resuelto.
+        self.assertIn(31,recorded)
         self.assertNotIn(52,recorded)
         self.assertEqual(recorded.count(34),2)
 
