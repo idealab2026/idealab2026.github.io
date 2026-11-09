@@ -482,73 +482,117 @@ function wikiAppendText(container,raw){
  });
  flush();
 }
-function wikiRenderArticle(d,root,page){
+
+function wikiImageNotice(root,term){
+ if(root.querySelector&&root.querySelector(".wiki-image-empty"))return;
+ var notice=el("div",null,"wiki-image-empty");
+ notice.append(el("span","Wikipedia no dispone de una imagen libre identificada para esta entrada."));
+ wikiExternalLink(notice,
+  "https://commons.wikimedia.org/w/index.php?search="+encodeURIComponent(term)+"&title=Special:MediaSearch&type=image",
+  "Buscar imágenes en Wikimedia Commons ↗","wiki-credit-link");
+ root.append(notice);
+}
+function wikiRenderImage(root,page,requestId,signal){
+ var image=page._resolvedImage||wikiPicture(page);
+ if(!image){wikiImageNotice(root,page.title);return}
+ var fig=el("figure",null,"wiki-figure");
+ var photo=el("img",null,"wiki-lead-image");
+ photo.alt="Imagen asociada al artículo de Wikipedia: "+page.title;
+ photo.loading="lazy";photo.decoding="async";photo.referrerPolicy="no-referrer";
+ var caption=el("figcaption",null,"wiki-image-caption");
+ caption.append(el("span","Imagen: Wikimedia Commons"));
+ var credit=null;
+ function setImage(p){
+  if(credit){credit.remove();credit=null}
+  if(p.file){
+   credit=wikiExternalLink(caption,
+    "https://commons.wikimedia.org/wiki/File:"+encodeURIComponent(p.file.replace(/ /g,"_")),
+    "Ver archivo, autoría y licencia ↗","wiki-credit-link");
+  }
+  photo.src=p.source;
+ }
+ photo.onerror=function(){
+  if(page._imageFallbackAttempted){fig.remove();wikiImageNotice(root,page.title);return}
+  page._imageFallbackAttempted=true;
+  wikiFetchWikidataImage(page,signal).then(function(p){
+   if(requestId!==wikiRequestVersion||$("note-layer").classList.contains("hide"))return;
+   if(p&&p.source!==photo.src){page._resolvedImage=p;setImage(p)}
+   else{fig.remove();wikiImageNotice(root,page.title)}
+  }).catch(function(err){
+   if(err.name==="AbortError"||requestId!==wikiRequestVersion)return;
+   fig.remove();wikiImageNotice(root,page.title);
+  });
+ };
+ fig.append(photo,caption);root.append(fig);
+ setImage(image);
+}
+function wikiRenderArticle(d,root,page,requestId,signal){
  root.replaceChildren();
  $("note-kicker").textContent=d.c+" · Wikipedia";
  $("note-title").textContent=String(page.title||wikipediaSearchName(d));
  root.append(el("div",wikiDateLine(d),"note-date"));
  if(d.c==="Eras geológicas"){
-  var dating=el("p","Fechas aproximadas actualizadas según la Comisión Internacional de Estratigrafía (versión 2026/06).","source-note");
-  wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Consultar la escala geológica oficial ↗","wiki-credit-link");
+  var dating=el("p","Fechas aproximadas según la Comisión Internacional de Estratigrafía.","source-note");
+  wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Escala geológica oficial ↗","wiki-credit-link");
   root.append(dating);
  }
- var figure=page.thumbnail&&page.thumbnail.source;
- if(typeof figure==="string"&&/^https:\/\/upload\.wikimedia\.org\//i.test(figure)){
-  var photo=el("img",null,"wiki-lead-image");
-  photo.src=figure;photo.alt="Imagen del artículo "+page.title;photo.loading="lazy";
-  photo.referrerPolicy="no-referrer";
-  photo.onerror=function(){photo.remove()};
-  root.append(photo);
-  if(typeof page.pageimage==="string"&&page.pageimage.length<300){
-   var credit=el("p",null,"wiki-image-credit");
-   wikiExternalLink(credit,"https://commons.wikimedia.org/wiki/File:"+encodeURIComponent(page.pageimage.replace(/ /g,"_")),"Autoría y licencia de la imagen ↗","wiki-credit-link");
-   root.append(credit);
-  }
- }
+ // The lead image must belong to the resolved article, not an image-search guess.
+ wikiRenderImage(root,page,requestId,signal);
  var text=el("article",null,"wiki-article");
  wikiAppendText(text,page.extract);
  root.append(text);
- var actualURL=wikiArticleURL(page.title);
  var links=el("div",null,"wiki-actions");
- wikiExternalLink(links,actualURL,"Abrir artículo original ↗");
+ wikiExternalLink(links,wikiArticleURL(page.title),"Abrir artículo original ↗");
  root.append(links);
  wikiFooter(root,page.title);
- if(d.isTraditional)root.append(el("p","Las fechas bíblicas de la cronología proceden del archivo original y no constituyen dataciones históricas demostradas.","note-warning"));
+ if(d.isTraditional)root.append(el("p","Las fechas bíblicas del Excel no son dataciones históricas demostradas.","note-warning"));
 }
-function wikiFallback(d,root,term,reason){
+function wikiFallback(d,root,term,reason,suggestions){
  if($("note-layer").classList.contains("hide"))return;
- $("note-kicker").textContent=d.c+" · Wikipedia";
+ $("note-kicker").textContent=d.c+" · búsqueda";
  $("note-title").textContent=displayName(d);
  root.replaceChildren();
  root.append(el("div",wikiDateLine(d),"note-date"));
- root.append(el("p",reason||"No se ha encontrado un artículo de Wikipedia suficientemente coincidente con este registro.","wiki-error"));
- if(d.d)root.append(el("p","Nota original: "+d.d,"source-note"));
- wikiExternalLink(root,wikiSearchURL(term),"Buscar este registro en Wikipedia ↗");
+ var message=String(reason||"No se ha encontrado un artículo suficientemente coincidente.");
+ root.append(el("p",message,"wiki-error"));
+ if(d.d)root.append(el("p","Información del archivo: "+d.d,"source-note"));
+ if(Array.isArray(suggestions)&&suggestions.length){
+  root.append(el("h3","Posibles artículos relacionados","wiki-section-title"));
+  var list=el("div",null,"wiki-suggestions");
+  suggestions.slice(0,5).forEach(function(title){
+   wikiExternalLink(list,wikiArticleURL(title),title+" ↗","wiki-suggestion");
+  });
+  root.append(list);
+ }
+ wikiExternalLink(root,wikiSearchURL(term),"Buscar en Wikipedia ↗");
 }
 async function wikiLoadArticle(d,root,term,requestId,signal){
- var cacheKey=d.w||term;
+ var cacheKey=d.w||d.id||term;
  try{
   var page=wikiCache.get(cacheKey);
   if(!page){
-   var title=null;
-   if(typeof d.w==="string"&&/^https:\/\/es\.wikipedia\.org\/wiki\/[^?# ]+$/i.test(d.w)){
-    title=decodeURIComponent(d.w.split("/wiki/")[1]).replace(/_/g," ");
-   }else{
-    var results=await wikiAPI({action:"query",list:"search",srsearch:term,srnamespace:0,srlimit:6,srprop:"",utf8:1},signal);
-    title=wikiMatchTitle(d,results.query&&results.query.search,term);
+   var result=await wikiFindArticle(d,signal);
+   if(!result.page){
+    if(requestId!==wikiRequestVersion)return;
+    var reason=result.kind==="composite"?
+     "Este registro incluye varios acontecimientos u obras: no sería correcto atribuirle un solo artículo.":
+     "No se ha identificado de forma fiable un artículo único. Puedes consultar las páginas relacionadas.";
+    wikiFallback(d,root,result.term||term,reason,result.suggestions||[]);
+    return;
    }
-   if(!title)throw Error("No se ha encontrado una coincidencia fiable. Para evitar atribuir un artículo incorrecto, utiliza la búsqueda en Wikipedia.");
-   var details=await wikiAPI({action:"query",prop:"extracts|pageimages",titles:title,redirects:1,explaintext:1,exsectionformat:"wiki",piprop:"thumbnail|name",pithumbsize:600},signal);
-   page=details.query&&details.query.pages&&details.query.pages[0];
-   if(!page||page.missing||!page.extract||!String(page.extract).trim())throw Error("No hay texto disponible de este artículo mediante la API de Wikipedia.");
-   if(wikiCache.size>=50)wikiCache.delete(wikiCache.keys().next().value);
+   page=result.page;
+   if(!wikiPicture(page)){
+    try{page._resolvedImage=await wikiFetchWikidataImage(page,signal)}
+    catch(error){if(error.name==="AbortError")throw error}
+   }
+   if(wikiCache.size>=80)wikiCache.delete(wikiCache.keys().next().value);
    wikiCache.set(cacheKey,page);
   }
   if(requestId!==wikiRequestVersion||$("note-layer").classList.contains("hide"))return;
-  wikiRenderArticle(d,root,page);
+  wikiRenderArticle(d,root,page,requestId,signal);
  }catch(err){
   if(requestId!==wikiRequestVersion||err.name==="AbortError")return;
-  wikiFallback(d,root,term,"No se ha podido mostrar el artículo: "+err.message);
+  wikiFallback(d,root,term,"Wikipedia no ha podido responder correctamente: "+err.message);
  }
 }
 function showNote(d){
