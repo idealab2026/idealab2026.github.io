@@ -507,3 +507,99 @@ Object.assign(window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS, {
     "title": "Ursula von der Leyen"
   }
 });
+
+/* Fuentes 18 y 21: páginas de retrato a consultar, no imágenes visualmente confirmadas. */
+Object.assign(window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS, {
+  "f18-lorenzo": {
+    "lang": "es",
+    "title": "Lorenzo Ramírez"
+  },
+  "f18-trump": {
+    "lang": "es",
+    "title": "Donald Trump"
+  },
+  "f18-netanyahu": {
+    "lang": "en",
+    "title": "Benjamin Netanyahu"
+  },
+  "f18-gates": {
+    "lang": "en",
+    "title": "Bill Gates"
+  },
+  "f18-soros": {
+    "lang": "en",
+    "title": "George Soros"
+  },
+  "f18-thiel": {
+    "lang": "en",
+    "title": "Peter Thiel"
+  },
+  "f18-dimon": {
+    "lang": "en",
+    "title": "Jamie Dimon"
+  },
+  "f18-xi": {
+    "lang": "en",
+    "title": "Xi Jinping"
+  },
+  "f18-zelenski": {
+    "lang": "en",
+    "title": "Volodymyr Zelenskyy"
+  },
+  "f18-sanchez": {
+    "lang": "es",
+    "title": "Pedro Sánchez"
+  },
+  "f21-monnet": {
+    "lang": "en",
+    "title": "Jean Monnet"
+  },
+  "f21-schuman": {
+    "lang": "en",
+    "title": "Robert Schuman"
+  },
+  "f21-brzezinski": {
+    "lang": "en",
+    "title": "Zbigniew Brzezinski"
+  },
+  "f21-kissinger": {
+    "lang": "en",
+    "title": "Henry Kissinger"
+  },
+  "f21-luismi": {
+    "lang": "es",
+    "title": "Luis Miguel Ortiz"
+  },
+  "f21-lorenzo": {
+    "lang": "es",
+    "title": "Lorenzo Ramírez"
+  },
+  "f21-sam": {
+    "lang": "en",
+    "title": "Sam Altman"
+  },
+  "f21-merkel": {
+    "lang": "en",
+    "title": "Angela Merkel"
+  },
+  "f21-meloni": {
+    "lang": "en",
+    "title": "Giorgia Meloni"
+  },
+  "f21-lagarde": {
+    "lang": "en",
+    "title": "Christine Lagarde"
+  },
+  "f21-obama": {
+    "lang": "en",
+    "title": "Barack Obama"
+  },
+  "f21-biden": {
+    "lang": "en",
+    "title": "Joe Biden"
+  },
+  "f21-peter": {
+    "lang": "en",
+    "title": "Peter Thiel"
+  }
+});
