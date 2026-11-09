@@ -35,7 +35,10 @@
         "study-v1-11m-2004",
         "study-v1-kitchen-2013",
         "study-v1-tandem-2017"
-      ]
+      ],
+      "title": "Entrevista a José Manuel Villarejo",
+      "reviewComplete": true,
+      "completionCriteria": "Revisión documental publicada (versión v2 exhaustiva), con alegaciones separadas de hechos contrastados. La ficha puede recibir futuras rectificaciones sin perder su estado de procesamiento."
     }
   ],
   "nextSource": {
@@ -132,5 +135,12 @@
       "additionalContextEdges": 5,
       "verifiedBiographiesAdded": 5
     }
-  ]
+  ],
+  "catalogDisplay": {
+    "showAllSlots": true,
+    "checkRule": "El check verde se muestra únicamente si reviewComplete es true y status es revision_publicada",
+    "supplementalOutsideCount": true,
+    "unidentifiedSourceLabel": "Fuente sin identificar · inventario no disponible",
+    "sort": "source_order"
+  }
 }
