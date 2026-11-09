@@ -43,6 +43,48 @@ class EpisodeMappingTests(unittest.TestCase):
         self.assertIsNone(m.source_scope("51–100.pdf"))
         self.assertIsNone(m.source_scope("tomo-II.pdf"))
 
+    def test_descriptive_numbered_pdf_filename(self):
+        sample = {
+            1: "1. Marsella. La llegada.pdf",
+            2: "2. El padre y el hijo.pdf",
+            3: "3. Los catalans.pdf",
+            4: "4. Complot.pdf",
+            5: "5. El banquete de compromiso.pdf",
+            26: "26. La posada del Pont du Gard.pdf",
+            27: "27. El relato.pdf",
+            28: "28. Los registros de las prisiones.pdf",
+            29: "29. La casa Morrel.pdf",
+        }
+        for chapter, filename in sample.items():
+            with self.subTest(filename=filename):
+                self.assertEqual(m.source_scope(filename), (chapter,))
+        self.assertIsNone(m.source_scope("2026. Actualización.pdf"))
+        self.assertIsNone(m.source_scope("26. 27.pdf"))
+        self.assertIsNone(m.source_scope("26. Una nota.txt"))
+        self.assertIsNone(m.source_scope("montecristo 26. La posada.pdf"))
+        self.assertIsNone(m.source_scope("26. 2026.pdf"))
+
+    def test_real_montecristo_tomo_i_50_pdf_titles(self):
+        descriptions = {
+            1: "Marsella. La llegada", 2: "El padre y el hijo",
+            3: "Los catalans", 4: "Complot", 5: "El banquete de compromiso",
+            26: "La posada del Pont du Gard", 27: "El relato",
+            28: "Los registros de las prisiones", 29: "La casa Morrel",
+        }
+        videos = [c for c in MONTE["chapters"]
+                  if (m.chapter_interval(c["title"]) or (999,))[0] <= 50]
+        sources = [{
+            "id": f"sourceid{n:08d}",
+            "title": f"{n}. {descriptions[n]}.pdf" if n in descriptions else f"{n}.pdf",
+        } for n in range(1, 51)]
+        matches, unmatched = m.suggestions(videos, sources)
+        self.assertEqual(len(videos), 31)
+        self.assertEqual(len(matches), 31)
+        self.assertEqual(unmatched, [])
+        self.assertEqual(len(matches["KwKDcgK-NVc"]), 5)
+        self.assertEqual(matches["EeJqT5KlvPA"], ["sourceid00000026"])
+        self.assertEqual(matches["4fACchpbj-w"], ["sourceid00000029"])
+
     def test_real_montecristo_tomo_ii_filenames(self):
         videos = [c for c in MONTE["chapters"]
                   if (m.chapter_interval(c["title"]) or (0,))[0] >= 51]
