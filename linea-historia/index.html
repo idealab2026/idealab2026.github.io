@@ -568,8 +568,22 @@ body.history-note-open .timeline-panel.is-maximized .history-minimap{
 .note-body .research-limits{padding:13px;border-left:3px solid #c1a168;
  color:#e3ceb0;background:#292b32;font-size:.87rem;line-height:1.6}
 
+
+/* Historia · identidad de producto en la cabecera, reutilizando el favicon propio. */
+header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spacing:normal;min-width:0}
+.history-header-logo{display:block;width:44px;height:44px;object-fit:contain;flex:none;border-radius:10px}
+.history-header-label{display:flex;flex-direction:column;gap:4px;line-height:1.12}
+.history-header-label small{font-size:.63rem;font-weight:750;letter-spacing:.16em;color:var(--muted)}
+.history-header-label strong{font-size:.91rem;font-weight:900;letter-spacing:.14em;color:#f1f6fc}
+.history-header-label strong b{color:var(--gold)}
+@media(max-width:520px){
+ header .history-brand{gap:9px}
+ .history-header-logo{width:37px;height:37px}
+ .history-header-label small{font-size:.56rem}
+ .history-header-label strong{font-size:.79rem}
+}
 </style></head>
-<body><header><a class="brand" href="/">IDEA <b>LAB</b> / HISTORIA</a><a class="back" href="/">← Todos los proyectos</a></header>
+<body><header><a class="brand history-brand" href="/" aria-label="IDEA LAB · Todos los proyectos"><img class="history-header-logo" src="./favicon.png?v=20261109" alt="Logo de Línea de la Historia" width="44" height="44" decoding="async"><span class="history-header-label"><small>UN PRODUCTO DE</small><strong>IDEA <b>LAB</b></strong></span></a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
 <div class="stats"><div class="stat"><small>Registros disponibles</small><strong id="total">—</strong></div><div class="stat"><small>Visibles en la selección</small><strong id="visible">—</strong></div><div class="stat"><small>Categorías</small><strong id="categories">9</strong></div><div class="stat"><small>Origen</small><strong>Archivo histórico</strong></div></div>
 
@@ -612,7 +626,7 @@ body.history-note-open .timeline-panel.is-maximized .history-minimap{
   <span id="history-minimap-cursor" class="history-minimap-cursor" aria-hidden="true"></span>
  </div>
  <div class="history-minimap-foot">← 541 Ma <span>Arrastra · escala adaptada</span> 2026 →</div>
-</aside><div class="hint">Una sola cronología desde el tiempo profundo hasta hoy. Las franjas representan los años reales de inicio y fin y muestran su duración. Desde el 3000 a. C. se muestra cada año individualmente, incluso al cruzar de época. Los tiempos más antiguos usan escalas adaptadas. El filtro continental es provisional: solo clasifica referencias geográficas identificables; los casos dudosos quedan «Sin localizar».</div></section>
+</aside></section>
 <section id="columns-panel" class="panel columns-panel hide" role="tabpanel" aria-labelledby="tab-columns">
   <div class="figure-head"><strong>Elementos ordenados por antigüedad</strong><span class="muted" id="columns-summary">Orden cronológico: de más antiguo a más reciente, por categoría</span></div>
   <div id="columns-grid" class="columns-grid" role="region" aria-label="Registros cronológicos agrupados por categoría"></div>
@@ -620,7 +634,7 @@ body.history-note-open .timeline-panel.is-maximized .history-minimap{
 </section>
 
 
-<p class="notice">Este es un archivo de exploración, no una enciclopedia validada. Las fuentes históricas pueden contener erratas, imprecisiones o interpretaciones. Los registros personales guardados anteriormente en este navegador siguen visibles, pero la web funciona ahora en modo consulta.</p>
+
 <div id="note-layer" class="note-layer hide" role="presentation">
  <section id="note-dialog" class="note-sheet" role="dialog" aria-modal="false" aria-labelledby="note-title" tabindex="-1">
   <div class="note-header">
