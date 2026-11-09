@@ -20,7 +20,7 @@ window.IDEA_TELARANA_FRATTINI_EXTERNAL = {
       "source": "https://ecfr.eu/special/mapping_palestinian_politics/khaled_mashal/",
       "x": 2690,
       "y": 1000,
-      "topic3d": "Inteligencia"
+      "topic3d": "inteligencia"
     },
     {
       "id": "vf150-mossad",
