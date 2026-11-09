@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 1,
-    "inReview": 8,
-    "notStarted": 60,
+    "inReview": 9,
+    "notStarted": 59,
     "pending": 68,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -46,7 +46,7 @@
   "nextSource": {
     "order": 9,
     "videoId": "10vGOskN6hY",
-    "status": "pendiente_inicio",
+    "status": "pendiente_inicio_tras_fuentes_18_y_21",
     "sourceType": "youtube"
   },
   "inReview": [
@@ -310,15 +310,45 @@
       ],
       "externalReference": "https://www.poderjudicial.es/stfls/AUDIENCIA%20NACIONAL/JURISPRUDENCIA/2022-6-27%20Provid%20JCI%206%20archivo.pdf",
       "qualityNotes": "Creado Doc nativo de IDEA LAB que contiene ficha, método y referencias, pero NO la transcripción íntegra del podcast. VidIQ sin créditos; Descript rechaza URL YouTube por no ser enlace de archivo audiovisual directo; NotebookLM aún no accesible. NO atribuir citas, capítulos, minutos ni supuestas conexiones directas entre Maduro, Zapatero e Iglesias sin transcripción. Resolución judicial 27/06/2022 conservada solo como contexto independiente. No marcar completado."
+    },
+    {
+      "order": 18,
+      "videoId": "MljyjDGTxkk",
+      "title": "EPSTEIN, el PROBLEMA de EEUU con ISRAEL y la GUERRA de las ÉLITES OCCIDENTALES con Lorenzo Ramirez",
+      "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "status": "indice_editorial_analizado_transcripcion_pendiente",
+      "reviewComplete": false,
+      "docTranscriptCreated": true,
+      "transcriptDocHasFullText": false,
+      "sourceNodesDocumented": 5,
+      "sourceRelationsDocumented": 4,
+      "imageRuntimeVerified": false,
+      "timelineVerifiedEventsCommitted": 1,
+      "qualityNotes": "Índice editorial y contraste DOJ del 30/01/2026; transcripción íntegra pendiente; solo vínculos editoriales y hechos independientes; el documento de trabajo permanece privado en Drive y su URL no se publica en el archivo web."
+    },
+    {
+      "order": 21,
+      "videoId": "DRgeXx3rJl0",
+      "title": "El Nuevo ORDEN MUNDIAL que nos OCULTAN | Lorenzo Ramírez",
+      "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+      "status": "indice_editorial_analizado_transcripcion_pendiente",
+      "reviewComplete": false,
+      "docTranscriptCreated": true,
+      "transcriptDocHasFullText": false,
+      "sourceNodesDocumented": 10,
+      "sourceRelationsDocumented": 9,
+      "imageRuntimeVerified": false,
+      "timelineVerifiedEventsCommitted": 1,
+      "qualityNotes": "Índice minutado del productor y contexto USAID del 20/01/2025; transcripción íntegra pendiente; solo vínculos editoriales y hechos independientes; el documento de trabajo permanece privado en Drive y su URL no se publica en el archivo web."
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 33,
+    "committedVerifiedEvents": 35,
     "fromReviewedSource": 5,
-    "fromSourceInReview": 21,
+    "fromSourceInReview": 23,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1006,18 +1036,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 14,
-        "status": "pendiente",
+        "status": "revision_iniciada_doc_indice_en_drive_texto_integro_pendiente",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
-          "docTranscriptionCreated": false,
+          "initiated": true,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-09"
         }
       },
       {
@@ -1078,18 +1108,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 17,
-        "status": "pendiente",
+        "status": "revision_iniciada_doc_indice_en_drive_texto_integro_pendiente",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
-          "docTranscriptionCreated": false,
+          "initiated": true,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-09"
         }
       },
       {
