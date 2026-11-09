@@ -3,10 +3,15 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
   schedule:
     - cron: '27 5 * * *'
 permissions:
   contents: read
+  issues: read
   pages: write
   id-token: write
 concurrency:
@@ -14,6 +19,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: ${{ github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.actor == 'idealab2026' && startsWith(github.event.issue.title, '[NLM]')) }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -28,10 +34,16 @@ jobs:
       - name: Validar catálogo y scripts de la biblioteca
         run: |
           node --check biblioteca-montecristo/app.js
-          python3 -m py_compile scripts/sync_biblioteca.py scripts/notebooklm_infografias.py scripts/notebooklm_bridge.py scripts/notebooklm_bridge_launchd.py scripts/notebooklm_source_mapper.py
+          node --check biblioteca-montecristo/progreso.js
+          python3 -m py_compile scripts/sync_biblioteca.py scripts/notebooklm_infografias.py scripts/notebooklm_bridge.py scripts/notebooklm_bridge_launchd.py scripts/notebooklm_source_mapper.py scripts/build_biblioteca_progress.py
           python3 -m unittest discover -s scripts -p 'test_notebooklm_bridge.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_source_mapper.py' -v
           python3 -m unittest discover -s scripts -p 'test_biblioteca.py' -v
+          python3 -m unittest discover -s scripts -p 'test_biblioteca_progress.py' -v
+      - name: Sincronizar progreso de infografías desde incidencias públicas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_biblioteca_progress.py
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
@@ -62,12 +74,16 @@ jobs:
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
-          cp biblioteca-montecristo/app.js biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
+          cp biblioteca-montecristo/progreso.html dist/biblioteca-montecristo/progreso.html
+          cp biblioteca-montecristo/app.js biblioteca-montecristo/progreso.js biblioteca-montecristo/progreso.json biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
           cp -R biblioteca-montecristo/infografias dist/biblioteca-montecristo/
           test -f dist/biblioteca-montecristo/app.js
           test -f dist/biblioteca-montecristo/styles.css
           test -f dist/biblioteca-montecristo/catalogo.json
           test -f dist/biblioteca-montecristo/infografias/index.json
+          test -s dist/biblioteca-montecristo/progreso.html
+          test -s dist/biblioteca-montecristo/progreso.js
+          test -s dist/biblioteca-montecristo/progreso.json
           test -f dist/linea-historia/index.html
           test -f dist/linea-historia/data.json
           test -s dist/linea-historia/timeline-v4.js
