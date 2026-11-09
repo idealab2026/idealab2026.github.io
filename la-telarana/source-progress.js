@@ -59,6 +59,7 @@
     }
     tbody.replaceChildren(fragment);
     summary.textContent=complete+"/"+data.total+" completas · "+partial+" en revisión · "+(data.total-complete-partial)+" pendientes";
+    summary.title="Última actualización del inventario: "+(data.updatedAt||"sin fecha");
     bar.style.width=(100*complete/data.total).toFixed(2)+"%";
     bar.setAttribute("aria-valuenow",String(complete));
     bar.setAttribute("aria-valuemax",String(data.total));
