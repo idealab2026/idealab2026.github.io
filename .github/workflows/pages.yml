@@ -45,6 +45,8 @@ jobs:
         run: node scripts/test_telarana_source_progress.mjs
       - name: Validar transcripción y evidencias de la fuente 02
         run: node scripts/test_telarana_source02_transcript.mjs
+      - name: Validar avance de fuente 03 y fotografías de sus protagonistas
+        run: node scripts/test_telarana_source03.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
