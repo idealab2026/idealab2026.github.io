@@ -49,7 +49,7 @@
       const row=node("tr",!item?"source-unknown":"");
       const index=node("td","source-index",String(order).padStart(2,"0"));
       const title=node("td","source-name");
-      const name=item?(item.title||("Fuente "+order)):"Fuente pendiente de identificar";
+      const name=item?(item.title||("Fuente "+order)):(data.catalogDisplay&&data.catalogDisplay.unidentifiedSourceLabel)||"Inventariada en NotebookLM · título no sincronizado";
       if(item)appendLink(title,name,item.sourceUrl||"");
       else title.textContent=name;
       if(!item)title.classList.add("source-placeholder");
