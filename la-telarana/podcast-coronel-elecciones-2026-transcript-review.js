@@ -11,7 +11,11 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
     "timecodesVerified": false,
     "transcriptCheckedAgainstAudio": false,
     "allNodesAreEditorialParaphrases": true,
-    "legalDisclosure": "Entrevistas con alegaciones graves sin documentación reproducida. Todas las hipótesis están atribuidas expresamente y separadas de hechos externos contrastados."
+    "legalDisclosure": "Entrevistas con alegaciones graves sin documentación reproducida. Todas las hipótesis están atribuidas expresamente y separadas de hechos externos contrastados.",
+    "currentResearchStage": "evidence_crosschecked_morocco_29jul_ep_17sep_returns_eu_20261109",
+    "evidenceReviewAt": "2026-11-09",
+    "numbersInvolvedNeedLegalDistinction": true,
+    "fullAudioVerified": false
   },
   "nodes": [
     {
@@ -90,6 +94,15 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
           "status": "alegacion",
           "text": "El episodio sostiene que el CNI disponía de información detallada sobre una supuesta operación marroquí desde marzo. La documentación oficial sí acredita avisos y comunicaciones antes del 30 de julio, pero no acredita la reunión clandestina ni la tesis de organización atribuida por Villarejo."
+        },
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
+          "status": "verificacion-externa",
+          "text": "Constan comunicaciones del CNI el 29/07/2026: aviso por WhatsApp a la Delegación del Gobierno a las 13:52 sobre llamamientos a cruzar la frontera, llamada y mensaje a la Guardia Civil, y nota C/10399 a las 18:26 dirigida a DGST y DGED marroquíes. El número de seguidores de grupos en redes no equivale al número de personas que iban a cruzar. No hay constancia pública aquí de que el CNI conociera desde marzo una reunión clandestina."
         }
       ],
       "topic3d": "geopolitics"
@@ -350,6 +363,15 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
           "status": "alegacion",
           "text": "Villarejo sostiene que la entrada masiva fue planificada por servicios de inteligencia marroquíes y tolerada por autoridades españolas. Las comunicaciones previas del CNI demuestran conocimiento de llamamientos en redes; no prueban por sí mismas una orden clandestina ni complicidad del Ejecutivo."
+        },
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+          "status": "verificacion-externa",
+          "text": "La Eurocámara aprobó el 17/09/2026 una resolución que considera la instrumentalización migratoria en Ceuta una amenaza híbrida. Es un posicionamiento político documentado, compatible con examinar posibles responsabilidades, pero no identifica ni confirma la supuesta reunión operativa del 15 de marzo o una connivencia específica del Gobierno español."
         }
       ],
       "topic3d": "geopolitics"
@@ -370,6 +392,15 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
           "status": "alegacion",
           "text": "Villarejo fecha el 15 de marzo de 2026 una presunta reunión clandestina de preparación de la crisis. No facilita actas, documentos verificables o identificación contrastable de los asistentes. No puede darse por ocurrida ni incorporarse como acontecimiento histórico documentado."
+        },
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://www.lamoncloa.gob.es/consejodeministros/paginas/informes-y-comunicaciones-situacion-ceuta.aspx",
+          "status": "verificacion-externa",
+          "text": "El repositorio gubernamental de 40 documentos abarca comunicaciones de julio, no un archivo exhaustivo desde marzo. No demostrar la reunión del 15/03/2026 con esos materiales no prueba su inexistencia; simplemente deja sin verificar la versión del entrevistado."
         }
       ],
       "topic3d": "geopolitics"
@@ -470,6 +501,15 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
           "status": "alegacion",
           "text": "La entrevista atribuye al tráfico de drogas hasta un 20–30 % del PIB marroquí y una estructura de control estatal sistemático. No presenta fuente estadística, metodología o pruebas para esas cifras e imputaciones. La importancia económica de un mercado ilícito no valida automáticamente esos porcentajes ni la imputación colectiva a un Estado."
+        },
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/morocco-cannabis-survey-2003-executive-summary",
+          "status": "verificacion-externa",
+          "text": "El estudio de cultivo de cannabis en Marruecos de UNODC (2003) estimaba ingresos directos de producción equivalentes al 0,57 % del PIB de ese año. Esta estimación antigua no es comparable con el valor completo del tráfico internacional en 2026, pero ilustra que la afirmación del 20–30 % de PIB marroquí necesita definición económica, año, fuente y metodología: no se valida como cifra actual."
         }
       ],
       "topic3d": "geopolitics"
@@ -570,6 +610,106 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
           "status": "alegacion",
           "text": "La entrevista utiliza comparaciones con Hitler, Chávez y Maduro y atribuye el origen de la Guerra Civil a una lectura política unilateral de la II República. Son analogías y valoraciones del invitado, no pruebas de que los políticos contemporáneos tengan la misma naturaleza ni explicación historiográfica suficiente de la guerra."
+        }
+      ],
+      "topic3d": "geopolitics"
+    },
+    {
+      "id": "ce26-parlamento-europeo",
+      "name": "Parlamento Europeo",
+      "kind": "Organización",
+      "subtitle": "Institución legislativa de la Unión Europea",
+      "note": "El Parlamento Europeo celebró un debate sobre Ceuta y el 17 de septiembre de 2026 adoptó una resolución que trata la instrumentalización de la migración como una amenaza híbrida. Se registra la decisión institucional documentada; no constituye prueba judicial ni atribuye la supuesta conspiración descrita por el entrevistado.",
+      "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+          "status": "verificacion-externa",
+          "text": "El Parlamento Europeo celebró un debate sobre Ceuta y el 17 de septiembre de 2026 adoptó una resolución que trata la instrumentalización de la migración como una amenaza híbrida. Se registra la decisión institucional documentada; no constituye prueba judicial ni atribuye la supuesta conspiración descrita por el entrevistado."
+        }
+      ],
+      "topic3d": "geopolitics"
+    },
+    {
+      "id": "ce26-resolucion-pe-2026",
+      "name": "Resolución del Parlamento Europeo sobre Ceuta (17/09/2026)",
+      "kind": "Acontecimiento",
+      "subtitle": "Posición política institucional · 339 votos a favor, 225 en contra y 16 abstenciones",
+      "note": "El Parlamento Europeo aprobó la Resolución 2026/2870(RSP), que examina la crisis migratoria en Ceuta y la instrumentalización de migrantes y plantea medidas de seguridad y cooperación. Es un pronunciamiento político verificable, no la acreditación de que se celebrara una reunión secreta el 15 de marzo ni de un plan acordado por personas concretas.",
+      "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+          "status": "verificacion-externa",
+          "text": "El Parlamento Europeo aprobó la Resolución 2026/2870(RSP), que examina la crisis migratoria en Ceuta y la instrumentalización de migrantes y plantea medidas de seguridad y cooperación. Es un pronunciamiento político verificable, no la acreditación de que se celebrara una reunión secreta el 15 de marzo ni de un plan acordado por personas concretas."
+        }
+      ],
+      "topic3d": "geopolitics"
+    },
+    {
+      "id": "ce26-propuesta-barcos",
+      "name": "Propuesta de traslado masivo de migrantes en barcos",
+      "kind": "Trama",
+      "subtitle": "Medida propuesta en la entrevista · legalidad no acreditada",
+      "note": "Villarejo asegura que el CNI habría ofrecido reunir a miles de migrantes en barcos españoles para negociar su devolución a Marruecos o enviarlos a otros territorios, y sostiene que sería legal por enarbolar pabellón español. La existencia de un plan oficial del CNI no se acredita. Las devoluciones requieren salvaguardias y evaluación de las situaciones individuales, incluida la protección internacional; el pabellón de una nave no elimina esas obligaciones.",
+      "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
+          "status": "alegacion",
+          "text": "Villarejo asegura que el CNI habría ofrecido reunir a miles de migrantes en barcos españoles para negociar su devolución a Marruecos o enviarlos a otros territorios, y sostiene que sería legal por enarbolar pabellón español. La existencia de un plan oficial del CNI no se acredita. Las devoluciones requieren salvaguardias y evaluación de las situaciones individuales, incluida la protección internacional; el pabellón de una nave no elimina esas obligaciones."
+        }
+      ],
+      "topic3d": "geopolitics"
+    },
+    {
+      "id": "ce26-retornos-garantias-ue",
+      "name": "Garantías jurídicas de devolución y protección internacional",
+      "kind": "Marco jurídico",
+      "subtitle": "UE · no devolución, derecho de asilo y prohibición de expulsión colectiva",
+      "note": "La Comisión Europea describe el régimen de retorno de nacionales de terceros países: evaluación individual, acceso a asilo y recursos, principio de no devolución (non-refoulement) y prohibición de las expulsiones colectivas. Esta referencia permite distinguir lo que se propone verbalmente en el podcast de la valoración jurídica de un retorno masivo.",
+      "source": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/irregular-migration-and-return/effective-firm-and-fair-eu-return-and-readmission-policy-0_en",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/irregular-migration-and-return/effective-firm-and-fair-eu-return-and-readmission-policy-0_en",
+          "status": "verificacion-externa",
+          "text": "La Comisión Europea describe el régimen de retorno de nacionales de terceros países: evaluación individual, acceso a asilo y recursos, principio de no devolución (non-refoulement) y prohibición de las expulsiones colectivas. Esta referencia permite distinguir lo que se propone verbalmente en el podcast de la valoración jurídica de un retorno masivo."
+        }
+      ],
+      "topic3d": "geopolitics"
+    },
+    {
+      "id": "ce26-cifras-retornos-ceuta",
+      "name": "Cifras de retornos y permanencia tras Ceuta (2026)",
+      "kind": "Trama",
+      "subtitle": "Estimaciones oficiales y discrepancias sobre devoluciones",
+      "note": "La comparecencia gubernamental del 25 de agosto afirmó que entre el 90 % y el 95 % de quienes entraron volvieron a Marruecos en las primeras 24–48 horas. La Agencia de Derechos Fundamentales de la UE recoge esa estimación y las denuncias de ONG de posibles devoluciones sumarias, rechazadas por el Gobierno. Las cifras de personas que quedaron y el carácter voluntario de todas las devoluciones están sujetos a contrastes y no deben darse por concluidos a partir de la entrevista.",
+      "source": "https://fra.europa.eu/et/publication/2026/migration-bulletin-3-2026?page=1",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://fra.europa.eu/et/publication/2026/migration-bulletin-3-2026?page=1",
+          "status": "verificacion-externa",
+          "text": "La comparecencia gubernamental del 25 de agosto afirmó que entre el 90 % y el 95 % de quienes entraron volvieron a Marruecos en las primeras 24–48 horas. La Agencia de Derechos Fundamentales de la UE recoge esa estimación y las denuncias de ONG de posibles devoluciones sumarias, rechazadas por el Gobierno. Las cifras de personas que quedaron y el carácter voluntario de todas las devoluciones están sujetos a contrastes y no deben darse por concluidos a partir de la entrevista."
         }
       ],
       "topic3d": "geopolitics"
@@ -1169,6 +1309,160 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
           "text": "Son dos bloques distintos en los que el entrevistado insinúa actos clandestinos sin aportar indicios periciales. La relación es de tipo argumental, no causal ni personal."
         }
       ]
+    },
+    {
+      "id": "ce26-extra-pe-adopto",
+      "a": "ce26-parlamento-europeo",
+      "b": "ce26-resolucion-pe-2026",
+      "type": "Aprobación de resolución el 17/09/2026",
+      "confidence": "documentado",
+      "note": "El Parlamento Europeo aprobó la Resolución 2026/2870(RSP) por 339 votos a favor, 225 en contra y 16 abstenciones.",
+      "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+      "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+      "claimStatus": "hecho_documentado_o_contraste_externo",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+          "status": "verificacion-externa",
+          "text": "El Parlamento Europeo aprobó la Resolución 2026/2870(RSP) por 339 votos a favor, 225 en contra y 16 abstenciones."
+        }
+      ]
+    },
+    {
+      "id": "ce26-extra-pe-ceuta",
+      "a": "ce26-resolucion-pe-2026",
+      "b": "ce26-ceuta-crisis",
+      "type": "Resolución institucional relativa a la crisis de Ceuta",
+      "confidence": "documentado",
+      "note": "La resolución del Parlamento Europeo se refiere expresamente a los acontecimientos de julio de 2026. Que denomine instrumentalización a la crisis no prueba la concreta autoría o cadena de mando que invoca Villarejo.",
+      "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+      "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+      "claimStatus": "hecho_documentado_o_contraste_externo",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29",
+          "status": "verificacion-externa",
+          "text": "La resolución del Parlamento Europeo se refiere expresamente a los acontecimientos de julio de 2026. Que denomine instrumentalización a la crisis no prueba la concreta autoría o cadena de mando que invoca Villarejo."
+        }
+      ]
+    },
+    {
+      "id": "ce26-extra-barcos-propuesta",
+      "a": "ce26-villarejo",
+      "b": "ce26-propuesta-barcos",
+      "type": "Propone una solución de retornos masivos",
+      "confidence": "documentado",
+      "note": "La transcripción permite atribuir al invitado una propuesta de traslado en buques, pero no permite verificar que fuese una propuesta real del CNI ni su legalidad automática.",
+      "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
+      "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+      "claimStatus": "hecho_documentado_o_contraste_externo",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Fuente 02 · testimonio en transcripción",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
+          "status": "relato",
+          "text": "La transcripción permite atribuir al invitado una propuesta de traslado en buques, pero no permite verificar que fuese una propuesta real del CNI ni su legalidad automática."
+        }
+      ]
+    },
+    {
+      "id": "ce26-extra-barcos-derecho",
+      "a": "ce26-propuesta-barcos",
+      "b": "ce26-retornos-garantias-ue",
+      "type": "Contraste con garantías legales de retorno",
+      "confidence": "documentado",
+      "note": "Las normas europeas de devolución obligan a evaluar cada caso, preservar el derecho de asilo y respetar la prohibición de expulsión colectiva. El pabellón español de un buque no sustituye estos requisitos.",
+      "source": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/irregular-migration-and-return/effective-firm-and-fair-eu-return-and-readmission-policy-0_en",
+      "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+      "claimStatus": "hecho_documentado_o_contraste_externo",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/irregular-migration-and-return/effective-firm-and-fair-eu-return-and-readmission-policy-0_en",
+          "status": "verificacion-externa",
+          "text": "Las normas europeas de devolución obligan a evaluar cada caso, preservar el derecho de asilo y respetar la prohibición de expulsión colectiva. El pabellón español de un buque no sustituye estos requisitos."
+        }
+      ]
+    },
+    {
+      "id": "ce26-extra-barcos-ceuta",
+      "a": "ce26-propuesta-barcos",
+      "b": "ce26-ceuta-crisis",
+      "type": "Propuesta en respuesta a la crisis fronteriza",
+      "confidence": "documentado",
+      "note": "El entrevistado presentó su idea durante el debate sobre las personas que entraron en Ceuta. No hay constancia de adopción oficial de esa medida.",
+      "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
+      "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+      "claimStatus": "hecho_documentado_o_contraste_externo",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Fuente 02 · testimonio en transcripción",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=qARZpON9_j0",
+          "status": "relato",
+          "text": "El entrevistado presentó su idea durante el debate sobre las personas que entraron en Ceuta. No hay constancia de adopción oficial de esa medida."
+        }
+      ]
+    },
+    {
+      "id": "ce26-extra-cifras-crisis",
+      "a": "ce26-cifras-retornos-ceuta",
+      "b": "ce26-ceuta-crisis",
+      "type": "Balance cuantitativo de retornos y permanencia",
+      "confidence": "documentado",
+      "note": "La estimación gubernamental sitúa los retornos iniciales en el 90–95 % del total, mientras que las ONG cuestionan la voluntariedad de algunos retornos. Un porcentaje aproximado no prueba por sí solo operaciones militares encubiertas.",
+      "source": "https://fra.europa.eu/et/publication/2026/migration-bulletin-3-2026?page=1",
+      "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+      "claimStatus": "hecho_documentado_o_contraste_externo",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://fra.europa.eu/et/publication/2026/migration-bulletin-3-2026?page=1",
+          "status": "verificacion-externa",
+          "text": "La estimación gubernamental sitúa los retornos iniciales en el 90–95 % del total, mientras que las ONG cuestionan la voluntariedad de algunos retornos. Un porcentaje aproximado no prueba por sí solo operaciones militares encubiertas."
+        }
+      ]
+    },
+    {
+      "id": "ce26-extra-cifras-legal",
+      "a": "ce26-cifras-retornos-ceuta",
+      "b": "ce26-retornos-garantias-ue",
+      "type": "Debate sobre el cumplimiento de garantías individuales",
+      "confidence": "documentado",
+      "note": "La Agencia de Derechos Fundamentales de la UE registra versiones enfrentadas sobre las devoluciones posteriores a julio de 2026. La legalidad de cada actuación requiere la evaluación de sus circunstancias.",
+      "source": "https://fra.europa.eu/et/publication/2026/migration-bulletin-3-2026?page=1",
+      "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+      "claimStatus": "hecho_documentado_o_contraste_externo",
+      "podcastNotes": [
+        {
+          "episodeId": "coronel-villarejo-ceuta-2026-10-12",
+          "title": "Contraste con documentación independiente",
+          "publishedAt": "2026-11-09",
+          "timeSec": null,
+          "source": "https://fra.europa.eu/et/publication/2026/migration-bulletin-3-2026?page=1",
+          "status": "verificacion-externa",
+          "text": "La Agencia de Derechos Fundamentales de la UE registra versiones enfrentadas sobre las devoluciones posteriores a julio de 2026. La legalidad de cada actuación requiere la evaluación de sus circunstancias."
+        }
+      ]
     }
   ],
   "claims": [
@@ -1255,6 +1549,30 @@ window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW = {
       "topic": "Comparaciones con Hitler y causas de Guerra Civil",
       "finding": "opiniones y simplificaciones históricas sin validación historiográfica",
       "evidence": null
+    },
+    {
+      "id": "c-15",
+      "topic": "Resolución del Parlamento Europeo de 17/09/2026",
+      "finding": "Votación y posicionamiento institucional documentados (339 a favor, 225 en contra, 16 abstenciones). No constituye prueba judicial sobre una operación clandestina ni confirma la acusación contra el Gobierno español.",
+      "evidence": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F2870%28RSP%29"
+    },
+    {
+      "id": "c-16",
+      "topic": "Supuesto plan de trasladar migrantes en barcos para devolverlos",
+      "finding": "Propuesta verbal de Villarejo; no está documentado que fuera un plan del CNI. La mera bandera española de un buque no exime de evaluación individual, no devolución, acceso al asilo y prohibición de expulsiones colectivas.",
+      "evidence": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/irregular-migration-and-return/effective-firm-and-fair-eu-return-and-readmission-policy-0_en"
+    },
+    {
+      "id": "c-17",
+      "topic": "Cifras de entradas y retornos de Ceuta",
+      "finding": "El Gobierno estimó retornos iniciales del 90–95 %, pero ONG cuestionaron la voluntariedad de algunos. Distinguir cifras aproximadas, versiones institucionales y denuncias sometidas a comprobación.",
+      "evidence": "https://fra.europa.eu/et/publication/2026/migration-bulletin-3-2026?page=1"
+    },
+    {
+      "id": "c-18",
+      "topic": "Supuesto 20–30 % del PIB marroquí procedente de droga",
+      "finding": "La cifra carece de metodología en la entrevista. UNODC estimó para 2003 ingresos del cultivo de cannabis equivalentes a 0,57 % del PIB, magnitud y año distintos; no sirve para extrapolar el tráfico ni desmentir porcentajes actuales.",
+      "evidence": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/morocco-cannabis-survey-2003-executive-summary"
     }
   ],
   "pendingTimelineClaims": [
