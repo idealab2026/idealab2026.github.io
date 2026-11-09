@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 import re, sys, json
 
 ROOT = Path(__file__).resolve().parents[1]
-required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json", "biblioteca-montecristo/infografias/index.json")
+required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json", "biblioteca-montecristo/infografias/index.json", "icsa/index.html", "icsa/privacidad.html")
 errors = [f"Missing public asset: {file}" for file in required if not (ROOT / file).is_file()]
 html = (ROOT / "index.html").read_text(encoding="utf-8") if (ROOT / "index.html").exists() else ""
 class Scanner(HTMLParser):
@@ -26,9 +26,18 @@ for link in scanner.links:
 for token in ("segundo-cerebro", "tfm", "tfg", "personal_mamg", "mamg97", "gmail.com", "cloudflare", "worker", "drive.google.com"):
     # Do not echo any matched private data in errors or action logs.
     if token in html.lower(): errors.append("Unapproved source identity marker detected")
-allowed_html = {"index.html", "linea-historia/index.html", "la-telarana/index.html", "biblioteca-montecristo/index.html"}
+allowed_html = {"index.html", "linea-historia/index.html", "la-telarana/index.html", "biblioteca-montecristo/index.html", "icsa/index.html", "icsa/privacidad.html"}
 found_html = {str(path.relative_to(ROOT)) for path in ROOT.rglob("*.html") if ".git" not in path.parts}
 if found_html != allowed_html: errors.append("Unexpected or missing HTML page in public distribution")
+for page in ("icsa/index.html", "icsa/privacidad.html"):
+    file = ROOT / page
+    if file.is_file():
+        body = file.read_text(encoding="utf-8")
+        if "/icsa/privacidad.html" not in body or "https://www.googleapis.com/auth/drive.file" not in body:
+            errors.append("Incomplete ICSA OAuth transparency page")
+        if any(token in body.lower() for token in ("mamg97", "segundo-cerebro", "m.mayorgr", "personal_mamg")):
+            errors.append("Unapproved identity marker in ICSA page")
+
 if (ROOT / "data/traffic.json").exists():
     try:
         stats=json.loads((ROOT / "data/traffic.json").read_text(encoding="utf-8"))
