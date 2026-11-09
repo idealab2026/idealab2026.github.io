@@ -52,7 +52,7 @@ assert.equal(row.transcriptSha256VerifiedDriveRoundTrip,true);
 assert.equal(row.transcriptTopicIndexCount,13);
 assert.equal(progress.inReview.find(x=>x.order===6)?.firstPassTopicIndexCount,13);
 assert.equal(row.reviewComplete,false);
-assert.equal(progress.counts.inReview,6);
+assert(progress.counts.inReview>=6,"Other sources may start later; source06 must remain in review");
 assert(html.includes("podcast-wild-253-villarejo.js?v="));
 assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_SOURCE06_PODCAST)"));
 assert(html.includes("podcasts.happyscribe.com"),"Evidence link must be visible");
