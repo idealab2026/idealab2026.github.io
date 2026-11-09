@@ -1,71 +1,112 @@
-/* Regresión sin dependencias de la vista 3D: grupos, zoom y regiones. */
+/* Prueba del orbe 3D y gestos. Sin dependencias ni red. */
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-const js=fs.readFileSync('la-telarana/graph-3d.js','utf8');
-const globals={
- window:{},requestAnimationFrame(fn){fn()},ResizeObserver:class{observe(){}},
- devicePixelRatio:1,Image:class{}
+const source=fs.readFileSync('la-telarana/graph-3d.js','utf8');
+let time=0;
+const frames=[];
+const env={
+ window:{matchMedia(){return{matches:false}}},
+ document:{hidden:false},
+ performance:{now:()=>time},
+ requestAnimationFrame(fn){frames.push(fn);return frames.length},
+ ResizeObserver:class{observe(){}},
+ devicePixelRatio:1,
+ Image:class{}
 };
-vm.runInNewContext(js,globals);
-const Graph=globals.window.IdeaLabGraph3D;
-assert(Graph&&Graph.topics.length===7);
-const counts={inteligencia:44,oriente:25,espana:62,historia:28,tecnologia:9,finanzas:26,global:28};
+vm.runInNewContext(source,env);
+const Graph=env.window.IdeaLabGraph3D;
+assert.equal(Graph.topics.length,7);
+
+function flush(t){
+ time=t;
+ const pending=frames.splice(0);
+ pending.forEach(fn=>fn(t));
+}
+const populations={
+ inteligencia:50,oriente:25,espana:64,historia:28,
+ tecnologia:9,finanzas:26,global:20
+};
 const nodes=[];
-for(const [topic,n] of Object.entries(counts)){
- for(let i=0;i<n;i++)nodes.push({id:topic+'-'+i,name:topic+' '+i,topic3d:topic,kind:'Persona'});
+for(const [topic,total] of Object.entries(populations)){
+ for(let j=0;j<total;j++){
+  nodes.push({id:topic+'-'+j,name:topic+' '+j,
+   topic3d:topic,kind:'Persona',note:''});
+ }
 }
 assert.equal(nodes.length,222);
+const edges=nodes.slice(1).map((n,i)=>({
+ id:'edge'+i,a:nodes[i].id,b:n.id,
+ confidence:i%4===0?'hipotesis':'documentado',type:'Prueba'
+}));
+const tint=new Set(Graph.topics.map(({id})=>({
+ inteligencia:'#76d0ec',oriente:'#e6b978',espana:'#b9a3ea',
+ historia:'#ec8f89',tecnologia:'#8bdbbd',
+ finanzas:'#bbd68c',global:'#e6ad91'}[id])));
 
 for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540]]){
- let circles=[],regions=[],current=null,events={};
+ let rings=[],pillBoxes=[],sphere=[],lastArc=null;
+ const events={};
  const ctx=new Proxy({},{
-  get(_t,key){
+  get(target,key){
    if(key==='createRadialGradient')return()=>({addColorStop(){}});
-   if(key==='beginPath')return()=>{current=null};
-   if(key==='arc')return(x,y,r)=>{current={x,y,r}};
-   if(key==='stroke')return()=>{if(current){circles.push(current);current=null}};
-   if(key==='roundRect')return(x,y,w,h)=>{regions.push({x,y,w,h})};
-   if(key==='measureText')return text=>({width:text.length*9});
-   if(key==='setTransform')return()=>{circles=[];regions=[]};
+   if(key==='beginPath')return()=>{lastArc=null};
+   if(key==='arc')return(x,y,r)=>{lastArc={x,y,r}};
+   if(key==='stroke')return()=>{
+    if(lastArc){
+     if(tint.has(target.strokeStyle))rings.push(lastArc);
+     if(lastArc.r>70)sphere.push(lastArc);
+    }
+    lastArc=null;
+   };
+   if(key==='roundRect')return(x,y,w,h)=>pillBoxes.push({x,y,w,h});
+   if(key==='measureText')return value=>({width:value.length*8});
+   if(key==='setTransform')return()=>{rings=[];sphere=[];pillBoxes=[]};
    return()=>{};
   },
   set(target,key,value){target[key]=value;return true}
  });
  const canvas={
   getContext(){return ctx},
-  getBoundingClientRect(){return{left:0,top:0,width,height}},
+  getBoundingClientRect(){return{width,height,left:0,top:0}},
   addEventListener(name,fn){events[name]=fn},
-  setPointerCapture(){},closest(){return null}
+  setPointerCapture(){},closest(){return null},style:{}
  };
- const app=Graph.create({canvas,tooltip:{hidden:true},getPhoto(){return null}});
- app.setData(nodes,[]);
- const fitted=app.fit();
+ const graph=Graph.create({canvas,tooltip:{hidden:true,style:{}},getPhoto(){return null}});
+ graph.setData(nodes,edges);
+ const fitted=graph.fit();
  assert(Number.isFinite(fitted.zoom)&&fitted.zoom>0);
- assert.equal(regions.length,7,'one region per theme');
- assert.equal(circles.length,nodes.length,'one outline per node');
- for(const c of circles){
-  assert(regions.some(r=>c.x>=r.x&&c.x<=r.x+r.w&&c.y>=r.y&&c.y<=r.y+r.h),
-   'all nodes must lie in a real projected region');
- }
- for(let i=0;i<circles.length;i++){
-  for(let j=i+1;j<circles.length;j++){
-   const a=circles[i],b=circles[j];
-   assert(Math.hypot(a.x-b.x,a.y-b.y)>=a.r+b.r-.02,
-    'overlapping nodes at '+width+'x'+height);
-  }
- }
- const prev=circles.map(c=>({...c}));
- let prevented=false;
- events.wheel({clientX:width/2,clientY:height/2,ctrlKey:true,metaKey:false,
-  deltaMode:0,deltaY:-50,deltaX:0,preventDefault(){prevented=true}});
- assert(prevented,'pinch must prevent browser page zoom inside graph');
- assert(circles.some((c,i)=>Math.hypot(c.x-prev[i].x,c.y-prev[i].y)>.1),
-  'pinch must move nodes by changing the zoom');
+ flush(time);
+ assert.equal(rings.length,222,'all entity nodes visible');
+ assert.equal(sphere.length,1,'one coherent spherical body');
+ assert.equal(pillBoxes.length,7,'one compact label per lobe');
+ assert(pillBoxes.every(b=>b.h<=50),'no large rectangular theme panels');
+ const body=sphere[0],cx=width/2,cy=height/2;
+ assert(rings.every(p=>Math.hypot(p.x-cx,p.y-cy)<body.r*1.36),
+  'nodes must stay near the sphere, not on a flat external grid');
+ const xs=rings.map(p=>p.x),ys=rings.map(p=>p.y);
+ const widthRatio=(Math.max(...xs)-Math.min(...xs))/
+  Math.max(1,Math.max(...ys)-Math.min(...ys));
+ assert(widthRatio>.58&&widthRatio<1.65,'orbe must be roughly circular');
+ const initialRadius=body.r;
+ events.wheel({clientX:width/2,clientY:height/2,
+  ctrlKey:true,metaKey:false,deltaX:0,deltaY:-45,deltaMode:0,
+  preventDefault(){}});
+ flush(time+60);
+ assert(sphere[0].r>initialRadius,'trackpad pinch must enlarge the orb');
  events.gesturestart({scale:1,preventDefault(){}});
  events.gesturechange({scale:1.1,clientX:width/2,clientY:height/2,preventDefault(){}});
+ flush(time+60);
+ assert(sphere[0].r>initialRadius,'Safari gesture must enlarge the orb');
  events.gestureend({preventDefault(){}});
- app.setTheme('espana');assert(Number.isFinite(app.fit().zoom));
+ assert(graph.setMotion(false)===false,'motion pause control');
+ graph.setTheme('espana');
+ flush(time+60);
+ assert(graph.isMotionEnabled()===false);
+ assert(Number.isFinite(graph.fit().zoom));
+ flush(time+60);
+ // Control de reanudación, disponible independientemente del sistema operativo.
+ assert(graph.setMotion(true)===true);
 }
-console.log('OK: 222 nodos, 7 regiones, 5 ventanas, 0 solapes, zoom trackpad Chrome/Safari');
+console.log('OK: 7 lóbulos esféricos, 222 nodos, 5 resoluciones, zoom y pausa orbital');
