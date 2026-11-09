@@ -37,12 +37,15 @@
     for(const rec of data.inReview||[]){
       if(Number.isInteger(rec.order)&&rec.order>=1&&rec.order<=data.total&&!byOrder.has(rec.order))byOrder.set(rec.order,rec);
     }
+    for(const rec of data.pendingSources||[]){
+      if(Number.isInteger(rec.order)&&rec.order>=1&&rec.order<=data.total&&!byOrder.has(rec.order))byOrder.set(rec.order,rec);
+    }
     let complete=0,partial=0;
     const fragment=document.createDocumentFragment();
     for(let order=1;order<=data.total;order++){
       const item=byOrder.get(order);
       const done=!!item&&item.reviewComplete===true&&item.status==="revision_publicada";
-      const pending=!!item&&!done;
+      const inReview=!!item&&!done&&item.status!=="pendiente_revision";
       const row=node("tr",!item?"source-unknown":"");
       const index=node("td","source-index",String(order).padStart(2,"0"));
       const title=node("td","source-name");
@@ -51,11 +54,11 @@
       else title.textContent=name;
       if(!item)title.classList.add("source-placeholder");
       const state=node("td","source-status-cell");
-      const label=node("span","source-status "+(done?"source-done":pending?"source-active":"source-pending"),
-        done?"✓ Completada":pending?"◔ En revisión":"○ Pendiente");
+      const label=node("span","source-status "+(done?"source-done":inReview?"source-active":"source-pending"),
+        done?"✓ Completada":inReview?"◔ En revisión":"○ Pendiente");
       state.append(label);row.append(index,title,state);fragment.append(row);
       if(done)complete++;
-      else if(pending)partial++;
+      else if(inReview)partial++;
     }
     tbody.replaceChildren(fragment);
     summary.textContent=complete+"/"+data.total+" completas · "+partial+" en revisión · "+(data.total-complete-partial)+" pendientes";
