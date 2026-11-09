@@ -44,7 +44,12 @@ DOWNLOADED_COMMENT = ("Infografía descargada en el Mac. PENDIENTE de revisión 
                       "privacidad y aprobación explícita para publicar. "
                       "No se ha subido ninguna imagen.")
 # Only these two whitelisted public comments may be retried automatically.
-ALLOWED_COMMENTS = (SUBMITTED_COMMENT, DOWNLOADED_COMMENT)
+FAILED_COMMENT = ("NotebookLM ha informado de un fallo de generación. "
+                  "Revisión necesaria; no se reintentará automáticamente.")
+PUBLISH_COMMENT = ("Imagen revisada y propuesta para publicación mediante pull request "
+                   "de IDEA LAB. Pendiente de revisión/fusión final.")
+ALLOWED_COMMENTS = (SUBMITTED_COMMENT, DOWNLOADED_COMMENT, FAILED_COMMENT,
+                    PUBLISH_COMMENT)
 
 
 def cli_failure_hint(argv: list[str], stderr: str) -> str:
@@ -487,7 +492,7 @@ def check_submitted(number, job, state):
     if any(x in status for x in ("fail", "error", "cancel")) or status == "4":
         job["phase"] = "failed"
         save_json(STATE_PATH, state)
-        issue_comment(number, "NotebookLM ha informado de un fallo de generación. Revisión necesaria; no se reintentará automáticamente.")
+        comment_or_queue(number, FAILED_COMMENT, job, state)
         return
     # A non-complete artifact will be picked up on the next local polling cycle.
     if not any(x in status for x in ("complet", "ready", "finish", "success")) and status != "3":
@@ -623,7 +628,7 @@ def publish(args):
     job["phase"] = "review-pr"
     job["pr"] = pr.strip()
     save_json(STATE_PATH, state)
-    issue_comment(args.issue, "Imagen revisada y propuesta para publicación mediante pull request de IDEA LAB. Pendiente de revisión/fusión final.")
+    comment_or_queue(str(args.issue), PUBLISH_COMMENT, job, state)
     print("Pull request preparado:", pr.strip())
 
 
