@@ -15,6 +15,10 @@ vm.runInNewContext(photoSrc, {window});
 const entries={...window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS,
  ...window.IDEA_TELARANA_BIOGRAPHIES.wikiPages};
 assert.equal(window.IDEA_TELARANA_BIOGRAPHIES.curated["vf150-meir-dagan"].source.includes("runi.ac.il"),true);
+for(const id of ["vf150-khaled-meshaal","vf150-danny-yatom","vf150-hussein-jordania","vf150-ahmed-yassin","vf150-abdel-aziz-al-rantisi"]){
+ const b=window.IDEA_TELARANA_BIOGRAPHIES.curated[id];
+ assert(b&&b.text.length>=200&&/^https:\/\//.test(b.source), "Missing sourced biography: "+id);
+}
 assert(Object.keys(entries).length>=110,"minimum 110 exact public biography mappings");
 const base=JSON.parse(fs.readFileSync("la-telarana/one-note-seed.js","utf8").split("window.IDEA_TELARANA_ONENOTE = ")[1].trim().replace(/;$/,""));
 const p1=JSON.parse(fs.readFileSync("la-telarana/podcast-vaquero-150.js","utf8").split("window.IDEA_TELARANA_PODCAST_150 = ")[1].trim().replace(/;$/,""));
