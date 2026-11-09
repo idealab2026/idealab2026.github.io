@@ -156,7 +156,7 @@ d.edges.forEach(function(e){
  var focus=relationDetails[key]||relationDetails[reverse];
  if(!linked){
   var related=d.edges.filter(function(x){return(x.a===e.a||x.b===e.a||x.a===e.b||x.b===e.b)&&x.id!==e.id});
-  var key2=related.map(function(x){return x.a.replace(/^cv26-/,"")}).concat(related.map(function(x){return x.b.replace(/^cv26-/,""))).find(function(k){return blocks[k]});
+  var key2=related.map(function(x){return x.a.replace(/^cv26-/,"")}).concat(related.map(function(x){return x.b.replace(/^cv26-/,"") })).find(function(k){return blocks[k]});
   linked=blocks[key2]||"La entrevista relaciona a estas dos entidades durante una exposición sobre instituciones, política o inteligencia; no aporta en este tramo una demostración documental independiente de todas sus referencias.";
  }
  var contextual=linked.split(". ").slice(0,3).join(". ");
