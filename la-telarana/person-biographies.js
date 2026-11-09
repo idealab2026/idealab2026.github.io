@@ -129,6 +129,26 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "sourceTitle": "Trayectoria profesional contrastada · Newtral (2025)",
       "also": "https://elpais.com/espana/2025-10-26/quien-es-leire-diez-la-historia-de-una-desconocida-militante-del-psoe-acusada-de-liderar-un-plan-contra-la-uco-y-anticorrupcion.html",
       "reviewedAt": "2026-11-09"
+    },
+    "cv26-antonio-hernando": {
+      "text": "Antonio Hernando Vera (Madrid, 1967) es un abogado y político español del PSOE. Fue diputado en el Congreso durante varias legislaturas y portavoz parlamentario socialista; también desempeñó responsabilidades en el gabinete de la Presidencia del Gobierno y en telecomunicaciones. Su trayectoria profesional incluye la abogacía especializada en extranjería y asilo. Las afirmaciones del episodio sobre una reunión en Ferraz deben consultarse en su apartado de fuentes, no confundirse con esta biografía.",
+      "source": "https://www.psoe.es/conocenos/comision-ejecutiva-federal/antonio-hernando-vera/",
+      "sourceTitle": "Trayectoria profesional publicada por el PSOE",
+      "also": "https://digital.gob.es/gl/Prueba_SEDIA/ministerio/organigrama_organos/setid/se_tid",
+      "reviewedAt": "2026-11-09"
+    },
+    "cv26-juanfran-serrano": {
+      "text": "Juan Francisco Serrano Martínez (Bedmar, Jaén, 1988) es ingeniero técnico industrial y político español del PSOE. Fue alcalde de Bedmar y Garcíez y ha ejercido como diputado en el Congreso, representando a la provincia de Jaén. También desarrolló su actividad orgánica en Juventudes Socialistas de Jaén. Su identificación y sus responsabilidades públicas constan en el registro parlamentario; cualquier referencia a material de Villarejo debe tratarse por separado.",
+      "source": "https://www.congreso.es/es/busqueda-de-diputados?_diputadomodule_mostrarFicha=true&codParlamentario=40&idLegislatura=XV",
+      "sourceTitle": "Ficha parlamentaria · Congreso de los Diputados",
+      "reviewedAt": "2026-11-09"
+    },
+    "cv26-ion-antolin": {
+      "text": "Ion Antolín Llorente (Valladolid, 1977) es un profesional español de la comunicación política e institucional. Ha trabajado en comunicación corporativa para entidades financieras, fue director de Comunicación del PSOE y ocupó responsabilidades en la Secretaría de Estado de Comunicación y en la coordinación informativa del Gobierno. Su trayectoria consta en currículos oficiales; eso no demuestra que participara en ninguna conducta irregular sugerida en el podcast.",
+      "source": "https://transparencia.gob.es/servicios-buscador/contenido/curriculums.htm?id=CV_37610",
+      "sourceTitle": "Currículum oficial · Portal de Transparencia",
+      "also": "https://www.psoe.es/actualidad/noticias-actualidad/ion-antolin-llorente-nuevo-director-de-comunicacion-del-psoe/",
+      "reviewedAt": "2026-11-09"
     }
   }
 };
