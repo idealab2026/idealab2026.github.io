@@ -603,3 +603,127 @@ Object.assign(window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS, {
     "title": "Peter Thiel"
   }
 });
+
+/* Referencias por nombre en Wikimedia (candidatos, NO validación visual de las imágenes). */
+Object.assign(window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS,{
+  "f10-prada": {
+    "lang": "es",
+    "title": "Juan Manuel de Prada"
+  },
+  "f10-banos": {
+    "lang": "es",
+    "title": "Pedro Baños Bajo"
+  },
+  "f10-franco": {
+    "lang": "es",
+    "title": "Francisco Franco"
+  },
+  "f11-azana": {
+    "lang": "es",
+    "title": "Manuel Azaña"
+  },
+  "f11-mola": {
+    "lang": "es",
+    "title": "Emilio Mola"
+  },
+  "f11-negrin": {
+    "lang": "es",
+    "title": "Juan Negrín"
+  },
+  "f11-hitler": {
+    "lang": "es",
+    "title": "Adolf Hitler"
+  },
+  "f11-mussolini": {
+    "lang": "es",
+    "title": "Benito Mussolini"
+  },
+  "f11-primo": {
+    "lang": "es",
+    "title": "José Antonio Primo de Rivera"
+  },
+  "f12-prada": {
+    "lang": "es",
+    "title": "Juan Manuel de Prada"
+  },
+  "f12-maranon": {
+    "lang": "es",
+    "title": "Gregorio Marañón"
+  },
+  "f13-stalin": {
+    "lang": "es",
+    "title": "Joseph Stalin"
+  },
+  "f13-churchill": {
+    "lang": "es",
+    "title": "Winston Churchill"
+  },
+  "f13-roosevelt": {
+    "lang": "es",
+    "title": "Franklin D. Roosevelt"
+  },
+  "f14-binladen": {
+    "lang": "es",
+    "title": "Osama bin Laden"
+  },
+  "f14-bush": {
+    "lang": "es",
+    "title": "George W. Bush"
+  },
+  "f16-banos": {
+    "lang": "es",
+    "title": "Pedro Baños Bajo"
+  },
+  "f16-gisbert": {
+    "lang": "es",
+    "title": "Rubén Gisbert"
+  },
+  "f17-margallo": {
+    "lang": "es",
+    "title": "José Manuel García-Margallo"
+  },
+  "f19-lorenzo": {
+    "lang": "es",
+    "title": "Lorenzo Ramírez"
+  },
+  "f20-lorenzo": {
+    "lang": "es",
+    "title": "Lorenzo Ramírez"
+  },
+  "f23-lorenzo": {
+    "lang": "es",
+    "title": "Lorenzo Ramírez"
+  },
+  "f23-putin": {
+    "lang": "es",
+    "title": "Vladimir Putin"
+  },
+  "f24-lorenzo": {
+    "lang": "es",
+    "title": "Lorenzo Ramírez"
+  },
+  "f25-lorenzo": {
+    "lang": "es",
+    "title": "Lorenzo Ramírez"
+  },
+  "f16-trump": {
+    "lang": "es",
+    "title": "Donald Trump"
+  },
+  "f17-trump": {
+    "lang": "es",
+    "title": "Donald Trump"
+  },
+  "f19-trump": {
+    "lang": "es",
+    "title": "Donald Trump"
+  },
+  "f23-trump": {
+    "lang": "es",
+    "title": "Donald Trump"
+  },
+  "f25-trump": {
+    "lang": "es",
+    "title": "Donald Trump"
+  }
+});
