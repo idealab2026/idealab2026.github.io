@@ -79,7 +79,7 @@ function make(options){
   const detail=clip((p.scale-.16)/1.30,0,1);
   const multiplier=density+(1-density)*detail;
   const size=(emphasized?30:22)*p.scale*multiplier;
-  return clip(size,1.5,emphasized?66:56);
+  return clip(size,1.5,emphasized?116:96);
  }
  function drawOrb(){
   const cx=w/2+panX,cy=h/2+panY,rr=ORB_RADIUS*Math.min(w/1450,h/950)*zoom;
