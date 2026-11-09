@@ -219,6 +219,34 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "twp253-jordi-pujol": {
       "lang": "es",
       "title": "Jordi Pujol"
+    },
+    "twp312-javier-chicote": {
+      "lang": "es",
+      "title": "Javier Chicote"
+    },
+    "twp312-luis-roldan": {
+      "lang": "es",
+      "title": "Luis Roldán"
+    },
+    "twp312-miguel-bernad": {
+      "lang": "es",
+      "title": "Miguel Bernad"
+    },
+    "twp312-luis-pineda": {
+      "lang": "es",
+      "title": "Luis Pineda"
+    },
+    "twp312-francisco-correa": {
+      "lang": "es",
+      "title": "Francisco Correa"
+    },
+    "twp312-jose-luis-abalos": {
+      "lang": "es",
+      "title": "José Luis Ábalos"
+    },
+    "twp312-delcy-rodriguez": {
+      "lang": "es",
+      "title": "Delcy Rodríguez"
     }
   },
   "curated": {
@@ -489,6 +517,62 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://web.gencat.cat/es/generalitat/qui-som/historia-generalitat/generalitat-contemporania",
       "sourceTitle": "Generalitat de Catalunya · historia de sus gobiernos",
       "also": "https://www.parlament.cat/web/composicio/diputats-fitxa/index.html?p_codi=188&p_legislatura=1",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-javier-chicote": {
+      "text": "Javier Chicote Lerena (Logroño, 1979) es doctor en Periodismo y periodista de investigación. Trabajó en Interviú y en el diario ABC, entre otros medios, y obtuvo el Premio APM al Mejor Periodista del Año 2018 por trabajos de investigación sobre asuntos políticos y económicos. En enero de 2025 fue entrevistado durante más de cinco horas por Jordi Wild, repasando casos históricos de corrupción, mecanismos de investigación periodística, visitas a centros penitenciarios y su relación con fuentes. Su presencia como narrador no convierte automáticamente sus hipótesis o acusaciones en hechos judicialmente probados.",
+      "source": "https://investigacionapi.com/portada/2019/05/30/javier-chicote-recibira-el-premio-de-la-apm-al-mejor-periodista-del-ano/",
+      "sourceTitle": "Asociación de Periodistas de Investigación · Premio APM 2018",
+      "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-luis-roldan": {
+      "text": "Luis Roldán Ibáñez (1943–2022) fue director general de la Guardia Civil de 1986 a 1993 y delegado del Gobierno en Navarra anteriormente. Protagonizó uno de los principales escándalos de corrupción de la España de los años noventa y fue condenado por delitos como malversación y cohecho. En el episodio #312 Chicote lo usa como ejemplo para discutir cómo puede corromperse un alto cargo cuando tiene acceso a dinero y poder. El detalle anecdótico concreto que cuenta sobre fondos reservados procede del relato oral del periodista y no se ha contrastado aquí con el sumario original.",
+      "source": "https://es.wikipedia.org/wiki/Luis_Rold%C3%A1n",
+      "sourceTitle": "Biografía de Luis Roldán; referencias históricas a contrastar en sentencias",
+      "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=360s",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-miguel-bernad": {
+      "text": "Miguel Bernad Remón es un abogado y dirigente de Manos Limpias, organización conocida por intervenir como acusación popular en diversos procedimientos judiciales. Javier Chicote aborda en The Wild Project #312 sus encuentros con él, sus denuncias y sus investigaciones sobre la asociación. En marzo de 2024 el Tribunal Supremo anuló las condenas por extorsión y estafa relacionadas con la causa Ausbanc–Manos Limpias, absolviendo a Bernad y a Luis Pineda: las prácticas descritas en el fallo no cumplían, a juicio del Tribunal, los elementos penales exigidos. La crítica del periodista no equivale a una condena.",
+      "source": "https://www.rtve.es/noticias/20240315/supremo-absuelve-ausbanc-manos-limpias-extorsionar-bancos/16016998.shtml",
+      "sourceTitle": "RTVE · sentencia absolutoria del Tribunal Supremo, 15/03/2024",
+      "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=8655s",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-luis-pineda": {
+      "text": "Luis Pineda Salido fue presidente de Ausbanc, asociación de usuarios de servicios bancarios que editaba publicaciones y estableció relaciones comerciales y procesales con entidades financieras. Su actividad y su relación con Manos Limpias fueron objeto de procesos judiciales y de investigaciones periodísticas, entre ellas las relatadas por Javier Chicote. El Tribunal Supremo lo absolvió el 15 de marzo de 2024 de los delitos de extorsión y estafa por los que había sido condenado por la Audiencia Nacional. Debe diferenciarse esta conclusión judicial de las opiniones desfavorables que se expresan en la entrevista.",
+      "source": "https://www.rtve.es/noticias/20240315/supremo-absuelve-ausbanc-manos-limpias-extorsionar-bancos/16016998.shtml",
+      "sourceTitle": "RTVE · absolución de Ausbanc y Manos Limpias",
+      "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=9017s",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-francisco-correa": {
+      "text": "Francisco Correa Sánchez es un empresario español que lideró una red de adjudicaciones, servicios y comisiones objeto del caso Gürtel, especialmente en determinadas administraciones gobernadas por el Partido Popular. La Audiencia Nacional dictó sentencia sobre la primera época y el Tribunal Supremo confirmó en octubre de 2020 una parte sustancial de las condenas y la responsabilidad civil del PP como partícipe a título lucrativo. Chicote explica cómo se acercó a esas operaciones investigando el urbanismo de Boadilla y municipios próximos. Las responsabilidades individuales han de limitarse a las fases y hechos de cada resolución.",
+      "source": "https://www.rtve.es/noticias/20201014/claves-sentencia-del-supremo-sobre-guertel-hubo-caja-b-pp/2045051.shtml",
+      "sourceTitle": "RTVE · claves de la sentencia del Supremo sobre Gürtel",
+      "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=13380s",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-jose-luis-penas": {
+      "text": "José Luis Peñas fue concejal en Majadahonda y desempeñó un papel relevante en el origen de las investigaciones sobre la trama Gürtel. En la entrevista de 2025, Javier Chicote cuenta que Peñas grabó conversaciones con Francisco Correa y acudió a la Fiscalía Anticorrupción, actuaciones que ayudaron a hacer públicos y a investigar los hechos. No debe confundirse la función de denunciante con una ausencia automática de responsabilidad en todas las conductas investigadas. La situación penal, atenuantes e indultos de Peñas requieren cotejo con las sentencias y resoluciones administrativas específicas.",
+      "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
+      "sourceTitle": "Entrevista · relato de Chicote sobre José Luis Peñas (03:44 a 03:48)",
+      "also": "https://www.rtve.es/noticias/20201014/claves-sentencia-del-supremo-sobre-guertel-hubo-caja-b-pp/2045051.shtml",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-jose-luis-abalos": {
+      "text": "José Luis Ábalos Meco es un político español vinculado al PSOE que fue ministro de Fomento y posteriormente de Transportes y secretario de Organización del partido. Durante su etapa ministerial tuvo entre sus colaboradores a Koldo García. El episodio de Javier Chicote incluye preguntas sobre sus relaciones en el ministerio y sobre la escala de Delcy Rodríguez en Barajas. La existencia de vínculos laborales y la mención de procedimientos periodísticos no demuestra por sí misma delitos individuales; cada caso requiere identificar resoluciones y fechas procesales precisas.",
+      "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
+      "sourceTitle": "Transcripción externa del episodio #312 · segmento Ábalos-Koldo",
+      "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=6361s",
+      "reviewedAt": "2026-11-09"
+    },
+    "twp312-delcy-rodriguez": {
+      "text": "Delcy Rodríguez Gómez es una dirigente política venezolana que ocupó la Vicepresidencia Ejecutiva de Venezuela y otros altos cargos. Una escala de su avión en el aeropuerto madrileño de Barajas en enero de 2020 fue objeto de una importante controversia política sobre las condiciones de entrada y la situación de sanciones internacionales. En The Wild Project #312, Chicote relata sus investigaciones periodísticas sobre los preparativos, ocupantes y reuniones del episodio. Esas afirmaciones deben contrastarse individualmente con expedientes oficiales; la mera escala y mención de otras personas no prueban acuerdos ilícitos.",
+      "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
+      "sourceTitle": "Transcripción externa · bloque Delcy Rodríguez 01:57–02:10",
+      "also": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7060s",
       "reviewedAt": "2026-11-09"
     }
   }
