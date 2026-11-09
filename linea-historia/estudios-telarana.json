@@ -422,6 +422,33 @@
       }
     },
     {
+      "id": "study-v7-guantanamo-primeros-detenidos-2002",
+      "y": 2002.027397260274,
+      "t": "Llegan los primeros veinte detenidos al centro estadounidense de Guantánamo",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 07 · hechos externos documentados",
+      "d": "El 11 de enero de 2002 llegaron a la base naval de Guantánamo los primeros veinte detenidos trasladados desde Afganistán, bajo custodia de Estados Unidos. La cronología oficial de la Armada estadounidense documenta el día, el contingente inicial y la puesta en marcha de la unidad encargada de detenciones. El episodio de Chicote menciona sus visitas periodísticas al centro, cuya fecha exacta no se deduce aquí.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2002-01-11",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 7,
+        "sourceTitle": "The Wild Project #312 · Javier Chicote",
+        "sourceUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
+        "confirmedBy": {
+          "label": "Armada de Estados Unidos · Operation Enduring Freedom 2001-2002",
+          "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/u/us-navy-operation-enduring-freedom-2001-2002.html"
+        },
+        "relatedTelarana": [
+          "twp312-guantanamo"
+        ],
+        "methodologicalLimits": "Hecho documental de historia militar sobre la apertura efectiva de la instalación de detención; no acredita por sí mismo las experiencias personales del periodista ni la legalidad de la detención individual de cada interno."
+      }
+    },
+    {
       "id": "study-v1-11m-2004",
       "y": 2004.191256830601,
       "t": "Atentados terroristas del 11-M contra trenes de Cercanías en Madrid",
@@ -564,6 +591,91 @@
       }
     },
     {
+      "id": "study-v7-mocion-censura-2018",
+      "y": 2018.4136986301369,
+      "t": "El Congreso aprueba la moción de censura contra Mariano Rajoy",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 07 · hechos externos documentados",
+      "d": "El 1 de junio de 2018 el Congreso de los Diputados aprobó la moción de censura contra el Gobierno de Mariano Rajoy con Pedro Sánchez como candidato a sucederlo. La votación registrada fue de 180 votos favorables, 169 contrarios y una abstención. Chicote relaciona políticamente esta moción con el caso Gürtel, pero los motivos de la votación no deben reducirse a una sola explicación causal.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2018-06-01",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 7,
+        "sourceTitle": "The Wild Project #312 · Javier Chicote",
+        "sourceUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
+        "confirmedBy": {
+          "label": "Congreso de los Diputados · resultado de la moción de censura",
+          "url": "https://www.congreso.es/gl/notas-de-prensa?_notasprensa_mvcPath=detalle&_notasprensa_notaId=28789&p_p_id=notasprensa&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal"
+        },
+        "relatedTelarana": [
+          "twp312-mocion-2018",
+          "twp312-gurtel"
+        ],
+        "methodologicalLimits": "Fecha, resultado y participantes acreditados por el Diario de Sesiones y la nota del Congreso. El peso político concreto de Gürtel es una interpretación que debe presentarse separadamente."
+      }
+    },
+    {
+      "id": "study-v7-premio-chicote-apm-2019",
+      "y": 2019.4082191780822,
+      "t": "Se anuncia el Premio APM al Mejor Periodista de 2018 para Javier Chicote",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 07 · hechos externos documentados",
+      "d": "El 30 de mayo de 2019 la Asociación de Periodistas de Investigación comunicó que Javier Chicote recibiría el Premio de la Asociación de la Prensa de Madrid al Mejor Periodista de 2018. El reconocimiento aludía a investigaciones periodísticas sobre la tesis de Pedro Sánchez, la Fundación Messi y pagos de empresas al Partido Popular dentro de la trama Púnica. La fecha es la del anuncio, no la de cada investigación.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2019-05-30",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 7,
+        "sourceTitle": "The Wild Project #312 · Javier Chicote",
+        "sourceUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
+        "confirmedBy": {
+          "label": "Asociación de Periodistas de Investigación · anuncio del premio",
+          "url": "https://investigacionapi.com/portada/2019/05/30/javier-chicote-recibira-el-premio-de-la-apm-al-mejor-periodista-del-ano/"
+        },
+        "relatedTelarana": [
+          "twp312-javier-chicote",
+          "twp312-journalism"
+        ],
+        "methodologicalLimits": "El hecho acreditado es el anuncio de un galardón profesional por trabajos concretos. El reconocimiento no convierte cada interpretación contenida en tales investigaciones en verdad judicial."
+      }
+    },
+    {
+      "id": "study-v7-supremo-guertel-2020",
+      "y": 2020.7841530054645,
+      "t": "El Tribunal Supremo confirma la responsabilidad civil del PP a título lucrativo en Gürtel",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 07 · hechos externos documentados",
+      "d": "El 14 de octubre de 2020 el Tribunal Supremo confirmó una parte sustancial de la sentencia de la Audiencia Nacional relativa a la primera época del caso Gürtel, incluidas condenas penales individuales y la responsabilidad civil del Partido Popular como partícipe a título lucrativo en determinados hechos. El propio fallo distinguió esa responsabilidad civil de la cuestión de la presunta caja B, que no constituía el objeto penal de esa pieza.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2020-10-14",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 7,
+        "sourceTitle": "The Wild Project #312 · Javier Chicote",
+        "sourceUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
+        "confirmedBy": {
+          "label": "RTVE · fallo del Tribunal Supremo sobre Gürtel, 14/10/2020",
+          "url": "https://www.rtve.es/noticias/20201014/claves-sentencia-del-supremo-sobre-guertel-hubo-caja-b-pp/2045051.shtml"
+        },
+        "relatedTelarana": [
+          "twp312-gurtel",
+          "twp312-partido-popular",
+          "twp312-francisco-correa"
+        ],
+        "methodologicalLimits": "La responsabilidad a título lucrativo es civil, no una condena penal a toda la organización ni acredita que todos sus responsables conocieran los hechos ilícitos. El alcance debe seguir la sentencia y sus modificaciones."
+      }
+    },
+    {
       "id": "study-v2-pegasus-revelacion-2022",
       "y": 2022.331506849315,
       "t": "El Gobierno confirma el espionaje Pegasus contra Sánchez y Robles",
@@ -591,6 +703,35 @@
           "ce26-bolanos"
         ],
         "methodologicalLimits": "La fecha corresponde al anuncio público, no a las intrusiones de 2021. La autoría de Pegasus, supuestas grabaciones de chantaje y finalidades políticas no se desprenden de estos informes."
+      }
+    },
+    {
+      "id": "study-v7-supremo-ausbanc-manos-limpias-2024",
+      "y": 2024.2021857923498,
+      "t": "El Supremo absuelve a Luis Pineda y Miguel Bernad en la causa Ausbanc–Manos Limpias",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 07 · hechos externos documentados",
+      "d": "El 15 de marzo de 2024 el Tribunal Supremo hizo pública una sentencia que absolvió a Luis Pineda, vinculado a Ausbanc, y Miguel Bernad, dirigente de Manos Limpias, de los delitos de extorsión y estafa examinados en la causa. Revocó así condenas anteriores de la Audiencia Nacional. La resolución consideró que ciertas actuaciones podían ser censurables, pero no cumplían los requisitos exigidos por los delitos imputados.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2024-03-15",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 7,
+        "sourceTitle": "The Wild Project #312 · Javier Chicote",
+        "sourceUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
+        "confirmedBy": {
+          "label": "RTVE · resolución absolutoria del Supremo, 15/03/2024",
+          "url": "https://www.rtve.es/noticias/20240315/supremo-absuelve-ausbanc-manos-limpias-extorsionar-bancos/16016998.shtml"
+        },
+        "relatedTelarana": [
+          "twp312-absolucion-2024",
+          "twp312-miguel-bernad",
+          "twp312-luis-pineda"
+        ],
+        "methodologicalLimits": "Debe mantenerse la absolución como desenlace procesal en esta causa. No se deben convertir las opiniones de Chicote ni las condenas revocadas en hechos penales vigentes."
       }
     },
     {
