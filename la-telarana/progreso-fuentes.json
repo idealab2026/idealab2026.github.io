@@ -78,7 +78,7 @@
     "committedVerifiedEvents": 15,
     "fromReviewedSource": 5,
     "fromSourceInReview": 3,
-    "publishedInPages": false,
+    "publishedInPages": true,
     "eventsBySource": {
       "1": [
         "study-v1-carrero-1973",
@@ -102,7 +102,7 @@
         "study-vf150-rantisi-2004"
       ]
     },
-    "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42656789877",
+    "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42658751871",
     "publishedCheckDate": "2026-11-09",
     "fromSupplementalResearch": 7
   },
@@ -111,7 +111,7 @@
       "title": "Vaquero Podcast #150 · Eric Frattini",
       "url": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "publishedAt": "2026-09-28",
-      "status": "cronologia_contrastada_numero_de_fuente_pendiente",
+      "status": "acontecimientos_y_contexto_publicados_numero_de_fuente_pendiente",
       "catalogOrder": null,
       "graphNodesAlreadyRecorded": 80,
       "graphRelationsAlreadyRecorded": 99,
