@@ -16,7 +16,7 @@ const normal=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").to
 for(const e of feed.items){
  assert(!feedIds.has(e.id),"ID duplicado: "+e.id);
  assert(!ids.has(e.id),"ID ya presente en la línea histórica: "+e.id);
- assert(/^study-v[12]-[a-z0-9-]+$/.test(e.id),"ID editorial sin prefijo de fuente");
+ assert(/^study-(?:v\d+|vf\d+)-[a-z0-9-]+$/.test(e.id),"ID editorial sin prefijo de fuente");
  feedIds.add(e.id);
  const inv=e.investigation||{};
  assert(inv.status==="hecho_documentado","Solo se pueden publicar hechos contrastados");
@@ -33,10 +33,15 @@ for(const e of feed.items){
  const key=normal(e.t)+"|"+year;
  assert(!dedupKeys.has(key),"Evento repetido: "+key);
  dedupKeys.add(key);
- bySource[inv.sourceOrder]=(bySource[inv.sourceOrder]||0)+1;
+ const sourceKey=inv.sourceOrder===null?"suplementaria":inv.sourceOrder;
+ if(inv.sourceOrder===null)assert(inv.sourceCatalogStatus==="pendiente_de_reconciliar_con_inventario_33","Fuente sin numeración debe declarar su situación de catálogo");
+ bySource[sourceKey]=(bySource[sourceKey]||0)+1;
 }
 assert.equal(bySource[1],5,"Carga histórica de la fuente 1");
 assert.equal(bySource[2],3,"Contexto externo de la fuente 2");
+assert.equal(bySource.suplementaria,4,"Cuatro hechos contrastados de fuente no numerada");
+assert.equal(progress.timeline.committedVerifiedEvents,feed.items.length,"Progreso histórico inconsistente");
+assert.equal(progress.timeline.fromSupplementalResearch,bySource.suplementaria,"La investigación suplementaria debe contabilizarse por separado");
 assert.equal(progress.counts.reviewedPublished,1,"Una cronología no completa fuentes pendientes");
 assert(timeline.includes('readJSON("./estudios-telarana.json")'),"El visor no consume el catálogo");
 assert(timeline.includes("function showStudyNote("),"Faltan fichas documentales");
