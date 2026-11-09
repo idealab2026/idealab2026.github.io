@@ -32,6 +32,8 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_notebooklm_bridge.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_source_mapper.py' -v
           python3 -m unittest discover -s scripts -p 'test_biblioteca.py' -v
+      - name: Validar distribución 3D y gestos de zoom
+        run: node scripts/test_telarana_3d.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
