@@ -1,8 +1,7 @@
-/* Biografías independientes de las afirmaciones y declaraciones de los podcasts.
-   Solo se mapean identidades inequívocas; no se incluyen domicilios privados. */
+/* Biografías independientes y contexto textual con separación de hechos y declaraciones de entrevistas. */
 window.IDEA_TELARANA_BIOGRAPHIES = {
   "version": 1,
-  "reviewedAt": "2026-11-09",
+  "reviewedAt": "2026-11-10",
   "wikiPages": {
     "on-robert-maxwell": {
       "lang": "en",
@@ -629,6 +628,168 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "sourceTitle": "Congreso de los Diputados · ficha parlamentaria de Pablo Iglesias",
       "also": "https://www.poderjudicial.es/stfls/AUDIENCIA%20NACIONAL/JURISPRUDENCIA/2022-6-27%20Provid%20JCI%206%20archivo.pdf",
       "reviewedAt": "2026-11-09"
+    },
+    "f18-gisbert": {
+      "text": "Rubén Gisbert es abogado y comunicador español. En el episodio del 8 de febrero de 2026 ejerce como entrevistador de Lorenzo Ramírez, plantea hipótesis sobre el caso Epstein y el equilibrio de poder internacional; sus preguntas y valoraciones no acreditan por sí mismas los vínculos que se discuten.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-lorenzo": {
+      "text": "Lorenzo Ramírez es periodista y analista español de economía, política internacional y mercados. En la fuente 18 desarrolla sus interpretaciones sobre las publicaciones Epstein, la política estadounidense y Bitcoin. La revisión distingue sus argumentos de los documentos primarios que los corroboran o contradicen.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-lorenzo": {
+      "text": "Lorenzo Ramírez es periodista y analista español de economía y geopolítica. En Inversión Racional #68 analiza la pérdida relativa de poder estadounidense, la UE, USAID, las tecnológicas y los sistemas monetarios, con hipótesis que requieren contraste caso por caso.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-luismi": {
+      "text": "Luis Miguel Ortiz es divulgador financiero y presentador de Inversión Racional. En el episodio #68 conduce la conversación con Lorenzo Ramírez, plantea preguntas sobre actores políticos y económicos y publica el índice y bibliografía del programa.",
+      "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-trump": {
+      "text": "Donald Trump es político y empresario estadounidense, presidente de Estados Unidos de 2017 a 2021 y nuevamente desde enero de 2025. La fuente 18 contiene hipótesis acerca de su relación con el Departamento de Justicia y presiones políticas; la publicación documental del caso Epstein es verificable, no así las inferencias de control o chantaje.",
+      "source": "https://www.whitehouse.gov/administration/donald-j-trump/",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-netanyahu": {
+      "text": "Benjamin Netanyahu es político israelí y dirigente del partido Likud que ha ejercido varios mandatos como primer ministro de Israel. La entrevista lo menciona en el debate sobre Irán y política estadounidense, sin pruebas incorporadas de una red oculta que determine decisiones oficiales.",
+      "source": "https://es.wikipedia.org/wiki/Benjam%C3%ADn_Netanyahu",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-gates": {
+      "text": "Bill Gates es empresario estadounidense, cofundador de Microsoft y promotor de la fundación filantrópica que lleva su apellido. Se le menciona como símbolo de una supuesta redistribución de influencia entre élites, tesis opinativa sin prueba individual de delito.",
+      "source": "https://www.gatesfoundation.org/about/leadership/bill-gates",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-thiel": {
+      "text": "Peter Thiel es inversor y empresario tecnológico estadounidense, cofundador de PayPal y Palantir. Su trayectoria empresarial es documentable, pero el episodio plantea interpretaciones más amplias sobre poder político que no pueden darse por acreditadas solo por su mención.",
+      "source": "https://en.wikipedia.org/wiki/Peter_Thiel",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-dimon": {
+      "text": "Jamie Dimon es directivo bancario estadounidense, presidente y consejero delegado de JPMorgan Chase. La fuente 18 contiene una acusación grave en un relato sobre inteligencia y finanzas que no se valida y no debe convertirse en arista criminal.",
+      "source": "https://www.jpmorganchase.com/about/leadership/jamie-dimon",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-xi": {
+      "text": "Xi Jinping es dirigente político chino y presidente de la República Popular China desde 2013. El episodio trata las relaciones comerciales y la rivalidad estratégica de China con Estados Unidos; no se infiere una conexión clandestina a partir de esa discusión.",
+      "source": "https://es.wikipedia.org/wiki/Xi_Jinping",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-zelenski": {
+      "text": "Volodímir Zelenski es político ucraniano y presidente de Ucrania desde 2019. El programa formula pronósticos sobre negociaciones y su futuro personal; estos no se registran como hechos documentados.",
+      "source": "https://es.wikipedia.org/wiki/Volod%C3%ADmir_Zelenski",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f18-sanchez": {
+      "text": "Pedro Sánchez es dirigente del PSOE y presidente del Gobierno español desde 2018. En el episodio aparece ligado al debate sobre identificación digital y redes sociales; no se le atribuyen medidas no promulgadas o actuaciones ilícitas por inferencia.",
+      "source": "https://www.lamoncloa.gob.es/presidente/Paginas/index.aspx",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-monnet": {
+      "text": "Jean Monnet (1888–1979) fue un funcionario y estratega económico francés que impulsó la integración europea de posguerra. Cooperó en la elaboración del plan presentado por Schuman en 1950. El entrevistado cuestiona su cercanía a EEUU, pero la expresión golpe de Estado refleja su interpretación.",
+      "source": "https://commission.europa.eu/news-and-media/news/celebrating-75-years-europe-vision-reality-2025-05-09_en",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-schuman": {
+      "text": "Robert Schuman (1886–1963) fue ministro de Asuntos Exteriores francés y figura central de la integración europea. Presentó el 9 de mayo de 1950 una propuesta de cooperación en carbón y acero; la fuente 21 lo invoca en un discurso crítico sobre los orígenes de la UE.",
+      "source": "https://commission.europa.eu/news-and-media/news/celebrating-75-years-europe-vision-reality-2025-05-09_en",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-brzezinski": {
+      "text": "Zbigniew Brzezinski (1928–2017) fue politólogo y consejero de seguridad nacional de EEUU entre 1977 y 1981. La entrevista lo cita como referente intelectual de geopolítica euroasiática, sin demostrar que controlara posteriores acontecimientos.",
+      "source": "https://en.wikipedia.org/wiki/Zbigniew_Brzezinski",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-kissinger": {
+      "text": "Henry Kissinger (1923–2023) fue diplomático y académico estadounidense, asesor de seguridad nacional y secretario de Estado durante la década de 1970. En el episodio sirve como referencia de teorías estratégicas sobre Eurasia y el orden internacional.",
+      "source": "https://en.wikipedia.org/wiki/Henry_Kissinger",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-peter": {
+      "text": "Peter Thiel es empresario tecnológico y cofundador de Palantir. El episodio aborda su influencia en empresas de datos y en la política de EEUU. Las opiniones sobre una tecnocracia coordinada quedan categorizadas como interpretación.",
+      "source": "https://en.wikipedia.org/wiki/Peter_Thiel",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-sam": {
+      "text": "Sam Altman es empresario tecnológico estadounidense y dirigente de OpenAI. Aparece en el tramo de la entrevista sobre empresas de inteligencia artificial y el proyecto Stargate, cuyos socios fueron anunciados públicamente en enero de 2025.",
+      "source": "https://openai.com/index/announcing-the-stargate-project/",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-merkel": {
+      "text": "Angela Merkel es política alemana que ejerció como canciller federal entre 2005 y 2021. Es utilizada como referencia en el análisis de la evolución de las políticas europeas y alemanas; no se le atribuyen operaciones encubiertas.",
+      "source": "https://en.wikipedia.org/wiki/Angela_Merkel",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-meloni": {
+      "text": "Giorgia Meloni es política italiana y dirigente de Fratelli d'Italia, presidenta del Consejo de Ministros desde 2022. La entrevista interpreta su estrategia ante las instituciones europeas, la migración y la defensa.",
+      "source": "https://en.wikipedia.org/wiki/Giorgia_Meloni",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-lagarde": {
+      "text": "Christine Lagarde es jurista y dirigente económica francesa, antigua directora gerente del FMI y presidenta del Banco Central Europeo desde 2019. Se la menciona en críticas a instituciones financieras y al euro digital; las valoraciones y acusaciones legales requieren contexto independiente.",
+      "source": "https://www.ecb.europa.eu/ecb/orga/decisions/html/cvlagarde.en.html",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-obama": {
+      "text": "Barack Obama es político estadounidense que presidió Estados Unidos entre 2009 y 2017. La fuente 21 analiza la continuidad entre su política exterior, la de Biden y la de Trump, una interpretación que debe separarse de medidas concretas.",
+      "source": "https://en.wikipedia.org/wiki/Barack_Obama",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-biden": {
+      "text": "Joe Biden es político estadounidense que fue presidente de EEUU entre 2021 y 2025. En el episodio se invoca su mandato al hablar de continuidad de política exterior estadounidense.",
+      "source": "https://en.wikipedia.org/wiki/Joe_Biden",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-trump": {
+      "text": "Donald Trump es político y empresario estadounidense. En la fuente 21 se estudia su llegada a la Casa Blanca en enero de 2025, las negociaciones internacionales, USAID y las propuestas monetarias; la entrevista mezcla hechos y pronósticos que necesitan contraste.",
+      "source": "https://www.whitehouse.gov/administration/donald-j-trump/",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-putin": {
+      "text": "Vladímir Putin es político ruso, presidente de Rusia en distintas etapas desde 2000. La fuente 21 interpreta las motivaciones de la política exterior rusa y las perspectivas de negociación sobre Ucrania sin constituir evidencia primaria de las intenciones atribuidas.",
+      "source": "https://en.wikipedia.org/wiki/Vladimir_Putin",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-musk": {
+      "text": "Elon Musk es empresario asociado a Tesla, SpaceX y otras compañías tecnológicas. El entrevistado discute su influencia política y empresarial; no se deduce de ello una coordinación clandestina con otras personas citadas.",
+      "source": "https://en.wikipedia.org/wiki/Elon_Musk",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
+    },
+    "f21-vonderleyen": {
+      "text": "Ursula von der Leyen es política alemana y presidenta de la Comisión Europea desde 2019. El programa la sitúa en el debate sobre nuevas políticas de defensa y competencias de la UE; los juicios de legitimidad del invitado no equivalen a resoluciones judiciales.",
+      "source": "https://commission.europa.eu/about/organisation/president_en",
+      "sourceTitle": "Perfil institucional, editorial o enciclopédico",
+      "reviewedAt": "2026-11-10"
     }
   }
 };
