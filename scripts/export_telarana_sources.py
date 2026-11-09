@@ -166,7 +166,7 @@ def main() -> int:
         raise RuntimeError("No hay fuentes coincidentes; no se exporta nada.")
 
     if args.inventory:
-        writer = csv.writer(sys.stdout, delimiter="\\t", lineterminator="\\n")
+        writer = csv.writer(sys.stdout, delimiter="\t", lineterminator="\n")
         writer.writerow(["numero", "cuaderno", "titulo", "enlace_original", "video_id", "tipo", "notebook_id", "source_id"])
         for number, source in enumerate(sources, 1):
             writer.writerow([
