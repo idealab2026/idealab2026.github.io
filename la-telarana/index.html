@@ -144,6 +144,38 @@ body.graph-expanded{overflow:hidden}
 .inspector .relation-endpoints button{border:1px solid #5a7184;background:#273b4b;border-radius:8px;color:#e9f1f7;font-size:.78rem;font-weight:690;padding:9px 10px;max-width:100%;overflow-wrap:anywhere;text-align:left}
 .inspector .relation-endpoints button:hover{border-color:#e3aa69}
 .inspector .podcast-entry .source-link{color:#9ad0f0}
+
+/* Corrección del corte horizontal de la escena:
+   el grid estira .graph-panel hasta la altura del inspector, mientras
+   .stage3d tenía un alto fijo de 660/530/450px. Lienzo y SVG deben llenar
+   exactamente el panel, no detenerse en esa cota intermedia. */
+.graph-panel > #stage3d,
+.graph-panel > #network{
+ position:absolute;
+ inset:0;
+ width:100%;
+ height:100%;
+ min-height:0;
+ box-sizing:border-box;
+}
+.graph-panel > #stage3d canvas{
+ display:block;
+ width:100%;
+ height:100%;
+ touch-action:none;
+}
+/* Mantener la geometría también al activar el fullscreen nativo o fallback. */
+.graph-panel:fullscreen > #stage3d,
+.graph-panel:-webkit-full-screen > #stage3d,
+.graph-panel.is-fullscreen > #stage3d,
+.graph-panel:fullscreen > #network,
+.graph-panel:-webkit-full-screen > #network,
+.graph-panel.is-fullscreen > #network{
+ inset:0;
+ width:100%;
+ height:100%;
+}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"><button class="btn" id="export">Descargar datos</button><span class="readonly-note" aria-label="Web pública de solo lectura">Consulta pública · Solo lectura</span></div>
