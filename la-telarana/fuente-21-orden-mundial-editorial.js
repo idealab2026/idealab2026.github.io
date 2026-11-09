@@ -5,10 +5,10 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
     "title": "El Nuevo Orden Mundial que nos ocultan | Lorenzo Ramírez #68",
     "url": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
     "publishedAt": "2025-03-19",
-    "reviewStage": "revision_textual_y_contrastes_documentales_focalizados_20261110",
+    "reviewStage": "revision_documental_texto_automatico_y_contrastes_2026-11-10",
     "transcriptAvailable": true,
     "sourceOrder": 21,
-    "methodologicalNote": "Capítulos publicados por el productor; no se atribuyen citas de audio. Los temas del programa no representan conexiones entre entidades.",
+    "methodologicalNote": "Transcripción automática íntegra disponible y leída en Drive privado; ausencia de minutajes y cotejo de audio. Las hipótesis en el episodio no acreditan por sí solas delitos, operaciones o vínculos entre terceros.",
     "transcriptSource": "Google Docs privado IDEA LAB, texto automático de NotebookLM",
     "transcriptCharacters": 137414,
     "transcriptTimecodesAvailable": false,
@@ -20,7 +20,7 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "name": "Podcast · Orden mundial (F21)",
       "kind": "Fuente",
       "subtitle": "Inversión Racional · episodio #68 · 19/03/2025",
-      "note": "Fuente con transcripción íntegra de NotebookLM conservada en Drive privado. Identificación de interlocutores y bloques temáticos contrastados con texto automático. NO hay cotejo de audio ni minutajes, y las hipótesis de los participantes no se afirman como hechos.",
+      "note": "Entrevista publicada el 19 de marzo de 2025, transcripción automática íntegra conservada en Drive institucional. Se dispone de capítulos y bibliografía del productor. Los vínculos del grafo distinguen mención, opinión y hecho confirmado por fuente independiente.",
       "topic3d": "global",
       "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
       "x": 5500,
@@ -33,26 +33,64 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "name": "Luis Miguel Ortiz",
       "kind": "Persona",
       "subtitle": "Presentador de Inversión Racional",
-      "note": "Divulgador financiero y fundador de Inversión Racional; entrevista a Lorenzo Ramírez por segunda vez en el episodio de marzo de 2025.",
+      "note": "Divulgador financiero y conductor de Inversión Racional. Entrevista a Lorenzo Ramírez en el episodio 68 del 19 de marzo de 2025 sobre política internacional, instituciones económicas, USAID, inteligencia artificial y dinero digital.",
       "topic3d": "finanzas",
       "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
       "x": 5730,
       "y": 2265,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "El nuevo orden mundial que nos ocultan · Lorenzo Ramírez #68",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "Plantea las preguntas y organiza un recorrido por temas que el propio productor indexa. La transcripción automática carece de minutajes fiables y separación formal de voces."
+        }
+      ]
     },
     {
       "id": "f21-lorenzo",
       "name": "Lorenzo Ramírez",
       "kind": "Persona",
       "subtitle": "Periodista y analista económico y geopolítico",
-      "note": "Invitado que analiza distintas cuestiones del sistema internacional. El índice del productor incluye EEUU, China, Rusia, Europa, USAID y empresas tecnológicas; no se han cotejado declaraciones literales.",
+      "note": "Periodista y analista económico y geopolítico. Entrevistado por Luis Miguel Ortiz en marzo de 2025, trata la rivalidad EEUU-China, Rusia y Ucrania, la construcción europea, USAID y las empresas tecnológicas. Las tesis sobre operaciones encubiertas se mantienen como declaraciones no acreditadas.",
       "topic3d": "global",
       "source": "https://www.inversionracional.com/podcast/lorenzo-ramirez-marzo-2025/",
       "x": 5960,
       "y": 2280,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "El nuevo orden mundial que nos ocultan · Lorenzo Ramírez #68",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "Presenta su interpretación de continuidad entre administraciones Obama, Biden y Trump, del orden internacional y de la formación de la Unión Europea; su descripción de esta última como 'golpe de Estado' es una valoración política."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "El nuevo orden mundial que nos ocultan · Lorenzo Ramírez #68",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "Habla de USAID, organizaciones financiadas con ayuda exterior y Palantir. Sin expedientes de subvención o contratos concretos no se acreditan las conexiones financieras o redes clandestinas sugeridas."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "El nuevo orden mundial que nos ocultan · Lorenzo Ramírez #68",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "Afirma equiparaciones entre stablecoins y monedas digitales de banco central y advierte de supuestos controles del euro digital. Son asuntos sujetos a contraste técnico: una stablecoin privada no es idéntica a una CBDC."
+        }
+      ]
     },
     {
       "id": "f21-usaid",
