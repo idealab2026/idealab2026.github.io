@@ -142,6 +142,8 @@ def main():
     parser.add_argument("--volume", help="tomo-i o tomo-ii. Requerido si el libro tiene varios cuadernos.")
     parser.add_argument("--apply", action="store_true",
                         help="Guardar en privado únicamente las correspondencias inequívocas")
+    parser.add_argument("--diagnose-missing", action="store_true",
+                        help="Mostrar solo números sin fuente y títulos no identificables, nunca IDs privados")
     args = parser.parse_args()
     check_identity()
     book, _ = find_item(args.book, None)
@@ -187,6 +189,22 @@ def main():
         print("Asociaciones privadas nuevas guardadas:", len(safe_new))
     else:
         print("Diagnóstico únicamente. Añade --apply para guardar candidatos inequívocos.")
+    if args.diagnose_missing:
+        scopes = [source_scope(source_title(source)) for source in sources]
+        available = {n for scope in scopes if scope for n in scope}
+        unmatched_ids = {vid for vid, _ in unmatched}
+        required = {n for ep in episodes if ep["id"] in unmatched_ids
+                    for n in (chapter_interval(ep["title"]) or ())}
+        missing_numbers = sorted(required - available)
+        print("Capítulos requeridos sin fuente reconocible:",
+              ", ".join(map(str, missing_numbers)) if missing_numbers else "ninguno")
+        unrecognized = sorted({source_title(source) for source, scope
+                               in zip(sources, scopes) if not scope and source_title(source)})
+        print("Títulos de fuentes sin capítulo identificable (nunca IDs privados):")
+        for title in unrecognized:
+            print("  -", title[:110])
+        if not unrecognized:
+            print("  (ninguno)")
     if unmatched:
         print("Los PENDIENTES se asignan tras inspeccionar títulos y fuentes en tu Mac.")
         print("nlm source list CUADERNO_ID --json")
