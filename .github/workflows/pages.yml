@@ -62,6 +62,7 @@ jobs:
           cp la-telarana/podcast-coronel-villarejo-2026-revision.js dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           cp la-telarana/podcast-coronel-elecciones-2026-preliminar.js dist/la-telarana/podcast-coronel-elecciones-2026-preliminar.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
+          cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
           cp biblioteca-montecristo/app.js biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
@@ -90,6 +91,10 @@ jobs:
           grep -q "v2-exhaustiva-20261109" dist/la-telarana/podcast-coronel-villarejo-2026-revision.js
           grep -q "IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO" dist/la-telarana/podcast-coronel-villarejo-2026.js
           test -s dist/la-telarana/photo-catalog.js
+          test -s dist/la-telarana/person-biographies.js
+          node --check dist/la-telarana/person-biographies.js
+          grep -q 'IDEA_TELARANA_BIOGRAPHIES' dist/la-telarana/person-biographies.js
+          grep -q 'showPersonBiography' dist/la-telarana/index.html
           grep -q "IDEA_TELARANA_WIKIPEDIA_PORTRAITS" dist/la-telarana/photo-catalog.js
           test -s dist/la-telarana/layout-seed-v2.js
           grep -q "IDEA_TELARANA_LAYOUT_V2" dist/la-telarana/layout-seed-v2.js
