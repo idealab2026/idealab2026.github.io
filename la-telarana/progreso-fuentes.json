@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 1,
-    "inReview": 9,
-    "notStarted": 59,
+    "inReview": 10,
+    "notStarted": 58,
     "pending": 68,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -340,6 +340,21 @@
       "imageRuntimeVerified": false,
       "timelineVerifiedEventsCommitted": 1,
       "qualityNotes": "Índice minutado del productor y contexto USAID del 20/01/2025; transcripción íntegra pendiente; solo vínculos editoriales y hechos independientes; el documento de trabajo permanece privado en Drive y su URL no se publica en el archivo web."
+    },
+    {
+      "order": 69,
+      "videoId": "REHYGPW0c8k",
+      "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
+      "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "status": "revision_en_curso_contexto_frattini",
+      "reviewComplete": false,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "sourceNodesDocumented": 80,
+      "sourceRelationsDocumented": 99,
+      "imageRuntimeVerified": false,
+      "timelineVerifiedEventsCommitted": 7,
+      "qualityNotes": "Fuente 69 ya se encontraba en revisión antes de la atención prioritaria a 18 y 21. Repuesto en el array inReview para cuadrar el total, sin cambiar el estado probatorio."
     }
   ],
   "timeline": {
