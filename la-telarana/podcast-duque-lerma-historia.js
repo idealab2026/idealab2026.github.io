@@ -74,7 +74,7 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
       "kind": "Persona",
       "subtitle": "Historiadora invitada · especialista en historia medieval y moderna",
       "note": "Historiadora española, investigadora y divulgadora; participa como experta invitada en el episodio sobre corrupción política histórica. Los cinco capítulos del programa se conocen por el índice publicado, pero no se dispone aún de transcripción para atribuirle frases, interpretaciones o juicios específicos.",
-      "photo": "",
+      "photo": "https://imagenes.diariodevalladolid.es/files/og_thumbnail/uploads/2024/03/14/65f37b5451bda.jpeg",
       "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
       "topic3d": "historia",
       "podcastNotes": [
@@ -87,7 +87,8 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
           "status": "contexto-externo-verificado",
           "text": "El canal marca el inicio de este capítulo en su descripción; el siguiente es contexto independiente y NO una transcripción del vídeo. Historiadora española, investigadora y divulgadora; participa como experta invitada en el episodio sobre corrupción política histórica. Los cinco capítulos del programa se conocen por el índice publicado, pero no se dispone aún de transcripción para atribuirle frases, interpretaciones o juicios específicos."
         }
-      ]
+      ],
+      "photoCredit": "Diario de Valladolid · fotografía periodística"
     },
     {
       "id": "f04-episodio",
@@ -284,7 +285,7 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
       "kind": "Persona",
       "subtitle": "Reina regente de España (1833–1840) · 1806–1878",
       "note": "Viuda de Fernando VII, madre de Isabel II y regente de España tras la muerte del rey en 1833. Posteriormente se casó con Fernando Muñoz, con quien mantuvo negocios e inversiones que han sido objeto de análisis académico. El artículo de López-Morell estudia patrimonios y redes empresariales mediante fuentes primarias, sin equivaler a una sentencia penal contemporánea.",
-      "photo": "",
+      "photo": "https://www.filodiritto.com/sites/default/files/2025-03/foto_2_3.jpg",
       "source": "https://doi.org/10.55509/ayer/1099",
       "topic3d": "historia",
       "podcastNotes": [
@@ -297,7 +298,8 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
           "status": "contexto-externo-verificado",
           "text": "El canal marca el inicio de este capítulo en su descripción; el siguiente es contexto independiente y NO una transcripción del vídeo. Viuda de Fernando VII, madre de Isabel II y regente de España tras la muerte del rey en 1833. Posteriormente se casó con Fernando Muñoz, con quien mantuvo negocios e inversiones que han sido objeto de análisis académico. El artículo de López-Morell estudia patrimonios y redes empresariales mediante fuentes primarias, sin equivaler a una sentencia penal contemporánea."
         }
-      ]
+      ],
+      "photoCredit": "Retrato histórico de María Cristina de Borbón · Vicente López"
     },
     {
       "id": "f04-fernando-munoz",
