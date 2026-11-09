@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2447">
+  <meta name="description" content="Información sobre el acceso limitado a Google Drive y Google Sheets para la automatización científica de IDEA LAB.">
+  <link rel="canonical" href="https://idealab2026.github.io/icsa/privacidad.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacidad de Idea Lab ICSA · IDEA LAB">
+  <meta property="og:description" content="Información sobre el acceso limitado a Google Drive y Google Sheets para la automatización científica de IDEA LAB.">
+  <title>Privacidad de Idea Lab ICSA · IDEA LAB</title>
+  <style>
+    :root{color-scheme:light;--navy:#0b2447;--ink:#172e48;--muted:#566981;--gold:#ba9554;--line:#dce4ec;--paper:#f6f8fa}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:#fff;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--navy);text-underline-offset:3px}
+    a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .container{max-width:1080px;margin:0 auto;padding:0 24px}
+    header{border-bottom:1px solid var(--line);background:white}
+    .head{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:92px;flex-wrap:wrap;padding-block:14px}
+    .brand{display:inline-flex;align-items:center;line-height:0}.brand img{width:170px;height:auto}
+    nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}nav a{font-size:.84rem;font-weight:650;text-decoration:none;color:var(--muted)}
+    nav a[aria-current="page"]{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:7px}
+    .hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+    .eyebrow{font-size:.75rem;font-weight:750;letter-spacing:.15em;text-transform:uppercase;color:#947338}
+    h1{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp(2.4rem,5vw,4.35rem);line-height:1.12;letter-spacing:-.035em;font-weight:600;max-width:16ch;margin:18px 0}
+    h2{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp(1.45rem,2.6vw,2rem);font-weight:600}
+    h3{font-size:1rem;color:var(--navy);margin-top:0}
+    p,li{line-height:1.75}p{max-width:80ch}
+    .lead{color:var(--muted);font-size:1.14rem;max-width:69ch}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .button{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;min-height:44px;border-radius:8px;border:1px solid var(--navy);background:var(--navy);color:white;text-decoration:none;font-weight:700;font-size:.9rem}
+    .button.secondary{background:white;color:var(--navy)}
+    section{padding:35px 0;border-bottom:1px solid var(--line)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:22px}
+    .tile{border:1px solid var(--line);border-radius:12px;padding:22px;background:white}.tile p{font-size:.91rem;margin:0;color:var(--muted)}
+    .note{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:19px 22px;margin:18px 0}
+    .note p{margin:0}.sections{max-width:850px}.sections section{padding:23px 0}
+    footer{padding:30px 0 40px;font-size:.83rem;color:var(--muted)}
+    footer .foot{display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap}
+    @media(max-width:740px){.container{padding:0 18px}.head{min-height:0}.hero{padding:44px 0 36px}.grid{grid-template-columns:1fr}nav{gap:13px}}
+  </style>
+</head>
+<body>
+<header><div class="container head">
+  <a class="brand" href="/" aria-label="IDEA LAB, página principal"><img src="/logo-idea-lab.svg" alt="IDEA LAB" width="170" height="40"></a>
+  <nav aria-label="Navegación"><a href="/">IDEA LAB</a><a href="/icsa/">ICSA</a><a href="/icsa/privacidad.html" aria-current="page">Privacidad</a></nav>
+</div></header>
+<main><div class="hero"><div class="container">
+  <span class="eyebrow">IDEA LAB / Transparencia</span>
+  <h1>Privacidad de Idea Lab ICSA.</h1>
+  <p class="lead">Esta política explica cómo la integración técnica Idea Lab ICSA accede a datos de Google para automatizar registros científicos privados.</p>
+  <p><small>Última actualización: 9 de noviembre de 2026.</small></p>
+</div></div>
+<div class="container sections">
+  <section><h2>1. Responsable y contacto</h2>
+    <p>La integración es operada por <strong>IDEA LAB</strong>, iniciativa independiente de investigación y divulgación. Para consultas relacionadas con esta integración, autorizaciones o eliminación de datos, escribe a <a href="mailto:idealab.research2026@gmail.com">idealab.research2026@gmail.com</a>.</p>
+  </section>
+  <section><h2>2. Datos a los que accede</h2>
+    <p>ICSA utiliza la autorización OAuth de Google con el alcance <code>https://www.googleapis.com/auth/drive.file</code>, limitado a los archivos y carpetas de Google Drive a los que la aplicación haya recibido acceso. Entre ellos puede figurar un registro institucional de Google Sheets y una carpeta de evidencias asociadas.</p>
+    <p>Los datos científicos tratados pueden contener identificadores de predicciones, fechas, probabilidades, versiones de modelos, estados, metadatos de fuentes y comprobantes de auditoría. El acceso OAuth también requiere información técnica indispensable para autorizar la conexión y verificar la cuenta institucional.</p>
+  </section>
+  <section><h2>3. Finalidades y operaciones</h2>
+    <p>Los datos se emplean exclusivamente para comprobar los archivos autorizados, preparar y registrar emisiones científicas conforme al protocolo, conservar evidencias, evitar duplicaciones y verificar resultados. No se utilizan para publicidad personalizada, perfiles comerciales ni venta de datos.</p>
+    <p>Las operaciones pueden incluir lectura de registros, incorporación de nuevas filas, escritura y relectura de evidencias, y comprobación de integridad y sellos temporales. El laboratorio privado y las credenciales no se distribuyen mediante esta página pública.</p>
+  </section>
+  <section><h2>4. Almacenamiento y terceros técnicos</h2>
+    <p>Los registros y evidencias de investigación se almacenan en recursos institucionales privados de Google Drive y Google Sheets. Las credenciales técnicas necesarias para la automatización se configuran como secretos protegidos del sistema de ejecución GitHub Actions; no se publican en el código web.</p>
+    <p>Google y GitHub intervienen como proveedores de infraestructura y pueden procesar datos técnicos conforme a sus propias condiciones. Para acreditar ciertos registros pueden utilizarse servicios de sellado temporal. Esta web se aloja en GitHub Pages, que puede procesar registros técnicos de acceso al sitio.</p>
+    <p>No se publican los expedientes científicos privados en esta página ni se comparten con usuarios de la web.</p>
+  </section>
+  <section><h2>5. Conservación y seguridad</h2>
+    <p>Los registros científicos y comprobantes se conservan mientras sean necesarios para la trazabilidad, auditoría, reproducción y evaluación de la investigación. Las credenciales se conservan solo durante su uso autorizado y pueden revocarse o sustituirse. Se aplican restricciones de acceso y verificaciones de integridad, sin afirmar que ningún sistema esté exento de riesgos.</p>
+  </section>
+  <section><h2>6. Revocación, consultas y eliminación</h2>
+    <p>La cuenta autorizante puede revocar el acceso de Idea Lab ICSA desde la sección de conexiones de terceros de su <a href="https://myaccount.google.com/connections">Cuenta de Google</a>. La revocación impide nuevas operaciones autorizadas con esa conexión, pero no elimina automáticamente las evidencias ya conservadas.</p>
+    <p>Para solicitar información, rectificación o eliminación de datos que puedan corresponderte, contacta con <a href="mailto:idealab.research2026@gmail.com">idealab.research2026@gmail.com</a>. Se evaluará la solicitud según la naturaleza de los datos y las obligaciones de conservación o integridad científica aplicables.</p>
+  </section>
+  <section><h2>7. Alcance de esta web y cambios</h2>
+    <p>Estas páginas son informativas; no proporcionan un inicio de sesión, no solicitan claves ni ejecutan directamente la integración OAuth. Las modificaciones sustanciales de esta política se reflejarán aquí con una nueva fecha de actualización.</p>
+    <p>Vuelve a <a href="/icsa/">la descripción de Idea Lab ICSA</a> o a <a href="/">IDEA LAB</a>.</p>
+  </section>
+</div></main><footer><div class="container foot"><span>© 2026 IDEA LAB · Investigación independiente</span><span><a href="/">Inicio</a> · <a href="/icsa/">Idea Lab ICSA</a> · <a href="/icsa/privacidad.html">Privacidad de ICSA</a></span></div></footer>
+</body></html>
