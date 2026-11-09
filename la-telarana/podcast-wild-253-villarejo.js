@@ -27,7 +27,10 @@ window.IDEA_TELARANA_SOURCE06_PODCAST = {
     "originalTranscriptBlocks": 170,
     "originalTranscriptSha256": "34e777038c189bf0ab64d64bc7ea220e954c5f55bc55ce32e1d5e7b50eab6bc6",
     "transcriptAudioMatched": false,
-    "notebookLmSourceContentMatched": false
+    "notebookLmSourceContentMatched": false,
+    "fullTranscriptSha256VerifiedAgainstOriginal": true,
+    "indexedTranscriptTopics": 13,
+    "transcriptTopicIndexDocUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit"
   },
   "nodes": [
     {
