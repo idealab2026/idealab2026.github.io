@@ -46,7 +46,7 @@ const tint=new Set(Graph.topics.map(({id})=>({
  finanzas:'#bbd68c',global:'#e6ad91'}[id])));
 
 for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540]]){
- let rings=[],pillBoxes=[],sphere=[],lastArc=null;
+ let rings=[],pillBoxes=[],sphere=[],lastArc=null,photoRequests=0;
  const events={};
  const ctx=new Proxy({},{
   get(target,key){
@@ -73,7 +73,8 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
   addEventListener(name,fn){events[name]=fn},
   setPointerCapture(){},closest(){return null},style:{}
  };
- const graph=Graph.create({canvas,tooltip:{hidden:true,style:{}},getPhoto(){return null}});
+ const graph=Graph.create({canvas,tooltip:{hidden:true,style:{}},
+  getPhoto(){photoRequests++;return null}});
  graph.setData(nodes,edges);
  const fitted=graph.fit();
  assert(Number.isFinite(fitted.zoom)&&fitted.zoom>0);
@@ -100,6 +101,23 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  flush(time+60);
  assert(sphere[0].r>initialRadius,'Safari gesture must enlarge the orb');
  events.gestureend({preventDefault(){}});
+ // Regresión del bug móvil: antes los avatares se quedaban anclados a
+ // 23px × densidad de pantalla incluso al seguir ampliando el orbe.
+ const overviewSize=Math.max(...rings.map(p=>p.r));
+ const previousPhotoRequests=photoRequests;
+ graph.zoom(2.8);flush(time+60);
+ const firstZoomSize=Math.max(...rings.map(p=>p.r));
+ assert(firstZoomSize>overviewSize*1.35,'node rings must enlarge after zoom');
+ assert(photoRequests>previousPhotoRequests,
+  'zoomed-in nodes must request their portraits and icons');
+ graph.zoom(2.2);flush(time+60);
+ const secondZoomSize=Math.max(...rings.map(p=>p.r));
+ assert(secondZoomSize>firstZoomSize*1.12,
+  'node size must keep growing at medium-high zoom, not freeze at mobile cap');
+ graph.zoom(1.65);flush(time+60);
+ const thirdZoomSize=Math.max(...rings.map(p=>p.r));
+ assert(thirdZoomSize>secondZoomSize*1.08,
+  'photos and icons must continue to grow at high zoom');
  assert(graph.setMotion(false)===false,'motion pause control');
  graph.setTheme('espana');
  flush(time+60);
@@ -109,4 +127,4 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  // Control de reanudación, disponible independientemente del sistema operativo.
  assert(graph.setMotion(true)===true);
 }
-console.log('OK: 7 lóbulos esféricos, 222 nodos, 5 resoluciones, zoom y pausa orbital');
+console.log('OK: 7 lóbulos, 222 nodos, 5 resoluciones, fotos escalables, zoom y pausa orbital');
