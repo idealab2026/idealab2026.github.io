@@ -290,6 +290,11 @@ function wikiRenderArticle(d,root,page){
  $("note-kicker").textContent=d.c+" · Wikipedia";
  $("note-title").textContent=String(page.title||wikipediaSearchName(d));
  root.append(el("div",wikiDateLine(d),"note-date"));
+ if(d.c==="Eras geológicas"){
+  var dating=el("p","Fechas aproximadas actualizadas según la Comisión Internacional de Estratigrafía (versión 2026/06).","source-note");
+  wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Consultar la escala geológica oficial ↗","wiki-credit-link");
+  root.append(dating);
+ }
  var figure=page.thumbnail&&page.thumbnail.source;
  if(typeof figure==="string"&&/^https:\/\/upload\.wikimedia\.org\//i.test(figure)){
   var photo=el("img",null,"wiki-lead-image");
