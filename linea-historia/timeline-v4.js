@@ -368,7 +368,7 @@ async function wikiFetchArticle(title,signal){
   action:"query",prop:"extracts|pageimages|pageprops",
   titles:title,redirects:1,explaintext:1,exsectionformat:"wiki",
   piprop:"thumbnail|name",pithumbsize:680,pilicense:"free",
-  ppprop:"disambiguation|wikibase_item"
+  ppprop:"disambiguation|wikibase_item|page_image_free|page_image"
  },signal);
  var pages=response.query&&response.query.pages||[];
  return pages.find(wikiIsValidArticle)||null;
@@ -413,35 +413,75 @@ async function wikiFindArticle(d,signal){
  }
  return {page:null,term:names[0],suggestions:suggestions.slice(0,5),kind:"unmatched"};
 }
+/* Use Wikimedia's officially documented reusable image redirect, rather
+   than relying on a hashed CDN thumbnail URL that may fail on third-party sites. */
+var wikiVerifiedImageFiles={
+ "Q1001":"Mahatma-Gandhi, studio, 1931.jpg"
+};
+function wikiCommonsFileURL(filename,width){
+ if(typeof filename!=="string"||filename.length>260||
+  !/\.(?:jpe?g|png|webp|gif|svg)$/i.test(filename))return null;
+ return "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/"+
+  encodeURIComponent(filename.replace(/ /g,"_"))+"&width="+(width||500);
+}
+function wikiPhotoFromFile(file,kind){
+ var url=wikiCommonsFileURL(file,500);
+ return url?{source:url,file:file,sourceKind:kind||"commons",resolver:"redirect"}:null;
+}
+function wikiPhotoURLValid(url){
+ return /^https:\/\/(?:upload\.wikimedia\.org\/|commons\.wikimedia\.org\/w\/index\.php\?title=Special:Redirect\/file\/)/i.test(String(url||""));
+}
+function wikiPicture(page){
+ var image=page&&page.thumbnail&&page.thumbnail.source;
+ if(wikiPhotoURLValid(image)&&/^https:\/\/upload\.wikimedia\.org\//i.test(image))
+  return {source:image,file:page.pageimage||null,sourceKind:"pageimages",resolver:"api"};
+ return null;
+}
+function wikiKnownPhoto(page){
+ var q=page&&page.pageprops&&page.pageprops.wikibase_item;
+ var file=wikiVerifiedImageFiles[q]||(
+  wikiPlain(page&&page.title)==="mahatma gandhi"?
+  wikiVerifiedImageFiles.Q1001:null);
+ return file?wikiPhotoFromFile(file,"verified-wikidata"):null;
+}
+function wikiPagePropsPhoto(page){
+ var props=page&&page.pageprops||{};
+ return wikiPhotoFromFile(props.page_image_free,"pageprops");
+}
 async function wikiFetchWikidataImage(page,signal){
- var item=page.pageprops&&page.pageprops.wikibase_item;
- if(!/^Q\d+$/.test(String(item||"")))return null;
+ var item=page&&page.pageprops&&page.pageprops.wikibase_item;
+ if(!/^Q\d+$/.test(String(item||"")))return wikiKnownPhoto(page);
+ // Reading P18 is enough to verify the file identity. The browser can
+ // resolve its Commons thumbnail through Special:Redirect/file, without a
+ // separate Commons imageinfo API request that can fail/return no thumb.
  var response=await wikiAPIOn("https://www.wikidata.org/w/api.php",{
   action:"wbgetentities",ids:item,props:"claims"
  },signal);
- var e=response.entities&&response.entities[item];
- var values=e&&e.claims&&e.claims.P18||[];
- var image=values.find(function(x){
-  return x.mainsnak&&x.mainsnak.datavalue&&typeof x.mainsnak.datavalue.value==="string";
- });
- if(!image)return null;
- var file=image.mainsnak.datavalue.value;
- if(file.length>250||!/\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file))return null;
- var data=await wikiAPIOn("https://commons.wikimedia.org/w/api.php",{
-  action:"query",titles:"File:"+file,prop:"imageinfo",
-  iiprop:"url|mime",iiurlwidth:680
- },signal);
- var imagePage=data.query&&data.query.pages&&data.query.pages[0];
- var info=imagePage&&imagePage.imageinfo&&imagePage.imageinfo[0];
- var url=info&&(info.thumburl||info.url);
- if(!/^https:\/\/upload\.wikimedia\.org\//.test(String(url||""))||
-  !/^image\/(?:jpeg|png|webp|gif|svg\+xml)$/i.test(String(info.mime||"")))return null;
- return {source:url,file:file,sourceKind:"wikidata"};
+ var entity=response.entities&&response.entities[item];
+ var values=entity&&entity.claims&&entity.claims.P18||[];
+ var candidates=values.map(function(statement){
+  var claim=statement.mainsnak&&statement.mainsnak.datavalue;
+  return claim&&typeof claim.value==="string"?claim.value:null;
+ }).filter(Boolean);
+ for(var i=0;i<candidates.length;i++){
+  var p=wikiPhotoFromFile(candidates[i],"wikidata");
+  if(p)return p;
+ }
+ return wikiKnownPhoto(page);
 }
-function wikiPicture(page){
- var thumb=page.thumbnail&&page.thumbnail.source;
- return /^https:\/\/upload\.wikimedia\.org\//.test(String(thumb||""))
-  ?{source:thumb,file:page.pageimage||null,sourceKind:"pageimages"}:null;
+async function wikiFetchSummaryImage(page,signal){
+ var title=String(page&&page.title||"");
+ if(!title||title.length>180)return null;
+ var url="https://es.wikipedia.org/api/rest_v1/page/summary/"+
+  encodeURIComponent(title.replace(/ /g,"_"));
+ var response=await fetch(url,{signal:signal,credentials:"omit"});
+ if(!response.ok)return null;
+ var summary=await response.json();
+ if(summary.type==="disambiguation"||
+   wikiPlain(summary.title)!==wikiPlain(title))return null;
+ var thumbnail=summary.thumbnail&&summary.thumbnail.source;
+ return wikiPhotoURLValid(thumbnail)?
+  {source:thumbnail,file:null,sourceKind:"summary",resolver:"api"}:null;
 }
 function stopWikiRequest(){
  wikiRequestVersion++;
