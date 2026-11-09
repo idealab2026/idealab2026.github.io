@@ -91,6 +91,60 @@ class BridgeTests(unittest.TestCase):
             out = list(bridge.next_requests({}, {"activated_at": now.isoformat()}))
         self.assertEqual([n for n, _ in out], ["5"])
 
+    def test_defer_uncertain_rejects_new_artifacts(self):
+        import argparse
+        state = {"41": {"phase": "uncertain", "notebook": "notebook-123",
+                        "before": ["existing-000"]}}
+        args = argparse.Namespace(issue=41, confirm_no_artifact=True)
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "save_json") as save, \
+             patch.object(bridge, "infographic_rows", return_value=[{"id": "newart-12345"}]):
+            with self.assertRaises(RuntimeError):
+                bridge.defer_uncertain(args)
+            save.assert_not_called()
+        self.assertEqual(state["41"]["phase"], "uncertain")
+
+    def test_defer_uncertain_requires_approval_and_preserves_state(self):
+        import argparse
+        state = {"41": {"phase": "uncertain", "notebook": "notebook-123",
+                        "before": ["existing-000"]}}
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "save_json") as save, \
+             patch.object(bridge, "infographic_rows", return_value=[{"id": "existing-000"}]):
+            with self.assertRaises(ValueError):
+                bridge.defer_uncertain(argparse.Namespace(issue=41, confirm_no_artifact=False))
+            save.assert_not_called()
+            bridge.defer_uncertain(argparse.Namespace(issue=41, confirm_no_artifact=True))
+            save.assert_called_once()
+        self.assertEqual(state["41"]["phase"], "deferred")
+        self.assertIsInstance(state["41"]["deferred_at"], str)
+
+    def test_deferred_notebook_isolation_in_poll(self):
+        work = {"41": {"phase": "deferred", "notebook": "notebook-II"}}
+        pending = [("42", request(book=BOOK, vid=VIDEO)), ("63", request(book=BOOK, vid=VIDEO))]
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value=work), \
+             patch.object(bridge, "next_requests", return_value=pending), \
+             patch.object(bridge, "select_mapping", side_effect=[
+                 ("notebook-II", ["source-1"]), ("notebook-I", ["source-2"])]), \
+             patch.object(bridge, "request_new", return_value=True) as dispatch:
+            bridge.poll()
+            dispatch.assert_called_once_with("63", pending[1][1], work, {})
+
+    def test_cli_uses_local_uv_bin_when_not_in_path(self):
+        from unittest.mock import MagicMock
+        local_nlm = bridge.HOME / ".local/bin/nlm"
+        with patch.object(bridge.shutil, "which", return_value=None), \
+             patch.object(bridge.Path, "is_file", return_value=True), \
+             patch.object(bridge.os, "access", return_value=True), \
+             patch.object(bridge.subprocess, "run") as runner:
+            runner.return_value = MagicMock(returncode=0, stdout="ok")
+            self.assertEqual(bridge.command(["nlm", "notebook", "list"]), "ok")
+            self.assertEqual(runner.call_args.args[0][0], str(local_nlm))
+
     def test_saved_config_is_user_only(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "private" / "config.json"
