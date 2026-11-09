@@ -22,43 +22,50 @@ function make(options){
   const s=(n.name+" "+(n.subtitle||"")+" "+(n.note||"")).toLowerCase();
   return /mossad|inteligenc|espionaj|secreto/.test(s)?"inteligencia":/israel|iran|palestin|hamás|hamas|egipt/.test(s)?"oriente":/españ|congreso|gobierno español/.test(s)?"espana":/nazi|guerra mundial/.test(s)?"historia":/tecnol|software|digital/.test(s)?"tecnologia":/banc|financ|invers/.test(s)?"finanzas":"global";
  }
- // Temas distribuidos en islas, dimensionados por el número de nodos.
- const layoutRows=[["inteligencia","oriente","global"],["espana","historia","finanzas"],[null,"tecnologia",null]];
- const NODE_SPACING=152, THEME_GAP_X=720, THEME_GAP_Y=520;
+ // Orbe 3D: siete lóbulos con centros repartidos por una esfera mediante
+ // una espiral de Fibonacci; las posiciones son deterministas e idempotentes.
+ const ORB_RADIUS=1080,GOLDEN_ANGLE=PI*(3-Math.sqrt(5));
+ const normals=new Map(),caps=new Map();
+ function unit(v){const d=Math.hypot(v.x,v.y,v.z)||1;return{x:v.x/d,y:v.y/d,z:v.z/d}}
+ function cross(a,b){return{x:a.y*b.z-a.z*b.y,y:a.z*b.x-a.x*b.z,z:a.x*b.y-a.y*b.x}}
+ function basis(n){
+  const ref=Math.abs(n.y)<.87?{x:0,y:1,z:0}:{x:1,y:0,z:0};
+  const u=unit(cross(ref,n));return{u,v:unit(cross(n,u))};
+ }
+ topics.forEach(([name],i)=>{
+  const y=1-2*(i+.5)/topics.length,r=Math.sqrt(1-y*y),a=i*GOLDEN_ANGLE;
+  normals.set(name,unit({x:Math.cos(a)*r,y,z:Math.sin(a)*r}));
+ });
+ function surfacePoint(n,u,v,theta,angle,radius){
+  const c=Math.cos(theta),t=Math.sin(theta),ca=Math.cos(angle),sa=Math.sin(angle);
+  return{x:radius*(n.x*ca+(u.x*c+v.x*t)*sa),
+   y:radius*(n.y*ca+(u.y*c+v.y*t)*sa),
+   z:radius*(n.z*ca+(u.z*c+v.z*t)*sa)};
+ }
  function arrange(){
-  pos=new Map();
+  pos=new Map();caps.clear();
   const degree=new Map(nodes.map(n=>[n.id,0]));
   for(const e of edges){degree.set(e.a,(degree.get(e.a)||0)+1);degree.set(e.b,(degree.get(e.b)||0)+1)}
-  const sets=new Map(),dims=new Map();
   for(const [name] of topics){
-   const subset=nodes.filter(n=>group(n)===name).sort((a,b)=>(degree.get(b.id)||0)-(degree.get(a.id)||0)||a.name.localeCompare(b.name,"es"));
-   sets.set(name,subset);
-   const cols=Math.max(1,Math.ceil(Math.sqrt(subset.length*1.14)));
-   const rows=Math.max(1,Math.ceil(subset.length/cols));
-   dims.set(name,{cols,rows,width:(cols-1)*NODE_SPACING+NODE_SPACING*.52,height:(rows-1)*NODE_SPACING*.92});
-  }
-  const colWidths=[0,1,2].map(c=>Math.max(...layoutRows.map(row=>row[c]?dims.get(row[c]).width:0),360));
-  const rowHeights=layoutRows.map(row=>Math.max(...row.map(name=>name?dims.get(name).height:0),270));
-  const fullW=colWidths.reduce((a,b)=>a+b,0)+THEME_GAP_X*2;
-  const fullH=rowHeights.reduce((a,b)=>a+b,0)+THEME_GAP_Y*2;
-  const centersX=[],centersY=[];
-  let x=-fullW/2;colWidths.forEach(width=>{centersX.push(x+width/2);x+=width+THEME_GAP_X});
-  let y=-fullH/2;rowHeights.forEach(height=>{centersY.push(y+height/2);y+=height+THEME_GAP_Y});
-  for(let r=0;r<layoutRows.length;r++)for(let c=0;c<3;c++){
-   const topic=layoutRows[r][c];if(!topic)continue;
-   const subset=sets.get(topic),shape=dims.get(topic),topicDepth=(c-1)*185+(r-1)*95;
-   subset.forEach((n,j)=>{
-    const col=j%shape.cols,row=Math.floor(j/shape.cols),stagger=row%2?NODE_SPACING*.26:0;
-    pos.set(n.id,{x:centersX[c]+(col-(shape.cols-1)/2)*NODE_SPACING+stagger,
-     y:centersY[r]+(row-(shape.rows-1)/2)*NODE_SPACING*.92,z:topicDepth+((j*3)%7-3)*23});
+   const subset=nodes.filter(n=>group(n)===name)
+    .sort((a,b)=>(degree.get(b.id)||0)-(degree.get(a.id)||0)||a.name.localeCompare(b.name,"es"));
+   const n=normals.get(name),{u,v}=basis(n);
+   const cap=clip(.32+.035*Math.sqrt(subset.length),.35,.63);
+   caps.set(name,{n,u,v,angle:cap+.065,count:subset.length});
+   subset.forEach((node,j)=>{
+    const f=Math.sqrt((j+.55)/Math.max(1,subset.length));
+    const theta=j*GOLDEN_ANGLE;
+    const angle=cap*f+(Math.sin(j*2.33)*.007);
+    const radius=ORB_RADIUS+24*Math.sin(j*1.92)+12*Math.cos(j*.91);
+    pos.set(node.id,surfacePoint(n,u,v,theta,angle,radius));
    });
   }
  }
  function proj(v){
   const x=v.x*Math.cos(yaw)-v.z*Math.sin(yaw),z=v.x*Math.sin(yaw)+v.z*Math.cos(yaw);
   const y=v.y*Math.cos(pitch)-z*Math.sin(pitch),depth=v.y*Math.sin(pitch)+z*Math.cos(pitch);
-  // Perspectiva suave: una focal corta plegaba las filas y superponía nodos.
-  const scale=Math.min(w/1450,h/950)*zoom*2100/(2100+depth*.20);
+  // Perspectiva 3D moderada: cerca más grande, hemisferio posterior atenuado.
+  const scale=Math.min(w/1450,h/950)*zoom*2600/(2600+depth*.62);
   return{x:w/2+panX+x*scale,y:h/2+panY+y*scale,depth,scale};
  }
  function color(hex,a){const v=parseInt(hex.slice(1),16);return "rgba("+((v>>16)&255)+","+((v>>8)&255)+","+(v&255)+","+a+")"}
