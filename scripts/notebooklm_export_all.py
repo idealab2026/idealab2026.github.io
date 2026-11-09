@@ -62,9 +62,10 @@ def match_book(name: str, books: dict) -> dict | None:
 
 
 def chapter_scope(filename: str) -> tuple[int, int] | None:
-    text = normalize(filename.replace("–", "-"))
-    # Preserve separators for ranges when normalizing; plain normalized text
-    # turns all punctuation into spaces, but "a"/"al" remain intact.
+    text = unicodedata.normalize("NFKD", filename.casefold())
+    text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
+    text = re.sub(r"[^a-z0-9 .:#ºn°\s–-]", " ", text)
+    text = re.sub(r"\s+", " ", text)
     match = CHAPTER_RE.search(text)
     if not match:
         return None
