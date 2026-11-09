@@ -16,6 +16,98 @@
   },
   "items": [
     {
+      "id": "study-vf150-eichmann-1960",
+      "y": 1960.3579234972678,
+      "t": "Captura de Adolf Eichmann por agentes israelíes en Argentina",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Vaquero Podcast #150 · fuente complementaria sin número de catálogo confirmado",
+      "d": "El 11 de mayo de 1960, agentes del Mossad capturaron en las cercanías de Buenos Aires a Adolf Eichmann, antiguo responsable nazi destacado en la deportación de judíos europeos. Fue trasladado a Israel y juzgado en Jerusalén. El hecho está documentado por Yad Vashem; las interpretaciones del podcast no constituyen su acreditación.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "investigation": {
+        "date": "1960-05-11",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": null,
+        "sourceCatalogStatus": "pendiente_de_reconciliar_con_inventario_33",
+        "sourceTitle": "Vaquero Podcast #150 · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "confirmedBy": {
+          "label": "Yad Vashem · Operación Eichmann, captura del 11/05/1960",
+          "url": "https://wwv.yadvashem.org/yv/es/exhibitions/eichmann/operation-eichmann.asp"
+        },
+        "relatedTelarana": [
+          "vf150-adolf-eichmann",
+          "vf150-mossad",
+          "vf150-david-ben-gurion"
+        ],
+        "methodologicalLimits": "La captura del 11 de mayo y el traslado posterior son hechos diferenciados; no confundir la fecha de la operación con la del traslado."
+      }
+    },
+    {
+      "id": "study-vf150-munich-1972",
+      "y": 1972.6775956284152,
+      "t": "Ataque contra la delegación israelí en los Juegos Olímpicos de Múnich",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Vaquero Podcast #150 · fuente complementaria sin número de catálogo confirmado",
+      "d": "El 5 de septiembre de 1972, miembros de la organización palestina Septiembre Negro atacaron a la delegación israelí en la villa olímpica de Múnich. Murieron once miembros del equipo israelí y un policía alemán. El Comité Olímpico Internacional documenta el suceso y su conmemoración. Las posteriores operaciones de inteligencia y represalias deben estudiarse como acontecimientos distintos.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "investigation": {
+        "date": "1972-09-05",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": null,
+        "sourceCatalogStatus": "pendiente_de_reconciliar_con_inventario_33",
+        "sourceTitle": "Vaquero Podcast #150 · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "confirmedBy": {
+          "label": "Comité Olímpico Internacional · Conmemoración del atentado de Múnich de 1972",
+          "url": "https://www.olympics.com/ioc/news/olympic-highlights-12-09-2022"
+        },
+        "relatedTelarana": [
+          "vf150-septiembre-negro",
+          "vf150-golda-meir"
+        ],
+        "methodologicalLimits": "No atribuir actos posteriores de otros actores a los atacantes ni derivar autorías individuales adicionales del comentario del entrevistado."
+      }
+    },
+    {
+      "id": "study-vf150-lillehammer-1973",
+      "y": 1973.5506849315068,
+      "t": "Asesinato por error de Ahmed Bouchikhi en Lillehammer",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Vaquero Podcast #150 · fuente complementaria sin número de catálogo confirmado",
+      "d": "El 21 de julio de 1973, el ciudadano marroquí Ahmed Bouchikhi fue asesinado a tiros en Lillehammer, Noruega, al ser confundido con el dirigente palestino Ali Hassan Salameh. Una investigación oficial noruega reconstruye el asesinato y considera acreditada la intervención del Mossad. La autoría del suceso está sustentada independientemente del relato del podcast.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "investigation": {
+        "date": "1973-07-21",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": null,
+        "sourceCatalogStatus": "pendiente_de_reconciliar_con_inventario_33",
+        "sourceTitle": "Vaquero Podcast #150 · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "confirmedBy": {
+          "label": "Gobierno de Noruega · Informe oficial NOU 2000:6 sobre el caso Lillehammer",
+          "url": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=6"
+        },
+        "relatedTelarana": [
+          "vf150-ahmed-bouchiki",
+          "vf150-ali-hassan-salameh",
+          "vf150-mossad"
+        ],
+        "methodologicalLimits": "El informe oficial confirma la muerte y la vinculación al Mossad; no incorporar especulaciones no probadas sobre colaboración de terceros."
+      }
+    },
+    {
       "id": "study-v1-carrero-1973",
       "y": 1973.9671232876713,
       "t": "Atentado mortal contra Luis Carrero Blanco en Madrid",
@@ -40,6 +132,36 @@
           "cv26-kissinger"
         ],
         "methodologicalLimits": "La autoría material atribuida a ETA cuenta con respaldo documental; la hipótesis de intervención de la CIA no se incorpora como hecho."
+      }
+    },
+    {
+      "id": "study-vf150-salameh-1979",
+      "y": 1979.0575342465754,
+      "t": "Muerte de Ali Hassan Salameh en un atentado con explosivos en Beirut",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · Vaquero Podcast #150 · fuente complementaria sin número de catálogo confirmado",
+      "d": "El 22 de enero de 1979, Ali Hassan Salameh, responsable palestino vinculado a Fatah y a la seguridad de Yasir Arafat, murió por la explosión de un coche bomba en Beirut. La prensa contemporánea recoge que la Organización para la Liberación de Palestina responsabilizó a los servicios israelíes. Se documenta la muerte y la acusación, sin presentar esa declaración por sí sola como prueba judicial de autoría.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "investigation": {
+        "date": "1979-01-22",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": null,
+        "sourceCatalogStatus": "pendiente_de_reconciliar_con_inventario_33",
+        "sourceTitle": "Vaquero Podcast #150 · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "confirmedBy": {
+          "label": "El País · Crónica de agencias del 24/01/1979",
+          "url": "https://elpais.com/diario/1979/01/24/internacional/285980412_850215.html"
+        },
+        "relatedTelarana": [
+          "vf150-ali-hassan-salameh",
+          "vf150-mossad"
+        ],
+        "methodologicalLimits": "Atribución a Israel recogida como acusación de la OLP y reportes de época; distinguir autoría alegada de hechos documentalmente constatados."
       }
     },
     {
