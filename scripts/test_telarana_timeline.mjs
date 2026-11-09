@@ -38,7 +38,7 @@ for(const e of feed.items){
  bySource[sourceKey]=(bySource[sourceKey]||0)+1;
 }
 assert.equal(bySource[1],5,"Carga histórica de la fuente 1");
-assert.equal(bySource[2],3,"Contexto externo de la fuente 2");
+assert.equal(bySource[2],5,"Cinco hechos documentales externos de la fuente 2");
 assert.equal(bySource.suplementaria,7,"Siete hechos contrastados de fuente no numerada");
 assert.equal(progress.timeline.committedVerifiedEvents,feed.items.length,"Progreso histórico inconsistente");
 assert.equal(progress.timeline.fromSupplementalResearch,bySource.suplementaria,"La investigación suplementaria debe contabilizarse por separado");
