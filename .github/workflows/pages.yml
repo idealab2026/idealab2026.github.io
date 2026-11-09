@@ -81,7 +81,7 @@ jobs:
           test -s dist/linea-historia/estudios-telarana.json
           test -s dist/linea-historia/timeline-v4.js
           node --check dist/linea-historia/timeline-v4.js
-          grep -q 'src="./timeline-v4.js"' dist/linea-historia/index.html
+          grep -q 'src="./timeline-v4.js' dist/linea-historia/index.html
           test -f dist/la-telarana/index.html
           test -s dist/la-telarana/one-note-seed.js
           grep -q "IDEA_TELARANA_ONENOTE" dist/la-telarana/one-note-seed.js
