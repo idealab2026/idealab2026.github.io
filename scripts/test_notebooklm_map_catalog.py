@@ -65,6 +65,78 @@ class MapCatalogTests(unittest.TestCase):
         self.assertEqual(m.candidate_sources("la-ola-que-viene", eps, src), {"aaaabbbbccc": "sourceid00001"})
         self.assertEqual(m.candidate_sources("la-ola-que-viene", eps, []), {})
 
+    def test_real_notebooklm_pdf_titles_estonoexiste(self):
+        # All ten unmapped PDFs as reported in the user's Mac diagnostics.
+        pairs = [
+            ("Cap I: La narrativa de género - parte I", "I - LA NARRATIVA DE GÉNERO PARTE I.pdf"),
+            ("Cap I: La narrativa de género - parte II", "I - LA NARRATIVA DE GÉNERO PARTE II.pdf"),
+            ("Cap II: La Ley Que Lo Cambió Todo - Parte I", "II - LA LEY QUE LO CAMBIÓ TODO PARTE I.pdf"),
+            ("Cap II: La ley que todo lo cambió - Parte II", "II - LA LEY QUE LO CAMBIÓ TODO PARTE II.pdf"),
+            ("Cap III: Lo que no existe", "III - LO QUE NO EXISTE.pdf"),
+            ("Cap IV: La denuncia como arma - Parte I", "IV - LA DENUNCIA COMO UN ARMA - PARTE I.pdf"),
+            ("Cap IV: La denuncia como un arma - Parte II", "IV - LA DENUNCIA COMO UN ARMA - PARTE II.pdf"),
+            ("Cap V: Los hijos - Parte I", "V - LOS HIJOS - PARTE I.pdf"),
+            ("Cap V: Los hijos - Parte II", "V - LOS HIJOS - PARTE II.pdf"),
+            ("Cap 6: La Reacción", "VI - LA REACCIÓN.pdf"),
+        ]
+        for video, pdf in pairs:
+            with self.subTest(pdf=pdf):
+                self.assertEqual(m.chapter_key("esto-no-existe", video),
+                                 m.chapter_key("esto-no-existe", pdf, source=True))
+        episodes = [{"id": f"vid-{i}", "title": vid} for i, (vid, _) in enumerate(pairs)]
+        sources = [{"id": f"src-{i}", "title": pdf} for i, (_, pdf) in enumerate(pairs)]
+        mapped = m.candidate_sources("esto-no-existe", episodes, sources)
+        self.assertEqual(len(mapped), 10)
+        for i in range(10):
+            self.assertEqual(mapped[f"vid-{i}"], f"src-{i}")
+        self.assertIsNone(m.chapter_key("esto-no-existe", "IV V - DOCUMENTO.pdf", source=True))
+
+    def test_real_utopia_pdfs_and_second_book_word_order(self):
+        videos = [
+            "Utopia. Libro - Libro Segundo. Cap 1: Introducción.",
+            "Utopía - Libro Segundo. Cap 2: Las ciudades y en particular Amauroto.",
+            "Utopía - Libro Segundo. Cap 3: Los magistrados",
+            "Utopía - Libro segundo. Cap 4: Los oficios",
+            "Utopía - Libro segundo. Cap 5: Las relaciones mutuas",
+            "Utopía - Libro segundo. Cap 6: Las salidas de los utopienses",
+            "Utopía - Segundo Libro. Cap 7: Los siervos.",
+            "Utopía - Segundo libro. Cap 8: La cuestión militar",
+            "Utopía - Libro segundo. Cap 9: Las religiones de los utopienses.",
+            "Utopía - Libro segundo. Cap 10: La Conclusión",
+        ]
+        labels = [
+            "INTRODUCCIÓN", "LAS CIUDADES Y EN PARTICULAR AMAUROTO",
+            "LOS MAGISTRADOS", "LOS OFICIOS", "LAS RELACIONES MUTUAS",
+            "LAS SALIDAS DE LOS UTOPIENSES", "LOS SIERVOS",
+            "LA CUESTIÓN MILITAR", "LAS RELIGIONES DE LOS UTOPIENSES",
+            "CONCLUSIÓN",
+        ]
+        pdfs = [f"{i}. LIBRO SEGUNDO - {lab}.pdf"
+                for i, lab in enumerate(labels, start=1)]
+        for n, (video, pdf) in enumerate(zip(videos, pdfs), start=1):
+            with self.subTest(n=n):
+                self.assertEqual(m.chapter_key("utopia", video), ("book", 2, n))
+                self.assertEqual(m.chapter_key("utopia", pdf, source=True), ("book", 2, n))
+        sources = [{"id": f"source-{i}", "title": pdf} for i, pdf in enumerate(pdfs)]
+        episodes = [{"id": f"video-{i}", "title": title} for i, title in enumerate(videos)]
+        self.assertEqual(len(m.candidate_sources("utopia", episodes, sources)), 10)
+        self.assertIsNone(m.chapter_key("utopia", "11. LIBRO SEGUNDO - CAP 2.pdf", source=True))
+
+    def test_1984_roman_four_matches_arabic_four_without_dupes(self):
+        for part, roman in [("I", 1), ("II", 2), ("III", 3)]:
+            video = f"1984 - George Orwell. Parte {part} - Capítulo IV."
+            pdf = f"04 - Parte {roman}. Capítulo 4.pdf"
+            self.assertEqual(m.chapter_key("1984", video),
+                             m.chapter_key("1984", pdf, source=True))
+        self.assertIsNone(m.chapter_key("1984", "Capítulo 15 - Parte 2: Capítulo 7"))
+        # Two equally titled GOLDSTEIN PDFs cannot be chosen arbitrarily.
+        eps = [{"id": "goldstein-video", "title": "1984. LIBRO DE GOLDSTEIN"}]
+        docs = [
+            {"id": "goldstein-25", "title": "25 - LIBRO DE GOLDSTEIN.pdf"},
+            {"id": "goldstein-extra", "title": "LIBRO DE GOLDSTEIN - 1984.pdf"},
+        ]
+        self.assertEqual(m.candidate_sources("1984", eps, docs), {})
+
     def test_diagnostics_print_only_source_titles_not_identifiers(self):
         from unittest.mock import patch
         from io import StringIO

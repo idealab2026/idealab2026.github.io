@@ -100,26 +100,46 @@ def chapter_key(slug: str, title: str, *, source: bool = False):
     if slug == "esto-no-existe":
         if "introduccion" in raw and "cap" not in raw:
             return ("intro",)
-        m = re.search(r"\bcap(?:itulo)?\s+(i{1,3}|iv|v|vi|[1-9])\b", raw)
-        if not m:
+        m = re.search(r"\bcap(?:itulo)?\s+(vi|iv|v|iii|ii|i|[1-9])\b", raw)
+        if m:
+            chapter = roman_digit(m.group(1))
+        elif source:
+            # Real NotebookLM PDFs are named "I - ... PARTE II.pdf", not
+            # "Cap I". Only a leading roman numeral I–VI is acceptable.
+            initial = re.match(r"^(vi|iv|v|iii|ii|i)\s+", raw)
+            if not initial:
+                return None
+            chapter = roman_digit(initial.group(1))
+        else:
             return None
-        chapter = roman_digit(m.group(1))
-        part = re.search(r"\bparte\s+(i{1,3}|iv|[1-9])\b", raw)
+        part = re.search(r"\bparte\s+(iii|ii|i|[1-9])\b", raw)
         return ("chapter", chapter, roman_digit(part.group(1)) if part else None)
     if slug == "utopia":
         part = re.search(r"\blibro\s+(primero|segundo|i|ii|1|2)\b", raw)
-        if not part:
+        reverse = re.search(r"\b(primero|segundo)\s+libro\b", raw)
+        if not part and not reverse:
             return None
-        vol = 1 if part.group(1) in ("primero", "i", "1") else 2
+        volume_word = part.group(1) if part else reverse.group(1)
+        vol = 1 if volume_word in ("primero", "i", "1") else 2
         ch = re.search(r"\bcap(?:itulo)?\s+(\d{1,2})\b", raw)
         if vol == 1:
             return ("book", 1) if not ch else None
-        return ("book", 2, int(ch.group(1))) if ch else None
+        # PDFs are "1. LIBRO SEGUNDO - INTRODUCCIÓN.pdf" through
+        # "10. LIBRO SEGUNDO - CONCLUSIÓN.pdf". If a source claims both
+        # a numbered prefix and a different explicit chapter, reject it.
+        numbered = re.match(r"^(\d{1,2})\s+libro\s+segundo\b", raw) if source else None
+        if ch:
+            if numbered and int(numbered.group(1)) != int(ch.group(1)):
+                return None
+            return ("book", 2, int(ch.group(1)))
+        if numbered and 1 <= int(numbered.group(1)) <= 10:
+            return ("book", 2, int(numbered.group(1)))
+        return None
     if slug == "1984":
         if "goldstein" in raw and "libro" in raw:
             return ("goldstein",)
         part = re.search(r"\bparte\s+(i{1,3}|[123])\b", raw)
-        chapters = list(re.finditer(r"\bcapitulo\s+(i{1,4}|v|vi|vii|viii|ix|x|[1-9][0-9]?)\b", raw))
+        chapters = list(re.finditer(r"\bcapitulo\s+(viii|vii|vi|iv|ix|x|v|iii|ii|i|[1-9][0-9]?)\b", raw))
         # The legacy video "Capítulo 15 - Parte 2: Capítulo 7" is ambiguous.
         # It is NOT safe to infer this is an identical second episode.
         if not part or len(chapters) != 1:
