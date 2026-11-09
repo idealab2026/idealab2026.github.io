@@ -179,24 +179,123 @@ function periodUI(){
 }
 
 var lastCardFocus=null,wikiRequestVersion=0,wikiAbort=null,wikiCache=new Map();
+/* Deterministic aliases for source-sheet abbreviations, legacy names and
+   titles that do not match a canonical encyclopaedia entry. */
 var wikiAliases={
- "ww i":"Primera Guerra Mundial","ww ii":"Segunda Guerra Mundial",
- "eeuu":"Estados Unidos","urs s":"Unión Soviética","urss":"Unión Soviética",
+ "ww i":"Primera Guerra Mundial","wwii":"Segunda Guerra Mundial",
+ "ww ii":"Segunda Guerra Mundial","eeuu":"Estados Unidos",
+ "urs s":"Unión Soviética","urss":"Unión Soviética",
  "imperio romano":"Imperio romano","imperio britanico":"Imperio británico",
- "imperio otomano":"Imperio otomano","imperio egipcio":"Antiguo Egipto","guerra del rif":"Guerra del Rif"
+ "imperio otomano":"Imperio otomano","imperio egipcio":"Antiguo Egipto",
+ "imperio persa":"Imperio aqueménida","imperio asirio":"Imperio asirio",
+ "imperio hitita":"Imperio hitita","imperio mongol":"Imperio mongol",
+ "imperio carolingio":"Imperio carolingio","imperio neerlandes":"Imperio neerlandés",
+ "guerra del rif":"Guerra del Rif","minoicos":"Civilización minoica",
+ "sumerios":"Sumeria","acadios":"Imperio acadio","olmecas":"Cultura olmeca",
+ "aztecas":"Imperio azteca","reconquista":"Reconquista",
+ "tartesos":"Tartessos","ii republica espanola":"Segunda República española",
+ "i rep":"Primera República española","republica romana":"República romana",
+ "republica china":"República de China",
+ "dinastia song":"Dinastía Song","dinastia qing":"Dinastía Qing",
+ "dinastia ming":"Dinastía Ming","dinastia han":"Dinastía Han",
+ "dinastia tang":"Dinastía Tang","dinastia qin":"Dinastía Qin",
+ "era glaciacion":"Glaciación","younger dryas":"Dryas Reciente",
+ "gautama buddha":"Buda Gautama","mahatma ghandi":"Mahatma Gandhi",
+ "margaret tatcher":"Margaret Thatcher","wolfang amadeus mozart":"Wolfgang Amadeus Mozart",
+ "soren kierkegaard":"Søren Kierkegaard",
+ "jesucristo":"Jesús de Nazaret","rey mebaragesi":"Enmebaragesi",
+ "sargon i de acad":"Sargón de Acad","naram sin":"Naram-Sin de Acad",
+ "bjor n piel de hierro":"Björn Ragnarsson","almanzor":"Almanzor",
+ "ragnar lothbrok":"Ragnar Lodbrok",
+ "gengis kan":"Gengis Kan","kublai kan":"Kublai Kan",
+ "ii republica":"Segunda República española",
+ "batalla de verdun":"Batalla de Verdún",
+ "descubrimiento de america":"Descubrimiento de América",
+ "cristianismo se hace religion oficial en el imperio romano":"Edicto de Tesalónica",
+ "invencion de la imprenta":"Imprenta",
+ "invencion de la rueda":"Rueda",
+ "invencion de la escritura":"Escritura",
+ "invencion de la polvora en china":"Pólvora"
 };
-function wikiPlain(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim()}
+var wikiById={
+ "c-3-74":"2001: A Space Odyssey","c-3-81":"Barry Lyndon",
+ "c-3-85":"Apocalypse Now","c-3-88":"Blade Runner",
+ "c-5-85":"Arrebato (película)","c-7-85":"Alien, el octavo pasajero",
+ "c-10-49":"Iván Zulueta","c-12-34":"Jacques Rivette",
+ "c-14-38":"François Truffaut","c-16-34":"Stanley Kubrick",
+ "c-18-43":"Ridley Scott",
+ "l-4":"Poema de Gilgamesh","l-6":"Poema de Gilgamesh",
+ "l-7":"Enuma Elish","l-8":"Rigveda",
+ "l-9":"Shijing","l-16":"Orestíada",
+ "l-17":"Edipo rey","l-18":"Historias (Heródoto)",
+ "l-22":"De la naturaleza de las cosas","l-23":"Eneida",
+ "l-24":"Las metamorfosis","l-26":"El asno de oro",
+ "l-29":"Beowulf","l-31":"Genji Monogatari",
+ "l-33":"Divina comedia","l-34":"Decamerón",
+ "l-35":"Canzoniere","l-36":"Los cuentos de Canterbury",
+ "l-37":"La Celestina","l-38":"Orlando furioso",
+ "l-39":"Utopía (libro)","l-41":"Lazarillo de Tormes",
+ "h-SB40":"Guerra del Rif",
+ "h-CZ30":"Antiguo Egipto",
+ "h-SI20":"Dictadura de Primo de Rivera",
+ "h-SP14":"Dictablanda de Dámaso Berenguer",
+ "h-SQ20":"Segunda República española",
+ "h-OG27":"Primera cruzada",
+ "h-NB35":"Reconquista",
+ "h-PW21":"Guerra de Granada",
+ "h-QA30":"Conquista de México",
+ "h-SD21":"Revolución de Octubre"
+};
+function wikiPlain(s){
+ return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es")
+  .replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();
+}
+function wikiStripDates(raw){
+ var s=String(raw||"").trim().replace(/\u00a0/g," ");
+ // Film title / director / film year: keep only the named work.
+ s=s.replace(/\s*\(\s*\d{4}\s*\)\s*[-–—]\s*.+$/,"");
+ // Standalone film-year and person-life suffixes.
+ s=s.replace(/\s*\(\s*\d{1,4}\s*[-–—]\s*(?:\d{1,4})?\s*\)\s*$/,"");
+ s=s.replace(/\s*\(\s*\d{4}\s*\)\s*$/,"");
+ // YYYY a. C. — YYYY d. C., with optional thousands separators.
+ s=s.replace(/\s+\b\d{1,3}(?:[.,]\d{3})+\s*(?:[ad]\.?\s*c\.?)?\s*[-–—]\s*\d{1,3}(?:[.,]\d{3})*\s*(?:[ad]\.?\s*c\.?)?.*$/i,"");
+ s=s.replace(/\s+\b\d{2,4}\s*(?:[ad]\.?\s*c\.?)?\s*[-–—]\s*(?:\d{1,4}\s*(?:[ad]\.?\s*c\.?)?|ACT|actualidad|presente)\s*(?:\([^)]*\)|\.?\s*)$/i,"");
+ // A single event date at the end, or an introductory «Año 64 -».
+ s=s.replace(/\s*\(\s*\d{3,4}\s*\)\s*$/,"").replace(/\s+(?:\d{2,4})\s*(?:[ad]\.?\s*c\.?)?\s*$/i,"");
+ s=s.replace(/^(?:Año\s+)?\d{2,4}\s*[-–—]\s*/i,"");
+ return s.replace(/\s+\(\s*\d+\s*años?\s*\)\s*$/i,"").replace(/\s*[-–—]\s*$/,"").trim();
+}
 function wikipediaSearchName(d){
- var raw=String(displayName(d)||d.t||"").trim();
- // Strip Excel chronology suffixes, which do not belong to article titles.
- raw=raw.replace(/\s*\(\s*\d{3,4}\s*[-–—]\s*(?:\d{2,4}|ACT)\s*\)\s*$/i,"");
- raw=raw.replace(/\s+\b\d{1,4}\s*(?:a\.?\s*c\.?|d\.?\s*c\.?)?\s*[-–—]\s*(?:\d{1,4}\s*(?:a\.?\s*c\.?|d\.?\s*c\.?)?|ACT|actualidad)\s*$/i,"");
- raw=raw.replace(/\s*\(\s*\d{3,4}\s*\)\s*[-–—]\s*.+$/i,"");
- raw=raw.replace(/\s*\(\s*\d{3,4}\s*\)\s*$/i,"");
- raw=raw.trim().replace(/\s+[-–—]\s*$/,"");
- var canonical=wikiPlain(raw);
- if(wikiAliases[canonical])return wikiAliases[canonical];
+ var raw=wikiStripDates(d.t);
+ if(d.c==="Pontífices"){
+  raw=raw.replace(/^S\.\s*/i,"").replace(/\s*\([^)]*\)\s*/g," ").replace(/\s+/g," ").trim();
+  // Pontiff names are often shared with monarchs, saints and ordinary people.
+  return raw+" (papa)";
+ }
+ if(wikiById[d.id])return wikiById[d.id];
+ var key=wikiPlain(raw);
+ if(wikiAliases[key])return wikiAliases[key];
  return raw||d.t;
+}
+function wikiCandidates(d){
+ var main=wikipediaSearchName(d),a=[main];
+ var clean=wikiStripDates(d.t),name=wikiPlain(clean);
+ if(d.c==="Pontífices"){
+  var pope=main.replace(/\s+\(papa\)$/i,"");
+  a.push("papa "+pope,pope);
+ }else{
+  a.push(clean);
+  if(d.c==="Cine"&&clean.includes(","))a.push(clean.split(",")[0]);
+  if(d.c==="Personajes"&&name.includes(" de "))a.push(clean.replace(/\s+de\s+.+$/i,""));
+ }
+ if(wikiAliases[name])a.unshift(wikiAliases[name]);
+ return Array.from(new Set(a.filter(function(t){return typeof t==="string"&&t.trim()&&t.length<=180}))).slice(0,4);
+}
+function wikiIsComposite(d){
+ // Do not silently substitute the article for just one of multiple events.
+ if(d.c==="Actualidad")return /[;]|\b(?:y|mientras|además)\b/i.test(d.t)&&d.t.split(/\s*[;]\s*|\s+\by\b\s+/i).length>1;
+ if(d.c==="Literatura")return /\s+(?:y|\/)\s+/i.test(d.t)&&!wikiById[d.id];
+ return false;
 }
 function wikiSearchURL(term){return "https://es.wikipedia.org/w/index.php?search="+encodeURIComponent(term)}
 function wikiArticleURL(title){return "https://es.wikipedia.org/wiki/"+encodeURIComponent(String(title).replace(/ /g,"_"))}
