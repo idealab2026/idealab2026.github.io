@@ -34,6 +34,8 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_biblioteca.py' -v
       - name: Validar distribución 3D y gestos de zoom
         run: node scripts/test_telarana_3d.mjs
+      - name: Validar biografías independientes y testimonios
+        run: node scripts/test_telarana_person_bios.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
