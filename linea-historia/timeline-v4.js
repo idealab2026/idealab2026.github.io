@@ -727,7 +727,7 @@ function showStudyNote(d){
  if(info.confirmedBy&&info.confirmedBy.url)documentedLink(proof,info.confirmedBy.url,info.confirmedBy.label||"Consultar fuente de contraste");
  root.append(proof);
  root.append(el("h3","Referencia en La Telaraña","wiki-section-title"));
- root.append(el("p","Estudio de la fuente "+(info.sourceOrder||"?")+"/33. El testimonio no sustituye a la documentación del hecho.","source-note"));
+ root.append(el("p",info.sourceOrder?("Estudio de la fuente "+info.sourceOrder+"/33. El testimonio no sustituye a la documentación del hecho."):("Estudio complementario de La Telaraña. Numeración pendiente de contrastar con el catálogo de 33 fuentes; el episodio no sustituye a las pruebas históricas."),"source-note"));
  var contextual=el("div",null,"research-sources");
  if(info.sourceUrl)documentedLink(contextual,info.sourceUrl,"Consultar el episodio");
  if(Array.isArray(info.relatedTelarana)&&info.relatedTelarana.length){
