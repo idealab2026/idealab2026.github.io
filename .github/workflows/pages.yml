@@ -167,7 +167,7 @@ jobs:
           test -s dist/la-telarana/graph-3d.js
           node --check dist/la-telarana/graph-3d.js
           # Ninguna versión puede publicarse con scripts locales referenciados pero ausentes.
-          node -e 'const fs=require("fs");const html=fs.readFileSync("dist/la-telarana/index.html","utf8");const names=[...html.matchAll(/<script\\s+src="\\.\\/([^"?]+\\.js)(?:\\?[^"]*)?"/g)].map(m=>m[1]);const missing=names.filter(n=>!fs.existsSync("dist/la-telarana/"+n));if(missing.length){console.error("Scripts de La Telaraña ausentes en Pages:",missing.join(", "));process.exit(1)}console.log("OK: "+names.length+" scripts referenciados y presentes")'
+          node -e 'const fs=require("fs");const html=fs.readFileSync("dist/la-telarana/index.html","utf8");const names=[...html.matchAll(/<script[^>]*src="([^"]+)"/g)].map(m=>m[1]).filter(n=>n.startsWith("./")&&n.includes(".js")).map(n=>n.slice(2).split("?")[0]);if(names.length<20)throw Error("Lista de scripts inesperadamente corta: "+names.length);const missing=names.filter(n=>!fs.existsSync("dist/la-telarana/"+n));if(missing.length){console.error("Scripts de La Telaraña ausentes en Pages:",missing.join(", "));process.exit(1)}console.log("OK: "+names.length+" scripts referenciados y presentes")'
           for f in dist/la-telarana/fuente-*.js; do node --check "$f"; done
           grep -q 'src="./graph-3d.js' dist/la-telarana/index.html
           mkdir -p dist/icsa
