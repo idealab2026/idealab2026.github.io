@@ -46,7 +46,7 @@ assert(events.every(x=>x.investigation.relatedTelarana.every(id=>ids.has(id))));
 assert(events.some(x=>x.investigation.date==="2020-10-14"&&/título lucrativo/i.test(x.t)));
 assert(events.some(x=>x.investigation.date==="2024-03-15"&&/absuelve/i.test(x.t)));
 const row=progress.sourceCatalog.entries.find(x=>x.order===7);
-assert(row.tracking.docTranscriptionCreated===true&&row.tracking.transcriptContentImported===false);
+assert(row.tracking.docTranscriptionCreated===true&&row.tracking.transcriptContentImported===true);
 assert(row.reviewComplete===false&&row.docTranscriptHasFullText===false);
 assert.equal(progress.timeline.committedVerifiedEvents,history.items.length,"Timeline global can grow when subsequent sources are reviewed");
 assert.equal(progress.timeline.eventsBySource["7"].length,5);
