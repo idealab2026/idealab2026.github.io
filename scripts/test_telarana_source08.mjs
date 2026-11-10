@@ -64,6 +64,7 @@ assert.equal(source.tracking.transcriptContentImported,true);
 assert.equal(source.tracking.complete,false);
 assert.equal(source.tracking.imageRuntimeVerified,false);
 assert(html.includes("podcast-vaquero-67-villarejo.js?v="));
-assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_SOURCE08_EDITORIAL)"));
+const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(html)||[])[1]||"[]");
+assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE08_EDITORIAL"&&m.kind==="mergeNewEpisode")&&html.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE08_EDITORIAL");
 assert(!html.includes("source-review-rows")&&!html.includes("progreso-fuentes.json"),"The private source tracking table must not be in the public web page");
 console.log("OK: source08 · 8 nodes, 7 non-accusatory links, 5 bios, 1 court-history event, transcript pending");
