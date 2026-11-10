@@ -266,6 +266,103 @@ class BridgeTests(unittest.TestCase):
             submit.assert_called_once()
             self.assertEqual(state["102"]["phase"], "downloaded")
 
+    def test_retry_failed_opt_in_only_and_idempotent(self):
+        import argparse
+        state = {"105": {"phase": "failed", "artifact_id": "failed-001",
+                         "request": request()}}
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "save_json") as save:
+            bridge.queue_retry_failed(argparse.Namespace(issue=105))
+            self.assertTrue(state["105"]["retry_requested"])
+            self.assertEqual(state["105"]["phase"], "failed")
+            save.assert_called_once()
+            bridge.queue_retry_failed(argparse.Namespace(issue=105))
+            save.assert_called_once()
+        state["105"]["phase"] = "downloaded"
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state):
+            with self.assertRaises(ValueError):
+                bridge.queue_retry_failed(argparse.Namespace(issue=105))
+
+    def test_queued_retry_never_overlaps_active_generation(self):
+        state = {
+            "105": {"phase": "failed", "artifact_id": "failed-001",
+                    "retry_requested": True, "request": request()},
+            "106": {"phase": "submitted", "request": request()},
+        }
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "check_submitted"), \
+             patch.object(bridge, "retry_github_comments"), \
+             patch.object(bridge, "launch_queued_retry") as launch:
+            bridge.poll()
+            launch.assert_not_called()
+
+    def test_retry_requires_old_remote_artifact_still_failed(self):
+        job = {"phase": "failed", "artifact_id": "failed-001",
+               "retry_requested": True, "request": request(vid=VIDEO),
+               "notebook": "notebook-001", "source_ids": ["source-001"]}
+        cfg = {"books": {BOOK: {"episodes": {VIDEO: {
+            "notebook": "notebook-001", "sources": ["source-001"]}}}}}
+        state = {"105": job}
+        with patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "failed-001", "status": "completed"}]), \
+             patch.object(bridge, "command") as command, \
+             patch.object(bridge, "save_json") as saved:
+            self.assertFalse(bridge.launch_queued_retry(state, cfg))
+            self.assertEqual(job["phase"], "failed")
+            self.assertNotIn("retry_requested", job)
+            self.assertIn("retry_blocked", job)
+            command.assert_not_called()
+            saved.assert_called_once()
+
+    def test_retry_preserves_history_and_downloaded_pngs(self):
+        job = {"phase": "failed", "artifact_id": "failed-001",
+               "retry_requested": True, "request": request(vid=VIDEO),
+               "notebook": "notebook-001", "source_ids": ["source-001"]}
+        downloaded = {"phase": "downloaded", "path": "/tmp/issue-107.png",
+                      "request": request(vid=VIDEO)}
+        cfg = {"books": {BOOK: {"episodes": {VIDEO: {
+            "notebook": "notebook-001", "sources": ["source-001"]}}}}}
+        state = {"105": job, "107": downloaded}
+        with patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "failed-001", "status": "failed"},
+                                        {"id": "other-001", "status": "completed"}]), \
+             patch.object(bridge, "command") as command, \
+             patch.object(bridge, "comment_or_queue") as comment, \
+             patch.object(bridge, "save_json") as saved:
+            self.assertTrue(bridge.launch_queued_retry(state, cfg))
+            self.assertEqual(job["phase"], "submitted")
+            self.assertEqual(job["before"], ["failed-001", "other-001"])
+            self.assertNotIn("artifact_id", job)
+            self.assertFalse(job.get("retry_requested"))
+            self.assertEqual(job["past_attempts"][0]["artifact_id"], "failed-001")
+            self.assertEqual(downloaded["path"], "/tmp/issue-107.png")
+            self.assertEqual(downloaded["phase"], "downloaded")
+            command.assert_called_once()
+            self.assertEqual(command.call_args.args[0][0:3],
+                             ["nlm", "infographic", "create"])
+            comment.assert_called_once_with("105", bridge.RETRY_COMMENT, job, state)
+            self.assertGreaterEqual(saved.call_count, 2)
+
+    def test_uncertain_retry_not_repeated_without_explicit_action(self):
+        job = {"phase": "failed", "artifact_id": "failed-001",
+               "retry_requested": True, "request": request(vid=VIDEO),
+               "notebook": "notebook-001", "source_ids": ["source-001"]}
+        cfg = {"books": {BOOK: {"episodes": {VIDEO: {
+            "notebook": "notebook-001", "sources": ["source-001"]}}}}}
+        state = {"105": job}
+        with patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "failed-001", "status": "failed"}]), \
+             patch.object(bridge, "command", side_effect=RuntimeError("limit")), \
+             patch.object(bridge, "save_json"):
+            self.assertTrue(bridge.launch_queued_retry(state, cfg))
+            self.assertEqual(job["phase"], "uncertain")
+            self.assertNotIn("retry_requested", job)
+            self.assertFalse(bridge.launch_queued_retry(state, cfg))
+
     def test_saved_config_is_user_only(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "private" / "config.json"
