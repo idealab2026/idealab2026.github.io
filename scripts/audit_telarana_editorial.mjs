@@ -69,6 +69,25 @@ for(const item of statements){
 assert(statements.length>=330,"La base editorial perdió comentarios registrados");
 assert(flagged.length<=114,"Han aumentado los resúmenes potencialmente superficiales; revisar antes de publicar");
 assert(structured.length>=1,"Se ha perdido el expediente estructurado de Hunter Biden");
+assert(structured.length>=63,"Regresión: se han perdido expedientes con declarante, tema y estado");
+for(const order of ["23","24"]){
+ const dossiers=statements.filter(x=>x.order===order);
+ const expected=order==="23"?30:23;
+ assert(dossiers.length===expected,"Han variado las menciones sin reconciliar la revisión F"+order);
+ assert(dossiers.every(x=>x.structured),"No reintroducir resúmenes libres en la fuente "+order);
+}
+const safeStatuses=new Set(["alegacion_no_verificada","opinion_atribuida","mencion_contextual","identidad_pendiente","declaracion_de_parte"]);
+for(const order of ["23","24"]){
+ for(const [name,p] of Object.entries(lib.profiles)){
+  for(const record of p.sources?.[order]||[]){
+   assert(safeStatuses.has(record.status),"Estado editorial indefinido en "+name+" F"+order);
+   assert(record.speaker==="Lorenzo Ramírez"||record.speaker==="Asistente del público","Declarante sin identificar en "+name+" F"+order);
+   assert(record.transcriptVerified===true&&record.audioVerified===false&&record.minuteVerified===false,"Confusión entre transcripción y audio verificado en "+name+" F"+order);
+   if(name!=="Lorenzo Ramírez")assert(typeof record.transcriptAnchor==="string"&&record.transcriptAnchor.length>=14,"No existe pasaje de origen localizable: "+name+" F"+order);
+  }
+ }
+}
+
 const hunter=lib.profiles["Hunter Biden"];
 assert(hunter?.sources?.["20"]?.[0]?.topic,"Falta la reparación editorial de Hunter Biden");
 const result={
