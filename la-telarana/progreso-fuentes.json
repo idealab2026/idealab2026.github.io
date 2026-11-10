@@ -100,7 +100,17 @@
       "personProfilesSourceFile": "la-telarana/personas-fuentes-18-21.js",
       "personBiographiesFirst": true,
       "visualFallbackPolicy": "Wikipedia por nombre canónico; icono semántico en 2D/3D/galería/ficha si no hay retrato",
-      "lastUpdated": "2026-11-10"
+      "lastUpdated": "2026-11-10",
+      "editorialMaintenance": {
+        "structuredStatements": 17,
+        "legacyStatements": 18,
+        "transcriptAnchorsConfirmed": 17,
+        "transcriptDocUrl": "https://docs.google.com/document/d/1NkObyeYg7R9TbW4sUopaiHwhzx91MiWYeKlGRq_DAvM/edit?usp=drivesdk",
+        "verifiedAudioMinutes": 0,
+        "documentaryClaimsVerifiedIndependently": false,
+        "notes": "Tercera revisión de precisión: 17 comentarios personales estructurados con declarante, tema, límites y ancla textual comprobada en Google Docs. Quedan 18 comentarios en formato anterior. Audio/minutos no cotejados; no implica veracidad material.",
+        "date": "2026-11-10"
+      }
     }
   ],
   "nextSource": {
@@ -420,14 +430,14 @@
       "videoId": "ifklD4aJXv8",
       "title": "Los SECRETOS OCULTOS de LA GUERRA CIVIL ESPAÑOLA - Fernando Paz | Aladetres 112",
       "sourceUrl": "https://www.youtube.com/watch?v=ifklD4aJXv8",
-      "status": "segunda_revision_biografias_atribuciones_publicada",
+      "status": "revision_editorial_parcial_estructurada_sin_cotejo_de_audio",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 11,
       "sourceRelationsDocumented": 10,
       "verifiedIndependentChecks": 1,
-      "qualityNotes": "Segunda capa de transcripción automática: biografías y declaraciones expresamente atribuidas al entrevistado; separación de personas homónimas. Análisis exhaustivo, diarización/audio e imágenes aún no verificados.",
+      "qualityNotes": "Segunda capa de transcripción automática: biografías y declaraciones expresamente atribuidas al entrevistado; separación de personas homónimas. Análisis exhaustivo, diarización/audio e imágenes aún no verificados.\nTercera revisión de precisión: 15 comentarios personales estructurados con declarante, tema, límites y ancla textual comprobada en Google Docs. Quedan 13 comentarios en formato anterior. Audio/minutos no cotejados; no implica veracidad material.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "timelineVerifiedEventsCommitted": 1,
@@ -440,6 +450,16 @@
         "stageNetNodesAdded": 8,
         "stageNetEdgesAdded": 10,
         "scope": "source_script_in_current_pipeline_before_following_sources_and_biography_merge"
+      },
+      "editorialMaintenance": {
+        "structuredStatements": 15,
+        "legacyStatements": 13,
+        "transcriptAnchorsConfirmed": 15,
+        "transcriptDocUrl": "https://docs.google.com/document/d/1vy3u_WGfDfAeLiynwJtHme-sahSQjujLsGIVcqcUj10/edit?usp=drivesdk",
+        "verifiedAudioMinutes": 0,
+        "documentaryClaimsVerifiedIndependently": false,
+        "notes": "Tercera revisión de precisión: 15 comentarios personales estructurados con declarante, tema, límites y ancla textual comprobada en Google Docs. Quedan 13 comentarios en formato anterior. Audio/minutos no cotejados; no implica veracidad material.",
+        "date": "2026-11-10"
       }
     },
     {
@@ -474,14 +494,14 @@
       "videoId": "I5koBMBMXSc",
       "title": "The Wild Project #293 - Jesús Hernández | La vida secreta de Hitler, Nazis y las reliquias Ocultas",
       "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
-      "status": "segunda_revision_biografica_y_4_hitos_documentados_revision_aun_abierta",
+      "status": "revision_editorial_parcial_estructurada_sin_cotejo_de_audio",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 9,
       "sourceRelationsDocumented": 8,
       "verifiedIndependentChecks": 4,
-      "qualityNotes": "Texto automático completo consultado en Drive institucional. Se publican 20 fichas biográficas independientes y resúmenes impersonales atribuidos al episodio; sin inferir relaciones sustantivas por mera co-mención. Cuatro acontecimientos (incluido Valquiria) cotejados con Bundesarchiv y USHMM, incorporados a la Línea de la Historia. Falta revisión exhaustiva línea a línea del ASR, cotejo de audio, identificación de hablantes/minutajes, comprobación de anécdotas discutidas y validación visual de retratos.",
+      "qualityNotes": "Texto automático completo consultado en Drive institucional. Se publican 20 fichas biográficas independientes y resúmenes impersonales atribuidos al episodio; sin inferir relaciones sustantivas por mera co-mención. Cuatro acontecimientos (incluido Valquiria) cotejados con Bundesarchiv y USHMM, incorporados a la Línea de la Historia. Falta revisión exhaustiva línea a línea del ASR, cotejo de audio, identificación de hablantes/minutajes, comprobación de anécdotas discutidas y validación visual de retratos.\nTercera revisión de precisión: 9 comentarios personales estructurados con declarante, tema, límites y ancla textual comprobada en Google Docs. Quedan 11 comentarios en formato anterior. Audio/minutos no cotejados; no implica veracidad material.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "timelineVerifiedEventsCommitted": 4,
@@ -501,7 +521,17 @@
         "study-f13-operacion-barbarroja-1941"
       ],
       "imageRuntimeVerified": false,
-      "lastUpdated": "2026-11-10"
+      "lastUpdated": "2026-11-10",
+      "editorialMaintenance": {
+        "structuredStatements": 9,
+        "legacyStatements": 11,
+        "transcriptAnchorsConfirmed": 9,
+        "transcriptDocUrl": "https://docs.google.com/document/d/1z9Od9HaUFMKwYXBeXE1mi5r23QcoH65gMmIpjrRtqdQ/edit?usp=drivesdk",
+        "verifiedAudioMinutes": 0,
+        "documentaryClaimsVerifiedIndependently": false,
+        "notes": "Tercera revisión de precisión: 9 comentarios personales estructurados con declarante, tema, límites y ancla textual comprobada en Google Docs. Quedan 11 comentarios en formato anterior. Audio/minutos no cotejados; no implica veracidad material.",
+        "date": "2026-11-10"
+      }
     },
     {
       "order": 14,
@@ -1524,20 +1554,25 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 32,
-        "status": "segunda_revision_biografias_atribuciones_publicada",
+        "status": "revision_editorial_parcial_estructurada_sin_cotejo_de_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1vy3u_WGfDfAeLiynwJtHme-sahSQjujLsGIVcqcUj10/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "retratos_wikipedia_o_iconos_fallback",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 142446,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredStatements": 15,
+          "unstructuredStatements": 13,
+          "textAnchorsVerified": 15,
+          "audioMatched": false,
+          "editorialMaintenanceInProgress": true
         }
       },
       {
@@ -1576,20 +1611,25 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 34,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "revision_editorial_parcial_estructurada_sin_cotejo_de_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1z9Od9HaUFMKwYXBeXE1mi5r23QcoH65gMmIpjrRtqdQ/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 274234,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredStatements": 9,
+          "unstructuredStatements": 11,
+          "textAnchorsVerified": 9,
+          "audioMatched": false,
+          "editorialMaintenanceInProgress": true
         }
       },
       {
@@ -1791,14 +1831,19 @@
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1NkObyeYg7R9TbW4sUopaiHwhzx91MiWYeKlGRq_DAvM/edit?usp=drivesdk",
           "complete": true,
           "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 137414,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredStatements": 17,
+          "unstructuredStatements": 18,
+          "textAnchorsVerified": 17,
+          "audioMatched": false,
+          "editorialMaintenanceInProgress": true
         }
       },
       {
@@ -2991,12 +3036,12 @@
   "editorialQualityAudit": {
     "date": "2026-11-10",
     "scope": "Fuentes 9–24 con expedientes de personas (15 fuentes, sin 15 por ser PDF institucional)",
-    "status": "auditoria_527_nodos_y_reescritura_completa_f23_f24_verificada_con_transcripcion_audio_pendiente",
+    "status": "barrido_527_entidades_revisiones_f11_f13_f21_por_transcripcion_publicadas",
     "profilesUnique": 201,
     "sourceCommentaries": 331,
-    "structuredWithExplicitSpeakerTopicAndStatus": 63,
-    "legacyEditorialSummaries": 268,
-    "possibleVagueNarrativesRequiringManualReview": 90,
+    "structuredWithExplicitSpeakerTopicAndStatus": 104,
+    "legacyEditorialSummaries": 227,
+    "possibleVagueNarrativesRequiringManualReview": 81,
     "controversyTermMatchesRequiringProvenanceReview": 44,
     "explicitIndependentlyVerifiedRelations": 2,
     "graphLinksTotal": 813,
@@ -3014,7 +3059,10 @@
       },
       "11": {
         "claims": 28,
-        "candidates": 10
+        "candidates": 10,
+        "structured": 15,
+        "unstructured": 13,
+        "matchedTranscriptAnchors": 15
       },
       "12": {
         "claims": 6,
@@ -3022,7 +3070,10 @@
       },
       "13": {
         "claims": 20,
-        "candidates": 7
+        "candidates": 7,
+        "structured": 9,
+        "unstructured": 11,
+        "matchedTranscriptAnchors": 9
       },
       "14": {
         "claims": 16,
@@ -3050,7 +3101,10 @@
       },
       "21": {
         "claims": 35,
-        "candidates": 9
+        "candidates": 9,
+        "structured": 17,
+        "unstructured": 18,
+        "matchedTranscriptAnchors": 17
       },
       "22": {
         "claims": 13,
@@ -3081,12 +3135,12 @@
       "Conservar el texto original y no inventar minutajes",
       "Revisar 114 candidatos uno por uno antes de declarar cerrada la auditoría"
     ],
-    "affectedEntitiesByPotentiallyGenericSourceCommentary": 73,
+    "affectedEntitiesByPotentiallyGenericSourceCommentary": 66,
     "source23DossiersStructured": 30,
     "source24DossiersStructured": 23,
     "source23TranscriptAnchorsMatched": 29,
     "source24TranscriptAnchorsMatched": 23,
-    "transcriptAnchorsMatchedTotal": 52,
+    "transcriptAnchorsMatchedTotal": 93,
     "transcriptAnchorsUnmatched": 0,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
     "latestAuditedGraphEntities": 527,
@@ -3098,6 +3152,14 @@
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
     "source23And24IndependentClaimValidationComplete": false,
-    "editorialDebtNote": "Las 53 fichas de F23/F24 están estructuradas y se encontraron 52 anclas literales en sus respectivos Docs institucionales. Esto confirma presencia de pasajes en ASR, no identidad fonética ni veracidad. Quedan 268 resúmenes anteriores sin estructura comparable, además de datos de OneNote y podcast a revisar."
+    "editorialDebtNote": "Se han estructurado 41 nuevas declaraciones F11/F13/F21 y sus 41 anclas se localizaron literalmente en sus documentos íntegros en Drive. Junto con las 53 F23/F24, hay 104 resúmenes estructurados y 227 heredados. El cotejo de audio y las verificaciones históricas independientes continúan abiertos; el recuento heurístico de 81 potencialmente genéricos no es un veredicto.",
+    "source11DossiersStructured": 15,
+    "source13DossiersStructured": 9,
+    "source21DossiersStructured": 17,
+    "source11TranscriptAnchorsMatched": 15,
+    "source13TranscriptAnchorsMatched": 9,
+    "source21TranscriptAnchorsMatched": 17,
+    "additionalTranscriptAnchorsMatched": 41,
+    "remainingUnstructuredFromSources11_13_21": 42
   }
 }
