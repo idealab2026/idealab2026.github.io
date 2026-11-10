@@ -64,7 +64,13 @@
       "reviewComplete": true,
       "timelineVerifiedEventsCommitted": 3,
       "sourceState": "Edición documental publicada y cotejo por temas con fuentes externas. Alegaciones sin prueba categorizadas como tales; retratos aún pendientes de validación visual.",
-      "completionCriteria": "Procesamiento del texto íntegro y principales bloques, biografías y relaciones clasificadas, contrastes institucionales y QA de estructura. No implica aceptación de las alegaciones; el cotejo de audio y la revisión visual de retratos siguen como controles de calidad posteriores."
+      "completionCriteria": "Procesamiento del texto íntegro y principales bloques, biografías y relaciones clasificadas, contrastes institucionales y QA de estructura. No implica aceptación de las alegaciones; el cotejo de audio y la revisión visual de retratos siguen como controles de calidad posteriores.",
+      "personsProfiled": 36,
+      "impersonalAttributedSummaries": 36,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-18-21.js",
+      "personBiographiesFirst": true,
+      "visualFallbackPolicy": "Wikipedia por nombre canónico; icono semántico en 2D/3D/galería/ficha si no hay retrato",
+      "lastUpdated": "2026-11-10"
     },
     {
       "order": 21,
@@ -88,7 +94,13 @@
       "reviewComplete": true,
       "timelineVerifiedEventsCommitted": 5,
       "sourceState": "Edición documental publicada y cotejo por temas con fuentes externas. Alegaciones sin prueba categorizadas como tales; retratos aún pendientes de validación visual.",
-      "completionCriteria": "Procesamiento del texto íntegro y principales bloques, biografías y relaciones clasificadas, contrastes institucionales y QA de estructura. No implica aceptación de las alegaciones; el cotejo de audio y la revisión visual de retratos siguen como controles de calidad posteriores."
+      "completionCriteria": "Procesamiento del texto íntegro y principales bloques, biografías y relaciones clasificadas, contrastes institucionales y QA de estructura. No implica aceptación de las alegaciones; el cotejo de audio y la revisión visual de retratos siguen como controles de calidad posteriores.",
+      "personsProfiled": 33,
+      "impersonalAttributedSummaries": 35,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-18-21.js",
+      "personBiographiesFirst": true,
+      "visualFallbackPolicy": "Wikipedia por nombre canónico; icono semántico en 2D/3D/galería/ficha si no hay retrato",
+      "lastUpdated": "2026-11-10"
     }
   ],
   "nextSource": {
