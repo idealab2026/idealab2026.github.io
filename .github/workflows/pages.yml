@@ -95,6 +95,13 @@ jobs:
           cp la-telarana/podcast-wild-253-villarejo.js dist/la-telarana/podcast-wild-253-villarejo.js
           cp la-telarana/podcast-wild-312-chicote.js dist/la-telarana/podcast-wild-312-chicote.js
           cp la-telarana/podcast-vaquero-67-villarejo.js dist/la-telarana/podcast-vaquero-67-villarejo.js
+          # NUEVAS FUENTES EXPLICITAMENTE AUTORIZADAS para publicar (sin transcripciones ni seguimiento privado).
+          cp la-telarana/fuente-09-villarejo-revision.js dist/la-telarana/fuente-09-villarejo-revision.js
+          for n in 10 11 12 13 14 16 17 19 20 22 23 24 25; do
+            cp "la-telarana/fuente-${n}-revision-inicial.js" "dist/la-telarana/fuente-${n}-revision-inicial.js"
+          done
+          cp la-telarana/fuente-18-epstein-lorenzo-editorial.js dist/la-telarana/fuente-18-epstein-lorenzo-editorial.js
+          cp la-telarana/fuente-21-orden-mundial-editorial.js dist/la-telarana/fuente-21-orden-mundial-editorial.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
@@ -159,6 +166,9 @@ jobs:
           grep -q "IDEA_TELARANA_LAYOUT_V2" dist/la-telarana/layout-seed-v2.js
           test -s dist/la-telarana/graph-3d.js
           node --check dist/la-telarana/graph-3d.js
+          # Ninguna versión puede publicarse con scripts locales referenciados pero ausentes.
+          node -e 'const fs=require("fs");const html=fs.readFileSync("dist/la-telarana/index.html","utf8");const names=[...html.matchAll(/<script\\s+src="\\.\\/([^"?]+\\.js)(?:\\?[^"]*)?"/g)].map(m=>m[1]);const missing=names.filter(n=>!fs.existsSync("dist/la-telarana/"+n));if(missing.length){console.error("Scripts de La Telaraña ausentes en Pages:",missing.join(", "));process.exit(1)}console.log("OK: "+names.length+" scripts referenciados y presentes")'
+          for f in dist/la-telarana/fuente-*.js; do node --check "$f"; done
           grep -q 'src="./graph-3d.js' dist/la-telarana/index.html
           mkdir -p dist/icsa
           cp icsa/index.html icsa/privacidad.html dist/icsa/
