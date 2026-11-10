@@ -80,19 +80,54 @@
       }
     },
     "Nicolás Maduro": {
-      "who": "Político venezolano, presidente de Venezuela desde 2013 y sucesor de Hugo Chávez.",
-      "portrait": {
-        "lang": "es",
-        "title": "Nicolás Maduro"
-      },
-      "sources": {
-        "9": [
-          "Nicolás Maduro aparece en las afirmaciones del entrevistado sobre servicios de inteligencia venezolanos, redes económicas y posibles responsabilidades de dirigentes del país."
-        ],
-        "10": [
-          "Nicolás Maduro es citado al debatir una intervención estadounidense en Venezuela y las reacciones de dirigentes políticos europeos ante ella."
-        ]
-      }
+          "who": "Político venezolano, sucesor de Hugo Chávez en la presidencia de Venezuela (2013–3 de enero de 2026). Fue capturado durante una operación militar estadounidense en Caracas el 3 de enero de 2026 y trasladado a Nueva York. Delcy Rodríguez asumió la presidencia interina. Maduro se declaró no culpable de los cargos presentados ante la justicia estadounidense.",
+          "portrait": {
+                "lang": "es",
+                "title": "Nicolás Maduro"
+          },
+          "biographySources": [
+                {
+                      "title": "Biblioteca de la Cámara de los Comunes (24/09/2026)",
+                      "url": "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/"
+                },
+                {
+                      "title": "Reuters (26/09/2026)",
+                      "url": "https://www.investing.com/news/commodities-news/analysisvenezuela-president-returns-from-us-visit-with-no-deals-no-firm-election-date-4918550"
+                }
+          ],
+          "sources": {
+                "9": [
+                      {
+                            "topic": "Salida de Hugo Carvajal y consecuencias para el Gobierno de Maduro",
+                            "speaker": "José Manuel Villarejo",
+                            "statement": "Villarejo sostiene que Maduro no habría calculado las consecuencias de la salida de Hugo Carvajal, antiguo responsable de inteligencia de Venezuela. Afirma que Carvajal habría abandonado el país con ayuda del CNI y que la información que manejaba acabaría en manos estadounidenses. La entrevista no incorpora documentos que permitan verificar estas afirmaciones sobre la operación y sus responsables.",
+                            "status": "alegacion_no_verificada",
+                            "transcriptVerified": true,
+                            "audioVerified": false,
+                            "minuteVerified": false
+                      },
+                      {
+                            "topic": "Predicción de la captura y posibles ofertas de salida",
+                            "speaker": "José Manuel Villarejo",
+                            "statement": "Villarejo asegura haber anticipado la operación estadounidense contra Maduro gracias a informaciones de antiguos contactos de la CIA; añade que, según esas fuentes, a Maduro se le habría ofrecido abandonar Venezuela antes de la captura. Esta versión sobre contactos y ofrecimientos se presenta exclusivamente como su testimonio, no como un hecho comprobado.",
+                            "status": "alegacion_no_verificada",
+                            "transcriptVerified": true,
+                            "audioVerified": false,
+                            "minuteVerified": false
+                      }
+                ],
+                "10": [
+                      {
+                            "topic": "Soberanía venezolana y operación estadounidense de enero de 2026",
+                            "speaker": "Juan Manuel de Prada",
+                            "statement": "De Prada critica la operación de Estados Unidos que culminó con la captura de Maduro, por considerarla contraria a la soberanía de Venezuela. Aclara que no simpatiza con el régimen de Maduro y menciona que Marine Le Pen también cuestionó la operación. Defiende que España mantenga una política exterior propia respecto de Hispanoamérica, sin seguir automáticamente la de Washington.",
+                            "status": "opinion_atribuida",
+                            "transcriptVerified": true,
+                            "audioVerified": false,
+                            "minuteVerified": false
+                      }
+                ]
+          }
     },
     "José Luis Rodríguez Zapatero": {
       "who": "Político español del PSOE y presidente del Gobierno entre 2004 y 2011.",
