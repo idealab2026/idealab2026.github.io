@@ -441,19 +441,46 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "name": "Peter Thiel",
       "kind": "Persona",
       "subtitle": "Empresario tecnológico y cofundador de Palantir",
-      "note": "Se analiza su influencia en tecnología y política. Los datos corporativos y las acusaciones se tratan por separado.",
+      "note": "Peter Thiel aparece expresamente en esta entrevista; el transcriptor automático escribe su apellido como «Peterill», «Peter thil» o «Peter cill». Los pasajes sobre su actividad tecnológica, contratos públicos y presuntas tramas deben atribuirse al episodio y distinguirse de hechos documentados. Revisar las cuatro notas de investigación.",
       "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
       "topic3d": "tecnologia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f21-orden-mundial",
-          "title": "El Nuevo Orden Mundial que nos ocultan | Lorenzo Ramírez #68",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~57 % del episodio. Se afirma que hay personas cercanas a Peter Thiel en el entorno del departamento sanitario estadounidense y del equipo de Robert F. Kennedy Jr. La entrevista no identifica pruebas suficientes para comprobar de manera individual cada nombramiento o vinculación."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~72 % del episodio. Se presenta la tesis de que profesionales cercanos a Elon Musk, Thiel y Palantir participan en tareas de revisión de la Administración estadounidense, utilizando el término «Palantir boys». No se verifican aquí identidades, contratos ni posibles incompatibilidades individuales."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~74 % del episodio. El entrevistado describe a Thiel como una figura de la «PayPal Mafia», comenta Palantir y su relación con servicios de inteligencia y compara su influencia política con la de George Soros. La filiación empresarial es distinguible de las acusaciones sobre coordinación encubierta, que no quedan probadas."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
           "publishedAt": "2025-03-19",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
-          "text": "Mención localizada aproximadamente al 57% del texto automático, sin minutaje: «ie de personas muy cercanas a peter cel que son defensoras aanza de las terapias génicas utilizando el an mensajero que es algo en lo que él ha luchado con uñas y dientes durante l». Contexto editorial: Se analiza su influencia en tecnología y política. Los datos corporativos y las acusaciones se tratan por separado."
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~83 % del episodio. Se comenta la cotización bursátil de Palantir y se cuestiona la transparencia de su actividad comercial desde una perspectiva inversora. Se trata de opiniones de mercado referidas a marzo de 2025, no de una valoración financiera actual."
         }
       ],
       "x": 6590,
@@ -1093,19 +1120,46 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "b": "f21-peter",
       "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
       "confidence": "documentado",
-      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 57%.",
+      "note": "Mención comprobada en el texto completo de NotebookLM, con grafías automáticas variables. No demuestra contacto interpersonal con el presentador o invitado, ni las acusaciones debatidas.",
       "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
       "episodeId": "idealab-f21-orden-mundial",
       "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
       "podcastNotes": [
         {
           "episodeId": "idealab-f21-orden-mundial",
-          "title": "El Nuevo Orden Mundial que nos ocultan | Lorenzo Ramírez #68",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~57 % del episodio. Se afirma que hay personas cercanas a Peter Thiel en el entorno del departamento sanitario estadounidense y del equipo de Robert F. Kennedy Jr. La entrevista no identifica pruebas suficientes para comprobar de manera individual cada nombramiento o vinculación."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~72 % del episodio. Se presenta la tesis de que profesionales cercanos a Elon Musk, Thiel y Palantir participan en tareas de revisión de la Administración estadounidense, utilizando el término «Palantir boys». No se verifican aquí identidades, contratos ni posibles incompatibilidades individuales."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
+          "publishedAt": "2025-03-19",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~74 % del episodio. El entrevistado describe a Thiel como una figura de la «PayPal Mafia», comenta Palantir y su relación con servicios de inteligencia y compara su influencia política con la de George Soros. La filiación empresarial es distinguible de las acusaciones sobre coordinación encubierta, que no quedan probadas."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "Inversión Racional #68 · El nuevo orden mundial · Lorenzo Ramírez",
           "publishedAt": "2025-03-19",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
-          "text": "Mención localizada aproximadamente al 57% del texto automático, sin minutaje: «ie de personas muy cercanas a peter cel que son defensoras aanza de las terapias génicas utilizando el an mensajero que es algo en lo que él ha luchado con uñas y dientes durante l». Contexto editorial: Se analiza su influencia en tecnología y política. Los datos corporativos y las acusaciones se tratan por separado."
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~83 % del episodio. Se comenta la cotización bursátil de Palantir y se cuestiona la transparencia de su actividad comercial desde una perspectiva inversora. Se trata de opiniones de mercado referidas a marzo de 2025, no de una valoración financiera actual."
         }
       ]
     },
