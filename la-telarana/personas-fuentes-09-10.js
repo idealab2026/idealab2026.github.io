@@ -198,7 +198,7 @@
       },
       "sources": {
         "9": [
-          "Margarita Robles es mencionada al hablar de Pegasus, inteligencia y presunta información privada de altos cargos, sin que la entrevista aporte una identificación documental de los archivos referidos."
+          "Margarita Robles es mencionada al hablar de Pegasus, inteligencia y la supuesta existencia de información privada de altos cargos."
         ]
       }
     },
