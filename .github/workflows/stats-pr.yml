@@ -13,6 +13,16 @@ on:
 permissions:
   contents: read
 jobs:
+  notebooklm-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout institucional, sin conservar credenciales
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verificar bloqueos, cuotas y estado privado del puente (sin red)
+        run: python3 scripts/test_notebooklm_bridge.py -q
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 5
