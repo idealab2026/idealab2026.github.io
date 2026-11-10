@@ -218,6 +218,12 @@ body.graph-expanded{overflow:hidden}
 .recent-links button{background:#1c2936;color:#dfe9f2;border:1px solid #405365;border-radius:8px;padding:6px 9px;font-size:.72rem}
 .recent-links button:hover,.recent-links button:focus-visible{border-color:#e3aa69;color:#f6c48c}
 
+
+.source-report{padding:13px 12px;margin:11px 0;border:1px solid #405364;border-radius:10px;background:#182633}
+.source-report h4{font-size:.9rem;color:#e3aa69;margin:0 0 9px}
+.source-report-text{font-size:.88rem;line-height:1.65;margin:7px 0 11px}
+.source-report-link{color:#9cdceb;text-decoration:underline;text-underline-offset:3px;font-size:.8rem}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -759,6 +765,16 @@ async function getIndependentBiography(node){
 function showPersonBiography(panel,node){
  var section=N("section",null,"biography-section");
  section.append(N("h3","Quién es / trayectoria"));
+ var report=personReport(node);
+ if(report&&report.who){
+  section.append(N("p",report.who));
+  if(report.portrait){
+   var wiki=N("a","Biografía: Wikipedia","biography-source");
+   wiki.href="https://"+report.portrait.lang+".wikipedia.org/wiki/"+encodeURIComponent(report.portrait.title.replace(/ /g,"_"));
+   wiki.target="_blank";wiki.rel="noopener noreferrer";section.append(wiki);
+  }
+  panel.append(section);return;
+ }
  var catalog=biographyCatalog(),curated=(catalog.curated||{})[node.id];
  var context=N("p");section.append(context);
  var refs=N("div",null,"biography-source");section.append(refs);
@@ -795,19 +811,41 @@ function showPersonBiography(panel,node){
  });
 }
 function showPersonResearch(panel,node){
- var section=N("section",null,"research-section");
+ var report=personReport(node),section=N("section",null,"research-section");
  section.append(N("h3","Qué dicen las fuentes"));
- if(node.archiveNote){
-  if(node.note)section.append(N("p",node.note,"source-hint"));
-  var details=N("details"),summary=N("summary","Consultar texto original de OneNote · sin verificación independiente");
-  details.append(summary,N("div",node.archiveNote,"original-note"));section.append(details);
- }else if(node.note&&(!Array.isArray(node.podcastNotes)||!node.podcastNotes.length)){
-  section.append(N("p",node.note,"source-hint"));
- }
- if(Array.isArray(node.podcastNotes)&&node.podcastNotes.length){
-  showPodcastNotes(section,node.podcastNotes,"Aportaciones de podcasts y documentos");
- }else if(!node.archiveNote&&!node.note){
-  section.append(N("p","No hay testimonios o documentos procesados para esta persona.","source-hint"));
+ if(report&&report.sources){
+  var library=window.IDEA_TELARANA_PERSON_SOURCE_REPORTS;
+  Object.keys(report.sources).sort().forEach(function(order){
+   var group=N("div",null,"source-report");
+   group.append(N("h4","Fuente "+order+" · "+(order==="18"?"Rubén Gisbert y Lorenzo Ramírez":"Inversión Racional y Lorenzo Ramírez")));
+   report.sources[order].forEach(function(claim){
+    group.append(N("p","La fuente "+order+" dice que "+claim,"source-report-text"));
+   });
+   var link=N("a","Ver entrevista","source-report-link");
+   link.href=library.sourceUrls[order];link.target="_blank";link.rel="noopener noreferrer";
+   group.append(link);section.append(group);
+  });
+  if(node.archiveNote){
+   var archive=N("details"),summary=N("summary","Notas anteriores de OneNote");
+   archive.append(summary,N("div",node.archiveNote,"original-note"));section.append(archive);
+  }
+  var others=(node.podcastNotes||[]).filter(function(n){
+   return n.episodeId!=="idealab-f18-epstein-lorenzo"&&n.episodeId!=="idealab-f21-orden-mundial";
+  });
+  if(others.length)showPodcastNotes(section,others,"Otras fuentes");
+ }else{
+  if(node.archiveNote){
+   if(node.note)section.append(N("p",node.note,"source-hint"));
+   var details=N("details"),summary=N("summary","Consultar texto original de OneNote");
+   details.append(summary,N("div",node.archiveNote,"original-note"));section.append(details);
+  }else if(node.note&&(!Array.isArray(node.podcastNotes)||!node.podcastNotes.length)){
+   section.append(N("p",node.note,"source-hint"));
+  }
+  if(Array.isArray(node.podcastNotes)&&node.podcastNotes.length){
+   showPodcastNotes(section,node.podcastNotes,"Aportaciones de podcasts y documentos");
+  }else if(!node.archiveNote&&!node.note){
+   section.append(N("p","No hay testimonios o documentos procesados para esta persona.","source-hint"));
+  }
  }
  panel.append(section);
 }
