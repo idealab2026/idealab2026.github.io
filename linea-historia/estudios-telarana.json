@@ -1590,6 +1590,35 @@
         ],
         "methodologicalLimits": "La fecha y la irrupción se apoyan en documentación oficial. El informe no convierte por sí solo el análisis político de los participantes del podcast en hechos acreditados, ni atribuye delitos individuales a partir de sus comentarios."
       }
+    },
+    {
+      "id": "study-f22-marcha-verde-sahara-1975",
+      "y": 1975.8465753424657,
+      "t": "La Marcha Verde cruza la frontera del Sáhara Occidental",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 22 · sentencia y documentación institucional",
+      "d": "El 6 de noviembre de 1975, participantes en la Marcha Verde promovida por Marruecos entraron en el Sáhara Occidental, administrado entonces por España. Ese mismo día, el Consejo de Seguridad de Naciones Unidas aprobó la Resolución 380 (1975), que deploró la realización de la marcha y pidió la retirada de sus participantes. El episodio compara estos hechos con escenarios hipotéticos sobre Ceuta y Gibraltar, sin que esa comparación permita acreditar un plan contemporáneo.",
+      "g": [
+        "África",
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1975-11-06",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 22,
+        "sourceTitle": "El plan ya está en marcha · fuente 22",
+        "sourceUrl": "https://www.youtube.com/watch?v=1zHkc1lFKww",
+        "confirmedBy": {
+          "label": "Tribunal de Justicia de la Unión Europea · Conclusiones del asunto C-266/16 · par. 155-156",
+          "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=ecli:ECLI:EU:C:2018:1"
+        },
+        "relatedTelarana": [
+          "f22-episodio",
+          "f22-marruecos"
+        ],
+        "methodologicalLimits": "La fecha y la resolución de Naciones Unidas están documentadas. No se asumen afirmaciones sin corroborar sobre negociaciones privadas entre Juan Carlos I y Kissinger, ni sobre un supuesto plan actual para Ceuta o Gibraltar."
+      }
     }
   ]
 }
