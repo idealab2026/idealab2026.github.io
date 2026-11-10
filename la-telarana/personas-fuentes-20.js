@@ -56,7 +56,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez lo menciona con una transcripción fonética como «Eric Smith», vincula su trayectoria a Google y atribuye a su entorno influencia tecnológica y de política pública."
+          {
+            "topic": "Google, agencias de inteligencia y función de Eric Schmidt",
+            "speaker": "Lorenzo Ramírez (diarización pendiente de audio)",
+            "statement": "Lorenzo Ramírez menciona fonéticamente a «Eric Smith» cuando describe el nombramiento de un director ejecutivo de Google en 2001, una referencia contextual a Eric Schmidt. A partir de ello sostiene que Google acabó vinculándose a agencias de inteligencia estadounidenses y atribuye a Schmidt influencia institucional. Esas conexiones causales son alegaciones del invitado y el pasaje por sí mismo no las acredita.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se le coloca a Eric Smith Eric Smith es un tipo de esas élites tecnocráticas"
+          }
         ]
       }
     },
@@ -92,7 +101,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez lo relaciona con los proyectos de grandes centros de datos e inteligencia artificial y plantea interpretaciones sobre los intereses estratégicos detrás de esas inversiones."
+          {
+            "topic": "Oracle y el proyecto de centros de datos Stargate",
+            "speaker": "Lorenzo Ramírez (diarización pendiente de audio)",
+            "statement": "El invitado menciona a Larry Ellison al comentar Oracle y el proyecto Stargate, dentro de su análisis sobre grandes centros de datos, inversión en inteligencia artificial y relaciones entre líderes empresariales y dirigentes políticos. El testimonio contiene interpretaciones sobre la influencia tecnológica; no acredita por sí solo comportamientos ilícitos ni intenciones privadas atribuidas a Ellison.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "la persona elegida sea precisamente esta la Larry Ellison"
+          }
         ]
       }
     },
@@ -152,7 +170,16 @@
       },
       "sources": {
         "20": [
-          "El invitado cita el anuncio de Stargate y la política de inteligencia artificial de la Administración Trump para comparar la intervención estatal en el desarrollo tecnológico estadounidense y chino."
+          {
+            "topic": "Anuncio de Stargate y comparación de modelos de apoyo público",
+            "speaker": "Lorenzo Ramírez (diarización pendiente de audio)",
+            "statement": "Ramírez usa el proyecto Stargate, anunciado durante la Administración Trump, para cuestionar la diferencia entre el apoyo estatal estadounidense a la inteligencia artificial y la política tecnológica de China. En el fragmento menciona la participación de empresas como SoftBank y Oracle. La comparación es su valoración política y no permite inferir automáticamente el importe o el origen preciso de la financiación del proyecto.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Cuando Trump lanza el proyecto Stargate"
+          }
         ]
       }
     },
@@ -175,12 +202,26 @@
         "title": "Hunter Biden"
       },
       "biographySources": [
-        {"title": "Associated Press (2014)", "url": "https://www.cbsnews.com/news/bidens-son-joins-board-of-gas-company-in-ukraine/"},
-        {"title": "FactCheck.org (2022)", "url": "https://www.factcheck.org/2022/03/hunter-biden-left-ukrainian-company-in-2019-contrary-to-ted-nugent-post/"}
+        {
+          "title": "Associated Press (2014)",
+          "url": "https://www.cbsnews.com/news/bidens-son-joins-board-of-gas-company-in-ukraine/"
+        },
+        {
+          "title": "FactCheck.org (2022)",
+          "url": "https://www.factcheck.org/2022/03/hunter-biden-left-ukrainian-company-in-2019-contrary-to-ted-nugent-post/"
+        }
       ],
       "sources": {
         "20": [
-          {"topic":"Controversia del ordenador de Hunter Biden y Burisma","speaker":"Lorenzo Ramírez","statement":"En el episodio, Lorenzo Ramírez cuestiona cómo se catalogaron públicamente las informaciones sobre el ordenador de Hunter Biden. Además, sostiene que Joe Biden habría influido para retirar acusaciones relacionadas con Burisma Holdings en Ucrania. Son afirmaciones de Ramírez; la entrevista no aporta pruebas que permitan confirmar esa intervención.","status":"alegacion_no_verificada","transcriptVerified":true,"audioVerified":false,"minuteVerified":false}
+          {
+            "topic": "Controversia del ordenador de Hunter Biden y Burisma",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "En el episodio, Lorenzo Ramírez cuestiona cómo se catalogaron públicamente las informaciones sobre el ordenador de Hunter Biden. Además, sostiene que Joe Biden habría influido para retirar acusaciones relacionadas con Burisma Holdings en Ucrania. Son afirmaciones de Ramírez; la entrevista no aporta pruebas que permitan confirmar esa intervención.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
+          }
         ]
       }
     },
