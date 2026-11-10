@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
 const read=p=>fs.readFileSync(p,"utf8");
-function parse(path){const s=read(path),m=s.match(/window\\.[A-Z0-9_]+\\s*=\\s*/);assert(m,"Falta objeto en "+path);return JSON.parse(s.slice(m.index+m[0].length,s.lastIndexOf(";")))}
+function parse(path){const s=read(path),m=s.match(/window\.[A-Z0-9_]+\s*=\s*/);assert(m,"Falta objeto en "+path);return JSON.parse(s.slice(m.index+m[0].length,s.lastIndexOf(";")))}
 const page=read("la-telarana/index.html"),workflow=read(".github/workflows/pages.yml");
 const lib=parse("la-telarana/personas-fuentes-18-21.js");
 const ctx={window:{IDEA_TELARANA_PERSON_SOURCE_REPORTS:lib}};
@@ -31,7 +31,7 @@ const seed=parse("la-telarana/one-note-seed.js"),f09=parse("la-telarana/fuente-0
 const first=page.indexOf("function sanitizePodcastNotes(value){"),last=page.indexOf("function mergeStudy(v){",first);assert(first>0&&last>first);
 const graph={window:ctx.window,data:JSON.parse(JSON.stringify(seed)),safePhoto:()=>{},f09,f10,f18,f21};
 vm.runInNewContext(page.slice(first,last)+"\nmergeNewEpisode(f09);mergeNewEpisode(f10);mergeNewEpisode(f18);mergeNewEpisode(f21);mergeSourceProfiles();",graph);
-const normalize=x=>String(x||"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+const normalize=x=>String(x||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
 const keyed=new Map(graph.data.nodes.filter(n=>n.kind==="Persona").map(n=>[normalize(n.name),n]));
 for(const [name,p] of Object.entries(spec.profiles)){
  const k=normalize(name),alias=k==="j d vance"?"jd vance":k==="muamar el gadafi"?"muammar gaddafi":k;
