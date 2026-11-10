@@ -31,4 +31,9 @@ assert(!timeline.items.some(e=>e.investigation?.sourceOrder===20),"Una fuente si
 const stargate=timeline.items.find(e=>e.id==="study-f21-stargate-2025");
 assert(stargate&&stargate.investigation.otherSourceMentions?.some(e=>e.sourceOrder===20),"Falta referencia F20 al hecho F21");
 assert(track.timeline.committedVerifiedEvents===timeline.items.length,"No cuadra el inventario de acontecimientos");
+for(const name of ["Eric Schmidt","Donald Trump","Larry Ellison"]){
+ const record=lib.profiles[name].sources["20"].find(x=>typeof x==="object"&&x.transcriptAnchor);
+ assert(record?.transcriptVerified===true&&record.audioVerified===false&&record.minuteVerified===false,"Ancla ASR o cotejo no documentado: "+name);
+ assert(record.transcriptAnchor.length>=25&&record.topic&&record.speaker&&record.status,"Descripción concreta incompleta: "+name);
+}
 console.log("OK: F20 · "+people.length+" biografías, menciones atribuidas y Stargate sin duplicado");
