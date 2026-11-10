@@ -18,7 +18,8 @@ assert(lib.profiles["Rubén Gisbert"]?.sources["16"].some(x=>x.includes("no part
 const html=read("la-telarana/index.html"),flow=read(".github/workflows/pages.yml");
 assert(html.includes('src="./personas-fuentes-16.js'),"No se carga el fichero de biografías");
 assert(html.includes('"16":"f16-episodio"'),"No están vinculadas las personas al episodio");
-assert(html.includes('["9","10","11","12","13","14","16","18","21"].forEach'),"No se audita F16");
+const audited=(html.match(/\[("[0-9]+"(?:,"[0-9]+")*)\]\.forEach\(function\(order\)/)||[])[1];
+assert(audited&&JSON.parse("["+audited+"]").includes("16"),"No se audita F16");
 assert(flow.includes("cp la-telarana/personas-fuentes-16.js dist/la-telarana/personas-fuentes-16.js"),"Pages no incorpora F16");
 const tracker=JSON.parse(read("la-telarana/progreso-fuentes.json"));
 const f16=tracker.inReview.find(x=>x.order===16);
