@@ -1383,6 +1383,90 @@
         ],
         "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
       }
+    },
+    {
+      "id": "study-f13-pacto-germano-sovietico-1939",
+      "y": 1939.641095890411,
+      "t": "Alemania y la URSS firman el pacto Molotov-Ribbentrop",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
+      "d": "El 23 de agosto de 1939, Alemania y la Unión Soviética firmaron un pacto de no agresión. Un protocolo secreto establecía esferas de influencia en Europa oriental. El episodio comenta su papel anterior a la invasión de Polonia; el hecho está documentado independientemente.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1939-08-23",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "USHMM · Pacto Alemán-Soviético",
+          "url": "https://encyclopedia.ushmm.org/content/es/article/german-soviet-pact"
+        },
+        "relatedTelarana": [
+          "f13-hitler",
+          "f13-stalin"
+        ],
+        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
+      }
+    },
+    {
+      "id": "study-f13-invasion-alemana-polonia-1939",
+      "y": 1939.6657534246576,
+      "t": "Alemania invade Polonia e inicia la guerra europea",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
+      "d": "Alemania invadió Polonia el 1 de septiembre de 1939. El 3 de septiembre, Gran Bretaña y Francia declararon la guerra a Alemania. Se incorpora el hecho documentado, no las conjeturas sobre las intenciones o reacciones particulares que se exponen en la conversación.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1939-09-01",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "USHMM · 1939: fechas clave",
+          "url": "https://encyclopedia.ushmm.org/content/es/article/1939-key-dates"
+        },
+        "relatedTelarana": [
+          "f13-hitler",
+          "f13-polonia"
+        ],
+        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
+      }
+    },
+    {
+      "id": "study-f13-operacion-barbarroja-1941",
+      "y": 1941.4712328767123,
+      "t": "Alemania inicia la Operación Barbarroja contra la URSS",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
+      "d": "El 22 de junio de 1941, Alemania comenzó su ofensiva contra la Unión Soviética, rompiendo el pacto germano-soviético. La fuente 13 debate los motivos y decisiones estratégicas; la fecha de inicio y el hecho de la invasión se acreditan mediante documentación histórica externa.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1941-06-22",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "USHMM · El frente oriental",
+          "url": "https://encyclopedia.ushmm.org/content/es/article/the-soviet-union-and-the-eastern-front"
+        },
+        "relatedTelarana": [
+          "f13-hitler",
+          "f13-stalin"
+        ],
+        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
+      }
     }
   ]
 }
