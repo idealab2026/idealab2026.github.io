@@ -129,7 +129,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Adolf Hitler y la Alemania nazi aparecen en el relato del historiador sobre las posiciones de las potencias europeas ante la Guerra Civil y el exilio de intelectuales españoles."
+          {
+            "topic": "Apoyos exteriores a los sublevados y el caso de Severo Ochoa",
+            "speaker": "Fernando Paz",
+            "statement": "Paz menciona a la Alemania gobernada por Hitler entre los países que apoyaron militarmente a los sublevados. También afirma que Severo Ochoa se trasladó durante la guerra a Alemania, no directamente a la URSS, para cuestionar relatos simplificados sobre el exilio intelectual. El episodio no documenta por sí solo las circunstancias individuales de ese traslado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en la Alemania de Hitler"
+          }
         ],
         "12": [
           "Hitler ordenó invadir la Unión Soviética; Juan Manuel de Prada sitúa ese acontecimiento como punto de cambio en la actividad de la resistencia comunista francesa durante la ocupación alemana."
@@ -165,7 +174,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Iósif Stalin es mencionado en la explicación de Fernando Paz sobre las negociaciones republicanas con Moscú y el cálculo del valor del oro del Banco de España transferido a la Unión Soviética."
+          {
+            "topic": "Valoración soviética del oro remitido por la República",
+            "speaker": "Fernando Paz",
+            "statement": "Paz acusa a las autoridades soviéticas de valorar el oro recibido de la República como metal fundido y de no reconocer el posible valor numismático de monedas y objetos, con perjuicio para España. La imputación a Stalin de una maniobra deliberada es una acusación del entrevistado sin documentación contable suficiente aportada en el episodio.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "la primera trampa de stalin"
+          }
         ],
         "12": [
           "Stalin habría llamado, según Juan Manuel de Prada, a los partidos comunistas europeos a intervenir activamente contra la ocupación nazi después de la invasión alemana de la Unión Soviética."
@@ -180,7 +198,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "José Antonio Primo de Rivera habría valorado favorablemente la obra de Federico García Lorca, según Fernando Paz, quien también lo menciona al discutir las conspiraciones anteriores al alzamiento de julio de 1936."
+          {
+            "topic": "Intentos previos de sublevación y admiración literaria por Lorca",
+            "speaker": "Fernando Paz",
+            "statement": "Paz sostiene que José Antonio Primo de Rivera preparó planes de sublevación antes de julio de 1936. También le atribuye una valoración favorable de la poesía de Lorca y la idea de presentarlo como poeta de Falange. La conversación no cita el documento original de esa supuesta frase, por lo que debe tratarse como testimonio atribuido.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "José Antonio Primo de Rivera había hecho dos planes de sublevación"
+          }
         ]
       }
     },
@@ -192,7 +219,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Santiago Casares Quiroga es descrito por Fernando Paz como el jefe de Gobierno cuyo talante dificultaba una negociación con los sublevados, circunstancia que Azaña habría intentado cambiar en julio de 1936."
+          {
+            "topic": "Relevo del Gobierno durante los días iniciales del golpe",
+            "speaker": "Fernando Paz",
+            "statement": "Paz caracteriza a Casares Quiroga como un gobernante poco dispuesto al entendimiento con los militares sublevados. Explica que Azaña lo sustituyó por Martínez Barrio buscando una salida negociada tras el inicio del golpe. La calificación de «sectario» y la posibilidad de haber evitado la guerra son valoraciones del entrevistado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Santiago Casares Quiroga que era el presidente de gobierno"
+          }
         ]
       }
     },
@@ -204,7 +240,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Martínez Barrio es presentado por Fernando Paz como la alternativa de gobierno escogida por Azaña ante el inicio del golpe; la entrevista también le atribuye vínculos con la masonería española."
+          {
+            "topic": "Intento de acuerdo con Mola en julio de 1936",
+            "speaker": "Fernando Paz",
+            "statement": "Paz describe a Martínez Barrio como el dirigente al que Azaña encargó formar gobierno para intentar detener la sublevación. Afirma que conversó con Mola y que este alegó que el movimiento militar ya no podía ser frenado. También vincula a Martínez Barrio con la masonería; ni esa atribución ni el diálogo literal se contrastan en el episodio con fuentes primarias.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Martínez barrio habla con una serie de militares"
+          }
         ]
       }
     },
@@ -216,7 +261,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "El asesinato de José Calvo Sotelo habría sido, según Fernando Paz, el hecho que decidió la incorporación definitiva de Franco a la conspiración militar."
+          {
+            "topic": "Asesinato del 13 de julio y decisión atribuida a Franco",
+            "speaker": "Fernando Paz",
+            "statement": "Paz sitúa el asesinato de Calvo Sotelo, ocurrido el 13 de julio de 1936, como un factor decisivo en la incorporación de Franco al levantamiento. La muerte es un hecho histórico; deducir que por sí sola determinó la decisión personal de Franco es una interpretación causal de la fuente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "precisamente el asesinato de calvo Sotelo"
+          }
         ]
       }
     },
@@ -228,7 +282,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Gil-Robles es citado por Fernando Paz por su descripción de la inseguridad política y por el intento, según la fuente, de localizarlo durante los acontecimientos del 13 de julio de 1936."
+          {
+            "topic": "Afirmación sobre una búsqueda de Gil-Robles en julio de 1936",
+            "speaker": "Fernando Paz",
+            "statement": "Paz sostiene que, cuando se produjo el asesinato de Calvo Sotelo, también se habría intentado encontrar a Gil-Robles en su domicilio. Utiliza ese episodio para defender su tesis sobre el clima de inseguridad previo al golpe. La entrevista no aporta documentos policiales que corroboren los detalles de ese presunto intento.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Gil Robles porque no lo encuentran"
+          }
         ]
       }
     },
@@ -240,7 +303,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Largo Caballero aparece en la explicación de Fernando Paz sobre la formación de un ejército republicano organizado y los conflictos entre fuerzas políticas y milicias en la zona gubernamental."
+          {
+            "topic": "Organización del Ejército republicano y custodia del oro",
+            "speaker": "Fernando Paz",
+            "statement": "Paz atribuye a Largo Caballero el impulso de la reorganización militar republicana en octubre de 1936 y señala que, como presidente del Gobierno, intervino en la decisión de trasladar reservas de oro hacia Cartagena. Sus valoraciones sobre la desunión del bando republicano son la interpretación del historiador.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "hasta que lo determina largo Caballero en Octubre"
+          }
         ]
       }
     },
@@ -252,7 +324,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Indalecio Prieto habría elogiado públicamente la capacidad militar de Franco antes de la sublevación, según Fernando Paz, quien también recuerda un discurso de agosto de 1936 sobre la superioridad material republicana."
+          {
+            "topic": "Valoración de Franco y discurso radiofónico de agosto de 1936",
+            "speaker": "Fernando Paz",
+            "statement": "Paz recuerda un discurso de Prieto en Cuenca, antes del golpe, en el que habría destacado la capacidad militar de Franco. También menciona una intervención radiofónica del 8 de agosto de 1936 sobre la superioridad de medios del Gobierno. Las palabras atribuidas requieren cotejo con los discursos originales.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "indalecio Prieto socialista uno de los principales dirigentes"
+          }
         ]
       }
     },
@@ -390,7 +471,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Rafael Alberti es citado por Fernando Paz entre los intelectuales que apoyaron al Frente Popular y a la República durante la Guerra Civil."
+          {
+            "topic": "Enumeración de intelectuales identificados con la República",
+            "speaker": "Fernando Paz",
+            "statement": "Paz incluye a Alberti entre los escritores asociados a la causa republicana al comparar la posición de intelectuales en ambos bandos. El pasaje es una enumeración contextual: no describe una actuación concreta de Alberti ni demuestra las proporciones de apoyo cultural que el entrevistado afirma.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Rafael alberti Miguel Hernández"
+          }
         ]
       }
     },
@@ -402,7 +492,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Miguel Hernández aparece, según Fernando Paz, entre los escritores significados en la defensa de la República durante la Guerra Civil."
+          {
+            "topic": "Referencia al compromiso de escritores republicanos",
+            "speaker": "Fernando Paz",
+            "statement": "Paz menciona a Miguel Hernández en una lista de escritores favorables a la República durante la Guerra Civil. No desarrolla un episodio biográfico específico sobre él; la enumeración se utiliza para comparar las adhesiones culturales, sin aportar cifras verificables sobre su distribución.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Rafael alberti Miguel Hernández"
+          }
         ]
       }
     },
@@ -414,7 +513,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Ramón J. Sender es mencionado por Fernando Paz como uno de los autores que se alinearon con la causa republicana durante el conflicto."
+          {
+            "topic": "Mención entre los escritores de la zona republicana",
+            "speaker": "Fernando Paz",
+            "statement": "Paz enumera a Ramón J. Sender junto a Alberti, Miguel Hernández y Bergamín como ejemplos de autores relacionados con la causa republicana. La conversación no atribuye a Sender una acción particular ni documenta vínculos personales con los demás integrantes de la lista.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Ramón J sender José bergamín"
+          }
         ]
       }
     },
@@ -426,7 +534,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "José Bergamín se incluye en la relación de intelectuales partidarios de la República que enumera Fernando Paz al hablar de la cultura durante la Guerra Civil."
+          {
+            "topic": "Mención entre los intelectuales republicanos",
+            "speaker": "Fernando Paz",
+            "statement": "Paz cita a José Bergamín dentro de una lista de escritores que identifica con la República durante el conflicto. Su nombre sirve de ejemplo en una comparación cultural entre bandos; no se expone una acusación ni relación personal específica contra él.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Ramón J sender José bergamín"
+          }
         ]
       }
     },
