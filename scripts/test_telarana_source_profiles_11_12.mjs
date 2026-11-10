@@ -20,7 +20,7 @@ for(const [name,p]of [...source11,...source12]){
  assert(p.who.length>=45,"Biografía corta: "+name);
  assert(p.portrait?.title||name==="Fernando Paz","Sin referencia de imagen ni sustituto: "+name);
  for(const [order,statements] of Object.entries(p.sources)){
-  assert(statements.length>0&&statements.every(s=>s.length>=65),"Versión del entrevistado insuficiente: "+name+" "+order);
+  assert(statements.length>0&&statements.every(s=>typeof s==="string"?s.length>=65:typeof s?.statement==="string"&&s.statement.length>=65&&s.topic&&s.speaker&&s.status),"Versión del entrevistado insuficiente: "+name+" "+order);
  }
 }
 assert(lib.profiles["Jesús Hernández Tomás"],"Debe diferenciarse del historiador Jesús Hernández");
