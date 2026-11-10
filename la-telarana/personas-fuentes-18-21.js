@@ -617,7 +617,7 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "imagina si esto es lo que Obama realmente quiere"
+            "transcriptAnchor": "este desastre es lo que Obama realmente quiere y desea"
           }
         ],
         "21": [
