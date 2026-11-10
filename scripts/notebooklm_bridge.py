@@ -867,6 +867,61 @@ def audit_blocked(args) -> None:
         print("La recuperación exige confirmación explícita y comprobación de cuota.")
 
 
+def safe_studio_failure_detail(row: dict) -> tuple[str, str]:
+    """Select error-only metadata and redact sensitive paths/addresses/URLs.
+
+    No notebook ID, artifact ID, source names or prompt are surfaced. A
+    generic status=4 alone cannot reveal the underlying cause.
+    """
+    for key in ("error_message", "failure_reason", "error", "reason", "error_code"):
+        value = row.get(key)
+        if isinstance(value, dict):
+            value = next((value[k] for k in ("message", "reason", "code")
+                          if isinstance(value.get(k), (str, int))), None)
+        if not isinstance(value, (str, int)) or not str(value).strip():
+            continue
+        detail = " ".join(str(value).split())
+        detail = re.sub(r"https?://\\S+", "[enlace privado]", detail)
+        detail = re.sub(r"/Users/[^\\s]+", "[ruta privada]", detail)
+        detail = re.sub(r"[\\w.+-]+@[\\w.-]+\\.[A-Za-z]{2,}", "[correo privado]", detail)
+        detail = re.sub(r"\\b[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}\\b",
+                        "[identificador privado]", detail)
+        return key, detail[:240]
+    return "", ""
+
+
+def diagnose_failed(args) -> None:
+    """Read-only classification of a Studio failure, without triggering retries."""
+    state = load_json(STATE_PATH, {})
+    number = str(args.issue)
+    job = state.get(number)
+    if not job or job.get("phase") != "failed":
+        raise ValueError("Solo se diagnostican solicitudes en estado failed.")
+    aid = job.get("artifact_id")
+    if not aid:
+        print("Solicitud #", number, "failed: sin artefacto identificable.")
+        print("No repetir ni atribuir una causa sin inspección manual de Studio.")
+        return
+    rows = infographic_rows(job["notebook"])
+    row = next((x for x in rows if artifact_id(x) == aid), None)
+    if row is None:
+        print("Solicitud #", number, "failed: el artefacto no aparece en Studio.")
+        print("No se puede concluir la causa; no se ha reenviado nada.")
+        return
+    print("Solicitud #", number, "Libro:",
+          job.get("request", {}).get("book", "desconocido"))
+    print("Estado de Studio:", status_text(row))
+    key, detail = safe_studio_failure_detail(row)
+    if detail:
+        print("Campo de error:", key)
+        print("Detalle comunicado por Studio:", detail)
+    else:
+        print("Studio no proporciona un motivo de fallo específico "
+              "en los campos de error conocidos.")
+        print("No es posible determinar aquí si fue cuota, fuentes o fallo interno.")
+    print("Consulta de solo lectura; no se ha reintentado ni modificado el estado.")
+
+
 def recover_blocked(args) -> None:
     """Explicit, single-request recovery after a remote-negative check.
 
@@ -1039,6 +1094,9 @@ def main():
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
     sub.add_parser("health", help="Consultar la pausa y últimos resultados sin datos privados")
     sub.add_parser("blocked", help="Listar cuadernos bloqueados, sin datos privados")
+    diagnose = sub.add_parser("diagnose-failed",
+                              help="Leer motivo remoto de fallo sin reenviar nada")
+    diagnose.add_argument("--issue", type=int, required=True)
     audit = sub.add_parser("audit-blocked",
                            help="Comprobar artefactos de una solicitud incierta sin reenviar")
     audit.add_argument("--issue", type=int, required=True)
@@ -1108,6 +1166,8 @@ def execute_command(args):
             show_generation_health()
         elif args.command == "blocked":
             blocked_jobs(args)
+        elif args.command == "diagnose-failed":
+            diagnose_failed(args)
         elif args.command == "audit-blocked":
             audit_blocked(args)
         elif args.command == "recover-blocked":
