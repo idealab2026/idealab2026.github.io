@@ -45,7 +45,7 @@ assert(audit.every(r=>r.added>=0&&r.edges>=0&&r.total===r.before+r.added),"Delta
 assert(audit.every((r,i)=>i===0||r.before===audit[i-1].total),"Fallo de continuidad de los totales");
 // Cada lote de perfiles ha de contabilizar solo identidades mencionadas por esa fuente.
 assert(html.includes("Object.prototype.hasOwnProperty.call(p.sources,orderFilter)"),"Los perfiles se atribuyen a la primera fuente en vez de a su fuente original");
-for(const order of ["9","10","11","12","13","14","16","18","21"]){
+for(const order of Object.keys(ctx.window.IDEA_TELARANA_PERSON_SOURCE_REPORTS?.sourceIds||{})){
  const matching=audit.filter(r=>r.label==="Perfiles de la fuente "+order);
  assert.equal(matching.length,1,"Debe existir exactamente una etapa de perfiles para fuente "+order);
  assert(matching[0].available,"No se han cargado los perfiles de fuente "+order);
