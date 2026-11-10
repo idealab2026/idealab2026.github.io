@@ -75,6 +75,8 @@ jobs:
         run: node scripts/test_telarana_source23_profiles.mjs
       - name: Verificar personas e hitos institucionales de fuente 24
         run: node scripts/test_telarana_source24_profiles.mjs
+      - name: Auditar calidad de todas las fichas y nuevas atribuciones
+        run: node scripts/audit_telarana_editorial.mjs
       - name: Validar calidad editorial de fichas y relaciones
         run: node scripts/test_telarana_editorial_quality.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
