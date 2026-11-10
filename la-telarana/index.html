@@ -931,7 +931,11 @@ function showPersonResearch(panel,node){
      item.append(N("div","Afirmación atribuida · Sin corroboración independiente"+(claim.audioVerified===false?" · Audio pendiente":""),
       "source-claim-caution"));
     }else if(!structured){
-     item.append(N("div","Síntesis editorial · No es una cita literal · Audio y minuto pendientes de cotejo","source-claim-caution"));
+     var caution="Síntesis editorial · No es una cita literal · Audio y minuto pendientes de cotejo";
+     if(/\b(?:presunt[oa]s?|acusaci[oó]n|imputaci[oó]n|chantaje|conspiraci[oó]n|supuest[oa]s?|delito)\b/i.test(statement)){
+      caution+=" · Las acusaciones o hipótesis no quedan corroboradas por aparecer en la entrevista";
+     }
+     item.append(N("div",caution,"source-claim-caution"));
     }else if(claim.audioVerified===false||claim.minuteVerified===false){
      item.append(N("div","Atribución pendiente de cotejo audiovisual o de minutaje","source-claim-caution"));
     }
