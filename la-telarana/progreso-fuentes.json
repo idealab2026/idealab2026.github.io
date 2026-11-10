@@ -104,9 +104,9 @@
     }
   ],
   "nextSource": {
-    "order": 13,
-    "videoId": "I5koBMBMXSc",
-    "status": "transcripcion_en_drive_lista_para_revision",
+    "order": 14,
+    "videoId": "iPwbiY1F3Rg",
+    "status": "segunda_revision_publicada_revisión_audio_y_documentos_pendiente",
     "sourceType": "youtube"
   },
   "inReview": [
@@ -508,17 +508,38 @@
       "videoId": "iPwbiY1F3Rg",
       "title": "11-S: La Cronología Completa de los Ataques que Cambiaron el Mundo - #293",
       "sourceUrl": "https://www.youtube.com/watch?v=iPwbiY1F3Rg",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "segunda_revision_biografica_con_cotejo_11s_y_comision_pendiente_revision_exhaustiva",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 8,
       "sourceRelationsDocumented": 7,
-      "verifiedIndependentChecks": 1,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Un hito histórico verificado con fuente institucional y añadido a la Línea de la Historia. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "verifiedIndependentChecks": 2,
+      "qualityNotes": "ASR completo recuperado del Doc institucional. Segunda revisión con 16 personas identificadas y atribuciones textuales. Documento F14 contiene '297 personas' mientras el Memorial registra 2.977 víctimas: contraste marcado, sin concluir si es error oral o de ASR. Se añade a la cronología la publicación oficial del informe de la Comisión del 11-S. No se asume ninguna hipótesis sobre preconocimiento, manipulación de simulacros, seguros o intencionalidad como hecho acreditado. Pendientes el cotejo audiovisual, minutajes, control visual de retratos y la revisión temática exhaustiva.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 1
+      "timelineVerifiedEventsCommitted": 2,
+      "rawTranscriptAvailable": true,
+      "transcriptStoredInDrive": true,
+      "fullTranscriptVerifiedDriveReadback": true,
+      "transcriptDocUrl": "https://docs.google.com/document/d/1-079lhGZgtVT8r_GCFqOVC1INu0mLz0ipQpy3MXGOdY/edit?usp=drivesdk",
+      "personsProfiled": 16,
+      "impersonalAttributedSummaries": 16,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-14.js",
+      "personBiographiesFirst": true,
+      "timelineEventIds": [
+        "study-f14-11s-2001",
+        "study-f14-comision-11s-informe-2004"
+      ],
+      "imageRuntimeVerified": false,
+      "numericDiscrepancy": {
+        "transcription": "297 personas fallecieron",
+        "officialVictims": 2977,
+        "reference": "https://www.911memorial.org/911-faqs",
+        "status": "error_o_elision_ASR_no_atribuible_sin_audio",
+        "note": "No sobrescribir el documento íntegro; usar cifra de 2.977 para fichas históricas y conservar cadena ASR para cotejo de audio."
+      },
+      "lastUpdated": "2026-11-10"
     },
     {
       "order": 16,
@@ -676,9 +697,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 51,
+    "committedVerifiedEvents": 52,
     "fromReviewedSource": 13,
-    "fromSourceInReview": 31,
+    "fromSourceInReview": 32,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -733,7 +754,8 @@
         "study-f13-operacion-barbarroja-1941"
       ],
       "14": [
-        "study-f14-11s-2001"
+        "study-f14-11s-2001",
+        "study-f14-comision-11s-informe-2004"
       ],
       "18": [
         "study-f18-doj-epstein-release-2026",
