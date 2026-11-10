@@ -12,7 +12,7 @@ var periods=[
 /* Geographic links are inferred solely from explicit place references.
    Unknown locations remain unclassified; users may override with g: []. */
 var GEO=["Europa","Asia","África","América","Oceanía","Antártida","Mundial"];
-var continent="Todos",YEAR_PX=96,yearAxisLayer=null,yearGridLayers=[],yearWindowKey="";
+var continent="Todos",country="Todos",countryLinks=Object.create(null),worldGeo=null,worldShapesBuilt=false,worldPaths=new Map(),countryNames=new Map(),mapYearActive=false,mapYear=1900,mapListLimit=60,YEAR_PX=96,yearAxisLayer=null,yearGridLayers=[],yearWindowKey="";
 for(var pi=2;pi<periods.length;pi++)
  periods[pi].w=(periods[pi].b-periods[pi].a)*YEAR_PX;
 function geoFold(str){
@@ -129,12 +129,22 @@ function displayName(d){
  if(m&&m.index>2&&/^\s*(?:\(\s*\d+\s*años?\s*\))?\s*$/i.test(d.t.slice(m.index+m[0].length)))return d.t.slice(0,m.index).trim();
  return d.t;
 }
+function countriesOf(d){
+ var row=countryLinks[d.id],list=row&&row.p||d.p;
+ return Array.isArray(list)?list.filter(function(code){return typeof code==="string"&&/^[A-Z]{3}$/.test(code)}):[];
+}
+function countryBasis(d){var row=countryLinks[d.id];return row&&row.basis||"sin clasificación";}
+function matchesCountry(d){
+ var p=countriesOf(d);
+ return country==="Todos"||(country==="Sin clasificar"?p.length===0:p.includes(country));
+}
+function countryName(code){return countryNames.get(code)||code}
 function visible(){
  var all=base.concat(custom).filter(function(d){
   enrich(d);
   return (cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query));
  });
- var result=all.filter(matchesContinent);geoStatus(all,result);return result;
+ var result=all.filter(matchesContinent).filter(matchesCountry);geoStatus(all,result);return result;
 }
 function axisX(y){
  var x=170,n=Number(y);
@@ -843,7 +853,7 @@ function setTimelineMaximized(on){
  }
 }
 function setView(next){
- if(next!=="columns"&&next!=="timeline")return;
+ if(next!=="columns"&&next!=="timeline"&&next!=="map")return;
  if(viewMode===next)return;
  if(viewMode==="timeline"){
   var vp=$("viewport");
@@ -854,12 +864,13 @@ function setView(next){
  // Keep one shared toolbar: its filter buttons and listeners travel with it.
  // In columns mode the same controls remain available above the category columns.
  var toolbar=$("history-toolbar");
- var destination=next==="columns"?$("columns-panel"):$("timeline-panel");
- var before=next==="columns"?$("columns-grid"):$("viewport");
+ var destination=next==="columns"?$("columns-panel"):next==="map"?$("map-panel"):$("timeline-panel");
+ var before=next==="columns"?$("columns-grid"):next==="map"?$("world-map-layout"):$("viewport");
  if(toolbar.parentNode!==destination)destination.insertBefore(toolbar,before);
  $("timeline-panel").classList.toggle("hide",next!=="timeline");
  $("columns-panel").classList.toggle("hide",next!=="columns");
- [["tab-timeline","timeline"],["tab-columns","columns"]].forEach(function(pair){
+ $("map-panel").classList.toggle("hide",next!=="map");
+ [["tab-timeline","timeline"],["tab-columns","columns"],["tab-map","map"]].forEach(function(pair){
   var tab=$(pair[0]),active=pair[1]===next;
   tab.classList.toggle("active",active);
   tab.setAttribute("aria-selected",active?"true":"false");
@@ -1020,6 +1031,7 @@ function render(){
  $("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
  $("visible").textContent=records.length.toLocaleString("es-ES");
  if(viewMode==="columns"){renderColumns(records);return;}
+ if(viewMode==="map"){renderMap(records);return;}
  var can=$("canvas");can.replaceChildren();
  $("period-name").textContent="Historia universal · eje continuo · "+yearText(periods[0].a)+" — "+yearText(2026);
  $("zoom-level").textContent="Zoom ×"+zoom;$("zoom-out").disabled=zoom<=1;$("zoom-in").disabled=zoom>=8;
@@ -1112,7 +1124,7 @@ function setZoom(next){
  zoom=Math.max(1,Math.min(8,next));render();jumpToYear(y);
 }
 function init(){
- periodUI();categoryUI();initMinimap();
+ periodUI();categoryUI();initMinimap();initCountryControls();
  $("periods").addEventListener("change",function(e){
   var next=periods.find(function(p){return p.k===e.target.value});
   if(!next)return;
@@ -1130,13 +1142,13 @@ function init(){
  $("continent").addEventListener("change",function(e){
   continent=e.target.value;
   if(!["Todos","Sin localizar"].concat(GEO).includes(continent))continent="Todos";
-  var focus=viewMode==="columns"?savedYear:yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2);
+  var focus=viewMode!=="timeline"?savedYear:yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2);
   render();
   if(continent!=="Todos"){
    var choices=visible();
    if(choices.length){
     var nearest=choices.reduce(function(best,d){return Math.abs(sy(d)-focus)<Math.abs(sy(best)-focus)?d:best});
-    if(viewMode==="columns")savedYear=sy(nearest);else jumpToYear(sy(nearest));
+    if(viewMode!=="timeline")savedYear=sy(nearest);else jumpToYear(sy(nearest));
    }
   }
  });$("categories").textContent=cats.length;
@@ -1161,6 +1173,7 @@ function init(){
  });
  $("tab-timeline").addEventListener("click",function(){setView("timeline")});
  $("tab-columns").addEventListener("click",function(){setView("columns")});
+ $("tab-map").addEventListener("click",function(){setView("map")});
  $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
  $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
  $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
@@ -1171,7 +1184,7 @@ function init(){
    return;
   }
   if(year===0){jumpToYear(0);return}
-  if(viewMode==="columns")setView("timeline");
+  if(viewMode!=="timeline")setView("timeline");
   jumpToYear(year);
  }
  $("jump-year-go").addEventListener("click",jumpFromInput);
@@ -1203,8 +1216,15 @@ function init(){
   });
  }
  Promise.all([readJSON("./data.json"),
-  readJSON("./estudios-telarana.json").catch(function(){return{items:[]}})
+  readJSON("./estudios-telarana.json").catch(function(){return{items:[]}}),
+  readJSON("./country-links.json").catch(function(){return{links:{}}}),
+  readJSON("./world-110m.json").catch(function(){return{features:[]}})
  ]).then(function(results){
+  var linkDoc=results[2]&&results[2].links||{};
+  countryLinks=Object.create(null);
+  Object.keys(linkDoc).forEach(function(k){var v=linkDoc[k];if(v&&Array.isArray(v.p)&&v.p.length<=40)countryLinks[k]=v});
+  worldGeo=results[3]&&Array.isArray(results[3].features)?results[3]:{features:[]};
+  populateCountrySelect();
   var historical=Array.isArray(results[0].items)?results[0].items.filter(valid):[];
   var additional=Array.isArray(results[1].items)?results[1].items:[];
   var seenIds=new Set(historical.map(function(d){return d.id}));
@@ -1227,6 +1247,7 @@ function init(){
    historical.push(d);seenIds.add(d.id);seenEvents.add(key);
   });
   base=historical;
+  worldShapesBuilt=false;
   var requested=null;
   try{requested=new URLSearchParams(location.search).get("evento")}catch(e){}
   var event=requested&&base.find(function(d){return d.id===requested});
