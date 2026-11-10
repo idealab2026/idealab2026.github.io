@@ -274,8 +274,8 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-21-orden-mundial-editorial.js?v=20261110-peter-thiel-2"></script>
 <script src="./fuente-09-villarejo-revision.js?v=20261110-revision0910"></script>
 <script src="./fuente-10-revision-inicial.js?v=20261110-revision0910"></script>
-<script src="./fuente-11-revision-inicial.js?v=20261110-search-centre-3"></script>
-<script src="./fuente-12-revision-inicial.js?v=20261110-search-centre-3"></script>
+<script src="./fuente-11-revision-inicial.js?v=20261110-revision1112-1"></script>
+<script src="./fuente-12-revision-inicial.js?v=20261110-revision1112-1"></script>
 <script src="./fuente-13-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./fuente-14-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./fuente-16-revision-inicial.js?v=20261110-search-centre-3"></script>
@@ -290,6 +290,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./person-biographies.js?v=20261110-search-centre-3"></script>
 <script src="./personas-fuentes-18-21.js?v=20261110-revision0910"></script>
 <script src="./personas-fuentes-09-10.js?v=20261110-revision0910"></script>
+<script src="./personas-fuentes-11-12.js?v=20261110-revision1112-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261110-perfiles-2"></script>
 <script>
@@ -380,7 +381,7 @@ function mergeSourceProfiles(){
    data.nodes.push(node);known.add(id);names.set(key,node);added++;
   }
   for(var order of Object.keys(p.sources)){
-   var episode=({"9":"f09-episodio","10":"f10-episodio","18":"f18-episodio","21":"f21-episodio"})[order];
+   var episode=({"9":"f09-episodio","10":"f10-episodio","11":"f11-episodio","12":"f12-episodio","18":"f18-episodio","21":"f21-episodio"})[order];
    if(!known.has(episode))continue;
    var pair=[node.id,episode].sort().join("::");
    if(pairs.has(pair))continue;
@@ -511,7 +512,7 @@ function load(){
   var doc=window[m.key];
   auditLoadStep(m.label,function(){if(m.kind==="mergePodcastStudy")mergePodcastStudy(doc);else mergeNewEpisode(doc)},Boolean(doc));
  });
- auditLoadStep("Biografías y menciones 09/10/18/21",function(){mergeSourceProfiles()},Boolean(window.IDEA_TELARANA_PERSON_SOURCE_REPORTS));
+ auditLoadStep("Biografías y menciones 09/10/11/12/18/21",function(){mergeSourceProfiles()},Boolean(window.IDEA_TELARANA_PERSON_SOURCE_REPORTS));
  seedError=!data.nodes.length;
  showLoadAudit();
 }
