@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 import re, sys, json
 
 ROOT = Path(__file__).resolve().parents[1]
-required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/favicon.png", "linea-historia/data.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json", "biblioteca-montecristo/infografias/index.json", "icsa/index.html", "icsa/privacidad.html")
+required = ("index.html", "stats.js", "data/traffic.json", "data/traffic-snapshot.json", "favicon.svg", "logo-idea-lab.svg", "social-preview.svg", "linea-historia/index.html", "linea-historia/favicon.png", "linea-historia/data.json", "linea-historia/country-links.json", "linea-historia/world-110m.json", "la-telarana/index.html", "biblioteca-montecristo/index.html", "biblioteca-montecristo/app.js", "biblioteca-montecristo/styles.css", "biblioteca-montecristo/catalogo.json", "biblioteca-montecristo/infografias/index.json", "icsa/index.html", "icsa/privacidad.html")
 errors = [f"Missing public asset: {file}" for file in required if not (ROOT / file).is_file()]
 html = (ROOT / "index.html").read_text(encoding="utf-8") if (ROOT / "index.html").exists() else ""
 class Scanner(HTMLParser):
@@ -90,6 +90,40 @@ if history.is_file():
             errors.append("Invalid history record")
     except (ValueError, TypeError, AttributeError):
         errors.append("Invalid history JSON")
+
+
+# Historical-country links must reference existing records and modern map units.
+country_file=ROOT / "linea-historia/country-links.json"
+world_file=ROOT / "linea-historia/world-110m.json"
+if country_file.is_file() and world_file.is_file() and history.is_file():
+    try:
+        links=json.loads(country_file.read_text(encoding="utf-8"))
+        world=json.loads(world_file.read_text(encoding="utf-8"))
+        historical=json.loads(history.read_text(encoding="utf-8"))
+        ids={r["id"] for r in historical["items"] if isinstance(r,dict) and "id" in r}
+        features=world.get("features",[])
+        codes={r.get("id") for r in features if isinstance(r,dict)}
+        entries=links.get("links")
+        if (links.get("schema") != 1 or
+            not isinstance(entries,dict) or
+            not 10 <= len(entries) <= len(ids) or
+            not isinstance(features,list) or
+            not 140 <= len(features) <= 250):
+            errors.append("Invalid world map or country index cardinality")
+        elif any(k not in ids or
+                 not isinstance(v,dict) or
+                 v.get("basis") not in ("mención título","mención ficha original","contexto histórico orientativo") or
+                 not isinstance(v.get("p"),list) or
+                 not 1 <= len(v["p"]) <= 40 or
+                 len(v["p"])!=len(set(v["p"])) or
+                 any(code not in codes for code in v["p"])
+                 for k,v in entries.items()):
+            errors.append("Country links refer to unknown records or geography")
+        if world.get("type")!="FeatureCollection" or not isinstance(world.get("metadata"),dict):
+            errors.append("Invalid historical map provenance")
+    except (ValueError, KeyError, AttributeError, TypeError):
+        errors.append("Invalid country association or map JSON")
+
 
 for path in ROOT.rglob("*"):
     if not path.is_file() or ".git" in path.parts: continue

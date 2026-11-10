@@ -12,7 +12,7 @@ var periods=[
 /* Geographic links are inferred solely from explicit place references.
    Unknown locations remain unclassified; users may override with g: []. */
 var GEO=["Europa","Asia","África","América","Oceanía","Antártida","Mundial"];
-var continent="Todos",YEAR_PX=96,yearAxisLayer=null,yearGridLayers=[],yearWindowKey="";
+var continent="Todos",country="Todos",countryLinks=Object.create(null),worldGeo=null,worldShapesBuilt=false,worldPaths=new Map(),countryNames=new Map(),mapYearActive=false,mapYear=1900,mapListLimit=60,YEAR_PX=96,yearAxisLayer=null,yearGridLayers=[],yearWindowKey="";
 for(var pi=2;pi<periods.length;pi++)
  periods[pi].w=(periods[pi].b-periods[pi].a)*YEAR_PX;
 function geoFold(str){
@@ -129,12 +129,22 @@ function displayName(d){
  if(m&&m.index>2&&/^\s*(?:\(\s*\d+\s*años?\s*\))?\s*$/i.test(d.t.slice(m.index+m[0].length)))return d.t.slice(0,m.index).trim();
  return d.t;
 }
+function countriesOf(d){
+ var row=countryLinks[d.id],list=row&&row.p||d.p;
+ return Array.isArray(list)?list.filter(function(code){return typeof code==="string"&&/^[A-Z]{3}$/.test(code)}):[];
+}
+function countryBasis(d){var row=countryLinks[d.id];return row&&row.basis||"sin clasificación";}
+function matchesCountry(d){
+ var p=countriesOf(d);
+ return country==="Todos"||(country==="Sin clasificar"?p.length===0:p.includes(country));
+}
+function countryName(code){return countryNames.get(code)||code}
 function visible(){
  var all=base.concat(custom).filter(function(d){
   enrich(d);
   return (cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query));
  });
- var result=all.filter(matchesContinent);geoStatus(all,result);return result;
+ var result=all.filter(matchesContinent).filter(matchesCountry);geoStatus(all,result);return result;
 }
 function axisX(y){
  var x=170,n=Number(y);
@@ -626,6 +636,7 @@ function wikiRenderArticle(d,root,page,requestId,signal){
  $("note-kicker").textContent=d.c+" · Wikipedia";
  $("note-title").textContent=String(page.title||wikipediaSearchName(d));
  root.append(el("div",wikiDateLine(d),"note-date"));
+ appendCountriesInNote(root,d);
  if(d.c==="Eras geológicas"){
   var dating=el("p","Fechas aproximadas según la Comisión Internacional de Estratigrafía.","source-note");
   wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Escala geológica oficial ↗","wiki-credit-link");
@@ -648,6 +659,7 @@ function wikiFallback(d,root,term,reason,suggestions,searchParts){
  $("note-title").textContent=displayName(d);
  root.replaceChildren();
  root.append(el("div",wikiDateLine(d),"note-date"));
+ appendCountriesInNote(root,d);
  var message=String(reason||"No se ha encontrado un artículo suficientemente coincidente.");
  root.append(el("p",message,"wiki-error"));
  if(d.d)root.append(el("p","Información del archivo: "+d.d,"source-note"));
@@ -719,6 +731,7 @@ function showStudyNote(d){
  $("note-title").textContent=displayName(d);
  root.replaceChildren();
  root.append(el("div",studyDate(info.date,info.datePrecision),"note-date"));
+ appendCountriesInNote(root,d);
  root.append(el("div","Hecho documentado con contraste externo","research-evidence"));
  root.append(el("h3","Qué ocurrió","wiki-section-title"));
  root.append(el("p",d.d||"Sin descripción documental.","source-note"));
@@ -796,6 +809,211 @@ function niceStep(n){
 
 /* The column view is independent of the geometric chronology: within
    each category, entries sort strictly by their starting year. */
+
+/* Atlas territorial: los códigos ISO representan países actuales y NO
+   constituyen atribuciones de soberanía o fronteras en épocas pasadas. */
+function populateCountrySelect(){
+ countryNames=new Map();
+ if(worldGeo&&Array.isArray(worldGeo.features)){
+  worldGeo.features.forEach(function(f){
+   var code=String(f.id||"");
+   if(/^[A-Z]{3}$/.test(code))countryNames.set(code,String(f.properties&&f.properties.name||code));
+  });
+ }
+ Object.keys(countryLinks).forEach(function(id){
+  var codes=countryLinks[id]&&countryLinks[id].p||[];
+  codes.forEach(function(code){
+   if(/^[A-Z]{3}$/.test(code)&&!countryNames.has(code))countryNames.set(code,code);
+  });
+ });
+ var sel=$("country");sel.replaceChildren();
+ [["Todos","Todos los países"],["Sin clasificar","Sin país clasificado"]].forEach(function(pair){
+  var o=el("option",pair[1]);o.value=pair[0];sel.append(o);
+ });
+ Array.from(countryNames).sort(function(a,b){return a[1].localeCompare(b[1],"es")}).forEach(function(pair){
+  var o=el("option",pair[1]);o.value=pair[0];sel.append(o);
+ });
+ sel.value=country;
+}
+function chooseCountry(code){
+ if(code!=="Todos"&&code!=="Sin clasificar"&&!countryNames.has(code))return;
+ country=code;
+ $("country").value=code;
+ // A country can be affiliated with more than one continent; avoid contradictory filters.
+ if(continent!=="Todos"){continent="Todos";$("continent").value="Todos"}
+ mapListLimit=60;
+ var focus=viewMode==="timeline"?yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2):savedYear;
+ render();
+ if(country!=="Todos"){
+  var records=visible();
+  if(records.length){
+   var nearest=records.reduce(function(best,d){
+    return Math.abs(sy(d)-focus)<Math.abs(sy(best)-focus)?d:best;
+   });
+   savedYear=sy(nearest);
+   if(viewMode==="timeline")jumpToYear(savedYear);
+  }
+ }
+}
+function initCountryControls(){
+ $("country").addEventListener("change",function(e){chooseCountry(e.target.value)});
+ var checkbox=$("map-year-toggle"),slider=$("map-year-range"),number=$("map-year-number");
+ function yearChanged(value,fromSlider){
+  var n=Math.max(fromSlider?-3000:-541000000,Math.min(2026,Math.round(Number(value))));
+  if(!Number.isFinite(n))return;
+  mapYear=n;slider.value=String(Math.max(-3000,n));number.value=String(n);
+  if(mapYearActive)render();
+ }
+ checkbox.addEventListener("change",function(e){
+  mapYearActive=!!e.target.checked;slider.disabled=!mapYearActive;number.disabled=!mapYearActive;
+  render();
+ });
+ slider.addEventListener("input",function(e){yearChanged(e.target.value,true)});
+ number.addEventListener("change",function(e){yearChanged(e.target.value,false)});
+ $("map-year-reset").addEventListener("click",function(){
+  checkbox.checked=false;mapYearActive=false;slider.disabled=true;number.disabled=true;
+  render();
+ });
+ $("map-load-more").addEventListener("click",function(){mapListLimit+=60;render()});
+}
+function mapAtYear(d,year){
+ var start=sy(d);
+ return duration(d)?start<=year&&ey(d)>=year:Math.floor(start)===year;
+}
+function mapCoordsToD(geometry){
+ if(!geometry||!["Polygon","MultiPolygon"].includes(geometry.type))return "";
+ var polygons=geometry.type==="Polygon"?[geometry.coordinates]:geometry.coordinates;
+ var sections=[];
+ polygons.forEach(function(rings){
+  rings.forEach(function(points){
+   if(!Array.isArray(points)||points.length<3)return;
+   var part="",last=null;
+   points.forEach(function(p,i){
+    var lon=Number(p[0]),lat=Number(p[1]);
+    if(!Number.isFinite(lon)||!Number.isFinite(lat))return;
+    lon=Math.min(180,Math.max(-180,lon));
+    lat=Math.min(88,Math.max(-88,lat));
+    var x=(lon+180)/360*1000,y=(88-lat)/176*520;
+    var point=x.toFixed(1)+","+y.toFixed(1);
+    if(i===0||last!==null&&Math.abs(lon-last)>180){
+     if(part)part+="Z";
+     part+="M"+point;
+    }else part+="L"+point;
+    last=lon;
+   });
+   if(part)sections.push(part+"Z");
+  });
+ });
+ return sections.join("");
+}
+function buildWorldMap(){
+ if(worldShapesBuilt)return;
+ var svg=$("world-map-svg"),status=$("world-map-loading");
+ svg.replaceChildren();worldPaths=new Map();
+ var features=worldGeo&&worldGeo.features||[];
+ if(!features.length){
+  status.textContent="No se ha podido cargar la cartografía. Puedes seguir usando el selector de países.";
+  return;
+ }
+ features.forEach(function(f){
+  if(!f||!/^[A-Z]{3}$/.test(f.id))return;
+  var d=mapCoordsToD(f.geometry);if(!d)return;
+  var code=f.id,path=document.createElementNS("http://www.w3.org/2000/svg","path");
+  path.setAttribute("d",d);path.setAttribute("class","map-country");
+  path.setAttribute("role","button");path.setAttribute("tabindex","0");
+  path.setAttribute("aria-label","Seleccionar "+countryName(code));
+  path.setAttribute("data-country",code);
+  var label=document.createElementNS("http://www.w3.org/2000/svg","title");
+  label.textContent=countryName(code);
+  path.appendChild(label);
+  path.addEventListener("click",function(){chooseCountry(code)});
+  path.addEventListener("keydown",function(e){
+   if(e.key==="Enter"||e.key===" "){e.preventDefault();chooseCountry(code)}
+  });
+  svg.appendChild(path);worldPaths.set(code,{path:path,label:label});
+ });
+ status.textContent="";status.style.display="none";worldShapesBuilt=true;
+}
+function mapCandidateRecords(){
+ return base.concat(custom).filter(function(d){
+  enrich(d);
+  return (cat==="Todas"||cat===d.c)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query))&&matchesContinent(d);
+ }).filter(function(d){return !mapYearActive||mapAtYear(d,mapYear)});
+}
+function colorMapCountries(){
+ buildWorldMap();
+ var candidates=mapCandidateRecords(),counts=new Map();
+ candidates.forEach(function(d){
+  countriesOf(d).forEach(function(code){counts.set(code,(counts.get(code)||0)+1)});
+ });
+ worldPaths.forEach(function(obj,code){
+  var n=counts.get(code)||0;
+  var active=country===code;
+  var classes="map-country"+(n?" map-has-data":"")+(n>=10?" map-more-data":"")+
+   (!n?" map-muted":"")+(active?" map-selected":"");
+  obj.path.setAttribute("class",classes);
+  obj.label.textContent=countryName(code)+" · "+n+" referencias"+(active?" · seleccionado":"");
+  obj.path.setAttribute("aria-label",obj.label.textContent);
+ });
+ var linked=base.concat(custom).filter(function(d){return countriesOf(d).length>0}).length;
+ $("map-coverage").textContent=linked+" registros vinculados · "+(base.length+custom.length-linked)+" por clasificar";
+}
+function renderMap(records){
+ colorMapCountries();
+ var name=country==="Todos"?"Todos los países":country==="Sin clasificar"?"Sin país clasificado":countryName(country);
+ $("map-country-name").textContent=name;
+ var matches=records.filter(function(d){return !mapYearActive||mapAtYear(d,mapYear)});
+ matches.sort(function(a,b){return sy(a)-sy(b)||String(a.t).localeCompare(String(b.t),"es")});
+ $("map-year-label").textContent=mapYearActive?yearText(mapYear):"Todos los años";
+ $("map-result-count").textContent=matches.length.toLocaleString("es-ES");
+ var countAll=records.length;
+ $("map-country-count").textContent=mapYearActive?
+   matches.length+" registros vinculados activos o fechados en "+yearText(mapYear):
+   countAll+" registros vinculados, ordenados del más antiguo al más reciente";
+ var list=$("map-results");list.replaceChildren();
+ if(!matches.length){
+  var empty=country==="Sin clasificar"?
+   "No hay registros sin país con estos filtros.":
+   "No hay registros vinculados para este país y los filtros seleccionados. Puedes cambiar el año, la categoría o seleccionar otro país.";
+  list.append(el("p",empty,"map-empty"));
+ }
+ matches.slice(0,mapListLimit).forEach(function(d){
+  var card=el("div",null,"map-result-card");
+  var detailButton=el("button",null,"map-result-detail");
+  detailButton.type="button";
+  var date=yearText(sy(d))+(duration(d)?" — "+(d._ongoing?"actualidad":yearText(ey(d))):"");
+  detailButton.append(el("span",date,"map-result-year"),el("span",displayName(d),"map-result-title"));
+  var codes=countriesOf(d);
+  var meta=d.c+" · "+(codes.length?codes.map(countryName).join(" · "):"Sin país clasificado");
+  detailButton.append(el("span",meta,"map-result-meta"));
+  detailButton.setAttribute("aria-label","Abrir ficha: "+displayName(d)+" · "+date);
+  detailButton.addEventListener("click",function(){detail(d)});
+  var actions=el("div",null,"map-result-actions");
+  var jump=el("button","Ver en línea temporal ↗","map-jump-link");
+  jump.type="button";
+  jump.addEventListener("click",function(){
+   savedYear=sy(d);setView("timeline");jumpToYear(sy(d));
+  });
+  actions.append(jump);card.append(detailButton,actions);list.append(card);
+ });
+ var more=$("map-load-more");more.classList.toggle("hide",matches.length<=mapListLimit);
+ if(matches.length>mapListLimit)more.textContent="Mostrar 60 más · "+(matches.length-mapListLimit)+" pendientes";
+}
+function appendCountriesInNote(root,d){
+ var codes=countriesOf(d);
+ if(!codes.length)return;
+ var section=el("div",null,"country-note-references");
+ section.append(el("span","Países o territorios vinculados · "+countryBasis(d),"country-note-basis"));
+ var chips=el("div",null,"country-note-chips");
+ codes.forEach(function(code){
+  var button=el("button",countryName(code),"country-note-chip");
+  button.type="button";
+  button.addEventListener("click",function(){chooseCountry(code);setView("map")});
+  chips.append(button);
+ });
+ section.append(chips);root.append(section);
+}
+
 function renderColumns(records){
  var grid=$("columns-grid");grid.replaceChildren();
  var count=0,shownCats=cat==="Todas"?cats:[cat];
@@ -843,7 +1061,7 @@ function setTimelineMaximized(on){
  }
 }
 function setView(next){
- if(next!=="columns"&&next!=="timeline")return;
+ if(next!=="columns"&&next!=="timeline"&&next!=="map")return;
  if(viewMode===next)return;
  if(viewMode==="timeline"){
   var vp=$("viewport");
@@ -854,12 +1072,13 @@ function setView(next){
  // Keep one shared toolbar: its filter buttons and listeners travel with it.
  // In columns mode the same controls remain available above the category columns.
  var toolbar=$("history-toolbar");
- var destination=next==="columns"?$("columns-panel"):$("timeline-panel");
- var before=next==="columns"?$("columns-grid"):$("viewport");
+ var destination=next==="columns"?$("columns-panel"):next==="map"?$("map-panel"):$("timeline-panel");
+ var before=next==="columns"?$("columns-grid"):next==="map"?$("world-map-layout"):$("viewport");
  if(toolbar.parentNode!==destination)destination.insertBefore(toolbar,before);
  $("timeline-panel").classList.toggle("hide",next!=="timeline");
  $("columns-panel").classList.toggle("hide",next!=="columns");
- [["tab-timeline","timeline"],["tab-columns","columns"]].forEach(function(pair){
+ $("map-panel").classList.toggle("hide",next!=="map");
+ [["tab-timeline","timeline"],["tab-columns","columns"],["tab-map","map"]].forEach(function(pair){
   var tab=$(pair[0]),active=pair[1]===next;
   tab.classList.toggle("active",active);
   tab.setAttribute("aria-selected",active?"true":"false");
@@ -1020,6 +1239,7 @@ function render(){
  $("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
  $("visible").textContent=records.length.toLocaleString("es-ES");
  if(viewMode==="columns"){renderColumns(records);return;}
+ if(viewMode==="map"){renderMap(records);return;}
  var can=$("canvas");can.replaceChildren();
  $("period-name").textContent="Historia universal · eje continuo · "+yearText(periods[0].a)+" — "+yearText(2026);
  $("zoom-level").textContent="Zoom ×"+zoom;$("zoom-out").disabled=zoom<=1;$("zoom-in").disabled=zoom>=8;
@@ -1112,12 +1332,20 @@ function setZoom(next){
  zoom=Math.max(1,Math.min(8,next));render();jumpToYear(y);
 }
 function init(){
- periodUI();categoryUI();initMinimap();
+ periodUI();categoryUI();initMinimap();initCountryControls();
  $("periods").addEventListener("change",function(e){
   var next=periods.find(function(p){return p.k===e.target.value});
   if(!next)return;
   period=next;periodUI();savedYear=next.at;
   if(viewMode==="timeline")jumpToYear(next.at);
+  else if(viewMode==="map"){
+   mapYearActive=true;mapYear=Math.round(next.at);
+   $("map-year-toggle").checked=true;
+   $("map-year-range").disabled=false;$("map-year-number").disabled=false;
+   $("map-year-range").value=String(Math.max(-3000,mapYear));
+   $("map-year-number").value=String(mapYear);
+   render();
+  }
  });
  $("filters").addEventListener("change",function(e){
   if(e.target.value!=="Todas"&&!cats.includes(e.target.value))return;
@@ -1130,13 +1358,13 @@ function init(){
  $("continent").addEventListener("change",function(e){
   continent=e.target.value;
   if(!["Todos","Sin localizar"].concat(GEO).includes(continent))continent="Todos";
-  var focus=viewMode==="columns"?savedYear:yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2);
+  var focus=viewMode!=="timeline"?savedYear:yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2);
   render();
   if(continent!=="Todos"){
    var choices=visible();
    if(choices.length){
     var nearest=choices.reduce(function(best,d){return Math.abs(sy(d)-focus)<Math.abs(sy(best)-focus)?d:best});
-    if(viewMode==="columns")savedYear=sy(nearest);else jumpToYear(sy(nearest));
+    if(viewMode!=="timeline")savedYear=sy(nearest);else jumpToYear(sy(nearest));
    }
   }
  });$("categories").textContent=cats.length;
@@ -1161,6 +1389,7 @@ function init(){
  });
  $("tab-timeline").addEventListener("click",function(){setView("timeline")});
  $("tab-columns").addEventListener("click",function(){setView("columns")});
+ $("tab-map").addEventListener("click",function(){setView("map")});
  $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
  $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
  $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
@@ -1171,7 +1400,7 @@ function init(){
    return;
   }
   if(year===0){jumpToYear(0);return}
-  if(viewMode==="columns")setView("timeline");
+  if(viewMode!=="timeline")setView("timeline");
   jumpToYear(year);
  }
  $("jump-year-go").addEventListener("click",jumpFromInput);
@@ -1203,8 +1432,15 @@ function init(){
   });
  }
  Promise.all([readJSON("./data.json"),
-  readJSON("./estudios-telarana.json").catch(function(){return{items:[]}})
+  readJSON("./estudios-telarana.json").catch(function(){return{items:[]}}),
+  readJSON("./country-links.json").catch(function(){return{links:{}}}),
+  readJSON("./world-110m.json").catch(function(){return{features:[]}})
  ]).then(function(results){
+  var linkDoc=results[2]&&results[2].links||{};
+  countryLinks=Object.create(null);
+  Object.keys(linkDoc).forEach(function(k){var v=linkDoc[k];if(v&&Array.isArray(v.p)&&v.p.length<=40)countryLinks[k]=v});
+  worldGeo=results[3]&&Array.isArray(results[3].features)?results[3]:{features:[]};
+  populateCountrySelect();
   var historical=Array.isArray(results[0].items)?results[0].items.filter(valid):[];
   var additional=Array.isArray(results[1].items)?results[1].items:[];
   var seenIds=new Set(historical.map(function(d){return d.id}));
@@ -1227,6 +1463,7 @@ function init(){
    historical.push(d);seenIds.add(d.id);seenEvents.add(key);
   });
   base=historical;
+  worldShapesBuilt=false;
   var requested=null;
   try{requested=new URLSearchParams(location.search).get("evento")}catch(e){}
   var event=requested&&base.find(function(d){return d.id===requested});
