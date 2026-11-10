@@ -1,10 +1,23 @@
 /* Source 07 · truthfulness, provenance and published graph integrity */
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import vm from "node:vm";
+
+/* The photo catalogue is a trusted JS asset: an initial JSON assignment
+   followed by editorial Object.assign extensions. Parse all entries, without
+   treating the complete source text as one JSON document. */
+function loadPhotoCatalog(){
+ const source=fs.readFileSync("la-telarana/photo-catalog.js","utf8");
+ const sandbox={window:{}};
+ vm.runInNewContext(source,sandbox,{filename:"photo-catalog.js",timeout:1500});
+ const entries=sandbox.window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS;
+ assert(entries&&typeof entries==="object"&&!Array.isArray(entries),"Missing photo catalogue object");
+ return entries;
+}
 const parse=(path,mark)=>{const s=fs.readFileSync(path,"utf8");assert(s.includes(mark),mark+" missing");return JSON.parse(s.split(mark)[1].trim().replace(/;$/,""))};
 const graph=parse("la-telarana/podcast-wild-312-chicote.js","window.IDEA_TELARANA_SOURCE07_PODCAST = ");
 const bios=parse("la-telarana/person-biographies.js","window.IDEA_TELARANA_BIOGRAPHIES = ");
-const photos=parse("la-telarana/photo-catalog.js","window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS=");
+const photos=loadPhotoCatalog();
 const history=JSON.parse(fs.readFileSync("linea-historia/estudios-telarana.json","utf8"));
 const progress=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
 const html=fs.readFileSync("la-telarana/index.html","utf8");
