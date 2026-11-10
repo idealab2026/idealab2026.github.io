@@ -65,13 +65,13 @@ const isMention=e=>{
  const type=String(e.type||"").toLowerCase();
  if(status.startsWith("mencion_")||/^menci[oó]n (de |en |a )/.test(type)||/^citado (en|por) la fuente/.test(type))return true;
  return [entities.get(e.a),entities.get(e.b)].some(n=>n&&
-  (n.kind==="Fuente"||/^Podcast\\s*[·:]/i.test(n.name||"")||/^Entrevista\\s*[·:]/i.test(n.name||"")));
+  (n.kind==="Fuente"||/^Podcast\s*[·:]/i.test(n.name||"")||/^Entrevista\s*[·:]/i.test(n.name||"")));
 };
 const mentionEdges=ctx.data.edges.filter(isMention);
 const actualRelations=ctx.data.edges.filter(e=>!isMention(e));
 const externallyClassified=actualRelations.filter(e=>e.claimStatus==="hecho_verificado_independiente");
 const sourceOnlyDocumented=actualRelations.filter(e=>e.confidence==="documentado"&&
- /youtu(?:be\\.com|\\.be)/i.test(e.source||"")&&e.claimStatus!=="hecho_verificado_independiente");
+ /youtu(?:be\.com|\.be)/i.test(e.source||"")&&e.claimStatus!=="hecho_verificado_independiente");
 console.log("AUDITORÍA DE PROCEDENCIA");
 console.log(JSON.stringify({
  totalLinks:ctx.data.edges.length,
