@@ -358,18 +358,6 @@ const extra={
         ]
       }
     },
-    "Dolores Ibárruri": {
-      "who": "Política comunista española conocida como La Pasionaria, dirigente del PCE durante la Guerra Civil y después durante el exilio.",
-      "portrait": {
-        "lang": "es",
-        "title": "Dolores Ibárruri"
-      },
-      "sources": {
-        "11": [
-          "La Pasionaria aparece en el contexto de la actividad del Partido Comunista y de los discursos de movilización republicana en la Guerra Civil."
-        ]
-      }
-    },
     "Juan Manuel de Prada": {
       "who": "Novelista, ensayista y articulista español, ganador del Premio Planeta en 1997 y autor de novelas de ambientación histórica.",
       "portrait": {
