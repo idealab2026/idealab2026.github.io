@@ -24,7 +24,11 @@ for(const [order,file,key] of files){
  assert.equal(ids.size,episode.nodes.length,"Nodos duplicados "+order);
  assert(episode.edges.every(e=>ids.has(e.a)&&ids.has(e.b)),"Relaciones huérfanas "+order);
  assert(episode.nodes.length>=20&&episode.edges.length>=19,"Expediente incompleto "+order);
- assert(html.includes(file)&&html.includes("mergeNewEpisode(window."+key+")"),"La página no carga "+file);
+ const moduleMatch=/var modules=(\[[^\n]+\]);/.exec(html);
+ assert(moduleMatch,"No existe registro de carga");
+ const modules=JSON.parse(moduleMatch[1]);
+ assert(html.includes(file)&&modules.some(m=>m.key===key&&m.kind==="mergeNewEpisode"),"El módulo de fuente "+order+" no está conectado al grafo");
+ assert(html.includes("mergeNewEpisode(doc)"),"El registro no ejecuta la incorporación de fuentes");
  assert(manifest.includes("cp la-telarana/"+file+" dist/la-telarana/"+file),"El despliegue excluye "+file);
  totalEntities+=episode.nodes.length;
 }
