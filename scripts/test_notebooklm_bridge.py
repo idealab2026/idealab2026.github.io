@@ -415,6 +415,149 @@ class BridgeTests(unittest.TestCase):
             self.assertNotIn("retry_requested", job)
             self.assertFalse(bridge.launch_queued_retry(state, cfg))
 
+    def test_blocked_report_does_not_expose_notebook_ids(self):
+        state = {
+            "160": {"phase": "uncertain", "notebook": "PRIVATE_NOTEBOOK",
+                    "request": {"book": "utopia"}, "failure_kind": "quota"},
+            "163": {"phase": "deferred", "notebook": "PRIVATE_NOTEBOOK",
+                    "request": {"book": "utopia"}}
+        }
+        import io
+        from contextlib import redirect_stdout
+        out = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), redirect_stdout(out):
+            bridge.blocked_jobs(None)
+        self.assertIn("Cuadernos bloqueados (uncertain/deferred): 1", out.getvalue())
+        self.assertIn("#160 utopia uncertain quota", out.getvalue())
+        self.assertNotIn("PRIVATE_NOTEBOOK", out.getvalue())
+
+    def test_remote_delta_rejects_incomplete_snapshot(self):
+        job = {"notebook": "private-notebook", "before": ["oldartifact001"]}
+        with patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "otherartifact001", "status": "3"}]):
+            with self.assertRaisesRegex(RuntimeError, "instantánea anterior"):
+                bridge.remote_artifact_delta(job)
+
+    def test_remote_delta_identifies_unseen_artifact(self):
+        job = {"notebook": "private-notebook", "before": ["oldartifact001"]}
+        with patch.object(bridge, "infographic_rows", return_value=[
+            {"id": "oldartifact001", "status": "3"},
+            {"id": "newartifact001", "status": "4"},
+        ]):
+            rows, new = bridge.remote_artifact_delta(job)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(len(new), 1)
+        self.assertEqual(bridge.artifact_id(new[0]), "newartifact001")
+
+    def test_recovery_needs_explicit_quota_and_no_artifact_confirmation(self):
+        import argparse
+        with self.assertRaisesRegex(ValueError, "obligatorias"):
+            bridge.recover_blocked(argparse.Namespace(
+                issue=160, confirm_no_artifact=False, confirm_quota_restored=True))
+
+    def test_recovery_aborts_if_new_remote_artifact_exists(self):
+        import argparse
+        state = {"160": {"phase": "uncertain", "notebook": "notebook-001",
+                         "source_ids": ["source-001"], "before": [],
+                         "request": request(vid=VIDEO)}}
+        arg = argparse.Namespace(issue=160, confirm_no_artifact=True,
+                                 confirm_quota_restored=True)
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("notebook-001", ["source-001"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "newartifact001", "status": "3"}]), \
+             patch.object(bridge, "command") as command:
+            with self.assertRaisesRegex(RuntimeError, "nuevos artefactos"):
+                bridge.recover_blocked(arg)
+            command.assert_not_called()
+            self.assertEqual(state["160"]["phase"], "uncertain")
+
+    def test_recovery_sends_single_manual_request_without_losing_state(self):
+        import argparse
+        state = {"160": {"phase": "uncertain", "notebook": "notebook-001",
+                         "source_ids": ["source-001"],
+                         "before": ["oldartifact001"],
+                         "request": request(vid=VIDEO)}}
+        arg = argparse.Namespace(issue=160, confirm_no_artifact=True,
+                                 confirm_quota_restored=True)
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(bridge, "STATE_PATH", Path(tmp) / "jobs.json"), \
+             patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("notebook-001", ["source-001"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "oldartifact001", "status": "3"}]), \
+             patch.object(bridge, "command", return_value="") as command, \
+             patch.object(bridge, "comment_or_queue") as comment:
+            bridge.recover_blocked(arg)
+            command.assert_called_once()
+            comment.assert_called_once()
+            self.assertEqual(state["160"]["phase"], "submitted")
+            self.assertEqual(state["160"]["recovery_count"], 1)
+            self.assertEqual(state["160"]["past_attempts"][0]["phase"], "uncertain")
+
+    def test_recovery_rejects_other_active_generation_and_public_submission(self):
+        import argparse
+        main = {"phase": "uncertain", "notebook": "notebook-001",
+                "source_ids": ["source-001"], "before": [],
+                "request": request(vid=VIDEO)}
+        arg = argparse.Namespace(issue=160, confirm_no_artifact=True,
+                                 confirm_quota_restored=True)
+        state = {"160": main, "200": {"phase": "submitted", "notebook": "notebook-002"}}
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "load_json", return_value=state):
+            with self.assertRaisesRegex(RuntimeError, "generación activa"):
+                bridge.recover_blocked(arg)
+        state.pop("200")
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("notebook-001", ["source-001"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=True), \
+             patch.object(bridge, "command") as command:
+            with self.assertRaisesRegex(RuntimeError, "GitHub confirma"):
+                bridge.recover_blocked(arg)
+            command.assert_not_called()
+
+    def test_recovery_quota_remains_uncertain_and_suspends_generation(self):
+        import argparse
+        state = {"160": {"phase": "uncertain", "notebook": "notebook-001",
+                         "source_ids": ["source-001"], "before": [],
+                         "request": request(vid=VIDEO)}}
+        arg = argparse.Namespace(issue=160, confirm_no_artifact=True,
+                                 confirm_quota_restored=True)
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(bridge, "STATE_PATH", Path(tmp) / "jobs.json"), \
+             patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("notebook-001", ["source-001"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows", return_value=[]), \
+             patch.object(bridge, "command",
+                          side_effect=bridge.NotebookLMQuotaError("quota")), \
+             patch.object(bridge, "pause_generation") as pause, \
+             patch.object(bridge, "comment_or_queue") as comment:
+            bridge.recover_blocked(arg)
+            self.assertEqual(state["160"]["phase"], "uncertain")
+            self.assertEqual(state["160"]["failure_kind"], "quota")
+            pause.assert_called_once()
+            comment.assert_not_called()
+
     def test_three_failed_generations_in_last_five_pause(self):
         import argparse
         with tempfile.TemporaryDirectory() as tmp, \
