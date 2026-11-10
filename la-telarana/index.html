@@ -242,6 +242,12 @@ body.graph-expanded{overflow:hidden}
 .audit-missing{color:#fd9b80}
 .audit-warning{color:#f3b087}.audit-success{color:#acc9b8}
 
+
+.audit-source-summary{margin:10px 0 12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+.audit-source-summary h4{grid-column:1/-1;color:#e4b780;font-size:.75rem;margin:2px 0}
+.audit-source-item{padding:7px;border:1px solid #425365;border-radius:7px;display:flex;flex-direction:column;gap:3px;background:#1a2b39}
+.audit-source-item b{font-size:.73rem}.audit-source-item span{font-size:.7rem;color:#bdd1df}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -490,6 +496,23 @@ function showLoadAudit(){
  contents.replaceChildren();
  var p=N("p","Los incrementos son entidades nuevas netas, después de fusionar nombres repetidos. Una fuente puede añadir 0 entidades y varias referencias.","audit-help");
  contents.append(p);
+ var totalsBySource=new Map();
+ loadAudit.forEach(function(r){
+  var m=r.label.match(/^Fuente (\\d+)$/)||r.label.match(/^Perfiles de la fuente (\\d+)$/);
+  if(!m||!r.available)return;
+  var key=String(Number(m[1])),rec=totalsBySource.get(key)||{label:key,nodes:0,edges:0,parts:0};
+  rec.nodes+=r.added;rec.edges+=r.edges;rec.parts++;totalsBySource.set(key,rec);
+ });
+ var summary=N("div",null,"audit-source-summary");
+ summary.append(N("h4","Incrementos netos por fuente"));
+ var sorted=Array.from(totalsBySource.values()).sort(function(a,b){return Number(a.label)-Number(b.label)});
+ sorted.forEach(function(rec){
+  var item=N("div",null,"audit-source-item");
+  item.append(N("b","Fuente "+rec.label));
+  item.append(N("span","+"+rec.nodes+" entidades · +"+rec.edges+" relaciones"));
+  summary.append(item);
+ });
+ contents.append(summary);
  var table=N("table",null,"audit-table"),head=N("thead"),tr=N("tr");
  ["Carga","Antes","+Ent.","Total","+Rel."].forEach(function(h){tr.append(N("th",h))});head.append(tr);table.append(head);
  var body=N("tbody");
