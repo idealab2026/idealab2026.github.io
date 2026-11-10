@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 22,
-    "notStarted": 44,
+    "inReview": 23,
+    "notStarted": 43,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -104,9 +104,9 @@
     }
   ],
   "nextSource": {
-    "order": 14,
-    "videoId": "iPwbiY1F3Rg",
-    "status": "segunda_revision_publicada_revisión_audio_y_documentos_pendiente",
+    "order": 16,
+    "videoId": "J4bqUufijTo",
+    "status": "transcripcion_privada_lista_para_revision_biografica",
     "sourceType": "youtube"
   },
   "inReview": [
@@ -542,6 +542,33 @@
       "lastUpdated": "2026-11-10"
     },
     {
+      "order": 15,
+      "videoId": null,
+      "title": "2025-National-Security-Strategy.pdf",
+      "sourceType": "pdf_document",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf",
+      "originalNotebookSourceUrlMissing": true,
+      "sourceUrlRecoveredFromOfficialPublisher": true,
+      "identicalBinaryToNotebookUploadVerified": false,
+      "status": "documento_institucional_primario_publicado_revision_documental_abierta",
+      "reviewComplete": false,
+      "transcriptRequired": false,
+      "docTranscriptCreated": false,
+      "rawTranscriptAvailable": false,
+      "pagesReviewed": 33,
+      "issuer": "The White House",
+      "documentCoverDate": "2025-11",
+      "congressTransmittalDate": "2025-12-02",
+      "sourceNodesDocumented": 8,
+      "sourceRelationsDocumented": 7,
+      "timelineVerifiedEventsCommitted": 1,
+      "timelineEventIds": [
+        "study-f15-nss-transmision-congreso-2025"
+      ],
+      "institutionalClaimsNotAssumedTrue": true,
+      "qualityNotes": "Documento oficial de 33 páginas recuperado en el sitio del emisor, con título y fecha concordantes con entrada NotebookLM. No se ha cotejado el binario importado originalmente. El documento expone políticas y posiciones de la Administración; estas no prueban resultados ni efectos. El hito histórico se limita a la remisión al Congreso."
+    },
+    {
       "order": 16,
       "videoId": "J4bqUufijTo",
       "title": "Ceuta ya es un punto sin retorno",
@@ -697,9 +724,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 52,
+    "committedVerifiedEvents": 53,
     "fromReviewedSource": 13,
-    "fromSourceInReview": 32,
+    "fromSourceInReview": 33,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -756,6 +783,9 @@
       "14": [
         "study-f14-11s-2001",
         "study-f14-comision-11s-informe-2004"
+      ],
+      "15": [
+        "study-f15-nss-transmision-congreso-2025"
       ],
       "18": [
         "study-f18-doj-epstein-release-2026",
@@ -1373,26 +1403,28 @@
         "order": 15,
         "notebook": "CULTURA - GEOPOLÍTICA",
         "title": "2025-National-Security-Strategy.pdf",
-        "sourceUrl": "",
+        "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf",
         "originalUrl": "",
         "videoId": null,
         "type": "pdf_document",
         "duplicateOf": null,
         "importLine": 11,
-        "status": "pendiente",
+        "status": "en_revision",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "no_corresponde_pdf",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-10"
         },
-        "transcriptRequired": false
+        "transcriptRequired": false,
+        "officialDocumentUrlRecovered": true,
+        "identicalBinaryToNotebookUploadVerified": false
       },
       {
         "order": 16,
