@@ -26,7 +26,7 @@ for(const [order,expected] of [["9",32],["10",15]]){
 }
 assert(page.includes('"9":"f09-episodio"')&&page.includes('"10":"f10-episodio"'),"No enlaza entrevistas con las personas");
 assert(page.includes("library.sourceLabels"),"La interfaz no muestra los títulos de origen");
-assert(page.includes("La fuente ")&&page.includes(" dice que "),"Falta atribución textual");
+assert(page.includes("source-report-text")&&page.includes("Declarante: ")&&page.includes("source-claim-caution"),"Falta estructura de atribución en fichas");
 const seed=parse("la-telarana/one-note-seed.js"),f09=parse("la-telarana/fuente-09-villarejo-revision.js"),f10=parse("la-telarana/fuente-10-revision-inicial.js"),f18=parse("la-telarana/fuente-18-epstein-lorenzo-editorial.js"),f21=parse("la-telarana/fuente-21-orden-mundial-editorial.js");
 const first=page.indexOf("function sanitizePodcastNotes(value){"),last=page.indexOf("function mergeStudy(v){",first);assert(first>0&&last>first);
 const graph={window:ctx.window,data:JSON.parse(JSON.stringify(seed)),safePhoto:()=>{},f09,f10,f18,f21};
