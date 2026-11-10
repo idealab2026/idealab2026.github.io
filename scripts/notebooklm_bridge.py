@@ -151,12 +151,13 @@ def pause_generation(reason: str) -> None:
 
 
 def record_generation_outcome(number: str, outcome: str) -> None:
-    """Stop after 3 remote failures among the last 5 completed attempts.
+    """Protect quota: count terminal failures and ambiguous generation launches.
 
-    Only terminal Studio outcomes are counted, never transient CLI errors.
-    Automatic checks do not modify or re-send any existing image.
+    A CLI exception can be a quota exhaustion even without an explicit 429.
+    Count such ambiguous attempts as an operational fault; never retry them
+    automatically, nor mark them as completed.
     """
-    if outcome not in ("failed", "downloaded"):
+    if outcome not in ("failed", "downloaded", "uncertain"):
         return
     health = generation_health()
     recent = list(health.get("recent", []))
@@ -164,17 +165,24 @@ def record_generation_outcome(number: str, outcome: str) -> None:
                    "at": dt.datetime.now(dt.timezone.utc).isoformat()})
     health["recent"] = recent[-FAILURE_WINDOW:]
     failures = sum(x.get("outcome") == "failed" for x in health["recent"])
-    if failures >= FAILURE_THRESHOLD and len(health["recent"]) >= FAILURE_THRESHOLD:
+    uncertain = sum(x.get("outcome") == "uncertain" for x in health["recent"])
+    if failures + uncertain >= FAILURE_THRESHOLD:
         health["paused"] = True
-        health["pause_reason"] = (
-            "NotebookLM devolvió " + str(failures) + " fallos en los últimos "
-            + str(len(health["recent"])) + " intentos terminados."
-        )
+        if uncertain:
+            health["pause_reason"] = (
+                "NotebookLM: " + str(failures) + " fallos y " + str(uncertain)
+                + " envíos inciertos en los últimos " + str(len(health["recent"]))
+                + " intentos. Revisar cuota y conciliación."
+            )
+        else:
+            health["pause_reason"] = (
+                "NotebookLM devolvió " + str(failures) + " fallos en los últimos "
+                + str(len(health["recent"])) + " intentos terminados."
+            )
         health["paused_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
     save_json(HEALTH_PATH, health)
     if health.get("paused"):
         print("PAUSA DE SEGURIDAD:", health.get("pause_reason"))
-
 
 def show_generation_health() -> None:
     health = generation_health()
@@ -184,7 +192,8 @@ def show_generation_health() -> None:
         print("Motivo:", health.get("pause_reason") or "Sin detalle")
     recent = health.get("recent", [])
     print("Resultados recientes:", len(recent),
-          "fallidos:", sum(x.get("outcome") == "failed" for x in recent))
+          "fallidos:", sum(x.get("outcome") == "failed" for x in recent),
+          "inciertos:", sum(x.get("outcome") == "uncertain" for x in recent))
 
 
 def resume_generations(args) -> None:
@@ -558,6 +567,7 @@ def request_new(number, req, state, config):
         job["phase"] = "uncertain"
         job["failure_kind"] = "quota"
         save_json(STATE_PATH, state)
+        record_generation_outcome(number, "uncertain")
         pause_generation("Límite de uso detectado por NotebookLM.")
         print("Solicitud #", number, "incierta. No se reenvía automáticamente.")
         return True
@@ -565,6 +575,7 @@ def request_new(number, req, state, config):
         job["phase"] = "uncertain"
         job["failure_kind"] = "unclassified"
         save_json(STATE_PATH, state)
+        record_generation_outcome(number, "uncertain")
         print("Solicitud incierta #", number, "- ", type(exc).__name__,
               ": revisar NotebookLM antes de continuar con este cuaderno.")
         return True
@@ -695,6 +706,7 @@ def launch_queued_retry(state: dict, config: dict) -> bool:
             job["phase"] = "uncertain"
             job["failure_kind"] = "quota"
             save_json(STATE_PATH, state)
+            record_generation_outcome(number, "uncertain")
             pause_generation("Límite de uso detectado durante un reintento.")
             print("Reintento #", number, "incierto; no se reenviará automáticamente.")
             return True
@@ -702,6 +714,7 @@ def launch_queued_retry(state: dict, config: dict) -> bool:
             job["phase"] = "uncertain"
             job["failure_kind"] = "unclassified"
             save_json(STATE_PATH, state)
+            record_generation_outcome(number, "uncertain")
             print("Reintento #", number, "INCIERTO: ", type(exc).__name__,
                   "; no se reenviará automáticamente.")
             return True
@@ -880,6 +893,7 @@ def recover_blocked(args) -> None:
         job["phase"] = "uncertain"
         job["failure_kind"] = "quota"
         save_json(STATE_PATH, state)
+        record_generation_outcome(number, "uncertain")
         pause_generation("NotebookLM mantiene el límite de uso; "
                          "recuperación detenida.")
         print("Recuperación #", number,
@@ -889,6 +903,7 @@ def recover_blocked(args) -> None:
         job["phase"] = "uncertain"
         job["failure_kind"] = "unclassified"
         save_json(STATE_PATH, state)
+        record_generation_outcome(number, "uncertain")
         print("Recuperación #", number,
               "incierta:", type(exc).__name__, "; no se repetirá automáticamente.")
         return
