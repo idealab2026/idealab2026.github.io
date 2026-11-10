@@ -726,6 +726,34 @@ def launch_queued_retry(state: dict, config: dict) -> bool:
     return False
 
 
+def reconcile_only() -> None:
+    """Reconcile previously submitted Studio jobs without launching new work.
+
+    Use after temporarily uninstalling the LaunchAgent to create a safe
+    recovery window for blocked requests. This operation preserves all
+    pending PNGs and never calls request_new or launch_queued_retry.
+    """
+    check_identity()
+    state = load_json(STATE_PATH, {})
+    for issue, job in list(state.items()):
+        if job.get("phase") == "submitted":
+            check_submitted(issue, job, state)
+    retry_github_comments(state)
+    still_active = [(number, job) for number, job in state.items()
+                    if job.get("phase") in ("submitted", "launching")]
+    if still_active:
+        print("Generaciones activas:", len(still_active))
+        for number, job in sorted(still_active, key=lambda x: int(x[0])):
+            print("#" + number, job.get("request", {}).get("book", "desconocido"),
+                  job.get("phase"))
+        print("No se ha iniciado ninguna nueva generación. "
+              "Repite reconcile-only cuando Studio termine.")
+    else:
+        print("No hay generaciones activas. "
+              "Puedes recuperar una solicitud bloqueada de forma individual.")
+    print("No se han reenviado solicitudes ni borrado archivos.")
+
+
 def poll():
     check_identity()
     config = private_config()
@@ -1007,6 +1035,7 @@ def main():
     sub.add_parser("init", help="Activar el puente desde este momento; sin importar incidencias antiguas")
     sub.add_parser("doctor", help="Diagnosticar herramientas y conexiones, sin revelar IDs privados")
     sub.add_parser("poll", help="Procesar una solicitud y comprobar las anteriores")
+    sub.add_parser("reconcile-only", help="Conciliar envíos previos sin generar trabajos nuevos")
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
     sub.add_parser("health", help="Consultar la pausa y últimos resultados sin datos privados")
     sub.add_parser("blocked", help="Listar cuadernos bloqueados, sin datos privados")
@@ -1045,7 +1074,7 @@ def main():
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
     args = parser.parse_args()
-    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations", "recover-blocked"}
+    mutating = {"init", "map-book", "map-episode", "poll", "reconcile-only", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations", "recover-blocked"}
     if args.command in mutating:
         with exclusive_state_lock() as acquired:
             if not acquired:
@@ -1071,6 +1100,8 @@ def execute_command(args):
             map_episode(args)
         elif args.command == "poll":
             poll()
+        elif args.command == "reconcile-only":
+            reconcile_only()
         elif args.command == "status":
             show_status()
         elif args.command == "health":
