@@ -78,6 +78,8 @@ jobs:
             cp "$site/index.html" "dist/$site/index.html"
           done
           cp linea-historia/data.json dist/linea-historia/data.json
+          cp linea-historia/country-links.json dist/linea-historia/country-links.json
+          cp linea-historia/world-110m.json dist/linea-historia/world-110m.json
           cp linea-historia/estudios-telarana.json dist/linea-historia/estudios-telarana.json
           cp linea-historia/timeline-v4.js dist/linea-historia/timeline-v4.js
           cp linea-historia/favicon.png dist/linea-historia/favicon.png
