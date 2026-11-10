@@ -49,7 +49,7 @@ assert(events.every(e=>e.investigation.status==="hecho_documentado"&&e.investiga
 assert(events.every(e=>e.investigation.relatedTelarana.every(id=>ids.has(id))),"Timeline points to unknown identities");
 const row=p.sourceCatalog.entries.find(x=>x.order===4);
 assert(row.tracking.initiated&&row.tracking.docTranscriptionCreated&&row.tracking.inReview);
-assert.equal(row.tracking.transcriptContentImported,false);
+assert.equal(row.tracking.transcriptContentImported,true);
 assert.equal(row.tracking.complete,false);
 assert.equal(row.tracking.imageRuntimeVerified,false);
 assert.equal(p.timeline.committedVerifiedEvents,hist.items.length);
