@@ -881,10 +881,10 @@ def safe_studio_failure_detail(row: dict) -> tuple[str, str]:
         if not isinstance(value, (str, int)) or not str(value).strip():
             continue
         detail = " ".join(str(value).split())
-        detail = re.sub(r"https?://\\S+", "[enlace privado]", detail)
-        detail = re.sub(r"/Users/[^\\s]+", "[ruta privada]", detail)
-        detail = re.sub(r"[\\w.+-]+@[\\w.-]+\\.[A-Za-z]{2,}", "[correo privado]", detail)
-        detail = re.sub(r"\\b[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}\\b",
+        detail = re.sub(r"https?://\S+", "[enlace privado]", detail)
+        detail = re.sub(r"/Users/[^\s]+", "[ruta privada]", detail)
+        detail = re.sub(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}", "[correo privado]", detail)
+        detail = re.sub(r"\b[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}\b",
                         "[identificador privado]", detail)
         return key, detail[:240]
     return "", ""
