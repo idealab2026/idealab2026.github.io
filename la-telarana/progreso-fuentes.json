@@ -804,14 +804,14 @@
       "videoId": "EMZzh2ZpLj8",
       "title": "El PODER REAL que CONTROLA la UNIÓN EUROPEA desde las SOMBRAS | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=EMZzh2ZpLj8",
-      "status": "segunda_revision_biografias_f23_y_tratado_ceca_publicados_revision_audio_pendiente",
+      "status": "atribuciones_individuales_estructuradas_y_terminos_asr_auditados_audio_y_contraste_pendientes",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 9,
       "sourceRelationsDocumented": 8,
       "verifiedIndependentChecks": 2,
-      "qualityNotes": "ASR integral (149.267 caracteres) consultado en Google Drive institucional. Segunda capa: 30 biografías separadas de tesis impersonales y atribuidas a la entrevista. Se ha documentado la firma del Tratado de París (18-04-1951) con archivo histórico del Parlamento Europeo. La Declaración Schuman 1950 ya estaba registrada; no duplicada. Tesis relativas a intereses estadounidenses, supuestos vínculos de dirigentes con servicios de inteligencia, corrupción, control de la Comisión Europea o promesas sobre OTAN se conservan como declaraciones no contrastadas en su alcance, sin generar aristas sustantivas. Audio, atribución de turnos, minutajes y QA de retratos aún pendientes.",
+      "qualityNotes": "ASR integral (149.267 caracteres) consultado en Google Drive institucional. Segunda capa: 30 biografías separadas de tesis impersonales y atribuidas a la entrevista. Se ha documentado la firma del Tratado de París (18-04-1951) con archivo histórico del Parlamento Europeo. La Declaración Schuman 1950 ya estaba registrada; no duplicada. Tesis relativas a intereses estadounidenses, supuestos vínculos de dirigentes con servicios de inteligencia, corrupción, control de la Comisión Europea o promesas sobre OTAN se conservan como declaraciones no contrastadas en su alcance, sin generar aristas sustantivas. Audio, atribución de turnos, minutajes y QA de retratos aún pendientes.\nTercera revisión editorial: fichas completas con tema, declarante y estado; anclas literales de Drive contrastadas (29); identidades fonéticas no confirmadas marcadas como provisionales. Sin cotejo audiovisual ni validación externa integral.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "timelineVerifiedEventsCommitted": 1,
@@ -840,21 +840,25 @@
         "Yelsin": "Boris Yeltsin",
         "Medv": "Dmitri Medvédev"
       },
-      "lastUpdated": "2026-11-10"
+      "lastUpdated": "2026-11-10",
+      "structuredProfiles": 30,
+      "transcriptAnchorMatches": 29,
+      "transcriptAnchorMisses": 0,
+      "audioVerified": false
     },
     {
       "order": 24,
       "videoId": "o8YeIJyazM8",
       "title": "El nuevo desorden global: El polvorín de Oriente Medio y el Petróleo | Análisis con Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
-      "status": "segunda_revision_biografias_y_dos_hitos_2023_publicados_revision_audio_pendiente",
+      "status": "atribuciones_individuales_estructuradas_y_terminos_asr_auditados_audio_y_contraste_pendientes",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 10,
       "sourceRelationsDocumented": 9,
       "verifiedIndependentChecks": 2,
-      "qualityNotes": "ASR integral (74.423 caracteres) contrastado con Drive de IDEA LAB. 23 biografías y menciones atribuidas a la conferencia; sin asignar turnos o minutajes no verificados. Los hechos históricos 10-03-2023 (acuerdo saudí-iraní en Pekín) y 07-10-2023 (ataques de Hamás contra Israel) contrastados con gobiernos implicados y Naciones Unidas. No se presume causalidad entre eventos, ni se asumen como hechos planes o conspiraciones descritas. Pendiente cotejo audiovisual y retratos.",
+      "qualityNotes": "ASR integral (74.423 caracteres) contrastado con Drive de IDEA LAB. 23 biografías y menciones atribuidas a la conferencia; sin asignar turnos o minutajes no verificados. Los hechos históricos 10-03-2023 (acuerdo saudí-iraní en Pekín) y 07-10-2023 (ataques de Hamás contra Israel) contrastados con gobiernos implicados y Naciones Unidas. No se presume causalidad entre eventos, ni se asumen como hechos planes o conspiraciones descritas. Pendiente cotejo audiovisual y retratos.\nTercera revisión editorial: fichas completas con tema, declarante y estado; anclas literales de Drive contrastadas (23); identidades fonéticas no confirmadas marcadas como provisionales. Sin cotejo audiovisual ni validación externa integral.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "timelineVerifiedEventsCommitted": 2,
@@ -882,7 +886,11 @@
         "Brecinski": "Zbigniew Brzezinski",
         "Cayacalas": "Kaja Kallas"
       },
-      "lastUpdated": "2026-11-10"
+      "lastUpdated": "2026-11-10",
+      "structuredProfiles": 23,
+      "transcriptAnchorMatches": 23,
+      "transcriptAnchorMisses": 0,
+      "audioVerified": false
     },
     {
       "order": 25,
@@ -1829,7 +1837,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 19,
-        "status": "segunda_revision_biografias_f23_y_tratado_ceca_publicados_revision_audio_pendiente",
+        "status": "atribuciones_individuales_estructuradas_y_terminos_asr_auditados_audio_y_contraste_pendientes",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -1842,7 +1850,10 @@
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 149267,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredSourceStatements": 30,
+          "transcriptAnchorsMatched": 29,
+          "transcriptAudioMatched": false
         }
       },
       {
@@ -1855,7 +1866,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 20,
-        "status": "segunda_revision_biografias_y_dos_hitos_2023_publicados_revision_audio_pendiente",
+        "status": "atribuciones_individuales_estructuradas_y_terminos_asr_auditados_audio_y_contraste_pendientes",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -1868,7 +1879,10 @@
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 74423,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredSourceStatements": 23,
+          "transcriptAnchorsMatched": 23,
+          "transcriptAudioMatched": false
         }
       },
       {
@@ -2977,13 +2991,13 @@
   "editorialQualityAudit": {
     "date": "2026-11-10",
     "scope": "Fuentes 9–24 con expedientes de personas (15 fuentes, sin 15 por ser PDF institucional)",
-    "status": "triage_automatica_publicada_con_revisiones_manual_y_audio_pendientes",
+    "status": "auditoria_527_nodos_y_reescritura_completa_f23_f24_verificada_con_transcripcion_audio_pendiente",
     "profilesUnique": 201,
-    "sourceCommentaries": 330,
-    "structuredWithExplicitSpeakerTopicAndStatus": 1,
-    "legacyEditorialSummaries": 329,
-    "possibleVagueNarrativesRequiringManualReview": 114,
-    "controversyTermMatchesRequiringProvenanceReview": 32,
+    "sourceCommentaries": 331,
+    "structuredWithExplicitSpeakerTopicAndStatus": 63,
+    "legacyEditorialSummaries": 268,
+    "possibleVagueNarrativesRequiringManualReview": 90,
+    "controversyTermMatchesRequiringProvenanceReview": 44,
     "explicitIndependentlyVerifiedRelations": 2,
     "graphLinksTotal": 813,
     "graphSourceMentionLinks": 441,
@@ -3044,11 +3058,15 @@
       },
       "23": {
         "claims": 30,
-        "candidates": 13
+        "structured": 30,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 29
       },
       "24": {
         "claims": 23,
-        "candidates": 11
+        "structured": 23,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 23
       }
     },
     "exclusions": [
@@ -3062,6 +3080,24 @@
       "Las denuncias se atribuyen a la fuente y no se elevan a hechos sin evidencias independientes",
       "Conservar el texto original y no inventar minutajes",
       "Revisar 114 candidatos uno por uno antes de declarar cerrada la auditoría"
-    ]
+    ],
+    "affectedEntitiesByPotentiallyGenericSourceCommentary": 73,
+    "source23DossiersStructured": 30,
+    "source24DossiersStructured": 23,
+    "source23TranscriptAnchorsMatched": 29,
+    "source24TranscriptAnchorsMatched": 23,
+    "transcriptAnchorsMatchedTotal": 52,
+    "transcriptAnchorsUnmatched": 0,
+    "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
+    "latestAuditedGraphEntities": 527,
+    "latestAuditedGraphLinks": 813,
+    "latestAuditedGraphSourceMentions": 441,
+    "latestAuditedGraphOtherRelations": 372,
+    "latestAuditedGraphExternallyClassifiedRelations": 2,
+    "latestAuditedGraphPeopleWithoutIndependentBiographicalSource": 245,
+    "source23And24AudioVerified": false,
+    "source23And24MinutesVerified": 0,
+    "source23And24IndependentClaimValidationComplete": false,
+    "editorialDebtNote": "Las 53 fichas de F23/F24 están estructuradas y se encontraron 52 anclas literales en sus respectivos Docs institucionales. Esto confirma presencia de pasajes en ASR, no identidad fonética ni veracidad. Quedan 268 resúmenes anteriores sin estructura comparable, además de datos de OneNote y podcast a revisar."
   }
 }
