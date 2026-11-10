@@ -44,6 +44,7 @@ assert.equal(row.tracking.imageAtGraphNode,"configurada");
 assert.equal(row.reviewComplete,false);
 assert(!times.items.some(e=>e.investigation?.sourceOrder===3),"No inventar acontecimientos históricos de una sinopsis");
 assert(html.includes("podcast-vaquero-145-editorial.js"));
-assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_SOURCE03_EDITORIAL)"));
+const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(html)||[])[1]||"[]");
+assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE03_EDITORIAL"&&m.kind==="mergeNewEpisode")&&html.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE03_EDITORIAL");
 assert(!html.includes("source-review-rows"),"Control interno no debe publicarse");
 console.log("OK: fuente03 iniciada, 3 protagonistas con imágenes, 5 entidades, 5 relaciones verificables, doc preparado sin transcripción ni minutos ficticios");
