@@ -70,7 +70,18 @@
       "personProfilesSourceFile": "la-telarana/personas-fuentes-18-21.js",
       "personBiographiesFirst": true,
       "visualFallbackPolicy": "Wikipedia por nombre canónico; icono semántico en 2D/3D/galería/ficha si no hay retrato",
-      "lastUpdated": "2026-11-10"
+      "lastUpdated": "2026-11-10",
+      "editorialMaintenance": {
+        "structuredStatements": 36,
+        "legacyStatements": 0,
+        "transcriptAnchorsConfirmed": 36,
+        "olderStructuredWithoutAnchor": 0,
+        "transcriptDocUrl": "https://docs.google.com/document/d/1lbi_X5vmdlsXN_QYHbDmePWLm3llRD0JbC4CvYCB6CI/edit?usp=drivesdk",
+        "verifiedAudioMinutes": 0,
+        "documentaryClaimsVerifiedIndependently": false,
+        "date": "2026-11-10",
+        "notes": "Capa de fichas personales completada: 36 declaraciones con tema, declarante, condición probatoria y texto atribuido. 36 anclas literales confirmadas en documento ASR institucional. 0 fichas antiguas aún sin ancla guardada. Identificaciones fonéticas inciertas señaladas. Sin cotejo de audio/minutos ni validación externa de acusaciones."
+      }
     },
     {
       "order": 21,
@@ -386,14 +397,14 @@
       "videoId": "10vGOskN6hY",
       "title": "VILLAREJO EXPLOTA: SAUNAS, ESPÍAS MARROQUÍES y LOBBY GAY del PSOE",
       "sourceUrl": "https://www.youtube.com/watch?v=10vGOskN6hY",
-      "status": "segunda_revision_biografias_atribuciones_publicada",
+      "status": "capa_editorial_personal_estructurada_audio_y_corroboracion_pendientes",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 13,
       "sourceRelationsDocumented": 12,
       "verifiedIndependentChecks": 1,
-      "qualityNotes": "Segunda lectura de transcripción NotebookLM: 32 personas contextualizadas con biografía y resumen expresamente atribuido a la fuente. Las menciones solo enlazan persona↔episodio; no validación audiovisual ni cotejo visual de retratos. La revisión exhaustiva de todas las afirmaciones permanece abierta.",
+      "qualityNotes": "Segunda lectura de transcripción NotebookLM: 32 personas contextualizadas con biografía y resumen expresamente atribuido a la fuente. Las menciones solo enlazan persona↔episodio; no validación audiovisual ni cotejo visual de retratos. La revisión exhaustiva de todas las afirmaciones permanece abierta.\nCapa de fichas personales completada: 33 declaraciones con tema, declarante, condición probatoria y texto atribuido. 25 anclas literales confirmadas en documento ASR institucional. 8 fichas antiguas aún sin ancla guardada. Identificaciones fonéticas inciertas señaladas. Sin cotejo de audio/minutos ni validación externa de acusaciones.",
       "timelineVerifiedEventsCommitted": 1,
       "personsProfiled": 32,
       "sourceAttributedSummaries": 32,
@@ -401,7 +412,18 @@
       "personProfilesSourceFile": "la-telarana/personas-fuentes-09-10.js",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "imageRuntimeVerified": false
+      "imageRuntimeVerified": false,
+      "editorialMaintenance": {
+        "structuredStatements": 33,
+        "legacyStatements": 0,
+        "transcriptAnchorsConfirmed": 25,
+        "olderStructuredWithoutAnchor": 8,
+        "transcriptDocUrl": "https://docs.google.com/document/d/1g7bBkQOoAYEexNsPNTzQUywQnpZz6mH2gC5zY4x1y6E/edit?usp=drivesdk",
+        "verifiedAudioMinutes": 0,
+        "documentaryClaimsVerifiedIndependently": false,
+        "date": "2026-11-10",
+        "notes": "Capa de fichas personales completada: 33 declaraciones con tema, declarante, condición probatoria y texto atribuido. 25 anclas literales confirmadas en documento ASR institucional. 8 fichas antiguas aún sin ancla guardada. Identificaciones fonéticas inciertas señaladas. Sin cotejo de audio/minutos ni validación externa de acusaciones."
+      }
     },
     {
       "order": 10,
@@ -673,14 +695,14 @@
       "videoId": "TS5c9NXubIs",
       "title": "El EPISODIO Más CENSURABLE del CANAL | @diazvillanueva, @jfcalero, Lorenzo Ramírez y @MemoriasDePez",
       "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
-      "status": "segunda_revision_perfiles_y_relaciones_publicada_cotejo_audio_pendiente",
+      "status": "capa_editorial_personal_estructurada_audio_y_corroboracion_pendientes",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 10,
       "sourceRelationsDocumented": 9,
       "verifiedIndependentChecks": 3,
-      "qualityNotes": "Documento íntegro ASR de 96.983 caracteres consultado en Drive. 23 biografías y notas impersonales por fuente. Cuatro invitados confirmados también en página oficial de Inversión Racional. Peter Thiel es candidato fonético por la mención a Palantir, no cita audiovisual confirmada. China-OMC ya registrada y corroborada por OMC; Capitolio 2021 contrastado con Inspector General USCP. No se duplican eventos ni se vinculan personas de la mesa entre sí solo por intervenir. Pendiente identificación de turnos, audio, minutajes y QA visual.",
+      "qualityNotes": "Documento íntegro ASR de 96.983 caracteres consultado en Drive. 23 biografías y notas impersonales por fuente. Cuatro invitados confirmados también en página oficial de Inversión Racional. Peter Thiel es candidato fonético por la mención a Palantir, no cita audiovisual confirmada. China-OMC ya registrada y corroborada por OMC; Capitolio 2021 contrastado con Inspector General USCP. No se duplican eventos ni se vinculan personas de la mesa entre sí solo por intervenir. Pendiente identificación de turnos, audio, minutajes y QA visual.\nCapa de fichas personales completada: 23 declaraciones con tema, declarante, condición probatoria y texto atribuido. 23 anclas literales confirmadas en documento ASR institucional. 0 fichas antiguas aún sin ancla guardada. Identificaciones fonéticas inciertas señaladas. Sin cotejo de audio/minutos ni validación externa de acusaciones.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "timelineVerifiedEventsCommitted": 2,
@@ -720,7 +742,18 @@
       ],
       "interpretationPolicy": "Los comentarios sobre intereses empresariales, conflictos o control político se mantienen como tesis de la mesa. La relación Peter Thiel-Palantir es un dato corporativo externo, no prueba de las imputaciones formuladas en la charla.",
       "imageRuntimeVerified": false,
-      "lastUpdated": "2026-11-10"
+      "lastUpdated": "2026-11-10",
+      "editorialMaintenance": {
+        "structuredStatements": 23,
+        "legacyStatements": 0,
+        "transcriptAnchorsConfirmed": 23,
+        "olderStructuredWithoutAnchor": 0,
+        "transcriptDocUrl": "https://docs.google.com/document/d/1UrRGtPdpEMCMLu0D2qTk4S4hQMt7q6rO5fdDP6eLnt0/edit?usp=drivesdk",
+        "verifiedAudioMinutes": 0,
+        "documentaryClaimsVerifiedIndependently": false,
+        "date": "2026-11-10",
+        "notes": "Capa de fichas personales completada: 23 declaraciones con tema, declarante, condición probatoria y texto atribuido. 23 anclas literales confirmadas en documento ASR institucional. 0 fichas antiguas aún sin ancla guardada. Identificaciones fonéticas inciertas señaladas. Sin cotejo de audio/minutos ni validación externa de acusaciones."
+      }
     },
     {
       "order": 20,
@@ -1502,20 +1535,27 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 9,
-        "status": "segunda_revision_biografias_atribuciones_publicada",
+        "status": "capa_editorial_personal_estructurada_audio_y_corroboracion_pendientes",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1g7bBkQOoAYEexNsPNTzQUywQnpZz6mH2gC5zY4x1y6E/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_por_persona_o_iconos",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 139679,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredStatements": 33,
+          "unstructuredStatements": 0,
+          "textAnchorsVerified": 25,
+          "olderStructuredWithoutAnchor": 8,
+          "audioMatched": false,
+          "editorialMaintenanceComplete": true,
+          "editorialIndependentVerificationComplete": false
         }
       },
       {
@@ -1755,14 +1795,21 @@
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1lbi_X5vmdlsXN_QYHbDmePWLm3llRD0JbC4CvYCB6CI/edit?usp=drivesdk",
           "complete": true,
           "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 129774,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredStatements": 36,
+          "unstructuredStatements": 0,
+          "textAnchorsVerified": 36,
+          "olderStructuredWithoutAnchor": 0,
+          "audioMatched": false,
+          "editorialMaintenanceComplete": true,
+          "editorialIndependentVerificationComplete": false
         }
       },
       {
@@ -1775,7 +1822,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 15,
-        "status": "segunda_revision_perfiles_y_relaciones_publicada_cotejo_audio_pendiente",
+        "status": "capa_editorial_personal_estructurada_audio_y_corroboracion_pendientes",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -1788,7 +1835,14 @@
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 96983,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "structuredStatements": 23,
+          "unstructuredStatements": 0,
+          "textAnchorsVerified": 23,
+          "olderStructuredWithoutAnchor": 0,
+          "audioMatched": false,
+          "editorialMaintenanceComplete": true,
+          "editorialIndependentVerificationComplete": false
         }
       },
       {
@@ -3039,13 +3093,13 @@
   "editorialQualityAudit": {
     "date": "2026-11-10",
     "scope": "Fuentes 9–24 con expedientes de personas (15 fuentes, sin 15 por ser PDF institucional)",
-    "status": "fuentes_11_13_21_y_23_24_estructuradas_tras_cotejo_transcripcion_audio_pendiente",
+    "status": "ocho_fuentes_9_11_13_18_19_21_23_24_estructuradas_tras_cotejo_asr_audio_pendiente",
     "profilesUnique": 201,
     "sourceCommentaries": 331,
-    "structuredWithExplicitSpeakerTopicAndStatus": 146,
-    "legacyEditorialSummaries": 185,
-    "possibleVagueNarrativesRequiringManualReview": 68,
-    "controversyTermMatchesRequiringProvenanceReview": 44,
+    "structuredWithExplicitSpeakerTopicAndStatus": 230,
+    "legacyEditorialSummaries": 101,
+    "possibleVagueNarrativesRequiringManualReview": 50,
+    "controversyTermMatchesRequiringProvenanceReview": 70,
     "explicitIndependentlyVerifiedRelations": 2,
     "graphLinksTotal": 813,
     "graphSourceMentionLinks": 441,
@@ -3053,8 +3107,11 @@
     "onlyEvidenceClassificationNotIndependentTruth": true,
     "sourceCounts": {
       "9": {
-        "claims": 32,
-        "candidates": 12
+        "claims": 33,
+        "candidates": 12,
+        "structured": 33,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 25
       },
       "10": {
         "claims": 15,
@@ -3092,11 +3149,17 @@
       },
       "18": {
         "claims": 36,
-        "candidates": 10
+        "candidates": 10,
+        "structured": 36,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 36
       },
       "19": {
         "claims": 23,
-        "candidates": 6
+        "candidates": 6,
+        "structured": 23,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 23
       },
       "20": {
         "claims": 16,
@@ -3143,7 +3206,7 @@
     "source24DossiersStructured": 23,
     "source23TranscriptAnchorsMatched": 29,
     "source24TranscriptAnchorsMatched": 23,
-    "transcriptAnchorsMatchedTotal": 135,
+    "transcriptAnchorsMatchedTotal": 219,
     "transcriptAnchorsUnmatched": 0,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
     "latestAuditedGraphEntities": 527,
@@ -3155,7 +3218,7 @@
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
     "source23And24IndependentClaimValidationComplete": false,
-    "editorialDebtNote": "Las fuentes 11/13/21 (83 de 83 declaraciones) y 23/24 (53 de 53) cuentan con dossiers estructurados. Se localizaron 135 anclas de pasajes literales en sus transcripciones ASR y una ficha de presentador no requiere ancla de intervención personal. Quedan 185 comentarios heredados en otras fuentes, 68 candidatos a texto genérico por heurística y numerosas biografías sin bibliografía independiente. No hay cotejo audiovisual ni validación factual integral.",
+    "editorialDebtNote": "F09 (33), F18 (36), F19 (23), F11 (28), F13 (20), F21 (35), F23 (30) y F24 (23) suman 230 comentarios editoriales estructurados; 101 permanecen en formato anterior. Se contrastaron 219 anclas exactas de ASR: 84 nuevas F09/18/19 (25+36+23) y 135 previamente verificadas F11/13/21/23/24. Ocho expedientes de F09, reestructurados antes de esta iteración, carecen de ancla literal registrada y no deben contarse como cotejados. La ficha introductoria del entrevistado de F23 tampoco lleva un ancla. No hay cotejo audiovisual ni verificación independiente de las alegaciones. Los 50 candidatos a vaguedad son hallazgos heurísticos, no errores probados.",
     "source11DossiersStructured": 28,
     "source13DossiersStructured": 20,
     "source21DossiersStructured": 35,
@@ -3163,6 +3226,17 @@
     "source13TranscriptAnchorsMatched": 20,
     "source21TranscriptAnchorsMatched": 35,
     "additionalTranscriptAnchorsMatched": 83,
-    "remainingUnstructuredFromSources11_13_21": 0
+    "remainingUnstructuredFromSources11_13_21": 0,
+    "source9DossiersStructured": 33,
+    "source18DossiersStructured": 36,
+    "source19DossiersStructured": 23,
+    "source9TranscriptAnchorsMatched": 25,
+    "source18TranscriptAnchorsMatched": 36,
+    "source19TranscriptAnchorsMatched": 23,
+    "source9OlderStructuredMissingAnchors": 8,
+    "latestAddedTranscriptAnchorsMatched": 84,
+    "source9And18And19AudioVerified": false,
+    "source9And18And19VerifiedMinuteReferences": 0,
+    "source9And18And19ClaimTruthExternallyVerified": false
   }
 }
