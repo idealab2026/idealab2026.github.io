@@ -206,19 +206,46 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "name": "Peter Thiel",
       "kind": "Persona",
       "subtitle": "Empresario tecnológico y cofundador de Palantir",
-      "note": "Su trayectoria se invoca en una tesis sobre poder tecnológico. No se ha verificado ninguna operación encubierta derivada de esta entrevista.",
+      "note": "Peter Thiel aparece expresamente en esta entrevista; el transcriptor automático escribe su apellido como «Peterill», «Peter thil» o «Peter cill». Los pasajes sobre su actividad tecnológica, contratos públicos y presuntas tramas deben atribuirse al episodio y distinguirse de hechos documentados. Revisar las cuatro notas de investigación.",
       "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
       "topic3d": "tecnologia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f18-epstein-lorenzo",
-          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~20–31 % del episodio. Los interlocutores vinculan a Peter Thiel con Palantir y con debates sobre poder tecnológico, y lo citan entre los grandes empresarios que aparecen en su interpretación del caso Epstein. Esta mención no prueba participación delictiva."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
           "publishedAt": "2026-02-08",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
-          "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «todo el ámbito tecnológico de Peterill de Palantir Entonces a su trabajo original él sumó una serie de iniciativas Yo no sé si moto propio porque le fueran dirigiendo a ellas en la». Contexto editorial: Su trayectoria se invoca en una tesis sobre poder tecnológico. No se ha verificado ninguna operación encubierta derivada de esta entrevista."
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~70 % del episodio. La conversación afirma que existen correos de 2014 entre Peter Thiel y Jeffrey Epstein y comenta uno que atribuye a Thiel sobre la política estadounidense en Oriente Medio. NO se han inspeccionado aquí los correos originales ni confirmado su autenticidad, remitente, fecha o contexto: registrarlo como afirmación de la entrevista, no como relación privada demostrada."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~71–73 % del episodio. Se atribuyen a Palantir relaciones iniciales con agencias estadounidenses de inteligencia, financiación mediante In-Q-Tel y un período de clientela concentrada en la NSA. Son afirmaciones que requieren contrastar inversiones, contratos y fechas originales; no queda corroborada la aseveración de que la NSA fuera su único cliente durante cinco años."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~73–74 % del episodio. El entrevistado describe la supuesta oposición Thiel–George Soros como una falsa dicotomía y les atribuye objetivos tecnológicos y políticos convergentes. Es una hipótesis interpretativa, no una coordinación entre ambos probada."
         }
       ],
       "x": 6590,
@@ -621,19 +648,46 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "b": "f18-thiel",
       "type": "Mención o tema analizado en el episodio (no implica relación entre terceros)",
       "confidence": "documentado",
-      "note": "El nombre o tema figura en la transcripción automática; la interpretación o acusación de los entrevistados no se valida por ello. Posición textual aproximada 20%.",
+      "note": "Mención comprobada en el texto completo de NotebookLM, con grafías automáticas variables. No demuestra contacto interpersonal con el presentador o invitado, ni las acusaciones debatidas.",
       "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
       "episodeId": "idealab-f18-epstein-lorenzo",
       "claimStatus": "mencion_transcripcion_no_prueba_de_hechos",
       "podcastNotes": [
         {
           "episodeId": "idealab-f18-epstein-lorenzo",
-          "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "relato",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~20–31 % del episodio. Los interlocutores vinculan a Peter Thiel con Palantir y con debates sobre poder tecnológico, y lo citan entre los grandes empresarios que aparecen en su interpretación del caso Epstein. Esta mención no prueba participación delictiva."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
           "publishedAt": "2026-02-08",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
-          "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «todo el ámbito tecnológico de Peterill de Palantir Entonces a su trabajo original él sumó una serie de iniciativas Yo no sé si moto propio porque le fueran dirigiendo a ellas en la». Contexto editorial: Su trayectoria se invoca en una tesis sobre poder tecnológico. No se ha verificado ninguna operación encubierta derivada de esta entrevista."
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~70 % del episodio. La conversación afirma que existen correos de 2014 entre Peter Thiel y Jeffrey Epstein y comenta uno que atribuye a Thiel sobre la política estadounidense en Oriente Medio. NO se han inspeccionado aquí los correos originales ni confirmado su autenticidad, remitente, fecha o contexto: registrarlo como afirmación de la entrevista, no como relación privada demostrada."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~71–73 % del episodio. Se atribuyen a Palantir relaciones iniciales con agencias estadounidenses de inteligencia, financiación mediante In-Q-Tel y un período de clientela concentrada en la NSA. Son afirmaciones que requieren contrastar inversiones, contratos y fechas originales; no queda corroborada la aseveración de que la NSA fuera su único cliente durante cinco años."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "Lorenzo Ramírez con Rubén Gisbert · Epstein, Israel y élites",
+          "publishedAt": "2026-02-08",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+          "status": "alegacion",
+          "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~73–74 % del episodio. El entrevistado describe la supuesta oposición Thiel–George Soros como una falsa dicotomía y les atribuye objetivos tecnológicos y políticos convergentes. Es una hipótesis interpretativa, no una coordinación entre ambos probada."
         }
       ]
     },
