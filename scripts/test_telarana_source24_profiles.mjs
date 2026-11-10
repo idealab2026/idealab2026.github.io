@@ -11,12 +11,14 @@ const found=Object.entries(data.profiles).filter(([_,p])=>Array.isArray(p.source
 assert(found.length>=23,"Debe haber 23 fichas de fuente 24");
 for(const [name,p]of found){
  assert(p.who?.length>=50,"Biografía insuficiente "+name);
- assert(p.sources["24"].length&&p.sources["24"].every(x=>x.length>=60),"Sin comentario atribuido "+name);
+ assert(p.sources["24"].length&&p.sources["24"].every(x=>typeof x==="string"?x.length>=60:typeof x.statement==="string"&&x.statement.length>=60&&!!x.topic&&!!x.speaker&&!!x.status),"Sin comentario atribuido "+name);
 }
 for(const person of ["Lorenzo Ramírez","Donald Trump","Xi Jinping","Benjamin Netanyahu","Peter Thiel","Alex Karp","Tim Cook","Jeff Bezos","James M. Buchanan","Halford Mackinder","Mario Draghi","Kaja Kallas"]){
  assert(data.profiles[person]?.sources?.["24"],"Falta el perfil de "+person);
 }
-assert(data.profiles["Benjamin Netanyahu"].sources["24"].some(x=>x.includes("no se acreditan intenciones")),"Falta distinguir afirmaciones de pruebas");
+assert(data.profiles["Benjamin Netanyahu"].sources["24"].some(x=>x.status==="alegacion_no_verificada"&&x.statement.includes("no demuestra")),"No se ha separado la hipótesis causal sobre los ataques del 7 de octubre");
+for(const name of ["Tim Cook","Jeff Bezos","Mario Draghi","Emmanuel Macron"])assert(data.profiles[name].sources["24"][0].status==="alegacion_no_verificada","No convertir hipótesis en hechos: "+name);
+for(const name of ["Peter Thiel","Kaja Kallas"])assert(data.profiles[name].sources["24"][0].status==="identidad_pendiente","Identificación fonética no confirmada: "+name);
 const html=read("la-telarana/index.html"),flow=read(".github/workflows/pages.yml");
 assert(html.includes('src="./personas-fuentes-24.js'),"Falta el fichero F24 en la web");
 assert(html.includes('"24":"f24-episodio"'),"Sin enlace a la fuente 24");
