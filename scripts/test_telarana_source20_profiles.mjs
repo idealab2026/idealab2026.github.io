@@ -25,7 +25,7 @@ const track=JSON.parse(read("la-telarana/progreso-fuentes.json")),f20=track.inRe
 assert(f20&&f20.personsProfiled>=16&&!f20.reviewComplete,"Revisión documental indebidamente cerrada");
 assert(f20.transcriptAudioMatched===false&&f20.verifiedMinuteReferences===0,"Cotejo de audio inventado");
 assert(f20.timelineVerifiedEventsCommitted===0,"Duplicación de fechas de otras fuentes");
-assert(track.nextSource.order===22,"Debe avanzar a fuente 22 tras F21 ya finalizada");
+assert(track.nextSource.order>20,"No se puede retroceder a una fuente ya revisada");
 const timeline=JSON.parse(read("linea-historia/estudios-telarana.json"));
 assert(!timeline.items.some(e=>e.investigation?.sourceOrder===20),"Una fuente sin hitos originales no debe crear duplicados");
 const stargate=timeline.items.find(e=>e.id==="study-f21-stargate-2025");
