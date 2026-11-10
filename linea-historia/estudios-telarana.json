@@ -1619,6 +1619,35 @@
         ],
         "methodologicalLimits": "La fecha y la resolución de Naciones Unidas están documentadas. No se asumen afirmaciones sin corroborar sobre negociaciones privadas entre Juan Carlos I y Kissinger, ni sobre un supuesto plan actual para Ceuta o Gibraltar."
       }
+    },
+    {
+      "id": "study-f23-tratado-paris-ceca-1951",
+      "y": 1951.2931506849316,
+      "t": "Se firma en París el Tratado constitutivo de la Comunidad Europea del Carbón y del Acero",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 23 · Parlamento Europeo",
+      "d": "El 18 de abril de 1951, Bélgica, Francia, Italia, Luxemburgo, Países Bajos y Alemania Occidental firmaron en París el tratado constitutivo de la Comunidad Europea del Carbón y del Acero (CECA). Fue un paso institucional posterior a la Declaración Schuman del 9 de mayo de 1950. La fuente 23 analiza el papel de Schuman y Jean Monnet, pero sus interpretaciones sobre una supuesta dirección oculta de la integración europea se conservan como declaraciones del entrevistado.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1951-04-18",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 23,
+        "sourceTitle": "El poder real que controla la Unión Europea · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=EMZzh2ZpLj8",
+        "confirmedBy": {
+          "label": "Parlamento Europeo · Archivo histórico · Tratado de París",
+          "url": "https://historicalarchives.europarl.europa.eu/home/cultural-heritage-collections/news/treaty-of-paris.html"
+        },
+        "relatedTelarana": [
+          "f23-episodio",
+          "f23-schuman",
+          "f23-ue"
+        ],
+        "methodologicalLimits": "Está documentada la firma del tratado, los seis signatarios y la fecha. Las tesis de que el proceso fue dirigido de forma encubierta por organizaciones privadas o servicios estadounidenses no quedan acreditadas por este acontecimiento."
+      }
     }
   ]
 }
