@@ -766,6 +766,139 @@ def poll():
             break
 
 
+def blocked_jobs(args) -> None:
+    """Summarize unfinished requests without exposing private notebook IDs."""
+    state = load_json(STATE_PATH, {})
+    blocked = [(n, j) for n, j in sorted(state.items(), key=lambda x: int(x[0]))
+               if j.get("phase") in ("uncertain", "deferred")]
+    print("Cuadernos bloqueados (uncertain/deferred):",
+          len({j.get("notebook") for _, j in blocked}))
+    print("Solicitudes sin conciliar:", len(blocked))
+    for number, job in blocked:
+        print("#" + number, job.get("request", {}).get("book", "desconocido"),
+              job.get("phase"),
+              job.get("failure_kind") or job.get("reason") or "sin causa clasificada")
+    print("Estos estados impiden avanzar solo en sus cuadernos.")
+    print("Para consultar candidatos remotos sin reenviar: audit-blocked --issue N")
+
+
+def remote_artifact_delta(job: dict) -> tuple[list[dict], list[dict]]:
+    """Return a verifiable Studio snapshot and its newly observed artifacts.
+
+    If old artifacts have disappeared from the bounded Studio result, a
+    negative result cannot be trusted. Fail closed rather than duplicate.
+    """
+    if "before" not in job or not isinstance(job["before"], list):
+        raise ValueError("No existe una instantánea anterior fiable; revisión manual.")
+    before = set(job["before"])
+    if len(before) != len(job["before"]) or not all(
+            isinstance(x, str) and VALID_ID.fullmatch(x) for x in before):
+        raise ValueError("Instantánea anterior incompleta o inválida.")
+    if not job.get("notebook"):
+        raise ValueError("Cuaderno privado no identificado.")
+    rows = infographic_rows(job["notebook"])
+    current = {artifact_id(x) for x in rows if artifact_id(x)}
+    if not before.issubset(current):
+        raise RuntimeError("Studio no muestra todos los artefactos de la "
+                           "instantánea anterior. No es seguro descartar duplicados.")
+    return rows, [x for x in rows if artifact_id(x) not in before and artifact_id(x)]
+
+
+def audit_blocked(args) -> None:
+    """Read-only remote check; neither launches nor modifies any request."""
+    state = load_json(STATE_PATH, {})
+    number = str(args.issue)
+    job = state.get(number)
+    if not job or job.get("phase") not in ("uncertain", "deferred"):
+        raise ValueError("La solicitud no está en estado uncertain o deferred.")
+    rows, created = remote_artifact_delta(job)
+    print("Solicitud #", number, "Estado:", job["phase"],
+          "Libro:", job.get("request", {}).get("book", "desconocido"))
+    print("Infografías visibles en Studio:", len(rows))
+    print("Artefactos posteriores a la instantánea:", len(created))
+    for row in created:
+        print("Estado del artefacto candidato:", status_text(row))
+    if created:
+        print("NO reenviar. Revisar Studio y utilizar attach si hay un candidato inequívoco.")
+    else:
+        print("Sin candidatos visibles. La ausencia no demuestra que "
+              "NotebookLM no pueda finalizar tarde la solicitud.")
+        print("La recuperación exige confirmación explícita y comprobación de cuota.")
+
+
+def recover_blocked(args) -> None:
+    """Explicit, single-request recovery after a remote-negative check.
+
+    No retries are made automatically. This never treats a missing remote
+    artifact as proof that the original request definitively failed.
+    """
+    if not (args.confirm_no_artifact and args.confirm_quota_restored):
+        raise ValueError("Son obligatorias --confirm-no-artifact "
+                         "y --confirm-quota-restored.")
+    check_identity()
+    if generation_health().get("paused"):
+        raise RuntimeError("La protección está pausada. Revisar health antes de recuperar.")
+    state = load_json(STATE_PATH, {})
+    number = str(args.issue)
+    job = state.get(number)
+    if not job or job.get("phase") not in ("uncertain", "deferred"):
+        raise ValueError("Solo pueden recuperarse solicitudes uncertain/deferred.")
+    if any(other is not job and other.get("phase") in ("submitted", "launching")
+           for other in state.values()):
+        raise RuntimeError("Existe una generación activa. No se inicia otra.")
+    if any(other is not job and other.get("notebook") == job.get("notebook")
+           and other.get("phase") in ("uncertain", "deferred", "submitted", "launching")
+           for other in state.values()):
+        raise RuntimeError("El mismo cuaderno tiene otra solicitud sin conciliar.")
+    config = private_config()
+    mapping = select_mapping(config, job.get("request", {}))
+    if not mapping or mapping != (job.get("notebook"), job.get("source_ids")):
+        raise RuntimeError("La asignación privada de cuaderno/fuentes ha cambiado.")
+    # GitHub's trusted submission comment is independent evidence: never
+    # re-send when the original may already have been launched.
+    if submitted_comment_exists(number):
+        raise RuntimeError("GitHub confirma un envío anterior. Revisión manual "
+                           "del artefacto antes de cualquier reintento.")
+    rows, created = remote_artifact_delta(job)
+    if created:
+        raise RuntimeError("Studio contiene nuevos artefactos; no se reenvía. "
+                           "Utiliza audit-blocked y attach tras identificarlo.")
+    job.setdefault("past_attempts", []).append({
+        "phase": job["phase"],
+        "reason": job.get("failure_kind") or job.get("reason") or "unknown",
+        "recovered_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+    })
+    job["before"] = [artifact_id(x) for x in rows if artifact_id(x)]
+    job.pop("artifact_id", None)
+    job["recovery_count"] = int(job.get("recovery_count", 0)) + 1
+    job["phase"] = "launching"
+    save_json(STATE_PATH, state)
+    notebook, sources = mapping
+    try:
+        command(generation_args(job["request"], notebook, sources), timeout=180)
+    except NotebookLMQuotaError:
+        job["phase"] = "uncertain"
+        job["failure_kind"] = "quota"
+        save_json(STATE_PATH, state)
+        pause_generation("NotebookLM mantiene el límite de uso; "
+                         "recuperación detenida.")
+        print("Recuperación #", number,
+              "incierta por cuota; no se repetirá automáticamente.")
+        return
+    except Exception as exc:
+        job["phase"] = "uncertain"
+        job["failure_kind"] = "unclassified"
+        save_json(STATE_PATH, state)
+        print("Recuperación #", number,
+              "incierta:", type(exc).__name__, "; no se repetirá automáticamente.")
+        return
+    job["phase"] = "submitted"
+    save_json(STATE_PATH, state)
+    comment_or_queue(number, SUBMITTED_COMMENT, job, state)
+    print("Recuperación solicitada a NotebookLM: #", number)
+    print("El agente descargará el resultado cuando Studio confirme el artefacto.")
+
+
 def defer_uncertain(args):
     """Release a blocked queue without retrying or misreporting a job as done.
 
@@ -861,6 +994,15 @@ def main():
     sub.add_parser("poll", help="Procesar una solicitud y comprobar las anteriores")
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
     sub.add_parser("health", help="Consultar la pausa y últimos resultados sin datos privados")
+    sub.add_parser("blocked", help="Listar cuadernos bloqueados, sin datos privados")
+    audit = sub.add_parser("audit-blocked",
+                           help="Comprobar artefactos de una solicitud incierta sin reenviar")
+    audit.add_argument("--issue", type=int, required=True)
+    recovery = sub.add_parser("recover-blocked",
+                              help="Recuperación manual y verificada de una solicitud bloqueada")
+    recovery.add_argument("--issue", type=int, required=True)
+    recovery.add_argument("--confirm-no-artifact", action="store_true")
+    recovery.add_argument("--confirm-quota-restored", action="store_true")
     resume = sub.add_parser("resume-generations",
                             help="Reanudar tras revisar la causa de la pausa de seguridad")
     resume.add_argument("--confirm", action="store_true")
@@ -888,7 +1030,7 @@ def main():
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
     args = parser.parse_args()
-    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations"}
+    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations", "recover-blocked"}
     if args.command in mutating:
         with exclusive_state_lock() as acquired:
             if not acquired:
@@ -918,6 +1060,12 @@ def execute_command(args):
             show_status()
         elif args.command == "health":
             show_generation_health()
+        elif args.command == "blocked":
+            blocked_jobs(args)
+        elif args.command == "audit-blocked":
+            audit_blocked(args)
+        elif args.command == "recover-blocked":
+            recover_blocked(args)
         elif args.command == "resume-generations":
             resume_generations(args)
         elif args.command == "retry-failed":
