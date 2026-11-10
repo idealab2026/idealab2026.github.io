@@ -104,7 +104,16 @@
       },
       "sources": {
         "24": [
-          "El entrevistado comenta su doctrina de áreas de influencia, la política de seguridad de Rusia y el equilibrio internacional de poder."
+          {
+            "topic": "Áreas de influencia y relación con China",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez presenta la noción de áreas de influencia como una idea que atribuye a Putin y que, en su opinión, facilita entender la diplomacia de Xi Jinping. Es una comparación entre estrategias geopolíticas; no acredita una alianza operativa concreta entre ambos dirigentes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "esto en realidad es una idea de Putin"
+          }
         ]
       }
     },
@@ -221,7 +230,16 @@
       },
       "sources": {
         "24": [
-          "Ramírez lo cita al reconstruir el sistema de seguridad de Estados Unidos en el Golfo Pérsico y los orígenes del orden internacional asociado al petróleo y al dólar."
+          {
+            "topic": "Sistema de petrodólares y garantías de seguridad en el Golfo",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita a Kissinger al explicar el orden petrolero de los años setenta y el compromiso estadounidense de protección militar a países aliados del Golfo. Su tesis es que los conflictos recientes han debilitado esa promesa de seguridad; la conferencia no presenta un acuerdo firmado por Kissinger como prueba documental.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "años 70 del pasado siglo con Kissinger"
+          }
         ]
       }
     },
@@ -380,7 +398,16 @@
       },
       "sources": {
         "24": [
-          "Un asistente pregunta por el eventual impacto sobre el euro de gobiernos franceses o alemanes con posiciones euroescépticas y menciona a Le Pen como ejemplo hipotético."
+          {
+            "topic": "Pregunta sobre hipotética salida francesa del euro",
+            "speaker": "Asistente del público",
+            "statement": "Una persona del público menciona a Le Pen al preguntar qué ocurriría con el euro si un futuro Gobierno francés o alemán euroescéptico abandonase la moneda única. La intervención es una hipótesis del asistente y no una intención política demostrada de Le Pen ni una predicción corroborada.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en Francia con Le Pen cuando ya haya nuevas elecciones"
+          }
         ]
       }
     },
@@ -392,7 +419,16 @@
       },
       "sources": {
         "24": [
-          "La fuente menciona sus ideas sobre tecnologías y moneda energética, junto con una referencia anecdótica a antecedentes familiares cuya exactitud debe verificarse independientemente."
+          {
+            "topic": "Comparación con el movimiento tecnocrático familiar",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que un abuelo de Elon Musk estaba asociado a ideas tecnocráticas que proponían medir el dinero mediante unidades energéticas. Lo relaciona con debates actuales sobre un patrón monetario basado en energía y oro; la exactitud de la historia familiar y la supuesta continuidad de esas ideas en Musk no quedan verificadas por la conferencia.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "al abuelo de Elon Musk"
+          }
         ]
       }
     },
@@ -404,7 +440,16 @@
       },
       "sources": {
         "24": [
-          "Un asistente pregunta por acusaciones políticas relativas a Zapatero y por la posible influencia de la Administración Trump; el planteamiento de la pregunta no acredita esas imputaciones."
+          {
+            "topic": "Pregunta y especulación sobre el contexto judicial",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Una persona del público pregunta si una supuesta actuación judicial contra Zapatero podría estar relacionada con la política de Donald Trump. Ramírez responde enumerando hipótesis sobre motivaciones políticas y la atención mediática. Ni la pregunta ni la respuesta prueban la existencia de represalias de Washington ni la motivación de un procedimiento judicial.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con respecto a lo de Zapatero aquí hay aquí hay muchas ideas"
+          }
         ]
       }
     },
@@ -437,7 +482,16 @@
       },
       "sources": {
         "24": [
-          "La conversación evoca la época del «Sha» al comparar las relaciones históricas entre Irán e Israel con los conflictos y acuerdos recientes; su identificación procede del contexto histórico."
+          {
+            "topic": "Referencia a la antigua relación entre Irán e Israel bajo el sah",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "El conferenciante evoca la época del «Sha» para comparar las relaciones económicas entre Irán e Israel anteriores a 1979 con el escenario regional de 2023. La alusión histórica no demuestra que el sah participara en ningún acontecimiento posterior ni implica una relación actual con los protagonistas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "desde los tiempos del Sha"
+          }
         ]
       }
     }
