@@ -104,8 +104,8 @@
     }
   ],
   "nextSource": {
-    "order": 24,
-    "videoId": "o8YeIJyazM8",
+    "order": 25,
+    "videoId": "MTGBx3z8pCI",
     "status": "transcripcion_privada_lista_para_revision_biografica",
     "sourceType": "youtube"
   },
@@ -847,17 +847,42 @@
       "videoId": "o8YeIJyazM8",
       "title": "El nuevo desorden global: El polvorín de Oriente Medio y el Petróleo | Análisis con Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "segunda_revision_biografias_y_dos_hitos_2023_publicados_revision_audio_pendiente",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 10,
       "sourceRelationsDocumented": 9,
-      "verifiedIndependentChecks": 0,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "verifiedIndependentChecks": 2,
+      "qualityNotes": "ASR integral (74.423 caracteres) contrastado con Drive de IDEA LAB. 23 biografías y menciones atribuidas a la conferencia; sin asignar turnos o minutajes no verificados. Los hechos históricos 10-03-2023 (acuerdo saudí-iraní en Pekín) y 07-10-2023 (ataques de Hamás contra Israel) contrastados con gobiernos implicados y Naciones Unidas. No se presume causalidad entre eventos, ni se asumen como hechos planes o conspiraciones descritas. Pendiente cotejo audiovisual y retratos.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 0
+      "timelineVerifiedEventsCommitted": 2,
+      "rawTranscriptAvailable": true,
+      "transcriptStoredInDrive": true,
+      "fullTranscriptVerifiedDriveReadback": true,
+      "transcriptDocUrl": "https://docs.google.com/document/d/1A8fjIy_cn-STavDNmAGKu_qmEHNCprL8DWn489YoUn8/edit?usp=drivesdk",
+      "transcriptCharacters": 74423,
+      "personsProfiled": 23,
+      "impersonalAttributedSummaries": 23,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-24.js",
+      "personBiographiesFirst": true,
+      "timelineEventIds": [
+        "study-f24-iran-arabia-beijing-2023",
+        "study-f24-ataques-hamas-israel-2023"
+      ],
+      "sourceSpeakingTurnsDiarized": false,
+      "imageRuntimeVerified": false,
+      "asrNameVariantsResolved": {
+        "Peter Sil": "Peter Thiel (pendiente audio)",
+        "Alex Carp": "Alex Karp (pendiente audio)",
+        "Sigin Pin": "Xi Jinping (pendiente audio)",
+        "James Bucanan": "James M. Buchanan",
+        "McKinder": "Halford Mackinder",
+        "Brecinski": "Zbigniew Brzezinski",
+        "Cayacalas": "Kaja Kallas"
+      },
+      "lastUpdated": "2026-11-10"
     },
     {
       "order": 25,
@@ -896,9 +921,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 57,
+    "committedVerifiedEvents": 59,
     "fromReviewedSource": 13,
-    "fromSourceInReview": 37,
+    "fromSourceInReview": 39,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -983,6 +1008,10 @@
       ],
       "23": [
         "study-f23-tratado-paris-ceca-1951"
+      ],
+      "24": [
+        "study-f24-iran-arabia-beijing-2023",
+        "study-f24-ataques-hamas-israel-2023"
       ],
       "25": [
         "study-f25-bis-1930"
@@ -1826,19 +1855,19 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 20,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "segunda_revision_biografias_y_dos_hitos_2023_publicados_revision_audio_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1A8fjIy_cn-STavDNmAGKu_qmEHNCprL8DWn489YoUn8/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
-          "imageAtGraphNode": "pendiente_verificacion",
+          "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
-          "transcriptCharactersReadBack": 74415,
+          "transcriptCharactersReadBack": 74423,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
