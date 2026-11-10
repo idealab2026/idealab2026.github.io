@@ -24,7 +24,16 @@
       },
       "sources": {
         "9": [
-          "Roberto Vaquero presenta la entrevista, pregunta por los archivos del excomisario, la financiación política, los servicios de inteligencia y las acusaciones expuestas por el invitado."
+          {
+            "topic": "Presentación y preguntas de la entrevista",
+            "speaker": "Roberto Vaquero (presentador, pendiente de diarización)",
+            "statement": "El presentador de Vaquero Podcast introduce a Villarejo y le pregunta por su encarcelamiento, sus archivos, el caso Dina y asuntos relacionados con Venezuela. Es su función como entrevistador; las declaraciones que realiza Villarejo no deben atribuirse automáticamente a Vaquero.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "bienvenidos a otro episodio de Vaquero Podcast"
+          }
         ]
       }
     },
@@ -36,7 +45,16 @@
       },
       "sources": {
         "9": [
-          "José Manuel Villarejo describe su trayectoria policial, el contenido de sus archivos, distintos procedimientos judiciales y episodios que atribuye a responsables políticos y servicios de inteligencia."
+          {
+            "topic": "Relato de parte sobre sus archivos y procedimientos judiciales",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo afirma que las autoridades conservaron información procedente de sus archivos y que su defensa no habría tenido acceso equivalente a determinados materiales. Critica su tratamiento judicial y presenta explicaciones sobre sus investigaciones anteriores. La fuente recoge su versión personal, no una sentencia o reconstrucción independiente.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "no tengo copia o sea el principio de contradicción"
+          }
         ]
       }
     },
@@ -49,13 +67,13 @@
       "sources": {
         "9": [
           {
-                "topic": "Primarias del PSOE de 2017 y financiación de campaña",
-                "speaker": "José Manuel Villarejo",
-                "statement": "Villarejo sostiene que la campaña de Pedro Sánchez en las primarias socialistas de 2017 habría recibido fondos por medio de una organización que identifica como Bancal de Rosas. Insinúa aportaciones canalizadas a nombre de terceros y vincula esos recursos, sin pruebas suficientes en la entrevista, a negocios del entorno familiar de Sánchez. Estas acusaciones se registran como afirmaciones de Villarejo y no como financiación ilícita demostrada.",
-                "status": "alegacion_no_verificada",
-                "transcriptVerified": true,
-                "audioVerified": false,
-                "minuteVerified": false
+            "topic": "Primarias del PSOE de 2017 y financiación de campaña",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo sostiene que la campaña de Pedro Sánchez en las primarias socialistas de 2017 habría recibido fondos por medio de una organización que identifica como Bancal de Rosas. Insinúa aportaciones canalizadas a nombre de terceros y vincula esos recursos, sin pruebas suficientes en la entrevista, a negocios del entorno familiar de Sánchez. Estas acusaciones se registran como afirmaciones de Villarejo y no como financiación ilícita demostrada.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           }
         ],
         "10": [
@@ -72,13 +90,13 @@
       "sources": {
         "9": [
           {
-                "topic": "El caso Dina y acusaciones cruzadas sobre información de un teléfono",
-                "speaker": "José Manuel Villarejo",
-                "statement": "Villarejo comenta los procedimientos judiciales derivados de la difusión de materiales del teléfono de Dina Bousselham, antigua colaboradora de Pablo Iglesias. Rechaza las imputaciones dirigidas contra él y atribuye motivaciones políticas a las acusaciones de Iglesias. La entrevista ofrece la versión del propio investigado, no una reconstrucción judicial independiente.",
-                "status": "declaracion_de_parte",
-                "transcriptVerified": true,
-                "audioVerified": false,
-                "minuteVerified": false
+            "topic": "El caso Dina y acusaciones cruzadas sobre información de un teléfono",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo comenta los procedimientos judiciales derivados de la difusión de materiales del teléfono de Dina Bousselham, antigua colaboradora de Pablo Iglesias. Rechaza las imputaciones dirigidas contra él y atribuye motivaciones políticas a las acusaciones de Iglesias. La entrevista ofrece la versión del propio investigado, no una reconstrucción judicial independiente.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           }
         ]
       }
@@ -92,66 +110,66 @@
       "sources": {
         "9": [
           {
-                "topic": "Conversaciones en prisión y presunta financiación política",
-                "speaker": "José Manuel Villarejo",
-                "statement": "Villarejo afirma que coincidió durante meses con Hugo Carvajal en la prisión de Estremera, donde este le habría relatado mecanismos de pagos vinculados a PDVSA y contactos con personas relacionadas con Podemos. Asegura haber trasladado anotaciones a un juzgado y sostiene que Carvajal disponía de información sobre empresas españolas en Venezuela. La entrevista no permite acreditar por sí sola esos pagos, las identidades implicadas ni la existencia de las pruebas alegadas.",
-                "status": "alegacion_no_verificada",
-                "transcriptVerified": true,
-                "audioVerified": false,
-                "minuteVerified": false
+            "topic": "Conversaciones en prisión y presunta financiación política",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo afirma que coincidió durante meses con Hugo Carvajal en la prisión de Estremera, donde este le habría relatado mecanismos de pagos vinculados a PDVSA y contactos con personas relacionadas con Podemos. Asegura haber trasladado anotaciones a un juzgado y sostiene que Carvajal disponía de información sobre empresas españolas en Venezuela. La entrevista no permite acreditar por sí sola esos pagos, las identidades implicadas ni la existencia de las pruebas alegadas.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           }
         ]
       }
     },
     "Nicolás Maduro": {
-          "who": "Político venezolano, sucesor de Hugo Chávez en la presidencia de Venezuela (2013–3 de enero de 2026). Fue capturado durante una operación militar estadounidense en Caracas el 3 de enero de 2026 y trasladado a Nueva York. Delcy Rodríguez asumió la presidencia interina. Maduro se declaró no culpable de los cargos presentados ante la justicia estadounidense.",
-          "portrait": {
-                "lang": "es",
-                "title": "Nicolás Maduro"
+      "who": "Político venezolano, sucesor de Hugo Chávez en la presidencia de Venezuela (2013–3 de enero de 2026). Fue capturado durante una operación militar estadounidense en Caracas el 3 de enero de 2026 y trasladado a Nueva York. Delcy Rodríguez asumió la presidencia interina. Maduro se declaró no culpable de los cargos presentados ante la justicia estadounidense.",
+      "portrait": {
+        "lang": "es",
+        "title": "Nicolás Maduro"
+      },
+      "biographySources": [
+        {
+          "title": "Biblioteca de la Cámara de los Comunes (24/09/2026)",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/"
+        },
+        {
+          "title": "Reuters (26/09/2026)",
+          "url": "https://www.investing.com/news/commodities-news/analysisvenezuela-president-returns-from-us-visit-with-no-deals-no-firm-election-date-4918550"
+        }
+      ],
+      "sources": {
+        "9": [
+          {
+            "topic": "Salida de Hugo Carvajal y consecuencias para el Gobierno de Maduro",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo sostiene que Maduro no habría calculado las consecuencias de la salida de Hugo Carvajal, antiguo responsable de inteligencia de Venezuela. Afirma que Carvajal habría abandonado el país con ayuda del CNI y que la información que manejaba acabaría en manos estadounidenses. La entrevista no incorpora documentos que permitan verificar estas afirmaciones sobre la operación y sus responsables.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           },
-          "biographySources": [
-                {
-                      "title": "Biblioteca de la Cámara de los Comunes (24/09/2026)",
-                      "url": "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/"
-                },
-                {
-                      "title": "Reuters (26/09/2026)",
-                      "url": "https://www.investing.com/news/commodities-news/analysisvenezuela-president-returns-from-us-visit-with-no-deals-no-firm-election-date-4918550"
-                }
-          ],
-          "sources": {
-                "9": [
-                      {
-                            "topic": "Salida de Hugo Carvajal y consecuencias para el Gobierno de Maduro",
-                            "speaker": "José Manuel Villarejo",
-                            "statement": "Villarejo sostiene que Maduro no habría calculado las consecuencias de la salida de Hugo Carvajal, antiguo responsable de inteligencia de Venezuela. Afirma que Carvajal habría abandonado el país con ayuda del CNI y que la información que manejaba acabaría en manos estadounidenses. La entrevista no incorpora documentos que permitan verificar estas afirmaciones sobre la operación y sus responsables.",
-                            "status": "alegacion_no_verificada",
-                            "transcriptVerified": true,
-                            "audioVerified": false,
-                            "minuteVerified": false
-                      },
-                      {
-                            "topic": "Predicción de la captura y posibles ofertas de salida",
-                            "speaker": "José Manuel Villarejo",
-                            "statement": "Villarejo asegura haber anticipado la operación estadounidense contra Maduro gracias a informaciones de antiguos contactos de la CIA; añade que, según esas fuentes, a Maduro se le habría ofrecido abandonar Venezuela antes de la captura. Esta versión sobre contactos y ofrecimientos se presenta exclusivamente como su testimonio, no como un hecho comprobado.",
-                            "status": "alegacion_no_verificada",
-                            "transcriptVerified": true,
-                            "audioVerified": false,
-                            "minuteVerified": false
-                      }
-                ],
-                "10": [
-                      {
-                            "topic": "Soberanía venezolana y operación estadounidense de enero de 2026",
-                            "speaker": "Juan Manuel de Prada",
-                            "statement": "De Prada critica la operación de Estados Unidos que culminó con la captura de Maduro, por considerarla contraria a la soberanía de Venezuela. Aclara que no simpatiza con el régimen de Maduro y menciona que Marine Le Pen también cuestionó la operación. Defiende que España mantenga una política exterior propia respecto de Hispanoamérica, sin seguir automáticamente la de Washington.",
-                            "status": "opinion_atribuida",
-                            "transcriptVerified": true,
-                            "audioVerified": false,
-                            "minuteVerified": false
-                      }
-                ]
+          {
+            "topic": "Predicción de la captura y posibles ofertas de salida",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo asegura haber anticipado la operación estadounidense contra Maduro gracias a informaciones de antiguos contactos de la CIA; añade que, según esas fuentes, a Maduro se le habría ofrecido abandonar Venezuela antes de la captura. Esta versión sobre contactos y ofrecimientos se presenta exclusivamente como su testimonio, no como un hecho comprobado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           }
+        ],
+        "10": [
+          {
+            "topic": "Soberanía venezolana y operación estadounidense de enero de 2026",
+            "speaker": "Juan Manuel de Prada",
+            "statement": "De Prada critica la operación de Estados Unidos que culminó con la captura de Maduro, por considerarla contraria a la soberanía de Venezuela. Aclara que no simpatiza con el régimen de Maduro y menciona que Marine Le Pen también cuestionó la operación. Defiende que España mantenga una política exterior propia respecto de Hispanoamérica, sin seguir automáticamente la de Washington.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
+          }
+        ]
+      }
     },
     "José Luis Rodríguez Zapatero": {
       "who": "Político español del PSOE y presidente del Gobierno entre 2004 y 2011.",
@@ -162,13 +180,13 @@
       "sources": {
         "9": [
           {
-                "topic": "Acusaciones sobre vínculos con Venezuela y presunta carta de Carvajal",
-                "speaker": "José Manuel Villarejo",
-                "statement": "Villarejo afirma que sus conversaciones con Hugo Carvajal podrían comprometer a determinadas figuras españolas relacionadas con Venezuela, entre las que cita a José Luis Rodríguez Zapatero. Relata además que un intermediario le transmitió que Zapatero dispondría de una carta de Carvajal exculpándolo. Se trata de la versión ofrecida por Villarejo: no exhibe esa carta ni documentos suficientes para contrastar las acusaciones.",
-                "status": "alegacion_no_verificada",
-                "transcriptVerified": true,
-                "audioVerified": false,
-                "minuteVerified": false
+            "topic": "Acusaciones sobre vínculos con Venezuela y presunta carta de Carvajal",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo afirma que sus conversaciones con Hugo Carvajal podrían comprometer a determinadas figuras españolas relacionadas con Venezuela, entre las que cita a José Luis Rodríguez Zapatero. Relata además que un intermediario le transmitió que Zapatero dispondría de una carta de Carvajal exculpándolo. Se trata de la versión ofrecida por Villarejo: no exhibe esa carta ni documentos suficientes para contrastar las acusaciones.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           }
         ]
       }
@@ -181,7 +199,16 @@
       },
       "sources": {
         "9": [
-          "Corinna Larsen aparece en el relato de Villarejo sobre grabaciones, archivos y contactos con el rey emérito; el entrevistado menciona además un libro de su autoría dedicado a ella."
+          {
+            "topic": "Afirmación sobre supuesta recuperación de archivos de la Corona",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo menciona a Corinna Larsen, transcrita como «Corina», al hablar de un supuesto archivo de la Casa Real que, según él, habría intentado recuperar por encargo en 2015. No exhibe documentación en el episodio que demuestre el contenido o la custodia de dichos materiales.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Corina Larsen la amiga del rey"
+          }
         ]
       }
     },
@@ -193,7 +220,16 @@
       },
       "sources": {
         "9": [
-          "Juan Carlos I es mencionado en pasajes sobre el entorno de la Corona, su abdicación, grabaciones vinculadas a Corinna Larsen y decisiones atribuidas a sus asesores y familiares."
+          {
+            "topic": "Versión sobre la abdicación y supuestos archivos privados",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo sostiene que la abdicación de Juan Carlos I habría sido impulsada políticamente mediante un acuerdo entre Rajoy y Rubalcaba y formula otras afirmaciones sobre presuntos archivos personales. Es la explicación del excomisario; los motivos personales y supuestos documentos no están acreditados por su declaración.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando hay ese acuerdo de Rubalcaba con Rajoy"
+          }
         ]
       }
     },
@@ -205,7 +241,16 @@
       },
       "sources": {
         "9": [
-          "Felipe VI aparece en el relato sobre las relaciones familiares y la posición que, según Villarejo, adoptó ante iniciativas dirigidas a alterar la relación matrimonial de los entonces príncipes."
+          {
+            "topic": "Versión sobre tensiones familiares y presunta operación de presión",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo afirma que el entonces príncipe Felipe se habría resistido a una supuesta maniobra destinada a influir en su matrimonio. La acusación sobre la existencia de esa operación, sus autores y objetivos no viene acompañada de pruebas verificables en la entrevista.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "El rey Felipe pues dice que no"
+          }
         ]
       }
     },
@@ -217,7 +262,16 @@
       },
       "sources": {
         "9": [
-          "Letizia Ortiz es mencionada en afirmaciones del entrevistado sobre el entorno de la familia real y unas supuestas maniobras de presión en su vida privada."
+          {
+            "topic": "Afirmaciones no corroboradas sobre presiones privadas",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo alude a la actual reina Letizia, nombrada en la transcripción como «Leticia», dentro de su relato de una supuesta operación de presión vinculada al entorno de la Corona. No presenta pruebas suficientes de la operación ni corresponde inferir hechos de su vida privada a partir de esa versión.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "esta señora Leticia pues iba"
+          }
         ]
       }
     },
@@ -229,7 +283,16 @@
       },
       "sources": {
         "9": [
-          "Sofía de Grecia aparece en la versión que ofrece Villarejo sobre posiciones familiares y tensiones vinculadas al matrimonio de Felipe VI."
+          {
+            "topic": "Referencia a supuestas tensiones familiares",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo incluye a la reina Sofía en una explicación sobre desavenencias familiares que habrían rodeado el matrimonio de Felipe y Letizia. Es una versión personal no corroborada en la entrevista y no acredita una intervención de Sofía en ninguna operación concreta.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el rey Juan Carlos y la reina Sofía"
+          }
         ]
       }
     },
@@ -241,7 +304,16 @@
       },
       "sources": {
         "9": [
-          "Joaquín Abad es mencionado como colaborador editorial de Villarejo en un libro sobre saunas y actividades que el excomisario atribuye a entornos políticos."
+          {
+            "topic": "Coautoría y presentación de un libro de Villarejo",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo presenta a Joaquín Abad como colaborador en un libro sobre asuntos investigados por el excomisario y comenta el formato editorial de sus publicaciones. La referencia al trabajo conjunto no prueba por sí sola las imputaciones políticas contenidas en el libro.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "mi buen amigo Joaquín Abad"
+          }
         ]
       }
     },
@@ -253,7 +325,16 @@
       },
       "sources": {
         "9": [
-          "Fernando Grande-Marlaska es citado en las afirmaciones de Villarejo sobre el trato que habría recibido durante su encarcelamiento y sobre episodios de información privada."
+          {
+            "topic": "Acusación sobre el trato penitenciario recibido",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo afirma que, durante su encarcelamiento, personal penitenciario habría actuado de manera vejatoria siguiendo supuestas órdenes de Marlaska. La entrevista no documenta esas órdenes ni acredita responsabilidad personal del ministro; se conserva exclusivamente como alegación del entrevistado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el Marlaska le había ordenado"
+          }
         ]
       }
     },
@@ -266,13 +347,13 @@
       "sources": {
         "9": [
           {
-                "topic": "Pegasus y supuesta información privada de altos cargos",
-                "speaker": "José Manuel Villarejo",
-                "statement": "Villarejo especula sobre el material que los servicios de inteligencia marroquíes habrían obtenido mediante espionaje a responsables españoles. Incluye a Margarita Robles entre las personas sobre cuyas vidas privadas sugiere la existencia de información comprometida. No presenta en la entrevista pruebas verificables sobre ese supuesto material ni sobre su autenticidad.",
-                "status": "alegacion_no_verificada",
-                "transcriptVerified": true,
-                "audioVerified": false,
-                "minuteVerified": false
+            "topic": "Pegasus y supuesta información privada de altos cargos",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo especula sobre el material que los servicios de inteligencia marroquíes habrían obtenido mediante espionaje a responsables españoles. Incluye a Margarita Robles entre las personas sobre cuyas vidas privadas sugiere la existencia de información comprometida. No presenta en la entrevista pruebas verificables sobre ese supuesto material ni sobre su autenticidad.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           }
         ]
       }
@@ -285,7 +366,16 @@
       },
       "sources": {
         "9": [
-          "Manuel García Castellón es mencionado por Villarejo al comentar declaraciones sobre el contenido de sus archivos y procedimientos judiciales en los que intervino."
+          {
+            "topic": "Críticas a la instrucción judicial de la causa Villarejo",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo critica al juez Manuel García Castellón por la duración de las diligencias y comenta declaraciones públicas que le atribuye sobre la relevancia de sus archivos. La valoración sobre la diligencia y motivaciones del magistrado es una opinión de quien fue investigado.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "señor García Castellón"
+          }
         ]
       }
     },
@@ -297,7 +387,16 @@
       },
       "sources": {
         "9": [
-          "María Dolores de Cospedal es citada al comentar solicitudes de reapertura o ampliación de diligencias relacionadas con grabaciones y declaraciones judiciales."
+          {
+            "topic": "Referencias a petición de nuevas diligencias",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo menciona solicitudes relacionadas con la posible nueva citación de Cospedal a partir de grabaciones e informes. No se deduce de esa referencia la culpabilidad de Cospedal ni se detalla un fallo judicial firme sobre las actuaciones discutidas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "que a la Cospedal con los audios"
+          }
         ]
       }
     },
@@ -309,7 +408,16 @@
       },
       "sources": {
         "9": [
-          "Alberto Núñez Feijóo es mencionado en episodios sobre comisiones parlamentarias, documentos de inteligencia y las posiciones de los partidos ante el caso Villarejo."
+          {
+            "topic": "Comentarios sobre la reacción parlamentaria a documentos de Villarejo",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo describe el uso político y mediático de informes atribuidos a sus archivos y se refiere a Feijóo, cuyo apellido aparece fonéticamente deformado en la transcripción. También emite opiniones personales sobre su carácter; estas no prueban ninguna conducta del dirigente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Feijón eh tiene peor"
+          }
         ]
       }
     },
@@ -321,7 +429,16 @@
       },
       "sources": {
         "9": [
-          "Carmen Calvo es citada por Villarejo en una crítica a la cultura política española y a la utilización de recursos públicos."
+          {
+            "topic": "Referencia a una conocida frase sobre dinero público",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo atribuye a Carmen Calvo una frase sobre la propiedad del dinero público y la utiliza para criticar el uso de recursos estatales por responsables políticos. El contexto y la literalidad de esa frase no se contrastan con su fuente original en la entrevista.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "mi paisana Carmen Calvo"
+          }
         ]
       }
     },
@@ -333,7 +450,16 @@
       },
       "sources": {
         "9": [
-          "Risto Mejide es mencionado al recordar intervenciones televisivas sobre los archivos de Villarejo y la cobertura mediática de sus procesos judiciales."
+          {
+            "topic": "Recuerdo de una intervención televisiva sobre los archivos",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo se refiere a Risto Mejide al mencionar una aparición televisiva de un tercero que afirmó haber pagado una cantidad elevada por documentos de sus archivos. No muestra comprobantes que acrediten ese pago; la referencia a Mejide es la del programa donde, según el entrevistado, se produjo la declaración.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Evaristo ¿no o Risto"
+          }
         ]
       }
     },
@@ -345,7 +471,16 @@
       },
       "sources": {
         "9": [
-          "Javier Ruiz es mencionado por Villarejo al describir el tratamiento televisivo dado a unos informes relacionados con el Partido Popular."
+          {
+            "topic": "Crítica a la cobertura televisiva de sus informes",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo critica la presentación televisiva de una portada de informe atribuida a sus archivos y menciona al periodista Javier Ruiz mediante el apodo «Javierito». La afirmación sobre el uso o acceso al documento es la interpretación del entrevistado, no una evaluación independiente del trabajo periodístico.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Javierito Ruiz ¿no al ataque"
+          }
         ]
       }
     },
@@ -357,7 +492,16 @@
       },
       "sources": {
         "9": [
-          "Alberto Pozas es citado en el relato de Villarejo sobre la circulación de información extraída de un teléfono y su papel profesional en comunicación política durante el caso Dina."
+          {
+            "topic": "Versión de Villarejo sobre el circuito del material del caso Dina",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo menciona a Alberto Pozas, transcrito «Alberto Poza», al sostener que habría participado en circuitos de información y comunicación política relacionados con el teléfono de Dina Bousselham. La entrevista recoge el relato del excomisario y no demuestra por sí misma responsabilidades penales.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Alberto Poza o sea él era"
+          }
         ]
       }
     },
@@ -369,7 +513,16 @@
       },
       "sources": {
         "9": [
-          "Dina Bousselham aparece en el relato sobre el tratamiento de datos de su teléfono, los periodistas que habrían tenido acceso a ellos y las actuaciones vinculadas al caso."
+          {
+            "topic": "Procedencia y difusión de materiales de su teléfono",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo cuestiona cómo circularon archivos de un teléfono atribuido a Dina Bousselham y pregunta por el papel de medios y representantes políticos en ese proceso. La entrevista recoge acusaciones cruzadas y la defensa de Villarejo, no una reconstrucción judicial definitiva.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el asunto de iglesias y el móvil de Dina"
+          }
         ]
       }
     },
@@ -381,7 +534,16 @@
       },
       "sources": {
         "9": [
-          "Alfredo Pérez Rubalcaba es citado en comentarios sobre la política española, las negociaciones de la etapa de la abdicación y declaraciones públicas sobre el 11-M."
+          {
+            "topic": "Acusación sobre un pacto para promover la abdicación",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo sostiene que Rubalcaba y Rajoy acordaron impulsar la abdicación de Juan Carlos I antes del ascenso de Pedro Sánchez en el PSOE. La explicación de motivos y negociaciones privadas es una afirmación no corroborada mediante documentos en esta entrevista.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "acuerdo de Rubalcaba con Rajoy"
+          }
         ]
       }
     },
@@ -393,7 +555,16 @@
       },
       "sources": {
         "9": [
-          "Mariano Rajoy aparece en el relato de Villarejo sobre la abdicación de Juan Carlos I y en comparaciones con la actuación de otros dirigentes del Partido Popular."
+          {
+            "topic": "Versión sobre negociaciones que precedieron a la abdicación",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo atribuye a Rajoy un acuerdo con Rubalcaba sobre la salida de Juan Carlos I y sostiene que el monarca le habría guardado resentimiento. No acredita conversaciones privadas ni las motivaciones personales que atribuye a los protagonistas.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "por eso nunca perdonó a Rajoy"
+          }
         ]
       }
     },
@@ -405,7 +576,16 @@
       },
       "sources": {
         "9": [
-          "Felipe González es citado en la versión que ofrece Villarejo sobre relaciones entre el Gobierno español, dirigentes cubanos y antiguas redes políticas."
+          {
+            "topic": "Relato sobre cooperación de seguridad entre España y Cuba",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo afirma que durante la etapa de Felipe González se habrían realizado pagos a autoridades cubanas para supervisar la actividad de personas vinculadas a ETA en la isla. La entrevista no aporta convenios ni documentos de pago que permitan confirmar importes o acuerdos concretos.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "le daban dinero Felipe González a a Fidel"
+          }
         ]
       }
     },
@@ -417,7 +597,16 @@
       },
       "sources": {
         "9": [
-          "Fidel Castro es mencionado en la narración sobre contactos políticos y operaciones de inteligencia entre España y Cuba durante décadas anteriores."
+          {
+            "topic": "Alegación sobre información de españoles residentes en Cuba",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo sostiene que las autoridades de Fidel Castro recibían pagos o recursos a cambio de controlar y compartir información de militantes de ETA en Cuba, y que España habría considerado insuficiente la información obtenida. Es su versión operativa, no un acuerdo verificado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Los engañó Fidel Castro"
+          }
         ]
       }
     },
@@ -429,7 +618,16 @@
       },
       "sources": {
         "9": [
-          "Carrero Blanco es mencionado al hablar de la Transición, el tratamiento de determinados delitos y las políticas posteriores de amnistía y exilio."
+          {
+            "topic": "Contexto de las amnistías y medidas posteriores a la Transición",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo menciona a personas condenadas por el atentado contra Carrero Blanco al describir el uso de figuras jurídicas de salida del territorio español después de la Transición. La referencia es histórica y no atribuye a Carrero Blanco decisiones tomadas después de su muerte.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "habían matado a Carrero Blanco"
+          }
         ],
         "10": [
           "Carrero Blanco habría advertido a Franco de que Alemania podía perder la guerra y habría influido en su cálculo político, según el relato del entrevistado."
@@ -444,7 +642,16 @@
       },
       "sources": {
         "9": [
-          "Francisco Franco es citado en una explicación del entrevistado sobre los cambios legales y sociales tras la dictadura."
+          {
+            "topic": "Referencia al cambio legal tras el final de la dictadura",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo evoca el final del régimen de Franco al comentar cómo cambiaron las normas y prácticas sociales respecto a las saunas y la persecución de conductas sexuales. Es una comparación de épocas, no una relación personal de Franco con los hechos contemporáneos del podcast.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando se muere Franco automáticamente"
+          }
         ],
         "10": [
           "Francisco Franco habría modificado, según la interpretación que expone Juan Manuel de Prada, su política de neutralidad y de relaciones internacionales cuando cambió el equilibrio militar de la Segunda Guerra Mundial."
@@ -460,13 +667,13 @@
       "sources": {
         "9": [
           {
-                "topic": "Valoraciones sobre patrimonio y caballos de José Bono",
-                "speaker": "José Manuel Villarejo",
-                "statement": "Villarejo cuestiona la evolución patrimonial de José Bono y menciona como ejemplo la adquisición de caballos costosos. Asegura conocer a algunas personas relacionadas con esas ventas, pero no aporta documentación patrimonial ni acredita irregularidad alguna. Es una insinuación atribuida al entrevistado, no una conclusión de la investigación.",
-                "status": "alegacion_no_verificada",
-                "transcriptVerified": true,
-                "audioVerified": false,
-                "minuteVerified": false
+            "topic": "Valoraciones sobre patrimonio y caballos de José Bono",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo cuestiona la evolución patrimonial de José Bono y menciona como ejemplo la adquisición de caballos costosos. Asegura conocer a algunas personas relacionadas con esas ventas, pero no aporta documentación patrimonial ni acredita irregularidad alguna. Es una insinuación atribuida al entrevistado, no una conclusión de la investigación.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
           }
         ]
       }
@@ -479,7 +686,16 @@
       },
       "sources": {
         "9": [
-          "Javier López Madrid aparece en un relato del entrevistado sobre tensiones personales y conversaciones atribuidas al entorno de la Corona."
+          {
+            "topic": "Alusión en relato de presuntas presiones alrededor de la Corona",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo sitúa a López Madrid en su explicación de una supuesta maniobra de presión sobre el entorno del entonces príncipe Felipe. No aporta pruebas independientes que permitan tener por demostrada la operación ni las atribuciones personales mencionadas.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "referéndose a López Madrid"
+          }
         ]
       }
     },
@@ -491,7 +707,16 @@
       },
       "sources": {
         "9": [
-          "Pedro Baños es mencionado por Villarejo como otro entrevistador con el que ha conversado sobre casos de seguridad, inteligencia y política."
+          {
+            "topic": "Mención a una solicitud de entrevista de otro canal",
+            "speaker": "José Manuel Villarejo",
+            "statement": "Villarejo menciona a «un señor Baño», al que identifica como coronel con canal propio, al hablar de invitaciones para intervenir en espacios dedicados a inteligencia. El contexto apunta a Pedro Baños, pero el nombre aparece incompleto y la identificación requiere cotejo audiovisual.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "un señor Baño que también coincide el coronel"
+          }
         ],
         "10": [
           "Pedro Baños conduce la entrevista y pregunta a Juan Manuel de Prada por la División Azul, la actuación de Franco durante la Segunda Guerra Mundial y las transformaciones políticas recientes."
