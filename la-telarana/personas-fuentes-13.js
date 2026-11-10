@@ -21,7 +21,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La entrevista presenta una reconstrucción de las decisiones de Hitler, la guerra europea, las operaciones militares, las figuras del mando nazi y diversas anécdotas biográficas."
+          {
+            "topic": "Método histórico y anécdotas sobre la Segunda Guerra Mundial",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "El historiador Jesús Hernández Martínez comenta las decisiones de Hitler y otros dirigentes, la guerra europea y diversas anécdotas sobre mandos y conferencias aliadas. Las anécdotas no equivalen a pruebas independientes: deben contrastarse con documentación de época antes de presentarlas como hechos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Jesús Hernández Martínez que te contacté"
+          }
         ]
       }
     },
@@ -33,7 +42,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La conversación interpreta su estrategia anterior a 1939 como una sucesión de apuestas políticas y examina sus decisiones militares, su salud y las versiones biográficas que circulan sobre él."
+          {
+            "topic": "Decisiones políticas y carácter especulativo de su estrategia",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández interpreta las decisiones de Hitler en los años treinta como una secuencia de apuestas ante la debilidad percibida en sus adversarios. La caracterización de «jugador» es un juicio explicativo del historiador y debe distinguirse de los hechos militares y diplomáticos documentados.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Hitler era un jugador era un jugador"
+          }
         ]
       }
     },
@@ -45,7 +63,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente comenta el pacto de no agresión germano-soviético previo a la invasión de Polonia y la posterior ruptura con el ataque alemán de 1941."
+          {
+            "topic": "Pacto de no agresión y ataque alemán de 1941",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Los participantes recuerdan el pacto de no agresión entre Alemania y la Unión Soviética anterior a la invasión de Polonia, y su ruptura cuando Alemania lanzó la invasión de la URSS en 1941. La conversación enlaza estos hechos con la estrategia de Hitler; las motivaciones específicas que le atribuye el historiador siguen siendo interpretativas.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Hitler y stalin habían pactado no agredirse mutuamente"
+          }
         ]
       }
     },
@@ -69,7 +96,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente destaca su capacidad oratoria y su papel en la resistencia británica; también incorpora anécdotas sobre conferencias aliadas que no se tratan como datos documentales por sí solas."
+          {
+            "topic": "Liderazgo británico y oratoria de guerra",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández y el entrevistador comentan la influencia de la oratoria de Churchill en la resistencia británica y relatan anécdotas sobre el consumo de alcohol en conferencias aliadas. Los datos anecdóticos sobre cantidades consumidas deben comprobarse en fuentes primarias; no deben incorporarse como hechos solo por aparecer en el podcast.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Winston Churchill sí un tío que casi llega"
+          }
         ]
       }
     },
@@ -153,7 +189,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente compara su logística y medios con los de los Aliados; también comenta su reputación militar y las circunstancias de su caída en desgracia."
+          {
+            "topic": "Reputación militar y límites logísticos en el norte de África",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández explica que la reputación de Rommel se debió en parte a su capacidad táctica, pero subraya la dependencia del abastecimiento, la escasez de combustible y la dificultad de obtener repuestos en el norte de África. Lo compara con Montgomery, que disponía de mayores recursos materiales. Esa comparación no equivale a un juicio favorable del régimen nazi.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en cambio Montgomery que es digamos"
+          }
         ]
       }
     },
@@ -177,7 +222,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente relata una presunta conversación con Hitler sobre asesinatos de judíos comunicados a Canaris; el detalle concreto de esa conversación no queda verificado por el texto automático."
+          {
+            "topic": "Relato de una conversación sobre asesinatos de judíos",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández refiere una anécdota según la cual Canaris habría comunicado a Hitler informaciones sobre asesinatos masivos de judíos y este habría reaccionado con indiferencia. La entrevista no ofrece transcripción coetánea de tal conversación; los detalles del diálogo requieren verificación documental y no deben presentarse como una cita literal de Hitler.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se lo dice a canaris y canaris se lo dice a Hitler"
+          }
         ]
       }
     },
@@ -201,7 +255,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente compara su apoyo logístico con las carencias del Eje y también atribuye rivalidades de abastecimiento entre mandos aliados."
+          {
+            "topic": "Logística aliada frente al Afrika Korps",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández destaca que Montgomery contaba con abastecimiento y medios militares superiores a los de Rommel, y utiliza esa comparación para explicar la importancia de la logística frente al prestigio de un comandante. Se trata de su explicación de los factores operacionales de la campaña africana.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en cambio Montgomery que es digamos"
+          }
         ]
       }
     },
@@ -213,7 +276,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La entrevista menciona el encuentro con Hitler en Finlandia en 1942 y la existencia de una grabación de su voz en una conversación no destinada a un discurso."
+          {
+            "topic": "Conversación de 1942 y registro de la voz de Hitler",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández menciona el encuentro de Hitler con Mannerheim en Finlandia en 1942 y relata que un técnico de radio mantuvo la grabadora encendida durante parte de una conversación informal. Distingue ese tono hablado de la voz de Hitler en los discursos. Los pormenores exactos de la grabación deben contrastarse con el registro conservado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Hitler se entrevista en Finlandia con mannerheim"
+          }
         ]
       }
     },
@@ -249,7 +321,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La entrevista compara su avance y sus problemas de abastecimiento con los de otros mandos aliados y recuerda una película biográfica filmada en España."
+          {
+            "topic": "Rodaje en España de una película biográfica",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Los participantes mencionan la película biográfica sobre Patton y señalan que parte del rodaje se realizó en España con material y personal del Ejército español. Se trata de una referencia cultural sobre la representación cinematográfica del general, no una afirmación sobre una relación personal entre Patton y Franco.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "es sobre la vida de patton"
+          }
         ]
       }
     }
