@@ -67,7 +67,8 @@ assert.equal(progress.inReview.find(x=>x.order===6)?.firstPassTopicIndexCount,13
 assert.equal(row.reviewComplete,false);
 assert(progress.counts.inReview>=6,"Other sources may start later; source06 must remain in review");
 assert(html.includes("podcast-wild-253-villarejo.js?v="));
-assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_SOURCE06_PODCAST)"));
+const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(html)||[])[1]||"[]");
+assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE06_PODCAST"&&m.kind==="mergeNewEpisode")&&html.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE06_PODCAST");
 assert(html.includes("podcasts.happyscribe.com"),"Evidence link must be visible");
 assert(!html.includes("source-review-rows"),"Internal tracker must never be public");
 console.log("OK: source06 transcripción nativa íntegra SHA-256 verificado, 13 temas indexados, 8 entidades y 8 vínculos cualificados; revisión pendiente");
