@@ -84,7 +84,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "En la entrevista se le menciona al explicar las negociaciones diplomáticas de los años treinta y la alineación de la Italia fascista con la Alemania nazi."
+          {
+            "topic": "Participación italiana en la política de apaciguamiento previa a la guerra",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández menciona a Mussolini y a representantes italianos al explicar negociaciones de 1938 relacionadas con Checoslovaquia y la política de concesiones a Hitler. El pasaje no permite atribuir a Mussolini en solitario las decisiones finales ni demuestra motivaciones secretas de las demás potencias.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "también estaba Mussolini un representante de Mussolini"
+          }
         ]
       }
     },
@@ -117,7 +126,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "En la conversación se comenta su participación en conferencias aliadas y se relatan aspectos de su vida personal que requieren consulta de documentación independiente."
+          {
+            "topic": "Conferencias aliadas y anécdotas sobre su vida privada",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández habla de Roosevelt al describir las conferencias entre dirigentes aliados, incluida Casablanca, y relata una relación extramatrimonial atribuida al presidente. Esta última anécdota requiere contraste biográfico; el podcast no es una fuente primaria sobre conversaciones o relaciones privadas de Roosevelt.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Roosevelt lo que es curioso es"
+          }
         ]
       }
     },
@@ -129,7 +147,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente comenta su papel al frente de las SS, sus concepciones ideológicas y el interés atribuido al entorno de la organización por símbolos y reliquias religiosas."
+          {
+            "topic": "Cúpula nazi y descripción ideológica de sus miembros",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "La conversación menciona a Himmler, reconocido en la transcripción automática como «himler», al repasar a los altos mandos nazis y las contradicciones entre sus teorías raciales y su imagen personal. El comentario sirve para caracterizar a dirigentes del régimen, sin documentar en este fragmento una actuación específica de Himmler.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "otro personaje importante de la cúpula himler"
+          }
         ]
       }
     },
@@ -141,7 +168,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La conversación lo presenta como responsable de propaganda y atribuye a su entorno campañas contra comercios judíos, dentro del relato sobre la consolidación del régimen."
+          {
+            "topic": "Propaganda y campañas contra comercios judíos",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández atribuye a Goebbels, transcrito fonéticamente como «gevels» o «gbel», actuaciones de propaganda y campañas contra establecimientos judíos durante la consolidación del régimen. Relata que esas campañas generaron rechazo y que los dirigentes modificaron su táctica. La secuencia concreta necesita comprobación en archivos históricos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "gevels era el ministro de propaganda"
+          }
         ]
       }
     },
@@ -153,7 +189,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La entrevista alude a su control de la policía prusiana durante el ascenso nazi y a la represión de adversarios políticos."
+          {
+            "topic": "Figura de la dirección nazi y control de cuerpos policiales",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández enumera a Göring en la cúpula nazi, transcrito como «gering», dentro de una explicación sobre el ascenso de Hitler y la persecución de opositores. La identificación fonética es plausible, pero el fragmento localizado no demuestra por sí solo decisiones policiales específicas atribuidas personalmente a Göring.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "himler gevels el gering"
+          }
         ]
       }
     },
@@ -165,7 +210,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente lo menciona al relatar el dictado y la redacción de Mi lucha durante el encarcelamiento de Hitler."
+          {
+            "topic": "Participación en la redacción de Mi lucha",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández señala que Hitler dictó a Rudolf Hess parte del texto que acabaría publicándose como Mi lucha durante su encarcelamiento. Describe a Hess como colaborador que disponía de formación y podía preparar el manuscrito mecanografiado; el detalle debe contrastarse con fuentes biográficas.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el libro se lo dictó a rudolf hes"
+          }
         ]
       }
     },
@@ -177,7 +231,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "En la entrevista se reproduce una anécdota atribuida a Speer sobre su reacción ante el inicio de la guerra europea en septiembre de 1939."
+          {
+            "topic": "Anécdota simbólica sobre el inicio de la guerra",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández atribuye a Albert Speer una anécdota en la que, al contemplar un atardecer rojizo al comienzo de la Segunda Guerra Mundial, lo interpretó como presagio de sufrimiento. Es un relato anecdótico del entrevistado, no una declaración literal confirmada mediante un diario o memorias consultadas.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Y entonces Albert Spear"
+          }
         ]
       }
     },
@@ -210,7 +273,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La entrevista explica que llevó un explosivo en un maletín a una reunión con Hitler y describe el fracaso de la conspiración asociada a Valquiria."
+          {
+            "topic": "Atentado de julio de 1944 y operación Valquiria",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Hernández describe a Stauffenberg como uno de los conspiradores que llevó explosivos en un maletín a una reunión militar con Hitler. Explica la explosión y las circunstancias que impidieron el éxito del atentado. La secuencia se refiere a la conspiración de julio de 1944; los detalles del relato se distinguen de la documentación histórica independiente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "esto fue el F staufenberg"
+          }
         ]
       }
     },
@@ -243,7 +315,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "En la entrevista se vincula su muerte a la consolidación de Hitler como jefe del Estado alemán."
+          {
+            "topic": "Muerte del presidente alemán y concentración de poder en Hitler",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Los participantes recuerdan que, tras la muerte de Hindenburg, Hitler concentró la jefatura del Estado alemán, que antes correspondía al presidente. El episodio utiliza esa sucesión para explicar la consolidación de la dictadura; el diálogo no aporta documentos legales originales sobre la modificación institucional.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando muere hindenburg"
+          }
         ]
       }
     },
@@ -297,7 +378,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "Se le menciona al hablar de las conferencias diplomáticas y de los dirigentes aliados durante la guerra."
+          {
+            "topic": "Mención en el relato de las conferencias aliadas",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "De Gaulle aparece transcrito como «de Gol» cuando los participantes recuerdan la conferencia de Casablanca y otros encuentros aliados en 1943. La enumeración de asistentes y las cifras de bebidas consumidas contienen imprecisiones que deben cotejarse; no se atribuye al dirigente francés una actuación concreta demostrada en ese pasaje.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Churchill el de gol"
+          }
         ]
       }
     },
@@ -309,7 +399,16 @@ const extra={
       },
       "sources": {
         "13": [
-          "La fuente lo menciona al hablar del comercio de armamento durante la Guerra Civil, del rodaje de películas bélicas en España y de algunas anécdotas de gestión política."
+          {
+            "topic": "Material militar y rodaje cinematográfico de Patton en España",
+            "speaker": "Jesús Hernández Martínez y presentador (atribución exacta pendiente de diarización)",
+            "statement": "Los participantes recuerdan que algunas películas sobre la Segunda Guerra Mundial se rodaron en España con vehículos y extras militares españoles. Hernández atribuye a Franco facilidades para esas producciones. La referencia cinematográfica no implica relación personal de Franco con los comandantes históricos representados en las películas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Franco pues le cedió el la gente del ejército español"
+          }
         ]
       }
     },
