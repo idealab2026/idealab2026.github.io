@@ -377,7 +377,11 @@ function mergeSourceProfiles(orderFilter){
  var pairs=new Set(data.edges.map(function(e){return [e.a,e.b].sort().join("::")}));
  var added=0;
  for(var name of Object.keys(lib.profiles)){
-  var p=lib.profiles[name],key=normalizeEntityName(name);
+  var p=lib.profiles[name];
+  // Atribuir el alta de una persona a la fuente que efectivamente la menciona;
+  // no crear personas de otras fuentes durante una etapa de auditoría.
+  if(orderFilter&&!Object.prototype.hasOwnProperty.call(p.sources,orderFilter))continue;
+  var key=normalizeEntityName(name);
   var equivalent=key==="j d vance"?"jd vance":key==="muamar el gadafi"?"muammar gaddafi":key;
   var node=names.get(key)||names.get(equivalent);
   if(!node){
