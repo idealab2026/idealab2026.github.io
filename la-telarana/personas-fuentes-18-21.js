@@ -687,6 +687,33 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Daniel Baeza es mencionado por Lorenzo Ramírez al agradecer conversaciones sobre Bitcoin y formación financiera en el entorno de Inversión Racional."
         ]
       }
+    },
+    "José María de Pablo": {
+      "who": "Abogado penalista español, ejerció la acusación particular por una asociación de víctimas en el juicio del 11-M y escribió La cuarta trama.",
+      "portrait": null,
+      "sources": {
+        "18": [
+          "José María de Pablo es citado al presentar bibliografía y autores que han estudiado judicialmente los atentados del 11 de marzo de 2004."
+        ]
+      }
+    },
+    "Ignacio López Brú": {
+      "who": "Autor español de Las mentiras del 11-M, obra citada en bibliografías sobre los atentados de Madrid de 2004.",
+      "portrait": null,
+      "sources": {
+        "18": [
+          "López Brú es mencionado junto con otros autores que han investigado o escrito sobre los atentados del 11-M, al presentar el libro de Lorenzo Ramírez."
+        ]
+      }
+    },
+    "Lunaticoin": {
+      "who": "Divulgador de Bitcoin conocido públicamente por el seudónimo Lunaticoin.",
+      "portrait": null,
+      "sources": {
+        "21": [
+          "Lunaticoin recibe un agradecimiento de Lorenzo Ramírez por conversaciones y explicaciones sobre Bitcoin vinculadas al entorno de Inversión Racional."
+        ]
+      }
     }
   }
 };
