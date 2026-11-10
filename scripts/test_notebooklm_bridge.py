@@ -30,6 +30,15 @@ def request(book=BOOK, vid=None, vol=None):
 
 
 class BridgeTests(unittest.TestCase):
+    def setUp(self):
+        # Tests must never change a real Mac's quota/circuit-breaker state.
+        health_tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(health_tmp.cleanup)
+        health_patch = patch.object(bridge, "HEALTH_PATH",
+                                   Path(health_tmp.name) / "health.json")
+        health_patch.start()
+        self.addCleanup(health_patch.stop)
+
     def test_valid_book_request(self):
         self.assertEqual(bridge.parse_request(issue(request())), request())
 
@@ -430,6 +439,15 @@ class BridgeTests(unittest.TestCase):
         self.assertIn("Cuadernos bloqueados (uncertain/deferred): 1", out.getvalue())
         self.assertIn("#160 utopia uncertain quota", out.getvalue())
         self.assertNotIn("PRIVATE_NOTEBOOK", out.getvalue())
+
+    def test_repeated_uncertain_launches_pause_automatic_generation(self):
+        for n, outcome in [("160", "uncertain"), ("161", "downloaded"),
+                           ("163", "uncertain"), ("178", "uncertain")]:
+            bridge.record_generation_outcome(n, outcome)
+        health = bridge.generation_health()
+        self.assertTrue(health["paused"])
+        self.assertEqual(len(health["recent"]), 4)
+        self.assertIn("3 envíos inciertos", health["pause_reason"])
 
     def test_remote_delta_rejects_incomplete_snapshot(self):
         job = {"notebook": "private-notebook", "before": ["oldartifact001"]}
