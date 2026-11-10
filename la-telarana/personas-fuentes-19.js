@@ -21,7 +21,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Participa en la mesa de debate. En el episodio se contrapone la evolución de las democracias liberales con los regímenes autoritarios y se discuten las relaciones entre Estados Unidos y China."
+          {
+            "topic": "Presentación y tesis generales sobre sistemas políticos",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "La presentación identifica a Fernando Díaz Villanueva entre los participantes. En la mesa se confrontan la fragilidad de las democracias, la prosperidad económica y el atractivo que algunos atribuyen al modelo chino. La transcripción no permite identificar con seguridad qué intervenciones concretas le corresponden.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "hoy tenemos episodio especial con Fernando Díaz Villanueva"
+          }
         ]
       }
     },
@@ -33,7 +42,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Participa en la conversación sobre política monetaria, industria, distribución de poder económico y competencia estratégica entre Estados Unidos y China."
+          {
+            "topic": "Participación en mesa sobre tecnología y geopolítica",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "El episodio presenta a Lorenzo Ramírez entre los cuatro invitados. La conversación aborda política monetaria, relaciones entre China y Estados Unidos, industria y poder tecnológico, pero no contiene turnos identificados con fiabilidad para atribuirle todas las opiniones expuestas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Fernando Díaz Villanueva Lorenzo Ramírez jf calero"
+          }
         ]
       }
     },
@@ -45,7 +63,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Participa en el debate con comentarios sobre tecnología, industria automovilística, decisiones energéticas y la comparación de sistemas económicos."
+          {
+            "topic": "Participación en la conversación sobre industria y tecnología",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "El presentador anuncia a J. F. Calero como participante junto a Díaz Villanueva, Ramírez y Borja Fernández. Se tratan la industria automovilística y los cambios tecnológicos, sin diarización suficiente para asignarle afirmaciones específicas solo por el contexto.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Lorenzo Ramírez jf calero y Borja Fernández"
+          }
         ]
       }
     },
@@ -57,7 +84,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Es anunciado como uno de los cuatro invitados. El episodio presenta sus intervenciones dentro de una conversación multivocal sin diarización fiable en la transcripción automática."
+          {
+            "topic": "Identificación como participante y límite de atribución",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Borja Fernández figura en la presentación de los cuatro invitados. El registro automático no separa de manera fiable sus intervenciones de las de los demás participantes; por ello no se le atribuyen tesis personales concretas sin cotejo audiovisual.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "jf calero y Borja Fernández"
+          }
         ]
       }
     },
@@ -69,7 +105,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Los participantes contrastan sus posiciones proteccionistas, decisiones comerciales y estilo político con la evolución de las relaciones entre Washington y Pekín."
+          {
+            "topic": "Ruido político y estrategia comercial con China",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Los participantes comentan que la presidencia de Trump genera tensión informativa constante y discuten su política proteccionista y su entorno de empresarios tecnológicos. La caracterización de sus objetivos y de los efectos sobre China procede de opiniones de la mesa; no prueba coordinación encubierta.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el problema que me da Trump es que no me va a dejar dormir"
+          }
         ]
       }
     },
@@ -81,7 +126,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La mesa critica su candidatura de 2024 y comenta sus decisiones energéticas y la orientación de la política exterior anterior al retorno de Donald Trump."
+          {
+            "topic": "Crítica a su candidatura presidencial de 2024",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Una intervención de la mesa cuestiona la continuidad de Biden como candidato demócrata en 2024, aludiendo a su edad y a dificultades de movilidad, y comenta su sustitución por Kamala Harris. Son valoraciones políticas del participante no identificado, no un diagnóstico clínico.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "tenían a Joe biden un tipo desprestigiado"
+          }
         ]
       }
     },
@@ -93,7 +147,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La conversación la menciona al comentar su sustitución de Biden como candidata demócrata; la valoración de su perfil político es opinión de los participantes."
+          {
+            "topic": "Sustitución de Biden y evaluación de la candidatura",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Los interlocutores describen la llegada de Harris a la candidatura demócrata después de la retirada de Biden y critican su visibilidad durante la vicepresidencia. La afirmación de que había estado «desaparecida» es una valoración del debate, no un hecho literal.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "le sustituyen con la que había sido su vicepresidenta camala Harris"
+          }
         ]
       }
     },
@@ -105,7 +168,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La fuente menciona el giro de la política estadounidense hacia Asia durante su presidencia y el enfriamiento de las relaciones comerciales y estratégicas con China."
+          {
+            "topic": "Antecedentes del deterioro entre China y Estados Unidos",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "La mesa sitúa en los últimos años del Gobierno de Obama los primeros indicios de deterioro de las relaciones comerciales y políticas con China, antes de la presidencia de Trump. Es una periodización interpretativa ofrecida por los participantes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en la última época de Obama empezaron ya las"
+          }
         ]
       }
     },
@@ -117,7 +189,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "En la conversación se atribuye al Gobierno de Clinton un papel en la apertura comercial a China y se comentan supuestas presiones de empresas estadounidenses; esas motivaciones no están verificadas por el episodio."
+          {
+            "topic": "Apertura comercial de China y presiones empresariales",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Un participante alude al Gobierno de Clinton y afirma que compañías financieras estadounidenses favorecieron la incorporación de China a la OMC. La intervención vincula ese acercamiento con consecuencias industriales posteriores, sin aportar documentación de las presiones empresariales concretas.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "son precisamente las empresas de Wall Street"
+          }
         ]
       }
     },
@@ -129,7 +210,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La mesa cita sus escritos sobre China y su influencia en el pensamiento estratégico estadounidense acerca de la relación bilateral."
+          {
+            "topic": "Referencia a la obra sobre China",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "La mesa cita el libro de Kissinger sobre China como referencia para explicar el acercamiento estadounidense a Pekín y el debate sobre su ingreso en la Organización Mundial del Comercio. Se menciona su pensamiento estratégico, no una intervención personal acreditada en las decisiones descritas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuenta kissinger en su libro sobre china"
+          }
         ]
       }
     },
@@ -141,7 +231,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Los participantes opinan sobre su cercanía a la Administración Trump, la industria de vehículos eléctricos y el papel empresarial en decisiones públicas."
+          {
+            "topic": "Tesla, vehículos eléctricos e influencia industrial",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Los participantes sostienen que los cambios propuestos por Trump en políticas del vehículo eléctrico podrían favorecer a Tesla y a Elon Musk frente a otros fabricantes. Se trata de una interpretación sobre competencia empresarial, no una prueba de favoritismo acordado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "a elon musk le han dejado el el tapiz"
+          }
         ]
       }
     },
@@ -153,7 +252,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La transcripción automática recoge «Peter Z» seguido de una referencia a «palan technologies», compatible con Peter Thiel. La identificación es probable, pero requiere cotejo del audio. Se atribuyen opiniones de los participantes sobre sus vínculos tecnológicos y políticos, no acusaciones probadas."
+          {
+            "topic": "Identificación fonética de un empresario asociado a Palantir",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "En un pasaje sobre empresarios próximos a Trump aparece el nombre automático «Peter Z» seguido de «palan technologies». El contexto sugiere a Peter Thiel y Palantir, pero el audio no se ha cotejado; no se puede adjudicar como hecho una acusación de uso de datos bélicos a esa persona por esta transcripción.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "un señor que se llama Peter Z"
+          }
         ]
       }
     },
@@ -165,7 +273,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La mesa debate sus incentivos políticos y plantea valoraciones críticas de una eventual estrategia de confrontación discursiva con Donald Trump."
+          {
+            "topic": "Crítica a presunta influencia de grandes gestoras",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Una voz de la mesa afirma que Larry Fink podría sentarse con Pedro Sánchez e influir en decisiones corporativas y nombramientos. Es una acusación especulativa de dependencia política formulada durante el debate; el episodio no documenta órdenes, reuniones concretas ni acuerdos.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se sienta con Pedro Sánchez"
+          }
         ]
       }
     },
@@ -177,7 +294,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La fuente se refiere a «Larry fing» y «lar­ing» al comentar la influencia de grandes gestoras y plantea presuntas interferencias empresariales en decisiones políticas españolas; no se acreditan esos extremos por la mención."
+          {
+            "topic": "Alegaciones sobre la influencia de BlackRock en España",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Los participantes mencionan a «Larry fing» y «laring» al cuestionar la influencia de grandes gestoras en consejos empresariales españoles y en el Gobierno. La afirmación de que Fink determina decisiones del Ejecutivo no está probada por la mesa; la identificación fonética se apoya en el contexto.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "El Señor Larry fing entra de consejo"
+          }
         ]
       }
     },
@@ -189,7 +315,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "En el episodio se menciona su adquisición de The Washington Post y se expresa la opinión de que esa propiedad puede proporcionar influencia mediática."
+          {
+            "topic": "Compra de The Washington Post y poder mediático",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Un participante sostiene que Jeff Bezos adquirió The Washington Post para aumentar su influencia sobre las ideas y el debate público. La adquisición del periódico es distinta de la intención que le atribuye el comentarista, que no puede afirmarse como motivación documentada basándose solo en la conversación.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Jeff bezo se compró el Washington post"
+          }
         ]
       }
     },
@@ -201,7 +336,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Uno de los participantes recuerda una analogía que atribuye a Pedro Baños sobre alianzas internacionales y relaciones de poder."
+          {
+            "topic": "Analogía de las alianzas internacionales como patio escolar",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Un participante recuerda una analogía que atribuye a Pedro Baños: en un patio de colegio, las personas buscan alianzas con grupos fuertes para evitar agresiones. La fuente alude a esa comparación; no documenta un acuerdo o relación operativa con los integrantes de la mesa.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se lo escucha Pedro baños una vez"
+          }
         ]
       }
     },
@@ -213,7 +357,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Se le menciona al discutir Rusia, la rivalidad geopolítica y la interpretación de proyectos euroasiáticos y de la política energética europea."
+          {
+            "topic": "Referencia al régimen ruso en comparación con democracias liberales",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "La conversación cita a la Rusia de Putin al discutir si los problemas de las democracias justifican fijarse en regímenes autoritarios. Un participante defiende mejorar las instituciones democráticas antes que tomar esos sistemas como modelo; no se identifica una actuación particular de Putin.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Rusia de Vladimir Putin"
+          }
         ]
       }
     },
@@ -225,7 +378,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Un participante critica su política energética, en particular las decisiones sobre centrales nucleares, al debatir las necesidades energéticas del sector tecnológico."
+          {
+            "topic": "Crítica a decisiones de política nuclear alemana",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Un participante cuestiona el cierre de centrales nucleares durante el Gobierno de Merkel, alegando que esas decisiones redujeron la capacidad energética necesaria para la industria y nuevas tecnologías. Es una valoración de política pública, no una imputación de conducta ilícita.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "esa estupidez de Ángela Merkel"
+          }
         ]
       }
     },
@@ -237,7 +399,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "En el episodio aparece como «sergei glacier» al discutir la integración económica euroasiática y las reservas financieras rusas; el nombre está normalizado a partir del contexto y precisa contraste de audio."
+          {
+            "topic": "Posible referencia fonética a un economista ruso",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "La transcripción dice «sergei glacier» al hablar de propuestas de integración euroasiática y de reservas del Banco Central ruso. La identificación con Serguéi Gláziev resulta plausible, pero requiere audio; tampoco se ha corroborado la supuesta crítica personal de ese economista a Putin.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "sergei glacier"
+          }
         ]
       }
     },
@@ -249,7 +420,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La mesa alude a «brezinski» al comentar la importancia geopolítica de Eurasia y la hegemonía estadounidense."
+          {
+            "topic": "Referencia al valor estratégico de Eurasia",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "La mesa menciona a «brezinski» al explicar la importancia de la integración de Rusia con Europa y Asia para la hegemonía estadounidense. Se cita su marco teórico, no una actuación personal verificable en las operaciones políticas enumeradas después.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "ya brezinski en los años 90"
+          }
         ]
       }
     },
@@ -261,7 +441,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "Se menciona su Administración al comentar la evolución de la política exterior de Estados Unidos, la Comisión Trilateral y la relación de esta con debates estratégicos."
+          {
+            "topic": "Comisión Trilateral y continuidad de política exterior",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "Los interlocutores mencionan la etapa de Carter junto con la Comisión Trilateral y contrastan su enfoque con el del Gobierno posterior. Los vínculos y cambios institucionales se comentan de forma general, sin documentos presentados en el programa que demuestren operaciones concretas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "comisión trilateral de carter"
+          }
         ]
       }
     },
@@ -273,7 +462,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "En la transcripción se alude fonéticamente a «rigan» al narrar el paso de la Administración Carter a la siguiente y sus cambios de política exterior."
+          {
+            "topic": "Transición entre Carter y Reagan",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "La transcripción utiliza la forma fonética «rigan» al pasar de la Administración Carter a la siguiente y citar a Alexander Haig como secretario de Estado. La identificación como Reagan parece sólida por el contexto, aunque el audio y el alcance de las valoraciones requieren comprobación.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "que luego con rigan pues pasan"
+          }
         ]
       }
     },
@@ -285,7 +483,16 @@ const extra={
       },
       "sources": {
         "19": [
-          "La conversación lo menciona como «Alexander Hey» al referirse a la Administración Reagan y su política exterior; identificación basada en contexto, pendiente de cotejo de audio."
+          {
+            "topic": "Nombre transcrito ambiguamente durante referencia a Reagan",
+            "speaker": "Mesa de debate (turno sin diarizar)",
+            "statement": "El episodio cita a «Alexander Hey» como secretario de Estado de la Administración que sucedió a Carter. Puede referirse a Alexander Haig, pero no se ha cotejado el audio y no deben imputársele operaciones en España o América Latina por esa mención.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Alexander Hey de secretario de estado"
+          }
         ]
       }
     }
