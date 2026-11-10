@@ -248,6 +248,13 @@ body.graph-expanded{overflow:hidden}
 .audit-source-item{padding:7px;border:1px solid #425365;border-radius:7px;display:flex;flex-direction:column;gap:3px;background:#1a2b39}
 .audit-source-item b{font-size:.73rem}.audit-source-item span{font-size:.7rem;color:#bdd1df}
 
+.source-claim-topic{font-size:.83rem;font-weight:750;color:#f1c38a;margin:0 0 5px}
+.source-claim-speaker{font-size:.75rem;color:#b8ccd7;margin:2px 0}
+.source-claim-caution{font-size:.72rem;color:#e7b98d;margin-top:7px;line-height:1.5}
+.source-statement+.source-statement{border-top:1px solid #405364;margin-top:11px;padding-top:12px}
+.biography-citations{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0}
+.inspector .relations-explainer{color:#a9bdca;font-size:.77rem;line-height:1.5;margin:6px 0 12px}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -821,6 +828,14 @@ function showPersonBiography(panel,node){
  var report=typeof personReport==='function'?personReport(node):null;
  if(report&&report.who){
   section.append(N("p",report.who));
+  if(Array.isArray(report.biographySources)&&report.biographySources.length){
+   var citations=N("div",null,"biography-citations");
+   report.biographySources.forEach(function(ref){
+    if(!ref||typeof ref.title!=="string"||!/^https:\/\//.test(ref.url||""))return;
+    var a=N("a",ref.title,"biography-source");a.href=ref.url;a.target="_blank";a.rel="noopener noreferrer";citations.append(a);
+   });
+   if(citations.childNodes.length)section.append(citations);
+  }
   if(report.portrait){
    var wiki=N("a","Biografía: Wikipedia","biography-source");
    wiki.href="https://"+report.portrait.lang+".wikipedia.org/wiki/"+encodeURIComponent(report.portrait.title.replace(/ /g,"_"));
@@ -872,7 +887,18 @@ function showPersonResearch(panel,node){
    var group=N("div",null,"source-report");
    group.append(N("h4","Fuente "+order+" · "+((library.sourceLabels||{})[order]||(order==="18"?"Rubén Gisbert y Lorenzo Ramírez":"Inversión Racional y Lorenzo Ramírez"))));
    report.sources[order].forEach(function(claim){
-    group.append(N("p","La fuente "+order+" dice que "+claim,"source-report-text"));
+    var structured=claim&&typeof claim==="object"&&!Array.isArray(claim);
+    var statement=String(structured?(claim.statement||claim.text||""):claim||"").trim();
+    if(!statement)return;
+    var item=N("div",null,"source-statement");
+    if(structured&&claim.topic)item.append(N("div",claim.topic,"source-claim-topic"));
+    if(structured&&claim.speaker)item.append(N("div","Declarante: "+claim.speaker,"source-claim-speaker"));
+    item.append(N("p",statement,"source-report-text"));
+    if(structured&&claim.status==="alegacion_no_verificada"){
+     item.append(N("div","Afirmación atribuida · Sin corroboración independiente"+(claim.audioVerified===false?" · Audio pendiente":""),
+      "source-claim-caution"));
+    }
+    group.append(item);
    });
    var link=N("a","Ver entrevista","source-report-link");
    link.href=library.sourceUrls[order];link.target="_blank";link.rel="noopener noreferrer";
@@ -956,11 +982,22 @@ async function hydrateTimelineConnections(){
   if(selection&&selection.kind==="node")inspect();
  }catch(e){/* La Telaraña sigue operativa si falla la carga del catálogo externo. */}
 }
+function isSourceMentionEdge(edge){
+ var status=String(edge&&edge.claimStatus||"").toLowerCase();
+ var type=String(edge&&edge.type||"").toLowerCase();
+ return status.indexOf("mencion_")===0||/^menci[oó]n (de |en |a )/.test(type)||/^citado (en|por) la fuente/.test(type);
+}
 function showNodeRelationships(panel,node){
- var links=data.edges.filter(function(e){return e.a===node.id||e.b===node.id});
+ var allLinks=data.edges.filter(function(e){return e.a===node.id||e.b===node.id});
+ var mentions=allLinks.filter(isSourceMentionEdge);
+ var links=allLinks.filter(function(e){return !isSourceMentionEdge(e)});
  var section=N("section",null,"relations-section");
- section.append(N("h3","Relaciones ("+links.length+")"));
- if(!links.length){section.append(N("p","No hay conexiones registradas para esta entidad."));panel.append(section);return}
+ section.append(N("h3","Relaciones entre entidades ("+links.length+")"));
+ if(!links.length){
+  section.append(N("p","No hay relaciones sustantivas documentadas o atribuidas entre esta entidad y otras. Las menciones en entrevistas se consultan en «Qué dicen las fuentes»."));
+  panel.append(section);return;
+ }
+ if(mentions.length)section.append(N("p",mentions.length+" enlaces de mera mención se excluyen de este apartado.","relations-explainer"));
  var body=N("div",null,"relation-list");
  links.sort(function(a,b){
   var na=getNode(a.a===node.id?a.b:a.a),nb=getNode(b.a===node.id?b.b:b.a);
