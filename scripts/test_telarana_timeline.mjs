@@ -16,7 +16,7 @@ const normal=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").to
 for(const e of feed.items){
  assert(!feedIds.has(e.id),"ID duplicado: "+e.id);
  assert(!ids.has(e.id),"ID ya presente en la línea histórica: "+e.id);
- assert(/^study-(?:v\d+|vf\d+)-[a-z0-9-]+$/.test(e.id),"ID editorial sin prefijo de fuente");
+ assert(/^study-(?:v\d+|vf\d+|f\d+)-[a-z0-9-]+$/.test(e.id),"ID editorial sin prefijo de fuente");
  feedIds.add(e.id);
  const inv=e.investigation||{};
  assert(inv.status==="hecho_documentado","Solo se pueden publicar hechos contrastados");
@@ -45,7 +45,7 @@ assert.equal(bySource[8],1,"Una resolución judicial externa que contextualiza l
 assert.equal(bySource.suplementaria,7,"Siete hechos contrastados de fuente no numerada");
 assert.equal(progress.timeline.committedVerifiedEvents,feed.items.length,"Progreso histórico inconsistente");
 assert.equal(progress.timeline.fromSupplementalResearch,bySource.suplementaria,"La investigación suplementaria debe contabilizarse por separado");
-assert.equal(progress.counts.reviewedPublished,1,"Una cronología no completa fuentes pendientes");
+assert.equal(progress.counts.reviewedPublished,3,"El cierre 18 y 21 es documental; el resto de fuentes continúa en revisión");
 assert(timeline.includes('readJSON("./estudios-telarana.json")'),"El visor no consume el catálogo");
 assert(timeline.includes("function showStudyNote("),"Faltan fichas documentales");
 assert(timeline.includes("if(d&&d.investigation){showStudyNote(d);return}"),"La ficha documental debe prevalecer frente a Wikipedia");
