@@ -446,10 +446,11 @@ function mergeSourceProfiles(orderFilter){
    var pair=[node.id,episode].sort().join("::");
    if(pairs.has(pair))continue;
    var eid="sf"+order+"-"+node.id;
-   data.edges.push({id:eid,a:episode,b:node.id,type:"Mención de persona en la fuente "+order,
-    confidence:"documentado",note:"La fuente menciona a esta persona; la ficha recoge lo que dice el entrevistado.",
+   var uncertainty=Array.isArray(p.sources[order])&&p.sources[order].length>0&&p.sources[order].every(function(c){return c&&typeof c==="object"&&c.status==="identidad_pendiente"});
+   data.edges.push({id:eid,a:episode,b:node.id,type:uncertainty?"Posible identidad citada en la fuente "+order:"Mención de persona en la fuente "+order,
+    confidence:uncertainty?"hipotesis":"documentado",note:uncertainty?"Identidad deducida de transcripción automática; pendiente de cotejar audio. No afirmar vínculo.":"La fuente menciona a esta persona; la ficha recoge lo que dice el entrevistado.",
     source:lib.sourceUrls[order],episodeId:lib.sourceIds[order],
-    claimStatus:"mencion_transcripcion_no_prueba_de_hechos",podcastNotes:[]});
+    claimStatus:uncertainty?"identificacion_no_verificada":"mencion_transcripcion_no_prueba_de_hechos",podcastNotes:[]});
    pairs.add(pair);
   }
  }
@@ -932,9 +933,10 @@ function showPersonResearch(panel,node){
     if(structured&&claim.topic)item.append(N("div",claim.topic,"source-claim-topic"));
     if(structured&&claim.speaker)item.append(N("div","Declarante: "+claim.speaker,"source-claim-speaker"));
     var sparse=(!structured&&statement.length<215&&/^(?:[^.]{0,65})?(?:se (?:le )?menciona|es (?:mencionad[oa]|citad[oa])|aparece en|se (?:le )?cita|es utilizado|se refiere a|la fuente (?:menciona|cita)|en la entrevista se)/i.test(statement));
-    if(sparse){
+    var contextual=structured&&(claim.status==="mencion_contextual"||claim.status==="identidad_pendiente");
+    if(sparse||contextual){
      var weak=N("details",null,"source-weak-details");
-     weak.append(N("summary","Mención localizada · Falta extraer una declaración concreta"));
+     weak.append(N("summary",contextual?(claim.status==="identidad_pendiente"?"Identificación provisional · no comprobada en audio":"Mención contextual · no acredita una relación"): "Mención localizada · Falta extraer una declaración concreta"));
      weak.append(N("p",statement,"source-report-text"));
      item.append(weak);
     }else{
@@ -942,6 +944,14 @@ function showPersonResearch(panel,node){
     }
     if(structured&&claim.status==="alegacion_no_verificada"){
      item.append(N("div","Afirmación atribuida · Sin corroboración independiente"+(claim.audioVerified===false?" · Audio pendiente":""),
+      "source-claim-caution"));
+    }else if(structured&&claim.status==="identidad_pendiente"){
+     item.append(N("div","Transcripción automática ambigua · Identidad sin confirmar · No constituye relación documentada","source-claim-caution"));
+    }else if(structured&&claim.status==="mencion_contextual"){
+     item.append(N("div","Mención contextual sin actuación personal acreditada"+(claim.audioVerified===false?" · Audio sin cotejar":""),
+      "source-claim-caution"));
+    }else if(structured&&claim.status==="opinion_atribuida"){
+     item.append(N("div","Interpretación del declarante, no hecho verificado de forma independiente"+(claim.audioVerified===false?" · Audio sin cotejar":""),
       "source-claim-caution"));
     }else if(!structured){
      var caution="Síntesis editorial · No es una cita literal · Audio y minuto pendientes de cotejo";
