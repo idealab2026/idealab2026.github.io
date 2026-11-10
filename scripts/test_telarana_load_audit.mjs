@@ -43,6 +43,15 @@ assert.equal(missing.length,0,"Fuentes omitidas: "+missing.join(", "));
 assert.equal(audit.at(-1).total,ctx.data.nodes.length,"El último total no coincide con el grafo");
 assert(audit.every(r=>r.added>=0&&r.edges>=0&&r.total===r.before+r.added),"Delta inválido");
 assert(audit.every((r,i)=>i===0||r.before===audit[i-1].total),"Fallo de continuidad de los totales");
+// Cada lote de perfiles ha de contabilizar solo identidades mencionadas por esa fuente.
+assert(html.includes("Object.prototype.hasOwnProperty.call(p.sources,orderFilter)"),"Los perfiles se atribuyen a la primera fuente en vez de a su fuente original");
+for(const order of ["9","10","11","12","18","21"]){
+ const matching=audit.filter(r=>r.label==="Perfiles de la fuente "+order);
+ assert.equal(matching.length,1,"Debe existir exactamente una etapa de perfiles para fuente "+order);
+ assert(matching[0].available,"No se han cargado los perfiles de fuente "+order);
+}
+const summary=audit.reduce((n,r)=>n+r.added,0);
+assert.equal(summary,ctx.data.nodes.length,"Las altas de cada etapa no cuadran con el total");
 const ids=new Set(ctx.data.nodes.map(n=>n.id));
 assert.equal(ids.size,ctx.data.nodes.length,"Identificadores de entidad duplicados");
 assert(ctx.data.edges.every(e=>ids.has(e.a)&&ids.has(e.b)),"Existen relaciones huérfanas");
