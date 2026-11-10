@@ -49,6 +49,14 @@ const report=data.nodes.map(n=>{
  const key=normalize(n.name),p=profileMap.get(key)||(key==="jd vance"?profileMap.get("j d vance"):null);
  const curated=bio.curated?.[n.id]||null;
  const notes=Array.isArray(n.podcastNotes)?n.podcastNotes:[];
+ const vaguePodcastNotes=notes.filter(v=>vague.test(String(v.text||"")));
+ const sensitivePodcastNotes=notes.filter(v=>allegations.test(String(v.text||"")));
+ const genericNodeNote=vague.test(String(n.note||""));
+ const sensitiveNodeNote=allegations.test(String(n.note||""));
+ const sensitiveOneNoteArchive=allegations.test(String(n.archiveNote||""));
+ const archiveHasProvenance=Boolean(String(n.archiveNote||"").trim().length);
+ const normalizedNoteKeys=notes.map(v=>normalize((v.source||v.episodeId||"")+" "+(v.text||"").slice(0,120)));
+ const duplicatedPodcastNotes=normalizedNoteKeys.length-new Set(normalizedNoteKeys).size;
  const entries=Object.entries(p?.sources||{}).flatMap(([order,arr])=>arr.map((v,index)=>({order,index,structured:typeof v==="object"&&v!==null,statement:String(typeof v==="object"&&v!==null?(v.statement||""):v||"")})));
  const bad=entries.filter(x=>vague.test(x.statement));
  const sensitive=entries.filter(x=>allegations.test(x.statement));
@@ -62,16 +70,21 @@ const report=data.nodes.map(n=>{
  if(!String(n.note||"").trim()&&!String(n.archiveNote||"").trim()&&!entries.length&&!notes.length)issues.push("sin_descripcion_documental");
  if(bad.length)issues.push("resumenes_genericos:"+bad.length);
  if(sensitive.length)issues.push("alegaciones_requieren_cotejo:"+sensitive.length);
+ if(vaguePodcastNotes.length)issues.push("notas_podcast_genericas:"+vaguePodcastNotes.length);
+ if(genericNodeNote)issues.push("descripcion_base_generica");
+ if(sensitivePodcastNotes.length)issues.push("controversias_en_podcast:"+sensitivePodcastNotes.length);
+ if(sensitiveNodeNote||sensitiveOneNoteArchive)issues.push("acusacion_en_nota_base_o_archivo");
+ if(duplicatedPodcastNotes)issues.push("notas_podcast_duplicadas:"+duplicatedPodcastNotes);
  if(entries.some(x=>!x.structured))issues.push("resumenes_no_estructurados");
  if(notes.some(x=>!x.source||!/^https?:\/\//.test(x.source)))issues.push("notas_sin_url_verificable");
  if(roleTimeSensitive.test((p?.who||"")+" "+(curated?.text||"")+" "+(n.note||"")))issues.push("cargo_sensible_al_tiempo");
  if((names.get(key)||[]).length>1)issues.push("nombre_duplicado");
  if(ownEdges.length&&ownEdges.length===mentions)issues.push("solo_enlaces_de_mencion");
- const priority=(sensitive.length?6:0)+(bad.length?4:0)+(!independent&&n.kind==="Persona"?3:0)+(!hasRealDescription&&n.kind==="Persona"?2:0)+(issues.includes("cargo_sensible_al_tiempo")?3:0);
+ const priority=(sensitive.length?6:0)+(bad.length?4:0)+(sensitivePodcastNotes.length?5:0)+(vaguePodcastNotes.length?4:0)+(sensitiveNodeNote||sensitiveOneNoteArchive?3:0)+(genericNodeNote?2:0)+(!independent&&n.kind==="Persona"?3:0)+(!hasRealDescription&&n.kind==="Persona"?2:0)+(issues.includes("cargo_sensible_al_tiempo")?3:0);
  return {id:n.id,name:n.name,kind:n.kind,topic:n.topic3d||"",issues,priority,
   biography:{status:independent?"con_referencia":"sin_referencia_independiente",length:String(p?.who||curated?.text||n.subtitle||"").length},
   sourceClaims:entries.length,genericClaims:bad.length,allegationTerms:sensitive.length,
-  podcastNotes:notes.length,edges:ownEdges.length,mentions,independentlyClassifiedEdges:reliableEdges,
+  podcastNotes:notes.length,genericPodcastNotes:vaguePodcastNotes.length,sensitivePodcastNotes:sensitivePodcastNotes.length,duplicatedPodcastNotes,baseNoteVague:genericNodeNote,baseNoteSensitive:sensitiveNodeNote,archiveSensitive:sensitiveOneNoteArchive,hasOneNoteArchive:archiveHasProvenance,edges:ownEdges.length,mentions,independentlyClassifiedEdges:reliableEdges,
   sourceOrders:[...new Set(entries.map(x=>x.order))],
   auditStatus:"cribado_estructural_no_verificacion_factual"};
 }).sort((a,b)=>b.priority-a.priority||a.name.localeCompare(b.name,"es"));
@@ -88,6 +101,12 @@ const summary={
  entitiesWithGenericClaims:count("vague",x=>x.genericClaims>0),
  genericClaimStatements:report.reduce((a,x)=>a+x.genericClaims,0),
  entitiesWithAllegationTerms:count("allegations",x=>x.allegationTerms>0),
+ entitiesWithGenericPodcastNotes:count("podcast",x=>x.genericPodcastNotes>0),
+ genericPodcastNotes:report.reduce((a,x)=>a+x.genericPodcastNotes,0),
+ entitiesWithSensitivePodcastNotes:count("sensitive",x=>x.sensitivePodcastNotes>0),
+ entitiesWithGenericSeedNotes:count("seed",x=>x.baseNoteVague),
+ entitiesWithSensitiveSeedOrArchives:count("archive",x=>x.baseNoteSensitive||x.archiveSensitive),
+ entitiesWithDuplicatePodcastNotes:count("dupe",x=>x.duplicatedPodcastNotes>0),
  unreferencedPeople:count("uncited",x=>x.kind==="Persona"&&x.biography.status==="sin_referencia_independiente"),
  entitiesWithoutDocumentaryDescription:top("sin_descripcion_documental").length,
  timeSensitiveRoleCandidates:top("cargo_sensible_al_tiempo").length,
