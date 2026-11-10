@@ -31,7 +31,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Lorenzo Ramírez expone un análisis sobre los documentos del caso Epstein, las disputas en torno al poder estadounidense, las relaciones con Oriente Medio y la política económica internacional."
         ],
         "21": [
-          "Lorenzo Ramírez interpreta la relación entre Estados Unidos, Europa, Rusia y China y aborda instituciones financieras, USAID, servicios de inteligencia y grandes empresas tecnológicas."
+          {
+            "topic": "Interpretación de la pugna geopolítica y tecnológica",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que la rivalidad entre Estados Unidos, Rusia, China y Europa debe analizarse junto a la influencia del sector tecnológico, el peso de instituciones financieras y las decisiones sobre seguridad. Son sus hipótesis y argumentos geopolíticos, no pruebas de un único «orden mundial» coordinado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "hoy está con nosotros lorenzo ramírez"
+          }
         ]
       }
     },
@@ -118,8 +127,26 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "George Soros es presentado como referente de una corriente política y filantrópica que los entrevistados comparan con la influencia de Peter Thiel; se plantea que la rivalidad entre ambos podría ser aparente."
         ],
         "21": [
-          "George Soros aparece en el análisis del término «policrisis» y en la explicación que ofrece Lorenzo Ramírez sobre la financiación de organizaciones e iniciativas de influencia política.",
-          "George Soros es citado en relación con el término «policrisis», las organizaciones filantrópicas y el papel atribuido por el entrevistado a determinadas redes de financiación política."
+          {
+            "topic": "Uso del concepto de policrisis",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a George Soros en su exposición del término «policrisis» y sostiene que este ayudó a difundirlo en textos de análisis económico. La mención no implica que Soros haya creado todas las crisis descritas ni demuestra una coordinación deliberada entre ellas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "george soros a través de un artículo lo popularizó"
+          },
+          {
+            "topic": "Acusaciones sobre redes de ONG y financiación política",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que organizaciones vinculadas a Soros habrían desempeñado un papel importante en circuitos de financiación internacional de organizaciones civiles y proyectos de influencia política. La entrevista no documenta transferencias concretas ni demuestra que la financiación citada constituya una actividad ilícita.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "no solo las de soros aunque las de soros"
+          }
         ]
       }
     },
@@ -134,7 +161,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Peter Thiel es relacionado por el programa con Palantir, sus vínculos históricos con el ámbito de inteligencia estadounidense y presuntos correos de 2014 con Jeffrey Epstein; los interlocutores lo comparan con George Soros."
         ],
         "21": [
-          "Peter Thiel aparece vinculado por Lorenzo Ramírez al entorno empresarial de Palantir y la denominada «PayPal Mafia» y a personas que, según el entrevistado, habrían trabajado en la Administración estadounidense."
+          {
+            "topic": "Palantir, PayPal y supuestos vínculos con inteligencia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sitúa a Peter Thiel en el entorno empresarial de PayPal y Palantir y afirma que lleva años colaborando con servicios de inteligencia. Critica una tendencia a utilizar masivamente datos de ciudadanos con fines de control y policía predictiva. La naturaleza y alcance de las actuaciones concretas atribuidas a Thiel no se acreditan con documentos en la entrevista.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "peter cill es un tipo que lleva trabajando con los servicios de inteligencia"
+          }
         ]
       }
     },
@@ -161,7 +197,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Elon Musk es mencionado como figura del entorno de PayPal y en relación con iniciativas de identificación de usuarios de redes sociales; la fuente compara sus intereses con propuestas del Gobierno español."
         ],
         "21": [
-          "Elon Musk es descrito como empresario con influencia en el Gobierno estadounidense y en iniciativas de revisión de contratos, y como figura asociada a la controversia tecnológica alrededor de Palantir y Stargate."
+          {
+            "topic": "Críticas a colaboradores tecnológicos de la Administración Trump",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que personas próximas a Musk y Thiel participaron en trabajos de revisión administrativa manteniendo simultáneamente puestos en compañías tecnológicas. Considera irregular esa doble actividad y utiliza el caso para criticar la concentración de influencia empresarial. No identifica en el pasaje expedientes personales suficientes para demostrar irregularidades concretas.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "son personas muy cercanas a elon musk"
+          }
         ]
       }
     },
@@ -296,8 +341,26 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "La familia Clinton es citada en la exposición de los interlocutores sobre la proximidad de Epstein a cargos políticos y redes de influencia."
         ],
         "21": [
-          "Bill Clinton aparece en la explicación sobre la expansión del orden económico posterior a la Guerra Fría y la integración de China en el comercio mundial.",
-          "Bill Clinton es presentado como presidente durante el proceso de ampliación del sistema comercial internacional y la integración china en la OMC."
+          {
+            "topic": "Comercio con China tras la Guerra Fría",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez atribuye a la presidencia de Clinton un papel relevante en la apertura comercial estadounidense a China y en las negociaciones que precedieron a su ingreso en la Organización Mundial del Comercio. Lo interpreta como un proyecto económico que esperaba favorecer la liberalización política china. El ingreso efectivo se produjo después de su mandato, en 2001.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "clinton que era el presidente de estados unidos"
+          },
+          {
+            "topic": "Expectativas de democratización de China",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que dirigentes occidentales, entre ellos Clinton, esperaban que el crecimiento económico y la integración comercial favoreciesen transformaciones políticas en China. Afirma que esa expectativa fracasó; la atribución de una intención uniforme a todos los participantes es su interpretación.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "por eso fracasó clinton"
+          }
         ]
       }
     },
@@ -366,7 +429,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Vladímir Putin es mencionado al analizar las negociaciones sobre Ucrania, Oriente Medio y las tensiones con los dirigentes europeos."
         ],
         "21": [
-          "Vladímir Putin aparece relacionado con la conferencia de seguridad de Múnich de 2007 y la interpretación que ofrece el entrevistado sobre la ampliación de la OTAN y las negociaciones sobre Ucrania."
+          {
+            "topic": "Discurso de Múnich de 2007 y expansión de la OTAN",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona la intervención de Putin en la Conferencia de Seguridad de Múnich de 2007 para explicar el deterioro de las relaciones entre Rusia y Occidente y la oposición rusa a la ampliación de la OTAN. Presenta ese episodio como antecedente de tensiones posteriores; no demuestra por sí mismo una causa única de la guerra en Ucrania.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "putin en la conferencia de munich"
+          }
         ]
       }
     },
@@ -381,7 +453,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Volodímir Zelenski es mencionado en el análisis de las negociaciones entre Ucrania, Rusia y Estados Unidos y del papel atribuido a los grupos políticos ucranianos."
         ],
         "21": [
-          "Volodímir Zelenski es citado cuando se comenta su posición en las conversaciones diplomáticas y la estrategia de Estados Unidos y Rusia respecto a Ucrania."
+          {
+            "topic": "Negociaciones sobre Ucrania y legitimidad presidencial",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que se discutía un plan de negociaciones entre Estados Unidos y Rusia en el que Zelenski no intervendría inicialmente. Formula además críticas sobre su legitimidad y apoyo ciudadano. Son afirmaciones políticas del entrevistado: los porcentajes y las motivaciones atribuidas no deben presentarse como datos verificados por el episodio.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "no sentar a zelenski en la misma mesa"
+          }
         ]
       }
     },
@@ -432,7 +513,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Emmanuel Macron es mencionado en el debate sobre las propuestas de identificación de usuarios de redes sociales y las prioridades políticas francesas."
         ],
         "21": [
-          "Emmanuel Macron aparece junto con Keir Starmer y Ursula von der Leyen en la descripción que da Lorenzo Ramírez de alianzas para modificar el funcionamiento político europeo."
+          {
+            "topic": "Acusaciones sobre alianzas institucionales europeas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que Macron, Keir Starmer y Ursula von der Leyen trabajan en una convergencia para aumentar la capacidad de decisión de las instituciones europeas, y la califica políticamente de «golpe de Estado». Es una descripción polémica del entrevistado, no una constatación jurídica de un golpe ni de acuerdos encubiertos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "alianza entre starmer entre macron"
+          }
         ]
       }
     },
@@ -459,7 +549,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Ursula von der Leyen es citada en la discusión de propuestas europeas relacionadas con el control de plataformas digitales."
         ],
         "21": [
-          "Ursula von der Leyen se presenta como impulsora de cambios en la gobernanza europea y de una mayor capacidad de decisión de la Comisión, especialmente respecto a la unanimidad y la defensa."
+          {
+            "topic": "Sanciones a Rusia y reglas de unanimidad en la UE",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que von der Leyen defendió sanciones a Rusia y vincula esas decisiones con una supuesta aspiración personal de dirigir la OTAN. Cita la resistencia de Viktor Orbán como obstáculo a propuestas europeas sometidas a unanimidad. La motivación personal y el supuesto respaldo presidencial que le atribuye no se prueban en la entrevista.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "ursula vonderleyen quería ser secretaria general"
+          }
         ]
       }
     },
@@ -531,7 +630,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Viktor Orbán se menciona como dirigente que ha utilizado o amenazado con utilizar la exigencia de unanimidad de la UE para condicionar sanciones y otras decisiones europeas."
+          {
+            "topic": "Uso de la unanimidad para bloquear decisiones europeas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita las objeciones de Orbán a paquetes de sanciones contra Rusia como ejemplo de cómo un Estado puede condicionar decisiones de la Unión Europea que requieran unanimidad. Presenta la cuestión como conflicto entre la soberanía nacional y el impulso supranacional; no aporta un pacto secreto.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "víctor orbán porque decía"
+          }
         ]
       }
     },
@@ -543,7 +651,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Keir Starmer es situado por el entrevistado en una alianza política con Emmanuel Macron y Ursula von der Leyen para impulsar iniciativas de seguridad y gobernanza europeas."
+          {
+            "topic": "Alianza política con Macron y von der Leyen según el entrevistado",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Starmer junto con Macron y von der Leyen al denunciar una supuesta concentración de decisiones de seguridad europeas fuera de los mecanismos ordinarios. La etiqueta de «golpe de Estado» es su valoración política, no una calificación jurídica demostrada.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "alianza entre starmer entre macron"
+          }
         ]
       }
     },
@@ -555,7 +672,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Marco Rubio es mencionado al describir la composición y los participantes de conversaciones diplomáticas estadounidenses sobre Rusia y Oriente Medio."
+          {
+            "topic": "Participación en conversaciones diplomáticas en Arabia Saudí",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita a Marco Rubio entre los representantes estadounidenses presentes en conversaciones con Rusia en Arabia Saudí. Sostiene que la influencia de otros enviados podría superar la del secretario de Estado y relaciona las reuniones con cuestiones más amplias que Ucrania. Esta jerarquía informal es una interpretación del ponente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "marcos rubio el secretario de estado"
+          }
         ]
       }
     },
@@ -567,7 +693,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Steve Witkoff aparece en la conversación como enviado especial y participante destacado en las negociaciones estadounidenses sobre Oriente Medio y cuestiones geopolíticas más amplias."
+          {
+            "topic": "Enviado especial y negociaciones sobre Rusia y Oriente Medio",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez destaca la presencia de Steve Witkoff, enviado especial estadounidense para Oriente Medio, en conversaciones que también afectaban a Ucrania. Lo interpreta como indicio de que Washington buscaba un entendimiento regional y global más amplio, aunque esa intención no queda documentada de manera independiente en el episodio.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se llama steve witkof"
+          }
         ]
       }
     },
@@ -603,7 +738,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Sam Altman aparece en el debate sobre la iniciativa de infraestructura de inteligencia artificial Stargate y su rivalidad empresarial con Elon Musk."
+          {
+            "topic": "Stargate y tensiones empresariales con Musk",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita a Sam Altman al comentar la presentación de Stargate, iniciativa de infraestructura de inteligencia artificial, y lo contrapone a Elon Musk por sus desacuerdos empresariales. Las expresiones despectivas con que lo describe son opiniones del entrevistado y no se incorporan como hechos biográficos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "proyecto stargate de la inteligencia artificial"
+          }
         ]
       }
     },
@@ -615,7 +759,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Larry Ellison es citado por su participación en la presentación de Stargate y por propuestas de combinar inteligencia artificial y tecnologías sanitarias."
+          {
+            "topic": "IA, Oracle y aplicaciones sanitarias en la presentación de Stargate",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Larry Ellison, vinculado a Oracle, entre los participantes en la presentación de Stargate y comenta su exposición sobre posibles aplicaciones de inteligencia artificial y tecnologías sanitarias. Critica el optimismo de esa propuesta, pero la entrevista no prueba que exista un programa sanitario oculto.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "uno de los que intervienen en esa rueda de prensa es larry ellison"
+          }
         ]
       }
     },
