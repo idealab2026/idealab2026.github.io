@@ -21,7 +21,8 @@ assert(lib.profiles["Jesús Hernández"]?.sources["13"],"Historiador invitado no
 assert(!lib.profiles["Jesús Hernández Tomás"]?.sources?.["13"],"Homónimo histórico indebidamente asociado");
 assert(html.includes('src="./personas-fuentes-13.js'),"No se carga el expediente");
 assert(html.includes('"13":"f13-episodio"'),"No hay vínculo a la fuente 13");
-assert(html.includes('["9","10","11","12","13","14","16","18","21"].forEach'),"No audita la segunda capa de la fuente 13");
+const audited=(html.match(/\[("[0-9]+"(?:,"[0-9]+")*)\]\.forEach\(function\(order\)/)||[])[1];
+assert(audited&&JSON.parse("["+audited+"]").includes("13"),"No audita la segunda capa de la fuente 13");
 assert(workflow.includes("cp la-telarana/personas-fuentes-13.js dist/la-telarana/personas-fuentes-13.js"),"No se incluye el módulo en Pages");
 assert(!workflow.includes("cp la-telarana/progreso-fuentes.json"),"Prohibido exponer inventario privado");
 const historical=JSON.parse(read("linea-historia/estudios-telarana.json"));
