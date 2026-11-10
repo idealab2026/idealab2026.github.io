@@ -33,7 +33,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente repasa su experiencia comercial y sus iniciativas para la integración europea, y sostiene que operaba dentro de redes de influencia financiera y política transatlántica; esta segunda interpretación no queda acreditada por el episodio."
+          {
+            "topic": "Infancia, negocio familiar y relato fundacional europeo",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Lorenzo Ramírez describe la procedencia de Monnet de una familia vinculada al comercio de coñac y cuestiona la imagen de fundador europeo independiente. Sostiene que la Fundación Ford intervino en la construcción posterior de sus memorias y en la difusión de esa imagen. La presunta manipulación editorial es una acusación del entrevistado, no algo acreditado por el episodio.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Moné que era francés que era un tipo de la región de Cñac"
+          }
         ]
       }
     },
@@ -45,7 +54,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente analiza su papel en la propuesta de comunidad supranacional del carbón y del acero y afirma que los intereses estadounidenses influyeron en su elaboración."
+          {
+            "topic": "Declaración Schuman y origen de la CECA",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez identifica la Declaración Schuman como el impulso político inicial de la cooperación europea del carbón y el acero. Añade su interpretación de que el proyecto recibió influencia política estadounidense, pero la entrevista no demuestra por sí sola la existencia ni el alcance de una dirección externa encubierta.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Robert Schuman es el autor de la declaración Suman"
+          }
         ]
       }
     },
@@ -57,7 +75,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Lorenzo Ramírez lo sitúa entre los principales artífices de la integración de Europa occidental y le atribuye una dependencia política de círculos estadounidenses, sin presentar pruebas suficientes de esa relación concreta."
+          {
+            "topic": "Supuesto vínculo de Adenauer con redes estadounidenses",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que el canciller alemán Konrad Adenauer «trabajaba para» una persona cuyo nombre aparece transcrito como «Alenduls» y a la que asocia con la familia de un director de la CIA. Esa identificación fonética es ambigua y la acusación de dependencia política no se acredita mediante la entrevista. No puede convertirse en una relación documentada con Allen Dulles.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Conrad Adenauer que es uno de los grandes prebostes"
+          }
         ]
       }
     },
@@ -69,7 +96,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "En la entrevista se menciona con una forma fonética cercana a «Alenduls» al comentar supuestas influencias de servicios y redes estadounidenses sobre dirigentes de Europa occidental; la referencia precisa requiere cotejo de audio."
+          {
+            "topic": "Identidad dudosa en el pasaje sobre Adenauer",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "El episodio contiene la forma transcrita «Alenduls» en un pasaje sobre Adenauer; el hablante la describe como familiar de un antiguo director de la CIA. La transcripción no basta para determinar si se refiere a Allen Dulles, a su hermano John Foster Dulles o a otra persona. La relación queda sin identificar hasta cotejar el audio.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Alenduls el hermano del que fue director de la CIA"
+          }
         ]
       }
     },
@@ -81,7 +117,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente lo cita como figura de la diplomacia cultural estadounidense y le atribuye participación en iniciativas destinadas a promover una narrativa favorable a la integración europea."
+          {
+            "topic": "Fundación Ford y producción de memorias de Monnet",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez señala a Shepard Stone, ligado a la Fundación Ford y a la diplomacia cultural estadounidense, como participante en iniciativas de comunicación sobre la integración europea. Asegura que equipos financiados por esa fundación habrían elaborado una versión interesada de las memorias de Monnet; la entrevista no aporta el expediente editorial para comprobar esa afirmación.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "un tipo que se llama Shepard Stone"
+          }
         ]
       }
     },
@@ -93,7 +138,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Lorenzo Ramírez sostiene que su trayectoria profesional en banca ilustra la influencia de las finanzas sobre los dirigentes europeos; la insinuación de que la banca controla sus decisiones se conserva como tesis de la fuente."
+          {
+            "topic": "Atribución de influencia bancaria sobre su carrera",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez compara a Macron con figuras vinculadas a grandes empresas y sostiene explícitamente que la banca Rothschild lo «puso» en la presidencia francesa. Haber trabajado en ese banco no acredita la causalidad ni el supuesto control de sus decisiones. Esa segunda parte se conserva solo como acusación atribuida al entrevistado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Macron es un tipo puesto ahí por la banca Rochilde"
+          }
         ]
       }
     },
@@ -105,7 +159,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La entrevista lo menciona con la transcripción «Federikmer» y compara su procedencia empresarial con la de otros líderes, atribuyéndole alineamientos de intereses financieros."
+          {
+            "topic": "Etapa empresarial en BlackRock y valoración política",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "La entrevista recuerda la trayectoria profesional de Friedrich Merz en BlackRock Alemania y la utiliza para argumentar que personas procedentes del sector financiero alcanzan responsabilidades políticas europeas. Ramírez interpreta esa trayectoria como afinidad de intereses; no acredita que BlackRock determine las decisiones del canciller.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Federikmer en esencia es lo mismo es gente"
+          }
         ]
       }
     },
@@ -153,7 +216,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente critica las privatizaciones rusas de los años noventa y presenta su interpretación sobre el papel de asesores y financiación estadounidenses en ese proceso."
+          {
+            "topic": "Privatizaciones rusas y supuesto pacto con Washington",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que la Administración de Bill Clinton y el entorno de Boris Yeltsin pactaron apoyo financiero y el diseño de privatizaciones rusas en la década de 1990. Califica el proceso de saqueo y afirma que dirigentes estadounidenses tuvieron influencia en la transición económica. El alcance de un pacto concreto no queda probado por la declaración.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "llega un pacto con Clinton para que a cambio"
+          }
         ]
       }
     },
@@ -165,7 +237,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La entrevista le atribuye conversaciones sobre reunificación alemana y expansión de la OTAN y afirma que recibió determinadas garantías; la amplitud y naturaleza jurídica de esas garantías no se dan por demostradas."
+          {
+            "topic": "Negociaciones de seguridad de 1989-1991",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que interlocutores occidentales prometieron a Gorbachov que la OTAN no se extendería hacia el este a cambio de facilitar la transformación del bloque soviético. El episodio no aporta el texto de un compromiso vinculante; debe distinguirse la discusión diplomática de la existencia de una prohibición jurídica general.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se le promete a Gorbachov expresamente"
+          }
         ]
       }
     },
@@ -189,7 +270,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "El entrevistado le atribuye acuerdos y cooperación económica con dirigentes rusos durante las privatizaciones de los años noventa, interpretación que requiere contraste documental específico."
+          {
+            "topic": "Supuesto acuerdo con Yeltsin sobre privatizaciones",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que existió un pacto entre Clinton y Yeltsin para facilitar financiación y asistencia estadounidense a las privatizaciones de Rusia; añade que el Gobierno ruso temía el coste electoral del proceso. Se trata de la reconstrucción y las acusaciones del entrevistado, no de documentación contractual presentada en el vídeo.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "hay un pacto entre Clinton y Jersin"
+          }
         ]
       }
     },
@@ -237,7 +327,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Se cita su oposición a ciertas políticas de la Unión Europea como ejemplo del conflicto entre decisiones supranacionales y vetos de gobiernos nacionales."
+          {
+            "topic": "Vetos nacionales frente a decisiones supranacionales",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Al hablar de la integración europea, Ramírez utiliza a Viktor Orbán como ejemplo de líder nacional que puede oponerse a iniciativas de Bruselas. La conversación menciona el posible debilitamiento de los vetos estatales, pero no documenta una decisión concreta de Orbán ni un acuerdo secreto.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "te viene un Orban y te dice"
+          }
         ]
       }
     },
@@ -273,7 +372,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente comenta sus visitas diplomáticas a China y especula sobre la reacción de otros gobiernos europeos y estadounidenses ante esos contactos."
+          {
+            "topic": "Visitas a China y posible reacción de socios europeos",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita los contactos diplomáticos de Pedro Sánchez y de la Corona española con China. Argumenta que otros socios europeos podrían recelar de ese acercamiento por la dependencia tecnológica y energética de productos chinos. La supuesta reacción negativa de esos gobiernos es una interpretación expresada en la entrevista.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Pedro Sánchez eh visitas a China"
+          }
         ]
       }
     },
@@ -309,7 +417,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente menciona «Kennedy» al comparar presidentes estadounidenses y su margen de decisión frente a estructuras de poder; la referencia exacta debe corroborarse con audio."
+          {
+            "topic": "Mención incidental a presidentes estadounidenses",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez incluye a «Kennedy» junto a Gerald Ford, Truman y Roosevelt en una comparación general sobre el papel de los asesores y la continuidad de objetivos exteriores estadounidenses. No desarrolla una acusación específica ni aporta prueba de que un plan concreto se impusiera a Kennedy; la identificación personal no ha sido cotejada en audio.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "tanto con Kennedy para otro podcast"
+          }
         ]
       }
     },
@@ -333,7 +450,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente lo cita al explicar las prioridades estadounidenses en Europa occidental tras la Segunda Guerra Mundial, especialmente la contención soviética y la apertura económica."
+          {
+            "topic": "Mención comparativa a prioridades de la política estadounidense",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Truman figura en una enumeración de presidentes al explicar cómo, según Ramírez, asesores y organismos estadounidenses mantenían prioridades de contención soviética y expansión de mercados europeos. El pasaje no atribuye a Truman una operación personal concreta.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con Truman el propio Roosevelt"
+          }
         ]
       }
     },
