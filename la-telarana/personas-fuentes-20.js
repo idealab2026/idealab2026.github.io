@@ -208,5 +208,5 @@
 };
 const base=window.IDEA_TELARANA_PERSON_SOURCE_REPORTS;if(!base)return;
 Object.assign(base.sourceIds,extra.sourceIds);Object.assign(base.sourceUrls,extra.sourceUrls);base.sourceLabels=Object.assign({},base.sourceLabels||{},extra.sourceLabels);
-for(const [name,p]of Object.entries(extra.profiles)){const old=base.profiles[name];if(!old){base.profiles[name]=p;continue;}for(const [order,notes]of Object.entries(p.sources))old.sources[order]=(old.sources[order]||[]).concat(notes);if(!old.portrait&&p.portrait)old.portrait=p.portrait;}
+for(const [name,p]of Object.entries(extra.profiles)){const old=base.profiles[name];if(!old){base.profiles[name]=p;continue;}for(const [order,notes]of Object.entries(p.sources))old.sources[order]=(old.sources[order]||[]).concat(notes);if(p.who&&(old.who||"").length<p.who.length)old.who=p.who;if(!old.portrait&&p.portrait)old.portrait=p.portrait;}
 })();
