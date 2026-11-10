@@ -21,7 +21,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La fuente presenta el relato de Ron sobre el impacto del vuelo 175, los daños de su planta y la evacuación. La identidad se resuelve por la coincidencia del nombre, la planta y el testimonio recogido por National Geographic."
+          {
+            "topic": "Testimonio sobre la evacuación de la Torre Sur",
+            "speaker": "Presentador de la fuente 14 (introducción sin cotejo audiovisual)",
+            "statement": "El presentador introduce a un superviviente llamado Ron que trabajaba en la planta 84 de la Torre Sur cuando impactó el segundo avión. La ficha lo identifica como Ron DiFrancesco por la combinación de nombre, puesto y relato, pero el pasaje de la transcripción automática utilizado como ancla solo recoge su nombre de pila. Su experiencia se conserva como testimonio, no como verificación independiente de todos los detalles.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "su nombre es Ron aquella mañana estaba trabajando en la planta 84 de la torre sur"
+          }
         ]
       }
     },
@@ -33,7 +42,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "Mark Rossini afirma en la entrevista que detectó información sobre sospechosos antes de los ataques y que encontró obstáculos para compartirla entre organismos. Se registra su testimonio, no una atribución de responsabilidad penal."
+          {
+            "topic": "Intercambio de información entre el FBI y la CIA antes del 11-S",
+            "speaker": "Mark Rossini (autopresentación transcrita; voz no cotejada con audio)",
+            "statement": "El antiguo agente del FBI explica que fue enlace con una unidad de contraterrorismo de la CIA que seguía a Osama bin Laden. Según su propio testimonio, a comienzos de 2000 quiso compartir información sobre sospechosos con el FBI y encontró obstáculos institucionales. Registrar esa versión no equivale a demostrar una ocultación deliberada ni una responsabilidad penal de terceros.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "mark Rosini exagente del FBI especializado en contraterrorismo"
+          }
         ]
       }
     },
@@ -141,7 +159,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "El entrevistado comenta acuerdos de seguros y la relación del propietario del complejo con riesgos de atentado; sus hipótesis sobre acceso previo a información se conservan como atribuciones, no como hechos establecidos."
+          {
+            "topic": "Seguros del World Trade Center y sospechas sobre avisos previos",
+            "speaker": "Interlocutor de la fuente 14 (turno pendiente de cotejo)",
+            "statement": "Durante la entrevista se menciona a Larry Silverstein al tratar la contratación de seguros de las Torres Gemelas y la percepción de riesgo de atentados antes del 11-S. El hablante plantea hipótesis sobre el conocimiento previo de determinadas amenazas, pero el segmento no incorpora contratos ni pruebas de que Silverstein conociera anticipadamente el atentado. La alegación queda expresamente sin corroborar.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Larry Silverstein asegura esas torres"
+          }
         ]
       }
     },
