@@ -48,7 +48,15 @@
       },
       "sources": {
         "9": [
-          "Pedro Sánchez ganó las primarias del PSOE de 2017; Villarejo atribuye a su entorno mecanismos de financiación y relaciones políticas controvertidas y comenta su posición en el debate sobre Pegasus."
+          {
+                "topic": "Primarias del PSOE de 2017 y financiación de campaña",
+                "speaker": "José Manuel Villarejo",
+                "statement": "Villarejo sostiene que la campaña de Pedro Sánchez en las primarias socialistas de 2017 habría recibido fondos por medio de una organización que identifica como Bancal de Rosas. Insinúa aportaciones canalizadas a nombre de terceros y vincula esos recursos, sin pruebas suficientes en la entrevista, a negocios del entorno familiar de Sánchez. Estas acusaciones se registran como afirmaciones de Villarejo y no como financiación ilícita demostrada.",
+                "status": "alegacion_no_verificada",
+                "transcriptVerified": true,
+                "audioVerified": false,
+                "minuteVerified": false
+          }
         ],
         "10": [
           "Pedro Sánchez es citado en el análisis sobre la continuidad de la legislatura y las decisiones del Gobierno español en materia de defensa, gasto y relaciones exteriores."
@@ -63,7 +71,15 @@
       },
       "sources": {
         "9": [
-          "Pablo Iglesias aparece en el relato de Villarejo sobre el denominado caso Dina, el tratamiento de información extraída de un teléfono y las intervenciones públicas de Podemos."
+          {
+                "topic": "El caso Dina y acusaciones cruzadas sobre información de un teléfono",
+                "speaker": "José Manuel Villarejo",
+                "statement": "Villarejo comenta los procedimientos judiciales derivados de la difusión de materiales del teléfono de Dina Bousselham, antigua colaboradora de Pablo Iglesias. Rechaza las imputaciones dirigidas contra él y atribuye motivaciones políticas a las acusaciones de Iglesias. La entrevista ofrece la versión del propio investigado, no una reconstrucción judicial independiente.",
+                "status": "declaracion_de_parte",
+                "transcriptVerified": true,
+                "audioVerified": false,
+                "minuteVerified": false
+          }
         ]
       }
     },
@@ -75,7 +91,15 @@
       },
       "sources": {
         "9": [
-          "Hugo Carvajal es mencionado por Villarejo como interlocutor de información sobre Venezuela y sobre unas presuntas transferencias de recursos al ámbito político español."
+          {
+                "topic": "Conversaciones en prisión y presunta financiación política",
+                "speaker": "José Manuel Villarejo",
+                "statement": "Villarejo afirma que coincidió durante meses con Hugo Carvajal en la prisión de Estremera, donde este le habría relatado mecanismos de pagos vinculados a PDVSA y contactos con personas relacionadas con Podemos. Asegura haber trasladado anotaciones a un juzgado y sostiene que Carvajal disponía de información sobre empresas españolas en Venezuela. La entrevista no permite acreditar por sí sola esos pagos, las identidades implicadas ni la existencia de las pruebas alegadas.",
+                "status": "alegacion_no_verificada",
+                "transcriptVerified": true,
+                "audioVerified": false,
+                "minuteVerified": false
+          }
         ]
       }
     },
@@ -137,7 +161,15 @@
       },
       "sources": {
         "9": [
-          "José Luis Rodríguez Zapatero es citado junto con dirigentes venezolanos en las acusaciones que Villarejo formula sobre intereses económicos y relaciones políticas con Venezuela."
+          {
+                "topic": "Acusaciones sobre vínculos con Venezuela y presunta carta de Carvajal",
+                "speaker": "José Manuel Villarejo",
+                "statement": "Villarejo afirma que sus conversaciones con Hugo Carvajal podrían comprometer a determinadas figuras españolas relacionadas con Venezuela, entre las que cita a José Luis Rodríguez Zapatero. Relata además que un intermediario le transmitió que Zapatero dispondría de una carta de Carvajal exculpándolo. Se trata de la versión ofrecida por Villarejo: no exhibe esa carta ni documentos suficientes para contrastar las acusaciones.",
+                "status": "alegacion_no_verificada",
+                "transcriptVerified": true,
+                "audioVerified": false,
+                "minuteVerified": false
+          }
         ]
       }
     },
@@ -233,7 +265,15 @@
       },
       "sources": {
         "9": [
-          "Margarita Robles es mencionada al hablar de Pegasus, inteligencia y la supuesta existencia de información privada de altos cargos."
+          {
+                "topic": "Pegasus y supuesta información privada de altos cargos",
+                "speaker": "José Manuel Villarejo",
+                "statement": "Villarejo especula sobre el material que los servicios de inteligencia marroquíes habrían obtenido mediante espionaje a responsables españoles. Incluye a Margarita Robles entre las personas sobre cuyas vidas privadas sugiere la existencia de información comprometida. No presenta en la entrevista pruebas verificables sobre ese supuesto material ni sobre su autenticidad.",
+                "status": "alegacion_no_verificada",
+                "transcriptVerified": true,
+                "audioVerified": false,
+                "minuteVerified": false
+          }
         ]
       }
     },
@@ -419,7 +459,15 @@
       },
       "sources": {
         "9": [
-          "José Bono es mencionado en afirmaciones de Villarejo sobre patrimonio privado y evolución económica de responsables políticos."
+          {
+                "topic": "Valoraciones sobre patrimonio y caballos de José Bono",
+                "speaker": "José Manuel Villarejo",
+                "statement": "Villarejo cuestiona la evolución patrimonial de José Bono y menciona como ejemplo la adquisición de caballos costosos. Asegura conocer a algunas personas relacionadas con esas ventas, pero no aporta documentación patrimonial ni acredita irregularidad alguna. Es una insinuación atribuida al entrevistado, no una conclusión de la investigación.",
+                "status": "alegacion_no_verificada",
+                "transcriptVerified": true,
+                "audioVerified": false,
+                "minuteVerified": false
+          }
         ]
       }
     },
