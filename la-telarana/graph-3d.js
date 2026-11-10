@@ -1,6 +1,6 @@
 (function(){
 "use strict";
-const topics=[["inteligencia","Inteligencia","#76d0ec"],["oriente","Oriente Medio","#e6b978"],["espana","España","#b9a3ea"],["historia","Historia y nazismo","#ec8f89"],["tecnologia","Tecnología","#8bdbbd"],["finanzas","Finanzas y poder","#bbd68c"],["global","Política internacional","#e6ad91"]];
+const topics=[["inteligencia","Inteligencia","#76d0ec"],["oriente","Oriente Medio","#e6b978"],["espana","España","#b9a3ea"],["historia","Historia","#ec8f89"],["tecnologia","Tecnología","#8bdbbd"],["finanzas","Finanzas y poder","#bbd68c"],["global","Política internacional","#e6ad91"]];
 const groups={
 inteligencia:"mossad kidón metsada shin-bet servicio-cni cia mi6 unidad-8200 dgst-marruecos dgse-francia si-australia policia-guardia-civil eric-frattini jorge-dezcallar meir-amit danny-yatom yossi-cohen meir-dagan david-barnea tamir-pardo roman-gofman alberto-saiz john-ratcliffe",
 oriente:"david-ben-gurion golda-meir ali-hassan-salameh ilich-ramirez-sanchez ahmed-bouchiki shimon-peres hussein-jordania ahmed-yassin abdel-aziz-al-rantisi yitzhak-shamir mahmoud-abbas ehud-barak yasser-arafat ariel-sharon benjamin-netanyahu ali-khamenei mojtaba-khamenei gamal-abdel-nasser hamas hizbula septiembre-negro autoridad-palestina fuerzas-israel guardia-revolucionaria sayeret-matkal",
@@ -118,18 +118,29 @@ function make(options){
    const active=theme===t.id,muted=theme!=="todos"&&!active;
    const near=clip(.67-t.centre.depth/(ORB_RADIUS*2.5),.17,1);
    const alpha=(active?1:muted?.17:1)*near;
-   ctx.save();ctx.globalAlpha=alpha;
-   ctx.beginPath();
-   for(let j=0;j<=64;j++){
+   // Nube cromática proyectada sobre la superficie, sin bordes ni anillos temáticos.
+   // La huella sigue la perspectiva del orbe y se desvanece suavemente hacia el exterior.
+   const edgePoints=[];
+   for(let j=0;j<64;j++){
     const world=surfacePoint(t.cap.n,t.cap.u,t.cap.v,
       j*2*PI/64,t.cap.angle,ORB_RADIUS+8);
-    const p=proj(world);
-    if(!j)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);
+    edgePoints.push(proj(world));
    }
-   ctx.closePath();
-   ctx.fillStyle=color(t.tint,active?.13:.072);ctx.fill();
-   ctx.strokeStyle=color(t.tint,active?.9:.52);
-   ctx.lineWidth=active?2.3:1.4;ctx.stroke();
+   const bx=edgePoints.map(p=>p.x),by=edgePoints.map(p=>p.y);
+   const left=Math.min(...bx),right=Math.max(...bx),top=Math.min(...by),bottom=Math.max(...by);
+   const fogCx=(left+right)/2,fogCy=(top+bottom)/2;
+   const fogRx=Math.max(22,(right-left)*.57),fogRy=Math.max(18,(bottom-top)*.57);
+   ctx.save();
+   ctx.globalAlpha=alpha;
+   ctx.translate(fogCx,fogCy);
+   ctx.scale(fogRx,fogRy);
+   const fog=ctx.createRadialGradient(0,0,0,0,0,1);
+   fog.addColorStop(0,color(t.tint,active?.28:.20));
+   fog.addColorStop(.36,color(t.tint,active?.20:.14));
+   fog.addColorStop(.72,color(t.tint,active?.075:.050));
+   fog.addColorStop(1,color(t.tint,0));
+   ctx.beginPath();ctx.arc(0,0,1,0,2*PI);
+   ctx.fillStyle=fog;ctx.fill();
    ctx.restore();
    const dx=t.centre.x-middle.x,dy=t.centre.y-middle.y,len=Math.hypot(dx,dy);
    const d=len>22?len:radius*.7;
@@ -310,10 +321,10 @@ function make(options){
   return nearest;
  }
  const point=e=>{const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}};
- canvas.addEventListener("pointerdown",e=>{if(e.button!==0)return;markInteraction();e.preventDefault();canvas.setPointerCapture(e.pointerId);down.set(e.pointerId,point(e));drag={begin:point(e),moved:false,pan:e.shiftKey}});
+ canvas.addEventListener("pointerdown",e=>{if(e.button!==0)return;markInteraction();e.preventDefault();canvas.setPointerCapture(e.pointerId);canvas.style.cursor="grabbing";down.set(e.pointerId,point(e));drag={begin:point(e),moved:false,pan:e.shiftKey}});
  canvas.addEventListener("pointermove",e=>{
   const p=point(e);
-  if(down.has(e.pointerId)){markInteraction();
+  if(down.has(e.pointerId)){markInteraction();canvas.style.cursor="grabbing";
    const last=down.get(e.pointerId),dx=p.x-last.x,dy=p.y-last.y;down.set(e.pointerId,p);if(!drag)return;
    drag.moved=drag.moved||Math.hypot(p.x-drag.begin.x,p.y-drag.begin.y)>5;
    if(down.size>1||drag.pan){panX+=dx;panY+=dy}else{yaw+=dx*.008;pitch=clip(pitch+dy*.005,-1.1,1.1);basePitch=pitch}redraw();
@@ -330,9 +341,9 @@ function make(options){
    canvas.style.cursor=found?"pointer":"grab";
   }
  });
- canvas.addEventListener("pointerup",e=>{markInteraction();const p=point(e),click=drag&&!drag.moved&&down.size===1;down.delete(e.pointerId);if(!down.size)drag=null;if(click){const entity=hit(p);if(entity)options.onSelect?.(entity)}redraw()});
- canvas.addEventListener("pointercancel",e=>{down.delete(e.pointerId);if(!down.size)drag=null});
- canvas.addEventListener("pointerleave",()=>{hover=null;hoverEdge=null;hint.hidden=true;redraw()});
+ canvas.addEventListener("pointerup",e=>{markInteraction();const p=point(e),click=drag&&!drag.moved&&down.size===1;down.delete(e.pointerId);if(!down.size)drag=null;canvas.style.cursor=down.size?"grabbing":hit(p)?"pointer":"grab";if(click){const entity=hit(p);if(entity)options.onSelect?.(entity)}redraw()});
+ canvas.addEventListener("pointercancel",e=>{down.delete(e.pointerId);if(!down.size)drag=null;canvas.style.cursor=down.size?"grabbing":"grab"});
+ canvas.addEventListener("pointerleave",()=>{hover=null;hoverEdge=null;hint.hidden=true;if(!down.size)canvas.style.cursor="grab";redraw()});
  // El zoom mantiene fijo el punto situado bajo el cursor / los dedos.
  function zoomAt(px,py,factor){
   markInteraction();const next=clip(zoom*factor,.06,10),ratio=next/zoom;
