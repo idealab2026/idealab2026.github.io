@@ -938,7 +938,7 @@ async function hydrateTimelineConnections(){
   if(!response.ok)return;
   var doc=await response.json();
   timelineHitos=Array.isArray(doc.items)?doc.items.filter(function(e){
-   return e&&/^study-(?:v\d+|vf\d+)-[a-z0-9-]+$/.test(e.id||"")&&
+   return e&&/^study-(?:v\d+|vf\d+|f\d+)-[a-z0-9-]+$/.test(e.id||"")&&
     e.investigation&&e.investigation.status==="hecho_documentado"&&
     Array.isArray(e.investigation.relatedTelarana);
   }):[];
