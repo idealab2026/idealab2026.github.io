@@ -302,6 +302,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./personas-fuentes-13.js?v=20261110-revision13-1"></script>
 <script src="./personas-fuentes-14.js?v=20261110-revision14-1"></script>
 <script src="./personas-fuentes-16.js?v=20261110-revision16-1"></script>
+<script src="./personas-fuentes-17.js?v=20261110-revision17-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261110-perfiles-2"></script>
 <script>
@@ -397,7 +398,7 @@ function mergeSourceProfiles(orderFilter){
   }
   for(var order of Object.keys(p.sources)){
    if(orderFilter&&order!==orderFilter)continue;
-   var episode=({"9":"f09-episodio","10":"f10-episodio","11":"f11-episodio","12":"f12-episodio","13":"f13-episodio","14":"f14-episodio","16":"f16-episodio","18":"f18-episodio","21":"f21-episodio"})[order];
+   var episode=({"9":"f09-episodio","10":"f10-episodio","11":"f11-episodio","12":"f12-episodio","13":"f13-episodio","14":"f14-episodio","16":"f16-episodio","17":"f17-episodio","18":"f18-episodio","21":"f21-episodio"})[order];
    if(!known.has(episode))continue;
    var pair=[node.id,episode].sort().join("::");
    if(pairs.has(pair))continue;
@@ -545,7 +546,7 @@ function load(){
   var doc=window[m.key];
   auditLoadStep(m.label,function(){if(m.kind==="mergePodcastStudy")mergePodcastStudy(doc);else mergeNewEpisode(doc)},Boolean(doc));
  });
- ["9","10","11","12","13","14","16","18","21"].forEach(function(order){
+ ["9","10","11","12","13","14","16","17","18","21"].forEach(function(order){
   auditLoadStep("Perfiles de la fuente "+order,function(){mergeSourceProfiles(order)},Boolean(window.IDEA_TELARANA_PERSON_SOURCE_REPORTS));
  });
  seedError=!data.nodes.length;
