@@ -11,12 +11,14 @@ const profiles=Object.entries(lib.profiles).filter(([_,p])=>Array.isArray(p.sour
 assert(profiles.length>=23,"Faltan perfiles F19");
 for(const [name,p] of profiles){
  assert(p.who?.length>=55,"Falta biografía de "+name);
- assert(p.sources["19"].length&&p.sources["19"].every(x=>x.length>=65),"Falta atribución "+name);
+ assert(p.sources["19"].length&&p.sources["19"].every(x=>typeof x==="string"?x.length>=65:typeof x?.statement==="string"&&x.statement.length>=65&&x.topic&&x.speaker&&x.status&&x.transcriptAnchor),"Falta atribución "+name);
 }
 for(const name of ["Fernando Díaz Villanueva","Lorenzo Ramírez","Juan Francisco Calero","Borja Fernández","Peter Thiel","Larry Fink"]){
  assert(lib.profiles[name]?.sources?.["19"],"Falta persona citada: "+name);
 }
-assert(lib.profiles["Peter Thiel"].sources["19"].some(x=>x.includes("requiere cotejo del audio")),"No se marca ambigüedad de ASR Peter Z");
+assert(lib.profiles["Peter Thiel"].sources["19"].some(x=>x.status==="identidad_pendiente"&&x.transcriptAnchor.includes("Peter Z")&&x.audioVerified===false),"No se marca ambigüedad de ASR Peter Z");
+assert(lib.profiles["Alexander Haig"].sources["19"].some(x=>x.status==="identidad_pendiente"),"No se marca el nombre fonético Alexander Hey");
+assert(Object.entries(lib.profiles).filter(([n,p])=>p.sources?.["19"]).every(([n,p])=>p.sources["19"].every(c=>c.speaker.includes("sin diarizar")&&c.minuteVerified===false)),"No inventar turnos o minutos de la mesa");
 const html=read("la-telarana/index.html"),flow=read(".github/workflows/pages.yml");
 assert(html.includes('src="./personas-fuentes-19.js'),"No se carga capa F19");
 assert(html.includes('"19":"f19-episodio"'),"No se conecta al episodio F19");
