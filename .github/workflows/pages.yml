@@ -69,6 +69,8 @@ jobs:
         run: node scripts/test_telarana_source20_profiles.mjs
       - name: Validar fuente 22, perfiles y Marcha Verde
         run: node scripts/test_telarana_source22_profiles.mjs
+      - name: Verificar fuente 23, atribuciones y Tratado de París
+        run: node scripts/test_telarana_source23_profiles.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
         run: node scripts/test_telarana_load_audit.mjs
       - name: Validar transcripción y evidencias de la fuente 02
@@ -144,6 +146,7 @@ jobs:
           cp la-telarana/personas-fuentes-19.js dist/la-telarana/personas-fuentes-19.js
           cp la-telarana/personas-fuentes-20.js dist/la-telarana/personas-fuentes-20.js
           cp la-telarana/personas-fuentes-22.js dist/la-telarana/personas-fuentes-22.js
+          cp la-telarana/personas-fuentes-23.js dist/la-telarana/personas-fuentes-23.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
