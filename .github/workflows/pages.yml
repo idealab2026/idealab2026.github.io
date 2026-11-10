@@ -57,6 +57,8 @@ jobs:
         run: node scripts/test_telarana_source13_profiles.mjs
       - name: Verificar perfiles y contraste numérico de fuente 14
         run: node scripts/test_telarana_source14_profiles.mjs
+      - name: Validar fuente primaria 15 y su trazabilidad
+        run: node scripts/test_telarana_source15.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
         run: node scripts/test_telarana_load_audit.mjs
       - name: Validar transcripción y evidencias de la fuente 02
@@ -115,6 +117,7 @@ jobs:
           cp la-telarana/podcast-vaquero-67-villarejo.js dist/la-telarana/podcast-vaquero-67-villarejo.js
           # NUEVAS FUENTES EXPLICITAMENTE AUTORIZADAS para publicar (sin transcripciones ni seguimiento privado).
           cp la-telarana/fuente-09-villarejo-revision.js dist/la-telarana/fuente-09-villarejo-revision.js
+          cp la-telarana/fuente-15-estrategia-seguridad-2025.js dist/la-telarana/fuente-15-estrategia-seguridad-2025.js
           for n in 10 11 12 13 14 16 17 19 20 22 23 24 25; do
             cp "la-telarana/fuente-${n}-revision-inicial.js" "dist/la-telarana/fuente-${n}-revision-inicial.js"
           done
