@@ -1467,6 +1467,34 @@
         ],
         "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
       }
+    },
+    {
+      "id": "study-f14-comision-11s-informe-2004",
+      "y": 2004.5546448087432,
+      "t": "La Comisión del 11-S publica su informe final",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 14 · contraste archivístico oficial",
+      "d": "El 22 de julio de 2004 la Comisión Nacional sobre los Ataques Terroristas contra Estados Unidos publicó su informe público final. El documento reconstruye la preparación de los atentados, la respuesta institucional y las reformas propuestas. La fuente 14 discute distintos aspectos de esa investigación, pero sus opiniones sobre lagunas o responsabilidades se mantienen separadas del hecho de la publicación.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2004-07-22",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 14,
+        "sourceTitle": "11-S: cronología de los ataques · Fuente 14",
+        "sourceUrl": "https://www.youtube.com/watch?v=iPwbiY1F3Rg",
+        "confirmedBy": {
+          "label": "National Commission on Terrorist Attacks Upon the United States · Informe final",
+          "url": "https://9-11commission.gov/"
+        },
+        "relatedTelarana": [
+          "f14-sept11",
+          "f14-bush"
+        ],
+        "methodologicalLimits": "Se documenta la publicación y fecha del informe; las críticas y relatos personales de la entrevista no se convierten por esta inclusión en hechos acreditados."
+      }
     }
   ]
 }
