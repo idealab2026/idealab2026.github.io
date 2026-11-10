@@ -269,6 +269,13 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     }
   },
   "curated": {
+    "on-delcy-rodriguez": {
+      "text": "Delcy Rodríguez es una abogada y dirigente política venezolana que fue vicepresidenta ejecutiva de Venezuela durante el Gobierno de Nicolás Maduro. Tras la captura de Maduro por fuerzas estadounidenses el 3 de enero de 2026, asumió la presidencia interina. En 2026 su Gobierno inició cambios en la relación diplomática y petrolera con Estados Unidos. Esta trayectoria institucional es independiente de las acusaciones y conjeturas sobre servicios de inteligencia recogidas en las fuentes de La Telaraña.",
+      "source": "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/",
+      "sourceTitle": "Cámara de los Comunes del Reino Unido · Venezuela tras enero de 2026",
+      "also": "https://www.investing.com/news/commodities-news/analysisvenezuela-president-returns-from-us-visit-with-no-deals-no-firm-election-date-4918550",
+      "reviewedAt": "2026-11-10"
+    },
     "vf150-meir-dagan": {
       "text": "Meir Dagan (1945–2016) fue un general israelí y director del Mossad, el servicio de inteligencia exterior de Israel, entre 2002 y 2011. Nació en la antigua Unión Soviética y emigró con su familia a Israel en 1950. Desarrolló una larga carrera en las Fuerzas de Defensa de Israel, con responsabilidades militares y de inteligencia, y fue una figura destacada de la estrategia israelí ante el programa nuclear iraní. Falleció en Tel Aviv en marzo de 2016.",
       "source": "https://www.runi.ac.il/media/zx2onhkr/meir-dagan.pdf",
