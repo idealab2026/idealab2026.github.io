@@ -47,7 +47,7 @@ assert(events[0].investigation.sourceTitle.includes("contexto externo"));
 assert(events[0].investigation.relatedTelarana.every(id=>ids.has(id)));
 const source=progress.sourceCatalog.entries.find(s=>s.order===8);
 assert(source.tracking.initiated&&source.tracking.docTranscriptionCreated&&source.tracking.inReview);
-assert.equal(source.tracking.transcriptContentImported,false);
+assert.equal(source.tracking.transcriptContentImported,true);
 assert.equal(source.tracking.complete,false);
 assert.equal(source.tracking.imageRuntimeVerified,false);
 assert(html.includes("podcast-vaquero-67-villarejo.js?v="));
