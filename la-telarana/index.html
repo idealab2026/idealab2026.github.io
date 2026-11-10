@@ -275,9 +275,9 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-25-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./photo-catalog.js?v=20261110-search-centre-3"></script>
 <script src="./person-biographies.js?v=20261110-search-centre-3"></script>
-<script src="./personas-fuentes-18-21.js?v=20261110-perfiles-1"></script>
+<script src="./personas-fuentes-18-21.js?v=20261110-perfiles-2"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
-<script src="./graph-3d.js?v=20261110-search-centre-3"></script>
+<script src="./graph-3d.js?v=20261110-perfiles-2"></script>
 <script>
 (function(){
 "use strict";
@@ -687,8 +687,16 @@ function renderGraph(q){
   group.dataset.id=n.id;
   group.append(S("rect",{x:0,y:0,width:CARD_W,height:CARD_H,rx:12}));
   var photo=displayPhoto(n);
-  if(photo){group.append(S("image",{x:9,y:9,width:61,height:101,href:photo,preserveAspectRatio:"xMidYMid slice"}))}
-  else{group.append(S("circle",{cx:39,cy:52,r:27,"class":"node-avatar"}));var init=S("text",{x:39,y:60,"text-anchor":"middle","class":"node-letter"});init.textContent=iconForEntity(n);group.append(init)}
+  if(photo){
+   var portrait=S("image",{x:9,y:9,width:61,height:101,href:photo,preserveAspectRatio:"xMidYMid slice"});
+   portrait.addEventListener("error",function(){
+    portrait.remove();
+    var circle=S("circle",{cx:39,cy:52,r:27,"class":"node-avatar"});
+    var icon=S("text",{x:39,y:60,"text-anchor":"middle","class":"node-letter"});
+    icon.textContent=iconForEntity(n);group.append(circle,icon);
+   });
+   group.append(portrait);
+  }else{group.append(S("circle",{cx:39,cy:52,r:27,"class":"node-avatar"}));var init=S("text",{x:39,y:60,"text-anchor":"middle","class":"node-letter"});init.textContent=iconForEntity(n);group.append(init)}
   addGraphTextLines(group,n.name||"Entidad",80,29,17,2,"node-name",15);
   addGraphTextLines(group,n.subtitle||n.kind||"",80,70,19,2,"node-subtitle",13);
   addGraphTextLines(group,n.kind||"",80,110,18,1,"node-kind",11);
@@ -959,7 +967,9 @@ function showRelationshipEndpoints(panel,edge){
 }
 function inspect(){syncInspectorDrawer();if(isGraphExpanded())$("inspector").scrollTop=0;var p=$("details");p.replaceChildren();if(!selection){p.append(N("h2","Selecciona una entidad"));p.append(N("p","Haz clic en una ficha o en una línea para consultar sus detalles y fuentes."));return;}
 var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x){return x.id===selection.id});if(!obj){selection=null;inspect();return;}
-if(selection.kind==="node"){var image=displayPhoto(obj);if(!image){var fallback=N("div",iconForEntity(obj),"icon-fallback portrait");fallback.setAttribute("role","img");fallback.setAttribute("aria-label","Icono de "+(obj.kind||"entidad"));p.append(fallback)}if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.kind==="Persona"){showPersonBiography(p,obj);showPersonResearch(p,obj)}else{if(obj.archiveNote){p.append(N("div","Texto original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"))}else if(obj.note){p.append(N("p",obj.note))}showPodcastNotes(p,obj.podcastNotes)}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showTimelineForNode(p,obj);showNodeRelationships(p,obj);}
+if(selection.kind==="node"){var image=displayPhoto(obj);if(!image){var fallback=N("div",iconForEntity(obj),"icon-fallback portrait");fallback.setAttribute("role","img");fallback.setAttribute("aria-label","Icono de "+(obj.kind||"entidad"));p.append(fallback)}if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;
+img.onerror=function(){var replacement=N("div",iconForEntity(obj),"icon-fallback portrait");replacement.setAttribute("role","img");replacement.setAttribute("aria-label","Icono de "+(obj.kind||"entidad"));img.replaceWith(replacement)};
+p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.kind==="Persona"){showPersonBiography(p,obj);showPersonResearch(p,obj)}else{if(obj.archiveNote){p.append(N("div","Texto original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"))}else if(obj.note){p.append(N("p",obj.note))}showPodcastNotes(p,obj.podcastNotes)}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showTimelineForNode(p,obj);showNodeRelationships(p,obj);}
 else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",relationStatusLabel(obj),"badge"));showRelationshipEndpoints(p,obj);if(obj.note)p.append(N("p",obj.note));if(Array.isArray(obj.relatedTypes)&&obj.relatedTypes.length){var tags=N("p","Otros tipos de vínculo descritos: "+obj.relatedTypes.join(" · "),"source-hint");p.append(tags)}showPodcastNotes(p,obj.podcastNotes);if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,/^(https:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i.test(obj.source)?"Abrir minuto de la relación":"Consultar documento de evidencia");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
 }
 // Solo lectura: no existen acciones de editar o eliminar.
