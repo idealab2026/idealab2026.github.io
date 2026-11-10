@@ -56,7 +56,11 @@ const context=JSON.parse(contextSource.split("window.IDEA_TELARANA_FRATTINI_EXTE
 assert(context.nodes.some(n=>n.id==="vf150-khaled-meshaal"),"Falta Khaled Mashal en el grafo");
 assert(context.edges.length>=5&&context.edges.every(e=>e.confidence==="documentado"&&/^https:\/\//.test(e.source)),"Faltan vínculos sustentados por documentos");
 assert(graphHTML.includes('investigacion-frattini-contexto.js?v='),"Falta cargar el contexto histórico");
-assert(graphHTML.includes('mergePodcastStudy(window.IDEA_TELARANA_FRATTINI_EXTERNAL)'),"Falta integrar el contexto en el grafo");
-assert(graphHTML.includes('study-(?:v\\d+|vf\\d+)-'),"La Telaraña no acepta la navegación inversa desde fuentes complementarias");
+const graphModules=/var modules=(\[[^\n]+\]);/.exec(graphHTML);
+assert(graphModules,"Falta el registro de carga del grafo");
+const registry=JSON.parse(graphModules[1]);
+assert(registry.some(m=>m.key==="IDEA_TELARANA_FRATTINI_EXTERNAL"&&m.kind==="mergePodcastStudy"),"El contexto Frattini no está conectado al registro de carga");
+assert(graphHTML.includes('mergePodcastStudy(doc)'),"El registro no ejecuta la fusión documental");
+assert(graphHTML.includes('study-(?:v\\d+|vf\\d+|f\\d+)-'),"La Telaraña no admite las identidades de hitos documentales y fuentes recientes");
 assert(historyHTML.includes("timeline-v4.js?v="),"No se actualizó la caché del visor");
 console.log("OK: "+feed.items.length+" acontecimientos contrastados, sin duplicados ni alegaciones convertidas en hechos");
