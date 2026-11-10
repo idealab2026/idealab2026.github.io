@@ -1338,6 +1338,14 @@ function init(){
   if(!next)return;
   period=next;periodUI();savedYear=next.at;
   if(viewMode==="timeline")jumpToYear(next.at);
+  else if(viewMode==="map"){
+   mapYearActive=true;mapYear=Math.round(next.at);
+   $("map-year-toggle").checked=true;
+   $("map-year-range").disabled=false;$("map-year-number").disabled=false;
+   $("map-year-range").value=String(Math.max(-3000,mapYear));
+   $("map-year-number").value=String(mapYear);
+   render();
+  }
  });
  $("filters").addEventListener("change",function(e){
   if(e.target.value!=="Todas"&&!cats.includes(e.target.value))return;
