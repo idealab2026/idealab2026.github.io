@@ -27,7 +27,8 @@ for(const e of feed.items){
  assert(e.d&&e.d.length>120,"Descripción insuficiente");
  assert(Array.isArray(e.g)&&e.g.every(v=>["Europa","Asia","África","América","Oceanía","Antártida","Mundial"].includes(v)),"Geografía inválida");
  assert(inv.confirmedBy&&/^https:\/\//.test(inv.confirmedBy.url),"Falta fuente contrastada externa");
- assert(/^https:\/\/www\.youtube\.com\/watch\?v=/.test(inv.sourceUrl),"Falta episodio");
+ if(inv.sourceType==="pdf_document")assert(/^https:\/\/www\.whitehouse\.gov\/wp-content\/uploads\/2025\/12\/2025-National-Security-Strategy\.pdf$/.test(inv.sourceUrl),"Falta PDF institucional original");
+ else assert(/^https:\/\/www\.youtube\.com\/watch\?v=/.test(inv.sourceUrl),"Falta episodio");
  assert(Array.isArray(inv.relatedTelarana)&&inv.relatedTelarana.length>=1,"Sin enlace a La Telaraña");
  assert(inv.methodologicalLimits&&inv.methodologicalLimits.length>=60,"Sin límites de la evidencia");
  const key=normal(e.t)+"|"+year;
