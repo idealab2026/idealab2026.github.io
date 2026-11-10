@@ -1554,6 +1554,34 @@
         ],
         "methodologicalLimits": "La declaración bilateral acredita la posición oficial y el acuerdo; no confirma todas las valoraciones del entrevistado sobre intenciones privadas, coerción o supuestos compromisos no publicados."
       }
+    },
+    {
+      "id": "study-f19-asalto-capitolio-2021",
+      "y": 2021.013698630137,
+      "t": "Asalto al Capitolio de Estados Unidos durante la certificación electoral",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 19 · informe del Inspector General",
+      "d": "El 6 de enero de 2021, una multitud irrumpió en el Capitolio de Estados Unidos mientras el Congreso tramitaba la certificación de los resultados electorales de 2020. La Policía del Capitolio y su Inspector General investigaron las medidas de seguridad y la respuesta a los acontecimientos. El episodio de la fuente 19 menciona el Capitolio al debatir el retorno de Donald Trump; su interpretación política se mantiene separada de la fecha y la irrupción documentadas.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2021-01-06",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 19,
+        "sourceTitle": "El episodio más censurable · Inversión Racional",
+        "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+        "confirmedBy": {
+          "label": "U.S. Capitol Police Inspector General · Revisión de los sucesos del 6 de enero",
+          "url": "https://www.oversight.gov/reports/review-events-surrounding-january-6-2021-takeover-us-capitol"
+        },
+        "relatedTelarana": [
+          "f19-episodio",
+          "f19-trump"
+        ],
+        "methodologicalLimits": "La fecha y la irrupción se apoyan en documentación oficial. El informe no convierte por sí solo el análisis político de los participantes del podcast en hechos acreditados, ni atribuye delitos individuales a partir de sus comentarios."
+      }
     }
   ]
 }
