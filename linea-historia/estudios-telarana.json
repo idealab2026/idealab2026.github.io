@@ -1495,6 +1495,35 @@
         ],
         "methodologicalLimits": "Se documenta la publicación y fecha del informe; las críticas y relatos personales de la entrevista no se convierten por esta inclusión en hechos acreditados."
       }
+    },
+    {
+      "id": "study-f15-nss-transmision-congreso-2025",
+      "y": 2025.9178082191781,
+      "t": "Trump remite al Congreso la Estrategia de Seguridad Nacional de 2025",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 15 · comunicación presidencial",
+      "d": "El 2 de diciembre de 2025, Donald Trump remitió al Congreso estadounidense el documento de Estrategia de Seguridad Nacional correspondiente a su Administración. El documento tiene fecha de portada de noviembre de 2025 y define prioridades oficiales hacia el hemisferio occidental, Asia, Europa, Oriente Medio y África. Se registra el acto de transmisión como hecho, no las afirmaciones de éxito ni los pronósticos geopolíticos contenidos en el texto.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-12-02",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 15,
+        "sourceType": "pdf_document",
+        "sourceTitle": "2025 National Security Strategy · Casa Blanca",
+        "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf",
+        "confirmedBy": {
+          "label": "American Presidency Project · Mensaje al Congreso · 2 de diciembre de 2025",
+          "url": "https://www.presidency.ucsb.edu/documents/message-the-congress-transmitting-the-national-security-strategy-the-united-states-0"
+        },
+        "relatedTelarana": [
+          "f15-nss-document",
+          "f15-trump"
+        ],
+        "methodologicalLimits": "Se acredita la publicación/transmisión del documento, no la veracidad de todas sus afirmaciones políticas ni la identidad binaria con la copia original cargada en NotebookLM."
+      }
     }
   ]
 }
