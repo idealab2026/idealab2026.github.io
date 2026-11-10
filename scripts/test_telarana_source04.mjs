@@ -67,6 +67,7 @@ assert.equal(row.tracking.complete,false);
 assert.equal(row.tracking.imageRuntimeVerified,false);
 assert.equal(p.timeline.committedVerifiedEvents,hist.items.length);
 assert(page.includes("podcast-duque-lerma-historia.js?v="));
-assert(page.includes("mergeNewEpisode(window.IDEA_TELARANA_SOURCE04_HISTORICAL)"));
+const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(page)||[])[1]||"[]");
+assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE04_HISTORICAL"&&m.kind==="mergeNewEpisode")&&page.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE04_HISTORICAL");
 assert(!page.includes("source-review-rows")&&!page.includes("progreso-fuentes.json"),"No publish internal source tracker");
 console.log("OK: fuente 04 · 18 entidades, 23 relaciones documentadas, 9 biografías, 7 eventos fechados, transcripción pendiente y seguimiento privado");
