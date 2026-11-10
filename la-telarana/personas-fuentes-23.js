@@ -21,7 +21,15 @@ const extra={
       },
       "sources": {
         "23": [
-          "En este episodio presenta una interpretación crítica del proceso de integración europea, con especial atención al poder institucional, la financiación internacional y la influencia estadounidense."
+          {
+            "topic": "Tesis general sobre la integración europea",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cuestiona la interpretación de la integración europea como iniciativa autónoma de sus fundadores y sostiene que redes financieras, instituciones estadounidenses y organizaciones culturales influyeron decisivamente en su origen. El episodio expone sus argumentos, pero no convierte en hechos probados todos los vínculos o supuestas instrucciones encubiertas que describe.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false
+          }
         ]
       }
     },
@@ -180,7 +188,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente critica su gestión comunitaria y formula acusaciones sobre su entorno familiar y presuntos intereses farmacéuticos, que no se consideran hechos probados por esa declaración."
+          {
+            "topic": "Acusaciones sobre corrupción y entorno familiar",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez critica la trayectoria de Ursula von der Leyen desde el Ministerio de Defensa alemán hasta la Comisión Europea y formula acusaciones de corrupción y de intereses económicos farmacéuticos en su entorno familiar. Esas acusaciones no quedan demostradas en el episodio; sus supuestas motivaciones o beneficios no deben afirmarse como hechos.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "ursula Vonderleyen le puesto de Comisión Europea"
+          }
         ]
       }
     },
@@ -192,7 +209,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "En la conversación se analizan su estrategia nacional, las tensiones con gobiernos europeos y el papel de la política comercial estadounidense, desde la interpretación del entrevistado."
+          {
+            "topic": "Seguridad nacional y política industrial estadounidense",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez presenta la estrategia de seguridad nacional de Trump como expresión abierta de objetivos económicos y geopolíticos estadounidenses, y la compara con políticas anteriores de apertura de mercados europeos. Es una interpretación de continuidad estratégica, no prueba de una trama oculta entre presidentes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con Trump pues se ha puesto sobre la mesa"
+          }
         ]
       }
     },
@@ -204,7 +230,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Lorenzo Ramírez examina la relación de Rusia con Europa y la OTAN, y expone su interpretación de las negociaciones de seguridad posteriores a la Guerra Fría."
+          {
+            "topic": "Propuesta de garantías de seguridad y relación Rusia-OTAN",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez relata que, durante la etapa de Putin, se plantearon fórmulas de cooperación y posibles garantías de seguridad con la OTAN y Estados Unidos. Describe esas conversaciones como una oportunidad de integración que, a su juicio, no prosperó. El episodio no aporta acuerdos originales ni demuestra que Putin aceptara compromisos jurídicos concretos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "después de Yelsin con Putin en la presidencia de Rusia"
+          }
         ]
       }
     },
@@ -258,7 +293,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Es citado en relación con las negociaciones diplomáticas con Gorbachov y la discusión sobre el futuro de la seguridad europea a finales de la Guerra Fría."
+          {
+            "topic": "Conversaciones con Gorbachov sobre el fin de la Guerra Fría",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a James Baker al reconstruir las conversaciones occidentales con Gorbachov durante el final de la Guerra Fría. La transcripción yuxtapone los nombres de Reagan y Clinton en un orden cronológico impreciso, por lo que no permite fechar ni atribuir con seguridad un compromiso formal específico a Baker.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con James Baker en la época"
+          }
         ]
       }
     },
@@ -291,7 +335,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente lo menciona dentro de su reconstrucción del fin de la Guerra Fría y de los mensajes estadounidenses sobre el Muro de Berlín."
+          {
+            "topic": "Referencia al discurso sobre el Muro de Berlín",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "El conferenciante menciona a «Rigan» —identificación fonética probable de Reagan— mientras comenta las negociaciones de la fase final de la Guerra Fría y el mensaje estadounidense sobre la caída del Muro de Berlín. No atribuye a Reagan la firma de una garantía jurídica concreta en el fragmento; el nombre requiere cotejo audiovisual.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "y anteriormente con Rigan"
+          }
         ]
       }
     },
@@ -303,7 +356,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La entrevista lo menciona fonéticamente como «Medv» al comentar la cooperación energética entre Rusia y Alemania durante la etapa de Angela Merkel; la alusión exacta debe cotejarse con el audio."
+          {
+            "topic": "Referencia fonética incompleta a un acuerdo energético",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez dice que Merkel llegó a un acuerdo con alguien cuyo nombre se transcribe únicamente como «Medv» al explicar la dependencia energética entre Alemania y Rusia. La identificación con Dmitri Medvédev es provisional; no se puede confirmar el interlocutor ni el acuerdo específico sin escuchar el pasaje.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Merkel cuando llega a un acuerdo precisamente con Medv"
+          }
         ]
       }
     },
@@ -315,7 +377,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Lorenzo Ramírez analiza las relaciones energéticas con Rusia durante su mandato y presenta esas interdependencias como un factor estratégico relevante en el conflicto europeo."
+          {
+            "topic": "Dependencia energética entre Alemania y Rusia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que las relaciones de suministro energético entre la Alemania de Merkel y Rusia obedecían a necesidades económicas recíprocas. Evoca un supuesto acuerdo con una persona transcrita como «Medv» y lo considera una alianza natural; la identidad del interlocutor y el instrumento concreto no están documentados en esta entrevista.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Merkel cuando llega a un acuerdo precisamente con Medv"
+          }
         ]
       }
     },
@@ -348,7 +419,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente menciona su posicionamiento en la política europea y analiza las diferencias entre sus prioridades nacionales y determinados enfoques comunitarios."
+          {
+            "topic": "Ejemplo de conflicto entre élites nacionales y supranacionales",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez presenta a Meloni como ejemplo de dirigentes que disputan poder a las élites comunitarias y menciona a Hungría, Polonia y Austria en un análisis de la estrategia estadounidense hacia Europa. Es una valoración política general: el episodio no aporta un pacto concreto de Meloni con Estados Unidos.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "y ahí Meloni es un ejemplo"
+          }
         ]
       }
     },
@@ -360,7 +440,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "El entrevistado lo presenta como ejemplo de financiador político vinculado a sectores del Partido Demócrata estadounidense; el alcance de las relaciones que le atribuye se conserva como declaración."
+          {
+            "topic": "Ejemplo de financiación política en el Partido Demócrata",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez utiliza a Soros como ejemplo de una élite vinculada a donaciones políticas demócratas en Estados Unidos, que contrapone a empresarios de Silicon Valley cercanos al entorno de Trump. La comparación no documenta que Soros controle el partido ni convierte la financiación en una conducta ilícita.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se suele poner a Soros como personaje"
+          }
         ]
       }
     },
@@ -393,7 +482,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "La fuente alude a sus trabajos al hablar de interpretaciones de la geopolítica posteriores a la Guerra Fría y le atribuye vínculos con círculos de política exterior estadounidense."
+          {
+            "topic": "Consejo de Relaciones Exteriores y choque de civilizaciones",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona la teoría del choque de civilizaciones de Huntington y afirma que este participó en trabajos para el Consejo de Relaciones Exteriores y el Club de Roma. Además interpreta su obra como parte de un cambio de discurso geopolítico tras la Guerra Fría; las relaciones y motivaciones que le atribuye requieren contraste externo.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Huntington es uno de los hombres que hace informes"
+          }
         ]
       }
     },
@@ -405,7 +503,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "El entrevistado lo cita como uno de los autores que interpretaron el orden internacional tras la desaparición de la Unión Soviética."
+          {
+            "topic": "Referencia a la tesis del fin de la historia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona la tesis del fin de la historia de Fukuyama al describir el discurso estadounidense tras el colapso soviético. Lo presenta junto a Huntington y les atribuye relaciones institucionales con el Consejo de Relaciones Exteriores. La vinculación y la intencionalidad sugeridas quedan como afirmaciones de la fuente.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Fukuyama el de la historia terminado"
+          }
         ]
       }
     },
@@ -438,7 +545,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Se lo menciona junto a otros presidentes estadounidenses al plantear la tesis del entrevistado sobre estrategias exteriores preparadas previamente por asesores."
+          {
+            "topic": "Mención a presidentes y continuidad de objetivos exteriores",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Gerald Ford, Kennedy, Truman y Roosevelt al sostener que los presidentes estadounidenses recibían estrategias elaboradas por sus asesores. La generalización es una opinión del entrevistado y el episodio no identifica un plan concreto preparado para Ford.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "como Gerald Ford eh con Truman"
+          }
         ]
       }
     },
@@ -471,7 +587,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Es mencionado retrospectivamente por la fuente al hablar de decisiones presidenciales condicionadas, según su interpretación, por grandes redes de asesoramiento estratégico."
+          {
+            "topic": "Mención comparativa a asesores presidenciales",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Roosevelt aparece en una lista de presidentes utilizada por Ramírez para defender que los objetivos estratégicos estadounidenses tienen continuidad más allá de cada mandatario. No se aporta una operación específica atribuible a Roosevelt.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con Truman el propio Roosevelt"
+          }
         ]
       }
     },
@@ -483,7 +608,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "El entrevistado le atribuye una máxima sobre la escritura de la historia por los vencedores para introducir su interpretación crítica de los relatos sobre Europa."
+          {
+            "topic": "Cita atribuida sobre la escritura de la historia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez atribuye a Churchill una frase según la cual no le preocupa el juicio de los historiadores porque él mismo escribe la historia. La menciona como recurso retórico para hablar de los relatos de los vencedores; la autoría literal de esa cita no se comprueba en el episodio.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "hay una cita de Churchill también"
+          }
         ]
       }
     },
@@ -495,7 +629,16 @@ const extra={
       },
       "sources": {
         "23": [
-          "Se alude a su Libro Rojo al comparar símbolos y narrativas políticas con la difusión pública de la figura de Jean Monnet."
+          {
+            "topic": "Referencia comparativa al Libro Rojo",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez compara una campaña editorial para construir la figura de Monnet con el Libro Rojo asociado a Mao. Se trata de una analogía sobre propaganda y difusión cultural, no de una relación personal o histórica entre Mao y Monnet.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en referencia también al famoso libro rojo de Mao"
+          }
         ]
       }
     }
