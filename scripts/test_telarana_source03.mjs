@@ -39,7 +39,7 @@ for(const p of ["vf150-roberto-vaquero","ce26-joaquin-abad","rv145-felipe-vi"])a
 const row=catalog.sourceCatalog.entries.find(s=>s.order===3);
 assert.equal(row.status,"en_revision");
 assert.equal(row.tracking.docTranscriptionCreated,true);
-assert.equal(row.tracking.transcriptContentImported,false);
+assert.equal(row.tracking.transcriptContentImported,true);
 assert.equal(row.tracking.imageAtGraphNode,"configurada");
 assert.equal(row.reviewComplete,false);
 assert(!times.items.some(e=>e.investigation?.sourceOrder===3),"No inventar acontecimientos históricos de una sinopsis");
