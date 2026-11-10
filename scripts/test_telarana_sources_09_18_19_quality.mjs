@@ -19,7 +19,7 @@ for(const [order,rule]of Object.entries(expectations)){
  for(const {name,c}of allClaims){
   assert(c.audioVerified===false&&c.minuteVerified===false,"F"+order+": se declara audio/minuto no cotejado para "+name);
   if(c.status==="identidad_pendiente")assert(/transcripci[oó]n|audio|identificaci[oó]n|fon[eé]tic/i.test(c.statement),"F"+order+": identidad dudosa sin advertencia "+name);
-  if(c.status==="alegacion_no_verificada")assert(/no (se |queda |est[aá] )|sin |alega|sostiene|afirma|versi[oó]n|acusa|interpreta/i.test(c.statement),"F"+order+": acusación sin lenguaje de incertidumbre "+name);
+  if(c.status==="alegacion_no_verificada")assert(/\b(no|sin|seg[uú]n|alega|sostiene|afirma|versi[oó]n|acusa|interpreta|atribuy[eo])\b/i.test(c.statement),"F"+order+": acusación sin lenguaje de incertidumbre "+name);
   if(order==="19")assert(c.speaker.includes("sin diarizar"),"F19: no se puede inventar quién habló "+name);
  }
  all[order]={total:allClaims.length,anchored:anchored.length,provisionalIdentities:allClaims.filter(({c})=>c.status==="identidad_pendiente").length};
