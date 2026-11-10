@@ -1648,6 +1648,64 @@
         ],
         "methodologicalLimits": "Está documentada la firma del tratado, los seis signatarios y la fecha. Las tesis de que el proceso fue dirigido de forma encubierta por organizaciones privadas o servicios estadounidenses no quedan acreditadas por este acontecimiento."
       }
+    },
+    {
+      "id": "study-f24-iran-arabia-beijing-2023",
+      "y": 2023.186301369863,
+      "t": "Arabia Saudí e Irán acuerdan restablecer relaciones diplomáticas en Pekín",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 24 · contraste institucional",
+      "d": "El 10 de marzo de 2023, Arabia Saudí e Irán firmaron en Pekín una declaración trilateral junto a China para restablecer sus relaciones diplomáticas y reabrir sus embajadas dentro de un plazo previsto de dos meses. La conferencia de la fuente 24 menciona ese acuerdo como factor relevante en la geopolítica del Golfo; sus interpretaciones sobre consecuencias estratégicas o planes ocultos no son hechos acreditados por la firma.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 24,
+        "sourceTitle": "El nuevo desorden global: Oriente Medio y petróleo · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2023-03-10",
+        "confirmedBy": {
+          "label": "Ministerio de Asuntos Exteriores de China · Declaración trilateral 10/03/2023",
+          "url": "https://www.fmprc.gov.cn/eng/gjhdq_665435/2675_665437/2878_663746/2879_663748/202303/t20230311_11039241.html"
+        },
+        "relatedTelarana": [
+          "f24-episodio",
+          "f24-china",
+          "f24-iran",
+          "f24-arabia"
+        ],
+        "methodologicalLimits": "El comunicado oficial acredita la existencia, fecha y términos del acuerdo trilateral, no la interpretación causal que vincula este tratado con ataques posteriores ni un supuesto plan internacional."
+      }
+    },
+    {
+      "id": "study-f24-ataques-hamas-israel-2023",
+      "y": 2023.7643835616439,
+      "t": "Hamás lanza ataques contra localidades israelíes el 7 de octubre de 2023",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 24 · contraste institucional",
+      "d": "El 7 de octubre de 2023, militantes de Hamás y otros grupos armados atacaron localidades israelíes y lanzaron cohetes, causando muertes de civiles, heridos y secuestros. Naciones Unidas condenó los ataques ese mismo día. La fuente 24 plantea interpretaciones sobre los objetivos y consecuencias regionales, pero su relato no demuestra por sí solo intenciones encubiertas ni relaciones causales con la diplomacia de meses anteriores.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 24,
+        "sourceTitle": "El nuevo desorden global: Oriente Medio y petróleo · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2023-10-07",
+        "confirmedBy": {
+          "label": "Naciones Unidas · Boletín de octubre 2023 sobre la cuestión de Palestina",
+          "url": "https://www.un.org/unispal/document/october-2023-monthly-bulletin/"
+        },
+        "relatedTelarana": [
+          "f24-episodio",
+          "f24-israel"
+        ],
+        "methodologicalLimits": "La fecha y el hecho de los ataques están documentados de manera independiente. La relación causal sugerida entre el acuerdo entre Irán y Arabia Saudí y los ataques del 7 de octubre no se infiere de esta evidencia."
+      }
     }
   ]
 }
