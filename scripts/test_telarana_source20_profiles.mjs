@@ -11,7 +11,7 @@ const people=Object.entries(lib.profiles).filter(([_,p])=>Array.isArray(p.source
 assert(people.length>=16,"Faltan perfiles biográficos de F20");
 for(const [name,p] of people){
  assert(p.who?.length>=50,"Biografía ausente: "+name);
- assert(p.sources["20"].length>=1&&p.sources["20"].every(s=>s.length>=65),"Falta declaración atribuida: "+name);
+ assert(p.sources["20"].length>=1&&p.sources["20"].every(s=>typeof s==="string"?s.length>=65:typeof s.statement==="string"&&s.statement.length>=65),"Falta declaración atribuida: "+name);
 }
 for(const name of ["Lorenzo Ramírez","Peter Thiel","Bill Gates","George Soros","Eric Schmidt","Sergey Brin","Larry Ellison","J. D. Vance","George Orwell"]){
  assert(lib.profiles[name]?.sources["20"],"Persona citada ausente: "+name);
