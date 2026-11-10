@@ -35,6 +35,8 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_notebooklm_export_desktop.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_export_all.py' -v
           python3 -m unittest discover -s scripts -p 'test_biblioteca.py' -v
+      - name: Validar búsqueda de entidades en pantalla completa
+        run: node scripts/test_telarana_fullscreen_search.mjs
       - name: Validar distribución 3D y gestos de zoom
         run: node scripts/test_telarana_3d.mjs
       - name: Validar biografías independientes y testimonios
