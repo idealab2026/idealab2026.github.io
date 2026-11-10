@@ -480,6 +480,58 @@ class BridgeTests(unittest.TestCase):
         self.assertIn("No hay generaciones activas", output.getvalue())
         generate.assert_not_called()
 
+    def test_safe_studio_failure_detail_redacts_sensitive_strings(self):
+        row = {"status": "4", "error_message":
+               "Falló en https://example.com/private y /Users/miguel/secret "
+               "con test@example.com ref 47e40e6b-8fd7-4a2d-983e-eaf91b00320d"}
+        key, detail = bridge.safe_studio_failure_detail(row)
+        self.assertEqual(key, "error_message")
+        self.assertNotIn("example.com", detail)
+        self.assertNotIn("Users", detail)
+        self.assertNotIn("miguel", detail)
+        self.assertNotIn("test@", detail)
+        self.assertNotIn("47e40e6b", detail)
+
+    def test_diagnose_failed_reads_studio_without_mutating(self):
+        import argparse
+        import io
+        from contextlib import redirect_stdout
+        state = {"178": {"phase": "failed", "artifact_id": "failedartifact001",
+                         "notebook": "private-nb",
+                         "request": {"book": "psicologia-dinero"}}}
+        row = {"id": "failedartifact001", "status": "4",
+               "failure_reason": "Generation unavailable"}
+        output = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "infographic_rows", return_value=[row]) as studio, \
+             patch.object(bridge, "save_json") as save, \
+             patch.object(bridge, "request_new") as generate, \
+             redirect_stdout(output):
+            bridge.diagnose_failed(argparse.Namespace(issue=178))
+        studio.assert_called_once_with("private-nb")
+        self.assertIn("Estado de Studio: 4", output.getvalue())
+        self.assertIn("Generation unavailable", output.getvalue())
+        self.assertNotIn("private-nb", output.getvalue())
+        self.assertNotIn("failedartifact001", output.getvalue())
+        save.assert_not_called()
+        generate.assert_not_called()
+
+    def test_diagnose_failed_without_error_does_not_infer_cause(self):
+        import argparse
+        import io
+        from contextlib import redirect_stdout
+        state = {"163": {"phase": "failed", "artifact_id": "failedartifact001",
+                         "notebook": "private-nb",
+                         "request": {"book": "la-ola-que-viene"}}}
+        output = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "failedartifact001", "status": "4"}]), \
+             redirect_stdout(output):
+            bridge.diagnose_failed(argparse.Namespace(issue=163))
+        self.assertIn("Studio no proporciona un motivo", output.getvalue())
+        self.assertIn("no se ha reintentado", output.getvalue())
+
     def test_repeated_uncertain_launches_pause_automatic_generation(self):
         for n, outcome in [("160", "uncertain"), ("161", "downloaded"),
                            ("163", "uncertain"), ("178", "uncertain")]:
