@@ -844,13 +844,14 @@ function chooseCountry(code){
  mapListLimit=60;
  var focus=viewMode==="timeline"?yearAt($("viewport").scrollLeft+$("viewport").clientWidth/2):savedYear;
  render();
- if(viewMode==="timeline"&&country!=="Todos"){
+ if(country!=="Todos"){
   var records=visible();
   if(records.length){
    var nearest=records.reduce(function(best,d){
     return Math.abs(sy(d)-focus)<Math.abs(sy(best)-focus)?d:best;
    });
-   jumpToYear(sy(nearest));
+   savedYear=sy(nearest);
+   if(viewMode==="timeline")jumpToYear(savedYear);
   }
  }
 }
