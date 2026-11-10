@@ -15,7 +15,7 @@ const people=Object.entries(lib.profiles).filter(([_,v])=>Array.isArray(v.source
 assert(people.length>=20,"La fuente 13 necesita al menos 20 perfiles con mención identificable");
 for(const [name,p] of people){
  assert(typeof p.who==="string"&&p.who.length>=45,"Falta biografía "+name);
- assert(p.sources["13"].length>0&&p.sources["13"].every(s=>typeof s==="string"&&s.length>=65),"No consta lo que se dice de "+name);
+ assert(p.sources["13"].length>0&&p.sources["13"].every(s=>typeof s==="string"?s.length>=65:typeof s?.statement==="string"&&s.statement.length>=65&&s.topic&&s.speaker&&s.status),"No consta lo que se dice de "+name);
 }
 assert(lib.profiles["Jesús Hernández"]?.sources["13"],"Historiador invitado no perfilado");
 assert(!lib.profiles["Jesús Hernández Tomás"]?.sources?.["13"],"Homónimo histórico indebidamente asociado");
