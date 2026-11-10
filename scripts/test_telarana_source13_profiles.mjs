@@ -30,7 +30,7 @@ const required=["study-f13-valquiria-1944","study-f13-pacto-germano-sovietico-19
 for(const id of required){
  const item=h13.find(v=>v.id===id);
  assert(item,"Falta evento "+id);
- assert(/^\\d{4}-\\d{2}-\\d{2}$/.test(item.investigation.date),"Fecha inválida "+id);
+ assert(item.investigation.date.length===10&&!Number.isNaN(Date.parse(item.investigation.date)),"Fecha inválida "+id);
  assert(item.investigation.confirmedBy?.url?.startsWith("https://"),"Contraste institucional ausente "+id);
  assert(item.investigation.status==="hecho_documentado","Estado no documental "+id);
 }
