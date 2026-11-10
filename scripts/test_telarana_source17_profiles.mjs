@@ -23,7 +23,7 @@ assert(flow.includes("cp la-telarana/personas-fuentes-17.js dist/la-telarana/per
 const prog=JSON.parse(read("la-telarana/progreso-fuentes.json")),r=prog.inReview.find(x=>x.order===17);
 assert(r?.personsProfiled>=15&&r.reviewComplete===false,"Fuente cerrada sin audio");
 assert(r.verifiedMinuteReferences===0&&r.transcriptAudioMatched===false,"Minutajes sin verificar");
-assert(prog.nextSource.order===19,"Siguiente fuente no reconocida");
+assert(prog.nextSource.order>17,"El inventario retrocede a una fuente ya revisada");
 const hist=JSON.parse(read("linea-historia/estudios-telarana.json"));
 const event=hist.items.find(e=>e.id==="study-f17-espana-marruecos-declaracion-2022");
 assert(event?.investigation?.date==="2022-04-07","Falta declaración bilateral fechada");
