@@ -292,7 +292,7 @@ body.graph-expanded{overflow:hidden}
  </div>
 <details id="load-audit" class="load-audit" hidden><summary>Auditoría de entidades por fuente</summary><div id="load-audit-content"></div></details>
 <div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Orbe 3D · gira arrastrando · pellizca para ampliar nodos y fotografías</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="motion3d" aria-pressed="true" title="Pausar o reanudar la rotación suave">⏸ Orbe</button><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><div id="fullscreen-search-bar" class="fullscreen-search-bar" role="search" aria-label="Buscar entidades en pantalla completa" hidden><div class="fullscreen-search-row"><span class="fullscreen-search-icon" aria-hidden="true">⌕</span><input type="search" id="fullscreen-search-input" placeholder="Buscar una entidad…" autocomplete="off" spellcheck="false" aria-label="Buscar una entidad en el mapa" aria-controls="fullscreen-search-results" aria-expanded="false"><button type="button" id="fullscreen-search-clear" aria-label="Limpiar búsqueda" title="Limpiar búsqueda">×</button></div><div id="fullscreen-search-results" class="fullscreen-search-results" role="region" aria-label="Entidades coincidentes" aria-live="polite" hidden></div></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
-<aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Enlaces totales</span></div><div class="metric"><b id="count-evidence">0</b><span>Rel. documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
+<aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Enlaces totales</span></div><div class="metric"><b id="count-evidence">0</b><span>Contrastadas externamente</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
 
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La Telaraña es una consulta pública de solo lectura. Las fichas y relaciones se cargan desde los archivos del repositorio de IDEA LAB; ningún visitante puede cambiar la base publicada desde esta web. Las operaciones de navegación y disposición del mapa no se guardan. Las transcripciones de OneNote y los resúmenes de podcasts pueden contener opiniones o afirmaciones sin verificar: no deben confundirse con hechos acreditados.</p>
 </main>
@@ -573,8 +573,8 @@ function showLoadAudit(){
  body.append(finalRow);table.append(body);contents.append(table);
  var mentions=data.edges.filter(isSourceMentionEdge).length;
  var substantive=data.edges.length-mentions;
- var verified=data.edges.filter(function(e){return !isSourceMentionEdge(e)&&e.confidence==="documentado"}).length;
- contents.append(N("p",data.edges.length+" enlaces totales: "+mentions+" menciones/enlaces de procedencia, "+substantive+" conexiones de otra clase; "+verified+" documentadas según su ficha. Otras conexiones son indicios o hipótesis.","audit-help"));
+ var verified=data.edges.filter(function(e){return !isSourceMentionEdge(e)&&e.claimStatus==="hecho_verificado_independiente"}).length;
+ contents.append(N("p",data.edges.length+" enlaces totales: "+mentions+" menciones/enlaces de procedencia, "+substantive+" conexiones de otra clase; "+verified+" marcadas como contrastadas independientemente. La cifra es conservadora: el resto no se considera validado de forma externa sin revisar su documentación.","audit-help"));
  var missing=loadAudit.filter(function(e){return !e.available}).map(function(e){return e.label});
  if(missing.length)contents.append(N("p","ADVERTENCIA: no se cargaron "+missing.join(", "),"audit-warning"));
  else contents.append(N("p","Todos los módulos previstos están presentes. Las entidades mostradas arriba coinciden con el total del grafo.","audit-success"));
@@ -688,7 +688,7 @@ function renderSearchResults(q){
  box.append(cards);
  if(matches.length>12)box.append(N("small","Mostrando las 12 primeras coincidencias. Escribe más letras para afinar.","search-results-empty"));
 }
-function render(){var q=$("search").value.toLocaleLowerCase("es").trim();$("count-nodes").textContent=data.nodes.length;$("count-edges").textContent=data.edges.length;$("count-evidence").textContent=data.edges.filter(function(e){return e.confidence==="documentado"&&!isSourceMentionEdge(e)}).length;setView();renderSearchResults(q);if(dimensionMode==="3d"&&graph3d){graph3d.setData(data.nodes,data.edges);graph3d.setSelection(selection);graph3d.setQuery(q);graph3d.setEdgeMode(edgeMode)}else if(dimensionMode==="2d")renderGraph(q);if(view!=="graph")renderGallery(q)}
+function render(){var q=$("search").value.toLocaleLowerCase("es").trim();$("count-nodes").textContent=data.nodes.length;$("count-edges").textContent=data.edges.length;$("count-evidence").textContent=data.edges.filter(function(e){return !isSourceMentionEdge(e)&&e.claimStatus==="hecho_verificado_independiente"}).length;setView();renderSearchResults(q);if(dimensionMode==="3d"&&graph3d){graph3d.setData(data.nodes,data.edges);graph3d.setSelection(selection);graph3d.setQuery(q);graph3d.setEdgeMode(edgeMode)}else if(dimensionMode==="2d")renderGraph(q);if(view!=="graph")renderGallery(q)}
 function transform(){return "translate("+cam.x+" "+cam.y+") scale("+cam.s+")"}
 function wrapGraphText(value,maxChars,maxLines){
  var words=String(value||"").trim().split(/\s+/).filter(Boolean),lines=[],current="";
@@ -918,7 +918,7 @@ function showPersonResearch(panel,node){
   var library=window.IDEA_TELARANA_PERSON_SOURCE_REPORTS;
   Object.keys(report.sources).sort().forEach(function(order){
    var group=N("div",null,"source-report");
-   group.append(N("h4","Fuente "+order+" · "+((library.sourceLabels||{})[order]||(order==="18"?"Rubén Gisbert y Lorenzo Ramírez":"Inversión Racional y Lorenzo Ramírez"))));
+   group.append(N("h4","Fuente "+order+" · "+((library.sourceLabels||{})[order]||(order==="18"?"Rubén Gisbert y Lorenzo Ramírez":"Referencia documental "+order))));
    report.sources[order].forEach(function(claim){
     var structured=claim&&typeof claim==="object"&&!Array.isArray(claim);
     var statement=String(structured?(claim.statement||claim.text||""):claim||"").trim();
@@ -930,10 +930,14 @@ function showPersonResearch(panel,node){
     if(structured&&claim.status==="alegacion_no_verificada"){
      item.append(N("div","Afirmación atribuida · Sin corroboración independiente"+(claim.audioVerified===false?" · Audio pendiente":""),
       "source-claim-caution"));
+    }else if(!structured){
+     item.append(N("div","Síntesis editorial · No es una cita literal · Audio y minuto pendientes de cotejo","source-claim-caution"));
+    }else if(claim.audioVerified===false||claim.minuteVerified===false){
+     item.append(N("div","Atribución pendiente de cotejo audiovisual o de minutaje","source-claim-caution"));
     }
     group.append(item);
    });
-   var link=N("a","Ver entrevista","source-report-link");
+   var link=N("a","Consultar la fuente original","source-report-link");
    link.href=library.sourceUrls[order];link.target="_blank";link.rel="noopener noreferrer";
    group.append(link);section.append(group);
   });
@@ -975,8 +979,10 @@ function showPodcastNotes(panel,notes,heading){
  panel.append(section)
 }
 function relationStatusLabel(edge){
- if(["mencion_transcripcion_no_prueba_de_hechos","mencion_documentada_sin_contraste_individual","mencion_sin_corroboracion_externa"].includes(edge.claimStatus))return "Mención en la fuente";
- return edge.confidence==="documentado"?"Documentada":edge.confidence==="indicio"?"Indicio":"Hipótesis";
+ if(isSourceMentionEdge(edge))return "Mención en la fuente";
+ if(edge.claimStatus==="hecho_verificado_independiente")return "Contrastada externamente";
+ if(edge.confidence==="documentado"&&/youtu(?:be\.com|\.be)/i.test(edge.source||""))return "Afirmada en una fuente";
+ return edge.confidence==="documentado"?"Documentada según su fuente":edge.confidence==="indicio"?"Indicio":"Hipótesis";
 }
 /* Hitos fechados contrastados publicados por el proyecto hermano.
    Solo lectura: este catálogo no puede modificar las entidades del grafo. */
