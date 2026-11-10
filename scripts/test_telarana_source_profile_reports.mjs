@@ -32,7 +32,7 @@ for(const [name,p] of Object.entries(profiles)){
  for(const [order,claims] of Object.entries(p.sources)){
   assert(["18","21"].includes(order),"Número de fuente inválido");
   bySource[order]++;
-  assert(claims.length>=1&&claims.every(c=>c.length>=65),"Explicación insuficiente para "+name);
+  assert(claims.length>=1&&claims.every(c=>typeof c==="string"?c.length>=65:typeof c?.statement==="string"&&c.statement.length>=65&&c.topic&&c.speaker&&c.status),"Explicación insuficiente para "+name);
  }
 }
 assert(bySource["18"]>=30&&bySource["21"]>=30,"Cobertura insuficiente");
