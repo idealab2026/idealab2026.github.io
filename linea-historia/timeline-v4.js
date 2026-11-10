@@ -858,18 +858,18 @@ function chooseCountry(code){
 function initCountryControls(){
  $("country").addEventListener("change",function(e){chooseCountry(e.target.value)});
  var checkbox=$("map-year-toggle"),slider=$("map-year-range"),number=$("map-year-number");
- function yearChanged(value){
-  var n=Math.max(-3000,Math.min(2026,Math.round(Number(value))));
+ function yearChanged(value,fromSlider){
+  var n=Math.max(fromSlider?-3000:-541000000,Math.min(2026,Math.round(Number(value))));
   if(!Number.isFinite(n))return;
-  mapYear=n;slider.value=String(n);number.value=String(n);
+  mapYear=n;slider.value=String(Math.max(-3000,n));number.value=String(n);
   if(mapYearActive)render();
  }
  checkbox.addEventListener("change",function(e){
   mapYearActive=!!e.target.checked;slider.disabled=!mapYearActive;number.disabled=!mapYearActive;
   render();
  });
- slider.addEventListener("input",function(e){yearChanged(e.target.value)});
- number.addEventListener("change",function(e){yearChanged(e.target.value)});
+ slider.addEventListener("input",function(e){yearChanged(e.target.value,true)});
+ number.addEventListener("change",function(e){yearChanged(e.target.value,false)});
  $("map-year-reset").addEventListener("click",function(){
   checkbox.checked=false;mapYearActive=false;slider.disabled=true;number.disabled=true;
   render();
@@ -978,26 +978,23 @@ function renderMap(records){
   list.append(el("p",empty,"map-empty"));
  }
  matches.slice(0,mapListLimit).forEach(function(d){
-  var button=el("button",null,"map-result-card");button.type="button";
+  var card=el("div",null,"map-result-card");
+  var detailButton=el("button",null,"map-result-detail");
+  detailButton.type="button";
   var date=yearText(sy(d))+(duration(d)?" — "+(d._ongoing?"actualidad":yearText(ey(d))):"");
-  button.append(el("span",date,"map-result-year"),el("span",displayName(d),"map-result-title"));
+  detailButton.append(el("span",date,"map-result-year"),el("span",displayName(d),"map-result-title"));
   var codes=countriesOf(d);
   var meta=d.c+" · "+(codes.length?codes.map(countryName).join(" · "):"Sin país clasificado");
-  button.append(el("span",meta,"map-result-meta"));
-  button.setAttribute("aria-label","Abrir ficha: "+displayName(d)+" · "+date);
-  button.addEventListener("click",function(){detail(d)});
-  var actions=el("span",null,"map-result-actions");
-  var jump=el("span","Ver en línea temporal ↗","map-jump-link");
-  jump.setAttribute("role","link");jump.setAttribute("tabindex","0");
-  function go(e){
-   if(e&&typeof e.stopPropagation==="function")e.stopPropagation();
+  detailButton.append(el("span",meta,"map-result-meta"));
+  detailButton.setAttribute("aria-label","Abrir ficha: "+displayName(d)+" · "+date);
+  detailButton.addEventListener("click",function(){detail(d)});
+  var actions=el("div",null,"map-result-actions");
+  var jump=el("button","Ver en línea temporal ↗","map-jump-link");
+  jump.type="button";
+  jump.addEventListener("click",function(){
    savedYear=sy(d);setView("timeline");jumpToYear(sy(d));
-  }
-  jump.addEventListener("click",go);
-  jump.addEventListener("keydown",function(e){
-   if(e.key==="Enter"||e.key===" "){e.preventDefault();go(e)}
   });
-  actions.append(jump);button.append(actions);list.append(button);
+  actions.append(jump);card.append(detailButton,actions);list.append(card);
  });
  var more=$("map-load-more");more.classList.toggle("hide",matches.length<=mapListLimit);
  if(matches.length>mapListLimit)more.textContent="Mostrar 60 más · "+(matches.length-mapListLimit)+" pendientes";
