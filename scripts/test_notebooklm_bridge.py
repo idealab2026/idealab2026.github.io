@@ -415,6 +415,80 @@ class BridgeTests(unittest.TestCase):
             self.assertNotIn("retry_requested", job)
             self.assertFalse(bridge.launch_queued_retry(state, cfg))
 
+    def test_three_failed_generations_in_last_five_pause(self):
+        import argparse
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(bridge, "HEALTH_PATH", Path(tmp) / "health.json"):
+            for n, outcome in [("139", "failed"), ("140", "failed"),
+                               ("141", "downloaded"), ("142", "failed")]:
+                bridge.record_generation_outcome(n, outcome)
+            health = bridge.generation_health()
+            self.assertTrue(health["paused"])
+            self.assertEqual(len(health["recent"]), 4)
+            self.assertIn("3 fallos", health["pause_reason"])
+            with patch.object(bridge, "check_identity"):
+                with self.assertRaises(ValueError):
+                    bridge.resume_generations(argparse.Namespace(confirm=False))
+                bridge.resume_generations(argparse.Namespace(confirm=True))
+            after = bridge.generation_health()
+            self.assertFalse(after["paused"])
+            self.assertEqual(after["recent"], [])
+
+    def test_a_few_failures_with_successes_does_not_pause(self):
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(bridge, "HEALTH_PATH", Path(tmp) / "health.json"):
+            for n, outcome in [("139", "failed"), ("140", "failed"),
+                               ("141", "downloaded"), ("143", "downloaded"),
+                               ("144", "downloaded")]:
+                bridge.record_generation_outcome(n, outcome)
+            self.assertFalse(bridge.generation_health()["paused"])
+
+    def test_poll_paused_still_checks_submitted_and_never_starts_new(self):
+        state = {"142": {"phase": "submitted", "notebook": "notebook-a"}}
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "check_submitted") as check, \
+             patch.object(bridge, "retry_github_comments"), \
+             patch.object(bridge, "generation_health",
+                          return_value={"paused": True, "pause_reason": "testing"}), \
+             patch.object(bridge, "next_requests") as pending, \
+             patch.object(bridge, "launch_queued_retry") as retry:
+            bridge.poll()
+            check.assert_called_once()
+            retry.assert_not_called()
+            pending.assert_not_called()
+
+    def test_quota_detection_redacts_cli_output(self):
+        from unittest.mock import MagicMock
+        marker = "DO_NOT_EXPOSE_PRIVATE_TOKEN"
+        failure = MagicMock(returncode=1, stdout="",
+                            stderr="resource_exhausted: usage limit " + marker)
+        with patch.object(bridge.subprocess, "run", return_value=failure):
+            with self.assertRaises(bridge.NotebookLMQuotaError) as cm:
+                bridge.command(["nlm", "infographic", "create", "private-id"])
+        self.assertNotIn(marker, str(cm.exception))
+        self.assertTrue(bridge.looks_like_quota_error("HTTP 429"))
+        self.assertFalse(bridge.looks_like_quota_error("unknown transient error"))
+
+    def test_unknown_cli_errors_are_not_reported_as_quota(self):
+        from unittest.mock import MagicMock
+        failure = MagicMock(returncode=1, stdout="", stderr="temporary failure")
+        with patch.object(bridge.subprocess, "run", return_value=failure):
+            with self.assertRaises(RuntimeError) as cm:
+                bridge.command(["nlm", "infographic", "create", "private-id"])
+        self.assertNotIsInstance(cm.exception, bridge.NotebookLMQuotaError)
+
+    def test_health_pause_does_not_modify_local_job_state(self):
+        state = {"143": {"phase": "downloaded", "path": "/tmp/issue-143.png"}}
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(bridge, "HEALTH_PATH", Path(tmp) / "health.json"), \
+             patch.object(bridge, "STATE_PATH", Path(tmp) / "jobs.json"):
+            bridge.save_json(bridge.STATE_PATH, state)
+            bridge.pause_generation("Prueba de protección")
+            self.assertEqual(bridge.load_json(bridge.STATE_PATH, {}), state)
+            self.assertTrue(bridge.generation_health()["paused"])
+
     def test_saved_config_is_user_only(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "private" / "config.json"
