@@ -229,6 +229,19 @@ body.graph-expanded{overflow:hidden}
 .icon-fallback.portrait{height:190px;margin:0 0 16px;font-size:4rem}
 .gallery-card .ph{display:grid;place-items:center;font-size:2rem}
 
+
+/* Diagnóstico de carga opcional: ?auditoria=1; no incluye seguimiento interno. */
+.load-audit[hidden]{display:none!important}
+.load-audit{border:1px solid #3b5367;border-radius:9px;margin:12px 0 17px;padding:9px;background:#12202c;font-size:.73rem}
+.load-audit summary{cursor:pointer;font-weight:750;color:#e0aa68}
+.audit-help{color:#b4c4d1;line-height:1.5;margin:9px 0}
+.audit-table{width:100%;border-collapse:collapse;font-size:.7rem;margin:7px 0}
+.audit-table th,.audit-table td{padding:5px 3px;border-bottom:1px solid #304152;text-align:right;white-space:nowrap}
+.audit-table th:first-child,.audit-table td:first-child{text-align:left;max-width:150px;white-space:normal;overflow-wrap:anywhere}
+.audit-final{font-weight:850;color:#e3b47c}
+.audit-missing{color:#fd9b80}
+.audit-warning{color:#f3b087}.audit-success{color:#acc9b8}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -240,7 +253,7 @@ body.graph-expanded{overflow:hidden}
  <button type="button" data-recent-id="f21-episodio" data-recent-name="Podcast · Orden mundial (F21)">Fuente 21 · Nuevo orden</button>
  </div>
 <div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Orbe 3D · gira arrastrando · pellizca para ampliar nodos y fotografías</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia y nazismo</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="motion3d" aria-pressed="true" title="Pausar o reanudar la rotación suave">⏸ Orbe</button><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
-<aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
+<aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Relaciones</span></div><div class="metric"><b id="count-evidence">0</b><span>Documentadas</span></div></div><details id="load-audit" class="load-audit" hidden><summary>Auditoría de entidades por fuente</summary><div id="load-audit-content"></div></details><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
 
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La Telaraña es una consulta pública de solo lectura. Las fichas y relaciones se cargan desde los archivos del repositorio de IDEA LAB; ningún visitante puede cambiar la base publicada desde esta web. Las operaciones de navegación y disposición del mapa no se guardan. Las transcripciones de OneNote y los resúmenes de podcasts pueden contener opiniones o afirmaciones sin verificar: no deben confundirse con hechos acreditados.</p>
 </main>
@@ -460,73 +473,47 @@ function fitGraph(){if(!data.nodes.length){cam={x:0,y:0,s:1};return}
  var xs=data.nodes.map(function(n){return Number(n.x)||0}),ys=data.nodes.map(function(n){return Number(n.y)||0}),x0=Math.min.apply(null,xs),x1=Math.max.apply(null,xs)+CARD_W,y0=Math.min.apply(null,ys),y1=Math.max.apply(null,ys)+CARD_H,s=Math.min(1.1,1000/Math.max(1,x1-x0),570/Math.max(1,y1-y0));
  cam={s:s,x:550-(x0+x1)*s/2,y:325-(y0+y1)*s/2}
 }
+var loadAudit=[];
+function auditLoadStep(label,callback,available){
+ var before=data.nodes.length,beforeEdges=data.edges.length;
+ if(available)callback();
+ var after=data.nodes.length,afterEdges=data.edges.length;
+ loadAudit.push({label:label,before:before,added:after-before,total:after,edges:afterEdges-beforeEdges,available:Boolean(available)});
+}
+function showLoadAudit(){
+ var audit=document.getElementById("load-audit"),contents=document.getElementById("load-audit-content");
+ if(!audit||!contents)return;
+ var active=false;try{active=new URLSearchParams(window.location.search).get("auditoria")==="1"}catch(e){}
+ audit.hidden=!active;if(!active)return;
+ contents.replaceChildren();
+ var p=N("p","Los incrementos son entidades nuevas netas, después de fusionar nombres repetidos. Una fuente puede añadir 0 entidades y varias referencias.","audit-help");
+ contents.append(p);
+ var table=N("table",null,"audit-table"),head=N("thead"),tr=N("tr");
+ ["Carga","Antes","+Ent.","Total","+Rel."].forEach(function(h){tr.append(N("th",h))});head.append(tr);table.append(head);
+ var body=N("tbody");
+ loadAudit.forEach(function(e){
+  var row=N("tr",null,e.available?"":"audit-missing");
+  [e.label+(e.available?"":" · archivo ausente"),String(e.before),e.available?"+"+e.added:"—",String(e.total),e.available?"+"+e.edges:"—"].forEach(function(val){row.append(N("td",val))});
+  body.append(row);
+ });
+ var finalRow=N("tr",null,"audit-final");["TOTAL",String(loadAudit.length?loadAudit[0].before:0),"",String(data.nodes.length),String(data.edges.length)].forEach(function(val){finalRow.append(N("td",val))});
+ body.append(finalRow);table.append(body);contents.append(table);
+ var missing=loadAudit.filter(function(e){return !e.available}).map(function(e){return e.label});
+ if(missing.length)contents.append(N("p","ADVERTENCIA: no se cargaron "+missing.join(", "),"audit-warning"));
+ else contents.append(N("p","Todos los módulos previstos están presentes. Las entidades mostradas arriba coinciden con el total del grafo.","audit-success"));
+}
 function load(){
- // La fuente publicada es canónica. No leer ni escribir cambios de visitantes.
- data={nodes:[],edges:[]};demo=false;
- if(window.IDEA_TELARANA_ONENOTE){
-  data=JSON.parse(JSON.stringify(window.IDEA_TELARANA_ONENOTE));
- }
- if(window.IDEA_TELARANA_PODCAST_150){
-  mergePodcastStudy(window.IDEA_TELARANA_PODCAST_150);
- }
- // Datos adicionales acreditados por documentos externos, no por transcripcion del podcast.
- if(window.IDEA_TELARANA_FRATTINI_EXTERNAL){
-  mergePodcastStudy(window.IDEA_TELARANA_FRATTINI_EXTERNAL);
- }
- if(window.IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO){
-  mergeNewEpisode(window.IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO);
- }
- if(window.IDEA_TELARANA_EPISODE_CEUTA_2026){
-  mergeNewEpisode(window.IDEA_TELARANA_EPISODE_CEUTA_2026);
- }
- // Análisis derivado del texto completo: todas las alegaciones no corroboradas permanecen como hipótesis.
- if(window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW){
-  mergeNewEpisode(window.IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW);
- }
- // Fuente 03: únicamente metadatos editoriales y participantes contrastados; el audio no está transcrito.
- if(window.IDEA_TELARANA_SOURCE03_EDITORIAL){
-  mergeNewEpisode(window.IDEA_TELARANA_SOURCE03_EDITORIAL);
- }
- // Fuente 04: contexto histórico archivístico y capítulos oficiales; aún sin transcripción audiovisual.
- if(window.IDEA_TELARANA_SOURCE04_HISTORICAL){
-  mergeNewEpisode(window.IDEA_TELARANA_SOURCE04_HISTORICAL);
- }
- // Fuente 05: únicamente autoría política del portal y cautelas probatorias. Sin imputaciones por asociación.
- if(window.IDEA_TELARANA_SOURCE05_EDITORIAL){
-  mergeNewEpisode(window.IDEA_TELARANA_SOURCE05_EDITORIAL);
- }
- // Fuente 06: referencias externas a transcripción indexada, sin afirmar pruebas de delitos.
- if(window.IDEA_TELARANA_SOURCE06_PODCAST){
-  mergeNewEpisode(window.IDEA_TELARANA_SOURCE06_PODCAST);
- }
- // Fuente 07: declaraciones periodísticas separadas de sentencias y fechas acreditadas.
- if(window.IDEA_TELARANA_SOURCE07_PODCAST){
-  mergeNewEpisode(window.IDEA_TELARANA_SOURCE07_PODCAST);
- }
- // Fuente 08: solo metadatos del episodio y un contraste judicial independiente, sin transcripción.
- if(window.IDEA_TELARANA_SOURCE08_EDITORIAL){
-  mergeNewEpisode(window.IDEA_TELARANA_SOURCE08_EDITORIAL);
- }
- // Fuentes 18 y 21: transcripción automática íntegra conservada en Drive; los pasajes se atribuyen y se distinguen de hechos comprobados.
- if(window.IDEA_TELARANA_SOURCE18_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE18_EDITORIAL);
- if(window.IDEA_TELARANA_SOURCE21_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE21_EDITORIAL);
- if(window.IDEA_TELARANA_SOURCE09_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_SOURCE09_REVIEW);
- // Fuentes adicionales: evidencia de mención textual, sin transformar alegaciones en hechos.
- if(window.IDEA_TELARANA_F10_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F10_REVIEW);
- if(window.IDEA_TELARANA_F11_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F11_REVIEW);
- if(window.IDEA_TELARANA_F12_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F12_REVIEW);
- if(window.IDEA_TELARANA_F13_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F13_REVIEW);
- if(window.IDEA_TELARANA_F14_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F14_REVIEW);
- if(window.IDEA_TELARANA_F16_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F16_REVIEW);
- if(window.IDEA_TELARANA_F17_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F17_REVIEW);
- if(window.IDEA_TELARANA_F19_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F19_REVIEW);
- if(window.IDEA_TELARANA_F20_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F20_REVIEW);
- if(window.IDEA_TELARANA_F22_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F22_REVIEW);
- if(window.IDEA_TELARANA_F23_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F23_REVIEW);
- if(window.IDEA_TELARANA_F24_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F24_REVIEW);
- if(window.IDEA_TELARANA_F25_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F25_REVIEW);
- mergeSourceProfiles();
+ // La fuente publicada es canónica y los visitantes no modifican el inventario.
+ data={nodes:[],edges:[]};demo=false;loadAudit=[];
+ auditLoadStep("Base OneNote",function(){data=JSON.parse(JSON.stringify(window.IDEA_TELARANA_ONENOTE))},Boolean(window.IDEA_TELARANA_ONENOTE));
+ var modules=[{"key":"IDEA_TELARANA_PODCAST_150","kind":"mergePodcastStudy","label":"Vaquero 150"},{"key":"IDEA_TELARANA_FRATTINI_EXTERNAL","kind":"mergePodcastStudy","label":"Frattini · contexto"},{"key":"IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO","kind":"mergeNewEpisode","label":"Coronel · Villarejo"},{"key":"IDEA_TELARANA_EPISODE_CEUTA_2026","kind":"mergeNewEpisode","label":"Ceuta · episodio"},{"key":"IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW","kind":"mergeNewEpisode","label":"Ceuta · transcripción"},{"key":"IDEA_TELARANA_SOURCE03_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 03"},{"key":"IDEA_TELARANA_SOURCE04_HISTORICAL","kind":"mergeNewEpisode","label":"Fuente 04"},{"key":"IDEA_TELARANA_SOURCE05_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 05"},{"key":"IDEA_TELARANA_SOURCE06_PODCAST","kind":"mergeNewEpisode","label":"Fuente 06"},{"key":"IDEA_TELARANA_SOURCE07_PODCAST","kind":"mergeNewEpisode","label":"Fuente 07"},{"key":"IDEA_TELARANA_SOURCE08_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 08"},{"key":"IDEA_TELARANA_SOURCE18_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 18"},{"key":"IDEA_TELARANA_SOURCE21_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 21"},{"key":"IDEA_TELARANA_SOURCE09_REVIEW","kind":"mergeNewEpisode","label":"Fuente 09"},{"key":"IDEA_TELARANA_F10_REVIEW","kind":"mergeNewEpisode","label":"Fuente 10"},{"key":"IDEA_TELARANA_F11_REVIEW","kind":"mergeNewEpisode","label":"Fuente 11"},{"key":"IDEA_TELARANA_F12_REVIEW","kind":"mergeNewEpisode","label":"Fuente 12"},{"key":"IDEA_TELARANA_F13_REVIEW","kind":"mergeNewEpisode","label":"Fuente 13"},{"key":"IDEA_TELARANA_F14_REVIEW","kind":"mergeNewEpisode","label":"Fuente 14"},{"key":"IDEA_TELARANA_F16_REVIEW","kind":"mergeNewEpisode","label":"Fuente 16"},{"key":"IDEA_TELARANA_F17_REVIEW","kind":"mergeNewEpisode","label":"Fuente 17"},{"key":"IDEA_TELARANA_F19_REVIEW","kind":"mergeNewEpisode","label":"Fuente 19"},{"key":"IDEA_TELARANA_F20_REVIEW","kind":"mergeNewEpisode","label":"Fuente 20"},{"key":"IDEA_TELARANA_F22_REVIEW","kind":"mergeNewEpisode","label":"Fuente 22"},{"key":"IDEA_TELARANA_F23_REVIEW","kind":"mergeNewEpisode","label":"Fuente 23"},{"key":"IDEA_TELARANA_F24_REVIEW","kind":"mergeNewEpisode","label":"Fuente 24"},{"key":"IDEA_TELARANA_F25_REVIEW","kind":"mergeNewEpisode","label":"Fuente 25"}];
+ modules.forEach(function(m){
+  var doc=window[m.key];
+  auditLoadStep(m.label,function(){if(m.kind==="mergePodcastStudy")mergePodcastStudy(doc);else mergeNewEpisode(doc)},Boolean(doc));
+ });
+ auditLoadStep("Biografías y menciones 09/10/18/21",function(){mergeSourceProfiles()},Boolean(window.IDEA_TELARANA_PERSON_SOURCE_REPORTS));
  seedError=!data.nodes.length;
+ showLoadAudit();
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
 function displayPhoto(n){return safePhoto(n&&n.photo)||photoLookup.get(n&&n.id)||""}
