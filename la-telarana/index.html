@@ -264,6 +264,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-25-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./photo-catalog.js?v=20261110-search-centre-3"></script>
 <script src="./person-biographies.js?v=20261110-search-centre-3"></script>
+<script src="./personas-fuentes-18-21.js?v=20261110-perfiles-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261110-search-centre-3"></script>
 <script>
@@ -313,6 +314,61 @@ function mergePodcastStudy(v){
 // Fusión editorial del episodio con el grafo público. Identidad canónica,
 // agrupación por pareja de entidades y fuentes adicionales por relación.
 function normalizeEntityName(s){return String(s||"").normalize("NFD").replace(/\p{M}/gu,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ")}
+
+function personReport(node){
+ var lib=window.IDEA_TELARANA_PERSON_SOURCE_REPORTS;
+ if(!lib||!lib.profiles||!node||node.kind!=="Persona")return null;
+ var name=normalizeEntityName(node.name);
+ var aliases={"jd vance":"j d vance","muammar gaddafi":"muamar el gadafi"};
+ name=aliases[name]||name;
+ for(var k of Object.keys(lib.profiles)){
+  if(normalizeEntityName(k)===name)return lib.profiles[k];
+ }
+ return null;
+}
+function iconForEntity(n){
+ var t=String(n&&n.kind||"").toLocaleLowerCase("es");
+ if(t==="persona")return "👤";
+ if(t==="institución"||t==="institucion")return "🏛";
+ if(t==="país"||t==="pais")return "🌐";
+ if(t==="organización"||t==="organizacion"||t==="canal")return "🏢";
+ if(t==="fuente")return "🎙";
+ if(t==="documento")return "📄";
+ if(t==="acontecimiento"||t==="período"||t==="periodo")return "📅";
+ return "◈";
+}
+function mergeSourceProfiles(){
+ var lib=window.IDEA_TELARANA_PERSON_SOURCE_REPORTS;
+ if(!lib||!lib.profiles)return;
+ var names=new Map(data.nodes.filter(function(n){return n.kind==="Persona"}).map(function(n){return [normalizeEntityName(n.name),n]}));
+ var known=new Set(data.nodes.map(function(n){return n.id}));
+ var pairs=new Set(data.edges.map(function(e){return [e.a,e.b].sort().join("::")}));
+ var added=0;
+ for(var name of Object.keys(lib.profiles)){
+  var p=lib.profiles[name],key=normalizeEntityName(name);
+  var equivalent=key==="j d vance"?"jd vance":key==="muamar el gadafi"?"muammar gaddafi":key;
+  var node=names.get(key)||names.get(equivalent);
+  if(!node){
+   var id="sf1821-"+key.replace(/ /g,"-");
+   if(known.has(id))continue;
+   node={id:id,name:name,kind:"Persona",subtitle:p.who.slice(0,160),note:"",archiveNote:"",podcastNotes:[],photo:"",x:5300+added%10*190,y:3500+Math.floor(added/10)*190,topic3d:"global"};
+   data.nodes.push(node);known.add(id);names.set(key,node);added++;
+  }
+  for(var order of Object.keys(p.sources)){
+   var episode=order==="18"?"f18-episodio":"f21-episodio";
+   if(!known.has(episode))continue;
+   var pair=[node.id,episode].sort().join("::");
+   if(pairs.has(pair))continue;
+   var eid="sf"+order+"-"+node.id;
+   data.edges.push({id:eid,a:episode,b:node.id,type:"Mención de persona en la fuente "+order,
+    confidence:"documentado",note:"La fuente menciona a esta persona; la ficha recoge lo que dice el entrevistado.",
+    source:lib.sourceUrls[order],episodeId:lib.sourceIds[order],
+    claimStatus:"mencion_transcripcion_no_prueba_de_hechos",podcastNotes:[]});
+   pairs.add(pair);
+  }
+ }
+}
+
 function mergeNewEpisode(v){
  if(!v||!Array.isArray(v.nodes)||!Array.isArray(v.edges))return{nodes:0,edges:0,notes:0,enrichedRelations:0};
  var aliases={"jose luis corcuera":"jose luis corcuera","juan carlos i":"juan carlos i","cesid":"cesid","centro nacional de inteligencia cni":"centro nacional de inteligencia cni"};
@@ -457,6 +513,7 @@ function load(){
  if(window.IDEA_TELARANA_F23_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F23_REVIEW);
  if(window.IDEA_TELARANA_F24_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F24_REVIEW);
  if(window.IDEA_TELARANA_F25_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_F25_REVIEW);
+ mergeSourceProfiles();
  seedError=!data.nodes.length;
 }
 function safePhoto(s){return typeof s==="string"&&(/^(https?:\/\/)/i.test(s)||/^data:image\/(jpeg|png|webp);base64,/i.test(s))?s:""}
