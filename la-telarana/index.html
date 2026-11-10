@@ -259,8 +259,8 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-vaquero-67-villarejo.js?v=20261109-source08-1"></script>
 <script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261110-peter-thiel-2"></script>
 <script src="./fuente-21-orden-mundial-editorial.js?v=20261110-peter-thiel-2"></script>
-<script src="./fuente-09-villarejo-revision.js?v=20261110-search-centre-3"></script>
-<script src="./fuente-10-revision-inicial.js?v=20261110-search-centre-3"></script>
+<script src="./fuente-09-villarejo-revision.js?v=20261110-revision0910"></script>
+<script src="./fuente-10-revision-inicial.js?v=20261110-revision0910"></script>
 <script src="./fuente-11-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./fuente-12-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./fuente-13-revision-inicial.js?v=20261110-search-centre-3"></script>
@@ -275,7 +275,8 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-25-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./photo-catalog.js?v=20261110-search-centre-3"></script>
 <script src="./person-biographies.js?v=20261110-search-centre-3"></script>
-<script src="./personas-fuentes-18-21.js?v=20261110-perfiles-2"></script>
+<script src="./personas-fuentes-18-21.js?v=20261110-revision0910"></script>
+<script src="./personas-fuentes-09-10.js?v=20261110-revision0910"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261110-perfiles-2"></script>
 <script>
@@ -366,7 +367,7 @@ function mergeSourceProfiles(){
    data.nodes.push(node);known.add(id);names.set(key,node);added++;
   }
   for(var order of Object.keys(p.sources)){
-   var episode=order==="18"?"f18-episodio":"f21-episodio";
+   var episode=({"9":"f09-episodio","10":"f10-episodio","18":"f18-episodio","21":"f21-episodio"})[order];
    if(!known.has(episode))continue;
    var pair=[node.id,episode].sort().join("::");
    if(pairs.has(pair))continue;
@@ -840,7 +841,7 @@ function showPersonResearch(panel,node){
   var library=window.IDEA_TELARANA_PERSON_SOURCE_REPORTS;
   Object.keys(report.sources).sort().forEach(function(order){
    var group=N("div",null,"source-report");
-   group.append(N("h4","Fuente "+order+" · "+(order==="18"?"Rubén Gisbert y Lorenzo Ramírez":"Inversión Racional y Lorenzo Ramírez")));
+   group.append(N("h4","Fuente "+order+" · "+((library.sourceLabels||{})[order]||(order==="18"?"Rubén Gisbert y Lorenzo Ramírez":"Inversión Racional y Lorenzo Ramírez"))));
    report.sources[order].forEach(function(claim){
     group.append(N("p","La fuente "+order+" dice que "+claim,"source-report-text"));
    });
@@ -852,9 +853,8 @@ function showPersonResearch(panel,node){
    var archive=N("details"),summary=N("summary","Notas anteriores de OneNote");
    archive.append(summary,N("div",node.archiveNote,"original-note"));section.append(archive);
   }
-  var others=(node.podcastNotes||[]).filter(function(n){
-   return n.episodeId!=="idealab-f18-epstein-lorenzo"&&n.episodeId!=="idealab-f21-orden-mundial";
-  });
+  var reportIds=new Set(Object.keys(report.sources).map(function(order){return library.sourceIds[order]}));
+  var others=(node.podcastNotes||[]).filter(function(n){return !reportIds.has(n.episodeId)});
   if(others.length)showPodcastNotes(section,others,"Otras fuentes");
  }else{
   if(node.archiveNote){
