@@ -17,7 +17,7 @@ for(const name of ["Lorenzo Ramírez","Jean Monnet","Robert Schuman","Konrad Ade
  assert(lib.profiles[name]?.sources?.["23"],"Persona ausente: "+name);
 }
 assert(lib.profiles["Jean Monnet"].sources["23"].some(x=>x.status==="alegacion_no_verificada"&&/Sostiene|afirma|alega/i.test(x.statement)&&x.speaker==="Lorenzo Ramírez"),"La interpretación de Monnet no se atribuye a la fuente");
-assert(lib.profiles["Ursula von der Leyen"].sources["23"].some(x=>(typeof x==="string"?x:x.statement).includes("no se consideran hechos probados")),"No se ha separado la alegación personal");
+assert(lib.profiles["Ursula von der Leyen"].sources["23"].some(x=>x.status==="alegacion_no_verificada"&&x.speaker==="Lorenzo Ramírez"&&/no quedan demostradas|no se acreditan|no se consideran hechos probados/i.test(x.statement)),"No se ha separado la alegación personal");
 assert(lib.profiles["Allen Dulles"].sources["23"][0].status==="identidad_pendiente","La referencia fonética Alenduls no puede darse por identificada");
 assert(lib.profiles["Emmanuel Macron"].sources["23"][0].status==="alegacion_no_verificada","No debe presentarse influencia bancaria como hecho probado");
 const html=read("la-telarana/index.html"),flow=read(".github/workflows/pages.yml");
