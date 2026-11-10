@@ -69,7 +69,7 @@ assert(curated.textContent.includes("Quién es / trayectoria"));
 assert.equal(fetchCalls,0,"curated biographies are available offline");
 const quote=new Element("panel");
 context.showPersonResearch(quote,meir);
-assert(quote.textContent.includes("Qué dicen las fuentes"));
+assert(quote.textContent.includes("Declaraciones y menciones en las fuentes"));
 assert.equal(sourceCalls.length,1);
 assert.equal(sourceCalls[0].notes.length,1,"retain original podcast notes");
 assert(sourceCalls[0].notes[0].timeSec>0,"retain exact podcast timestamp");
