@@ -21,7 +21,16 @@ const extra={
       "portrait": null,
       "sources": {
         "11": [
-          "Fernando Paz explica su interpretación de la crisis de la Segunda República, el golpe militar de julio de 1936, el desarrollo de la guerra, la represión y las consecuencias políticas y sociales del conflicto."
+          {
+            "topic": "Marco interpretativo de la Segunda República y la Guerra Civil",
+            "speaker": "Fernando Paz",
+            "statement": "Fernando Paz presenta una interpretación de las causas de la Guerra Civil y sostiene que la radicalización política y la imposibilidad de alcanzar acuerdos en 1936 contribuyeron al conflicto. Sus juicios sobre la responsabilidad de cada bando son tesis del entrevistado, no conclusiones que deban atribuirse automáticamente al conjunto de la historiografía.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando azaña quiere evitar"
+          }
         ]
       }
     },
@@ -33,7 +42,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Francisco Franco se incorporó, según Fernando Paz, al levantamiento militar tras el asesinato de José Calvo Sotelo; también comenta su prestigio entre militares, su ascenso al mando y la actuación del bando sublevado."
+          {
+            "topic": "Incorporación de Franco al golpe y ascenso militar",
+            "speaker": "Fernando Paz",
+            "statement": "Paz sostiene que el asesinato de José Calvo Sotelo influyó en la decisión de Franco de sumarse definitivamente al levantamiento militar. Compara además su prestigio en el Ejército de África con el de otros conspiradores. La cronología de su decisión personal es una interpretación histórica que requiere contraste documental independiente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Calvo Sotelo"
+          }
         ],
         "12": [
           "Franco habría modificado, según Juan Manuel de Prada, la composición y orientación diplomática de sus gobiernos conforme la Alemania nazi empezó a perder la Segunda Guerra Mundial."
@@ -48,7 +66,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Manuel Azaña trató, según Fernando Paz, de evitar la extensión de la guerra al sustituir a Casares Quiroga por Martínez Barrio; también se aborda su papel institucional en las decisiones sobre las reservas de oro del Banco de España."
+          {
+            "topic": "Nombramiento de Martínez Barrio en julio de 1936",
+            "speaker": "Fernando Paz",
+            "statement": "Paz afirma que Azaña intentó contener la escalada tras el inicio de la sublevación sustituyendo a Casares Quiroga por Diego Martínez Barrio, a quien consideraba más conciliador. Sugiere que una decisión anterior de ese tipo quizá habría evitado la guerra; esa última proposición es un contrafactual, no un hecho comprobable.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "azaña quiere evitar"
+          }
         ]
       }
     },
@@ -60,7 +87,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Emilio Mola organizó, según Fernando Paz, la conspiración desde Pamplona y asumió el papel de director de los planes del levantamiento antes de que Franco concentrara la jefatura."
+          {
+            "topic": "Dirección de la conspiración y contactos con Martínez Barrio",
+            "speaker": "Fernando Paz",
+            "statement": "Paz describe a Mola como organizador principal de la conspiración militar y relata una conversación con Martínez Barrio durante la que el general habría alegado que ya no podía detener la sublevación. La entrevista no aporta el registro original de esa conversación ni permite contrastar literalmente lo dicho.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Martínez barrio habla con una serie de militares"
+          }
         ]
       }
     },
@@ -72,7 +108,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Juan Negrín aparece en la explicación de Fernando Paz sobre la política republicana, los intelectuales que abandonaron España y la transferencia de reservas de oro durante la guerra."
+          {
+            "topic": "Gestión de reservas de oro republicanas",
+            "speaker": "Fernando Paz",
+            "statement": "Paz sitúa a Negrín como ministro de Hacienda durante el traslado de las reservas de oro republicanas desde Cartagena hacia la Unión Soviética en 1936. Critica los términos de valoración y custodia de esos activos; las acusaciones sobre actuaciones soviéticas deben distinguirse de los movimientos materiales documentables.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "negrín era el ministro de hacienda"
+          }
         ]
       }
     },
@@ -99,7 +144,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Benito Mussolini respaldó, según Fernando Paz, a los sublevados por su anticomunismo y por sus objetivos estratégicos sobre el Mediterráneo occidental."
+          {
+            "topic": "Motivaciones italianas para intervenir en España",
+            "speaker": "Fernando Paz",
+            "statement": "Paz atribuye el apoyo de Mussolini a los sublevados a dos factores: su anticomunismo y la aspiración fascista de reforzar la posición italiana en el Mediterráneo. Cita la presencia italiana en Mallorca como parte de esa dimensión estratégica. Es su explicación causal, no una reconstrucción exhaustiva de las decisiones italianas.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "anticomunismo militante de Mussolini"
+          }
         ]
       }
     },
@@ -210,7 +264,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Sanjurjo es citado por Fernando Paz al comparar su intento de golpe de 1932 con la conspiración de julio de 1936, de la que habría sido inicialmente el máximo responsable militar."
+          {
+            "topic": "Jefatura prevista del levantamiento y muerte en accidente",
+            "speaker": "Fernando Paz",
+            "statement": "Paz distingue la conspiración de 1936 del fallido golpe de Sanjurjo en agosto de 1932. Explica que estaba previsto que Sanjurjo dirigiera el levantamiento militar, pero falleció en un accidente aéreo el 20 de julio de 1936. Sus especulaciones sobre qué habría sucedido de sobrevivir se tratan como hipótesis.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "sanjurjo que está en Portugal"
+          }
         ]
       }
     },
@@ -222,7 +285,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Santiago Carrillo es mencionado por Fernando Paz al tratar la Consejería de Orden Público de la Junta de Defensa de Madrid y la represión en la retaguardia republicana durante 1936."
+          {
+            "topic": "Consejería de Orden Público y represión en Madrid",
+            "speaker": "Fernando Paz",
+            "statement": "Paz identifica a Santiago Carrillo como responsable de la Consejería de Orden Público de la Junta de Defensa de Madrid en 1936 y relaciona ese contexto con las sacas y asesinatos de presos. La atribución de responsabilidad personal directa por órdenes concretas exige documentos y examen historiográfico independiente: el episodio por sí solo no la acredita.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en la consejería de orden público está Santiago Carrillo"
+          }
         ]
       }
     },
@@ -234,7 +306,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "El asesinato de Federico García Lorca se aborda como un caso concreto de represión fuera del frente militar; Fernando Paz comenta su protección inicial por Luis Rosales y la valoración de su poesía por José Antonio Primo de Rivera."
+          {
+            "topic": "Asesinato de Lorca y calificación del hecho",
+            "speaker": "Fernando Paz",
+            "statement": "Paz considera el asesinato de Lorca un crimen cometido en la retaguardia sublevada y lo diferencia de una muerte en combate. Comenta que Lorca se refugió en la casa del poeta falangista Luis Rosales. Sus valoraciones sobre las intenciones de otros dirigentes son interpretaciones y deben distinguirse de los hechos biográficos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el caso de Lorca es un caso"
+          }
         ]
       }
     },
@@ -246,7 +327,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Luis Rosales es mencionado por Fernando Paz como el poeta falangista que dio protección a García Lorca en su casa en los días anteriores a su asesinato."
+          {
+            "topic": "Acogida de García Lorca en Granada",
+            "speaker": "Fernando Paz",
+            "statement": "Paz cita a Luis Rosales como el poeta falangista que dio refugio a Federico García Lorca en su casa de Granada antes del asesinato. La entrevista también atribuye a José Antonio Primo de Rivera admiración literaria por Lorca, pero no aporta la cita documental original de ese supuesto elogio.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Lorca es protegido por por Luis Rosales"
+          }
         ]
       }
     },
@@ -258,7 +348,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "George Orwell es citado por Fernando Paz a propósito de su estancia en Barcelona y de su testimonio autobiográfico sobre los conflictos internos del bando republicano."
+          {
+            "topic": "Testimonio sobre Barcelona y Homenaje a Cataluña",
+            "speaker": "Fernando Paz",
+            "statement": "Paz menciona la estancia de Orwell en Barcelona y su libro Homenaje a Cataluña al tratar la experiencia de extranjeros en la zona republicana. No atribuye a Orwell una participación en todos los episodios que describe sobre el conflicto: es una referencia a su experiencia y testimonio publicado.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "George orwell estuvo en Barcelona"
+          }
         ]
       }
     },
@@ -270,7 +369,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Salvador Dalí es mencionado por Fernando Paz como ejemplo de intelectual de la generación del 27 que acabó apoyando públicamente el régimen de Franco."
+          {
+            "topic": "Posicionamiento político de intelectuales españoles",
+            "speaker": "Fernando Paz",
+            "statement": "Paz utiliza a Salvador Dalí como ejemplo de figuras culturales que terminaron apoyando a Franco, en contraste con escritores identificados con el bando republicano. Su valoración de cuántos intelectuales apoyaban cada bando es una generalización del entrevistado y necesita un criterio documental de cuantificación.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Salvador Dalí apoyó a Franco"
+          }
         ]
       }
     },
@@ -330,7 +438,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "José María Gironella es citado por Fernando Paz cuando discute cómo la expresión «un millón de muertos» se incorporó al imaginario sobre las pérdidas humanas de la Guerra Civil."
+          {
+            "topic": "Origen de la cifra divulgativa del millón de muertos",
+            "speaker": "Fernando Paz",
+            "statement": "Paz afirma que una conocida obra de Gironella contribuyó a popularizar la cifra de «un millón de muertos» asociada a la Guerra Civil. Cuestiona que sea un recuento histórico riguroso y distingue muertes militares, represivas e indirectas. La cifra precisa debe contrastarse con estudios demográficos, no inferirse de una novela.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "novela célebre de José María gironella"
+          }
         ]
       }
     },
@@ -342,7 +459,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Jesús Hernández Tomás aparece en el relato de Fernando Paz sobre la depuración de profesorado universitario y las decisiones del Ministerio de Instrucción Pública republicano desde septiembre de 1936."
+          {
+            "topic": "Ministerio de Instrucción Pública y depuración del profesorado",
+            "speaker": "Fernando Paz",
+            "statement": "Paz alude al dirigente comunista Jesús Hernández Tomás, ministro de Instrucción Pública durante la Guerra Civil, y le atribuye una intensa depuración del profesorado universitario. La amplitud de las medidas y la comparación con depuraciones del bando sublevado son valoraciones del entrevistado que requieren evidencia archivística.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "un ministro comunista Jesús Hernández"
+          }
         ]
       }
     },
@@ -354,7 +480,16 @@ const extra={
       },
       "sources": {
         "11": [
-          "Manuel de Falla es mencionado por Fernando Paz al describir el posicionamiento y las experiencias de distintos intelectuales y músicos durante la Guerra Civil."
+          {
+            "topic": "Posición y salida de España durante la guerra",
+            "speaker": "Fernando Paz",
+            "statement": "Paz presenta a Manuel de Falla como un músico que no se alineó completamente con ninguno de los contendientes y recuerda su posterior residencia en Argentina y una distinción concedida por las autoridades sublevadas. Su caracterización política no debe reducirse a adhesión automática a un bando.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Manuel de falla el insigne músico"
+          }
         ]
       }
     },
