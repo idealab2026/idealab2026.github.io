@@ -651,6 +651,12 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
 .country-note-chips{display:flex;gap:6px;flex-wrap:wrap}
 .country-note-chip{border:1px solid #cba365;background:#203c4d;color:#f5d28e;border-radius:18px;padding:5px 10px;font-size:.72rem;font-weight:650}
 .country-note-chip:hover{background:#3a5260;color:#fff}
+
+/* Reserve space for the Wikipedia reader when the map is the active tab. */
+@media(min-width:1050px){
+ body.history-note-open #map-panel{margin-right:var(--history-drawer-width)}
+ body.history-note-open #map-panel .world-map-layout{grid-template-columns:1fr}
+}
 </style></head>
 <body><header><a class="brand history-brand" href="/" aria-label="IDEA LAB · Todos los proyectos"><img class="history-header-logo" src="./favicon.png?v=20261109" alt="Logo de Línea de la Historia" width="44" height="44" decoding="async"><span class="history-header-label"><small>UN PRODUCTO DE</small><strong>IDEA <b>LAB</b></strong></span></a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
