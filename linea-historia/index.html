@@ -582,6 +582,69 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
  .history-header-label small{font-size:.56rem}
  .history-header-label strong{font-size:.79rem}
 }
+
+/* Countries: single shared filter and an interactive modern-boundaries atlas. */
+.history-toolbar-single #country{width:175px}
+.history-toolbar-single .history-country-field{flex:0 0 auto}
+.history-toolbar-single .history-toolbar-search{flex:1 0 160px;min-width:160px}
+.map-panel{min-height:550px}
+.map-heading{align-items:center}
+.map-heading .muted{margin-top:4px}
+.map-data-indicator{font-size:.73rem;color:var(--gold);text-align:right}
+.world-map-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(310px,1fr);gap:17px;align-items:start}
+.world-map-main{min-width:0}
+.world-map-stage{position:relative;border:1px solid #31516b;background:
+ radial-gradient(ellipse at 50% 50%,#163950,#0a2238 70%);border-radius:12px;overflow:hidden;min-height:310px}
+.world-map-svg{display:block;width:100%;height:auto;max-height:min(69vh,650px)}
+.world-map-loading{position:absolute;inset:40% 12px auto;text-align:center;color:#a9c2d3;font-size:.86rem;pointer-events:none}
+.world-map-svg .map-country{fill:#28445b;stroke:#7c9ba8;stroke-width:.9;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .12s,stroke .12s}
+.world-map-svg .map-country.map-has-data{fill:#4c7777}
+.world-map-svg .map-country.map-more-data{fill:#598d8d}
+.world-map-svg .map-country:hover,.world-map-svg .map-country:focus-visible{fill:#86c2c5;stroke:#e6c57e;stroke-width:1.8;outline:0}
+.world-map-svg .map-country.map-selected{fill:#e5b768;stroke:#fff5d5;stroke-width:2.2}
+.world-map-svg .map-country.map-muted{fill:#1c3447}
+.world-map-svg .map-country.map-selected.map-muted{fill:#e5b768}
+.world-map-key{display:flex;flex-wrap:wrap;gap:8px 18px;color:#aac1d2;font-size:.7rem;margin:10px 0}
+.map-key-dot{display:inline-block;width:10px;height:10px;margin-right:5px;border-radius:3px;background:#4c7777}
+.map-key-active{background:#e5b768}
+.map-caveat{font-size:.69rem;line-height:1.5;color:#94abbd;margin-top:10px}
+.world-map-side{background:#0c2033;border:1px solid #29465e;border-radius:12px;padding:15px;min-height:470px}
+.world-map-summary h2{font-family:Georgia,serif;font-size:1.45rem;margin:9px 0;line-height:1.2}
+.world-map-year{border:1px solid #304a60;border-radius:9px;padding:11px;margin:14px 0}
+.map-year-enable{display:flex;align-items:center;gap:8px;color:#e7edf5;font-size:.81rem;font-weight:700;cursor:pointer}
+.map-year-enable input{accent-color:#e5b768;width:16px;height:16px}
+.map-year-controls{display:flex;align-items:center;gap:9px;margin-top:11px}
+.map-year-controls input[type=range]{min-width:0;flex:1;accent-color:#e5b768}
+.map-year-controls input[type=number]{width:84px;min-width:70px;background:#0a1e30;color:#e8eff5;border:1px solid #49667a;border-radius:7px;padding:7px}
+.map-year-caption{display:flex;justify-content:space-between;align-items:center;gap:7px;margin-top:8px;font-size:.72rem;color:#b5c9d8}
+.map-year-reset{padding:3px 6px;border:0;color:var(--gold);background:transparent;font-size:.72rem}
+.map-list-header{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #365069;padding-top:13px;gap:5px;font-size:.81rem}
+.map-results{display:grid;gap:8px;margin-top:11px;max-height:min(62vh,700px);overflow:auto;overscroll-behavior:contain;padding-right:3px}
+.map-result-card{border:1px solid #35516a;border-radius:9px;background:#142d42;padding:11px;display:flex;flex-direction:column;align-items:stretch;gap:5px;text-align:left;width:100%;color:#e7eff8}
+.map-result-card:hover,.map-result-card:focus-visible{border-color:var(--gold);background:#213d52}
+.map-result-year{font-size:.7rem;font-weight:800;color:var(--gold)}
+.map-result-title{font-size:.85rem;font-weight:750;line-height:1.35}
+.map-result-meta{font-size:.7rem;color:#a7c3d4;line-height:1.35}
+.map-result-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:2px}
+.map-jump-link{font-size:.69rem;color:#f0c879;background:transparent;border:0;padding:2px 0;text-align:left}
+.map-jump-link:hover{text-decoration:underline}
+.map-empty{font-size:.82rem;color:#a7bed0;padding:20px 4px;line-height:1.55}
+.map-load-more{width:100%;margin-top:12px}
+.map-panel .history-toolbar{margin-bottom:14px}
+@media(max-width:920px){
+ .world-map-layout{grid-template-columns:1fr}
+ .world-map-svg{max-height:none}
+ .world-map-side{min-height:0}
+ .map-results{max-height:500px}
+}
+@media(max-width:700px){
+ .history-toolbar-single #country{width:149px}
+ .world-map-side{padding:11px}
+ .world-map-stage{min-height:200px}
+ .world-map-svg .map-country{stroke-width:1.1}
+ .world-map-layout{gap:12px}
+ .map-panel{padding:10px}
+}
 </style></head>
 <body><header><a class="brand history-brand" href="/" aria-label="IDEA LAB · Todos los proyectos"><img class="history-header-logo" src="./favicon.png?v=20261109" alt="Logo de Línea de la Historia" width="44" height="44" decoding="async"><span class="history-header-label"><small>UN PRODUCTO DE</small><strong>IDEA <b>LAB</b></strong></span></a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
@@ -590,6 +653,7 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
 <nav class="view-tabs" role="tablist" aria-label="Vista de historia">
   <button type="button" id="tab-timeline" class="view-tab active" role="tab" aria-controls="timeline-panel" aria-selected="true">Línea temporal</button>
   <button type="button" id="tab-columns" class="view-tab" role="tab" aria-controls="columns-panel" aria-selected="false">Vista por columnas</button>
+  <button type="button" id="tab-map" class="view-tab" role="tab" aria-controls="map-panel" aria-selected="false">Mapamundi</button>
 </nav>
 <section id="timeline-panel" class="panel timeline-panel" role="tabpanel" aria-labelledby="tab-timeline" aria-label="Cronología interactiva"><div class="figure-head"><strong id="period-name">Historia universal · eje continuo</strong><div class="figure-tools"><span class="muted" id="zoom-level">Zoom ×1</span><button class="action" type="button" id="zoom-out" aria-label="Alejar">−</button><button class="action" type="button" id="zoom-in" aria-label="Acercar">+</button><button class="action" type="button" id="jump-present">Ir a 2000</button><input id="jump-year" class="year-jump" type="number" step="1" min="-541000000" max="2031" placeholder="Año (− a. C.)" aria-label="Año al que desplazarse"><button class="action" type="button" id="jump-year-go" aria-label="Ir al año indicado">Ir al año</button><button class="action fullscreen-button" type="button" id="toggle-fullscreen" aria-pressed="false" title="Ampliar la cronología a la ventana completa">⛶ Pantalla completa</button></div></div><div id="history-toolbar" class="history-toolbar history-toolbar-single" aria-label="Navegación y filtros históricos">
   <div class="history-toolbar-field history-period-field">
@@ -614,6 +678,10 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
     <label for="filters">Categoría</label>
     <select id="filters" aria-label="Filtrar por categoría"></select>
   </div>
+  <div class="history-toolbar-field history-country-field">
+    <label for="country">País</label>
+    <select id="country" aria-label="Filtrar por país asociado"><option value="Todos">Todos los países</option><option value="Sin clasificar">Sin clasificar</option></select>
+  </div>
   <input class="search history-toolbar-search" type="search" id="search" placeholder="Buscar en la historia…" aria-label="Buscar acontecimientos, personas u obras">
   <span id="geo-status" class="history-status-sr" role="status" aria-live="polite">Clasificación geográfica provisional</span>
 </div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div>
@@ -635,6 +703,41 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
 
 
 
+
+<section id="map-panel" class="panel map-panel hide" role="tabpanel" aria-labelledby="tab-map" aria-label="Mapamundi histórico interactivo">
+ <div class="figure-head map-heading">
+  <div><strong>Historia por países</strong><div class="muted">Selecciona un país en el mapa o en el desplegable. Las tarjetas aparecen en orden cronológico.</div></div>
+  <span class="map-data-indicator" id="map-coverage">Cargando vinculaciones territoriales…</span>
+ </div>
+ <div class="world-map-layout">
+  <div class="world-map-main">
+   <div class="world-map-stage">
+    <svg id="world-map-svg" class="world-map-svg" viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Mapamundi con países seleccionables"></svg>
+    <div id="world-map-loading" class="world-map-loading">Cargando países…</div>
+   </div>
+   <div class="world-map-key">
+    <span><i class="map-key-dot"></i> Territorios con referencias en el archivo</span>
+    <span><i class="map-key-dot map-key-active"></i> País seleccionado</span>
+   </div>
+   <p class="map-caveat">Cartografía actual de Natural Earth (1:110 m). Los vínculos representan referencias territoriales, no fronteras históricas ni una lista exhaustiva de países afectados. Las asociaciones históricas orientativas requieren revisión.</p>
+  </div>
+  <aside class="world-map-side">
+   <div class="world-map-summary">
+    <span class="eyebrow">EXPLORADOR TERRITORIAL</span>
+    <h2 id="map-country-name">Todos los países</h2>
+    <div id="map-country-count" class="muted">Elige un país para explorar sus vínculos históricos.</div>
+   </div>
+   <div class="world-map-year">
+    <label class="map-year-enable"><input id="map-year-toggle" type="checkbox"> Mostrar solo registros del año</label>
+    <div class="map-year-controls"><input id="map-year-range" type="range" min="-3000" max="2026" step="1" value="1900" disabled aria-label="Año del mapa"><input id="map-year-number" type="number" min="-3000" max="2026" step="1" value="1900" disabled aria-label="Introducir año del mapa"></div>
+    <div class="map-year-caption"><span id="map-year-label">Todos los años</span><button type="button" id="map-year-reset" class="map-year-reset">Restablecer</button></div>
+   </div>
+   <div class="map-list-header"><strong>Registros vinculados</strong><span id="map-result-count" class="muted"></span></div>
+   <div id="map-results" class="map-results" aria-live="polite"></div>
+   <button id="map-load-more" type="button" class="action map-load-more hide">Mostrar más registros</button>
+  </aside>
+ </div>
+</section>
 <div id="note-layer" class="note-layer hide" role="presentation">
  <section id="note-dialog" class="note-sheet" role="dialog" aria-modal="false" aria-labelledby="note-title" tabindex="-1">
   <div class="note-header">
