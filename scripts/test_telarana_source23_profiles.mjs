@@ -11,13 +11,15 @@ const found=Object.entries(lib.profiles).filter(([_,p])=>Array.isArray(p.sources
 assert(found.length>=30,"La fuente 23 requiere al menos 30 biografías");
 for(const [name,p] of found){
  assert(p.who?.length>=45,"Biografía incompleta "+name);
- assert(p.sources["23"].length&&p.sources["23"].every(x=>x.length>=65),"Sin declaración atribuida "+name);
+ assert(p.sources["23"].length&&p.sources["23"].every(x=>typeof x==="string"?x.length>=65:typeof x.statement==="string"&&x.statement.length>=65&&!!x.topic&&!!x.speaker&&!!x.status),"Sin declaración atribuida "+name);
 }
 for(const name of ["Lorenzo Ramírez","Jean Monnet","Robert Schuman","Konrad Adenauer","Friedrich Merz","Ursula von der Leyen","Emmanuel Macron","Mijaíl Gorbachov","Boris Yeltsin","Shepard Stone"]){
  assert(lib.profiles[name]?.sources?.["23"],"Persona ausente: "+name);
 }
-assert(lib.profiles["Jean Monnet"].sources["23"].some(x=>x.includes("sostiene")),"La interpretación de Monnet no se atribuye a la fuente");
-assert(lib.profiles["Ursula von der Leyen"].sources["23"].some(x=>x.includes("no se consideran hechos probados")),"No se ha separado la alegación personal");
+assert(lib.profiles["Jean Monnet"].sources["23"].some(x=>(typeof x==="string"?x:x.statement).includes("sostiene")),"La interpretación de Monnet no se atribuye a la fuente");
+assert(lib.profiles["Ursula von der Leyen"].sources["23"].some(x=>(typeof x==="string"?x:x.statement).includes("no se consideran hechos probados")),"No se ha separado la alegación personal");
+assert(lib.profiles["Allen Dulles"].sources["23"][0].status==="identidad_pendiente","La referencia fonética Alenduls no puede darse por identificada");
+assert(lib.profiles["Emmanuel Macron"].sources["23"][0].status==="alegacion_no_verificada","No debe presentarse influencia bancaria como hecho probado");
 const html=read("la-telarana/index.html"),flow=read(".github/workflows/pages.yml");
 assert(html.includes('src="./personas-fuentes-23.js'),"Módulo no enlazado al grafo");
 assert(html.includes('"23":"f23-episodio"'),"Personas no conectadas al episodio 23");
