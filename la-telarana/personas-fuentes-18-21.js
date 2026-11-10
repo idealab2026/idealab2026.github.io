@@ -49,7 +49,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       "portrait": null,
       "sources": {
         "21": [
-          "Luis Miguel Ortiz conduce la entrevista y pregunta por las tesis geopolíticas de Lorenzo Ramírez, la Unión Europea, Palantir, el sistema monetario y las oportunidades de inversión."
+          {
+            "topic": "Conducción de la entrevista y preguntas geopolíticas",
+            "speaker": "Luis Miguel Ortiz (presentador; diarización pendiente)",
+            "statement": "Luis Miguel Ortiz presenta la conversación con Lorenzo Ramírez y le plantea cuestiones sobre la pérdida de hegemonía estadounidense, la competencia con China, los cambios políticos europeos y el papel de las empresas tecnológicas. Su participación es la de entrevistador: las tesis y acusaciones expuestas por Ramírez no deben imputársele automáticamente.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "bienvenidos a un nuevo episodio de inversión racional"
+          }
         ]
       }
     },
@@ -76,7 +85,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Donald Trump se encontraría, según la fuente, condicionado por distintas facciones empresariales y políticas en la gestión de los archivos Epstein y en su política exterior hacia Israel e Irán."
         ],
         "21": [
-          "Donald Trump continuaría líneas de política exterior que los entrevistados vinculan con los gobiernos de Biden y Obama, además de impulsar una agenda tecnológica en la Administración."
+          {
+            "topic": "Continuidad estratégica con Biden y agenda empresarial",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que Trump no rompe con las administraciones de Biden y Obama, sino que profundiza ciertas líneas de política exterior y tecnológica que estas habían desarrollado. Vincula su enfoque con presiones comerciales y con la influencia de empresarios tecnológicos; esa continuidad es una interpretación política del entrevistado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "trump es la segunda parte de biden"
+          }
         ]
       }
     },
@@ -387,7 +405,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Barack Obama es mencionado en una conversación sobre unos presuntos mensajes atribuidos a Peter Thiel y Epstein en torno a la política estadounidense en Oriente Medio."
         ],
         "21": [
-          "Barack Obama se presenta como antecedente de la estrategia exterior que, según Lorenzo Ramírez, continuaron Biden y Trump."
+          {
+            "topic": "Referencia al origen de una estrategia de presión a Rusia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sitúa en la etapa de Obama antecedentes de políticas que, a su juicio, también continuaron Biden y Trump. Cita como parte de su argumentación un informe de RAND de 2019, posterior a la presidencia de Obama; el documento no demuestra por sí mismo que Obama diseñara las medidas posteriores.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "sobre todo empieza con barack obama"
+          }
         ]
       }
     },
@@ -402,7 +429,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
           "Joe Biden es citado para comparar la capacidad de la Casa Blanca y las posibles respuestas estadounidenses a crisis exteriores."
         ],
         "21": [
-          "Joe Biden es incluido por Lorenzo Ramírez en una línea de continuidad de política internacional con Obama y Trump, especialmente respecto a Ucrania y Europa."
+          {
+            "topic": "Continuidad entre administraciones y política hacia Europa",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez equipara varias líneas de actuación exterior de Biden y Trump, especialmente respecto a Rusia, Ucrania y la relación estratégica con Europa. Presenta esa continuidad como señal de prioridades de poder que exceden a los partidos. Es una interpretación, no la prueba de una coordinación secreta entre presidentes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "trump es la segunda parte de biden"
+          }
         ]
       }
     },
@@ -570,7 +606,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Jean Monnet es presentado por el entrevistado como participante de un proyecto europeo influido por intereses estadounidenses, cuya trayectoria en Londres y Washington destaca."
+          {
+            "topic": "Acusaciones sobre financiación y orientación estadounidense de la integración europea",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que Monnet, vinculado a actividades financieras en Londres, trabajó en la órbita estadounidense y que entidades como la Fundación Ford contribuyeron a impulsar el proyecto europeo. Presenta la integración como orientada a intereses de Washington. La atribución de control encubierto y las motivaciones personales necesitan fuentes documentales externas.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "moné era un banquero que trabajaba en londres"
+          }
         ]
       }
     },
@@ -582,7 +627,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Robert Schuman aparece junto a Jean Monnet en la explicación crítica de Lorenzo Ramírez sobre los orígenes de la integración europea."
+          {
+            "topic": "Relectura crítica del papel de los fundadores europeos",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita a Schuman junto a Monnet para rechazar el relato de una integración europea originada únicamente por motivaciones idealistas. Sostiene que la influencia estadounidense fue decisiva en sus inicios. Su tesis sobre los intereses dominantes no se acredita como relación de subordinación personal de Schuman en la entrevista.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "moné y schuman eran dos tipos"
+          }
         ]
       }
     },
@@ -594,7 +648,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Brzezinski es citado como pensador que situaba Eurasia y Ucrania en el centro de la estrategia geopolítica estadounidense."
+          {
+            "topic": "Interpretación del valor estratégico de Ucrania y Eurasia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Brzezinski al argumentar que una cooperación económica estrecha entre Rusia y Europa podría amenazar la hegemonía estadounidense. Interpreta Ucrania como espacio clave de esa competencia y atribuye a pensadores norteamericanos estrategias de contención. La entrevista no prueba decisiones operativas personales de Brzezinski.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "brecinski kissinger y compañía"
+          }
         ]
       }
     },
@@ -606,7 +669,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Henry Kissinger es mencionado como referente del pensamiento geopolítico estadounidense sobre la relación entre Europa, Rusia y la hegemonía de Estados Unidos."
+          {
+            "topic": "Referencia al pensamiento estratégico sobre Eurasia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez asocia a Kissinger con la preocupación estadounidense por una eventual integración económica y energética entre Europa y Rusia. Utiliza su obra como referencia para interpretar tensiones geopolíticas posteriores. No demuestra en el episodio que Kissinger dirigiera una operación específica contra Ucrania o Europa.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "brecinski kissinger y compañía"
+          }
         ]
       }
     },
@@ -618,7 +690,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Giorgia Meloni es presentada por Lorenzo Ramírez como una dirigente que intenta conciliar posiciones nacionalistas y alianzas internacionales."
+          {
+            "topic": "Posicionamiento de Italia entre alianzas occidentales y soberanía",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez presenta a Meloni como dirigente que combina una retórica nacionalista con el apoyo a la OTAN, al G7 y a sanciones contra Rusia. La describe como una figura que «juega con dos barajas» y menciona su relación con el Instituto Aspen. Es un juicio político del entrevistado, no evidencia de pacto encubierto.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "meloni está jugando con las dos barajas"
+          }
         ]
       }
     },
@@ -714,7 +795,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Robert F. Kennedy Jr. es descrito por el entrevistado como figura sometida a presiones de personas de su entorno político y sanitario a las que vincula con Peter Thiel."
+          {
+            "topic": "Supuestas presiones de personas del entorno sanitario estadounidense",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que Kennedy Jr. afronta presiones dentro de su equipo sanitario por la presencia de personas que vincula con Peter Thiel y con la industria de nuevas tecnologías médicas. No identifica en el fragmento actos concretos documentados de coacción: la relación y el pronóstico político se conservan como alegación del entrevistado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "kennedy que en el caso de kennedy"
+          }
         ]
       }
     },
@@ -726,7 +816,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "John F. Kennedy es mencionado al hablar de la desclasificación de documentación sobre su asesinato y de los límites que atribuye el entrevistado a ese proceso."
+          {
+            "topic": "Desclasificación de archivos del asesinato presidencial",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez comenta la anunciada desclasificación de documentos sobre el asesinato de John F. Kennedy y especula acerca de información que podría quedar reservada por motivos políticos. No aporta documentos en el episodio que permitan sostener la participación de actores concretos en el asesinato.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "asesinato de kennedy"
+          }
         ]
       }
     },
@@ -780,7 +879,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Adam Tooze es mencionado en el origen y difusión del concepto de «policrisis» en el debate económico y político."
+          {
+            "topic": "Difusión del concepto de policrisis en el debate económico",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona al historiador económico Adam Tooze, transcrito fonéticamente como «adam tus», al hablar del concepto de «policrisis», que posteriormente asocia a artículos de George Soros. La referencia es intelectual: no afirma que Tooze participe en las crisis ni acredita una red de coordinación entre ambos.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "adam tus el escritor adam tus"
+          }
         ]
       }
     },
@@ -792,7 +900,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Nelson Rockefeller es referido como figura de iniciativas filantrópicas y organizaciones que el entrevistado presenta como antecedentes de políticas estadounidenses de cooperación internacional."
+          {
+            "topic": "Alegación sobre antecedentes privados de programas de ayuda exterior",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que una organización vinculada a Nelson Rockefeller habría servido como antecedente de la agencia de cooperación estadounidense USAID. Utiliza ese relato para criticar el uso político de programas de ayuda internacional. La entrevista no aporta documentos fundacionales que permitan atribuir a Rockefeller la creación directa de la agencia.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "organización dirigida por nelson rockefeller"
+          }
         ]
       }
     },
@@ -804,7 +921,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Gadafi es citado en la explicación que ofrece la fuente sobre Libia, la Primavera Árabe, los proyectos monetarios panafricanos y el papel atribuido a USAID."
+          {
+            "topic": "Acusación sobre Libia, moneda panafricana y financiación de operaciones",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que el interés de Gadafi en una moneda panafricana respaldada por oro fue un factor que precipitó la intervención internacional en Libia. Afirma que recursos vinculados a USAID habrían contribuido a operaciones que terminaron con su muerte. Son acusaciones causales del entrevistado sin documentación probatoria aportada en el episodio.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en libia se asesina gadfi"
+          }
         ]
       }
     },
@@ -816,7 +942,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Seymour Hersh es mencionado a propósito de sus publicaciones sobre el sabotaje del gasoducto Nord Stream."
+          {
+            "topic": "Publicaciones sobre el sabotaje del gasoducto Nord Stream",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita una publicación del periodista Seymour Hersh acerca del sabotaje de Nord Stream cuando critica la posición de gobiernos europeos ante Estados Unidos. Invocar esa publicación no demuestra por sí solo la autoría del ataque; la hipótesis del periodista y los hechos confirmados deben mantenerse separados.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "seur hers seimurg hers publica esto"
+          }
         ]
       }
     },
@@ -828,7 +963,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "21": [
-          "Edward Snowden aparece como referente de las revelaciones sobre vigilancia y recopilación de datos en Estados Unidos."
+          {
+            "topic": "Revelaciones sobre vigilancia y controversia tecnológica",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez recuerda las revelaciones de Snowden sobre programas de vigilancia como antecedente de las preocupaciones actuales por el uso masivo de datos y herramientas de inteligencia artificial. Su mención sirve de contexto para la crítica del entrevistado a proyectos tecnológicos, no acredita que Snowden participara en ellos.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con el caso snowden"
+          }
         ]
       }
     },
@@ -837,7 +981,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       "portrait": null,
       "sources": {
         "21": [
-          "Daniel Baeza es mencionado por Lorenzo Ramírez al agradecer conversaciones sobre Bitcoin y formación financiera en el entorno de Inversión Racional."
+          {
+            "topic": "Agradecimiento y referencia al ahorro y Bitcoin",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez agradece a personas vinculadas al entorno de formación financiera, entre ellas alguien cuyo nombre aparece como «dani que sabe baeza» en la transcripción. Más adelante menciona «daniel baeza» al discutir el valor de mantener dinero líquido como ahorro. La identidad y forma exacta del primer nombre necesitan confirmación audiovisual.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "daniel baeza"
+          }
         ]
       }
     },
@@ -864,7 +1017,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       "portrait": null,
       "sources": {
         "21": [
-          "Lunaticoin recibe un agradecimiento de Lorenzo Ramírez por conversaciones y explicaciones sobre Bitcoin vinculadas al entorno de Inversión Racional."
+          {
+            "topic": "Agradecimiento al entorno divulgador de Bitcoin",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez agradece públicamente a «lunatic coin» sus explicaciones sobre Bitcoin y comenta que continúa formándose en ese ámbito. El pasaje refleja reconocimiento intelectual del entrevistado; no documenta una vinculación empresarial o contractual con esa persona.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "gracias lunatic coin"
+          }
         ]
       }
     }
