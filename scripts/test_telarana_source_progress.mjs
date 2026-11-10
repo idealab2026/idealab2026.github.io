@@ -20,7 +20,7 @@ assert.equal(feed.counts.reviewedPublished,reviewed.size);
 assert.equal(feed.counts.inReview,inReview.size);
 assert.equal(feed.counts.notStarted,69-reviewed.size-inReview.size);
 assert.equal(feed.counts.pending,69-reviewed.size);
-assert.equal(feed.counts.missingOriginalUrl,rows.filter(e=>!e.sourceUrl).length);
+assert.equal(feed.counts.missingOriginalUrl,rows.filter(e=>!e.originalUrl).length);
 assert.equal(feed.counts.duplicateEntries,rows.filter(e=>e.duplicateOf!==null).length);
 assert.equal(feed.counts.uniqueSources,66);
 assert.equal(feed.inventory.notebooks.length,8);
