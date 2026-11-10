@@ -47,6 +47,8 @@ jobs:
         run: node scripts/test_telarana_recent_sources.mjs
       - name: Comprobar Peter Thiel y sus dos entrevistas en ficha única
         run: node scripts/test_telarana_peter_thiel.mjs
+      - name: Comprobar biografías y atribuciones de las fuentes 18 y 21
+        run: node scripts/test_telarana_source_profile_reports.mjs
       - name: Validar transcripción y evidencias de la fuente 02
         run: node scripts/test_telarana_source02_transcript.mjs
       - name: Validar avance de fuente 03 y fotografías de sus protagonistas
@@ -109,6 +111,7 @@ jobs:
           cp la-telarana/fuente-18-epstein-lorenzo-editorial.js dist/la-telarana/fuente-18-epstein-lorenzo-editorial.js
           cp la-telarana/fuente-21-orden-mundial-editorial.js dist/la-telarana/fuente-21-orden-mundial-editorial.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
+          cp la-telarana/personas-fuentes-18-21.js dist/la-telarana/personas-fuentes-18-21.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
@@ -165,6 +168,7 @@ jobs:
           test -s dist/la-telarana/photo-catalog.js
           test -s dist/la-telarana/person-biographies.js
           node --check dist/la-telarana/person-biographies.js
+          node --check dist/la-telarana/personas-fuentes-18-21.js
           grep -q 'IDEA_TELARANA_BIOGRAPHIES' dist/la-telarana/person-biographies.js
           grep -q 'showPersonBiography' dist/la-telarana/index.html
           grep -q "IDEA_TELARANA_WIKIPEDIA_PORTRAITS" dist/la-telarana/photo-catalog.js
