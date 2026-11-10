@@ -31,6 +31,7 @@ assert.equal(s.tracking.docTranscriptionCreated,false);
 assert.equal(s.tracking.transcriptContentImported,false);
 assert.equal(s.individualCasesVerified,0);
 assert(html.includes("source05-psoe-map-context.js?v="));
-assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_SOURCE05_EDITORIAL)"));
+const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(html)||[])[1]||"[]");
+assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE05_EDITORIAL"&&m.kind==="mergeNewEpisode")&&html.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE05_EDITORIAL");
 assert(!html.includes("source-review-rows"));
 console.log("OK: fuente05 iniciada, procedencia partidista identificada, sin imputaciones añadidas como hechos");
