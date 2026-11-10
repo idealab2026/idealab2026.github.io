@@ -104,8 +104,8 @@
     }
   ],
   "nextSource": {
-    "order": 22,
-    "videoId": "1zHkc1lFKww",
+    "order": 23,
+    "videoId": "EMZzh2ZpLj8",
     "status": "transcripcion_privada_lista_para_revision_biografica",
     "sourceType": "youtube"
   },
@@ -760,17 +760,44 @@
       "videoId": "1zHkc1lFKww",
       "title": "El PLAN ya está en marcha: Todo está pactado",
       "sourceUrl": "https://www.youtube.com/watch?v=1zHkc1lFKww",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "segunda_revision_biografias_y_marcha_verde_publicada_revision_audiovisual_pendiente",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 7,
       "sourceRelationsDocumented": 6,
-      "verifiedIndependentChecks": 0,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "verifiedIndependentChecks": 2,
+      "qualityNotes": "Transcripción automática completa (20.986 caracteres) verificada en Drive. 13 perfiles con biografías y notas atribuidas. Se incorpora la Marcha Verde de 6-11-1975 con fecha y Resolución 380 verificadas por fuentes institucionales; las afirmaciones sobre presuntos viajes o reuniones de Juan Carlos I y Kissinger, y sobre escenarios actuales de Ceuta y Gibraltar, quedan como declaraciones de la fuente sin prueba independiente. Audio, minutajes, separación de voces y QA visual pendientes.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 0
+      "timelineVerifiedEventsCommitted": 1,
+      "rawTranscriptAvailable": true,
+      "transcriptStoredInDrive": true,
+      "fullTranscriptVerifiedDriveReadback": true,
+      "transcriptDocUrl": "https://docs.google.com/document/d/1trN1Z_6S9Nj6kWErmxvh-gu5HX2n_mguEJHafPd3x0E/edit?usp=drivesdk",
+      "transcriptCharacters": 20986,
+      "personsProfiled": 13,
+      "impersonalAttributedSummaries": 13,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-22.js",
+      "personBiographiesFirst": true,
+      "timelineEventIds": [
+        "study-f22-marcha-verde-sahara-1975"
+      ],
+      "personASRVariants": [
+        {
+          "raw": "Tanahu",
+          "canonicalCandidate": "Benjamín Netanyahu",
+          "audioVerified": false
+        },
+        {
+          "raw": "Marwenda",
+          "canonicalCandidate": "Francisco Marhuenda",
+          "audioVerified": false
+        }
+      ],
+      "attributionScope": "Entrevista multivocal en El Canal del Coronel. Las afirmaciones sobre operaciones psicológicas, acuerdos secretos y relaciones entre Marruecos, Israel y Estados Unidos son atribuciones al episodio, no hechos acreditados.",
+      "imageRuntimeVerified": false,
+      "lastUpdated": "2026-11-10"
     },
     {
       "order": 23,
@@ -843,9 +870,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 55,
+    "committedVerifiedEvents": 56,
     "fromReviewedSource": 13,
-    "fromSourceInReview": 35,
+    "fromSourceInReview": 36,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -924,6 +951,9 @@
         "study-f21-usaid-1961",
         "study-f21-rand-2019",
         "study-f21-stargate-2025"
+      ],
+      "22": [
+        "study-f22-marcha-verde-sahara-1975"
       ],
       "25": [
         "study-f25-bis-1930"
@@ -1715,19 +1745,19 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 18,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "segunda_revision_biografias_y_marcha_verde_publicada_revision_audiovisual_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1trN1Z_6S9Nj6kWErmxvh-gu5HX2n_mguEJHafPd3x0E/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
-          "imageAtGraphNode": "pendiente_verificacion",
+          "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
-          "transcriptCharactersReadBack": 20978,
+          "transcriptCharactersReadBack": 20986,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
