@@ -19,7 +19,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Rubén Gisbert presenta la conversación con Lorenzo Ramírez, pregunta por los archivos Epstein y plantea el papel de la tecnología, los servicios de inteligencia y las instituciones estadounidenses."
+          {
+            "topic": "Presentación de la entrevista y contexto editorial",
+            "speaker": "Presentador y entrevistado (turno exacto pendiente)",
+            "statement": "El presentador introduce a Lorenzo Ramírez y plantea preguntas sobre documentos vinculados al caso Epstein y sobre el papel de empresas tecnológicas, servicios de inteligencia y gobiernos. No deben atribuirse al presentador las acusaciones que expone su invitado sin una identificación de turnos.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Qué tal Rubén encantado de estar una vez más contigo"
+          }
         ]
       }
     },
@@ -28,7 +37,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       "portrait": null,
       "sources": {
         "18": [
-          "Lorenzo Ramírez expone un análisis sobre los documentos del caso Epstein, las disputas en torno al poder estadounidense, las relaciones con Oriente Medio y la política económica internacional."
+          {
+            "topic": "Tesis general sobre élites tecnológicas y poder político",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez expone su interpretación de la publicación de materiales del caso Epstein y relaciona el asunto con disputas entre redes políticas, empresarios tecnológicos y servicios de inteligencia. La entrevista contiene hipótesis de influencia y coordinación que no quedan probadas por el relato en sí.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "don Lorenzo Ramírez ¿Qué tal Lorenzo"
+          }
         ],
         "21": [
           {
@@ -70,7 +88,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Jeffrey Epstein habría desarrollado, según los entrevistados, una función de intermediación entre empresarios, responsables políticos y servicios de inteligencia; la conversación aborda la publicación de sus archivos y su correspondencia con figuras empresariales."
+          {
+            "topic": "Hipótesis de intermediación entre empresarios e instituciones",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que Epstein actuó como intermediario entre actores políticos, empresarios y redes de influencia y que ciertas publicaciones de correos permiten reconstruir contactos. La existencia de correspondencia no implica automáticamente delito ni coordinación de todas las personas mencionadas: cada imputación requiere documentación independiente.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "¿Qué hacía Epstein ser la bisagra"
+          }
         ]
       }
     },
@@ -82,7 +109,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Donald Trump se encontraría, según la fuente, condicionado por distintas facciones empresariales y políticas en la gestión de los archivos Epstein y en su política exterior hacia Israel e Irán."
+          {
+            "topic": "Interpretación de tensiones internas y estrategia exterior",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez relaciona las decisiones de Trump sobre Irán, Israel y el control de la publicación de archivos Epstein con tensiones entre grupos políticos y empresariales. La atribución de motivaciones ocultas o subordinación a terceros es una hipótesis de la fuente, no un hecho documentado en la conversación.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "la estrategia de seguridad nacional de Trump"
+          }
         ],
         "21": [
           {
@@ -106,7 +142,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Benjamin Netanyahu ocuparía, según el análisis del episodio, una posición destacada en la presión sobre Washington y en las tensiones con Irán; se discuten sus incentivos políticos y estratégicos."
+          {
+            "topic": "Opiniones críticas sobre la relación entre Israel y Washington",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez emite críticas a Netanyahu al hablar de la política israelí y de grupos religiosos o políticos que, según él, influyen en las decisiones de Washington. Sus expresiones sobre intenciones de dirigentes israelíes son juicios del entrevistado y no pruebas de una coordinación clandestina.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Netanyahu y sus secuaces"
+          }
         ]
       }
     },
@@ -118,7 +163,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Bill Gates aparecería en la lectura que hacen los interlocutores del caso Epstein como una figura cuya influencia pública se estaría debilitando ante la publicación de nuevos documentos."
+          {
+            "topic": "Tesis sobre desgaste de su influencia pública",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que nuevas publicaciones del caso Epstein estarían contribuyendo a desplazar a Bill Gates como figura pública influyente y critica algunas de sus intervenciones internacionales. La interpretación de que existió una operación deliberada para apartarlo no queda acreditada por el episodio.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Bill Gates es el claro ejemplo"
+          }
         ]
       }
     },
@@ -130,7 +184,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Melinda French Gates es mencionada al hablar de declaraciones y del desgaste reputacional asociado al caso Epstein."
+          {
+            "topic": "Mención contextual a declaraciones públicas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita a Melinda French Gates dentro de su argumento sobre el desgaste de la reputación pública de Bill Gates. Alude a declaraciones que le atribuye, sin aportar aquí el documento original ni permitir concluir de ello participación en una supuesta operación coordinada.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "la propia Melinda que ahora dice"
+          }
         ]
       }
     },
@@ -142,7 +205,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "George Soros es presentado como referente de una corriente política y filantrópica que los entrevistados comparan con la influencia de Peter Thiel; se plantea que la rivalidad entre ambos podría ser aparente."
+          {
+            "topic": "Comparación con empresarios tecnológicos y redes filantrópicas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona Open Society y a Soros al analizar redes filantrópicas y estrategias de influencia política, y plantea que la oposición pública entre Soros y algunos empresarios tecnológicos podría ocultar intereses convergentes. La convergencia es una hipótesis del entrevistado, no un pacto demostrado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "la influencia de Soros"
+          }
         ],
         "21": [
           {
@@ -176,7 +248,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Peter Thiel es relacionado por el programa con Palantir, sus vínculos históricos con el ámbito de inteligencia estadounidense y presuntos correos de 2014 con Jeffrey Epstein; los interlocutores lo comparan con George Soros."
+          {
+            "topic": "Identificación ASR y alegaciones sobre correos con Epstein",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez se refiere a «Peterill» y «Peter Cel» en pasajes sobre PayPal, Palantir y correspondencia atribuida a Epstein. La identificación como Peter Thiel es probable por ese contexto, pero no está cotejada en audio; tampoco se demuestra la veracidad de las conclusiones de inteligencia que el invitado extrae de esos supuestos correos.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando directamente Peterill"
+          }
         ],
         "21": [
           {
@@ -200,7 +281,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Alex Karp aparece en la descripción del papel de Palantir en el desarrollo de herramientas de inteligencia y en las operaciones relacionadas con Ucrania e Israel que los entrevistados le atribuyen."
+          {
+            "topic": "Afirmaciones sobre Palantir y conflictos militares",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez identifica fonéticamente a «Alex Carp» al hablar de la dirección de Palantir y sostiene que las herramientas de la empresa han participado en operaciones vinculadas a Ucrania e Israel. La afirmación de dirección personal de operaciones militares por parte de Karp no está corroborada por documentación independiente en esta entrevista.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Alex Carp que es el que estuvo"
+          }
         ]
       }
     },
@@ -212,7 +302,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Elon Musk es mencionado como figura del entorno de PayPal y en relación con iniciativas de identificación de usuarios de redes sociales; la fuente compara sus intereses con propuestas del Gobierno español."
+          {
+            "topic": "Contradicción que atribuye a Musk y al Gobierno español",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez compara iniciativas de Musk sobre verificación de identidad en redes sociales con propuestas de Sánchez para regular plataformas y sostiene que el enfrentamiento público entre ambos puede beneficiar a sus respectivos discursos. La idea de convergencia de intereses es una interpretación de la fuente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Pedro Sánchez y Elon Mask"
+          }
         ],
         "21": [
           {
@@ -236,7 +335,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Mark Zuckerberg es citado al hablar de Facebook, de los primeros inversores de la compañía y de la relación que los interlocutores atribuyen a la industria tecnológica con agencias de inteligencia."
+          {
+            "topic": "Acusaciones de influencia de inteligencia en Facebook",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Zuckerberg y afirma que los servicios de inteligencia estadounidenses habrían intervenido en la evolución de Facebook y en su consejo de administración, citando de forma imprecisa a empresarios próximos a PayPal. No aporta documentos que permitan verificar esa imputación ni la identidad de todos los consejeros mencionados.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con Zuckenberg si no recuerdo mal"
+          }
         ]
       }
     },
@@ -248,7 +356,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Jamie Dimon es citado en un análisis sobre grandes bancos de Wall Street, concentración financiera y supuestos vínculos entre ejecutivos bancarios y estructuras de influencia."
+          {
+            "topic": "Acusación sobre ascenso en JPMorgan e influencia de redes exteriores",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita al ejecutivo de JPMorgan cuyo apellido se transcribe «Demon» y sugiere que su ascenso estuvo facilitado por redes de influencia externas y vínculos con inteligencia israelí. La intervención no presenta pruebas documentales de tal relación causal; es una alegación del entrevistado, no un hecho demostrado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Jamie Demon Jamie Demon"
+          }
         ]
       }
     },
@@ -260,7 +377,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Larry Fink aparece presentado como actor destacado de BlackRock y del Foro Económico Mundial; la fuente comenta sus relaciones con Donald Trump y las negociaciones por activos portuarios en Panamá."
+          {
+            "topic": "Davos, BlackRock y afirmaciones sobre la relación con Trump",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez destaca el papel de Fink en BlackRock y el Foro Económico Mundial, y afirma que Trump habría recurrido a él al abordar inversiones ligadas a puertos de Panamá. La entrevista no aporta comprobación independiente de conversaciones concretas ni de los intereses que atribuye a los protagonistas.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Larry Fink de Black Rock"
+          }
         ]
       }
     },
@@ -272,7 +398,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Klaus Schwab es mencionado como anterior figura de referencia de Davos, en contraste con la presencia de Larry Fink que destacan los interlocutores."
+          {
+            "topic": "Referencia fonética abreviada al liderazgo de Davos",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez alude a «el amigo Klaus» al describir cambios en la dirección o figuras prominentes de Davos. El contexto permite sospechar que habla de Klaus Schwab, pero no consta el apellido en el pasaje transcrito y el audio sigue sin cotejar; no se le atribuye una intervención específica.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se ha ido el amigo Klaus"
+          }
         ]
       }
     },
@@ -296,7 +431,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "César Vidal es mencionado al presentar el espacio Despegamos, donde colabora Lorenzo Ramírez."
+          {
+            "topic": "Presentación del programa conjunto Despegamos",
+            "speaker": "Presentador (diarización pendiente)",
+            "statement": "El presentador menciona a César Vidal al recomendar el programa Despegamos, en el que colabora Lorenzo Ramírez. Es una referencia al trabajo periodístico, no una afirmación de participación de Vidal en los hechos políticos que se comentan después.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "programas que hace con César Vival Despegamos"
+          }
         ]
       }
     },
@@ -308,7 +452,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Pam Bondi es mencionada cuando los interlocutores examinan el margen de control del Gobierno de Trump sobre el Departamento de Justicia y la publicación de archivos Epstein."
+          {
+            "topic": "Crítica al control del Departamento de Justicia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que Trump no controla completamente determinadas actuaciones del Departamento de Justicia y cita a la fiscal general Pam Bondi, transcrita «Pan Bondi». Su explicación de luchas internas en la Administración es una valoración política que no acredita obstrucción ni actuaciones ilícitas de la funcionaria.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Donald Trump no tiene el control de Pan Bondi"
+          }
         ]
       }
     },
@@ -320,7 +473,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Susan Rice es citada en el debate sobre la Administración Obama, la relación entre el poder tecnológico y la información contenida en los documentos Epstein."
+          {
+            "topic": "Acusación relativa a correos y la Administración Obama",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Susan Rice, transcrita como «Susan Rise», dentro de su explicación sobre supuestos correos del caso Epstein y el entorno de la Administración Obama. La existencia, contenido y significado que atribuye a los mensajes deben comprobarse con documentos originales; no constituye prueba de conducta ilícita de Rice.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Susan Rise consejera de Seguridad Nacional de Obama"
+          }
         ]
       }
     },
@@ -332,7 +494,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Scott Bessent es citado por unas declaraciones que la conversación sitúa en Davos sobre Irán y el papel de las medidas económicas estadounidenses."
+          {
+            "topic": "Atribución de declaraciones económicas sobre Irán",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez se refiere a declaraciones que atribuye a Scott Bessent en Davos sobre medidas económicas estadounidenses contra Irán. El episodio no reproduce una fuente primaria que confirme las palabras exactas o que pruebe una relación causal directa con protestas internas iraníes.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Scott Besen en Davos"
+          }
         ]
       }
     },
@@ -510,7 +681,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Pedro Sánchez aparece en la parte dedicada a España, en la que los interlocutores relacionan políticas de identidad digital, redes sociales y centros de datos con las estrategias de grandes empresas tecnológicas."
+          {
+            "topic": "Crítica sobre identificación digital y regulación de plataformas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que algunas propuestas de Sánchez para exigir identificación de usuarios de redes sociales convergen parcialmente con planteamientos que atribuye a Musk. La valoración de que su enfrentamiento público es contradictorio es una opinión del entrevistado; la entrevista no prueba un acuerdo entre ambos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el enfrentamiento maniqueo entre Pedro Sánchez y Elon Mask"
+          }
         ]
       }
     },
