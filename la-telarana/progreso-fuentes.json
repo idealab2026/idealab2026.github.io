@@ -104,8 +104,8 @@
     }
   ],
   "nextSource": {
-    "order": 20,
-    "videoId": "meEH-MaGn24",
+    "order": 22,
+    "videoId": "1zHkc1lFKww",
     "status": "transcripcion_privada_lista_para_revision_biografica",
     "sourceType": "youtube"
   },
@@ -697,17 +697,63 @@
       "videoId": "meEH-MaGn24",
       "title": "El EXPERIMENTO SECRETO con el que las ÉLITES nos CONTROLAN | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=meEH-MaGn24",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "segunda_revision_biografias_y_fuentes_atribuidas_publicada_revision_abierta",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 8,
       "sourceRelationsDocumented": 7,
-      "verifiedIndependentChecks": 0,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "verifiedIndependentChecks": 1,
+      "qualityNotes": "Texto automático de 143.539 caracteres recuperado de Drive institucional. 16 personas con biografías y párrafo de declaraciones atribuidas. Los comentarios sobre CIA, In-Q-Tel, la Fundación Gates, Open Society, Google, Meta, vacunas, identidad digital y Palantir permanecen como declaraciones de la fuente sin elevarse a relación probada. Stargate ya figuraba como hito de F21: se vincula referencia secundaria F20 sin crear un segundo evento. Pendiente audio, diarización, localización de minutos y verificación visual de retratos.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 0
+      "timelineVerifiedEventsCommitted": 0,
+      "rawTranscriptAvailable": true,
+      "transcriptStoredInDrive": true,
+      "fullTranscriptVerifiedDriveReadback": true,
+      "transcriptDocUrl": "https://docs.google.com/document/d/1p5WpWPL2-Q5YvI4wY2UuAvU8btlbo3HTLHrWrViq6DY/edit?usp=drivesdk",
+      "transcriptCharacters": 143539,
+      "personsProfiled": 16,
+      "impersonalAttributedSummaries": 16,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-20.js",
+      "personBiographiesFirst": true,
+      "timelineEventIds": [],
+      "timelineCrossReferences": [
+        {
+          "eventId": "study-f21-stargate-2025",
+          "mentionedInSource": 20,
+          "originatingSource": 21
+        }
+      ],
+      "personASRVariants": [
+        {
+          "raw": "Eric Smith",
+          "canonical": "Eric Schmidt",
+          "method": "contexto_GOOGLE_2001",
+          "audioVerified": false
+        },
+        {
+          "raw": "Peterill",
+          "canonical": "Peter Thiel",
+          "method": "contexto_palantir_y_cripto",
+          "audioVerified": false
+        },
+        {
+          "raw": "JD B",
+          "canonical": "J. D. Vance",
+          "method": "contexto_vicepresidencia",
+          "audioVerified": false
+        },
+        {
+          "raw": "Steve Witkof",
+          "canonical": "Steve Witkoff",
+          "method": "contexto_envio_Oriente_Medio",
+          "audioVerified": false
+        }
+      ],
+      "imageRuntimeVerified": false,
+      "attributionScope": "Declaraciones generales del entrevistado Lorenzo Ramírez. No inferir hechos por simple afirmación ni atribuir a individuos relaciones con agencias estatales sin soporte independiente.",
+      "lastUpdated": "2026-11-10"
     },
     {
       "order": 22,
@@ -1617,19 +1663,19 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 16,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "segunda_revision_biografias_y_fuentes_atribuidas_publicada_revision_abierta",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1p5WpWPL2-Q5YvI4wY2UuAvU8btlbo3HTLHrWrViq6DY/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
-          "imageAtGraphNode": "pendiente_verificacion",
+          "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
-          "transcriptCharactersReadBack": 143531,
+          "transcriptCharactersReadBack": 143539,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
