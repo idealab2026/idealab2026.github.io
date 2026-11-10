@@ -1524,6 +1524,36 @@
         ],
         "methodologicalLimits": "Se acredita la publicación/transmisión del documento, no la veracidad de todas sus afirmaciones políticas ni la identidad binaria con la copia original cargada en NotebookLM."
       }
+    },
+    {
+      "id": "study-f17-espana-marruecos-declaracion-2022",
+      "y": 2022.2630136986302,
+      "t": "España y Marruecos adoptan una declaración conjunta en Rabat",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 17 · declaración bilateral oficial",
+      "d": "El 7 de abril de 2022, Pedro Sánchez y Mohamed VI acordaron una nueva hoja de ruta en las relaciones entre España y Marruecos. La declaración conjunta señala que España considera la propuesta marroquí de autonomía para el Sáhara Occidental de 2007 la base más seria, realista y creíble para abordar el diferendo. Se registra el contenido del acuerdo oficial, sin inferir que España reconociese formalmente soberanía marroquí sobre todo el territorio.",
+      "g": [
+        "Europa",
+        "África"
+      ],
+      "investigation": {
+        "date": "2022-04-07",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 17,
+        "sourceTitle": "Aladetres #181 · Entrevista a José Manuel García-Margallo",
+        "sourceUrl": "https://www.youtube.com/watch?v=3DkVY51_CHs",
+        "confirmedBy": {
+          "label": "La Moncloa · Declaración conjunta España–Marruecos, 7 de abril de 2022",
+          "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2022/070422-declaracion-conjunta-Espana-Marruecos.pdf"
+        },
+        "relatedTelarana": [
+          "f17-marruecos",
+          "f17-espana",
+          "f17-margallo"
+        ],
+        "methodologicalLimits": "La declaración bilateral acredita la posición oficial y el acuerdo; no confirma todas las valoraciones del entrevistado sobre intenciones privadas, coerción o supuestos compromisos no publicados."
+      }
     }
   ]
 }
