@@ -1,10 +1,23 @@
 /* Pruebas de integridad de la fuente08: sin transcripción, no se infieren conductas ilícitas. */
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import vm from "node:vm";
+
+/* The photo catalogue is a trusted JS asset: an initial JSON assignment
+   followed by editorial Object.assign extensions. Parse all entries, without
+   treating the complete source text as one JSON document. */
+function loadPhotoCatalog(){
+ const source=fs.readFileSync("la-telarana/photo-catalog.js","utf8");
+ const sandbox={window:{}};
+ vm.runInNewContext(source,sandbox,{filename:"photo-catalog.js",timeout:1500});
+ const entries=sandbox.window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS;
+ assert(entries&&typeof entries==="object"&&!Array.isArray(entries),"Missing photo catalogue object");
+ return entries;
+}
 const parse=(path,prefix)=>{const text=fs.readFileSync(path,"utf8");assert(text.includes(prefix),"Missing "+prefix);return JSON.parse(text.split(prefix)[1].trim().replace(/;$/,""));};
 const ep=parse("la-telarana/podcast-vaquero-67-villarejo.js","window.IDEA_TELARANA_SOURCE08_EDITORIAL = ");
 const biographies=parse("la-telarana/person-biographies.js","window.IDEA_TELARANA_BIOGRAPHIES = ");
-const images=parse("la-telarana/photo-catalog.js","window.IDEA_TELARANA_WIKIPEDIA_PORTRAITS=");
+const images=loadPhotoCatalog();
 const progress=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
 const timeline=JSON.parse(fs.readFileSync("linea-historia/estudios-telarana.json","utf8"));
 const html=fs.readFileSync("la-telarana/index.html","utf8");
