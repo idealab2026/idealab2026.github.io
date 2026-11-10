@@ -11,7 +11,7 @@ const people=Object.entries(lib.profiles).filter(([_,p])=>Array.isArray(p.source
 assert(people.length>=16,"Faltan perfiles de la fuente 14");
 for(const [name,p]of people){
  assert(p.who?.length>=45,"Falta descripción biográfica: "+name);
- assert(p.sources["14"].every(s=>s.length>=65),"Versión atribuida escueta: "+name);
+ assert(p.sources["14"].every(s=>(typeof s==="string"?s.length:(s?.statement||"").length)>=65),"Versión atribuida escueta: "+name);
 }
 assert(lib.profiles["Mark Rossini"]?.sources["14"],"No se ha resuelto el nombre de Rossini");
 assert(lib.profiles["Ron DiFrancesco"]?.sources["14"],"Falta Ron, el superviviente de la planta 84");
@@ -32,4 +32,9 @@ const bySource=timeline.items.filter(x=>x.investigation?.sourceOrder===14);
 assert(bySource.some(x=>x.id==="study-f14-comision-11s-informe-2004"),"Falta publicación oficial del informe");
 assert(bySource.length===2,"El seguimiento histórico de fuente 14 no coincide");
 assert(tracker.timeline.committedVerifiedEvents===timeline.items.length,"Descuerdo entre cronología y progreso");
+for(const name of ["Ron DiFrancesco","Mark Rossini","Larry Silverstein"]){
+ const record=lib.profiles[name].sources["14"].find(x=>typeof x==="object"&&x.transcriptAnchor);
+ assert(record?.transcriptVerified===true&&record.audioVerified===false&&record.minuteVerified===false,"Ancla o estado de cotejo incorrecto: "+name);
+ assert(record.transcriptAnchor.length>=30&&record.topic&&record.speaker&&record.status,"Atribución insuficiente: "+name);
+}
 console.log("OK: F14 · "+people.length+" identidades, 2977 víctimas documentadas, "+bySource.length+" hitos y seguimiento privado");
