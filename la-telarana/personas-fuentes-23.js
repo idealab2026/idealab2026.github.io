@@ -41,7 +41,7 @@ const extra={
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "Moné que era francés que era un tipo de la región de Cñac"
+            "transcriptAnchor": "Jean Monet que era francés que era un tipo de la región de Cñac"
           }
         ]
       }
