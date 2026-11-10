@@ -657,6 +657,10 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
  body.history-note-open #map-panel{margin-right:var(--history-drawer-width)}
  body.history-note-open #map-panel .world-map-layout{grid-template-columns:1fr}
 }
+
+.map-result-detail{display:flex;flex-direction:column;align-items:stretch;gap:5px;background:transparent;border:0;color:inherit;text-align:left;width:100%;padding:0;cursor:pointer}
+.map-result-card:focus-within{border-color:var(--gold)}
+.map-jump-link{font:inherit;cursor:pointer;font-size:.69rem;color:#f0c879;background:transparent;border:0;padding:2px 0;text-align:left}
 </style></head>
 <body><header><a class="brand history-brand" href="/" aria-label="IDEA LAB · Todos los proyectos"><img class="history-header-logo" src="./favicon.png?v=20261109" alt="Logo de Línea de la Historia" width="44" height="44" decoding="async"><span class="history-header-label"><small>UN PRODUCTO DE</small><strong>IDEA <b>LAB</b></strong></span></a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
@@ -741,7 +745,7 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
    </div>
    <div class="world-map-year">
     <label class="map-year-enable"><input id="map-year-toggle" type="checkbox"> Mostrar solo registros del año</label>
-    <div class="map-year-controls"><input id="map-year-range" type="range" min="-3000" max="2026" step="1" value="1900" disabled aria-label="Año del mapa"><input id="map-year-number" type="number" min="-3000" max="2026" step="1" value="1900" disabled aria-label="Introducir año del mapa"></div>
+    <div class="map-year-controls"><input id="map-year-range" type="range" min="-3000" max="2026" step="1" value="1900" disabled aria-label="Año del mapa"><input id="map-year-number" type="number" min="-541000000" max="2026" step="1" value="1900" disabled aria-label="Introducir año del mapa"></div>
     <div class="map-year-caption"><span id="map-year-label">Todos los años</span><button type="button" id="map-year-reset" class="map-year-reset">Restablecer</button></div>
    </div>
    <div class="map-list-header"><strong>Registros vinculados</strong><span id="map-result-count" class="muted"></span></div>
