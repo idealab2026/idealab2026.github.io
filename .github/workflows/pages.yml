@@ -77,6 +77,15 @@ jobs:
         run: node scripts/test_telarana_source24_profiles.mjs
       - name: Auditar calidad de todas las fichas y nuevas atribuciones
         run: node scripts/audit_telarana_editorial.mjs
+      - name: Auditar las 527 entidades del grafo y generar informe individual
+        run: node scripts/audit_telarana_all_entities.mjs
+      - name: Conservar informe de auditoría de entidades como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: telarana-auditoria-527-entidades
+          path: audit-results/telarana-all-entities.json
+          retention-days: 14
+          if-no-files-found: error
       - name: Validar calidad editorial de fichas y relaciones
         run: node scripts/test_telarana_editorial_quality.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
