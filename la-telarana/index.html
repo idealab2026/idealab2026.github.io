@@ -280,6 +280,11 @@ body.graph-expanded{overflow:hidden}
  .fullscreen-search-results{max-height:min(300px,45dvh)}
 }
 
+.source-weak-details{border:1px solid #425466;border-radius:8px;padding:9px 11px;background:#14212d;margin:7px 0 10px}
+.source-weak-details summary{font-size:.78rem;line-height:1.4;color:#e9c090;cursor:pointer;font-weight:730}
+.source-weak-details[open] summary{margin-bottom:7px}
+.source-weak-details p{font-size:.8rem;color:#b9c8d5;line-height:1.5;margin:3px 0}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -926,7 +931,15 @@ function showPersonResearch(panel,node){
     var item=N("div",null,"source-statement");
     if(structured&&claim.topic)item.append(N("div",claim.topic,"source-claim-topic"));
     if(structured&&claim.speaker)item.append(N("div","Declarante: "+claim.speaker,"source-claim-speaker"));
-    item.append(N("p",statement,"source-report-text"));
+    var sparse=(!structured&&statement.length<215&&/^(?:[^.]{0,65})?(?:se (?:le )?menciona|es (?:mencionad[oa]|citad[oa])|aparece en|se (?:le )?cita|es utilizado|se refiere a|la fuente (?:menciona|cita)|en la entrevista se)/i.test(statement));
+    if(sparse){
+     var weak=N("details",null,"source-weak-details");
+     weak.append(N("summary","Mención localizada · Falta extraer una declaración concreta"));
+     weak.append(N("p",statement,"source-report-text"));
+     item.append(weak);
+    }else{
+     item.append(N("p",statement,"source-report-text"));
+    }
     if(structured&&claim.status==="alegacion_no_verificada"){
      item.append(N("div","Afirmación atribuida · Sin corroboración independiente"+(claim.audioVerified===false?" · Audio pendiente":""),
       "source-claim-caution"));
@@ -978,8 +991,17 @@ function showPodcastNotes(panel,notes,heading){
   var entry=N("div",null,"podcast-entry"),title=N("small",(note.title||"Podcast")+" · "+(note.publishedAt||""));
   entry.append(title);
   if(["rumor","alegacion","incierto","fuente-externa","contradiccion","verificacion-externa","resumen-editorial"].includes(note.status))entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad pendiente de cotejo":note.status==="fuente-externa"?"Documento externo (no es la transcripción)":note.status==="resumen-editorial"?"Sinopsis editorial; sin minuto verificado":note.status==="contradiccion"?"Contraste documental: discrepancia":note.status==="verificacion-externa"?"Datos y límites contrastados":"Alegación sin verificación independiente","rumour"));
-  entry.append(N("p",note.text||""));
-  podcastSourceLink(entry,note.source,note.status==="resumen-editorial"?"Consultar sinopsis del episodio":["fuente-externa","contradiccion","verificacion-externa"].includes(note.status)?"Consultar documentación externa":note.timeSec===null?"Escuchar episodio · minuto no verificado":"Escuchar en "+youtubeTimeLabel(note.timeSec));
+  var noteText=String(note.text||"");
+  var genericNote=noteText.length<185&&/^(?:[^.]{0,65})?(?:se (?:le )?menciona|es (?:mencionad[oa]|citad[oa])|aparece en|mencionado en|dirigente .{0,25} mencionado en|se habla de|comentario sobre|se refiere a)/i.test(noteText);
+  if(genericNote){
+   var pending=N("details",null,"source-weak-details");
+   pending.append(N("summary","Mención sin afirmación específica extraída · revisión pendiente"));
+   pending.append(N("p",noteText));
+   entry.append(pending);
+  }else entry.append(N("p",noteText));
+  if(note.status==="relato")entry.append(N("div","Versión del entrevistado; no equivale a corroboración independiente","source-claim-caution"));
+  var noteVerified=note.minuteVerified===true||note.audioVerified===true;
+  podcastSourceLink(entry,note.source,note.status==="resumen-editorial"?"Consultar sinopsis del episodio":["fuente-externa","contradiccion","verificacion-externa"].includes(note.status)?"Consultar documentación externa":note.timeSec===null||note.timeSec===undefined?"Escuchar episodio · minuto no verificado":(noteVerified?"Escuchar en ":"Abrir cerca de ")+youtubeTimeLabel(note.timeSec));
   section.append(entry)
  });
  panel.append(section)
