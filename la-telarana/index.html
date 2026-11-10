@@ -913,7 +913,7 @@ function showPersonBiography(panel,node){
 }
 function showPersonResearch(panel,node){
  var report=typeof personReport==='function'?personReport(node):null,section=N("section",null,"research-section");
- section.append(N("h3","Qué dicen las fuentes"));
+ section.append(N("h3","Declaraciones y menciones en las fuentes"));
  if(report&&report.sources){
   var library=window.IDEA_TELARANA_PERSON_SOURCE_REPORTS;
   Object.keys(report.sources).sort().forEach(function(order){
@@ -932,6 +932,8 @@ function showPersonResearch(panel,node){
       "source-claim-caution"));
     }else if(!structured){
      var caution="Síntesis editorial · No es una cita literal · Audio y minuto pendientes de cotejo";
+     var genericCandidate=/(?:lo menciona|lo cita|se le menciona|es mencionado|se menciona|se cita|lo incluye|se incluye|aparece en una enumeraci[oó]n|en la conversación se|en el episodio se menciona|la fuente lo menciona|discusiones sobre|habla de|en relación con|coment[ao] su|interpretaci[oó]n del|plantea interpretaciones|posiciones sobre|al analizar|se refiere a su|en el contexto de|a grandes rasgos)/i.test(statement);
+     if(genericCandidate)caution+=" · Posible texto poco específico: revisión pendiente";
      if(/\b(?:presunt[oa]s?|acusaci[oó]n|imputaci[oó]n|chantaje|conspiraci[oó]n|supuest[oa]s?|delito)\b/i.test(statement)){
       caution+=" · Las acusaciones o hipótesis no quedan corroboradas por aparecer en la entrevista";
      }
