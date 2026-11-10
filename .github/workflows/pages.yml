@@ -49,6 +49,8 @@ jobs:
         run: node scripts/test_telarana_peter_thiel.mjs
       - name: Comprobar biografías y atribuciones de las fuentes 18 y 21
         run: node scripts/test_telarana_source_profile_reports.mjs
+      - name: Validar personas y testimonios de fuentes 09 y 10
+        run: node scripts/test_telarana_source_profile_09_10.mjs
       - name: Validar transcripción y evidencias de la fuente 02
         run: node scripts/test_telarana_source02_transcript.mjs
       - name: Validar avance de fuente 03 y fotografías de sus protagonistas
@@ -112,6 +114,7 @@ jobs:
           cp la-telarana/fuente-21-orden-mundial-editorial.js dist/la-telarana/fuente-21-orden-mundial-editorial.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/personas-fuentes-18-21.js dist/la-telarana/personas-fuentes-18-21.js
+          cp la-telarana/personas-fuentes-09-10.js dist/la-telarana/personas-fuentes-09-10.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
@@ -169,6 +172,7 @@ jobs:
           test -s dist/la-telarana/person-biographies.js
           node --check dist/la-telarana/person-biographies.js
           node --check dist/la-telarana/personas-fuentes-18-21.js
+          node --check dist/la-telarana/personas-fuentes-09-10.js
           grep -q 'IDEA_TELARANA_BIOGRAPHIES' dist/la-telarana/person-biographies.js
           grep -q 'showPersonBiography' dist/la-telarana/index.html
           grep -q "IDEA_TELARANA_WIKIPEDIA_PORTRAITS" dist/la-telarana/photo-catalog.js
