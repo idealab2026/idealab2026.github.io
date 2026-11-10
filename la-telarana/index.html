@@ -255,6 +255,31 @@ body.graph-expanded{overflow:hidden}
 .biography-citations{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0}
 .inspector .relations-explainer{color:#a9bdca;font-size:.77rem;line-height:1.5;margin:6px 0 12px}
 
+
+/* Buscador en el propio lienzo: el fullscreen nativo solo puede mostrar descendientes del panel. */
+.fullscreen-search-bar[hidden],.fullscreen-search-results[hidden]{display:none!important}
+.fullscreen-search-bar{position:absolute;z-index:40;top:70px;right:18px;width:min(350px,calc(100% - 36px));color:#eef4fa}
+.fullscreen-search-row{display:flex;align-items:center;gap:7px;min-height:41px;padding:0 8px;background:#172737f5;border:1px solid #5e7587;border-radius:9px;box-shadow:0 5px 20px #060e17a6}
+.fullscreen-search-row:focus-within{border-color:#e3aa69;box-shadow:0 0 0 2px #e3aa6938}
+.fullscreen-search-icon{font-size:1.3rem;color:#d6aa78;line-height:1;flex-shrink:0}
+.fullscreen-search-row input{min-width:0;flex:1;padding:9px 2px;border:0;outline:none;background:transparent;color:#f2f7fb;font-size:.82rem}
+.fullscreen-search-row input::placeholder{color:#b4c3d1;opacity:1}
+.fullscreen-search-row button{background:transparent;color:#c6d2dd;border:0;font-size:1.45rem;line-height:1;width:29px;height:32px;padding:0;border-radius:5px}
+.fullscreen-search-row button:hover,.fullscreen-search-row button:focus-visible{background:#314458;color:#fff}
+.fullscreen-search-results{margin-top:6px;padding:5px;max-height:min(345px,calc(100dvh - 155px));overflow-y:auto;overscroll-behavior:contain;background:#162433f7;border:1px solid #4b6579;border-radius:10px;box-shadow:0 14px 34px #01070ec9}
+.fullscreen-search-status{color:#b8c8d5;font-size:.73rem;padding:8px 10px}
+.fullscreen-search-result{display:flex;gap:10px;align-items:center;text-align:left;width:100%;border:0;border-radius:7px;background:transparent;color:#eef5fb;padding:9px 10px}
+.fullscreen-search-result+.fullscreen-search-result{border-top:1px solid #ffffff14}
+.fullscreen-search-result:hover,.fullscreen-search-result.is-active,.fullscreen-search-result:focus-visible{background:#33485b;outline:1px solid #d8ac76}
+.fullscreen-search-result strong{font-size:.8rem;display:block;line-height:1.25}
+.fullscreen-search-result small{display:block;margin-top:2px;color:#b4c3d0;font-size:.67rem;line-height:1.25}
+.graph-panel:fullscreen.drawer-open .fullscreen-search-bar,.graph-panel.is-fullscreen.drawer-open .fullscreen-search-bar{right:min(445px,42vw)}
+@media(max-width:750px){
+ .fullscreen-search-bar{top:91px;left:9px;right:9px;width:auto}
+ .graph-panel:fullscreen.drawer-open .fullscreen-search-bar,.graph-panel.is-fullscreen.drawer-open .fullscreen-search-bar{display:none}
+ .fullscreen-search-results{max-height:min(300px,45dvh)}
+}
+
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -266,7 +291,7 @@ body.graph-expanded{overflow:hidden}
  <button type="button" data-recent-id="f21-episodio" data-recent-name="Podcast · Orden mundial (F21)">Fuente 21 · Nuevo orden</button>
  </div>
 <details id="load-audit" class="load-audit" hidden><summary>Auditoría de entidades por fuente</summary><div id="load-audit-content"></div></details>
-<div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Orbe 3D · gira arrastrando · pellizca para ampliar nodos y fotografías</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia y nazismo</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="motion3d" aria-pressed="true" title="Pausar o reanudar la rotación suave">⏸ Orbe</button><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
+<div class="workspace"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Orbe 3D · gira arrastrando · pellizca para ampliar nodos y fotografías</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia y nazismo</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="motion3d" aria-pressed="true" title="Pausar o reanudar la rotación suave">⏸ Orbe</button><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><div id="fullscreen-search-bar" class="fullscreen-search-bar" role="search" aria-label="Buscar entidades en pantalla completa" hidden><div class="fullscreen-search-row"><span class="fullscreen-search-icon" aria-hidden="true">⌕</span><input type="search" id="fullscreen-search-input" placeholder="Buscar una entidad…" autocomplete="off" spellcheck="false" aria-label="Buscar una entidad en el mapa" aria-controls="fullscreen-search-results" aria-expanded="false"><button type="button" id="fullscreen-search-clear" aria-label="Limpiar búsqueda" title="Limpiar búsqueda">×</button></div><div id="fullscreen-search-results" class="fullscreen-search-results" role="region" aria-label="Entidades coincidentes" aria-live="polite" hidden></div></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section>
 <aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Cerrar ficha lateral" title="Cerrar ficha">×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Enlaces totales</span></div><div class="metric"><b id="count-evidence">0</b><span>Rel. documentadas</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
 
 <p class="privacy"><strong>Privacidad:</strong> no existe un servidor de escritura ni cuentas de usuario en esta versión. La Telaraña es una consulta pública de solo lectura. Las fichas y relaciones se cargan desde los archivos del repositorio de IDEA LAB; ningún visitante puede cambiar la base publicada desde esta web. Las operaciones de navegación y disposición del mapa no se guardan. Las transcripciones de OneNote y los resúmenes de podcasts pueden contener opiniones o afirmaciones sin verificar: no deben confundirse con hechos acreditados.</p>
@@ -1314,6 +1339,81 @@ $("edge-mode").addEventListener("click",function(){
 
 var graphPanel=$("graph-panel");
 var inspector=$("inspector"),inspectorHome=inspector.parentNode,inspectorNext=inspector.nextSibling;
+var fullscreenSearchItems=[],fullscreenSearchCursor=0;
+function hideFullscreenSearchResults(){
+ var results=$("fullscreen-search-results");
+ results.hidden=true;results.replaceChildren();
+ $("fullscreen-search-input").setAttribute("aria-expanded","false");
+ fullscreenSearchItems=[];fullscreenSearchCursor=0;
+}
+function renderFullscreenSearchResults(query){
+ var box=$("fullscreen-search-results"),input=$("fullscreen-search-input");
+ box.replaceChildren();fullscreenSearchItems=[];fullscreenSearchCursor=0;
+ if(!isGraphExpanded()||!query.trim()){hideFullscreenSearchResults();return;}
+ var matches=searchCandidates(query.trim());fullscreenSearchItems=matches.slice(0,12);
+ box.hidden=false;input.setAttribute("aria-expanded","true");
+ box.append(N("div",matches.length?matches.length+" coincidencia"+(matches.length===1?"":"s")+" · seleccionar para centrar":"No hay entidades coincidentes","fullscreen-search-status"));
+ fullscreenSearchItems.forEach(function(entity,index){
+  var button=N("button",null,"fullscreen-search-result"+(index===fullscreenSearchCursor?" is-active":""));
+  button.type="button";button.dataset.entityId=entity.id;
+  var labels=N("span");labels.append(N("strong",entity.name));
+  labels.append(N("small",entity.kind+(entity.subtitle?" · "+entity.subtitle.slice(0,90):"")));
+  button.append(labels);
+  button.addEventListener("click",function(){selectFullscreenSearchEntity(entity)});
+  box.append(button);
+ });
+ if(matches.length>12)box.append(N("div","Mostrando 12 de "+matches.length+" resultados. Escribe más para precisar.","fullscreen-search-status"));
+}
+function selectFullscreenSearchEntity(entity){
+ if(!entity)return;
+ $("fullscreen-search-input").value=entity.name;
+ $("search").value=entity.name;
+ view="graph";
+ hideFullscreenSearchResults();
+ focusOnSearchEntity(entity);
+}
+function syncFullscreenSearch(){
+ var active=isGraphExpanded(),box=$("fullscreen-search-bar");
+ box.hidden=!active;
+ if(!active){hideFullscreenSearchResults();return;}
+ $("fullscreen-search-input").value=$("search").value;
+ hideFullscreenSearchResults();
+}
+$("fullscreen-search-input").addEventListener("input",function(){
+ $("search").value=this.value;
+ render();
+ renderFullscreenSearchResults(this.value);
+});
+$("fullscreen-search-input").addEventListener("focus",function(){
+ if(this.value.trim())renderFullscreenSearchResults(this.value);
+});
+$("fullscreen-search-input").addEventListener("keydown",function(e){
+ if(e.key==="Escape"&&!$("fullscreen-search-results").hidden){
+  e.preventDefault();e.stopPropagation();hideFullscreenSearchResults();return;
+ }
+ if(e.key==="ArrowDown"||e.key==="ArrowUp"){
+  if($("fullscreen-search-results").hidden)renderFullscreenSearchResults(this.value);
+  if(!fullscreenSearchItems.length)return;
+  e.preventDefault();
+  fullscreenSearchCursor=(fullscreenSearchCursor+(e.key==="ArrowDown"?1:-1)+fullscreenSearchItems.length)%fullscreenSearchItems.length;
+  var buttons=$("fullscreen-search-results").querySelectorAll(".fullscreen-search-result");
+  buttons.forEach(function(button,i){button.classList.toggle("is-active",i===fullscreenSearchCursor)});
+  if(buttons[fullscreenSearchCursor])buttons[fullscreenSearchCursor].scrollIntoView({block:"nearest"});
+ }
+ if(e.key==="Enter"){
+  var found=fullscreenSearchItems[fullscreenSearchCursor]||searchCandidates(this.value)[0];
+  if(found){e.preventDefault();selectFullscreenSearchEntity(found)}
+ }
+});
+$("fullscreen-search-clear").addEventListener("click",function(){
+ $("fullscreen-search-input").value="";
+ $("search").value="";hideFullscreenSearchResults();render();
+ $("fullscreen-search-input").focus();
+});
+$("fullscreen-search-bar").addEventListener("pointerdown",function(e){e.stopPropagation()});
+document.addEventListener("pointerdown",function(e){
+ if(isGraphExpanded()&&!$("fullscreen-search-bar").contains(e.target))hideFullscreenSearchResults();
+});
 function isFallbackFullscreen(){return graphPanel.classList.contains("is-fullscreen")}
 function isGraphExpanded(){return document.fullscreenElement===graphPanel||isFallbackFullscreen()}
 function syncInspectorDrawer(){
@@ -1336,6 +1436,7 @@ function syncFullscreenButton(){
  btn.textContent=active?"⛶ Salir de pantalla completa":"⛶ Pantalla completa";btn.setAttribute("aria-pressed",String(active));
  btn.title=active?"Cerrar pantalla completa (Esc)":"Mostrar la pizarra en ventana completa";
  syncFullscreenInspector();
+ syncFullscreenSearch();
 }
 $("inspector-drawer-close").addEventListener("click",function(){
  selection=null;inspect();render();
