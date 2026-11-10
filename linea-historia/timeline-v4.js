@@ -636,6 +636,7 @@ function wikiRenderArticle(d,root,page,requestId,signal){
  $("note-kicker").textContent=d.c+" · Wikipedia";
  $("note-title").textContent=String(page.title||wikipediaSearchName(d));
  root.append(el("div",wikiDateLine(d),"note-date"));
+ appendCountriesInNote(root,d);
  if(d.c==="Eras geológicas"){
   var dating=el("p","Fechas aproximadas según la Comisión Internacional de Estratigrafía.","source-note");
   wikiExternalLink(dating,"https://stratigraphy.org/chart/?language=es","Escala geológica oficial ↗","wiki-credit-link");
@@ -658,6 +659,7 @@ function wikiFallback(d,root,term,reason,suggestions,searchParts){
  $("note-title").textContent=displayName(d);
  root.replaceChildren();
  root.append(el("div",wikiDateLine(d),"note-date"));
+ appendCountriesInNote(root,d);
  var message=String(reason||"No se ha encontrado un artículo suficientemente coincidente.");
  root.append(el("p",message,"wiki-error"));
  if(d.d)root.append(el("p","Información del archivo: "+d.d,"source-note"));
@@ -729,6 +731,7 @@ function showStudyNote(d){
  $("note-title").textContent=displayName(d);
  root.replaceChildren();
  root.append(el("div",studyDate(info.date,info.datePrecision),"note-date"));
+ appendCountriesInNote(root,d);
  root.append(el("div","Hecho documentado con contraste externo","research-evidence"));
  root.append(el("h3","Qué ocurrió","wiki-section-title"));
  root.append(el("p",d.d||"Sin descripción documental.","source-note"));
