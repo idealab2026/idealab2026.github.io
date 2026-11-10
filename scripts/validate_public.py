@@ -91,6 +91,40 @@ if history.is_file():
     except (ValueError, TypeError, AttributeError):
         errors.append("Invalid history JSON")
 
+
+# Historical-country links must reference existing records and modern map units.
+country_file=ROOT / "linea-historia/country-links.json"
+world_file=ROOT / "linea-historia/world-110m.json"
+if country_file.is_file() and world_file.is_file() and history.is_file():
+    try:
+        links=json.loads(country_file.read_text(encoding="utf-8"))
+        world=json.loads(world_file.read_text(encoding="utf-8"))
+        historical=json.loads(history.read_text(encoding="utf-8"))
+        ids={r["id"] for r in historical["items"] if isinstance(r,dict) and "id" in r}
+        features=world.get("features",[])
+        codes={r.get("id") for r in features if isinstance(r,dict)}
+        entries=links.get("links")
+        if (links.get("schema") != 1 or
+            not isinstance(entries,dict) or
+            not 10 <= len(entries) <= len(ids) or
+            not isinstance(features,list) or
+            not 140 <= len(features) <= 250):
+            errors.append("Invalid world map or country index cardinality")
+        elif any(k not in ids or
+                 not isinstance(v,dict) or
+                 v.get("basis") not in ("mención título","mención ficha original","contexto histórico orientativo") or
+                 not isinstance(v.get("p"),list) or
+                 not 1 <= len(v["p"]) <= 40 or
+                 len(v["p"])!=len(set(v["p"])) or
+                 any(code not in codes for code in v["p"])
+                 for k,v in entries.items()):
+            errors.append("Country links refer to unknown records or geography")
+        if world.get("type")!="FeatureCollection" or not isinstance(world.get("metadata"),dict):
+            errors.append("Invalid historical map provenance")
+    except (ValueError, KeyError, AttributeError, TypeError):
+        errors.append("Invalid country association or map JSON")
+
+
 for path in ROOT.rglob("*"):
     if not path.is_file() or ".git" in path.parts: continue
     if path.suffix in (".json", ".js", ".md", ".html", ".svg", ".yml", ".yaml", ".txt"):
