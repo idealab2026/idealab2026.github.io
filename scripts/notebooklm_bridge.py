@@ -31,6 +31,9 @@ HOME = Path.home()
 CONFIG_PATH = HOME / ".config/idea-lab/notebooklm-bridge.json"
 STATE_PATH = HOME / ".local/state/idea-lab/notebooklm-bridge.json"
 LOCK_PATH = HOME / ".local/state/idea-lab/notebooklm-bridge.lock"
+HEALTH_PATH = HOME / ".local/state/idea-lab/notebooklm-generation-health.json"
+FAILURE_WINDOW = 5
+FAILURE_THRESHOLD = 3
 PENDING = HOME / "Pictures/IDEA-LAB/NotebookLM/Pendientes"
 MARK = "IDEA_LAB_NLM_REQUEST_V1"
 REQ = re.compile(r"<!-- " + MARK + r"\s*\n(\{[^\n]*\})\s*\n-->", re.ASCII)
@@ -52,6 +55,22 @@ RETRY_COMMENT = ("Se ha solicitado de nuevo a NotebookLM una infografía cuyo in
                  "anterior falló. Pendiente de descarga y revisión.")
 ALLOWED_COMMENTS = (SUBMITTED_COMMENT, DOWNLOADED_COMMENT, FAILED_COMMENT,
                     PUBLISH_COMMENT, RETRY_COMMENT)
+
+
+class NotebookLMQuotaError(RuntimeError):
+    """A CLI response explicitly indicates exhausted NotebookLM usage."""
+
+
+def looks_like_quota_error(output: str) -> bool:
+    # Match only recognizable quota phrases. Never log raw CLI output,
+    # which could contain private notebook IDs or other user data.
+    low = str(output or "").lower()
+    return any(x in low for x in (
+        "resource_exhausted", "quota exceeded", "quota exhausted",
+        "usage limit", "limit reached", "daily limit", "weekly limit",
+        "límite de uso", "limite de uso", "cuota agotada",
+        "too many requests", "http 429", "status 429",
+    ))
 
 
 def cli_failure_hint(argv: list[str], stderr: str) -> str:
@@ -87,6 +106,12 @@ def command(argv: list[str], timeout: int = 90, capture=True, cwd=None):
     result = subprocess.run(argv, check=False, text=True, encoding="utf-8",
                             capture_output=capture, timeout=timeout, cwd=cwd)
     if result.returncode != 0:
+        if Path(argv[0]).name == "nlm" and looks_like_quota_error(
+                str(result.stderr or "") + " " + str(result.stdout or "")):
+            raise NotebookLMQuotaError(
+                "NotebookLM informó de cuota o límite de uso. "
+                "Generación pausada; revisar el límite en Studio."
+            )
         raise RuntimeError(
             f"Fallo de {Path(argv[0]).name} (código {result.returncode}). "
             + cli_failure_hint(argv, result.stderr if capture else "")
@@ -108,6 +133,72 @@ def save_json(path: Path, value):
         stream.write("\n")
     os.chmod(tmp, 0o600)
     tmp.replace(path)
+
+
+def generation_health() -> dict:
+    """Health state lives only on the Mac; never publish it in IDEA LAB."""
+    return load_json(HEALTH_PATH, {"paused": False, "recent": []})
+
+
+def pause_generation(reason: str) -> None:
+    health = generation_health()
+    health["paused"] = True
+    health["pause_reason"] = reason
+    health["paused_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    save_json(HEALTH_PATH, health)
+    print("PAUSA DE SEGURIDAD: ", reason,
+          "No se enviarán nuevas generaciones; los PNG existentes se conservan.")
+
+
+def record_generation_outcome(number: str, outcome: str) -> None:
+    """Stop after 3 remote failures among the last 5 completed attempts.
+
+    Only terminal Studio outcomes are counted, never transient CLI errors.
+    Automatic checks do not modify or re-send any existing image.
+    """
+    if outcome not in ("failed", "downloaded"):
+        return
+    health = generation_health()
+    recent = list(health.get("recent", []))
+    recent.append({"issue": str(number), "outcome": outcome,
+                   "at": dt.datetime.now(dt.timezone.utc).isoformat()})
+    health["recent"] = recent[-FAILURE_WINDOW:]
+    failures = sum(x.get("outcome") == "failed" for x in health["recent"])
+    if failures >= FAILURE_THRESHOLD and len(health["recent"]) >= FAILURE_THRESHOLD:
+        health["paused"] = True
+        health["pause_reason"] = (
+            "NotebookLM devolvió " + str(failures) + " fallos en los últimos "
+            + str(len(health["recent"])) + " intentos terminados."
+        )
+        health["paused_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    save_json(HEALTH_PATH, health)
+    if health.get("paused"):
+        print("PAUSA DE SEGURIDAD:", health.get("pause_reason"))
+
+
+def show_generation_health() -> None:
+    health = generation_health()
+    print("Generación automática:",
+          "PAUSADA" if health.get("paused") else "sin pausa de seguridad")
+    if health.get("paused"):
+        print("Motivo:", health.get("pause_reason") or "Sin detalle")
+    recent = health.get("recent", [])
+    print("Resultados recientes:", len(recent),
+          "fallidos:", sum(x.get("outcome") == "failed" for x in recent))
+
+
+def resume_generations(args) -> None:
+    if not args.confirm:
+        raise ValueError("Debes confirmar la reanudación con --confirm.")
+    check_identity()
+    health = generation_health()
+    health["paused"] = False
+    health.pop("pause_reason", None)
+    health.pop("paused_at", None)
+    health["recent"] = []
+    save_json(HEALTH_PATH, health)
+    print("Pausa de seguridad restablecida. No se han reenviado trabajos existentes.")
+    print("Las solicitudes failed, uncertain y deferred mantienen sus estados.")
 
 
 @contextmanager
@@ -463,10 +554,19 @@ def request_new(number, req, state, config):
     save_json(STATE_PATH, state)  # No blind retry after an ambiguous failure.
     try:
         command(generation_args(req, notebook, sources), timeout=180)
-    except Exception:
+    except NotebookLMQuotaError:
         job["phase"] = "uncertain"
+        job["failure_kind"] = "quota"
         save_json(STATE_PATH, state)
-        print("Solicitud incierta #", number, ": revisa NotebookLM; NO se reenvía automáticamente.")
+        pause_generation("Límite de uso detectado por NotebookLM.")
+        print("Solicitud #", number, "incierta. No se reenvía automáticamente.")
+        return True
+    except Exception as exc:
+        job["phase"] = "uncertain"
+        job["failure_kind"] = "unclassified"
+        save_json(STATE_PATH, state)
+        print("Solicitud incierta #", number, "- ", type(exc).__name__,
+              ": revisar NotebookLM antes de continuar con este cuaderno.")
         return True
     job["phase"] = "submitted"
     save_json(STATE_PATH, state)
@@ -499,6 +599,7 @@ def check_submitted(number, job, state):
     if any(x in status for x in ("fail", "error", "cancel")) or status == "4":
         job["phase"] = "failed"
         save_json(STATE_PATH, state)
+        record_generation_outcome(number, "failed")
         comment_or_queue(number, FAILED_COMMENT, job, state)
         return
     # A non-complete artifact will be picked up on the next local polling cycle.
@@ -517,6 +618,7 @@ def check_submitted(number, job, state):
     job["phase"] = "downloaded"
     job["path"] = str(path)
     save_json(STATE_PATH, state)
+    record_generation_outcome(number, "downloaded")
     comment_or_queue(number, DOWNLOADED_COMMENT, job, state)
     print("Infografía disponible localmente:", path)
 
@@ -589,10 +691,19 @@ def launch_queued_retry(state: dict, config: dict) -> bool:
         save_json(STATE_PATH, state)
         try:
             command(generation_args(req, notebook, sources), timeout=180)
-        except Exception:
+        except NotebookLMQuotaError:
             job["phase"] = "uncertain"
+            job["failure_kind"] = "quota"
             save_json(STATE_PATH, state)
-            print("Reintento #", number, "INCIERTO; no se reenviará automáticamente.")
+            pause_generation("Límite de uso detectado durante un reintento.")
+            print("Reintento #", number, "incierto; no se reenviará automáticamente.")
+            return True
+        except Exception as exc:
+            job["phase"] = "uncertain"
+            job["failure_kind"] = "unclassified"
+            save_json(STATE_PATH, state)
+            print("Reintento #", number, "INCIERTO: ", type(exc).__name__,
+                  "; no se reenviará automáticamente.")
             return True
         job["phase"] = "submitted"
         save_json(STATE_PATH, state)
@@ -614,6 +725,13 @@ def poll():
     # from an interactive Terminal using notebooklm_export_desktop.py.
     # Sync any GitHub confirmation that was temporarily lost to network/auth.
     retry_github_comments(state)
+    # Polling previously submitted jobs and downloading their PNGs is safe
+    # even while paused. Never launch another request until explicitly resumed.
+    health = generation_health()
+    if health.get("paused"):
+        print("PAUSA DE SEGURIDAD:", health.get("pause_reason") or "sin detalle")
+        print("No se iniciarán nuevas generaciones. Consultar: health")
+        return
     # A submitted or launching request can still be generating remotely:
     # preserve the single-active-request rule across all notebooks.
     globally_active = sum(j.get("phase") in ("submitted", "launching")
@@ -742,6 +860,10 @@ def main():
     sub.add_parser("doctor", help="Diagnosticar herramientas y conexiones, sin revelar IDs privados")
     sub.add_parser("poll", help="Procesar una solicitud y comprobar las anteriores")
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
+    sub.add_parser("health", help="Consultar la pausa y últimos resultados sin datos privados")
+    resume = sub.add_parser("resume-generations",
+                            help="Reanudar tras revisar la causa de la pausa de seguridad")
+    resume.add_argument("--confirm", action="store_true")
     rf = sub.add_parser("retry-failed",
                         help="Programar una repetición explícita de un fallo confirmado, sin duplicar")
     rf.add_argument("--issue", type=int, required=True)
@@ -766,7 +888,7 @@ def main():
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
     args = parser.parse_args()
-    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed"}
+    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations"}
     if args.command in mutating:
         with exclusive_state_lock() as acquired:
             if not acquired:
@@ -794,6 +916,10 @@ def execute_command(args):
             poll()
         elif args.command == "status":
             show_status()
+        elif args.command == "health":
+            show_generation_health()
+        elif args.command == "resume-generations":
+            resume_generations(args)
         elif args.command == "retry-failed":
             queue_retry_failed(args)
         elif args.command == "attach":
