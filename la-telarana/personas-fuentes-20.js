@@ -169,14 +169,18 @@
       }
     },
     "Hunter Biden": {
-      "who": "Abogado y empresario estadounidense, hijo del expresidente Joe Biden.",
+      "who": "Robert Hunter Biden es un abogado y empresario estadounidense, hijo de Joe Biden. Fue miembro del consejo de administración de Burisma Holdings, empresa energética ucraniana, entre 2014 y 2019.",
       "portrait": {
         "lang": "en",
         "title": "Hunter Biden"
       },
+      "biographySources": [
+        {"title": "Associated Press (2014)", "url": "https://www.cbsnews.com/news/bidens-son-joins-board-of-gas-company-in-ukraine/"},
+        {"title": "FactCheck.org (2022)", "url": "https://www.factcheck.org/2022/03/hunter-biden-left-ukrainian-company-in-2019-contrary-to-ted-nugent-post/"}
+      ],
       "sources": {
         "20": [
-          "La fuente lo menciona en relación con discusiones sobre informaciones personales y políticas que circularon durante campañas electorales estadounidenses."
+          {"topic":"Controversia del ordenador de Hunter Biden y Burisma","speaker":"Lorenzo Ramírez","statement":"En el episodio, Lorenzo Ramírez cuestiona cómo se catalogaron públicamente las informaciones sobre el ordenador de Hunter Biden. Además, sostiene que Joe Biden habría influido para retirar acusaciones relacionadas con Burisma Holdings en Ucrania. Son afirmaciones de Ramírez; la entrevista no aporta pruebas que permitan confirmar esa intervención.","status":"alegacion_no_verificada","transcriptVerified":true,"audioVerified":false,"minuteVerified":false}
         ]
       }
     },
