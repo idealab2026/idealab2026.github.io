@@ -51,6 +51,8 @@ jobs:
         run: node scripts/test_telarana_source_profile_reports.mjs
       - name: Validar personas y testimonios de fuentes 09 y 10
         run: node scripts/test_telarana_source_profile_09_10.mjs
+      - name: Auditar crecimiento de entidades y presencia de todas las fuentes
+        run: node scripts/test_telarana_load_audit.mjs
       - name: Validar transcripción y evidencias de la fuente 02
         run: node scripts/test_telarana_source02_transcript.mjs
       - name: Validar avance de fuente 03 y fotografías de sus protagonistas
