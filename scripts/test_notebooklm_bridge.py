@@ -440,6 +440,46 @@ class BridgeTests(unittest.TestCase):
         self.assertIn("#160 utopia uncertain quota", out.getvalue())
         self.assertNotIn("PRIVATE_NOTEBOOK", out.getvalue())
 
+    def test_reconcile_only_never_dispatches_new_requests(self):
+        import io
+        from contextlib import redirect_stdout
+        state = {"160": {"phase": "submitted", "notebook": "notebook-001",
+                         "request": {"book": "utopia"}}}
+        output = io.StringIO()
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "check_submitted") as check, \
+             patch.object(bridge, "retry_github_comments") as comments, \
+             patch.object(bridge, "request_new") as generate, \
+             patch.object(bridge, "launch_queued_retry") as retry, \
+             patch.object(bridge, "next_requests") as pending, \
+             redirect_stdout(output):
+            bridge.reconcile_only()
+        check.assert_called_once_with("160", state["160"], state)
+        comments.assert_called_once_with(state)
+        generate.assert_not_called()
+        retry.assert_not_called()
+        pending.assert_not_called()
+        self.assertIn("Generaciones activas: 1", output.getvalue())
+
+    def test_reconcile_only_reports_free_when_submitted_downloaded(self):
+        import io
+        from contextlib import redirect_stdout
+        state = {"160": {"phase": "submitted", "notebook": "notebook-001",
+                         "request": {"book": "utopia"}}}
+        def complete(number, job, _state):
+            job["phase"] = "downloaded"
+        output = io.StringIO()
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "check_submitted", side_effect=complete), \
+             patch.object(bridge, "retry_github_comments"), \
+             patch.object(bridge, "request_new") as generate, \
+             redirect_stdout(output):
+            bridge.reconcile_only()
+        self.assertIn("No hay generaciones activas", output.getvalue())
+        generate.assert_not_called()
+
     def test_repeated_uncertain_launches_pause_automatic_generation(self):
         for n, outcome in [("160", "uncertain"), ("161", "downloaded"),
                            ("163", "uncertain"), ("178", "uncertain")]:
