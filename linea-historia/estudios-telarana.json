@@ -1127,7 +1127,15 @@
           "f21-stargate",
           "f21-openai"
         ],
-        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 20,
+            "sourceUrl": "https://www.youtube.com/watch?v=meEH-MaGn24",
+            "type": "analisis_del_anuncio",
+            "status": "mencion_fuente_no_verificacion_independiente"
+          }
+        ]
       }
     },
     {
