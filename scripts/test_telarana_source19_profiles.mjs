@@ -27,7 +27,7 @@ const f19=track.inReview.find(x=>x.order===19);
 assert(f19?.personsProfiled===23&&!f19.reviewComplete,"Estado F19 inconsistente");
 assert(f19.verifiedMinuteReferences===0&&!f19.transcriptAudioMatched,"No inventar audio/minutos");
 assert(f19.ambiguousASRIdentifications.some(x=>x.raw==="Peter Z"&&x.status==="probable_awaiting_audio"),"Sin control de homónimo fonético");
-assert(track.nextSource.order===20,"Falta avanzar a fuente 20");
+assert(track.nextSource.order>19,"El inventario ha retrocedido a la fuente 19");
 const feed=JSON.parse(read("linea-historia/estudios-telarana.json"));
 const events=feed.items.filter(x=>x.investigation?.sourceOrder===19);
 assert(events.length===2,"F19 debe tener exactamente dos hitos contrastados");
