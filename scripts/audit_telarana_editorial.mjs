@@ -69,8 +69,13 @@ for(const item of statements){
 assert(statements.length>=330,"La base editorial perdió comentarios registrados");
 assert(flagged.length<=114,"Han aumentado los resúmenes potencialmente superficiales; revisar antes de publicar");
 assert(structured.length>=1,"Se ha perdido el expediente estructurado de Hunter Biden");
-assert(structured.length>=104,"Regresión: se han perdido expedientes con declarante, tema y estado");
-const minimumStructuredBySource={"11":15,"13":9,"21":17,"23":30,"24":23};
+assert(structured.length>=146,"Regresión: se han perdido expedientes con declarante, tema y estado");
+const minimumStructuredBySource={"11":28,"13":20,"21":35,"23":30,"24":23};
+for(const order of ["11","13","21","23","24"]){
+ const entries=statements.filter(x=>x.order===order);
+ assert(entries.length===minimumStructuredBySource[order],"Número inesperado de fichas en F"+order);
+ assert(entries.every(x=>x.structured),"Se ha reintroducido relleno editorial libre en F"+order);
+}
 for(const [order,minimum] of Object.entries(minimumStructuredBySource)){
  const dossiers=statements.filter(x=>x.order===order&&x.structured);
  assert(dossiers.length>=minimum,"Se ha perdido contenido estructurado de la fuente "+order);
