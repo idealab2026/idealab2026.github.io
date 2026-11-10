@@ -25,6 +25,7 @@ const env={
 vm.runInNewContext(source,env);
 const Graph=env.window.IdeaLabGraph3D;
 assert.equal(Graph.topics.length,7);
+assert.equal(Graph.topics.find(x=>x.id==='historia')?.label,'Historia','la categoría no debe nombrarse Historia y nazismo');
 
 function flush(t){
  time=t;
@@ -53,11 +54,11 @@ const tint=new Set(Graph.topics.map(({id})=>({
  finanzas:'#bbd68c',global:'#e6ad91'}[id])));
 
 for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540]]){
- let rings=[],pillBoxes=[],sphere=[],lastArc=null,photoRequests=0;
+ let rings=[],pillBoxes=[],sphere=[],lastArc=null,photoRequests=0,gradients=0;
  const events={};
  const ctx=new Proxy({},{
   get(target,key){
-   if(key==='createRadialGradient')return()=>({addColorStop(){}});
+   if(key==='createRadialGradient')return()=>{gradients++;return{addColorStop(){}}};
    if(key==='beginPath')return()=>{lastArc=null};
    if(key==='arc')return(x,y,r)=>{lastArc={x,y,r}};
    if(key==='stroke')return()=>{
@@ -89,6 +90,8 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  assert.equal(rings.length,222,'all entity nodes visible');
  assert.equal(sphere.length,1,'one coherent spherical body');
  assert.equal(pillBoxes.length,7,'one compact label per lobe');
+ assert(gradients>=9,'each thematic region must use a radial fading gradient');
+ assert.equal(rings.length,222,'thematic outlines must not add circular strokes');
  assert(pillBoxes.every(b=>b.h<=50),'no large rectangular theme panels');
  const body=sphere[0],cx=width/2,cy=height/2;
  assert(rings.every(p=>Math.hypot(p.x-cx,p.y-cy)<body.r*1.36),
@@ -125,6 +128,13 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  const thirdZoomSize=Math.max(...rings.map(p=>p.r));
  assert(thirdZoomSize>secondZoomSize*1.08,
   'photos and icons must continue to grow at high zoom');
+ // El cursor debe expresar que se está agarrando el mapa, no permanecer abierto.
+ events.pointerdown({button:0,pointerId:7,clientX:width/2,clientY:height/2,shiftKey:false,preventDefault(){}});
+ assert.equal(canvas.style.cursor,'grabbing','la mano no se cierra al pulsar');
+ events.pointermove({pointerId:7,clientX:width/2+36,clientY:height/2+18});
+ assert.equal(canvas.style.cursor,'grabbing','la mano debe seguir cerrada durante el arrastre');
+ events.pointerup({pointerId:7,clientX:width/2+36,clientY:height/2+18});
+ assert.notEqual(canvas.style.cursor,'grabbing','la mano debe abrirse al soltar');
  assert(graph.setMotion(false)===false,'motion pause control');
  graph.setTheme('espana');
  flush(time+60);
@@ -134,4 +144,4 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  // Control de reanudación, disponible independientemente del sistema operativo.
  assert(graph.setMotion(true)===true);
 }
-console.log('OK: 7 lóbulos, 222 nodos, 5 resoluciones, fotos escalables, zoom y pausa orbital');
+console.log('OK: 7 zonas difuminadas sin círculos perimetrales, Historia, mano agarrando, 222 nodos, 5 resoluciones y zoom');
