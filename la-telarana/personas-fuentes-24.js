@@ -20,7 +20,16 @@
       },
       "sources": {
         "24": [
-          "En la conferencia presenta una interpretación del nuevo escenario geopolítico, con especial atención al petróleo, Oriente Medio, China, Estados Unidos y la competencia monetaria."
+          {
+            "topic": "Tesis general de la conferencia sobre Estados Unidos y China",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez rechaza que la competencia entre Estados Unidos y China sea una rivalidad absoluta. Afirma que existe un reparto cambiante de influencia y cooperación entre ambos Estados y analiza Oriente Medio como espacio de competencia energética y monetaria. Es su tesis geopolítica, no una constatación de un pacto secreto acreditado documentalmente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "no hay una guerra entre Estados Unidos y China hay un pacto de colaboración"
+          }
         ]
       }
     },
@@ -32,7 +41,16 @@
       },
       "sources": {
         "24": [
-          "Ramírez comenta las negociaciones comerciales y estratégicas de la Administración Trump con China e Irán y especula sobre los incentivos de sus políticas energéticas."
+          {
+            "topic": "Presión comercial y tecnológica a China",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que Trump combina amenazas arancelarias y restricciones tecnológicas con negociaciones sobre minerales estratégicos, semiconductores y suministros energéticos. Describe esta conducta como una política de presión sobre otros países; las motivaciones que atribuye al presidente son una interpretación del conferenciante.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Oye ¿tú nos vas a dar las tierras raras o no nos las vas a dar"
+          }
         ]
       }
     },
@@ -44,7 +62,16 @@
       },
       "sources": {
         "24": [
-          "La conferencia lo menciona con varias deformaciones fonéticas al comentar la intermediación china entre Irán y Arabia Saudí y la estrategia de corredores comerciales."
+          {
+            "topic": "Mediación china entre Irán y Arabia Saudí",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez recuerda la mediación de China para restablecer las relaciones diplomáticas entre Irán y Arabia Saudí en marzo de 2023. Interpreta ese acuerdo como un intento de asegurar corredores comerciales y rutas energéticas hacia Europa; la atribución de un plan geopolítico global más amplio es su análisis.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Sillin Pin intenta establecer una serie de tratados de paz"
+          }
         ]
       }
     },
@@ -56,7 +83,16 @@
       },
       "sources": {
         "24": [
-          "Ramírez compara su política exterior y económica con la de Trump y rechaza interpretaciones binarias de la rivalidad entre Estados Unidos y China."
+          {
+            "topic": "Comparación de administraciones estadounidenses y relación con China",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez compara a los gobiernos de Biden y Trump y sostiene que, pese a presentarse como rivales ideológicos de China, ambos habrían contribuido a reforzar su papel internacional mediante políticas comerciales y narrativas de confrontación. Esa lectura corresponde al ponente y no prueba un pacto de colaboración deliberado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "especialmente con Biden y Trump"
+          }
         ]
       }
     },
@@ -80,7 +116,16 @@
       },
       "sources": {
         "24": [
-          "La fuente analiza su respuesta a los ataques del 7 de octubre de 2023 y formula hipótesis sobre objetivos militares y territoriales israelíes; no se acreditan intenciones encubiertas mediante esa declaración."
+          {
+            "topic": "Hipótesis sobre objetivos regionales tras el 7 de octubre",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que el Gobierno de Netanyahu aprovechó los ataques de Hamás del 7 de octubre de 2023 para impulsar objetivos estratégicos que el conferenciante asocia con el «Gran Israel» y con nuevas infraestructuras de transporte energético. La declaración no demuestra que los ataques formaran parte de un plan previo ni verifica por sí sola intenciones encubiertas de Netanyahu.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el que Netanyahu definiría como el 11S de Israel"
+          }
         ]
       }
     },
@@ -92,7 +137,16 @@
       },
       "sources": {
         "24": [
-          "Ramírez lo menciona mediante expresiones fonéticas como «Peter Sil» al hablar del poder de las empresas tecnológicas y sus relaciones con la política estadounidense; la literalidad queda pendiente de cotejo con audio."
+          {
+            "topic": "Mención imprecisa a Palantir y tecnología estadounidense",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez pronuncia un nombre transcrito como «Peter Sil» junto a una referencia fonética a «Palantin» cuando habla del poder de empresas tecnológicas. La identificación como Peter Thiel es plausible por el contexto empresarial, pero no se ha cotejado el audio; no cabe atribuirle ninguna actuación concreta sobre la base de esa frase.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "luego llega Peter Sil de Palantin"
+          }
         ]
       }
     },
@@ -104,7 +158,16 @@
       },
       "sources": {
         "24": [
-          "El entrevistado comenta su libro The Technological Republic y la cooperación entre empresas tecnológicas y Estados, a la que atribuye riesgos para los controles democráticos."
+          {
+            "topic": "Tecnorrepública y colaboración entre empresas y Estado",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez alude a un libro de Alex Karp, consejero delegado de Palantir, y critica la propuesta de reforzar la cooperación entre industrias tecnológicas y seguridad nacional estadounidense. La califica de tendencia hacia la fusión entre Estado y empresas; esta valoración es su opinión sobre la obra y no prueba una conducta ilegal de Karp.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el CEO de Palantir de Alex Carp"
+          }
         ]
       }
     },
@@ -116,7 +179,16 @@
       },
       "sources": {
         "24": [
-          "Se lo menciona como integrante de un grupo de dirigentes tecnológicos al analizar la competencia entre Estados Unidos y China; la supuesta participación en un viaje concreto requiere comprobación."
+          {
+            "topic": "Afirmación sobre presencia de ejecutivos en una delegación de Trump",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez enumera un nombre transcrito como «team Cook» junto a Bezos, Thiel y Karp y afirma que esos empresarios viajaron en un avión con Trump para respaldar conversaciones sobre tierras raras y chips con China. La conferencia no ofrece una lista de pasajeros ni datos para verificar que Cook participara efectivamente en ese viaje.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "team Cook 10 Bezos Peterill Alex Carp"
+          }
         ]
       }
     },
@@ -128,7 +200,16 @@
       },
       "sources": {
         "24": [
-          "Es incluido en una enumeración de líderes empresariales estadounidenses al comentar tecnologías estratégicas y la diplomacia económica con China."
+          {
+            "topic": "Afirmación sobre viaje de empresarios con Trump",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "El conferenciante incluye a Bezos en una enumeración de directivos tecnológicos que, según él, habrían acompañado a Trump en un vuelo relacionado con negociaciones con China sobre minerales críticos y semiconductores. El episodio no aporta documentación de pasajeros: la presencia de Bezos en ese viaje no debe registrarse como hecho verificado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "team Cook 10 Bezos Peterill Alex Carp"
+          }
         ]
       }
     },
@@ -152,7 +233,16 @@
       },
       "sources": {
         "24": [
-          "La conferencia menciona su crítica al conocimiento centralizado al presentar los incentivos y la dispersión de información como herramientas del análisis político."
+          {
+            "topic": "Referencia a límites del conocimiento centralizado",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Friedrich Hayek al sostener que los gobiernos no pueden reunir todo el conocimiento necesario para definir de forma objetiva el supuesto interés general. Utiliza esa idea como apoyo conceptual a su análisis de incentivos políticos, sin atribuirle un suceso biográfico o relación de poder específica.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en eso Hayek llevaba absolutamente toda la razón"
+          }
         ]
       }
     },
@@ -164,7 +254,16 @@
       },
       "sources": {
         "24": [
-          "El invitado recurre a su enfoque para explicar que las decisiones de responsables políticos y económicos responden también a incentivos particulares."
+          {
+            "topic": "Teoría de la elección pública como método de análisis",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita la teoría de la elección pública de James Buchanan y propone analizar las decisiones de gobernantes y organismos según sus incentivos particulares. Cuestiona la apelación al «interés general» como justificación suficiente. Es una referencia a una escuela económica, no una afirmación sobre intervenciones personales de Buchanan.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "teoría de la elección pública de James Bucanan"
+          }
         ]
       }
     },
@@ -176,7 +275,16 @@
       },
       "sources": {
         "24": [
-          "Se lo cita fonéticamente como «McKinder» al explicar la importancia estratégica de Eurasia, de Irán y de las rutas terrestres entre Asia y Europa."
+          {
+            "topic": "Heartland y valor geográfico de Irán",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "El conferenciante cita a Mackinder como autor de la idea del área pivote de Eurasia y sitúa a Irán en una posición de entrada estratégica hacia el Heartland. Emplea esa teoría para interpretar las rutas terrestres entre China y Europa, sin sostener que Mackinder participara en decisiones políticas contemporáneas.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "geógrafo británico McKinder"
+          }
         ]
       }
     },
@@ -188,7 +296,16 @@
       },
       "sources": {
         "24": [
-          "La fuente lo menciona por sus trabajos sobre el tablero geopolítico euroasiático y su lectura de los intereses estadounidenses en Asia."
+          {
+            "topic": "Referencia a El gran tablero mundial y Eurasia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez relaciona la interpretación geoestratégica de Eurasia expuesta por Brzezinski con la teoría del Heartland de Mackinder. Lo cita por su obra sobre la primacía geopolítica en el continente, no como actor de una negociación presente.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Brecinski en la cama"
+          }
         ]
       }
     },
@@ -200,7 +317,16 @@
       },
       "sources": {
         "24": [
-          "El entrevistado critica su trayectoria en Goldman Sachs y plantea una acusación sobre la contabilidad griega que no se considera acreditada por esta intervención."
+          {
+            "topic": "Acusación sobre Goldman Sachs y estadísticas de Grecia",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez acusa a Mario Draghi, por su pasado en Goldman Sachs, de haber participado en mecanismos que habrían permitido falsear las cifras griegas para acceder al euro. No presenta documentos que demuestren una intervención personal de Draghi. La imputación se mantiene estrictamente como declaración del ponente, sin convertirse en relación o delito comprobado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Mario Dragi arquitecto de la eurozona"
+          }
         ]
       }
     },
@@ -212,7 +338,16 @@
       },
       "sources": {
         "24": [
-          "Ramírez lo menciona al criticar la influencia que atribuye al sector bancario en la política europea; esa causalidad permanece como interpretación de la fuente."
+          {
+            "topic": "Afirmación sobre el papel de Rothschild en su carrera política",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez afirma que Macron fue situado políticamente por el banco Rothschild, donde trabajó antes de llegar al Elíseo. La experiencia bancaria es un dato biográfico distinto de la supuesta capacidad del banco para decidir su elección o gobernar a través de él. Esta última tesis no se acredita con la conferencia.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Macron es un hombre de la banca Rochild y lo puso"
+          }
         ]
       }
     },
@@ -224,7 +359,16 @@
       },
       "sources": {
         "24": [
-          "La conferencia comenta sus posiciones respecto a Trump y a las bases estadounidenses en España, desde una interpretación de incentivos políticos que no demuestra acuerdos tácitos."
+          {
+            "topic": "Interpretación del enfrentamiento político con Trump",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ante una pregunta del público sobre las bases estadounidenses en España, Ramírez sostiene que a Sánchez le conviene políticamente confrontar con Trump y que ambos pueden beneficiarse de ese antagonismo. No aporta pruebas de que exista un acuerdo entre los dos dirigentes; se trata de una lectura de sus incentivos políticos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "a Sánchez le interesa muchísimo más"
+          }
         ]
       }
     },
@@ -272,7 +416,16 @@
       },
       "sources": {
         "24": [
-          "Ramírez la alude fonéticamente como «Cayacalas» al comentar los riesgos de escalada militar entre Europa y Rusia; el fragmento requiere cotejo audiovisual."
+          {
+            "topic": "Identificación fonética incierta en una alusión a escalada militar",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "En un pasaje sobre Rusia, Ramírez cita a una figura transcrita como «Cayacalas» junto a otro nombre poco claro, dentro de su advertencia sobre una posible escalada militar europea. La atribución a Kaja Kallas requiere cotejo de audio; no se documenta ninguna decisión particular suya en ese fragmento.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "y Cayacalas eh pues deciden llevarnos"
+          }
         ]
       }
     },
