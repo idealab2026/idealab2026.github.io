@@ -20,7 +20,7 @@ for(const file of files){
  assert(page.includes(file),"La web no importa "+file);
  assert(workflow.includes("cp la-telarana/"+file),"Pages omite "+file);
 }
-assert(page.includes("La fuente ")&&page.includes(" dice que "),"Falta atribución de afirmaciones");
+assert(page.includes("source-report-text")&&page.includes("Declarante: ")&&page.includes("source-claim-caution"),"Falta separación entre hechos y declaraciones atribuidas");
 assert(page.includes("function source")||page.includes("function personReport("),"No existe índice de identidades");
 assert(page.includes("iconForEntity("),"No hay sustituto visual para fotos faltantes");
 const profiles=library.profiles;
