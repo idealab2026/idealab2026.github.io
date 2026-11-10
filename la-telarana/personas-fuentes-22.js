@@ -108,7 +108,7 @@
         ]
       }
     },
-    "Benjamín Netanyahu": {
+    "Benjamin Netanyahu": {
       "who": "Político israelí que ha ejercido varios mandatos como primer ministro de Israel.",
       "portrait": {
         "lang": "es",
