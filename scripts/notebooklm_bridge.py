@@ -48,8 +48,10 @@ FAILED_COMMENT = ("NotebookLM ha informado de un fallo de generación. "
                   "Revisión necesaria; no se reintentará automáticamente.")
 PUBLISH_COMMENT = ("Imagen revisada y propuesta para publicación mediante pull request "
                    "de IDEA LAB. Pendiente de revisión/fusión final.")
+RETRY_COMMENT = ("Se ha solicitado de nuevo a NotebookLM una infografía cuyo intento "
+                 "anterior falló. Pendiente de descarga y revisión.")
 ALLOWED_COMMENTS = (SUBMITTED_COMMENT, DOWNLOADED_COMMENT, FAILED_COMMENT,
-                    PUBLISH_COMMENT)
+                    PUBLISH_COMMENT, RETRY_COMMENT)
 
 
 def cli_failure_hint(argv: list[str], stderr: str) -> str:
@@ -431,6 +433,17 @@ def quarantine_remote(args):
     quarantine_existing_request(number, req, state, private_config())
 
 
+def generation_args(req: dict, notebook: str, sources: list[str]) -> list[str]:
+    """The same constrained generator applies to first attempts and manual retries."""
+    argv = ["nlm", "infographic", "create", notebook,
+            "--orientation", "landscape", "--detail", "detailed",
+            "--style", "editorial", "--language", "es-ES",
+            "--focus", build_prompt(req), "--confirm"]
+    if sources:
+        argv.extend(["--source-ids", ",".join(sources)])
+    return argv
+
+
 def request_new(number, req, state, config):
     mapping = select_mapping(config, req)
     if mapping is None:
@@ -448,14 +461,8 @@ def request_new(number, req, state, config):
            "notebook": notebook, "source_ids": sources}
     state[number] = job
     save_json(STATE_PATH, state)  # No blind retry after an ambiguous failure.
-    argv = ["nlm", "infographic", "create", notebook,
-            "--orientation", "landscape", "--detail", "detailed",
-            "--style", "editorial", "--language", "es-ES",
-            "--focus", build_prompt(req), "--confirm"]
-    if sources:
-        argv.extend(["--source-ids", ",".join(sources)])
     try:
-        command(argv, timeout=180)
+        command(generation_args(req, notebook, sources), timeout=180)
     except Exception:
         job["phase"] = "uncertain"
         save_json(STATE_PATH, state)
@@ -514,6 +521,87 @@ def check_submitted(number, job, state):
     print("Infografía disponible localmente:", path)
 
 
+def queue_retry_failed(args):
+    """One explicit opt-in queues a confirmed failed job, without generating yet."""
+    check_identity()
+    state = load_json(STATE_PATH, {})
+    number = str(args.issue)
+    job = state.get(number)
+    if not job or job.get("phase") != "failed":
+        raise ValueError("Solo puede repetirse una solicitud cuyo estado es failed.")
+    if not job.get("artifact_id"):
+        raise ValueError("No existe un artefacto fallido identificable; revisión manual.")
+    if job.get("retry_requested"):
+        print("El reintento ya está en cola para #", number)
+        return
+    job["retry_requested"] = True
+    job["retry_queued_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    save_json(STATE_PATH, state)
+    print("Reintento #", number, "PROGRAMADO. No se ha enviado todavía.")
+    print("El agente lo ejecutará tras terminar cualquier solicitud activa,")
+    print("comprobando que el artefacto anterior sigue fallido y sin duplicarlo.")
+
+
+def launch_queued_retry(state: dict, config: dict) -> bool:
+    """Start at most one explicitly queued retry, after existing work settles.
+
+    The local lock surrounds the entire poll. The old artifact must still
+    report failure; prior completed PNGs are never removed or overwritten.
+    """
+    for number, job in sorted(state.items(), key=lambda item: int(item[0])):
+        if not job.get("retry_requested") or job.get("phase") != "failed":
+            continue
+        req = job.get("request") or {}
+        mapping = select_mapping(config, req)
+        if not mapping or mapping != (job.get("notebook"), job.get("source_ids")):
+            print("Reintento #", number, "pendiente: asociación privada modificada.")
+            return False
+        notebook, sources = mapping
+        if any(other is not job and other.get("notebook") == notebook
+               and other.get("phase") in ("deferred", "uncertain", "launching", "submitted")
+               for other in state.values()):
+            print("Reintento #", number, "pendiente: el cuaderno tiene otro trabajo no conciliado.")
+            return False
+        rows = infographic_rows(notebook)
+        old_id = job.get("artifact_id")
+        old = next((row for row in rows if artifact_id(row) == old_id), None)
+        status = status_text(old) if old else ""
+        if not old or not (status == "4" or any(
+                key in status for key in ("fail", "error", "cancel"))):
+            # Never start a duplicate if NotebookLM changed the result.
+            job.pop("retry_requested", None)
+            job["retry_blocked"] = "El artefacto original ya no figura como fallido"
+            save_json(STATE_PATH, state)
+            print("Reintento #", number, "CANCELADO: el artefacto original")
+            print("no consta inequívocamente como fallido. Revisión manual.")
+            return False
+        job.setdefault("past_attempts", []).append({
+            "artifact_id": old_id,
+            "phase": "failed",
+            "retry_requested_at": job.get("retry_queued_at"),
+        })
+        job["before"] = [artifact_id(row) for row in rows if artifact_id(row)]
+        job.pop("artifact_id", None)
+        job.pop("retry_requested", None)
+        job.pop("retry_queued_at", None)
+        job.pop("retry_blocked", None)
+        job["phase"] = "launching"
+        save_json(STATE_PATH, state)
+        try:
+            command(generation_args(req, notebook, sources), timeout=180)
+        except Exception:
+            job["phase"] = "uncertain"
+            save_json(STATE_PATH, state)
+            print("Reintento #", number, "INCIERTO; no se reenviará automáticamente.")
+            return True
+        job["phase"] = "submitted"
+        save_json(STATE_PATH, state)
+        comment_or_queue(number, RETRY_COMMENT, job, state)
+        print("Reintento confirmado en NotebookLM: #", number)
+        return True
+    return False
+
+
 def poll():
     check_identity()
     config = private_config()
@@ -529,6 +617,9 @@ def poll():
     running = sum(j.get("phase") in ("submitted", "launching", "uncertain") for j in state.values())
     if running:
         print("Solicitudes activas o inciertas:", running, "(no se enviarán otras automáticamente)")
+        return
+    # An explicit failed-job retry takes priority, but never runs concurrently.
+    if launch_queued_retry(state, config):
         return
     # A deferred request may still complete remotely after a timeout. Never
     # start another request in the same notebook: its new artifact could be
@@ -594,7 +685,8 @@ def show_status():
     if not state:
         print("No hay trabajos registrados. Comprueba que hayas ejecutado init.")
     for issue, job in sorted(state.items(), key=lambda x: int(x[0])):
-        print("#" + issue, job["request"]["book"], job["phase"],
+        phase = "retry-queued" if job.get("retry_requested") else job["phase"]
+        print("#" + issue, job["request"]["book"], phase,
               job.get("path", "") if job["phase"] == "downloaded" else "")
 
 
@@ -639,6 +731,9 @@ def main():
     sub.add_parser("doctor", help="Diagnosticar herramientas y conexiones, sin revelar IDs privados")
     sub.add_parser("poll", help="Procesar una solicitud y comprobar las anteriores")
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
+    rf = sub.add_parser("retry-failed",
+                        help="Programar una repetición explícita de un fallo confirmado, sin duplicar")
+    rf.add_argument("--issue", type=int, required=True)
     mb = sub.add_parser("map-book", help="Asociar en privado un libro o tomo a su cuaderno")
     mb.add_argument("--book", required=True)
     mb.add_argument("--notebook-id", required=True)
@@ -660,7 +755,7 @@ def main():
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
     args = parser.parse_args()
-    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish"}
+    mutating = {"init", "map-book", "map-episode", "poll", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed"}
     if args.command in mutating:
         with exclusive_state_lock() as acquired:
             if not acquired:
@@ -688,6 +783,8 @@ def execute_command(args):
             poll()
         elif args.command == "status":
             show_status()
+        elif args.command == "retry-failed":
+            queue_retry_failed(args)
         elif args.command == "attach":
             attach_artifact(args)
         elif args.command == "defer-uncertain":
