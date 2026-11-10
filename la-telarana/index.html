@@ -484,7 +484,7 @@ function showLoadAudit(){
  var audit=document.getElementById("load-audit"),contents=document.getElementById("load-audit-content");
  if(!audit||!contents)return;
  var active=false;try{active=new URLSearchParams(window.location.search).get("auditoria")==="1"}catch(e){}
- audit.hidden=!active;if(!active)return;
+ audit.hidden=!active;if(!active)return;audit.open=true;
  contents.replaceChildren();
  var p=N("p","Los incrementos son entidades nuevas netas, después de fusionar nombres repetidos. Una fuente puede añadir 0 entidades y varias referencias.","audit-help");
  contents.append(p);
