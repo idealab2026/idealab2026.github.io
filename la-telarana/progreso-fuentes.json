@@ -104,9 +104,9 @@
     }
   ],
   "nextSource": {
-    "order": 19,
-    "videoId": "TS5c9NXubIs",
-    "status": "transcripcion_privada_lista_para_revision",
+    "order": 20,
+    "videoId": "meEH-MaGn24",
+    "status": "transcripcion_privada_lista_para_revision_biografica",
     "sourceType": "youtube"
   },
   "inReview": [
@@ -643,17 +643,54 @@
       "videoId": "TS5c9NXubIs",
       "title": "El EPISODIO Más CENSURABLE del CANAL | @diazvillanueva, @jfcalero, Lorenzo Ramírez y @MemoriasDePez",
       "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "segunda_revision_perfiles_y_relaciones_publicada_cotejo_audio_pendiente",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 10,
       "sourceRelationsDocumented": 9,
-      "verifiedIndependentChecks": 1,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Un hito histórico verificado con fuente institucional y añadido a la Línea de la Historia. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "verifiedIndependentChecks": 3,
+      "qualityNotes": "Documento íntegro ASR de 96.983 caracteres consultado en Drive. 23 biografías y notas impersonales por fuente. Cuatro invitados confirmados también en página oficial de Inversión Racional. Peter Thiel es candidato fonético por la mención a Palantir, no cita audiovisual confirmada. China-OMC ya registrada y corroborada por OMC; Capitolio 2021 contrastado con Inspector General USCP. No se duplican eventos ni se vinculan personas de la mesa entre sí solo por intervenir. Pendiente identificación de turnos, audio, minutajes y QA visual.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 1
+      "timelineVerifiedEventsCommitted": 2,
+      "rawTranscriptAvailable": true,
+      "transcriptStoredInDrive": true,
+      "fullTranscriptVerifiedDriveReadback": true,
+      "transcriptDocUrl": "https://docs.google.com/document/d/1UrRGtPdpEMCMLu0D2qTk4S4hQMt7q6rO5fdDP6eLnt0/edit?usp=drivesdk",
+      "transcriptCharacters": 96983,
+      "personsProfiled": 23,
+      "impersonalAttributedSummaries": 23,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-19.js",
+      "personBiographiesFirst": true,
+      "timelineEventIds": [
+        "study-f19-china-omc-2001",
+        "study-f19-asalto-capitolio-2021"
+      ],
+      "entityPhotoVerification": "no_verificada",
+      "sourceSpeakingTurnsDiarized": false,
+      "ambiguousASRIdentifications": [
+        {
+          "raw": "Peter Z",
+          "candidate": "Peter Thiel",
+          "context": "palan technologies",
+          "status": "probable_awaiting_audio",
+          "doNotQuoteAsVerbatim": true
+        },
+        {
+          "raw": "sergei glacier",
+          "candidate": "Serguéi Gláziev",
+          "status": "probable_awaiting_audio"
+        },
+        {
+          "raw": "Alexander Hey",
+          "candidate": "Alexander Haig",
+          "status": "probable_awaiting_audio"
+        }
+      ],
+      "interpretationPolicy": "Los comentarios sobre intereses empresariales, conflictos o control político se mantienen como tesis de la mesa. La relación Peter Thiel-Palantir es un dato corporativo externo, no prueba de las imputaciones formuladas en la charla.",
+      "imageRuntimeVerified": false,
+      "lastUpdated": "2026-11-10"
     },
     {
       "order": 20,
@@ -760,9 +797,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 54,
+    "committedVerifiedEvents": 55,
     "fromReviewedSource": 13,
-    "fromSourceInReview": 34,
+    "fromSourceInReview": 35,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -832,7 +869,8 @@
         "study-f18-doj-fbi-memo-2025"
       ],
       "19": [
-        "study-f19-china-omc-2001"
+        "study-f19-china-omc-2001",
+        "study-f19-asalto-capitolio-2021"
       ],
       "21": [
         "study-f21-usaid-review-2025",
@@ -1553,19 +1591,19 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 15,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "segunda_revision_perfiles_y_relaciones_publicada_cotejo_audio_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
           "transcriptContentImported": true,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1UrRGtPdpEMCMLu0D2qTk4S4hQMt7q6rO5fdDP6eLnt0/edit?usp=drivesdk",
           "complete": false,
           "inReview": true,
-          "imageAtGraphNode": "pendiente_verificacion",
+          "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
-          "transcriptCharactersReadBack": 96975,
+          "transcriptCharactersReadBack": 96983,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
         }
       },
