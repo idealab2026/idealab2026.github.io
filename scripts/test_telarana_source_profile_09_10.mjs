@@ -20,8 +20,9 @@ for(const [order,expected] of [["9",32],["10",15]]){
  assert(found.length>=expected,"Menos personas de las revisadas en fuente "+order);
  for(const [name,profile] of found){
   assert(profile.who.length>=40,"Biografía demasiado breve: "+name);
-  assert(profile.sources[order].every(s=>s.length>=65),"Testimonio insuficiente: "+name);
-  assert(profile.sources[order].every(s=>!s.startsWith("La fuente ")),"La atribución corresponde a la UI");
+  assert(profile.sources[order].every(s=>typeof s==="string"?s.length>=65:typeof s?.statement==="string"&&s.statement.length>=65),"Testimonio insuficiente: "+name);
+  assert(profile.sources[order].every(s=>typeof s!=="string"||!s.startsWith("La fuente ")),"La atribución corresponde a la UI");
+  assert(profile.sources[order].every(s=>typeof s==="string"||(s.topic&&s.speaker&&s.status)),"Expediente estructurado sin tema, declarante o estado: "+name);
  }
 }
 assert(page.includes('"9":"f09-episodio"')&&page.includes('"10":"f10-episodio"'),"No enlaza entrevistas con las personas");
