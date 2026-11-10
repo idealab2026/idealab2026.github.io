@@ -18,7 +18,7 @@ assert(lib.profiles["Ron DiFrancesco"]?.sources["14"],"Falta Ron, el supervivien
 const html=read("la-telarana/index.html"),workflow=read(".github/workflows/pages.yml");
 assert(html.includes('src="./personas-fuentes-14.js'),"Fuente de perfiles omitida en HTML");
 assert(html.includes('"14":"f14-episodio"'),"No hay referencia del episodio en mapa de perfiles");
-assert(html.includes('["9","10","11","12","13","14","18","21"].forEach'),"Auditoría no contabiliza fuente 14");
+assert(html.includes('["9","10","11","12","13","14","16","18","21"].forEach'),"Auditoría no contabiliza fuente 14");
 assert(workflow.includes("cp la-telarana/personas-fuentes-14.js dist/la-telarana/personas-fuentes-14.js"),"No se incorpora a Pages");
 assert(!workflow.includes("cp la-telarana/progreso-fuentes.json"),"Inventario privado expuesto");
 const tracker=JSON.parse(read("la-telarana/progreso-fuentes.json"));
