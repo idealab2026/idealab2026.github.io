@@ -104,8 +104,8 @@
     }
   ],
   "nextSource": {
-    "order": 11,
-    "videoId": "ifklD4aJXv8",
+    "order": 13,
+    "videoId": "I5koBMBMXSc",
     "status": "transcripcion_en_drive_lista_para_revision",
     "sourceType": "youtube"
   },
@@ -420,34 +420,54 @@
       "videoId": "ifklD4aJXv8",
       "title": "Los SECRETOS OCULTOS de LA GUERRA CIVIL ESPAÑOLA - Fernando Paz | Aladetres 112",
       "sourceUrl": "https://www.youtube.com/watch?v=ifklD4aJXv8",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "segunda_revision_biografias_atribuciones_publicada",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 11,
       "sourceRelationsDocumented": 10,
       "verifiedIndependentChecks": 1,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Un hito histórico verificado con fuente institucional y añadido a la Línea de la Historia. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "qualityNotes": "Segunda capa de transcripción automática: biografías y declaraciones expresamente atribuidas al entrevistado; separación de personas homónimas. Análisis exhaustivo, diarización/audio e imágenes aún no verificados.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 1
+      "timelineVerifiedEventsCommitted": 1,
+      "personsProfiled": 28,
+      "sourceAttributedSummaries": 28,
+      "personBiographiesFirst": true,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-11-12.js",
+      "imageRuntimeVerified": false,
+      "loadOrderMetrics": {
+        "stageNetNodesAdded": 8,
+        "stageNetEdgesAdded": 10,
+        "scope": "source_script_in_current_pipeline_before_following_sources_and_biography_merge"
+      }
     },
     {
       "order": 12,
       "videoId": "TuWoahXCal0",
       "title": "QUIEREN LA DESTRUCCIÓN DE ESPAÑA Y DEL MUNDO - Juan Manuel de Prada | Aladetres #92",
       "sourceUrl": "https://www.youtube.com/watch?v=TuWoahXCal0",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "segunda_revision_biografias_atribuciones_publicada",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
       "sourceNodesDocumented": 8,
       "sourceRelationsDocumented": 7,
       "verifiedIndependentChecks": 0,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "qualityNotes": "Segunda capa de transcripción automática: biografías y declaraciones expresamente atribuidas al entrevistado; separación de personas homónimas. Análisis exhaustivo, diarización/audio e imágenes aún no verificados.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 0
+      "timelineVerifiedEventsCommitted": 0,
+      "personsProfiled": 6,
+      "sourceAttributedSummaries": 6,
+      "personBiographiesFirst": true,
+      "personProfilesSourceFile": "la-telarana/personas-fuentes-11-12.js",
+      "imageRuntimeVerified": false,
+      "loadOrderMetrics": {
+        "stageNetNodesAdded": 4,
+        "stageNetEdgesAdded": 7,
+        "scope": "source_script_in_current_pipeline_before_following_sources_and_biography_merge"
+      }
     },
     {
       "order": 13,
@@ -1180,7 +1200,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 32,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "segunda_revision_biografias_atribuciones_publicada",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -1189,7 +1209,7 @@
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": true,
-          "imageAtGraphNode": "pendiente_verificacion",
+          "imageAtGraphNode": "retratos_wikipedia_o_iconos_fallback",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 142446,
@@ -1206,7 +1226,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 33,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "segunda_revision_biografias_atribuciones_publicada",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -1215,7 +1235,7 @@
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": true,
-          "imageAtGraphNode": "pendiente_verificacion",
+          "imageAtGraphNode": "retratos_wikipedia_o_iconos_fallback",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-10",
           "transcriptCharactersReadBack": 76846,
