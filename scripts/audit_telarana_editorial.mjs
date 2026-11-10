@@ -69,7 +69,20 @@ for(const item of statements){
 assert(statements.length>=330,"La base editorial perdió comentarios registrados");
 assert(flagged.length<=114,"Han aumentado los resúmenes potencialmente superficiales; revisar antes de publicar");
 assert(structured.length>=1,"Se ha perdido el expediente estructurado de Hunter Biden");
-assert(structured.length>=63,"Regresión: se han perdido expedientes con declarante, tema y estado");
+assert(structured.length>=104,"Regresión: se han perdido expedientes con declarante, tema y estado");
+const minimumStructuredBySource={"11":15,"13":9,"21":17,"23":30,"24":23};
+for(const [order,minimum] of Object.entries(minimumStructuredBySource)){
+ const dossiers=statements.filter(x=>x.order===order&&x.structured);
+ assert(dossiers.length>=minimum,"Se ha perdido contenido estructurado de la fuente "+order);
+ for(const item of dossiers){
+  const record=lib.profiles[item.name].sources[order][item.index];
+  if(order==="23"&&item.name==="Lorenzo Ramírez")continue;
+  assert(record.transcriptVerified===true&&record.audioVerified===false&&record.minuteVerified===false,
+   "Fuente "+order+": no confundir transcripción con verificación audiovisual");
+  assert(typeof record.transcriptAnchor==="string"&&record.transcriptAnchor.length>=12,
+   "Falta pasaje ASR localizable en "+item.name+" F"+order);
+ }
+}
 for(const order of ["23","24"]){
  const dossiers=statements.filter(x=>x.order===order);
  const expected=order==="23"?30:23;
