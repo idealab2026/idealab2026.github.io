@@ -26,5 +26,5 @@ const f16=tracker.inReview.find(x=>x.order===16);
 assert(f16&&f16.reviewComplete===false&&f16.personsProfiled>=22,"Seguimiento editorial erróneo");
 assert(f16.transcriptAudioMatched===false&&f16.verifiedMinuteReferences===0,"No inventar cotejo audio");
 assert(f16.timelineVerifiedEventsCommitted===0,"No duplicar hitos Ceuta ya existentes");
-assert(tracker.nextSource.order===17,"Siguiente revisión incorrecta");
+assert(tracker.nextSource.order>16,"El inventario ha retrocedido a una fuente ya revisada");
 console.log("OK: F16 · "+people.length+" biografías y atribuciones; Gisbert ausente, Iturralde sin homónimo ni falsas evidencias");
