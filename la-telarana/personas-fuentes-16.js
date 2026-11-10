@@ -21,7 +21,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "Presenta el episodio sobre Ceuta y plantea una lectura estratégica de las actuaciones de Marruecos, los intereses de Estados Unidos en África y la seguridad europea."
+          {
+            "topic": "Valoración geopolítica sobre Ceuta, Marruecos y Canarias",
+            "speaker": "Pedro Baños (apertura del programa, audio no cotejado)",
+            "statement": "Pedro Baños presenta la situación de Ceuta como una amenaza estratégica y sostiene que, a su juicio, existe una operación dirigida contra los territorios españoles del norte de África, con posibles consecuencias para Canarias. Se trata de una interpretación y un pronóstico del presentador. La transcripción del programa no demuestra que exista una operación militar de ese tipo ni acredita los fines que él atribuye a terceros.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "es una operación militar estratégica lanzada contra España"
+          }
         ]
       }
     },
@@ -30,7 +39,16 @@ const extra={
       "portrait": null,
       "sources": {
         "16": [
-          "Participa en la conversación y plantea interpretaciones sobre intereses económicos, poder político y cómo se relacionan con decisiones internacionales."
+          {
+            "topic": "Interpretación sobre Marruecos, la OTAN y AFRICOM",
+            "speaker": "Pedro Baños y Alberto Iturralde (turno exacto sin diarización)",
+            "statement": "En el diálogo se comenta una noticia sobre Marruecos, cooperación militar con la OTAN y AFRICOM, y se argumenta que el estrecho de Gibraltar tiene importancia estratégica para varias potencias. Uno de los interlocutores presenta a Marruecos como centro de AFRICOM; esta afirmación se registra como parte del debate, sin considerarla verificada. La transcripción no identifica de manera fiable el turno exacto de cada voz.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "pero fíjate y ahora en cambio Marruecos ya no de facto de hecho ya es el centro del Africón"
+          }
         ]
       }
     },
@@ -42,7 +60,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "El presentador explica al inicio que Rubén Gisbert no participa en el episodio por una circunstancia personal, por lo que no deben atribuirsele las tesis expresadas por quienes sí intervienen."
+          {
+            "topic": "Ausencia de Rubén Gisbert durante el episodio",
+            "speaker": "Pedro Baños (presentación inicial, audio no cotejado)",
+            "statement": "Pedro Baños informa al comenzar que Rubén Gisbert no participa en el episodio porque ha fallecido su perra y que él mismo le autorizó a comunicarlo. El programa continúa con Alberto Iturralde. La transcripción no recoge a Gisbert interviniendo en este debate: no participa en la conversación y no se le deben atribuir las tesis expresadas por los interlocutores.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "me ha pedido además Rubén por supuesto nunca lo hubiera hecho sin su autorización"
+          }
         ]
       }
     },
@@ -66,7 +93,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "La fuente la utiliza como ejemplo al opinar que los discursos políticos pueden cambiar cuando una persona se aproxima a ejercer el poder."
+          {
+            "topic": "Hipótesis sobre el cambio de postura de dirigentes al gobernar",
+            "speaker": "Interlocutor sin identificación de voz cotejada",
+            "statement": "Un interlocutor especula sobre cómo podría cambiar el comportamiento político de Marine Le Pen si alcanzara el gobierno, y en el mismo razonamiento compara su caso con el de Alice Weidel. El tramo incluye conjeturas sobre presiones a dirigentes y material comprometedor. Es una opinión expresada en el episodio; la transcripción no aporta pruebas de tales presiones ni permite atribuirlas a hechos acreditados.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "si algún día llega Marine Le Pen"
+          }
         ]
       }
     },
