@@ -246,8 +246,8 @@ body.graph-expanded{overflow:hidden}
 <script src="./podcast-wild-253-villarejo.js?v=20261109-source06-full-transcript"></script>
 <script src="./podcast-wild-312-chicote.js?v=20261109-source07-1"></script>
 <script src="./podcast-vaquero-67-villarejo.js?v=20261109-source08-1"></script>
-<script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261110-search-centre-3"></script>
-<script src="./fuente-21-orden-mundial-editorial.js?v=20261110-search-centre-3"></script>
+<script src="./fuente-18-epstein-lorenzo-editorial.js?v=20261110-peter-thiel-2"></script>
+<script src="./fuente-21-orden-mundial-editorial.js?v=20261110-peter-thiel-2"></script>
 <script src="./fuente-09-villarejo-revision.js?v=20261110-search-centre-3"></script>
 <script src="./fuente-10-revision-inicial.js?v=20261110-search-centre-3"></script>
 <script src="./fuente-11-revision-inicial.js?v=20261110-search-centre-3"></script>
@@ -439,7 +439,7 @@ function load(){
  if(window.IDEA_TELARANA_SOURCE08_EDITORIAL){
   mergeNewEpisode(window.IDEA_TELARANA_SOURCE08_EDITORIAL);
  }
- // Fuentes 18 y 21: índice editorial verificado; NO hay transcripción íntegra todavía.
+ // Fuentes 18 y 21: transcripción automática íntegra conservada en Drive; los pasajes se atribuyen y se distinguen de hechos comprobados.
  if(window.IDEA_TELARANA_SOURCE18_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE18_EDITORIAL);
  if(window.IDEA_TELARANA_SOURCE21_EDITORIAL)mergeNewEpisode(window.IDEA_TELARANA_SOURCE21_EDITORIAL);
  if(window.IDEA_TELARANA_SOURCE09_REVIEW)mergeNewEpisode(window.IDEA_TELARANA_SOURCE09_REVIEW);
@@ -769,6 +769,7 @@ function showPodcastNotes(panel,notes,heading){
  panel.append(section)
 }
 function relationStatusLabel(edge){
+ if(["mencion_transcripcion_no_prueba_de_hechos","mencion_documentada_sin_contraste_individual","mencion_sin_corroboracion_externa"].includes(edge.claimStatus))return "Mención en la fuente";
  return edge.confidence==="documentado"?"Documentada":edge.confidence==="indicio"?"Indicio":"Hipótesis";
 }
 /* Hitos fechados contrastados publicados por el proyecto hermano.
