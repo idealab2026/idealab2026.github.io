@@ -229,8 +229,8 @@ function make(options){
    if(photo){
     let entry=cached.get(photo);if(!entry){const img=new Image();entry={img,state:"loading"};cached.set(photo,entry);img.onload=()=>{entry.state="ok";redraw()};img.onerror=()=>{entry.state="error";redraw()};img.src=photo}
     if(entry.state==="ok"){const img=entry.img;ctx.save();ctx.beginPath();ctx.arc(p.x,p.y,rad-1,0,2*PI);ctx.clip();const r=Math.max(2*rad/img.width,2*rad/img.height);ctx.drawImage(img,p.x-img.width*r/2,p.y-img.height*r/2,img.width*r,img.height*r);ctx.restore()}
-    else{ctx.font="700 "+clip(rad*.82,8,38)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.28)}
-   }else{ctx.font="700 "+clip(rad*.82,8,38)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(n.name.charAt(0),p.x,p.y+rad*.28)}
+    else{ctx.font="700 "+clip(rad*.82,8,38)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(options.getIcon?.(n)||"●",p.x,p.y+rad*.28)}
+   }else{ctx.font="700 "+clip(rad*.82,8,38)+"px system-ui";ctx.textAlign="center";ctx.fillStyle="#d9e3ed";ctx.fillText(options.getIcon?.(n)||"●",p.x,p.y+rad*.28)}
    }
    if(selected||isHover||isEndpoint){
     const name=n.name.length>25?n.name.slice(0,24)+"…":n.name;
