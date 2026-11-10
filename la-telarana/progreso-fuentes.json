@@ -2973,5 +2973,95 @@
       "en_revision": "Tratamiento parcial sin cierre",
       "imagen_en_punto_telarana": "Configuración de foto en el nodo de las personas del episodio; imagenRuntimeVerified confirma si se comprobó en navegador"
     }
+  },
+  "editorialQualityAudit": {
+    "date": "2026-11-10",
+    "scope": "Fuentes 9–24 con expedientes de personas (15 fuentes, sin 15 por ser PDF institucional)",
+    "status": "triage_automatica_publicada_con_revisiones_manual_y_audio_pendientes",
+    "profilesUnique": 201,
+    "sourceCommentaries": 330,
+    "structuredWithExplicitSpeakerTopicAndStatus": 1,
+    "legacyEditorialSummaries": 329,
+    "possibleVagueNarrativesRequiringManualReview": 114,
+    "controversyTermMatchesRequiringProvenanceReview": 32,
+    "explicitIndependentlyVerifiedRelations": 2,
+    "graphLinksTotal": 813,
+    "graphSourceMentionLinks": 441,
+    "graphOtherRelationshipLinks": 372,
+    "onlyEvidenceClassificationNotIndependentTruth": true,
+    "sourceCounts": {
+      "9": {
+        "claims": 32,
+        "candidates": 12
+      },
+      "10": {
+        "claims": 15,
+        "candidates": 2
+      },
+      "11": {
+        "claims": 28,
+        "candidates": 10
+      },
+      "12": {
+        "claims": 6,
+        "candidates": 0
+      },
+      "13": {
+        "claims": 20,
+        "candidates": 7
+      },
+      "14": {
+        "claims": 16,
+        "candidates": 7
+      },
+      "16": {
+        "claims": 22,
+        "candidates": 7
+      },
+      "17": {
+        "claims": 15,
+        "candidates": 7
+      },
+      "18": {
+        "claims": 36,
+        "candidates": 10
+      },
+      "19": {
+        "claims": 23,
+        "candidates": 6
+      },
+      "20": {
+        "claims": 16,
+        "candidates": 7
+      },
+      "21": {
+        "claims": 35,
+        "candidates": 9
+      },
+      "22": {
+        "claims": 13,
+        "candidates": 6
+      },
+      "23": {
+        "claims": 30,
+        "candidates": 13
+      },
+      "24": {
+        "claims": 23,
+        "candidates": 11
+      }
+    },
+    "exclusions": [
+      "No incluye todas las entidades base de OneNote ni una certificación histórica del grafo",
+      "Candidatos vagos detectados por heurística; requieren lectura y cotejo, no son errores certificados"
+    ],
+    "policy": [
+      "Todo resumen de fuente no cotejado con audio se presenta como síntesis editorial no literal",
+      "Nuevas fuentes deben incluir tema, declarante, afirmación concreta y clasificación de verificación",
+      "Una mención en entrevista no prueba una relación sustantiva entre terceros",
+      "Las denuncias se atribuyen a la fuente y no se elevan a hechos sin evidencias independientes",
+      "Conservar el texto original y no inventar minutajes",
+      "Revisar 114 candidatos uno por uno antes de declarar cerrada la auditoría"
+    ]
   }
 }
