@@ -45,6 +45,8 @@ jobs:
         run: node scripts/test_telarana_source_progress.mjs
       - name: Validar fuentes 18 y 21, Lorenzo y presencia en Pages
         run: node scripts/test_telarana_recent_sources.mjs
+      - name: Comprobar Peter Thiel y sus dos entrevistas en ficha única
+        run: node scripts/test_telarana_peter_thiel.mjs
       - name: Validar transcripción y evidencias de la fuente 02
         run: node scripts/test_telarana_source02_transcript.mjs
       - name: Validar avance de fuente 03 y fotografías de sus protagonistas
