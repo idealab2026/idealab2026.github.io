@@ -498,7 +498,7 @@ function showLoadAudit(){
  contents.append(p);
  var totalsBySource=new Map();
  loadAudit.forEach(function(r){
-  var m=r.label.match(/^Fuente (\\d+)$/)||r.label.match(/^Perfiles de la fuente (\\d+)$/);
+  var m=r.label.match(/^Fuente (\d+)$/)||r.label.match(/^Perfiles de la fuente (\d+)$/);
   if(!m||!r.available)return;
   var key=String(Number(m[1])),rec=totalsBySource.get(key)||{label:key,nodes:0,edges:0,parts:0};
   rec.nodes+=r.added;rec.edges+=r.edges;rec.parts++;totalsBySource.set(key,rec);
