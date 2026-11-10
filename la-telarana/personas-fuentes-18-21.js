@@ -419,7 +419,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Whitney Webb es citada por sus libros sobre el caso Epstein y por su tesis de intersección entre servicios de inteligencia, crimen organizado y mecanismos de chantaje."
+          {
+            "topic": "Referencia bibliográfica al análisis de Epstein",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez cita libros de Whitney Webb sobre mecanismos de chantaje, redes empresariales y servicios de inteligencia como marco interpretativo del caso Epstein. Citar la tesis de Webb no significa que todas sus imputaciones estén demostradas ni que los datos del programa permitan identificar culpabilidades individuales.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "como explica Whney Web en sus libros"
+          }
         ]
       }
     },
@@ -515,7 +524,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "El general McKenzie es mencionado como autor de un análisis sobre capacidades militares estadounidenses y sus límites de defensa ante ataques contra bases y aliados de Oriente Medio."
+          {
+            "topic": "Referencia a un análisis sobre defensa estadounidense en Oriente Medio",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a un antiguo jefe de CENTCOM, transcrito como «general McKeny», al hablar de las capacidades de defensa de bases y aliados estadounidenses frente a una eventual respuesta iraní. El texto original de ese supuesto informe no está incorporado a la entrevista y la identificación necesita comprobación audiovisual.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el general McKeny"
+          }
         ]
       }
     },
@@ -527,7 +545,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "La familia Clinton es citada en la exposición de los interlocutores sobre la proximidad de Epstein a cargos políticos y redes de influencia."
+          {
+            "topic": "Acusación genérica relativa a contactos de Epstein",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez incluye a los Clinton en una lista de figuras políticas próximas, según su interpretación, a Epstein, y utiliza una expresión de dependencia económica sin aportar justificantes de pagos. La relación concreta o una conducta delictiva individual no quedan demostradas por la enumeración.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "como los Clinton prácticamente en nómina"
+          }
         ],
         "21": [
           {
@@ -561,7 +588,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "La familia Clinton es mencionada por los entrevistados al describir el entorno de contactos políticos que atribuyen a Epstein."
+          {
+            "topic": "Referencia imprecisa a la familia Clinton en el relato Epstein",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "La entrevista habla de «los Clinton» al describir contactos políticos atribuidos a Epstein y sugiere dependencia económica sin identificar un expediente individual referido a Hillary Clinton. La mención colectiva no permite atribuirle pagos, delitos ni una relación concreta sin documentación independiente.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "como los Clinton prácticamente en nómina"
+          }
         ]
       }
     },
@@ -573,7 +609,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Barack Obama es mencionado en una conversación sobre unos presuntos mensajes atribuidos a Peter Thiel y Epstein en torno a la política estadounidense en Oriente Medio."
+          {
+            "topic": "Interpretación de un correo atribuido a terceros sobre Oriente Medio",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez comenta un supuesto mensaje de 2014 relativo a la política de Obama en Irak, Irán y otros países de Oriente Medio. El pasaje presenta una hipótesis sobre las intenciones del entonces presidente, no prueba que Obama desease los conflictos mencionados ni que participara en su planificación.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "imagina si esto es lo que Obama realmente quiere"
+          }
         ],
         "21": [
           {
@@ -597,7 +642,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Joe Biden es citado para comparar la capacidad de la Casa Blanca y las posibles respuestas estadounidenses a crisis exteriores."
+          {
+            "topic": "Contraste hipotético con una administración demócrata",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez plantea que algunas críticas políticas a Israel habrían sido distintas si Biden continuase en la Casa Blanca. Se trata de un contrafactual sobre alineamientos partidistas y política exterior, no de una decisión concreta atribuida al expresidente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "un Joe Biden en la Casa Blanca"
+          }
         ],
         "21": [
           {
@@ -621,7 +675,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Xi Jinping aparece en el análisis de la rivalidad entre China y Estados Unidos y de la postura china ante negociaciones con gobiernos europeos."
+          {
+            "topic": "Mención a negociación comercial prevista entre China y Estados Unidos",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que la dependencia económica mutua limita la posibilidad de una ruptura rápida entre China y Estados Unidos y cita una posible reunión de Trump con un dirigente transcrito como «Jin Pin». El contexto apunta a Xi Jinping; el nombre y la agenda concreta no están cotejados con documentación diplomática.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "una cumbre con Jin Pin en abril"
+          }
         ]
       }
     },
@@ -633,7 +696,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Vladímir Putin es mencionado al analizar las negociaciones sobre Ucrania, Oriente Medio y las tensiones con los dirigentes europeos."
+          {
+            "topic": "Comparación con dirigentes ausentes de las revelaciones citadas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez destaca que ciertos dirigentes, entre ellos Putin, no aparecen en los materiales del caso Epstein que comenta, y critica intentos de asociar automáticamente el asunto con Rusia. La ausencia en el conjunto examinado no demuestra la inexistencia de cualquier contacto en otros archivos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "ni Putin ni Sinin Pin"
+          }
         ],
         "21": [
           {
@@ -657,7 +729,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Volodímir Zelenski es mencionado en el análisis de las negociaciones entre Ucrania, Rusia y Estados Unidos y del papel atribuido a los grupos políticos ucranianos."
+          {
+            "topic": "Referencia a la política de comunicación española sobre Ucrania",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez menciona a Zelenski al sostener que el Gobierno español cambia el énfasis de su discurso internacional según el contexto político interno. La mención no acredita acuerdos ocultos ni una relación personal del presidente ucraniano con el gabinete español.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "mañana aplaudiendo a Zelenski"
+          }
         ],
         "21": [
           {
@@ -702,7 +783,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Alberto Núñez Feijóo es citado al hablar de la posición de los principales partidos españoles ante contratos tecnológicos y centros de datos."
+          {
+            "topic": "Referencias a centros de datos y demanda eléctrica",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que el Gobierno y la oposición no han resuelto las limitaciones eléctricas que afectan al desarrollo de centros de datos en España, y menciona a Feijóo como dirigente político al que, en su opinión, tampoco interesa el control público de esa infraestructura. Es su evaluación, no un hecho demostrado de complicidad empresarial.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "igual que al propio Feijó"
+          }
         ]
       }
     },
@@ -714,7 +804,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Javier Milei aparece en las críticas del entrevistado a la relación entre su gobierno, ejecutivos procedentes de grandes entidades financieras y las intervenciones en Davos."
+          {
+            "topic": "Crítica sobre la composición profesional de su Gobierno",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez critica el discurso de Milei ante los asistentes a Davos y sostiene que varios miembros de su Gobierno procederían de JPMorgan, lo que considera contradictorio con sus críticas a las élites económicas. La cifra y el grado de influencia bancaria no se acreditan mediante documentos en la entrevista.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "quién te ha puesto a ti en el gobierno de Argentina"
+          }
         ]
       }
     },
@@ -726,7 +825,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Emmanuel Macron es mencionado en el debate sobre las propuestas de identificación de usuarios de redes sociales y las prioridades políticas francesas."
+          {
+            "topic": "Regulación de X y discursos sobre identidad digital",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez comenta las tensiones de Macron con X y las compara con iniciativas de Sánchez relativas al anonimato en redes sociales. Atribuye objetivos políticos a ambos dirigentes, pero la entrevista no demuestra coordinación entre ellos ni una operación contra la plataforma.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "que Macron que Macron está"
+          }
         ],
         "21": [
           {
@@ -750,7 +858,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "J. D. Vance es citado en la descripción del entorno político de Donald Trump y de la conexión entre el Partido Republicano y empresarios tecnológicos."
+          {
+            "topic": "Referencia fonética al vicepresidente y tecnócratas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez identifica al vicepresidente estadounidense mediante la transcripción «JD Bos» en una explicación sobre empresarios tecnológicos cercanos al Partido Republicano. La interpretación de su cercanía ideológica y de sus intereses empresariales es una valoración del invitado; el nombre requiere cotejo de audio.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "vicepresidente JD Bos"
+          }
         ]
       }
     },
@@ -762,7 +879,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       },
       "sources": {
         "18": [
-          "Ursula von der Leyen es citada en la discusión de propuestas europeas relacionadas con el control de plataformas digitales."
+          {
+            "topic": "Atribución de una objeción a propuestas sobre plataformas",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "Ramírez sostiene que von der Leyen habría objetado aspectos de las propuestas de Sánchez para perseguir judicialmente a empresas tecnológicas. La conversación dramatiza una supuesta reacción verbal sin aportar comunicación oficial o cita original; no debe presentarse como declaración literal de la presidenta de la Comisión.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Ursula Vleend le tiene que decir"
+          }
         ],
         "21": [
           {
@@ -1179,7 +1305,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       "portrait": null,
       "sources": {
         "18": [
-          "José María de Pablo es citado al presentar bibliografía y autores que han estudiado judicialmente los atentados del 11 de marzo de 2004."
+          {
+            "topic": "Mención bibliográfica sobre el 11-M",
+            "speaker": "Presentador (turno pendiente de diarización)",
+            "statement": "El presentador menciona a José María de Pablo entre quienes han publicado o investigado sobre los atentados del 11 de marzo de 2004, al recomendar un libro de Lorenzo Ramírez. No le atribuye una relación personal con los hechos investigados ni una acusación específica.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "a José María de Pablo o a López Bru"
+          }
         ]
       }
     },
@@ -1188,7 +1323,16 @@ window.IDEA_TELARANA_PERSON_SOURCE_REPORTS = {
       "portrait": null,
       "sources": {
         "18": [
-          "López Brú es mencionado junto con otros autores que han investigado o escrito sobre los atentados del 11-M, al presentar el libro de Lorenzo Ramírez."
+          {
+            "topic": "Identificación parcial en una enumeración bibliográfica",
+            "speaker": "Presentador (turno pendiente de diarización)",
+            "statement": "El presentador menciona a una persona transcrita como «López Bru» al enumerar autores o investigadores del 11-M. La identificación como Ignacio López Brú no se ha confirmado mediante audio ni referencia bibliográfica completa; queda provisional.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "o a López Bru lo tiene también"
+          }
         ]
       }
     },
