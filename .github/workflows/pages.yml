@@ -55,6 +55,8 @@ jobs:
         run: node scripts/test_telarana_source_profiles_11_12.mjs
       - name: Verificar perfiles atribuidos y eventos históricos de fuente 13
         run: node scripts/test_telarana_source13_profiles.mjs
+      - name: Verificar perfiles y contraste numérico de fuente 14
+        run: node scripts/test_telarana_source14_profiles.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
         run: node scripts/test_telarana_load_audit.mjs
       - name: Validar transcripción y evidencias de la fuente 02
@@ -123,6 +125,7 @@ jobs:
           cp la-telarana/personas-fuentes-09-10.js dist/la-telarana/personas-fuentes-09-10.js
           cp la-telarana/personas-fuentes-11-12.js dist/la-telarana/personas-fuentes-11-12.js
           cp la-telarana/personas-fuentes-13.js dist/la-telarana/personas-fuentes-13.js
+          cp la-telarana/personas-fuentes-14.js dist/la-telarana/personas-fuentes-14.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
