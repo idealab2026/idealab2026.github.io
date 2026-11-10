@@ -614,24 +614,35 @@ def poll():
     # from an interactive Terminal using notebooklm_export_desktop.py.
     # Sync any GitHub confirmation that was temporarily lost to network/auth.
     retry_github_comments(state)
-    running = sum(j.get("phase") in ("submitted", "launching", "uncertain") for j in state.values())
-    if running:
-        print("Solicitudes activas o inciertas:", running, "(no se enviarán otras automáticamente)")
+    # A submitted or launching request can still be generating remotely:
+    # preserve the single-active-request rule across all notebooks.
+    globally_active = sum(j.get("phase") in ("submitted", "launching")
+                          for j in state.values())
+    if globally_active:
+        print("Generaciones enviadas o en lanzamiento:", globally_active,
+              "(no se enviarán otras automáticamente)")
         return
-    # An explicit failed-job retry takes priority, but never runs concurrently.
+    # A prior CLI timeout can leave an *uncertain* request even when no
+    # generation was confirmed. Quarantine only its own notebook, just as
+    # deferred requests do. Never assign late artifacts to another request
+    # in that notebook. The other independent notebooks may safely continue.
+    quarantined = [j for j in state.values()
+                   if j.get("phase") in ("uncertain", "deferred")]
+    if any(not j.get("notebook") for j in quarantined):
+        print("Solicitud incierta sin cuaderno identificado: "
+              "se detiene la cola para evitar duplicados.")
+        return
+    blocked_notebooks = {j["notebook"] for j in quarantined}
+    # An explicitly queued failed-job retry is validated against the same
+    # notebook isolation rules before any attempt is sent.
     if launch_queued_retry(state, config):
         return
-    # A deferred request may still complete remotely after a timeout. Never
-    # start another request in the same notebook: its new artifact could be
-    # mistaken for the later request's result. Other notebooks are independent.
-    deferred_notebooks = {
-        j.get("notebook") for j in state.values() if j.get("phase") == "deferred"
-    }
     for number, req in next_requests(state, config):
         mapping = select_mapping(config, req)
-        if mapping and mapping[0] in deferred_notebooks:
-            print("Solicitud #", number, "aplazada: existe un trabajo incierto",
-                  "en ese cuaderno. Continuando con otros cuadernos.")
+        if mapping and mapping[0] in blocked_notebooks:
+            print("Solicitud #", number,
+                  "omitida temporalmente: cuaderno con trabajo incierto "
+                  "o aplazado. Continuando con otros cuadernos.")
             continue
         if request_new(number, req, state, config):
             break

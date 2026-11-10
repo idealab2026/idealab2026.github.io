@@ -134,6 +134,58 @@ class BridgeTests(unittest.TestCase):
             bridge.poll()
             dispatch.assert_called_once_with("63", pending[1][1], work, {})
 
+    def test_uncertain_quarantines_only_its_notebook(self):
+        state = {"115": {"phase": "uncertain", "notebook": "notebook-sapiens"}}
+        pending = [("116", request(book=BOOK, vid=VIDEO)),
+                   ("200", request(book=BOOK, vid=VIDEO))]
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "retry_github_comments"), \
+             patch.object(bridge, "next_requests", return_value=pending), \
+             patch.object(bridge, "select_mapping", side_effect=[
+                 ("notebook-sapiens", ["source-a"]),
+                 ("notebook-independent", ["source-b"])]), \
+             patch.object(bridge, "launch_queued_retry", return_value=False), \
+             patch.object(bridge, "request_new", return_value=True) as dispatch:
+            bridge.poll()
+            dispatch.assert_called_once_with("200", pending[1][1], state, {})
+
+    def test_submitted_still_blocks_all_concurrent_generation(self):
+        state = {"106": {"phase": "submitted", "notebook": "notebook-active"}}
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "check_submitted"), \
+             patch.object(bridge, "retry_github_comments"), \
+             patch.object(bridge, "launch_queued_retry") as retry, \
+             patch.object(bridge, "next_requests") as pending:
+            bridge.poll()
+            retry.assert_not_called()
+            pending.assert_not_called()
+
+    def test_launching_still_blocks_all_concurrent_generation(self):
+        state = {"106": {"phase": "launching", "notebook": "notebook-active"}}
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "retry_github_comments"), \
+             patch.object(bridge, "next_requests") as pending:
+            bridge.poll()
+            pending.assert_not_called()
+
+    def test_uncertain_without_notebook_fails_closed(self):
+        state = {"115": {"phase": "uncertain"}}
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "retry_github_comments"), \
+             patch.object(bridge, "launch_queued_retry") as retry, \
+             patch.object(bridge, "next_requests") as pending:
+            bridge.poll()
+            retry.assert_not_called()
+            pending.assert_not_called()
+
     def test_cli_uses_local_uv_bin_when_not_in_path(self):
         from unittest.mock import MagicMock
         local_nlm = bridge.HOME / ".local/bin/nlm"
