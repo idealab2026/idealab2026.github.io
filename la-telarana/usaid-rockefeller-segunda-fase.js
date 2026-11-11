@@ -1,0 +1,247 @@
+/* Cadena histórica complementaria: evidencia oficial de 1947–1962 y empresas privadas. */
+window.IDEA_TELARANA_USAID_ROCKEFELLER_V2 = {
+  "metadata": {
+    "id": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+    "title": "Rockefeller–USAID: sucesión administrativa federal, IBEC, petrolera y aportaciones privadas",
+    "publishedAt": "2026-11-11",
+    "reviewStage": "archivos_nacionales_FRUS_RAC_RBF",
+    "methodologicalNote": "Se separan 1) cadena gubernamental IIAA→FOA→ICA→USAID; 2) AIA filantrópica, IBEC mercantil y RBF financiador privado. Una relación societaria o una subvención a AIA no supone propiedad o financiación de USAID."
+  },
+  "nodes": [
+    {
+      "id": "usaid-iiaa",
+      "name": "Institute of Inter-American Affairs (IIAA)",
+      "kind": "Institución",
+      "subtitle": "Referencia a nodo preexistente; mantiene identidad en el grafo",
+      "note": "Solo referencia técnica para cargar relaciones, sin sustituir la ficha documental original.",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-ica",
+      "name": "International Cooperation Administration (ICA)",
+      "kind": "Institución",
+      "subtitle": "Referencia a nodo preexistente; mantiene identidad en el grafo",
+      "note": "Solo referencia técnica para cargar relaciones, sin sustituir la ficha documental original.",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-nelson-rockefeller",
+      "name": "Nelson Rockefeller",
+      "kind": "Persona",
+      "subtitle": "Referencia a nodo preexistente; mantiene identidad en el grafo",
+      "note": "Solo referencia técnica para cargar relaciones, sin sustituir la ficha documental original.",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-aia-rockefeller",
+      "name": "American International Association for Economic and Social Development (AIA)",
+      "kind": "Organización",
+      "subtitle": "Referencia a nodo preexistente; mantiene identidad en el grafo",
+      "note": "Solo referencia técnica para cargar relaciones, sin sustituir la ficha documental original.",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rbf",
+      "name": "Rockefeller Brothers Fund",
+      "kind": "Organización",
+      "subtitle": "Referencia a nodo preexistente; mantiene identidad en el grafo",
+      "note": "Solo referencia técnica para cargar relaciones, sin sustituir la ficha documental original.",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "f21-usaid",
+      "name": "USAID",
+      "kind": "Institución",
+      "subtitle": "Referencia a nodo preexistente; mantiene identidad en el grafo",
+      "note": "Solo referencia técnica para cargar relaciones, sin sustituir la ficha documental original.",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-foa",
+      "name": "Foreign Operations Administration (FOA)",
+      "kind": "Institución",
+      "subtitle": "1953–1955 · administración federal estadounidense de cooperación exterior",
+      "note": "La FOA concentró programas de asistencia económica y técnica a partir de agosto de 1953. Recibió funciones del IIAA por el Plan de Reorganización n.º 7. Fue abolida en 1955; sus funciones civiles pasaron al Departamento de Estado y la ICA. No era una fundación privada.",
+      "source": "https://www.archives.gov/research/foreign-policy/related-records/rg-469",
+      "topic3d": "global",
+      "photo": "",
+      "x": 8450,
+      "y": 3750,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-ibec",
+      "name": "International Basic Economy Corporation (IBEC)",
+      "kind": "Organización",
+      "subtitle": "Empresa privada con ánimo de lucro creada por Nelson Rockefeller en 1947",
+      "note": "Rockefeller creó IBEC en 1947 para desarrollar negocios e inversiones en América Latina, inicialmente en Venezuela y Brasil. A diferencia de AIA, IBEC era una empresa mercantil. Su existencia no acredita financiación ni control de USAID.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "topic3d": "global",
+      "photo": "",
+      "x": 8630,
+      "y": 3910,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-creole",
+      "name": "Creole Petroleum Company",
+      "kind": "Organización",
+      "subtitle": "Empresa petrolera venezolana filial de Standard Oil of New Jersey",
+      "note": "Nelson Rockefeller entró en el consejo de Creole Petroleum Company en 1935. El Archivo Rockefeller la identifica como subsidiaria venezolana de Standard Oil of New Jersey. No se ha acreditado ninguna donación o contrato con USAID por ese solo cargo.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "topic3d": "global",
+      "photo": "",
+      "x": 8810,
+      "y": 3750,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-standard-oil-nj",
+      "name": "Standard Oil of New Jersey",
+      "kind": "Organización",
+      "subtitle": "Sociedad petrolera matriz de Creole Petroleum Company",
+      "note": "Empresa propietaria de la filial venezolana Creole Petroleum según la biografía del Archivo Rockefeller. El vínculo empresarial con Rockefeller se documenta separadamente del ámbito público de ayuda exterior; no equivale a financiación directa de USAID.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "topic3d": "global",
+      "photo": "",
+      "x": 8990,
+      "y": 3910,
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-iica-agricultura",
+      "name": "Instituto Interamericano de Ciencias Agrícolas (IICA)",
+      "kind": "Institución",
+      "subtitle": "Organismo regional de cooperación agrícola de la OEA",
+      "note": "En el informe anual 1962 de Rockefeller Brothers Fund figura como socio ejecutor de proyectos agrícolas y de formación de AIA, con programas de juventud rural, desarrollo y comunicaciones en América Latina. No se presupone vínculo financiero con USAID por esta cooperación.",
+      "source": "https://www.rbf.org/sites/default/files/2021-03/1962-AR-web-optimized.pdf",
+      "topic3d": "global",
+      "photo": "",
+      "x": 9170,
+      "y": 3750,
+      "podcastNotes": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "usaid-rk-v2-iiaa-foa",
+      "a": "usaid-iiaa",
+      "b": "usaid-foa",
+      "type": "Transferencia administrativa de funciones · 01/08/1953",
+      "note": "El Plan de Reorganización n.º 7 de 1953 trasladó el IIAA y sus funciones a la Foreign Operations Administration. Según los Archivos Nacionales, parte de sus funciones y archivos pasó a esa agencia, sin que esto constituya una adquisición privada de su control.",
+      "source": "https://uscode.house.gov/us/usc/119-124/t22/s281/",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rk-v2-foa-ica",
+      "a": "usaid-foa",
+      "b": "usaid-ica",
+      "type": "Transferencia de programas civiles · 30/06/1955",
+      "note": "La orden ejecutiva 10610, firmada el 9 de mayo de 1955, suprimió la FOA con efectos del 30 de junio de 1955 y trasladó funciones civiles al Departamento de Estado para su administración por la ICA. Parte de las funciones militares pasó al Departamento de Defensa.",
+      "source": "https://www.archives.gov/research/foreign-policy/related-records/rg-469",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rk-v2-iiaa-ica",
+      "a": "usaid-iiaa",
+      "b": "usaid-ica",
+      "type": "Adscrito a la ICA · 30/06/1955",
+      "note": "El volumen FRUS 1955–1957, documento 65, confirma que el IIAA había sido una corporación enteramente propiedad del Gobierno estadounidense y que el 30 de junio de 1955 quedó adscrito a la ICA mediante el Departamento de Estado. Esta continuidad institucional es más precisa que una mera similitud temática.",
+      "source": "https://history.state.gov/historicaldocuments/frus1955-57v06/d65",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rk-v2-rockefeller-ibec",
+      "a": "usaid-nelson-rockefeller",
+      "b": "usaid-ibec",
+      "type": "Creación y presidencia de empresa privada · desde 1947",
+      "note": "Nelson Rockefeller organizó IBEC en 1947 y fue su presidente entre 1947–1953 y 1956–1958. Según el Archivo Rockefeller, promovía empresas mercantiles de desarrollo económico en América Latina. Es distinto de AIA, de carácter filantrópico, y de USAID, de naturaleza pública.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rk-v2-rockefeller-creole",
+      "a": "usaid-nelson-rockefeller",
+      "b": "usaid-creole",
+      "type": "Consejero de empresa petrolera · desde 1935",
+      "note": "La biografía institucional del Archivo Rockefeller documenta que Nelson Rockefeller se convirtió en consejero de Creole Petroleum Company en 1935. Esa experiencia contribuyó a su interés posterior por América Latina; no acredita financiación de IIAA o USAID por esta empresa.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rk-v2-creole-standard",
+      "a": "usaid-creole",
+      "b": "usaid-standard-oil-nj",
+      "type": "Relación societaria · filial venezolana",
+      "note": "Creole Petroleum Company fue la filial venezolana de Standard Oil of New Jersey según el Archivo Rockefeller. Es un vínculo empresarial explícito, no una subvención federal ni una relación orgánica con USAID.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rk-v2-rockefeller-rbf",
+      "a": "usaid-nelson-rockefeller",
+      "b": "usaid-rbf",
+      "type": "Cofundación filantrópica familiar · 1940",
+      "note": "Nelson Rockefeller y sus cuatro hermanos organizaron Rockefeller Brothers Fund en 1940. La fundación realizó posteriormente subvenciones a AIA; su constitución familiar no acredita propiedad de la agencia USAID creada dos décadas después.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    },
+    {
+      "id": "usaid-rk-v2-aia-iica",
+      "a": "usaid-aia-rockefeller",
+      "b": "usaid-iica-agricultura",
+      "type": "Cooperación agrícola regional · FY1962",
+      "note": "El informe anual 1962 del Rockefeller Brothers Fund describe tres programas de capacitación y asistencia técnica operados conjuntamente por AIA y el Inter-American Institute of Agricultural Sciences de la OEA: comunicaciones, juventud rural y desarrollo rural. Es una cooperación documentada AIA–IICA, no un contrato USAID–IICA.",
+      "source": "https://www.rbf.org/sites/default/files/2021-03/1962-AR-web-optimized.pdf",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-usaid-rockefeller-arquitectura-1953-1962",
+      "podcastNotes": []
+    }
+  ]
+};
