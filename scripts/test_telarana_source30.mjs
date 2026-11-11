@@ -40,6 +40,8 @@ assert(facts.some(e=>e.id==="f30-soros-osf"&&e.a==="on-george-soros"&&e.b==="on-
 assert(!facts.some(e=>(e.a==="on-george-soros"||e.b==="on-george-soros")&&(e.a==="f30-russia"||e.b==="f30-russia"||e.a==="f30-ukraine"||e.b==="f30-ukraine")),"No inventar Soros-Rusia/Ucrania");
 const html=read("la-telarana/index.html"),wf=read(".github/workflows/pages.yml");
 assert(html.includes('src="./fuente-30-revision-inicial.js?v='),"Fuente 30 no cargada en HTML");
+assert(html.includes('Contexto posterior a la entrevista: no atribuir al invitado'),"La ficha debe señalar hechos posteriores");
+assert(html.includes('posterior a la entrevista'),"La línea histórica debe mostrar posterioridad de los hitos");
 assert(wf.includes("cp la-telarana/fuente-30-revision-inicial.js dist/la-telarana/fuente-30-revision-inicial.js"),"Fuente 30 no copiada a Pages");
 const m=/var modules=(\[[^\n]+\]);/.exec(html);assert(m,"Registro modular ausente");
 assert(JSON.parse(m[1]).some(x=>x.label==="Fuente 30"&&x.key==="IDEA_TELARANA_F30_REVIEW"));
