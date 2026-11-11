@@ -63,7 +63,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La conversación explica que la unidad de contraterrorismo de la CIA seguía a Bin Laden y pregunta qué alertas conocían los organismos estadounidenses antes de los ataques."
+          {
+            "topic": "Seguimiento de Al Qaeda antes del 11-S",
+            "speaker": "Presentador de F14 y Mark Rossini (segmentos sin audio cotejado)",
+            "statement": "El documental presenta a Mark Rossini como antiguo agente del FBI destinado a una unidad de la CIA que seguía a Osama bin Laden antes de los atentados. Rossini describe alertas y problemas de intercambio de información entre organismos. Es una reconstrucción testimonial de la actividad de inteligencia previa al 11-S; no prueba por sí sola que personas concretas conocieran los planes de los terroristas.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "a seguir precisamente a Osama bin Laden y Alcaeda antes del 11S me lla"
+          }
         ]
       }
     },
@@ -138,7 +147,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La fuente lo incluye nominalmente entre los autores y asesores del enfoque geoestratégico que, según su análisis, influyó en la Administración Bush."
+          {
+            "topic": "Enumeración de dirigentes y asesores neoconservadores",
+            "speaker": "Interlocutor de F14 (diarización pendiente)",
+            "statement": "Un participante enumera a Richard Perle, cuyo apellido aparece como «Pell» en el reconocimiento automático, junto a Cheney, Wolfowitz y Bolton para describir el entorno de política exterior de la Administración Bush. A partir de la lista ofrece una interpretación del pensamiento neoconservador. La enumeración no demuestra intervención personal de Perle en los atentados ni en decisiones particulares posteriores.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "los Richard Pell Dick Chenny Paul Wolfovic John Bolton ¿no y que poste"
+          }
         ]
       }
     },
@@ -150,7 +168,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La entrevista le atribuye un papel en ejercicios de seguridad nacional previos al 11-S y discute decisiones de su entorno; los detalles causales y las inferencias sobre intencionalidad no se consideran demostrados por la mera mención."
+          {
+            "topic": "Ejercicios de seguridad nacional y responsabilidad del vicepresidente",
+            "speaker": "Interlocutor de F14 (diarización pendiente)",
+            "statement": "La fuente sostiene que Dick Cheney recibió responsabilidades sobre ejercicios de respuesta a atentados antes del 11-S y relaciona esos simulacros con la reacción militar durante los secuestros. La transcripción contiene una interpretación crítica de los ejercicios, pero no aporta registros operativos originales con los que establecer su programación, finalidad o efecto sobre la respuesta real.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "dick Chenny 4 meses antes del 11 eh George Bush el presidente Bush le "
+          }
         ]
       }
     },
@@ -267,7 +294,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "El entrevistado lo cita como referencia intelectual al describir su interpretación de las corrientes neoconservadoras estadounidenses."
+          {
+            "topic": "Interpretación del neoconservadurismo y el pensamiento de Strauss",
+            "speaker": "Interlocutor de F14 (diarización pendiente)",
+            "statement": "El entrevistado menciona fonéticamente a «Leo Straus», identificable como Leo Strauss, al describir la influencia de su pensamiento en intelectuales asociados al neoconservadurismo. Le atribuye una lectura de Platón y de las llamadas mentiras nobles como justificación de prácticas políticas. Es una interpretación polémica expresada por la fuente, no una caracterización académica contrastada de la obra de Strauss.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "que se llama Leo Straus y que él hace una una revisión torticera de Pl"
+          }
         ]
       }
     },
@@ -300,7 +336,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "Un participante lo menciona al formular una valoración económica retrospectiva del New Deal y de la recuperación estadounidense; se conserva como opinión atribuida."
+          {
+            "topic": "Valoración económica retrospectiva del New Deal",
+            "speaker": "Interlocutor de F14 (diarización pendiente)",
+            "statement": "Durante una reflexión sobre las crisis y las guerras, un hablante menciona el New Deal de Franklin D. Roosevelt y sostiene que esas medidas retrasaron la recuperación económica estadounidense en lugar de acelerarla. Se trata de una hipótesis económica de la fuente, no de un resultado empírico demostrado en el episodio; para contrastarla harían falta series económicas y literatura historiográfica.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "New Deal de Roosevelt etcétera etcétera y toda la política que en su m"
+          }
         ]
       }
     }
