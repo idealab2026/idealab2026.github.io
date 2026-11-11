@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "scope": "Registro de revisión interno de 69 entradas: 67 fuentes de 8 notebooks CULTURA y 2 aportaciones de usuario; tres duplicaciones de videos entre notebooks -> 66 fuentes distintas. La web La Telaraña NO debe publicar este listado. No presentar títulos como hechos verificados.",
   "total": 69,
   "counts": {
@@ -3091,15 +3091,15 @@
     }
   },
   "editorialQualityAudit": {
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "scope": "Fuentes 9–24 con expedientes de personas (15 fuentes, sin 15 por ser PDF institucional)",
-    "status": "ocho_fuentes_9_11_13_18_19_21_23_24_estructuradas_tras_cotejo_asr_audio_pendiente",
+    "status": "331_declaraciones_estructuradas_en_15_fuentes_audio_y_corrob_independiente_pendientes",
     "profilesUnique": 201,
     "sourceCommentaries": 331,
-    "structuredWithExplicitSpeakerTopicAndStatus": 230,
-    "legacyEditorialSummaries": 101,
-    "possibleVagueNarrativesRequiringManualReview": 50,
-    "controversyTermMatchesRequiringProvenanceReview": 70,
+    "structuredWithExplicitSpeakerTopicAndStatus": 331,
+    "legacyEditorialSummaries": 0,
+    "possibleVagueNarrativesRequiringManualReview": 23,
+    "controversyTermMatchesRequiringProvenanceReview": 79,
     "explicitIndependentlyVerifiedRelations": 2,
     "graphLinksTotal": 813,
     "graphSourceMentionLinks": 441,
@@ -3108,85 +3108,123 @@
     "sourceCounts": {
       "9": {
         "claims": 33,
-        "candidates": 12,
         "structured": 33,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 25
+        "matchedTranscriptAnchors": 25,
+        "potentialGenericCandidates": 1,
+        "controversyTermMatches": 12
       },
       "10": {
         "claims": 15,
-        "candidates": 2
+        "structured": 15,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 14,
+        "potentialGenericCandidates": 0,
+        "controversyTermMatches": 0
       },
       "11": {
         "claims": 28,
-        "candidates": 10,
         "structured": 28,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 28
+        "matchedTranscriptAnchors": 28,
+        "potentialGenericCandidates": 1,
+        "controversyTermMatches": 8
       },
       "12": {
         "claims": 6,
-        "candidates": 0
+        "structured": 6,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 6,
+        "potentialGenericCandidates": 1,
+        "controversyTermMatches": 0
       },
       "13": {
         "claims": 20,
-        "candidates": 7,
         "structured": 20,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 20
+        "matchedTranscriptAnchors": 20,
+        "potentialGenericCandidates": 1,
+        "controversyTermMatches": 1
       },
       "14": {
         "claims": 16,
-        "candidates": 7
+        "structured": 16,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 16,
+        "potentialGenericCandidates": 2,
+        "controversyTermMatches": 0
       },
       "16": {
         "claims": 22,
-        "candidates": 7
+        "structured": 22,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 22,
+        "potentialGenericCandidates": 1,
+        "controversyTermMatches": 5
       },
       "17": {
         "claims": 15,
-        "candidates": 7
+        "structured": 15,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 15,
+        "potentialGenericCandidates": 2,
+        "controversyTermMatches": 2
       },
       "18": {
         "claims": 36,
-        "candidates": 10,
         "structured": 36,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 36
+        "matchedTranscriptAnchors": 36,
+        "potentialGenericCandidates": 3,
+        "controversyTermMatches": 12
       },
       "19": {
         "claims": 23,
-        "candidates": 6,
         "structured": 23,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 23
+        "matchedTranscriptAnchors": 23,
+        "potentialGenericCandidates": 3,
+        "controversyTermMatches": 6
       },
       "20": {
         "claims": 16,
-        "candidates": 7
+        "structured": 16,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 15,
+        "potentialGenericCandidates": 1,
+        "controversyTermMatches": 4
       },
       "21": {
         "claims": 35,
-        "candidates": 9,
         "structured": 35,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 35
+        "matchedTranscriptAnchors": 35,
+        "potentialGenericCandidates": 2,
+        "controversyTermMatches": 7
       },
       "22": {
         "claims": 13,
-        "candidates": 6
+        "structured": 13,
+        "unstructured": 0,
+        "matchedTranscriptAnchors": 13,
+        "potentialGenericCandidates": 2,
+        "controversyTermMatches": 5
       },
       "23": {
         "claims": 30,
         "structured": 30,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 29
+        "matchedTranscriptAnchors": 29,
+        "potentialGenericCandidates": 0,
+        "controversyTermMatches": 10
       },
       "24": {
         "claims": 23,
         "structured": 23,
         "unstructured": 0,
-        "matchedTranscriptAnchors": 23
+        "matchedTranscriptAnchors": 23,
+        "potentialGenericCandidates": 3,
+        "controversyTermMatches": 7
       }
     },
     "exclusions": [
@@ -3199,15 +3237,15 @@
       "Una mención en entrevista no prueba una relación sustantiva entre terceros",
       "Las denuncias se atribuyen a la fuente y no se elevan a hechos sin evidencias independientes",
       "Conservar el texto original y no inventar minutajes",
-      "Revisar 114 candidatos uno por uno antes de declarar cerrada la auditoría"
+      "Revisar los 23 candidatos lingüísticos restantes y sus pasajes completos; no declararlos errores sin examen manual"
     ],
     "affectedEntitiesByPotentiallyGenericSourceCommentary": null,
     "source23DossiersStructured": 30,
     "source24DossiersStructured": 23,
     "source23TranscriptAnchorsMatched": 29,
     "source24TranscriptAnchorsMatched": 23,
-    "transcriptAnchorsMatchedTotal": 219,
-    "transcriptAnchorsUnmatched": 0,
+    "transcriptAnchorsMatchedTotal": 320,
+    "transcriptAnchorsUnmatched": 11,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
     "latestAuditedGraphEntities": 527,
     "latestAuditedGraphLinks": 813,
@@ -3218,7 +3256,7 @@
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
     "source23And24IndependentClaimValidationComplete": false,
-    "editorialDebtNote": "F09 (33), F18 (36), F19 (23), F11 (28), F13 (20), F21 (35), F23 (30) y F24 (23) suman 230 comentarios editoriales estructurados; 101 permanecen en formato anterior. Se contrastaron 219 anclas exactas de ASR: 84 nuevas F09/18/19 (25+36+23) y 135 previamente verificadas F11/13/21/23/24. Ocho expedientes de F09, reestructurados antes de esta iteración, carecen de ancla literal registrada y no deben contarse como cotejados. La ficha introductoria del entrevistado de F23 tampoco lleva un ancla. No hay cotejo audiovisual ni verificación independiente de las alegaciones. Los 50 candidatos a vaguedad son hallazgos heurísticos, no errores probados.",
+    "editorialDebtNote": "Estructura editorial completada: 331 declaraciones en 15 fuentes (ningún comentario heredado sin tema, declarante y estado). Se registran 320 pasajes ASR localizables por texto; otros 11 expedientes estructurados no tienen ancla literal guardada (8 de F09, Nicolás Maduro F10, Hunter Biden F20 y el anfitrión Lorenzo Ramírez F23). No hay cotejo audiovisual ni minutaje verificado. La auditoría detecta 23 candidatos de posible vaguedad por patrones lingüísticos, no 23 errores demostrados. Las alegaciones, relaciones y biografías siguen requiriendo contraste externo.",
     "source11DossiersStructured": 28,
     "source13DossiersStructured": 20,
     "source21DossiersStructured": 35,
@@ -3237,6 +3275,10 @@
     "latestAddedTranscriptAnchorsMatched": 84,
     "source9And18And19AudioVerified": false,
     "source9And18And19VerifiedMinuteReferences": 0,
-    "source9And18And19ClaimTruthExternallyVerified": false
+    "source9And18And19ClaimTruthExternallyVerified": false,
+    "structuralCoverage100Percent": true,
+    "independentBiographicalSourcesAuditStillPending": true,
+    "audioVerificationComplete": false,
+    "individualClaimVerificationComplete": false
   }
 }
