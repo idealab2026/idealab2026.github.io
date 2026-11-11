@@ -81,7 +81,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "En el episodio se formulan hipótesis sobre presiones políticas y se comentan sus decisiones exteriores; la conversación no constituye prueba de los motivos privados que se le atribuyen."
+          {
+            "topic": "Insinuaciones sobre presiones políticas y Donald Trump",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "Un participante especula que Donald Trump podría estar condicionado por información privada comprometedora y utiliza esa hipótesis para explicar decisiones posteriores de su gobierno. El programa no presenta documentos ni pruebas de tal chantaje. La afirmación se conserva como acusación no verificada, sin dar por ciertos ni su existencia ni los motivos políticos atribuidos al dirigente.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "si Donald Trump llega en su día al poder y eso yo no lo sabía pero lóg"
+          }
         ]
       }
     },
@@ -156,7 +165,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "La fuente lo menciona de pasada en una discusión sobre presuntas formas de presión sobre dirigentes; no ofrece verificación independiente de los rumores personales que surgen."
+          {
+            "topic": "Alusión a rumores personales sobre un dirigente francés",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "En una conversación sobre supuestos mecanismos de presión sobre dirigentes, un participante menciona a Emmanuel Macron e introduce rumores sobre asuntos personales de su entorno familiar. No aporta pruebas contrastables ni documentación que establezca su veracidad o relación con decisiones políticas. La ficha conserva únicamente que el interlocutor formuló esa insinuación, sin reproducirla como información biográfica.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "y con bueno con Macron te cuento bueno te cuento con Macron y su marid"
+          }
         ]
       }
     },
@@ -252,7 +270,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "La fuente la menciona al criticar la conducción institucional europea de la política hacia Ucrania, desde la interpretación de los participantes."
+          {
+            "topic": "Crítica a la autonomía de los dirigentes europeos",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "Un participante menciona a una dirigente europea cuyo nombre aparece deformado como «bonderley» junto a Zelenski, referencia contextual a Ursula von der Leyen. Sostiene que ambos serían políticamente sustituibles y que las decisiones europeas dependen de otras potencias. Es una valoración del invitado y no una prueba de subordinación personal o coordinación secreta.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "bonderley y Zelenski son dos piezas ir dos títeres totalmente sustitui"
+          }
         ]
       }
     },
@@ -264,7 +291,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "En la conversación se especula sobre las negociaciones de Marruecos con Estados Unidos y la postura del reino ante Ceuta y el Sáhara Occidental; no se prueba un plan encubierto."
+          {
+            "topic": "Hipótesis sobre negociaciones de Marruecos con Estados Unidos",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "En la discusión sobre Ceuta, un participante afirma que el rey de Marruecos, referencia institucional al monarca Mohamed VI, negociaría con Estados Unidos ventajas territoriales o estratégicas a cambio de cooperación militar. El episodio no aporta actas de negociación ni confirma contraprestaciones concretas. La existencia del presunto pacto queda como conjetura de la fuente.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "el rey de Marruecos sabe negociar muy bien con Estados Unidos es decir"
+          }
         ]
       }
     },
@@ -297,7 +333,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "El episodio lo menciona en una opinión crítica sobre la evolución de la política española hacia el Sáhara Occidental."
+          {
+            "topic": "Crítica retrospectiva a la política española sobre el Sáhara",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "El entrevistado critica de manera conjunta a Juan Carlos I, Felipe González y Pedro Sánchez por las sucesivas decisiones españolas relativas al Sáhara Occidental. Utiliza el término traición como valoración política de esas etapas. La referencia al rey emérito no demuestra por sí sola actos ilícitos ni permite identificar acuerdos concretos sin consultar la documentación diplomática correspondiente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "ha traicionado inicialmente Juan Carlos y después Felipe González y de"
+          }
         ]
       }
     },
@@ -330,7 +375,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "La conversación lo invoca como referencia mediática para respaldar una interpretación polémica, sin aportar por esa sola mención pruebas adicionales."
+          {
+            "topic": "Referencia a una entrevista en un programa periodístico",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "En la parte final del diálogo se alude a un programa de Tucker Carlson, cuyo nombre aparece deformado en el ASR, y se menciona una intervención sobre polémicas públicas relativas a uno de los participantes. La fuente utiliza esa entrevista como referencia argumental, pero no reproduce el material íntegro ni verifica automáticamente las acusaciones o explicaciones que allí se habrían formulado.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "programa de Tagel Carlson en el que el Sabeth Lane expuso la campaña a"
+          }
         ]
       }
     },
@@ -342,7 +396,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "En la fuente se cita su nombre como comentarista de Oriente Medio y de las tensiones regionales, sin incorporar por ello sus tesis como hechos."
+          {
+            "topic": "Referencia a un analista de geopolítica",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "Un participante menciona a Alfredo Jalife al hablar de Oriente Medio y utiliza sus comentarios como apoyo a una interpretación sobre dirigentes y orígenes históricos de la región. La mención documenta que se invocó a Jalife como comentarista, pero no incorpora una obra concreta ni autoriza a tratar como acreditadas las tesis que se le atribuyen.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "lo explica perfectamente bien Alfredo Jalife todos los días sí sí Alfr"
+          }
         ]
       }
     },
@@ -354,7 +417,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "Se le menciona junto a sus sucesores al comparar distintos ejecutivos británicos y sostener que no habrían cambiado ciertas prioridades exteriores."
+          {
+            "topic": "Comparación de primeros ministros británicos",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "En una reflexión sobre la continuidad de la política exterior británica, un participante enumera a Boris Johnson, Rishi Sunak y Keir Starmer. Sostiene que los cambios de primer ministro no modifican sustancialmente determinadas prioridades estratégicas. La afirmación es una valoración política del episodio y no un análisis sistemático de sus respectivos mandatos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "tuvimos a Boris Johnson luego viene Risy Sunak lo mismo hemos tenido d"
+          }
         ]
       }
     },
@@ -366,7 +438,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "En el episodio aparece en una comparación entre primeros ministros británicos sobre la continuidad de orientación gubernamental."
+          {
+            "topic": "Comparación de la orientación de los gobiernos británicos",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "El diálogo recuerda la sucesión de Boris Johnson por Rishi Sunak y después por Keir Starmer, con una pronunciación automática imperfecta de Sunak. El participante considera que estos cambios apenas alteran determinadas políticas exteriores del Reino Unido. Esta interpretación se mantiene atribuida a la fuente; no presupone identidad de medidas o agendas gubernamentales.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Risy Sunak lo mismo hemos tenido después a Starmer lo mismo ¿alguien s"
+          }
         ]
       }
     },
@@ -378,7 +459,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "La fuente lo menciona para argumentar que distintos gobiernos británicos mantienen prioridades estratégicas similares; se trata del análisis de los interlocutores."
+          {
+            "topic": "Continuidad estratégica atribuida a gobiernos británicos",
+            "speaker": "Interlocutor de F16 (diarización pendiente)",
+            "statement": "Un interlocutor incluye a Keir Starmer en una comparación con Boris Johnson y Rishi Sunak y cuestiona que la llegada de otro dirigente británico suponga cambios relevantes de estrategia. El argumento está integrado en una crítica más amplia a la autonomía política europea. Es una opinión formulada en el programa y no una verificación exhaustiva de decisiones de Starmer.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "hemos tenido después a Starmer lo mismo ¿alguien se piensa que Burhan "
+          }
         ]
       }
     }
