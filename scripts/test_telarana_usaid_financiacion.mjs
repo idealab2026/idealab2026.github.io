@@ -12,7 +12,8 @@ const previous=ctx.window.IDEA_TELARANA_USAID_DOCUMENTED;
 const originals=ctx.window.IDEA_TELARANA_SOURCE21_EDITORIAL;
 assert(dossier?.metadata?.id==="idealab-usaid-evidencia-segunda-fase");
 assert.equal(dossier.edges.length,41,"Faltan relaciones de los expedientes financieros y judiciales");
-assert.equal(dossier.nodes.length,32,"Inventario no reconciliado");
+assert.equal(dossier.nodes.length,36,"Inventario no reconciliado (32 altas más 4 referencias)");
+for(const id of ["f21-usaid","f21-worldbank","f21-ukraine","usaid-departamento-estado"]){assert(dossier.nodes.some(n=>n.id===id),"El importador perdería relaciones de "+id);}
 assert.equal(previous.edges.length,11,"Se han alterado las relaciones institucionales anteriores");
 const html=read("la-telarana/index.html"),workflow=read(".github/workflows/pages.yml");
 assert(html.includes('src="./usaid-programas-financiacion.js?v='),"La web no importa el expediente");
