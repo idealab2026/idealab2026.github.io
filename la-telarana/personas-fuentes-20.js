@@ -32,7 +32,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez comenta los proyectos de identidad digital y salud asociados a la fundación, y atribuye a Gates determinadas ideas sobre el papel de la tecnocracia en la gestión de problemas sociales."
+          {
+            "topic": "ID2020 y visión tecnocrática de los problemas sociales",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez cita un proyecto llamado ID2020 que asocia a la Fundación Gates en su análisis sobre identificación digital. Posteriormente atribuye a Bill Gates la convicción de que la tecnocracia puede prevenir crisis sociales. Son dos afirmaciones diferenciadas del invitado: su testimonio no demuestra que la fundación controle universalmente los sistemas de identidad ni que existan objetivos ocultos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Bill Gates de la fundación de Bill Megindagis que se llamaba ID 2020"
+          }
         ]
       }
     },
@@ -44,7 +53,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez lo cita al comentar organizaciones filantrópicas, identificación digital y el papel que, según su interpretación, desempeñan ciertas élites financieras en iniciativas internacionales."
+          {
+            "topic": "Organizaciones filantrópicas, biometría y poder",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "En su exposición sobre sistemas de identidad y recogida de datos, Ramírez relaciona a George Soros y Open Society con determinadas organizaciones no gubernamentales. Más adelante alude a una entrevista en la que, según su recuerdo, Soros habría hablado de sentirse como Dios. Ambas referencias requieren identificar los documentos originales; el episodio no acredita una operación coordinada por Soros.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Open Society y Geor Soros He contado en alguno de mis programas"
+          }
         ]
       }
     },
@@ -77,7 +95,16 @@
       },
       "sources": {
         "20": [
-          "La fuente recuerda su papel en la creación de Google y lo relaciona con el debate sobre la transformación de la compañía y las relaciones entre plataformas e instituciones."
+          {
+            "topic": "Fundación de Google y evolución de su dirección",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "El entrevistado recuerda que Sergey Brin y otro fundador crearon Google y diferencia su etapa inicial de la llegada de Eric Schmidt a la dirección ejecutiva. Afirma que el crecimiento posterior de la empresa estuvo condicionado por redes de poder y agencias estadounidenses. La fundación de la compañía es un dato biográfico distinto de las relaciones causales que propone Ramírez.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Sergei Brin y el y el amiguete montan el Google"
+          }
         ]
       }
     },
@@ -89,7 +116,16 @@
       },
       "sources": {
         "20": [
-          "El entrevistado comenta las ideas que atribuye a Thiel sobre innovación, regulación y concentración tecnológica, así como sus relaciones políticas y empresariales; estas opiniones se registran como declaraciones de la fuente."
+          {
+            "topic": "Referencia fonética a Palantir y relaciones políticas en Silicon Valley",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez menciona a una persona transcrita como «Peter de Palantir» al hablar de la trayectoria empresarial y política de J. D. Vance. Por el contexto podría referirse a Peter Thiel, inversor y cofundador de Palantir; esa identificación debe confirmarse con el audio. El invitado interpreta las relaciones entre capital tecnológico y poder político, sin probar subordinación personal ni conductas ilegales.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Peter de Palantir con el cual ha tenido negocios cruzados"
+          }
         ]
       }
     },
@@ -122,7 +158,16 @@
       },
       "sources": {
         "20": [
-          "La fuente lo menciona con reconocimiento fonético «JD B» y comenta sus relaciones políticas y de financiación dentro del sector tecnológico estadounidense."
+          {
+            "topic": "Vínculos entre el vicepresidente y empresas tecnológicas",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez habla de un vicepresidente de Estados Unidos transcrito como «JD B», referencia contextual a J. D. Vance. Lo relaciona con un empresario de Palantir y con intereses de la industria tecnológica, además de atribuirle capacidad de decisión en ese sector. El texto automático no permite corroborar los negocios específicos ni los grados de influencia que afirma el invitado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "JD B que ha crecido básicamente a los pechos de Peter de Palantir"
+          }
         ]
       }
     },
@@ -158,7 +203,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez recurre a 1984 para reflexionar sobre vigilancia, poder y preservación de la condición humana, mediante una frase cuya literalidad requiere cotejo con la obra."
+          {
+            "topic": "Referencia a 1984 y la tensión entre supervivencia y humanidad",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez evoca la novela 1984, de George Orwell, para argumentar que una sociedad centrada exclusivamente en sobrevivir puede perder libertades y humanidad. Enuncia una frase que presenta como cita del escritor, pero el episodio no facilita edición ni página y la literalidad de esa atribución queda pendiente de comprobarse en el libro.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "hay una cita de Orwell de 1984 sobre la que se incide muy poco"
+          }
         ]
       }
     },
@@ -191,7 +245,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez menciona a Biden en el contexto de controversias relacionadas con Ucrania y su hijo Hunter; el episodio no constituye prueba documental de las imputaciones mencionadas."
+          {
+            "topic": "Alegación sobre Hunter Biden y Burisma",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez sostiene que Joe Biden habría influido para retirar acusaciones relacionadas con su hijo Hunter y la empresa Burisma en Ucrania. La entrevista contiene esa acusación, pero no presenta expedientes judiciales ni documentación primaria que pruebe tal intervención. El comentario se conserva como alegación atribuida al invitado, no como conclusión de IDEA LAB.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Joe Biden en que retiraran las acusaciones contra su hijo"
+          }
         ]
       }
     },
@@ -233,7 +296,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez cita sus análisis sobre China y la idea de que el crecimiento económico podía favorecer transformaciones políticas en ese país."
+          {
+            "topic": "Teorías sobre el desarrollo económico y político de China",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "En su interpretación de la apertura económica china, Ramírez menciona a Henry Kissinger y a políticos estadounidenses partidarios de que el desarrollo de la clase media llevaría gradualmente a una mayor participación política. Después atribuye a Kissinger advertencias sobre particularidades históricas y culturales de China. El episodio no ofrece una cita bibliográfica que permita comprobar la literalidad de esos argumentos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Kissinger advertía porque es uno de los grandes conocedores de Chobre China"
+          }
         ]
       }
     },
