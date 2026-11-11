@@ -1042,6 +1042,13 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "sourceTitle": "Rockefeller Archive Center · biografía institucional",
       "also": "https://www.trumanlibrary.gov/library/public-papers/289/letter-chairman-advisory-board-international-development-foreign-economic",
       "reviewedAt": "2026-11-11"
+    },
+    "f04-villamizar-epigrafe": {
+      "text": "Pedro de Villamizar es un nombre histórico vinculado al León de comienzos del siglo XVII. La historiadora Margarita Torres menciona en la fuente 04 a «Pedro de Villamizar y Tobar» al hablar de un episodio sobre impuestos y gobierno municipal de 1607. Un estudio publicado en Studia Historica (2019) documenta la muerte violenta de un Pedro de Villamizar en la plaza de la Regla en 1607, y una genealogía académica recoge a un Pedro de Villamizar y Tovar. Sin consultar las actas del concejo y los documentos genealógicos completos, no puede confirmarse que todas las referencias correspondan inequívocamente a la misma persona; la grafía «Tobar» procede del ASR, no de una certificación archivística.",
+      "source": "https://revistas.usal.es/uno/index.php/Studia_Historica/article/download/shhmo201941271101/21520/74321",
+      "sourceTitle": "Studia Historica · La conflictividad de linajes leoneses en el siglo XVII (2019)",
+      "also": "https://ramhg.es/wp-content/uploads/2024/09/anales-06_2000-2001-04_gomez_de_olea-moreno.pdf",
+      "reviewedAt": "2026-11-11"
     }
   }
 };
