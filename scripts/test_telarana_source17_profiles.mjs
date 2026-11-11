@@ -11,7 +11,7 @@ const people=Object.entries(lib.profiles).filter(([_,p])=>Array.isArray(p.source
 assert(people.length>=15,"Faltan perfiles de la fuente 17");
 for(const [name,p]of people){
  assert(p.who?.length>=45,"Falta quién es "+name);
- assert(p.sources["17"].length>0&&p.sources["17"].every(s=>s.length>=65),"Atribución insuficiente "+name);
+ assert(p.sources["17"].length>0&&p.sources["17"].every(s=>typeof s==="string"?s.length>=65:typeof s?.statement==="string"&&s.statement.length>=180),"Atribución insuficiente "+name);
 }
 assert(lib.profiles["José Manuel García-Margallo"]?.sources["17"],"Falta el exministro entrevistado");
 assert(lib.profiles["François Hollande"]?.sources["17"],"No se ha normalizado ASR Orlán");
@@ -30,4 +30,14 @@ assert(event?.investigation?.date==="2022-04-07","Falta declaración bilateral f
 assert(event.investigation.confirmedBy.url.startsWith("https://www.lamoncloa.gob.es/"),"El hito debe basarse en el texto oficial");
 assert(event.d.includes("no")&&event.d.includes("soberanía"),"No diferenciar el contenido del acuerdo de un reconocimiento de soberanía");
 assert(prog.timeline.committedVerifiedEvents===hist.items.length,"Progreso histórico incoherente");
+const expectedStatuses=new Set(["opinion_atribuida","alegacion_no_verificada","declaracion_de_parte","identidad_pendiente","mencion_contextual"]);
+for(const [name,p] of Object.entries(lib.profiles).filter(([_,p])=>Array.isArray(p.sources?.["17"]))){
+ const claims=p.sources["17"];
+ assert(claims.length===1&&typeof claims[0]==="object","Ficha F17 sin estructurar: "+name);
+ const c=claims[0];
+ assert(c.topic?.length>=18&&c.speaker?.length>=18&&c.statement?.length>=180,"Falta atribución concreta: "+name);
+ assert(c.transcriptAnchor?.length>=45,"Ancla documental demasiado breve: "+name);
+ assert(c.transcriptVerified===true&&c.audioVerified===false&&c.minuteVerified===false,"Se falseó cotejo audiovisual: "+name);
+ assert(expectedStatuses.has(c.status),"Estado probatorio desconocido: "+name);
+}
 console.log("OK: F17 · "+people.length+" perfiles, un hito oficial de 2022 y controles de atribución");
