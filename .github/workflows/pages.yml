@@ -108,6 +108,8 @@ jobs:
         run: node scripts/audit_telarana_all_sources.mjs
       - name: Validar los expedientes iniciales de fuentes 26 y 27
         run: node scripts/test_telarana_sources26_27.mjs
+      - name: Auditar conexiones y niveles probatorios de fuente 28
+        run: node scripts/test_telarana_source28.mjs
       - name: Conservar auditoría interna de cobertura de fuentes
         uses: actions/upload-artifact@v4
         with:
