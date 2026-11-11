@@ -174,9 +174,10 @@ window.IDEA_TELARANA_USAID_ROCKEFELLER = {
       "note": "Rockefeller promovió y presidió organismos de cooperación exterior anteriores a USAID (IIAA en 1942 y consejo asesor de Punto Cuatro en 1950). USAID se creó jurídicamente bajo Kennedy en 1961. Esta arista resume una conexión histórica indirecta entre programas y políticas, no control orgánico, propiedad, administración, financiación de USAID ni una relación personal con Kennedy.",
       "source": "https://www.usaid.gov/sites/default/files/2022-05/PeruLegacy%20Eng%20Final%20Report.pdf",
       "confidence": "documentado",
-      "claimStatus": "hecho_verificado_independiente",
+      "claimStatus": "relacion_historica_indirecta",
       "episodeId": "idealab-usaid-rockefeller-historia",
-      "podcastNotes": []
+      "podcastNotes": [],
+      "methodologicalLimits": "Síntesis de dos cadenas históricas verificadas, no una relación orgánica, financiera ni personal acreditada entre Rockefeller y USAID."
     },
     {
       "id": "usaid-rk-rockefeller-iiaa",
@@ -184,7 +185,7 @@ window.IDEA_TELARANA_USAID_ROCKEFELLER = {
       "b": "usaid-iiaa",
       "type": "Promotor y primer presidente del consejo · 1942",
       "note": "El informe histórico publicado por USAID sobre su cooperación con Perú identifica a Rockefeller como impulsor del Institute of Inter-American Affairs de 1942; fuentes retrospectivas de la agencia recuerdan que presidió su primer consejo. Se trató de un organismo público de cooperación técnica con gobiernos latinoamericanos.",
-      "source": "https://www.usaid.gov/sites/default/files/2022-05/PeruLegacy%20Eng%20Final%20Report.pdf",
+      "source": "https://pdf.usaid.gov/pdf_docs/PNAAN878.pdf",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
       "episodeId": "idealab-usaid-rockefeller-historia",
