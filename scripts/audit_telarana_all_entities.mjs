@@ -1,5 +1,5 @@
 /**
- * Auditoría exhaustiva estructural del grafo, incluidas las 527 entidades visibles.
+ * Auditoría exhaustiva estructural del grafo de producción, con conteo dinámico.
  * NO es una verificación factual externa. La revisión humana de afirmaciones sigue siendo necesaria.
  * Exporta hallazgos por entidad como artefacto privado de GitHub Actions, no como contenido web.
  */
@@ -93,7 +93,7 @@ const types=Object.fromEntries([...new Set(report.map(x=>x.kind))].sort().map(k=
 const top=(field)=>report.filter(x=>x.issues.some(k=>k===field||k.startsWith(field+":")));
 const totalMentions=data.edges.filter(mention).length;
 const summary={
- auditedAt:"2026-11-10",scope:"527 entidades del grafo de producción; se evalúan nodos, notas, biografías, menciones y aristas",
+ auditedAt:"2026-11-11",scope:"Entidades del grafo de producción; se evalúan nodos, notas, biografías, menciones y aristas",
  scopeLimit:"Auditoría AUTOMÁTICA estructural. No comprueba la verdad material de cada afirmación ni la correspondencia con audio.",
  totalEntities:data.nodes.length,totalLinks:data.edges.length,mentionLinks:totalMentions,otherRelationships:data.edges.length-totalMentions,
  independentlyClassifiedEdges:data.edges.filter(e=>!mention(e)&&e.claimStatus==="hecho_verificado_independiente").length,
