@@ -29,14 +29,15 @@ def launchctl(*args):
     return res.returncode, (res.stdout + res.stderr).strip()
 
 
-def install():
-    if sys.platform != "darwin":
-        raise SystemExit("Este instalador requiere macOS.")
-    TARGET.parent.mkdir(parents=True, exist_ok=True)
-    LOGS.mkdir(parents=True, exist_ok=True)
-    config = {
+def agent_config(mode: str) -> dict:
+    """Pure plist builder; reconcile-only NEVER requests a generation."""
+    if mode not in ("poll", "reconcile-only"):
+        raise ValueError("Modo de agente no permitido.")
+    return {
         "Label": NAME,
-        "ProgramArguments": [sys.executable, str(ROOT / "scripts/notebooklm_bridge.py"), "poll"],
+        "ProgramArguments": [
+            sys.executable, str(ROOT / "scripts/notebooklm_bridge.py"), mode
+        ],
         "WorkingDirectory": str(ROOT),
         "EnvironmentVariables": {"PATH": PATH, "PYTHONUNBUFFERED": "1"},
         "RunAtLoad": True,
@@ -44,6 +45,14 @@ def install():
         "StandardOutPath": str(LOGS / "notebooklm-bridge.log"),
         "StandardErrorPath": str(LOGS / "notebooklm-bridge.err.log"),
     }
+
+
+def install(mode: str = "poll"):
+    if sys.platform != "darwin":
+        raise SystemExit("Este instalador requiere macOS.")
+    config = agent_config(mode)
+    TARGET.parent.mkdir(parents=True, exist_ok=True)
+    LOGS.mkdir(parents=True, exist_ok=True)
     launchctl("bootout", DOMAIN + "/" + NAME)
     with open(TARGET, "wb") as f:
         plistlib.dump(config, f)
@@ -51,7 +60,13 @@ def install():
     rc, out = launchctl("bootstrap", DOMAIN, str(TARGET))
     if rc:
         raise SystemExit("No se pudo activar launchd: " + out)
-    print("Agente local instalado. Consulta GitHub cada 3 minutos mientras el Mac esté despierto.")
+    if mode == "reconcile-only":
+        print("Agente seguro de conciliación instalado. Cada 3 minutos comprobará "
+              "generaciones anteriores y descargará PNG terminados.")
+        print("No generará nuevas infografías ni recuperará trabajos fallidos.")
+    else:
+        print("Agente local instalado. Consulta GitHub cada 3 minutos "
+              "mientras el Mac esté despierto.")
     print("Archivo:", TARGET)
     print("Registros:", LOGS)
 
@@ -64,10 +79,12 @@ def remove():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("action", choices=["install", "remove"])
+    parser.add_argument("action", choices=["install", "install-reconcile", "remove"])
     args = parser.parse_args()
     if args.action == "install":
         install()
+    elif args.action == "install-reconcile":
+        install("reconcile-only")
     else:
         remove()
 
