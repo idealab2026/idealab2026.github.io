@@ -186,6 +186,7 @@ jobs:
           cp la-telarana/fuente-26-revision-inicial.js dist/la-telarana/fuente-26-revision-inicial.js
           cp la-telarana/fuente-27-revision-inicial.js dist/la-telarana/fuente-27-revision-inicial.js
           cp la-telarana/fuente-28-revision-inicial.js dist/la-telarana/fuente-28-revision-inicial.js
+          cp la-telarana/fuente-29-revision-inicial.js dist/la-telarana/fuente-29-revision-inicial.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/personas-fuentes-18-21.js dist/la-telarana/personas-fuentes-18-21.js
           cp la-telarana/personas-fuentes-09-10.js dist/la-telarana/personas-fuentes-09-10.js
