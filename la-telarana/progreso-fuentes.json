@@ -3251,11 +3251,11 @@
     "transcriptAnchorsMatchedTotal": 320,
     "transcriptAnchorsUnmatched": 11,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
-    "latestAuditedGraphEntities": 527,
-    "latestAuditedGraphLinks": 813,
+    "latestAuditedGraphEntities": 534,
+    "latestAuditedGraphLinks": 824,
     "latestAuditedGraphSourceMentions": 441,
-    "latestAuditedGraphOtherRelations": 372,
-    "latestAuditedGraphExternallyClassifiedRelations": 2,
+    "latestAuditedGraphOtherRelations": 383,
+    "latestAuditedGraphExternallyClassifiedRelations": 13,
     "latestAuditedGraphPeopleWithoutIndependentBiographicalSource": 245,
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
@@ -3283,6 +3283,11 @@
     "structuralCoverage100Percent": true,
     "independentBiographicalSourcesAuditStillPending": true,
     "audioVerificationComplete": false,
-    "individualClaimVerificationComplete": false
+    "individualClaimVerificationComplete": false,
+    "latestAuditedAt": "2026-11-11",
+    "usaidDocumentedDirectEdges": 11,
+    "usaidHistoricalEvents": 6,
+    "usaidSource21AttributedNotes": 4,
+    "usaidMethodologicalNote": "Los 11 enlaces institucionales se fundamentan en registros públicos (OIG, CRS y documentos oficiales), mientras las cuatro afirmaciones del entrevistado se exhiben como alegaciones no corroboradas y no generan relaciones entre entidades."
   }
 }
