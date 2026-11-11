@@ -3266,11 +3266,11 @@
     "transcriptAnchorsMatchedTotal": 320,
     "transcriptAnchorsUnmatched": 11,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
-    "latestAuditedGraphEntities": 574,
-    "latestAuditedGraphLinks": 880,
+    "latestAuditedGraphEntities": 579,
+    "latestAuditedGraphLinks": 888,
     "latestAuditedGraphSourceMentions": 441,
-    "latestAuditedGraphOtherRelations": 439,
-    "latestAuditedGraphExternallyClassifiedRelations": 68,
+    "latestAuditedGraphOtherRelations": 447,
+    "latestAuditedGraphExternallyClassifiedRelations": 76,
     "latestAuditedGraphPeopleWithoutIndependentBiographicalSource": 245,
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
@@ -3349,7 +3349,12 @@
         "Rockefeller Archive Center",
         "Rockefeller Brothers Fund 1962 Annual Report"
       ],
-      "sourceLimitations": "AIA, IBEC, Creole, Standard Oil y RBF son independientes de la estructura federal. RBF subvencionó AIA con 250.000 USD en 1962 y documentó 1.055.000 USD acumulados desde 1956 para esos programas. No se atribuye ninguna donación a USAID."
+      "sourceLimitations": "AIA, IBEC, Creole, Standard Oil y RBF son independientes de la estructura federal. RBF subvencionó AIA con 250.000 USD en 1962 y documentó 1.055.000 USD acumulados desde 1956 para esos programas. No se atribuye ninguna donación a USAID.",
+      "loadedNodes": 5,
+      "loadedEdges": 8,
+      "verifiedEdges": 8,
+      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43025074166",
+      "verifiedOnProduction": true
     }
   }
 }
