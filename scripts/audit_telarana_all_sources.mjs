@@ -53,8 +53,8 @@ for(const row of rows){
  report.push(entry);
 }
 assert.equal(stats.publishedReviewed,3,"Estados cerrados fuera de registro");
-assert.equal(stats.inReview,23,"En revisión fuera de inventario");
-assert.equal(stats.notStarted,40,"Pendientes canónicas fuera de inventario");
+assert.equal(stats.inReview,25,"En revisión fuera de inventario");
+assert.equal(stats.notStarted,38,"Pendientes canónicas fuera de inventario");
 assert.equal(stats.confirmedTranscript,22,"Cambio en transcripciones comprobadas sin reconciliar");
 assert.equal(stats.youtubeWithoutFullTranscript,40,"Faltan transcripciones o son inválidas; revisar conteo");
 const p8=report.find(x=>x.order===8);
@@ -79,4 +79,4 @@ fs.writeFileSync("audit-results/telarana-all-source-coverage.json",JSON.stringif
 console.log("COBERTURA INTEGRAL FUENTES (no certificación de afirmaciones)");
 console.log(JSON.stringify(stats,null,2));
 console.log("ASR íntegro sin cotejo audiovisual:",flagged.join(", "));
-console.log("OK: 69 entradas / 66 únicas / 3 duplicados / 22 transcripciones confirmadas / revisión abierta en 23.");
+console.log("OK: 69 entradas / 66 únicas / 3 duplicados / 22 transcripciones confirmadas / 25 fuentes en revisión.");
