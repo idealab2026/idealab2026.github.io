@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 27,
-    "notStarted": 39,
+    "inReview": 28,
+    "notStarted": 38,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -125,8 +125,8 @@
     }
   ],
   "nextSource": {
-    "order": 30,
-    "videoId": "F1r5Yeyfcp8",
+    "order": 31,
+    "videoId": "aeQTrm-Kork",
     "status": "pendiente_de_transcripcion_y_revision_inicial",
     "sourceType": "youtube"
   },
@@ -1072,6 +1072,27 @@
       "qualityNotes": "Fuente 29 con transcripción automática externa enlazada, pero sin importación íntegra. Se revisaron 00:00–09:06 (marcadores del proveedor, no audio verificado); tres notas atribuidas a Pedro Baños. Ocho aristas documentales (dos subvenciones representadas como instrumentos distintos, control parlamentario, nombramiento BOE y estructura institucional), seis referencias editoriales. No se da por probada campaña dirigida contra Baños ni se importan a la parte 1 afirmaciones de la parte 3."
     },
     {
+      "order": 30,
+      "videoId": "F1r5Yeyfcp8",
+      "title": "The Wild Project #116 ft Pedro Baños | USA vs Rusia vs China, Tercera Guerra Mundial, George Soros",
+      "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
+      "status": "revision_inicial_documentos_externos_audio_y_transcripcion_pendientes",
+      "publishedAt": "2022-02-17",
+      "reviewComplete": false,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": false,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "sourceNodesDocumented": 16,
+      "sourceRelationsDocumented": 18,
+      "verifiedIndependentChecks": 11,
+      "sourceTimelineVerifiedEventsCommitted": 6,
+      "sourcePrimaryModule": "la-telarana/fuente-30-revision-inicial.js",
+      "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
+      "qualityNotes": "Fuente publicada el 17/02/2022, 7 días antes de invasión a gran escala. Sin transcripción en Drive ni audio cotejado. 11 relaciones históricas documentadas (4 clasificadas como posteriores a la entrevista), 7 referencias editoriales de la sinopsis. 6 hitos de Línea de la Historia con etiqueta de temporalidad relativa. No atribuir predicciones ni afirmaciones literales."
+    },
+    {
       "order": 69,
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
@@ -1091,9 +1112,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 94,
+    "committedVerifiedEvents": 100,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 50,
+    "fromSourceInReview": 56,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1228,6 +1249,14 @@
         "study-f29-commons-integrity-2018",
         "study-f29-carlson-interview-2026",
         "study-f29-banos-program-2026"
+      ],
+      "30": [
+        "study-f30-osce-minsk-2015",
+        "study-f30-un-minsk-2015",
+        "study-f30-nato-proposals-2022",
+        "study-f30-episode-published-2022",
+        "study-f30-invasion-2022",
+        "study-f30-nato-concept-2022"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -2298,18 +2327,24 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 26,
-        "status": "pendiente",
+        "status": "revision_inicial_documentos_externos_audio_y_transcripcion_pendientes",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-11",
+          "editorialDossierCreated": true,
+          "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
+          "audioVerified": false,
+          "minuteReferencesVerified": 0,
+          "externalDocumentsVerified": 11,
+          "methodologicalStatus": "Sinopsis oficial más fuentes institucionales. No hay ASR íntegro ni audio, cronología pre/post 17/02/2022"
         }
       },
       {
@@ -3559,8 +3594,8 @@
       "uniqueCanonicalSources": 66,
       "duplicateEntries": 3,
       "closedEditorially": 3,
-      "inReview": 27,
-      "canonicalNotStarted": 36,
+      "inReview": 28,
+      "canonicalNotStarted": 35,
       "confirmedASRTranscripts": 22,
       "youtubeCanonicalLackingFullASR": 40,
       "fullTranscriptsAvailableButAudioUnverified": true,
@@ -3568,7 +3603,7 @@
       "report": "CI artifact telarana-auditoria-cobertura-66-fuentes (not deployed publicly)",
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43067408609",
       "status": "Structural checks passed; F29 ASR parcial externo, reclamaciones no verificadas",
-      "originalCatalogNotStarted": 39,
+      "originalCatalogNotStarted": 38,
       "methodologicalCounts": "counts.notStarted cuenta entradas originales (69 menos cerradas y abiertas); allSourcesCoverageAudit.canonicalNotStarted excluye los tres duplicados. No mezclar ambos denominadores."
     },
     "source26And27Initial": {
@@ -3638,6 +3673,21 @@
       "actualLoadedNewLinks": 14,
       "publishedAndTested": true,
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43067408609"
+    },
+    "source30Initial": {
+      "date": "2026-11-11",
+      "sourceOrder": 30,
+      "nodesDeclared": 16,
+      "edgesDeclared": 18,
+      "externallyDocumentedEdges": 11,
+      "editorialTopicMentions": 7,
+      "postEpisodeHistoricalContextEdges": 4,
+      "historicalEvents": 6,
+      "fullTranscriptAvailable": false,
+      "transcriptDocCreated": false,
+      "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
+      "audioVerified": false,
+      "methodologicalLimits": "La entrevista fue anterior al 24/02/2022. Antecedentes 2015 y enero de 2022 se distinguen del contexto posterior; no atribuir predicciones ni conocimiento de documentos posteriores al entrevistado. Soros-OSF es vínculo institucional y no relación con conflictos internacionales."
     }
   }
 }
