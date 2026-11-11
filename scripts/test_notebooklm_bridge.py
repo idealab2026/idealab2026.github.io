@@ -441,11 +441,11 @@ class BridgeTests(unittest.TestCase):
         copy_state = json.loads(json.dumps(state))
         output = io.StringIO()
         args = argparse.Namespace(issue=None, book=["conde-montecristo", "sapiens"])
-        with patch.object(bridge, "load_json", return_value=state), \\
+        with patch.object(bridge, "load_json", return_value=state), \
              patch.object(bridge, "infographic_rows", side_effect=[
                  [{"id": "artold00001", "status": "3"}],
-                 [{"id": "newart00001", "status": "3"}]]), \\
-             patch.object(bridge, "save_json") as write, \\
+                 [{"id": "newart00001", "status": "3"}]]), \
+             patch.object(bridge, "save_json") as write, \
              patch.object(bridge, "command") as generate:
             with contextlib.redirect_stdout(output):
                 bridge.audit_blocked(args)
@@ -468,8 +468,8 @@ class BridgeTests(unittest.TestCase):
                         "request": {"book": "conde-montecristo"},
                         "before": ["oldart00001"]}}
         output = io.StringIO()
-        with patch.object(bridge, "load_json", return_value=state), \\
-             patch.object(bridge, "infographic_rows", return_value=[]), \\
+        with patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "infographic_rows", return_value=[]), \
              patch.object(bridge, "save_json") as write:
             with contextlib.redirect_stdout(output):
                 bridge.audit_blocked(argparse.Namespace(
