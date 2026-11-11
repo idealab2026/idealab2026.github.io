@@ -787,16 +787,7 @@ def launch_queued_retry(state: dict, config: dict) -> bool:
             print("Reintento #", number, "CANCELADO: el artefacto original")
             print("no consta inequívocamente como fallido. Revisión manual.")
             return False
-        # Persist the authorization BEFORE sending the remote request: a crash or
-    # timeout must never replay the same signed-off comment automatically.
-    approved_id = getattr(args, "github_recovery_comment_id", None)
-    if approved_id is not None:
-        if (not isinstance(approved_id, int) or approved_id <= 0
-                or job.get("github_recovery_comment_id")
-                or int(job.get("recovery_count", 0)) != 0):
-            raise RuntimeError("Autorización reutilizada o recuperación anterior detectada.")
-        job["github_recovery_comment_id"] = approved_id
-    job.setdefault("past_attempts", []).append({
+        job.setdefault("past_attempts", []).append({
             "artifact_id": old_id,
             "phase": "failed",
             "retry_requested_at": job.get("retry_queued_at"),
@@ -1405,6 +1396,14 @@ def recover_blocked(args) -> None:
     if incomplete_studio_artifacts(rows):
         raise RuntimeError("Studio contiene artefactos en curso o con estado "
                            "desconocido. No se puede recuperar sin revisión manual.")
+    # Persist this authorization before the NotebookLM call to prevent replay.
+    approved_id = getattr(args, "github_recovery_comment_id", None)
+    if approved_id is not None:
+        if (not isinstance(approved_id, int) or isinstance(approved_id, bool)
+                or approved_id <= 0 or job.get("github_recovery_comment_id")
+                or int(job.get("recovery_count", 0)) != 0):
+            raise RuntimeError("Autorización reutilizada o recuperación anterior detectada.")
+        job["github_recovery_comment_id"] = approved_id
     job.setdefault("past_attempts", []).append({
         "phase": job["phase"],
         "reason": job.get("failure_kind") or job.get("reason") or "unknown",
