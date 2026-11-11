@@ -85,12 +85,17 @@ for(const [order,minimum] of [[3,90000],[4,80000],[7,300000]]){
 for(const order of [26,27,28,29,30]){
  const row=rows.find(e=>e.order===order),review=feed.inReview.find(e=>e.order===order);
  assert(row&&review,"Falta seguimiento documental F"+order);
- assert(row.tracking.complete===false&&row.reviewComplete===false,
-   "F"+order+": fuente preliminar cerrada prematuramente");
- assert(row.tracking.docTranscriptionCreated===false&&row.tracking.transcriptContentImported===false,
-   "F"+order+": llegada de nueva transcripción exige actualizar prueba y validar lectura completa");
- assert(review.transcriptDocHasFullText===false&&review.reviewComplete===false,
-   "F"+order+": ficha de revisión afirma una completitud no validada");
+ if(row.tracking.transcriptContentImported===true){
+   assert(row.tracking.docTranscriptionCreated===true&&Number(row.tracking.transcriptCharactersReadBack)>10000,
+     "F"+order+": nueva transcripción sin documento y lectura íntegra verificados");
+   assert(review.transcriptDocHasFullText===true,
+     "F"+order+": actualizar ficha al recuperar el texto íntegro");
+ }else{
+   assert(row.tracking.complete===false&&row.reviewComplete===false,
+     "F"+order+": fuente sin transcripción cerrada prematuramente");
+   assert(review.transcriptDocHasFullText!==true&&review.reviewComplete!==true,
+     "F"+order+": ficha afirma completitud sin respaldo");
+ }
  assert(page.includes("fuente-"+order+"-revision-inicial.js"),
    "F"+order+": módulo público ausente; revisar catálogo y despliegue");
 }
