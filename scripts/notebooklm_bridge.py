@@ -20,6 +20,7 @@ import subprocess
 import sys
 from contextlib import contextmanager
 from pathlib import Path
+from types import SimpleNamespace
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -27,6 +28,9 @@ from notebooklm_infografias import find_item, import_file  # noqa: E402
 
 REPO = "idealab2026/idealab2026.github.io"
 OWNER = "idealab2026"
+OWNER_GITHUB_ID = 350414243
+RECOVERY_APPROVAL_MARK = "IDEA_LAB_NLM_RECOVER_V1"
+RECOVERY_APPROVAL_HOURS = 12
 HOME = Path.home()
 CONFIG_PATH = HOME / ".config/idea-lab/notebooklm-bridge.json"
 STATE_PATH = HOME / ".local/state/idea-lab/notebooklm-bridge.json"
@@ -634,6 +638,101 @@ def check_submitted(number, job, state):
     print("Infografía disponible localmente:", path)
 
 
+def recovery_approval_body(number: str) -> str:
+    """Exact public authorization format; no arbitrary commands or source IDs."""
+    return (RECOVERY_APPROVAL_MARK + "\n"
+            + "issue=" + str(int(number)) + "\n"
+            + "confirm_no_new_artifact=true\n"
+            + "confirm_quota_restored=true")
+
+
+def github_recovery_approvals(now: dt.datetime | None = None) -> list[tuple[str, int]]:
+    """Read recent GitHub repository comments; trust only IDEA LAB's numeric user ID.
+
+    A single repository-level request avoids frequent scans of every blocked
+    issue. Never trust comments written by visitors or copied/edited later.
+    """
+    now = now or dt.datetime.now(dt.timezone.utc)
+    since = (now - dt.timedelta(hours=RECOVERY_APPROVAL_HOURS)).isoformat(
+        timespec="seconds").replace("+00:00", "Z")
+    raw = command(["gh", "api",
+                   f"repos/{REPO}/issues/comments?per_page=100"
+                   f"&sort=created&direction=desc&since={since}"])
+    comments = json.loads(raw)
+    if not isinstance(comments, list) or len(comments) >= 100:
+        raise RuntimeError("Inventario de autorizaciones GitHub incompleto; "
+                           "no se generará ninguna infografía.")
+    approvals: list[tuple[str, int]] = []
+    for row in comments:
+        if not isinstance(row, dict):
+            continue
+        user = row.get("user") or {}
+        if user.get("login", "").lower() != OWNER or user.get("id") != OWNER_GITHUB_ID:
+            continue
+        match = re.fullmatch(
+            r"https://api\\.github\\.com/repos/"
+            + re.escape(REPO) + r"/issues/([1-9][0-9]*)",
+            str(row.get("issue_url") or ""))
+        if not match:
+            continue
+        number = match.group(1)
+        if row.get("body") != recovery_approval_body(number):
+            continue
+        try:
+            created = dt.datetime.fromisoformat(
+                str(row["created_at"]).replace("Z", "+00:00"))
+            updated = dt.datetime.fromisoformat(
+                str(row["updated_at"]).replace("Z", "+00:00"))
+            comment_id = row["id"]
+        except (TypeError, KeyError, ValueError):
+            continue
+        if (not isinstance(comment_id, int) or isinstance(comment_id, bool)
+                or comment_id <= 0 or created != updated
+                or not (dt.timedelta(0) <= now - created
+                        <= dt.timedelta(hours=RECOVERY_APPROVAL_HOURS))):
+            continue
+        approvals.append((number, comment_id))
+    return approvals
+
+
+def poll_authorized() -> None:
+    """Reconcile safely, then permit ONE explicitly approved recovery per run.
+
+    This mode never processes new unapproved issues or retries failed jobs.
+    GitHub comments assert an operator-checked absence and restored quota.
+    The complete Studio snapshot and all original fail-closed checks still run
+    locally immediately before invoking NotebookLM.
+    """
+    reconcile_only()
+    state = load_json(STATE_PATH, {})
+    if generation_health().get("paused"):
+        print("Autorizaciones GitHub suspendidas: pausa de seguridad.")
+        return
+    if any(job.get("phase") in ("submitted", "launching")
+           for job in state.values()):
+        print("Autorizaciones en espera: todavía hay una generación activa.")
+        return
+    unresolved = {number: job for number, job in state.items()
+                  if job.get("phase") in ("deferred", "uncertain")
+                  and number not in RECOVERY_HELD_ISSUES
+                  and not job.get("github_recovery_comment_id")
+                  and int(job.get("recovery_count", 0)) == 0}
+    if not unresolved:
+        print("Sin solicitudes elegibles para una primera recuperación autorizada.")
+        return
+    for number, comment_id in github_recovery_approvals():
+        if number not in unresolved:
+            continue
+        print("Autorización GitHub verificada para #", number,
+              "(un único intento; controles locales obligatorios).")
+        recover_blocked(SimpleNamespace(
+            issue=int(number), confirm_no_artifact=True,
+            confirm_quota_restored=True,
+            github_recovery_comment_id=comment_id))
+        return
+    print("Sin nuevas autorizaciones válidas. No se ha generado nada.")
+
+
 def queue_retry_failed(args):
     """One explicit opt-in queues a confirmed failed job, without generating yet."""
     check_identity()
@@ -688,7 +787,16 @@ def launch_queued_retry(state: dict, config: dict) -> bool:
             print("Reintento #", number, "CANCELADO: el artefacto original")
             print("no consta inequívocamente como fallido. Revisión manual.")
             return False
-        job.setdefault("past_attempts", []).append({
+        # Persist the authorization BEFORE sending the remote request: a crash or
+    # timeout must never replay the same signed-off comment automatically.
+    approved_id = getattr(args, "github_recovery_comment_id", None)
+    if approved_id is not None:
+        if (not isinstance(approved_id, int) or approved_id <= 0
+                or job.get("github_recovery_comment_id")
+                or int(job.get("recovery_count", 0)) != 0):
+            raise RuntimeError("Autorización reutilizada o recuperación anterior detectada.")
+        job["github_recovery_comment_id"] = approved_id
+    job.setdefault("past_attempts", []).append({
             "artifact_id": old_id,
             "phase": "failed",
             "retry_requested_at": job.get("retry_queued_at"),
@@ -1439,6 +1547,8 @@ def main():
     safe.add_argument("--diagnose", action="store_true",
                       help="Desglosar exclusiones por libro, sin generar nada")
     sub.add_parser("reconcile-only", help="Conciliar envíos previos sin generar trabajos nuevos")
+    sub.add_parser("poll-authorized",
+                   help="Conciliar y ejecutar una sola recuperación aprobada en GitHub")
     submitted_diag = sub.add_parser("inspect-submitted",
                                     help="Inspeccionar un envío en curso sin modificar estado")
     submitted_diag.add_argument("--issue", type=int, required=True)
@@ -1490,7 +1600,7 @@ def main():
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
     args = parser.parse_args()
-    mutating = {"init", "map-book", "map-episode", "poll", "poll-safe", "reconcile-only", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations", "recover-blocked"}
+    mutating = {"init", "map-book", "map-episode", "poll", "poll-safe", "reconcile-only", "poll-authorized", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations", "recover-blocked"}
     if args.command in mutating:
         with exclusive_state_lock() as acquired:
             if not acquired:
@@ -1520,6 +1630,8 @@ def execute_command(args):
             safe_poll(args)
         elif args.command == "reconcile-only":
             reconcile_only()
+        elif args.command == "poll-authorized":
+            poll_authorized()
         elif args.command == "inspect-submitted":
             inspect_submitted(args)
         elif args.command == "status":
