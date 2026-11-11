@@ -872,6 +872,9 @@ def poll():
     if launch_queued_retry(state, config):
         return
     for number, req in next_requests(state, config):
+        if number in RECOVERY_HELD_ISSUES:
+            print("Solicitud #", number, "retenida expresamente; se pasa a la siguiente.")
+            continue
         mapping = select_mapping(config, req)
         if mapping and mapping[0] in blocked_notebooks:
             print("Solicitud #", number,
