@@ -613,6 +613,84 @@ class BridgeTests(unittest.TestCase):
         self.assertEqual(len(new), 1)
         self.assertEqual(bridge.artifact_id(new[0]), "newartifact001")
 
+    def test_recovery_preflight_is_read_only_and_does_not_certify_quota(self):
+        import argparse
+        import contextlib
+        import io
+        state = {"115": {"phase": "deferred", "notebook": "private-nb",
+                         "source_ids": ["private-source"],
+                         "before": ["oldartifact001"],
+                         "request": request(vid=VIDEO)}}
+        output = io.StringIO()
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("private-nb", ["private-source"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "oldartifact001", "status": "3"}]), \
+             patch.object(bridge, "save_json") as save, \
+             patch.object(bridge, "command") as launch:
+            with contextlib.redirect_stdout(output):
+                bridge.recovery_preflight(argparse.Namespace(issue=115))
+            save.assert_not_called()
+            launch.assert_not_called()
+        report = output.getvalue()
+        self.assertIn("Controles superados", report)
+        self.assertIn("NO certifica", report)
+        self.assertNotIn("private-nb", report)
+        self.assertNotIn("private-source", report)
+
+    def test_recovery_preflight_detects_unfinished_studio_artifact(self):
+        import argparse
+        import contextlib
+        import io
+        state = {"115": {"phase": "deferred", "notebook": "private-nb",
+                         "source_ids": ["private-source"],
+                         "before": ["oldartifact001"],
+                         "request": request(vid=VIDEO)}}
+        output = io.StringIO()
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("private-nb", ["private-source"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "oldartifact001", "status": "2"}]), \
+             patch.object(bridge, "command") as launch:
+            with contextlib.redirect_stdout(output):
+                bridge.recovery_preflight(argparse.Namespace(issue=115))
+            launch.assert_not_called()
+        self.assertIn("BLOQUEO:", output.getvalue())
+        self.assertIn("estado sin finalizar", output.getvalue())
+
+    def test_recover_blocked_rejects_pending_previous_artifact(self):
+        import argparse
+        state = {"115": {"phase": "deferred", "notebook": "private-nb",
+                         "source_ids": ["private-source"],
+                         "before": ["oldartifact001"],
+                         "request": request(vid=VIDEO)}}
+        args = argparse.Namespace(issue=115, confirm_no_artifact=True,
+                                  confirm_quota_restored=True)
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("private-nb", ["private-source"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "oldartifact001", "status": "2"}]), \
+             patch.object(bridge, "command") as launch:
+            with self.assertRaisesRegex(RuntimeError, "artefactos en curso"):
+                bridge.recover_blocked(args)
+            launch.assert_not_called()
+            self.assertEqual(state["115"]["phase"], "deferred")
+
     def test_recovery_needs_explicit_quota_and_no_artifact_confirmation(self):
         import argparse
         with self.assertRaisesRegex(ValueError, "obligatorias"):
