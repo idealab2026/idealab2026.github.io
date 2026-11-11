@@ -635,7 +635,7 @@ window.IDEA_TELARANA_USAID_PROGRAMAS = {
       "a": "usaid-ghsc",
       "b": "usaid-chemonics",
       "type": "Contrato · adjudicatario del proyecto GHSC-PSM",
-      "note": "Chemonics fue el ejecutor principal del contrato GHSC-PSM analizado por USAID OIG en 2021.",
+      "note": "Chemonics fue el adjudicatario principal y ejecutor del contrato GHSC-PSM sobre suministro y gestión de productos sanitarios; USAID OIG examinó en 2021 tanto el procedimiento de adjudicación como el control de resultados y formuló recomendaciones para mejorar la supervisión.",
       "source": "https://oig.usaid.gov/node/4667",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
