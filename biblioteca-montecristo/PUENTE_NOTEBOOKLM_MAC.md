@@ -415,3 +415,42 @@ validará el PNG; si hay varios candidatos, no se atribuye ninguno sin una
 comprobación editorial inequívoca. No se muestran identificadores de
 cuadernos ni artefactos privados. El inventario de Studio no demuestra por
 sí solo que un trabajo se esté ejecutando activamente.
+
+## Conciliación automática segura (sin comandos repetitivos en Terminal)
+
+El repositorio y las incidencias son públicos, pero NotebookLM requiere
+autenticación personal y el inventario de Studio, los IDs y los PNG permanecen
+en el Mac. Por ello, GitHub Actions alojado por GitHub **no puede descargar
+directamente** esas imágenes. Tampoco se deben subir cookies ni credenciales
+de NotebookLM a los secretos de un repositorio público para este propósito.
+
+El Mac puede descargar por sí solo las generaciones ya enviadas cada 3 minutos,
+mientras esté despierto y el usuario haya iniciado sesión. Activar una sola
+vez el agente de **conciliación exclusivamente**:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/test_notebooklm_bridge.py -q
+python3 scripts/notebooklm_bridge_launchd.py install-reconcile
+```
+
+Este comando sustituye el modo previo de LaunchAgent del puente, si existía.
+La tarea periódica ejecuta **únicamente `reconcile-only`** y, por tanto,
+no invoca `poll`, `poll-safe --execute` ni `recover-blocked`. Se limita
+a buscar artefactos de solicitudes ya enviadas, descargar y validar los PNG
+completados y sincronizar los comentarios de descarga en las incidencias de
+GitHub. Puede comprobarse desde GitHub que la incidencia correspondiente
+incluya el mensaje de descarga; esto NO publica el archivo.
+
+Desinstalarlo en cualquier momento:
+
+```bash
+python3 scripts/notebooklm_bridge_launchd.py remove
+```
+
+No se pueden desbloquear de forma segura las solicitudes `deferred` o
+`uncertain` únicamente porque una consulta no encuentre artefactos. Esos
+casos requieren revisión y confirmación explícita de cuota antes de generar
+de nuevo. La publicación de un PNG en la web sigue necesitando aprobación
+editorial previa, porque el archivo local aún no ha sido revisado.
