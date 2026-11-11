@@ -6,7 +6,7 @@
   "counts": {
     "reviewedPublished": 3,
     "inReview": 26,
-    "notStarted": 37,
+    "notStarted": 40,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -3528,7 +3528,9 @@
       "source8FalsePositiveCorrected": true,
       "report": "CI artifact telarana-auditoria-cobertura-66-fuentes (not deployed publicly)",
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43053686142",
-      "status": "cobertura estructural actualizada, transcripciones pendientes y contraste individual sin completar"
+      "status": "cobertura estructural actualizada, transcripciones pendientes y contraste individual sin completar",
+      "originalCatalogNotStarted": 40,
+      "methodologicalCounts": "counts.notStarted cuenta entradas originales (69 menos cerradas y abiertas); allSourcesCoverageAudit.canonicalNotStarted excluye los tres duplicados. No mezclar ambos denominadores."
     },
     "source26And27Initial": {
       "date": "2026-11-11",
