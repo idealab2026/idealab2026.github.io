@@ -57,6 +57,26 @@ class SourceAuditTests(unittest.TestCase):
             self.assertNotIn(private, public)
         self.assertIn("ALERTA", public)
 
+    def test_general_infographic_validates_whole_notebook_without_episode_sources(self):
+        job = {"phase": "failed", "request": {"book": "psicologia-dinero", "video_id": None, "volume": None},
+               "notebook": "private-notebook", "source_ids": [], "artifact_id": "art"}
+        source_rows = [{"id": "s1", "title": "Libro", "status": "ready"}]
+        with (
+            patch.object(audit, "load_json", return_value={"105": job}),
+            patch.object(audit, "private_config", return_value={}),
+            patch.object(audit, "select_mapping", return_value=("private-notebook", [])),
+            patch.object(audit, "find_item", return_value=({"slug": "psicologia-dinero"}, None)),
+            patch.object(audit, "command", side_effect=["{}", json.dumps(source_rows)]),
+            patch.object(audit, "source_objects", side_effect=json.loads),
+            patch.object(audit, "source_id", side_effect=lambda row: row["id"]),
+            patch.object(audit, "infographic_rows", return_value=[]),
+        ):
+            result = audit.inspect_issue(105)
+        self.assertEqual(result["result"], "inspected")
+        self.assertEqual(result["kind"], "general")
+        self.assertEqual(result["present_sources"], 1)
+        self.assertFalse(result["empty_notebook"])
+
     def test_nonfailed_jobs_never_touched(self):
         with patch.object(audit, "load_json", return_value={"201": {"phase": "submitted"}}), \
              patch.object(audit, "command") as cmd:
