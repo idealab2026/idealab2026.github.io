@@ -20,7 +20,16 @@
       },
       "sources": {
         "22": [
-          "En el episodio se presentan argumentos sobre Ceuta, Marruecos, Gibraltar y el Estrecho, con conjeturas sobre supuestos acuerdos o estrategias internacionales que la fuente no documenta por sí sola."
+          {
+            "topic": "Conjetura sobre pactos secretos y el Estrecho",
+            "speaker": "Interlocutor de F22 (atribución de voz no cotejada)",
+            "statement": "Un participante del programa plantea que las tensiones sobre Ceuta, Marruecos y Gibraltar responderían a acuerdos decididos en despachos y a una estrategia para modificar el control del Estrecho. El fragmento utiliza afirmaciones tajantes, pero no aporta contratos, actas ni pruebas de tales pactos. La mención se archiva como alegación de la conversación y no como hecho corroborado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "es una cuestión geopolítica y de alta política que se está realizand"
+          }
         ]
       }
     },
@@ -32,7 +41,16 @@
       },
       "sources": {
         "22": [
-          "El entrevistado es interpelado por su nombre y participa en el intercambio sobre Ceuta, la opinión pública y los escenarios de seguridad en el Estrecho; la transcripción no permite asignar todos los turnos con certeza."
+          {
+            "topic": "Hipótesis sobre confrontación social y guerra híbrida",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "El debate dirigido a Rubén Gisbert sostiene que una polarización social sobre Ceuta podría facilitar decisiones desfavorables para la soberanía española. La conversación interpreta ese supuesto mecanismo como guerra híbrida u operación psicológica. La transcripción registra el intercambio, pero no distingue con fiabilidad todos los turnos ni demuestra que exista una operación coordinada.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Rubén que crean el problema para que es es una labor de zapa psicoló"
+          }
         ]
       }
     },
@@ -44,7 +62,16 @@
       },
       "sources": {
         "22": [
-          "Los interlocutores critican la posición del Gobierno español ante Marruecos e interpretan determinadas decisiones como parte de un plan geopolítico; la fuente no acredita la existencia de un acuerdo secreto."
+          {
+            "topic": "Acusación de conocimiento de un supuesto acuerdo territorial",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "Un hablante relaciona las vacaciones de Pedro Sánchez con su hipótesis de que existiría un acuerdo previo sobre el futuro de Ceuta y el Estrecho de Gibraltar. Afirma que los dirigentes estarían tranquilos porque el asunto ya estaría resuelto en privado. El episodio no presenta documentos ni testimonios verificables que permitan atribuir al presidente conocimiento o participación en tal acuerdo.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Pedro Sánchez esté de vacaciones están muy tranquilos porque esto ya"
+          }
         ]
       }
     },
@@ -56,7 +83,16 @@
       },
       "sources": {
         "22": [
-          "Es mencionado de forma crítica al hablar de representantes del independentismo y de sus comentarios públicos sobre Ceuta y Marruecos."
+          {
+            "topic": "Crítica a la posición de representantes independentistas",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "En un pasaje sobre la reacción pública a Ceuta y Marruecos, un participante critica a Gabriel Rufián y otros representantes del independentismo por lo que interpreta como falta de pronunciamientos. El comentario expresa una opinión sobre su actitud política. La ausencia efectiva de declaraciones públicas no se puede establecer a partir de la sola intervención del programa.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Como el Rufián y toda esta gente ¿tú te das cuenta que ninguno ha ab"
+          }
         ]
       }
     },
@@ -68,7 +104,16 @@
       },
       "sources": {
         "22": [
-          "La fuente lo menciona en una comparación retrospectiva con las campañas de comunicación durante el final de la presencia española en el Sáhara Occidental."
+          {
+            "topic": "Analogía con la cobertura mediática del Sáhara en 1975",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "Un participante menciona al periodista Emilio Romero, asociado a la prensa franquista, al comparar los discursos actuales sobre Ceuta con los argumentos utilizados en torno a la salida española del Sáhara Occidental en 1975. Le atribuye funciones de apoyo propagandístico a intereses políticos de entonces, pero el episodio no ofrece documentos que permitan verificar cada una de esas actuaciones.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "como el Emilio Romero que era la prensa del régimen etcétera etcéter"
+          }
         ]
       }
     },
@@ -80,7 +125,16 @@
       },
       "sources": {
         "22": [
-          "En la conversación se formulan afirmaciones sobre sus actuaciones en noviembre de 1975 y se insinúa una conexión con Henry Kissinger; esos pormenores no quedan verificados por la transcripción."
+          {
+            "topic": "Versión controvertida sobre el Sáhara y noviembre de 1975",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "Un hablante sostiene que Juan Carlos I habría viajado a Washington para reunirse con Henry Kissinger inmediatamente después de dirigirse a militares españoles en El Aaiún, y que esa reunión habría servido para organizar la Marcha Verde. La secuencia cronológica y la causalidad afirmadas no están documentadas en la fuente; se conserva exclusivamente como acusación no verificada.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se reúne con Kissinger y le organiza la marcha verde para poder real"
+          }
         ]
       }
     },
@@ -92,7 +146,16 @@
       },
       "sources": {
         "22": [
-          "Se le menciona en una versión de los acontecimientos de la Marcha Verde de 1975, atribuyéndole contactos con el entonces príncipe Juan Carlos; el episodio no aporta prueba independiente de la reunión narrada."
+          {
+            "topic": "Supuesto encuentro de 1975 atribuido al entorno estadounidense",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "En una reconstrucción de los acontecimientos del Sáhara de noviembre de 1975, un participante afirma que el entonces príncipe Juan Carlos viajó a Washington y se reunió con Henry Kissinger, vinculando la presunta reunión a la Marcha Verde. El episodio no identifica documentos de viaje ni archivos diplomáticos que prueben esa secuencia; no debe presentarse como hecho acreditado.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "se reúne con Kissinger y le organiza la marcha verde para poder real"
+          }
         ]
       }
     },
@@ -104,7 +167,16 @@
       },
       "sources": {
         "22": [
-          "El diálogo critica su política industrial y económica durante la integración de España en las instituciones comunitarias europeas."
+          {
+            "topic": "Crítica a la reconversión industrial y adhesión europea",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "El diálogo menciona a Felipe González al criticar los costes industriales y sectoriales asociados a la incorporación de España a las Comunidades Europeas. El hablante sostiene que la apertura comercial implicó una pérdida de capacidad productiva y contrasta ese proceso con los fondos recibidos. Son valoraciones económicas de la fuente; sus magnitudes y relaciones causales exigen series estadísticas independientes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en la época de Felipe González entró en la Comunidad Europea económi"
+          }
         ]
       }
     },
@@ -116,7 +188,16 @@
       },
       "sources": {
         "22": [
-          "La fuente parece referirse a Netanyahu mediante la forma fonética «Tanahu» al expresar su hipótesis sobre intereses internacionales en el Estrecho; se requiere confirmar la identificación con el audio."
+          {
+            "topic": "Hipótesis sobre influencia israelí en Marruecos",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "Un participante sugiere que Marruecos actuaría en beneficio de alguien cuyo apellido se transcribe como «Tanahu», junto a Donald Trump. El contexto apunta a Benjamin Netanyahu, pero requiere cotejo del audio para confirmar la identificación. El fragmento no prueba subordinación de Marruecos a dirigentes israelíes o estadounidenses ni un pacto territorial secreto.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "está actuando en beneficio de de Tanahu y de Trump esto que has leíd"
+          }
         ]
       }
     },
@@ -128,7 +209,16 @@
       },
       "sources": {
         "22": [
-          "Se le menciona junto a responsables de Israel y Marruecos al presentar una interpretación sobre alianzas y control del Estrecho de Gibraltar."
+          {
+            "topic": "Hipótesis sobre coordinación de Marruecos con otros gobiernos",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "La conversación relaciona a Donald Trump con la tesis de que Marruecos estaría actuando al servicio de intereses internacionales vinculados al Estrecho de Gibraltar. Se invoca también a un dirigente israelí de nombre deformado por el ASR. Estas afirmaciones expresan la interpretación del hablante y no acreditan una operación dirigida por Washington.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "de de Tanahu y de Trump esto que has leído coronel me parece que es "
+          }
         ]
       }
     },
@@ -140,7 +230,16 @@
       },
       "sources": {
         "22": [
-          "El episodio se refiere a unas declaraciones atribuidas a «Marwenda» sobre Ceuta y Melilla; la identificación fonética y el contenido exacto necesitan cotejo audiovisual."
+          {
+            "topic": "Crítica a unas declaraciones atribuidas a un comentarista",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "El episodio critica unas declaraciones atribuidas a «Marwenda», referencia fonética que podría corresponder al periodista Francisco Marhuenda, sobre la historia de Ceuta y Melilla. Se le imputa una determinada posición, pero la transcripción no contiene el clip original ni permite certificar el nombre o sus palabras exactas. La identificación y el contenido permanecen pendientes de comprobación.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "unas declaraciones de Marwenda se puede ser más abto más ruin dicien"
+          }
         ]
       }
     },
@@ -152,7 +251,16 @@
       },
       "sources": {
         "22": [
-          "La conversación alude a una supuesta «enmienda Buxadé» sobre control biométrico; la fuente no identifica el texto normativo ni verifica su formulación exacta."
+          {
+            "topic": "Afirmación sobre control biométrico y una supuesta enmienda",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "El hablante menciona una supuesta «enmienda Buxadé» y la asocia con propuestas de identificación biométrica, escaneo de retina y digitalización de controles de seguridad. No ofrece una referencia a la norma, enmienda parlamentaria o programa electoral concreto. El episodio no demuestra que Jorge Buxadé haya propuesto esas medidas en los términos descritos.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "la enmienda Buxadé que está en el programa electoral de Vox que por "
+          }
         ]
       }
     },
@@ -164,7 +272,16 @@
       },
       "sources": {
         "22": [
-          "Es mencionado dentro de una reconstrucción histórica sobre el Sáhara Occidental y de comparaciones con decisiones gubernamentales posteriores."
+          {
+            "topic": "Valoración histórica sobre el Sáhara y la ONU",
+            "speaker": "Interlocutor de F22 (diarización audiovisual pendiente)",
+            "statement": "Un participante afirma que Francisco Franco obtuvo en Naciones Unidas una posición favorable a España en relación con el Sáhara y que posteriores decisiones de otros países alteraron el resultado. La expresión es ambigua y no identifica resolución ni votación concreta. Debe contrastarse con los documentos de la ONU y el proceso de descolonización antes de transformarla en un hecho histórico.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "en su momento Franco lo ganó en Naciones Unidas y luego le hicieron "
+          }
         ]
       }
     }
