@@ -20,7 +20,8 @@ for(const e of feed.items){
  feedIds.add(e.id);
  const inv=e.investigation||{};
  assert(inv.status==="hecho_documentado","Solo se pueden publicar hechos contrastados");
- assert(/^\d{4}-\d{2}(?:-\d{2})?$/.test(inv.date||""),"Fecha inválida");
+ assert(/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(inv.date||""),"Fecha inválida");
+ if(inv.datePrecision==="año")assert(/^\d{4}$/.test(inv.date),"No inventar mes o día para hitos anuales");
  const year=Number(inv.date.slice(0,4));
  assert(Math.floor(e.y)===year,"El año del eje no coincide con la fecha");
  assert(e.c==="Acontecimientos"||e.c==="Actualidad","Categoría histórica inválida");
