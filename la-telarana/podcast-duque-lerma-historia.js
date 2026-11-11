@@ -8,8 +8,8 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
     "notebookSourceId": "cf6676bf-420f-4a68-b9a5-ce9611337724",
     "guest": "Margarita Torres Sevilla",
     "host": "Pedro Baños",
-    "reviewStage": "contexto_historico_5_capitulos_primarias_y_academicas_transcripcion_pendiente",
-    "transcriptAvailable": false,
+    "reviewStage": "texto_ASR_completo_recuperado_primeras_cuatro_notas_atribuidas_y_biografias_en_revision",
+    "transcriptAvailable": true,
     "chapterTimecodesVerifiedFromDescription": true,
     "minutesAreChapterBeginningsNotQuoteTimestamps": true,
     "sourceDocUrl": "https://docs.google.com/document/d/1Ac09bBMLeIit4AJrhYyyPswEO_MZmd5JfN6IgrbvsWQ/edit?usp=drivesdk",
@@ -44,7 +44,10 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
         "timeSec": 4885
       }
     ],
-    "methodologicalNote": "Fuente04 de historia: afirmaciones del episodio aún no analizadas por falta de subtítulos; datos contextuales proceden de PARES, Archivo de Simancas, RAH, Congreso y artículo académico. No se añaden vínculos basados en el vídeo que no puedan inferirse del mero índice."
+    "methodologicalNote": "Texto ASR íntegro recuperado y conservado en Drive; las cuatro nuevas aportaciones no tienen minutaje/audio cotejado. Las identidades ambiguas y juicios históricos se clasifican como atribuciones, no como hechos independientes. Los siete hitos previos de la Línea de la Historia mantienen sus fuentes documentales externas.",
+    "transcriptStoredPrivately": true,
+    "transcriptCharacters": 84334,
+    "transcriptPrivateDocVerifiedDate": "2026-11-11"
   },
   "nodes": [
     {
@@ -129,6 +132,15 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
           "source": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/45072",
           "status": "contexto-externo-verificado",
           "text": "El canal marca el inicio de este capítulo en su descripción; el siguiente es contexto independiente y NO una transcripción del vídeo. Secretario real de Felipe II y figura central de las tensiones cortesanas de finales del siglo XVI. El Archivo Histórico Nacional documenta su detención en julio de 1579 y su huida hacia Aragón en 1590, antecedente de las alteraciones aragonesas de 1591. Las actuaciones exactas y las responsabilidades penales deben leerse en su contexto histórico y en sus documentos."
+        },
+        {
+          "episodeId": "canal-coronel-margarita-torres-lerma-2024-04-04",
+          "title": "Fuente 04 · lectura editorial de transcripción ASR, no cita minutada",
+          "publishedAt": "2024-04-04",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+          "status": "alegacion",
+          "text": "Pasaje textual identificable «nos ibas a hablar de Antonio Pérez ¿verdad sí menuda joyita eh de la corona». La historiadora describe a Antonio Pérez, secretario de Felipe II, como protagonista de las disputas cortesanas. Los juicios morales sobre su carácter pertenecen a la entrevista; los hechos comprobables se apoyan por separado en la documentación del Archivo Histórico Nacional. Audio y hablante exacto sin cotejo audiovisual."
         }
       ]
     },
@@ -176,12 +188,12 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
     },
     {
       "id": "f04-villamizar-epigrafe",
-      "name": "«Pedro de Villamizar» · identidad por determinar",
-      "kind": "Tema",
-      "subtitle": "Epígrafe del minuto 29:50 · sin desambiguación documental",
-      "note": "La descripción de YouTube contiene literalmente el encabezado «Pedro de Villamizar» desde el minuto 29:50. Las búsquedas abiertas no permiten identificar a una persona histórica inequívoca con ese nombre. Este es un tema editorial sin identificación biográfica; NO debe relacionarse con los marqueses de Villamizar ni inventarse un personaje.",
+      "name": "Pedro de Villamizar (León, 1607; identificación parcial)",
+      "kind": "Persona",
+      "subtitle": "Personaje histórico citado por Margarita Torres · identidad exacta por verificar",
+      "note": "En la transcripción ASR de la fuente 04, Margarita Torres se refiere a un «Pedro de Villamizar y Tobar» y narra su intervención en un concejo municipal leonés en agosto de 1607, junto con circunstancias de su muerte. Un estudio académico de Studia Historica (2019) documenta que un Pedro de Villamizar fue asesinado en León en 1607, y una genealogía menciona a un Pedro de Villamizar y Tovar. Las coincidencias sugieren una identificación, pero no prueban todavía sin cotejo de partidas y actas municipales que el personaje de la entrevista sea inequívocamente el mismo de ambas publicaciones. La forma «Tobar» puede ser deformación ASR de «Tovar».",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+      "source": "https://revistas.usal.es/uno/index.php/Studia_Historica/article/download/shhmo201941271101/21520/74321",
       "topic3d": "politica",
       "podcastNotes": [
         {
@@ -192,6 +204,15 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
           "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
           "status": "contexto-externo-verificado",
           "text": "El canal marca el inicio de este capítulo en su descripción; el siguiente es contexto independiente y NO una transcripción del vídeo. La descripción de YouTube contiene literalmente el encabezado «Pedro de Villamizar» desde el minuto 29:50. Las búsquedas abiertas no permiten identificar a una persona histórica inequívoca con ese nombre. Este es un tema editorial sin identificación biográfica; NO debe relacionarse con los marqueses de Villamizar ni inventarse un personaje."
+        },
+        {
+          "episodeId": "canal-coronel-margarita-torres-lerma-2024-04-04",
+          "title": "Fuente 04 · lectura editorial de transcripción ASR, no cita minutada",
+          "publishedAt": "2024-04-04",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+          "status": "alegacion",
+          "text": "Pasaje textual identificable «Pedro de Villamizar y Tobar pertenecía a una familia podríamos decir de la ». La fuente menciona a «Pedro de Villamizar y Tobar» en relación con una discusión sobre impuestos municipales y pobreza en León hacia agosto de 1607. La identidad exacta queda en revisión; la mención no constituye prueba de cada detalle del relato. Audio y hablante exacto sin cotejo audiovisual."
         }
       ]
     },
@@ -284,7 +305,7 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
       "name": "María Cristina de Borbón-Dos Sicilias",
       "kind": "Persona",
       "subtitle": "Reina regente de España (1833–1840) · 1806–1878",
-      "note": "Viuda de Fernando VII, madre de Isabel II y regente de España tras la muerte del rey en 1833. Posteriormente se casó con Fernando Muñoz, con quien mantuvo negocios e inversiones que han sido objeto de análisis académico. El artículo de López-Morell estudia patrimonios y redes empresariales mediante fuentes primarias, sin equivaler a una sentencia penal contemporánea.",
+      "note": "Viuda de Fernando VII, madre de Isabel II y regente de España tras la muerte del rey en 1833. Posteriormente se casó con Fernando Muñoz, con quien mantuvo negocios e inversiones que han sido objeto de análisis académico. El artículo de López-Morell estudia patrimonios y redes empresariales mediante fuentes primarias, sin equivaler a una sentencia penal contemporánea. La transcripción automática del episodio se refiere por momentos a «Fernando VI», pero la reina María Cristina de Borbón-Dos Sicilias fue consorte de Fernando VII, fallecido en 1833, como confirma la Real Academia de la Historia. El lapsus o error ASR no se incorpora como dato histórico.",
       "photo": "https://www.filodiritto.com/sites/default/files/2025-03/foto_2_3.jpg",
       "source": "https://doi.org/10.55509/ayer/1099",
       "topic3d": "historia",
@@ -297,6 +318,15 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
           "source": "https://doi.org/10.55509/ayer/1099",
           "status": "contexto-externo-verificado",
           "text": "El canal marca el inicio de este capítulo en su descripción; el siguiente es contexto independiente y NO una transcripción del vídeo. Viuda de Fernando VII, madre de Isabel II y regente de España tras la muerte del rey en 1833. Posteriormente se casó con Fernando Muñoz, con quien mantuvo negocios e inversiones que han sido objeto de análisis académico. El artículo de López-Morell estudia patrimonios y redes empresariales mediante fuentes primarias, sin equivaler a una sentencia penal contemporánea."
+        },
+        {
+          "episodeId": "canal-coronel-margarita-torres-lerma-2024-04-04",
+          "title": "Fuente 04 · lectura editorial de transcripción ASR, no cita minutada",
+          "publishedAt": "2024-04-04",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+          "status": "alegacion",
+          "text": "Pasaje textual identificable «María Cristina de Borbón dos Sicilias María Cristina de Borpón es la viuda ». La conversación presenta a la regente María Cristina y relata actividades de su entorno familiar. El ASR confunde el ordinal de Fernando VII, que debe rectificarse según la biografía académica. Las interpretaciones sobre motivaciones privadas quedan atribuidas, no acreditadas. Audio y hablante exacto sin cotejo audiovisual."
         }
       ],
       "photoCredit": "Retrato histórico de María Cristina de Borbón · Vicente López"
@@ -361,6 +391,15 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
           "source": "https://www.congreso.es/es/cem/vidparl1933",
           "status": "contexto-externo-verificado",
           "text": "El canal marca el inicio de este capítulo en su descripción; el siguiente es contexto independiente y NO una transcripción del vídeo. Caso político que estalló en 1935 por las autorizaciones de una ruleta promovida por Daniel Strauss y sus socios. El Congreso conserva el expediente de una comisión investigadora que contrastó documentos aportados por Strauss y censuró conductas de diversos responsables públicos. El término «estraperlo» derivó después a otro significado relacionado con el comercio clandestino."
+        },
+        {
+          "episodeId": "canal-coronel-margarita-torres-lerma-2024-04-04",
+          "title": "Fuente 04 · lectura editorial de transcripción ASR, no cita minutada",
+          "publishedAt": "2024-04-04",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
+          "status": "alegacion",
+          "text": "Pasaje textual identificable «la palabra straperlo nace de una ruleta que acabó por causar el final de y ». El episodio explica el origen del término «estraperlo» en el escándalo de una ruleta de 1935. Se conserva el comentario interpretativo de la fuente, mientras que la existencia de la comisión investigadora se acredita con los archivos del Congreso. Audio y hablante exacto sin cotejo audiovisual."
         }
       ]
     },
