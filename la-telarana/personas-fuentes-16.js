@@ -114,7 +114,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "En el episodio se la cita al especular sobre cómo podría evolucionar su conducta política si llegase a gobernar; se trata de una hipótesis expresada en la conversación."
+          {
+            "topic": "Conjeturas sobre Alternativa para Alemania y el acceso al poder",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "Un interlocutor cita a la dirigente de AfD Alice Weidel, cuyo apellido aparece deformado en la transcripción automática como «Bidel». Pronostica que, si llegara a gobernar, modificaría sus posiciones de modo parecido a otros dirigentes. La hipótesis incluye insinuaciones sobre presiones políticas, para las que el episodio no presenta pruebas verificables.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Alice Bidel AFD no es que"
+          }
         ]
       }
     },
@@ -126,7 +135,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "Los interlocutores comentan su evolución de discurso y su trayectoria de gobierno, interpretándolas desde su teoría sobre incentivos y presiones políticas."
+          {
+            "topic": "Hipótesis sobre moderación política de una dirigente al gobernar",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "El episodio comenta que Giorgia Meloni habría moderado su discurso después de acceder al Gobierno italiano. El participante interpreta ese cambio como resultado de incentivos y presiones del ejercicio del poder. También especula sobre motivaciones privadas de otros dirigentes, sin aportar documentación para acreditarlas. Se conserva la crítica política sin convertir sus conjeturas en hechos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Meloni que la elogiaban porque decía"
+          }
         ]
       }
     },
@@ -150,7 +168,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "En el episodio se discute su política hacia Marruecos y el Sáhara Occidental, y se plantea una interpretación de intereses económicos y diplomáticos sin demostrar relaciones ilícitas."
+          {
+            "topic": "Marruecos, intereses empresariales y política sobre el Sáhara",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "En el debate se sostiene que los intereses empresariales españoles podrían influir sobre la política de Pedro Sánchez respecto a Marruecos. El hablante añade que no haría falta disponer de información obtenida mediante Pegasus para ejercer influencia política y critica la posición española sobre el Sáhara Occidental. Se trata de su interpretación; no se demuestra chantaje, vigilancia ni financiación ilícita.",
+            "status": "alegacion_no_verificada",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Pedro Sánchez ni obtenido mediante Pegasus ni mediante nada"
+          }
         ]
       }
     },
@@ -162,7 +189,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "La conversación crítica la actuación de su Gobierno y discute la guerra en Oriente Medio; las valoraciones de los participantes se presentan como posiciones de la fuente."
+          {
+            "topic": "Críticas al Gobierno israelí y a la guerra en Oriente Medio",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "El episodio distingue entre las personas que profesan una religión y la crítica política a las decisiones del Gobierno de Benjamin Netanyahu. Un participante menciona organismos internacionales para defender la legitimidad de cuestionar su actuación durante la guerra. El comentario no demuestra por sí solo ninguna afirmación adicional que aparezca en otras partes de la conversación.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "gobierno Netanyahu que por supuesto tenemos todo el derecho"
+          }
         ]
       }
     },
@@ -174,7 +210,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "En la fuente se comentan declaraciones suyas sobre la guerra de Ucrania y la seguridad europea, cuya interpretación se atribuye a los interlocutores."
+          {
+            "topic": "Interpretación de declaraciones sobre negociaciones de Ucrania",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "Uno de los participantes comenta unas declaraciones atribuidas a Vladímir Putin sobre la guerra de Ucrania y las compara con su postura anterior, que vinculaba una solución a acuerdos generales de seguridad. A partir de ese contraste deduce un cambio estratégico ruso y de sus expectativas sobre Estados Unidos. El programa no incorpora la declaración oficial íntegra para corroborar esa lectura.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Putin siempre ha dicho \"La guerra de Ucrania terminará necesitamos"
+          }
         ]
       }
     },
@@ -186,7 +231,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "Los participantes comentan su papel en la guerra y formulan conjeturas sobre su autonomía y continuidad política; el episodio no acredita esas conjeturas."
+          {
+            "topic": "Valoraciones sobre la autonomía política de Ucrania",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "Los participantes describen a Volodímir Zelenski y a dirigentes europeos como figuras políticamente sustituibles y sostienen que su margen de decisión depende de otras potencias. En otro tramo especulan sobre posibles elecciones y la continuidad del presidente ucraniano. Estas expresiones son opiniones de la conversación y no acreditan control externo ni un plan para sustituirlo.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Zelenski son dos piezas ir dos títeres totalmente sustituibles"
+          }
         ]
       }
     },
@@ -222,7 +276,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "La fuente cita una intervención suya sobre reivindicaciones territoriales marroquíes relacionadas con Ceuta; las palabras deben cotejarse con el registro original."
+          {
+            "topic": "Declaraciones territoriales atribuidas a un ministro marroquí",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "Un participante cita una noticia sobre Nizar Baraka, al que presenta como ministro marroquí de Obras Públicas y Agua, y le atribuye declaraciones relativas a la reclamación de Ceuta y Melilla. La frase es reproducida por el interlocutor a partir de un titular: la transcripción del programa no sustituye al registro original del discurso o de la entrevista del ministro.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Nizar Baraca ministro de obras públicas y agua de Marruecos insiste en la reclamación"
+          }
         ]
       }
     },
@@ -246,7 +309,16 @@ const extra={
       },
       "sources": {
         "16": [
-          "Los participantes comentan su política europea y su posición histórica sobre el Sáhara Occidental desde una interpretación crítica de sus decisiones."
+          {
+            "topic": "Política española hacia el Sáhara y relación con Europa",
+            "speaker": "Interlocutor de F16; voz no cotejada",
+            "statement": "La conversación critica las posiciones históricas sobre el Sáhara Occidental de Juan Carlos I, Felipe González y Pedro Sánchez. En otro tramo, un hablante atribuye a González acuerdos con la Alemania de Helmut Kohl vinculados a la integración europea de España. Son valoraciones y afirmaciones de los participantes, pendientes de cotejo documental individual.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Felipe González y después Pedro Sánchez que no don Pedro"
+          }
         ]
       }
     },
