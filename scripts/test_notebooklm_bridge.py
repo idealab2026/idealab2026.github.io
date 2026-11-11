@@ -959,5 +959,23 @@ class BridgeTests(unittest.TestCase):
         self.assertIn("SOLO las fuentes", bridge.build_prompt(request(vid=VIDEO)))
 
 
+    def test_reconcile_launch_agent_never_dispatches_new_generations(self):
+        import notebooklm_bridge_launchd as launchd
+        cfg = launchd.agent_config("reconcile-only")
+        self.assertEqual(cfg["ProgramArguments"][-1], "reconcile-only")
+        self.assertEqual(cfg["StartInterval"], 180)
+        self.assertTrue(cfg["RunAtLoad"])
+        self.assertNotIn("poll", cfg["ProgramArguments"])
+        self.assertNotIn("recover-blocked", cfg["ProgramArguments"])
+
+    def test_launch_agent_preserves_existing_mode_and_rejects_unknown(self):
+        import notebooklm_bridge_launchd as launchd
+        self.assertEqual(launchd.agent_config("poll")["ProgramArguments"][-1],
+                         "poll")
+        with self.assertRaises(ValueError):
+            launchd.agent_config("recover-blocked")
+
+
+
 if __name__ == "__main__":
     unittest.main()
