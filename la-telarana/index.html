@@ -1055,7 +1055,8 @@ function showTimelineForNode(panel,node){
   link.href="../linea-historia/?evento="+encodeURIComponent(event.id);
   link.target="_blank";link.rel="noopener noreferrer";
   var date=event.investigation.date||String(Math.floor(event.y));
-  link.append(N("small",date+" · hecho contrastado"));
+  var timeTag=event.investigation.temporalRelationToSource==="posterior_al_episodio"?" · posterior a la entrevista":event.investigation.temporalRelationToSource==="fecha_de_la_fuente"?" · fecha de la fuente":"";
+  link.append(N("small",date+" · hecho contrastado"+timeTag));
   link.append(N("strong",event.t));
   section.append(link);
  });
@@ -1109,6 +1110,7 @@ function showNodeRelationships(panel,node){
   head.append(N("span",relationStatusLabel(edge),"relation-certainty"));
   btn.append(head);
   btn.append(N("span",edge.type||"Relación","relation-type"));
+  if(edge.temporalContext==="posterior_a_entrevista")btn.append(N("span","Contexto posterior a la entrevista: no atribuir al invitado","relation-extract"));
   if(Array.isArray(edge.relatedTypes)&&edge.relatedTypes.length)btn.append(N("span","También: "+edge.relatedTypes.join(" · "),"relation-extract"));
   if(edge.note){
    var note=String(edge.note),excerpt=note.length>175?note.slice(0,172)+"…":note;
