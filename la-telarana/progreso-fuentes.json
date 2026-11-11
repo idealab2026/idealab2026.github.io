@@ -3461,11 +3461,11 @@
     "transcriptAnchorsMatchedTotal": 320,
     "transcriptAnchorsUnmatched": 11,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
-    "latestAuditedGraphEntities": 612,
-    "latestAuditedGraphLinks": 940,
-    "latestAuditedGraphSourceMentions": 466,
-    "latestAuditedGraphOtherRelations": 474,
-    "latestAuditedGraphExternallyClassifiedRelations": 103,
+    "latestAuditedGraphEntities": 622,
+    "latestAuditedGraphLinks": 957,
+    "latestAuditedGraphSourceMentions": 473,
+    "latestAuditedGraphOtherRelations": 484,
+    "latestAuditedGraphExternallyClassifiedRelations": 113,
     "latestAuditedGraphPeopleWithoutIndependentBiographicalSource": 245,
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
@@ -3601,7 +3601,7 @@
       "fullTranscriptsAvailableButAudioUnverified": true,
       "source8FalsePositiveCorrected": true,
       "report": "CI artifact telarana-auditoria-cobertura-66-fuentes (not deployed publicly)",
-      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43067408609",
+      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43070269588",
       "status": "Structural checks passed; F29 ASR parcial externo, reclamaciones no verificadas",
       "originalCatalogNotStarted": 38,
       "methodologicalCounts": "counts.notStarted cuenta entradas originales (69 menos cerradas y abiertas); allSourcesCoverageAudit.canonicalNotStarted excluye los tres duplicados. No mezclar ambos denominadores."
@@ -3687,7 +3687,14 @@
       "transcriptDocCreated": false,
       "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
       "audioVerified": false,
-      "methodologicalLimits": "La entrevista fue anterior al 24/02/2022. Antecedentes 2015 y enero de 2022 se distinguen del contexto posterior; no atribuir predicciones ni conocimiento de documentos posteriores al entrevistado. Soros-OSF es vínculo institucional y no relación con conflictos internacionales."
+      "methodologicalLimits": "La entrevista fue anterior al 24/02/2022. Antecedentes 2015 y enero de 2022 se distinguen del contexto posterior; no atribuir predicciones ni conocimiento de documentos posteriores al entrevistado. Soros-OSF es vínculo institucional y no relación con conflictos internacionales.",
+      "actualLoadedNewNodes": 10,
+      "actualLoadedNewLinks": 17,
+      "actualIndependentlyClassifiedNewLinks": 10,
+      "actualMentionNewLinks": 7,
+      "lastVerifiedWorkflow": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43070269588",
+      "loadedSuccessfully": true,
+      "temporalDisplayPendingCheck": true
     }
   }
 }
