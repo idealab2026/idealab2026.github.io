@@ -14,7 +14,7 @@ window.IDEA_TELARANA_F29_REVIEW = {
     "editorialDossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
     "audioVerified": false,
     "minuteVerified": false,
-    "methodologicalNote": "Los primeros pasajes revisados proceden de una transcripción ASR externa y deben cotejarse con el vídeo. Seis relaciones públicas documentadas (una entidad, dos subvenciones, un fondo presupuestario, fiscalización parlamentaria y nombramiento en BOE). Seis enlaces editoriales no prueban coordinación del MI6, servicios secretos, plataformas, Soros ni otras personas con supuestos ataques a Baños. La mención a la entrevista Carlson no acredita las tesis de sus invitados."
+    "methodologicalNote": "Los primeros pasajes revisados proceden de una transcripción ASR externa y deben cotejarse con el vídeo. Ocho relaciones públicas documentadas (una entidad, dos subvenciones, un fondo presupuestario, fiscalización parlamentaria y nombramiento en BOE). Seis enlaces editoriales no prueban coordinación del MI6, servicios secretos, plataformas, Soros ni otras personas con supuestos ataques a Baños. La mención a la entrevista Carlson no acredita las tesis de sus invitados."
   },
   "nodes": [
     {
@@ -226,6 +226,32 @@ window.IDEA_TELARANA_F29_REVIEW = {
       "x": 11920,
       "y": 4310,
       "podcastNotes": []
+    },
+    {
+      "id": "f29-subvencion-2017",
+      "name": "Subvención FCO a Integrity Initiative · 2017/18",
+      "kind": "Documento",
+      "subtitle": "Grant agreement, 296.500 libras · 2017/18",
+      "note": "El Gobierno británico comunicó al Parlamento que el FCO concedió 296.500 GBP durante 2017/18 a Integrity Initiative. El importe informado por ejercicio no es prueba de una campaña contra personas concretas.",
+      "source": "https://questions-statements.parliament.uk/written-questions/detail/2018-11-27/196177",
+      "photo": "",
+      "topic3d": "global",
+      "x": 12200,
+      "y": 4500,
+      "podcastNotes": []
+    },
+    {
+      "id": "f29-subvencion-2018",
+      "name": "Subvención FCO a Integrity Initiative · 2018/19",
+      "kind": "Documento",
+      "subtitle": "Grant agreement, 1.961.000 libras · 2018/19",
+      "note": "El Gobierno británico comunicó en diciembre de 2018 que el FCO financiaba Integrity Initiative con 1.961.000 GBP en 2018/19. No presupone desembolso completo ni destino final de cada partida.",
+      "source": "https://questions-statements.parliament.uk/written-questions/detail/2018-11-27/196177",
+      "photo": "",
+      "topic3d": "global",
+      "x": 12400,
+      "y": 4500,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -244,9 +270,9 @@ window.IDEA_TELARANA_F29_REVIEW = {
     {
       "id": "f29-fco-grant-2017",
       "a": "f29-foreign-office",
-      "b": "f29-integrity-initiative",
-      "type": "Subvención estatal confirmada · ejercicio 2017/18 (296.500 GBP)",
-      "note": "Contestación escrita del ministro Alan Duncan al Parlamento, 3 de diciembre de 2018: el Foreign and Commonwealth Office concedió 296.500 libras al programa Integrity Initiative en el ejercicio 2017/18 mediante subvención (grant agreement). No documenta gasto dirigido a Pedro Baños.",
+      "b": "f29-subvencion-2017",
+      "type": "Subvención presupuestaria comunicada por el Foreign Office (2017/18)",
+      "note": "En respuesta parlamentaria del 03/12/2018, el Gobierno confirmó una subvención FCO de 296.500 GBP para Integrity Initiative en FY2017/18. Esta arista enlaza con el expediente presupuestario, no con actuaciones ilegales.",
       "source": "https://questions-statements.parliament.uk/written-questions/detail/2018-11-27/196177",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
@@ -256,9 +282,9 @@ window.IDEA_TELARANA_F29_REVIEW = {
     {
       "id": "f29-fco-grant-2018",
       "a": "f29-foreign-office",
-      "b": "f29-integrity-initiative",
-      "type": "Subvención estatal confirmada · ejercicio 2018/19 (1.961.000 GBP)",
-      "note": "La misma respuesta parlamentaria atribuye 1.961.000 libras de financiación del FCO al programa durante 2018/19. Es cifra presupuestaria comunicada en diciembre de 2018, no evidencia de pagos ilegales a periodistas o agentes españoles.",
+      "b": "f29-subvencion-2018",
+      "type": "Subvención presupuestaria comunicada por el Foreign Office (2018/19)",
+      "note": "En respuesta parlamentaria del 03/12/2018, el Gobierno comunicó la concesión de 1.961.000 GBP al programa durante FY2018/19. No aporta prueba de pagos a medios españoles ni a agentes extranjeros.",
       "source": "https://questions-statements.parliament.uk/written-questions/detail/2018-11-27/196177",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
@@ -370,6 +396,30 @@ window.IDEA_TELARANA_F29_REVIEW = {
       "source": "https://podscan.fm/podcasts/el-canal-del-coronel/episodes/operacion-destruir-a-pedro-banos-parte-1",
       "confidence": "hipotesis",
       "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "episodeId": "idealab-f29-parte1",
+      "podcastNotes": []
+    },
+    {
+      "id": "f29-2017-integrity",
+      "a": "f29-subvencion-2017",
+      "b": "f29-integrity-initiative",
+      "type": "Programa receptor identificado en subvención de FY2017/18",
+      "note": "El destinatario programático de esta subvención es Integrity Initiative, proyecto administrado por Institute for Statecraft. La respuesta parlamentaria diferencia la financiación por ejercicio; ninguna de las dos subvenciones acredita actividades dirigidas a Pedro Baños.",
+      "source": "https://questions-statements.parliament.uk/written-questions/detail/2018-11-27/196177",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "episodeId": "idealab-f29-parte1",
+      "podcastNotes": []
+    },
+    {
+      "id": "f29-2018-integrity",
+      "a": "f29-subvencion-2018",
+      "b": "f29-integrity-initiative",
+      "type": "Programa receptor identificado en subvención de FY2018/19",
+      "note": "El destinatario programático de esta subvención es Integrity Initiative, proyecto administrado por Institute for Statecraft. La respuesta parlamentaria diferencia la financiación por ejercicio; ninguna de las dos subvenciones acredita actividades dirigidas a Pedro Baños.",
+      "source": "https://questions-statements.parliament.uk/written-questions/detail/2018-11-27/196177",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
       "episodeId": "idealab-f29-parte1",
       "podcastNotes": []
     }
