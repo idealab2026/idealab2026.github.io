@@ -59,6 +59,8 @@ jobs:
         run: node scripts/test_telarana_source13_profiles.mjs
       - name: Verificar perfiles y contraste numérico de fuente 14
         run: node scripts/test_telarana_source14_profiles.mjs
+      - name: Comprobar segundo lote de anclas editoriales F14, F16 y F20
+        run: node scripts/test_telarana_asr_batch2.mjs
       - name: Validar fuente primaria 15 y su trazabilidad
         run: node scripts/test_telarana_source15.mjs
       - name: Validar atribuciones personales en fuente 16
