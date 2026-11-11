@@ -266,6 +266,10 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "f08-iglesias": {
       "lang": "es",
       "title": "Pablo Iglesias Turrión"
+    },
+    "usaid-nelson-rockefeller": {
+      "lang": "en",
+      "title": "Nelson Rockefeller"
     }
   },
   "curated": {
@@ -1030,6 +1034,13 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "text": "Paul Young presidía una compañía subcontratista de Vistant y Apprio. El Departamento de Justicia comunicó en junio de 2025 que se declaró culpable de conspiración para sobornar a un funcionario público; la relación se circunscribe a ese expediente judicial documentado.",
       "source": "https://www.justice.gov/opa/pr/usaid-official-and-three-corporate-executives-plead-guilty-decade-long-bribery-scheme",
       "sourceTitle": "Departamento de Justicia · comunicado oficial del 12/06/2025",
+      "reviewedAt": "2026-11-11"
+    },
+    "usaid-nelson-rockefeller": {
+      "text": "Nelson Aldrich Rockefeller (1908–1979) fue empresario, político y filántropo estadounidense, gobernador de Nueva York y vicepresidente de Estados Unidos (1974–1977). Dirigió la política de cooperación interamericana de Roosevelt (1940–1944), promovió la creación del Institute of Inter-American Affairs en 1942 y presidió el consejo asesor internacional de Truman en 1950. Creó por separado la asociación privada AIA en 1946. Su papel en los antecedentes de desarrollo exterior no equivale a que fundara o controlara jurídicamente USAID, creada en 1961.",
+      "source": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/",
+      "sourceTitle": "Rockefeller Archive Center · biografía institucional",
+      "also": "https://www.trumanlibrary.gov/library/public-papers/289/letter-chairman-advisory-board-international-development-foreign-economic",
       "reviewedAt": "2026-11-11"
     }
   }
