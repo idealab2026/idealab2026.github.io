@@ -175,6 +175,7 @@ jobs:
           cp la-telarana/personas-fuentes-23.js dist/la-telarana/personas-fuentes-23.js
           cp la-telarana/personas-fuentes-24.js dist/la-telarana/personas-fuentes-24.js
           cp la-telarana/usaid-relaciones-documentadas.js dist/la-telarana/usaid-relaciones-documentadas.js
+          cp la-telarana/usaid-programas-financiacion.js dist/la-telarana/usaid-programas-financiacion.js
           cp la-telarana/relaciones-verificadas-hunter.js dist/la-telarana/relaciones-verificadas-hunter.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
