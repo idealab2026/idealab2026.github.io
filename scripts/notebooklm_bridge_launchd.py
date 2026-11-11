@@ -31,7 +31,7 @@ def launchctl(*args):
 
 def agent_config(mode: str) -> dict:
     """Pure plist builder; reconcile-only NEVER requests a generation."""
-    if mode not in ("poll", "reconcile-only"):
+    if mode not in ("poll", "reconcile-only", "poll-authorized"):
         raise ValueError("Modo de agente no permitido.")
     return {
         "Label": NAME,
@@ -64,6 +64,12 @@ def install(mode: str = "poll"):
         print("Agente seguro de conciliación instalado. Cada 3 minutos comprobará "
               "generaciones anteriores y descargará PNG terminados.")
         print("No generará nuevas infografías ni recuperará trabajos fallidos.")
+    elif mode == "poll-authorized":
+        print("Agente de conciliación y autorización GitHub instalado.")
+        print("Cada 3 minutos consultará infografías enviadas y solo recuperará "
+              "UNA solicitud expresamente autorizada por la cuenta IDEA LAB, "
+              "si supera todas las comprobaciones de seguridad.")
+        print("No generará solicitudes nuevas ni publicará imágenes.")
     else:
         print("Agente local instalado. Consulta GitHub cada 3 minutos "
               "mientras el Mac esté despierto.")
@@ -79,12 +85,15 @@ def remove():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("action", choices=["install", "install-reconcile", "remove"])
+    parser.add_argument("action", choices=[
+        "install", "install-reconcile", "install-authorized", "remove"])
     args = parser.parse_args()
     if args.action == "install":
         install()
     elif args.action == "install-reconcile":
         install("reconcile-only")
+    elif args.action == "install-authorized":
+        install("poll-authorized")
     else:
         remove()
 
