@@ -361,7 +361,7 @@ window.IDEA_TELARANA_F30_REVIEW = {
       "a": "f30-china",
       "b": "f30-2022-strategy",
       "type": "País analizado como desafío sistémico · 29/06/2022 · posterior",
-      "note": "La OTAN incluyó por primera vez a China en su Concepto Estratégico de 2022. El documento trata sus ambiciones y políticas coercitivas como desafío a intereses y seguridad de los aliados. No implica que China perteneciera a la OTAN.",
+      "note": "La OTAN incluyó por primera vez a China en su Concepto Estratégico aprobado el 29/06/2022, cuatro meses después de la entrevista. El documento aborda sus ambiciones y políticas coercitivas como desafíos a los intereses y seguridad de los aliados. No implica que China perteneciera a la OTAN ni permite atribuir al entrevistado conocimiento anticipado del texto.",
       "source": "https://www.nato.int/en/news-and-events/articles/news/2022/06/29/nato-leaders-approve-new-strategic-concept",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
