@@ -84,6 +84,8 @@ jobs:
         run: node scripts/test_telarana_sources_09_18_19_quality.mjs
       - name: Auditar calidad de todas las fichas y nuevas atribuciones
         run: node scripts/audit_telarana_editorial.mjs
+      - name: Auditar contratos, financiación y casos de USAID
+        run: node scripts/test_telarana_usaid_financiacion.mjs
       - name: Validar la red documentada de USAID y sus acontecimientos
         run: node scripts/test_telarana_usaid_contexto.mjs
       - name: Auditar las 527 entidades del grafo y generar informe individual
