@@ -1419,6 +1419,97 @@
       }
     },
     {
+      "id": "study-f29-ballesteros-dsn-2018",
+      "y": 2018.4616438356165,
+      "t": "El Gobierno nombra a Miguel Ángel Ballesteros director del Departamento de Seguridad Nacional",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F29 · referencias externas a contexto de entrevista",
+      "d": "El Real Decreto 447/2018, de 18 de junio, designó a Miguel Ángel Ballesteros Martín director del Departamento de Seguridad Nacional del Gabinete de Presidencia. Publicado en BOE el 19 de junio. Esta designación no demuestra por sí sola las causas de que Pedro Baños no fuera nombrado.",
+      "g": [
+        "Europa",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 29,
+        "sourceTitle": "Fuente 29 · Operación: Destruir a Pedro Baños (Parte 1) · contraste independiente",
+        "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2018-06-18",
+        "confirmedBy": {
+          "label": "BOE · Real Decreto 447/2018",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-8187"
+        },
+        "relatedTelarana": [
+          "f29-departamento-seguridad",
+          "f29-ballesteros"
+        ],
+        "methodologicalLimits": "El registro documenta fechas de actos públicos, subvenciones o emisiones de programas. No da por probadas imputaciones de servicios secretos, grupos sociales o financiación de campañas contra particulares sin evidencia judicial o contractual específica."
+      }
+    },
+    {
+      "id": "study-f29-fco-subsidies-2018",
+      "y": 2018.9219178082192,
+      "t": "Londres comunica subvenciones a Integrity Initiative por dos ejercicios presupuestarios",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F29 · referencias externas a contexto de entrevista",
+      "d": "El 3 de diciembre de 2018 el ministro británico Alan Duncan confirmó al Parlamento 296.500 libras de subvención durante FY2017/18 y 1.961.000 libras durante FY2018/19 al programa Integrity Initiative del Institute for Statecraft. La fecha corresponde a la respuesta parlamentaria, no a cada desembolso. Esta declaración no demuestra campañas ilegales contra personas concretas.",
+      "g": [
+        "Europa",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 29,
+        "sourceTitle": "Fuente 29 · Operación: Destruir a Pedro Baños (Parte 1) · contraste independiente",
+        "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2018-12-03",
+        "confirmedBy": {
+          "label": "UK Parliament · pregunta escrita 196177",
+          "url": "https://questions-statements.parliament.uk/written-questions/detail/2018-11-27/196177"
+        },
+        "relatedTelarana": [
+          "f29-foreign-office",
+          "f29-integrity-initiative",
+          "f29-institute-statecraft",
+          "f29-subvencion-2017",
+          "f29-subvencion-2018"
+        ],
+        "methodologicalLimits": "El registro documenta fechas de actos públicos, subvenciones o emisiones de programas. No da por probadas imputaciones de servicios secretos, grupos sociales o financiación de campañas contra particulares sin evidencia judicial o contractual específica."
+      }
+    },
+    {
+      "id": "study-f29-commons-integrity-2018",
+      "y": 2018.9465753424658,
+      "t": "El Parlamento británico debate acusaciones de actividad política de Integrity Initiative",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F29 · referencias externas a contexto de entrevista",
+      "d": "La Cámara de los Comunes celebró una pregunta urgente sobre el Institute for Statecraft y el uso de financiación del Foreign Office. El ministro respondió que el proyecto era independiente y negó que recursos estatales se hubieran usado para actividad política partidista doméstica. El debate no equivale a una condena ni acredita un ataque a Pedro Baños.",
+      "g": [
+        "Europa",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 29,
+        "sourceTitle": "Fuente 29 · Operación: Destruir a Pedro Baños (Parte 1) · contraste independiente",
+        "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2018-12-12",
+        "confirmedBy": {
+          "label": "Hansard · Commons, 12 de diciembre de 2018",
+          "url": "https://hansard.parliament.uk/Commons/2018-12-12/debates/298F9A3C-307A-40ED-9CB1-3B2A98F14165/InstituteForStatecraftIntegrityInitiative"
+        },
+        "relatedTelarana": [
+          "f29-commons",
+          "f29-foreign-office",
+          "f29-integrity-initiative"
+        ],
+        "methodologicalLimits": "El registro documenta fechas de actos públicos, subvenciones o emisiones de programas. No da por probadas imputaciones de servicios secretos, grupos sociales o financiación de campañas contra particulares sin evidencia judicial o contractual específica."
+      }
+    },
+    {
       "id": "study-f21-rand-2019",
       "y": 2019.309589041096,
       "t": "RAND publica un resumen de opciones estadounidenses para presionar a Rusia",
@@ -2403,6 +2494,65 @@
           "ce26-hipotesis-marruecos"
         ],
         "methodologicalLimits": "Fecha de inicio 30/07/2026, crisis desarrollada también el 31/07/2026. La descripción del podcast no acredita ninguna operación clandestina."
+      }
+    },
+    {
+      "id": "study-f29-carlson-interview-2026",
+      "y": 2026.5794520547945,
+      "t": "Tucker Carlson publica una entrevista sobre desinformación e Institute for Statecraft",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F29 · referencias externas a contexto de entrevista",
+      "d": "El 31 de julio de 2026 The Tucker Carlson Show publicó un episodio con una invitada anunciada como Elizabeth Lane y una sección sobre Institute for Statecraft. Pedro Baños cita esta entrevista en la primera parte de su serie del 20 de agosto. La existencia del programa no valida las acusaciones planteadas durante él.",
+      "g": [
+        "Europa",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 29,
+        "sourceTitle": "Fuente 29 · Operación: Destruir a Pedro Baños (Parte 1) · contraste independiente",
+        "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2026-07-31",
+        "confirmedBy": {
+          "label": "Apple Podcasts · The Tucker Carlson Show, 31/07/2026",
+          "url": "https://podcasts.apple.com/be/podcast/bot-farms-jd-vance-nato-charlie-kirk-israel-the/id1719657632?i=1000779310754"
+        },
+        "relatedTelarana": [
+          "f29-carlson-episodio-2026",
+          "f29-tucker-carlson",
+          "f29-elizabeth-lane"
+        ],
+        "methodologicalLimits": "El registro documenta fechas de actos públicos, subvenciones o emisiones de programas. No da por probadas imputaciones de servicios secretos, grupos sociales o financiación de campañas contra particulares sin evidencia judicial o contractual específica."
+      }
+    },
+    {
+      "id": "study-f29-banos-program-2026",
+      "y": 2026.6342465753426,
+      "t": "Pedro Baños publica la primera entrega de su serie sobre supuestas campañas contra él",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F29 · referencias externas a contexto de entrevista",
+      "d": "El Canal del Coronel publicó la primera parte de Operación: Destruir a Pedro Baños el 20 de agosto de 2026. El programa presenta la interpretación del autor sobre influencias institucionales y presuntas campañas de desprestigio; su publicación es un hecho documental, pero no demuestra la autoría ni coordinación de las acciones que denuncia.",
+      "g": [
+        "Europa",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 29,
+        "sourceTitle": "Fuente 29 · Operación: Destruir a Pedro Baños (Parte 1) · contraste independiente",
+        "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2026-08-20",
+        "confirmedBy": {
+          "label": "iVoox · ficha original del episodio, 20/08/2026",
+          "url": "https://www.ivoox.com/operacion-destruir-a-pedro-banos-parte-1-audios-mp3_rf_179238445_1.html"
+        },
+        "relatedTelarana": [
+          "f29-episodio",
+          "f04-pedro-banos"
+        ],
+        "methodologicalLimits": "El registro documenta fechas de actos públicos, subvenciones o emisiones de programas. No da por probadas imputaciones de servicios secretos, grupos sociales o financiación de campañas contra particulares sin evidencia judicial o contractual específica."
       }
     },
     {
