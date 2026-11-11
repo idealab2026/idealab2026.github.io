@@ -3426,11 +3426,11 @@
     "transcriptAnchorsMatchedTotal": 320,
     "transcriptAnchorsUnmatched": 11,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
-    "latestAuditedGraphEntities": 593,
-    "latestAuditedGraphLinks": 914,
-    "latestAuditedGraphSourceMentions": 453,
-    "latestAuditedGraphOtherRelations": 461,
-    "latestAuditedGraphExternallyClassifiedRelations": 90,
+    "latestAuditedGraphEntities": 612,
+    "latestAuditedGraphLinks": 940,
+    "latestAuditedGraphSourceMentions": 466,
+    "latestAuditedGraphOtherRelations": 474,
+    "latestAuditedGraphExternallyClassifiedRelations": 103,
     "latestAuditedGraphPeopleWithoutIndependentBiographicalSource": 245,
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
@@ -3566,8 +3566,8 @@
       "fullTranscriptsAvailableButAudioUnverified": true,
       "source8FalsePositiveCorrected": true,
       "report": "CI artifact telarana-auditoria-cobertura-66-fuentes (not deployed publicly)",
-      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43053686142",
-      "status": "cobertura estructural actualizada, transcripciones pendientes y contraste individual sin completar",
+      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43067408609",
+      "status": "Structural checks passed; F29 ASR parcial externo, reclamaciones no verificadas",
       "originalCatalogNotStarted": 39,
       "methodologicalCounts": "counts.notStarted cuenta entradas originales (69 menos cerradas y abiertas); allSourcesCoverageAudit.canonicalNotStarted excluye los tres duplicados. No mezclar ambos denominadores."
     },
@@ -3616,7 +3616,9 @@
       "historicalEvents": 3,
       "transcriptAvailable": false,
       "audioVerified": false,
-      "methodologicalLimits": "PACs no son cuentas privadas de candidatos. AIPAC PAC y United Democracy Project constituyen estructuras jurídicas distintas. No se prueban coacción, decisiones ocultas ni pagos a Trump por la sola existencia de estas entidades."
+      "methodologicalLimits": "PACs no son cuentas privadas de candidatos. AIPAC PAC y United Democracy Project constituyen estructuras jurídicas distintas. No se prueban coacción, decisiones ocultas ni pagos a Trump por la sola existencia de estas entidades.",
+      "publishedAndTested": true,
+      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43067408609"
     },
     "source29Initial": {
       "date": "2026-11-11",
@@ -3631,7 +3633,11 @@
       "fullTranscriptStored": false,
       "audioVerified": false,
       "dossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
-      "methodologicalLimits": "Subvenciones británicas FCO/CSSF al Institute for Statecraft documentadas, no prueba de inteligencia clandestina ni acciones ilegales contra Pedro Baños. No se mezclan declaraciones de partes 1 y 3. La identidad de la invitada de Carlson se mantiene pendiente de cotejo."
+      "methodologicalLimits": "Subvenciones británicas FCO/CSSF al Institute for Statecraft documentadas, no prueba de inteligencia clandestina ni acciones ilegales contra Pedro Baños. No se mezclan declaraciones de partes 1 y 3. La identidad de la invitada de Carlson se mantiene pendiente de cotejo.",
+      "actualLoadedNewNodes": 13,
+      "actualLoadedNewLinks": 14,
+      "publishedAndTested": true,
+      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43067408609"
     }
   }
 }
