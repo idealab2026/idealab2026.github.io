@@ -103,7 +103,44 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "x": 6190,
       "y": 2295,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+      {
+            "episodeId": "idealab-f21-orden-mundial",
+            "title": "Fuente 21 · Origen y finalidad histórica atribuidos a USAID",
+            "publishedAt": "2025-03-19",
+            "timeSec": null,
+            "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+            "status": "alegacion",
+            "text": "Afirmación atribuida a Lorenzo Ramírez (transcripción ASR; audio no cotejado). Lorenzo Ramírez afirma que la creación de USAID estuvo relacionada con la crisis política posterior a Bahía de Cochinos, la imagen internacional de la CIA y antecedentes filantrópicos vinculados a Nelson Rockefeller. La transcripción automática presenta esta interpretación, pero no aporta expedientes fundacionales que acrediten esa cadena causal. No es la versión institucional verificada."
+      },
+      {
+            "episodeId": "idealab-f21-orden-mundial",
+            "title": "Fuente 21 · Acusaciones sobre financiación de ONG y cambios de régimen",
+            "publishedAt": "2025-03-19",
+            "timeSec": null,
+            "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+            "status": "alegacion",
+            "text": "Afirmación atribuida a Lorenzo Ramírez (transcripción ASR; audio no cotejado). Ramírez sostiene que recursos de ayuda exterior gestionados por USAID habrían financiado organizaciones y campañas destinadas a favorecer cambios de gobierno, y cita Hispanoamérica, Nicaragua y las llamadas revoluciones de colores. No identifica en este fragmento adjudicaciones, beneficiarios, importes ni documentos de operaciones específicas. Son acusaciones del entrevistado, no relaciones probadas en el grafo."
+      },
+      {
+            "episodeId": "idealab-f21-orden-mundial",
+            "title": "Fuente 21 · Mención de organizaciones asociadas a George Soros",
+            "publishedAt": "2025-03-19",
+            "timeSec": null,
+            "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+            "status": "alegacion",
+            "text": "Afirmación atribuida a Lorenzo Ramírez (transcripción ASR; audio no cotejado). En su explicación, Ramírez relaciona presuntamente programas de USAID con ONG de la red de George Soros y atribuye objetivos políticos a algunas actividades. La transcripción automática no permite verificar qué organizaciones, contratos, ejercicios fiscales o transferencias concretas está describiendo. No se establece por ello una relación financiera directa USAID–Soros u Open Society."
+      },
+      {
+            "episodeId": "idealab-f21-orden-mundial",
+            "title": "Fuente 21 · Acusaciones sobre activismo digital y ONG",
+            "publishedAt": "2025-03-19",
+            "timeSec": null,
+            "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+            "status": "alegacion",
+            "text": "Afirmación atribuida a Lorenzo Ramírez (transcripción ASR; audio no cotejado). Ramírez sostiene que organizaciones financiadas con ayuda exterior habrían intervenido en debates sobre libertad de expresión, restricciones digitales y campañas de influencia. En el pasaje mencionado no aporta una resolución de subvención, una entidad receptora precisa ni una cadena financiera contrastable. La acusación queda atribuida y pendiente de examen documental."
+      }
+]
     },
     {
       "id": "f21-palantir",
