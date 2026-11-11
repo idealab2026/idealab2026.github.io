@@ -469,6 +469,35 @@
       }
     },
     {
+      "id": "study-f21-iiaa-ley-federal-1947",
+      "y": 1947.5931506849315,
+      "t": "Estados Unidos reorganiza jurídicamente el IIAA mediante ley federal",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · antecedentes institucionales de USAID, fuente 21",
+      "d": "La ley estadounidense del 5 de agosto de 1947 reorganizó como corporación del Gobierno federal al Institute of Inter-American Affairs (IIAA), nacido en 1942 bajo la oficina dirigida por Nelson Rockefeller. El reconocimiento y reorganización institucional constan en el Código de Estados Unidos. La personalidad del IIAA era pública, no una sociedad privada de Rockefeller, ni debe confundirse con su AIA de 1946.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Documentación archivística complementaria sobre IIAA, FOA, ICA y USAID",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1947-08-05",
+        "confirmedBy": {
+          "label": "Cámara de Representantes de EE. UU. · notas del Código 22 USC §281",
+          "url": "https://uscode.house.gov/us/usc/119-124/t22/s281/"
+        },
+        "relatedTelarana": [
+          "usaid-iiaa",
+          "usaid-nelson-rockefeller",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Documento gubernamental independiente del episodio, incorporado como contexto de desarrollo institucional. Las transferencias de funciones públicas no acreditan propiedad, mando ni financiación privada de USAID por parte de Rockefeller."
+      }
+    },
+    {
       "id": "study-f21-schuman-1950",
       "y": 1950.3506849315067,
       "t": "Robert Schuman presenta su propuesta de integración del carbón y el acero",
@@ -585,6 +614,65 @@
           "f23-ue"
         ],
         "methodologicalLimits": "Está documentada la firma del tratado, los seis signatarios y la fecha. Las tesis de que el proceso fue dirigido de forma encubierta por organizaciones privadas o servicios estadounidenses no quedan acreditadas por este acontecimiento."
+      }
+    },
+    {
+      "id": "study-f21-iiaa-foa-1953",
+      "y": 1953.5821917808219,
+      "t": "El Gobierno federal transfiere funciones del IIAA a la Foreign Operations Administration",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · antecedentes institucionales de USAID, fuente 21",
+      "d": "El Plan de Reorganización n.º 7 de 1953, efectivo el 1 de agosto, transfirió las funciones del Institute of Inter-American Affairs (IIAA) a la Foreign Operations Administration (FOA), dentro de la consolidación de la asistencia estadounidense. La reorganización documenta una sucesión de funciones administrativas, no una transferencia patrimonial desde la familia Rockefeller a USAID.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Documentación archivística complementaria sobre IIAA, FOA, ICA y USAID",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1953-08-01",
+        "confirmedBy": {
+          "label": "National Archives · Records of U.S. Foreign Assistance Agencies, RG 469",
+          "url": "https://www.archives.gov/research/foreign-policy/related-records/rg-469"
+        },
+        "relatedTelarana": [
+          "usaid-iiaa",
+          "usaid-foa",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Documento gubernamental independiente del episodio, incorporado como contexto de desarrollo institucional. Las transferencias de funciones públicas no acreditan propiedad, mando ni financiación privada de USAID por parte de Rockefeller."
+      }
+    },
+    {
+      "id": "study-f21-foa-ica-1955",
+      "y": 1955.4945205479453,
+      "t": "La FOA desaparece y sus funciones civiles pasan a la administración de la ICA",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · antecedentes institucionales de USAID, fuente 21",
+      "d": "El 30 de junio de 1955 se hizo efectiva la transferencia de funciones de la Foreign Operations Administration (FOA) al Departamento de Estado y al Departamento de Defensa, según su naturaleza. La International Cooperation Administration (ICA) asumió la administración de programas de cooperación no militar, incluidos los procedentes del IIAA. La ICA sería posteriormente integrada en USAID en 1961.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Documentación archivística complementaria sobre IIAA, FOA, ICA y USAID",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1955-06-30",
+        "confirmedBy": {
+          "label": "National Archives · historial administrativo de FOA e ICA",
+          "url": "https://www.archives.gov/research/foreign-policy/related-records/rg-469"
+        },
+        "relatedTelarana": [
+          "usaid-foa",
+          "usaid-ica",
+          "usaid-iiaa",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Documento gubernamental independiente del episodio, incorporado como contexto de desarrollo institucional. Las transferencias de funciones públicas no acreditan propiedad, mando ni financiación privada de USAID por parte de Rockefeller."
       }
     },
     {
