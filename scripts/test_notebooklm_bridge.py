@@ -691,6 +691,74 @@ class BridgeTests(unittest.TestCase):
             launch.assert_not_called()
             self.assertEqual(state["115"]["phase"], "deferred")
 
+    def test_inspect_submitted_reports_no_new_artifact_without_modifying_state(self):
+        import argparse
+        import contextlib
+        import io
+        state = {"115": {"phase": "submitted", "notebook": "private-nb",
+                         "before": ["oldartifact001"], "request": request(vid=VIDEO)}}
+        output = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "oldartifact001", "status": "3"}]), \
+             patch.object(bridge, "save_json") as save, \
+             patch.object(bridge, "command") as launch:
+            with contextlib.redirect_stdout(output):
+                bridge.inspect_submitted(argparse.Namespace(issue=115))
+            save.assert_not_called()
+            launch.assert_not_called()
+        self.assertIn("Artefactos nuevos respecto al envío: 0", output.getvalue())
+        self.assertNotIn("private-nb", output.getvalue())
+
+    def test_inspect_submitted_reports_single_completed_artifact(self):
+        import argparse
+        import contextlib
+        import io
+        state = {"115": {"phase": "submitted", "notebook": "private-nb",
+                         "before": [], "request": request(vid=VIDEO)}}
+        output = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "newartifact001", "status": "3"}]), \
+             patch.object(bridge, "save_json") as save:
+            with contextlib.redirect_stdout(output):
+                bridge.inspect_submitted(argparse.Namespace(issue=115))
+            save.assert_not_called()
+        self.assertIn("Candidato único: Studio informa de finalización.", output.getvalue())
+        self.assertNotIn("newartifact001", output.getvalue())
+
+    def test_inspect_submitted_reports_multiple_candidates_as_ambiguous(self):
+        import argparse
+        import contextlib
+        import io
+        state = {"115": {"phase": "submitted", "notebook": "private-nb",
+                         "before": [], "request": request(vid=VIDEO)}}
+        output = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "newartifact001", "status": "3"},
+                                        {"id": "newartifact002", "status": "2"}]), \
+             patch.object(bridge, "save_json") as save:
+            with contextlib.redirect_stdout(output):
+                bridge.inspect_submitted(argparse.Namespace(issue=115))
+            save.assert_not_called()
+        self.assertIn("AMBIGÜEDAD: hay varios candidatos", output.getvalue())
+
+    def test_inspect_submitted_fails_closed_on_incomplete_snapshot(self):
+        import argparse
+        import contextlib
+        import io
+        state = {"115": {"phase": "submitted", "notebook": "private-nb",
+                         "before": ["oldartifact001"], "request": request(vid=VIDEO)}}
+        output = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "infographic_rows", return_value=[]), \
+             patch.object(bridge, "save_json") as save:
+            with contextlib.redirect_stdout(output):
+                bridge.inspect_submitted(argparse.Namespace(issue=115))
+            save.assert_not_called()
+        self.assertIn("no permite contrastar la instantánea original", output.getvalue())
+
     def test_recovery_needs_explicit_quota_and_no_artifact_confirmation(self):
         import argparse
         with self.assertRaisesRegex(ValueError, "obligatorias"):
