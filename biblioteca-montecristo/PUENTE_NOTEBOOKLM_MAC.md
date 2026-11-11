@@ -229,11 +229,15 @@ desde el Terminal interactivo del Mac:
 cd ~/Developer/idea-lab-web
 git pull --ff-only
 python3 scripts/notebooklm_bridge.py health
-python3 scripts/notebooklm_bridge.py reconcile-only
 python3 scripts/notebooklm_bridge.py diagnose-failed --issue 163
 python3 scripts/notebooklm_bridge.py diagnose-failed --issue 178
 python3 scripts/notebooklm_audit_failed.py --issue 163 --issue 178
 ```
+
+Para conciliar trabajos previamente enviados sin iniciar nuevas generaciones,
+se puede ejecutar, en un segundo paso, `python3 scripts/notebooklm_bridge.py reconcile-only`.
+Este comando **no es estrictamente de solo lectura**: puede descargar PNG,
+actualizar el estado local y sincronizar comentarios de GitHub.
 
 El auditor nuevo comprueba que las fuentes seleccionadas permanecen accesibles
 en el cuaderno correcto, que su numeración coincide con el capítulo (si puede
