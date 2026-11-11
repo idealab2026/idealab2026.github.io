@@ -218,3 +218,34 @@ se exige revisión ANTES de subir el PNG. Los cuadernos y fuentes no se incluyen
   externo de ejecución ni costes de servidor.
 - Nunca instalar un runner GitHub Actions dentro de un repositorio público;
   GitHub desaconseja hacerlo por riesgo de ejecutar código no confiable.
+
+## Diagnóstico de fallos sin consumir cuota (noviembre de 2026)
+
+Antes de reintentar una solicitud que aparece como `failed`, mantener el
+LaunchAgent desactivado y ejecutar estas comprobaciones **de solo lectura**
+desde el Terminal interactivo del Mac:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/notebooklm_bridge.py health
+python3 scripts/notebooklm_bridge.py reconcile-only
+python3 scripts/notebooklm_bridge.py diagnose-failed --issue 163
+python3 scripts/notebooklm_bridge.py diagnose-failed --issue 178
+python3 scripts/notebooklm_audit_failed.py --issue 163 --issue 178
+```
+
+El auditor nuevo comprueba que las fuentes seleccionadas permanecen accesibles
+en el cuaderno correcto, que su numeración coincide con el capítulo (si puede
+deducirse inequívocamente), qué estados ofrecen las fuentes y si Studio conserva
+el artefacto fallido. Solo muestra recuentos y conclusiones: nunca publica
+nombres, IDs de cuaderno/fuente, rutas privadas ni mensajes crudos del CLI.
+
+**Una fuente presente no garantiza que la generación vaya a completarse.**
+Tampoco un error genérico de Studio demuestra que se haya agotado la cuota.
+Sin confirmar la causa y la ausencia de artefactos tardíos, no activar
+`retry-failed`, `resume-generations` ni ejecutar `poll`.
+
+El catálogo incluye dos vídeos etiquetados «Capítulo 34» de *Montecristo*
+(con distintos IDs de YouTube). Ambos deben conservar solicitudes diferentes
+y revisarse contra sus fuentes reales, sin deduplicarlos por el título.
