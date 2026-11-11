@@ -56,7 +56,7 @@ assert.equal(stats.publishedReviewed,3,"Estados cerrados fuera de registro");
 assert.equal(stats.inReview,23,"En revisión fuera de inventario");
 assert.equal(stats.notStarted,40,"Pendientes canónicas fuera de inventario");
 assert.equal(stats.confirmedTranscript,22,"Cambio en transcripciones comprobadas sin reconciliar");
-assert.equal(stats.youtubeWithoutFullTranscript,43,"Faltan transcripciones o son inválidas; revisar conteo");
+assert.equal(stats.youtubeWithoutFullTranscript,40,"Faltan transcripciones o son inválidas; revisar conteo");
 const p8=report.find(x=>x.order===8);
 assert(!p8.transcriptTextConfirmed&&p8.transcriptDocumentExists,
  "F8 es solo una plantilla, no una transcripción");
