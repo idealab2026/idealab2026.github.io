@@ -977,5 +977,123 @@ class BridgeTests(unittest.TestCase):
 
 
 
+    def test_github_recovery_approval_requires_exact_owner_identity_and_body(self):
+        now = dt.datetime(2026, 11, 11, 20, 0, tzinfo=dt.timezone.utc)
+        stamp = (now - dt.timedelta(minutes=5)).isoformat().replace("+00:00", "Z")
+        sample = {
+            "id": 428271, "user": {"login": "idealab2026", "id": 350414243},
+            "issue_url": "https://api.github.com/repos/"
+                         + bridge.REPO + "/issues/85",
+            "body": bridge.recovery_approval_body("85"),
+            "created_at": stamp, "updated_at": stamp,
+        }
+        with patch.object(bridge, "command", return_value=json.dumps([sample])):
+            self.assertEqual(bridge.github_recovery_approvals(now), [("85", 428271)])
+        variants = [
+            dict(sample, user={"login": "attacker", "id": 350414243}),
+            dict(sample, user={"login": "idealab2026", "id": 999}),
+            dict(sample, issue_url=sample["issue_url"].replace("85", "84")),
+            dict(sample, body=sample["body"] + "\nrun=anything"),
+            dict(sample, updated_at=now.isoformat()),
+            dict(sample, created_at=(now - dt.timedelta(hours=20)).isoformat(),
+                 updated_at=(now - dt.timedelta(hours=20)).isoformat()),
+            dict(sample, id="428271"),
+        ]
+        for variant in variants:
+            with self.subTest(variant=variant):
+                with patch.object(bridge, "command",
+                                  return_value=json.dumps([variant])):
+                    self.assertEqual(bridge.github_recovery_approvals(now), [])
+
+    def test_github_recovery_approval_fails_closed_on_truncated_comment_page(self):
+        now = dt.datetime(2026, 11, 11, 20, tzinfo=dt.timezone.utc)
+        with patch.object(bridge, "command", return_value=json.dumps([{}] * 100)):
+            with self.assertRaisesRegex(RuntimeError, "incompleto"):
+                bridge.github_recovery_approvals(now)
+
+    def test_authorized_poll_requires_approval_and_no_active_generations(self):
+        state = {"85": {"phase": "deferred", "recovery_count": 0}}
+        with patch.object(bridge, "reconcile_only") as reconcile, \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "github_recovery_approvals",
+                          return_value=[("85", 428271)]) as approvals, \
+             patch.object(bridge, "recover_blocked") as recover:
+            bridge.poll_authorized()
+            reconcile.assert_called_once()
+            approvals.assert_called_once()
+            recover.assert_called_once()
+            args = recover.call_args.args[0]
+            self.assertEqual(args.issue, 85)
+            self.assertTrue(args.confirm_no_artifact)
+            self.assertTrue(args.confirm_quota_restored)
+            self.assertEqual(args.github_recovery_comment_id, 428271)
+        state["85"]["phase"] = "submitted"
+        with patch.object(bridge, "reconcile_only"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "github_recovery_approvals") as approvals, \
+             patch.object(bridge, "recover_blocked") as recover:
+            bridge.poll_authorized()
+            approvals.assert_not_called()
+            recover.assert_not_called()
+
+    def test_authorized_poll_does_not_replay_or_recover_held_issue(self):
+        state = {
+            "85": {"phase": "uncertain", "recovery_count": 1,
+                   "github_recovery_comment_id": 428271},
+            "201": {"phase": "uncertain", "recovery_count": 0},
+        }
+        with patch.object(bridge, "reconcile_only"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "github_recovery_approvals") as approvals, \
+             patch.object(bridge, "recover_blocked") as recover:
+            bridge.poll_authorized()
+            approvals.assert_not_called()
+            recover.assert_not_called()
+
+    def test_authorized_recovery_persists_approval_before_network_launch(self):
+        import argparse
+        state = {"85": {"phase": "deferred", "notebook": "notebook-001",
+                        "source_ids": ["source-001"],
+                        "before": ["oldartifact001"],
+                        "request": request(vid=VIDEO)}}
+        arg = argparse.Namespace(issue=85, confirm_no_artifact=True,
+                                 confirm_quota_restored=True,
+                                 github_recovery_comment_id=428271)
+        seen = []
+        def send(argv, **kwargs):
+            seen.append((state["85"]["phase"],
+                         state["85"].get("github_recovery_comment_id")))
+            return ""
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(bridge, "STATE_PATH", Path(tmp) / "jobs.json"), \
+             patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "select_mapping",
+                          return_value=("notebook-001", ["source-001"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "oldartifact001", "status": "3"}]), \
+             patch.object(bridge, "command", side_effect=send), \
+             patch.object(bridge, "comment_or_queue"):
+            bridge.recover_blocked(arg)
+            self.assertEqual(seen, [("launching", 428271)])
+            self.assertEqual(state["85"]["phase"], "submitted")
+            self.assertEqual(state["85"]["recovery_count"], 1)
+            with self.assertRaisesRegex(ValueError, "uncertain/deferred"):
+                bridge.recover_blocked(arg)
+
+    def test_authorized_launch_agent_mode_is_separate_and_safe(self):
+        import notebooklm_bridge_launchd as launchd
+        self.assertEqual(launchd.agent_config("poll-authorized")[
+                         "ProgramArguments"][-1], "poll-authorized")
+        self.assertEqual(launchd.agent_config("reconcile-only")[
+                         "ProgramArguments"][-1], "reconcile-only")
+
+
 if __name__ == "__main__":
     unittest.main()
