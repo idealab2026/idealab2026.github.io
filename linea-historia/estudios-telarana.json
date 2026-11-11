@@ -1308,6 +1308,70 @@
       }
     },
     {
+      "id": "study-f30-osce-minsk-2015",
+      "y": 2015.1164383561643,
+      "t": "El Grupo de Contacto Trilateral acuerda el paquete de medidas de Minsk II",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 30 · cronología primaria 2015–2022",
+      "d": "El 12 de febrero de 2015, los participantes del Grupo de Contacto Trilateral —Ucrania, Federación de Rusia y OSCE— acordaron un paquete de medidas para implementar los acuerdos de Minsk relativos al este de Ucrania. Incluía alto el fuego, retirada de armas y un itinerario político. Este antecedente es anterior a la entrevista de 2022 y su firma no equivale a cumplimiento íntegro.",
+      "g": [
+        "Europa",
+        "Asia",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 30,
+        "sourceTitle": "Fuente 30 · The Wild Project #116 · contraste cronológico",
+        "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2015-02-12",
+        "confirmedBy": {
+          "label": "OSCE · comunicado del Grupo de Contacto Trilateral",
+          "url": "https://www.osce.org/cio/140576"
+        },
+        "relatedTelarana": [
+          "f30-minsk",
+          "f30-osce",
+          "f30-ukraine",
+          "f30-russia"
+        ],
+        "temporalRelationToSource": "anterior_al_episodio",
+        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
+      }
+    },
+    {
+      "id": "study-f30-un-minsk-2015",
+      "y": 2015.1301369863013,
+      "t": "El Consejo de Seguridad de la ONU respalda Minsk II mediante la resolución 2202",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 30 · cronología primaria 2015–2022",
+      "d": "El 17 de febrero de 2015 el Consejo de Seguridad de Naciones Unidas adoptó por unanimidad la resolución 2202 y respaldó el paquete de medidas para la aplicación de Minsk II. La resolución reconoce el acuerdo y no certifica por sí sola su ejecución. Este hecho ocurrió exactamente siete años antes del episodio The Wild Project #116.",
+      "g": [
+        "Europa",
+        "Asia",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 30,
+        "sourceTitle": "Fuente 30 · The Wild Project #116 · contraste cronológico",
+        "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2015-02-17",
+        "confirmedBy": {
+          "label": "ONU · resolución S/RES/2202 (2015)",
+          "url": "https://digitallibrary.un.org/record/787968"
+        },
+        "relatedTelarana": [
+          "f30-minsk",
+          "f30-unscr"
+        ],
+        "temporalRelationToSource": "anterior_al_episodio",
+        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
+      }
+    },
+    {
       "id": "study-f21-usaid-ghsc-2015",
       "y": 2015.25,
       "t": "USAID adjudica a Chemonics el contrato GHSC-PSM de suministro sanitario",
@@ -1681,6 +1745,102 @@
       }
     },
     {
+      "id": "study-f30-nato-proposals-2022",
+      "y": 2022.0698630136985,
+      "t": "La OTAN remite propuestas escritas a Rusia sobre seguridad europea",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 30 · cronología primaria 2015–2022",
+      "d": "El 26 de enero de 2022, la OTAN remitió propuestas escritas a Rusia, en paralelo con Estados Unidos, para dialogar sobre relaciones OTAN–Rusia, seguridad europea, transparencia, reducción de riesgos y control de armamentos. La propuesta fue anterior a la entrevista de Pedro Baños del 17 de febrero y no demuestra acuerdo de las partes.",
+      "g": [
+        "Europa",
+        "Asia",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 30,
+        "sourceTitle": "Fuente 30 · The Wild Project #116 · contraste cronológico",
+        "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2022-01-26",
+        "confirmedBy": {
+          "label": "OTAN · comunicado oficial de 26/01/2022",
+          "url": "https://www.nato.int/en/news-and-events/articles/news/2022/01/26/nato-conveys-written-proposals-to-russia"
+        },
+        "relatedTelarana": [
+          "f30-nato",
+          "f30-russia",
+          "f30-nato-proposal"
+        ],
+        "temporalRelationToSource": "anterior_al_episodio",
+        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
+      }
+    },
+    {
+      "id": "study-f30-episode-published-2022",
+      "y": 2022.1301369863013,
+      "t": "The Wild Project publica su entrevista geopolítica #116 con Pedro Baños",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 30 · cronología primaria 2015–2022",
+      "d": "El 17 de febrero de 2022 se publica una entrevista de Jordi Wild a Pedro Baños, cuya sinopsis oficial menciona tensiones de Estados Unidos, Rusia y China, la situación de Ucrania y George Soros. La publicación ocurrió siete días antes de la invasión rusa a gran escala. No existe en este expediente transcripción completa ni audio cotejado para atribuir predicciones literales.",
+      "g": [
+        "Europa",
+        "Asia",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 30,
+        "sourceTitle": "Fuente 30 · The Wild Project #116 · contraste cronológico",
+        "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2022-02-17",
+        "confirmedBy": {
+          "label": "The Wild Project · ficha oficial en Apple Podcasts",
+          "url": "https://podcasts.apple.com/es/podcast/the-wild-project-116-ft-pedro-ba%C3%B1os-usa-vs-rusia-vs/id1501968107?i=1000551434233"
+        },
+        "relatedTelarana": [
+          "f30-episodio",
+          "f04-pedro-banos",
+          "f30-jordi-wild"
+        ],
+        "temporalRelationToSource": "fecha_de_la_fuente",
+        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
+      }
+    },
+    {
+      "id": "study-f30-invasion-2022",
+      "y": 2022.1493150684933,
+      "t": "Rusia inicia su invasión a gran escala de Ucrania, siete días después del episodio #116",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 30 · cronología primaria 2015–2022",
+      "d": "El 24 de febrero de 2022 Rusia lanzó la invasión a gran escala de Ucrania. El Consejo del Atlántico Norte se reunió de urgencia y la OTAN condenó el ataque. Esta es una fecha posterior a la publicación del podcast, que permite comprobar predicciones solamente si se recupera la declaración literal, no a partir del título o la sinopsis.",
+      "g": [
+        "Europa",
+        "Asia",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 30,
+        "sourceTitle": "Fuente 30 · The Wild Project #116 · contraste cronológico",
+        "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2022-02-24",
+        "confirmedBy": {
+          "label": "OTAN · comunicado sobre invasión, 24/02/2022",
+          "url": "https://www.nato.int/en/news-and-events/articles/news/2022/02/24/nato-allies-condemn-russias-invasion-of-ukraine-in-the-strongest-possible-terms"
+        },
+        "relatedTelarana": [
+          "f30-2022-invasion",
+          "f30-russia",
+          "f30-ukraine"
+        ],
+        "temporalRelationToSource": "posterior_al_episodio",
+        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
+      }
+    },
+    {
       "id": "study-f17-espana-marruecos-declaracion-2022",
       "y": 2022.2630136986302,
       "t": "España y Marruecos adoptan una declaración conjunta en Rabat",
@@ -1766,6 +1926,38 @@
           "f08-podemos"
         ],
         "methodologicalLimits": "La providencia acredita el archivo de un procedimiento concreto, no necesariamente todos los procesos sobre el partido ni la inocencia de cada afirmación que pueda aparecer en otras fuentes. No hay transcripción íntegra de la entrevista y no se atribuye esta referencia a Villarejo."
+      }
+    },
+    {
+      "id": "study-f30-nato-concept-2022",
+      "y": 2022.4917808219177,
+      "t": "La OTAN aprueba el Concepto Estratégico de Madrid y aborda por primera vez a China",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 30 · cronología primaria 2015–2022",
+      "d": "En Madrid, el 29 de junio de 2022, la OTAN aprobó su nuevo Concepto Estratégico, en el que se identifica a Rusia como la amenaza más importante y directa para la seguridad aliada y se analiza por primera vez el desafío estratégico de China. Este texto es posterior a la entrevista del 17/02/2022; no puede atribuirse al entrevistado conocimiento anticipado del documento.",
+      "g": [
+        "Europa",
+        "Asia",
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 30,
+        "sourceTitle": "Fuente 30 · The Wild Project #116 · contraste cronológico",
+        "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2022-06-29",
+        "confirmedBy": {
+          "label": "OTAN · aprobación del Concepto Estratégico 29/06/2022",
+          "url": "https://www.nato.int/en/news-and-events/articles/news/2022/06/29/nato-leaders-approve-new-strategic-concept"
+        },
+        "relatedTelarana": [
+          "f30-2022-strategy",
+          "f30-nato",
+          "f30-china"
+        ],
+        "temporalRelationToSource": "posterior_al_episodio",
+        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
       }
     },
     {
