@@ -719,6 +719,7 @@ function documentedLink(parent,href,label){
 }
 function studyDate(date,precision){
  var v=String(date||"");
+ if(precision==="año"&&/^\d{4}$/.test(v))return v;
  if(!/^\d{4}-\d{2}(?:-\d{2})?$/.test(v))return"Fecha por verificar";
  var p=v.split("-").map(Number);
  var options=precision==="mes"?{month:"long",year:"numeric",timeZone:"UTC"}:{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"};
