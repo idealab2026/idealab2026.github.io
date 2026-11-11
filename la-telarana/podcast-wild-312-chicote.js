@@ -13,11 +13,14 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
     "transcriptAudioMatched": false,
     "transcriptIndexDocUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
     "transcriptDocUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
-    "fullTranscriptImportedToDoc": false,
+    "fullTranscriptImportedToDoc": true,
     "docCreated": true,
-    "reviewStage": "external_timecoded_transcript_consulted_19_topics_indexed_in_drive_full_user_source_pending",
+    "reviewStage": "transcripcion_ASR_integra_en_Drive_revision_tematica_y_audio_pendientes",
     "metadataSource": "YouTube episodio original, Apple Podcasts y Metacast",
-    "claimLimits": "Se registran citas indirectas del relato del entrevistado y algunos hechos externamente documentados: fallo Gürtel 2020, absolución Ausbanc-Manos Limpias 2024, votación Congreso 2018 y primer ingreso Guantánamo 2002. No hay transcripción íntegra importada. Cualquier acusación sobre personas requiere su propia sentencia u otra fuente primaria."
+    "claimLimits": "La transcripción automática íntegra (314.815 caracteres) está conservada en Drive institucional. Existen hechos independientemente documentados —Gürtel 2020, absolución Ausbanc 2024, votación Congreso 2018 y apertura de Guantánamo 2002— y testimonios del entrevistado pendientes de audio, diarización y contraste judicial individual. Ninguna alegación equivale a sentencia.",
+    "fullTranscriptStoredPrivately": true,
+    "fullTranscriptCharacters": 314815,
+    "transcriptReadbackVerifiedDate": "2026-11-11"
   },
   "nodes": [
     {
