@@ -79,4 +79,4 @@ fs.writeFileSync("audit-results/telarana-all-source-coverage.json",JSON.stringif
 console.log("COBERTURA INTEGRAL FUENTES (no certificación de afirmaciones)");
 console.log(JSON.stringify(stats,null,2));
 console.log("ASR íntegro sin cotejo audiovisual:",flagged.join(", "));
-console.log("OK: 69 entradas / 66 únicas / 3 duplicados / 22 transcripciones confirmadas / 26 fuentes en revisión.");
+console.log("OK: 69 entradas / 66 únicas / 3 duplicados / 22 transcripciones confirmadas / "+stats.inReview+" fuentes en revisión.");
