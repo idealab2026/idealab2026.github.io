@@ -2314,7 +2314,12 @@
           "minuteReferencesVerified": 0,
           "independentlyDocumentedEdges": 8,
           "editorialMentions": 6,
-          "podcastNotesAttributed": 3
+          "podcastNotesAttributed": 3,
+          "driveDossierReadbackVerified": true,
+          "driveDossierCharactersReadBack": 4812,
+          "driveDossierCheckedAt": "2026-11-11",
+          "driveDossierIsTranscript": false,
+          "driveDossierCheckNote": "Lectura directa de documento institucional: expediente/índice editorial; transcripción completa ausente en el documento inspeccionado."
         }
       },
       {
@@ -2344,7 +2349,12 @@
           "audioVerified": false,
           "minuteReferencesVerified": 0,
           "externalDocumentsVerified": 11,
-          "methodologicalStatus": "Sinopsis oficial más fuentes institucionales. No hay ASR íntegro ni audio, cronología pre/post 17/02/2022"
+          "methodologicalStatus": "Sinopsis oficial más fuentes institucionales. No hay ASR íntegro ni audio, cronología pre/post 17/02/2022",
+          "driveDossierReadbackVerified": true,
+          "driveDossierCharactersReadBack": 3318,
+          "driveDossierCheckedAt": "2026-11-11",
+          "driveDossierIsTranscript": false,
+          "driveDossierCheckNote": "Lectura directa de documento institucional: expediente/índice editorial; transcripción completa ausente en el documento inspeccionado."
         }
       },
       {
@@ -3695,6 +3705,28 @@
       "lastVerifiedWorkflow": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43070269588",
       "loadedSuccessfully": true,
       "temporalDisplayPendingCheck": true
+    },
+    "driveDossierChecks20261111": {
+      "verifiedAt": "2026-11-11",
+      "account": "IDEA LAB (institutional)",
+      "source29": {
+        "documentCharacters": 4812,
+        "containsFullTranscript": false,
+        "externalAsrPartial": true
+      },
+      "source30": {
+        "documentCharacters": 3318,
+        "containsFullTranscript": false,
+        "externalAsrPartial": false
+      },
+      "searchByExactVideoId": {
+        "26": "no_matching_drive_file_found",
+        "27": "no_matching_drive_file_found",
+        "28": "no_matching_drive_file_found",
+        "29": "only_editorial_dossier_found",
+        "30": "only_editorial_dossier_found"
+      },
+      "scopeLimit": "Drive search negative results are not proof that no file exists; indexed matches may omit files. No video/audio cross-check was performed."
     }
   }
 }
