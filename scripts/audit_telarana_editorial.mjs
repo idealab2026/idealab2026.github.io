@@ -66,10 +66,28 @@ for(const item of statements){
  if(!oldSources.has(item.order))assert(item.structured,
   "Fuente nueva F"+item.order+" / "+item.name+": se exige estructura {topic,speaker,statement,status}, no resumen genérico");
 }
-assert(statements.length>=330,"La base editorial perdió comentarios registrados");
+assert(statements.length>=331,"La base editorial perdió comentarios registrados");
 assert(flagged.length<=114,"Han aumentado los resúmenes potencialmente superficiales; revisar antes de publicar");
-assert(structured.length>=1,"Se ha perdido el expediente estructurado de Hunter Biden");
-assert(structured.length>=230,"Regresión: se han perdido expedientes con declarante, tema y estado");
+assert(statements.every(x=>x.structured),"Regresión: reaparecen fichas heredadas sin tema, declarante o estado");
+assert(structured.length>=331,"Regresión: el inventario 100% estructurado ha retrocedido");
+const completedSources={"10":15,"12":6,"14":16,"16":22,"17":15,"20":16,"22":13};
+const allowedStatuses=new Set(["alegacion_no_verificada","opinion_atribuida","mencion_contextual","identidad_pendiente","declaracion_de_parte"]);
+for(const [order,minimum] of Object.entries(completedSources)){
+ const entries=statements.filter(x=>x.order===order);
+ assert(entries.length>=minimum,"F"+order+": faltan expedientes tras la depuración");
+ for(const item of entries){
+  const r=lib.profiles[item.name].sources[order][item.index];
+  assert(item.structured&&r.topic?.length>=10&&r.speaker?.length>=10&&r.statement?.length>=65,
+   "F"+order+": ficha no estructurada de "+item.name);
+  assert(allowedStatuses.has(r.status),"F"+order+": estado editorial no definido "+item.name);
+  assert(r.audioVerified!==true&&r.minuteVerified!==true,
+   "F"+order+": falsos minutos/audio corroborados "+item.name);
+  if(!(order==="10"&&item.name==="Nicolás Maduro")&&!(order==="20"&&item.name==="Hunter Biden")){
+   assert(r.transcriptAnchor?.length>=20,
+    "F"+order+": falta ancla textual tras la revisión de "+item.name);
+  }
+ }
+}
 const minimumStructuredBySource={"9":33,"11":28,"13":20,"18":36,"19":23,"21":35,"23":30,"24":23};
 for(const order of ["9","11","13","18","19","21","23","24"]){
  const entries=statements.filter(x=>x.order===order);
