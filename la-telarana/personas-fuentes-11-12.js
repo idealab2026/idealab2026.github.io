@@ -54,7 +54,16 @@ const extra={
           }
         ],
         "12": [
-          "Franco habría modificado, según Juan Manuel de Prada, la composición y orientación diplomática de sus gobiernos conforme la Alemania nazi empezó a perder la Segunda Guerra Mundial."
+          {
+            "topic": "Cambios ministeriales españoles durante la Segunda Guerra Mundial",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada interpreta los cambios en el Gobierno de Franco durante la guerra como una respuesta al deterioro de las expectativas militares alemanas. Sostiene que fueron reemplazándose figuras germanófilas por responsables más próximos al Reino Unido y cita a Serrano Suñer como ejemplo. Es una lectura histórica del entrevistado que debe contrastarse con fechas de nombramientos y documentos diplomáticos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Franco que era muy Cuco Pues cambiaba a los ministros German filo"
+          }
         ]
       }
     },
@@ -141,7 +150,16 @@ const extra={
           }
         ],
         "12": [
-          "Hitler ordenó invadir la Unión Soviética; Juan Manuel de Prada sitúa ese acontecimiento como punto de cambio en la actividad de la resistencia comunista francesa durante la ocupación alemana."
+          {
+            "topic": "Invasión de la URSS y evolución de la resistencia francesa",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "El entrevistado relaciona la invasión alemana de la Unión Soviética en 1941, ordenada por Hitler, con un mayor protagonismo de grupos comunistas en la resistencia armada en Francia. A partir de ese hecho critica el relato nacional de la resistencia francesa. La generalización de que la resistencia comenzó exclusivamente entonces es su tesis y no debe darse por acreditada sin investigación histórica independiente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando Hitler invade la unión soviética stalin hace un llamamient"
+          }
         ]
       }
     },
@@ -186,7 +204,16 @@ const extra={
           }
         ],
         "12": [
-          "Stalin habría llamado, según Juan Manuel de Prada, a los partidos comunistas europeos a intervenir activamente contra la ocupación nazi después de la invasión alemana de la Unión Soviética."
+          {
+            "topic": "Llamamientos comunistas después de la invasión alemana",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada afirma que Iósif Stalin instó a los partidos comunistas europeos a resistir de forma activa tras la invasión alemana de la Unión Soviética. Utiliza ese argumento para explicar la intensificación de atentados contra ocupantes alemanes en Francia a partir de 1941. El episodio no identifica el discurso, directiva o comunicado original que permitiría comprobar la orden concreta.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "stalin hace un llamamiento a los comunistas en todo el mundo y mu"
+          }
         ]
       }
     },
@@ -618,7 +645,16 @@ const extra={
       },
       "sources": {
         "12": [
-          "Juan Manuel de Prada presenta los temas de su obra sobre la resistencia y el colaboracionismo en la Francia ocupada, la relación de exiliados españoles con Falange y la forma en que se ha narrado la Segunda Guerra Mundial."
+          {
+            "topic": "Tesis del escritor sobre colaboracionismo y memoria francesa",
+            "speaker": "Juan Manuel de Prada (participación identificada por contexto; audio pendiente)",
+            "statement": "El escritor cuestiona la memoria pública francesa de la ocupación alemana y sostiene que la resistencia ha sido presentada de forma más uniforme y heroica de lo que permiten ciertos testimonios. También habla de redes de ayuda entre exiliados españoles y representantes próximos al franquismo. Estas son sus interpretaciones y requieren distinguir episodios documentados de generalizaciones sobre toda la sociedad francesa.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Francia ha reinventado la historia episodios heroicos de la resis"
+          }
         ]
       }
     },
@@ -630,7 +666,16 @@ const extra={
       },
       "sources": {
         "12": [
-          "Gregorio Marañón aparece en la exposición de Juan Manuel de Prada sobre las redes de ayuda y colaboración entre exiliados republicanos, falangistas y representantes culturales durante la ocupación alemana de Francia."
+          {
+            "topic": "Marañón y redes de exiliados en la Francia ocupada",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada presenta a Gregorio Marañón como ejemplo de figuras culturales españolas que se encontraron en un entorno complejo de exilio, consulados y relaciones con autoridades franquistas durante su estancia francesa. Alude a cambios en sus posicionamientos y a contactos diplomáticos. El episodio no aporta en ese pasaje referencias archivísticas suficientes para establecer toda la cronología personal.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "fue el caso de Gregorio marañón eh Gregorio marañón el caso de Gr"
+          }
         ]
       }
     },
@@ -642,7 +687,16 @@ const extra={
       },
       "sources": {
         "12": [
-          "Serrano Suñer aparece en el relato de Juan Manuel de Prada sobre la sustitución de ministros germanófilos por otros favorables a relaciones con los Aliados conforme cambió el desarrollo de la guerra."
+          {
+            "topic": "Serrano Suñer y reorientación diplomática del franquismo",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "El entrevistado menciona a Ramón Serrano Suñer entre los ministros identificados con posiciones germanófilas y lo presenta como ejemplo de las sustituciones realizadas por Franco conforme cambiaba el curso de la guerra. El relato interpreta el relevo como señal de adaptación política; la fecha y motivaciones específicas deben verificarse con decretos y archivos históricos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "su cuñado Serrano suñer que sale mucho en esta novela también y l"
+          }
         ]
       }
     }
