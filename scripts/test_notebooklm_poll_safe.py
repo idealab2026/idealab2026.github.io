@@ -91,6 +91,46 @@ class SafePollTests(unittest.TestCase):
             submit.assert_called_once_with(selected[0], selected[1],
                                            state, cfg)
 
+    def test_diagnose_reports_epoch_mapping_and_quarantine_without_secrets(self):
+        import contextlib
+        import io
+        issues = [
+            {"number": 11, "title": "[NLM] historical", "createdAt": "2026-11-09T19:02:00Z"},
+            {"number": 12, "title": "[NLM] early", "createdAt": "2026-11-08T20:00:00Z"},
+            {"number": 13, "title": "[NLM] no map", "createdAt": "2026-11-09T19:02:00Z"},
+            {"number": 14, "title": "[NLM] quarantined", "createdAt": "2026-11-09T19:02:00Z"},
+            {"number": 15, "title": "[NLM] eligible", "createdAt": "2026-11-09T19:02:00Z"},
+            {"number": 201, "title": "[NLM] explicitly held", "createdAt": "2026-11-09T19:03:00Z"},
+        ]
+        state = {"11": {"phase": "failed", "notebook": "private-failed-notebook"}}
+        cfg = {"activated_at": "2026-11-09T19:00:00Z"}
+        out = io.StringIO()
+        with patch.object(bridge, "github_issues", return_value=issues), \
+             patch.object(bridge, "parse_request", return_value=request()), \
+             patch.object(bridge, "select_mapping", side_effect=[
+                 None, ("private-failed-notebook", ["secret"]), ("private-safe-notebook", ["secret"])]):
+            with contextlib.redirect_stdout(out):
+                bridge.explain_safe_queue(state, cfg, {BOOK})
+        report = out.getvalue()
+        for label in ("total=6", "eligible=1", "unmapped=1",
+                      "before-activation=1", "quarantined-notebook=1",
+                      "held=1", "failed=1"):
+            self.assertIn(label, report)
+        self.assertNotIn("private-failed-notebook", report)
+        self.assertNotIn("private-safe-notebook", report)
+
+    def test_diagnose_when_no_candidate_never_dispatches(self):
+        args = argparse.Namespace(book=[BOOK], hold_issue=[], execute=True)
+        with patch.object(bridge, "check_identity"), \
+             patch.object(bridge, "load_json", return_value={}), \
+             patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "safe_queue_candidate", return_value=None), \
+             patch.object(bridge, "explain_safe_queue") as explain, \
+             patch.object(bridge, "request_new") as dispatch:
+            bridge.safe_poll(args)
+            explain.assert_called_once()
+            dispatch.assert_not_called()
+
     def test_unattended_poll_blocks_historical_failures(self):
         state = {"163": {"phase": "failed", "notebook": "failed-nb"}}
         with patch.object(bridge, "check_identity"), \
