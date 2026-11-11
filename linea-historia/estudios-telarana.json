@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "scope": "Acontecimientos fechados verificados durante la revisión de fuentes de La Telaraña. El episodio puede referirse al hecho, pero no constituye la fuente probatoria principal.",
   "reviewProtocol": {
     "required": [
@@ -187,6 +187,61 @@
       }
     },
     {
+      "id": "study-f25-bis-1930",
+      "y": 1930.372602739726,
+      "t": "Abre sus puertas en Basilea el Banco de Pagos Internacionales",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 25 · contraste institucional",
+      "d": "El Banco de Pagos Internacionales (BIS) comenzó a operar el 17 de mayo de 1930 en Basilea. Su origen estuvo vinculado a las reparaciones de la Primera Guerra Mundial y evolucionó como foro de colaboración de bancos centrales. Su existencia y funciones se documentan institucionalmente; el calificativo de mando clandestino mundial no queda acreditado.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1930-05-17",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 25,
+        "sourceTitle": "Investigación La Telaraña · fuente 25",
+        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
+        "confirmedBy": {
+          "label": "BIS · historia institucional del Banco de Pagos Internacionales",
+          "url": "https://www.bis.org/about/history/overview"
+        },
+        "relatedTelarana": [
+          "f25-bis"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f11-constitucion-1931",
+      "y": 1931.9369863013699,
+      "t": "Las Cortes aprueban la Constitución de la Segunda República española",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 11 · contraste institucional",
+      "d": "La Constitución republicana fue aprobada el 9 de diciembre de 1931, tras varios meses de discusión parlamentaria. Incluyó garantías y derechos civiles y sociales. La afirmación de un entrevistado de que 'invitaba a la guerra civil' es una interpretación política, no un hecho jurídico ni una causalidad establecida.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1931-12-09",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 11,
+        "sourceTitle": "Investigación La Telaraña · fuente 11",
+        "sourceUrl": "https://www.youtube.com/watch?v=ifklD4aJXv8",
+        "confirmedBy": {
+          "label": "Congreso de los Diputados · tramitación Constitución de 1931",
+          "url": "https://www.congreso.es/es/cem/vidparl1931-7"
+        },
+        "relatedTelarana": [
+          "f11-1931",
+          "f11-azana"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
       "id": "study-v4-straperlo-congreso-1935",
       "y": 1935.805479452055,
       "t": "El escándalo del Straperlo llega al debate de las Cortes de la Segunda República",
@@ -217,6 +272,204 @@
       }
     },
     {
+      "id": "study-f13-pacto-germano-sovietico-1939",
+      "y": 1939.641095890411,
+      "t": "Alemania y la URSS firman el pacto Molotov-Ribbentrop",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
+      "d": "El 23 de agosto de 1939, Alemania y la Unión Soviética firmaron un pacto de no agresión. Un protocolo secreto establecía esferas de influencia en Europa oriental. El episodio comenta su papel anterior a la invasión de Polonia; el hecho está documentado independientemente.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1939-08-23",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "USHMM · Pacto Alemán-Soviético",
+          "url": "https://encyclopedia.ushmm.org/content/es/article/german-soviet-pact"
+        },
+        "relatedTelarana": [
+          "f13-hitler",
+          "f13-stalin"
+        ],
+        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
+      }
+    },
+    {
+      "id": "study-f13-invasion-alemana-polonia-1939",
+      "y": 1939.6657534246576,
+      "t": "Alemania invade Polonia e inicia la guerra europea",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
+      "d": "Alemania invadió Polonia el 1 de septiembre de 1939. El 3 de septiembre, Gran Bretaña y Francia declararon la guerra a Alemania. Se incorpora el hecho documentado, no las conjeturas sobre las intenciones o reacciones particulares que se exponen en la conversación.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1939-09-01",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "USHMM · 1939: fechas clave",
+          "url": "https://encyclopedia.ushmm.org/content/es/article/1939-key-dates"
+        },
+        "relatedTelarana": [
+          "f13-hitler",
+          "f13-polonia"
+        ],
+        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
+      }
+    },
+    {
+      "id": "study-f13-operacion-barbarroja-1941",
+      "y": 1941.4712328767123,
+      "t": "Alemania inicia la Operación Barbarroja contra la URSS",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
+      "d": "El 22 de junio de 1941, Alemania comenzó su ofensiva contra la Unión Soviética, rompiendo el pacto germano-soviético. La fuente 13 debate los motivos y decisiones estratégicas; la fecha de inicio y el hecho de la invasión se acreditan mediante documentación histórica externa.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1941-06-22",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "USHMM · El frente oriental",
+          "url": "https://encyclopedia.ushmm.org/content/es/article/the-soviet-union-and-the-eastern-front"
+        },
+        "relatedTelarana": [
+          "f13-hitler",
+          "f13-stalin"
+        ],
+        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
+      }
+    },
+    {
+      "id": "study-f10-division-azul-1941",
+      "y": 1941.4794520547946,
+      "t": "Se organiza oficialmente la División Azul española",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 10 · contraste institucional",
+      "d": "La División Española de Voluntarios, conocida como División Azul, fue organizada el 25 de junio de 1941 para combatir junto al ejército alemán en la invasión de la Unión Soviética. El archivo del Ministerio de Cultura documenta fechas, mandos y composición. Se distingue este hecho del debate editorial sobre sus motivaciones y consecuencias.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1941-06-25",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 10,
+        "sourceTitle": "Investigación La Telaraña · fuente 10",
+        "sourceUrl": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
+        "confirmedBy": {
+          "label": "PARES · Dirección General de Patrimonio Cultural · División Azul",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/145056"
+        },
+        "relatedTelarana": [
+          "f10-division-azul",
+          "f10-franco"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f13-valquiria-1944",
+      "y": 1944.549180327869,
+      "t": "Fracasa el atentado del 20 de julio contra Adolf Hitler",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 13 · contraste institucional",
+      "d": "El 20 de julio de 1944 Claus Schenk Graf von Stauffenberg y un grupo de conspiradores intentaron matar a Hitler mediante una bomba, con la esperanza de derribar el régimen nazi. La operación fracasó y se desencadenó represión contra los participantes. Este episodio está documentado en los archivos federales alemanes.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1944-07-20",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 13,
+        "sourceTitle": "Investigación La Telaraña · fuente 13",
+        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
+        "confirmedBy": {
+          "label": "Bundesarchiv · Attentat auf Adolf Hitler · 20 Juli 1944",
+          "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/attentat-auf-adolf-hitler/"
+        },
+        "relatedTelarana": [
+          "f13-valquiria",
+          "f13-hitler"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f21-schuman-1950",
+      "y": 1950.3506849315067,
+      "t": "Robert Schuman presenta su propuesta de integración del carbón y el acero",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "La declaración de Robert Schuman, elaborada en cooperación con Jean Monnet, propuso poner bajo una autoridad común la producción de carbón y acero para reducir el riesgo de nuevas guerras europeas. Es un hito institucional documentado; la caracterización como golpe de Estado en la entrevista es un juicio político, no un hecho aceptado.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1950-05-09",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://commission.europa.eu/news-and-media/news/celebrating-75-years-europe-vision-reality-2025-05-09_en"
+        },
+        "relatedTelarana": [
+          "f21-schuman",
+          "f21-monnet",
+          "f21-eu"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f23-tratado-paris-ceca-1951",
+      "y": 1951.2931506849316,
+      "t": "Se firma en París el Tratado constitutivo de la Comunidad Europea del Carbón y del Acero",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 23 · Parlamento Europeo",
+      "d": "El 18 de abril de 1951, Bélgica, Francia, Italia, Luxemburgo, Países Bajos y Alemania Occidental firmaron en París el tratado constitutivo de la Comunidad Europea del Carbón y del Acero (CECA). Fue un paso institucional posterior a la Declaración Schuman del 9 de mayo de 1950. La fuente 23 analiza el papel de Schuman y Jean Monnet, pero sus interpretaciones sobre una supuesta dirección oculta de la integración europea se conservan como declaraciones del entrevistado.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1951-04-18",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 23,
+        "sourceTitle": "El poder real que controla la Unión Europea · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=EMZzh2ZpLj8",
+        "confirmedBy": {
+          "label": "Parlamento Europeo · Archivo histórico · Tratado de París",
+          "url": "https://historicalarchives.europarl.europa.eu/home/cultural-heritage-collections/news/treaty-of-paris.html"
+        },
+        "relatedTelarana": [
+          "f23-episodio",
+          "f23-schuman",
+          "f23-ue"
+        ],
+        "methodologicalLimits": "Está documentada la firma del tratado, los seis signatarios y la fecha. Las tesis de que el proceso fue dirigido de forma encubierta por organizaciones privadas o servicios estadounidenses no quedan acreditadas por este acontecimiento."
+      }
+    },
+    {
       "id": "study-vf150-eichmann-1960",
       "y": 1960.3579234972678,
       "t": "Captura de Adolf Eichmann por agentes israelíes en Argentina",
@@ -244,6 +497,34 @@
           "vf150-david-ben-gurion"
         ],
         "methodologicalLimits": "La captura del 11 de mayo y el traslado posterior son hechos diferenciados; no confundir la fecha de la operación con la del traslado."
+      }
+    },
+    {
+      "id": "study-f21-usaid-1961",
+      "y": 1961.7083333333333,
+      "t": "La Ley de Ayuda Exterior de 1961 establece la base de USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "La ley estadounidense de ayuda exterior de septiembre de 1961 ordenó centralizar programas de asistencia. Es contexto fundacional independiente de las afirmaciones de Lorenzo Ramírez sobre usos políticos posteriores.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "1961-09",
+        "datePrecision": "mes",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://history.state.gov/milestones/1961-1968/pl-480"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "f21-usaid-orden"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
       }
     },
     {
@@ -333,6 +614,35 @@
       }
     },
     {
+      "id": "study-f22-marcha-verde-sahara-1975",
+      "y": 1975.8465753424657,
+      "t": "La Marcha Verde cruza la frontera del Sáhara Occidental",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 22 · sentencia y documentación institucional",
+      "d": "El 6 de noviembre de 1975, participantes en la Marcha Verde promovida por Marruecos entraron en el Sáhara Occidental, administrado entonces por España. Ese mismo día, el Consejo de Seguridad de Naciones Unidas aprobó la Resolución 380 (1975), que deploró la realización de la marcha y pidió la retirada de sus participantes. El episodio compara estos hechos con escenarios hipotéticos sobre Ceuta y Gibraltar, sin que esa comparación permita acreditar un plan contemporáneo.",
+      "g": [
+        "África",
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1975-11-06",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 22,
+        "sourceTitle": "El plan ya está en marcha · fuente 22",
+        "sourceUrl": "https://www.youtube.com/watch?v=1zHkc1lFKww",
+        "confirmedBy": {
+          "label": "Tribunal de Justicia de la Unión Europea · Conclusiones del asunto C-266/16 · par. 155-156",
+          "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=ecli:ECLI:EU:C:2018:1"
+        },
+        "relatedTelarana": [
+          "f22-episodio",
+          "f22-marruecos"
+        ],
+        "methodologicalLimits": "La fecha y la resolución de Naciones Unidas están documentadas. No se asumen afirmaciones sin corroborar sobre negociaciones privadas entre Juan Carlos I y Kissinger, ni sobre un supuesto plan actual para Ceuta o Gibraltar."
+      }
+    },
+    {
       "id": "study-vf150-salameh-1979",
       "y": 1979.0575342465754,
       "t": "Muerte de Ali Hassan Salameh en un atentado con explosivos en Beirut",
@@ -419,6 +729,64 @@
           "vf150-ahmed-yassin"
         ],
         "methodologicalLimits": "El informe gubernamental prueba que la operación existió y fue reconocida; no verifica automáticamente todos los detalles narrados por Frattini ni sus valoraciones. La identificación del objetivo se aporta mediante contexto documental externo."
+      }
+    },
+    {
+      "id": "study-f14-11s-2001",
+      "y": 2001.6931506849314,
+      "t": "Atentados terroristas del 11 de septiembre en Estados Unidos",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 14 · contraste institucional",
+      "d": "El 11 de septiembre de 2001 cuatro aviones fueron secuestrados por miembros de Al Qaeda. A las 8:46:40, el vuelo American Airlines 11 se estrelló contra la torre norte del World Trade Center; a las 9:03, el vuelo 175 impactó en la torre sur. La Comisión Nacional de Investigación documentó la cronología. No equivale a avalar hipótesis no probadas sobre participación estatal.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2001-09-11",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 14,
+        "sourceTitle": "Investigación La Telaraña · fuente 14",
+        "sourceUrl": "https://www.youtube.com/watch?v=iPwbiY1F3Rg",
+        "confirmedBy": {
+          "label": "9/11 Commission · The 9/11 Commission Report",
+          "url": "https://9-11commission.gov/report/911Report_Ch9.htm"
+        },
+        "relatedTelarana": [
+          "f14-sept11",
+          "f14-wtc",
+          "f14-alqaeda"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f19-china-omc-2001",
+      "y": 2001.9424657534246,
+      "t": "China se convierte en el miembro 143 de la Organización Mundial del Comercio",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 19 · contraste institucional",
+      "d": "China ingresó oficialmente en la OMC el 11 de diciembre de 2001. Es un hecho económico institucional contrastado. La comparación del impacto global de este acontecimiento con el 11-S, realizada en la fuente 19, es un juicio analítico y no un dato verificable por sí solo.",
+      "g": [
+        "Asia",
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2001-12-11",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 19,
+        "sourceTitle": "Investigación La Telaraña · fuente 19",
+        "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+        "confirmedBy": {
+          "label": "Organización Mundial del Comercio · ficha de adhesión de China",
+          "url": "https://www.wto.org/english/thewto_e/acc_e/a1_chine_e.htm"
+        },
+        "relatedTelarana": [
+          "f19-china",
+          "f19-omc"
+        ],
+        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
       }
     },
     {
@@ -537,6 +905,34 @@
       }
     },
     {
+      "id": "study-f14-comision-11s-informe-2004",
+      "y": 2004.5546448087432,
+      "t": "La Comisión del 11-S publica su informe final",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 14 · contraste archivístico oficial",
+      "d": "El 22 de julio de 2004 la Comisión Nacional sobre los Ataques Terroristas contra Estados Unidos publicó su informe público final. El documento reconstruye la preparación de los atentados, la respuesta institucional y las reformas propuestas. La fuente 14 discute distintos aspectos de esa investigación, pero sus opiniones sobre lagunas o responsabilidades se mantienen separadas del hecho de la publicación.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2004-07-22",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 14,
+        "sourceTitle": "11-S: cronología de los ataques · Fuente 14",
+        "sourceUrl": "https://www.youtube.com/watch?v=iPwbiY1F3Rg",
+        "confirmedBy": {
+          "label": "National Commission on Terrorist Attacks Upon the United States · Informe final",
+          "url": "https://9-11commission.gov/"
+        },
+        "relatedTelarana": [
+          "f14-sept11",
+          "f14-bush"
+        ],
+        "methodologicalLimits": "Se documenta la publicación y fecha del informe; las críticas y relatos personales de la entrevista no se convierten por esta inclusión en hechos acreditados."
+      }
+    },
+    {
       "id": "study-v1-kitchen-2013",
       "y": 2013.495890410959,
       "t": "Inicio de las actuaciones policiales investigadas como Operación Kitchen",
@@ -562,6 +958,34 @@
           "cv26-fernandez-diaz"
         ],
         "methodologicalLimits": "El inicio se fija a julio de 2013 sin día exacto y las responsabilidades individuales se distinguen de la existencia de diligencias judiciales."
+      }
+    },
+    {
+      "id": "study-f09-psoe-primary-2017",
+      "y": 2017.3835616438357,
+      "t": "Pedro Sánchez gana las primarias del PSOE para recuperar la secretaría general",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 09 · acta oficial del PSOE",
+      "d": "El 21 de mayo de 2017 Pedro Sánchez ganó las primarias socialistas ante Susana Díaz y Patxi López. La victoria electoral está respaldada por la información oficial y los resultados publicados por el PSOE. Esta constatación NO corrobora acusaciones que el entrevistado formula sobre cómo se financió o movilizó la campaña.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2017-05-21",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 9,
+        "sourceTitle": "Villarejo en Vaquero Podcast · fuente 09",
+        "sourceUrl": "https://www.youtube.com/watch?v=10vGOskN6hY",
+        "confirmedBy": {
+          "label": "PSOE · resultados del escrutinio de primarias 21/05/2017",
+          "url": "https://www.psoe.es/actualidad/documentos-de-interes/resultados-del-escrutinio-de-las-primarias-2017/"
+        },
+        "relatedTelarana": [
+          "f09-sanchez",
+          "f09-psoe"
+        ],
+        "methodologicalLimits": "El resultado de las primarias está probado. Las declaraciones sobre financiación irregular o influencias no quedan verificadas por ello."
       }
     },
     {
@@ -619,6 +1043,34 @@
       }
     },
     {
+      "id": "study-f21-rand-2019",
+      "y": 2019.309589041096,
+      "t": "RAND publica un resumen de opciones estadounidenses para presionar a Rusia",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "RAND publicó un resumen de investigación sobre opciones económicas, políticas y militares para imponer costes a Rusia. El trabajo analiza costes y riesgos. No demuestra que fuera un plan gubernamental vinculante ni una decisión de desindustrializar Europa.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2019-04-24",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://www.rand.org/pubs/research_briefs/RB10014.html"
+        },
+        "relatedTelarana": [
+          "f21-rand",
+          "f21-russia"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
       "id": "study-v7-premio-chicote-apm-2019",
       "y": 2019.4082191780822,
       "t": "Se anuncia el Premio APM al Mejor Periodista de 2018 para Javier Chicote",
@@ -673,6 +1125,64 @@
           "twp312-francisco-correa"
         ],
         "methodologicalLimits": "La responsabilidad a título lucrativo es civil, no una condena penal a toda la organización ni acredita que todos sus responsables conocieran los hechos ilícitos. El alcance debe seguir la sentencia y sus modificaciones."
+      }
+    },
+    {
+      "id": "study-f19-asalto-capitolio-2021",
+      "y": 2021.013698630137,
+      "t": "Asalto al Capitolio de Estados Unidos durante la certificación electoral",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 19 · informe del Inspector General",
+      "d": "El 6 de enero de 2021, una multitud irrumpió en el Capitolio de Estados Unidos mientras el Congreso tramitaba la certificación de los resultados electorales de 2020. La Policía del Capitolio y su Inspector General investigaron las medidas de seguridad y la respuesta a los acontecimientos. El episodio de la fuente 19 menciona el Capitolio al debatir el retorno de Donald Trump; su interpretación política se mantiene separada de la fecha y la irrupción documentadas.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2021-01-06",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 19,
+        "sourceTitle": "El episodio más censurable · Inversión Racional",
+        "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
+        "confirmedBy": {
+          "label": "U.S. Capitol Police Inspector General · Revisión de los sucesos del 6 de enero",
+          "url": "https://www.oversight.gov/reports/review-events-surrounding-january-6-2021-takeover-us-capitol"
+        },
+        "relatedTelarana": [
+          "f19-episodio",
+          "f19-trump"
+        ],
+        "methodologicalLimits": "La fecha y la irrupción se apoyan en documentación oficial. El informe no convierte por sí solo el análisis político de los participantes del podcast en hechos acreditados, ni atribuye delitos individuales a partir de sus comentarios."
+      }
+    },
+    {
+      "id": "study-f17-espana-marruecos-declaracion-2022",
+      "y": 2022.2630136986302,
+      "t": "España y Marruecos adoptan una declaración conjunta en Rabat",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 17 · declaración bilateral oficial",
+      "d": "El 7 de abril de 2022, Pedro Sánchez y Mohamed VI acordaron una nueva hoja de ruta en las relaciones entre España y Marruecos. La declaración conjunta señala que España considera la propuesta marroquí de autonomía para el Sáhara Occidental de 2007 la base más seria, realista y creíble para abordar el diferendo. Se registra el contenido del acuerdo oficial, sin inferir que España reconociese formalmente soberanía marroquí sobre todo el territorio.",
+      "g": [
+        "Europa",
+        "África"
+      ],
+      "investigation": {
+        "date": "2022-04-07",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 17,
+        "sourceTitle": "Aladetres #181 · Entrevista a José Manuel García-Margallo",
+        "sourceUrl": "https://www.youtube.com/watch?v=3DkVY51_CHs",
+        "confirmedBy": {
+          "label": "La Moncloa · Declaración conjunta España–Marruecos, 7 de abril de 2022",
+          "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2022/070422-declaracion-conjunta-Espana-Marruecos.pdf"
+        },
+        "relatedTelarana": [
+          "f17-marruecos",
+          "f17-espana",
+          "f17-margallo"
+        ],
+        "methodologicalLimits": "La declaración bilateral acredita la posición oficial y el acuerdo; no confirma todas las valoraciones del entrevistado sobre intenciones privadas, coerción o supuestos compromisos no publicados."
       }
     },
     {
@@ -734,6 +1244,64 @@
       }
     },
     {
+      "id": "study-f24-iran-arabia-beijing-2023",
+      "y": 2023.186301369863,
+      "t": "Arabia Saudí e Irán acuerdan restablecer relaciones diplomáticas en Pekín",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 24 · contraste institucional",
+      "d": "El 10 de marzo de 2023, Arabia Saudí e Irán firmaron en Pekín una declaración trilateral junto a China para restablecer sus relaciones diplomáticas y reabrir sus embajadas dentro de un plazo previsto de dos meses. La conferencia de la fuente 24 menciona ese acuerdo como factor relevante en la geopolítica del Golfo; sus interpretaciones sobre consecuencias estratégicas o planes ocultos no son hechos acreditados por la firma.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 24,
+        "sourceTitle": "El nuevo desorden global: Oriente Medio y petróleo · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2023-03-10",
+        "confirmedBy": {
+          "label": "Ministerio de Asuntos Exteriores de China · Declaración trilateral 10/03/2023",
+          "url": "https://www.fmprc.gov.cn/eng/gjhdq_665435/2675_665437/2878_663746/2879_663748/202303/t20230311_11039241.html"
+        },
+        "relatedTelarana": [
+          "f24-episodio",
+          "f24-china",
+          "f24-iran",
+          "f24-arabia"
+        ],
+        "methodologicalLimits": "El comunicado oficial acredita la existencia, fecha y términos del acuerdo trilateral, no la interpretación causal que vincula este tratado con ataques posteriores ni un supuesto plan internacional."
+      }
+    },
+    {
+      "id": "study-f24-ataques-hamas-israel-2023",
+      "y": 2023.7643835616439,
+      "t": "Hamás lanza ataques contra localidades israelíes el 7 de octubre de 2023",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 24 · contraste institucional",
+      "d": "El 7 de octubre de 2023, militantes de Hamás y otros grupos armados atacaron localidades israelíes y lanzaron cohetes, causando muertes de civiles, heridos y secuestros. Naciones Unidas condenó los ataques ese mismo día. La fuente 24 plantea interpretaciones sobre los objetivos y consecuencias regionales, pero su relato no demuestra por sí solo intenciones encubiertas ni relaciones causales con la diplomacia de meses anteriores.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 24,
+        "sourceTitle": "El nuevo desorden global: Oriente Medio y petróleo · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2023-10-07",
+        "confirmedBy": {
+          "label": "Naciones Unidas · Boletín de octubre 2023 sobre la cuestión de Palestina",
+          "url": "https://www.un.org/unispal/document/october-2023-monthly-bulletin/"
+        },
+        "relatedTelarana": [
+          "f24-episodio",
+          "f24-israel"
+        ],
+        "methodologicalLimits": "La fecha y el hecho de los ataques están documentados de manera independiente. La relación causal sugerida entre el acuerdo entre Irán y Arabia Saudí y los ataques del 7 de octubre no se infiere de esta evidencia."
+      }
+    },
+    {
       "id": "study-v7-supremo-ausbanc-manos-limpias-2024",
       "y": 2024.2021857923498,
       "t": "El Supremo absuelve a Luis Pineda y Miguel Bernad en la causa Ausbanc–Manos Limpias",
@@ -760,6 +1328,269 @@
           "twp312-luis-pineda"
         ],
         "methodologicalLimits": "Debe mantenerse la absolución como desenlace procesal en esta causa. No se deben convertir las opiniones de Chicote ni las condenas revocadas en hechos penales vigentes."
+      }
+    },
+    {
+      "id": "study-f21-usaid-review-2025",
+      "y": 2025.0534246575342,
+      "t": "EEUU ordena revisar y pausar la ayuda exterior, incluidos programas USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · contraste institucional independiente",
+      "d": "El 20 de enero de 2025, la orden ejecutiva 14169 del Gobierno estadounidense puso en marcha una pausa y revisión de la asistencia exterior, incluidos los programas USAID. El hecho precede al episodio del 19 de marzo de 2025 en el que el productor anuncia un apartado sobre USAID. Las reformas y transferencias posteriores de 2025 no se atribuyen retroactivamente a la conversación.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-01-20",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El Nuevo Orden Mundial que nos ocultan · Lorenzo Ramírez #68",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "USAID Office of Inspector General · evaluación 03/11/2026",
+          "url": "https://oig.usaid.gov/node/8228"
+        },
+        "relatedTelarana": [
+          "f21-episodio",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Contexto documental fechado, no una reconstrucción del texto pronunciado ni prueba de las interpretaciones del programa."
+      }
+    },
+    {
+      "id": "study-f21-stargate-2025",
+      "y": 2025.054794520548,
+      "t": "OpenAI y sus socios anuncian el proyecto Stargate",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
+      "d": "El 21 de enero de 2025 se anunció el proyecto de inversión en infraestructura de inteligencia artificial en EEUU, con SoftBank, OpenAI, Oracle y MGX como financiadores iniciales. Las cifras anunciadas son compromisos y previsiones, no desembolsos comprobados de todo el importe.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-01-21",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 21,
+        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://openai.com/es-ES/index/announcing-the-stargate-project/"
+        },
+        "relatedTelarana": [
+          "f21-stargate",
+          "f21-openai"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 20,
+            "sourceUrl": "https://www.youtube.com/watch?v=meEH-MaGn24",
+            "type": "analisis_del_anuncio",
+            "status": "mencion_fuente_no_verificacion_independiente"
+          }
+        ]
+      }
+    },
+    {
+      "id": "study-f21-usaid-rubio-2025",
+      "y": 2025.0917808219178,
+      "t": "Marco Rubio anuncia que asume la administración interina de USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · contexto oficial USAID · fuente 21",
+      "d": "El 3 de febrero de 2025, el secretario de Estado Marco Rubio anunció que asumiría la administración interina de USAID. El contexto corresponde a una reorganización del sistema de ayuda exterior estadounidense. No implica hechos sobre la relación de Rubio con receptores privados de fondos.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto externo sobre USAID, posterior a la entrevista cuando corresponda",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-02-03",
+        "confirmedBy": {
+          "label": "Servicio de Investigación del Congreso · informe del 3 de febrero de 2025",
+          "url": "https://www.everycrsreport.com/reports/IN12500.html"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "on-marco-rubio"
+        ],
+        "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
+      }
+    },
+    {
+      "id": "study-f21-usaid-notificacion-2025",
+      "y": 2025.2369863013698,
+      "t": "EEUU notifica al Congreso su intención de reorganizar USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · contexto oficial USAID · fuente 21",
+      "d": "El Departamento de Estado comunicó el 28 de marzo de 2025 al Congreso una propuesta para transferir determinadas funciones de USAID y discontinuar otras. Una notificación de reorganización no equivale por sí sola a la culminación operativa de las transferencias.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto externo sobre USAID, posterior a la entrevista cuando corresponda",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-03-28",
+        "confirmedBy": {
+          "label": "Departamento de Estado · Inspector General · evaluación mayo 2025",
+          "url": "https://www.stateoig.gov/report/aud-geer-25-20"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-departamento-estado",
+          "usaid-congreso"
+        ],
+        "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
+      }
+    },
+    {
+      "id": "study-f21-usaid-transferencia-2025",
+      "y": 2025.4972602739726,
+      "t": "El Departamento de Estado asume gran parte de la ayuda exterior gestionada por USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · contexto oficial USAID · fuente 21",
+      "d": "A partir del 1 de julio de 2025, el Departamento de Estado asumió responsabilidades sobre múltiples programas de ayuda exterior previamente gestionados por USAID. La evaluación oficial de julio de 2026 identificó 1.504 adjudicaciones transferidas, con 51.500 millones de dólares comprometidos; ese recuento corresponde a septiembre de 2025, no a la fecha inicial de transferencia.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto externo sobre USAID, posterior a la entrevista cuando corresponda",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-07-01",
+        "confirmedBy": {
+          "label": "Inspector General del Departamento de Estado · julio 2026",
+          "url": "https://www.stateoig.gov/report/aud-fa-26-17"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-departamento-estado"
+        ],
+        "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
+      }
+    },
+    {
+      "id": "study-f18-doj-fbi-memo-2025",
+      "y": 2025.5416666666667,
+      "t": "El DOJ y el FBI difunden sus conclusiones de revisión del material Epstein",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 18 · referencia externa contrastada",
+      "d": "Un memorando DOJ/FBI de julio de 2025 señaló que su revisión no halló una lista incriminatoria de clientes ni pruebas creíbles de chantaje a personas prominentes. Se registra como conclusión institucional fechada de aquella revisión, no como prueba definitiva de ausencia de toda información adicional.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-07",
+        "datePrecision": "mes",
+        "status": "hecho_documentado",
+        "sourceOrder": 18,
+        "sourceTitle": "Epstein, Israel y élites · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://www.justice.gov/opa/media/1407001/dl"
+        },
+        "relatedTelarana": [
+          "f18-doj",
+          "f18-epstein"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f18-epstein-act-2025",
+      "y": 2025.8821917808218,
+      "t": "Se promulga en EEUU la Epstein Files Transparency Act",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 18 · referencia externa contrastada",
+      "d": "La ley estadounidense de transparencia documental sobre Epstein se promulgó el 19 de noviembre de 2025. La promulgación es antecedente acreditado del anuncio de publicación posterior de archivos.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-11-19",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 18,
+        "sourceTitle": "Epstein, Israel y élites · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+        "confirmedBy": {
+          "label": "Referencia primaria o institucional",
+          "url": "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files"
+        },
+        "relatedTelarana": [
+          "f18-doj",
+          "f18-epstein",
+          "f18-episodio"
+        ],
+        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f15-nss-transmision-congreso-2025",
+      "y": 2025.9178082191781,
+      "t": "Trump remite al Congreso la Estrategia de Seguridad Nacional de 2025",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 15 · comunicación presidencial",
+      "d": "El 2 de diciembre de 2025, Donald Trump remitió al Congreso estadounidense el documento de Estrategia de Seguridad Nacional correspondiente a su Administración. El documento tiene fecha de portada de noviembre de 2025 y define prioridades oficiales hacia el hemisferio occidental, Asia, Europa, Oriente Medio y África. Se registra el acto de transmisión como hecho, no las afirmaciones de éxito ni los pronósticos geopolíticos contenidos en el texto.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-12-02",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 15,
+        "sourceType": "pdf_document",
+        "sourceTitle": "2025 National Security Strategy · Casa Blanca",
+        "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf",
+        "confirmedBy": {
+          "label": "American Presidency Project · Mensaje al Congreso · 2 de diciembre de 2025",
+          "url": "https://www.presidency.ucsb.edu/documents/message-the-congress-transmitting-the-national-security-strategy-the-united-states-0"
+        },
+        "relatedTelarana": [
+          "f15-nss-document",
+          "f15-trump"
+        ],
+        "methodologicalLimits": "Se acredita la publicación/transmisión del documento, no la veracidad de todas sus afirmaciones políticas ni la identidad binaria con la copia original cargada en NotebookLM."
+      }
+    },
+    {
+      "id": "study-f18-doj-epstein-release-2026",
+      "y": 2026.0808219178082,
+      "t": "El DOJ anuncia una nueva publicación de documentos del caso Epstein",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 18 · documento institucional independiente",
+      "d": "El Departamento de Justicia de Estados Unidos anunció el 30 de enero de 2026 la publicación de más de tres millones de páginas adicionales de documentos relacionados con Jeffrey Epstein, que elevaron el acumulado a aproximadamente 3,5 millones. El hecho comprobado es la comunicación y publicación del archivo, no la veracidad de cada afirmación presente en sus documentos.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2026-01-30",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 18,
+        "sourceTitle": "EPSTEIN, EEUU con Israel y las élites occidentales (Lorenzo Ramírez)",
+        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
+        "confirmedBy": {
+          "label": "Departamento de Justicia de EEUU · comunicado 30/01/2026",
+          "url": "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files"
+        },
+        "relatedTelarana": [
+          "f18-episodio",
+          "f18-doj"
+        ],
+        "methodologicalLimits": "Se registra un acto documental de comunicación oficial. No se infiere de ese acto implicación penal de personas mencionadas, conexiones con servicios secretos ni contenido exacto del episodio."
       }
     },
     {
@@ -962,749 +1793,32 @@
       }
     },
     {
-      "id": "study-f18-doj-epstein-release-2026",
-      "y": 2026.0808219178082,
-      "t": "El DOJ anuncia una nueva publicación de documentos del caso Epstein",
+      "id": "study-f21-usaid-evaluacion-2026",
+      "y": 2026.8397260273973,
+      "t": "El Inspector General publica una evaluación de los programas de ayuda exterior transferidos",
       "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 18 · documento institucional independiente",
-      "d": "El Departamento de Justicia de Estados Unidos anunció el 30 de enero de 2026 la publicación de más de tres millones de páginas adicionales de documentos relacionados con Jeffrey Epstein, que elevaron el acumulado a aproximadamente 3,5 millones. El hecho comprobado es la comunicación y publicación del archivo, no la veracidad de cada afirmación presente en sus documentos.",
+      "s": "Investigación IDEA LAB · contexto oficial USAID · fuente 21",
+      "d": "El 3 de noviembre de 2026, USAID OIG publicó una evaluación sobre la gestión de adjudicaciones de ayuda exterior, señalando que seguían activos programas transferidos y que persistían riesgos de gestión y control. El informe no acredita por sí solo las tesis ni las redes de relaciones planteadas en entrevistas de 2025.",
       "g": [
         "América"
       ],
       "investigation": {
-        "date": "2026-01-30",
-        "datePrecision": "dia",
-        "status": "hecho_documentado",
-        "sourceOrder": 18,
-        "sourceTitle": "EPSTEIN, EEUU con Israel y las élites occidentales (Lorenzo Ramírez)",
-        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
-        "confirmedBy": {
-          "label": "Departamento de Justicia de EEUU · comunicado 30/01/2026",
-          "url": "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files"
-        },
-        "relatedTelarana": [
-          "f18-episodio",
-          "f18-doj"
-        ],
-        "methodologicalLimits": "Se registra un acto documental de comunicación oficial. No se infiere de ese acto implicación penal de personas mencionadas, conexiones con servicios secretos ni contenido exacto del episodio."
-      }
-    },
-    {
-      "id": "study-f21-usaid-review-2025",
-      "y": 2025.0534246575342,
-      "t": "EEUU ordena revisar y pausar la ayuda exterior, incluidos programas USAID",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 21 · contraste institucional independiente",
-      "d": "El 20 de enero de 2025, la orden ejecutiva 14169 del Gobierno estadounidense puso en marcha una pausa y revisión de la asistencia exterior, incluidos los programas USAID. El hecho precede al episodio del 19 de marzo de 2025 en el que el productor anuncia un apartado sobre USAID. Las reformas y transferencias posteriores de 2025 no se atribuyen retroactivamente a la conversación.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2025-01-20",
-        "datePrecision": "dia",
-        "status": "hecho_documentado",
         "sourceOrder": 21,
-        "sourceTitle": "El Nuevo Orden Mundial que nos ocultan · Lorenzo Ramírez #68",
+        "sourceTitle": "Contexto externo sobre USAID, posterior a la entrevista cuando corresponda",
         "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2026-11-03",
         "confirmedBy": {
-          "label": "USAID Office of Inspector General · evaluación 03/11/2026",
+          "label": "USAID Office of Inspector General · informe 03/11/2026",
           "url": "https://oig.usaid.gov/node/8228"
         },
         "relatedTelarana": [
-          "f21-episodio",
-          "f21-usaid"
-        ],
-        "methodologicalLimits": "Contexto documental fechado, no una reconstrucción del texto pronunciado ni prueba de las interpretaciones del programa."
-      }
-    },
-    {
-      "id": "study-f21-schuman-1950",
-      "y": 1950.3506849315067,
-      "t": "Robert Schuman presenta su propuesta de integración del carbón y el acero",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
-      "d": "La declaración de Robert Schuman, elaborada en cooperación con Jean Monnet, propuso poner bajo una autoridad común la producción de carbón y acero para reducir el riesgo de nuevas guerras europeas. Es un hito institucional documentado; la caracterización como golpe de Estado en la entrevista es un juicio político, no un hecho aceptado.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1950-05-09",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 21,
-        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
-        "confirmedBy": {
-          "label": "Referencia primaria o institucional",
-          "url": "https://commission.europa.eu/news-and-media/news/celebrating-75-years-europe-vision-reality-2025-05-09_en"
-        },
-        "relatedTelarana": [
-          "f21-schuman",
-          "f21-monnet",
-          "f21-eu"
-        ],
-        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
-      }
-    },
-    {
-      "id": "study-f21-usaid-1961",
-      "y": 1961.7083333333333,
-      "t": "La Ley de Ayuda Exterior de 1961 establece la base de USAID",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
-      "d": "La ley estadounidense de ayuda exterior de septiembre de 1961 ordenó centralizar programas de asistencia. Es contexto fundacional independiente de las afirmaciones de Lorenzo Ramírez sobre usos políticos posteriores.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "1961-09",
-        "datePrecision": "mes",
-        "status": "hecho_documentado",
-        "sourceOrder": 21,
-        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
-        "confirmedBy": {
-          "label": "Referencia primaria o institucional",
-          "url": "https://history.state.gov/milestones/1961-1968/pl-480"
-        },
-        "relatedTelarana": [
           "f21-usaid",
-          "f21-usaid-orden"
+          "usaid-inspector-general",
+          "usaid-departamento-estado"
         ],
-        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
-      }
-    },
-    {
-      "id": "study-f21-rand-2019",
-      "y": 2019.309589041096,
-      "t": "RAND publica un resumen de opciones estadounidenses para presionar a Rusia",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
-      "d": "RAND publicó un resumen de investigación sobre opciones económicas, políticas y militares para imponer costes a Rusia. El trabajo analiza costes y riesgos. No demuestra que fuera un plan gubernamental vinculante ni una decisión de desindustrializar Europa.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "2019-04-24",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 21,
-        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
-        "confirmedBy": {
-          "label": "Referencia primaria o institucional",
-          "url": "https://www.rand.org/pubs/research_briefs/RB10014.html"
-        },
-        "relatedTelarana": [
-          "f21-rand",
-          "f21-russia"
-        ],
-        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
-      }
-    },
-    {
-      "id": "study-f21-stargate-2025",
-      "y": 2025.054794520548,
-      "t": "OpenAI y sus socios anuncian el proyecto Stargate",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 21 · referencia externa contrastada",
-      "d": "El 21 de enero de 2025 se anunció el proyecto de inversión en infraestructura de inteligencia artificial en EEUU, con SoftBank, OpenAI, Oracle y MGX como financiadores iniciales. Las cifras anunciadas son compromisos y previsiones, no desembolsos comprobados de todo el importe.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2025-01-21",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 21,
-        "sourceTitle": "El nuevo orden mundial · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
-        "confirmedBy": {
-          "label": "Referencia primaria o institucional",
-          "url": "https://openai.com/es-ES/index/announcing-the-stargate-project/"
-        },
-        "relatedTelarana": [
-          "f21-stargate",
-          "f21-openai"
-        ],
-        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología.",
-        "otherSourceMentions": [
-          {
-            "sourceOrder": 20,
-            "sourceUrl": "https://www.youtube.com/watch?v=meEH-MaGn24",
-            "type": "analisis_del_anuncio",
-            "status": "mencion_fuente_no_verificacion_independiente"
-          }
-        ]
-      }
-    },
-    {
-      "id": "study-f18-epstein-act-2025",
-      "y": 2025.8821917808218,
-      "t": "Se promulga en EEUU la Epstein Files Transparency Act",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 18 · referencia externa contrastada",
-      "d": "La ley estadounidense de transparencia documental sobre Epstein se promulgó el 19 de noviembre de 2025. La promulgación es antecedente acreditado del anuncio de publicación posterior de archivos.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2025-11-19",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 18,
-        "sourceTitle": "Epstein, Israel y élites · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
-        "confirmedBy": {
-          "label": "Referencia primaria o institucional",
-          "url": "https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files"
-        },
-        "relatedTelarana": [
-          "f18-doj",
-          "f18-epstein",
-          "f18-episodio"
-        ],
-        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
-      }
-    },
-    {
-      "id": "study-f18-doj-fbi-memo-2025",
-      "y": 2025.5416666666667,
-      "t": "El DOJ y el FBI difunden sus conclusiones de revisión del material Epstein",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 18 · referencia externa contrastada",
-      "d": "Un memorando DOJ/FBI de julio de 2025 señaló que su revisión no halló una lista incriminatoria de clientes ni pruebas creíbles de chantaje a personas prominentes. Se registra como conclusión institucional fechada de aquella revisión, no como prueba definitiva de ausencia de toda información adicional.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2025-07",
-        "datePrecision": "mes",
-        "status": "hecho_documentado",
-        "sourceOrder": 18,
-        "sourceTitle": "Epstein, Israel y élites · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=MljyjDGTxkk",
-        "confirmedBy": {
-          "label": "Referencia primaria o institucional",
-          "url": "https://www.justice.gov/opa/media/1407001/dl"
-        },
-        "relatedTelarana": [
-          "f18-doj",
-          "f18-epstein"
-        ],
-        "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
-      }
-    },
-    {
-      "id": "study-f09-psoe-primary-2017",
-      "y": 2017.3835616438357,
-      "t": "Pedro Sánchez gana las primarias del PSOE para recuperar la secretaría general",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 09 · acta oficial del PSOE",
-      "d": "El 21 de mayo de 2017 Pedro Sánchez ganó las primarias socialistas ante Susana Díaz y Patxi López. La victoria electoral está respaldada por la información oficial y los resultados publicados por el PSOE. Esta constatación NO corrobora acusaciones que el entrevistado formula sobre cómo se financió o movilizó la campaña.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "2017-05-21",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 9,
-        "sourceTitle": "Villarejo en Vaquero Podcast · fuente 09",
-        "sourceUrl": "https://www.youtube.com/watch?v=10vGOskN6hY",
-        "confirmedBy": {
-          "label": "PSOE · resultados del escrutinio de primarias 21/05/2017",
-          "url": "https://www.psoe.es/actualidad/documentos-de-interes/resultados-del-escrutinio-de-las-primarias-2017/"
-        },
-        "relatedTelarana": [
-          "f09-sanchez",
-          "f09-psoe"
-        ],
-        "methodologicalLimits": "El resultado de las primarias está probado. Las declaraciones sobre financiación irregular o influencias no quedan verificadas por ello."
-      }
-    },
-    {
-      "id": "study-f11-constitucion-1931",
-      "y": 1931.9369863013699,
-      "t": "Las Cortes aprueban la Constitución de la Segunda República española",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 11 · contraste institucional",
-      "d": "La Constitución republicana fue aprobada el 9 de diciembre de 1931, tras varios meses de discusión parlamentaria. Incluyó garantías y derechos civiles y sociales. La afirmación de un entrevistado de que 'invitaba a la guerra civil' es una interpretación política, no un hecho jurídico ni una causalidad establecida.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1931-12-09",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 11,
-        "sourceTitle": "Investigación La Telaraña · fuente 11",
-        "sourceUrl": "https://www.youtube.com/watch?v=ifklD4aJXv8",
-        "confirmedBy": {
-          "label": "Congreso de los Diputados · tramitación Constitución de 1931",
-          "url": "https://www.congreso.es/es/cem/vidparl1931-7"
-        },
-        "relatedTelarana": [
-          "f11-1931",
-          "f11-azana"
-        ],
-        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
-      }
-    },
-    {
-      "id": "study-f10-division-azul-1941",
-      "y": 1941.4794520547946,
-      "t": "Se organiza oficialmente la División Azul española",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 10 · contraste institucional",
-      "d": "La División Española de Voluntarios, conocida como División Azul, fue organizada el 25 de junio de 1941 para combatir junto al ejército alemán en la invasión de la Unión Soviética. El archivo del Ministerio de Cultura documenta fechas, mandos y composición. Se distingue este hecho del debate editorial sobre sus motivaciones y consecuencias.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1941-06-25",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 10,
-        "sourceTitle": "Investigación La Telaraña · fuente 10",
-        "sourceUrl": "https://www.youtube.com/watch?v=_pK1VQpH5X4",
-        "confirmedBy": {
-          "label": "PARES · Dirección General de Patrimonio Cultural · División Azul",
-          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/autoridad/145056"
-        },
-        "relatedTelarana": [
-          "f10-division-azul",
-          "f10-franco"
-        ],
-        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
-      }
-    },
-    {
-      "id": "study-f13-valquiria-1944",
-      "y": 1944.549180327869,
-      "t": "Fracasa el atentado del 20 de julio contra Adolf Hitler",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 13 · contraste institucional",
-      "d": "El 20 de julio de 1944 Claus Schenk Graf von Stauffenberg y un grupo de conspiradores intentaron matar a Hitler mediante una bomba, con la esperanza de derribar el régimen nazi. La operación fracasó y se desencadenó represión contra los participantes. Este episodio está documentado en los archivos federales alemanes.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1944-07-20",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 13,
-        "sourceTitle": "Investigación La Telaraña · fuente 13",
-        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
-        "confirmedBy": {
-          "label": "Bundesarchiv · Attentat auf Adolf Hitler · 20 Juli 1944",
-          "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/attentat-auf-adolf-hitler/"
-        },
-        "relatedTelarana": [
-          "f13-valquiria",
-          "f13-hitler"
-        ],
-        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
-      }
-    },
-    {
-      "id": "study-f14-11s-2001",
-      "y": 2001.6931506849314,
-      "t": "Atentados terroristas del 11 de septiembre en Estados Unidos",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 14 · contraste institucional",
-      "d": "El 11 de septiembre de 2001 cuatro aviones fueron secuestrados por miembros de Al Qaeda. A las 8:46:40, el vuelo American Airlines 11 se estrelló contra la torre norte del World Trade Center; a las 9:03, el vuelo 175 impactó en la torre sur. La Comisión Nacional de Investigación documentó la cronología. No equivale a avalar hipótesis no probadas sobre participación estatal.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2001-09-11",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 14,
-        "sourceTitle": "Investigación La Telaraña · fuente 14",
-        "sourceUrl": "https://www.youtube.com/watch?v=iPwbiY1F3Rg",
-        "confirmedBy": {
-          "label": "9/11 Commission · The 9/11 Commission Report",
-          "url": "https://9-11commission.gov/report/911Report_Ch9.htm"
-        },
-        "relatedTelarana": [
-          "f14-sept11",
-          "f14-wtc",
-          "f14-alqaeda"
-        ],
-        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
-      }
-    },
-    {
-      "id": "study-f19-china-omc-2001",
-      "y": 2001.9424657534246,
-      "t": "China se convierte en el miembro 143 de la Organización Mundial del Comercio",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 19 · contraste institucional",
-      "d": "China ingresó oficialmente en la OMC el 11 de diciembre de 2001. Es un hecho económico institucional contrastado. La comparación del impacto global de este acontecimiento con el 11-S, realizada en la fuente 19, es un juicio analítico y no un dato verificable por sí solo.",
-      "g": [
-        "Asia",
-        "Europa"
-      ],
-      "investigation": {
-        "date": "2001-12-11",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 19,
-        "sourceTitle": "Investigación La Telaraña · fuente 19",
-        "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
-        "confirmedBy": {
-          "label": "Organización Mundial del Comercio · ficha de adhesión de China",
-          "url": "https://www.wto.org/english/thewto_e/acc_e/a1_chine_e.htm"
-        },
-        "relatedTelarana": [
-          "f19-china",
-          "f19-omc"
-        ],
-        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
-      }
-    },
-    {
-      "id": "study-f25-bis-1930",
-      "y": 1930.372602739726,
-      "t": "Abre sus puertas en Basilea el Banco de Pagos Internacionales",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 25 · contraste institucional",
-      "d": "El Banco de Pagos Internacionales (BIS) comenzó a operar el 17 de mayo de 1930 en Basilea. Su origen estuvo vinculado a las reparaciones de la Primera Guerra Mundial y evolucionó como foro de colaboración de bancos centrales. Su existencia y funciones se documentan institucionalmente; el calificativo de mando clandestino mundial no queda acreditado.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1930-05-17",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 25,
-        "sourceTitle": "Investigación La Telaraña · fuente 25",
-        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
-        "confirmedBy": {
-          "label": "BIS · historia institucional del Banco de Pagos Internacionales",
-          "url": "https://www.bis.org/about/history/overview"
-        },
-        "relatedTelarana": [
-          "f25-bis"
-        ],
-        "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
-      }
-    },
-    {
-      "id": "study-f13-pacto-germano-sovietico-1939",
-      "y": 1939.641095890411,
-      "t": "Alemania y la URSS firman el pacto Molotov-Ribbentrop",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
-      "d": "El 23 de agosto de 1939, Alemania y la Unión Soviética firmaron un pacto de no agresión. Un protocolo secreto establecía esferas de influencia en Europa oriental. El episodio comenta su papel anterior a la invasión de Polonia; el hecho está documentado independientemente.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1939-08-23",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 13,
-        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
-        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
-        "confirmedBy": {
-          "label": "USHMM · Pacto Alemán-Soviético",
-          "url": "https://encyclopedia.ushmm.org/content/es/article/german-soviet-pact"
-        },
-        "relatedTelarana": [
-          "f13-hitler",
-          "f13-stalin"
-        ],
-        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
-      }
-    },
-    {
-      "id": "study-f13-invasion-alemana-polonia-1939",
-      "y": 1939.6657534246576,
-      "t": "Alemania invade Polonia e inicia la guerra europea",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
-      "d": "Alemania invadió Polonia el 1 de septiembre de 1939. El 3 de septiembre, Gran Bretaña y Francia declararon la guerra a Alemania. Se incorpora el hecho documentado, no las conjeturas sobre las intenciones o reacciones particulares que se exponen en la conversación.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1939-09-01",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 13,
-        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
-        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
-        "confirmedBy": {
-          "label": "USHMM · 1939: fechas clave",
-          "url": "https://encyclopedia.ushmm.org/content/es/article/1939-key-dates"
-        },
-        "relatedTelarana": [
-          "f13-hitler",
-          "f13-polonia"
-        ],
-        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
-      }
-    },
-    {
-      "id": "study-f13-operacion-barbarroja-1941",
-      "y": 1941.4712328767123,
-      "t": "Alemania inicia la Operación Barbarroja contra la URSS",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 13 · contraste documental independiente",
-      "d": "El 22 de junio de 1941, Alemania comenzó su ofensiva contra la Unión Soviética, rompiendo el pacto germano-soviético. La fuente 13 debate los motivos y decisiones estratégicas; la fecha de inicio y el hecho de la invasión se acreditan mediante documentación histórica externa.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1941-06-22",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 13,
-        "sourceTitle": "The Wild Project #293 · Jesús Hernández Martínez",
-        "sourceUrl": "https://www.youtube.com/watch?v=I5koBMBMXSc",
-        "confirmedBy": {
-          "label": "USHMM · El frente oriental",
-          "url": "https://encyclopedia.ushmm.org/content/es/article/the-soviet-union-and-the-eastern-front"
-        },
-        "relatedTelarana": [
-          "f13-hitler",
-          "f13-stalin"
-        ],
-        "methodologicalLimits": "Hecho histórico contrastado de forma independiente; ninguna conjetura de la entrevista se presenta como hecho probado."
-      }
-    },
-    {
-      "id": "study-f14-comision-11s-informe-2004",
-      "y": 2004.5546448087432,
-      "t": "La Comisión del 11-S publica su informe final",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 14 · contraste archivístico oficial",
-      "d": "El 22 de julio de 2004 la Comisión Nacional sobre los Ataques Terroristas contra Estados Unidos publicó su informe público final. El documento reconstruye la preparación de los atentados, la respuesta institucional y las reformas propuestas. La fuente 14 discute distintos aspectos de esa investigación, pero sus opiniones sobre lagunas o responsabilidades se mantienen separadas del hecho de la publicación.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2004-07-22",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 14,
-        "sourceTitle": "11-S: cronología de los ataques · Fuente 14",
-        "sourceUrl": "https://www.youtube.com/watch?v=iPwbiY1F3Rg",
-        "confirmedBy": {
-          "label": "National Commission on Terrorist Attacks Upon the United States · Informe final",
-          "url": "https://9-11commission.gov/"
-        },
-        "relatedTelarana": [
-          "f14-sept11",
-          "f14-bush"
-        ],
-        "methodologicalLimits": "Se documenta la publicación y fecha del informe; las críticas y relatos personales de la entrevista no se convierten por esta inclusión en hechos acreditados."
-      }
-    },
-    {
-      "id": "study-f15-nss-transmision-congreso-2025",
-      "y": 2025.9178082191781,
-      "t": "Trump remite al Congreso la Estrategia de Seguridad Nacional de 2025",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 15 · comunicación presidencial",
-      "d": "El 2 de diciembre de 2025, Donald Trump remitió al Congreso estadounidense el documento de Estrategia de Seguridad Nacional correspondiente a su Administración. El documento tiene fecha de portada de noviembre de 2025 y define prioridades oficiales hacia el hemisferio occidental, Asia, Europa, Oriente Medio y África. Se registra el acto de transmisión como hecho, no las afirmaciones de éxito ni los pronósticos geopolíticos contenidos en el texto.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2025-12-02",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 15,
-        "sourceType": "pdf_document",
-        "sourceTitle": "2025 National Security Strategy · Casa Blanca",
-        "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf",
-        "confirmedBy": {
-          "label": "American Presidency Project · Mensaje al Congreso · 2 de diciembre de 2025",
-          "url": "https://www.presidency.ucsb.edu/documents/message-the-congress-transmitting-the-national-security-strategy-the-united-states-0"
-        },
-        "relatedTelarana": [
-          "f15-nss-document",
-          "f15-trump"
-        ],
-        "methodologicalLimits": "Se acredita la publicación/transmisión del documento, no la veracidad de todas sus afirmaciones políticas ni la identidad binaria con la copia original cargada en NotebookLM."
-      }
-    },
-    {
-      "id": "study-f17-espana-marruecos-declaracion-2022",
-      "y": 2022.2630136986302,
-      "t": "España y Marruecos adoptan una declaración conjunta en Rabat",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 17 · declaración bilateral oficial",
-      "d": "El 7 de abril de 2022, Pedro Sánchez y Mohamed VI acordaron una nueva hoja de ruta en las relaciones entre España y Marruecos. La declaración conjunta señala que España considera la propuesta marroquí de autonomía para el Sáhara Occidental de 2007 la base más seria, realista y creíble para abordar el diferendo. Se registra el contenido del acuerdo oficial, sin inferir que España reconociese formalmente soberanía marroquí sobre todo el territorio.",
-      "g": [
-        "Europa",
-        "África"
-      ],
-      "investigation": {
-        "date": "2022-04-07",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 17,
-        "sourceTitle": "Aladetres #181 · Entrevista a José Manuel García-Margallo",
-        "sourceUrl": "https://www.youtube.com/watch?v=3DkVY51_CHs",
-        "confirmedBy": {
-          "label": "La Moncloa · Declaración conjunta España–Marruecos, 7 de abril de 2022",
-          "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2022/070422-declaracion-conjunta-Espana-Marruecos.pdf"
-        },
-        "relatedTelarana": [
-          "f17-marruecos",
-          "f17-espana",
-          "f17-margallo"
-        ],
-        "methodologicalLimits": "La declaración bilateral acredita la posición oficial y el acuerdo; no confirma todas las valoraciones del entrevistado sobre intenciones privadas, coerción o supuestos compromisos no publicados."
-      }
-    },
-    {
-      "id": "study-f19-asalto-capitolio-2021",
-      "y": 2021.013698630137,
-      "t": "Asalto al Capitolio de Estados Unidos durante la certificación electoral",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 19 · informe del Inspector General",
-      "d": "El 6 de enero de 2021, una multitud irrumpió en el Capitolio de Estados Unidos mientras el Congreso tramitaba la certificación de los resultados electorales de 2020. La Policía del Capitolio y su Inspector General investigaron las medidas de seguridad y la respuesta a los acontecimientos. El episodio de la fuente 19 menciona el Capitolio al debatir el retorno de Donald Trump; su interpretación política se mantiene separada de la fecha y la irrupción documentadas.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2021-01-06",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 19,
-        "sourceTitle": "El episodio más censurable · Inversión Racional",
-        "sourceUrl": "https://www.youtube.com/watch?v=TS5c9NXubIs",
-        "confirmedBy": {
-          "label": "U.S. Capitol Police Inspector General · Revisión de los sucesos del 6 de enero",
-          "url": "https://www.oversight.gov/reports/review-events-surrounding-january-6-2021-takeover-us-capitol"
-        },
-        "relatedTelarana": [
-          "f19-episodio",
-          "f19-trump"
-        ],
-        "methodologicalLimits": "La fecha y la irrupción se apoyan en documentación oficial. El informe no convierte por sí solo el análisis político de los participantes del podcast en hechos acreditados, ni atribuye delitos individuales a partir de sus comentarios."
-      }
-    },
-    {
-      "id": "study-f22-marcha-verde-sahara-1975",
-      "y": 1975.8465753424657,
-      "t": "La Marcha Verde cruza la frontera del Sáhara Occidental",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 22 · sentencia y documentación institucional",
-      "d": "El 6 de noviembre de 1975, participantes en la Marcha Verde promovida por Marruecos entraron en el Sáhara Occidental, administrado entonces por España. Ese mismo día, el Consejo de Seguridad de Naciones Unidas aprobó la Resolución 380 (1975), que deploró la realización de la marcha y pidió la retirada de sus participantes. El episodio compara estos hechos con escenarios hipotéticos sobre Ceuta y Gibraltar, sin que esa comparación permita acreditar un plan contemporáneo.",
-      "g": [
-        "África",
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1975-11-06",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 22,
-        "sourceTitle": "El plan ya está en marcha · fuente 22",
-        "sourceUrl": "https://www.youtube.com/watch?v=1zHkc1lFKww",
-        "confirmedBy": {
-          "label": "Tribunal de Justicia de la Unión Europea · Conclusiones del asunto C-266/16 · par. 155-156",
-          "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=ecli:ECLI:EU:C:2018:1"
-        },
-        "relatedTelarana": [
-          "f22-episodio",
-          "f22-marruecos"
-        ],
-        "methodologicalLimits": "La fecha y la resolución de Naciones Unidas están documentadas. No se asumen afirmaciones sin corroborar sobre negociaciones privadas entre Juan Carlos I y Kissinger, ni sobre un supuesto plan actual para Ceuta o Gibraltar."
-      }
-    },
-    {
-      "id": "study-f23-tratado-paris-ceca-1951",
-      "y": 1951.2931506849316,
-      "t": "Se firma en París el Tratado constitutivo de la Comunidad Europea del Carbón y del Acero",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 23 · Parlamento Europeo",
-      "d": "El 18 de abril de 1951, Bélgica, Francia, Italia, Luxemburgo, Países Bajos y Alemania Occidental firmaron en París el tratado constitutivo de la Comunidad Europea del Carbón y del Acero (CECA). Fue un paso institucional posterior a la Declaración Schuman del 9 de mayo de 1950. La fuente 23 analiza el papel de Schuman y Jean Monnet, pero sus interpretaciones sobre una supuesta dirección oculta de la integración europea se conservan como declaraciones del entrevistado.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "date": "1951-04-18",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 23,
-        "sourceTitle": "El poder real que controla la Unión Europea · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=EMZzh2ZpLj8",
-        "confirmedBy": {
-          "label": "Parlamento Europeo · Archivo histórico · Tratado de París",
-          "url": "https://historicalarchives.europarl.europa.eu/home/cultural-heritage-collections/news/treaty-of-paris.html"
-        },
-        "relatedTelarana": [
-          "f23-episodio",
-          "f23-schuman",
-          "f23-ue"
-        ],
-        "methodologicalLimits": "Está documentada la firma del tratado, los seis signatarios y la fecha. Las tesis de que el proceso fue dirigido de forma encubierta por organizaciones privadas o servicios estadounidenses no quedan acreditadas por este acontecimiento."
-      }
-    },
-    {
-      "id": "study-f24-iran-arabia-beijing-2023",
-      "y": 2023.186301369863,
-      "t": "Arabia Saudí e Irán acuerdan restablecer relaciones diplomáticas en Pekín",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 24 · contraste institucional",
-      "d": "El 10 de marzo de 2023, Arabia Saudí e Irán firmaron en Pekín una declaración trilateral junto a China para restablecer sus relaciones diplomáticas y reabrir sus embajadas dentro de un plazo previsto de dos meses. La conferencia de la fuente 24 menciona ese acuerdo como factor relevante en la geopolítica del Golfo; sus interpretaciones sobre consecuencias estratégicas o planes ocultos no son hechos acreditados por la firma.",
-      "g": [
-        "Asia"
-      ],
-      "investigation": {
-        "sourceOrder": 24,
-        "sourceTitle": "El nuevo desorden global: Oriente Medio y petróleo · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
-        "status": "hecho_documentado",
-        "datePrecision": "día",
-        "date": "2023-03-10",
-        "confirmedBy": {
-          "label": "Ministerio de Asuntos Exteriores de China · Declaración trilateral 10/03/2023",
-          "url": "https://www.fmprc.gov.cn/eng/gjhdq_665435/2675_665437/2878_663746/2879_663748/202303/t20230311_11039241.html"
-        },
-        "relatedTelarana": [
-          "f24-episodio",
-          "f24-china",
-          "f24-iran",
-          "f24-arabia"
-        ],
-        "methodologicalLimits": "El comunicado oficial acredita la existencia, fecha y términos del acuerdo trilateral, no la interpretación causal que vincula este tratado con ataques posteriores ni un supuesto plan internacional."
-      }
-    },
-    {
-      "id": "study-f24-ataques-hamas-israel-2023",
-      "y": 2023.7643835616439,
-      "t": "Hamás lanza ataques contra localidades israelíes el 7 de octubre de 2023",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 24 · contraste institucional",
-      "d": "El 7 de octubre de 2023, militantes de Hamás y otros grupos armados atacaron localidades israelíes y lanzaron cohetes, causando muertes de civiles, heridos y secuestros. Naciones Unidas condenó los ataques ese mismo día. La fuente 24 plantea interpretaciones sobre los objetivos y consecuencias regionales, pero su relato no demuestra por sí solo intenciones encubiertas ni relaciones causales con la diplomacia de meses anteriores.",
-      "g": [
-        "Asia"
-      ],
-      "investigation": {
-        "sourceOrder": 24,
-        "sourceTitle": "El nuevo desorden global: Oriente Medio y petróleo · Lorenzo Ramírez",
-        "sourceUrl": "https://www.youtube.com/watch?v=o8YeIJyazM8",
-        "status": "hecho_documentado",
-        "datePrecision": "día",
-        "date": "2023-10-07",
-        "confirmedBy": {
-          "label": "Naciones Unidas · Boletín de octubre 2023 sobre la cuestión de Palestina",
-          "url": "https://www.un.org/unispal/document/october-2023-monthly-bulletin/"
-        },
-        "relatedTelarana": [
-          "f24-episodio",
-          "f24-israel"
-        ],
-        "methodologicalLimits": "La fecha y el hecho de los ataques están documentados de manera independiente. La relación causal sugerida entre el acuerdo entre Irán y Arabia Saudí y los ataques del 7 de octubre no se infiere de esta evidencia."
+        "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
       }
     }
   ]
