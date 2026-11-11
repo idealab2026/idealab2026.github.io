@@ -3263,11 +3263,11 @@
     "transcriptAnchorsMatchedTotal": 320,
     "transcriptAnchorsUnmatched": 11,
     "structuredSpeakerWithoutAnchor": "Lorenzo Ramírez en fuente 23, protagonista de la entrevista; no se declara minuto verificado",
-    "latestAuditedGraphEntities": 566,
-    "latestAuditedGraphLinks": 865,
+    "latestAuditedGraphEntities": 574,
+    "latestAuditedGraphLinks": 880,
     "latestAuditedGraphSourceMentions": 441,
-    "latestAuditedGraphOtherRelations": 424,
-    "latestAuditedGraphExternallyClassifiedRelations": 54,
+    "latestAuditedGraphOtherRelations": 439,
+    "latestAuditedGraphExternallyClassifiedRelations": 68,
     "latestAuditedGraphPeopleWithoutIndependentBiographicalSource": 245,
     "source23And24AudioVerified": false,
     "source23And24MinutesVerified": 0,
@@ -3324,7 +3324,13 @@
       "indirectHistoricalSynthesisEdges": 1,
       "primarySourceVerifiedEdges": 14,
       "timelineEvents": 4,
-      "limitations": "Rockefeller dirige OCIAA y promueve IIAA (1942); preside consejo asesor de Truman (1950). AIA privada de 1946 y RBF son entidades separadas. USAID se crea jurídicamente en 1961 por Kennedy; ninguna fuente usada prueba propiedad, gobierno o financiación de USAID por Rockefeller."
+      "limitations": "Rockefeller dirige OCIAA y promueve IIAA (1942); preside consejo asesor de Truman (1950). AIA privada de 1946 y RBF son entidades separadas. USAID se crea jurídicamente en 1961 por Kennedy; ninguna fuente usada prueba propiedad, gobierno o financiación de USAID por Rockefeller.",
+      "actualLoadedNodes": 8,
+      "actualLoadedEdges": 15,
+      "loadedVerifiedEdges": 14,
+      "loadedIndirectSynthesisEdges": 1,
+      "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43013028415",
+      "stage": "despliegue_y_pruebas_verificados"
     }
   }
 }
