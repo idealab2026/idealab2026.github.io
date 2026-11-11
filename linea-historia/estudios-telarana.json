@@ -1649,6 +1649,35 @@
       }
     },
     {
+      "id": "study-f27-ukr-blackrock-mou-2022",
+      "y": 2022.858904109589,
+      "t": "Ucrania y BlackRock acuerdan asesoramiento para una plataforma de reconstrucción",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · contraste institucional externo · fuente 27",
+      "d": "El Ministerio de Economía ucraniano documentó la firma de un memorando con BlackRock Financial Markets Advisory el 10 de noviembre de 2022 para diseñar una plataforma de atracción de capital privado para la recuperación económica. Es un acuerdo de consulta documentado; no transfiere automáticamente activos del país ni acredita control del Gobierno por la gestora.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 27,
+        "sourceTitle": "Fuente 27 · organizaciones de poder · documentación sobre reconstrucción de Ucrania",
+        "sourceUrl": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2022-11-10",
+        "confirmedBy": {
+          "label": "Gobierno de Ucrania · comunicado ministerial 11/11/2022",
+          "url": "https://www.kmu.gov.ua/en/news/ministerstvo-ekonomiki-ukrayini-pidpisalo-memorandum-iz-najbilshoyu-investkompaniyeyu-svitu"
+        },
+        "relatedTelarana": [
+          "f27-ministerio-economia-ucrania",
+          "on-blackrock"
+        ],
+        "methodologicalLimits": "Hecho independiente documentado por autoridad primaria. Se añade como contexto de la fuente; al carecer de transcripción integral y cotejo de audio, no se afirma que el entrevistado lo explicase ni que las hipótesis del vídeo estén verificadas."
+      }
+    },
+    {
       "id": "study-f24-iran-arabia-beijing-2023",
       "y": 2023.186301369863,
       "t": "Arabia Saudí e Irán acuerdan restablecer relaciones diplomáticas en Pekín",
@@ -1676,6 +1705,37 @@
           "f24-arabia"
         ],
         "methodologicalLimits": "El comunicado oficial acredita la existencia, fecha y términos del acuerdo trilateral, no la interpretación causal que vincula este tratado con ataques posteriores ni un supuesto plan internacional."
+      }
+    },
+    {
+      "id": "study-f27-ukr-blackrock-udf-2023",
+      "y": 2023.341095890411,
+      "t": "Ucrania presenta apoyo asesor pro bono de BlackRock para diseñar su fondo de desarrollo",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · contraste institucional externo · fuente 27",
+      "d": "El Gobierno ucraniano anunció el diseño del Ukraine Development Fund y confirmó la colaboración pro bono de BlackRock FMA para estructurarlo. La Presidencia también mencionó a JPMorgan Chase y McKinsey entre las organizaciones financieras y consultoras con las que buscaba colaborar. La noticia no constituye prueba de propiedad de BlackRock sobre un fondo operativo ni de contratos exclusivos para terceros.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 27,
+        "sourceTitle": "Fuente 27 · organizaciones de poder · documentación sobre reconstrucción de Ucrania",
+        "sourceUrl": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2023-05-05",
+        "confirmedBy": {
+          "label": "Ministerio de Economía de Ucrania · anuncio sobre el Ukraine Development Fund, mayo de 2023",
+          "url": "https://www.me.gov.ua/News/Detail?id=ddd9f29a-04d4-4624-8b7e-c7f3d9fbde35&isSpecial=true&lang=en-GB&showMenuTree=true&title=TheGovern"
+        },
+        "relatedTelarana": [
+          "f27-ministerio-economia-ucrania",
+          "f27-ukraine-development-fund",
+          "on-blackrock",
+          "on-jpmorgan"
+        ],
+        "methodologicalLimits": "Hecho independiente documentado por autoridad primaria. Se añade como contexto de la fuente; al carecer de transcripción integral y cotejo de audio, no se afirma que el entrevistado lo explicase ni que las hipótesis del vídeo estén verificadas."
       }
     },
     {
@@ -1733,6 +1793,34 @@
           "twp312-luis-pineda"
         ],
         "methodologicalLimits": "Debe mantenerse la absolución como desenlace procesal en esta causa. No se deben convertir las opiniones de Chicote ni las condenas revocadas en hechos penales vigentes."
+      }
+    },
+    {
+      "id": "study-f26-eu-ai-act-vigor-2024",
+      "y": 2024.5833333333333,
+      "t": "Entra en vigor el Reglamento de Inteligencia Artificial de la Unión Europea",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · contraste institucional externo · fuente 26",
+      "d": "El 1 de agosto de 2024 entró en vigor el AI Act de la UE, con un marco por niveles de riesgo y aplicación progresiva. La fecha y los objetivos proceden de la Comisión Europea. Es contexto regulatorio independiente para el episodio 26 sobre IA y medios; no valida afirmaciones del entrevistado acerca de vigilancia, censura o concentración tecnológica.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 26,
+        "sourceTitle": "Fuente 26 · IA y medios · contraste legislativo independiente",
+        "sourceUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2024-08-01",
+        "confirmedBy": {
+          "label": "Comisión Europea · AI Act enters into force",
+          "url": "https://commission.europa.eu/news-and-media/news/ai-act-enters-force-2024-08-01_en"
+        },
+        "relatedTelarana": [
+          "f26-ai-act",
+          "f26-comision-europea"
+        ],
+        "methodologicalLimits": "Hecho independiente documentado por autoridad primaria. Se añade como contexto de la fuente; al carecer de transcripción integral y cotejo de audio, no se afirma que el entrevistado lo explicase ni que las hipótesis del vídeo estén verificadas."
       }
     },
     {
