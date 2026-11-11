@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 23,
-    "notStarted": 43,
+    "inReview": 25,
+    "notStarted": 41,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -125,9 +125,9 @@
     }
   ],
   "nextSource": {
-    "order": 25,
-    "videoId": "MTGBx3z8pCI",
-    "status": "transcripcion_privada_lista_para_revision_biografica",
+    "order": 28,
+    "videoId": "fzHC3z8S3oM",
+    "status": "pendiente_de_transcripcion_y_revision_inicial",
     "sourceType": "youtube"
   },
   "inReview": [
@@ -990,6 +990,46 @@
       "timelineVerifiedEventsCommitted": 1
     },
     {
+      "order": 26,
+      "videoId": "FVSBeP6L8lw",
+      "title": "La IA, los medios y el nuevo sistema de control | Lorenzo Ramírez #72 Minimal Design Talks",
+      "sourceUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw",
+      "publishedAt": "2026-06-11",
+      "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
+      "reviewComplete": false,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": false,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "sourceNodesDocumented": 5,
+      "sourceRelationsDocumented": 4,
+      "verifiedIndependentChecks": 1,
+      "sourceTimelineVerifiedEventsCommitted": 1,
+      "sourcePrimaryModule": "la-telarana/fuente-26-revision-inicial.js",
+      "qualityNotes": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales."
+    },
+    {
+      "order": 27,
+      "videoId": "OLoP_-zSKwQ",
+      "title": "La VERDAD Detrás de las organizaciones de PODER | Lorenzo Ramírez",
+      "sourceUrl": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "publishedAt": "2024-02-06",
+      "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
+      "reviewComplete": false,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": false,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "sourceNodesDocumented": 8,
+      "sourceRelationsDocumented": 8,
+      "verifiedIndependentChecks": 4,
+      "sourceTimelineVerifiedEventsCommitted": 2,
+      "sourcePrimaryModule": "la-telarana/fuente-27-revision-inicial.js",
+      "qualityNotes": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales."
+    },
+    {
       "order": 69,
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
@@ -1009,9 +1049,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 83,
+    "committedVerifiedEvents": 86,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 39,
+    "fromSourceInReview": 42,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1127,6 +1167,13 @@
         "study-f25-rockefeller-cfr-1970",
         "study-f25-trilateral-1973",
         "study-f25-g30-rockefeller-1978"
+      ],
+      "26": [
+        "study-f26-eu-ai-act-vigor-2024"
+      ],
+      "27": [
+        "study-f27-ukr-blackrock-mou-2022",
+        "study-f27-ukr-blackrock-udf-2023"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -2079,18 +2126,22 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 22,
-        "status": "pendiente",
+        "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-11",
+          "externalDocumentsVerified": 1,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "methodologicalStatus": "sinopsis + referencia institucional, no lectura de transcripción"
         }
       },
       {
@@ -2103,18 +2154,22 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 23,
-        "status": "pendiente",
+        "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-11",
+          "externalDocumentsVerified": 4,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "methodologicalStatus": "sinopsis + referencia institucional, no lectura de transcripción"
         }
       },
       {
@@ -3445,6 +3500,24 @@
       "report": "CI artifact telarana-auditoria-cobertura-66-fuentes (not deployed publicly)",
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43033721818",
       "status": "automated_structural_and_coverage_checks_passed_not_all_sources_fact_checked"
+    },
+    "source26And27Initial": {
+      "date": "2026-11-11",
+      "sources": [
+        26,
+        27
+      ],
+      "nodesDeclared": 13,
+      "relationsDeclared": 12,
+      "documentedWithOfficialSources": 5,
+      "topicOrProvenanceMentions": 7,
+      "historyEvents": 3,
+      "transcriptsAvailable": false,
+      "sourceLinks": [
+        "https://www.youtube.com/watch?v=FVSBeP6L8lw",
+        "https://www.youtube.com/watch?v=OLoP_-zSKwQ"
+      ],
+      "methodologicalLimit": "Las descripciones y capítulos oficiales no sustituyen transcripciones. Contextos de AI Act, BlackRock FMA y Ucrania proceden de la UE y del Gobierno ucraniano y NO prueban teorías sobre control político."
     }
   }
 }
