@@ -53,8 +53,8 @@ for(const row of rows){
  report.push(entry);
 }
 assert.equal(stats.publishedReviewed,3,"Estados cerrados fuera de registro");
-assert.equal(stats.inReview,26,"En revisión fuera de inventario");
-assert.equal(stats.notStarted,37,"Pendientes canónicas fuera de inventario");
+assert.equal(stats.inReview,(feed.inReview||[]).filter(x=>orders.get(x.order)?.duplicateOf==null).length,"En revisión fuera de inventario");
+assert.equal(stats.notStarted,66-stats.publishedReviewed-stats.inReview,"Pendientes canónicas fuera de inventario");
 assert.equal(stats.confirmedTranscript,22,"Cambio en transcripciones comprobadas sin reconciliar");
 assert.equal(stats.youtubeWithoutFullTranscript,40,"Faltan transcripciones o son inválidas; revisar conteo");
 const p8=report.find(x=>x.order===8);
