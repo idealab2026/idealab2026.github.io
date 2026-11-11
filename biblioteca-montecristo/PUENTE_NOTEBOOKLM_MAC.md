@@ -362,3 +362,34 @@ cualquiera de ellos; no atribuirlo por mera posición u orden de aparición.
   del inventario de Studio antes de cualquier envío.
 
 Mantener retenida la solicitud #201 y los libros con fallos confirmados.
+
+## Preflight individual antes de intentar recuperar los tres bloqueos
+
+La auditoría del 11/11/2026 mostró cero artefactos posteriores a la
+instantánea para #41 (Montecristo II), #85 (Montecristo I) y #115 (Sapiens).
+Esto **no demuestra** que las solicitudes que acabaron en `deferred` no se
+enviaran a NotebookLM ni que el servicio haya recuperado la cuota.
+
+Existe un control de solo lectura, solicitud a solicitud:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/notebooklm_bridge.py recovery-preflight --issue 115
+python3 scripts/notebooklm_bridge.py recovery-preflight --issue 41
+python3 scripts/notebooklm_bridge.py recovery-preflight --issue 85
+```
+
+Comprueba ausencia de envíos confirmados en GitHub, consistencia de
+mapeos privados, exclusión de otros trabajos no conciliados del mismo
+cuaderno, ausencia de artefactos nuevos e inexistencia de artefactos
+incompletos o de estado desconocido. No cambia ningún archivo local,
+estado o comentario; no consume cuota de generaciones.
+
+**Aunque muestre «Controles superados», no autoriza por sí solo un nuevo
+envío.** Antes de usar `recover-blocked` hay que confirmar de forma
+independiente que NotebookLM dispone de cuota y que el intento anterior
+no sigue en ejecución. `recover-blocked` exige confirmaciones explícitas
+y bloquea además artefactos antiguos todavía en curso. Preferir un único
+piloto por vez; nunca eliminar o marcar como descargadas las incidencias
+aplazadas para abrir la cola.
