@@ -253,3 +253,56 @@ Sin confirmar la causa y la ausencia de artefactos tardíos, no activar
 El catálogo incluye dos vídeos etiquetados «Capítulo 34» de *Montecristo*
 (con distintos IDs de YouTube). Ambos deben conservar solicitudes diferentes
 y revisarse contra sus fuentes reales, sin deduplicarlos por el título.
+
+## Continuación controlada con fallos confirmados (11/11/2026)
+
+Los diagnósticos locales de #105, #139, #140, #142, #145, #147, #148,
+#150, #163 y #178 localizaron las fuentes vinculadas y los artefactos
+`failed`; Studio no comunicó el motivo técnico. El indicador de origen
+`unknown` de las fuentes **no demuestra que estén dañadas**. El libro
+*Libertad o igualdad* acumula siete fallos confirmados. No reiniciar
+`resume-generations` ni reintentar estos trabajos a ciegas.
+
+Con un trabajo `failed` en el estado privado, `poll` ahora bloquea
+**nuevas generaciones automáticas**. Puede seguir conciliando y descargando
+las previamente enviadas. La solicitud #201 se mantiene expresamente
+retenida incluso si no queda ningún fallo.
+
+Se ha añadido `poll-safe`: modo puntual, con libros permitidos explícitos,
+que excluye los cuadernos que tengan trabajos `failed`, `uncertain` o
+`deferred`. También comprueba trabajos todavía activos y reintentos
+programados; conserva el contador de los últimos cinco resultados y el
+umbral de pausa de tres. Sin `--execute`, solo muestra la siguiente
+solicitud elegible, sin modificar estado ni enviar nada.
+
+Desde una sesión interactiva del Mac, **manteniendo desinstalado launchd**:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/test_notebooklm_bridge.py -q
+python3 -m unittest discover -s scripts -p 'test_notebooklm_poll_safe.py' -q
+python3 scripts/notebooklm_bridge.py health
+python3 scripts/notebooklm_bridge.py poll-safe --book sapiens --book conde-montecristo
+```
+
+Para realizar **un único envío**, solo después de verificar el número
+mostrado y el estado de NotebookLM, ejecutar:
+
+```bash
+python3 scripts/notebooklm_bridge.py poll-safe --book sapiens --book conde-montecristo --execute
+```
+
+El comando no abre una cola desatendida, no reintenta trabajos fallidos y
+nunca envía la #201. Usa el mismo `request_new` del puente con
+instantánea Studio, comprobación de comentarios GitHub e idempotencia.
+Después del envío, conciliar la generación sin lanzar otra:
+
+```bash
+python3 scripts/notebooklm_bridge.py reconcile-only
+python3 scripts/notebooklm_bridge.py health
+```
+
+No ejecutar `poll` en bucle ni instalar launchd hasta confirmar que el
+piloto se ha completado y descargado sin fallo. Ante cualquier envío
+`uncertain`, consultar `audit-blocked` antes de una recuperación.
