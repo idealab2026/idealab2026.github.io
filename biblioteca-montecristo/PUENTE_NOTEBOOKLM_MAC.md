@@ -306,3 +306,29 @@ python3 scripts/notebooklm_bridge.py health
 No ejecutar `poll` en bucle ni instalar launchd hasta confirmar que el
 piloto se ha completado y descargado sin fallo. Ante cualquier envío
 `uncertain`, consultar `audit-blocked` antes de una recuperación.
+
+## Si poll-safe indica «Sin solicitud apta»
+
+No ejecutar inmediatamente `--execute` otra vez. La cola puede no tener
+ningún candidato por motivos diferentes: solicitud ya registrada en el Mac,
+fecha anterior a la activación local, fuente exacta todavía sin vincular,
+cuaderno en cuarentena o retención explícita de #201.
+
+Desde la sesión interactiva del Mac, consultar el desglose de solo lectura:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/notebooklm_bridge.py poll-safe --book sapiens --book conde-montecristo --diagnose
+```
+
+Se ofrecen recuentos por libro y fase, sin imprimir IDs de cuadernos ni de
+fuentes privadas. Si el motivo es `unmapped`, diagnosticar las asociaciones
+inequívocas con `python3 scripts/notebooklm_map_catalog.py` y, para
+Montecristo, con `python3 scripts/notebooklm_source_mapper.py --book
+conde-montecristo --volume tomo-i` (repetir para tomo-ii). Esos
+comandos no guardan nada sin `--apply`.
+
+Si el motivo es `before-activation`, **no manipular la fecha local ni
+reinicializar el puente**: hay que contrastar las incidencias contra el
+historial de envío y el estado remoto antes de adoptar trabajos antiguos.
