@@ -393,3 +393,25 @@ no sigue en ejecución. `recover-blocked` exige confirmaciones explícitas
 y bloquea además artefactos antiguos todavía en curso. Preferir un único
 piloto por vez; nunca eliminar o marcar como descargadas las incidencias
 aplazadas para abrir la cola.
+
+## Diagnóstico de una generación enviada pero todavía sin descargar
+
+Si `reconcile-only` repite `#115 sapiens submitted`, no lanzar de nuevo
+`recover-blocked` ni usar `retry-failed`: el envío original ya consta
+registrado. Para distinguir los estados visibles de Studio, ejecutar:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/notebooklm_bridge.py inspect-submitted --issue 115
+```
+
+La inspección es de **solo lectura** y comprueba el inventario actual frente
+a la instantánea anterior al envío. Puede informar cero candidatos nuevos,
+un candidato finalizado, un fallo confirmado, un candidato todavía en
+curso, varios candidatos ambiguos o una instantánea incompleta. Si existe
+un solo candidato finalizado, `reconcile-only` intentará descargarlo y
+validará el PNG; si hay varios candidatos, no se atribuye ninguno sin una
+comprobación editorial inequívoca. No se muestran identificadores de
+cuadernos ni artefactos privados. El inventario de Studio no demuestra por
+sí solo que un trabajo se esté ejecutando activamente.
