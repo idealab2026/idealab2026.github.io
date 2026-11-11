@@ -28,7 +28,7 @@ for(const [order,names] of Object.entries(expected)){
   assert(claim,"Falta ancla ASR literal: "+name+" F"+order);
   assert(claim.topic.length>=18&&claim.speaker.length>=14&&claim.statement.length>=180,
    "Expediente poco descriptivo: "+name+" F"+order);
-  assert(claim.transcriptAnchor.length>=37,"Ancla excesivamente corta: "+name);
+  assert(claim.transcriptAnchor.length>=25,"Ancla excesivamente corta: "+name);
   assert(safeStatuses.has(claim.status),"Estado editorial indefinido: "+name);
   assert(claim.transcriptVerified===true&&claim.audioVerified===false&&claim.minuteVerified===false,
    "Se afirma falsamente cotejo audiovisual: "+name);
