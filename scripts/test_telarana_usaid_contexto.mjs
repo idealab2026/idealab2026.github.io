@@ -29,6 +29,15 @@ for(const name of ["Open Society Foundations","Palantir Technologies","Peter Thi
 for(const id of ["f21-usaid","f21-worldbank","on-marco-rubio","on-donald-trump"]){
  assert(ids.has(id),"Falta reutilización del nodo existente: "+id);
 }
+vm.runInNewContext(read("la-telarana/fuente-21-orden-mundial-editorial.js"),ctx);
+const source21=ctx.window.IDEA_TELARANA_SOURCE21_EDITORIAL;
+const usa=source21.nodes.find(n=>n.id==="f21-usaid");
+assert(usa&&usa.podcastNotes.length===4,"Faltan las cuatro declaraciones atribuidas de la entrevista");
+for(const n of usa.podcastNotes){
+ assert(n.episodeId==="idealab-f21-orden-mundial"&&n.status==="alegacion"&&n.timeSec===null,
+  "Una acusación no debe marcarse como hecho contrastado o minuta verificada");
+ assert(n.text.includes("Lorenzo Ramírez")&&n.text.length>=270,"Atribución insuficiente en el apartado de fuentes");
+}
 const timeline=JSON.parse(read("linea-historia/estudios-telarana.json"));
 const events=timeline.items.filter(x=>x.investigation?.relatedTelarana?.includes("f21-usaid"));
 assert(events.length>=6,"USAID carece de hitos institucionales posteriores");
