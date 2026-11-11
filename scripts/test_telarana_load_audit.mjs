@@ -54,6 +54,8 @@ const usaPhase=audit.find(x=>x.label==="USAID · programas, financiación y proc
 assert(usaPhase?.available&&usaPhase.edges===41,"El importador descartó aristas USAID: "+JSON.stringify(usaPhase));
 const rkPhase=audit.find(x=>x.label==="USAID · Rockefeller y antecedentes históricos");
 assert(rkPhase?.available&&rkPhase.edges===15,"Se han perdido eslabones de la cadena Rockefeller: "+JSON.stringify(rkPhase));
+const rkSuccession=audit.find(x=>x.label==="USAID · Rockefeller, IBEC y cadena IIAA–FOA–ICA");
+assert(rkSuccession?.available&&rkSuccession.edges===8,"Faltan aristas de la sucesión Rockefeller–USAID: "+JSON.stringify(rkSuccession));
 const summary=audit.reduce((n,r)=>n+r.added,0);
 assert.equal(summary,ctx.data.nodes.length,"Las altas de cada etapa no cuadran con el total");
 const ids=new Set(ctx.data.nodes.map(n=>n.id));
