@@ -754,6 +754,74 @@ def reconcile_only() -> None:
     print("No se han reenviado solicitudes ni borrado archivos.")
 
 
+# Explicit project hold: never submit this request during recovery.
+# The normal unattended poll is quarantined while failed jobs still exist.
+RECOVERY_HELD_ISSUES = frozenset({"201"})
+
+
+def safe_queue_candidate(state: dict, config: dict, books: set[str],
+                         extra_held: set[str] | None = None):
+    """Find ONE independent request; never read Studio or modify local state.
+
+    An explicitly allowed book is insufficient if its notebook has prior
+    failed, uncertain or deferred work. Skip those notebooks entirely.
+    """
+    if not books:
+        raise ValueError("Indica al menos un --book para la prueba controlada.")
+    for book in books:
+        find_item(book, None)
+    health = generation_health()
+    if health.get("paused"):
+        print("PAUSA DE SEGURIDAD: no se despacharán solicitudes.")
+        return None
+    if any(job.get("phase") in ("submitted", "launching")
+           for job in state.values()):
+        print("Hay trabajos activos; no se inicia ni se propone otro.")
+        return None
+    quarantined = [job for job in state.values()
+                   if job.get("phase") in ("failed", "uncertain", "deferred")]
+    if any(not job.get("notebook") for job in quarantined):
+        print("Estado sin cuaderno identificado: no es seguro continuar.")
+        return None
+    if any(job.get("retry_requested") for job in state.values()):
+        print("Hay reintentos pendientes: conciliar antes de la ejecución controlada.")
+        return None
+    blocked_notebooks = {job["notebook"] for job in quarantined}
+    held = RECOVERY_HELD_ISSUES | (extra_held or set())
+    for number, req in next_requests(state, config):
+        if number in held or req["book"] not in books:
+            continue
+        mapping = select_mapping(config, req)
+        if mapping is None or mapping[0] in blocked_notebooks:
+            continue
+        # The real submitter rechecks GitHub comments and snapshots Studio.
+        return number, req
+    return None
+
+
+def safe_poll(args) -> None:
+    """Manual one-shot recovery. Without --execute: pure queue preview."""
+    check_identity()
+    state = load_json(STATE_PATH, {})
+    config = private_config()
+    candidate = safe_queue_candidate(
+        state, config, set(args.book or []),
+        {str(n) for n in (args.hold_issue or [])})
+    if candidate is None:
+        print("Sin solicitud apta para este conjunto de libros. No se ha enviado nada.")
+        return
+    number, req = candidate
+    print("Solicitud elegible:", "#" + number, "| Libro:", req["book"])
+    print("Retención obligatoria: #201. Cuadernos fallidos/inciertos excluidos.")
+    if not args.execute:
+        print("SOLO PREVISUALIZACIÓN. Para una única generación: añade --execute.")
+        return
+    # Single request; preserves the existing Studio/GitHub deduplication and
+    # the same five-result circuit breaker as the unattended agent.
+    if not request_new(number, req, state, config):
+        print("Solicitud no enviada: asignación privada no válida o incompleta.")
+
+
 def poll():
     check_identity()
     config = private_config()
@@ -792,6 +860,13 @@ def poll():
               "se detiene la cola para evitar duplicados.")
         return
     blocked_notebooks = {j["notebook"] for j in quarantined}
+    # A history of failed generations requires explicitly whitelisted,
+    # one-shot manual dispatch. Never let a restarted LaunchAgent submit #201
+    # or consume the next quota unit while diagnostic review is outstanding.
+    if any(j.get("phase") == "failed" for j in state.values()):
+        print("CUARENTENA DE GENERACIÓN: existen fallos confirmados.")
+        print("Usa poll-safe con --book y --execute para un único trabajo independiente.")
+        return
     # An explicitly queued failed-job retry is validated against the same
     # notebook isolation rules before any attempt is sent.
     if launch_queued_retry(state, config):
@@ -1090,6 +1165,14 @@ def main():
     sub.add_parser("init", help="Activar el puente desde este momento; sin importar incidencias antiguas")
     sub.add_parser("doctor", help="Diagnosticar herramientas y conexiones, sin revelar IDs privados")
     sub.add_parser("poll", help="Procesar una solicitud y comprobar las anteriores")
+    safe = sub.add_parser("poll-safe",
+                          help="Previsualizar o enviar UNA solicitud de un libro independiente")
+    safe.add_argument("--book", action="append", required=True,
+                      help="Slug de libro permitido; se puede repetir")
+    safe.add_argument("--hold-issue", action="append", type=int, default=[],
+                      help="Incidencia adicional que no se debe enviar")
+    safe.add_argument("--execute", action="store_true",
+                      help="Autorizar una sola generación; sin esto es dry-run")
     sub.add_parser("reconcile-only", help="Conciliar envíos previos sin generar trabajos nuevos")
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
     sub.add_parser("health", help="Consultar la pausa y últimos resultados sin datos privados")
@@ -1132,7 +1215,7 @@ def main():
     p.add_argument("--issue", type=int, required=True)
     p.add_argument("--confirm-public", action="store_true")
     args = parser.parse_args()
-    mutating = {"init", "map-book", "map-episode", "poll", "reconcile-only", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations", "recover-blocked"}
+    mutating = {"init", "map-book", "map-episode", "poll", "poll-safe", "reconcile-only", "attach", "defer-uncertain", "quarantine-remote", "publish", "retry-failed", "resume-generations", "recover-blocked"}
     if args.command in mutating:
         with exclusive_state_lock() as acquired:
             if not acquired:
@@ -1158,6 +1241,8 @@ def execute_command(args):
             map_episode(args)
         elif args.command == "poll":
             poll()
+        elif args.command == "poll-safe":
+            safe_poll(args)
         elif args.command == "reconcile-only":
             reconcile_only()
         elif args.command == "status":
