@@ -8,11 +8,15 @@ window.IDEA_TELARANA_SOURCE03_EDITORIAL = {
     "originalSourceId": "9c650705-9fd0-4b9e-88fc-f88112d6d898",
     "notebook": "CULTURA - GEOPOLÍTICA - ESPAÑA",
     "editorialReference": "https://www.ivoox.com/vida-secreta-de-felipe-vi-el-audios-mp3_rf_180376510_1.html",
-    "reviewStage": "source3_editorial_metadata_verified_transcript_pending",
-    "transcriptAvailable": false,
+    "reviewStage": "transcripcion_ASR_disponible_sin_cotejo_de_audio_ni_declaraciones_individuales",
+    "transcriptAvailable": true,
     "timecodesVerified": false,
-    "sourceScope": "Sinopsis oficial y biografías externas verificadas, sin transcripción original",
-    "legalNote": "Título original conservado como metadato. No inferir ni publicar especulaciones sobre sexualidad o vida privada de terceras personas. Toda acusación de delito se trata como alegación sin acreditar."
+    "sourceScope": "Transcripción automática íntegra disponible en Drive privado. Las fichas públicas conservan solo datos editoriales y no reproducen acusaciones personales sin verificación. Pendientes atribución de turnos, contraste y audio.",
+    "legalNote": "Título original conservado como metadato. No inferir ni publicar especulaciones sobre sexualidad o vida privada de terceras personas. Toda acusación de delito se trata como alegación sin acreditar.",
+    "transcriptStoredPrivately": true,
+    "transcriptCharacters": 92493,
+    "transcriptVerifiedAgainstAudio": false,
+    "transcriptPrivateDocVerifiedDate": "2026-11-11"
   },
   "nodes": [
     {
@@ -32,7 +36,7 @@ window.IDEA_TELARANA_SOURCE03_EDITORIAL = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=vUxPc3dTw5Y",
           "status": "resumen-editorial",
-          "text": "Presenta el episodio y entrevista al periodista Joaquín Abad; participación confirmada mediante descripción oficial del programa. No se dispone todavía de transcripción con minutajes."
+          "text": "Presenta el episodio y entrevista al periodista Joaquín Abad; participación confirmada mediante descripción oficial del programa. Existe una transcripción automática íntegra en Drive privado, sin minutajes cotejados."
         }
       ]
     },
@@ -53,7 +57,7 @@ window.IDEA_TELARANA_SOURCE03_EDITORIAL = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=vUxPc3dTw5Y",
           "status": "resumen-editorial",
-          "text": "Es el invitado principal. La descripción de iVoox dice que conversa sobre presuntas grabaciones y actuaciones de espionaje y que habla de experiencias personales. No se ha revisado aún el texto íntegro y no se atribuyen frases literales."
+          "text": "Es el invitado principal. La descripción de iVoox dice que conversa sobre presuntas grabaciones y actuaciones de espionaje y que habla de experiencias personales. El texto ASR está disponible, pero aún no se han verificado sus afirmaciones individualizadas y no se atribuyen frases literales."
         }
       ]
     },
