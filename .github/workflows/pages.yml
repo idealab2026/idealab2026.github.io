@@ -179,6 +179,8 @@ jobs:
           cp la-telarana/fuente-18-epstein-lorenzo-editorial.js dist/la-telarana/fuente-18-epstein-lorenzo-editorial.js
           cp la-telarana/fuente-21-orden-mundial-editorial.js dist/la-telarana/fuente-21-orden-mundial-editorial.js
           cp la-telarana/fuente-25-conexiones-contrastadas.js dist/la-telarana/fuente-25-conexiones-contrastadas.js
+          cp la-telarana/fuente-26-revision-inicial.js dist/la-telarana/fuente-26-revision-inicial.js
+          cp la-telarana/fuente-27-revision-inicial.js dist/la-telarana/fuente-27-revision-inicial.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/personas-fuentes-18-21.js dist/la-telarana/personas-fuentes-18-21.js
           cp la-telarana/personas-fuentes-09-10.js dist/la-telarana/personas-fuentes-09-10.js
