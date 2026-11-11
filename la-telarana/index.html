@@ -1084,12 +1084,11 @@ function showNodeRelationships(panel,node){
   panel.append(section);return;
  }
  if(mentions.length)section.append(N("p",mentions.length+" enlaces de mera mención se excluyen de este apartado.","relations-explainer"));
- var body=N("div",null,"relation-list");
  links.sort(function(a,b){
   var na=getNode(a.a===node.id?a.b:a.a),nb=getNode(b.a===node.id?b.b:b.a);
   return String(na&&na.name||"").localeCompare(String(nb&&nb.name||""),"es")||String(a.type||"").localeCompare(String(b.type||""),"es")
  });
- links.forEach(function(edge){
+ function appendRelation(edge,body){
   var other=getNode(edge.a===node.id?edge.b:edge.a);
   var btn=N("button",null,"relation-item");btn.type="button";
   btn.title="Abrir ficha de la relación: "+(edge.type||"Relación");
@@ -1097,15 +1096,43 @@ function showNodeRelationships(panel,node){
   head.append(N("strong",other&&other.name||"Entidad no encontrada"));
   head.append(N("span",relationStatusLabel(edge),"relation-certainty"));
   btn.append(head);
-  btn.append(N("span",edge.type||"Relación","relation-type"));if(Array.isArray(edge.relatedTypes)&&edge.relatedTypes.length)btn.append(N("span","También: "+edge.relatedTypes.join(" · "),"relation-extract"));
+  btn.append(N("span",edge.type||"Relación","relation-type"));
+  if(Array.isArray(edge.relatedTypes)&&edge.relatedTypes.length)btn.append(N("span","También: "+edge.relatedTypes.join(" · "),"relation-extract"));
   if(edge.note){
    var note=String(edge.note),excerpt=note.length>175?note.slice(0,172)+"…":note;
-   btn.append(N("span",excerpt,"relation-extract"))
+   btn.append(N("span",excerpt,"relation-extract"));
   }
   btn.addEventListener("click",function(){selection={kind:"edge",id:edge.id};inspect();render()});
   body.append(btn);
- });
- section.append(body);panel.append(section)
+ }
+ if(node.id==="f21-usaid"){
+  section.append(N("p","Expediente por categorías: contratos, subvenciones, programas y controles. Una lista oficial de socios no prueba participación en irregularidades.","relations-explainer"));
+  var groups=[
+   ["Contratación y contratistas",/^(Contrataci[oó]n|Contrato|Relaci[oó]n laboral)/i],
+   ["Subvenciones y organismos receptores",/^(Financiaci[oó]n y asistencia|Asociaci[oó]n multilateral|Cooperaci[oó]n con organismo|Subvenci[oó]n)/i],
+   ["Programas, territorios y ejecución",/^(Programa|Gestión financiera|Beneficiario territorial|Agencia ejecutora|Organigrama)/i],
+   ["Auditorías y procedimientos judiciales",/^(Fiscalizaci[oó]n|Proceso judicial|Proceso penal|Resoluci[oó]n civil|Subcontrataci[oó]n)/i],
+   ["Marco institucional y decisiones",null]
+  ];
+  var bucketed=new Map(groups.map(function(g){return[g[0],[]]}));
+  links.forEach(function(e){
+   var match=groups.find(function(g){return g[1]&&g[1].test(e.type||"")});
+   bucketed.get(match?match[0]:groups[groups.length-1][0]).push(e);
+  });
+  groups.forEach(function(g,index){
+   var list=bucketed.get(g[0]);if(!list.length)return;
+   var details=N("details",null,"relations-grouped");
+   details.open=index===0;
+   details.append(N("summary",g[0]+" ("+list.length+")"));
+   var body=N("div",null,"relation-list");list.forEach(function(e){appendRelation(e,body)});
+   details.append(body);section.append(details);
+  });
+ }else{
+  var body=N("div",null,"relation-list");
+  links.forEach(function(e){appendRelation(e,body)});
+  section.append(body);
+ }
+ panel.append(section);
 }
 function showRelationshipEndpoints(panel,edge){
  var section=N("div",null,"relation-endpoints");
