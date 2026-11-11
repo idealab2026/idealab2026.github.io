@@ -1,7 +1,7 @@
 /* Biografías contextualizadas; distinguir datos y alegaciones. */
 window.IDEA_TELARANA_BIOGRAPHIES = {
   "version": 1,
-  "reviewedAt": "2026-11-10",
+  "reviewedAt": "2026-11-11",
   "wikiPages": {
     "on-robert-maxwell": {
       "lang": "en",
@@ -1007,6 +1007,30 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.youtube.com/watch?v=TS5c9NXubIs",
       "sourceTitle": "Referencia biográfica independiente o identificación editorial",
       "reviewedAt": "2026-11-10"
+    },
+    "usaid-watson": {
+      "text": "Roderick Watson fue funcionario responsable de contratación en USAID. El Departamento de Justicia anunció el 12 de junio de 2025 que se declaró culpable de soborno a funcionario público por actuaciones relacionadas con adjudicaciones federales. La ficha refleja esa admisión procesal, sin inferir otros delitos ni el contenido de una sentencia posterior.",
+      "source": "https://www.justice.gov/opa/pr/usaid-official-and-three-corporate-executives-plead-guilty-decade-long-bribery-scheme",
+      "sourceTitle": "Departamento de Justicia · comunicado oficial del 12/06/2025",
+      "reviewedAt": "2026-11-11"
+    },
+    "usaid-barnes": {
+      "text": "Walter Barnes fue propietario y presidente de PM Consulting Group LLC, que operaba como Vistant. Según el Departamento de Justicia, en junio de 2025 se declaró culpable de conspiración para sobornar a un funcionario público y fraude de valores en el caso de adjudicaciones USAID.",
+      "source": "https://www.justice.gov/opa/pr/usaid-official-and-three-corporate-executives-plead-guilty-decade-long-bribery-scheme",
+      "sourceTitle": "Departamento de Justicia · comunicado oficial del 12/06/2025",
+      "reviewedAt": "2026-11-11"
+    },
+    "usaid-britt": {
+      "text": "Darryl Britt fue propietario y presidente de Apprio Inc., contratista federal. El Departamento de Justicia informó en junio de 2025 de su declaración de culpabilidad por conspiración para sobornar a un funcionario público en adjudicaciones relacionadas con USAID.",
+      "source": "https://www.justice.gov/opa/pr/usaid-official-and-three-corporate-executives-plead-guilty-decade-long-bribery-scheme",
+      "sourceTitle": "Departamento de Justicia · comunicado oficial del 12/06/2025",
+      "reviewedAt": "2026-11-11"
+    },
+    "usaid-young": {
+      "text": "Paul Young presidía una compañía subcontratista de Vistant y Apprio. El Departamento de Justicia comunicó en junio de 2025 que se declaró culpable de conspiración para sobornar a un funcionario público; la relación se circunscribe a ese expediente judicial documentado.",
+      "source": "https://www.justice.gov/opa/pr/usaid-official-and-three-corporate-executives-plead-guilty-decade-long-bribery-scheme",
+      "sourceTitle": "Departamento de Justicia · comunicado oficial del 12/06/2025",
+      "reviewedAt": "2026-11-11"
     }
   }
 };
