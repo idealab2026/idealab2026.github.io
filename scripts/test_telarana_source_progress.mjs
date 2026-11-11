@@ -40,6 +40,27 @@ for(const e of rows){
  if(t.complete)assert(reviewed.has(e.order),"Marcado completo fuera de cierre "+e.order);
  if(t.inReview)assert(inReview.has(e.order),"En revisión fuera de seguimiento "+e.order);
  if(t.transcriptContentImported)assert(t.docTranscriptionCreated,"Texto sin documento "+e.order);
+ // Puerta de cierre: una sinopsis, ficha editorial o ASR parcial no equivalen a una transcripción íntegra.
+ if(t.complete||e.reviewComplete===true||reviewed.has(e.order)){
+   assert(t.complete&&e.reviewComplete===true&&reviewed.has(e.order),
+     "Cierre editorial desincronizado para F"+e.order);
+   assert(t.docTranscriptionCreated===true&&t.transcriptContentImported===true,
+     "Prohibido cerrar F"+e.order+" sin transcripción íntegra importada en Drive");
+   assert(Number(t.transcriptCharactersReadBack)>10000,
+     "Prohibido cerrar F"+e.order+" sin lectura de texto completo registrada");
+ }
+ const review=feed.inReview.find(x=>x.order===e.order);
+ if(review){
+   if(review.reviewComplete===true)assert.fail("F"+e.order+" abierta marcada como completada");
+   if(review.transcriptDocHasFullText===true){
+     assert(t.docTranscriptionCreated===true&&t.transcriptContentImported===true,
+       "F"+e.order+": la ficha afirma transcripción completa, pero el catálogo la desmiente");
+   }
+   if(t.transcriptContentImported!==true){
+     assert(review.transcriptDocHasFullText!==true&&review.rawTranscriptAvailable!==true,
+       "F"+e.order+": transcripción parcial declarada íntegra");
+   }
+ }
 }
 for(const order of [1,18,21]){
  const row=rows.find(e=>e.order===order);
