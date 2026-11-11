@@ -992,8 +992,8 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 71,
-    "fromReviewedSource": 25,
+    "committedVerifiedEvents": 75,
+    "fromReviewedSource": 29,
     "fromSourceInReview": 39,
     "publishedInPages": true,
     "eventsBySource": {
@@ -1084,7 +1084,11 @@
         "study-f21-usaid-inhabilitaciones-2025",
         "study-f21-usaid-ukraine-gao-2025",
         "study-f21-usaid-financial-audit-2026",
-        "study-f21-usaid-belgica-2026"
+        "study-f21-usaid-belgica-2026",
+        "study-f21-rockefeller-ociaa-1940",
+        "study-f21-rockefeller-iiaa-peru-1942",
+        "study-f21-rockefeller-truman-1950",
+        "study-f21-rockefeller-partners-progress-1951"
       ],
       "22": [
         "study-f22-marcha-verde-sahara-1975"
@@ -3312,6 +3316,15 @@
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43001130866"
     },
     "usaidTotalDocumentedEdgesInTwoModules": 52,
-    "usaidResearchScopeNote": "52 aristas verificadas por documento en dos módulos (incluye la relación Departamento Estado–NED, NO un vínculo directo USAID–NED). La auditoría global cuenta 54 aristas clasificadas como contrastadas. No se ha efectuado extracción exhaustiva de todos los adjudicatarios de FY2024 ni todas las adjudicaciones."
+    "usaidResearchScopeNote": "52 aristas verificadas por documento en dos módulos (incluye la relación Departamento Estado–NED, NO un vínculo directo USAID–NED). La auditoría global cuenta 54 aristas clasificadas como contrastadas. No se ha efectuado extracción exhaustiva de todos los adjudicatarios de FY2024 ni todas las adjudicaciones.",
+    "usaidRockefellerHistory": {
+      "date": "2026-11-11",
+      "documentedNodes": 11,
+      "moduleEdges": 15,
+      "indirectHistoricalSynthesisEdges": 1,
+      "primarySourceVerifiedEdges": 14,
+      "timelineEvents": 4,
+      "limitations": "Rockefeller dirige OCIAA y promueve IIAA (1942); preside consejo asesor de Truman (1950). AIA privada de 1946 y RBF son entidades separadas. USAID se crea jurídicamente en 1961 por Kennedy; ninguna fuente usada prueba propiedad, gobierno o financiación de USAID por Rockefeller."
+    }
   }
 }
