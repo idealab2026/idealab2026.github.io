@@ -726,6 +726,58 @@ def launch_queued_retry(state: dict, config: dict) -> bool:
     return False
 
 
+def inspect_submitted(args) -> None:
+    """Read-only diagnostic for a submitted generation, without exposing IDs.
+
+    This intentionally does not identify, attach or download anything. The
+    ordinary reconciler remains the only automatic consumer of Studio rows.
+    """
+    state = load_json(STATE_PATH, {})
+    number = str(args.issue)
+    job = state.get(number)
+    if not job or job.get("phase") != "submitted":
+        raise ValueError("La solicitud no está en estado submitted.")
+    print("Solicitud #", number, "| Libro:",
+          (job.get("request") or {}).get("book", "desconocido"),
+          "| Estado: submitted")
+    try:
+        rows, created = remote_artifact_delta(job)
+    except (RuntimeError, ValueError, OSError, subprocess.TimeoutExpired) as exc:
+        print("Studio no permite contrastar la instantánea original:",
+              type(exc).__name__)
+        print("No asignar ni reenviar artefactos. Investigar el inventario de Studio.")
+        return
+    print("Infografías visibles en Studio:", len(rows))
+    print("Artefactos anteriores verificables:", len(job["before"]))
+    print("Artefactos nuevos respecto al envío:", len(created))
+    if not created:
+        print("No hay candidato visible. Puede estar todavía en proceso o "
+              "no haberse materializado el envío; no se puede distinguir.")
+    elif len(created) > 1:
+        print("AMBIGÜEDAD: hay varios candidatos. No vincular ninguno "
+              "sin verificar su contenido y capítulo.")
+    else:
+        status = status_text(created[0])
+        if status == "3" or any(x in status for x in (
+                "complet", "ready", "finish", "success")):
+            print("Candidato único: Studio informa de finalización.")
+            print("Ejecutar reconcile-only para intentar descargarlo.")
+        elif status == "4" or any(x in status for x in (
+                "fail", "error", "cancel")):
+            print("Candidato único: Studio informa de fallo. "
+                  "Ejecutar reconcile-only para registrar su estado.")
+        else:
+            print("Candidato único: Studio informa del estado:", status or "desconocido")
+            print("No parece finalizado. Consultar de nuevo sin reenviar.")
+    linked = job.get("artifact_id")
+    if linked:
+        item = next((x for x in rows if artifact_id(x) == linked), None)
+        print("Artefacto ya vinculado:",
+              ("visible | estado: " + status_text(item)) if item else "no visible")
+    print("Inspección de solo lectura. No se ha enviado, descargado, "
+          "vinculado ni modificado ningún trabajo.")
+
+
 def reconcile_only() -> None:
     """Reconcile previously submitted Studio jobs without launching new work.
 
@@ -1387,6 +1439,9 @@ def main():
     safe.add_argument("--diagnose", action="store_true",
                       help="Desglosar exclusiones por libro, sin generar nada")
     sub.add_parser("reconcile-only", help="Conciliar envíos previos sin generar trabajos nuevos")
+    submitted_diag = sub.add_parser("inspect-submitted",
+                                    help="Inspeccionar un envío en curso sin modificar estado")
+    submitted_diag.add_argument("--issue", type=int, required=True)
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
     sub.add_parser("health", help="Consultar la pausa y últimos resultados sin datos privados")
     sub.add_parser("blocked", help="Listar cuadernos bloqueados, sin datos privados")
@@ -1465,6 +1520,8 @@ def execute_command(args):
             safe_poll(args)
         elif args.command == "reconcile-only":
             reconcile_only()
+        elif args.command == "inspect-submitted":
+            inspect_submitted(args)
         elif args.command == "status":
             show_status()
         elif args.command == "health":
