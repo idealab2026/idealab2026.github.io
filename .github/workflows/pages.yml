@@ -87,6 +87,8 @@ jobs:
         run: node scripts/audit_telarana_editorial.mjs
       - name: Auditar contratos, financiación y casos de USAID
         run: node scripts/test_telarana_usaid_financiacion.mjs
+      - name: Validar la sucesión IIAA FOA ICA y aportaciones privadas de AIA
+        run: node scripts/test_telarana_rockefeller_sucesion.mjs
       - name: Validar los antecedentes históricos Rockefeller y USAID
         run: node scripts/test_telarana_rockefeller_usaid.mjs
       - name: Validar la red documentada de USAID y sus acontecimientos
