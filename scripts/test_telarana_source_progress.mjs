@@ -47,12 +47,23 @@ for(const order of [1,18,21]){
  assert(row.tracking.transcriptContentImported===true);
  assert(row.tracking.imageRuntimeVerified===false,"No inventar QA visual");
 }
-for(const order of [3,4,7,8,9,10,11,12,13,14,16,17,19,20,22,23,24,25]){
+for(const order of [3,4,7,9,10,11,12,13,14,16,17,19,20,22,23,24,25]){
  const row=rows.find(e=>e.order===order);
  assert(row.tracking.docTranscriptionCreated&&row.tracking.transcriptContentImported, "Falta transcripción recuperada "+order);
  assert(row.tracking.inReview&&!row.tracking.complete,"Análisis incompleto no puede cerrarse "+order);
  assert(Number(row.tracking.transcriptCharactersReadBack)>10000,"Documento sin lectura o texto insuficiente "+order);
 }
+for(const [order,minimum] of [[3,90000],[4,80000],[7,300000]]){
+ const row=rows.find(e=>e.order===order),review=feed.inReview.find(e=>e.order===order);
+ assert(row.tracking.driveReadbackVerified&&row.tracking.transcriptContentImported,"ASR no validado para fuente "+order);
+ assert(row.tracking.transcriptCharactersReadBack>=minimum&&review.transcriptDocHasFullText===true,
+ "Texto insuficiente o desincronizado F"+order);
+}
+const f8=rows.find(e=>e.order===8),r8=feed.inReview.find(e=>e.order===8);
+assert(f8.tracking.docTranscriptionCreated&&f8.tracking.transcriptContentImported===false,
+ "F8 no tiene transcripción: no confundir ficha editorial con texto ASR");
+assert(f8.tracking.transcriptCharactersReadBack===0&&r8.transcriptDocHasFullText===false,
+ "Regresión: documento F8 falsamente marcado como transcripción íntegra");
 for(const order of [5,15]){
  const row=rows.find(e=>e.order===order);
  assert(row.tracking.transcriptContentImported===false,"No tratar un PDF o web como transcripción de vídeo");
