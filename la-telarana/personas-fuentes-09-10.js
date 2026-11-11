@@ -77,7 +77,16 @@
           }
         ],
         "10": [
-          "Pedro Sánchez es citado en el análisis sobre la continuidad de la legislatura y las decisiones del Gobierno español en materia de defensa, gasto y relaciones exteriores."
+          {
+            "topic": "Perspectiva sobre la continuidad de la legislatura",
+            "speaker": "Pedro Baños pregunta; Juan Manuel de Prada responde (turnos sin audio cotejado)",
+            "statement": "En la parte final de la entrevista, Pedro Baños pregunta a Juan Manuel de Prada si Pedro Sánchez completará la legislatura. El escritor responde situando la cuestión en una crítica más amplia al funcionamiento de los partidos, los mecanismos de corrupción y la duración del poder político. Su análisis no es una predicción verificable sobre la fecha de una eventual convocatoria electoral.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Pedro Sánchez ¿acabará la legislatura Vamos a ver Eh yo creo que "
+          }
         ]
       }
     },
@@ -630,7 +639,16 @@
           }
         ],
         "10": [
-          "Carrero Blanco habría advertido a Franco de que Alemania podía perder la guerra y habría influido en su cálculo político, según el relato del entrevistado."
+          {
+            "topic": "Relato sobre advertencias a Franco durante la Segunda Guerra Mundial",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada sostiene que Luis Carrero Blanco advirtió a Franco de que Alemania acabaría perdiendo la guerra, y utiliza esa afirmación para explicar el cambio gradual de la política exterior española a partir de 1942. En el diálogo afirma conocer un documento, pero no proporciona su referencia archivística; el aviso atribuido a Carrero requiere contrastar ese documento antes de darse por demostrado.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Carrero Blanco Carrero Blanco ¿No conoces la historia ¿No has vis"
+          }
         ]
       }
     },
@@ -654,7 +672,16 @@
           }
         ],
         "10": [
-          "Francisco Franco habría modificado, según la interpretación que expone Juan Manuel de Prada, su política de neutralidad y de relaciones internacionales cuando cambió el equilibrio militar de la Segunda Guerra Mundial."
+          {
+            "topic": "Interpretación de la neutralidad española y el giro de 1942-1943",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "El escritor sostiene que Franco comenzó a anticipar la derrota alemana durante 1942, reorientó progresivamente su diplomacia y retiró la División Azul en 1943. Presenta esas decisiones como un cálculo de supervivencia política. La conversación aporta una lectura histórica y algunas fechas, pero el alcance real del giro requiere análisis de los decretos, archivos y decisiones españolas durante la guerra.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Franco a partir del año 42 se empieza a dar cuenta de que Alemani"
+          }
         ]
       }
     },
@@ -719,7 +746,16 @@
           }
         ],
         "10": [
-          "Pedro Baños conduce la entrevista y pregunta a Juan Manuel de Prada por la División Azul, la actuación de Franco durante la Segunda Guerra Mundial y las transformaciones políticas recientes."
+          {
+            "topic": "Presentación del episodio y preguntas históricas",
+            "speaker": "Pedro Baños (presentación del programa; audio no cotejado)",
+            "statement": "Baños abre El Canal del Coronel y presenta a Juan Manuel de Prada, con quien dialoga sobre la División Azul, el franquismo y su evolución durante la Segunda Guerra Mundial. También introduce temas contemporáneos sobre Rusia y la política europea. Su condición de entrevistador no implica que comparta automáticamente todas las interpretaciones y afirmaciones formuladas por su invitado.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "bienvenidos una vez más al canal del coronel Hoy tenemos el gran "
+          }
         ]
       }
     },
@@ -731,7 +767,16 @@
       },
       "sources": {
         "10": [
-          "Juan Manuel de Prada comenta el contexto de la División Azul, el regreso de prisioneros españoles, la política de Franco y su crítica a las ideologías contemporáneas y a la actuación de Occidente."
+          {
+            "topic": "Contexto del entrevistado y argumentos sobre la División Azul",
+            "speaker": "Juan Manuel de Prada (participación identificada por presentación; audio pendiente)",
+            "statement": "El escritor comenta una obra literaria cuyo protagonista se alista en la División Azul y utiliza ese contexto para reflexionar sobre la transformación de España entre 1941 y 1943, la repatriación de prisioneros y la memoria pública del franquismo. Sus afirmaciones sobre cifras de voluntarios, evolución ideológica y posiciones de dirigentes son exposiciones del invitado, pendientes de cotejo histórico individual.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Juan Manuel de Prada es bien conocido por todos vosotros Premio P"
+          }
         ]
       }
     },
@@ -743,7 +788,16 @@
       },
       "sources": {
         "10": [
-          "Muñoz Grandes habría acudido al recibimiento del buque Semíramis con prisioneros españoles repatriados de la Unión Soviética, mientras Franco no lo hizo, según el episodio."
+          {
+            "topic": "Regreso del buque Semíramis y la recepción de repatriados",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada recuerda la llegada a Barcelona del buque Semíramis con españoles repatriados de la Unión Soviética y afirma que el general Agustín Muñoz Grandes acudió a recibirlos mientras Franco no lo hizo. El episodio lo presenta como parte de su reconstrucción de la evolución política del régimen; la asistencia concreta debe corroborarse con hemerotecas y fuentes de la época.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Allí va el general Muñoz Grandes al recibimiento pero no va Franc"
+          }
         ]
       }
     },
@@ -755,7 +809,16 @@
       },
       "sources": {
         "10": [
-          "Hitler decidió invadir la Unión Soviética en 1941; en ese contexto se describe en la entrevista el reclutamiento de voluntarios españoles para la División Azul."
+          {
+            "topic": "Operación Barbarroja y formación de la División Azul",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "El escritor relaciona el ataque alemán a la Unión Soviética en junio de 1941, ordenado por Adolf Hitler, con el reclutamiento español de voluntarios para la División Azul. Explica que el entusiasmo inicial y la disponibilidad de efectivos habrían cambiado conforme aumentaron las bajas. Las cifras específicas citadas y la motivación de los voluntarios deben comprobarse con fuentes históricas independientes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando Hitler eh se lanza a la operación Barbarroja pues como sab"
+          }
         ]
       }
     },
@@ -767,7 +830,16 @@
       },
       "sources": {
         "10": [
-          "Stalin es mencionado por la situación de los prisioneros españoles en campos soviéticos y por el cambio político posterior a su muerte."
+          {
+            "topic": "Prisioneros españoles y transición soviética posterior a Stalin",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada describe las duras condiciones de cautiverio de prisioneros españoles en la Unión Soviética y vincula su repatriación con la etapa posterior a la muerte de Iósif Stalin. Presenta el relevo de liderazgo como un factor político decisivo, aunque la cronología concreta de liberaciones, negociaciones y viajes exige contraste documental separado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "con la muerte de Stalin pues Krusev decide eh liberar a los pocos"
+          }
         ]
       }
     },
@@ -779,7 +851,16 @@
       },
       "sources": {
         "10": [
-          "Jrushchov habría facilitado, según la conversación, la liberación y repatriación de los supervivientes españoles que seguían retenidos en la Unión Soviética."
+          {
+            "topic": "Liberación de prisioneros y etapa de Jrushchov",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "El entrevistado afirma que, tras la muerte de Stalin, el dirigente soviético cuyo apellido aparece como «Krusev» facilitó la liberación de prisioneros españoles aún retenidos. La referencia apunta a Nikita Jrushchov, pero la secuencia institucional y la intervención personal del dirigente requieren cotejo histórico. El relato se conserva como afirmación de la fuente.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Krusev decide eh liberar a los pocos que quedaban porque ya queda"
+          }
         ]
       }
     },
@@ -791,7 +872,16 @@
       },
       "sources": {
         "10": [
-          "Churchill es citado para describir la supuesta admiración de Franco por el Ejército británico y el intercambio de correspondencia entre dirigentes durante la guerra."
+          {
+            "topic": "Relaciones de Franco con dirigentes británicos",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada afirma que Franco admiraba al ejército británico y a Winston Churchill y que ambos dirigentes intercambiaron correspondencia durante la guerra. Utiliza ese argumento para cuestionar lecturas simplificadas del alineamiento internacional del régimen. La admiración personal que atribuye a Franco y el contenido concreto de las cartas necesitan contraste con archivos y correspondencia original.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Franco admiraba a los a los ingleses admiraba al ejército inglés admiraba a Churchill"
+          }
         ]
       }
     },
@@ -803,7 +893,16 @@
       },
       "sources": {
         "10": [
-          "Donald Trump es utilizado por Juan Manuel de Prada como ejemplo de las nuevas derechas y como referencia de las prioridades de la política exterior estadounidense."
+          {
+            "topic": "Crítica del entrevistado a las nuevas derechas",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada menciona a Donald Trump como ejemplo de nuevas formaciones y líderes de derecha que se oponen a la socialdemocracia. Critica que sus respuestas culturales y económicas podrían intensificar la polarización sin generar transformaciones sociales estables. El fragmento contiene un juicio político del entrevistado, no un análisis cuantitativo del efecto electoral de Trump.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "lo que pueda representar Trump lo que pueda representar Miley y l"
+          }
         ]
       }
     },
@@ -815,7 +914,16 @@
       },
       "sources": {
         "10": [
-          "Javier Milei aparece como ejemplo de las nuevas corrientes de derecha que el entrevistado compara con Trump y distintas formaciones europeas."
+          {
+            "topic": "Comparación con corrientes contemporáneas de derecha",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "En una enumeración de dirigentes vinculados por el invitado a las nuevas derechas, el ASR reproduce el nombre «Miley» junto al de Trump. Por el contexto se interpreta que alude a Javier Milei, pero debe comprobarse el audio. De Prada cuestiona el enfoque ideológico de estas corrientes; la comparación se conserva como su valoración y no como identidad de programas políticos.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "lo que pueda representar Miley y lo que puedan representar otra s"
+          }
         ]
       }
     },
@@ -827,7 +935,16 @@
       },
       "sources": {
         "10": [
-          "Vladímir Putin es mencionado cuando el entrevistado argumenta que los dirigentes europeos utilizan a Rusia para explicar los problemas internos de la Unión Europea."
+          {
+            "topic": "Uso de Rusia en el discurso político europeo",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "De Prada sostiene que varios dirigentes europeos utilizan a Rusia y a Vladímir Putin como explicación recurrente de problemas internos de la Unión Europea. Critica las analogías entre Putin y Hitler que aparecen en algunos debates sobre seguridad. Son opiniones del entrevistado; el episodio no ofrece un estudio sistemático de los discursos de líderes europeos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "un comodín perfecto una justificación para todo en Rusia y en Putin"
+          }
         ]
       }
     },
@@ -839,7 +956,16 @@
       },
       "sources": {
         "10": [
-          "José Antonio Primo de Rivera aparece como referente histórico de los primeros falangistas, a los que los interlocutores comparan con los grupos acomodados a la política posterior."
+          {
+            "topic": "Referencia al falangismo histórico y al oportunismo político",
+            "speaker": "Juan Manuel de Prada (atribución contextual; audio pendiente)",
+            "statement": "El escritor menciona a José Antonio Primo de Rivera al describir personajes falangistas que, según su exposición literaria, intentaban conservar la orientación inicial del movimiento frente a quienes se adaptaban por conveniencia al régimen de Franco. El pasaje contrasta tipos políticos dentro de una obra de ficción y no debe utilizarse como comprobación histórica de conductas individuales.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "fieles a lo que fue José Antonio a lo que fue la pureza falangist"
+          }
         ]
       }
     }
