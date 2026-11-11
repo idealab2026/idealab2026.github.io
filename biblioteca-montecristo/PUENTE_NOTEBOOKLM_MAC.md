@@ -454,3 +454,57 @@ No se pueden desbloquear de forma segura las solicitudes `deferred` o
 casos requieren revisión y confirmación explícita de cuota antes de generar
 de nuevo. La publicación de un PNG en la web sigue necesitando aprobación
 editorial previa, porque el archivo local aún no ha sido revisado.
+
+## Recuperación autorizada desde comentarios GitHub (sin Terminal por incidencia)
+
+Existe un modo OPT-IN distinto del agente `install-reconcile`. Tras activarlo
+en el Mac **una única vez**, consulta las aprobaciones expresas de GitHub y
+solo entonces puede solicitar **una** recuperación en un ciclo. Conserva el
+mismo agente de conciliación y descarga de PNGs ya enviados.
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/test_notebooklm_bridge.py -q
+python3 scripts/notebooklm_bridge_launchd.py install-authorized
+```
+
+El instalador reemplaza el agente de conciliación anterior. El Mac debe estar
+despierto, con sesión iniciada y NotebookLM autenticado; GitHub no accede
+directamente a las cookies ni a los PNG locales. Para volver al modo de solo
+descargas: `python3 scripts/notebooklm_bridge_launchd.py install-reconcile`.
+
+Para autorizar una recuperación concreta, revisar primero la incidencia y
+NotebookLM Studio. Tras verificar que no existe artefacto pendiente o reciente
+y que se dispone de cuota, publicar **como el usuario GitHub `idealab2026`**
+un comentario con estas cuatro líneas exactas en la incidencia de ejemplo #85:
+
+```text
+IDEA_LAB_NLM_RECOVER_V1
+issue=85
+confirm_no_new_artifact=true
+confirm_quota_restored=true
+```
+
+La autorización tiene una vigencia máxima de 12 horas desde su creación.
+El Mac exige la identidad NUMÉRICA oficial de la cuenta, coincidencia exacta
+de texto y número de incidencia, comentario sin editar, una sola recuperación
+automática anterior como máximo (0 recuperaciones previas), ninguna generación
+activa, ausencia de comentarios de envío previo, fuentes privadas consistentes
+y una comparación fiable con el inventario de NotebookLM Studio. Si existen
+artefactos nuevos, incompletos, ambiguos o un cuaderno con otros trabajos
+inciertos, **no inicia nada**. Tampoco recupera automáticamente la solicitud
+#201 (retención expresa), los `failed` ni los trabajos ya recuperados antes.
+
+Al aceptar una aprobación, guarda su ID en el estado LOCAL antes de enviar la
+petición; no puede reutilizarse tras un reinicio, timeout o cierre del Mac.
+Una aprobación equivale a **un solo intento**, no a una cola ilimitada.
+Solo envía tareas cuyo capítulo/fuentes siguen inequívocamente asociados.
+No publica imágenes: la revisión visual y el consentimiento para subir cada PNG
+siguen siendo obligatorios.
+
+**Limitación inevitable:** ni GitHub ni el CLI pueden certificar de manera
+concluyente que una generación remota anterior no vaya a completarse más tarde,
+ni consultar de forma infalible la cuota real. Las dos afirmaciones del
+comentario son confirmaciones conscientes de quien autoriza el intento.
+Sin ese comentario, el modo autorizado solo concilia y descarga.
