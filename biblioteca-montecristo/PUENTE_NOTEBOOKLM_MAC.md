@@ -332,3 +332,33 @@ comandos no guardan nada sin `--apply`.
 Si el motivo es `before-activation`, **no manipular la fecha local ni
 reinicializar el puente**: hay que contrastar las incidencias contra el
 historial de envío y el estado remoto antes de adoptar trabajos antiguos.
+
+## Auditoría por libro de solicitudes aplazadas
+
+Si `poll-safe --diagnose` señala cuadernos en cuarentena, consultar todos
+los trabajos `uncertain` y `deferred` de un conjunto de libros en una sola
+operación **sin generar infografías y sin modificar el estado**:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/notebooklm_bridge.py blocked
+python3 scripts/notebooklm_bridge.py audit-blocked --book sapiens --book conde-montecristo
+```
+
+El auditor contrasta las instantáneas anteriores con los artefactos actuales
+de NotebookLM Studio. Reporta por número de incidencia si aparecieron nuevas
+infografías, si no las hay o si la instantánea es incompleta. No revela IDs
+privados ni vincula automáticamente un artefacto a un capítulo. Si el cuaderno
+tiene varios trabajos aplazados, un mismo artefacto podría corresponder a
+cualquiera de ellos; no atribuirlo por mera posición u orden de aparición.
+
+- **Con candidatos nuevos:** no reintentar. Revisar en Studio la identidad del
+  capítulo, el contenido y la correspondencia antes de usar `attach`.
+- **Sin candidatos:** no significa que NotebookLM no vaya a entregar un
+  artefacto tardío. No activar reintentos sin comprobar además la cuota y el
+  historial de envíos.
+- **Instantánea no verificable:** cuarentena intacta; resolver discrepancias
+  del inventario de Studio antes de cualquier envío.
+
+Mantener retenida la solicitud #201 y los libros con fallos confirmados.
