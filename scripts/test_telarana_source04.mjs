@@ -26,7 +26,8 @@ const hist=JSON.parse(fs.readFileSync("linea-historia/estudios-telarana.json","u
 const p=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
 const page=fs.readFileSync("la-telarana/index.html","utf8");
 assert.equal(src.metadata.id,"canal-coronel-margarita-torres-lerma-2024-04-04");
-assert.equal(src.metadata.transcriptAvailable,false,"Must not claim full transcript");
+assert.equal(src.metadata.transcriptAvailable,true,"La transcripción privada de 84.334 caracteres fue comprobada en Drive");
+assert.equal(src.metadata.transcriptCharacters,84334);
 assert.equal(src.metadata.transcriptVerifiedAgainstAudio,false,"No fabricated audio verification");
 assert.equal(src.metadata.chapterTimecodesVerifiedFromDescription,true);
 assert.equal(src.nodes.length,18);
@@ -34,12 +35,13 @@ assert.equal(src.edges.length,23);
 assert.equal(src.metadata.chapters.length,7);
 assert.equal(src.unresolved.length,1);
 assert.equal(src.unresolved[0].timeSec,1790);
-assert(src.nodes.find(x=>x.id==="f04-villamizar-epigrafe")?.kind!=="Persona","Never create unverified Villamizar person");
+assert(src.nodes.find(x=>x.id==="f04-villamizar-epigrafe")?.kind==="Persona","El ASR identifica a Pedro de Villamizar, aunque la identidad exacta sigue en revisión");
+assert(src.nodes.find(x=>x.id==="f04-villamizar-epigrafe")?.note.includes("identificación"),"Debe mantenerse cautela documental Villamizar");
 const ids=new Set(src.nodes.map(n=>n.id));
 assert.equal(ids.size,18);
 for(const n of src.nodes){
  assert(n.note.length>=100,"Need historical identity and context: "+n.id);
- assert(n.podcastNotes.every(note=>typeof note.timeSec==="number" && /no es una cita literal/i.test(note.title)),"Distinguish chapter from exact quote: "+n.id);
+ assert(n.podcastNotes.every(note=>(typeof note.timeSec==="number" && /no es una cita literal/i.test(note.title))||(note.timeSec===null&&note.status==="alegacion"&&/audio/i.test(note.text))),"No confundir comienzos de capítulos con citas minutadas: "+n.id);
 }
 for(const e of src.edges){
  assert(ids.has(e.a)&&ids.has(e.b),"Unknown edge identity: "+e.id);
@@ -70,4 +72,4 @@ assert(page.includes("podcast-duque-lerma-historia.js?v="));
 const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(page)||[])[1]||"[]");
 assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE04_HISTORICAL"&&m.kind==="mergeNewEpisode")&&page.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE04_HISTORICAL");
 assert(!page.includes("source-review-rows")&&!page.includes("progreso-fuentes.json"),"No publish internal source tracker");
-console.log("OK: fuente 04 · 18 entidades, 23 relaciones documentadas, 9 biografías, 7 eventos fechados, transcripción pendiente y seguimiento privado");
+console.log("OK: fuente04, ASR íntegro en Drive, 4 atribuciones nuevas, Villamizar parcial y Fernando VII corregido; sin audio validado");
