@@ -95,6 +95,12 @@ jobs:
         run: node scripts/test_telarana_usaid_contexto.mjs
       - name: Auditar las 527 entidades del grafo y generar informe individual
         run: node scripts/audit_telarana_all_entities.mjs
+      - name: Conservar auditoría interna de cobertura de fuentes
+        uses: actions/upload-artifact@v4
+        with:
+          name: telarana-auditoria-cobertura-66-fuentes
+          path: audit-results/telarana-all-source-coverage.json
+          if-no-files-found: error
       - name: Conservar informe de auditoría de entidades como artefacto
         uses: actions/upload-artifact@v4
         with:
@@ -104,6 +110,10 @@ jobs:
           if-no-files-found: error
       - name: Validar calidad editorial de fichas y relaciones
         run: node scripts/test_telarana_editorial_quality.mjs
+      - name: Auditar cobertura de las 66 fuentes canónicas
+        run: node scripts/audit_telarana_all_sources.mjs
+      - name: Contrastar red financiera y referencias de la fuente 25
+        run: node scripts/test_telarana_source25_crosschecks.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
         run: node scripts/test_telarana_load_audit.mjs
       - name: Validar transcripción y evidencias de la fuente 02
