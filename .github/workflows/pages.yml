@@ -112,6 +112,8 @@ jobs:
         run: node scripts/test_telarana_source28.mjs
       - name: Validar la fuente 29 y sus subvenciones documentadas
         run: node scripts/test_telarana_source29.mjs
+      - name: Verificar la temporalidad y procedencia de los documentos de fuente 30
+        run: node scripts/test_telarana_source30.mjs
       - name: Conservar auditoría interna de cobertura de fuentes
         uses: actions/upload-artifact@v4
         with:
