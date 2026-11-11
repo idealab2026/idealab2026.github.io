@@ -1,0 +1,212 @@
+/* Primera revisión por fuentes editoriales oficiales; no hay transcripción literal. */
+window.IDEA_TELARANA_F27_REVIEW = {
+  "metadata": {
+    "id": "idealab-f27-organizaciones-poder-revision-preliminar",
+    "title": "Fuente 27 · organizaciones de poder y reconstrucción de Ucrania",
+    "sourceOrder": 27,
+    "url": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+    "publishedAt": "2024-02-06",
+    "reviewStage": "sinopsis_indice_oficial_y_contrastes_gobierno_ucraniano_sin_transcripcion",
+    "transcriptAvailable": false,
+    "transcriptStoredPrivately": false,
+    "audioVerified": false,
+    "verifiedMinuteReferences": 0,
+    "methodologicalNote": "El índice de YouTube acredita temas y tiempos de inicio de capítulos, no citas. Los documentos oficiales de Ucrania prueban cooperación consultiva en reconstrucción, NO subordinación institucional, control de recursos naturales, delito o propiedad del país."
+  },
+  "nodes": [
+    {
+      "id": "f27-episodio",
+      "name": "Podcast · Fuente 27 · Organizaciones de poder",
+      "kind": "Fuente",
+      "subtitle": "Inversión Racional · 06/02/2024",
+      "note": "Entrevista publicada por Inversión Racional Podcast. La descripción identifica como participantes a Luis Miguel Ortiz y Lorenzo Ramírez, y contiene capítulos sobre poder, BlackRock, Bilderberg, política monetaria y tecnología. No se ha recuperado transcripción completa ni cotejado el audio.",
+      "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "topic3d": "global",
+      "photo": "",
+      "x": 9050,
+      "y": 3500,
+      "podcastNotes": []
+    },
+    {
+      "id": "f25-lorenzo",
+      "name": "Lorenzo Ramírez",
+      "kind": "Persona",
+      "subtitle": "Entrevistado · referencia canónica",
+      "note": "Figura en el episodio de Inversión Racional sobre organizaciones de poder, según la descripción pública. El título y capítulos no acreditan por sí solos sus afirmaciones.",
+      "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "topic3d": "global",
+      "photo": "",
+      "x": 9350,
+      "y": 3500,
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-luis-miguel-ortiz",
+      "name": "Luis Miguel Ortiz",
+      "kind": "Persona",
+      "subtitle": "Entrevistador de Inversión Racional Podcast",
+      "note": "El canal Inversión Racional identifica a Luis Miguel Ortiz como entrevistador de Lorenzo Ramírez. No se le atribuyen afirmaciones concretas sin transcripción.",
+      "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "topic3d": "global",
+      "photo": "",
+      "x": 9500,
+      "y": 3600,
+      "podcastNotes": []
+    },
+    {
+      "id": "on-blackrock",
+      "name": "BlackRock",
+      "kind": "Organización",
+      "subtitle": "Gestora de activos y asesoría institucional · referencia canónica",
+      "note": "El Gobierno ucraniano documenta un memorando de consultoría de 2022 con BlackRock FMA y servicios de asesoramiento pro bono relativos al diseño del Ukraine Development Fund en 2023. Esa asesoría no acredita propiedad del fondo, control de Ucrania ni derechos automáticos de explotación.",
+      "source": "https://www.me.gov.ua/News/Detail?id=ddd9f29a-04d4-4624-8b7e-c7f3d9fbde35&isSpecial=true&lang=en-GB&showMenuTree=true&title=TheGovern",
+      "topic3d": "global",
+      "photo": "",
+      "x": 9850,
+      "y": 3700,
+      "podcastNotes": []
+    },
+    {
+      "id": "on-jpmorgan",
+      "name": "JPMorgan Chase",
+      "kind": "Organización",
+      "subtitle": "Entidad financiera mencionada por la Presidencia de Ucrania",
+      "note": "La Presidencia de Ucrania citó a JPMorgan entre organizaciones financieras con las que buscaba colaboración para la reconstrucción en 2023; la mera mención no documenta aquí un contrato adjudicado ni una transferencia económica.",
+      "source": "https://president.gov.ua/en/news/prezident-proviv-zustrich-iz-kerivnictvom-najbilshoyi-u-svit-82725",
+      "topic3d": "global",
+      "photo": "",
+      "x": 9980,
+      "y": 3700,
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-ministerio-economia-ucrania",
+      "name": "Ministerio de Economía de Ucrania",
+      "kind": "Institución",
+      "subtitle": "Gobierno de Ucrania · responsable de acuerdos sobre reconstrucción",
+      "note": "El ministerio informó del memorando consultivo firmado con BlackRock FMA el 10 de noviembre de 2022 y del asesoramiento para diseñar un vehículo de inversión para reconstrucción en 2023.",
+      "source": "https://www.kmu.gov.ua/en/news/ministerstvo-ekonomiki-ukrayini-pidpisalo-memorandum-iz-najbilshoyu-investkompaniyeyu-svitu",
+      "topic3d": "global",
+      "photo": "",
+      "x": 10100,
+      "y": 3900,
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-ukraine-development-fund",
+      "name": "Ukraine Development Fund (UDF) · proyecto de reconstrucción",
+      "kind": "Proyecto",
+      "subtitle": "Diseño de vehículo para atraer inversión a la reconstrucción",
+      "note": "Proyecto anunciado por el Gobierno ucraniano en 2023 para estructurar un fondo de desarrollo con participación de capital público y privado; BlackRock FMA fue designado asesor del diseño pro bono. La noticia describe un proyecto y no prueba titularidad de BlackRock sobre el capital del fondo.",
+      "source": "https://www.me.gov.ua/News/Detail?id=ddd9f29a-04d4-4624-8b7e-c7f3d9fbde35&isSpecial=true&lang=en-GB&showMenuTree=true&title=TheGovern",
+      "topic3d": "global",
+      "photo": "",
+      "x": 10300,
+      "y": 3750,
+      "podcastNotes": []
+    },
+    {
+      "id": "f25-bilderberg",
+      "name": "Bilderberg Meetings",
+      "kind": "Organización",
+      "subtitle": "Foro privado con reuniones anuales · referencia canónica",
+      "note": "Bilderberg aparece en el capítulo publicado desde 51:04; la organización informa de encuentros de diálogo sin votaciones formales, resoluciones ni conclusiones institucionales. La existencia de reuniones no demuestra un centro clandestino de mando.",
+      "source": "https://www.bilderbergmeetings.org/frequently-asked-questions",
+      "topic3d": "global",
+      "photo": "",
+      "x": 10100,
+      "y": 3560,
+      "podcastNotes": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "f27-mention-guest",
+      "a": "f27-episodio",
+      "b": "f25-lorenzo",
+      "type": "Entrevistado identificado en descripción",
+      "note": "La descripción pública del podcast identifica a Lorenzo Ramírez como entrevistado y asigna capítulos temáticos; el expediente no contiene declaraciones transcritas y verificadas.",
+      "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-mention-host",
+      "a": "f27-episodio",
+      "b": "f27-luis-miguel-ortiz",
+      "type": "Entrevistador identificado en descripción",
+      "note": "El canal identifica a Luis Miguel Ortiz como entrevistador. Esta relación editorial no implica que comparta hipótesis o acusaciones del invitado.",
+      "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-mention-blackrock",
+      "a": "f27-episodio",
+      "b": "on-blackrock",
+      "type": "Tema de capítulo · 35:33, no cita literal",
+      "note": "El índice oficial sitúa desde 35:33 un capítulo dedicado a BlackRock. El minuto marca el inicio del tema, no una declaración contrastada, cita o acusación probada.",
+      "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-mention-bilderberg",
+      "a": "f27-episodio",
+      "b": "f25-bilderberg",
+      "type": "Tema de capítulo · 51:04, no cita literal",
+      "note": "El índice oficial sitúa desde 51:04 un capítulo sobre Bilderberg. El minuto es el comienzo del capítulo, no la prueba de acuerdos concretos entre participantes.",
+      "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-ukr-blackrock-mou",
+      "a": "f27-ministerio-economia-ucrania",
+      "b": "on-blackrock",
+      "type": "Memorando de asesoramiento · 10/11/2022",
+      "note": "El Gobierno ucraniano confirmó el memorando firmado el 10 de noviembre de 2022 con BlackRock FMA para asesorar el diseño de una plataforma que atraiga capital privado a la reconstrucción. El acuerdo no concede por sí mismo propiedad sobre recursos ucranianos.",
+      "source": "https://www.kmu.gov.ua/en/news/ministerstvo-ekonomiki-ukrayini-pidpisalo-memorandum-iz-najbilshoyu-investkompaniyeyu-svitu",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-blackrock-udf",
+      "a": "on-blackrock",
+      "b": "f27-ukraine-development-fund",
+      "type": "Asesoramiento de diseño pro bono · 2023",
+      "note": "En mayo de 2023 el Ministerio de Economía anunció a BlackRock FMA como asesor pro bono del diseño del Ukraine Development Fund. Asesorar un diseño no significa ser propietario ni beneficiario económico del fondo.",
+      "source": "https://www.me.gov.ua/News/Detail?id=ddd9f29a-04d4-4624-8b7e-c7f3d9fbde35&isSpecial=true&lang=en-GB&showMenuTree=true&title=TheGovern",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-ministry-udf",
+      "a": "f27-ministerio-economia-ucrania",
+      "b": "f27-ukraine-development-fund",
+      "type": "Promotor público del proyecto · 2023",
+      "note": "El Ministerio ucraniano describe el diseño de un fondo nacional para movilizar inversión pública y privada de reconstrucción. Se registra su papel como promotor y no se infiere que el proyecto ya operase o hubiera adjudicado sus futuros activos.",
+      "source": "https://www.me.gov.ua/News/Detail?id=ddd9f29a-04d4-4624-8b7e-c7f3d9fbde35&isSpecial=true&lang=en-GB&showMenuTree=true&title=TheGovern",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "podcastNotes": []
+    },
+    {
+      "id": "f27-jpm-ministry",
+      "a": "on-jpmorgan",
+      "b": "f27-ministerio-economia-ucrania",
+      "type": "Institución citada como colaboradora potencial · 2023",
+      "note": "La Presidencia de Ucrania nombró a JPMorgan Chase entre varias organizaciones con las que el país buscaba cooperación en 2023. Este documento no prueba en sí un contrato de consultoría particular con el ministerio, ni desembolso o adjudicación.",
+      "source": "https://president.gov.ua/en/news/prezident-proviv-zustrich-iz-kerivnictvom-najbilshoyi-u-svit-82725",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "podcastNotes": []
+    }
+  ]
+};
