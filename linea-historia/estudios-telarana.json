@@ -328,6 +328,34 @@
       }
     },
     {
+      "id": "study-f21-rockefeller-ociaa-1940",
+      "y": 1940.5833333333333,
+      "t": "Roosevelt encarga a Nelson Rockefeller la cooperación interamericana",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · documentación primaria Rockefeller / USAID · contexto F21",
+      "d": "En agosto de 1940, Franklin D. Roosevelt encargó a Nelson A. Rockefeller la coordinación de relaciones comerciales y culturales con las repúblicas americanas, antecedente de la Office of the Coordinator of Inter-American Affairs (OCIAA). El cargo precede en más de veinte años a la fundación de USAID y no constituye un puesto dentro de esa agencia.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Antecedentes de USAID: Nelson Rockefeller y cooperación estadounidense (documentación externa)",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "mes",
+        "date": "1940-08",
+        "confirmedBy": {
+          "label": "Rockefeller Archive Center · Biografía Nelson A. Rockefeller",
+          "url": "https://rockarch.org/resources/about-the-rockefellers/nelson-a-rockefeller/"
+        },
+        "relatedTelarana": [
+          "usaid-nelson-rockefeller",
+          "usaid-ociaa"
+        ],
+        "methodologicalLimits": "Se documenta un antecedente institucional histórico, no una relación orgánica o financiera directa entre Rockefeller y USAID. Los acontecimientos son contexto independiente de la entrevista de F21 y no se imputan al entrevistado como hallazgos propios."
+      }
+    },
+    {
       "id": "study-f13-operacion-barbarroja-1941",
       "y": 1941.4712328767123,
       "t": "Alemania inicia la Operación Barbarroja contra la URSS",
@@ -381,6 +409,35 @@
           "f10-franco"
         ],
         "methodologicalLimits": "Hecho independiente acreditado; no se adoptan acusaciones o teorías no sustentadas en la fuente original."
+      }
+    },
+    {
+      "id": "study-f21-rockefeller-iiaa-peru-1942",
+      "y": 1942.5,
+      "t": "El IIAA impulsado por Rockefeller inicia cooperación sanitaria con Perú",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · documentación primaria Rockefeller / USAID · contexto F21",
+      "d": "En julio de 1942, Perú y Estados Unidos crearon el Servicio Cooperativo Interamericano de Salud Pública (SCISP), como mecanismo bilateral en el marco del Institute of Inter-American Affairs (IIAA), impulsado aquel año por Nelson Rockefeller. El IIAA era un organismo público y no debe confundirse con la asociación privada AIA creada por Rockefeller en 1946 ni con USAID, constituida en 1961.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Antecedentes de USAID: Nelson Rockefeller y cooperación estadounidense (documentación externa)",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "mes",
+        "date": "1942-07",
+        "confirmedBy": {
+          "label": "USAID/Johns Hopkins · Partnering for Progress, historia de salud con Perú (2015)",
+          "url": "https://www.usaid.gov/sites/default/files/2022-05/PeruLegacy%20Eng%20Final%20Report.pdf"
+        },
+        "relatedTelarana": [
+          "usaid-nelson-rockefeller",
+          "usaid-iiaa",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Se documenta un antecedente institucional histórico, no una relación orgánica o financiera directa entre Rockefeller y USAID. Los acontecimientos son contexto independiente de la entrevista de F21 y no se imputan al entrevistado como hallazgos propios."
       }
     },
     {
@@ -438,6 +495,67 @@
           "f21-eu"
         ],
         "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f21-rockefeller-truman-1950",
+      "y": 1950.8972602739725,
+      "t": "Truman solicita a Rockefeller recomendaciones de desarrollo internacional",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · documentación primaria Rockefeller / USAID · contexto F21",
+      "d": "En una carta del 24 de noviembre de 1950, el presidente Harry Truman se dirige a Nelson Rockefeller como presidente del International Development Advisory Board y le pide recomendaciones sobre política económica exterior, cooperación con empresas privadas y desarrollo internacional. El consejo formaba parte del contexto del programa Punto Cuatro, no de USAID, que aún no existía.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Antecedentes de USAID: Nelson Rockefeller y cooperación estadounidense (documentación externa)",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1950-11-24",
+        "confirmedBy": {
+          "label": "Biblioteca Presidencial Harry S. Truman · Carta del 24/11/1950",
+          "url": "https://www.trumanlibrary.gov/library/public-papers/289/letter-chairman-advisory-board-international-development-foreign-economic"
+        },
+        "relatedTelarana": [
+          "usaid-nelson-rockefeller",
+          "usaid-harry-truman",
+          "usaid-board-truman-1950",
+          "usaid-point-four",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Se documenta un antecedente institucional histórico, no una relación orgánica o financiera directa entre Rockefeller y USAID. Los acontecimientos son contexto independiente de la entrevista de F21 y no se imputan al entrevistado como hallazgos propios."
+      }
+    },
+    {
+      "id": "study-f21-rockefeller-partners-progress-1951",
+      "y": 1951.190410958904,
+      "t": "Truman recibe el informe Partners in Progress del consejo de Rockefeller",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · documentación primaria Rockefeller / USAID · contexto F21",
+      "d": "El 11 de marzo de 1951 se difundió la correspondencia de Truman sobre el informe Partners in Progress, elaborado por el International Development Advisory Board presidido por Nelson Rockefeller. La documentación acredita su papel asesor en el desarrollo internacional estadounidense durante 1950–1951, pero no propiedad, financiación o dirección de USAID después de 1961.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Antecedentes de USAID: Nelson Rockefeller y cooperación estadounidense (documentación externa)",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1951-03-11",
+        "confirmedBy": {
+          "label": "Biblioteca Presidencial Harry S. Truman · Correspondencia 11/03/1951",
+          "url": "https://www.trumanlibrary.gov/library/public-papers/53/letters-relating-international-development-advisory-boards-report-foreign"
+        },
+        "relatedTelarana": [
+          "usaid-nelson-rockefeller",
+          "usaid-harry-truman",
+          "usaid-board-truman-1950",
+          "f21-usaid"
+        ],
+        "methodologicalLimits": "Se documenta un antecedente institucional histórico, no una relación orgánica o financiera directa entre Rockefeller y USAID. Los acontecimientos son contexto independiente de la entrevista de F21 y no se imputan al entrevistado como hallazgos propios."
       }
     },
     {
