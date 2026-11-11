@@ -60,6 +60,8 @@ const f26=audit.find(x=>x.label==="Fuente 26"),f27=audit.find(x=>x.label==="Fuen
 assert(f26?.available&&f27?.available&&f26.edges>=2&&f27.edges>=4,"El grafo no carga las fuentes 26/27 o pierde sus enlaces");
 const f28=audit.find(x=>x.label==="Fuente 28");
 assert(f28?.available&&f28.edges>=9,"La fuente 28 no ha cargado 14 relaciones documentales y editoriales");
+const f29=audit.find(x=>x.label==="Fuente 29");
+assert(f29?.available&&f29.edges>=11,"F29 no se ha incorporado íntegramente al grafo o se han eliminado enlaces institucionales");
 const summary=audit.reduce((n,r)=>n+r.added,0);
 assert.equal(summary,ctx.data.nodes.length,"Las altas de cada etapa no cuadran con el total");
 const ids=new Set(ctx.data.nodes.map(n=>n.id));
