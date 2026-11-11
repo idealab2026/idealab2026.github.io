@@ -75,7 +75,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La fuente reproduce la secuencia de su conocimiento público de los ataques y recoge interpretaciones de los participantes sobre su reacción y la respuesta militar posterior."
+          {
+            "topic": "Reacción presidencial durante los atentados",
+            "speaker": "Narrador de F14; audio no cotejado",
+            "statement": "El narrador describe las imágenes de George W. Bush cuando recibió información sobre los atentados durante una visita escolar y considera inusual su reacción inicial. La valoración de su comportamiento pertenece al narrador; las imágenes públicas y la cronología deben analizarse por separado antes de inferir qué sabía el presidente en ese momento.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Bush estaba siendo grabado o sea está grabado el momento en el que se entera"
+          }
         ]
       }
     },
@@ -87,7 +96,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La entrevista le atribuye el relato de conversaciones posteriores al 11-S en torno a propuestas de actuación militar contra Irak."
+          {
+            "topic": "Relato indirecto sobre la planificación de la guerra de Irak",
+            "speaker": "Narrador o entrevistado de F14; voz no cotejada",
+            "statement": "El episodio relata unas conversaciones atribuidas al general Wesley Clark con responsables estadounidenses inmediatamente después del 11-S. Según ese relato, Clark habría cuestionado por qué se planteaba actuar militarmente contra Irak. La fuente reproduce una versión indirecta de esas conversaciones, cuya exactitud y participantes deben contrastarse con la declaración original de Clark.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Wesley Clark él tiene una conversación con Donald Ransfeld"
+          }
         ]
       }
     },
@@ -99,7 +117,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "El entrevistado lo incluye en un grupo de responsables neoconservadores próximos a la Administración Bush y lo menciona en un relato indirecto atribuido a Wesley Clark."
+          {
+            "topic": "Referencia a responsables neoconservadores y debate sobre Irak",
+            "speaker": "Interlocutor de F14; voz pendiente de cotejo",
+            "statement": "Un participante incluye a Paul Wolfowitz entre figuras influyentes de la política exterior estadounidense en torno a la Administración Bush. Más adelante, al describir una conversación atribuida a Wesley Clark, le vincula con propuestas para atacar Irak tras el 11-S. Es una reconstrucción expuesta por la fuente, no una prueba directa de las deliberaciones mencionadas.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Paul Wolfovic un Paul Wolfovic que luego posteriormente"
+          }
         ]
       }
     },
@@ -135,7 +162,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La fuente lo menciona dentro del grupo de figuras de política exterior neoconservadora asociadas a la Administración Bush."
+          {
+            "topic": "Enumeración de figuras de la política exterior estadounidense",
+            "speaker": "Interlocutor de F14; voz pendiente de cotejo",
+            "statement": "La conversación menciona a John Bolton junto a Richard Perle, Dick Cheney y Paul Wolfowitz al describir un sector neoconservador próximo al entorno de George W. Bush. El hablante propone una interpretación ideológica de ese grupo, pero la coincidencia en esta enumeración no acredita participación de Bolton en decisiones concretas relacionadas con los atentados.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "John Bolton ¿no y que posteriormente"
+          }
         ]
       }
     },
@@ -147,7 +183,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "En la entrevista se le menciona, con transcripción fonética imperfecta, dentro de un relato indirecto de Wesley Clark sobre debates relacionados con Irak después del 11-S."
+          {
+            "topic": "Testimonio atribuido a Wesley Clark sobre Irak",
+            "speaker": "Interlocutor de F14; voz pendiente de cotejo",
+            "statement": "El narrador utiliza la transcripción fonética «Donald Ransfeld» al mencionar a Donald Rumsfeld en una conversación que atribuye a Wesley Clark sobre las posibles respuestas militares posteriores al 11-S. La intervención no incluye la grabación ni una transcripción primaria de la conversación de Clark; queda registrada como relato indirecto.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Donald Ransfeld y con y con Paul Wolfovic"
+          }
         ]
       }
     },
@@ -180,7 +225,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "Mark Rossini menciona a un autor transcrito como Jim Banford y un libro sobre la NSA, al hablar de solicitudes de entrevistas acerca de su trabajo anterior al 11-S."
+          {
+            "topic": "Libro y entrevistas sobre inteligencia y el 11-S",
+            "speaker": "Mark Rossini (testimonio transcrito; audio no cotejado)",
+            "statement": "Rossini menciona a un autor transcrito como «Jim Banford», identificable de forma contextual con James Bamford, y alude a trabajos sobre inteligencia y la NSA. Explica que los responsables de su organismo debían autorizar entrevistas sobre su trabajo previo al 11-S. La identificación del autor y el título exacto de la obra necesitan contraste bibliográfico.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Jim Banford escribió el libro The Spy Factory Shadow Factory"
+          }
         ]
       }
     },
@@ -192,7 +246,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "Rossini se refiere a un compañero llamado Ken Williams y al memorando de Phoenix para explicar los problemas de análisis y circulación de alertas anteriores al 11-S."
+          {
+            "topic": "Memorando de Phoenix y alertas previas al 11-S",
+            "speaker": "Mark Rossini (testimonio transcrito; audio no cotejado)",
+            "statement": "Rossini menciona a un colega llamado Ken Williams, destinado en Phoenix, y recuerda el memorando sobre personas que recibían formación de vuelo antes del 11-S. Utiliza el ejemplo para explicar que una alerta sin suficientes nombres y datos operativos podía resultar difícil de investigar. El pasaje documenta su explicación, no un dictamen institucional sobre la gestión del memorando.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Ken Williams Despacho de Phoenix quien escribió este famous Phoenix memo"
+          }
         ]
       }
     },
@@ -216,7 +279,16 @@ const extra={
       },
       "sources": {
         "14": [
-          "La fuente lo menciona al analizar la construcción del discurso favorable a la guerra de Irak tras los ataques de 2001, sin que la referencia pruebe su relación con el 11-S."
+          {
+            "topic": "Construcción del argumento para la guerra de Irak",
+            "speaker": "Interlocutor de F14; voz pendiente de cotejo",
+            "statement": "El episodio sitúa a Saddam Hussein en la discusión sobre cómo se vinculó públicamente a Irak con la respuesta estadounidense al 11-S. El hablante cuestiona que existieran objetivos comunes entre Hussein y Al Qaeda. La fuente expone esa valoración histórica, pero no aporta por sí sola documentación suficiente para evaluar todas las relaciones entre el régimen iraquí y los grupos terroristas.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Saddam Jusseín realmente no pues podía estar detrás de todo esto"
+          }
         ]
       }
     },
