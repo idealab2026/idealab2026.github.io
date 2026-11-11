@@ -1018,25 +1018,60 @@ def remote_artifact_delta(job: dict) -> tuple[list[dict], list[dict]]:
 
 
 def audit_blocked(args) -> None:
-    """Read-only remote check; neither launches nor modifies any request."""
+    """Read-only Studio audit of one held job or all held jobs in selected books.
+
+    A single notebook may contain multiple deferred jobs and Studio may not
+    identify which request created an artifact. Never auto-attach or release.
+    """
     state = load_json(STATE_PATH, {})
-    number = str(args.issue)
-    job = state.get(number)
-    if not job or job.get("phase") not in ("uncertain", "deferred"):
-        raise ValueError("La solicitud no está en estado uncertain o deferred.")
-    rows, created = remote_artifact_delta(job)
-    print("Solicitud #", number, "Estado:", job["phase"],
-          "Libro:", job.get("request", {}).get("book", "desconocido"))
-    print("Infografías visibles en Studio:", len(rows))
-    print("Artefactos posteriores a la instantánea:", len(created))
-    for row in created:
-        print("Estado del artefacto candidato:", status_text(row))
-    if created:
-        print("NO reenviar. Revisar Studio y utilizar attach si hay un candidato inequívoco.")
+    if getattr(args, "book", None):
+        selected = [
+            (number, job) for number, job in
+            sorted(state.items(), key=lambda pair: int(pair[0]))
+            if job.get("phase") in ("uncertain", "deferred")
+            and (job.get("request") or {}).get("book") in set(args.book)
+        ]
+        print("Auditoría conjunta de solo lectura:",
+              ", ".join(sorted(set(args.book))))
+        print("Solicitudes inciertas/aplazadas:", len(selected))
     else:
-        print("Sin candidatos visibles. La ausencia no demuestra que "
-              "NotebookLM no pueda finalizar tarde la solicitud.")
-        print("La recuperación exige confirmación explícita y comprobación de cuota.")
+        number = str(args.issue)
+        job = state.get(number)
+        if not job or job.get("phase") not in ("uncertain", "deferred"):
+            raise ValueError("La solicitud no está en estado uncertain o deferred.")
+        selected = [(number, job)]
+    with_candidate = 0
+    without_candidate = 0
+    unverifiable = 0
+    for number, job in selected:
+        book = (job.get("request") or {}).get("book", "desconocido")
+        print("Solicitud #", number, "Estado:", job["phase"], "Libro:", book)
+        try:
+            rows, created = remote_artifact_delta(job)
+        except (RuntimeError, ValueError, OSError, subprocess.TimeoutExpired) as exc:
+            unverifiable += 1
+            print("Instantánea Studio no verificable:", type(exc).__name__)
+            print("NO reintentar ni liberar este cuaderno sin revisión manual.")
+            continue
+        print("Infografías visibles en Studio:", len(rows))
+        print("Artefactos posteriores a la instantánea:", len(created))
+        for row in created:
+            print("Estado del artefacto candidato:", status_text(row))
+        if created:
+            with_candidate += 1
+            print("NO reenviar. Revisar Studio y utilizar attach solo "
+                  "tras identificar el candidato inequívocamente.")
+        else:
+            without_candidate += 1
+            print("Sin candidatos visibles. La ausencia no demuestra que "
+                  "NotebookLM no pueda finalizar tarde la solicitud.")
+            print("La recuperación exige confirmación explícita y comprobación de cuota.")
+    if getattr(args, "book", None):
+        print("Resumen: con candidatos=", with_candidate,
+              "| sin candidatos=", without_candidate,
+              "| instantánea no verificable=", unverifiable)
+        print("No se han enviado, vinculado, desmarcado ni modificado trabajos.")
+
 
 
 def safe_studio_failure_detail(row: dict) -> tuple[str, str]:
@@ -1280,8 +1315,12 @@ def main():
                               help="Leer motivo remoto de fallo sin reenviar nada")
     diagnose.add_argument("--issue", type=int, required=True)
     audit = sub.add_parser("audit-blocked",
-                           help="Comprobar artefactos de una solicitud incierta sin reenviar")
-    audit.add_argument("--issue", type=int, required=True)
+                           help="Comprobar artefactos de solicitudes inciertas sin reenviar")
+    audit_target = audit.add_mutually_exclusive_group(required=True)
+    audit_target.add_argument("--issue", type=int,
+                              help="Auditar solo esta incidencia")
+    audit_target.add_argument("--book", action="append",
+                              help="Auditar todos los bloqueos de este libro; repetible")
     recovery = sub.add_parser("recover-blocked",
                               help="Recuperación manual y verificada de una solicitud bloqueada")
     recovery.add_argument("--issue", type=int, required=True)
