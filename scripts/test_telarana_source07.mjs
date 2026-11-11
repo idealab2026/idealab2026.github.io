@@ -26,7 +26,8 @@ assert.equal(graph.metadata.sourceOrder,7);
 assert.equal(graph.metadata.publishedAt,"2025-01-23");
 assert.equal(graph.metadata.durationMinutesApprox,314);
 assert.equal(graph.metadata.transcriptPresentOnThirdPartySite,true);
-assert.equal(graph.metadata.fullTranscriptImportedToDoc,false,"Doc is a source index, not a full transcript");
+assert.equal(graph.metadata.fullTranscriptImportedToDoc,true,"Ya existe Doc privado distinto del índice con texto íntegro");
+assert.equal(graph.metadata.fullTranscriptCharacters,314815);
 assert.equal(graph.metadata.transcriptAudioMatched,false);
 assert(graph.metadata.transcriptIndexDocUrl.startsWith("https://docs.google.com/document/d/"));
 assert(graph.metadata.transcriptLocation.includes("metacast.app"));
@@ -60,7 +61,7 @@ assert(events.some(x=>x.investigation.date==="2020-10-14"&&/título lucrativo/i.
 assert(events.some(x=>x.investigation.date==="2024-03-15"&&/absuelve/i.test(x.t)));
 const row=progress.sourceCatalog.entries.find(x=>x.order===7);
 assert(row.tracking.docTranscriptionCreated===true&&row.tracking.transcriptContentImported===true);
-assert(row.reviewComplete===false&&row.docTranscriptHasFullText===false);
+assert(row.reviewComplete===false&&progress.inReview.find(x=>x.order===7)?.transcriptDocHasFullText===true,"El texto integral ahora está recuperado, pero el audio y las afirmaciones no están comprobados");
 assert.equal(progress.timeline.committedVerifiedEvents,history.items.length,"Timeline global can grow when subsequent sources are reviewed");
 assert.equal(progress.timeline.eventsBySource["7"].length,5);
 assert(html.includes('podcast-wild-312-chicote.js?v='));
