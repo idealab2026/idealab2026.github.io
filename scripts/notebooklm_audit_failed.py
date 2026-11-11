@@ -51,17 +51,18 @@ def inspect_issue(number: int) -> dict:
     if job.get("phase") != "failed":
         return {"issue": number, "result": "not-failed", "phase": str(job.get("phase", "unknown"))}
     req = job.get("request")
-    if not isinstance(req, dict) or not req.get("video_id"):
-        return {"issue": number, "result": "invalid-episode-request"}
+    if not isinstance(req, dict) or not req.get("book"):
+        return {"issue": number, "result": "invalid-request"}
+    general = not bool(req.get("video_id"))
     mapping = select_mapping(private_config(), req)
     if mapping is None or mapping[0] != job.get("notebook") or mapping[1] != job.get("source_ids"):
         return {"issue": number, "result": "mapping-changed"}
     notebook, requested = mapping
-    if not requested or len(requested) != len(set(requested)):
+    if len(requested) != len(set(requested)) or (not general and not requested):
         return {"issue": number, "result": "invalid-source-selection"}
     try:
         book, chapter = find_item(req["book"], req["video_id"])
-        if chapter is None:
+        if chapter is None and not general:
             return {"issue": number, "result": "catalog-entry-missing"}
         command(["nlm", "notebook", "get", notebook], timeout=120)
         sources = source_objects(command(["nlm", "source", "list", notebook, "--json"], timeout=120))
@@ -69,16 +70,18 @@ def inspect_issue(number: int) -> dict:
         # Nunca mostrar stderr crudo: podría contener IDs o nombres privados.
         return {"issue": number, "result": "notebook-or-sources-unavailable", "error_type": type(exc).__name__}
     indexed = {sid: row for row in sources if (sid := source_id(row))}
-    present = [indexed[sid] for sid in requested if sid in indexed]
-    expected = scope_key(req["book"], chapter["title"])
+    present = list(indexed.values()) if general else [indexed[sid] for sid in requested if sid in indexed]
+    expected = None if general else scope_key(req["book"], chapter["title"])
     found_scope = [scope_key(req["book"], source_title(row), source=True) for row in present]
     matched = sum(expected is not None and key == expected for key in found_scope)
     mismatched = sum(expected is not None and key is not None and key != expected for key in found_scope)
     status_counts = {k: sum(source_status(row) == k for row in present)
                      for k in ("ready", "processing", "failed", "unknown")}
     out = {"issue": number, "result": "inspected", "book": book["slug"],
-           "requested_sources": len(requested), "present_sources": len(present),
-           "missing_sources": len(requested) - len(present),
+           "kind": "general" if general else "episodio",
+           "requested_sources": len(present) if general else len(requested),
+           "present_sources": len(present), "empty_notebook": general and not present,
+           "missing_sources": 0 if general else len(requested) - len(present),
            "semantic_matches": matched, "semantic_mismatches": mismatched,
            "semantic_unknown": len(present) - matched - mismatched,
            "source_status": status_counts}
@@ -101,7 +104,7 @@ def format_report(report: dict) -> str:
     n, kind = report["issue"], report["result"]
     if kind != "inspected":
         return f"#{n}: {kind}" + (f" ({report['error_type']})" if "error_type" in report else "")
-    lines = [f"#{n} · {report['book']} · diagnóstico de solo lectura",
+    lines = [f"#{n} · {report['book']} · {report['kind']} · diagnóstico de solo lectura",
              f"Fuentes asignadas: {report['requested_sources']} | presentes: {report['present_sources']} | ausentes: {report['missing_sources']}",
              f"Correspondencia con capítulo: {report['semantic_matches']} compatibles, {report['semantic_mismatches']} incompatibles, {report['semantic_unknown']} sin clasificación inequívoca",
              "Estado de fuentes: " + ", ".join(f"{k}={v}" for k, v in report["source_status"].items()),
@@ -109,7 +112,7 @@ def format_report(report: dict) -> str:
     if report.get("studio_artifact") == "visible":
         lines.append("Estado Studio: " + report.get("studio_status", "unknown") +
                      " | motivo detallado: " + ("sí" if report.get("studio_error_detail") else "no"))
-    if report["missing_sources"] or report["semantic_mismatches"] or report["source_status"]["failed"]:
+    if report["missing_sources"] or report["semantic_mismatches"] or report["source_status"]["failed"] or report["empty_notebook"]:
         lines.append("ALERTA: investigar asignación, disponibilidad o procesamiento antes de repetir.")
     else:
         lines.append("Sin incompatibilidad demostrada; esto NO prueba que la cuota ni la generación estén correctas.")
@@ -131,6 +134,7 @@ def main() -> int:
         print(format_report(report))
         print()
         if (report["result"] != "inspected" or report.get("missing_sources")
+                or report.get("empty_notebook")
                 or report.get("semantic_mismatches")
                 or report.get("source_status", {}).get("failed")):
             errors = True
