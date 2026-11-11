@@ -20,9 +20,9 @@ class SourceAuditTests(unittest.TestCase):
     def test_mismatched_mapping_stops_without_cli(self):
         job = {"phase": "failed", "request": {"book": "test", "video_id": "youtube"},
                "notebook": "private-nb", "source_ids": ["private-old-id"]}
-        with patch.object(audit, "load_json", return_value={"163": job}), \\
-             patch.object(audit, "private_config", return_value={}), \\
-             patch.object(audit, "select_mapping", return_value=("private-nb", ["new-id"])), \\
+        with patch.object(audit, "load_json", return_value={"163": job}), \
+             patch.object(audit, "private_config", return_value={}), \
+             patch.object(audit, "select_mapping", return_value=("private-nb", ["new-id"])), \
              patch.object(audit, "command") as cmd:
             result = audit.inspect_issue(163)
             self.assertEqual(result["result"], "mapping-changed")
@@ -34,14 +34,14 @@ class SourceAuditTests(unittest.TestCase):
                "artifact_id": "private-artifact"}
         rows = [{"id": "source-1", "title": "PDF 1", "status": "ready"},
                 {"id": "source-2", "title": "PDF 2", "status": "failed"}]
-        with patch.object(audit, "load_json", return_value={"178": job}), \\
-             patch.object(audit, "private_config", return_value={}), \\
-             patch.object(audit, "select_mapping", return_value=("private-notebook", job["source_ids"])), \\
-             patch.object(audit, "find_item", return_value=({"slug": "psicologia-dinero"}, {"title": "Capitulo 1"})), \\
-             patch.object(audit, "command", side_effect=["{}", json.dumps(rows)]) as cmd, \\
-             patch.object(audit, "source_objects", side_effect=lambda data: json.loads(data)), \\
-             patch.object(audit, "source_id", side_effect=lambda row: row["id"]), \\
-             patch.object(audit, "scope_key", side_effect=lambda slug, title, source=False: ("chapter", 2) if title == "PDF 2" else ("chapter", 1)), \\
+        with patch.object(audit, "load_json", return_value={"178": job}), \
+             patch.object(audit, "private_config", return_value={}), \
+             patch.object(audit, "select_mapping", return_value=("private-notebook", job["source_ids"])), \
+             patch.object(audit, "find_item", return_value=({"slug": "psicologia-dinero"}, {"title": "Capitulo 1"})), \
+             patch.object(audit, "command", side_effect=["{}", json.dumps(rows)]) as cmd, \
+             patch.object(audit, "source_objects", side_effect=lambda data: json.loads(data)), \
+             patch.object(audit, "source_id", side_effect=lambda row: row["id"]), \
+             patch.object(audit, "scope_key", side_effect=lambda slug, title, source=False: ("chapter", 2) if title == "PDF 2" else ("chapter", 1)), \
              patch.object(audit, "infographic_rows", return_value=[]):
             report = audit.inspect_issue(178)
         self.assertEqual(report["result"], "inspected")
@@ -58,7 +58,7 @@ class SourceAuditTests(unittest.TestCase):
         self.assertIn("ALERTA", public)
 
     def test_nonfailed_jobs_never_touched(self):
-        with patch.object(audit, "load_json", return_value={"201": {"phase": "submitted"}}), \\
+        with patch.object(audit, "load_json", return_value={"201": {"phase": "submitted"}}), \
              patch.object(audit, "command") as cmd:
             report = audit.inspect_issue(201)
         self.assertEqual(report["result"], "not-failed")
@@ -67,10 +67,10 @@ class SourceAuditTests(unittest.TestCase):
     def test_unavailable_notebook_redacts_error(self):
         job = {"phase": "failed", "request": {"book": "test", "video_id": "test-video"},
                "notebook": "private-notebook", "source_ids": ["private-source"]}
-        with patch.object(audit, "load_json", return_value={"163": job}), \\
-             patch.object(audit, "private_config", return_value={}), \\
-             patch.object(audit, "select_mapping", return_value=("private-notebook", ["private-source"])), \\
-             patch.object(audit, "find_item", return_value=({"slug": "test"}, {"title": "A"})), \\
+        with patch.object(audit, "load_json", return_value={"163": job}), \
+             patch.object(audit, "private_config", return_value={}), \
+             patch.object(audit, "select_mapping", return_value=("private-notebook", ["private-source"])), \
+             patch.object(audit, "find_item", return_value=({"slug": "test"}, {"title": "A"})), \
              patch.object(audit, "command", side_effect=RuntimeError("private-source auth failure")):
             report = audit.inspect_issue(163)
         msg = audit.format_report(report)
