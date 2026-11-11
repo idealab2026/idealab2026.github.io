@@ -16,13 +16,22 @@ const reviewed=new Map((feed.reviewed||[]).map(x=>[x.order,x]));
 const pending=new Map((feed.inReview||[]).map(x=>[x.order,x]));
 const stats={catalogEntries:rows.length,canonicalSources:uniq.length,duplicateEntries:dupes.length,
  publishedReviewed:0,inReview:0,notStarted:0,confirmedTranscript:0,documentWithoutTranscript:0,
- noTranscriptDoc:0,unverifiedAudio:0,youtubeWithoutFullTranscript:0,missingSourceUrl:0};
+ noTranscriptDoc:0,unverifiedAudio:0,youtubeWithoutFullTranscript:0,missingSourceUrl:0,
+ incompleteSourcePublished:0,externalAsrPartial:0,fullTranscriptUnverifiedAudio:0};
 const report=[];
 for(const row of rows){
  const t=row.tracking||{},closed=reviewed.has(row.order),ongoing=pending.has(row.order);
  const duplicate=row.duplicateOf!=null;
  const fullTranscript=t.transcriptContentImported===true;
  const docCreated=t.docTranscriptionCreated===true;
+ const review=pending.get(row.order)||{};
+ const externalAsrPartial=Boolean(t.externalASRExcerptReviewed||review.externalASR)&&!fullTranscript;
+ const publishedModule=Boolean(review.sourcePrimaryModule&&fs.existsSync(review.sourcePrimaryModule)&&fs.readFileSync("la-telarana/index.html","utf8").includes(review.sourcePrimaryModule.split("/").pop()));
+ const transcriptStage=fullTranscript?"texto_importado_no_necesariamente_cotejado":externalAsrPartial?"asr_externo_parcial":docCreated?"documento_sin_texto_integro":"sin_transcripcion_registrada";
+ if(closed){assert(docCreated&&fullTranscript&&Number(t.transcriptCharactersReadBack)>10000,"Fuente cerrada sin texto íntegro F"+row.order);}
+ if(fullTranscript)assert(docCreated,"Transcripción importada sin documento F"+row.order);
+ if(review.transcriptDocHasFullText===true)assert(fullTranscript&&docCreated,"Ficha contradice el catálogo en F"+row.order);
+ if(!fullTranscript)assert(review.rawTranscriptAvailable!==true,"ASR parcial se presenta como íntegro en F"+row.order);
  const entry={
  order:row.order,shortTitle:String(row.title||"").slice(0,140),type:row.type,
  canonicalOrder:duplicate?row.duplicateOf:row.order,
@@ -30,6 +39,7 @@ for(const row of rows){
  sourceUrlAvailable:Boolean(row.sourceUrl),
  transcriptDocumentExists:docCreated,
  transcriptTextConfirmed:fullTranscript,
+ transcriptStage,externalAsrPartial,publishedModuleWithoutTranscript:publishedModule&&!fullTranscript,
  audioVerified:Boolean(t.audioMatched||t.audioVerified),
  minuteReferencesVerified:Number(t.minuteReferencesVerified)||0,
  biographyAndClaimsExternallyVerified:closed?null:false,
@@ -48,6 +58,9 @@ for(const row of rows){
  else stats.noTranscriptDoc++;
  if(row.type==="youtube"&&!fullTranscript)stats.youtubeWithoutFullTranscript++;
  if(!entry.audioVerified)stats.unverifiedAudio++;
+ if(fullTranscript&&!entry.audioVerified)stats.fullTranscriptUnverifiedAudio++;
+ if(externalAsrPartial)stats.externalAsrPartial++;
+ if(publishedModule&&!fullTranscript)stats.incompleteSourcePublished++;
  if(!entry.sourceUrlAvailable)stats.missingSourceUrl++;
  }
  report.push(entry);
@@ -71,7 +84,9 @@ assert(feed.counts.uniqueSources===66&&feed.counts.duplicateEntries===3);
 assert(stats.publishedReviewed+dupes.length+stats.inReview+stats.notStarted===69);
 const flagged=report.filter(e=>e.status!=="duplicado"&&!e.audioVerified&&e.transcriptTextConfirmed).map(e=>e.order);
 const priority=[25,3,4,7,6,9,10,11,12,13,14,16,17,19,20,22,23,24,2,1,18,21].filter(o=>report.find(e=>e.order===o)?.transcriptTextConfirmed);
-const output={generatedFrom:"la-telarana/progreso-fuentes.json",generatedAtCatalogDate:feed.updatedAt,
+const incompletePublished=report.filter(e=>e.publishedModuleWithoutTranscript).map(e=>e.order);
+const partialASR=report.filter(e=>e.externalAsrPartial).map(e=>e.order);
+const output={publishedIncompleteSourceOrders:incompletePublished,partialExternalAsrOrders:partialASR,generatedFrom:"la-telarana/progreso-fuentes.json",generatedAtCatalogDate:feed.updatedAt,
  warning:"Cobertura operacional; no valida la veracidad de las declaraciones, ni el audio o los minutajes.",
  summary:stats,transcriptAvailableButAudioUnverified:flagged,reviewQueue:priority,rows:report};
 fs.mkdirSync("audit-results",{recursive:true});
@@ -79,4 +94,6 @@ fs.writeFileSync("audit-results/telarana-all-source-coverage.json",JSON.stringif
 console.log("COBERTURA INTEGRAL FUENTES (no certificación de afirmaciones)");
 console.log(JSON.stringify(stats,null,2));
 console.log("ASR íntegro sin cotejo audiovisual:",flagged.join(", "));
+console.log("Módulos publicados sin transcripción íntegra:",incompletePublished.join(", ")||"ninguno");
+console.log("ASR externos parciales:",partialASR.join(", ")||"ninguno");
 console.log("OK: 69 entradas / 66 únicas / 3 duplicados / 22 transcripciones confirmadas / "+stats.inReview+" fuentes en revisión.");
