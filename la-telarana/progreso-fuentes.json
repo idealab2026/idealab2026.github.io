@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 25,
-    "notStarted": 41,
+    "inReview": 26,
+    "notStarted": 37,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -125,8 +125,8 @@
     }
   ],
   "nextSource": {
-    "order": 28,
-    "videoId": "fzHC3z8S3oM",
+    "order": 29,
+    "videoId": "QHGrY87hkUw",
     "status": "pendiente_de_transcripcion_y_revision_inicial",
     "sourceType": "youtube"
   },
@@ -1030,6 +1030,26 @@
       "qualityNotes": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales."
     },
     {
+      "order": 28,
+      "videoId": "fzHC3z8S3oM",
+      "title": "La Élite Oculta que Rodea a Donald Trump y lo que Tienen Planeado para el Mundo | Lorenzo Ramírez",
+      "sourceUrl": "https://www.youtube.com/watch?v=fzHC3z8S3oM",
+      "status": "revision_inicial_contexto_documental_sin_audio_ni_transcripcion",
+      "reviewComplete": false,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": false,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "sourceNodesDocumented": 13,
+      "sourceRelationsDocumented": 14,
+      "verifiedIndependentChecks": 7,
+      "sourceTimelineVerifiedEventsCommitted": 3,
+      "sourcePrimaryModule": "la-telarana/fuente-28-revision-inicial.js",
+      "qualityNotes": "Fuente web y descripción oficial Inversión Racional revisadas, sin transcripción íntegra ni audio. Relaciones verificadas: investidura, Bessent-Tesoro, financiación indirecta Thiel-superPAC, respaldo PAC a Vance y estructura AIPAC-PAC/UDP. El índice solo acredita comienzo de capítulos; no se crean afirmaciones literales ni relaciones de control.",
+      "publishedAt": "2026-05-02 (iVoox)"
+    },
+    {
       "order": 69,
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
@@ -1049,9 +1069,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 86,
+    "committedVerifiedEvents": 89,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 42,
+    "fromSourceInReview": 45,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1174,6 +1194,11 @@
       "27": [
         "study-f27-ukr-blackrock-mou-2022",
         "study-f27-ukr-blackrock-udf-2023"
+      ],
+      "28": [
+        "study-f28-pov-thiel-vance-2022",
+        "study-f28-trump-vance-investidura-2025",
+        "study-f28-bessent-senado-2025"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -2182,18 +2207,22 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 24,
-        "status": "pendiente",
+        "status": "revision_inicial_contexto_documental_sin_audio_ni_transcripcion",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-11",
+          "externalDocumentsVerified": 7,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "methodologicalStatus": "fuente editorial oficial y legislación/registros externos; declaraciones sin cotejar"
         }
       },
       {
@@ -3491,8 +3520,8 @@
       "uniqueCanonicalSources": 66,
       "duplicateEntries": 3,
       "closedEditorially": 3,
-      "inReview": 25,
-      "canonicalNotStarted": 38,
+      "inReview": 26,
+      "canonicalNotStarted": 37,
       "confirmedASRTranscripts": 22,
       "youtubeCanonicalLackingFullASR": 40,
       "fullTranscriptsAvailableButAudioUnverified": true,
@@ -3535,6 +3564,18 @@
       },
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43053686142",
       "publishedAndTested": true
+    },
+    "source28Initial": {
+      "date": "2026-11-11",
+      "sourceOrder": 28,
+      "declaredNodes": 13,
+      "declaredEdges": 14,
+      "externallyDocumentedRelations": 7,
+      "editorialMentions": 7,
+      "historicalEvents": 3,
+      "transcriptAvailable": false,
+      "audioVerified": false,
+      "methodologicalLimits": "PACs no son cuentas privadas de candidatos. AIPAC PAC y United Democracy Project constituyen estructuras jurídicas distintas. No se prueban coacción, decisiones ocultas ni pagos a Trump por la sola existencia de estas entidades."
     }
   }
 }
