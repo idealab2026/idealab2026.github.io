@@ -230,17 +230,21 @@
       "publishedAt": "2026-09-10",
       "status": "revision_iniciada_sinopsis_verificada_transcripcion_pendiente",
       "reviewComplete": false,
-      "rawTranscriptAvailable": false,
+      "rawTranscriptAvailable": true,
       "docTranscriptCreated": true,
       "transcriptDocUrl": "https://docs.google.com/document/d/1r38sp5kWzETO_3-FcO2pmv52Ddqs7x798tdsl3IHfMk/edit?usp=drivesdk",
-      "transcriptDocHasFullText": false,
+      "transcriptDocHasFullText": true,
       "verifiedMinuteReferences": 0,
       "sourceNodesDocumented": 5,
       "sourceRelationsDocumented": 5,
       "sourceClaimsVerified": 0,
       "imageActorsPrepared": 3,
       "personProfilesPrepared": 3,
-      "qualityNotes": "Iniciada mediante ficha editorial iVoox/Apple Podcasts, 3 personas identificadas y 5 nodos/5 vínculos clasificados. Existe documento de Drive preparado, pero no contiene transcripción; el servicio vidIQ carece de créditos. No reconstruir declaraciones literales ni afirmar rumores sobre vida sexual, espionaje o delitos sin texto y fuentes primarias."
+      "qualityNotes": "Iniciada mediante ficha editorial iVoox/Apple Podcasts, 3 personas identificadas y 5 nodos/5 vínculos clasificados. Existe documento de Drive preparado, pero no contiene transcripción; el servicio vidIQ carece de créditos. No reconstruir declaraciones literales ni afirmar rumores sobre vida sexual, espionaje o delitos sin texto y fuentes primarias.\nControl Drive 11/11/2026: documento recuperado con 92.493 caracteres ASR; falta cotejar audio, turnos y declaraciones antes de afirmar cierre.",
+      "transcriptAudioMatched": false,
+      "fullTranscriptReadBackDate": "2026-11-11",
+      "fullTranscriptReadBackChars": 92493,
+      "transcriptReviewStatus": "transcripcion_ASR_integra_disponible_revision_de_contenido_y_audio_pendientes"
     },
     {
       "order": 4,
@@ -252,8 +256,8 @@
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocUrl": "https://docs.google.com/document/d/1Ac09bBMLeIit4AJrhYyyPswEO_MZmd5JfN6IgrbvsWQ/edit?usp=drivesdk",
-      "transcriptDocHasFullText": false,
-      "rawTranscriptAvailable": false,
+      "transcriptDocHasFullText": true,
+      "rawTranscriptAvailable": true,
       "chapterTimecodesVerifiedFromYouTubeDescription": true,
       "exactQuoteTimesVerified": 0,
       "graphNodesDocumented": 18,
@@ -272,7 +276,12 @@
         "study-v4-regencia-maria-cristina-1833",
         "study-v4-straperlo-congreso-1935"
       ],
-      "qualityNotes": "El episodio tiene cinco capítulos históricos. Solo se han revisado metadatos y referencias externas: PARES, RAH, Simancas, artículo académico Ayer y archivos del Congreso. No se dispone de la transcripción de la fuente. «Pedro de Villamizar» solo aparece como capítulo; identidad no resuelta. No afirmar declaraciones de la historiadora ni un delito específico sin documentación y análisis historiográfico."
+      "qualityNotes": "El episodio tiene cinco capítulos históricos. Solo se han revisado metadatos y referencias externas: PARES, RAH, Simancas, artículo académico Ayer y archivos del Congreso. No se dispone de la transcripción de la fuente. «Pedro de Villamizar» solo aparece como capítulo; identidad no resuelta. No afirmar declaraciones de la historiadora ni un delito específico sin documentación y análisis historiográfico.\nControl Drive 11/11/2026: documento recuperado con 84.334 caracteres ASR; falta cotejar audio, turnos y declaraciones antes de afirmar cierre.",
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "fullTranscriptReadBackDate": "2026-11-11",
+      "fullTranscriptReadBackChars": 84334,
+      "transcriptReviewStatus": "transcripcion_ASR_integra_disponible_revision_de_contenido_y_audio_pendientes"
     },
     {
       "order": 5,
@@ -337,7 +346,7 @@
       "sourceType": "youtube",
       "docTranscriptCreated": true,
       "docTranscriptUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
-      "transcriptDocHasFullText": false,
+      "transcriptDocHasFullText": true,
       "transcriptTextFromNotebookLmImported": false,
       "externalTranscriptAvailable": true,
       "externalTranscriptUrl": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
@@ -356,7 +365,12 @@
         "study-v7-supremo-guertel-2020",
         "study-v7-supremo-ausbanc-manos-limpias-2024"
       ],
-      "qualityNotes": "La ficha tiene 19 apartados temporales y notas documentales originales, pero no el texto íntegro; está localizable externamente en Metacast. La copia completa de NotebookLM o un archivo aportado por el usuario siguen pendientes. Se han clasificado testimonios del entrevistado sin dar por probadas acusaciones. Hechos independientes: Congreso 2018, Armada de EE.UU. 2002, galardón APM 2019, Supremo Gürtel 2020 y absolución Ausbanc-Manos Limpias 2024. La fecha de la visita personal a Guantánamo no está verificada."
+      "qualityNotes": "La ficha tiene 19 apartados temporales y notas documentales originales, pero no el texto íntegro; está localizable externamente en Metacast. La copia completa de NotebookLM o un archivo aportado por el usuario siguen pendientes. Se han clasificado testimonios del entrevistado sin dar por probadas acusaciones. Hechos independientes: Congreso 2018, Armada de EE.UU. 2002, galardón APM 2019, Supremo Gürtel 2020 y absolución Ausbanc-Manos Limpias 2024. La fecha de la visita personal a Guantánamo no está verificada.\nControl Drive 11/11/2026: documento recuperado con 314.815 caracteres ASR; falta cotejar audio, turnos y declaraciones antes de afirmar cierre.",
+      "rawTranscriptAvailable": true,
+      "verifiedMinuteReferences": 0,
+      "fullTranscriptReadBackDate": "2026-11-11",
+      "fullTranscriptReadBackChars": 314815,
+      "transcriptReviewStatus": "transcripcion_ASR_integra_disponible_revision_de_contenido_y_audio_pendientes"
     },
     {
       "order": 8,
@@ -390,7 +404,10 @@
         "study-v8-archivo-causa-financiacion-podemos-2022"
       ],
       "externalReference": "https://www.poderjudicial.es/stfls/AUDIENCIA%20NACIONAL/JURISPRUDENCIA/2022-6-27%20Provid%20JCI%206%20archivo.pdf",
-      "qualityNotes": "Creado Doc nativo de IDEA LAB que contiene ficha, método y referencias, pero NO la transcripción íntegra del podcast. VidIQ sin créditos; Descript rechaza URL YouTube por no ser enlace de archivo audiovisual directo; NotebookLM aún no accesible. NO atribuir citas, capítulos, minutos ni supuestas conexiones directas entre Maduro, Zapatero e Iglesias sin transcripción. Resolución judicial 27/06/2022 conservada solo como contexto independiente. No marcar completado."
+      "qualityNotes": "Creado Doc nativo de IDEA LAB que contiene ficha, método y referencias, pero NO la transcripción íntegra del podcast. VidIQ sin créditos; Descript rechaza URL YouTube por no ser enlace de archivo audiovisual directo; NotebookLM aún no accesible. NO atribuir citas, capítulos, minutos ni supuestas conexiones directas entre Maduro, Zapatero e Iglesias sin transcripción. Resolución judicial 27/06/2022 conservada solo como contexto independiente. No marcar completado.\nControl Drive 11/11/2026: documento de 5320 caracteres, pero contiene solo ficha de seguimiento y marcador «transcripción pendiente». No es un texto ASR.",
+      "fullTranscriptReadBackDate": "2026-11-11",
+      "fullTranscriptReadBackChars": 5320,
+      "transcriptReviewStatus": "solo_ficha_y_plantilla_sin_transcripcion_literal"
     },
     {
       "order": 9,
@@ -960,14 +977,14 @@
       "videoId": "MTGBx3z8pCI",
       "title": "LOS VERDADEROS AMOS del Mundo: Así Controlan las Finanzas Globales | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
-      "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+      "status": "capa_F25_financiera_9_relaciones_contrastadas_5_menciones_y_9_atribuciones_auditoria_pendiente",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
-      "sourceNodesDocumented": 10,
-      "sourceRelationsDocumented": 9,
-      "verifiedIndependentChecks": 1,
-      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Un hito histórico verificado con fuente institucional y añadido a la Línea de la Historia. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.",
+      "sourceNodesDocumented": 18,
+      "sourceRelationsDocumented": 23,
+      "verifiedIndependentChecks": 9,
+      "qualityNotes": "Capa pública inicial con entidades citadas y relaciones de mención (no relaciones sustantivas). Texto íntegro automático de NotebookLM conservado en Drive privado. Un hito histórico verificado con fuente institucional y añadido a la Línea de la Historia. Faltan contrastes exhaustivos, cotejo de audio y validación visual de retratos.\n11/11/2026: contraste de F25 con Fed, BIS, G30, CFR, Trilateral, Bilderberg e instituciones de Bretton Woods. Nueve relaciones respaldadas con fuentes primarias; cinco menciones y nueve notas ASR atribuidas. El audio y minutaje permanecen sin cotejar.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "timelineVerifiedEventsCommitted": 1
@@ -1331,9 +1348,12 @@
           "inReview": true,
           "imageAtGraphNode": "configurada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-11",
           "transcriptCharactersReadBack": 92493,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_verified_in_private_drive_20261111",
+          "audioMatched": false,
+          "minuteReferencesVerified": 0,
+          "driveReadbackVerified": true
         },
         "summaryEvidence": "https://www.ivoox.com/vida-secreta-de-felipe-vi-el-audios-mp3_rf_180376510_1.html",
         "publishedAt": "2026-09-10",
@@ -1368,9 +1388,12 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-11",
           "transcriptCharactersReadBack": 84334,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_verified_in_private_drive_20261111",
+          "audioMatched": false,
+          "minuteReferencesVerified": 0,
+          "driveReadbackVerified": true
         },
         "sourceData": "podcast-duque-lerma-historia.js",
         "chapterTimecodesAvailable": true,
@@ -1483,9 +1506,12 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-11",
           "transcriptCharactersReadBack": 314815,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_verified_in_private_drive_20261111",
+          "audioMatched": false,
+          "minuteReferencesVerified": 0,
+          "driveReadbackVerified": true
         },
         "sourceData": "podcast-wild-312-chicote.js",
         "externalTranscriptUrl": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
@@ -1516,15 +1542,18 @@
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": true,
+          "transcriptContentImported": false,
           "docTranscriptionUrl": "https://docs.google.com/document/d/1O5yATkwfw_tm3BrHC4fLDCwA0MtMIUe_ewzpFwjjfQk/edit",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
-          "transcriptCharactersReadBack": 102113,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "lastUpdated": "2026-11-11",
+          "transcriptCharactersReadBack": 0,
+          "transcriptSource": "editorial_document_only_not_a_transcript",
+          "audioMatched": false,
+          "minuteReferencesVerified": 0,
+          "falsePositiveTranscriptionCorrected": true
         },
         "sourceData": "podcast-vaquero-67-villarejo.js",
         "episodeDurationSeconds": 7093,
@@ -2016,7 +2045,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 21,
-        "status": "capa_publicada_menciones_documentadas_revision_externa_pendiente",
+        "status": "capa_F25_financiera_9_relaciones_contrastadas_5_menciones_y_9_atribuciones_auditoria_pendiente",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -2027,9 +2056,12 @@
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-11",
           "transcriptCharactersReadBack": 162636,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "sourceDocumentaryRelations": 9,
+          "attributedASRNotes": 9,
+          "mereMentions": 5
         }
       },
       {
@@ -3355,6 +3387,35 @@
       "verifiedEdges": 8,
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43025074166",
       "verifiedOnProduction": true
+    },
+    "source25EvidenceBatch": {
+      "date": "2026-11-11",
+      "sourceOrder": 25,
+      "module": "la-telarana/fuente-25-conexiones-contrastadas.js",
+      "documentaryEdgesDeclared": 9,
+      "sourceMentionEdgesDeclared": 5,
+      "attributedTextNotes": 9,
+      "officialSources": [
+        "Federal Reserve",
+        "BIS",
+        "G30",
+        "Trilateral Commission",
+        "Council on Foreign Relations",
+        "IMF"
+      ],
+      "limits": "Nueve hechos institucionales no implican vínculos causales ilícitos. No se ha cotejado audio ni el texto literal de las memorias de David Rockefeller."
+    },
+    "crossSourceTranscriptCorrections": {
+      "date": "2026-11-11",
+      "fullTranscriptsConfirmed": [
+        3,
+        4,
+        7
+      ],
+      "noTranscriptVerified": [
+        8
+      ],
+      "method": "Lectura directa de Google Docs institucional y comprobación de encabezado, longitud y cierre del texto. Sin verificación de audio."
     }
   }
 }
