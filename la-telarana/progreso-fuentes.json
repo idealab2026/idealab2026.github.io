@@ -1009,8 +1009,8 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 78,
-    "fromReviewedSource": 32,
+    "committedVerifiedEvents": 83,
+    "fromReviewedSource": 37,
     "fromSourceInReview": 39,
     "publishedInPages": true,
     "eventsBySource": {
@@ -1121,7 +1121,12 @@
         "study-f24-ataques-hamas-israel-2023"
       ],
       "25": [
-        "study-f25-bis-1930"
+        "study-f25-bis-1930",
+        "study-f25-fed-law-1913",
+        "study-f25-bretton-woods-1944",
+        "study-f25-rockefeller-cfr-1970",
+        "study-f25-trilateral-1973",
+        "study-f25-g30-rockefeller-1978"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -3403,7 +3408,8 @@
         "Council on Foreign Relations",
         "IMF"
       ],
-      "limits": "Nueve hechos institucionales no implican vínculos causales ilícitos. No se ha cotejado audio ni el texto literal de las memorias de David Rockefeller."
+      "limits": "Nueve hechos institucionales no implican vínculos causales ilícitos. No se ha cotejado audio ni el texto literal de las memorias de David Rockefeller.",
+      "timelineVerifiedEventsAdded": 5
     },
     "crossSourceTranscriptCorrections": {
       "date": "2026-11-11",
