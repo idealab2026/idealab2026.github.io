@@ -80,6 +80,22 @@ for(const [order,minimum] of [[3,90000],[4,80000],[7,300000]]){
  assert(row.tracking.transcriptCharactersReadBack>=minimum&&review.transcriptDocHasFullText===true,
  "Texto insuficiente o desincronizado F"+order);
 }
+// Regresión documental: los módulos F26-F30 pueden publicarse como contexto,
+// pero nunca deben computarse como entrevistas transcritas ni como revisión cerrada.
+for(const order of [26,27,28,29,30]){
+ const row=rows.find(e=>e.order===order),review=feed.inReview.find(e=>e.order===order);
+ assert(row&&review,"Falta seguimiento documental F"+order);
+ assert(row.tracking.complete===false&&row.reviewComplete===false,
+   "F"+order+": fuente preliminar cerrada prematuramente");
+ assert(row.tracking.docTranscriptionCreated===false&&row.tracking.transcriptContentImported===false,
+   "F"+order+": llegada de nueva transcripción exige actualizar prueba y validar lectura completa");
+ assert(review.transcriptDocHasFullText===false&&review.reviewComplete===false,
+   "F"+order+": ficha de revisión afirma una completitud no validada");
+ assert(page.includes("fuente-"+order+"-revision-inicial.js"),
+   "F"+order+": módulo público ausente; revisar catálogo y despliegue");
+}
+assert(feed.inReview.find(e=>e.order===29)?.externalASR,
+  "F29: conservar referencia al ASR externo parcial, sin elevarlo a transcripción íntegra");
 const f8=rows.find(e=>e.order===8),r8=feed.inReview.find(e=>e.order===8);
 assert(f8.tracking.docTranscriptionCreated&&f8.tracking.transcriptContentImported===false,
  "F8 no tiene transcripción: no confundir ficha editorial con texto ASR");
