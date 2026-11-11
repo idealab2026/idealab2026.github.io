@@ -961,6 +961,35 @@
       }
     },
     {
+      "id": "study-f21-usaid-ghsc-2015",
+      "y": 2015.25,
+      "t": "USAID adjudica a Chemonics el contrato GHSC-PSM de suministro sanitario",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "En abril de 2015, USAID adjudicó a Chemonics el contrato del proyecto Global Health Supply Chain – Procurement and Supply Management, por un valor inicial máximo anunciado de 9.500 millones de dólares. La cuantía describe la adjudicación contractual examinada por el inspector general, no lo efectivamente desembolsado.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "mes",
+        "date": "2015-04",
+        "confirmedBy": {
+          "label": "Informe USAID OIG de 25/03/2021",
+          "url": "https://oig.usaid.gov/node/4667"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-ghsc",
+          "usaid-chemonics"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
+      }
+    },
+    {
       "id": "study-f09-psoe-primary-2017",
       "y": 2017.3835616438357,
       "t": "Pedro Sánchez gana las primarias del PSOE para recuperar la secretaría general",
@@ -1156,6 +1185,35 @@
       }
     },
     {
+      "id": "study-f21-usaid-ghsc-auditoria-2021",
+      "y": 2021.2287671232878,
+      "t": "El Inspector General detecta deficiencias de supervisión en el contrato sanitario GHSC-PSM",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "El 25 de marzo de 2021 el Inspector General de USAID publicó una auditoría sobre el proyecto GHSC-PSM ejecutado por Chemonics. Detectó debilidades de planificación y supervisión e hizo catorce recomendaciones para mejorar las adquisiciones y la gestión del proyecto. No significa que el importe total del contrato fuera indebido.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2021-03-25",
+        "confirmedBy": {
+          "label": "USAID OIG · informe 9-000-21-004-P",
+          "url": "https://oig.usaid.gov/node/4667"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-ghsc",
+          "usaid-chemonics"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
+      }
+    },
+    {
       "id": "study-f17-espana-marruecos-declaracion-2022",
       "y": 2022.2630136986302,
       "t": "España y Marruecos adoptan una declaración conjunta en Rabat",
@@ -1331,6 +1389,36 @@
       }
     },
     {
+      "id": "study-f21-usaid-chemonics-acuerdo-2024",
+      "y": 2024.9685792349726,
+      "t": "Chemonics acuerda pagar 3,12 millones de dólares por reclamaciones de facturación irregular",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "El 20 de diciembre de 2024 el Departamento de Justicia y el OIG de USAID anunciaron un acuerdo civil de 3.119.582 dólares con Chemonics para resolver alegaciones relacionadas con facturación de transporte de su subcontratista Zenith Carex en Nigeria. El acuerdo no equivale por sí solo a una condena penal de Chemonics.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2024-12-20",
+        "confirmedBy": {
+          "label": "USAID OIG · comunicado 20/12/2024",
+          "url": "https://oig.usaid.gov/node/7359"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-chemonics",
+          "usaid-acuerdo-chemonics",
+          "usaid-zenith"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
+      }
+    },
+    {
       "id": "study-f21-usaid-review-2025",
       "y": 2025.0534246575342,
       "t": "EEUU ordena revisar y pausar la ayuda exterior, incluidos programas USAID",
@@ -1452,6 +1540,37 @@
       }
     },
     {
+      "id": "study-f21-usaid-sobornos-2025",
+      "y": 2025.445205479452,
+      "t": "El Departamento de Justicia informa de cuatro declaraciones de culpabilidad por sobornos en contratos USAID",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "El 12 de junio de 2025, el DOJ anunció declaraciones de culpabilidad de Roderick Watson, Walter Barnes, Darryl Britt y Paul Young por un esquema de sobornos ligado a más de 550 millones de dólares de contratos de USAID. Las empresas Apprio y Vistant aceptaron acuerdos de procesamiento aplazado. El volumen de contratos no es equivalente al valor de los sobornos.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-06-12",
+        "confirmedBy": {
+          "label": "Departamento de Justicia de EE. UU. · comunicado 12/06/2025",
+          "url": "https://www.justice.gov/opa/pr/usaid-official-and-three-corporate-executives-plead-guilty-decade-long-bribery-scheme"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-caso-contratos",
+          "usaid-watson",
+          "usaid-vistant",
+          "usaid-apprio"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
+      }
+    },
+    {
       "id": "study-f21-usaid-transferencia-2025",
       "y": 2025.4972602739726,
       "t": "El Departamento de Estado asume gran parte de la ayuda exterior gestionada por USAID",
@@ -1505,6 +1624,65 @@
           "f18-epstein"
         ],
         "methodologicalLimits": "La entrevista es objeto de estudio, no la prueba primaria de este hito. Las opiniones y supuestas relaciones clandestinas quedan fuera de la cronología."
+      }
+    },
+    {
+      "id": "study-f21-usaid-inhabilitaciones-2025",
+      "y": 2025.650684931507,
+      "t": "USAID inhabilita a cuatro implicados en el esquema de sobornos de contratación",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "El 26 de agosto de 2025, USAID comunicó inhabilitaciones administrativas para Roderick Watson, Walter Barnes, Darryl Britt y Paul Young; la nota oficial del OIG se publicó el 4 de septiembre. El proceso se refiere a adjudicaciones concretas y no acredita acusaciones generales contra cualquier contratista de USAID.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-08-26",
+        "confirmedBy": {
+          "label": "USAID OIG · resumen publicado 04/09/2025",
+          "url": "https://oig.usaid.gov/node/7877"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-caso-contratos",
+          "usaid-watson"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
+      }
+    },
+    {
+      "id": "study-f21-usaid-ukraine-gao-2025",
+      "y": 2025.7301369863014,
+      "t": "La GAO publica debilidades de supervisión del apoyo presupuestario a Ucrania",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "La GAO publicó el 24 de septiembre de 2025 una evaluación del apoyo presupuestario estadounidense a Ucrania mediante el Banco Mundial. USAID había gestionado 30.200 millones de dólares de fondos apropiados y la GAO detectó deficiencias en análisis de datos y seguimiento de observaciones de los auditores. Son debilidades de control, no demostración de desvío de toda la ayuda.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-09-24",
+        "confirmedBy": {
+          "label": "GAO · informe GAO-25-107057",
+          "url": "https://www.gao.gov/products/gao-25-107057"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-peace",
+          "f21-ukraine",
+          "f21-worldbank"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
       }
     },
     {
@@ -1566,6 +1744,34 @@
       }
     },
     {
+      "id": "study-f21-usaid-financial-audit-2026",
+      "y": 2026.0424657534247,
+      "t": "El auditor de USAID no puede emitir opinión sobre las cuentas del ejercicio fiscal 2025",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "El 16 de enero de 2026 el OIG de USAID difundió la auditoría de sus estados financieros FY2025. La firma auditora afirmó que no obtuvo evidencia adecuada y suficiente para emitir opinión e identificó cuatro debilidades materiales y tres deficiencias significativas de control. No supone afirmar que todos los gastos fueran fraudulentos.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2026-01-16",
+        "confirmedBy": {
+          "label": "USAID OIG · 0-000-26-004-C",
+          "url": "https://oig.usaid.gov/node/7997"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-auditoria-2025"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
+      }
+    },
+    {
       "id": "study-f18-doj-epstein-release-2026",
       "y": 2026.0808219178082,
       "t": "El DOJ anuncia una nueva publicación de documentos del caso Epstein",
@@ -1591,6 +1797,35 @@
           "f18-doj"
         ],
         "methodologicalLimits": "Se registra un acto documental de comunicación oficial. No se infiere de ese acto implicación penal de personas mencionadas, conexiones con servicios secretos ni contenido exacto del episodio."
+      }
+    },
+    {
+      "id": "study-f21-usaid-belgica-2026",
+      "y": 2026.4397260273972,
+      "t": "El Inspector General alerta sobre suministros sanitarios almacenados en Bélgica",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · USAID · expediente público complementario a F21",
+      "d": "El 10 de junio de 2026 el OIG advirtió de 9,7 millones de dólares en productos de planificación familiar almacenados en Bélgica, con existencias inutilizables o próximas a caducar y costes adicionales de almacenamiento. La alerta pide instrucciones de disposición final y no atribuye necesariamente delito a las partes implicadas.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 21,
+        "sourceTitle": "Contexto documental independiente USAID, no necesariamente citado en F21",
+        "sourceUrl": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2026-06-10",
+        "confirmedBy": {
+          "label": "USAID OIG · aviso 1-000-26-003-A",
+          "url": "https://oig.usaid.gov/node/8159"
+        },
+        "relatedTelarana": [
+          "f21-usaid",
+          "usaid-belgica",
+          "usaid-chemonics"
+        ],
+        "methodologicalLimits": "Fuente institucional independiente y fecha documentada. La inscripción es un hecho contextual, no permite inferir que el entrevistado conociera el evento, ni acredita relaciones causales adicionales o conductas no atribuidas explícitamente."
       }
     },
     {
