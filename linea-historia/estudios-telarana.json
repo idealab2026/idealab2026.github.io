@@ -1561,6 +1561,35 @@
       }
     },
     {
+      "id": "study-f28-pov-thiel-vance-2022",
+      "y": 2022,
+      "t": "Peter Thiel financia con unos 15 millones de dólares un super-PAC favorable a JD Vance",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 28 · documentación externa",
+      "d": "Durante la campaña de 2022 al Senado de Ohio, Peter Thiel aportó aproximadamente 15 millones de dólares a Protect Ohio Values, un comité independiente que respaldó a JD Vance. La FEC registra el PAC con identificador C00770495; el importe individual está documentado por investigación periodística de CBS News. No debe confundirse este apoyo independiente con una donación directa al comité de campaña ni inferir contraprestación.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 28,
+        "sourceTitle": "Trump, financiación electoral y poder · contraste externo de F28",
+        "sourceUrl": "https://www.youtube.com/watch?v=fzHC3z8S3oM",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "2022",
+        "confirmedBy": {
+          "label": "CBS News · investigación basada en registros electorales, contrastable con FEC",
+          "url": "https://www.cbsnews.com/news/jd-vance-trump-vp-peter-thiel-billionaire/"
+        },
+        "relatedTelarana": [
+          "on-peter-thiel",
+          "f28-protect-ohio-values",
+          "on-jd-vance"
+        ],
+        "methodologicalLimits": "Hecho externo a la entrevista: no se ha recuperado la transcripción ni cotejado las declaraciones. Financiar un super-PAC no equivale a donar al candidato, cometer un delito o controlar decisiones institucionales."
+      }
+    },
+    {
       "id": "study-f17-espana-marruecos-declaracion-2022",
       "y": 2022.2630136986302,
       "t": "España y Marruecos adoptan una declaración conjunta en Rabat",
@@ -1882,6 +1911,34 @@
       }
     },
     {
+      "id": "study-f28-trump-vance-investidura-2025",
+      "y": 2025.0534246575342,
+      "t": "Donald Trump y JD Vance prestan juramento como presidente y vicepresidente de Estados Unidos",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 28 · documentación externa",
+      "d": "El 20 de enero de 2025 Donald Trump inició su segunda presidencia y JD Vance asumió la vicepresidencia de Estados Unidos. La Comisión Conjunta del Congreso sobre Ceremonias de Investidura documentó formalmente el acto. El cargo institucional no demuestra que los apoyos empresariales o de PACs impongan instrucciones al Gobierno.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 28,
+        "sourceTitle": "Trump, financiación electoral y poder · contraste externo de F28",
+        "sourceUrl": "https://www.youtube.com/watch?v=fzHC3z8S3oM",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-01-20",
+        "confirmedBy": {
+          "label": "Comisión Conjunta del Congreso sobre Investiduras · 20/01/2025",
+          "url": "https://www.inaugural.senate.gov/60th-inaugural-ceremonies/"
+        },
+        "relatedTelarana": [
+          "on-donald-trump",
+          "on-jd-vance"
+        ],
+        "methodologicalLimits": "Hecho externo a la entrevista: no se ha recuperado la transcripción ni cotejado las declaraciones. Financiar un super-PAC no equivale a donar al candidato, cometer un delito o controlar decisiones institucionales."
+      }
+    },
+    {
       "id": "study-f21-stargate-2025",
       "y": 2025.054794520548,
       "t": "OpenAI y sus socios anuncian el proyecto Stargate",
@@ -1915,6 +1972,35 @@
             "status": "mencion_fuente_no_verificacion_independiente"
           }
         ]
+      }
+    },
+    {
+      "id": "study-f28-bessent-senado-2025",
+      "y": 2025.072602739726,
+      "t": "El Senado confirma a Scott Bessent como secretario del Tesoro por 68 votos frente a 29",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 28 · documentación externa",
+      "d": "El Senado estadounidense confirmó a Scott Bessent como secretario del Tesoro el 27 de enero de 2025 con 68 votos favorables y 29 contrarios. Bessent prestó juramento el día siguiente. La decisión administrativa constituye un nombramiento verificable y no acredita por sí sola interferencia o control ilegal de actores financieros.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 28,
+        "sourceTitle": "Trump, financiación electoral y poder · contraste externo de F28",
+        "sourceUrl": "https://www.youtube.com/watch?v=fzHC3z8S3oM",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2025-01-27",
+        "confirmedBy": {
+          "label": "U.S. Senate · roll call vote n.º 19, 27/01/2025",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00019.htm"
+        },
+        "relatedTelarana": [
+          "on-scott-bessent",
+          "on-donald-trump",
+          "f28-us-treasury"
+        ],
+        "methodologicalLimits": "Hecho externo a la entrevista: no se ha recuperado la transcripción ni cotejado las declaraciones. Financiar un super-PAC no equivale a donar al candidato, cometer un delito o controlar decisiones institucionales."
       }
     },
     {
