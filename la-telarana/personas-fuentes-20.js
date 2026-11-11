@@ -20,7 +20,16 @@
       },
       "sources": {
         "20": [
-          "La fuente presenta sus opiniones sobre identidad digital, plataformas tecnológicas, inteligencia artificial, cambios de poder global y posibles mecanismos de vigilancia y control social."
+          {
+            "topic": "Presentación del invitado y tesis sobre tecnologías de vigilancia",
+            "speaker": "Luis Miguel Ortiz (presentación) y Lorenzo Ramírez (entrevista; audio pendiente)",
+            "statement": "El presentador introduce a Lorenzo Ramírez, quien argumenta que la acumulación de datos, los sistemas de identidad digital y las plataformas tecnológicas podrían ampliar el poder de vigilancia. Ramírez relaciona estas preocupaciones con inversiones en inteligencia artificial y disputas geopolíticas. Las conexiones y previsiones que plantea son sus hipótesis, no resultados corroborados de una investigación independiente.",
+            "status": "mencion_contextual",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Vuelve al podcast Lorenzo Ramírez ¿Qué punto somos conscientes de que "
+          }
         ]
       }
     },
@@ -179,7 +188,16 @@
       },
       "sources": {
         "20": [
-          "Lorenzo Ramírez se refiere a él como enviado para Oriente Medio y opina sobre la proximidad entre negocios privados y responsabilidades diplomáticas."
+          {
+            "topic": "Vínculos entre negocios y diplomacia en el entorno de Trump",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez cita a Steve Witkoff, cuyo apellido aparece deformado en la transcripción, como empresario inmobiliario y enviado especial estadounidense para Oriente Medio. A partir de su trayectoria cuestiona la separación entre responsabilidades públicas e intereses privados en la Administración Trump. La mención biográfica y la valoración del invitado no prueban por sí solas conflictos de intereses ni irregularidades concretas.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "steve Witkof el enviado para Oriente Medio que es el que prácticamente"
+          }
         ]
       }
     },
@@ -191,7 +209,16 @@
       },
       "sources": {
         "20": [
-          "En la fuente se comenta su compra de Twitter y el objetivo declarado de combatir las cuentas automatizadas, dentro del debate sobre anonimato e identidad digital."
+          {
+            "topic": "Compra de Twitter y promesa de reducir cuentas automatizadas",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez recuerda que Elon Musk defendió combatir las cuentas automatizadas cuando adquirió Twitter, cuyo nombre aparece como «Elon Mask» en el reconocimiento automático. El entrevistado cuestiona la eficacia de esa promesa y relaciona el debate sobre bots con los riesgos de perder el anonimato en internet. La evaluación del número de bots no queda respaldada por métricas contrastadas en el episodio.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Elon Mask cuando compra Twitter ¿qué es lo primero que dijo que iba a "
+          }
         ]
       }
     },
@@ -317,7 +344,16 @@
       },
       "sources": {
         "20": [
-          "La fuente lo cita entre responsables de grandes plataformas al debatir su influencia y las consecuencias de sus decisiones en el tratamiento de datos y la vida pública."
+          {
+            "topic": "Influencia de los dirigentes de grandes plataformas",
+            "speaker": "Lorenzo Ramírez (diarización audiovisual pendiente)",
+            "statement": "Ramírez menciona a Mark Zuckerberg junto a otros dirigentes tecnológicos para sostener que las preferencias de quienes controlan grandes plataformas pueden tener consecuencias sociales superiores a las decisiones de usuarios individuales. Es un argumento sobre concentración de poder económico e informativo; no contiene una imputación específica de conducta ilegal a Zuckerberg.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "lo que pueda crear Mark Zuckerber lo que puedan creer Eric Smith lo qu"
+          }
         ]
       }
     }
