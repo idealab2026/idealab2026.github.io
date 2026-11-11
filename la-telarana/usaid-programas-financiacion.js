@@ -5,9 +5,61 @@ window.IDEA_TELARANA_USAID_PROGRAMAS = {
     "title": "USAID · contratos, subvenciones, programas y casos documentados",
     "publishedAt": "2026-11-11",
     "reviewStage": "cotejo_documental_fuentes_oficiales",
-    "methodologicalNote": "Tipos distintos de aristas: listas FY2024 de socios (sin montos individuales), contratos y programas concretos, auditorías y procedimientos judiciales. Los importes de contrato adjudicado, desembolso, inventario y acuerdo civil no son intercambiables. NED enlazada a State, no a USAID sin adjudicación identificada."
+    "methodologicalNote": "Tipos distintos de aristas: listas FY2024 de socios (sin montos individuales), contratos y programas concretos, auditorías y procedimientos judiciales. Los importes de contrato adjudicado, desembolso, inventario y acuerdo civil no son intercambiables. NED enlazada a State, no a USAID sin adjudicación identificada. Las cuatro entidades de referencia preexistentes se vuelven a declarar como identificadores de enlace para que el cargador conserve las 41 aristas; no generan duplicados."
   },
   "nodes": [
+    {
+      "id": "usaid-departamento-estado",
+      "name": "Departamento de Estado de Estados Unidos",
+      "kind": "Institución",
+      "subtitle": "Organismo que asumió programas de ayuda exterior en 2025",
+      "note": "Referencia de enlace a entidad existente; no crea ficha nueva ni sustituye sus datos.",
+      "source": "",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "f21-ukraine",
+      "name": "Ucrania",
+      "kind": "País",
+      "subtitle": "Beneficiario del apoyo presupuestario gestionado por el Banco Mundial",
+      "note": "Referencia de enlace a entidad existente; no crea ficha nueva ni sustituye sus datos.",
+      "source": "",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "f21-worldbank",
+      "name": "Banco Mundial",
+      "kind": "Institución",
+      "subtitle": "Organismo financiero multilateral",
+      "note": "Referencia de enlace a entidad existente; no crea ficha nueva ni sustituye sus datos.",
+      "source": "",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
+    {
+      "id": "f21-usaid",
+      "name": "USAID",
+      "kind": "Institución",
+      "subtitle": "Agencia estadounidense de cooperación y desarrollo",
+      "note": "Referencia de enlace a entidad existente; no crea ficha nueva ni sustituye sus datos.",
+      "source": "",
+      "topic3d": "global",
+      "photo": "",
+      "x": 0,
+      "y": 0,
+      "podcastNotes": []
+    },
     {
       "id": "usaid-chemonics",
       "name": "Chemonics International",
