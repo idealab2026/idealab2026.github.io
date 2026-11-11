@@ -97,7 +97,7 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "name": "USAID",
       "kind": "Institución",
       "subtitle": "Agencia estadounidense de cooperación y desarrollo",
-      "note": "Agencia de ayuda exterior estadounidense, objeto de un capítulo 01:08:39. Una revisión oficial confirma la pausa del 20/01/2025 y procesos de transferencia institucional posteriores. Esos datos se contrastan externamente, no se atribuyen al invitado.",
+      "note": "Agencia de desarrollo y asistencia exterior establecida en 1961. El 20/01/2025 se ordenó revisar y pausar la ayuda exterior; desde el 01/07/2025 el Departamento de Estado asumió gran parte de sus funciones y adjudicaciones. Según el OIG, en septiembre de 2025 ya administraba 1.504 adjudicaciones transferidas (51.500 millones USD comprometidos). Sus vínculos documentados incluyen el marco legal, la supervisión independiente y socios multilaterales. Las hipótesis de la entrevista se conservan separadas de los hechos.",
       "topic3d": "global",
       "source": "https://oig.usaid.gov/node/8228",
       "x": 6190,
