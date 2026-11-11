@@ -97,7 +97,7 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "name": "USAID",
       "kind": "Institución",
       "subtitle": "Agencia estadounidense de cooperación y desarrollo",
-      "note": "USAID fue establecida en 1961 para ejecutar políticas estadounidenses de ayuda exterior. En FY2024 registró más de 30.500 millones USD de obligaciones en adquisición y asistencia a través de 23.186 operaciones y 3.753 socios únicos (informe M/OAA). Esta ficha reúne socios, contratos, programas y hechos judiciales concretos. En julio de 2025 gran parte de sus funciones pasó al Departamento de Estado. La existencia de financiación o un contrato no demuestra actividades encubiertas ni culpabilidad de beneficiarios; cada relación distingue ejercicio, instrumento, volumen y fuente.",
+      "note": "Agencia estadounidense de ayuda exterior creada en 1961, con precedentes institucionales documentados. Nelson Rockefeller dirigió la cooperación interamericana desde 1940, impulsó el IIAA público en 1942 y presidió el consejo asesor de Truman en 1950. La sucesión administrativa IIAA→FOA (1953)→ICA (1955)→USAID (1961) no acredita que Rockefeller o sus empresas controlasen o financiasen USAID. Separadamente, su fundación RBF subvencionó AIA, organización privada, con 250.000 USD en 1962. En FY2024 USAID registró más de 30.500 millones USD obligados mediante 23.186 operaciones y 3.753 socios; en 2025 gran parte de sus funciones se transfirió al Departamento de Estado. Las alegaciones sobre actuaciones políticas se muestran atribuidas y aparte.",
       "topic3d": "global",
       "source": "https://oig.usaid.gov/node/8228",
       "x": 6190,
