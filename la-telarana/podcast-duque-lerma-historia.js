@@ -55,7 +55,7 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
       "name": "Pedro Baños",
       "kind": "Persona",
       "subtitle": "Presentador · El Canal del Coronel",
-      "note": "Coronel español en la reserva, divulgador y presentador de El Canal del Coronel. La publicación original del 4 de abril de 2024 lo identifica como anfitrión de la historiadora Margarita Torres. Su participación no implica aval de todas las hipótesis que pudieran aparecer en una transcripción todavía no obtenida.",
+      "note": "Coronel español en la reserva, divulgador y presentador de El Canal del Coronel. La publicación original del 4 de abril de 2024 lo identifica como anfitrión de la historiadora Margarita Torres. Su participación no implica aval de todas las hipótesis atribuidas en una transcripción ASR disponible pero aún sin cotejo audiovisual.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
       "topic3d": "historia",
@@ -76,7 +76,7 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
       "name": "Margarita Torres Sevilla",
       "kind": "Persona",
       "subtitle": "Historiadora invitada · especialista en historia medieval y moderna",
-      "note": "Historiadora española, investigadora y divulgadora; participa como experta invitada en el episodio sobre corrupción política histórica. Los cinco capítulos del programa se conocen por el índice publicado, pero no se dispone aún de transcripción para atribuirle frases, interpretaciones o juicios específicos.",
+      "note": "Historiadora española, investigadora y divulgadora; participa como experta invitada en el episodio sobre corrupción política histórica. Los cinco capítulos del programa se conocen por el índice publicado, pero se ha recuperado la transcripción automática íntegra; las declaraciones individualizadas y sus turnos siguen sin cotejo de audio.",
       "photo": "https://imagenes.diariodevalladolid.es/files/og_thumbnail/uploads/2024/03/14/65f37b5451bda.jpeg",
       "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
       "topic3d": "historia",
@@ -202,8 +202,8 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
           "publishedAt": "2024-04-04",
           "timeSec": 1790,
           "source": "https://www.youtube.com/watch?v=DLgQ78xC-54",
-          "status": "contexto-externo-verificado",
-          "text": "El canal marca el inicio de este capítulo en su descripción; el siguiente es contexto independiente y NO una transcripción del vídeo. La descripción de YouTube contiene literalmente el encabezado «Pedro de Villamizar» desde el minuto 29:50. Las búsquedas abiertas no permiten identificar a una persona histórica inequívoca con ese nombre. Este es un tema editorial sin identificación biográfica; NO debe relacionarse con los marqueses de Villamizar ni inventarse un personaje."
+          "status": "indice_editorial_no_identificacion_concluyente",
+          "text": "El canal marca este capítulo desde el minuto 29:50 bajo el rótulo «Pedro de Villamizar». La transcripción ASR disponible precisa un nombre presentado como «Pedro de Villamizar y Tobar»; un estudio de Studia Historica menciona a un Pedro de Villamizar asesinado en 1607. Falta contrastar el acta municipal y la genealogía antes de confirmar que son la misma persona."
         },
         {
           "episodeId": "canal-coronel-margarita-torres-lerma-2024-04-04",
@@ -979,7 +979,8 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
     {
       "timeSec": 1790,
       "label": "Pedro de Villamizar",
-      "reason": "Identidad no encontrada de forma inequívoca en archivos y búsquedas; evitar inferencias onomásticas."
+      "reason": "El ASR aporta «Pedro de Villamizar y Tobar» y fuentes historiográficas aluden a un homónimo en León en 1607. Identificación parcial todavía sin cotejar acta y genealogía; el minuto 29:50 es inicio del capítulo, no cita literal.",
+      "status": "identificacion_parcial_por_contrastar"
     }
   ],
   "primaryEvidence": [
