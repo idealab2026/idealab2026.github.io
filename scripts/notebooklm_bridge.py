@@ -1129,6 +1129,82 @@ def diagnose_failed(args) -> None:
     print("Consulta de solo lectura; no se ha reintentado ni modificado el estado.")
 
 
+def incomplete_studio_artifacts(rows: list[dict]) -> int:
+    """Count unclassified/in-progress infographic statuses; fail closed.
+
+    Studio reports 3 for completed and 4 for failed artifacts. Any other
+    status may describe a still-running job and is unsafe for a new launch.
+    """
+    return sum(not (
+        status_text(row) in ("3", "4") or
+        any(word in status_text(row)
+            for word in ("complet", "ready", "finish", "success",
+                         "fail", "error", "cancel"))
+    ) for row in rows)
+
+
+def recovery_preflight(args) -> None:
+    """Read-only readiness check for a SINGLE ambiguous old request.
+
+    Passing every check does not prove that an original CLI timeout wasn't
+    accepted remotely; it only gives the operator evidence for manual review.
+    """
+    check_identity()
+    state = load_json(STATE_PATH, {})
+    number = str(args.issue)
+    job = state.get(number)
+    if not job or job.get("phase") not in ("uncertain", "deferred"):
+        raise ValueError("La solicitud no está aplazada/incierta en este Mac.")
+    req = job.get("request") or {}
+    print("Solicitud #", number, "| Libro:", req.get("book", "desconocido"),
+          "| Estado:", job.get("phase"))
+    health = generation_health()
+    if health.get("paused"):
+        print("BLOQUEO: pausa de seguridad activa.")
+        return
+    active = [n for n, other in state.items()
+              if other is not job and other.get("phase") in ("submitted", "launching")]
+    if active:
+        print("BLOQUEO: hay otra generación activa.")
+        return
+    same_unresolved = [
+        n for n, other in state.items()
+        if other is not job and other.get("notebook") == job.get("notebook")
+        and other.get("phase") in ("uncertain", "deferred", "submitted", "launching")
+    ]
+    if same_unresolved:
+        print("BLOQUEO: mismo cuaderno con otras solicitudes sin conciliar:",
+              ", ".join("#" + str(n) for n in sorted(same_unresolved, key=int)))
+        return
+    config = private_config()
+    mapping = select_mapping(config, req)
+    if not mapping or mapping != (job.get("notebook"), job.get("source_ids")):
+        print("BLOQUEO: la vinculación privada de fuentes ha cambiado.")
+        return
+    if submitted_comment_exists(number):
+        print("BLOQUEO: GitHub confirma un envío previo. No generar de nuevo.")
+        return
+    try:
+        rows, created = remote_artifact_delta(job)
+    except (RuntimeError, ValueError, OSError, subprocess.TimeoutExpired) as exc:
+        print("BLOQUEO: instantánea Studio no verificable:", type(exc).__name__)
+        return
+    if created:
+        print("BLOQUEO: se observan", len(created),
+              "artefactos posteriores a la instantánea. Revisar attach.")
+        return
+    incomplete = incomplete_studio_artifacts(rows)
+    if incomplete:
+        print("BLOQUEO:", incomplete,
+              "artefactos con estado sin finalizar o no reconocible en el cuaderno.")
+        return
+    print("Controles superados: sin comentarios de envío, sin artefactos nuevos, "
+          "sin trabajos activos identificados y con fuentes consistentes.")
+    print("ADVERTENCIA: el envío anterior podría finalizar tarde; esto NO "
+          "certifica ausencia de ejecución remota ni disponibilidad de cuota.")
+    print("Solo lectura. No se ha lanzado ni desbloqueado ninguna solicitud.")
+
+
 def recover_blocked(args) -> None:
     """Explicit, single-request recovery after a remote-negative check.
 
@@ -1166,6 +1242,9 @@ def recover_blocked(args) -> None:
     if created:
         raise RuntimeError("Studio contiene nuevos artefactos; no se reenvía. "
                            "Utiliza audit-blocked y attach tras identificarlo.")
+    if incomplete_studio_artifacts(rows):
+        raise RuntimeError("Studio contiene artefactos en curso o con estado "
+                           "desconocido. No se puede recuperar sin revisión manual.")
     job.setdefault("past_attempts", []).append({
         "phase": job["phase"],
         "reason": job.get("failure_kind") or job.get("reason") or "unknown",
@@ -1321,6 +1400,9 @@ def main():
                               help="Auditar solo esta incidencia")
     audit_target.add_argument("--book", action="append",
                               help="Auditar todos los bloqueos de este libro; repetible")
+    recovery_check = sub.add_parser("recovery-preflight",
+                                    help="Revisar una recuperación sin generar ni modificar estado")
+    recovery_check.add_argument("--issue", type=int, required=True)
     recovery = sub.add_parser("recover-blocked",
                               help="Recuperación manual y verificada de una solicitud bloqueada")
     recovery.add_argument("--issue", type=int, required=True)
@@ -1393,6 +1475,8 @@ def execute_command(args):
             diagnose_failed(args)
         elif args.command == "audit-blocked":
             audit_blocked(args)
+        elif args.command == "recovery-preflight":
+            recovery_preflight(args)
         elif args.command == "recover-blocked":
             recover_blocked(args)
         elif args.command == "resume-generations":
