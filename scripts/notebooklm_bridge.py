@@ -799,6 +799,95 @@ def safe_queue_candidate(state: dict, config: dict, books: set[str],
     return None
 
 
+def explain_safe_queue(state: dict, config: dict, books: set[str],
+                       extra_held: set[str] | None = None) -> None:
+    """Explain queue exclusions without exposing private notebook/source IDs.
+
+    This is a local read-only audit, even when --execute was requested.
+    It never resets the generation epoch, remaps sources, or retries jobs.
+    """
+    import collections
+    counts = {book: collections.Counter() for book in sorted(books)}
+    held = RECOVERY_HELD_ISSUES | (extra_held or set())
+    bad_notebooks = {job.get("notebook") for job in state.values()
+                     if job.get("phase") in ("failed", "uncertain", "deferred")}
+    active = sum(job.get("phase") in ("submitted", "launching")
+                 for job in state.values())
+    queued_retries = sum(bool(job.get("retry_requested")) for job in state.values())
+    health = generation_health()
+    activated_raw = config.get("activated_at")
+    try:
+        activated = dt.datetime.fromisoformat(activated_raw.replace("Z", "+00:00"))
+    except (AttributeError, TypeError, ValueError):
+        activated = None
+    if activated is not None:
+        print("Fecha de activación local:", activated.isoformat())
+    else:
+        print("Sin fecha de activación local válida: cola detenida.")
+    print("Bloqueos globales: pausa=", bool(health.get("paused")),
+          "| activos=", active, "| reintentos programados=", queued_retries,
+          "| cuadernos en cuarentena=", len(bad_notebooks))
+    for issue in github_issues():
+        number = str(issue.get("number", ""))
+        # Never parse unrelated public issues for diagnostic purposes.
+        if not issue.get("title", "").startswith("[NLM] "):
+            continue
+        try:
+            req = parse_request(issue)
+        except (ValueError, KeyError, TypeError):
+            req = None
+        if req is None or req["book"] not in books:
+            continue
+        c = counts[req["book"]]
+        c["total"] += 1
+        if number in state:
+            phase = str(state[number].get("phase", "unknown"))
+            c["local-" + phase] += 1
+            continue
+        if number in held:
+            c["held"] += 1
+            continue
+        try:
+            opened = dt.datetime.fromisoformat(issue["createdAt"].replace("Z", "+00:00"))
+        except (KeyError, TypeError, ValueError):
+            c["invalid-date"] += 1
+            continue
+        if activated is None or opened < activated:
+            c["before-activation"] += 1
+            continue
+        mapping = select_mapping(config, req)
+        if mapping is None:
+            c["unmapped"] += 1
+        elif mapping[0] in bad_notebooks:
+            c["quarantined-notebook"] += 1
+        elif active or queued_retries or health.get("paused"):
+            c["global-hold"] += 1
+        else:
+            c["eligible"] += 1
+    for book, c in counts.items():
+        print(book + ": " +
+              " | ".join(k + "=" + str(c[k]) for k in (
+                  "total", "eligible", "unmapped", "before-activation",
+                  "quarantined-notebook", "held", "global-hold",
+                  "invalid-date") if c[k] or k == "total"))
+        previous = {k[len("local-"):]: v for k, v in c.items()
+                    if k.startswith("local-")}
+        if previous:
+            print("  Ya en estado local:", ", ".join(
+                k + "=" + str(v) for k, v in sorted(previous.items())))
+    if any(c["unmapped"] for c in counts.values()):
+        print("Faltan asociaciones de fuentes. Consulta sin cambios: "
+              "python3 scripts/notebooklm_map_catalog.py")
+        if "conde-montecristo" in books:
+            print("Para Montecristo, diagnosticar por tomo: "
+                  "python3 scripts/notebooklm_source_mapper.py "
+                  "--book conde-montecristo --volume tomo-i")
+    if any(c["before-activation"] for c in counts.values()):
+        print("Hay solicitudes anteriores a la activación: NO cambiar "
+              "activated_at ni reinicializar; requieren adopción auditada.")
+    print("Diagnóstico finalizado. No se han enviado ni modificado trabajos.")
+
+
 def safe_poll(args) -> None:
     """Manual one-shot recovery. Without --execute: pure queue preview."""
     check_identity()
@@ -809,7 +898,12 @@ def safe_poll(args) -> None:
         {str(n) for n in (args.hold_issue or [])})
     if candidate is None:
         print("Sin solicitud apta para este conjunto de libros. No se ha enviado nada.")
+        explain_safe_queue(state, config, set(args.book or []),
+                           {str(n) for n in (args.hold_issue or [])})
         return
+    if getattr(args, "diagnose", False):
+        explain_safe_queue(state, config, set(args.book or []),
+                           {str(n) for n in (args.hold_issue or [])})
     number, req = candidate
     print("Solicitud elegible:", "#" + number, "| Libro:", req["book"])
     print("Retención obligatoria: #201. Cuadernos fallidos/inciertos excluidos.")
@@ -1176,6 +1270,8 @@ def main():
                       help="Incidencia adicional que no se debe enviar")
     safe.add_argument("--execute", action="store_true",
                       help="Autorizar una sola generación; sin esto es dry-run")
+    safe.add_argument("--diagnose", action="store_true",
+                      help="Desglosar exclusiones por libro, sin generar nada")
     sub.add_parser("reconcile-only", help="Conciliar envíos previos sin generar trabajos nuevos")
     sub.add_parser("status", help="Consultar trabajos locales sin enviar información privada")
     sub.add_parser("health", help="Consultar la pausa y últimos resultados sin datos privados")
