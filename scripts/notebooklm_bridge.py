@@ -670,7 +670,7 @@ def github_recovery_approvals(now: dt.datetime | None = None) -> list[tuple[str,
         if user.get("login", "").lower() != OWNER or user.get("id") != OWNER_GITHUB_ID:
             continue
         match = re.fullmatch(
-            r"https://api\\.github\\.com/repos/"
+            r"https://api\.github\.com/repos/"
             + re.escape(REPO) + r"/issues/([1-9][0-9]*)",
             str(row.get("issue_url") or ""))
         if not match:
