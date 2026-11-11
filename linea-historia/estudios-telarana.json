@@ -187,6 +187,34 @@
       }
     },
     {
+      "id": "study-f25-fed-law-1913",
+      "y": 1913.9767123287672,
+      "t": "El Congreso estadounidense aprueba y Wilson promulga la Ley de la Reserva Federal",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F25 · contrastes externos sobre instituciones financieras",
+      "d": "El 23 de diciembre de 1913, el presidente Woodrow Wilson promulgó la Federal Reserve Act, previamente aprobada por ambas cámaras del Congreso. La norma estableció el sistema de la Reserva Federal. Este hecho contradice la afirmación en la fuente 25 de que la creación de la Reserva Federal no pasó por el Congreso; los debates y reuniones previos deben distinguirse del acto legislativo.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 25,
+        "sourceTitle": "Antecedentes documentales contrastados sobre el episodio de finanzas globales",
+        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1913-12-23",
+        "confirmedBy": {
+          "label": "Federal Reserve History · Federal Reserve Act Signed into Law",
+          "url": "https://www.federalreservehistory.org/essays/federal-reserve-act-signed"
+        },
+        "relatedTelarana": [
+          "f25-fed",
+          "f25-fed-act"
+        ],
+        "methodologicalLimits": "Dato histórico documentado mediante la fuente institucional original. Se añade como contexto independiente: no certifica que el invitado lo expusiera con precisión ni valida sus alegaciones sobre supuestas operaciones ocultas o culpabilidades."
+      }
+    },
+    {
       "id": "study-f25-bis-1930",
       "y": 1930.372602739726,
       "t": "Abre sus puertas en Basilea el Banco de Pagos Internacionales",
@@ -469,6 +497,35 @@
       }
     },
     {
+      "id": "study-f25-bretton-woods-1944",
+      "y": 1944.5560109289618,
+      "t": "Concluye Bretton Woods: bases institucionales del FMI y del Banco Mundial",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F25 · contrastes externos sobre instituciones financieras",
+      "d": "Del 1 al 22 de julio de 1944, representantes de 44 países aliados se reunieron en Bretton Woods, New Hampshire, y definieron los acuerdos que dieron origen al FMI y al Banco Mundial. El FMI nació para la cooperación y estabilidad monetaria, mientras que el Banco Mundial se orientó inicialmente a reconstrucción y desarrollo. Su creación es un hecho institucional, distinto de las opiniones sobre su influencia geopolítica.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 25,
+        "sourceTitle": "Antecedentes documentales contrastados sobre el episodio de finanzas globales",
+        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1944-07-22",
+        "confirmedBy": {
+          "label": "Fondo Monetario Internacional · Historia conjunta FMI y Banco Mundial",
+          "url": "https://www.imf.org/en/about/factsheets/sheets/2022/imf-world-bank-new"
+        },
+        "relatedTelarana": [
+          "f25-fmi",
+          "f25-worldbank",
+          "f25-bretton-woods"
+        ],
+        "methodologicalLimits": "Dato histórico documentado mediante la fuente institucional original. Se añade como contexto independiente: no certifica que el invitado lo expusiera con precisión ni valida sus alegaciones sobre supuestas operaciones ocultas o culpabilidades."
+      }
+    },
+    {
       "id": "study-f21-iiaa-ley-federal-1947",
       "y": 1947.5931506849315,
       "t": "Estados Unidos reorganiza jurídicamente el IIAA mediante ley federal",
@@ -734,6 +791,34 @@
       }
     },
     {
+      "id": "study-f25-rockefeller-cfr-1970",
+      "y": 1970,
+      "t": "David Rockefeller comienza su presidencia del Council on Foreign Relations",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F25 · contrastes externos sobre instituciones financieras",
+      "d": "El CFR sitúa a David Rockefeller al frente de su consejo de administración desde 1970 hasta 1985. El dato acredita un cargo institucional concreto. La presidencia de un centro de análisis de política exterior no equivale a dirigir las políticas del Departamento de Estado ni a ejercer autoridad legal sobre gobiernos.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 25,
+        "sourceTitle": "Antecedentes documentales contrastados sobre el episodio de finanzas globales",
+        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1970",
+        "confirmedBy": {
+          "label": "Council on Foreign Relations · Historical Roster of Directors and Officers",
+          "url": "https://www.cfr.org/board-directors"
+        },
+        "relatedTelarana": [
+          "f25-david-rockefeller",
+          "f25-cfr"
+        ],
+        "methodologicalLimits": "Dato histórico documentado mediante la fuente institucional original. Se añade como contexto independiente: no certifica que el invitado lo expusiera con precisión ni valida sus alegaciones sobre supuestas operaciones ocultas o culpabilidades."
+      }
+    },
+    {
       "id": "study-vf150-munich-1972",
       "y": 1972.6775956284152,
       "t": "Ataque contra la delegación israelí en los Juegos Olímpicos de Múnich",
@@ -760,6 +845,34 @@
           "vf150-golda-meir"
         ],
         "methodologicalLimits": "No atribuir actos posteriores de otros actores a los atacantes ni derivar autorías individuales adicionales del comentario del entrevistado."
+      }
+    },
+    {
+      "id": "study-f25-trilateral-1973",
+      "y": 1973,
+      "t": "David Rockefeller funda la Comisión Trilateral",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F25 · contrastes externos sobre instituciones financieras",
+      "d": "La Comisión Trilateral declara en su página histórica que David Rockefeller la fundó en 1973 como foro de responsables empresariales, políticos y académicos de Norteamérica, Europa y Asia. Su fundación está documentada. La intervención en el foro no demuestra, por sí sola, obediencia a órdenes ni subordinación de los gobiernos.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 25,
+        "sourceTitle": "Antecedentes documentales contrastados sobre el episodio de finanzas globales",
+        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1973",
+        "confirmedBy": {
+          "label": "The Trilateral Commission · About Us",
+          "url": "https://www.trilateral.org/about/"
+        },
+        "relatedTelarana": [
+          "f25-david-rockefeller",
+          "f25-trilateral"
+        ],
+        "methodologicalLimits": "Dato histórico documentado mediante la fuente institucional original. Se añade como contexto independiente: no certifica que el invitado lo expusiera con precisión ni valida sus alegaciones sobre supuestas operaciones ocultas o culpabilidades."
       }
     },
     {
@@ -846,6 +959,34 @@
           "f22-marruecos"
         ],
         "methodologicalLimits": "La fecha y la resolución de Naciones Unidas están documentadas. No se asumen afirmaciones sin corroborar sobre negociaciones privadas entre Juan Carlos I y Kissinger, ni sobre un supuesto plan actual para Ceuta o Gibraltar."
+      }
+    },
+    {
+      "id": "study-f25-g30-rockefeller-1978",
+      "y": 1978,
+      "t": "Rockefeller Foundation aporta la subvención fundacional del Group of Thirty",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F25 · contrastes externos sobre instituciones financieras",
+      "d": "El Group of Thirty reconoce que se estableció en 1978 con una subvención de Rockefeller Foundation. El informe anual de 1983 de la fundación confirma el apoyo a la organización en análisis de cooperación monetaria y económica. Es una conexión de financiación documentada, sin implicar propiedad de bancos centrales ni control obligatorio sobre decisiones de política pública.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "sourceOrder": 25,
+        "sourceTitle": "Antecedentes documentales contrastados sobre el episodio de finanzas globales",
+        "sourceUrl": "https://www.youtube.com/watch?v=MTGBx3z8pCI",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1978",
+        "confirmedBy": {
+          "label": "Group of Thirty · FAQ sobre financiación e historia",
+          "url": "https://group30.org/about/faq"
+        },
+        "relatedTelarana": [
+          "usaid-rockefeller-foundation",
+          "f25-g30"
+        ],
+        "methodologicalLimits": "Dato histórico documentado mediante la fuente institucional original. Se añade como contexto independiente: no certifica que el invitado lo expusiera con precisión ni valida sus alegaciones sobre supuestas operaciones ocultas o culpabilidades."
       }
     },
     {
