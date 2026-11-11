@@ -424,6 +424,60 @@ class BridgeTests(unittest.TestCase):
             self.assertNotIn("retry_requested", job)
             self.assertFalse(bridge.launch_queued_retry(state, cfg))
 
+    def test_batch_audit_blocked_only_selected_books_and_never_mutates(self):
+        import argparse
+        import contextlib
+        import io
+        state = {
+            "41": {"phase": "deferred", "notebook": "private-monte-nb",
+                   "request": {"book": "conde-montecristo"}, "before": ["artold00001"]},
+            "63": {"phase": "deferred", "notebook": "private-sapiens-nb",
+                   "request": {"book": "sapiens"}, "before": []},
+            "115": {"phase": "failed", "notebook": "other-nb",
+                    "request": {"book": "sapiens"}, "before": []},
+            "200": {"phase": "uncertain", "notebook": "unrelated-nb",
+                    "request": {"book": "1984"}, "before": []},
+        }
+        copy_state = json.loads(json.dumps(state))
+        output = io.StringIO()
+        args = argparse.Namespace(issue=None, book=["conde-montecristo", "sapiens"])
+        with patch.object(bridge, "load_json", return_value=state), \\
+             patch.object(bridge, "infographic_rows", side_effect=[
+                 [{"id": "artold00001", "status": "3"}],
+                 [{"id": "newart00001", "status": "3"}]]), \\
+             patch.object(bridge, "save_json") as write, \\
+             patch.object(bridge, "command") as generate:
+            with contextlib.redirect_stdout(output):
+                bridge.audit_blocked(args)
+            write.assert_not_called()
+            generate.assert_not_called()
+        self.assertEqual(copy_state, state)
+        message = output.getvalue()
+        self.assertIn("Solicitudes inciertas/aplazadas: 2", message)
+        self.assertIn("con candidatos= 1", message)
+        self.assertIn("sin candidatos= 1", message)
+        self.assertNotIn("private-monte-nb", message)
+        self.assertNotIn("private-sapiens-nb", message)
+        self.assertNotIn("unrelated-nb", message)
+
+    def test_batch_audit_blocked_fails_closed_when_studio_snapshot_is_incomplete(self):
+        import argparse
+        import contextlib
+        import io
+        state = {"41": {"phase": "deferred", "notebook": "private-nb",
+                        "request": {"book": "conde-montecristo"},
+                        "before": ["oldart00001"]}}
+        output = io.StringIO()
+        with patch.object(bridge, "load_json", return_value=state), \\
+             patch.object(bridge, "infographic_rows", return_value=[]), \\
+             patch.object(bridge, "save_json") as write:
+            with contextlib.redirect_stdout(output):
+                bridge.audit_blocked(argparse.Namespace(
+                    issue=None, book=["conde-montecristo"]))
+            write.assert_not_called()
+        self.assertIn("instantánea no verificable= 1", output.getvalue())
+        self.assertIn("NO reintentar", output.getvalue())
+
     def test_blocked_report_does_not_expose_notebook_ids(self):
         state = {
             "160": {"phase": "uncertain", "notebook": "PRIVATE_NOTEBOOK",
