@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 26,
-    "notStarted": 40,
+    "inReview": 27,
+    "notStarted": 39,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -125,8 +125,8 @@
     }
   ],
   "nextSource": {
-    "order": 29,
-    "videoId": "QHGrY87hkUw",
+    "order": 30,
+    "videoId": "F1r5Yeyfcp8",
     "status": "pendiente_de_transcripcion_y_revision_inicial",
     "sourceType": "youtube"
   },
@@ -1050,6 +1050,28 @@
       "publishedAt": "2026-05-02 (iVoox)"
     },
     {
+      "order": 29,
+      "videoId": "QHGrY87hkUw",
+      "title": "Operación: Destruir a Pedro Baños (Parte 1)",
+      "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
+      "publishedAt": "2026-08-20",
+      "status": "en_revision_asr_externo_parcial_y_documentacion_independiente",
+      "reviewComplete": false,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": false,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "sourceNodesDocumented": 16,
+      "sourceRelationsDocumented": 14,
+      "verifiedIndependentChecks": 8,
+      "sourceTimelineVerifiedEventsCommitted": 5,
+      "sourcePrimaryModule": "la-telarana/fuente-29-revision-inicial.js",
+      "editorialDossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
+      "externalASR": "https://podscan.fm/podcasts/el-canal-del-coronel/episodes/operacion-destruir-a-pedro-banos-parte-1",
+      "qualityNotes": "Fuente 29 con transcripción automática externa enlazada, pero sin importación íntegra. Se revisaron 00:00–09:06 (marcadores del proveedor, no audio verificado); tres notas atribuidas a Pedro Baños. Ocho aristas documentales (dos subvenciones representadas como instrumentos distintos, control parlamentario, nombramiento BOE y estructura institucional), seis referencias editoriales. No se da por probada campaña dirigida contra Baños ni se importan a la parte 1 afirmaciones de la parte 3."
+    },
+    {
       "order": 69,
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
@@ -1069,9 +1091,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 89,
+    "committedVerifiedEvents": 94,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 45,
+    "fromSourceInReview": 50,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1199,6 +1221,13 @@
         "study-f28-pov-thiel-vance-2022",
         "study-f28-trump-vance-investidura-2025",
         "study-f28-bessent-senado-2025"
+      ],
+      "29": [
+        "study-f29-ballesteros-dsn-2018",
+        "study-f29-fco-subsidies-2018",
+        "study-f29-commons-integrity-2018",
+        "study-f29-carlson-interview-2026",
+        "study-f29-banos-program-2026"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -2235,18 +2264,28 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 25,
-        "status": "pendiente",
+        "status": "en_revision_asr_externo_parcial_y_documentacion_independiente",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-11",
+          "editorialDossierCreated": true,
+          "editorialDossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
+          "transcriptAvailableExternally": true,
+          "externalTranscriptUrl": "https://podscan.fm/podcasts/el-canal-del-coronel/episodes/operacion-destruir-a-pedro-banos-parte-1",
+          "externalASRExcerptReviewed": "00:00–09:06 (partial, not audio-checked)",
+          "audioVerified": false,
+          "minuteReferencesVerified": 0,
+          "independentlyDocumentedEdges": 8,
+          "editorialMentions": 6,
+          "podcastNotesAttributed": 3
         }
       },
       {
@@ -3520,8 +3559,8 @@
       "uniqueCanonicalSources": 66,
       "duplicateEntries": 3,
       "closedEditorially": 3,
-      "inReview": 26,
-      "canonicalNotStarted": 37,
+      "inReview": 27,
+      "canonicalNotStarted": 36,
       "confirmedASRTranscripts": 22,
       "youtubeCanonicalLackingFullASR": 40,
       "fullTranscriptsAvailableButAudioUnverified": true,
@@ -3529,7 +3568,7 @@
       "report": "CI artifact telarana-auditoria-cobertura-66-fuentes (not deployed publicly)",
       "workflowRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/43053686142",
       "status": "cobertura estructural actualizada, transcripciones pendientes y contraste individual sin completar",
-      "originalCatalogNotStarted": 40,
+      "originalCatalogNotStarted": 39,
       "methodologicalCounts": "counts.notStarted cuenta entradas originales (69 menos cerradas y abiertas); allSourcesCoverageAudit.canonicalNotStarted excluye los tres duplicados. No mezclar ambos denominadores."
     },
     "source26And27Initial": {
@@ -3578,6 +3617,21 @@
       "transcriptAvailable": false,
       "audioVerified": false,
       "methodologicalLimits": "PACs no son cuentas privadas de candidatos. AIPAC PAC y United Democracy Project constituyen estructuras jurídicas distintas. No se prueban coacción, decisiones ocultas ni pagos a Trump por la sola existencia de estas entidades."
+    },
+    "source29Initial": {
+      "date": "2026-11-11",
+      "sourceOrder": 29,
+      "nodesDeclared": 16,
+      "edgesDeclared": 14,
+      "externallyDocumentedEdges": 8,
+      "editorialMentions": 6,
+      "historicalEvents": 5,
+      "externalASRAvailable": true,
+      "privateDossierCreated": true,
+      "fullTranscriptStored": false,
+      "audioVerified": false,
+      "dossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
+      "methodologicalLimits": "Subvenciones británicas FCO/CSSF al Institute for Statecraft documentadas, no prueba de inteligencia clandestina ni acciones ilegales contra Pedro Baños. No se mezclan declaraciones de partes 1 y 3. La identidad de la invitada de Carlson se mantiene pendiente de cotejo."
     }
   }
 }
