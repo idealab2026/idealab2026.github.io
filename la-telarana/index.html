@@ -347,6 +347,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./personas-fuentes-24.js?v=20261110-revision24-1"></script>
 <script src="./usaid-relaciones-documentadas.js?v=20261111-usaid-1"></script>
 <script src="./usaid-programas-financiacion.js?v=20261111-fondos-2"></script>
+<script src="./usaid-rockefeller-antecedentes.js?v=20261111-rockefeller-1"></script>
 <script src="./relaciones-verificadas-hunter.js?v=20261110-evidence-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261110-difuminado-grab-1"></script>
@@ -601,6 +602,7 @@ function load(){
  });
  auditLoadStep("USAID · relaciones institucionales",function(){mergeNewEpisode(window.IDEA_TELARANA_USAID_DOCUMENTED)},Boolean(window.IDEA_TELARANA_USAID_DOCUMENTED));
  auditLoadStep("USAID · programas, financiación y procesos judiciales",function(){mergeNewEpisode(window.IDEA_TELARANA_USAID_PROGRAMAS)},Boolean(window.IDEA_TELARANA_USAID_PROGRAMAS));
+ auditLoadStep("USAID · Rockefeller y antecedentes históricos",function(){mergeNewEpisode(window.IDEA_TELARANA_USAID_ROCKEFELLER)},Boolean(window.IDEA_TELARANA_USAID_ROCKEFELLER));
  auditLoadStep("Relaciones contrastadas · Hunter Biden",function(){
   mergeNewEpisode(window.IDEA_TELARANA_HUNTER_VERIFIED);
  },Boolean(window.IDEA_TELARANA_HUNTER_VERIFIED));
@@ -1022,6 +1024,7 @@ function showPodcastNotes(panel,notes,heading){
 }
 function relationStatusLabel(edge){
  if(isSourceMentionEdge(edge))return "Mención en la fuente";
+ if(edge.claimStatus==="relacion_historica_indirecta")return "Vínculo histórico indirecto";
  if(edge.claimStatus==="hecho_verificado_independiente")return "Contrastada externamente";
  if(edge.confidence==="documentado"&&/youtu(?:be\.com|\.be)/i.test(edge.source||""))return "Afirmada en una fuente";
  return edge.confidence==="documentado"?"Documentada según su fuente":edge.confidence==="indicio"?"Indicio":"Hipótesis";
@@ -1106,8 +1109,9 @@ function showNodeRelationships(panel,node){
   body.append(btn);
  }
  if(node.id==="f21-usaid"){
-  section.append(N("p","Expediente por categorías: contratos, subvenciones, programas y controles. Una lista oficial de socios no prueba participación en irregularidades.","relations-explainer"));
+  section.append(N("p","Expediente por categorías: antecedentes históricos, contratos, subvenciones, programas y controles. Los antecedentes institucionales de 1942–1951 no implican propiedad ni financiación de USAID por Rockefeller.","relations-explainer"));
   var groups=[
+   ["Historia, antecedentes y Rockefeller",/^(Antecedente hist[oó]rico|Antecedente operativo|Precedente program[aá]tico|Antecesora administrativa|Creaci[oó]n institucional)/i],
    ["Contratación y contratistas",/^(Contrataci[oó]n|Contrato|Relaci[oó]n laboral)/i],
    ["Subvenciones y organismos receptores",/^(Financiaci[oó]n y asistencia|Asociaci[oó]n multilateral|Cooperaci[oó]n con organismo|Subvenci[oó]n)/i],
    ["Programas, territorios y ejecución",/^(Programa|Gestión financiera|Beneficiario territorial|Agencia ejecutora|Organigrama)/i],
