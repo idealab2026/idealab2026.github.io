@@ -20,7 +20,16 @@
       },
       "sources": {
         "17": [
-          "En la entrevista defiende que la política exterior sea una política de Estado, critica decisiones recientes del Gobierno español y reflexiona sobre la posición de España en la Unión Europea, la OTAN y Marruecos."
+          {
+            "topic": "Política exterior como asunto de Estado",
+            "speaker": "José Manuel García-Margallo (fragmento de presentación; audio pendiente)",
+            "statement": "García-Margallo sostiene que España debe formular la política exterior como una política de Estado apoyada en un interés nacional estable, y critica que los cambios de gobierno alteren las prioridades diplomáticas. Es su diagnóstico político en la entrevista, no una conclusión institucional sobre la acción exterior española.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "política exterior es una política de estado y lo que tiene que preva"
+          }
         ]
       }
     },
@@ -32,7 +41,16 @@
       },
       "sources": {
         "17": [
-          "García-Margallo critica en la entrevista su política exterior, en particular su relación con Marruecos, su actitud respecto a Estados Unidos y sus posiciones en las instituciones europeas."
+          {
+            "topic": "Crítica al uso interno de la política exterior",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "El antiguo ministro atribuye a Pedro Sánchez la intención de utilizar su oposición a Donald Trump y determinadas posiciones internacionales para obtener beneficios electorales. Esa imputación de motivaciones pertenece al análisis político de García-Margallo; el episodio no aporta documentación que demuestre la intención privada que atribuye al presidente.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "pedro Sánchez tiene una única obsesión mantenerse en la Moncloa para"
+          }
         ]
       }
     },
@@ -44,7 +62,16 @@
       },
       "sources": {
         "17": [
-          "García-Margallo sostiene que sus decisiones comerciales y de política exterior condicionan a los países europeos y presenta una valoración crítica de la negociación económica transatlántica."
+          {
+            "topic": "Capacidad de Estados Unidos para influir en la seguridad europea",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "García-Margallo argumenta que la seguridad de las fronteras orientales de Europa depende en buena medida de decisiones de Washington y Moscú. Menciona a Trump como una figura decisiva para la negociación con Rusia y critica la escasa capacidad europea para determinar acuerdos que afectan directamente a sus intereses. Se trata de una interpretación geopolítica del entrevistado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Trump y Putin y que el diseño de Oriente próximo lo definen todo el "
+          }
         ]
       }
     },
@@ -56,7 +83,16 @@
       },
       "sources": {
         "17": [
-          "El entrevistado lo menciona junto a Trump al analizar la capacidad de Estados Unidos y Rusia para condicionar el futuro de la seguridad de Europa oriental."
+          {
+            "topic": "Negociaciones de seguridad en Europa oriental",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "Al describir las reuniones europeas, García-Margallo afirma que Trump y Putin condicionan las decisiones sobre las fronteras orientales del continente. Utiliza esa afirmación para reclamar más coordinación política de la Unión Europea. La frase refleja su valoración sobre el reparto del poder negociador, sin demostrar la existencia de un acuerdo bilateral específico entre esos dirigentes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "nuestras fronteras orientales las deciden Trump y Putin y que el dis"
+          }
         ]
       }
     },
@@ -68,7 +104,16 @@
       },
       "sources": {
         "17": [
-          "García-Margallo presenta su interpretación de los resultados estratégicos de Israel en Oriente Medio y del deterioro de la relación diplomática entre Israel y España."
+          {
+            "topic": "Valoración de los resultados estratégicos de Israel",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "García-Margallo sostiene que Israel ha obtenido ventajas militares y estratégicas frente a organizaciones aliadas de Irán y menciona al Gobierno de Benjamin Netanyahu al describir ese balance. Separa ese análisis de sus críticas a las relaciones diplomáticas entre Israel y España. Las valoraciones sobre quién ha ganado el conflicto son una opinión del entrevistado y requieren datos independientes.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "yo creo que que eso eh quien ha ganado de verdad la guerra y quien e"
+          }
         ]
       }
     },
@@ -80,7 +125,16 @@
       },
       "sources": {
         "17": [
-          "El entrevistado le atribuye decisiones sobre la respuesta estadounidense al empleo de armas químicas en Siria, dentro de su repaso de crisis internacionales vividas como ministro."
+          {
+            "topic": "Respuesta estadounidense a la crisis siria",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "Al recordar las crisis internacionales de su etapa ministerial, García-Margallo comenta que Barack Obama anunció consecuencias militares si el régimen sirio utilizaba armas químicas, y critica la posterior actuación estadounidense. La interpretación de que Occidente perdió aquella crisis corresponde al exministro y no sustituye una cronología cotejada de las decisiones sobre Siria.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "la primera gran batalla que pierde Obama dice que le dice a pasar al"
+          }
         ]
       }
     },
@@ -92,7 +146,16 @@
       },
       "sources": {
         "17": [
-          "García-Margallo menciona su participación, como jefe del Gobierno, en reuniones europeas sobre interconexiones energéticas celebradas durante su etapa ministerial."
+          {
+            "topic": "Interconexiones energéticas europeas en 2015",
+            "speaker": "José Manuel García-Margallo (relato de su etapa ministerial)",
+            "statement": "García-Margallo recuerda una reunión celebrada en Madrid en 2015 en la que participaron Mariano Rajoy y representantes de Francia, Portugal y la Comisión Europea para abordar el incremento de interconexiones energéticas. Utiliza ese recuerdo para defender una mayor conexión entre la red española y el resto del continente. La reunión se registra como testimonio hasta cotejar el acta oficial.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "reunimos en Madrid al presidente Rajoy presidente Orlán francés a al"
+          }
         ]
       }
     },
@@ -104,7 +167,16 @@
       },
       "sources": {
         "17": [
-          "La entrevista lo sitúa en una reunión de responsables europeos sobre interconexiones energéticas con España; su apellido aparece deformado en el reconocimiento automático."
+          {
+            "topic": "Representación francesa en reunión energética de 2015",
+            "speaker": "José Manuel García-Margallo (relato de su etapa ministerial)",
+            "statement": "El entrevistado menciona a un presidente francés transcrito fonéticamente como «Orlán» al enumerar a los asistentes a una reunión de 2015 con Rajoy sobre conexiones energéticas. El cargo y la fecha apuntan a François Hollande, pero se conserva la cautela por la transcripción automática. No deben deducirse compromisos concretos sin localizar la declaración oficial de aquella reunión.",
+            "status": "identidad_pendiente",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "presidente Orlán francés a al primer ministro portugués al president"
+          }
         ]
       }
     },
@@ -116,7 +188,16 @@
       },
       "sources": {
         "17": [
-          "García-Margallo lo menciona como uno de los asistentes a una reunión de 2015 sobre la conectividad energética entre España y el resto de Europa."
+          {
+            "topic": "Participación de la Comisión Europea en reunión energética",
+            "speaker": "José Manuel García-Margallo (relato de su etapa ministerial)",
+            "statement": "En su recuerdo de la reunión energética de Madrid de 2015, García-Margallo cita al entonces presidente de la Comisión Europea, cuyo apellido aparece como «Junker» en el ASR, identificable contextualmente con Jean-Claude Juncker. El objetivo que describe era reforzar las interconexiones entre España y sus vecinos; el alcance de los acuerdos requiere una fuente institucional.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "presidente de la comisión que era Junker y al comisario que era Migu"
+          }
         ]
       }
     },
@@ -128,7 +209,16 @@
       },
       "sources": {
         "17": [
-          "García-Margallo lo cita como comisario que participó en los contactos europeos para aumentar las interconexiones energéticas de España."
+          {
+            "topic": "Papel del comisario europeo en interconexiones energéticas",
+            "speaker": "José Manuel García-Margallo (relato de su etapa ministerial)",
+            "statement": "García-Margallo enumera entre los asistentes a la reunión energética de Madrid de 2015 al comisario que identifica como Miguel Arias, referencia a Miguel Arias Cañete. Presenta aquel encuentro como un impulso a la conectividad energética y a la reducción del aislamiento de la red española. La composición y los compromisos de la reunión deben comprobarse con documentos oficiales.",
+            "status": "declaracion_de_parte",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "comisario que era Miguel Arias y decidimos aumentar esa interconexió"
+          }
         ]
       }
     },
@@ -140,7 +230,16 @@
       },
       "sources": {
         "17": [
-          "El entrevistado critica su interlocución con Donald Trump en una negociación comercial, que presenta como señal de debilidad europea."
+          {
+            "topic": "Crítica a las negociaciones comerciales entre la UE y Estados Unidos",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "El exministro relata una negociación comercial de Donald Trump con la Comisión Europea y critica la posición de Ursula von der Leyen, cuyo nombre aparece deformado en el ASR. Menciona aranceles, inversiones y compras de energía como elementos del acuerdo que describe. Las cifras y condiciones expuestas requieren cotejo documental; su juicio sobre una supuesta humillación europea es una valoración personal.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "llamó a Ursula Vaner Legend que estaba allí con su bolsito oyendo qu"
+          }
         ]
       }
     },
@@ -152,7 +251,16 @@
       },
       "sources": {
         "17": [
-          "La fuente lo menciona al reconstruir la aproximación diplomática entre China y Estados Unidos durante la Presidencia de Richard Nixon, con referencias a Taiwán."
+          {
+            "topic": "China, Taiwán y acercamiento diplomático con Estados Unidos",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "García-Margallo menciona los contactos entre Mao Zedong, Richard Nixon y Henry Kissinger para explicar la evolución de la cuestión de Taiwán. En su exposición mezcla el giro diplomático de comienzos de los años setenta con el reconocimiento estadounidense de la República Popular China, que formalmente se produjo en 1979; la fecha citada no debe publicarse como dato histórico verificado.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "Mao Setun y Nixon yo creo que en 1971 Estados Unidos reconoce a la R"
+          }
         ]
       }
     },
@@ -164,7 +272,16 @@
       },
       "sources": {
         "17": [
-          "García-Margallo cita sus conversaciones con líderes chinos y la evolución del reconocimiento internacional de la República Popular China al analizar Taiwán."
+          {
+            "topic": "Acercamiento de Nixon a China y cuestión de Taiwán",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "El entrevistado recuerda el acercamiento de Richard Nixon a China y el papel de Kissinger en las conversaciones con dirigentes chinos. Utiliza ese episodio para analizar la disputa por Taiwán y sostiene que Pekín sigue calendarios estratégicos diferentes a los occidentales. La cronología mencionada en el programa es imprecisa y necesita cotejo con fuentes diplomáticas primarias.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando Nixon y Mao se entienden con Kissinger eh ese la representaci"
+          }
         ]
       }
     },
@@ -176,7 +293,16 @@
       },
       "sources": {
         "17": [
-          "La entrevista lo menciona por su papel en la apertura de relaciones entre Estados Unidos y la República Popular China durante la Presidencia de Nixon."
+          {
+            "topic": "Mediación diplomática durante el acercamiento sinoestadounidense",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "García-Margallo atribuye a Henry Kissinger un papel en el entendimiento entre las administraciones de Nixon y Mao sobre China y la representación internacional de Taiwán. Es una referencia histórica dentro de un análisis geopolítico actual; la fuente confunde parcialmente acontecimientos de 1971-1972 con el reconocimiento bilateral de 1979, de modo que no se valida su cronología literal.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "cuando Nixon y Mao se entienden con Kissinger eh ese la representaci"
+          }
         ]
       }
     },
@@ -188,7 +314,16 @@
       },
       "sources": {
         "17": [
-          "El entrevistado lo utiliza para ilustrar su crítica a algunas propuestas de partidos populistas europeos en materia migratoria y de política de la Unión."
+          {
+            "topic": "Crítica a las soluciones migratorias de partidos populistas",
+            "speaker": "José Manuel García-Margallo (atribución contextual; audio pendiente)",
+            "statement": "Durante el debate migratorio, García-Margallo alude a Viktor Orbán y afirma que determinados partidos populistas diagnostican problemas reales, pero proponen respuestas que considera insuficientes. Introduce esa referencia al explicar la complejidad de las políticas de acogida y control de fronteras de la Unión Europea. El contenido es una opinión del entrevistado, no una caracterización objetiva de todos esos partidos.",
+            "status": "opinion_atribuida",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "transcriptAnchor": "lo que hacía Orban es decir los partidos populistas dan diagnostican"
+          }
         ]
       }
     }
