@@ -50,6 +50,8 @@ for(const order of Object.keys(ctx.window.IDEA_TELARANA_PERSON_SOURCE_REPORTS?.s
  assert.equal(matching.length,1,"Debe existir exactamente una etapa de perfiles para fuente "+order);
  assert(matching[0].available,"No se han cargado los perfiles de fuente "+order);
 }
+const usaPhase=audit.find(x=>x.label==="USAID · programas, financiación y procesos judiciales");
+assert(usaPhase?.available&&usaPhase.edges===41,"El importador descartó aristas USAID: "+JSON.stringify(usaPhase));
 const summary=audit.reduce((n,r)=>n+r.added,0);
 assert.equal(summary,ctx.data.nodes.length,"Las altas de cada etapa no cuadran con el total");
 const ids=new Set(ctx.data.nodes.map(n=>n.id));
