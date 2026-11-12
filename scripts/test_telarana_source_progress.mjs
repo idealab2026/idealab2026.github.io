@@ -57,8 +57,9 @@ for(const e of rows){
        "F"+e.order+": la ficha afirma transcripción completa, pero el catálogo la desmiente");
    }
    if(t.transcriptContentImported!==true){
-     assert(review.transcriptDocHasFullText!==true&&review.rawTranscriptAvailable!==true,
-       "F"+e.order+": transcripción parcial declarada íntegra");
+     assert(review.transcriptDocHasFullText!==true&&
+       (review.rawTranscriptAvailable!==true||t.timecodedTranscriptStoredInDrive===true),
+       "F"+e.order+": expediente anterior parcial confundido con TXT minutado");
    }
  }
 }
@@ -126,4 +127,25 @@ for(const name of ["fuente-18-epstein-lorenzo-editorial.js","fuente-21-orden-mun
  assert(page.includes(name),"Falta importar fuente: "+name);
  assert(workflow.includes("cp la-telarana/"+name),"Falta fuente en la distribución pública: "+name);
 }
+// Nueva vía documental: TXT con minutajes en Drive, sin reemplazar ni dar por íntegro el Google Doc anterior.
+const timed=rows.filter(e=>e.tracking?.timecodedTranscriptStoredInDrive===true);
+assert.equal(timed.length,28,"Se esperan 28 vídeos únicos con TXT minutado en Drive");
+assert.equal(new Set(timed.map(e=>e.videoId)).size,28,"Transcripciones minutadas duplicadas");
+for(const e of timed){
+ const t=e.tracking;
+ assert(e.duplicateOf===null&&t.timecodedTranscriptContentImported===true,
+  "F"+e.order+": TXT minutado no vinculado a fuente canónica");
+ assert(t.timecodedTranscriptBytes>10000&&t.timecodedTranscriptSegments>100,
+  "F"+e.order+": no hay respaldo suficiente de TXT/segmentos");
+ assert(t.timecodedTranscriptAudioVerified===false&&t.complete===Boolean(reviewed.has(e.order)),
+  "F"+e.order+": se ha confundido recuperación con cierre editorial");
+}
+for(const i of [8,26,27,28,29,30,31]){
+ const e=rows.find(x=>x.order===i);
+ assert(e.tracking.timecodedTranscriptReadbackVerified&&e.tracking.timecodedTranscriptCharactersReadBack>10000,
+  "F"+i+": falta lectura de vuelta del TXT en Drive");
+}
+assert(inReview.has(31)&&page.includes('fuente-31-revision-inicial.js')&&
+ workflow.includes('cp la-telarana/fuente-31-revision-inicial.js dist/'),
+ "F31 debe figurar abierta y distribuida en Pages");
 console.log("OK: 69 fuentes, "+reviewed.size+" revisadas, "+inReview.size+" en revisión; textos controlados y seguimiento fuera del sitio");
