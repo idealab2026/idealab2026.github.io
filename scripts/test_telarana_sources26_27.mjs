@@ -13,8 +13,8 @@ let documented=0,mentions=0;
 for(const [index,mod] of mods.entries()){
  const order=index+26;
  assert.equal(mod.metadata.sourceOrder,order);
- assert(mod.metadata.transcriptAvailable===false&&mod.metadata.audioVerified===false&&mod.metadata.verifiedMinuteReferences===0,
-  "No fingir transcripción ni minutajes de F"+order);
+ assert(mod.metadata.transcriptAvailable===true&&mod.metadata.audioVerified===false&&mod.metadata.verifiedMinuteReferences===0,
+  "F"+order+": subtítulos recuperados no deben equipararse a audio cotejado");
  assert(mod.metadata.methodologicalNote.length>100);
  const ids=new Set(mod.nodes.map(n=>n.id));
  assert.equal(ids.size,mod.nodes.length,"IDs duplicados dentro de fuente "+order);
@@ -28,7 +28,8 @@ for(const [index,mod] of mods.entries()){
    assert(e.claimStatus==="mencion_editorial_no_equivale_a_relacion_sustantiva"&&e.confidence==="hipotesis","Mención convertida en vínculo sin prueba "+e.id);
   }
  }
- assert(mod.nodes.every(n=>(n.podcastNotes||[]).length===0),"No crear declaraciones literales sin transcripción");
+ assert(mod.nodes.flatMap(n=>n.podcastNotes||[]).filter(n=>Number.isFinite(n.timeSec)).length===2,
+  "F"+order+": dos referencias minutadas atribuidas, sin presumir autenticidad");
 }
 assert.equal(mods[0].nodes.length,5);assert.equal(mods[0].edges.length,4);
 assert.equal(mods[1].nodes.length,8);assert.equal(mods[1].edges.length,8);
@@ -57,11 +58,14 @@ for(const i of [26,27]){
  const row=prog.sourceCatalog.entries.find(x=>x.order===i);
  assert(row.tracking.inReview&&row.tracking.initiated&&!row.tracking.complete,
   "Fuente nueva no abierta o cerrada indebidamente");
- assert(!row.tracking.transcriptContentImported&&!row.tracking.docTranscriptionCreated,"Transcripción no archivada "+i);
+ assert(!row.tracking.transcriptContentImported&&!row.tracking.docTranscriptionCreated,
+  "Conservar estado del expediente Google Doc anterior F"+i);
+ assert(row.tracking.timecodedTranscriptStoredInDrive&&row.tracking.timecodedTranscriptReadbackVerified&&
+  Number(row.tracking.timecodedTranscriptCharactersReadBack)>10000,"TXT con minutajes no importado/validado F"+i);
 }
 for(const id of ["study-f27-ukr-blackrock-mou-2022","study-f27-ukr-blackrock-udf-2023","study-f26-eu-ai-act-vigor-2024"]){
  const x=hist.items.find(x=>x.id===id);
  assert(x?.investigation.status==="hecho_documentado"&&x.investigation.confirmedBy.url.startsWith("https://"),
   "Hito no sustentado por fuente oficial "+id);
 }
-console.log("OK F26/27: 5 relaciones contextuales documentadas, 7 menciones editoriales, 3 hitos; ninguna transcripción fingida.");
+console.log("OK F26/27: 5 relaciones documentales, 7 menciones, 3 hitos y 4 notas minutadas; TXT verificados sin audio cotejado.");
