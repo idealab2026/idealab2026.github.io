@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-11-12",
+  "generated": "2026-11-10",
   "note": "Las vinculaciones son referencias geográficas a países o territorios actuales, no equivalentes a fronteras históricas. Clasificación incompleta; contexto histórico orientativo requiere revisión.",
   "source": "Archivo cronológico IDEA LAB · menciones textuales + asociaciones históricas orientativas",
   "links": {
@@ -3953,14 +3953,6 @@
         "FRA"
       ],
       "basis": "mención ficha original"
-    },
-    "study-f08-carvajal-declaracion-culpabilidad-2025": {
-      "p": [
-        "USA",
-        "VEN"
-      ],
-      "basis": "hecho judicial de Estados Unidos sobre exfuncionario venezolano, confirmado por fuente fiscal",
-      "titleText": "Hugo Carvajal se declara culpable ante tribunal federal · 25/06/2025"
     }
   }
 }
