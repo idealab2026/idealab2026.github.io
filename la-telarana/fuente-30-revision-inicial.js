@@ -7,13 +7,18 @@ window.IDEA_TELARANA_F30_REVIEW = {
     "url": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
     "publishedAt": "2022-02-17",
     "duration": "02:39:59",
-    "reviewStage": "sinopsis_editorial_y_contexto_historico_primario_transcripcion_pendiente",
-    "transcriptAvailable": false,
+    "reviewStage": "transcripcion_con_minutajes_recuperada_revision_editorial_en_curso",
+    "transcriptAvailable": true,
     "audioVerified": false,
     "minuteVerified": false,
-    "transcriptFullTextPreserved": false,
+    "transcriptFullTextPreserved": true,
     "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
-    "methodologicalNote": "Fecha editorial 17/02/2022. Se distinguen 7 menciones de la sinopsis, antecedentes documentados 2015–26/01/2022 y hechos posteriores 24/02/2022 y 29/06/2022. No se atribuyen declaraciones exactas, predicciones ni delitos a Pedro Baños sin transcripción completa y audio cotejado. El vínculo Soros–OSF es institucional, no una prueba de control geopolítico."
+    "methodologicalNote": "El episodio ya dispone de subtítulos automáticos con códigos de tiempo (F30, 4.462 segmentos hasta 02:40:01), conservados en Drive institucional. No están cotejados con el audio; distinguir declaraciones durante el programa del contexto histórico posterior. Los datos externos ya publicados y sus enlaces conservan su procedencia independiente; ninguna acusación queda acreditada por los subtítulos.",
+    "fullTranscriptPreservedInDrive": true,
+    "transcriptFormat": "youtube_caption_segments_with_timestamps",
+    "transcriptSegments": 4462,
+    "transcriptLastTimestamp": "02:40:01",
+    "transcriptVerifiedByAudio": false
   },
   "nodes": [
     {
@@ -21,7 +26,7 @@ window.IDEA_TELARANA_F30_REVIEW = {
       "name": "The Wild Project #116 · Pedro Baños · 17/02/2022",
       "kind": "Fuente",
       "subtitle": "Entrevista preinvasión rusa · Jordi Wild",
-      "note": "Entrevista de 17 de febrero de 2022 con Pedro Baños, de unas 2 horas y 40 minutos. La sinopsis cita Ucrania, Estados Unidos, Rusia, China, el riesgo de guerra y George Soros. No hay transcripción completa ni audio cotejado; ninguna cita, profecía o imputación concreta se atribuye al invitado.",
+      "note": "El episodio ya dispone de subtítulos automáticos con códigos de tiempo (F30, 4.462 segmentos hasta 02:40:01), conservados en Drive institucional. No están cotejados con el audio; distinguir declaraciones durante el programa del contexto histórico posterior.",
       "source": "https://podcasts.apple.com/es/podcast/the-wild-project-116-ft-pedro-ba%C3%B1os-usa-vs-rusia-vs/id1501968107?i=1000551434233",
       "photo": "",
       "topic3d": "global",
@@ -79,7 +84,17 @@ window.IDEA_TELARANA_F30_REVIEW = {
       "topic3d": "global",
       "x": 12260,
       "y": 4500,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f30-twp116-20220217",
+          "title": "F30 · Putin y el giro de política rusa · 08:34",
+          "source": "https://www.youtube.com/watch?v=F1r5Yeyfcp8&t=514s",
+          "publishedAt": "2022-02-17",
+          "timeSec": 514,
+          "status": "interpretacion_atribuida",
+          "text": "Pedro Baños sitúa en torno a la llegada de Putin a la presidencia en 2000 un giro de Rusia hacia la recuperación de influencia exterior. Se presenta como interpretación del invitado, no como deducción probatoria independiente."
+        }
+      ]
     },
     {
       "id": "f30-ukraine",
@@ -118,7 +133,17 @@ window.IDEA_TELARANA_F30_REVIEW = {
       "topic3d": "global",
       "x": 11780,
       "y": 4705,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f30-twp116-20220217",
+          "title": "F30 · Ampliación de la OTAN · 11:02",
+          "source": "https://www.youtube.com/watch?v=F1r5Yeyfcp8&t=662s",
+          "publishedAt": "2022-02-17",
+          "timeSec": 662,
+          "status": "interpretacion_atribuida",
+          "text": "En la entrevista se comenta la ampliación de la OTAN desde 1991 y su proximidad a Rusia. Las cifras y causalidades expresadas en el episodio no han sido cotejadas con fuentes estadísticas en esta revisión."
+        }
+      ]
     },
     {
       "id": "f30-osce",
@@ -144,7 +169,17 @@ window.IDEA_TELARANA_F30_REVIEW = {
       "topic3d": "global",
       "x": 12260,
       "y": 4705,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f30-twp116-20220217",
+          "title": "F30 · Acuerdos de Minsk · 18:09",
+          "source": "https://www.youtube.com/watch?v=F1r5Yeyfcp8&t=1089s",
+          "publishedAt": "2022-02-17",
+          "timeSec": 1089,
+          "status": "mencion_historica_cronometrada",
+          "text": "La conversación menciona los acuerdos de Minsk de 2014 y 2015 y el formato de negociación entre Ucrania, Rusia, Francia y Alemania. El minuto localiza la referencia oral; la datación histórica procede de la documentación independiente de la cronología."
+        }
+      ]
     },
     {
       "id": "f30-unscr",
@@ -183,7 +218,17 @@ window.IDEA_TELARANA_F30_REVIEW = {
       "topic3d": "global",
       "x": 11780,
       "y": 4910,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f30-twp116-20220217",
+          "title": "F30 · George Soros y el Maidán · 1:00:16",
+          "source": "https://www.youtube.com/watch?v=F1r5Yeyfcp8&t=3616s",
+          "publishedAt": "2022-02-17",
+          "timeSec": 3616,
+          "status": "alegacion_atribuida_no_verificada",
+          "text": "En la entrevista se afirma que George Soros habría participado en el Maidán y se alude a supuestos documentos desclasificados. Los subtítulos no acreditan tal relación causal; queda exclusivamente como afirmación atribuida a la conversación."
+        }
+      ]
     },
     {
       "id": "on-open-society",
