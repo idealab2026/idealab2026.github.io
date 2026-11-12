@@ -548,7 +548,17 @@ window.IDEA_TELARANA_SOURCE06_PODCAST = {
       "note": "El vídeo recoge una acusación de Villarejo sobre la posible intervención de servicios extranjeros en el 11-M. No se trazan conexiones directas con agencias, gobiernos ni personas supuestamente responsables; el pasaje no cumple el estándar documental para ellas.",
       "source": "https://www.youtube.com/watch?v=fxvXXVrkRb4&t=11937s",
       "episodeId": "wild-project-253-villarejo-2024",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "wild-project-253-villarejo-2024",
+          "title": "F06 · Enlace de mención al 11-M · 03:18:57",
+          "timeSec": 11937,
+          "source": "https://www.youtube.com/watch?v=fxvXXVrkRb4&t=11937s",
+          "publishedAt": "2024-01-04",
+          "status": "mencion_no_vinculo_causal",
+          "text": "Este enlace identifica que el episodio trata el 11-M, no que una institución extranjera participase en los atentados. Las acusaciones de Villarejo carecen de corroboración independiente en el pasaje."
+        }
+      ]
     },
     {
       "id": "twp253-edge-javier-topic",
@@ -560,7 +570,17 @@ window.IDEA_TELARANA_SOURCE06_PODCAST = {
       "note": "Villarejo relata una historia que involucra a Javier de la Rosa y al Pequeño Nicolás. No se representa una relación entre ambas personas como documentada a partir de esta entrevista; es una mención del testigo.",
       "source": "https://www.youtube.com/watch?v=fxvXXVrkRb4&t=7000s",
       "episodeId": "wild-project-253-villarejo-2024",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "wild-project-253-villarejo-2024",
+          "title": "F06 · Javier de la Rosa citado en el relato · 01:56:40",
+          "timeSec": 7000,
+          "source": "https://www.youtube.com/watch?v=fxvXXVrkRb4&t=7000s",
+          "publishedAt": "2024-01-04",
+          "status": "mencion_no_vinculo_causal",
+          "text": "La entrevista menciona a Javier de la Rosa en una narración de Villarejo sobre el Pequeño Nicolás; no se establece como hecho una relación económica o criminal entre terceros mencionados."
+        }
+      ]
     }
   ]
 };
