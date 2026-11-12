@@ -508,3 +508,61 @@ concluyente que una generación remota anterior no vaya a completarse más tarde
 ni consultar de forma infalible la cuota real. Las dos afirmaciones del
 comentario son confirmaciones conscientes de quien autoriza el intento.
 Sin ese comentario, el modo autorizado solo concilia y descarga.
+
+## Lotes de nuevas infografías con autorización GitHub
+
+Para continuar con los capítulos pendientes sin introducir comandos por
+capítulo, se ha añadido el centro de control público
+[GitHub #242](https://github.com/idealab2026/idealab2026.github.io/issues/242).
+Este centro **no guarda cookies ni datos de fuentes**, solo permisos acotados
+por libro y firmados con la identidad de GitHub de la cuenta IDEA LAB.
+
+Un comentario autorizado tiene **exactamente** este formato de tres líneas:
+
+```text
+IDEA_LAB_NLM_BATCH_V1
+book=conde-montecristo
+max_generations=5
+```
+
+La autorización dura siete días, consume hasta **cinco primeras solicitudes
+nuevas** y se aplica únicamente a ese libro. El agente `poll-authorized`
+reconcilia los envíos anteriores y, si no hay trabajos activos, busca la
+primera solicitud elegible del libro. Antes de enviar comprueba:
+
+- Que la solicitud está en el catálogo oficial de la Biblioteca y se ha
+  abierto después de activar el puente en el Mac.
+- Que el cuaderno y las fuentes concretas están vinculados localmente.
+- Que su cuaderno no contiene solicitudes `deferred`, `uncertain` o
+  `failed`. En particular, nunca desbloquea #101, #201 ni #225.
+- Que no hay una generación activa, una pausa de seguridad ni un reintento
+  pendiente en otro cuaderno.
+- Que Studio no muestra infografías todavía en curso o de estado desconocido.
+- Que GitHub no indica ya un envío anterior de esa misma incidencia.
+
+Se conserva un identificador de autorización en el estado LOCAL **antes**
+de enviar a NotebookLM para evitar repeticiones por caída de red o del Mac.
+No hay generación sin permiso; una aprobación que expira no se ejecuta.
+No hay subidas automáticas de PNG a GitHub ni publicaciones sin revisión.
+
+**Activación:** quienes ya tengan el agente `install-authorized` solo
+necesitan actualizar el código local una vez, sin reinstalar el agente:
+
+```bash
+cd ~/Developer/idea-lab-web
+git pull --ff-only
+python3 scripts/test_notebooklm_bridge.py -q
+```
+
+El agente existente cargará el código actualizado en su próximo ciclo,
+si el Mac está despierto y se ha iniciado sesión. Para volver al modo
+estrictamente de lectura y descarga, ejecutar:
+
+```bash
+python3 scripts/notebooklm_bridge_launchd.py install-reconcile
+```
+
+La cuota de NotebookLM no puede certificarse previamente. Una autorización
+no equivale a garantía de éxito: cualquier fallo o resultado incierto queda
+registrado, sin reintentos de generación automáticos. Revisar la situación
+de la cuota antes de autorizar nuevos lotes.
