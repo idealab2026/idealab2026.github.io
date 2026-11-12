@@ -1033,10 +1033,12 @@ class BridgeTests(unittest.TestCase):
              patch.object(bridge, "load_json", return_value=state), \
              patch.object(bridge, "generation_health", return_value={"paused": False}), \
              patch.object(bridge, "github_recovery_approvals") as approvals, \
-             patch.object(bridge, "recover_blocked") as recover:
+             patch.object(bridge, "recover_blocked") as recover, \
+             patch.object(bridge, "launch_authorized_batch") as batches:
             bridge.poll_authorized()
             approvals.assert_not_called()
             recover.assert_not_called()
+            batches.assert_not_called()
 
     def test_authorized_poll_does_not_replay_or_recover_held_issue(self):
         state = {
@@ -1048,10 +1050,12 @@ class BridgeTests(unittest.TestCase):
              patch.object(bridge, "load_json", return_value=state), \
              patch.object(bridge, "generation_health", return_value={"paused": False}), \
              patch.object(bridge, "github_recovery_approvals") as approvals, \
-             patch.object(bridge, "recover_blocked") as recover:
+             patch.object(bridge, "recover_blocked") as recover, \
+             patch.object(bridge, "launch_authorized_batch") as batches:
             bridge.poll_authorized()
             approvals.assert_not_called()
             recover.assert_not_called()
+            batches.assert_called_once_with(state)
 
     def test_authorized_recovery_persists_approval_before_network_launch(self):
         import argparse
@@ -1093,6 +1097,107 @@ class BridgeTests(unittest.TestCase):
                          "ProgramArguments"][-1], "poll-authorized")
         self.assertEqual(launchd.agent_config("reconcile-only")[
                          "ProgramArguments"][-1], "reconcile-only")
+
+
+    def test_batch_approval_requires_official_author_fresh_unedited_comment(self):
+        now = dt.datetime(2026, 11, 12, 18, tzinfo=dt.timezone.utc)
+        created = (now - dt.timedelta(minutes=5)).isoformat().replace("+00:00", "Z")
+        sample = {
+            "id": 654321, "user": {"id": 350414243, "login": "idealab2026"},
+            "body": bridge.batch_approval_body("conde-montecristo"),
+            "created_at": created, "updated_at": created,
+        }
+        with patch.object(bridge, "command", return_value=json.dumps([sample])):
+            self.assertEqual(bridge.github_batch_approvals(now),
+                             [("conde-montecristo", 654321)])
+        for variant in [
+            dict(sample, user={"id": 350414243, "login": "impostor"}),
+            dict(sample, user={"id": 111, "login": "idealab2026"}),
+            dict(sample, body=sample["body"] + "\nexecute=anything"),
+            dict(sample, body=sample["body"].replace("max_generations=5",
+                                                  "max_generations=50")),
+            dict(sample, updated_at=now.isoformat()),
+            dict(sample, created_at=(now - dt.timedelta(days=8)).isoformat(),
+                 updated_at=(now - dt.timedelta(days=8)).isoformat()),
+            dict(sample, id=True),
+        ]:
+            with self.subTest(variant=variant):
+                with patch.object(bridge, "command",
+                                  return_value=json.dumps([variant])):
+                    self.assertEqual(bridge.github_batch_approvals(now), [])
+        with patch.object(bridge, "command", return_value=json.dumps([{}] * 100)):
+            with self.assertRaisesRegex(RuntimeError, "historial"):
+                bridge.github_batch_approvals(now)
+
+    def test_authorized_batch_respects_five_attempt_limit(self):
+        state = {"42": {"github_batch_comment_id": 654321},
+                 "43": {"github_batch_comment_id": 654321}}
+        with patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "github_batch_approvals",
+                          return_value=[("conde-montecristo", 654321)]), \
+             patch.object(bridge, "safe_queue_candidate",
+                          return_value=("86", request(vid=VIDEO))) as choose, \
+             patch.object(bridge, "request_new", return_value=True) as launch:
+            self.assertTrue(bridge.launch_authorized_batch(state))
+            choose.assert_called_once()
+            self.assertEqual(launch.call_args.kwargs["batch_comment_id"], 654321)
+            self.assertEqual(launch.call_args.args[0], "86")
+        for n in range(5):
+            state[str(n)] = {"github_batch_comment_id": 654321}
+        with patch.object(bridge, "private_config", return_value={}), \
+             patch.object(bridge, "github_batch_approvals",
+                          return_value=[("conde-montecristo", 654321)]), \
+             patch.object(bridge, "safe_queue_candidate") as choose, \
+             patch.object(bridge, "request_new") as launch:
+            self.assertFalse(bridge.launch_authorized_batch(state))
+            choose.assert_not_called()
+            launch.assert_not_called()
+
+    def test_authorized_batch_fails_closed_on_unfinished_studio_artifact(self):
+        state = {}
+        with patch.object(bridge, "select_mapping",
+                          return_value=("notebook-001", ["source-001"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "unfinished001", "status": "2"}]), \
+             patch.object(bridge, "save_json") as save, \
+             patch.object(bridge, "command") as send:
+            self.assertFalse(bridge.request_new("86", request(vid=VIDEO),
+                                                state, {}, batch_comment_id=654321))
+            send.assert_not_called()
+            save.assert_not_called()
+
+    def test_authorized_batch_persists_grant_before_creating_infographic(self):
+        state = {}
+        observed = []
+        def fake_command(argv, **kwargs):
+            observed.append((state["86"]["phase"],
+                             state["86"]["github_batch_comment_id"]))
+            return ""
+        with patch.object(bridge, "select_mapping",
+                          return_value=("notebook-001", ["source-001"])), \
+             patch.object(bridge, "submitted_comment_exists", return_value=False), \
+             patch.object(bridge, "infographic_rows",
+                          return_value=[{"id": "oldartifact001", "status": "3"}]), \
+             patch.object(bridge, "command", side_effect=fake_command), \
+             patch.object(bridge, "save_json"), \
+             patch.object(bridge, "comment_or_queue"):
+            self.assertTrue(bridge.request_new("86", request(vid=VIDEO), state, {},
+                                                batch_comment_id=654321))
+            self.assertEqual(observed, [("launching", 654321)])
+            self.assertEqual(state["86"]["phase"], "submitted")
+
+    def test_authorized_poll_uses_batch_only_without_recovery_grants(self):
+        state = {"101": {"phase": "deferred", "recovery_count": 1}}
+        with patch.object(bridge, "reconcile_only"), \
+             patch.object(bridge, "load_json", return_value=state), \
+             patch.object(bridge, "generation_health", return_value={"paused": False}), \
+             patch.object(bridge, "github_recovery_approvals") as recovery_grants, \
+             patch.object(bridge, "launch_authorized_batch") as batches:
+            bridge.poll_authorized()
+            recovery_grants.assert_not_called()
+            batches.assert_called_once_with(state)
+
 
 
 if __name__ == "__main__":
