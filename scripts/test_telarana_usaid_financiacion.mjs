@@ -38,7 +38,11 @@ assert(dossier.edges.some(e=>e.a==="usaid-departamento-estado"&&e.b==="usaid-ned
 const verified=(id)=>dossier.edges.find(e=>e.id==="usaid-v2-"+id);
 for(const k of ["ghsc","peacemandate","fraud-case","audit2025","stock-belgium","settlement","ned-state"])assert(verified(k),"Arista documental indispensable ausente: "+k);
 const usa=originals.nodes.find(x=>x.id==="f21-usaid");
-assert(usa?.podcastNotes?.length===4&&usa.podcastNotes.every(n=>n.status==="alegacion"),"Alegaciones del pódcast confundidas con datos oficiales");
+assert(usa?.podcastNotes?.filter(n=>n.status==="alegacion"&&n.timeSec===null).length===4,
+ "Se han alterado las 4 alegaciones editoriales originales de USAID");
+assert(usa.podcastNotes.filter(n=>Number.isFinite(n.timeSec)).length>=2&&
+ usa.podcastNotes.filter(n=>Number.isFinite(n.timeSec)).every(n=>n.status!=="hecho_verificado_independiente"),
+ "Nuevos minutajes del podcast convertidos indebidamente en hechos oficiales");
 const history=JSON.parse(read("linea-historia/estudios-telarana.json"));
 const progress=JSON.parse(read("la-telarana/progreso-fuentes.json"));
 assert.equal(progress.timeline.committedVerifiedEvents,history.items.length);
