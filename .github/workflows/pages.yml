@@ -140,6 +140,8 @@ jobs:
         run: node scripts/test_telarana_source07.mjs
       - name: Validar fuente 08 · menciones editoriales y contexto judicial sin imputaciones
         run: node scripts/test_telarana_source08.mjs
+      - name: Validar fuente 10 con subtitulos cronometrados
+        run: node scripts/test_telarana_timecodes_f10.mjs
       - name: Construir resumen estadístico público
         env:
           IDEALAB_CF_ANALYTICS_TOKEN: ${{ secrets.IDEALAB_CF_ANALYTICS_TOKEN }}
