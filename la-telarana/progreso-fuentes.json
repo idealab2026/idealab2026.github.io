@@ -791,14 +791,14 @@
       "videoId": "meEH-MaGn24",
       "title": "El EXPERIMENTO SECRETO con el que las ÉLITES nos CONTROLAN | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=meEH-MaGn24",
-      "status": "segunda_revision_biografias_y_fuentes_atribuidas_publicada_revision_abierta",
+      "status": "revision_cronometrada_parcial_con_dos_contrastes_primarios",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
-      "sourceNodesDocumented": 8,
-      "sourceRelationsDocumented": 7,
-      "verifiedIndependentChecks": 1,
-      "qualityNotes": "Texto automático de 143.539 caracteres recuperado de Drive institucional. 16 personas con biografías y párrafo de declaraciones atribuidas. Los comentarios sobre CIA, In-Q-Tel, la Fundación Gates, Open Society, Google, Meta, vacunas, identidad digital y Palantir permanecen como declaraciones de la fuente sin elevarse a relación probada. Stargate ya figuraba como hito de F21: se vincula referencia secundaria F20 sin crear un segundo evento. Pendiente audio, diarización, localización de minutos y verificación visual de retratos.",
+      "sourceNodesDocumented": 19,
+      "sourceRelationsDocumented": 20,
+      "verifiedIndependentChecks": 3,
+      "qualityNotes": "Texto automático de 143.539 caracteres recuperado de Drive institucional. 16 personas con biografías y párrafo de declaraciones atribuidas. Los comentarios sobre CIA, In-Q-Tel, la Fundación Gates, Open Society, Google, Meta, vacunas, identidad digital y Palantir permanecen como declaraciones de la fuente sin elevarse a relación probada. Stargate ya figuraba como hito de F21: se vincula referencia secundaria F20 sin crear un segundo evento. Pendiente audio, diarización, localización de minutos y verificación visual de retratos.\n13/11/2026: once notas nuevas con marca de tiempo, 11 entidades y 13 aristas, dos de las cuales apoyadas en documentos oficiales CIA e informe SEC. Se distinguen de acusaciones no verificadas de la entrevista. Cobertura editorial estimada de 28% a 40%, sin cotejo de audio ni cierre.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "timelineVerifiedEventsCommitted": 0,
@@ -847,7 +847,8 @@
       ],
       "imageRuntimeVerified": false,
       "attributionScope": "Declaraciones generales del entrevistado Lorenzo Ramírez. No inferir hechos por simple afirmación ni atribuir a individuos relaciones con agencias estatales sin soporte independiente.",
-      "lastUpdated": "2026-11-10"
+      "lastUpdated": "2026-11-10",
+      "timecodedTranscriptReviewedNotes": 11
     },
     {
       "order": 22,
@@ -2872,7 +2873,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 16,
-        "status": "segunda_revision_biografias_y_fuentes_atribuidas_publicada_revision_abierta",
+        "status": "segunda_fase_con_11_minutajes_y_2_relaciones_primarias_confirmadas",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -2883,7 +2884,7 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-13",
           "transcriptCharactersReadBack": 143539,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "timecodedTranscriptStoredInDrive": true,
@@ -2894,20 +2895,22 @@
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
-          "timecodedTranscriptContentImported": true
+          "timecodedTranscriptContentImported": true,
+          "timecodedTranscriptNewEditorialAnnotations": 11,
+          "timecodedTranscriptNotesReviewed": 11
         },
         "analysisCoverage": {
-          "percent": 28,
+          "percent": 40,
           "state": "en_revision",
           "readyForDeepReview": true,
           "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
           "audioVerified": false,
           "signals": {
-            "entities": 8,
-            "relations": 7,
+            "entities": 19,
+            "relations": 20,
             "biographies": 0,
-            "statements": 0,
-            "independentChecks": 1,
+            "statements": 11,
+            "independentChecks": 3,
             "verifiedTimelineEvents": 0,
             "captionSegments": 4005,
             "expectedEntities": 12,
@@ -2923,7 +2926,8 @@
             "cronologia": 0,
             "qa": 2
           },
-          "nextAction": "Extraer declaraciones con minutajes y su atribución"
+          "nextAction": "Continuar extracción de pasajes minutados y comprobar afirmaciones sobre tecnológicas antes de publicarlas como relaciones sustantivas",
+          "method": "indice_editorial_conservador; no equivale a cobertura completa del texto"
         }
       },
       {
@@ -5959,9 +5963,9 @@
     "priorityQueue": [
       {
         "sourceOrder": 20,
-        "percent": 28,
+        "percent": 40,
         "segments": 4005,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+        "nextAction": "Continuar extracción de pasajes minutados y comprobar afirmaciones sobre tecnológicas antes de publicarlas como relaciones sustantivas"
       },
       {
         "sourceOrder": 26,
@@ -6108,7 +6112,7 @@
         "nextAction": "Contrastar afirmaciones y enlazar hechos con la cronología"
       }
     ],
-    "attentionRule": "Prioridad explícita: Lorenzo Ramírez F20 F26 F23 F27 F24 F25 F28 F19, mantenimiento F18 F21; después Eric Frattini F34 F69; después Rothschild F33; el resto en espera. Las fuentes sin minutajes se pueden analizar sin inventar segundos.",
+    "attentionRule": "Siguiente foco: F26 (30%), F23 (36%), F20 (40%), F27 (45%), F24 (46%), F25 (53%), F28 (58%), F19 (78%); mantenimiento F18/F21; después F34/F69 Eric Frattini; finalmente F33 Rothschild. Todos los porcentajes son estimaciones.",
     "deduplicatedOrders": [
       36,
       46,
@@ -6410,9 +6414,9 @@
           "key": "lorenzo_ramirez",
           "title": "Lorenzo Ramírez",
           "ids": [
-            20,
             26,
             23,
+            20,
             27,
             24,
             25,
@@ -6423,15 +6427,6 @@
           ],
           "reason": "Primero las fuentes con menor cobertura editorial; las dos cerradas quedan en mantenimiento final y cotejo de audio.",
           "sources": [
-            {
-              "order": 20,
-              "title": "El EXPERIMENTO SECRETO con el que las ÉLITES nos CONTROLAN | Lorenzo Ramírez",
-              "percent": 28,
-              "reviewState": "en_revision",
-              "timecodes": true,
-              "untimedText": false,
-              "requiresAudioVerification": true
-            },
             {
               "order": 26,
               "title": "La IA, los medios y el nuevo sistema de control | Lorenzo Ramírez #72 Minimal Design Talks",
@@ -6445,6 +6440,15 @@
               "order": 23,
               "title": "El PODER REAL que CONTROLA la UNIÓN EUROPEA desde las SOMBRAS | Lorenzo Ramírez",
               "percent": 36,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 20,
+              "title": "El EXPERIMENTO SECRETO con el que las ÉLITES nos CONTROLAN | Lorenzo Ramírez",
+              "percent": 40,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
@@ -6567,9 +6571,9 @@
         }
       ],
       "sourceOrder": [
-        20,
         26,
         23,
+        20,
         27,
         24,
         25,
