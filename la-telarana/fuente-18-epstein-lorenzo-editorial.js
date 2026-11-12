@@ -5,14 +5,18 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
     "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
     "url": "https://www.youtube.com/watch?v=MljyjDGTxkk",
     "publishedAt": "2026-02-08",
-    "reviewStage": "revision_documental_texto_automatico_y_contrastes_2026-11-10",
+    "reviewStage": "revision_documental_previa_mas_notas_temporizadas_nov_2026",
     "transcriptAvailable": true,
     "sourceOrder": 18,
-    "methodologicalNote": "Transcripción automática íntegra disponible y leída en Drive privado; ausencia de minutajes y cotejo de audio. Las hipótesis en el episodio no acreditan por sí solas delitos, operaciones o vínculos entre terceros.",
+    "methodologicalNote": "El TXT de subtítulos con marcas de tiempo está preservado en Drive institucional y permite enlazar fragmentos del vídeo. Las marcas no están cotejadas contra audio ni permiten por sí solas atribuir la voz a cada interlocutor. Las opiniones, acusaciones y asociaciones entre personas siguen siendo declaraciones del programa, no hechos acreditados.",
     "transcriptSource": "Google Docs privado IDEA LAB, texto automático de NotebookLM",
     "transcriptCharacters": 129774,
-    "transcriptTimecodesAvailable": false,
-    "transcriptAudioMatched": false
+    "transcriptTimecodesAvailable": true,
+    "transcriptAudioMatched": false,
+    "transcriptTimestampedSegments": 3578,
+    "transcriptLastTimestamp": "01:52:49",
+    "timecodeAccuracy": "subtitle_segment_start_not_audio_verified",
+    "timecodedSource": "IDEA LAB institutional Drive / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO"
   },
   "nodes": [
     {
@@ -48,6 +52,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Actúa como presentador y formula preguntas sobre la publicación del expediente Epstein, negociaciones geopolíticas y el papel del poder financiero. El texto automático no está diarizado ni cotejado con audio."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Pregunta sobre Peter Thiel · 25:38",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=1538s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 1538,
+          "status": "pregunta_del_presentador",
+          "text": "El presentador introduce una pregunta sobre Peter Thiel en la conversación sobre los documentos de Epstein. Es una pregunta editorial y no una prueba de implicación del empresario en conductas ilegales."
         }
       ]
     },
@@ -80,6 +93,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Discute escenarios de negociaciones con Irán, las relaciones comerciales con China y la evolución de Bitcoin; sus pronósticos y explicaciones causales deben contrastarse independientemente."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Musk, Thiel y la industria de IA · 1:33:51",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=5631s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 5631,
+          "status": "interpretacion_atribuida",
+          "text": "En el debate se presenta la rivalidad entre Musk, Thiel y responsables de empresas de inteligencia artificial como parte de una pugna de poder. Es una interpretación de los interlocutores, no una relación orgánica acreditada."
         }
       ]
     },
@@ -94,7 +116,17 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "x": 6220,
       "y": 1860,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Epstein y contactos tecnológicos · 21:16",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=1276s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 1276,
+          "status": "alegacion_atribuida_no_verificada",
+          "text": "El entrevistado describe supuestos contactos de Epstein con científicos y círculos tecnológicos. La aparición de esos ámbitos en una intervención no acredita una operación conjunta ni responsabilidades penales de terceros."
+        }
+      ]
     },
     {
       "id": "f18-doj",
@@ -107,7 +139,17 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
       "x": 6460,
       "y": 1880,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Divulgación del expediente Epstein · 09:50",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=590s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 590,
+          "status": "afirmacion_del_programa_pendiente_contraste",
+          "text": "El programa sostiene que la documentación divulgada sobre Epstein está incompleta y comenta excepciones relacionadas con material sensible. La proporción que menciona y las razones de cualquier reserva requieren cotejo directo con el Departamento de Justicia."
+        }
+      ]
     },
     {
       "id": "f18-trump",
@@ -127,6 +169,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 3% del texto automático, sin minutaje: «egia de seguridad nacional de Trump bueno pues prácticamente la veníamos avanzando y la veníamos contando Es verdad que ahora cuando uno une los puntos pues empieza a dar cuenta de». Contexto editorial: Lo presentan como centro de decisiones de la política exterior y de controversias sobre la publicación del expediente Epstein. No se ha demostrado en esta revisión un chantaje personal."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Trump y congresista de Kentucky · 15:00",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=900s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 900,
+          "status": "comentario_atribuido_nombre_asr_incierto",
+          "text": "Los interlocutores cuestionan la actitud de Donald Trump respecto de un congresista republicano de Kentucky que reclama transparencia en el caso Epstein. El nombre aparece deformado en los subtítulos automáticos; no se consolida una identidad sin revisión adicional."
         }
       ],
       "x": 5650,
@@ -150,6 +201,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 21% del texto automático, sin minutaje: « esa película que nos cuentan Netanyahu y sus secuaces un Netanu y unos políticos que lo aprovechan siendo ateos Entonces fíjate toda amalgama qué amalgama tenemos aquí ¿Qué es lo ». Contexto editorial: La conversación le vincula al análisis sobre Irán e Israel. Las atribuciones de control indirecto del Gobierno estadounidense son hipótesis de los interlocutores."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Netanyahu y una posible confrontación regional · 45:42",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=2742s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 2742,
+          "status": "interpretacion_atribuida",
+          "text": "El entrevistado especula sobre los incentivos de Benjamin Netanyahu ante una confrontación regional y la necesidad de apoyo de Estados Unidos. Se conserva como valoración geopolítica; no acredita decisiones futuras ni motivaciones privadas."
         }
       ],
       "x": 5885,
@@ -173,6 +233,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 31% del texto automático, sin minutaje: «porque ya no cuela el mensaje Bill Gates es el claro ejemplo Bill Gates había que quitarlo ya absolutamente de medio porque era un zombi y él mismo no se había dado cuenta que era ». Contexto editorial: El entrevistado lo utiliza para ilustrar su interpretación de los cambios de influencia entre grandes empresarios. No se establece delito."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Bill Gates y la interpretación de las publicaciones · 34:42",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=2082s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 2082,
+          "status": "interpretacion_atribuida",
+          "text": "El entrevistado sostiene que divulgar el expediente Epstein serviría para desplazar de la escena pública a figuras como Bill Gates. Esa intencionalidad es una interpretación del programa, no una finalidad acreditada de una autoridad."
         }
       ],
       "x": 6120,
@@ -196,6 +265,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 71% del texto automático, sin minutaje: «e claramente la influencia de Soros que dices bueno Soros Open Society USate toda esa ala oscura el deep state dentro del partido demócrata Dice \"Oiga pero Peterfil no se enfrenta ». Contexto editorial: Se alude a supuestas redes de financiación e influencia política. Faltan documentos de subvenciones y destinatarios concretos para crear relaciones financieras."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Soros, Open Society y USAID · 1:20:45",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=4845s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 4845,
+          "status": "hipotesis_del_programa_no_verificada",
+          "text": "La conversación agrupa a George Soros, Open Society y USAID en una hipótesis de influencia sobre cambios políticos. La coincidencia de nombres en el discurso no documenta un flujo financiero ni una estructura única de control."
         }
       ],
       "x": 6355,
@@ -246,6 +324,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~73–74 % del episodio. El entrevistado describe la supuesta oposición Thiel–George Soros como una falsa dicotomía y les atribuye objetivos tecnológicos y políticos convergentes. Es una hipótesis interpretativa, no una coordinación entre ambos probada."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Epstein como supuesto intermediario Thiel–Soros · 1:22:04",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=4924s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 4924,
+          "status": "alegacion_atribuida_no_verificada",
+          "text": "El programa afirma que Epstein actuaría como intermediario entre círculos asociados a Peter Thiel y George Soros. Los subtítulos registran la tesis, pero no aportan comunicaciones primarias ni prueban coordinación entre esas personas."
         }
       ],
       "x": 6590,
@@ -269,6 +356,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «to tecnológico de Peterill de Palantir Entonces a su trabajo original él sumó una serie de iniciativas Yo no sé si moto propio porque le fueran dirigiendo a ellas en las cuales él ». Contexto editorial: Tema de discusión sobre empresas tecnológicas y uso de datos; no implica por sí mismo intervención ilícita."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Palantir en interpretación del caso Epstein · 21:44",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=1304s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 1304,
+          "status": "mencion_temporizada_no_relacion_probada",
+          "text": "El programa menciona Palantir y a Peter Thiel al comentar intereses tecnológicos asociados al caso Epstein. Se trata de una asociación discursiva; la transcripción no documenta un vínculo contractual ni delictivo entre Palantir y Epstein."
         }
       ],
       "x": 6825,
@@ -315,6 +411,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 18% del texto automático, sin minutaje: «ns y luego posteriormente con JP Morgan un GP Morgan que logra ser el mayor banco prácticamente del planeta bueno en occidente el mayor banco del sistema euroólar entre otras por l». Contexto editorial: Se comenta su posición en finanzas internacionales. La actividad bancaria legítima debe separarse de imputaciones no probadas."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · JPMorgan y Epstein · 20:22",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=1222s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 1222,
+          "status": "alegacion_atribuida_no_verificada",
+          "text": "La entrevista relaciona a Epstein con JPMorgan en un relato sobre intermediarios financieros y servicios de inteligencia. La referencia contiene afirmaciones adicionales que no deben presentarse como hechos sin documentos independientes."
         }
       ],
       "x": 5650,
@@ -361,6 +466,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 8% del texto automático, sin minutaje: «ento maga pertenecen al lobby israelí con lo cual claro ahí hay un problema muy importante en la anterior desclasificación que se produce en diciembre que tuvo menos eh publicidad ». Contexto editorial: Actor político del debate sobre seguridad regional y el caso Epstein; no se le atribuye en el grafo autoría institucional de una conspiración."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Gobierno de Israel y antisemitismo · 37:03",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=2223s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 2223,
+          "status": "valoracion_atribuida",
+          "text": "La intervención distingue al Gobierno israelí y sus grupos de presión de la población judía, y opina sobre el efecto de sus decisiones en el aumento del antisemitismo. Es una valoración política atribuida al programa, no una generalización sobre un colectivo."
         }
       ],
       "x": 6120,
