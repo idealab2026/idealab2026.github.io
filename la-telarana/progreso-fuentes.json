@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 28,
-    "notStarted": 38,
+    "inReview": 29,
+    "notStarted": 37,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -995,11 +995,11 @@
       "title": "La IA, los medios y el nuevo sistema de control | Lorenzo Ramírez #72 Minimal Design Talks",
       "sourceUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw",
       "publishedAt": "2026-06-11",
-      "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
+      "status": "revision_con_texto_cronometrado_sin_cotejo_de_audio",
       "reviewComplete": false,
       "docTranscriptCreated": false,
       "transcriptDocHasFullText": false,
-      "rawTranscriptAvailable": false,
+      "rawTranscriptAvailable": true,
       "transcriptAudioMatched": false,
       "verifiedMinuteReferences": 0,
       "sourceNodesDocumented": 5,
@@ -1007,7 +1007,12 @@
       "verifiedIndependentChecks": 1,
       "sourceTimelineVerifiedEventsCommitted": 1,
       "sourcePrimaryModule": "la-telarana/fuente-26-revision-inicial.js",
-      "qualityNotes": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales."
+      "qualityNotes": "El TXT original con marcas de tiempo fue recuperado y leído de vuelta en el Drive institucional, 134558 caracteres. Las cifras y palabras proceden de subtítulos automáticos, no cotejados con audio. Los expedientes Google Docs previos conservan estado parcial y no se han reemplazado. La ficha sigue pendiente de revisión editorial exhaustiva y contraste de declaraciones.",
+      "previousEditorialNotesWithoutTimestamp": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales.",
+      "timecodedTranscriptStoredInDrive": true,
+      "timecodedTranscriptCharactersReadBack": 134558,
+      "timecodedTranscriptReadbackVerified": true,
+      "timecodedNotesStarted": 2
     },
     {
       "order": 27,
@@ -1015,11 +1020,11 @@
       "title": "La VERDAD Detrás de las organizaciones de PODER | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
       "publishedAt": "2024-02-06",
-      "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
+      "status": "revision_con_texto_cronometrado_sin_cotejo_de_audio",
       "reviewComplete": false,
       "docTranscriptCreated": false,
       "transcriptDocHasFullText": false,
-      "rawTranscriptAvailable": false,
+      "rawTranscriptAvailable": true,
       "transcriptAudioMatched": false,
       "verifiedMinuteReferences": 0,
       "sourceNodesDocumented": 8,
@@ -1027,18 +1032,23 @@
       "verifiedIndependentChecks": 4,
       "sourceTimelineVerifiedEventsCommitted": 2,
       "sourcePrimaryModule": "la-telarana/fuente-27-revision-inicial.js",
-      "qualityNotes": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales."
+      "qualityNotes": "El TXT original con marcas de tiempo fue recuperado y leído de vuelta en el Drive institucional, 243186 caracteres. Las cifras y palabras proceden de subtítulos automáticos, no cotejados con audio. Los expedientes Google Docs previos conservan estado parcial y no se han reemplazado. La ficha sigue pendiente de revisión editorial exhaustiva y contraste de declaraciones.",
+      "previousEditorialNotesWithoutTimestamp": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales.",
+      "timecodedTranscriptStoredInDrive": true,
+      "timecodedTranscriptCharactersReadBack": 243186,
+      "timecodedTranscriptReadbackVerified": true,
+      "timecodedNotesStarted": 2
     },
     {
       "order": 28,
       "videoId": "fzHC3z8S3oM",
       "title": "La Élite Oculta que Rodea a Donald Trump y lo que Tienen Planeado para el Mundo | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=fzHC3z8S3oM",
-      "status": "revision_inicial_contexto_documental_sin_audio_ni_transcripcion",
+      "status": "revision_con_texto_cronometrado_sin_cotejo_de_audio",
       "reviewComplete": false,
       "docTranscriptCreated": false,
       "transcriptDocHasFullText": false,
-      "rawTranscriptAvailable": false,
+      "rawTranscriptAvailable": true,
       "transcriptAudioMatched": false,
       "verifiedMinuteReferences": 0,
       "sourceNodesDocumented": 13,
@@ -1046,8 +1056,13 @@
       "verifiedIndependentChecks": 7,
       "sourceTimelineVerifiedEventsCommitted": 3,
       "sourcePrimaryModule": "la-telarana/fuente-28-revision-inicial.js",
-      "qualityNotes": "Fuente web y descripción oficial Inversión Racional revisadas, sin transcripción íntegra ni audio. Relaciones verificadas: investidura, Bessent-Tesoro, financiación indirecta Thiel-superPAC, respaldo PAC a Vance y estructura AIPAC-PAC/UDP. El índice solo acredita comienzo de capítulos; no se crean afirmaciones literales ni relaciones de control.",
-      "publishedAt": "2026-05-02 (iVoox)"
+      "qualityNotes": "El TXT original con marcas de tiempo fue recuperado y leído de vuelta en el Drive institucional, 263903 caracteres. Las cifras y palabras proceden de subtítulos automáticos, no cotejados con audio. Los expedientes Google Docs previos conservan estado parcial y no se han reemplazado. La ficha sigue pendiente de revisión editorial exhaustiva y contraste de declaraciones.",
+      "publishedAt": "2026-05-02 (iVoox)",
+      "previousEditorialNotesWithoutTimestamp": "Fuente web y descripción oficial Inversión Racional revisadas, sin transcripción íntegra ni audio. Relaciones verificadas: investidura, Bessent-Tesoro, financiación indirecta Thiel-superPAC, respaldo PAC a Vance y estructura AIPAC-PAC/UDP. El índice solo acredita comienzo de capítulos; no se crean afirmaciones literales ni relaciones de control.",
+      "timecodedTranscriptStoredInDrive": true,
+      "timecodedTranscriptCharactersReadBack": 263903,
+      "timecodedTranscriptReadbackVerified": true,
+      "timecodedNotesStarted": 2
     },
     {
       "order": 29,
@@ -1055,11 +1070,11 @@
       "title": "Operación: Destruir a Pedro Baños (Parte 1)",
       "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
       "publishedAt": "2026-08-20",
-      "status": "en_revision_asr_externo_parcial_y_documentacion_independiente",
+      "status": "revision_con_texto_cronometrado_sin_cotejo_de_audio",
       "reviewComplete": false,
       "docTranscriptCreated": false,
       "transcriptDocHasFullText": false,
-      "rawTranscriptAvailable": false,
+      "rawTranscriptAvailable": true,
       "transcriptAudioMatched": false,
       "verifiedMinuteReferences": 0,
       "sourceNodesDocumented": 16,
@@ -1069,19 +1084,24 @@
       "sourcePrimaryModule": "la-telarana/fuente-29-revision-inicial.js",
       "editorialDossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
       "externalASR": "https://podscan.fm/podcasts/el-canal-del-coronel/episodes/operacion-destruir-a-pedro-banos-parte-1",
-      "qualityNotes": "Fuente 29 con transcripción automática externa enlazada, pero sin importación íntegra. Se revisaron 00:00–09:06 (marcadores del proveedor, no audio verificado); tres notas atribuidas a Pedro Baños. Ocho aristas documentales (dos subvenciones representadas como instrumentos distintos, control parlamentario, nombramiento BOE y estructura institucional), seis referencias editoriales. No se da por probada campaña dirigida contra Baños ni se importan a la parte 1 afirmaciones de la parte 3."
+      "qualityNotes": "El TXT original con marcas de tiempo fue recuperado y leído de vuelta en el Drive institucional, 87809 caracteres. Las cifras y palabras proceden de subtítulos automáticos, no cotejados con audio. Los expedientes Google Docs previos conservan estado parcial y no se han reemplazado. La ficha sigue pendiente de revisión editorial exhaustiva y contraste de declaraciones.",
+      "previousEditorialNotesWithoutTimestamp": "Fuente 29 con transcripción automática externa enlazada, pero sin importación íntegra. Se revisaron 00:00–09:06 (marcadores del proveedor, no audio verificado); tres notas atribuidas a Pedro Baños. Ocho aristas documentales (dos subvenciones representadas como instrumentos distintos, control parlamentario, nombramiento BOE y estructura institucional), seis referencias editoriales. No se da por probada campaña dirigida contra Baños ni se importan a la parte 1 afirmaciones de la parte 3.",
+      "timecodedTranscriptStoredInDrive": true,
+      "timecodedTranscriptCharactersReadBack": 87809,
+      "timecodedTranscriptReadbackVerified": true,
+      "timecodedNotesStarted": 4
     },
     {
       "order": 30,
       "videoId": "F1r5Yeyfcp8",
       "title": "The Wild Project #116 ft Pedro Baños | USA vs Rusia vs China, Tercera Guerra Mundial, George Soros",
       "sourceUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8",
-      "status": "revision_inicial_documentos_externos_audio_y_transcripcion_pendientes",
+      "status": "revision_con_texto_cronometrado_sin_cotejo_de_audio",
       "publishedAt": "2022-02-17",
       "reviewComplete": false,
       "docTranscriptCreated": false,
       "transcriptDocHasFullText": false,
-      "rawTranscriptAvailable": false,
+      "rawTranscriptAvailable": true,
       "transcriptAudioMatched": false,
       "verifiedMinuteReferences": 0,
       "sourceNodesDocumented": 16,
@@ -1090,7 +1110,35 @@
       "sourceTimelineVerifiedEventsCommitted": 6,
       "sourcePrimaryModule": "la-telarana/fuente-30-revision-inicial.js",
       "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
-      "qualityNotes": "Fuente publicada el 17/02/2022, 7 días antes de invasión a gran escala. Sin transcripción en Drive ni audio cotejado. 11 relaciones históricas documentadas (4 clasificadas como posteriores a la entrevista), 7 referencias editoriales de la sinopsis. 6 hitos de Línea de la Historia con etiqueta de temporalidad relativa. No atribuir predicciones ni afirmaciones literales."
+      "qualityNotes": "El TXT original con marcas de tiempo fue recuperado y leído de vuelta en el Drive institucional, 265704 caracteres. Las cifras y palabras proceden de subtítulos automáticos, no cotejados con audio. Los expedientes Google Docs previos conservan estado parcial y no se han reemplazado. La ficha sigue pendiente de revisión editorial exhaustiva y contraste de declaraciones.",
+      "previousEditorialNotesWithoutTimestamp": "Fuente publicada el 17/02/2022, 7 días antes de invasión a gran escala. Sin transcripción en Drive ni audio cotejado. 11 relaciones históricas documentadas (4 clasificadas como posteriores a la entrevista), 7 referencias editoriales de la sinopsis. 6 hitos de Línea de la Historia con etiqueta de temporalidad relativa. No atribuir predicciones ni afirmaciones literales.",
+      "timecodedTranscriptStoredInDrive": true,
+      "timecodedTranscriptCharactersReadBack": 265704,
+      "timecodedTranscriptReadbackVerified": true,
+      "timecodedNotesStarted": 4
+    },
+    {
+      "order": 31,
+      "videoId": "aeQTrm-Kork",
+      "title": "The Wild Project #354 - Pedro Baños | Las Élites que controlan el mundo, Vinculación con Rusia",
+      "sourceUrl": "https://www.youtube.com/watch?v=aeQTrm-Kork",
+      "status": "revision_con_texto_cronometrado_sin_cotejo_de_audio",
+      "reviewComplete": false,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "rawTranscriptAvailable": true,
+      "timecodedTranscriptStoredInDrive": true,
+      "timecodedTranscriptReadbackVerified": true,
+      "timecodedTranscriptCharactersReadBack": 353539,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "timecodedNotesStarted": 6,
+      "sourceNodesDocumented": 7,
+      "sourceRelationsDocumented": 6,
+      "verifiedIndependentChecks": 0,
+      "sourceTimelineVerifiedEventsCommitted": 0,
+      "sourcePrimaryModule": "la-telarana/fuente-31-revision-inicial.js",
+      "qualityNotes": "Primera integración pública de la entrevista, 6.104 segmentos con minutajes leídos en Drive. Seis notas de atribución textual, ninguna prueba independiente de afirmaciones geopolíticas. La transcripción no está cotejada con el audio."
     },
     {
       "order": 69,
@@ -1720,7 +1768,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 8,
-        "status": "en_revision",
+        "status": "en_revision_transcripcion_cronometrada_sin_audio_cotejado",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -1744,13 +1792,15 @@
           "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
-          "timecodedTranscriptImportedAt": "2026-11-12"
+          "timecodedTranscriptImportedAt": "2026-11-12",
+          "timecodedTranscriptCharactersReadBack": 169673,
+          "timecodedTranscriptReadbackVerified": true
         },
         "sourceData": "podcast-vaquero-67-villarejo.js",
         "episodeDurationSeconds": 7093,
         "episodePublishedDateIvoox": "2025-10-22",
         "episodeReleaseDateConflicting": "2025-10-21",
-        "fullTranscriptAvailable": false,
+        "fullTranscriptAvailable": true,
         "docTranscriptHasFullText": false,
         "transcriptAttemptedProviders": [
           "vidIQ",
@@ -2408,7 +2458,9 @@
           "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
-          "timecodedTranscriptImportedAt": "2026-11-12"
+          "timecodedTranscriptImportedAt": "2026-11-12",
+          "timecodedTranscriptCharactersReadBack": 134558,
+          "timecodedTranscriptReadbackVerified": true
         }
       },
       {
@@ -2444,7 +2496,9 @@
           "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
-          "timecodedTranscriptImportedAt": "2026-11-12"
+          "timecodedTranscriptImportedAt": "2026-11-12",
+          "timecodedTranscriptCharactersReadBack": 243186,
+          "timecodedTranscriptReadbackVerified": true
         }
       },
       {
@@ -2480,7 +2534,9 @@
           "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
-          "timecodedTranscriptImportedAt": "2026-11-12"
+          "timecodedTranscriptImportedAt": "2026-11-12",
+          "timecodedTranscriptCharactersReadBack": 263903,
+          "timecodedTranscriptReadbackVerified": true
         }
       },
       {
@@ -2527,7 +2583,9 @@
           "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
-          "timecodedTranscriptImportedAt": "2026-11-12"
+          "timecodedTranscriptImportedAt": "2026-11-12",
+          "timecodedTranscriptCharactersReadBack": 87809,
+          "timecodedTranscriptReadbackVerified": true
         }
       },
       {
@@ -2570,7 +2628,9 @@
           "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
-          "timecodedTranscriptImportedAt": "2026-11-12"
+          "timecodedTranscriptImportedAt": "2026-11-12",
+          "timecodedTranscriptCharactersReadBack": 265704,
+          "timecodedTranscriptReadbackVerified": true
         }
       },
       {
@@ -2602,7 +2662,9 @@
           "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
-          "timecodedTranscriptImportedAt": "2026-11-12"
+          "timecodedTranscriptImportedAt": "2026-11-12",
+          "timecodedTranscriptCharactersReadBack": 353539,
+          "timecodedTranscriptReadbackVerified": true
         }
       },
       {
