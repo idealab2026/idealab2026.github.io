@@ -32,7 +32,7 @@ assert(edges.some(e=>e.episodeId==="idealab-f21-orden-mundial"),"Falta enlace do
 assert(edges.length>=5,"Se esperaban las tres conexiones originales y las dos menciones nuevas");
 // Los subtitulos cronometrados permiten anclas precisas, pero no certifican el audio.
 assert(notes.every(n=>n.timeSec===null||(Number.isFinite(n.timeSec)&&
- n.timeSec>=0&&/^https:\\/\\/www\\.youtube\\.com\\/watch\\?v=/.test(n.source||""))),
+ n.timeSec>=0&&String(n.source||"").startsWith("https://www.youtube.com/watch?v="))),
  "No aceptar minutajes sin enlace al video original");
 assert(notes.some(n=>Number.isFinite(n.timeSec)),
  "Se han perdido las anclas de los subtitulos recuperados");
