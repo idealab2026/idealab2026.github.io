@@ -78,8 +78,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "contexto_arqueologico_atribuido",
-          "text": "El invitado compara la función funeraria de las pirámides egipcias con otras estructuras piramidales de distintas culturas, advirtiendo que compartir geometría no demuestra un origen cultural común. Localización: TXT privado F39, carácter aproximado 318; buscar «las pirámides». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 318,
+          "text": "El invitado compara la función funeraria de las pirámides egipcias con otras estructuras piramidales de distintas culturas, advirtiendo que compartir geometría no demuestra un origen cultural común. Localización: TXT privado F39, carácter aproximado 7126; buscar «las pirámides». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 7126,
           "transcriptSearch": "las pirámides",
           "excerpt": "Las pirámides han sido monumentos que se han alz"
         }
@@ -102,8 +102,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "contrastado_fuente_primaria",
-          "text": "Se debate la atribución de la Gran Pirámide a Keops, los métodos constructivos y la documentación de canteras y transporte. La autoridad egipcia la identifica como tumba de Jufu y documenta la piedra de Tura transportada por barco. Localización: TXT privado F39, carácter aproximado 13790; buscar «gran pirámide». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 13790,
+          "text": "Se debate la atribución de la Gran Pirámide a Keops, los métodos constructivos y la documentación de canteras y transporte. La autoridad egipcia la identifica como tumba de Jufu y documenta la piedra de Tura transportada por barco. Localización: TXT privado F39, carácter aproximado 25246; buscar «gran pirámide». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 25246,
           "transcriptSearch": "gran pirámide",
           "excerpt": "gran pirámide parece que apunta a Keops. Pero e"
         }
@@ -198,8 +198,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "interpretacion_arqueologica_atribuida",
-          "text": "El invitado rechaza que la esclavitud sea la explicación demostrada para la fuerza de trabajo de la IV dinastía y menciona instalaciones, cuidados y registros de cuadrillas; es necesario distinguir ausencia de evidencias de una negación universal de esclavitud. Localización: TXT privado F39, carácter aproximado 30208; buscar «obreros». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 30208,
+          "text": "El invitado rechaza que la esclavitud sea la explicación demostrada para la fuerza de trabajo de la IV dinastía y menciona instalaciones, cuidados y registros de cuadrillas; es necesario distinguir ausencia de evidencias de una negación universal de esclavitud. Localización: TXT privado F39, carácter aproximado 44685; buscar «obreros». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 44685,
           "transcriptSearch": "obreros",
           "excerpt": "obreros y sus tumbas. Es decir, conocemos"
         }
@@ -342,8 +342,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "hipotesis_debatida",
-          "text": "La entrevista discute la idea de que las pirámides reflejan el cinturón de Orión y menciona objeciones sobre proyecciones y orientación. Es una hipótesis debatida, no un plano constructivo demostrado. Localización: TXT privado F39, carácter aproximado 1206; buscar «Orión». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 1206,
+          "text": "La entrevista discute la idea de que las pirámides reflejan el cinturón de Orión y menciona objeciones sobre proyecciones y orientación. Es una hipótesis debatida, no un plano constructivo demostrado. Localización: TXT privado F39, carácter aproximado 201487; buscar «Orión». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 201487,
           "transcriptSearch": "Orión",
           "excerpt": "Orión. Esto es, a ver, es una teoría qu"
         }
@@ -390,8 +390,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "hipotesis_contradiccion_arqueologica",
-          "text": "La conversación diferencia cavidades, perforaciones y supuestas cámaras secretas bajo la Esfinge. La presencia de huecos no valida una cámara de los ancestros o una ciudad subterránea. Localización: TXT privado F39, carácter aproximado 1493; buscar «Esfinge». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 1493,
+          "text": "La conversación diferencia cavidades, perforaciones y supuestas cámaras secretas bajo la Esfinge. La presencia de huecos no valida una cámara de los ancestros o una ciudad subterránea. Localización: TXT privado F39, carácter aproximado 149326; buscar «Esfinge». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 149326,
           "transcriptSearch": "Esfinge",
           "excerpt": "esfinge. Existen varios huecos debajo de"
         }
@@ -414,8 +414,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "contexto_historico_y_mito",
-          "text": "Se analiza el descubrimiento de su tumba y el relato mediático de la maldición; las muertes atribuidas al mito no equivalen a prueba de una maldición sobrenatural. Localización: TXT privado F39, carácter aproximado 1778; buscar «Tutankamón». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 1778,
+          "text": "Se analiza el descubrimiento de su tumba y el relato mediático de la maldición; las muertes atribuidas al mito no equivalen a prueba de una maldición sobrenatural. Localización: TXT privado F39, carácter aproximado 171302; buscar «Tutankamón». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 171302,
           "transcriptSearch": "Tutankamón",
           "excerpt": "Tutankamón? Yo creo que es donde menos miste"
         }
@@ -606,8 +606,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "hipotesis_no_acreditada",
-          "text": "El invitado considera que no existe evidencia arqueológica suficiente para ubicar literalmente la Atlántida; diferencia la narración de Platón de una civilización material verificada. Localización: TXT privado F39, carácter aproximado 2098; buscar «Atlántida». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 2098,
+          "text": "El invitado considera que no existe evidencia arqueológica suficiente para ubicar literalmente la Atlántida; diferencia la narración de Platón de una civilización material verificada. Localización: TXT privado F39, carácter aproximado 160578; buscar «Atlántida». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 160578,
           "transcriptSearch": "Atlántida",
           "excerpt": "Atlántida? La búsqueda de la Atlántida como"
         }
@@ -678,8 +678,8 @@ window.IDEA_TELARANA_F39_REVIEW = {
           "publishedAt": "2026-07-27",
           "timeSec": null,
           "status": "hipotesis_no_corrobada",
-          "text": "Se trata la posibilidad de pirámides bajo el agua como hipótesis que exige pruebas geomorfológicas y arqueológicas, sin que el episodio documente una pirámide submarina autenticada. Localización: TXT privado F39, carácter aproximado 1881; buscar «pirámides submarinas». No hay marcas de tiempo ni cotejo de audio.",
-          "transcriptCharOffset": 1881,
+          "text": "Se trata la posibilidad de pirámides bajo el agua como hipótesis que exige pruebas geomorfológicas y arqueológicas, sin que el episodio documente una pirámide submarina autenticada. Localización: TXT privado F39, carácter aproximado 107507; buscar «pirámides submarinas». No hay marcas de tiempo ni cotejo de audio.",
+          "transcriptCharOffset": 107507,
           "transcriptSearch": "pirámides submarinas",
           "excerpt": "pirámides submarinas? Existe el planteamiento d"
         }
@@ -732,7 +732,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «las pirámides» en el carácter aproximado 318. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «las pirámides» en el carácter aproximado 7126. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
@@ -744,7 +744,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «gran pirámide» en el carácter aproximado 13790. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «gran pirámide» en el carácter aproximado 25246. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
@@ -792,7 +792,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «obreros» en el carácter aproximado 30208. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «obreros» en el carácter aproximado 44685. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
@@ -864,7 +864,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «Orión» en el carácter aproximado 1206. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «Orión» en el carácter aproximado 201487. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
@@ -888,7 +888,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «Esfinge» en el carácter aproximado 1493. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «Esfinge» en el carácter aproximado 149326. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
@@ -900,7 +900,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «Tutankamón» en el carácter aproximado 1778. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «Tutankamón» en el carácter aproximado 171302. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
@@ -996,7 +996,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «Atlántida» en el carácter aproximado 2098. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «Atlántida» en el carácter aproximado 160578. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
@@ -1032,7 +1032,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
       "claimStatus": "mencion_editorial_no_relacion_causal",
       "source": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
       "episodeId": "idealab-f39-tito-vivas-egiptologia-2026",
-      "note": "El TXT de F39 menciona «pirámides submarinas» en el carácter aproximado 1881. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
+      "note": "El TXT de F39 menciona «pirámides submarinas» en el carácter aproximado 107507. Identifica cobertura temática, no una relación entre entidades ni una declaración verificada.",
       "podcastNotes": []
     },
     {
