@@ -66,10 +66,11 @@ def install(mode: str = "poll"):
         print("No generará nuevas infografías ni recuperará trabajos fallidos.")
     elif mode == "poll-authorized":
         print("Agente de conciliación y autorización GitHub instalado.")
-        print("Cada 3 minutos consultará infografías enviadas y solo recuperará "
-              "UNA solicitud expresamente autorizada por la cuenta IDEA LAB, "
-              "si supera todas las comprobaciones de seguridad.")
-        print("No generará solicitudes nuevas ni publicará imágenes.")
+        print("Cada 3 minutos consultará las generaciones previas y las autorizaciones "
+              "explícitas de IDEA LAB. Como máximo inicia UNA solicitud por ciclo.")
+        print("Admite recuperaciones individuales y lotes NUEVOS de hasta cinco "
+              "generaciones con fuentes verificadas; nunca reintentos implícitos.")
+        print("Las infografías descargadas NO se publicarán automáticamente.")
     else:
         print("Agente local instalado. Consulta GitHub cada 3 minutos "
               "mientras el Mac esté despierto.")
