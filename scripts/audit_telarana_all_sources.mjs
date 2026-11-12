@@ -24,19 +24,20 @@ for(const row of rows){
  const duplicate=row.duplicateOf!=null;
  const legacyFullTranscript=t.transcriptContentImported===true;
  const timedTranscript=t.timecodedTranscriptStoredInDrive===true;
+ const untimedTranscript=t.untimedTranscriptStoredInDrive===true;
  const fullTranscript=legacyFullTranscript||timedTranscript;
  const docCreated=t.docTranscriptionCreated===true;
- const documentAvailable=docCreated||timedTranscript;
+ const documentAvailable=docCreated||timedTranscript||untimedTranscript;
  const review=pending.get(row.order)||{};
  const externalAsrPartial=Boolean(t.externalASRExcerptReviewed||review.externalASR)&&!fullTranscript;
  const publishedModule=Boolean(review.sourcePrimaryModule&&fs.existsSync(review.sourcePrimaryModule)&&fs.readFileSync("la-telarana/index.html","utf8").includes(review.sourcePrimaryModule.split("/").pop()));
- const transcriptStage=timedTranscript?"subtitulos_con_tiempos_en_drive_sin_cotejo":legacyFullTranscript?"texto_en_doc_sin_cotejo":externalAsrPartial?"asr_externo_parcial":docCreated?"documento_sin_texto_integro":"sin_transcripcion_registrada";
+ const transcriptStage=timedTranscript?"subtitulos_con_tiempos_en_drive_sin_cotejo":legacyFullTranscript?"texto_en_doc_sin_cotejo":untimedTranscript?"notebooklm_sin_minutajes_integridad_por_verificar":externalAsrPartial?"asr_externo_parcial":docCreated?"documento_sin_texto_integro":"sin_transcripcion_registrada";
  if(closed){assert(docCreated&&fullTranscript&&Number(t.transcriptCharactersReadBack)>10000,"Fuente cerrada sin texto íntegro F"+row.order);}
  if(legacyFullTranscript)assert(docCreated,"Transcripción heredada importada sin Google Doc F"+row.order);
  if(timedTranscript)assert(t.timecodedTranscriptContentImported===true&&t.timecodedTranscriptBytes>10000&&t.timecodedTranscriptSegments>100,
   "TXT minutado sin archivo registrado F"+row.order);
  if(review.transcriptDocHasFullText===true)assert(legacyFullTranscript&&docCreated,"Ficha contradice el contenido del Google Doc heredado en F"+row.order);
- if(!fullTranscript)assert(review.rawTranscriptAvailable!==true,"ASR parcial se presenta como íntegro en F"+row.order);
+ if(!fullTranscript)assert(review.rawTranscriptAvailable!==true||untimedTranscript,"ASR sin minutajes se presenta como íntegro en F"+row.order);
  const entry={
  order:row.order,shortTitle:String(row.title||"").slice(0,140),type:row.type,
  canonicalOrder:duplicate?row.duplicateOf:row.order,
@@ -46,6 +47,7 @@ for(const row of rows){
  transcriptTextConfirmed:fullTranscript,
  transcriptLegacyDocTextConfirmed:legacyFullTranscript,
  timecodedTranscriptStoredInDrive:timedTranscript,
+ untimedTranscriptStoredInDrive:untimedTranscript,
  transcriptStage,externalAsrPartial,publishedModuleWithoutTranscript:publishedModule&&!fullTranscript,
  audioVerified:Boolean(t.audioMatched||t.audioVerified),
  minuteReferencesVerified:Number(t.minuteReferencesVerified)||0,
