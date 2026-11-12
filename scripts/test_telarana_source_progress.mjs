@@ -58,8 +58,8 @@ for(const e of rows){
    }
    if(t.transcriptContentImported!==true){
      assert(review.transcriptDocHasFullText!==true&&
-       (review.rawTranscriptAvailable!==true||t.timecodedTranscriptStoredInDrive===true),
-       "F"+e.order+": expediente anterior parcial confundido con TXT minutado");
+       (review.rawTranscriptAvailable!==true||t.timecodedTranscriptStoredInDrive===true||t.untimedTranscriptStoredInDrive===true),
+       "F"+e.order+": documento antiguo parcial confundido con un TXT almacenado en Drive");
    }
  }
 }
