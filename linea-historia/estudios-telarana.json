@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "scope": "Acontecimientos fechados verificados durante la revisión de fuentes de La Telaraña. El episodio puede referirse al hecho, pero no constituye la fuente probatoria principal.",
   "reviewProtocol": {
     "required": [
@@ -1337,7 +1337,15 @@
           "f30-russia"
         ],
         "temporalRelationToSource": "anterior_al_episodio",
-        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
+        "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado.",
+        "podcastTranscriptAnchor": {
+          "timecode": "00:18:09",
+          "seconds": 1089,
+          "videoUrl": "https://www.youtube.com/watch?v=F1r5Yeyfcp8&t=1089s",
+          "sourceOrder": 30,
+          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
+          "limits": "La entrevista menciona los acuerdos de Minsk como antecedente histórico. El minutaje prueba la mención, no verifica detalles jurídicos ni causas del conflicto."
+        }
       }
     },
     {
@@ -1540,7 +1548,15 @@
           "f29-subvencion-2017",
           "f29-subvencion-2018"
         ],
-        "methodologicalLimits": "El registro documenta fechas de actos públicos, subvenciones o emisiones de programas. No da por probadas imputaciones de servicios secretos, grupos sociales o financiación de campañas contra particulares sin evidencia judicial o contractual específica."
+        "methodologicalLimits": "El registro documenta fechas de actos públicos, subvenciones o emisiones de programas. No da por probadas imputaciones de servicios secretos, grupos sociales o financiación de campañas contra particulares sin evidencia judicial o contractual específica.",
+        "podcastTranscriptAnchor": {
+          "timecode": "00:27:46",
+          "seconds": 1666,
+          "videoUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw&t=1666s",
+          "sourceOrder": 29,
+          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
+          "limits": "El programa menciona Integrity Initiative y financiación británica. La fecha y cuantía de subvenciones proceden del Parlamento británico, no de la entrevista. La mención no prueba campañas dirigidas a personas concretas."
+        }
       }
     },
     {
