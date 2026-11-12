@@ -45,6 +45,8 @@ jobs:
         run: node scripts/test_telarana_person_bios.mjs
       - name: Validar integración documental entre La Telaraña y Línea de la Historia
         run: node scripts/test_telarana_timeline.mjs
+      - name: Validar F39 y F50 sin minutajes ficticios
+        run: node scripts/test_telarana_39_50_review.mjs
       - name: Validar tabla de progreso de fuentes
         run: node scripts/test_telarana_source_progress.mjs
       - name: Validar fuentes 18 y 21, Lorenzo y presencia en Pages
