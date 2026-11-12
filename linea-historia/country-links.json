@@ -1,1 +1,3966 @@
-{"schema":1,"generated":"2026-11-10","note":"Las vinculaciones son referencias geográficas a países o territorios actuales, no equivalentes a fronteras históricas. Clasificación incompleta; contexto histórico orientativo requiere revisión.","source":"Archivo cronológico IDEA LAB · menciones textuales + asociaciones históricas orientativas","links":{"h-NJ13":{"p":["GBR"],"basis":"contexto histórico orientativo","titleText":"Invasión Lindisfarne 793"},"h-SD17":{"p":["FRA"],"basis":"mención título"},"h-SQ20":{"p":["ESP"],"basis":"mención título"},"h-PB21":{"p":["CHN","MNG"],"basis":"contexto histórico orientativo","titleText":"El Imperio Mongol conquista China 1279"},"h-PW21":{"p":["ESP"],"basis":"mención título"},"h-JY22":{"p":["GRC","ITA","MKD"],"basis":"contexto histórico orientativo","titleText":"Segunda Guerra Macedónica 200 a.C. - 197 a.C. (es cuando los romanos invaden Grecia)"},"h-NK22":{"p":["CHN"],"basis":"mención título"},"h-NM22":{"p":["FRA"],"basis":"mención título"},"h-RL22":{"p":["ESP","FRA"],"basis":"contexto histórico orientativo","titleText":"Ocupación francesa en España 1808 - 1814"},"h-ST22":{"p":["ESP"],"basis":"mención título"},"h-QR23":{"p":["DEU","FRA","SWE"],"basis":"contexto histórico orientativo","titleText":"Paz de Westfalia 1648"},"h-IW24":{"p":["GRC","IRN"],"basis":"contexto histórico orientativo","titleText":"Guerras Médicas (Grecia y Persia) 490 a.C. - 449 a.C."},"h-SR24":{"p":["ESP"],"basis":"contexto histórico orientativo","titleText":"Guerra Civil Española 1936 - 1939"},"h-JQ25":{"p":["ITA","TUN"],"basis":"contexto histórico orientativo","titleText":"Primera Guerra Púnica 264 a.C - 241 a.c.)"},"h-JW25":{"p":["ITA","TUN"],"basis":"contexto histórico orientativo","titleText":"Segunda Guerra Púnica (218 a.C.)"},"h-KE25":{"p":["ITA","TUN"],"basis":"contexto histórico orientativo","titleText":"Tercera Guerra Púnica 149 - 146 a.C."},"h-MZ26":{"p":["ESP"],"basis":"mención título"},"h-RH26":{"p":["FRA"],"basis":"mención título"},"h-HS27":{"p":["GRC"],"basis":"mención título"},"h-QX27":{"p":["ESP"],"basis":"mención título"},"h-IC28":{"p":["ITA"],"basis":"mención título"},"h-RL28":{"p":["ESP"],"basis":"mención título"},"h-IQ29":{"p":["IRN"],"basis":"mención título"},"h-CZ30":{"p":["EGY"],"basis":"contexto histórico orientativo","titleText":"IMPERIO EGIPCIO 3.150 a.C. - 31 a.C."},"h-LJ30":{"p":["ITA"],"basis":"mención título"},"h-QA30":{"p":["MEX"],"basis":"mención título"},"h-QN31":{"p":["ESP"],"basis":"mención título"},"h-RH31":{"p":["USA"],"basis":"mención título"},"h-IU34":{"p":["ITA"],"basis":"mención título"},"h-KR34":{"p":["EGY","ESP","FRA","GBR","GRC","ITA","TUR"],"basis":"contexto histórico orientativo","titleText":"IMPERIO ROMANO 29 a.C - 476 d.C."},"h-QO34":{"p":["IDN","NLD","ZAF"],"basis":"contexto histórico orientativo","titleText":"IMPERIO NEERLANDÉS 1603 - 1975 (372 años)"},"h-JR35":{"p":["ITA","TUN"],"basis":"mención título"},"h-NB35":{"p":["ESP"],"basis":"mención título"},"h-PX35":{"p":["ESP"],"basis":"mención título"},"h-PY36":{"p":["AUS","CAN","GBR","IND","ZAF"],"basis":"contexto histórico orientativo","titleText":"IMPERIO BRITÁNICO 1497 - 1997 (500 años)"},"h-JY37":{"p":["CHN"],"basis":"mención título"},"h-OU37":{"p":["CHN","IRN","IRQ","MNG","RUS"],"basis":"contexto histórico orientativo","titleText":"IMPERIO MONGOL 1206 - 1368 (162 AÑOS)"},"h-PJ37":{"p":["CHN"],"basis":"mención título"},"h-QR37":{"p":["CHN"],"basis":"mención título"},"h-SC37":{"p":["CHN"],"basis":"mención título"},"h-IB38":{"p":["MKD"],"basis":"mención título"},"h-NG38":{"p":["ESP"],"basis":"mención título"},"h-NT38":{"p":["ESP"],"basis":"mención título"},"h-PF38":{"p":["BGR","EGY","GRC","IRQ","SRB","SYR","TUR"],"basis":"contexto histórico orientativo","titleText":"IMPERIO OTOMANO 1299 - 1922 (623 años)"},"h-PG39":{"p":["MEX"],"basis":"mención título"},"h-SB40":{"p":["ESP","MAR"],"basis":"contexto histórico orientativo","titleText":"Guerra del Rif (1911 - 1927)"},"h-EO44":{"p":["EGY"],"basis":"mención título"},"h-GB44":{"p":["EGY"],"basis":"contexto histórico orientativo","titleText":"Tutankamón 1342 a.C. - 1325 a.C."},"h-JL44":{"p":["EGY","GRC","IRN","TUR"],"basis":"contexto histórico orientativo","titleText":"Alejandro Magno 356 A.C. - 323 A.C."},"h-JU44":{"p":["ITA","TUN"],"basis":"contexto histórico orientativo","titleText":"Escipión el Africano 236 A.C. - 183 A.C."},"h-KK44":{"p":["EGY"],"basis":"contexto histórico orientativo","titleText":"Cleopatra 69 a.C. - 30 a.C."},"h-PZ44":{"p":["ESP"],"basis":"mención título"},"h-RU44":{"p":["IND","ZAF"],"basis":"contexto histórico orientativo","titleText":"Mahatma Ghandi 1869 - 1948"},"h-LW46":{"p":["ITA"],"basis":"mención título"},"h-RH46":{"p":["FRA"],"basis":"mención título"},"h-JI53":{"p":["MKD"],"basis":"mención título"},"h-PA54":{"p":["ITA"],"basis":"mención título"},"h-RO54":{"p":["ESP"],"basis":"mención título"},"h-PS56":{"p":["ESP"],"basis":"mención título"},"h-KK58":{"p":["ITA"],"basis":"mención título"},"h-KU64":{"p":["ITA"],"basis":"mención título"},"h-SA96":{"p":["IND"],"basis":"mención título"},"h-EJ150":{"p":["ISR"],"basis":"mención título"},"f-2":{"p":["TUR"],"basis":"contexto histórico orientativo","titleText":"Tales de Mileto"},"f-5":{"p":["CHN"],"basis":"contexto histórico orientativo","titleText":"Confucio"},"f-6":{"p":["TUR"],"basis":"contexto histórico orientativo","titleText":"Heráclito"},"f-7":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Parménides"},"f-8":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"Sócrates"},"f-9":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"Platón"},"f-10":{"p":["GRC","TUR"],"basis":"contexto histórico orientativo","titleText":"Diógenes de Sinope"},"f-11":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"Aristóteles"},"f-12":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"Epicuro"},"f-13":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Marco Aurelio"},"f-14":{"p":["DZA"],"basis":"contexto histórico orientativo","titleText":"Agustín de Hipona"},"f-15":{"p":["EGY"],"basis":"contexto histórico orientativo","titleText":"Hipatia de Alejandría"},"f-16":{"p":["IRN","UZB"],"basis":"contexto histórico orientativo","titleText":"Avicena (Ibn Sina)"},"f-17":{"p":["ESP"],"basis":"contexto histórico orientativo","titleText":"Averroes (Ibn Rushd)"},"f-18":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Tomás de Aquino"},"f-19":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Nicolás Maquiavelo"},"f-20":{"p":["FRA"],"basis":"contexto histórico orientativo","titleText":"René Descartes"},"f-21":{"p":["GBR"],"basis":"contexto histórico orientativo","titleText":"John Locke"},"f-22":{"p":["NLD"],"basis":"contexto histórico orientativo","titleText":"Baruch Spinoza"},"f-23":{"p":["GBR"],"basis":"contexto histórico orientativo","titleText":"David Hume"},"f-24":{"p":["CHE","FRA"],"basis":"contexto histórico orientativo","titleText":"Jean-Jacques Rousseau"},"f-25":{"p":["DEU","RUS"],"basis":"contexto histórico orientativo","titleText":"Immanuel Kant"},"f-26":{"p":["DEU"],"basis":"contexto histórico orientativo","titleText":"G. W. F. Hegel"},"f-27":{"p":["DEU","POL"],"basis":"contexto histórico orientativo","titleText":"Arthur Schopenhauer"},"f-28":{"p":["DNK"],"basis":"contexto histórico orientativo","titleText":"Søren Kierkegaard"},"f-29":{"p":["DEU"],"basis":"contexto histórico orientativo","titleText":"Karl Marx"},"f-30":{"p":["RUS"],"basis":"contexto histórico orientativo","titleText":"Piotr Kropotkin"},"f-31":{"p":["DEU"],"basis":"contexto histórico orientativo","titleText":"Friedrich Nietzsche"},"f-32":{"p":["AUT","GBR"],"basis":"contexto histórico orientativo","titleText":"Ludwig Wittgenstein"},"f-33":{"p":["DEU"],"basis":"contexto histórico orientativo","titleText":"Martin Heidegger"},"f-34":{"p":["AUT","GBR"],"basis":"contexto histórico orientativo","titleText":"Karl Popper"},"f-35":{"p":["FRA"],"basis":"contexto histórico orientativo","titleText":"Jean-Paul Sartre"},"f-36":{"p":["DEU","USA"],"basis":"contexto histórico orientativo","titleText":"Hannah Arendt"},"p-116":{"p":["ITA"],"basis":"mención título"},"a-3-1":{"p":["ROU"],"basis":"mención título"},"a-3-2":{"p":["AZE"],"basis":"mención título"},"a-3-3":{"p":["ZAF"],"basis":"mención título"},"a-3-4":{"p":["DEU","LTU"],"basis":"mención título"},"a-3-5":{"p":["LTU"],"basis":"mención título"},"a-3-6":{"p":["DEU","NAM"],"basis":"mención título"},"a-3-7":{"p":["NIC"],"basis":"mención título"},"a-3-8":{"p":["DEU"],"basis":"mención título"},"a-3-9":{"p":["RUS"],"basis":"mención título"},"a-3-10":{"p":["USA"],"basis":"mención título"},"a-3-11":{"p":["RUS"],"basis":"mención título"},"a-3-12":{"p":["ZAF"],"basis":"mención título"},"a-3-13":{"p":["DEU"],"basis":"mención título"},"a-3-14":{"p":["IRQ","KWT"],"basis":"mención título"},"a-3-15":{"p":["IRQ","KWT"],"basis":"mención título"},"a-3-17":{"p":["DEU"],"basis":"mención título"},"a-3-19":{"p":["DEU"],"basis":"mención título"},"a-3-21":{"p":["IRQ"],"basis":"mención título"},"a-3-23":{"p":["POL"],"basis":"mención título"},"a-3-24":{"p":["HRV","SVN"],"basis":"mención título"},"a-4-1":{"p":["IRQ","LTU"],"basis":"mención título"},"a-4-2":{"p":["ISR"],"basis":"mención título"},"a-4-3":{"p":["LVA"],"basis":"mención título"},"a-4-4":{"p":["IRQ","KWT"],"basis":"mención título"},"a-4-5":{"p":["IRQ"],"basis":"mención título"},"a-4-6":{"p":["POL","SVN"],"basis":"mención título"},"a-4-8":{"p":["IRQ"],"basis":"mención título"},"a-4-9":{"p":["ETH","HRV"],"basis":"mención título"},"a-4-10":{"p":["ERI","IND"],"basis":"mención título"},"a-4-11":{"p":["RUS","ZAF"],"basis":"mención título"},"a-4-12":{"p":["HRV","SVN"],"basis":"mención título"},"a-4-13":{"p":["POL","SVN"],"basis":"mención título"},"a-4-14":{"p":["GBR"],"basis":"mención título"},"a-4-15":{"p":["UKR"],"basis":"mención título"},"a-4-16":{"p":["BLR","UKR"],"basis":"mención título"},"a-4-17":{"p":["HRV"],"basis":"mención título"},"a-4-18":{"p":["MKD"],"basis":"mención título"},"a-4-19":{"p":["HRV","RUS"],"basis":"mención título"},"a-4-20":{"p":["ESP"],"basis":"mención título"},"a-4-22":{"p":["HRV","RUS"],"basis":"mención título"},"a-4-23":{"p":["BLR","UKR"],"basis":"mención título"},"a-5-1":{"p":["KHM"],"basis":"mención título"},"a-5-2":{"p":["SLV"],"basis":"mención título"},"a-5-4":{"p":["BIH"],"basis":"mención título"},"a-5-6":{"p":["ZAF"],"basis":"mención título"},"a-5-7":{"p":["BIH"],"basis":"mención título"},"a-5-10":{"p":["THA"],"basis":"mención título"},"a-5-11":{"p":["BRA"],"basis":"mención título"},"a-5-13":{"p":["CZE"],"basis":"mención título"},"a-5-14":{"p":["ESP"],"basis":"mención título"},"a-5-16":{"p":["BIH"],"basis":"mención título"},"a-5-17":{"p":["IDN"],"basis":"mención título"},"a-5-19":{"p":["CZE"],"basis":"mención título"},"a-5-20":{"p":["SOM"],"basis":"mención título"},"a-5-22":{"p":["SOM"],"basis":"mención título"},"a-5-23":{"p":["SOM"],"basis":"mención título"},"a-6-1":{"p":["CZE","SVK"],"basis":"mención título"},"a-6-3":{"p":["BEL"],"basis":"mención título"},"a-6-4":{"p":["USA"],"basis":"mención título"},"a-6-5":{"p":["IND"],"basis":"mención título"},"a-6-6":{"p":["CHN"],"basis":"mención título"},"a-6-7":{"p":["ZAF"],"basis":"mención título"},"a-6-8":{"p":["USA"],"basis":"mención título"},"a-6-9":{"p":["ERI","ETH"],"basis":"mención título"},"a-6-11":{"p":["SOM"],"basis":"mención título"},"a-6-13":{"p":["TUR"],"basis":"mención título"},"a-6-14":{"p":["ISR","LBN"],"basis":"mención título"},"a-6-15":{"p":["JPN"],"basis":"mención título"},"a-6-16":{"p":["LTU","RUS"],"basis":"mención título"},"a-6-17":{"p":["ISR"],"basis":"mención título"},"a-6-18":{"p":["RUS"],"basis":"mención título"},"a-6-19":{"p":["RUS","SOM"],"basis":"mención título"},"a-6-23":{"p":["COL"],"basis":"mención título"},"a-6-24":{"p":["URY"],"basis":"mención título"},"a-7-1":{"p":["MEX"],"basis":"mención título"},"a-7-2":{"p":["RUS"],"basis":"mención título"},"a-7-3":{"p":["BIH"],"basis":"mención título"},"a-7-4":{"p":["BIH"],"basis":"mención título"},"a-7-6":{"p":["BIH"],"basis":"mención título"},"a-7-8":{"p":["ZAF"],"basis":"mención título"},"a-7-9":{"p":["ISR","PSE"],"basis":"mención título"},"a-7-10":{"p":["ZAF"],"basis":"mención título"},"a-7-12":{"p":["RUS"],"basis":"mención título"},"a-7-13":{"p":["YEM"],"basis":"mención título"},"a-7-14":{"p":["ISR","JOR"],"basis":"mención título"},"a-7-15":{"p":["HTI"],"basis":"mención título"},"a-7-17":{"p":["HTI"],"basis":"mención título"},"a-7-18":{"p":["HTI"],"basis":"mención título"},"a-7-19":{"p":["HTI"],"basis":"mención título"},"a-7-20":{"p":["ISR","JOR"],"basis":"mención título"},"a-7-22":{"p":["BIH"],"basis":"mención título"},"a-7-23":{"p":["RUS"],"basis":"mención título"},"a-7-24":{"p":["SOM"],"basis":"mención título"},"a-8-1":{"p":["JPN"],"basis":"mención título"},"a-8-2":{"p":["MEX"],"basis":"mención título"},"a-8-3":{"p":["BIH"],"basis":"mención título"},"a-8-4":{"p":["GBR"],"basis":"mención título"},"a-8-6":{"p":["JPN"],"basis":"mención título"},"a-8-8":{"p":["ZAF"],"basis":"mención título"},"a-8-9":{"p":["FRA"],"basis":"mención título"},"a-8-11":{"p":["RUS"],"basis":"mención título"},"a-8-12":{"p":["KOR"],"basis":"mención título"},"a-8-13":{"p":["BIH"],"basis":"mención título"},"a-8-14":{"p":["FRA"],"basis":"mención título"},"a-8-15":{"p":["HRV"],"basis":"mención título"},"a-8-16":{"p":["BIH"],"basis":"mención título"},"a-8-17":{"p":["BIH"],"basis":"mención título"},"a-8-18":{"p":["PSE"],"basis":"mención título"},"a-8-19":{"p":["BIH"],"basis":"mención título"},"a-8-20":{"p":["CAN"],"basis":"mención título"},"a-8-21":{"p":["ISR"],"basis":"mención título"},"a-8-24":{"p":["ISR","PSE"],"basis":"mención título"},"a-9-1":{"p":["RUS"],"basis":"mención título"},"a-9-3":{"p":["ECU","PER"],"basis":"mención título"},"a-9-5":{"p":["ISR"],"basis":"mención título"},"a-9-7":{"p":["ISR","LBN"],"basis":"mención título"},"a-9-9":{"p":["ISR"],"basis":"mención título"},"a-9-10":{"p":["RUS"],"basis":"mención título"},"a-9-12":{"p":["SAU"],"basis":"mención título"},"a-9-13":{"p":["RUS"],"basis":"mención título"},"a-9-16":{"p":["RUS"],"basis":"mención título"},"a-9-17":{"p":["AFG"],"basis":"mención título"},"a-9-19":{"p":["ISR"],"basis":"mención título"},"a-9-21":{"p":["USA"],"basis":"mención título"},"a-9-24":{"p":["PER"],"basis":"mención título"},"a-10-2":{"p":["USA"],"basis":"mención título"},"a-10-3":{"p":["BIH"],"basis":"mención título"},"a-10-7":{"p":["BLR","RUS"],"basis":"mención título"},"a-10-8":{"p":["PER"],"basis":"mención título"},"a-10-9":{"p":["GBR"],"basis":"mención título"},"a-10-11":{"p":["ESP"],"basis":"mención título"},"a-10-13":{"p":["CHN"],"basis":"mención título"},"a-10-16":{"p":["FRA"],"basis":"mención título"},"a-10-18":{"p":["GBR"],"basis":"mención título"},"a-10-22":{"p":["KOR"],"basis":"mención título"},"a-11-2":{"p":["CUB"],"basis":"mención título"},"a-11-3":{"p":["USA"],"basis":"mención título"},"a-11-4":{"p":["IRQ"],"basis":"mención título"},"a-11-5":{"p":["SRB"],"basis":"mención título"},"a-11-7":{"p":["IRL"],"basis":"mención título"},"a-11-8":{"p":["KHM"],"basis":"mención título"},"a-11-9":{"p":["IND"],"basis":"mención título"},"a-11-10":{"p":["IDN","PAK"],"basis":"mención título"},"a-11-11":{"p":["DEU"],"basis":"mención título"},"a-11-13":{"p":["FRA"],"basis":"mención título"},"a-11-16":{"p":["AFG","SDN","USA"],"basis":"mención título"},"a-11-21":{"p":["USA"],"basis":"mención título"},"a-11-22":{"p":["IRQ"],"basis":"mención título"},"a-11-24":{"p":["GBR","IRQ","USA"],"basis":"mención título"},"a-12-3":{"p":["JOR"],"basis":"mención título"},"a-12-5":{"p":["SRB"],"basis":"mención título"},"a-12-8":{"p":["CHN","SRB"],"basis":"mención título"},"a-12-14":{"p":["MAR"],"basis":"mención título"},"a-12-15":{"p":["RUS"],"basis":"mención título"},"a-12-16":{"p":["TUR"],"basis":"mención título"},"a-12-18":{"p":["RUS"],"basis":"mención título"},"a-12-19":{"p":["RUS"],"basis":"mención título"},"a-12-20":{"p":["IDN","PAK"],"basis":"mención título"},"a-12-22":{"p":["GBR"],"basis":"mención título"},"a-12-24":{"p":["RUS"],"basis":"mención título"},"a-13-3":{"p":["AUT"],"basis":"mención título"},"a-13-4":{"p":["JPN"],"basis":"mención título"},"a-13-5":{"p":["RUS"],"basis":"mención título"},"a-13-10":{"p":["ISR","LBN"],"basis":"mención título"},"a-13-12":{"p":["ISR","PSE"],"basis":"mención título"},"a-13-14":{"p":["FRA"],"basis":"mención título"},"a-13-15":{"p":["RUS"],"basis":"mención título"},"a-13-17":{"p":["AUS"],"basis":"mención título"},"a-13-18":{"p":["PSE"],"basis":"mención título"},"a-13-20":{"p":["YEM"],"basis":"mención título"},"a-14-1":{"p":["SLV"],"basis":"mención título"},"a-14-2":{"p":["USA"],"basis":"mención título"},"a-14-3":{"p":["ISR"],"basis":"mención título"},"a-14-4":{"p":["JPN"],"basis":"mención título"},"a-14-7":{"p":["CHN","USA"],"basis":"mención título"},"a-14-9":{"p":["GRC"],"basis":"mención título"},"a-14-10":{"p":["ISR"],"basis":"mención título"},"a-14-11":{"p":["GBR"],"basis":"mención título"},"a-14-12":{"p":["SVN"],"basis":"mención título"},"a-14-14":{"p":["ITA"],"basis":"mención título"},"a-14-15":{"p":["MKD"],"basis":"mención título"},"a-14-16":{"p":["ISR","PSE"],"basis":"mención título"},"a-14-17":{"p":["USA"],"basis":"mención título"},"a-14-18":{"p":["USA"],"basis":"mención título"},"a-14-19":{"p":["AFG","USA"],"basis":"mención título"},"a-14-20":{"p":["USA"],"basis":"mención título"},"a-14-21":{"p":["AFG"],"basis":"mención título"},"a-14-24":{"p":["ARG"],"basis":"mención título"},"a-15-2":{"p":["IRQ"],"basis":"mención título"},"a-15-5":{"p":["AFG"],"basis":"mención título"},"a-15-6":{"p":["ISR"],"basis":"mención título"},"a-15-7":{"p":["VEN"],"basis":"mención título"},"a-15-9":{"p":["NLD"],"basis":"mención título"},"a-15-11":{"p":["JPN"],"basis":"mención título"},"a-15-12":{"p":["CAN"],"basis":"mención título"},"a-15-15":{"p":["RUS"],"basis":"mención título"},"a-15-17":{"p":["IRQ"],"basis":"mención título"},"a-15-18":{"p":["IRQ"],"basis":"mención título"},"a-15-20":{"p":["RUS"],"basis":"mención título"},"a-15-21":{"p":["PRK"],"basis":"mención título"},"a-15-23":{"p":["VEN"],"basis":"mención título"},"a-15-24":{"p":["PRK"],"basis":"mención título"},"a-16-1":{"p":["IRQ"],"basis":"mención título"},"a-16-2":{"p":["IRQ"],"basis":"mención título"},"a-16-4":{"p":["IRQ"],"basis":"mención título"},"a-16-6":{"p":["IRQ"],"basis":"mención título"},"a-16-7":{"p":["IRQ"],"basis":"mención título"},"a-16-9":{"p":["IRQ"],"basis":"mención título"},"a-16-10":{"p":["ISR","PSE"],"basis":"mención título"},"a-16-12":{"p":["IRQ"],"basis":"mención título"},"a-16-15":{"p":["IDN"],"basis":"mención título"},"a-16-16":{"p":["IRQ"],"basis":"mención título"},"a-16-17":{"p":["IRQ"],"basis":"mención título"},"a-16-18":{"p":["IRN"],"basis":"mención título"},"a-16-19":{"p":["CHN"],"basis":"mención título"},"a-16-20":{"p":["IRQ"],"basis":"mención título"},"a-16-21":{"p":["TUR"],"basis":"mención título"},"a-16-22":{"p":["GEO"],"basis":"mención título"},"a-17-1":{"p":["GEO"],"basis":"mención título"},"a-17-5":{"p":["ESP"],"basis":"mención título"},"a-17-6":{"p":["PSE"],"basis":"mención título"},"a-17-7":{"p":["IRQ"],"basis":"mención título"},"a-17-10":{"p":["IND"],"basis":"mención título"},"a-17-11":{"p":["IRQ"],"basis":"mención título"},"a-17-12":{"p":["IRQ"],"basis":"mención título"},"a-17-14":{"p":["IRQ"],"basis":"mención título"},"a-17-23":{"p":["IRQ"],"basis":"mención título"},"a-18-4":{"p":["LBN"],"basis":"mención título"},"a-18-6":{"p":["LBN"],"basis":"mención título"},"a-18-9":{"p":["GBR"],"basis":"mención título"},"a-18-10":{"p":["FRA","NLD"],"basis":"mención título"},"a-18-13":{"p":["GBR"],"basis":"mención título"},"a-18-14":{"p":["GBR"],"basis":"mención título"},"a-18-17":{"p":["DEU"],"basis":"mención título"},"a-18-18":{"p":["DEU"],"basis":"mención título"},"a-18-19":{"p":["IRQ"],"basis":"mención título"},"a-18-20":{"p":["FRA"],"basis":"mención título"},"a-18-21":{"p":["DEU"],"basis":"mención título"},"a-18-23":{"p":["IRQ"],"basis":"mención título"},"a-19-4":{"p":["PHL"],"basis":"mención título"},"a-19-7":{"p":["IRN"],"basis":"mención título"},"a-19-8":{"p":["NPL"],"basis":"mención título"},"a-19-9":{"p":["IRN"],"basis":"mención título"},"a-19-10":{"p":["MNE","SRB"],"basis":"mención título"},"a-19-11":{"p":["IRQ"],"basis":"mención título"},"a-19-12":{"p":["ISR","PSE"],"basis":"mención título"},"a-19-13":{"p":["PRK"],"basis":"mención título"},"a-19-14":{"p":["ISR","LBN"],"basis":"mención título"},"a-19-15":{"p":["GBR"],"basis":"mención título"},"a-19-19":{"p":["PRK"],"basis":"mención título"},"a-19-20":{"p":["PRK"],"basis":"mención título"},"a-19-22":{"p":["IRQ"],"basis":"mención título"},"a-19-23":{"p":["FJI"],"basis":"mención título"},"a-19-24":{"p":["IRQ"],"basis":"mención título"},"a-20-1":{"p":["BGR","ROU"],"basis":"mención título"},"a-20-4":{"p":["PRK"],"basis":"mención título"},"a-20-6":{"p":["IRN"],"basis":"mención título"},"a-20-7":{"p":["USA"],"basis":"mención título"},"a-20-8":{"p":["EST"],"basis":"mención título"},"a-20-9":{"p":["FRA"],"basis":"mención título"},"a-20-10":{"p":["RUS"],"basis":"mención título"},"a-20-11":{"p":["DEU"],"basis":"mención título"},"a-20-12":{"p":["PSE"],"basis":"mención título"},"a-20-14":{"p":["JPN"],"basis":"mención título"},"a-20-15":{"p":["USA"],"basis":"mención título"},"a-20-16":{"p":["PER"],"basis":"mención título"},"a-20-17":{"p":["ISR","SYR"],"basis":"mención título"},"a-20-18":{"p":["JPN"],"basis":"mención título"},"a-20-20":{"p":["PAK"],"basis":"mención título"},"a-20-21":{"p":["PAK"],"basis":"mención título"},"a-20-23":{"p":["PRT"],"basis":"mención título"},"a-20-24":{"p":["PAK"],"basis":"mención título"},"a-21-1":{"p":["KEN","SVN"],"basis":"mención título"},"a-21-2":{"p":["USA"],"basis":"mención título"},"a-21-3":{"p":["USA"],"basis":"mención título"},"a-21-4":{"p":["CUB","RUS"],"basis":"mención título"},"a-21-7":{"p":["ROU"],"basis":"mención título"},"a-21-8":{"p":["NPL","USA"],"basis":"mención título"},"a-21-9":{"p":["CHN","MMR"],"basis":"mención título"},"a-21-10":{"p":["COL","LBN"],"basis":"mención título"},"a-21-11":{"p":["IRL","PRT"],"basis":"mención título"},"a-21-12":{"p":["USA"],"basis":"mención título"},"a-21-13":{"p":["IND","JPN","USA"],"basis":"mención título"},"a-21-15":{"p":["CHN","GEO","RUS"],"basis":"mención título"},"a-21-16":{"p":["GEO","RUS"],"basis":"mención título"},"a-21-19":{"p":["ISL","USA"],"basis":"mención título"},"a-21-21":{"p":["USA"],"basis":"mención título"},"a-21-22":{"p":["IND","USA"],"basis":"mención título"},"a-21-23":{"p":["USA"],"basis":"mención título"},"a-21-24":{"p":["ISR","PSE"],"basis":"mención título"},"a-22-1":{"p":["PSE","RUS","UKR"],"basis":"mención título"},"a-22-6":{"p":["PRK"],"basis":"mención título"},"a-22-7":{"p":["PRK","SOM"],"basis":"mención título"},"a-22-9":{"p":["LKA"],"basis":"mención título"},"a-22-10":{"p":["PRK"],"basis":"mención título"},"a-22-11":{"p":["IRN"],"basis":"mención título"},"a-22-12":{"p":["IRN"],"basis":"mención título"},"a-22-13":{"p":["CHN"],"basis":"mención título"},"a-22-14":{"p":["PRK"],"basis":"mención título"},"a-22-15":{"p":["PRK"],"basis":"mención título"},"a-22-16":{"p":["AFG"],"basis":"mención título"},"a-22-17":{"p":["DEU"],"basis":"mención título"},"a-22-18":{"p":["IRN"],"basis":"mención título"},"a-22-20":{"p":["IRQ","PRT"],"basis":"mención título"},"a-22-21":{"p":["HND"],"basis":"mención título"},"a-22-22":{"p":["ARE","DEU"],"basis":"mención título"},"a-23-1":{"p":["HTI"],"basis":"mención título"},"a-23-4":{"p":["CHL"],"basis":"mención título"},"a-23-5":{"p":["GRC"],"basis":"mención título"},"a-23-9":{"p":["GRC"],"basis":"mención título"},"a-23-10":{"p":["THA"],"basis":"mención título"},"a-23-11":{"p":["ZAF"],"basis":"mención título"},"a-23-13":{"p":["ESP","ZAF"],"basis":"mención título"},"a-23-14":{"p":["AFG"],"basis":"mención título"},"a-23-15":{"p":["PAK"],"basis":"mención título"},"a-23-16":{"p":["IRQ","USA"],"basis":"mención título"},"a-23-18":{"p":["GBR"],"basis":"mención título"},"a-23-20":{"p":["IRQ"],"basis":"mención título"},"a-23-21":{"p":["KOR"],"basis":"mención título"},"a-23-22":{"p":["IRL"],"basis":"mención título"},"a-23-23":{"p":["USA"],"basis":"mención título"},"a-24-1":{"p":["TUN"],"basis":"mención título"},"a-24-2":{"p":["EGY"],"basis":"mención título"},"a-24-3":{"p":["EGY"],"basis":"mención título"},"a-24-4":{"p":["LBY"],"basis":"mención título"},"a-24-6":{"p":["LBY"],"basis":"mención título"},"a-24-7":{"p":["SYR"],"basis":"mención título"},"a-24-8":{"p":["YEM"],"basis":"mención título"},"a-24-10":{"p":["PRT"],"basis":"mención título"},"a-24-11":{"p":["SYR"],"basis":"mención título"},"a-24-12":{"p":["GRC"],"basis":"mención título"},"a-24-13":{"p":["SDN"],"basis":"mención título"},"a-24-14":{"p":["NOR"],"basis":"mención título"},"a-24-15":{"p":["GBR"],"basis":"mención título"},"a-24-16":{"p":["LBY"],"basis":"mención título"},"a-24-17":{"p":["PSE"],"basis":"mención título"},"a-24-21":{"p":["ITA"],"basis":"mención título"},"a-24-22":{"p":["EGY"],"basis":"mención título"},"a-24-23":{"p":["RUS"],"basis":"mención título"},"a-25-4":{"p":["DEU"],"basis":"mención título"},"a-25-6":{"p":["CUB","MEX"],"basis":"mención título"},"a-25-8":{"p":["ARG"],"basis":"mención título"},"a-25-9":{"p":["FRA"],"basis":"mención título"},"a-25-11":{"p":["GBR"],"basis":"mención título"},"a-25-18":{"p":["CHN","JPN"],"basis":"mención título"},"a-25-22":{"p":["PSE"],"basis":"mención título"},"a-26-4":{"p":["RUS"],"basis":"mención título"},"a-26-10":{"p":["SYR"],"basis":"mención título"},"a-26-12":{"p":["BRA"],"basis":"mención título"},"a-26-13":{"p":["EGY"],"basis":"mención título"},"a-26-17":{"p":["SYR"],"basis":"mención título"},"a-26-18":{"p":["USA"],"basis":"mención título"},"a-26-21":{"p":["PHL"],"basis":"mención título"},"a-26-22":{"p":["UKR"],"basis":"mención título"},"a-26-23":{"p":["ZAF"],"basis":"mención título"},"a-26-24":{"p":["SDN"],"basis":"mención título"},"a-27-4":{"p":["UKR"],"basis":"mención título"},"a-27-6":{"p":["RUS","UKR"],"basis":"mención título"},"a-27-9":{"p":["THA"],"basis":"mención título"},"a-27-10":{"p":["IND"],"basis":"mención título"},"a-27-11":{"p":["IRQ"],"basis":"mención título"},"a-27-12":{"p":["BRA"],"basis":"mención título"},"a-27-13":{"p":["UKR"],"basis":"mención título"},"a-27-16":{"p":["SYR"],"basis":"mención título"},"a-27-18":{"p":["GBR"],"basis":"mención título"},"a-27-22":{"p":["CHN"],"basis":"mención título"},"a-27-23":{"p":["CUB","USA"],"basis":"mención título"},"a-28-4":{"p":["UKR"],"basis":"mención título"},"a-28-6":{"p":["YEM"],"basis":"mención título"},"a-28-7":{"p":["NPL"],"basis":"mención título"},"a-28-9":{"p":["IRL"],"basis":"mención título"},"a-28-12":{"p":["TUN"],"basis":"mención título"},"a-28-13":{"p":["IRN"],"basis":"mención título"},"a-28-14":{"p":["CUB"],"basis":"mención título"},"a-28-20":{"p":["MEX"],"basis":"mención título"},"a-28-21":{"p":["FRA"],"basis":"mención título"},"a-28-22":{"p":["RUS"],"basis":"mención título"},"a-28-23":{"p":["FRA"],"basis":"mención título"},"a-29-1":{"p":["IRN"],"basis":"mención título"},"a-29-4":{"p":["SYR"],"basis":"mención título"},"a-29-5":{"p":["BEL"],"basis":"mención título"},"a-29-6":{"p":["CUB"],"basis":"mención título"},"a-29-7":{"p":["ECU"],"basis":"mención título"},"a-29-8":{"p":["PAN"],"basis":"mención título"},"a-29-10":{"p":["JPN"],"basis":"mención título"},"a-29-11":{"p":["GBR"],"basis":"mención título"},"a-29-13":{"p":["TUR"],"basis":"mención título"},"a-29-16":{"p":["ITA"],"basis":"mención título"},"a-29-17":{"p":["COL"],"basis":"mención título"},"a-29-23":{"p":["DEU"],"basis":"mención título"},"a-29-24":{"p":["CUB"],"basis":"mención título"},"a-30-5":{"p":["GBR"],"basis":"mención título"},"a-30-7":{"p":["SYR"],"basis":"mención título"},"a-30-8":{"p":["RUS"],"basis":"mención título"},"a-30-9":{"p":["FRA"],"basis":"mención título"},"a-30-13":{"p":["IRQ"],"basis":"mención título"},"a-30-16":{"p":["USA"],"basis":"mención título"},"a-30-18":{"p":["MEX"],"basis":"mención título"},"a-30-21":{"p":["IRN","IRQ"],"basis":"mención título"},"a-30-24":{"p":["IRQ"],"basis":"mención título"},"a-31-2":{"p":["SYR","TUR"],"basis":"mención título"},"a-31-7":{"p":["CUB"],"basis":"mención título"},"a-31-9":{"p":["IRN"],"basis":"mención título"},"a-31-12":{"p":["RUS"],"basis":"mención título"},"a-31-13":{"p":["THA"],"basis":"mención título"},"a-31-14":{"p":["MEX"],"basis":"mención título"},"a-31-15":{"p":["ITA"],"basis":"mención título"},"a-31-18":{"p":["BRA"],"basis":"mención título"},"a-31-21":{"p":["USA"],"basis":"mención título"},"a-32-1":{"p":["BRA"],"basis":"mención título"},"a-32-2":{"p":["VEN"],"basis":"mención título"},"a-32-4":{"p":["MKD"],"basis":"mención título"},"a-32-5":{"p":["NZL"],"basis":"mención título"},"a-32-9":{"p":["JPN"],"basis":"mención título"},"a-32-13":{"p":["GBR"],"basis":"mención título"},"a-32-16":{"p":["IND"],"basis":"mención título"},"a-32-20":{"p":["CHL"],"basis":"mención título"},"a-32-21":{"p":["BOL"],"basis":"mención título"},"a-32-22":{"p":["IRN"],"basis":"mención título"},"a-33-3":{"p":["AFG"],"basis":"mención título"},"a-33-13":{"p":["CHN"],"basis":"mención título"},"a-33-15":{"p":["LBN"],"basis":"mención título"},"a-33-17":{"p":["USA"],"basis":"mención título"},"a-34-3":{"p":["MMR"],"basis":"mención título"},"a-34-7":{"p":["IND"],"basis":"mención título"},"a-34-8":{"p":["CUB"],"basis":"mención título"},"a-34-9":{"p":["ISR","PSE"],"basis":"mención título"},"a-34-11":{"p":["PER"],"basis":"mención título"},"a-34-13":{"p":["JPN"],"basis":"mención título"},"a-34-14":{"p":["HTI"],"basis":"mención título"},"a-34-15":{"p":["AFG"],"basis":"mención título"},"a-34-16":{"p":["AFG"],"basis":"mención título"},"a-35-1":{"p":["KAZ"],"basis":"mención título"},"a-35-3":{"p":["CHN"],"basis":"mención título"},"a-35-4":{"p":["RUS","UKR"],"basis":"mención título"},"a-35-5":{"p":["RUS"],"basis":"mención título"},"a-35-8":{"p":["FRA"],"basis":"mención título"},"a-35-16":{"p":["PAK"],"basis":"mención título"},"a-35-18":{"p":["IRN"],"basis":"mención título"},"a-35-23":{"p":["ARG","QAT"],"basis":"mención título"},"a-35-24":{"p":["USA"],"basis":"mención título"},"a-36-1":{"p":["BRA"],"basis":"mención título"},"a-36-2":{"p":["BRA"],"basis":"mención título"},"a-36-3":{"p":["SYR","TUR"],"basis":"mención título"},"a-36-4":{"p":["UKR"],"basis":"mención título"},"a-36-7":{"p":["SDN"],"basis":"mención título"},"a-36-8":{"p":["FIN"],"basis":"mención título"},"a-36-11":{"p":["RUS"],"basis":"mención título"},"a-36-17":{"p":["MAR"],"basis":"mención título"},"a-36-18":{"p":["AZE"],"basis":"mención título"},"a-36-19":{"p":["ISR"],"basis":"mención título"},"a-36-20":{"p":["ISR","PSE"],"basis":"mención título"},"a-36-21":{"p":["ARG"],"basis":"mención título"},"a-36-22":{"p":["PSE"],"basis":"mención título"},"a-37-5":{"p":["RUS"],"basis":"mención título"},"a-37-6":{"p":["HTI"],"basis":"mención título"},"a-37-7":{"p":["IRN","ISR"],"basis":"mención título"},"a-37-9":{"p":["IRN"],"basis":"mención título"},"a-37-10":{"p":["MEX"],"basis":"mención título"},"a-37-14":{"p":["FRA"],"basis":"mención título"},"a-37-16":{"p":["VEN"],"basis":"mención título"},"a-37-17":{"p":["CHN"],"basis":"mención título"},"a-37-18":{"p":["ISR","LBN"],"basis":"mención título"},"a-38-1":{"p":["ESP","PSE"],"basis":"mención título"},"a-38-2":{"p":["COL"],"basis":"mención título"},"a-38-3":{"p":["CAN","CHN","GTM","MEX"],"basis":"mención título"},"a-38-4":{"p":["MKD","ROU"],"basis":"mención título"},"a-38-5":{"p":["RUS","UKR"],"basis":"mención título"},"a-38-6":{"p":["JPN"],"basis":"mención título"},"a-38-13":{"p":["ESP"],"basis":"mención título"},"a-38-14":{"p":["CHN"],"basis":"mención título"},"a-38-15":{"p":["ESP"],"basis":"mención título"},"a-39-5":{"p":["IRN"],"basis":"mención título"},"c-3-74":{"p":["GBR","USA"],"basis":"contexto histórico orientativo","titleText":"2001: Odisea del espacio (1968) – Stanley Kubrick (1928-1999)"},"c-3-81":{"p":["GBR","USA"],"basis":"contexto histórico orientativo","titleText":"Barry Lyndon (1975) – Stanley Kubrick (1928-1999)"},"c-3-85":{"p":["USA"],"basis":"contexto histórico orientativo","titleText":"Apocalypse Now (1979) – Francis Ford Coppola (1939- )"},"c-3-88":{"p":["GBR","USA"],"basis":"contexto histórico orientativo","titleText":"Blade Runner (1982) – Ridley Scott (1937- )"},"c-5-85":{"p":["ESP"],"basis":"contexto histórico orientativo","titleText":"Arrebato (1979) - Iván Zulueta (1943–2009)"},"c-7-85":{"p":["GBR","USA"],"basis":"contexto histórico orientativo","titleText":"Alien, el octavo pasajero (1979) – Ridley Scott (1937- )"},"c-10-49":{"p":["ESP"],"basis":"contexto histórico orientativo","titleText":"Iván Zulueta (1943–2009)"},"c-12-34":{"p":["FRA"],"basis":"contexto histórico orientativo","titleText":"Jacques Rivette (1928–2016)"},"c-14-38":{"p":["FRA"],"basis":"contexto histórico orientativo","titleText":"François Truffaut (1932–1984)"},"c-16-34":{"p":["GBR","USA"],"basis":"contexto histórico orientativo","titleText":"Stanley Kubrick (1928-1999)"},"c-18-43":{"p":["GBR"],"basis":"contexto histórico orientativo","titleText":"Ridley Scott (1937- )"},"l-2":{"p":["EGY"],"basis":"contexto histórico orientativo","titleText":"Textos de las Pirámides"},"l-3":{"p":["IRQ"],"basis":"contexto histórico orientativo","titleText":"Himnos de Enheduanna"},"l-4":{"p":["IRQ"],"basis":"contexto histórico orientativo","titleText":"La Epopeya de Gilgamesh (versiones sumerias iniciales)"},"l-5":{"p":["EGY"],"basis":"contexto histórico orientativo","titleText":"Historia de Sinuhé y Cuento del Náufrago"},"l-6":{"p":["IRQ"],"basis":"contexto histórico orientativo","titleText":"La Epopeya de Gilgamesh (Versión estándar acadia)"},"l-7":{"p":["IRQ"],"basis":"contexto histórico orientativo","titleText":"El Enuma Elish"},"l-8":{"p":["IND"],"basis":"contexto histórico orientativo","titleText":"El Rig-veda"},"l-9":{"p":["CHN"],"basis":"contexto histórico orientativo","titleText":"El Libro de los Cantos (Shi Jing)"},"l-11":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"La Ilíada"},"l-12":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"La Odisea"},"l-14":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"La Teogonía y Trabajos y días"},"l-16":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"La Orestíada (Agamenón, Las Coéforas, Las Euménides)"},"l-17":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"Edipo Rey (y la trilogía tebana)"},"l-18":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"Las historias"},"l-19":{"p":["GRC"],"basis":"contexto histórico orientativo","titleText":"La República (y los Diálogos)"},"l-20":{"p":["IND"],"basis":"contexto histórico orientativo","titleText":"El Ramayana y el Mahabharata"},"l-21":{"p":["GRC","ITA"],"basis":"contexto histórico orientativo","titleText":"El asno de oro / Comedias de Plauto y Terencio"},"l-22":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"De Rerum Natura (Sobre la naturaleza de las cosas)"},"l-23":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"La Eneida"},"l-24":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Las Metamorfosis"},"l-25":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Anales e Historias"},"l-26":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Las Metamorfosis (El asno de oro)"},"l-28":{"p":["ITA"],"basis":"mención ficha original"},"l-29":{"p":["GBR"],"basis":"contexto histórico orientativo","titleText":"Beowulf"},"l-30":{"p":["CHN","DEU"],"basis":"contexto histórico orientativo","titleText":"El Cantar de los Nibelungos (raíces germánicas) / Literatura clásica de la Tang"},"l-31":{"p":["JPN"],"basis":"contexto histórico orientativo","titleText":"La historia de Genji (Genji Monogatari)"},"l-32":{"p":["ESP","FRA"],"basis":"contexto histórico orientativo","titleText":"El Cantar de mío Cid (raíces o tradición previa) / El Cantar de Roldán"},"l-33":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"La Divina Comedia"},"l-34":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"El Decamerón"},"l-35":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Cancionero (Il Canzoniere)"},"l-36":{"p":["GBR"],"basis":"contexto histórico orientativo","titleText":"Los cuentos de Canterbury"},"l-37":{"p":["ESP"],"basis":"contexto histórico orientativo","titleText":"La Celestina (Comedia o Tragicomedia de Calisto y Melibea)"},"l-38":{"p":["ITA"],"basis":"contexto histórico orientativo","titleText":"Orlando furioso"},"l-39":{"p":["GBR"],"basis":"contexto histórico orientativo","titleText":"Utopía"},"l-40":{"p":["FRA"],"basis":"mención ficha original"},"l-41":{"p":["ESP"],"basis":"mención ficha original"},"l-42":{"p":["FRA"],"basis":"mención ficha original"}}}
+{
+  "schema": 1,
+  "generated": "2026-11-12",
+  "note": "Las vinculaciones son referencias geográficas a países o territorios actuales, no equivalentes a fronteras históricas. Clasificación incompleta; contexto histórico orientativo requiere revisión.",
+  "source": "Archivo cronológico IDEA LAB · menciones textuales + asociaciones históricas orientativas",
+  "links": {
+    "h-NJ13": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Invasión Lindisfarne 793"
+    },
+    "h-SD17": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "h-SQ20": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-PB21": {
+      "p": [
+        "CHN",
+        "MNG"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Imperio Mongol conquista China 1279"
+    },
+    "h-PW21": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-JY22": {
+      "p": [
+        "GRC",
+        "ITA",
+        "MKD"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Segunda Guerra Macedónica 200 a.C. - 197 a.C. (es cuando los romanos invaden Grecia)"
+    },
+    "h-NK22": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "h-NM22": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "h-RL22": {
+      "p": [
+        "ESP",
+        "FRA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Ocupación francesa en España 1808 - 1814"
+    },
+    "h-ST22": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-QR23": {
+      "p": [
+        "DEU",
+        "FRA",
+        "SWE"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Paz de Westfalia 1648"
+    },
+    "h-IW24": {
+      "p": [
+        "GRC",
+        "IRN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Guerras Médicas (Grecia y Persia) 490 a.C. - 449 a.C."
+    },
+    "h-SR24": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Guerra Civil Española 1936 - 1939"
+    },
+    "h-JQ25": {
+      "p": [
+        "ITA",
+        "TUN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Primera Guerra Púnica 264 a.C - 241 a.c.)"
+    },
+    "h-JW25": {
+      "p": [
+        "ITA",
+        "TUN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Segunda Guerra Púnica (218 a.C.)"
+    },
+    "h-KE25": {
+      "p": [
+        "ITA",
+        "TUN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Tercera Guerra Púnica 149 - 146 a.C."
+    },
+    "h-MZ26": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-RH26": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "h-HS27": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "mención título"
+    },
+    "h-QX27": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-IC28": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "h-RL28": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-IQ29": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "h-CZ30": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "IMPERIO EGIPCIO 3.150 a.C. - 31 a.C."
+    },
+    "h-LJ30": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "h-QA30": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "h-QN31": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-RH31": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "h-IU34": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "h-KR34": {
+      "p": [
+        "EGY",
+        "ESP",
+        "FRA",
+        "GBR",
+        "GRC",
+        "ITA",
+        "TUR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "IMPERIO ROMANO 29 a.C - 476 d.C."
+    },
+    "h-QO34": {
+      "p": [
+        "IDN",
+        "NLD",
+        "ZAF"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "IMPERIO NEERLANDÉS 1603 - 1975 (372 años)"
+    },
+    "h-JR35": {
+      "p": [
+        "ITA",
+        "TUN"
+      ],
+      "basis": "mención título"
+    },
+    "h-NB35": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-PX35": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-PY36": {
+      "p": [
+        "AUS",
+        "CAN",
+        "GBR",
+        "IND",
+        "ZAF"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "IMPERIO BRITÁNICO 1497 - 1997 (500 años)"
+    },
+    "h-JY37": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "h-OU37": {
+      "p": [
+        "CHN",
+        "IRN",
+        "IRQ",
+        "MNG",
+        "RUS"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "IMPERIO MONGOL 1206 - 1368 (162 AÑOS)"
+    },
+    "h-PJ37": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "h-QR37": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "h-SC37": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "h-IB38": {
+      "p": [
+        "MKD"
+      ],
+      "basis": "mención título"
+    },
+    "h-NG38": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-NT38": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-PF38": {
+      "p": [
+        "BGR",
+        "EGY",
+        "GRC",
+        "IRQ",
+        "SRB",
+        "SYR",
+        "TUR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "IMPERIO OTOMANO 1299 - 1922 (623 años)"
+    },
+    "h-PG39": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "h-SB40": {
+      "p": [
+        "ESP",
+        "MAR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Guerra del Rif (1911 - 1927)"
+    },
+    "h-EO44": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "mención título"
+    },
+    "h-GB44": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Tutankamón 1342 a.C. - 1325 a.C."
+    },
+    "h-JL44": {
+      "p": [
+        "EGY",
+        "GRC",
+        "IRN",
+        "TUR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Alejandro Magno 356 A.C. - 323 A.C."
+    },
+    "h-JU44": {
+      "p": [
+        "ITA",
+        "TUN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Escipión el Africano 236 A.C. - 183 A.C."
+    },
+    "h-KK44": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Cleopatra 69 a.C. - 30 a.C."
+    },
+    "h-PZ44": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-RU44": {
+      "p": [
+        "IND",
+        "ZAF"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Mahatma Ghandi 1869 - 1948"
+    },
+    "h-LW46": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "h-RH46": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "h-JI53": {
+      "p": [
+        "MKD"
+      ],
+      "basis": "mención título"
+    },
+    "h-PA54": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "h-RO54": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-PS56": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "h-KK58": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "h-KU64": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "h-SA96": {
+      "p": [
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "h-EJ150": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "f-2": {
+      "p": [
+        "TUR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Tales de Mileto"
+    },
+    "f-5": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Confucio"
+    },
+    "f-6": {
+      "p": [
+        "TUR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Heráclito"
+    },
+    "f-7": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Parménides"
+    },
+    "f-8": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Sócrates"
+    },
+    "f-9": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Platón"
+    },
+    "f-10": {
+      "p": [
+        "GRC",
+        "TUR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Diógenes de Sinope"
+    },
+    "f-11": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Aristóteles"
+    },
+    "f-12": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Epicuro"
+    },
+    "f-13": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Marco Aurelio"
+    },
+    "f-14": {
+      "p": [
+        "DZA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Agustín de Hipona"
+    },
+    "f-15": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Hipatia de Alejandría"
+    },
+    "f-16": {
+      "p": [
+        "IRN",
+        "UZB"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Avicena (Ibn Sina)"
+    },
+    "f-17": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Averroes (Ibn Rushd)"
+    },
+    "f-18": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Tomás de Aquino"
+    },
+    "f-19": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Nicolás Maquiavelo"
+    },
+    "f-20": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "René Descartes"
+    },
+    "f-21": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "John Locke"
+    },
+    "f-22": {
+      "p": [
+        "NLD"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Baruch Spinoza"
+    },
+    "f-23": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "David Hume"
+    },
+    "f-24": {
+      "p": [
+        "CHE",
+        "FRA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Jean-Jacques Rousseau"
+    },
+    "f-25": {
+      "p": [
+        "DEU",
+        "RUS"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Immanuel Kant"
+    },
+    "f-26": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "G. W. F. Hegel"
+    },
+    "f-27": {
+      "p": [
+        "DEU",
+        "POL"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Arthur Schopenhauer"
+    },
+    "f-28": {
+      "p": [
+        "DNK"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Søren Kierkegaard"
+    },
+    "f-29": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Karl Marx"
+    },
+    "f-30": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Piotr Kropotkin"
+    },
+    "f-31": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Friedrich Nietzsche"
+    },
+    "f-32": {
+      "p": [
+        "AUT",
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Ludwig Wittgenstein"
+    },
+    "f-33": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Martin Heidegger"
+    },
+    "f-34": {
+      "p": [
+        "AUT",
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Karl Popper"
+    },
+    "f-35": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Jean-Paul Sartre"
+    },
+    "f-36": {
+      "p": [
+        "DEU",
+        "USA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Hannah Arendt"
+    },
+    "p-116": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-1": {
+      "p": [
+        "ROU"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-2": {
+      "p": [
+        "AZE"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-3": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-4": {
+      "p": [
+        "DEU",
+        "LTU"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-5": {
+      "p": [
+        "LTU"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-6": {
+      "p": [
+        "DEU",
+        "NAM"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-7": {
+      "p": [
+        "NIC"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-8": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-9": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-10": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-11": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-12": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-13": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-14": {
+      "p": [
+        "IRQ",
+        "KWT"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-15": {
+      "p": [
+        "IRQ",
+        "KWT"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-17": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-19": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-21": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-23": {
+      "p": [
+        "POL"
+      ],
+      "basis": "mención título"
+    },
+    "a-3-24": {
+      "p": [
+        "HRV",
+        "SVN"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-1": {
+      "p": [
+        "IRQ",
+        "LTU"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-2": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-3": {
+      "p": [
+        "LVA"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-4": {
+      "p": [
+        "IRQ",
+        "KWT"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-5": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-6": {
+      "p": [
+        "POL",
+        "SVN"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-8": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-9": {
+      "p": [
+        "ETH",
+        "HRV"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-10": {
+      "p": [
+        "ERI",
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-11": {
+      "p": [
+        "RUS",
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-12": {
+      "p": [
+        "HRV",
+        "SVN"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-13": {
+      "p": [
+        "POL",
+        "SVN"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-14": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-15": {
+      "p": [
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-16": {
+      "p": [
+        "BLR",
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-17": {
+      "p": [
+        "HRV"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-18": {
+      "p": [
+        "MKD"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-19": {
+      "p": [
+        "HRV",
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-20": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-22": {
+      "p": [
+        "HRV",
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-4-23": {
+      "p": [
+        "BLR",
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-1": {
+      "p": [
+        "KHM"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-2": {
+      "p": [
+        "SLV"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-4": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-6": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-7": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-10": {
+      "p": [
+        "THA"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-11": {
+      "p": [
+        "BRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-13": {
+      "p": [
+        "CZE"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-14": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-16": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-17": {
+      "p": [
+        "IDN"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-19": {
+      "p": [
+        "CZE"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-20": {
+      "p": [
+        "SOM"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-22": {
+      "p": [
+        "SOM"
+      ],
+      "basis": "mención título"
+    },
+    "a-5-23": {
+      "p": [
+        "SOM"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-1": {
+      "p": [
+        "CZE",
+        "SVK"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-3": {
+      "p": [
+        "BEL"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-4": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-5": {
+      "p": [
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-6": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-7": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-8": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-9": {
+      "p": [
+        "ERI",
+        "ETH"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-11": {
+      "p": [
+        "SOM"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-13": {
+      "p": [
+        "TUR"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-14": {
+      "p": [
+        "ISR",
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-15": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-16": {
+      "p": [
+        "LTU",
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-17": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-18": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-19": {
+      "p": [
+        "RUS",
+        "SOM"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-23": {
+      "p": [
+        "COL"
+      ],
+      "basis": "mención título"
+    },
+    "a-6-24": {
+      "p": [
+        "URY"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-1": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-2": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-3": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-4": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-6": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-8": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-9": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-10": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-12": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-13": {
+      "p": [
+        "YEM"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-14": {
+      "p": [
+        "ISR",
+        "JOR"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-15": {
+      "p": [
+        "HTI"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-17": {
+      "p": [
+        "HTI"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-18": {
+      "p": [
+        "HTI"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-19": {
+      "p": [
+        "HTI"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-20": {
+      "p": [
+        "ISR",
+        "JOR"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-22": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-23": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-7-24": {
+      "p": [
+        "SOM"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-1": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-2": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-3": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-4": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-6": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-8": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-9": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-11": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-12": {
+      "p": [
+        "KOR"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-13": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-14": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-15": {
+      "p": [
+        "HRV"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-16": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-17": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-18": {
+      "p": [
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-19": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-20": {
+      "p": [
+        "CAN"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-21": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-8-24": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-1": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-3": {
+      "p": [
+        "ECU",
+        "PER"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-5": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-7": {
+      "p": [
+        "ISR",
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-9": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-10": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-12": {
+      "p": [
+        "SAU"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-13": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-16": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-17": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-19": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-21": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-9-24": {
+      "p": [
+        "PER"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-2": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-3": {
+      "p": [
+        "BIH"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-7": {
+      "p": [
+        "BLR",
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-8": {
+      "p": [
+        "PER"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-9": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-11": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-13": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-16": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-18": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-10-22": {
+      "p": [
+        "KOR"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-2": {
+      "p": [
+        "CUB"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-3": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-4": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-5": {
+      "p": [
+        "SRB"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-7": {
+      "p": [
+        "IRL"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-8": {
+      "p": [
+        "KHM"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-9": {
+      "p": [
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-10": {
+      "p": [
+        "IDN",
+        "PAK"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-11": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-13": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-16": {
+      "p": [
+        "AFG",
+        "SDN",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-21": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-22": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-11-24": {
+      "p": [
+        "GBR",
+        "IRQ",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-3": {
+      "p": [
+        "JOR"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-5": {
+      "p": [
+        "SRB"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-8": {
+      "p": [
+        "CHN",
+        "SRB"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-14": {
+      "p": [
+        "MAR"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-15": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-16": {
+      "p": [
+        "TUR"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-18": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-19": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-20": {
+      "p": [
+        "IDN",
+        "PAK"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-22": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-12-24": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-3": {
+      "p": [
+        "AUT"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-4": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-5": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-10": {
+      "p": [
+        "ISR",
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-12": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-14": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-15": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-17": {
+      "p": [
+        "AUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-18": {
+      "p": [
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-13-20": {
+      "p": [
+        "YEM"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-1": {
+      "p": [
+        "SLV"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-2": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-3": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-4": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-7": {
+      "p": [
+        "CHN",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-9": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-10": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-11": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-12": {
+      "p": [
+        "SVN"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-14": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-15": {
+      "p": [
+        "MKD"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-16": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-17": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-18": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-19": {
+      "p": [
+        "AFG",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-20": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-21": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-14-24": {
+      "p": [
+        "ARG"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-2": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-5": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-6": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-7": {
+      "p": [
+        "VEN"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-9": {
+      "p": [
+        "NLD"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-11": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-12": {
+      "p": [
+        "CAN"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-15": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-17": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-18": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-20": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-21": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-23": {
+      "p": [
+        "VEN"
+      ],
+      "basis": "mención título"
+    },
+    "a-15-24": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-1": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-2": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-4": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-6": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-7": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-9": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-10": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-12": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-15": {
+      "p": [
+        "IDN"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-16": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-17": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-18": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-19": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-20": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-21": {
+      "p": [
+        "TUR"
+      ],
+      "basis": "mención título"
+    },
+    "a-16-22": {
+      "p": [
+        "GEO"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-1": {
+      "p": [
+        "GEO"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-5": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-6": {
+      "p": [
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-7": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-10": {
+      "p": [
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-11": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-12": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-14": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-17-23": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-4": {
+      "p": [
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-6": {
+      "p": [
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-9": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-10": {
+      "p": [
+        "FRA",
+        "NLD"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-13": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-14": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-17": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-18": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-19": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-20": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-21": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-18-23": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-4": {
+      "p": [
+        "PHL"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-7": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-8": {
+      "p": [
+        "NPL"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-9": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-10": {
+      "p": [
+        "MNE",
+        "SRB"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-11": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-12": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-13": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-14": {
+      "p": [
+        "ISR",
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-15": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-19": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-20": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-22": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-23": {
+      "p": [
+        "FJI"
+      ],
+      "basis": "mención título"
+    },
+    "a-19-24": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-1": {
+      "p": [
+        "BGR",
+        "ROU"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-4": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-6": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-7": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-8": {
+      "p": [
+        "EST"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-9": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-10": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-11": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-12": {
+      "p": [
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-14": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-15": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-16": {
+      "p": [
+        "PER"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-17": {
+      "p": [
+        "ISR",
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-18": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-20": {
+      "p": [
+        "PAK"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-21": {
+      "p": [
+        "PAK"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-23": {
+      "p": [
+        "PRT"
+      ],
+      "basis": "mención título"
+    },
+    "a-20-24": {
+      "p": [
+        "PAK"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-1": {
+      "p": [
+        "KEN",
+        "SVN"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-2": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-3": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-4": {
+      "p": [
+        "CUB",
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-7": {
+      "p": [
+        "ROU"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-8": {
+      "p": [
+        "NPL",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-9": {
+      "p": [
+        "CHN",
+        "MMR"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-10": {
+      "p": [
+        "COL",
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-11": {
+      "p": [
+        "IRL",
+        "PRT"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-12": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-13": {
+      "p": [
+        "IND",
+        "JPN",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-15": {
+      "p": [
+        "CHN",
+        "GEO",
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-16": {
+      "p": [
+        "GEO",
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-19": {
+      "p": [
+        "ISL",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-21": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-22": {
+      "p": [
+        "IND",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-23": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-21-24": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-1": {
+      "p": [
+        "PSE",
+        "RUS",
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-6": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-7": {
+      "p": [
+        "PRK",
+        "SOM"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-9": {
+      "p": [
+        "LKA"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-10": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-11": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-12": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-13": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-14": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-15": {
+      "p": [
+        "PRK"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-16": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-17": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-18": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-20": {
+      "p": [
+        "IRQ",
+        "PRT"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-21": {
+      "p": [
+        "HND"
+      ],
+      "basis": "mención título"
+    },
+    "a-22-22": {
+      "p": [
+        "ARE",
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-1": {
+      "p": [
+        "HTI"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-4": {
+      "p": [
+        "CHL"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-5": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-9": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-10": {
+      "p": [
+        "THA"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-11": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-13": {
+      "p": [
+        "ESP",
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-14": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-15": {
+      "p": [
+        "PAK"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-16": {
+      "p": [
+        "IRQ",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-18": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-20": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-21": {
+      "p": [
+        "KOR"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-22": {
+      "p": [
+        "IRL"
+      ],
+      "basis": "mención título"
+    },
+    "a-23-23": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-1": {
+      "p": [
+        "TUN"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-2": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-3": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-4": {
+      "p": [
+        "LBY"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-6": {
+      "p": [
+        "LBY"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-7": {
+      "p": [
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-8": {
+      "p": [
+        "YEM"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-10": {
+      "p": [
+        "PRT"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-11": {
+      "p": [
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-12": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-13": {
+      "p": [
+        "SDN"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-14": {
+      "p": [
+        "NOR"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-15": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-16": {
+      "p": [
+        "LBY"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-17": {
+      "p": [
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-21": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-22": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "mención título"
+    },
+    "a-24-23": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-25-4": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-25-6": {
+      "p": [
+        "CUB",
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-25-8": {
+      "p": [
+        "ARG"
+      ],
+      "basis": "mención título"
+    },
+    "a-25-9": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-25-11": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-25-18": {
+      "p": [
+        "CHN",
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-25-22": {
+      "p": [
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-4": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-10": {
+      "p": [
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-12": {
+      "p": [
+        "BRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-13": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-17": {
+      "p": [
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-18": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-21": {
+      "p": [
+        "PHL"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-22": {
+      "p": [
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-23": {
+      "p": [
+        "ZAF"
+      ],
+      "basis": "mención título"
+    },
+    "a-26-24": {
+      "p": [
+        "SDN"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-4": {
+      "p": [
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-6": {
+      "p": [
+        "RUS",
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-9": {
+      "p": [
+        "THA"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-10": {
+      "p": [
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-11": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-12": {
+      "p": [
+        "BRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-13": {
+      "p": [
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-16": {
+      "p": [
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-18": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-22": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-27-23": {
+      "p": [
+        "CUB",
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-4": {
+      "p": [
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-6": {
+      "p": [
+        "YEM"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-7": {
+      "p": [
+        "NPL"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-9": {
+      "p": [
+        "IRL"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-12": {
+      "p": [
+        "TUN"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-13": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-14": {
+      "p": [
+        "CUB"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-20": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-21": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-22": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-28-23": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-1": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-4": {
+      "p": [
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-5": {
+      "p": [
+        "BEL"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-6": {
+      "p": [
+        "CUB"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-7": {
+      "p": [
+        "ECU"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-8": {
+      "p": [
+        "PAN"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-10": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-11": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-13": {
+      "p": [
+        "TUR"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-16": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-17": {
+      "p": [
+        "COL"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-23": {
+      "p": [
+        "DEU"
+      ],
+      "basis": "mención título"
+    },
+    "a-29-24": {
+      "p": [
+        "CUB"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-5": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-7": {
+      "p": [
+        "SYR"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-8": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-9": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-13": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-16": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-18": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-21": {
+      "p": [
+        "IRN",
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-30-24": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-2": {
+      "p": [
+        "SYR",
+        "TUR"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-7": {
+      "p": [
+        "CUB"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-9": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-12": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-13": {
+      "p": [
+        "THA"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-14": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-15": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-18": {
+      "p": [
+        "BRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-31-21": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-1": {
+      "p": [
+        "BRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-2": {
+      "p": [
+        "VEN"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-4": {
+      "p": [
+        "MKD"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-5": {
+      "p": [
+        "NZL"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-9": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-13": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-16": {
+      "p": [
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-20": {
+      "p": [
+        "CHL"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-21": {
+      "p": [
+        "BOL"
+      ],
+      "basis": "mención título"
+    },
+    "a-32-22": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-33-3": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-33-13": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-33-15": {
+      "p": [
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-33-17": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-3": {
+      "p": [
+        "MMR"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-7": {
+      "p": [
+        "IND"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-8": {
+      "p": [
+        "CUB"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-9": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-11": {
+      "p": [
+        "PER"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-13": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-14": {
+      "p": [
+        "HTI"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-15": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-34-16": {
+      "p": [
+        "AFG"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-1": {
+      "p": [
+        "KAZ"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-3": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-4": {
+      "p": [
+        "RUS",
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-5": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-8": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-16": {
+      "p": [
+        "PAK"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-18": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-23": {
+      "p": [
+        "ARG",
+        "QAT"
+      ],
+      "basis": "mención título"
+    },
+    "a-35-24": {
+      "p": [
+        "USA"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-1": {
+      "p": [
+        "BRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-2": {
+      "p": [
+        "BRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-3": {
+      "p": [
+        "SYR",
+        "TUR"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-4": {
+      "p": [
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-7": {
+      "p": [
+        "SDN"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-8": {
+      "p": [
+        "FIN"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-11": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-17": {
+      "p": [
+        "MAR"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-18": {
+      "p": [
+        "AZE"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-19": {
+      "p": [
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-20": {
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-21": {
+      "p": [
+        "ARG"
+      ],
+      "basis": "mención título"
+    },
+    "a-36-22": {
+      "p": [
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-5": {
+      "p": [
+        "RUS"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-6": {
+      "p": [
+        "HTI"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-7": {
+      "p": [
+        "IRN",
+        "ISR"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-9": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-10": {
+      "p": [
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-14": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-16": {
+      "p": [
+        "VEN"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-17": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-37-18": {
+      "p": [
+        "ISR",
+        "LBN"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-1": {
+      "p": [
+        "ESP",
+        "PSE"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-2": {
+      "p": [
+        "COL"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-3": {
+      "p": [
+        "CAN",
+        "CHN",
+        "GTM",
+        "MEX"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-4": {
+      "p": [
+        "MKD",
+        "ROU"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-5": {
+      "p": [
+        "RUS",
+        "UKR"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-6": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-13": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-14": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "mención título"
+    },
+    "a-38-15": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención título"
+    },
+    "a-39-5": {
+      "p": [
+        "IRN"
+      ],
+      "basis": "mención título"
+    },
+    "c-3-74": {
+      "p": [
+        "GBR",
+        "USA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "2001: Odisea del espacio (1968) – Stanley Kubrick (1928-1999)"
+    },
+    "c-3-81": {
+      "p": [
+        "GBR",
+        "USA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Barry Lyndon (1975) – Stanley Kubrick (1928-1999)"
+    },
+    "c-3-85": {
+      "p": [
+        "USA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Apocalypse Now (1979) – Francis Ford Coppola (1939- )"
+    },
+    "c-3-88": {
+      "p": [
+        "GBR",
+        "USA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Blade Runner (1982) – Ridley Scott (1937- )"
+    },
+    "c-5-85": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Arrebato (1979) - Iván Zulueta (1943–2009)"
+    },
+    "c-7-85": {
+      "p": [
+        "GBR",
+        "USA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Alien, el octavo pasajero (1979) – Ridley Scott (1937- )"
+    },
+    "c-10-49": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Iván Zulueta (1943–2009)"
+    },
+    "c-12-34": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Jacques Rivette (1928–2016)"
+    },
+    "c-14-38": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "François Truffaut (1932–1984)"
+    },
+    "c-16-34": {
+      "p": [
+        "GBR",
+        "USA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Stanley Kubrick (1928-1999)"
+    },
+    "c-18-43": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Ridley Scott (1937- )"
+    },
+    "l-2": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Textos de las Pirámides"
+    },
+    "l-3": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Himnos de Enheduanna"
+    },
+    "l-4": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Epopeya de Gilgamesh (versiones sumerias iniciales)"
+    },
+    "l-5": {
+      "p": [
+        "EGY"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Historia de Sinuhé y Cuento del Náufrago"
+    },
+    "l-6": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Epopeya de Gilgamesh (Versión estándar acadia)"
+    },
+    "l-7": {
+      "p": [
+        "IRQ"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Enuma Elish"
+    },
+    "l-8": {
+      "p": [
+        "IND"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Rig-veda"
+    },
+    "l-9": {
+      "p": [
+        "CHN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Libro de los Cantos (Shi Jing)"
+    },
+    "l-11": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Ilíada"
+    },
+    "l-12": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Odisea"
+    },
+    "l-14": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Teogonía y Trabajos y días"
+    },
+    "l-16": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Orestíada (Agamenón, Las Coéforas, Las Euménides)"
+    },
+    "l-17": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Edipo Rey (y la trilogía tebana)"
+    },
+    "l-18": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Las historias"
+    },
+    "l-19": {
+      "p": [
+        "GRC"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La República (y los Diálogos)"
+    },
+    "l-20": {
+      "p": [
+        "IND"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Ramayana y el Mahabharata"
+    },
+    "l-21": {
+      "p": [
+        "GRC",
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El asno de oro / Comedias de Plauto y Terencio"
+    },
+    "l-22": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "De Rerum Natura (Sobre la naturaleza de las cosas)"
+    },
+    "l-23": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Eneida"
+    },
+    "l-24": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Las Metamorfosis"
+    },
+    "l-25": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Anales e Historias"
+    },
+    "l-26": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Las Metamorfosis (El asno de oro)"
+    },
+    "l-28": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "mención ficha original"
+    },
+    "l-29": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Beowulf"
+    },
+    "l-30": {
+      "p": [
+        "CHN",
+        "DEU"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Cantar de los Nibelungos (raíces germánicas) / Literatura clásica de la Tang"
+    },
+    "l-31": {
+      "p": [
+        "JPN"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La historia de Genji (Genji Monogatari)"
+    },
+    "l-32": {
+      "p": [
+        "ESP",
+        "FRA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Cantar de mío Cid (raíces o tradición previa) / El Cantar de Roldán"
+    },
+    "l-33": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Divina Comedia"
+    },
+    "l-34": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "El Decamerón"
+    },
+    "l-35": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Cancionero (Il Canzoniere)"
+    },
+    "l-36": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Los cuentos de Canterbury"
+    },
+    "l-37": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "La Celestina (Comedia o Tragicomedia de Calisto y Melibea)"
+    },
+    "l-38": {
+      "p": [
+        "ITA"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Orlando furioso"
+    },
+    "l-39": {
+      "p": [
+        "GBR"
+      ],
+      "basis": "contexto histórico orientativo",
+      "titleText": "Utopía"
+    },
+    "l-40": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención ficha original"
+    },
+    "l-41": {
+      "p": [
+        "ESP"
+      ],
+      "basis": "mención ficha original"
+    },
+    "l-42": {
+      "p": [
+        "FRA"
+      ],
+      "basis": "mención ficha original"
+    },
+    "study-f08-carvajal-declaracion-culpabilidad-2025": {
+      "p": [
+        "USA",
+        "VEN"
+      ],
+      "basis": "hecho judicial de Estados Unidos sobre exfuncionario venezolano, confirmado por fuente fiscal",
+      "titleText": "Hugo Carvajal se declara culpable ante tribunal federal · 25/06/2025"
+    }
+  }
+}
