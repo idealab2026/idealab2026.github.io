@@ -31,6 +31,10 @@ OWNER = "idealab2026"
 OWNER_GITHUB_ID = 350414243
 RECOVERY_APPROVAL_MARK = "IDEA_LAB_NLM_RECOVER_V1"
 RECOVERY_APPROVAL_HOURS = 12
+BATCH_APPROVAL_MARK = "IDEA_LAB_NLM_BATCH_V1"
+BATCH_CONTROL_ISSUE = 242
+BATCH_MAX_GENERATIONS = 5
+BATCH_APPROVAL_DAYS = 7
 HOME = Path.home()
 CONFIG_PATH = HOME / ".config/idea-lab/notebooklm-bridge.json"
 STATE_PATH = HOME / ".local/state/idea-lab/notebooklm-bridge.json"
@@ -548,7 +552,7 @@ def generation_args(req: dict, notebook: str, sources: list[str]) -> list[str]:
     return argv
 
 
-def request_new(number, req, state, config):
+def request_new(number, req, state, config, *, batch_comment_id=None):
     mapping = select_mapping(config, req)
     if mapping is None:
         print("Pendiente de mapear las fuentes de la solicitud #", number)
@@ -560,9 +564,19 @@ def request_new(number, req, state, config):
         quarantine_existing_request(number, req, state, config)
         return True
     # Snapshot before starting avoids confusing an older graphic with the new one.
-    before = [artifact_id(x) for x in infographic_rows(notebook)]
+    rows = infographic_rows(notebook)
+    if batch_comment_id is not None and incomplete_studio_artifacts(rows):
+        print("NotebookLM Studio muestra artefactos inacabados o desconocidos "
+              "en el cuaderno; no se genera nada.")
+        return False
+    before = [artifact_id(x) for x in rows]
     job = {"request": req, "phase": "launching", "before": before,
            "notebook": notebook, "source_ids": sources}
+    if batch_comment_id is not None:
+        if (not isinstance(batch_comment_id, int) or isinstance(batch_comment_id, bool)
+                or batch_comment_id <= 0):
+            raise ValueError("Autorización de lote inválida.")
+        job["github_batch_comment_id"] = batch_comment_id
     state[number] = job
     save_json(STATE_PATH, state)  # No blind retry after an ambiguous failure.
     try:
@@ -695,13 +709,95 @@ def github_recovery_approvals(now: dt.datetime | None = None) -> list[tuple[str,
     return approvals
 
 
-def poll_authorized() -> None:
-    """Reconcile safely, then permit ONE explicitly approved recovery per run.
+def batch_approval_body(book: str) -> str:
+    """A bounded, exact public authorization; no arbitrary remote commands."""
+    if not VALID_BOOK.fullmatch(book):
+        raise ValueError("Libro no válido para autorización.")
+    return (BATCH_APPROVAL_MARK + "\n"
+            + "book=" + book + "\n"
+            + "max_generations=" + str(BATCH_MAX_GENERATIONS))
 
-    This mode never processes new unapproved issues or retries failed jobs.
-    GitHub comments assert an operator-checked absence and restored quota.
-    The complete Studio snapshot and all original fail-closed checks still run
-    locally immediately before invoking NotebookLM.
+
+def github_batch_approvals(now: dt.datetime | None = None) -> list[tuple[str, int]]:
+    """Only the official IDEA LAB account can issue a fresh bounded batch grant.
+
+    Read only dedicated control-issue comments. Fail closed on pagination
+    ambiguity, edited comments, invalid or expired authorizations.
+    """
+    now = now or dt.datetime.now(dt.timezone.utc)
+    raw = command(["gh", "api", f"repos/{REPO}/issues/{BATCH_CONTROL_ISSUE}/comments?per_page=100"])
+    rows = json.loads(raw)
+    if not isinstance(rows, list) or len(rows) >= 100:
+        raise RuntimeError("No se ha podido verificar todo el historial de "
+                           "autorizaciones: no se lanzarán generaciones.")
+    approvals = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        author = row.get("user") or {}
+        if (author.get("login", "").lower() != OWNER
+                or author.get("id") != OWNER_GITHUB_ID):
+            continue
+        body = str(row.get("body") or "")
+        match = re.fullmatch(
+            re.escape(BATCH_APPROVAL_MARK) + r"\n"
+            + r"book=([a-z0-9-]{2,60})\n"
+            + r"max_generations=" + str(BATCH_MAX_GENERATIONS), body)
+        if not match:
+            continue
+        book = match.group(1)
+        try:
+            find_item(book, None)
+            created = dt.datetime.fromisoformat(
+                str(row["created_at"]).replace("Z", "+00:00"))
+            updated = dt.datetime.fromisoformat(
+                str(row["updated_at"]).replace("Z", "+00:00"))
+            comment_id = row["id"]
+        except (ValueError, KeyError, TypeError):
+            continue
+        if (not isinstance(comment_id, int) or isinstance(comment_id, bool)
+                or comment_id <= 0 or created != updated
+                or not (dt.timedelta(0) <= now - created
+                        <= dt.timedelta(days=BATCH_APPROVAL_DAYS))):
+            continue
+        approvals.append((book, comment_id))
+    return approvals
+
+
+def launch_authorized_batch(state: dict) -> bool:
+    """Launch no more than ONE new request from a non-replayable capped grant.
+
+    No failed/deferred/uncertain notebook is eligible; a grant only authorizes
+    FIRST attempts for pre-existing, source-mapped requests.
+    """
+    config = private_config()
+    for book, comment_id in github_batch_approvals():
+        used = sum(
+            job.get("github_batch_comment_id") == comment_id
+            for job in state.values())
+        if used >= BATCH_MAX_GENERATIONS:
+            continue
+        candidate = safe_queue_candidate(state, config, {book})
+        if candidate is None:
+            continue
+        number, req = candidate
+        print("Nueva generación autorizada por GitHub:", number,
+              "| Libro:", book,
+              "| Consumidas de este lote:", used, "/", BATCH_MAX_GENERATIONS)
+        launched = request_new(number, req, state, config,
+                               batch_comment_id=comment_id)
+        if not launched:
+            print("Solicitud no enviada: faltan verificaciones de Studio o fuentes.")
+        return launched
+    print("Sin nuevas solicitudes elegibles con autorización vigente.")
+    return False
+
+
+def poll_authorized() -> None:
+    """Reconcile, then perform at most one strictly authorized dispatch.
+
+    Single-recovery grants and small new-generation batches are distinct.
+    Never retry failed jobs or launch without a fresh owner-authored grant.
     """
     reconcile_only()
     state = load_json(STATE_PATH, {})
@@ -717,20 +813,20 @@ def poll_authorized() -> None:
                   and number not in RECOVERY_HELD_ISSUES
                   and not job.get("github_recovery_comment_id")
                   and int(job.get("recovery_count", 0)) == 0}
-    if not unresolved:
-        print("Sin solicitudes elegibles para una primera recuperación autorizada.")
-        return
-    for number, comment_id in github_recovery_approvals():
-        if number not in unresolved:
-            continue
-        print("Autorización GitHub verificada para #", number,
-              "(un único intento; controles locales obligatorios).")
-        recover_blocked(SimpleNamespace(
-            issue=int(number), confirm_no_artifact=True,
-            confirm_quota_restored=True,
-            github_recovery_comment_id=comment_id))
-        return
-    print("Sin nuevas autorizaciones válidas. No se ha generado nada.")
+    if unresolved:
+        for number, comment_id in github_recovery_approvals():
+            if number not in unresolved:
+                continue
+            print("Autorización GitHub verificada para #", number,
+                  "(un único intento; controles locales obligatorios).")
+            recover_blocked(SimpleNamespace(
+                issue=int(number), confirm_no_artifact=True,
+                confirm_quota_restored=True,
+                github_recovery_comment_id=comment_id))
+            return
+    # Only grants from the dedicated GitHub issue can authorize new work.
+    # No global poll(), no automatic retries of failed/uncertain requests.
+    launch_authorized_batch(state)
 
 
 def queue_retry_failed(args):
