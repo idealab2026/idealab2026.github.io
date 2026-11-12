@@ -28,7 +28,17 @@ window.IDEA_TELARANA_F26_REVIEW = {
       "photo": "",
       "x": 9000,
       "y": 2750,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f26-mdt-72-revision-preliminar",
+          "title": "F26 · Ilustración oscura y tecnológicas · 00:00",
+          "source": "https://www.youtube.com/watch?v=FVSBeP6L8lw&t=0s",
+          "publishedAt": "2026-06-11",
+          "timeSec": 0,
+          "status": "interpretacion_atribuida",
+          "text": "La apertura del programa presenta la llamada «ilustración oscura» como movimiento neorreaccionario y vincula conceptualmente grandes tecnológicas con poder social y político. Es el encuadre del programa; no establece membresías ni vínculos jurídicos entre empresas."
+        }
+      ]
     },
     {
       "id": "f25-lorenzo",
@@ -41,7 +51,17 @@ window.IDEA_TELARANA_F26_REVIEW = {
       "photo": "",
       "x": 9200,
       "y": 2780,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f26-mdt-72-revision-preliminar",
+          "title": "F26 · Palantir y Musk en una acusación del programa · 46:41",
+          "source": "https://www.youtube.com/watch?v=FVSBeP6L8lw&t=2801s",
+          "publishedAt": "2026-06-11",
+          "timeSec": 2801,
+          "status": "alegacion_no_verificada",
+          "text": "En el episodio se plantea una supuesta conversación entre personas del entorno de Palantir y Elon Musk acerca de desestabilizar países para obtener beneficios. No se adjunta aquí registro primario de esa conversación: debe mantenerse como alegación atribuida y pendiente de comprobación."
+        }
+      ]
     },
     {
       "id": "f26-minimal-studio",
