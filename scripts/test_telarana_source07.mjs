@@ -31,8 +31,10 @@ assert.equal(graph.metadata.fullTranscriptCharacters,314815);
 assert.equal(graph.metadata.transcriptAudioMatched,false);
 assert(graph.metadata.transcriptIndexDocUrl.startsWith("https://docs.google.com/document/d/"));
 assert(graph.metadata.transcriptLocation.includes("metacast.app"));
-assert.equal(graph.nodes.length,24);
-assert.equal(graph.edges.length,24);
+assert.equal(graph.nodes.length,25);
+assert.equal(graph.edges.length,25);
+assert(graph.metadata.timestampedTranscriptAvailable===true&&graph.metadata.timestampedTranscriptSegments===8451);
+assert.equal(graph.metadata.timestampedTranscriptAudioVerified,false);
 const ids=new Set(graph.nodes.map(n=>n.id));
 assert.equal(ids.size,graph.nodes.length);
 for(const n of graph.nodes){
@@ -46,7 +48,10 @@ for(const e of graph.edges){
  assert(e.note.length>=100,"Relation needs a caveat "+e.id);
  assert(/^https:\/\//.test(e.source),"Missing source "+e.id);
 }
-assert(graph.nodes.find(n=>n.id==="twp312-guantanamo").podcastNotes.every(x=>x.timeSec===null),"No invented Guantanamo timecodes");
+const gt=graph.nodes.find(n=>n.id==="twp312-guantanamo").podcastNotes;
+assert(gt.some(x=>x.timeSec===16432)&&gt.some(x=>x.timeSec===16820),
+ "F07: faltan pasajes cronometrados del testimonio de Guantánamo");
+assert(gt.some(x=>x.timeSec===null),"F07: no borrar la nota documental externa");
 for(const id of ["twp312-javier-chicote","twp312-luis-roldan","twp312-miguel-bernad","twp312-luis-pineda","twp312-francisco-correa","twp312-jose-luis-penas","twp312-jose-luis-abalos","twp312-delcy-rodriguez"]){
  assert(bios.curated[id]?.text.length>=260&&bios.curated[id]?.source.startsWith("https://"),"Missing biographical note "+id);
 }
@@ -64,9 +69,17 @@ assert(row.tracking.docTranscriptionCreated===true&&row.tracking.transcriptConte
 assert(row.reviewComplete===false&&progress.inReview.find(x=>x.order===7)?.transcriptDocHasFullText===true,"El texto integral ahora está recuperado, pero el audio y las afirmaciones no están comprobados");
 assert.equal(progress.timeline.committedVerifiedEvents,history.items.length,"Timeline global can grow when subsequent sources are reviewed");
 assert.equal(progress.timeline.eventsBySource["7"].length,5);
+assert(row.tracking.timecodedTranscriptStoredInDrive&&row.tracking.timecodedTranscriptReadbackVerified);
+assert(row.tracking.timecodedTranscriptEditorialReviewComplete===false);
+const timed=graph.nodes.flatMap(n=>n.podcastNotes||[]).filter(x=>Number.isFinite(x.timeSec));
+assert(timed.length>=45,"F07: se han perdido pasajes cronometrados");
+for(const n of timed)assert(n.timeSec>=0&&n.timeSec<=18860&&n.source.startsWith("https://www.youtube.com/watch?v=oGIlCmHsc4g"),
+ "F07: marca de tiempo sin fuente original");
+assert(graph.nodes.some(n=>n.id==="twp312-pedro-sanchez")&&graph.edges.some(e=>e.id==="twp312-pedro-sanchez-contexto"),
+ "F07: falta la mención contextual del presidente del Gobierno");
 assert(html.includes('podcast-wild-312-chicote.js?v='));
 const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(html)||[])[1]||"[]");
 assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE07_PODCAST"&&m.kind==="mergeNewEpisode")&&html.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE07_PODCAST");
 assert(!html.includes("source-review-rows")&&!html.includes("progreso-fuentes.json"),"Source tracker must not be on public site");
 assert(workflow.includes("podcast-wild-312-chicote.js"),"Missing source in deployment allowlist");
-console.log("OK: fuente07 · 24 nodos, 24 relaciones, 8 biografías, 9 fichas foto, 5 hitos; DOC índice sin transcripción íntegra");
+console.log("OK F07: 25 nodos, 25 enlaces, 8.451 segmentos temporales, 5 hitos contrastados y audio sin cotejar.");
