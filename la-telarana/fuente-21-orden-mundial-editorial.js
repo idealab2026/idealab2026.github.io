@@ -5,14 +5,18 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
     "title": "El Nuevo Orden Mundial que nos ocultan | Lorenzo Ramírez #68",
     "url": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
     "publishedAt": "2025-03-19",
-    "reviewStage": "revision_documental_texto_automatico_y_contrastes_2026-11-10",
+    "reviewStage": "revision_documental_previa_mas_notas_temporizadas_nov_2026",
     "transcriptAvailable": true,
     "sourceOrder": 21,
-    "methodologicalNote": "Transcripción automática íntegra disponible y leída en Drive privado; ausencia de minutajes y cotejo de audio. Las hipótesis en el episodio no acreditan por sí solas delitos, operaciones o vínculos entre terceros.",
+    "methodologicalNote": "El TXT de subtítulos con marcas de tiempo está preservado en Drive institucional y permite enlazar fragmentos del vídeo. Las marcas no están cotejadas contra audio ni permiten por sí solas atribuir la voz a cada interlocutor. Las opiniones, acusaciones y asociaciones entre personas siguen siendo declaraciones del programa, no hechos acreditados.",
     "transcriptSource": "Google Docs privado IDEA LAB, texto automático de NotebookLM",
     "transcriptCharacters": 137414,
-    "transcriptTimecodesAvailable": false,
-    "transcriptAudioMatched": false
+    "transcriptTimecodesAvailable": true,
+    "transcriptAudioMatched": false,
+    "transcriptTimestampedSegments": 3743,
+    "transcriptLastTimestamp": "01:59:55",
+    "timecodeAccuracy": "subtitle_segment_start_not_audio_verified",
+    "timecodedSource": "IDEA LAB institutional Drive / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO"
   },
   "nodes": [
     {
@@ -89,6 +93,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "alegacion",
           "text": "Afirma equiparaciones entre stablecoins y monedas digitales de banco central y advierte de supuestos controles del euro digital. Son asuntos sujetos a contraste técnico: una stablecoin privada no es idéntica a una CBDC."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Publicidad institucional y periodistas · 1:14:31",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=4471s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 4471,
+          "status": "distincion_probatoria_relevante",
+          "text": "El entrevistado distingue entre financiación recibida por un medio u organización y pago directo a periodistas. Señala que, incluso según su relato, la existencia de una subvención no permite inferir que un periodista concreto cobrase de USAID."
         }
       ]
     },
@@ -139,6 +152,24 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "alegacion",
           "text": "Afirmación atribuida a Lorenzo Ramírez (transcripción ASR; audio no cotejado). Ramírez sostiene que organizaciones financiadas con ayuda exterior habrían intervenido en debates sobre libertad de expresión, restricciones digitales y campañas de influencia. En el pasaje mencionado no aporta una resolución de subvención, una entidad receptora precisa ni una cadena financiera contrastable. La acusación queda atribuida y pendiente de examen documental."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · USAID, transcrita «USET» · 1:05:34",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=3934s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 3934,
+          "status": "alegacion_atribuida_asr_normalizado",
+          "text": "El entrevistado acusa a USAID de operar más allá de la ayuda al desarrollo y de participar en mecanismos de influencia política. El reconocimiento automático recoge el nombre como «USET». La acusación exige distinguir programas documentados de operaciones encubiertas no acreditadas."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Rockefeller como supuesto antecedente de USAID · 1:09:50",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=4190s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 4190,
+          "status": "tesis_historica_no_demostrada",
+          "text": "El programa afirma que una organización dirigida por Nelson Rockefeller fue embrión de USAID. El pasaje identifica una tesis histórica del entrevistado, no prueba una sucesión jurídica, propiedad o financiación privada de la agencia federal."
         }
       ]
     },
@@ -153,7 +184,17 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "x": 6420,
       "y": 2310,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Palantir y personal de la administración · 1:26:28",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=5188s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 5188,
+          "status": "alegacion_atribuida_no_verificada",
+          "text": "El programa sostiene que personas próximas a Palantir trabajaban en funciones de la administración sin abandonar responsabilidades empresariales. No se identifican aquí expedientes individuales suficientes para presentar una infracción comprobada."
+        }
+      ]
     },
     {
       "id": "f21-deepseek",
@@ -205,7 +246,17 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "x": 7340,
       "y": 2370,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Musk, DOGE y conflicto de interés · 1:26:26",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=5186s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 5186,
+          "status": "alegacion_atribuida_pendiente_contraste",
+          "text": "Se expone una posible incompatibilidad entre participación en la administración estadounidense y actividades de contratistas tecnológicos vinculados a Musk. La intervención expresa una acusación de conflicto de intereses que requiere contratos, cargos y fechas independientes."
+        }
+      ]
     },
     {
       "id": "f21-vonderleyen",
@@ -284,6 +335,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 12% del texto automático, sin minutaje: «ual pues teóricos como propio brezinski el propio kissinger hablábamos en la anterior entrevista de todo ello o lo dejábamos un poco sobre la mesa pues hablaban y lo tenían muy cla». Contexto editorial: Su pensamiento estratégico sobre Eurasia es objeto de interpretación de los interlocutores, sin que ello pruebe que dirigiera episodios posteriores."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Brzezinski y Kissinger · 14:20",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=860s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 860,
+          "status": "interpretacion_de_autores_atribuida",
+          "text": "La entrevista invoca a Brzezinski y Kissinger al comentar escenarios de unión euroasiática y hegemonía estadounidense. Es la lectura del invitado sobre esos autores, no una cita textual cotejada de sus obras."
         }
       ],
       "x": 6120,
@@ -307,6 +367,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 12% del texto automático, sin minutaje: «mo propio brezinski el propio kissinger hablábamos en la anterior entrevista de todo ello o lo dejábamos un poco sobre la mesa pues hablaban y lo tenían muy claro ¿no ellos se dan ». Contexto editorial: Se le cita por planteamientos geopolíticos. No se deducen directrices ejecutivas secretas a partir de esa mención."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Ucrania en interpretación geoestratégica · 16:33",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=993s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 993,
+          "status": "interpretacion_atribuida_no_prueba_causal",
+          "text": "El programa atribuye a Brzezinski y Kissinger planteamientos sobre Ucrania como espacio estratégico. No se prueba que esos autores ordenaran intervenciones ni se fija la causa de una guerra por esta interpretación oral."
         }
       ],
       "x": 6355,
@@ -399,6 +468,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «ol financiero que es mando al fondo monetario internacional o mando al banco mundial te obligo a que te endeudes y luego además te obligo a que impongas una serie de medidas de ing». Contexto editorial: Se debate el papel de créditos y condicionalidad. No se acredita automáticamente intención de empobrecer países."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · FMI y endeudamiento · 23:57",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=1437s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 1437,
+          "status": "valoracion_economica_atribuida",
+          "text": "El entrevistado presenta una crítica general a la condicionalidad financiera del FMI y del Banco Mundial, atribuyéndoles efectos de dependencia económica. Las afirmaciones causales requieren casos y documentación individualizados."
         }
       ],
       "x": 5650,
@@ -422,6 +500,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 20% del texto automático, sin minutaje: «ario internacional o mando al banco mundial te obligo a que te endeudes y luego además te obligo a que impongas una serie de medidas de ingeniería social de control de emisiones de». Contexto editorial: Tema de discusión financiera. No se ha verificado coordinación ilegal derivada de la entrevista."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Banco Mundial y condicionalidad · 23:57",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=1437s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 1437,
+          "status": "valoracion_economica_atribuida",
+          "text": "En la misma intervención se menciona al Banco Mundial junto al FMI como parte de una interpretación crítica de la financiación internacional. No se ha probado aquí que los programas descritos respondan a una finalidad deliberada de empobrecimiento."
         }
       ],
       "x": 5885,
@@ -445,6 +532,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 11% del texto automático, sin minutaje: « y luego ya sobre todo george soros a través de un artículo lo popularizó que era el concepto de policrisis que luego se ha repetido mucho en informes de bancos de inversión ¿no qu». Contexto editorial: Asociado por el entrevistado a la hipótesis de financiación político-ideológica. No se dibujan aristas de fondos sin subsidios verificables."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Policrisis y George Soros · 12:49",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=769s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 769,
+          "status": "referencia_historica_pendiente_contraste",
+          "text": "El entrevistado menciona el término «policrisis» y afirma que George Soros contribuyó a popularizarlo. La atribución histórica de la autoría del concepto queda pendiente de contraste con textos originales."
         }
       ],
       "x": 6120,
@@ -468,6 +564,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 11% del texto automático, sin minutaje: « y luego ya sobre todo george soros a través de un artículo lo popularizó que era el concepto de policrisis que luego se ha repetido mucho en informes de bancos de inversión ¿no qu». Contexto editorial: Aparece en el contexto de imputaciones sobre subvenciones. Solo se registra la mención, no transferencias o ilícitos."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · ONG de Soros y financiación atribuida a USAID · 1:10:51",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=4251s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 4251,
+          "status": "alegacion_financiera_no_verificada",
+          "text": "Se afirma que organizaciones asociadas a Soros habrían sido canales de recursos de USAID. No se identifican en este pasaje contratos, receptor, importe, ejercicio o mecanismo verificables. No debe crearse una arista de financiación documentada a partir de la declaración."
         }
       ],
       "x": 6355,
@@ -518,6 +623,24 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
           "text": "TRANSCRIPCIÓN AUTOMÁTICA · ~83 % del episodio. Se comenta la cotización bursátil de Palantir y se cuestiona la transparencia de su actividad comercial desde una perspectiva inversora. Se trata de opiniones de mercado referidas a marzo de 2025, no de una valoración financiera actual."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Thiel frente a Soros como dos polos · 1:28:16",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=5296s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 5296,
+          "status": "interpretacion_atribuida",
+          "text": "El entrevistado describe a Peter Thiel y George Soros como polos ideológicos enfrentados y comenta la participación de Thiel en empresas tecnológicas. La analogía política no demuestra que exista coordinación oculta entre ambos."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Thiel y decisiones públicas · 1:39:24",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=5964s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 5964,
+          "status": "alegacion_atribuida_no_verificada",
+          "text": "El programa afirma que Peter Thiel influiría en decisiones del Gobierno estadounidense de forma poco visible. La afirmación requiere pruebas directas de intervención, designaciones o comunicaciones; los subtítulos solo permiten atribuirla al emisor."
         }
       ],
       "x": 6590,
@@ -564,6 +687,24 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "fuente-externa",
           "text": "Mención localizada aproximadamente al 77% del texto automático, sin minutaje: « cuando presentan el proyecto stargate famoso proyecto stargate de la inteligencia artificial pruntar por ello claro es que esto shamalman que sale ahí de repente a escena como eh ». Contexto editorial: Anunciado oficialmente el 21/01/2025 con SoftBank, OpenAI, Oracle y MGX como financiadores iniciales."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Proyecto Stargate e IA · 1:32:09",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=5529s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 5529,
+          "status": "mencion_de_proyecto_con_cautela",
+          "text": "La conversación menciona Stargate como proyecto de inversión en inteligencia artificial y discute sus posibles efectos sobre poder tecnológico y vigilancia. El hecho de mencionarlo no acredita un sistema de vigilancia ni sus fines."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Stargate y riesgo de vigilancia · 1:43:20",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=6200s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 6200,
+          "status": "interpretacion_atribuida",
+          "text": "Los interlocutores asocian el crecimiento de infraestructura de IA, incluido Stargate, con posibles riesgos de vigilancia estatal. Se trata de una proyección o crítica, no de una funcionalidad acreditada del proyecto."
         }
       ],
       "x": 7060,
