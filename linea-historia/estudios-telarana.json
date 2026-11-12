@@ -3004,6 +3004,64 @@
         },
         "methodologicalLimits": "El documento fiscal confirma la declaración de culpabilidad en los cargos indicados, pero no valida acusaciones de Villarejo contra partidos españoles o el CNI. El episodio solo constituye referencia de mención; los hechos judiciales proceden de documentación estadounidense independiente."
       }
+    },
+    {
+      "id": "study-f39-descubrimiento-tumba-tutankamon-1922",
+      "y": 1922.841095890411,
+      "t": "Howard Carter localiza la entrada de la tumba de Tutankamón",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · F39; contraste archivístico de Oxford",
+      "d": "El 4 de noviembre de 1922, el equipo dirigido por Howard Carter identificó los primeros peldaños de acceso a la tumba de Tutankamón en el Valle de los Reyes. El diario de excavación conservado por el Griffith Institute, Universidad de Oxford, documenta la fecha y las circunstancias. La fuente F39 habla del hallazgo y del mito posterior de una maldición, pero la exactitud de la fecha procede de documentación primaria, no de la transcripción NotebookLM.",
+      "g": [
+        "África"
+      ],
+      "investigation": {
+        "date": "1922-11-04",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 39,
+        "sourceTitle": "Egiptólogo destroza mitos de Egipto · Tito Vivas",
+        "sourceUrl": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
+        "confirmedBy": {
+          "label": "Griffith Institute, Universidad de Oxford · Diario de Howard Carter",
+          "url": "https://www.griffith.ox.ac.uk/gri/4sea1not.html"
+        },
+        "relatedTelarana": [
+          "f39-howard-carter",
+          "f39-tutankamon",
+          "f39-episodio"
+        ],
+        "methodologicalLimits": "La fecha y descubrimiento proceden del diario original de Carter; la afirmación popular de una maldición es una leyenda ajena al documento. La fuente F39 solo se utiliza como punto de entrada editorial, sin minutajes ni audio cotejado."
+      }
+    },
+    {
+      "id": "study-f50-juicios-salem-1692",
+      "y": 1692.5,
+      "t": "En Salem se celebran procesos por brujería con ejecuciones por ahorcamiento",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · F50; registros históricos de Salem",
+      "d": "En 1692 se celebraron en la colonia de Massachusetts los juicios por brujería de Salem. De acuerdo con la documentación histórica del Salem Witch Museum, diecinueve personas fueron ahorcadas, Giles Corey murió aplastado durante el proceso y hubo fallecimientos adicionales en prisión. No se quemó a las condenadas en hogueras, pese a la representación cinematográfica extendida. El episodio F50 debate el mito, pero el balance y el procedimiento proceden de la institución histórica.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "1692",
+        "datePrecision": "año",
+        "status": "hecho_documentado",
+        "sourceOrder": 50,
+        "sourceTitle": "The Wild Project #284 · Miguel de Lys",
+        "sourceUrl": "https://www.youtube.com/watch?v=H841XyN9B_4",
+        "confirmedBy": {
+          "label": "Salem Witch Museum · Historical FAQ",
+          "url": "https://salemwitchmuseum.com/faqs/"
+        },
+        "relatedTelarana": [
+          "f50-salem",
+          "f50-episodio",
+          "f50-caza-brujas"
+        ],
+        "methodologicalLimits": "El relato audiovisual de 2024 no constituye prueba primaria de los procesos de 1692. Las estadísticas y el tipo de ejecución se basan en la institución histórica. La fuente F50 se conserva como debate de divulgación sin marcas temporales ni diarización comprobadas."
+      }
     }
   ]
 }
