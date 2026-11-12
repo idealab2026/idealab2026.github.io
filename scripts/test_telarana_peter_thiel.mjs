@@ -30,6 +30,11 @@ const edges=ctx.data.edges.filter(e=>e.a==="on-peter-thiel"||e.b==="on-peter-thi
 assert(edges.some(e=>e.episodeId==="idealab-f18-epstein-lorenzo"),"Falta enlace documental con fuente 18");
 assert(edges.some(e=>e.episodeId==="idealab-f21-orden-mundial"),"Falta enlace documental con fuente 21");
 assert(edges.length>=5,"Se esperaban las tres conexiones originales y las dos menciones nuevas");
-assert(notes.every(n=>n.timeSec===null),"No inventar minutajes");
+// Los subtitulos cronometrados permiten anclas precisas, pero no certifican el audio.
+assert(notes.every(n=>n.timeSec===null||(Number.isFinite(n.timeSec)&&
+ n.timeSec>=0&&/^https:\\/\\/www\\.youtube\\.com\\/watch\\?v=/.test(n.source||""))),
+ "No aceptar minutajes sin enlace al video original");
+assert(notes.some(n=>Number.isFinite(n.timeSec)),
+ "Se han perdido las anclas de los subtitulos recuperados");
 assert(ctx.data.edges.every(e=>ctx.data.nodes.some(n=>n.id===e.a)&&ctx.data.nodes.some(n=>n.id===e.b)),"Arista huérfana");
 console.log("OK: Peter Thiel, un solo nodo, "+notes.length+" notas y "+edges.length+" relaciones incluyendo entrevistas 18 y 21");
