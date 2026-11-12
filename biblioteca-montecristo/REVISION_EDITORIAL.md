@@ -29,8 +29,12 @@
 | [#149](https://github.com/idealab2026/idealab2026.github.io/issues/149) | Libertad o igualdad · capítulo 11 | **BLOQUEADA**: erratas inequívocas («Coño Real laboral», entre otras), cifras EE. UU./UE con unidades y fechas incompatibles; rehacer y cotejar con fuentes primarias y con la obra |
 | [#110](https://github.com/idealab2026/idealab2026.github.io/issues/110) | Sapiens · capítulo 4 | **CORREGIR** encabezados redundantes; contrastar formulaciones científicas y la cifra «23 de 24 especies» |
 | [#146](https://github.com/idealab2026/idealab2026.github.io/issues/146) | Libertad o igualdad · capítulo 8 | **VERIFICAR DATOS**: porcentajes y comparaciones sin referencia, fecha o metodología suficientemente identificadas |
-| [#72](https://github.com/idealab2026/idealab2026.github.io/issues/72) | Montecristo I · capítulo 30 | **VERIFICAR DATOS**: importes de 287.500 y 14.000 francos, plazo y secuencia del capítulo con fuente original |
+| [#72](https://github.com/idealab2026/idealab2026.github.io/issues/72) | Montecristo I · capítulo 30 | **CONTRASTE PARCIAL**: los 287.500 francos y los ~14.000 francos sí aparecen en el texto; falta cotejar íntegramente la secuencia y el vídeo de referencia. La cifra de caja es una aproximación previa, no una contabilidad final |
 | [#32](https://github.com/idealab2026/idealab2026.github.io/issues/32) | Montecristo II · capítulo 53 | **AJUSTE OPCIONAL** de maquetación, encabezados repetidos |
+
+## Contraste textual documentado
+
+**#72 · Montecristo, capítulo 30 («El 5 de septiembre»)** — cotejo parcial realizado el 12/11/2026. El texto narrativo español establece una deuda de **287.500 francos** y unos recursos estimados en **14.000 francos** en la revisión inicial. Por tanto, ambas cifras impresas en la infografía están respaldadas por la narración. En el relato también aparece una revisión posterior de la caja con otra cifra exacta en ciertas ediciones; no confundir importes de momentos diferentes. Fuentes de consulta: [texto en castellano](https://newt.to/alexandre.dumas/MKIuGA8UGx/1t01dZlhRH) y [texto completo en inglés, Lit2Go](https://etc.usf.edu/lit2go/180/the-count-of-monte-cristo/3299/chapter-30-the-fifth-of-september/). **No está aprobada todavía**: falta cotejar episodio, cronología completa, rotulación y resto de la lámina.
 
 ## Inventario por obra e incidencia
 
