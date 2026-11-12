@@ -15,12 +15,17 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
     "transcriptDocUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
     "fullTranscriptImportedToDoc": true,
     "docCreated": true,
-    "reviewStage": "transcripcion_ASR_integra_en_Drive_revision_tematica_y_audio_pendientes",
+    "reviewStage": "revision_parcial_cronometrada_con_testimonios_y_contexto_judicial",
     "metadataSource": "YouTube episodio original, Apple Podcasts y Metacast",
-    "claimLimits": "La transcripción automática íntegra (314.815 caracteres) está conservada en Drive institucional. Existen hechos independientemente documentados —Gürtel 2020, absolución Ausbanc 2024, votación Congreso 2018 y apertura de Guantánamo 2002— y testimonios del entrevistado pendientes de audio, diarización y contraste judicial individual. Ninguna alegación equivale a sentencia.",
+    "claimLimits": "Se recuperó un TXT con 8.451 segmentos cronometrados en Drive institucional, separado del Google Doc anterior de transcripción. Los subtítulos no incorporan diarización fiable ni están cotejados con audio. Las conclusiones judiciales deben apoyarse en sentencias originales; no se equiparan denuncias, informaciones periodísticas y condenas. Las menciones en el pódcast no acreditan vínculos operativos.",
     "fullTranscriptStoredPrivately": true,
     "fullTranscriptCharacters": 314815,
-    "transcriptReadbackVerifiedDate": "2026-11-11"
+    "transcriptReadbackVerifiedDate": "2026-11-11",
+    "timestampedTranscriptAvailable": true,
+    "timestampedTranscriptSegments": 8451,
+    "timestampedTranscriptLastTimestamp": "05:14:20",
+    "timestampedTranscriptDriveUrl": "https://drive.google.com/file/d/1D8vOoMdDnW2Fj78q0-er5EYOMdWLCIMw/view",
+    "timestampedTranscriptAudioVerified": false
   },
   "nodes": [
     {
@@ -41,6 +46,24 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://investigacionapi.com/portada/2019/05/30/javier-chicote-recibira-el-premio-de-la-apm-al-mejor-periodista-del-ano/",
           "status": "biografia_independiente",
           "text": "Periodista español nacido en Logroño en 1979 y doctor en Periodismo. La Asociación de Periodistas de Investigación lo identifica como investigador de tramas políticas y económicas y premiado por la Asociación de la Prensa de Madrid por sus investigaciones de 2018. Entrevistado en The Wild Project #312 por Jordi Wild el 23 de enero de 2025. Las valoraciones expresadas en esa entrevista son sus propias apreciaciones, no necesariamente conclusiones judiciales."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Presentación de Javier Chicote y su visión de la corrupción · 00:02:45",
+          "timeSec": 165,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=165s",
+          "status": "opinion_profesional_atribuida",
+          "text": "Jordi Wild presenta a Javier Chicote y le pregunta si considera España un país completamente corrupto. Chicote responde que aprecia corrupción política, pero rechaza caracterizar como corrupta a toda la sociedad. Es una valoración general de un periodista, no una medida estadística."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Chicote relata incidente con un cuchillo en investigación de campo · 04:56:41",
+          "timeSec": 17801,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=17801s",
+          "status": "relato_autobiografico",
+          "text": "Chicote cuenta que en una investigación vinculada a Guantánamo vivió un encuentro amenazante con adolescentes y un cuchillo, y que un acompañante intervino. Es un episodio autobiográfico no cotejado con atestados o testigos independientes."
         }
       ]
     },
@@ -62,6 +85,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g",
           "status": "hecho_editorial",
           "text": "Jordi Wild dirige The Wild Project y conversa con Javier Chicote en este capítulo publicado el 23 de enero de 2025. El programa aborda corrupción, espionaje, periodismo y el sistema de detención estadounidense de Guantánamo. Su papel de entrevistador acredita la relación editorial con el invitado, pero no implica que ambos compartan todas las opiniones o acusaciones del episodio."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Pregunta inicial sobre corrupción · 00:02:45",
+          "timeSec": 165,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=165s",
+          "status": "pregunta_del_presentador",
+          "text": "El conductor pregunta al invitado si España es un país completamente corrupto y le pide distinguir el comportamiento del poder de la ciudadanía. La formulación del entrevistador no debe adjudicarse automáticamente a Chicote."
         }
       ]
     },
@@ -125,6 +157,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://investigacionapi.com/portada/2019/05/30/javier-chicote-recibira-el-premio-de-la-apm-al-mejor-periodista-del-ano/",
           "status": "biografia_independiente",
           "text": "Diario español donde Javier Chicote desempeñaba tareas de investigación en la fecha de la entrevista, según la descripción de su trayectoria de la Asociación de Periodistas de Investigación y la página del autor. Esta relación de empleo se refiere al período del episodio, no a una situación laboral necesariamente vigente años después."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Chicote y su experiencia dentro de ABC · 00:25:10",
+          "timeSec": 1510,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=1510s",
+          "status": "testimonio_profesional",
+          "text": "Chicote comenta las tensiones y dificultades de publicar investigaciones dentro de un periódico y se refiere a ABC, donde desarrollaba su trabajo. Es su experiencia profesional y su interpretación de las relaciones entre redacción y dirección."
         }
       ]
     },
@@ -146,6 +187,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "declaracion_parafraseada_sin_contraste_independiente",
           "text": "Luis Roldán fue director general de la Guardia Civil y protagonizó un caso histórico de corrupción. En el tramo inicial del pódcast Chicote utiliza su trayectoria como ejemplo de cómo el acceso al poder y a fondos reservados puede propiciar abusos. La anécdota concreta que ofrece sobre una caja de dinero es su reconstrucción del pasado, no una cita directa de una sentencia; debe comprobarse con documentación histórica antes de presentarla como demostrada."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Luis Roldán como ejemplo de cambio de imagen pública · 00:06:02",
+          "timeSec": 362,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=362s",
+          "status": "mencion_historica_contextualizada",
+          "text": "En el inicio del episodio, los participantes citan a Luis Roldán, antiguo director de la Guardia Civil, como ejemplo de figuras que tuvieron reputación positiva antes de emerger controversias o corrupción. No se relatan aquí nuevos hechos imputables a Roldán."
         }
       ]
     },
@@ -167,6 +217,24 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/u/us-navy-operation-enduring-freedom-2001-2002.html",
           "status": "hecho_historico_independiente",
           "text": "Centro de detención establecido por Estados Unidos en su base naval de Guantánamo. La historia oficial de la Armada de Estados Unidos documenta la llegada de los primeros veinte detenidos procedentes de Afganistán el 11 de enero de 2002. Chicote relata su experiencia periodística como visitante del centro, pero todavía no se ha localizado un minutaje exacto dentro del episodio ni contrastado en detalle su testimonio."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Chicote relata cómo obtuvo acceso a Guantánamo · 04:33:52",
+          "timeSec": 16432,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=16432s",
+          "status": "testimonio_personal_sin_cotejo_externo",
+          "text": "Chicote cuenta que trabajaba para el área audiovisual de investigación de El Mundo y que recibió una propuesta de viajar a Guantánamo para grabar un documental. El viaje y sus condiciones se registran como relato profesional del invitado hasta obtener documentos acreditativos independientes."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Descripción de celdas observadas en Guantánamo · 04:40:20",
+          "timeSec": 16820,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=16820s",
+          "status": "testimonio_de_visita_atribuido",
+          "text": "Chicote describe celdas individuales, colchones y el acceso que le permitió recorrer determinadas instalaciones vacías durante su visita a Guantánamo. Es una descripción de primera mano según el entrevistado y no permite generalizar a todas las celdas o periodos del centro."
         }
       ]
     },
@@ -188,6 +256,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "declaracion_parafraseada_sin_contraste_independiente",
           "text": "Koldo García aparece en el bloque de aproximadamente 01:45 del episodio. Chicote relata que investigó su trayectoria profesional, su paso por labores de escolta y su posterior actividad como asesor del entorno de José Luis Ábalos. El vínculo representado es una mención editorial de una investigación y no una afirmación de responsabilidad penal, que requiere verificar la fecha y fase de cada procedimiento."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Relato sobre un episodio violento atribuido a Koldo · 01:45:30",
+          "timeSec": 6330,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=6330s",
+          "status": "acusacion_atribuida_pendiente_de_sentencia",
+          "text": "En la conversación se atribuye a Koldo García una agresión física durante un incidente con un autobús y se menciona la existencia de condenas. El fragmento no aporta la sentencia ni el número de procedimiento; el episodio no constituye comprobación independiente de tales hechos."
         }
       ]
     },
@@ -209,6 +286,24 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "declaracion_parafraseada_sin_contraste_independiente",
           "text": "Político español que fue ministro de Fomento y después de Transportes durante los gobiernos de Pedro Sánchez. La conversación con Chicote aborda su relación política y profesional con Koldo García y la visita de Delcy Rodríguez a Barajas en 2020. En esta capa se registra que fue un asunto analizado por el invitado, sin trasladar acusaciones de corrupción, tráfico de influencias o conductas personales a hechos probados."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Chicote y los reportajes sobre Ábalos y Koldo · 01:38:31",
+          "timeSec": 5911,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=5911s",
+          "status": "relato_de_investigacion_periodistica",
+          "text": "Chicote afirma que publicó durante la pandemia de 2020-2021 informaciones sobre viajes de Ábalos y pagos en efectivo realizados por Koldo García. Estas afirmaciones proceden de su trabajo periodístico relatado en la entrevista; para tratarlas como hechos acreditados deben revisarse los reportajes y justificantes originales."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Interpretación de Chicote sobre las explicaciones de Ábalos · 02:11:21",
+          "timeSec": 7881,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7881s",
+          "status": "valoracion_de_investigacion_atribuida",
+          "text": "El periodista sostiene que el Gobierno y Ábalos dieron explicaciones contradictorias sobre la llegada de Delcy Rodríguez a Barajas y distingue la decisión de impedir su entrada de las circunstancias de la invitación. Son afirmaciones del entrevistado, no una resolución judicial recogida en este fragmento."
         }
       ]
     },
@@ -230,6 +325,24 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "declaracion_parafraseada_sin_contraste_independiente",
           "text": "Víctor de Aldama aparece en el pódcast en relación con varias investigaciones periodísticas, entre ellas contactos en el entorno de Transportes y la visita de Delcy Rodríguez a Barajas. Los pasajes ofrecen el relato del periodista sobre personas que dice haber investigado o conocido, no un expediente judicial incorporado; deben cotejarse individualmente las relaciones, procesos y fechas antes de declararlos acreditados."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Aldama y la versión de un contrato de alquiler · 01:50:31",
+          "timeSec": 6631,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=6631s",
+          "status": "reconstruccion_periodistica_no_probada",
+          "text": "Chicote describe un supuesto contrato de alquiler con opción a compra relacionado con Ábalos y personas de una trama de hidrocarburos vinculadas a Aldama. Es su reconstrucción periodística y una hipótesis de contraprestación; no se publica como soborno probado sin sentencia o contrato contrastado."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Aldama en la visita de Delcy Rodríguez · 02:00:38",
+          "timeSec": 7238,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7238s",
+          "status": "version_de_la_fuente_pendiente_de_contraste",
+          "text": "Chicote menciona la supuesta participación de Víctor de Aldama en la organización y recepción de Delcy Rodríguez. Es un relato periodístico que debe cotejarse con los documentos de la causa y testimonios originales, sin convertir la mención en una relación penal acreditada."
         }
       ]
     },
@@ -251,6 +364,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "declaracion_parafraseada_sin_contraste_independiente",
           "text": "Dirigente venezolana cuya visita a España y su paso por el aeropuerto de Barajas en 2020 se comenta extensamente en la entrevista. Chicote presenta sus propias investigaciones y opiniones sobre la preparación y condiciones de esa visita. El hecho de aparecer en esta ficha no significa que se hayan verificado todas las circunstancias narradas ni un delito, por lo que el vínculo es un capítulo de investigación periodística."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Delcy Rodríguez y su llegada a Barajas · 01:58:17",
+          "timeSec": 7097,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7097s",
+          "status": "version_periodistica_atribuida",
+          "text": "Chicote explica su investigación sobre la llegada a España de Delcy Rodríguez y cuestiona la explicación pública sobre quién conocía previamente la visita. La entrevista no sustituye registros aeroportuarios ni decisiones judiciales."
         }
       ]
     },
@@ -272,6 +394,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "declaracion_parafraseada_sin_contraste_independiente",
           "text": "Begoña Gómez es objeto de una parte de la conversación centrada en la Universidad Complutense, programas formativos y financiación de actividades universitarias. El entrevistado expone sus valoraciones sobre su trayectoria y sobre informaciones publicadas por él; dichas valoraciones no equivalen a una sentencia ni a la demostración de irregularidades específicas. Se requiere contrastar acuerdos universitarios, documentos públicos y situación procesal."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Begoña Gómez y uso de personal en tareas universitarias · 02:18:20",
+          "timeSec": 8300,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=8300s",
+          "status": "alegacion_periodistica_no_verificada",
+          "text": "Chicote afirma haber publicado mensajes que, a su juicio, indicarían que una persona de apoyo de Presidencia participó en gestiones universitarias relacionadas con Begoña Gómez. El episodio no presenta aquí copia íntegra de los mensajes ni sentencia que permita afirmar responsabilidad penal."
         }
       ]
     },
@@ -293,6 +424,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "declaracion_parafraseada_sin_contraste_independiente",
           "text": "La Universidad Complutense de Madrid figura como contexto institucional del segmento aproximadamente en 02:14 a 02:20. Se mencionan enseñanzas propias y financiación, cuestiones que requieren diferenciar contratos, cátedras extraordinarias, títulos oficiales y responsabilidades jurídicas. La presencia de la institución es documentalmente un tema tratado, no una imputación a toda la universidad."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Universidad Complutense como contexto de actividades de Gómez · 02:18:20",
+          "timeSec": 8300,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=8300s",
+          "status": "mencion_institucional_sin_imputacion",
+          "text": "En el bloque sobre Begoña Gómez, Chicote menciona sus actividades en la Universidad Complutense y la presunta participación de personal externo en gestiones. Que la Universidad aparezca en la narración no demuestra un acuerdo irregular ni responsabilidad institucional."
         }
       ]
     },
@@ -356,6 +496,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://www.rtve.es/noticias/20240315/supremo-absuelve-ausbanc-manos-limpias-extorsionar-bancos/16016998.shtml",
           "status": "situacion_judicial_documentada",
           "text": "Luis Pineda fue presidente de la asociación Ausbanc y procesado en una causa que fue objeto de la entrevista con Javier Chicote. El Tribunal Supremo lo absolvió en 2024 de delitos de extorsión y estafa, después de una sentencia condenatoria previa de la Audiencia Nacional. La sentencia considera determinadas prácticas censurables, pero no configuradoras de los tipos penales imputados, distinción indispensable en una red de relaciones pública."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Luis Pineda y financiación de Ausbanc según Chicote · 02:30:45",
+          "timeSec": 9045,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=9045s",
+          "status": "relato_periodistico_atribuido",
+          "text": "Chicote describe pagos publicitarios de entidades financieras a Ausbanc y comenta el enfrentamiento entre Luis Pineda y Miguel Blesa. Sus reconstrucciones sobre motivaciones o instrumentalización de acusaciones populares son hipótesis periodísticas, diferenciadas de la posterior absolución judicial."
         }
       ]
     },
@@ -377,6 +526,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://www.rtve.es/noticias/20240315/supremo-absuelve-ausbanc-manos-limpias-extorsionar-bancos/16016998.shtml",
           "status": "situacion_judicial_documentada",
           "text": "Ausbanc fue una asociación de usuarios de servicios financieros y publicaciones de defensa del consumidor, presidida por Luis Pineda. Aparece en el episodio en relación con demandas y contratos publicitarios. No debe describirse como una estructura criminal a partir de las opiniones del invitado: el Tribunal Supremo absolvió en 2024 a sus responsables de las figuras penales examinadas en la causa."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Ausbanc como asociación y medio de presión según el invitado · 02:30:45",
+          "timeSec": 9045,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=9045s",
+          "status": "interpretacion_periodistica",
+          "text": "El periodista describe Ausbanc como asociación de usuarios de banca con publicaciones financiadas mediante publicidad y comenta presiones investigadas en procedimientos judiciales. La clasificación de conductas y su resultado penal se debe basar en las sentencias, no en el episodio."
         }
       ]
     },
@@ -398,6 +556,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://www.rtve.es/noticias/20201014/claves-sentencia-del-supremo-sobre-guertel-hubo-caja-b-pp/2045051.shtml",
           "status": "hecho_judicial_independiente",
           "text": "Conjunto de investigaciones y procedimientos judiciales sobre contrataciones y adjudicaciones ligadas a una red empresarial de Francisco Correa, con actividades acreditadas en varias administraciones y municipios. El Tribunal Supremo confirmó en octubre de 2020 una parte sustancial de las condenas de la primera época y la responsabilidad civil del Partido Popular como partícipe a título lucrativo, sin atribuir automáticamente conocimiento de los hechos ilícitos al partido. En el pódcast Chicote relata sus investigaciones previas."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Chicote recuerda su investigación del caso Gürtel · 03:37:41",
+          "timeSec": 13061,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=13061s",
+          "status": "testimonio_periodistico_y_contexto",
+          "text": "Jordi Wild pregunta por el trabajo de Chicote en Gürtel; el invitado comenta la dimensión del caso y dificultades periodísticas de investigarlo. Las apreciaciones sobre el volumen de corrupción no equivalen a cifras definitivas sin resolución judicial."
         }
       ]
     },
@@ -440,6 +607,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://www.rtve.es/noticias/20201014/claves-sentencia-del-supremo-sobre-guertel-hubo-caja-b-pp/2045051.shtml",
           "status": "hecho_judicial_independiente",
           "text": "Partido político español vinculado a los procedimientos de la trama Gürtel. El Tribunal Supremo mantuvo en 2020 su responsabilidad civil como partícipe a título lucrativo por beneficios derivados de determinadas actividades de la trama en Majadahonda y Pozuelo. Ese título jurídico no significa condena penal de toda la organización ni demuestra que todos sus miembros conocieran los actos ilícitos; preservar esta precisión es indispensable."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · PP, Gürtel y la moción de censura · 03:43:51",
+          "timeSec": 13431,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=13431s",
+          "status": "contexto_judicial_y_parlamentario",
+          "text": "Chicote relaciona la publicación de una sentencia del caso Gürtel con la posterior moción de censura de junio de 2018 y comenta la responsabilidad civil a título lucrativo del PP. La secuencia parlamentaria y el alcance jurídico de la sentencia se acreditan por documentos oficiales, no por la interpretación del entrevistado."
         }
       ]
     },
@@ -461,6 +637,15 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
           "status": "testimonio_entrevistado",
           "text": "José Luis Peñas fue concejal en Majadahonda y una figura clave en el origen de las investigaciones del caso Gürtel. En el pódcast, Javier Chicote atribuye gran importancia a las grabaciones de conversaciones con Francisco Correa y al posterior proceso de denuncia. Su intervención judicial y su situación penal particular deben consultarse en sentencias y resoluciones de indulto, sin presumir que la colaboración anuló todas sus responsabilidades."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · José Luis Peñas y Juan José Moreno en el origen de Gürtel · 03:44:26",
+          "timeSec": 13466,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=13466s",
+          "status": "testimonio_periodistico_atribuido",
+          "text": "Chicote menciona a José Luis Peñas y Juan José Moreno, vinculados a los primeros relatos y grabaciones de Majadahonda que contribuyeron a destapar Gürtel. Es su descripción del origen periodístico de la investigación; no se derivan nuevas conductas ilícitas de esos nombres."
         }
       ]
     },
@@ -524,6 +709,36 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "source": "https://www.rtve.es/noticias/20240315/supremo-absuelve-ausbanc-manos-limpias-extorsionar-bancos/16016998.shtml",
           "status": "hecho_judicial_independiente",
           "text": "El Tribunal Supremo dictó el 15 de marzo de 2024 una resolución que absolvió a Luis Pineda y Miguel Bernad de extorsión y estafa en la causa correspondiente, en sustitución de la condena previa de la Audiencia Nacional. El resumen de RTVE recoge la fundamentación del tribunal: determinadas prácticas podían merecer reproche, pero no satisfacían los requisitos jurídicos de los delitos imputados."
+        },
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Chicote menciona la absolución de Pineda y Bernad · 02:38:01",
+          "timeSec": 9481,
+          "publishedAt": "2025-01-23",
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=9481s",
+          "status": "hecho_judicial_con_contexto_independiente",
+          "text": "En la conversación se menciona que el Tribunal Supremo acabó absolviendo a Luis Pineda y Miguel Bernad en su procedimiento penal. Este hecho está además documentado por la sentencia de marzo de 2024, aunque las razones y los efectos jurídicos deben consultarse en la resolución original."
+        }
+      ]
+    },
+    {
+      "id": "twp312-pedro-sanchez",
+      "name": "Pedro Sánchez",
+      "kind": "Persona",
+      "subtitle": "Político español; presidente del Gobierno desde junio de 2018",
+      "note": "Pedro Sánchez aparece en F07 como contexto del Gobierno al que perteneció José Luis Ábalos y como referencia de las investigaciones periodísticas expuestas por Javier Chicote. La entrevista contiene opiniones y acusaciones sobre personas de su entorno; esas menciones no acreditan por sí solas responsabilidad personal, penal o institucional del presidente.",
+      "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7881s",
+      "photo": "",
+      "topic3d": "global",
+      "podcastNotes": [
+        {
+          "episodeId": "wild-project-312-javi-chicote-2025",
+          "title": "F07 · Pedro Sánchez como contexto político de Delcy y Ábalos · 02:11:21",
+          "timeSec": 7881,
+          "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7881s",
+          "publishedAt": "2025-01-23",
+          "status": "contexto_politico_sin_responsabilidad_atribuida",
+          "text": "Chicote comenta las explicaciones gubernamentales sobre la visita de Delcy Rodríguez y el papel del entonces ministro Ábalos. El episodio utiliza al Gobierno de Sánchez como marco; no prueba por esa mención la participación personal de Sánchez en acciones presuntamente irregulares."
         }
       ]
     }
@@ -1056,6 +1271,18 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
           "text": "Gürtel fue un asunto político relevante en el debate parlamentario que culminó con la moción de censura aprobada el 1 de junio de 2018; no se reduce la decisión parlamentaria a una sola causa."
         }
       ]
+    },
+    {
+      "id": "twp312-pedro-sanchez-contexto",
+      "a": "twp312-episode",
+      "b": "twp312-pedro-sanchez",
+      "type": "Contexto político de la entrevista; mención, no responsabilidad personal",
+      "confidence": "documentado",
+      "claimStatus": "mencion_editorial_o_testimonio_no_prueba_de_delito",
+      "source": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=7881s",
+      "note": "El presidente del Gobierno es mencionado como contexto de preguntas sobre Ábalos y Delcy Rodríguez. La presencia en el diálogo no establece su participación en ningún ilícito ni permite relacionarlo con otros actores sin evidencia adicional.",
+      "episodeId": "wild-project-312-javi-chicote-2025",
+      "podcastNotes": []
     }
   ],
   "primaryEvidence": {
