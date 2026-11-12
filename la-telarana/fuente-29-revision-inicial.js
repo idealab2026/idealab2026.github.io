@@ -7,14 +7,19 @@ window.IDEA_TELARANA_F29_REVIEW = {
     "sourceUrl": "https://www.youtube.com/watch?v=QHGrY87hkUw",
     "publishedAt": "2026-08-20",
     "duration": "59:53",
-    "reviewStage": "extractos_ASR_externos_00_09_y_fuentes_primarias",
-    "transcriptAvailable": false,
+    "reviewStage": "transcripcion_con_minutajes_recuperada_revision_editorial_en_curso",
+    "transcriptAvailable": true,
     "fullTranscriptAvailableExternally": true,
-    "fullTranscriptPreservedInDrive": false,
+    "fullTranscriptPreservedInDrive": true,
     "editorialDossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
     "audioVerified": false,
     "minuteVerified": false,
-    "methodologicalNote": "Los primeros pasajes revisados proceden de una transcripción ASR externa y deben cotejarse con el vídeo. Ocho relaciones públicas documentadas (una entidad, dos subvenciones, un fondo presupuestario, fiscalización parlamentaria y nombramiento en BOE). Seis enlaces editoriales no prueban coordinación del MI6, servicios secretos, plataformas, Soros ni otras personas con supuestos ataques a Baños. La mención a la entrevista Carlson no acredita las tesis de sus invitados."
+    "methodologicalNote": "El episodio ya dispone de subtítulos automáticos completos con códigos de tiempo (F29, 1.541 segmentos hasta 00:59:51), conservados como TXT en Drive institucional. No hay cotejo con el audio ni validación independiente de las acusaciones. Los datos externos ya publicados y sus enlaces conservan su procedencia independiente; ninguna acusación queda acreditada por los subtítulos.",
+    "transcriptFullTextPreserved": true,
+    "transcriptFormat": "youtube_caption_segments_with_timestamps",
+    "transcriptSegments": 1541,
+    "transcriptLastTimestamp": "00:59:51",
+    "transcriptVerifiedByAudio": false
   },
   "nodes": [
     {
@@ -22,13 +27,23 @@ window.IDEA_TELARANA_F29_REVIEW = {
       "name": "Operación: Destruir a Pedro Baños (Parte 1)",
       "kind": "Fuente",
       "subtitle": "El Canal del Coronel · 20/08/2026",
-      "note": "Programa de Pedro Baños que expone sus interpretaciones sobre propaganda, servicios de inteligencia y campañas reputacionales. El episodio completo dura 59:53, pero solo se han revisado anclas externas de su transcripción automática, sin comprobación del audio. Las interpretaciones sobre supuestas operaciones clandestinas deben permanecer atribuidas al ponente.",
+      "note": "El episodio ya dispone de subtítulos automáticos completos con códigos de tiempo (F29, 1.541 segmentos hasta 00:59:51), conservados como TXT en Drive institucional. No hay cotejo con el audio ni validación independiente de las acusaciones.",
       "source": "https://www.ivoox.com/operacion-destruir-a-pedro-banos-parte-1-audios-mp3_rf_179238445_1.html",
       "photo": "",
       "topic3d": "global",
       "x": 11200,
       "y": 3900,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f29-parte1",
+          "title": "F29 · CIA y MI6 · 11:30",
+          "source": "https://www.youtube.com/watch?v=QHGrY87hkUw&t=690s",
+          "publishedAt": "2026-08-20",
+          "timeSec": 690,
+          "status": "tesis_entrevistado_no_verificada",
+          "text": "En el programa se sostiene que la CIA y el MI6 habrían condicionado la política española durante décadas. Es una tesis del emisor y no debe visualizarse como una relación orgánica o una subordinación acreditada."
+        }
+      ]
     },
     {
       "id": "f04-pedro-banos",
@@ -68,6 +83,15 @@ window.IDEA_TELARANA_F29_REVIEW = {
           "timeSec": null,
           "status": "mencion_contextual",
           "text": "Baños refiere un episodio del programa de Tucker Carlson publicado el 31/07/2026, que presentaba a una invitada como Elizabeth Lane y discutía información y propaganda. La publicación del episodio está acreditada por su ficha, pero la exactitud de sus tesis no se infiere de la mención."
+        },
+        {
+          "episodeId": "idealab-f29-parte1",
+          "title": "F29 · Baños y las acusaciones de vinculación rusa · 26:28",
+          "source": "https://www.youtube.com/watch?v=QHGrY87hkUw&t=1588s",
+          "publishedAt": "2026-08-20",
+          "timeSec": 1588,
+          "status": "alegacion_atribuida_no_verificada",
+          "text": "En el episodio se describe la acusación de que Baños sería un «agente ruso» y que su nombramiento no prosperó. Es el relato del programa sobre una campaña reputacional; los subtítulos no acreditan sus autores ni sus motivaciones."
         }
       ]
     },
@@ -134,7 +158,17 @@ window.IDEA_TELARANA_F29_REVIEW = {
       "topic3d": "global",
       "x": 11440,
       "y": 4105,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f29-parte1",
+          "title": "F29 · Integrity Initiative · 27:46",
+          "source": "https://www.youtube.com/watch?v=QHGrY87hkUw&t=1666s",
+          "publishedAt": "2026-08-20",
+          "timeSec": 1666,
+          "status": "mencion_transcripcion_no_prueba_coordinacion",
+          "text": "El programa menciona Integrity Initiative y le atribuye financiación británica en un tramo sobre propaganda. Esa mención no demuestra que el programa participase en una actuación contra Baños; la financiación documentada debe distinguirse de cualquier imputación."
+        }
+      ]
     },
     {
       "id": "f29-foreign-office",
@@ -212,7 +246,17 @@ window.IDEA_TELARANA_F29_REVIEW = {
       "topic3d": "global",
       "x": 11680,
       "y": 4310,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f29-parte1",
+          "title": "F29 · George Soros y la OTAN · 24:54",
+          "source": "https://www.youtube.com/watch?v=QHGrY87hkUw&t=1494s",
+          "publishedAt": "2026-08-20",
+          "timeSec": 1494,
+          "status": "tesis_entrevistado_no_verificada",
+          "text": "Baños relaciona retóricamente a George Soros con la agenda de la OTAN. La transcripción documenta esa afirmación como discurso del programa, no como prueba de una coordinación entre el inversor y la organización."
+        }
+      ]
     },
     {
       "id": "on-open-society",
