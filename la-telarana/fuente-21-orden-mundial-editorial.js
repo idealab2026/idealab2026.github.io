@@ -96,12 +96,12 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
         },
         {
           "episodeId": "idealab-f21-orden-mundial",
-          "title": "F21 · Publicidad institucional y periodistas · 1:14:31",
-          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=4471s",
+          "title": "F21 · Publicidad institucional y periodistas · 1:18:31",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=4711s",
           "publishedAt": "2025-03-19",
-          "timeSec": 4471,
+          "timeSec": 4711,
           "status": "distincion_probatoria_relevante",
-          "text": "El entrevistado distingue entre financiación recibida por un medio u organización y pago directo a periodistas. Señala que, incluso según su relato, la existencia de una subvención no permite inferir que un periodista concreto cobrase de USAID."
+          "text": "El entrevistado distingue expresamente la financiación a una entidad o medio del pago directo a un periodista. Incluso dentro de su relato, afirma que un profesional puede desconocer el origen final de la financiación. Este pasaje impide inferir retribuciones individuales sin registros de pago."
         }
       ]
     },
