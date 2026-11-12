@@ -1501,6 +1501,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 85,
+          "state": "cierre_editorial_registrado",
+          "readyForDeepReview": false,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 116,
+            "relations": 136,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 7,
+            "verifiedTimelineEvents": 5,
+            "captionSegments": 4146,
+            "expectedEntities": 12,
+            "expectedStatements": 25
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 15,
+            "cronologia": 5,
+            "qa": 5
+          },
+          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias"
         }
       },
       {
@@ -1541,6 +1570,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 62,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 33,
+            "relations": 34,
+            "biographies": 13,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 8,
+            "captionSegments": 2487,
+            "expectedEntities": 10,
+            "expectedStatements": 15
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 10,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 10,
+            "cronologia": 5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -1590,7 +1648,36 @@
           "Felipe VI de España"
         ],
         "namedActorsWithImagesConfigured": 3,
-        "metadataReviewStage": "Solo sinopsis editorial y fuentes biográficas independientes; sin texto audiovisual"
+        "metadataReviewStage": "Solo sinopsis editorial y fuentes biográficas independientes; sin texto audiovisual",
+        "analysisCoverage": {
+          "percent": 22,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 5,
+            "relations": 5,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 0,
+            "captionSegments": 3224,
+            "expectedEntities": 10,
+            "expectedStatements": 19
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 7.5,
+            "biografias": 0,
+            "relaciones": 7.5,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 0,
+            "cronologia": 0,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
+        }
       },
       {
         "order": 4,
@@ -1638,7 +1725,36 @@
         "contextHistoricalEvents": 7,
         "imagePortraitsConfigured": 3,
         "imageWikipediaCandidates": 5,
-        "unresolvedHistoricalIdentity": "Pedro de Villamizar (epígrafe del vídeo, no biografía validada)"
+        "unresolvedHistoricalIdentity": "Pedro de Villamizar (epígrafe del vídeo, no biografía validada)",
+        "analysisCoverage": {
+          "percent": 31,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 0,
+            "relations": 0,
+            "biographies": 9,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 7,
+            "captionSegments": 2347,
+            "expectedEntities": 10,
+            "expectedStatements": 14
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 0,
+            "biografias": 10,
+            "relaciones": 0,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 8.8,
+            "cronologia": 5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
+        }
       },
       {
         "order": 5,
@@ -1671,7 +1787,36 @@
         "editorialEdges": 3,
         "publisherCountDiscrepancyFlagged": true,
         "transcriptNotApplicable": true,
-        "transcriptRequired": false
+        "transcriptRequired": false,
+        "analysisCoverage": {
+          "percent": 16,
+          "state": "en_revision",
+          "readyForDeepReview": false,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 4,
+            "relations": 3,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 0,
+            "captionSegments": 0,
+            "expectedEntities": 12,
+            "expectedStatements": 20
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 5,
+            "biografias": 0,
+            "relaciones": 3.8,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 0,
+            "cronologia": 0,
+            "qa": 2
+          },
+          "nextAction": "Revisar documentación primaria y extraer datos contrastables"
+        }
       },
       {
         "order": 6,
@@ -1730,7 +1875,36 @@
         "userSuppliedTranscriptName": "Texto pegado(2).txt",
         "transcriptAudioMatched": false,
         "transcriptSha256VerifiedDriveRoundTrip": true,
-        "transcriptTopicIndexCount": 13
+        "transcriptTopicIndexCount": 13,
+        "analysisCoverage": {
+          "percent": 36,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 10,
+            "relations": 10,
+            "biographies": 3,
+            "statements": 13,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 0,
+            "captionSegments": 6975,
+            "expectedEntities": 20,
+            "expectedStatements": 42
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 7.5,
+            "biografias": 4.3,
+            "relaciones": 7.5,
+            "declaraciones_atribuidas": 9.3,
+            "contrastes_documentales": 0,
+            "cronologia": 0,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
+        }
       },
       {
         "order": 7,
@@ -1785,7 +1959,36 @@
         "curatedBiographies": 8,
         "portraitLookupCandidates": 9,
         "portraitRuntimeVerified": 0,
-        "timelineVerifiedEvents": 5
+        "timelineVerifiedEvents": 5,
+        "analysisCoverage": {
+          "percent": 71,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 25,
+            "relations": 25,
+            "biographies": 8,
+            "statements": 22,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 5,
+            "captionSegments": 8451,
+            "expectedEntities": 25,
+            "expectedStatements": 48
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 8.9,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 13.8,
+            "contrastes_documentales": 6.3,
+            "cronologia": 5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
+        }
       },
       {
         "order": 8,
@@ -1845,7 +2048,36 @@
         "contextRelations": 7,
         "biographiesContextualized": 5,
         "photoLookupsConfigured": 5,
-        "historicalEventsIndependent": 1
+        "historicalEventsIndependent": 1,
+        "analysisCoverage": {
+          "percent": 76,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 10,
+            "relations": 9,
+            "biographies": 7,
+            "statements": 15,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 2,
+            "captionSegments": 2926,
+            "expectedEntities": 10,
+            "expectedStatements": 18
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 10,
+            "relaciones": 13.5,
+            "declaraciones_atribuidas": 25,
+            "contrastes_documentales": 2.5,
+            "cronologia": 2.5,
+            "qa": 2
+          },
+          "nextAction": "Contrastar afirmaciones y enlazar hechos con la cronología"
+        }
       },
       {
         "order": 9,
@@ -1887,6 +2119,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 72,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 13,
+            "relations": 12,
+            "biographies": 0,
+            "statements": 33,
+            "independentChecks": 1,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 3972,
+            "expectedEntities": 12,
+            "expectedStatements": 24
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 30,
+            "contrastes_documentales": 3.8,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Ampliar biografías y normalizar identidades"
         }
       },
       {
@@ -1924,6 +2185,35 @@
           "timecodedTranscriptContentImported": true,
           "timecodedTranscriptNotesReviewed": 12,
           "timecodedTranscriptNotesAudioMatched": false
+        },
+        "analysisCoverage": {
+          "percent": 57,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 7,
+            "relations": 6,
+            "biographies": 0,
+            "statements": 12,
+            "independentChecks": 1,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 2294,
+            "expectedEntities": 10,
+            "expectedStatements": 14
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 10.5,
+            "biografias": 0,
+            "relaciones": 9,
+            "declaraciones_atribuidas": 25.7,
+            "contrastes_documentales": 3.8,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Ampliar biografías y normalizar identidades"
         }
       },
       {
@@ -1965,6 +2255,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 71,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 11,
+            "relations": 10,
+            "biographies": 0,
+            "statements": 28,
+            "independentChecks": 1,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 3847,
+            "expectedEntities": 11,
+            "expectedStatements": 23
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 13.6,
+            "declaraciones_atribuidas": 30,
+            "contrastes_documentales": 3.8,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Ampliar biografías y normalizar identidades"
         }
       },
       {
@@ -2000,6 +2319,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 30,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 8,
+            "relations": 7,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 0,
+            "captionSegments": 2182,
+            "expectedEntities": 10,
+            "expectedStatements": 13
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 12,
+            "biografias": 0,
+            "relaciones": 10.5,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 0,
+            "cronologia": 0,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2041,6 +2389,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 53,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 9,
+            "relations": 8,
+            "biographies": 0,
+            "statements": 20,
+            "independentChecks": 4,
+            "verifiedTimelineEvents": 4,
+            "captionSegments": 7278,
+            "expectedEntities": 21,
+            "expectedStatements": 43
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 6.4,
+            "biografias": 0,
+            "relaciones": 5.7,
+            "declaraciones_atribuidas": 14,
+            "contrastes_documentales": 15,
+            "cronologia": 5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2076,6 +2453,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 34,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 8,
+            "relations": 7,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 2,
+            "verifiedTimelineEvents": 2,
+            "captionSegments": 4240,
+            "expectedEntities": 13,
+            "expectedStatements": 25
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 9.2,
+            "biografias": 0,
+            "relaciones": 8.1,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 7.5,
+            "cronologia": 2.5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2103,7 +2509,36 @@
         },
         "transcriptRequired": false,
         "officialDocumentUrlRecovered": true,
-        "identicalBinaryToNotebookUploadVerified": false
+        "identicalBinaryToNotebookUploadVerified": false,
+        "analysisCoverage": {
+          "percent": 28,
+          "state": "en_revision",
+          "readyForDeepReview": false,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 8,
+            "relations": 7,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 0,
+            "expectedEntities": 12,
+            "expectedStatements": 20
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 10,
+            "biografias": 0,
+            "relaciones": 8.8,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 1.3,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Revisar documentación primaria y extraer datos contrastables"
+        }
       },
       {
         "order": 16,
@@ -2138,6 +2573,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 36,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 10,
+            "relations": 9,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 0,
+            "captionSegments": 2902,
+            "expectedEntities": 10,
+            "expectedStatements": 18
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 13.5,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 0,
+            "cronologia": 0,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2173,6 +2637,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 40,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 9,
+            "relations": 8,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 2,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 1789,
+            "expectedEntities": 10,
+            "expectedStatements": 12
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 13.5,
+            "biografias": 0,
+            "relaciones": 12,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 6.3,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2215,6 +2708,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 88,
+          "state": "cierre_editorial_registrado",
+          "readyForDeepReview": false,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 21,
+            "relations": 20,
+            "biographies": 36,
+            "statements": 36,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 3,
+            "captionSegments": 3578,
+            "expectedEntities": 11,
+            "expectedStatements": 22
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 10,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 30,
+            "contrastes_documentales": 3.8,
+            "cronologia": 3.8,
+            "qa": 5
+          },
+          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias"
         }
       },
       {
@@ -2257,6 +2779,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 78,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 10,
+            "relations": 9,
+            "biographies": 0,
+            "statements": 23,
+            "independentChecks": 3,
+            "verifiedTimelineEvents": 2,
+            "captionSegments": 2590,
+            "expectedEntities": 10,
+            "expectedStatements": 16
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 13.5,
+            "declaraciones_atribuidas": 30,
+            "contrastes_documentales": 10,
+            "cronologia": 2.5,
+            "qa": 2
+          },
+          "nextAction": "Ampliar biografías y normalizar identidades"
         }
       },
       {
@@ -2292,6 +2843,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 28,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 8,
+            "relations": 7,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 1,
+            "verifiedTimelineEvents": 0,
+            "captionSegments": 4005,
+            "expectedEntities": 12,
+            "expectedStatements": 24
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 10,
+            "biografias": 0,
+            "relaciones": 8.8,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 2.5,
+            "cronologia": 0,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2333,6 +2913,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 91,
+          "state": "cierre_editorial_registrado",
+          "readyForDeepReview": false,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 34,
+            "relations": 33,
+            "biographies": 33,
+            "statements": 35,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 5,
+            "captionSegments": 3743,
+            "expectedEntities": 11,
+            "expectedStatements": 23
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 10,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 30,
+            "contrastes_documentales": 6.3,
+            "cronologia": 5,
+            "qa": 5
+          },
+          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias"
         }
       },
       {
@@ -2368,6 +2977,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 34,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 7,
+            "relations": 6,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 2,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 616,
+            "expectedEntities": 10,
+            "expectedStatements": 12
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 10.5,
+            "biografias": 0,
+            "relaciones": 9,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 6.3,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2406,6 +3044,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 36,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 9,
+            "relations": 8,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 2,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 4123,
+            "expectedEntities": 12,
+            "expectedStatements": 25
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 11.3,
+            "biografias": 0,
+            "relaciones": 10,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 6.3,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2444,6 +3111,35 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 46,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 10,
+            "relations": 9,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 2,
+            "verifiedTimelineEvents": 2,
+            "captionSegments": 2286,
+            "expectedEntities": 10,
+            "expectedStatements": 14
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 13.5,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 7.5,
+            "cronologia": 2.5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2473,6 +3169,35 @@
           "sourceDocumentaryRelations": 9,
           "attributedASRNotes": 9,
           "mereMentions": 5
+        },
+        "analysisCoverage": {
+          "percent": 53,
+          "state": "en_revision",
+          "readyForDeepReview": false,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 18,
+            "relations": 23,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 9,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 0,
+            "expectedEntities": 12,
+            "expectedStatements": 20
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 15,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Obtener TXT con minutajes; aprovechar expediente previo"
         }
       },
       {
@@ -2513,6 +3238,35 @@
           "timecodedTranscriptReadbackVerified": true,
           "legacyDocTranscriptContentImported": false,
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 30,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 5,
+            "relations": 4,
+            "biographies": 0,
+            "statements": 2,
+            "independentChecks": 1,
+            "verifiedTimelineEvents": 1,
+            "captionSegments": 2289,
+            "expectedEntities": 10,
+            "expectedStatements": 14
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 7.5,
+            "biografias": 0,
+            "relaciones": 6,
+            "declaraciones_atribuidas": 4.3,
+            "contrastes_documentales": 3.8,
+            "cronologia": 1.3,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2553,6 +3307,35 @@
           "timecodedTranscriptReadbackVerified": true,
           "legacyDocTranscriptContentImported": false,
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 45,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 8,
+            "relations": 8,
+            "biographies": 0,
+            "statements": 2,
+            "independentChecks": 4,
+            "verifiedTimelineEvents": 2,
+            "captionSegments": 4073,
+            "expectedEntities": 12,
+            "expectedStatements": 24
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 10,
+            "biografias": 0,
+            "relaciones": 10,
+            "declaraciones_atribuidas": 2.5,
+            "contrastes_documentales": 12.5,
+            "cronologia": 2.5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2593,6 +3376,35 @@
           "timecodedTranscriptReadbackVerified": true,
           "legacyDocTranscriptContentImported": false,
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 58,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 13,
+            "relations": 14,
+            "biographies": 0,
+            "statements": 2,
+            "independentChecks": 7,
+            "verifiedTimelineEvents": 3,
+            "captionSegments": 4491,
+            "expectedEntities": 13,
+            "expectedStatements": 27
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 2.2,
+            "contrastes_documentales": 15,
+            "cronologia": 3.8,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2644,6 +3456,35 @@
           "timecodedTranscriptReadbackVerified": true,
           "legacyDocTranscriptContentImported": false,
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 67,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 16,
+            "relations": 14,
+            "biographies": 0,
+            "statements": 4,
+            "independentChecks": 8,
+            "verifiedTimelineEvents": 5,
+            "captionSegments": 1541,
+            "expectedEntities": 10,
+            "expectedStatements": 12
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 10,
+            "contrastes_documentales": 15,
+            "cronologia": 5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2691,6 +3532,35 @@
           "timecodedTranscriptReadbackVerified": true,
           "legacyDocTranscriptContentImported": false,
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 61,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 16,
+            "relations": 18,
+            "biographies": 0,
+            "statements": 4,
+            "independentChecks": 11,
+            "verifiedTimelineEvents": 6,
+            "captionSegments": 4462,
+            "expectedEntities": 13,
+            "expectedStatements": 27
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 4.4,
+            "contrastes_documentales": 15,
+            "cronologia": 5,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2727,6 +3597,35 @@
           "timecodedTranscriptReadbackVerified": true,
           "legacyDocTranscriptContentImported": false,
           "timecodedTranscriptContentImported": true
+        },
+        "analysisCoverage": {
+          "percent": 23,
+          "state": "en_revision",
+          "readyForDeepReview": true,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 7,
+            "relations": 6,
+            "biographies": 0,
+            "statements": 6,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 0,
+            "captionSegments": 6104,
+            "expectedEntities": 18,
+            "expectedStatements": 36
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 5.8,
+            "biografias": 0,
+            "relaciones": 5,
+            "declaraciones_atribuidas": 5,
+            "contrastes_documentales": 0,
+            "cronologia": 0,
+            "qa": 2
+          },
+          "nextAction": "Extraer declaraciones con minutajes y su atribución"
         }
       },
       {
@@ -2751,6 +3650,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2775,6 +3682,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2799,6 +3714,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2823,6 +3746,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2848,6 +3779,13 @@
           "imageRuntimeVerified": false,
           "lastUpdated": null,
           "transcriptSharedWithSource": 4
+        },
+        "analysisCoverage": {
+          "percent": null,
+          "state": "duplicada",
+          "sourceOrder": 36,
+          "canonicalOrder": 4,
+          "readyForDeepReview": false
         }
       },
       {
@@ -2872,6 +3810,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2896,6 +3842,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2920,6 +3874,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2944,6 +3906,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2968,6 +3938,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -2992,6 +3970,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3016,6 +4002,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3040,6 +4034,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3064,6 +4066,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3088,6 +4098,13 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": null,
+          "state": "duplicada",
+          "sourceOrder": 46,
+          "canonicalOrder": 45,
+          "readyForDeepReview": false
         }
       },
       {
@@ -3112,6 +4129,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3136,6 +4161,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar y revisar fuente primaria"
         }
       },
       {
@@ -3160,6 +4193,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar y revisar fuente primaria"
         }
       },
       {
@@ -3184,6 +4225,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3208,6 +4257,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3232,6 +4289,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3256,6 +4321,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3280,6 +4353,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3304,6 +4385,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3328,6 +4417,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3352,6 +4449,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3376,6 +4481,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3400,6 +4513,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3424,6 +4545,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3448,6 +4577,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3472,6 +4609,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3496,6 +4641,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3520,6 +4673,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3544,6 +4705,13 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": null,
+          "state": "duplicada",
+          "sourceOrder": 65,
+          "canonicalOrder": 42,
+          "readyForDeepReview": false
         }
       },
       {
@@ -3568,6 +4736,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3592,6 +4768,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3616,6 +4800,14 @@
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": null
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar",
+          "readyForDeepReview": false,
+          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "audioVerified": false,
+          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
         }
       },
       {
@@ -3640,6 +4832,35 @@
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-09"
+        },
+        "analysisCoverage": {
+          "percent": 51,
+          "state": "en_revision",
+          "readyForDeepReview": false,
+          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "audioVerified": false,
+          "signals": {
+            "entities": 80,
+            "relations": 99,
+            "biographies": 0,
+            "statements": 0,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 7,
+            "captionSegments": 0,
+            "expectedEntities": 12,
+            "expectedStatements": 20
+          },
+          "breakdown": {
+            "apertura": 5,
+            "entidades": 15,
+            "biografias": 0,
+            "relaciones": 15,
+            "declaraciones_atribuidas": 0,
+            "contrastes_documentales": 8.8,
+            "cronologia": 5,
+            "qa": 2
+          },
+          "nextAction": "Obtener TXT con minutajes; aprovechar expediente previo"
         }
       }
     ]
@@ -4125,5 +5346,183 @@
       },
       "scopeLimit": "Drive search negative results are not proof that no file exists; indexed matches may omit files. No video/audio cross-check was performed."
     }
+  },
+  "analysisProgress": {
+    "method": "proxy_v1_2026-11-12",
+    "updatedAt": "2026-11-12",
+    "description": "Índice heurístico orientado a decidir la siguiente fuente, no medición de porcentaje real de audio o texto revisado. La mera disponibilidad de una transcripción no suma puntos al análisis.",
+    "weights": {
+      "inicio": 5,
+      "entidades": 15,
+      "biografias": 10,
+      "relaciones": 15,
+      "declaraciones_atribuidas": 30,
+      "contrastes_documentales": 15,
+      "cronologia": 5,
+      "qa": 5
+    },
+    "captionFilesWithTimecodes": 28,
+    "allAudioUnverified": true,
+    "closedReviewFloor": 85,
+    "closedReviewCap": 95,
+    "openReviewCap": 79,
+    "priorityQueue": [
+      {
+        "sourceOrder": 3,
+        "percent": 22,
+        "segments": 3224,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 31,
+        "percent": 23,
+        "segments": 6104,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 20,
+        "percent": 28,
+        "segments": 4005,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 26,
+        "percent": 30,
+        "segments": 2289,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 12,
+        "percent": 30,
+        "segments": 2182,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 4,
+        "percent": 31,
+        "segments": 2347,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 14,
+        "percent": 34,
+        "segments": 4240,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 22,
+        "percent": 34,
+        "segments": 616,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 6,
+        "percent": 36,
+        "segments": 6975,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 23,
+        "percent": 36,
+        "segments": 4123,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 16,
+        "percent": 36,
+        "segments": 2902,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 17,
+        "percent": 40,
+        "segments": 1789,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 27,
+        "percent": 45,
+        "segments": 4073,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 24,
+        "percent": 46,
+        "segments": 2286,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 13,
+        "percent": 53,
+        "segments": 7278,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 10,
+        "percent": 57,
+        "segments": 2294,
+        "nextAction": "Ampliar biografías y normalizar identidades"
+      },
+      {
+        "sourceOrder": 28,
+        "percent": 58,
+        "segments": 4491,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 30,
+        "percent": 61,
+        "segments": 4462,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 2,
+        "percent": 62,
+        "segments": 2487,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 29,
+        "percent": 67,
+        "segments": 1541,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 7,
+        "percent": 71,
+        "segments": 8451,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 11,
+        "percent": 71,
+        "segments": 3847,
+        "nextAction": "Ampliar biografías y normalizar identidades"
+      },
+      {
+        "sourceOrder": 9,
+        "percent": 72,
+        "segments": 3972,
+        "nextAction": "Ampliar biografías y normalizar identidades"
+      },
+      {
+        "sourceOrder": 8,
+        "percent": 76,
+        "segments": 2926,
+        "nextAction": "Contrastar afirmaciones y enlazar hechos con la cronología"
+      },
+      {
+        "sourceOrder": 19,
+        "percent": 78,
+        "segments": 2590,
+        "nextAction": "Ampliar biografías y normalizar identidades"
+      }
+    ],
+    "attentionRule": "Primero fuentes con TXT minutado, análisis abierto y menor puntuación; si hay empate, se prioriza la de más segmentos. Las pendientes de TXT van a una cola separada.",
+    "deduplicatedOrders": [
+      36,
+      46,
+      65
+    ]
   }
 }
