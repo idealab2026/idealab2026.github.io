@@ -5,10 +5,10 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
     "title": "EPSTEIN, EEUU, Israel y élites occidentales | Lorenzo Ramírez",
     "url": "https://www.youtube.com/watch?v=MljyjDGTxkk",
     "publishedAt": "2026-02-08",
-    "reviewStage": "revision_documental_previa_mas_notas_temporizadas_nov_2026",
+    "reviewStage": "revision_documental_con_minutajes_y_contrastes_independientes_20261112",
     "transcriptAvailable": true,
     "sourceOrder": 18,
-    "methodologicalNote": "El TXT de subtítulos con marcas de tiempo está preservado en Drive institucional y permite enlazar fragmentos del vídeo. Las marcas no están cotejadas contra audio ni permiten por sí solas atribuir la voz a cada interlocutor. Las opiniones, acusaciones y asociaciones entre personas siguen siendo declaraciones del programa, no hechos acreditados.",
+    "methodologicalNote": "Revisión incremental de subtítulos con minutajes automáticos, sin cotejo directo del audio. Separar declaraciones del programa, documentación histórica independiente, hipótesis y alegaciones. No deducir vínculos de poder de meras menciones. Se han añadido precisiones con fuentes oficiales sobre euro digital y Lagarde cuando procede.",
     "transcriptSource": "Google Docs privado IDEA LAB, texto automático de NotebookLM",
     "transcriptCharacters": 129774,
     "transcriptTimecodesAvailable": true,
@@ -102,6 +102,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "timeSec": 5631,
           "status": "interpretacion_atribuida",
           "text": "En el debate se presenta la rivalidad entre Musk, Thiel y responsables de empresas de inteligencia artificial como parte de una pugna de poder. Es una interpretación de los interlocutores, no una relación orgánica acreditada."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Bitcoin y la posición del entrevistado · 1:47:12",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=6432s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 6432,
+          "status": "opinion_economica_atribuida",
+          "text": "El entrevistado expone factores monetarios que, a su juicio, respaldarían el precio de Bitcoin: monedas fiduciarias, dólar y alternativas monetarias. Se registra como tesis económica, no como predicción verificada."
         }
       ]
     },
@@ -443,6 +452,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 8% del texto automático, sin minutaje: « todas las luces ese ataque a Irán Ese sábado por la noche se iba a producir el ataque Irán Había movimientos estaba prácticamente todo pactado Entonces en este caso es muy posible». Contexto editorial: El episodio plantea posibles resultados de negociaciones y escenarios militares de 2026. Son predicciones, no cronología acreditada."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Hipótesis de confrontación regional con Irán · 45:08",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=2708s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 2708,
+          "status": "hipotesis_atribuida",
+          "text": "En la conversación se especula sobre negociaciones y un posible enfrentamiento entre Estados Unidos, Israel e Irán. El pasaje no permite dar por anunciada ninguna operación ni atribuir decisiones efectivas a dirigentes concretos."
         }
       ],
       "x": 5885,
@@ -521,6 +539,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 4% del texto automático, sin minutaje: «nto total a corto plazo entre China y Estados Unidos porque a corto plazo se necesitan y tienen que proceder a a cortar sus relaciones de una manera bueno pues muy quirúrgica muy p». Contexto editorial: Tema de análisis estratégico y comercial; no se deduce coordinación oculta con terceros."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · China y Rusia en relación con Irán · 49:19",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=2959s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 2959,
+          "status": "interpretacion_atribuida",
+          "text": "El entrevistado sitúa a China y Rusia en su análisis de la posición internacional de Irán ante una eventual confrontación con Estados Unidos. Se trata de una interpretación geopolítica y no de evidencia de acuerdos específicos."
         }
       ],
       "x": 6590,
@@ -567,6 +594,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 90% del texto automático, sin minutaje: « poco lo que está pasando con Bitcoin que ayer cundía el pánico el mercado cripto pero de una manera que yo no hacía mucho tiempo que no veía Ha sido la peor semana cripto de la hi». Contexto editorial: Debate sobre oferta monetaria, volatilidad, productos financieros y presuntas financiaciones. No se han probado vínculos financieros ilícitos."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Bitcoin y volatilidad de criptomonedas · 1:41:13",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=6073s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 6073,
+          "status": "analisis_economico_y_alegacion_atribuida",
+          "text": "El programa comenta fuertes caídas del mercado de criptomonedas y alude a FTX. Plantea también una interpretación sobre la influencia de Epstein en el sector; esa conexión concreta no queda acreditada por la sola transcripción."
         }
       ],
       "x": 7060,
@@ -590,6 +626,15 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 55% del texto automático, sin minutaje: «e hecho y no sí pero de hecho Pedro Sánchez bueno ahora vamos a hablar al final de Pedro Sánchez pero me llevaba esto por el por los proxis que tenemos en España eh de estos intere». Contexto editorial: Mencionado en un debate sobre identificación digital y plataformas. Sin acta legislativa o resolución no se atribuye una política de vigilancia total."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Pedro Sánchez y la conversación sobre intereses externos · 1:02:41",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=3761s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 3761,
+          "status": "mencion_contextual_no_prueba_relacion",
+          "text": "El programa anuncia que tratará la figura de Pedro Sánchez al hablar de supuestos intermediarios de intereses exteriores en España. La mención introductoria no acredita por sí misma una conducta ilícita ni un vínculo de subordinación."
         }
       ],
       "x": 5650,
@@ -613,10 +658,42 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=MljyjDGTxkk",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 52% del texto automático, sin minutaje: « decir el principal aliado de Vox es Israel El principal aliado de Vox ideológico e servil es el mundo anglo el mundo anglosajón todo lo que tenga que ver con la OTAN pero fundamen». Contexto editorial: El episodio formula valoraciones políticas sobre alianzas; no se registran como financiación ni coordinación clandestinas."
+        },
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Vox e Israel · 58:17",
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=3497s",
+          "publishedAt": "2026-02-08",
+          "timeSec": 3497,
+          "status": "valoracion_politica_atribuida",
+          "text": "Se afirma que Israel y el mundo anglosajón serían los aliados ideológicos principales de Vox. Es una valoración política expresada en el programa: no constituye evidencia de financiación, obediencia orgánica ni coordinación institucional."
         }
       ],
       "x": 5885,
       "y": 3380
+    },
+    {
+      "id": "f18-marruecos",
+      "name": "Marruecos",
+      "kind": "País",
+      "subtitle": "Estado norteafricano mencionado en análisis político y comercial",
+      "note": "Marruecos aparece en el debate sobre relaciones comerciales con España y sobre las alianzas internacionales. La fuente aporta opiniones acerca de dichas relaciones, no prueba de una coordinación clandestina.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=3595s",
+      "photo": "",
+      "topic3d": "global",
+      "x": 6110,
+      "y": 2300,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f18-epstein-lorenzo",
+          "title": "F18 · Marruecos y acuerdos comerciales · 59:55",
+          "timeSec": 3595,
+          "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=3595s",
+          "publishedAt": "2026-02-08",
+          "status": "valoracion_atribuida",
+          "text": "El programa describe a Marruecos como adversario de España al hablar de comercio y alianzas. Es una valoración del interlocutor, no una calificación oficial del Estado español ni prueba de injerencia."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1046,6 +1123,18 @@ window.IDEA_TELARANA_SOURCE18_EDITORIAL = {
           "text": "Mención localizada aproximadamente al 52% del texto automático, sin minutaje: « decir el principal aliado de Vox es Israel El principal aliado de Vox ideológico e servil es el mundo anglo el mundo anglosajón todo lo que tenga que ver con la OTAN pero fundamen». Contexto editorial: El episodio formula valoraciones políticas sobre alianzas; no se registran como financiación ni coordinación clandestinas."
         }
       ]
+    },
+    {
+      "id": "f18-mencion-marruecos",
+      "a": "f18-episodio",
+      "b": "f18-marruecos",
+      "type": "Mención política y comercial en la entrevista",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "note": "En el minuto 59:55 se comenta la relación comercial española con Marruecos y se valoran negativamente determinados acuerdos. Se trata de la opinión de los interlocutores, no de una comprobación de acuerdos ilícitos ni subordinación entre instituciones.",
+      "source": "https://www.youtube.com/watch?v=MljyjDGTxkk&t=3595s",
+      "episodeId": "idealab-f18-epstein-lorenzo",
+      "podcastNotes": []
     }
   ]
 };
