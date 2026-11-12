@@ -6,11 +6,14 @@ window.IDEA_TELARANA_F28_REVIEW = {
     "sourceOrder": 28,
     "url": "https://www.youtube.com/watch?v=fzHC3z8S3oM",
     "editorialUrl": "https://www.inversionracional.com/lorenzo-ramirez-abril-2026/",
-    "reviewStage": "descripcion_editorial_y_contraste_primario_sin_transcripcion",
-    "transcriptAvailable": false,
+    "reviewStage": "transcripcion_cronometrada_recuperada_revision_editorial_en_curso",
+    "transcriptAvailable": true,
     "audioVerified": false,
     "verifiedMinuteReferences": 0,
-    "methodologicalNote": "El índice permite reconocer temas e inicios de capítulo, pero no declaraciones literales. Se distinguen PAC, super-PAC, nombramiento público y apoyo electoral indirecto. La fuente de Thiel procede de reportaje independiente contrastable con registros FEC; sin expediente de coacción no se presume control gubernamental. No se tratan acusaciones del vídeo como hechos."
+    "methodologicalNote": "Se ha recuperado un TXT de subtítulos con marcas de tiempo en el Drive institucional privado (4491 segmentos hasta 02:21:26). Los subtítulos no están cotejados con el audio y su recepción no convierte afirmaciones de la entrevista en hechos probados. Permanecen vigentes las cautelas de procedencia y las verificaciones externas ya documentadas.",
+    "transcriptSegments": 4491,
+    "transcriptLastTimestamp": "02:21:26",
+    "fullTranscriptPreservedInDrive": true
   },
   "nodes": [
     {
