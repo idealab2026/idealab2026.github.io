@@ -10,8 +10,13 @@ window.IDEA_TELARANA_F20_REVIEW = {
     "transcriptStoredPrivately": true,
     "transcriptAudioMatched": false,
     "verifiedMinuteReferences": 0,
-    "reviewStage": "primera_lectura_tematica_fuente_no_completada",
-    "methodologicalNote": "Las atribuciones financieras, políticas y de operaciones encubiertas no se consideran acreditadas por mera mención."
+    "reviewStage": "revision_cronometrada_parcial_11_anclas_y_dos_relaciones_primarias",
+    "methodologicalNote": "Se incorporan 11 pasajes localizables por inicio de subtítulo; el ASR no está cotejado con audio y contiene nombres mal transcritos. Las afirmaciones sobre supuesto control encubierto de compañías no están probadas por la entrevista. Dos relaciones acotadas se acreditan con referencias externas de CIA y SEC.",
+    "timecodedTranscriptAvailable": true,
+    "timecodedTranscriptSegments": 4005,
+    "timecodedTranscriptLastTimestamp": "02:10:45",
+    "timecodedTranscriptDriveUrl": "https://drive.google.com/file/d/1OOvVJCT9qcHaqE-xgV14taQs2mTweHA6/view",
+    "timecodedNotesIndexed": 11
   },
   "nodes": [
     {
@@ -187,6 +192,237 @@ window.IDEA_TELARANA_F20_REVIEW = {
       ],
       "x": 8500,
       "y": 2895
+    },
+    {
+      "id": "f20-google",
+      "name": "Google",
+      "kind": "Organización",
+      "subtitle": "Servicios tecnológicos y búsqueda",
+      "note": "Se atribuye al nombramiento de Eric Schmidt una supuesta subordinación de Google a agencias de inteligencia. El nombramiento y sus fechas están documentados; la interpretación de dependencia institucional no queda demostrada por el episodio.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · Google · 00:14:52",
+          "publishedAt": "",
+          "timeSec": 892,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=892s",
+          "status": "alegacion_institucional_no_verificada",
+          "text": "Se atribuye al nombramiento de Eric Schmidt una supuesta subordinación de Google a agencias de inteligencia. El nombramiento y sus fechas están documentados; la interpretación de dependencia institucional no queda demostrada por el episodio."
+        }
+      ]
+    },
+    {
+      "id": "f20-schmidt",
+      "name": "Eric Schmidt",
+      "kind": "Persona",
+      "subtitle": "Exdirector ejecutivo de Google (2001–2011)",
+      "note": "El ASR dice «Eric Smith», probable referencia a Eric Schmidt, consejero delegado de Google entre 2001 y 2011 según documentación societaria. El cargo no prueba control de Google por una agencia de inteligencia.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · Eric Schmidt · 00:15:03",
+          "publishedAt": "",
+          "timeSec": 903,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=903s",
+          "status": "identificacion_contextual_y_hecho_documental",
+          "text": "El ASR dice «Eric Smith», probable referencia a Eric Schmidt, consejero delegado de Google entre 2001 y 2011 según documentación societaria. El cargo no prueba control de Google por una agencia de inteligencia."
+        }
+      ]
+    },
+    {
+      "id": "f20-palantir",
+      "name": "Palantir Technologies",
+      "kind": "Organización",
+      "subtitle": "Empresa de software y análisis de datos",
+      "note": "En la entrevista se menciona Palantir junto con empresas de inversión vinculadas a inteligencia. Esta mención no prueba que la CIA sea propietaria de Palantir ni una coordinación operativa ilegal.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · Palantir Technologies · 00:16:40",
+          "publishedAt": "",
+          "timeSec": 1000,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1000s",
+          "status": "alegacion_no_verificada",
+          "text": "En la entrevista se menciona Palantir junto con empresas de inversión vinculadas a inteligencia. Esta mención no prueba que la CIA sea propietaria de Palantir ni una coordinación operativa ilegal."
+        }
+      ]
+    },
+    {
+      "id": "f20-inqtel",
+      "name": "In-Q-Tel",
+      "kind": "Organización",
+      "subtitle": "Inversor estratégico independiente creado por la CIA en 1999",
+      "note": "El texto transcribe «InQutel». In-Q-Tel afirma que fue creada por la CIA en 1999 como inversor estratégico sin ánimo de lucro. La existencia de la colaboración no corrobora afirmaciones de control de otras compañías.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · In-Q-Tel · 00:16:46",
+          "publishedAt": "",
+          "timeSec": 1006,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1006s",
+          "status": "dato_primario_y_alegacion_distintos",
+          "text": "El texto transcribe «InQutel». In-Q-Tel afirma que fue creada por la CIA en 1999 como inversor estratégico sin ánimo de lucro. La existencia de la colaboración no corrobora afirmaciones de control de otras compañías."
+        }
+      ]
+    },
+    {
+      "id": "f20-cia",
+      "name": "CIA",
+      "kind": "Institución",
+      "subtitle": "Agencia Central de Inteligencia estadounidense",
+      "note": "La intervención presenta a la CIA como nexo de diversas compañías tecnológicas. La CIA documenta su colaboración con In-Q-Tel; ello no demuestra la titularidad de Google, Palantir ni las demás empresas citadas.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · CIA · 00:16:43",
+          "publishedAt": "",
+          "timeSec": 1003,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1003s",
+          "status": "alegacion_general_no_verificada",
+          "text": "La intervención presenta a la CIA como nexo de diversas compañías tecnológicas. La CIA documenta su colaboración con In-Q-Tel; ello no demuestra la titularidad de Google, Palantir ni las demás empresas citadas."
+        }
+      ]
+    },
+    {
+      "id": "f20-oracle",
+      "name": "Oracle",
+      "kind": "Organización",
+      "subtitle": "Empresa estadounidense de software y servicios empresariales",
+      "note": "Oracle se menciona en un debate sobre compañías tecnológicas, inteligencia artificial y relaciones geopolíticas. Las conclusiones políticas de los interlocutores son valoraciones, no pruebas de una relación irregular.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · Oracle · 00:36:56",
+          "publishedAt": "",
+          "timeSec": 2216,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2216s",
+          "status": "mencion_empresarial",
+          "text": "Oracle se menciona en un debate sobre compañías tecnológicas, inteligencia artificial y relaciones geopolíticas. Las conclusiones políticas de los interlocutores son valoraciones, no pruebas de una relación irregular."
+        }
+      ]
+    },
+    {
+      "id": "f20-ellison",
+      "name": "Larry Ellison",
+      "kind": "Persona",
+      "subtitle": "Cofundador de Oracle",
+      "note": "El ASR parece referirse a Larry Ellison al citar Oracle. Se le atribuyen prioridades geopolíticas respecto de Israel; el fragmento no reproduce declaraciones primarias que corroboren el alcance que le atribuyen.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · Larry Ellison · 00:37:01",
+          "publishedAt": "",
+          "timeSec": 2221,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2221s",
+          "status": "interpretacion_politica_sin_cotejo",
+          "text": "El ASR parece referirse a Larry Ellison al citar Oracle. Se le atribuyen prioridades geopolíticas respecto de Israel; el fragmento no reproduce declaraciones primarias que corroboren el alcance que le atribuyen."
+        }
+      ]
+    },
+    {
+      "id": "f20-wechat",
+      "name": "WeChat",
+      "kind": "Producto",
+      "subtitle": "Aplicación china de mensajería y servicios digitales",
+      "note": "En la conversación se utiliza WeChat para discutir la identidad digital y la privacidad en China. La extrapolación a un fin universal del anonimato es una hipótesis del episodio.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · WeChat · 00:45:19",
+          "publishedAt": "",
+          "timeSec": 2719,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2719s",
+          "status": "analisis_atribuido",
+          "text": "En la conversación se utiliza WeChat para discutir la identidad digital y la privacidad en China. La extrapolación a un fin universal del anonimato es una hipótesis del episodio."
+        }
+      ]
+    },
+    {
+      "id": "f20-musk",
+      "name": "Elon Musk",
+      "kind": "Persona",
+      "subtitle": "Empresario tecnológico; adquirió Twitter en 2022",
+      "note": "El ASR transcribe «Elon Mask». El episodio cuestiona las promesas de Musk contra las cuentas automatizadas y afirma que habría más bots que nunca, sin presentar un estudio cuantitativo que lo demuestre.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · Elon Musk · 00:56:30",
+          "publishedAt": "",
+          "timeSec": 3390,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3390s",
+          "status": "opinion_no_corroborada",
+          "text": "El ASR transcribe «Elon Mask». El episodio cuestiona las promesas de Musk contra las cuentas automatizadas y afirma que habría más bots que nunca, sin presentar un estudio cuantitativo que lo demuestre."
+        }
+      ]
+    },
+    {
+      "id": "f20-gates",
+      "name": "Bill Gates",
+      "kind": "Persona",
+      "subtitle": "Cofundador de Microsoft y filántropo",
+      "note": "La entrevista atribuye a Bill Gates la creencia de que los tecnócratas podrían evitar una catástrofe social. No identifica título y página de sus libros, por lo que se registra como caracterización de terceros sin cita directa.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · Bill Gates · 01:13:36",
+          "publishedAt": "",
+          "timeSec": 4416,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=4416s",
+          "status": "opinion_sobre_tercero_sin_fuente_primaria",
+          "text": "La entrevista atribuye a Bill Gates la creencia de que los tecnócratas podrían evitar una catástrofe social. No identifica título y página de sus libros, por lo que se registra como caracterización de terceros sin cita directa."
+        }
+      ]
+    },
+    {
+      "id": "f20-tiktok",
+      "name": "TikTok",
+      "kind": "Producto",
+      "subtitle": "Plataforma de vídeos breves",
+      "note": "Los interlocutores comentan TikTok e Instagram como ejemplos de vídeos cortos, atención y uso compulsivo. El fragmento no aporta estudios científicos específicos para confirmar sus explicaciones psicológicas.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24",
+      "photo": "",
+      "topic3d": "tecnologia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "F20 · TikTok · 00:19:22",
+          "publishedAt": "",
+          "timeSec": 1162,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1162s",
+          "status": "valoracion_divulgativa",
+          "text": "Los interlocutores comentan TikTok e Instagram como ejemplos de vídeos cortos, atención y uso compulsivo. El fragmento no aporta estudios científicos específicos para confirmar sus explicaciones psicológicas."
+        }
+      ]
     }
   ],
   "edges": [
@@ -343,6 +579,162 @@ window.IDEA_TELARANA_F20_REVIEW = {
           "text": "Mención localizada aproximadamente en 1% del texto automático, sin minuto ni hablante validado. Tecnología y política estadounidenses, objeto del episodio."
         }
       ]
+    },
+    {
+      "id": "f20-mencion-google",
+      "a": "f20-episodio",
+      "b": "f20-google",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=892s",
+      "episodeId": "idealab-f20-source",
+      "note": "Se atribuye al nombramiento de Eric Schmidt una supuesta subordinación de Google a agencias de inteligencia. El nombramiento y sus fechas están documentados; la interpretación de dependencia institucional no queda demostrada por el episodio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-schmidt",
+      "a": "f20-episodio",
+      "b": "f20-schmidt",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=903s",
+      "episodeId": "idealab-f20-source",
+      "note": "El ASR dice «Eric Smith», probable referencia a Eric Schmidt, consejero delegado de Google entre 2001 y 2011 según documentación societaria. El cargo no prueba control de Google por una agencia de inteligencia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-palantir",
+      "a": "f20-episodio",
+      "b": "f20-palantir",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1000s",
+      "episodeId": "idealab-f20-source",
+      "note": "En la entrevista se menciona Palantir junto con empresas de inversión vinculadas a inteligencia. Esta mención no prueba que la CIA sea propietaria de Palantir ni una coordinación operativa ilegal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-inqtel",
+      "a": "f20-episodio",
+      "b": "f20-inqtel",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1006s",
+      "episodeId": "idealab-f20-source",
+      "note": "El texto transcribe «InQutel». In-Q-Tel afirma que fue creada por la CIA en 1999 como inversor estratégico sin ánimo de lucro. La existencia de la colaboración no corrobora afirmaciones de control de otras compañías.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-cia",
+      "a": "f20-episodio",
+      "b": "f20-cia",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1003s",
+      "episodeId": "idealab-f20-source",
+      "note": "La intervención presenta a la CIA como nexo de diversas compañías tecnológicas. La CIA documenta su colaboración con In-Q-Tel; ello no demuestra la titularidad de Google, Palantir ni las demás empresas citadas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-oracle",
+      "a": "f20-episodio",
+      "b": "f20-oracle",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2216s",
+      "episodeId": "idealab-f20-source",
+      "note": "Oracle se menciona en un debate sobre compañías tecnológicas, inteligencia artificial y relaciones geopolíticas. Las conclusiones políticas de los interlocutores son valoraciones, no pruebas de una relación irregular.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-ellison",
+      "a": "f20-episodio",
+      "b": "f20-ellison",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2221s",
+      "episodeId": "idealab-f20-source",
+      "note": "El ASR parece referirse a Larry Ellison al citar Oracle. Se le atribuyen prioridades geopolíticas respecto de Israel; el fragmento no reproduce declaraciones primarias que corroboren el alcance que le atribuyen.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-wechat",
+      "a": "f20-episodio",
+      "b": "f20-wechat",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2719s",
+      "episodeId": "idealab-f20-source",
+      "note": "En la conversación se utiliza WeChat para discutir la identidad digital y la privacidad en China. La extrapolación a un fin universal del anonimato es una hipótesis del episodio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-musk",
+      "a": "f20-episodio",
+      "b": "f20-musk",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3390s",
+      "episodeId": "idealab-f20-source",
+      "note": "El ASR transcribe «Elon Mask». El episodio cuestiona las promesas de Musk contra las cuentas automatizadas y afirma que habría más bots que nunca, sin presentar un estudio cuantitativo que lo demuestre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-gates",
+      "a": "f20-episodio",
+      "b": "f20-gates",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=4416s",
+      "episodeId": "idealab-f20-source",
+      "note": "La entrevista atribuye a Bill Gates la creencia de que los tecnócratas podrían evitar una catástrofe social. No identifica título y página de sus libros, por lo que se registra como caracterización de terceros sin cita directa.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mencion-tiktok",
+      "a": "f20-episodio",
+      "b": "f20-tiktok",
+      "type": "Mención en F20, no vínculo operativo probado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=1162s",
+      "episodeId": "idealab-f20-source",
+      "note": "Los interlocutores comentan TikTok e Instagram como ejemplos de vídeos cortos, atención y uso compulsivo. El fragmento no aporta estudios científicos específicos para confirmar sus explicaciones psicológicas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-cia-iqt-acuerdo",
+      "a": "f20-cia",
+      "b": "f20-inqtel",
+      "type": "Colaboración tecnológica e inversión estratégica CIA–In-Q-Tel",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.cia.gov/tech/tech-collaboration/",
+      "episodeId": "idealab-f20-source",
+      "note": "La CIA identifica a In-Q-Tel como socio estratégico; In-Q-Tel declara que fue fundada en 1999 por la CIA como entidad de inversión independiente. Esto no prueba control de otras empresas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-schmidt-google-direccion",
+      "a": "f20-schmidt",
+      "b": "f20-google",
+      "type": "Dirección ejecutiva de Google entre 2001 y 2011",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.sec.gov/Archives/edgar/data/1288776/000119312511103802/ddef14a.htm",
+      "episodeId": "idealab-f20-source",
+      "note": "Google documentó ante la SEC que Eric E. Schmidt fue su consejero delegado desde julio de 2001 hasta abril de 2011. El cargo no valida una teoría de control por la CIA.",
+      "podcastNotes": []
     }
   ]
 };
