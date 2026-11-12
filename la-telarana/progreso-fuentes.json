@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "scope": "Registro de revisión interno de 69 entradas: 67 fuentes de 8 notebooks CULTURA y 2 aportaciones de usuario; tres duplicaciones de videos entre notebooks -> 66 fuentes distintas. La web La Telaraña NO debe publicar este listado. No presentar títulos como hechos verificados.",
   "total": 69,
   "counts": {
@@ -5958,18 +5958,6 @@
     "openReviewCap": 79,
     "priorityQueue": [
       {
-        "sourceOrder": 3,
-        "percent": 22,
-        "segments": 3224,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
-      },
-      {
-        "sourceOrder": 31,
-        "percent": 23,
-        "segments": 6104,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
-      },
-      {
         "sourceOrder": 20,
         "percent": 28,
         "segments": 4005,
@@ -5979,6 +5967,48 @@
         "sourceOrder": 26,
         "percent": 30,
         "segments": 2289,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 23,
+        "percent": 36,
+        "segments": 4123,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 27,
+        "percent": 45,
+        "segments": 4073,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 24,
+        "percent": 46,
+        "segments": 2286,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 28,
+        "percent": 58,
+        "segments": 4491,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 19,
+        "percent": 78,
+        "segments": 2590,
+        "nextAction": "Ampliar biografías y normalizar identidades"
+      },
+      {
+        "sourceOrder": 3,
+        "percent": 22,
+        "segments": 3224,
+        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+      },
+      {
+        "sourceOrder": 31,
+        "percent": 23,
+        "segments": 6104,
         "nextAction": "Extraer declaraciones con minutajes y su atribución"
       },
       {
@@ -6012,12 +6042,6 @@
         "nextAction": "Extraer declaraciones con minutajes y su atribución"
       },
       {
-        "sourceOrder": 23,
-        "percent": 36,
-        "segments": 4123,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
-      },
-      {
         "sourceOrder": 16,
         "percent": 36,
         "segments": 2902,
@@ -6027,18 +6051,6 @@
         "sourceOrder": 17,
         "percent": 40,
         "segments": 1789,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
-      },
-      {
-        "sourceOrder": 27,
-        "percent": 45,
-        "segments": 4073,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
-      },
-      {
-        "sourceOrder": 24,
-        "percent": 46,
-        "segments": 2286,
         "nextAction": "Extraer declaraciones con minutajes y su atribución"
       },
       {
@@ -6052,12 +6064,6 @@
         "percent": 57,
         "segments": 2294,
         "nextAction": "Ampliar biografías y normalizar identidades"
-      },
-      {
-        "sourceOrder": 28,
-        "percent": 58,
-        "segments": 4491,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
       },
       {
         "sourceOrder": 30,
@@ -6100,15 +6106,9 @@
         "percent": 76,
         "segments": 2926,
         "nextAction": "Contrastar afirmaciones y enlazar hechos con la cronología"
-      },
-      {
-        "sourceOrder": 19,
-        "percent": 78,
-        "segments": 2590,
-        "nextAction": "Ampliar biografías y normalizar identidades"
       }
     ],
-    "attentionRule": "Primero fuentes con TXT minutado, análisis abierto y menor puntuación; si hay empate, se prioriza la de más segmentos. Las pendientes de TXT van a una cola separada.",
+    "attentionRule": "Prioridad explícita: Lorenzo Ramírez F20 F26 F23 F27 F24 F25 F28 F19, mantenimiento F18 F21; después Eric Frattini F34 F69; después Rothschild F33; el resto en espera. Las fuentes sin minutajes se pueden analizar sin inventar segundos.",
     "deduplicatedOrders": [
       36,
       46,
@@ -6400,6 +6400,197 @@
     "firstPassUntimedSources": [
       39,
       50
-    ]
+    ],
+    "editorialFocus": {
+      "updatedAt": "2026-11-13",
+      "mode": "user_priority_override",
+      "priorityPhases": [
+        {
+          "sequence": 1,
+          "key": "lorenzo_ramirez",
+          "title": "Lorenzo Ramírez",
+          "ids": [
+            20,
+            26,
+            23,
+            27,
+            24,
+            25,
+            28,
+            19,
+            18,
+            21
+          ],
+          "reason": "Primero las fuentes con menor cobertura editorial; las dos cerradas quedan en mantenimiento final y cotejo de audio.",
+          "sources": [
+            {
+              "order": 20,
+              "title": "El EXPERIMENTO SECRETO con el que las ÉLITES nos CONTROLAN | Lorenzo Ramírez",
+              "percent": 28,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 26,
+              "title": "La IA, los medios y el nuevo sistema de control | Lorenzo Ramírez #72 Minimal Design Talks",
+              "percent": 30,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 23,
+              "title": "El PODER REAL que CONTROLA la UNIÓN EUROPEA desde las SOMBRAS | Lorenzo Ramírez",
+              "percent": 36,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 27,
+              "title": "La VERDAD Detrás de las organizaciones de PODER | Lorenzo Ramírez",
+              "percent": 45,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 24,
+              "title": "El nuevo desorden global: El polvorín de Oriente Medio y el Petróleo | Análisis con Lorenzo Ramírez",
+              "percent": 46,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 25,
+              "title": "LOS VERDADEROS AMOS del Mundo: Así Controlan las Finanzas Globales | Lorenzo Ramírez",
+              "percent": 53,
+              "reviewState": "en_revision",
+              "timecodes": false,
+              "untimedText": true,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 28,
+              "title": "La Élite Oculta que Rodea a Donald Trump y lo que Tienen Planeado para el Mundo | Lorenzo Ramírez",
+              "percent": 58,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 19,
+              "title": "El EPISODIO Más CENSURABLE del CANAL | @diazvillanueva, @jfcalero, Lorenzo Ramírez y @MemoriasDePez",
+              "percent": 78,
+              "reviewState": "en_revision",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 18,
+              "title": "EPSTEIN, el PROBLEMA de EEUU con ISRAEL y la GUERRA de las ÉLITES OCCIDENTALES con Lorenzo Ramirez",
+              "percent": 88,
+              "reviewState": "cierre_editorial_registrado",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 21,
+              "title": "El Nuevo ORDEN MUNDIAL que nos OCULTAN | Lorenzo Ramírez",
+              "percent": 91,
+              "reviewState": "cierre_editorial_registrado",
+              "timecodes": true,
+              "untimedText": false,
+              "requiresAudioVerification": true
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "key": "eric_frattini",
+          "title": "Eric Frattini",
+          "ids": [
+            34,
+            69
+          ],
+          "reason": "Iniciar F34 sin minutajes y continuar contrastes y atribuciones de F69, sin equiparar las 99 relaciones a hechos verificados.",
+          "sources": [
+            {
+              "order": 34,
+              "title": "Luces y Sombras del Papa Francisco - Eric Frattini",
+              "percent": 0,
+              "reviewState": "sin_iniciar",
+              "timecodes": false,
+              "untimedText": true,
+              "requiresAudioVerification": true
+            },
+            {
+              "order": 69,
+              "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
+              "percent": 51,
+              "reviewState": "en_revision",
+              "timecodes": false,
+              "untimedText": true,
+              "requiresAudioVerification": true
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "key": "rothschild",
+          "title": "Rothschild",
+          "ids": [
+            33
+          ],
+          "reason": "Comenzar F33 tras completar primera pasada de Lorenzo y Frattini; distinguir datos históricos documentados de teorías o acusaciones.",
+          "sources": [
+            {
+              "order": 33,
+              "title": "¿DOMINAN EL MUNDO LOS ROTHSCHILD? La historia de la familia más rica",
+              "percent": 0,
+              "reviewState": "sin_iniciar",
+              "timecodes": false,
+              "untimedText": true,
+              "requiresAudioVerification": true
+            }
+          ]
+        }
+      ],
+      "sourceOrder": [
+        20,
+        26,
+        23,
+        27,
+        24,
+        25,
+        28,
+        19,
+        18,
+        21,
+        34,
+        69,
+        33
+      ],
+      "excludedFromLorenzoPendingAttribution": [
+        22
+      ],
+      "rules": [
+        "Priorizar fuentes de la fase 1 abiertas y menos analizadas",
+        "No marcar la fuente como completa por disponer de texto",
+        "Separar alegaciones de la fuente y hechos corroborados",
+        "Antes de F33, avanzar F34 y F69",
+        "Conservar F18/F21 cerradas a nivel editorial pero sin afirmar cotejo audiovisual"
+      ]
+    }
   }
 }
