@@ -2934,6 +2934,42 @@
         ],
         "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
       }
+    },
+    {
+      "id": "study-f08-carvajal-declaracion-culpabilidad-2025",
+      "y": 2025.4794520547946,
+      "t": "Hugo Carvajal se declara culpable ante un tribunal federal estadounidense",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 08 · expediente judicial federal independiente",
+      "d": "El 25 de junio de 2025, la Fiscalía Federal del Distrito Sur de Nueva York comunicó que Hugo Armando Carvajal Barrios, antiguo jefe de inteligencia militar de Venezuela extraditado desde España en julio de 2023, se había declarado culpable ante un juez federal de delitos de conspiración para importar cocaína, narcoterrorismo y armas. El episodio F08 menciona a Carvajal, pero su narración sobre presuntas actuaciones del CNI no queda acreditada por esta causa. El acontecimiento jurídico se incorpora por la comunicación oficial del Departamento de Justicia, no por la interpretación del entrevistado.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-06-25",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 8,
+        "sourceTitle": "Vaquero Podcast #67 · Villarejo · Carvajal citado en minuto 23:32",
+        "sourceUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac",
+        "confirmedBy": {
+          "label": "Departamento de Justicia de EE. UU. · Fiscalía SDNY, 25/06/2025",
+          "url": "https://www.justice.gov/usao-sdny/pr/former-venezuelan-general-pleads-guilty-narco-terrorism-weapons-and-drug-trafficking"
+        },
+        "relatedTelarana": [
+          "f08-hugo-carvajal",
+          "f08-episode"
+        ],
+        "podcastTranscriptAnchor": {
+          "timecode": "00:23:32",
+          "seconds": 1412,
+          "videoUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac&t=1412s",
+          "sourceOrder": 8,
+          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
+          "limits": "La mención de Carvajal no prueba el contenido de las afirmaciones del invitado sobre servicios de inteligencia."
+        },
+        "methodologicalLimits": "El documento fiscal confirma la declaración de culpabilidad en los cargos indicados, pero no valida acusaciones de Villarejo contra partidos españoles o el CNI. El episodio solo constituye referencia de mención; los hechos judiciales proceden de documentación estadounidense independiente."
+      }
     }
   ]
 }
