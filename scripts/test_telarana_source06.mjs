@@ -73,10 +73,14 @@ assert(row.tracking.timecodedTranscriptEditorialReviewComplete===false,
  "F06: no marcar revisión exhaustiva sin cotejo de audio");
 const counted=d.nodes.flatMap(x=>x.podcastNotes||[]).filter(x=>Number.isFinite(x.timeSec));
 assert(counted.length>=21,"F06: se han perdido pasajes con marcas de tiempo");
-for(const n of counted){
- assert(n.timeSec>=0&&n.timeSec<=18205&&n.source.startsWith("https://www.youtube.com/watch?v=fxvXXVrkRb4"),
-  "F06: tiempo o enlace de origen inválido");
+const current=counted.filter(n=>n.title?.startsWith("F06 ·"));
+assert.equal(current.length,13,"F06: se requieren 13 anotaciones nuevas con minutaje");
+for(const n of current){
+ assert(n.timeSec>=0&&n.timeSec<=18205&&n.source.startsWith("https://www.youtube.com/watch?v=fxvXXVrkRb4&t=")&&n.text.length>=120,
+  "F06: nueva nota sin tiempo o fuente original");
 }
+// Conservar las notas antiguas de HappyScribe/Apple y sus referencias independientes: no son el nuevo TXT.
+assert(counted.length>=current.length);
 assert(d.nodes.some(x=>x.id==="twp253-11m")&&d.nodes.some(x=>x.id==="twp253-javier-de-la-rosa"),
  "F06: personajes o acontecimiento faltantes");
 assert(d.edges.filter(e=>e.id.startsWith("twp253-edge-11m")||e.id.startsWith("twp253-edge-javier")).every(e=>e.confidence==="hipotesis"),
