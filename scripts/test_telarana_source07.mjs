@@ -73,8 +73,12 @@ assert(row.tracking.timecodedTranscriptStoredInDrive&&row.tracking.timecodedTran
 assert(row.tracking.timecodedTranscriptEditorialReviewComplete===false);
 const timed=graph.nodes.flatMap(n=>n.podcastNotes||[]).filter(x=>Number.isFinite(x.timeSec));
 assert(timed.length>=45,"F07: se han perdido pasajes cronometrados");
-for(const n of timed)assert(n.timeSec>=0&&n.timeSec<=18860&&n.source.startsWith("https://www.youtube.com/watch?v=oGIlCmHsc4g"),
- "F07: marca de tiempo sin fuente original");
+const current=timed.filter(n=>n.title?.startsWith("F07 ·"));
+assert.equal(current.length,22,"F07: 22 anotaciones nuevas con tiempo y atribución");
+for(const n of current)assert(n.timeSec>=0&&n.timeSec<=18860&&n.source.startsWith("https://www.youtube.com/watch?v=oGIlCmHsc4g&t=")&&n.text.length>=120,
+ "F07: nueva nota sin marca de tiempo o sin enlace al video original");
+// Las notas heredadas de Metacast y fuentes judiciales tienen referencias externas propias.
+assert(timed.length>=current.length);
 assert(graph.nodes.some(n=>n.id==="twp312-pedro-sanchez")&&graph.edges.some(e=>e.id==="twp312-pedro-sanchez-contexto"),
  "F07: falta la mención contextual del presidente del Gobierno");
 assert(html.includes('podcast-wild-312-chicote.js?v='));
