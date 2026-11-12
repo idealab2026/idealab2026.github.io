@@ -1160,7 +1160,15 @@
         "relatedTelarana": [
           "twp312-guantanamo"
         ],
-        "methodologicalLimits": "Hecho documental de historia militar sobre la apertura efectiva de la instalación de detención; no acredita por sí mismo las experiencias personales del periodista ni la legalidad de la detención individual de cada interno."
+        "methodologicalLimits": "Hecho documental de historia militar sobre la apertura efectiva de la instalación de detención; no acredita por sí mismo las experiencias personales del periodista ni la legalidad de la detención individual de cada interno.",
+        "podcastTranscriptAnchor": {
+          "timecode": "04:33:52",
+          "seconds": 16432,
+          "videoUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=16432s",
+          "sourceOrder": 7,
+          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
+          "limits": "Chicote relata cómo obtuvo acceso a Guantánamo años después de su apertura. La fecha histórica de llegada de detenidos de 2002 procede de la fuente institucional, no de su testimonio; no inferir que estuvo presente en 2002."
+        }
       }
     },
     {
@@ -1187,7 +1195,17 @@
           "cv26-aznar",
           "cv26-villarejo"
         ],
-        "methodologicalLimits": "La cronología recoge el atentado acreditado, no versiones sin sustento sobre una autoría estatal alternativa."
+        "methodologicalLimits": "La cronología recoge el atentado acreditado, no versiones sin sustento sobre una autoría estatal alternativa.",
+        "additionalSourceMentions": [
+          {
+            "sourceOrder": 6,
+            "timecode": "03:18:57",
+            "seconds": 11937,
+            "videoUrl": "https://www.youtube.com/watch?v=fxvXXVrkRb4&t=11937s",
+            "type": "acusacion_controvertida_atribuida_no_documental",
+            "limits": "La hipótesis de Villarejo sobre una participación de servicios de inteligencia extranjeros en el 11-M no está avalada por los documentos oficiales de este acontecimiento. El enlace identifica la existencia de la acusación, nunca una prueba de autoría."
+          }
+        ]
       }
     },
     {
@@ -1671,7 +1689,15 @@
           "twp312-partido-popular",
           "twp312-francisco-correa"
         ],
-        "methodologicalLimits": "La responsabilidad a título lucrativo es civil, no una condena penal a toda la organización ni acredita que todos sus responsables conocieran los hechos ilícitos. El alcance debe seguir la sentencia y sus modificaciones."
+        "methodologicalLimits": "La responsabilidad a título lucrativo es civil, no una condena penal a toda la organización ni acredita que todos sus responsables conocieran los hechos ilícitos. El alcance debe seguir la sentencia y sus modificaciones.",
+        "podcastTranscriptAnchor": {
+          "timecode": "03:43:51",
+          "seconds": 13431,
+          "videoUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=13431s",
+          "sourceOrder": 7,
+          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
+          "limits": "El entrevistado comenta Gürtel, la situación del Partido Popular en la sentencia y su relación política con la moción de censura. El contenido y alcance de la resolución del Tribunal Supremo proceden del documento judicial, no de una interpretación oral."
+        }
       }
     },
     {
@@ -2120,7 +2146,15 @@
           "twp312-miguel-bernad",
           "twp312-luis-pineda"
         ],
-        "methodologicalLimits": "Debe mantenerse la absolución como desenlace procesal en esta causa. No se deben convertir las opiniones de Chicote ni las condenas revocadas en hechos penales vigentes."
+        "methodologicalLimits": "Debe mantenerse la absolución como desenlace procesal en esta causa. No se deben convertir las opiniones de Chicote ni las condenas revocadas en hechos penales vigentes.",
+        "podcastTranscriptAnchor": {
+          "timecode": "02:38:01",
+          "seconds": 9481,
+          "videoUrl": "https://www.youtube.com/watch?v=oGIlCmHsc4g&t=9481s",
+          "sourceOrder": 7,
+          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
+          "limits": "Chicote menciona la absolución de Luis Pineda y Miguel Bernad. La fecha, los fundamentos y el sentido del fallo deben tomarse de la resolución judicial original; las valoraciones del entrevistado se mantienen separadas."
+        }
       }
     },
     {
