@@ -1643,7 +1643,7 @@ def main():
                       help="Desglosar exclusiones por libro, sin generar nada")
     sub.add_parser("reconcile-only", help="Conciliar envíos previos sin generar trabajos nuevos")
     sub.add_parser("poll-authorized",
-                   help="Conciliar y ejecutar una sola recuperación aprobada en GitHub")
+                   help="Conciliar y ejecutar una sola solicitud autorizada en GitHub")
     submitted_diag = sub.add_parser("inspect-submitted",
                                     help="Inspeccionar un envío en curso sin modificar estado")
     submitted_diag.add_argument("--issue", type=int, required=True)
