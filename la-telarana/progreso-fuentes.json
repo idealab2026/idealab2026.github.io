@@ -5,8 +5,8 @@
   "total": 69,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 29,
-    "notStarted": 37,
+    "inReview": 31,
+    "notStarted": 35,
     "pending": 66,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1155,6 +1155,52 @@
       "qualityNotes": "Primera integración pública de la entrevista, 6.104 segmentos con minutajes leídos en Drive. Seis notas de atribución textual, ninguna prueba independiente de afirmaciones geopolíticas. La transcripción no está cotejada con el audio."
     },
     {
+      "order": 39,
+      "videoId": "tPZ8wXGmSgA",
+      "title": "Egiptólogo destroza los mitos de Egipto: Pirámides, Aliens, Maldiciones, la Atlántida y la Esfinge",
+      "sourceUrl": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
+      "status": "revision_parcial_texto_notebooklm_sin_minutajes",
+      "reviewComplete": false,
+      "rawTranscriptAvailable": true,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "sourceNodesDocumented": 29,
+      "sourceRelationsDocumented": 33,
+      "contextualizedBiographies": 5,
+      "untimedTranscriptReviewedNotes": 28,
+      "untimedTranscriptAudioMatched": false,
+      "untimedTranscriptAvailable": true,
+      "timecodedTranscriptStoredInDrive": false,
+      "verifiedMinuteReferences": 0,
+      "verifiedIndependentChecks": 3,
+      "sourceTimelineVerifiedEventsCommitted": 1,
+      "sourcePrimaryModule": "la-telarana/fuente-39-egiptologia-revision.js",
+      "qualityNotes": "12/11/2026: análisis inicial de texto NotebookLM sin marcas temporales. Se añadieron 29 fichas de tema/actor y 33 vínculos, de los cuales la mayoría son MENCIONES EDITORIALES, no relaciones entre actores probadas. 28 anotaciones textuales localizadas por frase y posición aproximada del archivo privado. 3 fuentes de contraste independientes y un acontecimiento histórico documentado. NO existe minutaje fiable ni cotejo audiovisual. Revisión exhaustiva pendiente."
+    },
+    {
+      "order": 50,
+      "videoId": "H841XyN9B_4",
+      "title": "The Wild Project #284 - Miguel de Lys | La verdad sobre las Pirámides, La Atlántida, Quema de brujas",
+      "sourceUrl": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "status": "revision_parcial_texto_notebooklm_sin_minutajes",
+      "reviewComplete": false,
+      "rawTranscriptAvailable": true,
+      "docTranscriptCreated": false,
+      "transcriptDocHasFullText": false,
+      "sourceNodesDocumented": 27,
+      "sourceRelationsDocumented": 32,
+      "contextualizedBiographies": 7,
+      "untimedTranscriptReviewedNotes": 26,
+      "untimedTranscriptAudioMatched": false,
+      "untimedTranscriptAvailable": true,
+      "timecodedTranscriptStoredInDrive": false,
+      "verifiedMinuteReferences": 0,
+      "verifiedIndependentChecks": 1,
+      "sourceTimelineVerifiedEventsCommitted": 1,
+      "sourcePrimaryModule": "la-telarana/fuente-50-miguel-de-lys-revision.js",
+      "qualityNotes": "12/11/2026: análisis inicial de texto NotebookLM sin marcas temporales. Se añadieron 27 fichas de tema/actor y 32 vínculos, de los cuales la mayoría son MENCIONES EDITORIALES, no relaciones entre actores probadas. 26 anotaciones textuales localizadas por frase y posición aproximada del archivo privado. 1 fuentes de contraste independientes y un acontecimiento histórico documentado. NO existe minutaje fiable ni cotejo audiovisual. Revisión exhaustiva pendiente."
+    },
+    {
       "order": 69,
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
@@ -1174,9 +1220,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 101,
+    "committedVerifiedEvents": 103,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 57,
+    "fromSourceInReview": 59,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1320,6 +1366,12 @@
         "study-f30-episode-published-2022",
         "study-f30-invasion-2022",
         "study-f30-nato-concept-2022"
+      ],
+      "39": [
+        "study-f39-descubrimiento-tumba-tutankamon-1922"
+      ],
+      "50": [
+        "study-f50-juicios-salem-1692"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -3953,15 +4005,15 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 38,
-        "status": "pendiente",
+        "status": "en_revision_transcripcion_notebooklm_sin_minutajes",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-12",
@@ -3977,15 +4029,30 @@
           "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1HjhqJoWozziDTqHwASm0xsyTA6YbWEaZ/view?usp=drivesdk",
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "untimedTranscriptEditorialAnalysisStarted": true,
+          "untimedTranscriptNotesReviewed": 28
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
+          "percent": 29,
+          "state": "en_revision",
           "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "readyForUntimedAnalysis": true,
+          "confidence": "estimacion_parcial_no_medicion_exhaustiva",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "method": "primera_capa_declaraciones_y_entidades,_limitada_por_falta_de_minutajes_y_cotejo",
+          "signals": {
+            "entities": 29,
+            "relations": 33,
+            "biographies": 5,
+            "statements": 28,
+            "independentChecks": 3,
+            "verifiedTimelineEvents": 1,
+            "textCharacters": 249150,
+            "hasTimecodes": false
+          },
+          "nextAction": "Profundizar por bloques del TXT; cotejar declaraciones y biografías con fuentes primarias; obtener minutajes sin inventarlos",
+          "percentCapUntilVerified": 49
         }
       },
       {
@@ -4408,15 +4475,15 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 49,
-        "status": "pendiente",
+        "status": "en_revision_transcripcion_notebooklm_sin_minutajes",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
           "lastUpdated": "2026-11-12",
@@ -4432,15 +4499,30 @@
           "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1gZXY198Z8ysMkf8XIq8SxQsMETZNISr7/view?usp=drivesdk",
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "untimedTranscriptEditorialAnalysisStarted": true,
+          "untimedTranscriptNotesReviewed": 26
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
+          "percent": 27,
+          "state": "en_revision",
           "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "readyForUntimedAnalysis": true,
+          "confidence": "estimacion_parcial_no_medicion_exhaustiva",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "method": "primera_capa_declaraciones_y_entidades,_limitada_por_falta_de_minutajes_y_cotejo",
+          "signals": {
+            "entities": 27,
+            "relations": 32,
+            "biographies": 7,
+            "statements": 26,
+            "independentChecks": 1,
+            "verifiedTimelineEvents": 1,
+            "textCharacters": 251787,
+            "hasTimecodes": false
+          },
+          "nextAction": "Profundizar por bloques del TXT; cotejar declaraciones y biografías con fuentes primarias; obtener minutajes sin inventarlos",
+          "percentCapUntilVerified": 49
         }
       },
       {
@@ -6041,62 +6123,6 @@
     },
     "untimedTextBacklog": [
       {
-        "sourceOrder": 64,
-        "percent": 0,
-        "characters": 13973,
-        "textType": "NotebookLM without timecodes",
-        "qaPriority": "check possible truncation",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
-      },
-      {
-        "sourceOrder": 40,
-        "percent": 0,
-        "characters": 13530,
-        "textType": "NotebookLM without timecodes",
-        "qaPriority": "check possible truncation",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
-      },
-      {
-        "sourceOrder": 43,
-        "percent": 0,
-        "characters": 13502,
-        "textType": "NotebookLM without timecodes",
-        "qaPriority": "check possible truncation",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
-      },
-      {
-        "sourceOrder": 63,
-        "percent": 0,
-        "characters": 12953,
-        "textType": "NotebookLM without timecodes",
-        "qaPriority": "check possible truncation",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
-      },
-      {
-        "sourceOrder": 61,
-        "percent": 0,
-        "characters": 10523,
-        "textType": "NotebookLM without timecodes",
-        "qaPriority": "check possible truncation",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
-      },
-      {
-        "sourceOrder": 50,
-        "percent": 0,
-        "characters": 251787,
-        "textType": "NotebookLM without timecodes",
-        "qaPriority": "normal",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
-      },
-      {
-        "sourceOrder": 39,
-        "percent": 0,
-        "characters": 249150,
-        "textType": "NotebookLM without timecodes",
-        "qaPriority": "normal",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
-      },
-      {
         "sourceOrder": 52,
         "percent": 0,
         "characters": 235957,
@@ -6297,6 +6323,64 @@
         "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
       },
       {
+        "sourceOrder": 64,
+        "percent": 0,
+        "characters": 13973,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 40,
+        "percent": 0,
+        "characters": 13530,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 43,
+        "percent": 0,
+        "characters": 13502,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 63,
+        "percent": 0,
+        "characters": 12953,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 61,
+        "percent": 0,
+        "characters": 10523,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 50,
+        "percent": 27,
+        "characters": 251787,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Continuar contraste en fuente ya iniciada; sin minutajes",
+        "analysisStarted": true
+      },
+      {
+        "sourceOrder": 39,
+        "percent": 29,
+        "characters": 249150,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Continuar contraste en fuente ya iniciada; sin minutajes",
+        "analysisStarted": true
+      },
+      {
         "sourceOrder": 69,
         "percent": 51,
         "characters": 99744,
@@ -6312,6 +6396,10 @@
         "qaPriority": "normal",
         "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
       }
+    ],
+    "firstPassUntimedSources": [
+      39,
+      50
     ]
   }
 }
