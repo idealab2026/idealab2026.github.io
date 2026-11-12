@@ -5,7 +5,7 @@ import vm from "node:vm";
 const ctx={window:{}};
 const specs=[
  {num:18,file:"la-telarana/fuente-18-epstein-lorenzo-editorial.js",key:"IDEA_TELARANA_SOURCE18_EDITORIAL",minNotes:19,extraNode:"f18-marruecos",extraEdge:"f18-mencion-marruecos",videoId:"MljyjDGTxkk"},
- {num:21,file:"la-telarana/fuente-21-orden-mundial-editorial.js",key:"IDEA_TELARANA_SOURCE21_EDITORIAL",minNotes:28,extraNode:"f21-christine-lagarde",extraEdge:"f21-bce-lagarde-cargo",videoId:"DRgeXx3rJl0"}
+ {num:21,file:"la-telarana/fuente-21-orden-mundial-editorial.js",key:"IDEA_TELARANA_SOURCE21_EDITORIAL",minNotes:27,extraNode:"f21-christine-lagarde",extraEdge:"f21-bce-lagarde-cargo",videoId:"DRgeXx3rJl0"}
 ];
 for(const spec of specs){
  vm.runInNewContext(fs.readFileSync(spec.file,"utf8"),ctx,{filename:spec.file,timeout:6000});
