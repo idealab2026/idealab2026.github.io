@@ -6,12 +6,13 @@ const ctx={window:{}};
 vm.runInNewContext(read("la-telarana/fuente-28-revision-inicial.js"),ctx,{timeout:7000});
 const mod=ctx.window.IDEA_TELARANA_F28_REVIEW;
 assert.equal(mod.metadata.sourceOrder,28);
-assert.equal(mod.metadata.transcriptAvailable,false);
+assert.equal(mod.metadata.transcriptAvailable,true);
 assert.equal(mod.metadata.audioVerified,false);
 assert.equal(mod.metadata.verifiedMinuteReferences,0);
 assert.equal(mod.nodes.length,13);
 assert.equal(mod.edges.length,14);
-assert(mod.nodes.every(n=>(n.podcastNotes||[]).length===0),"No crear declaraciones de una fuente sin transcribir");
+assert.equal(mod.nodes.flatMap(n=>n.podcastNotes||[]).filter(n=>Number.isFinite(n.timeSec)).length,2,
+ "Solo notas atribuidas con minuto; el audio sigue sin cotejar");
 const ids=new Set(mod.nodes.map(x=>x.id));assert.equal(ids.size,mod.nodes.length);
 const documented=mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente");
 const mentions=mod.edges.filter(x=>x.claimStatus==="mencion_editorial_no_equivale_a_relacion_sustantiva");
@@ -34,9 +35,11 @@ assert(JSON.parse(m[1]).some(x=>x.label==="Fuente 28"&&x.key==="IDEA_TELARANA_F2
 const history=JSON.parse(read("linea-historia/estudios-telarana.json"));
 const tracker=JSON.parse(read("la-telarana/progreso-fuentes.json"));
 assert.equal(tracker.timeline.committedVerifiedEvents,history.items.length);
-assert(tracker.inReview.some(s=>s.order===28&&!s.reviewComplete&&s.rawTranscriptAvailable===false));
+assert(tracker.inReview.some(s=>s.order===28&&!s.reviewComplete&&s.rawTranscriptAvailable===true));
+const row=tracker.sourceCatalog.entries.find(s=>s.order===28);
+assert(row.tracking.timecodedTranscriptStoredInDrive&&row.tracking.timecodedTranscriptReadbackVerified&&!row.tracking.timecodedTranscriptAudioVerified);
 for(const id of ["study-f28-pov-thiel-vance-2022","study-f28-trump-vance-investidura-2025","study-f28-bessent-senado-2025"]){
 const e=history.items.find(x=>x.id===id);
 assert(e?.investigation.status==="hecho_documentado"&&e.investigation.confirmedBy?.url.startsWith("https://"));
 }
-console.log("OK F28: 7 vínculos documentados, 7 menciones editoriales, 3 hitos, cero transcripciones/citas ficticias.");
+console.log("OK F28: 7 vínculos documentados, 7 menciones editoriales, 3 hitos, 2 notas minutadas atribuidas.");
