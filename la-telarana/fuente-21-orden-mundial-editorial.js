@@ -5,10 +5,10 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
     "title": "El Nuevo Orden Mundial que nos ocultan | Lorenzo Ramírez #68",
     "url": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
     "publishedAt": "2025-03-19",
-    "reviewStage": "revision_documental_previa_mas_notas_temporizadas_nov_2026",
+    "reviewStage": "revision_documental_con_minutajes_y_contrastes_independientes_20261112",
     "transcriptAvailable": true,
     "sourceOrder": 21,
-    "methodologicalNote": "El TXT de subtítulos con marcas de tiempo está preservado en Drive institucional y permite enlazar fragmentos del vídeo. Las marcas no están cotejadas contra audio ni permiten por sí solas atribuir la voz a cada interlocutor. Las opiniones, acusaciones y asociaciones entre personas siguen siendo declaraciones del programa, no hechos acreditados.",
+    "methodologicalNote": "Revisión incremental de subtítulos con minutajes automáticos, sin cotejo directo del audio. Separar declaraciones del programa, documentación histórica independiente, hipótesis y alegaciones. No deducir vínculos de poder de meras menciones. Se han añadido precisiones con fuentes oficiales sobre euro digital y Lagarde cuando procede.",
     "transcriptSource": "Google Docs privado IDEA LAB, texto automático de NotebookLM",
     "transcriptCharacters": 137414,
     "transcriptTimecodesAvailable": true,
@@ -220,7 +220,17 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "x": 6880,
       "y": 2340,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Trump como continuidad de Biden y Obama · 00:32",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=32s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 32,
+          "status": "tesis_politica_atribuida",
+          "text": "Al abrir el episodio, el entrevistado sostiene que la orientación general de Donald Trump sería una continuación de procesos iniciados bajo Joe Biden y Barack Obama. Es una tesis analítica del entrevistado, no un hecho documental que demuestre una coordinación."
+        }
+      ]
     },
     {
       "id": "f21-putin",
@@ -233,7 +243,17 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "x": 7110,
       "y": 2355,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Putin y la Conferencia de Múnich de 2007 · 17:00",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=1020s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 1020,
+          "status": "interpretacion_historica_atribuida",
+          "text": "El entrevistado menciona la intervención de Vladímir Putin en la Conferencia de Seguridad de Múnich de 2007 y la vincula con la expansión de la OTAN. La referencia temporal es del programa; su interpretación causal no se da por demostrada."
+        }
+      ]
     },
     {
       "id": "f21-musk",
@@ -269,7 +289,26 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       "x": 7570,
       "y": 2385,
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Ursula von der Leyen y la Comisión Europea · 45:56",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=2756s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 2756,
+          "status": "opinion_politica_atribuida",
+          "text": "El entrevistado critica el funcionamiento de la Comisión Europea y la distribución de poder en la UE. Los juicios sobre legitimidad democrática corresponden al comentarista; la transcripción no prueba prácticas personales ilícitas."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Supuesta aspiración de von der Leyen a la OTAN · 47:27",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=2847s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 2847,
+          "status": "alegacion_no_verificada",
+          "text": "En el programa se atribuyen a Ursula von der Leyen aspiraciones a la Secretaría General de la OTAN y se sugieren motivaciones personales para su política hacia Rusia. Se trata de alegaciones del entrevistado, no corroboradas aquí por documentos sobre candidaturas o decisiones."
+        }
+      ]
     },
     {
       "id": "f21-monnet",
@@ -728,6 +767,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 46% del texto automático, sin minutaje: «los países importantes quizás meloni porque meloni está jugando con las dos barajas meloni está en el ámbito del g7 es una señora que a pesar de que muchos consideren bueno evident». Contexto editorial: Se estudian sus posiciones en migración, OTAN y asuntos europeos: es valoración política del entrevistado."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Giorgia Meloni e Instituto Aspen · 55:04",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=3304s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 3304,
+          "status": "interpretacion_y_vinculo_pendiente_contraste",
+          "text": "El entrevistado califica a Giorgia Meloni de figura política que combina posicionamientos diferentes y alude a su supuesta vinculación con Aspen. La pertenencia concreta y las consecuencias políticas descritas requieren documentación independiente; no debe inferirse una relación de mando."
         }
       ],
       "x": 5650,
@@ -751,6 +799,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "contradiccion",
           "text": "Mención localizada aproximadamente al 37% del texto automático, sin minutaje: «istine lagares presidenta del banco central europeo fue directora gerente del fondo monetario internacional y fue condenada ¿no por entregar un maletín lleno de dinero a bernard ta». Contexto editorial: Su proyecto del euro digital no es moneda programable en el diseño oficial, según la documentación del BCE."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Contraste BCE sobre diseño del euro digital · 1:50:59",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=6659s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 6659,
+          "status": "contraste_con_fuente_primaria",
+          "text": "Se menciona la posibilidad de intereses negativos sobre el euro digital. A diferencia de esa hipótesis, el BCE describe un modelo no remunerado y no programable. Fuente externa: https://www.ecb.europa.eu/euro/digital_euro/faqs/html/ecb.faq_digital_euro.es.html. Las condiciones finales siguen sujetas al proceso normativo."
         }
       ],
       "x": 5885,
@@ -774,6 +831,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "contradiccion",
           "text": "Mención localizada aproximadamente al 93% del texto automático, sin minutaje: «uro esto es algo que tiene el eurodigital y que es lo más importante aquí poner tipos negativos en las cuentas corrientes si tú tienes un euro digital más allá del uso que lo gaste». Contexto editorial: Se debate hipotética restricción del ahorro y tipos negativos. La descripción oficial del BCE no avala la interpretación de dinero programable."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Euro digital y supuestos tipos negativos · 1:50:59",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=6659s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 6659,
+          "status": "afirmacion_contradiccion_documental",
+          "text": "El entrevistado afirma que el euro digital permitiría imponer tipos de interés negativos y limitar el efectivo. Contraste posterior: en las preguntas frecuentes del BCE el diseño descrito contempla tenencias sin remuneración, no dinero programable; la Comisión Europea plantea que complemente, no sustituya, el efectivo. La tesis del programa no está demostrada por el diseño oficial."
         }
       ],
       "x": 6120,
@@ -843,6 +909,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 10% del texto automático, sin minutaje: «nternacional va a reducirse y china puede aprovechar todo eso para seguir instalándose en diferentes países son diferentes zonas geográficas eh esto es tan real eh el tema de estad». Contexto editorial: El entrevistado evalúa el ascenso económico chino y el papel del dólar. No se deduce un pacto clandestino."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · China y las relaciones comerciales europeas · 25:30",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=1530s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 1530,
+          "status": "posicion_politica_atribuida",
+          "text": "El programa plantea que Europa podría mantener relaciones comerciales con China aun perteneciendo a la OTAN. Es una posición de política económica del entrevistado, no la constatación de una decisión institucional de la alianza."
         }
       ],
       "x": 6825,
@@ -866,6 +941,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "alegacion",
           "text": "Mención localizada aproximadamente al 9% del texto automático, sin minutaje: «de ruta para ir presionando a rusia y luego posteriormente desindustrializando europa trump es el que llega y lo hace pues pegando esa patada y cortando unas líneas que una adminis». Contexto editorial: Se analiza la estrategia de seguridad y las sanciones. Interpretaciones sobre autoría de sabotajes no se registran como hechos."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Posible acuerdo Trump–Putin · 30:09",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=1809s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 1809,
+          "status": "hipotesis_atribuida",
+          "text": "El entrevistado especula sobre un posible acuerdo geopolítico global entre Donald Trump y Vladímir Putin, con implicaciones para China y Ucrania. Es un escenario hipotético descrito en la entrevista, no un acuerdo confirmado."
         }
       ],
       "x": 7060,
@@ -889,6 +973,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 9% del texto automático, sin minutaje: «quero respecto a la guerra de ucrania y de hecho pues esto está generando eh pues eh muchos virajes a medias nosotros hablábamos de muchas cosas en la anterior entrevista prácticam». Contexto editorial: Tratado en el contexto de la invasión rusa y las negociaciones internacionales. Distinción entre hechos y tesis."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Negociaciones y supuesto plan de cien días · 31:51",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=1911s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 1911,
+          "status": "alegacion_diplomatica_no_verificada",
+          "text": "Se sostiene que Trump y Putin habrían hablado ya sobre Ucrania y que existiría un plan de cien días difundido en prensa. La transcripción prueba esa afirmación, pero no verifica la existencia, adopción o ejecución de dicho plan."
         }
       ],
       "x": 5650,
@@ -912,6 +1005,15 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0",
           "status": "relato",
           "text": "Mención localizada aproximadamente al 72% del texto automático, sin minutaje: «o son personas muy cercanas a elon musk y muy cercanas a peter thil del grupo palantir que realmente quien está debajo de todo esto los palanter boys les llamo yo son gente que no ». Contexto editorial: Contexto de empresas dirigidas por Elon Musk y su influencia; no es prueba de actividad clandestina."
+        },
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · SpaceX, Tesla y contratos públicos · 1:27:23",
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=5243s",
+          "publishedAt": "2025-03-19",
+          "timeSec": 5243,
+          "status": "afirmacion_atribuida_pendiente_contraste",
+          "text": "En el programa se afirma que SpaceX y Tesla se benefician sustancialmente de decisiones y contratos públicos y se menciona la NASA. El subtítulo acredita el comentario, no importes ni contratos particulares; cualquier relación contractual se debe verificar con registros oficiales."
         }
       ],
       "x": 5885,
@@ -939,6 +1041,29 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
       ],
       "x": 6120,
       "y": 3570
+    },
+    {
+      "id": "f21-christine-lagarde",
+      "name": "Christine Lagarde",
+      "kind": "Persona",
+      "subtitle": "Presidenta del BCE desde noviembre de 2019; antes, directora gerente del FMI y ministra francesa",
+      "note": "Christine Lagarde fue ministra de Economía y Finanzas de Francia (2007–2011), directora gerente del FMI (2011–2019) y presidenta del BCE desde noviembre de 2019, según el BCE. En diciembre de 2016 una corte francesa la declaró culpable de negligencia por la gestión del arbitraje del caso Tapie sin imponerle pena. La afirmación del programa sobre la entrega personal de un maletín no corresponde a ese fallo judicial.",
+      "source": "https://www.ecb.europa.eu/ecb/decisions/html/cvlagarde.es.html",
+      "photo": "",
+      "topic3d": "global",
+      "x": 6260,
+      "y": 2380,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f21-orden-mundial",
+          "title": "F21 · Lagarde, Tapie y precisión judicial · 45:28",
+          "timeSec": 2728,
+          "source": "https://www.youtube.com/watch?v=DRgeXx3rJl0&t=2728s",
+          "publishedAt": "2025-03-19",
+          "status": "declaracion_inexacta_contraste_externo",
+          "text": "El programa afirma que Lagarde fue condenada por entregar un maletín de dinero a Bernard Tapie. El fallo de 19/12/2016 se refería a negligencia en la gestión de fondos públicos por no recurrir un arbitraje; no se impuso pena. Contraste: https://www.rtve.es/noticias/20161219/lagarde-culpable-negligencia/1456660.shtml."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1604,6 +1729,18 @@ window.IDEA_TELARANA_SOURCE21_EDITORIAL = {
           "text": "Mención localizada aproximadamente al 55% del texto automático, sin minutaje: «tro o encamadas dentro de esa uset de esa organización para ayuda al desarrollo norteamericana que eso ha sido otro gran despertar porque era una organización que se en teoría ayud». Contexto editorial: Norma firmada 20-01-2025 y publicada por el Gobierno estadounidense; no corrobora acusaciones de financiación encubierta."
         }
       ]
+    },
+    {
+      "id": "f21-bce-lagarde-cargo",
+      "a": "f21-christine-lagarde",
+      "b": "f21-ecb",
+      "type": "Presidenta del Banco Central Europeo desde el 01/11/2019",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "El BCE confirmó el inicio del mandato de Christine Lagarde el 1 de noviembre de 2019. El cargo institucional no prueba otras acusaciones formuladas en el programa acerca de Tapie, motivaciones personales o políticas monetarias.",
+      "source": "https://www.ecb.europa.eu/press/pr/date/2019/html/ecb.pr191101~8f1889db97.es.html",
+      "episodeId": "idealab-f21-orden-mundial",
+      "podcastNotes": []
     }
   ]
 };
