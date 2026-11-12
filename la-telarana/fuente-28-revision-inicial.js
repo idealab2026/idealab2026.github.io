@@ -66,7 +66,17 @@ window.IDEA_TELARANA_F28_REVIEW = {
       "topic3d": "global",
       "x": 9260,
       "y": 3600,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f28-trump-poder-revision-inicial",
+          "title": "F28 · Donantes y Trump · 14:57",
+          "source": "https://www.youtube.com/watch?v=fzHC3z8S3oM&t=897s",
+          "publishedAt": null,
+          "timeSec": 897,
+          "status": "interpretacion_atribuida",
+          "text": "El programa comenta apoyos empresariales y donaciones a Donald Trump, citando a Elon Musk y George Soros por contraste. La transcripción no constituye un registro oficial de aportaciones políticas."
+        }
+      ]
     },
     {
       "id": "on-jd-vance",
@@ -105,7 +115,17 @@ window.IDEA_TELARANA_F28_REVIEW = {
       "topic3d": "global",
       "x": 8820,
       "y": 3790,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f28-trump-poder-revision-inicial",
+          "title": "F28 · Peter Thiel y Elon Musk · 15:10",
+          "source": "https://www.youtube.com/watch?v=fzHC3z8S3oM&t=910s",
+          "publishedAt": null,
+          "timeSec": 910,
+          "status": "interpretacion_atribuida",
+          "text": "Se menciona a Peter Thiel (nombre transcrito de forma variable en ASR), Palantir, Elon Musk y el apoyo político a Trump. La explicación de rivalidades internas y donaciones es una interpretación del programa; exige contraste independiente en fuentes electorales."
+        }
+      ]
     },
     {
       "id": "f28-us-treasury",
