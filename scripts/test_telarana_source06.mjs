@@ -1,4 +1,4 @@
-/* Fuente06: referencia a transcripción completa externa y prosa probatoria; no fingir incorporación literal. */
+/* F06: 6.975 segmentos cronometrados preservados en Drive; el audio sigue sin cotejarse. */
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
@@ -36,10 +36,12 @@ assert.equal(d.metadata.transcriptPresentOnThirdPartySite,true);
 assert.equal(d.metadata.transcriptVerifiedAgainstAudio,false);
 assert(d.metadata.transcriptLocation.includes("podcasts.happyscribe.com"));
 assert(d.metadata.transcriptDocUrl.includes("docs.google.com/document/d/"));
-assert.equal(d.nodes.length,8);
-assert.equal(d.edges.length,8);
+assert.equal(d.nodes.length,10);
+assert.equal(d.edges.length,10);
+assert(d.metadata.timestampedTranscriptAvailable===true&&d.metadata.timestampedTranscriptSegments===6975);
+assert.equal(d.metadata.timestampedTranscriptAudioVerified,false);
 const ids=new Set(d.nodes.map(n=>n.id));
-assert.equal(ids.size,8);
+assert.equal(ids.size,10);
 for(const n of d.nodes){
  assert(n.note.length>120,"No identity/context: "+n.id);
  assert(n.podcastNotes.some(x=>typeof x.timeSec==="number"),"Missing timed topic reference: "+n.id);
@@ -65,10 +67,24 @@ assert.equal(row.transcriptSha256VerifiedDriveRoundTrip,true);
 assert.equal(row.transcriptTopicIndexCount,13);
 assert.equal(progress.inReview.find(x=>x.order===6)?.firstPassTopicIndexCount,13);
 assert.equal(row.reviewComplete,false);
+assert(row.tracking.timecodedTranscriptStoredInDrive&&row.tracking.timecodedTranscriptReadbackVerified,
+ "F06: comprobar TXT original con minutajes en Drive");
+assert(row.tracking.timecodedTranscriptEditorialReviewComplete===false,
+ "F06: no marcar revisión exhaustiva sin cotejo de audio");
+const counted=d.nodes.flatMap(x=>x.podcastNotes||[]).filter(x=>Number.isFinite(x.timeSec));
+assert(counted.length>=21,"F06: se han perdido pasajes con marcas de tiempo");
+for(const n of counted){
+ assert(n.timeSec>=0&&n.timeSec<=18205&&n.source.startsWith("https://www.youtube.com/watch?v=fxvXXVrkRb4"),
+  "F06: tiempo o enlace de origen inválido");
+}
+assert(d.nodes.some(x=>x.id==="twp253-11m")&&d.nodes.some(x=>x.id==="twp253-javier-de-la-rosa"),
+ "F06: personajes o acontecimiento faltantes");
+assert(d.edges.filter(e=>e.id.startsWith("twp253-edge-11m")||e.id.startsWith("twp253-edge-javier")).every(e=>e.confidence==="hipotesis"),
+ "F06: hipótesis de 11-M o relación personal no acreditada");
 assert(progress.counts.inReview>=6,"Other sources may start later; source06 must remain in review");
 assert(html.includes("podcast-wild-253-villarejo.js?v="));
 const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(html)||[])[1]||"[]");
 assert(modules.some(m=>m.key==="IDEA_TELARANA_SOURCE06_PODCAST"&&m.kind==="mergeNewEpisode")&&html.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_SOURCE06_PODCAST");
 assert(html.includes("podcasts.happyscribe.com"),"Evidence link must be visible");
 assert(!html.includes("source-review-rows"),"Internal tracker must never be public");
-console.log("OK: source06 transcripción nativa íntegra SHA-256 verificado, 13 temas indexados, 8 entidades y 8 vínculos cualificados; revisión pendiente");
+console.log("OK F06: transcripcion original Google Doc + 6975 subtitulos minutados en TXT; 10 nodos, 10 enlaces, atribuciones del 11-M no verificadas.");
