@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "scope": "Registro de revisión interno de 69 entradas: 67 fuentes de 8 notebooks CULTURA y 2 aportaciones de usuario; tres duplicaciones de videos entre notebooks -> 66 fuentes distintas. La web La Telaraña NO debe publicar este listado. No presentar títulos como hechos verificados.",
   "total": 69,
   "counts": {
@@ -1426,9 +1426,17 @@
           "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 123020,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 4146,
+          "timecodedTranscriptBytes": 233891,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1457,9 +1465,17 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 81876,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2487,
+          "timecodedTranscriptBytes": 147335,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1483,12 +1499,20 @@
           "inReview": true,
           "imageAtGraphNode": "configurada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 92493,
           "transcriptSource": "notebooklm_automatic_text_verified_in_private_drive_20261111",
           "audioMatched": false,
           "minuteReferencesVerified": 0,
-          "driveReadbackVerified": true
+          "driveReadbackVerified": true,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 3224,
+          "timecodedTranscriptBytes": 179941,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         },
         "summaryEvidence": "https://www.ivoox.com/vida-secreta-de-felipe-vi-el-audios-mp3_rf_180376510_1.html",
         "publishedAt": "2026-09-10",
@@ -1523,12 +1547,20 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 84334,
           "transcriptSource": "notebooklm_automatic_text_verified_in_private_drive_20261111",
           "audioMatched": false,
           "minuteReferencesVerified": 0,
-          "driveReadbackVerified": true
+          "driveReadbackVerified": true,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2347,
+          "timecodedTranscriptBytes": 145773,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         },
         "sourceData": "podcast-duque-lerma-historia.js",
         "chapterTimecodesAvailable": true,
@@ -1595,10 +1627,18 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "docTranscriptionIndexUrl": "https://docs.google.com/document/d/1niENpA4IJo6AJwPsYkWQBDUJiMGIzNaU7qPxmUcLp2c/edit",
           "transcriptCharactersReadBack": 258825,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 6975,
+          "timecodedTranscriptBytes": 430946,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         },
         "sourceData": "podcast-wild-253-villarejo.js",
         "externalTranscriptUrl": "https://podcasts.happyscribe.com/the-wild-project/the-wild-project-253-ft-comisario-villarejo-la-mentira-del-11m-intentan-matarle-espias-rusas",
@@ -1641,12 +1681,20 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 314815,
           "transcriptSource": "notebooklm_automatic_text_verified_in_private_drive_20261111",
           "audioMatched": false,
           "minuteReferencesVerified": 0,
-          "driveReadbackVerified": true
+          "driveReadbackVerified": true,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 8451,
+          "timecodedTranscriptBytes": 524980,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         },
         "sourceData": "podcast-wild-312-chicote.js",
         "externalTranscriptUrl": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
@@ -1677,18 +1725,26 @@
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": true,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": "https://docs.google.com/document/d/1O5yATkwfw_tm3BrHC4fLDCwA0MtMIUe_ewzpFwjjfQk/edit",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 0,
           "transcriptSource": "editorial_document_only_not_a_transcript",
           "audioMatched": false,
           "minuteReferencesVerified": 0,
-          "falsePositiveTranscriptionCorrected": true
+          "falsePositiveTranscriptionCorrected": true,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2926,
+          "timecodedTranscriptBytes": 178021,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         },
         "sourceData": "podcast-vaquero-67-villarejo.js",
         "episodeDurationSeconds": 7093,
@@ -1729,7 +1785,7 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_por_persona_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 139679,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredStatements": 33,
@@ -1738,7 +1794,15 @@
           "olderStructuredWithoutAnchor": 8,
           "audioMatched": false,
           "editorialMaintenanceComplete": true,
-          "editorialIndependentVerificationComplete": false
+          "editorialIndependentVerificationComplete": false,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 3972,
+          "timecodedTranscriptBytes": 242792,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1762,9 +1826,17 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_por_persona_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 76846,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2294,
+          "timecodedTranscriptBytes": 136238,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1788,7 +1860,7 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_wikipedia_o_iconos_fallback",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 142446,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredStatements": 28,
@@ -1796,7 +1868,15 @@
           "textAnchorsVerified": 28,
           "audioMatched": false,
           "editorialMaintenanceInProgress": false,
-          "editorialMaintenanceComplete": true
+          "editorialMaintenanceComplete": true,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 3847,
+          "timecodedTranscriptBytes": 237587,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1820,9 +1900,17 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_wikipedia_o_iconos_fallback",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 76846,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2182,
+          "timecodedTranscriptBytes": 130889,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1846,7 +1934,7 @@
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 274234,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredStatements": 20,
@@ -1854,7 +1942,15 @@
           "textAnchorsVerified": 20,
           "audioMatched": false,
           "editorialMaintenanceInProgress": false,
-          "editorialMaintenanceComplete": true
+          "editorialMaintenanceComplete": true,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 7278,
+          "timecodedTranscriptBytes": 455478,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1878,9 +1974,17 @@
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 147938,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 4240,
+          "timecodedTranscriptBytes": 256425,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1931,9 +2035,17 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 99335,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2902,
+          "timecodedTranscriptBytes": 174561,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1957,9 +2069,17 @@
           "inReview": true,
           "imageAtGraphNode": "wikipedia_o_icono",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 62974,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 1789,
+          "timecodedTranscriptBytes": 109048,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -1983,7 +2103,7 @@
           "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 129774,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredStatements": 36,
@@ -1992,7 +2112,15 @@
           "olderStructuredWithoutAnchor": 0,
           "audioMatched": false,
           "editorialMaintenanceComplete": true,
-          "editorialIndependentVerificationComplete": false
+          "editorialIndependentVerificationComplete": false,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 3578,
+          "timecodedTranscriptBytes": 221516,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2016,7 +2144,7 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 96983,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredStatements": 23,
@@ -2025,7 +2153,15 @@
           "olderStructuredWithoutAnchor": 0,
           "audioMatched": false,
           "editorialMaintenanceComplete": true,
-          "editorialIndependentVerificationComplete": false
+          "editorialIndependentVerificationComplete": false,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2590,
+          "timecodedTranscriptBytes": 161181,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2049,9 +2185,17 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 143539,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 4005,
+          "timecodedTranscriptBytes": 245712,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2075,7 +2219,7 @@
           "inReview": false,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 137414,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredStatements": 35,
@@ -2083,7 +2227,15 @@
           "textAnchorsVerified": 35,
           "audioMatched": false,
           "editorialMaintenanceInProgress": false,
-          "editorialMaintenanceComplete": true
+          "editorialMaintenanceComplete": true,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 3743,
+          "timecodedTranscriptBytes": 233235,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2107,9 +2259,17 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 20986,
-          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive"
+          "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 616,
+          "timecodedTranscriptBytes": 37220,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2133,12 +2293,20 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 149267,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredSourceStatements": 30,
           "transcriptAnchorsMatched": 29,
-          "transcriptAudioMatched": false
+          "transcriptAudioMatched": false,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 4123,
+          "timecodedTranscriptBytes": 254409,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2162,12 +2330,20 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-10",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 74423,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "structuredSourceStatements": 23,
           "transcriptAnchorsMatched": 23,
-          "transcriptAudioMatched": false
+          "transcriptAudioMatched": false,
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2286,
+          "timecodedTranscriptBytes": 133601,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2209,22 +2385,30 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 22,
-        "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
+        "status": "en_revision_con_subtitulos_cronometrados_y_pendiente_cotejo",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "externalDocumentsVerified": 1,
           "audioVerified": false,
           "verifiedMinuteReferences": 0,
-          "methodologicalStatus": "sinopsis + referencia institucional, no lectura de transcripción"
+          "methodologicalStatus": "sinopsis + referencia institucional, no lectura de transcripción",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 2289,
+          "timecodedTranscriptBytes": 140809,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2237,22 +2421,30 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 23,
-        "status": "revision_inicial_sinopsis_evidencia_externa_audio_y_transcripcion_pendientes",
+        "status": "en_revision_con_subtitulos_cronometrados_y_pendiente_cotejo",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "externalDocumentsVerified": 4,
           "audioVerified": false,
           "verifiedMinuteReferences": 0,
-          "methodologicalStatus": "sinopsis + referencia institucional, no lectura de transcripción"
+          "methodologicalStatus": "sinopsis + referencia institucional, no lectura de transcripción",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 4073,
+          "timecodedTranscriptBytes": 253961,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2265,22 +2457,30 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 24,
-        "status": "revision_inicial_contexto_documental_sin_audio_ni_transcripcion",
+        "status": "en_revision_con_subtitulos_cronometrados_y_pendiente_cotejo",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "externalDocumentsVerified": 7,
           "audioVerified": false,
           "verifiedMinuteReferences": 0,
-          "methodologicalStatus": "fuente editorial oficial y legislación/registros externos; declaraciones sin cotejar"
+          "methodologicalStatus": "fuente editorial oficial y legislación/registros externos; declaraciones sin cotejar",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 4491,
+          "timecodedTranscriptBytes": 275854,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2293,18 +2493,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 25,
-        "status": "en_revision_asr_externo_parcial_y_documentacion_independiente",
+        "status": "en_revision_con_subtitulos_cronometrados_y_pendiente_cotejo",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "editorialDossierCreated": true,
           "editorialDossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
           "transcriptAvailableExternally": true,
@@ -2319,7 +2519,15 @@
           "driveDossierCharactersReadBack": 4812,
           "driveDossierCheckedAt": "2026-11-11",
           "driveDossierIsTranscript": false,
-          "driveDossierCheckNote": "Lectura directa de documento institucional: expediente/índice editorial; transcripción completa ausente en el documento inspeccionado."
+          "driveDossierCheckNote": "Lectura directa de documento institucional: expediente/índice editorial; transcripción completa ausente en el documento inspeccionado.",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 1541,
+          "timecodedTranscriptBytes": 91888,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2332,18 +2540,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 26,
-        "status": "revision_inicial_documentos_externos_audio_y_transcripcion_pendientes",
+        "status": "en_revision_con_subtitulos_cronometrados_y_pendiente_cotejo",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
           "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "editorialDossierCreated": true,
           "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
           "audioVerified": false,
@@ -2354,7 +2562,15 @@
           "driveDossierCharactersReadBack": 3318,
           "driveDossierCheckedAt": "2026-11-11",
           "driveDossierIsTranscript": false,
-          "driveDossierCheckNote": "Lectura directa de documento institucional: expediente/índice editorial; transcripción completa ausente en el documento inspeccionado."
+          "driveDossierCheckNote": "Lectura directa de documento institucional: expediente/índice editorial; transcripción completa ausente en el documento inspeccionado.",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 4462,
+          "timecodedTranscriptBytes": 277813,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -2367,18 +2583,26 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 27,
-        "status": "pendiente",
+        "status": "en_revision_con_subtitulos_cronometrados_y_pendiente_cotejo",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
-          "transcriptContentImported": false,
+          "transcriptContentImported": true,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "timecodedTranscriptStoredInDrive": true,
+          "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
+          "timecodedTranscriptSegments": 6104,
+          "timecodedTranscriptBytes": 370211,
+          "timecodedTranscriptRoot": "IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+          "timecodedTranscriptAudioVerified": false,
+          "timecodedTranscriptEditorialReviewComplete": false,
+          "timecodedTranscriptImportedAt": "2026-11-12"
         }
       },
       {
@@ -3312,6 +3536,53 @@
       "completado": "Revisión declarada completa y QA; no equivale a que todas las acusaciones sean verídicas",
       "en_revision": "Tratamiento parcial sin cierre",
       "imagen_en_punto_telarana": "Configuración de foto en el nodo de las personas del episodio; imagenRuntimeVerified confirma si se comprobó en navegador"
+    },
+    "timecodedTranscriptBatch": {
+      "asOf": "2026-11-12",
+      "distinctVideoSources": 62,
+      "uniqueCaptionFilesInPrivateDrive": 28,
+      "notRecovered": 34,
+      "recordFormat": "separate TXT with original source label, URL and timecodes",
+      "youtubeBlocked": true,
+      "exactSourceOrders": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "duplicateCatalogEntriesExcluded": [
+        36,
+        46,
+        65
+      ],
+      "originalCaptionTextNotRepublishedInPublicRepo": true,
+      "sourceFolder": "institutional IDEA LAB / 01_FUENTES_ORIGINALES / LA_TELARAÑA / 01_TRANSCRIPCIONES_CON_MARCAS_DE_TIEMPO_SIN_COTEJO_AUDIO",
+      "audioVerified": false,
+      "coverageNote": "No gaps longer than 30 seconds found by caption extraction; automatic timecode coverage does not certify transcription accuracy or speaker identification."
     }
   },
   "editorialQualityAudit": {
