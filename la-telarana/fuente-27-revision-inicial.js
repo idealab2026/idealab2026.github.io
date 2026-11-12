@@ -28,7 +28,17 @@ window.IDEA_TELARANA_F27_REVIEW = {
       "photo": "",
       "x": 9050,
       "y": 3500,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f27-organizaciones-poder-revision-preliminar",
+          "title": "F27 · Gates, Soros y Fink · 23:08",
+          "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ&t=1388s",
+          "publishedAt": "2024-02-06",
+          "timeSec": 1388,
+          "status": "opinion_atribuida",
+          "text": "El programa menciona a Bill Gates, George Soros y Larry Fink en un argumento sobre poder global y construcción social. Agrupar nombres en el discurso no demuestra una organización común ni acuerdos entre ellos."
+        }
+      ]
     },
     {
       "id": "f25-lorenzo",
@@ -67,7 +77,17 @@ window.IDEA_TELARANA_F27_REVIEW = {
       "photo": "",
       "x": 9850,
       "y": 3700,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f27-organizaciones-poder-revision-preliminar",
+          "title": "F27 · Pregunta sobre BlackRock · 36:10",
+          "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ&t=2170s",
+          "publishedAt": "2024-02-06",
+          "timeSec": 2170,
+          "status": "pregunta_del_entrevistador",
+          "text": "El entrevistador pregunta por la importancia de BlackRock como actor financiero y expresa dudas sobre las críticas generalizadas. Esta pregunta no debe confundirse con una confirmación de control efectivo sobre otros actores."
+        }
+      ]
     },
     {
       "id": "on-jpmorgan",
