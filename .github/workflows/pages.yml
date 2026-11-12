@@ -81,6 +81,8 @@ jobs:
         run: node scripts/test_telarana_source19_profiles.mjs
       - name: Verificar fuente 20, perfiles y referencias a Stargate
         run: node scripts/test_telarana_source20_profiles.mjs
+      - name: Validar F20 con atribuciones cronometradas y documentos primarios
+        run: node scripts/test_telarana_f20_timestamps.mjs
       - name: Validar fuente 22, perfiles y Marcha Verde
         run: node scripts/test_telarana_source22_profiles.mjs
       - name: Verificar fuente 23, atribuciones y Tratado de París
