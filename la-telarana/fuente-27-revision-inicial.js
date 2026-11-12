@@ -6,12 +6,15 @@ window.IDEA_TELARANA_F27_REVIEW = {
     "sourceOrder": 27,
     "url": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
     "publishedAt": "2024-02-06",
-    "reviewStage": "sinopsis_indice_oficial_y_contrastes_gobierno_ucraniano_sin_transcripcion",
-    "transcriptAvailable": false,
+    "reviewStage": "transcripcion_cronometrada_recuperada_revision_editorial_en_curso",
+    "transcriptAvailable": true,
     "transcriptStoredPrivately": false,
     "audioVerified": false,
     "verifiedMinuteReferences": 0,
-    "methodologicalNote": "El índice de YouTube acredita temas y tiempos de inicio de capítulos, no citas. Los documentos oficiales de Ucrania prueban cooperación consultiva en reconstrucción, NO subordinación institucional, control de recursos naturales, delito o propiedad del país."
+    "methodologicalNote": "Se ha recuperado un TXT de subtítulos con marcas de tiempo en el Drive institucional privado (4073 segmentos hasta 02:14:37). Los subtítulos no están cotejados con el audio y su recepción no convierte afirmaciones de la entrevista en hechos probados. Permanecen vigentes las cautelas de procedencia y las verificaciones externas ya documentadas.",
+    "transcriptSegments": 4073,
+    "transcriptLastTimestamp": "02:14:37",
+    "fullTranscriptPreservedInDrive": true
   },
   "nodes": [
     {
@@ -19,7 +22,7 @@ window.IDEA_TELARANA_F27_REVIEW = {
       "name": "Podcast · Fuente 27 · Organizaciones de poder",
       "kind": "Fuente",
       "subtitle": "Inversión Racional · 06/02/2024",
-      "note": "Entrevista publicada por Inversión Racional Podcast. La descripción identifica como participantes a Luis Miguel Ortiz y Lorenzo Ramírez, y contiene capítulos sobre poder, BlackRock, Bilderberg, política monetaria y tecnología. No se ha recuperado transcripción completa ni cotejado el audio.",
+      "note": "Fuente 27: transcripción automática con códigos de tiempo recuperada en Drive institucional; falta cotejo del audio y análisis exhaustivo de menciones, identidades y relaciones. Entrevista publicada por Inversión Racional Podcast. La descripción identifica como participantes a Luis Miguel Ortiz y Lorenzo Ramírez, y contiene capítulos sobre poder, BlackRock, Bilderberg, política monetaria y tecnología. No se ha recuperado transcripción completa ni cotejado el audio.",
       "source": "https://www.youtube.com/watch?v=OLoP_-zSKwQ",
       "topic3d": "global",
       "photo": "",
