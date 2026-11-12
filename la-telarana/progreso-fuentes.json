@@ -3163,12 +3163,25 @@
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-11",
+          "lastUpdated": "2026-11-12",
           "transcriptCharactersReadBack": 162636,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
           "sourceDocumentaryRelations": 9,
           "attributedASRNotes": 9,
-          "mereMentions": 5
+          "mereMentions": 5,
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 162780,
+          "untimedTranscriptWordsApprox": 29231,
+          "untimedTranscriptSha256": "00ab6df59b11c03c3f898f27e0d9edd52e8738dc95b9efc3bd815ba330e650e0",
+          "untimedTranscriptDriveId": "1Gai11LhTj4ZGKuxSdLvrvoFDGc-Fgb8h",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1Gai11LhTj4ZGKuxSdLvrvoFDGc-Fgb8h/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 53,
@@ -3649,7 +3662,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 169597,
+          "untimedTranscriptWordsApprox": 30880,
+          "untimedTranscriptSha256": "f8d8c38b272060f3c740652bf348379690403f0e3f68ceb1b9ac7e4fc75117ed",
+          "untimedTranscriptDriveId": "1iAOhTVTv9IMntkG-Q5d8_k8A57DKZluV",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1iAOhTVTv9IMntkG-Q5d8_k8A57DKZluV/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3681,7 +3707,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 24879,
+          "untimedTranscriptWordsApprox": 4346,
+          "untimedTranscriptSha256": "3a9ce6214a74544fae84e6d498cfb2ce27a08f4114a6ebe1b358557840348b44",
+          "untimedTranscriptDriveId": "1x8vUSeFGEWwdDtfMnkt5MQhKU65b_FtB",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1x8vUSeFGEWwdDtfMnkt5MQhKU65b_FtB/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3713,7 +3752,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 135278,
+          "untimedTranscriptWordsApprox": 26081,
+          "untimedTranscriptSha256": "9e4dcdb3945f7e8ddd7fc06b417290c8ef71fc628e3e725e923c91bc13ed7e7e",
+          "untimedTranscriptDriveId": "1qypggnikGX6_0M3t6DgySOAV8hAFCIDa",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1qypggnikGX6_0M3t6DgySOAV8hAFCIDa/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3745,7 +3797,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 20732,
+          "untimedTranscriptWordsApprox": 3407,
+          "untimedTranscriptSha256": "87080ecc61fa177bd04402382d566ac07451349e01abe3ed6091db31ab425a81",
+          "untimedTranscriptDriveId": "115ZX2vUK1jKiFFxUsBQpgkT6UuzuqHgi",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/115ZX2vUK1jKiFFxUsBQpgkT6UuzuqHgi/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3809,7 +3874,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 57827,
+          "untimedTranscriptWordsApprox": 11146,
+          "untimedTranscriptSha256": "6cdb36519cd79f25197ebdaa5ed2f07a70400163bdccccb9c13dbab7ef82924c",
+          "untimedTranscriptDriveId": "1IfiT0ZAI45sidcDuFujD1hTaK5FPxGrh",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1IfiT0ZAI45sidcDuFujD1hTaK5FPxGrh/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3841,7 +3919,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 201884,
+          "untimedTranscriptWordsApprox": 37721,
+          "untimedTranscriptSha256": "d6b60e2f15dccc66d03ce367e531533a89264dec575ca585b95260dc351e5708",
+          "untimedTranscriptDriveId": "1G2QlNvPseDWauXRAvK7OFKfAGQAxhe-9",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1G2QlNvPseDWauXRAvK7OFKfAGQAxhe-9/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3873,7 +3964,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 249150,
+          "untimedTranscriptWordsApprox": 43485,
+          "untimedTranscriptSha256": "cc70ea2206c8aab45444ce9ec37308d0f7cd3bf35c7d2b61ff955188555181da",
+          "untimedTranscriptDriveId": "1HjhqJoWozziDTqHwASm0xsyTA6YbWEaZ",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1HjhqJoWozziDTqHwASm0xsyTA6YbWEaZ/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3905,7 +4009,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 13530,
+          "untimedTranscriptWordsApprox": 2235,
+          "untimedTranscriptSha256": "cd491d21c6003b281a0242056115ed5626ed4e22086201a3c47affa3b8555368",
+          "untimedTranscriptDriveId": "11Obb5Tk6gGNSA-Jn13OWzwsb3vPt291S",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/11Obb5Tk6gGNSA-Jn13OWzwsb3vPt291S/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": true,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3937,7 +4054,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 31067,
+          "untimedTranscriptWordsApprox": 4888,
+          "untimedTranscriptSha256": "4e6e1ddff098b7c2b67ceb585b8f3d7dec51c4a879f552dc340a2095b0c3c79b",
+          "untimedTranscriptDriveId": "1ThwFuVOj13DzwVQbZPbzhzhpcIuc6Ho-",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1ThwFuVOj13DzwVQbZPbzhzhpcIuc6Ho-/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -3969,7 +4099,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 160477,
+          "untimedTranscriptWordsApprox": 30292,
+          "untimedTranscriptSha256": "c2b3c30e97fa1708730c0d403834c07f82090729f95ea2d049e1fd4efcda7997",
+          "untimedTranscriptDriveId": "1sXa0X1ahK9uLflqhv0ZurgwesnNfSIwn",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1sXa0X1ahK9uLflqhv0ZurgwesnNfSIwn/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4001,7 +4144,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 13502,
+          "untimedTranscriptWordsApprox": 2273,
+          "untimedTranscriptSha256": "85f71069257225fe5dd2f607b5556a2af46a3c60cbdc86ace910e201146c8d45",
+          "untimedTranscriptDriveId": "1ualt5nWaUtwTzU8GeUAPCrb26qyJENiK",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1ualt5nWaUtwTzU8GeUAPCrb26qyJENiK/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": true,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4033,7 +4189,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 118303,
+          "untimedTranscriptWordsApprox": 22184,
+          "untimedTranscriptSha256": "a69923e9b111b25c820b98a5ec90622dbf8c3fea7c0e196a444d2aec7c75573d",
+          "untimedTranscriptDriveId": "1Y0hyH_5MjgqNYC0ELGFGAMaLDQMPatjI",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1Y0hyH_5MjgqNYC0ELGFGAMaLDQMPatjI/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4065,7 +4234,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 172600,
+          "untimedTranscriptWordsApprox": 32254,
+          "untimedTranscriptSha256": "05bce7d21ca943ff5a8cfc8578b155bc32ee145f3859297bb9fd05ed9b818164",
+          "untimedTranscriptDriveId": "1sDU2lwKzYcmOQGEKM_UAVlKZkkWT3oWh",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1sDU2lwKzYcmOQGEKM_UAVlKZkkWT3oWh/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4128,7 +4310,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 85732,
+          "untimedTranscriptWordsApprox": 16199,
+          "untimedTranscriptSha256": "3bc0f47051819736895fea0aa71061b43e0bf765a7c93c0293f673bfc29737e8",
+          "untimedTranscriptDriveId": "1rGXTeaw1uJsS35ImvyOC9oUPs7K5M5nc",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1rGXTeaw1uJsS35ImvyOC9oUPs7K5M5nc/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4224,7 +4419,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 251787,
+          "untimedTranscriptWordsApprox": 49185,
+          "untimedTranscriptSha256": "b5236bc8ccaa08fbc4181a3c408cbd53a1afead81f5c304196a00e41ed55b111",
+          "untimedTranscriptDriveId": "1gZXY198Z8ysMkf8XIq8SxQsMETZNISr7",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1gZXY198Z8ysMkf8XIq8SxQsMETZNISr7/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4256,7 +4464,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 136195,
+          "untimedTranscriptWordsApprox": 25975,
+          "untimedTranscriptSha256": "68a62a24b65b2df1ee2cfc92533e3355adcaed680d9dba202970088829774959",
+          "untimedTranscriptDriveId": "1ZbDZHewtATV5pjnSYT-q5cLaDDeL6eYB",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1ZbDZHewtATV5pjnSYT-q5cLaDDeL6eYB/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4288,7 +4509,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 235957,
+          "untimedTranscriptWordsApprox": 44374,
+          "untimedTranscriptSha256": "48b40fc65451c5e0862485772f929e65d97158022905656c28a176555a0687b1",
+          "untimedTranscriptDriveId": "1-7CVLp-4VsgBuB9AA6bB4TPU9WgQgur8",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1-7CVLp-4VsgBuB9AA6bB4TPU9WgQgur8/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4320,7 +4554,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 52911,
+          "untimedTranscriptWordsApprox": 9780,
+          "untimedTranscriptSha256": "cbb9eecb3d48119b60441d0f1db9075ebb4821a489336660a1a68e8f5ab5e954",
+          "untimedTranscriptDriveId": "16iQ5AsHlP-Z1rLG_tK7vdoRU6rhP6FTM",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/16iQ5AsHlP-Z1rLG_tK7vdoRU6rhP6FTM/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4352,7 +4599,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 101437,
+          "untimedTranscriptWordsApprox": 19538,
+          "untimedTranscriptSha256": "cc7cc5c0da68e6362db4b6cd8a4fe92187eef356a190311ccd773d3cbcae5d6a",
+          "untimedTranscriptDriveId": "1FQXHGFQXnXHHGlom7SJvNGjm6ULhBly5",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1FQXHGFQXnXHHGlom7SJvNGjm6ULhBly5/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4384,7 +4644,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 52575,
+          "untimedTranscriptWordsApprox": 9861,
+          "untimedTranscriptSha256": "b40c48381ccc4b26d8375eb96918e2047aa5749badb2f7ca35c6bb1d087fe349",
+          "untimedTranscriptDriveId": "1Q4TNj3NsFyHBys9dii1pVTV4k6Q9bquD",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1Q4TNj3NsFyHBys9dii1pVTV4k6Q9bquD/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4416,7 +4689,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 89321,
+          "untimedTranscriptWordsApprox": 16263,
+          "untimedTranscriptSha256": "eed2c5f83e55fa02e7100f42e09dd4e14ed9189a91a380745133b53694960869",
+          "untimedTranscriptDriveId": "1JA1yAOmYt_lFLh_snazygMzdKX304EfR",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1JA1yAOmYt_lFLh_snazygMzdKX304EfR/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4448,7 +4734,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 129129,
+          "untimedTranscriptWordsApprox": 23363,
+          "untimedTranscriptSha256": "9cb89ef6d1bf13412bfbe116df83c031dde41ef0a4797d9a25c4046b775644be",
+          "untimedTranscriptDriveId": "1vdMHjOai_3mJkdXDwonm3mQeFXbwC718",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1vdMHjOai_3mJkdXDwonm3mQeFXbwC718/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4480,7 +4779,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 38132,
+          "untimedTranscriptWordsApprox": 7075,
+          "untimedTranscriptSha256": "0eca8445e6b2595409c84c404acb3c92ef1828b266411feba0982cfb37f63440",
+          "untimedTranscriptDriveId": "1vJsOusN8L-Gz22DujumpNqXTiJRsaAJy",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1vJsOusN8L-Gz22DujumpNqXTiJRsaAJy/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4512,7 +4824,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 16112,
+          "untimedTranscriptWordsApprox": 3036,
+          "untimedTranscriptSha256": "f7b4106646379075d1904461a2dfdb9912bce3c8d5892ecb4c9572ecd8c5c0f8",
+          "untimedTranscriptDriveId": "1LIQn-L3ysXLkrHZZ6bmOMmU-lDsHxk34",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1LIQn-L3ysXLkrHZZ6bmOMmU-lDsHxk34/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4544,7 +4869,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 116068,
+          "untimedTranscriptWordsApprox": 21476,
+          "untimedTranscriptSha256": "9b7c661ea48f3af0df3cba4cf3b8d53ce6daceec1c3709b0be696a9f0cd48d48",
+          "untimedTranscriptDriveId": "1AebmGyeuVVnJt-FlDIUweb4_4X5TVW5A",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1AebmGyeuVVnJt-FlDIUweb4_4X5TVW5A/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4576,7 +4914,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 10523,
+          "untimedTranscriptWordsApprox": 2011,
+          "untimedTranscriptSha256": "63a92d98adb55f044c8ddba7a4908a87ac159415c97e9406b6739ce01cda416f",
+          "untimedTranscriptDriveId": "1qnhBBzr8Cx2c4Ux2N77abXl86bjMogIG",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1qnhBBzr8Cx2c4Ux2N77abXl86bjMogIG/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": true,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4608,7 +4959,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 16335,
+          "untimedTranscriptWordsApprox": 2761,
+          "untimedTranscriptSha256": "7aefd344f7d8a912fcdbb58b76dca40e68bf2a77be5dee5629e5b2337de77890",
+          "untimedTranscriptDriveId": "1l7AlHJm8C1byWuZWh8W55tBRCP3L7yB2",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1l7AlHJm8C1byWuZWh8W55tBRCP3L7yB2/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4640,7 +5004,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 12953,
+          "untimedTranscriptWordsApprox": 2127,
+          "untimedTranscriptSha256": "a13be7f4e5cf3021f504814272d412fe5c304167c211645f017612c75f653762",
+          "untimedTranscriptDriveId": "1TQc0jfUbu1VhtxexksLvaPaTnaPiDHZx",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1TQc0jfUbu1VhtxexksLvaPaTnaPiDHZx/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": true,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4672,7 +5049,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 13973,
+          "untimedTranscriptWordsApprox": 2326,
+          "untimedTranscriptSha256": "995b0a44729fb9fc8c272930c07817b22a2530e2d2d0464cc6551bed9aed2979",
+          "untimedTranscriptDriveId": "1aBNByzhD8ClC0JmO-TvC0sgC0NlvsnOn",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1aBNByzhD8ClC0JmO-TvC0sgC0NlvsnOn/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": true,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4735,7 +5125,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 24493,
+          "untimedTranscriptWordsApprox": 4169,
+          "untimedTranscriptSha256": "bf6ddf2bdae9867807a4544b902c2262afeef367a7c111b16eb3390e2c8448d2",
+          "untimedTranscriptDriveId": "1JOI468D_mUf_Wf235Ua5HkAh7WC7Z_Im",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1JOI468D_mUf_Wf235Ua5HkAh7WC7Z_Im/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4767,7 +5170,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 112829,
+          "untimedTranscriptWordsApprox": 21773,
+          "untimedTranscriptSha256": "cdf9015ec0a539510a05cb46f3a6b0f837bf203553426deec815e3618bbc548e",
+          "untimedTranscriptDriveId": "1df1ZYMb3nzvzhkucbS1NeSWCXwRcpawl",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1df1ZYMb3nzvzhkucbS1NeSWCXwRcpawl/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4799,7 +5215,20 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 125314,
+          "untimedTranscriptWordsApprox": 23143,
+          "untimedTranscriptSha256": "1d7abfc5927c3a33ccf0dcb539dfa4acc12d2123329c74fd0da713c9d9e65bd9",
+          "untimedTranscriptDriveId": "1BbwFotXrQgQyiYvk5OtGfyEpM3w-6Vd7",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1BbwFotXrQgQyiYvk5OtGfyEpM3w-6Vd7/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -4831,7 +5260,20 @@
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-12",
+          "untimedTranscriptStoredInDrive": true,
+          "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
+          "untimedTranscriptAudioVerified": false,
+          "untimedTranscriptCompletenessVerified": false,
+          "untimedTranscriptTimecodesAvailable": false,
+          "untimedTranscriptCharacters": 99744,
+          "untimedTranscriptWordsApprox": 18674,
+          "untimedTranscriptSha256": "2e1f648f769aabdbb941d8d29ac54c3ef88ef7ce10aac812cd285d3b5043eb1f",
+          "untimedTranscriptDriveId": "1Zdx1Nd5CDYEo3kMkSjZx4W0eFJeQuhCa",
+          "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1Zdx1Nd5CDYEo3kMkSjZx4W0eFJeQuhCa/view?usp=drivesdk",
+          "untimedTranscriptImportedAt": "2026-11-12",
+          "untimedTranscriptNeedsPriorityIntegrityCheck": false,
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
         },
         "analysisCoverage": {
           "percent": 51,
@@ -4930,6 +5372,72 @@
       "coverageNote": "No gaps longer than 30 seconds found by caption extraction; automatic timecode coverage does not certify transcription accuracy or speaker identification.",
       "legacyDocumentStatePreserved": true,
       "note": "El campo histórico transcriptContentImported se refiere al contenido del Google Doc original. Los TXT completos con minutaje se registran por separado como timecodedTranscriptStoredInDrive + timecodedTranscriptReadbackVerified."
+    },
+    "untimedTranscriptBatch": {
+      "asOf": "2026-11-12",
+      "source": "User-provided TELARANA_69_FUENTES.zip",
+      "auditDriveId": "15fUAtNYuivjyaPUlf8iS22gfknoKoiu6",
+      "count": 34,
+      "allVideoSourcesWithSomeText": 62,
+      "timecodedSources": 28,
+      "untimedSources": 34,
+      "duplicateCatalogEntriesExcluded": [
+        36,
+        46,
+        65
+      ],
+      "nonAudiovisualCatalogEntries": [
+        5,
+        15,
+        48,
+        49
+      ],
+      "audioVerification": "none",
+      "transcriptCompletenessVerified": false,
+      "shortSourcesToInspect": [
+        40,
+        43,
+        61,
+        63,
+        64
+      ],
+      "uploadedCanonicalSourceOrders": [
+        25,
+        32,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66,
+        67,
+        68,
+        69
+      ],
+      "policy": "Keep untimed NotebookLM text distinct from timecoded transcripts; do not promote source allegations to verified facts; do not mark editorial review complete when text is merely recovered."
     }
   },
   "editorialQualityAudit": {
@@ -5523,6 +6031,287 @@
       36,
       46,
       65
+    ],
+    "materialAvailable": {
+      "videosTotal": 62,
+      "withTimecodedCaptions": 28,
+      "withUntimedCaptionTextOnly": 34,
+      "withNoText": 0,
+      "reviewAudioVerified": 0
+    },
+    "untimedTextBacklog": [
+      {
+        "sourceOrder": 64,
+        "percent": 0,
+        "characters": 13973,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 40,
+        "percent": 0,
+        "characters": 13530,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 43,
+        "percent": 0,
+        "characters": 13502,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 63,
+        "percent": 0,
+        "characters": 12953,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 61,
+        "percent": 0,
+        "characters": 10523,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "check possible truncation",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 50,
+        "percent": 0,
+        "characters": 251787,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 39,
+        "percent": 0,
+        "characters": 249150,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 52,
+        "percent": 0,
+        "characters": 235957,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 38,
+        "percent": 0,
+        "characters": 201884,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 45,
+        "percent": 0,
+        "characters": 172600,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 32,
+        "percent": 0,
+        "characters": 169597,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 42,
+        "percent": 0,
+        "characters": 160477,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 51,
+        "percent": 0,
+        "characters": 136195,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 34,
+        "percent": 0,
+        "characters": 135278,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 57,
+        "percent": 0,
+        "characters": 129129,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 68,
+        "percent": 0,
+        "characters": 125314,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 44,
+        "percent": 0,
+        "characters": 118303,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 60,
+        "percent": 0,
+        "characters": 116068,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 67,
+        "percent": 0,
+        "characters": 112829,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 54,
+        "percent": 0,
+        "characters": 101437,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 56,
+        "percent": 0,
+        "characters": 89321,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 47,
+        "percent": 0,
+        "characters": 85732,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 37,
+        "percent": 0,
+        "characters": 57827,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 53,
+        "percent": 0,
+        "characters": 52911,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 55,
+        "percent": 0,
+        "characters": 52575,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 58,
+        "percent": 0,
+        "characters": 38132,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 41,
+        "percent": 0,
+        "characters": 31067,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 33,
+        "percent": 0,
+        "characters": 24879,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 66,
+        "percent": 0,
+        "characters": 24493,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 35,
+        "percent": 0,
+        "characters": 20732,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 62,
+        "percent": 0,
+        "characters": 16335,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 59,
+        "percent": 0,
+        "characters": 16112,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 69,
+        "percent": 51,
+        "characters": 99744,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      },
+      {
+        "sourceOrder": 25,
+        "percent": 53,
+        "characters": 162780,
+        "textType": "NotebookLM without timecodes",
+        "qaPriority": "normal",
+        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+      }
     ]
   }
 }
