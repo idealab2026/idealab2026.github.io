@@ -6,12 +6,15 @@ window.IDEA_TELARANA_F26_REVIEW = {
     "sourceOrder": 26,
     "url": "https://www.youtube.com/watch?v=FVSBeP6L8lw",
     "publishedAt": "2026-06-11",
-    "reviewStage": "sinopsis_publica_cotejada_documentos_externos_sin_transcripcion",
-    "transcriptAvailable": false,
+    "reviewStage": "transcripcion_cronometrada_recuperada_revision_editorial_en_curso",
+    "transcriptAvailable": true,
     "transcriptStoredPrivately": false,
     "audioVerified": false,
     "verifiedMinuteReferences": 0,
-    "methodologicalNote": "La descripción de Minimal Studio identifica invitado y temas, pero no permite reconstruir las intervenciones, los minutos ni acusaciones concretas. AI Act y calendario son contexto legislativo externo, no afirmaciones validadas del entrevistado."
+    "methodologicalNote": "Se ha recuperado un TXT de subtítulos con marcas de tiempo en el Drive institucional privado (2289 segmentos hasta 01:11:08). Los subtítulos no están cotejados con el audio y su recepción no convierte afirmaciones de la entrevista en hechos probados. Permanecen vigentes las cautelas de procedencia y las verificaciones externas ya documentadas.",
+    "transcriptSegments": 2289,
+    "transcriptLastTimestamp": "01:11:08",
+    "fullTranscriptPreservedInDrive": true
   },
   "nodes": [
     {
