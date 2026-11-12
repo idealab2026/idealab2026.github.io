@@ -97,7 +97,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "interpretacion_historica_atribuida",
-          "text": "El invitado advierte contra tratar tres milenios de historia egipcia como un periodo homogéneo y comenta diferencias entre reinos, dinastías y técnicas constructivas. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 12707; buscar «Egipto». Sin minuto ni audio cotejado."
+          "text": "El invitado advierte contra tratar tres milenios de historia egipcia como un periodo homogéneo y comenta diferencias entre reinos, dinastías y técnicas constructivas. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 12707; buscar «Egipto». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 12707
         }
       ]
     },
@@ -118,7 +119,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "interpretacion_historica_atribuida",
-          "text": "La conversación examina técnicas de cantería, transporte y construcción, y cuestiona explicaciones basadas exclusivamente en esclavitud o intervención extraterrestre. No determina el método exacto para todos los monumentos. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 496; buscar «pirámides». Sin minuto ni audio cotejado."
+          "text": "La conversación examina técnicas de cantería, transporte y construcción, y cuestiona explicaciones basadas exclusivamente en esclavitud o intervención extraterrestre. No determina el método exacto para todos los monumentos. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 12167; buscar «pirámides». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 12167
         }
       ]
     },
@@ -139,7 +141,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "hipotesis_historica_no_demostrada",
-          "text": "Miguel de Lys discute las atribuciones modernas de la Atlántida y distingue la tradición de Platón de evidencias materiales de una civilización perdida. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 539; buscar «Atlántida». Sin minuto ni audio cotejado."
+          "text": "Miguel de Lys discute las atribuciones modernas de la Atlántida y distingue la tradición de Platón de evidencias materiales de una civilización perdida. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 92563; buscar «Atlántida». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 92563
         }
       ]
     },
@@ -307,7 +310,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "critica_cinematografica_atribuida",
-          "text": "Miguel de Lys comenta detalles y anacronismos que atribuye a la película Napoleón, separando la licencia dramática de la reconstrucción documental. Algunas críticas concretas quedan pendientes de comprobar en el filme. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 32509; buscar «Napoleón». Sin minuto ni audio cotejado."
+          "text": "Miguel de Lys comenta detalles y anacronismos que atribuye a la película Napoleón, separando la licencia dramática de la reconstrucción documental. Algunas críticas concretas quedan pendientes de comprobar en el filme. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 200732; buscar «Napoleón». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 200732
         }
       ]
     },
@@ -349,7 +353,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "generalizacion_historiografica_cuestionada",
-          "text": "Se discute el tópico de un milenio de oscuridad uniforme, incidiendo en diferencias regionales, etapas culturales y exageraciones sobre vida cotidiana e higiene. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 1164; buscar «Edad Media». Sin minuto ni audio cotejado."
+          "text": "Se discute el tópico de un milenio de oscuridad uniforme, incidiendo en diferencias regionales, etapas culturales y exageraciones sobre vida cotidiana e higiene. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 149925; buscar «Edad Media». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 149925
         }
       ]
     },
@@ -370,7 +375,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "divulgacion_historica_atribuida",
-          "text": "El invitado desmonta estereotipos sobre vikingos: no los reduce a saqueadores, subraya intercambios y comenta el anacronismo de cascos con cuernos en su representación habitual. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 1138; buscar «vikingos». Sin minuto ni audio cotejado."
+          "text": "El invitado desmonta estereotipos sobre vikingos: no los reduce a saqueadores, subraya intercambios y comenta el anacronismo de cascos con cuernos en su representación habitual. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 103044; buscar «vikingos». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 103044
         }
       ]
     },
@@ -454,7 +460,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "interpretacion_historica_atribuida",
-          "text": "Se discute cómo los testimonios judiciales y la ficción, como La isla del tesoro, influyeron en la representación posterior de piratas. La procedencia y motivaciones individuales no quedan verificadas por la entrevista. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 1127; buscar «piratas». Sin minuto ni audio cotejado."
+          "text": "Se discute cómo los testimonios judiciales y la ficción, como La isla del tesoro, influyeron en la representación posterior de piratas. La procedencia y motivaciones individuales no quedan verificadas por la entrevista. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 178240; buscar «piratas». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 178240
         }
       ]
     },
@@ -496,7 +503,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "distincion_historica_contextual",
-          "text": "La conversación diferencia procesos por brujería europeos del caso colonial de Salem; equiparar todas las ejecuciones a hogueras o al mismo sistema judicial sería incorrecto. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 1182; buscar «brujas». Sin minuto ni audio cotejado."
+          "text": "La conversación diferencia procesos por brujería europeos del caso colonial de Salem; equiparar todas las ejecuciones a hogueras o al mismo sistema judicial sería incorrecto. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 130377; buscar «brujas». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 130377
         }
       ]
     },
@@ -580,7 +588,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "personaje_legendario_en_fuente",
-          "text": "Se alude a la estética de Ragnar en representaciones audiovisuales. Una figura legendaria no puede utilizarse como evidencia directa de la apariencia de todos los vikingos históricos. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 120530; buscar «ragnar». Sin minuto ni audio cotejado."
+          "text": "Se alude a la estética de Ragnar en representaciones audiovisuales. Una figura legendaria no puede utilizarse como evidencia directa de la apariencia de todos los vikingos históricos. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 120530; buscar «ragnar». Sin minuto ni audio cotejado.",
+          "transcriptCharOffset": 120530
         }
       ]
     }
@@ -631,7 +640,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "mencion_editorial_no_vinculo_causal",
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
-      "note": "El archivo textual F50 contiene «pirámides» aproximadamente en el carácter 496. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
+      "note": "El archivo textual F50 contiene «pirámides» aproximadamente en el carácter 12167. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
       "podcastNotes": []
     },
     {
@@ -643,7 +652,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "mencion_editorial_no_vinculo_causal",
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
-      "note": "El archivo textual F50 contiene «Atlántida» aproximadamente en el carácter 539. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
+      "note": "El archivo textual F50 contiene «Atlántida» aproximadamente en el carácter 92563. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
       "podcastNotes": []
     },
     {
@@ -739,7 +748,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "mencion_editorial_no_vinculo_causal",
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
-      "note": "El archivo textual F50 contiene «Napoleón» aproximadamente en el carácter 32509. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
+      "note": "El archivo textual F50 contiene «Napoleón» aproximadamente en el carácter 200732. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
       "podcastNotes": []
     },
     {
@@ -763,7 +772,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "mencion_editorial_no_vinculo_causal",
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
-      "note": "El archivo textual F50 contiene «Edad Media» aproximadamente en el carácter 1164. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
+      "note": "El archivo textual F50 contiene «Edad Media» aproximadamente en el carácter 149925. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
       "podcastNotes": []
     },
     {
@@ -775,7 +784,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "mencion_editorial_no_vinculo_causal",
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
-      "note": "El archivo textual F50 contiene «vikingos» aproximadamente en el carácter 1138. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
+      "note": "El archivo textual F50 contiene «vikingos» aproximadamente en el carácter 103044. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
       "podcastNotes": []
     },
     {
@@ -823,7 +832,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "mencion_editorial_no_vinculo_causal",
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
-      "note": "El archivo textual F50 contiene «piratas» aproximadamente en el carácter 1127. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
+      "note": "El archivo textual F50 contiene «piratas» aproximadamente en el carácter 178240. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
       "podcastNotes": []
     },
     {
@@ -847,7 +856,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "mencion_editorial_no_vinculo_causal",
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
-      "note": "El archivo textual F50 contiene «brujas» aproximadamente en el carácter 1182. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
+      "note": "El archivo textual F50 contiene «brujas» aproximadamente en el carácter 130377. Este enlace documenta un tema del episodio, no una interacción histórica probada entre actores.",
       "podcastNotes": []
     },
     {
