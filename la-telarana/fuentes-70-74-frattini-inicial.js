@@ -555,8 +555,25 @@ window.IDEA_TELARANA_F71_REVIEW = {
     "lastMarker": "02:14:02",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "primera_lectura_tematico_documental_no_exhaustiva",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra."
+    "reviewStage": "segunda_revision_historia_medica_y_muerte_con_verificacion_documental",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado.",
+    "independentDocumentaryRelations": 7,
+    "crossSourceLinks": [
+      74,
+      13,
+      69
+    ],
+    "selectedSubtitleTimeAnchors": [
+      1539,
+      1577,
+      2385,
+      2636,
+      5034,
+      5902,
+      7107,
+      7153
+    ],
+    "explicitContradictionReviews": 2
   },
   "nodes": [
     {
@@ -570,7 +587,44 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "photo": "",
       "x": 11400,
       "y": 4000,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 1577,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=1577s",
+          "status": "contradiccion",
+          "text": "En ≈26:17 la transcripción atribuye a Frattini que Morell seguía en el búnker cuando Hitler se suicidó. La reconstrucción histórica sitúa su salida de Berlín el 22–23/04/1945, una semana antes del suicidio del 30/04/1945. Es una afirmación histórica incorrecta, pendiente de cotejo audiovisual."
+        },
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 5034,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=5034s",
+          "status": "alegacion_no_verificada",
+          "text": "En ≈01:23:54 la fuente opina que Hitler pudo ser homosexual o bisexual. No consta una evidencia histórica sólida que permita establecer una orientación sexual como hecho; se conserva como especulación atribuida, sin vínculo factual."
+        },
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 7107,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=7107s",
+          "status": "alegacion_no_verificada",
+          "text": "En ≈01:58:27 se plantea 50/50 acerca de un posible escape a Argentina. La valoración del invitado no representa una estimación probabilística documentada y contradice la convergencia histórica y forense sobre la muerte en Berlín."
+        },
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 2385,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=2385s",
+          "status": "opinion_atribuida",
+          "text": "En ≈39:45 la entrevista atribuye cambios de carácter a la medicación de Morell. La literatura médica reconoce polifarmacia; no establece que esos tratamientos expliquen causalmente decisiones políticas o asesinatos masivos."
+        }
+      ]
     },
     {
       "id": "f71-eric",
@@ -709,6 +763,157 @@ window.IDEA_TELARANA_F71_REVIEW = {
           "text": "La entrevista plantea dudas y menciona la hipótesis de una huida a Argentina. No se publica como hecho: la explicación histórica aceptada es que Hitler murió en Berlín en 1945."
         }
       ]
+    },
+    {
+      "id": "f71-historial-morell",
+      "name": "Registros médicos de Theodor Morell",
+      "kind": "Documentación histórica",
+      "subtitle": "Anotaciones clínicas de tratamientos de Hitler realizadas por su médico personal, examinadas por historiadores y médicos.",
+      "note": "Anotaciones clínicas de tratamientos de Hitler realizadas por su médico personal, examinadas por historiadores y médicos. La entrevista menciona haber obtenido los diarios de Morell (≈25:39). La existencia de registros y medicamentos está tratada en investigación médica histórica. Un registro de administración no equivale a un diagnóstico psiquiátrico completo ni demuestra causalidad política.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15825245/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 1539,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=1539s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "La entrevista menciona haber obtenido los diarios de Morell (≈25:39). La existencia de registros y medicamentos está tratada en investigación médica histórica. Un registro de administración no equivale a un diagnóstico psiquiátrico completo ni demuestra causalidad política."
+        }
+      ]
+    },
+    {
+      "id": "f71-pervitin",
+      "name": "Pervitin (metanfetamina)",
+      "kind": "Fármaco histórico",
+      "subtitle": "Preparado comercial de metanfetamina introducido en Alemania en 1938, suministrado también a militares durante la Segunda Guerra Mundial.",
+      "note": "Preparado comercial de metanfetamina introducido en Alemania en 1938, suministrado también a militares durante la Segunda Guerra Mundial. Frattini habla de Pervitin y metanfetamina en torno a 43:56–44:12; estudios históricos documentan uso social y militar, pero no prueban que la sustancia determinase los resultados militares o los crímenes del régimen.",
+      "source": "https://doi.org/10.1093/shm/hkq101",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 2636,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=2636s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "Frattini habla de Pervitin y metanfetamina en torno a 43:56–44:12; estudios históricos documentan uso social y militar, pero no prueban que la sustancia determinase los resultados militares o los crímenes del régimen."
+        }
+      ]
+    },
+    {
+      "id": "f71-wehrmacht",
+      "name": "Wehrmacht",
+      "kind": "Institución militar",
+      "subtitle": "Fuerzas armadas de la Alemania nazi (1935–1945).",
+      "note": "Fuerzas armadas de la Alemania nazi (1935–1945). Documentos históricos describen administración de Pervitin a soldados para reducir fatiga y vigilia; no permite atribuir el éxito militar a un único factor farmacológico.",
+      "source": "https://germanhistorydocs.org/en/nazi-germany-1933-1945/drugs-for-the-wehrmacht-c-1940",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 2636,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=2636s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "Documentos históricos describen administración de Pervitin a soldados para reducir fatiga y vigilia; no permite atribuir el éxito militar a un único factor farmacológico."
+        }
+      ]
+    },
+    {
+      "id": "f71-trevor-roper",
+      "name": "Hugh Trevor-Roper",
+      "kind": "Persona",
+      "subtitle": "Historiador británico y oficial de inteligencia que investigó el final de Hitler para los aliados.",
+      "note": "Historiador británico y oficial de inteligencia que investigó el final de Hitler para los aliados. F71, en ≈01:59:13, menciona su reconstrucción. Los Archivos Nacionales estadounidenses conservan una investigación de 1945 basada en testimonios. La fiabilidad de cada testigo no debe confundirse con una teoría de fuga no demostrada.",
+      "source": "https://text-message.blogs.archives.gov/2015/12/23/hunting-hitler-part-viii-the-search-ends/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 7153,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=7153s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "F71, en ≈01:59:13, menciona su reconstrucción. Los Archivos Nacionales estadounidenses conservan una investigación de 1945 basada en testimonios. La fiabilidad de cada testigo no debe confundirse con una teoría de fuga no demostrada."
+        }
+      ]
+    },
+    {
+      "id": "f71-geli-raubal",
+      "name": "Geli Raubal",
+      "kind": "Persona",
+      "subtitle": "Angela Maria Raubal, sobrina de Adolf Hitler fallecida en Múnich en 1931.",
+      "note": "Angela Maria Raubal, sobrina de Adolf Hitler fallecida en Múnich en 1931. F71 comenta en ≈01:38:22 la relación familiar y presenta interpretaciones de su vida privada y muerte. No se tratan las conjeturas sobre motivaciones ni supuestos abusos como hechos judicial o documentalmente probados.",
+      "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=5902s",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 5902,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=5902s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "F71 comenta en ≈01:38:22 la relación familiar y presenta interpretaciones de su vida privada y muerte. No se tratan las conjeturas sobre motivaciones ni supuestos abusos como hechos judicial o documentalmente probados."
+        }
+      ]
+    },
+    {
+      "id": "f71-identificacion-dental",
+      "name": "Identificación odontológica de Hitler",
+      "kind": "Evidencia forense",
+      "subtitle": "Análisis de mandíbulas, dientes, prótesis y radiografías históricas para identificar restos de Adolf Hitler.",
+      "note": "Análisis de mandíbulas, dientes, prótesis y radiografías históricas para identificar restos de Adolf Hitler. El artículo de Charlier et al. (2018) describe un examen independiente de restos dentales atribuidos a Hitler en archivos rusos; la coincidencia con documentación odontológica sustenta su muerte en Berlín. No se equipara el fragmento de cráneo examinado en otra investigación con la mandíbula.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/29779904/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 7107,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=7107s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "El artículo de Charlier et al. (2018) describe un examen independiente de restos dentales atribuidos a Hitler en archivos rusos; la coincidencia con documentación odontológica sustenta su muerte en Berlín. No se equipara el fragmento de cráneo examinado en otra investigación con la mandíbula."
+        }
+      ]
+    },
+    {
+      "id": "f71-blaschke",
+      "name": "Hugo Blaschke",
+      "kind": "Persona",
+      "subtitle": "Odontólogo de Hitler y responsable de parte de sus tratamientos dentales y prótesis.",
+      "note": "Odontólogo de Hitler y responsable de parte de sus tratamientos dentales y prótesis. Investigaciones forenses publicadas en 2018 y 2026 conectan prótesis y registros dentales con el trabajo de Blaschke. Contexto documental para evaluar lo dicho por la entrevista sobre radiografías, no declaración atribuida a Frattini sobre este dentista.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -794,6 +999,188 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
       "episodeId": "idealab-f71-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-mention-diario",
+      "a": "f71-episodio",
+      "b": "f71-historial-morell",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=1539s",
+      "episodeId": "idealab-f71-frattini",
+      "note": "En ≈25:39 Frattini afirma haber obtenido los diarios de Morell; la existencia de material médico está documentada, pero su acceso concreto y exhaustividad no se verifican con la entrevista.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 1539,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=1539s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈25:39 Frattini afirma haber obtenido los diarios de Morell; la existencia de material médico está documentada, pero su acceso concreto y exhaustividad no se verifican con la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f71-mention-pervitin",
+      "a": "f71-episodio",
+      "b": "f71-pervitin",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=2636s",
+      "episodeId": "idealab-f71-frattini",
+      "note": "En ≈43:56 habla del uso y comercialización de Pervitin, cuya presencia en Alemania nazi está documentada; su extensión exacta y efectos causales por persona no quedan demostrados.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 2636,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=2636s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈43:56 habla del uso y comercialización de Pervitin, cuya presencia en Alemania nazi está documentada; su extensión exacta y efectos causales por persona no quedan demostrados."
+        }
+      ]
+    },
+    {
+      "id": "f71-mention-trevor",
+      "a": "f71-episodio",
+      "b": "f71-trevor-roper",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=7153s",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La entrevista cuestiona la investigación de Trevor-Roper sobre la muerte de Hitler; se conserva la crítica como opinión, sin adoptar como hecho una fuga.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 7153,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=7153s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "La entrevista cuestiona la investigación de Trevor-Roper sobre la muerte de Hitler; se conserva la crítica como opinión, sin adoptar como hecho una fuga."
+        }
+      ]
+    },
+    {
+      "id": "f71-mention-geli",
+      "a": "f71-episodio",
+      "b": "f71-geli-raubal",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=5902s",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Frattini refiere relatos sobre Geli Raubal, su vida privada y suicidio; no se considera probado el origen de su muerte ni las interpretaciones sexuales de Hitler.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 5902,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=5902s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "Frattini refiere relatos sobre Geli Raubal, su vida privada y suicidio; no se considera probado el origen de su muerte ni las interpretaciones sexuales de Hitler."
+        }
+      ]
+    },
+    {
+      "id": "f71-mention-dental",
+      "a": "f71-episodio",
+      "b": "f71-identificacion-dental",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=7107s",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Al dudar de la muerte en el búnker, el episodio no evalúa de modo exhaustivo toda la literatura odontológica de identificación de restos.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f71-frattini",
+          "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
+          "publishedAt": "2025-03-06",
+          "timeSec": 7107,
+          "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=7107s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "Al dudar de la muerte en el búnker, el episodio no evalúa de modo exhaustivo toda la literatura odontológica de identificación de restos."
+        }
+      ]
+    },
+    {
+      "id": "f71-doc-morell-hitler",
+      "a": "f71-morell",
+      "b": "f71-hitler",
+      "type": "Médico personal documentado del dictador",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15825245/",
+      "episodeId": "idealab-f71-frattini",
+      "note": "D. Doyle, Journal of the Royal College of Physicians of Edinburgh (2005), resume la actividad de Morell como médico personal durante los últimos nueve años de Hitler, con fármacos recogidos en fuentes clínicas históricas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-diarios-medicos",
+      "a": "f71-morell",
+      "b": "f71-historial-morell",
+      "type": "Historia clínica y registros atribuidos a Morell",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15825245/",
+      "episodeId": "idealab-f71-frattini",
+      "note": "El artículo médico de 2005 sintetiza observaciones de Morell y sus diarios, con problemas de evaluación retrospectiva. Los registros sustentan administración de fármacos, pero no prueban que Morell determinara decisiones criminales de Hitler.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-pervitin-wehrmacht",
+      "a": "f71-pervitin",
+      "b": "f71-wehrmacht",
+      "type": "Uso militar del estimulante en la Alemania nazi",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://germanhistorydocs.org/en/nazi-germany-1933-1945/drugs-for-the-wehrmacht-c-1940",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La colección German History in Documents and Images documenta el Pervitin en el ejército, con fines de vigilia y reducción de cansancio; su uso no demuestra una causa única de la Blitzkrieg.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-trevor-hitler",
+      "a": "f71-trevor-roper",
+      "b": "f71-hitler",
+      "type": "Investigación británica sobre la muerte de Hitler en 1945",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://text-message.blogs.archives.gov/2015/12/23/hunting-hitler-part-viii-the-search-ends/",
+      "episodeId": "idealab-f71-frattini",
+      "note": "El National Archives estadounidense conserva comunicaciones del trabajo de investigación de Trevor-Roper en 1945 sobre el destino de Hitler. Confrontó testimonios y concluyó que murió en el búnker el 30/04/1945.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-dental-hitler",
+      "a": "f71-identificacion-dental",
+      "b": "f71-hitler",
+      "type": "Restos odontológicos comparados con documentación de Hitler",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/29779904/",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Charlier et al. (European Journal of Internal Medicine, 2018) examinaron restos conservados en Moscú y aportaron comprobación forense de la identificación histórica. No se aporta prueba de huida a Argentina.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-blaschke-hitler",
+      "a": "f71-blaschke",
+      "b": "f71-hitler",
+      "type": "Dentista personal asociado a prótesis usadas en identificación",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Revisión de odontología forense de 2026 identifica a Blaschke como dentista del dictador y explica el papel de sus prótesis en la identificación post mortem.",
       "podcastNotes": []
     }
   ]
@@ -2203,8 +2590,27 @@ window.IDEA_TELARANA_F74_REVIEW = {
     "lastMarker": "02:02:30",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "primera_lectura_tematico_documental_no_exhaustiva",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra."
+    "reviewStage": "segunda_revision_historia_medica_y_muerte_con_verificacion_documental",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado.",
+    "independentDocumentaryRelations": 6,
+    "crossSourceLinks": [
+      71,
+      70,
+      13,
+      69
+    ],
+    "selectedSubtitleTimeAnchors": [
+      950,
+      1214,
+      1951,
+      2119,
+      2573,
+      4339,
+      4450,
+      4471,
+      4788
+    ],
+    "explicitContradictionReviews": 2
   },
   "nodes": [
     {
@@ -2218,7 +2624,53 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "photo": "",
       "x": 12600,
       "y": 4000,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 1951,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=1951s",
+          "status": "alegacion_no_verificada",
+          "text": "En ≈32:31 F74 alude a documentación que supuestamente avalaría orientación sexual de Hitler; en ≈35:19 se expresa una opinión sobre bisexualidad. Esta interpretación no es un diagnóstico ni una orientación probada históricamente."
+        },
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 4339,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4339s",
+          "status": "alegacion_no_verificada",
+          "text": "En ≈01:12:19 se presenta la presencia de submarinos alemanes ante Argentina como apoyo a una posible huida de Hitler. El hallazgo no demostraría por sí solo que Hitler estuviera a bordo; la identificación odontológica e investigaciones históricas mantienen su muerte en Berlín."
+        },
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 4471,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4471s",
+          "status": "contradiccion",
+          "text": "El fragmento craneal analizado en UConn en 2009 resultó compatible con una mujer. El resultado afecta esa muestra concreta, no los restos dentales examinados de manera independiente para identificar a Hitler."
+        },
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 4197,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4197s",
+          "status": "alegacion_no_verificada",
+          "text": "F74 menciona una presunta orden de Andrópov para destruir restos soviéticos en 1970. Este detalle operativo no se da por corroborado en esta revisión; no cambia la evidencia previa sobre la muerte en 1945."
+        },
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 950,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=950s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈15:50 Frattini afirma haber obtenido los diarios de Morell. Está acreditada la existencia histórica de notas clínicas y tratamientos, pero no se valida en este paso el acceso concreto del entrevistado a cada documento."
+        }
+      ]
     },
     {
       "id": "f74-eric",
@@ -2357,6 +2809,124 @@ window.IDEA_TELARANA_F74_REVIEW = {
           "text": "La fuente comenta las teorías sobre un posible escape del búnker. No se trata la especulación como conclusión demostrada."
         }
       ]
+    },
+    {
+      "id": "f74-eva-braun",
+      "name": "Eva Braun",
+      "kind": "Persona",
+      "subtitle": "Pareja de Hitler que se casó con él en abril de 1945 y murió junto a él en el búnker.",
+      "note": "Pareja de Hitler que se casó con él en abril de 1945 y murió junto a él en el búnker. F74, en ≈42:53, menciona su matrimonio. Archivos estadounidenses sobre entrevistas de 1945 describen la muerte simultánea de ambos en el búnker, frente a las teorías de fuga de la entrevista.",
+      "source": "https://text-message.blogs.archives.gov/2015/12/23/hunting-hitler-part-viii-the-search-ends/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 2573,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=2573s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "F74, en ≈42:53, menciona su matrimonio. Archivos estadounidenses sobre entrevistas de 1945 describen la muerte simultánea de ambos en el búnker, frente a las teorías de fuga de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f74-pervitin",
+      "name": "Pervitin (metanfetamina)",
+      "kind": "Fármaco histórico",
+      "subtitle": "Preparado estimulante usado en Alemania nazi por civiles y miembros de la Wehrmacht.",
+      "note": "Preparado estimulante usado en Alemania nazi por civiles y miembros de la Wehrmacht. F74, en ≈20:14–20:23, habla del uso de metanfetamina y de su distribución. Hay documentación farmacológica y militar, pero afirmar que la ofensiva alemana se explica por el consumo es una inferencia no probada.",
+      "source": "https://doi.org/10.1093/shm/hkq101",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 1214,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=1214s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "F74, en ≈20:14–20:23, habla del uso de metanfetamina y de su distribución. Hay documentación farmacológica y militar, pero afirmar que la ofensiva alemana se explica por el consumo es una inferencia no probada."
+        }
+      ]
+    },
+    {
+      "id": "f74-identificacion-dental",
+      "name": "Identificación odontológica de Hitler",
+      "kind": "Evidencia forense",
+      "subtitle": "Estudios comparativos de prótesis dentales, radiografías y restos recuperados, con examen forense publicado en 2018.",
+      "note": "Estudios comparativos de prótesis dentales, radiografías y restos recuperados, con examen forense publicado en 2018. La entrevista trata en ≈01:14:10 fragmentos craneales y de mandíbula. La identificación odontológica es un cuerpo probatorio diferente al fragmento craneal atribuido erróneamente; no son hallazgos intercambiables.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/29779904/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 4450,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4450s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "La entrevista trata en ≈01:14:10 fragmentos craneales y de mandíbula. La identificación odontológica es un cuerpo probatorio diferente al fragmento craneal atribuido erróneamente; no son hallazgos intercambiables."
+        }
+      ]
+    },
+    {
+      "id": "f74-fragmento-craneal",
+      "name": "Fragmento craneal atribuido a Hitler (análisis de 2009)",
+      "kind": "Pieza forense discutida",
+      "subtitle": "Fragmento óseo examinado por investigadores de la Universidad de Connecticut y atribuido previamente al cráneo de Hitler.",
+      "note": "Fragmento óseo examinado por investigadores de la Universidad de Connecticut y atribuido previamente al cráneo de Hitler. El centro de genética UConn informa que el estudio de 2009 concluyó que esa muestra probablemente pertenecía a una mujer adulta más joven que Hitler. No prueba que Hitler huyera ni cuestiona automáticamente la identificación independiente de restos dentales.",
+      "source": "https://genome.center.uconn.edu/hitlers-escape/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 4471,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4471s",
+          "status": "declaracion_de_la_transcripcion_sin_cotejo_audio",
+          "text": "El centro de genética UConn informa que el estudio de 2009 concluyó que esa muestra probablemente pertenecía a una mujer adulta más joven que Hitler. No prueba que Hitler huyera ni cuestiona automáticamente la identificación independiente de restos dentales."
+        }
+      ]
+    },
+    {
+      "id": "f74-blaschke",
+      "name": "Hugo Blaschke",
+      "kind": "Persona",
+      "subtitle": "Dentista personal de Hitler; el trabajo protésico se documenta en estudios posteriores de odontología forense.",
+      "note": "Dentista personal de Hitler; el trabajo protésico se documenta en estudios posteriores de odontología forense. La literatura científica muestra prótesis usadas en la identificación dental de Hitler. Se incorpora como contexto externo en respuesta al debate del episodio sobre restos anatómicos, sin adjudicar la explicación al entrevistado.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-trevor-roper",
+      "name": "Hugh Trevor-Roper",
+      "kind": "Persona",
+      "subtitle": "Oficial de inteligencia e historiador que investigó la muerte de Hitler en 1945.",
+      "note": "Oficial de inteligencia e historiador que investigó la muerte de Hitler en 1945. F74 critica en su capítulo sobre la muerte de Hitler las reconstrucciones historiográficas basadas en testimonios. Los Archivos Nacionales estadounidenses documentan los interrogatorios y el trabajo de Trevor-Roper.",
+      "source": "https://text-message.blogs.archives.gov/2015/12/23/hunting-hitler-part-viii-the-search-ends/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 11815,
+      "y": 5715,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -2430,6 +3000,166 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "note": "La fuente comenta las teorías sobre un posible escape del búnker. No se trata la especulación como conclusión demostrada.",
       "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=3745s",
       "episodeId": "idealab-f74-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-mention-eva",
+      "a": "f74-episodio",
+      "b": "f74-eva-braun",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=2573s",
+      "episodeId": "idealab-f74-frattini",
+      "note": "En ≈42:53 F74 menciona el matrimonio de Eva Braun con Hitler. Su muerte conjunta en el búnker tiene fuente histórica independiente.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 2573,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=2573s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈42:53 F74 menciona el matrimonio de Eva Braun con Hitler. Su muerte conjunta en el búnker tiene fuente histórica independiente."
+        }
+      ]
+    },
+    {
+      "id": "f74-mention-pervitin",
+      "a": "f74-episodio",
+      "b": "f74-pervitin",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=1214s",
+      "episodeId": "idealab-f74-frattini",
+      "note": "F74 trata Pervitin y los estimulantes usados en Alemania durante la guerra; su uso no demuestra que la droga explique por sí sola la victoria o conducta militar.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 1214,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=1214s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "F74 trata Pervitin y los estimulantes usados en Alemania durante la guerra; su uso no demuestra que la droga explique por sí sola la victoria o conducta militar."
+        }
+      ]
+    },
+    {
+      "id": "f74-mention-dental",
+      "a": "f74-episodio",
+      "b": "f74-identificacion-dental",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4450s",
+      "episodeId": "idealab-f74-frattini",
+      "note": "En ≈01:14:10 F74 menciona piezas óseas y mandíbula; es necesario distinguir los restos dentales examinados en 2018 del fragmento de cráneo estudiado en 2009.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 4450,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4450s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈01:14:10 F74 menciona piezas óseas y mandíbula; es necesario distinguir los restos dentales examinados en 2018 del fragmento de cráneo estudiado en 2009."
+        }
+      ]
+    },
+    {
+      "id": "f74-mention-craneo",
+      "a": "f74-episodio",
+      "b": "f74-fragmento-craneal",
+      "type": "Mención / hipótesis atribuida a la entrevista, no acreditación causal",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4471s",
+      "episodeId": "idealab-f74-frattini",
+      "note": "En ≈01:14:31 F74 refiere el resultado que atribuye a una mujer un fragmento de cráneo. UConn confirma que estudió tal muestra, pero no identifica el fragmento como la mandíbula atribuida a Hitler.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f74-frattini",
+          "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
+          "publishedAt": "2026-03-05",
+          "timeSec": 4471,
+          "source": "https://www.youtube.com/watch?v=82W2taMMsTo&t=4471s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈01:14:31 F74 refiere el resultado que atribuye a una mujer un fragmento de cráneo. UConn confirma que estudió tal muestra, pero no identifica el fragmento como la mandíbula atribuida a Hitler."
+        }
+      ]
+    },
+    {
+      "id": "f74-doc-morell-hitler",
+      "a": "f74-morell",
+      "b": "f74-hitler",
+      "type": "Tratamientos del médico personal de Hitler",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15825245/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Investigaciones clínicas de 2005 y 2002 documentan la relación profesional y tratamientos de Morell. No prueban que decidiera el comportamiento político de Hitler.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-dental-hitler",
+      "a": "f74-identificacion-dental",
+      "b": "f74-hitler",
+      "type": "Evidencia odontológica de fallecimiento en Berlín",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/29779904/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Charlier et al. (2018) estudiaron restos dentales en Moscú comparándolos con documentación histórica; complementa testimonios sobre el suicidio el 30/04/1945 y contradice hipótesis de fuga como hecho.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-blaschke-hitler",
+      "a": "f74-blaschke",
+      "b": "f74-hitler",
+      "type": "Tratamientos dentales y prótesis usadas en identificación",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La revisión de 2026 describe la asistencia dental de Blaschke y la singularidad de los puentes y coronas que facilitaron la identificación.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-skull-dental",
+      "a": "f74-fragmento-craneal",
+      "b": "f74-identificacion-dental",
+      "type": "Distinción probatoria entre fragmento craneal y restos odontológicos",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://genome.center.uconn.edu/hitlers-escape/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "UConn informó sobre la muestra craneal con ADN femenino en 2009, mientras los estudios odontológicos posteriores examinaron piezas dentales diferentes. El resultado de una muestra no invalida la identidad de otra.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-eva-hitler",
+      "a": "f74-eva-braun",
+      "b": "f74-hitler",
+      "type": "Pareja y fallecimiento en Berlín el 30/04/1945",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://text-message.blogs.archives.gov/2015/12/23/hunting-hitler-part-viii-the-search-ends/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "El National Archives estadounidense documenta informes aliados de 1945 y testimonios sobre la muerte de Hitler y Eva Braun en el búnker, no una salida clandestina hacia América.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-trevor-hitler",
+      "a": "f74-trevor-roper",
+      "b": "f74-hitler",
+      "type": "Investigación de 1945 sobre los últimos días",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://text-message.blogs.archives.gov/2015/12/23/hunting-hitler-part-viii-the-search-ends/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Correspondencia de inteligencia preservada por el National Archives refiere investigación de Trevor-Roper y el contraste de relatos de testigos.",
       "podcastNotes": []
     }
   ]
