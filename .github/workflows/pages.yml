@@ -115,9 +115,9 @@ jobs:
       - name: Auditar cobertura de las 71 fuentes canónicas
         run: node scripts/audit_telarana_all_sources.mjs
       - name: Validar primera revisión sin minutajes F34 (Francisco y Vaticano)
+        run: node scripts/test_telarana_source34_francisco.mjs
       - name: Auditar F69 y los minutajes ausentes
         run: node scripts/test_telarana_f69_provenance.mjs
-        run: node scripts/test_telarana_source34_francisco.mjs
       - name: Validar las cinco transcripciones manuales de Eric Frattini y sector Vaticano
         run: node scripts/test_telarana_frattini_manual_f70_f74.mjs
       - name: Validar los expedientes iniciales de fuentes 26 y 27
