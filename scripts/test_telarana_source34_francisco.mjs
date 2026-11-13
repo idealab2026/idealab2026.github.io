@@ -43,7 +43,7 @@ assert(x.analysisCoverage.percent===34&&x.analysisCoverage.audioVerified===false
 assert(q.sourceNodesDocumented===19&&q.sourceRelationsDocumented===30&&q.verifiedIndependentChecks===17,
  "F34: métricas documentales sin reconciliar");
 const hist=JSON.parse(read("linea-historia/estudios-telarana.json"));
-assert(hist.items.length===123&&tracking.timeline.committedVerifiedEvents===123,"F34: historial no está sincronizado");
+assert(hist.items.length===125&&tracking.timeline.committedVerifiedEvents===125,"F34: historial no está sincronizado");
 for(const [id,date] of [
  ["study-f34-cosea-2013","2013-07-18"],["study-f34-chile-carta-2018","2018-04-08"],
  ["study-f34-barros-renuncia-2018","2018-06-11"],["study-f34-raffaella-petrini-gobernacion-2025","2025-03-01"]]){
