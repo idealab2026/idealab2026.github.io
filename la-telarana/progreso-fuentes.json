@@ -791,17 +791,17 @@
       "videoId": "meEH-MaGn24",
       "title": "El EXPERIMENTO SECRETO con el que las ÉLITES nos CONTROLAN | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=meEH-MaGn24",
-      "status": "revision_cronometrada_parcial_con_dos_contrastes_primarios",
+      "status": "tercera_revision_contraste_eudi_voluntariedad_sin_audio_cotejado",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
-      "sourceNodesDocumented": 19,
-      "sourceRelationsDocumented": 20,
-      "verifiedIndependentChecks": 3,
-      "qualityNotes": "Texto automático de 143.539 caracteres recuperado de Drive institucional. 16 personas con biografías y párrafo de declaraciones atribuidas. Los comentarios sobre CIA, In-Q-Tel, la Fundación Gates, Open Society, Google, Meta, vacunas, identidad digital y Palantir permanecen como declaraciones de la fuente sin elevarse a relación probada. Stargate ya figuraba como hito de F21: se vincula referencia secundaria F20 sin crear un segundo evento. Pendiente audio, diarización, localización de minutos y verificación visual de retratos.\n13/11/2026: once notas nuevas con marca de tiempo, 11 entidades y 13 aristas, dos de las cuales apoyadas en documentos oficiales CIA e informe SEC. Se distinguen de acusaciones no verificadas de la entrevista. Cobertura editorial estimada de 28% a 40%, sin cotejo de audio ni cierre.",
+      "sourceNodesDocumented": 22,
+      "sourceRelationsDocumented": 25,
+      "verifiedIndependentChecks": 6,
+      "qualityNotes": "Texto automático de 143.539 caracteres recuperado de Drive institucional. 16 personas con biografías y párrafo de declaraciones atribuidas. Los comentarios sobre CIA, In-Q-Tel, la Fundación Gates, Open Society, Google, Meta, vacunas, identidad digital y Palantir permanecen como declaraciones de la fuente sin elevarse a relación probada. Stargate ya figuraba como hito de F21: se vincula referencia secundaria F20 sin crear un segundo evento. Pendiente audio, diarización, localización de minutos y verificación visual de retratos.\n13/11/2026: once notas nuevas con marca de tiempo, 11 entidades y 13 aristas, dos de las cuales apoyadas en documentos oficiales CIA e informe SEC. Se distinguen de acusaciones no verificadas de la entrevista. Cobertura editorial estimada de 28% a 40%, sin cotejo de audio ni cierre.\n13/11/2026: tercera lectura. 5 anclas adicionales (16 en total), 3 nodos conceptuales y 5 relaciones (3 respaldadas por norma oficial). El Reglamento (UE) 2024/1183 es voluntario en su art. 5 bis.15 y establece requisitos antirrastreo en su art. 5 bis.16. Las advertencias de la entrevista sobre identidad digital se mantienen como opinión o predicción, nunca acreditadas como implantación general de vigilancia. Se añade hito de entrada en vigor el 20/05/2024. Audio y voces aún sin cotejar.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 0,
+      "timelineVerifiedEventsCommitted": 1,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
       "fullTranscriptVerifiedDriveReadback": true,
@@ -811,7 +811,9 @@
       "impersonalAttributedSummaries": 16,
       "personProfilesSourceFile": "la-telarana/personas-fuentes-20.js",
       "personBiographiesFirst": true,
-      "timelineEventIds": [],
+      "timelineEventIds": [
+        "study-f20-identidad-digital-reglamento-vigor-2024"
+      ],
       "timelineCrossReferences": [
         {
           "eventId": "study-f21-stargate-2025",
@@ -847,8 +849,8 @@
       ],
       "imageRuntimeVerified": false,
       "attributionScope": "Declaraciones generales del entrevistado Lorenzo Ramírez. No inferir hechos por simple afirmación ni atribuir a individuos relaciones con agencias estatales sin soporte independiente.",
-      "lastUpdated": "2026-11-10",
-      "timecodedTranscriptReviewedNotes": 11
+      "lastUpdated": "2026-11-13",
+      "timecodedTranscriptReviewedNotes": 16
     },
     {
       "order": 22,
@@ -1223,9 +1225,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 105,
+    "committedVerifiedEvents": 106,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 60,
+    "fromSourceInReview": 62,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1299,6 +1301,9 @@
         "study-f19-china-omc-2001",
         "study-f19-asalto-capitolio-2021"
       ],
+      "20": [
+        "study-f20-identidad-digital-reglamento-vigor-2024"
+      ],
       "21": [
         "study-f21-usaid-review-2025",
         "study-f21-schuman-1950",
@@ -1329,7 +1334,8 @@
         "study-f22-marcha-verde-sahara-1975"
       ],
       "23": [
-        "study-f23-tratado-paris-ceca-1951"
+        "study-f23-tratado-paris-ceca-1951",
+        "study-f23-jacques-baud-sancion-ue-2025"
       ],
       "24": [
         "study-f24-iran-arabia-beijing-2023",
@@ -2949,7 +2955,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 16,
-        "status": "segunda_fase_con_11_minutajes_y_2_relaciones_primarias_confirmadas",
+        "status": "tercera_revision_contraste_eudi_voluntariedad_sin_audio_cotejado",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -2972,22 +2978,22 @@
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
           "timecodedTranscriptContentImported": true,
-          "timecodedTranscriptNewEditorialAnnotations": 11,
-          "timecodedTranscriptNotesReviewed": 11
+          "timecodedTranscriptNewEditorialAnnotations": 16,
+          "timecodedTranscriptNotesReviewed": 16
         },
         "analysisCoverage": {
-          "percent": 40,
+          "percent": 47,
           "state": "en_revision",
           "readyForDeepReview": true,
           "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
           "audioVerified": false,
           "signals": {
-            "entities": 19,
-            "relations": 20,
-            "biographies": 0,
-            "statements": 11,
-            "independentChecks": 3,
-            "verifiedTimelineEvents": 0,
+            "entities": 22,
+            "relations": 25,
+            "biographies": 16,
+            "statements": 16,
+            "independentChecks": 6,
+            "verifiedTimelineEvents": 1,
             "captionSegments": 4005,
             "expectedEntities": 12,
             "expectedStatements": 24
@@ -3002,7 +3008,7 @@
             "cronologia": 0,
             "qa": 2
           },
-          "nextAction": "Continuar extracción de pasajes minutados y comprobar afirmaciones sobre tecnológicas antes de publicarlas como relaciones sustantivas",
+          "nextAction": "Cotejar audio y analizar los 4005 segmentos restantes; verificar alcance del reglamento eIDAS/EUDI, implementación y atribuciones sobre sistemas de vigilancia, sin extrapolar la normativa.",
           "method": "indice_editorial_conservador; no equivale a cobertura completa del texto"
         }
       },
@@ -6246,9 +6252,9 @@
     "priorityQueue": [
       {
         "sourceOrder": 20,
-        "percent": 40,
+        "percent": 47,
         "segments": 4005,
-        "nextAction": "Continuar extracción de pasajes minutados y comprobar afirmaciones sobre tecnológicas antes de publicarlas como relaciones sustantivas"
+        "nextAction": "Cotejar audio y analizar los 4005 segmentos restantes; verificar alcance del reglamento eIDAS/EUDI, implementación y atribuciones sobre sistemas de vigilancia, sin extrapolar la normativa."
       },
       {
         "sourceOrder": 26,
@@ -6731,7 +6737,7 @@
             {
               "order": 20,
               "title": "El EXPERIMENTO SECRETO con el que las ÉLITES nos CONTROLAN | Lorenzo Ramírez",
-              "percent": 40,
+              "percent": 47,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
