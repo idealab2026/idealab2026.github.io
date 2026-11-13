@@ -72,7 +72,7 @@ context.showPersonResearch(quote,meir);
 assert(quote.textContent.includes("Declaraciones y menciones en las fuentes"));
 assert.equal(sourceCalls.length,1);
 assert.equal(sourceCalls[0].notes.length,1,"retain original podcast notes");
-assert(sourceCalls[0].notes[0].timeSec>0,"retain exact podcast timestamp");
+assert(sourceCalls[0].notes[0].timeSec===null&&sourceCalls[0].notes[0].temporalStatus==="sin_minutaje_validado_en_archivo_f69","Do not retain a timestamp unsupported by the F69 NotebookLM archive");
 
 const external=new Element("panel");
 const maxwell=base.nodes.find(n=>n.id==="on-robert-maxwell");
