@@ -817,7 +817,14 @@
           "vf150-mossad",
           "vf150-david-ben-gurion"
         ],
-        "methodologicalLimits": "La captura del 11 de mayo y el traslado posterior son hechos diferenciados; no confundir la fecha de la operación con la del traslado."
+        "methodologicalLimits": "La captura del 11 de mayo y el traslado posterior son hechos diferenciados; no confundir la fecha de la operación con la del traslado.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 72,
+            "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY&t=4514s",
+            "note": "F72 vuelve a narrar la captura de Eichmann ya registrada por F69. Confirma el núcleo público por la Knéset; pormenores sobre localización personal y operación necesitan fuentes adicionales."
+          }
+        ]
       }
     },
     {
@@ -1880,6 +1887,38 @@
       }
     },
     {
+      "id": "study-f73-israel-marruecos-declaracion-2020",
+      "y": 2020.9726775956285,
+      "t": "Israel, Marruecos y Estados Unidos firman una declaración trilateral en Rabat",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F73 · investigación documental Frattini",
+      "g": [
+        "África",
+        "Asia",
+        "América del Norte"
+      ],
+      "d": "El 22 de diciembre de 2020, Marruecos, Israel y Estados Unidos suscribieron en Rabat una declaración que incluía la reanudación de contactos diplomáticos, cooperación económica y oficinas de enlace. Los Acuerdos de Abraham con Emiratos Árabes Unidos y Baréin se habían firmado el 15 de septiembre de 2020; la normalización marroquí se anunció en diciembre. Esta secuencia no acredita el relato de que Mohamed VI hubiera sido el impulsor de las firmas previas con monarquías del Golfo.",
+      "investigation": {
+        "sourceOrder": 73,
+        "sourceTitle": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=318s",
+        "date": "2020-12-22",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Declaración conjunta Israel–Marruecos–EE. UU. · 22/12/2020",
+          "url": "https://www.gov.il/BlobFolder/news/the-abraham-accords-declaration-15-dep-2020/en/English_ABRAHAM_ACCORDS_Joint-Declaration-Morrocco-US-Israel.pdf"
+        },
+        "relatedTelarana": [
+          "f73-marruecos",
+          "f73-israel",
+          "f73-abraham",
+          "f73-mohamed-vi"
+        ],
+        "methodologicalLimits": "Normalización diplomática documentada; la influencia causal de Mohamed VI sobre otras monarquías es una tesis del entrevistado, no confirmada por las firmas. Fecha de 22/12/2020 de la declaración trilateral, distinta del anuncio 10/12."
+      }
+    },
+    {
       "id": "study-f19-asalto-capitolio-2021",
       "y": 2021.013698630137,
       "t": "Asalto al Capitolio de Estados Unidos durante la certificación electoral",
@@ -2118,7 +2157,14 @@
           "ce26-robles",
           "ce26-bolanos"
         ],
-        "methodologicalLimits": "La fecha corresponde al anuncio público, no a las intrusiones de 2021. La autoría de Pegasus, supuestas grabaciones de chantaje y finalidades políticas no se desprenden de estos informes."
+        "methodologicalLimits": "La fecha corresponde al anuncio público, no a las intrusiones de 2021. La autoría de Pegasus, supuestas grabaciones de chantaje y finalidades políticas no se desprenden de estos informes.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 73,
+            "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
+            "note": "F73 plantea la relación entre Pegasus, Pedro Sánchez y Marruecos. El Gobierno confirmó la infección del teléfono, NO el autor estatal."
+          }
+        ]
       }
     },
     {
@@ -2325,7 +2371,19 @@
           "f24-episodio",
           "f24-israel"
         ],
-        "methodologicalLimits": "La fecha y el hecho de los ataques están documentados de manera independiente. La relación causal sugerida entre el acuerdo entre Irán y Arabia Saudí y los ataques del 7 de octubre no se infiere de esta evidencia."
+        "methodologicalLimits": "La fecha y el hecho de los ataques están documentados de manera independiente. La relación causal sugerida entre el acuerdo entre Irán y Arabia Saudí y los ataques del 7 de octubre no se infiere de esta evidencia.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 72,
+            "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY&t=8204s",
+            "note": "F72 sostiene que Israel conocía previamente el ataque, como afirmación del entrevistado pendiente de acreditación."
+          },
+          {
+            "sourceOrder": 73,
+            "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=4078s",
+            "note": "F73 lo atribuye en parte a un fallo del Shin Bet. Se conserva como interpretación del entrevistado, no dictamen judicial."
+          }
+        ]
       }
     },
     {
@@ -2420,6 +2478,43 @@
           "f26-comision-europea"
         ],
         "methodologicalLimits": "Hecho independiente documentado por autoridad primaria. Se añade como contexto de la fuente; al carecer de transcripción integral y cotejo de audio, no se afirma que el entrevistado lo explicase ni que las hipótesis del vídeo estén verificadas."
+      }
+    },
+    {
+      "id": "study-f72-dispositivos-libano-septiembre-2024",
+      "y": 2024.7103825136612,
+      "t": "Oleadas de explosiones de buscapersonas en Líbano y Siria",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F72 · investigación documental Frattini",
+      "g": [
+        "Asia"
+      ],
+      "d": "El 17 de septiembre de 2024 se produjeron numerosas explosiones simultáneas de buscapersonas en Líbano y Siria; otra oleada alcanzó aparatos de comunicación el 18 de septiembre. La ONU confirmó muertos, heridos y víctimas civiles, reclamando una investigación independiente. En noviembre de 2024, según Reuters, un portavoz del primer ministro israelí afirmó que Benjamin Netanyahu había aprobado los ataques. Los pormenores operativos presentados por Frattini como «Green Beeper» no están probados por la mera existencia de las explosiones.",
+      "investigation": {
+        "sourceOrder": 72,
+        "sourceTitle": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY&t=3402s",
+        "date": "2024-09-17",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Alto Comisionado de Derechos Humanos de la ONU · 18/09/2024",
+          "url": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria"
+        },
+        "relatedTelarana": [
+          "f72-buscapersonas",
+          "f72-hizbula",
+          "f73-buscapersonas",
+          "f73-israel"
+        ],
+        "methodologicalLimits": "Se registra como inicio la primera oleada, no los anuncios posteriores. La confirmación de portavoz recogida por prensa es distinta de atribución individual, responsabilidad penal o prueba de cada detalle técnico.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 73,
+            "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
+            "note": "F73 analiza la misma operación desde 01:23:25; NO crear un acontecimiento duplicado."
+          }
+        ]
       }
     },
     {

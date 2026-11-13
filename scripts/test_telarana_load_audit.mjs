@@ -64,6 +64,20 @@ const f29=audit.find(x=>x.label==="Fuente 29");
 assert(f29?.available&&f29.edges>=11,"F29 no se ha incorporado íntegramente al grafo o se han eliminado enlaces institucionales");
 const f30=audit.find(x=>x.label==="Fuente 30");
 assert(f30?.available&&f30.edges>=11,"F30 no se ha cargado o sus relaciones institucionales están incompletas");
+// Regresión F72/F73: cuando dos fuentes estudian una misma relación, no
+// duplicar la arista ni perder el documento de corroboración del segundo caso.
+for(const n of [72,73]){
+ const stage=audit.find(x=>x.label==="Fuente "+n+" · Eric Frattini");
+ assert(stage?.available,"F"+n+" no se incorpora al grafo público");
+}
+const pagerNotes=ctx.data.edges.filter(e=>Array.isArray(e.podcastNotes)&&e.podcastNotes.some(n=>
+ n.episodeId==="idealab-f73-frattini"&&/reuters\\.com/.test(n.source||"")&&/buscapersonas|explosiones/i.test(n.text||"")));
+assert(pagerNotes.length>=1,"La evidencia del segundo episodio sobre buscapersonas se ha perdido durante la deduplicación");
+assert(ctx.data.nodes.filter(n=>n.name==="Explosiones de buscapersonas en Líbano (2024)").length===1,
+ "La misma operación histórica está duplicada en el grafo");
+assert(ctx.data.nodes.filter(n=>n.name==="Shin Bet").length===1,
+ "Shin Bet y Shabak no deben generar fichas independientes por grafía");
+
 const summary=audit.reduce((n,r)=>n+r.added,0);
 assert.equal(summary,ctx.data.nodes.length,"Las altas de cada etapa no cuadran con el total");
 const ids=new Set(ctx.data.nodes.map(n=>n.id));

@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[13,7,9,9,7],expectedEdges=[17,7,8,8,6],
+const expectedNodes=[13,7,14,16,7],expectedEdges=[17,7,16,21,6],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===36,
   "El inventario 74/71/36 está desincronizado");
@@ -58,15 +58,15 @@ for(let i=0;i<videos.length;i++){
  const notes=mod.nodes.flatMap(x=>x.podcastNotes||[]);
  assert(notes.length>=6&&notes.every(x=>Number.isInteger(x.timeSec)&&x.timeSec>=0&&x.source.includes("youtube.com/watch?v=")&&x.status),
    "F"+n+": faltan notas con tiempos y estado probatorio");
- const documented=mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente");
+ const documented=mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente"||x.claimStatus==="hecho_documentado_por_portavoz_citado");
  assert(documented.every(x=>x.confidence==="documentado"&&x.source.startsWith("https://")&&!x.source.includes("youtube.com")),
    "F"+n+": se ha elevado un testimonio a vínculo contrastado");
- const remaining=mod.edges.filter(x=>x.claimStatus!=="hecho_verificado_independiente");
+ const remaining=mod.edges.filter(x=>x.claimStatus!=="hecho_verificado_independiente"&&x.claimStatus!=="hecho_documentado_por_portavoz_citado");
  assert(remaining.every(x=>x.confidence==="hipotesis"),
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===42&&totalExternal===8,
+assert(totalNotes===59&&totalExternal===17,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -99,8 +99,32 @@ for(const e of [
 assert(reg.sourceCatalog.entries.find(e=>e.order===70)?.analysisCoverage.percent===29,
  "El porcentaje editorial F70 debe reflejar la segunda revisión sin sugerir audio completo");
 
-assert(feed.items.length===111&&reg.timeline.committedVerifiedEvents===111,
+const f72=ctx.window.IDEA_TELARANA_F72_REVIEW, f73=ctx.window.IDEA_TELARANA_F73_REVIEW;
+assert(f72.metadata.crossSourceLinks.includes(69)&&f72.metadata.crossSourceLinks.includes(73), "F72 sin contraste cruzado");
+assert(f73.metadata.crossSourceLinks.includes(69)&&f73.metadata.crossSourceLinks.includes(72), "F73 sin contraste cruzado");
+assert(f72.metadata.verifiedMinuteReferences===0&&f73.metadata.verifiedMinuteReferences===0, "No elevar subtítulos a escucha audiovisual");
+assert(f72.nodes.find(x=>x.id==="f72-shinbet")?.name==="Shin Bet", "F72 debe reutilizar el nombre canónico de Shin Bet de F69");
+for(const id of ["f72-doc-stuxnet-natanz","f72-doc-eichmann-mossad","f72-doc-pagers-hizbula","f73-doc-morocco-israel","f73-doc-israel-abraham","f73-doc-pegasus-sanchez","f73-doc-ccn-pegasus","f73-doc-pagers-hizbula","f73-doc-israel-pagers"]){
+ const e=[...f72.edges,...f73.edges].find(x=>x.id===id);
+ assert(e&&e.source.startsWith("https://")&&/documentado/.test(e.confidence), "Falta evidencia independiente: "+id);
+}
+for(const id of ["f72-mention-sayanim","f73-mention-mohamed","f73-mention-sanchez"]){
+ const e=[...f72.edges,...f73.edges].find(x=>x.id===id);
+ assert(e&&e.confidence==="hipotesis"&&e.source.includes("youtube.com/"),"Alegación convertida en relación demostrada: "+id);
+}
+const morocco=feed.items.find(e=>e.id==="study-f73-israel-marruecos-declaracion-2020");
+const pagers=feed.items.find(e=>e.id==="study-f72-dispositivos-libano-septiembre-2024");
+assert(morocco?.investigation?.date==="2020-12-22"&&morocco.investigation.sourceOrder===73, "Falta declaración Israel–Marruecos");
+assert(pagers?.investigation?.date==="2024-09-17"&&pagers.investigation.sourceOrder===72,"Falta fecha de las explosiones en Líbano");
+assert(pagers.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),"F73 no está vinculado a explosiones existentes");
+assert(feed.items.filter(e=>e.id==="study-vf150-eichmann-1960").length===1,
+ "La captura de Eichmann no debe duplicarse");
+assert(feed.items.find(e=>e.id==="study-v2-pegasus-revelacion-2022")?.investigation?.otherSourceMentions?.some(x=>x.sourceOrder===73),"No se reutiliza el hito de Pegasus ya existente");
+assert(feed.items.find(e=>e.id==="study-f24-ataques-hamas-israel-2023")?.investigation?.otherSourceMentions?.some(x=>x.sourceOrder===72)&&feed.items.find(e=>e.id==="study-f24-ataques-hamas-israel-2023")?.investigation?.otherSourceMentions?.some(x=>x.sourceOrder===73),"No se ha cruzado el 7/10 con ambas fuentes");
+assert(reg.sourceCatalog.entries.find(e=>e.order===72)?.analysisCoverage.percent===27&&reg.sourceCatalog.entries.find(e=>e.order===73)?.analysisCoverage.percent===26,"Ranking editorial F72/F73 no sincronizado");
+
+assert(feed.items.length===113&&reg.timeline.committedVerifiedEvents===113,
   "Descuadre de hitos con la Línea de la Historia");
 assert(reg.sourceCatalog.entries.find(x=>x.order===34)?.videoId==="j_5Tj0kIj2c",
   "La fuente anterior de Frattini F34 no debe duplicarse");
-console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 111 hitos; Iglesia y Vaticano en 3D");
+console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 113 hitos; Iglesia y Vaticano en 3D");
