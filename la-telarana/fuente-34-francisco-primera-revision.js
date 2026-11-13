@@ -15,13 +15,18 @@ window.IDEA_TELARANA_F34_REVIEW = {
     "transcriptAudioMatched": false,
     "verifiedMinuteReferences": 0,
     "speakerDiarizationVerified": false,
-    "reviewStage": "primera_revision_documental_por_asuntos_de_txt_no_cronometrado",
+    "reviewStage": "segunda_revision_entidades_curia_y_boston_con_contrastes_primarios",
     "reviewDate": "2026-11-13",
     "crossSourceRefs": [
       70,
       74
     ],
-    "methodologicalNote": "Transcripción NotebookLM no cronometrada. No se atribuyen tiempos de reproducción; nombres y turnos requieren revisión de audio. Se identifica a los entrevistados por contexto y se marca cada afirmación atribuida. Los actos oficiales prueban decisiones institucionales, no la eficacia material de sus resultados ni la ausencia de responsabilidades."
+    "methodologicalNote": "Transcripción NotebookLM no cronometrada. No se atribuyen tiempos de reproducción; nombres y turnos requieren revisión de audio. Se identifica a los entrevistados por contexto y se marca cada afirmación atribuida. Los actos oficiales prueban decisiones institucionales, no la eficacia material de sus resultados ni la ausencia de responsabilidades. Segunda pasada sobre tramo de Curia y Boston: nombres corregidos desde transcripción ASR, sin cotejo auditivo; 'Guoham'→Geoghan es hipótesis fonética. El supuesto triunvirato de oposición no se trata como hecho. Cargos y fechas contrastados con Vaticano, Orden de Malta y Pulitzer/Boston Globe.",
+    "independentDocumentaryRelations": 17,
+    "provisionalOralIdentifications": [
+      "f34-geoghan"
+    ],
+    "nextEditorialPass": "Cotejar audio de nombres propios y revisar otros bloques del TXT antes de considerar cerrada F34"
   },
   "nodes": [
     {
@@ -345,6 +350,121 @@ window.IDEA_TELARANA_F34_REVIEW = {
           "text": "Francisco reconoció graves errores de valoración y solicitó perdón. Es fuente primaria de su cambio de posición, que debe figurar junto a la polémica original."
         }
       ]
+    },
+    {
+      "id": "f34-burke",
+      "name": "Raymond Leo Burke",
+      "kind": "Persona",
+      "subtitle": "Cardenal estadounidense; prefecto de la Signatura Apostólica (2008–2014) y patrono de la Orden de Malta (2014–2023).",
+      "note": "Raymond Leo Burke es un cardenal y canonista estadounidense. Benedicto XVI le nombró prefecto de la Signatura Apostólica en 2008 y Francisco patrono de la Orden de Malta el 8 de noviembre de 2014. En la entrevista, Frattini lo presenta, junto con Robert Sarah y Gerhard Müller, como un núcleo de resistencia a Francisco. Esta caracterización es una valoración atribuida a Frattini; el nombramiento de 2014 no demuestra por sí solo una purga política.",
+      "source": "https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_burke_rl.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12900,
+      "y": 4090,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f34-frattini-francisco",
+          "title": "Luces y sombras del papa Francisco · Eric Frattini",
+          "publishedAt": null,
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+          "status": "opinion_atribuida",
+          "text": "Frattini menciona fonéticamente «Raymond Burk» y lo presenta como parte de un supuesto triunvirato contrario a Francisco; no se infiere una organización concertada a partir del testimonio."
+        }
+      ]
+    },
+    {
+      "id": "f34-sarah",
+      "name": "Robert Sarah",
+      "kind": "Persona",
+      "subtitle": "Cardenal guineano, arzobispo emérito de Conakry y prefecto de Culto Divino entre noviembre de 2014 y febrero de 2021.",
+      "note": "Robert Sarah es un cardenal de Guinea, antiguo arzobispo de Conakry. Francisco lo nombró prefecto de la Congregación para el Culto Divino el 23 de noviembre de 2014 y aceptó su renuncia el 20 de febrero de 2021, cuando ya había cumplido 75 años. Frattini lo incluye en un supuesto grupo de resistencia al pontífice; la coincidencia en discrepancias doctrinales no demuestra coordinación ni una destitución sancionadora.",
+      "source": "https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_sarah_r.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13145,
+      "y": 4090,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f34-frattini-francisco",
+          "title": "Luces y sombras del papa Francisco · Eric Frattini",
+          "publishedAt": null,
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+          "status": "opinion_atribuida",
+          "text": "Frattini pronuncia un nombre transcrito como «Robert Sara» y lo identifica como miembro de un supuesto triunvirato de oposición; la atribución no está comprobada con escucha del audio."
+        }
+      ]
+    },
+    {
+      "id": "f34-muller",
+      "name": "Gerhard Ludwig Müller",
+      "kind": "Persona",
+      "subtitle": "Teólogo y cardenal alemán; prefecto de Doctrina de la Fe de 2012 a 2017.",
+      "note": "Gerhard Ludwig Müller es un teólogo y cardenal alemán. Benedicto XVI lo designó prefecto de la Congregación para la Doctrina de la Fe en 2012, Francisco lo confirmó en 2013 y la Santa Sede comunicó en 2017 el fin de su mandato quinquenal y el nombramiento de Luis Ladaria. Frattini lo menciona entre los cardenales que, según él, frenaron a Francisco; los actos de personal acreditados no prueban las motivaciones alegadas.",
+      "source": "https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2017/07/01/ren.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13390,
+      "y": 4090,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f34-frattini-francisco",
+          "title": "Luces y sombras del papa Francisco · Eric Frattini",
+          "publishedAt": null,
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+          "status": "opinion_atribuida",
+          "text": "La transcripción reproduce «Gerhard Miller», probable referencia a Gerhard Ludwig Müller; Frattini sostiene que este y otros cardenales pusieron trabas a Francisco. No hay audio cotejado."
+        }
+      ]
+    },
+    {
+      "id": "f34-law",
+      "name": "Bernard Francis Law",
+      "kind": "Persona",
+      "subtitle": "Cardenal estadounidense, arzobispo de Boston hasta diciembre de 2002; renunció durante la crisis de abusos clericales.",
+      "note": "Bernard Francis Law fue arzobispo de Boston y cardenal estadounidense. Su gestión de denuncias contra sacerdotes, entre ellas las relativas a John Geoghan, fue objeto de una investigación documental del Boston Globe. Juan Pablo II aceptó su renuncia el 13 de diciembre de 2002. Frattini cita el caso de Boston en su examen de abusos dentro de la Iglesia; los datos judiciales y administrativos se separan de las descalificaciones personales de la entrevista.",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2002/12/13/0620.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12900,
+      "y": 4330,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f34-frattini-francisco",
+          "title": "Luces y sombras del papa Francisco · Eric Frattini",
+          "publishedAt": null,
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+          "status": "opinion_atribuida",
+          "text": "Frattini cita expresamente al «cardenal Bernard Law» en el bloque sobre denuncias de abusos en Boston y expresa una condena personal intensa, que no se reproduce como sentencia judicial."
+        }
+      ]
+    },
+    {
+      "id": "f34-geoghan",
+      "name": "John J. Geoghan",
+      "kind": "Persona",
+      "subtitle": "Exsacerdote católico de Boston condenado en enero de 2002 por agresión indecente a un menor; su caso fue investigado por el Boston Globe.",
+      "note": "John J. Geoghan fue un sacerdote de la archidiócesis de Boston, apartado del ministerio, condenado por un jurado estadounidense en enero de 2002 por agresión indecente a un menor. La investigación Spotlight documentó denuncias anteriores y reasignaciones en distintas parroquias. En F34 aparece una referencia fonética como «padre Guoham», que podría corresponder a Geoghan: esta identidad oral está pendiente de confirmación con el audio.",
+      "source": "https://www.pulitzer.org/winners/boston-globe-1",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13145,
+      "y": 4330,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f34-frattini-francisco",
+          "title": "Luces y sombras del papa Francisco · Eric Frattini",
+          "publishedAt": null,
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+          "status": "identificacion_fonetica_provisional",
+          "text": "En el bloque sobre Bernard Law, Frattini menciona a un sacerdote transcrito «Guoham». Se propone como hipótesis fonética John J. Geoghan por el contexto, sin dar por confirmada la identificación literal."
+        }
+      ]
     }
   ],
   "edges": [
@@ -630,6 +750,162 @@ window.IDEA_TELARANA_F34_REVIEW = {
       "source": "https://www.vatican.va/content/vatican/en/special/sede-vacante/sede-vacante-2025/20250421-denuncia-morte-francesco.html",
       "episodeId": "idealab-f34-frattini-francisco",
       "note": "Certificación médica oficial vaticana fechada el 21/04/2025; no se crea nuevo acontecimiento si ya consta el fallecimiento en la cronología general.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-mention-burke",
+      "a": "f34-episodio",
+      "b": "f34-burke",
+      "type": "Mención del episodio; opiniones atribuidas a Frattini",
+      "confidence": "hipotesis",
+      "claimStatus": "atribucion_del_entrevistado_no_hecho_independiente",
+      "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "Frattini menciona fonéticamente «Raymond Burk» y lo presenta como parte de un supuesto triunvirato contrario a Francisco; no se infiere una organización concertada a partir del testimonio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-mention-sarah",
+      "a": "f34-episodio",
+      "b": "f34-sarah",
+      "type": "Mención del episodio; opiniones atribuidas a Frattini",
+      "confidence": "hipotesis",
+      "claimStatus": "atribucion_del_entrevistado_no_hecho_independiente",
+      "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "Frattini pronuncia un nombre transcrito como «Robert Sara» y lo identifica como miembro de un supuesto triunvirato de oposición; la atribución no está comprobada con escucha del audio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-mention-muller",
+      "a": "f34-episodio",
+      "b": "f34-muller",
+      "type": "Mención del episodio; opiniones atribuidas a Frattini",
+      "confidence": "hipotesis",
+      "claimStatus": "atribucion_del_entrevistado_no_hecho_independiente",
+      "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "La transcripción reproduce «Gerhard Miller», probable referencia a Gerhard Ludwig Müller; Frattini sostiene que este y otros cardenales pusieron trabas a Francisco. No hay audio cotejado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-mention-law",
+      "a": "f34-episodio",
+      "b": "f34-law",
+      "type": "Mención del episodio; opiniones atribuidas a Frattini",
+      "confidence": "hipotesis",
+      "claimStatus": "atribucion_del_entrevistado_no_hecho_independiente",
+      "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "Frattini cita expresamente al «cardenal Bernard Law» en el bloque sobre denuncias de abusos en Boston y expresa una condena personal intensa, que no se reproduce como sentencia judicial.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-mention-geoghan",
+      "a": "f34-episodio",
+      "b": "f34-geoghan",
+      "type": "Posible mención fonética del episodio — identificación por cotejar",
+      "confidence": "hipotesis",
+      "claimStatus": "identidad_oral_provisional_sin_cotejo",
+      "source": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "En el bloque sobre Bernard Law, Frattini menciona a un sacerdote transcrito «Guoham». Se propone como hipótesis fonética John J. Geoghan por el contexto, sin dar por confirmada la identificación literal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-burke-2014",
+      "a": "f34-francisco",
+      "b": "f34-burke",
+      "type": "Francisco nombra a Burke patrono de la Orden de Malta el 08/11/2014",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_burke_rl.html",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "El cambio del tribunal de la Signatura a patrono de la Orden de Malta está documentado, pero no acredita una sanción motivada por discrepancias.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-sarah-2014",
+      "a": "f34-francisco",
+      "b": "f34-sarah",
+      "type": "Francisco nombra a Sarah prefecto de Culto Divino el 23/11/2014",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_sarah_r.html",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "Nombramiento oficial de 2014; contradice una narrativa de exclusión permanente, sin probar afinidad ideológica.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-sarah-2021",
+      "a": "f34-francisco",
+      "b": "f34-sarah",
+      "type": "Francisco acepta la renuncia de Sarah al dicasterio el 20/02/2021",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2021/02/20/210220c.html",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "El boletín oficial dice aceptación de renuncia. Sarah había cumplido 75 años; no presenta la salida como sanción.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-muller-2012",
+      "a": "f34-benedicto",
+      "b": "f34-muller",
+      "type": "Benedicto XVI nombra a Müller prefecto de Doctrina de la Fe el 02/07/2012",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/roman_curia/congregations/cfaith/muller/rc_con_cfaith_doc_20160519_biografia-muller_en.html",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "La biografía oficial documenta nombramiento por Benedicto XVI; el dato por sí solo no prueba bandos o conflictos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-muller-2017",
+      "a": "f34-francisco",
+      "b": "f34-muller",
+      "type": "Conclusión del mandato quinquenal de Müller y sucesión de Ladaria en 2017",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2017/07/01/ren.html",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "Boletín del 1/07/2017: concluye mandato de cinco años. No consta en esa comunicación un motivo disciplinario.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-sarah-curia",
+      "a": "f34-sarah",
+      "b": "f34-curia",
+      "type": "Prefecto de un dicasterio de la Curia entre 2014 y 2021",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_sarah_r.html",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "Cargo oficial en la Congregación para el Culto Divino y la Disciplina de los Sacramentos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-muller-curia",
+      "a": "f34-muller",
+      "b": "f34-curia",
+      "type": "Prefecto de Doctrina de la Fe entre 2012 y 2017",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2017/07/01/ren.html",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "Oficio curial documentado por comunicado oficial de conclusión de su mandato.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f34-doc-law-geoghan",
+      "a": "f34-law",
+      "b": "f34-geoghan",
+      "type": "Investigación documental de denuncias, reasignaciones y gestión eclesiástica en Boston",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.pulitzer.org/winners/boston-globe-1",
+      "episodeId": "idealab-f34-frattini-francisco",
+      "note": "El Boston Globe publicó documentos, archivos judiciales y testimonios sobre el tratamiento del caso Geoghan por la archidiócesis. Esto no prueba todas las cifras ni formulaciones de la entrevista.",
       "podcastNotes": []
     }
   ]

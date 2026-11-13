@@ -1533,6 +1533,34 @@
       }
     },
     {
+      "id": "study-f34-burke-malta-2014",
+      "y": 2014.8520547945207,
+      "t": "Francisco traslada a Raymond Burke de la Signatura Apostólica al patronazgo de la Orden de Malta",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F34 · Eric Frattini contrastado documentalmente",
+      "g": [
+        "Europa"
+      ],
+      "d": "El boletín del 8 de noviembre de 2014 confirma que el papa Francisco nombró al cardenal Raymond Leo Burke patrono de la Soberana Orden de Malta y designó a Dominique Mamberti prefecto de la Signatura Apostólica. El acto no prueba por sí solo que el cambio de responsabilidades obedeciera a una sanción por oposición al papa.",
+      "investigation": {
+        "sourceOrder": 34,
+        "sourceTitle": "Luces y sombras del papa Francisco · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+        "date": "2014-11-08",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Fuente primaria oficial · Santa Sede",
+          "url": "https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_burke_rl.html"
+        },
+        "relatedTelarana": [
+          "f34-francisco",
+          "f34-burke"
+        ],
+        "methodologicalLimits": "La fecha y el nombramiento están documentados en la biografía oficial; las motivaciones políticas inferidas de la entrevista no están acreditadas y no se publican como hechos."
+      }
+    },
+    {
       "id": "study-f30-osce-minsk-2015",
       "y": 2015.1164383561643,
       "t": "El Grupo de Contacto Trilateral acuerda el paquete de medidas de Minsk II",
@@ -1659,6 +1687,35 @@
           "f09-psoe"
         ],
         "methodologicalLimits": "El resultado de las primarias está probado. Las declaraciones sobre financiación irregular o influencias no quedan verificadas por ello."
+      }
+    },
+    {
+      "id": "study-f34-muller-mandato-2017",
+      "y": 2017.495890410959,
+      "t": "Termina el mandato de Gerhard Müller en Doctrina de la Fe y se nombra a Luis Ladaria",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F34 · Eric Frattini contrastado documentalmente",
+      "g": [
+        "Europa"
+      ],
+      "d": "La Sala de Prensa de la Santa Sede anuncia que ha concluido el mandato quinquenal de Gerhard Ludwig Müller como prefecto de la Congregación para la Doctrina de la Fe y otras comisiones pontificias. El comunicado da las gracias al cardenal y comunica el nombramiento de Luis Francisco Ladaria Ferrer como sucesor; no establece en su texto un motivo disciplinario.",
+      "investigation": {
+        "sourceOrder": 34,
+        "sourceTitle": "Luces y sombras del papa Francisco · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+        "date": "2017-07-01",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Fuente primaria oficial · Santa Sede",
+          "url": "https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2017/07/01/ren.html"
+        },
+        "relatedTelarana": [
+          "f34-francisco",
+          "f34-muller",
+          "f34-curia"
+        ],
+        "methodologicalLimits": "El fin formal de mandato y la sucesión están acreditados; la supuesta pertenencia de Müller a un bloque coordinado contra Francisco es un relato atribuido al entrevistado, no un dato del boletín."
       }
     },
     {
@@ -2152,6 +2209,35 @@
           "f19-trump"
         ],
         "methodologicalLimits": "La fecha y la irrupción se apoyan en documentación oficial. El informe no convierte por sí solo el análisis político de los participantes del podcast en hechos acreditados, ni atribuye delitos individuales a partir de sus comentarios."
+      }
+    },
+    {
+      "id": "study-f34-sarah-renuncia-2021",
+      "y": 2021.13698630137,
+      "t": "Francisco acepta la renuncia de Robert Sarah como prefecto de Culto Divino",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F34 · Eric Frattini contrastado documentalmente",
+      "g": [
+        "Europa"
+      ],
+      "d": "La Santa Sede anuncia la aceptación por el papa Francisco de la renuncia del cardenal Robert Sarah a la prefectura de la Congregación para el Culto Divino y la Disciplina de los Sacramentos. Sarah había alcanzado los 75 años en junio de 2020. El comunicado registra un cambio administrativo, sin calificarlo como destitución sancionadora ni confirmar la interpretación de conflictos personales presentada en la entrevista.",
+      "investigation": {
+        "sourceOrder": 34,
+        "sourceTitle": "Luces y sombras del papa Francisco · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+        "date": "2021-02-20",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Fuente primaria oficial · Santa Sede",
+          "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2021/02/20/210220c.html"
+        },
+        "relatedTelarana": [
+          "f34-francisco",
+          "f34-sarah",
+          "f34-curia"
+        ],
+        "methodologicalLimits": "El boletín confirma la aceptación de la renuncia, no una destitución por desavenencias; el texto de Frattini no tiene minutajes ni cotejo de voces en esta fase."
       }
     },
     {
