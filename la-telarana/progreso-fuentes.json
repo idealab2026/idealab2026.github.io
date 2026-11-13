@@ -1400,7 +1400,7 @@
       "videoId": "j_5Tj0kIj2c",
       "title": "Luces y Sombras del Papa Francisco - Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c&t=1535s",
-      "status": "primera_revision_documental_de_txt_notebooklm_sin_minutajes",
+      "status": "segunda_revision_documental_parcial_curia_boston_sin_cotejo_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-34-francisco-primera-revision.js",
       "docTranscriptCreated": true,
@@ -1418,21 +1418,24 @@
       "transcriptAudioMatched": false,
       "audioVerified": false,
       "sourceSpeakingTurnsDiarized": false,
-      "sourceNodesDocumented": 14,
-      "sourceRelationsDocumented": 17,
-      "personsProfiled": 6,
-      "structuredProfiles": 6,
-      "impersonalAttributedSummaries": 8,
-      "verifiedIndependentChecks": 9,
-      "timelineVerifiedEventsCommitted": 4,
+      "sourceNodesDocumented": 19,
+      "sourceRelationsDocumented": 30,
+      "personsProfiled": 11,
+      "structuredProfiles": 11,
+      "impersonalAttributedSummaries": 13,
+      "verifiedIndependentChecks": 17,
+      "timelineVerifiedEventsCommitted": 7,
       "timelineEventIds": [
         "study-f34-cosea-2013",
         "study-f34-chile-carta-2018",
         "study-f34-barros-renuncia-2018",
-        "study-f34-raffaella-petrini-gobernacion-2025"
+        "study-f34-raffaella-petrini-gobernacion-2025",
+        "study-f34-burke-malta-2014",
+        "study-f34-muller-mandato-2017",
+        "study-f34-sarah-renuncia-2021"
       ],
       "imageRuntimeVerified": false,
-      "qualityNotes": "13/11/2026: primera lectura de TXT privado NotebookLM sin minutajes, 135278 caracteres, no cotejado contra audio y sin completitud acreditada. Doc editable sigue vacío para transcripción manual. 14 nodos y 17 aristas, 9 vínculos respaldados por actos de Santa Sede y Ministerio de Exteriores de Singapur; COSEA, Praedicate, carta Chile, renuncia Barros y Petrini. Opiniones sobre fracaso de reformas y supuesto robo de informes siguen como atribuciones sin probar. No se añaden minutos ficticios, no se considera terminado.",
+      "qualityNotes": "13/11/2026: segunda pasada por nombres de Curia y escándalo de Boston: 19 nodos, 30 aristas, 17 vínculos documentados independientes, 13 menciones atribuidas y 7 hitos. Burke (Malta 2014), Müller (fin del mandato 2017), Sarah (renuncia 2021) contrastados; Law/Geoghan con Globe/Pulitzer y boletín vaticano. «Guoham»→Geoghan es hipótesis fonética, sin cotejo de audio. Las supuestas resistencias concertadas y acusaciones no se elevan a hechos. Doc manual continúa vacío; TXT sin minutajes; revisión abierta.",
       "lastUpdated": "2026-11-13"
     }
   ],
@@ -1440,9 +1443,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 120,
+    "committedVerifiedEvents": 123,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 76,
+    "fromSourceInReview": 79,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1596,7 +1599,10 @@
         "study-f34-cosea-2013",
         "study-f34-chile-carta-2018",
         "study-f34-barros-renuncia-2018",
-        "study-f34-raffaella-petrini-gobernacion-2025"
+        "study-f34-raffaella-petrini-gobernacion-2025",
+        "study-f34-burke-malta-2014",
+        "study-f34-muller-mandato-2017",
+        "study-f34-sarah-renuncia-2021"
       ],
       "39": [
         "study-f39-descubrimiento-tumba-tutankamon-1922"
@@ -4044,7 +4050,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "primera_revision_documental_de_txt_notebooklm_sin_minutajes",
+        "status": "segunda_revision_documental_parcial_curia_boston_sin_cotejo_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -4068,33 +4074,33 @@
           "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1qypggnikGX6_0M3t6DgySOAV8hAFCIDa/view?usp=drivesdk",
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "untimedTranscriptNext": "Cotejar voces y nombres ASR, especialmente «Guoham»→Geoghan, y profundizar en el resto del TXT sin tiempos; investigar alegaciones financieras aún pendientes.",
           "manualTranscriptBlankConfirmed": true,
           "manualTranscriptPending": true,
           "untimedTranscriptReadbackVerified": true,
           "sourceFirstPassFromUntimedTXT": true,
-          "reviewStage": "primera_revision_documental_abierta",
+          "reviewStage": "segunda_revision_entidades_curia_boston_abierta",
           "audioVerified": false,
           "verifiedMinuteReferences": 0,
           "sourceSpeakingTurnsDiarized": false,
-          "methodologicalStatus": "Existe TXT de NotebookLM con ~135278 caracteres y sin tiempos, disponible en Drive privado, pero el Doc editable F34 está vacío. Fichas parciales no constituyen transcripción validada. Identidades y voz atribuidas por contexto de entrevista; audio sin cotejar. Se han verificado actos oficiales externos, no todas las acusaciones."
+          "methodologicalStatus": "Existe TXT de NotebookLM con ~135278 caracteres y sin tiempos, disponible en Drive privado, pero el Doc editable F34 está vacío. Fichas parciales no constituyen transcripción validada. Identidades y voz atribuidas por contexto de entrevista; audio sin cotejar. Se han verificado actos oficiales externos, no todas las acusaciones. Segunda lectura: cargos de Burke, Sarah, Müller y trayectoria Law/Geoghan cotejados con documentación externa; la oposición coordinada es solo testimonio de Frattini, y la identidad oral de Geoghan es provisional."
         },
         "analysisCoverage": {
-          "percent": 22,
-          "state": "primera_revision_documental_abierta_sin_audio_ni_minutajes",
+          "percent": 34,
+          "state": "segunda_revision_documental_abierta_sin_audio_ni_minutajes",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_de_texto_o_audio",
           "audioVerified": false,
           "signals": {
-            "entities": 14,
-            "relations": 17,
-            "biographies": 6,
-            "statements": 8,
-            "independentChecks": 9,
-            "verifiedTimelineEvents": 4,
+            "entities": 19,
+            "relations": 30,
+            "biographies": 11,
+            "statements": 13,
+            "independentChecks": 17,
+            "verifiedTimelineEvents": 7,
             "unverifiedAudioTimecodes": 0
           },
-          "nextAction": "Recuperar diarización y marcas temporales del vídeo; cotejar los pasajes sobre el presunto robo de informe COSEA, supuestas oposiciones internas y financiación del IOR; verificar exactitud del habla en la referencia a George Yeo."
+          "nextAction": "Revisar y cotejar audio del bloque sobre Burke, Sarah, Müller, Law y «Guoham»/Geoghan; ampliar entidades del resto del TXT; contrastar denuncias sobre COSEA/IOR sin asumirlas."
         }
       },
       {
