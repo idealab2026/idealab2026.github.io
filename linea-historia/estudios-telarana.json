@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "scope": "Acontecimientos fechados verificados durante la revisión de fuentes de La Telaraña. El episodio puede referirse al hecho, pero no constituye la fuente probatoria principal.",
   "reviewProtocol": {
     "required": [
@@ -3061,6 +3061,43 @@
           "f50-caza-brujas"
         ],
         "methodologicalLimits": "El relato audiovisual de 2024 no constituye prueba primaria de los procesos de 1692. Las estadísticas y el tipo de ejecución se basan en la institución histórica. La fuente F50 se conserva como debate de divulgación sin marcas temporales ni diarización comprobadas."
+      }
+    },
+    {
+      "id": "study-f26-francia-dgsi-palantir-senado-2026",
+      "y": 2026.3643835616438,
+      "t": "El Gobierno francés confirma ante el Senado la renovación del contrato DGSI–Palantir",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F26 · contraste parlamentario francés",
+      "d": "En respuesta publicada en el Journal officiel du Sénat de Francia el 14 de mayo de 2026, el Gobierno confirmó que la DGSI había renovado contratos de licencias y mantenimiento con Palantir mientras preparaba una solución tecnológica soberana. La respuesta señala salvaguardas técnicas y que el proveedor no tiene acceso al contenido de los datos. La fecha corresponde a la publicación de la respuesta oficial, no necesariamente a la firma de cada renovación contractual.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 26,
+        "sourceTitle": "F26 · Lorenzo Ramírez · IA, medios y sistema de control",
+        "sourceUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2026-05-14",
+        "confirmedBy": {
+          "label": "Sénat de France · respuesta del Gobierno publicada 14/05/2026",
+          "url": "https://www.senat.fr/questions/base/2025/qSEQ251207120.html"
+        },
+        "relatedTelarana": [
+          "f26-dgsi",
+          "f26-palantir",
+          "f26-episodio"
+        ],
+        "podcastTranscriptAnchor": {
+          "timecode": "01:01:56",
+          "seconds": 3716,
+          "videoUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw&t=3716s",
+          "sourceOrder": 26,
+          "evidenceType": "mencion_en_subtitulos_sin_cotejo_audio",
+          "limits": "La mención a contratos con inteligencia francesa no verifica tesis amplias sobre control político o acceso a datos."
+        },
+        "methodologicalLimits": "La respuesta parlamentaria permite confirmar contratos de licencia y mantenimiento de la DGSI con Palantir, pero no prueba su acceso al contenido de datos ni otras aseveraciones geopolíticas del entrevistado."
       }
     }
   ]
