@@ -921,7 +921,7 @@ window.IDEA_TELARANA_F72_REVIEW = {
     },
     {
       "id": "f72-shinbet",
-      "name": "Shin Bet (Shabak)",
+      "name": "Shin Bet",
       "kind": "Organización",
       "subtitle": "Servicio de seguridad interior de Israel, distinto del Mossad y de la inteligencia militar.",
       "note": "Servicio de seguridad interior de Israel, distinto del Mossad y de la inteligencia militar. Frattini distingue al Shin Bet del Mossad y del servicio de inteligencia militar de Israel.",
@@ -1411,7 +1411,7 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "type": "Explosiones de dispositivos empleados también por miembros de Hizbulá",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
-      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "source": "https://www.reuters.com/world/middle-east/netanyahu-approved-pager-attacks-against-hezbollah-spokesman-says-2024-11-11/",
       "episodeId": "idealab-f72-frattini",
       "note": "La oficina de derechos humanos de la ONU documentó las explosiones el 17/09/2024 y víctimas civiles, incluidos menores. La pertenencia individual de las personas afectadas no puede darse por probada.",
       "podcastNotes": []
@@ -2167,7 +2167,7 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "type": "La ONU documenta explosiones de buscapersonas, víctimas civiles y alarma humanitaria",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
-      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "source": "https://www.reuters.com/world/middle-east/netanyahu-approved-pager-attacks-against-hezbollah-spokesman-says-2024-11-11/",
       "episodeId": "idealab-f73-frattini",
       "note": "Las comunicaciones oficiales de la ONU del 18/09/2024 registran víctimas por explosiones masivas, incluidas menores. El foco sobre miembros de Hizbulá no transforma a todos los afectados en combatientes.",
       "podcastNotes": []
