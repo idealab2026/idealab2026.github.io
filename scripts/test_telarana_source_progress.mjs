@@ -116,8 +116,9 @@ const freshIds=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taM
 for(let i=0;i<freshIds.length;i++){
  const f=rows.find(x=>x.order===70+i);
  assert(f&&f.videoId===freshIds[i]&&f.duplicateOf===null,"F"+(70+i)+": falta vídeo o identificador");
- assert(f.tracking.docTranscriptionCreated&&f.tracking.manualTranscriptTemplateCreated&&f.tracking.manualTranscriptPending,"F"+f.order+": no está el Doc manual");
- assert(!f.tracking.transcriptContentImported&&!f.tracking.timecodedTranscriptStoredInDrive&&!f.tracking.untimedTranscriptStoredInDrive&&!f.tracking.inReview&&!f.tracking.complete,"F"+f.order+": transcripción falsamente completada");
+ assert(f.tracking.docTranscriptionCreated&&f.tracking.manualTranscriptTemplateCreated&&!f.tracking.manualTranscriptPending&&f.tracking.manualTranscriptReceived,"F"+f.order+": falta transcripción manual recibida");
+ assert(f.tracking.transcriptContentImported&&f.tracking.manualTranscriptTimecodedInNativeDoc&&f.tracking.transcriptCharactersReadBack>100000&&f.tracking.manualTimestampMarkers>700&&f.tracking.inReview&&!f.tracking.complete,"F"+f.order+": falta lectura de vuelta de transcripción o se cerró indebidamente");
+ assert(!f.tracking.audioVerified&&!f.tracking.timecodedTranscriptStoredInDrive&&!f.tracking.untimedTranscriptStoredInDrive,"F"+f.order+": no confundir Doc aportado con TXT independiente o audio verificado");
  assert(f.tracking.docTranscriptionUrl.startsWith("https://docs.google.com/document/d/"),"F"+f.order+": URL de Doc inválida");
  assert(!page.includes(f.videoId)&&!page.includes(f.tracking.docTranscriptionUrl),"El inventario privado no debe filtrarse a la web");
 }
