@@ -16,7 +16,7 @@ window.IDEA_TELARANA_F26_REVIEW = {
     "transcriptLastTimestamp": "01:11:08",
     "fullTranscriptPreservedInDrive": true,
     "transcriptCharactersReadBack": 134558,
-    "subtitleEvidenceAnchors": 16
+    "subtitleEvidenceAnchors": 18
   },
   "nodes": [
     {
