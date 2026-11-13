@@ -92,7 +92,7 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  assert.equal(sphere.length,1,'one coherent spherical body');
  assert.equal(pillBoxes.length,8,'one compact label per lobe');
  assert(gradients>=10,'each thematic region must use a radial fading gradient');
- assert.equal(rings.length,222,'thematic outlines must not add circular strokes');
+ assert.equal(rings.length,242,'thematic outlines must not add circular strokes');
  assert(pillBoxes.every(b=>b.h<=50),'no large rectangular theme panels');
  const body=sphere[0],cx=width/2,cy=height/2;
  assert(rings.every(p=>Math.hypot(p.x-cx,p.y-cy)<body.r*1.36),
@@ -145,4 +145,4 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  // Control de reanudación, disponible independientemente del sistema operativo.
  assert(graph.setMotion(true)===true);
 }
-console.log('OK: 7 zonas difuminadas sin círculos perimetrales, Historia, mano agarrando, 222 nodos, 5 resoluciones y zoom');
+console.log('OK: 8 zonas difuminadas sin círculos perimetrales, Historia e Iglesia, mano agarrando, 242 nodos, 5 resoluciones y zoom');
