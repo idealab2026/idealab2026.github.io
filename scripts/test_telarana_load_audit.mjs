@@ -78,6 +78,18 @@ assert(ctx.data.nodes.filter(n=>n.name==="Explosiones de buscapersonas en Líban
 assert(ctx.data.nodes.filter(n=>n.name==="Shin Bet").length===1,
  "Shin Bet y Shabak no deben generar fichas independientes por grafía");
 
+// Las dos entrevistas a Frattini sobre Hitler son fuentes distintas, pero no deben duplicar personas ni pruebas documentales.
+for(const name of ["Adolf Hitler","Theodor Morell","Pervitin (metanfetamina)","Hugo Blaschke","Hugh Trevor-Roper","Identificación odontológica de Hitler"]){
+ const matches=ctx.data.nodes.filter(x=>x.name===name);
+ assert(matches.length===1,"Duplicación al cruzar F71 y F74: "+name+" ("+matches.length+")");
+}
+for(const name of ["Theodor Morell","Identificación odontológica de Hitler"]){
+ const item=ctx.data.nodes.find(x=>x.name===name);
+ const episodes=new Set((item.podcastNotes||[]).map(n=>n.episodeId));
+ assert(episodes.has("idealab-f71-frattini")&&episodes.has("idealab-f74-frattini"),
+  "Pérdida de aportaciones de F71/F74 por fusión: "+name);
+}
+
 const summary=audit.reduce((n,r)=>n+r.added,0);
 assert.equal(summary,ctx.data.nodes.length,"Las altas de cada etapa no cuadran con el total");
 const ids=new Set(ctx.data.nodes.map(n=>n.id));
