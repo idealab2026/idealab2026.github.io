@@ -899,28 +899,29 @@
       "videoId": "EMZzh2ZpLj8",
       "title": "El PODER REAL que CONTROLA la UNIÓN EUROPEA desde las SOMBRAS | Lorenzo Ramírez",
       "sourceUrl": "https://www.youtube.com/watch?v=EMZzh2ZpLj8",
-      "status": "atribuciones_individuales_estructuradas_y_terminos_asr_auditados_audio_y_contraste_pendientes",
+      "status": "revision_cronologica_documental_ampliada_audio_sin_cotejar",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
-      "sourceNodesDocumented": 9,
-      "sourceRelationsDocumented": 8,
-      "verifiedIndependentChecks": 2,
-      "qualityNotes": "ASR integral (149.267 caracteres) consultado en Google Drive institucional. Segunda capa: 30 biografías separadas de tesis impersonales y atribuidas a la entrevista. Se ha documentado la firma del Tratado de París (18-04-1951) con archivo histórico del Parlamento Europeo. La Declaración Schuman 1950 ya estaba registrada; no duplicada. Tesis relativas a intereses estadounidenses, supuestos vínculos de dirigentes con servicios de inteligencia, corrupción, control de la Comisión Europea o promesas sobre OTAN se conservan como declaraciones no contrastadas en su alcance, sin generar aristas sustantivas. Audio, atribución de turnos, minutajes y QA de retratos aún pendientes.\nTercera revisión editorial: fichas completas con tema, declarante y estado; anclas literales de Drive contrastadas (29); identidades fonéticas no confirmadas marcadas como provisionales. Sin cotejo audiovisual ni validación externa integral.",
+      "sourceNodesDocumented": 20,
+      "sourceRelationsDocumented": 24,
+      "verifiedIndependentChecks": 7,
+      "qualityNotes": "ASR integral (149.267 caracteres) consultado en Google Drive institucional. Segunda capa: 30 biografías separadas de tesis impersonales y atribuidas a la entrevista. Se ha documentado la firma del Tratado de París (18-04-1951) con archivo histórico del Parlamento Europeo. La Declaración Schuman 1950 ya estaba registrada; no duplicada. Tesis relativas a intereses estadounidenses, supuestos vínculos de dirigentes con servicios de inteligencia, corrupción, control de la Comisión Europea o promesas sobre OTAN se conservan como declaraciones no contrastadas en su alcance, sin generar aristas sustantivas. Audio, atribución de turnos, minutajes y QA de retratos aún pendientes.\nTercera revisión editorial: fichas completas con tema, declarante y estado; anclas literales de Drive contrastadas (29); identidades fonéticas no confirmadas marcadas como provisionales. Sin cotejo audiovisual ni validación externa integral.\nCuarta revisión (13/11/2026): 12 anclas en TXT con timecodes (no cotejo de audio); 11 fichas y 16 relaciones añadidas al módulo F23; 7 relaciones documentadas por fuentes oficiales/académicas/prensa de referencia, 9 menciones o testimonios no acreditados. Identificación probable «Jack Swout»→Jacques Baud corroborada por Reglamento UE 2025/2568, sin certidumbre del nombre oral. Corrección del puesto de Merz en BlackRock (presidente consejo de supervisión, no director general) y separación empleo Macron/Rothschild vs afirmación sobre su elección; evento de sanciones 2025 registrado en Línea de la Historia.",
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "timelineVerifiedEventsCommitted": 1,
+      "timelineVerifiedEventsCommitted": 2,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
       "fullTranscriptVerifiedDriveReadback": true,
       "transcriptDocUrl": "https://docs.google.com/document/d/1XvT0smAnVehAq2Q55fOAMB58szsQUD9gsejA7Enn03Y/edit?usp=drivesdk",
       "transcriptCharacters": 149267,
-      "personsProfiled": 30,
-      "impersonalAttributedSummaries": 30,
+      "personsProfiled": 31,
+      "impersonalAttributedSummaries": 31,
       "personProfilesSourceFile": "la-telarana/personas-fuentes-23.js",
       "personBiographiesFirst": true,
       "timelineEventIds": [
-        "study-f23-tratado-paris-ceca-1951"
+        "study-f23-tratado-paris-ceca-1951",
+        "study-f23-jacques-baud-sancion-ue-2025"
       ],
       "relatedHistoricEventAlreadyExisting": [
         "study-f21-schuman-1950"
@@ -935,11 +936,12 @@
         "Yelsin": "Boris Yeltsin",
         "Medv": "Dmitri Medvédev"
       },
-      "lastUpdated": "2026-11-10",
-      "structuredProfiles": 30,
+      "lastUpdated": "2026-11-13",
+      "structuredProfiles": 31,
       "transcriptAnchorMatches": 29,
       "transcriptAnchorMisses": 0,
-      "audioVerified": false
+      "audioVerified": false,
+      "subtitleTimeAnchorsLocated": 12
     },
     {
       "order": 24,
@@ -1221,7 +1223,7 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 104,
+    "committedVerifiedEvents": 105,
     "fromReviewedSource": 37,
     "fromSourceInReview": 60,
     "publishedInPages": true,
@@ -3148,7 +3150,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 19,
-        "status": "atribuciones_individuales_estructuradas_y_terminos_asr_auditados_audio_y_contraste_pendientes",
+        "status": "revision_cronologica_documental_ampliada_audio_sin_cotejar",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -3159,10 +3161,10 @@
           "inReview": true,
           "imageAtGraphNode": "retratos_candidatos_o_iconos",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-13",
           "transcriptCharactersReadBack": 149267,
           "transcriptSource": "notebooklm_automatic_text_in_private_idealab_drive",
-          "structuredSourceStatements": 30,
+          "structuredSourceStatements": 31,
           "transcriptAnchorsMatched": 29,
           "transcriptAudioMatched": false,
           "timecodedTranscriptStoredInDrive": true,
@@ -3173,21 +3175,23 @@
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
-          "timecodedTranscriptContentImported": true
+          "timecodedTranscriptContentImported": true,
+          "subtitleTimeAnchorsLocated": 12,
+          "jacquesBaudIdentityStatus": "probable_con_reglamento_europeo_no_escuchado"
         },
         "analysisCoverage": {
-          "percent": 36,
+          "percent": 49,
           "state": "en_revision",
           "readyForDeepReview": true,
           "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
           "audioVerified": false,
           "signals": {
-            "entities": 9,
-            "relations": 8,
-            "biographies": 0,
-            "statements": 0,
-            "independentChecks": 2,
-            "verifiedTimelineEvents": 1,
+            "entities": 20,
+            "relations": 24,
+            "biographies": 31,
+            "statements": 12,
+            "independentChecks": 7,
+            "verifiedTimelineEvents": 2,
             "captionSegments": 4123,
             "expectedEntities": 12,
             "expectedStatements": 25
@@ -3202,7 +3206,7 @@
             "cronologia": 1.3,
             "qa": 2
           },
-          "nextAction": "Extraer declaraciones con minutajes y su atribución"
+          "nextAction": "Continuar revisión de los 4123 segmentos; cotejar audio y hablantes; contrastar alegaciones sobre Monnet, Fundación Ford y banca sin confundir trayectoria acreditada con control político."
         }
       },
       {
@@ -6254,9 +6258,9 @@
       },
       {
         "sourceOrder": 23,
-        "percent": 36,
+        "percent": 49,
         "segments": 4123,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+        "nextAction": "Continuar revisión de los 4123 segmentos; cotejar audio y hablantes; contrastar alegaciones sobre Monnet, Fundación Ford y banca sin confundir trayectoria acreditada con control político."
       },
       {
         "sourceOrder": 27,
@@ -6709,7 +6713,7 @@
             {
               "order": 26,
               "title": "La IA, los medios y el nuevo sistema de control | Lorenzo Ramírez #72 Minimal Design Talks",
-              "percent": 30,
+              "percent": 42,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
@@ -6718,7 +6722,7 @@
             {
               "order": 23,
               "title": "El PODER REAL que CONTROLA la UNIÓN EUROPEA desde las SOMBRAS | Lorenzo Ramírez",
-              "percent": 36,
+              "percent": 49,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
