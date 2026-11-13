@@ -2216,6 +2216,35 @@
       }
     },
     {
+      "id": "study-f20-identidad-digital-reglamento-vigor-2024",
+      "y": 2024.3825136612022,
+      "t": "Entra en vigor el Reglamento (UE) 2024/1183 sobre identidad digital europea",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F20 · EUR-Lex · texto normativo independiente",
+      "d": "El 20 de mayo de 2024 entra en vigor el Reglamento (UE) 2024/1183, publicado el 30 de abril, que modifica eIDAS e introduce el marco jurídico de las carteras europeas de identidad digital. Su artículo 5 bis, apartado 15, dispone que el uso de la cartera será voluntario y que no se perjudicará a quienes opten por otros medios; el apartado 16 impone garantías de privacidad y antirrastreo. Estas reglas están documentadas en el Diario Oficial, pero la existencia de salvaguardias jurídicas no garantiza por sí sola la ausencia de fallos o abusos en implementaciones futuras. F20 comenta la identidad digital, pero no se le atribuye una cita literal del número del reglamento.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2024-05-20",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 20,
+        "sourceTitle": "El experimento secreto con el que las élites nos controlan · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3545s",
+        "confirmedBy": {
+          "label": "EUR-Lex · Reglamento (UE) 2024/1183 y fecha de vigencia",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj"
+        },
+        "relatedTelarana": [
+          "f20-reg-2024-1183",
+          "f20-eudi-wallet",
+          "f20-identidad-digital"
+        ],
+        "methodologicalLimits": "Fecha y normas verificadas independientemente. Las hipótesis del entrevistado sobre el fin del anonimato o un control centralizado de la población no se desprenden automáticamente del reglamento. Las anclas del subtitulado no han sido cotejadas con el audio."
+      }
+    },
+    {
       "id": "study-f26-eu-ai-act-vigor-2024",
       "y": 2024.5833333333333,
       "t": "Entra en vigor el Reglamento de Inteligencia Artificial de la Unión Europea",
