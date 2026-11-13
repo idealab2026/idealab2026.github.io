@@ -1294,7 +1294,7 @@
       "videoId": "z-0I92HGceY",
       "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY",
-      "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+      "status": "segunda_revision_operaciones_inteligencia_documentacion_cruzada_con_f69_f73",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1303,24 +1303,25 @@
       "transcriptCharacters": 217030,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 9,
-      "sourceRelationsDocumented": 8,
+      "sourceNodesDocumented": 14,
+      "sourceRelationsDocumented": 16,
       "personsProfiled": 2,
-      "impersonalAttributedSummaries": 9,
+      "impersonalAttributedSummaries": 16,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
       "structuredProfiles": 2,
-      "verifiedIndependentChecks": 1,
+      "verifiedIndependentChecks": 4,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 1483,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "audioVerified": false,
       "sourceSpeakingTurnsDiarized": false,
       "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 1,
+      "timelineVerifiedEventsCommitted": 2,
       "timelineEventIds": [
-        "study-f72-presentacion-archivo-nuclear-iran-2018"
+        "study-f72-presentacion-archivo-nuclear-iran-2018",
+        "study-f72-dispositivos-libano-septiembre-2024"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.",
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F72 ampliada con Kidón, sayanim, Natanz, Hizbulá y explosiones de dispositivos. 14 nodos, 16 relaciones, 16 notas de subtítulos, 3 relaciones respaldadas por Knéset, CRS y ONU; 2018 archivo iraní ya documentado como hito propio. 2 acontecimientos de F72 (2018 y 2024), y 2 referencias cruzadas a hechos F69/F24 sin duplicación. La alegación sobre conocimiento previo del 7/10 y la lista de 5 estados en Stuxnet siguen no acreditadas. Los «sayanim» se registran como afirmación de la fuente, NO atributo de la población judía.",
       "lastUpdated": "2026-11-13"
     },
     {
@@ -1328,7 +1329,7 @@
       "videoId": "KxrKZU9T_6I",
       "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I",
-      "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+      "status": "segunda_revision_pegasus_marruecos_buscapersonas_cruce_f72_f69",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1337,22 +1338,24 @@
       "transcriptCharacters": 121620,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 9,
-      "sourceRelationsDocumented": 8,
-      "personsProfiled": 2,
-      "impersonalAttributedSummaries": 10,
+      "sourceNodesDocumented": 16,
+      "sourceRelationsDocumented": 21,
+      "personsProfiled": 4,
+      "impersonalAttributedSummaries": 20,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
-      "structuredProfiles": 2,
-      "verifiedIndependentChecks": 0,
+      "structuredProfiles": 4,
+      "verifiedIndependentChecks": 6,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 840,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "audioVerified": false,
       "sourceSpeakingTurnsDiarized": false,
       "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 0,
-      "timelineEventIds": [],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.",
+      "timelineVerifiedEventsCommitted": 1,
+      "timelineEventIds": [
+        "study-f73-israel-marruecos-declaracion-2020"
+      ],
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F73 pasa a 16 nodos, 21 relaciones y 20 notas. 6 relaciones con evidencia externa (tratado Marruecos–Israel, acuerdos de 2020, infecciones CCN/Pegasus, explosiones ONU y portavoz citado por Reuters). Marruecos no se equipara a autor acreditado de Pegasus contra Sánchez: La Moncloa confirmó infección, no perpetrador. Emiratos y Baréin firmaron acuerdos 15/09/2020, antes de la normalización con Marruecos en diciembre, lo que debilita la causalidad atribuida a Mohamed VI. Un hito propio de 22/12/2020 y referencias cruzadas al 7/10, Pegasus 2022 y Líbano 2024 sin duplicar. Todos los tiempos proceden de transcripción manual sin cotejo audiovisual.",
       "lastUpdated": "2026-11-13"
     },
     {
@@ -1392,9 +1395,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 111,
+    "committedVerifiedEvents": 113,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 67,
+    "fromSourceInReview": 69,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1557,7 +1560,11 @@
         "study-f70-praedicate-evangelium-2022"
       ],
       "72": [
-        "study-f72-presentacion-archivo-nuclear-iran-2018"
+        "study-f72-presentacion-archivo-nuclear-iran-2018",
+        "study-f72-dispositivos-libano-septiembre-2024"
+      ],
+      "73": [
+        "study-f73-israel-marruecos-declaracion-2020"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -5718,7 +5725,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+        "status": "segunda_revision_operaciones_inteligencia_documentacion_cruzada_con_f69_f73",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5738,7 +5745,7 @@
           "audioVerified": false,
           "verifiedMinuteReferences": 0,
           "folderDriveUrl": "https://drive.google.com/drive/folders/1jLK2gjtEX1H-RpmH7qRWPFAq5ZXNBv70",
-          "methodologicalStatus": "Google Doc privado aportado manualmente, texto confirmado por lectura integral; marcas temporales detectadas, no verificadas contra audio. Primera extracción temática y biográfica no exhaustiva; alegaciones no elevadas a hechos.",
+          "methodologicalStatus": "Google Doc privado aportado manualmente, texto confirmado por lectura integral; marcas temporales detectadas, no verificadas contra audio. Primera extracción temática y biográfica no exhaustiva; alegaciones no elevadas a hechos. Segunda pasada: documentos externos verificados y alegaciones atribuidas, referencias cruzadas con F69 y sin duplicación de historia. Audio sin cotejar.",
           "manualTranscriptReceived": true,
           "manualTranscriptReceivedAt": "2026-11-13",
           "driveReadbackVerified": true,
@@ -5747,25 +5754,29 @@
           "manualChapters": 29,
           "transcriptAudioMatched": false,
           "publisher": "Tiene Sentido Pódcast",
-          "publicationDate": "2026-09-28"
+          "publicationDate": "2026-09-28",
+          "crossSourceReferences": [
+            69,
+            73
+          ]
         },
         "analysisCoverage": {
-          "percent": 16,
-          "state": "primera_revision_abierta",
+          "percent": 27,
+          "state": "segunda_revision_documental_abierta",
           "readyForDeepReview": true,
-          "confidence": "indice_editorial_heuristico_no_cobertura_semantica",
+          "confidence": "indice_editorial_heuristico_no_cobertura_de_transcripcion_ni_audio",
           "audioVerified": false,
           "signals": {
-            "entities": 9,
-            "relations": 8,
+            "entities": 14,
+            "relations": 16,
             "biographies": 2,
-            "statements": 9,
-            "independentChecks": 1,
-            "verifiedTimelineEvents": 1,
+            "statements": 16,
+            "independentChecks": 4,
+            "verifiedTimelineEvents": 2,
             "manualTimestampMarkers": 1483,
             "chapters": 29
           },
-          "nextAction": "Comparar con F69/F73 para no duplicar operaciones; verificar Stuxnet, archivos de Irán, Pegasus, Aman y 8200 con documentación primaria."
+          "nextAction": "Cotejar audio de Stuxnet, captación, caso Eichmann y 7/10; comprobar documentación primaria de participantes en operaciones y claims sobre conocimiento previo, sin generalizar comunidades."
         }
       },
       {
@@ -5778,7 +5789,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+        "status": "segunda_revision_pegasus_marruecos_buscapersonas_cruce_f72_f69",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5798,7 +5809,7 @@
           "audioVerified": false,
           "verifiedMinuteReferences": 0,
           "folderDriveUrl": "https://drive.google.com/drive/folders/1N-ZtD2rYse5YG-JKsaMjaS_EytTq61Xr",
-          "methodologicalStatus": "Google Doc privado aportado manualmente, texto confirmado por lectura integral; marcas temporales detectadas, no verificadas contra audio. Primera extracción temática y biográfica no exhaustiva; alegaciones no elevadas a hechos.",
+          "methodologicalStatus": "Google Doc privado aportado manualmente, texto confirmado por lectura integral; marcas temporales detectadas, no verificadas contra audio. Primera extracción temática y biográfica no exhaustiva; alegaciones no elevadas a hechos. Segunda pasada: documentos externos verificados y alegaciones atribuidas, referencias cruzadas con F69 y sin duplicación de historia. Audio sin cotejar.",
           "manualTranscriptReceived": true,
           "manualTranscriptReceivedAt": "2026-11-13",
           "driveReadbackVerified": true,
@@ -5807,25 +5818,29 @@
           "manualChapters": 14,
           "transcriptAudioMatched": false,
           "publisher": "ConPdePodcast · Luis Usera",
-          "publicationDate": "2026-10-26"
+          "publicationDate": "2026-10-26",
+          "crossSourceReferences": [
+            69,
+            72
+          ]
         },
         "analysisCoverage": {
-          "percent": 13,
-          "state": "primera_revision_abierta",
+          "percent": 26,
+          "state": "segunda_revision_documental_abierta",
           "readyForDeepReview": true,
-          "confidence": "indice_editorial_heuristico_no_cobertura_semantica",
+          "confidence": "indice_editorial_heuristico_no_cobertura_de_transcripcion_ni_audio",
           "audioVerified": false,
           "signals": {
-            "entities": 9,
-            "relations": 8,
-            "biographies": 2,
-            "statements": 10,
-            "independentChecks": 0,
-            "verifiedTimelineEvents": 0,
+            "entities": 16,
+            "relations": 21,
+            "biographies": 4,
+            "statements": 20,
+            "independentChecks": 6,
+            "verifiedTimelineEvents": 1,
             "manualTimestampMarkers": 840,
             "chapters": 14
           },
-          "nextAction": "Revisar hipótesis sobre Pegasus, CNI, Marruecos y octubre de 2023; no publicar acusaciones personales como hechos sin pruebas."
+          "nextAction": "Contrastar con audio y documentación 5:35–07:54 (Mohamed VI/Pegasus), 47:40 (Stuxnet), 1:07:46 (7/10) y 1:23:25 (Líbano). Investigar cadenas de autoría, no inferirlas por infección."
         }
       },
       {
@@ -7072,20 +7087,22 @@
             {
               "order": 72,
               "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
-              "percent": 16,
+              "percent": 27,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
-              "requiresAudioVerification": true
+              "requiresAudioVerification": true,
+              "nextAction": "Cotejar audio de Stuxnet, captación, caso Eichmann y 7/10; comprobar documentación primaria de participantes en operaciones y claims sobre conocimiento previo, sin generalizar comunidades."
             },
             {
               "order": 73,
               "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
-              "percent": 13,
+              "percent": 26,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
-              "requiresAudioVerification": true
+              "requiresAudioVerification": true,
+              "nextAction": "Contrastar con audio y documentación 5:35–07:54 (Mohamed VI/Pegasus), 47:40 (Stuxnet), 1:07:46 (7/10) y 1:23:25 (Líbano). Investigar cadenas de autoría, no inferirlas por infección."
             },
             {
               "order": 74,
