@@ -165,8 +165,8 @@ assert(reg.sourceCatalog.entries.find(x=>x.order===71)?.analysisCoverage.percent
  reg.sourceCatalog.entries.find(x=>x.order===74)?.analysisCoverage.percent===27,
  "Ranking editorial F71/F74 no reconciliado");
 
-assert(feed.items.length===120&&reg.timeline.committedVerifiedEvents===120,
+assert(feed.items.length===123&&reg.timeline.committedVerifiedEvents===123,
   "Descuadre de hitos con la Línea de la Historia");
 assert(reg.sourceCatalog.entries.find(x=>x.order===34)?.videoId==="j_5Tj0kIj2c",
   "La fuente anterior de Frattini F34 no debe duplicarse");
-console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 120 hitos; Iglesia y Vaticano en 3D");
+console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 123 hitos; Iglesia y Vaticano en 3D");
