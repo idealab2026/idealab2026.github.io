@@ -1262,7 +1262,7 @@
       "videoId": "WPW8yHSduFA",
       "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=WPW8yHSduFA",
-      "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+      "status": "segunda_revision_historia_medica_y_muerte_con_evidencia_externa",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1271,22 +1271,25 @@
       "transcriptCharacters": 157543,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 7,
-      "sourceRelationsDocumented": 7,
-      "personsProfiled": 4,
-      "impersonalAttributedSummaries": 6,
+      "sourceNodesDocumented": 14,
+      "sourceRelationsDocumented": 18,
+      "personsProfiled": 7,
+      "impersonalAttributedSummaries": 16,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
-      "structuredProfiles": 4,
-      "verifiedIndependentChecks": 1,
+      "structuredProfiles": 7,
+      "verifiedIndependentChecks": 7,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 1006,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "audioVerified": false,
       "sourceSpeakingTurnsDiarized": false,
       "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 0,
-      "timelineEventIds": [],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.",
+      "timelineVerifiedEventsCommitted": 2,
+      "timelineEventIds": [
+        "study-f71-riefenstahl-triumph-1935",
+        "study-f71-suicidio-hitler-1945"
+      ],
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: Segunda revisión médica e histórica F71: 14 nodos, 18 relaciones, 16 notas ancladas al texto, 7 relaciones con publicaciones académicas o registros oficiales. F71 sitúa por error a Morell en el búnker durante el suicidio: historiografía documenta su salida 22–23 abril de 1945. Los tratamientos están apoyados por literatura médica pero no permiten atribuir a drogas genocidio ni decisiones concretas. Teorías 50/50 fuga Argentina y orientación/vida íntima no son hechos probados. Dos hitos propios (propaganda 1935 y muerte 1945), cruce con atentado de 1944. Audio 0 minutos cotejados.",
       "lastUpdated": "2026-11-13"
     },
     {
@@ -1363,7 +1366,7 @@
       "videoId": "82W2taMMsTo",
       "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
       "sourceUrl": "https://www.youtube.com/watch?v=82W2taMMsTo",
-      "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+      "status": "segunda_revision_historia_medica_y_muerte_con_evidencia_externa",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1372,22 +1375,24 @@
       "transcriptCharacters": 150603,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 7,
-      "sourceRelationsDocumented": 6,
-      "personsProfiled": 3,
-      "impersonalAttributedSummaries": 6,
+      "sourceNodesDocumented": 13,
+      "sourceRelationsDocumented": 16,
+      "personsProfiled": 6,
+      "impersonalAttributedSummaries": 15,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
-      "structuredProfiles": 3,
-      "verifiedIndependentChecks": 0,
+      "structuredProfiles": 6,
+      "verifiedIndependentChecks": 6,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 1019,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "audioVerified": false,
       "sourceSpeakingTurnsDiarized": false,
       "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 0,
-      "timelineEventIds": [],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.",
+      "timelineVerifiedEventsCommitted": 1,
+      "timelineEventIds": [
+        "study-f74-investigacion-odontologica-hitler-2018"
+      ],
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: Segunda revisión médica e histórica F74: 13 nodos, 16 relaciones, 15 notas ancladas al texto, 6 relaciones documentadas con investigación forense, USHMM, UConn y Archivos Nacionales. El análisis de fragmento craneal 2009 compatible con mujer NO invalida la identificación de restos dentales estudiados en 2018. Conjeturas sobre llegada de Hitler a Argentina, supuesta orientación y vida sexual NO se consideran probadas. Un hito propio: investigación odontológica 2018; muerte 1945 enlazada a hito de F71 y atentado 1944 cruzado sin duplicados. Audio 0 minutos cotejados.",
       "lastUpdated": "2026-11-13"
     }
   ],
@@ -1395,9 +1400,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 113,
+    "committedVerifiedEvents": 116,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 69,
+    "fromSourceInReview": 72,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1559,12 +1564,19 @@
         "study-f70-pius-xii-archive-open-2020",
         "study-f70-praedicate-evangelium-2022"
       ],
+      "71": [
+        "study-f71-riefenstahl-triumph-1935",
+        "study-f71-suicidio-hitler-1945"
+      ],
       "72": [
         "study-f72-presentacion-archivo-nuclear-iran-2018",
         "study-f72-dispositivos-libano-septiembre-2024"
       ],
       "73": [
         "study-f73-israel-marruecos-declaracion-2020"
+      ],
+      "74": [
+        "study-f74-investigacion-odontologica-hitler-2018"
       ],
       "pendiente-de-numero-frattini-150": [
         "study-vf150-eichmann-1960",
@@ -5665,7 +5677,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+        "status": "segunda_revision_historia_medica_y_muerte_con_evidencia_externa",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5694,25 +5706,31 @@
           "manualChapters": 20,
           "transcriptAudioMatched": false,
           "publisher": "Lo que tú digas · Alex Fidalgo",
-          "publicationDate": "2025-03-06"
+          "publicationDate": "2025-03-06",
+          "crossSourceReferences": [
+            74,
+            13,
+            69
+          ],
+          "documentaryContradictionReview": "Medicación/diarios Morell, salida del búnker 22–23/04/1945, suicidio 30/04, estudios odontológicos 2018, cráneo 2009 y propaganda 1935. Sin prueba suficiente de huida, causalidad farmacológica del Holocausto o identidad sexual atribuida."
         },
         "analysisCoverage": {
-          "percent": 12,
-          "state": "primera_revision_abierta",
+          "percent": 28,
+          "state": "segunda_revision_documental_abierta",
           "readyForDeepReview": true,
-          "confidence": "indice_editorial_heuristico_no_cobertura_semantica",
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audio",
           "audioVerified": false,
           "signals": {
-            "entities": 7,
-            "relations": 7,
-            "biographies": 4,
-            "statements": 6,
-            "independentChecks": 1,
-            "verifiedTimelineEvents": 0,
+            "entities": 14,
+            "relations": 18,
+            "biographies": 7,
+            "statements": 16,
+            "independentChecks": 7,
+            "verifiedTimelineEvents": 2,
             "manualTimestampMarkers": 1006,
             "chapters": 20
           },
-          "nextAction": "Cotejar testimonios médicos y memorias del entorno de Hitler; separar hechos de diagnósticos retrospectivos y de hipótesis sobre su muerte."
+          "nextAction": "Comprobar contra audio el pasaje ≈26:17 que sitúa a Morell en el búnker durante el suicidio; revisar medicación por días, separar diagnósticos hipotéticos y especulaciones sexuales, contrastar documentos odontológicos originales."
         }
       },
       {
@@ -5853,7 +5871,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+        "status": "segunda_revision_historia_medica_y_muerte_con_evidencia_externa",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5882,25 +5900,31 @@
           "manualChapters": 9,
           "transcriptAudioMatched": false,
           "publisher": "Vaquero Podcast",
-          "publicationDate": "2026-03-05"
+          "publicationDate": "2026-03-05",
+          "crossSourceReferences": [
+            71,
+            13,
+            69
+          ],
+          "documentaryContradictionReview": "Medicación/diarios Morell, salida del búnker 22–23/04/1945, suicidio 30/04, estudios odontológicos 2018, cráneo 2009 y propaganda 1935. Sin prueba suficiente de huida, causalidad farmacológica del Holocausto o identidad sexual atribuida."
         },
         "analysisCoverage": {
-          "percent": 12,
-          "state": "primera_revision_abierta",
+          "percent": 27,
+          "state": "segunda_revision_documental_abierta",
           "readyForDeepReview": true,
-          "confidence": "indice_editorial_heuristico_no_cobertura_semantica",
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audio",
           "audioVerified": false,
           "signals": {
-            "entities": 7,
-            "relations": 6,
-            "biographies": 3,
-            "statements": 6,
-            "independentChecks": 0,
-            "verifiedTimelineEvents": 0,
+            "entities": 13,
+            "relations": 16,
+            "biographies": 6,
+            "statements": 15,
+            "independentChecks": 6,
+            "verifiedTimelineEvents": 1,
             "manualTimestampMarkers": 1019,
             "chapters": 9
           },
-          "nextAction": "Cruzar material médico con F71 y Vaticano con F70; auditar hipótesis de fuga de Hitler antes de crear relaciones históricas."
+          "nextAction": "Revisar con audio pasajes 01:09–01:16 (destrucción restos, submarinos y análisis del cráneo), separar fragmento atribuido a una mujer en 2009 de estudios dentales de 2018, verificar documentos primarios y capítulos sexuales sin extrapolar hipótesis."
         }
       }
     ]
@@ -7078,11 +7102,12 @@
             {
               "order": 71,
               "title": "Las perversiones y adicciones de Hitler | Eric Frattini",
-              "percent": 12,
+              "percent": 28,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
-              "requiresAudioVerification": true
+              "requiresAudioVerification": true,
+              "nextAction": "Comprobar contra audio el pasaje ≈26:17 que sitúa a Morell en el búnker durante el suicidio; revisar medicación por días, separar diagnósticos hipotéticos y especulaciones sexuales, contrastar documentos odontológicos originales."
             },
             {
               "order": 72,
@@ -7107,11 +7132,12 @@
             {
               "order": 74,
               "title": "La vida secreta de Hitler: adicciones, hombres y menores | Eric Frattini #98",
-              "percent": 12,
+              "percent": 27,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
-              "requiresAudioVerification": true
+              "requiresAudioVerification": true,
+              "nextAction": "Revisar con audio pasajes 01:09–01:16 (destrucción restos, submarinos y análisis del cráneo), separar fragmento atribuido a una mujer en 2009 de estudios dentales de 2018, verificar documentos primarios y capítulos sexuales sin extrapolar hipótesis."
             }
           ]
         },
