@@ -1465,7 +1465,14 @@
           "f70-benedicto",
           "f70-gabriele"
         ],
-        "methodologicalLimits": "El indulto y la excarcelación constan en fuente primaria; no certifica el contenido de todas las alegaciones de la entrevista ni el número exacto de filtraciones."
+        "methodologicalLimits": "El indulto y la excarcelación constan en fuente primaria; no certifica el contenido de todas las alegaciones de la entrevista ni el número exacto de filtraciones.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 34,
+            "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+            "note": "F34 comenta el mismo contexto de reforma vaticana y el caso Vatileaks sin aportar minutajes fiables; se enlaza al hito ya existente, no se duplica."
+          }
+        ]
       }
     },
     {
@@ -1494,6 +1501,35 @@
           "cv26-fernandez-diaz"
         ],
         "methodologicalLimits": "El inicio se fija a julio de 2013 sin día exacto y las responsabilidades individuales se distinguen de la existencia de diligencias judiciales."
+      }
+    },
+    {
+      "id": "study-f34-coaea-2013",
+      "y": 2013.5424657534247,
+      "t": "Francisco crea la comisión económica COSEA para revisar la administración de la Santa Sede",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F34 · Eric Frattini contrastado documentalmente",
+      "g": [
+        "Europa"
+      ],
+      "d": "La Santa Sede publica el quirógrafo de Francisco que constituye una comisión de referencia sobre la organización económico-administrativa, conocida como COSEA. Su finalidad era recopilar documentación, asesorar sobre eficiencia, compras y transparencia. La constitución y los miembros constan oficialmente; el relato de F34 sobre la presunta desaparición violenta de un informe no ha sido corroborado.",
+      "investigation": {
+        "sourceOrder": 34,
+        "sourceTitle": "Luces y sombras del papa Francisco · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+        "date": "2013-07-18",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Fuente primaria oficial · Santa Sede",
+          "url": "https://www.vatican.va/content/francesco/en/letters/2013/documents/papa-francesco_20130718_chirografo-commissione-economica.html"
+        },
+        "relatedTelarana": [
+          "f34-francisco",
+          "f34-cosea",
+          "f34-yeo"
+        ],
+        "methodologicalLimits": "No se acreditan los informes presuntamente robados, el supuesto acceso a cajas fuertes ni su fecha. La creación de una comisión no equivale a éxito global de las reformas."
       }
     },
     {
@@ -1652,6 +1688,35 @@
       }
     },
     {
+      "id": "study-f34-chile-carta-2018",
+      "y": 2018.2657534246575,
+      "t": "Francisco reconoce errores graves de valoración en la crisis de abusos de Chile",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F34 · Eric Frattini contrastado documentalmente",
+      "g": [
+        "América"
+      ],
+      "d": "En una carta del 8 de abril de 2018 a los obispos chilenos, después de recibir el informe de sus enviados, Francisco reconoció errores graves en su valoración de la situación y pidió perdón a personas ofendidas. El reconocimiento es documento primario; las responsabilidades específicas de cada persona requieren informes independientes.",
+      "investigation": {
+        "sourceOrder": 34,
+        "sourceTitle": "Luces y sombras del papa Francisco · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+        "date": "2018-04-08",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Fuente primaria oficial · Santa Sede",
+          "url": "https://www.vatican.va/content/francesco/en/letters/2018/documents/papa-francesco_20180408_lettera-vescovi-cile.html"
+        },
+        "relatedTelarana": [
+          "f34-francisco",
+          "f34-carta-chile",
+          "f34-barros"
+        ],
+        "methodologicalLimits": "Una disculpa oficial no representa por sí misma resolución judicial ni exoneración de conductas pasadas."
+      }
+    },
+    {
       "id": "study-f72-presentacion-archivo-nuclear-iran-2018",
       "y": 2018.3260273972603,
       "t": "Israel presenta públicamente documentos del archivo nuclear iraní",
@@ -1749,6 +1814,35 @@
           "twp312-gurtel"
         ],
         "methodologicalLimits": "Fecha, resultado y participantes acreditados por el Diario de Sesiones y la nota del Congreso. El peso político concreto de Gürtel es una interpretación que debe presentarse separadamente."
+      }
+    },
+    {
+      "id": "study-f34-barros-renuncia-2018",
+      "y": 2018.441095890411,
+      "t": "El papa Francisco acepta la renuncia de Juan Barros como obispo de Osorno",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F34 · Eric Frattini contrastado documentalmente",
+      "g": [
+        "América"
+      ],
+      "d": "La Santa Sede anunció el 11 de junio de 2018 que Francisco había aceptado la renuncia de Juan Barros Madrid al gobierno pastoral de la diócesis chilena de Osorno y designó un administrador apostólico. El acto es verificable; por sí solo no constituye una condena penal ni establece toda la cronología de investigaciones sobre abusos.",
+      "investigation": {
+        "sourceOrder": 34,
+        "sourceTitle": "Luces y sombras del papa Francisco · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+        "date": "2018-06-11",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Fuente primaria oficial · Santa Sede",
+          "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2018/06/11/180611c.html"
+        },
+        "relatedTelarana": [
+          "f34-francisco",
+          "f34-barros",
+          "f34-carta-chile"
+        ],
+        "methodologicalLimits": "Acto administrativo eclesiástico documentado; no inferir delito cometido personalmente por el obispo sin pruebas separadas."
       }
     },
     {
@@ -2307,7 +2401,14 @@
           "f70-praedicate",
           "f70-curia"
         ],
-        "methodologicalLimits": "La aprobación de la norma prueba su existencia y vigencia, no el cumplimiento uniforme ni la ausencia de irregularidades."
+        "methodologicalLimits": "La aprobación de la norma prueba su existencia y vigencia, no el cumplimiento uniforme ni la ausencia de irregularidades.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 34,
+            "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+            "note": "F34 comenta el mismo contexto de reforma vaticana y el caso Vatileaks sin aportar minutajes fiables; se enlaza al hito ya existente, no se duplica."
+          }
+        ]
       }
     },
     {
@@ -2808,6 +2909,35 @@
           "on-marco-rubio"
         ],
         "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
+      }
+    },
+    {
+      "id": "study-f34-raffaella-petrini-gobernacion-2025",
+      "y": 2025.1616438356164,
+      "t": "Raffaella Petrini asume la presidencia de la Gobernación del Estado Vaticano",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F34 · Eric Frattini contrastado documentalmente",
+      "g": [
+        "Europa"
+      ],
+      "d": "La religiosa Raffaella Petrini asumió el 1 de marzo de 2025 la presidencia de la Comisión Pontificia para el Estado de la Ciudad del Vaticano y de su Gobernación, tras el nombramiento anunciado por Francisco el 15 de febrero. Fue la primera mujer en ejercer esa doble presidencia. Es un cargo del gobierno civil de la Ciudad del Vaticano, distinto de la jefatura de toda la Curia Romana.",
+      "investigation": {
+        "sourceOrder": 34,
+        "sourceTitle": "Luces y sombras del papa Francisco · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c",
+        "date": "2025-03-01",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "Fuente primaria oficial · Santa Sede",
+          "url": "https://vaticanstate.va/es/novedades/1495-el-papa-francisco-nombra-a-suor-raffaella-petrini-presidente-de-la-comision-pontificia-para-el-estado-de-la-ciudad-del-vaticano-y-presidente-de-la-gobernacion.html"
+        },
+        "relatedTelarana": [
+          "f34-francisco",
+          "f34-petrini",
+          "f34-gobernatorato"
+        ],
+        "methodologicalLimits": "Nombramiento y toma de posesión documentados oficialmente; valoraciones sobre su impacto real son juicios políticos distintos."
       }
     },
     {
