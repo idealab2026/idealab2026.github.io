@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[13,7,14,16,7],expectedEdges=[17,7,16,21,6],
+const expectedNodes=[13,14,14,16,13],expectedEdges=[17,18,16,21,16],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===36,
   "El inventario 74/71/36 está desincronizado");
@@ -66,7 +66,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===59&&totalExternal===17,
+assert(totalNotes===78&&totalExternal===29,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -123,8 +123,50 @@ assert(feed.items.find(e=>e.id==="study-v2-pegasus-revelacion-2022")?.investigat
 assert(feed.items.find(e=>e.id==="study-f24-ataques-hamas-israel-2023")?.investigation?.otherSourceMentions?.some(x=>x.sourceOrder===72)&&feed.items.find(e=>e.id==="study-f24-ataques-hamas-israel-2023")?.investigation?.otherSourceMentions?.some(x=>x.sourceOrder===73),"No se ha cruzado el 7/10 con ambas fuentes");
 assert(reg.sourceCatalog.entries.find(e=>e.order===72)?.analysisCoverage.percent===27&&reg.sourceCatalog.entries.find(e=>e.order===73)?.analysisCoverage.percent===26,"Ranking editorial F72/F73 no sincronizado");
 
-assert(feed.items.length===113&&reg.timeline.committedVerifiedEvents===113,
+
+const f71=ctx.window.IDEA_TELARANA_F71_REVIEW,f74=ctx.window.IDEA_TELARANA_F74_REVIEW;
+assert(f71.metadata.explicitContradictionReviews===2&&f74.metadata.explicitContradictionReviews===2,
+ "F71/F74: faltan contrastes explícitos de afirmaciones sensibles");
+assert(f71.metadata.transcriptAudioMatched===false&&f74.metadata.transcriptAudioMatched===false,
+ "Los textos no se han escuchado aún: cero validación del audio");
+assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===7&&
+ f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===6,
+ "Falta contrastar polifarmacia, más de un estudio dental y fin de Hitler");
+for(const id of ["f71-doc-morell-hitler","f71-doc-diarios-medicos","f71-doc-pervitin-wehrmacht",
+ "f71-doc-trevor-hitler","f71-doc-dental-hitler","f71-doc-blaschke-hitler",
+ "f74-doc-morell-hitler","f74-doc-dental-hitler","f74-doc-blaschke-hitler",
+ "f74-doc-skull-dental","f74-doc-eva-hitler","f74-doc-trevor-hitler"]){
+ const e=[...f71.edges,...f74.edges].find(x=>x.id===id);
+ assert(e&&e.source.startsWith("https://")&&!e.source.includes("youtube.com"),
+  "Vínculo documental sin respaldo externo: "+id);
+}
+for(const id of ["f71-mention-fuga","f74-mention-fuga"]){
+ const e=[...f71.edges,...f74.edges].find(x=>x.id===id);
+ assert(e&&e.confidence==="hipotesis"&&e.claimStatus==="alegacion_no_verificada",
+ "Las teorías de escape de Hitler no pueden elevarse a hechos: "+id);
+}
+for(const id of ["f71","f74"]){
+ const ep=(id==="f71"?f71:f74).nodes.find(n=>n.id===id+"-episodio");
+ assert(ep?.podcastNotes?.some(x=>x.status==="alegacion_no_verificada"),
+  "No hay advertencia explícita sobre afirmaciones no verificadas: "+id);
+}
+for(const [id,date,order] of [
+ ["study-f71-riefenstahl-triumph-1935","1935",71],
+ ["study-f71-suicidio-hitler-1945","1945-04-30",71],
+ ["study-f74-investigacion-odontologica-hitler-2018","2018-05-18",74]]){
+ const e=feed.items.find(x=>x.id===id);
+ assert(e&&e.investigation.date===date&&e.investigation.sourceOrder===order,
+  "Falta un hito documentado F71/F74: "+id);
+}
+assert(feed.items.find(x=>x.id==="study-f13-valquiria-1944")?.investigation?.otherSourceMentions?.some(x=>x.sourceOrder===71)&&
+ feed.items.find(x=>x.id==="study-f13-valquiria-1944")?.investigation?.otherSourceMentions?.some(x=>x.sourceOrder===74),
+ "El atentado de 1944 debe ser único y tener ambas referencias");
+assert(reg.sourceCatalog.entries.find(x=>x.order===71)?.analysisCoverage.percent===28&&
+ reg.sourceCatalog.entries.find(x=>x.order===74)?.analysisCoverage.percent===27,
+ "Ranking editorial F71/F74 no reconciliado");
+
+assert(feed.items.length===116&&reg.timeline.committedVerifiedEvents===116,
   "Descuadre de hitos con la Línea de la Historia");
 assert(reg.sourceCatalog.entries.find(x=>x.order===34)?.videoId==="j_5Tj0kIj2c",
   "La fuente anterior de Frattini F34 no debe duplicarse");
-console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 113 hitos; Iglesia y Vaticano en 3D");
+console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 116 hitos; Iglesia y Vaticano en 3D");
