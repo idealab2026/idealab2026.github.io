@@ -1225,7 +1225,7 @@
       "videoId": "rLGs5AXE5iQ",
       "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
-      "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+      "status": "segunda_revision_archivos_vaticano_curia_cuentas_contrastadas",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1234,24 +1234,27 @@
       "transcriptCharacters": 113341,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 8,
-      "sourceRelationsDocumented": 8,
-      "personsProfiled": 4,
-      "impersonalAttributedSummaries": 8,
+      "sourceNodesDocumented": 13,
+      "sourceRelationsDocumented": 17,
+      "personsProfiled": 6,
+      "impersonalAttributedSummaries": 11,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
-      "structuredProfiles": 4,
-      "verifiedIndependentChecks": 1,
+      "structuredProfiles": 6,
+      "verifiedIndependentChecks": 7,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 777,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
       "audioVerified": false,
       "sourceSpeakingTurnsDiarized": false,
       "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 1,
+      "timelineVerifiedEventsCommitted": 4,
       "timelineEventIds": [
-        "study-f70-benedicto-gabriele-indulto-2012"
+        "study-f70-benedicto-gabriele-indulto-2012",
+        "study-f70-vatican-archive-renamed-2019",
+        "study-f70-pius-xii-archive-open-2020",
+        "study-f70-praedicate-evangelium-2022"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.",
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11 segunda pasada F70: 5 nuevos nodos, 9 relaciones añadidas; 6 contrastes documentales adicionales (total 7) con normas oficiales del Vaticano y comunicación IOR. La frase sobre acceso exclusivo del papa/cardenales al Archivo no refleja la regla 2025 para investigadores. Los fondos de Pío XII se abrieron 2/03/2020; Praedicate Evangelium reorganizó la Curia en 2022, lo que limita la afirmación de inexistencia de reformas. Publicación de cuentas IOR no demuestra ausencia de irregularidades. Mantener marcadores ASR sin cotejo audiovisual.",
       "lastUpdated": "2026-11-13"
     },
     {
@@ -1389,9 +1392,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 108,
+    "committedVerifiedEvents": 111,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 64,
+    "fromSourceInReview": 67,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1548,7 +1551,10 @@
         "study-f50-juicios-salem-1692"
       ],
       "70": [
-        "study-f70-benedicto-gabriele-indulto-2012"
+        "study-f70-benedicto-gabriele-indulto-2012",
+        "study-f70-vatican-archive-renamed-2019",
+        "study-f70-pius-xii-archive-open-2020",
+        "study-f70-praedicate-evangelium-2022"
       ],
       "72": [
         "study-f72-presentacion-archivo-nuclear-iran-2018"
@@ -5591,7 +5597,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "texto_manual_cronometrado_recibido_primera_revision_editorial",
+        "status": "segunda_revision_archivos_vaticano_curia_cuentas_contrastadas",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5620,25 +5626,26 @@
           "manualChapters": 26,
           "transcriptAudioMatched": false,
           "publisher": "Tiene Sentido Pódcast",
-          "publicationDate": "2026-04-02"
+          "publicationDate": "2026-04-02",
+          "documentaryContradictionReview": "Reglas 2025 del Archivo Apostólico (acceso acreditado); Pío XII abierto en 2020; constitución Praedicate Evangelium 2022; informes IOR 2025 publicados en 2026. Se archivan los juicios atribuidos a F70 como tales."
         },
         "analysisCoverage": {
-          "percent": 18,
-          "state": "primera_revision_abierta",
+          "percent": 29,
+          "state": "segunda_revision_documental_abierta",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica",
           "audioVerified": false,
           "signals": {
-            "entities": 8,
-            "relations": 8,
-            "biographies": 4,
-            "statements": 8,
-            "independentChecks": 1,
-            "verifiedTimelineEvents": 1,
+            "entities": 13,
+            "relations": 17,
+            "biographies": 6,
+            "statements": 11,
+            "independentChecks": 7,
+            "verifiedTimelineEvents": 4,
             "manualTimestampMarkers": 777,
             "chapters": 26
           },
-          "nextAction": "Revisar la entrevista completa y contrastar archivos, instituciones y alegaciones financieras; cotejar voces, nombres y el audio del capítulo Vatileaks."
+          "nextAction": "Tercera pasada: revisar todas las afirmaciones sobre Vatileaks, IOR, abusos y relaciones con servicios de inteligencia; distinguir regla escrita, aplicación y alegaciones; cotejar voces y audio de 777 marcas."
         }
       },
       {
@@ -7046,11 +7053,12 @@
             {
               "order": 70,
               "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
-              "percent": 18,
+              "percent": 29,
               "reviewState": "en_revision",
               "timecodes": true,
               "untimedText": false,
-              "requiresAudioVerification": true
+              "requiresAudioVerification": true,
+              "nextAction": "Tercera pasada: revisar todas las afirmaciones sobre Vatileaks, IOR, abusos y relaciones con servicios de inteligencia; distinguir regla escrita, aplicación y alegaciones; cotejar voces y audio de 777 marcas."
             },
             {
               "order": 71,
