@@ -45,7 +45,7 @@ assert(q.sourceNodesDocumented===14&&q.sourceRelationsDocumented===17&&q.verifie
 const hist=JSON.parse(read("linea-historia/estudios-telarana.json"));
 assert(hist.items.length===120&&tracking.timeline.committedVerifiedEvents===120,"F34: historial no está sincronizado");
 for(const [id,date] of [
- ["study-f34-coaea-2013","2013-07-18"],["study-f34-chile-carta-2018","2018-04-08"],
+ ["study-f34-cosea-2013","2013-07-18"],["study-f34-chile-carta-2018","2018-04-08"],
  ["study-f34-barros-renuncia-2018","2018-06-11"],["study-f34-raffaella-petrini-gobernacion-2025","2025-03-01"]]){
  const evt=hist.items.find(e=>e.id===id);
  assert(evt?.investigation?.date===date&&evt.investigation.sourceOrder===34&&evt.investigation.confirmedBy.url.startsWith("https://"),
