@@ -114,7 +114,7 @@ for(const order of ["23","24"]){
  assert(dossiers.length===expected,"Han variado las menciones sin reconciliar la revisión F"+order);
  assert(dossiers.every(x=>x.structured),"No reintroducir resúmenes libres en la fuente "+order);
 }
-const safeStatuses=new Set(["alegacion_no_verificada","opinion_atribuida","mencion_contextual","identidad_pendiente","declaracion_de_parte"]);
+const safeStatuses=new Set(["alegacion_no_verificada","opinion_atribuida","mencion_contextual","identidad_pendiente","identidad_probable_documentada_no_cotejada_audio","declaracion_de_parte"]);
 for(const order of ["23","24"]){
  for(const [name,p] of Object.entries(lib.profiles)){
   for(const record of p.sources?.[order]||[]){
