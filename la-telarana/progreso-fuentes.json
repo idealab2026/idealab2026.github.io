@@ -1210,15 +1210,32 @@
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
       "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-      "status": "revision_en_curso_contexto_frattini",
+      "status": "segunda_pasada_procedencia_biografias_y_contrastes_en_revision",
       "reviewComplete": false,
-      "docTranscriptCreated": false,
+      "docTranscriptCreated": true,
       "transcriptDocHasFullText": false,
       "sourceNodesDocumented": 80,
       "sourceRelationsDocumented": 99,
       "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 7,
-      "qualityNotes": "Fuente 69 ya se encontraba en revisión antes de la atención prioritaria a 18 y 21. Repuesto en el array inReview para cuadrar el total, sin cambiar el estado probatorio."
+      "timelineVerifiedEventsCommitted": 2,
+      "qualityNotes": "13/11/2026: 80 enlaces temporales falsamente precisos anulados y 259 URLs de saltos de vídeo eliminadas por falta de marca fiable en el TXT NotebookLM. 11 fichas de entidad ampliadas (10 personas y Mossad), 8 relaciones verificadas con Yad Vashem, investigación gubernamental noruega y directorio oficial del Mossad. Dos hitos nuevos 1961 y 1974; los siete hitos externos de Vaquero #150 ya existentes siguen como investigación suplementaria sin numeración de fuente para no duplicarlos. 0 minutos de audio cotejados. Documento manual existe pero sigue vacío; revisión abierta.",
+      "sourcePrimaryModule": "la-telarana/podcast-vaquero-150.js",
+      "transcriptDocUrl": "https://docs.google.com/document/d/1BsiwKHey0vKw1-6gmMyftSQJpqanLOXfwFKoa4n1tVI/edit",
+      "untimedTranscriptDriveId": "1Zdx1Nd5CDYEo3kMkSjZx4W0eFJeQuhCa",
+      "untimedTranscriptCharacters": 99744,
+      "transcriptAudioMatched": false,
+      "verifiedMinuteReferences": 0,
+      "personsProfiled": 10,
+      "organisationsProfiled": 1,
+      "structuredStatements": 0,
+      "untimedAttributedSummaries": 80,
+      "verifiedIndependentChecks": 8,
+      "additionalRelatedSupplementalEvents": 7,
+      "timelineEventIds": [
+        "study-f69-eichmann-juicio-1961",
+        "study-f69-lillehammer-condenas-1974"
+      ],
+      "lastUpdated": "2026-11-13"
     },
     {
       "order": 70,
@@ -1443,9 +1460,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 123,
+    "committedVerifiedEvents": 125,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 79,
+    "fromSourceInReview": 81,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1609,6 +1626,10 @@
       ],
       "50": [
         "study-f50-juicios-salem-1692"
+      ],
+      "69": [
+        "study-f69-eichmann-juicio-1961",
+        "study-f69-lillehammer-condenas-1974"
       ],
       "70": [
         "study-f70-benedicto-gabriele-indulto-2012",
@@ -5606,18 +5627,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "en_revision",
+        "status": "segunda_pasada_procedencia_biografias_y_contrastes_en_revision",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
-          "docTranscriptionCreated": false,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1BsiwKHey0vKw1-6gmMyftSQJpqanLOXfwFKoa4n1tVI/edit",
           "complete": false,
           "inReview": true,
           "imageAtGraphNode": "parcial",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-13",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5630,36 +5651,49 @@
           "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1Zdx1Nd5CDYEo3kMkSjZx4W0eFJeQuhCa/view?usp=drivesdk",
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Conseguir transcripción cronometrada y cotejar audio; continuar análisis de afirmaciones sobre Mossad, Irán y operaciones con fuentes primarias.",
+          "manualTranscriptBlankConfirmed": true,
+          "reviewStage": "segunda_pasada_fuente_69_procedencia_corregida",
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "sourceSpeakingTurnsDiarized": false,
+          "documentaryEvidenceUrls": [
+            "https://wwv.yadvashem.org/yv/es/exhibitions/eichmann/operation-eichmann.asp",
+            "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
+            "https://mossad.gov.il/en/history"
+          ],
+          "methodologicalStatus": "Texto completo del TXT de NotebookLM leído de vuelta; 99.744 caracteres, sin minutajes fiables. El documento manual F69 está creado y vacío. En el grafo se retiraron 80 tiempos no verificables y 259 referencias de URL temporizadas. Biografías ampliadas con primarias y 8 vínculos reclasificados como hechos documentados; el resto del relato no está verificado automáticamente."
         },
         "analysisCoverage": {
-          "percent": 51,
-          "state": "en_revision",
-          "readyForDeepReview": false,
-          "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
+          "percent": 61,
+          "state": "segunda_pasada_documental_abierta_sin_audio_validado",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_porcentaje_real_de_audio_ni_transcripcion",
           "audioVerified": false,
           "signals": {
             "entities": 80,
             "relations": 99,
-            "biographies": 0,
+            "biographies": 10,
             "statements": 0,
-            "independentChecks": 0,
-            "verifiedTimelineEvents": 7,
+            "independentChecks": 8,
+            "verifiedTimelineEvents": 9,
             "captionSegments": 0,
             "expectedEntities": 12,
-            "expectedStatements": 20
+            "expectedStatements": 20,
+            "unverifiedAudioTimecodes": 0,
+            "narrativeNotesWithoutDiarization": 80
           },
           "breakdown": {
             "apertura": 5,
             "entidades": 15,
-            "biografias": 0,
+            "biografias": 10,
             "relaciones": 15,
             "declaraciones_atribuidas": 0,
-            "contrastes_documentales": 8.8,
+            "contrastes_documentales": 9,
             "cronologia": 5,
             "qa": 2
           },
-          "nextAction": "Obtener TXT con minutajes; aprovechar expediente previo"
+          "nextAction": "Cotejar contra audio los nombres, los turnos y las 80 notas sin tiempo; diferenciar 8 relaciones documentales de 91 vínculos todavía no confirmados externamente."
         }
       },
       {
@@ -6979,11 +7013,11 @@
       },
       {
         "sourceOrder": 69,
-        "percent": 51,
+        "percent": 61,
         "characters": 99744,
         "textType": "NotebookLM without timecodes",
-        "qaPriority": "normal",
-        "nextAction": "Review transcript-derived entities and attributed claims; timestamp verification pending"
+        "qaPriority": "high",
+        "nextAction": "Cotejar contra audio los nombres, los turnos y las 80 notas sin tiempo; diferenciar 8 relaciones documentales de 91 vínculos todavía no confirmados externamente."
       },
       {
         "sourceOrder": 25,
@@ -7140,11 +7174,12 @@
             {
               "order": 69,
               "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
-              "percent": 51,
+              "percent": 61,
               "reviewState": "en_revision",
               "timecodes": false,
               "untimedText": true,
-              "requiresAudioVerification": true
+              "requiresAudioVerification": true,
+              "nextAction": "Cotejar contra audio los nombres, los turnos y las 80 notas sin tiempo; diferenciar 8 relaciones documentales de 91 vínculos todavía no confirmados externamente."
             },
             {
               "order": 70,
