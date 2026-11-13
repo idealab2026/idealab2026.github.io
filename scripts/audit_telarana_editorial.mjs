@@ -71,7 +71,7 @@ assert(flagged.length<=114,"Han aumentado los resúmenes potencialmente superfic
 assert(statements.every(x=>x.structured),"Regresión: reaparecen fichas heredadas sin tema, declarante o estado");
 assert(structured.length>=331,"Regresión: el inventario 100% estructurado ha retrocedido");
 const completedSources={"10":15,"12":6,"14":16,"16":22,"17":15,"20":16,"22":13};
-const allowedStatuses=new Set(["alegacion_no_verificada","opinion_atribuida","mencion_contextual","identidad_pendiente","declaracion_de_parte"]);
+const allowedStatuses=new Set(["alegacion_no_verificada","opinion_atribuida","mencion_contextual","identidad_pendiente","identidad_probable_documentada_no_cotejada_audio","declaracion_de_parte"]);
 for(const [order,minimum] of Object.entries(completedSources)){
  const entries=statements.filter(x=>x.order===order);
  assert(entries.length>=minimum,"F"+order+": faltan expedientes tras la depuración");
@@ -88,7 +88,7 @@ for(const [order,minimum] of Object.entries(completedSources)){
   }
  }
 }
-const minimumStructuredBySource={"9":33,"11":28,"13":20,"18":36,"19":23,"21":35,"23":30,"24":23};
+const minimumStructuredBySource={"9":33,"11":28,"13":20,"18":36,"19":23,"21":35,"23":31,"24":23};
 for(const order of ["9","11","13","18","19","21","23","24"]){
  const entries=statements.filter(x=>x.order===order);
  assert(entries.length===minimumStructuredBySource[order],"Número inesperado de fichas en F"+order);
@@ -110,7 +110,7 @@ for(const [order,minimum] of Object.entries(minimumStructuredBySource)){
 }
 for(const order of ["23","24"]){
  const dossiers=statements.filter(x=>x.order===order);
- const expected=order==="23"?30:23;
+ const expected=order==="23"?31:23;
  assert(dossiers.length===expected,"Han variado las menciones sin reconciliar la revisión F"+order);
  assert(dossiers.every(x=>x.structured),"No reintroducir resúmenes libres en la fuente "+order);
 }
