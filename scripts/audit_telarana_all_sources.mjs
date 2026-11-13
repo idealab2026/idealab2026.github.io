@@ -5,11 +5,11 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 const feed=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
 const rows=feed.sourceCatalog?.entries||[];
-assert.equal(rows.length,69,"Inventario original alterado sin reconciliar");
+assert.equal(rows.length,74,"Inventario original alterado sin reconciliar");
 const orders=new Map(rows.map(x=>[x.order,x]));
 assert.equal(orders.size,rows.length,"Órdenes duplicados");
 const uniq=rows.filter(e=>e.duplicateOf==null),dupes=rows.filter(e=>e.duplicateOf!=null);
-assert.equal(uniq.length,66,"Número de fuentes únicas inconsistente");
+assert.equal(uniq.length,71,"Número de fuentes únicas inconsistente");
 assert.equal(dupes.length,3,"Revisar duplicados");
 for(const d of dupes)assert(orders.has(d.duplicateOf)&&orders.get(d.duplicateOf).duplicateOf==null,"Duplicado no apunta a canónica: "+d.order);
 const reviewed=new Map((feed.reviewed||[]).map(x=>[x.order,x]));
@@ -77,10 +77,10 @@ for(const row of rows){
 }
 assert.equal(stats.publishedReviewed,3,"Estados cerrados fuera de registro");
 assert.equal(stats.inReview,(feed.inReview||[]).filter(x=>orders.get(x.order)?.duplicateOf==null).length,"En revisión fuera de inventario");
-assert.equal(stats.notStarted,66-stats.publishedReviewed-stats.inReview,"Pendientes canónicas fuera de inventario");
+assert.equal(stats.notStarted,71-stats.publishedReviewed-stats.inReview,"Pendientes canónicas fuera de inventario");
 assert.equal(stats.confirmedTranscript,29,"22 Docs heredados + 7 TXT recuperados que antes faltaban");
 assert.equal(stats.timecodedTranscript,28,"Los 28 vídeos cronometrados deben estar registrados");
-assert.equal(stats.youtubeWithoutFullTranscript,33,"Vídeos sin transcripción íntegra en ninguno de los formatos");
+assert.equal(stats.youtubeWithoutFullTranscript,38,"Vídeos sin transcripción íntegra en ninguno de los formatos");
 const p8=report.find(x=>x.order===8);
 assert(p8.transcriptTextConfirmed&&p8.timecodedTranscriptStoredInDrive&&p8.transcriptLegacyDocTextConfirmed===false,
  "F8: nuevo TXT con tiempos no debe transformar la plantilla antigua en transcripción");
@@ -93,8 +93,8 @@ for(const x of report.filter(x=>x.canonicalOrder===x.order&&x.order>25&&x.order<
  else assert(!x.transcriptTextConfirmed,"Transcripción no recibida o no auditada F"+x.order);
 }
 assert(stats.canonicalSources===stats.publishedReviewed+stats.inReview+stats.notStarted);
-assert(feed.counts.uniqueSources===66&&feed.counts.duplicateEntries===3);
-assert(stats.publishedReviewed+dupes.length+stats.inReview+stats.notStarted===69);
+assert(feed.counts.uniqueSources===71&&feed.counts.duplicateEntries===3);
+assert(stats.publishedReviewed+dupes.length+stats.inReview+stats.notStarted===74);
 const flagged=report.filter(e=>e.status!=="duplicado"&&!e.audioVerified&&e.transcriptTextConfirmed).map(e=>e.order);
 const priority=[31,30,29,28,27,26,8,25,3,4,7,6,9,10,11,12,13,14,16,17,19,20,22,23,24,2,1,18,21].filter(o=>report.find(e=>e.order===o)?.transcriptTextConfirmed);
 const incompletePublished=report.filter(e=>e.publishedModuleWithoutTranscript).map(e=>e.order);
@@ -109,4 +109,4 @@ console.log(JSON.stringify(stats,null,2));
 console.log("ASR íntegro sin cotejo audiovisual:",flagged.join(", "));
 console.log("Módulos publicados sin transcripción íntegra:",incompletePublished.join(", ")||"ninguno");
 console.log("ASR externos parciales:",partialASR.join(", ")||"ninguno");
-console.log("OK: 69 entradas / 66 únicas / 3 duplicados / "+stats.confirmedTranscript+" textos completos en algún formato / "+stats.timecodedTranscript+" con minutajes / "+stats.inReview+" fuentes en revisión.");
+console.log("OK: 74 entradas / 71 únicas / 3 duplicados / "+stats.confirmedTranscript+" textos completos en algún formato / "+stats.timecodedTranscript+" con minutajes / "+stats.inReview+" fuentes en revisión.");
