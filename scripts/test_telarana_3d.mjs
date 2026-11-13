@@ -24,7 +24,8 @@ const env={
 };
 vm.runInNewContext(source,env);
 const Graph=env.window.IdeaLabGraph3D;
-assert.equal(Graph.topics.length,7);
+assert.equal(Graph.topics.length,8);
+assert.equal(Graph.topics.find(x=>x.id==="iglesia")?.label,"Iglesia y Vaticano","Falta sector Vaticano");
 assert.equal(Graph.topics.find(x=>x.id==='historia')?.label,'Historia','la categoría no debe nombrarse Historia y nazismo');
 
 function flush(t){
@@ -33,7 +34,7 @@ function flush(t){
  pending.forEach(fn=>fn(t));
 }
 const populations={
- inteligencia:50,oriente:25,espana:64,historia:28,
+ inteligencia:50,oriente:25,espana:64,historia:28,iglesia:20,
  tecnologia:9,finanzas:26,global:20
 };
 const nodes=[];
@@ -43,14 +44,14 @@ for(const [topic,total] of Object.entries(populations)){
    topic3d:topic,kind:'Persona',note:''});
  }
 }
-assert.equal(nodes.length,222);
+assert.equal(nodes.length,242);
 const edges=nodes.slice(1).map((n,i)=>({
  id:'edge'+i,a:nodes[i].id,b:n.id,
  confidence:i%4===0?'hipotesis':'documentado',type:'Prueba'
 }));
 const tint=new Set(Graph.topics.map(({id})=>({
  inteligencia:'#76d0ec',oriente:'#e6b978',espana:'#b9a3ea',
- historia:'#ec8f89',tecnologia:'#8bdbbd',
+ historia:'#ec8f89',iglesia:'#d4bbef',tecnologia:'#8bdbbd',
  finanzas:'#bbd68c',global:'#e6ad91'}[id])));
 
 for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540]]){
@@ -87,10 +88,10 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  const fitted=graph.fit();
  assert(Number.isFinite(fitted.zoom)&&fitted.zoom>0);
  flush(time);
- assert.equal(rings.length,222,'all entity nodes visible');
+ assert.equal(rings.length,242,'all entity nodes visible');
  assert.equal(sphere.length,1,'one coherent spherical body');
- assert.equal(pillBoxes.length,7,'one compact label per lobe');
- assert(gradients>=9,'each thematic region must use a radial fading gradient');
+ assert.equal(pillBoxes.length,8,'one compact label per lobe');
+ assert(gradients>=10,'each thematic region must use a radial fading gradient');
  assert.equal(rings.length,222,'thematic outlines must not add circular strokes');
  assert(pillBoxes.every(b=>b.h<=50),'no large rectangular theme panels');
  const body=sphere[0],cx=width/2,cy=height/2;

@@ -1,0 +1,83 @@
+/* F70–F74 · auditoría de textos privados recibidos, fichas atribuidas y sector eclesial. */
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+
+const read=p=>fs.readFileSync(p,"utf8");
+const ctx={window:{}};
+const file="la-telarana/fuentes-70-74-frattini-inicial.js";
+const source=read(file);
+vm.runInNewContext(source,ctx,{timeout:7000});
+const reg=JSON.parse(read("la-telarana/progreso-fuentes.json"));
+const feed=JSON.parse(read("linea-historia/estudios-telarana.json"));
+const html=read("la-telarana/index.html");
+const graph3d=read("la-telarana/graph-3d.js");
+const wf=read(".github/workflows/pages.yml");
+const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
+const expectedNodes=[8,7,9,9,7],expectedEdges=[8,7,8,8,6],
+      expectedMarkers=[777,1006,1483,840,1019];
+assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===36,
+  "El inventario 74/71/36 está desincronizado");
+assert(!source.includes("docs.google.com/document/d/"),
+  "Los documentos privados no deben entrar al bundle de La Telaraña");
+assert(html.includes('src="./fuentes-70-74-frattini-inicial.js'),
+  "No se importa la primera revisión de Frattini en la web");
+assert(wf.includes("cp la-telarana/fuentes-70-74-frattini-inicial.js dist/la-telarana/fuentes-70-74-frattini-inicial.js"),
+  "No se distribuyen las fichas F70–F74 en GitHub Pages");
+assert(graph3d.includes('["iglesia","Iglesia y Vaticano"'),
+  "No se ha creado el sector eclesial del orbe");
+assert(html.includes('<option value="iglesia">Iglesia y Vaticano</option>'),
+  "La nueva categoría no está disponible para seleccionar");
+let totalNotes=0,totalExternal=0;
+for(let i=0;i<videos.length;i++){
+ const n=i+70,mod=ctx.window["IDEA_TELARANA_F"+n+"_REVIEW"];
+ assert(mod,"No existe el módulo F"+n);
+ assert(mod.metadata.sourceOrder===n&&mod.metadata.url.includes(videos[i]),"Fuente mezclada F"+n);
+ assert(mod.nodes.length===expectedNodes[i]&&mod.edges.length===expectedEdges[i],"Conteo modular no reconciliado F"+n);
+ const ids=new Set(mod.nodes.map(x=>x.id));
+ assert(ids.size===mod.nodes.length&&mod.edges.every(x=>ids.has(x.a)&&ids.has(x.b)),"Aristas huérfanas o IDs repetidos F"+n);
+ assert(mod.metadata.timecodeMarkersDetected===expectedMarkers[i],
+   "Los marcadores de F"+n+" no coinciden con la transcripción");
+ assert(mod.metadata.transcriptAudioMatched===false&&mod.metadata.verifiedMinuteReferences===0,
+   "No dar por cotejados los turnos y minutajes de F"+n);
+ const row=reg.sourceCatalog.entries.find(x=>x.order===n),review=reg.inReview.find(x=>x.order===n);
+ assert(row&&review&&row.videoId===videos[i],"Falta seguimiento de F"+n);
+ assert(row.tracking.docTranscriptionCreated&&row.tracking.manualTranscriptReceived&&row.tracking.transcriptContentImported,
+   "La transcripción manual de F"+n+" no está registrada como recibida");
+ assert(row.tracking.transcriptCharactersReadBack>100000&&row.tracking.manualTimestampMarkers===expectedMarkers[i],
+   "F"+n+": texto insuficiente o marcadores no reconciliados");
+ assert(row.tracking.timecodedTranscriptStoredInDrive===false&&row.tracking.manualTranscriptTimecodedInNativeDoc,
+   "No confundir Google Doc manual con archivo TXT separado de NotebookLM");
+ assert(row.tracking.audioVerified===false&&row.tracking.complete===false&&row.tracking.inReview===true,
+   "F"+n+" no puede cerrarse por el solo hecho de disponer de texto");
+ assert(review.transcriptDocHasFullText&&review.verifiedMinuteReferences===0&&!review.reviewComplete,
+   "El expediente editorial de F"+n+" contradice el estado del audio");
+ assert(row.analysisCoverage.percent>0&&row.analysisCoverage.percent<30,
+   "Se ha tratado una primera lectura como revisión exhaustiva F"+n);
+ assert(mod.nodes.some(x=>x.name==="Eric Frattini"),"F"+n+" carece de ficha del entrevistado");
+ const notes=mod.nodes.flatMap(x=>x.podcastNotes||[]);
+ assert(notes.length>=6&&notes.every(x=>Number.isInteger(x.timeSec)&&x.timeSec>=0&&x.source.includes("youtube.com/watch?v=")&&x.status),
+   "F"+n+": faltan notas con tiempos y estado probatorio");
+ const documented=mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente");
+ assert(documented.every(x=>x.confidence==="documentado"&&x.source.startsWith("https://")&&!x.source.includes("youtube.com")),
+   "F"+n+": se ha elevado un testimonio a vínculo contrastado");
+ const remaining=mod.edges.filter(x=>x.claimStatus!=="hecho_verificado_independiente");
+ assert(remaining.every(x=>x.confidence==="hipotesis"),
+   "F"+n+": mención en entrevista codificada como relación probada");
+ totalNotes+=notes.length;totalExternal+=documented.length;
+}
+assert(totalNotes===39&&totalExternal===2,
+  "No cuadran las notas y los dos vínculos independientes de la primera pasada");
+const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
+      history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
+assert(history70?.investigation?.date==="2012-12-22"&&history70.investigation.confirmedBy.url.startsWith("https://press.vatican.va/"),
+  "Sin prueba primaria del indulto Vatileaks");
+assert(history72?.investigation?.date==="2018-04-30"&&history72.investigation.confirmedBy.url.startsWith("https://2017-2021.state.gov/"),
+  "Sin fuente pública para presentación del archivo nuclear 2018");
+assert(history72.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),
+  "F73 requiere vínculo cruzado con el hito F72, no duplicación");
+assert(feed.items.length===108&&reg.timeline.committedVerifiedEvents===108,
+  "Descuadre de hitos con la Línea de la Historia");
+assert(reg.sourceCatalog.entries.find(x=>x.order===34)?.videoId==="j_5Tj0kIj2c",
+  "La fuente anterior de Frattini F34 no debe duplicarse");
+console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" fichas de contenido con tiempo, "+totalExternal+" vínculos primarios y 108 hitos; Iglesia y Vaticano en 3D");

@@ -114,6 +114,8 @@ jobs:
         run: node scripts/test_telarana_editorial_quality.mjs
       - name: Auditar cobertura de las 71 fuentes canónicas
         run: node scripts/audit_telarana_all_sources.mjs
+      - name: Validar las cinco transcripciones manuales de Eric Frattini y sector Vaticano
+        run: node scripts/test_telarana_frattini_manual_f70_f74.mjs
       - name: Validar los expedientes iniciales de fuentes 26 y 27
         run: node scripts/test_telarana_sources26_27.mjs
       - name: Auditar conexiones y niveles probatorios de fuente 28
@@ -205,6 +207,7 @@ jobs:
           cp la-telarana/fuente-31-revision-inicial.js dist/la-telarana/fuente-31-revision-inicial.js
           cp la-telarana/fuente-39-egiptologia-revision.js dist/la-telarana/fuente-39-egiptologia-revision.js
           cp la-telarana/fuente-50-miguel-de-lys-revision.js dist/la-telarana/fuente-50-miguel-de-lys-revision.js
+          cp la-telarana/fuentes-70-74-frattini-inicial.js dist/la-telarana/fuentes-70-74-frattini-inicial.js
           cp la-telarana/photo-catalog.js dist/la-telarana/photo-catalog.js
           cp la-telarana/personas-fuentes-18-21.js dist/la-telarana/personas-fuentes-18-21.js
           cp la-telarana/personas-fuentes-09-10.js dist/la-telarana/personas-fuentes-09-10.js
@@ -246,6 +249,8 @@ jobs:
           grep -q "IDEA_TELARANA_ONENOTE" dist/la-telarana/one-note-seed.js
           test -s dist/la-telarana/podcast-vaquero-150.js
           grep -q "IDEA_TELARANA_PODCAST_150" dist/la-telarana/podcast-vaquero-150.js
+          test -s dist/la-telarana/fuentes-70-74-frattini-inicial.js
+          node --check dist/la-telarana/fuentes-70-74-frattini-inicial.js
           test -s dist/la-telarana/investigacion-frattini-contexto.js
           node --check dist/la-telarana/investigacion-frattini-contexto.js
           grep -q "IDEA_TELARANA_FRATTINI_EXTERNAL" dist/la-telarana/investigacion-frattini-contexto.js
