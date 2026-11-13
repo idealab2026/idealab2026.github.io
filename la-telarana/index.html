@@ -537,7 +537,8 @@ function mergeNewEpisode(v){
    var norm=normalizeEntityName(e.type);
    // Preferir conservar el vínculo que se parece más al del episodio.
    var matched=existing.find(function(x){return normalizeEntityName(x.type)===norm})||existing[0];
-   newNotes+=appendPodcastNotes(matched,e.podcastNotes||[{episodeId:v.metadata.id,title:v.metadata.title,publishedAt:v.metadata.publishedAt,timeSec:null,text:e.note,source:e.source,status:e.claimStatus||"alegacion"}]);
+   var extraEvidence=Array.isArray(e.podcastNotes)&&e.podcastNotes.length?e.podcastNotes:[{episodeId:v.metadata.id,title:v.metadata.title,publishedAt:v.metadata.publishedAt,timeSec:null,text:e.note,source:e.source,status:e.claimStatus||"alegacion"}];
+   newNotes+=appendPodcastNotes(matched,extraEvidence);
    if(!Array.isArray(matched.relatedTypes))matched.relatedTypes=[];
    if(norm!==normalizeEntityName(matched.type)&&!matched.relatedTypes.includes(e.type)){
     matched.relatedTypes.push(String(e.type).slice(0,140));
@@ -1045,7 +1046,7 @@ function showPodcastNotes(panel,notes,heading){
  notes.forEach(function(note){
   var entry=N("div",null,"podcast-entry"),title=N("small",(note.title||"Podcast")+" · "+(note.publishedAt||""));
   entry.append(title);
-  if(["rumor","alegacion","incierto","fuente-externa","contradiccion","verificacion-externa","resumen-editorial"].includes(note.status))entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad pendiente de cotejo":note.status==="fuente-externa"?"Documento externo (no es la transcripción)":note.status==="resumen-editorial"?"Sinopsis editorial; sin minuto verificado":note.status==="contradiccion"?"Contraste documental: discrepancia":note.status==="verificacion-externa"?"Datos y límites contrastados":"Alegación sin verificación independiente","rumour"));
+  if(["rumor","alegacion","incierto","fuente-externa","contradiccion","verificacion-externa","resumen-editorial","hecho_verificado_independiente","hecho_documentado_por_portavoz_citado"].includes(note.status))entry.append(N("div",note.status==="rumor"?"Rumor sin verificar":note.status==="incierto"?"Identidad pendiente de cotejo":note.status==="fuente-externa"?"Documento externo (no es la transcripción)":note.status==="resumen-editorial"?"Sinopsis editorial; sin minuto verificado":note.status==="hecho_verificado_independiente"?"Relación corroborada por documento externo":note.status==="hecho_documentado_por_portavoz_citado"?"Declaración oficial recogida por prensa":note.status==="contradiccion"?"Contraste documental: discrepancia":note.status==="verificacion-externa"?"Datos y límites contrastados":"Alegación sin verificación independiente","rumour"));
   var noteText=String(note.text||"");
   var genericNote=noteText.length<185&&/^(?:[^.]{0,65})?(?:se (?:le )?menciona|es (?:mencionad[oa]|citad[oa])|aparece en|mencionado en|dirigente .{0,25} mencionado en|se habla de|comentario sobre|se refiere a)/i.test(noteText);
   if(genericNote){
