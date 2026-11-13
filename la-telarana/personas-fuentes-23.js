@@ -2,7 +2,7 @@
 (function(){
 const extra={
   "version": 1,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-13",
   "sourceIds": {
     "23": "idealab-f23-source"
   },
@@ -49,7 +49,10 @@ const extra={
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "Jean Monet que era francés que era un tipo de la región de Cñac"
+            "transcriptAnchor": "Jean Monet que era francés que era un tipo de la región de Cñac",
+            "timeSec": 782,
+            "subtitleTimeAnchorAvailable": true,
+            "sourceVideoAtTime": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=782s"
           }
         ]
       }
@@ -70,7 +73,10 @@ const extra={
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "Robert Schuman es el autor de la declaración Suman"
+            "transcriptAnchor": "Robert Schuman es el autor de la declaración Suman",
+            "timeSec": 1689,
+            "subtitleTimeAnchorAvailable": true,
+            "sourceVideoAtTime": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=1689s"
           }
         ]
       }
@@ -133,7 +139,12 @@ const extra={
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "un tipo que se llama Shepard Stone"
+            "transcriptAnchor": "un tipo que se llama Shepard Stone",
+            "timeSec": 2222,
+            "subtitleTimeAnchorAvailable": true,
+            "sourceVideoAtTime": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=2222s",
+            "independentFact": "Responsable de relaciones culturales internacionales de la Fundación Ford según fuente universitaria",
+            "independentSource": "https://archive.dartmouthalumnimagazine.com/article/1967/4/1/foreign-affairs-expert"
           }
         ]
       }
@@ -154,7 +165,12 @@ const extra={
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "Macron es un tipo puesto ahí por la banca Rochilde"
+            "transcriptAnchor": "Macron es un tipo puesto ahí por la banca Rochilde",
+            "timeSec": 3919,
+            "subtitleTimeAnchorAvailable": true,
+            "sourceVideoAtTime": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=3919s",
+            "independentFact": "Empleo como banquero en Rothschild & Cie (2008–2012); no acredita tutela sobre su posterior mandato.",
+            "independentSource": "https://www.rtve.es/noticias/20170424/enmanuel-macron-banquero-para-europa-varias-velocidades-pero-solidaria/1523141.shtml"
           }
         ]
       }
@@ -175,7 +191,12 @@ const extra={
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "Federikmer en esencia es lo mismo es gente"
+            "transcriptAnchor": "Federikmer en esencia es lo mismo es gente",
+            "timeSec": 3924,
+            "subtitleTimeAnchorAvailable": true,
+            "sourceVideoAtTime": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=3924s",
+            "independentFact": "Presidencia del consejo de supervisión de BlackRock Asset Management Deutschland AG (2016–2020), no dirección general.",
+            "independentSource": "https://www.kas.de/en/web/geschichte-der-cdu/significant-figures/biogram-detail/-/content/friedrich-merz-2"
           }
         ]
       }
@@ -196,7 +217,10 @@ const extra={
             "transcriptVerified": true,
             "audioVerified": false,
             "minuteVerified": false,
-            "transcriptAnchor": "ursula Vonderleyen le puesto de Comisión Europea"
+            "transcriptAnchor": "ursula Vonderleyen le puesto de Comisión Europea",
+            "timeSec": 3928,
+            "subtitleTimeAnchorAvailable": true,
+            "sourceVideoAtTime": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=3928s"
           }
         ]
       }
@@ -638,6 +662,32 @@ const extra={
             "audioVerified": false,
             "minuteVerified": false,
             "transcriptAnchor": "en referencia también al famoso libro rojo de Mao"
+          }
+        ]
+      }
+    },
+    "Jacques Baud": {
+      "who": "Excoronel del ejército suizo y analista estratégico, autor de trabajos sobre política de seguridad; sancionado por el Consejo de la UE mediante Reglamento de ejecución 2025/2568 el 15 de diciembre de 2025. La inclusión está documentada; la exactitud de los motivos invocados es un asunto distinto.",
+      "portrait": {
+        "lang": "es",
+        "title": "Jacques Baud"
+      },
+      "sources": {
+        "23": [
+          {
+            "topic": "Sanciones europeas a analistas y controversia sobre desinformación",
+            "speaker": "Lorenzo Ramírez",
+            "statement": "El entrevistado menciona alrededor de 00:04:49 a un antiguo militar y analista cuyo nombre aparece en la transcripción automática como «Jack Swout» y afirma que fue sancionado y se congelaron sus activos. Por coincidencia con los datos del Reglamento (UE) 2025/2568, la identidad probable es Jacques Baud; queda pendiente escuchar el audio para confirmar la grafía y atribución del turno. Las valoraciones acerca de los motivos de la sanción pertenecen al entrevistado.",
+            "status": "identidad_probable_documentada_no_cotejada_audio",
+            "transcriptVerified": true,
+            "audioVerified": false,
+            "minuteVerified": false,
+            "subtitleTimeAnchorAvailable": true,
+            "timeSec": 289,
+            "transcriptAnchor": "se llama Jack Swout",
+            "independentFact": "El Consejo incorporó Jacques Baud a su lista de medidas restrictivas el 15/12/2025.",
+            "independentSource": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32025R2568",
+            "sourceVideoAtTime": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=289s"
           }
         ]
       }
