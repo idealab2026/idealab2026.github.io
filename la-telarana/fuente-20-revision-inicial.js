@@ -1,4 +1,4 @@
-/* Fuente 20: menciones textuales y clasificación probatoria, NO hechos ilícitos acreditados. */
+/* Fuente 20 · subtítulos con anclas y contraste del reglamento de identidad digital. Audio NO cotejado. */
 window.IDEA_TELARANA_F20_REVIEW = {
   "metadata": {
     "id": "idealab-f20-source",
@@ -10,13 +10,14 @@ window.IDEA_TELARANA_F20_REVIEW = {
     "transcriptStoredPrivately": true,
     "transcriptAudioMatched": false,
     "verifiedMinuteReferences": 0,
-    "reviewStage": "revision_cronometrada_parcial_11_anclas_y_dos_relaciones_primarias",
+    "reviewStage": "tercera_revision_identidad_digital_contraste_reglamento_2024_1183",
     "methodologicalNote": "Se incorporan 11 pasajes localizables por inicio de subtítulo; el ASR no está cotejado con audio y contiene nombres mal transcritos. Las afirmaciones sobre supuesto control encubierto de compañías no están probadas por la entrevista. Dos relaciones acotadas se acreditan con referencias externas de CIA y SEC.",
     "timecodedTranscriptAvailable": true,
     "timecodedTranscriptSegments": 4005,
     "timecodedTranscriptLastTimestamp": "02:10:45",
-    "timecodedTranscriptDriveUrl": "https://drive.google.com/file/d/1OOvVJCT9qcHaqE-xgV14taQs2mTweHA6/view",
-    "timecodedNotesIndexed": 11
+    "timecodedNotesIndexed": 16,
+    "reviewNote": "16 anclas ASR indexadas, audio sin cotejar. Reglamento UE 2024/1183 verificable, con voluntariedad y garantías antirrastreo; no valida ni descarta todos los riesgos futuros alegados por entrevistado.",
+    "independentDocumentaryRelations": 5
   },
   "nodes": [
     {
@@ -30,7 +31,26 @@ window.IDEA_TELARANA_F20_REVIEW = {
       "photo": "",
       "x": 8000,
       "y": 2700,
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "El experimento secreto y tecnología · Lorenzo Ramírez",
+          "publishedAt": "",
+          "timeSec": 3312,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3312s",
+          "status": "declaracion_atribuida_subtitulos_sin_cotejo_audio",
+          "text": "En ≈00:55:12 el entrevistado afirma que acabar con el anonimato permitiría controlar la «plaza pública» en internet. Es su interpretación y proyección política; no se acredita una obligación legal general de identificar toda navegación en el texto normativo contrastado."
+        },
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "El experimento secreto y tecnología · Lorenzo Ramírez",
+          "publishedAt": "",
+          "timeSec": 3673,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3673s",
+          "status": "declaracion_atribuida_subtitulos_sin_cotejo_audio",
+          "text": "En ≈01:01:13 la fuente califica el proyecto de identidad digital como control centralizado de datos sanitarios y biográficos. El Reglamento 2024/1183 contiene obligaciones de privacidad; la eficacia o el riesgo de abuso de futuros sistemas debe evaluarse separadamente con pruebas."
+        }
+      ]
     },
     {
       "id": "f20-lorenzo",
@@ -423,6 +443,74 @@ window.IDEA_TELARANA_F20_REVIEW = {
           "text": "Los interlocutores comentan TikTok e Instagram como ejemplos de vídeos cortos, atención y uso compulsivo. El fragmento no aporta estudios científicos específicos para confirmar sus explicaciones psicológicas."
         }
       ]
+    },
+    {
+      "id": "f20-identidad-digital",
+      "name": "Identidad digital",
+      "kind": "Concepto",
+      "subtitle": "Identificación electrónica y acreditación de atributos personales",
+      "note": "Identidad digital es un conjunto de mecanismos para acreditar determinados datos o atributos; no significa necesariamente abolir el anonimato en todas las comunicaciones. F20, 00:44:50–00:45:26, presenta una predicción de vigilancia generalizada como opinión del entrevistado, sin demostrarla.",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2690s",
+      "topic3d": "tecnologia",
+      "x": 9900,
+      "y": 3020,
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "El experimento secreto y tecnología · Lorenzo Ramírez",
+          "publishedAt": "",
+          "timeSec": 2690,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2690s",
+          "status": "declaracion_atribuida_subtitulos_sin_cotejo_audio",
+          "text": "Aproximadamente a 00:44:50 el entrevistado sostiene que implantar una identidad digital eliminaría el anonimato de internet. Esta es una tesis/predicción del episodio, no una consecuencia probada de todas las normativas de identificación digital."
+        },
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "El experimento secreto y tecnología · Lorenzo Ramírez",
+          "publishedAt": "",
+          "timeSec": 2704,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2704s",
+          "status": "declaracion_atribuida_subtitulos_sin_cotejo_audio",
+          "text": "En torno a 00:45:04 la entrevista afirma que las instituciones europeas tienen interés en promover la identidad digital y lo vincula a la extracción de datos. La intención de vigilancia universal que se le atribuye no está documentada por este pasaje por sí solo."
+        }
+      ]
+    },
+    {
+      "id": "f20-reg-2024-1183",
+      "name": "Reglamento (UE) 2024/1183",
+      "kind": "Norma",
+      "subtitle": "Marco europeo de identidad digital, vigente desde el 20 de mayo de 2024",
+      "note": "Modifica el Reglamento eIDAS 910/2014. Su artículo 5 bis, apartado 15, impone el uso voluntario de las carteras europeas de identidad digital y prohíbe perjudicar a quien no las utilice. El apartado 16 establece garantías técnicas contra la correlación de actividad y el seguimiento sin autorización explícita. La norma establece obligaciones; no demuestra automáticamente su cumplimiento material.",
+      "source": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj",
+      "topic3d": "tecnologia",
+      "x": 10140,
+      "y": 3020,
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-eudi-wallet",
+      "name": "Cartera Europea de Identidad Digital",
+      "kind": "Tecnología",
+      "subtitle": "Aplicación de identificación digital europea prevista por el Reglamento (UE) 2024/1183",
+      "note": "Su regulación europea establece que el uso es voluntario y que quienes no la adopten deben poder seguir usando otros medios de identificación. F20 utiliza el término «ID wallet» (≈00:59:05) y la describe como estrategia para centralizar datos; esa imputación de propósito es la perspectiva del entrevistado, no la finalidad jurídica expresada por el reglamento.",
+      "source": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=LEGISSUM%3A4812147",
+      "topic3d": "tecnologia",
+      "x": 10380,
+      "y": 3020,
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "El experimento secreto y tecnología · Lorenzo Ramírez",
+          "publishedAt": "",
+          "timeSec": 3545,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3545s",
+          "status": "declaracion_atribuida_subtitulos_sin_cotejo_audio",
+          "text": "En 00:59:05 se habla expresamente de «ID wallet» o billetera digital europea. El entrevistado la interpreta como instrumento para extender la identidad digital, atribuyéndole objetivos de control que no están probados por la mera mención."
+        }
+      ]
     }
   ],
   "edges": [
@@ -734,6 +822,86 @@ window.IDEA_TELARANA_F20_REVIEW = {
       "source": "https://www.sec.gov/Archives/edgar/data/1288776/000119312511103802/ddef14a.htm",
       "episodeId": "idealab-f20-source",
       "note": "Google documentó ante la SEC que Eric E. Schmidt fue su consejero delegado desde julio de 2001 hasta abril de 2011. El cargo no valida una teoría de control por la CIA.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-mention-identidad",
+      "a": "f20-episodio",
+      "b": "f20-identidad-digital",
+      "type": "Mención de la fuente; no equivale a hecho acreditado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2690s",
+      "episodeId": "idealab-f20-source",
+      "note": "En ≈00:44:50 el entrevistado vincula identidad digital y fin del anonimato. Se registra como afirmación atribuida, no como descripción demostrada de la legislación.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "El experimento secreto y tecnología · Lorenzo Ramírez",
+          "publishedAt": "",
+          "timeSec": 2690,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=2690s",
+          "status": "declaracion_atribuida_subtitulos_sin_cotejo_audio",
+          "text": "En ≈00:44:50 el entrevistado vincula identidad digital y fin del anonimato. Se registra como afirmación atribuida, no como descripción demostrada de la legislación."
+        }
+      ]
+    },
+    {
+      "id": "f20-mention-eudi-wallet",
+      "a": "f20-episodio",
+      "b": "f20-eudi-wallet",
+      "type": "Mención de la fuente; no equivale a hecho acreditado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3545s",
+      "episodeId": "idealab-f20-source",
+      "note": "En ≈00:59:05 la fuente utiliza la expresión «ID wallet» y la asocia a una supuesta estrategia de control de datos personales. El propósito alegado no se da por acreditado.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f20-source",
+          "title": "El experimento secreto y tecnología · Lorenzo Ramírez",
+          "publishedAt": "",
+          "timeSec": 3545,
+          "source": "https://www.youtube.com/watch?v=meEH-MaGn24&t=3545s",
+          "status": "declaracion_atribuida_subtitulos_sin_cotejo_audio",
+          "text": "En ≈00:59:05 la fuente utiliza la expresión «ID wallet» y la asocia a una supuesta estrategia de control de datos personales. El propósito alegado no se da por acreditado."
+        }
+      ]
+    },
+    {
+      "id": "f20-doc-eu-reg1183",
+      "a": "f20-eu",
+      "b": "f20-reg-2024-1183",
+      "type": "Aprobación de norma europea de identidad digital · 2024",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj",
+      "episodeId": "idealab-f20-source",
+      "note": "Reglamento (UE) 2024/1183 fue adoptado el 11 de abril de 2024, publicado el 30 de abril y entró en vigor el 20 de mayo. El texto crea el marco europeo de identidad digital y modifica eIDAS.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-doc-reg1183-wallet",
+      "a": "f20-reg-2024-1183",
+      "b": "f20-eudi-wallet",
+      "type": "Regulación y voluntariedad de la cartera europea",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj",
+      "episodeId": "idealab-f20-source",
+      "note": "El artículo 5 bis.15 del Reglamento (UE) 2024/1183 declara voluntario el uso de la cartera y prohíbe desventajas a quienes no la utilicen; 5 bis.16 impone garantías técnicas contra seguimiento o correlación no consentidos. Es regulación escrita, no una auditoría de implementaciones reales.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f20-doc-wallet-id",
+      "a": "f20-eudi-wallet",
+      "b": "f20-identidad-digital",
+      "type": "Herramienta de acreditación de identidad y atributos",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=LEGISSUM%3A4812147",
+      "episodeId": "idealab-f20-source",
+      "note": "La cartera europea permite presentar datos de identificación y atributos de manera electrónica para servicios públicos y privados, según el resumen oficial de EUR-Lex; el uso es voluntario según la norma.",
       "podcastNotes": []
     }
   ]
