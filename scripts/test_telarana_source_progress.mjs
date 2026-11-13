@@ -1,4 +1,4 @@
-/* Registro editorial interno: inventario 69, controles dinámicos y privacidad. */
+/* Registro editorial interno: inventario 74, controles dinámicos y privacidad. */
 import assert from "node:assert/strict";
 import fs from "node:fs";
 const feed=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
@@ -6,10 +6,10 @@ const page=fs.readFileSync("la-telarana/index.html","utf8");
 const workflow=fs.readFileSync(".github/workflows/pages.yml","utf8");
 const rows=feed.sourceCatalog.entries;
 assert.equal(feed.originalCatalogTotal,33);
-assert.equal(feed.total,69);
-assert.equal(rows.length,69);
+assert.equal(feed.total,74);
+assert.equal(rows.length,74);
 const orders=new Set(rows.map(e=>e.order));
-assert.equal(orders.size,69,"Numeración duplicada");
+assert.equal(orders.size,74,"Numeración duplicada");
 const reviewed=new Set(feed.reviewed.map(e=>e.order));
 const inReview=new Set(feed.inReview.map(e=>e.order));
 assert.equal(reviewed.size,feed.reviewed.length);
@@ -18,11 +18,11 @@ for(const id of reviewed)assert(!inReview.has(id),"Fuente simultáneamente termi
 for(const id of [...reviewed,...inReview])assert(orders.has(id),"ID fuera del catálogo");
 assert.equal(feed.counts.reviewedPublished,reviewed.size);
 assert.equal(feed.counts.inReview,inReview.size);
-assert.equal(feed.counts.notStarted,69-reviewed.size-inReview.size);
-assert.equal(feed.counts.pending,69-reviewed.size);
+assert.equal(feed.counts.notStarted,74-reviewed.size-inReview.size);
+assert.equal(feed.counts.pending,74-reviewed.size);
 assert.equal(feed.counts.missingOriginalUrl,rows.filter(e=>!e.originalUrl).length);
 assert.equal(feed.counts.duplicateEntries,rows.filter(e=>e.duplicateOf!==null).length);
-assert.equal(feed.counts.uniqueSources,66);
+assert.equal(feed.counts.uniqueSources,71);
 assert.equal(feed.inventory.notebooks.length,8);
 assert.equal(feed.inventory.notebooks.reduce((n,x)=>n+x.count,0),67);
 assert.equal(feed.inventory.recoveredOriginalEntries,33);
@@ -111,6 +111,17 @@ for(const order of [5,15]){
  const row=rows.find(e=>e.order===order);
  assert(row.tracking.transcriptContentImported===false,"No tratar un PDF o web como transcripción de vídeo");
 }
+// Las cinco nuevas fuentes tienen documento manual vacío; no son entrevistas transcritas.
+const freshIds=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
+for(let i=0;i<freshIds.length;i++){
+ const f=rows.find(x=>x.order===70+i);
+ assert(f&&f.videoId===freshIds[i]&&f.duplicateOf===null,"F"+(70+i)+": falta vídeo o identificador");
+ assert(f.tracking.docTranscriptionCreated&&f.tracking.manualTranscriptTemplateCreated&&f.tracking.manualTranscriptPending,"F"+f.order+": no está el Doc manual");
+ assert(!f.tracking.transcriptContentImported&&!f.tracking.timecodedTranscriptStoredInDrive&&!f.tracking.untimedTranscriptStoredInDrive&&!f.tracking.inReview&&!f.tracking.complete,"F"+f.order+": transcripción falsamente completada");
+ assert(f.tracking.docTranscriptionUrl.startsWith("https://docs.google.com/document/d/"),"F"+f.order+": URL de Doc inválida");
+ assert(!page.includes(f.videoId)&&!page.includes(f.tracking.docTranscriptionUrl),"El inventario privado no debe filtrarse a la web");
+}
+assert(rows.find(f=>f.order===34)?.videoId==="j_5Tj0kIj2c","F34 debe conservarse como la única entrada de su vídeo");
 const duplicate=rows.find(e=>e.order===36);
 assert.equal(duplicate.duplicateOf,4,"Conservar el vínculo a la fuente canónica");
 const s2=rows.find(e=>e.order===2),s6=rows.find(e=>e.order===6);
@@ -148,4 +159,4 @@ for(const i of [8,26,27,28,29,30,31]){
 assert(inReview.has(31)&&page.includes('fuente-31-revision-inicial.js')&&
  workflow.includes('cp la-telarana/fuente-31-revision-inicial.js dist/'),
  "F31 debe figurar abierta y distribuida en Pages");
-console.log("OK: 69 fuentes, "+reviewed.size+" revisadas, "+inReview.size+" en revisión; textos controlados y seguimiento fuera del sitio");
+console.log("OK: 74 fuentes, "+reviewed.size+" revisadas, "+inReview.size+" en revisión; textos controlados y seguimiento fuera del sitio");

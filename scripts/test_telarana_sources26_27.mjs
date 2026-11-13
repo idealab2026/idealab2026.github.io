@@ -62,7 +62,7 @@ for(const i of [26,27]){
 const prog=JSON.parse(load("la-telarana/progreso-fuentes.json"));
 const hist=JSON.parse(load("linea-historia/estudios-telarana.json"));
 assert(prog.counts.inReview>=25,"No perder la revisión de F26/27");
-assert.equal(prog.counts.notStarted,69-prog.counts.reviewedPublished-prog.counts.inReview,"No confundir entradas originales con fuentes canónicas");
+assert.equal(prog.counts.notStarted,prog.total-prog.counts.reviewedPublished-prog.counts.inReview,"No confundir entradas originales con fuentes canónicas");
 assert.equal(prog.timeline.committedVerifiedEvents,hist.items.length);
 for(const i of [26,27]){
  const row=prog.sourceCatalog.entries.find(x=>x.order===i);

@@ -1,16 +1,16 @@
 {
   "version": 2,
   "updatedAt": "2026-11-13",
-  "scope": "Registro de revisión interno de 69 entradas: 67 fuentes de 8 notebooks CULTURA y 2 aportaciones de usuario; tres duplicaciones de videos entre notebooks -> 66 fuentes distintas. La web La Telaraña NO debe publicar este listado. No presentar títulos como hechos verificados.",
-  "total": 69,
+  "scope": "Registro interno de 74 entradas: 67 originales de 8 notebooks CULTURA, 2 incorporaciones previas y 5 enlaces nuevos facilitados el 13/11/2026. Tres entradas duplicadas: 71 vídeos o fuentes canónicas distintas. Los cinco títulos nuevos siguen pendientes de verificación y sus Docs manuales NO contienen transcripción. Esta hoja/registro NO se publica en la página pública de La Telaraña.",
+  "total": 74,
   "counts": {
     "reviewedPublished": 3,
     "inReview": 31,
-    "notStarted": 35,
-    "pending": 66,
+    "notStarted": 40,
+    "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
-    "uniqueSources": 66
+    "uniqueSources": 71
   },
   "reviewed": [
     {
@@ -1443,13 +1443,78 @@
       "importLine": null,
       "status": "pendiente",
       "reviewComplete": false
+    },
+    {
+      "order": 70,
+      "notebook": "Aportación del usuario · 13/11/2026",
+      "title": "Vídeo rLGs5AXE5iQ · título pendiente de verificación",
+      "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
+      "originalUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2556s",
+      "videoId": "rLGs5AXE5iQ",
+      "type": "youtube",
+      "duplicateOf": null,
+      "importLine": null,
+      "status": "pendiente_revision",
+      "reviewComplete": false
+    },
+    {
+      "order": 71,
+      "notebook": "Aportación del usuario · 13/11/2026",
+      "title": "Vídeo WPW8yHSduFA · título pendiente de verificación",
+      "sourceUrl": "https://www.youtube.com/watch?v=WPW8yHSduFA",
+      "originalUrl": "https://youtu.be/WPW8yHSduFA?si=2KR9HywUGmofjXnr",
+      "videoId": "WPW8yHSduFA",
+      "type": "youtube",
+      "duplicateOf": null,
+      "importLine": null,
+      "status": "pendiente_revision",
+      "reviewComplete": false
+    },
+    {
+      "order": 72,
+      "notebook": "Aportación del usuario · 13/11/2026",
+      "title": "Vídeo z-0I92HGceY · título pendiente de verificación",
+      "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY",
+      "originalUrl": "https://youtu.be/z-0I92HGceY?si=r6pbtrbQ1i4id4D2",
+      "videoId": "z-0I92HGceY",
+      "type": "youtube",
+      "duplicateOf": null,
+      "importLine": null,
+      "status": "pendiente_revision",
+      "reviewComplete": false
+    },
+    {
+      "order": 73,
+      "notebook": "Aportación del usuario · 13/11/2026",
+      "title": "Vídeo KxrKZU9T_6I · título pendiente de verificación",
+      "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I",
+      "originalUrl": "https://youtu.be/KxrKZU9T_6I?si=CnthZ0wSCYfqrJnC",
+      "videoId": "KxrKZU9T_6I",
+      "type": "youtube",
+      "duplicateOf": null,
+      "importLine": null,
+      "status": "pendiente_revision",
+      "reviewComplete": false
+    },
+    {
+      "order": 74,
+      "notebook": "Aportación del usuario · 13/11/2026",
+      "title": "Vídeo 82W2taMMsTo · título pendiente de verificación",
+      "sourceUrl": "https://www.youtube.com/watch?v=82W2taMMsTo",
+      "originalUrl": "https://youtu.be/82W2taMMsTo?si=srSpYYumTMjRK2_b",
+      "videoId": "82W2taMMsTo",
+      "type": "youtube",
+      "duplicateOf": null,
+      "importLine": null,
+      "status": "pendiente_revision",
+      "reviewComplete": false
     }
   ],
   "inventory": {
     "identifiedOn": "2026-11-09",
     "source": "Inventario exportado desde NotebookLM, respaldado por CSV local en Descargas del Mac",
     "originalTotal": 33,
-    "titleUrlSyncState": "67/67 registros reconstruidos y 64 enlaces originales; 3 documentos sin URL, 2 vídeos externos aparte",
+    "titleUrlSyncState": "67/67 registros previos reconstruidos; cinco nuevos vídeos pendientes de confirmar título; cinco plantillas de transcripción manual en Drive.",
     "unavailableDoesNotMeanUnidentified": true,
     "notebooks": [
       {
@@ -1512,15 +1577,23 @@
     "exclusionNote": "Otros 18 cuadernos Cultura (279 entradas) no se incorporan automáticamente a La Telaraña; son en su mayoría libros y materiales de proyectos distintos.",
     "duplicateRecords": 3,
     "uniqueNotebookSources": 64,
-    "extraVideos": 2,
-    "uniqueTotalIncludingExtras": 66,
+    "extraVideos": 7,
+    "uniqueTotalIncludingExtras": 71,
     "allTitlesRecovered": true,
     "entriesWithoutOriginalURL": 3,
-    "metadataSource": "TSV de NotebookLM adjuntado por el usuario el 09/11/2026, validado 67/67"
+    "metadataSource": "TSV de NotebookLM adjuntado por el usuario el 09/11/2026, validado 67/67",
+    "manualUserSubmittedVideoIdsPendingTitles": [
+      "rLGs5AXE5iQ",
+      "WPW8yHSduFA",
+      "z-0I92HGceY",
+      "KxrKZU9T_6I",
+      "82W2taMMsTo"
+    ],
+    "manualTranscriptionDocsCreated": 5
   },
   "sourceCatalog": {
-    "provenance": "TSV NotebookLM aportado por usuario el 09/11/2026",
-    "numbering": "Los números 01–34 anteriores permanecen estables; 35–68 corresponden a nuevos notebooks; 69 Frattini #150",
+    "provenance": "TSV NotebookLM del 09/11/2026 + fuentes remitidas por el usuario, cinco nuevas el 13/11/2026; títulos de estas cinco por verificar.",
+    "numbering": "01–69: numeración anterior preservada (F34 duplicada en los enlaces del 13/11/2026); F70–F74: cinco nuevos vídeos aportados el 13/11/2026.",
     "entries": [
       {
         "order": 1,
@@ -5391,6 +5464,211 @@
           },
           "nextAction": "Obtener TXT con minutajes; aprovechar expediente previo"
         }
+      },
+      {
+        "order": 70,
+        "notebook": "Aportación del usuario · 13/11/2026",
+        "title": "Vídeo rLGs5AXE5iQ · título pendiente de verificación",
+        "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
+        "originalUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2556s",
+        "videoId": "rLGs5AXE5iQ",
+        "type": "youtube",
+        "duplicateOf": null,
+        "importLine": null,
+        "status": "pendiente_transcripcion_manual",
+        "reviewComplete": false,
+        "tracking": {
+          "initiated": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": false,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1FHNm6PPgXaARoRNXDSZNhIDf12QX1z-8pU3iUFnoc1A/edit",
+          "complete": false,
+          "inReview": false,
+          "imageAtGraphNode": "no_iniciada",
+          "imageRuntimeVerified": false,
+          "lastUpdated": "2026-11-13",
+          "manualTranscriptTemplateCreated": true,
+          "manualTranscriptPending": true,
+          "transcriptCharactersReadBack": 0,
+          "timecodedTranscriptStoredInDrive": false,
+          "untimedTranscriptStoredInDrive": false,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "folderDriveUrl": "https://drive.google.com/drive/folders/14-dg_8y_7y7SLgSbjO_oRbedysKwNcdI",
+          "methodologicalStatus": "Documento editable creado; NO contiene transcripción de vídeo ni citas verificadas. Título, canal y fecha pendientes de identificación."
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar_pendiente_transcripcion",
+          "readyForDeepReview": false,
+          "confidence": "sin_transcripcion_no_hay_cobertura",
+          "audioVerified": false,
+          "nextAction": "Esperar texto manual; verificar título y fuente; extraer personas, testimonios y relaciones sin inventar tiempos"
+        }
+      },
+      {
+        "order": 71,
+        "notebook": "Aportación del usuario · 13/11/2026",
+        "title": "Vídeo WPW8yHSduFA · título pendiente de verificación",
+        "sourceUrl": "https://www.youtube.com/watch?v=WPW8yHSduFA",
+        "originalUrl": "https://youtu.be/WPW8yHSduFA?si=2KR9HywUGmofjXnr",
+        "videoId": "WPW8yHSduFA",
+        "type": "youtube",
+        "duplicateOf": null,
+        "importLine": null,
+        "status": "pendiente_transcripcion_manual",
+        "reviewComplete": false,
+        "tracking": {
+          "initiated": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": false,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1CS-HbsJeZquwIn651viINoOBh0tPcU31d3WLj98QFvI/edit",
+          "complete": false,
+          "inReview": false,
+          "imageAtGraphNode": "no_iniciada",
+          "imageRuntimeVerified": false,
+          "lastUpdated": "2026-11-13",
+          "manualTranscriptTemplateCreated": true,
+          "manualTranscriptPending": true,
+          "transcriptCharactersReadBack": 0,
+          "timecodedTranscriptStoredInDrive": false,
+          "untimedTranscriptStoredInDrive": false,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "folderDriveUrl": "https://drive.google.com/drive/folders/1Ag7h-NdSvfdJlRX9Dw5P40pgKHKCoG5r",
+          "methodologicalStatus": "Documento editable creado; NO contiene transcripción de vídeo ni citas verificadas. Título, canal y fecha pendientes de identificación."
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar_pendiente_transcripcion",
+          "readyForDeepReview": false,
+          "confidence": "sin_transcripcion_no_hay_cobertura",
+          "audioVerified": false,
+          "nextAction": "Esperar texto manual; verificar título y fuente; extraer personas, testimonios y relaciones sin inventar tiempos"
+        }
+      },
+      {
+        "order": 72,
+        "notebook": "Aportación del usuario · 13/11/2026",
+        "title": "Vídeo z-0I92HGceY · título pendiente de verificación",
+        "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY",
+        "originalUrl": "https://youtu.be/z-0I92HGceY?si=r6pbtrbQ1i4id4D2",
+        "videoId": "z-0I92HGceY",
+        "type": "youtube",
+        "duplicateOf": null,
+        "importLine": null,
+        "status": "pendiente_transcripcion_manual",
+        "reviewComplete": false,
+        "tracking": {
+          "initiated": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": false,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1bw43jtwXp_TaeM-Ut_QH30ZPfO_fX_IPa3Z6q9gzPRY/edit",
+          "complete": false,
+          "inReview": false,
+          "imageAtGraphNode": "no_iniciada",
+          "imageRuntimeVerified": false,
+          "lastUpdated": "2026-11-13",
+          "manualTranscriptTemplateCreated": true,
+          "manualTranscriptPending": true,
+          "transcriptCharactersReadBack": 0,
+          "timecodedTranscriptStoredInDrive": false,
+          "untimedTranscriptStoredInDrive": false,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "folderDriveUrl": "https://drive.google.com/drive/folders/1jLK2gjtEX1H-RpmH7qRWPFAq5ZXNBv70",
+          "methodologicalStatus": "Documento editable creado; NO contiene transcripción de vídeo ni citas verificadas. Título, canal y fecha pendientes de identificación."
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar_pendiente_transcripcion",
+          "readyForDeepReview": false,
+          "confidence": "sin_transcripcion_no_hay_cobertura",
+          "audioVerified": false,
+          "nextAction": "Esperar texto manual; verificar título y fuente; extraer personas, testimonios y relaciones sin inventar tiempos"
+        }
+      },
+      {
+        "order": 73,
+        "notebook": "Aportación del usuario · 13/11/2026",
+        "title": "Vídeo KxrKZU9T_6I · título pendiente de verificación",
+        "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I",
+        "originalUrl": "https://youtu.be/KxrKZU9T_6I?si=CnthZ0wSCYfqrJnC",
+        "videoId": "KxrKZU9T_6I",
+        "type": "youtube",
+        "duplicateOf": null,
+        "importLine": null,
+        "status": "pendiente_transcripcion_manual",
+        "reviewComplete": false,
+        "tracking": {
+          "initiated": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": false,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1kt_5cfYr5nM7r341fAVXSHWU72QkiJsEOfjUSQy_AHc/edit",
+          "complete": false,
+          "inReview": false,
+          "imageAtGraphNode": "no_iniciada",
+          "imageRuntimeVerified": false,
+          "lastUpdated": "2026-11-13",
+          "manualTranscriptTemplateCreated": true,
+          "manualTranscriptPending": true,
+          "transcriptCharactersReadBack": 0,
+          "timecodedTranscriptStoredInDrive": false,
+          "untimedTranscriptStoredInDrive": false,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "folderDriveUrl": "https://drive.google.com/drive/folders/1N-ZtD2rYse5YG-JKsaMjaS_EytTq61Xr",
+          "methodologicalStatus": "Documento editable creado; NO contiene transcripción de vídeo ni citas verificadas. Título, canal y fecha pendientes de identificación."
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar_pendiente_transcripcion",
+          "readyForDeepReview": false,
+          "confidence": "sin_transcripcion_no_hay_cobertura",
+          "audioVerified": false,
+          "nextAction": "Esperar texto manual; verificar título y fuente; extraer personas, testimonios y relaciones sin inventar tiempos"
+        }
+      },
+      {
+        "order": 74,
+        "notebook": "Aportación del usuario · 13/11/2026",
+        "title": "Vídeo 82W2taMMsTo · título pendiente de verificación",
+        "sourceUrl": "https://www.youtube.com/watch?v=82W2taMMsTo",
+        "originalUrl": "https://youtu.be/82W2taMMsTo?si=srSpYYumTMjRK2_b",
+        "videoId": "82W2taMMsTo",
+        "type": "youtube",
+        "duplicateOf": null,
+        "importLine": null,
+        "status": "pendiente_transcripcion_manual",
+        "reviewComplete": false,
+        "tracking": {
+          "initiated": false,
+          "docTranscriptionCreated": true,
+          "transcriptContentImported": false,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1oo30-3o3_WadPyHCv5qrLh7LXLUpCdeQBXOSShQtQHs/edit",
+          "complete": false,
+          "inReview": false,
+          "imageAtGraphNode": "no_iniciada",
+          "imageRuntimeVerified": false,
+          "lastUpdated": "2026-11-13",
+          "manualTranscriptTemplateCreated": true,
+          "manualTranscriptPending": true,
+          "transcriptCharactersReadBack": 0,
+          "timecodedTranscriptStoredInDrive": false,
+          "untimedTranscriptStoredInDrive": false,
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "folderDriveUrl": "https://drive.google.com/drive/folders/1fof-XJcxFduggFuwSQuMOGbwZqA-dBhR",
+          "methodologicalStatus": "Documento editable creado; NO contiene transcripción de vídeo ni citas verificadas. Título, canal y fecha pendientes de identificación."
+        },
+        "analysisCoverage": {
+          "percent": 0,
+          "state": "sin_iniciar_pendiente_transcripcion",
+          "readyForDeepReview": false,
+          "confidence": "sin_transcripcion_no_hay_cobertura",
+          "audioVerified": false,
+          "nextAction": "Esperar texto manual; verificar título y fuente; extraer personas, testimonios y relaciones sin inventar tiempos"
+        }
       }
     ]
   },
@@ -6120,10 +6398,10 @@
       65
     ],
     "materialAvailable": {
-      "videosTotal": 62,
+      "videosTotal": 67,
       "withTimecodedCaptions": 28,
       "withUntimedCaptionTextOnly": 34,
-      "withNoText": 0,
+      "withNoText": 5,
       "reviewAudioVerified": 0
     },
     "untimedTextBacklog": [
@@ -6596,6 +6874,43 @@
         "Antes de F33, avanzar F34 y F69",
         "Conservar F18/F21 cerradas a nivel editorial pero sin afirmar cotejo audiovisual"
       ]
-    }
+    },
+    "manualTranscriptionQueue": [
+      {
+        "sourceOrder": 70,
+        "videoId": "rLGs5AXE5iQ",
+        "document": "https://docs.google.com/document/d/1FHNm6PPgXaARoRNXDSZNhIDf12QX1z-8pU3iUFnoc1A/edit",
+        "state": "template_created_pending_transcription",
+        "titleVerified": false
+      },
+      {
+        "sourceOrder": 71,
+        "videoId": "WPW8yHSduFA",
+        "document": "https://docs.google.com/document/d/1CS-HbsJeZquwIn651viINoOBh0tPcU31d3WLj98QFvI/edit",
+        "state": "template_created_pending_transcription",
+        "titleVerified": false
+      },
+      {
+        "sourceOrder": 72,
+        "videoId": "z-0I92HGceY",
+        "document": "https://docs.google.com/document/d/1bw43jtwXp_TaeM-Ut_QH30ZPfO_fX_IPa3Z6q9gzPRY/edit",
+        "state": "template_created_pending_transcription",
+        "titleVerified": false
+      },
+      {
+        "sourceOrder": 73,
+        "videoId": "KxrKZU9T_6I",
+        "document": "https://docs.google.com/document/d/1kt_5cfYr5nM7r341fAVXSHWU72QkiJsEOfjUSQy_AHc/edit",
+        "state": "template_created_pending_transcription",
+        "titleVerified": false
+      },
+      {
+        "sourceOrder": 74,
+        "videoId": "82W2taMMsTo",
+        "document": "https://docs.google.com/document/d/1oo30-3o3_WadPyHCv5qrLh7LXLUpCdeQBXOSShQtQHs/edit",
+        "state": "template_created_pending_transcription",
+        "titleVerified": false
+      }
+    ]
   }
 }
