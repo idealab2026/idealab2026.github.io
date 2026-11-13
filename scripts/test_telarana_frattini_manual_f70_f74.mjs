@@ -16,8 +16,8 @@ const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
 const expectedNodes=[13,14,14,16,13],expectedEdges=[17,18,16,21,16],
       expectedMarkers=[777,1006,1483,840,1019];
-assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===36,
-  "El inventario 74/71/36 está desincronizado");
+assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===37,
+  "El inventario 74/71/37 está desincronizado");
 assert(!source.includes("docs.google.com/document/d/"),
   "Los documentos privados no deben entrar al bundle de La Telaraña");
 assert(html.includes('src="./fuentes-70-74-frattini-inicial.js'),
