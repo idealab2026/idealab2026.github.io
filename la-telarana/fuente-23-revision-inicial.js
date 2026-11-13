@@ -690,7 +690,7 @@ window.IDEA_TELARANA_F23_REVIEW = {
       "type": "Presidente del consejo de supervisión · 2016–2020",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
-      "note": "La biografía de la Konrad-Adenauer-Stiftung documenta el cargo y fechas. No equivale a ser director general de BlackRock ni acredita la atribución de decisiones políticas al grupo.",
+      "note": "La biografía de la Konrad-Adenauer-Stiftung documenta que Friedrich Merz fue presidente del consejo de supervisión de BlackRock Asset Management Deutschland AG entre 2016 y 2020. No equivale a ser director general ni acredita que el grupo dictase decisiones políticas.",
       "source": "https://www.kas.de/en/web/geschichte-der-cdu/significant-figures/biogram-detail/-/content/friedrich-merz-2",
       "episodeId": "idealab-f23-source",
       "podcastNotes": []
