@@ -906,6 +906,34 @@
       }
     },
     {
+      "id": "study-f69-eichmann-juicio-1961",
+      "y": 1961.2739726027398,
+      "t": "Comienza en Jerusalén el juicio contra Adolf Eichmann",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F69 · contraste histórico documental",
+      "d": "El Tribunal de Distrito de Jerusalén abre el 11 de abril de 1961 el proceso penal 40/61 contra Adolf Eichmann, que había sido capturado en Argentina en mayo de 1960. La documentación histórica de Yad Vashem distingue el inicio del juicio del veredicto pronunciado meses después y de la posterior ejecución de la sentencia en 1962. La ceremonia judicial no se confunde con una operación de inteligencia adicional.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 69,
+        "sourceTitle": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "status": "hecho_documentado",
+        "date": "1961-04-11",
+        "datePrecision": "día",
+        "confirmedBy": {
+          "label": "Fuente documental externa",
+          "url": "https://wwv.yadvashem.org/yv/es/exhibitions/eichmann/eichmann-trial.asp"
+        },
+        "relatedTelarana": [
+          "vf150-adolf-eichmann",
+          "vf150-mossad"
+        ],
+        "methodologicalLimits": "Yad Vashem acredita la fecha del proceso judicial. La entrevista F69 carece de marcas temporales de audio verificadas, por lo que no se inventa una cita ni se presupone que cada detalle legal se mencionara literalmente."
+      }
+    },
+    {
       "id": "study-f21-usaid-1961",
       "y": 1961.7083333333333,
       "t": "La Ley de Ayuda Exterior de 1961 establece la base de USAID",
@@ -1073,6 +1101,35 @@
           "cv26-kissinger"
         ],
         "methodologicalLimits": "La autoría material atribuida a ETA cuenta con respaldo documental; la hipótesis de intervención de la CIA no se incorpora como hecho."
+      }
+    },
+    {
+      "id": "study-f69-lillehammer-condenas-1974",
+      "y": 1974.0849315068492,
+      "t": "Justicia noruega dicta condenas por el asesinato de Ahmed Bouchikhi en Lillehammer",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F69 · contraste histórico documental",
+      "d": "El tribunal de apelación de Eidsivating, Noruega, dicta el 1 de febrero de 1974 sentencia contra varios acusados por su participación en el asesinato de Ahmed Bouchikhi en Lillehammer, cometido el 21 de julio de 1973. Cinco personas resultan condenadas y una absuelta. La comisión oficial noruega de 2000 documenta el error de identificación y el resultado procesal; el acontecimiento del juicio es distinto del homicidio, ya registrado para 1973.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 69,
+        "sourceTitle": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
+        "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+        "status": "hecho_documentado",
+        "date": "1974-02-01",
+        "datePrecision": "día",
+        "confirmedBy": {
+          "label": "Fuente documental externa",
+          "url": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3"
+        },
+        "relatedTelarana": [
+          "vf150-ahmed-bouchiki",
+          "vf150-mossad",
+          "vf150-ali-hassan-salameh"
+        ],
+        "methodologicalLimits": "La resolución judicial de 1974 está reflejada en la investigación oficial noruega NOU 2000:6. No se atribuyen al entrevistado detalles jurídicos no cotejados ni se infiere responsabilidad individual de otras personas no condenadas."
       }
     },
     {
