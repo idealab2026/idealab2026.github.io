@@ -24,10 +24,12 @@ assert(!workflow.includes("cp la-telarana/progreso-fuentes.json dist/"),"Se ha f
 const track=JSON.parse(read("la-telarana/progreso-fuentes.json")),f20=track.inReview.find(e=>e.order===20);
 assert(f20&&f20.personsProfiled>=16&&!f20.reviewComplete,"Revisión documental indebidamente cerrada");
 assert(f20.transcriptAudioMatched===false&&f20.verifiedMinuteReferences===0,"Cotejo de audio inventado");
-assert(f20.timelineVerifiedEventsCommitted===0,"Duplicación de fechas de otras fuentes");
+assert(f20.timelineVerifiedEventsCommitted===1,"Falta el hito propio EUDI de F20");
 assert(track.nextSource.order>20,"No se puede retroceder a una fuente ya revisada");
 const timeline=JSON.parse(read("linea-historia/estudios-telarana.json"));
-assert(!timeline.items.some(e=>e.investigation?.sourceOrder===20),"Una fuente sin hitos originales no debe crear duplicados");
+assert(timeline.items.filter(e=>e.investigation?.sourceOrder===20).length===1,"No debe duplicarse el hito EUDI de F20");
+const identityEvent=timeline.items.find(e=>e.id==="study-f20-identidad-digital-reglamento-vigor-2024");
+assert(identityEvent?.investigation?.date==="2024-05-20"&&identityEvent.investigation.confirmedBy.url.includes("eur-lex.europa.eu"),"El EUDI 2024 carece de prueba documental");
 const stargate=timeline.items.find(e=>e.id==="study-f21-stargate-2025");
 assert(stargate&&stargate.investigation.otherSourceMentions?.some(e=>e.sourceOrder===20),"Falta referencia F20 al hecho F21");
 assert(track.timeline.committedVerifiedEvents===timeline.items.length,"No cuadra el inventario de acontecimientos");
