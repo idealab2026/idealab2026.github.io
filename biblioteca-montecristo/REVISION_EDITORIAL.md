@@ -14,18 +14,20 @@
 
 | Estado provisional | Imágenes |
 |---|---:|
-| PENDIENTE DE CONTRASTE | 45 |
+| PENDIENTE DE CONTRASTE | 43 |
 | AJUSTE OPCIONAL | 2 |
 | VERIFICAR DATOS | 2 |
 | REVISAR ATRIBUCIÓN | 14 |
-| CORREGIR | 2 |
-| BLOQUEADA | 4 |
+| CORREGIR | 3 |
+| BLOQUEADA | 5 |
 | **Total** | **69** |
 
 ## Incidencias editoriales concretas
 
 | GitHub | Obra | Acción |
 |---|---|---|
+| [#34](https://github.com/idealab2026/idealab2026.github.io/issues/34) | Montecristo II · capítulo 55 | **BLOQUEADA**: los certificados ilustrados contienen palabras pseudoescritas e ilegibles («CERTIFICADO DE MATINONIO», «CERTIFICADO NAOTISMO», aproximación de lectura visual). No publicable sin regenerar o corregir esas inscripciones y revisar el resto de la lámina |
+| [#69](https://github.com/idealab2026/idealab2026.github.io/issues/69) | Montecristo I · capítulo 27 | **CORREGIR**: aparece el título truncado «Ruina del» flotando sobre la ilustración, además del encabezado completo «Ruina del armador Morrel». Eliminar el fragmento o regenerar y comprobar otros rótulos |
 | [#16](https://github.com/idealab2026/idealab2026.github.io/issues/16) | Montecristo I · síntesis del tomo | **BLOQUEADA**: texto imposible o deformado en varias leyendas, entre ellas «Trundo de los traidores» y el pie de «Fuga en la mortaja». Se debe rehacer la lámina o corregir exhaustivamente toda la rotulación |
 | [#21](https://github.com/idealab2026/idealab2026.github.io/issues/21) | Sapiens · síntesis general | **BLOQUEADA**: varias frases deformadas, encabezados repetidos y formulaciones de tesis sobre «mutación del saber» y extinciones sin atribución ni contexto; requiere nueva redacción de la infografía |
 | [#109](https://github.com/idealab2026/idealab2026.github.io/issues/109) | Sapiens · capítulo 1 | **BLOQUEADA**: cronología visual incoherente (años 2050/7000/2500 sin escala interpretable), sección sobre bipedestación/partos repetida y cifra del gasto cerebral sin atribución suficiente |
@@ -39,7 +41,7 @@
 
 ## Segunda pasada: lectura directa a resolución original (12/11/2026)
 
-Se han reabierto los PNG auténticos de los ZIP. Este control detecta problemas que los mosaicos a baja resolución no revelaron. **Los archivos originales siguen intactos y privados.** Las cinco incidencias anteriores se han reclasificado en el inventario, y la primera clasificación se considera superada para esos archivos.
+Se han reabierto los PNG auténticos de los ZIP. Adicionalmente se han realizado nuevas inspecciones individuales a resolución original sobre capítulos de Montecristo; se detectaron incidencias verificables en #34 y #69. Este control detecta problemas que los mosaicos a baja resolución no revelaron. **Los archivos originales siguen intactos y privados.** Las cinco incidencias anteriores se han reclasificado en el inventario, y la primera clasificación se considera superada para esos archivos.
 
 | Incidencia | SHA-256 del PNG concreto revisado |
 |---|---|
@@ -48,6 +50,8 @@ Se han reabierto los PNG auténticos de los ZIP. Este control detecta problemas 
 | #68 | `f224c1c7adc5098d0f2023d23d0f6901af27af17574ac5010644066195b5c039` |
 | #85 | `9e9014498c5d5406513cf8e94e574d5d10054f456483a6408f576a0ada320105` |
 | #109 | `50d15a58d76356cf1b5002f2a14fdbbf153e96e1c3433f8e0b9e45c7506bf0e4` |
+| #34 | `aab9007e282a4ddc1533a168d041eb85d34deb457dbe4604a9b242982148ba53` |
+| #69 | `6c0494191c1da7f7d65c0ef54786e0a45393b099b0f32883dfea91074af16a69` |
 
 **Importante:** una imagen visualmente legible no equivale a una fuente contrastada. Se mantienen como pendientes las otras imágenes no cotejadas línea por línea. Las categorías de bloqueo/corrección documentan el PNG de ese hash, no una condena irreversible de la solicitud: una versión nueva exige nuevo control e identificación inequívoca.
 
@@ -66,7 +70,7 @@ Se han reabierto los PNG auténticos de los ZIP. Este control detecta problemas 
 | [#27](https://github.com/idealab2026/idealab2026.github.io/issues/27) | PENDIENTE DE CONTRASTE |
 | [#32](https://github.com/idealab2026/idealab2026.github.io/issues/32) | AJUSTE OPCIONAL |
 | [#33](https://github.com/idealab2026/idealab2026.github.io/issues/33) | PENDIENTE DE CONTRASTE |
-| [#34](https://github.com/idealab2026/idealab2026.github.io/issues/34) | PENDIENTE DE CONTRASTE |
+| [#34](https://github.com/idealab2026/idealab2026.github.io/issues/34) | BLOQUEADA |
 | [#35](https://github.com/idealab2026/idealab2026.github.io/issues/35) | PENDIENTE DE CONTRASTE |
 | [#36](https://github.com/idealab2026/idealab2026.github.io/issues/36) | PENDIENTE DE CONTRASTE |
 | [#37](https://github.com/idealab2026/idealab2026.github.io/issues/37) | PENDIENTE DE CONTRASTE |
@@ -81,7 +85,7 @@ Se han reabierto los PNG auténticos de los ZIP. Este control detecta problemas 
 | [#66](https://github.com/idealab2026/idealab2026.github.io/issues/66) | PENDIENTE DE CONTRASTE |
 | [#67](https://github.com/idealab2026/idealab2026.github.io/issues/67) | PENDIENTE DE CONTRASTE |
 | [#68](https://github.com/idealab2026/idealab2026.github.io/issues/68) | CORREGIR |
-| [#69](https://github.com/idealab2026/idealab2026.github.io/issues/69) | PENDIENTE DE CONTRASTE |
+| [#69](https://github.com/idealab2026/idealab2026.github.io/issues/69) | CORREGIR |
 | [#70](https://github.com/idealab2026/idealab2026.github.io/issues/70) | PENDIENTE DE CONTRASTE |
 | [#71](https://github.com/idealab2026/idealab2026.github.io/issues/71) | PENDIENTE DE CONTRASTE |
 | [#72](https://github.com/idealab2026/idealab2026.github.io/issues/72) | VERIFICAR DATOS |
@@ -163,18 +167,18 @@ Se han reabierto los PNG auténticos de los ZIP. Este control detecta problemas 
 
 ## Continuidad
 
-**Pendientes de recibir para auditoría (20 PNG descargados según GitHub, confirmación 13/11/2026):** estas imágenes **no forman parte de los 69 originales ya revisados** y no puede asignárseles dictamen editorial sin sus bytes.
+**Pendientes de recibir para auditoría (27 PNG descargados según GitHub, confirmación 13/11/2026):** estas imágenes **no forman parte de los 69 originales ya revisados** y no puede asignárseles dictamen editorial sin sus bytes.
 
 | Obra | Solicitudes descargadas que faltan por auditar | Cantidad |
 |---|---|---:|
 | Montecristo II, capítulos 63–71 | [#42](https://github.com/idealab2026/idealab2026.github.io/issues/42) · [#43](https://github.com/idealab2026/idealab2026.github.io/issues/43) · [#44](https://github.com/idealab2026/idealab2026.github.io/issues/44) · [#45](https://github.com/idealab2026/idealab2026.github.io/issues/45) · [#46](https://github.com/idealab2026/idealab2026.github.io/issues/46) · [#47](https://github.com/idealab2026/idealab2026.github.io/issues/47) · [#48](https://github.com/idealab2026/idealab2026.github.io/issues/48) · [#49](https://github.com/idealab2026/idealab2026.github.io/issues/49) · [#50](https://github.com/idealab2026/idealab2026.github.io/issues/50) | 9 |
 | Montecristo I, capítulos 44–49 | [#86](https://github.com/idealab2026/idealab2026.github.io/issues/86) · [#87](https://github.com/idealab2026/idealab2026.github.io/issues/87) · [#88](https://github.com/idealab2026/idealab2026.github.io/issues/88) · [#89](https://github.com/idealab2026/idealab2026.github.io/issues/89) · [#90](https://github.com/idealab2026/idealab2026.github.io/issues/90) · [#91](https://github.com/idealab2026/idealab2026.github.io/issues/91) | 6 |
-| Sapiens, cinco nuevos capítulos | [#116](https://github.com/idealab2026/idealab2026.github.io/issues/116) · [#117](https://github.com/idealab2026/idealab2026.github.io/issues/117) · [#118](https://github.com/idealab2026/idealab2026.github.io/issues/118) · [#119](https://github.com/idealab2026/idealab2026.github.io/issues/119) · [#120](https://github.com/idealab2026/idealab2026.github.io/issues/120) | 5 |
-| **Total** | | **20** |
+| Sapiens, doce nuevos capítulos y epílogo | [#116](https://github.com/idealab2026/idealab2026.github.io/issues/116) · [#117](https://github.com/idealab2026/idealab2026.github.io/issues/117) · [#118](https://github.com/idealab2026/idealab2026.github.io/issues/118) · [#119](https://github.com/idealab2026/idealab2026.github.io/issues/119) · [#120](https://github.com/idealab2026/idealab2026.github.io/issues/120) · [#121](https://github.com/idealab2026/idealab2026.github.io/issues/121) · [#122](https://github.com/idealab2026/idealab2026.github.io/issues/122) · [#123](https://github.com/idealab2026/idealab2026.github.io/issues/123) · [#124](https://github.com/idealab2026/idealab2026.github.io/issues/124) · [#125](https://github.com/idealab2026/idealab2026.github.io/issues/125) · [#126](https://github.com/idealab2026/idealab2026.github.io/issues/126) · [#127](https://github.com/idealab2026/idealab2026.github.io/issues/127) | 12 |
+| **Total** | | **27** |
 
 Se registran únicamente como *descargadas, pendientes de recepción de PNG y revisión*. No se infiere legibilidad, integridad, precisión ni aprobación a partir del comentario automatizado.
 
-**Estado de la generación:** el lote Sapiens #116–#120 aparece descargado en GitHub. Se han autorizado dos lotes adicionales de hasta cinco primeras generaciones cada uno. La autorización no implica que los trabajos nuevos hayan comenzado ni que estén descargados.
+**Estado de la generación:** Sapiens #116–#127 figura descargado en GitHub, por lo que suma 22/22 solicitudes descargadas incluyendo los PNG recibidos anteriormente. Ninguna autorización pendiente se considera prueba de publicación o revisión. Montecristo permanece en 52/54; los dos trabajos pendientes requieren diagnóstico de su estado local/cuaderno.
 
 
 **Prohibido** publicar imágenes bloqueadas o sin confirmación editorial explícita. El índice público de imágenes `biblioteca-montecristo/infografias/index.json` no se modifica con esta auditoría.
