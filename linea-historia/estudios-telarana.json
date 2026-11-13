@@ -1356,6 +1356,34 @@
       }
     },
     {
+      "id": "study-f70-benedicto-gabriele-indulto-2012",
+      "y": 2012.9726775956285,
+      "t": "Benedicto XVI indulta a Paolo Gabriele tras el caso Vatileaks",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F70 · comunicado oficial de la Santa Sede",
+      "d": "El 22 de diciembre de 2012, la Secretaría de Estado de la Santa Sede comunicó que Benedicto XVI había visitado en prisión al exmayordomo Paolo Gabriele y le había concedido el indulto, seguido de la excarcelación. El hecho consta en un comunicado de la Santa Sede. En la entrevista F70, Eric Frattini aborda Vatileaks y las filtraciones, pero sus relatos adicionales sobre documentos o motivaciones deben contrastarse separadamente.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 70,
+        "sourceTitle": "Fuente 70 · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=3110s",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2012-12-22",
+        "confirmedBy": {
+          "label": "Sala Stampa della Santa Sede · Comunicado 22/12/2012",
+          "url": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/22/0750/01723.html"
+        },
+        "relatedTelarana": [
+          "f70-benedicto",
+          "f70-gabriele"
+        ],
+        "methodologicalLimits": "El indulto y la excarcelación constan en fuente primaria; no certifica el contenido de todas las alegaciones de la entrevista ni el número exacto de filtraciones."
+      }
+    },
+    {
       "id": "study-v1-kitchen-2013",
       "y": 2013.495890410959,
       "t": "Inicio de las actuaciones policiales investigadas como Operación Kitchen",
@@ -1536,6 +1564,42 @@
           "cv26-villarejo"
         ],
         "methodologicalLimits": "Referencia periodística independiente sobre la fecha de detención, no prueba indiscriminada de alegaciones relacionadas."
+      }
+    },
+    {
+      "id": "study-f72-presentacion-archivo-nuclear-iran-2018",
+      "y": 2018.3260273972603,
+      "t": "Israel presenta públicamente documentos del archivo nuclear iraní",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F72/F73 · Departamento de Estado de EE. UU.",
+      "d": "El 30 de abril de 2018, Benjamin Netanyahu presentó públicamente documentación sobre el programa nuclear pasado de Irán que Israel afirmó haber obtenido de un archivo en Teherán. El Departamento de Estado estadounidense publicó ese mismo día una declaración sobre el material y afirmó haber examinado parte de los documentos. El acto público y la declaración están documentados; esto no constituye una verificación exhaustiva de todas las operaciones de inteligencia narradas por Frattini.",
+      "g": [
+        "Asia"
+      ],
+      "investigation": {
+        "sourceOrder": 72,
+        "sourceTitle": "Fuente 72 · Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY&t=5121s",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2018-04-30",
+        "confirmedBy": {
+          "label": "US Department of State · Iran Atomic Archive · 30/04/2018",
+          "url": "https://2017-2021.state.gov/iran-atomic-archive/"
+        },
+        "relatedTelarana": [
+          "f72-archivo",
+          "f72-mossad",
+          "f73-iran"
+        ],
+        "methodologicalLimits": "Constan la presentación pública y la declaración oficial. La procedencia y todos los pormenores operativos de obtención del archivo no han sido auditados independientemente en este estudio.",
+        "otherSourceMentions": [
+          {
+            "sourceOrder": 73,
+            "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=2472s",
+            "note": "F73 aborda el robo de archivos en su capítulo de 41:12; referencia cruzada, no evento duplicado"
+          }
+        ]
       }
     },
     {
