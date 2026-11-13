@@ -43,7 +43,7 @@ for(const id of ["f26-thiel-palantir-sec","f26-karp-palantir-sec","f26-dgsi-pala
  assert(e&&e.claimStatus==="hecho_verificado_independiente"&&e.confidence==="documentado");
 }
 const allegation=f26.nodes.find(n=>n.id==="f26-thiel").podcastNotes.find(n=>n.timeSec===2798);
-assert(allegation&&allegation.status==="alegacion_no_verificada"&&allegation.text.includes("no se aporta"));
+assert(allegation&&allegation.status==="alegacion_no_verificada"&&allegation.text.toLowerCase().includes("no se aporta"));
 const byId=new Map(mods[1].edges.map(e=>[e.id,e]));
 assert(byId.get("f27-ukr-blackrock-mou")?.source.includes("kmu.gov.ua"));
 assert(byId.get("f27-blackrock-udf")?.note.includes("pro bono"));
