@@ -163,18 +163,18 @@ Se han reabierto los PNG auténticos de los ZIP. Este control detecta problemas 
 
 ## Continuidad
 
-**Pendientes de recibir para auditoría (17 PNG descargados según GitHub, confirmación 12/11/2026):** estas imágenes **no forman parte de los 69 originales ya revisados** y no puede asignárseles dictamen editorial sin sus bytes.
+**Pendientes de recibir para auditoría (20 PNG descargados según GitHub, confirmación 13/11/2026):** estas imágenes **no forman parte de los 69 originales ya revisados** y no puede asignárseles dictamen editorial sin sus bytes.
 
 | Obra | Solicitudes descargadas que faltan por auditar | Cantidad |
 |---|---|---:|
 | Montecristo II, capítulos 63–71 | [#42](https://github.com/idealab2026/idealab2026.github.io/issues/42) · [#43](https://github.com/idealab2026/idealab2026.github.io/issues/43) · [#44](https://github.com/idealab2026/idealab2026.github.io/issues/44) · [#45](https://github.com/idealab2026/idealab2026.github.io/issues/45) · [#46](https://github.com/idealab2026/idealab2026.github.io/issues/46) · [#47](https://github.com/idealab2026/idealab2026.github.io/issues/47) · [#48](https://github.com/idealab2026/idealab2026.github.io/issues/48) · [#49](https://github.com/idealab2026/idealab2026.github.io/issues/49) · [#50](https://github.com/idealab2026/idealab2026.github.io/issues/50) | 9 |
 | Montecristo I, capítulos 44–49 | [#86](https://github.com/idealab2026/idealab2026.github.io/issues/86) · [#87](https://github.com/idealab2026/idealab2026.github.io/issues/87) · [#88](https://github.com/idealab2026/idealab2026.github.io/issues/88) · [#89](https://github.com/idealab2026/idealab2026.github.io/issues/89) · [#90](https://github.com/idealab2026/idealab2026.github.io/issues/90) · [#91](https://github.com/idealab2026/idealab2026.github.io/issues/91) | 6 |
-| Sapiens, capítulos 14 y 11 | [#116](https://github.com/idealab2026/idealab2026.github.io/issues/116) · [#117](https://github.com/idealab2026/idealab2026.github.io/issues/117) | 2 |
-| **Total** | | **17** |
+| Sapiens, cinco nuevos capítulos | [#116](https://github.com/idealab2026/idealab2026.github.io/issues/116) · [#117](https://github.com/idealab2026/idealab2026.github.io/issues/117) · [#118](https://github.com/idealab2026/idealab2026.github.io/issues/118) · [#119](https://github.com/idealab2026/idealab2026.github.io/issues/119) · [#120](https://github.com/idealab2026/idealab2026.github.io/issues/120) | 5 |
+| **Total** | | **20** |
 
 Se registran únicamente como *descargadas, pendientes de recepción de PNG y revisión*. No se infiere legibilidad, integridad, precisión ni aprobación a partir del comentario automatizado.
 
-**Generación actualmente enviada, no descargada al comprobar:** [#118](https://github.com/idealab2026/idealab2026.github.io/issues/118) (Sapiens). No se incluye en el inventario de 17 mientras no conste su descarga.
+**Estado de la generación:** el lote Sapiens #116–#120 aparece descargado en GitHub. Se han autorizado dos lotes adicionales de hasta cinco primeras generaciones cada uno. La autorización no implica que los trabajos nuevos hayan comenzado ni que estén descargados.
 
 
 **Prohibido** publicar imágenes bloqueadas o sin confirmación editorial explícita. El índice público de imágenes `biblioteca-montecristo/infografias/index.json` no se modifica con esta auditoría.
