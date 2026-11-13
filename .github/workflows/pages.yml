@@ -114,6 +114,8 @@ jobs:
         run: node scripts/test_telarana_editorial_quality.mjs
       - name: Auditar cobertura de las 71 fuentes canónicas
         run: node scripts/audit_telarana_all_sources.mjs
+      - name: Validar primera revisión sin minutajes F34 (Francisco y Vaticano)
+        run: node scripts/test_telarana_source34_francisco.mjs
       - name: Validar las cinco transcripciones manuales de Eric Frattini y sector Vaticano
         run: node scripts/test_telarana_frattini_manual_f70_f74.mjs
       - name: Validar los expedientes iniciales de fuentes 26 y 27
@@ -205,6 +207,7 @@ jobs:
           cp la-telarana/fuente-29-revision-inicial.js dist/la-telarana/fuente-29-revision-inicial.js
           cp la-telarana/fuente-30-revision-inicial.js dist/la-telarana/fuente-30-revision-inicial.js
           cp la-telarana/fuente-31-revision-inicial.js dist/la-telarana/fuente-31-revision-inicial.js
+          cp la-telarana/fuente-34-francisco-primera-revision.js dist/la-telarana/fuente-34-francisco-primera-revision.js
           cp la-telarana/fuente-39-egiptologia-revision.js dist/la-telarana/fuente-39-egiptologia-revision.js
           cp la-telarana/fuente-50-miguel-de-lys-revision.js dist/la-telarana/fuente-50-miguel-de-lys-revision.js
           cp la-telarana/fuentes-70-74-frattini-inicial.js dist/la-telarana/fuentes-70-74-frattini-inicial.js
