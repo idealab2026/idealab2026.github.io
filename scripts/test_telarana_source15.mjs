@@ -22,7 +22,7 @@ assert(html.includes('"key":"IDEA_TELARANA_F15_PRIMARY"'),"Falta registro del do
 assert(workflow.includes("cp la-telarana/fuente-15-estrategia-seguridad-2025.js dist/la-telarana/fuente-15-estrategia-seguridad-2025.js"),"No se publica el módulo");
 const t=JSON.parse(read("la-telarana/progreso-fuentes.json"));
 assert(t.inReview.some(e=>e.order===15&&!e.reviewComplete&&e.sourceType==="pdf_document"),"F15 debe seguir en revisión");
-assert(t.counts.reviewedPublished+t.counts.inReview+t.counts.notStarted===69,"No cuadran fuentes");
+assert(t.counts.reviewedPublished+t.counts.inReview+t.counts.notStarted===t.total,"No cuadran fuentes");
 const feed=JSON.parse(read("linea-historia/estudios-telarana.json"));
 const h=feed.items.find(e=>e.id==="study-f15-nss-transmision-congreso-2025");
 assert(h?.investigation?.date==="2025-12-02","Falta la transmisión documentada");
