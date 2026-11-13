@@ -815,8 +815,21 @@ window.IDEA_TELARANA_F72_REVIEW = {
     "lastMarker": "03:07:18",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "primera_lectura_tematico_documental_no_exhaustiva",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra."
+    "reviewStage": "segunda_revision_multifuente_documental_con_cruces_f69_y_audio_pendiente",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado.",
+    "independentDocumentaryRelations": 3,
+    "crossSourceLinks": [
+      69,
+      73
+    ],
+    "subtitleAnchorsExamined": [
+      2714,
+      3402,
+      4273,
+      4289,
+      4514,
+      8204
+    ]
   },
   "nodes": [
     {
@@ -839,6 +852,24 @@ window.IDEA_TELARANA_F72_REVIEW = {
           "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=10261s",
           "status": "alegacion_no_verificada",
           "text": "El entrevistado aborda las relaciones de España, Marruecos y los servicios israelíes; sus afirmaciones sobre operaciones clandestinas específicas no se consideran acreditadas sin documentación independiente."
+        },
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 8204,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=8204s",
+          "status": "alegacion_no_verificada",
+          "text": "En 02:16:44 Frattini afirma estar «seguro» de que Israel conocía anticipadamente la operación del 7 de octubre de 2023. Es una afirmación categórica del entrevistado, NO una conclusión demostrada por esta fuente."
+        },
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 4289,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=4289s",
+          "status": "alegacion_no_verificada",
+          "text": "En ≈01:11:29 atribuye el diseño de Stuxnet a cinco países, incluida Holanda. La documentación técnica consultada acredita el malware y su finalidad aparente, pero no documenta esa lista de autores."
         }
       ]
     },
@@ -1025,6 +1056,121 @@ window.IDEA_TELARANA_F72_REVIEW = {
           "text": "El capítulo expone el relato del entrevistado sobre la obtención de archivos en Teherán. Su presentación pública el 30/04/2018 consta en documentación estadounidense; los detalles de la operación no se dan por demostrados por la entrevista."
         }
       ]
+    },
+    {
+      "id": "f72-kidon",
+      "name": "Kidón",
+      "kind": "Unidad / denominación atribuida",
+      "subtitle": "Unidad de operaciones especiales asociada al Mossad en relatos periodísticos; su estructura interna concreta no es totalmente pública.",
+      "note": "Unidad de operaciones especiales asociada al Mossad en relatos periodísticos; su estructura interna concreta no es totalmente pública. En el capítulo 9, Frattini atribuye a Kidón funciones de operación encubierta. La descripción de mecanismos internos se mantiene como testimonio y no se extrapola a prácticas documentadas de toda la organización.",
+      "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 2714,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "En el capítulo 9, Frattini atribuye a Kidón funciones de operación encubierta. La descripción de mecanismos internos se mantiene como testimonio y no se extrapola a prácticas documentadas de toda la organización."
+        }
+      ]
+    },
+    {
+      "id": "f72-sayanim",
+      "name": "Sayanim",
+      "kind": "Red de apoyo descrita en fuentes orales",
+      "subtitle": "Término utilizado para describir presuntos colaboradores logísticos de inteligencia fuera de Israel; su alcance real no está acreditado aquí.",
+      "note": "Término utilizado para describir presuntos colaboradores logísticos de inteligencia fuera de Israel; su alcance real no está acreditado aquí. En torno a 45:14 Frattini habla de colaboradores judíos en distintas ciudades. Es su relato y NO significa que una población judía o diáspora en general colabore con servicios de inteligencia.",
+      "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 2714,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "En torno a 45:14 Frattini habla de colaboradores judíos en distintas ciudades. Es su relato y NO significa que una población judía o diáspora en general colabore con servicios de inteligencia."
+        }
+      ]
+    },
+    {
+      "id": "f72-natanz",
+      "name": "Instalación nuclear de Natanz",
+      "kind": "Instalación",
+      "subtitle": "Complejo iraní de enriquecimiento de uranio, objeto de investigaciones sobre ciberataques industriales.",
+      "note": "Complejo iraní de enriquecimiento de uranio, objeto de investigaciones sobre ciberataques industriales. El Servicio de Investigación del Congreso estadounidense describió Stuxnet como malware orientado aparentemente a sistemas industriales en Natanz; el análisis no demuestra una lista cerrada de países desarrolladores.",
+      "source": "https://www.everycrsreport.com/reports/R43848.html",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 4273,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=4273s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "El Servicio de Investigación del Congreso estadounidense describió Stuxnet como malware orientado aparentemente a sistemas industriales en Natanz; el análisis no demuestra una lista cerrada de países desarrolladores."
+        }
+      ]
+    },
+    {
+      "id": "f72-buscapersonas",
+      "name": "Explosiones de buscapersonas en Líbano (2024)",
+      "kind": "Acontecimiento",
+      "subtitle": "Explosiones de dispositivos de comunicación ocurridas el 17 y 18 de septiembre de 2024 en Líbano y Siria; con víctimas civiles.",
+      "note": "Explosiones de dispositivos de comunicación ocurridas el 17 y 18 de septiembre de 2024 en Líbano y Siria; con víctimas civiles. La ONU documentó la primera oleada el 17/09/2024 y una nueva serie de explosiones al día siguiente. El entrevistado las trata en el capítulo «Green Beeper»; el nombre en clave exacto y detalles de su ejecución no se dan por acreditados.",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 3402,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=3402s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "La ONU documentó la primera oleada el 17/09/2024 y una nueva serie de explosiones al día siguiente. El entrevistado las trata en el capítulo «Green Beeper»; el nombre en clave exacto y detalles de su ejecución no se dan por acreditados."
+        }
+      ]
+    },
+    {
+      "id": "f72-hizbula",
+      "name": "Hizbulá",
+      "kind": "Organización",
+      "subtitle": "Movimiento político y organización armada chií libanesa; parte de sus miembros usaban dispositivos de comunicación durante las explosiones de 2024.",
+      "note": "Movimiento político y organización armada chií libanesa; parte de sus miembros usaban dispositivos de comunicación durante las explosiones de 2024. Las comunicaciones de la ONU sobre los ataques a buscapersonas incluyeron víctimas civiles y pidieron una investigación. No todos los afectados han de tratarse como integrantes de esta organización.",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 3402,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=3402s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "Las comunicaciones de la ONU sobre los ataques a buscapersonas incluyeron víctimas civiles y pidieron una investigación. No todos los afectados han de tratarse como integrantes de esta organización."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1123,6 +1269,152 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=5121s",
       "episodeId": "idealab-f72-frattini",
       "podcastNotes": []
+    },
+    {
+      "id": "f72-mention-kidon",
+      "a": "f72-episodio",
+      "b": "f72-kidon",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "Frattini introduce a Kidón dentro de su explicación de la estructura operativa del Mossad; no acredita por sí solo su cadena de mando ni misiones específicas.",
+      "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 2714,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "Frattini introduce a Kidón dentro de su explicación de la estructura operativa del Mossad; no acredita por sí solo su cadena de mando ni misiones específicas."
+        }
+      ]
+    },
+    {
+      "id": "f72-mention-sayanim",
+      "a": "f72-episodio",
+      "b": "f72-sayanim",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "En ≈45:14 Frattini dice que los «sayanim» pueden prestar ayuda logística. No se debe representar a los judíos de otras ciudades o países como miembros del Mossad.",
+      "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 2714,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=2714s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈45:14 Frattini dice que los «sayanim» pueden prestar ayuda logística. No se debe representar a los judíos de otras ciudades o países como miembros del Mossad."
+        }
+      ]
+    },
+    {
+      "id": "f72-mention-pagers",
+      "a": "f72-episodio",
+      "b": "f72-buscapersonas",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "En el capítulo ≈56:42 el entrevistado presenta la denominada «Green Beeper» como operación de inteligencia. Se corrobora la ocurrencia del episodio en 2024, no todos los detalles operativos narrados.",
+      "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=3402s",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 3402,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=3402s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En el capítulo ≈56:42 el entrevistado presenta la denominada «Green Beeper» como operación de inteligencia. Se corrobora la ocurrencia del episodio en 2024, no todos los detalles operativos narrados."
+        }
+      ]
+    },
+    {
+      "id": "f72-mention-hizbula",
+      "a": "f72-episodio",
+      "b": "f72-hizbula",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "Se aborda Hizbulá en el contexto del ataque a dispositivos. Las víctimas pueden incluir personas ajenas a la organización; no equiparar automáticamente dispositivo y afiliación.",
+      "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=3402s",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 3402,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=3402s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "Se aborda Hizbulá en el contexto del ataque a dispositivos. Las víctimas pueden incluir personas ajenas a la organización; no equiparar automáticamente dispositivo y afiliación."
+        }
+      ]
+    },
+    {
+      "id": "f72-mention-natanz",
+      "a": "f72-episodio",
+      "b": "f72-natanz",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "En ≈01:11:13 la entrevista expone el uso de Stuxnet contra sistemas industriales de Irán. La afirmación sobre cinco países desarrolladores y la muerte de un agente holandés no queda demostrada por este contraste.",
+      "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=4273s",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f72-frattini",
+          "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
+          "publishedAt": "2026-09-28",
+          "timeSec": 4273,
+          "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=4273s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈01:11:13 la entrevista expone el uso de Stuxnet contra sistemas industriales de Irán. La afirmación sobre cinco países desarrolladores y la muerte de un agente holandés no queda demostrada por este contraste."
+        }
+      ]
+    },
+    {
+      "id": "f72-doc-stuxnet-natanz",
+      "a": "f72-stuxnet",
+      "b": "f72-natanz",
+      "type": "Código malicioso dirigido aparentemente a infraestructura industrial de Natanz",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.everycrsreport.com/reports/R43848.html",
+      "episodeId": "idealab-f72-frattini",
+      "note": "El Congressional Research Service documenta que Stuxnet, identificado en junio de 2010, apuntaba aparentemente a sistemas de control en Natanz. No certifica cinco agencias occidentales, una autoría estatal formalmente reconocida ni los efectos concretos alegados en la entrevista.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-eichmann-mossad",
+      "a": "f72-mossad",
+      "b": "f72-eichmann",
+      "type": "Agentes israelíes capturan a Eichmann en Argentina en mayo de 1960",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://main.knesset.gov.il/EN/About/Pages/shoah.aspx",
+      "episodeId": "idealab-f72-frattini",
+      "note": "La Knéset documenta que Ben-Gurión anunció el 23/05/1960 la captura de Eichmann por servicios de seguridad israelíes, vinculada al Mossad. F69 ya identifica al mismo Eichmann y la cronología ya registra su captura el 11/05/1960: NO duplicar el hito.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-pagers-hizbula",
+      "a": "f72-buscapersonas",
+      "b": "f72-hizbula",
+      "type": "Explosiones de dispositivos empleados también por miembros de Hizbulá",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "episodeId": "idealab-f72-frattini",
+      "note": "La oficina de derechos humanos de la ONU documentó las explosiones el 17/09/2024 y víctimas civiles, incluidos menores. La pertenencia individual de las personas afectadas no puede darse por probada.",
+      "podcastNotes": []
     }
   ]
 };
@@ -1143,8 +1435,25 @@ window.IDEA_TELARANA_F73_REVIEW = {
     "lastMarker": "01:45:19",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "primera_lectura_tematico_documental_no_exhaustiva",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra."
+    "reviewStage": "segunda_revision_multifuente_documental_con_cruces_f69_y_audio_pendiente",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado.",
+    "independentDocumentaryRelations": 6,
+    "crossSourceLinks": [
+      69,
+      72
+    ],
+    "subtitleAnchorsExamined": [
+      318,
+      335,
+      347,
+      432,
+      474,
+      2472,
+      2860,
+      2870,
+      4078,
+      5005
+    ]
   },
   "nodes": [
     {
@@ -1176,6 +1485,33 @@ window.IDEA_TELARANA_F73_REVIEW = {
           "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
           "status": "alegacion_no_verificada",
           "text": "En el capítulo sobre los buscapersonas de Hezbolá, Frattini atribuye técnicas y autoría a servicios israelíes. La identificación específica de ejecutores se mantiene como declaración no cotejada."
+        },
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 474,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=474s",
+          "status": "alegacion_no_verificada",
+          "text": "En torno a 07:54 Frattini introduce una versión supuestamente contada por antiguos miembros de inteligencia, con la reserva expresa «no sé si es cierto o no». No elevarla a prueba del autor de Pegasus."
+        },
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 4078,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=4078s",
+          "status": "opinion_atribuida",
+          "text": "En 01:07:58 Frattini considera que la responsabilidad del fallo del 7 de octubre corresponde al Shin Bet; se registra como interpretación del entrevistado, no como dictamen oficial exhaustivo."
+        },
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 2870,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=2870s",
+          "status": "alegacion_no_verificada",
+          "text": "En ≈47:50 Frattini afirma que Stuxnet se denominó Juegos Olímpicos porque participaron cinco agencias. La documentación técnica sobre el malware no confirma esta etimología ni la lista cerrada de agencias."
         }
       ]
     },
@@ -1362,6 +1698,167 @@ window.IDEA_TELARANA_F73_REVIEW = {
           "text": "La entrevista presenta Stuxnet como operación encubierta contra Irán. Sin una admisión/documento primario no debe convertirse en responsabilidad estatal oficialmente acreditada."
         }
       ]
+    },
+    {
+      "id": "f73-israel",
+      "name": "Israel",
+      "kind": "Estado",
+      "subtitle": "Estado de Oriente Medio que normalizó las relaciones diplomáticas con Marruecos en diciembre de 2020.",
+      "note": "Estado de Oriente Medio que normalizó las relaciones diplomáticas con Marruecos en diciembre de 2020. La embajada de Israel en Marruecos documenta el acuerdo trilateral con EE. UU. y la reanudación de relaciones bilaterales en 2020.",
+      "source": "https://embassies.gov.il/morocco/en/the-liaison-office/bilateral-relations",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 318,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=318s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "La embajada de Israel en Marruecos documenta el acuerdo trilateral con EE. UU. y la reanudación de relaciones bilaterales en 2020."
+        }
+      ]
+    },
+    {
+      "id": "f73-abraham",
+      "name": "Acuerdos de Abraham (2020)",
+      "kind": "Acuerdos internacionales",
+      "subtitle": "Proceso de normalización diplomática de Israel con Emiratos Árabes Unidos, Baréin y otros países, con acuerdos fechados por separado.",
+      "note": "Proceso de normalización diplomática de Israel con Emiratos Árabes Unidos, Baréin y otros países, con acuerdos fechados por separado. Los acuerdos con Emiratos y Baréin se firmaron el 15/09/2020; la normalización con Marruecos se anunció el 10/12/2020 y se formalizó el 22/12/2020. No consta que Mohamed VI originara las adhesiones de los países del Golfo.",
+      "source": "https://2021-2025.state.gov/at-the-one-year-anniversary-of-the-abraham-accords-normalization-agreements-in-action/",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 347,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=347s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "Los acuerdos con Emiratos y Baréin se firmaron el 15/09/2020; la normalización con Marruecos se anunció el 10/12/2020 y se formalizó el 22/12/2020. No consta que Mohamed VI originara las adhesiones de los países del Golfo."
+        }
+      ]
+    },
+    {
+      "id": "f73-mohamed-vi",
+      "name": "Mohamed VI de Marruecos",
+      "kind": "Persona",
+      "subtitle": "Rey de Marruecos desde 1999; participó en el proceso de reanudación de relaciones marroquí-israelíes de 2020.",
+      "note": "Rey de Marruecos desde 1999; participó en el proceso de reanudación de relaciones marroquí-israelíes de 2020. Frattini afirma alrededor de 5:35–5:47 que Mohamed VI convenció a monarquías del Golfo para normalizar relaciones con Israel. La cronología independiente muestra que Emiratos y Baréin habían firmado previamente; no consta en las fuentes citadas una gestión causal del rey para esos acuerdos.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=335s",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 335,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=335s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "Frattini afirma alrededor de 5:35–5:47 que Mohamed VI convenció a monarquías del Golfo para normalizar relaciones con Israel. La cronología independiente muestra que Emiratos y Baréin habían firmado previamente; no consta en las fuentes citadas una gestión causal del rey para esos acuerdos."
+        }
+      ]
+    },
+    {
+      "id": "f73-sanchez",
+      "name": "Pedro Sánchez",
+      "kind": "Persona",
+      "subtitle": "Político español, presidente del Gobierno en 2021–2022, cuyo teléfono fue identificado entre los afectados por Pegasus.",
+      "note": "Político español, presidente del Gobierno en 2021–2022, cuyo teléfono fue identificado entre los afectados por Pegasus. El Centro Criptológico Nacional confirmó indicadores de infección por Pegasus en el teléfono de Sánchez, comunicados por el Gobierno en mayo de 2022. Esto no acredita que Marruecos, Israel ni otro Estado específico hayan sido autores del espionaje.",
+      "source": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2022/100522-rp-cministros.aspx?qfr=1",
+      "topic3d": "espana",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 432,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "El Centro Criptológico Nacional confirmó indicadores de infección por Pegasus en el teléfono de Sánchez, comunicados por el Gobierno en mayo de 2022. Esto no acredita que Marruecos, Israel ni otro Estado específico hayan sido autores del espionaje."
+        }
+      ]
+    },
+    {
+      "id": "f73-ccn",
+      "name": "Centro Criptológico Nacional (CCN)",
+      "kind": "Organismo público",
+      "subtitle": "Organismo español encargado de seguridad de sistemas y análisis de incidentes informáticos, adscrito al CNI.",
+      "note": "Organismo español encargado de seguridad de sistemas y análisis de incidentes informáticos, adscrito al CNI. El 10/05/2022 el Gobierno español comunicó que el CCN había examinado terminales y confirmado infecciones de Pegasus en Sánchez, Robles y Grande-Marlaska, además de un intento fallido sobre el teléfono de Luis Planas.",
+      "source": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2022/100522-rp-cministros.aspx?qfr=1",
+      "topic3d": "espana",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 432,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "El 10/05/2022 el Gobierno español comunicó que el CCN había examinado terminales y confirmado infecciones de Pegasus en Sánchez, Robles y Grande-Marlaska, además de un intento fallido sobre el teléfono de Luis Planas."
+        }
+      ]
+    },
+    {
+      "id": "f73-buscapersonas",
+      "name": "Explosiones de buscapersonas en Líbano (2024)",
+      "kind": "Acontecimiento",
+      "subtitle": "Explosiones de dispositivos de comunicación el 17–18 de septiembre de 2024 en Líbano y Siria.",
+      "note": "Explosiones de dispositivos de comunicación el 17–18 de septiembre de 2024 en Líbano y Siria. Frattini desarrolla el episodio alrededor de 01:23:25 y lo llama «Green Beeper». La ONU documenta explosiones, víctimas y llamamiento a investigación; una declaración posterior del portavoz de Netanyahu atribuyó a Israel la aprobación de la operación. Ese testimonio no identifica por sí mismo al responsable individual ni todos los mecanismos de ejecución.",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 5005,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "Frattini desarrolla el episodio alrededor de 01:23:25 y lo llama «Green Beeper». La ONU documenta explosiones, víctimas y llamamiento a investigación; una declaración posterior del portavoz de Netanyahu atribuyó a Israel la aprobación de la operación. Ese testimonio no identifica por sí mismo al responsable individual ni todos los mecanismos de ejecución."
+        }
+      ]
+    },
+    {
+      "id": "f73-hizbula",
+      "name": "Hizbulá",
+      "kind": "Organización",
+      "subtitle": "Movimiento político y organización armada libanesa, implicada en las hostilidades con Israel.",
+      "note": "Movimiento político y organización armada libanesa, implicada en las hostilidades con Israel. La entrevista presenta como objetivo a dispositivos vinculados a Hizbulá, mientras la ONU registró víctimas civiles entre los afectados; no equiparar a todos los lesionados con miembros de la organización.",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "topic3d": "oriente",
+      "photo": "",
+      "x": 12085,
+      "y": 4980,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 5005,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
+          "status": "declaracion_atribuida_a_transcripcion_sin_verificacion_audio",
+          "text": "La entrevista presenta como objetivo a dispositivos vinculados a Hizbulá, mientras la ONU registró víctimas civiles entre los afectados; no equiparar a todos los lesionados con miembros de la organización."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1459,6 +1956,232 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "note": "La entrevista presenta Stuxnet como operación encubierta contra Irán. Sin una admisión/documento primario no debe convertirse en responsabilidad estatal oficialmente acreditada.",
       "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=2860s",
       "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-mention-israel",
+      "a": "f73-episodio",
+      "b": "f73-israel",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "Frattini presenta la relación entre Marruecos e Israel como una alianza geopolítica. El restablecimiento diplomático está documentado; su valoración como sustitución de España es interpretación.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=318s",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 318,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=318s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "Frattini presenta la relación entre Marruecos e Israel como una alianza geopolítica. El restablecimiento diplomático está documentado; su valoración como sustitución de España es interpretación."
+        }
+      ]
+    },
+    {
+      "id": "f73-mention-abraham",
+      "a": "f73-episodio",
+      "b": "f73-abraham",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "En 05:47 Frattini alude a los Acuerdos de Abraham y atribuye a Mohamed VI el éxito en países del Golfo; la cronología de firmas previas no permite establecer esa causalidad.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=347s",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 347,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=347s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En 05:47 Frattini alude a los Acuerdos de Abraham y atribuye a Mohamed VI el éxito en países del Golfo; la cronología de firmas previas no permite establecer esa causalidad."
+        }
+      ]
+    },
+    {
+      "id": "f73-mention-mohamed",
+      "a": "f73-episodio",
+      "b": "f73-mohamed-vi",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "note": "En 05:35 se afirma que Mohamed VI convenció a monarquías del Golfo; el apoyo documental revisado no respalda que provocase los acuerdos de Emiratos y Baréin de septiembre de 2020.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=335s",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 335,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=335s",
+          "status": "alegacion_no_verificada",
+          "text": "En 05:35 se afirma que Mohamed VI convenció a monarquías del Golfo; el apoyo documental revisado no respalda que provocase los acuerdos de Emiratos y Baréin de septiembre de 2020."
+        }
+      ]
+    },
+    {
+      "id": "f73-mention-sanchez",
+      "a": "f73-episodio",
+      "b": "f73-sanchez",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "note": "Desde 07:12 el episodio vincula el móvil de Pedro Sánchez con Pegasus y especula sobre Marruecos. La infección está acreditada; atribuirla a un gobierno concreto requiere pruebas adicionales.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 432,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
+          "status": "alegacion_no_verificada",
+          "text": "Desde 07:12 el episodio vincula el móvil de Pedro Sánchez con Pegasus y especula sobre Marruecos. La infección está acreditada; atribuirla a un gobierno concreto requiere pruebas adicionales."
+        }
+      ]
+    },
+    {
+      "id": "f73-mention-ccn",
+      "a": "f73-episodio",
+      "b": "f73-ccn",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "El capítulo sobre Pegasus se relaciona con los hallazgos forenses del CCN publicados por el Gobierno español el 10/05/2022; las conclusiones técnicas verifican infección, no autoría política.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 432,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "El capítulo sobre Pegasus se relaciona con los hallazgos forenses del CCN publicados por el Gobierno español el 10/05/2022; las conclusiones técnicas verifican infección, no autoría política."
+        }
+      ]
+    },
+    {
+      "id": "f73-mention-pager",
+      "a": "f73-episodio",
+      "b": "f73-buscapersonas",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "En ≈01:23:25 el entrevistado aborda las explosiones de buscapersonas y describe una operación secreta; su reconstrucción de agentes, empresas y logística no se toma como investigación judicial confirmada.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 5005,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "En ≈01:23:25 el entrevistado aborda las explosiones de buscapersonas y describe una operación secreta; su reconstrucción de agentes, empresas y logística no se toma como investigación judicial confirmada."
+        }
+      ]
+    },
+    {
+      "id": "f73-mention-hizbula",
+      "a": "f73-episodio",
+      "b": "f73-hizbula",
+      "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "note": "Se menciona Hizbulá en conexión con las explosiones; la confirmación del suceso no valida cada afirmación sobre mecanismos y autores individuales.",
+      "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f73-frattini",
+          "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
+          "publishedAt": "2026-10-26",
+          "timeSec": 5005,
+          "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=5005s",
+          "status": "mencion_temporizada_sin_cotejo_audio",
+          "text": "Se menciona Hizbulá en conexión con las explosiones; la confirmación del suceso no valida cada afirmación sobre mecanismos y autores individuales."
+        }
+      ]
+    },
+    {
+      "id": "f73-doc-morocco-israel",
+      "a": "f73-marruecos",
+      "b": "f73-israel",
+      "type": "Reanudación diplomática por acuerdo trilateral en diciembre de 2020",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://embassies.gov.il/morocco/en/the-liaison-office/bilateral-relations",
+      "episodeId": "idealab-f73-frattini",
+      "note": "La representación diplomática israelí documenta el restablecimiento de relaciones con Marruecos en 2020, alentado por la Administración Trump; no demuestra que Mohamed VI haya articulado acuerdos anteriores con los Estados del Golfo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-israel-abraham",
+      "a": "f73-israel",
+      "b": "f73-abraham",
+      "type": "Israel firma acuerdos de normalización con EAU y Baréin en septiembre de 2020",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://2021-2025.state.gov/at-the-one-year-anniversary-of-the-abraham-accords-normalization-agreements-in-action/",
+      "episodeId": "idealab-f73-frattini",
+      "note": "El Departamento de Estado estadounidense confirma las firmas con Emiratos y Baréin el 15/09/2020 y la posterior normalización con Marruecos en diciembre de 2020. Son procesos relacionados, no firmados en una misma fecha.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-pegasus-sanchez",
+      "a": "f73-pegasus",
+      "b": "f73-sanchez",
+      "type": "Infección de móvil del presidente documentada por el CCN",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2022/100522-rp-cministros.aspx?qfr=1",
+      "episodeId": "idealab-f73-frattini",
+      "note": "La Moncloa anunció el 10/05/2022 que el CCN comprobó infección por Pegasus en los teléfonos de Sánchez, Robles y Grande-Marlaska. Esa prueba forense no identifica por sí sola a Marruecos como ejecutor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-ccn-pegasus",
+      "a": "f73-ccn",
+      "b": "f73-pegasus",
+      "type": "Análisis técnico de móviles del Consejo de Ministros en mayo de 2022",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2022/100522-rp-cministros.aspx?qfr=1",
+      "episodeId": "idealab-f73-frattini",
+      "note": "Los informes de CCN referidos por La Moncloa corroboran infecciones y un intento fallido, con pruebas comunicadas a la Audiencia Nacional; no son sentencias sobre quién ordenó los ataques.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-pagers-hizbula",
+      "a": "f73-buscapersonas",
+      "b": "f73-hizbula",
+      "type": "La ONU documenta explosiones de buscapersonas, víctimas civiles y alarma humanitaria",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
+      "episodeId": "idealab-f73-frattini",
+      "note": "Las comunicaciones oficiales de la ONU del 18/09/2024 registran víctimas por explosiones masivas, incluidas menores. El foco sobre miembros de Hizbulá no transforma a todos los afectados en combatientes.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-israel-pagers",
+      "a": "f73-israel",
+      "b": "f73-buscapersonas",
+      "type": "Portavoz de Netanyahu confirma en noviembre de 2024 aprobación israelí de ataques",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.reuters.com/world/middle-east/netanyahu-approved-pager-attacks-against-hezbollah-spokesman-says-2024-11-11/",
+      "episodeId": "idealab-f73-frattini",
+      "note": "Reuters, el 11/11/2024, atribuye a Omer Dostri, portavoz del primer ministro, la confirmación de que Netanyahu había aprobado los ataques contra buscapersonas. Es una declaración oficial reportada, no una constatación independiente de cada detalle operativo.",
       "podcastNotes": []
     }
   ]
