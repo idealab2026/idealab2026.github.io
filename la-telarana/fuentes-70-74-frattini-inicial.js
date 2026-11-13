@@ -15,8 +15,10 @@ window.IDEA_TELARANA_F70_REVIEW = {
     "lastMarker": "01:37:14",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "primera_lectura_tematico_documental_no_exhaustiva",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra."
+    "reviewStage": "segunda_revision_archivo_cuentas_y_reforma_curial_con_contrastes_primarios",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar.",
+    "independentDocumentaryRelations": 7,
+    "explicitContradictionReviews": 3
   },
   "nodes": [
     {
@@ -202,6 +204,101 @@ window.IDEA_TELARANA_F70_REVIEW = {
           "text": "La entrevista aborda escándalos y asuntos financieros del Vaticano. La alegación concreta de pagos y cuantías requiere fuentes financieras primarias antes de representarse como hecho."
         }
       ]
+    },
+    {
+      "id": "f70-archivo-apostolico",
+      "name": "Archivo Apostólico Vaticano",
+      "kind": "Institución",
+      "subtitle": "Archivo histórico central de la Santa Sede, abierto desde 1881 a investigadores debidamente acreditados.",
+      "note": "Archivo histórico central de la Santa Sede, abierto desde 1881 a investigadores debidamente acreditados. Según su reglamento de 2025, admite investigadores cualificados, hasta 60 presencias diarias y con carta de recomendación de una institución académica o especialista, no necesariamente religiosa. Existen límites cronológicos y de consulta. La frase de la entrevista (≈41:31) de que únicamente entran papa y cardenales no describe el acceso ordinario vigente.",
+      "source": "https://www.archivioapostolicovaticano.va/content/dam/aav/documenti/Rules%20for%20Scholars_2025%20ENG.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12300,
+      "y": 4650,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 2491,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2491s",
+          "status": "declaracion_contrastada_y_refutada_en_su_generalidad",
+          "text": "La entrevista sostiene alrededor de 41:31 que al Archivo solo pueden entrar el papa y el colegio cardenalicio. Las normas oficiales de acceso permiten a investigadores acreditados estudiar fondos documentales con límites y autorizaciones; la afirmación general resulta incorrecta."
+        }
+      ]
+    },
+    {
+      "id": "f70-pio-xii",
+      "name": "Pío XII (Eugenio Pacelli)",
+      "kind": "Persona",
+      "subtitle": "Papa de 1939 a 1958, cuyo pontificado comprende la Segunda Guerra Mundial y la primera posguerra.",
+      "note": "Papa de 1939 a 1958, cuyo pontificado comprende la Segunda Guerra Mundial y la primera posguerra. Francisco dispuso abrir los archivos de su pontificado a investigadores a partir del 2 de marzo de 2020. Contradice la afirmación sin matices en F70, alrededor de 43:27, de que tales documentos continúan clasificados; otros fondos posteriores a 1958 siguen sujetos a límites.",
+      "source": "https://www.vatican.va/content/francesco/es/speeches/2019/march/documents/papa-francesco_20190304_archivio-segretovaticano.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12300,
+      "y": 4650,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 2607,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2607s",
+          "status": "declaracion_contrastada_y_refutada_en_su_generalidad",
+          "text": "En torno a 43:27 la fuente afirma que los fondos del pontificado de Pío XII todavía están clasificados. Francisco anunció su apertura a investigadores con fecha de 2/03/2020; la afirmación necesita corrección."
+        }
+      ]
+    },
+    {
+      "id": "f70-papa-francisco",
+      "name": "Papa Francisco (Jorge Mario Bergoglio)",
+      "kind": "Persona",
+      "subtitle": "Papa de la Iglesia católica entre 2013 y 2025, anterior a León XIV.",
+      "note": "Papa de la Iglesia católica entre 2013 y 2025, anterior a León XIV. La entrevista (≈24:15) considera que no hizo casi nada por reformar la Curia. Existe como hecho independiente la constitución apostólica Praedicate Evangelium, promulgada en marzo de 2022 y vigente desde junio de 2022. Puede discutirse la eficacia de la reforma, pero no negar su existencia.",
+      "source": "https://www.vatican.va/content/francesco/es/apost_constitutions/documents/20220319-costituzione-ap-praedicate-evangelium.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12300,
+      "y": 4650,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 1455,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=1455s",
+          "status": "opinion_contrastada_con_documento_institucional",
+          "text": "En ≈24:15 Frattini opina que Francisco «no hizo absolutamente nada» para profundizar la reforma curial. La norma Praedicate Evangelium (2022) muestra que sí realizó una reforma institucional; su eficacia y alcance práctico admiten evaluaciones críticas."
+        }
+      ]
+    },
+    {
+      "id": "f70-praedicate",
+      "name": "Praedicate Evangelium (2022)",
+      "kind": "Norma",
+      "subtitle": "Constitución apostólica de Francisco que reorganiza la Curia Romana; promulgada el 19/03/2022 y vigente desde el 05/06/2022.",
+      "note": "Constitución apostólica de Francisco que reorganiza la Curia Romana; promulgada el 19/03/2022 y vigente desde el 05/06/2022. Sustituyó la constitución Pastor bonus de 1988 y reorganizó competencias, número y funciones de dicasterios. Es prueba de una reforma normativa, pero no prueba que todas las prácticas de gobierno o corrupción alegadas hayan desaparecido.",
+      "source": "https://www.vatican.va/content/francesco/es/apost_constitutions/documents/20220319-costituzione-ap-praedicate-evangelium.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12300,
+      "y": 4650,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-informe-ior-2025",
+      "name": "Informe anual del IOR 2025",
+      "kind": "Documento",
+      "subtitle": "Estados financieros anuales del Instituto para las Obras de Religión correspondientes a 2025, publicados en mayo de 2026.",
+      "note": "Estados financieros anuales del Instituto para las Obras de Religión correspondientes a 2025, publicados en mayo de 2026. El IOR publicó para 2025 un beneficio neto declarado de 51 millones de euros y una aportación de 24,3 millones de euros al papa. La existencia de informes publicados no desmiente por sí sola irregularidades históricas; sí documenta que existe información financiera pública auditada o presentada conforme a estándares financieros. No se ha auditado aquí cada partida.",
+      "source": "https://www.ior.va/en/contents/press-2026/annual-report-2025/",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12300,
+      "y": 4650,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -299,6 +396,144 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
       "episodeId": "idealab-f70-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-mention-archive",
+      "a": "f70-episodio",
+      "b": "f70-archivo-apostolico",
+      "type": "Mención / opinión de la entrevista; no relación causal acreditada",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2476s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La entrevista analiza el Archivo Vaticano y expresa hipótesis sobre secreto e inaccesibilidad. El acceso de investigadores está regulado y documentado, no vedado de forma general.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 2476,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2476s",
+          "status": "declaracion_atribuida_no_cotejada_audio",
+          "text": "La entrevista analiza el Archivo Vaticano y expresa hipótesis sobre secreto e inaccesibilidad. El acceso de investigadores está regulado y documentado, no vedado de forma general."
+        }
+      ]
+    },
+    {
+      "id": "f70-mention-pio-xii",
+      "a": "f70-episodio",
+      "b": "f70-pio-xii",
+      "type": "Mención / opinión de la entrevista; no relación causal acreditada",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2607s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Se comentan archivos del pontificado de Pío XII alrededor de 43:27. El archivo se abrió para investigación en 2020, según comunicado vaticano.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 2607,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=2607s",
+          "status": "declaracion_atribuida_no_cotejada_audio",
+          "text": "Se comentan archivos del pontificado de Pío XII alrededor de 43:27. El archivo se abrió para investigación en 2020, según comunicado vaticano."
+        }
+      ]
+    },
+    {
+      "id": "f70-mention-francisco",
+      "a": "f70-episodio",
+      "b": "f70-papa-francisco",
+      "type": "Mención / opinión de la entrevista; no relación causal acreditada",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=1455s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "En ≈24:15 Frattini juzga insuficiente la reforma de Francisco. La evaluación subjetiva no debe ocultar la promulgación objetiva de Praedicate Evangelium.",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 1455,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=1455s",
+          "status": "declaracion_atribuida_no_cotejada_audio",
+          "text": "En ≈24:15 Frattini juzga insuficiente la reforma de Francisco. La evaluación subjetiva no debe ocultar la promulgación objetiva de Praedicate Evangelium."
+        }
+      ]
+    },
+    {
+      "id": "f70-doc-archive-access",
+      "a": "f70-santa-sede",
+      "b": "f70-archivo-apostolico",
+      "type": "Archivo histórico bajo la Santa Sede, abierto a investigadores cualificados",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.archivioapostolicovaticano.va/content/dam/aav/documenti/Rules%20for%20Scholars_2025%20ENG.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Las normas oficiales vigentes en 2025 contemplan acceso de investigadores académicos acreditados (con permisos, límites de consulta y hasta 60 presencias diarias). Refuta la exclusión general de cualquier persona que no sea el papa o un cardenal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-archive-rename-2019",
+      "a": "f70-papa-francisco",
+      "b": "f70-archivo-apostolico",
+      "type": "Renombró oficialmente el antiguo Archivo Secreto Vaticano en octubre de 2019",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20191022_archivio-apostolico-vaticano.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La carta apostólica L'esperienza storica, firmada el 22 de octubre de 2019 y publicada el 28 de octubre, dispone la denominación Archivo Apostólico Vaticano.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-pio-xii-open-2020",
+      "a": "f70-archivo-apostolico",
+      "b": "f70-pio-xii",
+      "type": "Fondos del pontificado de Pío XII abiertos a consulta desde el 02/03/2020",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vatican.va/content/francesco/es/speeches/2019/march/documents/papa-francesco_20190304_archivio-segretovaticano.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Francisco anunció el 4/03/2019 que la documentación del pontificado hasta 09/10/1958 se abriría el 02/03/2020. La apertura no convierte en públicos todos los fondos de la Santa Sede.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-francisco-praedicate",
+      "a": "f70-papa-francisco",
+      "b": "f70-praedicate",
+      "type": "Promulgó reforma de la Curia Romana el 19/03/2022",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vatican.va/content/francesco/es/apost_constitutions/documents/20220319-costituzione-ap-praedicate-evangelium.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El texto oficial de Praedicate Evangelium fue promulgado por Francisco en marzo de 2022; su existencia corrige una afirmación absoluta de ausencia de reforma, sin decidir sobre su eficacia real.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-praedicate-curia",
+      "a": "f70-praedicate",
+      "b": "f70-curia",
+      "type": "Reorganización normativa de la Curia vigente desde el 05/06/2022",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vatican.va/content/francesco/es/apost_constitutions/documents/20220319-costituzione-ap-praedicate-evangelium.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La constitución apostólica Praedicate Evangelium sustituyó Pastor bonus y reorganizó los dicasterios. La entrada en vigor el 05/06/2022 se verifica en el artículo final.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-ior-2025-report",
+      "a": "f70-ior",
+      "b": "f70-informe-ior-2025",
+      "type": "Publicación de cuentas 2025 por el IOR en mayo de 2026",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ior.va/en/contents/press-2026/annual-report-2025/",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El comunicado del propio IOR, 11/05/2026, reporta 51 M€ de beneficio neto y dividendo de 24,3 M€ al papa. Son cifras declaradas por la entidad y no una validación externa de operaciones discutidas en el podcast.",
       "podcastNotes": []
     }
   ]

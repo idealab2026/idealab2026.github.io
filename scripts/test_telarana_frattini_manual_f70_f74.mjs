@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[8,7,9,9,7],expectedEdges=[8,7,8,8,6],
+const expectedNodes=[13,7,9,9,7],expectedEdges=[17,7,8,8,6],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===36,
   "El inventario 74/71/36 está desincronizado");
@@ -66,8 +66,8 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===39&&totalExternal===2,
-  "No cuadran las notas y los dos vínculos independientes de la primera pasada");
+assert(totalNotes===42&&totalExternal===8,
+  "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
 assert(history70?.investigation?.date==="2012-12-22"&&history70.investigation.confirmedBy.url.startsWith("https://press.vatican.va/"),
@@ -76,8 +76,31 @@ assert(history72?.investigation?.date==="2018-04-30"&&history72.investigation.co
   "Sin fuente pública para presentación del archivo nuclear 2018");
 assert(history72.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),
   "F73 requiere vínculo cruzado con el hito F72, no duplicación");
-assert(feed.items.length===108&&reg.timeline.committedVerifiedEvents===108,
+
+const f70=ctx.window.IDEA_TELARANA_F70_REVIEW;
+assert(f70.metadata.explicitContradictionReviews===3&&f70.metadata.transcriptAudioMatched===false,
+ "F70: conservar tres contrastes documentales sin atribuir escucha del audio");
+assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===7,
+ "F70: siete relaciones con evidencia oficial, no confundir las menciones");
+for(const e of ["f70-doc-archive-access","f70-doc-archive-rename-2019","f70-doc-pio-xii-open-2020",
+ "f70-doc-francisco-praedicate","f70-doc-praedicate-curia","f70-doc-ior-2025-report"]){
+ const link=f70.edges.find(x=>x.id===e);
+ assert(link&&link.source.startsWith("https://")&&!link.source.includes("youtube.com"),
+  "Falta respaldo institucional de "+e);
+}
+for(const e of [
+ ["study-f70-vatican-archive-renamed-2019","2019-10-28"],
+ ["study-f70-pius-xii-archive-open-2020","2020-03-02"],
+ ["study-f70-praedicate-evangelium-2022","2022-06-05"]]){
+ const entry=feed.items.find(x=>x.id===e[0]);
+ assert(entry&&entry.investigation.date===e[1]&&entry.investigation.sourceOrder===70,
+ "Falta hito de archivo o reforma romana: "+e[0]);
+}
+assert(reg.sourceCatalog.entries.find(e=>e.order===70)?.analysisCoverage.percent===29,
+ "El porcentaje editorial F70 debe reflejar la segunda revisión sin sugerir audio completo");
+
+assert(feed.items.length===111&&reg.timeline.committedVerifiedEvents===111,
   "Descuadre de hitos con la Línea de la Historia");
 assert(reg.sourceCatalog.entries.find(x=>x.order===34)?.videoId==="j_5Tj0kIj2c",
   "La fuente anterior de Frattini F34 no debe duplicarse");
-console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" fichas de contenido con tiempo, "+totalExternal+" vínculos primarios y 108 hitos; Iglesia y Vaticano en 3D");
+console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 111 hitos; Iglesia y Vaticano en 3D");

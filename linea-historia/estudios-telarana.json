@@ -1786,6 +1786,63 @@
       }
     },
     {
+      "id": "study-f70-vatican-archive-renamed-2019",
+      "y": 2019.8219178082193,
+      "t": "El Vaticano renombra oficialmente su Archivo Secreto como Archivo Apostólico",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F70 · Motu proprio de Francisco (2019)",
+      "d": "La carta apostólica L'esperienza storica, firmada el 22/10/2019 y difundida oficialmente el 28/10/2019, establece la denominación «Archivo Apostólico Vaticano» en sustitución de «Archivo Secreto Vaticano». El cambio nominal no elimina las restricciones cronológicas ni los requisitos de acceso a fondos, pero tampoco implica que el archivo sea inaccesible para investigadores.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 70,
+        "sourceTitle": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
+        "date": "2019-10-28",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "IDEA LAB · F70 · Motu proprio de Francisco (2019)",
+          "url": "https://press.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20191022_archivio-apostolico-vaticano.html"
+        },
+        "relatedTelarana": [
+          "f70-papa-francisco",
+          "f70-archivo-apostolico"
+        ],
+        "methodologicalLimits": "Fecha de firma 22/10/2019 y publicación 28/10/2019. Se registra la fecha de publicación, no la de firma."
+      }
+    },
+    {
+      "id": "study-f70-pius-xii-archive-open-2020",
+      "y": 2020.1666666666667,
+      "t": "Se abren a investigadores los fondos vaticanos del pontificado de Pío XII",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F70 · anuncio oficial de Francisco (2019)",
+      "d": "El papa Francisco anunció que los fondos archivísticos correspondientes al pontificado de Pío XII, hasta su muerte el 09/10/1958, estarían disponibles para consulta de investigadores desde el 02/03/2020. El anuncio está publicado por la Santa Sede en marzo de 2019. Las normas del Archivo Apostólico Vaticano mantienen límites de acceso, acreditación y protección documental. Esta apertura corrige una descripción general de F70 que considera esos fondos todavía cerrados.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 70,
+        "sourceTitle": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
+        "date": "2020-03-02",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "IDEA LAB · F70 · anuncio oficial de Francisco (2019)",
+          "url": "https://www.vatican.va/content/francesco/es/speeches/2019/march/documents/papa-francesco_20190304_archivio-segretovaticano.html"
+        },
+        "relatedTelarana": [
+          "f70-archivo-apostolico",
+          "f70-pio-xii",
+          "f70-papa-francisco"
+        ],
+        "methodologicalLimits": "La decisión de apertura de documentos de Pío XII no supone apertura indiscriminada de documentación de pontificados posteriores."
+      }
+    },
+    {
       "id": "study-v7-supremo-guertel-2020",
       "y": 2020.7841530054645,
       "t": "El Tribunal Supremo confirma la responsabilidad civil del PP a título lucrativo en Gürtel",
@@ -2062,6 +2119,35 @@
           "ce26-bolanos"
         ],
         "methodologicalLimits": "La fecha corresponde al anuncio público, no a las intrusiones de 2021. La autoría de Pegasus, supuestas grabaciones de chantaje y finalidades políticas no se desprenden de estos informes."
+      }
+    },
+    {
+      "id": "study-f70-praedicate-evangelium-2022",
+      "y": 2022.4246575342465,
+      "t": "Entra en vigor la reforma de la Curia Romana Praedicate Evangelium",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F70 · Constitución apostólica (2022)",
+      "d": "Praedicate Evangelium, promulgada por Francisco el 19/03/2022, entra en vigor el 05/06/2022, sustituyendo Pastor bonus y reorganizando la estructura de la Curia Romana. Constituye un hecho jurídico documentado, distinto del debate valorativo sobre si la reforma consiguió sus objetivos. La entrevista F70 afirma que Francisco no consiguió cambios significativos; ello se recoge como valoración del invitado, no como inexistencia de normativa.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 70,
+        "sourceTitle": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+        "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
+        "date": "2022-06-05",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "confirmedBy": {
+          "label": "IDEA LAB · F70 · Constitución apostólica (2022)",
+          "url": "https://www.vatican.va/content/francesco/es/apost_constitutions/documents/20220319-costituzione-ap-praedicate-evangelium.html"
+        },
+        "relatedTelarana": [
+          "f70-papa-francisco",
+          "f70-praedicate",
+          "f70-curia"
+        ],
+        "methodologicalLimits": "La aprobación de la norma prueba su existencia y vigencia, no el cumplimiento uniforme ni la ausencia de irregularidades."
       }
     },
     {
