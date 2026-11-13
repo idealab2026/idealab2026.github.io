@@ -1017,17 +1017,17 @@
       "rawTranscriptAvailable": true,
       "transcriptAudioMatched": false,
       "verifiedMinuteReferences": 0,
-      "sourceNodesDocumented": 5,
-      "sourceRelationsDocumented": 4,
-      "verifiedIndependentChecks": 1,
-      "sourceTimelineVerifiedEventsCommitted": 1,
+      "sourceNodesDocumented": 11,
+      "sourceRelationsDocumented": 11,
+      "verifiedIndependentChecks": 3,
+      "sourceTimelineVerifiedEventsCommitted": 2,
       "sourcePrimaryModule": "la-telarana/fuente-26-revision-inicial.js",
-      "qualityNotes": "El TXT original con marcas de tiempo fue recuperado y leído de vuelta en el Drive institucional, 134558 caracteres. Las cifras y palabras proceden de subtítulos automáticos, no cotejados con audio. Los expedientes Google Docs previos conservan estado parcial y no se han reemplazado. La ficha sigue pendiente de revisión editorial exhaustiva y contraste de declaraciones.",
-      "previousEditorialNotesWithoutTimestamp": "Revisión inicial basada en descripción oficial de YouTube y documentos primarios independientes. NO se han obtenido la transcripción ni los minutajes del audio. No se han atribuido citas ni delitos; las menciones del índice no prueban vínculos causales.",
+      "qualityNotes": "18 referencias localizadas en TXT de 134558 caracteres y 2289 segmentos; sin diarización ni cotejo de audio. Confirmados por fuente primaria los cargos de Thiel y Karp (SEC), contrato DGSI–Palantir (Senado francés) y contexto regulatorio AI Act (Comisión). Alegaciones geopolíticas solo atribuidas.",
+      "previousEditorialNotesWithoutTimestamp": "La revisión inicial carecía de cita cronometrada y mezclaba contexto externo con menciones: corregido en la iteración del 13/11/2026.",
       "timecodedTranscriptStoredInDrive": true,
       "timecodedTranscriptCharactersReadBack": 134558,
       "timecodedTranscriptReadbackVerified": true,
-      "timecodedNotesStarted": 2
+      "timecodedNotesStarted": 18
     },
     {
       "order": 27,
@@ -1221,9 +1221,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 103,
+    "committedVerifiedEvents": 104,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 59,
+    "fromSourceInReview": 60,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1342,7 +1342,8 @@
         "study-f25-g30-rockefeller-1978"
       ],
       "26": [
-        "study-f26-eu-ai-act-vigor-2024"
+        "study-f26-eu-ai-act-vigor-2024",
+        "study-f26-francia-dgsi-palantir-senado-2026"
       ],
       "27": [
         "study-f27-ukr-blackrock-mou-2022",
@@ -3290,11 +3291,11 @@
           "inReview": true,
           "imageAtGraphNode": "pendiente_verificacion",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
-          "externalDocumentsVerified": 1,
+          "lastUpdated": "2026-11-13",
+          "externalDocumentsVerified": 3,
           "audioVerified": false,
           "verifiedMinuteReferences": 0,
-          "methodologicalStatus": "sinopsis + referencia institucional, no lectura de transcripción",
+          "methodologicalStatus": "18 anclas textuales cronometradas, 3 contrastes primarios (Comisión, SEC, Senado francés); sin cotejo de audio",
           "timecodedTranscriptStoredInDrive": true,
           "timecodedTranscriptFormat": "TXT_with_timestamped_caption_segments",
           "timecodedTranscriptSegments": 2289,
@@ -3309,33 +3310,33 @@
           "timecodedTranscriptContentImported": true
         },
         "analysisCoverage": {
-          "percent": 30,
+          "percent": 42,
           "state": "en_revision",
           "readyForDeepReview": true,
           "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
           "audioVerified": false,
           "signals": {
-            "entities": 5,
-            "relations": 4,
-            "biographies": 0,
-            "statements": 2,
-            "independentChecks": 1,
-            "verifiedTimelineEvents": 1,
+            "entities": 11,
+            "relations": 11,
+            "biographies": 6,
+            "statements": 18,
+            "independentChecks": 3,
+            "verifiedTimelineEvents": 2,
             "captionSegments": 2289,
-            "expectedEntities": 10,
-            "expectedStatements": 14
+            "expectedEntities": 14,
+            "expectedStatements": 28
           },
           "breakdown": {
             "apertura": 5,
-            "entidades": 7.5,
-            "biografias": 0,
-            "relaciones": 6,
-            "declaraciones_atribuidas": 4.3,
-            "contrastes_documentales": 3.8,
-            "cronologia": 1.3,
-            "qa": 2
+            "entidades": 9.5,
+            "biografias": 4,
+            "relaciones": 8.2,
+            "declaraciones_atribuidas": 8.5,
+            "contrastes_documentales": 4.3,
+            "cronologia": 1.7,
+            "qa": 0.8
           },
-          "nextAction": "Extraer declaraciones con minutajes y su atribución"
+          "nextAction": "Continuar extracción sobre los 2289 segmentos; cotejar audio y corroborar o descartar alegaciones sobre Palantir y política internacional"
         }
       },
       {
@@ -5943,7 +5944,7 @@
   },
   "analysisProgress": {
     "method": "proxy_v1_2026-11-12",
-    "updatedAt": "2026-11-12",
+    "updatedAt": "2026-11-13",
     "description": "Índice heurístico orientado a decidir la siguiente fuente, no medición de porcentaje real de audio o texto revisado. La mera disponibilidad de una transcripción no suma puntos al análisis.",
     "weights": {
       "inicio": 5,
@@ -5969,9 +5970,9 @@
       },
       {
         "sourceOrder": 26,
-        "percent": 30,
+        "percent": 42,
         "segments": 2289,
-        "nextAction": "Extraer declaraciones con minutajes y su atribución"
+        "nextAction": "Continuar extracción sobre los 2289 segmentos; cotejar audio y corroborar o descartar alegaciones sobre Palantir y política internacional"
       },
       {
         "sourceOrder": 23,
@@ -6112,7 +6113,7 @@
         "nextAction": "Contrastar afirmaciones y enlazar hechos con la cronología"
       }
     ],
-    "attentionRule": "Siguiente foco: F26 (30%), F23 (36%), F20 (40%), F27 (45%), F24 (46%), F25 (53%), F28 (58%), F19 (78%); mantenimiento F18/F21; después F34/F69 Eric Frattini; finalmente F33 Rothschild. Todos los porcentajes son estimaciones.",
+    "attentionRule": "Siguiente foco: F23 (36%), F20 (40%), F26 (42%, revisión pendiente), F27 (45%), F24 (46%), F25 (53%), F28 (58%), F19 (78%); mantenimiento F18/F21; después F34/F69 Frattini; finalmente F33 Rothschild. Porcentajes heurísticos, no cobertura textual medida.",
     "deduplicatedOrders": [
       36,
       46,

@@ -28,12 +28,22 @@ for(const [index,mod] of mods.entries()){
    assert(e.claimStatus==="mencion_editorial_no_equivale_a_relacion_sustantiva"&&e.confidence==="hipotesis","Mención convertida en vínculo sin prueba "+e.id);
   }
  }
- assert(mod.nodes.flatMap(n=>n.podcastNotes||[]).filter(n=>Number.isFinite(n.timeSec)).length===2,
-  "F"+order+": dos referencias minutadas atribuidas, sin presumir autenticidad");
+ assert(mod.nodes.flatMap(n=>n.podcastNotes||[]).filter(n=>Number.isFinite(n.timeSec)).length===(order===26?18:2),
+  "F"+order+": número de anclas de subtítulos inconsistente; no implica cotejo de audio");
 }
-assert.equal(mods[0].nodes.length,5);assert.equal(mods[0].edges.length,4);
+assert.equal(mods[0].nodes.length,11);assert.equal(mods[0].edges.length,11);
 assert.equal(mods[1].nodes.length,8);assert.equal(mods[1].edges.length,8);
-assert.equal(documented,5);assert.equal(mentions,7);
+assert.equal(documented,8);assert.equal(mentions,11);
+const f26=mods[0];
+assert.equal(f26.metadata.transcriptStoredPrivately,true,"El TXT se conserva en Drive privado");
+assert.equal(f26.metadata.transcriptCharactersReadBack,134558);
+assert(!f26.edges.some(e=>e.id==="f26-mention-ai"),"No atribuir mención del AI Act si no está en la transcripción");
+for(const id of ["f26-thiel-palantir-sec","f26-karp-palantir-sec","f26-dgsi-palantir-senat"]){
+ const e=f26.edges.find(e=>e.id===id);
+ assert(e&&e.claimStatus==="hecho_verificado_independiente"&&e.confidence==="documentado");
+}
+const allegation=f26.nodes.find(n=>n.id==="f26-thiel").podcastNotes.find(n=>n.timeSec===2798);
+assert(allegation&&allegation.status==="alegacion_no_verificada"&&allegation.text.toLowerCase().includes("no se aporta"));
 const byId=new Map(mods[1].edges.map(e=>[e.id,e]));
 assert(byId.get("f27-ukr-blackrock-mou")?.source.includes("kmu.gov.ua"));
 assert(byId.get("f27-blackrock-udf")?.note.includes("pro bono"));
@@ -68,4 +78,4 @@ for(const id of ["study-f27-ukr-blackrock-mou-2022","study-f27-ukr-blackrock-udf
  assert(x?.investigation.status==="hecho_documentado"&&x.investigation.confirmedBy.url.startsWith("https://"),
   "Hito no sustentado por fuente oficial "+id);
 }
-console.log("OK F26/27: 5 relaciones documentales, 7 menciones, 3 hitos y 4 notas minutadas; TXT verificados sin audio cotejado.");
+console.log("OK F26/27: 8 relaciones documentadas, 11 menciones, 20 anclas de subtítulos, 4 hitos; audio sin cotejar.");
