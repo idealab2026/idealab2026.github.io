@@ -159,6 +159,35 @@
       }
     },
     {
+      "id": "study-f50-juicios-salem-1692",
+      "y": 1692.5,
+      "t": "En Salem se celebran procesos por brujería con ejecuciones por ahorcamiento",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · F50; registros históricos de Salem",
+      "d": "En 1692 se celebraron en la colonia de Massachusetts los juicios por brujería de Salem. De acuerdo con la documentación histórica del Salem Witch Museum, diecinueve personas fueron ahorcadas, Giles Corey murió aplastado durante el proceso y hubo fallecimientos adicionales en prisión. No se quemó a las condenadas en hogueras, pese a la representación cinematográfica extendida. El episodio F50 debate el mito, pero el balance y el procedimiento proceden de la institución histórica.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "1692",
+        "datePrecision": "año",
+        "status": "hecho_documentado",
+        "sourceOrder": 50,
+        "sourceTitle": "The Wild Project #284 · Miguel de Lys",
+        "sourceUrl": "https://www.youtube.com/watch?v=H841XyN9B_4",
+        "confirmedBy": {
+          "label": "Salem Witch Museum · Historical FAQ",
+          "url": "https://salemwitchmuseum.com/faqs/"
+        },
+        "relatedTelarana": [
+          "f50-salem",
+          "f50-episodio",
+          "f50-caza-brujas"
+        ],
+        "methodologicalLimits": "El relato audiovisual de 2024 no constituye prueba primaria de los procesos de 1692. Las estadísticas y el tipo de ejecución se basan en la institución histórica. La fuente F50 se conserva como debate de divulgación sin marcas temporales ni diarización comprobadas."
+      }
+    },
+    {
       "id": "study-v4-regencia-maria-cristina-1833",
       "y": 1833.7561643835616,
       "t": "María Cristina presenta su manifiesto político como regente de España",
@@ -212,6 +241,35 @@
           "f25-fed-act"
         ],
         "methodologicalLimits": "Dato histórico documentado mediante la fuente institucional original. Se añade como contexto independiente: no certifica que el invitado lo expusiera con precisión ni valida sus alegaciones sobre supuestas operaciones ocultas o culpabilidades."
+      }
+    },
+    {
+      "id": "study-f39-descubrimiento-tumba-tutankamon-1922",
+      "y": 1922.841095890411,
+      "t": "Howard Carter localiza la entrada de la tumba de Tutankamón",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · F39; contraste archivístico de Oxford",
+      "d": "El 4 de noviembre de 1922, el equipo dirigido por Howard Carter identificó los primeros peldaños de acceso a la tumba de Tutankamón en el Valle de los Reyes. El diario de excavación conservado por el Griffith Institute, Universidad de Oxford, documenta la fecha y las circunstancias. La fuente F39 habla del hallazgo y del mito posterior de una maldición, pero la exactitud de la fecha procede de documentación primaria, no de la transcripción NotebookLM.",
+      "g": [
+        "África"
+      ],
+      "investigation": {
+        "date": "1922-11-04",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 39,
+        "sourceTitle": "Egiptólogo destroza mitos de Egipto · Tito Vivas",
+        "sourceUrl": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
+        "confirmedBy": {
+          "label": "Griffith Institute, Universidad de Oxford · Diario de Howard Carter",
+          "url": "https://www.griffith.ox.ac.uk/gri/4sea1not.html"
+        },
+        "relatedTelarana": [
+          "f39-howard-carter",
+          "f39-tutankamon",
+          "f39-episodio"
+        ],
+        "methodologicalLimits": "La fecha y descubrimiento proceden del diario original de Carter; la afirmación popular de una maldición es una leyenda ajena al documento. La fuente F39 solo se utiliza como punto de entrada editorial, sin minutajes ni audio cotejado."
       }
     },
     {
@@ -2425,6 +2483,42 @@
       }
     },
     {
+      "id": "study-f08-carvajal-declaracion-culpabilidad-2025",
+      "y": 2025.4794520547946,
+      "t": "Hugo Carvajal se declara culpable ante un tribunal federal estadounidense",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 08 · expediente judicial federal independiente",
+      "d": "El 25 de junio de 2025, la Fiscalía Federal del Distrito Sur de Nueva York comunicó que Hugo Armando Carvajal Barrios, antiguo jefe de inteligencia militar de Venezuela extraditado desde España en julio de 2023, se había declarado culpable ante un juez federal de delitos de conspiración para importar cocaína, narcoterrorismo y armas. El episodio F08 menciona a Carvajal, pero su narración sobre presuntas actuaciones del CNI no queda acreditada por esta causa. El acontecimiento jurídico se incorpora por la comunicación oficial del Departamento de Justicia, no por la interpretación del entrevistado.",
+      "g": [
+        "América"
+      ],
+      "investigation": {
+        "date": "2025-06-25",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 8,
+        "sourceTitle": "Vaquero Podcast #67 · Villarejo · Carvajal citado en minuto 23:32",
+        "sourceUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac",
+        "confirmedBy": {
+          "label": "Departamento de Justicia de EE. UU. · Fiscalía SDNY, 25/06/2025",
+          "url": "https://www.justice.gov/usao-sdny/pr/former-venezuelan-general-pleads-guilty-narco-terrorism-weapons-and-drug-trafficking"
+        },
+        "relatedTelarana": [
+          "f08-hugo-carvajal",
+          "f08-episode"
+        ],
+        "podcastTranscriptAnchor": {
+          "timecode": "00:23:32",
+          "seconds": 1412,
+          "videoUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac&t=1412s",
+          "sourceOrder": 8,
+          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
+          "limits": "La mención de Carvajal no prueba el contenido de las afirmaciones del invitado sobre servicios de inteligencia."
+        },
+        "methodologicalLimits": "El documento fiscal confirma la declaración de culpabilidad en los cargos indicados, pero no valida acusaciones de Villarejo contra partidos españoles o el CNI. El episodio solo constituye referencia de mención; los hechos judiciales proceden de documentación estadounidense independiente."
+      }
+    },
+    {
       "id": "study-f21-usaid-transferencia-2025",
       "y": 2025.4972602739726,
       "t": "El Departamento de Estado asume gran parte de la ayuda exterior gestionada por USAID",
@@ -2598,6 +2692,34 @@
       }
     },
     {
+      "id": "study-f23-jacques-baud-sancion-ue-2025",
+      "y": 2025.9534246575342,
+      "t": "El Consejo de la UE incorpora a Jacques Baud a su lista de sanciones",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · fuente 23 · Diario Oficial de la UE",
+      "d": "El 15 de diciembre de 2025, el Consejo de la Unión Europea publicó el Reglamento de ejecución (UE) 2025/2568, que incluye a Jacques Baud entre las personas sometidas a medidas restrictivas dentro del régimen relativo a actividades desestabilizadoras de Rusia. El acto y la fecha son verificables; la controversia sobre la justificación de la inclusión y cualquier valoración de su legitimidad no se resuelven por el mero hecho de la sanción. En el episodio F23 aparece una referencia oral transcrita automáticamente como «Jack Swout» en 00:04:49; su correspondencia con Baud es probable, no verificada escuchando el audio.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "2025-12-15",
+        "datePrecision": "día",
+        "status": "hecho_documentado",
+        "sourceOrder": 23,
+        "sourceTitle": "El poder real que controla la Unión Europea · Lorenzo Ramírez",
+        "sourceUrl": "https://www.youtube.com/watch?v=EMZzh2ZpLj8&t=289s",
+        "confirmedBy": {
+          "label": "Diario Oficial de la UE · Reglamento de ejecución (UE) 2025/2568",
+          "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32025R2568"
+        },
+        "relatedTelarana": [
+          "f23-consejo-ue",
+          "f23-jacques-baud"
+        ],
+        "methodologicalLimits": "Identificación con la locución ASR «Jack Swout» probable, no cotejada en audio. La adopción de medidas restrictivas no es una resolución penal ni demuestra por sí sola toda la argumentación del entrevistado."
+      }
+    },
+    {
       "id": "study-f21-usaid-financial-audit-2026",
       "y": 2026.0424657534247,
       "t": "El auditor de USAID no puede emitir opinión sobre las cuentas del ejercicio fiscal 2025",
@@ -2651,6 +2773,43 @@
           "f18-doj"
         ],
         "methodologicalLimits": "Se registra un acto documental de comunicación oficial. No se infiere de ese acto implicación penal de personas mencionadas, conexiones con servicios secretos ni contenido exacto del episodio."
+      }
+    },
+    {
+      "id": "study-f26-francia-dgsi-palantir-senado-2026",
+      "y": 2026.3643835616438,
+      "t": "El Gobierno francés confirma ante el Senado la renovación del contrato DGSI–Palantir",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F26 · contraste parlamentario francés",
+      "d": "En respuesta publicada en el Journal officiel du Sénat de Francia el 14 de mayo de 2026, el Gobierno confirmó que la DGSI había renovado contratos de licencias y mantenimiento con Palantir mientras preparaba una solución tecnológica soberana. La respuesta señala salvaguardas técnicas y que el proveedor no tiene acceso al contenido de los datos. La fecha corresponde a la publicación de la respuesta oficial, no necesariamente a la firma de cada renovación contractual.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "sourceOrder": 26,
+        "sourceTitle": "F26 · Lorenzo Ramírez · IA, medios y sistema de control",
+        "sourceUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2026-05-14",
+        "confirmedBy": {
+          "label": "Sénat de France · respuesta del Gobierno publicada 14/05/2026",
+          "url": "https://www.senat.fr/questions/base/2025/qSEQ251207120.html"
+        },
+        "relatedTelarana": [
+          "f26-dgsi",
+          "f26-palantir",
+          "f26-episodio"
+        ],
+        "podcastTranscriptAnchor": {
+          "timecode": "01:01:56",
+          "seconds": 3716,
+          "videoUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw&t=3716s",
+          "sourceOrder": 26,
+          "evidenceType": "mencion_en_subtitulos_sin_cotejo_audio",
+          "limits": "La mención a contratos con inteligencia francesa no verifica tesis amplias sobre control político o acceso a datos."
+        },
+        "methodologicalLimits": "La respuesta parlamentaria permite confirmar contratos de licencia y mantenimiento de la DGSI con Palantir, pero no prueba su acceso al contenido de datos ni otras aseveraciones geopolíticas del entrevistado."
       }
     },
     {
@@ -2967,137 +3126,6 @@
           "usaid-departamento-estado"
         ],
         "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
-      }
-    },
-    {
-      "id": "study-f08-carvajal-declaracion-culpabilidad-2025",
-      "y": 2025.4794520547946,
-      "t": "Hugo Carvajal se declara culpable ante un tribunal federal estadounidense",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · fuente 08 · expediente judicial federal independiente",
-      "d": "El 25 de junio de 2025, la Fiscalía Federal del Distrito Sur de Nueva York comunicó que Hugo Armando Carvajal Barrios, antiguo jefe de inteligencia militar de Venezuela extraditado desde España en julio de 2023, se había declarado culpable ante un juez federal de delitos de conspiración para importar cocaína, narcoterrorismo y armas. El episodio F08 menciona a Carvajal, pero su narración sobre presuntas actuaciones del CNI no queda acreditada por esta causa. El acontecimiento jurídico se incorpora por la comunicación oficial del Departamento de Justicia, no por la interpretación del entrevistado.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "2025-06-25",
-        "datePrecision": "dia",
-        "status": "hecho_documentado",
-        "sourceOrder": 8,
-        "sourceTitle": "Vaquero Podcast #67 · Villarejo · Carvajal citado en minuto 23:32",
-        "sourceUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac",
-        "confirmedBy": {
-          "label": "Departamento de Justicia de EE. UU. · Fiscalía SDNY, 25/06/2025",
-          "url": "https://www.justice.gov/usao-sdny/pr/former-venezuelan-general-pleads-guilty-narco-terrorism-weapons-and-drug-trafficking"
-        },
-        "relatedTelarana": [
-          "f08-hugo-carvajal",
-          "f08-episode"
-        ],
-        "podcastTranscriptAnchor": {
-          "timecode": "00:23:32",
-          "seconds": 1412,
-          "videoUrl": "https://www.youtube.com/watch?v=i4aTDf0yBac&t=1412s",
-          "sourceOrder": 8,
-          "evidenceType": "mencion_oral_en_subtitulos_no_cotejada_con_audio",
-          "limits": "La mención de Carvajal no prueba el contenido de las afirmaciones del invitado sobre servicios de inteligencia."
-        },
-        "methodologicalLimits": "El documento fiscal confirma la declaración de culpabilidad en los cargos indicados, pero no valida acusaciones de Villarejo contra partidos españoles o el CNI. El episodio solo constituye referencia de mención; los hechos judiciales proceden de documentación estadounidense independiente."
-      }
-    },
-    {
-      "id": "study-f39-descubrimiento-tumba-tutankamon-1922",
-      "y": 1922.841095890411,
-      "t": "Howard Carter localiza la entrada de la tumba de Tutankamón",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · F39; contraste archivístico de Oxford",
-      "d": "El 4 de noviembre de 1922, el equipo dirigido por Howard Carter identificó los primeros peldaños de acceso a la tumba de Tutankamón en el Valle de los Reyes. El diario de excavación conservado por el Griffith Institute, Universidad de Oxford, documenta la fecha y las circunstancias. La fuente F39 habla del hallazgo y del mito posterior de una maldición, pero la exactitud de la fecha procede de documentación primaria, no de la transcripción NotebookLM.",
-      "g": [
-        "África"
-      ],
-      "investigation": {
-        "date": "1922-11-04",
-        "datePrecision": "día",
-        "status": "hecho_documentado",
-        "sourceOrder": 39,
-        "sourceTitle": "Egiptólogo destroza mitos de Egipto · Tito Vivas",
-        "sourceUrl": "https://www.youtube.com/watch?v=tPZ8wXGmSgA",
-        "confirmedBy": {
-          "label": "Griffith Institute, Universidad de Oxford · Diario de Howard Carter",
-          "url": "https://www.griffith.ox.ac.uk/gri/4sea1not.html"
-        },
-        "relatedTelarana": [
-          "f39-howard-carter",
-          "f39-tutankamon",
-          "f39-episodio"
-        ],
-        "methodologicalLimits": "La fecha y descubrimiento proceden del diario original de Carter; la afirmación popular de una maldición es una leyenda ajena al documento. La fuente F39 solo se utiliza como punto de entrada editorial, sin minutajes ni audio cotejado."
-      }
-    },
-    {
-      "id": "study-f50-juicios-salem-1692",
-      "y": 1692.5,
-      "t": "En Salem se celebran procesos por brujería con ejecuciones por ahorcamiento",
-      "c": "Acontecimientos",
-      "s": "Investigación IDEA LAB · F50; registros históricos de Salem",
-      "d": "En 1692 se celebraron en la colonia de Massachusetts los juicios por brujería de Salem. De acuerdo con la documentación histórica del Salem Witch Museum, diecinueve personas fueron ahorcadas, Giles Corey murió aplastado durante el proceso y hubo fallecimientos adicionales en prisión. No se quemó a las condenadas en hogueras, pese a la representación cinematográfica extendida. El episodio F50 debate el mito, pero el balance y el procedimiento proceden de la institución histórica.",
-      "g": [
-        "América"
-      ],
-      "investigation": {
-        "date": "1692",
-        "datePrecision": "año",
-        "status": "hecho_documentado",
-        "sourceOrder": 50,
-        "sourceTitle": "The Wild Project #284 · Miguel de Lys",
-        "sourceUrl": "https://www.youtube.com/watch?v=H841XyN9B_4",
-        "confirmedBy": {
-          "label": "Salem Witch Museum · Historical FAQ",
-          "url": "https://salemwitchmuseum.com/faqs/"
-        },
-        "relatedTelarana": [
-          "f50-salem",
-          "f50-episodio",
-          "f50-caza-brujas"
-        ],
-        "methodologicalLimits": "El relato audiovisual de 2024 no constituye prueba primaria de los procesos de 1692. Las estadísticas y el tipo de ejecución se basan en la institución histórica. La fuente F50 se conserva como debate de divulgación sin marcas temporales ni diarización comprobadas."
-      }
-    },
-    {
-      "id": "study-f26-francia-dgsi-palantir-senado-2026",
-      "y": 2026.3643835616438,
-      "t": "El Gobierno francés confirma ante el Senado la renovación del contrato DGSI–Palantir",
-      "c": "Acontecimientos",
-      "s": "IDEA LAB · F26 · contraste parlamentario francés",
-      "d": "En respuesta publicada en el Journal officiel du Sénat de Francia el 14 de mayo de 2026, el Gobierno confirmó que la DGSI había renovado contratos de licencias y mantenimiento con Palantir mientras preparaba una solución tecnológica soberana. La respuesta señala salvaguardas técnicas y que el proveedor no tiene acceso al contenido de los datos. La fecha corresponde a la publicación de la respuesta oficial, no necesariamente a la firma de cada renovación contractual.",
-      "g": [
-        "Europa"
-      ],
-      "investigation": {
-        "sourceOrder": 26,
-        "sourceTitle": "F26 · Lorenzo Ramírez · IA, medios y sistema de control",
-        "sourceUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw",
-        "status": "hecho_documentado",
-        "datePrecision": "día",
-        "date": "2026-05-14",
-        "confirmedBy": {
-          "label": "Sénat de France · respuesta del Gobierno publicada 14/05/2026",
-          "url": "https://www.senat.fr/questions/base/2025/qSEQ251207120.html"
-        },
-        "relatedTelarana": [
-          "f26-dgsi",
-          "f26-palantir",
-          "f26-episodio"
-        ],
-        "podcastTranscriptAnchor": {
-          "timecode": "01:01:56",
-          "seconds": 3716,
-          "videoUrl": "https://www.youtube.com/watch?v=FVSBeP6L8lw&t=3716s",
-          "sourceOrder": 26,
-          "evidenceType": "mencion_en_subtitulos_sin_cotejo_audio",
-          "limits": "La mención a contratos con inteligencia francesa no verifica tesis amplias sobre control político o acceso a datos."
-        },
-        "methodologicalLimits": "La respuesta parlamentaria permite confirmar contratos de licencia y mantenimiento de la DGSI con Palantir, pero no prueba su acceso al contenido de datos ni otras aseveraciones geopolíticas del entrevistado."
       }
     }
   ]
