@@ -18,7 +18,7 @@ const expectedNodes=[8,7,9,9,7],expectedEdges=[8,7,8,8,6],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===36,
   "El inventario 74/71/36 está desincronizado");
-assert(!/docs\\.google\\.com\\/document\\/d\\//.test(source),
+assert(!source.includes("docs.google.com/document/d/"),
   "Los documentos privados no deben entrar al bundle de La Telaraña");
 assert(html.includes('src="./fuentes-70-74-frattini-inicial.js'),
   "No se importa la primera revisión de Frattini en la web");
@@ -59,7 +59,7 @@ for(let i=0;i<videos.length;i++){
  assert(notes.length>=6&&notes.every(x=>Number.isInteger(x.timeSec)&&x.timeSec>=0&&x.source.includes("youtube.com/watch?v=")&&x.status),
    "F"+n+": faltan notas con tiempos y estado probatorio");
  const documented=mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente");
- assert(documented.every(x=>x.confidence==="documentado"&&/^https:\/\//.test(x.source)&&!x.source.includes("youtube.com")),
+ assert(documented.every(x=>x.confidence==="documentado"&&x.source.startsWith("https://")&&!x.source.includes("youtube.com")),
    "F"+n+": se ha elevado un testimonio a vínculo contrastado");
  const remaining=mod.edges.filter(x=>x.claimStatus!=="hecho_verificado_independiente");
  assert(remaining.every(x=>x.confidence==="hipotesis"),
