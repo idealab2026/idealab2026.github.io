@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 36,
-    "notStarted": 35,
+    "inReview": 37,
+    "notStarted": 34,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1394,15 +1394,55 @@
       ],
       "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: Segunda revisión médica e histórica F74: 13 nodos, 16 relaciones, 15 notas ancladas al texto, 6 relaciones documentadas con investigación forense, USHMM, UConn y Archivos Nacionales. El análisis de fragmento craneal 2009 compatible con mujer NO invalida la identificación de restos dentales estudiados en 2018. Conjeturas sobre llegada de Hitler a Argentina, supuesta orientación y vida sexual NO se consideran probadas. Un hito propio: investigación odontológica 2018; muerte 1945 enlazada a hito de F71 y atentado 1944 cruzado sin duplicados. Audio 0 minutos cotejados.",
       "lastUpdated": "2026-11-13"
+    },
+    {
+      "order": 34,
+      "videoId": "j_5Tj0kIj2c",
+      "title": "Luces y Sombras del Papa Francisco - Eric Frattini",
+      "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c&t=1535s",
+      "status": "primera_revision_documental_de_txt_notebooklm_sin_minutajes",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-34-francisco-primera-revision.js",
+      "docTranscriptCreated": true,
+      "transcriptDocHasFullText": false,
+      "transcriptDocUrl": "https://docs.google.com/document/d/1D4cz8RRRQj3GJg1D4GDJ8ly7kR2QQvjSUD80DCSAdrE/edit",
+      "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1qypggnikGX6_0M3t6DgySOAV8hAFCIDa/view?usp=drivesdk",
+      "untimedTranscriptCharacters": 135278,
+      "untimedTextAvailable": true,
+      "untimedTextReadbackVerified": true,
+      "untimedTextCompletenessUnverified": true,
+      "transcriptContentImported": false,
+      "timecodedTranscriptStoredInDrive": false,
+      "timecodedTranscriptReviewedNotes": 0,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "audioVerified": false,
+      "sourceSpeakingTurnsDiarized": false,
+      "sourceNodesDocumented": 14,
+      "sourceRelationsDocumented": 17,
+      "personsProfiled": 6,
+      "structuredProfiles": 6,
+      "impersonalAttributedSummaries": 8,
+      "verifiedIndependentChecks": 9,
+      "timelineVerifiedEventsCommitted": 4,
+      "timelineEventIds": [
+        "study-f34-coaea-2013",
+        "study-f34-chile-carta-2018",
+        "study-f34-barros-renuncia-2018",
+        "study-f34-raffaella-petrini-gobernacion-2025"
+      ],
+      "imageRuntimeVerified": false,
+      "qualityNotes": "13/11/2026: primera lectura de TXT privado NotebookLM sin minutajes, 135278 caracteres, no cotejado contra audio y sin completitud acreditada. Doc editable sigue vacío para transcripción manual. 14 nodos y 17 aristas, 9 vínculos respaldados por actos de Santa Sede y Ministerio de Exteriores de Singapur; COSEA, Praedicate, carta Chile, renuncia Barros y Petrini. Opiniones sobre fracaso de reformas y supuesto robo de informes siguen como atribuciones sin probar. No se añaden minutos ficticios, no se considera terminado.",
+      "lastUpdated": "2026-11-13"
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 116,
+    "committedVerifiedEvents": 120,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 72,
+    "fromSourceInReview": 76,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1552,6 +1592,12 @@
         "study-f30-invasion-2022",
         "study-f30-nato-concept-2022"
       ],
+      "34": [
+        "study-f34-coaea-2013",
+        "study-f34-chile-carta-2018",
+        "study-f34-barros-renuncia-2018",
+        "study-f34-raffaella-petrini-gobernacion-2025"
+      ],
       "39": [
         "study-f39-descubrimiento-tumba-tutankamon-1922"
       ],
@@ -1633,21 +1679,7 @@
     "expandedNotebookEntryTotal": 67
   },
   "originalCatalogTotal": 33,
-  "pendingSources": [
-    {
-      "order": 34,
-      "notebook": "Aportación del usuario",
-      "title": "Luces y Sombras del Papa Francisco - Eric Frattini",
-      "sourceUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c&t=1535s",
-      "originalUrl": "https://www.youtube.com/watch?v=j_5Tj0kIj2c&t=1535s",
-      "videoId": "j_5Tj0kIj2c",
-      "type": "youtube",
-      "duplicateOf": null,
-      "importLine": null,
-      "status": "pendiente",
-      "reviewComplete": false
-    }
-  ],
+  "pendingSources": [],
   "inventory": {
     "identifiedOn": "2026-11-09",
     "source": "Inventario exportado desde NotebookLM, respaldado por CSV local en Descargas del Mac",
@@ -4012,18 +4044,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": null,
-        "status": "pendiente",
+        "status": "primera_revision_documental_de_txt_notebooklm_sin_minutajes",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
-          "docTranscriptionCreated": false,
+          "initiated": true,
+          "docTranscriptionCreated": true,
           "transcriptContentImported": false,
-          "docTranscriptionUrl": null,
+          "docTranscriptionUrl": "https://docs.google.com/document/d/1D4cz8RRRQj3GJg1D4GDJ8ly7kR2QQvjSUD80DCSAdrE/edit",
           "complete": false,
-          "inReview": false,
-          "imageAtGraphNode": "no_iniciada",
+          "inReview": true,
+          "imageAtGraphNode": "primer_mapa_sin_revision_fotografica",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-13",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4036,15 +4068,33 @@
           "untimedTranscriptDriveUrl": "https://drive.google.com/file/d/1qypggnikGX6_0M3t6DgySOAV8hAFCIDa/view?usp=drivesdk",
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "manualTranscriptBlankConfirmed": true,
+          "manualTranscriptPending": true,
+          "untimedTranscriptReadbackVerified": true,
+          "sourceFirstPassFromUntimedTXT": true,
+          "reviewStage": "primera_revision_documental_abierta",
+          "audioVerified": false,
+          "verifiedMinuteReferences": 0,
+          "sourceSpeakingTurnsDiarized": false,
+          "methodologicalStatus": "Existe TXT de NotebookLM con ~135278 caracteres y sin tiempos, disponible en Drive privado, pero el Doc editable F34 está vacío. Fichas parciales no constituyen transcripción validada. Identidades y voz atribuidas por contexto de entrevista; audio sin cotejar. Se han verificado actos oficiales externos, no todas las acusaciones."
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 22,
+          "state": "primera_revision_documental_abierta_sin_audio_ni_minutajes",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_de_texto_o_audio",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 14,
+            "relations": 17,
+            "biographies": 6,
+            "statements": 8,
+            "independentChecks": 9,
+            "verifiedTimelineEvents": 4,
+            "unverifiedAudioTimecodes": 0
+          },
+          "nextAction": "Recuperar diarización y marcas temporales del vídeo; cotejar los pasajes sobre el presunto robo de informe COSEA, supuestas oposiciones internas y financiación del IOR; verificar exactitud del habla en la referencia a George Yeo."
         }
       },
       {
@@ -7074,11 +7124,12 @@
             {
               "order": 34,
               "title": "Luces y Sombras del Papa Francisco - Eric Frattini",
-              "percent": 0,
-              "reviewState": "sin_iniciar",
+              "percent": 22,
+              "reviewState": "en_revision",
               "timecodes": false,
               "untimedText": true,
-              "requiresAudioVerification": true
+              "requiresAudioVerification": true,
+              "nextAction": "Recuperar diarización y marcas temporales del vídeo; cotejar los pasajes sobre el presunto robo de informe COSEA, supuestas oposiciones internas y financiación del IOR; verificar exactitud del habla en la referencia a George Yeo."
             },
             {
               "order": 69,
