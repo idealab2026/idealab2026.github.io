@@ -78,9 +78,9 @@ for(const row of rows){
 assert.equal(stats.publishedReviewed,3,"Estados cerrados fuera de registro");
 assert.equal(stats.inReview,(feed.inReview||[]).filter(x=>orders.get(x.order)?.duplicateOf==null).length,"En revisión fuera de inventario");
 assert.equal(stats.notStarted,71-stats.publishedReviewed-stats.inReview,"Pendientes canónicas fuera de inventario");
-assert.equal(stats.confirmedTranscript,29,"22 Docs heredados + 7 TXT recuperados que antes faltaban");
+assert.equal(stats.confirmedTranscript,34,"29 textos anteriores + 5 Docs manuales F70–F74 recibidos");
 assert.equal(stats.timecodedTranscript,28,"Los 28 vídeos cronometrados deben estar registrados");
-assert.equal(stats.youtubeWithoutFullTranscript,38,"Vídeos sin transcripción íntegra en ninguno de los formatos");
+assert.equal(stats.youtubeWithoutFullTranscript,33,"Vídeos sin transcripción íntegra en ninguno de los formatos");
 const p8=report.find(x=>x.order===8);
 assert(p8.transcriptTextConfirmed&&p8.timecodedTranscriptStoredInDrive&&p8.transcriptLegacyDocTextConfirmed===false,
  "F8: nuevo TXT con tiempos no debe transformar la plantilla antigua en transcripción");
