@@ -71,7 +71,7 @@ for(const n of [72,73]){
  assert(stage?.available,"F"+n+" no se incorpora al grafo público");
 }
 const pagerNotes=ctx.data.edges.filter(e=>Array.isArray(e.podcastNotes)&&e.podcastNotes.some(n=>
- n.episodeId==="idealab-f73-frattini"&&/reuters\\.com/.test(n.source||"")&&/buscapersonas|explosiones/i.test(n.text||"")));
+ n.episodeId==="idealab-f73-frattini"&&String(n.source||"").includes("reuters.com")&&/buscapersonas|explosiones/i.test(n.text||"")));
 assert(pagerNotes.length>=1,"La evidencia del segundo episodio sobre buscapersonas se ha perdido durante la deduplicación");
 assert(ctx.data.nodes.filter(n=>n.name==="Explosiones de buscapersonas en Líbano (2024)").length===1,
  "La misma operación histórica está duplicada en el grafo");
