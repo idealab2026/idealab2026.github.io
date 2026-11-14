@@ -222,6 +222,7 @@ jobs:
           cp la-telarana/fuente-42-jesus-arqueologia.js dist/la-telarana/fuente-42-jesus-arqueologia.js
           cp la-telarana/fuente-43-constantinopla.js dist/la-telarana/fuente-43-constantinopla.js
           cp la-telarana/fuente-44-roma.js dist/la-telarana/fuente-44-roma.js
+          cp la-telarana/fuente-45-piramides.js dist/la-telarana/fuente-45-piramides.js
           cp la-telarana/fuente-33-rothschild-inicial.js dist/la-telarana/fuente-33-rothschild-inicial.js
           cp la-telarana/fuente-34-francisco-primera-revision.js dist/la-telarana/fuente-34-francisco-primera-revision.js
           cp la-telarana/fuente-39-egiptologia-revision.js dist/la-telarana/fuente-39-egiptologia-revision.js

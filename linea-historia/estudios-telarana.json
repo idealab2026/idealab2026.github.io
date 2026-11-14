@@ -3991,9 +3991,18 @@
         "relatedTelarana": [
           "f39-papiros-wadi",
           "f39-merer",
-          "f39-gran-piramide-jufu"
+          "f39-gran-piramide-jufu",
+          "f45-episodio"
         ],
-        "methodologicalLimits": "El año identifica la campaña de hallazgo, no la fecha de redacción del diario ni la construcción de la pirámide. Los papiros no demuestran cada detalle técnico de la obra; la transcripción del debate no tiene audio cotejado."
+        "methodologicalLimits": "El año identifica la campaña de hallazgo, no la fecha de redacción del diario ni la construcción de la pirámide. Los papiros no demuestran cada detalle técnico de la obra; la transcripción del debate no tiene audio cotejado.",
+        "additionalSources": [
+          {
+            "sourceOrder": 45,
+            "title": "F45 · Secretos de las pirámides de Egipto",
+            "url": "https://www.youtube.com/watch?v=zYmH-59KakM",
+            "note": "La conversación menciona los papiros; la fecha de 2013 procede de documentación arqueológica independiente."
+          }
+        ]
       }
     },
     {
@@ -4405,6 +4414,39 @@
           "f44-imperio-romano"
         ],
         "methodologicalLimits": "Se registra el año documentado por el contraste externo, sin inventar mes ni día. La transcripción audiovisual y las voces no se han cotejado."
+      }
+    },
+    {
+      "id": "study-f45-vacio-piramide-2017",
+      "y": 2017.835616438356,
+      "t": "Publicación del hallazgo de un gran vacío en la pirámide de Jufu",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 45 · documentación científica",
+      "d": "El 2 de noviembre de 2017 se publicó un estudio que detectó mediante muones un gran vacío sobre la Gran Galería de la pirámide de Jufu. La investigación no estableció su finalidad.",
+      "g": [
+        "África"
+      ],
+      "p": [
+        "EGY"
+      ],
+      "investigation": {
+        "sourceOrder": 45,
+        "sourceTitle": "F45 · Secretos de las pirámides de Egipto",
+        "sourceUrl": "https://www.youtube.com/watch?v=zYmH-59KakM",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2017-11-02",
+        "confirmedBy": {
+          "label": "Nature · estudio ScanPyramids",
+          "url": "https://www.nature.com/articles/nature24647"
+        },
+        "relatedTelarana": [
+          "f45-episodio",
+          "f45-scanpyramids",
+          "f45-gran-vacio",
+          "f39-gran-piramide-jufu"
+        ],
+        "methodologicalLimits": "Fecha de publicación científica, no de construcción. La existencia del vacío no determina su función ni valida hipótesis sobre máquinas. Audio y voces de la conversación pendientes de cotejo."
       }
     }
   ]
