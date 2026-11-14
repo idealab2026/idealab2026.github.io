@@ -4063,11 +4063,11 @@
     },
     {
       "id": "study-f41-constantinopla-1453",
-      "y": 1453.0,
+      "y": 1453.4054794520548,
       "t": "Conquista otomana de Constantinopla",
       "c": "Acontecimientos",
       "s": "IDEA LAB · fuente 41 · documentación histórica",
-      "d": "En 1453 las fuerzas otomanas bajo Mehmed II tomaron Constantinopla, capital del Imperio bizantino. La ciudad se convirtió en centro político del Estado otomano y el acontecimiento suele marcar el fin del Imperio romano de Oriente.",
+      "d": "El 29 de mayo de 1453 las fuerzas otomanas bajo Mehmed II tomaron Constantinopla, capital del Imperio bizantino. El último emperador, Constantino XI, murió durante el asalto; las circunstancias precisas son inciertas.",
       "g": [
         "Europa",
         "Asia"
@@ -4080,18 +4080,29 @@
         "sourceTitle": "F41 · Historia del Imperio otomano",
         "sourceUrl": "https://www.youtube.com/watch?v=etoEJ27_j6s",
         "status": "hecho_documentado",
-        "datePrecision": "año",
-        "date": "1453",
+        "datePrecision": "día",
+        "date": "1453-05-29",
         "confirmedBy": {
-          "label": "Metropolitan Museum · Imperio otomano",
-          "url": "https://www.metmuseum.org/it/learn/educators/curriculum-resources/art-of-the-islamic-world/unit-five/chapter-two/the-ottoman-empire"
+          "label": "Cambridge · Conquest",
+          "url": "https://www.cambridge.org/core/books/abs/social-history-of-ottoman-istanbul/conquest/B3323A0422DC829D2AB38ED78D05FD27"
         },
         "relatedTelarana": [
           "f41-episodio",
           "f41-mehmed-ii",
-          "f41-constantinopla"
+          "f41-constantinopla",
+          "f43-episodio",
+          "f43-constantino-xi",
+          "f43-asedio-1453"
         ],
-        "methodologicalLimits": "Se registra el año documentado en esta fuente institucional; no se atribuye una fecha más precisa al vídeo sin audio cotejado."
+        "methodologicalLimits": "Fecha contrastada independientemente del audio de ambas fuentes. Las circunstancias exactas de la muerte del emperador son inciertas.",
+        "additionalSources": [
+          {
+            "sourceOrder": 43,
+            "title": "F43 · La caída de Constantinopla",
+            "url": "https://www.youtube.com/watch?v=oyeaQtn_svI",
+            "note": "Estudio documental parcial sin cotejo de audio."
+          }
+        ]
       }
     },
     {
@@ -4297,6 +4308,39 @@
           "f42-sudario"
         ],
         "methodologicalLimits": "La fecha corresponde a la publicación científica, no a la creación del objeto. El resultado se refiere a la muestra analizada; no prueba por sí solo la identidad de la imagen ni episodios de la vida de Jesús."
+      }
+    },
+    {
+      "id": "study-f43-saqueo-constantinopla-1204",
+      "y": 1204,
+      "t": "Saqueo de Constantinopla por la Cuarta Cruzada",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 43 · documentación histórica",
+      "d": "En 1204 los cruzados tomaron y saquearon Constantinopla. El Metropolitan Museum documenta el desvío de la expedición y el reparto del botín entre venecianos y otros cruzados.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "p": [
+        "TUR"
+      ],
+      "investigation": {
+        "sourceOrder": 43,
+        "sourceTitle": "F43 · La caída de Constantinopla",
+        "sourceUrl": "https://www.youtube.com/watch?v=oyeaQtn_svI",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1204",
+        "confirmedBy": {
+          "label": "Metropolitan Museum · Las Cruzadas",
+          "url": "https://www.metmuseum.org/de/essays/the-crusades-1095-1291"
+        },
+        "relatedTelarana": [
+          "f43-episodio",
+          "f43-cuarta-cruzada",
+          "f41-constantinopla"
+        ],
+        "methodologicalLimits": "Se registra únicamente el año. El audio y la integridad de la transcripción siguen sin cotejar; no se validan las cifras o descripciones literarias del vídeo."
       }
     }
   ]

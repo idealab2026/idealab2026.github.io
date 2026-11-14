@@ -1192,6 +1192,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.cambridge.org/highereducation/books/an-introduction-to-the-new-testament-and-the-origins-of-christianity/32A6751C4FE08D443DC4BDD934A3C343/the-quest-for-the-historical-jesus/AC9A7E362ADF910A63A6B84489A8796D",
       "sourceTitle": "Investigación histórica y fuentes documentales",
       "reviewedAt": "2026-11-14"
+    },
+    "f43-constantino-xi": {
+      "text": "Constantino XI Paleólogo fue el último emperador del Estado bizantino y defendió Constantinopla frente al asedio otomano de 1453. Murió durante el asalto final del 29 de mayo. Un estudio académico señala que el lugar y las circunstancias exactas de su muerte y sepultura no están establecidos, pese a las tradiciones posteriores.",
+      "source": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/tombs-of-the-palaiologan-emperors/C5079928DCB842457C4BA712151A15F8",
+      "sourceTitle": "Estudio académico sobre los emperadores Paleólogos",
+      "reviewedAt": "2026-11-14"
     }
   }
 };
