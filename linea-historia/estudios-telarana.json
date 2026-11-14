@@ -3922,6 +3922,38 @@
         ],
         "methodologicalLimits": "El acuerdo de 2015 no demuestra por sí solo el estado del programa nuclear en años posteriores. La fuente audiovisual sigue sin cotejo de audio."
       }
+    },
+    {
+      "id": "study-f37-gobekli-reidentificacion-1994",
+      "y": 1994,
+      "t": "Reconocimiento de estructuras monumentales de Göbekli Tepe",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 37 · investigación arqueológica",
+      "d": "En 1994 Klaus Schmidt reconoció el carácter prehistórico de estructuras monumentales en Göbekli Tepe. El yacimiento ya había sido identificado en una prospección de 1963; las excavaciones sistemáticas comenzaron en 1995. Es un hito de investigación, distinto de la construcción prehistórica del lugar.",
+      "g": [
+        "Asia"
+      ],
+      "p": [
+        "TUR"
+      ],
+      "investigation": {
+        "sourceOrder": 37,
+        "sourceTitle": "F37 · El buen salvaje y el origen del cuento humano",
+        "sourceUrl": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1994",
+        "confirmedBy": {
+          "label": "Instituto Arqueológico Alemán · historia de la investigación",
+          "url": "https://www.dainst.org/blogs/goebekli-tepe-the-first-20-years-of-research/630"
+        },
+        "relatedTelarana": [
+          "f37-episodio",
+          "f39-gobekli",
+          "f37-schmidt"
+        ],
+        "methodologicalLimits": "La fecha corresponde a la reidentificación de estructuras, no al descubrimiento inicial del yacimiento ni a su construcción. La transcripción del episodio no se ha cotejado con el audio."
+      }
     }
   ]
 }
