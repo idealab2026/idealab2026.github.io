@@ -268,7 +268,8 @@
           "f39-howard-carter",
           "f39-tutankamon",
           "f39-episodio",
-          "f40-episodio"
+          "f40-episodio",
+          "f53-episodio"
         ],
         "methodologicalLimits": "La fecha y descubrimiento proceden del diario original de Carter; la afirmación popular de una maldición es una leyenda ajena al documento. La fuente F39 solo se utiliza como punto de entrada editorial, sin minutajes ni audio cotejado.",
         "additionalSources": [
@@ -277,6 +278,12 @@
             "title": "F40 · El Antiguo Egipto en 13 minutos",
             "url": "https://www.youtube.com/watch?v=6a_gIpv_XD4",
             "note": "El vídeo menciona el hallazgo de 1922. Su audio no está cotejado; no acredita por sí solo todos los detalles del descubrimiento."
+          },
+          {
+            "sourceOrder": 53,
+            "title": "F53 · Pirámides y antiguo Egipto",
+            "url": "https://www.youtube.com/watch?v=yhHoetTIARc",
+            "note": "La conversación menciona el descubrimiento y su centenario; el audio no está cotejado."
           }
         ]
       }
