@@ -119,14 +119,14 @@ for(let i=0;i<freshIds.length;i++){
  assert(f.tracking.docTranscriptionCreated&&f.tracking.manualTranscriptTemplateCreated&&!f.tracking.manualTranscriptPending&&f.tracking.manualTranscriptReceived,"F"+f.order+": falta transcripción manual recibida");
  assert(f.tracking.transcriptContentImported&&f.tracking.manualTranscriptTimecodedInNativeDoc&&f.tracking.transcriptCharactersReadBack>100000&&f.tracking.manualTimestampMarkers>700&&f.tracking.inReview&&!f.tracking.complete,"F"+f.order+": falta lectura de vuelta de transcripción o se cerró indebidamente");
  assert(!f.tracking.audioVerified&&!f.tracking.timecodedTranscriptStoredInDrive&&!f.tracking.untimedTranscriptStoredInDrive,"F"+f.order+": no confundir Doc aportado con TXT independiente o audio verificado");
- assert(f.tracking.docTranscriptionUrl.startsWith("https://docs.google.com/document/d/"),"F"+f.order+": URL de Doc inválida");
- assert(!page.includes(f.videoId)&&!page.includes(f.tracking.docTranscriptionUrl),"El inventario privado no debe filtrarse a la web");
+ assert.equal(f.tracking.docTranscriptionUrl,null,"F"+f.order+": el enlace privado no debe figurar en el repositorio público");
+ assert(!page.includes(f.videoId),"El inventario privado no debe filtrarse a la web");
 }
 assert(rows.find(f=>f.order===34)?.videoId==="j_5Tj0kIj2c","F34 debe conservarse como la única entrada de su vídeo");
 const duplicate=rows.find(e=>e.order===36);
 assert.equal(duplicate.duplicateOf,4,"Conservar el vínculo a la fuente canónica");
 const s2=rows.find(e=>e.order===2),s6=rows.find(e=>e.order===6);
-assert(s2.tracking.docTranscriptionUrl.startsWith("https://docs.google.com/document/d/"));
+assert.equal(s2.tracking.docTranscriptionUrl,null,"La referencia privada se conserva fuera del repositorio público");
 assert.equal(s6.originalTranscriptSha256,"34e777038c189bf0ab64d64bc7ea220e954c5f55bc55ce32e1d5e7b50eab6bc6");
 assert.equal(s6.transcriptSha256VerifiedDriveRoundTrip,true);
 assert.equal(s6.reviewComplete,false);
