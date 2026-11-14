@@ -120,6 +120,8 @@ jobs:
         run: node scripts/test_telarana_source34_francisco.mjs
       - name: Auditar F69 y los minutajes ausentes
         run: node scripts/test_telarana_f69_provenance.mjs
+      - name: Validar procedencia y límites de la fuente 33
+        run: node scripts/test_telarana_source33_rothschild.mjs
       - name: Validar las cinco transcripciones manuales de Eric Frattini y sector Vaticano
         run: node scripts/test_telarana_frattini_manual_f70_f74.mjs
       - name: Validar los expedientes iniciales de fuentes 26 y 27
@@ -211,6 +213,7 @@ jobs:
           cp la-telarana/fuente-29-revision-inicial.js dist/la-telarana/fuente-29-revision-inicial.js
           cp la-telarana/fuente-30-revision-inicial.js dist/la-telarana/fuente-30-revision-inicial.js
           cp la-telarana/fuente-31-revision-inicial.js dist/la-telarana/fuente-31-revision-inicial.js
+          cp la-telarana/fuente-33-rothschild-inicial.js dist/la-telarana/fuente-33-rothschild-inicial.js
           cp la-telarana/fuente-34-francisco-primera-revision.js dist/la-telarana/fuente-34-francisco-primera-revision.js
           cp la-telarana/fuente-39-egiptologia-revision.js dist/la-telarana/fuente-39-egiptologia-revision.js
           cp la-telarana/fuente-50-miguel-de-lys-revision.js dist/la-telarana/fuente-50-miguel-de-lys-revision.js

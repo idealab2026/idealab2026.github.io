@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "scope": "Acontecimientos fechados verificados durante la revisión de fuentes de La Telaraña. El episodio puede referirse al hecho, pero no constituye la fuente probatoria principal.",
   "reviewProtocol": {
     "required": [
@@ -3788,6 +3788,40 @@
         ],
         "methodologicalLimits": "Hecho respaldado por documento institucional independiente. Su inclusión contextual no implica que los entrevistados pudieran conocer acontecimientos posteriores ni valida alegaciones sobre operaciones encubiertas."
       }
+    },
+    {
+      "id": "study-f33-sociedad-francfort-1810",
+      "y": 1810.7369863013698,
+      "t": "Acuerdo de la sociedad Rothschild en Fráncfort",
+      "c": "Acontecimientos",
+      "s": "Investigación IDEA LAB · contexto documental de la fuente 33",
+      "d": "El 27 de septiembre de 1810 Mayer Amschel Rothschild y sus hijos Amschel, Salomon y Carl acordaron una sociedad para el negocio de Fráncfort. Nathan ya operaba en Londres y James se incorporó más adelante. Se trata de contexto histórico del tema del vídeo, no de una cita literal que afirme esa fecha.",
+      "g": [
+        "Europa"
+      ],
+      "investigation": {
+        "date": "1810-09-27",
+        "datePrecision": "dia",
+        "status": "hecho_documentado",
+        "sourceOrder": 33,
+        "sourceTitle": "Historia de la familia Rothschild",
+        "sourceUrl": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+        "confirmedBy": {
+          "label": "Rothschild Archive · acuerdo de sociedad de 1810",
+          "url": "https://www.rothschildarchive.org/business/origins_of_the_business/family_partnership"
+        },
+        "relatedTelarana": [
+          "f33-mayer",
+          "f33-amschel",
+          "f33-salomon",
+          "f33-carl",
+          "f33-firma-1810"
+        ],
+        "methodologicalLimits": "El archivo está vinculado a la familia. La fecha y los firmantes proceden de su documentación del acuerdo; no se afirma que el narrador haya citado la fecha exacta."
+      },
+      "p": [
+        "DEU"
+      ]
     }
   ]
 }
