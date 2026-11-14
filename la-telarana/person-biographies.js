@@ -1210,6 +1210,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.cambridge.org/core/books/abs/cambridge-history-of-greek-and-roman-political-thought/stoic-writers-of-the-imperial-era/4E49E7ECF13AE7872905D5798A953DFD",
       "sourceTitle": "Cambridge · Estoicismo imperial",
       "reviewedAt": "2026-11-14"
+    },
+    "f40-ramses-ii": {
+      "text": "Ramsés II fue un faraón del antiguo Egipto vinculado a grandes construcciones monumentales. UNESCO identifica los templos excavados en la roca de Abu Simbel como obras ordenadas durante su reinado. El conjunto fue desmontado y trasladado en el siglo XX dentro de una campaña internacional de salvaguarda frente a la subida de las aguas.",
+      "source": "https://whc.unesco.org/en/list/88/",
+      "sourceTitle": "UNESCO · Monumentos de Nubia",
+      "reviewedAt": "2026-11-14"
     }
   }
 };
