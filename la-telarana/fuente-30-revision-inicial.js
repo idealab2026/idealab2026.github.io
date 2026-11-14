@@ -12,7 +12,7 @@ window.IDEA_TELARANA_F30_REVIEW = {
     "audioVerified": false,
     "minuteVerified": false,
     "transcriptFullTextPreserved": true,
-    "editorialDossierUrl": "https://docs.google.com/document/d/1QcRZpunmTIS2Yr2Sg6XoztH1IJTsUKmOaR8Ansq0zFA/edit",
+    "editorialDossierUrl": null,
     "methodologicalNote": "El episodio ya dispone de subtítulos automáticos con códigos de tiempo (F30, 4.462 segmentos hasta 02:40:01), conservados en Drive institucional. No están cotejados con el audio; distinguir declaraciones durante el programa del contexto histórico posterior. Los datos externos ya publicados y sus enlaces conservan su procedencia independiente; ninguna acusación queda acreditada por los subtítulos.",
     "fullTranscriptPreservedInDrive": true,
     "transcriptFormat": "youtube_caption_segments_with_timestamps",

@@ -12,7 +12,7 @@ assert(mod.metadata.transcriptAvailable===true&&mod.metadata.audioVerified===fal
 assert(mod.metadata.transcriptFullTextPreserved===true);
 assert.equal(mod.nodes.length,16);
 assert.equal(mod.edges.length,18);
-assert(mod.metadata.editorialDossierUrl.startsWith("https://docs.google.com/document/d/"));
+assert.equal(mod.metadata.editorialDossierUrl,null,"El expediente privado no se publica");
 assert.equal(mod.nodes.flatMap(n=>n.podcastNotes||[]).filter(n=>Number.isFinite(n.timeSec)).length,4,
  "4 notas cronometradas, atribuidas y sin cotejo del audio");
 const ids=new Set(mod.nodes.map(n=>n.id));

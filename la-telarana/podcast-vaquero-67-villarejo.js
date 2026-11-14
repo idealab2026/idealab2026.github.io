@@ -11,7 +11,7 @@ window.IDEA_TELARANA_SOURCE08_EDITORIAL = {
     "interviewHost": "Roberto Vaquero",
     "guest": "José Manuel Villarejo",
     "editorialReference": "https://www.ivoox.com/villarejo-destapa-toda-verdad-sobre-maduro-zapatero-audios-mp3_rf_161157471_1.html",
-    "sourceDocUrl": "https://docs.google.com/document/d/1O5yATkwfw_tm3BrHC4fLDCwA0MtMIUe_ewzpFwjjfQk/edit",
+    "sourceDocUrl": null,
     "docCreated": true,
     "docContainsTranscript": false,
     "fullTranscriptImportedToDoc": false,
@@ -24,7 +24,7 @@ window.IDEA_TELARANA_SOURCE08_EDITORIAL = {
     "timecodedTranscriptFormat": "youtube_auto_captions_timestamped_txt",
     "timecodedTranscriptSegments": 2926,
     "timecodedTranscriptLastTimestamp": "01:58:15",
-    "timecodedTranscriptDriveUrl": "https://drive.google.com/file/d/1mNlVtQO7P6kmBENaixXm3Nycblj6M98o/view"
+    "timecodedTranscriptDriveUrl": null
   },
   "nodes": [
     {

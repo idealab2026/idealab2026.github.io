@@ -15,7 +15,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
     "transcriptAvailable": true,
     "transcriptFormat": "NotebookLM TXT no reliable timecodes",
     "transcriptCharacters": 251787,
-    "transcriptPrivateDriveUrl": "https://drive.google.com/file/d/1gZXY198Z8ysMkf8XIq8SxQsMETZNISr7/view",
+    "transcriptPrivateDriveUrl": null,
     "reviewStage": "primera_extraccion_de_personas_hechos_y_mitos_historicos",
     "textualEvidenceScheme": "anchor phrase + approximate char offset in private TXT; not audio time",
     "updatedAt": "2026-11-12",

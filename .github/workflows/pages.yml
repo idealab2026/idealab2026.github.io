@@ -43,6 +43,8 @@ jobs:
         run: node scripts/test_telarana_3d.mjs
       - name: Validar biografías independientes y testimonios
         run: node scripts/test_telarana_person_bios.mjs
+      - name: Evitar enlaces a documentos privados en La Telaraña
+        run: node scripts/test_telarana_public_privacy.mjs
       - name: Validar integración documental entre La Telaraña y Línea de la Historia
         run: node scripts/test_telarana_timeline.mjs
       - name: Validar F39 y F50 sin minutajes ficticios

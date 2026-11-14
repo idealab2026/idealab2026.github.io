@@ -29,7 +29,7 @@ assert.equal(graph.metadata.transcriptPresentOnThirdPartySite,true);
 assert.equal(graph.metadata.fullTranscriptImportedToDoc,true,"Ya existe Doc privado distinto del índice con texto íntegro");
 assert.equal(graph.metadata.fullTranscriptCharacters,314815);
 assert.equal(graph.metadata.transcriptAudioMatched,false);
-assert(graph.metadata.transcriptIndexDocUrl.startsWith("https://docs.google.com/document/d/"));
+assert.equal(graph.metadata.transcriptIndexDocUrl,null,"La URL privada no se publica");
 assert(graph.metadata.transcriptLocation.includes("metacast.app"));
 assert.equal(graph.nodes.length,25);
 assert.equal(graph.edges.length,25);

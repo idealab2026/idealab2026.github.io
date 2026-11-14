@@ -5,14 +5,14 @@ window.IDEA_TELARANA_SOURCE04_HISTORICAL = {
     "title": "La cara oculta de la Historia - El duque de Lerma y la corrupción política en España",
     "url": "https://www.youtube.com/watch?v=DLgQ78xC-54",
     "publishedAt": "2024-04-04",
-    "notebookSourceId": "cf6676bf-420f-4a68-b9a5-ce9611337724",
+    "notebookSourceId": null,
     "guest": "Margarita Torres Sevilla",
     "host": "Pedro Baños",
     "reviewStage": "texto_ASR_completo_recuperado_primeras_cuatro_notas_atribuidas_y_biografias_en_revision",
     "transcriptAvailable": true,
     "chapterTimecodesVerifiedFromDescription": true,
     "minutesAreChapterBeginningsNotQuoteTimestamps": true,
-    "sourceDocUrl": "https://docs.google.com/document/d/1Ac09bBMLeIit4AJrhYyyPswEO_MZmd5JfN6IgrbvsWQ/edit?usp=drivesdk",
+    "sourceDocUrl": null,
     "transcriptVerifiedAgainstAudio": false,
     "chapters": [
       {
