@@ -15,6 +15,12 @@ const runtime={cats:["Eras geológicas","Acontecimientos","Personajes","Historia
 vm.runInNewContext(timeline.slice(start,end)+"\nthis.validStudy=validStudy;",runtime);
 assert(feed.items.every(e=>runtime.validStudy(e)),"El lector de producción rechaza estudios del catálogo");
 assert(runtime.validStudy(feed.items.find(e=>e.id==='study-f33-sociedad-francfort-1810')),"F33 debe cargar en la cronología");
+const ancient=history.items.find(e=>e.id==="h-CA37");
+assert.equal(ancient.y,-12000,"El archivo histórico no se debe alterar");
+const correction=runtime.correctKnownHistorical(ancient);
+assert.equal(correction.y,-9600);assert.equal(correction.e,-8200);assert.equal(correction.id,ancient.id);
+assert(correction.investigation.confirmedBy.url.includes("whc.unesco.org"));
+assert(correction.d.includes("original"));
 const example=feed.items[0];
 assert(!runtime.validStudy({...example,id:'study-invalido'}));
 assert(!runtime.validStudy({...example,investigation:{...example.investigation,status:'hipotesis'}}));

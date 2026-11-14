@@ -104,6 +104,13 @@ function mergeCanonicalStudy(original,study){
  return Object.assign({},original,{y:study.y,d:study.d,g:study.g,
   investigation:study.investigation,studyAlias:study.id});
 }
+// Corrección de presentación apoyada en UNESCO; el dato histórico en data.json permanece íntegro.
+function correctKnownHistorical(d){
+ if(!d||d.id!=="h-CA37")return d;
+ return Object.assign({},d,{y:-9600,e:-8200,t:"Göbekli Tepe · estructuras neolíticas",g:["Asia"],p:["TUR"],
+  d:"UNESCO sitúa las estructuras monumentales de Göbekli Tepe aproximadamente entre 9600 y 8200 a. C. El registro histórico original, conservado sin cambios, indicaba 12000 a. C. La cronología es un intervalo arqueológico, no una fecha exacta de construcción.",
+  investigation:{sourceOrder:37,sourceUrl:"https://www.youtube.com/watch?v=-5HzKQ9amDw",datePrecision:"intervalo_arqueologico",date:"9600–8200 a. C. (aprox.)",confirmedBy:{label:"UNESCO · Göbekli Tepe",url:"https://whc.unesco.org/en/list/1572"},relatedTelarana:["f39-gobekli"],methodologicalLimits:"Intervalo aproximado para estructuras de distintas fases, no fecha exacta ni duración de una sola obra. El dato original 12000 a. C. se conserva en el archivo histórico. Las interpretaciones de función ritual siguen abiertas."}});
+}
 function loadLocal(){
  try{var raw=JSON.parse(localStorage.getItem("idealab-historia-v1")||"[]");
  return Array.isArray(raw)?raw.filter(valid):[]}catch(e){return[]}
@@ -740,6 +747,7 @@ function documentedLink(parent,href,label){
 }
 function studyDate(date,precision){
  var v=String(date||"");
+ if(precision==="intervalo_arqueologico"&&v==="9600–8200 a. C. (aprox.)")return v;
  if(precision==="año"&&/^\d{4}$/.test(v))return v;
  if(!/^\d{4}-\d{2}(?:-\d{2})?$/.test(v))return"Fecha por verificar";
  var p=v.split("-").map(Number);
@@ -1463,7 +1471,7 @@ function init(){
   Object.keys(linkDoc).forEach(function(k){var v=linkDoc[k];if(v&&Array.isArray(v.p)&&v.p.length<=40)countryLinks[k]=v});
   worldGeo=results[3]&&Array.isArray(results[3].features)?results[3]:{features:[]};
   populateCountrySelect();
-  var historical=Array.isArray(results[0].items)?results[0].items.filter(valid):[];
+  var historical=Array.isArray(results[0].items)?results[0].items.filter(valid).map(correctKnownHistorical):[];
   var additional=Array.isArray(results[1].items)?results[1].items:[];
   var seenIds=new Set(historical.map(function(d){return d.id}));
   function keyFor(d){
