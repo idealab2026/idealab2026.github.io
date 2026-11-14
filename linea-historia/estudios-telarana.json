@@ -4577,6 +4577,38 @@
         ],
         "methodologicalLimits": "El hecho fechado es la publicación de una hipótesis independiente sobre Tartessos. No acredita su identificación con la Atlántida ni prueba la propuesta expuesta en la entrevista."
       }
+    },
+    {
+      "id": "study-f52-inauguracion-coliseo-80",
+      "y": 80,
+      "t": "Inauguración del Anfiteatro Flavio",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 52 · documentación patrimonial",
+      "d": "En el año 80 d. C. el emperador Tito inauguró el Anfiteatro Flavio, conocido como Coliseo. El parque arqueológico documenta una serie de espectáculos asociados a su apertura.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ITA"
+      ],
+      "investigation": {
+        "sourceOrder": 52,
+        "sourceTitle": "F52 · Historia y vida en la Roma antigua",
+        "sourceUrl": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "0080",
+        "confirmedBy": {
+          "label": "Parque arqueológico del Coliseo",
+          "url": "https://colosseo.it/en/event/blood-and-the-arena/"
+        },
+        "relatedTelarana": [
+          "f52-episodio",
+          "f44-coliseo",
+          "f52-tito"
+        ],
+        "methodologicalLimits": "Se registra el año documentado; no se añade un día exacto. El nombre Coliseo es posterior y el audio no está cotejado."
+      }
     }
   ]
 }

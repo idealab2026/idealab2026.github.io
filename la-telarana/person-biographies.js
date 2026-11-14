@@ -1222,6 +1222,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.elconfidencial.com/cultura/2024-07-25/entrevista-michael-donnellan-atlantida-cadiz_3930489/",
       "sourceTitle": "Entrevista sobre el proyecto Atlántica",
       "reviewedAt": "2026-11-14"
+    },
+    "f52-tito": {
+      "text": "Tito fue emperador romano de la dinastía Flavia entre los años 79 y 81 d. C. Durante su gobierno se inauguró en el año 80 el anfiteatro hoy conocido como Coliseo. El parque arqueológico documenta los espectáculos de inauguración y conserva el monumento como parte del patrimonio de Roma.",
+      "source": "https://colosseo.it/en/event/blood-and-the-arena/",
+      "sourceTitle": "Parque arqueológico del Coliseo",
+      "reviewedAt": "2026-11-14"
     }
   }
 };
