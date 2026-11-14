@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};vm.runInNewContext(read('la-telarana/fuente-37-revision-inicial.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F37_REVIEW,ids=new Set(f.nodes.map(n=>n.id));
+assert.equal(ids.size,4);assert.equal(f.edges.length,3);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)));
+assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);
+assert(f.nodes.flatMap(n=>n.podcastNotes).every(n=>n.timeSec===null));
+assert(f.nodes.find(n=>n.id==='f39-gobekli').podcastNotes.some(n=>n.text.includes('1963')&&n.text.includes('1994')&&n.text.includes('1995')));
+const h=JSON.parse(read('linea-historia/estudios-telarana.json'));let e=h.items.find(e=>e.id==='study-f37-gobekli-reidentificacion-1994');assert.equal(e.investigation.date,'1994');assert.equal(e.investigation.datePrecision,'año');
+assert(read('la-telarana/index.html').includes('fuente-37-revision-inicial.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-37-revision-inicial.js'));
+console.log('OK: F37 distingue historia del yacimiento, hipótesis y límites audiovisuales');
