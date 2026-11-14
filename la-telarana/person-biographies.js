@@ -1108,6 +1108,30 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.aisge.es/imprimir.php?print=ok&v=william-miller",
       "sourceTitle": "Entrevista · AISGE",
       "reviewedAt": "2026-11-14"
+    },
+    "f40-akhenaten": {
+      "text": "Akenatón, inicialmente Amenhotep IV, fue un faraón de la XVIII dinastía durante el Imperio Nuevo egipcio. Impulsó un culto centrado en la deidad solar Atón y estableció una nueva capital en Ajetatón, la actual Amarna. Sus reformas religiosas y artísticas se modificaron tras su reinado.",
+      "source": "https://www.metmuseum.org/ko/essays/art-architecture-and-the-city-in-the-reign-of-amenhotep-iv-akhenaten-ca-13531336-b-c",
+      "sourceTitle": "Metropolitan Museum · periodo de Amarna",
+      "reviewedAt": "2026-11-14"
+    },
+    "f40-champollion": {
+      "text": "Jean-François Champollion (1790–1832) fue un lingüista y egiptólogo francés. Su conocimiento de lenguas antiguas y el estudio comparativo de inscripciones, incluida la piedra de Rosetta, contribuyeron decisivamente a descifrar los jeroglíficos egipcios. El avance de 1822 formó parte de un proceso en el que participaron otros investigadores.",
+      "source": "https://www.britishmuseum.org/sites/default/files/2020-06/British_Museum_Egypt_Sudan_Newsletter4_2017.pdf",
+      "sourceTitle": "British Museum · historia del desciframiento",
+      "reviewedAt": "2026-11-14"
+    },
+    "f39-tutankamon": {
+      "text": "Tutankamón fue un faraón de la XVIII dinastía egipcia, cuyo breve reinado se sitúa aproximadamente en 1336–1327 a. C. Su enterramiento KV62, en el Valle de los Reyes, fue localizado en 1922 por Howard Carter y su equipo. La importancia del hallazgo reside en su conservación relativa y su rico ajuar, no en ser la única tumba intacta de todo Egipto.",
+      "source": "https://egymonuments.gov.eg/monuments/tomb-of-tutankhamun/",
+      "sourceTitle": "Ministerio egipcio de Turismo y Antigüedades",
+      "reviewedAt": "2026-11-14"
+    },
+    "f50-cleopatra": {
+      "text": "Cleopatra VII fue la última gobernante de la dinastía ptolemaica de Egipto. Su alianza con Marco Antonio terminó tras la derrota frente a Octavio en Accio en 31 a. C.; el control romano de Egipto se consolidó al año siguiente. Su trayectoria combina la historia del Egipto helenístico con las guerras civiles de Roma.",
+      "source": "https://www.metmuseum.org/fr/essays/roman-egypt",
+      "sourceTitle": "Metropolitan Museum · Egipto romano",
+      "reviewedAt": "2026-11-14"
     }
   }
 };

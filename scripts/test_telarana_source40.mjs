@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};vm.runInNewContext(read('la-telarana/fuente-40-egipto-revision.js'),ctx);vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F40_REVIEW,ids=new Set(f.nodes.map(n=>n.id));assert.equal(ids.size,18);assert.equal(f.edges.length,21);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);let notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));assert.equal(notes.filter(n=>n.status==='relato_del_video_sin_audio').length,10);
+for(const id of ['f40-akhenaten','f40-champollion','f39-tutankamon','f50-cleopatra'])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150);
+assert(f.nodes.find(n=>n.id==='f39-tutankamon').podcastNotes.some(n=>n.text.includes('relativamente intacta')));
+assert(f.nodes.find(n=>n.id==='f50-cleopatra').podcastNotes.some(n=>n.text.includes('30 a. C.')));
+const h=JSON.parse(read('linea-historia/estudios-telarana.json'));
+for(const id of ['study-f40-rosetta-hallazgo-1799','study-f40-champollion-avance-1822'])assert.equal(h.items.filter(e=>e.id===id).length,1);
+assert(h.items.find(e=>e.id==='study-f39-descubrimiento-tumba-tutankamon-1922').investigation.additionalSources.some(s=>s.sourceOrder===40));
+assert(read('linea-historia/timeline-v4.js').includes('Array.isArray(info.additionalSources)'));
+assert(read('la-telarana/index.html').includes('fuente-40-egipto-revision.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-40-egipto-revision.js'));
+console.log('OK: F40 conserva matices documentales, fuentes múltiples y límites audiovisuales');

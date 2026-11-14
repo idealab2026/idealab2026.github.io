@@ -773,6 +773,11 @@ function showStudyNote(d){
  root.append(el("p",info.sourceOrder?("Estudio de la fuente "+info.sourceOrder+". El testimonio no sustituye a la documentación del hecho."):("Estudio complementario de La Telaraña. Numeración pendiente de reconciliar con el catálogo; el episodio no sustituye a las pruebas históricas."),"source-note"));
  var contextual=el("div",null,"research-sources");
  if(info.sourceUrl)documentedLink(contextual,info.sourceUrl,"Consultar el episodio");
+ if(Array.isArray(info.additionalSources))info.additionalSources.forEach(function(extra){
+  if(!extra||!extra.url)return;
+  documentedLink(contextual,extra.url,extra.title||"Consultar otra fuente");
+  if(extra.note)contextual.append(el("p",String(extra.note).slice(0,600),"research-limits"));
+ });
  if(Array.isArray(info.relatedTelarana)&&info.relatedTelarana.length){
   documentedLink(contextual,"https://idealab2026.github.io/la-telarana/?entidad="+encodeURIComponent(info.relatedTelarana[0]),"Ver protagonista y relaciones en La Telaraña");
  }
