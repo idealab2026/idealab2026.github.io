@@ -97,7 +97,8 @@ var studyCanonicalIds={
  "study-f30-invasion-2022":"a-35-4",
  "study-f14-11s-2001":"a-14-17",
  "study-f19-asalto-capitolio-2021":"a-34-1",
- "study-f30-osce-minsk-2015":"a-28-3"
+ "study-f30-osce-minsk-2015":"a-28-3",
+ "study-f35-jcpoa-2015":"a-28-13"
 };
 function mergeCanonicalStudy(original,study){
  return Object.assign({},original,{y:study.y,d:study.d,g:study.g,
