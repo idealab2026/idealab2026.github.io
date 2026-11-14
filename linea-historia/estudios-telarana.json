@@ -4230,6 +4230,74 @@
         ],
         "methodologicalLimits": "La fecha corresponde a la proclamación de la república, no a la abolición del sultanato ni a la del califato."
       }
+    },
+    {
+      "id": "study-f42-inscripcion-pilato-1961",
+      "y": 1961.0,
+      "t": "Hallazgo de la inscripción de Poncio Pilato en Cesarea",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 42 · investigación documental",
+      "d": "En 1961 una excavación en Cesarea Marítima encontró una inscripción latina fragmentaria que menciona a Poncio Pilato y su cargo de prefecto de Judea. El documento aporta contexto administrativo romano, pero no menciona a Jesús ni acredita por sí solo episodios de su vida.",
+      "g": [
+        "Asia"
+      ],
+      "p": [
+        "ISR"
+      ],
+      "investigation": {
+        "sourceOrder": 42,
+        "sourceTitle": "F42 · Jesús histórico y arqueología · Tito Vivas",
+        "sourceUrl": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1961",
+        "confirmedBy": {
+          "label": "Universidad Grenoble Alpes · inscripción de Pilato",
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Varia/Pontius_Pilatus_AE.htm"
+        },
+        "relatedTelarana": [
+          "f42-episodio",
+          "f42-piedra-pilato",
+          "f42-pilato"
+        ],
+        "methodologicalLimits": "Se registra el año del hallazgo moderno. La pieza está incompleta y algunas letras se restituyen; no es una inscripción sobre Jesús."
+      }
+    },
+    {
+      "id": "study-f42-carbono-sudario-1989",
+      "y": 1989.1260273972603,
+      "t": "Publicación de la datación por radiocarbono de la Sábana Santa",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 42 · investigación documental",
+      "d": "El 16 de febrero de 1989 Nature publicó el informe de los laboratorios de Arizona, Oxford y Zúrich sobre la datación por radiocarbono de muestras de la Sábana Santa. El intervalo calibrado comunicado fue 1260–1390 d. C.; investigaciones posteriores han debatido la heterogeneidad y la representatividad de la zona muestreada.",
+      "g": [
+        "Europa",
+        "América"
+      ],
+      "p": [
+        "GBR",
+        "ITA",
+        "USA",
+        "CHE"
+      ],
+      "investigation": {
+        "sourceOrder": 42,
+        "sourceTitle": "F42 · Jesús histórico y arqueología · Tito Vivas",
+        "sourceUrl": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1989-02-16",
+        "confirmedBy": {
+          "label": "Nature · Damon y colaboradores (1989)",
+          "url": "https://www.nature.com/articles/337611a0"
+        },
+        "relatedTelarana": [
+          "f42-episodio",
+          "f42-radiocarbono",
+          "f42-sudario"
+        ],
+        "methodologicalLimits": "La fecha corresponde a la publicación científica, no a la creación del objeto. El resultado se refiere a la muestra analizada; no prueba por sí solo la identidad de la imagen ni episodios de la vida de Jesús."
+      }
     }
   ]
 }

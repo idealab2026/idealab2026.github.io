@@ -1162,6 +1162,36 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://guides.loc.gov/ottoman-turkish/reference",
       "sourceTitle": "Contexto histórico institucional",
       "reviewedAt": "2026-11-14"
+    },
+    "f42-jesus": {
+      "text": "Jesús de Nazaret fue un predicador judío del siglo I en el contexto de Galilea y Judea bajo dominio romano y es la figura central del cristianismo. Su vida se estudia a partir de fuentes cristianas y menciones no cristianas posteriores, aplicando crítica histórica y textual. La reconstrucción de episodios concretos y las creencias sobre su identidad religiosa requieren distinguir métodos y tradiciones.",
+      "source": "https://www.cambridge.org/highereducation/books/an-introduction-to-the-new-testament-and-the-origins-of-christianity/32A6751C4FE08D443DC4BDD934A3C343/the-quest-for-the-historical-jesus/AC9A7E362ADF910A63A6B84489A8796D",
+      "sourceTitle": "Investigación histórica y fuentes documentales",
+      "reviewedAt": "2026-11-14"
+    },
+    "f42-pilato": {
+      "text": "Poncio Pilato fue prefecto romano de Judea durante el reinado de Tiberio, en el siglo I. Su nombre y cargo aparecen en una inscripción latina hallada en Cesarea y en testimonios literarios antiguos. Los relatos cristianos lo sitúan en el proceso de Jesús; la inscripción conservada no menciona a Jesús ni describe ese proceso.",
+      "source": "https://droitromain.univ-grenoble-alpes.fr/Varia/Pontius_Pilatus_AE.htm",
+      "sourceTitle": "Investigación histórica y fuentes documentales",
+      "reviewedAt": "2026-11-14"
+    },
+    "f42-pablo": {
+      "text": "Pablo de Tarso fue un autor y misionero cristiano del siglo I vinculado a comunidades del Mediterráneo oriental. Sus cartas son fuentes tempranas para el estudio del cristianismo naciente. Su influencia fue considerable, aunque explicar el origen de un movimiento plural como obra exclusiva de una persona es una interpretación discutida.",
+      "source": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-biblical-interpretation/pauline-letters/03FC95A935CA7EA46F38A1DECE1D9AED",
+      "sourceTitle": "Investigación histórica y fuentes documentales",
+      "reviewedAt": "2026-11-14"
+    },
+    "f42-tacito": {
+      "text": "Tácito fue un historiador y senador romano activo a finales del siglo I y comienzos del II. Sus Anales narran acontecimientos de la historia imperial y mencionan a Cristo y a Poncio Pilato en un pasaje sobre la persecución de cristianos. Como cualquier fuente antigua, su testimonio debe examinarse en su contexto y transmisión.",
+      "source": "https://www.cambridge.org/highereducation/books/an-introduction-to-the-new-testament-and-the-origins-of-christianity/32A6751C4FE08D443DC4BDD934A3C343/the-quest-for-the-historical-jesus/AC9A7E362ADF910A63A6B84489A8796D",
+      "sourceTitle": "Investigación histórica y fuentes documentales",
+      "reviewedAt": "2026-11-14"
+    },
+    "f42-josefo": {
+      "text": "Flavio Josefo fue un historiador judío del siglo I que escribió en griego sobre Judea y el mundo romano. Sus Antigüedades judías contienen pasajes utilizados en investigaciones sobre el cristianismo temprano. Al menos una de las referencias a Jesús presenta problemas de transmisión textual e intervenciones posteriores discutidas.",
+      "source": "https://www.cambridge.org/highereducation/books/an-introduction-to-the-new-testament-and-the-origins-of-christianity/32A6751C4FE08D443DC4BDD934A3C343/the-quest-for-the-historical-jesus/AC9A7E362ADF910A63A6B84489A8796D",
+      "sourceTitle": "Investigación histórica y fuentes documentales",
+      "reviewedAt": "2026-11-14"
     }
   }
 };
