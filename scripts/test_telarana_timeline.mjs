@@ -1,12 +1,34 @@
 /* Integridad de los hitos fechados compartidos entre ambos proyectos. */
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import vm from "node:vm";
 const history=JSON.parse(fs.readFileSync("linea-historia/data.json","utf8"));
 const feed=JSON.parse(fs.readFileSync("linea-historia/estudios-telarana.json","utf8"));
 const timeline=fs.readFileSync("linea-historia/timeline-v4.js","utf8");
 const historyHTML=fs.readFileSync("linea-historia/index.html","utf8");
 const graphHTML=fs.readFileSync("la-telarana/index.html","utf8");
 const progress=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
+// Ejecutar el mismo filtro de producción, no solo comprobar que existe un regex en el archivo.
+const start=timeline.indexOf("function valid(d){"),end=timeline.indexOf("function loadLocal(){",start);
+assert(start>=0&&end>start,"No se encuentra el filtro de estudios");
+const runtime={cats:["Eras geológicas","Acontecimientos","Personajes","Historia bíblica","Filosofía","Pontífices","Actualidad","Cine","Literatura"],GEO:["Europa","Asia","África","América","Oceanía","Antártida","Mundial"]};
+vm.runInNewContext(timeline.slice(start,end)+"\nthis.validStudy=validStudy;",runtime);
+assert(feed.items.every(e=>runtime.validStudy(e)),"El lector de producción rechaza estudios del catálogo");
+assert(runtime.validStudy(feed.items.find(e=>e.id==='study-f33-sociedad-francfort-1810')),"F33 debe cargar en la cronología");
+const example=feed.items[0];
+assert(!runtime.validStudy({...example,id:'study-invalido'}));
+assert(!runtime.validStudy({...example,investigation:{...example.investigation,status:'hipotesis'}}));
+assert(runtime.validStudy({...example,investigation:{...example.investigation,date:'1810',datePrecision:'año'}}),"Las fechas anuales no deben precisar un mes inventado");
+for(const [studyId,originalId] of Object.entries(runtime.studyCanonicalIds)){
+ const original=history.items.find(e=>e.id===originalId),study=feed.items.find(e=>e.id===studyId);
+ assert(original&&study,"Falta un extremo de la reconciliación histórica");
+ const merged=runtime.mergeCanonicalStudy(original,study);
+ assert(merged.id===original.id&&merged.c===original.c&&merged.studyAlias===study.id,
+  "La reconciliación debe conservar la identidad y categoría originales");
+ assert(merged.investigation===study.investigation&&merged.y===study.y,
+  "La ficha canónica debe conservar el estudio y su fecha precisa");
+}
+assert(timeline.includes('studyAliases.get(requested)||requested'),"Los enlaces desde el grafo deben resolver el ID del estudio");
 assert(Array.isArray(feed.items)&&feed.items.length>0,"El catálogo no puede estar vacío");
 assert(feed.reviewProtocol&&feed.reviewProtocol.required.length>=5,"Faltan controles del protocolo documental");
 const ids=new Set(history.items.map(x=>x.id));

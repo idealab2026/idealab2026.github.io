@@ -83,6 +83,26 @@ function valid(d){
  Math.abs(Number(d.y))<=550000000&&cats.includes(d.c)&&
  (d.e==null||d.e===""||(Number.isFinite(Number(d.e))&&Number(d.e)>=Number(d.y)&&Number(d.e)<=2031));
 }
+function validStudy(d){
+ var info=d&&d.investigation||{};
+ return !!(valid(d)&&/^study-(?:v\d+|vf\d+|f\d+)-[a-z0-9-]+$/.test(d.id||"")&&
+  info.status==="hecho_documentado"&&/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(info.date||"")&&
+  info.confirmedBy&&String(info.confirmedBy.url||"").startsWith("https://")&&
+  String(info.sourceUrl||"").startsWith("https://")&&Array.isArray(info.relatedTelarana));
+}
+// Estos estudios documentan sucesos ya presentes en el archivo histórico.
+// Se enriquece la ficha original y se conserva su categoría e identidad.
+var studyCanonicalIds={
+ "study-f39-descubrimiento-tumba-tutankamon-1922":"h-SH103",
+ "study-f30-invasion-2022":"a-35-4",
+ "study-f14-11s-2001":"a-14-17",
+ "study-f19-asalto-capitolio-2021":"a-34-1",
+ "study-f30-osce-minsk-2015":"a-28-3"
+};
+function mergeCanonicalStudy(original,study){
+ return Object.assign({},original,{y:study.y,d:study.d,g:study.g,
+  investigation:study.investigation,studyAlias:study.id});
+}
 function loadLocal(){
  try{var raw=JSON.parse(localStorage.getItem("idealab-historia-v1")||"[]");
  return Array.isArray(raw)?raw.filter(valid):[]}catch(e){return[]}
@@ -741,7 +761,7 @@ function showStudyNote(d){
  if(info.confirmedBy&&info.confirmedBy.url)documentedLink(proof,info.confirmedBy.url,info.confirmedBy.label||"Consultar fuente de contraste");
  root.append(proof);
  root.append(el("h3","Referencia en La Telaraña","wiki-section-title"));
- root.append(el("p",info.sourceOrder?("Estudio de la fuente "+info.sourceOrder+"/33. El testimonio no sustituye a la documentación del hecho."):("Estudio complementario de La Telaraña. Numeración pendiente de contrastar con el catálogo de 33 fuentes; el episodio no sustituye a las pruebas históricas."),"source-note"));
+ root.append(el("p",info.sourceOrder?("Estudio de la fuente "+info.sourceOrder+". El testimonio no sustituye a la documentación del hecho."):("Estudio complementario de La Telaraña. Numeración pendiente de reconciliar con el catálogo; el episodio no sustituye a las pruebas históricas."),"source-note"));
  var contextual=el("div",null,"research-sources");
  if(info.sourceUrl)documentedLink(contextual,info.sourceUrl,"Consultar el episodio");
  if(Array.isArray(info.relatedTelarana)&&info.relatedTelarana.length){
@@ -1451,14 +1471,15 @@ function init(){
     "|"+Math.floor(Number(d.y));
   }
   var seenEvents=new Set(historical.map(keyFor));
+  var studyAliases=new Map();
   additional.forEach(function(d){
-   var info=d&&d.investigation||{};
-   if(!valid(d)||!/^study-v[12]-[a-z0-9-]+$/.test(d.id||"")||
-      info.status!=="hecho_documentado"||
-      !/^\d{4}-\d{2}(?:-\d{2})?$/.test(info.date||"")||
-      !info.confirmedBy||!String(info.confirmedBy.url||"").startsWith("https://")||
-      !String(info.sourceUrl||"").startsWith("https://")||
-      !Array.isArray(info.relatedTelarana)||seenIds.has(d.id))return;
+   if(!validStudy(d)||seenIds.has(d.id))return;
+   var canonical=studyCanonicalIds[d.id];
+   if(canonical&&seenIds.has(canonical)){
+    var index=historical.findIndex(function(item){return item.id===canonical});
+    historical[index]=mergeCanonicalStudy(historical[index],d);
+    studyAliases.set(d.id,canonical);return;
+   }
    var key=keyFor(d);
    if(seenEvents.has(key))return;
    historical.push(d);seenIds.add(d.id);seenEvents.add(key);
@@ -1467,7 +1488,7 @@ function init(){
   worldShapesBuilt=false;
   var requested=null;
   try{requested=new URLSearchParams(location.search).get("evento")}catch(e){}
-  var event=requested&&base.find(function(d){return d.id===requested});
+  var event=requested&&base.find(function(d){return d.id===(studyAliases.get(requested)||requested)});
   if(event){
    period=eraAt(sy(event));periodUI();render();
    jumpToYear(sy(event));detail(event);
