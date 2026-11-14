@@ -754,7 +754,7 @@ function studyDate(date,precision){
  var v=String(date||"");
  if(precision==="intervalo_arqueologico"&&v==="9600–8200 a. C. (aprox.)")return v;
  if(precision==="año_ac"&&/^[1-9]\d{0,3} a\. C\.$/.test(v))return v;
- if(precision==="año"&&/^\d{4}$/.test(v))return v;
+ if(precision==="año"&&/^\d{4}$/.test(v))return Number(v)<1000?Number(v)+" d. C.":v;
  if(!/^\d{4}-\d{2}(?:-\d{2})?$/.test(v))return"Fecha por verificar";
  var p=v.split("-").map(Number);
  var options=precision==="mes"?{month:"long",year:"numeric",timeZone:"UTC"}:{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"};
