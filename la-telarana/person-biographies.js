@@ -1216,6 +1216,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://whc.unesco.org/en/list/88/",
       "sourceTitle": "UNESCO · Monumentos de Nubia",
       "reviewedAt": "2026-11-14"
+    },
+    "f51-donnellan": {
+      "text": "Michael Donnellan es documentalista e investigador vinculado al proyecto Atlántica, que estudia posibles localizaciones del relato de la Atlántida en el sur de España. En la entrevista presenta sus interpretaciones de indicios arqueológicos y geográficos. Su identificación propuesta requiere documentación accesible y evaluación independiente; no se considera un hallazgo establecido por la mera entrevista.",
+      "source": "https://www.elconfidencial.com/cultura/2024-07-25/entrevista-michael-donnellan-atlantida-cadiz_3930489/",
+      "sourceTitle": "Entrevista sobre el proyecto Atlántica",
+      "reviewedAt": "2026-11-14"
     }
   }
 };
