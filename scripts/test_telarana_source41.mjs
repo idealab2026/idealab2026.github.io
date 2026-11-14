@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};vm.runInNewContext(read('la-telarana/fuente-41-otomano-revision.js'),ctx);vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F41_REVIEW,ids=new Set(f.nodes.map(n=>n.id));assert.equal(ids.size,15);assert.equal(f.edges.length,19);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);let notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));assert.equal(notes.filter(n=>n.status==='relato_del_video_sin_audio').length,9);
+for(const id of ['f41-osman','f41-mehmed-ii','f41-soliman','f41-selim-ii','f41-ataturk'])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150);
+assert(f.nodes.find(n=>n.id==='f41-imperio').podcastNotes.some(n=>n.text.includes('siglo XI')&&n.text.includes('audio')));
+assert(f.nodes.find(n=>n.id==='f41-genocidio-armenio').podcastNotes.some(n=>n.source.includes('ushmm.org')));
+const h=JSON.parse(read('linea-historia/estudios-telarana.json'));for(const id of ['study-f41-constantinopla-1453','study-f41-lepanto-1571','study-f41-arrestos-armenios-1915','study-f41-lausana-1923','study-f41-republica-turquia-1923'])assert.equal(h.items.filter(e=>e.id===id).length,1);
+assert(read('linea-historia/timeline-v4.js').includes('"study-f41-lepanto-1571":"h-QJ26"'));
+assert(read('la-telarana/index.html').includes('fuente-41-otomano-revision.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-41-otomano-revision.js'));
+console.log('OK: F41 conserva procedencia, cronología y límites de la transcripción');

@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 43,
-    "notStarted": 28,
+    "inReview": 44,
+    "notStarted": 27,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1574,15 +1574,35 @@
       "timelineVerifiedEventsCommitted": 2,
       "qualityNotes": "Lectura textual parcial con contrastes sobre Accio, Atón, KV62, Qadesh y Rosetta; transcripción corta sin integridad ni audio cotejados. El hallazgo de Tutankamón se enlaza al evento existente.",
       "lastUpdated": "2026-11-14"
+    },
+    {
+      "order": 41,
+      "videoId": "etoEJ27_j6s",
+      "title": "El IMPERIO OTOMANO - Toda su HISTORIA ",
+      "sourceUrl": "https://www.youtube.com/watch?v=etoEJ27_j6s",
+      "status": "primera_revision_documental_parcial_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-41-otomano-revision.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 15,
+      "sourceRelationsDocumented": 19,
+      "personsProfiled": 5,
+      "documentaryChecks": 5,
+      "timelineVerifiedEventsCommitted": 5,
+      "qualityNotes": "Revisión parcial: siglos XI/XIII y XV/XVI y Selim I/II requieren cotejo del audio. Genocidio armenio contrastado con USHMM; cifras no exactas. Lepanto conserva ID histórico.",
+      "lastUpdated": "2026-11-14"
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 133,
+    "committedVerifiedEvents": 138,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 89,
+    "fromSourceInReview": 94,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1799,6 +1819,13 @@
       "40": [
         "study-f40-rosetta-hallazgo-1799",
         "study-f40-champollion-avance-1822"
+      ],
+      "41": [
+        "study-f41-constantinopla-1453",
+        "study-f41-lepanto-1571",
+        "study-f41-arrestos-armenios-1915",
+        "study-f41-lausana-1923",
+        "study-f41-republica-turquia-1923"
       ]
     },
     "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42658751871",
@@ -4609,18 +4636,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 40,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-14",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4633,15 +4660,25 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 25,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 15,
+            "relations": 19,
+            "biographies": 5,
+            "statements": 9,
+            "independentChecks": 5,
+            "verifiedTimelineEvents": 5
+          },
+          "nextAction": "Cotejar audio y siglos/grafías; revisar los pasajes restantes, cifras de bajas, gobierno y minorías con bibliografía historiográfica."
         }
       },
       {

@@ -218,6 +218,7 @@ jobs:
           cp la-telarana/fuente-37-revision-inicial.js dist/la-telarana/fuente-37-revision-inicial.js
           cp la-telarana/fuente-38-debate-arqueologia.js dist/la-telarana/fuente-38-debate-arqueologia.js
           cp la-telarana/fuente-40-egipto-revision.js dist/la-telarana/fuente-40-egipto-revision.js
+          cp la-telarana/fuente-41-otomano-revision.js dist/la-telarana/fuente-41-otomano-revision.js
           cp la-telarana/fuente-33-rothschild-inicial.js dist/la-telarana/fuente-33-rothschild-inicial.js
           cp la-telarana/fuente-34-francisco-primera-revision.js dist/la-telarana/fuente-34-francisco-primera-revision.js
           cp la-telarana/fuente-39-egiptologia-revision.js dist/la-telarana/fuente-39-egiptologia-revision.js

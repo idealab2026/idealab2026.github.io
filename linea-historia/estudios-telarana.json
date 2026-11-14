@@ -4060,6 +4060,176 @@
         ],
         "methodologicalLimits": "El año identifica un avance clave, no la resolución instantánea de toda la escritura. La mención del vídeo no lleva minutaje verificado."
       }
+    },
+    {
+      "id": "study-f41-constantinopla-1453",
+      "y": 1453.0,
+      "t": "Conquista otomana de Constantinopla",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 41 · documentación histórica",
+      "d": "En 1453 las fuerzas otomanas bajo Mehmed II tomaron Constantinopla, capital del Imperio bizantino. La ciudad se convirtió en centro político del Estado otomano y el acontecimiento suele marcar el fin del Imperio romano de Oriente.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "p": [
+        "TUR"
+      ],
+      "investigation": {
+        "sourceOrder": 41,
+        "sourceTitle": "F41 · Historia del Imperio otomano",
+        "sourceUrl": "https://www.youtube.com/watch?v=etoEJ27_j6s",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1453",
+        "confirmedBy": {
+          "label": "Metropolitan Museum · Imperio otomano",
+          "url": "https://www.metmuseum.org/it/learn/educators/curriculum-resources/art-of-the-islamic-world/unit-five/chapter-two/the-ottoman-empire"
+        },
+        "relatedTelarana": [
+          "f41-episodio",
+          "f41-mehmed-ii",
+          "f41-constantinopla"
+        ],
+        "methodologicalLimits": "Se registra el año documentado en esta fuente institucional; no se atribuye una fecha más precisa al vídeo sin audio cotejado."
+      }
+    },
+    {
+      "id": "study-f41-lepanto-1571",
+      "y": 1571.7643835616439,
+      "t": "Batalla naval de Lepanto",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 41 · documentación histórica",
+      "d": "El 7 de octubre de 1571 la flota otomana se enfrentó a la Liga Santa en el golfo de Lepanto. La coalición obtuvo la victoria. La Armada española documenta la fecha y los contendientes; las cifras exactas de bajas requieren una revisión historiográfica separada.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "p": [
+        "GRC",
+        "TUR",
+        "ESP",
+        "ITA"
+      ],
+      "investigation": {
+        "sourceOrder": 41,
+        "sourceTitle": "F41 · Historia del Imperio otomano",
+        "sourceUrl": "https://www.youtube.com/watch?v=etoEJ27_j6s",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1571-10-07",
+        "confirmedBy": {
+          "label": "Armada española · estudio histórico",
+          "url": "https://armada.defensa.gob.es/archivo/rgm/2021/10/RGMOctubre2021.pdf"
+        },
+        "relatedTelarana": [
+          "f41-episodio",
+          "f41-lepanto",
+          "f41-liga-santa"
+        ],
+        "methodologicalLimits": "Se conserva y enriquece el registro histórico preexistente de Lepanto. Las cifras de bajas del vídeo no quedan verificadas por esta referencia."
+      }
+    },
+    {
+      "id": "study-f41-arrestos-armenios-1915",
+      "y": 1915.309589041096,
+      "t": "Detenciones de dirigentes armenios en Constantinopla",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 41 · documentación histórica",
+      "d": "El 24 de abril de 1915 las autoridades otomanas detuvieron a dirigentes armenios en Constantinopla y los deportaron hacia el interior. El USHMM explica que la fecha se conmemora como inicio del genocidio armenio, que incluyó deportaciones y asesinatos masivos durante 1915–1916.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "p": [
+        "TUR",
+        "ARM"
+      ],
+      "investigation": {
+        "sourceOrder": 41,
+        "sourceTitle": "F41 · Historia del Imperio otomano",
+        "sourceUrl": "https://www.youtube.com/watch?v=etoEJ27_j6s",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1915-04-24",
+        "confirmedBy": {
+          "label": "USHMM · genocidio armenio",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-in-depth"
+        },
+        "relatedTelarana": [
+          "f41-episodio",
+          "f41-genocidio-armenio",
+          "f41-cup"
+        ],
+        "methodologicalLimits": "La fecha corresponde a las detenciones, no a la totalidad de la campaña de deportaciones y asesinatos. Las estimaciones de víctimas varían entre investigadores."
+      }
+    },
+    {
+      "id": "study-f41-lausana-1923",
+      "y": 1923.558904109589,
+      "t": "Firma del Tratado de Lausana",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 41 · documentación histórica",
+      "d": "El 24 de julio de 1923 se firmó en Lausana el tratado de paz negociado con Turquía. La proclamación de la República de Turquía tuvo lugar el 29 de octubre de ese mismo año, por lo que no deben confundirse ambos acontecimientos.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "p": [
+        "CHE",
+        "TUR"
+      ],
+      "investigation": {
+        "sourceOrder": 41,
+        "sourceTitle": "F41 · Historia del Imperio otomano",
+        "sourceUrl": "https://www.youtube.com/watch?v=etoEJ27_j6s",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1923-07-24",
+        "confirmedBy": {
+          "label": "Departamento de Estado · documentación histórica",
+          "url": "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch1"
+        },
+        "relatedTelarana": [
+          "f41-episodio",
+          "f41-lausana",
+          "f41-turquia"
+        ],
+        "methodologicalLimits": "La fecha acredita la firma del tratado; su entrada en vigor fue posterior y no se confunde con la proclamación republicana."
+      }
+    },
+    {
+      "id": "study-f41-republica-turquia-1923",
+      "y": 1923.8246575342466,
+      "t": "Proclamación de la República de Turquía",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 41 · documentación histórica",
+      "d": "El 29 de octubre de 1923 se proclamó la República de Turquía, tras la abolición del sultanato otomano en 1922 y la firma del Tratado de Lausana en julio de 1923. La Biblioteca del Congreso distingue las tres etapas institucionales.",
+      "g": [
+        "Europa",
+        "Asia"
+      ],
+      "p": [
+        "TUR"
+      ],
+      "investigation": {
+        "sourceOrder": 41,
+        "sourceTitle": "F41 · Historia del Imperio otomano",
+        "sourceUrl": "https://www.youtube.com/watch?v=etoEJ27_j6s",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1923-10-29",
+        "confirmedBy": {
+          "label": "Biblioteca del Congreso · colecciones otomanas",
+          "url": "https://guides.loc.gov/ottoman-turkish/reference"
+        },
+        "relatedTelarana": [
+          "f41-episodio",
+          "f41-turquia",
+          "f41-ataturk"
+        ],
+        "methodologicalLimits": "La fecha corresponde a la proclamación de la república, no a la abolición del sultanato ni a la del califato."
+      }
     }
   ]
 }

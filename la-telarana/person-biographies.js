@@ -1132,6 +1132,36 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.metmuseum.org/fr/essays/roman-egypt",
       "sourceTitle": "Metropolitan Museum · Egipto romano",
       "reviewedAt": "2026-11-14"
+    },
+    "f41-osman": {
+      "text": "Osmán I, también llamado Osman Gazi, fue un dirigente de Anatolia asociado al origen de la dinastía otomana. El Metropolitan Museum sitúa convencionalmente su gobierno entre 1299 y 1324. Su emirato y los de sus sucesores se expandieron mediante guerras y alianzas en territorios de la región.",
+      "source": "https://www.metmuseum.org/it/learn/educators/curriculum-resources/art-of-the-islamic-world/unit-five/chapter-two/the-ottoman-empire",
+      "sourceTitle": "Contexto histórico institucional",
+      "reviewedAt": "2026-11-14"
+    },
+    "f41-mehmed-ii": {
+      "text": "Mehmed II fue sultán otomano en el siglo XV, con reinados en 1444–1446 y 1451–1481. Dirigió la conquista de Constantinopla en 1453, después de la cual la ciudad pasó a ser centro político del Imperio otomano. Sus campañas y reformas ampliaron el poder dinástico en Anatolia y los Balcanes.",
+      "source": "https://www.metmuseum.org/it/learn/educators/curriculum-resources/art-of-the-islamic-world/unit-five/chapter-two/the-ottoman-empire",
+      "sourceTitle": "Contexto histórico institucional",
+      "reviewedAt": "2026-11-14"
+    },
+    "f41-soliman": {
+      "text": "Solimán I gobernó el Imperio otomano entre 1520 y 1566. Conocido como el Magnífico y como Kanuni o el Legislador, su reinado combinó expansión militar, reformas jurídicas y un notable desarrollo de la cultura cortesana. Sus campañas incluyeron el sitio de Viena de 1529.",
+      "source": "https://www.metmuseum.org/it/learn/educators/curriculum-resources/art-of-the-islamic-world/unit-five/chapter-two/the-ottoman-empire",
+      "sourceTitle": "Contexto histórico institucional",
+      "reviewedAt": "2026-11-14"
+    },
+    "f41-selim-ii": {
+      "text": "Selim II fue sultán otomano de 1566 a 1574 y sucedió a Solimán I. Bajo su reinado tuvieron lugar la guerra por Chipre y la batalla naval de Lepanto de 1571. Es una persona distinta de Selim I, que gobernó antes del reinado de Solimán.",
+      "source": "https://www.metmuseum.org/it/learn/educators/curriculum-resources/art-of-the-islamic-world/unit-five/chapter-two/the-ottoman-empire",
+      "sourceTitle": "Contexto histórico institucional",
+      "reviewedAt": "2026-11-14"
+    },
+    "f41-ataturk": {
+      "text": "Mustafa Kemal Atatürk fue un militar y dirigente político turco. Encabezó el movimiento nacional durante la guerra de independencia y fue una figura central en la proclamación de la República de Turquía en 1923. Las nuevas instituciones republicanas sustituyeron al sultanato abolido en 1922.",
+      "source": "https://guides.loc.gov/ottoman-turkish/reference",
+      "sourceTitle": "Contexto histórico institucional",
+      "reviewedAt": "2026-11-14"
     }
   }
 };
