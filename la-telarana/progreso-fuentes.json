@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 38,
-    "notStarted": 33,
+    "inReview": 39,
+    "notStarted": 32,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1474,15 +1474,35 @@
       "timelineVerifiedEventsCommitted": 1,
       "qualityNotes": "Primera revisión parcial: texto automático sin minutajes, audio e integridad sin verificar. Archivo Rothschild vinculado a la familia; la cuestión Waterloo y la grafía Oppenheimer requieren cotejo adicional.",
       "lastUpdated": "2026-11-14"
+    },
+    {
+      "order": 32,
+      "videoId": "LAa4e9H1Nlo",
+      "title": "The Wild Project 173 ft Pedro Baños | El mundo está al borde del conflicto, Cartas Bomba, Xi Jinping",
+      "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+      "status": "primera_revision_documental_parcial_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-32-revision-inicial.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 9,
+      "sourceRelationsDocumented": 12,
+      "personsProfiled": 0,
+      "documentaryChecks": 2,
+      "timelineVerifiedEventsCommitted": 1,
+      "qualityNotes": "Dos pasajes examinados en texto automático sin minutaje, hablantes ni integridad cotejados. Fuentes primarias OTAN y Gobierno chino; esta última expresa la posición de Pekín.",
+      "lastUpdated": "2026-11-14"
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 126,
+    "committedVerifiedEvents": 127,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 82,
+    "fromSourceInReview": 83,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1682,6 +1702,9 @@
       ],
       "33": [
         "study-f33-sociedad-francfort-1810"
+      ],
+      "32": [
+        "study-f32-congreso-chino-taiwan-2022"
       ]
     },
     "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42658751871",
@@ -4004,18 +4027,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 28,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-14",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4028,15 +4051,26 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 12,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 9,
+            "relations": 12,
+            "biographies": 0,
+            "statements": 2,
+            "independentChecks": 0,
+            "verifiedTimelineEvents": 1,
+            "documentaryChecks": 2
+          },
+          "nextAction": "Revisar el resto de la transcripción y cotejar audio, voces y minutos; contrastar otras afirmaciones."
         }
       },
       {

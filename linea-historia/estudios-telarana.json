@@ -2608,7 +2608,8 @@
         "relatedTelarana": [
           "f30-2022-strategy",
           "f30-nato",
-          "f30-china"
+          "f30-china",
+          "f32-episodio"
         ],
         "temporalRelationToSource": "posterior_al_episodio",
         "methodologicalLimits": "Hecho documentado externamente y clasificado por cronología relativa a la emisión del 17/02/2022. No atribuir al invitado afirmaciones, previsiones o conocimiento de información posterior sin transcripción íntegra y audio cotejado."
@@ -3822,6 +3823,39 @@
       "p": [
         "DEU"
       ]
+    },
+    {
+      "id": "study-f32-congreso-chino-taiwan-2022",
+      "y": 2022.7890410958903,
+      "t": "Xi expone la posición de Pekín sobre Taiwán en el XX Congreso del Partido Comunista Chino",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 32 · contraste documental",
+      "d": "El 16 de octubre de 2022, en la apertura del XX Congreso del Partido Comunista Chino, Xi Jinping expresó la preferencia por una reunificación pacífica y la negativa a renunciar al uso de la fuerza. Se trata de la posición de Pekín, no de una determinación del estatus de Taiwán ni de una predicción de invasión.",
+      "g": [
+        "Asia"
+      ],
+      "p": [
+        "CHN",
+        "TWN"
+      ],
+      "investigation": {
+        "sourceOrder": 32,
+        "sourceTitle": "F32 · The Wild Project 173 con Pedro Baños",
+        "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2022-10-16",
+        "confirmedBy": {
+          "label": "Gobierno chino / Xinhua · intervención de Xi, 16/10/2022",
+          "url": "https://english.www.gov.cn/news/topnews/202210/16/content_WS634b89a1c6d0a757729e1493.html"
+        },
+        "relatedTelarana": [
+          "f32-episodio",
+          "f18-xi",
+          "f32-taiwan"
+        ],
+        "methodologicalLimits": "Fuente oficial de una de las partes; acredita el contenido de su posición pública, no su legitimidad ni una acción futura. La transcripción automática del episodio carece de minutajes y de cotejo de audio."
+      }
     }
   ]
 }
