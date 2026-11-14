@@ -1084,6 +1084,30 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "text": "Guillermo I de Hesse-Kassel (1743–1821) fue príncipe y después elector de Hesse-Kassel. La documentación del archivo Rothschild sitúa a Mayer Amschel como agente de corte y cliente financiero suyo.",
       "source": "https://www.rothschildarchive.org/business/",
       "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
+    },
+    "f39-tito-vivas": {
+      "text": "Tito Vivas es arqueólogo, historiador y divulgador especializado en egiptología y patrimonio. Participa en proyectos de comunicación y viajes históricos y explica al público los métodos de la arqueología y las evidencias sobre el antiguo Egipto. Su participación en un debate no convierte automáticamente todas las tesis expuestas en posiciones suyas.",
+      "source": "https://www.arqueotimes.com/articulos/entrevista-a-tito-vivas/",
+      "sourceTitle": "Entrevista · Arqueotimes",
+      "reviewedAt": "2026-11-14"
+    },
+    "f38-sanchez-oro": {
+      "text": "Juan José Sánchez-Oro es historiador español, formado en historia medieval, e investigador de temas de historia cultural, poder y creencias en la península ibérica. Ha colaborado en programas de divulgación sobre historia y misterio. En el debate participa junto a otros invitados; la transcripción sin diarización no permite atribuirle automáticamente cada argumento.",
+      "source": "https://hdnh.es/entrevista-a-juan-jose-sanchez-oro-rosa/",
+      "sourceTitle": "Entrevista y trayectoria · Historias de nuestra Historia",
+      "reviewedAt": "2026-11-14"
+    },
+    "f38-ivan-martinez": {
+      "text": "Iván Martínez es creador de contenidos y fundador del proyecto VM Gran Misterio, dedicado a divulgación sobre enigmas históricos, fenómenos anómalos y temas relacionados con la ciencia. Participa en el debate como invitado. Sus hipótesis y las de otros participantes deben identificarse por separado y contrastarse con evidencia independiente.",
+      "source": "https://granmisterio.org/",
+      "sourceTitle": "Perfil del proyecto VM Gran Misterio",
+      "reviewedAt": "2026-11-14"
+    },
+    "f38-william-miller": {
+      "text": "William Miller es actor británico vinculado profesionalmente a España. En una entrevista con AISGE explicó que estudió historia y arqueología antes de dedicarse a la interpretación. Participa en el debate sobre arqueología y relatos alternativos; el material textual recuperado no verifica por sí mismo la autoría de cada intervención.",
+      "source": "https://www.aisge.es/imprimir.php?print=ok&v=william-miller",
+      "sourceTitle": "Entrevista · AISGE",
+      "reviewedAt": "2026-11-14"
     }
   }
 };

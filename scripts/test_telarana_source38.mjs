@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};
+vm.runInNewContext(read('la-telarana/fuente-38-debate-arqueologia.js'),ctx);
+vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F38_REVIEW,ids=new Set(f.nodes.map(n=>n.id));
+assert.equal(ids.size,19);assert.equal(f.edges.length,23);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);
+const notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));
+assert.equal(notes.filter(n=>n.status==='intervencion_debatida_sin_voz_cotejada').length,10);
+assert(notes.filter(n=>n.status==='intervencion_debatida_sin_voz_cotejada').every(n=>n.text.includes('voz requiere cotejo')));
+for(const id of ['f39-tito-vivas','f38-sanchez-oro','f38-ivan-martinez','f38-william-miller'])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150);
+assert(f.edges.some(e=>e.id==='f38-dialogos-atlantida'&&e.claimStatus==='contenido_textual_no_hecho_arqueologico'));
+const h=JSON.parse(read('linea-historia/estudios-telarana.json'));const e=h.items.filter(e=>e.id==='study-f38-papiros-wadi-2013');assert.equal(e.length,1);assert.equal(e[0].investigation.date,'2013');
+const p=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===38);assert.equal(p.analysisCoverage.signals.statements,10);assert(!p.reviewComplete);
+assert(read('la-telarana/index.html').includes('fuente-38-debate-arqueologia.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-38-debate-arqueologia.js'));
+console.log('OK: F38 conserva diferencias entre debate multivoz, textos y hechos documentados');

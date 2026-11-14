@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 41,
-    "notStarted": 30,
+    "inReview": 42,
+    "notStarted": 29,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1534,15 +1534,35 @@
       "timelineVerifiedEventsCommitted": 1,
       "qualityNotes": "Un pasaje sobre Göbekli Tepe; 1963 reconocimiento del yacimiento, 1994 reidentificación de estructuras, 1995 excavación. Audio sin cotejar.",
       "lastUpdated": "2026-11-14"
+    },
+    {
+      "order": 38,
+      "videoId": "aiN_M5fykfg",
+      "title": "Conspiranoicos RETAN a Arqueólogos: ¿Quién Construyó Realmente las Pirámides y la Atlántida?",
+      "sourceUrl": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "status": "primera_revision_documental_parcial_multivoz_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-38-debate-arqueologia.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 19,
+      "sourceRelationsDocumented": 23,
+      "personsProfiled": 4,
+      "documentaryChecks": 5,
+      "timelineVerifiedEventsCommitted": 1,
+      "qualityNotes": "Debate multivoz de texto automático sin diarización fiable. Intervenciones registradas como posturas debatidas sin asignar voz; cuatro biografías y hechos concretos documentados. Revisión no exhaustiva.",
+      "lastUpdated": "2026-11-14"
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 130,
+    "committedVerifiedEvents": 131,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 86,
+    "fromSourceInReview": 87,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -1752,6 +1772,9 @@
       ],
       "37": [
         "study-f37-gobekli-reidentificacion-1994"
+      ],
+      "38": [
+        "study-f38-papiros-wadi-2013"
       ]
     },
     "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42658751871",
@@ -4392,18 +4415,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 37,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_multivoz_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-14",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4416,15 +4439,25 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 20,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 19,
+            "relations": 23,
+            "biographies": 4,
+            "statements": 10,
+            "independentChecks": 5,
+            "verifiedTimelineEvents": 1
+          },
+          "nextAction": "Continuar la revisión íntegra y cotejar audio y voces; revisar argumentos de arqueoastronomía, Younger Dryas, Doñana y alegaciones geofísicas con fuentes especializadas."
         }
       },
       {
