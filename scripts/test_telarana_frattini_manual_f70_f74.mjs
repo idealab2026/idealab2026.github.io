@@ -16,8 +16,8 @@ const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
 const expectedNodes=[13,14,14,16,13],expectedEdges=[17,18,16,21,16],
       expectedMarkers=[777,1006,1483,840,1019];
-assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===37,
-  "El inventario 74/71/37 está desincronizado");
+assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===38,
+  "El inventario 74/71/38 está desincronizado");
 assert(!source.includes("docs.google.com/document/d/"),
   "Los documentos privados no deben entrar al bundle de La Telaraña");
 assert(html.includes('src="./fuentes-70-74-frattini-inicial.js'),
@@ -165,8 +165,8 @@ assert(reg.sourceCatalog.entries.find(x=>x.order===71)?.analysisCoverage.percent
  reg.sourceCatalog.entries.find(x=>x.order===74)?.analysisCoverage.percent===27,
  "Ranking editorial F71/F74 no reconciliado");
 
-assert(feed.items.length===125&&reg.timeline.committedVerifiedEvents===125,
+assert(feed.items.length===126&&reg.timeline.committedVerifiedEvents===126,
   "Descuadre de hitos con la Línea de la Historia");
 assert(reg.sourceCatalog.entries.find(x=>x.order===34)?.videoId==="j_5Tj0kIj2c",
   "La fuente anterior de Frattini F34 no debe duplicarse");
-console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 125 hitos; Iglesia y Vaticano en 3D");
+console.log("OK: 5 Docs manuales recibidos; "+totalNotes+" notas con anclas textuales, "+totalExternal+" relaciones externas y 126 hitos; Iglesia y Vaticano en 3D");

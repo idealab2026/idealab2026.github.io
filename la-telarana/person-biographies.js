@@ -1049,6 +1049,41 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "sourceTitle": "Studia Historica · La conflictividad de linajes leoneses en el siglo XVII (2019)",
       "also": "https://ramhg.es/wp-content/uploads/2024/09/anales-06_2000-2001-04_gomez_de_olea-moreno.pdf",
       "reviewedAt": "2026-11-11"
+    },
+    "f33-mayer": {
+      "text": "Mayer Amschel Rothschild (1744–1812) fue un comerciante de monedas y banquero de Fráncfort. Tras aprender en Hannover, amplió su negocio de monedas a servicios financieros para clientes principescos y en 1810 formalizó una sociedad con tres de sus hijos en Fráncfort.",
+      "source": "https://www.rothschildarchive.org/business/origins_of_the_business/family_partnership",
+      "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
+    },
+    "f33-amschel": {
+      "text": "Amschel Mayer Rothschild (1773–1855), hijo mayor de Mayer Amschel, participó en la sociedad familiar formalizada en 1810 y dirigió la casa de Fráncfort tras la muerte de su padre en 1812.",
+      "source": "https://www.rothschildarchive.org/business/origins_of_the_business/family_partnership",
+      "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
+    },
+    "f33-salomon": {
+      "text": "Salomon Mayer Rothschild (1774–1855), hijo de Mayer Amschel, fue uno de los socios de la firma de 1810 y se estableció en Viena en 1820, donde desarrolló una casa bancaria.",
+      "source": "https://www.rothschildarchive.org/business/origins_of_the_business/family_partnership",
+      "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
+    },
+    "f33-nathan": {
+      "text": "Nathan Mayer Rothschild (1777–1836), hijo de Mayer Amschel, llegó a Inglaterra en 1798 y desarrolló negocios en Manchester y Londres. Su casa londinense obtuvo encargos británicos de suministro de moneda para las tropas de Wellington en 1814–1815.",
+      "source": "https://www.rothschildarchive.org/business/n_m_rothschild_and_sons_london/nathan_mayer_rothschild_and_the_waterloo_commission",
+      "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
+    },
+    "f33-carl": {
+      "text": "Carl Mayer Rothschild (1788–1855), hijo de Mayer Amschel, fue socio de la firma de Fráncfort de 1810 y estableció una casa bancaria en Nápoles en 1821.",
+      "source": "https://www.rothschildarchive.org/business/origins_of_the_business/family_partnership",
+      "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
+    },
+    "f33-james": {
+      "text": "James Mayer de Rothschild (1792–1868), hijo menor de Mayer Amschel, desarrolló el negocio familiar en París. No figuró entre los firmantes del primer acuerdo de 1810 y se incorporó después, al alcanzar la edad requerida.",
+      "source": "https://www.rothschildarchive.org/business/origins_of_the_business/family_partnership",
+      "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
+    },
+    "f33-guillermo-hesse": {
+      "text": "Guillermo I de Hesse-Kassel (1743–1821) fue príncipe y después elector de Hesse-Kassel. La documentación del archivo Rothschild sitúa a Mayer Amschel como agente de corte y cliente financiero suyo.",
+      "source": "https://www.rothschildarchive.org/business/",
+      "sourceTitle": "Archivo Rothschild · fuente vinculada a la familia"
     }
   }
 };

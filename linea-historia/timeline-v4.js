@@ -133,7 +133,7 @@ function countriesOf(d){
  var row=countryLinks[d.id],list=row&&row.p||d.p;
  return Array.isArray(list)?list.filter(function(code){return typeof code==="string"&&/^[A-Z]{3}$/.test(code)}):[];
 }
-function countryBasis(d){var row=countryLinks[d.id];return row&&row.basis||"sin clasificación";}
+function countryBasis(d){var row=countryLinks[d.id];return row&&row.basis||(Array.isArray(d.p)&&d.p.length?"contexto histórico orientativo":"sin clasificación");}
 function matchesCountry(d){
  var p=countriesOf(d);
  return country==="Todos"||(country==="Sin clasificar"?p.length===0:p.includes(country));

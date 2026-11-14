@@ -33,11 +33,11 @@ assert(record?.analysisCoverage?.percent===61&&review?.sourceNodesDocumented===8
 assert(record?.tracking?.docTranscriptionCreated===true&&record?.tracking?.transcriptContentImported===false&&record?.tracking?.manualTranscriptBlankConfirmed===true,"Documento manual no se debe confundir con transcripción");
 assert(review.verifiedMinuteReferences===0&&record.analysisCoverage.audioVerified===false,"La medición heurística no es cobertura real");
 const history=JSON.parse(fs.readFileSync("linea-historia/estudios-telarana.json","utf8"));
-assert(history.items.length===125&&progression.timeline.committedVerifiedEvents===125,"Cronología no sincronizada");
+assert(history.items.length===126&&progression.timeline.committedVerifiedEvents===126,"Cronología no sincronizada");
 for(const [id,date] of [["study-f69-eichmann-juicio-1961","1961-04-11"],["study-f69-lillehammer-condenas-1974","1974-02-01"]]){
  const e=history.items.find(x=>x.id===id);
  assert(e?.investigation?.date===date&&e.investigation.sourceOrder===69&&e.investigation.status==="hecho_documentado","Evento no validado "+id);
 }
 assert.equal(history.items.filter(e=>e.id==="study-vf150-lillehammer-1973").length,1,"Evento base de 1973 perdido");
 assert(!src.includes("drive.google.com/file/d/")&&!src.includes("docs.google.com/document/d/"),"Material privado en el paquete público");
-console.log("OK: F69 conserva 80 entidades y 99 relaciones, 80 tiempos anulados, 11 biografías, 8 vínculos documentados y 125 hitos.");
+console.log("OK: F69 conserva 80 entidades y 99 relaciones, 80 tiempos anulados, 11 biografías, 8 vínculos documentados y 126 hitos.");
