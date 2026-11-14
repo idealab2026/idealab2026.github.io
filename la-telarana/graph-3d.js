@@ -255,9 +255,11 @@ function make(options){
   });
   // Las etiquetas de los temas se muestran en las cabeceras de sus regiones.
   const title=theme==="todos"?"Todas las comunidades":topics.find(t=>t[0]===theme)[1];
-  ctx.textAlign="left";ctx.fillStyle="#d2e1ee";ctx.font="600 12px system-ui";
-  ctx.fillText(title+" · "+(theme==="todos"?nodes.length:nodes.filter(n=>group(n)===theme).length)+" entidades",16,75);
-  ctx.fillStyle="#93aabf";ctx.font="11px system-ui";ctx.fillText("Arrastra para rotar · dos dedos para mover · zoom con pellizco o + / −",16,93);
+  // En móvil la barra de controles ocupa una segunda fila; reservarle espacio.
+  const headerY=w<=600?90:75;
+  ctx.textAlign="left";ctx.textBaseline="alphabetic";ctx.fillStyle="#d2e1ee";ctx.font="600 12px system-ui";
+  ctx.fillText(title+" · "+(theme==="todos"?nodes.length:nodes.filter(n=>group(n)===theme).length)+" entidades",16,headerY);
+  ctx.fillStyle="#93aabf";ctx.font="11px system-ui";ctx.fillText("Arrastra para rotar · dos dedos para mover · zoom con pellizco o + / −",16,headerY+18);
  }
  function fitView(){
   // Centrar todo el ORBE, no la caja de los nodos. Así la rotación no altera

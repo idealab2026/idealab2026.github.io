@@ -54,8 +54,8 @@ const tint=new Set(Graph.topics.map(({id})=>({
  historia:'#ec8f89',iglesia:'#d4bbef',tecnologia:'#8bdbbd',
  finanzas:'#bbd68c',global:'#e6ad91'}[id])));
 
-for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540]]){
- let rings=[],pillBoxes=[],sphere=[],lastArc=null,photoRequests=0,gradients=0;
+for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540],[390,844]]){
+ let rings=[],pillBoxes=[],sphere=[],labels=[],lastArc=null,photoRequests=0,gradients=0;
  const events={};
  const ctx=new Proxy({},{
   get(target,key){
@@ -71,7 +71,8 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
    };
    if(key==='roundRect')return(x,y,w,h)=>pillBoxes.push({x,y,w,h});
    if(key==='measureText')return value=>({width:value.length*8});
-   if(key==='setTransform')return()=>{rings=[];sphere=[];pillBoxes=[]};
+   if(key==='fillText')return(text,x,y)=>labels.push({text,x,y});
+   if(key==='setTransform')return()=>{rings=[];sphere=[];pillBoxes=[];labels=[]};
    return()=>{};
   },
   set(target,key,value){target[key]=value;return true}
@@ -88,6 +89,14 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  const fitted=graph.fit();
  assert(Number.isFinite(fitted.zoom)&&fitted.zoom>0);
  flush(time);
+ if(width===390){
+  const title=labels.find(x=>String(x.text).startsWith('Todas las comunidades'));
+  const hint=labels.find(x=>String(x.text).startsWith('Arrastra para rotar'));
+  assert.equal(title?.y,90,'La cabecera debe quedar bajo la barra móvil');
+  assert.equal(hint?.y,108,'La ayuda debe quedar debajo de la cabecera');
+  assert(/@media\(max-width:600px\)\{\.fullscreen-search-bar\{top:121px\}\}/.test(page),
+   'El buscador móvil debe comenzar por debajo de la ayuda del grafo');
+ }
  assert.equal(rings.length,242,'all entity nodes visible');
  assert.equal(sphere.length,1,'one coherent spherical body');
  assert.equal(pillBoxes.length,8,'one compact label per lobe');
