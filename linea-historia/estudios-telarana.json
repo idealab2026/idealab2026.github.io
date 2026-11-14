@@ -4448,6 +4448,103 @@
         ],
         "methodologicalLimits": "Fecha de publicación científica, no de construcción. La existencia del vacío no determina su función ni valida hipótesis sobre máquinas. Audio y voces de la conversación pendientes de cotejo."
       }
+    },
+    {
+      "id": "study-f47-etiopia-anexion-1936",
+      "y": 1936,
+      "t": "Anexión italiana de Etiopía",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 47 · documentación histórica",
+      "d": "En 1936 Italia anunció la anexión de Etiopía al África Oriental Italiana. La ocupación se prolongó hasta 1941 y existió resistencia etíope.",
+      "g": [
+        "África",
+        "Europa"
+      ],
+      "p": [
+        "ETH",
+        "ITA"
+      ],
+      "investigation": {
+        "sourceOrder": 47,
+        "sourceTitle": "F47 · Arqueología y patrimonio",
+        "sourceUrl": "https://www.youtube.com/watch?v=gw6bQKgWGcg",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1936",
+        "confirmedBy": {
+          "label": "Biblioteca del Congreso de EE. UU.",
+          "url": "https://www.loc.gov/exhibits/naacp/the-great-depression.html"
+        },
+        "relatedTelarana": [
+          "f47-episodio",
+          "f47-etiopia",
+          "f47-ocupacion-italiana"
+        ],
+        "methodologicalLimits": "El año documenta la anexión, no toda la guerra ni el fin de la resistencia. El audio del episodio no está cotejado."
+      }
+    },
+    {
+      "id": "study-f47-abu-simbel-1968",
+      "y": 1968.724043715847,
+      "t": "Finalización de la salvaguarda de Abu Simbel",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 47 · documentación histórica",
+      "d": "El 22 de septiembre de 1968 concluyeron los trabajos de salvaguarda y traslado de los templos de Abu Simbel, según la cronología de UNESCO.",
+      "g": [
+        "África"
+      ],
+      "p": [
+        "EGY"
+      ],
+      "investigation": {
+        "sourceOrder": 47,
+        "sourceTitle": "F47 · Arqueología y patrimonio",
+        "sourceUrl": "https://www.youtube.com/watch?v=gw6bQKgWGcg",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1968-09-22",
+        "confirmedBy": {
+          "label": "UNESCO · cronología de Nubia",
+          "url": "https://whc.unesco.org/document/6878"
+        },
+        "relatedTelarana": [
+          "f47-episodio",
+          "f47-abu-simbel",
+          "f47-campana-nubia"
+        ],
+        "methodologicalLimits": "La fecha procede de UNESCO y es contexto histórico de un monumento mencionado en la entrevista; no se atribuye al audio."
+      }
+    },
+    {
+      "id": "study-f47-nazca-unesco-1994",
+      "y": 1994,
+      "t": "Inscripción de las líneas de Nasca en Patrimonio Mundial",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 47 · documentación histórica",
+      "d": "En 1994 las líneas y geoglifos de Nasca y Pampas de Jumana se inscribieron en la Lista del Patrimonio Mundial de UNESCO. La inscripción reconoce el valor patrimonial del conjunto arqueológico peruano.",
+      "g": [
+        "América"
+      ],
+      "p": [
+        "PER"
+      ],
+      "investigation": {
+        "sourceOrder": 47,
+        "sourceTitle": "F47 · Arqueología y patrimonio",
+        "sourceUrl": "https://www.youtube.com/watch?v=gw6bQKgWGcg",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1994",
+        "confirmedBy": {
+          "label": "UNESCO · Nasca y Palpa",
+          "url": "https://whc.unesco.org/en/list/700"
+        },
+        "relatedTelarana": [
+          "f47-episodio",
+          "f47-nazca"
+        ],
+        "methodologicalLimits": "El año corresponde a su inscripción moderna, no al trazado original de los geoglifos. La fecha no se atribuye al audio."
+      }
     }
   ]
 }
