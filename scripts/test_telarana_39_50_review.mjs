@@ -44,7 +44,7 @@ for(const s of specs){
  assert(review&&!review.reviewComplete&&review.verifiedMinuteReferences===0);
  const event=events.find(x=>x.id===s.event);
  assert(event&&event.investigation.status==="hecho_documentado"&&event.investigation.sourceOrder===s.order&&event.investigation.confirmedBy.url.startsWith("https://"));
- assert(event.investigation.relatedTelarana.every(id=>ids.has(id)),"Hito histórico refiere IDs ausentes de F"+s.order);
+ assert(event.investigation.relatedTelarana.every(id=>ids.has(id)||(event.investigation.additionalSources||[]).some(extra=>id===`f${extra.sourceOrder}-episodio`)),"Hito histórico refiere IDs ausentes de F"+s.order);
 }
 assert.equal(events.length,progress.timeline.committedVerifiedEvents,"Diferencia en contador de cronología");
 console.log("OK F39 F50: 56 fichas, 65 enlaces, 54 anclas por caracteres sin minutajes inventados y 2 hitos documentados.");

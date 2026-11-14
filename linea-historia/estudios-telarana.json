@@ -267,9 +267,18 @@
         "relatedTelarana": [
           "f39-howard-carter",
           "f39-tutankamon",
-          "f39-episodio"
+          "f39-episodio",
+          "f40-episodio"
         ],
-        "methodologicalLimits": "La fecha y descubrimiento proceden del diario original de Carter; la afirmación popular de una maldición es una leyenda ajena al documento. La fuente F39 solo se utiliza como punto de entrada editorial, sin minutajes ni audio cotejado."
+        "methodologicalLimits": "La fecha y descubrimiento proceden del diario original de Carter; la afirmación popular de una maldición es una leyenda ajena al documento. La fuente F39 solo se utiliza como punto de entrada editorial, sin minutajes ni audio cotejado.",
+        "additionalSources": [
+          {
+            "sourceOrder": 40,
+            "title": "F40 · El Antiguo Egipto en 13 minutos",
+            "url": "https://www.youtube.com/watch?v=6a_gIpv_XD4",
+            "note": "El vídeo menciona el hallazgo de 1922. Su audio no está cotejado; no acredita por sí solo todos los detalles del descubrimiento."
+          }
+        ]
       }
     },
     {
@@ -3985,6 +3994,71 @@
           "f39-gran-piramide-jufu"
         ],
         "methodologicalLimits": "El año identifica la campaña de hallazgo, no la fecha de redacción del diario ni la construcción de la pirámide. Los papiros no demuestran cada detalle técnico de la obra; la transcripción del debate no tiene audio cotejado."
+      }
+    },
+    {
+      "id": "study-f40-rosetta-hallazgo-1799",
+      "y": 1799,
+      "t": "Hallazgo moderno de la piedra de Rosetta",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 40 · contraste documental",
+      "d": "La piedra de Rosetta fue hallada en 1799 durante la expedición francesa en Egipto. Su decreto está inscrito en jeroglíficos, demótico y griego, una combinación que fue fundamental para la investigación posterior de la escritura egipcia.",
+      "g": [
+        "África",
+        "Europa"
+      ],
+      "p": [
+        "EGY"
+      ],
+      "investigation": {
+        "sourceOrder": 40,
+        "sourceTitle": "F40 · El Antiguo Egipto en 13 minutos",
+        "sourceUrl": "https://www.youtube.com/watch?v=6a_gIpv_XD4",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1799",
+        "confirmedBy": {
+          "label": "British Museum · historia de los jeroglíficos",
+          "url": "https://www.britishmuseum.org/sites/default/files/2022-07/Hieroglyphs_exhibition_British_Museum.pdf"
+        },
+        "relatedTelarana": [
+          "f40-rosetta",
+          "f40-episodio"
+        ],
+        "methodologicalLimits": "Se registra el año del hallazgo moderno, no la fecha de creación de la estela. El vídeo no tiene audio ni integridad cotejados."
+      }
+    },
+    {
+      "id": "study-f40-champollion-avance-1822",
+      "y": 1822,
+      "t": "Avance de Champollion en el desciframiento jeroglífico",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 40 · contraste documental",
+      "d": "En 1822 Jean-François Champollion logró un avance decisivo en el desciframiento de los jeroglíficos egipcios, apoyado en la comparación de inscripciones. Fue parte de un proceso más amplio al que contribuyeron otros investigadores.",
+      "g": [
+        "África",
+        "Europa"
+      ],
+      "p": [
+        "EGY"
+      ],
+      "investigation": {
+        "sourceOrder": 40,
+        "sourceTitle": "F40 · El Antiguo Egipto en 13 minutos",
+        "sourceUrl": "https://www.youtube.com/watch?v=6a_gIpv_XD4",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1822",
+        "confirmedBy": {
+          "label": "British Museum · historia de los jeroglíficos",
+          "url": "https://www.britishmuseum.org/sites/default/files/2020-06/British_Museum_Egypt_Sudan_Newsletter4_2017.pdf"
+        },
+        "relatedTelarana": [
+          "f40-champollion",
+          "f40-rosetta",
+          "f40-episodio"
+        ],
+        "methodologicalLimits": "El año identifica un avance clave, no la resolución instantánea de toda la escritura. La mención del vídeo no lleva minutaje verificado."
       }
     }
   ]
