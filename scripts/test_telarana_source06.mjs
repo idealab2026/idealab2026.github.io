@@ -22,7 +22,7 @@ const progress=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","u
 const html=fs.readFileSync("la-telarana/index.html","utf8");
 assert.equal(d.metadata.publishedAt,"2024-01-04");
 assert.equal(d.metadata.podcastReleaseDate,"2024-01-05");
-assert.equal(d.metadata.originalNotebookSourceId,"21bd9782-b363-4992-bb5a-f945bcc6ca9c");
+assert.equal(d.metadata.originalNotebookSourceId,null,"El identificador interno no se publica");
 assert.equal(d.metadata.docCreated,true);
 assert.equal(d.metadata.fullTranscriptImportedToDoc,true);
 assert.equal(d.metadata.fullTranscriptSha256VerifiedAgainstOriginal,true);
@@ -31,11 +31,11 @@ assert.equal(d.metadata.originalTranscriptUtf8Bytes,262991);
 assert.equal(d.metadata.originalTranscriptBlocks,170);
 assert.equal(d.metadata.indexedTranscriptTopics,13);
 assert.equal(d.metadata.originalTranscriptSha256,"34e777038c189bf0ab64d64bc7ea220e954c5f55bc55ce32e1d5e7b50eab6bc6");
-assert(d.metadata.transcriptIndexDocUrl.includes("docs.google.com/document/d/"));
+assert.equal(d.metadata.transcriptIndexDocUrl,null,"El índice privado no se publica");
 assert.equal(d.metadata.transcriptPresentOnThirdPartySite,true);
 assert.equal(d.metadata.transcriptVerifiedAgainstAudio,false);
 assert(d.metadata.transcriptLocation.includes("podcasts.happyscribe.com"));
-assert(d.metadata.transcriptDocUrl.includes("docs.google.com/document/d/"));
+assert.equal(d.metadata.transcriptDocUrl,null,"La transcripción privada no se publica");
 assert.equal(d.nodes.length,10);
 assert.equal(d.edges.length,10);
 assert(d.metadata.timestampedTranscriptAvailable===true&&d.metadata.timestampedTranscriptSegments===6975);
@@ -45,7 +45,7 @@ assert.equal(ids.size,10);
 for(const n of d.nodes){
  assert(n.note.length>120,"No identity/context: "+n.id);
  assert(n.podcastNotes.some(x=>typeof x.timeSec==="number"),"Missing timed topic reference: "+n.id);
- assert(n.podcastNotes.every(x=>typeof x.timeSec==="number"||(x.timeSec===null&&x.status==="archivo_original_usuario"&&x.source.includes("docs.google.com"))),"Untimed notes must be explicitly identified as source document without verified minute: "+n.id);
+ assert(n.podcastNotes.every(x=>typeof x.timeSec==="number"||(x.timeSec===null&&x.status==="archivo_original_usuario"&&x.source===null)),"El archivo privado no debe enlazarse desde la web: "+n.id);
 }
 for(const edge of d.edges){
  assert(ids.has(edge.a)&&ids.has(edge.b),"Unknown endpoint "+edge.id);

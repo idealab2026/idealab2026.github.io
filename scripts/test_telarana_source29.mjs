@@ -12,7 +12,7 @@ assert.equal(mod.edges.length,14);
 assert(mod.metadata.transcriptAvailable===true&&mod.metadata.fullTranscriptAvailableExternally===true&&mod.metadata.fullTranscriptPreservedInDrive===true&&mod.metadata.transcriptSegments===1541,
  "TXT minutado presente en Drive; dossier Google Doc previo sigue siendo parcial");
 assert(!mod.metadata.audioVerified&&!mod.metadata.minuteVerified);
-assert(mod.metadata.editorialDossierUrl.startsWith("https://docs.google.com/document/d/"));
+assert.equal(mod.metadata.editorialDossierUrl,null,"El expediente privado no se publica");
 const ids=new Set(mod.nodes.map(n=>n.id));
 assert.equal(ids.size,mod.nodes.length);
 const factual=mod.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente");

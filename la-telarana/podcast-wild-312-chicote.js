@@ -11,8 +11,8 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
     "transcriptLocation": "https://metacast.app/podcast/the-wild-project/B72Kocgq/the-wild-project-312-javi-chicote-dentro-de-la-carcel-mas-secreta-del-mundo-espias-y-corruptos/3TfF87w3",
     "transcriptPresentOnThirdPartySite": true,
     "transcriptAudioMatched": false,
-    "transcriptIndexDocUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
-    "transcriptDocUrl": "https://docs.google.com/document/d/1T3Sqhn7DRRFFBLNmqm4ioXHgCYTtWizuE_k3ESWcN_g/edit",
+    "transcriptIndexDocUrl": null,
+    "transcriptDocUrl": null,
     "fullTranscriptImportedToDoc": true,
     "docCreated": true,
     "reviewStage": "revision_parcial_cronometrada_con_testimonios_y_contexto_judicial",
@@ -24,7 +24,7 @@ window.IDEA_TELARANA_SOURCE07_PODCAST = {
     "timestampedTranscriptAvailable": true,
     "timestampedTranscriptSegments": 8451,
     "timestampedTranscriptLastTimestamp": "05:14:20",
-    "timestampedTranscriptDriveUrl": "https://drive.google.com/file/d/1D8vOoMdDnW2Fj78q0-er5EYOMdWLCIMw/view",
+    "timestampedTranscriptDriveUrl": null,
     "timestampedTranscriptAudioVerified": false
   },
   "nodes": [

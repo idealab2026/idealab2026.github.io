@@ -15,7 +15,7 @@ window.IDEA_TELARANA_F10_REVIEW = {
     "timecodedTranscriptAvailable": true,
     "timecodedTranscriptSegments": 2294,
     "timecodedTranscriptLastTimestamp": "01:31:30",
-    "timecodedTranscriptDriveUrl": "https://drive.google.com/file/d/1zKVvvNUhTevfjc2xomTt4vpYmeoLsJCq/view"
+    "timecodedTranscriptDriveUrl": null
   },
   "nodes": [
     {

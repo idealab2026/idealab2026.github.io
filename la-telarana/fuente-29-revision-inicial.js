@@ -11,7 +11,7 @@ window.IDEA_TELARANA_F29_REVIEW = {
     "transcriptAvailable": true,
     "fullTranscriptAvailableExternally": true,
     "fullTranscriptPreservedInDrive": true,
-    "editorialDossierUrl": "https://docs.google.com/document/d/1tWnMe7rklZ5mEbXunYfs9mIPf_5IC24y-7kSHrRb0Ts/edit",
+    "editorialDossierUrl": null,
     "audioVerified": false,
     "minuteVerified": false,
     "methodologicalNote": "El episodio ya dispone de subtítulos automáticos completos con códigos de tiempo (F29, 1.541 segmentos hasta 00:59:51), conservados como TXT en Drive institucional. No hay cotejo con el audio ni validación independiente de las acusaciones. Los datos externos ya publicados y sus enlaces conservan su procedencia independiente; ninguna acusación queda acreditada por los subtítulos.",

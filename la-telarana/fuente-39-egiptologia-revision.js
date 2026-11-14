@@ -11,7 +11,7 @@ window.IDEA_TELARANA_F39_REVIEW = {
     "transcriptAvailable": true,
     "transcriptFormat": "NotebookLM TXT without verified timestamps",
     "transcriptCharacters": 249150,
-    "transcriptPrivateDriveUrl": "https://drive.google.com/file/d/1HjhqJoWozziDTqHwASm0xsyTA6YbWEaZ/view",
+    "transcriptPrivateDriveUrl": null,
     "timecodesAvailable": false,
     "audioVerified": false,
     "reviewComplete": false,
