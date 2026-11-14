@@ -1198,6 +1198,18 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/tombs-of-the-palaiologan-emperors/C5079928DCB842457C4BA712151A15F8",
       "sourceTitle": "Estudio académico sobre los emperadores Paleólogos",
       "reviewedAt": "2026-11-14"
+    },
+    "f44-augusto": {
+      "text": "Cayo Octavio, posteriormente conocido como Augusto, fue el heredero adoptivo de Julio César y se impuso en las guerras civiles romanas. El Senado le otorgó el título de Augusto en 27 a. C., fecha convencional de inicio del Principado. Su gobierno concentró el poder personal conservando instituciones y lenguaje republicanos; murió en el año 14 d. C.",
+      "source": "https://www.metmuseum.org/de/essays/the-roman-empire-27-b-c-393-a-d",
+      "sourceTitle": "Metropolitan Museum · Imperio romano",
+      "reviewedAt": "2026-11-14"
+    },
+    "f44-marco-aurelio": {
+      "text": "Marco Aurelio fue emperador romano entre 161 y 180 d. C. y autor de las Meditaciones, obra vinculada a la tradición estoica. Los especialistas estudian sus reflexiones en relación con otros autores antiguos. La existencia de ese texto no autentica todas las frases que se le atribuyen en redes sociales.",
+      "source": "https://www.cambridge.org/core/books/abs/cambridge-history-of-greek-and-roman-political-thought/stoic-writers-of-the-imperial-era/4E49E7ECF13AE7872905D5798A953DFD",
+      "sourceTitle": "Cambridge · Estoicismo imperial",
+      "reviewedAt": "2026-11-14"
     }
   }
 };

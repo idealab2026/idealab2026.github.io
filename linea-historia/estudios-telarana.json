@@ -4342,6 +4342,70 @@
         ],
         "methodologicalLimits": "Se registra únicamente el año. El audio y la integridad de la transcripción siguen sin cotejar; no se validan las cifras o descripciones literarias del vídeo."
       }
+    },
+    {
+      "id": "study-f44-rubicon-49ac",
+      "y": -49,
+      "t": "César cruza el Rubicón",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 44 · documentación histórica",
+      "d": "En 49 a. C. Julio César cruzó el Rubicón con fuerzas militares, en el contexto del conflicto político y militar de la República romana.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ITA"
+      ],
+      "investigation": {
+        "sourceOrder": 44,
+        "sourceTitle": "F44 · Historia del Imperio romano",
+        "sourceUrl": "https://www.youtube.com/watch?v=Hxt6RX-6uVk",
+        "status": "hecho_documentado",
+        "datePrecision": "año_ac",
+        "date": "49 a. C.",
+        "confirmedBy": {
+          "label": "Metropolitan Museum · Arte romano",
+          "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Roman_Art_A_Resource_for_Educators.pdf"
+        },
+        "relatedTelarana": [
+          "f44-episodio",
+          "f50-julio-cesar",
+          "f44-rubicon"
+        ],
+        "methodologicalLimits": "Se registra el año documentado por el contraste externo, sin inventar mes ni día. La transcripción audiovisual y las voces no se han cotejado."
+      }
+    },
+    {
+      "id": "study-f44-augusto-27ac",
+      "y": -27,
+      "t": "Octavio recibe el título de Augusto",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 44 · documentación histórica",
+      "d": "En 27 a. C. el Senado otorgó a Octavio el título de Augusto. La fecha se utiliza convencionalmente para el comienzo del Principado romano.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ITA"
+      ],
+      "investigation": {
+        "sourceOrder": 44,
+        "sourceTitle": "F44 · Historia del Imperio romano",
+        "sourceUrl": "https://www.youtube.com/watch?v=Hxt6RX-6uVk",
+        "status": "hecho_documentado",
+        "datePrecision": "año_ac",
+        "date": "27 a. C.",
+        "confirmedBy": {
+          "label": "Metropolitan Museum · Imperio romano",
+          "url": "https://www.metmuseum.org/de/essays/the-roman-empire-27-b-c-393-a-d"
+        },
+        "relatedTelarana": [
+          "f44-episodio",
+          "f44-augusto",
+          "f44-imperio-romano"
+        ],
+        "methodologicalLimits": "Se registra el año documentado por el contraste externo, sin inventar mes ni día. La transcripción audiovisual y las voces no se han cotejado."
+      }
     }
   ]
 }

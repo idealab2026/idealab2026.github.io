@@ -86,7 +86,8 @@ function valid(d){
 function validStudy(d){
  var info=d&&d.investigation||{};
  return !!(valid(d)&&/^study-(?:v\d+|vf\d+|f\d+)-[a-z0-9-]+$/.test(d.id||"")&&
-  info.status==="hecho_documentado"&&/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(info.date||"")&&
+  info.status==="hecho_documentado"&&((/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(info.date||"")&&info.datePrecision!=="año_ac")||
+   (info.datePrecision==="año_ac"&&/^[1-9]\d{0,3} a\. C\.$/.test(info.date||"")&&Number.parseInt(info.date,10)===-Number(d.y)))&&
   info.confirmedBy&&String(info.confirmedBy.url||"").startsWith("https://")&&
   String(info.sourceUrl||"").startsWith("https://")&&Array.isArray(info.relatedTelarana));
 }
@@ -752,6 +753,7 @@ function documentedLink(parent,href,label){
 function studyDate(date,precision){
  var v=String(date||"");
  if(precision==="intervalo_arqueologico"&&v==="9600–8200 a. C. (aprox.)")return v;
+ if(precision==="año_ac"&&/^[1-9]\d{0,3} a\. C\.$/.test(v))return v;
  if(precision==="año"&&/^\d{4}$/.test(v))return v;
  if(!/^\d{4}-\d{2}(?:-\d{2})?$/.test(v))return"Fecha por verificar";
  var p=v.split("-").map(Number);

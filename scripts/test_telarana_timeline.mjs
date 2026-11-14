@@ -30,6 +30,8 @@ const example=feed.items[0];
 assert(!runtime.validStudy({...example,id:'study-invalido'}));
 assert(!runtime.validStudy({...example,investigation:{...example.investigation,status:'hipotesis'}}));
 assert(runtime.validStudy({...example,investigation:{...example.investigation,date:'1810',datePrecision:'año'}}),"Las fechas anuales no deben precisar un mes inventado");
+assert(runtime.validStudy({...example,y:-49,investigation:{...example.investigation,date:"49 a. C.",datePrecision:"año_ac"}}));
+assert(!runtime.validStudy({...example,y:-48,investigation:{...example.investigation,date:"49 a. C.",datePrecision:"año_ac"}}));
 for(const [studyId,originalId] of Object.entries(runtime.studyCanonicalIds)){
  const original=history.items.find(e=>e.id===originalId),study=feed.items.find(e=>e.id===studyId);
  assert(original&&study,"Falta un extremo de la reconciliación histórica");
@@ -53,10 +55,15 @@ for(const e of feed.items){
  feedIds.add(e.id);
  const inv=e.investigation||{};
  assert(inv.status==="hecho_documentado","Solo se pueden publicar hechos contrastados");
- assert(/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(inv.date||""),"Fecha inválida");
- if(inv.datePrecision==="año")assert(/^\d{4}$/.test(inv.date),"No inventar mes o día para hitos anuales");
- const year=Number(inv.date.slice(0,4));
- assert(Math.floor(e.y)===year,"El año del eje no coincide con la fecha");
+ const year=inv.datePrecision==="año_ac"?-Number.parseInt(inv.date,10):Number(inv.date.slice(0,4));
+ if(inv.datePrecision==="año_ac"){
+  assert(/^[1-9]\d{0,3} a\. C\.$/.test(inv.date||""),"Fecha a. C. inválida");
+  assert.equal(e.y,-Number.parseInt(inv.date,10),"El año a. C. del eje no coincide con la fecha");
+ }else{
+  assert(/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(inv.date||""),"Fecha inválida");
+  if(inv.datePrecision==="año")assert(/^\d{4}$/.test(inv.date),"No inventar mes o día para hitos anuales");
+  assert(Math.floor(e.y)===year,"El año del eje no coincide con la fecha");
+ }
  assert(e.c==="Acontecimientos"||e.c==="Actualidad","Categoría histórica inválida");
  assert(e.d&&e.d.length>120,"Descripción insuficiente");
  assert(Array.isArray(e.g)&&e.g.every(v=>["Europa","Asia","África","América","Oceanía","Antártida","Mundial"].includes(v)),"Geografía inválida");
