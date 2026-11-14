@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};vm.runInNewContext(read('la-telarana/fuente-42-jesus-arqueologia.js'),ctx);vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F42_REVIEW,ids=new Set(f.nodes.map(n=>n.id));assert.equal(ids.size,15);assert.equal(f.edges.length,19);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);let notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));assert.equal(notes.filter(n=>n.status==='relato_de_la_entrevista_sin_audio').length,8);
+for(const id of ['f42-jesus','f42-pilato','f42-pablo','f42-tacito','f42-josefo'])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150);
+assert(f.nodes.find(n=>n.id==='f42-piedra-pilato').note.includes('fragmentaria'));assert(f.edges.find(e=>e.id==='f42-pilato-inscripcion').note.includes('no menciona a Jesús'));
+assert(f.nodes.find(n=>n.id==='f42-sudario').podcastNotes.some(n=>n.text.includes('1260–1390')));assert(f.nodes.find(n=>n.id==='f42-nazaret').podcastNotes.some(n=>n.text.includes('Mateo y Lucas')));
+const h=JSON.parse(read('linea-historia/estudios-telarana.json'));for(const id of ['study-f42-inscripcion-pilato-1961','study-f42-carbono-sudario-1989'])assert.equal(h.items.filter(e=>e.id===id).length,1);
+assert(read('la-telarana/index.html').includes('fuente-42-jesus-arqueologia.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-42-jesus-arqueologia.js'));
+console.log('OK: F42 distingue arqueología contextual, tradiciones y estudios de muestras');

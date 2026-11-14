@@ -102,8 +102,11 @@ var studyCanonicalIds={
  "study-f41-lepanto-1571":"h-QJ26"
 };
 function mergeCanonicalStudy(original,study){
- return Object.assign({},original,{y:study.y,d:study.d,g:study.g,
+ var merged=Object.assign({},original,{y:study.y,d:study.d,g:study.g,
   investigation:study.investigation,studyAlias:study.id});
+ // Los países contrastados se conservan también en los sucesos conciliados.
+ if(Array.isArray(study.p)&&study.p.length)merged.p=study.p.slice();
+ return merged;
 }
 // Corrección de presentación apoyada en UNESCO; el dato histórico en data.json permanece íntegro.
 function correctKnownHistorical(d){
