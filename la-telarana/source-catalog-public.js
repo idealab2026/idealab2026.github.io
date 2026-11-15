@@ -1,4 +1,4 @@
-/* Catálogo público de F01–F74: porcentaje editorial orientativo, enlace original público, clase de fuente y autoría/participantes identificados. Sin transcripciones, Docs privados ni expedientes internos. Los autores o intervinientes ausentes NO se infieren. */
+/* Catálogo público F01–F74: no incluye transcripciones, documentos privados ni URL internas; porcentaje editorial aproximado. */
 window.IDEA_TELARANA_PUBLIC_SOURCES = [
   {
     "order": 1,
@@ -408,7 +408,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Podcast / entrevista",
     "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
-    "percent": 12,
+    "percent": 21,
     "percentInherited": false,
     "creator": "The Wild Project",
     "participants": [
@@ -422,7 +422,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Vídeo",
     "sourceUrl": "https://www.youtube.com/watch?v=PAnnvSUtFys",
-    "percent": 12,
+    "percent": 22,
     "percentInherited": false,
     "creator": null,
     "participants": []
