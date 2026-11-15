@@ -43,6 +43,8 @@ jobs:
         run: node scripts/test_telarana_3d.mjs
       - name: Validar esquema 2D de vecinos directos y navegación
         run: node scripts/test_telarana_local_relations.mjs
+      - name: Validar filtro multifuente y deselección del inspector
+        run: node scripts/test_telarana_source_filter.mjs
       - name: Validar biografías independientes y testimonios
         run: node scripts/test_telarana_person_bios.mjs
       - name: Evitar enlaces a documentos privados en La Telaraña
@@ -289,6 +291,8 @@ jobs:
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
           cp la-telarana/local-relations-2d.js dist/la-telarana/local-relations-2d.js
+          cp la-telarana/source-catalog-public.js dist/la-telarana/source-catalog-public.js
+          cp la-telarana/source-filter.js dist/la-telarana/source-filter.js
           cp la-telarana/rankings.js dist/la-telarana/rankings.js
           cp biblioteca-montecristo/app.js biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
           cp -R biblioteca-montecristo/infografias dist/biblioteca-montecristo/
@@ -359,6 +363,10 @@ jobs:
           node --check dist/la-telarana/graph-3d.js
           test -s dist/la-telarana/local-relations-2d.js
           node --check dist/la-telarana/local-relations-2d.js
+          test -s dist/la-telarana/source-catalog-public.js
+          test -s dist/la-telarana/source-filter.js
+          node --check dist/la-telarana/source-filter.js
+          node --check dist/la-telarana/source-catalog-public.js
           # Ninguna versión puede publicarse con scripts locales referenciados pero ausentes.
           node -e 'const fs=require("fs");const html=fs.readFileSync("dist/la-telarana/index.html","utf8");const names=[...html.matchAll(/<script[^>]*src="([^"]+)"/g)].map(m=>m[1]).filter(n=>n.startsWith("./")&&n.includes(".js")).map(n=>n.slice(2).split("?")[0]);if(names.length<20)throw Error("Lista de scripts inesperadamente corta: "+names.length);const missing=names.filter(n=>!fs.existsSync("dist/la-telarana/"+n));if(missing.length){console.error("Scripts de La Telaraña ausentes en Pages:",missing.join(", "));process.exit(1)}console.log("OK: "+names.length+" scripts referenciados y presentes")'
           for f in dist/la-telarana/fuente-*.js; do node --check "$f"; done
