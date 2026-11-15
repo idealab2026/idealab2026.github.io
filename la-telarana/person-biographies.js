@@ -1300,6 +1300,24 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://elpais.com/espana/2024-11-12/la-audiencia-nacional-rebaja-la-condena-al-jubilado-que-envio-cartas-pirotecnicas-al-gobierno.html",
       "sourceTitle": "EL PAÍS · información sobre resolución de apelación",
       "reviewedAt": "2026-11-15"
+    },
+    "f39-howard-carter": {
+      "text": "Howard Carter (1874–1939) fue arqueólogo y dibujante británico especializado en Egipto. Tras trabajar para el Servicio de Antigüedades dirigió excavaciones financiadas por Lord Carnarvon en el Valle de los Reyes. Localizó la escalera de la tumba de Tutankamón el 4 de noviembre de 1922 y accedió visualmente a su antecámara el 26 de noviembre. Sus diarios y cuadernos están conservados en el Instituto Griffith de Oxford. Una especulación biográfica del episodio no justifica atribuirle diagnóstico retrospectivo de autismo.",
+      "source": "https://tutankhamun.griffith.ox.ac.uk/people/howard-carter",
+      "sourceTitle": "Instituto Griffith · biografía y archivo de excavaciones",
+      "reviewedAt": "2026-11-16"
+    },
+    "f53-carnarvon": {
+      "text": "George Edward Stanhope Molyneux Herbert, quinto conde de Carnarvon (1866–1923), fue aristócrata británico interesado en antigüedades egipcias. Financiaba las excavaciones de Howard Carter desde años antes de 1922 y llegó a Luxor después de que Carter hallara la escalera de la tumba de Tutankamón. Estuvo presente en la campaña inaugural de 1922. Falleció en El Cairo en abril de 1923 por complicaciones médicas infecciosas, no por una supuesta maldición, que pertenece al folclore posterior.",
+      "source": "https://tutankhamun.griffith.ox.ac.uk/people/lord-carnarvon",
+      "sourceTitle": "Instituto Griffith · ficha del mecenas y archivo arqueológico",
+      "reviewedAt": "2026-11-16"
+    },
+    "f53-daniken": {
+      "text": "Erich von Däniken (nacido en 1935) es un autor suizo que popularizó especulaciones sobre hipotéticas visitas extraterrestres a civilizaciones antiguas. Su primer libro, Erinnerungen an die Zukunft, apareció en 1968 y se difundió internacionalmente como Chariots of the Gods?. Su papel en la historia de la divulgación de teorías de antiguos astronautas está documentado bibliográficamente; su interpretación de monumentos como prueba de contactos extraterrestres no queda validada por el hecho de que el libro se publicara.",
+      "source": "https://daniken.com/bibliografie/",
+      "sourceTitle": "Bibliografía oficial del autor · origen de la publicación de 1968",
+      "reviewedAt": "2026-11-16"
     }
   }
 };

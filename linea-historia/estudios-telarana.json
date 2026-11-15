@@ -5032,6 +5032,70 @@
         ],
         "methodologicalLimits": "Fuente periodística sobre una resolución judicial: no se ha verificado aquí la firmeza final de la sentencia ni eventuales recursos posteriores. El dato es posterior al episodio y no avala hipótesis sobre autoría rusa."
       }
+    },
+    {
+      "id": "study-f53-carter-antecámara-1922",
+      "y": 1922.9027397260274,
+      "t": "Howard Carter observa la antecámara de la tumba de Tutankamón",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F53 · diario de excavación conservado en Oxford",
+      "d": "El 26 de noviembre de 1922 Howard Carter perforó una abertura en la segunda puerta sellada y pudo observar por primera vez el contenido de la antecámara de la tumba de Tutankamón, semanas después de que sus excavadores localizaran la escalera el 4 de noviembre. El Instituto Griffith conserva el diario de campo y diferencia ambos momentos del hallazgo.",
+      "g": [
+        "África"
+      ],
+      "p": [
+        "EGY"
+      ],
+      "investigation": {
+        "sourceOrder": 53,
+        "sourceTitle": "F53 · Pirámides y antiguo Egipto · Tito Vivas",
+        "sourceUrl": "https://www.youtube.com/watch?v=yhHoetTIARc",
+        "status": "hecho_documentado",
+        "date": "1922-11-26",
+        "datePrecision": "día",
+        "confirmedBy": {
+          "label": "Griffith Institute (Oxford) · diario de Howard Carter",
+          "url": "https://www.griffith.ox.ac.uk/discoveringTut/journals-and-diaries/season-1/journal.html"
+        },
+        "relatedTelarana": [
+          "f39-howard-carter",
+          "f39-tutankamon",
+          "f53-carnarvon"
+        ],
+        "methodologicalLimits": "El archivo documental distingue apertura de la antecámara, descubrimiento de la escalera y apertura posterior de la cámara funeraria. Este evento es contexto externo y no prueba las interpretaciones del invitado ni diagnósticos retrospectivos."
+      }
+    },
+    {
+      "id": "study-f53-daniken-libro-1968",
+      "y": 1968,
+      "t": "Publicación original de Recuerdos del futuro de Erich von Däniken",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F53 · contexto bibliográfico",
+      "d": "En 1968 se publicó en Alemania Erinnerungen an die Zukunft, la obra de Erich von Däniken difundida internacionalmente como Chariots of the Gods?. Su publicación impulsó interpretaciones populares sobre presuntas visitas extraterrestres en la Antigüedad. Se documenta la fecha editorial, sin presentar la hipótesis de antiguos astronautas como explicación arqueológica probada.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "DEU"
+      ],
+      "investigation": {
+        "sourceOrder": 53,
+        "sourceTitle": "F53 · Pirámides y antiguo Egipto · Tito Vivas",
+        "sourceUrl": "https://www.youtube.com/watch?v=yhHoetTIARc",
+        "status": "hecho_documentado",
+        "date": "1968",
+        "datePrecision": "año",
+        "confirmedBy": {
+          "label": "Open Library · registro bibliográfico de edición original alemana",
+          "url": "https://openlibrary.org/books/OL5158667M/Chariots_of_the_gods"
+        },
+        "relatedTelarana": [
+          "f53-daniken",
+          "f53-carros-dioses",
+          "f53-antiguos-astronautas"
+        ],
+        "methodologicalLimits": "La fecha procede de la edición bibliográfica, no de un minutaje verificado del vídeo. La existencia y recepción comercial del libro no demuestran sus hipótesis, que siguen siendo especulativas."
+      }
     }
   ]
 }
