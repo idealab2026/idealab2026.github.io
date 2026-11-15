@@ -493,7 +493,60 @@ body.graph-expanded{overflow:hidden}
  .top-controls-tab{padding:8px 11px}
 }
 @media(max-width:450px){.top-controls .toolbar .search{flex-basis:210px}.top-controls .toolbar .btn{padding:9px 11px}}
-</style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><div class="header-right"><a class="back" href="/">← Todos los proyectos</a><img class="header-telarana-icon" src="./icon.svg" width="50" height="50" alt="La Telaraña"></div></header>
+
+/* Cabecera de producto coherente con España en Datos: título, sello y navegación horizontal. */
+.site-header{position:sticky;top:0;z-index:45;display:block;flex-wrap:nowrap;padding:0;background:#fff;border-bottom:1px solid #d6dfe8;box-shadow:0 2px 12px #081b3210;color:#142f50}
+.site-header-inner{max-width:1920px;min-height:90px;margin:0 auto;padding:13px clamp(17px,2.6vw,48px);display:flex;align-items:center;gap:clamp(15px,1.6vw,28px);min-width:0}
+.site-identity{display:flex;align-items:center;flex:0 0 auto;gap:17px;white-space:nowrap;min-width:0}
+.site-name{font:700 clamp(24px,1.85vw,32px)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.035em;color:#102c50;text-decoration:none}
+.site-name:hover{color:#0a638a}
+.site-product{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:670;letter-spacing:.01em;color:#67778e}
+.site-product a{display:inline-flex;align-items:center;flex:0 0 auto;line-height:0}
+.site-product img{display:block;width:112px;height:auto;max-height:30px}
+.site-nav{display:flex;align-items:center;justify-content:flex-end;flex:1 1 auto;gap:clamp(13px,1.25vw,24px);min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;overscroll-behavior-x:contain;white-space:nowrap}
+.site-nav-link{font:680 clamp(13px,.95vw,16px)/1.25 Inter,system-ui,sans-serif;color:#50617b;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:43px;white-space:nowrap;background:none;border:0;border-radius:5px;padding:4px 0;text-decoration:none;cursor:pointer}
+.site-nav-link:hover,.site-nav-link:focus-visible,.site-nav-link.is-current,.site-nav-link[aria-expanded="true"]{color:#102d50}
+.site-nav-link.is-current{font-weight:850}
+.site-nav-link[aria-expanded="true"]{text-decoration:underline;text-decoration-color:#dc9d38;text-underline-offset:7px}
+.site-nav-projects span{font-size:.8rem;margin-left:5px;color:#75869a}
+.site-header .header-telarana-icon{width:48px;height:48px;flex:0 0 48px;margin-left:4px;object-fit:contain}
+.site-header a:focus-visible,.site-header button:focus-visible{outline:2px solid #c5893e;outline-offset:3px}
+#graph-panel,#rankings-panel,#sources-directory,#gallery{scroll-margin-top:104px}
+@media(max-width:1160px){
+ .site-header-inner{gap:12px;min-height:78px;padding:10px 17px}
+ .site-identity{gap:10px}
+ .site-name{font-size:25px}
+ .site-product{font-size:12px}
+ .site-product img{width:88px}
+ .site-nav{justify-content:flex-start;gap:15px}
+ .site-nav-link{font-size:13px}
+ .site-header .header-telarana-icon{width:42px;height:42px;flex-basis:42px}
+}
+@media(max-width:700px){
+ .site-header-inner{min-height:67px;gap:9px;padding:9px 11px}
+ .site-identity{gap:6px}
+ .site-name{font-size:21px}
+ .site-product span{display:none}
+ .site-product img{width:31px;height:31px;object-fit:cover;object-position:left}
+ .site-product a{width:31px;overflow:hidden}
+ .site-nav{gap:13px}
+ .site-nav-link{font-size:12px;min-height:34px}
+ .site-header .header-telarana-icon{width:34px;height:34px;flex-basis:34px;margin-left:0}
+ #graph-panel,#rankings-panel,#sources-directory,#gallery{scroll-margin-top:75px}
+}
+</style></head><body><header class="site-header" id="site-header"><div class="site-header-inner">
+<div class="site-identity"><a href="#graph-panel" class="site-name" id="header-map-home" aria-label="La Telaraña · Mapa relacional">La Telaraña</a>
+<div class="site-product"><span>Un producto de</span><a href="/" title="IDEA LAB · Todos los proyectos"><img src="/logo-idea-lab.svg" width="112" height="27" alt="IDEA LAB"></a></div></div>
+<nav class="site-nav" aria-label="Navegación principal de La Telaraña">
+<a href="#graph-panel" class="site-nav-link is-current" id="header-map" aria-current="page">Mapa relacional</a>
+<button type="button" class="site-nav-link" id="header-rankings" aria-controls="rankings-panel" aria-expanded="false">Rankings</button>
+<button type="button" class="site-nav-link" id="header-sources" aria-controls="sources-directory" aria-expanded="false">Fuentes</button>
+<button type="button" class="site-nav-link" id="header-photos" aria-controls="gallery" aria-pressed="false">Fotografías</button>
+<a class="site-nav-link" href="/linea-historia/">Línea de la Historia</a>
+<a class="site-nav-link site-nav-projects" href="/">Más proyectos <span aria-hidden="true">⌄</span></a>
+</nav>
+<img class="header-telarana-icon" src="./icon.svg" width="48" height="48" alt="Emblema de La Telaraña">
+</div></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="top-controls" role="group" aria-label="Navegación y búsqueda de La Telaraña">
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -934,7 +987,7 @@ async function hydrateWikipediaPhotos(){
 }
 function getNode(id){return data.nodes.find(function(n){return n.id===id})}
 function pointPos(n){return{x:Number(n.x)||150,y:Number(n.y)||150}}
-function setView(){var g=view==="graph";$("network").classList.toggle("hidden",!g||dimensionMode==="3d");$("stage3d").classList.toggle("hidden",!g||dimensionMode!=="3d");$("gallery").classList.toggle("hidden",g);$("zoom").classList.toggle("hidden",!g);$("legend").classList.toggle("hidden",!g);$("three-toolbar").classList.toggle("hidden",!g);$("theme3d").disabled=dimensionMode!=="3d";$("mode").textContent=g?"Ver panel de fotografías":"Ver mapa relacional";$("view-title").textContent=g?(dimensionMode==="3d"?"Mapa relacional 3D":"Mapa relacional 2D"):"Panel fotográfico";$("dimension-toggle").textContent=dimensionMode==="3d"?"Vista 2D":"Vista 3D"}
+function setView(){var g=view==="graph";if(typeof syncProductHeader==="function"&&$("header-map"))syncProductHeader();$("network").classList.toggle("hidden",!g||dimensionMode==="3d");$("stage3d").classList.toggle("hidden",!g||dimensionMode!=="3d");$("gallery").classList.toggle("hidden",g);$("zoom").classList.toggle("hidden",!g);$("legend").classList.toggle("hidden",!g);$("three-toolbar").classList.toggle("hidden",!g);$("theme3d").disabled=dimensionMode!=="3d";$("mode").textContent=g?"Ver panel de fotografías":"Ver mapa relacional";$("view-title").textContent=g?(dimensionMode==="3d"?"Mapa relacional 3D":"Mapa relacional 2D"):"Panel fotográfico";$("dimension-toggle").textContent=dimensionMode==="3d"?"Vista 2D":"Vista 3D"}
 // Priorizar nombres; una mención en notas no debe eclipsar a la persona buscada.
 function searchCandidates(q){
  var key=normalizeEntityName(q);if(!key)return[];
@@ -1897,6 +1950,39 @@ $("rank-entities-tab").addEventListener("click",function(){setRankView("entities
 $("rank-relations-tab").addEventListener("click",function(){setRankView("relations")});
 $("rank-scope").addEventListener("change",updateRankings);
 $("rank-limit").addEventListener("change",updateRankings);
+function syncProductHeader(){
+ var sources=$("sources-directory").open,rankings=$("rankings-panel").open;
+ $("header-sources").setAttribute("aria-expanded",String(sources));
+ $("header-rankings").setAttribute("aria-expanded",String(rankings));
+ var photos=view==="gallery";
+ $("header-photos").setAttribute("aria-pressed",String(photos));
+ $("header-map").classList.toggle("is-current",!photos&&!sources&&!rankings);
+ if(!photos&&!sources&&!rankings)$("header-map").setAttribute("aria-current","page");
+ else $("header-map").removeAttribute("aria-current");
+}
+function moveToHeaderSection(target){
+ if(target&&target.scrollIntoView)target.scrollIntoView({behavior:"smooth",block:"start"});
+}
+$("header-sources").addEventListener("click",function(){
+ openTopPanel("sources");if($("sources-directory").open)moveToHeaderSection($("sources-directory"));
+});
+$("header-rankings").addEventListener("click",function(){
+ openTopPanel("rankings");if($("rankings-panel").open)moveToHeaderSection($("rankings-panel"));
+});
+$("header-photos").addEventListener("click",function(){
+ if(view!=="gallery")$("mode").click();
+ moveToHeaderSection($("graph-panel"));
+ syncProductHeader();
+});
+function showMapFromHeader(){
+ if(view!=="graph")$("mode").click();
+ if($("sources-directory").open)$("sources-directory").open=false;
+ if($("rankings-panel").open)$("rankings-panel").open=false;
+ syncTopControls();syncProductHeader();
+ moveToHeaderSection($("graph-panel"));
+}
+$("header-map").addEventListener("click",showMapFromHeader);
+$("header-map-home").addEventListener("click",showMapFromHeader);
 function syncTopControls(){
  var rank=$("rankings-panel"),sources=$("sources-directory");
  [
@@ -1906,6 +1992,7 @@ function syncTopControls(){
   pair[0].setAttribute("aria-expanded",String(pair[1]));
   pair[0].classList.toggle("is-active",pair[1]);
  });
+ syncProductHeader();
 }
 function openTopPanel(which){
  var target=$(which==="rankings"?"rankings-panel":"sources-directory");
