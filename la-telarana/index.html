@@ -503,6 +503,7 @@ body.graph-expanded{overflow:hidden}
 .site-product{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:670;letter-spacing:.01em;color:#67778e}
 .site-product a{display:inline-flex;align-items:center;flex:0 0 auto;line-height:0}
 .site-product img{display:block;width:112px;height:auto;max-height:30px}
+.site-menu-toggle{display:none;align-items:center;justify-content:center;gap:9px;flex:0 0 auto;border:1px solid #b8c7d5;border-radius:7px;background:#fff;color:#234262;padding:8px 10px;font:730 13px/1.2 Inter,system-ui,sans-serif;cursor:pointer}
 .site-nav{display:flex;align-items:center;justify-content:flex-end;flex:1 1 auto;gap:clamp(13px,1.25vw,24px);min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;overscroll-behavior-x:contain;white-space:nowrap}
 .site-nav-link{font:680 clamp(13px,.95vw,16px)/1.25 Inter,system-ui,sans-serif;color:#50617b;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:43px;white-space:nowrap;background:none;border:0;border-radius:5px;padding:4px 0;text-decoration:none;cursor:pointer}
 .site-nav-link:hover,.site-nav-link:focus-visible,.site-nav-link.is-current,.site-nav-link[aria-expanded="true"]{color:#102d50}
@@ -529,15 +530,19 @@ body.graph-expanded{overflow:hidden}
  .site-product span{display:none}
  .site-product img{width:31px;height:31px;object-fit:cover;object-position:left}
  .site-product a{width:31px;overflow:hidden}
- .site-nav{gap:13px}
- .site-nav-link{font-size:12px;min-height:34px}
+ .site-menu-toggle{display:inline-flex;margin-left:auto}
+ .site-nav{display:none;position:absolute;top:calc(100% - 1px);left:9px;right:9px;min-width:0;max-height:min(72dvh,480px);overflow-x:hidden;overflow-y:auto;flex:unset;flex-direction:column;align-items:stretch;gap:0;padding:8px;border:1px solid #ccdae7;border-radius:0 0 12px 12px;background:#fff;box-shadow:0 16px 28px #081b3230}
+ .site-nav.is-open{display:flex}
+ .site-nav-link{justify-content:flex-start;font-size:14px;min-height:45px;padding:10px 13px;border-bottom:1px solid #eef2f6}
+ .site-nav-link:last-child{border-bottom:0}
  .site-header .header-telarana-icon{width:34px;height:34px;flex-basis:34px;margin-left:0}
  #graph-panel,#rankings-panel,#sources-directory,#gallery{scroll-margin-top:75px}
 }
 </style></head><body><header class="site-header" id="site-header"><div class="site-header-inner">
 <div class="site-identity"><a href="#graph-panel" class="site-name" id="header-map-home" aria-label="La Telaraña · Mapa relacional">La Telaraña</a>
 <div class="site-product"><span>Un producto de</span><a href="/" title="IDEA LAB · Todos los proyectos"><img src="/logo-idea-lab.svg" width="112" height="27" alt="IDEA LAB"></a></div></div>
-<nav class="site-nav" aria-label="Navegación principal de La Telaraña">
+<button type="button" class="site-menu-toggle" id="header-menu-toggle" aria-controls="site-nav" aria-expanded="false">Menú <span aria-hidden="true">☰</span></button>
+<nav class="site-nav" id="site-nav" aria-label="Navegación principal de La Telaraña">
 <a href="#graph-panel" class="site-nav-link is-current" id="header-map" aria-current="page">Mapa relacional</a>
 <button type="button" class="site-nav-link" id="header-rankings" aria-controls="rankings-panel" aria-expanded="false">Rankings</button>
 <button type="button" class="site-nav-link" id="header-sources" aria-controls="sources-directory" aria-expanded="false">Fuentes</button>
@@ -1950,6 +1955,23 @@ $("rank-entities-tab").addEventListener("click",function(){setRankView("entities
 $("rank-relations-tab").addEventListener("click",function(){setRankView("relations")});
 $("rank-scope").addEventListener("change",updateRankings);
 $("rank-limit").addEventListener("change",updateRankings);
+function setHeaderMenu(open){
+ var menu=$("site-nav"),toggle=$("header-menu-toggle");
+ menu.classList.toggle("is-open",Boolean(open));
+ toggle.setAttribute("aria-expanded",String(Boolean(open)));
+}
+$("header-menu-toggle").addEventListener("click",function(){
+ setHeaderMenu($("header-menu-toggle").getAttribute("aria-expanded")!=="true");
+});
+$("site-nav").addEventListener("click",function(event){
+ if(event.target.closest&&event.target.closest("a,button"))setHeaderMenu(false);
+});
+document.addEventListener("keydown",function(event){
+ if(event.key==="Escape")setHeaderMenu(false);
+});
+document.addEventListener("click",function(event){
+ if(!$("site-header").contains(event.target))setHeaderMenu(false);
+});
 function syncProductHeader(){
  var sources=$("sources-directory").open,rankings=$("rankings-panel").open;
  $("header-sources").setAttribute("aria-expanded",String(sources));
