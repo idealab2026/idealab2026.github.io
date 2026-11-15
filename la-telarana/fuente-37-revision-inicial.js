@@ -1,15 +1,15 @@
-/* F37: revisión parcial sobre Göbekli Tepe sin cotejo de audio. */
+/* F37: revisión documental parcial ampliada sin cotejo de audio. */
 window.IDEA_TELARANA_F37_REVIEW = {
   "metadata": {
     "id": "idealab-f37-buen-salvaje",
     "sourceOrder": 37,
     "title": "F37 · El buen salvaje y el origen del cuento humano",
     "url": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
-    "reviewStage": "primera_revision_parcial_sin_audio",
+    "reviewStage": "revision_documental_ampliada_parcial_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial de un pasaje del texto automático sin audio, voces ni integridad cotejados. La datación arqueológica es un intervalo aproximado, no una fecha de construcción exacta."
+    "methodologicalNote": "Ampliación del análisis: arqueología, clima, patentes y opiniones sobre creencias; sin minutajes, audio o identificación de voces cotejados. La datación de Göbekli Tepe es aproximada."
   },
   "nodes": [
     {
@@ -56,6 +56,15 @@ window.IDEA_TELARANA_F37_REVIEW = {
           "timeSec": null,
           "status": "contraste_documental_institucional",
           "text": "UNESCO sitúa las estructuras principales aproximadamente entre 9600 y 8200 a. C. y describe pilares en T con animales silvestres. La función ritual es una interpretación arqueológica, no un hecho cerrado."
+        },
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "La fuente describe monumentos, relieves de animales y el contexto de cazadores-recolectores. UNESCO sitúa el lugar en el Neolítico precerámico; su función y organización social siguen investigándose.",
+          "transcriptSearch": "cazadores recolectores"
         }
       ]
     },
@@ -80,6 +89,228 @@ window.IDEA_TELARANA_F37_REVIEW = {
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": []
+    },
+    {
+      "id": "f38-william-miller",
+      "name": "William Miller",
+      "kind": "Persona",
+      "subtitle": "Participante en F37 y F38",
+      "note": "La transcripción lo presenta como invitado. Sin cotejar audio ni turnos; sus opiniones no se presentan como hechos establecidos.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "La transcripción presenta al invitado y su visión sobre historia, religiones y misterio. La literalidad y la atribución de voces requieren cotejo de audio.",
+          "transcriptSearch": "William Miller"
+        }
+      ]
+    },
+    {
+      "id": "f39-atlantida",
+      "name": "Atlántida",
+      "kind": "Tema",
+      "subtitle": "Relato y conjeturas",
+      "note": "La entrevista expresa cautela sobre una civilización tecnológicamente avanzada y la necesidad de vestigios. La existencia de una civilización mundial no queda demostrada.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "En la conversación se plantea la Atlántida y se expresa escepticismo sobre una civilización avanzada sin registro material adecuado. No se presenta como descubrimiento.",
+          "transcriptSearch": "civilización perdida"
+        }
+      ]
+    },
+    {
+      "id": "f37-clima",
+      "name": "Cambio climático contemporáneo",
+      "kind": "Tema",
+      "subtitle": "Observaciones y causas",
+      "note": "El IPCC atribuye inequívocamente el calentamiento observado a actividades humanas, principalmente emisiones de gases de efecto invernadero.",
+      "source": "https://www.ipcc.ch/report/ar6/syr/longer-report/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "La conversación reconoce cambios climáticos pasados y plantea la influencia humana como un posible empujón. El IPCC concluye que las actividades humanas han causado inequívocamente el calentamiento reciente.",
+          "transcriptSearch": "empujón"
+        }
+      ]
+    },
+    {
+      "id": "f37-ipcc",
+      "name": "Grupo Intergubernamental de Expertos sobre el Cambio Climático",
+      "kind": "Institución",
+      "subtitle": "Evaluación científica",
+      "note": "Su informe de síntesis de 2023 evalúa causas, impactos y respuestas al cambio climático.",
+      "source": "https://www.ipcc.ch/report/ar6/syr/longer-report/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-volcanes",
+      "name": "Volcanismo y clima",
+      "kind": "Tema",
+      "subtitle": "Procesos geológicos y atmosféricos",
+      "note": "Las erupciones pueden influir en el clima; las emisiones volcánicas de CO₂ actuales son mucho menores que las humanas. No sustentan la explicación principal del calentamiento reciente.",
+      "source": "https://www.usgs.gov/programs/vhp/volcanoes-can-affect-climate",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "La transcripción propone calor interno, volcanismo y cambios del eje como explicación general. El USGS y el IPCC no respaldan esa cadena como explicación principal del calentamiento actual.",
+          "transcriptSearch": "un volcán"
+        }
+      ]
+    },
+    {
+      "id": "f37-usgs",
+      "name": "Servicio Geológico de Estados Unidos",
+      "kind": "Institución",
+      "subtitle": "Geología y volcanismo",
+      "note": "El USGS documenta las contribuciones volcánicas al clima y compara emisiones de dióxido de carbono.",
+      "source": "https://www.usgs.gov/programs/vhp/volcanoes-can-affect-climate",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-sahara",
+      "name": "Período húmedo africano",
+      "kind": "Tema",
+      "subtitle": "Paleoclima regional",
+      "note": "En zonas del Sáhara existieron lagos y vegetación durante un período más húmedo; la evidencia regional no prueba una inundación global simultánea.",
+      "source": "https://eol.jsc.nasa.gov/Collections/EarthObservatory/articles/OuniangaLakesSaharaDesertChad.htm",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "Se menciona que regiones hoy desérticas tuvieron condiciones distintas. NASA documenta un período húmedo en el Sáhara; eso no prueba que todas las inundaciones antiguas fueran un mismo evento mundial.",
+          "transcriptSearch": "desiertos"
+        }
+      ]
+    },
+    {
+      "id": "f37-diluvio",
+      "name": "Relatos de inundaciones",
+      "kind": "Tema",
+      "subtitle": "Tradiciones y paleoclima",
+      "note": "La conversación especula sobre inundaciones y cambios ambientales. Las historias culturales no demuestran por sí solas un único cataclismo global simultáneo.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "La conversación considera relatos de cataclismos y especula sobre cambios ambientales compartidos; una similitud narrativa no acredita simultaneidad global.",
+          "transcriptSearch": "universal"
+        }
+      ]
+    },
+    {
+      "id": "f40-akhenaten",
+      "name": "Akenatón (Amenhotep IV)",
+      "kind": "Persona",
+      "subtitle": "Faraón del Egipto antiguo",
+      "note": "El Met documenta la reforma del culto oficial y el traslado a Ajetatón; las motivaciones políticas exactas y una supuesta eliminación requieren pruebas independientes.",
+      "source": "https://resources.metmuseum.org/resources/metpublications/pdf/Ancient_Art_The_Metropolitan_Museum_of_Art_Bulletin_v_49_no_4_Spring_1992.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "Se citan la reforma religiosa y una nueva capital. El Met documenta el culto a Atón y Ajetatón; la hipótesis de lucha por poder y la frase sobre quitarlo de en medio no se dan por probadas.",
+          "transcriptSearch": "akenaton"
+        }
+      ]
+    },
+    {
+      "id": "f37-aten",
+      "name": "Atón",
+      "kind": "Concepto",
+      "subtitle": "Culto solar en el Egipto antiguo",
+      "note": "Durante el reinado de Akenatón el culto oficial se reorganizó en torno a Atón, representado por el disco solar.",
+      "source": "https://resources.metmuseum.org/resources/metpublications/pdf/Ancient_Art_The_Metropolitan_Museum_of_Art_Bulletin_v_49_no_4_Spring_1992.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-patentes",
+      "name": "Patentes y prueba experimental",
+      "kind": "Tema",
+      "subtitle": "Solicitudes y resultados",
+      "note": "La oficina de patentes distingue ejemplos realizados de ejemplos predictivos; una solicitud o concesión no demuestra por sí misma un aparato operativo ni origen extraterrestre.",
+      "source": "https://www.uspto.gov/web/offices/pac/mpep/s2164.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "Se afirma que ciertas patentes implicarían motores avanzados y tecnología encontrada. Sin identificar expedientes concretos ni pruebas independientes esa conclusión no se sostiene; una patente puede describir ejemplos predictivos.",
+          "transcriptSearch": "patentes"
+        }
+      ]
+    },
+    {
+      "id": "f37-ovnis",
+      "name": "Fenómenos aéreos y vida extraterrestre",
+      "kind": "Tema",
+      "subtitle": "Hipótesis y evidencia",
+      "note": "Los participantes expresan interés y especulaciones; la ausencia de explicación de un caso no demuestra su origen extraterrestre.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · pasaje sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "La charla expresa afición y especulaciones sobre visitas extraterrestres. Sus participantes también reconocen que algunas ideas carecen de base científica; no se atribuye una conclusión probada.",
+          "transcriptSearch": "pseudo teorías"
+        }
+      ]
     }
   ],
   "edges": [
@@ -114,6 +345,171 @@ window.IDEA_TELARANA_F37_REVIEW = {
       "claimStatus": "hecho_documentado_fuente_primaria",
       "note": "El instituto participó en la investigación y excavaciones del yacimiento.",
       "source": "https://www.dainst.org/blogs/goebekli-tepe-the-first-20-years-of-research/630",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f38-william-miller",
+      "a": "f37-episodio",
+      "b": "f38-william-miller",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f39-atlantida",
+      "a": "f37-episodio",
+      "b": "f39-atlantida",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-clima",
+      "a": "f37-episodio",
+      "b": "f37-clima",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-ipcc",
+      "a": "f37-episodio",
+      "b": "f37-ipcc",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-volcanes",
+      "a": "f37-episodio",
+      "b": "f37-volcanes",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-usgs",
+      "a": "f37-episodio",
+      "b": "f37-usgs",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-sahara",
+      "a": "f37-episodio",
+      "b": "f37-sahara",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-diluvio",
+      "a": "f37-episodio",
+      "b": "f37-diluvio",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f40-akhenaten",
+      "a": "f37-episodio",
+      "b": "f40-akhenaten",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-aten",
+      "a": "f37-episodio",
+      "b": "f37-aten",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-patentes",
+      "a": "f37-episodio",
+      "b": "f37-patentes",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ampliacion-mencion-f37-ovnis",
+      "a": "f37-episodio",
+      "b": "f37-ovnis",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista; la transcripción automática y la atribución de voces requieren cotejo con el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-ipcc-clima",
+      "a": "f37-ipcc",
+      "b": "f37-clima",
+      "type": "Evaluación científica",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documentado",
+      "note": "El IPCC evalúa las causas y consecuencias del cambio climático.",
+      "source": "https://www.ipcc.ch/report/ar6/syr/longer-report/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-usgs-volcanes",
+      "a": "f37-usgs",
+      "b": "f37-volcanes",
+      "type": "Investigación geológica",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documentado",
+      "note": "El USGS explica las contribuciones volcánicas y humanas al CO₂.",
+      "source": "https://www.usgs.gov/programs/vhp/volcanoes-can-affect-climate",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-akhenaten-aten",
+      "a": "f40-akhenaten",
+      "b": "f37-aten",
+      "type": "Reforma del culto oficial",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documentado",
+      "note": "El museo documenta el culto oficial al disco solar durante el reinado de Akenatón.",
+      "source": "https://resources.metmuseum.org/resources/metpublications/pdf/Ancient_Art_The_Metropolitan_Museum_of_Art_Bulletin_v_49_no_4_Spring_1992.pdf",
       "podcastNotes": []
     }
   ]

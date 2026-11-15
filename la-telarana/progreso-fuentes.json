@@ -1520,20 +1520,20 @@
       "videoId": "-5HzKQ9amDw",
       "title": "#108// ¿Crees en el  buen salvaje? El origen del cuento humano  con William Miller.",
       "sourceUrl": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "revision_documental_ampliada_parcial_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-37-revision-inicial.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 4,
-      "sourceRelationsDocumented": 3,
+      "sourceNodesDocumented": 16,
+      "sourceRelationsDocumented": 18,
       "personsProfiled": 0,
-      "documentaryChecks": 2,
+      "documentaryChecks": 7,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Un pasaje sobre Göbekli Tepe; 1963 reconocimiento del yacimiento, 1994 reidentificación de estructuras, 1995 excavación. Audio sin cotejar.",
-      "lastUpdated": "2026-11-14"
+      "qualityNotes": "Ampliada a clima, patentes y religión; se distinguen opiniones e hipótesis. Tiempos, voces e integridad siguen sin cotejo de audio.",
+      "lastUpdated": "2026-11-15"
     },
     {
       "order": 38,
@@ -4898,7 +4898,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 36,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "revision_documental_ampliada_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -4909,7 +4909,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4927,20 +4927,20 @@
           "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 8,
-          "state": "primera_revision_parcial",
+          "percent": 20,
+          "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 4,
-            "relations": 3,
+            "entities": 16,
+            "relations": 18,
             "biographies": 0,
-            "statements": 1,
-            "independentChecks": 2,
+            "statements": 10,
+            "independentChecks": 7,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Revisar el resto del texto; cotejar audio, voces y cronología prehistórica, sin dar hipótesis por hechos."
+          "nextAction": "Cotejar audio, voces e integridad; profundizar contrastes de paleoclima, religiones y afirmaciones tecnológicas."
         }
       },
       {
