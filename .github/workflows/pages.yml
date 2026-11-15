@@ -201,6 +201,11 @@ jobs:
         run: |
           mkdir -p dist
           cp index.html stats.js favicon.svg logo-idea-lab.svg icon-180.svg social-preview.svg dist/
+          mkdir -p dist/project-icons
+          cp project-icons/*.svg dist/project-icons/
+          for icon in espana-en-datos larealidad psicohistoria midas biblioteca-montecristo; do
+            test -s "dist/project-icons/${icon}.svg"
+          done
           mkdir -p dist/data
           cp data/traffic.json dist/data/traffic.json
           cp data/traffic-snapshot.json dist/data/traffic-snapshot.json

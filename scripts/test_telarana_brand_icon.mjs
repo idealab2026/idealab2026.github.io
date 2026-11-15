@@ -17,9 +17,10 @@ assert(icon.length<10000,"El favicon no debe resultar pesado");
 
 const iconPath="/la-telarana/icon.svg";
 assert(home.includes('src="'+iconPath+'"'),"La tarjeta de La Telaraña debe usar el icono del proyecto");
-const homeCard=home.match(/<article class="card"><div class="cardtop with-project-icon">[\s\S]*?<\/article>/);
-assert(homeCard&&homeCard[0].includes("<h3>La Telaraña</h3>"),"Emblema en la tarjeta correcta");
-assert(homeCard[0].includes('src="'+iconPath+'"'),"Mismo icono en la portada");
+const homeCards=[...home.matchAll(/<article class="card">[\s\S]*?<\/article>/g)].map(m=>m[0]);
+const homeCard=homeCards.find(card=>card.includes("<h3>La Telaraña</h3>"));
+assert(homeCard,"Emblema en la tarjeta correcta");
+assert(homeCard.includes('src="'+iconPath+'"'),"Mismo icono en la portada");
 assert(home.includes(".project-icon-title img"),"Tamaño estable de miniatura en la página principal");
 assert(home.includes('width="60" height="60"'),"Miniatura principal en formato compacto");
 
