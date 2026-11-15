@@ -8,12 +8,16 @@ const workflow=fs.readFileSync(".github/workflows/pages.yml","utf8");
 const css=html.split("<style>")[1]?.split("</style>")[0]||"";
 
 function rule(selector){
- const needle=selector+"{",i=css.indexOf(needle);
- assert(i>=0,"No se encuentra selector "+selector);
- return css.slice(i,css.indexOf("}",i)+1);
+ // Buscar el inicio exacto del selector: el estado activo también aparece dentro de una lista
+ // de selectores combinados y no debe confundirse con esa otra declaración.
+ const line=css.split("\n").find(line=>line.trimStart().startsWith(selector+"{"));
+ assert(line,"No se encuentra regla independiente de "+selector);
+ return line.slice(line.indexOf("{"),line.indexOf("}")+1);
 }
 const header=rule(".site-header"),name=rule(".site-name"),product=rule(".site-product"),nav=rule(".site-nav-link");
-const navOpen=rule('.site-nav-link[aria-expanded="true"]'),active=rule(".site-nav-link.is-current"),mobile=rule(" .site-nav");
+const navOpen=rule('.site-nav-link[aria-expanded="true"]'),active=rule(".site-nav-link.is-current");
+const mobile=css.split("\n").find(line=>line.startsWith(" .site-nav{display:none;"));
+assert(mobile,"Falta declaración de menú móvil");
 assert(header.includes("background:linear-gradient(180deg,#182c3b 0%,#102131 100%)"),"Cabecera azul petróleo");
 assert(header.includes("border-bottom:1px solid #324b60"),"Contorno integrado con la web");
 assert(!header.includes("background:#fff"),"No debe volver el fondo blanco");
