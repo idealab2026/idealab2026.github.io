@@ -35,12 +35,12 @@ for(const [order,file,key] of files){
 assert(html.includes('id="search-results"'),"El buscador debe informar de coincidencias");
 assert(html.includes("function searchCandidates(q)"),"Falta búsqueda por identidad");
 assert(html.includes("focusOnSearchEntity"),"Falta selección y centrado");
-assert(html.includes("Incorporaciones recientes"),"Faltan accesos directos");
-assert(html.includes('data-recent-id="f18-lorenzo"'),"Falta acceso a Lorenzo");
+assert(!html.includes("Incorporaciones recientes"),"El bloque de incorporaciones recientes no debe reaparecer");
+assert(!html.includes("data-recent-id")&&!html.includes("recent-links"),"No debe quedar ningún enlace rápido eliminado");
 assert(graph.includes("focusNode(id)"),"Falta centrado 3D");
 for(const n of [9,10,11,12,13,14,16,17,19,20,22,23,24,25]){
  const filename=n===9?"fuente-09-villarejo-revision.js":"fuente-"+n+"-revision-inicial.js";
  assert(html.includes(filename),"La página no importa fuente "+n);
 }
 assert(!html.includes("progreso-fuentes.json"),"Nunca publicar inventario interno");
-console.log("OK: Lorenzo en fuentes 18 y 21, "+totalEntities+" fichas fuente, buscador visible, acceso directo y distribución comprobada");
+console.log("OK: Lorenzo en fuentes 18 y 21, "+totalEntities+" fichas fuente, buscador disponible y acceso rápido retirado.");
