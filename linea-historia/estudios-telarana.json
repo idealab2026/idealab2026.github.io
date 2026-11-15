@@ -4745,6 +4745,38 @@
         ],
         "methodologicalLimits": "Se acredita el año de inscripción de festividades contemporáneas, no la historicidad del viaje antiguo ni un día de inscripción no verificado."
       }
+    },
+    {
+      "id": "study-f60-balfour-1917",
+      "y": 1917.835616438356,
+      "t": "Declaración Balfour sobre un hogar nacional judío",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 60 · documento británico",
+      "d": "El 2 de noviembre de 1917 Arthur Balfour transmitió la declaración británica favorable a un hogar nacional judío en Palestina, con una cláusula relativa a los derechos civiles y religiosos de las comunidades no judías.",
+      "g": [
+        "Asia"
+      ],
+      "p": [
+        "PSE"
+      ],
+      "investigation": {
+        "sourceOrder": 60,
+        "sourceTitle": "F60 · Historia del conflicto israelí-palestino",
+        "sourceUrl": "https://www.youtube.com/watch?v=DvcxNoF2MCU",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1917-11-02",
+        "confirmedBy": {
+          "label": "Texto de la declaración · archivo de la ONU",
+          "url": "https://www.un.org/unispal/document/auto-insert-193242/"
+        },
+        "relatedTelarana": [
+          "f60-episodio",
+          "f60-balfour",
+          "f56-mandato"
+        ],
+        "methodologicalLimits": "Se fecha la carta y su contenido, no la creación de un Estado. Los compromisos británicos con dirigentes árabes y su alcance territorial tienen historia e interpretaciones propias."
+      }
     }
   ]
 }
