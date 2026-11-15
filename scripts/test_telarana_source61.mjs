@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};
+vm.runInNewContext(read('la-telarana/fuente-61-influencia.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F61_REVIEW,ids=new Set(f.nodes.map(n=>n.id));
+assert.equal(f.metadata.reviewComplete,false);
+assert.equal(f.metadata.transcriptComplete,false);
+assert.equal(f.metadata.audioVerified,false);
+assert(f.nodes.flatMap(n=>n.podcastNotes).every(n=>n.timeSec===null));
+assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert.match(f.nodes.find(n=>n.id==='f61-medios').note,/no se identifica|no identifica/);
+assert.match(f.nodes.find(n=>n.id==='f61-poder-colectivo').note,/estereotipos falsos/);
+assert.match(f.nodes.find(n=>n.id==='f61-atribucion').note,/mitad de frase/);
+assert(read('la-telarana/index.html').includes('fuente-61-influencia.js'));
+assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-61-influencia.js'));
+console.log('OK: F61 conserva límites del fragmento y evita generalizaciones');

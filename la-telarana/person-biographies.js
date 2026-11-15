@@ -1246,6 +1246,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://open.spotify.com/episode/6VzBTCfWr8LAdg0FOn4vzx",
       "sourceTitle": "Ficha del episodio de WORLDCAST",
       "reviewedAt": "2026-11-15"
+    },
+    "f61-david-jimenez": {
+      "text": "David Jiménez es periodista y antiguo director de El Mundo. La ficha de The Wild Project lo identifica como invitado en una conversación sobre Israel y Gaza. El fragmento F61 se conserva con sus límites de transcripción y sin trasladar sus opiniones a colectivos enteros.",
+      "source": "https://podcasts.happyscribe.com/es/the-wild-project/netanyahu-es-un-criminal-de-guerra-david-jimenez-sobre-israel-fuera-de-control",
+      "sourceTitle": "Ficha de otra conversación de The Wild Project",
+      "reviewedAt": "2026-11-15"
     }
   }
 };
