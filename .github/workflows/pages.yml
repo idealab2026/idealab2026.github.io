@@ -286,6 +286,7 @@ jobs:
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
+          cp la-telarana/local-relations-2d.js dist/la-telarana/local-relations-2d.js
           cp la-telarana/rankings.js dist/la-telarana/rankings.js
           cp biblioteca-montecristo/app.js biblioteca-montecristo/styles.css biblioteca-montecristo/catalogo.json dist/biblioteca-montecristo/
           cp -R biblioteca-montecristo/infografias dist/biblioteca-montecristo/
@@ -354,6 +355,8 @@ jobs:
           grep -q "IDEA_TELARANA_LAYOUT_V2" dist/la-telarana/layout-seed-v2.js
           test -s dist/la-telarana/graph-3d.js
           node --check dist/la-telarana/graph-3d.js
+          test -s dist/la-telarana/local-relations-2d.js
+          node --check dist/la-telarana/local-relations-2d.js
           # Ninguna versión puede publicarse con scripts locales referenciados pero ausentes.
           node -e 'const fs=require("fs");const html=fs.readFileSync("dist/la-telarana/index.html","utf8");const names=[...html.matchAll(/<script[^>]*src="([^"]+)"/g)].map(m=>m[1]).filter(n=>n.startsWith("./")&&n.includes(".js")).map(n=>n.slice(2).split("?")[0]);if(names.length<20)throw Error("Lista de scripts inesperadamente corta: "+names.length);const missing=names.filter(n=>!fs.existsSync("dist/la-telarana/"+n));if(missing.length){console.error("Scripts de La Telaraña ausentes en Pages:",missing.join(", "));process.exit(1)}console.log("OK: "+names.length+" scripts referenciados y presentes")'
           for f in dist/la-telarana/fuente-*.js; do node --check "$f"; done
