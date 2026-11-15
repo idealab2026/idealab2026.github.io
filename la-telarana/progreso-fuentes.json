@@ -2020,19 +2020,19 @@
       "videoId": "vPaUnI8nhfU",
       "title": "La HISTORIA DESCONOCIDA de JESÚS DE NAZARET - Luis Antequera | Aladetres 130",
       "sourceUrl": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "revision_documental_ampliada_subtitulos_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-68-pasion.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 10,
-      "sourceRelationsDocumented": 9,
+      "sourceNodesDocumented": 16,
+      "sourceRelationsDocumented": 17,
       "personsProfiled": 0,
-      "documentaryChecks": 4,
+      "documentaryChecks": 7,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Revisión inicial acotada; contrastados Tácito, Suetonio, Juan 19 y Nostra aetate. Sin audio cotejado; no se atribuye al hablante una posible confusión de subtítulos.",
+      "qualityNotes": "Ampliada a cronología y fuentes de la natividad y límites de la identificación de la Síndone. Tiempos automáticos orientativos; audio y voces sin cotejar.",
       "lastUpdated": "2026-11-15"
     }
   ],
@@ -6538,7 +6538,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 67,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "revision_documental_ampliada_subtitulos_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -6564,23 +6564,24 @@
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
           "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
           "verifiedMinuteReferences": 0,
-          "audioMatched": false
+          "audioMatched": false,
+          "automaticYouTubeCaptionsAvailable": true
         },
         "analysisCoverage": {
-          "percent": 10,
-          "state": "primera_revision_parcial",
+          "percent": 15,
+          "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 10,
-            "relations": 9,
+            "entities": 16,
+            "relations": 17,
             "biographies": 0,
-            "statements": 6,
-            "independentChecks": 4,
+            "statements": 11,
+            "independentChecks": 7,
             "verifiedTimelineEvents": 0
           },
-          "nextAction": "Revisar íntegra la entrevista extensa, cotejar audio y contrastar interpretaciones y fuentes de la pasión."
+          "nextAction": "Cotejar audio y voces; revisar el resto de la entrevista y contrastar las narraciones y cronologías históricas."
         }
       },
       {
