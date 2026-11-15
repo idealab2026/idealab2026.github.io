@@ -1252,6 +1252,54 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://podcasts.happyscribe.com/es/the-wild-project/netanyahu-es-un-criminal-de-guerra-david-jimenez-sobre-israel-fuera-de-control",
       "sourceTitle": "Ficha de otra conversación de The Wild Project",
       "reviewedAt": "2026-11-15"
+    },
+    "f33-gutle": {
+      "text": "Gutle Rothschild (1753–1849), nacida Schnapper, contrajo matrimonio en Fráncfort con Mayer Amschel Rothschild en 1770 y fue madre de cinco hijos y cinco hijas que llegaron a la edad adulta. Vivió en la Judengasse y administró la economía familiar. Una investigación histórica independiente documenta su colaboración en la contabilidad doméstica y empresarial; no debe reducirse su trayectoria a una relación genealógica.",
+      "source": "https://family.rothschildarchive.org/people/209-gutle-rothschild-1753-1849",
+      "sourceTitle": "Rothschild Family · archivo genealógico vinculado",
+      "reviewedAt": "2026-11-15"
+    },
+    "f33-jeannette": {
+      "text": "Jeannette Rothschild (1771–1859) nació en Fráncfort y fue la primera hija de Mayer Amschel Rothschild y Gutle Schnapper. Según la genealogía del archivo familiar, en 1795 contrajo matrimonio con Benedict Moses Worms. El registro documenta su parentesco, cronología y matrimonio, pero no permite atribuirle sin más participación bancaria o influencia política.",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "sourceTitle": "Rothschild Archive · genealogía vinculada",
+      "reviewedAt": "2026-11-15"
+    },
+    "f33-isabella": {
+      "text": "Isabella Rothschild (1781–1861) fue hija de Gutle Schnapper y Mayer Amschel Rothschild. Contrajo matrimonio en 1802 con el empresario de Fráncfort Bernhard Juda Sichel. Según su ficha del archivo familiar, vivió en la misma ciudad cerca de su madre. Estos datos biográficos no suponen acreditar cargos financieros ni participación en las decisiones de las casas bancarias.",
+      "source": "https://family.rothschildarchive.org/people/26-isabella-rothschild-1781-1861",
+      "sourceTitle": "Rothschild Family · ficha biográfica vinculada",
+      "reviewedAt": "2026-11-15"
+    },
+    "f33-babette": {
+      "text": "Babette Rothschild (1784–1869) nació en Fráncfort, tercera hija de Mayer Amschel y Gutle. Se casó en 1808 con Siegmund Leopold Beyfus. El archivo familiar documenta descendientes relacionados con familias de negocios alemanas y su fallecimiento en Fráncfort, pero ese parentesco no demuestra por sí solo que Babette ejerciera un cargo en la firma bancaria Rothschild.",
+      "source": "https://family.rothschildarchive.org/people/27-babette-rothschild-1784-1869",
+      "sourceTitle": "Rothschild Family · ficha biográfica vinculada",
+      "reviewedAt": "2026-11-15"
+    },
+    "f33-julie": {
+      "text": "Julie Rothschild (1790–1815) aparece en la genealogía familiar como hija de Mayer Amschel Rothschild y Gutle Schnapper. Falleció en 1815, muy joven, y está incluida entre las cinco hermanas de la primera generación familiar. La fuente consultada no aporta datos suficientes para atribuirle actividad bancaria, política o funciones societarias y aquí no se inventan esas circunstancias.",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "sourceTitle": "Rothschild Archive · genealogía vinculada",
+      "reviewedAt": "2026-11-15"
+    },
+    "f33-henriette": {
+      "text": "Henriette Rothschild (1791–1866), también conocida como Jette, fue la hija menor de Mayer Amschel y Gutle. Nació en Fráncfort en 1791 y se casó con Abraham Montefiore en 1815. Se estableció en Londres y tuvo cuatro hijos; el archivo familiar conserva datos de su hogar y descendencia. No se deduce de su matrimonio una intervención propia en decisiones bancarias o políticas.",
+      "source": "https://family.rothschildarchive.org/people/30-henriette-rothschild-1791-1866",
+      "sourceTitle": "Rothschild Family · ficha biográfica vinculada",
+      "reviewedAt": "2026-11-15"
+    },
+    "f33-niall-ferguson": {
+      "text": "Niall Ferguson es historiador británico especializado en historia económica e internacional. Es autor de The World's Banker: The History of the House of Rothschild (1998), además de estudios sobre el Imperio británico y las finanzas. En la fuente F33 se cita su nombre para contextualizar relatos sobre los Rothschild, pero la transcripción automática no permite atribuirle conclusiones concretas sin contrastar el pasaje de la obra y el audio.",
+      "source": "https://www.hoover.org/profiles/niall-ferguson",
+      "sourceTitle": "Hoover Institution · perfil del historiador",
+      "reviewedAt": "2026-11-15"
+    },
+    "f32-pompeyo-gonzalez": {
+      "text": "Pompeyo González Pascual es un ciudadano español cuya participación en los envíos de artefactos explosivos a instituciones y embajadas españolas de finales de 2022 fue objeto de investigación y condena por la Audiencia Nacional. En noviembre de 2024 la Sala de Apelación redujo la pena a once años y nueve meses según información de prensa. Esta revisión no verifica la firmeza definitiva de la sentencia ni acredita intervención de un Estado extranjero.",
+      "source": "https://elpais.com/espana/2024-11-12/la-audiencia-nacional-rebaja-la-condena-al-jubilado-que-envio-cartas-pirotecnicas-al-gobierno.html",
+      "sourceTitle": "EL PAÍS · información sobre resolución de apelación",
+      "reviewedAt": "2026-11-15"
     }
   }
 };
