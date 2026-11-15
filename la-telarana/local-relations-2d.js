@@ -52,6 +52,28 @@ function lines(text,maxChars,maxLines){
  if(result.length&&words.join(" ").length>result.join(" ").length)result[result.length-1]=cut(result[result.length-1],maxChars-1)+"…";
  return result;
 }
+/* A diferencia de las fichas abreviadas, los nombres de relaciones nunca se recortan. */
+function wrapRelationLabel(value,maxChars){
+ var raw=String(value||"Vínculo").replace(/\s+/g," ").trim(),out=[],line="";
+ raw.split(" ").forEach(function(token){
+  var word=token;
+  while(word.length>maxChars){
+   if(line){out.push(line);line=""}
+   out.push(word.slice(0,maxChars));
+   word=word.slice(maxChars);
+  }
+  if(!word)return;
+  if(!line)line=word;
+  else if(line.length+word.length+1<=maxChars)line+=" "+word;
+  else{out.push(line);line=word}
+ });
+ if(line)out.push(line);
+ return out.length?out:["Vínculo"];
+}
+function relationLabel(edge){
+ var text=edge&&edge.type;
+ return typeof text==="string"&&text.trim()?text.trim():"Vínculo";
+}
 function textLines(group,value,x,y,maxChars,maxLines,className){
  lines(value,maxChars,maxLines).forEach(function(text,i){group.appendChild(el("text",{x:x,y:y+i*16,"class":className},text))});
 }
@@ -101,35 +123,61 @@ function create(config){
   opts.prev.disabled=state.page===0;
   opts.next.disabled=state.page>=maxPage;
   svg.replaceChildren();
-  var rows=Math.ceil(pageItems.length/4),height=Math.max(215,165+rows*142);
+  // Tres columnas con ancho suficiente para etiquetas de varias líneas.
+  // Cada fila se dimensiona según la relación más larga (o los vínculos paralelos).
+  var columns=3,rows=Math.ceil(pageItems.length/columns),layouts=[],nextLabelTop=135;
+  var groups=pageItems.map(function(item){
+   var badges=item.edges.map(function(edge){
+    var label=relationLabel(edge),textLines=wrapRelationLabel(label,28);
+    return {edge:edge,label:label,lines:textLines,height:Math.max(31,14+textLines.length*16)};
+   });
+   return {badges:badges,height:badges.reduce(function(total,badge,i){return total+badge.height+(i?6:0)},0)};
+  });
+  for(var row=0;row<rows;row++){
+   var values=groups.slice(row*columns,(row+1)*columns);
+   var maxLabelHeight=Math.max.apply(null,values.map(function(group){return group.height}));
+   var nodeTop=nextLabelTop+maxLabelHeight+16;
+   layouts.push({labelTop:nextLabelTop,labelHeight:maxLabelHeight,nodeY:nodeTop});
+   nextLabelTop=nodeTop+90+40;
+  }
+  var height=rows?Math.max(215,layouts[rows-1].nodeY+90+35):215;
   svg.setAttribute("viewBox","0 0 960 "+height);
   // La altura intrínseca debe coincidir con viewBox: evita un SVG alto y vacío por preserveAspectRatio.
   svg.setAttribute("height",String(height));
   svg.setAttribute("aria-label","Esquema 2D de "+neighborhood.center.name+": "+neighbors.length+" entidades vecinas directas");
   var paths=el("g",{"class":"local-links"});svg.appendChild(paths);
   pageItems.forEach(function(item,i){
-   var col=i%4,row=Math.floor(i/4),x=120+col*240,y=175+row*142;
+   var col=i%columns,row=Math.floor(i/columns),x=160+col*320,layout=layouts[row];
+   var group=groups[i],y=layout.nodeY;
    var mentionOnly=!!opts.isSourceMention&&item.edges.every(opts.isSourceMention);
    var grade=mentionOnly?"mention":groupTier(item.edges);
    var selected=state.selection&&state.selection.kind==="edge"&&item.edges.some(function(edge){return edge.id===state.selection.id});
-   var path=el("path",{d:"M 480 120 C 480 "+(y-48)+" "+x+" "+(y-48)+" "+x+" "+(y-6),"class":"local-link "+grade+(selected?" is-selected":"")});
-   path.appendChild(el("title",{},neighborhood.center.name+" ↔ "+item.node.name+" · "+item.edges.length+" relación(es): "+item.edges.map(function(e){return e.type||"Relación"}).join("; ")));
+   var controlY=Math.max(124,layout.labelTop-8);
+   var path=el("path",{d:"M 480 120 C 480 "+controlY+" "+x+" "+controlY+" "+x+" "+(y-7),"class":"local-link "+grade+(selected?" is-selected":"")});
+   path.appendChild(el("title",{},neighborhood.center.name+" ↔ "+item.node.name+" · "+item.edges.length+" relación(es): "+item.edges.map(relationLabel).join("; ")));
    paths.appendChild(path);
-   var badges=buttonGroup("Ver relación entre "+neighborhood.center.name+" y "+item.node.name+": "+item.edges.length+" vínculo(s)",function(){
-    if(opts.onSelectEdge)opts.onSelectEdge(item.edges[0].id)
+   var nextY=layout.labelTop+(layout.labelHeight-group.height)/2;
+   group.badges.forEach(function(entry){
+    var edge=entry.edge;
+    var edgeGrade=mentionOnly?"mention":relationTier(edge);
+    var edgeSelected=state.selection&&state.selection.kind==="edge"&&state.selection.id===edge.id;
+    var badges=buttonGroup("Abrir relación completa entre "+neighborhood.center.name+" y "+item.node.name+": "+entry.label,function(){
+     if(opts.onSelectEdge)opts.onSelectEdge(edge.id);
+    });
+    badges.setAttribute("class","local-edge-pill "+edgeGrade+(edgeSelected?" is-selected":""));
+    badges.appendChild(el("rect",{x:x-132,y:nextY,width:264,height:entry.height,rx:11}));
+    entry.lines.forEach(function(line,lineNo){
+     badges.appendChild(el("text",{x:x,y:nextY+19+lineNo*16,"text-anchor":"middle"},line));
+    });
+    badges.appendChild(el("title",{},entry.label+" · "+(edge.claimStatus||edge.confidence||"sin clasificación")));
+    svg.appendChild(badges);
+    nextY+=entry.height+6;
    });
-   badges.setAttribute("class","local-edge-pill "+grade+(selected?" is-selected":""));
-   badges.appendChild(el("rect",{x:x-36,y:y-43,width:72,height:25,rx:10}));
-   badges.appendChild(el("text",{x:x,y:y-26,"text-anchor":"middle"},mentionOnly?
-    (item.edges.length===1?"Mención":item.edges.length+" menciones"):
-    (item.edges.length===1?cut(item.edges[0].type||"Vínculo",12):item.edges.length+" vínculos")));
-   badges.appendChild(el("title",{},item.edges.map(function(e){return (e.type||"Relación")+" · "+(e.claimStatus||e.confidence||"sin clasificación")}).join("\n")));
-   svg.appendChild(badges);
   });
   drawCard(svg,neighborhood.center,480,32,true,false,function(){});
   pageItems.forEach(function(item,i){
-   drawCard(svg,item.node,120+(i%4)*240,175+Math.floor(i/4)*142,false,false,function(id){
-    if(opts.onSelectNode)opts.onSelectNode(id)
+   drawCard(svg,item.node,160+(i%columns)*320,layouts[Math.floor(i/columns)].nodeY,false,false,function(id){
+    if(opts.onSelectNode)opts.onSelectNode(id);
    });
   });
   if(!pageItems.length){
@@ -170,5 +218,5 @@ function create(config){
  panel.hidden=true;
  return {update:update,buildNeighborhood:buildNeighborhood};
 }
-global.IdeaLabLocalRelations={create:create,buildNeighborhood:buildNeighborhood,relationTier:relationTier,groupTier:groupTier,PAGE_SIZE:PAGE_SIZE};
+global.IdeaLabLocalRelations={create:create,buildNeighborhood:buildNeighborhood,relationTier:relationTier,groupTier:groupTier,wrapRelationLabel:wrapRelationLabel,PAGE_SIZE:PAGE_SIZE};
 })(window);
