@@ -167,20 +167,33 @@ Se han reabierto los PNG auténticos de los ZIP. Adicionalmente se han realizado
 |---|---|
 | [#106](https://github.com/idealab2026/idealab2026.github.io/issues/106) | REVISAR ATRIBUCIÓN |
 
-## Continuidad
+## Nuevo lote: 30 PNG recibidos el 15/11/2026
 
-**Pendientes de recibir para auditoría (27 PNG descargados según GitHub, confirmación 13/11/2026):** estas imágenes **no forman parte de los 69 originales ya revisados** y no puede asignárseles dictamen editorial sin sus bytes.
+Los **30 PNG nuevos** exportados desde el Mac y aportados por el usuario han sido abiertos y sometidos a una **primera revisión visual**, con SHA-256 coincidente en los 30 casos (sin duplicados binarios, todos 2752×1536). No se ha cotejado íntegramente el contenido con los vídeos ni las fuentes originales. **0 imágenes aprobadas**.
 
-| Obra | Solicitudes descargadas que faltan por auditar | Cantidad |
-|---|---|---:|
-| Montecristo II, capítulos 63–71 | [#42](https://github.com/idealab2026/idealab2026.github.io/issues/42) · [#43](https://github.com/idealab2026/idealab2026.github.io/issues/43) · [#44](https://github.com/idealab2026/idealab2026.github.io/issues/44) · [#45](https://github.com/idealab2026/idealab2026.github.io/issues/45) · [#46](https://github.com/idealab2026/idealab2026.github.io/issues/46) · [#47](https://github.com/idealab2026/idealab2026.github.io/issues/47) · [#48](https://github.com/idealab2026/idealab2026.github.io/issues/48) · [#49](https://github.com/idealab2026/idealab2026.github.io/issues/49) · [#50](https://github.com/idealab2026/idealab2026.github.io/issues/50) | 9 |
-| Montecristo I, capítulos 44–49 | [#86](https://github.com/idealab2026/idealab2026.github.io/issues/86) · [#87](https://github.com/idealab2026/idealab2026.github.io/issues/87) · [#88](https://github.com/idealab2026/idealab2026.github.io/issues/88) · [#89](https://github.com/idealab2026/idealab2026.github.io/issues/89) · [#90](https://github.com/idealab2026/idealab2026.github.io/issues/90) · [#91](https://github.com/idealab2026/idealab2026.github.io/issues/91) | 6 |
-| Sapiens, doce nuevos capítulos y epílogo | [#116](https://github.com/idealab2026/idealab2026.github.io/issues/116) · [#117](https://github.com/idealab2026/idealab2026.github.io/issues/117) · [#118](https://github.com/idealab2026/idealab2026.github.io/issues/118) · [#119](https://github.com/idealab2026/idealab2026.github.io/issues/119) · [#120](https://github.com/idealab2026/idealab2026.github.io/issues/120) · [#121](https://github.com/idealab2026/idealab2026.github.io/issues/121) · [#122](https://github.com/idealab2026/idealab2026.github.io/issues/122) · [#123](https://github.com/idealab2026/idealab2026.github.io/issues/123) · [#124](https://github.com/idealab2026/idealab2026.github.io/issues/124) · [#125](https://github.com/idealab2026/idealab2026.github.io/issues/125) · [#126](https://github.com/idealab2026/idealab2026.github.io/issues/126) · [#127](https://github.com/idealab2026/idealab2026.github.io/issues/127) | 12 |
-| **Total** | | **27** |
+Detalle de cada incidencia, motivo y SHA-256: [REVISION_LOTE_30_2026-11-15.md](./REVISION_LOTE_30_2026-11-15.md).
 
-Se registran únicamente como *descargadas, pendientes de recepción de PNG y revisión*. No se infiere legibilidad, integridad, precisión ni aprobación a partir del comentario automatizado.
+| Libro | Nuevas imágenes recibidas | Solicitudes |
+|---|---:|---|
+| Montecristo | 17 | #42–#50, #86–#92 y #241 |
+| Sapiens | 12 | #116–#127 |
+| Esto no existe | 1 | #101 |
+| **Total** | **30** | |
 
-**Estado de la generación:** Sapiens #116–#127 figura descargado en GitHub, por lo que suma 22/22 solicitudes descargadas incluyendo los PNG recibidos anteriormente. Ninguna autorización pendiente se considera prueba de publicación o revisión. Montecristo permanece en 52/54; los dos trabajos pendientes requieren diagnóstico de su estado local/cuaderno.
+## Total acumulado de auditoría preliminar (99 PNG recibidos)
 
+| Estado provisional | 69 anteriores | 30 nuevos | Total |
+|---|---:|---:|---:|
+| PENDIENTE DE CONTRASTE | 42 | 10 | **52** |
+| AJUSTE OPCIONAL | 2 | 1 | **3** |
+| VERIFICAR DATOS | 2 | 2 | **4** |
+| REVISAR ATRIBUCIÓN | 14 | 3 | **17** |
+| CORREGIR | 3 | 8 | **11** |
+| BLOQUEADA | 6 | 6 | **12** |
+| **Total** | **69** | **30** | **99** |
 
-**Prohibido** publicar imágenes bloqueadas o sin confirmación editorial explícita. El índice público de imágenes `biblioteca-montecristo/infografias/index.json` no se modifica con esta auditoría.
+**Criterio de aprobación:** ningún estado anterior equivale a «aprobada» ni «publicable». El primer filtro separa fallos visibles de puntos por contrastar. La publicación exige análisis de contenido, contraste con la fuente, privacidad/derechos y una aprobación explícita por archivo y SHA-256 exacto.
+
+**No se ha publicado ninguna imagen.** El índice de la web `biblioteca-montecristo/infografias/index.json` permanece sin modificaciones en esta auditoría.
+
+**Siguiente paso:** reparar los errores y contrastar primero las 10 candidatas sin defectos evidentes del lote nuevo (#43, #44, #46, #50, #86, #87, #89, #90, #91, #92); se revisarán también las 52 anteriores en idénticas condiciones. No subir en bloque todas las infografías generadas.
