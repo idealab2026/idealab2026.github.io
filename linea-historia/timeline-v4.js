@@ -821,8 +821,8 @@ function showGroupNote(group){
  });
  root.append(list);wikiOpenDrawer();
 }
-function detail(d){selected=d;showNote(d)}
-function groupedDetail(group){selected=group;showGroupNote(group)}
+function detail(d){selected=d;showNote(d);window.dispatchEvent(new CustomEvent("historia:focus",{detail:{item:d}}))}
+function groupedDetail(group){selected=group;showGroupNote(group);if(group.children&&group.children[0])window.dispatchEvent(new CustomEvent("historia:focus",{detail:{item:group.children[0]}}))}
 function grouped(items,c){
  if(c!=="Actualidad"||query)return items;
  var step=zoom<=1?1:zoom<=2?.5:zoom<=4?.25:1/12,g=new Map();
@@ -1102,7 +1102,7 @@ function setTimelineMaximized(on){
  }
 }
 function setView(next){
- if(next!=="columns"&&next!=="timeline"&&next!=="map")return;
+ if(next!=="columns"&&next!=="timeline"&&next!=="map"&&next!=="atlas")return;
  if(viewMode===next)return;
  if(viewMode==="timeline"){
   var vp=$("viewport");
@@ -1113,13 +1113,14 @@ function setView(next){
  // Keep one shared toolbar: its filter buttons and listeners travel with it.
  // In columns mode the same controls remain available above the category columns.
  var toolbar=$("history-toolbar");
- var destination=next==="columns"?$("columns-panel"):next==="map"?$("map-panel"):$("timeline-panel");
- var before=next==="columns"?$("columns-grid"):next==="map"?$("world-map-layout"):$("viewport");
+ var destination=next==="columns"?$("columns-panel"):next==="map"?$("map-panel"):next==="atlas"?$("atlas-panel"):$("timeline-panel");
+ var before=next==="columns"?$("columns-grid"):next==="map"?$("world-map-layout"):next==="atlas"?$("atlas-panel").firstChild:$("viewport");
  if(toolbar.parentNode!==destination)destination.insertBefore(toolbar,before);
  $("timeline-panel").classList.toggle("hide",next!=="timeline");
  $("columns-panel").classList.toggle("hide",next!=="columns");
  $("map-panel").classList.toggle("hide",next!=="map");
- [["tab-timeline","timeline"],["tab-columns","columns"],["tab-map","map"]].forEach(function(pair){
+ $("atlas-panel").classList.toggle("hide",next!=="atlas");
+ [["tab-timeline","timeline"],["tab-columns","columns"],["tab-map","map"],["tab-atlas","atlas"]].forEach(function(pair){
   var tab=$(pair[0]),active=pair[1]===next;
   tab.classList.toggle("active",active);
   tab.setAttribute("aria-selected",active?"true":"false");
@@ -1127,6 +1128,7 @@ function setView(next){
  });
  render();
  if(next==="timeline")jumpToYear(savedYear);
+ window.dispatchEvent(new CustomEvent("historia:view",{detail:{view:next}}));
 }
 
 /* Every annual mark is real and exact; only the visible tick labels are
@@ -1281,6 +1283,7 @@ function render(){
  $("visible").textContent=records.length.toLocaleString("es-ES");
  if(viewMode==="columns"){renderColumns(records);return;}
  if(viewMode==="map"){renderMap(records);return;}
+ if(viewMode==="atlas"){window.dispatchEvent(new Event("historia:render"));return;}
  var can=$("canvas");can.replaceChildren();
  $("period-name").textContent="Historia universal · eje continuo · "+yearText(periods[0].a)+" — "+yearText(2026);
  $("zoom-level").textContent="Zoom ×"+zoom;$("zoom-out").disabled=zoom<=1;$("zoom-in").disabled=zoom>=8;
@@ -1367,6 +1370,7 @@ function jumpToYear(year){
  updateAnnualHeader();
  updateMinimap();
  var next=eraAt(year);if(period.k!==next.k){period=next;periodUI()}
+ window.dispatchEvent(new CustomEvent("historia:year",{detail:{year:year}}));
 }
 function setZoom(next){
  var v=$("viewport"),y=yearAt(v.scrollLeft+v.clientWidth/2);
@@ -1431,6 +1435,7 @@ function init(){
  $("tab-timeline").addEventListener("click",function(){setView("timeline")});
  $("tab-columns").addEventListener("click",function(){setView("columns")});
  $("tab-map").addEventListener("click",function(){setView("map")});
+ $("tab-atlas").addEventListener("click",function(){setView("atlas")});
  $("zoom-in").addEventListener("click",function(){setZoom(zoom*2)});
  $("zoom-out").addEventListener("click",function(){setZoom(zoom/2)});
  $("jump-present").addEventListener("click",function(){jumpToYear(2000)});
@@ -1461,6 +1466,7 @@ function init(){
   updateAnnualHeader();updateMinimap();
   var v=$("viewport"),p=eraAt(yearAt(v.scrollLeft+v.clientWidth/2));
   if(p.k!==period.k){period=p;periodUI()}
+  window.dispatchEvent(new CustomEvent("historia:year",{detail:{year:yearAt(v.scrollLeft+v.clientWidth/2)}}));
  });
  // Previous local entries remain readable; removing UI never destroys user data.
  custom=loadLocal();
@@ -1519,5 +1525,17 @@ function init(){
  $("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
 
 }
+// API de interoperabilidad: Atlas visual lee el mismo eje y abre las mismas fichas.
+window.HistoryTimeline={
+ getYear:function(){var v=$("viewport");return v.clientWidth?yearAt(v.scrollLeft+v.clientWidth/2):savedYear},
+ getView:function(){return viewMode},
+ getRecords:function(){return visible()},
+ yearText:yearText,
+ ratioForYear:miniRatio,
+ yearForRatio:miniYear,
+ jumpToYear:function(year){jumpToYear(year)},
+ setView:function(mode){setView(mode)},
+ focusEvent:function(id){var d=base.concat(custom).find(function(x){return x.id===id});if(d){enrich(d);detail(d)}}
+};
 init();
 })();

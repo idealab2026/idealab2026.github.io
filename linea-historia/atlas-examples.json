@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "description": "Atlas inicial de cartografía pública, independiente de las imágenes originales de HISTORIA.xlsx. Cada imagen representa una fecha concreta, no fronteras animadas ni el territorio exacto de todos los años de su ventana.",
+  "items": [
+    {
+      "id": "commons-rome-117",
+      "title": "Imperio romano bajo Trajano",
+      "asOf": 117,
+      "start": 60,
+      "end": 170,
+      "kind": "mapa histórico",
+      "hints": [
+        "imperio romano",
+        "roma",
+        "trajano"
+      ],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/RomanEmpire_117_es.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RomanEmpire_117_es.svg",
+      "credit": "ArdadN; versión española Nachosan · dominio público · Wikimedia Commons",
+      "provenance": "commons",
+      "note": "Mapa de referencia para 117 d. C.; no corresponde exactamente a otros años."
+    },
+    {
+      "id": "commons-europe-1200",
+      "title": "Mapa político de Europa en 1200",
+      "asOf": 1200,
+      "start": 1140,
+      "end": 1260,
+      "kind": "mapa político",
+      "hints": [
+        "europa",
+        "edad media",
+        "sacro imperio",
+        "reino"
+      ],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Europe_1200.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Europe_1200.jpg",
+      "credit": "Petolaszlo · CC BY-SA 4.0 · Wikimedia Commons",
+      "provenance": "commons",
+      "note": "Reconstrucción política de Europa hacia el año 1200, no de todo el intervalo."
+    },
+    {
+      "id": "commons-mongol-1279",
+      "title": "Imperio mongol en 1279",
+      "asOf": 1279,
+      "start": 1240,
+      "end": 1320,
+      "kind": "mapa de imperio",
+      "hints": [
+        "imperio mongol",
+        "mongol",
+        "kublai",
+        "gengis"
+      ],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mongol_Empire_(greatest_extent).svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mongol_Empire_(greatest_extent).svg",
+      "credit": "Ali Zifan · Wikimedia Commons · CC BY-SA 4.0",
+      "provenance": "commons",
+      "note": "Mapa de su máxima extensión hacia 1279. Sus dominios variaron durante el siglo XIII."
+    },
+    {
+      "id": "commons-ottoman-1683",
+      "title": "Imperio otomano en 1683",
+      "asOf": 1683,
+      "start": 1640,
+      "end": 1730,
+      "kind": "mapa de imperio",
+      "hints": [
+        "imperio otomano",
+        "otomano",
+        "osmanli"
+      ],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/OttomanEmpireIn1683.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:OttomanEmpireIn1683.png",
+      "credit": "Atilim Gunes Baydin · Wikimedia Commons · dominio público",
+      "provenance": "commons",
+      "note": "Territorio otomano representado en 1683; no debe interpretarse como frontera anual exacta."
+    },
+    {
+      "id": "commons-british-1914",
+      "title": "Imperio británico en 1914",
+      "asOf": 1914,
+      "start": 1880,
+      "end": 1930,
+      "kind": "mapa de imperio",
+      "hints": [
+        "imperio britanico",
+        "reino unido",
+        "colonialismo britanico"
+      ],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/British_Empire_in_1914.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:British_Empire_in_1914.png",
+      "credit": "Andrew0921 · CC BY-SA 3.0 · Wikimedia Commons",
+      "provenance": "commons",
+      "note": "Representación del Imperio británico en 1914, antes de la Primera Guerra Mundial."
+    }
+  ]
+}
