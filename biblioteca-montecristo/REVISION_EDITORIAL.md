@@ -1,6 +1,6 @@
 # Revisión editorial · Biblioteca IDEA LAB
 
-**Estado:** triaje visual preliminar de **69 PNG únicos** recibidos en dos archivos ZIP (35+35 PNG, una copia exacta de #16). **No hay ninguna imagen aprobada ni publicada** por este registro. Última segunda pasada selectiva: 12/11/2026.
+**Estado:** triaje visual preliminar de **69 PNG únicos** recibidos en dos archivos ZIP (35+35 PNG, una copia exacta de #16). **No hay ninguna imagen aprobada ni publicada** por este registro. Última segunda pasada selectiva: 15/11/2026. Integridad técnica de los 69 originales validada el 15/11/2026: PNG decodificables, 2752×1536, SHA-256 coincidente con inventario, sin duplicados binarios entre los 69 únicos. **Esa validación técnica no equivale a conformidad editorial.**
 
 ## Criterio de calidad
 
@@ -14,18 +14,19 @@
 
 | Estado provisional | Imágenes |
 |---|---:|
-| PENDIENTE DE CONTRASTE | 43 |
+| PENDIENTE DE CONTRASTE | 42 |
 | AJUSTE OPCIONAL | 2 |
 | VERIFICAR DATOS | 2 |
 | REVISAR ATRIBUCIÓN | 14 |
 | CORREGIR | 3 |
-| BLOQUEADA | 5 |
+| BLOQUEADA | 6 |
 | **Total** | **69** |
 
 ## Incidencias editoriales concretas
 
 | GitHub | Obra | Acción |
 |---|---|---|
+| [#160](https://github.com/idealab2026/idealab2026.github.io/issues/160) | Utopía · libro II, capítulo 9 (religiones) | **BLOQUEADA**: inspección de PNG original a resolución 2752×1536 revela frases con palabras sin sentido o pseudoescritura en varios pies («guerras provocan conquista», texto de «El Numen supremo», secciones sobre prosélitismo y cultos), además de un «13» aislado en el bloque de sacerdocio. Requiere regenerar/redactar todos los rótulos y cotejarlos con el capítulo fuente |
 | [#34](https://github.com/idealab2026/idealab2026.github.io/issues/34) | Montecristo II · capítulo 55 | **BLOQUEADA**: los certificados ilustrados contienen palabras pseudoescritas e ilegibles («CERTIFICADO DE MATINONIO», «CERTIFICADO NAOTISMO», aproximación de lectura visual). No publicable sin regenerar o corregir esas inscripciones y revisar el resto de la lámina |
 | [#69](https://github.com/idealab2026/idealab2026.github.io/issues/69) | Montecristo I · capítulo 27 | **CORREGIR**: aparece el título truncado «Ruina del» flotando sobre la ilustración, además del encabezado completo «Ruina del armador Morrel». Eliminar el fragmento o regenerar y comprobar otros rótulos |
 | [#16](https://github.com/idealab2026/idealab2026.github.io/issues/16) | Montecristo I · síntesis del tomo | **BLOQUEADA**: texto imposible o deformado en varias leyendas, entre ellas «Trundo de los traidores» y el pie de «Fuga en la mortaja». Se debe rehacer la lámina o corregir exhaustivamente toda la rotulación |
@@ -52,6 +53,7 @@ Se han reabierto los PNG auténticos de los ZIP. Adicionalmente se han realizado
 | #109 | `50d15a58d76356cf1b5002f2a14fdbbf153e96e1c3433f8e0b9e45c7506bf0e4` |
 | #34 | `aab9007e282a4ddc1533a168d041eb85d34deb457dbe4604a9b242982148ba53` |
 | #69 | `6c0494191c1da7f7d65c0ef54786e0a45393b099b0f32883dfea91074af16a69` |
+| #160 | `e2e128ab51c175579a1c1b58dfad6aba433dcff2288c6ca506c46c8082260920` |
 
 **Importante:** una imagen visualmente legible no equivale a una fuente contrastada. Se mantienen como pendientes las otras imágenes no cotejadas línea por línea. Las categorías de bloqueo/corrección documentan el PNG de ese hash, no una condena irreversible de la solicitud: una versión nueva exige nuevo control e identificación inequívoca.
 
@@ -131,7 +133,7 @@ Se han reabierto los PNG auténticos de los ZIP. Adicionalmente se han realizado
 | [#157](https://github.com/idealab2026/idealab2026.github.io/issues/157) | PENDIENTE DE CONTRASTE |
 | [#158](https://github.com/idealab2026/idealab2026.github.io/issues/158) | PENDIENTE DE CONTRASTE |
 | [#159](https://github.com/idealab2026/idealab2026.github.io/issues/159) | PENDIENTE DE CONTRASTE |
-| [#160](https://github.com/idealab2026/idealab2026.github.io/issues/160) | PENDIENTE DE CONTRASTE |
+| [#160](https://github.com/idealab2026/idealab2026.github.io/issues/160) | BLOQUEADA |
 | [#161](https://github.com/idealab2026/idealab2026.github.io/issues/161) | PENDIENTE DE CONTRASTE |
 | [#162](https://github.com/idealab2026/idealab2026.github.io/issues/162) | PENDIENTE DE CONTRASTE |
 
