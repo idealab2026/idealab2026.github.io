@@ -23,6 +23,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Validar iconos de todos los proyectos y adaptación responsive
+        run: node scripts/test_project_icons.mjs
       - name: Validar agregados y separación de cuentas
         run: python3 -m unittest discover -s scripts -p 'test_traffic.py' -v
       - name: Validar catálogo y scripts de la biblioteca

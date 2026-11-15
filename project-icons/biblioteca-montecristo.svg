@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">La Biblioteca de Montecristo</title><desc id="desc">Libro abierto, capítulos y lectura audiovisual</desc>
+<rect x="4" y="4" width="120" height="120" rx="24" fill="#0b2447"/>
+<rect x="10" y="10" width="108" height="108" rx="20" fill="none" stroke="#397087" stroke-width="1.4" opacity=".7"/>
+<path d="M19 37Q39 29 63 43Q87 29 109 37V94Q88 87 63 102Q38 87 19 94Z" fill="#173d5a" stroke="#a9e3e0" stroke-width="2.8" stroke-linejoin="round"/>
+ <path d="M63 43V102" fill="none" stroke="#e9c56f" stroke-width="3" stroke-linecap="round"/>
+ <path d="M29 50Q42 47 54 53M29 62Q42 59 54 65M29 74Q42 71 54 78 M72 53Q84 47 100 50M72 65Q84 59 100 62M72 78Q84 71 100 74" fill="none" stroke="#80c9d1" stroke-width="2.8" stroke-linecap="round"/>
+ <path d="M82 17V43L89 37 96 43V17" fill="#f6cb70" stroke="#f6cb70" stroke-width="2"/>
+ <circle cx="63" cy="101" r="4" fill="#f6cb70"/>
+</svg>

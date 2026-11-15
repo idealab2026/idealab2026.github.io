@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">PSICOHISTORIA</title><desc id="desc">Modelo de sistemas colectivos: nodos, trayectorias y ciclos</desc>
+<rect x="4" y="4" width="120" height="120" rx="24" fill="#0b2447"/>
+<rect x="10" y="10" width="108" height="108" rx="20" fill="none" stroke="#397087" stroke-width="1.4" opacity=".7"/>
+<circle cx="64" cy="64" r="39" fill="none" stroke="#457e9c" stroke-width="1.7" stroke-dasharray="3 6"/>
+ <path d="M26 83Q42 34 60 66T103 40" fill="none" stroke="#f4ca70" stroke-width="5" stroke-linecap="round"/>
+ <g fill="none" stroke="#6bcbd1" stroke-width="2.6" stroke-linecap="round">
+ <path d="M29 48 56 34 83 52 103 40 M29 48 43 91 77 88 83 52 M43 91 56 34 M77 88 103 40"/>
+ </g><g fill="#8ae1e2" stroke="#0b2447" stroke-width="2">
+ <circle cx="29" cy="48" r="6"/><circle cx="56" cy="34" r="6"/><circle cx="83" cy="52" r="6"/><circle cx="43" cy="91" r="6"/><circle cx="77" cy="88" r="6"/>
+ </g><circle cx="103" cy="40" r="7" fill="#ffd47e" stroke="#0b2447" stroke-width="2"/>
+</svg>

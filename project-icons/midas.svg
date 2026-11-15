@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">MIDAS</title><desc id="desc">Laboratorio cuantitativo con velas y curva de evaluación</desc>
+<rect x="4" y="4" width="120" height="120" rx="24" fill="#0b2447"/>
+<rect x="10" y="10" width="108" height="108" rx="20" fill="none" stroke="#397087" stroke-width="1.4" opacity=".7"/>
+<g fill="none" stroke="#5bb7b7" stroke-width="2" opacity=".65"><path d="M22 95H108M22 72H108M22 49H108M22 26H108"/></g>
+ <g stroke="#9bdce0" stroke-width="3" stroke-linecap="round">
+ <path d="M37 55V86 M55 42V78 M75 34V67 M94 24V54"/>
+ </g><g>
+ <rect x="32" y="65" width="10" height="12" rx="2" fill="#7dd5d8"/>
+ <rect x="50" y="49" width="10" height="19" rx="2" fill="#7dd5d8"/>
+ <rect x="70" y="44" width="10" height="15" rx="2" fill="#7dd5d8"/>
+ <rect x="89" y="29" width="10" height="19" rx="2" fill="#7dd5d8"/>
+ </g><path d="M27 94 45 77 64 84 85 48 102 29" fill="none" stroke="#f2c76b" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+ <path d="m91 30 11 -2 -1 12" fill="none" stroke="#f2c76b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

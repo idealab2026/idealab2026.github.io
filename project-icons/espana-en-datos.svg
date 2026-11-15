@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">España en Datos</title><desc id="desc">Flujos de ingresos y gastos públicos conectados por un nodo central</desc>
+<rect x="4" y="4" width="120" height="120" rx="24" fill="#0b2447"/>
+<rect x="10" y="10" width="108" height="108" rx="20" fill="none" stroke="#397087" stroke-width="1.4" opacity=".7"/>
+<g fill="none" stroke-linecap="round">
+ <path d="M24 31H39C50 31 51 49 64 49" stroke="#6fd6df" stroke-width="5"/>
+ <path d="M24 51H40C51 51 53 59 64 59" stroke="#6fd6df" stroke-width="7"/>
+ <path d="M24 76H39C51 76 50 69 64 69" stroke="#6fd6df" stroke-width="9"/>
+ <path d="M64 49C77 49 78 32 101 32" stroke="#e9c46a" stroke-width="7"/>
+ <path d="M64 59C78 59 81 62 101 62" stroke="#e9c46a" stroke-width="11"/>
+ <path d="M64 69C77 69 82 93 101 93" stroke="#e9c46a" stroke-width="5"/>
+ </g><rect x="58" y="38" width="13" height="43" rx="6" fill="#f9e4a1" stroke="#0b2447" stroke-width="2"/>
+ <g fill="#bbf2ec"><circle cx="24" cy="31" r="4"/><circle cx="24" cy="51" r="4"/><circle cx="24" cy="76" r="4"/></g>
+ <g fill="#f8d57f"><circle cx="101" cy="32" r="4"/><circle cx="101" cy="62" r="4"/><circle cx="101" cy="93" r="4"/></g>
+</svg>
