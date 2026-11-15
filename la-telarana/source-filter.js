@@ -14,8 +14,12 @@ function sourceForModule(mod){
 }
 function createTracker(sourceCatalog){
  var publicSources=(sourceCatalog||[]).filter(function(s){return s&&Number.isInteger(s.order)&&s.order>=1&&s.order<=999})
-  .map(function(s){return {id:"f"+s.order,order:s.order,title:String(s.title||"Fuente "+s.order),duplicateOf:s.duplicateOf||null}});
- var membership=new Map(),labels=new Map();
+  .map(function(s){return {id:"f"+s.order,order:s.order,title:String(s.title||"Fuente "+s.order),duplicateOf:s.duplicateOf||null,
+   percent:Number.isFinite(s.percent)?s.percent:null,percentInherited:Boolean(s.percentInherited),
+   sourceUrl:/^https?:\/\//i.test(s.sourceUrl||"")?s.sourceUrl:null,
+   type:String(s.type||"Tipo por determinar"),creator:s.creator||null,
+   participants:Array.isArray(s.participants)?s.participants.filter(function(p){return typeof p==="string"&&p.trim()}):[]}});
+ var membership=new Map(),labels=new Map(),sourceMeta=new Map();
  function section(key){
   if(!membership.has(key))membership.set(key,{nodes:new Set(),edges:new Set()});
   return membership.get(key);
@@ -23,6 +27,18 @@ function createTracker(sourceCatalog){
  function register(key,label,raw,beforeNodeIds,beforeEdgeIds,afterNodes,afterEdges){
   if(!key)return;
   var part=section(key);if(label)labels.set(key,label);
+  // Solo roles explícitos en los metadatos del episodio: un personaje citado NO es necesariamente interviniente.
+  if(/^f\d+$/.test(key)&&raw&&raw.metadata&&typeof raw.metadata==="object"){
+   var m=raw.metadata,old=sourceMeta.get(key)||{creator:null,participants:[]};
+   var channel=m.channel||m.publisher||m.production||m.creator||null;
+   if(typeof channel==="string"&&channel.length<125&&!/entrevista audiovisual remitida|transcripci[oó]n|usuario|investigaci[oó]n externa/i.test(channel))old.creator=old.creator||channel;
+   [m.host,m.interviewHost,m.guest,m.interviewer,m.guests,m.presenters].forEach(function(v){
+    (Array.isArray(v)?v:[v]).forEach(function(person){
+     if(typeof person==="string"&&person.trim()&&person.length<100&&!old.participants.includes(person.trim()))old.participants.push(person.trim());
+    })
+   });
+   sourceMeta.set(key,old);
+  }
   var nodeById=new Map(afterNodes.map(function(n){return[n.id,n]})),
       nodeByName=new Map();
   afterNodes.forEach(function(n){if(!nodeByName.has(norm(n.name)))nodeByName.set(norm(n.name),n)});
@@ -59,11 +75,15 @@ function createTracker(sourceCatalog){
  function entries(){
   var entries=publicSources.map(function(s){
    var p=membership.get(s.id),count=p?p.nodes.size:0,relations=p?p.edges.size:0;
-   return {id:s.id,order:s.order,title:s.title,duplicateOf:s.duplicateOf,nodes:count,edges:relations,available:count>0||relations>0,extra:false};
+   var meta=sourceMeta.get(s.id)||{creator:null,participants:[]};
+   var people=Array.from(new Set(s.participants.concat(meta.participants)));
+   return {id:s.id,order:s.order,title:s.title,duplicateOf:s.duplicateOf,nodes:count,edges:relations,
+    available:count>0||relations>0,extra:false,percent:s.percent,percentInherited:s.percentInherited,
+    sourceUrl:s.sourceUrl,type:s.type,creator:s.creator||meta.creator||null,participants:people};
   });
   membership.forEach(function(p,id){
    if(id.startsWith("f")&&/^f\d+$/.test(id))return;
-   entries.push({id:id,order:null,title:labels.get(id)||id,duplicateOf:null,nodes:p.nodes.size,edges:p.edges.size,available:p.nodes.size>0||p.edges.size>0,extra:true});
+   entries.push({id:id,order:null,title:labels.get(id)||id,duplicateOf:null,nodes:p.nodes.size,edges:p.edges.size,available:p.nodes.size>0||p.edges.size>0,extra:true,percent:null,percentInherited:false,sourceUrl:null,type:"Capa de contexto",creator:null,participants:[]});
   });
   return entries.sort(function(a,b){
    if(a.extra!==b.extra)return Number(a.extra)-Number(b.extra);
@@ -114,13 +134,27 @@ function mount(opts){
     opts.onChange();renderList();
    });
    var caption=document.createElement("span");caption.className="source-filter-description";
+   var titleLine=document.createElement("div");titleLine.className="source-filter-title-line";
    var title=document.createElement("strong");title.textContent=(source.order?"F"+String(source.order).padStart(2,"0")+" · ":"")+source.title;
+   var percent=document.createElement("span");percent.className="source-filter-percent";
+   percent.textContent=source.percent===null?"Sin %":source.percent+" %";
+   percent.title=source.percentInherited?"Avance editorial heredado de F"+source.duplicateOf:"Avance editorial estimado; no mide cobertura real del audio";
+   titleLine.appendChild(title);titleLine.appendChild(percent);
    var detail=document.createElement("small");
    detail.textContent=source.available?
     source.nodes+" entidades · "+source.edges+" enlaces aportados":
     source.duplicateOf?"Entrada duplicada de F"+String(source.duplicateOf).padStart(2,"0")+" · sin representación separada":
      "Sin entidades representadas todavía";
-   caption.appendChild(title);caption.appendChild(detail);label.appendChild(checkbox);label.appendChild(caption);list.appendChild(label);
+   caption.appendChild(titleLine);caption.appendChild(detail);
+   if(source.sourceUrl){
+    var link=document.createElement("a");link.className="source-filter-link";link.href=source.sourceUrl;
+    link.target="_blank";link.rel="noopener noreferrer";link.textContent="↗ Abrir fuente original";
+    link.addEventListener("click",function(event){event.stopPropagation()});
+    caption.appendChild(link);
+   }else{
+    var noLink=document.createElement("small");noLink.className="source-filter-unavailable-link";noLink.textContent="Sin enlace público verificado";caption.appendChild(noLink);
+   }
+   label.appendChild(checkbox);label.appendChild(caption);list.appendChild(label);
   });
  }
  function open(value){panel.hidden=!value;button.setAttribute("aria-expanded",String(value));if(value){renderList();search.focus()}}
