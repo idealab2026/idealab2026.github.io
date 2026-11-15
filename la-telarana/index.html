@@ -420,6 +420,56 @@ body.graph-expanded{overflow:hidden}
 .source-filter-empty{font-size:.8rem;color:#b5c7d7;padding:15px 6px}
 .graph-panel:fullscreen.drawer-open .source-filter-panel,.graph-panel.is-fullscreen.drawer-open .source-filter-panel{right:min(445px,42vw)}
 @media(max-width:700px){.three-toolbar{gap:5px;max-width:calc(100% - 8px);flex-wrap:wrap;justify-content:flex-end}.source-filter-panel{top:100px;left:8px;right:8px;width:auto;max-height:52dvh;z-index:41}.graph-panel:fullscreen.drawer-open .source-filter-panel,.graph-panel.is-fullscreen.drawer-open .source-filter-panel{right:8px}}
+
+/* Controles 3D: SIEMPRE una fila; en ancho estrecho se desplazan horizontalmente. */
+.three-toolbar{flex-wrap:nowrap!important;white-space:nowrap;max-width:calc(100% - 26px);overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.three-toolbar>label,.three-toolbar>button{flex:0 0 auto;white-space:nowrap}
+.three-toolbar>label{display:inline-flex;align-items:center;gap:6px}
+.three-toolbar select{max-width:155px}
+@media(max-width:700px){.three-toolbar{flex-wrap:nowrap!important;max-width:calc(100% - 16px);justify-content:flex-start;right:8px}.three-toolbar>button{white-space:nowrap}}
+.source-filter-title-line{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.source-filter-title-line strong{flex:1;min-width:0}
+.source-filter-percent{display:inline-block;flex:0 0 auto;padding:4px 7px;border:1px solid #926b47;border-radius:7px;color:#ffcf94;background:#392e28;font-size:.67rem;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.source-filter-link{font-size:.71rem;font-weight:700;color:#a9d9f5;text-decoration:underline;text-underline-offset:3px;align-self:flex-start;margin-top:1px}
+.source-filter-link:hover{color:#ffd49e}
+.source-filter-unavailable-link{font-size:.67rem;color:#9aaabc}
+/* Sección independiente: fuente canónica, cobertura editorial orientativa y ficha de participantes. */
+.sources-directory{border:1px solid #405469;border-radius:13px;background:#172532;margin:0 0 18px}
+.sources-directory>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 19px;cursor:pointer;list-style:none}
+.sources-directory>summary::-webkit-details-marker{display:none}
+.sources-directory>summary strong{font-size:.96rem;color:#f4d7a6}
+.sources-directory>summary span{color:#b1c5d5;font-size:.77rem}
+.sources-directory>summary:after{content:"⌄";color:#e3aa69;font-size:1.15rem}
+.sources-directory[open]>summary:after{content:"⌃"}
+.sources-directory[open]>summary{border-bottom:1px solid #394b5b}
+.sources-dir-content{padding:15px 17px 18px}
+.sources-dir-controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.sources-dir-controls label{display:flex;align-items:center;gap:6px;color:#c6d6e5;font-size:.75rem}
+.sources-dir-controls input,.sources-dir-controls select{border:1px solid #50677b;border-radius:8px;background:#101d2b;color:#ebf4fb;padding:9px 11px;font-size:.77rem}
+.sources-dir-controls input{flex:1 1 270px;min-width:0}
+.sources-dir-note,.sources-dir-count{font-size:.73rem;color:#b5c4d2;line-height:1.5;margin:8px 0 12px}
+.sources-dir-table-wrap{width:100%;max-height:min(67vh,680px);overflow:auto;border:1px solid #405365;border-radius:10px;overscroll-behavior:contain}
+.sources-table{width:100%;min-width:940px;border-collapse:collapse;table-layout:fixed;font-size:.75rem}
+.sources-table th{position:sticky;top:0;z-index:1;background:#24374a;color:#f6dfba;text-align:left;font-size:.68rem;letter-spacing:.025em;padding:12px 10px;border-bottom:1px solid #51677c}
+.sources-table td{padding:12px 10px;vertical-align:top;line-height:1.45;border-bottom:1px solid #34495d;color:#d5e4f0;overflow-wrap:anywhere}
+.sources-table tr:last-child td{border-bottom:0}
+.sources-table tbody tr:hover{background:#ffffff07}
+.sources-table .sources-id{font-weight:800;color:#efbe84;white-space:nowrap}
+.sources-table .sources-title-cell strong{display:block;color:#eef3fa;font-size:.76rem;font-weight:680}
+.sources-table .sources-duplicate,.sources-table .sources-coverage small{display:block;color:#a2b6c6;font-size:.66rem;margin-top:5px}
+.sources-table .sources-is-duplicate{background:#ffffff06}
+.sources-table .sources-coverage strong{display:block;color:#f4c995;white-space:nowrap;font-variant-numeric:tabular-nums}
+.sources-table .sources-progress-bar{height:5px;margin-top:7px;border-radius:6px;background:#34485a;overflow:hidden}
+.sources-table .sources-progress-bar span{display:block;height:100%;background:#c79560;border-radius:6px}
+.sources-table .sources-type,.sources-table .sources-creator{color:#c0d3e2}
+.sources-open-link{display:inline-flex;white-space:nowrap;color:#abd7f1!important;text-decoration:underline;text-underline-offset:3px;font-weight:720}
+.sources-unknown{color:#8fa7bb;font-size:.7rem}
+.sources-none{text-align:center;color:#b3c7d8!important;padding:28px!important}
+.sources-table th:nth-child(1){width:5%}.sources-table th:nth-child(2){width:27%}
+.sources-table th:nth-child(3){width:9%}.sources-table th:nth-child(4){width:13%}
+.sources-table th:nth-child(5){width:16%}.sources-table th:nth-child(6){width:22%}
+.sources-table th:nth-child(7){width:8%}
+@media(max-width:650px){.sources-directory>summary{padding:13px 11px}.sources-directory>summary span{font-size:.67rem}.sources-dir-content{padding:11px}.sources-dir-controls{flex-direction:column;align-items:stretch}.sources-dir-controls label{justify-content:space-between}.sources-dir-controls input{flex:0 0 auto;width:100%}}
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
@@ -431,6 +481,17 @@ body.graph-expanded{overflow:hidden}
  <button type="button" data-recent-id="f21-episodio" data-recent-name="Podcast · Orden mundial (F21)">Fuente 21 · Nuevo orden</button>
  </div>
 <details id="rankings-panel" class="rankings-panel"><summary><strong>Rankings de entidades y relaciones</strong><span>Centralidad y evidencia · explorar</span></summary><div class="rankings-content"><div class="rankings-controls"><div class="rankings-tabs" role="group" aria-label="Tipo de ranking"><button type="button" id="rank-entities-tab" class="is-active" aria-pressed="true">Entidades</button><button type="button" id="rank-relations-tab" aria-pressed="false">Relaciones</button></div><label for="rank-scope">Ámbito <select id="rank-scope"><option value="substantive">Solo vínculos entre entidades</option><option value="all">Incluir menciones en fuentes</option></select></label><label for="rank-limit">Mostrar <select id="rank-limit"><option value="10">10</option><option value="25">25</option><option value="50">50</option></select></label></div><div id="rank-list" class="rankings-table-wrap" role="region" aria-label="Clasificación del grafo"></div><p id="rank-caption" class="rankings-note"></p></div></details>
+<details id="sources-directory" class="sources-directory"><summary><strong>Fuentes · catálogo e investigación</strong><span>74 entradas · análisis editorial · enlaces y participantes</span></summary>
+<div class="sources-dir-content">
+<div class="sources-dir-controls">
+<input id="sources-dir-search" type="search" placeholder="Buscar fuente, canal, creador o interviniente…" aria-label="Buscar en el catálogo de fuentes">
+<label>Tipo <select id="sources-dir-type" aria-label="Filtrar tipo de fuente"><option value="todas">Todos los tipos</option><option value="Podcast / entrevista">Podcast / entrevista</option><option value="Vídeo">Vídeo</option><option value="Artículo o web">Artículo o web</option><option value="Documento PDF">Documento PDF</option><option value="Tipo no determinado">Sin determinar</option></select></label>
+<label>Orden <select id="sources-dir-sort" aria-label="Ordenar fuentes"><option value="order-asc">Número ↑</option><option value="order-desc">Número ↓</option><option value="percent-desc">Más analizadas</option><option value="percent-asc">Menos analizadas</option></select></label>
+</div>
+<p class="sources-dir-note">El porcentaje es un <strong>indicador editorial estimado</strong>, no una medida de cobertura íntegra ni de verificación del audio. Los intervinientes solo se muestran cuando hay una identificación explícita; no se deducen de personas simplemente mencionadas. Las entradas duplicadas heredan el indicador de la fuente canónica.</p>
+<div class="sources-dir-table-wrap" role="region" aria-label="Tabla de fuentes de La Telaraña" tabindex="0">
+<table class="sources-table"><thead><tr><th scope="col">N.º</th><th scope="col">Fuente</th><th scope="col">% analizado</th><th scope="col">Tipo</th><th scope="col">Creador / canal</th><th scope="col">Intervienen</th><th scope="col">Enlace</th></tr></thead><tbody id="sources-dir-body"></tbody></table>
+</div><p class="sources-dir-count" id="sources-dir-count" aria-live="polite"></p></div></details>
 <details id="load-audit" class="load-audit" hidden><summary>Auditoría de entidades por fuente</summary><div id="load-audit-content"></div></details>
 <div class="workspace"><div class="graph-stack"><section class="panel graph-panel" id="graph-panel"><span class="graph-label" id="view-title">Mapa relacional</span><span class="graph-hint" id="graph-hint">Orbe 3D · gira arrastrando · pellizca para ampliar nodos y fotografías</span><div id="three-toolbar" class="three-toolbar"><label for="theme3d">Tema <select id="theme3d" aria-label="Seleccionar tema 3D"><option value="todos">Todos los temas</option><option value="inteligencia">Inteligencia</option><option value="oriente">Oriente Medio</option><option value="espana">España</option><option value="historia">Historia</option><option value="iglesia">Iglesia y Vaticano</option><option value="tecnologia">Tecnología</option><option value="finanzas">Finanzas y poder</option><option value="global">Política internacional</option></select></label><button type="button" id="source-filter-toggle" aria-expanded="false" aria-controls="source-filter-panel" aria-pressed="false" title="Elegir una o varias fuentes visibles en el grafo">Fuentes · todas</button><button type="button" id="motion3d" aria-pressed="true" title="Pausar o reanudar la rotación suave">⏸ Orbe</button><button type="button" id="dimension-toggle" title="Alternar vista 3D y 2D">Vista 2D</button></div><div class="source-filter-panel" id="source-filter-panel" aria-label="Seleccionar fuentes del orbe" hidden><div class="source-filter-head"><strong>Filtrar fuentes del grafo</strong><button type="button" id="source-filter-close" aria-label="Cerrar selector de fuentes">×</button></div><p class="source-filter-summary" id="source-filter-summary"></p><input type="search" id="source-filter-search" placeholder="Buscar fuente por número o título…" aria-label="Buscar en el listado de fuentes"><div class="source-filter-actions"><button type="button" id="source-filter-all">Seleccionar todas</button><button type="button" id="source-filter-none">Deseleccionar todas</button></div><div class="source-filter-list" id="source-filter-list" role="group" aria-label="Casillas por fuente"></div><small class="source-filter-summary">Filtra únicamente lo que aparece en el grafo. Una mención no prueba una relación personal.</small></div><div id="fullscreen-search-bar" class="fullscreen-search-bar" role="search" aria-label="Buscar entidades en pantalla completa" hidden><div class="fullscreen-search-row"><span class="fullscreen-search-icon" aria-hidden="true">⌕</span><input type="search" id="fullscreen-search-input" placeholder="Buscar una entidad…" autocomplete="off" spellcheck="false" aria-label="Buscar una entidad en el mapa" aria-controls="fullscreen-search-results" aria-expanded="false"><button type="button" id="fullscreen-search-clear" aria-label="Limpiar búsqueda" title="Limpiar búsqueda">×</button></div><div id="fullscreen-search-results" class="fullscreen-search-results" role="region" aria-label="Entidades coincidentes" aria-live="polite" hidden></div></div><svg xmlns="http://www.w3.org/2000/svg" id="network" viewBox="0 0 1100 650" role="img" aria-label="Grafo interactivo de entidades y relaciones"><g id="camera"></g></svg><div id="stage3d" class="stage3d"><canvas id="canvas3d" role="img" aria-label="Mapa tridimensional de entidades y relaciones, rotación mediante arrastre"></canvas><div id="tooltip3d" class="tooltip3d" hidden></div></div><div id="gallery" class="gallery hidden"></div><div id="zoom" class="zoom"><button id="zoom-in" title="Ampliar">+</button><button id="zoom-out" title="Reducir">−</button><button id="zoom-reset" title="Ajustar el grafo al panel">Ajustar</button><button id="layout-graph" title="Buscar una disposición con menos cruces de líneas">Organizar</button><button id="edge-mode" type="button" aria-pressed="true" title="Mostrar sólo las conexiones de la entidad seleccionada">Conexiones: foco</button><button id="local-jump" type="button" class="hidden" title="Ver el esquema de relaciones inmediatas debajo del orbe">↓ Esquema 2D</button><button id="fullscreen" type="button" aria-pressed="false" title="Mostrar la pizarra en ventana completa">⛶ Pantalla completa</button></div><div id="legend" class="legend"><span>Documentado</span><span class="ind">Indicio</span><span class="hyp">Hipótesis</span></div></section><section class="panel local-panel" id="local-relations" aria-label="Esquema 2D de relaciones directas" hidden><div class="local-head"><div><span class="local-kicker">Esquema 2D · un salto desde la selección</span><h2 id="local-heading"></h2><p id="local-summary"></p></div><div class="local-controls"><label title="Si no existen relaciones sustantivas, se activa automáticamente para mostrar las menciones, sin equipararlas a vínculos probados"><input id="local-mentions" type="checkbox">Incluir menciones en fuentes</label><button type="button" class="local-mini" id="local-minimize" aria-expanded="true">− Contraer</button></div></div><div class="local-scroll" id="local-scroll" role="region" aria-label="Mapa de vecinos directos" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" id="local-svg" class="local-svg" width="960" height="640" role="group"></svg></div><div class="local-footer"><span id="local-page"></span><div class="local-pager"><button type="button" id="local-prev" aria-label="Página anterior de relaciones">← Anterior</button><button type="button" id="local-next" aria-label="Página siguiente de relaciones">Siguiente →</button></div></div><div class="local-legend" aria-label="Nivel de evidencia de los vínculos"><span><b></b>Contrastado externamente</span><span class="source"><b></b>Relato o documentación de fuente</span><span class="indication"><b></b>Indicio</span><span class="hypothesis"><b></b>Hipótesis</span><span class="mixed"><b></b>Vínculos mixtos</span><span class="mention"><b></b>Solo mención en fuente</span></div></section></div>
 <aside class="panel inspector" id="inspector" aria-label="Información de la entidad seleccionada"><button type="button" id="inspector-drawer-close" class="inspector-drawer-close" aria-label="Deseleccionar entidad o relación" title="Deseleccionar (cerrar ficha)" hidden>×</button><span class="sectionlabel">Cuaderno de investigación</span><div class="overview"><div class="metric"><b id="count-nodes">0</b><span>Entidades</span></div><div class="metric"><b id="count-edges">0</b><span>Enlaces totales</span></div><div class="metric"><b id="count-evidence">0</b><span>Contrastadas externamente</span></div></div><div id="details"><h2>Selecciona una entidad</h2><p>Haz clic en una fotografía, ficha o línea de conexión para consultar sus fuentes y relaciones.</p><p class="minor">Gira el mapa 3D o desplázate por la vista 2D. Usa +/− para ajustar el zoom.</p></div></aside></div>
@@ -530,14 +591,15 @@ body.graph-expanded{overflow:hidden}
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261114-mobile-header"></script>
 <script src="./local-relations-2d.js?v=20261115-neighborhood-2"></script>
-<script src="./source-catalog-public.js?v=20261115-sources-1"></script>
-<script src="./source-filter.js?v=20261115-sources-1"></script>
+<script src="./source-catalog-public.js?v=20261115-sources-2"></script>
+<script src="./source-filter.js?v=20261115-sources-2"></script>
+<script src="./source-directory.js?v=20261115-directory-1"></script>
 <script src="./rankings.js?v=20261113-rankings-1"></script>
 <script>
 (function(){
 "use strict";
 var DEMO={nodes:[{id:"demo-a",name:"Persona A",kind:"Persona",subtitle:"Ejemplo",note:"Identidad ficticia de demostración",x:250,y:220},{id:"demo-b",name:"Persona B",kind:"Persona",subtitle:"Ejemplo",note:"Identidad ficticia de demostración",x:720,y:210},{id:"demo-c",name:"Organización X",kind:"Organización",subtitle:"Ejemplo",note:"Entidad ficticia",x:510,y:430}],edges:[{id:"demo-e1",a:"demo-a",b:"demo-c",type:"Colaboración",confidence:"documentado",note:"Relación ficticia de prueba"},{id:"demo-e2",a:"demo-b",b:"demo-c",type:"Vínculo por investigar",confidence:"hipotesis",note:"Hipótesis ficticia"}]};
-var data={nodes:[],edges:[]},demo=false,seedError=false,view="graph",selection=null,cam={x:0,y:0,s:1},drag=null;var CARD_W=200,CARD_H=120,edgeMode="focus",hoveredNodeId=null,dimensionMode="3d",graph3d=null,localDiagram=null;var photoLookup=new Map(),photoPages=new Map();var sourceTracker=window.IdeaLabSourceFilters?window.IdeaLabSourceFilters.createTracker(window.IDEA_TELARANA_PUBLIC_SOURCES||[]):null,sourceControls=null,shownData=data;
+var data={nodes:[],edges:[]},demo=false,seedError=false,view="graph",selection=null,cam={x:0,y:0,s:1},drag=null;var CARD_W=200,CARD_H=120,edgeMode="focus",hoveredNodeId=null,dimensionMode="3d",graph3d=null,localDiagram=null;var photoLookup=new Map(),photoPages=new Map();var sourceTracker=window.IdeaLabSourceFilters?window.IdeaLabSourceFilters.createTracker(window.IDEA_TELARANA_PUBLIC_SOURCES||[]):null,sourceControls=null,sourceDirectory=null,shownData=data;
 var $=function(id){return document.getElementById(id)},N=function(tag,txt,cls){var e=document.createElement(tag);if(txt!=null)e.textContent=txt;if(cls)e.className=cls;return e},NS="http://www.w3.org/2000/svg";
 var S=function(tag,attr){var e=document.createElementNS(NS,tag);Object.keys(attr||{}).forEach(function(k){e.setAttribute(k,String(attr[k]))});return e};
 function sanitizePodcastNotes(value){
@@ -1828,6 +1890,13 @@ $("rank-limit").addEventListener("change",updateRankings);
 
 
 load();fitGraph();
+if(sourceTracker&&window.IdeaLabSourceDirectory){
+ sourceDirectory=window.IdeaLabSourceDirectory.mount({
+  engine:sourceTracker,details:$("sources-directory"),body:$("sources-dir-body"),
+  search:$("sources-dir-search"),type:$("sources-dir-type"),
+  sort:$("sources-dir-sort"),count:$("sources-dir-count")
+ });
+}
 if(sourceTracker&&window.IdeaLabSourceFilters){
  sourceControls=window.IdeaLabSourceFilters.mount({
   engine:sourceTracker,button:$("source-filter-toggle"),panel:$("source-filter-panel"),
