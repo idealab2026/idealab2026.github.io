@@ -218,5 +218,5 @@ function create(config){
  panel.hidden=true;
  return {update:update,buildNeighborhood:buildNeighborhood};
 }
-global.IdeaLabLocalRelations={create:create,buildNeighborhood:buildNeighborhood,relationTier:relationTier,groupTier:groupTier,PAGE_SIZE:PAGE_SIZE};
+global.IdeaLabLocalRelations={create:create,buildNeighborhood:buildNeighborhood,relationTier:relationTier,groupTier:groupTier,wrapRelationLabel:wrapRelationLabel,PAGE_SIZE:PAGE_SIZE};
 })(window);
