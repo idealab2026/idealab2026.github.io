@@ -8,7 +8,7 @@ assert(prefix,"La cabecera propia debe sustituir a la antigua cabecera de texto"
 for(const token of [
  'id="site-header"','class="site-header-inner"','class="site-identity"',
  'class="site-name"','La Telaraña</a>','Un producto de',
- 'src="/logo-idea-lab.svg"','id="site-nav"','aria-label="Navegación principal de La Telaraña"',
+ 'src="./logo-idea-lab-dark.svg"','id="site-nav"','aria-label="Navegación principal de La Telaraña"',
  'id="header-map"','id="header-rankings"','id="header-sources"',
  'id="header-photos"','href="/linea-historia/"','href="/"',
  'id="header-menu-toggle"','aria-expanded="false"',
