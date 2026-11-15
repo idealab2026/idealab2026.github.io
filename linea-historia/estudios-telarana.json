@@ -4648,6 +4648,39 @@
         ],
         "methodologicalLimits": "La fecha es la publicación del estudio, no el momento de la entrevista. Sus datos se refieren a una población y periodo concretos en EE. UU.; no demuestran una causa religiosa ni describen a todos los judíos del mundo."
       }
+    },
+    {
+      "id": "study-f56-uno-partition-1947",
+      "y": 1947.9095890410958,
+      "t": "La Asamblea General aprueba el plan de partición de Palestina",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 56 · resolución de la ONU",
+      "d": "El 29 de noviembre de 1947 la Asamblea General aprobó la resolución 181, que recomendó un plan de partición con un Estado árabe, otro judío y un régimen internacional para Jerusalén.",
+      "g": [
+        "Asia"
+      ],
+      "p": [
+        "ISR",
+        "PSE"
+      ],
+      "investigation": {
+        "sourceOrder": 56,
+        "sourceTitle": "F56 · Identidades judía y palestina",
+        "sourceUrl": "https://www.youtube.com/watch?v=mZkKtNLVEqA",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1947-11-29",
+        "confirmedBy": {
+          "label": "Naciones Unidas · resolución 181 (II)",
+          "url": "https://www.un.org/unispal/document/auto-insert-185393/"
+        },
+        "relatedTelarana": [
+          "f56-episodio",
+          "f56-particion",
+          "f56-onu"
+        ],
+        "methodologicalLimits": "La fecha corresponde a la votación, no al establecimiento de ambos Estados ni a fronteras definitivas. El plan fue aceptado por la Agencia Judía y rechazado por dirigentes árabes palestinos y Estados árabes; la guerra y el desplazamiento requieren tratamiento propio."
+      }
     }
   ]
 }

@@ -57,6 +57,8 @@ jobs:
         run: node scripts/test_telarana_source49_candidate.mjs
       - name: Comprobar límites de evidencia en fuente 55
         run: node scripts/test_telarana_source55.mjs
+      - name: Comprobar identidades y evidencia en fuente 56
+        run: node scripts/test_telarana_source56.mjs
       - name: Validar fuentes 18 y 21, Lorenzo y presencia en Pages
         run: node scripts/test_telarana_recent_sources.mjs
       - name: Auditar anclas cronometradas y contrastes F18 F21
@@ -234,6 +236,7 @@ jobs:
           cp la-telarana/fuente-54-judaismo.js dist/la-telarana/fuente-54-judaismo.js
           cp la-telarana/fuente-49-candidato.js dist/la-telarana/fuente-49-candidato.js
           cp la-telarana/fuente-55-exodo.js dist/la-telarana/fuente-55-exodo.js
+          cp la-telarana/fuente-56-identidades.js dist/la-telarana/fuente-56-identidades.js
           cp la-telarana/fuente-33-rothschild-inicial.js dist/la-telarana/fuente-33-rothschild-inicial.js
           cp la-telarana/fuente-34-francisco-primera-revision.js dist/la-telarana/fuente-34-francisco-primera-revision.js
           cp la-telarana/fuente-39-egiptologia-revision.js dist/la-telarana/fuente-39-egiptologia-revision.js
