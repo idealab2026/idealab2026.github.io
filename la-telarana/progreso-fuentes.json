@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 63,
-    "notStarted": 8,
+    "inReview": 64,
+    "notStarted": 7,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1973,6 +1973,26 @@
       "documentaryChecks": 3,
       "timelineVerifiedEventsCommitted": 0,
       "qualityNotes": "Se distinguen hipótesis y evidencias. Errores potenciales de subtitulado en Ramsés II y guerras sirias; localización del templo sin corroborar. Sin audio cotejado.",
+      "lastUpdated": "2026-11-15"
+    },
+    {
+      "order": 66,
+      "videoId": "VeZ7tAlczk0",
+      "title": "JESÚS DE NAZARET: Todas las pruebas escritas y arqueológicas de su existencia",
+      "sourceUrl": "https://www.youtube.com/watch?v=VeZ7tAlczk0",
+      "status": "primera_revision_documental_parcial_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-66-jesus-historico.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 18,
+      "sourceRelationsDocumented": 20,
+      "personsProfiled": 0,
+      "documentaryChecks": 5,
+      "timelineVerifiedEventsCommitted": 0,
+      "qualityNotes": "Tácito y Suetonio contrastados en sus propios textos; Gálatas, inscripción de Pilato y datación radiocarbónica distinguidos de inferencias. Sin audio cotejado.",
       "lastUpdated": "2026-11-15"
     }
   ],
@@ -6366,18 +6386,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 65,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6390,15 +6410,25 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 20,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 18,
+            "relations": 20,
+            "biographies": 0,
+            "statements": 10,
+            "independentChecks": 5,
+            "verifiedTimelineEvents": 0
+          },
+          "nextAction": "Cotejar audio y profundizar crítica de las fuentes antiguas, sus dependencias y hallazgos arqueológicos."
         }
       },
       {
