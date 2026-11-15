@@ -41,7 +41,9 @@ jobs:
         run: node scripts/test_telarana_fullscreen_search.mjs
       - name: Validar distribución 3D y gestos de zoom
         run: node scripts/test_telarana_3d.mjs
-      - name: Validar esquema 2D de vecinos directos y navegación\n        run: node scripts/test_telarana_local_relations.mjs\n      - name: Validar biografías independientes y testimonios
+      - name: Validar esquema 2D de vecinos directos y navegación
+        run: node scripts/test_telarana_local_relations.mjs
+      - name: Validar biografías independientes y testimonios
         run: node scripts/test_telarana_person_bios.mjs
       - name: Evitar enlaces a documentos privados en La Telaraña
         run: node scripts/test_telarana_public_privacy.mjs
