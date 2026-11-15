@@ -18,7 +18,7 @@ const gobEdge=f.edges.find(e=>e.id==='f53-gobekli-hipotesis');
 assert(gobEdge&&gobEdge.confidence==='hipotesis'&&gobEdge.claimStatus==='interpretacion_del_episodio_no_demostrada');
 assert(!f.edges.some(e=>!ids.has(e.a)||!ids.has(e.b)),'No puede haber aristas huérfanas');
 assert(f.nodes.find(n=>n.id==='f53-san-borondon').note.includes('leyenda'));
-for(const studyId of ['study-f53-carter-antecámara-1922','study-f53-daniken-libro-1968']){
+for(const studyId of ['study-f53-carter-antecamara-1922','study-f53-daniken-libro-1968']){
  const x=h.items.find(e=>e.id===studyId);
  assert(x&&x.investigation.status==='hecho_documentado');
  assert(x.investigation.methodologicalLimits.length>=60);
