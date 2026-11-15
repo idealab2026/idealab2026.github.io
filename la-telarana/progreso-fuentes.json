@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 65,
-    "notStarted": 6,
+    "inReview": 66,
+    "notStarted": 5,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -2013,6 +2013,26 @@
       "documentaryChecks": 3,
       "timelineVerifiedEventsCommitted": 0,
       "qualityNotes": "Primera revisión acotada de transcripción extensa; se atribuyen opiniones y se contrasta datación de muestras y Marcos 6:3. Sin audio cotejado.",
+      "lastUpdated": "2026-11-15"
+    },
+    {
+      "order": 68,
+      "videoId": "vPaUnI8nhfU",
+      "title": "La HISTORIA DESCONOCIDA de JESÚS DE NAZARET - Luis Antequera | Aladetres 130",
+      "sourceUrl": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "status": "primera_revision_documental_parcial_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-68-pasion.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 10,
+      "sourceRelationsDocumented": 9,
+      "personsProfiled": 0,
+      "documentaryChecks": 4,
+      "timelineVerifiedEventsCommitted": 0,
+      "qualityNotes": "Revisión inicial acotada; contrastados Tácito, Suetonio, Juan 19 y Nostra aetate. Sin audio cotejado; no se atribuye al hablante una posible confusión de subtítulos.",
       "lastUpdated": "2026-11-15"
     }
   ],
@@ -6516,18 +6536,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 67,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6540,15 +6560,25 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 10,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 10,
+            "relations": 9,
+            "biographies": 0,
+            "statements": 6,
+            "independentChecks": 4,
+            "verifiedTimelineEvents": 0
+          },
+          "nextAction": "Revisar íntegra la entrevista extensa, cotejar audio y contrastar interpretaciones y fuentes de la pasión."
         }
       },
       {
