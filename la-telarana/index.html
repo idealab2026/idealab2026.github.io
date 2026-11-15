@@ -378,6 +378,16 @@ body.graph-expanded{overflow:hidden}
  .graph-panel:fullscreen>.local-panel .local-scroll,.graph-panel.is-fullscreen>.local-panel .local-scroll{max-height:15vh}
  .graph-panel:fullscreen>.local-panel .local-legend,.graph-panel.is-fullscreen>.local-panel .local-legend{display:none}
 }
+/* En móviles, el inspector se conserva como hoja inferior y el esquema queda encima, sin taparlo. */
+@media(max-width:700px){
+ .graph-panel:fullscreen.drawer-open>.inspector,.graph-panel:-webkit-full-screen.drawer-open>.inspector,.graph-panel.is-fullscreen.drawer-open>.inspector{height:min(49dvh,480px)}
+ .graph-panel:fullscreen>.local-panel,.graph-panel:-webkit-full-screen>.local-panel,.graph-panel.is-fullscreen>.local-panel{
+  top:82px;bottom:auto;left:8px;width:calc(100% - 16px);
+  max-height:calc(51dvh - 100px);padding:9px
+ }
+ .graph-panel:fullscreen>.local-panel .local-scroll,.graph-panel:-webkit-full-screen>.local-panel .local-scroll,.graph-panel.is-fullscreen>.local-panel .local-scroll{max-height:calc(51dvh - 210px)}
+ .graph-panel:fullscreen.drawer-open .fullscreen-search-bar,.graph-panel:-webkit-full-screen.drawer-open .fullscreen-search-bar,.graph-panel.is-fullscreen.drawer-open .fullscreen-search-bar{display:none}
+}
 
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
