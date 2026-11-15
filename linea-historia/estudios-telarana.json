@@ -4616,6 +4616,38 @@
         ],
         "methodologicalLimits": "Se registra el año documentado; no se añade un día exacto. El nombre Coliseo es posterior y el audio no está cotejado."
       }
+    },
+    {
+      "id": "study-f54-pew-jewish-americans-2021",
+      "y": 2021.3561643835617,
+      "t": "Publicación de una encuesta sobre judíos estadounidenses",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 54 · estudio social independiente",
+      "d": "El 11 de mayo de 2021 Pew Research Center publicó los resultados de una encuesta de adultos judíos en Estados Unidos, con información sobre identidad y situación económica.",
+      "g": [
+        "América"
+      ],
+      "p": [
+        "USA"
+      ],
+      "investigation": {
+        "sourceOrder": 54,
+        "sourceTitle": "F54 · Conversación sobre judaísmo y economía",
+        "sourceUrl": "https://www.youtube.com/watch?v=ndMcUWvRsj8",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2021-05-11",
+        "confirmedBy": {
+          "label": "Pew Research Center · estudio de 2020",
+          "url": "https://www.pewresearch.org/religious-landscape-study/2021/05/11/jewish-americans-in-2020/"
+        },
+        "relatedTelarana": [
+          "f54-episodio",
+          "f54-pew-2020",
+          "f54-economia"
+        ],
+        "methodologicalLimits": "La fecha es la publicación del estudio, no el momento de la entrevista. Sus datos se refieren a una población y periodo concretos en EE. UU.; no demuestran una causa religiosa ni describen a todos los judíos del mundo."
+      }
     }
   ]
 }

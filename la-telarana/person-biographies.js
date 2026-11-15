@@ -1228,6 +1228,18 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://colosseo.it/en/event/blood-and-the-arena/",
       "sourceTitle": "Parque arqueológico del Coliseo",
       "reviewedAt": "2026-11-14"
+    },
+    "f54-daniel-chapan": {
+      "text": "Daniel Chapán es un rabino y divulgador que participa en conversaciones públicas sobre judaísmo, espiritualidad y experiencias empresariales. La ficha de WORLDCAST lo identifica como invitado en un episodio presentado por Pedro Buerbaum. Sus opiniones y vivencias se presentan como perspectiva personal y no como descripción universal de las personas judías.",
+      "source": "https://podcasts.apple.com/es/podcast/empresario-jud%C3%ADo-revela-los-5-pilares-para-lograr-el-%C3%A9xito/id1827509151?i=1000763888957",
+      "sourceTitle": "Ficha del episodio de WORLDCAST",
+      "reviewedAt": "2026-11-15"
+    },
+    "f54-pedro-buerbaum": {
+      "text": "Pedro Buerbaum es presentador de WORLDCAST, programa de entrevistas que aborda negocios y otras cuestiones culturales. La ficha del episodio lo identifica como presentador de la conversación con Daniel Chapán. La participación de ambos en una entrevista no prueba por sí sola otras relaciones o las afirmaciones expuestas.",
+      "source": "https://podcasts.apple.com/es/podcast/empresario-jud%C3%ADo-revela-los-5-pilares-para-lograr-el-%C3%A9xito/id1827509151?i=1000763888957",
+      "sourceTitle": "Ficha del episodio de WORLDCAST",
+      "reviewedAt": "2026-11-15"
     }
   }
 };
