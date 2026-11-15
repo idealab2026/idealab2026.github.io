@@ -470,16 +470,47 @@ body.graph-expanded{overflow:hidden}
 .sources-table th:nth-child(5){width:16%}.sources-table th:nth-child(6){width:22%}
 .sources-table th:nth-child(7){width:8%}
 @media(max-width:650px){.sources-directory>summary{padding:13px 11px}.sources-directory>summary span{font-size:.67rem}.sources-dir-content{padding:11px}.sources-dir-controls{flex-direction:column;align-items:stretch}.sources-dir-controls label{justify-content:space-between}.sources-dir-controls input{flex:0 0 auto;width:100%}}
+
+/* Franja principal de navegación: controles, búsqueda, recientes, Rankings y Fuentes en UNA fila. */
+.top-controls{display:flex;align-items:center;gap:9px;flex-wrap:nowrap;max-width:100%;min-width:0;margin:0 0 12px;padding:2px 1px 7px;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.top-controls .toolbar{display:flex;flex:1 1 445px;min-width:350px;align-items:center;flex-wrap:nowrap;gap:8px;margin:0}
+.top-controls .toolbar .btn{flex:0 0 auto;white-space:nowrap}
+.top-controls .toolbar .search{flex:1 1 250px;min-width:205px;max-width:none;width:100%}
+.top-controls .recent-links{display:flex;flex:0 0 auto;align-items:center;gap:5px;flex-wrap:nowrap;margin:0;font-size:.7rem}
+.top-controls .recent-links span{white-space:nowrap;margin-right:3px}
+.top-controls .recent-links button{flex:0 0 auto;white-space:nowrap;padding:9px 8px}
+.top-controls-tab{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex:0 0 auto;min-height:42px;padding:9px 13px;border:1px solid #526b7e;border-radius:9px;background:#1a2938;color:#f2ddb7;font-size:.78rem;font-weight:780;white-space:nowrap}
+.top-controls-tab::after{content:"⌄";font-size:1rem;color:#d8ae7d}
+.top-controls-tab[aria-expanded="true"]{border-color:#e3aa69;background:#283341}
+.top-controls-tab[aria-expanded="true"]::after{content:"⌃"}
+.top-controls-tab:hover,.top-controls-tab:focus-visible{border-color:#e3aa69;color:#ffe3b8}
+#rankings-panel:not([open]),#sources-directory:not([open]){display:none}
+#rankings-panel>summary,#sources-directory>summary{display:none!important}
+#rankings-panel[open],#sources-directory[open]{margin:0 0 14px;border-color:#526c82}
+#rankings-panel[open] .rankings-content,#sources-directory[open] .sources-dir-content{padding-top:16px}
+@media(max-width:800px){
+ .top-controls{gap:7px}
+ .top-controls .toolbar{flex:0 0 auto;min-width:0}
+ .top-controls .toolbar .search{flex:0 0 235px;min-width:185px}
+ .top-controls .recent-links{gap:5px}
+ .top-controls .recent-links span{white-space:nowrap}
+ .top-controls-tab{padding:8px 11px}
+}
+@media(max-width:450px){.top-controls .toolbar .search{flex-basis:210px}.top-controls .toolbar .btn{padding:9px 11px}}
 </style></head><body><header><a class="brand" href="/">IDEA <b>LAB</b> / INVESTIGACIÓN RELACIONAL</a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
+<div class="top-controls" role="group" aria-label="Navegación y búsqueda de La Telaraña">
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
-<div id="search-results" class="search-results hidden" role="region" aria-label="Resultados de la búsqueda" aria-live="polite"></div>
 <div class="recent-links" aria-label="Últimas incorporaciones a La Telaraña">
  <span>Incorporaciones recientes</span>
  <button type="button" data-recent-id="f18-lorenzo" data-recent-name="Lorenzo Ramírez">Lorenzo Ramírez</button>
  <button type="button" data-recent-id="f18-episodio" data-recent-name="Podcast · Epstein, EEUU e Israel (F18)">Fuente 18 · Epstein</button>
  <button type="button" data-recent-id="f21-episodio" data-recent-name="Podcast · Orden mundial (F21)">Fuente 21 · Nuevo orden</button>
  </div>
+<button type="button" class="top-controls-tab" id="rankings-toggle" aria-controls="rankings-panel" aria-expanded="false">Rankings</button>
+<button type="button" class="top-controls-tab" id="sources-directory-toggle" aria-controls="sources-directory" aria-expanded="false">Fuentes</button>
+</div>
+<div id="search-results" class="search-results hidden" role="region" aria-label="Resultados de la búsqueda" aria-live="polite"></div>
 <details id="rankings-panel" class="rankings-panel"><summary><strong>Rankings de entidades y relaciones</strong><span>Centralidad y evidencia · explorar</span></summary><div class="rankings-content"><div class="rankings-controls"><div class="rankings-tabs" role="group" aria-label="Tipo de ranking"><button type="button" id="rank-entities-tab" class="is-active" aria-pressed="true">Entidades</button><button type="button" id="rank-relations-tab" aria-pressed="false">Relaciones</button></div><label for="rank-scope">Ámbito <select id="rank-scope"><option value="substantive">Solo vínculos entre entidades</option><option value="all">Incluir menciones en fuentes</option></select></label><label for="rank-limit">Mostrar <select id="rank-limit"><option value="10">10</option><option value="25">25</option><option value="50">50</option></select></label></div><div id="rank-list" class="rankings-table-wrap" role="region" aria-label="Clasificación del grafo"></div><p id="rank-caption" class="rankings-note"></p></div></details>
 <details id="sources-directory" class="sources-directory"><summary><strong>Fuentes · catálogo e investigación</strong><span>74 entradas · análisis editorial · enlaces y participantes</span></summary>
 <div class="sources-dir-content">
@@ -1887,6 +1918,29 @@ $("rank-entities-tab").addEventListener("click",function(){setRankView("entities
 $("rank-relations-tab").addEventListener("click",function(){setRankView("relations")});
 $("rank-scope").addEventListener("change",updateRankings);
 $("rank-limit").addEventListener("change",updateRankings);
+function syncTopControls(){
+ var rank=$("rankings-panel"),sources=$("sources-directory");
+ [
+  [$("rankings-toggle"),rank.open],
+  [$("sources-directory-toggle"),sources.open]
+ ].forEach(function(pair){
+  pair[0].setAttribute("aria-expanded",String(pair[1]));
+  pair[0].classList.toggle("is-active",pair[1]);
+ });
+}
+function openTopPanel(which){
+ var target=$(which==="rankings"?"rankings-panel":"sources-directory");
+ var other=$(which==="rankings"?"sources-directory":"rankings-panel");
+ var opening=!target.open;
+ other.open=false;
+ target.open=opening;
+ syncTopControls();
+}
+$("rankings-toggle").addEventListener("click",function(){openTopPanel("rankings")});
+$("sources-directory-toggle").addEventListener("click",function(){openTopPanel("sources")});
+$("rankings-panel").addEventListener("toggle",syncTopControls);
+$("sources-directory").addEventListener("toggle",syncTopControls);
+syncTopControls();
 
 
 load();fitGraph();

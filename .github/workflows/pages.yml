@@ -47,6 +47,8 @@ jobs:
         run: node scripts/test_telarana_source_filter.mjs
       - name: Validar catálogo público tabular de fuentes y barra de controles compacta
         run: node scripts/test_telarana_source_directory.mjs
+      - name: Validar fila única de navegación de La Telaraña
+        run: node scripts/test_telarana_top_controls.mjs
       - name: Validar biografías independientes y testimonios
         run: node scripts/test_telarana_person_bios.mjs
       - name: Evitar enlaces a documentos privados en La Telaraña
