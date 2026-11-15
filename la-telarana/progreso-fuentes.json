@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 62,
-    "notStarted": 9,
+    "inReview": 63,
+    "notStarted": 8,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1953,6 +1953,26 @@
       "documentaryChecks": 4,
       "timelineVerifiedEventsCommitted": 1,
       "qualityNotes": "Se distingue tradición religiosa y evidencia; se contrastan sionismo anterior al Holocausto, destrucción del templo y ley española. Sin audio cotejado.",
+      "lastUpdated": "2026-11-15"
+    },
+    {
+      "order": 64,
+      "videoId": "TNTf1wtPaCs",
+      "title": "🕎 HISTORIA de los JUDÍOS ",
+      "sourceUrl": "https://www.youtube.com/watch?v=TNTf1wtPaCs",
+      "status": "primera_revision_documental_parcial_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-64-historia-antigua.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 18,
+      "sourceRelationsDocumented": 19,
+      "personsProfiled": 0,
+      "documentaryChecks": 3,
+      "timelineVerifiedEventsCommitted": 0,
+      "qualityNotes": "Se distinguen hipótesis y evidencias. Errores potenciales de subtitulado en Ramsés II y guerras sirias; localización del templo sin corroborar. Sin audio cotejado.",
       "lastUpdated": "2026-11-15"
     }
   ],
@@ -6260,18 +6280,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 63,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6284,15 +6304,25 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": true,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 20,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 18,
+            "relations": 19,
+            "biographies": 0,
+            "statements": 11,
+            "independentChecks": 3,
+            "verifiedTimelineEvents": 0
+          },
+          "nextAction": "Cotejar audio, hipótesis sobre orígenes, cronologías antiguas y afirmaciones arqueológicas sobre el templo."
         }
       },
       {
