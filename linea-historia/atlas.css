@@ -53,3 +53,13 @@ body.history-note-open #timeline-panel.is-maximized #history-atlas-context{right
 @media(max-width:1100px){#history-atlas-context{width:280px}#timeline-panel #viewport{width:calc(100% - 300px)}#timeline-panel .history-minimap{right:313px}.atlas-layout{grid-template-columns:1fr}.atlas-contemporaries{max-height:250px}}
 @media(max-width:760px){#history-atlas-context{position:relative;top:auto;right:auto;bottom:auto;width:100%;margin-top:10px;max-height:380px}#timeline-panel #viewport{width:100%}#timeline-panel .history-minimap{right:10px;bottom:395px}#timeline-panel.is-maximized #history-atlas-context{max-height:220px;flex:0 0 220px}#timeline-panel.is-maximized .history-minimap{bottom:245px}body.history-note-open #timeline-panel.is-maximized #history-atlas-context{right:auto}body.history-note-open #atlas-panel.is-maximized{padding-right:10px;padding-bottom:68dvh}.atlas-large-stage{height:40vh;min-height:240px}.atlas-controls{padding:8px}.atlas-controls input[type=range]{min-width:100px}}
 @media(prefers-reduced-motion:reduce){.atlas-action,.atlas-gallery button{transition:none}}
+
+/* Additional imported Excel images remain in an unclassified review gallery. */
+.atlas-archive{border-top:1px solid #3d5770;padding-top:16px;margin-top:14px}
+.atlas-archive h3{font-size:.96rem;margin:4px 0 8px}
+.atlas-archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:9px;max-height:580px;overflow:auto;overscroll-behavior:contain;padding:3px}
+.atlas-archive-card{border:1px solid #405e75;border-radius:9px;background:#122c42;text-decoration:none;overflow:hidden;padding-bottom:9px;display:flex;flex-direction:column}
+.atlas-archive-card:hover,.atlas-archive-card:focus-visible{border-color:#deb876}
+.atlas-archive-card img{width:100%;height:115px;object-fit:contain;background:#f1efe7}
+.atlas-archive-card span{font-size:.68rem;color:#e5eef7;padding:7px 8px 2px;line-height:1.35}
+.atlas-archive-card small{font-size:.62rem;color:#b1c2d2;padding:2px 8px;line-height:1.35}
