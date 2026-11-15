@@ -26,7 +26,7 @@ assert(!html.includes("Ver panel de fotografías")&&!html.includes("Panel fotogr
 assert(html.includes('Haz clic en una entidad, ficha o línea de conexión'),"La ficha no debe exigir fotografías");
 
 const start=html.indexOf("function setView(){");
-const end=html.indexOf("\n // Priorizar nombres",start);
+const end=html.indexOf("\nfunction searchCandidates(q){",start);
 assert(start>0&&end>start,"setView debe mantenerse");
 const code=html.slice(start,end);
 const state={};
