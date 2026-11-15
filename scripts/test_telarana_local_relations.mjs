@@ -74,6 +74,32 @@ params.minimize.dispatch("click");
 assert(params.panel.classList.contains("is-collapsed")&&params.minimize.attrs["aria-expanded"]==="false","Contraer no borra selección");
 panel.update([],[],null);
 assert.equal(params.panel.hidden,true,"Sin selección no debe quedar esquema obsoleto");
+// Caso real observado: Rubén Gisbert tiene únicamente menciones de fuente; no debe aparecer solo.
+const mentionOnlyNodes=[
+ {id:"gisbert",name:"Rubén Gisbert",kind:"Persona",subtitle:"Comunicador y abogado español"},
+ {id:"source1",name:"Entrevista F18",kind:"Fuente"},
+ {id:"source2",name:"Entrevista F16",kind:"Fuente"},
+ {id:"source3",name:"Documento F18",kind:"Fuente"}
+];
+const mentionOnlyEdges=[1,2,3].map((n)=>({id:"mention"+n,a:"gisbert",b:"source"+n,type:"Mención en fuente"}));
+const mentionEvidence=(edge)=>edge.type==="Mención en fuente";
+const emptySubstantive=service.buildNeighborhood(mentionOnlyNodes,mentionOnlyEdges,"gisbert",false,mentionEvidence);
+assert.equal(emptySubstantive.totalEdges,0,"El estado probatorio sigue sin incluir enlaces de mera mención");
+const autoOpts={...params,mentions:new FakeElement(),minimize:new FakeElement(),panel:new FakeElement(),svg:new FakeElement(),heading:new FakeElement(),summary:new FakeElement(),pageLabel:new FakeElement(),prev:new FakeElement(),next:new FakeElement(),isSourceMention:mentionEvidence};
+const autoPanel=service.create(autoOpts);
+autoPanel.update(mentionOnlyNodes,mentionOnlyEdges,{kind:"node",id:"gisbert"});
+assert.equal(autoOpts.mentions.checked,true,"La vista debe activar menciones automáticamente si no hay vínculos sustantivos");
+assert.equal(autoOpts.svg.children.filter(c=>c.attrs.class?.startsWith("local-node")).length,4,"Centro + tres fuentes deben renderizarse");
+assert(autoOpts.summary.textContent.includes("3 menciones en fuentes")&&autoOpts.summary.textContent.includes("sin vínculos sustantivos"),"No confundir mención y relación sustantiva");
+assert.equal(autoOpts.svg.attrs.height,"307","El SVG debe ajustar su tamaño intrínseco al viewBox, sin huecos verticales");
+assert(autoOpts.svg.children.some(c=>c.attrs.class?.includes("local-edge-pill mention")),"Las aristas de mera mención deben identificarse");
+autoOpts.mentions.checked=false;autoOpts.mentions.dispatch("change");
+assert(autoOpts.summary.textContent.includes("activa «Incluir menciones"),"Al desactivar las menciones, indicar cómo reactivar el esquema");
+assert.equal(autoOpts.svg.children.filter(c=>c.attrs.class?.startsWith("local-node")).length,1);
+autoPanel.update(nodes,edges,{kind:"node",id:"a"});
+assert.equal(autoOpts.mentions.checked,false,"Al pasar a otro nodo con relaciones sustantivas vuelve el filtro normal");
+assert.equal(autoOpts.svg.children.filter(c=>c.attrs.class?.startsWith("local-node")).length,3,"Las relaciones sustantivas siguen visibles");
+// La anchura y altura del mapa responden a páginas con más filas; no quedan vacíos gigantes.
 const many=[{id:"a",name:"Centro"}],manyEdges=[];
 for(let i=0;i<29;i++){many.push({id:"node-"+i,name:"Vecino "+String(i).padStart(2,"0")});manyEdges.push({id:"e-"+i,a:"a",b:"node-"+i,type:"Vínculo"})}
 params.mentions.checked=false;params.mentions.dispatch("change");
