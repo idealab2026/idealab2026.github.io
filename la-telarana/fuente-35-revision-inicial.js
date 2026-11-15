@@ -1,15 +1,16 @@
-/* F35: dos pasajes contrastados sin cotejo de audio. */
+/* F35: revisión documental parcial ampliada sin cotejo de audio. */
 window.IDEA_TELARANA_F35_REVIEW = {
   "metadata": {
     "id": "idealab-f35-iran-inicial",
     "sourceOrder": 35,
     "title": "F35 · Conflicto entre Estados Unidos e Irán",
     "url": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
-    "reviewStage": "primera_revision_parcial_sin_audio",
+    "reviewStage": "revision_documental_ampliada_subtitulos_sin_audio",
     "audioVerified": false,
-    "timecodesAvailable": false,
+    "timecodesAvailable": true,
     "reviewComplete": false,
-    "methodologicalNote": "Dos pasajes del texto automático recuperado sin cotejo audiovisual ni integridad verificada. Se distingue la narración de los documentos históricos e institucionales y se evita convertir pronósticos en hechos."
+    "methodologicalNote": "Vídeo de 18:48 con subtítulos automáticos hasta 18:43; tiempos orientativos sin cotejo de audio. Se distinguen hechos fechados, perspectivas y resultados aún no comprobados.",
+    "automaticCaptions": true
   },
   "nodes": [
     {
@@ -17,7 +18,7 @@ window.IDEA_TELARANA_F35_REVIEW = {
       "name": "F35 · Conflicto entre Estados Unidos e Irán",
       "kind": "Fuente",
       "subtitle": "Vídeo; transcripción automática sin cotejar",
-      "note": "Vídeo; transcripción automática sin cotejar",
+      "note": "Vídeo sobre la relación EE. UU.–Irán que incluye acontecimientos hasta febrero de 2026. Subtítulos automáticos con tiempos orientativos; audio y literalidad sin cotejar. No describe necesariamente la situación actual.",
       "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
       "topic3d": "global",
       "photo": "",
@@ -35,11 +36,13 @@ window.IDEA_TELARANA_F35_REVIEW = {
       "podcastNotes": [
         {
           "episodeId": "idealab-f35-iran-inicial",
-          "title": "F35 · revisión parcial sin minuto verificado",
-          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
-          "timeSec": null,
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=47",
+          "timeSec": 47,
           "status": "relato_del_episodio_sin_audio",
-          "text": "La transcripción atribuye a la operación Ajax la destitución de Mosaddeq y afirma que el sah fue proclamado después. El audio y la literalidad siguen sin verificar."
+          "text": "La transcripción atribuye a la operación Ajax la destitución de Mosaddeq y afirma que el sah fue proclamado después. El audio y la literalidad siguen sin verificar.",
+          "minuteVerified": false,
+          "audioVerified": false
         },
         {
           "episodeId": "idealab-f35-iran-inicial",
@@ -96,11 +99,13 @@ window.IDEA_TELARANA_F35_REVIEW = {
       "podcastNotes": [
         {
           "episodeId": "idealab-f35-iran-inicial",
-          "title": "F35 · revisión parcial sin minuto verificado",
-          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
-          "timeSec": null,
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=360",
+          "timeSec": 360,
           "status": "relato_del_episodio_sin_audio",
-          "text": "La transcripción sitúa en 2015 el acuerdo nuclear con Irán y sus compromisos de limitación a cambio de alivio de sanciones. Audio e integridad pendientes."
+          "text": "La transcripción sitúa en 2015 el acuerdo nuclear con Irán y sus compromisos de limitación a cambio de alivio de sanciones. Audio e integridad pendientes.",
+          "minuteVerified": false,
+          "audioVerified": false
         },
         {
           "episodeId": "idealab-f35-iran-inicial",
@@ -122,6 +127,126 @@ window.IDEA_TELARANA_F35_REVIEW = {
       "topic3d": "global",
       "photo": "",
       "podcastNotes": []
+    },
+    {
+      "id": "f35-rehenes",
+      "name": "Crisis de los rehenes en Irán",
+      "kind": "Acontecimiento",
+      "subtitle": "Embajada de EE. UU. · 1979–1981",
+      "note": "El Departamento de Estado documenta la toma del 4 de noviembre de 1979 y 444 días de cautiverio. No todos los rehenes tuvieron idéntico período de detención.",
+      "source": "https://history.state.gov/departmenthistory/short-history/iraniancrises",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=194",
+          "timeSec": 194,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "NotebookLM transcribió «44 días»; los subtítulos automáticos de YouTube indican 444 y el Departamento de Estado documenta 444 días para los diplomáticos rehenes. Se requiere audio para saber qué se dijo."
+        },
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · contraste documental",
+          "source": "https://history.state.gov/departmenthistory/short-history/iraniancrises",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado aporta una referencia fechada; no verifica todas las interpretaciones de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f35-salida2018",
+      "name": "Salida de EE. UU. del JCPOA",
+      "kind": "Acontecimiento",
+      "subtitle": "Decisión estadounidense · 2018",
+      "note": "La Casa Blanca anunció el 8 de mayo de 2018 el fin de la participación estadounidense y la reimposición de sanciones. No equivale a que todos los demás participantes abandonaran ese día.",
+      "source": "https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-ending-united-states-participation-unacceptable-iran-deal/",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=402",
+          "timeSec": 402,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "La fuente sitúa la retirada estadounidense en 2018. El anuncio de la Casa Blanca es del 8 de mayo; otras posiciones y efectos requieren examen propio."
+        },
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · contraste documental",
+          "source": "https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-ending-united-states-participation-unacceptable-iran-deal/",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado aporta una referencia fechada; no verifica todas las interpretaciones de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f35-soleimani",
+      "name": "Qasem Soleimani",
+      "kind": "Persona",
+      "subtitle": "Comandante de la Fuerza Quds",
+      "note": "El Departamento de Defensa estadounidense anunció su muerte en una operación de EE. UU. en enero de 2020. Las justificaciones oficiales son alegaciones de una parte.",
+      "source": "https://www.defense.gov/News/Releases/Release/Article/2049534/statement-by-the-department-of-defense/statement-by-the-department-of-defense/",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=449",
+          "timeSec": 449,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "La fuente menciona la muerte de Soleimani en Bagdad el 3 de enero, hora local. La nota del Pentágono del 2 de enero usa fecha estadounidense y recoge su propia justificación."
+        },
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · contraste documental",
+          "source": "https://www.defense.gov/News/Releases/Release/Article/2049534/statement-by-the-department-of-defense/statement-by-the-department-of-defense/",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado aporta una referencia fechada; no verifica todas las interpretaciones de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f35-ataques2026",
+      "name": "Ataques de febrero de 2026 contra Irán",
+      "kind": "Acontecimiento",
+      "subtitle": "Contexto documentado en la ONU",
+      "note": "El 28 de febrero de 2026 el secretario general de la ONU condenó ataques de EE. UU. e Israel contra Irán y ataques posteriores de Irán contra otros Estados. No se fija aquí la evolución posterior.",
+      "source": "https://www.un.org/sg/en/content/sg/statements/2026-02-28/secretary-generals-remarks-the-security-council-meeting-the-situation-the-middle-east-delivered",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=1063",
+          "timeSec": 1063,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "El vídeo sitúa ataques de EE. UU. e Israel el 28 de febrero de 2026. La ONU los mencionó ese día; las motivaciones y consecuencias afirmadas por el vídeo necesitan contraste propio."
+        },
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · contraste documental",
+          "source": "https://www.un.org/sg/en/content/sg/statements/2026-02-28/secretary-generals-remarks-the-security-council-meeting-the-situation-the-middle-east-delivered",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado aporta una referencia fechada; no verifica todas las interpretaciones de la entrevista."
+        }
+      ]
     }
   ],
   "edges": [
@@ -211,6 +336,72 @@ window.IDEA_TELARANA_F35_REVIEW = {
       "claimStatus": "hecho_documentado_fuente_primaria",
       "note": "El OIEA documenta el acuerdo y la solicitud de verificar los compromisos nucleares.",
       "source": "https://www.iaea.org/sites/default/files/documents/gov-2015-53.pdf",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-ampliacion-mencion-f35-rehenes",
+      "a": "f35-episodio",
+      "b": "f35-rehenes",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema del vídeo; los subtítulos automáticos no sustituyen al cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-ampliacion-mencion-f35-salida2018",
+      "a": "f35-episodio",
+      "b": "f35-salida2018",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema del vídeo; los subtítulos automáticos no sustituyen al cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-ampliacion-mencion-f35-soleimani",
+      "a": "f35-episodio",
+      "b": "f35-soleimani",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema del vídeo; los subtítulos automáticos no sustituyen al cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-ampliacion-mencion-f35-ataques2026",
+      "a": "f35-episodio",
+      "b": "f35-ataques2026",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema del vídeo; los subtítulos automáticos no sustituyen al cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-iran-rehenes",
+      "a": "f35-iran",
+      "b": "f35-rehenes",
+      "type": "Crisis diplomática",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "La toma de la embajada ocurrió en Teherán en 1979.",
+      "source": "https://history.state.gov/departmenthistory/short-history/iraniancrises",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-jcpoa-salida",
+      "a": "f35-jcpoa",
+      "b": "f35-salida2018",
+      "type": "Cese de participación estadounidense",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "Estados Unidos anunció en 2018 que cesaba su participación en el acuerdo.",
+      "source": "https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-ending-united-states-participation-unacceptable-iran-deal/",
       "podcastNotes": []
     }
   ]
