@@ -16,15 +16,14 @@ function safeUrl(url,asset){
 }
 function safeItem(raw){
  if(!raw||typeof raw.id!=="string"||typeof raw.title!=="string"||!raw.id)return null;
- var src=safeUrl(raw.src,true),start=Number(raw.start),end=Number(raw.end),asOf=Number(raw.asOf);
- if(!src||!Number.isFinite(asOf))return null;
- if(!Number.isFinite(start))start=asOf;
- if(!Number.isFinite(end))end=asOf;
- if(start>end)return null;
+ var src=safeUrl(raw.src,true),dated=raw.asOf!==null&&raw.asOf!==undefined&&raw.asOf!==""&&Number.isFinite(Number(raw.asOf));
+ var asOf=dated?Number(raw.asOf):null,start=dated?Number(raw.start):null,end=dated?Number(raw.end):null;
+ if(!src)return null;
+ if(dated){if(raw.start===null||!Number.isFinite(start))start=asOf;if(raw.end===null||!Number.isFinite(end))end=asOf;if(start>end)return null;}
  return{ id:raw.id,title:raw.title.slice(0,180),src:src,
   sourceUrl:safeUrl(raw.sourceUrl,false),credit:String(raw.credit||"Fuente no verificada").slice(0,220),
   note:String(raw.note||"").slice(0,400),kind:String(raw.kind||"Imagen histórica").slice(0,80),
-  start:start,end:end,asOf:asOf,hints:Array.isArray(raw.hints)?raw.hints.filter(function(x){return typeof x==="string"}).slice(0,15):[],
+  start:start,end:end,asOf:asOf,anchor:String(raw.anchor||"").slice(0,18),sheet:String(raw.sheet||"").slice(0,60),hints:Array.isArray(raw.hints)?raw.hints.filter(function(x){return typeof x==="string"}).slice(0,15):[],
   eventIds:Array.isArray(raw.eventIds)?raw.eventIds.filter(function(x){return typeof x==="string"}):[],
   provenance:String(raw.provenance||"archivo").slice(0,70),needsReview:!!raw.needsReview };
 }
@@ -39,9 +38,9 @@ function related(item,d){
 }
 function candidates(){
  var current=state.year,focus=state.pinned?focusedRecord():null;
- var byYear=state.items.filter(function(m){return current>=m.start&&current<=m.end});
+ var byYear=state.items.filter(function(m){return m.asOf!==null&&current>=m.start&&current<=m.end});
  if(!focus)return byYear.sort(function(a,b){return Math.abs(current-a.asOf)-Math.abs(current-b.asOf)});
- var exact=state.items.filter(function(m){return related(m,focus)});
+ var exact=state.items.filter(function(m){return m.asOf!==null&&related(m,focus)});
  if(exact.length)return exact.sort(function(a,b){return a.asOf-b.asOf});
  return byYear.sort(function(a,b){return Math.abs(current-a.asOf)-Math.abs(current-b.asOf)});
 }
@@ -62,7 +61,7 @@ function setImage(img,empty,map){
   img.onerror=function(){img.hidden=true;empty.hidden=false;empty.textContent="No se ha podido cargar la imagen externa. Abre la fuente para consultarla."};
   if(src)img.src=src;else img.removeAttribute("src");
  }
- if(src){img.alt=map.title+" · representación de "+api.yearText(map.asOf);empty.hidden=!img.hidden;}
+ if(src){img.alt=map.title+" · representación de "+(map.asOf===null?"fecha aún no determinada":api.yearText(map.asOf));empty.hidden=!img.hidden;}
  else{img.hidden=true;empty.hidden=false;empty.textContent=state.loaded?
   "Aún no hay un mapa catalogado para este año. Usa el deslizador o las flechas para localizar imágenes históricas.":"Cargando catálogo del atlas…"}
 }
@@ -85,7 +84,7 @@ function setYear(raw,fromTimeline){
 }
 function selectMap(id){state.chosen=id;requestUpdate()}
 function goToSnapshot(step){
- var snapshots=state.items.map(function(m){return m.asOf}).filter(Number.isFinite).sort(function(a,b){return a-b});
+ var snapshots=state.items.map(function(m){return m.asOf}).filter(function(y){return y!==null&&Number.isFinite(y)}).sort(function(a,b){return a-b});
  var target=step<0?snapshots.filter(function(y){return y<state.year}).pop():snapshots.find(function(y){return y>state.year});
  if(target!==undefined)setYear(target,false);
 }
@@ -104,6 +103,7 @@ function initDOM(){
  '<div class="atlas-controls"><button id="atlas-prev" class="atlas-action" type="button">◀ Mapa anterior</button><input id="atlas-range" type="range" min="0" max="10000" step="1" aria-label="Desplazar el año por todas las eras"><input id="atlas-number" type="number" min="-541000000" max="2031" step="1" aria-label="Año del atlas"><button id="atlas-next" class="atlas-action" type="button">Mapa siguiente ▶</button><select id="atlas-select" class="atlas-select" aria-label="Seleccionar representación histórica"></select><button id="atlas-release" type="button" class="atlas-action" hidden>Soltar imperio</button><button id="atlas-timeline" type="button" class="atlas-action">Ver año en cronología</button></div>'+
  '<div class="atlas-layout"><figure class="atlas-figure"><div class="atlas-large-stage"><img id="atlas-large-img" class="atlas-image" alt="" hidden><div id="atlas-large-empty" class="atlas-no-image"></div></div><figcaption class="atlas-caption"><h2 id="atlas-large-title"></h2><div class="atlas-map-meta" id="atlas-large-meta"></div><p id="atlas-large-note"></p><p id="atlas-large-credit"></p><a id="atlas-large-source" class="atlas-source" rel="noopener noreferrer" target="_blank" hidden></a></figcaption></figure><aside class="atlas-contemporaries"><h3>Contemporáneos al año seleccionado</h3><div class="muted" id="atlas-record-count"></div><div id="atlas-records"></div></aside></div>'+
  '<div class="atlas-gallery" id="atlas-gallery" aria-label="Galería de imágenes del periodo"></div>'+
+ '<section class="atlas-archive"><h3>Imágenes originales pendientes de catalogar <span id="atlas-archive-count"></span></h3><p class="muted">Se conservan separadas hasta verificar fecha, tema y derechos. Pulsa una miniatura para consultarla sin atribuirle una cronología.</p><div class="atlas-archive-grid" id="atlas-archive-grid"></div></section>'+
  '<p class="muted">Cada mapa es una instantánea de su fecha de referencia. El deslizador no calcula fronteras históricas: muestra láminas documentales disponibles para ese intervalo.</p>';
  $("atlas-side-open").addEventListener("click",function(){api.setView("atlas")});
  $("atlas-side-select").addEventListener("change",function(e){selectMap(e.target.value)});
@@ -136,6 +136,21 @@ function currentRecords(){
   var b=d._end==null?Number(d.e):Number(d._end);
   return Number.isFinite(a)&&(Number.isFinite(b)&&b>a?a<=year&&year<=b:Math.floor(a)===year);
  }).sort(function(a,b){return (a.c==="Acontecimientos"?-1:0)-(b.c==="Acontecimientos"?-1:0)||String(a.t).localeCompare(String(b.t),"es")});
+}
+var archiveSig="";
+function drawArchive(){
+ var archive=state.items.filter(function(m){return m.asOf===null});
+ $("atlas-archive-count").textContent="· "+archive.length;
+ var signature=archive.map(function(m){return m.id}).join("|");
+ if(signature===archiveSig)return;archiveSig=signature;
+ var root=$("atlas-archive-grid");root.replaceChildren();
+ if(!archive.length){root.append(node("p",state.loaded?"Sin imágenes adicionales en el catálogo. Las 81 originales se incorporan con atlas-imported.json y atlas-media/.":"Cargando archivo…","muted"));return;}
+ archive.forEach(function(m){
+  var card=node("a",null,"atlas-archive-card");card.href=m.src;card.target="_blank";card.rel="noopener noreferrer";
+  var pic=node("img");pic.src=m.src;pic.alt=m.title;pic.loading="lazy";pic.decoding="async";
+  card.append(pic,node("span",m.title),node("small",m.sheet+(m.anchor?" · "+m.anchor:"")+" · fecha sin verificar"));
+  root.append(card);
+ });
 }
 function drawRecords(){
  var list=$("atlas-records");list.replaceChildren();
@@ -173,8 +188,8 @@ function render(){
  $("atlas-large-credit").textContent=map?map.credit:"";
  $("atlas-range").value=String(Math.round(api.ratioForYear(state.year)*10000));
  $("atlas-number").value=String(state.year);
- $("atlas-side-prev").disabled=$("atlas-prev").disabled=!state.items.some(function(m){return m.asOf<state.year});
- $("atlas-side-next").disabled=$("atlas-next").disabled=!state.items.some(function(m){return m.asOf>state.year});
+ $("atlas-side-prev").disabled=$("atlas-prev").disabled=!state.items.some(function(m){return m.asOf!==null&&m.asOf<state.year});
+ $("atlas-side-next").disabled=$("atlas-next").disabled=!state.items.some(function(m){return m.asOf!==null&&m.asOf>state.year});
  var gallery=$("atlas-gallery");gallery.replaceChildren();
  items.slice(0,20).forEach(function(m){
   var b=node("button",null);b.type="button";b.setAttribute("aria-pressed",map&&map.id===m.id?"true":"false");
@@ -182,7 +197,7 @@ function render(){
   b.append(img,node("span",m.title+" · "+api.yearText(m.asOf)));
   b.addEventListener("click",function(){selectMap(m.id)});gallery.append(b);
  });
- if(api.getView()==="atlas")drawRecords();
+ if(api.getView()==="atlas"){drawRecords();drawArchive();}
 }
 var scheduled=false;
 function requestUpdate(){
@@ -199,7 +214,7 @@ async function loadCatalogs(){
   if(!item||seen.has(item.id))return false;
   seen.add(item.id);return true;
  });
- state.items.sort(function(a,b){return a.asOf-b.asOf});
+ state.items.sort(function(a,b){return (a.asOf===null?Infinity:a.asOf)-(b.asOf===null?Infinity:b.asOf)});
  state.loaded=true;requestUpdate();
 }
 initDOM();
