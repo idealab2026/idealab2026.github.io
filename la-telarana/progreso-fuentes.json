@@ -5224,7 +5224,13 @@
           "readyForDeepReview": false,
           "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
           "audioVerified": false,
-          "nextAction": "Recuperar y revisar fuente primaria"
+          "nextAction": "Recuperar el PDF original o verificar edición y acceso legítimo completo del candidato homónimo."
+        },
+        "supplementalResearch": {
+          "candidateUrl": "https://www.scribd.com/document/642881280/Platon-Dialogos-6-Filebo-Timeo-Critias-pdf",
+          "identityWithOriginalConfirmed": false,
+          "fullTextRead": false,
+          "scope": "Nombre de archivo coincidente; acceso íntegro y edición no verificados. Timeo y Critias consultados en traducción alternativa de Jowett, no en el PDF original."
         }
       },
       {
@@ -5256,7 +5262,17 @@
           "readyForDeepReview": false,
           "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
           "audioVerified": false,
-          "nextAction": "Recuperar y revisar fuente primaria"
+          "nextAction": "Identificar el recurso original F49 y verificar si coincide con el artículo homónimo; continuar contrastes independientes."
+        },
+        "supplementalResearch": {
+          "candidateUrl": "https://www.celtiberia.net/es/biblioteca/?id=3063",
+          "candidateAuthor": "Javier Torres (según la página)",
+          "identityWithOriginalConfirmed": false,
+          "scope": "Artículo homónimo revisado por separado; F49 original permanece no identificada y al 0 %.",
+          "entitiesInCandidateModule": 11,
+          "relationsInCandidateModule": 13,
+          "independentTextualChecks": 2,
+          "module": "la-telarana/fuente-49-candidato.js"
         }
       },
       {
