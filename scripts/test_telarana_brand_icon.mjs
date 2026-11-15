@@ -15,7 +15,7 @@ assert(/id="sphere"/.test(icon)&&/id="gold"/.test(icon),"Paleta y nodos dorados"
 assert(!/<script|<image\b|(?:href|src)="https?:\/\//i.test(icon),"El favicon debe ser autónomo, vectorial y sin activos externos");
 assert(icon.length<10000,"El favicon no debe resultar pesado");
 
-const iconPath="/la-telarana/icon.svg?v=20261115";
+const iconPath="/la-telarana/icon.svg";
 assert(home.includes('src="'+iconPath+'"'),"La tarjeta de La Telaraña debe usar el icono del proyecto");
 const homeCard=home.match(/<article class="card"><div class="cardtop with-project-icon">[\s\S]*?<\/article>/);
 assert(homeCard&&homeCard[0].includes("<h3>La Telaraña</h3>"),"Emblema en la tarjeta correcta");
