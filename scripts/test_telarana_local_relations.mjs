@@ -115,7 +115,7 @@ params.prev.dispatch("click");
 assert.equal(params.next.disabled,false);
 assert.equal(JSON.stringify({nodes,edges}),original,"Vista de solo lectura: no debe mutar el grafo");
 assert(html.includes('id="local-relations"')&&html.includes('id="local-svg"')&&html.includes('id="local-mentions"'));
-assert(html.includes("local-relations-2d.js?v=")&&html.includes("localDiagram.update(data.nodes,data.edges,selection)"));
+assert(html.includes("local-relations-2d.js?v=")&&html.includes("localDiagram.update(shownData.nodes,shownData.edges,selection)"),"El esquema debe recibir solamente los nodos y vínculos de las fuentes visibles");
 assert(html.includes("function syncFullscreenLocal()")&&html.includes("syncFullscreenLocal();"));
 assert(html.includes("graphPanel.appendChild(localPanel)")&&html.includes("localHome.insertBefore(localPanel,localNext)"));
 assert(html.includes("var inspector=$(\"inspector\")")&&html.includes("syncFullscreenInspector();"),"Se conserva la ficha original");
