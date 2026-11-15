@@ -213,10 +213,6 @@ body.graph-expanded{overflow:hidden}
 @media(max-width:600px){.search-result{min-width:calc(50% - 4px);flex:1}.search-results{padding:10px}}
 
 
-.recent-links{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:-2px 0 13px;font-size:.72rem;color:#aebdcb}
-.recent-links span{font-weight:730;margin-right:3px}
-.recent-links button{background:#1c2936;color:#dfe9f2;border:1px solid #405365;border-radius:8px;padding:6px 9px;font-size:.72rem}
-.recent-links button:hover,.recent-links button:focus-visible{border-color:#e3aa69;color:#f6c48c}
 
 
 .source-report{padding:13px 12px;margin:11px 0;border:1px solid #405364;border-radius:10px;background:#182633}
@@ -471,14 +467,11 @@ body.graph-expanded{overflow:hidden}
 .sources-table th:nth-child(7){width:8%}
 @media(max-width:650px){.sources-directory>summary{padding:13px 11px}.sources-directory>summary span{font-size:.67rem}.sources-dir-content{padding:11px}.sources-dir-controls{flex-direction:column;align-items:stretch}.sources-dir-controls label{justify-content:space-between}.sources-dir-controls input{flex:0 0 auto;width:100%}}
 
-/* Franja principal de navegación: controles, búsqueda, recientes, Rankings y Fuentes en UNA fila. */
+/* Franja principal de navegación: fotografías, búsqueda, Rankings y Fuentes en una sola fila. */
 .top-controls{display:flex;align-items:center;gap:9px;flex-wrap:nowrap;max-width:100%;min-width:0;margin:0 0 12px;padding:2px 1px 7px;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 .top-controls .toolbar{display:flex;flex:1 1 445px;min-width:350px;align-items:center;flex-wrap:nowrap;gap:8px;margin:0}
 .top-controls .toolbar .btn{flex:0 0 auto;white-space:nowrap}
 .top-controls .toolbar .search{flex:1 1 250px;min-width:205px;max-width:none;width:100%}
-.top-controls .recent-links{display:flex;flex:0 0 auto;align-items:center;gap:5px;flex-wrap:nowrap;margin:0;font-size:.7rem}
-.top-controls .recent-links span{white-space:nowrap;margin-right:3px}
-.top-controls .recent-links button{flex:0 0 auto;white-space:nowrap;padding:9px 8px}
 .top-controls-tab{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex:0 0 auto;min-height:42px;padding:9px 13px;border:1px solid #526b7e;border-radius:9px;background:#1a2938;color:#f2ddb7;font-size:.78rem;font-weight:780;white-space:nowrap}
 .top-controls-tab::after{content:"⌄";font-size:1rem;color:#d8ae7d}
 .top-controls-tab[aria-expanded="true"]{border-color:#e3aa69;background:#283341}
@@ -492,8 +485,6 @@ body.graph-expanded{overflow:hidden}
  .top-controls{gap:7px}
  .top-controls .toolbar{flex:0 0 auto;min-width:0}
  .top-controls .toolbar .search{flex:0 0 235px;min-width:185px}
- .top-controls .recent-links{gap:5px}
- .top-controls .recent-links span{white-space:nowrap}
  .top-controls-tab{padding:8px 11px}
 }
 @media(max-width:450px){.top-controls .toolbar .search{flex-basis:210px}.top-controls .toolbar .btn{padding:9px 11px}}
@@ -501,12 +492,6 @@ body.graph-expanded{overflow:hidden}
 <main><span class="eyebrow">Análisis de vínculos · laboratorio visual</span><h1>La <i>Telaraña.</i></h1><p class="lead">Personas, organizaciones, acontecimientos y relaciones en un mismo mapa de investigación. Cada conexión debe distinguir entre una relación documentada, un indicio y una hipótesis. La proximidad visual no implica culpabilidad ni relación causal.</p>
 <div class="top-controls" role="group" aria-label="Navegación y búsqueda de La Telaraña">
 <div class="toolbar"><button class="btn" id="mode">Ver panel de fotografías</button><input class="search" type="search" id="search" placeholder="Buscar personas, instituciones o notas…" aria-label="Buscar entidades"></div>
-<div class="recent-links" aria-label="Últimas incorporaciones a La Telaraña">
- <span>Incorporaciones recientes</span>
- <button type="button" data-recent-id="f18-lorenzo" data-recent-name="Lorenzo Ramírez">Lorenzo Ramírez</button>
- <button type="button" data-recent-id="f18-episodio" data-recent-name="Podcast · Epstein, EEUU e Israel (F18)">Fuente 18 · Epstein</button>
- <button type="button" data-recent-id="f21-episodio" data-recent-name="Podcast · Orden mundial (F21)">Fuente 21 · Nuevo orden</button>
- </div>
 <button type="button" class="top-controls-tab" id="rankings-toggle" aria-controls="rankings-panel" aria-expanded="false">Rankings</button>
 <button type="button" class="top-controls-tab" id="sources-directory-toggle" aria-controls="sources-directory" aria-expanded="false">Fuentes</button>
 </div>
@@ -1853,17 +1838,6 @@ document.addEventListener("keydown",function(e){
   exitFallbackFullscreen();
  }
 });
-document.querySelectorAll("[data-recent-id]").forEach(function(button){
- button.addEventListener("click",function(){
-  var id=button.getAttribute("data-recent-id"),name=button.getAttribute("data-recent-name");
-  var node=getNode(id)||data.nodes.find(function(n){return normalizeEntityName(n.name)===normalizeEntityName(name)});
-  if(!node)return;
-  $("search").value=node.name;
-  view="graph";
-  focusOnSearchEntity(node);
- });
-});
-
 /* Rankings de lectura, excluyendo menciones de fuentes por defecto. */
 var rankView="entities";
 function updateRankings(){

@@ -1,4 +1,4 @@
-/* Regresión: los 5 bloques de navegación comparten UNA barra sin sacrificar tablas a ancho completo. */
+/* Regresión: Fotografías, buscador, Rankings y Fuentes comparten una sola barra, sin accesos recientes. */
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
@@ -9,15 +9,14 @@ assert(navStart>0&&navEnd>navStart,"Navegación principal agrupada antes de los 
 const nav=html.slice(navStart,navEnd+6);
 for(const token of [
  'class="toolbar"','id="mode"','id="search"',
- 'class="recent-links"','data-recent-id="f18-lorenzo"',
  'id="rankings-toggle"','id="sources-directory-toggle"'
 ])assert(nav.includes(token),"Falta "+token+" dentro de la fila única");
 const position=[
- nav.indexOf('class="toolbar"'),nav.indexOf('class="recent-links"'),
- nav.indexOf('id="rankings-toggle"'),nav.indexOf('id="sources-directory-toggle"')
+ nav.indexOf('class="toolbar"'),nav.indexOf('id="rankings-toggle"'),nav.indexOf('id="sources-directory-toggle"')
 ];
-assert(position.every((n,i)=>n>0&&(i===0||n>position[i-1])),"El orden debe ser fotografías/buscar, recientes, rankings y fuentes");
+assert(position.every((n,i)=>n>0&&(i===0||n>position[i-1])),"El orden debe ser fotografías/buscador, rankings y fuentes");
 assert(!nav.includes('<details')&&!nav.includes('<br'),"Los paneles desplegados no van dentro de la franja");
+assert(!html.includes('class="recent-links"')&&!html.includes("data-recent-id")&&!html.includes("Incorporaciones recientes"),"Los accesos recientes deben eliminarse del DOM y del código");
 assert(nav.includes('role="group"')&&nav.includes('aria-controls="rankings-panel"')&&nav.includes('aria-controls="sources-directory"'));
 for(const id of ["rankings-panel","sources-directory"]){
  assert(html.indexOf('id="'+id+'"')>navEnd&&html.indexOf('id="'+id+'"')<html.indexOf('id="graph-panel"'),"Los desplegables siguen debajo de la franja, antes del grafo");
@@ -27,7 +26,6 @@ for(const x of [
  '.top-controls{display:flex;align-items:center',
  'flex-wrap:nowrap','overflow-x:auto',
  '.top-controls .toolbar{display:flex','flex-wrap:nowrap',
- '.top-controls .recent-links{display:flex','flex-wrap:nowrap',
  '.top-controls-tab','aria-expanded="true"',
  '#rankings-panel:not([open]),#sources-directory:not([open]){display:none}',
  '#rankings-panel>summary,#sources-directory>summary{display:none!important}',
@@ -61,4 +59,4 @@ assert.equal(sButton.attributes["aria-expanded"],"true");
 assert.equal(rButton.attributes["aria-expanded"],"false");
 sButton.click();
 assert(!sources.open&&!rankings.open,"El botón vuelve a cerrar la sección");
-console.log("OK: 5 grupos en una fila adaptable; Rankings y Fuentes expanden paneles completos y excluyentes.");
+console.log("OK: fotografías, buscador, Rankings y Fuentes en una línea, sin enlaces recientes; paneles completos y excluyentes.");
