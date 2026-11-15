@@ -4713,6 +4713,38 @@
         ],
         "methodologicalLimits": "La fecha corresponde a la firma del decreto, no al momento de salida de cada persona. El decreto y sus efectos afectaron de modo distinto a quienes partieron o se convirtieron."
       }
+    },
+    {
+      "id": "study-f58-unesco-holy-family-2022",
+      "y": 2022,
+      "t": "UNESCO inscribe festividades de la Sagrada Familia en Egipto",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 58 · patrimonio cultural",
+      "d": "En 2022 la UNESCO incluyó festividades relacionadas con la tradición del viaje de la Sagrada Familia en Egipto en su lista representativa de patrimonio cultural inmaterial.",
+      "g": [
+        "África"
+      ],
+      "p": [
+        "EGY"
+      ],
+      "investigation": {
+        "sourceOrder": 58,
+        "sourceTitle": "F58 · La huida a Egipto y sus tradiciones",
+        "sourceUrl": "https://www.youtube.com/watch?v=c8MzBddVca0",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "2022",
+        "confirmedBy": {
+          "label": "UNESCO · ficha del patrimonio inmaterial",
+          "url": "https://ich.unesco.org/en/RL/festivals-related-to-the-journey-of-the-holy-family-in-egypt-01700"
+        },
+        "relatedTelarana": [
+          "f58-episodio",
+          "f58-fiestas",
+          "f58-unesco"
+        ],
+        "methodologicalLimits": "Se acredita el año de inscripción de festividades contemporáneas, no la historicidad del viaje antiguo ni un día de inscripción no verificado."
+      }
     }
   ]
 }

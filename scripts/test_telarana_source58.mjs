@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};
+vm.runInNewContext(read('la-telarana/fuente-58-huida-egipto.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F58_REVIEW,ids=new Set(f.nodes.map(n=>n.id));
+assert.equal(f.metadata.reviewComplete,false);
+assert.equal(f.metadata.audioVerified,false);
+assert(f.nodes.flatMap(n=>n.podcastNotes).every(n=>n.timeSec===null));
+assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert.match(f.nodes.find(n=>n.id==='f58-fiestas').note,/no comprueba el viaje antiguo/);
+assert.match(f.nodes.find(n=>n.id==='f58-mateo').note,/no enumera un itinerario detallado/i);
+const event=JSON.parse(read('linea-historia/estudios-telarana.json')).items.find(x=>x.id==='study-f58-unesco-holy-family-2022');
+assert.equal(event.investigation.date,'2022');
+assert.match(event.investigation.methodologicalLimits,/no la historicidad/);
+assert(read('la-telarana/index.html').includes('fuente-58-huida-egipto.js'));
+assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-58-huida-egipto.js'));
+console.log('OK: F58 separa narración religiosa y reconocimiento cultural');
