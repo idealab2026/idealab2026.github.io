@@ -55,6 +55,8 @@ jobs:
         run: node scripts/test_telarana_brand_icon.mjs
       - name: Validar cabecera estilo España en Datos y menú móvil
         run: node scripts/test_telarana_observatorio_header.mjs
+      - name: Validar desplazamiento del listado de entidades
+        run: node scripts/test_telarana_entity_list_scroll.mjs
       - name: Validar paleta oscura y contraste de cabecera
         run: node scripts/test_telarana_dark_header.mjs
       - name: Validar biografías independientes y testimonios
