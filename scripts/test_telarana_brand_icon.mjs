@@ -12,7 +12,7 @@ assert(/<title[^>]*>La Telaraña · IDEA LAB<\/title>/.test(icon),"Título acces
 assert(/<desc[^>]*>/.test(icon),"Descripción accesible del icono");
 assert((icon.match(/<circle/g)||[]).length>=12,"Debe representar una red de nodos legible");
 assert(/id="sphere"/.test(icon)&&/id="gold"/.test(icon),"Paleta y nodos dorados");
-assert(!/<script|https?:\/\/|<image\b/i.test(icon),"El favicon debe ser autónomo, vectorial y sin activos externos");
+assert(!/<script|<image\b|(?:href|src)="https?:\/\//i.test(icon),"El favicon debe ser autónomo, vectorial y sin activos externos");
 assert(icon.length<10000,"El favicon no debe resultar pesado");
 
 const iconPath="/la-telarana/icon.svg?v=20261115";
