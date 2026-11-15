@@ -4842,6 +4842,39 @@
         ],
         "methodologicalLimits": "Se registra el inicio de las operaciones israelíes descritas por la fuente, no una conclusión jurídica definitiva sobre todas las causas y responsabilidades del conflicto."
       }
+    },
+    {
+      "id": "study-f63-congreso-sionista-1897",
+      "y": 1897,
+      "t": "Primer Congreso Sionista",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 63 · contraste documental",
+      "d": "En 1897 Theodor Herzl convocó el Primer Congreso Sionista en Basilea, décadas antes del Holocausto. El hecho se incorpora como contraste contextual externo.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "CHE"
+      ],
+      "investigation": {
+        "sourceOrder": 63,
+        "sourceTitle": "F63 · Historia del judaísmo",
+        "sourceUrl": "https://www.youtube.com/watch?v=jfN3dUHdt2c",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "1897",
+        "confirmedBy": {
+          "label": "Museo Conmemorativo del Holocausto de EE. UU.",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/postwar-refugee-crisis-and-the-establishment-of-the-state-of-israel"
+        },
+        "relatedTelarana": [
+          "f63-episodio",
+          "f57-herzl",
+          "f56-sionismo",
+          "f63-congreso1897"
+        ],
+        "methodologicalLimits": "Contexto documental independiente: el vídeo no menciona expresamente el congreso. La fecha se registra con precisión anual."
+      }
     }
   ]
 }

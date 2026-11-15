@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 61,
-    "notStarted": 10,
+    "inReview": 62,
+    "notStarted": 9,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1934,15 +1934,35 @@
       "timelineVerifiedEventsCommitted": 2,
       "qualityNotes": "Se corrigen fechas de 1948 y el inicio de las operaciones de 1967; estatus ONU 2012 y declaraciones con cifras requieren contexto. Sin audio cotejado.",
       "lastUpdated": "2026-11-15"
+    },
+    {
+      "order": 63,
+      "videoId": "jfN3dUHdt2c",
+      "title": "✅ La HISTORIA DE LOS JUDÍOS en 12 minutos | Todo lo que tienes que saber sobre el judaísmo",
+      "sourceUrl": "https://www.youtube.com/watch?v=jfN3dUHdt2c",
+      "status": "primera_revision_documental_parcial_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-63-historia-judia.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 18,
+      "sourceRelationsDocumented": 19,
+      "personsProfiled": 0,
+      "documentaryChecks": 4,
+      "timelineVerifiedEventsCommitted": 1,
+      "qualityNotes": "Se distingue tradición religiosa y evidencia; se contrastan sionismo anterior al Holocausto, destrucción del templo y ley española. Sin audio cotejado.",
+      "lastUpdated": "2026-11-15"
     }
   ],
   "timeline": {
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 156,
+    "committedVerifiedEvents": 157,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 112,
+    "fromSourceInReview": 113,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -2210,6 +2230,9 @@
       "62": [
         "study-f62-palestine-observer-2012",
         "study-f62-june-war-1967"
+      ],
+      "63": [
+        "study-f63-congreso-sionista-1897"
       ]
     },
     "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42658751871",
@@ -6182,18 +6205,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 62,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6206,15 +6229,25 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": true,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 25,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 18,
+            "relations": 19,
+            "biographies": 0,
+            "statements": 9,
+            "independentChecks": 4,
+            "verifiedTimelineEvents": 1
+          },
+          "nextAction": "Cotejar audio y contrastar el relato religioso, la diversidad judía y las fechas y cifras históricas."
         }
       },
       {
