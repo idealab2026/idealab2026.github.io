@@ -63,7 +63,7 @@ const neighbor=cards.find(g=>g.children.some(c=>c.tagName==="title"&&c.textConte
 neighbor.dispatch("click");
 assert.equal(clickedNode,"b","Click en nodo vecino navega al controlador");
 const pills=params.svg.children.filter(x=>x.attrs.class?.startsWith("local-edge-pill"));
-assert.equal(pills.length,2);
+assert.equal(pills.length,3,"Dos vínculos distintos con Vecino B deben tener etiquetas y accesos independientes");
 pills.find(p=>p.children.some(c=>c.tagName==="title"&&c.textContent.includes("Trabajo"))).dispatch("click");
 assert(clickedEdge==="ab1","Click en conexión abre la ficha de la relación");
 panel.update(nodes,edges,{kind:"edge",id:"ab1"});
@@ -99,6 +99,42 @@ assert.equal(autoOpts.svg.children.filter(c=>c.attrs.class?.startsWith("local-no
 autoPanel.update(nodes,edges,{kind:"node",id:"a"});
 assert.equal(autoOpts.mentions.checked,false,"Al pasar a otro nodo con relaciones sustantivas vuelve el filtro normal");
 assert.equal(autoOpts.svg.children.filter(c=>c.attrs.class?.startsWith("local-node")).length,3,"Las relaciones sustantivas siguen visibles");
+// Etiquetas completas sin puntos suspensivos, con saltos de línea y acceso individual.
+const fullLabels=[
+ "Gobierno franquista en el exilio y antecedentes históricos documentados",
+ "Investigación sobre las redes de acogida y protección diplomática",
+ "Refugio en territorio extranjero durante la persecución política",
+ "Protección oficial de las personas solicitantes de asilo"
+];
+const complexNodes=[{id:"root",name:"Entidad central"},{id:"n1",name:"Entidad relacionada 1"},{id:"n2",name:"Entidad relacionada 2"},{id:"n3",name:"Entidad relacionada 3"}];
+const complexEdges=[
+ {id:"full-1",a:"root",b:"n1",type:fullLabels[0],claimStatus:"hecho_verificado_independiente"},
+ {id:"full-2",a:"root",b:"n1",type:fullLabels[1],confidence:"hipotesis"},
+ {id:"full-3",a:"root",b:"n2",type:fullLabels[2],confidence:"indicio"},
+ {id:"full-4",a:"root",b:"n3",type:fullLabels[3],confidence:"documentado"}
+];
+panel.update(complexNodes,complexEdges,{kind:"node",id:"root"});
+const fullPills=params.svg.children.filter(g=>g.attrs.class?.startsWith("local-edge-pill"));
+assert.equal(fullPills.length,4,"Cada relación debe tener un botón aunque dos conecten el mismo par");
+for(let i=0;i<complexEdges.length;i++){
+ const button=fullPills.find(g=>g.children.some(c=>c.tagName==="title"&&c.textContent.includes(fullLabels[i])));
+ assert(button,"Relación completa ausente: "+fullLabels[i]);
+ const lines=button.children.filter(c=>c.tagName==="text").map(c=>c.textContent);
+ assert(lines.length>1,"El texto extenso debe representarse en varias líneas: "+fullLabels[i]);
+ assert.equal(lines.join(" "),fullLabels[i],"Ningún fragmento del nombre puede omitirse ni sustituirse por elipsis");
+ assert(lines.every(line=>!line.includes("…")),"No recortar palabras de las relaciones");
+ assert(button.children.some(c=>c.tagName==="rect"&&Number(c.attrs.width)>=250&&Number(c.attrs.height)>31),"Ajustar el rectángulo a la longitud del texto");
+ button.dispatch("click");assert.equal(clickedEdge,complexEdges[i].id,"Cada arista debe ser seleccionable por separado");
+}
+const labelRects=fullPills.map(g=>g.children.find(c=>c.tagName==="rect"));
+const neighborCards=params.svg.children.filter(g=>g.attrs.class==="local-node");
+assert.equal(neighborCards.length,3);
+const firstCardY=Number(neighborCards[0].children.find(c=>c.tagName==="rect").attrs.y);
+assert(labelRects.every(c=>Number(c.attrs.y)+Number(c.attrs.height)<firstCardY),"La etiqueta más larga no debe chocar con las tarjetas");
+assert(Number(params.svg.attrs.height)>307,"La fila debe crecer dinámicamente al haber varias relaciones extensas");
+const longWord="ContrarrevolucionariamenteSuperdocumentalmenteIdentificada";
+assert.equal(service.wrapRelationLabel(longWord,18).join(""),longWord,"Palabra sin espacios: representar todos sus caracteres");
+
 // La anchura y altura del mapa responden a páginas con más filas; no quedan vacíos gigantes.
 const many=[{id:"a",name:"Centro"}],manyEdges=[];
 for(let i=0;i<29;i++){many.push({id:"node-"+i,name:"Vecino "+String(i).padStart(2,"0")});manyEdges.push({id:"e-"+i,a:"a",b:"node-"+i,type:"Vínculo"})}
@@ -121,4 +157,4 @@ assert(html.includes("graphPanel.appendChild(localPanel)")&&html.includes("local
 assert(html.includes("var inspector=$(\"inspector\")")&&html.includes("syncFullscreenInspector();"),"Se conserva la ficha original");
 assert(html.indexOf('class="graph-stack"')<html.indexOf('id="local-relations"')&&html.indexOf('id="local-relations"')<html.indexOf('id="inspector"'),"El esquema debe aparecer debajo del orbe y antes del inspector en el DOM");
 assert(html.includes("Esquema 2D · un salto desde la selección"));
-console.log("OK: esquema 2D de primer grado, 12 vecinos por página, plurivínculos, mención opcional, navegación de aristas, fullscreen y ficha derecha.");
+console.log("OK: relaciones completas multilínea sin elipsis, plurivínculos seleccionables, filas variables, 12 vecinos por página, fullscreen y ficha derecha.");
