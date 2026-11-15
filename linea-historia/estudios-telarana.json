@@ -4260,7 +4260,7 @@
     },
     {
       "id": "study-f42-inscripcion-pilato-1961",
-      "y": 1961.0,
+      "y": 1961,
       "t": "Hallazgo de la inscripción de Poncio Pilato en Cesarea",
       "c": "Acontecimientos",
       "s": "IDEA LAB · fuente 42 · investigación documental",
@@ -4874,6 +4874,163 @@
           "f63-congreso1897"
         ],
         "methodologicalLimits": "Contexto documental independiente: el vídeo no menciona expresamente el congreso. La fecha se registra con precisión anual."
+      }
+    },
+    {
+      "id": "study-f33-gutle-mayer-matrimonio-1770",
+      "y": 1770.658904109589,
+      "t": "Matrimonio entre Gutle Schnapper y Mayer Amschel Rothschild en Fráncfort",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 33 · contraste histórico documental",
+      "d": "El archivo histórico de la familia Rothschild sitúa el matrimonio de Gutle Schnapper y Mayer Amschel Rothschild el 29 de agosto de 1770 en Fráncfort. La familia crió a diez hijos que alcanzaron la edad adulta y una parte de ellos fundaría diversas casas bancarias europeas.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "DEU"
+      ],
+      "investigation": {
+        "sourceOrder": 33,
+        "sourceTitle": "F33 · Historia de la familia Rothschild",
+        "sourceUrl": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1770-08-29",
+        "confirmedBy": {
+          "label": "Rothschild Archive · House of the Green Shield",
+          "url": "https://family.rothschildarchive.org/estates/68-house-of-the-green-shield"
+        },
+        "relatedTelarana": [
+          "f33-gutle",
+          "f33-mayer"
+        ],
+        "methodologicalLimits": "La fecha procede del archivo familiar vinculado a los protagonistas y del registro biográfico; no es una cita del minuto exacto del vídeo ni verifica todas sus afirmaciones económicas."
+      }
+    },
+    {
+      "id": "study-f32-nato-concepto-lisboa-2010",
+      "y": 2010.8835616438357,
+      "t": "La OTAN adopta el Concepto Estratégico de Lisboa y promueve cooperación con Rusia",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 32 · contraste histórico documental",
+      "d": "Durante la cumbre de Lisboa de noviembre de 2010 los aliados aprobaron un nuevo Concepto Estratégico. Sus documentos animaban a cooperar con Rusia y no la describían con la categoría de amenaza directa adoptada en el documento de Madrid de 2022. Son posiciones institucionales de etapas diferentes.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "PRT",
+        "RUS"
+      ],
+      "investigation": {
+        "sourceOrder": 32,
+        "sourceTitle": "F32 · The Wild Project 173 con Pedro Baños",
+        "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2010-11-19",
+        "confirmedBy": {
+          "label": "OTAN · adopción del Concepto Estratégico 2010",
+          "url": "https://www.nato.int/en/news-and-events/articles/news/2010/11/19/nato-adopts-new-strategic-concept"
+        },
+        "relatedTelarana": [
+          "f30-nato",
+          "f32-nato-2010",
+          "f30-russia"
+        ],
+        "methodologicalLimits": "La OTAN es fuente primaria de su propia posición, no árbitro neutral de todos los hechos geopolíticos. La comparación con 2022 se documenta por separado y no permite deducir causalidad ni intención."
+      }
+    },
+    {
+      "id": "study-f32-onu-agenda-2030-2015",
+      "y": 2015.7328767123288,
+      "t": "La Asamblea General de la ONU adopta la Agenda 2030",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 32 · contraste histórico documental",
+      "d": "La Asamblea General de Naciones Unidas aprobó en septiembre de 2015 la Agenda 2030 para el Desarrollo Sostenible mediante la resolución A/RES/70/1, que establece 17 objetivos y 169 metas. Las hipótesis sobre finalidades ocultas comentadas en la entrevista no quedan acreditadas por el texto de la resolución.",
+      "g": [
+        "Mundial"
+      ],
+      "p": [],
+      "investigation": {
+        "sourceOrder": 32,
+        "sourceTitle": "F32 · The Wild Project 173 con Pedro Baños",
+        "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2015-09-25",
+        "confirmedBy": {
+          "label": "ONU · resolución A/RES/70/1",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        "relatedTelarana": [
+          "f32-un",
+          "f32-agenda-2030"
+        ],
+        "methodologicalLimits": "La resolución acredita fecha y contenido normativo, no la existencia de un plan secreto; cualquier interpretación conspirativa en el episodio se conserva solo como opinión atribuida y sin minuto verificado."
+      }
+    },
+    {
+      "id": "study-f32-cartas-explosivas-espana-2022",
+      "y": 2022.9136986301369,
+      "t": "Se detectan envíos explosivos a embajadas e instituciones españolas",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 32 · contraste histórico documental",
+      "d": "El 30 de noviembre de 2022 se conocieron paquetes con material explosivo dirigidos a la embajada de Ucrania en Madrid y a otros destinatarios en España. Los envíos y su posterior investigación judicial son hechos documentados; las especulaciones iniciales sobre su autoría no constituyen pruebas de responsabilidad estatal.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ESP",
+        "UKR"
+      ],
+      "investigation": {
+        "sourceOrder": 32,
+        "sourceTitle": "F32 · The Wild Project 173 con Pedro Baños",
+        "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2022-11-30",
+        "confirmedBy": {
+          "label": "RTVE · investigación judicial de los envíos",
+          "url": "https://www.rtve.es/noticias/20230127/fiscalia-pide-prision-provisional-sin-fianza-detenido-cartas-explosivas-sanchez-robles/2418347.shtml"
+        },
+        "relatedTelarana": [
+          "f32-cartas-2022",
+          "f32-audiencia"
+        ],
+        "methodologicalLimits": "El episodio se grabó durante la fase inicial de sospechas. No se atribuye la autoría a Rusia ni se extrapola información judicial conocida en 2023 y 2024 al conocimiento de los entrevistados en 2022."
+      }
+    },
+    {
+      "id": "study-f32-cartas-apelacion-2024",
+      "y": 2024.8647540983607,
+      "t": "La Audiencia Nacional reduce en apelación la condena por los paquetes explosivos de 2022",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 32 · contraste histórico documental",
+      "d": "La Sala de Apelación de la Audiencia Nacional acordó en noviembre de 2024 rebajar de dieciocho años a once años y nueve meses la pena impuesta a Pompeyo González por los envíos de artefactos pirotécnicos de finales de 2022. Es una resolución posterior a la entrevista y no demuestra implicación de un Estado extranjero.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ESP"
+      ],
+      "investigation": {
+        "sourceOrder": 32,
+        "sourceTitle": "F32 · The Wild Project 173 con Pedro Baños",
+        "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2024-11-12",
+        "confirmedBy": {
+          "label": "EL PAÍS · resolución de la Sala de Apelación, 12/11/2024",
+          "url": "https://elpais.com/espana/2024-11-12/la-audiencia-nacional-rebaja-la-condena-al-jubilado-que-envio-cartas-pirotecnicas-al-gobierno.html"
+        },
+        "relatedTelarana": [
+          "f32-cartas-2022",
+          "f32-audiencia",
+          "f32-pompeyo-gonzalez"
+        ],
+        "methodologicalLimits": "Fuente periodística sobre una resolución judicial: no se ha verificado aquí la firmeza final de la sentencia ni eventuales recursos posteriores. El dato es posterior al episodio y no avala hipótesis sobre autoría rusa."
       }
     }
   ]
