@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 57,
-    "notStarted": 14,
+    "inReview": 58,
+    "notStarted": 13,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1853,6 +1853,26 @@
       "documentaryChecks": 2,
       "timelineVerifiedEventsCommitted": 1,
       "qualityNotes": "Mateo 2, tradiciones coptas y patrimonio UNESCO se diferencian. El reconocimiento de las fiestas no verifica el viaje antiguo. Presentador y audio pendientes.",
+      "lastUpdated": "2026-11-15"
+    },
+    {
+      "order": 59,
+      "videoId": "VnLmil1VTDw",
+      "title": "\"MOISÉS NO EXISTIÓ - Arqueólogo sorprende a Jordi Wild explicando la realidad del \"\"Éxodo\"\" judío\"",
+      "sourceUrl": "https://www.youtube.com/watch?v=VnLmil1VTDw",
+      "status": "primera_revision_documental_parcial_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-59-exodo-clip.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 14,
+      "sourceRelationsDocumented": 17,
+      "personsProfiled": 0,
+      "documentaryChecks": 4,
+      "timelineVerifiedEventsCommitted": 0,
+      "qualityNotes": "Se corrigen equivalencias no demostradas entre hicsos e israelitas y entre filisteos y palestinos modernos; Elefantina se fecha en siglo V a. C. Invitado y posible fuente matriz pendientes.",
       "lastUpdated": "2026-11-15"
     }
   ],
@@ -5874,18 +5894,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 58,
-        "status": "pendiente",
+        "status": "primera_revision_documental_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5898,15 +5918,25 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
-          "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "percent": 25,
+          "state": "primera_revision_parcial",
+          "readyForDeepReview": true,
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "signals": {
+            "entities": 14,
+            "relations": 17,
+            "biographies": 0,
+            "statements": 8,
+            "independentChecks": 4,
+            "verifiedTimelineEvents": 0
+          },
+          "nextAction": "Cotejar audio e identidad del invitado; verificar si es clip de una fuente ya catalogada y profundizar los contrastes sobre hicsos, composición del Éxodo y filisteos."
         }
       },
       {

@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};
+vm.runInNewContext(read('la-telarana/fuente-59-exodo-clip.js'),ctx);
+const f=ctx.window.IDEA_TELARANA_F59_REVIEW,ids=new Set(f.nodes.map(n=>n.id));
+assert.equal(f.metadata.reviewComplete,false);
+assert.equal(f.metadata.audioVerified,false);
+assert(f.nodes.flatMap(n=>n.podcastNotes).every(n=>n.timeSec===null));
+assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert.match(f.nodes.find(n=>n.id==='f55-moises').note,/no demuestra lógicamente/);
+assert.match(f.nodes.find(n=>n.id==='f59-elefantina').note,/siglo V a. C./);
+assert.match(f.nodes.find(n=>n.id==='f59-filisteos').note,/no identifica automáticamente/);
+assert.equal(f.edges.find(e=>e.id==='f59-hicsos-exodo').confidence,'hipotesis');
+assert(read('la-telarana/index.html').includes('fuente-59-exodo-clip.js'));
+assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-59-exodo-clip.js'));
+console.log('OK: F59 distingue cronología e identidades');
