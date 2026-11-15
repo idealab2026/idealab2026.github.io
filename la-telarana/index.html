@@ -494,24 +494,24 @@ body.graph-expanded{overflow:hidden}
 }
 @media(max-width:450px){.top-controls .toolbar .search{flex-basis:210px}.top-controls .toolbar .btn{padding:9px 11px}}
 
-/* Cabecera de producto coherente con España en Datos: título, sello y navegación horizontal. */
-.site-header{position:sticky;top:0;z-index:45;display:block;flex-wrap:nowrap;padding:0;background:#fff;border-bottom:1px solid #d6dfe8;box-shadow:0 2px 12px #081b3210;color:#142f50}
+/* Cabecera de producto: estructura del Observatorio, paleta azul petróleo y dorado propia de La Telaraña. */
+.site-header{position:sticky;top:0;z-index:45;display:block;flex-wrap:nowrap;padding:0;background:linear-gradient(180deg,#182c3b 0%,#102131 100%);border-bottom:1px solid #324b60;box-shadow:0 6px 20px #030b14a6;color:#eaf0f6}
 .site-header-inner{max-width:1920px;min-height:90px;margin:0 auto;padding:13px clamp(17px,2.6vw,48px);display:flex;align-items:center;gap:clamp(15px,1.6vw,28px);min-width:0}
 .site-identity{display:flex;align-items:center;flex:0 0 auto;gap:17px;white-space:nowrap;min-width:0}
-.site-name{font:700 clamp(24px,1.85vw,32px)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.035em;color:#102c50;text-decoration:none}
-.site-name:hover{color:#0a638a}
-.site-product{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:670;letter-spacing:.01em;color:#67778e}
+.site-name{font:700 clamp(24px,1.85vw,32px)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.035em;color:#f3f6fa;text-decoration:none}
+.site-name:hover{color:#f6c27a}
+.site-product{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:670;letter-spacing:.01em;color:#b8c6d5}
 .site-product a{display:inline-flex;align-items:center;flex:0 0 auto;line-height:0}
 .site-product img{display:block;width:112px;height:auto;max-height:30px}
-.site-menu-toggle{display:none;align-items:center;justify-content:center;gap:9px;flex:0 0 auto;border:1px solid #b8c7d5;border-radius:7px;background:#fff;color:#234262;padding:8px 10px;font:730 13px/1.2 Inter,system-ui,sans-serif;cursor:pointer}
+.site-menu-toggle{display:none;align-items:center;justify-content:center;gap:9px;flex:0 0 auto;border:1px solid #4b6478;border-radius:7px;background:#1d3446;color:#eef3f8;padding:8px 10px;font:730 13px/1.2 Inter,system-ui,sans-serif;cursor:pointer}
 .site-nav{display:flex;align-items:center;justify-content:flex-end;flex:1 1 auto;gap:clamp(13px,1.25vw,24px);min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;overscroll-behavior-x:contain;white-space:nowrap}
-.site-nav-link{font:680 clamp(13px,.95vw,16px)/1.25 Inter,system-ui,sans-serif;color:#50617b;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:43px;white-space:nowrap;background:none;border:0;border-radius:5px;padding:4px 0;text-decoration:none;cursor:pointer}
-.site-nav-link:hover,.site-nav-link:focus-visible,.site-nav-link.is-current,.site-nav-link[aria-expanded="true"]{color:#102d50}
-.site-nav-link.is-current{font-weight:850}
-.site-nav-link[aria-expanded="true"]{text-decoration:underline;text-decoration-color:#dc9d38;text-underline-offset:7px}
-.site-nav-projects span{font-size:.8rem;margin-left:5px;color:#75869a}
+.site-nav-link{font:680 clamp(13px,.95vw,16px)/1.25 Inter,system-ui,sans-serif;color:#c3d0dc;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:43px;white-space:nowrap;background:none;border:0;border-radius:5px;padding:4px 0;text-decoration:none;cursor:pointer}
+.site-nav-link:hover,.site-nav-link:focus-visible,.site-nav-link.is-current,.site-nav-link[aria-expanded="true"]{color:#f4f6fa}
+.site-nav-link.is-current{font-weight:850;text-decoration:underline;text-decoration-color:#d9a24a;text-underline-offset:7px}
+.site-nav-link[aria-expanded="true"]{text-decoration:underline;text-decoration-color:#d9a24a;text-underline-offset:7px}
+.site-nav-projects span{font-size:.8rem;margin-left:5px;color:#a4b6c7}
 .site-header .header-telarana-icon{width:48px;height:48px;flex:0 0 48px;margin-left:4px;object-fit:contain}
-.site-header a:focus-visible,.site-header button:focus-visible{outline:2px solid #c5893e;outline-offset:3px}
+.site-header a:focus-visible,.site-header button:focus-visible{outline:2px solid #e3aa69;outline-offset:3px}
 #graph-panel,#rankings-panel,#sources-directory,#gallery{scroll-margin-top:104px}
 @media(max-width:1160px){
  .site-header-inner{gap:12px;min-height:78px;padding:10px 17px}
@@ -531,16 +531,16 @@ body.graph-expanded{overflow:hidden}
  .site-product img{width:31px;height:31px;object-fit:cover;object-position:left}
  .site-product a{width:31px;overflow:hidden}
  .site-menu-toggle{display:inline-flex;margin-left:auto}
- .site-nav{display:none;position:absolute;top:calc(100% - 1px);left:9px;right:9px;min-width:0;max-height:min(72dvh,480px);overflow-x:hidden;overflow-y:auto;flex:unset;flex-direction:column;align-items:stretch;gap:0;padding:8px;border:1px solid #ccdae7;border-radius:0 0 12px 12px;background:#fff;box-shadow:0 16px 28px #081b3230}
+ .site-nav{display:none;position:absolute;top:calc(100% - 1px);left:9px;right:9px;min-width:0;max-height:min(72dvh,480px);overflow-x:hidden;overflow-y:auto;flex:unset;flex-direction:column;align-items:stretch;gap:0;padding:8px;border:1px solid #355066;border-radius:0 0 12px 12px;background:#14293b;box-shadow:0 16px 28px #020710a8}
  .site-nav.is-open{display:flex}
- .site-nav-link{justify-content:flex-start;font-size:14px;min-height:45px;padding:10px 13px;border-bottom:1px solid #eef2f6}
+ .site-nav-link{justify-content:flex-start;font-size:14px;min-height:45px;padding:10px 13px;border-bottom:1px solid #2b4355}
  .site-nav-link:last-child{border-bottom:0}
  .site-header .header-telarana-icon{width:34px;height:34px;flex-basis:34px;margin-left:0}
  #graph-panel,#rankings-panel,#sources-directory,#gallery{scroll-margin-top:75px}
 }
 </style></head><body><header class="site-header" id="site-header"><div class="site-header-inner">
 <div class="site-identity"><a href="#graph-panel" class="site-name" id="header-map-home" aria-label="La Telaraña · Mapa relacional">La Telaraña</a>
-<div class="site-product"><span>Un producto de</span><a href="/" title="IDEA LAB · Todos los proyectos"><img src="/logo-idea-lab.svg" width="112" height="27" alt="IDEA LAB"></a></div></div>
+<div class="site-product"><span>Un producto de</span><a href="/" title="IDEA LAB · Todos los proyectos"><img src="./logo-idea-lab-dark.svg" width="112" height="27" alt="IDEA LAB"></a></div></div>
 <button type="button" class="site-menu-toggle" id="header-menu-toggle" aria-controls="site-nav" aria-expanded="false">Menú <span aria-hidden="true">☰</span></button>
 <nav class="site-nav" id="site-nav" aria-label="Navegación principal de La Telaraña">
 <a href="#graph-panel" class="site-nav-link is-current" id="header-map" aria-current="page">Mapa relacional</a>
