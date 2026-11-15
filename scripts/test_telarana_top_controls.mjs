@@ -45,7 +45,7 @@ class Element{
 ["rankings-panel","sources-directory","rankings-toggle","sources-directory-toggle"].forEach(k=>controls[k]=new Element());
 const start=script.indexOf("function syncTopControls(){"),end=script.indexOf("load();fitGraph();",start);
 assert(start>=0&&end>start,"El control de apertura debe registrarse antes de cargar el grafo");
-vm.runInNewContext(script.slice(start,end),{$:k=>controls[k]}, {timeout:3000});
+vm.runInNewContext(script.slice(start,end),{$:k=>controls[k],syncProductHeader:()=>{}}, {timeout:3000});
 const rankings=controls["rankings-panel"],sources=controls["sources-directory"],
  rButton=controls["rankings-toggle"],sButton=controls["sources-directory-toggle"];
 assert.equal(rButton.attributes["aria-expanded"],"false");
