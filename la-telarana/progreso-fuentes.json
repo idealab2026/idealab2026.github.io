@@ -1460,40 +1460,40 @@
       "videoId": "PAnnvSUtFys",
       "title": "¿DOMINAN EL MUNDO LOS ROTHSCHILD? La historia de la familia más rica",
       "sourceUrl": "https://www.youtube.com/watch?v=PAnnvSUtFys",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "revision_documental_ampliada_parcial_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-33-rothschild-inicial.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 9,
-      "sourceRelationsDocumented": 16,
-      "personsProfiled": 7,
-      "archivalChecks": 3,
-      "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Primera revisión parcial: texto automático sin minutajes, audio e integridad sin verificar. Archivo Rothschild vinculado a la familia; la cuestión Waterloo y la grafía Oppenheimer requieren cotejo adicional.",
-      "lastUpdated": "2026-11-14"
+      "sourceNodesDocumented": 16,
+      "sourceRelationsDocumented": 34,
+      "personsProfiled": 14,
+      "archivalChecks": 8,
+      "timelineVerifiedEventsCommitted": 2,
+      "qualityNotes": "Segunda revisión documental F33: Gutle, cinco hijas e historiador Niall Ferguson identificados en archivo y fuentes biográficas; la fuente oral solo nombra a Gutle y Ferguson, no a las cinco hijas. 19 embarazos no equivalen automáticamente a 19 nacimientos: 10 hijos llegaron a adultos según historia independiente. Archivo Rothschild vinculado a la familia; audio sin cotejar.",
+      "lastUpdated": "2026-11-15"
     },
     {
       "order": 32,
       "videoId": "LAa4e9H1Nlo",
       "title": "The Wild Project 173 ft Pedro Baños | El mundo está al borde del conflicto, Cartas Bomba, Xi Jinping",
       "sourceUrl": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "revision_documental_ampliada_parcial_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-32-revision-inicial.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 9,
-      "sourceRelationsDocumented": 12,
-      "personsProfiled": 0,
-      "documentaryChecks": 2,
-      "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Dos pasajes examinados en texto automático sin minutaje, hablantes ni integridad cotejados. Fuentes primarias OTAN y Gobierno chino; esta última expresa la posición de Pekín.",
-      "lastUpdated": "2026-11-14"
+      "sourceNodesDocumented": 15,
+      "sourceRelationsDocumented": 21,
+      "personsProfiled": 1,
+      "documentaryChecks": 6,
+      "timelineVerifiedEventsCommitted": 5,
+      "qualityNotes": "Segunda revisión documental F32: contraste OTAN Lisboa 2010/Madrid 2022, Agenda ONU 2015 y causa española por cartas explosivas. Información judicial de 2024 posterior a la entrevista; no vincular a Rusia sin prueba. Transcripción NotebookLM sin audio, voces ni minutajes fiables.",
+      "lastUpdated": "2026-11-15"
     },
     {
       "order": 35,
@@ -2040,9 +2040,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 157,
+    "committedVerifiedEvents": 162,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 113,
+    "fromSourceInReview": 118,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -2192,6 +2192,17 @@
         "study-f30-invasion-2022",
         "study-f30-nato-concept-2022"
       ],
+      "32": [
+        "study-f32-congreso-chino-taiwan-2022",
+        "study-f32-nato-concepto-lisboa-2010",
+        "study-f32-onu-agenda-2030-2015",
+        "study-f32-cartas-explosivas-espana-2022",
+        "study-f32-cartas-apelacion-2024"
+      ],
+      "33": [
+        "study-f33-sociedad-francfort-1810",
+        "study-f33-gutle-mayer-matrimonio-1770"
+      ],
       "34": [
         "study-f34-cosea-2013",
         "study-f34-chile-carta-2018",
@@ -2201,11 +2212,79 @@
         "study-f34-muller-mandato-2017",
         "study-f34-sarah-renuncia-2021"
       ],
+      "35": [
+        "study-f35-mosaddeq-1953",
+        "study-f35-jcpoa-2015"
+      ],
+      "37": [
+        "study-f37-gobekli-reidentificacion-1994"
+      ],
+      "38": [
+        "study-f38-papiros-wadi-2013"
+      ],
       "39": [
         "study-f39-descubrimiento-tumba-tutankamon-1922"
       ],
+      "40": [
+        "study-f40-rosetta-hallazgo-1799",
+        "study-f40-champollion-avance-1822"
+      ],
+      "41": [
+        "study-f41-constantinopla-1453",
+        "study-f41-lepanto-1571",
+        "study-f41-arrestos-armenios-1915",
+        "study-f41-lausana-1923",
+        "study-f41-republica-turquia-1923"
+      ],
+      "42": [
+        "study-f42-inscripcion-pilato-1961",
+        "study-f42-carbono-sudario-1989"
+      ],
+      "43": [
+        "study-f43-saqueo-constantinopla-1204"
+      ],
+      "44": [
+        "study-f44-rubicon-49ac",
+        "study-f44-augusto-27ac"
+      ],
+      "45": [
+        "study-f45-vacio-piramide-2017"
+      ],
+      "47": [
+        "study-f47-etiopia-anexion-1936",
+        "study-f47-abu-simbel-1968",
+        "study-f47-nazca-unesco-1994"
+      ],
       "50": [
         "study-f50-juicios-salem-1692"
+      ],
+      "51": [
+        "study-f51-tartessos-articulo-2024"
+      ],
+      "52": [
+        "study-f52-inauguracion-coliseo-80"
+      ],
+      "54": [
+        "study-f54-pew-jewish-americans-2021"
+      ],
+      "56": [
+        "study-f56-uno-partition-1947"
+      ],
+      "57": [
+        "study-f57-decreto-granada-1492"
+      ],
+      "58": [
+        "study-f58-unesco-holy-family-2022"
+      ],
+      "60": [
+        "study-f60-balfour-1917"
+      ],
+      "62": [
+        "study-f62-palestine-observer-2012",
+        "study-f62-june-war-1967"
+      ],
+      "63": [
+        "study-f63-congreso-sionista-1897"
       ],
       "69": [
         "study-f69-eichmann-juicio-1961",
@@ -2239,80 +2318,6 @@
         "study-vf150-mashal-1997",
         "study-vf150-yassin-2004",
         "study-vf150-rantisi-2004"
-      ],
-      "33": [
-        "study-f33-sociedad-francfort-1810"
-      ],
-      "32": [
-        "study-f32-congreso-chino-taiwan-2022"
-      ],
-      "35": [
-        "study-f35-mosaddeq-1953",
-        "study-f35-jcpoa-2015"
-      ],
-      "37": [
-        "study-f37-gobekli-reidentificacion-1994"
-      ],
-      "38": [
-        "study-f38-papiros-wadi-2013"
-      ],
-      "40": [
-        "study-f40-rosetta-hallazgo-1799",
-        "study-f40-champollion-avance-1822"
-      ],
-      "41": [
-        "study-f41-constantinopla-1453",
-        "study-f41-lepanto-1571",
-        "study-f41-arrestos-armenios-1915",
-        "study-f41-lausana-1923",
-        "study-f41-republica-turquia-1923"
-      ],
-      "42": [
-        "study-f42-inscripcion-pilato-1961",
-        "study-f42-carbono-sudario-1989"
-      ],
-      "43": [
-        "study-f43-saqueo-constantinopla-1204"
-      ],
-      "44": [
-        "study-f44-rubicon-49ac",
-        "study-f44-augusto-27ac"
-      ],
-      "45": [
-        "study-f45-vacio-piramide-2017"
-      ],
-      "47": [
-        "study-f47-etiopia-anexion-1936",
-        "study-f47-abu-simbel-1968",
-        "study-f47-nazca-unesco-1994"
-      ],
-      "51": [
-        "study-f51-tartessos-articulo-2024"
-      ],
-      "52": [
-        "study-f52-inauguracion-coliseo-80"
-      ],
-      "54": [
-        "study-f54-pew-jewish-americans-2021"
-      ],
-      "56": [
-        "study-f56-uno-partition-1947"
-      ],
-      "57": [
-        "study-f57-decreto-granada-1492"
-      ],
-      "58": [
-        "study-f58-unesco-holy-family-2022"
-      ],
-      "60": [
-        "study-f60-balfour-1917"
-      ],
-      "62": [
-        "study-f62-palestine-observer-2012",
-        "study-f62-june-war-1967"
-      ],
-      "63": [
-        "study-f63-congreso-sionista-1897"
       ]
     },
     "verifiedDeployRun": "https://github.com/idealab2026/idealab2026.github.io/actions/runs/42658751871",
@@ -4635,7 +4640,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 28,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "revision_documental_ampliada_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -4646,7 +4651,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4664,21 +4669,21 @@
           "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 12,
-          "state": "primera_revision_parcial",
+          "percent": 21,
+          "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 9,
-            "relations": 12,
-            "biographies": 0,
-            "statements": 2,
-            "independentChecks": 0,
-            "verifiedTimelineEvents": 1,
-            "documentaryChecks": 2
+            "entities": 15,
+            "relations": 21,
+            "biographies": 1,
+            "statements": 5,
+            "independentChecks": 2,
+            "verifiedTimelineEvents": 5,
+            "documentaryChecks": 6
           },
-          "nextAction": "Revisar el resto de la transcripción y cotejar audio, voces y minutos; contrastar otras afirmaciones."
+          "nextAction": "Cotejar audio y separar lo realmente dicho en 2022 de las pruebas judiciales posteriores; revisar aún otros pasajes sin minutajes ni voces confirmadas."
         }
       },
       {
@@ -4691,7 +4696,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 29,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "revision_documental_ampliada_parcial_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -4702,7 +4707,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4717,24 +4722,25 @@
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
           "untimedTranscriptNext": "Cotejar audio, integridad y grafías; completar extracción y contrastar afirmaciones económicas.",
           "audioVerified": false,
-          "verifiedMinuteReferences": 0
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 12,
-          "state": "primera_revision_parcial",
+          "percent": 22,
+          "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 9,
-            "relations": 16,
-            "biographies": 7,
-            "statements": 8,
-            "independentChecks": 0,
-            "archivalChecks": 3,
-            "verifiedTimelineEvents": 1
+            "entities": 16,
+            "relations": 34,
+            "biographies": 14,
+            "statements": 10,
+            "independentChecks": 1,
+            "archivalChecks": 8,
+            "verifiedTimelineEvents": 2
           },
-          "nextAction": "Cotejar audio y continuar revisión; contrastar cifras y afirmaciones con fuentes independientes."
+          "nextAction": "Cotejar audio, revisar grafía Oppenheimer y versión del mito Waterloo; verificar cifras financieras y no atribuir al vídeo los nombres de hijas recuperados únicamente del archivo."
         }
       },
       {
@@ -7537,7 +7543,7 @@
   },
   "analysisProgress": {
     "method": "proxy_v1_2026-11-12",
-    "updatedAt": "2026-11-13",
+    "updatedAt": "2026-11-15",
     "description": "Índice heurístico orientado a decidir la siguiente fuente, no medición de porcentaje real de audio o texto revisado. La mera disponibilidad de una transcripción no suma puntos al análisis.",
     "weights": {
       "inicio": 5,
@@ -8001,7 +8007,7 @@
       50
     ],
     "editorialFocus": {
-      "updatedAt": "2026-11-13",
+      "updatedAt": "2026-11-15",
       "mode": "user_priority_override",
       "priorityPhases": [
         {
@@ -8213,7 +8219,7 @@
             {
               "order": 33,
               "title": "¿DOMINAN EL MUNDO LOS ROTHSCHILD? La historia de la familia más rica",
-              "percent": 0,
+              "percent": 22,
               "reviewState": "sin_iniciar",
               "timecodes": false,
               "untimedText": true,
