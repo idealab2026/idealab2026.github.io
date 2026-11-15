@@ -23,8 +23,8 @@ assert(homeCard[0].includes('src="'+iconPath+'"'),"Mismo icono en la portada");
 assert(home.includes(".project-icon-title img"),"Tamaño estable de miniatura en la página principal");
 assert(home.includes('width="60" height="60"'),"Miniatura principal en formato compacto");
 
-assert(tel.includes('<link rel="icon" href="./icon.svg?v=20261115" type="image/svg+xml">'),"Favicon específico, distinto del favicon global de IDEA LAB");
-assert(tel.includes('class="header-telarana-icon" src="./icon.svg?v=20261115"'),"Emblema en la parte derecha de la cabecera");
+assert(tel.includes('<link rel="icon" href="./icon.svg" type="image/svg+xml">'),"Favicon específico, distinto del favicon global de IDEA LAB");
+assert(tel.includes('class="header-telarana-icon" src="./icon.svg"'),"Emblema en la parte derecha de la cabecera");
 assert(tel.includes('<div class="header-right"><a class="back"'),"Conservar acceso a todos los proyectos");
 assert(tel.includes(".header-telarana-icon{width:50px;height:50px"),"Dimensión de icono de cabecera");
 assert(tel.includes("@media(max-width:650px){.header-right"),"Cabecera adaptada a móvil");
