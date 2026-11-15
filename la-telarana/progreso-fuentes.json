@@ -5,8 +5,8 @@
   "total": 74,
   "counts": {
     "reviewedPublished": 3,
-    "inReview": 59,
-    "notStarted": 12,
+    "inReview": 60,
+    "notStarted": 11,
     "pending": 71,
     "missingOriginalUrl": 3,
     "duplicateEntries": 3,
@@ -1893,6 +1893,26 @@
       "documentaryChecks": 4,
       "timelineVerifiedEventsCommitted": 1,
       "qualityNotes": "Se contrastan la declaración Balfour, el plan de 1947, Oslo y el acuerdo de 1994; la opinión de la CIJ se presenta como contexto independiente. Sin audio cotejado.",
+      "lastUpdated": "2026-11-15"
+    },
+    {
+      "order": 61,
+      "videoId": "ej2RrEljROE",
+      "title": "¿Por qué los JUDÍOS tienen tanto poder en USA y en el Mundo? - David Jiménez lo analiza",
+      "sourceUrl": "https://www.youtube.com/watch?v=ej2RrEljROE",
+      "status": "revision_fragmento_incompleto_sin_audio",
+      "reviewComplete": false,
+      "sourcePrimaryModule": "la-telarana/fuente-61-influencia.js",
+      "rawTranscriptAvailable": true,
+      "transcriptDocHasFullText": false,
+      "verifiedMinuteReferences": 0,
+      "transcriptAudioMatched": false,
+      "sourceNodesDocumented": 13,
+      "sourceRelationsDocumented": 15,
+      "personsProfiled": 1,
+      "documentaryChecks": 3,
+      "timelineVerifiedEventsCommitted": 0,
+      "qualityNotes": "TXT termina a mitad de frase; se distinguen experiencia no corroborada, diversidad de opiniones, registros concretos de lobby y estereotipos sin imputar intenciones.",
       "lastUpdated": "2026-11-15"
     }
   ],
@@ -6027,18 +6047,18 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 60,
-        "status": "pendiente",
+        "status": "revision_fragmento_incompleto_sin_audio",
         "reviewComplete": false,
         "tracking": {
-          "initiated": false,
+          "initiated": true,
           "docTranscriptionCreated": false,
           "transcriptContentImported": false,
           "docTranscriptionUrl": null,
           "complete": false,
-          "inReview": false,
+          "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-12",
+          "lastUpdated": "2026-11-15",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6051,15 +6071,26 @@
           "untimedTranscriptDriveUrl": null,
           "untimedTranscriptImportedAt": "2026-11-12",
           "untimedTranscriptNeedsPriorityIntegrityCheck": true,
-          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently"
+          "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
+          "verifiedMinuteReferences": 0,
+          "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 0,
-          "state": "sin_iniciar",
+          "percent": 10,
+          "state": "fragmento_incompleto_en_revision",
           "readyForDeepReview": false,
-          "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
+          "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
-          "nextAction": "Recuperar transcripción cronometrada y comenzar análisis"
+          "transcriptIncomplete": true,
+          "signals": {
+            "entities": 13,
+            "relations": 15,
+            "biographies": 1,
+            "statements": 7,
+            "independentChecks": 3,
+            "verifiedTimelineEvents": 0
+          },
+          "nextAction": "Recuperar final de transcripción y cotejar audio y turnos; investigar afirmaciones por organizaciones, periodos y evidencia, sin generalizar a comunidades."
         }
       },
       {
