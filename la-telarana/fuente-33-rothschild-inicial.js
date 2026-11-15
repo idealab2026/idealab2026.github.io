@@ -1,15 +1,15 @@
-/* F33: revisión inicial, texto sin minutajes y archivo familiar identificado. */
+/* F33: segunda revisión histórica; genealogía documentada y leyenda de Waterloo sin convertir rumores en hechos. */
 window.IDEA_TELARANA_F33_REVIEW = {
   "metadata": {
     "id": "idealab-f33-rothschild",
     "sourceOrder": 33,
     "title": "F33 · Historia de la familia Rothschild",
     "url": "https://www.youtube.com/watch?v=PAnnvSUtFys",
-    "reviewStage": "primera_revision_parcial_sin_cotejo_de_audio",
+    "reviewStage": "segunda_revision_documental_historica_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Texto NotebookLM archivado sin minutajes ni verificación de integridad; grafías y voces pendientes de audio. El archivo Rothschild está vinculado a la familia. El relato conspirativo sobre Waterloo no se presenta como hecho."
+    "methodologicalNote": "Las grafías y voces de la transcripción automática requieren cotejo del audio. Las cinco hijas se identifican por el archivo familiar, no por nombres pronunciados individualmente en el vídeo. Un estudio independiente distingue 19 embarazos y diez descendientes supervivientes. El archivo Rothschild es una fuente vinculada, y la leyenda de Waterloo se trata críticamente; no se atribuyen conspiraciones como hechos."
   },
   "nodes": [
     {
@@ -40,6 +40,14 @@ window.IDEA_TELARANA_F33_REVIEW = {
           "timeSec": null,
           "status": "relato_atribuido_sin_cotejo_audio",
           "text": "El narrador atribuye a Mayer el aprendizaje bancario y la fundación del negocio familiar. El texto automático lo vincula a «Samuel Oppenheimer», mientras el archivo familiar identifica a Simon Wolf y Jacob Wolf Oppenheimer; el audio aún no se ha cotejado."
+        },
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · segundo contraste, audio sin cotejar",
+          "source": "https://www.rothschildarchive.org/business/business_premises/the_new_court_vitrine_map_of_frankfurt_c1845",
+          "timeSec": null,
+          "status": "discrepancia_de_grafia_con_fuente_archivistica",
+          "text": "La transcripción pronuncia o escribe «Samuel Oppenheimer» como supuesto maestro de Mayer. El archivo Rothschild sitúa el aprendizaje en 1757 en la firma de Simon Wolf Oppenheimer de Hannover. La divergencia queda señalada sin corregir automáticamente lo dicho en el audio no cotejado."
         }
       ]
     },
@@ -108,6 +116,14 @@ window.IDEA_TELARANA_F33_REVIEW = {
           "timeSec": null,
           "status": "verificacion-externa",
           "text": "El estudio de Brian Cathcart examina críticamente las versiones de la noticia anticipada y el supuesto beneficio bursátil. Se publica en el archivo vinculado a la familia; no acredita las versiones sensacionalistas ni demuestra por sí mismo cada detalle económico."
+        },
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · segundo contraste, audio sin cotejar",
+          "source": "https://www.rothschildarchive.org/business/n_m_rothschild_and_sons_london/nathan_mayer_rothschild_and_the_waterloo_commission",
+          "timeSec": null,
+          "status": "contraste_documental_fuente_archivistica_vinculada",
+          "text": "La leyenda de una venta deliberada para hundir la Bolsa londinense tras Waterloo se recoge como relato histórico discutido, no como hecho probado. El archivo familiar examina la comisión para financiar al ejército de Wellington y no acredita la supuesta manipulación generalizada."
         }
       ]
     },
@@ -188,6 +204,109 @@ window.IDEA_TELARANA_F33_REVIEW = {
           "timeSec": null,
           "status": "relato_atribuido_sin_cotejo_audio",
           "text": "El narrador relaciona al gobernante de Hesse-Kassel con la trayectoria comercial de Mayer Amschel; los detalles de la anécdota inicial y las cifras patrimoniales siguen pendientes de contraste."
+        }
+      ]
+    },
+    {
+      "id": "f33-gutle",
+      "name": "Gutle Rothschild (Schnapper)",
+      "kind": "Persona",
+      "subtitle": "Matriarca y gestora doméstica de la familia en Fráncfort (1753–1849)",
+      "note": "Gutle Schnapper nació en 1753 en Fráncfort y se casó con Mayer Amschel Rothschild en 1770. Criaron a cinco hijas y cinco hijos que alcanzaron la edad adulta. La investigación histórica sobre las mujeres de la familia señala que también participó en tareas de contabilidad y gestión de la economía doméstica y de la empresa; no debe reducirse su biografía a su maternidad.",
+      "source": "https://family.rothschildarchive.org/people/209-gutle-rothschild-1753-1849",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · segundo contraste, audio sin cotejar",
+          "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+          "timeSec": null,
+          "status": "relato_atribuido_sin_audio",
+          "text": "El vídeo menciona a «Gutle» y afirma que tuvo 19 hijos, de los cuales sobrevivieron diez. El audio sigue pendiente; una fuente histórica independiente documenta al menos 19 embarazos, no necesariamente 19 nacimientos vivos, y diez hijos que llegaron a la edad adulta."
+        },
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · segundo contraste, audio sin cotejar",
+          "source": "https://us.macmillan.com/books/9781250836830/thewomenofrothschild/",
+          "timeSec": null,
+          "status": "contraste_historico_independiente",
+          "text": "El archivo familiar enumera cinco hijas (Jeannette, Isabella, Babette, Julie, Henriette) y cinco hijos; la investigación publicada por Natalie Livingstone distingue al menos 19 embarazos y diez descendientes que alcanzaron la edad adulta."
+        }
+      ]
+    },
+    {
+      "id": "f33-jeannette",
+      "name": "Jeannette Rothschild",
+      "kind": "Persona",
+      "subtitle": "Primera hija de Mayer Amschel y Gutle (1771–1859)",
+      "note": "Jeannette Rothschild nació en 1771 en Fráncfort, primera hija de Mayer Amschel Rothschild y Gutle Schnapper. La genealogía familiar documenta su matrimonio en 1795 con Benedict Moses Worms y su fallecimiento en 1859. El vídeo trata a las hijas colectivamente, pero no la nombra individualmente.",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-isabella",
+      "name": "Isabella Rothschild",
+      "kind": "Persona",
+      "subtitle": "Hija de Mayer Amschel y Gutle (1781–1861)",
+      "note": "Isabella Rothschild fue hija de Mayer Amschel y Gutle Rothschild, nacida en 1781. Según el registro familiar, se casó en 1802 con el empresario de Fráncfort Bernhard Juda Sichel y residió allí cerca de su madre. Este dato procede del archivo familiar, no de una identificación nominativa en el vídeo.",
+      "source": "https://family.rothschildarchive.org/people/26-isabella-rothschild-1781-1861",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-babette",
+      "name": "Babette Rothschild",
+      "kind": "Persona",
+      "subtitle": "Hija de Mayer Amschel y Gutle (1784–1869)",
+      "note": "Babette Rothschild nació en Fráncfort en agosto de 1784. Se casó con Siegmund Leopold Beyfus en marzo de 1808. El archivo genealógico conserva datos de sus descendientes y de la relación con la casa de Beyfus; no se infiere por ello que ejerciera un cargo bancario. El vídeo no la nombra individualmente.",
+      "source": "https://family.rothschildarchive.org/people/27-babette-rothschild-1784-1869",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-julie",
+      "name": "Julie Rothschild",
+      "kind": "Persona",
+      "subtitle": "Hija de Mayer Amschel y Gutle (1790–1815)",
+      "note": "Julie Rothschild nació en 1790 y falleció en 1815. Figura entre las cinco hijas de Mayer Amschel Rothschild y Gutle Schnapper en la genealogía del archivo familiar. No se han localizado en las fuentes consultadas detalles biográficos suficientes para atribuirle actividad bancaria ni política.",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-henriette",
+      "name": "Henriette Rothschild",
+      "kind": "Persona",
+      "subtitle": "Hija menor de Mayer Amschel y Gutle (1791–1866)",
+      "note": "Henriette Rothschild, también llamada Jette, nació en Fráncfort en septiembre de 1791. Contrajo matrimonio con Abraham Montefiore en 1815, vivió en Londres y tuvo cuatro hijos. Son datos del archivo familiar; el vídeo solo alude colectivamente a las cinco hijas.",
+      "source": "https://family.rothschildarchive.org/people/30-henriette-rothschild-1791-1866",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-niall-ferguson",
+      "name": "Niall Ferguson",
+      "kind": "Persona",
+      "subtitle": "Historiador especializado en historia económica, autor de una historia de los Rothschild",
+      "note": "Niall Ferguson es historiador y autor de The World's Banker: The History of the House of Rothschild, publicado en 1998, además de otros trabajos de historia económica y política. La fuente F33 invoca su nombre al tratar mitos familiares; la formulación exacta y la atribución de sus conclusiones requieren revisión del audio y de la obra original.",
+      "source": "https://www.hoover.org/profiles/niall-ferguson",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · segundo contraste, audio sin cotejar",
+          "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+          "timeSec": null,
+          "status": "relato_atribuido_sin_audio",
+          "text": "El narrador alude a Niall Ferguson al explicar relatos sobre la fortuna y sobre Waterloo. Esta es una referencia atribuida al vídeo sin minuto ni comprobación del pasaje concreto del libro; no debe publicarse como una conclusión textual del historiador."
         }
       ]
     }
@@ -367,6 +486,204 @@ window.IDEA_TELARANA_F33_REVIEW = {
       "claimStatus": "documentado_fuente_archivistica_vinculada",
       "note": "El archivo familiar describe la relación comercial de Mayer Amschel con Guillermo de Hesse-Kassel; no confirma por sí solo todos los detalles narrados en el vídeo.",
       "source": "https://www.rothschildarchive.org/business/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mencion-gutle",
+      "a": "f33-fuente",
+      "b": "f33-gutle",
+      "type": "Mención de Gutle en el vídeo",
+      "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+      "confidence": "indicio",
+      "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "note": "El vídeo alude nominalmente a Gutle; no acredita por sí solo las cifras de embarazos o nacimientos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mencion-ferguson",
+      "a": "f33-fuente",
+      "b": "f33-niall-ferguson",
+      "type": "Historiador citado por el narrador",
+      "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+      "confidence": "indicio",
+      "claimStatus": "mencion_editorial_no_equivale_a_relacion_sustantiva",
+      "note": "La fuente cita a Ferguson; no se le atribuyen declaraciones propias en el episodio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-mayer",
+      "a": "f33-gutle",
+      "b": "f33-mayer",
+      "type": "Matrimonio celebrado en Fráncfort en 1770",
+      "source": "https://family.rothschildarchive.org/estates/68-house-of-the-green-shield",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El registro familiar documenta su matrimonio el 29 de agosto de 1770.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-madre-amschel",
+      "a": "f33-gutle",
+      "b": "f33-amschel",
+      "type": "Madre e hijo",
+      "source": "https://family.rothschildarchive.org/people/209-gutle-rothschild-1753-1849",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "Gutle es madre de Amschel, uno de los cinco hijos varones de la familia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-madre-salomon",
+      "a": "f33-gutle",
+      "b": "f33-salomon",
+      "type": "Madre e hijo",
+      "source": "https://family.rothschildarchive.org/people/209-gutle-rothschild-1753-1849",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "Gutle es madre de Salomon, uno de los cinco hijos varones de la familia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-madre-nathan",
+      "a": "f33-gutle",
+      "b": "f33-nathan",
+      "type": "Madre e hijo",
+      "source": "https://family.rothschildarchive.org/people/209-gutle-rothschild-1753-1849",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "Gutle es madre de Nathan, uno de los cinco hijos varones de la familia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-madre-carl",
+      "a": "f33-gutle",
+      "b": "f33-carl",
+      "type": "Madre e hijo",
+      "source": "https://family.rothschildarchive.org/people/209-gutle-rothschild-1753-1849",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "Gutle es madre de Carl, uno de los cinco hijos varones de la familia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-madre-james",
+      "a": "f33-gutle",
+      "b": "f33-james",
+      "type": "Madre e hijo",
+      "source": "https://family.rothschildarchive.org/people/209-gutle-rothschild-1753-1849",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "Gutle es madre de James, uno de los cinco hijos varones de la familia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-hija-jeannette",
+      "a": "f33-gutle",
+      "b": "f33-jeannette",
+      "type": "Madre e hija",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Jeannette como una de las cinco hijas de Gutle.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mayer-hija-jeannette",
+      "a": "f33-mayer",
+      "b": "f33-jeannette",
+      "type": "Padre e hija",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Jeannette como hija de Mayer Amschel.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-hija-isabella",
+      "a": "f33-gutle",
+      "b": "f33-isabella",
+      "type": "Madre e hija",
+      "source": "https://family.rothschildarchive.org/people/26-isabella-rothschild-1781-1861",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Isabella como una de las cinco hijas de Gutle.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mayer-hija-isabella",
+      "a": "f33-mayer",
+      "b": "f33-isabella",
+      "type": "Padre e hija",
+      "source": "https://family.rothschildarchive.org/people/26-isabella-rothschild-1781-1861",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Isabella como hija de Mayer Amschel.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-hija-babette",
+      "a": "f33-gutle",
+      "b": "f33-babette",
+      "type": "Madre e hija",
+      "source": "https://family.rothschildarchive.org/people/27-babette-rothschild-1784-1869",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Babette como una de las cinco hijas de Gutle.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mayer-hija-babette",
+      "a": "f33-mayer",
+      "b": "f33-babette",
+      "type": "Padre e hija",
+      "source": "https://family.rothschildarchive.org/people/27-babette-rothschild-1784-1869",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Babette como hija de Mayer Amschel.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-hija-julie",
+      "a": "f33-gutle",
+      "b": "f33-julie",
+      "type": "Madre e hija",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Julie como una de las cinco hijas de Gutle.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mayer-hija-julie",
+      "a": "f33-mayer",
+      "b": "f33-julie",
+      "type": "Padre e hija",
+      "source": "https://www.rothschildarchive.org/genealogy/",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Julie como hija de Mayer Amschel.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-gutle-hija-henriette",
+      "a": "f33-gutle",
+      "b": "f33-henriette",
+      "type": "Madre e hija",
+      "source": "https://family.rothschildarchive.org/people/30-henriette-rothschild-1791-1866",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Henriette como una de las cinco hijas de Gutle.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mayer-hija-henriette",
+      "a": "f33-mayer",
+      "b": "f33-henriette",
+      "type": "Padre e hija",
+      "source": "https://family.rothschildarchive.org/people/30-henriette-rothschild-1791-1866",
+      "confidence": "documentado",
+      "claimStatus": "documentado_fuente_archivistica_vinculada",
+      "note": "El archivo familiar identifica a Henriette como hija de Mayer Amschel.",
       "podcastNotes": []
     }
   ]
