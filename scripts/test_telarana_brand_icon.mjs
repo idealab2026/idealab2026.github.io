@@ -26,7 +26,7 @@ assert(home.includes('width="60" height="60"'),"Miniatura principal en formato c
 
 assert(tel.includes('<link rel="icon" href="./icon.svg" type="image/svg+xml">'),"Favicon específico, distinto del favicon global de IDEA LAB");
 assert(tel.includes('class="header-telarana-icon" src="./icon.svg"'),"Emblema en la parte derecha de la cabecera");
-assert(tel.includes('class="site-product"')&&tel.includes('src="/logo-idea-lab.svg"'),"Conservar vínculo de producto a IDEA LAB");
+assert(tel.includes('class="site-product"')&&tel.includes('src="./logo-idea-lab-dark.svg"'),"Conservar vínculo de producto a IDEA LAB");
 assert(tel.includes('class="site-nav-link site-nav-projects" href="/"'),"Conservar acceso a todos los proyectos");
 assert(tel.includes(".header-telarana-icon{width:50px;height:50px"),"Dimensión de icono de cabecera");
 assert(tel.includes("@media(max-width:700px){")&&tel.includes(".site-header-inner"),"Cabecera adaptada a móvil");

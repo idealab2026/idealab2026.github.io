@@ -55,6 +55,8 @@ jobs:
         run: node scripts/test_telarana_brand_icon.mjs
       - name: Validar cabecera estilo España en Datos y menú móvil
         run: node scripts/test_telarana_observatorio_header.mjs
+      - name: Validar paleta oscura y contraste de cabecera
+        run: node scripts/test_telarana_dark_header.mjs
       - name: Validar biografías independientes y testimonios
         run: node scripts/test_telarana_person_bios.mjs
       - name: Evitar enlaces a documentos privados en La Telaraña
@@ -224,6 +226,8 @@ jobs:
           test -s dist/linea-historia/favicon.png
           cp la-telarana/icon.svg dist/la-telarana/icon.svg
           test -s dist/la-telarana/icon.svg
+          cp la-telarana/logo-idea-lab-dark.svg dist/la-telarana/logo-idea-lab-dark.svg
+          test -s dist/la-telarana/logo-idea-lab-dark.svg
           cp la-telarana/one-note-seed.js dist/la-telarana/one-note-seed.js
           cp la-telarana/podcast-vaquero-150.js dist/la-telarana/podcast-vaquero-150.js
           cp la-telarana/investigacion-frattini-contexto.js dist/la-telarana/investigacion-frattini-contexto.js
