@@ -4681,6 +4681,38 @@
         ],
         "methodologicalLimits": "La fecha corresponde a la votación, no al establecimiento de ambos Estados ni a fronteras definitivas. El plan fue aceptado por la Agencia Judía y rechazado por dirigentes árabes palestinos y Estados árabes; la guerra y el desplazamiento requieren tratamiento propio."
       }
+    },
+    {
+      "id": "study-f57-decreto-granada-1492",
+      "y": 1492.2459016393443,
+      "t": "Firma del decreto de expulsión de los judíos",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 57 · documento histórico",
+      "d": "El 31 de marzo de 1492 Isabel y Fernando firmaron en Granada el decreto que ordenaba la salida de los judíos de sus reinos.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ESP"
+      ],
+      "investigation": {
+        "sourceOrder": 57,
+        "sourceTitle": "F57 · Historia del pueblo judío",
+        "sourceUrl": "https://www.youtube.com/watch?v=WzQL3CzV5IE",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1492-03-31",
+        "confirmedBy": {
+          "label": "Texto del edicto · Universidad de Columbia",
+          "url": "https://www.columbia.edu/cu/spanish/courses/spanish3349/03edadmedia/pdfs/edicto.pdf"
+        },
+        "relatedTelarana": [
+          "f57-episodio",
+          "f57-decreto1492",
+          "f57-espana"
+        ],
+        "methodologicalLimits": "La fecha corresponde a la firma del decreto, no al momento de salida de cada persona. El decreto y sus efectos afectaron de modo distinto a quienes partieron o se convirtieron."
+      }
     }
   ]
 }

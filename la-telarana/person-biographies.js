@@ -1240,6 +1240,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://podcasts.apple.com/es/podcast/empresario-jud%C3%ADo-revela-los-5-pilares-para-lograr-el-%C3%A9xito/id1827509151?i=1000763888957",
       "sourceTitle": "Ficha del episodio de WORLDCAST",
       "reviewedAt": "2026-11-15"
+    },
+    "f57-alberto-garin": {
+      "text": "Alberto Garín es historiador y divulgador. La ficha de WORLDCAST lo identifica como invitado en una entrevista dedicada a la historia del pueblo judío. Sus explicaciones son una perspectiva interpretativa que puede contrastarse con otras fuentes históricas.",
+      "source": "https://open.spotify.com/episode/6VzBTCfWr8LAdg0FOn4vzx",
+      "sourceTitle": "Ficha del episodio de WORLDCAST",
+      "reviewedAt": "2026-11-15"
     }
   }
 };
