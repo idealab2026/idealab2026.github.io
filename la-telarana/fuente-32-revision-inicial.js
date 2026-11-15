@@ -503,17 +503,6 @@ window.IDEA_TELARANA_F32_REVIEW = {
       "claimStatus": "resolucion_judicial_atribuida",
       "note": "Sentencia de julio de 2024, modificada en apelación en noviembre. Sin vínculo establecido con el Estado ruso.",
       "podcastNotes": []
-    },
-    {
-      "id": "f32-mencion-onu-agenda",
-      "a": "f32-agenda-2030",
-      "b": "f32-un",
-      "type": "Marco aprobado por Asamblea General de la ONU",
-      "source": "https://sdgs.un.org/2030agenda",
-      "confidence": "documentado",
-      "claimStatus": "contenido_documental_atribuido",
-      "note": "El texto original del documento identifica el órgano que lo adoptó; este enlace coincide con el de adopción y solo aporta contexto.",
-      "podcastNotes": []
     }
   ]
 };
