@@ -4777,6 +4777,71 @@
         ],
         "methodologicalLimits": "Se fecha la carta y su contenido, no la creación de un Estado. Los compromisos británicos con dirigentes árabes y su alcance territorial tienen historia e interpretaciones propias."
       }
+    },
+    {
+      "id": "study-f62-palestine-observer-2012",
+      "y": 2012.9098360655737,
+      "t": "La ONU otorga a Palestina el estatus de Estado observador no miembro",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 62 · contraste documental",
+      "d": "El 29 de noviembre de 2012 la Asamblea General aprobó la resolución 67/19 que otorgó a Palestina el estatus de Estado observador no miembro.",
+      "g": [
+        "Asia"
+      ],
+      "p": [
+        "PSE"
+      ],
+      "investigation": {
+        "sourceOrder": 62,
+        "sourceTitle": "F62 · Resumen del conflicto israelí-palestino",
+        "sourceUrl": "https://www.youtube.com/watch?v=tfrJxIKsh04",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "2012-11-29",
+        "confirmedBy": {
+          "label": "ONU · resolución 67/19",
+          "url": "https://mandates.un.org/mandate/A/RES/67/19?subject=Observer+Status"
+        },
+        "relatedTelarana": [
+          "f62-episodio",
+          "f62-observador",
+          "f56-palestina"
+        ],
+        "methodologicalLimits": "El estatus de observador no equivale a ingreso como miembro de la ONU. El número de reconocimientos bilaterales cambia con el tiempo."
+      }
+    },
+    {
+      "id": "study-f62-june-war-1967",
+      "y": 1967.4246575342465,
+      "t": "Comienzan las operaciones israelíes contra Egipto",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · fuente 62 · contraste documental",
+      "d": "El 5 de junio de 1967 Israel lanzó operaciones militares preventivas contra Egipto en el inicio de la Guerra de los Seis Días, tras una crisis regional.",
+      "g": [
+        "Asia"
+      ],
+      "p": [
+        "ISR",
+        "EGY"
+      ],
+      "investigation": {
+        "sourceOrder": 62,
+        "sourceTitle": "F62 · Resumen del conflicto israelí-palestino",
+        "sourceUrl": "https://www.youtube.com/watch?v=tfrJxIKsh04",
+        "status": "hecho_documentado",
+        "datePrecision": "día",
+        "date": "1967-06-05",
+        "confirmedBy": {
+          "label": "Departamento de Estado · documentación histórica",
+          "url": "https://history.state.gov/historicaldocuments/frus1964-68v19/pressrelease"
+        },
+        "relatedTelarana": [
+          "f62-episodio",
+          "f56-1967",
+          "f56-israel"
+        ],
+        "methodologicalLimits": "Se registra el inicio de las operaciones israelíes descritas por la fuente, no una conclusión jurídica definitiva sobre todas las causas y responsabilidades del conflicto."
+      }
     }
   ]
 }
