@@ -1900,19 +1900,19 @@
       "videoId": "ej2RrEljROE",
       "title": "¿Por qué los JUDÍOS tienen tanto poder en USA y en el Mundo? - David Jiménez lo analiza",
       "sourceUrl": "https://www.youtube.com/watch?v=ej2RrEljROE",
-      "status": "revision_fragmento_incompleto_sin_audio",
+      "status": "revision_ampliada_subtitulos_automaticos_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-61-influencia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 13,
-      "sourceRelationsDocumented": 15,
+      "sourceNodesDocumented": 15,
+      "sourceRelationsDocumented": 17,
       "personsProfiled": 1,
-      "documentaryChecks": 3,
+      "documentaryChecks": 4,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "TXT termina a mitad de frase; se distinguen experiencia no corroborada, diversidad de opiniones, registros concretos de lobby y estereotipos sin imputar intenciones.",
+      "qualityNotes": "Subtítulos automáticos del clip hasta 12:57 y episodio de origen identificado por el canal. Referencias orientativas, voces y audio sin cotejar; alegaciones sin corroborar.",
       "lastUpdated": "2026-11-15"
     },
     {
@@ -6174,7 +6174,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 60,
-        "status": "revision_fragmento_incompleto_sin_audio",
+        "status": "revision_ampliada_subtitulos_automaticos_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -6200,24 +6200,25 @@
           "untimedTranscriptNeedsPriorityIntegrityCheck": true,
           "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
           "verifiedMinuteReferences": 0,
-          "audioMatched": false
+          "audioMatched": false,
+          "automaticYouTubeCaptionsAvailable": true
         },
         "analysisCoverage": {
-          "percent": 10,
-          "state": "fragmento_incompleto_en_revision",
+          "percent": 20,
+          "state": "revision_parcial_ampliada",
           "readyForDeepReview": false,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "transcriptIncomplete": true,
           "signals": {
-            "entities": 13,
-            "relations": 15,
+            "entities": 15,
+            "relations": 17,
             "biographies": 1,
-            "statements": 7,
-            "independentChecks": 3,
+            "statements": 10,
+            "independentChecks": 4,
             "verifiedTimelineEvents": 0
           },
-          "nextAction": "Recuperar final de transcripción y cotejar audio y turnos; investigar afirmaciones por organizaciones, periodos y evidencia, sin generalizar a comunidades."
+          "nextAction": "Cotejar audio y voces; revisar íntegramente episodio de origen y verificar alegaciones documentales."
         }
       },
       {
