@@ -95,6 +95,17 @@ class BibliotecaTests(unittest.TestCase):
         self.assertIn("header .brand .brand-icon", stylesheet)
         self.assertIn("width:34px;height:34px;flex-basis:34px", stylesheet)
 
+    def test_publication_counter_derived_from_image_manifest(self):
+        page = (ROOT / "biblioteca-montecristo" / "index.html").read_text(encoding="utf-8")
+        app = (ROOT / "biblioteca-montecristo" / "app.js").read_text(encoding="utf-8")
+        css = (ROOT / "biblioteca-montecristo" / "styles.css").read_text(encoding="utf-8")
+        self.assertIn('id="infographic-count"', page)
+        self.assertIn('infografías publicadas', page)
+        self.assertIn("Object.values(visuals.books||{})", app)
+        self.assertIn("Object.keys(block.chapters||{}).length", app)
+        self.assertIn("'infographic-count').textContent=imageCount", app)
+        self.assertIn(".hero-stat+.hero-stat", css)
+
     def test_web_assets(self):
         for item in ["index.html", "app.js", "styles.css", "catalogo.json", "infografias/index.json"]:
             self.assertTrue((ROOT / "biblioteca-montecristo" / item).is_file(), item)
