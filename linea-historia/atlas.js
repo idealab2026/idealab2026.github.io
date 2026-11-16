@@ -109,7 +109,7 @@ function goToSnapshot(step){
 }
 function initDOM(){
  context.innerHTML=
- '<div class="atlas-side-head"><strong>ATLAS · CONTEXTO VISUAL</strong><button type="button" id="atlas-side-release" class="atlas-action" hidden>Soltar</button></div>'+
+ '<div class="atlas-side-head"><strong>ATLAS · CONTEXTO VISUAL</strong><div class="atlas-side-head-actions"><button type="button" id="atlas-side-release" class="atlas-action" hidden>Soltar</button><button type="button" id="atlas-side-hide" class="atlas-action" aria-label="Ocultar Atlas lateral" title="Ampliar la cronología">Ocultar</button></div></div>'+
  '<div class="atlas-side-year" id="atlas-side-year"></div><div class="atlas-side-focus" id="atlas-side-focus"></div>'+
  '<div class="atlas-mini-image"><img id="atlas-side-img" class="atlas-image" alt="" hidden><div id="atlas-side-empty" class="atlas-no-image">Cargando imágenes…</div></div>'+
  '<div id="atlas-side-title" class="atlas-map-name"></div><div id="atlas-side-meta" class="atlas-map-meta"></div>'+
@@ -128,6 +128,8 @@ function initDOM(){
  '<section class="atlas-original-inventory" id="atlas-original-inventory"><div class="atlas-inventory-header"><h3>Inventario del Excel · <span id="atlas-inventory-total">81</span> imágenes</h3><div class="atlas-inventory-controls"><input id="atlas-inventory-search" type="search" aria-label="Buscar imágenes del Excel" placeholder="Buscar imagen, tema o celda…"><select id="atlas-inventory-type" aria-label="Filtrar tipo de imagen"><option value="">Todos los tipos</option></select></div></div><p class="muted">Se han revisado los 81 archivos incrustados de HISTORIA.xlsx. Las miniaturas originales no se publican sin acreditar derechos. Cuando existe un mapa alternativo de Wikimedia Commons, puedes abrirlo aquí. No es una copia idéntica de la imagen original.</p><div id="atlas-inventory-status" class="atlas-map-meta" role="status"></div><div id="atlas-inventory-list" class="atlas-inventory-list"></div></section>';
  $("atlas-inventory-search").addEventListener("input",drawInventory);
  $("atlas-inventory-type").addEventListener("change",drawInventory);
+ $("atlas-side-hide").addEventListener("click",function(){setSidebarHidden(true);$("atlas-sidebar-toggle").focus()});
+ $("atlas-sidebar-toggle").addEventListener("click",function(){setSidebarHidden(!panel.classList.contains("atlas-sidebar-hidden"))});
  $("atlas-side-open").addEventListener("click",function(){api.setView("atlas")});
  $("atlas-side-select").addEventListener("change",function(e){selectMap(e.target.value)});
  $("atlas-select").addEventListener("change",function(e){selectMap(e.target.value)});
@@ -139,6 +141,25 @@ function initDOM(){
  $("atlas-timeline").addEventListener("click",function(){api.setView("timeline");api.jumpToYear(state.year)});
  $("atlas-fullscreen").addEventListener("click",function(){setAtlasFullscreen(!state.fullScreen)});
  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&state.fullScreen)setAtlasFullscreen(false)});
+}
+// This setting only controls the timeline's right-hand context drawer, not the Atlas tab.
+var panel=document.getElementById("timeline-panel");
+var sidebarPreferenceKey="idea-lab-history-atlas-sidebar-hidden-v1";
+function setSidebarHidden(hidden){
+ var isHidden=!!hidden;
+ // Preserve the same central year when expanding/collapsing the viewport.
+ var year=api.getView()==="timeline"?api.getYear():null;
+ panel.classList.toggle("atlas-sidebar-hidden",isHidden);
+ var button=$("atlas-sidebar-toggle");
+ button.textContent=isHidden?"◨ Mostrar Atlas lateral":"◧ Ocultar Atlas lateral";
+ button.setAttribute("aria-expanded",isHidden?"false":"true");
+ button.title=isHidden?"Mostrar el Atlas lateral":"Ocultar el Atlas lateral para ampliar la cronología";
+ try{window.localStorage.setItem(sidebarPreferenceKey,isHidden?"1":"0")}catch(error){}
+ requestAnimationFrame(function(){
+  if(year!==null&&Number.isFinite(year)&&api.getView()==="timeline")api.jumpToYear(year);
+  window.dispatchEvent(new Event("resize"));
+  requestUpdate();
+ });
 }
 function setAtlasFullscreen(on){
  state.fullScreen=!!on;
@@ -344,6 +365,7 @@ async function loadCatalogs(){
  state.loaded=true;requestUpdate();
 }
 initDOM();
+try{if(window.localStorage.getItem(sidebarPreferenceKey)==="1")setSidebarHidden(true)}catch(error){}
 window.addEventListener("historia:year",function(e){
  if(state.pinned)return;
  if(e.detail&&Number.isFinite(e.detail.year)){state.year=Math.round(e.detail.year);state.chosen=null;requestUpdate()}
