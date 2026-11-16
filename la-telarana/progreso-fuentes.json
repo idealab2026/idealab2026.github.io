@@ -1529,13 +1529,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 16,
-      "sourceRelationsDocumented": 18,
+      "sourceNodesDocumented": 18,
+      "sourceRelationsDocumented": 21,
       "personsProfiled": 0,
-      "documentaryChecks": 7,
+      "documentaryChecks": 9,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Ampliada a clima, patentes y religión; se distinguen opiniones e hipótesis. Tiempos, voces e integridad siguen sin cotejo de audio.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Ampliada con modelos de reconexión del mar Negro y sus límites; conexión con relatos permanece hipotética. Audio y voces sin cotejo.",
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 38,
@@ -4922,7 +4922,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4940,20 +4940,20 @@
           "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 20,
+          "percent": 23,
           "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 16,
-            "relations": 18,
+            "entities": 18,
+            "relations": 21,
             "biographies": 0,
-            "statements": 10,
-            "independentChecks": 7,
+            "statements": 11,
+            "independentChecks": 9,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar audio, voces e integridad; profundizar contrastes de paleoclima, religiones y afirmaciones tecnológicas."
+          "nextAction": "Cotejar audio, voces e integridad; continuar la entrevista y contrastar afirmaciones restantes."
         }
       },
       {
