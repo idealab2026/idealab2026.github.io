@@ -428,7 +428,7 @@ window.IDEA_TELARANA_F67_REVIEW =
       "kind": "Texto",
       "subtitle": "Crónica medieval · siglo X",
       "note": "Agapio de Hierápolis transmitió en árabe una versión medieval del pasaje de Josefo sobre Jesús. Alice Whealey estudió la transmisión árabe y siríaca y sus variantes. Esta versión no certifica automáticamente qué escribió Josefo ni proporciona una fuente de época independiente de las Antigüedades judías.",
-      "source": "https://doi.org/10.1017/S0028688508000251",
+      "source": "https://doi.org/10.1017/S0028688508000301",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
@@ -694,7 +694,7 @@ window.IDEA_TELARANA_F67_REVIEW =
       "confidence": "documentado",
       "claimStatus": "transmision_textual_no_confirmacion_independiente",
       "note": "La crónica árabe de Agapio conserva una versión del pasaje; su relación filológica y su autenticidad son objeto de investigación.",
-      "source": "https://doi.org/10.1017/S0028688508000251",
+      "source": "https://doi.org/10.1017/S0028688508000301",
       "podcastNotes": []
     }
   ]
