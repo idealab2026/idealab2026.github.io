@@ -85,15 +85,28 @@ function buttonGroup(label,click){
  });
  return g;
 }
-function drawCard(svg,node,x,y,center,selected,onSelect){
- var width=center?250:206,height=center?82:90;
+/* Las tarjetas comparten un ancho fijo por columna, pero crecen en altura sin
+   cortar nombres ni subtítulos. No utilizar maxLines ni puntos suspensivos. */
+function cardMetrics(node,center){
+ var title=wrapRelationLabel(node.name||"Entidad",center?27:20);
+ var subtitle=wrapRelationLabel(node.subtitle||node.kind||"Entidad",center?37:29);
+ var height=Math.max(center?82:90,68+(title.length-1)*16+(subtitle.length-1)*15);
+ return {width:center?250:206,height:height,title:title,subtitle:subtitle};
+}
+function drawCard(svg,node,x,y,center,selected,onSelect,metrics){
+ var size=metrics||cardMetrics(node,center),width=size.width,height=size.height;
  var g=buttonGroup((center?"Entidad central: ":"Abrir entidad: ")+node.name,function(){onSelect(node.id)});
  g.setAttribute("class","local-node"+(center?" is-center":"")+(selected?" is-selected":""));
  g.appendChild(el("rect",{x:x-width/2,y:y,width:width,height:height,rx:12}));
  g.appendChild(el("circle",{cx:x-width/2+23,cy:y+27,r:12,"class":"local-avatar"}));
  g.appendChild(el("text",{x:x-width/2+23,y:y+31,"text-anchor":"middle","class":"local-avatar-letter"},String(node.kind||"").startsWith("Org")?"O":String(node.name||"?").slice(0,1).toUpperCase()));
- textLines(g,node.name,x-width/2+44,y+26,center?27:20,2,"local-name");
- textLines(g,node.subtitle||node.kind||"Entidad",x-width/2+13,y+height-17,center?37:29,1,"local-sub");
+ size.title.forEach(function(line,i){
+  g.appendChild(el("text",{x:x-width/2+44,y:y+26+i*16,"class":"local-name"},line));
+ });
+ var subtitleY=Math.max(26+(size.title.length-1)*16+25,height-17-(size.subtitle.length-1)*15);
+ size.subtitle.forEach(function(line,i){
+  g.appendChild(el("text",{x:x-width/2+13,y:y+subtitleY+i*15,"class":"local-sub"},line));
+ });
  g.appendChild(el("title",{},node.name+(node.subtitle?" · "+node.subtitle:"")));
  svg.appendChild(g);
 }
@@ -125,22 +138,25 @@ function create(config){
   svg.replaceChildren();
   // Tres columnas con ancho suficiente para etiquetas de varias líneas.
   // Cada fila se dimensiona según la relación más larga (o los vínculos paralelos).
-  var columns=3,rows=Math.ceil(pageItems.length/columns),layouts=[],nextLabelTop=135;
+  var columns=3,rows=Math.ceil(pageItems.length/columns),layouts=[];
+  var centerTop=32,centerSize=cardMetrics(neighborhood.center,true);
+  var nextLabelTop=Math.max(135,centerTop+centerSize.height+21);
   var groups=pageItems.map(function(item){
    var badges=item.edges.map(function(edge){
     var label=relationLabel(edge),textLines=wrapRelationLabel(label,28);
     return {edge:edge,label:label,lines:textLines,height:Math.max(31,14+textLines.length*16)};
    });
-   return {badges:badges,height:badges.reduce(function(total,badge,i){return total+badge.height+(i?6:0)},0)};
+   return {badges:badges,height:badges.reduce(function(total,badge,i){return total+badge.height+(i?6:0)},0),card:cardMetrics(item.node,false)};
   });
   for(var row=0;row<rows;row++){
    var values=groups.slice(row*columns,(row+1)*columns);
    var maxLabelHeight=Math.max.apply(null,values.map(function(group){return group.height}));
+   var maxCardHeight=Math.max.apply(null,values.map(function(group){return group.card.height}));
    var nodeTop=nextLabelTop+maxLabelHeight+16;
-   layouts.push({labelTop:nextLabelTop,labelHeight:maxLabelHeight,nodeY:nodeTop});
-   nextLabelTop=nodeTop+90+40;
+   layouts.push({labelTop:nextLabelTop,labelHeight:maxLabelHeight,nodeY:nodeTop,cardHeight:maxCardHeight});
+   nextLabelTop=nodeTop+maxCardHeight+40;
   }
-  var height=rows?Math.max(215,layouts[rows-1].nodeY+90+35):215;
+  var height=rows?Math.max(215,layouts[rows-1].nodeY+layouts[rows-1].cardHeight+35):Math.max(215,centerTop+centerSize.height+55);
   svg.setAttribute("viewBox","0 0 960 "+height);
   // La altura intrínseca debe coincidir con viewBox: evita un SVG alto y vacío por preserveAspectRatio.
   svg.setAttribute("height",String(height));
@@ -152,8 +168,8 @@ function create(config){
    var mentionOnly=!!opts.isSourceMention&&item.edges.every(opts.isSourceMention);
    var grade=mentionOnly?"mention":groupTier(item.edges);
    var selected=state.selection&&state.selection.kind==="edge"&&item.edges.some(function(edge){return edge.id===state.selection.id});
-   var controlY=Math.max(124,layout.labelTop-8);
-   var path=el("path",{d:"M 480 120 C 480 "+controlY+" "+x+" "+controlY+" "+x+" "+(y-7),"class":"local-link "+grade+(selected?" is-selected":"")});
+   var controlY=Math.max(centerTop+centerSize.height+10,layout.labelTop-8);
+   var path=el("path",{d:"M 480 "+(centerTop+centerSize.height+6)+" C 480 "+controlY+" "+x+" "+controlY+" "+x+" "+(y-7),"class":"local-link "+grade+(selected?" is-selected":"")});
    path.appendChild(el("title",{},neighborhood.center.name+" ↔ "+item.node.name+" · "+item.edges.length+" relación(es): "+item.edges.map(relationLabel).join("; ")));
    paths.appendChild(path);
    var nextY=layout.labelTop+(layout.labelHeight-group.height)/2;
@@ -174,11 +190,11 @@ function create(config){
     nextY+=entry.height+6;
    });
   });
-  drawCard(svg,neighborhood.center,480,32,true,false,function(){});
+  drawCard(svg,neighborhood.center,480,centerTop,true,false,function(){},centerSize);
   pageItems.forEach(function(item,i){
    drawCard(svg,item.node,160+(i%columns)*320,layouts[Math.floor(i/columns)].nodeY,false,false,function(id){
     if(opts.onSelectNode)opts.onSelectNode(id);
-   });
+   },groups[i].card);
   });
   if(!pageItems.length){
    svg.appendChild(el("text",{x:480,y:165,"text-anchor":"middle","class":"local-empty"},
