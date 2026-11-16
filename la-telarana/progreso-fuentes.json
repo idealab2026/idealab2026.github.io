@@ -2007,13 +2007,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 15,
-      "sourceRelationsDocumented": 17,
+      "sourceNodesDocumented": 17,
+      "sourceRelationsDocumented": 21,
       "personsProfiled": 0,
-      "documentaryChecks": 6,
+      "documentaryChecks": 9,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Ampliada con datación, calibración, fragmentos y dos estudios forenses. Subtítulos automáticos orientativos; audio y voces sin cotejo.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Ampliada con moneda bizantina, Corán y crítica histórica; subtítulos automáticos orientativos sin cotejo de audio o voces.",
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 68,
@@ -6504,7 +6504,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6523,20 +6523,20 @@
           "automaticYouTubeCaptionsAvailable": true
         },
         "analysisCoverage": {
-          "percent": 15,
+          "percent": 20,
           "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 15,
-            "relations": 17,
+            "entities": 17,
+            "relations": 21,
             "biographies": 0,
-            "statements": 9,
-            "independentChecks": 6,
+            "statements": 12,
+            "independentChecks": 9,
             "verifiedTimelineEvents": 0
           },
-          "nextAction": "Cotejar audio y voces; revisar el resto de la entrevista y contrastar historia, textos y afirmaciones sobre reliquias."
+          "nextAction": "Cotejar audio y voces, identificar la moneda mencionada y continuar revisión de la entrevista."
         }
       },
       {

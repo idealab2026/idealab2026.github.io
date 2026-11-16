@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F67_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": true,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se separan opinión, resultados y límites de las muestras.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica.",
     "automaticCaptions": true
   },
   "nodes": [
@@ -167,6 +167,25 @@ window.IDEA_TELARANA_F67_REVIEW = {
           "transcriptSearch": "laboratorio de los Álamos",
           "minuteVerified": false,
           "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=1491",
+          "timeSec": 1491,
+          "status": "relato_de_la_fuente_sin_audio",
+          "text": "Los subtítulos recogen que los relatos desfavorables a los discípulos se interpretan como algo que no pudieron negar. Es un argumento histórico, no una garantía automática de exactitud.",
+          "transcriptSearch": "desde el punto de vista del marketing",
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · contraste documental",
+          "source": "https://www.cambridge.org/core/books/abs/historical-jesus-and-the-temple/demise-of-authenticity-and-the-challenge-of-methodology/2175F425D96405783B2C862DFFBB54BF",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "Un capítulo académico examina críticas a los criterios de autenticidad y la influencia de los estudios sobre memoria. El contexto histórico de un relato tampoco verifica por sí solo cada detalle."
         }
       ]
     },
@@ -309,6 +328,76 @@ window.IDEA_TELARANA_F67_REVIEW = {
           "timeSec": null,
           "status": "fuente-externa",
           "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha."
+        }
+      ]
+    },
+    {
+      "id": "f67-moneda-justiniano",
+      "name": "Moneda de Justiniano II con imagen de Cristo",
+      "kind": "Objeto",
+      "subtitle": "Constantinopla · 692–695",
+      "note": "El Met cataloga un sólido de Justiniano II con imagen de Cristo en 692–695. No se ha identificado la moneda precisa aludida en la entrevista.",
+      "source": "https://www.metmuseum.org/art/collection/search/463390",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=462",
+          "timeSec": 462,
+          "status": "relato_de_la_fuente_sin_audio",
+          "text": "Los subtítulos atribuyen a monedas de Justiniano del siglo VI rasgos semejantes a la Sábana y proponen una relación. El objeto concreto y las palabras requieren cotejo con el audio.",
+          "transcriptSearch": "monedas del siglo VI de Justiniano",
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · contraste documental",
+          "source": "https://www.metmuseum.org/art/collection/search/463390",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "El Met fecha este ejemplar de Justiniano II en 692–695, siglo VII. Una semejanza visual, por sí sola, no demuestra copia ni identifica su modelo."
+        }
+      ]
+    },
+    {
+      "id": "f67-coran-jesus",
+      "name": "Jesús en el Corán",
+      "kind": "Texto",
+      "subtitle": "Pasajes 3:45 y 4:157",
+      "note": "El texto coránico nombra a Jesús hijo de María y presenta la crucifixión de forma distinta a la tradición cristiana; las interpretaciones religiosas son diversas.",
+      "source": "https://quran.com/3/45",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=937",
+          "timeSec": 937,
+          "status": "relato_de_la_fuente_sin_audio",
+          "text": "Los subtítulos recogen una opinión que presenta el Corán como negación de Cristo incluso histórica. Pendiente cotejar audio y voces.",
+          "transcriptSearch": "el Corán por ejemplo",
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · contraste documental",
+          "source": "https://quran.com/3/45",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "El pasaje 3:45 nombra a Jesús, hijo de María; esto no equivale a una negación textual de su existencia."
+        },
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · contraste documental",
+          "source": "https://quran.com/4/157",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "El pasaje 4:157 afirma que no lo mataron ni crucificaron; es una afirmación del texto religioso y no resuelve por sí sola una cuestión histórica."
         }
       ]
     }
@@ -499,6 +588,50 @@ window.IDEA_TELARANA_F67_REVIEW = {
       "claimStatus": "contexto_documental",
       "note": "El artículo documenta su estudio y sus resultados concretos; no prueba identidad o cronología completa.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36764944/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-prof-mencion-moneda",
+      "a": "f67-episodio",
+      "b": "f67-moneda-justiniano",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "La entrevista menciona monedas de Justiniano; el ejemplar exacto no está identificado.",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-prof-moneda-sindone",
+      "a": "f67-moneda-justiniano",
+      "b": "f42-sudario",
+      "type": "Semejanza propuesta",
+      "confidence": "hipotesis",
+      "claimStatus": "hipotesis",
+      "note": "La entrevista propone una influencia iconográfica; la semejanza alegada no prueba copia ni identifica el objeto representado.",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-prof-mencion-coran",
+      "a": "f67-episodio",
+      "b": "f67-coran-jesus",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "La conversación menciona el Corán; subtítulos automáticos sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-prof-coran-jesus",
+      "a": "f67-coran-jesus",
+      "b": "f42-jesus",
+      "type": "Mención textual",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "El pasaje coránico 3:45 nombra a Jesús, hijo de María; la relación documenta el texto, no una conclusión histórica independiente.",
+      "source": "https://quran.com/3/45",
       "podcastNotes": []
     }
   ]
