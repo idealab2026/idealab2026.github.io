@@ -1,4 +1,4 @@
-/* F50 tercera revisión documental; audio, voces y minutajes no cotejados. */
+/* F50 cuarta revisión, sin voz ni minutaje cotejados. */
 window.IDEA_TELARANA_F50_REVIEW = {
   "metadata": {
     "id": "idealab-f50-miguel-de-lys-wild-project284-2024",
@@ -16,7 +16,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
     "transcriptFormat": "NotebookLM TXT no reliable timecodes",
     "transcriptCharacters": 251787,
     "transcriptPrivateDriveUrl": null,
-    "reviewStage": "tercera_revision_documental_egipto_roma_pirateria_sin_audio",
+    "reviewStage": "cuarta_revision_documental_cleopatra_roma_pirateria_china_sin_audio",
     "textualEvidenceScheme": "anchor phrase + approximate char offset in private TXT; not audio time",
     "updatedAt": "2026-11-16",
     "externalCheckSources": [
@@ -44,9 +44,23 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
       "https://www.dncr.nc.gov/blog/2014/05/30/lab-conserving-treasures-recovered-blackbeards-queen-annes-revenge-shipwreck",
       "https://www.history.com/articles/did-pirates-really-make-people-walk-the-plank",
-      "https://www.usni.org/magazines/proceedings/1929/january/seagoing-customs"
+      "https://www.usni.org/magazines/proceedings/1929/january/seagoing-customs",
+      "https://www.metmuseum.org/ja/essays/egypt-in-the-ptolemaic-period",
+      "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "https://www.nature.com/articles/s41598-024-83870-x",
+      "https://www.metmuseum.org/es/essays/the-roman-republic",
+      "https://roman-emperors.sites.luc.edu/valmess.htm",
+      "https://communication.gmu.edu/research-and-centers/carp/ca-history/antiquity",
+      "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/80%2A.html",
+      "https://publicatt.unicatt.it/handle/10807/316156",
+      "https://www.visitlazio.com/en/colosseum/",
+      "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
+      "https://www.guinnessworldrecords.com/world-records/720066-largest-pirate-fleet",
+      "https://eprints.soton.ac.uk/452410/1/Rebecca_James_Final_Submission_PhD_Thesis_The_Pirate_and_his_Fellows_Reading_Editions_of_A_General_History_of_the_Pyrates_1724_1734_1_1_.pdf"
     ],
-    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive. Segunda revisión 16-11-2026 sobre TXT privado real (251787 caracteres con cabecera): 12 anclas textuales localizadas y verificadas por cadena y posición; distinción explícita entre lo mencionado y el contexto externo. Contrastes con National Museum of Denmark (Gjermundbu), Parks Canada y Nature (L'Anse aux Meadows / tala 1021), Peabody Essex Museum (Salem: 19 ahorcados, Giles Corey aplastado, otros presos muertos), historia inquisitorial vaticana (Gregorio IX, s. XIII), UC Berkeley Law (cazas modernas) y Royal Museums Greenwich (patentes). No se presume que el invitado haya pronunciado nombres externos ni se inventan minutos o voces. El hito 1021 registra actividad, no llegada de Erik/Leif. 16-11-2026 tercera revisión, Egipto/Roma/piratería. Anclas textuales verificadas por cadena exacta en el TXT privado (sin audio ni minutos). Contrastes: organización laboral documentada de Guiza vs. corvea; Heródoto tardío; Vercingétorix permaneció en Alesia aunque envió caballería; Incitatus nunca fue nombrado senador o cónsul en lo acreditado; incendio de Roma 64 sin autoría de Nerón demostrada; bloqueo de Charleston 1718 con rescate médico acreditado pero diagnóstico individual de sífilis no probado; quilla y tablón son castigos distintos. No afirmar que nombres añadidos por fuentes externas fueron pronunciados."
+    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive. Segunda revisión 16-11-2026 sobre TXT privado real (251787 caracteres con cabecera): 12 anclas textuales localizadas y verificadas por cadena y posición; distinción explícita entre lo mencionado y el contexto externo. Contrastes con National Museum of Denmark (Gjermundbu), Parks Canada y Nature (L'Anse aux Meadows / tala 1021), Peabody Essex Museum (Salem: 19 ahorcados, Giles Corey aplastado, otros presos muertos), historia inquisitorial vaticana (Gregorio IX, s. XIII), UC Berkeley Law (cazas modernas) y Royal Museums Greenwich (patentes). No se presume que el invitado haya pronunciado nombres externos ni se inventan minutos o voces. El hito 1021 registra actividad, no llegada de Erik/Leif. 16-11-2026 tercera revisión, Egipto/Roma/piratería. Anclas textuales verificadas por cadena exacta en el TXT privado (sin audio ni minutos). Contrastes: organización laboral documentada de Guiza vs. corvea; Heródoto tardío; Vercingétorix permaneció en Alesia aunque envió caballería; Incitatus nunca fue nombrado senador o cónsul en lo acreditado; incendio de Roma 64 sin autoría de Nerón demostrada; bloqueo de Charleston 1718 con rescate médico acreditado pero diagnóstico individual de sífilis no probado; quilla y tablón son castigos distintos. No afirmar que nombres añadidos por fuentes externas fueron pronunciados. Cuarta revisión (16-11-2026) sobre TXT completo F50 reabierto: 27 nuevas anclas literales, posiciones de carácter sin inferir tiempo ni voces. Cleopatra: fuentes ptolemaicas, Plutarco, Accio 31 y anexión 30, estudio del cráneo de Éfeso de 2025 que descarta identificación con Arsínoe. Roma: 509 inicio tradicional de República, Mesalina tercera esposa, anécdotas sexuales antiguas no corroboradas, testimonios hostiles sobre Heliogábalo, anacronismo Calígula/Coliseo. Guangdong: Zheng Yi Sao se identifica como contraste externo, no nombre pronunciado; estimaciones de flota variables, amnistía Qing 1810. Libertalia literaria; origen biográfico de Zheng sin prueba documental suficiente. Audio no cotejado."
   },
   "nodes": [
     {
@@ -194,8 +208,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Cleopatra VII",
       "kind": "Persona",
       "subtitle": "Reina ptolemaica de Egipto, último periodo helenístico",
-      "note": "Los interlocutores repasan las representaciones de Cleopatra en cine y series y cuestionan que la belleza física de las actrices represente fielmente a la soberana histórica. Se menciona su contexto dinástico helenístico.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Cleopatra VII pertenecía a la dinastía macedonia de los Ptolomeos; Plutarco describe sus idiomas y habilidades diplomáticas. No se puede reconstruir con certeza su aspecto. El cráneo de Éfeso, usado para atribuir rasgos a su hermana Arsínoe, fue descartado en 2025 mediante ADN. Accio ocurrió en 31 a. C. y la anexión romana en 30 a. C. La leyenda del áspid es incierta.",
+      "source": "https://www.metmuseum.org/ja/essays/egypt-in-the-ptolemaic-period",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -257,8 +271,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Imperio romano",
       "kind": "Periodo",
       "subtitle": "Etapa imperial de la historia de Roma",
-      "note": "La conversación examina la representación de emperadores y su relación con la propaganda, los cronistas antiguos y el entretenimiento moderno.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "La cronología política convencional distingue el período regio hasta el 509 a. C., la República desde 509 a. C. y el Principado desde 27 a. C. La fecha oral de F50 sobre el paso a la República se corrige con el Metropolitan Museum; César no fue emperador del Principado.",
+      "source": "https://www.metmuseum.org/es/essays/the-roman-republic",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -278,8 +292,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Calígula",
       "kind": "Persona",
       "subtitle": "Emperador romano de la dinastía julio-claudia",
-      "note": "El relato de F50 dice que Calígula hizo senador a su caballo. Fuentes antiguas solo hablan de una intención o promesa de hacerlo cónsul. No hubo designación acreditada; Senado y consulado son instituciones diferentes.",
-      "source": "https://hpi.uq.edu.au/node/2286",
+      "note": "Calígula reinó del 37 al 41 d. C. El Coliseo fue comenzado por Vespasiano hacia 72 e inaugurado por Tito en 80: el episodio no puede situar un hecho protagonizado por Calígula en ese edificio décadas posterior a su muerte.",
+      "source": "https://www.visitlazio.com/en/colosseum/",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -470,8 +484,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Piratería atlántica y caribeña",
       "kind": "Periodo",
       "subtitle": "Corsarismo y piratería en contextos coloniales y de guerra",
-      "note": "Se discute cómo los testimonios judiciales y la ficción, como La isla del tesoro, influyeron en la representación posterior de piratas. La procedencia y motivaciones individuales no quedan verificadas por la entrevista.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "La piratería también tuvo centros y confederaciones de enorme escala en China. El Museo Marítimo de Hong Kong registra a Zheng Yi Sao y hasta unas 2.000 embarcaciones y 70.000 integrantes estimados; F50 habla de 400 y 60.000. La amnistía Qing de 1810 está documentada. Libertalia no está acreditada como asentamiento real.",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -1221,6 +1235,573 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "contraste_documental_de_pasaje_no_audio",
           "text": "Iconografía literaria con evidencia muy limitada para la piratería de 1710–1720. No equivale a pasar por la quilla y no puede calificarse de práctica pirata habitual. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 186017; buscar «el tema de El tablón». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-dinastia-ptolemaica",
+      "name": "Dinastía ptolemaica",
+      "kind": "Colectivo",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "El linaje gobernante de Cleopatra VII era de origen macedonio y cultura helenística. Ese dato genealógico no autoriza a reconstruir con seguridad el aspecto físico de la reina ni la ascendencia de su madre.",
+      "source": "https://www.metmuseum.org/ja/essays/egypt-in-the-ptolemaic-period",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Dinastía ptolemaica · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "El linaje gobernante de Cleopatra VII era de origen macedonio y cultura helenística. Ese dato genealógico no autoriza a reconstruir con seguridad el aspecto físico de la reina ni la ascendencia de su madre. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42771; buscar «dinastía ptolemaica». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-plutarco",
+      "name": "Plutarco",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Plutarco escribió después de Cleopatra una biografía de Marco Antonio. Atribuye a la reina gran capacidad persuasiva y lingüística, pero su texto es un testimonio literario tardío y no una descripción científica de su aspecto.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Plutarco · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Plutarco escribió después de Cleopatra una biografía de Marco Antonio. Atribuye a la reina gran capacidad persuasiva y lingüística, pero su texto es un testimonio literario tardío y no una descripción científica de su aspecto. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 41555; buscar «no era una salida». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-lenguas-cleopatra",
+      "name": "Idiomas de Cleopatra",
+      "kind": "Tema",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "En Vida de Antonio 27 Plutarco atribuye a Cleopatra el uso de diversas lenguas, incluido el egipcio. Distinguir lo atestiguado por el autor antiguo de la demostración documental de cada lengua.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Idiomas de Cleopatra · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "En Vida de Antonio 27 Plutarco atribuye a Cleopatra el uso de diversas lenguas, incluido el egipcio. Distinguir lo atestiguado por el autor antiguo de la demostración documental de cada lengua. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 43708; buscar «la lengua del pueblo». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-arsinoe-iv",
+      "name": "Arsínoe IV",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "La hermana o hermanastra de Cleopatra fue vinculada durante décadas con un cráneo hallado en Éfeso. Análisis de 2025 descartan esa identificación; no se puede inferir la ascendencia de Cleopatra a partir de esos restos.",
+      "source": "https://www.nature.com/articles/s41598-024-83870-x",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Arsínoe IV · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "La hermana o hermanastra de Cleopatra fue vinculada durante décadas con un cráneo hallado en Éfeso. Análisis de 2025 descartan esa identificación; no se puede inferir la ascendencia de Cleopatra a partir de esos restos. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42734; buscar «una hermana Negra». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-estudio-efeso-2025",
+      "name": "Estudio de ADN del Octágono de Éfeso (2025)",
+      "kind": "Documento",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Scientific Reports (2025) identificó los restos estudiados como pertenecientes a un varón adolescente y no a Arsínoe IV. Es un contraste científico posterior a la grabación de F50 en 2024.",
+      "source": "https://www.nature.com/articles/s41598-024-83870-x",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Estudio de ADN del Octágono de Éfeso (2025) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Scientific Reports (2025) identificó los restos estudiados como pertenecientes a un varón adolescente y no a Arsínoe IV. Es un contraste científico posterior a la grabación de F50 en 2024. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42827; buscar «en una tumba en Turquía». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-aspid-cleopatra",
+      "name": "Método de muerte de Cleopatra",
+      "kind": "Hipótesis",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Plutarco, Vida de Antonio 86, transmite varias explicaciones de la muerte de Cleopatra y admite que la verdad se desconoce. La leyenda de la mordedura de un áspid no acredita el mecanismo exacto.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Método de muerte de Cleopatra · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "Plutarco, Vida de Antonio 86, transmite varias explicaciones de la muerte de Cleopatra y admite que la verdad se desconoce. La leyenda de la mordedura de un áspid no acredita el mecanismo exacto. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 44283; buscar «un aspid». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-mito-abejas-cleopatra",
+      "name": "Rumor de las abejas atribuido a Cleopatra",
+      "kind": "Mito",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "F50 menciona con escepticismo un relato sensacionalista sin respaldo histórico primario identificado. Su inclusión registra un rumor atribuido a la figura antigua, no un objeto arqueológico demostrado.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Rumor de las abejas atribuido a Cleopatra · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "F50 menciona con escepticismo un relato sensacionalista sin respaldo histórico primario identificado. Su inclusión registra un rumor atribuido a la figura antigua, no un objeto arqueológico demostrado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42534; buscar «vibrador con abejas». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-marco-antonio",
+      "name": "Marco Antonio",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Aliado político de Cleopatra, derrotado junto a ella por Octavio en Accio (31 a. C.). El nombre y las fechas se aportan mediante investigación externa, no como palabras pronunciadas en este fragmento.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Marco Antonio · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Aliado político de Cleopatra, derrotado junto a ella por Octavio en Accio (31 a. C.). El nombre y las fechas se aportan mediante investigación externa, no como palabras pronunciadas en este fragmento. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42052; buscar «con ella cae el el Imperio». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-octavio",
+      "name": "Octavio (futuro Augusto)",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Octavio venció a las fuerzas de Cleopatra y Marco Antonio y anexionó Egipto en 30 a. C. El título de Augusto llegó en 27 a. C.; no se debe llamar emperador a Julio César como si hubiera reinado bajo ese Principado.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Octavio (futuro Augusto) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Octavio venció a las fuerzas de Cleopatra y Marco Antonio y anexionó Egipto en 30 a. C. El título de Augusto llegó en 27 a. C.; no se debe llamar emperador a Julio César como si hubiera reinado bajo ese Principado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42088; buscar «ya pasa la dominación romana». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-accio-31ac",
+      "name": "Batalla de Accio (31 a. C.)",
+      "kind": "Acontecimiento",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "La alianza de Cleopatra y Antonio fue derrotada en Accio en 31 a. C. La incorporación de Egipto al dominio romano se produjo al año siguiente, por lo que los dos hechos se registran por separado.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Batalla de Accio (31 a. C.) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "La alianza de Cleopatra y Antonio fue derrotada en Accio en 31 a. C. La incorporación de Egipto al dominio romano se produjo al año siguiente, por lo que los dos hechos se registran por separado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42052; buscar «con ella cae el el Imperio». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-anexion-egipto-30ac",
+      "name": "Anexión romana de Egipto (30 a. C.)",
+      "kind": "Acontecimiento",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "El dominio ptolemaico terminó en 30 a. C. con la anexión de Egipto por Roma, después de Accio y la muerte de Cleopatra y Antonio. Es un hecho histórico distinto de la muerte por áspid, que sigue sin método probado.",
+      "source": "https://www.metmuseum.org/ja/essays/egypt-in-the-ptolemaic-period",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Anexión romana de Egipto (30 a. C.) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "El dominio ptolemaico terminó en 30 a. C. con la anexión de Egipto por Roma, después de Accio y la muerte de Cleopatra y Antonio. Es un hecho histórico distinto de la muerte por áspid, que sigue sin método probado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 42088; buscar «ya pasa la dominación romana». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-republica-509ac",
+      "name": "Comienzo tradicional de la República romana, 509 a. C.",
+      "kind": "Acontecimiento",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "La fecha tradicional de paso del periodo monárquico a la República romana es 509 a. C., según el Metropolitan Museum. El relato oral de F50 tantea los siglos V y IV; se conserva la datación convencional.",
+      "source": "https://www.metmuseum.org/es/essays/the-roman-republic",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Comienzo tradicional de la República romana, 509 a. C. · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "La fecha tradicional de paso del periodo monárquico a la República romana es 509 a. C., según el Metropolitan Museum. El relato oral de F50 tantea los siglos V y IV; se conserva la datación convencional. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 46576; buscar «a partir del siglo V antes de Cristo». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-claudio",
+      "name": "Claudio",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Claudio fue emperador de Roma entre 41 y 54 d. C. y contrajo varios matrimonios. Las anécdotas sobre su acceso al poder proceden de fuentes antiguas, no todas verificables de modo independiente.",
+      "source": "https://roman-emperors.sites.luc.edu/valmess.htm",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Claudio · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "Claudio fue emperador de Roma entre 41 y 54 d. C. y contrajo varios matrimonios. Las anécdotas sobre su acceso al poder proceden de fuentes antiguas, no todas verificables de modo independiente. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 64262; buscar «a Claudio que era un tío escondía». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-mesalina",
+      "name": "Valeria Mesalina",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Corrección de F50: Mesalina no fue la primera esposa de Claudio, sino la tercera, después de Plautia Urgulanilla y Aelia Paetina. Las historias sobre sexualidad extrema deben evaluarse como relatos antiguos con posibles sesgos.",
+      "source": "https://roman-emperors.sites.luc.edu/valmess.htm",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Valeria Mesalina · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "Corrección de F50: Mesalina no fue la primera esposa de Claudio, sino la tercera, después de Plautia Urgulanilla y Aelia Paetina. Las historias sobre sexualidad extrema deben evaluarse como relatos antiguos con posibles sesgos. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 65179; buscar «mesalina fue su primera mujer». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-anecdota-mesalina",
+      "name": "Anecdotario sexual sobre Mesalina",
+      "kind": "Relato",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Plinio el Viejo transmite una historia de competición sexual de Mesalina. La transmisión por un autor antiguo no acredita el hecho y puede reflejar invectiva política y de género; se rotula como relato, no hecho comprobado.",
+      "source": "https://communication.gmu.edu/research-and-centers/carp/ca-history/antiquity",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Anecdotario sexual sobre Mesalina · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "Plinio el Viejo transmite una historia de competición sexual de Mesalina. La transmisión por un autor antiguo no acredita el hecho y puede reflejar invectiva política y de género; se rotula como relato, no hecho comprobado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 65301; buscar «competir con una prostituta». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-heliogabalo",
+      "name": "Heliogábalo / Elagábalo",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Emperador romano entre 218 y 222. Su imagen literaria procede en buena medida de autores hostiles; las anécdotas sobre una supuesta petición quirúrgica no equivalen a un informe clínico ni prueban cada detalle narrado.",
+      "source": "https://publicatt.unicatt.it/handle/10807/316156",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Heliogábalo / Elagábalo · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "Emperador romano entre 218 y 222. Su imagen literaria procede en buena medida de autores hostiles; las anécdotas sobre una supuesta petición quirúrgica no equivalen a un informe clínico ni prueban cada detalle narrado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 61748; buscar «heliogábalo heliogábalo». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-casio-dion",
+      "name": "Casio Dión",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "El historiador Casio Dión incluyó relatos desfavorables sobre Heliogábalo, transmitidos en epitomes. Las interpretaciones contemporáneas debaten sus sesgos, contextos de género y el alcance literal de las historias.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/80%2A.html",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Casio Dión · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "El historiador Casio Dión incluyó relatos desfavorables sobre Heliogábalo, transmitidos en epitomes. Las interpretaciones contemporáneas debaten sus sesgos, contextos de género y el alcance literal de las historias. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 61889; buscar «quería operarse para ser mujer». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-coliseo-anacronismo",
+      "name": "Calígula y el Coliseo: anacronismo",
+      "kind": "Tema",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "F50 asocia una anécdota de Calígula con toldos del Coliseo. Calígula murió en 41 d. C.; el Anfiteatro Flavio se construyó a partir de 72 y se inauguró en 80. El recinto concreto de la anécdota no puede ser ese edificio.",
+      "source": "https://www.visitlazio.com/en/colosseum/",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Calígula y el Coliseo: anacronismo · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "F50 asocia una anécdota de Calígula con toldos del Coliseo. Calígula murió en 41 d. C.; el Anfiteatro Flavio se construyó a partir de 72 y se inauguró en 80. El recinto concreto de la anécdota no puede ser ese edificio. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 63336; buscar «a veces también en el coliseo». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-zheng-yi-sao",
+      "name": "Zheng Yi Sao (Ching Shih)",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Dirigente de la confederación pirata de Guangdong a comienzos del siglo XIX. F50 describe su trayectoria sin pronunciar su nombre; el Museo Marítimo de Hong Kong identifica su papel y la rendición pactada de 1810.",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Zheng Yi Sao (Ching Shih) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Dirigente de la confederación pirata de Guangdong a comienzos del siglo XIX. F50 describe su trayectoria sin pronunciar su nombre; el Museo Marítimo de Hong Kong identifica su papel y la rendición pactada de 1810. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 189203; buscar «era una pirata una mujer pirata». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-zheng-yi",
+      "name": "Zheng Yi",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Comandante pirata y marido de Zheng Yi Sao, fallecido en 1807. El detalle de F50 acerca de su supuesta muerte accidental cayendo por la borda no se corrobora en la evidencia museística utilizada.",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Zheng Yi · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Comandante pirata y marido de Zheng Yi Sao, fallecido en 1807. El detalle de F50 acerca de su supuesta muerte accidental cayendo por la borda no se corrobora en la evidencia museística utilizada. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 189307; buscar «se casó con un capitán». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-zhang-bao",
+      "name": "Zhang Bao (Cheung Po Tsai)",
+      "kind": "Persona",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Colaborador y dirigente de la confederación junto a Zheng Yi Sao, amnistiado en 1810 y posteriormente oficial naval Qing. Su nombre procede de documentación independiente; el episodio no lo pronuncia en el pasaje.",
+      "source": "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Zhang Bao (Cheung Po Tsai) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Colaborador y dirigente de la confederación junto a Zheng Yi Sao, amnistiado en 1810 y posteriormente oficial naval Qing. Su nombre procede de documentación independiente; el episodio no lo pronuncia en el pasaje. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 191234; buscar «firmó un un trato con con china». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-confederacion-guangdong",
+      "name": "Confederación pirata de Guangdong",
+      "kind": "Colectivo",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "El museo marítimo de Hong Kong cita hasta aproximadamente 2.000 barcos y 70.000 integrantes, agrupados en seis flotas. Son estimaciones históricas variables y no un censo. F50 menciona 400 buques y 60.000 hombres.",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Confederación pirata de Guangdong · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "El museo marítimo de Hong Kong cita hasta aproximadamente 2.000 barcos y 70.000 integrantes, agrupados en seis flotas. Son estimaciones históricas variables y no un censo. F50 menciona 400 buques y 60.000 hombres. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 189162; buscar «400 barcos y 60,000 hombres». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-amnistia-zheng-1810",
+      "name": "Amnistía acordada por Zheng Yi Sao (1810)",
+      "kind": "Acontecimiento",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "En 1810 Zheng Yi Sao aceptó una amnistía tras los enfrentamientos con fuerzas Qing. La obra documental del Museo Marítimo de Hong Kong confirma el contexto y el desenlace de negociación, sin atribuirlo como cita literal del episodio.",
+      "source": "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Amnistía acordada por Zheng Yi Sao (1810) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "En 1810 Zheng Yi Sao aceptó una amnistía tras los enfrentamientos con fuerzas Qing. La obra documental del Museo Marítimo de Hong Kong confirma el contexto y el desenlace de negociación, sin atribuirlo como cita literal del episodio. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 191234; buscar «firmó un un trato con con china». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-cifras-confederacion",
+      "name": "Estimaciones del tamaño de la confederación china",
+      "kind": "Tema",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Las magnitudes comunicadas varían entre fuentes y periodos: F50 refiere 400/60.000; Guinness recoge 1.800 y el museo marítimo cerca de 2.000/70.000. Deben mostrarse como estimaciones, no valores exactos o contradictorios sin contexto.",
+      "source": "https://www.guinnessworldrecords.com/world-records/720066-largest-pirate-fleet",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Estimaciones del tamaño de la confederación china · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "Las magnitudes comunicadas varían entre fuentes y periodos: F50 refiere 400/60.000; Guinness recoge 1.800 y el museo marítimo cerca de 2.000/70.000. Deben mostrarse como estimaciones, no valores exactos o contradictorios sin contexto. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 189162; buscar «400 barcos y 60,000 hombres». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-libertalia",
+      "name": "Libertalia, utopía pirata",
+      "kind": "Mito",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "La supuesta colonia igualitaria de Madagascar se conoce principalmente por A General History of the Pyrates. La investigación académica no acredita una comunidad histórica concreta con ese nombre y la considera relato literario.",
+      "source": "https://eprints.soton.ac.uk/452410/1/Rebecca_James_Final_Submission_PhD_Thesis_The_Pirate_and_his_Fellows_Reading_Editions_of_A_General_History_of_the_Pyrates_1724_1734_1_1_.pdf",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Libertalia, utopía pirata · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "La supuesta colonia igualitaria de Madagascar se conoce principalmente por A General History of the Pyrates. La investigación académica no acredita una comunidad histórica concreta con ese nombre y la considera relato literario. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 188307; buscar «libertalia esos más mito». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-capitan-misson",
+      "name": "Capitán Misson, personaje literario",
+      "kind": "Personaje",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "Protagonista literario de la narración de Libertalia; un estudio académico sobre las ediciones de A General History of the Pyrates señala su naturaleza ficticia. No es un pirata documentado en archivos históricos.",
+      "source": "https://eprints.soton.ac.uk/452410/1/Rebecca_James_Final_Submission_PhD_Thesis_The_Pirate_and_his_Fellows_Reading_Editions_of_A_General_History_of_the_Pyrates_1724_1734_1_1_.pdf",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Capitán Misson, personaje literario · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_externo_no_atribuido_a_fuente",
+          "text": "Protagonista literario de la narración de Libertalia; un estudio académico sobre las ediciones de A General History of the Pyrates señala su naturaleza ficticia. No es un pirata documentado en archivos históricos. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 188362; buscar «se supone que lo ubicaban en Madagascar». La posición identifica el archivo de texto, no un minuto del vídeo. El nombre o la precisión procede del contraste externo y no se atribuye como frase pronunciada. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-rumor-pasado-zheng",
+      "name": "Rumor biográfico del pasado de Zheng Yi Sao",
+      "kind": "Hipótesis",
+      "subtitle": "F50 · cuarta revisión textual y científica",
+      "note": "El podcast afirma un pasado de prostitución de la dirigente. El documento del Museo Marítimo de Hong Kong utilizado para esta revisión no certifica tal etapa biográfica, por lo que no se presenta como hecho acreditado.",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Rumor biográfico del pasado de Zheng Yi Sao · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_del_episodio_y_contraste_diferenciados",
+          "text": "El podcast afirma un pasado de prostitución de la dirigente. El documento del Museo Marítimo de Hong Kong utilizado para esta revisión no certifica tal etapa biográfica, por lo que no se presenta como hecho acreditado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 189239; buscar «había trabajado primero como prostituta». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
         }
       ]
     }
@@ -2447,6 +3028,723 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
       "claimStatus": "recurso_literario_no_hecho_general",
       "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-dinastia-ptolemaica",
+      "a": "f50-episodio",
+      "b": "f50-dinastia-ptolemaica",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-plutarco",
+      "a": "f50-episodio",
+      "b": "f50-plutarco",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-lenguas-cleopatra",
+      "a": "f50-episodio",
+      "b": "f50-lenguas-cleopatra",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-arsinoe-iv",
+      "a": "f50-episodio",
+      "b": "f50-arsinoe-iv",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-estudio-efeso-2025",
+      "a": "f50-episodio",
+      "b": "f50-estudio-efeso-2025",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-aspid-cleopatra",
+      "a": "f50-episodio",
+      "b": "f50-aspid-cleopatra",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-mito-abejas-cleopatra",
+      "a": "f50-episodio",
+      "b": "f50-mito-abejas-cleopatra",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-marco-antonio",
+      "a": "f50-episodio",
+      "b": "f50-marco-antonio",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-octavio",
+      "a": "f50-episodio",
+      "b": "f50-octavio",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-accio-31ac",
+      "a": "f50-episodio",
+      "b": "f50-accio-31ac",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-anexion-egipto-30ac",
+      "a": "f50-episodio",
+      "b": "f50-anexion-egipto-30ac",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-republica-509ac",
+      "a": "f50-episodio",
+      "b": "f50-republica-509ac",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-claudio",
+      "a": "f50-episodio",
+      "b": "f50-claudio",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-mesalina",
+      "a": "f50-episodio",
+      "b": "f50-mesalina",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-anecdota-mesalina",
+      "a": "f50-episodio",
+      "b": "f50-anecdota-mesalina",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-heliogabalo",
+      "a": "f50-episodio",
+      "b": "f50-heliogabalo",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-casio-dion",
+      "a": "f50-episodio",
+      "b": "f50-casio-dion",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-coliseo-anacronismo",
+      "a": "f50-episodio",
+      "b": "f50-coliseo-anacronismo",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-zheng-yi-sao",
+      "a": "f50-episodio",
+      "b": "f50-zheng-yi-sao",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-zheng-yi",
+      "a": "f50-episodio",
+      "b": "f50-zheng-yi",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-zhang-bao",
+      "a": "f50-episodio",
+      "b": "f50-zhang-bao",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-confederacion-guangdong",
+      "a": "f50-episodio",
+      "b": "f50-confederacion-guangdong",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-amnistia-zheng-1810",
+      "a": "f50-episodio",
+      "b": "f50-amnistia-zheng-1810",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-cifras-confederacion",
+      "a": "f50-episodio",
+      "b": "f50-cifras-confederacion",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-libertalia",
+      "a": "f50-episodio",
+      "b": "f50-libertalia",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-capitan-misson",
+      "a": "f50-episodio",
+      "b": "f50-capitan-misson",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cobertura-f50-rumor-pasado-zheng",
+      "a": "f50-episodio",
+      "b": "f50-rumor-pasado-zheng",
+      "type": "Mención, hipótesis o contexto externo",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "note": "El episodio contiene una ancla temática; la entidad puede haberse identificado mediante una fuente externa independiente, sin atribución literal de nombre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cleopatra-ptol",
+      "a": "f50-cleopatra",
+      "b": "f50-dinastia-ptolemaica",
+      "type": "Dinastía histórica",
+      "source": "https://www.metmuseum.org/ja/essays/egypt-in-the-ptolemaic-period",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-plutarco-cleopatra",
+      "a": "f50-plutarco",
+      "b": "f50-cleopatra",
+      "type": "Fuente biográfica antigua",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "claimStatus": "testimonio_antiguo_no_directo",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-lenguas-cleopatra",
+      "a": "f50-lenguas-cleopatra",
+      "b": "f50-cleopatra",
+      "type": "Lenguas atribuidas",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "claimStatus": "testimonio_antiguo",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-plutarco-lenguas",
+      "a": "f50-plutarco",
+      "b": "f50-lenguas-cleopatra",
+      "type": "Autor de relato lingüístico",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "claimStatus": "testimonio_antiguo",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-arsinoe-cleopatra",
+      "a": "f50-arsinoe-iv",
+      "b": "f50-cleopatra",
+      "type": "Relación familiar",
+      "source": "https://www.nature.com/articles/s41598-024-83870-x",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-estudio-arsinoe",
+      "a": "f50-estudio-efeso-2025",
+      "b": "f50-arsinoe-iv",
+      "type": "Identificación arqueológica descartada",
+      "source": "https://www.nature.com/articles/s41598-024-83870-x",
+      "claimStatus": "refutacion_identificacion_anterior",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-asp-cleopatra",
+      "a": "f50-aspid-cleopatra",
+      "b": "f50-cleopatra",
+      "type": "Mecanismo de muerte discutido",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html",
+      "claimStatus": "hipotesis_literaria_no_confirmada",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-abejas-cleopatra",
+      "a": "f50-mito-abejas-cleopatra",
+      "b": "f50-cleopatra",
+      "type": "Rumor carente de evidencia",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "relato_no_corroborado",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-antonio-cleopatra",
+      "a": "f50-marco-antonio",
+      "b": "f50-cleopatra",
+      "type": "Alianza política y personal",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-antonio-accio",
+      "a": "f50-marco-antonio",
+      "b": "f50-accio-31ac",
+      "type": "Derrota naval",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-cleopatra-accio",
+      "a": "f50-cleopatra",
+      "b": "f50-accio-31ac",
+      "type": "Derrota naval",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-octavio-accio",
+      "a": "f50-octavio",
+      "b": "f50-accio-31ac",
+      "type": "Victoria naval",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-accio-anexion",
+      "a": "f50-accio-31ac",
+      "b": "f50-anexion-egipto-30ac",
+      "type": "Secuencia 31 y 30 a. C.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548065820",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-octavio-anexion",
+      "a": "f50-octavio",
+      "b": "f50-anexion-egipto-30ac",
+      "type": "Dominio romano",
+      "source": "https://www.metmuseum.org/ja/essays/egypt-in-the-ptolemaic-period",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-ptol-anexion",
+      "a": "f50-dinastia-ptolemaica",
+      "b": "f50-anexion-egipto-30ac",
+      "type": "Fin dinástico",
+      "source": "https://www.metmuseum.org/ja/essays/egypt-in-the-ptolemaic-period",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-republica-imperio",
+      "a": "f50-republica-509ac",
+      "b": "f50-imperio-romano",
+      "type": "Periodización política distinta",
+      "source": "https://www.metmuseum.org/es/essays/the-roman-republic",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-claudio-imperio",
+      "a": "f50-claudio",
+      "b": "f50-imperio-romano",
+      "type": "Reinado",
+      "source": "https://roman-emperors.sites.luc.edu/valmess.htm",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-claudio-mesalina",
+      "a": "f50-claudio",
+      "b": "f50-mesalina",
+      "type": "Matrimonio, tercera esposa",
+      "source": "https://roman-emperors.sites.luc.edu/valmess.htm",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-mesalina-relato",
+      "a": "f50-mesalina",
+      "b": "f50-anecdota-mesalina",
+      "type": "Anecdotario antiguo discutido",
+      "source": "https://communication.gmu.edu/research-and-centers/carp/ca-history/antiquity",
+      "claimStatus": "rumor_de_fuente_antigua_no_probado",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-heliogabalo-imperio",
+      "a": "f50-heliogabalo",
+      "b": "f50-imperio-romano",
+      "type": "Reinado romano",
+      "source": "https://publicatt.unicatt.it/handle/10807/316156",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-dio-heliogabalo",
+      "a": "f50-casio-dion",
+      "b": "f50-heliogabalo",
+      "type": "Testimonio hostil",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/80%2A.html",
+      "claimStatus": "testimonio_hostil_con_sesgos",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-coliseo-caligula",
+      "a": "f50-coliseo-anacronismo",
+      "b": "f50-caligula",
+      "type": "Anacronismo arquitectónico",
+      "source": "https://www.visitlazio.com/en/colosseum/",
+      "claimStatus": "anacronismo_comprobado",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-zheng-confed",
+      "a": "f50-zheng-yi-sao",
+      "b": "f50-confederacion-guangdong",
+      "type": "Dirección de flotas",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-zheng-esposo",
+      "a": "f50-zheng-yi-sao",
+      "b": "f50-zheng-yi",
+      "type": "Relación familiar",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-zheng-bao",
+      "a": "f50-zheng-yi-sao",
+      "b": "f50-zhang-bao",
+      "type": "Alianza de líderes",
+      "source": "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-zhengyi-confed",
+      "a": "f50-zheng-yi",
+      "b": "f50-confederacion-guangdong",
+      "type": "Fundación de confederación",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-bao-confed",
+      "a": "f50-zhang-bao",
+      "b": "f50-confederacion-guangdong",
+      "type": "Jefatura de flotilla",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-confed-amnistia",
+      "a": "f50-confederacion-guangdong",
+      "b": "f50-amnistia-zheng-1810",
+      "type": "Pacto con fuerzas Qing",
+      "source": "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-zheng-amnistia",
+      "a": "f50-zheng-yi-sao",
+      "b": "f50-amnistia-zheng-1810",
+      "type": "Rendición negociada",
+      "source": "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-bao-amnistia",
+      "a": "f50-zhang-bao",
+      "b": "f50-amnistia-zheng-1810",
+      "type": "Incorporación posterior a marina Qing",
+      "source": "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-confed-cifras",
+      "a": "f50-confederacion-guangdong",
+      "b": "f50-cifras-confederacion",
+      "type": "Estimaciones variables",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "claimStatus": "magnitudes_aproximadas_no_censales",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-zheng-cifras",
+      "a": "f50-zheng-yi-sao",
+      "b": "f50-cifras-confederacion",
+      "type": "Atribución de mando de flota",
+      "source": "https://www.guinnessworldrecords.com/world-records/720066-largest-pirate-fleet",
+      "claimStatus": "estimacion_historica_variable",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-libertalia-pirateria",
+      "a": "f50-libertalia",
+      "b": "f50-pirateria",
+      "type": "Utopía de ficción",
+      "source": "https://eprints.soton.ac.uk/452410/1/Rebecca_James_Final_Submission_PhD_Thesis_The_Pirate_and_his_Fellows_Reading_Editions_of_A_General_History_of_the_Pyrates_1724_1734_1_1_.pdf",
+      "claimStatus": "leyenda_no_asentamiento_acreditado",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-libertalia-misson",
+      "a": "f50-libertalia",
+      "b": "f50-capitan-misson",
+      "type": "Personaje literario fundador",
+      "source": "https://eprints.soton.ac.uk/452410/1/Rebecca_James_Final_Submission_PhD_Thesis_The_Pirate_and_his_Fellows_Reading_Editions_of_A_General_History_of_the_Pyrates_1724_1734_1_1_.pdf",
+      "claimStatus": "personaje_literario",
+      "confidence": "documentado",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev4-zheng-pasado",
+      "a": "f50-zheng-yi-sao",
+      "b": "f50-rumor-pasado-zheng",
+      "type": "Anecdotario no acreditado",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "alegacion_biografica_no_corroborada",
+      "confidence": "indicio",
+      "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
       "podcastNotes": []
     }
