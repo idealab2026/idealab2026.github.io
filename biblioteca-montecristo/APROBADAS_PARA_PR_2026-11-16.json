@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "approved_at": "2026-11-16",
+  "decision": "Publicación autorizada por el titular para infografías correctas, tras revisión visual individual y contraste con la edición francesa pública de Dumas.",
+  "items": [
+    {
+      "issue": 38,
+      "book": "conde-montecristo",
+      "video_id": "0tBaF1xSn_k",
+      "sha256": "8ef394264a18df82783fe52484478bf8e6aeac2be1cba31c5f90ce9cdb2b43b1",
+      "chapter": "59 · El testamento de Noirtier",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_59",
+      "note": "900.000 francos, código de los ojos/diccionario y legado condicional a hospitales. La frase sobre desheredar a toda la familia es una síntesis del efecto patrimonial, no una cita literal."
+    },
+    {
+      "issue": 91,
+      "book": "conde-montecristo",
+      "video_id": "M3m3Gsr4vKM",
+      "sha256": "a95daca211db5d8f53ee5dab4dc10684001b1ffaab33f819255992342a6ebe79",
+      "chapter": "49 · Haydée",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_49",
+      "note": "Haydée tiene aproximadamente 19–20 años, no edad exacta confirmada de 20; el silencio sobre su origen es una petición del conde. El resto de la secuencia coincide con el capítulo."
+    }
+  ]
+}
