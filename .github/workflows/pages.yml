@@ -234,6 +234,15 @@ jobs:
           cp linea-historia/atlas-context.json dist/linea-historia/atlas-context.json
           cp linea-historia/timeline-visual-context.js dist/linea-historia/timeline-visual-context.js
           cp linea-historia/timeline-visual-context.css dist/linea-historia/timeline-visual-context.css
+          # Originales autorizados por el titular: un solo ZIP en el repositorio
+          # se despliega como 81 WebP y un catálogo. No se copia el ZIP público a Pages.
+          if [ -f linea-historia/atlas-historia-originales.zip ]; then
+            unzip -tq linea-historia/atlas-historia-originales.zip
+            unzip -oq linea-historia/atlas-historia-originales.zip \
+              'linea-historia/atlas-imported.json' \
+              'linea-historia/atlas-media/*' -d dist/
+            node scripts/test_historia_originales.mjs dist/linea-historia
+          fi
           cp linea-historia/favicon.png dist/linea-historia/favicon.png
           test -s dist/linea-historia/favicon.png
           cp la-telarana/icon.svg dist/la-telarana/icon.svg
