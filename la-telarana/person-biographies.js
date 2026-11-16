@@ -1462,6 +1462,30 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.dncr.nc.gov/blog/2016/11/22/blackbeards-death-his-head",
       "sourceTitle": "North Carolina DNCR · Blackbeard's Death",
       "reviewedAt": "2026-11-16"
+    },
+    "f50-zheng-yi-sao": {
+      "text": "Zheng Yi Sao, conocida también como Ching Shih y Shi Xianggu, dirigió una de las mayores confederaciones piratas del mar de China Meridional a comienzos del siglo XIX. Después del fallecimiento de Zheng Yi en 1807, compartió el liderazgo con Zhang Bao y negoció una amnistía en 1810 con representantes Qing. El Museo Marítimo de Hong Kong describe una red de hasta seis flotas, aproximadamente 2.000 embarcaciones y 70.000 integrantes según estimaciones históricas. F50 describe a una mujer pirata con enorme flota, sin nombrarla: la identificación procede de contraste museístico; las cifras no son un censo.",
+      "source": "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
+      "sourceTitle": "Hong Kong Maritime Museum · Pacifying the South China Sea",
+      "reviewedAt": "2026-11-16"
+    },
+    "f50-mesalina": {
+      "text": "Valeria Mesalina fue la tercera esposa de Claudio, emperador romano entre 41 y 54 d. C. Su matrimonio siguió a los de Plautia Urgulanilla y Aelia Paetina; por ello es incorrecto llamarla primera esposa, como ocurre en F50. Las fuentes antiguas le atribuyen comportamientos sexuales extremos e intrigas políticas. Entre ellas destaca el relato de una competición sexual que transmite Plinio el Viejo, pero la aparición de una anécdota en una obra antigua no demuestra que sucediera. Su imagen histórica requiere examinar los sesgos políticos y de género de las fuentes romanas.",
+      "source": "https://roman-emperors.sites.luc.edu/valmess.htm",
+      "sourceTitle": "De Imperatoribus Romanis · Valeria Messalina",
+      "reviewedAt": "2026-11-16"
+    },
+    "f50-heliogabalo": {
+      "text": "Heliogábalo o Elagábalo ocupó el trono imperial romano entre 218 y 222 d. C. y fue asociado a innovaciones religiosas que escandalizaron a sectores del Senado. Su reputación procede en buena parte de Casio Dión y otros cronistas hostiles, que lo presentaron mediante estereotipos sexuales y culturales. Una anécdota atribuye al emperador el deseo de una transformación corporal mediante cirugía, pero su transmisión textual y su contexto polémico exigen cautela: no existe documentación clínica contemporánea independiente. El debate moderno no puede convertir literalmente una invectiva antigua en biografía verificada.",
+      "source": "https://publicatt.unicatt.it/handle/10807/316156",
+      "sourceTitle": "Olivia G. Merli · The ἄτοπα of Elagabalus, Helios (2024)",
+      "reviewedAt": "2026-11-16"
+    },
+    "f50-arsinoe-iv": {
+      "text": "Arsínoe IV fue una integrante de la dinastía ptolemaica y hermana o hermanastra de Cleopatra VII. Su vida aparece vinculada a las luchas dinásticas del Egipto del siglo I a. C. Durante décadas se propuso que un cráneo procedente del Octágono de Éfeso podía ser suyo y se usó especulativamente para hablar de su ascendencia y la de Cleopatra. Sin embargo, el estudio interdisciplinario publicado en Scientific Reports el 10 de enero de 2025 mostró que el individuo era un varón de aproximadamente 11 a 14 años, excluyendo aquella identificación. Su verdadera sepultura sigue sin localizarse.",
+      "source": "https://www.nature.com/articles/s41598-024-83870-x",
+      "sourceTitle": "Scientific Reports (2025) · The cranium from the Octagon in Ephesos",
+      "reviewedAt": "2026-11-16"
     }
   }
 };
