@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "created_at": "2026-11-16",
+  "approval_scope": "Exclusivamente estos 5 PNG originales por número de issue, video_id y SHA-256 exacto; no incluye versiones corregidas ni otros capítulos.",
+  "review": "Inspección de PNG ampliados, contraste con capítulos originales de Dumas en Wikisource. Audio/vídeo no transcrito íntegramente. No certificar fidelidad literal de cualquier representación artística.",
+  "source_assets": "PNG privados recibidos en los ZIP del usuario; copia local en Mac para importación",
+  "items": [
+    {
+      "issue": 40,
+      "book": "conde-montecristo",
+      "video_id": "aOA7ZBcJHcE",
+      "sha256": "0173e8934497339a60297b3e3c83dbb86878588e54469d8f74a53047800433e6",
+      "chapter": "61 · La trampa del telégrafo",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_61",
+      "note": "Soborno de 25.000 francos, falsa sublevación de Barcelona, posición de seis millones en bonos y pérdida final de un millón: coinciden. Ilustración de periódico simbólica, no facsímil."
+    },
+    {
+      "issue": 41,
+      "book": "conde-montecristo",
+      "video_id": "oyU5tzmg5rk",
+      "sha256": "5e5a0b7dffa338437797d22f1256664764f430504fde588c1a65d648667a4890",
+      "chapter": "62 · Los fantasmas",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_62",
+      "note": "Preparación de casa en 3 días, Morrel a las seis, nota a Debray, presentación Cavalcanti y terror de Bertuccio al reconocer a Villefort y Benedetto coinciden."
+    },
+    {
+      "issue": 73,
+      "book": "conde-montecristo",
+      "video_id": "wiDqdxhIaDo",
+      "sha256": "40e8102dc88d3a9a31f1fe66e2838a171b3ded55be4123bf0217930745937582",
+      "chapter": "31 · Italia: Simbad el Marino",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_31",
+      "note": "Desvío por Montecristo, Gaetano y los contrabandistas, entrada vendada, lujo de la gruta, autorretrato verbal de Simbad y experiencia con hachís coinciden."
+    },
+    {
+      "issue": 74,
+      "book": "conde-montecristo",
+      "video_id": "wRIkqNmfwzs",
+      "sha256": "766f014ca6f2af2f970ede2d3a9714aba4a640061ad426ecb18d00231e605ba0",
+      "chapter": "32 · Despertar",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_32",
+      "note": "Búsqueda fallida durante 2 horas, despedida con pañuelo, yate hacia Córcega, ayuda a bandoleros, llegada a Roma y escasez de carruajes coinciden."
+    },
+    {
+      "issue": 77,
+      "book": "conde-montecristo",
+      "video_id": "OxzEzRNIiAQ",
+      "sha256": "0557c275a95b43782d2cee5167b4d118effd855e7f5d89619905ee18b3349de2",
+      "chapter": "35 · La mazzolata",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_35",
+      "note": "Peppino indultado, ejecución de Andrea Rondolo, reacción airada de Andrea, impresión de Franz/Albert y comentario misántropo del conde coinciden."
+    }
+  ]
+}
