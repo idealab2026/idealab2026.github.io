@@ -70,3 +70,26 @@ El resto —75 imágenes— tiene catalogación por tema pero no fecha acreditad
 Se mantiene accesible el paquete original optimizado y su informe privado para revisión. Para publicar un original, se debe documentar como mínimo fuente exacta, autor, licencia/permiso, atribución y fecha histórica que representa. Si tiene licencia libre verificable, se incorpora a `atlas-imported.json` más el archivo correspondiente en `atlas-media/`, y se añade expresamente al workflow de Pages tras una comprobación de derechos.
 
 **Esta fase publica el inventario completo y seis alternativas de las imágenes fechadas, no los 81 originales del archivo.**
+
+## Banda de contexto visual sincronizada (noviembre de 2026)
+
+Se ha añadido una **banda visible de ilustraciones** dentro de la pestaña **Línea temporal**, inmediatamente encima del eje horizontal, y la sección equivalente **Gráficos y diagramas de la época** en el Atlas visual.
+
+- Al mover la cronología se actualizan hasta tres ilustraciones asociadas al **año central visible**.
+- Al pulsar un acontecimiento o una franja se priorizan sus diagramas temáticos y el contexto queda fijado; el control `Soltar registro` restablece el seguimiento del desplazamiento.
+- Las ilustraciones se pueden ampliar sin abandonar la cronología, con acceso a la fuente y licencia exactas.
+- Se puede ocultar la banda para ganar espacio. El cambio de pestaña conserva filtros y registros.
+- Las imágenes se presentan **fuera** del eje de escala, porque insertar miniaturas arbitrariamente en un eje de cientos de millones de años crearía solapes y distorsiones.
+- `atlas-context.json` almacena ventanas de **relevancia pedagógica**, no supuestas fronteras históricas exactas.
+
+Las cinco láminas públicas y sus equivalencias editoriales son:
+
+| Lámina libre | Celda(s) originales | Origen y licencia |
+|---|---|---|
+| Reloj del tiempo geológico | C11 / T9 | Woudloper, Hardwigg, PePeEfe · Wikimedia Commons · dominio público |
+| Escala estratigráfica | C11 / T9 | FLerouge · Wikimedia Commons · CC BY-SA 4.0 |
+| Migraciones humanas prehistóricas | BD52 / BC11 | Continentalis · Wikimedia Commons · CC BY-SA 3.0 |
+| Dryas Reciente, temperaturas de Groenlandia | BR18 | USGS y Osetnik · Wikimedia Commons · dominio público |
+| Expansión de la agricultura neolítica | CK48 / GP5 | Atlasabierto · Wikimedia Commons · CC BY 4.0 |
+
+**Importante:** estas láminas son obras distintas y reutilizables que desempeñan la misma función explicativa que las imágenes del Excel; no son reproducción de sus capturas originales. El inventario de 81 originales permanece intacto con sus referencias de celdas y estado de derechos. En gráficos paleoclimáticos, se distingue el dato proxy de Groenlandia de la temperatura media global.

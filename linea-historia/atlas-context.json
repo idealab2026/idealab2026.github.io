@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "description": "Láminas visuales libres para el contexto histórico. from/to son ventanas pedagógicas de relevancia, no fechas exactas de todos los elementos representados. Las copias incrustadas de HISTORIA.xlsx se conservan fuera de la distribución hasta acreditar derechos.",
+  "items": [
+    {
+      "id": "context-geologic-clock",
+      "title": "El tiempo geológico en un reloj",
+      "type": "Diagrama",
+      "from": -541000000,
+      "to": -110000,
+      "referenceYear": -250000000,
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Geologic_Clock_with_events_and_periods_ES.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geologic_Clock_with_events_and_periods_ES.svg",
+      "credit": "Woudloper, Hardwigg y PePeEfe · Wikimedia Commons",
+      "license": "Dominio público",
+      "excelAnchor": "C11 / T9",
+      "excelOriginal": "image39.png / image40.png",
+      "hints": [
+        "eras geológicas",
+        "fanerozoico",
+        "paleozoico",
+        "mesozoico",
+        "cenozoico"
+      ],
+      "summary": "Diagrama en español de los 4.500 millones de años de la Tierra. Su escala completa excede la cronología visible de IDEA LAB.",
+      "context": "Tiempo profundo · esquema de escala, no fotografía de un año."
+    },
+    {
+      "id": "context-geologic-scale",
+      "title": "Escala estratigráfica de la Tierra",
+      "type": "Infografía",
+      "from": -541000000,
+      "to": -110000,
+      "referenceYear": -160000000,
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Geologic_Time_Scale.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geologic_Time_Scale.png",
+      "credit": "FLerouge · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "excelAnchor": "C11 / T9",
+      "excelOriginal": "image39.png / image40.png",
+      "hints": [
+        "geología",
+        "eras geológicas",
+        "paleozoico",
+        "mesozoico",
+        "cenozoico"
+      ],
+      "summary": "Eones, eras y periodos dispuestos en una escala geológica ilustrada. Alternativa a los esquemas conservados en el Excel.",
+      "context": "Secuencia geológica · representación de intervalos extensos."
+    },
+    {
+      "id": "context-human-migration",
+      "title": "Migraciones humanas prehistóricas",
+      "type": "Mapa explicativo",
+      "from": -110000,
+      "to": -14000,
+      "referenceYear": -40000,
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Migraciones_humanas.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Migraciones_humanas.png",
+      "credit": "Continentalis · Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "excelAnchor": "BD52 / BC11",
+      "excelOriginal": "image17.jpg / image20.jpg",
+      "hints": [
+        "migración humana",
+        "prehistoria",
+        "homo sapiens",
+        "poblamiento",
+        "migraciones"
+      ],
+      "summary": "Rutas propuestas del poblamiento humano prehistórico. Las fechas del mapa son estimaciones y los modelos migratorios pueden revisarse.",
+      "context": "Prehistoria · modelo de procesos de larga duración."
+    },
+    {
+      "id": "context-younger-dryas",
+      "title": "Dryas Reciente: temperaturas de Groenlandia",
+      "type": "Gráfico científico",
+      "from": -18000,
+      "to": -7800,
+      "referenceYear": -12000,
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Younger_Dryas_and_Holocene_temperature_changes.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Younger_Dryas_and_Holocene_temperature_changes.png",
+      "credit": "United States Geological Survey (USGS); edición de Osetnik · Wikimedia Commons",
+      "license": "Dominio público (USGS, EE. UU.)",
+      "excelAnchor": "BR18",
+      "excelOriginal": "image41.png",
+      "hints": [
+        "younger dryas",
+        "dryas reciente",
+        "glaciación",
+        "holoceno",
+        "prehistoria"
+      ],
+      "summary": "Registro proxy de temperaturas del centro de Groenlandia durante el Pleistoceno final y el Holoceno. No es una serie de temperatura media mundial.",
+      "context": "Hace aproximadamente 12.900–11.700 años · el gráfico muestra una ventana más amplia."
+    },
+    {
+      "id": "context-neolithic-spread",
+      "title": "Expansión de la agricultura neolítica",
+      "type": "Mapa explicativo",
+      "from": -11000,
+      "to": -3000,
+      "referenceYear": -9000,
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Atlas_Abierto_-_La_Prehistoria_-_Neol%C3%ADtico_-_La_revoluci%C3%B3n_agr%C3%ADcola_y_ganadera_%28desde_hace_unos_12_000_a%C3%B1os%29.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlas_Abierto_-_La_Prehistoria_-_Neol%C3%ADtico_-_La_revoluci%C3%B3n_agr%C3%ADcola_y_ganadera_%28desde_hace_unos_12_000_a%C3%B1os%29.png",
+      "credit": "Atlasabierto · Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "excelAnchor": "CK48 / GP5",
+      "excelOriginal": "image48.png / image44.png",
+      "hints": [
+        "neolítico",
+        "agricultura",
+        "göbekli tepe",
+        "fundación de jericó",
+        "prehistory",
+        "jericó"
+      ],
+      "summary": "Esquema territorial del proceso de domesticación y difusión agrícola en distintas regiones. Los procesos ocurrieron en fechas y lugares diferentes.",
+      "context": "Neolítico · evolución de sociedades, no mapa político de un año."
+    }
+  ]
+}
