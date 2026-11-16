@@ -376,7 +376,17 @@ function make(options){
  new ResizeObserver(redraw).observe(canvas);
  return {
   topics:topics.map(t=>({id:t[0],label:t[1]})),
-  setData(a,b){nodes=a;edges=b;index.clear();for(const n of a)index.set(n.id,n);if(this.sig!==a.map(n=>n.id).join("|")+"#"+b.length){this.sig=a.map(n=>n.id).join("|")+"#"+b.length;arrange()}redraw();startMotion()},
+  setData(a,b){
+   nodes=a;edges=b;index.clear();for(const n of a)index.set(n.id,n);
+   // No conservar el hover, el tooltip ni la zona de clic de un nodo filtrado.
+   // La actualización del lienzo llega en el fotograma siguiente.
+   var cleared=false;
+   if(hover&&!index.has(hover)){hover=null;cleared=true}
+   if(hoverEdge&&!edges.some(e=>e.id===hoverEdge)){hoverEdge=null;cleared=true}
+   if(cleared){hint.hidden=true;hint.textContent="";hits=[];edgeHits=[];bandHits=[]}
+   if(this.sig!==a.map(n=>n.id).join("|")+"#"+b.length){this.sig=a.map(n=>n.id).join("|")+"#"+b.length;arrange()}
+   redraw();startMotion()
+  },
   setSelection(s){selection=s;redraw()},setQuery(s){search=s||"";redraw()},setEdgeMode(s){mode=s;redraw()},
   setTheme(s){markInteraction();theme=topics.some(t=>t[0]===s)?s:"todos";hover=null;hoverEdge=null;hint.hidden=true;
    yaw=-.45;pitch=.24;basePitch=.24;zoom=1;panX=panY=0;fitView()},
