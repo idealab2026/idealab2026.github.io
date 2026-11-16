@@ -17,3 +17,10 @@
 .volume-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;flex-wrap:wrap}
 .volume-heading strong{font:500 1.45rem Georgia,serif;color:var(--ink)}
 @media(max-width:600px){.volume-graphic{padding:9px}.volume-heading strong{font-size:1.16rem}}
+
+/* Marca visual de la Biblioteca: mismo símbolo que su tarjeta pública y favicon. */
+header .brand{display:inline-flex;align-items:center;gap:11px;min-width:0;line-height:1.2}
+header .brand .brand-icon{display:block;flex:0 0 40px;width:40px;height:40px;object-fit:contain;border-radius:9px}
+header .brand span{display:inline-block;white-space:nowrap}
+@media(max-width:600px){header .brand{gap:8px}header .brand .brand-icon{width:34px;height:34px;flex-basis:34px}header .brand span{font-size:.67rem;letter-spacing:.11em}}
+@media(max-width:350px){header .brand span{font-size:.58rem;letter-spacing:.08em}header .back{font-size:.64rem}}

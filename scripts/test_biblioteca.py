@@ -77,6 +77,24 @@ class BibliotecaTests(unittest.TestCase):
                 self.assertTrue(file.is_file(), file)
                 self.assertEqual(file.read_bytes()[:8], bytes([137, 80, 78, 71, 13, 10, 26, 10]))
 
+    def test_biblioteca_has_shared_logo_and_own_favicon(self):
+        """The cover, header and tab all use the project's existing icon."""
+        page = (ROOT / "biblioteca-montecristo" / "index.html").read_text(encoding="utf-8")
+        stylesheet = (ROOT / "biblioteca-montecristo" / "styles.css").read_text(encoding="utf-8")
+        home = (ROOT / "index.html").read_text(encoding="utf-8")
+        svg_path = ROOT / "project-icons" / "biblioteca-montecristo.svg"
+        self.assertTrue(svg_path.is_file())
+        svg = svg_path.read_text(encoding="utf-8")
+        self.assertIn('viewBox="0 0 128 128"', svg)
+        self.assertIn("<title", svg)
+        icon_path = "/project-icons/biblioteca-montecristo.svg"
+        self.assertIn('rel="icon" type="image/svg+xml" sizes="any" href="' + icon_path + '"', page)
+        self.assertIn('class="brand-icon" src="' + icon_path + '"', page)
+        self.assertIn('src="' + icon_path + '"', home)
+        self.assertIn("IDEA <strong>LAB</strong> / BIBLIOTECA", page)
+        self.assertIn("header .brand .brand-icon", stylesheet)
+        self.assertIn("width:34px;height:34px;flex-basis:34px", stylesheet)
+
     def test_web_assets(self):
         for item in ["index.html", "app.js", "styles.css", "catalogo.json", "infografias/index.json"]:
             self.assertTrue((ROOT / "biblioteca-montecristo" / item).is_file(), item)
