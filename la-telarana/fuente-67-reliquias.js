@@ -232,12 +232,12 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
+          "title": "F67 · contraste científico posterior a la transcripción",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=5370",
           "timeSec": 5370,
           "minuteVerified": false,
           "audioVerified": false,
-          "status": "relato",
+          "status": "contraste_editorial_externo_sin_mencion_acreditada_en_txt",
           "text": "La entrevista atribuye el resultado a contaminación de la esquina. El estudio de 2026 examinó dos fragmentos y no observó contaminación en su análisis; su alcance es limitado y no es un nuevo fechado integral."
         },
         {
@@ -245,7 +245,7 @@ window.IDEA_TELARANA_F67_REVIEW =
           "title": "F67 · contraste documental independiente",
           "source": "https://www.nature.com/articles/s40494-026-02530-7",
           "timeSec": null,
-          "status": "fuente-externa",
+          "status": "contraste_editorial_externo_sin_mencion_acreditada_en_txt",
           "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha."
         }
       ]
@@ -285,7 +285,7 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Estudio forense de patrones · 2019",
       "kind": "Estudio",
       "subtitle": "Simulación experimental",
-      "note": "Un análisis de patrones publicado en 2019 interpretó algunas marcas como incompatibles con determinadas posiciones propuestas; sus resultados dependen de la simulación.",
+      "note": "Borrini y Garlaschelli: análisis de patrones de manchas mediante simulaciones con voluntario. Se publicó en línea el 10 de julio de 2018 y en el volumen de enero de 2019 de Journal of Forensic Sciences (doi:10.1111/1556-4029.13867). Los resultados cuestionan algunas posturas propuestas, pero dependen del modelo experimental y no resuelven por sí solos la procedencia de la reliquia.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/29989172/",
       "topic3d": "historia",
       "photo": "",
@@ -296,7 +296,7 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Estudio forense de patrones · 2024",
       "kind": "Estudio",
       "subtitle": "Simulación experimental",
-      "note": "Un estudio publicado en 2024 obtuvo una mancha similar para una secuencia de manipulación simulada. No reproduce por ello la historia completa de la reliquia.",
+      "note": "König y colaboradores realizaron experimentos para reproducir determinados patrones de manchas del lienzo. El artículo se publicó electrónicamente en febrero de 2023 (doi:10.1007/s00414-023-02959-6), aunque figura en el volumen 138(1) de International Journal of Legal Medicine de 2024. Las simulaciones muestran mecanismos posibles y límites forenses, no prueban la autenticidad ni reconstruyen una historia única.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36764944/",
       "topic3d": "historia",
       "photo": "",
