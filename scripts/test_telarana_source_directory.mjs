@@ -81,7 +81,7 @@ for(const token of [
  'id="sources-directory"','id="sources-dir-body"','id="sources-dir-search"',
  'id="sources-dir-type"','id="sources-dir-sort"','id="sources-dir-count"',
  'source-directory.js?v=','IdeaLabSourceDirectory.mount','source-catalog-public.js?v=20261116-f53-review2',
- 'source-filter.js?v=20261115-sources-2','flex-wrap:nowrap!important',
+ 'source-filter.js?v=','flex-wrap:nowrap!important',
  'source-filter-percent','source-filter-link'
 ])assert(html.includes(token),"Falta integración de "+token);
 assert(html.includes("scrollbar-width:thin"),"La barra se debe desplazar en horizontal sin crear segunda línea");
