@@ -2042,9 +2042,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 166,
+    "committedVerifiedEvents": 170,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 122,
+    "fromSourceInReview": 126,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -2257,7 +2257,11 @@
       "47": [
         "study-f47-etiopia-anexion-1936",
         "study-f47-abu-simbel-1968",
-        "study-f47-nazca-unesco-1994"
+        "study-f47-nazca-unesco-1994",
+        "study-f47-estela-aksum-retorno-2005",
+        "study-f47-estela-aksum-reinstalacion-2008",
+        "study-f47-caral-unesco-2009",
+        "study-f47-nazca-geoglifos-ia-2024"
       ],
       "50": [
         "study-f50-juicios-salem-1692"
@@ -5444,7 +5448,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 46,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_documental_nazca_caral_etiopia_tutankamon_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5455,7 +5459,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5474,19 +5478,19 @@
         },
         "analysisCoverage": {
           "percent": 25,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 15,
-            "relations": 18,
-            "biographies": 1,
-            "statements": 9,
-            "independentChecks": 5,
-            "verifiedTimelineEvents": 3
+            "entities": 31,
+            "relations": 52,
+            "biographies": 8,
+            "statements": 17,
+            "independentChecks": 12,
+            "verifiedTimelineEvents": 7
           },
-          "nextAction": "Cotejar audio y hablantes; revisar las afirmaciones sobre Caral y Etiopía, y ampliar arqueología de Cahuachi y Nazca."
+          "nextAction": "Cotejar audio y voces; ampliar contraste de afirmaciones sobre Nazca, ritos y acuíferos; revisar el detalle jurídico y económico de la exclusiva de Tutankamón sin atribuir motivaciones psicológicas como hechos."
         }
       },
       {

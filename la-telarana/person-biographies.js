@@ -1426,6 +1426,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://giza.fas.harvard.edu/faq/",
       "sourceTitle": "Harvard Digital Giza · documentación y preguntas frecuentes",
       "reviewedAt": "2026-11-16"
+    },
+    "f47-masato-sakai": {
+      "text": "Masato Sakai es investigador asociado a la Universidad de Yamagata y coautor de un estudio publicado en PNAS en septiembre de 2024 sobre los geoglifos de Nazca. Su equipo combinó localización de candidatos asistida por inteligencia artificial con investigación arqueológica de campo, confirmando 303 nuevos geoglifos figurativos. El estudio analiza variaciones de motivos, tamaños y relaciones espaciales con rutas antiguas, sugiriendo distintas funciones. No consta que haya participado en F47, donde se incorpora únicamente como referencia científica independiente.",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "sourceTitle": "PNAS · Sakai et al., 2024",
+      "reviewedAt": "2026-11-16"
     }
   }
 };
