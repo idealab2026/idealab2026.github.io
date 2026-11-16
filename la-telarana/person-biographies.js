@@ -1343,6 +1343,18 @@ window.IDEA_TELARANA_BIOGRAPHIES =
       "source": "https://www.deutsche-biographie.de/gnd119272229.html#ndbcontent",
       "sourceTitle": "Neue Deutsche Biographie · Samuel Oppenheimer",
       "reviewedAt": "2026-11-16"
+    },
+    "f04-pedro-banos": {
+      "text": "Pedro Baños Bajo (nacido en León en 1960) es un militar español y divulgador de geopolítica. Es coronel del Ejército de Tierra, diplomado de Estado Mayor y especialista en estrategia, seguridad e inteligencia. Según la ficha catalográfica de la Biblioteca Virtual del Ministerio de Defensa, desempeñó labores de contrainteligencia y seguridad en el Eurocuerpo de Estrasburgo y fue profesor de Estrategia y Relaciones Internacionales en la Escuela Superior de las Fuerzas Armadas. Sus interpretaciones geopolíticas en entrevistas son opiniones que requieren contraste independiente.",
+      "source": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/es/consulta_aut/registro.do?id=522360",
+      "sourceTitle": "Ministerio de Defensa · autoridad bibliográfica de Pedro Baños",
+      "reviewedAt": "2026-11-16"
+    },
+    "f30-jordi-wild": {
+      "text": "Jordi Wild es el nombre público del creador de contenido y entrevistador Jordi Carrillo de Albornoz Torres (nacido en Manresa en 1984). Comenzó en YouTube con El Rincón de Giorgio y lanzó The Wild Project en 2020, un programa audiovisual de entrevistas extensas con invitados de disciplinas y trayectorias variadas. Publicó Así es la puta vida en 2022. Su papel en F32 es el de presentador y entrevistador, no el de fuente independiente que corrobore las opiniones del invitado.",
+      "source": "https://www.lavanguardia.com/magazine/20221111/8599947/jordi-wild-libro-entrevista-asi-es-la-puta-vida.html",
+      "sourceTitle": "La Vanguardia · perfil y entrevista a Jordi Wild (2022)",
+      "reviewedAt": "2026-11-16"
     }
   }
 };
