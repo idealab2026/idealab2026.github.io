@@ -172,12 +172,78 @@ function matchesCountry(d){
  return country==="Todos"||(country==="Sin clasificar"?p.length===0:p.includes(country));
 }
 function countryName(code){return countryNames.get(code)||code}
+var historySearchAliases={
+ "h-DJ35":"imperio acadio imperio de acad acadio akkadian empire",
+ "h-DN44":"sargon de acad sargon de agade sargon de acadia"
+};
+function searchableText(d){return geoFold([d.t,d.d||"",historySearchAliases[d.id]||""].join(" "))}
+function matchesHistorySearch(d,needle){
+ if(!needle)return true;
+ var haystack=searchableText(d);
+ return needle.split(/\s+/).every(function(token){return haystack.includes(token)});
+}
 function visible(){
  var all=base.concat(custom).filter(function(d){
   enrich(d);
-  return (cat==="Todas"||d.c===cat)&&(!query||(d.t+" "+(d.d||"")).toLocaleLowerCase("es").includes(query));
+  return (cat==="Todas"||d.c===cat)&&matchesHistorySearch(d,query);
  });
  var result=all.filter(matchesContinent).filter(matchesCountry);geoStatus(all,result);return result;
+}
+
+var searchJumpTimer=null;
+function searchRank(d){
+ return geoFold(d.t).includes(query)?0:
+  geoFold(historySearchAliases[d.id]||"").includes(query)?1:2;
+}
+function sortedSearchResults(items){
+ var vp=$("viewport");
+ var center=viewMode==="timeline"?yearAt(vp.scrollLeft+vp.clientWidth/2):savedYear;
+ return items.slice().sort(function(a,b){
+  var r=searchRank(a)-searchRank(b);
+  return r||Math.abs(sy(a)-center)-Math.abs(sy(b)-center)||sy(a)-sy(b);
+ });
+}
+function navigateSearchResult(d){
+ if(!d)return;
+ if(searchJumpTimer!==null){clearTimeout(searchJumpTimer);searchJumpTimer=null}
+ if(viewMode!=="timeline")setView("timeline");
+ selected=d;render();jumpToYear(sy(d));detail(d);
+ requestAnimationFrame(function(){if(viewMode==="timeline")jumpToYear(sy(d))});
+}
+function updateSearchResults(items){
+ var block=$("history-search-results");
+ if(!block)return;
+ var hits=$("history-search-matches"),status=$("history-search-status");
+ if(query.length<2){block.hidden=true;hits.replaceChildren();return}
+ block.hidden=false;
+ var sorted=sortedSearchResults(items),count=sorted.length;
+ status.textContent=count===0?"Sin coincidencias con los filtros actuales":
+  count===1?"1 resultado · pulsa para ir a su año":
+  count+" resultados · elige cuál consultar";
+ hits.replaceChildren();
+ sorted.slice(0,12).forEach(function(d){
+  var b=el("button",null,"history-search-hit");
+  b.type="button";
+  var caption=d.id==="h-DJ35"?"Imperio acadio · "+displayName(d):displayName(d);
+  b.append(el("strong",caption),el("small",yearText(sy(d))+" · "+d.c));
+  b.setAttribute("aria-label","Ir a "+caption+", "+yearText(sy(d)));
+  b.addEventListener("click",function(){navigateSearchResult(d)});
+  hits.append(b);
+ });
+ if(count>12)hits.append(el("span","Mostrando 12 de "+count+"; concreta la búsqueda.","history-search-extra"));
+}
+function handleHistorySearchInput(text){
+ query=geoFold(text).trim().replace(/\s+/g," ");
+ if(searchJumpTimer!==null){clearTimeout(searchJumpTimer);searchJumpTimer=null}
+ render();
+ if(query.length<2||viewMode!=="timeline")return;
+ var expectedQuery=query;
+ searchJumpTimer=setTimeout(function(){
+  searchJumpTimer=null;
+  if(query!==expectedQuery||viewMode!=="timeline")return;
+  var hits=sortedSearchResults(visible());
+  if(hits.length)jumpToYear(sy(hits[0]));
+ },230);
 }
 function axisX(y){
  var x=170,n=Number(y);
@@ -1279,6 +1345,7 @@ function updateAnnualHeader(){
 
 function render(){
  var records=visible();
+ updateSearchResults(records);
  $("total").textContent=(base.length+custom.length).toLocaleString("es-ES");
  $("visible").textContent=records.length.toLocaleString("es-ES");
  if(viewMode==="columns"){renderColumns(records);return;}
@@ -1522,7 +1589,18 @@ function init(){
  }).catch(function(){
   render();$("period-name").textContent="No se pudo cargar el archivo histórico";
  });
- $("search").addEventListener("input",function(e){query=e.target.value.toLocaleLowerCase("es").trim();render()});
+ $("search").addEventListener("input",function(e){handleHistorySearchInput(e.target.value)});
+ $("search").addEventListener("keydown",function(e){
+  if(e.key==="Enter"){
+   e.preventDefault();
+   if(searchJumpTimer!==null){clearTimeout(searchJumpTimer);searchJumpTimer=null}
+   var first=sortedSearchResults(visible())[0];
+   if(first)navigateSearchResult(first);
+  }else if(e.key==="Escape"&&query){
+   e.preventDefault();e.stopPropagation();
+   $("search").value="";handleHistorySearchInput("");
+  }
+ });
 
 }
 // API de interoperabilidad: Atlas visual lee el mismo eje y abre las mismas fichas.
