@@ -24,7 +24,7 @@ CATALOG = ROOT / "biblioteca-montecristo/catalogo.json"
 PUBLIC_INDEX = ROOT / "biblioteca-montecristo/infografias/index.json"
 DEFAULT_REPORT = Path.home() / "Downloads/IDEA_LAB_QA_LOTE5.html"
 PNG_SIGNATURE = bytes((137, 80, 78, 71, 13, 10, 26, 10))
-SHA_256 = re.compile(r"[a-f0-9]{64}\\Z")
+SHA_256 = re.compile(r"[a-f0-9]{64}\Z")
 
 
 def read_json(path: Path, default=None):
