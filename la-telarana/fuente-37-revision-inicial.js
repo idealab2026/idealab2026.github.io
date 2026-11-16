@@ -1,15 +1,16 @@
 /* F37: revisión documental parcial ampliada sin cotejo de audio. */
-window.IDEA_TELARANA_F37_REVIEW = {
+window.IDEA_TELARANA_F37_REVIEW =
+{
   "metadata": {
     "id": "idealab-f37-buen-salvaje",
     "sourceOrder": 37,
     "title": "F37 · El buen salvaje y el origen del cuento humano",
     "url": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
-    "reviewStage": "revision_documental_ampliada_parcial_sin_audio",
+    "reviewStage": "revision_documental_f37_iberia_glaciacion_sin_cotejo_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Ampliación del análisis: arqueología, clima, patentes y opiniones sobre creencias; sin minutajes, audio o identificación de voces cotejados. La datación de Göbekli Tepe es aproximada."
+    "methodologicalNote": "Ampliación del análisis: arqueología, clima, patentes y opiniones sobre creencias; sin minutajes, audio o identificación de voces cotejados. La datación de Göbekli Tepe es aproximada. Se añade contraste de la afirmación del TXT sobre una supuesta cubierta glaciar española completa; revisión Oliva et al. 2019 (doi:10.1016/j.earscirev.2019.03.015), glaciares restringidos a cordilleras. Sin audio cotejado, ni tiempo ni identificación de voz."
   },
   "nodes": [
     {
@@ -367,6 +368,30 @@ window.IDEA_TELARANA_F37_REVIEW = {
           "text": "El estudio reconstruye flujos y cronología a partir de sedimentos y propone una interpretación incompatible con una versión concreta de inundación catastrófica; no determina por sí solo el origen de los mitos."
         }
       ]
+    },
+    {
+      "id": "f37-hielo-iberia-paleolitico",
+      "name": "Glaciación en la península ibérica durante el Paleolítico",
+      "kind": "Declaración",
+      "subtitle": "Extensión de hielo · afirmación generalizada pendiente de audio",
+      "note": "El TXT automático de F37 contiene la frase «a finales del Paleolítico España estaba cubierta por hielo». No existe una cubierta glaciar que recubriese toda la península ibérica: la revisión de Oliva et al. (Earth-Science Reviews, 2019) documenta glaciares del Cuaternario confinados a cordilleras como Pirineos, Cantábrica, Sistema Central, Ibérico y Sierra Nevada, sin alcanzar las amplias tierras bajas circundantes. Hubo cambios climáticos intensos y retroceso glaciar, pero no debe confundirse un clima más frío con la existencia de un manto de hielo continuo sobre España. No se ha cotejado el audio ni identificado de manera fiable al hablante.",
+      "source": "https://doi.org/10.1016/j.earscirev.2019.03.015",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · contraste de la cobertura glaciar de Iberia",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "transcriptSearch": "a finales del Paleolítico España estaba cubierta por hielo",
+          "transcriptCharOffset": 23773,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "declaracion_asr_pendiente_audio_refutada_en_sentido_literal",
+          "text": "El TXT afirma que España estaba cubierta por hielo al final del Paleolítico. Oliva et al. (2019; doi:10.1016/j.earscirev.2019.03.015) documentan glaciares circunscritos a montañas; no hubo un manto continuo de hielo sobre toda la Península. La atribución literal al invitado o presentador queda pendiente del audio."
+        }
+      ]
     }
   ],
   "edges": [
@@ -599,6 +624,17 @@ window.IDEA_TELARANA_F37_REVIEW = {
       "claimStatus": "contexto_documental",
       "note": "El estudio analiza registros sedimentarios y discute una reconstrucción de inundación; no acredita una narración mítica.",
       "source": "https://www.nature.com/articles/s41598-018-22453-z",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-episodio-glaciacion-iberia",
+      "a": "f37-episodio",
+      "b": "f37-hielo-iberia-paleolitico",
+      "type": "Afirmación sobre hielo en Iberia · pendiente cotejo",
+      "confidence": "indicio",
+      "claimStatus": "afirmacion_automatic_transcript_discrepancia_con_revision_cientifica",
+      "note": "El TXT generaliza la cobertura de hielo en España; la investigación glaciológica de Oliva et al. (2019) la circunscribe a montañas. No atribuir error al hablante sin escuchar el audio.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
       "podcastNotes": []
     }
   ]

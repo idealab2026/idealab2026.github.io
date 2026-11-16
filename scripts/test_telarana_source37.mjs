@@ -9,5 +9,11 @@ assert(f.nodes.find(n=>n.id==='f37-clima').note.includes('actividades humanas'))
 assert(f.nodes.find(n=>n.id==='f37-patentes').note.includes('no demuestra'));
 assert(f.nodes.find(n=>n.id==='f37-ovnis').note.includes('no demuestra'));
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));let e=h.items.find(e=>e.id==='study-f37-gobekli-reidentificacion-1994');assert.equal(e.investigation.date,'1994');assert.equal(e.investigation.datePrecision,'año');
+assert(f.nodes.some(n=>n.id==='f37-hielo-iberia-paleolitico'&&n.note.includes('sin alcanzar las amplias tierras bajas')));
+assert(f.edges.some(e=>e.id==='f37-episodio-glaciacion-iberia'&&e.confidence==='indicio'));
+assert(f.nodes.find(n=>n.id==='f37-hielo-iberia-paleolitico').podcastNotes.some(n=>n.transcriptSearch.includes('España estaba cubierta por hielo')&&n.timeSec===null&&n.audioVerified===false));
+const publicEntry=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===37);
+assert.equal(publicEntry.analysisCoverage.signals.entities,19);assert.equal(publicEntry.analysisCoverage.signals.relations,22);
+assert.equal(publicEntry.analysisCoverage.percent,23);
 assert(read('la-telarana/index.html').includes('fuente-37-revision-inicial.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-37-revision-inicial.js'));
 console.log('OK: F37 distingue historia del yacimiento, hipótesis y límites audiovisuales');

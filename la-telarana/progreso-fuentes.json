@@ -1529,12 +1529,12 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 18,
-      "sourceRelationsDocumented": 21,
+      "sourceNodesDocumented": 19,
+      "sourceRelationsDocumented": 22,
       "personsProfiled": 0,
-      "documentaryChecks": 9,
+      "documentaryChecks": 10,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Ampliada con modelos de reconexión del mar Negro y sus límites; conexión con relatos permanece hipotética. Audio y voces sin cotejo.",
+      "qualityNotes": "Ampliada con modelos de reconexión del mar Negro y sus límites; conexión con relatos permanece hipotética. Audio y voces sin cotejo. Nuevo contraste Oliva et al. 2019: glaciares ibéricos de montaña, no manto completo sobre España; audio no cotejado.",
       "lastUpdated": "2026-11-16"
     },
     {
@@ -4946,14 +4946,14 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 18,
-            "relations": 21,
+            "entities": 19,
+            "relations": 22,
             "biographies": 0,
-            "statements": 11,
-            "independentChecks": 9,
+            "statements": 12,
+            "independentChecks": 10,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar audio, voces e integridad; continuar la entrevista y contrastar afirmaciones restantes."
+          "nextAction": "Cotejar audio de la afirmación «España estaba cubierta por hielo» y el resto de la entrevista; la bibliografía glaciológica demuestra que la extensión máxima quedó restringida a cordilleras; sin minutajes fiables."
         }
       },
       {
