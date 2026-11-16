@@ -16,6 +16,10 @@ assert.match(html,/src="\.\/timeline-visual-context\.js\?/);
 assert.match(html,/href="\.\/timeline-visual-context\.css\?/);
 new vm.Script(read("timeline-visual-context.js"),{filename:"timeline-visual-context.js"});
 const src=read("timeline-visual-context.js");
+const atlasSource=read("atlas.js");
+assert.match(atlasSource,/drawAtlasDiagrams/);
+assert.match(atlasSource,/"\.\/atlas-context\.json"/);
+assert.match(atlasSource,/atlas-diagrams/);
 for(const signature of ["historia:year","historia:focus","historia:view","timeline-visual-context","visual-context-dialog","atlas-context.json"]){
  assert.ok(src.includes(signature),"Missing context synchronization: "+signature);
 }
