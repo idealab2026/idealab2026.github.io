@@ -32,16 +32,17 @@ class Lote5Tests(unittest.TestCase):
         corrected_approval_file = CANDIDATES.parent / "APROBADAS_CORREGIDAS_LOTE5_2026-11-16.json"
         corrected = {item["issue"]: item for item in
                      json.loads(corrected_approval_file.read_text(encoding="utf-8"))["items"]}
-        blocked = {43}
-        self.assertEqual(initially_approved | set(corrected) | blocked,
+        # Issue #43 is a later separately approved visual correction.
+        corrected43 = json.loads(
+            (CANDIDATES.parent / "APROBADA_CORREGIDA_43_2026-11-16.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(corrected43["issue"], 43)
+        self.assertEqual(initially_approved | set(corrected) | {corrected43["issue"]},
                          {row["issue"] for row in rows})
         for row in rows:
             self.assertIn(row["video_id"], all_ids)
             self.assertEqual(row["source_url"].rsplit("_", 1)[-1], str(row["chapter"]))
-            if row["issue"] in blocked:
-                self.assertNotIn(row["video_id"], indexed,
-                                 "La imagen #43 aún contiene una pistola dibujada incorrectamente")
-            elif row["video_id"] in indexed:
+            if row["video_id"] in indexed:
                 expected = (f'./infografias/{row["book"]}/'
                             f'{row["video_id"]}.png')
                 self.assertEqual(indexed[row["video_id"]], expected)
@@ -50,6 +51,9 @@ class Lote5Tests(unittest.TestCase):
                 if row["issue"] in corrected:
                     self.assertEqual(hashlib.sha256(image.read_bytes()).hexdigest(),
                                      corrected[row["issue"]]["corrected_sha256"])
+                if row["issue"] == 43:
+                    self.assertEqual(hashlib.sha256(image.read_bytes()).hexdigest(),
+                                     corrected43["corrected_sha256"])
 
     def test_all_original_hashes_match_prior_audit(self):
         audit = (CANDIDATES.parent / "REVISION_LOTE_30_2026-11-15.md").read_text(encoding="utf-8")
