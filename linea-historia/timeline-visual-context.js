@@ -166,7 +166,11 @@
  });
  window.addEventListener("historia:view",function(ev){
   state.view=ev.detail&&ev.detail.view||"timeline";
-  if(state.view==="timeline"){if(!state.locked)state.year=Math.round(api.getYear());requestDraw()}
+  if(state.view==="timeline"){
+   // Other tabs move the shared toolbar; always place the visual strip below it.
+   panel.insertBefore($("timeline-visual-context"),$("viewport"));
+   if(!state.locked)state.year=Math.round(api.getYear());requestDraw();
+  }
  });
  load();
 })();
