@@ -89,6 +89,79 @@ assert(opts.list.children.some(x=>x.children?.[0]?.value==="f21")===false,"Busca
 opts.search.value="f21";opts.search.event("input");
 assert.equal(opts.list.children.length,1,"Buscar por ID de fuente");
 assert.equal(opts.list.children[0].children[0].value,"f21");
+// El selector visible junto a «Tema» filtra el ORBE 3D, la Vista 2D y el listado.
+const typeNodes=[
+ {id:"p1",name:"Persona 1",kind:"Persona"},{id:"p2",name:"Persona 2",kind:"Persona"},
+ {id:"org",name:"Organización",kind:"Organización"},{id:"inst",name:"Institución",kind:"Institución"},
+ {id:"src",name:"Podcast",kind:"Fuente"},{id:"place",name:"Lugar",kind:"Lugar"}
+];
+const typeEdges=[
+ {id:"p1-p2",a:"p1",b:"p2"},{id:"p1-org",a:"p1",b:"org"},
+ {id:"org-inst",a:"org",b:"inst"},{id:"p1-src",a:"p1",b:"src"},
+ {id:"p1-place",a:"p1",b:"place"}
+];
+const beforeTypeJson=JSON.stringify({typeNodes,typeEdges});
+assert.equal(mod.entityType(typeNodes[2]),"Institución / organización");
+assert.equal(mod.entityType(typeNodes[3]),"Institución / organización");
+assert.equal(mod.entityType({kind:"País"}),"País");
+const allTypes=mod.filterByTypes(typeNodes,typeEdges,null);
+assert.equal(allTypes.nodes.length,6);assert.equal(allTypes.edges.length,5);
+const onlyPerson=mod.filterByTypes(typeNodes,typeEdges,new Set(["Persona"]));
+assert.deepEqual(onlyPerson.nodes.map(n=>n.id),["p1","p2"]);
+assert.deepEqual(onlyPerson.edges.map(e=>e.id),["p1-p2"]);
+const personAndOrg=mod.filterByTypes(typeNodes,typeEdges,new Set(["Persona","Institución / organización"]));
+assert.deepEqual(personAndOrg.nodes.map(n=>n.id),["p1","p2","org","inst"]);
+assert.deepEqual(personAndOrg.edges.map(e=>e.id),["p1-p2","p1-org","org-inst"]);
+assert.equal(mod.filterByTypes(typeNodes,typeEdges,new Set()).nodes.length,0);
+assert.equal(JSON.stringify({typeNodes,typeEdges}),beforeTypeJson,"El filtro no altera el catálogo canónico");
+let typeChanges=0,scopeTypes={nodes:typeNodes,edges:typeEdges};
+const typeOpts={
+ button:new Elem("button"),panel:new Elem("div"),list:new Elem("div"),summary:new Elem("p"),
+ allButton:new Elem("button"),noneButton:new Elem("button"),closeButton:new Elem("button"),
+ getData:()=>scopeTypes,onChange:()=>{typeChanges++}
+};
+typeOpts.panel.hidden=true;
+const typeUI=mod.mountTypes(typeOpts);
+assert.equal(typeUI.keys(),null,"Por defecto todos los tipos seleccionados");
+assert.equal(typeOpts.list.children.length,4,"Institución y Organización deben agruparse");
+assert.equal(typeOpts.button.textContent,"Tipos · todos");
+const checkboxFor=kind=>{
+ const row=typeOpts.list.children.find(r=>r.children[0]?.value===kind);
+ assert(row,"Falta checkbox de "+kind);return row.children[0]
+};
+typeOpts.button.event("click");
+assert.equal(typeOpts.panel.hidden,false);
+assert.equal(typeOpts.button.attrs["aria-expanded"],"true");
+checkboxFor("Fuente").checked=false;checkboxFor("Fuente").event("change");
+assert(typeUI.keys()&&!typeUI.keys().has("Fuente"));
+assert.equal(mod.filterByTypes(typeNodes,typeEdges,typeUI.keys()).nodes.length,5);
+typeOpts.noneButton.event("click");
+assert.equal(typeUI.keys().size,0,"Ninguno oculta también las relaciones");
+assert.equal(mod.filterByTypes(typeNodes,typeEdges,typeUI.keys()).edges.length,0);
+checkboxFor("Persona").checked=true;checkboxFor("Persona").event("change");
+assert.equal(mod.filterByTypes(typeNodes,typeEdges,typeUI.keys()).nodes.length,2);
+checkboxFor("Institución / organización").checked=true;checkboxFor("Institución / organización").event("change");
+assert.equal(mod.filterByTypes(typeNodes,typeEdges,typeUI.keys()).nodes.length,4,"Selección múltiple persona + institución");
+assert.equal(mod.filterByTypes(typeNodes,typeEdges,typeUI.keys()).edges.length,3,"Conservar solo enlaces entre nodos visibles");
+typeOpts.allButton.event("click");
+assert.equal(typeUI.keys(),null);
+assert.equal(mod.filterByTypes(typeNodes,typeEdges,typeUI.keys()).nodes.length,6);
+scopeTypes={nodes:typeNodes.filter(n=>n.kind==="Persona"),edges:typeEdges.filter(e=>e.id==="p1-p2")};
+typeUI.refresh();
+assert.equal(typeOpts.list.children.length,1,"Adaptarse a las fuentes seleccionadas");
+assert.equal(typeOpts.summary.textContent.includes("2 entidades"),true);
+scopeTypes={nodes:typeNodes,edges:typeEdges};typeUI.refresh();
+typeOpts.closeButton.event("click");
+assert.equal(typeOpts.panel.hidden,true);
+assert(typeChanges>=5);
+assert(html.includes('id="entity-type-filter-toggle"')&&html.includes('id="entity-type-filter-panel"'));
+assert(html.includes('id="entity-type-filter-list"')&&html.includes('id="entity-type-filter-all"')&&html.includes('id="entity-type-filter-none"'));
+assert(html.includes('typeControls=window.IdeaLabSourceFilters.mountTypes'));
+assert(html.includes('filterByTypes(shownData.nodes,shownData.edges,typeControls.keys())'));
+assert(html.includes('graph3d.setData(shownData.nodes,shownData.edges)'));
+assert(html.includes('renderGraph(q)'));
+assert(html.includes('renderGallery(q)'));
+assert(html.includes('source-filter.js?v=20261116-global-types-3'));
 assert(html.includes('id="source-filter-toggle"')&&html.includes('id="source-filter-panel"'));
 assert(html.includes('id="inspector-drawer-close"')&&html.includes('aria-label="Deseleccionar entidad o relación"'));
 assert(html.includes('$("inspector-drawer-close").hidden=!selection'));
