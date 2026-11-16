@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "created_at": "2026-11-16",
+  "status": "APROBADO_PARA_PUBLICACION_TRAS_CONTRASTE_NOVELA",
+  "source_zip_name": "BBTK_MONT_LOTE6_3_CORRECCIONES_REVISADAS.zip",
+  "source_review_zip": "IDEA_LAB_LOTE6_REVISION_8PNG.zip",
+  "scope": "Únicamente las tres PNG corregidas tras cotejo directo con los capítulos 63, 27 y 43 de Dumas. No se ha escuchado el vídeo completo.",
+  "approved_issues": [
+    42,
+    69,
+    85
+  ],
+  "blocked_issues": [
+    45,
+    47,
+    48,
+    49,
+    68
+  ],
+  "items": [
+    {
+      "issue": 42,
+      "chapter": 63,
+      "book": "conde-montecristo",
+      "video_id": "ZIbj-2JLd9w",
+      "file": "issue-42-corregida.png",
+      "source_original_sha256": "0b625906a27f623db57c0c505c16699a6ab71ad5f84b2b08c1813a7e81921469",
+      "source_export_sha256": "7eff34fd5f4260463ebbb5cd92b192b32006fee531cff9561b85343485122d61",
+      "corrected_sha256": "428f8d1f9c360c659740416d9ae0c7433ba9eace3fcbbb34b02e381617428f6f",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_63",
+      "approved_for_publication": true
+    },
+    {
+      "issue": 69,
+      "chapter": 27,
+      "book": "conde-montecristo",
+      "video_id": "LTrugwGIh0M",
+      "file": "issue-69-corregida.png",
+      "source_original_sha256": "6c0494191c1da7f7d65c0ef54786e0a45393b099b0f32883dfea91074af16a69",
+      "source_export_sha256": "7c6da86c4999f08adfbe52a63a2076b79389faca0dd21c5f81efe67dcd256615",
+      "corrected_sha256": "082a98f3f47db2d9cd9186e0075da7ffb287d228d7f40d73ea3a1df3974eae2a",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_27",
+      "approved_for_publication": true
+    },
+    {
+      "issue": 85,
+      "chapter": 43,
+      "book": "conde-montecristo",
+      "video_id": "1JSxcCbVXTM",
+      "file": "issue-85-corregida.png",
+      "source_original_sha256": "9e9014498c5d5406513cf8e94e574d5d10054f456483a6408f576a0ada320105",
+      "source_export_sha256": "b67e85e7f6e38ef91a632e1aca7a8f233511c05805599fc1d6b81143bbd4c8af",
+      "corrected_sha256": "6cd3480c8b5672bb0ca721100f42057f964fe72e07bc37bd006246a2b60e740d",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_43",
+      "approved_for_publication": true
+    }
+  ]
+}
