@@ -1469,13 +1469,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 16,
-      "sourceRelationsDocumented": 34,
-      "personsProfiled": 14,
-      "archivalChecks": 8,
+      "sourceNodesDocumented": 18,
+      "sourceRelationsDocumented": 36,
+      "personsProfiled": 16,
+      "archivalChecks": 9,
       "timelineVerifiedEventsCommitted": 2,
-      "qualityNotes": "Segunda revisión documental F33: Gutle, cinco hijas e historiador Niall Ferguson identificados en archivo y fuentes biográficas; la fuente oral solo nombra a Gutle y Ferguson, no a las cinco hijas. 19 embarazos no equivalen automáticamente a 19 nacimientos: 10 hijos llegaron a adultos según historia independiente. Archivo Rothschild vinculado a la familia; audio sin cotejar.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Segunda revisión documental F33: Gutle, cinco hijas e historiador Niall Ferguson identificados en archivo y fuentes biográficas; la fuente oral solo nombra a Gutle y Ferguson, no a las cinco hijas. 19 embarazos no equivalen automáticamente a 19 nacimientos: 10 hijos llegaron a adultos según historia independiente. Archivo Rothschild vinculado a la familia; audio sin cotejar. Tercera revisión: la formación de Mayer en 1757 corresponde a Jacob Wolf Oppenheimer en el banco de Simon Wolf, según archivo Rothschild. Samuel Oppenheimer murió en 1703, décadas antes del nacimiento de Mayer.",
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 32,
@@ -1489,13 +1489,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 15,
-      "sourceRelationsDocumented": 21,
-      "personsProfiled": 1,
-      "documentaryChecks": 6,
+      "sourceNodesDocumented": 18,
+      "sourceRelationsDocumented": 25,
+      "personsProfiled": 3,
+      "documentaryChecks": 7,
       "timelineVerifiedEventsCommitted": 5,
-      "qualityNotes": "Segunda revisión documental F32: contraste OTAN Lisboa 2010/Madrid 2022, Agenda ONU 2015 y causa española por cartas explosivas. Información judicial de 2024 posterior a la entrevista; no vincular a Rusia sin prueba. Transcripción NotebookLM sin audio, voces ni minutajes fiables.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Segunda revisión documental F32: contraste OTAN Lisboa 2010/Madrid 2022, Agenda ONU 2015 y causa española por cartas explosivas. Información judicial de 2024 posterior a la entrevista; no vincular a Rusia sin prueba. Transcripción NotebookLM sin audio, voces ni minutajes fiables. Tercera revisión: reunión Burns–Naryshkin, Ankara 14-11-2022, contrastada; agenda oficial de riesgo nuclear. La conjetura de pactos secretos permanece sin acreditación.",
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 35,
@@ -4657,7 +4657,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4681,15 +4681,15 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 15,
-            "relations": 21,
-            "biographies": 1,
+            "entities": 18,
+            "relations": 25,
+            "biographies": 3,
             "statements": 5,
-            "independentChecks": 2,
+            "independentChecks": 3,
             "verifiedTimelineEvents": 5,
-            "documentaryChecks": 6
+            "documentaryChecks": 7
           },
-          "nextAction": "Cotejar audio y separar lo realmente dicho en 2022 de las pruebas judiciales posteriores; revisar aún otros pasajes sin minutajes ni voces confirmadas."
+          "nextAction": "Cotejar audio y atribución de la reunión CIA–SVR en Ankara (14-11-2022); investigar otras declaraciones. La reunión es documentada, no prueba negociaciones secretas."
         }
       },
       {
@@ -4713,7 +4713,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4738,15 +4738,15 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 16,
-            "relations": 34,
-            "biographies": 14,
+            "entities": 18,
+            "relations": 36,
+            "biographies": 16,
             "statements": 10,
-            "independentChecks": 1,
-            "archivalChecks": 8,
+            "independentChecks": 2,
+            "archivalChecks": 9,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "Cotejar audio, revisar grafía Oppenheimer y versión del mito Waterloo; verificar cifras financieras y no atribuir al vídeo los nombres de hijas recuperados únicamente del archivo."
+          "nextAction": "Cotejar audio del nombre «Samuel Oppenheimer»; contrastar cifras económicas y continuar entrevista. Archivo Rothschild: aprendiz en 1757 bajo Jacob Wolf Oppenheimer; Samuel murió en 1703."
         }
       },
       {
