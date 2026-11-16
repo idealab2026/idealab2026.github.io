@@ -1,5 +1,6 @@
 /* F67: revisión documental parcial ampliada sin cotejo de audio. */
-window.IDEA_TELARANA_F67_REVIEW = {
+window.IDEA_TELARANA_F67_REVIEW =
+{
   "metadata": {
     "id": "idealab-f67-entrevista-jesus",
     "sourceOrder": 67,
@@ -400,6 +401,26 @@ window.IDEA_TELARANA_F67_REVIEW = {
           "text": "El pasaje 4:157 afirma que no lo mataron ni crucificaron; es una afirmación del texto religioso y no resuelve por sí sola una cuestión histórica."
         }
       ]
+    },
+    {
+      "id": "f67-testimonium-flavianum",
+      "name": "Testimonium Flavianum",
+      "kind": "Texto",
+      "subtitle": "Antigüedades judías 18.63–64 · Flavio Josefo",
+      "note": "Pasaje transmitido en las Antigüedades judías de Flavio Josefo, sobre Jesús. Su transmisión textual y posibles interpolaciones cristianas son objeto de crítica filológica. El entrevistado afirma que hay una versión oriental exenta de interpolaciones, pero esa identificación exige precisar autor, lengua, manuscrito y edición; no constituye una prueba independiente de cada detalle citado.",
+      "source": "https://www.perseus.tufts.edu/hopper/text?doc=J.+AJ+18.63",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · atribución a entrevistado sin minutaje contrastado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "afirmacion_de_la_fuente_pendiente_de_contraste_textual",
+          "text": "El invitado menciona interpolaciones cristianas en Flavio Josefo y alude a una versión transmitida por vía árabe. La existencia de tradiciones textuales diferentes no permite aceptar sin cotejo de manuscritos todo el resumen histórico que propone."
+        }
+      ]
     }
   ],
   "edges": [
@@ -632,6 +653,17 @@ window.IDEA_TELARANA_F67_REVIEW = {
       "claimStatus": "contexto_documental",
       "note": "El pasaje coránico 3:45 nombra a Jesús, hijo de María; la relación documenta el texto, no una conclusión histórica independiente.",
       "source": "https://quran.com/3/45",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-josefo-entrevista-mencion",
+      "a": "f67-episodio",
+      "b": "f67-testimonium-flavianum",
+      "type": "Fuente histórica discutida",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "confidence": "indicio",
+      "claimStatus": "mencion_textual_sin_cotejo_de_audio",
+      "note": "El pasaje de Josefo se menciona en el TXT; su autenticidad parcial y transmisión requieren evaluación filológica distinta de lo dicho por el entrevistado.",
       "podcastNotes": []
     }
   ]
