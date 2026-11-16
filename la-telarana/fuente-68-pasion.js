@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": true,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial de entrevista de 2:10:40. Subtítulos automáticos disponibles hasta 2:10:39 con tiempos orientativos; audio, voces e integridad sin cotejar. Distinguir textos, hipótesis y creencias.",
+    "methodologicalNote": "Revisión documental parcial ampliada: relatos de nacimiento y pasión, cronología romana y métodos históricos. Subtítulos automáticos orientativos; audio, voces e integridad sin cotejo.",
     "automaticCaptions": true
   },
   "nodes": [
@@ -353,6 +353,178 @@ window.IDEA_TELARANA_F68_REVIEW = {
           "text": "La fuente citada aporta contexto para evaluar el pasaje; no verifica cada detalle de la entrevista."
         }
       ]
+    },
+    {
+      "id": "f68-cena",
+      "name": "Última cena y Pascua",
+      "kind": "Tema",
+      "subtitle": "Cronologías narrativas",
+      "note": "Marcos presenta preparativos para la cena pascual; Juan menciona la preparación de la Pascua en relación con el juicio. La reconstrucción cronológica histórica se debate.",
+      "source": "https://www.biblegateway.com/passage/?search=Mark+14%3A12-25&version=NABRE",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU&t=3344",
+          "timeSec": 3344,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "La entrevista contrapone la cena en los sinópticos y Juan y propone una armonización. Marcos 14 y Juan 18–19 ofrecen referencias distintas; hay debate interpretativo, no certeza automática."
+        },
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · contraste documental",
+          "source": "https://www.biblegateway.com/passage/?search=Mark+14%3A12-25&version=NABRE",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado permite comprobar la cronología o el pasaje; no confirma todas las interpretaciones de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f68-marcos14",
+      "name": "Evangelio de Marcos 14:12–25",
+      "kind": "Documento",
+      "subtitle": "Relato de la cena",
+      "note": "El pasaje presenta los preparativos de la Pascua y una cena con los discípulos. El texto es una fuente literaria y religiosa, no una transcripción presencial comprobada.",
+      "source": "https://www.biblegateway.com/passage/?search=Mark+14%3A12-25&version=NABRE",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-juan18",
+      "name": "Evangelio de Juan 18:28 y 19:14",
+      "kind": "Documento",
+      "subtitle": "Relato del juicio",
+      "note": "Los pasajes mencionan comer la Pascua y su preparación. El encaje con los sinópticos es objeto de interpretación y no determina por sí solo un año.",
+      "source": "https://www.biblegateway.com/passage/?search=John+18%3A28%3B19%3A14&version=NABRE",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-fecha-crucifixion",
+      "name": "Fecha de la crucifixión de Jesús",
+      "kind": "Tema",
+      "subtitle": "Reconstrucciones cronológicas",
+      "note": "La entrevista expone una preferencia por el año 30 sobre 33. Ambas son propuestas dependientes de calendarios y fuentes, sin fecha aceptada aquí como definitiva.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU&t=3593",
+          "timeSec": 3593,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "El invitado prefiere el año 30 sobre el 33 a partir de sus hipótesis sobre fecha de nacimiento y calendario. La inferencia se atribuye y no se registra como fecha comprobada."
+        },
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · contraste documental",
+          "source": "https://www.biblegateway.com/passage/?search=John+18%3A28%3B19%3A14&version=NABRE",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado permite comprobar la cronología o el pasaje; no confirma todas las interpretaciones de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f68-hadrian",
+      "name": "Adriano",
+      "kind": "Persona",
+      "subtitle": "Emperador romano · 117–138",
+      "note": "El Met sitúa su reinado en 117–138 y la revuelta de Bar Kojba en 132–135. El subtitulado menciona 105 y necesita cotejo con audio.",
+      "source": "https://www.metmuseum.org/exhibitions/listings/2019/world-between-empires-art-and-identity-ancient-middle-east/exhibition-galleries",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU&t=5862",
+          "timeSec": 5862,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "La transcripción automática dice que Adriano era emperador en 105. El Met fecha su reinado en 117–138; falta cotejar el audio antes de atribuir el error al hablante."
+        },
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · contraste documental",
+          "source": "https://www.metmuseum.org/exhibitions/listings/2019/world-between-empires-art-and-identity-ancient-middle-east/exhibition-galleries",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado permite comprobar la cronología o el pasaje; no confirma todas las interpretaciones de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f68-bar-kojba",
+      "name": "Revuelta de Bar Kojba",
+      "kind": "Acontecimiento",
+      "subtitle": "Judea · 132–135",
+      "note": "El Met la sitúa en 132–135 durante el gobierno de Adriano; fue distinta de la guerra en que cayó Jerusalén en 70.",
+      "source": "https://www.metmuseum.org/exhibitions/listings/2019/world-between-empires-art-and-identity-ancient-middle-east/exhibition-galleries",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU&t=5855",
+          "timeSec": 5855,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "El texto mezcla una larga secuencia bélica con hechos de épocas distintas. La revuelta de Bar Kojba se fecha en 132–135, separada de la guerra de 66–73/74."
+        },
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · contraste documental",
+          "source": "https://www.metmuseum.org/exhibitions/listings/2019/world-between-empires-art-and-identity-ancient-middle-east/exhibition-galleries",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado permite comprobar la cronología o el pasaje; no confirma todas las interpretaciones de la entrevista."
+        }
+      ]
+    },
+    {
+      "id": "f57-segundo-templo",
+      "name": "Segundo Templo de Jerusalén",
+      "kind": "Lugar",
+      "subtitle": "Jerusalén · Antigüedad",
+      "note": "El Met sitúa su destrucción en 70 por fuerzas romanas bajo Tito. No debe confundirse con la revuelta posterior bajo Adriano.",
+      "source": "https://www.metmuseum.org/toah/ht/05/wae.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU&t=5862",
+          "timeSec": 5862,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "relato",
+          "text": "La transcripción sitúa una destrucción de Jerusalén bajo Adriano en 105. El Met fecha la toma de la ciudad y destrucción del templo en 70 y la revuelta bajo Adriano en 132–135."
+        },
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · contraste documental",
+          "source": "https://www.metmuseum.org/toah/ht/05/wae.html",
+          "timeSec": null,
+          "status": "fuente-externa",
+          "text": "El documento citado permite comprobar la cronología o el pasaje; no confirma todas las interpretaciones de la entrevista."
+        }
+      ]
     }
   ],
   "edges": [
@@ -541,6 +713,116 @@ window.IDEA_TELARANA_F68_REVIEW = {
       "claimStatus": "contexto_documental",
       "note": "Lucas 2 menciona el censo en su relato; su cronología se debate.",
       "source": "https://www.biblegateway.com/passage/?search=Luke+2.1-3&version=NABRE",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-pasion-mencion-f68-cena",
+      "a": "f68-episodio",
+      "b": "f68-cena",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista o contraste documental; subtítulos y voces sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-pasion-mencion-f68-marcos14",
+      "a": "f68-episodio",
+      "b": "f68-marcos14",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista o contraste documental; subtítulos y voces sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-pasion-mencion-f68-juan18",
+      "a": "f68-episodio",
+      "b": "f68-juan18",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista o contraste documental; subtítulos y voces sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-pasion-mencion-f68-fecha-crucifixion",
+      "a": "f68-episodio",
+      "b": "f68-fecha-crucifixion",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista o contraste documental; subtítulos y voces sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-pasion-mencion-f68-hadrian",
+      "a": "f68-episodio",
+      "b": "f68-hadrian",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista o contraste documental; subtítulos y voces sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-pasion-mencion-f68-bar-kojba",
+      "a": "f68-episodio",
+      "b": "f68-bar-kojba",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista o contraste documental; subtítulos y voces sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-pasion-mencion-f57-segundo-templo",
+      "a": "f68-episodio",
+      "b": "f57-segundo-templo",
+      "type": "Mención o contexto de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Tema de la entrevista o contraste documental; subtítulos y voces sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-cena-marcos",
+      "a": "f68-cena",
+      "b": "f68-marcos14",
+      "type": "Referencia textual",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "Marcos 14 presenta preparativos para comer la Pascua.",
+      "source": "https://www.biblegateway.com/passage/?search=Mark+14%3A12-25&version=NABRE",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-cena-juan",
+      "a": "f68-cena",
+      "b": "f68-juan18",
+      "type": "Referencia textual",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "Juan 18 y 19 mencionan la Pascua y su preparación en el relato del juicio.",
+      "source": "https://www.biblegateway.com/passage/?search=John+18%3A28%3B19%3A14&version=NABRE",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-adriano-revuelta",
+      "a": "f68-hadrian",
+      "b": "f68-bar-kojba",
+      "type": "Reinado y revuelta",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "La revuelta de Bar Kojba ocurrió en 132–135 durante el reinado de Adriano.",
+      "source": "https://www.metmuseum.org/exhibitions/listings/2019/world-between-empires-art-and-identity-ancient-middle-east/exhibition-galleries",
       "podcastNotes": []
     }
   ]

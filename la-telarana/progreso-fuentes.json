@@ -2027,13 +2027,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 16,
-      "sourceRelationsDocumented": 17,
+      "sourceNodesDocumented": 23,
+      "sourceRelationsDocumented": 27,
       "personsProfiled": 0,
-      "documentaryChecks": 7,
+      "documentaryChecks": 9,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Ampliada a cronología y fuentes de la natividad y límites de la identificación de la Síndone. Tiempos automáticos orientativos; audio y voces sin cotejar.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Ampliada con Marcos, Juan y cronología de Tito y Adriano. Subtítulos automáticos orientativos; audio y voces sin cotejar.",
+      "lastUpdated": "2026-11-16"
     }
   ],
   "timeline": {
@@ -6560,7 +6560,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6579,20 +6579,20 @@
           "automaticYouTubeCaptionsAvailable": true
         },
         "analysisCoverage": {
-          "percent": 15,
+          "percent": 20,
           "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 16,
-            "relations": 17,
+            "entities": 23,
+            "relations": 27,
             "biographies": 0,
-            "statements": 11,
-            "independentChecks": 7,
+            "statements": 16,
+            "independentChecks": 9,
             "verifiedTimelineEvents": 0
           },
-          "nextAction": "Cotejar audio y voces; revisar el resto de la entrevista y contrastar las narraciones y cronologías históricas."
+          "nextAction": "Cotejar audio y voces; profundizar en los pasajes no contrastados y las diferencias de los relatos de la pasión."
         }
       },
       {
