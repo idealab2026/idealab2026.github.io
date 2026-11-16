@@ -172,5 +172,74 @@ function mount(opts){
  renderList();
  return {keys:keys,isFiltering:function(){return selected!==null},refresh:renderList,close:function(){open(false)}};
 }
-global.IdeaLabSourceFilters={createTracker:createTracker,mount:mount,sourceForModule:sourceForModule};
+/* Filtro de tipos del MAPA PRINCIPAL (3D, 2D y listado). No sustituye el filtro del esquema local. */
+function entityType(node){
+ var raw=String(node&&node.kind||"Otro").trim()||"Otro";
+ if(/^(instituci[oó]n|instituciones|organizaci[oó]n|organizaciones|organismos?|agencias?|institutos?)$/i.test(raw))return "Institución / organización";
+ return raw;
+}
+function filterByTypes(nodes,edges,selected){
+ if(selected===null||selected===undefined)return {nodes:nodes||[],edges:edges||[]};
+ var visible=(nodes||[]).filter(function(n){return selected.has(entityType(n))});
+ var ids=new Set(visible.map(function(n){return n.id}));
+ return {nodes:visible,edges:(edges||[]).filter(function(e){return ids.has(e.a)&&ids.has(e.b)})};
+}
+function mountTypes(opts){
+ var button=opts.button,panel=opts.panel,list=opts.list,summary=opts.summary;
+ var selected=null; // null: todos, incluso nuevos tipos incorporados por próximas fuentes
+ function data(){return opts.getData()||{nodes:[],edges:[]}}
+ function entries(){
+  var counts=new Map();
+  (data().nodes||[]).forEach(function(node){var type=entityType(node);counts.set(type,(counts.get(type)||0)+1)});
+  var leading=["Persona","Institución / organización","Fuente","Lugar","País","Acontecimiento"];
+  return Array.from(counts,function(pair){return {name:pair[0],count:pair[1]}}).sort(function(a,b){
+   var x=leading.indexOf(a.name),y=leading.indexOf(b.name);
+   return x>=0||y>=0?(x<0?1:y<0?-1:x-y):a.name.localeCompare(b.name,"es")
+  });
+ }
+ function keys(){return selected===null?null:new Set(selected)}
+ function renderList(){
+  var choices=entries(),all=choices.length,chosen=selected===null?all:choices.filter(function(x){return selected.has(x.name)}).length;
+  var nodeCount=choices.filter(function(x){return selected===null||selected.has(x.name)}).reduce(function(sum,x){return sum+x.count},0);
+  button.textContent=selected===null?"Tipos · todos":"Tipos · "+chosen+"/"+all;
+  button.setAttribute("aria-pressed",String(selected!==null));
+  summary.textContent=chosen+" de "+all+" tipos seleccionados · "+nodeCount+" entidades del conjunto de fuentes activo.";
+  opts.allButton.disabled=selected===null;
+  opts.noneButton.disabled=selected!==null&&chosen===0;
+  list.replaceChildren();
+  if(!all){
+   var empty=document.createElement("p");empty.className="source-filter-empty";empty.textContent="Las fuentes seleccionadas no contienen entidades.";list.appendChild(empty);return
+  }
+  choices.forEach(function(choice){
+   var label=document.createElement("label");label.className="source-filter-row entity-type-row";
+   var check=document.createElement("input");check.type="checkbox";check.value=choice.name;
+   check.checked=selected===null||selected.has(choice.name);
+   check.setAttribute("aria-label","Mostrar "+choice.name);
+   var caption=document.createElement("span");caption.className="source-filter-description";
+   var name=document.createElement("strong");name.textContent=choice.name;
+   var total=document.createElement("small");total.textContent=choice.count+" entidad"+(choice.count===1?"":"es");
+   caption.appendChild(name);caption.appendChild(total);label.appendChild(check);label.appendChild(caption);
+   check.addEventListener("change",function(){
+    if(selected===null)selected=new Set(choices.map(function(item){return item.name}));
+    if(this.checked)selected.add(choice.name);else selected.delete(choice.name);
+    if(choices.every(function(item){return selected.has(item.name)}))selected=null;
+    opts.onChange();renderList()
+   });
+   list.appendChild(label);
+  });
+ }
+ function open(value){panel.hidden=!value;button.setAttribute("aria-expanded",String(value));if(value){if(opts.onOpen)opts.onOpen();renderList()}}
+ button.addEventListener("click",function(){open(panel.hidden)});
+ opts.allButton.addEventListener("click",function(){selected=null;opts.onChange();renderList()});
+ opts.noneButton.addEventListener("click",function(){selected=new Set();opts.onChange();renderList()});
+ if(opts.closeButton)opts.closeButton.addEventListener("click",function(){open(false)});
+ panel.addEventListener("pointerdown",function(e){e.stopPropagation()});
+ document.addEventListener("pointerdown",function(e){
+  if(!panel.hidden&&!panel.contains(e.target)&&!button.contains(e.target))open(false)
+ });
+ document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!panel.hidden){open(false);e.stopPropagation()}});
+ renderList();
+ return {keys:keys,refresh:renderList,close:function(){open(false)},isFiltering:function(){return selected!==null}};
+}
+global.IdeaLabSourceFilters={createTracker:createTracker,mount:mount,sourceForModule:sourceForModule,entityType:entityType,filterByTypes:filterByTypes,mountTypes:mountTypes};
 })(window);
