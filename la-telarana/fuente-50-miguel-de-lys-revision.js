@@ -1,4 +1,4 @@
-/* F50 revisión ampliada: anclas de subtítulos no cotejadas con audio; hechos externos separados. */
+/* F50 tercera revisión documental; audio, voces y minutajes no cotejados. */
 window.IDEA_TELARANA_F50_REVIEW = {
   "metadata": {
     "id": "idealab-f50-miguel-de-lys-wild-project284-2024",
@@ -16,7 +16,7 @@ window.IDEA_TELARANA_F50_REVIEW = {
     "transcriptFormat": "NotebookLM TXT no reliable timecodes",
     "transcriptCharacters": 251787,
     "transcriptPrivateDriveUrl": null,
-    "reviewStage": "segunda_revision_documental_vikingos_salem_inquisicion_corso_sin_audio",
+    "reviewStage": "tercera_revision_documental_egipto_roma_pirateria_sin_audio",
     "textualEvidenceScheme": "anchor phrase + approximate char offset in private TXT; not audio time",
     "updatedAt": "2026-11-16",
     "externalCheckSources": [
@@ -32,9 +32,21 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "https://academic.oup.com/reference/62384/reference-article-abstract/555076763",
       "https://www.vatican.va/roman_curia/congregations/cfaith/storia/documents/rc_con_cfaith_storia_20150319_promuovere-custodire-fede_en.html",
       "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/albigensian-crusade-and-the-early-inquisitions-into-heretical-depravity-12081246/AE47E7DDE48278DD70A06F96CEF81123",
-      "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers"
+      "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers",
+      "https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/",
+      "https://aeraweb.org/projects/lost-city/",
+      "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/2b%2A.html",
+      "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "https://hpi.uq.edu.au/node/2286",
+      "https://www.cambridge.org/core/journals/classical-quarterly/article/caligula-incitatus-and-the-consulship/749E6AD34DCB19004A041C227A661D64",
+      "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "https://www.cambridge.org/core/books/cambridge-companion-to-the-age-of-nero/burning-rome-burning-christians/174BE1274DF70D5C6088BDAFC163F837",
+      "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
+      "https://www.dncr.nc.gov/blog/2014/05/30/lab-conserving-treasures-recovered-blackbeards-queen-annes-revenge-shipwreck",
+      "https://www.history.com/articles/did-pirates-really-make-people-walk-the-plank",
+      "https://www.usni.org/magazines/proceedings/1929/january/seagoing-customs"
     ],
-    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive. Segunda revisión 16-11-2026 sobre TXT privado real (251787 caracteres con cabecera): 12 anclas textuales localizadas y verificadas por cadena y posición; distinción explícita entre lo mencionado y el contexto externo. Contrastes con National Museum of Denmark (Gjermundbu), Parks Canada y Nature (L'Anse aux Meadows / tala 1021), Peabody Essex Museum (Salem: 19 ahorcados, Giles Corey aplastado, otros presos muertos), historia inquisitorial vaticana (Gregorio IX, s. XIII), UC Berkeley Law (cazas modernas) y Royal Museums Greenwich (patentes). No se presume que el invitado haya pronunciado nombres externos ni se inventan minutos o voces. El hito 1021 registra actividad, no llegada de Erik/Leif."
+    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive. Segunda revisión 16-11-2026 sobre TXT privado real (251787 caracteres con cabecera): 12 anclas textuales localizadas y verificadas por cadena y posición; distinción explícita entre lo mencionado y el contexto externo. Contrastes con National Museum of Denmark (Gjermundbu), Parks Canada y Nature (L'Anse aux Meadows / tala 1021), Peabody Essex Museum (Salem: 19 ahorcados, Giles Corey aplastado, otros presos muertos), historia inquisitorial vaticana (Gregorio IX, s. XIII), UC Berkeley Law (cazas modernas) y Royal Museums Greenwich (patentes). No se presume que el invitado haya pronunciado nombres externos ni se inventan minutos o voces. El hito 1021 registra actividad, no llegada de Erik/Leif. 16-11-2026 tercera revisión, Egipto/Roma/piratería. Anclas textuales verificadas por cadena exacta en el TXT privado (sin audio ni minutos). Contrastes: organización laboral documentada de Guiza vs. corvea; Heródoto tardío; Vercingétorix permaneció en Alesia aunque envió caballería; Incitatus nunca fue nombrado senador o cónsul en lo acreditado; incendio de Roma 64 sin autoría de Nerón demostrada; bloqueo de Charleston 1718 con rescate médico acreditado pero diagnóstico individual de sífilis no probado; quilla y tablón son castigos distintos. No afirmar que nombres añadidos por fuentes externas fueron pronunciados."
   },
   "nodes": [
     {
@@ -117,8 +129,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Pirámides del antiguo Egipto",
       "kind": "Lugar",
       "subtitle": "Monumentos funerarios y obras del Egipto antiguo",
-      "note": "La conversación examina técnicas de cantería, transporte y construcción, y cuestiona explicaciones basadas exclusivamente en esclavitud o intervención extraterrestre. No determina el método exacto para todos los monumentos.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "La arqueología de Guiza documenta trabajadores organizados y abastecidos, desmintiendo la representación cinematográfica de cuadrillas de esclavos encadenados como única explicación. No demuestra la ausencia de trabajo obligatorio en el antiguo Egipto.",
+      "source": "https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -224,8 +236,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Sitio de Alesia",
       "kind": "Acontecimiento",
       "subtitle": "Asedio romano en la guerra de las Galias, 52 a. C.",
-      "note": "Se menciona el sistema romano de circunvalación y la defensa frente a ejércitos en el interior y exterior del cerco. El relato oral requiere fuentes históricas originales para detalles tácticos.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "En F50 se atribuye a Vercingétorix la salida de Alesia para pedir ayuda. Según César salió su caballería, mientras Vercingétorix permaneció y se rindió. El doble cerco romano sí está documentado.",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -266,8 +278,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Calígula",
       "kind": "Persona",
       "subtitle": "Emperador romano de la dinastía julio-claudia",
-      "note": "Se examina el relato de que habría nombrado senador a su caballo y el sobrenombre derivado de las caligae. El propio episodio reconoce incertidumbre sobre el grado de literalidad del primer relato.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "El relato de F50 dice que Calígula hizo senador a su caballo. Fuentes antiguas solo hablan de una intención o promesa de hacerlo cónsul. No hubo designación acreditada; Senado y consulado son instituciones diferentes.",
+      "source": "https://hpi.uq.edu.au/node/2286",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -287,8 +299,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Nerón",
       "kind": "Persona",
       "subtitle": "Emperador romano del siglo I",
-      "note": "Los participantes cuestionan la imagen popular de Nerón tocando un instrumento durante el incendio de Roma y comentan la confusión entre tradición literaria y hechos bien documentados.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "F50 afirma tajantemente que Nerón no quemó Roma. Tácito lo sitúa en Antium al inicio, pero recoge rumores. La evidencia no demuestra que ordenara el incendio de 64 ni permite demostrar su inocencia con certeza.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -839,8 +851,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Barbanegra (Edward Teach)",
       "kind": "Persona",
       "subtitle": "Pirata activo a comienzos del siglo XVIII",
-      "note": "Los subtítulos presentan anécdotas de Barbanegra relativas a una oferta de patente y a su salud. No se dispone aquí de prueba independiente suficiente para acreditar esas anécdotas: conservarlas como afirmaciones del episodio, no como biografía establecida.",
-      "source": "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers",
+      "note": "Bloqueó Charleston en mayo 1718 y exigió medicinas a cambio de rehenes. Los materiales médicos hallados en Queen Anne's Revenge no diagnostican sífilis personal en Barbanegra; tampoco prueban la anécdota de una patente rechazada.",
+      "source": "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -852,6 +864,363 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "relato_y_verificacion_diferenciados",
           "text": "La conversación menciona a Barbanegra y le atribuye una oferta de corso, una incursión en Charleston y enfermedades. La fuente externa consultada sustenta la diferencia jurídica entre corsario y pirata, NO esos detalles biográficos. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 184935; buscar «barbanegra que ofrecen patente». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f45-herodoto",
+      "name": "Heródoto",
+      "kind": "Persona",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "El pasaje atribuye a Heródoto el origen de un imaginario de trabajadores forzados; Historias II.124–125 es testimonio tardío, no estadística contemporánea ni prueba de que todo trabajador fuera esclavo.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/2b%2A.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Heródoto · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "El pasaje atribuye a Heródoto el origen de un imaginario de trabajadores forzados; Historias II.124–125 es testimonio tardío, no estadística contemporánea ni prueba de que todo trabajador fuera esclavo. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 15631; buscar «por heródoto». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-heit-el-ghurab",
+      "name": "Heit el-Ghurab",
+      "kind": "Lugar",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "AERA y el Ministerio de Antigüedades egipcio documentan asentamientos, alimentos, talleres y administración de trabajadores de Guiza. El topónimo se aporta por investigación externa: F50 no lo pronuncia.",
+      "source": "https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Heit el-Ghurab · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "AERA y el Ministerio de Antigüedades egipcio documentan asentamientos, alimentos, talleres y administración de trabajadores de Guiza. El topónimo se aporta por investigación externa: F50 no lo pronuncia. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 15310; buscar «no se usaron esclavos». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-corvea-egipto",
+      "name": "Trabajo obligatorio en el Egipto antiguo",
+      "kind": "Tema",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "F50 diferencia empleo obligatorio de condición jurídica de esclavo. La arqueología no permite extrapolar que nadie fuese obligado a trabajar en ningún periodo.",
+      "source": "https://aeraweb.org/projects/lost-city/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Trabajo obligatorio en el Egipto antiguo · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "F50 diferencia empleo obligatorio de condición jurídica de esclavo. La arqueología no permite extrapolar que nadie fuese obligado a trabajar en ningún periodo. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 17151; buscar «la obligatoriedad de trabajar no implica que sea necesariamente esclavitud». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-rampas-hipotesis",
+      "name": "Hipótesis de rampas constructivas",
+      "kind": "Hipótesis",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Las rampas son propuestas razonadas para fases constructivas; no existe una solución única y completa del izado de todos los bloques aceptada arqueológicamente.",
+      "source": "https://aeraweb.org/projects/lost-city/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Hipótesis de rampas constructivas · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Las rampas son propuestas razonadas para fases constructivas; no existe una solución única y completa del izado de todos los bloques aceptada arqueológicamente. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 19319; buscar «se cree que eran rampas». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-vercingetorix",
+      "name": "Vercingétorix",
+      "kind": "Persona",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Corrección: Vercingétorix permaneció en Alesia y mandó salir a su caballería antes del cierre de la línea romana. Se rindió al final del asedio; no salió él a pedir socorro.",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Vercingétorix · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Corrección: Vercingétorix permaneció en Alesia y mandó salir a su caballería antes del cierre de la línea romana. Se rindió al final del asedio; no salió él a pedir socorro. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 52013; buscar «vercingetorix se escapa». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-caballeria-alesia",
+      "name": "Caballería gala enviada desde Alesia",
+      "kind": "Acontecimiento",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "César, Bellum Gallicum VII.71, relata que la caballería salió de Alesia para movilizar socorros de las tribus; esa salida fue atribuida por error al propio Vercingétorix en F50.",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Caballería gala enviada desde Alesia · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "César, Bellum Gallicum VII.71, relata que la caballería salió de Alesia para movilizar socorros de las tribus; esa salida fue atribuida por error al propio Vercingétorix en F50. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 52039; buscar «va a pedir ayuda». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-doble-cerco-alesia",
+      "name": "Doble cerco romano de Alesia",
+      "kind": "Acontecimiento",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "La línea interior de fortificación contra los sitiados y la exterior contra el ejército de socorro sí están documentadas en la Guerra de las Galias, fuente redactada por César.",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Doble cerco romano de Alesia · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "La línea interior de fortificación contra los sitiados y la exterior contra el ejército de socorro sí están documentadas en la Guerra de las Galias, fuente redactada por César. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 52141; buscar «rodeamos dónde estamos nosotros con otra muralla». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-incitatus",
+      "name": "Incitatus, caballo de Calígula",
+      "kind": "Animal",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "La fuente oral dice senador, pero las fuentes antiguas hablan de promesa o intención de designar CÓNSUL a Incitatus. No hubo nombramiento efectivo demostrado ni de cónsul ni de senador.",
+      "source": "https://hpi.uq.edu.au/node/2286",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Incitatus, caballo de Calígula · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "La fuente oral dice senador, pero las fuentes antiguas hablan de promesa o intención de designar CÓNSUL a Incitatus. No hubo nombramiento efectivo demostrado ni de cónsul ni de senador. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 62885; buscar «hacer senador a su caballo». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-mito-caballo-senador",
+      "name": "Mito del caballo senador o cónsul",
+      "kind": "Mito",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Suetonio y Casio Dión conservan una supuesta intención de consulado. La tradición popular transforma una propuesta no ejecutada en nombramiento efectivo y confunde cargos.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/caligula-incitatus-and-the-consulship/749E6AD34DCB19004A041C227A661D64",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Mito del caballo senador o cónsul · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Suetonio y Casio Dión conservan una supuesta intención de consulado. La tradición popular transforma una propuesta no ejecutada en nombramiento efectivo y confunde cargos. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 62885; buscar «hacer senador a su caballo». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-gran-incendio-roma-64",
+      "name": "Gran incendio de Roma de 64",
+      "kind": "Acontecimiento",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Tácito XV.38–44 sitúa el inicio del incendio en ausencia de Nerón y relata auxilios y rumores de implicación. No está demostrado que Nerón lo ordenara; tampoco cabe absolverlo categóricamente.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Gran incendio de Roma de 64 · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Tácito XV.38–44 sitúa el inicio del incendio en ausencia de Nerón y relata auxilios y rumores de implicación. No está demostrado que Nerón lo ordenara; tampoco cabe absolverlo categóricamente. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 68173; buscar «enorme incendio en Roma». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-tacito",
+      "name": "Tácito",
+      "kind": "Persona",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Tácito escribió los Anales décadas después de los hechos. Es una referencia histórica externa del incendio y del rumor, no un testigo presencial de 64 ni una mención literal del pasaje F50.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Tácito · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Tácito escribió los Anales décadas después de los hechos. Es una referencia histórica externa del incendio y del rumor, no un testigo presencial de 64 ni una mención literal del pasaje F50. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 68197; buscar «él no estaba en Roma». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-bloqueo-charleston-1718",
+      "name": "Bloqueo de Charleston, mayo de 1718",
+      "kind": "Acontecimiento",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "La documentación oficial de Carolina del Norte registra el BLOQUEO NAVAL y rehenes para obtener medicinas; no una toma y saqueo por tierra de la ciudad.",
+      "source": "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Bloqueo de Charleston, mayo de 1718 · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "La documentación oficial de Carolina del Norte registra el BLOQUEO NAVAL y rehenes para obtener medicinas; no una toma y saqueo por tierra de la ciudad. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 185154; buscar «asaltó Charleston». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-medicinas-charleston",
+      "name": "Cofre de medicinas exigido en Charleston",
+      "kind": "Objeto",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Se exigieron suministros médicos a cambio de rehenes. El hallazgo de instrumental quirúrgico en el pecio no demuestra que una enfermedad particular motivara la exigencia.",
+      "source": "https://www.dncr.nc.gov/blog/2014/05/30/lab-conserving-treasures-recovered-blackbeards-queen-annes-revenge-shipwreck",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Cofre de medicinas exigido en Charleston · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Se exigieron suministros médicos a cambio de rehenes. El hallazgo de instrumental quirúrgico en el pecio no demuestra que una enfermedad particular motivara la exigencia. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 185220; buscar «saquear medicinas». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-queen-annes-revenge",
+      "name": "Queen Anne's Revenge",
+      "kind": "Objeto",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Buque insignia de Barbanegra, utilizado durante el bloqueo de 1718; su pecio se investiga en Beaufort Inlet. El nombre exacto del buque procede del contraste externo.",
+      "source": "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Queen Anne's Revenge · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Buque insignia de Barbanegra, utilizado durante el bloqueo de 1718; su pecio se investiga en Beaufort Inlet. El nombre exacto del buque procede del contraste externo. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 185154; buscar «asaltó Charleston». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-sifilis-barbanegra",
+      "name": "Atribución de sífilis a Barbanegra",
+      "kind": "Hipótesis",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "La presencia de una jeringuilla u otros útiles médicos no acredita un diagnóstico personal de Barbanegra. La atribución del episodio debe quedar como hipótesis no corroborada.",
+      "source": "https://www.dncr.nc.gov/blog/2014/05/30/lab-conserving-treasures-recovered-blackbeards-queen-annes-revenge-shipwreck",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Atribución de sífilis a Barbanegra · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "La presencia de una jeringuilla u otros útiles médicos no acredita un diagnóstico personal de Barbanegra. La atribución del episodio debe quedar como hipótesis no corroborada. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 185245; buscar «él tenía sifilis». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-pasar-por-quilla",
+      "name": "Pasar por la quilla",
+      "kind": "Procedimiento",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Castigo documentado históricamente que consistía en arrastrar a una persona bajo el casco. Es distinto de caminar por un tablón; no era costumbre universal entre piratas.",
+      "source": "https://www.usni.org/magazines/proceedings/1929/january/seagoing-customs",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Pasar por la quilla · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Castigo documentado históricamente que consistía en arrastrar a una persona bajo el casco. Es distinto de caminar por un tablón; no era costumbre universal entre piratas. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 186180; buscar «pasar por la quilla». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-caminar-tablon",
+      "name": "Caminar por el tablón",
+      "kind": "Mito",
+      "subtitle": "Contraste documental de F50; voces y minutajes sin verificar",
+      "note": "Iconografía literaria con evidencia muy limitada para la piratería de 1710–1720. No equivale a pasar por la quilla y no puede calificarse de práctica pirata habitual.",
+      "source": "https://www.history.com/articles/did-pirates-really-make-people-walk-the-plank",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Caminar por el tablón · contraste sin minutaje",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_de_pasaje_no_audio",
+          "text": "Iconografía literaria con evidencia muy limitada para la piratería de 1710–1720. No equivale a pasar por la quilla y no puede calificarse de práctica pirata habitual. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 186017; buscar «el tema de El tablón». La posición es del texto, no del vídeo. Los detalles y nombres obtenidos por contraste externo NO se atribuyen literalmente a los interlocutores; audio y voces sin cotejar."
         }
       ]
     }
@@ -1563,6 +1932,522 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
       "note": "El episodio sugiere que Barbanegra rechazó una patente de corso. Royal Museums Greenwich confirma el concepto jurídico, NO el ofrecimiento concreto.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f45-herodoto",
+      "a": "f50-episodio",
+      "b": "f45-herodoto",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-heit-el-ghurab",
+      "a": "f50-episodio",
+      "b": "f50-heit-el-ghurab",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-corvea-egipto",
+      "a": "f50-episodio",
+      "b": "f50-corvea-egipto",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-rampas-hipotesis",
+      "a": "f50-episodio",
+      "b": "f50-rampas-hipotesis",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-vercingetorix",
+      "a": "f50-episodio",
+      "b": "f50-vercingetorix",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-caballeria-alesia",
+      "a": "f50-episodio",
+      "b": "f50-caballeria-alesia",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-doble-cerco-alesia",
+      "a": "f50-episodio",
+      "b": "f50-doble-cerco-alesia",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-incitatus",
+      "a": "f50-episodio",
+      "b": "f50-incitatus",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-mito-caballo-senador",
+      "a": "f50-episodio",
+      "b": "f50-mito-caballo-senador",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-gran-incendio-roma-64",
+      "a": "f50-episodio",
+      "b": "f50-gran-incendio-roma-64",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-tacito",
+      "a": "f50-episodio",
+      "b": "f50-tacito",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-bloqueo-charleston-1718",
+      "a": "f50-episodio",
+      "b": "f50-bloqueo-charleston-1718",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-medicinas-charleston",
+      "a": "f50-episodio",
+      "b": "f50-medicinas-charleston",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-queen-annes-revenge",
+      "a": "f50-episodio",
+      "b": "f50-queen-annes-revenge",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-sifilis-barbanegra",
+      "a": "f50-episodio",
+      "b": "f50-sifilis-barbanegra",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-pasar-por-quilla",
+      "a": "f50-episodio",
+      "b": "f50-pasar-por-quilla",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-caminar-tablon",
+      "a": "f50-episodio",
+      "b": "f50-caminar-tablon",
+      "type": "Mención o contraste del pasaje",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-herodoto-piramides",
+      "a": "f45-herodoto",
+      "b": "f50-pir-egipto",
+      "type": "Testimonio antiguo tardío",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/2b%2A.html",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "testimonio_antiguo_sin_prueba_censo",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-heit-piramides",
+      "a": "f50-heit-el-ghurab",
+      "b": "f50-pir-egipto",
+      "type": "Arqueología de trabajadores",
+      "source": "https://aeraweb.org/projects/lost-city/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-heit-corvea",
+      "a": "f50-heit-el-ghurab",
+      "b": "f50-corvea-egipto",
+      "type": "Contexto de organización del trabajo",
+      "source": "https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "arqueologia_no_excluye_coercion",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-corvea-herodoto",
+      "a": "f50-corvea-egipto",
+      "b": "f45-herodoto",
+      "type": "Trabajo obligatorio en relato griego",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/2b%2A.html",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "testimonio_antiguo_sin_clasificacion_juridica",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-rampas-piramides",
+      "a": "f50-rampas-hipotesis",
+      "b": "f50-pir-egipto",
+      "type": "Modelo constructivo propuesto",
+      "source": "https://aeraweb.org/projects/lost-city/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hipotesis_no_exclusiva",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-cesar-vercingetorix",
+      "a": "f50-julio-cesar",
+      "b": "f50-vercingetorix",
+      "type": "Enfrentamiento de 52 a. C.",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-vercingetorix-alesia",
+      "a": "f50-vercingetorix",
+      "b": "f50-alesia",
+      "type": "Sitio y rendición",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-vercingetorix-caballeria",
+      "a": "f50-vercingetorix",
+      "b": "f50-caballeria-alesia",
+      "type": "Envió socorros: no escapó",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-caballeria-cerco",
+      "a": "f50-caballeria-alesia",
+      "b": "f50-doble-cerco-alesia",
+      "type": "Solicitud de refuerzos y contra-asedio",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-doble-cerco-alesia",
+      "a": "f50-doble-cerco-alesia",
+      "b": "f50-alesia",
+      "type": "Fortificaciones romanas",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-incitatus-caligula",
+      "a": "f50-incitatus",
+      "b": "f50-caligula",
+      "type": "Animal favorito en relatos posteriores",
+      "source": "https://hpi.uq.edu.au/node/2286",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-incitatus-mito",
+      "a": "f50-incitatus",
+      "b": "f50-mito-caballo-senador",
+      "type": "No hay nombramiento real demostrado",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/caligula-incitatus-and-the-consulship/749E6AD34DCB19004A041C227A661D64",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "mito_de_nomramiento_no_acreditado",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-neron-incendio",
+      "a": "f50-neron",
+      "b": "f50-gran-incendio-roma-64",
+      "type": "Emperador en el año del incendio",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "responsabilidad_causal_incierta",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-tacito-incendio",
+      "a": "f50-tacito",
+      "b": "f50-gran-incendio-roma-64",
+      "type": "Testimonio historiográfico posterior",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "testimonio_literario_tardio",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-roma-incendio",
+      "a": "f50-imperio-romano",
+      "b": "f50-gran-incendio-roma-64",
+      "type": "Acontecimiento histórico datado",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-barbanegra-charleston",
+      "a": "f50-barbanegra",
+      "b": "f50-bloqueo-charleston-1718",
+      "type": "Bloqueo con rehenes",
+      "source": "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-charleston-queens",
+      "a": "f50-bloqueo-charleston-1718",
+      "b": "f50-queen-annes-revenge",
+      "type": "Buque del bloqueo",
+      "source": "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-barbanegra-queens",
+      "a": "f50-barbanegra",
+      "b": "f50-queen-annes-revenge",
+      "type": "Nave insignia",
+      "source": "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-charleston-medicinas",
+      "a": "f50-bloqueo-charleston-1718",
+      "b": "f50-medicinas-charleston",
+      "type": "Exigencia de rescate médico",
+      "source": "https://www.dncr.nc.gov/blog/2026/04/15/queen-annes-revenge-c-86",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-medicinas-pecio",
+      "a": "f50-medicinas-charleston",
+      "b": "f50-queen-annes-revenge",
+      "type": "Material médico compatible, origen incierto",
+      "source": "https://www.dncr.nc.gov/blog/2014/05/30/lab-conserving-treasures-recovered-blackbeards-queen-annes-revenge-shipwreck",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "evidencia_material_sin_procedencia_individual",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-medicinas-sifilis",
+      "a": "f50-medicinas-charleston",
+      "b": "f50-sifilis-barbanegra",
+      "type": "Inferencia de diagnóstico no válida",
+      "source": "https://www.dncr.nc.gov/blog/2014/05/30/lab-conserving-treasures-recovered-blackbeards-queen-annes-revenge-shipwreck",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "diagnostico_retrospectivo_no_comprobado",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-barbanegra-sifilis",
+      "a": "f50-barbanegra",
+      "b": "f50-sifilis-barbanegra",
+      "type": "Alegación clínica del podcast",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "alegacion_no_corroborada",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-quilla-tablon",
+      "a": "f50-pasar-por-quilla",
+      "b": "f50-caminar-tablon",
+      "type": "Dos castigos distintos",
+      "source": "https://www.history.com/articles/did-pirates-really-make-people-walk-the-plank",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "correccion_de_confusion_historiografica",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-quilla-piratas",
+      "a": "f50-pasar-por-quilla",
+      "b": "f50-pirateria",
+      "type": "Castigo naval, no práctica general demostrada",
+      "source": "https://www.usni.org/magazines/proceedings/1929/january/seagoing-customs",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "contexto_historico_no_universal",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-tablon-piratas",
+      "a": "f50-caminar-tablon",
+      "b": "f50-pirateria",
+      "type": "Mito literario",
+      "source": "https://www.history.com/articles/did-pirates-really-make-people-walk-the-plank",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "imagen_popular_sin_generalizacion_historica",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev3-tablon-isla",
+      "a": "f50-caminar-tablon",
+      "b": "f50-pirateria-ficcion",
+      "type": "Motivo de ficción",
+      "source": "https://www.history.com/articles/did-pirates-really-make-people-walk-the-plank",
+      "note": "Vínculo diferenciado entre pasaje del episodio, fuente histórica y grado de certeza; no supone causalidad ni prueba donde la calificación expresa una hipótesis.",
+      "claimStatus": "recurso_literario_no_hecho_general",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
       "podcastNotes": []
     }
   ]
