@@ -5514,7 +5514,7 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-16"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -5522,13 +5522,48 @@
           "readyForDeepReview": false,
           "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
           "audioVerified": false,
-          "nextAction": "Recuperar el PDF original o verificar edición y acceso legítimo completo del candidato homónimo."
+          "nextAction": "Aportar el PDF original exacto, cotejar edición e integridad y revisar Filebo, Timeo y Critias por páginas; contrastar después la traducción con los pasajes Stephanus ya señalados. No atribuir al original ninguna lectura externa."
         },
         "supplementalResearch": {
           "candidateUrl": "https://www.scribd.com/document/642881280/Platon-Dialogos-6-Filebo-Timeo-Critias-pdf",
           "identityWithOriginalConfirmed": false,
           "fullTextRead": false,
-          "scope": "Nombre de archivo coincidente; acceso íntegro y edición no verificados. Timeo y Critias consultados en traducción alternativa de Jowett, no en el PDF original."
+          "scope": "Capa suplementaria procedente de otras traducciones y estudios, no lectura ni verificación de los bytes del PDF F48 original. El original está ausente en la carpeta de Drive, y no ha sido recuperado de archivos. El porcentaje F48 sigue al 0 %. No se añaden fechas de Atlántida a la cronología.",
+          "fullOriginalPdfAvailable": false,
+          "editionCandidate": {
+            "publisher": "Gredos",
+            "series": "Biblioteca Clásica Gredos",
+            "seriesNumber": 160,
+            "year": 1992,
+            "translators": "M.ª Ángeles Durán / Francisco Lisi",
+            "publisherURL": "https://www.rbalibros.com/gredos/38-dialogos-vi-filebo-timeo-critias_5624",
+            "editionMatchesOriginal": false
+          },
+          "alternativeTexts": [
+            {
+              "work": "Filebo",
+              "sections": "11b-c, 61b-c",
+              "url": "https://adfonteslibrary.org/work-plato-philebus",
+              "translation": "W. R. M. Lamb"
+            },
+            {
+              "work": "Timeo",
+              "sections": "20d-27b",
+              "url": "https://classics.mit.edu/Plato/timaeus.html",
+              "translation": "Benjamin Jowett"
+            },
+            {
+              "work": "Critias",
+              "sections": "108e-121c",
+              "url": "https://classics.mit.edu/Plato/critias.html",
+              "translation": "Benjamin Jowett"
+            }
+          ],
+          "module": "la-telarana/fuente-48-contexto-externo.js",
+          "sourceLayer": "extra:f48-external",
+          "externalContextEntities": 24,
+          "externalContextRelations": 30,
+          "lastExternalCheck": "2026-11-16"
         }
       },
       {
