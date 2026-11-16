@@ -2,13 +2,16 @@
 """Controles del preflight sin acceso a PNG ni credenciales privadas."""
 import hashlib
 import json
+import struct
 import tempfile
 import unittest
+import zipfile
+import zlib
 from pathlib import Path
 
 from notebooklm_revisar_lote5 import (
     CANDIDATES, CATALOG, PUBLIC_INDEX, PNG_SIGNATURE,
-    inspect_item, render_report, validate_manifest,
+    inspect_item, render_report, validate_manifest, export_review_zip,
 )
 
 
@@ -68,6 +71,50 @@ class Lote5Tests(unittest.TestCase):
             repeated = inspect_item(data, state, catalog, public, pending)
             self.assertTrue(repeated["published"])
             self.assertFalse(repeated["technical_ok"])
+
+
+    def test_zip_export_strips_ancillary_png_metadata_and_never_grants_approval(self):
+        def chunk(kind, data):
+            return (struct.pack(">I", len(data)) + kind + data +
+                    struct.pack(">I", zlib.crc32(kind + data) & 0xffffffff))
+        ihdr = struct.pack(">2I5B", 640, 350, 8, 2, 0, 0, 0)
+        pixels = (b"\x00" + (b"\xff\xff\xff" * 640)) * 350
+        png = (PNG_SIGNATURE + chunk(b"IHDR", ihdr) +
+               chunk(b"tEXt", b"Author\x00SECRET-PRIVATE-METADATA") +
+               chunk(b"IDAT", zlib.compress(pixels)) + chunk(b"IEND", b""))
+        with tempfile.TemporaryDirectory() as folder:
+            from unittest.mock import patch
+            pending = Path(folder) / "Pendientes"
+            pending.mkdir()
+            source = pending / "issue-43.png"
+            source.write_bytes(png)
+            destination = Path(folder) / "review.zip"
+            items = [{"issue": 43, "chapter": 64, "video_id": "0kIC9eByrOs",
+                      "sha256": hashlib.sha256(png).hexdigest()}]
+            rows = [{"issue": 43, "path": str(source), "technical_ok": True, "published": False}]
+            with patch("notebooklm_revisar_lote5.PENDING", pending):
+                result = export_review_zip(rows, items, destination)
+            self.assertEqual(result["images"], 1)
+            with zipfile.ZipFile(destination) as archive:
+                self.assertEqual(set(archive.namelist()), {"issue-43.png", "manifest.json"})
+                exported = archive.read("issue-43.png")
+                self.assertNotIn(b"SECRET-PRIVATE-METADATA", exported)
+                self.assertNotIn(b"tEXt", exported)
+                record = json.loads(archive.read("manifest.json"))["items"][0]
+                self.assertEqual(record["original_sha256"], hashlib.sha256(png).hexdigest())
+                self.assertEqual(record["export_sha256"], hashlib.sha256(exported).hexdigest())
+                self.assertFalse(record["editorial_approval"])
+                self.assertNotIn(str(pending), archive.read("manifest.json").decode())
+
+    def test_zip_export_fails_closed_if_any_row_unverified(self):
+        with tempfile.TemporaryDirectory() as folder:
+            destination = Path(folder) / "review.zip"
+            with self.assertRaises(ValueError):
+                export_review_zip(
+                    [{"issue": 43, "technical_ok": False, "published": False}],
+                    [{"issue": 43}], destination,
+                )
+            self.assertFalse(destination.exists())
 
     def test_manifest_rejects_duplicate_and_bogus_hash(self):
         data = json.loads(CANDIDATES.read_text(encoding="utf-8"))
