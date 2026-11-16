@@ -61,6 +61,8 @@ jobs:
         run: node scripts/test_telarana_dark_header.mjs
       - name: Validar biografías independientes y testimonios
         run: node scripts/test_telarana_person_bios.mjs
+      - name: Validar procedencia ASR, minutajes y biografías fusionadas
+        run: node scripts/test_telarana_provenance_merge.mjs
       - name: Evitar enlaces a documentos privados en La Telaraña
         run: node scripts/test_telarana_public_privacy.mjs
       - name: Validar integración documental entre La Telaraña y Línea de la Historia
