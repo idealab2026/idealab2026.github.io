@@ -35,7 +35,7 @@ for(const id of ['study-f32-nato-concepto-lisboa-2010','study-f32-onu-agenda-203
 }
 for(const id of ['f32-william-burns','f32-sergei-naryshkin','f32-ankara-2022-espias'])assert(ids.has(id),'Falta evidencia de Ankara '+id);
 assert(f.edges.some(e=>e.id==='f32-burns-naryshkin-encuentro'&&e.confidence==='documentado'));
-assert(f.nodes.find(n=>n.id==='f32-ankara-2022-espias').note.includes('no eran negociaciones')===false || f.nodes.find(n=>n.id==='f32-ankara-2022-espias').note.includes('negociación'));
+assert(f.nodes.find(n=>n.id==='f32-ankara-2022-espias').note.includes('negociación sobre el arreglo de la guerra'),'No convertir el encuentro de inteligencia en acuerdo secreto');
 assert(!f.edges.some(e=>e.a==='f30-russia'&&e.b==='f32-ankara-2022-espias'),'El encuentro de servicios no atribuye otros hechos al Estado ruso');
 assert(read('la-telarana/index.html').includes('fuente-32-revision-inicial.js'));
 assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-32-revision-inicial.js'));
