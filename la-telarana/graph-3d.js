@@ -378,13 +378,16 @@ function make(options){
   topics:topics.map(t=>({id:t[0],label:t[1]})),
   setData(a,b){
    nodes=a;edges=b;index.clear();for(const n of a)index.set(n.id,n);
-   // No conservar el hover, el tooltip ni la zona de clic de un nodo filtrado.
-   // La actualización del lienzo llega en el fotograma siguiente.
-   var cleared=false;
-   if(hover&&!index.has(hover)){hover=null;cleared=true}
-   if(hoverEdge&&!edges.some(e=>e.id===hoverEdge)){hoverEdge=null;cleared=true}
-   if(cleared){hint.hidden=true;hint.textContent="";hits=[];edgeHits=[];bandHits=[]}
-   if(this.sig!==a.map(n=>n.id).join("|")+"#"+b.length){this.sig=a.map(n=>n.id).join("|")+"#"+b.length;arrange()}
+   // Al cambiar el subgrafo, limpiar etiquetas y zonas de clic del estado previo.
+   // Sin esto, un tooltip de una Publicación filtrada puede permanecer en pantalla.
+   const signature=a.map(n=>n.id).join("|")+"#"+b.length;
+   if(this.sig!==signature){
+    this.sig=signature;hover=null;hoverEdge=null;hint.hidden=true;hint.textContent="";
+    hits=[];edgeHits=[];bandHits=[];arrange()
+   }else{
+    if(hover&&!index.has(hover)){hover=null;hint.hidden=true}
+    if(hoverEdge&&!edges.some(e=>e.id===hoverEdge)){hoverEdge=null;hint.hidden=true}
+   }
    redraw();startMotion()
   },
   setSelection(s){selection=s;redraw()},setQuery(s){search=s||"";redraw()},setEdgeMode(s){mode=s;redraw()},
