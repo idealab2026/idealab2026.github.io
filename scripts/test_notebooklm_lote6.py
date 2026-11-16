@@ -80,7 +80,8 @@ class Lote6Tests(unittest.TestCase):
                 archive.writestr("subfolder/issue-42.png", raw)
                 archive.writestr("subfolder/issue-999.png", b"unrelated")
             row = {"issue": 42, "filename": "issue-42.png", "sha256": digest(raw),
-                   "book": "conde-montecristo", "video_id": "ZIbj-2JLd9w", "chapter": 63}
+                   "book": "conde-montecristo", "video_id": "ZIbj-2JLd9w", "chapter": 63,
+                   "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_63"}
             with zipfile.ZipFile(previous_zip) as archive:
                 read = read_original(row, folder, archive)
             self.assertEqual(read, raw)
