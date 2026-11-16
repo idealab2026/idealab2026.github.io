@@ -1324,7 +1324,7 @@ function showPersonBiography(panel,node){
   if(curated.also)citation(curated.also,"Contraste adicional");
   panel.append(section);return;
  }
- var independent=sanitizeIndependentBiography(node.verifiedBiography);
+ var independent=typeof sanitizeIndependentBiography==="function"?sanitizeIndependentBiography(node.verifiedBiography):null;
  if(independent){
   context.textContent=independent.text;
   citation(independent.source,independent.sourceTitle);
