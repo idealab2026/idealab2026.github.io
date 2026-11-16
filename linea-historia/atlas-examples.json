@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "Atlas inicial de cartografía pública, independiente de las imágenes originales de HISTORIA.xlsx. Cada imagen representa una fecha concreta, no fronteras animadas ni el territorio exacto de todos los años de su ventana.",
+  "description": "Atlas inicial de cartografía pública, independiente de las imágenes originales de HISTORIA.xlsx. Cada imagen representa una fecha concreta, no fronteras animadas ni el territorio exacto de todos los años de su ventana. Ampliación curatorial: cinco mapas alternativos con licencias verificadas y referencia a las respectivas celdas del Excel. Las reproducciones originales permanecen privadas.",
   "items": [
     {
       "id": "commons-rome-117",
@@ -18,7 +18,9 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:RomanEmpire_117_es.svg",
       "credit": "ArdadN; versión española Nachosan · dominio público · Wikimedia Commons",
       "provenance": "commons",
-      "note": "Mapa de referencia para 117 d. C.; no corresponde exactamente a otros años."
+      "note": "Mapa de referencia para 117 d. C.; no corresponde exactamente a otros años. Imagen alternativa con derechos verificados; no idéntica a la copia del Excel.",
+      "license": "Dominio público",
+      "excelReference": "image5.png · LI67"
     },
     {
       "id": "commons-europe-1200",
@@ -93,6 +95,114 @@
       "credit": "Andrew0921 · CC BY-SA 3.0 · Wikimedia Commons",
       "provenance": "commons",
       "note": "Representación del Imperio británico en 1914, antes de la Primera Guerra Mundial."
+    },
+    {
+      "id": "commons-roman-republic-44",
+      "title": "República romana · territorios en 44 a. C.",
+      "asOf": -44,
+      "start": -80,
+      "end": -20,
+      "kind": "Mapa histórico",
+      "hints": [
+        "republica romana",
+        "julio cesar",
+        "roma"
+      ],
+      "eventIds": [],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_republic%2C_territory_44_BC.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roman_republic,_territory_44_BC.svg",
+      "credit": "Ifly6 · Wikimedia Commons · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "provenance": "commons",
+      "excelReference": "image3.png · KF71",
+      "note": "Alternativa libre relacionada con el mapa original de HISTORIA.xlsx (no es la misma imagen). Representa los territorios romanos hacia 44 a. C."
+    },
+    {
+      "id": "commons-peloponnesian-431",
+      "title": "Guerra del Peloponeso · alianzas en 431 a. C.",
+      "asOf": -431,
+      "start": -455,
+      "end": -400,
+      "kind": "Mapa histórico",
+      "hints": [
+        "guerra del peloponeso",
+        "atenas",
+        "esparta"
+      ],
+      "eventIds": [],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Peloponnesian_War_431_BC-es.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_Peloponnesian_War_431_BC-es.svg",
+      "credit": "Marsyas y Molorco · Wikimedia Commons · CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "provenance": "commons",
+      "excelReference": "image4.jpg · JC57",
+      "note": "Alternativa libre al mapa histórico encontrado en la celda JC57. El mapa corresponde a la situación inicial en 431 a. C."
+    },
+    {
+      "id": "commons-alexander-323",
+      "title": "Imperio de Alejandro Magno · c. 323 a. C.",
+      "asOf": -323,
+      "start": -340,
+      "end": -300,
+      "kind": "Mapa histórico",
+      "hints": [
+        "alejandro magno",
+        "imperio macedonico",
+        "imperio de alejandro"
+      ],
+      "eventIds": [],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Map-alexander-empire.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map-alexander-empire.png",
+      "credit": "George Willis Botsford (1913) · Wikimedia Commons · dominio público",
+      "license": "Dominio público",
+      "provenance": "commons",
+      "excelReference": "image28.png · JK58",
+      "note": "Mapa de una publicación histórica de 1913 en dominio público, relacionado con la imagen de la celda JK58; no es copia de ella."
+    },
+    {
+      "id": "commons-punic-218",
+      "title": "Roma y Cartago · comienzo de la segunda guerra púnica",
+      "asOf": -218,
+      "start": -235,
+      "end": -200,
+      "kind": "Mapa histórico",
+      "hints": [
+        "segunda guerra punica",
+        "anibal",
+        "cartago"
+      ],
+      "eventIds": [],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_Rome_and_Carthage_at_the_start_of_the_Second_Punic_War-es.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Rome_and_Carthage_at_the_start_of_the_Second_Punic_War-es.svg",
+      "credit": "Grandiose y Rowanwindwhistler, basado en W. R. Shepherd · Wikimedia Commons · CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "provenance": "commons",
+      "excelReference": "image30.png · JT57",
+      "note": "Alternativa libre y en castellano para el teatro de operaciones de 218 a. C.; no reproduce la captura original de HISTORIA.xlsx."
+    },
+    {
+      "id": "commons-roman-69",
+      "title": "Imperio romano · año de los cuatro emperadores",
+      "asOf": 69,
+      "start": 64,
+      "end": 73,
+      "kind": "Mapa histórico",
+      "hints": [
+        "imperio romano",
+        "cuatro emperadores",
+        "galba",
+        "oton",
+        "vitelio",
+        "vespasiano"
+      ],
+      "eventIds": [],
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Empire_69-es.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roman_Empire_69-es.svg",
+      "credit": "Steerpike, ArdadN y colaboradores · Wikimedia Commons · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "provenance": "commons",
+      "excelReference": "image68.png · LH98",
+      "note": "Versión cartográfica libre del año 69, vinculada a la imagen original en LH98. La exactitud de algunos límites está discutida en Wikimedia Commons."
     }
   ]
 }
