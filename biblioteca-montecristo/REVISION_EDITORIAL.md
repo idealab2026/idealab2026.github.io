@@ -1,6 +1,6 @@
 # Revisión editorial · Biblioteca IDEA LAB
 
-> **Situación al 16/11/2026:** **99 PNG recibidos**, **9 publicados en GitHub Pages** y **90 originales todavía no publicados**. Hay **5 originales adicionales aprobados para el lote 4**, pero **aún no están subidos ni desplegados**: [#40, #41, #73, #74 y #77](./APROBADAS_PARA_PR_LOTE4_2026-11-16.json). Véase el [cotejo del lote 4](./CONTRASTE_PUBLICACION_LOTE4_2026-11-16.md) y el [registro operativo #243](https://github.com/idealab2026/idealab2026.github.io/issues/243).
+> **Situación actualizada al 16/11/2026:** **99 PNG originales recibidos**, **14 publicados** y **85 todavía sin publicar**. Los cinco del lote 4 —[#40, #41, #73, #74 y #77](./APROBADAS_PARA_PR_LOTE4_2026-11-16.json)— se integraron mediante la [PR #360](https://github.com/idealab2026/idealab2026.github.io/pull/360); el [despliegue de Pages concluyó correctamente](https://github.com/idealab2026/idealab2026.github.io/actions/runs/43877957507). Véase el [cotejo editorial del lote 4](./CONTRASTE_PUBLICACION_LOTE4_2026-11-16.md) y el [registro operativo #243](https://github.com/idealab2026/idealab2026.github.io/issues/243). El número de imágenes públicas se deriva del manifiesto `infografias/index.json`, no del triaje histórico.
 
 > Las tablas históricas siguientes describen los controles preliminares de los **69 + 30 originales antes de las publicaciones**; sus cifras por estado no equivalen a contadores actuales de aprobadas/publicadas. Los dos primeros lotes publicados y los siguientes tienen documentos de aprobación separados.
 
@@ -200,4 +200,4 @@ Detalle de cada incidencia, motivo y SHA-256: [REVISION_LOTE_30_2026-11-15.md](.
 
 **Estado en el cierre de la auditoría del 15/11:** ninguna imagen estaba publicada. El 16/11 se publicaron #86 y #88; el resto requiere revisión o corrección.
 
-**Siguiente paso:** reparar los errores y contrastar primero las 10 candidatas sin defectos evidentes del lote nuevo (#43, #44, #46, #50, #86, #87, #89, #90, #91, #92); se revisarán también las 52 anteriores en idénticas condiciones. No subir en bloque todas las infografías generadas.
+**Siguiente paso:** cotejar prioritariamente las **8 candidatas del lote nuevo aún no publicadas** que no mostraban fallos evidentes en el triaje (#43, #44, #46, #50, #87, #89, #90 y #92), siempre sobre los PNG originales y el texto/fuente de cada capítulo. Las candidatas #86 y #91 ya están publicadas; #88 también está publicada, aunque tenía ajustes opcionales. Revisar el resto de originales con iguales garantías. **No equivalen a aprobaciones automáticas** y no deben importarse indiscriminadamente.
