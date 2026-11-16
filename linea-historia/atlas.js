@@ -18,12 +18,17 @@ function safeItem(raw){
  if(!raw||typeof raw.id!=="string"||typeof raw.title!=="string"||!raw.id)return null;
  var src=safeUrl(raw.src,true),dated=raw.asOf!==null&&raw.asOf!==undefined&&raw.asOf!==""&&Number.isFinite(Number(raw.asOf));
  var asOf=dated?Number(raw.asOf):null,start=dated?Number(raw.start):null,end=dated?Number(raw.end):null;
+ var placementYear=raw.placementYear!==null&&raw.placementYear!==undefined&&Number.isFinite(Number(raw.placementYear))?
+  Number(raw.placementYear):null;
+ var radius=placementYear===null?0:placementYear<-100000?250000:placementYear<-5000?1300:
+   placementYear<-1000?500:placementYear<0?180:placementYear<=1500?130:
+   placementYear<=1800?85:placementYear<=1950?50:25;
  if(!src)return null;
  if(dated){if(raw.start===null||!Number.isFinite(start))start=asOf;if(raw.end===null||!Number.isFinite(end))end=asOf;if(start>end)return null;}
  return{ id:raw.id,title:raw.title.slice(0,180),src:src,
   sourceUrl:safeUrl(raw.sourceUrl,false),credit:String(raw.credit||"Fuente no verificada").slice(0,220),
   note:String(raw.note||"").slice(0,400),kind:String(raw.kind||"Imagen histórica").slice(0,80),
-  start:start,end:end,asOf:asOf,anchor:String(raw.anchor||"").slice(0,18),sheet:String(raw.sheet||"").slice(0,60),hints:Array.isArray(raw.hints)?raw.hints.filter(function(x){return typeof x==="string"}).slice(0,15):[],
+  start:start,end:end,asOf:asOf,placementYear:placementYear,placementFrom:placementYear===null?null:placementYear-radius,placementTo:placementYear===null?null:placementYear+radius,anchor:String(raw.anchor||"").slice(0,18),sheet:String(raw.sheet||"").slice(0,60),hints:Array.isArray(raw.hints)?raw.hints.filter(function(x){return typeof x==="string"}).slice(0,15):[],
   eventIds:Array.isArray(raw.eventIds)?raw.eventIds.filter(function(x){return typeof x==="string"}):[],
   provenance:String(raw.provenance||"archivo").slice(0,70),needsReview:!!raw.needsReview };
 }
@@ -36,13 +41,27 @@ function related(item,d){
  var name=norm(d.t);
  return item.hints.some(function(h){return h.length>=4&&name.includes(norm(h))});
 }
+function mapYear(m){return m.asOf!==null?m.asOf:m.placementYear}
+function mapYearLabel(m){
+ if(!m)return"";
+ return m.asOf!==null?api.yearText(m.asOf):
+  m.placementYear!==null?"hacia "+api.yearText(m.placementYear)+" (posición en Excel)":"sin año asignado";
+}
 function candidates(){
  var current=state.year,focus=state.pinned?focusedRecord():null;
- var byYear=state.items.filter(function(m){return m.asOf!==null&&current>=m.start&&current<=m.end});
- if(!focus)return byYear.sort(function(a,b){return Math.abs(current-a.asOf)-Math.abs(current-b.asOf)});
- var exact=state.items.filter(function(m){return m.asOf!==null&&related(m,focus)});
- if(exact.length)return exact.sort(function(a,b){return a.asOf-b.asOf});
- return byYear.sort(function(a,b){return Math.abs(current-a.asOf)-Math.abs(current-b.asOf)});
+ var byYear=state.items.filter(function(m){
+  return (m.asOf!==null&&current>=m.start&&current<=m.end)||
+    (m.placementYear!==null&&current>=m.placementFrom&&current<=m.placementTo);
+ });
+ function sort(a,b){
+  var pa=a.provenance==="HISTORIA.xlsx"?1:0,pb=b.provenance==="HISTORIA.xlsx"?1:0;
+  if(pa!==pb)return pb-pa;
+  return Math.abs(current-mapYear(a))-Math.abs(current-mapYear(b));
+ }
+ if(!focus)return byYear.sort(sort);
+ var exact=state.items.filter(function(m){return mapYear(m)!==null&&related(m,focus)});
+ if(exact.length)return exact.sort(sort);
+ return byYear.sort(sort);
 }
 function chosenItem(items){
  if(!items.length)return null;
@@ -61,7 +80,7 @@ function setImage(img,empty,map){
   img.onerror=function(){img.hidden=true;empty.hidden=false;empty.textContent="No se ha podido cargar la imagen externa. Abre la fuente para consultarla."};
   if(src)img.src=src;else img.removeAttribute("src");
  }
- if(src){img.alt=map.title+" · representación de "+(map.asOf===null?"fecha aún no determinada":api.yearText(map.asOf));empty.hidden=!img.hidden;}
+ if(src){img.alt=map.title+" · "+mapYearLabel(map);empty.hidden=!img.hidden;}
  else{img.hidden=true;empty.hidden=false;empty.textContent=state.loaded?
   "Aún no hay un mapa catalogado para este año. Usa el deslizador o las flechas para localizar imágenes históricas.":"Cargando catálogo del atlas…"}
 }
@@ -71,7 +90,7 @@ function fillSelect(select,items){
  select.dataset.optionsSig=sig;
  select.replaceChildren();
  if(!items.length){var o=node("option","No hay mapas en esta fecha");o.value="";select.append(o)}
- else items.forEach(function(m){var o=node("option",m.title+" · "+api.yearText(m.asOf));o.value=m.id;select.append(o)});
+ else items.forEach(function(m){var o=node("option",m.title+" · "+mapYearLabel(m));o.value=m.id;select.append(o)});
  select.disabled=!items.length;
  select.value=state.chosen||items[0]&&items[0].id||"";
 }
@@ -84,7 +103,7 @@ function setYear(raw,fromTimeline){
 }
 function selectMap(id){state.chosen=id;requestUpdate()}
 function goToSnapshot(step){
- var snapshots=state.items.map(function(m){return m.asOf}).filter(function(y){return y!==null&&Number.isFinite(y)}).sort(function(a,b){return a-b});
+ var snapshots=Array.from(new Set(state.items.map(mapYear).filter(function(y){return y!==null&&Number.isFinite(y)}))).sort(function(a,b){return a-b});
  var target=step<0?snapshots.filter(function(y){return y<state.year}).pop():snapshots.find(function(y){return y>state.year});
  if(target!==undefined)setYear(target,false);
 }
@@ -262,7 +281,7 @@ function render(){
  $("atlas-side-release").hidden=!state.pinned;
  $("atlas-release").hidden=!state.pinned;
  $("atlas-side-title").textContent=map?map.title:"Sin mapa en este año";
- $("atlas-side-meta").textContent=map?"Imagen de "+api.yearText(map.asOf)+" · "+map.kind+(map.needsReview?" · VÍNCULO PROVISIONAL":""):"";
+ $("atlas-side-meta").textContent=map?(map.asOf===null?"Ubicación en el Excel: ":"Imagen de ")+mapYearLabel(map)+" · "+map.kind:"";
  $("atlas-side-note").textContent=map?(map.note||"La fecha del mapa puede diferir del año seleccionado."):"";
  setImage($("atlas-side-img"),$("atlas-side-empty"),map);
  setImage($("atlas-large-img"),$("atlas-large-empty"),map);
@@ -271,18 +290,18 @@ function render(){
  sourceLink($("atlas-side-source"),map);
  sourceLink($("atlas-large-source"),map);
  $("atlas-large-title").textContent=map?map.title:"Sin mapa catalogado para "+api.yearText(state.year);
- $("atlas-large-meta").textContent=map?"Representa "+api.yearText(map.asOf)+" · "+map.kind+(map.needsReview?" · Asociación provisional":""):"";
- $("atlas-large-note").textContent=map?(map.note||"La lámina es una instantánea documental, no un mapa reconstruido año a año."):"Prueba otra fecha o incorpora imágenes del Excel original mediante el importador incluido en el repositorio.";
+ $("atlas-large-meta").textContent=map?(map.asOf===null?"Situada en el montaje hacia ":"Representa ")+mapYearLabel(map)+" · "+map.kind:"";
+ $("atlas-large-note").textContent=map?(map.asOf===null?"El año es la posición aproximada de la imagen en HISTORIA.xlsx, no una fecha certificada del mapa. "+(map.note||""):(map.note||"La lámina es una instantánea documental, no un mapa reconstruido año a año.")):"Prueba otro año o consulta las 81 imágenes en la galería inferior.";
  $("atlas-large-credit").textContent=map?map.credit:"";
  $("atlas-range").value=String(Math.round(api.ratioForYear(state.year)*10000));
  $("atlas-number").value=String(state.year);
- $("atlas-side-prev").disabled=$("atlas-prev").disabled=!state.items.some(function(m){return m.asOf!==null&&m.asOf<state.year});
- $("atlas-side-next").disabled=$("atlas-next").disabled=!state.items.some(function(m){return m.asOf!==null&&m.asOf>state.year});
+ $("atlas-side-prev").disabled=$("atlas-prev").disabled=!state.items.some(function(m){return mapYear(m)!==null&&mapYear(m)<state.year});
+ $("atlas-side-next").disabled=$("atlas-next").disabled=!state.items.some(function(m){return mapYear(m)!==null&&mapYear(m)>state.year});
  var gallery=$("atlas-gallery");gallery.replaceChildren();
  items.slice(0,20).forEach(function(m){
   var b=node("button",null);b.type="button";b.setAttribute("aria-pressed",map&&map.id===m.id?"true":"false");
   var img=node("img");img.src=m.src;img.alt="";img.loading="lazy";
-  b.append(img,node("span",m.title+" · "+api.yearText(m.asOf)));
+  b.append(img,node("span",m.title+" · "+mapYearLabel(m)));
   b.addEventListener("click",function(){selectMap(m.id)});gallery.append(b);
  });
  if(api.getView()==="atlas"){drawRecords();drawAtlasDiagrams();drawArchive();drawInventory();}
@@ -294,7 +313,7 @@ function requestUpdate(){
  requestAnimationFrame(function(){scheduled=false;render()});
 }
 async function loadCatalogs(){
- var paths=["./atlas-examples.json","./atlas-imported.json","./atlas-inventory.json","./atlas-context.json"],documents=await Promise.all(paths.map(function(p){
+ var paths=["./atlas-examples.json","./atlas-imported.json","./atlas-inventory.json","./atlas-context.json","./atlas-placement.json"],documents=await Promise.all(paths.map(function(p){
   return fetch(p,{cache:"no-cache"}).then(function(r){if(!r.ok)throw Error(p);return r.json()}).catch(function(){return{items:[]}})
  }));
  var seen=new Set();
@@ -306,7 +325,18 @@ async function loadCatalogs(){
  }):[];
  var typeSelect=$("atlas-inventory-type");
  Array.from(new Set(state.inventory.map(function(i){return i.category}))).sort().forEach(function(category){var o=node("option",category);o.value=category;typeSelect.append(o)});
- state.items=[documents[1],documents[0]].flatMap(function(doc){return Array.isArray(doc.items)?doc.items:[]}).map(safeItem).filter(function(item){
+ var placements=new Map((documents[4].records||[]).map(function(p){return[p.anchor,p]}));
+ var names=new Map(state.inventory.map(function(p){return[p.anchor,p]}));
+ state.items=[documents[1],documents[0]].flatMap(function(doc){return Array.isArray(doc.items)?doc.items:[]})
+  .map(function(raw){
+   if(raw.provenance!=="HISTORIA.xlsx")return raw;
+   var placement=placements.get(raw.anchor),name=names.get(raw.anchor);
+   return Object.assign({},raw,{
+    placementYear:placement?placement.placementYear:null,
+    title:name&&name.title||raw.title,
+    kind:name&&name.category||raw.kind
+   });
+  }).map(safeItem).filter(function(item){
   if(!item||seen.has(item.id))return false;
   seen.add(item.id);return true;
  });
