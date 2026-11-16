@@ -84,8 +84,8 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Estudio de radiocarbono de la Sábana Santa",
       "kind": "Estudio",
       "subtitle": "Nature · 1989",
-      "note": "Tres laboratorios dataron muestras del tejido. Un estudio publicado en 2026 vuelve a examinar fragmentos y expone el historial del debate.",
-      "source": "https://www.nature.com/articles/s40494-026-02530-7",
+      "note": "Damon y colaboradores publicaron en Nature (1989) la datación por AMS de muestras del lino en Arizona, Oxford y Zúrich: intervalo calibrado de 1260–1390 d.C. (95% de confianza). Trabajos posteriores discuten representatividad y contaminación de la muestra; cuestionar una prueba no demuestra por sí mismo que la pieza date del siglo I.",
+      "source": "https://www.nature.com/articles/337611a0",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
@@ -407,8 +407,8 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Testimonium Flavianum",
       "kind": "Texto",
       "subtitle": "Antigüedades judías 18.63–64 · Flavio Josefo",
-      "note": "Pasaje transmitido en las Antigüedades judías de Flavio Josefo, sobre Jesús. Su transmisión textual y posibles interpolaciones cristianas son objeto de crítica filológica. El entrevistado afirma que hay una versión oriental exenta de interpolaciones, pero esa identificación exige precisar autor, lengua, manuscrito y edición; no constituye una prueba independiente de cada detalle citado.",
-      "source": "https://www.perseus.tufts.edu/hopper/text?doc=J.+AJ+18.63",
+      "note": "Pasaje de Antigüedades judías 18.63–64 atribuido a Flavio Josefo. La transmisión griega, árabe (Agapio de Hierápolis) y siríaca (Miguel el Sirio) ha sido estudiada por Alice Whealey. El grado de autenticidad del pasaje y sus interpolaciones se debate; una crónica medieval no equivale a testimonio independiente contemporáneo de Jesús. La entrevista afirma que una versión oriental elimina interpolaciones, pero no identifica edición ni manuscrito.",
+      "source": "https://doi.org/10.1002/9781118325162.ch22",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
@@ -419,6 +419,26 @@ window.IDEA_TELARANA_F67_REVIEW =
           "timeSec": null,
           "status": "afirmacion_de_la_fuente_pendiente_de_contraste_textual",
           "text": "El invitado menciona interpolaciones cristianas en Flavio Josefo y alude a una versión transmitida por vía árabe. La existencia de tradiciones textuales diferentes no permite aceptar sin cotejo de manuscritos todo el resumen histórico que propone."
+        }
+      ]
+    },
+    {
+      "id": "f67-agapio-testimonium",
+      "name": "Agapio de Hierápolis y la transmisión árabe de Josefo",
+      "kind": "Texto",
+      "subtitle": "Crónica medieval · siglo X",
+      "note": "Agapio de Hierápolis transmitió en árabe una versión medieval del pasaje de Josefo sobre Jesús. Alice Whealey estudió la transmisión árabe y siríaca y sus variantes. Esta versión no certifica automáticamente qué escribió Josefo ni proporciona una fuente de época independiente de las Antigüedades judías.",
+      "source": "https://doi.org/10.1017/S0028688508000251",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · versión oriental del Testimonium; cotejo filológico",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "afirmacion_del_entrevistado_contextualizada_con_bibliografia",
+          "text": "El entrevistado alude a una transmisión por vía musulmana de un pasaje de Josefo supuestamente libre de interpolaciones. La versión de Agapio debe tratarse como testigo textual medieval, no como comprobación automática de cada detalle relatado."
         }
       ]
     }
@@ -664,6 +684,17 @@ window.IDEA_TELARANA_F67_REVIEW =
       "confidence": "indicio",
       "claimStatus": "mencion_textual_sin_cotejo_de_audio",
       "note": "El pasaje de Josefo se menciona en el TXT; su autenticidad parcial y transmisión requieren evaluación filológica distinta de lo dicho por el entrevistado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-agapio-josefo-transmision",
+      "a": "f67-agapio-testimonium",
+      "b": "f67-testimonium-flavianum",
+      "type": "Tradición textual medieval de un pasaje",
+      "confidence": "documentado",
+      "claimStatus": "transmision_textual_no_confirmacion_independiente",
+      "note": "La crónica árabe de Agapio conserva una versión del pasaje; su relación filológica y su autenticidad son objeto de investigación.",
+      "source": "https://doi.org/10.1017/S0028688508000251",
       "podcastNotes": []
     }
   ]
