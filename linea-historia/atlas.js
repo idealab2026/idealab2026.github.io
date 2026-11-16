@@ -140,14 +140,14 @@ function currentRecords(){
   return Number.isFinite(a)&&(Number.isFinite(b)&&b>a?a<=year&&year<=b:Math.floor(a)===year);
  }).sort(function(a,b){return (a.c==="Acontecimientos"?-1:0)-(b.c==="Acontecimientos"?-1:0)||String(a.t).localeCompare(String(b.t),"es")});
 }
-var archiveSig="";
+var archiveSig="",inventorySig="";
 function drawArchive(){
  var archive=state.items.filter(function(m){return m.asOf===null});
  $("atlas-archive-count").textContent="· "+archive.length;
  var signature=archive.map(function(m){return m.id}).join("|");
  if(signature===archiveSig)return;archiveSig=signature;
  var root=$("atlas-archive-grid");root.replaceChildren();
- if(!archive.length){root.append(node("p",state.loaded?"Sin imágenes adicionales en el catálogo. Las 81 originales se incorporan con atlas-imported.json y atlas-media/.":"Cargando archivo…","muted"));return;}
+ if(!archive.length){root.append(node("p",state.loaded?"Las imágenes originales se identifican en el inventario editorial de abajo. Solo se publicarán copias originales con autorización acreditada.":"Cargando archivo…","muted"));return;}
  archive.forEach(function(m){
   var card=node("a",null,"atlas-archive-card");card.href=m.src;card.target="_blank";card.rel="noopener noreferrer";
   var pic=node("img");pic.src=m.src;pic.alt=m.title;pic.loading="lazy";pic.decoding="async";
@@ -156,8 +156,12 @@ function drawArchive(){
  });
 }
 function drawInventory(){
- var list=$("atlas-inventory-list");list.replaceChildren();
+ var list=$("atlas-inventory-list");
  var term=norm($("atlas-inventory-search").value).trim(),kind=$("atlas-inventory-type").value;
+ var signature=term+"|"+kind+"|"+state.inventory.length;
+ if(signature===inventorySig)return;
+ inventorySig=signature;
+ list.replaceChildren();
  var filtered=state.inventory.filter(function(item){
   return (!kind||item.category===kind)&&(!term||norm([item.title,item.anchor,item.originalName,item.category].join(" ")).includes(term));
  });
