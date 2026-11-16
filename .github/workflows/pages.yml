@@ -367,6 +367,7 @@ jobs:
           grep -q 'src="./atlas.js' dist/linea-historia/index.html
           node scripts/test_historia_atlas.mjs dist/linea-historia
           node scripts/test_historia_visual_context.mjs dist/linea-historia
+          node scripts/test_historia_busqueda.mjs dist/linea-historia
           test -f dist/la-telarana/index.html
           grep -q 'id="load-audit"' dist/la-telarana/index.html
           grep -q 'Auditoría de carga: los enlaces' dist/la-telarana/index.html
