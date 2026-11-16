@@ -85,3 +85,16 @@ body.history-note-open #timeline-panel.is-maximized #history-atlas-context{right
 .atlas-inventory-original-preview img{width:100%;height:100%;object-fit:contain}
 .atlas-inventory-original-preview:focus-visible,.atlas-inventory-original-preview:hover{outline:2px solid #e1b96b;outline-offset:2px}
 .atlas-archive-grid .atlas-archive-card img{object-fit:contain}
+
+/* Sidebar collapse: reclaim the entire timeline, while keeping the minimap accessible. */
+.atlas-side-head-actions{display:flex;align-items:center;justify-content:flex-end;gap:5px;flex-wrap:wrap}
+#atlas-sidebar-toggle{white-space:nowrap}
+#timeline-panel.atlas-sidebar-hidden #history-atlas-context{display:none!important}
+#timeline-panel.atlas-sidebar-hidden #viewport{width:100%!important}
+#timeline-panel.atlas-sidebar-hidden .timeline-visual-context{width:100%!important}
+#timeline-panel.atlas-sidebar-hidden .history-minimap{right:12px!important;bottom:43px!important}
+#timeline-panel.atlas-sidebar-hidden.is-maximized .history-minimap{right:20px!important}
+@media(max-width:760px){
+ #timeline-panel.atlas-sidebar-hidden .history-minimap{right:10px!important;bottom:43px!important}
+ #atlas-sidebar-toggle{font-size:.72rem}
+}
