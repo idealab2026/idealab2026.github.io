@@ -93,3 +93,22 @@ Las cinco láminas públicas y sus equivalencias editoriales son:
 | Expansión de la agricultura neolítica | CK48 / GP5 | Atlasabierto · Wikimedia Commons · CC BY 4.0 |
 
 **Importante:** estas láminas son obras distintas y reutilizables que desempeñan la misma función explicativa que las imágenes del Excel; no son reproducción de sus capturas originales. El inventario de 81 originales permanece intacto con sus referencias de celdas y estado de derechos. En gráficos paleoclimáticos, se distingue el dato proxy de Groenlandia de la temperatura media global.
+
+## Integración de las 81 imágenes originales (autorizada por el titular el 16/11/2026)
+
+El titular de `HISTORIA.xlsx` ha manifestado expresamente que posee los derechos necesarios para publicar las **copias originales incrustadas en su libro**. Esta autorización permite preparar su despliegue. No equivale a declarar que sea autor de todas las ilustraciones de terceros; se conservan sus inscripciones, marcas y referencias.
+
+### Paquete único para publicar en GitHub Pages
+
+Subir **un único archivo binario** al repositorio:
+
+- **Ruta exacta en GitHub:** `linea-historia/atlas-historia-originales.zip`
+- **SHA-256 aprobado:** `5a14190856cdb8ff0edda94fbefc642e28b77afbee37a6c0c6f417a0ef0731cd`
+- **Contenido:** `linea-historia/atlas-imported.json` y 81 archivos `linea-historia/atlas-media/image*-*.webp`
+- **Tamaño comprimido:** ~12 MB
+
+`.github/workflows/pages.yml` verificará la huella y descomprimirá **solo** esas rutas dentro de `dist/`. El ZIP no formará parte del sitio público. `scripts/test_historia_originales.mjs` verificará las 81 imágenes, celdas, integridad WebP y cronologías antes de publicar.
+
+En la web, los originales se incorporan en el **Atlas visual**, tanto en la galería de 81 como en el inventario de cada imagen. Los seis mapas fechados originales tendrán prioridad frente a alternativas de Commons. En la banda de contexto temporal aparecerán también el gráfico del Dryas Reciente (BR18), diagramas geológicos (C11, T9, L10, AO8, F35) y esquemas prehistóricos (BD52, BC11) con intervalos **orientativos**, manteniendo sin fecha inventada las restantes imágenes.
+
+Este cambio de código es inocuo mientras el ZIP no se haya subido: la web continúa mostrando el catálogo y las alternativas existentes. **No se debe declarar el despliegue de las 81 imágenes hasta que el ZIP esté comprometido en `main` y el workflow de Pages finalice con éxito.**

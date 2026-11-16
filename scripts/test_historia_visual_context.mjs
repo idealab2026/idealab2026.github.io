@@ -41,6 +41,10 @@ assert.equal(dryas.excelAnchor,"BR18");
 assert.ok(dryas.from<=-12000&&dryas.to>=-12000);
 const geological=doc.items.find(x=>x.id==="context-geologic-clock");
 assert.match(geological.excelAnchor,/C11/);
-// No original unlicensed Excel raster images in the public distribution.
-assert.ok(!fs.existsSync(path.join(folder,"atlas-media")),"Unreviewed Excel originals present in public distribution");
-console.log("OK: synchronized visual context, 5 licensed diagrams, proper period metadata and source anchors");
+// Publish originals only as a complete, explicitly authorized package.
+if (fs.existsSync(path.join(folder,"atlas-imported.json"))) {
+ const originals=JSON.parse(read("atlas-imported.json"));
+ assert.equal(originals.items.length,81,"Incomplete original archive");
+ assert.equal(originals.status,"authorized_for_publication_by_owner");
+}
+console.log("OK: synchronized visual context, 5 open diagrams and optional 81-image owner-authorized archive");

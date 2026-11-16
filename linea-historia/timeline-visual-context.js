@@ -9,6 +9,7 @@
  function normalize(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
  function safeURL(raw,asset){
   if(typeof raw!=="string")return"";
+  if(/^\.\/atlas-media\/[a-z0-9_-]+\.webp$/i.test(raw))return raw;
   try{var u=new URL(raw,location.href);if(u.protocol!=="https:")return"";
    if(asset&&!["commons.wikimedia.org","upload.wikimedia.org"].includes(u.hostname))return"";
    return u.href;
@@ -35,6 +36,35 @@
    summary:row.note||"",excelAnchor:row.excelReference||"",excelOriginal:"",
    hints:Array.isArray(row.hints)?row.hints:[]};
  }
+ function qualifyOriginal(row){
+  if(!row||typeof row.anchor!=="string"||typeof row.title!=="string")return null;
+  var src=safeURL(row.src,true);
+  if(!src)return null;
+  var from=null,to=null,referenceYear=null,kind=row.kind||"Ilustración original";
+  var byAnchor={
+   "BR18":[-15000,-8000,-12000,"Gráfico científico"],
+   "C11":[-541000000,-110000,-270000000,"Diagrama geológico"],
+   "T9":[-541000000,-110000,-270000000,"Diagrama geológico"],
+   "L10":[-541000000,-110000,-270000000,"Diagrama geológico"],
+   "AO8":[-541000000,-110000,-270000000,"Diagrama geológico"],
+   "F35":[-541000000,-110000,-270000000,"Diagrama paleogeográfico"],
+   "BD52":[-110000,-3000,-44000,"Esquema prehistórico"],
+   "BC11":[-110000,-3000,-44000,"Esquema prehistórico"]
+  };
+  if(row.asOf!==null&&Number.isFinite(Number(row.asOf))){
+   from=Number(row.start);to=Number(row.end);referenceYear=Number(row.asOf);
+   if(!Number.isFinite(from)||!Number.isFinite(to)){from=referenceYear;to=referenceYear}
+  }else if(byAnchor[row.anchor]){
+   var range=byAnchor[row.anchor];from=range[0];to=range[1];referenceYear=range[2];kind=range[3];
+  }else return null; // Keep remaining images in the separate 81-image gallery.
+  return {id:row.id,title:row.title,from:from,to:to,referenceYear:referenceYear,
+   src:src,sourceUrl:src,kind:kind,credit:"HISTORIA.xlsx · publicación autorizada por el titular",
+   license:"Copia del archivo personal",provenance:"HISTORIA.xlsx",
+   context:"Imagen original incrustada en la hoja LÍNEA TEMPORAL, celda "+row.anchor+".",
+   summary:row.asOf===null?"Intervalo de relevancia orientativo; no es la fecha exacta de elaboración.":(row.note||""),
+   excelAnchor:row.anchor,excelOriginal:row.title,
+   hints:Array.isArray(row.hints)?row.hints:[]};
+ }
  function selection(){
   var y=state.year,focus=state.locked?state.focus:null;
   var matching=state.docs.filter(function(d){return y>=d.from&&y<=d.to});
@@ -48,9 +78,9 @@
   }
   matching.sort(function(a,b){
    var sa=(focus&&a.hints.some(function(t){return normalize(focus.t).includes(normalize(t))})?100:0)+
-     (a.kind==="Gráfico científico"?4:0)-Math.abs(y-a.referenceYear)/Math.max(1,a.to-a.from);
+     ((a.provenance==="HISTORIA.xlsx")?12:0)+(a.kind==="Gráfico científico"?4:0)-Math.abs(y-a.referenceYear)/Math.max(1,a.to-a.from);
    var sb=(focus&&b.hints.some(function(t){return normalize(focus.t).includes(normalize(t))})?100:0)+
-     (b.kind==="Gráfico científico"?4:0)-Math.abs(y-b.referenceYear)/Math.max(1,b.to-b.from);
+     ((b.provenance==="HISTORIA.xlsx")?12:0)+(b.kind==="Gráfico científico"?4:0)-Math.abs(y-b.referenceYear)/Math.max(1,b.to-b.from);
    return sb-sa;
   });
   return matching.slice(0,3);
@@ -143,10 +173,13 @@
  }
  async function load(){
   var results=await Promise.all([
+   source("./atlas-imported.json").catch(function(){return{items:[]}}),
    source("./atlas-context.json").catch(function(){return{items:[]}}),
    source("./atlas-examples.json").catch(function(){return{items:[]}})
   ]);
-  state.docs=results[0].items.map(qualify).concat(results[1].items.map(qualifyMap)).filter(Boolean);
+  state.docs=(Array.isArray(results[0].items)?results[0].items:[]).map(qualifyOriginal)
+   .concat((Array.isArray(results[1].items)?results[1].items:[]).map(qualify))
+   .concat((Array.isArray(results[2].items)?results[2].items:[]).map(qualifyMap)).filter(Boolean);
   state.loaded=true;oldSig="";requestDraw();
  }
  ensureUI();

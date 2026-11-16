@@ -5,7 +5,7 @@
   "reviewedOn": "2026-11-16",
   "total": 81,
   "publicAlternatives": 6,
-  "originalFilesPublished": 0,
+  "originalFilesPublished": null,
   "items": [
     {
       "id": "excel-image-1",
@@ -15,7 +15,7 @@
       "title": "Teoría de ascenso y declive de los imperios",
       "category": "Gráfico conceptual",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -28,7 +28,7 @@
       "title": "Comparación histórica de la posición de grandes potencias",
       "category": "Gráfico estadístico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -41,7 +41,7 @@
       "title": "República romana: expansión territorial hacia 44 a. C.",
       "category": "Mapa histórico",
       "asOf": -44,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": "commons-roman-republic-44",
       "publicAlternativeType": "mapa_alternativo_licenciado",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -54,7 +54,7 @@
       "title": "Guerra del Peloponeso: alianzas y teatros de operaciones",
       "category": "Mapa histórico",
       "asOf": -431,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": "commons-peloponnesian-431",
       "publicAlternativeType": "mapa_alternativo_licenciado",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -67,7 +67,7 @@
       "title": "Imperio romano: máxima extensión bajo Trajano, 117 d. C.",
       "category": "Mapa histórico",
       "asOf": 117,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": "commons-rome-117",
       "publicAlternativeType": "mapa_alternativo_licenciado",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -80,7 +80,7 @@
       "title": "Esquema cronológico y conceptual",
       "category": "Esquema",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -93,7 +93,7 @@
       "title": "Personajes históricos: retratos y relaciones",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -106,7 +106,7 @@
       "title": "Genealogía semítica y descendencia bíblica",
       "category": "Árbol genealógico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -119,7 +119,7 @@
       "title": "Imperios de la Antigüedad en Oriente Próximo",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -132,7 +132,7 @@
       "title": "Naciones del relato del Génesis",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -145,7 +145,7 @@
       "title": "Árbol manuscrito de relaciones genealógicas",
       "category": "Árbol genealógico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -158,7 +158,7 @@
       "title": "Imperio español de los siglos XVI y XVII",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -171,7 +171,7 @@
       "title": "Modelo de auge y caída de las grandes potencias",
       "category": "Gráfico conceptual",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -184,7 +184,7 @@
       "title": "Crisis de la República romana",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -197,7 +197,7 @@
       "title": "Curvas comparadas de ascenso y declive de imperios",
       "category": "Gráfico estadístico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -210,7 +210,7 @@
       "title": "Imperios de la Antigüedad: panorama euroasiático",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -223,7 +223,7 @@
       "title": "Línea temporal de la prehistoria",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -236,7 +236,7 @@
       "title": "Europa durante las guerras napoleónicas",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -249,7 +249,7 @@
       "title": "Migraciones y pueblos del Mediterráneo oriental",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -262,7 +262,7 @@
       "title": "Evolución humana y periodos prehistóricos",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -275,7 +275,7 @@
       "title": "Imperios asirio y rivales en Mesopotamia",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -288,7 +288,7 @@
       "title": "Babilonia y territorios vecinos",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -301,7 +301,7 @@
       "title": "Genealogía de Abraham",
       "category": "Árbol genealógico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -314,7 +314,7 @@
       "title": "Cronología bíblica comparada",
       "category": "Tabla cronológica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -327,7 +327,7 @@
       "title": "Lidia, Medos, Babilonia y Egipto",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -340,7 +340,7 @@
       "title": "Territorios y reinos del área asiria",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -353,7 +353,7 @@
       "title": "Geopolítica del antiguo Egipto y Oriente Próximo",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -366,7 +366,7 @@
       "title": "Imperio de Alejandro Magno a su muerte, hacia 323 a. C.",
       "category": "Mapa histórico",
       "asOf": -323,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": "commons-alexander-323",
       "publicAlternativeType": "mapa_alternativo_licenciado",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -379,7 +379,7 @@
       "title": "Rótulo sobre el Imperio de Alejandro Magno",
       "category": "Texto incrustado",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -392,7 +392,7 @@
       "title": "Segunda guerra púnica: teatro mediterráneo, 218–201 a. C.",
       "category": "Mapa histórico",
       "asOf": -218,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": "commons-punic-218",
       "publicAlternativeType": "mapa_alternativo_licenciado",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -405,7 +405,7 @@
       "title": "Mesopotamia: pueblos y reinos antiguos",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -418,7 +418,7 @@
       "title": "Grecia antigua y regiones del Egeo",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -431,7 +431,7 @@
       "title": "Genealogía bíblica de Esaú y Edom",
       "category": "Árbol genealógico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -444,7 +444,7 @@
       "title": "Descendientes de Jacob",
       "category": "Árbol genealógico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -457,7 +457,7 @@
       "title": "Olmecas y yacimientos de Mesoamérica",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -470,7 +470,7 @@
       "title": "Familia de Jacob",
       "category": "Árbol genealógico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -483,7 +483,7 @@
       "title": "Genealogía de una monarquía europea",
       "category": "Árbol genealógico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -496,10 +496,10 @@
       "title": "Eras geológicas e historia de la vida (marca de agua)",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "La imagen contiene una marca de agua comercial visible. No republicar sin licencia."
+      "reviewNote": "La imagen contiene una marca de agua comercial visible. Publicación autorizada por el titular declarado; respetar atribuciones visibles y licencias de terceros."
     },
     {
       "id": "excel-image-39",
@@ -509,7 +509,7 @@
       "title": "Historia geológica de la Tierra",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -522,7 +522,7 @@
       "title": "Divisiones geológicas del Fanerozoico",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -535,7 +535,7 @@
       "title": "Serie de temperaturas del Younger Dryas en Groenlandia",
       "category": "Gráfico científico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -548,7 +548,7 @@
       "title": "Deriva continental y paleogeografía ilustrada",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -561,7 +561,7 @@
       "title": "Civilizaciones antiguas en el mapamundi",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -574,7 +574,7 @@
       "title": "Mesoamérica: civilizaciones y territorios antiguos",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -587,7 +587,7 @@
       "title": "Civilizaciones antiguas de la región andina",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -600,7 +600,7 @@
       "title": "Eras geológicas y evolución de la vida",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -613,7 +613,7 @@
       "title": "Mapamundi histórico de la Antigüedad",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -626,10 +626,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-50",
@@ -639,10 +639,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-51",
@@ -652,10 +652,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-52",
@@ -665,7 +665,7 @@
       "title": "Próximo Oriente, territorios antiguos y migraciones",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -678,7 +678,7 @@
       "title": "Panorama visual de la Grecia antigua",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -691,7 +691,7 @@
       "title": "Pueblos y reinos de Oriente Próximo en mapa temático",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -704,10 +704,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-56",
@@ -717,10 +717,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-57",
@@ -730,10 +730,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-58",
@@ -743,10 +743,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-59",
@@ -756,10 +756,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-60",
@@ -769,10 +769,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-61",
@@ -782,10 +782,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-62",
@@ -795,7 +795,7 @@
       "title": "Batalla de Salamina: esquema de movimientos navales",
       "category": "Mapa histórico",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -808,10 +808,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-64",
@@ -821,10 +821,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-65",
@@ -834,10 +834,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-66",
@@ -847,10 +847,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-67",
@@ -860,10 +860,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-68",
@@ -873,7 +873,7 @@
       "title": "Imperio romano durante el año de los cuatro emperadores, 68–69 d. C.",
       "category": "Mapa histórico",
       "asOf": 69,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": "commons-roman-69",
       "publicAlternativeType": "mapa_alternativo_licenciado",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -886,10 +886,10 @@
       "title": "Europa: mapa histórico con fecha por verificar",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-70",
@@ -899,10 +899,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-71",
@@ -912,7 +912,7 @@
       "title": "Línea histórica ilustrada y patrimonio de diversas épocas",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -925,10 +925,10 @@
       "title": "Europa: mapa histórico con fecha por verificar",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-73",
@@ -938,10 +938,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-74",
@@ -951,7 +951,7 @@
       "title": "Culturas y civilizaciones sumerias",
       "category": "Infografía",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
       "reviewNote": "Fecha, origen exacto y derechos del archivo original no acreditados."
@@ -964,10 +964,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-76",
@@ -977,10 +977,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-77",
@@ -990,10 +990,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-78",
@@ -1003,10 +1003,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-79",
@@ -1016,10 +1016,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-80",
@@ -1029,10 +1029,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-81",
@@ -1042,10 +1042,10 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     },
     {
       "id": "excel-image-82",
@@ -1055,10 +1055,12 @@
       "title": "Europa: captura de cronología geopolítica con protagonistas",
       "category": "Captura cartográfica",
       "asOf": null,
-      "reproductionStatus": "sin_licencia_verificada",
+      "reproductionStatus": "autorizado_por_titular",
       "publicAlternativeId": null,
       "publicAlternativeType": "sin_alternativa_verificada",
-      "reviewNote": "Captura de un recurso de terceros; fecha y licencia originales no verificadas."
+      "reviewNote": "Captura de un recurso de terceros; fecha y licencia original no documentada en el Excel."
     }
-  ]
+  ],
+  "publicationMode": "Un paquete ZIP con originales autorizados se añade a GitHub y se despliega automáticamente; la cantidad publicada se obtiene del manifiesto cargado en el navegador.",
+  "ownerPublicationAuthorization": "Declaración expresa del titular de HISTORIA.xlsx para publicar las copias incrustadas; se conservan marcas, referencias y atribuciones visibles."
 }
