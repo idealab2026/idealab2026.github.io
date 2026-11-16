@@ -40,12 +40,15 @@ class Lote5PublicacionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_manifest(invalid)
 
-    def test_no_duplicate_in_current_public_manifest(self):
+    def test_approved_public_paths_remain_consistent_after_publication(self):
+        """The publication workflow must stay green both before and after the PNGs are merged."""
         data = json.loads(APPROVED.read_text(encoding="utf-8"))
         public = json.loads(PUBLIC_INDEX.read_text(encoding="utf-8"))
         published = public["books"]["conde-montecristo"].get("chapters", {})
         for item in validate_manifest(data):
-            self.assertNotIn(item["video_id"], published)
+            expected = f'./infografias/{item["book"]}/{item["video_id"]}.png'
+            if item["video_id"] in published:
+                self.assertEqual(published[item["video_id"]], expected)
 
 
 if __name__ == "__main__":
