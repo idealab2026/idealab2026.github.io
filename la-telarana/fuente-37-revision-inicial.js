@@ -311,6 +311,62 @@ window.IDEA_TELARANA_F37_REVIEW = {
           "transcriptSearch": "pseudo teorías"
         }
       ]
+    },
+    {
+      "id": "f37-mar-negro",
+      "name": "Mar Negro y reconexión marina",
+      "kind": "Proceso geológico",
+      "subtitle": "Holoceno · cronología debatida",
+      "note": "La transcripción menciona una inundación del mar Negro como posible contexto de relatos de diluvio. Las reconstrucciones geológicas difieren sobre la cronología, el sentido de los flujos y la magnitud del cambio; no demuestran un diluvio global.",
+      "source": "https://www.nature.com/articles/s41598-018-22453-z",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · transcripción sin minutaje verificado",
+          "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+          "timeSec": null,
+          "status": "relato_de_la_fuente_sin_audio",
+          "text": "La conversación propone una entrada de aguas mediterráneas y plantea una posible conexión con relatos de inundaciones. Voces, literalidad y audio están pendientes de cotejo."
+        },
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · contraste documental",
+          "source": "https://www.cambridge.org/core/journals/quaternary-research/article/abs/early-holocene-marine-flooding-of-the-black-sea/02E19F5A7E38D59424CEB71068D84A6A",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "Uchupi y Ross plantearon que ciertas formas del fondo podrían relacionarse con una inundación catastrófica. Es una interpretación de sus datos, no la demostración de un relato universal."
+        },
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · contraste documental",
+          "source": "https://www.nature.com/articles/s41598-018-22453-z",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "Un estudio de sedimentos de 2018 concluye que el nivel del lago ya superaba el umbral del Bósforo antes del episodio estudiado, lo que contradice una versión de subida catastrófica de unos 130 metros."
+        }
+      ]
+    },
+    {
+      "id": "f37-estudio-flujo2018",
+      "name": "Estudio de flujos del mar Negro",
+      "kind": "Estudio",
+      "subtitle": "Scientific Reports · 2018",
+      "note": "Análisis de un testigo sedimentario del Egeo sobre la salida de agua del mar Negro durante el Holoceno. Sus autores cuestionan una subida catastrófica de 130 metros; sus conclusiones se refieren a modelos y registros concretos.",
+      "source": "https://www.nature.com/articles/s41598-018-22453-z",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f37-buen-salvaje",
+          "title": "F37 · contraste documental",
+          "source": "https://www.nature.com/articles/s41598-018-22453-z",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "El estudio reconstruye flujos y cronología a partir de sedimentos y propone una interpretación incompatible con una versión concreta de inundación catastrófica; no determina por sí solo el origen de los mitos."
+        }
+      ]
     }
   ],
   "edges": [
@@ -510,6 +566,39 @@ window.IDEA_TELARANA_F37_REVIEW = {
       "claimStatus": "contexto_documentado",
       "note": "El museo documenta el culto oficial al disco solar durante el reinado de Akenatón.",
       "source": "https://resources.metmuseum.org/resources/metpublications/pdf/Ancient_Art_The_Metropolitan_Museum_of_Art_Bulletin_v_49_no_4_Spring_1992.pdf",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-prof-mar-fuente",
+      "a": "f37-episodio",
+      "b": "f37-mar-negro",
+      "type": "Mención de la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "La transcripción menciona la hipótesis; voces y audio siguen sin cotejar.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-prof-mar-diluvio",
+      "a": "f37-mar-negro",
+      "b": "f37-diluvio",
+      "type": "Conexión propuesta",
+      "confidence": "hipotesis",
+      "claimStatus": "hipotesis",
+      "note": "La conversación plantea una posible relación con relatos de inundaciones; no demuestra transmisión cultural ni una inundación mundial.",
+      "source": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
+      "podcastNotes": []
+    },
+    {
+      "id": "f37-prof-estudio-mar",
+      "a": "f37-estudio-flujo2018",
+      "b": "f37-mar-negro",
+      "type": "Reconstrucción sedimentaria",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "El estudio analiza registros sedimentarios y discute una reconstrucción de inundación; no acredita una narración mítica.",
+      "source": "https://www.nature.com/articles/s41598-018-22453-z",
       "podcastNotes": []
     }
   ]
