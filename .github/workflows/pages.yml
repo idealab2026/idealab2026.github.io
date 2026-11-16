@@ -233,6 +233,7 @@ jobs:
           cp linea-historia/atlas-examples.json dist/linea-historia/atlas-examples.json
           cp linea-historia/atlas-inventory.json dist/linea-historia/atlas-inventory.json
           cp linea-historia/atlas-context.json dist/linea-historia/atlas-context.json
+          cp linea-historia/atlas-placement.json dist/linea-historia/atlas-placement.json
           cp linea-historia/timeline-visual-context.js dist/linea-historia/timeline-visual-context.js
           cp linea-historia/timeline-visual-context.css dist/linea-historia/timeline-visual-context.css
           # Originales autorizados por el titular: un solo ZIP en el repositorio
@@ -244,6 +245,7 @@ jobs:
               'linea-historia/atlas-imported.json' \
               'linea-historia/atlas-media/*' -d dist/
             node scripts/test_historia_originales.mjs dist/linea-historia
+            node scripts/test_historia_imagenes_contexto.mjs dist/linea-historia
           fi
           cp linea-historia/favicon.png dist/linea-historia/favicon.png
           test -s dist/linea-historia/favicon.png
@@ -354,6 +356,7 @@ jobs:
           test -s dist/linea-historia/atlas-examples.json
           test -s dist/linea-historia/atlas-inventory.json
           test -s dist/linea-historia/atlas-context.json
+          test -s dist/linea-historia/atlas-placement.json
           test -s dist/linea-historia/timeline-visual-context.js
           test -s dist/linea-historia/timeline-visual-context.css
           node --check dist/linea-historia/timeline-v4.js
