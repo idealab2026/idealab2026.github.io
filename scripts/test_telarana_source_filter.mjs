@@ -115,7 +115,7 @@ assert.equal(mod.entityType({kind:"Grabación audiovisual"}),"Fuente");
 assert.equal(mod.entityType({kind:"Declaración"}),"Declaración","Una declaración no es un documento fuente");
 assert.equal(mod.entityType({kind:"Persona"}),"Persona");
 const source07Text=fs.readFileSync("la-telarana/podcast-wild-312-chicote.js","utf8");
-const source07=JSON.parse(source07Text.split("window.IDEA_TELARANA_SOURCE07_PODCAST = ")[1].trim().replace(/;\\s*$/,""));
+const source07=JSON.parse(source07Text.split("window.IDEA_TELARANA_SOURCE07_PODCAST = ")[1].trim().replace(/;$/,""));
 const episode312=source07.nodes.find(n=>n.id==="twp312-episode");
 assert(episode312&&episode312.kind==="Publicación","Reproducir exactamente el nodo de la captura");
 assert.equal(mod.entityType(episode312),"Fuente","El Wild Project #312 debe aparecer bajo Fuente");
