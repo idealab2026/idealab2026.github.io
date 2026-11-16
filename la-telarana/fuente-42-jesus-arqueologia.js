@@ -1,15 +1,16 @@
 /* F42: investigación documental parcial; sin cotejo de audio. */
-window.IDEA_TELARANA_F42_REVIEW = {
+window.IDEA_TELARANA_F42_REVIEW =
+{
   "metadata": {
     "id": "idealab-f42-jesus-arqueologia",
     "sourceOrder": 42,
     "title": "F42 · Jesús histórico y arqueología · Tito Vivas",
     "url": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
-    "reviewStage": "primera_revision_documental_parcial_sin_audio",
+    "reviewStage": "segunda_revision_osarios_topografia_jerusalen_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús."
+    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos."
   },
   "nodes": [
     {
@@ -322,6 +323,228 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "text": "El manual de Cambridge explica que el pasaje de Antigüedades 18.63–64 presenta problemas de transmisión y posible intervención de copistas cristianos."
         }
       ]
+    },
+    {
+      "id": "f42-caifas",
+      "name": "José Caifás",
+      "kind": "Persona",
+      "subtitle": "Sumo sacerdote de Jerusalén · ca. 18–36 d. C.",
+      "note": "José, llamado Caifás, fue sumo sacerdote de Jerusalén bajo dominio romano durante una parte del siglo I, citado por Josefo y las tradiciones cristianas. Su existencia y cargo tienen testimonios textuales independientes. La narración de su participación en el proceso contra Jesús procede fundamentalmente de textos cristianos; los restos epigráficos asociados a su familia no documentan por sí mismos el juicio.",
+      "source": "https://cojs.org/ossuary_of_the_high_priest_caiaphas-_18-36_ce/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · transcripción NotebookLM sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptVerified": false,
+          "transcriptSearch": "sumo sacerdote llamado Caifasm",
+          "transcriptCharOffset": 45530,
+          "status": "identificacion_transcripcion_no_audio",
+          "text": "En el TXT se habla del sumo sacerdote «Caifasm» (posible error ASR). Su existencia histórica es contrastable; las acciones concretas atribuidas al Sanedrín deben distinguirse de la evidencia arqueológica."
+        }
+      ]
+    },
+    {
+      "id": "f42-osario-caifas",
+      "name": "Osario de José, hijo de Caifás",
+      "kind": "Objeto",
+      "subtitle": "Jerusalén · enterramiento familiar excavado en 1990",
+      "note": "Osario de piedra caliza procedente de una cueva funeraria hallada al sur de Jerusalén en 1990, conservado por el Museo de Israel. Su inscripción aramea se ha leído «José, hijo de Caifás». Es una evidencia arqueológica del nombre y de un ambiente familiar asociado al sumo sacerdocio; aunque suele vincularse al Caifás de los textos antiguos, ni la inscripción ni su contexto demuestran los episodios judiciales de los Evangelios ni permiten identificar sin reservas los restos humanos del personaje.",
+      "source": "https://www.imj.org.il/en/exhibitions/ossuary-caiaphas-high-priest-18-36-ce",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · transcripción NotebookLM sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptVerified": false,
+          "transcriptSearch": "Hay un osario de Caifás",
+          "transcriptCharOffset": 51702,
+          "status": "identificacion_transcripcion_no_audio",
+          "text": "El invitado menciona el osario de Caifás como evidencia contextual. El Museo de Israel registra la pieza, pero la identificación individual y la relación con Jesús tienen límites probatorios."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente, no cita comprobada del vídeo",
+          "source": "https://www.imj.org.il/en/exhibitions/ossuary-caiaphas-high-priest-18-36-ce",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "transcriptSearch": "Hay un osario de Caifás",
+          "transcriptCharOffset": 51702,
+          "text": "El museo documenta la inscripción del osario y su procedencia funeraria, sin establecer una prueba material del juicio de Jesús."
+        }
+      ]
+    },
+    {
+      "id": "f42-santiago-justo",
+      "name": "Santiago el Justo",
+      "kind": "Persona",
+      "subtitle": "Figura del cristianismo primitivo en Jerusalén · siglo I",
+      "note": "Santiago aparece en tradiciones cristianas primitivas como dirigente de la comunidad de Jerusalén y hermano de Jesús. Josefo menciona a Santiago, hermano de Jesús llamado Cristo, en Antigüedades judías 20.200; el pasaje es objeto de discusión textual minoritaria, aunque ampliamente considerado auténtico. No se ha demostrado que el osario comercializado en 2002 perteneciera a esta persona.",
+      "source": "https://www.inscriptionsisraelpalestine.org/story/a-controversial-inscription-in-the-news/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · transcripción NotebookLM sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptVerified": false,
+          "transcriptSearch": "Santiago hijo de José hermano de Jesús",
+          "transcriptCharOffset": 52065,
+          "status": "identificacion_transcripcion_no_audio",
+          "text": "El texto automático lee la inscripción del osario. Identificar el Santiago de esa inscripción con Santiago el Justo requiere demostrar autenticidad epigráfica y una atribución personal independiente, que no está acreditada."
+        }
+      ]
+    },
+    {
+      "id": "f42-osario-santiago",
+      "name": "Osario atribuido a Santiago, hermano de Jesús",
+      "kind": "Objeto",
+      "subtitle": "Osario antiguo sin procedencia excavada · inscripción controvertida",
+      "note": "Osario de piedra del siglo I procedente de una colección privada, presentado públicamente en 2002 con la inscripción aramea «Santiago, hijo de José, hermano de Jesús». La antigüedad del recipiente es distinta de la autenticidad y cronología de la inscripción: una investigación de Ayalon, Bar-Matthews y Goren (Journal of Archaeological Science, 2004) cuestionó científicamente la pátina de las letras, mientras que otros autores sostuvieron conclusiones diferentes. Incluso si la inscripción fuese antigua, los nombres frecuentes impiden identificar automáticamente al Santiago de la pieza con el hermano de Jesús de Nazaret. Carece de contexto estratigráfico excavado.",
+      "source": "https://doi.org/10.1016/j.jas.2004.03.001",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · transcripción NotebookLM sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptVerified": false,
+          "transcriptSearch": "El Osario de Santiago",
+          "transcriptCharOffset": 51848,
+          "status": "identificacion_transcripcion_no_audio",
+          "text": "La entrevista distingue entre autenticidad del objeto y de la inscripción, y advierte que una combinación de nombres no identifica necesariamente a la familia de Jesús. La inscripción sigue controvertida."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente, no cita comprobada del vídeo",
+          "source": "https://doi.org/10.1016/j.jas.2004.03.001",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "transcriptSearch": "El Osario de Santiago",
+          "transcriptCharOffset": 51848,
+          "text": "El estudio arqueométrico de 2004 encontró anomalías en la pátina de las letras; otros trabajos académicos no aceptan esa conclusión. La discrepancia debe conservarse abierta."
+        }
+      ]
+    },
+    {
+      "id": "f42-estudio-patina-santiago-2004",
+      "name": "Análisis de la pátina del Osario de Santiago (2004)",
+      "kind": "Estudio",
+      "subtitle": "Ayalon, Bar-Matthews y Goren · Journal of Archaeological Science",
+      "note": "Investigación arqueométrica publicada en Journal of Archaeological Science 31(8), 1185–1189 (2004), doi:10.1016/j.jas.2004.03.001. Comparó la composición petrográfica e isotópica de la pátina de las letras con la de superficies originales y osarios excavados; los autores señalaron diferencias que cuestionan la autenticidad de la inscripción atribuida a Santiago. El estudio no cuestiona automáticamente la antigüedad de toda la caja de piedra, y existe literatura científica que defiende su autenticidad; no debe narrarse como consenso indiscutido.",
+      "source": "https://doi.org/10.1016/j.jas.2004.03.001",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente, no cita comprobada del vídeo",
+          "source": "https://doi.org/10.1016/j.jas.2004.03.001",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "transcriptSearch": "Osario de Santiago",
+          "transcriptCharOffset": 51848,
+          "text": "Contraste académico externo sobre la pátina de la inscripción; se añade para fundamentar la incertidumbre, no como trabajo citado literalmente por el invitado."
+        }
+      ]
+    },
+    {
+      "id": "f42-betesda",
+      "name": "Piscina de Betesda (Bethzatha)",
+      "kind": "Lugar",
+      "subtitle": "Jerusalén · conjunto de piscinas con divisoria central",
+      "note": "El complejo de piscinas de Betesda/Bethzatha, tradicionalmente identificado junto a Santa Ana en Jerusalén, está documentado por excavaciones. Una doble piscina con divisoria central ofrece un contexto arquitectónico plausible para la descripción de cinco pórticos de Juan 5:2. Su existencia permite evaluar el conocimiento topográfico del autor, no constatar arqueológicamente que Jesús curara allí a un paralítico. Un artículo de New Testament Studies (2025) relaciona su topografía con la datación del Evangelio, pero esa propuesta es una interpretación académica, no una conclusión universal.",
+      "source": "https://doi.org/10.1017/S0028688524000213",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · transcripción NotebookLM sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptVerified": false,
+          "transcriptSearch": "en Betesda sí Jesús cura un paralítico",
+          "transcriptCharOffset": 77045,
+          "status": "identificacion_transcripcion_no_audio",
+          "text": "El texto de F42 vincula la existencia de la piscina con un relato de curación. El lugar es arqueológicamente identificable, pero los restos no prueban el milagro."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente, no cita comprobada del vídeo",
+          "source": "https://doi.org/10.1017/S0028688524000213",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "transcriptSearch": "Betesda sí Jesús cura",
+          "transcriptCharOffset": 77059,
+          "text": "Un estudio de 2025 trata el complejo de Bethzatha y los cinco pórticos. La información topográfica no permite deducir la historicidad de la curación."
+        }
+      ]
+    },
+    {
+      "id": "f42-siloe",
+      "name": "Piscina de Siloé (Jerusalén)",
+      "kind": "Lugar",
+      "subtitle": "Instalación escalonada · finales del Segundo Templo",
+      "note": "En 2004, obras urbanas revelaron restos de una piscina monumental escalonada de la Jerusalén del Segundo Templo, excavada por Ronny Reich y Eli Shukron para la Autoridad de Antigüedades de Israel. Es común identificarla como la piscina de Siloé descrita en Juan 9. La pieza proporciona contexto topográfico y cultural sobre baños y desplazamientos rituales, pero no prueba arqueológicamente los milagros narrados ni la presencia personal de Jesús.",
+      "source": "https://library.biblicalarchaeology.org/book/the-new-encyclopedia-of-archaeological-excavations-in-the-holy-land/jerusalem/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · transcripción NotebookLM sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptVerified": false,
+          "transcriptSearch": "piscina de Siloé",
+          "transcriptCharOffset": 49521,
+          "status": "identificacion_transcripcion_no_audio",
+          "text": "F42 menciona las piscinas de Siloé y Betesda en el contexto de las prácticas de purificación; la existencia del lugar no verifica acontecimientos sobrenaturales."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente, no cita comprobada del vídeo",
+          "source": "https://library.biblicalarchaeology.org/book/the-new-encyclopedia-of-archaeological-excavations-in-the-holy-land/jerusalem/",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "transcriptSearch": "piscina de Siloé",
+          "transcriptCharOffset": 49521,
+          "text": "El inventario arqueológico de Jerusalén resume el hallazgo de 2004 y las excavaciones de Reich y Shukron."
+        }
+      ]
     }
   ],
   "edges": [
@@ -532,6 +755,138 @@ window.IDEA_TELARANA_F42_REVIEW = {
       "claimStatus": "testimonio_textual_transmision_debatida",
       "note": "Una referencia en Antigüedades judías presenta problemas de transmisión e interpolación debatidos por especialistas.",
       "source": "https://www.cambridge.org/highereducation/books/an-introduction-to-the-new-testament-and-the-origins-of-christianity/32A6751C4FE08D443DC4BDD934A3C343/the-quest-for-the-historical-jesus/AC9A7E362ADF910A63A6B84489A8796D",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-caifas",
+      "a": "f42-episodio",
+      "b": "f42-caifas",
+      "type": "Personaje histórico tratado en F42",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-osario-caifas",
+      "a": "f42-episodio",
+      "b": "f42-osario-caifas",
+      "type": "Objeto arqueológico mencionado",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-caifas-osario",
+      "a": "f42-caifas",
+      "b": "f42-osario-caifas",
+      "type": "Inscripción con nombre familiar de Caifás",
+      "claimStatus": "evidencia_epigrafica_contextual_no_identificacion_indudable",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.imj.org.il/en/exhibitions/ossuary-caiaphas-high-priest-18-36-ce",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-caifas-jesus-textual",
+      "a": "f42-caifas",
+      "b": "f42-jesus",
+      "type": "Relación narrada por los Evangelios",
+      "claimStatus": "relato_evangelico_no_demostrado_por_osario",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://cojs.org/ossuary_of_the_high_priest_caiaphas-_18-36_ce/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-osario-santiago",
+      "a": "f42-episodio",
+      "b": "f42-osario-santiago",
+      "type": "Osario polémico explicado en la entrevista",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-osario-santiago-atribucion",
+      "a": "f42-santiago-justo",
+      "b": "f42-osario-santiago",
+      "type": "Atribución debatida, no identificación demostrada",
+      "claimStatus": "identificacion_controvertida_no_verificada",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.inscriptionsisraelpalestine.org/story/a-controversial-inscription-in-the-news/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-osario-santiago-patina",
+      "a": "f42-estudio-patina-santiago-2004",
+      "b": "f42-osario-santiago",
+      "type": "Análisis isotópico de pátina de letras",
+      "claimStatus": "estudio_arqueometrico_documentado_resultado_controvertido",
+      "confidence": "documentado",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://doi.org/10.1016/j.jas.2004.03.001",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-betesda",
+      "a": "f42-episodio",
+      "b": "f42-betesda",
+      "type": "Piscina mencionada al analizar Juan 5",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-siloe",
+      "a": "f42-episodio",
+      "b": "f42-siloe",
+      "type": "Piscina mencionada al hablar de purificación",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-betesda-jesus-relato",
+      "a": "f42-betesda",
+      "b": "f42-jesus",
+      "type": "Lugar de curación narrada en Juan 5",
+      "claimStatus": "vinculo_textual_no_confirmacion_del_milagro",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://doi.org/10.1017/S0028688524000213",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-siloe-jesus-relato",
+      "a": "f42-siloe",
+      "b": "f42-jesus",
+      "type": "Lugar de curación narrada en Juan 9",
+      "claimStatus": "vinculo_textual_no_confirmacion_del_milagro",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://library.biblicalarchaeology.org/book/the-new-encyclopedia-of-archaeological-excavations-in-the-holy-land/jerusalem/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-santiago-jesus-tradicion",
+      "a": "f42-santiago-justo",
+      "b": "f42-jesus",
+      "type": "Relación de parentesco en fuentes antiguas",
+      "claimStatus": "parentesco_textual_no_corrobora_osario_moderno",
+      "confidence": "indicio",
+      "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
+      "source": "https://www.inscriptionsisraelpalestine.org/story/a-controversial-inscription-in-the-news/",
       "podcastNotes": []
     }
   ]

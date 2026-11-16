@@ -1602,20 +1602,20 @@
       "videoId": "ANZlHZ3SjKk",
       "title": "El Misterio de Jesús: ¿era un hombre común… o un elegido? Arqueólogo responde | Con Tito Vivas",
       "sourceUrl": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "segunda_revision_documental_osarios_piscinas_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-42-jesus-arqueologia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 15,
-      "sourceRelationsDocumented": 19,
-      "personsProfiled": 5,
-      "documentaryChecks": 6,
+      "sourceNodesDocumented": 22,
+      "sourceRelationsDocumented": 31,
+      "personsProfiled": 7,
+      "documentaryChecks": 10,
       "timelineVerifiedEventsCommitted": 2,
-      "qualityNotes": "Distingue historicidad, creencias, inscripciones contextuales y resultados sobre muestras. Texto ASR sitúa carbono 14 en siglo XI–XII y muestras en distintas zonas; estudio de 1989 informa 1260–1390 y la zona de muestreo es objeto de debate. Sin audio.",
-      "lastUpdated": "2026-11-14"
+      "qualityNotes": "Distingue historicidad, creencias, inscripciones contextuales y resultados sobre muestras. Texto ASR sitúa carbono 14 en siglo XI–XII y muestras en distintas zonas; estudio de 1989 informa 1260–1390 y la zona de muestreo es objeto de debate. Sin audio. Ampliación 16-11-2026: osario familiar de Caifás (Museo de Israel), osario de Santiago con inscripción discutida (JAS 2004), piscinas de Betesda y Siloé (arqueología contextual, no prueba de curación sobrenatural). Audio y minutajes pendientes.",
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 43,
@@ -5191,7 +5191,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 41,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_documental_osarios_piscinas_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5202,7 +5202,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5221,19 +5221,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_documental_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 15,
-            "relations": 19,
-            "biographies": 5,
-            "statements": 8,
-            "independentChecks": 6,
+            "entities": 22,
+            "relations": 31,
+            "biographies": 7,
+            "statements": 12,
+            "independentChecks": 10,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "Continuar extracción; cotejar audio y voces, el relato de radiocarbono y fuentes patrísticas, epigráficas y arqueológicas sin elevar tradiciones o hipótesis a hechos."
+          "nextAction": "F42: cotejar audio y voces y comprobar la integridad del TXT. Contrastes nuevos: inscripción del osario de Caifás (Museo de Israel); autenticidad discutida de inscripción del osario de Santiago (JAS 2004); Betesda y Siloé contextualizan la topografía, no prueban milagros. Continuar Nazaret/Belén y estudios de la Sábana Santa. Mantener separado contexto arqueológico de hechos narrados."
         }
       },
       {
