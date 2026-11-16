@@ -23,10 +23,13 @@ def chunk(kind: bytes, body: bytes) -> bytes:
 
 
 def minimal_png() -> bytes:
-    ihdr = struct.pack(">IIBBBBB", 1, 1, 8, 2, 0, 0, 0)
+    # The production sanitiser deliberately rejects images smaller than 640×350.
+    width, height = 640, 350
+    ihdr = struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0)
+    pixels = (b"\x00" + b"\xff\xff\xff" * width) * height
     return (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", ihdr) +
             chunk(b"tEXt", b"Author\x00PRIVATE-LABEL") +
-            chunk(b"IDAT", zlib.compress(b"\x00\xff\xff\xff")) +
+            chunk(b"IDAT", zlib.compress(pixels)) +
             chunk(b"IEND", b""))
 
 
