@@ -762,7 +762,7 @@ window.IDEA_TELARANA_F53_REVIEW =
       "podcastNotes": []
     },
     {
-      "id": "f53-templo-ptah-karnak",
+      "id": "f53-templo-ptah-localizacion-karnak",
       "a": "f53-templo-ptah-karnak",
       "b": "f53-karnak",
       "type": "Santuario situado en el complejo",
