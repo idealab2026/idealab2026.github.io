@@ -1491,7 +1491,7 @@
       "transcriptAudioMatched": false,
       "sourceNodesDocumented": 18,
       "sourceRelationsDocumented": 25,
-      "personsProfiled": 3,
+      "personsProfiled": 6,
       "documentaryChecks": 7,
       "timelineVerifiedEventsCommitted": 5,
       "qualityNotes": "Segunda revisión documental F32: contraste OTAN Lisboa 2010/Madrid 2022, Agenda ONU 2015 y causa española por cartas explosivas. Información judicial de 2024 posterior a la entrevista; no vincular a Rusia sin prueba. Transcripción NotebookLM sin audio, voces ni minutajes fiables. Tercera revisión: reunión Burns–Naryshkin, Ankara 14-11-2022, contrastada; agenda oficial de riesgo nuclear. La conjetura de pactos secretos permanece sin acreditación.",
@@ -4683,7 +4683,7 @@
           "signals": {
             "entities": 18,
             "relations": 25,
-            "biographies": 3,
+            "biographies": 6,
             "statements": 5,
             "independentChecks": 3,
             "verifiedTimelineEvents": 5,
