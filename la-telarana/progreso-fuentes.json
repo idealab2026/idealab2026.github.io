@@ -5587,7 +5587,7 @@
           "inReview": false,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": null
+          "lastUpdated": "2026-11-16"
         },
         "analysisCoverage": {
           "percent": 0,
@@ -5595,17 +5595,58 @@
           "readyForDeepReview": false,
           "confidence": "estimacion_operativa_no_medicion_de_exhaustividad",
           "audioVerified": false,
-          "nextAction": "Identificar el recurso original F49 y verificar si coincide con el artículo homónimo; continuar contrastes independientes."
+          "nextAction": "Identificar documento o URL exacta de F49. Si coincide con Celtiberia, verificar la identidad y proceder a una revisión canónica; mientras, no computar el artículo candidato como fuente original ni fechar Atlántida en la cronología."
         },
         "supplementalResearch": {
           "candidateUrl": "https://www.celtiberia.net/es/biblioteca/?id=3063",
           "candidateAuthor": "Javier Torres (según la página)",
           "identityWithOriginalConfirmed": false,
-          "scope": "Artículo homónimo revisado por separado; F49 original permanece no identificada y al 0 %.",
-          "entitiesInCandidateModule": 11,
-          "relationsInCandidateModule": 13,
-          "independentTextualChecks": 2,
-          "module": "la-telarana/fuente-49-candidato.js"
+          "scope": "Se leyó el artículo homónimo íntegro y se contrastaron afirmaciones específicas; no se ha recuperado ni identificado la F49 original (sin URL, archivo o autor), por lo que el porcentaje de F49 permanece 0 %, la revisión continúa pendiente y este módulo sigue como fuente suplementaria independiente.",
+          "entitiesInCandidateModule": 19,
+          "relationsInCandidateModule": 32,
+          "independentTextualChecks": 6,
+          "module": "la-telarana/fuente-49-candidato.js",
+          "candidatePublishedAt": "2008-01-04",
+          "candidateCategory": "Leyendas",
+          "externalReviewStage": "segunda_revision_articulo_candidato_contrastes_sin_identidad",
+          "additionalChecks": [
+            {
+              "topic": "Ritual de captura de toros sin hierro",
+              "text": "Critias 119d-120a",
+              "conclusion": "Prohibición ritual no equivale a cronología de Edad de Piedra",
+              "url": "https://www.platonicfoundation.org/translation/critias/"
+            },
+            {
+              "topic": "Pelasgos y Atlántida",
+              "text": "Timeo y Critias + Oxford Classical Dictionary",
+              "conclusion": "No se corrobora su transmisión desde la Atlántida por Platón",
+              "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/549686278"
+            },
+            {
+              "topic": "Pélagos y etnónimo pelasgos",
+              "text": "Middle Liddell",
+              "conclusion": "La semejanza de palabras no demuestra etimología compartida",
+              "url": "https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionary-entries.atlas_v1%3Amiddle-liddell.perseus-eng2-n25370/"
+            },
+            {
+              "topic": "Ascenso posglacial del mar",
+              "text": "NASA Sea Level Change",
+              "conclusion": "Fenómeno geológico documentado pero sin prueba de identificación atlante",
+              "url": "https://sealevel.nasa.gov/faq/13/how-long-have-sea-levels-been-rising-how-does-recent-sea-level-rise-compare-to-that-over-the-previous/"
+            },
+            {
+              "topic": "Paralelos de diluvios, Noia y navegantes",
+              "text": "Celtiberia 2008",
+              "conclusion": "Analogías legendarias y escenarios especulativos, no migraciones acreditadas",
+              "url": "https://www.celtiberia.net/es/biblioteca/?id=3063"
+            },
+            {
+              "topic": "Lectura política y literaria",
+              "text": "L'Antiquité Classique 1982",
+              "conclusion": "Interpretación filosófica fundamentada, no identificación arqueológica",
+              "url": "https://www.persee.fr/doc/antiq_0770-2817_1982_num_51_1_2060"
+            }
+          ]
         }
       },
       {
