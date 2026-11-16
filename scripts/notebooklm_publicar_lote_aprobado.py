@@ -136,8 +136,9 @@ def prepare_pr(pending):
     ])
     command([
         "git", "-c", "user.name=IDEA LAB",
-        "-c", "user.email=idealab.research2026@gmail.com",
-        "commit", "-m", "Biblioteca: publicar lote revisado #38 y #91",
+        "-c", "user.email=350414243+idealab2026@users.noreply.github.com",
+        "commit", "--author", "IDEA LAB <350414243+idealab2026@users.noreply.github.com>",
+        "-m", "Biblioteca: publicar lote revisado #38 y #91",
     ], cwd=ROOT)
     command(["git", "push", "-u", "origin", BRANCH], cwd=ROOT, timeout=180)
     pr = command([
