@@ -62,7 +62,19 @@ class Lote5CorregidasTests(unittest.TestCase):
         approvals=json.loads(APPROVAL.read_text(encoding="utf-8"))
         published=json.loads(INDEX.read_text(encoding="utf-8"))["books"]["conde-montecristo"]["chapters"]
         candidates={x["issue"]:x for x in json.loads(CANDIDATES.read_text(encoding="utf-8"))["items"]}
-        self.assertNotIn(candidates[43]["video_id"],published)
+        # #43 was blocked at the time of this four-item manifest, but a later
+        # correction now permits it only if its own independently approved hash matches.
+        video43 = candidates[43]["video_id"]
+        if video43 in published:
+            approval43 = json.loads(
+                (APPROVAL.parent / "APROBADA_CORREGIDA_43_2026-11-16.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(published[video43],
+                             f"./infografias/conde-montecristo/{video43}.png")
+            img43 = INDEX.parent / "conde-montecristo" / (video43 + ".png")
+            self.assertTrue(img43.is_file())
+            self.assertEqual(hashlib.sha256(img43.read_bytes()).hexdigest(),
+                             approval43["corrected_sha256"])
         for row in validate_manifest(approvals):
             vid=row["video_id"]
             if vid in published:
