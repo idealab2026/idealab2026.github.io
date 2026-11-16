@@ -18,7 +18,7 @@ const data={nodes:[{
  podcastNotes:[]
 }],edges:[]};
 const normalizeEntityName=s=>String(s||"").normalize("NFD")
- .replace(/\\p{M}/gu,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ");
+ .replace(/\p{M}/gu,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ");
 const context={data,normalizeEntityName,safePhoto:x=>x||""};
 vm.runInNewContext(methods,context);
 
@@ -60,7 +60,7 @@ assert(context.sanitizeIndependentBiography({
 const moduleRead=(path)=>{
  const text=read(path),p=text.indexOf("=",text.indexOf("window.IDEA_TELARANA_"));
  assert(p>=0);
- return JSON.parse(text.slice(p+1).trim().replace(/;\\s*$/,""));
+ return JSON.parse(text.slice(p+1).trim().replace(/;\s*$/,""));
 };
 const f53=moduleRead("la-telarana/fuente-53-arqueologia.js");
 const f67=moduleRead("la-telarana/fuente-67-reliquias.js");
