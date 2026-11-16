@@ -175,7 +175,7 @@ function mount(opts){
 /* Filtro de tipos del MAPA PRINCIPAL (3D, 2D y listado). No sustituye el filtro del esquema local. */
 function entityType(node){
  var raw=String(node&&node.kind||"Otro").trim()||"Otro";
- if(/^(instituci[oó]n|organizaciones?|organismos?|agencias?|institutos?|instituciones)$/i.test(raw))return "Institución / organización";
+ if(/^(instituci[oó]n|instituciones|organizaci[oó]n|organizaciones|organismos?|agencias?|institutos?)$/i.test(raw))return "Institución / organización";
  return raw;
 }
 function filterByTypes(nodes,edges,selected){
