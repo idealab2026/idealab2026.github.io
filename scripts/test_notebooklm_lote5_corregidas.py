@@ -43,6 +43,21 @@ class Lote5CorregidasTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_manifest(altered)
 
+
+    def test_zip_rejects_missing_or_unknown_files(self):
+        from notebooklm_publicar_lote5_corregidas import read_approved_zip
+        from pathlib import Path
+        import tempfile
+        import zipfile
+        approved=validate_manifest(json.loads(APPROVAL.read_text(encoding="utf-8")))
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/"incomplete.zip"
+            with zipfile.ZipFile(path,"w") as archive:
+                archive.writestr("issue-44-corregida.png",b"not a valid PNG")
+                archive.writestr("unapproved.png",b"unapproved")
+            with self.assertRaises(ValueError):
+                read_approved_zip(path,approved)
+
     def test_current_index_before_or_after_publication_is_safe(self):
         approvals=json.loads(APPROVAL.read_text(encoding="utf-8"))
         published=json.loads(INDEX.read_text(encoding="utf-8"))["books"]["conde-montecristo"]["chapters"]
