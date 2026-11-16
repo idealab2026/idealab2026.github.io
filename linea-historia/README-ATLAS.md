@@ -52,3 +52,21 @@ Una vez autorizados los materiales, descomprimir el paquete en la raíz del repo
 5. Pulsar un acontecimiento contemporáneo: se abre la misma ficha lateral existente.
 6. Activar y desactivar Pantalla completa y comprobar escritorio y móvil.
 7. Si se importa el Excel, comprobar que las 75 imágenes sin datar se muestran solo en la galería editorial y no en el año 0.
+
+## Revisión de las 81 imágenes incrustadas — 16/11/2026
+
+Se revisaron las 81 imágenes de la pestaña `LÍNEA TEMPORAL` del Excel personal. La tabla pública `atlas-inventory.json` incluye la celda de origen, temática observada, fecha explícita cuando existe y estado de reutilización. **No publica el contenido binario de las imágenes originales**, ya que el Excel no prueba su licencia.
+
+Se identificaron seis ilustraciones con fecha explícita. Se publican **mapas alternativos de Wikimedia Commons**, con fecha, autores y licencia de cada alternativa en `atlas-examples.json`, manteniendo la referencia a la imagen del Excel:
+- image3.png · KF71 · República romana, 44 a. C. → `commons-roman-republic-44`.
+- image4.jpg · JC57 · Guerra del Peloponeso, 431 a. C. → `commons-peloponnesian-431`.
+- image5.png · LI67 · Imperio romano, 117 d. C. → `commons-rome-117` (existente).
+- image28.png · JK58 · Alejandro Magno, c. 323 a. C. → `commons-alexander-323`.
+- image30.png · JT57 · Segunda guerra púnica, 218 a. C. → `commons-punic-218`.
+- image68.png · LH98 · Año de los cuatro emperadores, 69 d. C. → `commons-roman-69`.
+
+El resto —75 imágenes— tiene catalogación por tema pero no fecha acreditada. Entre ellas se encuentran capturas de terceros, infografías, genealogías y gráficos científicos. **image38.png, AO8, muestra una marca de agua comercial**; no publicarla sin licencia de Shutterstock u otra autorización válida. Los mapas originales pueden también tener derechos de autor, incluso si estaban almacenados en el Excel privado.
+
+Se mantiene accesible el paquete original optimizado y su informe privado para revisión. Para publicar un original, se debe documentar como mínimo fuente exacta, autor, licencia/permiso, atribución y fecha histórica que representa. Si tiene licencia libre verificable, se incorpora a `atlas-imported.json` más el archivo correspondiente en `atlas-media/`, y se añade expresamente al workflow de Pages tras una comprobación de derechos.
+
+**Esta fase publica el inventario completo y seis alternativas de las imágenes fechadas, no los 81 originales del archivo.**
