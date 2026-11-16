@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F33_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Las grafías y voces de la transcripción automática requieren cotejo del audio. Las cinco hijas se identifican por el archivo familiar, no por nombres pronunciados individualmente en el vídeo. Un estudio independiente distingue 19 embarazos y diez descendientes supervivientes. El archivo Rothschild es una fuente vinculada, y la leyenda de Waterloo se trata críticamente; no se atribuyen conspiraciones como hechos. PR nueva: discrepancia cronológica entre Samuel Oppenheimer (†1703) y aprendizaje de Mayer (1757); Jacob Wolf Oppenheimer identificado por archivo familiar. No se imputa literalidad a voz sin escucha."
+    "methodologicalNote": "Las grafías y voces de la transcripción automática requieren cotejo del audio. Las cinco hijas se identifican por el archivo familiar, no por nombres pronunciados individualmente en el vídeo. Un estudio independiente distingue 19 embarazos y diez descendientes supervivientes. El archivo Rothschild es una fuente vinculada, y la leyenda de Waterloo se trata críticamente; no se atribuyen conspiraciones como hechos. PR nueva: discrepancia cronológica entre Samuel Oppenheimer (†1703) y aprendizaje de Mayer (1757); Jacob Wolf Oppenheimer identificado por archivo familiar. No se imputa literalidad a voz sin escucha. Se evita expresamente representar la confusión de nombre como relación personal entre Samuel y Jacob Wolf: ambas identidades se separan en fichas, sin inventar parentesco."
   },
   "nodes": [
     {
@@ -767,17 +767,6 @@ window.IDEA_TELARANA_F33_REVIEW =
       "claimStatus": "identificacion_automatic_transcript_disputed",
       "note": "El TXT atribuye a Samuel la formación de Mayer, pero es cronológicamente imposible. No se establece relación formativa entre Samuel y Mayer; la grafía y voz siguen pendientes de cotejo.",
       "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
-      "podcastNotes": []
-    },
-    {
-      "id": "f33-jacob-samuel-confusion",
-      "a": "f33-jacob-wolf-oppenheimer",
-      "b": "f33-samuel-oppenheimer",
-      "type": "Identidades confundidas en la transcripción",
-      "confidence": "indicio",
-      "claimStatus": "contraste_identidad_no_equivale_a_parentesco",
-      "note": "Vínculo editorial de desambiguación únicamente. No acredita parentesco, colaboración ni relación de negocio entre ambos individuos.",
-      "source": "https://www.rothschildarchive.org/business/",
       "podcastNotes": []
     }
   ]
