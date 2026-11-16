@@ -42,6 +42,8 @@ assert.ok(acad.y>=-3000&&sargon.y>=-3000,"Records outside timeline historical ax
 // The preceding bug returned filtered records but never moved the viewport.
 assert.ok(src.includes("jumpToYear(sy(hits[0]))"),"Input must navigate to first hit");
 assert.ok(src.includes("if(first)navigateSearchResult(first)"),"Enter must open a hit");
+assert.ok(src.includes('e.key==="Enter"&&query.length>=2'),"Empty search must not navigate");
+assert.ok(src.includes("incomingHits.length?sy(incomingHits[0]):1900"),"Early search must navigate after initial data load");
 assert.ok(src.includes("b.addEventListener(\"click\",function(){navigateSearchResult(d)})"),"Results must be selectable");
 assert.ok(src.includes("updateSearchResults(records)"),"Result list must refresh on render");
 assert.ok(src.includes("query=geoFold(text)"),"User query must be accent-insensitive");
