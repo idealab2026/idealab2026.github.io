@@ -16,20 +16,33 @@ from notebooklm_revisar_lote5 import (
 
 
 class Lote5Tests(unittest.TestCase):
-    def test_candidates_are_exactly_eight_unapproved(self):
+    def test_candidates_track_editorial_approval_and_publication(self):
+        """The historical intake must remain valid before and after approved releases."""
         data = json.loads(CANDIDATES.read_text(encoding="utf-8"))
         rows = validate_manifest(data)
         self.assertEqual({x["issue"] for x in rows}, {43, 44, 46, 50, 87, 89, 90, 92})
+        # This is the original intake status, not the current approval status.
         self.assertEqual(data["review_status"], "PENDIENTE_DE_REVISION_EDITORIAL")
         catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
         public = json.loads(PUBLIC_INDEX.read_text(encoding="utf-8"))
         book = next(b for b in catalog["books"] if b["slug"] == "conde-montecristo")
         all_ids = {c["id"] for c in book["chapters"]}
-        indexed = set(public["books"]["conde-montecristo"].get("chapters", {}))
+        indexed = public["books"]["conde-montecristo"].get("chapters", {})
+        approved = {46, 89, 90}
+        rejected = {43, 44, 50, 87, 92}
+        self.assertEqual(approved | rejected, {row["issue"] for row in rows})
         for row in rows:
             self.assertIn(row["video_id"], all_ids)
-            self.assertNotIn(row["video_id"], indexed)
             self.assertEqual(row["source_url"].rsplit("_", 1)[-1], str(row["chapter"]))
+            if row["issue"] in rejected:
+                self.assertNotIn(row["video_id"], indexed,
+                                 f'#{row["issue"]} requires editorial correction')
+            elif row["video_id"] in indexed:
+                expected = (f'./infografias/{row["book"]}/'
+                            f'{row["video_id"]}.png')
+                self.assertEqual(indexed[row["video_id"]], expected)
+                self.assertTrue((PUBLIC_INDEX.parent / "conde-montecristo" /
+                                 f'{row["video_id"]}.png').is_file())
 
     def test_all_original_hashes_match_prior_audit(self):
         audit = (CANDIDATES.parent / "REVISION_LOTE_30_2026-11-15.md").read_text(encoding="utf-8")
