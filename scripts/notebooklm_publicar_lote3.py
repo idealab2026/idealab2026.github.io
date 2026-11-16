@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""Preparar UNA PR con las infografías autorizadas mediante issue + SHA-256.
+"""Publicar el lote 3 de PNG de la Biblioteca, con validación estricta SHA-256.
 
-Uso:
-  python3 scripts/notebooklm_publicar_lote_aprobado.py
-  python3 scripts/notebooklm_publicar_lote_aprobado.py --execute
+Uso (solo lectura):
+  python3 scripts/notebooklm_publicar_lote3.py
+Uso (crear PR, sin fusionar):
+  python3 scripts/notebooklm_publicar_lote3.py --execute
+Uso (crear PR y publicarla):
+  python3 scripts/notebooklm_publicar_lote3.py --publish
 
-El comando no genera infografías y nunca hace merge automático ni publica sin PR.
-Los originales y las credenciales permanecen en el Mac.
+No genera imágenes ni reintenta NotebookLM. Comprueba hashes y ficheros, crea
+una única PR en GitHub y solo con --publish la fusiona automáticamente.
+Los originales y las credenciales permanecen exclusivamente en el Mac.
 """
 from __future__ import annotations
 
