@@ -13,8 +13,13 @@ import argparse
 import hashlib
 import html
 import json
+import os
 import re
+import tempfile
+import zipfile
 from pathlib import Path
+
+from notebooklm_infografias import sanitized_png
 
 ROOT = Path(__file__).resolve().parents[1]
 PENDING = Path.home() / "Pictures/IDEA-LAB/NotebookLM/Pendientes"
@@ -23,6 +28,7 @@ CANDIDATES = ROOT / "biblioteca-montecristo/CANDIDATAS_LOTE5_2026-11-16.json"
 CATALOG = ROOT / "biblioteca-montecristo/catalogo.json"
 PUBLIC_INDEX = ROOT / "biblioteca-montecristo/infografias/index.json"
 DEFAULT_REPORT = Path.home() / "Downloads/IDEA_LAB_QA_LOTE5.html"
+DEFAULT_ZIP = Path.home() / "Downloads/IDEA_LAB_LOTE5_REVISION_8PNG.zip"
 PNG_SIGNATURE = bytes((137, 80, 78, 71, 13, 10, 26, 10))
 SHA_256 = re.compile(r"[a-f0-9]{64}\Z")
 
@@ -136,9 +142,72 @@ def render_report(rows: list[dict]) -> str:
     )
 
 
+def export_review_zip(rows: list[dict], items: list[dict], destination: Path) -> dict:
+    """Produce a private, metadata-stripped ZIP only after full technical validation.
+
+    Every entry is derived from the eight approved-for-inspection paths.
+    No cookie, NotebookLM state, original path or private token is archived.
+    Editorial approval is deliberately *not* implied.
+    """
+    if not rows or len(rows) != len(items):
+        raise ValueError("Listado de revisión incompleto.")
+    row_map = {row["issue"]: row for row in rows}
+    if len(row_map) != len(items):
+        raise ValueError("IDs repetidos.")
+    for item in items:
+        row = row_map.get(item["issue"])
+        if not row or not row["technical_ok"] or row["published"]:
+            raise ValueError(f'#{item["issue"]}: preflight no válido; se cancela el ZIP.')
+    destination = destination.expanduser().resolve()
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    fd, temp_name = tempfile.mkstemp(prefix=".idea-lab-lote5-", suffix=".zip", dir=destination.parent)
+    os.close(fd)
+    temporary = Path(temp_name)
+    summary = []
+    try:
+        with zipfile.ZipFile(temporary, "w", compression=zipfile.ZIP_STORED) as archive:
+            for item in items:
+                row = row_map[item["issue"]]
+                source = Path(row["path"])
+                expected = PENDING / f'issue-{item["issue"]}.png'
+                # The paths must be literal protected local originals, not symlinks.
+                # For isolated unit tests, PENDING is replaced with a temporary root.
+                if source.is_symlink() or not source.is_file() or source.resolve() != expected.resolve():
+                    raise ValueError(f'#{item["issue"]}: ruta de original insegura.')
+                raw = source.read_bytes()
+                raw_sha = hashlib.sha256(raw).hexdigest()
+                if raw_sha != item["sha256"]:
+                    raise ValueError(f'#{item["issue"]}: el original ha cambiado de SHA.')
+                clean = sanitized_png(raw)
+                filename = f'issue-{item["issue"]}.png'
+                archive.writestr(filename, clean)
+                summary.append({
+                    "issue": item["issue"],
+                    "chapter": item["chapter"],
+                    "video_id": item["video_id"],
+                    "file": filename,
+                    "original_sha256": raw_sha,
+                    "export_sha256": hashlib.sha256(clean).hexdigest(),
+                    "editorial_approval": False,
+                })
+            archive.writestr("manifest.json", json.dumps({
+                "version": 1,
+                "status": "PENDIENTE_DE_REVISION_EDITORIAL",
+                "purpose": "Examen privado y contraste visual; no equivale a publicación.",
+                "items": summary,
+            }, ensure_ascii=False, indent=2) + "\n")
+        os.replace(temporary, destination)
+    finally:
+        temporary.unlink(missing_ok=True)
+    return {"path": str(destination), "images": len(summary)}
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--verify-only", action="store_true", help="Solo diagnóstico de integridad; sin HTML")
+    parser.add_argument("--export-zip", action="store_true",
+                        help="Crear ZIP privado de las ocho imágenes sin metadatos auxiliares")
+    parser.add_argument("--zip-output", type=Path, default=DEFAULT_ZIP,
+                        help="Ruta local del ZIP para revisión en ChatGPT")
     parser.add_argument("--output", type=Path, default=DEFAULT_REPORT,
                         help="Ruta local del visor HTML privado")
     args = parser.parse_args()
@@ -160,6 +229,11 @@ def main():
         print("Visor privado:", output)
     if not all(x["technical_ok"] for x in rows):
         raise SystemExit(1)
+    if args.export_zip:
+        result = export_review_zip(rows, items, args.zip_output)
+        print(f'ZIP privado generado: {result["path"]} ({result["images"]} PNG)')
+        print("Siguiente paso: adjuntar el ZIP en la conversación para revisar las láminas.")
+        print("Ningún PNG se ha enviado a GitHub ni ha sido aprobado editorialmente.")
 
 
 if __name__ == "__main__":
