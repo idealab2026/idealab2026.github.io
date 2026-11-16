@@ -135,6 +135,69 @@ assert(Number(params.svg.attrs.height)>307,"La fila debe crecer dinámicamente a
 const longWord="ContrarrevolucionariamenteSuperdocumentalmenteIdentificada";
 assert.equal(service.wrapRelationLabel(longWord,18).join(""),longWord,"Palabra sin espacios: representar todos sus caracteres");
 
+// Caso real del Duque de Lerma: los nombres y subtítulos largos deben verse completos en cada tarjeta.
+const lermaCards=[
+ {id:"f04-rey",name:"Felipe III",kind:"Persona",subtitle:"Rey de España (1598–1621)"},
+ {id:"f04-compraventas",name:"Compraventas de propiedades de Lerma a la Corona (1601)",kind:"Acontecimiento",subtitle:"Documentación contractual en el Archivo General de Simancas"},
+ {id:"f04-lerma",name:"Francisco Gómez de Sandoval y Rojas, duque de Lerma",kind:"Persona",subtitle:"Valido de Felipe III (1598–1618) · 1553–1625"},
+ {id:"f04-corte",name:"Traslado de la Corte a Valladolid (1601–1606)",kind:"Acontecimiento",subtitle:"Cambio de sede de la Corte durante Felipe III"}
+];
+const lermaEdges=[
+ {id:"f04-compraventas-edge",a:"f04-rey",b:"f04-compraventas",type:"Comprador por la Corona"},
+ {id:"f04-lerma-edge",a:"f04-rey",b:"f04-lerma",type:"Valido del monarca"},
+ {id:"f04-corte-edge",a:"f04-rey",b:"f04-corte",type:"Traslado de la Corte durante su reinado"}
+];
+panel.update(lermaCards,lermaEdges,{kind:"node",id:"f04-rey"});
+const renderedCards=params.svg.children.filter(g=>g.attrs.class?.startsWith("local-node"));
+assert.equal(renderedCards.length,4);
+for(const node of lermaCards){
+ const card=renderedCards.find(g=>g.children.some(child=>child.tagName==="title"&&child.textContent.includes(node.name)));
+ assert(card,"Tarjeta ausente: "+node.name);
+ const titleLines=card.children.filter(child=>child.attrs.class==="local-name").map(child=>child.textContent);
+ const subtitleLines=card.children.filter(child=>child.attrs.class==="local-sub").map(child=>child.textContent);
+ assert.equal(titleLines.join(" "),node.name,"El nombre debe aparecer completo dentro de la tarjeta: "+node.id);
+ assert.equal(subtitleLines.join(" "),node.subtitle,"El subtítulo debe aparecer completo dentro de la tarjeta: "+node.id);
+ assert(titleLines.every(line=>!line.includes("…"))&&subtitleLines.every(line=>!line.includes("…")),
+  "No insertar elipsis en la tarjeta: "+node.id);
+ const rect=card.children.find(child=>child.tagName==="rect");
+ const lastBaseline=Math.max(...card.children.filter(child=>child.tagName==="text").map(child=>Number(child.attrs.y)));
+ assert(lastBaseline<Number(rect.attrs.y)+Number(rect.attrs.height),
+  "Todo el texto debe quedar dentro del borde inferior: "+node.id);
+ if(node.id!=="f04-rey"){
+  assert(subtitleLines.length>1,"Subtítulo extenso debe permitir varias líneas: "+node.id);
+ }
+}
+const lermaNeighborCards=renderedCards.filter(card=>card.attrs.class==="local-node");
+const firstRowY=Math.min(...lermaNeighborCards.map(card=>Number(card.children.find(c=>c.tagName==="rect").attrs.y)));
+assert(lermaNeighborCards.every(card=>Number(card.children.find(c=>c.tagName==="rect").attrs.y)===firstRowY),
+ "Las tres tarjetas vecinas deben conservar la misma alineación vertical");
+const tallestCard=Math.max(...lermaNeighborCards.map(card=>Number(card.children.find(c=>c.tagName==="rect").attrs.height)));
+assert(tallestCard>90,"La fila debe aumentar su altura para mostrar contenido completo");
+const edgePillsForLerma=params.svg.children.filter(g=>g.attrs.class?.startsWith("local-edge-pill"));
+const cardsStartY=Number(lermaNeighborCards[0].children.find(c=>c.tagName==="rect").attrs.y);
+assert(edgePillsForLerma.every(g=>{
+ const rect=g.children.find(c=>c.tagName==="rect");
+ return Number(rect.attrs.y)+Number(rect.attrs.height)<cardsStartY;
+}),"Las etiquetas de relaciones no deben solaparse con tarjetas extendidas");
+const extraNode={id:"f04-otro",name:"Otro vecino",kind:"Persona",subtitle:"Descripción breve"};
+const extraEdges=[...lermaEdges,{id:"f04-otro-edge",a:"f04-rey",b:"f04-otro",type:"Relación adicional"}];
+panel.update([...lermaCards,extraNode],extraEdges,{kind:"node",id:"f04-rey"});
+const allCardRects=params.svg.children.filter(g=>g.attrs.class?.startsWith("local-node")&&g.attrs.class!=="local-node is-center")
+ .map(g=>g.children.find(c=>c.tagName==="rect"));
+const rowYs=[...new Set(allCardRects.map(rect=>Number(rect.attrs.y)))].sort((a,b)=>a-b);
+assert.equal(rowYs.length,2,"Cuatro vecinos deben generar dos filas");
+const row1Bottom=Math.max(...allCardRects.filter(rect=>Number(rect.attrs.y)===rowYs[0])
+ .map(rect=>Number(rect.attrs.y)+Number(rect.attrs.height)));
+assert(rowYs[1]>row1Bottom,"La segunda fila no puede montarse sobre tarjetas de altura variable");
+const veryLongName="ExtraordinariamenteDocumentalmenteLarguísimoSinEspacios";
+panel.update([{id:"longcenter",name:"Centro"},{id:"long",name:veryLongName,subtitle:"Nombre sin espacios"}],
+ [{id:"longedge",a:"longcenter",b:"long",type:"Vínculo"}],{kind:"node",id:"longcenter"});
+const unbroken=params.svg.children.find(g=>g.attrs.class==="local-node");
+assert(unbroken);
+const fragments=unbroken.children.filter(c=>c.attrs.class==="local-name").map(c=>c.textContent);
+assert.equal(fragments.join(""),veryLongName,"Tampoco cortar palabras largas sin espacios");
+assert(fragments.every(line=>!line.includes("…")),"No sustituir el final de una palabra larga por elipsis");
+
 // La anchura y altura del mapa responden a páginas con más filas; no quedan vacíos gigantes.
 const many=[{id:"a",name:"Centro"}],manyEdges=[];
 for(let i=0;i<29;i++){many.push({id:"node-"+i,name:"Vecino "+String(i).padStart(2,"0")});manyEdges.push({id:"e-"+i,a:"a",b:"node-"+i,type:"Vínculo"})}
