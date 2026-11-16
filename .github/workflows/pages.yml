@@ -224,6 +224,10 @@ jobs:
           cp linea-historia/world-110m.json dist/linea-historia/world-110m.json
           cp linea-historia/estudios-telarana.json dist/linea-historia/estudios-telarana.json
           cp linea-historia/timeline-v4.js dist/linea-historia/timeline-v4.js
+          # Atlas visual: los recursos referenciados deben existir en la distribución pública.
+          cp linea-historia/atlas.js dist/linea-historia/atlas.js
+          cp linea-historia/atlas.css dist/linea-historia/atlas.css
+          cp linea-historia/atlas-examples.json dist/linea-historia/atlas-examples.json
           cp linea-historia/favicon.png dist/linea-historia/favicon.png
           test -s dist/linea-historia/favicon.png
           cp la-telarana/icon.svg dist/la-telarana/icon.svg
@@ -328,8 +332,14 @@ jobs:
           test -f dist/linea-historia/data.json
           test -s dist/linea-historia/estudios-telarana.json
           test -s dist/linea-historia/timeline-v4.js
+          test -s dist/linea-historia/atlas.js
+          test -s dist/linea-historia/atlas.css
+          test -s dist/linea-historia/atlas-examples.json
           node --check dist/linea-historia/timeline-v4.js
+          node --check dist/linea-historia/atlas.js
           grep -q 'src="./timeline-v4.js' dist/linea-historia/index.html
+          grep -q 'src="./atlas.js' dist/linea-historia/index.html
+          node scripts/test_historia_atlas.mjs dist/linea-historia
           test -f dist/la-telarana/index.html
           grep -q 'id="load-audit"' dist/la-telarana/index.html
           grep -q 'Auditoría de carga: los enlaces' dist/la-telarana/index.html
