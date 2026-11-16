@@ -1,5 +1,7 @@
 # Revisión editorial · Biblioteca IDEA LAB
 
+> **Actualización 16/11/2026:** se han publicado las infografías #86 (capítulo 44) y #88 (capítulo 46). El inventario y las cifras siguientes describen el triaje de los 99 originales antes de esa publicación; no representan el contador actual. Véase [la revisión del lote publicado](./REVISION_PUBLICACION_2026-11-16.md). El resto continúa pendiente de revisión o corrección.
+
 **Estado:** triaje visual preliminar de **69 PNG únicos** recibidos en dos archivos ZIP (35+35 PNG, una copia exacta de #16). **No hay ninguna imagen aprobada ni publicada** por este registro. Última segunda pasada selectiva: 15/11/2026. Integridad técnica de los 69 originales validada el 15/11/2026: PNG decodificables, 2752×1536, SHA-256 coincidente con inventario, sin duplicados binarios entre los 69 únicos. **Esa validación técnica no equivale a conformidad editorial.**
 
 ## Criterio de calidad
@@ -194,6 +196,6 @@ Detalle de cada incidencia, motivo y SHA-256: [REVISION_LOTE_30_2026-11-15.md](.
 
 **Criterio de aprobación:** ningún estado anterior equivale a «aprobada» ni «publicable». El primer filtro separa fallos visibles de puntos por contrastar. La publicación exige análisis de contenido, contraste con la fuente, privacidad/derechos y una aprobación explícita por archivo y SHA-256 exacto.
 
-**No se ha publicado ninguna imagen.** El índice de la web `biblioteca-montecristo/infografias/index.json` permanece sin modificaciones en esta auditoría.
+**Estado en el cierre de la auditoría del 15/11:** ninguna imagen estaba publicada. El 16/11 se publicaron #86 y #88; el resto requiere revisión o corrección.
 
 **Siguiente paso:** reparar los errores y contrastar primero las 10 candidatas sin defectos evidentes del lote nuevo (#43, #44, #46, #50, #86, #87, #89, #90, #91, #92); se revisarán también las 52 anteriores en idénticas condiciones. No subir en bloque todas las infografías generadas.
