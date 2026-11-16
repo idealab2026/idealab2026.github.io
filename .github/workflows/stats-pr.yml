@@ -39,6 +39,7 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_notebooklm_lote5_corregidas.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_43_corregida.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_lote6.py' -v
+          python3 -m unittest discover -s scripts -p 'test_notebooklm_lote6_publicar.py' -v
           node --check stats.js
           node --test scripts/test_stats_ui.mjs
       - name: Verificar generación sin secretos ni datos simulados
