@@ -6,11 +6,11 @@ window.IDEA_TELARANA_F53_REVIEW =
     "sourceOrder": 53,
     "title": "F53 · Pirámides y antiguo Egipto",
     "url": "https://www.youtube.com/watch?v=yhHoetTIARc",
-    "reviewStage": "segunda_revision_documental_y_de_procedencia_sin_audio",
+    "reviewStage": "tercera_revision_ampliada_karnak_diplomacia_mitos_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "El TXT automático no contiene minutajes fiables ni asignación de voces. «Goblitpay» se identifica tentativamente como Göbekli Tepe, «Eric Bondaniken» por la referencia al libro de Däniken y «Lord Carnarbon» como quinto conde de Carnarvon. La especulación sobre autismo de Howard Carter procede de una anécdota atribuida y NO es un diagnóstico verificable. Los diarios de Oxford y la ficha UNESCO son documentos independientes; hipótesis y mitos permanecen diferenciados."
+    "methodologicalNote": "El TXT automático no contiene minutajes fiables ni asignación de voces. «Goblitpay» se identifica tentativamente como Göbekli Tepe, «Eric Bondaniken» por la referencia al libro de Däniken y «Lord Carnarbon» como quinto conde de Carnarvon. La especulación sobre autismo de Howard Carter procede de una anécdota atribuida y NO es un diagnóstico verificable. Los diarios de Oxford y la ficha UNESCO son documentos independientes; hipótesis y mitos permanecen diferenciados. Se añaden contrastes de Ptah/Sejmet (CFEETK), Ruy González de Clavijo y Enrique III (Encyclopaedia Iranica), Pedro Páez (CSIC), Rapa Nui (Nature 2024) y Younger Dryas (PNAS). Las versiones fonéticas del TXT («Taj», «Segmet», «Felipe Segi», «Junger Dryas») siguen sin cotejo acústico; no se atribuyen errores a la voz del invitado."
   },
   "nodes": [
     {
@@ -315,7 +315,7 @@ window.IDEA_TELARANA_F53_REVIEW =
       "name": "Conjunto monumental de Karnak",
       "kind": "Lugar",
       "subtitle": "Luxor, Egipto · recinto templario",
-      "note": "La transcripción de NotebookLM registra «templo de Carnac», referencia contextual al conjunto de Karnak en Luxor, distinto de Carnac en Francia. Se trata de una normalización editorial provisional, pendiente de cotejar la pronunciación con el audio; no debe modificarse el TXT original.",
+      "note": "La transcripción de NotebookLM registra «templo de Carnac», referencia contextual al conjunto de Karnak en Luxor, distinto de Carnac en Francia. Se trata de una normalización editorial provisional, pendiente de cotejar la pronunciación con el audio; no debe modificarse el TXT original. El CFEETK (CNRS) confirma que en Karnak existe un templo de Ptah con estatua de Sejmet; no valida las afirmaciones sobre energías o trance del relato.",
       "source": "https://whc.unesco.org/en/list/87/",
       "topic3d": "historia",
       "photo": "",
@@ -327,6 +327,182 @@ window.IDEA_TELARANA_F53_REVIEW =
           "timeSec": null,
           "status": "normalizacion_contextual_no_audio",
           "text": "La fuente menciona una capilla dentro del «templo de Carnac» en Egipto. Por el contexto geográfico la identificación probable es Karnak, Luxor. El topónimo debe cotejarse con audio antes de atribuir palabra exacta al invitado."
+        }
+      ]
+    },
+    {
+      "id": "f53-templo-ptah-karnak",
+      "name": "Templo de Ptah en Karnak",
+      "kind": "Lugar",
+      "subtitle": "Santuario egipcio · complejo de Karnak (Luxor)",
+      "note": "Santuario dedicado a Ptah en el recinto de Karnak. El Centre Franco-Égyptien d’Étude des Temples de Karnak (CNRS) documenta una capilla con una estatua de la diosa Sejmet; precisa que esa estatua no está en su emplazamiento original. En el TXT, «Taj» se identifica tentativamente como Ptah por el contexto, todavía sin cotejar audio.",
+      "source": "https://www.cfeetk.cnrs.fr/archives/?n=139277",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "identificacion_fonetica_contextual",
+          "transcriptSearch": "templo de Carnac",
+          "transcriptCharOffset": 31307,
+          "text": "El entrevistado describe una capilla en Karnak dedicada a «Taj» con una estatua de «Segmet». El centro arqueológico CFEETK documenta el templo de Ptah y la estatua de Sejmet; la identificación fonética y la atribución literal siguen pendientes de escucha."
+        }
+      ]
+    },
+    {
+      "id": "f53-sekhmet",
+      "name": "Sejmet (Sekhmet)",
+      "kind": "Divinidad",
+      "subtitle": "Diosa egipcia de cabeza de leona",
+      "note": "Sejmet (Sekhmet) es una divinidad del antiguo Egipto asociada con la guerra, la protección y la curación. El centro arqueológico CFEETK documenta una estatua de Sejmet en la capilla sur del templo de Ptah de Karnak y advierte que no está en su lugar original. Las sensaciones de energía y trance descritas por el entrevistado son experiencias o creencias relatadas, no efectos físicos demostrados por la escultura.",
+      "source": "https://www.cfeetk.cnrs.fr/archives/?n=139277",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "afirmacion_espiritual_atribuida_no_verificada",
+          "transcriptSearch": "diosa Segmet",
+          "transcriptCharOffset": 31950,
+          "text": "La fuente menciona una estatua de «Segmet» y atribuye a visitantes la creencia de que produce energías y estados alterados. Se identifica contextual y provisionalmente con Sejmet, sin afirmar comprobación científica de esos efectos."
+        }
+      ]
+    },
+    {
+      "id": "f53-clavijo",
+      "name": "Ruy González de Clavijo",
+      "kind": "Persona",
+      "subtitle": "Diplomático y viajero castellano · fallecido en 1412",
+      "note": "Ruy González de Clavijo fue camarero y embajador del rey Enrique III de Castilla ante Timur (Tamerlán). Encabezó la misión de 1403–1406 a Samarcanda, que legó una importante descripción del mundo timúrida. El TXT registra «Ruis González» y una corte «de Felipe Segi», pero la documentación histórica identifica al monarca como Enrique III: posible error del subtítulo automático, pendiente de escuchar audio.",
+      "source": "https://www.iranicaonline.org/articles/clavijo-ruy-gonzlez-de-d/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "normalizacion_nombre_y_contraste_cronologico",
+          "transcriptSearch": "Ruis González de Clavijo",
+          "transcriptCharOffset": 22076,
+          "text": "La fuente menciona a «Ruis González de Clavijo» viajando a Timur desde la corte de «Felipe Segi». Fuentes historiográficas acreditan que el embajador sirvió a Enrique III de Castilla, no a Felipe II; sin audio no se puede asignar el supuesto error al invitado."
+        }
+      ]
+    },
+    {
+      "id": "f53-enrique-iii",
+      "name": "Enrique III de Castilla",
+      "kind": "Persona",
+      "subtitle": "Rey de Castilla y León · 1390–1406",
+      "note": "Enrique III de Castilla (1379–1406) reinó desde 1390 hasta 1406. Su corte envió a Ruy González de Clavijo como embajador ante Timur entre 1403 y 1406. Se incorpora para contrastar un nombre de rey dudoso en el TXT de F53; no se afirma que el entrevistado pronunciara Enrique III ni que realmente dijera Felipe II sin escuchar el audio.",
+      "source": "https://www.iranicaonline.org/articles/clavijo-ruy-gonzlez-de-d/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.iranicaonline.org/articles/clavijo-ruy-gonzlez-de-d/",
+          "timeSec": null,
+          "status": "contraste_historico_externo_no_mencion_verificada",
+          "transcriptSearch": "Felipe Segi",
+          "transcriptCharOffset": 22129,
+          "text": "La documentación histórica vincula la embajada de Clavijo a Enrique III. El TXT contiene «Felipe Segi»; discrepancia por confirmar, no atribuible categóricamente al entrevistado."
+        }
+      ]
+    },
+    {
+      "id": "f53-pedro-paez",
+      "name": "Pedro Páez Xaramillo",
+      "kind": "Persona",
+      "subtitle": "Jesuita y cronista español · 1564–1622",
+      "note": "Pedro Páez Xaramillo, misionero jesuita español, visitó en 1618 los manantiales del Nilo Azul antes de su paso por el lago Tana y los describió detalladamente en su Historia de Etiopía. La historiografía precisa que las poblaciones y gobernantes etíopes ya conocían las fuentes y que existían noticias previas; fue el primer europeo en describirlas exhaustivamente, no su «descubridor» en sentido absoluto.",
+      "source": "https://doi.org/10.3989/chdj.2019.012",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "contraste_historico_contexto_colonial",
+          "transcriptSearch": "Pedro Páez",
+          "transcriptCharOffset": 21346,
+          "text": "La fuente presenta a Pedro Páez como descubridor de las fuentes del Nilo en Etiopía. Fernández (2019) demuestra que los etíopes las conocían y que Páez describió de modo completo los manantiales del Nilo Azul en 1618; no debe confundirse con el Nilo Blanco."
+        }
+      ]
+    },
+    {
+      "id": "f53-rapa-nui",
+      "name": "Rapa Nui (isla de Pascua)",
+      "kind": "Lugar",
+      "subtitle": "Isla polinesia · debate sobre colapso ecológico",
+      "note": "La entrevista utiliza a los rapanui como ejemplo de errores ambientales históricos. La hipótesis de un colapso demográfico preeuropeo por «ecocidio» es controvertida: un estudio de ADN antiguo publicado en Nature (2024) no halló evidencia de un desplome de población anterior al contacto europeo. Esto no excluye impactos ambientales humanos, pero impide presentar una autodestrucción demográfica como hecho demostrado.",
+      "source": "https://www.nature.com/articles/s41586-024-07881-4",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "afirmacion_historica_matizada_con_estudio_reciente",
+          "transcriptSearch": "los Rapanui",
+          "transcriptCharOffset": 16809,
+          "text": "El entrevistado menciona a los rapanui como ejemplo de errores ambientales que podríamos repetir. Un estudio genómico de 2024 cuestiona el relato simplificado de colapso demográfico preeuropeo; conservar el ejemplo como interpretación, no conclusión histórica cerrada."
+        }
+      ]
+    },
+    {
+      "id": "f53-mitos-diluvio",
+      "name": "Mitos del diluvio y atribuciones catastróficas",
+      "kind": "Hipótesis",
+      "subtitle": "Comparación de relatos y eventos ambientales",
+      "note": "La conversación discute si mitos de inundaciones dispersos se deben a un único cataclismo o a experiencias y temores compartidos. Una coincidencia temática no prueba una causa física común ni una civilización perdida. El Younger Dryas fue una oscilación climática real, pero no acredita por sí mismo un impacto cósmico global ni el origen universal de leyendas de diluvios.",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "hipotesis_historiografica_no_evento_acreditado",
+          "transcriptSearch": "el Junger Dryas",
+          "transcriptCharOffset": 45755,
+          "text": "El invitado menciona «el Junger Dryas» y critica la atribución de numerosos mitos a un solo cataclismo. La conexión directa entre cambios climáticos, impacto extraterrestre y relatos antiguos requiere demostrar cronologías y causalidad independientes."
+        }
+      ]
+    },
+    {
+      "id": "f38-younger-dryas",
+      "name": "Younger Dryas",
+      "kind": "Acontecimiento",
+      "subtitle": "Enfriamiento abrupto al final del Pleistoceno",
+      "note": "Episodio climático del final del Pleistoceno, distinto de la hipótesis controvertida de un impacto cósmico. El texto de F53 menciona una asociación especulativa con cataclismos y mitos del diluvio; las evidencias de clima no demuestran ninguna conexión causal única con tradiciones culturales globales.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4040610/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · pasaje identificable sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "contraste_climatologico_y_hipotesis_sin_audio",
+          "transcriptSearch": "el Junger Dryas",
+          "transcriptCharOffset": 45755,
+          "text": "En F53 se pronuncia fonéticamente «Junger Dryas» para comentar hipótesis catastrofistas y relatos de diluvio. Es una referencia al Younger Dryas, cuya realidad climática no demuestra un impacto extraterrestre ni un único evento histórico que originara todos los mitos."
         }
       ]
     }
@@ -561,6 +737,149 @@ window.IDEA_TELARANA_F53_REVIEW =
       "confidence": "indicio",
       "claimStatus": "mencion_toponimo_identificado_contextualmente",
       "note": "«Carnac» en el TXT automático se interpreta como Karnak por el contexto egipcio; el audio no está cotejado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-mention-templo-ptah",
+      "a": "f53-episodio",
+      "b": "f53-templo-ptah-karnak",
+      "type": "Lugar descrito, topónimo normalizado",
+      "confidence": "indicio",
+      "claimStatus": "identificacion_fonetica_contextual",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-mention-sekhmet",
+      "a": "f53-episodio",
+      "b": "f53-sekhmet",
+      "type": "Divinidad y estatua mencionadas",
+      "confidence": "indicio",
+      "claimStatus": "identificacion_fonetica_contextual",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-templo-ptah-localizacion-karnak",
+      "a": "f53-templo-ptah-karnak",
+      "b": "f53-karnak",
+      "type": "Santuario situado en el complejo",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_arqueologia",
+      "source": "https://www.cfeetk.cnrs.fr/archives/?n=139277",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-sekhmet-templo",
+      "a": "f53-sekhmet",
+      "b": "f53-templo-ptah-karnak",
+      "type": "Escultura conservada en capilla sur",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_arqueologia",
+      "source": "https://www.cfeetk.cnrs.fr/archives/?n=139277",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-mention-clavijo",
+      "a": "f53-episodio",
+      "b": "f53-clavijo",
+      "type": "Viajero mencionado en la entrevista",
+      "confidence": "indicio",
+      "claimStatus": "mencion_transcripcion_no_audio",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-clavijo-enrique",
+      "a": "f53-clavijo",
+      "b": "f53-enrique-iii",
+      "type": "Embajador del rey de Castilla",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_historia_diplomatica",
+      "source": "https://www.iranicaonline.org/articles/clavijo-ruy-gonzlez-de-d/",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-mention-paez",
+      "a": "f53-episodio",
+      "b": "f53-pedro-paez",
+      "type": "Explorador mencionado en entrevista",
+      "confidence": "indicio",
+      "claimStatus": "mencion_transcripcion_no_audio",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-mention-rapa-nui",
+      "a": "f53-episodio",
+      "b": "f53-rapa-nui",
+      "type": "Ejemplo histórico citado",
+      "confidence": "indicio",
+      "claimStatus": "mencion_y_ejemplo_no_prueba",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-rapa-nui-interpretacion",
+      "a": "f53-rapa-nui",
+      "b": "f53-metodo-arqueologico",
+      "type": "Contraste de hipótesis de ecocidio",
+      "confidence": "indicio",
+      "claimStatus": "interpretacion_historica_contestada",
+      "source": "https://www.nature.com/articles/s41586-024-07881-4",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-mention-dryas",
+      "a": "f53-episodio",
+      "b": "f38-younger-dryas",
+      "type": "Fenómeno climático mencionado",
+      "confidence": "indicio",
+      "claimStatus": "mencion_fonetica_contextual_no_audio",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-mention-diluvio",
+      "a": "f53-episodio",
+      "b": "f53-mitos-diluvio",
+      "type": "Tema sobre causalidad de mitos",
+      "confidence": "indicio",
+      "claimStatus": "mencion_transcripcion_no_audio",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-dryas-diluvio",
+      "a": "f38-younger-dryas",
+      "b": "f53-mitos-diluvio",
+      "type": "Vinculación especulativa debatida",
+      "confidence": "indicio",
+      "claimStatus": "hipotesis_no_causalidad_documentada",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "La asociación entre un episodio climático y múltiples mitos no está demostrada; se incluye como interpretación discutida y no como causalidad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-diluvio-metodo",
+      "a": "f53-mitos-diluvio",
+      "b": "f53-metodo-arqueologico",
+      "type": "Necesidad de evidencia independiente",
+      "confidence": "indicio",
+      "claimStatus": "reflexion_metodologica_entrevista",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "note": "Relación contextualizada; el audio de F53 permanece sin cotejar. Los hechos independientes proceden del documento externo enlazado.",
       "podcastNotes": []
     }
   ]
