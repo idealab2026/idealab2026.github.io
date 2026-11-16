@@ -1366,6 +1366,36 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.inscriptionsisraelpalestine.org/story/a-controversial-inscription-in-the-news/",
       "sourceTitle": "Ancient Inscriptions from Israel / Palestine · contexto crítico del osario",
       "reviewedAt": "2026-11-16"
+    },
+    "f44-tito-livio": {
+      "text": "Tito Livio (59 a. C.–17 d. C.) fue un historiador romano conocido por Ab urbe condita, narración de la historia de Roma desde sus orígenes. Vivió siglos después de los episodios de la primera Roma que reconstruye y dependió de tradiciones y autores anteriores. En F44 su nombre aparece al discutir la fundación romana y el saqueo galo: su texto es una fuente literaria valiosa para la tradición historiográfica, pero no equivale a una comprobación presencial de Rómulo, Breno o Camilo.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/was-camillus-right-roman-history-and-narratological-strategy-in-livy-5492/FE551ACB66FA772F8A7D778BBF29B6B2",
+      "sourceTitle": "Classical Quarterly · estudio crítico del relato de Tito Livio sobre el saqueo galo",
+      "reviewedAt": "2026-11-16"
+    },
+    "f44-anibal": {
+      "text": "Aníbal Barca (247–c. 183 a. C.) fue general cartaginés y principal comandante de Cartago en la Segunda Guerra Púnica contra Roma. Atravesó los Alpes con su ejército y obtuvo victorias en Trebia, Trasimeno y Cannas. En Cannas (216 a. C.) derrotó a una fuerza romana más numerosa mediante una maniobra de envolvimiento. Las cifras de bajas de Polibio y Tito Livio divergen y deben tratarse como estimaciones de fuentes antiguas, no como un censo de caídos.",
+      "source": "https://dcc.dickinson.edu/tr/nepos-hannibal-essays/4",
+      "sourceTitle": "Dickinson College Commentaries · Battle of Cannae",
+      "reviewedAt": "2026-11-16"
+    },
+    "f44-tiberio-graco": {
+      "text": "Tiberio Sempronio Graco (c. 163–133 a. C.) fue magistrado de la República romana. Como cuestor del cónsul Cayo Hostilio Mancino participó en las negociaciones con Numancia en 137 a. C. El acuerdo permitió retirar al ejército romano, pero fue rechazado posteriormente por las instituciones romanas. En 133 a. C. ejerció de tribuno de la plebe e impulsó reformas agrarias. No debe darse por acreditada sin referencia específica la cifra de 20.000 soldados que menciona la conversación F44.",
+      "source": "https://www.cambridge.org/core/books/cambridge-companion-to-the-roman-republic/power-and-process-under-the-republican-constitution/72F9A38F210BBF2B5FD9D7EF6AC59DBB",
+      "sourceTitle": "Cambridge Companion to the Roman Republic · Power and Process",
+      "reviewedAt": "2026-11-16"
+    },
+    "f44-diocles": {
+      "text": "Cayo Apuleyo Diocles, auriga originario de Lusitania, desarrolló su carrera en las facciones de carreras de carros de Roma durante el siglo II d. C. Una inscripción honorífica de su retiro en 146 registra 4.257 carreras, 1.462 victorias y 35.863.120 sestercios en premios. Es un registro epigráfico excepcional de éxito deportivo y volumen de premios, pero no indica automáticamente su patrimonio neto personal ni permite una conversión simple a salarios o euros actuales.",
+      "source": "https://pressbooks.bccampus.ca/spectaclesintheromanworldsourcebook/chapter/famous-charioteers/",
+      "sourceTitle": "Spectacles in the Roman World · transcripción de la inscripción de Diocles",
+      "reviewedAt": "2026-11-16"
+    },
+    "f44-trajano": {
+      "text": "Marco Ulpio Trajano (53–117 d. C.) gobernó el Imperio romano de 98 a 117. Sus campañas ampliaron el dominio romano y a finales de su reinado el Imperio alcanzó una de sus mayores extensiones territoriales, aunque parte de las conquistas orientales tuvo carácter efímero. En F44 aparece vinculado al apogeo territorial de 117. Las fronteras representadas en mapas históricos no deben confundirse con una ocupación uniforme ni con control efectivo idéntico en todas las regiones.",
+      "source": "https://www.iranicaonline.org/articles/trajan/",
+      "sourceTitle": "Encyclopaedia Iranica · Trajan",
+      "reviewedAt": "2026-11-16"
     }
   }
 };
