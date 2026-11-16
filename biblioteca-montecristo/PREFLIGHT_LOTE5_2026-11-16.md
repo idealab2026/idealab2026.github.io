@@ -36,3 +36,18 @@ El comando comprueba ocho hashes, presencia de PNG, referencia al catálogo, est
 No modifica ninguna imagen, no crea PR, no consume créditos de Codex y **no aprueba nada**. La revisión de ortografía, cifras, personajes, cronología, spoilers, licencia y privacidad sigue siendo humana/editorial. Solo cuando exista aprobación individual documentada por issue y SHA exacto podrá prepararse un publicador análogo al lote 4.
 
 Los ZIP privados, las cookies y el estado local del bridge no deben incluirse en el repositorio.
+
+## Exportación privada para revisión editorial en ChatGPT
+
+Una vez que el preflight haya mostrado **8/8 OK técnico**, generar un paquete compacto de solo ocho láminas:
+
+```bash
+cd ~/Developer/idea-lab-web
+git switch main
+git pull --ff-only
+python3 scripts/notebooklm_revisar_lote5.py --verify-only --export-zip
+```
+
+Se creará `~/Downloads/IDEA_LAB_LOTE5_REVISION_8PNG.zip`. **Adjuntar ese ZIP en la conversación**, no el HTML: el visor HTML usa rutas locales `file://` que no son accesibles fuera del Mac. El ZIP contendrá únicamente las ocho imágenes PNG sin bloques auxiliares de metadatos y un manifiesto con el SHA de cada original y de la copia exportada. No incluye cookies, ruta local, estado del puente ni identificadores de cuadernos.
+
+La eliminación de metadatos no detecta datos sensibles impresos en los píxeles. Revisar las láminas antes de adjuntarlas si existiera esa posibilidad. El ZIP solo se prepara localmente: no se sube automáticamente a GitHub ni equivale a aprobación de publicación.
