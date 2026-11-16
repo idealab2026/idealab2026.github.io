@@ -296,12 +296,12 @@
       "docTranscriptCreated": false,
       "publisher": "Partido Popular",
       "publisherEvidence": "https://www.pp.es/actualidad/videos/latramapsoe-es/",
-      "sourceNodesDocumented": 4,
-      "sourceRelationsDocumented": 3,
+      "sourceNodesDocumented": 6,
+      "sourceRelationsDocumented": 5,
       "judicialFilesIndependentlyVerified": 0,
       "userRequestedSourceConsolidation": true,
-      "qualityNotes": "Contraste metodológico 16/11: directorio dinámico 130 y texto de cálculo 97; verificadas normas generales, sin revisar procedimientos individuales. Las cifras son del portal y no son condenas.",
-      "documentaryChecks": 2,
+      "qualityNotes": "Causa 20557/2024 contrastada con memoria de Fiscalía y orden del día del TC; recursos y estado actual requieren resolución. No se cotejó expediente íntegro.",
+      "documentaryChecks": 4,
       "lastUpdated": "2026-11-16"
     },
     {
@@ -2773,23 +2773,23 @@
         "publisherVerified": "Partido Popular",
         "provenanceVerifiedUrl": "https://www.pp.es/actualidad/videos/latramapsoe-es/",
         "individualCasesVerified": 0,
-        "reviewedEditorialNodes": 4,
-        "editorialEdges": 3,
+        "reviewedEditorialNodes": 6,
+        "editorialEdges": 5,
         "publisherCountDiscrepancyFlagged": true,
         "transcriptNotApplicable": true,
         "transcriptRequired": false,
         "analysisCoverage": {
-          "percent": 18,
+          "percent": 20,
           "state": "en_revision",
           "readyForDeepReview": false,
           "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
           "audioVerified": false,
           "signals": {
-            "entities": 4,
-            "relations": 3,
+            "entities": 6,
+            "relations": 5,
             "biographies": 0,
-            "statements": 2,
-            "independentChecks": 2,
+            "statements": 3,
+            "independentChecks": 4,
             "verifiedTimelineEvents": 0,
             "captionSegments": 0,
             "expectedEntities": 12,
@@ -2805,7 +2805,7 @@
             "cronologia": 0,
             "qa": 2
           },
-          "nextAction": "Identificar y cotejar resoluciones judiciales originales de cada causa y su estado vigente; preservar la fecha de cada observación del portal."
+          "nextAction": "Cotejar el expediente judicial original, verificar el estado actual de los amparos y continuar con las demás causas sin atribuir culpabilidad por agregación."
         }
       },
       {
