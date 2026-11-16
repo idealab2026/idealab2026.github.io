@@ -15,6 +15,7 @@ assert.equal(history.items.filter(e=>e.id==='study-f32-congreso-chino-taiwan-202
 assert(history.items.find(e=>e.id==='study-f30-nato-concept-2022').investigation.relatedTelarana.includes('f32-episodio'));
 const entry=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===32);
 assert.equal(entry.analysisCoverage.percent,21);
+assert.equal(entry.analysisCoverage.signals.biographies,6);
 assert.equal(entry.analysisCoverage.signals.entities,18);
 assert.equal(entry.analysisCoverage.signals.relations,25);
 assert.equal(entry.analysisCoverage.signals.independentChecks,3);
@@ -37,6 +38,8 @@ for(const id of ['f32-william-burns','f32-sergei-naryshkin','f32-ankara-2022-esp
 assert(f.edges.some(e=>e.id==='f32-burns-naryshkin-encuentro'&&e.confidence==='documentado'));
 assert(f.nodes.find(n=>n.id==='f32-ankara-2022-espias').note.includes('negociación sobre el arreglo de la guerra'),'No convertir el encuentro de inteligencia en acuerdo secreto');
 assert(!f.edges.some(e=>e.a==='f30-russia'&&e.b==='f32-ankara-2022-espias'),'El encuentro de servicios no atribuye otros hechos al Estado ruso');
+const profiles=JSON.parse(read('la-telarana/person-biographies.js').split('window.IDEA_TELARANA_BIOGRAPHIES = ')[1].trim().replace(/;$/,'')).curated;
+assert(f.nodes.filter(n=>n.kind==='Persona').every(n=>profiles[n.id]?.text?.length>150),'Cada persona de F32 precisa biografía externa con datos concretos');
 assert(read('la-telarana/index.html').includes('fuente-32-revision-inicial.js'));
 assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-32-revision-inicial.js'));
 console.log('OK: F32 distingue fuentes, declaraciones y límites audiovisuales');
