@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "created_at": "2026-11-16",
+  "approval_scope": "Solo los 5 PNG originales por issue, video_id y SHA exacto. No constituye aprobación de otros archivos, reconstrucciones ni variantes.",
+  "image_source": "archivos PNG privados ya entregados por el titular, también disponibles en su Mac",
+  "method": "inspección visual ampliada y cotejo de eventos clave con la edición francesa pública de Dumas; no transcripción íntegra de cada vídeo",
+  "publishing_authority": "instrucción explícita del propietario de publicar las imágenes correctas",
+  "items": [
+    {
+      "issue": 78,
+      "book": "conde-montecristo",
+      "video_id": "ad_Fubdb8Wg",
+      "sha256": "75cdb9ad5f23c58f07e4360707a259c75c264b3c9e8ad32c368d717ce1d8486d",
+      "chapter": 36,
+      "title": "El carnaval de Roma",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_36",
+      "note": "Disolución del patíbulo, palco Rospoli, ramilletes, cita en San-Giacomo, cinta rosa, carreras y moccoletti según el capítulo. Texto principal legible."
+    },
+    {
+      "issue": 79,
+      "book": "conde-montecristo",
+      "video_id": "1e4_ju3mts8",
+      "sha256": "7e49b8f8e85264a80230a23a7fa3a4f4a8622aa29c508e07161e7c24d6ce0b0b",
+      "chapter": 37,
+      "title": "Las catacumbas de San Sebastián",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_37",
+      "note": "Secuestro, rescate de 4.000 piastras, promesa de Montecristo, Vampa leyendo los Comentarios de César y regreso al baile. Textos legibles."
+    },
+    {
+      "issue": 81,
+      "book": "conde-montecristo",
+      "video_id": "yhuEsRLHNBQ",
+      "sha256": "8e16b50958aa034fd1dd263a02a78f71571f6d472c3330488c773ce70f1ac7c1",
+      "chapter": 39,
+      "title": "Los convidados",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_39",
+      "note": "21 de mayo, diez y media, rescate de Château-Renaud por Maximilien Morrel un 5 de septiembre, debates de los convidados y puntualidad del conde coinciden con Dumas."
+    },
+    {
+      "issue": 83,
+      "book": "conde-montecristo",
+      "video_id": "bIqWWEoC5EI",
+      "sha256": "f2dfd044cfb35856440312572b83a47f21e68cddfd140ddfeadabce9577edc89",
+      "chapter": 41,
+      "title": "La presentación",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_41",
+      "note": "Identificación de la pintura catalana de Mercédès, reacción del conde, heráldica de los Morcerf, encuentro con Fernand y presentación de Mercédès. Interpretaciones literarias diferenciadas de citas."
+    },
+    {
+      "issue": 84,
+      "book": "conde-montecristo",
+      "video_id": "gUoRDOSaxw0",
+      "sha256": "82a889d7b392c1f291f3e966f60c04abc46b75a3c512705df6e860f2be2362fc",
+      "chapter": 42,
+      "title": "Monsieur Bertuccio",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_42",
+      "note": "Tarjetas a Danglars, compra sin conocer la ubicación, domicilio rue de la Fontaine 28, palidez de Bertuccio, libreta y visita forzada a Auteuil coinciden con Dumas."
+    }
+  ]
+}
