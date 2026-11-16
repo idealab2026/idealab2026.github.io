@@ -17,6 +17,7 @@ assert.equal(mod.sourceForModule({key:"IDEA_TELARANA_PODCAST_150"}),"f69");
 assert.equal(mod.sourceForModule({key:"IDEA_TELARANA_F18_REVIEW",label:"Fuente 18"}),"f18");
 assert.equal(mod.sourceForModule({key:"IDEA_TELARANA_SOURCE03_EDITORIAL",label:"Fuente 03"}),"f3");
 assert.equal(mod.sourceForModule({key:"IDEA_TELARANA_EPISODE_CEUTA_2026"}),"f2");
+assert.equal(mod.sourceForModule({key:"IDEA_TELARANA_F48_EXTERNAL"}),"extra:f48-external","La investigación externa no debe contar como F48 original");
 assert.equal(mod.sourceForModule({key:"IDEA_TELARANA_F49_CANDIDATE"}),"extra:f49-candidate");
 const track=mod.createTracker(catalog);
 const nodes0=[
@@ -185,7 +186,7 @@ assert(html.includes('filterByTypes(shownData.nodes,shownData.edges,typeControls
 assert(html.includes('graph3d.setData(shownData.nodes,shownData.edges)'));
 assert(html.includes('renderGraph(q)'));
 assert(html.includes('renderGallery(q)'));
-assert(html.includes('source-filter.js?v=20261116-source-kinds-4'));
+assert(html.includes('source-filter.js?v=20261116-f48-context1'));
 assert(html.includes('graph-3d.js?v=20261116-source-kind-hover'));
 assert(html.includes('id="source-filter-toggle"')&&html.includes('id="source-filter-panel"'));
 assert(html.includes('id="inspector-drawer-close"')&&html.includes('aria-label="Deseleccionar entidad o relación"'));
