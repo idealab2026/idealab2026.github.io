@@ -51,7 +51,7 @@ window.IDEA_TELARANA_F53_REVIEW =
       "name": "Göbekli Tepe",
       "kind": "Lugar",
       "subtitle": "Yacimiento neolítico de Anatolia",
-      "note": "UNESCO describe estructuras de grupos cazadores-recolectores y funciones rituales probables; sus interpretaciones siguen en estudio.",
+      "note": "Göbekli Tepe es un yacimiento del Neolítico precerámico en el sureste de Anatolia (ca. 9600–8200 a. C.). UNESCO documenta grandes estructuras monumentales erigidas por comunidades cazadoras-recolectoras, probablemente destinadas a reuniones y rituales; también registra vestigios de construcciones no monumentales que parecen domésticas. El yacimiento no demuestra por sí solo que toda práctica religiosa precediese a la agricultura o al sedentarismo.",
       "source": "https://whc.unesco.org/en/list/1572/",
       "topic3d": "historia",
       "photo": "",
@@ -71,6 +71,14 @@ window.IDEA_TELARANA_F53_REVIEW =
           "timeSec": null,
           "status": "identificacion_fonetica_y_hipotesis_sin_audio",
           "text": "La transcripción escribe fonéticamente «Goblitpay» y lo usa para sostener que «el templo vino primero». La identificación como Göbekli Tepe es contextual y requiere audio; el orden causal entre construcción ritual, alimentación y sedentarismo es hipótesis interpretativa, no resultado probado por el topónimo."
+        },
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "Contraste UNESCO · estructuras domésticas y funciones rituales",
+          "source": "https://whc.unesco.org/en/list/1572/",
+          "timeSec": null,
+          "status": "contraste_documental_independiente_no_audio",
+          "text": "UNESCO atribuye uso ritual probable a las estructuras monumentales, pero también describe restos de edificios no monumentales aparentemente domésticos. La hipótesis «primero el templo» no debe presentarse como secuencia universal del Neolítico."
         }
       ]
     },
@@ -167,8 +175,8 @@ window.IDEA_TELARANA_F53_REVIEW =
       "name": "Interpretaciones del Neolítico",
       "kind": "Hipótesis",
       "subtitle": "Motivaciones y cambio social",
-      "note": "El invitado argumenta que algunos centros rituales precedieron al asentamiento estable y menciona fonéticamente «Goblitpay». La secuencia de cambios sociales y económicos del Neolítico se investiga mediante pruebas estratigráficas y ambientales; la afirmación «el templo vino primero» es interpretación, no hecho universal demostrado.",
-      "source": "https://www.nature.com/articles/s41599-020-00615-7",
+      "note": "La frase «el templo primero» aparece como interpretación del discurso sobre Göbekli Tepe. Aunque el sitio demuestra arquitectura monumental de grupos cazadores-recolectores en transición hacia la agricultura, la documentación UNESCO también menciona restos aparentemente domésticos. No puede inferirse de un único sitio una secuencia universal entre ritual, residencia, alimentación y domesticación.",
+      "source": "https://whc.unesco.org/en/list/1572/",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
@@ -430,8 +438,8 @@ window.IDEA_TELARANA_F53_REVIEW =
       "type": "Interpretación arqueológica",
       "confidence": "hipotesis",
       "claimStatus": "interpretacion_del_episodio_no_demostrada",
-      "note": "La asociación del yacimiento con la precedencia absoluta del ritual sobre la alimentación procede de la interpretación del invitado y no se acredita como causalidad única.",
-      "source": "https://www.nature.com/articles/s41599-020-00615-7",
+      "note": "Relaciona un yacimiento real con una hipótesis del entrevistado. UNESCO describe monumentos rituales probables y restos aparentemente domésticos; no demuestra «el templo precede a todo asentamiento» como regla general.",
+      "source": "https://whc.unesco.org/en/list/1572/",
       "podcastNotes": []
     },
     {
