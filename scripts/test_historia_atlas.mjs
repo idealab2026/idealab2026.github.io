@@ -34,6 +34,18 @@ assert.match(atlas, /"historia:focus"/);
 assert.match(atlas, /"historia:view"/);
 assert.match(atlas, /"\.\/atlas-examples\.json"/);
 assert.match(atlas, /"\.\/atlas-inventory\.json"/);
+// The lateral Atlas can be collapsed independently of the full Atlas tab.
+assert.match(html, /id="atlas-sidebar-toggle"[^>]*aria-controls="history-atlas-context"[^>]*aria-expanded="true"/);
+assert.match(atlas, /id="atlas-side-hide"/);
+assert.match(atlas, /function setSidebarHidden\(hidden\)/);
+assert.match(atlas, /panel\.classList\.toggle\("atlas-sidebar-hidden",isHidden\)/);
+assert.match(atlas, /api\.jumpToYear\(year\)/);
+assert.match(atlas, /sidebarPreferenceKey/);
+const atlasCss = read("atlas.css");
+assert.match(atlasCss, /#timeline-panel\.atlas-sidebar-hidden #history-atlas-context\{display:none!important\}/);
+assert.match(atlasCss, /#timeline-panel\.atlas-sidebar-hidden #viewport\{width:100%!important\}/);
+assert.match(atlasCss, /#timeline-panel\.atlas-sidebar-hidden \.timeline-visual-context\{width:100%!important\}/);
+assert.match(atlasCss, /#timeline-panel\.atlas-sidebar-hidden \.history-minimap/);
 const originalInventory = JSON.parse(read("atlas-inventory.json"));
 assert.equal(originalInventory.items.length, 81);
 assert.equal(originalInventory.originalFilesPublished, null);
