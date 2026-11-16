@@ -1509,13 +1509,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 11,
-      "sourceRelationsDocumented": 14,
+      "sourceNodesDocumented": 14,
+      "sourceRelationsDocumented": 18,
       "personsProfiled": 0,
-      "documentaryChecks": 7,
+      "documentaryChecks": 10,
       "timelineVerifiedEventsCommitted": 2,
-      "qualityNotes": "Cronología de 1979, 2018, 2020 y febrero de 2026 contrastada; discrepancia 44/444 entre transcripciones. Sin audio cotejado.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Ampliada con guerra Irán-Irak, armas químicas y contexto Irán-Contra. Subtítulos orientativos; audio sin cotejo y conducta de cada gobierno por verificar.",
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 37,
@@ -4833,7 +4833,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4852,21 +4852,21 @@
           "automaticYouTubeCaptionsAvailable": true
         },
         "analysisCoverage": {
-          "percent": 20,
+          "percent": 25,
           "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 11,
-            "relations": 14,
+            "entities": 14,
+            "relations": 18,
             "biographies": 0,
-            "statements": 6,
-            "independentChecks": 5,
+            "statements": 8,
+            "independentChecks": 8,
             "documentaryChecks": 7,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "Cotejar audio, voz e integridad; contrastar las afirmaciones posteriores y sus fechas sin extrapolarlas al presente."
+          "nextAction": "Cotejar audio y discrepancia 44/444; seguir el vídeo y contrastar afirmaciones sobre apoyo militar y respuesta a armas químicas."
         }
       },
       {
