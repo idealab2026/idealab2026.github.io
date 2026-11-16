@@ -6,11 +6,11 @@ window.IDEA_TELARANA_F67_REVIEW =
     "sourceOrder": 67,
     "title": "F67 · Entrevista sobre Jesús y reliquias",
     "url": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
-    "reviewStage": "revision_documental_ampliada_parcial_sin_audio",
+    "reviewStage": "tercera_revision_fuentes_historicas_sturp_talmud_no_audio",
     "audioVerified": false,
     "timecodesAvailable": true,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP.",
     "automaticCaptions": true
   },
   "nodes": [
@@ -232,12 +232,12 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
+          "title": "F67 · contraste científico posterior a la transcripción",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=5370",
           "timeSec": 5370,
           "minuteVerified": false,
           "audioVerified": false,
-          "status": "relato",
+          "status": "contraste_editorial_externo_sin_mencion_acreditada_en_txt",
           "text": "La entrevista atribuye el resultado a contaminación de la esquina. El estudio de 2026 examinó dos fragmentos y no observó contaminación en su análisis; su alcance es limitado y no es un nuevo fechado integral."
         },
         {
@@ -245,7 +245,7 @@ window.IDEA_TELARANA_F67_REVIEW =
           "title": "F67 · contraste documental independiente",
           "source": "https://www.nature.com/articles/s40494-026-02530-7",
           "timeSec": null,
-          "status": "fuente-externa",
+          "status": "contraste_editorial_externo_sin_mencion_acreditada_en_txt",
           "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha."
         }
       ]
@@ -285,7 +285,7 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Estudio forense de patrones · 2019",
       "kind": "Estudio",
       "subtitle": "Simulación experimental",
-      "note": "Un análisis de patrones publicado en 2019 interpretó algunas marcas como incompatibles con determinadas posiciones propuestas; sus resultados dependen de la simulación.",
+      "note": "Borrini y Garlaschelli: análisis de patrones de manchas mediante simulaciones con voluntario. Se publicó en línea el 10 de julio de 2018 y en el volumen de enero de 2019 de Journal of Forensic Sciences (doi:10.1111/1556-4029.13867). Los resultados cuestionan algunas posturas propuestas, pero dependen del modelo experimental y no resuelven por sí solos la procedencia de la reliquia.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/29989172/",
       "topic3d": "historia",
       "photo": "",
@@ -296,7 +296,7 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Estudio forense de patrones · 2024",
       "kind": "Estudio",
       "subtitle": "Simulación experimental",
-      "note": "Un estudio publicado en 2024 obtuvo una mancha similar para una secuencia de manipulación simulada. No reproduce por ello la historia completa de la reliquia.",
+      "note": "König y colaboradores realizaron experimentos para reproducir determinados patrones de manchas del lienzo. El artículo se publicó electrónicamente en febrero de 2023 (doi:10.1007/s00414-023-02959-6), aunque figura en el volumen 138(1) de International Journal of Legal Medicine de 2024. Las simulaciones muestran mecanismos posibles y límites forenses, no prueban la autenticidad ni reconstruyen una historia única.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36764944/",
       "topic3d": "historia",
       "photo": "",
@@ -469,6 +469,109 @@ window.IDEA_TELARANA_F67_REVIEW =
           "text": "Se incorpora a Miguel el Sirio para explicar la transmisión textual del pasaje. No consta que su nombre se mencione explícitamente en el vídeo; no se atribuye al entrevistado."
         }
       ]
+    },
+    {
+      "id": "f67-josefo-20-200",
+      "name": "Josefo: Antigüedades judías 20.200",
+      "kind": "Texto",
+      "subtitle": "Referencia a Santiago y a Jesús · ca. 93–94 d. C.",
+      "note": "Pasaje distinto del Testimonium Flavianum (Antigüedades 18.63–64). En Antigüedades 20.200, Josefo menciona a Santiago como hermano de Jesús, llamado Cristo. La mayoría de especialistas considera sustancialmente auténtica la referencia; existe un debate minoritario sobre una posible interpolación de la cláusula identificadora. Este pasaje se añade como contexto bibliográfico: el TXT de F67 menciona a Josefo pero no identifica explícitamente 20.200. No prueba la divinidad de Jesús ni todos los episodios narrados por otras fuentes.",
+      "source": "https://doi.org/10.1093/9780191957697.005.0002",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · contraste bibliográfico externo: segundo pasaje de Josefo",
+          "source": "https://doi.org/10.1093/9780191957697.005.0002",
+          "timeSec": null,
+          "status": "documentacion_externa_no_cita_verificada_del_video",
+          "text": "El entrevistado discute el Testimonium Flavianum (18.63–64), pero el estudio histórico debe distinguirlo de la mención a Santiago y Jesús de Antigüedades 20.200, cuya autenticidad cuenta con apoyo mayoritario y objeciones minoritarias."
+        }
+      ]
+    },
+    {
+      "id": "f67-sturp-1978",
+      "name": "STURP y el examen de la Sábana Santa (1978)",
+      "kind": "Estudio",
+      "subtitle": "Investigación instrumental · Applied Optics (1980)",
+      "note": "El Shroud of Turin Research Project (STURP) realizó estudios instrumentales del lienzo en octubre de 1978. Jumper y Mottern (Applied Optics, 1980) describen un equipo de 32 miembros entre científicos y técnicos, y presentan publicaciones sobre espectroscopia, termografía y pruebas ópticas. En el TXT, el invitado menciona 33 científicos, 150.000 horas y 27 artículos; estas cifras precisas no quedan acreditadas por el artículo consultado y requieren recuento bibliográfico independiente. La realización de estudios no establece por sí sola la autenticidad de la reliquia.",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-19-12-1909",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · STURP: cifras atribuidas frente a publicación original",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "declaracion_atribuida_y_contraste_documental_sin_audio",
+          "transcriptSearch": "150,000 horas de estudio",
+          "text": "El invitado afirma que STURP reunió 33 científicos, nueve de Los Álamos, trabajó 150.000 horas y publicó 27 artículos. Jumper y Mottern (1980) hablan de 32 integrantes entre científicos y técnicos. Los otros recuentos necesitan un inventario bibliográfico y no se presentan como verificados."
+        }
+      ]
+    },
+    {
+      "id": "f67-talmud-gittin-57a",
+      "name": "Talmud babilónico: Guitín 57a",
+      "kind": "Texto",
+      "subtitle": "Literatura rabínica · transmisión tardía",
+      "note": "En algunas ediciones y traducciones de Guitín 57a aparece un relato polémico que identifica a Jesús y menciona un castigo en el más allá. Es un texto rabínico de tradición y redacción posteriores al siglo I, no una declaración contemporánea de Jesús ni una descripción de las creencias de todas las comunidades judías. La identificación del personaje y su transmisión deben situarse en su historia textual. La entrevista lo presenta como confirmación de hechos históricos, inferencia que no se sigue automáticamente del pasaje.",
+      "source": "https://www.chabad.org/torah-texts/5453289/Talmud/Gittin/Chapter-5/57a",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · referencia al Talmud atribuida, sin minuto verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "testimonio_entrevista_no_prueba_independiente",
+          "transcriptSearch": "el Talmud no es muy a favor",
+          "text": "El entrevistado cita un relato talmúdico y deduce de él existencia histórica y milagros. El texto es tardío y polémico; corresponde distinguir la narración rabínica de una prueba contemporánea y evitar extrapolaciones al judaísmo en su conjunto."
+        }
+      ]
+    },
+    {
+      "id": "f67-recuento-fuentes-siglo-i",
+      "name": "Afirmación: «solo unos veinte textos» del siglo I",
+      "kind": "Declaración",
+      "subtitle": "Cifra atribuida al entrevistado · sin inventario",
+      "note": "En el TXT el entrevistado sostiene que sobreviven unos veinte textos romanos del siglo I, de ellos cuatro históricos, y que todos los que podrían citar a Jesús lo hacen. No proporciona corpus, criterio de conservación, tipología ni catálogo bibliográfico que permita comprobar las cifras. No puede inferirse un porcentaje de menciones sin definir previamente el universo y sus exclusiones. Declaración no verificada, no estadística histórica establecida.",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · afirmación numérica pendiente de contraste",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "afirmacion_cuantitativa_no_verificada",
+          "transcriptSearch": "textos de el siglo primero que hablen de historia",
+          "text": "El invitado afirma que se conservarían unos veinte textos romanos del siglo I y cuatro de historia, con un resultado de 100 % de menciones entre los que considera pertinentes. Falta definir el corpus, los criterios de selección y la bibliografía; no se presenta como dato probado."
+        }
+      ]
+    },
+    {
+      "id": "f67-eusebio-historia-eclesiastica",
+      "name": "Historia eclesiástica de Eusebio de Cesarea",
+      "kind": "Obra",
+      "subtitle": "Transmisión del pasaje de Josefo · siglo IV",
+      "note": "La Historia eclesiástica de Eusebio de Cesarea recoge el Testimonium Flavianum. Alice Whealey (New Testament Studies, 2008) sostiene que las versiones de Agapio y Miguel el Sirio derivan de la traducción siríaca de esta obra. Es una rama de transmisión textual medieval, no una cadena de testigos históricos independientes sobre Jesús. Se añade como contexto bibliográfico, no como declaración identificada en el TXT de F67.",
+      "source": "https://doi.org/10.1017/S0028688508000301",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "Whealey 2008 · vía de transmisión textual",
+          "source": "https://doi.org/10.1017/S0028688508000301",
+          "timeSec": null,
+          "status": "contraste_filologico_externo_no_mencion_entrevista",
+          "text": "Whealey reconstruye la dependencia común de versiones árabe y siríaca de Josefo por la traducción siríaca de la Historia eclesiástica de Eusebio."
+        }
+      ]
     }
   ],
   "edges": [
@@ -575,10 +678,10 @@ window.IDEA_TELARANA_F67_REVIEW =
       "id": "f67-ampliacion-mencion-f67-muestra2026",
       "a": "f67-episodio",
       "b": "f67-muestra2026",
-      "type": "Mención o contexto de la fuente",
-      "confidence": "indicio",
-      "claimStatus": "mencion_no_prueba_relacion",
-      "note": "Tema de la conversación o contraste de contexto; subtítulos automáticos sin cotejo de audio.",
+      "type": "Contraste bibliográfico externo (no citado en el TXT)",
+      "confidence": "documentado",
+      "claimStatus": "contexto_editorial_no_mencion_en_transcripcion",
+      "note": "IDEA LAB incorpora esta publicación independiente como contraste científico; no consta su cita explícita en el TXT de NotebookLM de F67, por lo que no se atribuye al entrevistado.",
       "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
       "podcastNotes": []
     },
@@ -597,10 +700,10 @@ window.IDEA_TELARANA_F67_REVIEW =
       "id": "f67-ampliacion-mencion-f67-forense2019",
       "a": "f67-episodio",
       "b": "f67-forense2019",
-      "type": "Mención o contexto de la fuente",
-      "confidence": "indicio",
-      "claimStatus": "mencion_no_prueba_relacion",
-      "note": "Tema de la conversación o contraste de contexto; subtítulos automáticos sin cotejo de audio.",
+      "type": "Contraste bibliográfico externo (no citado en el TXT)",
+      "confidence": "documentado",
+      "claimStatus": "contexto_editorial_no_mencion_en_transcripcion",
+      "note": "IDEA LAB incorpora esta publicación independiente como contraste científico; no consta su cita explícita en el TXT de NotebookLM de F67, por lo que no se atribuye al entrevistado.",
       "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
       "podcastNotes": []
     },
@@ -608,10 +711,10 @@ window.IDEA_TELARANA_F67_REVIEW =
       "id": "f67-ampliacion-mencion-f67-forense2024",
       "a": "f67-episodio",
       "b": "f67-forense2024",
-      "type": "Mención o contexto de la fuente",
-      "confidence": "indicio",
-      "claimStatus": "mencion_no_prueba_relacion",
-      "note": "Tema de la conversación o contraste de contexto; subtítulos automáticos sin cotejo de audio.",
+      "type": "Contraste bibliográfico externo (no citado en el TXT)",
+      "confidence": "documentado",
+      "claimStatus": "contexto_editorial_no_mencion_en_transcripcion",
+      "note": "IDEA LAB incorpora esta publicación independiente como contraste científico; no consta su cita explícita en el TXT de NotebookLM de F67, por lo que no se atribuye al entrevistado.",
       "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
       "podcastNotes": []
     },
@@ -734,6 +837,105 @@ window.IDEA_TELARANA_F67_REVIEW =
       "confidence": "documentado",
       "claimStatus": "transmision_textual_indirecta_no_testimonio_independiente",
       "note": "La crónica de Miguel el Sirio conserva una versión del pasaje; comparte una rama de transmisión siríaca vinculada a Eusebio según Whealey (2008).",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-entrevista-sturp",
+      "a": "f67-episodio",
+      "b": "f67-sturp-1978",
+      "type": "Investigación mencionada en la entrevista",
+      "claimStatus": "entrevista_alegacion_numerica_sin_verificar",
+      "confidence": "indicio",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "La existencia del estudio está documentada; las cifras exactas del entrevistado siguen pendientes.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sturp-sindone",
+      "a": "f67-sturp-1978",
+      "b": "f42-sudario",
+      "type": "Estudio instrumental del tejido",
+      "claimStatus": "hecho_documentado_estudio_no_autenticidad",
+      "confidence": "documentado",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-19-12-1909",
+      "note": "Los ensayos de 1978 no confirman por sí mismos autoría, datación o identidad del lienzo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-entrevista-talmud",
+      "a": "f67-episodio",
+      "b": "f67-talmud-gittin-57a",
+      "type": "Pasaje talmúdico referido en entrevista",
+      "claimStatus": "mencion_atribuida_no_demostracion",
+      "confidence": "indicio",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "Relato tardío citado como argumento por el entrevistado; distinguir testimonio y evidencia histórica.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-gittin-tradicion-jesus",
+      "a": "f67-talmud-gittin-57a",
+      "b": "f42-jesus",
+      "type": "Referencia textual en tradición rabínica",
+      "claimStatus": "texto_polemico_tardio_no_prueba_siglo_i",
+      "confidence": "indicio",
+      "source": "https://www.chabad.org/torah-texts/5453289/Talmud/Gittin/Chapter-5/57a",
+      "note": "Algunas ediciones identifican al personaje del relato con Jesús; no es una fuente contemporánea.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-entrevista-cifras",
+      "a": "f67-episodio",
+      "b": "f67-recuento-fuentes-siglo-i",
+      "type": "Afirmación cuantitativa pendiente de verificar",
+      "claimStatus": "afirmacion_sin_inventario",
+      "confidence": "indicio",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "El invitado plantea 20 textos, 4 históricos y 100 % de menciones relevantes sin catálogo definido.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-josefo-pasajes-separados",
+      "a": "f67-josefo-20-200",
+      "b": "f67-testimonium-flavianum",
+      "type": "Dos pasajes distintos de Antigüedades judías",
+      "claimStatus": "contraste_filologico_dos_pasajes_distintos",
+      "confidence": "indicio",
+      "source": "https://doi.org/10.1093/9780191957697.005.0002",
+      "note": "Antigüedades 20.200 y 18.63–64 se analizan por separado y tienen controversias textuales distintas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-josefo20-jesus",
+      "a": "f67-josefo-20-200",
+      "b": "f42-jesus",
+      "type": "Mención textual en Antigüedades 20.200",
+      "claimStatus": "referencia_textual_analizada_academicamente",
+      "confidence": "documentado",
+      "source": "https://doi.org/10.1093/9780191957697.005.0002",
+      "note": "Josefo describe a Santiago como hermano de Jesús llamado Cristo; mayoría académica acepta autenticidad sustancial, con disenso minoritario.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-eusebio-agapio-transmision",
+      "a": "f67-eusebio-historia-eclesiastica",
+      "b": "f67-agapio-testimonium",
+      "type": "Rama común de transmisión siríaca",
+      "claimStatus": "filiacion_textual_documentada",
+      "confidence": "documentado",
+      "source": "https://doi.org/10.1017/S0028688508000301",
+      "note": "Según Whealey, Agapio transmite un texto que deriva de la traducción siríaca de Eusebio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-eusebio-miguel-transmision",
+      "a": "f67-eusebio-historia-eclesiastica",
+      "b": "f67-miguel-sirio",
+      "type": "Rama común de transmisión siríaca",
+      "claimStatus": "filiacion_textual_documentada",
+      "confidence": "documentado",
+      "source": "https://doi.org/10.1017/S0028688508000301",
+      "note": "Según Whealey, Miguel el Sirio conserva otra versión derivada de la traducción siríaca de Eusebio.",
       "podcastNotes": []
     }
   ]
