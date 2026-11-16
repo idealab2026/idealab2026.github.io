@@ -1542,20 +1542,20 @@
       "videoId": "aiN_M5fykfg",
       "title": "Conspiranoicos RETAN a Arqueólogos: ¿Quién Construyó Realmente las Pirámides y la Atlántida?",
       "sourceUrl": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-      "status": "primera_revision_documental_parcial_multivoz_sin_audio",
+      "status": "segunda_revision_documental_multivoz_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-38-debate-arqueologia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 19,
-      "sourceRelationsDocumented": 23,
+      "sourceNodesDocumented": 24,
+      "sourceRelationsDocumented": 32,
       "personsProfiled": 4,
-      "documentaryChecks": 5,
+      "documentaryChecks": 8,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Debate multivoz de texto automático sin diarización fiable. Intervenciones registradas como posturas debatidas sin asignar voz; cuatro biografías y hechos concretos documentados. Revisión no exhaustiva.",
-      "lastUpdated": "2026-11-14"
+      "qualityNotes": "Debate multivoz de texto automático sin diarización fiable. Intervenciones registradas como posturas debatidas sin asignar voz; cuatro biografías y hechos concretos documentados. Revisión no exhaustiva. Segundo lote de contrastes: White Sands (21.700–23.500 años, Science Advances 2026), Timeo 23e (9.000 años como cifra del relato), hipótesis radar bajo Kefrén no verificada y retractación por Remote Sensing (10-08-2026) de un artículo distinto sobre Jufu. No se coteja audio ni se atribuyen voces.",
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 40,
@@ -4966,7 +4966,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 37,
-        "status": "primera_revision_documental_parcial_multivoz_sin_audio",
+        "status": "segunda_revision_documental_multivoz_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -4977,7 +4977,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -4996,19 +4996,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_documental_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 19,
-            "relations": 23,
+            "entities": 24,
+            "relations": 32,
             "biographies": 4,
-            "statements": 10,
-            "independentChecks": 5,
+            "statements": 13,
+            "independentChecks": 8,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Continuar la revisión íntegra y cotejar audio y voces; revisar argumentos de arqueoastronomía, Younger Dryas, Doñana y alegaciones geofísicas con fuentes especializadas."
+          "nextAction": "Continuar cotejo audiovisual y diarización de los cuatro participantes. F38: revisar Doñana/Tartessos, Monte Verde y supuesto impacto Younger Dryas; contrastar afirmaciones de geofísica sin convertir hipótesis en hallazgos. White Sands actualizado con Science Advances 2026; alegación Kefrén no verificada, artículo distinto Jufu retractado en 2026."
         }
       },
       {
