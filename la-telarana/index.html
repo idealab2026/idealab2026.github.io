@@ -655,7 +655,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-47-patrimonio.js?v=20261114-1"></script>
 <script src="./fuente-51-atlantida.js?v=20261114-1"></script>
 <script src="./fuente-52-roma.js?v=20261114-1"></script>
-<script src="./fuente-53-arqueologia.js?v=20261116-f53-procedencia5"></script>
+<script src="./fuente-53-arqueologia.js?v=20261116-f53-biografias6"></script>
 <script src="./fuente-54-judaismo.js?v=20261115-1"></script>
 <script src="./fuente-49-candidato.js?v=20261115-1"></script>
 <script src="./fuente-55-exodo.js?v=20261115-1"></script>
@@ -712,16 +712,55 @@ var S=function(tag,attr){var e=document.createElementNS(NS,tag);Object.keys(attr
 function sanitizePodcastNotes(value){
  if(!Array.isArray(value))return[];
  return value.filter(function(n){return n&&typeof n.text==="string"&&n.episodeId}).slice(0,45).map(function(n){
-  return {episodeId:String(n.episodeId).slice(0,120),title:String(n.title||"Podcast").slice(0,180),publishedAt:String(n.publishedAt||"").slice(0,30),timeSec:n.timeSec===null||n.timeSec===undefined?null:Math.max(0,Number(n.timeSec)||0),source:String(n.source||"").slice(0,600),status:String(n.status||"relato").slice(0,50),text:String(n.text||"").slice(0,2500)}
+  var raw=n.timeSec;
+  var validTime=typeof raw==="number"||typeof raw==="string"&&/^\s*\d+(?:\.\d+)?\s*$/.test(raw);
+  var sec=validTime?Number(raw):NaN;
+  var out={
+   episodeId:String(n.episodeId).slice(0,120),title:String(n.title||"Podcast").slice(0,180),
+   publishedAt:String(n.publishedAt||"").slice(0,30),
+   timeSec:Number.isFinite(sec)&&sec>=0?Math.floor(sec):null,
+   source:String(n.source||"").slice(0,600),status:String(n.status||"relato").slice(0,80),
+   text:String(n.text||"").slice(0,2500)
+  };
+  // La procedencia de la transcripción y el cotejo NO se deben perder al fusionar fuentes.
+  if(typeof n.transcriptSearch==="string"&&n.transcriptSearch.trim())out.transcriptSearch=n.transcriptSearch.slice(0,220);
+  if(Number.isSafeInteger(n.transcriptCharOffset)&&n.transcriptCharOffset>=0)out.transcriptCharOffset=n.transcriptCharOffset;
+  for(var k of ["audioVerified","minuteVerified","transcriptVerified"]){
+   if(typeof n[k]==="boolean")out[k]=n[k];
+  }
+  for(var k of ["temporalStatus","speaker"]){
+   if(typeof n[k]==="string"&&n[k].trim())out[k]=n[k].slice(0,160);
+  }
+  if(typeof n.excerpt==="string"&&n.excerpt.trim())out.excerpt=n.excerpt.slice(0,500);
+  return out;
  })
 }
 function appendPodcastNotes(target,entries){
  if(!target||!Array.isArray(entries)||!entries.length)return 0;
  var clean=sanitizePodcastNotes(entries),notes=Array.isArray(target.podcastNotes)?target.podcastNotes:[];
- var keys=new Set(notes.map(function(n){return n.episodeId+"|"+n.timeSec+"|"+n.text}));
+ var byKey=new Map(notes.map(function(n){return[n.episodeId+"|"+n.timeSec+"|"+n.text,n]}));
  var added=0;
- clean.forEach(function(n){var k=n.episodeId+"|"+n.timeSec+"|"+n.text;if(keys.has(k))return;keys.add(k);notes.push(n);added++});
+ clean.forEach(function(n){
+  var key=n.episodeId+"|"+n.timeSec+"|"+n.text,prior=byKey.get(key);
+  if(prior){
+   // Una segunda revisión puede aportar un localizador sin duplicar la declaración.
+   for(var k of ["transcriptSearch","transcriptCharOffset","audioVerified","minuteVerified",
+                  "transcriptVerified","temporalStatus","speaker","excerpt"]){
+    if((prior[k]===undefined||prior[k]===null||prior[k]==="")&&n[k]!==undefined)prior[k]=n[k];
+   }
+   return;
+  }
+  byKey.set(key,n);notes.push(n);added++;
+ });
  target.podcastNotes=notes.slice(0,45);return added
+}
+function sanitizeIndependentBiography(value){
+ if(!value||typeof value.text!=="string")return null;
+ var bio=String(value.text).trim(),url=String(value.source||"").trim();
+ // Solo referencias bibliográficas independientes explícitas; nunca promocionar opiniones del vídeo.
+ if(bio.length<90||!/^https:\/\//i.test(url)||/youtu(?:be\.com|\.be)/i.test(url))return null;
+ return{text:bio.slice(0,1800),source:url.slice(0,600),
+  sourceTitle:String(value.sourceTitle||"Fuente biográfica independiente").slice(0,140)};
 }
 function mergePodcastStudy(v){
  if(!v||!Array.isArray(v.nodes)||!Array.isArray(v.edges))return{nodes:0,edges:0,notes:0};
@@ -822,6 +861,9 @@ function mergeNewEpisode(v){
   var matched=byId.get(n.id)||byName.get(key)||byName.get(aliases[key]||key);
   if(matched){
    translated.set(n.id,matched.id);
+   // Nunca sustituir biografías anteriores ni convertir el relato de la entrevista en biografía.
+   var incomingBio=sanitizeIndependentBiography(n.verifiedBiography);
+   if(matched.kind==="Persona"&&incomingBio&&!matched.verifiedBiography)matched.verifiedBiography=incomingBio;
    newNotes+=appendPodcastNotes(matched,n.podcastNotes);
    return;
   }
@@ -830,6 +872,7 @@ function mergeNewEpisode(v){
    subtitle:String(n.subtitle||"").slice(0,240),note:String(n.note||"").slice(0,3000),
    source:String(n.source||"").slice(0,600),archiveNote:"",
    podcastNotes:sanitizePodcastNotes(n.podcastNotes),
+   verifiedBiography:n.kind==="Persona"?sanitizeIndependentBiography(n.verifiedBiography):null,
    photo:safePhoto(n.photo),x:Number(n.x)||150,y:Number(n.y)||150,
    topic3d:String(n.topic3d||"").slice(0,40)
   };
@@ -1281,6 +1324,12 @@ function showPersonBiography(panel,node){
   if(curated.also)citation(curated.also,"Contraste adicional");
   panel.append(section);return;
  }
+ var independent=typeof sanitizeIndependentBiography==="function"?sanitizeIndependentBiography(node.verifiedBiography):null;
+ if(independent){
+  context.textContent=independent.text;
+  citation(independent.source,independent.sourceTitle);
+  panel.append(section);return;
+ }
  var role=String(node.subtitle||"").trim();
  var usableRole=role&&!/^perfil citado en el episodio$/i.test(role);
  var awaiting=biographyPage(node);
@@ -1393,6 +1442,7 @@ function showPodcastNotes(panel,notes,heading){
    pending.append(N("p",noteText));
    entry.append(pending);
   }else entry.append(N("p",noteText));
+  if(note.transcriptSearch)entry.append(N("div","Localizador en transcripción: «"+note.transcriptSearch+"»","source-claim-caution"));
   if(note.status==="relato")entry.append(N("div","Versión del entrevistado; no equivale a corroboración independiente","source-claim-caution"));
   var noteVerified=note.minuteVerified===true||note.audioVerified===true;
   podcastSourceLink(entry,note.source,note.status==="resumen-editorial"?"Consultar sinopsis del episodio":["fuente-externa","contradiccion","verificacion-externa"].includes(note.status)?"Consultar documentación externa":note.timeSec===null||note.timeSec===undefined?"Escuchar episodio · minuto no verificado":(noteVerified?"Escuchar en ":"Abrir cerca de ")+youtubeTimeLabel(note.timeSec));

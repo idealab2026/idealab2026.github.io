@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F53_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "El TXT automático no contiene minutajes fiables ni asignación de voces. «Goblitpay» se identifica tentativamente como Göbekli Tepe, «Eric Bondaniken» por la referencia al libro de Däniken y «Lord Carnarbon» como quinto conde de Carnarvon. La especulación sobre autismo de Howard Carter procede de una anécdota atribuida y NO es un diagnóstico verificable. Los diarios de Oxford y la ficha UNESCO son documentos independientes; hipótesis y mitos permanecen diferenciados. Se añaden contrastes de Ptah/Sejmet (CFEETK), Ruy González de Clavijo y Enrique III (Encyclopaedia Iranica), Pedro Páez (CSIC), Rapa Nui (Nature 2024) y Younger Dryas (PNAS). Las versiones fonéticas del TXT («Taj», «Segmet», «Felipe Segi», «Junger Dryas») siguen sin cotejo acústico; no se atribuyen errores a la voz del invitado."
+    "methodologicalNote": "El TXT automático no contiene minutajes fiables ni asignación de voces. «Goblitpay» se identifica tentativamente como Göbekli Tepe, «Eric Bondaniken» por la referencia al libro de Däniken y «Lord Carnarbon» como quinto conde de Carnarvon. La especulación sobre autismo de Howard Carter procede de una anécdota atribuida y NO es un diagnóstico verificable. Los diarios de Oxford y la ficha UNESCO son documentos independientes; hipótesis y mitos permanecen diferenciados. Se añaden contrastes de Ptah/Sejmet (CFEETK), Ruy González de Clavijo y Enrique III (Encyclopaedia Iranica), Pedro Páez (CSIC), Rapa Nui (Nature 2024) y Younger Dryas (PNAS). Las versiones fonéticas del TXT («Taj», «Segmet», «Felipe Segi», «Junger Dryas») siguen sin cotejo acústico; no se atribuyen errores a la voz del invitado. Las biografías independientes de Carter, Clavijo y Páez se entregan en campos estructurados para distinguirlas de las alegaciones relatadas en la entrevista."
   },
   "nodes": [
     {
@@ -128,7 +128,12 @@ window.IDEA_TELARANA_F53_REVIEW =
           "status": "contraste_biografico_no_clinico",
           "text": "Los archivos del Instituto Griffith documentan biografía, diarios y excavaciones de Carter, pero la información consultada no contiene una evaluación clínica que avale el supuesto diagnóstico mencionado durante la entrevista."
         }
-      ]
+      ],
+      "verifiedBiography": {
+        "text": "Howard Carter (1874–1939) fue un egiptólogo y dibujante británico. Comenzó su trayectoria en Egipto como artista de expediciones arqueológicas y fue inspector del Servicio de Antigüedades. Bajo el patrocinio de lord Carnarvon dirigió la excavación que descubrió la tumba de Tutankamón en 1922 y documentó sus hallazgos con diarios, fotografías, planos y fichas conservados en el Instituto Griffith de Oxford. No existe fundamento en este registro documental para diagnosticarle retrospectivamente ningún trastorno.",
+        "source": "https://tutankhamun.griffith.ox.ac.uk/people/howard-carter",
+        "sourceTitle": "Archivo de Tutankamón · Universidad de Oxford"
+      }
     },
     {
       "id": "f53-metodo-arqueologico",
@@ -394,7 +399,12 @@ window.IDEA_TELARANA_F53_REVIEW =
           "transcriptCharOffset": 22076,
           "text": "La fuente menciona a «Ruis González de Clavijo» viajando a Timur desde la corte de «Felipe Segi». Fuentes historiográficas acreditan que el embajador sirvió a Enrique III de Castilla, no a Felipe II; sin audio no se puede asignar el supuesto error al invitado."
         }
-      ]
+      ],
+      "verifiedBiography": {
+        "text": "Ruy González de Clavijo (fallecido en 1412) fue un diplomático y camarero de la corte castellana. Enrique III de Castilla le envió como embajador ante Timur (Tamerlán) en la misión de 1403–1406. Su relato del viaje a Samarcanda es una fuente importante para el estudio del imperio timúrida y de los contactos diplomáticos entre la Castilla medieval y Asia Central. La documentación identifica al monarca como Enrique III, no como Felipe II.",
+        "source": "https://www.iranicaonline.org/articles/clavijo-ruy-gonzlez-de-d/",
+        "sourceTitle": "Encyclopaedia Iranica · Beatrice Forbes Manz"
+      }
     },
     {
       "id": "f53-enrique-iii",
@@ -438,7 +448,12 @@ window.IDEA_TELARANA_F53_REVIEW =
           "transcriptCharOffset": 21346,
           "text": "La fuente presenta a Pedro Páez como descubridor de las fuentes del Nilo en Etiopía. Fernández (2019) demuestra que los etíopes las conocían y que Páez describió de modo completo los manantiales del Nilo Azul en 1618; no debe confundirse con el Nilo Blanco."
         }
-      ]
+      ],
+      "verifiedBiography": {
+        "text": "Pedro Páez Xaramillo (1564–1622) fue un jesuita español que ejerció como misionero y cronista en Etiopía. En abril de 1618 visitó y describió detalladamente los manantiales del Nilo Azul, antes de su paso por el lago Tana, en su Historia de Etiopía. Los gobernantes y pobladores etíopes conocían previamente esas fuentes, por lo que corresponde atribuirle una descripción europea temprana y no el descubrimiento absoluto del lugar.",
+        "source": "https://cultureandhistory.revistas.csic.es/index.php/cultureandhistory/article/view/161",
+        "sourceTitle": "CSIC · Culture & History Digital Journal"
+      }
     },
     {
       "id": "f53-rapa-nui",
