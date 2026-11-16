@@ -1,15 +1,16 @@
 /* F32: segunda revisión documental, separación de declaraciones 2022 y evidencia posterior; sin audio cotejado. */
-window.IDEA_TELARANA_F32_REVIEW = {
+window.IDEA_TELARANA_F32_REVIEW =
+{
   "metadata": {
     "id": "idealab-f32-twp173",
     "sourceOrder": 32,
     "title": "F32 · The Wild Project 173 con Pedro Baños",
     "url": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
-    "reviewStage": "segunda_revision_documental_parcial_sin_cotejo_audio",
+    "reviewStage": "tercera_revision_documental_ankara_2022_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "El texto de NotebookLM está sin minutajes ni cotejo de voz o audio. La estrategia OTAN de 2010, Agenda 2030 ONU y sentencias por los paquetes explosivos se aportan como contraste documental; las investigaciones judiciales de 2024 son posteriores al episodio de 2022. La especulación sobre autoría rusa no se presenta como hecho. La posición oficial china refleja exclusivamente la postura de Pekín."
+    "methodologicalNote": "El texto de NotebookLM está sin minutajes ni cotejo de voz o audio. La estrategia OTAN de 2010, Agenda 2030 ONU y sentencias por los paquetes explosivos se aportan como contraste documental; las investigaciones judiciales de 2024 son posteriores al episodio de 2022. La especulación sobre autoría rusa no se presenta como hecho. La posición oficial china refleja exclusivamente la postura de Pekín. Encuentro CIA-SVR en Ankara 14-11-2022 contrastado en prensa contemporánea y declaraciones oficiales; agenda oficial de riesgos nucleares ≠ supuesta negociación secreta. Los nombres de Burns y Naryshkin son normalización contextual del TXT."
   },
   "nodes": [
     {
@@ -270,6 +271,78 @@ window.IDEA_TELARANA_F32_REVIEW = {
           "text": "Este nombre no aparece en la entrevista de 2022: es información judicial posterior que ayuda a distinguir las sospechas entonces comentadas de los resultados conocidos a finales de 2024."
         }
       ]
+    },
+    {
+      "id": "f32-william-burns",
+      "name": "William J. Burns",
+      "kind": "Persona",
+      "subtitle": "Director de la CIA en noviembre de 2022",
+      "note": "William J. Burns era director de la Agencia Central de Inteligencia de Estados Unidos cuando se reunió con el director del SVR ruso en Ankara el 14 de noviembre de 2022. La Casa Blanca informó de que la reunión trataba riesgos de armas nucleares y escalada estratégica, y señaló que no eran negociaciones sobre un arreglo de la guerra en Ucrania.",
+      "source": "https://www.euronews.com/2022/11/15/ukraine-crisis-russia-usa-burns",
+      "topic3d": "geopolitica",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f32-twp173",
+          "title": "F32 · declaración localizada en TXT sin tiempo verificado",
+          "source": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+          "timeSec": null,
+          "status": "el director de la cía",
+          "text": "El invitado menciona «el director de la CIA» y su encuentro en Ankara con el jefe del SVR. Las fuentes de noviembre de 2022 identifican al estadounidense como William Burns y describen la agenda oficial de riesgo nuclear; no demuestran pactos secretos de paz.",
+          "transcriptSearch": 30326,
+          "transcriptCharOffset": "identidad_y_hecho_contrastados_agenda_especulativa_no_verificada",
+          "audioVerified": false,
+          "minuteVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f32-sergei-naryshkin",
+      "name": "Serguéi Naryshkin",
+      "kind": "Persona",
+      "subtitle": "Director del SVR ruso en noviembre de 2022",
+      "note": "Serguéi Naryshkin encabezaba el Servicio de Inteligencia Exterior de Rusia (SVR) durante su reunión de Ankara con William Burns, el 14 de noviembre de 2022. La reunión se confirmó desde los gobiernos y la prensa de la época; no acredita por sí sola las conjeturas formuladas en la entrevista sobre su contenido oculto.",
+      "source": "https://www.aa.com.tr/en/politics/us-russian-spy-chiefs-met-in-turkish-capital-say-intelligence-sources/2737844",
+      "topic3d": "geopolitica",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f32-twp173",
+          "title": "F32 · declaración localizada en TXT sin tiempo verificado",
+          "source": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+          "timeSec": null,
+          "status": "el jefe de los servicios de inteligencia exteriores rusos",
+          "text": "El TXT dice «jefe de los servicios de inteligencia exteriores rusos el SVR» sin nombre propio. En noviembre de 2022 lo dirigía Serguéi Naryshkin, identificado por fuentes contemporáneas. Esta identificación es contextual y requiere cotejar audio para atribuir cualquier frase literal.",
+          "transcriptSearch": 30350,
+          "transcriptCharOffset": "identidad_externa_contextual",
+          "audioVerified": false,
+          "minuteVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f32-ankara-2022-espias",
+      "name": "Reunión Burns–Naryshkin en Ankara (2022)",
+      "kind": "Acontecimiento",
+      "subtitle": "14 de noviembre de 2022 · Turquía",
+      "note": "Los jefes de la CIA y del SVR se reunieron el 14 de noviembre de 2022 en Ankara, en un encuentro acogido por el servicio de inteligencia turco. Estados Unidos comunicó como objetivo la gestión del riesgo de uso de armas nucleares y de escalada, así como la situación de ciudadanos estadounidenses detenidos en Rusia. El Gobierno estadounidense negó que fuese una negociación sobre el arreglo de la guerra de Ucrania. La sospecha de acuerdos secretos expresada en la entrevista es interpretación del invitado, no hecho acreditado.",
+      "source": "https://www.euronews.com/2022/11/15/ukraine-crisis-russia-usa-burns",
+      "topic3d": "geopolitica",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f32-twp173",
+          "title": "F32 · declaración localizada en TXT sin tiempo verificado",
+          "source": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+          "timeSec": null,
+          "status": "se reunieron en ancara",
+          "text": "El invitado identifica la reunión de Ankara y opina que «algo se está gestando» detrás de las conversaciones. La reunión de 14-11-2022 está documentada; las hipótesis sobre negociaciones ocultas no quedan demostradas por la celebración de esa reunión.",
+          "transcriptSearch": 30292,
+          "transcriptCharOffset": "hecho_reunion_confirmado_hipotesis_no_contrastada",
+          "audioVerified": false,
+          "minuteVerified": false
+        }
+      ]
     }
   ],
   "edges": [
@@ -502,6 +575,50 @@ window.IDEA_TELARANA_F32_REVIEW = {
       "confidence": "documentado",
       "claimStatus": "resolucion_judicial_atribuida",
       "note": "Sentencia de julio de 2024, modificada en apelación en noviembre. Sin vínculo establecido con el Estado ruso.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f32-episodio-ankara",
+      "a": "f32-episodio",
+      "b": "f32-ankara-2022-espias",
+      "type": "Encuentro comentado en la entrevista",
+      "claimStatus": "afirmacion_entrevista_reunion_contrastada",
+      "confidence": "indicio",
+      "source": "https://www.youtube.com/watch?v=LAa4e9H1Nlo",
+      "note": "El invitado usa la reunión de Ankara como base para conjeturar diplomacia no pública. La reunión existió, pero su interpretación permanece como hipótesis.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f32-ankara-burns",
+      "a": "f32-william-burns",
+      "b": "f32-ankara-2022-espias",
+      "type": "Participó como director de la CIA",
+      "claimStatus": "hecho_documentado_fuente_contemporanea",
+      "confidence": "documentado",
+      "source": "https://www.euronews.com/2022/11/15/ukraine-crisis-russia-usa-burns",
+      "note": "La Casa Blanca confirmó el encuentro, su participación y la finalidad oficial declarada.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f32-ankara-naryshkin",
+      "a": "f32-sergei-naryshkin",
+      "b": "f32-ankara-2022-espias",
+      "type": "Participó como director del SVR",
+      "claimStatus": "hecho_documentado_fuente_contemporanea",
+      "confidence": "documentado",
+      "source": "https://www.aa.com.tr/en/politics/us-russian-spy-chiefs-met-in-turkish-capital-say-intelligence-sources/2737844",
+      "note": "Reunión de jefes de CIA y SVR en Ankara el 14 de noviembre de 2022.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f32-burns-naryshkin-encuentro",
+      "a": "f32-william-burns",
+      "b": "f32-sergei-naryshkin",
+      "type": "Reunión institucional bilateral (14-11-2022)",
+      "claimStatus": "hecho_documentado_sin_inferencia_de_acuerdo_secreto",
+      "confidence": "documentado",
+      "source": "https://www.euronews.com/2022/11/15/ukraine-crisis-russia-usa-burns",
+      "note": "La reunión fue confirmada. No implica que alcanzaran un pacto de paz ni que negociaran sin conocimiento de Ucrania.",
       "podcastNotes": []
     }
   ]

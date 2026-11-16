@@ -1,15 +1,16 @@
 /* F33: segunda revisión histórica; genealogía documentada y leyenda de Waterloo sin convertir rumores en hechos. */
-window.IDEA_TELARANA_F33_REVIEW = {
+window.IDEA_TELARANA_F33_REVIEW =
+{
   "metadata": {
     "id": "idealab-f33-rothschild",
     "sourceOrder": 33,
     "title": "F33 · Historia de la familia Rothschild",
     "url": "https://www.youtube.com/watch?v=PAnnvSUtFys",
-    "reviewStage": "segunda_revision_documental_historica_sin_audio",
+    "reviewStage": "tercera_revision_documental_desambiguacion_oppenheimer_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Las grafías y voces de la transcripción automática requieren cotejo del audio. Las cinco hijas se identifican por el archivo familiar, no por nombres pronunciados individualmente en el vídeo. Un estudio independiente distingue 19 embarazos y diez descendientes supervivientes. El archivo Rothschild es una fuente vinculada, y la leyenda de Waterloo se trata críticamente; no se atribuyen conspiraciones como hechos."
+    "methodologicalNote": "Las grafías y voces de la transcripción automática requieren cotejo del audio. Las cinco hijas se identifican por el archivo familiar, no por nombres pronunciados individualmente en el vídeo. Un estudio independiente distingue 19 embarazos y diez descendientes supervivientes. El archivo Rothschild es una fuente vinculada, y la leyenda de Waterloo se trata críticamente; no se atribuyen conspiraciones como hechos. PR nueva: discrepancia cronológica entre Samuel Oppenheimer (†1703) y aprendizaje de Mayer (1757); Jacob Wolf Oppenheimer identificado por archivo familiar. No se imputa literalidad a voz sin escucha. Se evita expresamente representar la confusión de nombre como relación personal entre Samuel y Jacob Wolf: ambas identidades se separan en fichas, sin inventar parentesco."
   },
   "nodes": [
     {
@@ -28,7 +29,7 @@ window.IDEA_TELARANA_F33_REVIEW = {
       "name": "Mayer Amschel Rothschild",
       "kind": "Persona",
       "subtitle": "Comerciante y banquero de Fráncfort (1744–1812)",
-      "note": "Mayer Amschel Rothschild (1744–1812) fue un comerciante de monedas y banquero de Fráncfort. Tras aprender en Hannover, amplió su negocio de monedas a servicios financieros para clientes principescos y en 1810 formalizó una sociedad con tres de sus hijos en Fráncfort.",
+      "note": "Mayer Amschel Rothschild (1744–1812) fue un comerciante de monedas y banquero de Fráncfort. Tras aprender en Hannover, amplió su negocio de monedas a servicios financieros para clientes principescos y en 1810 formalizó una sociedad con tres de sus hijos en Fráncfort. El Archivo Rothschild identifica a Jacob Wolf Oppenheimer en el aprendizaje de 1757; el TXT que dice «Samuel» es anacrónico: Samuel Oppenheimer murió en 1703.",
       "source": "https://www.rothschildarchive.org/business/origins_of_the_business/family_partnership",
       "topic3d": "finanzas",
       "photo": "",
@@ -48,6 +49,18 @@ window.IDEA_TELARANA_F33_REVIEW = {
           "timeSec": null,
           "status": "discrepancia_de_grafia_con_fuente_archivistica",
           "text": "La transcripción pronuncia o escribe «Samuel Oppenheimer» como supuesto maestro de Mayer. El archivo Rothschild sitúa el aprendizaje en 1757 en la firma de Simon Wolf Oppenheimer de Hannover. La divergencia queda señalada sin corregir automáticamente lo dicho en el audio no cotejado."
+        },
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · revisión del relato y contraste histórico sin audio",
+          "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+          "timeSec": null,
+          "status": "Samuel oppenheimer",
+          "text": "La fuente dice «Samuel Oppenheimer». Contraste: falleció en 1703; Mayer nació en 1744. El aprendizaje de 1757 se vincula a Jacob Wolf en la casa de Simon Wolf Oppenheimer. La discrepancia debe revisarse con audio.",
+          "transcriptSearch": 999,
+          "transcriptCharOffset": "correccion_documental_pendiente_audio",
+          "audioVerified": false,
+          "minuteVerified": false
         }
       ]
     },
@@ -307,6 +320,54 @@ window.IDEA_TELARANA_F33_REVIEW = {
           "timeSec": null,
           "status": "relato_atribuido_sin_audio",
           "text": "El narrador alude a Niall Ferguson al explicar relatos sobre la fortuna y sobre Waterloo. Esta es una referencia atribuida al vídeo sin minuto ni comprobación del pasaje concreto del libro; no debe publicarse como una conclusión textual del historiador."
+        }
+      ]
+    },
+    {
+      "id": "f33-jacob-wolf-oppenheimer",
+      "name": "Jacob Wolf Oppenheimer",
+      "kind": "Persona",
+      "subtitle": "Banquero vinculado a la firma de Hannover · siglo XVIII",
+      "note": "El Archivo Rothschild identifica a Jacob Wolf Oppenheimer como supervisor del aprendizaje de Mayer Amschel Rothschild en 1757 en Hannover, dentro de la firma de Simon Wolf Oppenheimer. La Deutsche Biographie confirma el aprendizaje de Mayer en una casa Oppenheim de Hannover. Este nombre procede de la documentación externa, no de una mención literal acreditada en F33.",
+      "source": "https://www.rothschildarchive.org/business/",
+      "topic3d": "finanzas",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · revisión del relato y contraste histórico sin audio",
+          "source": "https://www.rothschildarchive.org/business/",
+          "timeSec": null,
+          "status": "Samuel oppenheimer",
+          "text": "El texto automático atribuye la formación de Mayer a «Samuel Oppenheimer»; el archivo de la familia documenta a Jacob Wolf Oppenheimer en la firma de Simon Wolf Oppenheimer. Hasta escuchar el audio no debe atribuirse el error nominal al narrador.",
+          "transcriptSearch": 999,
+          "transcriptCharOffset": "contraste_biografico_externo_sin_mencion_confirmada",
+          "audioVerified": false,
+          "minuteVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f33-samuel-oppenheimer",
+      "name": "Samuel Oppenheimer",
+      "kind": "Persona",
+      "subtitle": "Financiero de la corte imperial en Viena · 1630–1703",
+      "note": "Samuel Oppenheimer fue un banquero y proveedor financiero de la corte de los Habsburgo, fallecido el 3 de mayo de 1703 en Viena. No pudo ser maestro personal de Mayer Amschel Rothschild, nacido en 1744. La transcripción automática de F33 lo menciona, pero la cronología y el Archivo Rothschild apuntan a una confusión de individuos de la familia Oppenheimer.",
+      "source": "https://www.deutsche-biographie.de/gnd119272229.html#ndbcontent",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f33-rothschild",
+          "title": "F33 · revisión del relato y contraste histórico sin audio",
+          "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
+          "timeSec": null,
+          "status": "Samuel oppenheimer",
+          "text": "El TXT dice «banco de Samuel oppenheimer» al describir el aprendizaje de Mayer a los 13 años. Samuel murió en 1703, antes del nacimiento de Mayer en 1744; debe marcarse como inconsistencia cronológica del TXT, pendiente de audio.",
+          "transcriptSearch": 999,
+          "transcriptCharOffset": "discordancia_cronologica_no_audio",
+          "audioVerified": false,
+          "minuteVerified": false
         }
       ]
     }
@@ -684,6 +745,28 @@ window.IDEA_TELARANA_F33_REVIEW = {
       "confidence": "documentado",
       "claimStatus": "documentado_fuente_archivistica_vinculada",
       "note": "El archivo familiar identifica a Henriette como hija de Mayer Amschel.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-mayer-jacob-oppenheimer-formacion",
+      "a": "f33-mayer",
+      "b": "f33-jacob-wolf-oppenheimer",
+      "type": "Aprendizaje bancario bajo supervisión (1757)",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_en_archivo_familiar_y_biografia",
+      "note": "El archivo familiar documenta el aprendizaje de Mayer Amschel en 1757 bajo Jacob Wolf Oppenheimer, de la firma de Simon Wolf Oppenheimer en Hannover. No se confunde con Samuel Oppenheimer, fallecido en 1703.",
+      "source": "https://www.rothschildarchive.org/business/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f33-relato-samuel-oppenheimer",
+      "a": "f33-fuente",
+      "b": "f33-samuel-oppenheimer",
+      "type": "Nombre en el TXT · atribución pendiente de audio",
+      "confidence": "indicio",
+      "claimStatus": "identificacion_automatic_transcript_disputed",
+      "note": "El TXT atribuye a Samuel la formación de Mayer, pero es cronológicamente imposible. No se establece relación formativa entre Samuel y Mayer; la grafía y voz siguen pendientes de cotejo.",
+      "source": "https://www.youtube.com/watch?v=PAnnvSUtFys",
       "podcastNotes": []
     }
   ]
