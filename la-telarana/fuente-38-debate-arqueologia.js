@@ -1,6 +1,5 @@
-/* F38: debate multivoz; revisión parcial sin audio cotejado. */
-window.IDEA_TELARANA_F38_REVIEW =
-{
+/* F38: revisión documental parcial multivoz sin cotejo de audio. */
+window.IDEA_TELARANA_F38_REVIEW = {
   "metadata": {
     "id": "idealab-f38-debate-arqueologia",
     "sourceOrder": 38,
@@ -347,6 +346,14 @@ window.IDEA_TELARANA_F38_REVIEW =
           "text": "Se debaten causas climáticas y una hipótesis de impacto; el intercambio no prueba por sí mismo un cataclismo global que destruyera una civilización. Localización orientativa en el texto privado: carácter 143144, buscar «Younger». La identidad de la voz requiere cotejo de audio.",
           "transcriptCharOffset": 143144,
           "transcriptSearch": "Younger"
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste documental externo",
+          "source": "https://www.nature.com/articles/s41598-022-11377-4",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "Un estudio de 2022 sitúa el Younger Dryas aproximadamente entre 12.900 y 11.700 años antes del presente y describe respuestas ambientales regionales distintas. El periodo, por sí solo, no demuestra un impacto ni una civilización perdida."
         }
       ]
     },
@@ -413,7 +420,7 @@ window.IDEA_TELARANA_F38_REVIEW =
       "name": "White Sands: dataciones revisadas (2023 y 2026)",
       "kind": "Estudio",
       "subtitle": "Science 2023 · Science Advances 2026",
-      "note": "Pigati y colaboradores (Science, 2023; doi:10.1126/science.adh5007) contrastaron la datación de huellas humanas de White Sands con radiocarbono de polen terrestre y luminiscencia óptica de sedimentos, además de las edades originales de semillas acuáticas. Springer y colaboradores (Science Advances, 2026; doi:10.1126/sciadv.aeh0707) ampliaron la serie a veinte horizontes y refinaron el intervalo de las huellas a 23.500–21.700 años. Son estudios posteriores o independientes de los argumentos del programa: no deben atribuirse como publicaciones citadas verbalmente en F38.",
+      "note": "Pigati y colaboradores (Science, 2023; doi:10.1126/science.adh5007) contrastaron la datación de huellas humanas de White Sands con radiocarbono de polen terrestre y luminiscencia óptica de sedimentos, además de las edades originales de semillas acuáticas. Springer y colaboradores (Science Advances, 2026; doi:10.1126/sciadv.aeh0707) ampliaron la serie a veinte horizontes y refinaron el intervalo de las huellas a 23.500–21.700 años. Son estudios posteriores o independientes de los argumentos del programa: no deben atribuirse como publicaciones citadas verbalmente en F38. Hay críticas publicadas sobre la estratigrafía y el material fechado, así como investigaciones posteriores que aportan evidencia adicional; no debe declararse terminado todo debate metodológico.",
       "source": "https://doi.org/10.1126/sciadv.aeh0707",
       "topic3d": "historia",
       "photo": "",
@@ -429,6 +436,22 @@ window.IDEA_TELARANA_F38_REVIEW =
           "transcriptSearch": "White Sans",
           "transcriptCharOffset": 79000,
           "text": "Contraste editorial externo: Pigati et al. 2023 y Springer et al. 2026 corroboran la antigüedad de las huellas, con intervalo refinado. No consta cita explícita de esos artículos en el TXT; no se atribuyen a los participantes."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste documental externo",
+          "source": "https://www.tandfonline.com/doi/abs/10.1080/20555563.2024.2345979",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "Una crítica de 2024 cuestiona si el polen fechado pudo contener material más antiguo redepositado y la relación entre las muestras y las huellas. Es una objeción metodológica, no una datación alternativa establecida."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste documental externo",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12175891/",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "Un estudio de 2025 aporta datos estratigráficos y 26 dataciones adicionales de sedimentos; sus autores consideran que apoyan una edad del último máximo glacial para las huellas."
         }
       ]
     },

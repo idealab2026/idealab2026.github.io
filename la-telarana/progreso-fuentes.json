@@ -1552,9 +1552,9 @@
       "sourceNodesDocumented": 24,
       "sourceRelationsDocumented": 32,
       "personsProfiled": 4,
-      "documentaryChecks": 8,
+      "documentaryChecks": 11,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Debate multivoz de texto automático sin diarización fiable. Intervenciones registradas como posturas debatidas sin asignar voz; cuatro biografías y hechos concretos documentados. Revisión no exhaustiva. Segundo lote de contrastes: White Sands (21.700–23.500 años, Science Advances 2026), Timeo 23e (9.000 años como cifra del relato), hipótesis radar bajo Kefrén no verificada y retractación por Remote Sensing (10-08-2026) de un artículo distinto sobre Jufu. No se coteja audio ni se atribuyen voces.",
+      "qualityNotes": "Revisión parcial multivoz ampliada: White Sands, objeciones y evidencia adicional, Younger Dryas, Atlántida y SAR. Audio y voces sin cotejo.",
       "lastUpdated": "2026-11-16"
     },
     {
@@ -4995,7 +4995,7 @@
           "audioMatched": false
         },
         "analysisCoverage": {
-          "percent": 20,
+          "percent": 22,
           "state": "segunda_revision_documental_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
@@ -5005,7 +5005,7 @@
             "relations": 32,
             "biographies": 4,
             "statements": 13,
-            "independentChecks": 8,
+            "independentChecks": 11,
             "verifiedTimelineEvents": 1
           },
           "nextAction": "Continuar cotejo audiovisual y diarización de los cuatro participantes. F38: revisar Doñana/Tartessos, Monte Verde y supuesto impacto Younger Dryas; contrastar afirmaciones de geofísica sin convertir hipótesis en hallazgos. White Sands actualizado con Science Advances 2026; alegación Kefrén no verificada, artículo distinto Jufu retractado en 2026."
