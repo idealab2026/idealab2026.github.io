@@ -5301,7 +5301,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 43,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_subtitulos_roma_contrastes_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5312,7 +5312,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5331,19 +5331,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 16,
-            "relations": 19,
-            "biographies": 2,
-            "statements": 9,
-            "independentChecks": 5,
+            "entities": 30,
+            "relations": 46,
+            "biographies": 7,
+            "statements": 17,
+            "independentChecks": 11,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "Cotejar audio y hablantes, continuar revisión del texto y contrastar afirmaciones jurídicas, militares y atribuciones a personajes."
+          "nextAction": "Cotejar audio, minuto y voces; validar identidad de figuras legendarias; ampliar crítica de fuentes antiguas y divergencias sobre víctimas de Cannas, cifras de Numancia y equivalencias de premios de Diocles."
         }
       },
       {
