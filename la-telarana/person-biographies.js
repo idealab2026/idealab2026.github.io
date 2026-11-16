@@ -1354,6 +1354,18 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.lavanguardia.com/magazine/20221111/8599947/jordi-wild-libro-entrevista-asi-es-la-puta-vida.html",
       "sourceTitle": "La Vanguardia · perfil y entrevista a Jordi Wild (2022)",
       "reviewedAt": "2026-11-16"
+    },
+    "f42-caifas": {
+      "text": "José Caifás fue sumo sacerdote en Jerusalén durante buena parte del gobierno de Poncio Pilato, aproximadamente entre los años 18 y 36 d. C. Su cargo aparece en fuentes antiguas, entre ellas Flavio Josefo y relatos cristianos. Un osario excavado en 1990 al sur de Jerusalén contiene el nombre familiar Caifás y suele relacionarse con el entorno del sumo sacerdote. La inscripción y el contexto arqueológico corroboran la existencia de ese apellido y su posición social; no demuestran materialmente las intervenciones personales que le atribuyen los Evangelios.",
+      "source": "https://www.imj.org.il/en/exhibitions/ossuary-caiaphas-high-priest-18-36-ce",
+      "sourceTitle": "Museo de Israel · osario de Caifás",
+      "reviewedAt": "2026-11-16"
+    },
+    "f42-santiago-justo": {
+      "text": "Santiago el Justo fue una figura de la primera comunidad cristiana de Jerusalén, identificado por la tradición cristiana como hermano de Jesús de Nazaret. Flavio Josefo incluye en las Antigüedades judías una mención a Santiago, hermano de Jesús llamado Cristo, cuya autenticidad textual es mayoritariamente aceptada aunque discutida por algunos autores. Su recuerdo histórico no depende de la atribución del llamado «Osario de Santiago», una pieza de colección privada cuya inscripción ha generado controversias de autenticidad y de identificación personal.",
+      "source": "https://www.inscriptionsisraelpalestine.org/story/a-controversial-inscription-in-the-news/",
+      "sourceTitle": "Ancient Inscriptions from Israel / Palestine · contexto crítico del osario",
+      "reviewedAt": "2026-11-16"
     }
   }
 };
