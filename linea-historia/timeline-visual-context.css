@@ -72,3 +72,26 @@
 .atlas-diagram-caption{font-size:.75rem;line-height:1.5;color:#b6cddd;margin:0;flex:1}
 .atlas-diagram-credit{font-size:.67rem;color:#a9bccc;line-height:1.35}
 .atlas-diagram-info a{font-size:.72rem;color:#f0c887}
+
+/* 2026-11-16: allow browsing every historical illustration; no nth-child hiding */
+.timeline-visual-context .visual-context-items{
+ display:flex;flex-wrap:nowrap;gap:10px;overflow-x:auto;overflow-y:hidden;
+ overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;
+ padding:2px 3px 9px;min-width:0;max-width:100%;
+}
+.timeline-visual-context .visual-context-card,
+.timeline-visual-context .visual-context-card:nth-child(n){
+ display:grid;flex:0 0 clamp(265px,29vw,385px);scroll-snap-align:start;
+ grid-template-columns:minmax(108px,1.05fr) minmax(0,.95fr);min-height:145px;
+}
+.timeline-visual-context .visual-context-preview,
+.timeline-visual-context .visual-context-preview img{min-height:145px}
+.timeline-visual-context .visual-context-preview img{max-height:185px}
+.timeline-visual-context .visual-context-title>small{white-space:normal}
+.timeline-visual-context .visual-context-tool:disabled{opacity:.45;cursor:default}
+@media(max-width:760px){
+ .timeline-visual-context .visual-context-card,
+ .timeline-visual-context .visual-context-card:nth-child(n){
+  display:grid;flex-basis:min(82vw,330px);
+ }
+}
