@@ -1585,13 +1585,17 @@ function init(){
   if(event){
    period=eraAt(sy(event));periodUI();render();
    jumpToYear(sy(event));detail(event);
-  }else{render();jumpToYear(1900)}
+  }else{
+   render();
+   var incomingHits=query.length>=2?sortedSearchResults(visible()):[];
+   jumpToYear(incomingHits.length?sy(incomingHits[0]):1900);
+  }
  }).catch(function(){
   render();$("period-name").textContent="No se pudo cargar el archivo histórico";
  });
  $("search").addEventListener("input",function(e){handleHistorySearchInput(e.target.value)});
  $("search").addEventListener("keydown",function(e){
-  if(e.key==="Enter"){
+  if(e.key==="Enter"&&query.length>=2){
    e.preventDefault();
    if(searchJumpTimer!==null){clearTimeout(searchJumpTimer);searchJumpTimer=null}
    var first=sortedSearchResults(visible())[0];
