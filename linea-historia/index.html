@@ -661,6 +661,30 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
 .map-result-detail{display:flex;flex-direction:column;align-items:stretch;gap:5px;background:transparent;border:0;color:inherit;text-align:left;width:100%;padding:0;cursor:pointer}
 .map-result-card:focus-within{border-color:var(--gold)}
 .map-jump-link{font:inherit;cursor:pointer;font-size:.69rem;color:#f0c879;background:transparent;border:0;padding:2px 0;text-align:left}
+
+/* Search results: choices and navigation across distant historical periods. */
+.history-search-results{
+ box-sizing:border-box;width:calc(100% - 350px);min-width:0;
+ display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+ margin:8px 0 4px;padding:8px 10px;border:1px solid #4b657b;
+ border-radius:11px;background:#0d273b;
+}
+.history-search-results[hidden]{display:none!important}
+.history-search-status{color:#e4bd78;font-weight:700;font-size:.72rem;flex:0 0 auto}
+.history-search-matches{display:flex;align-items:center;gap:7px;flex:1 1 350px;min-width:0;
+ overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding:2px 0 5px}
+.history-search-hit{display:flex;align-items:flex-start;flex-direction:column;gap:2px;
+ min-width:170px;max-width:320px;flex:0 0 auto;padding:7px 10px;border-radius:8px;
+ border:1px solid #547087;background:#183449;color:#f0f5fb;text-align:left;cursor:pointer}
+.history-search-hit strong{max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+ font-size:.75rem;font-weight:700}
+.history-search-hit small{font-size:.67rem;color:#e7c288}
+.history-search-hit:hover,.history-search-hit:focus-visible{border-color:#ebc47c;background:#284960;outline-offset:2px}
+.history-search-extra{white-space:nowrap;font-size:.7rem;color:#a9bed0}
+#timeline-panel.atlas-sidebar-hidden .history-search-results{width:100%}
+@media(max-width:1100px){.history-search-results{width:calc(100% - 300px)}}
+@media(max-width:760px){.history-search-results{width:100%;gap:5px}
+ .history-search-matches{flex-basis:100%}.history-search-hit{max-width:250px}}
 </style><link rel="stylesheet" href="./atlas.css?v=20261116-sidebar-toggle"><link rel="stylesheet" href="./timeline-visual-context.css?v=20261116-ubicaciones-v2"></head>
 <body><header><a class="brand history-brand" href="/" aria-label="IDEA LAB · Todos los proyectos"><img class="history-header-logo" src="./favicon.png?v=20261109" alt="Logo de Línea de la Historia" width="44" height="44" decoding="async"><span class="history-header-label"><small>UN PRODUCTO DE</small><strong>IDEA <b>LAB</b></strong></span></a><a class="back" href="/">← Todos los proyectos</a></header>
 <main><div class="eyebrow">Atlas temporal · patrimonio histórico</div><h1>Línea de la <em>Historia.</em></h1><p class="sub">Explora en paralelo los acontecimientos que transformaron el mundo, las vidas de sus protagonistas y las ideas que convivieron en cada época. Deslízate horizontalmente por toda la historia sin interrupciones entre épocas. Las personas, imperios y acontecimientos con fechas de inicio y fin se representan mediante franjas con su duración.</p>
@@ -701,7 +725,7 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
   </div>
   <input class="search history-toolbar-search" type="search" id="search" placeholder="Buscar en la historia…" aria-label="Buscar acontecimientos, personas u obras">
   <span id="geo-status" class="history-status-sr" role="status" aria-live="polite">Clasificación geográfica provisional</span>
-</div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div>
+</div><div id="history-search-results" class="history-search-results" role="region" aria-label="Coincidencias del buscador histórico" hidden><span id="history-search-status" class="history-search-status" role="status"></span><div id="history-search-matches" class="history-search-matches"></div></div><div id="viewport" class="timeline-scroll"><div id="canvas" class="timeline-inner" role="region" aria-label="Eje temporal y acontecimientos"></div></div>
 <aside id="history-atlas-context" aria-label="Mapas e imágenes de contexto sincronizadas con la cronología"></aside>
 <aside id="history-minimap" class="history-minimap" aria-label="Minimapa de navegación de toda la historia">
  <div class="history-minimap-head"><span>MAPA COMPLETO</span><span id="history-minimap-now">Localizando…</span></div>
@@ -768,4 +792,4 @@ header .history-brand{display:inline-flex;align-items:center;gap:12px;letter-spa
 </div>
 </main>
 <footer>© 2026 IDEA LAB · Laboratorio de historia, datos y visualización</footer>
-<script defer src="./timeline-v4.js?v=20261115-atlas"></script><script defer src="./atlas.js?v=20261116-sidebar-toggle"></script><script defer src="./timeline-visual-context.js?v=20261116-ubicaciones-v2"></script></body></html>
+<script defer src="./timeline-v4.js?v=20261116-acad-search"></script><script defer src="./atlas.js?v=20261116-sidebar-toggle"></script><script defer src="./timeline-visual-context.js?v=20261116-ubicaciones-v2"></script></body></html>
