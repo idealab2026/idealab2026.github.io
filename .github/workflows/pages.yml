@@ -298,6 +298,7 @@ jobs:
           cp la-telarana/fuente-52-roma.js dist/la-telarana/fuente-52-roma.js
           cp la-telarana/fuente-53-arqueologia.js dist/la-telarana/fuente-53-arqueologia.js
           cp la-telarana/fuente-54-judaismo.js dist/la-telarana/fuente-54-judaismo.js
+          cp la-telarana/fuente-48-contexto-externo.js dist/la-telarana/fuente-48-contexto-externo.js
           cp la-telarana/fuente-49-candidato.js dist/la-telarana/fuente-49-candidato.js
           cp la-telarana/fuente-55-exodo.js dist/la-telarana/fuente-55-exodo.js
           cp la-telarana/fuente-56-identidades.js dist/la-telarana/fuente-56-identidades.js
