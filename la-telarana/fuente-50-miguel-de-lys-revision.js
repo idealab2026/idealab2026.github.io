@@ -1,4 +1,4 @@
-/* IDEA LAB | F50. NotebookLM sin minutajes y sin audio cotejado; notas temáticas atribuidas. */
+/* F50 revisión ampliada: anclas de subtítulos no cotejadas con audio; hechos externos separados. */
 window.IDEA_TELARANA_F50_REVIEW = {
   "metadata": {
     "id": "idealab-f50-miguel-de-lys-wild-project284-2024",
@@ -16,15 +16,25 @@ window.IDEA_TELARANA_F50_REVIEW = {
     "transcriptFormat": "NotebookLM TXT no reliable timecodes",
     "transcriptCharacters": 251787,
     "transcriptPrivateDriveUrl": null,
-    "reviewStage": "primera_extraccion_de_personas_hechos_y_mitos_historicos",
+    "reviewStage": "segunda_revision_documental_vikingos_salem_inquisicion_corso_sin_audio",
     "textualEvidenceScheme": "anchor phrase + approximate char offset in private TXT; not audio time",
-    "updatedAt": "2026-11-12",
+    "updatedAt": "2026-11-16",
     "externalCheckSources": [
       "https://www.youtube.com/watch?v=H841XyN9B_4",
       "https://podcasts.apple.com/es/podcast/the-wild-project-284-miguel-de-lys-la-verdad-sobre/id1501968107?i=1000656556125",
-      "https://salemwitchmuseum.com/faqs/"
+      "https://salemwitchmuseum.com/faqs/",
+      "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/helmets/",
+      "https://parks.canada.ca/culture/designation/lieu-site/anse-aux-meadows",
+      "https://www.nature.com/articles/s41586-021-03972-8",
+      "https://parks.canada.ca/lhn-nhs/nl/meadows/culture/saga",
+      "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "https://www.law.berkeley.edu/research/the-robbins-collection/exhibitions/witch-trials-in-early-modern-europe-and-new-england/",
+      "https://academic.oup.com/reference/62384/reference-article-abstract/555076763",
+      "https://www.vatican.va/roman_curia/congregations/cfaith/storia/documents/rc_con_cfaith_storia_20150319_promuovere-custodire-fede_en.html",
+      "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/albigensian-crusade-and-the-early-inquisitions-into-heretical-depravity-12081246/AE47E7DDE48278DD70A06F96CEF81123",
+      "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers"
     ],
-    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive."
+    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive. Segunda revisión 16-11-2026 sobre TXT privado real (251787 caracteres con cabecera): 12 anclas textuales localizadas y verificadas por cadena y posición; distinción explícita entre lo mencionado y el contexto externo. Contrastes con National Museum of Denmark (Gjermundbu), Parks Canada y Nature (L'Anse aux Meadows / tala 1021), Peabody Essex Museum (Salem: 19 ahorcados, Giles Corey aplastado, otros presos muertos), historia inquisitorial vaticana (Gregorio IX, s. XIII), UC Berkeley Law (cazas modernas) y Royal Museums Greenwich (patentes). No se presume que el invitado haya pronunciado nombres externos ni se inventan minutos o voces. El hito 1021 registra actividad, no llegada de Erik/Leif."
   },
   "nodes": [
     {
@@ -385,8 +395,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Cascos vikingos con cuernos",
       "kind": "Mito",
       "subtitle": "Iconografía moderna asociada a guerreros escandinavos",
-      "note": "Se cuestiona la autenticidad del casco vikingo con cuernos popularizado en medios modernos. La entrevista no basta para identificar todas las variantes arqueológicas ni su cronología.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "El Museo Nacional de Dinamarca indica que Gjermundbu no tiene cuernos; algunos testimonios gráficos muestran personajes con tocados cornudos quizá rituales, pero ningún casco de batalla vikingo así documentado. No extrapolar a ausencia de protección de cabeza.",
+      "source": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/helmets/",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -406,8 +416,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Erik el Rojo",
       "kind": "Persona",
       "subtitle": "Explorador nórdico asociado al asentamiento de Groenlandia",
-      "note": "El programa menciona a Erik el Rojo al hablar de llegadas escandinavas a América antes de Colón. La transcripción mezcla nombres y etapas; no debe atribuirse a Erik, sin contraste, una expedición concreta a Terranova.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Erik el Rojo es figura de las sagas asociada a asentamiento nórdico en Groenlandia. El texto F50 dice que Erik encabezó el primer arribo a América; Parks Canada distingue los relatos de Erik, Bjarni y Leif y el sitio arqueológico no prueba una expedición personal de Erik a Terranova.",
+      "source": "https://parks.canada.ca/lhn-nhs/nl/meadows/culture/saga",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -470,8 +480,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Inquisición",
       "kind": "Institución",
       "subtitle": "Tribunales religiosos de distintas épocas y jurisdicciones",
-      "note": "La charla contrasta la Inquisición histórica con relatos populares sobre violencia, torturas y persecución de brujería. No generalizar datos de tribunales o siglos distintos sin registros.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "La afirmación F50 de una proto-Inquisición del siglo X contra cátaros requiere corrección histórica: la Inquisición medieval institucional se sitúa especialmente en el pontificado de Gregorio IX (1227–1241), con antecedentes episcopales de fines del siglo XII.",
+      "source": "https://www.vatican.va/roman_curia/congregations/cfaith/storia/documents/rc_con_cfaith_storia_20150319_promuovere-custodire-fede_en.html",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -491,8 +501,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Procesos por brujería en Europa",
       "kind": "Acontecimiento",
       "subtitle": "Persecuciones judiciales de la Edad Moderna",
-      "note": "La conversación diferencia procesos por brujería europeos del caso colonial de Salem; equiparar todas las ejecuciones a hogueras o al mismo sistema judicial sería incorrecto.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Las grandes cazas de brujas europeas alcanzaron especial intensidad entre los siglos XV y XVII, con variaciones territoriales y una importante intervención de tribunales seculares. No identificar automáticamente Inquisición, persecución por herejía y juicios de brujería.",
+      "source": "https://www.law.berkeley.edu/research/the-robbins-collection/exhibitions/witch-trials-in-early-modern-europe-and-new-england/",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -513,8 +523,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Juicios por brujería de Salem (1692)",
       "kind": "Acontecimiento",
       "subtitle": "Juicios y ejecuciones en Massachusetts colonial en 1692",
-      "note": "La entrevista desmonta la imagen de las brujas quemadas en Salem. El Salem Witch Museum confirma 19 ejecuciones por ahorcamiento y una muerte por aplastamiento, no ejecuciones en hoguera.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Peabody Essex Museum: 19 personas ejecutadas por ahorcamiento, Giles Corey muerto por aplastamiento y otras personas fallecidas en prisión durante la crisis de 1692-1693. La hoguera es un mito aplicado a Salem.",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -590,6 +600,258 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "status": "personaje_legendario_en_fuente",
           "text": "Se alude a la estética de Ragnar en representaciones audiovisuales. Una figura legendaria no puede utilizarse como evidencia directa de la apariencia de todos los vikingos históricos. Evidencia: transcripción NotebookLM F50 en Drive, carácter aproximado 120530; buscar «ragnar». Sin minuto ni audio cotejado.",
           "transcriptCharOffset": 120530
+        }
+      ]
+    },
+    {
+      "id": "f50-casco-gjermundbu",
+      "name": "Casco de Gjermundbu",
+      "kind": "Objeto",
+      "subtitle": "Hallazgo noruego de la época vikinga",
+      "note": "El Museo Nacional de Dinamarca describe el casco preservado de Gjermundbu sin cuernos. No debe deducirse de la escasez de hallazgos que ningún vikingo utilizara otro tipo de casco.",
+      "source": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/helmets/",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Casco de Gjermundbu · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "La transcripción habla de un casco excavado de nombre mal transcrito. La referencia a Gjermundbu se confirma externamente; no supone prueba de que todos los vikingos carecieran de otros tipos de protección. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 119318; buscar «se ha encontrado un casco». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-lanse-aux-meadows",
+      "name": "L'Anse aux Meadows",
+      "kind": "Lugar",
+      "subtitle": "Asentamiento nórdico arqueológico en Terranova",
+      "note": "Parks Canada acredita los restos arqueológicos nórdicos de Terranova y su uso como base de exploración alrededor del año 1000. El texto F50 no menciona el topónimo literal, por lo que es identificación externa contextual.",
+      "source": "https://parks.canada.ca/culture/designation/lieu-site/anse-aux-meadows",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · L'Anse aux Meadows · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_externo_a_pasaje",
+          "text": "La conversación menciona Terranova y restos arqueológicos nórdicos sin nombrar el sitio. L'Anse aux Meadows es el lugar excavado verificable, no una cita literal del interlocutor. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 122506; buscar «restos arqueológicos». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación y el contraste histórico proceden de una investigación independiente y no fueron pronunciados literalmente; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-leif-eriksson",
+      "name": "Leif Erikson",
+      "kind": "Persona",
+      "subtitle": "Explorador nórdico descrito en las sagas",
+      "note": "Las sagas narran la llegada de Leif al continente americano. No está demostrado que Leif en persona talara las maderas fechadas en 1021, ni que Erik el Rojo dirigiera la llegada a Terranova.",
+      "source": "https://parks.canada.ca/lhn-nhs/nl/meadows/culture/saga",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Leif Erikson · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "Los subtítulos nombran a Leif como hijo de Erik el Rojo. Parks Canada presenta las sagas como narraciones transmitidas y escritas posteriormente; la evidencia arqueológica prueba presencia nórdica pero no identidad individual del grupo. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 124479; buscar «leif Ericsson su hijo». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-actividad-nordica-1021",
+      "name": "Actividad nórdica documentada en 1021",
+      "kind": "Acontecimiento",
+      "subtitle": "Madera trabajada por herramientas metálicas nórdicas",
+      "note": "Un estudio publicado en Nature en 2021 fija en 1021 la tala de tres piezas de madera modificadas por nórdicos en L'Anse aux Meadows; no fecha el descubrimiento inicial ni toda la duración del asentamiento.",
+      "source": "https://www.nature.com/articles/s41586-021-03972-8",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Actividad nórdica documentada en 1021 · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_externo_a_pasaje",
+          "text": "El programa comenta presencia nórdica en Terranova. El año 1021 procede de un trabajo científico independiente posterior, no de una fecha pronunciada en el audio. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 122506; buscar «restos arqueológicos». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación y el contraste histórico proceden de una investigación independiente y no fueron pronunciados literalmente; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-giles-corey",
+      "name": "Giles Corey",
+      "kind": "Persona",
+      "subtitle": "Víctima de las persecuciones de Salem en 1692",
+      "note": "Giles Corey murió aplastado bajo piedras en 1692. El texto F50 menciona las 19 ejecuciones por ahorcamiento sin nombrar a Corey; se añade como contraste documental externo que evita omitir esta víctima.",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Giles Corey · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_externo_a_pasaje",
+          "text": "A partir del pasaje sobre 19 ahorcados, se agrega documentación del Peabody Essex Museum: Giles Corey murió por aplastamiento. No se atribuye su nombre a los interlocutores. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 196121; buscar «llevan a la orca 19 personas». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación y el contraste histórico proceden de una investigación independiente y no fueron pronunciados literalmente; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-ahorcados-salem-1692",
+      "name": "19 ahorcamientos de Salem (1692)",
+      "kind": "Acontecimiento",
+      "subtitle": "Ejecuciones por ahorcamiento, no por hoguera",
+      "note": "En Salem se ahorcó a 19 personas; Giles Corey falleció aplastado y otras personas murieron en prisión. «No las quemaron» no debe convertirse en «solo hubo 19 víctimas».",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · 19 ahorcamientos de Salem (1692) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "Los subtítulos dicen que 19 acusados fueron ejecutados mediante ahorcamiento. El museo documenta además muertes en prisión y el caso de Corey; no se reduce el balance a 19. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 196121; buscar «llevan a la orca 19 personas». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-caza-brujas-edad-moderna",
+      "name": "Caza de brujas europea en la Edad Moderna",
+      "kind": "Acontecimiento",
+      "subtitle": "Principal auge entre los siglos XV y XVII",
+      "note": "Las grandes persecuciones no pertenecieron exclusivamente a la Edad Media ni fueron responsabilidad única de la Inquisición española. Hubo múltiples tribunales, incluidos tribunales seculares, con intensidades muy desiguales.",
+      "source": "https://www.law.berkeley.edu/research/the-robbins-collection/exhibitions/witch-trials-in-early-modern-europe-and-new-england/",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Caza de brujas europea en la Edad Moderna · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contraste_documental_externo_a_pasaje",
+          "text": "Los subtítulos comparan Salem con los procesos europeos. Las exposiciones y estudios independientes sitúan el grueso de la persecución en la Europa moderna, no como fenómeno uniforme medieval. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 196291; buscar «la quema de brujas en Salem». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación y el contraste histórico proceden de una investigación independiente y no fueron pronunciados literalmente; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-inquisicion-medieval",
+      "name": "Inquisición medieval: institucionalización",
+      "kind": "Institución",
+      "subtitle": "Jurisdicción contra la herejía, siglos XII–XIII",
+      "note": "La referencia del vídeo a una proto-Inquisición del siglo X contra cátaros no encaja con la historia institucional. La investigación episcopal aparece documentada a fines del siglo XII y la Inquisición pontificia en el XIII.",
+      "source": "https://www.vatican.va/roman_curia/congregations/cfaith/storia/documents/rc_con_cfaith_storia_20150319_promuovere-custodire-fede_en.html",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Inquisición medieval: institucionalización · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "El texto automático atribuye al siglo X una proto-Inquisición dirigida contra los cátaros. La historia institucional del Vaticano sitúa la creación de la Inquisición medieval durante el pontificado de Gregorio IX (1227-1241). Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 125735; buscar «proto Inquisición en el siglo X». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-cataros",
+      "name": "Cátaros y albigenses",
+      "kind": "Colectivo",
+      "subtitle": "Poblaciones etiquetadas como herejes en la Europa medieval",
+      "note": "El término cátaros y la definición de una comunidad doctrinal uniforme son objeto de debates entre historiadores. La cruzada albigense y los procesos inquisitoriales son fenómenos situados especialmente en los siglos XIII, no en el X.",
+      "source": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/albigensian-crusade-and-the-early-inquisitions-into-heretical-depravity-12081246/AE47E7DDE48278DD70A06F96CEF81123",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Cátaros y albigenses · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "Los subtítulos citan la herejía cátara en Francia e Italia. Estudios recientes distinguen la violencia de la cruzada albigense de la reconstrucción historiográfica retrospectiva de una secta homogénea. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 126017; buscar «los cátaros». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-patente-corso",
+      "name": "Patente de corso",
+      "kind": "Documento",
+      "subtitle": "Autorización estatal de capturas navales en guerra",
+      "note": "Royal Museums Greenwich documenta cartas de marca que autorizaban a armadores privados capturas enemigas en tiempo de guerra. Una autorización no convierte en legal cualquier acto contra cualquier barco o en cualquier circunstancia.",
+      "source": "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Patente de corso · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "El episodio distingue corsarios y piratas por su patente de corso. El museo marítimo confirma la distinción jurídica básica, pero el relato específico sobre una supuesta oferta a Barbanegra no queda probado por esta fuente. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 184850; buscar «patente de corso». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-corsarios",
+      "name": "Corsarios",
+      "kind": "Colectivo",
+      "subtitle": "Navíos privados autorizados por una potencia estatal",
+      "note": "Una patente de corso se concedía para actuar contra el comercio enemigo bajo determinadas condiciones. Corsario y pirata no son etiquetas históricas intercambiables para todos los ataques por mar.",
+      "source": "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Corsarios · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "En el pasaje sobre piratería se diferencian corsarios bajo autorización y piratas. La referencia jurídica se contrasta con el National Maritime Museum. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 184813; buscar «se habla de los corsarios». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
+        }
+      ]
+    },
+    {
+      "id": "f50-barbanegra",
+      "name": "Barbanegra (Edward Teach)",
+      "kind": "Persona",
+      "subtitle": "Pirata activo a comienzos del siglo XVIII",
+      "note": "Los subtítulos presentan anécdotas de Barbanegra relativas a una oferta de patente y a su salud. No se dispone aquí de prueba independiente suficiente para acreditar esas anécdotas: conservarlas como afirmaciones del episodio, no como biografía establecida.",
+      "source": "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers",
+      "photo": "",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Barbanegra (Edward Teach) · texto no minutado",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "relato_y_verificacion_diferenciados",
+          "text": "La conversación menciona a Barbanegra y le atribuye una oferta de corso, una incursión en Charleston y enfermedades. La fuente externa consultada sustenta la diferencia jurídica entre corsario y pirata, NO esos detalles biográficos. Evidencia: subtítulos automáticos NotebookLM F50, carácter aproximado 184935; buscar «barbanegra que ofrecen patente». Esta posición corresponde al archivo de texto, NO a un minuto del vídeo. La identificación de la mención procede del texto; el detalle documental requiere la referencia histórica externa; no se ha cotejado el audio ni verificado la identidad de la voz."
         }
       ]
     }
@@ -977,6 +1239,330 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
       "note": "La conversación compara dos temas o figuras; no implica que exista relación factual o causal demostrada.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-casco-gjermundbu",
+      "a": "f50-episodio",
+      "b": "f50-casco-gjermundbu",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-lanse-aux-meadows",
+      "a": "f50-episodio",
+      "b": "f50-lanse-aux-meadows",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-leif-eriksson",
+      "a": "f50-episodio",
+      "b": "f50-leif-eriksson",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-actividad-nordica-1021",
+      "a": "f50-episodio",
+      "b": "f50-actividad-nordica-1021",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-giles-corey",
+      "a": "f50-episodio",
+      "b": "f50-giles-corey",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-ahorcados-salem-1692",
+      "a": "f50-episodio",
+      "b": "f50-ahorcados-salem-1692",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-caza-brujas-edad-moderna",
+      "a": "f50-episodio",
+      "b": "f50-caza-brujas-edad-moderna",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-inquisicion-medieval",
+      "a": "f50-episodio",
+      "b": "f50-inquisicion-medieval",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-cataros",
+      "a": "f50-episodio",
+      "b": "f50-cataros",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-patente-corso",
+      "a": "f50-episodio",
+      "b": "f50-patente-corso",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-corsarios",
+      "a": "f50-episodio",
+      "b": "f50-corsarios",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-cobertura-f50-barbanegra",
+      "a": "f50-episodio",
+      "b": "f50-barbanegra",
+      "type": "Tema de episodio o contexto asociado",
+      "confidence": "hipotesis",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La cobertura registra un pasaje o estudio contextual del episodio. No afirma que el invitado haya nombrado todas las entidades externas, ni que existan relaciones causales entre personas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-gjermundbu-cascos",
+      "a": "f50-casco-gjermundbu",
+      "b": "f50-casco-vikingo",
+      "type": "Contraste arqueológico de iconografía",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/helmets/",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "El casco preservado de Gjermundbu no tiene cuernos. Algunas representaciones rituales muestran figuras cornudas; no equivale a casco habitual de combate.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-lanse-nordicos",
+      "a": "f50-lanse-aux-meadows",
+      "b": "f50-vikingos",
+      "type": "Asentamiento nórdico excavado",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://parks.canada.ca/culture/designation/lieu-site/anse-aux-meadows",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Parks Canada acredita la presencia nórdica en Terranova; los pueblos indígenas ya habitaban las Américas mucho antes.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-1021-lanse",
+      "a": "f50-actividad-nordica-1021",
+      "b": "f50-lanse-aux-meadows",
+      "type": "Evidencia cronológica de 1021",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.nature.com/articles/s41586-021-03972-8",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Nature fecha madera talada y trabajada por nórdicos en 1021. No se asigna la acción a Leif Erikson ni a Erik el Rojo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-leif-erik",
+      "a": "f50-leif-eriksson",
+      "b": "f50-erik-rojo",
+      "type": "Relación familiar según sagas",
+      "confidence": "indicio",
+      "claimStatus": "tradicion_de_sagas_no_prueba_de_viaje_individual",
+      "source": "https://parks.canada.ca/lhn-nhs/nl/meadows/culture/saga",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Leif es presentado como hijo de Erik el Rojo en la tradición nórdica; separar las narraciones de la cronología arqueológica de 1021.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-leif-terr",
+      "a": "f50-leif-eriksson",
+      "b": "f50-lanse-aux-meadows",
+      "type": "Asociación con viajes de Vinland",
+      "confidence": "indicio",
+      "claimStatus": "hipotesis_asociacion_sagas_y_arqueologia",
+      "source": "https://parks.canada.ca/lhn-nhs/nl/meadows/culture/saga",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Parks Canada considera el campamento compatible con las sagas de Vinland; no hay identificación epigráfica directa de Leif en los restos excavados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-salem-ahorcados",
+      "a": "f50-salem",
+      "b": "f50-ahorcados-salem-1692",
+      "type": "Ejecuciones penales de 1692",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "19 condenados fueron ahorcados durante los juicios de Salem. La descripción de hogueras en Salem es falsa.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-salem-corey",
+      "a": "f50-salem",
+      "b": "f50-giles-corey",
+      "type": "Muerte por aplastamiento",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Giles Corey murió aplastado por piedras tras rehusar someterse al procedimiento; no fue uno de los 19 ahorcados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-salem-caza-moderna",
+      "a": "f50-salem",
+      "b": "f50-caza-brujas-edad-moderna",
+      "type": "Contexto cronológico comparado",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.law.berkeley.edu/research/the-robbins-collection/exhibitions/witch-trials-in-early-modern-europe-and-new-england/",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Salem 1692 pertenece a la Edad Moderna; las persecuciones europeas variaron geográficamente y no se reducen a un solo tribunal o confesión.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-inquisicion-antecedente",
+      "a": "f50-inquisicion",
+      "b": "f50-inquisicion-medieval",
+      "type": "Antecedente jurisdiccional no español",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.vatican.va/roman_curia/congregations/cfaith/storia/documents/rc_con_cfaith_storia_20150319_promuovere-custodire-fede_en.html",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Los procedimientos contra herejía en Europa se institucionalizaron en la Edad Media y preceden a la Inquisición española moderna.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-inquisicion-cataros",
+      "a": "f50-inquisicion-medieval",
+      "b": "f50-cataros",
+      "type": "Contexto de represión religiosa",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/albigensian-crusade-and-the-early-inquisitions-into-heretical-depravity-12081246/AE47E7DDE48278DD70A06F96CEF81123",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La represión de herejías asociada al sur de Francia forma parte de los siglos XII y XIII; no hay base para afirmarla organizada en el siglo X.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-inquisicion-caza-distinta",
+      "a": "f50-inquisicion-medieval",
+      "b": "f50-caza-brujas-edad-moderna",
+      "type": "Procesos no equivalentes",
+      "confidence": "documentado",
+      "claimStatus": "distincion_institucional_cronologica",
+      "source": "https://www.law.berkeley.edu/research/the-robbins-collection/exhibitions/witch-trials-in-early-modern-europe-and-new-england/",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Los procesos contra herejía y las persecuciones por brujería se solaparon parcialmente pero son instituciones y cronologías distintas, muchas veces con tribunales seculares.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-patente-corsarios",
+      "a": "f50-patente-corso",
+      "b": "f50-corsarios",
+      "type": "Autorización legal de capturas",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La patente facultaba acciones navales privadas bajo condiciones de guerra específicas; no es licencia para saqueo universal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-corsarios-pirateria",
+      "a": "f50-corsarios",
+      "b": "f50-pirateria",
+      "type": "Diferencia jurídica",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_independiente",
+      "source": "https://www.rmg.co.uk/collections/research-guides/research-guide-k1-pirates-privateers",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "La diferencia entre actividades piratas y de corso depende de autorización estatal concreta y cumplimiento de las condiciones.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-barbanegra-pirateria",
+      "a": "f50-barbanegra",
+      "b": "f50-pirateria",
+      "type": "Pirata citado en el episodio",
+      "confidence": "indicio",
+      "claimStatus": "mencion_documental_no_verificacion_biografica",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "Barbanegra aparece en el debate sobre corso y piratería; no se prueba aquí la historia de una patente supuestamente rechazada.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-barbanegra-patente",
+      "a": "f50-barbanegra",
+      "b": "f50-patente-corso",
+      "type": "Alegación sobre una oferta",
+      "confidence": "indicio",
+      "claimStatus": "alegacion_no_corroborada",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "note": "El episodio sugiere que Barbanegra rechazó una patente de corso. Royal Museums Greenwich confirma el concepto jurídico, NO el ofrecimiento concreto.",
       "podcastNotes": []
     }
   ]

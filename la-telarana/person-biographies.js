@@ -1432,6 +1432,18 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://doi.org/10.1073/pnas.2407652121",
       "sourceTitle": "PNAS · Sakai et al., 2024",
       "reviewedAt": "2026-11-16"
+    },
+    "f50-leif-eriksson": {
+      "text": "Leif Erikson es un explorador nórdico vinculado en las sagas islandesas con viajes desde Groenlandia hacia Vinland, en la costa de Norteamérica, alrededor del cambio del primer milenio. Según la tradición es hijo de Erik el Rojo. Parks Canada relaciona las narraciones con el contexto arqueológico de L’Anse aux Meadows, mientras que las pruebas de actividad nórdica fechadas en 1021 no identifican personalmente a Leif ni permiten atribuirle la tala de los restos estudiados.",
+      "source": "https://parks.canada.ca/lhn-nhs/nl/meadows/culture/saga",
+      "sourceTitle": "Parks Canada · A Saga of Discovery",
+      "reviewedAt": "2026-11-16"
+    },
+    "f50-giles-corey": {
+      "text": "Giles Corey fue una de las víctimas de los procesos por brujería de Salem en 1692. Se negó a declararse culpable o inocente ante el tribunal y falleció por aplastamiento con piedras durante el procedimiento. Las fuentes museísticas diferencian claramente su caso del de las 19 personas ejecutadas por ahorcamiento. Su nombre se añade como contraste histórico de la cifra que aparece en F50; no se ha encontrado su mención literal en los subtítulos.",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "sourceTitle": "Peabody Essex Museum · The Salem Witch Trials of 1692",
+      "reviewedAt": "2026-11-16"
     }
   }
 };

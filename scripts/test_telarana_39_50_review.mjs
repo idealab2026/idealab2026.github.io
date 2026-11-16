@@ -4,7 +4,7 @@ import fs from "node:fs";
 import vm from "node:vm";
 const specs=[
  {order:39,file:"la-telarana/fuente-39-egiptologia-revision.js",key:"IDEA_TELARANA_F39_REVIEW",nodes:29,edges:33,notes:28,video:"tPZ8wXGmSgA",event:"study-f39-descubrimiento-tumba-tutankamon-1922",score:29},
- {order:50,file:"la-telarana/fuente-50-miguel-de-lys-revision.js",key:"IDEA_TELARANA_F50_REVIEW",nodes:27,edges:32,notes:26,video:"H841XyN9B_4",event:"study-f50-juicios-salem-1692",score:27}
+ {order:50,file:"la-telarana/fuente-50-miguel-de-lys-revision.js",key:"IDEA_TELARANA_F50_REVIEW",nodes:39,edges:59,notes:38,video:"H841XyN9B_4",event:"study-f50-juicios-salem-1692",score:27}
 ];
 const ctx={window:{}};
 const html=fs.readFileSync("la-telarana/index.html","utf8");
@@ -47,4 +47,17 @@ for(const s of specs){
  assert(event.investigation.relatedTelarana.every(id=>ids.has(id)||(event.investigation.additionalSources||[]).some(extra=>id===`f${extra.sourceOrder}-episodio`)),"Hito histórico refiere IDs ausentes de F"+s.order);
 }
 assert.equal(events.length,progress.timeline.committedVerifiedEvents,"Diferencia en contador de cronología");
+const f50=ctx.window.IDEA_TELARANA_F50_REVIEW;
+for(const id of ["f50-casco-gjermundbu","f50-lanse-aux-meadows","f50-leif-eriksson","f50-actividad-nordica-1021","f50-giles-corey","f50-ahorcados-salem-1692","f50-caza-brujas-edad-moderna","f50-inquisicion-medieval","f50-cataros","f50-patente-corso","f50-corsarios","f50-barbanegra"])assert(f50.nodes.some(n=>n.id===id),"F50: falta "+id);
+assert(f50.edges.some(e=>e.id==="f50-salem-corey"&&e.claimStatus==="hecho_documentado_independiente"));
+assert(f50.edges.find(e=>e.id==="f50-barbanegra-patente").claimStatus==="alegacion_no_corroborada");
+assert(f50.nodes.find(n=>n.id==="f50-actividad-nordica-1021").note.includes("no fecha el descubrimiento"));
+const bCtx={window:{}};vm.runInNewContext(fs.readFileSync("la-telarana/person-biographies.js","utf8"),bCtx);
+for(const id of ["f50-leif-eriksson","f50-giles-corey"])assert(bCtx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>200);
+const e1021=events.filter(e=>e.id==="study-f50-actividad-nordica-1021");assert.equal(e1021.length,1);
+assert.equal(e1021[0].investigation.status,"hecho_documentado");assert.equal(e1021[0].investigation.date,"1021");
+assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.percent,27);
+assert.equal(progress.timeline.eventsBySource["50"].length,2);
+assert(html.includes("fuente-50-miguel-de-lys-revision.js?v=20261116-review2"));
+assert(html.includes("person-biographies.js?v=20261116-f50-context6"));
 console.log("OK F39 F50: 56 fichas, 65 enlaces, 54 anclas por caracteres sin minutajes inventados y 2 hitos documentados.");
