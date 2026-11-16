@@ -19,6 +19,20 @@ function buildNeighborhood(nodes,edges,centerId,includeMentions,isSourceMention)
  });
  return {center:center,neighbors:neighbors,totalEdges:totalEdges,excludedMentions:excludedMentions};
 }
+/* Filtrado local por clase de entidad. El centro del esquema se mantiene visible
+   y las instituciones/organizaciones se agrupan bajo una sola categoría. */
+function entityType(node){
+ var kind=String(node&&node.kind||"Otro").trim();
+ if(!kind)return "Otro";
+ if(/^(instituci[oó]n|organizaci[oó]n|organismo|agencia)(?:$|\s)/i.test(kind))return "Institución / organización";
+ return kind;
+}
+function filterNeighborhoodByTypes(neighborhood,excludedTypes){
+ if(!neighborhood.center||!excludedTypes||!excludedTypes.size)return neighborhood;
+ var neighbors=neighborhood.neighbors.filter(function(item){return !excludedTypes.has(entityType(item.node))});
+ return {center:neighborhood.center,neighbors:neighbors,totalEdges:neighbors.reduce(function(sum,item){return sum+item.edges.length},0),
+  excludedMentions:neighborhood.excludedMentions};
+}
 function relationTier(edge){
  if(edge.claimStatus==="hecho_verificado_independiente")return "verified";
  var status=String(edge.claimStatus||"").toLowerCase(),confidence=String(edge.confidence||"").toLowerCase();
@@ -113,24 +127,86 @@ function drawCard(svg,node,x,y,center,selected,onSelect,metrics){
 function create(config){
  var opts=config||{},panel=opts.panel,svg=opts.svg;
  if(!panel||!svg)throw Error("Panel o SVG de relaciones inmediatas ausente");
- var state={nodes:[],edges:[],selection:null,centerId:null,page:0,includeMentions:false,autoMentions:false};
+ var state={nodes:[],edges:[],selection:null,centerId:null,page:0,includeMentions:false,
+  autoMentions:false,mentionsExplicit:false,excludedTypes:new Set(),typeSignature:""};
+ function autoConfigureMentions(){
+  if(state.mentionsExplicit||!state.centerId)return;
+  var base=buildNeighborhood(state.nodes,state.edges,state.centerId,false,opts.isSourceMention);
+  var all=buildNeighborhood(state.nodes,state.edges,state.centerId,true,opts.isSourceMention);
+  var filteredBase=filterNeighborhoodByTypes(base,state.excludedTypes);
+  var filteredAll=filterNeighborhoodByTypes(all,state.excludedTypes);
+  state.autoMentions=filteredBase.totalEdges===0&&filteredAll.totalEdges>0;
+  state.includeMentions=state.autoMentions;
+  opts.mentions.checked=state.includeMentions;
+ }
+ function buildTypeChoices(allDirect){
+  var counts=new Map();
+  allDirect.neighbors.forEach(function(item){
+   var kind=entityType(item.node);counts.set(kind,(counts.get(kind)||0)+1);
+  });
+  var priority=["Persona","Fuente","Institución / organización"];
+  var kinds=Array.from(counts.keys()).sort(function(a,b){
+   var ia=priority.indexOf(a),ib=priority.indexOf(b);
+   if(ia>=0||ib>=0)return ia<0?1:ib<0?-1:ia-ib;
+   return a.localeCompare(b,"es");
+  });
+  var total=kinds.length,chosen=kinds.filter(function(k){return !state.excludedTypes.has(k)});
+  if(opts.typeOptions){
+   var signature=kinds.map(function(k){return k+":"+counts.get(k)}).join("|");
+   if(signature!==state.typeSignature){
+    opts.typeOptions.replaceChildren();
+    kinds.forEach(function(kind){
+     var label=document.createElement("label"),checkbox=document.createElement("input");
+     var name=document.createElement("span"),count=document.createElement("span");
+     checkbox.type="checkbox";checkbox.value=kind;
+     checkbox.addEventListener("change",function(){
+      if(this.checked)state.excludedTypes.delete(kind);
+      else state.excludedTypes.add(kind);
+      state.page=0;autoConfigureMentions();draw();
+     });
+     name.textContent=kind;count.textContent=String(counts.get(kind));count.className="local-types-count";
+     label.appendChild(checkbox);label.appendChild(name);label.appendChild(count);
+     opts.typeOptions.appendChild(label);
+    });
+    state.typeSignature=signature;
+   }
+   Array.from(opts.typeOptions.children).forEach(function(label){
+    var input=label.children[0];
+    if(input)input.checked=!state.excludedTypes.has(input.value);
+   });
+  }
+  if(opts.typeSummary)opts.typeSummary.textContent=!total?"Tipos: sin vecinos":
+   chosen.length===total?"Tipos: todos ("+total+")":
+   !chosen.length?"Tipos: ninguno":
+   chosen.length===1?"Tipo: "+chosen[0]:
+   "Tipos: "+chosen.length+" de "+total;
+  if(opts.typeAll)opts.typeAll.disabled=!total||chosen.length===total;
+  if(opts.typeNone)opts.typeNone.disabled=!total||!chosen.length;
+  return {available:total,selected:chosen.length};
+ }
  function draw(){
-  var substantive=buildNeighborhood(state.nodes,state.edges,state.centerId,false,opts.isSourceMention);
-  var allDirect=buildNeighborhood(state.nodes,state.edges,state.centerId,true,opts.isSourceMention);
+  var substantiveAll=buildNeighborhood(state.nodes,state.edges,state.centerId,false,opts.isSourceMention);
+  var allDirectAll=buildNeighborhood(state.nodes,state.edges,state.centerId,true,opts.isSourceMention);
+  panel.hidden=!allDirectAll.center;
+  if(!allDirectAll.center)return;
+  var typeSelection=buildTypeChoices(allDirectAll);
+  var substantive=filterNeighborhoodByTypes(substantiveAll,state.excludedTypes);
+  var allDirect=filterNeighborhoodByTypes(allDirectAll,state.excludedTypes);
   var neighborhood=state.includeMentions?allDirect:substantive;
-  panel.hidden=!neighborhood.center;
-  if(!neighborhood.center)return;
   var neighbors=neighborhood.neighbors,maxPage=Math.max(0,Math.ceil(neighbors.length/PAGE_SIZE)-1);
   state.page=Math.min(maxPage,Math.max(0,state.page));
   var pageItems=neighbors.slice(state.page*PAGE_SIZE,(state.page+1)*PAGE_SIZE);
   opts.heading.textContent=neighborhood.center.name;
   var onlyMentions=substantive.totalEdges===0&&allDirect.totalEdges>0;
-  opts.summary.textContent=onlyMentions?
+  var excludedMentions=Math.max(0,allDirect.totalEdges-substantive.totalEdges);
+  opts.summary.textContent=typeSelection.available&&!typeSelection.selected?
+   "0 vecinos directos · selecciona al menos un tipo de entidad.":
+   onlyMentions?
    (state.includeMentions?
     allDirect.totalEdges+" menciones en fuentes · sin vínculos sustantivos registrados. La mención no demuestra una relación personal.":
     allDirect.totalEdges+" menciones ocultas · activa «Incluir menciones en fuentes» para ver el esquema."):
    (neighbors.length+" vecinos directos · "+neighborhood.totalEdges+" relaciones"+
-    (!state.includeMentions&&neighborhood.excludedMentions?" · "+neighborhood.excludedMentions+" menciones excluidas":""));
+    (!state.includeMentions&&excludedMentions?" · "+excludedMentions+" menciones excluidas":""));
   var start=state.page*PAGE_SIZE+1,end=Math.min(neighbors.length,(state.page+1)*PAGE_SIZE);
   opts.pageLabel.textContent=neighbors.length?"Entidades "+start+"–"+end+" de "+neighbors.length:"Sin relaciones inmediatas visibles";
   opts.prev.disabled=state.page===0;
@@ -198,7 +274,10 @@ function create(config){
   });
   if(!pageItems.length){
    svg.appendChild(el("text",{x:480,y:165,"text-anchor":"middle","class":"local-empty"},
-    allDirect.totalEdges?"Marca «Incluir menciones» para mostrar las fuentes.":"No hay conexiones registradas para este nodo."));
+    typeSelection.available&&!typeSelection.selected?"Selecciona uno o varios tipos de entidad en el filtro.":
+    allDirect.totalEdges?"Marca «Incluir menciones» para mostrar las fuentes.":
+    allDirectAll.totalEdges?"Ninguna entidad del tipo seleccionado entre los vecinos directos.":
+    "No hay conexiones registradas para este nodo."));
   }
  }
  function update(nodes,edges,selection){
@@ -214,16 +293,21 @@ function create(config){
   }
   if(focus!==state.centerId){
    state.centerId=focus;state.page=0;
-   var substantive=buildNeighborhood(state.nodes,state.edges,focus,false,opts.isSourceMention);
-   var allDirect=buildNeighborhood(state.nodes,state.edges,focus,true,opts.isSourceMention);
-   state.autoMentions=substantive.totalEdges===0&&allDirect.totalEdges>0;
-   state.includeMentions=state.autoMentions; // fallback automático solo cuando no existen vínculos sustantivos
-   opts.mentions.checked=state.includeMentions;
+   state.mentionsExplicit=false;
+   autoConfigureMentions(); // menciones visibles si los tipos elegidos solo presentan ese vínculo
    panel.classList.remove("is-collapsed");opts.minimize.setAttribute("aria-expanded","true");opts.minimize.textContent="− Contraer";
   }
   draw();
  }
- opts.mentions.addEventListener("change",function(){state.includeMentions=!!this.checked;state.autoMentions=false;state.page=0;draw()});
+ opts.mentions.addEventListener("change",function(){state.includeMentions=!!this.checked;state.autoMentions=false;state.mentionsExplicit=true;state.page=0;draw()});
+ if(opts.typeAll)opts.typeAll.addEventListener("click",function(){
+  state.excludedTypes.clear();state.page=0;autoConfigureMentions();draw();
+ });
+ if(opts.typeNone)opts.typeNone.addEventListener("click",function(){
+  var all=buildNeighborhood(state.nodes,state.edges,state.centerId,true,opts.isSourceMention);
+  all.neighbors.forEach(function(item){state.excludedTypes.add(entityType(item.node))});
+  state.page=0;autoConfigureMentions();draw();
+ });
  opts.prev.addEventListener("click",function(){state.page--;draw()});
  opts.next.addEventListener("click",function(){state.page++;draw()});
  opts.minimize.addEventListener("click",function(){
@@ -234,5 +318,5 @@ function create(config){
  panel.hidden=true;
  return {update:update,buildNeighborhood:buildNeighborhood};
 }
-global.IdeaLabLocalRelations={create:create,buildNeighborhood:buildNeighborhood,relationTier:relationTier,groupTier:groupTier,wrapRelationLabel:wrapRelationLabel,PAGE_SIZE:PAGE_SIZE};
+global.IdeaLabLocalRelations={create:create,buildNeighborhood:buildNeighborhood,filterNeighborhoodByTypes:filterNeighborhoodByTypes,entityType:entityType,relationTier:relationTier,groupTier:groupTier,wrapRelationLabel:wrapRelationLabel,PAGE_SIZE:PAGE_SIZE};
 })(window);

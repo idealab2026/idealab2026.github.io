@@ -18,7 +18,7 @@ class FakeElement{
  addEventListener(name,fn){this.listeners[name]=fn}
  dispatch(name,arg={}){assert(this.listeners[name],"No listener "+name);this.listeners[name].call(this,arg)}
 }
-const document={createElementNS:(ns,tag)=>{assert.equal(ns,"http://www.w3.org/2000/svg");return new FakeElement(tag)}};
+const document={createElementNS:(ns,tag)=>{assert.equal(ns,"http://www.w3.org/2000/svg");return new FakeElement(tag)},createElement:tag=>new FakeElement(tag)};
 vm.runInNewContext(script,{window,document,Map,Set,Array,String,Math}, {timeout:10000});
 const service=window.IdeaLabLocalRelations;
 assert(service?.buildNeighborhood&&service?.create&&service.PAGE_SIZE===12);
@@ -213,6 +213,72 @@ assert.equal(params.next.disabled,true);
 params.prev.dispatch("click");
 assert.equal(params.next.disabled,false);
 assert.equal(JSON.stringify({nodes,edges}),original,"Vista de solo lectura: no debe mutar el grafo");
+// Multiselección de tipos sobre los vecinos directos, independiente del orbe 3D.
+const typeNodes=[
+ {id:"type-root",name:"Centro",kind:"Persona",subtitle:"Nodo seleccionado"},
+ {id:"type-person",name:"Persona A",kind:"Persona"},
+ {id:"type-org",name:"Institución A",kind:"Organización"},
+ {id:"type-inst",name:"Institución B",kind:"Institución"},
+ {id:"type-source",name:"Fuente C",kind:"Fuente"},
+ {id:"type-place",name:"Lugar D",kind:"Lugar"}
+];
+const typeEdges=typeNodes.slice(1).map((node,i)=>({
+ id:"type-edge-"+i,a:"type-root",b:node.id,
+ type:node.kind==="Fuente"?"Mención en fuente":"Relación documentada"
+}));
+const typeOptions={
+ panel:new FakeElement(),svg:new FakeElement(),heading:new FakeElement(),
+ summary:new FakeElement(),pageLabel:new FakeElement(),prev:new FakeElement(),
+ next:new FakeElement(),mentions:new FakeElement(),minimize:new FakeElement(),
+ typeSummary:new FakeElement(),typeOptions:new FakeElement(),
+ typeAll:new FakeElement(),typeNone:new FakeElement(),
+ isSourceMention:mention
+};
+const typePanel=service.create(typeOptions),originalTypeData=JSON.stringify({typeNodes,typeEdges});
+const checkOf=kind=>{
+ const label=typeOptions.typeOptions.children.find(node=>node.children[0]?.value===kind);
+ assert(label,"Falta categoría disponible: "+kind);
+ return label.children[0];
+};
+const visibleTypeCards=()=>typeOptions.svg.children.filter(node=>node.attrs.class?.startsWith("local-node"));
+typePanel.update(typeNodes,typeEdges,{kind:"node",id:"type-root"});
+assert.equal(typeOptions.typeOptions.children.length,4,"Agrupar Organización e Institución sin perder personas ni fuentes");
+assert.equal(service.entityType({kind:"Organización"}),"Institución / organización");
+assert.equal(service.entityType({kind:"Institución"}),"Institución / organización");
+assert(typeOptions.typeSummary.textContent.includes("todos"));
+assert.equal(visibleTypeCards().length,5,"Centro más vecinos sustantivos; menciones inicialmente ocultas");
+typeOptions.typeNone.dispatch("click");
+assert.equal(visibleTypeCards().length,1,"Ninguna categoría: mantener solo el nodo central");
+assert(typeOptions.summary.textContent.includes("selecciona al menos un tipo"));
+assert.equal(typeOptions.next.disabled,true);
+assert(typeOptions.typeOptions.children.every(label=>!label.children[0].checked));
+checkOf("Persona").checked=true;checkOf("Persona").dispatch("change");
+assert.equal(visibleTypeCards().length,2,"Seleccionar una categoría deja solo la persona y el centro");
+assert(typeOptions.typeSummary.textContent.includes("Tipo: Persona"));
+checkOf("Institución / organización").checked=true;
+checkOf("Institución / organización").dispatch("change");
+assert.equal(visibleTypeCards().length,4,"Seleccionar dos categorías agrega ambas instituciones al resultado");
+assert(typeOptions.summary.textContent.includes("3 vecinos directos"));
+checkOf("Fuente").checked=true;checkOf("Fuente").dispatch("change");
+assert.equal(visibleTypeCards().length,4,"El filtro de tipo no debe saltarse el filtro de menciones");
+typeOptions.mentions.checked=true;typeOptions.mentions.dispatch("change");
+assert.equal(visibleTypeCards().length,5,"Con menciones activadas aparece también la fuente");
+assert(typeOptions.typeSummary.textContent.includes("3 de 4"));
+typeOptions.typeAll.dispatch("click");
+assert.equal(visibleTypeCards().length,6,"Todos recupera las cuatro categorías, incluida Lugar");
+assert(typeOptions.typeOptions.children.every(label=>label.children[0].checked));
+typeOptions.typeNone.dispatch("click");
+assert.equal(visibleTypeCards().length,1);
+typePanel.update(typeNodes,typeEdges,{kind:"node",id:"type-person"});
+assert.equal(typeOptions.heading.textContent,"Persona A");
+assert.equal(visibleTypeCards().length,1,"Conservar filtro activo al cambiar de entidad");
+typePanel.update(typeNodes,typeEdges,{kind:"node",id:"type-root"});
+assert.equal(visibleTypeCards().length,1,"Restaurar foco no debe borrar filtros elegidos");
+typeOptions.typeAll.dispatch("click");
+assert.equal(typeOptions.mentions.checked,false,"Al cambiar de centro sin decisión manual reciente se vuelve a evaluar la inclusión de menciones");
+assert.equal(JSON.stringify({typeNodes,typeEdges}),originalTypeData,"El filtro no modifica los datos del grafo");
+assert(html.includes('id="local-types"')&&html.includes('id="local-types-options"')&&html.includes('id="local-types-all"')&&html.includes('id="local-types-none"'));
+assert(html.includes('typeOptions:$("local-types-options")')&&html.includes('typeSummary:$("local-types-summary")'));
 assert(html.includes('id="local-relations"')&&html.includes('id="local-svg"')&&html.includes('id="local-mentions"'));
 assert(html.includes("local-relations-2d.js?v=")&&html.includes("localDiagram.update(shownData.nodes,shownData.edges,selection)"),"El esquema debe recibir solamente los nodos y vínculos de las fuentes visibles");
 assert(html.includes("function syncFullscreenLocal()")&&html.includes("syncFullscreenLocal();"));
