@@ -112,3 +112,19 @@ Subir **un único archivo binario** al repositorio:
 En la web, los originales se incorporan en el **Atlas visual**, tanto en la galería de 81 como en el inventario de cada imagen. Los seis mapas fechados originales tendrán prioridad frente a alternativas de Commons. En la banda de contexto temporal aparecerán también el gráfico del Dryas Reciente (BR18), diagramas geológicos (C11, T9, L10, AO8, F35) y esquemas prehistóricos (BD52, BC11) con intervalos **orientativos**, manteniendo sin fecha inventada las restantes imágenes.
 
 Este cambio de código es inocuo mientras el ZIP no se haya subido: la web continúa mostrando el catálogo y las alternativas existentes. **No se debe declarar el despliegue de las 81 imágenes hasta que el ZIP esté comprometido en `main` y el workflow de Pages finalice con éxito.**
+
+## Corrección de las láminas medievales (16/11/2026)
+
+El Atlas y la banda de contexto mostraban **«0 láminas» en 1076 d. C.** aunque la hoja de Excel contiene mapas de ese periodo. La causa era que 75 imágenes tenían `asOf: null` y el algoritmo solo seleccionaba seis láminas con fecha histórica acreditada, junto a unas pocas excepciones geológicas.
+
+La corrección **no inventa fechas de los mapas**. `atlas-placement.json` reconstruye las posiciones en el eje cronológico leyendo la columna de anclaje de cada imagen y la cabecera de años de la fila 4 de la hoja `LÍNEA TEMPORAL`. Contiene las 81 celdas, con año aproximado cuando puede inferirse. La distinción es explícita:
+
+- `asOf`: fecha histórica **representada** (solo si está verificada).
+- `placementYear`: año orientativo donde fue **colocada** en el Excel.
+- La ventana de visualización es solo una ayuda para explorar la historia; no representa fronteras constantes durante ese intervalo.
+
+Ejemplo verificable en la **Edad Media, 1076 d. C.**: se muestran la imagen `NW6` (colocada hacia 980), la `OE6` (hacia 1060) y la `OP5` (hacia 1170). Las tres son las capturas **originales** recuperadas del Excel y conservan las leyendas visibles de sus mapas. La banda horizontal ya no oculta las imágenes a partir de la tercera, admite desplazamiento táctil y botones de navegación.
+
+El Atlas utiliza las mismas posiciones como contexto en el panel lateral y en la galería; las 81 imágenes siguen visibles en su catálogo completo.
+
+Prueba de regresión automatizada: `node scripts/test_historia_imagenes_contexto.mjs dist/linea-historia`, dentro del workflow de GitHub Pages. Verifica que las 81 imágenes reales existen, que los tres mapas medievales se asocian a 1076, que no hay límite oculto de tres tarjetas y que el código sincroniza su fecha con el carrusel.
