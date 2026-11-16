@@ -427,7 +427,7 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Agapio de Hierápolis y la transmisión árabe de Josefo",
       "kind": "Texto",
       "subtitle": "Crónica medieval · siglo X",
-      "note": "Agapio de Hierápolis transmitió en árabe una versión medieval del pasaje de Josefo sobre Jesús. Alice Whealey estudió la transmisión árabe y siríaca y sus variantes. Esta versión no certifica automáticamente qué escribió Josefo ni proporciona una fuente de época independiente de las Antigüedades judías.",
+      "note": "Agapio de Hierápolis, obispo melquita del siglo X, transmitió en su crónica árabe una versión medieval del Testimonium Flavianum. Alice Whealey (2008) concluye que la versión de Agapio y la de Miguel el Sirio derivan de una traducción siríaca de la Historia Eclesiástica de Eusebio de Cesarea; no son dos testimonios independientes de la vida de Jesús. Whealey sostiene que ciertas lecturas de Miguel el Sirio pueden estar más próximas al original que las de Agapio. Esto no resuelve por completo las interpolaciones del texto griego.",
       "source": "https://doi.org/10.1017/S0028688508000301",
       "topic3d": "historia",
       "photo": "",
@@ -439,6 +439,34 @@ window.IDEA_TELARANA_F67_REVIEW =
           "timeSec": null,
           "status": "afirmacion_del_entrevistado_contextualizada_con_bibliografia",
           "text": "El entrevistado alude a una transmisión por vía musulmana de un pasaje de Josefo supuestamente libre de interpolaciones. La versión de Agapio debe tratarse como testigo textual medieval, no como comprobación automática de cada detalle relatado."
+        },
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "Whealey (2008) · dependencia textual común",
+          "source": "https://doi.org/10.1017/S0028688508000301",
+          "timeSec": null,
+          "status": "contraste_filologico_publicado",
+          "text": "El análisis filológico reconstruye una transmisión común por la versión siríaca de Eusebio. No se deben contar Agapio y Miguel el Sirio como testimonios históricos independientes sobre Jesús."
+        }
+      ]
+    },
+    {
+      "id": "f67-miguel-sirio",
+      "name": "Miguel el Sirio",
+      "kind": "Persona",
+      "subtitle": "Patriarca de Antioquía y cronista · siglo XII",
+      "note": "Miguel el Sirio (1126–1199), patriarca de Antioquía de la Iglesia ortodoxa siríaca, compuso una crónica que conserva otra versión del Testimonium Flavianum. Alice Whealey (2008) compara su versión siríaca con la árabe de Agapio y argumenta que ambas dependen de la traducción siríaca de la Historia Eclesiástica de Eusebio; no son testimonios independientes de época romana.",
+      "source": "https://doi.org/10.1017/S0028688508000301",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "Contraste bibliográfico, no declaración literal del vídeo",
+          "source": "https://doi.org/10.1017/S0028688508000301",
+          "timeSec": null,
+          "status": "contexto_documental_no_mencion_confirmada_en_fuente",
+          "text": "Se incorpora a Miguel el Sirio para explicar la transmisión textual del pasaje. No consta que su nombre se mencione explícitamente en el vídeo; no se atribuye al entrevistado."
         }
       ]
     }
@@ -693,8 +721,19 @@ window.IDEA_TELARANA_F67_REVIEW =
       "type": "Tradición textual medieval de un pasaje",
       "confidence": "documentado",
       "claimStatus": "transmision_textual_no_confirmacion_independiente",
-      "note": "La crónica árabe de Agapio conserva una versión del pasaje; su relación filológica y su autenticidad son objeto de investigación.",
+      "note": "La versión árabe de Agapio procede, según Whealey (2008), de una transmisión común a través de la traducción siríaca de Eusebio; no es un segundo testimonio independiente sobre Jesús.",
       "source": "https://doi.org/10.1017/S0028688508000301",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-miguel-josefo-transmision",
+      "a": "f67-miguel-sirio",
+      "b": "f67-testimonium-flavianum",
+      "type": "Versión siríaca medieval del pasaje",
+      "source": "https://doi.org/10.1017/S0028688508000301",
+      "confidence": "documentado",
+      "claimStatus": "transmision_textual_indirecta_no_testimonio_independiente",
+      "note": "La crónica de Miguel el Sirio conserva una versión del pasaje; comparte una rama de transmisión siríaca vinculada a Eusebio según Whealey (2008).",
       "podcastNotes": []
     }
   ]
