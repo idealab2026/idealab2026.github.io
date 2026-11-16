@@ -1,15 +1,16 @@
 /* F38: revisión documental parcial multivoz sin cotejo de audio. */
-window.IDEA_TELARANA_F38_REVIEW = {
+window.IDEA_TELARANA_F38_REVIEW =
+{
   "metadata": {
     "id": "idealab-f38-debate-arqueologia",
     "sourceOrder": 38,
     "title": "F38 · Debate de arqueología, pirámides y Atlántida",
     "url": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-    "reviewStage": "segunda_revision_documental_whitesands_platon_sar_con_audio_pendiente",
+    "reviewStage": "tercera_revision_monteverde_donana_youngerdryas_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo."
+    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización."
   },
   "nodes": [
     {
@@ -332,7 +333,7 @@ window.IDEA_TELARANA_F38_REVIEW = {
       "name": "Younger Dryas",
       "kind": "Acontecimiento",
       "subtitle": "Intervalo climático del final del Pleistoceno",
-      "note": "Periodo climático estudiado que no acredita por sí solo una civilización perdida.",
+      "note": "Periodo climático estudiado que no acredita por sí solo una civilización perdida. La hipótesis de impacto cósmico es una propuesta causal distinta de la existencia del episodio climático y ha sido cuestionada por una revisión publicada en Earth-Science Reviews en 2023.",
       "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
       "topic3d": "historia",
       "photo": "",
@@ -354,6 +355,18 @@ window.IDEA_TELARANA_F38_REVIEW = {
           "timeSec": null,
           "status": "verificacion-externa",
           "text": "Un estudio de 2022 sitúa el Younger Dryas aproximadamente entre 12.900 y 11.700 años antes del presente y describe respuestas ambientales regionales distintas. El periodo, por sí solo, no demuestra un impacto ni una civilización perdida."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo posterior al debate",
+          "source": "https://doi.org/10.1016/j.earscirev.2023.104720",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "contraste_externo_posterior_no_cita_de_entrevista",
+          "transcriptSearch": "black mat",
+          "transcriptCharOffset": 155247,
+          "text": "La revisión Holliday et al. (2023) discute la hipótesis de impacto; este contraste editorial no equivale a atribuir ese artículo a ningún interviniente."
         }
       ]
     },
@@ -524,6 +537,174 @@ window.IDEA_TELARANA_F38_REVIEW = {
           "transcriptSearch": "Filipo Biondi",
           "transcriptCharOffset": 182040,
           "text": "Contraste editorial posterior a la entrevista: Remote Sensing retractó el 10-08-2026 un trabajo SAR de Biondi y Malanga relativo a la Gran Pirámide de Jufu. No equivale a retractación formal de su hipótesis específica sobre Kefrén ni a una prueba de su verdad o falsedad."
+        }
+      ]
+    },
+    {
+      "id": "f38-monte-verde-ii",
+      "name": "Monte Verde II (Chile)",
+      "kind": "Lugar",
+      "subtitle": "Yacimiento arqueológico · cronología discutida en 2026",
+      "note": "Monte Verde II, en Chile, fue durante décadas uno de los yacimientos de referencia para una ocupación humana anterior a Clovis, con una edad propuesta de unos 14.500 años antes del presente. El texto de F38 menciona «Monteverde» como ejemplo de controversia sobre dataciones y aceptación de evidencia arqueológica. En 2026 surgió una controversia científica de primer orden: Surovell y colaboradores propusieron una edad mucho más reciente; Dillehay y colaboradores refutaron ese replanteamiento y defendieron la interpretación pleistocena original. No está zanjado por el hecho de que ambas posiciones se hayan publicado.",
+      "source": "https://doi.org/10.1126/science.adw9217",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje original del TXT NotebookLM sin diarización",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "Monteverde",
+          "transcriptCharOffset": 78886,
+          "text": "El TXT alude a Monte Verde y a «Tom» en un relato sobre debates arqueológicos. Identificación contextual del sitio y de la controversia, sin atribuir a ningún interviniente una cita textual. La discusión científica de 2026 es posterior y se trata aparte."
+        }
+      ]
+    },
+    {
+      "id": "f38-monte-verde-estudio-2026",
+      "name": "Monte Verde: revisión de edad al Holoceno medio (2026)",
+      "kind": "Estudio",
+      "subtitle": "Surovell et al. · Science · 19 marzo 2026",
+      "note": "Todd A. Surovell y colaboradores publicaron el 19 de marzo de 2026 en Science (doi:10.1126/science.adw9217) una reinterpretación estratigráfica y cronológica de Monte Verde II. Basándose en fechados radiocarbónicos y por luminiscencia y en la interpretación de depósitos y cenizas volcánicas, argumentaron que el sitio no sería anterior al Holoceno medio, aproximadamente 8.200–4.200 años antes del presente, frente a los 14.500 tradicionales. Es una propuesta científica publicada, no la conclusión indiscutible de la controversia.",
+      "source": "https://doi.org/10.1126/science.adw9217",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo posterior al debate",
+          "source": "https://doi.org/10.1126/science.adw9217",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "contraste_externo_posterior_no_cita_de_entrevista",
+          "transcriptSearch": "Monteverde",
+          "transcriptCharOffset": 78886,
+          "text": "La investigación de Science de marzo de 2026 cuestiona la cronología clásica de Monte Verde II. Es evidencia externa posterior a la fuente grabada y no una cita que debamos atribuir al debate."
+        }
+      ]
+    },
+    {
+      "id": "f38-monte-verde-replica-2026",
+      "name": "Monte Verde: defensa de 14.500 años (2026)",
+      "kind": "Estudio",
+      "subtitle": "Dillehay et al. · PaleoAmerica · agosto 2026",
+      "note": "Tom D. Dillehay y colaboradores publicaron en PaleoAmerica (2026; doi:10.1080/20555563.2026.2699017) una respuesta crítica a Surovell y colaboradores. Defienden una ocupación humana de Monte Verde II hace aproximadamente 14.500 años; discuten la posición estratigráfica de la tefra, las muestras externas al sitio y la hipótesis de redeposición de materiales antiguos. La respuesta incluye argumentos estratigráficos, arqueológicos y dataciones adicionales. Se registra como desacuerdo científico explícito: ni el estudio de Science ni la réplica son por sí solos un cierre definitivo.",
+      "source": "https://doi.org/10.1080/20555563.2026.2699017",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo posterior al debate",
+          "source": "https://doi.org/10.1080/20555563.2026.2699017",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "contraste_externo_posterior_no_cita_de_entrevista",
+          "transcriptSearch": "Monteverde",
+          "transcriptCharOffset": 78886,
+          "text": "La respuesta en PaleoAmerica de 2026 conserva la cronología pleistocena y objeta el análisis de Science. Debe presentarse junto al estudio que cuestiona, no borrar una de las dos interpretaciones."
+        }
+      ]
+    },
+    {
+      "id": "f38-donana",
+      "name": "Marismas de Doñana (Huelva y Sevilla)",
+      "kind": "Lugar",
+      "subtitle": "Paisaje arqueológico y paleogeográfico del bajo Guadalquivir",
+      "note": "En Doñana se han investigado restos de ocupación humana y una evolución paleogeográfica compleja. El Proyecto Hinojos del CSIC identifica cambios de sedimentación, subsidencia y episodios erosivos costeros de alta energía, incluidas señales compatibles con tsunamis. La presencia de fenómenos marinos y asentamientos de diversas épocas no demuestra el emplazamiento de la ciudad mítica de Atlántida.",
+      "source": "https://ih.csic.es/es/research-project/proyecto-hinojos",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje original del TXT NotebookLM sin diarización",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "Doñana",
+          "transcriptCharOffset": 171534,
+          "text": "El TXT menciona «las marismas de Doñana» en Huelva como supuesto escenario de hallazgos asociados por un participante a la Atlántida. Doñana sí dispone de estudios geoarqueológicos rigurosos, pero esta parte del debate no prueba una identificación con el mito."
+        }
+      ]
+    },
+    {
+      "id": "f38-tartessos",
+      "name": "Tartessos",
+      "kind": "Civilización",
+      "subtitle": "Cultura histórica protohistórica del suroeste ibérico",
+      "note": "Tartessos fue una entidad histórico-cultural del suroeste peninsular durante el primer milenio antes de nuestra era, documentada por fuentes clásicas y vestigios arqueológicos. El nombre, su configuración político-territorial y la localización precisa de su eventual centro principal siguen siendo objeto de investigación. El CSIC y colaboradores reconstruyeron en 2024 un paisaje del bajo Guadalquivir compatible con una hipótesis de ubicación de la ciudad mencionada por Avieno; no se ha identificado arqueológicamente una capital de Tartessos bajo las marismas de Doñana, ni puede equipararse Tartessos con la Atlántida de Platón.",
+      "source": "https://www.ipp.csic.es/es/article/ciudad-tartessos-pudo-estar-cerca-actual-desembocadura-rio-guadalquivir-lo-es-hoy-donana",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje original del TXT NotebookLM sin diarización",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "tartesos",
+          "transcriptCharOffset": 171691,
+          "text": "En el TXT se alude a «los tartesos» al hablar de una supuesta civilización en Doñana. El pueblo histórico está documentado, pero la asimilación a la Atlántida es especulativa."
+        }
+      ]
+    },
+    {
+      "id": "f38-tartessos-donana-hipotesis",
+      "name": "Hipótesis de localización de Tartessos en Doñana",
+      "kind": "Hipótesis",
+      "subtitle": "Reconstrucción paleogeográfica · Frontiers in Marine Science (2024)",
+      "note": "Rodríguez-Ramírez y colaboradores propusieron en Frontiers in Marine Science (2024; doi:10.3389/fmars.2024.1379920), a partir de geomorfología costera y una lectura crítica de Ora maritima de Avieno, un escenario plausible para la ubicación de la ciudad histórica de Tartessos cerca de la antigua desembocadura del Guadalquivir. El trabajo documenta cambios del paisaje y considera episodios marinos extremos, incluido uno hacia 1150 a. C. No equivale a haber excavado y localizado con certeza la ciudad, ni vincula documentalmente esa propuesta con la isla atlante de Platón. La comparación entre Tartessos y Atlántida ha sido estudiada como construcción historiográfica; no es una identidad demostrada.",
+      "source": "https://doi.org/10.3389/fmars.2024.1379920",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo posterior al debate",
+          "source": "https://doi.org/10.3389/fmars.2024.1379920",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "contraste_externo_posterior_no_cita_de_entrevista",
+          "transcriptSearch": "Doñana",
+          "transcriptCharOffset": 171534,
+          "text": "El estudio de 2024 permite analizar Doñana como posible entorno de Tartessos, no como descubrimiento de la Atlántida. Incorpora evidencia geoarqueológica independiente y acota el alcance de la interpretación del TXT."
+        }
+      ]
+    },
+    {
+      "id": "f38-ydih-hipotesis-impacto",
+      "name": "Hipótesis de impacto cósmico del Younger Dryas",
+      "kind": "Hipótesis",
+      "subtitle": "Propuesta controvertida ≠ episodio climático acreditado",
+      "note": "La hipótesis del impacto del Younger Dryas (YDIH) propone un evento cósmico hace unos 12.900 años para explicar cambios ambientales y culturales. Sus defensores invocan microsférulas, platino, nanodiamantes y depósitos oscuros («black mat»). Una revisión extensa de Holliday y colaboradores en Earth-Science Reviews (2023; doi:10.1016/j.earscirev.2023.104720) cuestionó la identificación, datación, replicabilidad y especificidad de los indicadores y concluyó que no se acredita una catástrofe cósmica global. Existen defensores y réplicas de la hipótesis, pero el enfriamiento Younger Dryas no debe presentarse como prueba de impacto extraterrestre ni como origen demostrado de una civilización desaparecida o los mitos del diluvio.",
+      "source": "https://doi.org/10.1016/j.earscirev.2023.104720",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje original del TXT NotebookLM sin diarización",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "black mat",
+          "transcriptCharOffset": 155247,
+          "text": "El debate utiliza la expresión «black mat», habla de microsférulas, nanodiamantes y platino y compara la controversia con la extinción de dinosaurios. La existencia de tales materiales en algunos registros no constituye por sí sola prueba de un impacto global sin un contraste independiente de cronología y origen."
         }
       ]
     }
@@ -879,6 +1060,116 @@ window.IDEA_TELARANA_F38_REVIEW = {
       "claimStatus": "contexto_editorial_no_retractacion_alegacion_kefren",
       "confidence": "indicio",
       "note": "Retractación de un artículo científico de 2022 sobre la pirámide de Jufu; NO retractación formal de las alegaciones difundidas en 2025 sobre Kefrén. Conexión de contexto metodológico, no identidad de descubrimiento.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-mencion-monteverde",
+      "a": "f38-episodio",
+      "b": "f38-monte-verde-ii",
+      "type": "Yacimiento referido en el debate",
+      "claimStatus": "mencion_transcripcion_sin_voz_cotejada",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-monteverde-revision2026",
+      "a": "f38-monte-verde-ii",
+      "b": "f38-monte-verde-estudio-2026",
+      "type": "Estudio que cuestiona datación clásica",
+      "claimStatus": "revision_cronologica_disputada",
+      "source": "https://doi.org/10.1126/science.adw9217",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-monteverde-replica2026",
+      "a": "f38-monte-verde-ii",
+      "b": "f38-monte-verde-replica-2026",
+      "type": "Estudio que defiende cronología clásica",
+      "claimStatus": "revision_cronologica_disputada",
+      "source": "https://doi.org/10.1080/20555563.2026.2699017",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-monteverde-disenso",
+      "a": "f38-monte-verde-estudio-2026",
+      "b": "f38-monte-verde-replica-2026",
+      "type": "Conclusiones y reconstrucciones incompatibles",
+      "claimStatus": "discrepancia_cientifica_documentada",
+      "source": "https://doi.org/10.1080/20555563.2026.2699017",
+      "confidence": "documentado",
+      "note": "Son artículos científicos de 2026 con conclusiones contrapuestas; se documenta el desacuerdo, no un vínculo personal ni resolución definitiva.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-mencion-donana",
+      "a": "f38-episodio",
+      "b": "f38-donana",
+      "type": "Territorio citado al debatir Atlántida",
+      "claimStatus": "mencion_en_debate_hipotesis_no_hallazgo",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-mencion-tartessos",
+      "a": "f38-episodio",
+      "b": "f38-tartessos",
+      "type": "Cultura mencionada en el debate",
+      "claimStatus": "mencion_en_debate_cultura_documentada",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-tartessos-donana-investigacion",
+      "a": "f38-tartessos",
+      "b": "f38-tartessos-donana-hipotesis",
+      "type": "Hipótesis de localización de centro tartésico",
+      "claimStatus": "hipotesis_geoarqueologica_2024",
+      "source": "https://doi.org/10.3389/fmars.2024.1379920",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-donana-estudio-tartessos",
+      "a": "f38-donana",
+      "b": "f38-tartessos-donana-hipotesis",
+      "type": "Paisaje de Doñana analizado en el estudio",
+      "claimStatus": "hecho_geoarqueologico_y_localizacion_propuesta",
+      "source": "https://www.ipp.csic.es/es/article/ciudad-tartessos-pudo-estar-cerca-actual-desembocadura-rio-guadalquivir-lo-es-hoy-donana",
+      "confidence": "documentado",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-mencion-impacto-ydih",
+      "a": "f38-episodio",
+      "b": "f38-ydih-hipotesis-impacto",
+      "type": "Hipótesis del impacto y sus indicadores debatidos",
+      "claimStatus": "mencion_de_hipotesis_no_confirmacion",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-ydih-relacion-dryas",
+      "a": "f38-younger-dryas",
+      "b": "f38-ydih-hipotesis-impacto",
+      "type": "Hipótesis causal controvertida sobre el inicio del enfriamiento",
+      "claimStatus": "causalidad_hipotetica_objetada_por_revision",
+      "source": "https://doi.org/10.1016/j.earscirev.2023.104720",
+      "confidence": "indicio",
+      "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
       "podcastNotes": []
     }
   ]
