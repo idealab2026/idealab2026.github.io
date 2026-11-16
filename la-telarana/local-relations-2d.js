@@ -88,10 +88,10 @@ function buttonGroup(label,click){
 /* Las tarjetas comparten un ancho fijo por columna, pero crecen en altura sin
    cortar nombres ni subtítulos. No utilizar maxLines ni puntos suspensivos. */
 function cardMetrics(node,center){
- var title=wrapRelationLabel(node.name||"Entidad",center?27:20);
- var subtitle=wrapRelationLabel(node.subtitle||node.kind||"Entidad",center?37:29);
+ var title=wrapRelationLabel(node.name||"Entidad",center?25:21);
+ var subtitle=wrapRelationLabel(node.subtitle||node.kind||"Entidad",center?36:30);
  var height=Math.max(center?82:90,68+(title.length-1)*16+(subtitle.length-1)*15);
- return {width:center?250:206,height:height,title:title,subtitle:subtitle};
+ return {width:center?270:244,height:height,title:title,subtitle:subtitle};
 }
 function drawCard(svg,node,x,y,center,selected,onSelect,metrics){
  var size=metrics||cardMetrics(node,center),width=size.width,height=size.height;
