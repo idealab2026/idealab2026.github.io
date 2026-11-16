@@ -1444,6 +1444,24 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
       "sourceTitle": "Peabody Essex Museum · The Salem Witch Trials of 1692",
       "reviewedAt": "2026-11-16"
+    },
+    "f50-vercingetorix": {
+      "text": "Vercingétorix fue un caudillo arverno que encabezó una coalición gala contra la expansión de Julio César en el año 52 a. C. Su campaña culminó en el sitio de Alesia, narrado principalmente por César en la Guerra de las Galias, obra del propio vencedor que exige lectura crítica. Vercingétorix envió a la caballería fuera del recinto antes de completarse las defensas romanas para convocar un ejército de socorro, pero permaneció dentro de la plaza y acabó rindiéndose. Por ello, la afirmación del podcast F50 de que salió personalmente a buscar ayuda es errónea.",
+      "source": "https://www.livius.org/sources/content/caesar/caesar-on-the-siege-of-alesia/",
+      "sourceTitle": "Livius · César sobre el asedio de Alesia",
+      "reviewedAt": "2026-11-16"
+    },
+    "f50-tacito": {
+      "text": "Publio Cornelio Tácito fue un senador e historiador romano activo entre finales del siglo I y comienzos del II. Su obra Anales ofrece uno de los relatos antiguos más importantes del incendio de Roma del año 64. Tácito, que escribió décadas después, sitúa a Nerón en Antium al inicio del incendio y describe tanto medidas para los damnificados como rumores de que el emperador estaba implicado. Dada la distancia temporal, su retórica y la naturaleza de esas imputaciones, el testimonio no autoriza una afirmación definitiva de culpabilidad ni de inocencia de Nerón.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "sourceTitle": "Tácito · Anales XV.38–44",
+      "reviewedAt": "2026-11-16"
+    },
+    "f50-barbanegra": {
+      "text": "Edward Teach o Thatch, conocido como Barbanegra, fue un pirata del Atlántico occidental activo a comienzos del siglo XVIII. Su buque insignia Queen Anne's Revenge participó en el bloqueo de Charleston en mayo de 1718, durante el que retuvo rehenes y exigió un cofre de medicinas. En junio de 1718 su nave encalló cerca de Beaufort, y Barbanegra murió el 22 de noviembre en un combate frente a Ocracoke con una fuerza dirigida por Robert Maynard. El instrumental médico del pecio no establece que Barbanegra padeciera sífilis ni confirma la historia de una patente de corso rechazada.",
+      "source": "https://www.dncr.nc.gov/blog/2016/11/22/blackbeards-death-his-head",
+      "sourceTitle": "North Carolina DNCR · Blackbeard's Death",
+      "reviewedAt": "2026-11-16"
     }
   }
 };
