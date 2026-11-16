@@ -359,7 +359,7 @@ window.IDEA_TELARANA_F38_REVIEW =
         {
           "episodeId": "idealab-f38-debate-arqueologia",
           "title": "F38 · contraste externo posterior al debate",
-          "source": "https://doi.org/10.1016/j.earscirev.2023.104720",
+          "source": "https://doi.org/10.1016/j.earscirev.2023.104502",
           "timeSec": null,
           "audioVerified": false,
           "minuteVerified": false,
@@ -689,8 +689,8 @@ window.IDEA_TELARANA_F38_REVIEW =
       "name": "Hipótesis de impacto cósmico del Younger Dryas",
       "kind": "Hipótesis",
       "subtitle": "Propuesta controvertida ≠ episodio climático acreditado",
-      "note": "La hipótesis del impacto del Younger Dryas (YDIH) propone un evento cósmico hace unos 12.900 años para explicar cambios ambientales y culturales. Sus defensores invocan microsférulas, platino, nanodiamantes y depósitos oscuros («black mat»). Una revisión extensa de Holliday y colaboradores en Earth-Science Reviews (2023; doi:10.1016/j.earscirev.2023.104720) cuestionó la identificación, datación, replicabilidad y especificidad de los indicadores y concluyó que no se acredita una catástrofe cósmica global. Existen defensores y réplicas de la hipótesis, pero el enfriamiento Younger Dryas no debe presentarse como prueba de impacto extraterrestre ni como origen demostrado de una civilización desaparecida o los mitos del diluvio.",
-      "source": "https://doi.org/10.1016/j.earscirev.2023.104720",
+      "note": "La hipótesis del impacto del Younger Dryas (YDIH) propone un evento cósmico hace unos 12.900 años para explicar cambios ambientales y culturales. Sus defensores invocan microsférulas, platino, nanodiamantes y depósitos oscuros («black mat»). Una revisión extensa de Holliday y colaboradores en Earth-Science Reviews (2023; doi:10.1016/j.earscirev.2023.104502) cuestionó la identificación, datación, replicabilidad y especificidad de los indicadores y concluyó que no se acredita una catástrofe cósmica global. Existen defensores y réplicas de la hipótesis, pero el enfriamiento Younger Dryas no debe presentarse como prueba de impacto extraterrestre ni como origen demostrado de una civilización desaparecida o los mitos del diluvio.",
+      "source": "https://doi.org/10.1016/j.earscirev.2023.104502",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
@@ -1167,7 +1167,7 @@ window.IDEA_TELARANA_F38_REVIEW =
       "b": "f38-ydih-hipotesis-impacto",
       "type": "Hipótesis causal controvertida sobre el inicio del enfriamiento",
       "claimStatus": "causalidad_hipotetica_objetada_por_revision",
-      "source": "https://doi.org/10.1016/j.earscirev.2023.104720",
+      "source": "https://doi.org/10.1016/j.earscirev.2023.104502",
       "confidence": "indicio",
       "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
       "podcastNotes": []
