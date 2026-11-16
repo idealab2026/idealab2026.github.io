@@ -22,11 +22,21 @@ window.IDEA_TELARANA_SOURCE05_EDITORIAL = {
       "personDirectory": 97,
       "theoreticalSumPersons": 127
     },
-    "qualityNotes": "El portal muestra discrepancias internas de universos estadísticos (97 entradas del directorio frente a 127 en un cálculo penal teórico). No considerar cifra como consolidada ni pena hipotética como condena. Registrar versiones y comprobar documentos judiciales originales antes de integrar nombres como investigados.",
+    "qualityNotes": "Conservar la instantánea de 09/11. El 16/11 el directorio dinámico declara 130 personas y muestra 129; el texto introductorio del cálculo aún menciona 97 y el desglose menciona 130. Es una divergencia de presentación o actualización que requiere comprobación del universo de datos. Las penas teóricas no son condenas.",
     "sourceDocUrl": null,
     "sourceNotebooks": [
       "CULTURA - GEOPOLÍTICA - ESPAÑA"
-    ]
+    ],
+    "subsequentSnapshot": {
+      "observedAt": "2026-11-16",
+      "runtimeDirectoryPeople": 130,
+      "runtimeVisiblePeople": 129,
+      "explanatoryTextPeople": 97,
+      "theoreticalBreakdownPeople": 130,
+      "causesClaimed": 17,
+      "offenceTypesClaimed": 23,
+      "qualification": "Cifras declaradas por el portal en la visita; no se ha auditado la población ni se han comprobado individualmente las causas o condenas."
+    }
   },
   "nodes": [
     {
@@ -38,7 +48,24 @@ window.IDEA_TELARANA_SOURCE05_EDITORIAL = {
       "source": "https://latramapsoe.es/",
       "photo": "",
       "topic3d": "politica",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "web-psoe-map-2026-source05",
+          "title": "F05 · observación del portal · 16/11/2026",
+          "source": "https://latramapsoe.es/",
+          "timeSec": null,
+          "status": "relato",
+          "text": "El directorio dinámico indicaba 130 personas y mostraba 129; el texto del cálculo hablaba de 97 y el desglose de 130. Puede tratarse de textos de versiones distintas: no se ha auditado el listado ni establecido el motivo."
+        },
+        {
+          "episodeId": "web-psoe-map-2026-source05",
+          "title": "F05 · metodología del portal",
+          "source": "https://latramapsoe.es/",
+          "timeSec": null,
+          "status": "relato",
+          "text": "El sitio distingue penas solicitadas, condenas que presenta como firmes y máximos teóricos. Esos rótulos y los procesos individuales no se han cotejado con sus resoluciones."
+        }
+      ]
     },
     {
       "id": "f05-pp",
@@ -71,7 +98,24 @@ window.IDEA_TELARANA_SOURCE05_EDITORIAL = {
       "source": "https://latramapsoe.es/",
       "photo": "",
       "topic3d": "politica",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "web-psoe-map-2026-source05",
+          "title": "F05 · marco jurídico · Constitución, artículo 24.2",
+          "source": "https://www.boe.es/legislacion/derechos_fundamentales.php?id_articulo=24.2&id_concepto=611",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "El artículo 24.2 reconoce, entre otras garantías, la presunción de inocencia. Esta norma general no determina la situación procesal concreta de ninguna persona."
+        },
+        {
+          "episodeId": "web-psoe-map-2026-source05",
+          "title": "F05 · marco jurídico · Código Penal, artículo 76",
+          "source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a76",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "El artículo 76 regula límites de cumplimiento efectivo y excepciones en los supuestos previstos. Una suma agregada de máximos para distintas personas no equivale a una pena impuesta ni a tiempo efectivo de cumplimiento."
+        }
+      ]
     }
   ],
   "edges": [
@@ -127,6 +171,16 @@ window.IDEA_TELARANA_SOURCE05_EDITORIAL = {
       "statement": "Las cifras, vínculos y penas incluidas son concluyentes",
       "status": "no_verificado_necesita_documentos_judiciales_independientes",
       "ref": "https://latramapsoe.es/"
+    },
+    {
+      "statement": "La presunción de inocencia está reconocida en el artículo 24.2 de la Constitución",
+      "status": "verificado_marco_general_no_situacion_individual",
+      "ref": "https://www.boe.es/legislacion/derechos_fundamentales.php?id_articulo=24.2&id_concepto=611"
+    },
+    {
+      "statement": "Existen reglas y excepciones sobre cumplimiento máximo de penas en el artículo 76",
+      "status": "verificado_marco_general_no_condena_individual",
+      "ref": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a76"
     }
   ]
 };

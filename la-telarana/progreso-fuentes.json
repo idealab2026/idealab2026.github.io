@@ -300,7 +300,9 @@
       "sourceRelationsDocumented": 3,
       "judicialFilesIndependentlyVerified": 0,
       "userRequestedSourceConsolidation": true,
-      "qualityNotes": "Portal partidista con alegaciones judiciales contra numerosas personas. Solo se ha verificado que el PP lo promociona, su temática y el estado de su presentación. No se han validado causas, imputaciones o condenas una por una. Las cifras estadísticas del sitio parecen mezclar universos distintos. No publicar en La Telaraña acusaciones individuales sin autos y resoluciones."
+      "qualityNotes": "Contraste metodológico 16/11: directorio dinámico 130 y texto de cálculo 97; verificadas normas generales, sin revisar procedimientos individuales. Las cifras son del portal y no son condenas.",
+      "documentaryChecks": 2,
+      "lastUpdated": "2026-11-16"
     },
     {
       "order": 6,
@@ -2765,7 +2767,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-09"
+          "lastUpdated": "2026-11-16"
         },
         "sourceData": "source05-psoe-map-context.js",
         "publisherVerified": "Partido Popular",
@@ -2777,7 +2779,7 @@
         "transcriptNotApplicable": true,
         "transcriptRequired": false,
         "analysisCoverage": {
-          "percent": 16,
+          "percent": 18,
           "state": "en_revision",
           "readyForDeepReview": false,
           "confidence": "indice_de_planificacion_no_cobertura_semantica_medida",
@@ -2786,8 +2788,8 @@
             "entities": 4,
             "relations": 3,
             "biographies": 0,
-            "statements": 0,
-            "independentChecks": 0,
+            "statements": 2,
+            "independentChecks": 2,
             "verifiedTimelineEvents": 0,
             "captionSegments": 0,
             "expectedEntities": 12,
@@ -2803,7 +2805,7 @@
             "cronologia": 0,
             "qa": 2
           },
-          "nextAction": "Revisar documentación primaria y extraer datos contrastables"
+          "nextAction": "Identificar y cotejar resoluciones judiciales originales de cada causa y su estado vigente; preservar la fecha de cada observación del portal."
         }
       },
       {
