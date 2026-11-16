@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "created_at": "2026-11-16",
+  "status": "APROBADO_PARA_PUBLICACION_NOVELA",
+  "approval_scope": "Exactamente los tres PNG #46, #89 y #90 con SHA-256 original y SHA-256 saneado, después de inspección a resolución original (2752x1536) y contraste con la edición francesa pública de Dumas. No equivale al cotejo integral de los vídeos.",
+  "total_reviewed": 8,
+  "approved_issues": [
+    46,
+    89,
+    90
+  ],
+  "review_report": "biblioteca-montecristo/CONTRASTE_EDITORIAL_LOTE5_2026-11-16.md",
+  "items": [
+    {
+      "issue": 46,
+      "book": "conde-montecristo",
+      "video_id": "KQ4cw1KRLF4",
+      "chapter": 67,
+      "chapter_title": "El despacho del procurador del rey",
+      "sha256": "dfbb41d24656cec6042e4a78147685e6f662d5ac4899cb1f488c5fb1b4c34537",
+      "export_sha256": "b60459b00c1b9b354193b208c5e4174d577e6f0d0a90818a5c0ea14097e62b9c",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_67",
+      "note": "Encuentro Hermine–Villefort, sepultura de niño dado por muerto, fosa vacía, hospicio y reclamación por una mujer, y promesa de investigar al conde en ocho días. La imagen interpreta visualmente la escena; no pretende reproducir documentos históricos.",
+      "approved_for_publication": true
+    },
+    {
+      "issue": 89,
+      "book": "conde-montecristo",
+      "video_id": "Mg0-wCrteXk",
+      "chapter": 47,
+      "chapter_title": "El tiro de caballos tordos",
+      "sha256": "74085f195a345077b778b6ee267807804329be6a52639ec2d8c418a673266e44",
+      "export_sha256": "86b14d6de83687ec61d17e44cc3e57ae238bccafff1ed350a299af91c0b4233e",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_47",
+      "note": "Venta y obsequio de los caballos, diamantes en las rosetas, orden de intervenir con lazo, rescate por Ali, gota de elixir rojo para Édouard y visita de Villefort. El título estratégico es una interpretación literaria.",
+      "approved_for_publication": true
+    },
+    {
+      "issue": 90,
+      "book": "conde-montecristo",
+      "video_id": "XsRvzPMNdlU",
+      "chapter": 48,
+      "chapter_title": "Ideología",
+      "sha256": "bd5df878740b85661a64015e3c4c650ebfba894c6f4b415e3c553afa9e1dc516",
+      "export_sha256": "fe1eaf2a59aba9499f3e7a2f70b1b949800262779db1084dfce3395f59e7d44f",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_48",
+      "note": "Debate entre Villefort y Montecristo sobre leyes, talión, misión providencial y cosmopolitismo; ejemplo de Noirtier afectado por apoplejía; despedida y orden de preparar carruaje. Afirmaciones ideológicas atribuidas a personajes.",
+      "approved_for_publication": true
+    }
+  ]
+}
