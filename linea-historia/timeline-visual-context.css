@@ -58,3 +58,17 @@
 }
 @media(max-width:480px){.visual-context-items{grid-template-columns:1fr}.visual-context-card:nth-child(n){display:grid}}
 @media(prefers-reduced-motion:reduce){.visual-context-items{scroll-behavior:auto}}
+
+/* Atlas: the new scientific-diagram gallery is separate from dated political maps. */
+.atlas-context-diagrams{margin:13px 0 16px;border-top:1px solid #39566e;padding-top:15px}
+.atlas-diagrams-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.atlas-diagrams-heading h3{font-family:Georgia,serif;font-size:1.12rem;margin:0}
+.atlas-diagrams-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:10px}
+.atlas-diagram-card{min-width:0;border:1px solid #3a556d;background:#10283e;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.atlas-diagram-image{display:flex;align-items:center;justify-content:center;background:#e9ebe7;height:190px;overflow:hidden}
+.atlas-diagram-image img{display:block;width:100%;height:100%;object-fit:contain}
+.atlas-diagram-info{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:12px;flex:1}
+.atlas-diagram-info strong{font-size:.89rem;line-height:1.35;color:#edf2f7}
+.atlas-diagram-caption{font-size:.75rem;line-height:1.5;color:#b6cddd;margin:0;flex:1}
+.atlas-diagram-credit{font-size:.67rem;color:#a9bccc;line-height:1.35}
+.atlas-diagram-info a{font-size:.72rem;color:#f0c887}
