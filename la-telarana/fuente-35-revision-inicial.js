@@ -247,6 +247,86 @@ window.IDEA_TELARANA_F35_REVIEW = {
           "text": "El documento citado aporta una referencia fechada; no verifica todas las interpretaciones de la entrevista."
         }
       ]
+    },
+    {
+      "id": "f35-guerra-iran-irak",
+      "name": "Guerra entre Irán e Irak",
+      "kind": "Acontecimiento",
+      "subtitle": "1980–1988",
+      "note": "Conflicto entre Irán e Irak. La ONU identifica una guerra de 1980 a 1988; la resolución 598 pidió un alto el fuego en 1987, que entró en vigor en 1988.",
+      "source": "https://main.un.org/securitycouncil/en/content/repertoire/middle-east",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=259",
+          "timeSec": 259,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "Los subtítulos sitúan en los años ochenta la guerra Irán-Irak y describen apoyo estadounidense a Irak; audio y literalidad sin cotejar.",
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · contraste documental",
+          "source": "https://main.un.org/securitycouncil/en/content/repertoire/middle-east",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "El Consejo de Seguridad sitúa la guerra en 1980–1988 y el alto el fuego en agosto de 1988."
+        }
+      ]
+    },
+    {
+      "id": "f35-armas-quimicas",
+      "name": "Armas químicas en la guerra Irán-Irak",
+      "kind": "Tema",
+      "subtitle": "Uso documentado por la OPAQ",
+      "note": "La OPAQ documenta el uso de armas químicas por el régimen iraquí contra combatientes y civiles, incluidos residentes kurdos de Halabja en 1988.",
+      "source": "https://www.opcw.org/sites/default/files/documents/2018/11/Chemistry%20in%20Conflict%20workbook_3rd%20Edition_November%202018.pdf",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ&t=289",
+          "timeSec": 289,
+          "status": "relato_del_episodio_sin_audio",
+          "text": "La transcripción sostiene que Irak empleó armas químicas y atribuye una respuesta permisiva a Estados Unidos; esta última caracterización requiere documentación específica.",
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · contraste documental",
+          "source": "https://www.opcw.org/sites/default/files/documents/2018/11/Chemistry%20in%20Conflict%20workbook_3rd%20Edition_November%202018.pdf",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "La OPAQ documenta varios usos por el régimen iraquí, incluidos ataques contra civiles kurdos en Halabja. El documento no verifica por sí solo la conducta de cada gobierno."
+        }
+      ]
+    },
+    {
+      "id": "f35-iran-contra",
+      "name": "Ventas de armas a Irán e Irán-Contra",
+      "kind": "Proceso histórico",
+      "subtitle": "Estados Unidos · década de 1980",
+      "note": "Contexto adicional no mencionado en el pasaje examinado: el Departamento de Estado documenta que fondos obtenidos de ventas de armas a Irán se usaron para armar a los contras nicaragüenses. Esto matiza una descripción lineal de las relaciones de la época.",
+      "source": "https://history.state.gov/milestones/1981-1988/central-america",
+      "topic3d": "global",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f35-iran-inicial",
+          "title": "F35 · contraste documental",
+          "source": "https://history.state.gov/milestones/1981-1988/central-america",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "La Oficina del Historiador del Departamento de Estado resume que personal de la Casa Blanca usó fondos procedentes de ventas de armas a Irán para armar a los contras antes de octubre de 1986. Es contexto adicional, no una cita del vídeo."
+        }
+      ]
     }
   ],
   "edges": [
@@ -402,6 +482,50 @@ window.IDEA_TELARANA_F35_REVIEW = {
       "claimStatus": "contexto_documental",
       "note": "Estados Unidos anunció en 2018 que cesaba su participación en el acuerdo.",
       "source": "https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-ending-united-states-participation-unacceptable-iran-deal/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-prof-episodio-guerra",
+      "a": "f35-episodio",
+      "b": "f35-guerra-iran-irak",
+      "type": "Mención en la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "La fuente trata la guerra; subtítulos orientativos sin cotejo de audio.",
+      "source": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-prof-iran-guerra",
+      "a": "f35-iran",
+      "b": "f35-guerra-iran-irak",
+      "type": "Parte del conflicto",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "Irán fue una de las partes de la guerra de 1980–1988, según la ONU.",
+      "source": "https://main.un.org/securitycouncil/en/content/repertoire/middle-east",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-prof-guerra-quimicas",
+      "a": "f35-guerra-iran-irak",
+      "b": "f35-armas-quimicas",
+      "type": "Uso documentado",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "La OPAQ documenta uso de armas químicas por Irak durante la guerra; no determina la reacción de cada Estado.",
+      "source": "https://www.opcw.org/sites/default/files/documents/2018/11/Chemistry%20in%20Conflict%20workbook_3rd%20Edition_November%202018.pdf",
+      "podcastNotes": []
+    },
+    {
+      "id": "f35-prof-guerra-irancontra",
+      "a": "f35-guerra-iran-irak",
+      "b": "f35-iran-contra",
+      "type": "Contexto contemporáneo",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "Las ventas de armas a Irán documentadas por el Departamento de Estado ocurrieron durante el conflicto; no se infiere que explicasen toda la política regional.",
+      "source": "https://history.state.gov/milestones/1981-1988/central-america",
       "podcastNotes": []
     }
   ]
