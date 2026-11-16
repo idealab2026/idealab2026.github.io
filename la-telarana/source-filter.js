@@ -4,6 +4,7 @@
 function norm(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim()}
 function sourceForModule(mod){
  var key=String(mod&&mod.key||""),label=String(mod&&mod.label||"");
+ if(/F48_EXTERNAL/.test(key))return "extra:f48-external"; // La lectura independiente NO es el PDF F48 original.
  if(/F49_CANDIDATE/.test(key))return "extra:f49-candidate"; // No confundir artículo candidato y fuente original.
  if(key==="IDEA_TELARANA_PODCAST_150")return "f69";
  if(key==="IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO")return "f1";

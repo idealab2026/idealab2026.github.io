@@ -76,6 +76,8 @@ jobs:
         run: node scripts/test_telarana_rankings.mjs
       - name: Validar tabla de progreso de fuentes
         run: node scripts/test_telarana_source_progress.mjs
+      - name: Validar lectura externa de F48 sin confundirla con el original
+        run: node scripts/test_telarana_source48_external.mjs
       - name: Comprobar identidad no confirmada del candidato F49
         run: node scripts/test_telarana_source49_candidate.mjs
       - name: Comprobar límites de evidencia en fuente 55
@@ -298,6 +300,7 @@ jobs:
           cp la-telarana/fuente-52-roma.js dist/la-telarana/fuente-52-roma.js
           cp la-telarana/fuente-53-arqueologia.js dist/la-telarana/fuente-53-arqueologia.js
           cp la-telarana/fuente-54-judaismo.js dist/la-telarana/fuente-54-judaismo.js
+          cp la-telarana/fuente-48-contexto-externo.js dist/la-telarana/fuente-48-contexto-externo.js
           cp la-telarana/fuente-49-candidato.js dist/la-telarana/fuente-49-candidato.js
           cp la-telarana/fuente-55-exodo.js dist/la-telarana/fuente-55-exodo.js
           cp la-telarana/fuente-56-identidades.js dist/la-telarana/fuente-56-identidades.js
