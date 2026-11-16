@@ -1,6 +1,5 @@
 /* Biografías contextualizadas; distinguir datos y alegaciones. */
-window.IDEA_TELARANA_BIOGRAPHIES =
-{
+window.IDEA_TELARANA_BIOGRAPHIES = {
   "version": 1,
   "reviewedAt": "2026-11-11",
   "wikiPages": {
