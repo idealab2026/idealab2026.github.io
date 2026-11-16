@@ -1396,6 +1396,36 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.iranicaonline.org/articles/trajan/",
       "sourceTitle": "Encyclopaedia Iranica · Trajan",
       "reviewedAt": "2026-11-16"
+    },
+    "f39-merer": {
+      "text": "Merer fue un inspector o jefe de equipo egipcio durante el reinado de Jufu, conocido por los diarios administrativos excavados en Wadi al-Jarf, un puerto del mar Rojo. Los registros del equipo documentan actividades cotidianas, aprovisionamiento y transporte de caliza desde Tura hacia el entorno de la Gran Pirámide de Guiza. Su documento constituye una evidencia contemporánea singular sobre la logística real, no un inventario exhaustivo de cada bloque ni el plano del edificio. Los subtítulos F45 aluden a un «capataz» con registros de trabajo, pero sin audio no se confirman voces.",
+      "source": "https://www.persee.fr/doc/bsfe_0037-9379_2017_num_198_1_1260",
+      "sourceTitle": "Pierre Tallet (2017), diarios de Wadi al-Jarf",
+      "reviewedAt": "2026-11-16"
+    },
+    "f45-filippo-biondi": {
+      "text": "Filippo Biondi figura como coautor con Corrado Malanga de un artículo publicado en Remote Sensing en octubre de 2022 sobre una propuesta de tomografía SAR para interpretar supuestas estructuras internas de la Gran Pirámide. El 10 de agosto de 2026 la revista retractó ese trabajo por fallos metodológicos y errores estadísticos que debilitaban sus conclusiones. Según el aviso editorial, ambos autores expresaron desacuerdo con la decisión. La retractación no supone por sí sola prueba de mala conducta o falsificación. La conversación F45 transcribe de forma imperfecta el apellido como «Bondi».",
+      "source": "https://doi.org/10.3390/rs18162679",
+      "sourceTitle": "Remote Sensing / MDPI · aviso oficial de retractación, 10-08-2026",
+      "reviewedAt": "2026-11-16"
+    },
+    "f45-corrado-malanga": {
+      "text": "Corrado Malanga aparece en F45 vinculado a una presentación mediática de 2025 sobre supuestas estructuras muy profundas bajo la pirámide de Jafra. Es coautor del trabajo SAR sobre la Gran Pirámide publicado en Remote Sensing en 2022 y retractado el 10 de agosto de 2026 por problemas metodológicos y estadísticos, retractación con la que los autores discrepan. Son cuestiones separadas: la retractación concierne al trabajo de 2022 sobre Jufu; las afirmaciones sobre Kefrén de 2025 no están verificadas mediante excavación o publicación equivalente revisada.",
+      "source": "https://doi.org/10.3390/rs18162679",
+      "sourceTitle": "Remote Sensing / MDPI · aviso de retractación",
+      "reviewedAt": "2026-11-16"
+    },
+    "f45-imhotep": {
+      "text": "Imhotep fue un alto funcionario egipcio del período de la III dinastía y aparece asociado en la tradición histórica a la arquitectura monumental de Djoser en Saqqara. La pirámide escalonada representa una fase decisiva de los complejos funerarios reales. En F45 se plantea como hipótesis que la sepultura de Imhotep debería encontrarse próxima a la de Djoser, pero la localización concreta no está arqueológicamente acreditada. Debe distinguirse su papel histórico de posteriores tradiciones religiosas y de predicciones sobre enterramientos no encontrados.",
+      "source": "https://whc.unesco.org/en/list/86",
+      "sourceTitle": "UNESCO · Menfis y sus necrópolis",
+      "reviewedAt": "2026-11-16"
+    },
+    "f45-herodoto": {
+      "text": "Heródoto de Halicarnaso fue un autor griego del siglo V a. C., conocido por su obra Historias, en la que recopiló relatos sobre Egipto y sus monumentos varios siglos después de la construcción de las pirámides de Guiza. En F45 se menciona el plazo tradicional de veinte años atribuido a la construcción de la Gran Pirámide. Es un testimonio literario tardío, no documentación contemporánea de obra; el registro del inspector Merer confirma operaciones logísticas durante el reinado de Jufu, pero no fija por sí mismo la duración total de la construcción.",
+      "source": "https://giza.fas.harvard.edu/faq/",
+      "sourceTitle": "Harvard Digital Giza · documentación y preguntas frecuentes",
+      "reviewedAt": "2026-11-16"
     }
   }
 };

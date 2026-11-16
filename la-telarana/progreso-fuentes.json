@@ -5356,7 +5356,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 44,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_documental_piramides_con_retractacion_2026_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5367,7 +5367,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-16",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5386,19 +5386,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 14,
-            "relations": 16,
-            "biographies": 0,
-            "statements": 8,
-            "independentChecks": 5,
-            "verifiedTimelineEvents": 1
+            "entities": 28,
+            "relations": 44,
+            "biographies": 5,
+            "statements": 15,
+            "independentChecks": 10,
+            "verifiedTimelineEvents": 3
           },
-          "nextAction": "Cotejar audio, voces e integridad; ampliar contraste de construcción, evidencia arqueológica y afirmaciones extraordinarias."
+          "nextAction": "Cotejar voces/audio; ampliar construcción y dataciones por materiales; verificar diferencia entre mediciones de muones y métodos SAR retractados; revisar con metodología independiente cualquier novedad sobre Kefrén."
         }
       },
       {
