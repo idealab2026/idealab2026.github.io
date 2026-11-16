@@ -103,6 +103,30 @@ const typeEdges=[
 const beforeTypeJson=JSON.stringify({typeNodes,typeEdges});
 assert.equal(mod.entityType(typeNodes[2]),"Institución / organización");
 assert.equal(mod.entityType(typeNodes[3]),"Institución / organización");
+assert.equal(mod.entityType({kind:"Publicación"}),"Fuente","Las entrevistas publicadas no pueden escapar al filtro Fuente");
+assert.equal(mod.entityType({kind:"Podcast"}),"Fuente");
+assert.equal(mod.entityType({kind:"Episodio"}),"Fuente");
+assert.equal(mod.entityType({kind:"Documento"}),"Fuente");
+assert.equal(mod.entityType({kind:"Estudio"}),"Fuente");
+assert.equal(mod.entityType({kind:"Texto"}),"Fuente");
+assert.equal(mod.entityType({kind:"Obra"}),"Fuente");
+assert.equal(mod.entityType({kind:"Artículo"}),"Fuente");
+assert.equal(mod.entityType({kind:"Grabación audiovisual"}),"Fuente");
+assert.equal(mod.entityType({kind:"Declaración"}),"Declaración","Una declaración no es un documento fuente");
+assert.equal(mod.entityType({kind:"Persona"}),"Persona");
+const source07Text=fs.readFileSync("la-telarana/podcast-wild-312-chicote.js","utf8");
+const source07=JSON.parse(source07Text.split("window.IDEA_TELARANA_SOURCE07_PODCAST = ")[1].trim().replace(/;$/,""));
+const episode312=source07.nodes.find(n=>n.id==="twp312-episode");
+assert(episode312&&episode312.kind==="Publicación","Reproducir exactamente el nodo de la captura");
+assert.equal(mod.entityType(episode312),"Fuente","El Wild Project #312 debe aparecer bajo Fuente");
+const filteredSource07=mod.filterByTypes(source07.nodes,source07.edges,new Set(["Persona","Institución / organización","Acontecimiento","Tema"]));
+assert(!filteredSource07.nodes.some(n=>n.id==="twp312-episode"),
+ "Desmarcar Fuente debe eliminar el Wild Project #312 en 3D y 2D");
+assert(!filteredSource07.edges.some(e=>e.a==="twp312-episode"||e.b==="twp312-episode"),
+ "Desmarcar Fuente debe retirar sus aristas, sin vínculos colgantes");
+assert(source07.nodes.some(n=>n.id==="twp312-episode"&&n.kind==="Publicación"),
+ "No mutar el tipo original de la fuente");
+assert.equal(mod.entityType({kind:"Fuente"}),"Fuente");
 assert.equal(mod.entityType({kind:"País"}),"País");
 const allTypes=mod.filterByTypes(typeNodes,typeEdges,null);
 assert.equal(allTypes.nodes.length,6);assert.equal(allTypes.edges.length,5);
@@ -161,7 +185,8 @@ assert(html.includes('filterByTypes(shownData.nodes,shownData.edges,typeControls
 assert(html.includes('graph3d.setData(shownData.nodes,shownData.edges)'));
 assert(html.includes('renderGraph(q)'));
 assert(html.includes('renderGallery(q)'));
-assert(html.includes('source-filter.js?v=20261116-global-types-3'));
+assert(html.includes('source-filter.js?v=20261116-source-kinds-4'));
+assert(html.includes('graph-3d.js?v=20261116-source-kind-hover'));
 assert(html.includes('id="source-filter-toggle"')&&html.includes('id="source-filter-panel"'));
 assert(html.includes('id="inspector-drawer-close"')&&html.includes('aria-label="Deseleccionar entidad o relación"'));
 assert(html.includes('$("inspector-drawer-close").hidden=!selection'));

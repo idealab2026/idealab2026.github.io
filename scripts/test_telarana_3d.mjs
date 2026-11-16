@@ -83,7 +83,8 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
   addEventListener(name,fn){events[name]=fn},
   setPointerCapture(){},closest(){return null},style:{}
  };
- const graph=Graph.create({canvas,tooltip:{hidden:true,style:{}},
+ const tooltip={hidden:true,style:{},textContent:""};
+ const graph=Graph.create({canvas,tooltip,
   getPhoto(){photoRequests++;return null}});
  graph.setData(nodes,edges);
  const fitted=graph.fit();
@@ -153,5 +154,17 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  flush(time+60);
  // Control de reanudación, disponible independientemente del sistema operativo.
  assert(graph.setMotion(true)===true);
+ // Cambiar el conjunto filtrado debe eliminar nodos visuales y tooltips anteriores.
+ const removedId=nodes[nodes.length-1].id;
+ const subset=nodes.filter(n=>n.id!==removedId),kept=new Set(subset.map(n=>n.id));
+ const subsetEdges=edges.filter(e=>kept.has(e.a)&&kept.has(e.b));
+ tooltip.hidden=false;tooltip.textContent="The Wild Project #312";
+ // Simular la última etiqueta visible antes de cambiar el filtro.
+ graph.setData(subset,subsetEdges);
+ assert.equal(tooltip.hidden,true,"La etiqueta del nodo filtrado debe desaparecer de inmediato");
+ assert.equal(tooltip.textContent,"","El tooltip anterior no puede seguir mostrando un podcast oculto");
+ flush(time+60);
+ assert.equal(rings.length,241,"Ocultar un tipo elimina su nodo del orbe, no solo de las estadísticas");
+ assert.equal(pillBoxes.length,8,"Conservar las etiquetas de las comunidades activas");
 }
 console.log('OK: 8 zonas difuminadas sin círculos perimetrales, Historia e Iglesia, mano agarrando, 242 nodos, 5 resoluciones y zoom');

@@ -174,8 +174,13 @@ function mount(opts){
 }
 /* Filtro de tipos del MAPA PRINCIPAL (3D, 2D y listado). No sustituye el filtro del esquema local. */
 function entityType(node){
- var raw=String(node&&node.kind||"Otro").trim()||"Otro";
- if(/^(instituci[oó]n|instituciones|organizaci[oó]n|organizaciones|organismos?|agencias?|institutos?)$/i.test(raw))return "Institución / organización";
+ var raw=String(node&&node.kind||"Otro").trim()||"Otro",kind=norm(raw);
+ if(/^(institucion|instituciones|organizacion|organizaciones|organismos?|agencias?|institutos?)$/.test(kind))return "Institución / organización";
+ // El campo "kind" original distingue varias clases de MATERIAL FUENTE:
+ // p. ej. F07 The Wild Project #312 tiene kind="Publicación" y F30 kind="Fuente".
+ // Para el filtro, todos los registros documentales/audiovisuales son "Fuente".
+ // NO cambiar node.kind: se conserva el subtipo original en las fichas.
+ if(/^(fuente(?: .+)?|publicacion(?: .+)?|documento(?: .+)?|estudio(?: .+)?|texto(?: .+)?|obra(?: .+)?|libro(?: .+)?|articulo(?: .+)?|informe(?: .+)?|episodio(?: .+)?|entrevista(?: .+)?|podcast(?: .+)?|programa de (?:radio|television)|grabacion(?: .+)?|video(?: .+)?|reportaje(?: .+)?)$/.test(kind))return "Fuente";
  return raw;
 }
 function filterByTypes(nodes,edges,selected){

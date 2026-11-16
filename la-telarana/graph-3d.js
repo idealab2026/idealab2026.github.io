@@ -376,7 +376,20 @@ function make(options){
  new ResizeObserver(redraw).observe(canvas);
  return {
   topics:topics.map(t=>({id:t[0],label:t[1]})),
-  setData(a,b){nodes=a;edges=b;index.clear();for(const n of a)index.set(n.id,n);if(this.sig!==a.map(n=>n.id).join("|")+"#"+b.length){this.sig=a.map(n=>n.id).join("|")+"#"+b.length;arrange()}redraw();startMotion()},
+  setData(a,b){
+   nodes=a;edges=b;index.clear();for(const n of a)index.set(n.id,n);
+   // Al cambiar el subgrafo, limpiar etiquetas y zonas de clic del estado previo.
+   // Sin esto, un tooltip de una Publicación filtrada puede permanecer en pantalla.
+   const signature=a.map(n=>n.id).join("|")+"#"+b.length;
+   if(this.sig!==signature){
+    this.sig=signature;hover=null;hoverEdge=null;hint.hidden=true;hint.textContent="";
+    hits=[];edgeHits=[];bandHits=[];arrange()
+   }else{
+    if(hover&&!index.has(hover)){hover=null;hint.hidden=true}
+    if(hoverEdge&&!edges.some(e=>e.id===hoverEdge)){hoverEdge=null;hint.hidden=true}
+   }
+   redraw();startMotion()
+  },
   setSelection(s){selection=s;redraw()},setQuery(s){search=s||"";redraw()},setEdgeMode(s){mode=s;redraw()},
   setTheme(s){markInteraction();theme=topics.some(t=>t[0]===s)?s:"todos";hover=null;hoverEdge=null;hint.hidden=true;
    yaw=-.45;pitch=.24;basePitch=.24;zoom=1;panX=panY=0;fitView()},
