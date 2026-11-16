@@ -2029,12 +2029,12 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 23,
-      "sourceRelationsDocumented": 27,
+      "sourceNodesDocumented": 25,
+      "sourceRelationsDocumented": 30,
       "personsProfiled": 0,
-      "documentaryChecks": 9,
+      "documentaryChecks": 11,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Ampliada con Marcos, Juan y cronología de Tito y Adriano. Subtítulos automáticos orientativos; audio y voces sin cotejar.",
+      "qualityNotes": "Ampliada con Mateo 2:16 y Josefo XVII; textos diferenciados de hechos históricos y subtítulos sin cotejo de audio.",
       "lastUpdated": "2026-11-16"
     }
   ],
@@ -6581,20 +6581,20 @@
           "automaticYouTubeCaptionsAvailable": true
         },
         "analysisCoverage": {
-          "percent": 20,
+          "percent": 23,
           "state": "revision_parcial_ampliada",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 23,
-            "relations": 27,
+            "entities": 25,
+            "relations": 30,
             "biographies": 0,
-            "statements": 16,
-            "independentChecks": 9,
+            "statements": 18,
+            "independentChecks": 11,
             "verifiedTimelineEvents": 0
           },
-          "nextAction": "Cotejar audio y voces; profundizar en los pasajes no contrastados y las diferencias de los relatos de la pasión."
+          "nextAction": "Cotejar audio y voces; seguir revisando la entrevista y contrastar sus afirmaciones con textos y contexto histórico."
         }
       },
       {
