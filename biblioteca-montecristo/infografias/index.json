@@ -1,4 +1,11 @@
 {
   "version": 1,
-  "books": {}
+  "books": {
+    "conde-montecristo": {
+      "chapters": {
+        "_rwETuXzNaA": "./infografias/conde-montecristo/_rwETuXzNaA.png",
+        "_SRySvumQGU": "./infografias/conde-montecristo/_SRySvumQGU.png"
+      }
+    }
+  }
 }
