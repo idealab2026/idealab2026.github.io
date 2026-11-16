@@ -13,6 +13,10 @@ for(const id of ['f38-white-sands-huellas','f38-white-sands-evidencia-2026','f38
 const white=f.nodes.find(n=>n.id==='f38-white-sands-huellas');
 assert(white.note.includes('23.500')&&white.note.includes('21.700'),'Fechas revisadas USGS 2026');
 assert(white.podcastNotes.some(n=>n.transcriptSearch==='White Sans'&&n.timeSec===null&&n.audioVerified===false));
+const evidence=f.nodes.find(n=>n.id==='f38-white-sands-evidencia-2026');
+assert(evidence.podcastNotes.some(n=>n.source.includes('tandfonline.com')&&n.text.includes('objeción')));
+assert(evidence.podcastNotes.some(n=>n.source.includes('PMC12175891')&&n.text.includes('26')));
+assert(f.nodes.find(n=>n.id==='f38-younger-dryas').podcastNotes.some(n=>n.source.includes('s41598-022-11377-4')));
 const sir=f.nodes.find(n=>n.id==='f38-sar-2022-retractacion-2026');
 assert(sir.note.includes('Jufu')&&sir.note.includes('Kefrén'),'No confundir el artículo retractado con la hipótesis de Kefrén');
 assert(sir.source==='https://doi.org/10.3390/rs18162679');
@@ -22,6 +26,6 @@ assert(f.edges.some(e=>e.id==='f38-white-sands-investigacion'&&e.claimStatus==='
 assert(f.edges.some(e=>e.id==='f38-retractacion-kefren-contexto'&&e.claimStatus==='contexto_editorial_no_retractacion_alegacion_kefren'));
 assert(f.edges.some(e=>e.id==='f38-dialogos-atlantida'&&e.claimStatus==='contenido_textual_no_hecho_arqueologico'));
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));const e=h.items.filter(e=>e.id==='study-f38-papiros-wadi-2013');assert.equal(e.length,1);assert.equal(e[0].investigation.date,'2013');
-const p=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===38);assert.equal(p.analysisCoverage.signals.statements,13);assert.equal(p.analysisCoverage.signals.independentChecks,8);assert.equal(p.analysisCoverage.signals.entities,24);assert.equal(p.analysisCoverage.signals.relations,32);assert.equal(p.analysisCoverage.percent,20);assert(!p.reviewComplete);
+const p=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===38);assert.equal(p.analysisCoverage.signals.statements,13);assert.equal(p.analysisCoverage.signals.independentChecks,11);assert.equal(p.analysisCoverage.signals.entities,24);assert.equal(p.analysisCoverage.signals.relations,32);assert.equal(p.analysisCoverage.percent,22);assert(!p.reviewComplete);
 assert(read('la-telarana/index.html').includes('fuente-38-debate-arqueologia.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-38-debate-arqueologia.js'));
 console.log('OK: F38 conserva diferencias entre debate multivoz, textos y hechos documentados');
