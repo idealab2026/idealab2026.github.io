@@ -1,5 +1,6 @@
 /* F53 · segunda revisión documental: egiptología, literatura de antiguos astronautas y auditoría de atribución. Audio y minutajes NO cotejados. */
-window.IDEA_TELARANA_F53_REVIEW = {
+window.IDEA_TELARANA_F53_REVIEW =
+{
   "metadata": {
     "id": "idealab-f53-arqueologia",
     "sourceOrder": 53,
@@ -300,6 +301,26 @@ window.IDEA_TELARANA_F53_REVIEW = {
           "text": "El invitado describe la leyenda canaria de San Borondón y su aparente visión desde islas occidentales. Es una narración folclórica, no un descubrimiento geográfico."
         }
       ]
+    },
+    {
+      "id": "f53-karnak",
+      "name": "Conjunto monumental de Karnak",
+      "kind": "Lugar",
+      "subtitle": "Luxor, Egipto · recinto templario",
+      "note": "La transcripción de NotebookLM registra «templo de Carnac», referencia contextual al conjunto de Karnak en Luxor, distinto de Carnac en Francia. Se trata de una normalización editorial provisional, pendiente de cotejar la pronunciación con el audio; no debe modificarse el TXT original.",
+      "source": "https://whc.unesco.org/en/list/87/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f53-arqueologia",
+          "title": "F53 · topónimo normalizado sin verificación acústica",
+          "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+          "timeSec": null,
+          "status": "normalizacion_contextual_no_audio",
+          "text": "La fuente menciona una capilla dentro del «templo de Carnac» en Egipto. Por el contexto geográfico la identificación probable es Karnak, Luxor. El topónimo debe cotejarse con audio antes de atribuir palabra exacta al invitado."
+        }
+      ]
     }
   ],
   "edges": [
@@ -521,6 +542,17 @@ window.IDEA_TELARANA_F53_REVIEW = {
       "confidence": "hipotesis",
       "claimStatus": "interpretacion_de_la_fuente",
       "note": "La leyenda ilustra una comparación metodológica del entrevistado, no implica una relación histórica causal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f53-karnak-mencion",
+      "a": "f53-episodio",
+      "b": "f53-karnak",
+      "type": "Lugar citado en entrevista",
+      "source": "https://www.youtube.com/watch?v=yhHoetTIARc",
+      "confidence": "indicio",
+      "claimStatus": "mencion_toponimo_identificado_contextualmente",
+      "note": "«Carnac» en el TXT automático se interpreta como Karnak por el contexto egipcio; el audio no está cotejado.",
       "podcastNotes": []
     }
   ]
