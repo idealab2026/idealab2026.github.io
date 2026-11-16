@@ -1749,12 +1749,12 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 15,
-      "sourceRelationsDocumented": 20,
-      "personsProfiled": 3,
-      "documentaryChecks": 6,
+      "sourceNodesDocumented": 24,
+      "sourceRelationsDocumented": 34,
+      "personsProfiled": 6,
+      "documentaryChecks": 11,
       "timelineVerifiedEventsCommitted": 2,
-      "qualityNotes": "Segunda revisión F53: 15 fichas (incluidas reutilizadas), 20 relaciones, 12 notas del texto de la entrevista, 3 biografías documentadas, 6 contrastes y 2 nuevos hitos. Carnarvon, Däniken, libro de 1968, necrópolis UNESCO y leyenda San Borondón. Anécdota sobre supuesto autismo de Carter marcada como NO diagnóstico. «Goblitpay» es topónimo fonético identificado provisionalmente con Göbekli Tepe; el «templo primero» no es hecho demostrado. Audio y minutajes NO verificados. 23 % editorial heurístico.",
+      "qualityNotes": "Revisión parcial F53: 24 fichas, 34 vínculos, 6 biografías, 11 contrastes y 2 hitos, incluidos los avances de PR #347 y #349. 12 declaraciones registradas; audio, voces y minutajes sin cotejar. Hipótesis y alegaciones no equivalen a hechos.",
       "lastUpdated": "2026-11-16"
     },
     {
@@ -5782,14 +5782,14 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 15,
-            "relations": 20,
-            "biographies": 3,
+            "entities": 24,
+            "relations": 34,
+            "biographies": 6,
             "statements": 12,
-            "independentChecks": 6,
+            "independentChecks": 11,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "Cotejar audio e identificar la mención fonética «Goblitpay» y el nombre de Däniken; verificar voces y completar todos los pasajes; no atribuir autismo a Carter sin evidencia clínica, ni dar como demostrada la hipótesis «el templo primero»."
+          "nextAction": "Cotejar audio y voces, revisar las identificaciones fonéticas y continuar el análisis. Las hipótesis y alegaciones personales requieren contraste independiente."
         }
       },
       {
