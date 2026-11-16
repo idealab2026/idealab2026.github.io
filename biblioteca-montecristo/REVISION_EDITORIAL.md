@@ -1,6 +1,8 @@
 # Revisión editorial · Biblioteca IDEA LAB
 
-> **Actualización 16/11/2026:** se han publicado las infografías #86 (capítulo 44) y #88 (capítulo 46). El inventario y las cifras siguientes describen el triaje de los 99 originales antes de esa publicación; no representan el contador actual. Véase [la revisión del lote publicado](./REVISION_PUBLICACION_2026-11-16.md). El resto continúa pendiente de revisión o corrección.
+> **Situación al 16/11/2026:** **99 PNG recibidos**, **9 publicados en GitHub Pages** y **90 originales todavía no publicados**. Hay **5 originales adicionales aprobados para el lote 4**, pero **aún no están subidos ni desplegados**: [#40, #41, #73, #74 y #77](./APROBADAS_PARA_PR_LOTE4_2026-11-16.json). Véase el [cotejo del lote 4](./CONTRASTE_PUBLICACION_LOTE4_2026-11-16.md) y el [registro operativo #243](https://github.com/idealab2026/idealab2026.github.io/issues/243).
+
+> Las tablas históricas siguientes describen los controles preliminares de los **69 + 30 originales antes de las publicaciones**; sus cifras por estado no equivalen a contadores actuales de aprobadas/publicadas. Los dos primeros lotes publicados y los siguientes tienen documentos de aprobación separados.
 
 **Estado:** triaje visual preliminar de **69 PNG únicos** recibidos en dos archivos ZIP (35+35 PNG, una copia exacta de #16). **No hay ninguna imagen aprobada ni publicada** por este registro. Última segunda pasada selectiva: 15/11/2026. Integridad técnica de los 69 originales validada el 15/11/2026: PNG decodificables, 2752×1536, SHA-256 coincidente con inventario, sin duplicados binarios entre los 69 únicos. **Esa validación técnica no equivale a conformidad editorial.**
 
