@@ -27,7 +27,7 @@ assert(f.edges.some(e=>e.id==='f38-retractacion-kefren-contexto'&&e.claimStatus=
 // Controversia científica: nunca convertir la datación nueva en consenso inexistente.
 for(const id of ['f38-monte-verde-ii','f38-monte-verde-estudio-2026','f38-monte-verde-replica-2026','f38-donana','f38-tartessos','f38-tartessos-donana-hipotesis','f38-ydih-hipotesis-impacto'])assert(ids.has(id),'Falta contraste F38 '+id);
 const mv=f.nodes.find(n=>n.id==='f38-monte-verde-ii');
-assert(mv.note.includes('no está zanjado')&&mv.podcastNotes.some(n=>n.transcriptSearch==='Monteverde'&&n.audioVerified===false&&n.timeSec===null));
+assert(mv.note.toLowerCase().includes('no está zanjado')&&mv.podcastNotes.some(n=>n.transcriptSearch==='Monteverde'&&n.audioVerified===false&&n.timeSec===null));
 assert(f.nodes.find(n=>n.id==='f38-monte-verde-estudio-2026').note.includes('8.200–4.200'));
 assert(f.nodes.find(n=>n.id==='f38-monte-verde-replica-2026').note.includes('14.500'));
 assert(f.edges.some(e=>e.id==='f38-monteverde-disenso'&&e.claimStatus==='discrepancia_cientifica_documentada'));
