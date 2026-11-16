@@ -525,6 +525,66 @@ window.IDEA_TELARANA_F68_REVIEW = {
           "text": "El documento citado permite comprobar la cronología o el pasaje; no confirma todas las interpretaciones de la entrevista."
         }
       ]
+    },
+    {
+      "id": "f68-mateo-inocentes",
+      "name": "Relato de Mateo 2:16",
+      "kind": "Texto",
+      "subtitle": "Herodes y niños de Belén",
+      "note": "El evangelio de Mateo narra una orden de Herodes contra niños de Belén y su entorno. Registrar el contenido de un texto antiguo no establece por sí solo la historicidad de cada episodio.",
+      "source": "https://www.biblegateway.com/passage/?search=Matthew+2%3A16&version=NRSVUE",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU&t=2119",
+          "timeSec": 2119,
+          "status": "relato_de_la_fuente_sin_audio",
+          "text": "La transcripción presenta a Mateo como testimonio del episodio y argumenta que sería coherente con otras acciones atribuidas a Herodes. Audio y voces sin cotejar.",
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · contraste documental",
+          "source": "https://www.biblegateway.com/passage/?search=Matthew+2%3A16&version=NRSVUE",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "Mateo 2:16 sitúa el relato en Belén y sus alrededores y se refiere a niños de hasta dos años. El pasaje acredita el contenido del relato, no una confirmación externa."
+        }
+      ]
+    },
+    {
+      "id": "f68-josefo-hipodromo",
+      "name": "Josefo: orden y liberación de notables",
+      "kind": "Texto",
+      "subtitle": "Antigüedades judías XVII · 6 y 8",
+      "note": "Josefo relata que Herodes ordenó retener a notables y matarlos tras su muerte, y que Salomé y Alexas los liberaron. Es una narración antigua distinta del relato de Mateo, no una prueba de que ambos episodios ocurrieran.",
+      "source": "https://penelope.uchicago.edu/Josephus/ant-17.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · subtítulos automáticos, tiempo orientativo",
+          "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU&t=2160",
+          "timeSec": 2160,
+          "status": "relato_de_la_fuente_sin_audio",
+          "text": "Los subtítulos recogen una comparación con una orden a la hermana de Herodes relativa al primogénito de cada familia; la formulación y voz requieren cotejo con el audio.",
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f68-pasion",
+          "title": "F68 · contraste documental",
+          "source": "https://penelope.uchicago.edu/Josephus/ant-17.html",
+          "timeSec": null,
+          "status": "verificacion-externa",
+          "text": "En Antigüedades XVII 6, Josefo describe notables retenidos y una orden de darles muerte; en XVII 8 dice que Salomé y Alexas los liberaron. El pasaje no identifica como primogénito a cada retenido."
+        }
+      ]
     }
   ],
   "edges": [
@@ -823,6 +883,39 @@ window.IDEA_TELARANA_F68_REVIEW = {
       "claimStatus": "contexto_documental",
       "note": "La revuelta de Bar Kojba ocurrió en 132–135 durante el reinado de Adriano.",
       "source": "https://www.metmuseum.org/exhibitions/listings/2019/world-between-empires-art-and-identity-ancient-middle-east/exhibition-galleries",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-prof-mateo",
+      "a": "f68-episodio",
+      "b": "f68-mateo-inocentes",
+      "type": "Mención en la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Pasaje de la transcripción automática; audio y voces sin cotejar.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-prof-josefo",
+      "a": "f68-episodio",
+      "b": "f68-josefo-hipodromo",
+      "type": "Mención en la fuente",
+      "confidence": "indicio",
+      "claimStatus": "mencion_no_prueba_relacion",
+      "note": "Comparación transcrita de forma automática; audio y voces sin cotejar.",
+      "source": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68-prof-herodes-josefo",
+      "a": "f64-herodes",
+      "b": "f68-josefo-hipodromo",
+      "type": "Personaje de un relato",
+      "confidence": "documentado",
+      "claimStatus": "contexto_documental",
+      "note": "Josefo atribuye a Herodes una orden y relata que los retenidos fueron liberados. El vínculo acredita el contenido del texto, no todos los hechos narrados.",
+      "source": "https://penelope.uchicago.edu/Josephus/ant-17.html",
       "podcastNotes": []
     }
   ]
