@@ -6,7 +6,7 @@ var api=window.HistoryTimeline;
 var context=document.getElementById("history-atlas-context");
 var full=document.getElementById("atlas-panel");
 if(!api||!context||!full)return;
-var state={year:Math.round(api.getYear()),focusId:null,focusName:"",pinned:false,chosen:null,items:[],loaded:false,fullScreen:false};
+var state={year:Math.round(api.getYear()),focusId:null,focusName:"",pinned:false,chosen:null,items:[],inventory:[],loaded:false,fullScreen:false};
 var $=function(id){return document.getElementById(id)};
 function node(tag,text,className){var e=document.createElement(tag);if(text!=null)e.textContent=text;if(className)e.className=className;return e}
 function safeUrl(url,asset){
@@ -104,7 +104,10 @@ function initDOM(){
  '<div class="atlas-layout"><figure class="atlas-figure"><div class="atlas-large-stage"><img id="atlas-large-img" class="atlas-image" alt="" hidden><div id="atlas-large-empty" class="atlas-no-image"></div></div><figcaption class="atlas-caption"><h2 id="atlas-large-title"></h2><div class="atlas-map-meta" id="atlas-large-meta"></div><p id="atlas-large-note"></p><p id="atlas-large-credit"></p><a id="atlas-large-source" class="atlas-source" rel="noopener noreferrer" target="_blank" hidden></a></figcaption></figure><aside class="atlas-contemporaries"><h3>Contemporáneos al año seleccionado</h3><div class="muted" id="atlas-record-count"></div><div id="atlas-records"></div></aside></div>'+
  '<div class="atlas-gallery" id="atlas-gallery" aria-label="Galería de imágenes del periodo"></div>'+
  '<section class="atlas-archive"><h3>Imágenes originales pendientes de catalogar <span id="atlas-archive-count"></span></h3><p class="muted">Se conservan separadas hasta verificar fecha, tema y derechos. Pulsa una miniatura para consultarla sin atribuirle una cronología.</p><div class="atlas-archive-grid" id="atlas-archive-grid"></div></section>'+
- '<p class="muted">Cada mapa es una instantánea de su fecha de referencia. El deslizador no calcula fronteras históricas: muestra láminas documentales disponibles para ese intervalo.</p>';
+ '<p class="muted">Cada mapa es una instantánea de su fecha de referencia. El deslizador no calcula fronteras históricas: muestra láminas documentales disponibles para ese intervalo.</p>'+
+ '<section class="atlas-original-inventory" id="atlas-original-inventory"><div class="atlas-inventory-header"><h3>Inventario del Excel · <span id="atlas-inventory-total">81</span> imágenes</h3><div class="atlas-inventory-controls"><input id="atlas-inventory-search" type="search" aria-label="Buscar imágenes del Excel" placeholder="Buscar imagen, tema o celda…"><select id="atlas-inventory-type" aria-label="Filtrar tipo de imagen"><option value="">Todos los tipos</option></select></div></div><p class="muted">Se han revisado los 81 archivos incrustados de HISTORIA.xlsx. Las miniaturas originales no se publican sin acreditar derechos. Cuando existe un mapa alternativo de Wikimedia Commons, puedes abrirlo aquí. No es una copia idéntica de la imagen original.</p><div id="atlas-inventory-status" class="atlas-map-meta" role="status"></div><div id="atlas-inventory-list" class="atlas-inventory-list"></div></section>';
+ $("atlas-inventory-search").addEventListener("input",drawInventory);
+ $("atlas-inventory-type").addEventListener("change",drawInventory);
  $("atlas-side-open").addEventListener("click",function(){api.setView("atlas")});
  $("atlas-side-select").addEventListener("change",function(e){selectMap(e.target.value)});
  $("atlas-select").addEventListener("change",function(e){selectMap(e.target.value)});
@@ -137,20 +140,60 @@ function currentRecords(){
   return Number.isFinite(a)&&(Number.isFinite(b)&&b>a?a<=year&&year<=b:Math.floor(a)===year);
  }).sort(function(a,b){return (a.c==="Acontecimientos"?-1:0)-(b.c==="Acontecimientos"?-1:0)||String(a.t).localeCompare(String(b.t),"es")});
 }
-var archiveSig="";
+var archiveSig="",inventorySig="";
 function drawArchive(){
  var archive=state.items.filter(function(m){return m.asOf===null});
  $("atlas-archive-count").textContent="· "+archive.length;
  var signature=archive.map(function(m){return m.id}).join("|");
  if(signature===archiveSig)return;archiveSig=signature;
  var root=$("atlas-archive-grid");root.replaceChildren();
- if(!archive.length){root.append(node("p",state.loaded?"Sin imágenes adicionales en el catálogo. Las 81 originales se incorporan con atlas-imported.json y atlas-media/.":"Cargando archivo…","muted"));return;}
+ if(!archive.length){root.append(node("p",state.loaded?"Las imágenes originales se identifican en el inventario editorial de abajo. Solo se publicarán copias originales con autorización acreditada.":"Cargando archivo…","muted"));return;}
  archive.forEach(function(m){
   var card=node("a",null,"atlas-archive-card");card.href=m.src;card.target="_blank";card.rel="noopener noreferrer";
   var pic=node("img");pic.src=m.src;pic.alt=m.title;pic.loading="lazy";pic.decoding="async";
   card.append(pic,node("span",m.title),node("small",m.sheet+(m.anchor?" · "+m.anchor:"")+" · fecha sin verificar"));
   root.append(card);
  });
+}
+function drawInventory(){
+ var list=$("atlas-inventory-list");
+ var term=norm($("atlas-inventory-search").value).trim(),kind=$("atlas-inventory-type").value;
+ var signature=term+"|"+kind+"|"+state.inventory.length;
+ if(signature===inventorySig)return;
+ inventorySig=signature;
+ list.replaceChildren();
+ var filtered=state.inventory.filter(function(item){
+  return (!kind||item.category===kind)&&(!term||norm([item.title,item.anchor,item.originalName,item.category].join(" ")).includes(term));
+ });
+ var available=state.inventory.filter(function(item){return !!item.publicAlternativeId}).length;
+ $("atlas-inventory-total").textContent=String(state.inventory.length||81);
+ $("atlas-inventory-status").textContent=filtered.length+" de "+state.inventory.length+
+   " registros visibles · "+available+" con alternativa libre · 0 originales publicados";
+ if(!state.inventory.length){list.append(node("p",state.loaded?"El inventario no está disponible en esta publicación.":"Cargando inventario…","atlas-no-image"));return;}
+ var fragment=document.createDocumentFragment();
+ filtered.forEach(function(item){
+  var card=node("div",null,"atlas-inventory-item");
+  var title=node("strong",item.title);
+  var name=node("span",item.originalName+" · "+item.anchor+" · "+item.category,"atlas-inventory-meta");
+  var note=node("small",item.reviewNote,"atlas-inventory-note");
+  card.append(title,name);
+  if(item.asOf!==null)card.append(node("span","Fecha representada: "+api.yearText(item.asOf),"atlas-inventory-date"));
+  if(item.publicAlternativeId){
+   var button=node("button","Ver mapa alternativo con licencia ↗","atlas-action");button.type="button";
+   button.addEventListener("click",function(){
+    var map=state.items.find(function(m){return m.id===item.publicAlternativeId});
+    if(!map)return;
+    state.pinned=false;state.focusId=null;state.year=map.asOf;state.chosen=map.id;
+    requestUpdate();
+    full.scrollIntoView({behavior:"smooth",block:"start"});
+   });
+   card.append(button);
+  }else{
+   card.append(node("span","Original sin autorización de reproducción acreditada","atlas-inventory-pending"));
+  }
+  card.append(note);fragment.append(card);
+ });
+ list.append(fragment);
 }
 function drawRecords(){
  var list=$("atlas-records");list.replaceChildren();
@@ -197,7 +240,7 @@ function render(){
   b.append(img,node("span",m.title+" · "+api.yearText(m.asOf)));
   b.addEventListener("click",function(){selectMap(m.id)});gallery.append(b);
  });
- if(api.getView()==="atlas"){drawRecords();drawArchive();}
+ if(api.getView()==="atlas"){drawRecords();drawArchive();drawInventory();}
 }
 var scheduled=false;
 function requestUpdate(){
@@ -206,11 +249,14 @@ function requestUpdate(){
  requestAnimationFrame(function(){scheduled=false;render()});
 }
 async function loadCatalogs(){
- var paths=["./atlas-examples.json","./atlas-imported.json"],documents=await Promise.all(paths.map(function(p){
+ var paths=["./atlas-examples.json","./atlas-imported.json","./atlas-inventory.json"],documents=await Promise.all(paths.map(function(p){
   return fetch(p,{cache:"no-cache"}).then(function(r){if(!r.ok)throw Error(p);return r.json()}).catch(function(){return{items:[]}})
  }));
  var seen=new Set();
- state.items=documents.flatMap(function(doc){return Array.isArray(doc.items)?doc.items:[]}).map(safeItem).filter(function(item){
+ state.inventory=Array.isArray(documents[2].items)?documents[2].items:[];
+ var typeSelect=$("atlas-inventory-type");
+ Array.from(new Set(state.inventory.map(function(i){return i.category}))).sort().forEach(function(category){var o=node("option",category);o.value=category;typeSelect.append(o)});
+ state.items=documents.slice(0,2).flatMap(function(doc){return Array.isArray(doc.items)?doc.items:[]}).map(safeItem).filter(function(item){
   if(!item||seen.has(item.id))return false;
   seen.add(item.id);return true;
  });

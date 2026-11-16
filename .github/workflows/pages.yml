@@ -228,6 +228,7 @@ jobs:
           cp linea-historia/atlas.js dist/linea-historia/atlas.js
           cp linea-historia/atlas.css dist/linea-historia/atlas.css
           cp linea-historia/atlas-examples.json dist/linea-historia/atlas-examples.json
+          cp linea-historia/atlas-inventory.json dist/linea-historia/atlas-inventory.json
           cp linea-historia/favicon.png dist/linea-historia/favicon.png
           test -s dist/linea-historia/favicon.png
           cp la-telarana/icon.svg dist/la-telarana/icon.svg
@@ -335,6 +336,7 @@ jobs:
           test -s dist/linea-historia/atlas.js
           test -s dist/linea-historia/atlas.css
           test -s dist/linea-historia/atlas-examples.json
+          test -s dist/linea-historia/atlas-inventory.json
           node --check dist/linea-historia/timeline-v4.js
           node --check dist/linea-historia/atlas.js
           grep -q 'src="./timeline-v4.js' dist/linea-historia/index.html

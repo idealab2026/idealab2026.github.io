@@ -33,8 +33,16 @@ assert.match(atlas, /"historia:year"/);
 assert.match(atlas, /"historia:focus"/);
 assert.match(atlas, /"historia:view"/);
 assert.match(atlas, /"\.\/atlas-examples\.json"/);
+assert.match(atlas, /"\.\/atlas-inventory\.json"/);
+const originalInventory = JSON.parse(read("atlas-inventory.json"));
+assert.equal(originalInventory.items.length, 81);
+assert.equal(originalInventory.originalFilesPublished, 0);
+assert.equal(originalInventory.items.filter((v) => v.publicAlternativeId).length, 6);
 const catalog = JSON.parse(read("atlas-examples.json"));
-assert.ok(Array.isArray(catalog.items) && catalog.items.length >= 5);
+assert.ok(Array.isArray(catalog.items) && catalog.items.length >= 10);
+for (const item of originalInventory.items.filter((v) => v.publicAlternativeId)) {
+  assert.ok(catalog.items.some((map) => map.id === item.publicAlternativeId), "Unlinked licensed alternative: " + item.id);
+}
 for (const map of catalog.items) {
   assert.equal(typeof map.id, "string");
   assert.ok(Number.isFinite(map.asOf) && Number.isFinite(map.start) && Number.isFinite(map.end));
