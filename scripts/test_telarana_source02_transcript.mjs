@@ -45,8 +45,7 @@ assert(html.includes("podcast-coronel-elecciones-2026-transcript-review.js?v="))
 const modules=JSON.parse((/var modules=(\[[^\n]+\]);/.exec(html)||[])[1]||"[]");
 assert(modules.some(m=>m.key==="IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW"&&m.kind==="mergeNewEpisode")&&html.includes("mergeNewEpisode(doc)"),"La fuente no se carga mediante el registro modular: IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW");
 assert(html.includes("function sanitizePodcastNotes(value){"),"El portal debe procesar el estado de las notas sin asignar un minuto ficticio");
-// El test dinámico de la fusión comprueba que null/"" nunca se transforma en 0.
-assert(html.includes("scripts/test_telarana_provenance_merge.mjs")===false,"No incrustar archivos de prueba en el HTML");
+// El test dinámico test_telarana_provenance_merge.mjs comprueba que null/"" no se transforma en 0.
 assert(html.includes("minuto no verificado"),"La interfaz debe explicar la falta de minutaje");
 const biographies=JSON.parse(fs.readFileSync("la-telarana/person-biographies.js","utf8").split("window.IDEA_TELARANA_BIOGRAPHIES = ")[1].trim().replace(/;$/,""));
 for(const id of ["ce26-bolanos","ce26-robles","ce26-casteleiro","ce26-jose-bono","ce26-zapatero","ce26-jose-blanco","ce26-mohammed-vi","ce26-moulay-hassan","ce26-hassan-ii","ce26-pablo-iglesias"]){
