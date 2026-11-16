@@ -1,6 +1,6 @@
 # Biblioteca de Montecristo — contraste inicial · 16/11/2026
 
-Contraste visual de cuatro originales del lote de 30 frente al texto francés de Dumas y la descripción del vídeo en el catálogo. Las descripciones no equivalen a una transcripción ni a una revisión del vídeo completo. Se conservan los originales; ningún archivo de este cotejo se ha aprobado ni publicado.
+Contraste visual de cinco originales del lote de 30 frente al texto francés de Dumas y la descripción del vídeo en el catálogo. Para #92 se consultó además el PDF de capítulo asociado en el cuaderno. Las descripciones no equivalen a una transcripción ni a una revisión del vídeo completo. Se conservan los originales; ningún archivo de este cotejo se ha aprobado ni publicado.
 
 ## #43 · capítulo 64 · `bfaa2aa4a051a5d40264681fab5048ca5fcae6a04052c79c2d34dfe28e6fb1d9`
 
@@ -26,6 +26,13 @@ Contraste visual de cuatro originales del lote de 30 frente al texto francés de
 - Coinciden el rechazo de fruta, el relato de Malta, la noticia de Saint-Méran y la salida emocionada de Mercédès.
 - La imagen presenta pan y sal materiales y dice que el conde evita romper el pan; el capítulo relata que Mercédès alude a la costumbre, sin ofrecerle pan en esa escena. Debe distinguirse el símbolo de la acción literal. «Perdón frío e implacable» también oscurece que afirma perdonar a la joven, sin resolver del mismo modo la cuestión de los demás responsables. Recomendar corrección.
 - Fuente: https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_71
+
+## #92 · capítulo 50 · `06f895f2dd5a8b658f2b76fb352a09b5a786517acaef34dd17bae14409c24502`
+
+- El PDF del capítulo 50 en el cuaderno coincide con la fuente asociada en el mapa local y con la trama general de la visita. Se cotejó también el capítulo francés público.
+- La lámina imprime «Cien mil francos» sobre la bolsa. El texto tasa en esa cantidad el diamante contenido en ella; la ubicación de la leyenda puede confundirse con el dinero contenido en la bolsa. Rotular «Diamante: 100.000 francos» junto a la piedra.
+- El texto de la lámina afirma que Montecristo atribuye el milagro a lord Wilmore. El conde lo propone como hipótesis y después se retracta; conviene reflejar esa reserva.
+- Fuente: https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_50
 
 ## Pendientes comunes
 
