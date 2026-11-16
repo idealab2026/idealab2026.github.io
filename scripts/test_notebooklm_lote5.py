@@ -28,21 +28,28 @@ class Lote5Tests(unittest.TestCase):
         book = next(b for b in catalog["books"] if b["slug"] == "conde-montecristo")
         all_ids = {c["id"] for c in book["chapters"]}
         indexed = public["books"]["conde-montecristo"].get("chapters", {})
-        approved = {46, 89, 90}
-        rejected = {43, 44, 50, 87, 92}
-        self.assertEqual(approved | rejected, {row["issue"] for row in rows})
+        initially_approved = {46, 89, 90}
+        corrected_approval_file = CANDIDATES.parent / "APROBADAS_CORREGIDAS_LOTE5_2026-11-16.json"
+        corrected = {item["issue"]: item for item in
+                     json.loads(corrected_approval_file.read_text(encoding="utf-8"))["items"]}
+        blocked = {43}
+        self.assertEqual(initially_approved | set(corrected) | blocked,
+                         {row["issue"] for row in rows})
         for row in rows:
             self.assertIn(row["video_id"], all_ids)
             self.assertEqual(row["source_url"].rsplit("_", 1)[-1], str(row["chapter"]))
-            if row["issue"] in rejected:
+            if row["issue"] in blocked:
                 self.assertNotIn(row["video_id"], indexed,
-                                 f'#{row["issue"]} requires editorial correction')
+                                 "La imagen #43 aún contiene una pistola dibujada incorrectamente")
             elif row["video_id"] in indexed:
                 expected = (f'./infografias/{row["book"]}/'
                             f'{row["video_id"]}.png')
                 self.assertEqual(indexed[row["video_id"]], expected)
-                self.assertTrue((PUBLIC_INDEX.parent / "conde-montecristo" /
-                                 f'{row["video_id"]}.png').is_file())
+                image = PUBLIC_INDEX.parent / "conde-montecristo" / f'{row["video_id"]}.png'
+                self.assertTrue(image.is_file())
+                if row["issue"] in corrected:
+                    self.assertEqual(hashlib.sha256(image.read_bytes()).hexdigest(),
+                                     corrected[row["issue"]]["corrected_sha256"])
 
     def test_all_original_hashes_match_prior_audit(self):
         audit = (CANDIDATES.parent / "REVISION_LOTE_30_2026-11-15.md").read_text(encoding="utf-8")

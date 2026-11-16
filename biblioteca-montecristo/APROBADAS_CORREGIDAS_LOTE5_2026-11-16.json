@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "created_at": "2026-11-16",
+  "status": "APROBADO_PARA_PUBLICACION_CORREGIDA",
+  "source_zip_name": "BBTK_MONT_LOTE5_4_CORRECCIONES_PARA_REVISION.zip",
+  "approval_scope": "Solo las cuatro imágenes corregidas con SHA exacto, cotejadas contra novela original. No se ha revisado íntegramente el audio de YouTube; la aprobación no afecta a la versión anterior.",
+  "blocked_issues": [
+    43
+  ],
+  "approved_issues": [
+    44,
+    50,
+    87,
+    92
+  ],
+  "items": [
+    {
+      "issue": 44,
+      "chapter": 65,
+      "video_id": "56uw-uU6bo8",
+      "corrected_sha256": "0e2734ee826a6e1d21589acc0807063e041b2778ace46676ef3bf811887c69f7",
+      "source_export_sha256": "e35448c7a5772aab5fcac9361f44dd60bc7006005e12997bb73e51f4e2b367c8",
+      "source_original_sha256": "20a6352ef94dc2ec092d991cfc6e14cdeb3a90ac65198f0e2ed0876645076bff",
+      "note": "500.000 francos de tres fuentes: Haiti, ferrocarriles y deuda española",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_65",
+      "book": "conde-montecristo",
+      "file": "issue-44-corregida.png",
+      "approved_for_publication": true
+    },
+    {
+      "issue": 50,
+      "chapter": 71,
+      "video_id": "iFjA_oBnb80",
+      "corrected_sha256": "01f9c7a089337fe271dbb3fe9a059d286a449c84f8f19505bd866a2323d7d544",
+      "source_export_sha256": "fae599d10e9a41423796b973c0b1252d92134d83e4ceefb7bf7fe8fed5970b5c",
+      "source_original_sha256": "fe95b833ebe24833e5f238c5d830cd74389facf8ae7f703e4832154e1ad6708b",
+      "note": "Montecristo perdona a Mercedes, no a quienes los separaron",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_71",
+      "book": "conde-montecristo",
+      "file": "issue-50-corregida.png",
+      "approved_for_publication": true
+    },
+    {
+      "issue": 87,
+      "chapter": 45,
+      "video_id": "GYt4BSQxYh4",
+      "corrected_sha256": "0beb06023affbef88777b0bbfe19dfdb4f84705d1b087c7ae925ca2a416a71f6",
+      "source_export_sha256": "b4da8bab9a97290e34a9b21f7a13e57119a192f283a0017c1552b2ebdd31c710",
+      "source_original_sha256": "64611713b22071e86feda89b2d1434ee8d4d7d32335aaf175d70f2d8ee1b0e67",
+      "note": "Joyero Joannes; intervencion de Busoni y liberacion tras confesion de Caderousse",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_45",
+      "book": "conde-montecristo",
+      "file": "issue-87-corregida.png",
+      "approved_for_publication": true
+    },
+    {
+      "issue": 92,
+      "chapter": 50,
+      "video_id": "cGDxQh68e_k",
+      "corrected_sha256": "88a9efc1fce33c61e52b7168d445161bdb40e15e3b341498525c0cf765150f5d",
+      "source_export_sha256": "9b0d84720b3fb2c7d53dd4b2c8ebca4a449a65ad74ff48fbdc3be30bcc36d97b",
+      "source_original_sha256": "06f895f2dd5a8b658f2b76fb352a09b5a786517acaef34dd17bae14409c24502",
+      "note": "Lord Wilmore se plantea y se descarta; el diamante esta valorado en 100000 francos",
+      "source": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_50",
+      "book": "conde-montecristo",
+      "file": "issue-92-corregida.png",
+      "approved_for_publication": true
+    }
+  ]
+}
