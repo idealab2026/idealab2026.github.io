@@ -21,7 +21,7 @@ assert(f.nodes.every(n=>n.podcastNotes.every(x=>x.status==='contraste_textual_ex
 assert(f.nodes.find(n=>n.id==='f48-contexto-externo').note.includes('no está en Drive'));
 assert(f.nodes.find(n=>n.id==='f48-filebo').note.includes('no desarrolla el relato de Atlántida'));
 assert(f.nodes.find(n=>n.id==='f48-9000-anos').note.includes('no fechar'));
-assert(f.nodes.find(n=>n.id==='f51-critias').note.includes('inconcluso'));
+assert(f.nodes.find(n=>n.id==='f51-critias').subtitle.includes('inconcluso'));
 assert(f.edges.find(e=>e.id==='f48-hipotesis-mod-atlantida').claimStatus==='hipotesis_moderna_no_verificada');
 assert.equal(filter.sourceForModule({key:'IDEA_TELARANA_F48_EXTERNAL'}),'extra:f48-external');
 assert.equal(filter.sourceForModule({key:'IDEA_TELARANA_F49_CANDIDATE'}),'extra:f49-candidate');
