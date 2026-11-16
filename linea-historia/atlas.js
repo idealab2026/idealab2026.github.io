@@ -104,7 +104,7 @@ function initDOM(){
  '<div class="atlas-layout"><figure class="atlas-figure"><div class="atlas-large-stage"><img id="atlas-large-img" class="atlas-image" alt="" hidden><div id="atlas-large-empty" class="atlas-no-image"></div></div><figcaption class="atlas-caption"><h2 id="atlas-large-title"></h2><div class="atlas-map-meta" id="atlas-large-meta"></div><p id="atlas-large-note"></p><p id="atlas-large-credit"></p><a id="atlas-large-source" class="atlas-source" rel="noopener noreferrer" target="_blank" hidden></a></figcaption></figure><aside class="atlas-contemporaries"><h3>Contemporáneos al año seleccionado</h3><div class="muted" id="atlas-record-count"></div><div id="atlas-records"></div></aside></div>'+
  '<div class="atlas-gallery" id="atlas-gallery" aria-label="Galería de imágenes del periodo"></div>'+
  '<section class="atlas-context-diagrams" aria-label="Gráficos y diagramas del periodo"><div class="atlas-diagrams-heading"><h3>Gráficos y diagramas de la época</h3><span id="atlas-diagrams-count" class="muted"></span></div><div id="atlas-diagrams" class="atlas-diagrams-grid"></div></section>'+
- '<section class="atlas-archive"><h3>Imágenes originales pendientes de catalogar <span id="atlas-archive-count"></span></h3><p class="muted">Se conservan separadas hasta verificar fecha, tema y derechos. Pulsa una miniatura para consultarla sin atribuirle una cronología.</p><div class="atlas-archive-grid" id="atlas-archive-grid"></div></section>'+
+ '<section class="atlas-archive"><h3>Imágenes originales de HISTORIA.xlsx <span id="atlas-archive-count"></span></h3><p class="muted">Galería de los 81 archivos de tu hoja LÍNEA TEMPORAL. Las imágenes con una fecha identificada también se muestran en el año correspondiente; las restantes se conservan sin fecha inventada.</p><div class="atlas-archive-grid" id="atlas-archive-grid"></div></section>'+
  '<p class="muted">Cada mapa es una instantánea de su fecha de referencia. El deslizador no calcula fronteras históricas: muestra láminas documentales disponibles para ese intervalo.</p>'+
  '<section class="atlas-original-inventory" id="atlas-original-inventory"><div class="atlas-inventory-header"><h3>Inventario del Excel · <span id="atlas-inventory-total">81</span> imágenes</h3><div class="atlas-inventory-controls"><input id="atlas-inventory-search" type="search" aria-label="Buscar imágenes del Excel" placeholder="Buscar imagen, tema o celda…"><select id="atlas-inventory-type" aria-label="Filtrar tipo de imagen"><option value="">Todos los tipos</option></select></div></div><p class="muted">Se han revisado los 81 archivos incrustados de HISTORIA.xlsx. Las miniaturas originales no se publican sin acreditar derechos. Cuando existe un mapa alternativo de Wikimedia Commons, puedes abrirlo aquí. No es una copia idéntica de la imagen original.</p><div id="atlas-inventory-status" class="atlas-map-meta" role="status"></div><div id="atlas-inventory-list" class="atlas-inventory-list"></div></section>';
  $("atlas-inventory-search").addEventListener("input",drawInventory);
@@ -143,23 +143,23 @@ function currentRecords(){
 }
 var archiveSig="",inventorySig="";
 function drawArchive(){
- var archive=state.items.filter(function(m){return m.asOf===null});
+ var archive=state.items.filter(function(m){return m.provenance==="HISTORIA.xlsx"}).sort(function(a,b){return String(a.anchor).localeCompare(String(b.anchor),"es",{numeric:true})});
  $("atlas-archive-count").textContent="· "+archive.length;
  var signature=archive.map(function(m){return m.id}).join("|");
  if(signature===archiveSig)return;archiveSig=signature;
  var root=$("atlas-archive-grid");root.replaceChildren();
- if(!archive.length){root.append(node("p",state.loaded?"Las imágenes originales se identifican en el inventario editorial de abajo. Solo se publicarán copias originales con autorización acreditada.":"Cargando archivo…","muted"));return;}
+ if(!archive.length){root.append(node("p",state.loaded?"El catálogo está preparado, pero los originales aún no se han desplegado. Consulta el inventario o los mapas de referencia.":"Cargando archivo…","muted"));return;}
  archive.forEach(function(m){
   var card=node("a",null,"atlas-archive-card");card.href=m.src;card.target="_blank";card.rel="noopener noreferrer";
   var pic=node("img");pic.src=m.src;pic.alt=m.title;pic.loading="lazy";pic.decoding="async";
-  card.append(pic,node("span",m.title),node("small",m.sheet+(m.anchor?" · "+m.anchor:"")+" · fecha sin verificar"));
+  card.append(pic,node("span",m.title),node("small",m.sheet+(m.anchor?" · "+m.anchor:"")+(m.asOf===null?" · fecha pendiente":" · "+api.yearText(m.asOf))));
   root.append(card);
  });
 }
 function drawInventory(){
  var list=$("atlas-inventory-list");
  var term=norm($("atlas-inventory-search").value).trim(),kind=$("atlas-inventory-type").value;
- var signature=term+"|"+kind+"|"+state.inventory.length;
+ var signature=term+"|"+kind+"|"+state.inventory.length+"|"+state.items.filter(function(m){return m.provenance==="HISTORIA.xlsx"}).length;
  if(signature===inventorySig)return;
  inventorySig=signature;
  list.replaceChildren();
@@ -167,9 +167,11 @@ function drawInventory(){
   return (!kind||item.category===kind)&&(!term||norm([item.title,item.anchor,item.originalName,item.category].join(" ")).includes(term));
  });
  var available=state.inventory.filter(function(item){return !!item.publicAlternativeId}).length;
+ var originals=state.items.filter(function(m){return m.provenance==="HISTORIA.xlsx"});
+ var originalByAnchor=new Map(originals.map(function(m){return [m.anchor,m]}));
  $("atlas-inventory-total").textContent=String(state.inventory.length||81);
  $("atlas-inventory-status").textContent=filtered.length+" de "+state.inventory.length+
-   " registros visibles · "+available+" con alternativa libre · 0 originales publicados";
+   " registros visibles · "+available+" con alternativa libre · "+originals.length+" originales disponibles";
  if(!state.inventory.length){list.append(node("p",state.loaded?"El inventario no está disponible en esta publicación.":"Cargando inventario…","atlas-no-image"));return;}
  var fragment=document.createDocumentFragment();
  filtered.forEach(function(item){
@@ -177,10 +179,23 @@ function drawInventory(){
   var title=node("strong",item.title);
   var name=node("span",item.originalName+" · "+item.anchor+" · "+item.category,"atlas-inventory-meta");
   var note=node("small",item.reviewNote,"atlas-inventory-note");
+  var original=originalByAnchor.get(item.anchor);
+  if(original){
+   var preview=node("a",null,"atlas-inventory-original-preview");
+   preview.href=original.src;preview.target="_blank";preview.rel="noopener noreferrer";
+   var photo=node("img");photo.loading="lazy";photo.decoding="async";
+   photo.src=original.src;photo.alt="Imagen original de "+item.title;
+   preview.append(photo);card.append(preview);
+  }
   card.append(title,name);
   if(item.asOf!==null)card.append(node("span","Fecha representada: "+api.yearText(item.asOf),"atlas-inventory-date"));
+  if(original){
+   var direct=node("a","Ver imagen original ↗","atlas-action");
+   direct.href=original.src;direct.target="_blank";direct.rel="noopener noreferrer";
+   card.append(direct);
+  }
   if(item.publicAlternativeId){
-   var button=node("button","Ver mapa alternativo con licencia ↗","atlas-action");button.type="button";
+   var button=node("button",original?"Comparar con mapa alternativo ↗":"Ver mapa alternativo ↗","atlas-action");button.type="button";
    button.addEventListener("click",function(){
     var map=state.items.find(function(m){return m.id===item.publicAlternativeId});
     if(!map)return;
@@ -189,8 +204,8 @@ function drawInventory(){
     full.scrollIntoView({behavior:"smooth",block:"start"});
    });
    card.append(button);
-  }else{
-   card.append(node("span","Original sin autorización de reproducción acreditada","atlas-inventory-pending"));
+  }else if(!original){
+   card.append(node("span","Archivo original aún no desplegado","atlas-inventory-pending"));
   }
   card.append(note);fragment.append(card);
  });
@@ -291,7 +306,7 @@ async function loadCatalogs(){
  }):[];
  var typeSelect=$("atlas-inventory-type");
  Array.from(new Set(state.inventory.map(function(i){return i.category}))).sort().forEach(function(category){var o=node("option",category);o.value=category;typeSelect.append(o)});
- state.items=documents.slice(0,2).flatMap(function(doc){return Array.isArray(doc.items)?doc.items:[]}).map(safeItem).filter(function(item){
+ state.items=[documents[1],documents[0]].flatMap(function(doc){return Array.isArray(doc.items)?doc.items:[]}).map(safeItem).filter(function(item){
   if(!item||seen.has(item.id))return false;
   seen.add(item.id);return true;
  });
