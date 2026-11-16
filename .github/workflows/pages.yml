@@ -76,6 +76,8 @@ jobs:
         run: node scripts/test_telarana_rankings.mjs
       - name: Validar tabla de progreso de fuentes
         run: node scripts/test_telarana_source_progress.mjs
+      - name: Validar lectura externa de F48 sin confundirla con el original
+        run: node scripts/test_telarana_source48_external.mjs
       - name: Comprobar identidad no confirmada del candidato F49
         run: node scripts/test_telarana_source49_candidate.mjs
       - name: Comprobar límites de evidencia en fuente 55
