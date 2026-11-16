@@ -7,7 +7,7 @@ assert(f.nodes.find(n=>n.id==='f42-piedra-pilato').note.includes('fragmentaria')
 assert(f.nodes.find(n=>n.id==='f42-sudario').podcastNotes.some(n=>n.text.includes('1260–1390')));assert(f.nodes.find(n=>n.id==='f42-nazaret').podcastNotes.some(n=>n.text.includes('Mateo y Lucas')));
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));for(const id of ['study-f42-inscripcion-pilato-1961','study-f42-carbono-sudario-1989'])assert.equal(h.items.filter(e=>e.id===id).length,1);
 for(const id of ['f42-caifas','f42-osario-caifas','f42-santiago-justo','f42-osario-santiago','f42-estudio-patina-santiago-2004','f42-betesda','f42-siloe'])assert(ids.has(id),'Falta ficha '+id);
-assert(f.nodes.find(n=>n.id==='f42-osario-santiago').note.includes('procedencia excavada')&&f.nodes.find(n=>n.id==='f42-osario-santiago').note.includes('cuestionó'));
+assert(f.nodes.find(n=>n.id==='f42-osario-santiago').note.includes('contexto estratigráfico excavado')&&f.nodes.find(n=>n.id==='f42-osario-santiago').note.includes('cuestionó'));
 assert(f.nodes.find(n=>n.id==='f42-betesda').note.includes('no constatar')&&f.nodes.find(n=>n.id==='f42-siloe').note.includes('no prueba'));
 assert(f.edges.some(e=>e.id==='f42-osario-santiago-atribucion'&&e.claimStatus==='identificacion_controvertida_no_verificada'));
 assert(f.edges.some(e=>e.id==='f42-caifas-jesus-textual'&&e.claimStatus==='relato_evangelico_no_demostrado_por_osario'));
