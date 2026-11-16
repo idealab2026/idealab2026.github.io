@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "source": "HISTORIA.xlsx > LÍNEA TEMPORAL; posiciones de las imágenes y cabecera de años de la fila 4",
+  "method": "Año orientativo interpolado desde la columna donde empieza cada imagen. NO es la fecha exacta representada por el mapa. Para los seis mapas datados se conserva asOf del catálogo original. El periodo de visualización alrededor del año estimado es una ventana editorial de exploración y NO significa que las fronteras mostradas fueran constantes.",
+  "totalImages": 81,
+  "row": 4,
+  "records": [
+    {
+      "imageNumber": 1,
+      "anchor": "TW21",
+      "placementYear": null
+    },
+    {
+      "imageNumber": 2,
+      "anchor": "TP14",
+      "placementYear": null
+    },
+    {
+      "imageNumber": 3,
+      "anchor": "KF71",
+      "placementYear": -140
+    },
+    {
+      "imageNumber": 4,
+      "anchor": "JC57",
+      "placementYear": -440
+    },
+    {
+      "imageNumber": 5,
+      "anchor": "LI67",
+      "placementYear": 60
+    },
+    {
+      "imageNumber": 6,
+      "anchor": "DL149",
+      "placementYear": -2290
+    },
+    {
+      "imageNumber": 7,
+      "anchor": "QP102",
+      "placementYear": 1620
+    },
+    {
+      "imageNumber": 8,
+      "anchor": "DL176",
+      "placementYear": -2290
+    },
+    {
+      "imageNumber": 9,
+      "anchor": "FV49",
+      "placementYear": -1400
+    },
+    {
+      "imageNumber": 10,
+      "anchor": "DX182",
+      "placementYear": -2100
+    },
+    {
+      "imageNumber": 11,
+      "anchor": "DD149",
+      "placementYear": -2800
+    },
+    {
+      "imageNumber": 12,
+      "anchor": "QI66",
+      "placementYear": 1565
+    },
+    {
+      "imageNumber": 13,
+      "anchor": "TP33",
+      "placementYear": null
+    },
+    {
+      "imageNumber": 14,
+      "anchor": "KO72",
+      "placementYear": -50
+    },
+    {
+      "imageNumber": 15,
+      "anchor": "UF14",
+      "placementYear": null
+    },
+    {
+      "imageNumber": 16,
+      "anchor": "JK79",
+      "placementYear": -360
+    },
+    {
+      "imageNumber": 17,
+      "anchor": "BD52",
+      "placementYear": -1250000
+    },
+    {
+      "imageNumber": 18,
+      "anchor": "KE97",
+      "placementYear": -145
+    },
+    {
+      "imageNumber": 19,
+      "anchor": "GT48",
+      "placementYear": -1160
+    },
+    {
+      "imageNumber": 20,
+      "anchor": "BC11",
+      "placementYear": -2000000
+    },
+    {
+      "imageNumber": 21,
+      "anchor": "HR49",
+      "placementYear": -920
+    },
+    {
+      "imageNumber": 22,
+      "anchor": "GM84",
+      "placementYear": -1230
+    },
+    {
+      "imageNumber": 23,
+      "anchor": "DZ154",
+      "placementYear": -2050
+    },
+    {
+      "imageNumber": 24,
+      "anchor": "CB48",
+      "placementYear": -9000
+    },
+    {
+      "imageNumber": 25,
+      "anchor": "IH66",
+      "placementYear": -680
+    },
+    {
+      "imageNumber": 26,
+      "anchor": "HF47",
+      "placementYear": -1040
+    },
+    {
+      "imageNumber": 27,
+      "anchor": "HS95",
+      "placementYear": -910
+    },
+    {
+      "imageNumber": 28,
+      "anchor": "JK58",
+      "placementYear": -360
+    },
+    {
+      "imageNumber": 29,
+      "anchor": "JM79",
+      "placementYear": -330
+    },
+    {
+      "imageNumber": 30,
+      "anchor": "JT57",
+      "placementYear": -240
+    },
+    {
+      "imageNumber": 31,
+      "anchor": "GV84",
+      "placementYear": -1140
+    },
+    {
+      "imageNumber": 32,
+      "anchor": "JC77",
+      "placementYear": -440
+    },
+    {
+      "imageNumber": 33,
+      "anchor": "EU157",
+      "placementYear": -1690
+    },
+    {
+      "imageNumber": 34,
+      "anchor": "EZ166",
+      "placementYear": -1640
+    },
+    {
+      "imageNumber": 35,
+      "anchor": "GL48",
+      "placementYear": -1240
+    },
+    {
+      "imageNumber": 36,
+      "anchor": "EI157",
+      "placementYear": -1800
+    },
+    {
+      "imageNumber": 37,
+      "anchor": "QV76",
+      "placementYear": 1690
+    },
+    {
+      "imageNumber": 38,
+      "anchor": "AO8",
+      "placementYear": -42875000
+    },
+    {
+      "imageNumber": 39,
+      "anchor": "C11",
+      "placementYear": null
+    },
+    {
+      "imageNumber": 40,
+      "anchor": "T9",
+      "placementYear": -242000000
+    },
+    {
+      "imageNumber": 41,
+      "anchor": "BR18",
+      "placementYear": -20000
+    },
+    {
+      "imageNumber": 42,
+      "anchor": "F35",
+      "placementYear": null
+    },
+    {
+      "imageNumber": 43,
+      "anchor": "QC131",
+      "placementYear": 1520
+    },
+    {
+      "imageNumber": 44,
+      "anchor": "GP5",
+      "placementYear": -1200
+    },
+    {
+      "imageNumber": 45,
+      "anchor": "CW80",
+      "placementYear": -3400
+    },
+    {
+      "imageNumber": 46,
+      "anchor": "L10",
+      "placementYear": null
+    },
+    {
+      "imageNumber": 48,
+      "anchor": "CK48",
+      "placementYear": -5083
+    },
+    {
+      "imageNumber": 49,
+      "anchor": "RH5",
+      "placementYear": 1780
+    },
+    {
+      "imageNumber": 50,
+      "anchor": "NN59",
+      "placementYear": 860
+    },
+    {
+      "imageNumber": 51,
+      "anchor": "SR103",
+      "placementYear": 1936
+    },
+    {
+      "imageNumber": 52,
+      "anchor": "DM47",
+      "placementYear": -2280
+    },
+    {
+      "imageNumber": 53,
+      "anchor": "IU101",
+      "placementYear": -510
+    },
+    {
+      "imageNumber": 54,
+      "anchor": "DR154",
+      "placementYear": -2230
+    },
+    {
+      "imageNumber": 55,
+      "anchor": "PH5",
+      "placementYear": 1360
+    },
+    {
+      "imageNumber": 56,
+      "anchor": "SY6",
+      "placementYear": 1980
+    },
+    {
+      "imageNumber": 57,
+      "anchor": "RZ107",
+      "placementYear": 1905
+    },
+    {
+      "imageNumber": 58,
+      "anchor": "PB6",
+      "placementYear": 1280
+    },
+    {
+      "imageNumber": 59,
+      "anchor": "NT100",
+      "placementYear": 940
+    },
+    {
+      "imageNumber": 60,
+      "anchor": "NE59",
+      "placementYear": 750
+    },
+    {
+      "imageNumber": 61,
+      "anchor": "RT5",
+      "placementYear": 1875
+    },
+    {
+      "imageNumber": 62,
+      "anchor": "QC101",
+      "placementYear": 1520
+    },
+    {
+      "imageNumber": 63,
+      "anchor": "OE6",
+      "placementYear": 1060
+    },
+    {
+      "imageNumber": 64,
+      "anchor": "NR79",
+      "placementYear": 920
+    },
+    {
+      "imageNumber": 65,
+      "anchor": "NO6",
+      "placementYear": 880
+    },
+    {
+      "imageNumber": 66,
+      "anchor": "OP5",
+      "placementYear": 1170
+    },
+    {
+      "imageNumber": 67,
+      "anchor": "QT7",
+      "placementYear": 1670
+    },
+    {
+      "imageNumber": 68,
+      "anchor": "LH98",
+      "placementYear": 40
+    },
+    {
+      "imageNumber": 69,
+      "anchor": "LP6",
+      "placementYear": 160
+    },
+    {
+      "imageNumber": 70,
+      "anchor": "PV6",
+      "placementYear": 1480
+    },
+    {
+      "imageNumber": 71,
+      "anchor": "DH90",
+      "placementYear": -2500
+    },
+    {
+      "imageNumber": 72,
+      "anchor": "LB6",
+      "placementYear": 30
+    },
+    {
+      "imageNumber": 73,
+      "anchor": "NW6",
+      "placementYear": 980
+    },
+    {
+      "imageNumber": 74,
+      "anchor": "CX48",
+      "placementYear": -3300
+    },
+    {
+      "imageNumber": 75,
+      "anchor": "NA5",
+      "placementYear": 710
+    },
+    {
+      "imageNumber": 76,
+      "anchor": "KO5",
+      "placementYear": -50
+    },
+    {
+      "imageNumber": 77,
+      "anchor": "QJ5",
+      "placementYear": 1570
+    },
+    {
+      "imageNumber": 78,
+      "anchor": "MA6",
+      "placementYear": 350
+    },
+    {
+      "imageNumber": 79,
+      "anchor": "JQ5",
+      "placementYear": -270
+    },
+    {
+      "imageNumber": 80,
+      "anchor": "JD5",
+      "placementYear": -430
+    },
+    {
+      "imageNumber": 81,
+      "anchor": "MR6",
+      "placementYear": 580
+    },
+    {
+      "imageNumber": 82,
+      "anchor": "MJ7",
+      "placementYear": 440
+    }
+  ]
+}

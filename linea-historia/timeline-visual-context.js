@@ -36,7 +36,7 @@
    summary:row.note||"",excelAnchor:row.excelReference||"",excelOriginal:"",
    hints:Array.isArray(row.hints)?row.hints:[]};
  }
- function qualifyOriginal(row){
+ function qualifyOriginal(row,placement,inventory){
   if(!row||typeof row.anchor!=="string"||typeof row.title!=="string")return null;
   var src=safeURL(row.src,true);
   if(!src)return null;
@@ -56,11 +56,23 @@
    if(!Number.isFinite(from)||!Number.isFinite(to)){from=referenceYear;to=referenceYear}
   }else if(byAnchor[row.anchor]){
    var range=byAnchor[row.anchor];from=range[0];to=range[1];referenceYear=range[2];kind=range[3];
-  }else return null; // Keep remaining images in the separate 81-image gallery.
-  return {id:row.id,title:row.title,from:from,to:to,referenceYear:referenceYear,
+  }else if(placement&&Number.isFinite(placement.placementYear)){
+   // The Excel column locates this image on its original timeline.
+   // Nearby relevance is a discovery aid; the pictured map may represent another year.
+   referenceYear=placement.placementYear;
+   var radius=referenceYear<-100000?250000:referenceYear<-5000?1300:
+    referenceYear<-1000?500:referenceYear<0?180:
+    referenceYear<=1500?130:referenceYear<=1800?85:referenceYear<=1950?50:25;
+   from=referenceYear-radius;to=referenceYear+radius;
+  }else return null; // Keep images with unknown placement in the all-images gallery.
+  var inferred=!!(placement&&row.asOf===null&&!byAnchor[row.anchor]);
+  var label=inventory&&inventory.title||row.title;
+  kind=inventory&&inventory.category||kind;
+  return {id:row.id,title:label,from:from,to:to,referenceYear:referenceYear,
    src:src,sourceUrl:src,kind:kind,credit:"HISTORIA.xlsx · publicación autorizada por el titular",
    license:"Copia del archivo personal",provenance:"HISTORIA.xlsx",
-   context:"Imagen original incrustada en la hoja LÍNEA TEMPORAL, celda "+row.anchor+".",
+   context:"Imagen original de HISTORIA.xlsx · celda "+row.anchor+
+    (inferred?" · situada cerca de "+api.yearText(referenceYear)+" en el montaje (no fecha verificada del mapa).":"."),
    summary:row.asOf===null?"Intervalo de relevancia orientativo; no es la fecha exacta de elaboración.":(row.note||""),
    excelAnchor:row.anchor,excelOriginal:row.title,
    hints:Array.isArray(row.hints)?row.hints:[]};
@@ -83,7 +95,7 @@
      ((b.provenance==="HISTORIA.xlsx")?12:0)+(b.kind==="Gráfico científico"?4:0)-Math.abs(y-b.referenceYear)/Math.max(1,b.to-b.from);
    return sb-sa;
   });
-  return matching.slice(0,3);
+  return matching; // No hidden fourth image: the responsive horizontal rail shows every match.
  }
  function ensureUI(){
   var strip=make("section",null,"timeline-visual-context");
@@ -91,7 +103,7 @@
   strip.setAttribute("aria-label","Imágenes, diagramas y gráficos del contexto histórico");
   strip.innerHTML='<div class="visual-context-heading">'+
    '<div class="visual-context-title"><span>IMÁGENES Y DIAGRAMAS DE LA ÉPOCA</span><strong id="visual-context-year">—</strong><small id="visual-context-count"></small></div>'+
-   '<div class="visual-context-tools"><button type="button" id="visual-context-unpin" class="visual-context-tool" hidden>Soltar registro</button><button type="button" id="visual-context-atlas" class="visual-context-tool">Ver atlas</button><button type="button" id="visual-context-toggle" class="visual-context-tool" aria-expanded="true">Ocultar láminas</button></div></div>'+
+   '<div class="visual-context-tools"><button type="button" id="visual-context-unpin" class="visual-context-tool" hidden>Soltar registro</button><button type="button" id="visual-context-atlas" class="visual-context-tool">Ver atlas</button><button type="button" id="visual-context-prev" class="visual-context-tool" aria-label="Ver imágenes anteriores">◀</button><button type="button" id="visual-context-next" class="visual-context-tool" aria-label="Ver imágenes siguientes">▶</button><button type="button" id="visual-context-toggle" class="visual-context-tool" aria-expanded="true">Ocultar láminas</button></div></div>'+
    '<div id="visual-context-items" class="visual-context-items" aria-live="polite"><span class="visual-context-empty">Cargando ilustraciones…</span></div>';
   var toolbar=$("history-toolbar"),viewport=$("viewport");
   if(toolbar&&toolbar.parentNode===panel)panel.insertBefore(strip,viewport);
@@ -104,6 +116,12 @@
   $("visual-dialog-close").addEventListener("click",function(){lightbox.close()});
   lightbox.addEventListener("click",function(ev){if(ev.target===lightbox)lightbox.close()});
   $("visual-context-atlas").addEventListener("click",function(){api.setView("atlas")});
+  ["prev","next"].forEach(function(step){
+   $("visual-context-"+step).addEventListener("click",function(){
+    var list=$("visual-context-items");
+    if(typeof list.scrollBy==="function")list.scrollBy({left:(step==="next"?1:-1)*Math.max(250,list.clientWidth*.75),behavior:"smooth"});
+   });
+  });
   $("visual-context-unpin").addEventListener("click",function(){
    state.locked=false;state.focus=null;state.year=Math.round(api.getYear());requestDraw();
   });
@@ -175,10 +193,15 @@
   var results=await Promise.all([
    source("./atlas-imported.json").catch(function(){return{items:[]}}),
    source("./atlas-context.json").catch(function(){return{items:[]}}),
-   source("./atlas-examples.json").catch(function(){return{items:[]}})
+   source("./atlas-examples.json").catch(function(){return{items:[]}}),
+   source("./atlas-placement.json").catch(function(){return{records:[]}}),
+   source("./atlas-inventory.json").catch(function(){return{items:[]}})
   ]);
-  state.docs=(Array.isArray(results[0].items)?results[0].items:[]).map(qualifyOriginal)
-   .concat((Array.isArray(results[1].items)?results[1].items:[]).map(qualify))
+  var placed=new Map((results[3].records||[]).map(function(m){return[m.anchor,m]}));
+  var inventory=new Map((results[4].items||[]).map(function(m){return[m.anchor,m]}));
+  state.docs=(Array.isArray(results[0].items)?results[0].items:[]).map(function(m){
+    return qualifyOriginal(m,placed.get(m.anchor),inventory.get(m.anchor));
+   }).concat((Array.isArray(results[1].items)?results[1].items:[]).map(qualify))
    .concat((Array.isArray(results[2].items)?results[2].items:[]).map(qualifyMap)).filter(Boolean);
   state.loaded=true;oldSig="";requestDraw();
  }
