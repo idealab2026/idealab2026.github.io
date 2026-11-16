@@ -128,7 +128,7 @@ function initDOM(){
  '<section class="atlas-original-inventory" id="atlas-original-inventory"><div class="atlas-inventory-header"><h3>Inventario del Excel · <span id="atlas-inventory-total">81</span> imágenes</h3><div class="atlas-inventory-controls"><input id="atlas-inventory-search" type="search" aria-label="Buscar imágenes del Excel" placeholder="Buscar imagen, tema o celda…"><select id="atlas-inventory-type" aria-label="Filtrar tipo de imagen"><option value="">Todos los tipos</option></select></div></div><p class="muted">Se han revisado los 81 archivos incrustados de HISTORIA.xlsx. Las miniaturas originales no se publican sin acreditar derechos. Cuando existe un mapa alternativo de Wikimedia Commons, puedes abrirlo aquí. No es una copia idéntica de la imagen original.</p><div id="atlas-inventory-status" class="atlas-map-meta" role="status"></div><div id="atlas-inventory-list" class="atlas-inventory-list"></div></section>';
  $("atlas-inventory-search").addEventListener("input",drawInventory);
  $("atlas-inventory-type").addEventListener("change",drawInventory);
- $("atlas-side-hide").addEventListener("click",function(){setSidebarHidden(true)});
+ $("atlas-side-hide").addEventListener("click",function(){setSidebarHidden(true);$("atlas-sidebar-toggle").focus()});
  $("atlas-sidebar-toggle").addEventListener("click",function(){setSidebarHidden(!panel.classList.contains("atlas-sidebar-hidden"))});
  $("atlas-side-open").addEventListener("click",function(){api.setView("atlas")});
  $("atlas-side-select").addEventListener("change",function(e){selectMap(e.target.value)});
