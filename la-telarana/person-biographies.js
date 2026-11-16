@@ -1,5 +1,6 @@
 /* Biografías contextualizadas; distinguir datos y alegaciones. */
-window.IDEA_TELARANA_BIOGRAPHIES = {
+window.IDEA_TELARANA_BIOGRAPHIES =
+{
   "version": 1,
   "reviewedAt": "2026-11-11",
   "wikiPages": {
@@ -1317,6 +1318,30 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "text": "Erich von Däniken (nacido en 1935) es un autor suizo que popularizó especulaciones sobre hipotéticas visitas extraterrestres a civilizaciones antiguas. Su primer libro, Erinnerungen an die Zukunft, apareció en 1968 y se difundió internacionalmente como Chariots of the Gods?. Su papel en la historia de la divulgación de teorías de antiguos astronautas está documentado bibliográficamente; su interpretación de monumentos como prueba de contactos extraterrestres no queda validada por el hecho de que el libro se publicara.",
       "source": "https://daniken.com/bibliografie/",
       "sourceTitle": "Bibliografía oficial del autor · origen de la publicación de 1968",
+      "reviewedAt": "2026-11-16"
+    },
+    "f32-william-burns": {
+      "text": "William J. Burns (nacido en 1956) es un diplomático estadounidense que fue director de la Agencia Central de Inteligencia (CIA) entre 2021 y 2025. Anteriormente ocupó responsabilidades diplomáticas y fue embajador de Estados Unidos en Rusia. El 14 de noviembre de 2022 se reunió en Ankara con su homólogo ruso del SVR; la Casa Blanca describió el encuentro como gestión del riesgo nuclear, no como negociación de un acuerdo de paz.",
+      "source": "https://www.euronews.com/2022/11/15/ukraine-crisis-russia-usa-burns",
+      "sourceTitle": "Reuters · declaración de la Casa Blanca (15-11-2022)",
+      "reviewedAt": "2026-11-16"
+    },
+    "f32-sergei-naryshkin": {
+      "text": "Serguéi Naryshkin (nacido en 1954) es un político y alto responsable de inteligencia ruso. Dirigía el Servicio de Inteligencia Exterior (SVR) cuando celebró una reunión en Ankara con William Burns, entonces director de la CIA, el 14 de noviembre de 2022. Las agencias informaron sobre la reunión, pero su celebración no acredita por sí misma los acuerdos o las negociaciones secretas que se conjeturan en el podcast.",
+      "source": "https://www.aa.com.tr/en/politics/us-russian-spy-chiefs-met-in-turkish-capital-say-intelligence-sources/2737844",
+      "sourceTitle": "Anadolu Agency · encuentro CIA-SVR (14-11-2022)",
+      "reviewedAt": "2026-11-16"
+    },
+    "f33-jacob-wolf-oppenheimer": {
+      "text": "Jacob Wolf Oppenheimer fue un banquero de Hannover vinculado a la firma de Simon Wolf Oppenheimer. Según el Rothschild Archive, supervisó en 1757 el aprendizaje bancario de Mayer Amschel Rothschild, quien aprendió cambio de divisas y comercio exterior antes de regresar a Fráncfort. Conviene distinguir a este banquero del financiero de Viena Samuel Oppenheimer, muerto en 1703; no hay que atribuir al segundo una formación que tuvo lugar cinco décadas después.",
+      "source": "https://www.rothschildarchive.org/business/",
+      "sourceTitle": "The Rothschild Archive · orígenes del negocio (archivo vinculado)",
+      "reviewedAt": "2026-11-16"
+    },
+    "f33-samuel-oppenheimer": {
+      "text": "Samuel Oppenheimer (1630–1703) fue un banquero, proveedor de ejércitos y financiero de la corte imperial de los Habsburgo, radicado en Viena. La Neue Deutsche Biographie documenta su fallecimiento el 3 de mayo de 1703. No pudo haber sido maestro de Mayer Amschel Rothschild, nacido en 1744, cuyo aprendizaje en la casa de Oppenheimer de Hannover comenzó en 1757. La identificación del subtítulo de F33 debe cotejarse con el audio.",
+      "source": "https://www.deutsche-biographie.de/gnd119272229.html#ndbcontent",
+      "sourceTitle": "Neue Deutsche Biographie · Samuel Oppenheimer",
       "reviewedAt": "2026-11-16"
     }
   }
