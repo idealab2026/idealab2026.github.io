@@ -1,16 +1,15 @@
-/* F38: revisión documental parcial multivoz sin cotejo de audio. */
-window.IDEA_TELARANA_F38_REVIEW =
-{
+/* F38: anclas literales del TXT verificadas; audio y minutajes no cotejados. */
+window.IDEA_TELARANA_F38_REVIEW = {
   "metadata": {
     "id": "idealab-f38-debate-arqueologia",
     "sourceOrder": 38,
     "title": "F38 · Debate de arqueología, pirámides y Atlántida",
     "url": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-    "reviewStage": "tercera_revision_monteverde_donana_youngerdryas_sin_audio",
+    "reviewStage": "cuarta_revision_nazca_craneos_paracas_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización."
+    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización. 17-11-2026: revisión de fragmentos literales sobre la supuesta visibilidad exclusivamente aérea de Nazca y cráneos alargados; PNAS 2024 distingue 303 hallazgos confirmados en campo mediante IA de candidatos informáticos, y la investigación Paracas de Gómez-Mejía et al. (2022) documenta 159 cráneos humanos y modificación intencional en 98 %. Fuentes externas no atribuidas a los invitados. Sin voces ni minutos cotejados. 17-11-2026: auditoría de offsets contra TXT original, 16 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz."
   },
   "nodes": [
     {
@@ -84,7 +83,7 @@ window.IDEA_TELARANA_F38_REVIEW =
       "name": "Líneas y geoglifos de Nasca y Palpa",
       "kind": "Lugar",
       "subtitle": "Geoglifos prehispánicos del sur de Perú",
-      "note": "Conjunto de líneas y figuras trazadas mediante remoción superficial de grava; su interpretación precisa sigue siendo objeto de investigación.",
+      "note": "Conjunto de líneas y figuras trazadas mediante remoción superficial de grava; su interpretación precisa sigue siendo objeto de investigación. Un estudio PNAS de 2024 identifica 303 nuevos geoglifos figurativos mediante prospección de campo auxiliada por IA.",
       "source": "https://whc.unesco.org/en/list/700/",
       "topic3d": "historia",
       "photo": "",
@@ -95,8 +94,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "Se discuten la escala, las figuras animales y posibles funciones de las líneas; se contraponen interpretaciones sin establecer que fueran una señal para visitantes extraterrestres. Localización orientativa en el texto privado: carácter 71689, buscar «Nazca». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 71689,
+          "text": "Se discuten la escala, las figuras animales y posibles funciones de las líneas; se contraponen interpretaciones sin establecer que fueran una señal para visitantes extraterrestres. Localización orientativa en el texto privado: carácter 71691, buscar «Nazca». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 71691,
           "transcriptSearch": "Nazca"
         },
         {
@@ -106,6 +105,26 @@ window.IDEA_TELARANA_F38_REVIEW =
           "timeSec": null,
           "status": "contraste_documental",
           "text": "UNESCO describe geoglifos de diversas fases entre aproximadamente 500 a. C. y 500 d. C.; su función ritual o astronómica se presenta como interpretación, no como certeza universal."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje textual no diarizado",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "las líneas de Nazca",
+          "transcriptCharOffset": 73109,
+          "text": "El debate cuestiona la idea de que todos los geoglifos fueron hechos exclusivamente para contemplarse desde el aire. La identidad de la voz requiere cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://doi.org/10.1073/pnas.2407652121",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "La visibilidad desde senderos y colinas de parte de los motivos, junto con su heterogeneidad, no permite afirmar que el conjunto solo podía verse desde el cielo."
         }
       ]
     },
@@ -125,8 +144,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "Una voz describe una imagen como una posible escafandra, mientras otra advierte contra saltar de una imagen ambigua a una explicación extraterrestre. La autoría de ambas intervenciones requiere audio. Localización orientativa en el texto privado: carácter 60282, buscar «tasili». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 60282,
+          "text": "Una voz describe una imagen como una posible escafandra, mientras otra advierte contra saltar de una imagen ambigua a una explicación extraterrestre. La autoría de ambas intervenciones requiere audio. Localización orientativa en el texto privado: carácter 60284, buscar «tasili». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 60284,
           "transcriptSearch": "tasili"
         },
         {
@@ -155,8 +174,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "En el debate se discuten prácticas de construcción y la atribución de monumentos concretos; no se presenta una técnica única como explicación demostrada de todos los casos. Localización orientativa en el texto privado: carácter 95000, buscar «pirámide». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 95000,
+          "text": "En el debate se discuten prácticas de construcción y la atribución de monumentos concretos; no se presenta una técnica única como explicación demostrada de todos los casos. Localización orientativa en el texto privado: carácter 94582, buscar «pirámide». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 94582,
           "transcriptSearch": "pirámide"
         }
       ]
@@ -177,8 +196,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "Los participantes discuten la atribución de la pirámide, el transporte de piedra y el alcance de los papiros. Las voces deben cotejarse antes de atribuir frases a una persona. Localización orientativa en el texto privado: carácter 96991, buscar «Merer». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 96991,
+          "text": "Los participantes discuten la atribución de la pirámide, el transporte de piedra y el alcance de los papiros. Las voces deben cotejarse antes de atribuir frases a una persona. Localización orientativa en el texto privado: carácter 96993, buscar «Merer». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 96993,
           "transcriptSearch": "Merer"
         },
         {
@@ -218,8 +237,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "El debate invoca el diario de Merer y discute qué material se transportaba y qué se puede inferir del documento. Localización orientativa en el texto privado: carácter 96991, buscar «Merer». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 96991,
+          "text": "El debate invoca el diario de Merer y discute qué material se transportaba y qué se puede inferir del documento. Localización orientativa en el texto privado: carácter 96993, buscar «Merer». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 96993,
           "transcriptSearch": "Merer"
         },
         {
@@ -259,8 +278,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "Una intervención propone Göbekli Tepe como ejemplo de revisión de cronologías y otra cuestiona que fuera rechazado por dogma científico; ambas interpretaciones permanecen atribuidas al debate. Localización orientativa en el texto privado: carácter 77424, buscar «Gobegli». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 77424,
+          "text": "Una intervención propone Göbekli Tepe como ejemplo de revisión de cronologías y otra cuestiona que fuera rechazado por dogma científico; ambas interpretaciones permanecen atribuidas al debate. Localización orientativa en el texto privado: carácter 77426, buscar «Gobegli». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 77426,
           "transcriptSearch": "Gobegli"
         }
       ]
@@ -281,8 +300,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "Se debate si una tradición transmitida por Platón conserva recuerdos históricos y se replica que un relato no demuestra por sí solo una civilización arqueológica determinada. Localización orientativa en el texto privado: carácter 151902, buscar «Atlántida». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 151902,
+          "text": "Se debate si una tradición transmitida por Platón conserva recuerdos históricos y se replica que un relato no demuestra por sí solo una civilización arqueológica determinada. Localización orientativa en el texto privado: carácter 151904, buscar «Atlántida». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 151904,
           "transcriptSearch": "Atlántida"
         },
         {
@@ -322,8 +341,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "El diálogo examina el origen y la posible interpretación histórica de la narración en Timeo y Critias; las conclusiones de los participantes son hipótesis, no hechos arqueológicos. Localización orientativa en el texto privado: carácter 152631, buscar «Critias». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 152631,
+          "text": "El diálogo examina el origen y la posible interpretación histórica de la narración en Timeo y Critias; las conclusiones de los participantes son hipótesis, no hechos arqueológicos. Localización orientativa en el texto privado: carácter 152593, buscar «Critias». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 152593,
           "transcriptSearch": "Critias"
         }
       ]
@@ -344,8 +363,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "Se debaten causas climáticas y una hipótesis de impacto; el intercambio no prueba por sí mismo un cataclismo global que destruyera una civilización. Localización orientativa en el texto privado: carácter 143144, buscar «Younger». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 143144,
+          "text": "Se debaten causas climáticas y una hipótesis de impacto; el intercambio no prueba por sí mismo un cataclismo global que destruyera una civilización. Localización orientativa en el texto privado: carácter 143146, buscar «Younger». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 143146,
           "transcriptSearch": "Younger"
         },
         {
@@ -386,8 +405,8 @@ window.IDEA_TELARANA_F38_REVIEW =
           "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
           "timeSec": null,
           "status": "intervencion_debatida_sin_voz_cotejada",
-          "text": "Se discuten afirmaciones de túneles bajo Guiza atribuidas a Filippo Biondi. La transcripción no constituye prueba de su existencia; no se ha revisado aquí la documentación técnica ni cotejado el audio. Localización orientativa en el texto privado: carácter 182040, buscar «Biondi». La identidad de la voz requiere cotejo de audio.",
-          "transcriptCharOffset": 182040,
+          "text": "Se discuten afirmaciones de túneles bajo Guiza atribuidas a Filippo Biondi. La transcripción no constituye prueba de su existencia; no se ha revisado aquí la documentación técnica ni cotejado el audio. Localización orientativa en el texto privado: carácter 182042, buscar «Biondi». La identidad de la voz requiere cotejo de audio.",
+          "transcriptCharOffset": 182042,
           "transcriptSearch": "Biondi"
         },
         {
@@ -399,7 +418,7 @@ window.IDEA_TELARANA_F38_REVIEW =
           "minuteVerified": false,
           "status": "contraste_externo_posterior_no_alegacion_literal",
           "transcriptSearch": "Filipo Biondi",
-          "transcriptCharOffset": 182040,
+          "transcriptCharOffset": 182035,
           "text": "Actualización documental posterior al debate: la revista retractó el artículo SAR de Jufu (2022) en agosto de 2026; el supuesto complejo bajo Kefrén sigue siendo una hipótesis separada sin validación independiente."
         }
       ]
@@ -423,7 +442,7 @@ window.IDEA_TELARANA_F38_REVIEW =
           "minuteVerified": false,
           "status": "mencion_normalizada_con_contraste_cientifico_sin_audio",
           "transcriptSearch": "White Sans",
-          "transcriptCharOffset": 79000,
+          "transcriptCharOffset": 79281,
           "text": "El TXT menciona fonéticamente «White Sans» y estima 24.000–25.000 años para la llegada humana a América. El estudio publicado en 2026 acota las huellas de White Sands a 23.500–21.700 años. La identificación y las cifras del TXT precisan cotejo de voces y audio."
         }
       ]
@@ -447,7 +466,7 @@ window.IDEA_TELARANA_F38_REVIEW =
           "minuteVerified": false,
           "status": "contraste_cientifico_externo_no_declaracion_del_debate",
           "transcriptSearch": "White Sans",
-          "transcriptCharOffset": 79000,
+          "transcriptCharOffset": 79281,
           "text": "Contraste editorial externo: Pigati et al. 2023 y Springer et al. 2026 corroboran la antigüedad de las huellas, con intervalo refinado. No consta cita explícita de esos artículos en el TXT; no se atribuyen a los participantes."
         },
         {
@@ -487,7 +506,7 @@ window.IDEA_TELARANA_F38_REVIEW =
           "minuteVerified": false,
           "status": "interpretacion_cronologica_debatida_no_evidencia_historica",
           "transcriptSearch": "9,000 años",
-          "transcriptCharOffset": 153135,
+          "transcriptCharOffset": 153127,
           "text": "El debate vincula los «9,000 años» que se atribuyen al relato de Solón con el fin de la glaciación. La cifra de Timeo 23e está en el texto original, pero pasarla a 11.600 años respecto al presente es una inferencia cronológica, no verificación arqueológica."
         }
       ]
@@ -511,7 +530,7 @@ window.IDEA_TELARANA_F38_REVIEW =
           "minuteVerified": false,
           "status": "alegacion_geofisica_debatida_sin_confirmacion",
           "transcriptSearch": "800 met de profundidad",
-          "transcriptCharOffset": 182380,
+          "transcriptCharOffset": 182433,
           "text": "El TXT debate la alegación de «túneles de 800 met de profundidad» cerca de Kefrén y pregunta por la fiabilidad de una técnica SAR. No se da por válida la estructura, ni se asigna la valoración a una voz individual sin diarización."
         }
       ]
@@ -535,7 +554,7 @@ window.IDEA_TELARANA_F38_REVIEW =
           "minuteVerified": false,
           "status": "acontecimiento_editorial_posterior_no_mencion_entrevista",
           "transcriptSearch": "Filipo Biondi",
-          "transcriptCharOffset": 182040,
+          "transcriptCharOffset": 182035,
           "text": "Contraste editorial posterior a la entrevista: Remote Sensing retractó el 10-08-2026 un trabajo SAR de Biondi y Malanga relativo a la Gran Pirámide de Jufu. No equivale a retractación formal de su hipótesis específica sobre Kefrén ni a una prueba de su verdad o falsedad."
         }
       ]
@@ -705,6 +724,101 @@ window.IDEA_TELARANA_F38_REVIEW =
           "transcriptSearch": "black mat",
           "transcriptCharOffset": 155247,
           "text": "El debate utiliza la expresión «black mat», habla de microsférulas, nanodiamantes y platino y compara la controversia con la extinción de dinosaurios. La existencia de tales materiales en algunos registros no constituye por sí sola prueba de un impacto global sin un contraste independiente de cronología y origen."
+        }
+      ]
+    },
+    {
+      "id": "f38-nazca-pnas-2024",
+      "name": "Geoglifos de Nazca: estudio IA de 2024",
+      "kind": "Documento",
+      "subtitle": "PNAS · IA y verificación arqueológica en campo",
+      "note": "Investigadores documentaron 303 nuevos geoglifos figurativos con ayuda de imágenes procesadas por IA y verificaciones de campo. No fueron simples detecciones automáticas ni se infiere tecnología extraterrestre.",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://doi.org/10.1073/pnas.2407652121",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El artículo de 2024 confirma 303 hallazgos figurativos tras prospecciones de campo entre 2022 y 2023 y diferencia candidatos del sistema de IA de descubrimientos comprobados."
+        }
+      ]
+    },
+    {
+      "id": "f38-nazca-relieve",
+      "name": "Geoglifos en relieve de Nazca",
+      "kind": "Tema",
+      "subtitle": "Motivos pequeños relacionados con senderos",
+      "note": "El estudio distingue geoglifos pequeños de tipo relieve, a menudo próximos a senderos, y grandes motivos lineales. Visibilidad y finalidad no pueden generalizarse a todo el conjunto.",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://doi.org/10.1073/pnas.2407652121",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "En el artículo se comparan motivos de relieve y lineales, su posición y su accesibilidad visual desde el terreno."
+        }
+      ]
+    },
+    {
+      "id": "f38-craneos-modificacion",
+      "name": "Modificación craneal intencional en los Andes",
+      "kind": "Tema",
+      "subtitle": "Práctica cultural documentada",
+      "note": "Se moldeaba deliberadamente la forma de la cabeza durante el crecimiento. Los cráneos alargados Paracas tienen un contexto humano arqueológico; la forma no demuestra un linaje extraterrestre.",
+      "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje textual no diarizado",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "qué opináis vosotros de los cráneos alargados",
+          "transcriptCharOffset": 79882,
+          "text": "El texto plantea el origen de cráneos alargados y discute explicaciones culturales y especulativas. La identidad de la voz requiere cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Una investigación de restos Paracas analiza la práctica intencional, sus variantes y asociaciones sociales; no aporta evidencia de seres no humanos."
+        }
+      ]
+    },
+    {
+      "id": "f38-paracas-estudio-2022",
+      "name": "Estudio de modificación craneal Paracas (2022)",
+      "kind": "Documento",
+      "subtitle": "Journal of Archaeological Science: Reports · 159 individuos",
+      "note": "Estudio de 159 cráneos de Paracas Cavernas (137 adultos y 22 menores): el 98 % presenta alguna modificación intencional; los patrones se investigan como prácticas culturales de identidad.",
+      "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Gómez-Mejía y colaboradores estudian 159 individuos, asociación de forma con identidad social y variación por sexo; no se extrapola el resultado a otras culturas ni a supuestos orígenes extraterrestres."
         }
       ]
     }
@@ -1170,6 +1284,61 @@ window.IDEA_TELARANA_F38_REVIEW =
       "source": "https://doi.org/10.1016/j.earscirev.2023.104502",
       "confidence": "indicio",
       "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-nazca-pnas-documento",
+      "a": "f38-nazca",
+      "b": "f38-nazca-pnas-2024",
+      "type": "Objeto de estudio arqueológico",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "claimStatus": "evidencia_cientifica_documentada",
+      "confidence": "documentado",
+      "note": "Conjunto de geoglifos estudiado con inspección de campo asistida por IA.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-nazca-pnas-relieve",
+      "a": "f38-nazca-pnas-2024",
+      "b": "f38-nazca-relieve",
+      "type": "Tipología confirmada",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "claimStatus": "clasificacion_arqueologica_documentada",
+      "confidence": "documentado",
+      "note": "El análisis de 2024 diferencia geoglifos de tipo relieve y lineal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-nazca-subtipo-relieve",
+      "a": "f38-nazca-relieve",
+      "b": "f38-nazca",
+      "type": "Subgrupo regional",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "claimStatus": "contexto_arqueologico",
+      "confidence": "documentado",
+      "note": "Los motivos de relieve son parte del conjunto amplio, no sustituyen todos los geoglifos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-episodio-craneos-debate",
+      "a": "f38-episodio",
+      "b": "f38-craneos-modificacion",
+      "type": "Tema debatido sin atribución de voz",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "claimStatus": "mencion_sin_audio_verificado",
+      "confidence": "indicio",
+      "note": "Se habla sobre cráneos alargados sin asignar intervenciones a participantes.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-paracas-craneos-estudio",
+      "a": "f38-craneos-modificacion",
+      "b": "f38-paracas-estudio-2022",
+      "type": "Contraste bioarqueológico",
+      "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+      "claimStatus": "evidencia_bioarqueologica",
+      "confidence": "documentado",
+      "note": "Los restos Paracas se estudian como práctica humana intencional en su contexto cultural.",
       "podcastNotes": []
     }
   ]

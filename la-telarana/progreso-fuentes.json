@@ -1542,20 +1542,20 @@
       "videoId": "aiN_M5fykfg",
       "title": "Conspiranoicos RETAN a Arqueólogos: ¿Quién Construyó Realmente las Pirámides y la Atlántida?",
       "sourceUrl": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-      "status": "tercera_revision_documental_multivoz_sin_audio",
+      "status": "cuarta_revision_nazca_paracas_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-38-debate-arqueologia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 31,
-      "sourceRelationsDocumented": 42,
+      "sourceNodesDocumented": 35,
+      "sourceRelationsDocumented": 47,
       "personsProfiled": 4,
-      "documentaryChecks": 14,
+      "documentaryChecks": 16,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Revisión parcial multivoz ampliada: White Sands, objeciones y evidencia adicional, Younger Dryas, Atlántida y SAR. Audio y voces sin cotejo. Tercera revisión: Monte Verde (Science marzo y respuesta PaleoAmerica agosto 2026; datación disputada), Tartessos-Doñana (proyectos CSIC y Frontiers 2024, no Atlántida) y YDIH (Holliday et al. 2023). Sin audio, diarización ni minutajes.",
-      "lastUpdated": "2026-11-16"
+      "qualityNotes": "Revisión parcial multivoz ampliada: White Sands, objeciones y evidencia adicional, Younger Dryas, Atlántida y SAR. Audio y voces sin cotejo. Tercera revisión: Monte Verde (Science marzo y respuesta PaleoAmerica agosto 2026; datación disputada), Tartessos-Doñana (proyectos CSIC y Frontiers 2024, no Atlántida) y YDIH (Holliday et al. 2023). Sin audio, diarización ni minutajes. Nueva lectura literal sobre Nazca y Paracas: 303 geoglifos adicionales PNAS 2024, 159 cráneos Paracas en estudio 2022. Sin diarización ni minutajes; se mantienen cautelas.",
+      "lastUpdated": "2026-11-17"
     },
     {
       "order": 40,
@@ -1602,20 +1602,20 @@
       "videoId": "ANZlHZ3SjKk",
       "title": "El Misterio de Jesús: ¿era un hombre común… o un elegido? Arqueólogo responde | Con Tito Vivas",
       "sourceUrl": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
-      "status": "segunda_revision_documental_osarios_piscinas_sin_audio",
+      "status": "tercera_revision_masada_yehohanan_ginosar_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-42-jesus-arqueologia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 22,
-      "sourceRelationsDocumented": 31,
-      "personsProfiled": 7,
-      "documentaryChecks": 10,
+      "sourceNodesDocumented": 29,
+      "sourceRelationsDocumented": 39,
+      "personsProfiled": 8,
+      "documentaryChecks": 16,
       "timelineVerifiedEventsCommitted": 2,
-      "qualityNotes": "Distingue historicidad, creencias, inscripciones contextuales y resultados sobre muestras. Texto ASR sitúa carbono 14 en siglo XI–XII y muestras en distintas zonas; estudio de 1989 informa 1260–1390 y la zona de muestreo es objeto de debate. Sin audio. Ampliación 16-11-2026: osario familiar de Caifás (Museo de Israel), osario de Santiago con inscripción discutida (JAS 2004), piscinas de Betesda y Siloé (arqueología contextual, no prueba de curación sobrenatural). Audio y minutajes pendientes.",
-      "lastUpdated": "2026-11-16"
+      "qualityNotes": "Distingue historicidad, creencias, inscripciones contextuales y resultados sobre muestras. Texto ASR sitúa carbono 14 en siglo XI–XII y muestras en distintas zonas; estudio de 1989 informa 1260–1390 y la zona de muestreo es objeto de debate. Sin audio. Ampliación 16-11-2026: osario familiar de Caifás (Museo de Israel), osario de Santiago con inscripción discutida (JAS 2004), piscinas de Betesda y Siloé (arqueología contextual, no prueba de curación sobrenatural). Audio y minutajes pendientes. Masada 73/74 distinguido de Syria Palaestina tras Bar Kojba; calcáneo de Yehohanan y barca Ginosar 1986 contrastados con fuentes externas. Sin atribución audiovisual.",
+      "lastUpdated": "2026-11-17"
     },
     {
       "order": 43,
@@ -4984,7 +4984,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 37,
-        "status": "tercera_revision_documental_multivoz_sin_audio",
+        "status": "cuarta_revision_nazca_paracas_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -4995,7 +4995,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-16",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5014,19 +5014,19 @@
         },
         "analysisCoverage": {
           "percent": 22,
-          "state": "tercera_revision_documental_parcial",
+          "state": "cuarta_revision_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 31,
-            "relations": 42,
+            "entities": 35,
+            "relations": 47,
             "biographies": 4,
             "statements": 16,
-            "independentChecks": 14,
+            "independentChecks": 16,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar voces y minutajes del TXT multivoz. Contrastar argumentos restantes: Nazca, arqueoastronomía, supuestos túneles de Guiza y las fuentes primarias. F38: Monte Verde mantiene debate científico entre Science (marzo 2026) y PaleoAmerica (agosto 2026); en Doñana se estudia localización tartésica sin evidencia de Atlántida; impacto Younger Dryas sigue sin demostrar."
+          "nextAction": "Cotejar los pasajes y auditar posiciones antiguas aproximadas; ampliar análisis de arqueoastronomía y Nazca."
         }
       },
       {
@@ -5209,7 +5209,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 41,
-        "status": "segunda_revision_documental_osarios_piscinas_sin_audio",
+        "status": "tercera_revision_masada_yehohanan_ginosar_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5220,7 +5220,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-16",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5239,19 +5239,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "segunda_revision_documental_parcial",
+          "state": "tercera_revision_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 22,
-            "relations": 31,
-            "biographies": 7,
+            "entities": 29,
+            "relations": 39,
+            "biographies": 8,
             "statements": 12,
-            "independentChecks": 10,
+            "independentChecks": 16,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "F42: cotejar audio y voces y comprobar la integridad del TXT. Contrastes nuevos: inscripción del osario de Caifás (Museo de Israel); autenticidad discutida de inscripción del osario de Santiago (JAS 2004); Betesda y Siloé contextualizan la topografía, no prueban milagros. Continuar Nazaret/Belén y estudios de la Sábana Santa. Mantener separado contexto arqueológico de hechos narrados."
+          "nextAction": "Cotejar audio de Yehohanan y Masada; revisar textos sobre tradiciones, arqueología y prácticas de crucifixión."
         }
       },
       {
