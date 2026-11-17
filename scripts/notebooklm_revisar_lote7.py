@@ -45,7 +45,7 @@ def sha(raw: bytes) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
-def load_candidates() -> list[dict]:
+def load_candidates(*, check_unpublished: bool = True) -> list[dict]:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     if (data.get("version") != 1 or data.get("scope") != "LOTE7_AUDITORIA_PRIVADA"
             or data.get("editorial_approved") is not False
@@ -73,7 +73,7 @@ def load_candidates() -> list[dict]:
                 or row.get("source_url") !=
                     f"https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_{chapter}"):
             raise ValueError(f"#{issue}: identidad o procedencia no reconocida.")
-        if video in published:
+        if check_unpublished and video in published:
             raise ValueError(f"#{issue}: ya publicado en main. No volver a exportar.")
     return rows
 
