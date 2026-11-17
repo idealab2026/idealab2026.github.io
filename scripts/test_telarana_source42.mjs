@@ -35,7 +35,7 @@ for(const term of ['esas casas del siglo i primero de Nazaret','por algún motiv
 // Qumrán y manuscritos son contexto judío, no documentos biográficos ni prueba de afiliación de Jesús.
 for(const id of ['f42-qumran','f42-manuscritos-mar-muerto','f42-esenios','f42-sicarios','f42-zelotes'])assert(ids.has(id),'F42 falta ficha '+id);
 assert(f.nodes.find(n=>n.id==='f42-manuscritos-mar-muerto').note.includes('no contienen una mención'));
-assert(f.nodes.find(n=>n.id==='f42-esenios').note.includes('no hay prueba'));
+assert(f.nodes.find(n=>n.id==='f42-esenios').note.toLocaleLowerCase('es').includes('no hay prueba'), 'La ficha debe negar atribuciones personales no documentadas');
 assert(f.edges.find(e=>e.id==='f42-esenios-qumran')?.claimStatus==='hipotesis_academica_de_identificacion');
 assert(f.edges.find(e=>e.id==='f42-sicarios-zelotes-distintos')?.claimStatus==='distincion_historiografica_no_identidad_automatica');
 const noPersonal=['f42-qumran','f42-esenios','f42-sicarios','f42-zelotes','f42-manuscritos-mar-muerto'];
