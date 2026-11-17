@@ -1,4 +1,4 @@
-/* F42: tercera revisión Masada, Yehohanan y barca de Ginosar; sin audio cotejado. */
+/* F42: tercera revisión documental, sin audio cotejado. */
 window.IDEA_TELARANA_F42_REVIEW = {
   "metadata": {
     "id": "idealab-f42-jesus-arqueologia",
@@ -1216,17 +1216,6 @@ window.IDEA_TELARANA_F42_REVIEW = {
       "claimStatus": "hecho_documentado",
       "confidence": "documentado",
       "note": "El museo conserva los nombres de Yuval y Moshe y el relato del hallazgo.",
-      "podcastNotes": []
-    },
-    {
-      "id": "f42-jesus-yehohanan-contexto",
-      "a": "f42-jesus",
-      "b": "f42-yehohanan",
-      "type": "Contemporaneidad aproximada sin vínculo personal",
-      "source": "https://artsandculture.google.com/asset/8gEPRIAlblWlqw",
-      "claimStatus": "contexto_historico_no_relacion_personal",
-      "confidence": "indicio",
-      "note": "Ambos son situados en Judea del siglo I por evidencias de naturaleza diferente; no existe relación personal acreditada ni coincidencia exacta de fechas.",
       "podcastNotes": []
     }
   ]
