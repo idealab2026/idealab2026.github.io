@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};vm.runInNewContext(read('la-telarana/fuente-42-jesus-arqueologia.js'),ctx);vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
-const f=ctx.window.IDEA_TELARANA_F42_REVIEW,ids=new Set(f.nodes.map(n=>n.id));assert.equal(ids.size,34);assert.equal(f.edges.length,46);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+const f=ctx.window.IDEA_TELARANA_F42_REVIEW,ids=new Set(f.nodes.map(n=>n.id));assert.equal(ids.size,39);assert.equal(f.edges.length,55);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
 assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);let notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));assert.equal(notes.filter(n=>n.status==='relato_de_la_entrevista_sin_audio').length,8);
 for(const id of ['f42-jesus','f42-pilato','f42-pablo','f42-tacito','f42-josefo','f42-caifas','f42-santiago-justo'])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150);
 assert(f.nodes.find(n=>n.id==='f42-piedra-pilato').note.includes('fragmentaria'));assert(f.edges.find(e=>e.id==='f42-pilato-inscripcion').note.includes('no menciona a Jesús'));
@@ -32,8 +32,19 @@ assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated['f42-ken-dark']?.text.length
 const notesF42New=f.nodes.filter(n=>['f42-convento-hermanas-nazaret','f42-casa-siglo1-nazaret','f42-ken-dark','f42-estudio-nazaret-dark-2012','f42-sepphoris'].includes(n.id)).flatMap(n=>n.podcastNotes);
 assert(notesF42New.every(n=>n.timeSec===null&&n.audioVerified===false));
 for(const term of ['esas casas del siglo i primero de Nazaret','por algún motivo debió','ciudades como Betsán como Sépforis'])assert(notesF42New.some(n=>n.transcriptSearch===term&&Number.isInteger(n.transcriptCharOffset)),term);
+// Qumrán y manuscritos son contexto judío, no documentos biográficos ni prueba de afiliación de Jesús.
+for(const id of ['f42-qumran','f42-manuscritos-mar-muerto','f42-esenios','f42-sicarios','f42-zelotes'])assert(ids.has(id),'F42 falta ficha '+id);
+assert(f.nodes.find(n=>n.id==='f42-manuscritos-mar-muerto').note.includes('no contienen una mención'));
+assert(f.nodes.find(n=>n.id==='f42-esenios').note.includes('no hay prueba'));
+assert(f.edges.find(e=>e.id==='f42-esenios-qumran')?.claimStatus==='hipotesis_academica_de_identificacion');
+assert(f.edges.find(e=>e.id==='f42-sicarios-zelotes-distintos')?.claimStatus==='distincion_historiografica_no_identidad_automatica');
+const noPersonal=['f42-qumran','f42-esenios','f42-sicarios','f42-zelotes','f42-manuscritos-mar-muerto'];
+assert(!f.edges.some(e=>e.a==='f42-jesus'&&noPersonal.includes(e.b)||e.b==='f42-jesus'&&noPersonal.includes(e.a)));
+const qumranNotes=f.nodes.filter(n=>noPersonal.includes(n.id)).flatMap(n=>n.podcastNotes);
+assert(qumranNotes.every(n=>n.timeSec===null&&n.audioVerified===false));
+for(const term of ['Kunran','famosos manuscritos','esenios','los icarios eran celotas','Jesús como revolucionario era un celote'])assert(qumranNotes.some(n=>n.transcriptSearch===term&&Number.isInteger(n.transcriptCharOffset)),term);
 const tracker=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===42);
-assert.equal(tracker.analysisCoverage.signals.entities,34);assert.equal(tracker.analysisCoverage.signals.relations,46);
-assert.equal(tracker.analysisCoverage.percent,20);assert.equal(tracker.analysisCoverage.signals.independentChecks,19);assert.equal(tracker.analysisCoverage.signals.biographies,9);
+assert.equal(tracker.analysisCoverage.signals.entities,39);assert.equal(tracker.analysisCoverage.signals.relations,55);
+assert.equal(tracker.analysisCoverage.percent,20);assert.equal(tracker.analysisCoverage.signals.independentChecks,24);assert.equal(tracker.analysisCoverage.signals.biographies,9);
 assert(read('la-telarana/index.html').includes('fuente-42-jesus-arqueologia.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-42-jesus-arqueologia.js'));
 console.log('OK: F42 distingue arqueología contextual, tradiciones y estudios de muestras');
