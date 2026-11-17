@@ -3,7 +3,7 @@ const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};
 vm.runInNewContext(read('la-telarana/fuente-38-debate-arqueologia.js'),ctx);
 vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
 const f=ctx.window.IDEA_TELARANA_F38_REVIEW,ids=new Set(f.nodes.map(n=>n.id));
-assert.equal(ids.size,35);assert.equal(f.edges.length,47);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert.equal(ids.size,41);assert.equal(f.edges.length,55);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
 assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);
 const notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));
 assert.equal(notes.filter(n=>n.status==='intervencion_debatida_sin_voz_cotejada').length,10);
@@ -47,7 +47,17 @@ const addedNotes=f.nodes.filter(n=>['f38-nazca-pnas-2024','f38-nazca-relieve','f
 assert(addedNotes.every(n=>n.timeSec===null&&n.audioVerified===false));
 assert(addedNotes.some(n=>n.transcriptSearch==='qué opináis vosotros de los cráneos alargados'&&Number.isInteger(n.transcriptCharOffset)));
 assert(f.nodes.find(n=>n.id==='f38-nazca').podcastNotes.some(n=>n.transcriptSearch==='las líneas de Nazca'&&Number.isInteger(n.transcriptCharOffset)));
+// Pumapunku no es Saqsaywaman ni comparten necesariamente cronología y constructores.
+for(const id of ['f38-pumapunku','f38-tiwanaku-cultura','f38-pumapunku-recon-2018','f38-saqsaywaman','f38-tassili-cabezas-redondas','f38-tassili-cronologia-met'])assert(ids.has(id),'F38 sin contraste '+id);
+assert(f.nodes.find(n=>n.id==='f38-pumapunku').note.includes('preincaico'));
+assert(f.nodes.find(n=>n.id==='f38-saqsaywaman').note.includes('inca'));
+assert(f.edges.find(e=>e.id==='f38-pumapunku-saqsaywaman-contraste')?.claimStatus==='comparacion_textual_no_equivalencia_historica');
+assert(f.nodes.find(n=>n.id==='f38-tassili-cabezas-redondas').note.includes('no una identificación arqueológica'));
+assert(f.nodes.find(n=>n.id==='f38-tassili-cronologia-met').note.includes('incertidumbre')||f.nodes.find(n=>n.id==='f38-tassili-cronologia-met').note.includes('revisarse'));
+const notesF38New=f.nodes.filter(n=>['f38-pumapunku','f38-saqsaywaman','f38-tassili-cabezas-redondas','f38-tassili-cronologia-met'].includes(n.id)).flatMap(n=>n.podcastNotes);
+assert(notesF38New.every(n=>n.timeSec===null&&n.audioVerified===false));
+for(const term of ['Pumapunku o Sascoamán','Sascoamán','una especie de escafandra','Tassili se descubrió en los años 50'])assert(notesF38New.some(n=>n.transcriptSearch===term&&Number.isInteger(n.transcriptCharOffset)),term);
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));const e=h.items.filter(e=>e.id==='study-f38-papiros-wadi-2013');assert.equal(e.length,1);assert.equal(e[0].investigation.date,'2013');
-const p=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===38);assert.equal(p.analysisCoverage.signals.statements,16);assert.equal(p.analysisCoverage.signals.independentChecks,16);assert.equal(p.analysisCoverage.signals.entities,35);assert.equal(p.analysisCoverage.signals.relations,47);assert.equal(p.analysisCoverage.percent,22);assert(!p.reviewComplete);
+const p=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===38);assert.equal(p.analysisCoverage.signals.statements,16);assert.equal(p.analysisCoverage.signals.independentChecks,20);assert.equal(p.analysisCoverage.signals.entities,41);assert.equal(p.analysisCoverage.signals.relations,55);assert.equal(p.analysisCoverage.percent,22);assert(!p.reviewComplete);
 assert(read('la-telarana/index.html').includes('fuente-38-debate-arqueologia.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-38-debate-arqueologia.js'));
 console.log('OK: F38 conserva diferencias entre debate multivoz, textos y hechos documentados');
