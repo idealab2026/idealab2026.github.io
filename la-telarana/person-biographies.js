@@ -1540,6 +1540,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
       "sourceTitle": "IAC · publicación académica de Belmonte y Magli (2015)",
       "reviewedAt": "2026-11-17"
+    },
+    "f42-yehohanan": {
+      "text": "Yehohanan fue un hombre que vivió en Judea durante el siglo I d. C., conocido por sus restos óseos depositados en un osario hallado en 1968 en Giv'at ha-Mivtar, cerca de Jerusalén. En el calcáneo derecho se conservaba un clavo de hierro que documenta una ejecución por crucifixión. Se desconocen sus circunstancias personales y la fecha exacta de su muerte; el hallazgo no permite deducir que todas las crucifixiones romanas utilizaran una posición idéntica ni demuestra detalles de la muerte de Jesús.",
+      "source": "https://artsandculture.google.com/asset/8gEPRIAlblWlqw",
+      "sourceTitle": "Museo de Israel · Osario de Yehohanan y calcáneo con clavo",
+      "reviewedAt": "2026-11-17"
     }
   }
 };
