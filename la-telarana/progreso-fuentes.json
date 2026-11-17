@@ -1542,19 +1542,19 @@
       "videoId": "aiN_M5fykfg",
       "title": "Conspiranoicos RETAN a Arqueólogos: ¿Quién Construyó Realmente las Pirámides y la Atlántida?",
       "sourceUrl": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-      "status": "cuarta_revision_nazca_paracas_sin_audio",
+      "status": "quinta_revision_tiwanaku_tassili_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-38-debate-arqueologia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 35,
-      "sourceRelationsDocumented": 47,
+      "sourceNodesDocumented": 41,
+      "sourceRelationsDocumented": 55,
       "personsProfiled": 4,
-      "documentaryChecks": 16,
+      "documentaryChecks": 20,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Revisión parcial multivoz ampliada: White Sands, objeciones y evidencia adicional, Younger Dryas, Atlántida y SAR. Audio y voces sin cotejo. Tercera revisión: Monte Verde (Science marzo y respuesta PaleoAmerica agosto 2026; datación disputada), Tartessos-Doñana (proyectos CSIC y Frontiers 2024, no Atlántida) y YDIH (Holliday et al. 2023). Sin audio, diarización ni minutajes. Nueva lectura literal sobre Nazca y Paracas: 303 geoglifos adicionales PNAS 2024, 159 cráneos Paracas en estudio 2022. Sin diarización ni minutajes; se mantienen cautelas.",
+      "qualityNotes": "Revisión parcial multivoz ampliada: White Sands, objeciones y evidencia adicional, Younger Dryas, Atlántida y SAR. Audio y voces sin cotejo. Tercera revisión: Monte Verde (Science marzo y respuesta PaleoAmerica agosto 2026; datación disputada), Tartessos-Doñana (proyectos CSIC y Frontiers 2024, no Atlántida) y YDIH (Holliday et al. 2023). Sin audio, diarización ni minutajes. Nueva lectura literal sobre Nazca y Paracas: 303 geoglifos adicionales PNAS 2024, 159 cráneos Paracas en estudio 2022. Sin diarización ni minutajes; se mantienen cautelas. Pumapunku / Tiwanaku preincaico vs Saqsaywaman inca con ocupaciones anteriores: no fusionar cronologías. Heritage Science 2018 y 2026; PLOS ONE 2023; Ministerio Cultura Perú. Tassili: figuras Cabezas Redondas no prueban astronautas, Met advierte incertidumbre de datación y UNESCO señala notoriedad exterior desde 1933. No nuevos minutajes ni voces cotejados.",
       "lastUpdated": "2026-11-17"
     },
     {
@@ -1602,19 +1602,19 @@
       "videoId": "ANZlHZ3SjKk",
       "title": "El Misterio de Jesús: ¿era un hombre común… o un elegido? Arqueólogo responde | Con Tito Vivas",
       "sourceUrl": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
-      "status": "tercera_revision_masada_yehohanan_ginosar_sin_audio",
+      "status": "cuarta_revision_nazaret_sepphoris_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-42-jesus-arqueologia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 29,
-      "sourceRelationsDocumented": 39,
-      "personsProfiled": 8,
-      "documentaryChecks": 16,
+      "sourceNodesDocumented": 34,
+      "sourceRelationsDocumented": 46,
+      "personsProfiled": 9,
+      "documentaryChecks": 19,
       "timelineVerifiedEventsCommitted": 2,
-      "qualityNotes": "Distingue historicidad, creencias, inscripciones contextuales y resultados sobre muestras. Texto ASR sitúa carbono 14 en siglo XI–XII y muestras en distintas zonas; estudio de 1989 informa 1260–1390 y la zona de muestreo es objeto de debate. Sin audio. Ampliación 16-11-2026: osario familiar de Caifás (Museo de Israel), osario de Santiago con inscripción discutida (JAS 2004), piscinas de Betesda y Siloé (arqueología contextual, no prueba de curación sobrenatural). Audio y minutajes pendientes. Masada 73/74 distinguido de Syria Palaestina tras Bar Kojba; calcáneo de Yehohanan y barca Ginosar 1986 contrastados con fuentes externas. Sin atribución audiovisual.",
+      "qualityNotes": "Distingue historicidad, creencias, inscripciones contextuales y resultados sobre muestras. Texto ASR sitúa carbono 14 en siglo XI–XII y muestras en distintas zonas; estudio de 1989 informa 1260–1390 y la zona de muestreo es objeto de debate. Sin audio. Ampliación 16-11-2026: osario familiar de Caifás (Museo de Israel), osario de Santiago con inscripción discutida (JAS 2004), piscinas de Betesda y Siloé (arqueología contextual, no prueba de curación sobrenatural). Audio y minutajes pendientes. Masada 73/74 distinguido de Syria Palaestina tras Bar Kojba; calcáneo de Yehohanan y barca Ginosar 1986 contrastados con fuentes externas. Sin atribución audiovisual. Ken Dark (Antiquaries Journal, 2012) documenta estructura residencial del siglo I en convento de las Hermanas de Nazaret: no es casa de Jesús demostrada. Séforis no aparece en los Evangelios, pero el silencio textual no verifica que Jesús jamás la visitara. 1 biografía académica nueva. No nuevos minutajes ni voces cotejados.",
       "lastUpdated": "2026-11-17"
     },
     {
@@ -4984,7 +4984,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 37,
-        "status": "cuarta_revision_nazca_paracas_sin_audio",
+        "status": "quinta_revision_tiwanaku_tassili_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5014,19 +5014,19 @@
         },
         "analysisCoverage": {
           "percent": 22,
-          "state": "cuarta_revision_parcial",
+          "state": "quinta_revision_tiwanaku_tassili_sin_audio",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 35,
-            "relations": 47,
+            "entities": 41,
+            "relations": 55,
             "biographies": 4,
             "statements": 16,
-            "independentChecks": 16,
+            "independentChecks": 20,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar los pasajes y auditar posiciones antiguas aproximadas; ampliar análisis de arqueoastronomía y Nazca."
+          "nextAction": "Cotejar audio multivoz y ampliar la arqueología andina y del Sahara, evitando fechas y narradores no verificados."
         }
       },
       {
@@ -5209,7 +5209,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 41,
-        "status": "tercera_revision_masada_yehohanan_ginosar_sin_audio",
+        "status": "cuarta_revision_nazaret_sepphoris_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5239,19 +5239,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "tercera_revision_parcial",
+          "state": "cuarta_revision_nazaret_sepphoris_sin_audio",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 29,
-            "relations": 39,
-            "biographies": 8,
+            "entities": 34,
+            "relations": 46,
+            "biographies": 9,
             "statements": 12,
-            "independentChecks": 16,
+            "independentChecks": 19,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "Cotejar audio de Yehohanan y Masada; revisar textos sobre tradiciones, arqueología y prácticas de crucifixión."
+          "nextAction": "Cotejar atribuciones de audio y revisar otros testimonios y topografía de Galilea; no inferir domicilios ni viajes personales de restos contextuales."
         }
       },
       {

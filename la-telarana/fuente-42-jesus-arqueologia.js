@@ -1,15 +1,15 @@
-/* F42: anclas literales del TXT verificadas; audio y minutajes no cotejados. */
+/* F42 cuarta revisión Nazaret y Séforis; sin inventar biografía de Jesús. */
 window.IDEA_TELARANA_F42_REVIEW = {
   "metadata": {
     "id": "idealab-f42-jesus-arqueologia",
     "sourceOrder": 42,
     "title": "F42 · Jesús histórico y arqueología · Tito Vivas",
     "url": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
-    "reviewStage": "tercera_revision_masada_yehohanan_ginosar_sin_audio",
+    "reviewStage": "cuarta_revision_nazaret_sepphoris_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos. 17-11-2026: contrastes sobre Masada ~73/74 y Bar Kojba 132–135/136, cambio de nombre administrativo a Syria Palaestina tras esta última (Oxford), relato de Josefo vs evidencia de asedio (Cambridge/Princeton); el calcáneo de Yehohanan en 1968 (Museo de Israel) no identifica procedimientos universales ni prueba la muerte de Jesús; barca de Ginosar de 1986 (Yigal Allon Centre) no fue demostrablemente propiedad de Jesús. Se distinguen frases literales, fuente externa y cronologías. Sin audio, minutos ni voces cotejados. 17-11-2026: auditoría de offsets contra TXT original, 18 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz."
+    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos. 17-11-2026: contrastes sobre Masada ~73/74 y Bar Kojba 132–135/136, cambio de nombre administrativo a Syria Palaestina tras esta última (Oxford), relato de Josefo vs evidencia de asedio (Cambridge/Princeton); el calcáneo de Yehohanan en 1968 (Museo de Israel) no identifica procedimientos universales ni prueba la muerte de Jesús; barca de Ginosar de 1986 (Yigal Allon Centre) no fue demostrablemente propiedad de Jesús. Se distinguen frases literales, fuente externa y cronologías. Sin audio, minutos ni voces cotejados. 17-11-2026: auditoría de offsets contra TXT original, 18 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz. 17-11-2026: lectura literal de viviendas del siglo I y Séforis en F42. Ken Dark, Antiquaries Journal (2012), documentó vivienda tempranorromana en el convento Hermanas de Nazaret, pero él mismo descartó poder demostrar que Jesús viviera allí (artículo 2020). En Séforis el silencio evangélico no prueba ausencia física y las fases religiosas urbanas posteriores no se extrapolan al siglo I. Audio y voz sin cotejo."
   },
   "nodes": [
     {
@@ -142,7 +142,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
       "name": "Nazaret",
       "kind": "Lugar",
       "subtitle": "Localidad de Galilea",
-      "note": "Localidad asociada al apelativo de Jesús en las fuentes cristianas antiguas.",
+      "note": "Localidad asociada al apelativo de Jesús en las fuentes cristianas antiguas. La arqueología de una vivienda tempranorromana en el convento de las Hermanas de Nazaret confirma ocupación del asentamiento; no identifica una casa de Jesús.",
       "source": "https://www.cambridge.org/highereducation/books/an-introduction-to-the-new-testament-and-the-origins-of-christianity/32A6751C4FE08D443DC4BDD934A3C343/the-quest-for-the-historical-jesus/AC9A7E362ADF910A63A6B84489A8796D",
       "topic3d": "historia",
       "photo": "",
@@ -164,6 +164,15 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "timeSec": null,
           "status": "contraste_documental",
           "text": "La transcripción afirma que los evangelios se dividen por igual entre Belén y Nazaret. Mateo y Lucas son los evangelios que ofrecen relatos del nacimiento y lo sitúan en Belén; los otros no ofrecen un relato de nacimiento equivalente. La atribución literal del error requiere audio y ello no prueba el lugar histórico."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Ken Dark (2012) documenta restos domésticos del siglo I en Nazaret: evidencia de ocupación, no prueba de domicilio individual."
         }
       ]
     },
@@ -786,6 +795,171 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "text": "La institución que conserva la barca acredita los nombres y las circunstancias del descubrimiento de 1986."
         }
       ]
+    },
+    {
+      "id": "f42-convento-hermanas-nazaret",
+      "name": "Convento de las Hermanas de Nazaret",
+      "kind": "Lugar",
+      "subtitle": "Yacimiento estratificado en el centro de Nazaret",
+      "note": "La revisión arqueológica de 2006–2010 documentó estructuras de época romana temprana y posteriores bajo el convento, después incorporadas a un paisaje religioso bizantino. La presencia de una vivienda no permite identificar la familia propietaria.",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje del TXT sin cotejo de audio",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "esas casas del siglo i primero de Nazaret",
+          "transcriptCharOffset": 63840,
+          "text": "La transcripción invoca viviendas excavadas en Nazaret para reconstruir el contexto de la época. No documenta la residencia concreta de Jesús. La voz precisa y el minuto del audio siguen pendientes."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Ken Dark (Antiquaries Journal, 2012) publica una secuencia estratigráfica con estructura doméstica probablemente del siglo I."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://bibleinterp.arizona.edu/articles/sisters-nazareth-site",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "El propio excavador explica la incertidumbre de identificar la estructura como hogar infantil de Jesús, pese a una tradición bizantina posterior."
+        }
+      ]
+    },
+    {
+      "id": "f42-casa-siglo1-nazaret",
+      "name": "Estructura doméstica del siglo I en Nazaret",
+      "kind": "Objeto",
+      "subtitle": "Estructura 1 · excavaciones del convento",
+      "note": "Edificación parcialmente tallada en roca e interpretada como vivienda romana temprana, quizá de patio. La interpretación doméstica se apoya en estratigrafía, cerámica y planta arquitectónica. No hay nombre del propietario ni prueba de que fuera hogar de Jesús.",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Estructura excavada cuya atribución genérica al siglo I se apoya en estratigrafía y cerámica; su planta es reconstrucción provisional."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://bibleinterp.arizona.edu/articles/sisters-nazareth-site",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Ken Dark declara que no puede decidir con la evidencia disponible si este inmueble fue alguna vez la casa donde creció Jesús."
+        }
+      ]
+    },
+    {
+      "id": "f42-ken-dark",
+      "name": "Ken Dark",
+      "kind": "Persona",
+      "subtitle": "Arqueólogo e investigador de Nazaret romano",
+      "note": "Arqueólogo británico que dirigió la reevaluación del yacimiento del convento de las Hermanas de Nazaret entre 2006 y 2010. Su investigación documentó una estructura doméstica del siglo I y distinguió la arqueología verificable de la atribución tradicional a la infancia de Jesús.",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Investigación publicada en 2012 con firma de Ken Dark y descripción de los trabajos de 2006–2010. El investigador no es participante verificado de F42."
+        }
+      ]
+    },
+    {
+      "id": "f42-estudio-nazaret-dark-2012",
+      "name": "Estudio arqueológico de Nazaret de Ken Dark (2012)",
+      "kind": "Documento",
+      "subtitle": "Antiquaries Journal · estructura doméstica tempranorromana",
+      "note": "Artículo de 2012 que reexamina el material de excavaciones anteriores e incorpora un registro estratigráfico de Nazaret temprano-romana. La identificación de una posible casa con la familia de Jesús no forma parte de sus conclusiones probadas.",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "La publicación científica distingue vivienda del siglo I, estructuras funerarias posteriores y fases cristianas tardoantiguas; son periodos distintos."
+        }
+      ]
+    },
+    {
+      "id": "f42-sepphoris",
+      "name": "Séforis o Zippori (Galilea)",
+      "kind": "Lugar",
+      "subtitle": "Ciudad cercana a Nazaret y no citada en los Evangelios",
+      "note": "Séforis fue una ciudad galilea próxima a Nazaret, importante para la historia económica y cultural de la región romana. La ausencia de referencias a una visita de Jesús en los Evangelios no demuestra que nunca entrara allí, como tampoco acredita que trabajara en la ciudad.",
+      "source": "https://www.journals.uchicago.edu/doi/10.2307/3210347",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje del TXT sin cotejo de audio",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "por algún motivo debió",
+          "transcriptCharOffset": 13200,
+          "text": "En el texto se argumenta que Jesús habría evitado Séforis por una razón, pero la ausencia de mención evangélica no prueba que jamás la visitara. La voz precisa y el minuto del audio siguen pendientes."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje del TXT sin cotejo de audio",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "ciudades como Betsán como Sépforis",
+          "transcriptCharOffset": 63743,
+          "text": "La fuente menciona excavaciones en Séforis como contexto regional; no demuestra una relación personal de Jesús con el lugar. La voz precisa y el minuto del audio siguen pendientes."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://www.journals.uchicago.edu/doi/10.2307/3210347",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Estudios sobre Séforis subrayan su proximidad a Nazaret y que no aparece en el Nuevo Testamento; ese silencio no determina itinerarios personales."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · fuente científica externa; no cita audiovisual",
+          "source": "https://bibleinterp.arizona.edu/articles/Myth_Gentile_Galilee",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Al interpretar Séforis deben evitarse anacronismos: los testimonios de cultura pagana de siglos II–III no demuestran idéntica composición religiosa en el siglo I."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1216,6 +1390,83 @@ window.IDEA_TELARANA_F42_REVIEW = {
       "claimStatus": "hecho_documentado",
       "confidence": "documentado",
       "note": "El museo conserva los nombres de Yuval y Moshe y el relato del hallazgo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-nazaret-convento",
+      "a": "f42-nazaret",
+      "b": "f42-convento-hermanas-nazaret",
+      "type": "Yacimiento excavado en Nazaret",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "claimStatus": "localizacion_arqueologica_documentada",
+      "confidence": "documentado",
+      "note": "Estructura con fases romano tempranas en Nazaret; no es prueba de residencia de una persona específica.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-convento-casa-siglo1",
+      "a": "f42-convento-hermanas-nazaret",
+      "b": "f42-casa-siglo1-nazaret",
+      "type": "Estructura doméstica en el yacimiento",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "claimStatus": "estratigrafia_arqueologica_documentada",
+      "confidence": "documentado",
+      "note": "Restos domésticos reexaminados y datados por su contexto.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-estudio-casa-nazaret",
+      "a": "f42-estudio-nazaret-dark-2012",
+      "b": "f42-casa-siglo1-nazaret",
+      "type": "Documentación académica de la vivienda",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "claimStatus": "publicacion_cientifica_documentada",
+      "confidence": "documentado",
+      "note": "No atribuir la casa a Jesús.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-ken-dark-estudio",
+      "a": "f42-ken-dark",
+      "b": "f42-estudio-nazaret-dark-2012",
+      "type": "Autor de la investigación",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "claimStatus": "autoria_documentada",
+      "confidence": "documentado",
+      "note": "Ken Dark figura como autor del artículo de Antiquaries Journal (2012).",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-casas-nazaret",
+      "a": "f42-episodio",
+      "b": "f42-casa-siglo1-nazaret",
+      "type": "Tema arqueológico contextual mencionado",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "mencion_generica_no_identificacion_personal",
+      "confidence": "indicio",
+      "note": "La entrevista menciona casas de Nazaret, sin demostrar que se refiera específicamente a la Estructura 1 del convento.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-sepphoris",
+      "a": "f42-episodio",
+      "b": "f42-sepphoris",
+      "type": "Ciudad discutida en la transcripción",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "mencion_sin_audio_verificado",
+      "confidence": "indicio",
+      "note": "Aparece como argumento por silencio de las fuentes, no como una visita demostrada o descartada.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-sepphoris-nazaret-cercania",
+      "a": "f42-sepphoris",
+      "b": "f42-nazaret",
+      "type": "Proximidad geográfica; no relación personal probada",
+      "source": "https://www.journals.uchicago.edu/doi/10.2307/3210347",
+      "claimStatus": "contexto_geografico_sin_inferencia_biografica",
+      "confidence": "documentado",
+      "note": "Cercanía de las ciudades no permite inferir que Jesús trabajó, visitó o evitó Séforis.",
       "podcastNotes": []
     }
   ]
