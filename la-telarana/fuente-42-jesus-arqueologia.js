@@ -1,15 +1,15 @@
-/* F42 cuarta revisión Nazaret y Séforis; sin inventar biografía de Jesús. */
+/* F42: quinta revisión Qumrán, esenios y facciones judeorromanas; sin audio cotejado. */
 window.IDEA_TELARANA_F42_REVIEW = {
   "metadata": {
     "id": "idealab-f42-jesus-arqueologia",
     "sourceOrder": 42,
     "title": "F42 · Jesús histórico y arqueología · Tito Vivas",
     "url": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
-    "reviewStage": "cuarta_revision_nazaret_sepphoris_sin_audio",
+    "reviewStage": "quinta_revision_qumran_esenios_sicarios_zelotes_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos. 17-11-2026: contrastes sobre Masada ~73/74 y Bar Kojba 132–135/136, cambio de nombre administrativo a Syria Palaestina tras esta última (Oxford), relato de Josefo vs evidencia de asedio (Cambridge/Princeton); el calcáneo de Yehohanan en 1968 (Museo de Israel) no identifica procedimientos universales ni prueba la muerte de Jesús; barca de Ginosar de 1986 (Yigal Allon Centre) no fue demostrablemente propiedad de Jesús. Se distinguen frases literales, fuente externa y cronologías. Sin audio, minutos ni voces cotejados. 17-11-2026: auditoría de offsets contra TXT original, 18 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz. 17-11-2026: lectura literal de viviendas del siglo I y Séforis en F42. Ken Dark, Antiquaries Journal (2012), documentó vivienda tempranorromana en el convento Hermanas de Nazaret, pero él mismo descartó poder demostrar que Jesús viviera allí (artículo 2020). En Séforis el silencio evangélico no prueba ausencia física y las fases religiosas urbanas posteriores no se extrapolan al siglo I. Audio y voz sin cotejo."
+    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos. 17-11-2026: contrastes sobre Masada ~73/74 y Bar Kojba 132–135/136, cambio de nombre administrativo a Syria Palaestina tras esta última (Oxford), relato de Josefo vs evidencia de asedio (Cambridge/Princeton); el calcáneo de Yehohanan en 1968 (Museo de Israel) no identifica procedimientos universales ni prueba la muerte de Jesús; barca de Ginosar de 1986 (Yigal Allon Centre) no fue demostrablemente propiedad de Jesús. Se distinguen frases literales, fuente externa y cronologías. Sin audio, minutos ni voces cotejados. 17-11-2026: auditoría de offsets contra TXT original, 18 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz. 17-11-2026: lectura literal de viviendas del siglo I y Séforis en F42. Ken Dark, Antiquaries Journal (2012), documentó vivienda tempranorromana en el convento Hermanas de Nazaret, pero él mismo descartó poder demostrar que Jesús viviera allí (artículo 2020). En Séforis el silencio evangélico no prueba ausencia física y las fases religiosas urbanas posteriores no se extrapolan al siglo I. Audio y voz sin cotejo. 17-11-2026: revisión literal de «Kunran», «famosos manuscritos», «esenios», «los icarios eran celotas», «Jesús como revolucionario era un celote». Contraste Oxford Research (arqueología de Qumrán/cronología manuscritos), Museo de Israel, James C. VanderKam y estudios Harvard Theological Review/Oxford sobre distinción sicarios-zelotes. Los manuscritos no mencionan a Jesús ni prueban filiación; el parentesco entre facciones es disputado. Los vínculos de pertenencia personal NO se crean. Sin audio ni minutajes cotejados."
   },
   "nodes": [
     {
@@ -960,6 +960,202 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "text": "Al interpretar Séforis deben evitarse anacronismos: los testimonios de cultura pagana de siglos II–III no demuestran idéntica composición religiosa en el siglo I."
         }
       ]
+    },
+    {
+      "id": "f42-qumran",
+      "name": "Qumrán (Khirbet Qumran)",
+      "kind": "Lugar",
+      "subtitle": "Asentamiento del desierto de Judea junto al mar Muerto",
+      "note": "Yacimiento excavado junto a las cuevas donde se localizaron manuscritos antiguos desde 1947. Su utilización principal se sitúa en el último siglo antes de nuestra era y hasta 68 d. C. La identificación exacta de sus ocupantes y la relación con cada manuscrito son objeto de investigación.",
+      "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551359071",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "Kunran",
+          "transcriptCharOffset": 46428,
+          "text": "Los subtítulos aluden fonéticamente a Qumrán, lugar de los manuscritos y de una hipótesis sobre una posible relación con Jesús. La pregunta es una hipótesis, no una identificación documental. El minutaje y la identidad de la voz no están verificados."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551359071",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "La arqueología de Qumrán presenta rasgos de comunidad judía de época romana; Oxford resume la interpretación esenia, incluyendo límites de inferencia para los asentamientos próximos."
+        }
+      ]
+    },
+    {
+      "id": "f42-manuscritos-mar-muerto",
+      "name": "Manuscritos del Mar Muerto",
+      "kind": "Objeto",
+      "subtitle": "Biblioteca de fragmentos judíos de época del Segundo Templo",
+      "note": "Conjunto de manuscritos mayoritariamente hebreos, con textos arameos y griegos, desde aproximadamente el siglo III a. C. hasta el I d. C. Se hallaron en cuevas del desierto de Judea, especialmente cerca de Qumrán; no contienen una mención identificable de Jesús de Nazaret ni prueban su pertenencia a un grupo local.",
+      "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551366799",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "famosos manuscritos",
+          "transcriptCharOffset": 46458,
+          "text": "La fuente menciona manuscritos hallados en el entorno de Qumrán y pregunta por posibles conexiones con Jesús; la mera cronología contemporánea no establece filiación. El minutaje y la identidad de la voz no están verificados."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551366799",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Oxford describe una biblioteca judía diversa de libros bíblicos, textos religiosos y reglas de comunidad, con cronología entre el siglo III a. C. y el I d. C."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://cojs.org/the-dead-sea-scrolls-and-the-new-testament-james-c-vanderkam-bar-4102-marapr-2015/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "James C. VanderKam explica que los escritos sectarios de las cuevas no nombran a Jesús ni a Juan el Bautista; los paralelismos culturales no equivalen a relación personal."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://dss.collections.imj.org.il/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "El Museo de Israel facilita facsímiles digitales del Gran Rollo de Isaías y la Regla de la Comunidad, documentos accesibles con procedencia."
+        }
+      ]
+    },
+    {
+      "id": "f42-esenios",
+      "name": "Esenios",
+      "kind": "Institución",
+      "subtitle": "Corriente religiosa del judaísmo del Segundo Templo",
+      "note": "Grupo o corriente judía mencionada por autores antiguos como Flavio Josefo. La asociación entre los esenios y el asentamiento/manuscritos de Qumrán es una interpretación académica frecuente pero no demostrada mediante una inscripción de identificación de los habitantes. No hay prueba de que Jesús perteneciera a esa corriente.",
+      "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551359071",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "esenios",
+          "transcriptCharOffset": 46240,
+          "text": "La fuente habla de los esenios en el contexto de corrientes judías y relaciona su presencia con Qumrán. No prueba que Jesús fuera miembro del grupo. El minutaje y la identidad de la voz no están verificados."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551359071",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Oxford expone la hipótesis esenia de los residentes de Qumrán como interpretación principal pero discutida."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://cojs.org/the-dead-sea-scrolls-and-the-new-testament-james-c-vanderkam-bar-4102-marapr-2015/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "La comparación entre tradiciones esenias y cristianas tempranas es histórica, no una afiliación demostrada de Jesús."
+        }
+      ]
+    },
+    {
+      "id": "f42-sicarios",
+      "name": "Sicarios de Judea (sicarii)",
+      "kind": "Institución",
+      "subtitle": "Militantes identificados en fuentes judeorromanas del siglo I",
+      "note": "Facción o denominación de resistentes asociados al uso de puñales cortos (sicae). Flavio Josefo menciona sus acciones en el siglo I y su relación con la revuelta de 66–74; su identificación total con los llamados zelotes es discutida, y no hay evidencia de que Jesús perteneciera a los sicarios.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/567992013",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "los icarios eran celotas",
+          "transcriptCharOffset": 47261,
+          "text": "Los subtítulos establecen una equivalencia categórica entre sicarios y zelotes y plantean la posibilidad de que Jesús fuera uno de ellos. La clasificación histórica no permite tratar esa equivalencia ni la afiliación personal como hecho. El minutaje y la identidad de la voz no están verificados."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/567992013",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Oxford Research Encyclopedia distingue sicarios y zelotes en la revuelta contra Roma 66–74/75; las interpretaciones de su relación y origen varían."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/zealots-and-sicarii-their-origins-and-relation/1EDE0291129AED8760A12638641E2A68",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Morton Smith examina críticamente las identificaciones retrospectivas de diversas facciones de resistencia como un mismo partido organizado."
+        }
+      ]
+    },
+    {
+      "id": "f42-zelotes",
+      "name": "Zelotes (corrientes de resistencia en Judea)",
+      "kind": "Institución",
+      "subtitle": "Denominación histórica y sentido religioso de celo",
+      "note": "El uso de «zelote» puede designar fervor religioso o facciones rebeldes activas durante la primera guerra judeorromana. Las organizaciones descritas por Josefo en 66–70 no pueden trasladarse sin más al entorno de Jesús varias décadas antes, ni identificarse automáticamente con los sicarios.",
+      "source": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/zealots-and-sicarii-their-origins-and-relation/1EDE0291129AED8760A12638641E2A68",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · pasaje sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptSearch": "Jesús como revolucionario era un celote",
+          "transcriptCharOffset": 47200,
+          "text": "El texto formula como hipótesis la posible pertenencia de Jesús a una corriente militante. La existencia de resistencia a Roma no prueba su afiliación ni obliga a fusionar facciones históricamente diferenciadas. El minutaje y la identidad de la voz no están verificados."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste bibliográfico externo; no cita del vídeo",
+          "source": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/zealots-and-sicarii-their-origins-and-relation/1EDE0291129AED8760A12638641E2A68",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "La discusión académica sobre «zelotes» y «sicarios» matiza fechas de aparición de organizaciones, carácter religioso del término y diferencias entre facciones."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1467,6 +1663,105 @@ window.IDEA_TELARANA_F42_REVIEW = {
       "claimStatus": "contexto_geografico_sin_inferencia_biografica",
       "confidence": "documentado",
       "note": "Cercanía de las ciudades no permite inferir que Jesús trabajó, visitó o evitó Séforis.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-qumran",
+      "a": "f42-episodio",
+      "b": "f42-qumran",
+      "type": "Referencia al yacimiento en el TXT",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "mencion_sin_audio_verificado",
+      "confidence": "indicio",
+      "note": "Qumrán aparece en un pasaje sobre el judaísmo plural del siglo I; no se atribuye certeza de voz.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-qumran-manuscritos",
+      "a": "f42-qumran",
+      "b": "f42-manuscritos-mar-muerto",
+      "type": "Proximidad arqueológica de cuevas y asentamiento",
+      "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551366799",
+      "claimStatus": "contexto_arqueologico_documentado",
+      "confidence": "documentado",
+      "note": "Los manuscritos se hallaron en cuevas próximas, pero no se conoce autor individual de cada documento.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-esenios-qumran",
+      "a": "f42-esenios",
+      "b": "f42-qumran",
+      "type": "Identificación comunitaria debatida",
+      "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551359071",
+      "claimStatus": "hipotesis_academica_de_identificacion",
+      "confidence": "indicio",
+      "note": "La interpretación esenia es importante, no inscripción que identifique inequívocamente a todos los residentes.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-esenios-manuscritos",
+      "a": "f42-esenios",
+      "b": "f42-manuscritos-mar-muerto",
+      "type": "Hipótesis de custodia/copias de biblioteca",
+      "source": "https://academic.oup.com/edited-volume/62249/chapter-abstract/551359071",
+      "claimStatus": "relacion_colectiva_debatida",
+      "confidence": "indicio",
+      "note": "Algunos textos pueden reflejar la comunidad, pero no todos fueron necesariamente compuestos allí.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-sicarios",
+      "a": "f42-episodio",
+      "b": "f42-sicarios",
+      "type": "Hipótesis de facción citada en entrevista",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "hipotesis_mencionada_sin_corrobora_filiacion",
+      "confidence": "indicio",
+      "note": "No confundir una pregunta sobre Jesús con una afirmación de afiliación.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-zelotes",
+      "a": "f42-episodio",
+      "b": "f42-zelotes",
+      "type": "Hipótesis de facción citada en entrevista",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "hipotesis_mencionada_sin_corrobora_filiacion",
+      "confidence": "indicio",
+      "note": "El texto relata teorías sobre Jesús como revolucionario; no se agrega arista de pertenencia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-sicarios-zelotes-distintos",
+      "a": "f42-sicarios",
+      "b": "f42-zelotes",
+      "type": "Relación controvertida entre facciones",
+      "source": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/zealots-and-sicarii-their-origins-and-relation/1EDE0291129AED8760A12638641E2A68",
+      "claimStatus": "distincion_historiografica_no_identidad_automatica",
+      "confidence": "indicio",
+      "note": "No hay acuerdo en reducir sicarios y zelotes a una organización única en todas sus etapas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-josefo-sicarios",
+      "a": "f42-josefo",
+      "b": "f42-sicarios",
+      "type": "Testimonio antiguo, sujeto a crítica",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/567992013",
+      "claimStatus": "fuente_historica_documentada",
+      "confidence": "documentado",
+      "note": "Las referencias de Josefo son fundamentales pero su uso político y cronología requieren crítica historiográfica.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-josefo-zelotes",
+      "a": "f42-josefo",
+      "b": "f42-zelotes",
+      "type": "Testimonio antiguo sobre la primera guerra",
+      "source": "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/zealots-and-sicarii-their-origins-and-relation/1EDE0291129AED8760A12638641E2A68",
+      "claimStatus": "fuente_historica_documentada",
+      "confidence": "documentado",
+      "note": "La obra de Josefo documenta facciones rebeldes durante la guerra, no la afiliación de Jesús.",
       "podcastNotes": []
     }
   ]
