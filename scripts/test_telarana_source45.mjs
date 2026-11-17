@@ -10,7 +10,7 @@ assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.re
 assert(f.nodes.flatMap(n=>n.podcastNotes).every(n=>n.timeSec===null));
 assert.equal(f.nodes.flatMap(n=>n.podcastNotes).filter(n=>n.status==='relato_de_la_conversacion_sin_audio').length,27);
 for(const id of ["f39-merer","f45-wadi-al-jarf","f45-tura","f45-heit-el-ghurab","f45-muografia","f45-kefren","f45-filippo-biondi","f45-corrado-malanga","f45-estudio-sar-2022","f45-retractacion-sar-2026","f45-hipotesis-kefren-2025","f45-rampa-interior-espiral","f45-imhotep","f45-herodoto"])assert(ids.has(id),'Falta '+id);
-for(const id of ["f39-merer","f45-filippo-biondi","f45-corrado-malanga","f45-imhotep","f45-herodoto"])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150,'Falta bio '+id);
+for(const id of ["f39-merer","f45-filippo-biondi","f45-corrado-malanga","f45-imhotep","f45-herodoto","f45-snefru","f45-juan-antonio-belmonte","f45-giulio-magli"])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150,'Falta bio '+id);
 assert(f.edges.find(e=>e.id==='f45-2026-retira-2022').claimStatus==='retractacion_editorial_documentada');
 assert(f.nodes.find(n=>n.id==='f45-retractacion-sar-2026').podcastNotes[0].status==='contraste_documental_posterior_o_independiente');
 assert(f.edges.find(e=>e.id==='f45-kefren-hipotesis').claimStatus==='alegacion_no_verificada');
@@ -27,7 +27,7 @@ for(const id of ['study-f45-vacio-piramide-2017','study-f45-corredor-norte-2023'
 assert(h.items.find(e=>e.id==='study-f38-papiros-wadi-2013').investigation.additionalSources.some(s=>s.sourceOrder===45));
 const s=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===45);
 assert.equal(s.analysisCoverage.signals.entities,f.nodes.length);assert.equal(s.analysisCoverage.signals.relations,f.edges.length);
-assert.equal(s.analysisCoverage.signals.biographies,5);assert.equal(s.analysisCoverage.signals.verifiedTimelineEvents,3);
+assert.equal(s.analysisCoverage.signals.biographies,8);assert.equal(s.analysisCoverage.signals.verifiedTimelineEvents,3);
 assert.equal(s.analysisCoverage.percent,20);assert.equal(s.analysisCoverage.state,'tercera_revision_parcial');
 assert(read('la-telarana/index.html').includes('fuente-45-piramides.js?v=20261117-snefru3'));
 assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-45-piramides.js'));
