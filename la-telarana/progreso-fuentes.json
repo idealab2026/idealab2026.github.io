@@ -1671,10 +1671,10 @@
       "transcriptAudioMatched": false,
       "sourceNodesDocumented": 36,
       "sourceRelationsDocumented": 54,
-      "personsProfiled": 0,
+      "personsProfiled": 8,
       "documentaryChecks": 17,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "F45/F46 es el mismo vídeo. Tres fases editoriales: contrastes sobre muografía, SAR retractado, transporte y Wadi al-Jarf; nueva revisión Snefru-Dahshur (debate arqueológico/astronómico), seked egipcio y tumba de Imhotep. 8 entidades, 10 relaciones añadidas; 0 minutos o voces cotejados. Porcentaje público se mantiene en 20% heurístico.",
+      "qualityNotes": "F45/F46 es el mismo vídeo. Tres fases editoriales: contrastes sobre muografía, SAR retractado, transporte y Wadi al-Jarf; nueva revisión Snefru-Dahshur (debate arqueológico/astronómico), seked egipcio y tumba de Imhotep. 8 entidades, 10 relaciones añadidas; 0 minutos o voces cotejados. Porcentaje público se mantiene en 20% heurístico. Se añaden biografías breves y documentadas de Snefru, Belmonte y Magli.",
       "lastUpdated": "2026-11-17"
     },
     {
@@ -5411,7 +5411,7 @@
           "signals": {
             "entities": 36,
             "relations": 54,
-            "biographies": 5,
+            "biographies": 8,
             "statements": 15,
             "independentChecks": 17,
             "verifiedTimelineEvents": 3
