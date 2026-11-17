@@ -1,4 +1,4 @@
-/* F42: tercera revisión documental, sin audio cotejado. */
+/* F42: anclas literales del TXT verificadas; audio y minutajes no cotejados. */
 window.IDEA_TELARANA_F42_REVIEW = {
   "metadata": {
     "id": "idealab-f42-jesus-arqueologia",
@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos. 17-11-2026: contrastes sobre Masada ~73/74 y Bar Kojba 132–135/136, cambio de nombre administrativo a Syria Palaestina tras esta última (Oxford), relato de Josefo vs evidencia de asedio (Cambridge/Princeton); el calcáneo de Yehohanan en 1968 (Museo de Israel) no identifica procedimientos universales ni prueba la muerte de Jesús; barca de Ginosar de 1986 (Yigal Allon Centre) no fue demostrablemente propiedad de Jesús. Se distinguen frases literales, fuente externa y cronologías. Sin audio, minutos ni voces cotejados."
+    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos. 17-11-2026: contrastes sobre Masada ~73/74 y Bar Kojba 132–135/136, cambio de nombre administrativo a Syria Palaestina tras esta última (Oxford), relato de Josefo vs evidencia de asedio (Cambridge/Princeton); el calcáneo de Yehohanan en 1968 (Museo de Israel) no identifica procedimientos universales ni prueba la muerte de Jesús; barca de Ginosar de 1986 (Yigal Allon Centre) no fue demostrablemente propiedad de Jesús. Se distinguen frases literales, fuente externa y cronologías. Sin audio, minutos ni voces cotejados. 17-11-2026: auditoría de offsets contra TXT original, 18 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz."
   },
   "nodes": [
     {
@@ -50,8 +50,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "La entrevista debate la historicidad de Jesús y la diferencia entre restos arqueológicos del contexto y testimonios literarios. No debe interpretarse que una inscripción sobre otra persona pruebe directamente cada relato evangélico. Localización orientativa en el texto privado: carácter 44300, buscar «inscripción». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 44300,
+          "text": "La entrevista debate la historicidad de Jesús y la diferencia entre restos arqueológicos del contexto y testimonios literarios. No debe interpretarse que una inscripción sobre otra persona pruebe directamente cada relato evangélico. Localización orientativa en el texto privado: carácter 44484, buscar «inscripción». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 44484,
           "transcriptSearch": "inscripción"
         },
         {
@@ -100,8 +100,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "La entrevista presenta la inscripción de Cesarea como evidencia del prefecto y del contexto romano; el propio pasaje distingue esa evidencia de una inscripción directa sobre Jesús. Localización orientativa en el texto privado: carácter 44300, buscar «inscripción». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 44300,
+          "text": "La entrevista presenta la inscripción de Cesarea como evidencia del prefecto y del contexto romano; el propio pasaje distingue esa evidencia de una inscripción directa sobre Jesús. Localización orientativa en el texto privado: carácter 44484, buscar «inscripción». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 44484,
           "transcriptSearch": "inscripción"
         }
       ]
@@ -153,8 +153,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "La entrevista plantea Nazaret como lugar probable de origen y reconoce que no dispone de prueba directa del lugar de nacimiento; esta es una inferencia histórica, no un hallazgo concluyente. Localización orientativa en el texto privado: carácter 14300, buscar «Nazaret». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 14300,
+          "text": "La entrevista plantea Nazaret como lugar probable de origen y reconoce que no dispone de prueba directa del lugar de nacimiento; esta es una inferencia histórica, no un hallazgo concluyente. Localización orientativa en el texto privado: carácter 14305, buscar «Nazaret». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 14305,
           "transcriptSearch": "Nazaret"
         },
         {
@@ -194,8 +194,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "El invitado analiza el entorno arqueológico y la tradición del Santo Sepulcro; reconoce la ausencia de una tumba identificada por una inscripción con el nombre de Jesús. Localización orientativa en el texto privado: carácter 69000, buscar «Santo Sepulcro». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 69000,
+          "text": "El invitado analiza el entorno arqueológico y la tradición del Santo Sepulcro; reconoce la ausencia de una tumba identificada por una inscripción con el nombre de Jesús. Localización orientativa en el texto privado: carácter 69040, buscar «Santo Sepulcro». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 69040,
           "transcriptSearch": "Santo Sepulcro"
         }
       ]
@@ -216,8 +216,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "La transcripción sitúa la datación en torno a los siglos XI–XII y habla de muestras de distintas zonas. Se trata de una posible imprecisión textual que requiere cotejo de audio. Localización orientativa en el texto privado: carácter 108116, buscar «carbono 14». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 108116,
+          "text": "La transcripción sitúa la datación en torno a los siglos XI–XII y habla de muestras de distintas zonas. Se trata de una posible imprecisión textual que requiere cotejo de audio. Localización orientativa en el texto privado: carácter 108118, buscar «carbono 14». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 108118,
           "transcriptSearch": "carbono 14"
         },
         {
@@ -273,8 +273,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "En la entrevista se relaciona el Grial con relatos medievales y se discuten posibles identificaciones; la narración debe distinguirse de la prueba de autenticidad de una pieza concreta. Localización orientativa en el texto privado: carácter 91000, buscar «Grial». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 91000,
+          "text": "En la entrevista se relaciona el Grial con relatos medievales y se discuten posibles identificaciones; la narración debe distinguirse de la prueba de autenticidad de una pieza concreta. Localización orientativa en el texto privado: carácter 91550, buscar «Grial». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 91550,
           "transcriptSearch": "Grial"
         }
       ]
@@ -295,8 +295,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "La transcripción recoge la interpretación de que Pablo tuvo un papel decisivo en la formación del cristianismo; afirmar que una sola persona lo inventó es una interpretación debatible. Localización orientativa en el texto privado: carácter 115000, buscar «Pablo de Tarso». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 115000,
+          "text": "La transcripción recoge la interpretación de que Pablo tuvo un papel decisivo en la formación del cristianismo; afirmar que una sola persona lo inventó es una interpretación debatible. Localización orientativa en el texto privado: carácter 115376, buscar «Pablo de Tarso». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 115376,
           "transcriptSearch": "Pablo de Tarso"
         }
       ]
@@ -317,8 +317,8 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
           "timeSec": null,
           "status": "relato_de_la_entrevista_sin_audio",
-          "text": "La entrevista menciona a Tácito como fuente escrita sobre el contexto; la datación, transmisión y alcance de su testimonio necesitan análisis filológico independiente. Localización orientativa en el texto privado: carácter 59000, buscar «Tácito». La voz y la literalidad requieren cotejo de audio.",
-          "transcriptCharOffset": 59000,
+          "text": "La entrevista menciona a Tácito como fuente escrita sobre el contexto; la datación, transmisión y alcance de su testimonio necesitan análisis filológico independiente. Localización orientativa en el texto privado: carácter 59524, buscar «Tácito». La voz y la literalidad requieren cotejo de audio.",
+          "transcriptCharOffset": 59524,
           "transcriptSearch": "Tácito"
         }
       ]
@@ -362,7 +362,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "transcriptVerified": false,
           "transcriptSearch": "sumo sacerdote llamado Caifasm",
-          "transcriptCharOffset": 45530,
+          "transcriptCharOffset": 45489,
           "status": "identificacion_transcripcion_no_audio",
           "text": "En el TXT se habla del sumo sacerdote «Caifasm» (posible error ASR). Su existencia histórica es contrastable; las acciones concretas atribuidas al Sanedrín deben distinguirse de la evidencia arqueológica."
         }
@@ -387,7 +387,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "transcriptVerified": false,
           "transcriptSearch": "Hay un osario de Caifás",
-          "transcriptCharOffset": 51702,
+          "transcriptCharOffset": 51710,
           "status": "identificacion_transcripcion_no_audio",
           "text": "El invitado menciona el osario de Caifás como evidencia contextual. El Museo de Israel registra la pieza, pero la identificación individual y la relación con Jesús tienen límites probatorios."
         },
@@ -400,7 +400,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "status": "contraste_bibliografico_externo_no_cita_audio",
           "transcriptSearch": "Hay un osario de Caifás",
-          "transcriptCharOffset": 51702,
+          "transcriptCharOffset": 51710,
           "text": "El museo documenta la inscripción del osario y su procedencia funeraria, sin establecer una prueba material del juicio de Jesús."
         }
       ]
@@ -424,7 +424,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "transcriptVerified": false,
           "transcriptSearch": "Santiago hijo de José hermano de Jesús",
-          "transcriptCharOffset": 52065,
+          "transcriptCharOffset": 51897,
           "status": "identificacion_transcripcion_no_audio",
           "text": "El texto automático lee la inscripción del osario. Identificar el Santiago de esa inscripción con Santiago el Justo requiere demostrar autenticidad epigráfica y una atribución personal independiente, que no está acreditada."
         }
@@ -449,7 +449,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "transcriptVerified": false,
           "transcriptSearch": "El Osario de Santiago",
-          "transcriptCharOffset": 51848,
+          "transcriptCharOffset": 51821,
           "status": "identificacion_transcripcion_no_audio",
           "text": "La entrevista distingue entre autenticidad del objeto y de la inscripción, y advierte que una combinación de nombres no identifica necesariamente a la familia de Jesús. La inscripción sigue controvertida."
         },
@@ -462,7 +462,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "status": "contraste_bibliografico_externo_no_cita_audio",
           "transcriptSearch": "El Osario de Santiago",
-          "transcriptCharOffset": 51848,
+          "transcriptCharOffset": 51821,
           "text": "El estudio arqueométrico de 2004 encontró anomalías en la pátina de las letras; otros trabajos académicos no aceptan esa conclusión. La discrepancia debe conservarse abierta."
         }
       ]
@@ -486,7 +486,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "status": "contraste_bibliografico_externo_no_cita_audio",
           "transcriptSearch": "Osario de Santiago",
-          "transcriptCharOffset": 51848,
+          "transcriptCharOffset": 51824,
           "text": "Contraste académico externo sobre la pátina de la inscripción; se añade para fundamentar la incertidumbre, no como trabajo citado literalmente por el invitado."
         }
       ]
@@ -510,7 +510,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "transcriptVerified": false,
           "transcriptSearch": "en Betesda sí Jesús cura un paralítico",
-          "transcriptCharOffset": 77045,
+          "transcriptCharOffset": 77056,
           "status": "identificacion_transcripcion_no_audio",
           "text": "El texto de F42 vincula la existencia de la piscina con un relato de curación. El lugar es arqueológicamente identificable, pero los restos no prueban el milagro."
         },
@@ -547,7 +547,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "transcriptVerified": false,
           "transcriptSearch": "piscina de Siloé",
-          "transcriptCharOffset": 49521,
+          "transcriptCharOffset": 49523,
           "status": "identificacion_transcripcion_no_audio",
           "text": "F42 menciona las piscinas de Siloé y Betesda en el contexto de las prácticas de purificación; la existencia del lugar no verifica acontecimientos sobrenaturales."
         },
@@ -560,7 +560,7 @@ window.IDEA_TELARANA_F42_REVIEW = {
           "audioVerified": false,
           "status": "contraste_bibliografico_externo_no_cita_audio",
           "transcriptSearch": "piscina de Siloé",
-          "transcriptCharOffset": 49521,
+          "transcriptCharOffset": 49523,
           "text": "El inventario arqueológico de Jerusalén resume el hallazgo de 2004 y las excavaciones de Reich y Shukron."
         }
       ]
