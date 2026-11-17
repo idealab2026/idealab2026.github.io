@@ -77,6 +77,8 @@ jobs:
         run: node scripts/test_telarana_source38.mjs
       - name: Validar F42 y cronología de Masada y arqueología de Galilea
         run: node scripts/test_telarana_source42.mjs
+      - name: Validar F51, Hawara, Beatrice, Cádiz y Younger Dryas
+        run: node scripts/test_telarana_source51.mjs
       - name: Validar F45 y sus nuevos contrastes de historia egipcia
         run: node scripts/test_telarana_source45.mjs
       - name: Validar F39 y F50 sin minutajes ficticios

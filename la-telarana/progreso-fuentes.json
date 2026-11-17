@@ -1702,20 +1702,20 @@
       "videoId": "RZg6BX-TZss",
       "title": "The Wild Project #316 - Michael Donnellan | Afirma haber descubierto LA ATLÁNTIDA",
       "sourceUrl": "https://www.youtube.com/watch?v=RZg6BX-TZss",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "segunda_revision_hawara_beatrice_cadiz_ydriass_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-51-atlantida.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 13,
-      "sourceRelationsDocumented": 15,
+      "sourceNodesDocumented": 24,
+      "sourceRelationsDocumented": 30,
       "personsProfiled": 1,
-      "documentaryChecks": 5,
+      "documentaryChecks": 12,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "No convertir hipótesis de localización en descubrimiento acreditado. El estudio independiente de Tartessos no verifica la Atlántida; F48/F49 originales siguen pendientes.",
-      "lastUpdated": "2026-11-14"
+      "qualityNotes": "No convertir hipótesis de localización en descubrimiento acreditado. El estudio independiente de Tartessos no verifica la Atlántida; F48/F49 originales siguen pendientes. Segunda revisión 17-11-2026: Hawara (prospección VLF-EM 2010, no miles de cámaras confirmadas); Beatrice/sarcófago Menkaure perdido en 1838 según investigación archivística Nielsen 2024, pecio no identificado; estudio del nivel relativo del mar de Cádiz no permite datar supuestos muros sumergidos a partir de 20 m de profundidad; Younger Dryas climático distinguido de hipótesis de impacto controvertida Holliday 2023 y réplica 2024. Diez anclas textuales literales nuevas; sin diarización, audio ni minutos cotejados.",
+      "lastUpdated": "2026-11-17"
     },
     {
       "order": 52,
@@ -5731,7 +5731,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 50,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_hawara_beatrice_cadiz_ydriass_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5742,7 +5742,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-14",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5761,19 +5761,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_documental_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 13,
-            "relations": 15,
+            "entities": 24,
+            "relations": 30,
             "biographies": 1,
-            "statements": 7,
-            "independentChecks": 5,
+            "statements": 17,
+            "independentChecks": 12,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar audio y voces; revisar la documentación específica de la propuesta, datos de prospección, dataciones y evaluación independiente."
+          "nextAction": "Cotejar entrevistas con audio y voces; obtener publicación revisada y datos brutos georreferenciados de la prospección subacuática; datar muestras y controlar hipótesis de cataclismos y supuestos hallazgos, sin convertir anomalías en hechos."
         }
       },
       {
