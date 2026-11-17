@@ -1,16 +1,15 @@
-/* F38: revisión documental parcial multivoz sin cotejo de audio. */
-window.IDEA_TELARANA_F38_REVIEW =
-{
+/* F38: cuarta revisión Nazca y Paracas; voces y audio sin cotejar. */
+window.IDEA_TELARANA_F38_REVIEW = {
   "metadata": {
     "id": "idealab-f38-debate-arqueologia",
     "sourceOrder": 38,
     "title": "F38 · Debate de arqueología, pirámides y Atlántida",
     "url": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-    "reviewStage": "tercera_revision_monteverde_donana_youngerdryas_sin_audio",
+    "reviewStage": "cuarta_revision_nazca_craneos_paracas_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización."
+    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización. 17-11-2026: revisión de fragmentos literales sobre la supuesta visibilidad exclusivamente aérea de Nazca y cráneos alargados; PNAS 2024 distingue 303 hallazgos confirmados en campo mediante IA de candidatos informáticos, y la investigación Paracas de Gómez-Mejía et al. (2022) documenta 159 cráneos humanos y modificación intencional en 98 %. Fuentes externas no atribuidas a los invitados. Sin voces ni minutos cotejados."
   },
   "nodes": [
     {
@@ -84,7 +83,7 @@ window.IDEA_TELARANA_F38_REVIEW =
       "name": "Líneas y geoglifos de Nasca y Palpa",
       "kind": "Lugar",
       "subtitle": "Geoglifos prehispánicos del sur de Perú",
-      "note": "Conjunto de líneas y figuras trazadas mediante remoción superficial de grava; su interpretación precisa sigue siendo objeto de investigación.",
+      "note": "Conjunto de líneas y figuras trazadas mediante remoción superficial de grava; su interpretación precisa sigue siendo objeto de investigación. Un estudio PNAS de 2024 identifica 303 nuevos geoglifos figurativos mediante prospección de campo auxiliada por IA.",
       "source": "https://whc.unesco.org/en/list/700/",
       "topic3d": "historia",
       "photo": "",
@@ -106,6 +105,26 @@ window.IDEA_TELARANA_F38_REVIEW =
           "timeSec": null,
           "status": "contraste_documental",
           "text": "UNESCO describe geoglifos de diversas fases entre aproximadamente 500 a. C. y 500 d. C.; su función ritual o astronómica se presenta como interpretación, no como certeza universal."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje textual no diarizado",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "las líneas de Nazca",
+          "transcriptCharOffset": 73109,
+          "text": "El debate cuestiona la idea de que todos los geoglifos fueron hechos exclusivamente para contemplarse desde el aire. La identidad de la voz requiere cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://doi.org/10.1073/pnas.2407652121",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "La visibilidad desde senderos y colinas de parte de los motivos, junto con su heterogeneidad, no permite afirmar que el conjunto solo podía verse desde el cielo."
         }
       ]
     },
@@ -707,6 +726,101 @@ window.IDEA_TELARANA_F38_REVIEW =
           "text": "El debate utiliza la expresión «black mat», habla de microsférulas, nanodiamantes y platino y compara la controversia con la extinción de dinosaurios. La existencia de tales materiales en algunos registros no constituye por sí sola prueba de un impacto global sin un contraste independiente de cronología y origen."
         }
       ]
+    },
+    {
+      "id": "f38-nazca-pnas-2024",
+      "name": "Geoglifos de Nazca: estudio IA de 2024",
+      "kind": "Documento",
+      "subtitle": "PNAS · IA y verificación arqueológica en campo",
+      "note": "Investigadores documentaron 303 nuevos geoglifos figurativos con ayuda de imágenes procesadas por IA y verificaciones de campo. No fueron simples detecciones automáticas ni se infiere tecnología extraterrestre.",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://doi.org/10.1073/pnas.2407652121",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El artículo de 2024 confirma 303 hallazgos figurativos tras prospecciones de campo entre 2022 y 2023 y diferencia candidatos del sistema de IA de descubrimientos comprobados."
+        }
+      ]
+    },
+    {
+      "id": "f38-nazca-relieve",
+      "name": "Geoglifos en relieve de Nazca",
+      "kind": "Tema",
+      "subtitle": "Motivos pequeños relacionados con senderos",
+      "note": "El estudio distingue geoglifos pequeños de tipo relieve, a menudo próximos a senderos, y grandes motivos lineales. Visibilidad y finalidad no pueden generalizarse a todo el conjunto.",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://doi.org/10.1073/pnas.2407652121",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "En el artículo se comparan motivos de relieve y lineales, su posición y su accesibilidad visual desde el terreno."
+        }
+      ]
+    },
+    {
+      "id": "f38-craneos-modificacion",
+      "name": "Modificación craneal intencional en los Andes",
+      "kind": "Tema",
+      "subtitle": "Práctica cultural documentada",
+      "note": "Se moldeaba deliberadamente la forma de la cabeza durante el crecimiento. Los cráneos alargados Paracas tienen un contexto humano arqueológico; la forma no demuestra un linaje extraterrestre.",
+      "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · pasaje textual no diarizado",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "qué opináis vosotros de los cráneos alargados",
+          "transcriptCharOffset": 79882,
+          "text": "El texto plantea el origen de cráneos alargados y discute explicaciones culturales y especulativas. La identidad de la voz requiere cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Una investigación de restos Paracas analiza la práctica intencional, sus variantes y asociaciones sociales; no aporta evidencia de seres no humanos."
+        }
+      ]
+    },
+    {
+      "id": "f38-paracas-estudio-2022",
+      "name": "Estudio de modificación craneal Paracas (2022)",
+      "kind": "Documento",
+      "subtitle": "Journal of Archaeological Science: Reports · 159 individuos",
+      "note": "Estudio de 159 cráneos de Paracas Cavernas (137 adultos y 22 menores): el 98 % presenta alguna modificación intencional; los patrones se investigan como prácticas culturales de identidad.",
+      "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo; no atribuido al podcast",
+          "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Gómez-Mejía y colaboradores estudian 159 individuos, asociación de forma con identidad social y variación por sexo; no se extrapola el resultado a otras culturas ni a supuestos orígenes extraterrestres."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1170,6 +1284,61 @@ window.IDEA_TELARANA_F38_REVIEW =
       "source": "https://doi.org/10.1016/j.earscirev.2023.104502",
       "confidence": "indicio",
       "note": "Relación documental o hipótesis con atribución explícita. F38 no tiene audio ni voz cotejados y los estudios externos no son citas del vídeo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-nazca-pnas-documento",
+      "a": "f38-nazca",
+      "b": "f38-nazca-pnas-2024",
+      "type": "Objeto de estudio arqueológico",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "claimStatus": "evidencia_cientifica_documentada",
+      "confidence": "documentado",
+      "note": "Conjunto de geoglifos estudiado con inspección de campo asistida por IA.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-nazca-pnas-relieve",
+      "a": "f38-nazca-pnas-2024",
+      "b": "f38-nazca-relieve",
+      "type": "Tipología confirmada",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "claimStatus": "clasificacion_arqueologica_documentada",
+      "confidence": "documentado",
+      "note": "El análisis de 2024 diferencia geoglifos de tipo relieve y lineal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-nazca-subtipo-relieve",
+      "a": "f38-nazca-relieve",
+      "b": "f38-nazca",
+      "type": "Subgrupo regional",
+      "source": "https://doi.org/10.1073/pnas.2407652121",
+      "claimStatus": "contexto_arqueologico",
+      "confidence": "documentado",
+      "note": "Los motivos de relieve son parte del conjunto amplio, no sustituyen todos los geoglifos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-episodio-craneos-debate",
+      "a": "f38-episodio",
+      "b": "f38-craneos-modificacion",
+      "type": "Tema debatido sin atribución de voz",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "claimStatus": "mencion_sin_audio_verificado",
+      "confidence": "indicio",
+      "note": "Se habla sobre cráneos alargados sin asignar intervenciones a participantes.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-paracas-craneos-estudio",
+      "a": "f38-craneos-modificacion",
+      "b": "f38-paracas-estudio-2022",
+      "type": "Contraste bioarqueológico",
+      "source": "https://portalrecerca.uab.cat/en/publications/intentional-cranial-modification-as-a-marker-of-identity-in-parac/",
+      "claimStatus": "evidencia_bioarqueologica",
+      "confidence": "documentado",
+      "note": "Los restos Paracas se estudian como práctica humana intencional en su contexto cultural.",
       "podcastNotes": []
     }
   ]
