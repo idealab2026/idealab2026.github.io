@@ -1,16 +1,15 @@
-/* F42: investigación documental parcial; sin cotejo de audio. */
-window.IDEA_TELARANA_F42_REVIEW =
-{
+/* F42: tercera revisión Masada, Yehohanan y barca de Ginosar; sin audio cotejado. */
+window.IDEA_TELARANA_F42_REVIEW = {
   "metadata": {
     "id": "idealab-f42-jesus-arqueologia",
     "sourceOrder": 42,
     "title": "F42 · Jesús histórico y arqueología · Tito Vivas",
     "url": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
-    "reviewStage": "segunda_revision_osarios_topografia_jerusalen_sin_audio",
+    "reviewStage": "tercera_revision_masada_yehohanan_ginosar_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos."
+    "methodologicalNote": "Entrevista con texto automático sin minutajes, integridad ni voces cotejadas. Se distinguen testimonios literarios, contexto arqueológico, hipótesis históricas y creencias religiosas. Los resultados sobre una muestra de tela no prueban por sí solos hechos biográficos de Jesús. 16-11-2026: cotejo del TXT de NotebookLM (F42, 160477 caracteres; sin minutajes) con Museo de Israel, COJS, análisis arqueométrico JAS 2004, topografía Betesda (New Testament Studies 2025) y arqueología de Siloé. Se distingue objeto material, autenticidad de inscripción, identificación personal, relato evangélico y hechos arqueológicos; no se acreditan milagros ni voces/minutos. 17-11-2026: contrastes sobre Masada ~73/74 y Bar Kojba 132–135/136, cambio de nombre administrativo a Syria Palaestina tras esta última (Oxford), relato de Josefo vs evidencia de asedio (Cambridge/Princeton); el calcáneo de Yehohanan en 1968 (Museo de Israel) no identifica procedimientos universales ni prueba la muerte de Jesús; barca de Ginosar de 1986 (Yigal Allon Centre) no fue demostrablemente propiedad de Jesús. Se distinguen frases literales, fuente externa y cronologías. Sin audio, minutos ni voces cotejados."
   },
   "nodes": [
     {
@@ -62,6 +61,26 @@ window.IDEA_TELARANA_F42_REVIEW =
           "timeSec": null,
           "status": "contraste_documental",
           "text": "Un manual de Cambridge examina fuentes cristianas y no cristianas, sus límites y la crítica textual de pasajes de Josefo; la existencia de una fuente no confirma todos los detalles de la narración."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · frase del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptCharOffset": 65702,
+          "transcriptSearch": "se les partían las piernas",
+          "text": "El episodio asocia el procedimiento de crucifixión a un desenlace fisiológico concreto. Los mecanismos de muerte por crucifixión son materia de discusión médica y el hallazgo de Yehohanan no diagnostica la muerte individual de Jesús. La voz y el minuto exactos están pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1420788/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Una revisión médica identifica hipótesis alternativas sobre el mecanismo de muerte por crucifixión y límites para inferir la causa exacta en una persona del siglo I."
         }
       ]
     },
@@ -545,6 +564,228 @@ window.IDEA_TELARANA_F42_REVIEW =
           "text": "El inventario arqueológico de Jerusalén resume el hallazgo de 2004 y las excavaciones de Reich y Shukron."
         }
       ]
+    },
+    {
+      "id": "f42-masada",
+      "name": "Fortaleza de Masada",
+      "kind": "Lugar",
+      "subtitle": "Último episodio de la primera revuelta judía, 73–74 d. C.",
+      "note": "Asedio romano fechado en torno a 73–74 d. C. El relato de suicidio colectivo procede de Flavio Josefo; las excavaciones prueban el asedio, pero no la totalidad de ese desenlace ni una matanza total a manos de los romanos.",
+      "source": "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/roman-siege-system-of-masada-a-3d-computerized-analysis-of-a-conflict-landscape/32C59BE59ACD3E9A91C95F947DFD271E",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · frase del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptCharOffset": 90885,
+          "transcriptSearch": "llegan a Masada",
+          "text": "La transcripción sitúa Masada tras la destrucción de Jerusalén y afirma que los romanos mataron a los últimos refugiados. Separa cronología de la interpretación del desenlace. La voz y el minuto exactos están pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/roman-siege-system-of-masada-a-3d-computerized-analysis-of-a-conflict-landscape/32C59BE59ACD3E9A91C95F947DFD271E",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Estudio de 2024 de la arquitectura militar romana confirma vestigios del asedio de Masada, en 73/74 d. C."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://press.princeton.edu/ideas/masada-a-heroic-last-stand-against-rome",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Jodi Magness recuerda que el suicidio masivo es el relato de Josefo y que la arqueología no puede probarlo ni refutarlo plenamente; tampoco puede afirmarse un exterminio romano total verificado."
+        }
+      ]
+    },
+    {
+      "id": "f42-revuelta-bar-kojba",
+      "name": "Revuelta de Bar Kojba (132–135/136)",
+      "kind": "Tema",
+      "subtitle": "Segunda gran guerra judeorromana bajo Adriano",
+      "note": "Conflicto que tuvo lugar unas seis décadas después de la caída de Masada; su represión precedió al uso administrativo de Syria Palaestina. No es el episodio de 70 ni el de 73/74.",
+      "source": "https://academic.oup.com/edited-volume/59904/chapter-abstract/512434685",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://academic.oup.com/edited-volume/59904/chapter-abstract/512434685",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "El estudio de Oxford sobre Adriano fecha la guerra de Bar Kojba en 132–135/136 d. C."
+        }
+      ]
+    },
+    {
+      "id": "f42-syria-palaestina",
+      "name": "Provincia romana de Syria Palaestina",
+      "kind": "Lugar",
+      "subtitle": "Nombre administrativo posterior a la revuelta de Bar Kojba",
+      "note": "La provincia antes denominada Iudaea pasó a denominarse Syria Palaestina en época de Adriano, generalmente situada tras la revuelta de 132–135/136. No se renombró inmediatamente por la caída de Masada; el nombre geográfico Palestina ya existía con anterioridad.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548064842",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · frase del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptCharOffset": 91073,
+          "transcriptSearch": "va a pasar a llamarse Palestina por los romanos",
+          "text": "El texto relaciona el cambio de nombre con la caída de Masada, décadas antes del cambio provincial bajo Adriano. La frase debe marcarse como anacronismo de secuencia histórica; el topónimo no apareció de cero en ese momento. La voz y el minuto exactos están pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548064842",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "Oxford Research Encyclopedias identifica el cambio de Iudaea a Syria Palaestina tras las revueltas; no en la caída de Masada."
+        }
+      ]
+    },
+    {
+      "id": "f42-yehohanan",
+      "name": "Yehohanan, hombre crucificado en Judea",
+      "kind": "Persona",
+      "subtitle": "Persona del siglo I conocida por un enterramiento excavado",
+      "note": "Sus restos, recuperados en Jerusalén en 1968, incluyen un hueso calcáneo atravesado por un clavo. Constituyen evidencia material de al menos una crucifixión romana; no fijan una técnica universal ni prueban detalles de la crucifixión de Jesús.",
+      "source": "https://artsandculture.google.com/asset/8gEPRIAlblWlqw",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · frase del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptCharOffset": 64007,
+          "transcriptSearch": "restos de un tal Yjo Hanan",
+          "text": "El subtítulo representa fonéticamente el nombre como «Yjo Hanan»; la identificación arqueológica habitual es Yehohanan. El hallazgo corresponde a otro hombre, no a Jesús. La voz y el minuto exactos están pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://artsandculture.google.com/asset/8gEPRIAlblWlqw",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "El Museo de Israel expone el osario y el calcáneo con clavo atribuidos a Yehohanan, evidencias físicas de una ejecución por crucifixión."
+        }
+      ]
+    },
+    {
+      "id": "f42-calcaneo-yehohanan",
+      "name": "Calcáneo con clavo de Yehohanan",
+      "kind": "Objeto",
+      "subtitle": "Restos de crucifixión excavados en Giv'at ha-Mivtar, 1968",
+      "note": "Hueso del talón derecho con clavo de hierro procedente de osario excavado en Jerusalén; evidencia de una forma histórica de crucifixión, no de todas las variantes ni de un diagnóstico exacto sobre Jesús.",
+      "source": "https://cojs.org/ossuary_of_yehohanan_son_of_hagkol-_1st_century_ce/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · frase del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptCharOffset": 64188,
+          "transcriptSearch": "en su talón apareció el clavo",
+          "text": "El pasaje describe el clavo conservado en el calcáneo de una persona crucificada. No demuestra la posición de todos los crucificados ni sus causas individuales de muerte. La voz y el minuto exactos están pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://cojs.org/ossuary_of_yehohanan_son_of_hagkol-_1st_century_ce/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "El contexto del osario de Yehohanan documenta un clavo en el talón derecho; un solo individuo no permite generalizar cada procedimiento romano."
+        }
+      ]
+    },
+    {
+      "id": "f42-barca-ginosar",
+      "name": "Barca antigua de Ginosar (Mar de Galilea)",
+      "kind": "Objeto",
+      "subtitle": "Embarcación de los siglos I a. C.–I d. C., hallada en 1986",
+      "note": "Embarcación de madera descubierta por los hermanos Yuval y Moshe Lufan en 1986 al bajar el nivel del lago. La datación por carbono 14 y análisis de contexto sitúa su uso entre aproximadamente 100 a. C. y 100 d. C. El sobrenombre «barca de Jesús» no acredita que le perteneciera.",
+      "source": "https://yigal-allon-centre.org.il/en/the-museum/the-ancient-boat/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · frase del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptCharOffset": 60984,
+          "transcriptSearch": "barco de Jesús",
+          "text": "La entrevista se refiere a una embarcación antigua hallada en el lago. El sobrenombre popular no identifica a Jesús ni a sus discípulos como sus ocupantes. La voz y el minuto exactos están pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://yigal-allon-centre.org.il/en/the-museum/the-ancient-boat/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "El Yigal Allon Centre identifica hallazgo, excavación, conservación y datación aproximada; exposición de la pieza en Ginosar."
+        }
+      ]
+    },
+    {
+      "id": "f42-hermanos-lufan",
+      "name": "Yuval y Moshe Lufan",
+      "kind": "Grupo",
+      "subtitle": "Descubridores de la embarcación de Ginosar en 1986",
+      "note": "Dos hermanos del kibutz Ginosar que descubrieron la barca antigua durante la bajada del nivel del lago. Son descubridores modernos, no personajes vinculados personalmente a Jesús.",
+      "source": "https://yigal-allon-centre.org.il/en/the-museum/the-ancient-boat/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · frase del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "identificacion_transcripcion_no_audio",
+          "transcriptCharOffset": 60253,
+          "transcriptSearch": "dos hermanos los hermanos Lufá",
+          "text": "Los subtítulos deforman los nombres de los descubridores; el museo identifica a Yuval y Moshe Lufan (también transcrito Lopen). La voz y el minuto exactos están pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f42-jesus-arqueologia",
+          "title": "F42 · contraste documental independiente",
+          "source": "https://yigal-allon-centre.org.il/en/the-museum/the-ancient-boat/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_bibliografico_externo_no_cita_audio",
+          "text": "La institución que conserva la barca acredita los nombres y las circunstancias del descubrimiento de 1986."
+        }
+      ]
     }
   ],
   "edges": [
@@ -887,6 +1128,105 @@ window.IDEA_TELARANA_F42_REVIEW =
       "confidence": "indicio",
       "note": "Relación atribuida según el tipo de fuente; evidencia contextual arqueológica no es prueba material de todos los episodios evangélicos. La inscripción del osario de Santiago continúa controvertida.",
       "source": "https://www.inscriptionsisraelpalestine.org/story/a-controversial-inscription-in-the-news/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-masada",
+      "a": "f42-episodio",
+      "b": "f42-masada",
+      "type": "Afirmación histórica de la conversación",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "El texto sitúa Masada en una secuencia histórica que necesita rectificación documental.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-josefo-masada",
+      "a": "f42-josefo",
+      "b": "f42-masada",
+      "type": "Autor del relato antiguo sobre el asedio",
+      "source": "https://press.princeton.edu/ideas/masada-a-heroic-last-stand-against-rome",
+      "claimStatus": "testimonio_antiguo_debatido",
+      "confidence": "indicio",
+      "note": "Josefo describe un suicidio colectivo; su narración es la principal fuente literaria y no equivale a corroboración arqueológica integral.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-masada-barkojba",
+      "a": "f42-masada",
+      "b": "f42-revuelta-bar-kojba",
+      "type": "Conflictos separados cronológicamente",
+      "source": "https://academic.oup.com/edited-volume/59904/chapter-abstract/512434685",
+      "claimStatus": "secuencia_cronologica_no_causal",
+      "confidence": "documentado",
+      "note": "La caída de Masada (~73/74) precede por décadas a la guerra de Bar Kojba (~132–135/136). No son el mismo conflicto.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-barkojba-syria",
+      "a": "f42-revuelta-bar-kojba",
+      "b": "f42-syria-palaestina",
+      "type": "Cambio administrativo posterior",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548064842",
+      "claimStatus": "secuencia_administrativa_documentada",
+      "confidence": "documentado",
+      "note": "El cambio de nombre provincial se sitúa tras la guerra bajo Adriano, no inmediatamente tras Masada.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-yehohanan",
+      "a": "f42-episodio",
+      "b": "f42-yehohanan",
+      "type": "Hallazgo de crucificado mencionado",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "El texto pronuncia aproximadamente «Yjo Hanan»; el museo identifica al hombre documentado como Yehohanan.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-yehohanan-calcaneo",
+      "a": "f42-yehohanan",
+      "b": "f42-calcaneo-yehohanan",
+      "type": "Resto humano documentado",
+      "source": "https://artsandculture.google.com/asset/8gEPRIAlblWlqw",
+      "claimStatus": "evidencia_material_arqueologica",
+      "confidence": "documentado",
+      "note": "El osario excavado incluía el calcáneo perforado por un clavo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-episodio-barca",
+      "a": "f42-episodio",
+      "b": "f42-barca-ginosar",
+      "type": "Hallazgo de 1986 citado en entrevista",
+      "source": "https://www.youtube.com/watch?v=ANZlHZ3SjKk",
+      "claimStatus": "mencion_transcripcion_sin_audio",
+      "confidence": "indicio",
+      "note": "El episodio habla de una barca antigua de la zona; no demuestra vínculos personales con Jesús.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-lufan-barca",
+      "a": "f42-hermanos-lufan",
+      "b": "f42-barca-ginosar",
+      "type": "Descubrimiento arqueológico de 1986",
+      "source": "https://yigal-allon-centre.org.il/en/the-museum/the-ancient-boat/",
+      "claimStatus": "hecho_documentado",
+      "confidence": "documentado",
+      "note": "El museo conserva los nombres de Yuval y Moshe y el relato del hallazgo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f42-jesus-yehohanan-contexto",
+      "a": "f42-jesus",
+      "b": "f42-yehohanan",
+      "type": "Contemporaneidad aproximada sin vínculo personal",
+      "source": "https://artsandculture.google.com/asset/8gEPRIAlblWlqw",
+      "claimStatus": "contexto_historico_no_relacion_personal",
+      "confidence": "indicio",
+      "note": "Ambos son situados en Judea del siglo I por evidencias de naturaleza diferente; no existe relación personal acreditada ni coincidencia exacta de fechas.",
       "podcastNotes": []
     }
   ]
