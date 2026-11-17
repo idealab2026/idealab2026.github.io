@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "created_at": "2026-11-17",
+  "status": "APROBADO_PARA_PUBLICACION_TRAS_CONTRASTE_NOVELA",
+  "source_zip_name": "BBTK_MONT_LOTE6_5_CORRECCIONES_REVISADAS.zip",
+  "approved_issues": [
+    45,
+    47,
+    48,
+    49,
+    68
+  ],
+  "blocked_issues": [],
+  "approval_scope": "Únicamente los cinco PNG corregidos, contrastados visualmente con los capítulos correspondientes de Alexandre Dumas. No se ha cotejado el audio íntegro de los vídeos. Las ilustraciones son esquemas simbólicos, no fotografías de hechos reales.",
+  "items": [
+    {
+      "issue": 45,
+      "chapter": 66,
+      "video_id": "RrTdEQ6JNtk",
+      "source_original_sha256": "10a3b956e293a7051c94e304db5756fb526d16269845f12d2e4b794f51e70cf0",
+      "source_export_sha256": "d62e4aec40d1a00bda054a664415bbbca2d5be327c0201ef002b5d7be01111da",
+      "corrected_sha256": "295b9d40d225f374cc0f263d8f86f6561171d3b694544ea814dd5bf81e698514",
+      "note": "Fortuna de segundo orden: unos 50 millones; compromiso Morcerf aún no roto formalmente; rótulo legible de Janina.",
+      "book": "conde-montecristo",
+      "file": "issue-45-corregida.png",
+      "approved_for_publication": true,
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_66"
+    },
+    {
+      "issue": 47,
+      "chapter": 68,
+      "video_id": "XZId_LpNUeQ",
+      "source_original_sha256": "21be05533a0543eb9334bac06d3cc3ed6e49cd37c4c7c20b96033a253ce594c6",
+      "source_export_sha256": "f170724933b614f0c4e7b4186bdd082de5384edbe0baf79ac00126442fbf9461",
+      "corrected_sha256": "25803f22e5605f213715bf4f37af69f44ee4ee6e83492f5d68672be3a202c9f5",
+      "note": "Franz mantiene su compromiso con Valentine; informe de visita al Palacio, baile anunciado y búsqueda de finca aún no adquirida.",
+      "book": "conde-montecristo",
+      "file": "issue-47-corregida.png",
+      "approved_for_publication": true,
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_68"
+    },
+    {
+      "issue": 48,
+      "chapter": 69,
+      "video_id": "KIdDQOOeKyE",
+      "source_original_sha256": "aa3f6e6283726687807a2a72a09ac7d29b54932346abff71540c90ac1780247e",
+      "source_export_sha256": "c1cb2e6b339259b73cf55e4b54ca3e958a503d862cc0589080d496392a7689f2",
+      "corrected_sha256": "d86dbc8db8c00b31406c5d88c9a543fa4ffa9c56adbb286a5345045b50238041",
+      "note": "Busoni es interrogado por un enviado policial, no por Villefort personalmente; declaraciones atribuidas como testimonios; documento legible.",
+      "book": "conde-montecristo",
+      "file": "issue-48-corregida.png",
+      "approved_for_publication": true,
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_69"
+    },
+    {
+      "issue": 49,
+      "chapter": 70,
+      "video_id": "RygLw4NCQi0",
+      "source_original_sha256": "59debf3aa763f37196b2c31c0dfa7427de6f3dd5a60a76b006da1e5f693fc59e",
+      "source_export_sha256": "875c3e3d11d5381ac256693014c075784e2ca30abb711dec814ad2bbdd5337fd",
+      "corrected_sha256": "a554b07d821bde071dc8dc6e290cbde23471dacd0e388539ce401bb4f34e26ca",
+      "note": "Morrel y Valentine se saludan con nomeolvides; nombres correctos Franck y Poulmann; letras por 200.000 francos.",
+      "book": "conde-montecristo",
+      "file": "issue-49-corregida.png",
+      "approved_for_publication": true,
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_70"
+    },
+    {
+      "issue": 68,
+      "chapter": 26,
+      "video_id": "EeJqT5KlvPA",
+      "source_original_sha256": "f224c1c7adc5098d0f2023d23d0f6901af27af17574ac5010644066195b5c039",
+      "source_export_sha256": "4e93d77b16673be9445b06094416c29f7dfd38bbbeb9b57a9065ab744c034c0e",
+      "corrected_sha256": "82416c3db73a562195f716f2634dd0bb57e5322f48fb58bd36da7e25c746203e",
+      "note": "Antiguo sastre, no Antigno; Caderousse alude a la deslealtad de Fernand y Danglars sin adelantar hechos ajenos al capítulo.",
+      "book": "conde-montecristo",
+      "file": "issue-68-corregida.png",
+      "approved_for_publication": true,
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_26"
+    }
+  ]
+}
