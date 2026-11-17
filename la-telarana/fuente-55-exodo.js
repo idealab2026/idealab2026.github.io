@@ -543,7 +543,7 @@ window.IDEA_TELARANA_F55_REVIEW = {
       "name": "Leyenda del nacimiento de Sargón (tablilla K.3401)",
       "kind": "Objeto",
       "subtitle": "Nínive, copia neoasiria del siglo VII a. C.",
-      "note": "La tablilla cuneiforme K.3401, hallada en Nínive, conserva la leyenda del nacimiento y exposición en el río de Sargón de Acad. El rey histórico vivió en el III milenio a. C., pero la copia conservada es mucho más tardía. El paralelismo con el relato de Moisés no demuestra por sí mismo que uno copiase literalmente al otro.",
+      "note": "La tablilla cuneiforme K.3401, hallada en Nínive, conserva la leyenda del nacimiento y exposición en el río de Sargón de Acad. El rey histórico vivió en el III milenio a. C., pero la copia conservada es del siglo VII a. C., mucho más tardía. El paralelismo con el relato de Moisés no demuestra por sí mismo que uno copiase literalmente al otro.",
       "source": "https://www.worldhistory.org/image/3128/inscription-of-the-birth-of-king-sargon-of-akkad/",
       "topic3d": "historia",
       "photo": "",
