@@ -73,6 +73,8 @@ jobs:
         run: node scripts/test_telarana_public_privacy.mjs
       - name: Validar integración documental entre La Telaraña y Línea de la Historia
         run: node scripts/test_telarana_timeline.mjs
+      - name: Validar F45: Snefru, seked, Imhotep y cautelas documentales
+        run: node scripts/test_telarana_source45.mjs
       - name: Validar F39 y F50 sin minutajes ficticios
         run: node scripts/test_telarana_39_50_review.mjs
       - name: Validar ranking de centralidad y calidad documental
