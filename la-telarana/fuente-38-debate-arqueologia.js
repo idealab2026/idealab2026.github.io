@@ -1,15 +1,15 @@
-/* F38 quinta revisión, Tiwanaku/Saqsaywaman/Tassili: voces y minutos no cotejados. */
+/* F38: sexto contraste documental Göbekli Tepe y nuevas evidencias de 2026; audio no verificado. */
 window.IDEA_TELARANA_F38_REVIEW = {
   "metadata": {
     "id": "idealab-f38-debate-arqueologia",
     "sourceOrder": 38,
     "title": "F38 · Debate de arqueología, pirámides y Atlántida",
     "url": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-    "reviewStage": "quinta_revision_pumapunku_saqsaywaman_tassili_sin_audio",
+    "reviewStage": "sexta_revision_gobekli_datacion_habitacion_enterramientos_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización. 17-11-2026: revisión de fragmentos literales sobre la supuesta visibilidad exclusivamente aérea de Nazca y cráneos alargados; PNAS 2024 distingue 303 hallazgos confirmados en campo mediante IA de candidatos informáticos, y la investigación Paracas de Gómez-Mejía et al. (2022) documenta 159 cráneos humanos y modificación intencional en 98 %. Fuentes externas no atribuidas a los invitados. Sin voces ni minutos cotejados. 17-11-2026: auditoría de offsets contra TXT original, 16 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz. 17-11-2026: contraste del pasaje Pumapunku/Sascoamán: el primero es Tiwanaku preincaico, el segundo es Saqsaywaman, gran conjunto inca sobre una zona con antecedentes, y no deben homogeneizarse. Estudio de reconstrucción Vranich et al., Heritage Science 2018; estudio cronológico PLOS ONE 2023; Saqsaywaman Ministerio Cultura Perú y Heritage Science 2026. Tassili: lecturas de escafandra no verificadas; UNESCO documenta notoriedad del conjunto desde 1933 y Met advierte cronologías estilísticas regionales inciertas. Audio y voces sin cotejo."
+    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización. 17-11-2026: revisión de fragmentos literales sobre la supuesta visibilidad exclusivamente aérea de Nazca y cráneos alargados; PNAS 2024 distingue 303 hallazgos confirmados en campo mediante IA de candidatos informáticos, y la investigación Paracas de Gómez-Mejía et al. (2022) documenta 159 cráneos humanos y modificación intencional en 98 %. Fuentes externas no atribuidas a los invitados. Sin voces ni minutos cotejados. 17-11-2026: auditoría de offsets contra TXT original, 16 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz. 17-11-2026: contraste del pasaje Pumapunku/Sascoamán: el primero es Tiwanaku preincaico, el segundo es Saqsaywaman, gran conjunto inca sobre una zona con antecedentes, y no deben homogeneizarse. Estudio de reconstrucción Vranich et al., Heritage Science 2018; estudio cronológico PLOS ONE 2023; Saqsaywaman Ministerio Cultura Perú y Heritage Science 2026. Tassili: lecturas de escafandra no verificadas; UNESCO documenta notoriedad del conjunto desde 1933 y Met advierte cronologías estilísticas regionales inciertas. Audio y voces sin cotejo. 17-11-2026: contraste de pasajes textuales «Gobegli Tepe» y «cazadores recolectores» con UNESCO (9600–8200 a. C.), DAI (radiocarbono/estratigrafía, evidencias de uso doméstico y asentamiento) y publicación PLOS ONE Gresky/Clare septiembre 2026 (dos enterramientos intactos PPNB). El estudio de 2026 es contraste externo posterior, no afirmación del podcast. No hay verificación de voces ni minutajes."
   },
   "nodes": [
     {
@@ -276,7 +276,7 @@ window.IDEA_TELARANA_F38_REVIEW = {
       "name": "Göbekli Tepe",
       "kind": "Lugar",
       "subtitle": "Yacimiento neolítico del sureste de Turquía",
-      "note": "Conjunto de estructuras precerámicas estudiadas arqueológicamente.",
+      "note": "Conjunto de estructuras precerámicas estudiadas arqueológicamente. La datación de las fases monumentales (ca. 9600–8200 a. C.) está sustentada por evidencias arqueológicas; estudios recientes del DAI documentan actividades domésticas y PLOS ONE 2026 describe enterramientos intactos, sin reducir el yacimiento a templo exclusivamente.",
       "source": "https://whc.unesco.org/en/list/1572",
       "topic3d": "historia",
       "photo": "",
@@ -290,6 +290,15 @@ window.IDEA_TELARANA_F38_REVIEW = {
           "text": "Una intervención propone Göbekli Tepe como ejemplo de revisión de cronologías y otra cuestiona que fuera rechazado por dogma científico; ambas interpretaciones permanecen atribuidas al debate. Localización orientativa en el texto privado: carácter 77426, buscar «Gobegli». La identidad de la voz requiere cotejo de audio.",
           "transcriptCharOffset": 77426,
           "transcriptSearch": "Gobegli"
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo, no cita del podcast",
+          "source": "https://www.dainst.org/forschung/projekte/noslug/5746",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El DAI ha reconsiderado la oposición rígida entre santuario y asentamiento: existen indicios de habitación y actividad doméstica."
         }
       ]
     },
@@ -1027,6 +1036,130 @@ window.IDEA_TELARANA_F38_REVIEW = {
           "text": "UNESCO indica que el arte del parque empezó a adquirir notoriedad internacional en 1933; no fue descubierto por primera vez en los años cincuenta."
         }
       ]
+    },
+    {
+      "id": "f38-gobekli-unesco",
+      "name": "Göbekli Tepe: datación UNESCO",
+      "kind": "Documento",
+      "subtitle": "Patrimonio Mundial · Neolítico precerámico",
+      "note": "La descripción oficial UNESCO sitúa las estructuras monumentales de Göbekli Tepe en el Neolítico precerámico, aproximadamente entre 9600 y 8200 a. C. La clasificación y datación proceden de arqueología estratigráfica y radiocarbono, no de una cronología de una civilización perdida.",
+      "source": "https://whc.unesco.org/en/list/1572/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo, no cita del podcast",
+          "source": "https://whc.unesco.org/en/list/1572/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "UNESCO documenta pilares en T con motivos animales, arquitectura monumental en el horizonte Neolítico precerámico 9600–8200 a. C., y destaca comunidades de cazadores-recolectores en transición hacia la agricultura."
+        }
+      ]
+    },
+    {
+      "id": "f38-gobekli-datacion-estratos",
+      "name": "Göbekli Tepe: estratos y radiocarbono",
+      "kind": "Tema",
+      "subtitle": "Datación estratigráfica, muestras y márgenes",
+      "note": "El Instituto Arqueológico Alemán distingue estratos monumentales antiguos y fases de ocupación posteriores. Las dataciones 14C y de carbonatos dependen del tipo de muestra y su contexto; no existe evidencia de una oposición científica general a que la datación era «demasiado antigua».",
+      "source": "https://www.dainst.org/blogs/how-old-is-it-dating-goebekli-tepe/625",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · afirmación multivoz del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptCharOffset": 77426,
+          "transcriptSearch": "Gobegli Tepe gobegli",
+          "text": "La transcripción dice que la ciencia fue dogmática al aceptar la antigüedad del lugar, afirmación histórica amplia sin estudio documental específico sobre ese presunto rechazo. Identidad de voz y minuto pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo, no cita del podcast",
+          "source": "https://www.dainst.org/blogs/how-old-is-it-dating-goebekli-tepe/625",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El DAI explica cómo estratigrafía, radiocarbono y muestreo de carbonatos permiten establecer cronologías de Göbekli Tepe; sus limitaciones no convierten una revisión científica en dogma."
+        }
+      ]
+    },
+    {
+      "id": "f38-gobekli-habitacion",
+      "name": "Göbekli Tepe: actividad doméstica",
+      "kind": "Tema",
+      "subtitle": "Reevaluación de centro ritual exclusivo",
+      "note": "Durante décadas se interpretó como santuario de reunión sin viviendas identificadas. El DAI informa ahora de pruebas de actividades domésticas e indicios de asentamiento permanente, compatibles con una función ritual destacada; la distinción templo versus poblado ya no es excluyente.",
+      "source": "https://www.dainst.org/forschung/projekte/noslug/5746",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · afirmación multivoz del TXT sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptCharOffset": 77801,
+          "transcriptSearch": "cazadores recolectores",
+          "text": "En la entrevista se debate qué implicaba construir monumentos para comunidades cazadoras-recolectoras y si eso transformaba los relatos sobre sedentarización. Identidad de voz y minuto pendientes de cotejar."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo, no cita del podcast",
+          "source": "https://www.dainst.org/forschung/projekte/noslug/5746",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "La investigación reciente del DAI documenta espacios y actividades domésticas y propone interpretar Göbekli Tepe como asentamiento con componente ritual importante."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo, no cita del podcast",
+          "source": "https://doi.org/10.1371/journal.pone.0215214",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El análisis de piedras de molienda en PLOS ONE (2019) documenta procesamiento cerealista a gran escala, compatible con prácticas de alimentación y reunión."
+        }
+      ]
+    },
+    {
+      "id": "f38-gobekli-enterramientos-2026",
+      "name": "Göbekli Tepe: enterramientos intactos (2026)",
+      "kind": "Documento",
+      "subtitle": "PLOS ONE · estudio de Julia Gresky y Lee Clare",
+      "note": "Estudio publicado en septiembre de 2026 sobre dos enterramientos primarios intactos del Neolítico precerámico B (aprox. 8700–8000 a. C.). Ambos eran conocidos desde hallazgos de 2012 y 2017, pero su análisis publicado en 2026 añade evidencia de prácticas funerarias; no demuestra un modelo único ni que todo el yacimiento fuera funerario.",
+      "source": "https://doi.org/10.1371/journal.pone.0358979",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo, no cita del podcast",
+          "source": "https://doi.org/10.1371/journal.pone.0358979",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El artículo de Gresky y Clare (2026) describe dos enterramientos en contextos PPNB y advierte que los restos dispersos y las diversas prácticas mortuorias siguen sin explicación completa."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · contraste externo, no cita del podcast",
+          "source": "https://www.dainst.org/newsroom/neue-veroeffentlichung-menschliche-ueberreste-und-bestattungsbraeuche-in-goebeklitepe/924",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El DAI anunció el 21/09/2026 el nuevo estudio y destacó que los enterramientos ayudan a evaluar la combinación de funciones domésticas, rituales y mortuorias. Hallazgo posterior al debate: no se atribuye al episodio."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1633,6 +1766,72 @@ window.IDEA_TELARANA_F38_REVIEW = {
       "claimStatus": "limitacion_metodologica_documentada",
       "confidence": "documentado",
       "note": "No trasladar una fecha precisa a todas las figuras de estilo similar.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-gobekli-unesco-link",
+      "a": "f39-gobekli",
+      "b": "f38-gobekli-unesco",
+      "type": "Datación arqueológica publicada",
+      "source": "https://whc.unesco.org/en/list/1572/",
+      "claimStatus": "datacion_arqueologica_documentada",
+      "confidence": "documentado",
+      "note": "Horizonte 9600–8200 a. C. No implica cultura avanzada perdida ni unanimidad sobre función ritual.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-gobekli-radiocarbono",
+      "a": "f39-gobekli",
+      "b": "f38-gobekli-datacion-estratos",
+      "type": "Datación por estratigrafía y radiocarbono",
+      "source": "https://www.dainst.org/blogs/how-old-is-it-dating-goebekli-tepe/625",
+      "claimStatus": "metodo_documentado_no_dogma_cientifico",
+      "confidence": "documentado",
+      "note": "La datación es revisable por método y contexto; afirmación de bloqueo dogmático requiere evidencia histórica propia.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-episodio-gobekli",
+      "a": "f38-episodio",
+      "b": "f39-gobekli",
+      "type": "Debate sobre su antigüedad y función social",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "claimStatus": "mencion_debate_multivoz_sin_audio",
+      "confidence": "indicio",
+      "note": "Audio no cotejado: no adjudicar posiciones individuales.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-gobekli-asentamiento",
+      "a": "f39-gobekli",
+      "b": "f38-gobekli-habitacion",
+      "type": "Evidencia de habitación y actividad doméstica",
+      "source": "https://www.dainst.org/forschung/projekte/noslug/5746",
+      "claimStatus": "reevaluacion_arqueologica_documentada",
+      "confidence": "documentado",
+      "note": "El DAI formula un asentamiento con dimensión ritual, no solo santuario deshabitado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-gobekli-hallazgo2026",
+      "a": "f39-gobekli",
+      "b": "f38-gobekli-enterramientos-2026",
+      "type": "Hallazgos funerarios documentados",
+      "source": "https://doi.org/10.1371/journal.pone.0358979",
+      "claimStatus": "estudio_externo_posterior_no_declaracion_del_video",
+      "confidence": "documentado",
+      "note": "PLOS ONE 2026 sobre enterramientos de PPNB; no convertir evidencia específica en función universal de todo el yacimiento.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-gobekli-hab-enterramientos",
+      "a": "f38-gobekli-habitacion",
+      "b": "f38-gobekli-enterramientos-2026",
+      "type": "Funciones de ocupación y prácticas funerarias coexistentes",
+      "source": "https://doi.org/10.1371/journal.pone.0358979",
+      "claimStatus": "contexto_arqueologico_no_identidad_funcional",
+      "confidence": "indicio",
+      "note": "Hallazgos de habitación y enterramiento no permiten asignar uso único a todas las fases.",
       "podcastNotes": []
     }
   ]
