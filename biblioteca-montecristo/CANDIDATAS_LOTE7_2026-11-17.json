@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "created_at": "2026-11-17",
+  "scope": "LOTE7_AUDITORIA_PRIVADA",
+  "originals_expected": 8,
+  "source": "Triaje editorial de 69 PNG y solicitudes GitHub; SHA originales de estos ocho no archivados en el repositorio.",
+  "sha_policy": "El exportador calculará SHA en el Mac y acreditará identidad vía estado local del puente o MANIFIESTO_QA.json del ZIP histórico. SHA no equivale a aprobación.",
+  "editorial_approved": false,
+  "publication_authorized": false,
+  "originals": [
+    {
+      "issue": 27,
+      "book": "conde-montecristo",
+      "chapter": 51,
+      "video_id": "oVMG6QzBK64",
+      "filename": "issue-27.png",
+      "triage": "PENDIENTE DE CONTRASTE",
+      "focus": "Cotejar la continuidad del relato, escenas y atribuciones.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_51",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    },
+    {
+      "issue": 32,
+      "book": "conde-montecristo",
+      "chapter": 53,
+      "video_id": "FkAIE4ypFaI",
+      "filename": "issue-32.png",
+      "triage": "AJUSTE OPCIONAL",
+      "focus": "Revisar encabezados repetidos, nombres y secuencia narrativa.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_53",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    },
+    {
+      "issue": 33,
+      "book": "conde-montecristo",
+      "chapter": 54,
+      "video_id": "WNTSHJFOPfA",
+      "filename": "issue-33.png",
+      "triage": "PENDIENTE DE CONTRASTE",
+      "focus": "Comprobar citas, nombres propios y secuencia del capítulo.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_54",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    },
+    {
+      "issue": 35,
+      "book": "conde-montecristo",
+      "chapter": 56,
+      "video_id": "upSoJolzqUk",
+      "filename": "issue-35.png",
+      "triage": "PENDIENTE DE CONTRASTE",
+      "focus": "Cotejar protagonistas, cronología y pies de cada escena.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_56",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    },
+    {
+      "issue": 36,
+      "book": "conde-montecristo",
+      "chapter": 57,
+      "video_id": "3YFtBdqwa1A",
+      "filename": "issue-36.png",
+      "triage": "PENDIENTE DE CONTRASTE",
+      "focus": "Verificar coherencia de diálogo, cifras y simbolismos.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_57",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    },
+    {
+      "issue": 37,
+      "book": "conde-montecristo",
+      "chapter": 58,
+      "video_id": "NkQsH2Lb6pE",
+      "filename": "issue-37.png",
+      "triage": "PENDIENTE DE CONTRASTE",
+      "focus": "Comprobar personajes, narrador y acontecimientos representados.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_58",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    },
+    {
+      "issue": 39,
+      "book": "conde-montecristo",
+      "chapter": 60,
+      "video_id": "hGf4PtrijvE",
+      "filename": "issue-39.png",
+      "triage": "PENDIENTE DE CONTRASTE",
+      "focus": "Contrastar los acontecimientos y la atribución de afirmaciones.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_60",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    },
+    {
+      "issue": 51,
+      "book": "conde-montecristo",
+      "chapter": 72,
+      "video_id": "BSoTWtrNVPc",
+      "filename": "issue-51.png",
+      "triage": "PENDIENTE DE CONTRASTE",
+      "focus": "Verificar continuidad temporal y nombres propios.",
+      "source_url": "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_72",
+      "expected_original_sha256": null,
+      "editorial_approved": false
+    }
+  ]
+}
