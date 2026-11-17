@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};vm.runInNewContext(read('la-telarana/fuente-42-jesus-arqueologia.js'),ctx);vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
-const f=ctx.window.IDEA_TELARANA_F42_REVIEW,ids=new Set(f.nodes.map(n=>n.id));assert.equal(ids.size,29);assert.equal(f.edges.length,39);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+const f=ctx.window.IDEA_TELARANA_F42_REVIEW,ids=new Set(f.nodes.map(n=>n.id));assert.equal(ids.size,34);assert.equal(f.edges.length,46);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
 assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);let notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));assert.equal(notes.filter(n=>n.status==='relato_de_la_entrevista_sin_audio').length,8);
 for(const id of ['f42-jesus','f42-pilato','f42-pablo','f42-tacito','f42-josefo','f42-caifas','f42-santiago-justo'])assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>150);
 assert(f.nodes.find(n=>n.id==='f42-piedra-pilato').note.includes('fragmentaria'));assert(f.edges.find(e=>e.id==='f42-pilato-inscripcion').note.includes('no menciona a Jesús'));
@@ -22,8 +22,18 @@ assert(f.nodes.find(n=>n.id==='f42-barca-ginosar').note.includes('no acredita'))
 assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated['f42-yehohanan']?.text.length>180);
 assert(f.nodes.filter(n=>['f42-masada','f42-yehohanan','f42-syria-palaestina','f42-barca-ginosar'].includes(n.id)).flatMap(n=>n.podcastNotes).every(n=>n.timeSec===null&&n.audioVerified===false));
 assert(f.nodes.find(n=>n.id==='f42-yehohanan').podcastNotes.some(n=>n.transcriptSearch==='restos de un tal Yjo Hanan'&&Number.isInteger(n.transcriptCharOffset)));
+// Viviendas del siglo I no identifican a la familia residente; silencio evangélico no demuestra que Jesús evitase Séforis.
+for(const id of ['f42-convento-hermanas-nazaret','f42-casa-siglo1-nazaret','f42-ken-dark','f42-estudio-nazaret-dark-2012','f42-sepphoris'])assert(ids.has(id),'F42 falta '+id);
+assert(f.nodes.find(n=>n.id==='f42-casa-siglo1-nazaret').note.includes('No hay nombre del propietario'));
+assert(f.nodes.find(n=>n.id==='f42-sepphoris').note.includes('no demuestra que nunca'));
+assert(f.edges.find(e=>e.id==='f42-sepphoris-nazaret-cercania').claimStatus==='contexto_geografico_sin_inferencia_biografica');
+assert(!f.edges.some(e=>e.a==='f42-jesus'&&e.b==='f42-casa-siglo1-nazaret'||e.a==='f42-casa-siglo1-nazaret'&&e.b==='f42-jesus'));
+assert(ctx.window.IDEA_TELARANA_BIOGRAPHIES.curated['f42-ken-dark']?.text.length>200);
+const notesF42New=f.nodes.filter(n=>['f42-convento-hermanas-nazaret','f42-casa-siglo1-nazaret','f42-ken-dark','f42-estudio-nazaret-dark-2012','f42-sepphoris'].includes(n.id)).flatMap(n=>n.podcastNotes);
+assert(notesF42New.every(n=>n.timeSec===null&&n.audioVerified===false));
+for(const term of ['esas casas del siglo i primero de Nazaret','por algún motivo debió','ciudades como Betsán como Sépforis'])assert(notesF42New.some(n=>n.transcriptSearch===term&&Number.isInteger(n.transcriptCharOffset)),term);
 const tracker=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===42);
-assert.equal(tracker.analysisCoverage.signals.entities,29);assert.equal(tracker.analysisCoverage.signals.relations,39);
-assert.equal(tracker.analysisCoverage.percent,20);assert.equal(tracker.analysisCoverage.signals.independentChecks,16);assert.equal(tracker.analysisCoverage.signals.biographies,8);
+assert.equal(tracker.analysisCoverage.signals.entities,34);assert.equal(tracker.analysisCoverage.signals.relations,46);
+assert.equal(tracker.analysisCoverage.percent,20);assert.equal(tracker.analysisCoverage.signals.independentChecks,19);assert.equal(tracker.analysisCoverage.signals.biographies,9);
 assert(read('la-telarana/index.html').includes('fuente-42-jesus-arqueologia.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-42-jesus-arqueologia.js'));
 console.log('OK: F42 distingue arqueología contextual, tradiciones y estudios de muestras');
