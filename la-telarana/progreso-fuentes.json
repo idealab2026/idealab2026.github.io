@@ -1672,7 +1672,7 @@
       "sourceNodesDocumented": 36,
       "sourceRelationsDocumented": 54,
       "personsProfiled": 0,
-      "documentaryChecks": 12,
+      "documentaryChecks": 17,
       "timelineVerifiedEventsCommitted": 1,
       "qualityNotes": "F45/F46 es el mismo vídeo. Tres fases editoriales: contrastes sobre muografía, SAR retractado, transporte y Wadi al-Jarf; nueva revisión Snefru-Dahshur (debate arqueológico/astronómico), seked egipcio y tumba de Imhotep. 8 entidades, 10 relaciones añadidas; 0 minutos o voces cotejados. Porcentaje público se mantiene en 20% heurístico.",
       "lastUpdated": "2026-11-17"
@@ -5374,7 +5374,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 44,
-        "status": "segunda_revision_documental_piramides_con_retractacion_2026_sin_audio",
+        "status": "tercera_revision_documental_snefru_seked_imhotep_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5385,7 +5385,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-16",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5404,19 +5404,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "segunda_revision_parcial",
+          "state": "tercera_revision_parcial",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 28,
-            "relations": 44,
+            "entities": 36,
+            "relations": 54,
             "biographies": 5,
             "statements": 15,
-            "independentChecks": 10,
+            "independentChecks": 17,
             "verifiedTimelineEvents": 3
           },
-          "nextAction": "Cotejar voces/audio; ampliar construcción y dataciones por materiales; verificar diferencia entre mediciones de muones y métodos SAR retractados; revisar con metodología independiente cualquier novedad sobre Kefrén."
+          "nextAction": "Cotejar voces y audio; revisar integridad del TXT; ampliar conexiones de Snefru y arquitectura faraónica; conservar separado el debate Belmonte–Magli/Monnier–Puchkov y la retractación SAR, sin afirmar consenso inexistente."
         }
       },
       {
