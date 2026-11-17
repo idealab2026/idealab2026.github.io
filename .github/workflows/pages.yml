@@ -73,6 +73,10 @@ jobs:
         run: node scripts/test_telarana_public_privacy.mjs
       - name: Validar integración documental entre La Telaraña y Línea de la Historia
         run: node scripts/test_telarana_timeline.mjs
+      - name: Validar F38 y atribución multivoz de Nazca y Paracas
+        run: node scripts/test_telarana_source38.mjs
+      - name: Validar F42 y cronología de Masada y arqueología de Galilea
+        run: node scripts/test_telarana_source42.mjs
       - name: Validar F45 y sus nuevos contrastes de historia egipcia
         run: node scripts/test_telarana_source45.mjs
       - name: Validar F39 y F50 sin minutajes ficticios
