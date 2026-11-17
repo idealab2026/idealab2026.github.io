@@ -1,15 +1,15 @@
-/* F38: anclas literales del TXT verificadas; audio y minutajes no cotejados. */
+/* F38 quinta revisión, Tiwanaku/Saqsaywaman/Tassili: voces y minutos no cotejados. */
 window.IDEA_TELARANA_F38_REVIEW = {
   "metadata": {
     "id": "idealab-f38-debate-arqueologia",
     "sourceOrder": 38,
     "title": "F38 · Debate de arqueología, pirámides y Atlántida",
     "url": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-    "reviewStage": "cuarta_revision_nazca_craneos_paracas_sin_audio",
+    "reviewStage": "quinta_revision_pumapunku_saqsaywaman_tassili_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización. 17-11-2026: revisión de fragmentos literales sobre la supuesta visibilidad exclusivamente aérea de Nazca y cráneos alargados; PNAS 2024 distingue 303 hallazgos confirmados en campo mediante IA de candidatos informáticos, y la investigación Paracas de Gómez-Mejía et al. (2022) documenta 159 cráneos humanos y modificación intencional en 98 %. Fuentes externas no atribuidas a los invitados. Sin voces ni minutos cotejados. 17-11-2026: auditoría de offsets contra TXT original, 16 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz."
+    "methodologicalNote": "Debate con cuatro invitados y varias voces; la transcripción automática tiene 201.881 caracteres y no contiene diarización ni minutajes fiables. Las posturas se registran como argumentos debatidos, no se adjudican a una persona cuando no hay cotejo de audio. Los documentos externos acreditan hechos concretos, no toda la discusión. 16-11-2026: contraste posterior de huellas de White Sands (Science 2023 y Science Advances 2026, 23.500–21.700 años), lectura original de Timeo 23e–25d y retractación Remote Sensing 2026 del estudio SAR de Jufu de Biondi/Malanga. Se distingue de la alegación distinta sobre Kefrén (2025), sin validación independiente. Ninguna nota implica verificación de voz o minuto del vídeo. 16-11-2026: nueva auditoría de Monte Verde: Science marzo 2026 (datación cuestionada) y PaleoAmerica agosto 2026 (réplica que sostiene c.14.500 años); Doñana y posible localización de Tartessos en estudios CSIC 2005–2015 y Frontiers 2024, sin evidencia de Atlántida; YDIH separada del Younger Dryas climático y contrastada con Holliday et al. 2023. Ningún nuevo minutaje ni diarización. 17-11-2026: revisión de fragmentos literales sobre la supuesta visibilidad exclusivamente aérea de Nazca y cráneos alargados; PNAS 2024 distingue 303 hallazgos confirmados en campo mediante IA de candidatos informáticos, y la investigación Paracas de Gómez-Mejía et al. (2022) documenta 159 cráneos humanos y modificación intencional en 98 %. Fuentes externas no atribuidas a los invitados. Sin voces ni minutos cotejados. 17-11-2026: auditoría de offsets contra TXT original, 16 referencias que eran aproximadas se han corregido a posiciones literales exactas (carácter y término verificados); no se han generado minutajes ni identidades de voz. 17-11-2026: contraste del pasaje Pumapunku/Sascoamán: el primero es Tiwanaku preincaico, el segundo es Saqsaywaman, gran conjunto inca sobre una zona con antecedentes, y no deben homogeneizarse. Estudio de reconstrucción Vranich et al., Heritage Science 2018; estudio cronológico PLOS ONE 2023; Saqsaywaman Ministerio Cultura Perú y Heritage Science 2026. Tassili: lecturas de escafandra no verificadas; UNESCO documenta notoriedad del conjunto desde 1933 y Met advierte cronologías estilísticas regionales inciertas. Audio y voces sin cotejo."
   },
   "nodes": [
     {
@@ -133,7 +133,7 @@ window.IDEA_TELARANA_F38_REVIEW = {
       "name": "Tassili n’Ajjer",
       "kind": "Lugar",
       "subtitle": "Paisaje y arte rupestre en Argelia",
-      "note": "El conjunto contiene miles de representaciones rupestres de distintas épocas.",
+      "note": "El conjunto contiene miles de representaciones rupestres de distintas épocas. La atribución de figuras concretas al motivo «astronauta» es una lectura moderna. UNESCO documenta notoriedad del conjunto desde 1933, por lo que los años cincuenta no constituyen su primer «descubrimiento».",
       "source": "https://whc.unesco.org/en/list/179",
       "topic3d": "historia",
       "photo": "",
@@ -155,6 +155,15 @@ window.IDEA_TELARANA_F38_REVIEW = {
           "timeSec": null,
           "status": "contraste_documental",
           "text": "UNESCO documenta miles de pinturas y grabados del área; la forma de una figura por sí sola no identifica visitantes de otro mundo."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://whc.unesco.org/en/list/179",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El concepto de «descubrimiento» de un conjunto conocido por pueblos locales no debe confundirse con la difusión por expediciones europeas; UNESCO sitúa la notoriedad internacional a partir de 1933."
         }
       ]
     },
@@ -821,6 +830,203 @@ window.IDEA_TELARANA_F38_REVIEW = {
           "text": "Gómez-Mejía y colaboradores estudian 159 individuos, asociación de forma con identidad social y variación por sexo; no se extrapola el resultado a otras culturas ni a supuestos orígenes extraterrestres."
         }
       ]
+    },
+    {
+      "id": "f38-pumapunku",
+      "name": "Pumapunku (Tiwanaku, Bolivia)",
+      "kind": "Lugar",
+      "subtitle": "Complejo ceremonial preincaico del altiplano boliviano",
+      "note": "Pumapunku forma parte de Tiwanaku y se construyó y transformó en el marco cultural preincaico de la cuenca del Titicaca. Su cantería se investiga con registro arqueológico, análisis de bloques y reconstrucciones 3D. No es una obra del Imperio inca.",
+      "source": "https://www.nature.com/articles/s40494-018-0231-0",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · intervención del texto multivoz sin atribuir",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "Pumapunku o Sascoamán",
+          "transcriptCharOffset": 129127,
+          "text": "En el texto se comparan Pumapunku y un nombre que los subtítulos escriben «Sascoamán»; no son el mismo yacimiento ni deben asignarse a la misma cronología. No se conoce quién habla: falta cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://www.nature.com/articles/s40494-018-0231-0",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Vranich y colaboradores reconstruyen conjuntos arquitectónicos de Pumapunku mediante mediciones y bloques a escala; el estudio distingue andesita tallada y grandes losas de arenisca."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288798",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Un estudio de 2023 combina dataciones para analizar la secuencia de Tiwanaku. La interpretación de la fecha de cada edificio requiere contexto arqueológico, no una única fecha para todas sus fases."
+        }
+      ]
+    },
+    {
+      "id": "f38-tiwanaku-cultura",
+      "name": "Cultura Tiwanaku",
+      "kind": "Tema",
+      "subtitle": "Sociedad andina preincaica centrada en el lago Titicaca",
+      "note": "Horizonte cultural andino responsable de complejos monumentales en Tiwanaku, incluidos Akapana y Pumapunku. Su desarrollo antecede al imperio inca; las fechas y fases se estudian por estratigrafía y radiocarbono.",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288798",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288798",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Estudio PLOS ONE 2023 sobre secuencias cronométricas de Tiwanaku, incluida Pumapunku. No confundir con una cultura sin registro material."
+        }
+      ]
+    },
+    {
+      "id": "f38-pumapunku-recon-2018",
+      "name": "Reconstrucción de arquitectura de Pumapunku (2018)",
+      "kind": "Documento",
+      "subtitle": "Heritage Science · Alexei Vranich y colaboradores",
+      "note": "Trabajo de investigación publicado en Heritage Science que combina levantamientos, identificación de bloques, documentación histórica, modelado y maquetas 3D. La reconstrucción propuesta es interpretativa y se basa en fragmentos conservados.",
+      "source": "https://www.nature.com/articles/s40494-018-0231-0",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://www.nature.com/articles/s40494-018-0231-0",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El trabajo revisa cómo podrían ensamblarse formas arquitectónicas a partir de bloques labrados. La precisión de la piedra no exige una hipótesis extraterrestre para ser estudiada."
+        }
+      ]
+    },
+    {
+      "id": "f38-saqsaywaman",
+      "name": "Saqsaywaman o Sacsayhuamán (Cusco)",
+      "kind": "Lugar",
+      "subtitle": "Conjunto arqueológico inca con antecedentes de ocupación",
+      "note": "El conjunto monumental cercano a Cusco es un emblema de la ingeniería inca, aunque la zona también conserva vestigios de ocupaciones anteriores. Identificar cada fase requiere estratigrafía y datación; no puede equipararse a Pumapunku ni tratarse íntegramente como una cultura única.",
+      "source": "https://transparencia.cultura.gob.pe/sites/default/files/transparencia/2024/10/resoluciones-ministeriales/rmndeg380-2024-mcanexopan2024-2030parte3.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · intervención del texto multivoz sin atribuir",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "Sascoamán",
+          "transcriptCharOffset": 129139,
+          "text": "El subtítulo reproduce fonéticamente el nombre Saqsaywaman y lo compara con Pumapunku. La asociación de ambos no permite concluir que ambos sean anteriores a los incas. No se conoce quién habla: falta cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://transparencia.cultura.gob.pe/sites/default/files/transparencia/2024/10/resoluciones-ministeriales/rmndeg380-2024-mcanexopan2024-2030parte3.pdf",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El Ministerio de Cultura de Perú caracteriza Saqsaywaman como monumento de arquitectura inca; también documenta la continuidad arqueológica y la presencia de fases anteriores en el valle de Cusco."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://www.nature.com/articles/s40494-026-02605-5",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "Un estudio 2026 analiza la arquitectura temprana de un sector de Saqsaywaman mediante geometría y remontaje de bloques, sin negar las atribuciones incas del conjunto monumental."
+        }
+      ]
+    },
+    {
+      "id": "f38-tassili-cabezas-redondas",
+      "name": "Pinturas de Cabezas Redondas del Tassili",
+      "kind": "Tema",
+      "subtitle": "Tradición de arte rupestre del Sahara central",
+      "note": "Tradición estilística de figuras humanas con cabezas redondeadas en Tassili n’Ajjer. La lectura de una figura como astronauta o escafandra es una interpretación moderna, no una identificación arqueológica demostrada. Las cronologías estilísticas del Sahara presentan incertidumbre regional.",
+      "source": "https://whc.unesco.org/en/list/179",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · intervención del texto multivoz sin atribuir",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "una especie de escafandra",
+          "transcriptCharOffset": 60552,
+          "text": "Una intervención interpreta visualmente una figura rupestre como posible escafandra. El texto no acredita el significado original de la pintura. No se conoce quién habla: falta cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://whc.unesco.org/en/list/179",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "UNESCO identifica arte de la etapa de Cabezas Redondas y ofrece una posible lectura simbólico-ritual. Esa descripción no verifica visitas extraterrestres."
+        }
+      ]
+    },
+    {
+      "id": "f38-tassili-cronologia-met",
+      "name": "Periodización rupestre de Tassili (Met)",
+      "kind": "Documento",
+      "subtitle": "Metropolitan Museum of Art · revisión de cronologías saharianas",
+      "note": "La cronología habitual separa tradiciones de fauna silvestre, bovídicos, caballos y camellos; las sucesiones son esquemáticas y algunos estilos se solapan. El Met advierte que faltan dataciones directas suficientes y que los esquemas pueden revisarse.",
+      "source": "https://www.metmuseum.org/de/essays/african-rock-art-tassili-n-ajjer-8000-b-c",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://www.metmuseum.org/de/essays/african-rock-art-tassili-n-ajjer-8000-b-c",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "El Met describe cronologías estilísticas y advierte expresamente de variabilidad regional y evidencia de datación todavía limitada."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · intervención del texto multivoz sin atribuir",
+          "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "afirmacion_asr_multivoz_no_cotejada",
+          "transcriptSearch": "Tassili se descubrió en los años 50",
+          "transcriptCharOffset": 56499,
+          "text": "El texto afirma un «descubrimiento» en los cincuenta. UNESCO documenta el reconocimiento exterior del arte al menos desde 1933 y el trabajo de exploradores de mediados del siglo XX no equivale a un primer conocimiento por comunidades locales. No se conoce quién habla: falta cotejo de audio."
+        },
+        {
+          "episodeId": "idealab-f38-debate-arqueologia",
+          "title": "F38 · documento externo, no declaración del podcast",
+          "source": "https://whc.unesco.org/en/list/179",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_cientifico_externo_no_declaracion_del_debate",
+          "text": "UNESCO indica que el arte del parque empezó a adquirir notoriedad internacional en 1933; no fue descubierto por primera vez en los años cincuenta."
+        }
+      ]
     }
   ],
   "edges": [
@@ -1339,6 +1545,94 @@ window.IDEA_TELARANA_F38_REVIEW = {
       "claimStatus": "evidencia_bioarqueologica",
       "confidence": "documentado",
       "note": "Los restos Paracas se estudian como práctica humana intencional en su contexto cultural.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-episodio-pumapunku",
+      "a": "f38-episodio",
+      "b": "f38-pumapunku",
+      "type": "Yacimiento debatido sin voz cotejada",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "claimStatus": "mencion_debate_multivoz_sin_audio",
+      "confidence": "indicio",
+      "note": "El debate contrapone distintas atribuciones cronológicas; el documento externo no se atribuye a la entrevista.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-pumapunku-tiwanaku",
+      "a": "f38-pumapunku",
+      "b": "f38-tiwanaku-cultura",
+      "type": "Complejo de la cultura Tiwanaku",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288798",
+      "claimStatus": "adscripcion_cultural_arqueologica",
+      "confidence": "documentado",
+      "note": "Monumentos estudiados en secuencia cultural Tiwanaku, anteriores al imperio inca.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-pumapunku-recon",
+      "a": "f38-pumapunku",
+      "b": "f38-pumapunku-recon-2018",
+      "type": "Reconstrucción arquitectónica de 2018",
+      "source": "https://www.nature.com/articles/s40494-018-0231-0",
+      "claimStatus": "estudio_arquitectonico_documentado",
+      "confidence": "documentado",
+      "note": "Maquetas e identificación de fragmentos: reconstrucción como propuesta arqueológica.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-episodio-saqsaywaman",
+      "a": "f38-episodio",
+      "b": "f38-saqsaywaman",
+      "type": "Yacimiento citado como «Sascoamán»",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "claimStatus": "mencion_debate_multivoz_sin_audio",
+      "confidence": "indicio",
+      "note": "Ortografía de ASR normalizada, sin atribución segura de persona.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-pumapunku-saqsaywaman-contraste",
+      "a": "f38-pumapunku",
+      "b": "f38-saqsaywaman",
+      "type": "Comparación del debate: monumentos de culturas distintas",
+      "source": "https://www.youtube.com/watch?v=aiN_M5fykfg",
+      "claimStatus": "comparacion_textual_no_equivalencia_historica",
+      "confidence": "indicio",
+      "note": "Pumapunku es Tiwanaku preincaico; Saqsaywaman es un gran conjunto inca con fases de ocupación anteriores. No vincular constructores entre sí.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-tassili-cabezas",
+      "a": "f38-tassili",
+      "b": "f38-tassili-cabezas-redondas",
+      "type": "Una tradición rupestre del conjunto",
+      "source": "https://whc.unesco.org/en/list/179",
+      "claimStatus": "clasificacion_estilistica_arqueologica",
+      "confidence": "documentado",
+      "note": "La diversidad de fases no avala una lectura extraterrestre.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-tassili-met-periodos",
+      "a": "f38-tassili",
+      "b": "f38-tassili-cronologia-met",
+      "type": "Contraste de cronología historiográfica",
+      "source": "https://www.metmuseum.org/de/essays/african-rock-art-tassili-n-ajjer-8000-b-c",
+      "claimStatus": "revision_documental_de_cronologia",
+      "confidence": "documentado",
+      "note": "El Met advierte de variabilidad regional y de ausencia de dataciones completas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f38-cabezas-cronologia-met",
+      "a": "f38-tassili-cabezas-redondas",
+      "b": "f38-tassili-cronologia-met",
+      "type": "Cautela de datación estilística",
+      "source": "https://www.metmuseum.org/de/essays/african-rock-art-tassili-n-ajjer-8000-b-c",
+      "claimStatus": "limitacion_metodologica_documentada",
+      "confidence": "documentado",
+      "note": "No trasladar una fecha precisa a todas las figuras de estilo similar.",
       "podcastNotes": []
     }
   ]
