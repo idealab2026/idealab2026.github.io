@@ -1862,20 +1862,20 @@
       "videoId": "VnLmil1VTDw",
       "title": "\"MOISÉS NO EXISTIÓ - Arqueólogo sorprende a Jordi Wild explicando la realidad del \"\"Éxodo\"\" judío\"",
       "sourceUrl": "https://www.youtube.com/watch?v=VnLmil1VTDw",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "segunda_revision_merneptah_elefantina_identidades_f55_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-59-exodo-clip.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 14,
-      "sourceRelationsDocumented": 17,
-      "personsProfiled": 0,
-      "documentaryChecks": 4,
+      "sourceNodesDocumented": 27,
+      "sourceRelationsDocumented": 37,
+      "personsProfiled": 7,
+      "documentaryChecks": 12,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Se corrigen equivalencias no demostradas entre hicsos e israelitas y entre filisteos y palestinos modernos; Elefantina se fecha en siglo V a. C. Invitado y posible fuente matriz pendientes.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Se corrigen equivalencias no demostradas entre hicsos e israelitas y entre filisteos y palestinos modernos; Elefantina se fecha en siglo V a. C. Invitado y posible fuente matriz pendientes. 17-11-2026: se registran 27 entidades del módulo, de las cuales 6 usan los IDs canónicos F55 y solo 7 representan entidades realmente nuevas. No se importan citas ni offsets de F55 al clip F59. Estela: Merneptah fue hijo de Ramsés II, no de Ramsés I como sugiere TXT; hicsos de origen levantino no son documentalmente sinónimo de israelitas; Elefantina del siglo V a. C. no demuestra comunidad hicsa del siglo XVI a. C.; filiación entre nombre Palestina, filisteos e identidad palestina moderna no es equivalencia étnica. Analogías de mandamientos con ética egipcia o mesopotámica no prueban copia por sintaxis. Sallier I es literatura posterior. 19 anclas TXT exactas, sin identidad audiovisual de invitado ni minutajes confirmados.",
+      "lastUpdated": "2026-11-17"
     },
     {
       "order": 60,
@@ -6171,7 +6171,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 58,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_merneptah_elefantina_identidades_f55_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -6182,7 +6182,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6201,19 +6201,19 @@
         },
         "analysisCoverage": {
           "percent": 25,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_merneptah_elefantina_identidades_f55_sin_audio",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 14,
-            "relations": 17,
-            "biographies": 0,
-            "statements": 8,
-            "independentChecks": 4,
+            "entities": 27,
+            "relations": 37,
+            "biographies": 7,
+            "statements": 19,
+            "independentChecks": 12,
             "verifiedTimelineEvents": 0
           },
-          "nextAction": "Cotejar audio e identidad del invitado; verificar si es clip de una fuente ya catalogada y profundizar los contrastes sobre hicsos, composición del Éxodo y filisteos."
+          "nextAction": "Cotejar audio y nombre del invitado, buscar episodio original del que se extrajo el clip para evitar contar dos veces una misma fuente. Distinguir reiteradamente origen levantino/hicsos de etnias israelitas, fuente literaria de testimonio contemporáneo y origen de topónimos de identidad nacional moderna."
         }
       },
       {
