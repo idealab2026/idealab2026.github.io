@@ -46,6 +46,7 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_notebooklm_lote6.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_lote6_publicar.py' -v
           python3 -m unittest discover -s scripts -p 'test_notebooklm_lote6_restantes.py' -v
+          python3 -m unittest discover -s scripts -p 'test_notebooklm_lote7.py' -v
       - name: Validar búsqueda de entidades en pantalla completa
         run: node scripts/test_telarana_fullscreen_search.mjs
       - name: Validar distribución 3D y gestos de zoom
