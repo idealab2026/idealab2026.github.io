@@ -1,4 +1,4 @@
-/* Biografías contextualizadas; distinguir datos y alegaciones. */
+/* Biografías contextualizadas; fuente primaria y cautela sobre atribuciones. */
 window.IDEA_TELARANA_BIOGRAPHIES = {
   "version": 1,
   "reviewedAt": "2026-11-11",
@@ -1545,6 +1545,12 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "text": "Yehohanan fue un hombre que vivió en Judea durante el siglo I d. C., conocido por sus restos óseos depositados en un osario hallado en 1968 en Giv'at ha-Mivtar, cerca de Jerusalén. En el calcáneo derecho se conservaba un clavo de hierro que documenta una ejecución por crucifixión. Se desconocen sus circunstancias personales y la fecha exacta de su muerte; el hallazgo no permite deducir que todas las crucifixiones romanas utilizaran una posición idéntica ni demuestra detalles de la muerte de Jesús.",
       "source": "https://artsandculture.google.com/asset/8gEPRIAlblWlqw",
       "sourceTitle": "Museo de Israel · Osario de Yehohanan y calcáneo con clavo",
+      "reviewedAt": "2026-11-17"
+    },
+    "f42-ken-dark": {
+      "text": "Ken Dark es un arqueólogo británico especializado en historia y arqueología de la Antigüedad tardía y del Mediterráneo oriental, autor de investigaciones sobre Nazaret en época romana. Dirigió el Nazareth Archaeological Project y reestudió entre 2006 y 2010 la secuencia arqueológica bajo el convento de las Hermanas de Nazaret. Publicó en 2012 la interpretación de una posible vivienda del siglo I. Distinguió expresamente este hallazgo verificable de la tradición de que pudiera haber sido el hogar de infancia de Jesús: con la evidencia actual no puede demostrarse esa atribución.",
+      "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
+      "sourceTitle": "Ken Dark · Early Roman-Period Nazareth and the Sisters of Nazareth Convent (Antiquaries Journal, 2012)",
       "reviewedAt": "2026-11-17"
     }
   }
