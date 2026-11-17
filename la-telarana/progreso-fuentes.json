@@ -1782,20 +1782,20 @@
       "videoId": "00iUpGp4Iko",
       "title": "El Éxodo y Moisés: qué dice la arqueología realmente",
       "sourceUrl": "https://www.youtube.com/watch?v=00iUpGp4Iko",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "segunda_revision_merneptah_benihasan_sallier_sargon_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-55-exodo.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 17,
-      "sourceRelationsDocumented": 21,
-      "personsProfiled": 0,
-      "documentaryChecks": 4,
+      "sourceNodesDocumented": 26,
+      "sourceRelationsDocumented": 34,
+      "personsProfiled": 10,
+      "documentaryChecks": 13,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Se distinguen textos religiosos, debate académico y arqueología. La estela de Merneptah no demuestra el Éxodo; la ausencia de prueba no es prueba absoluta de inexistencia. Audio no cotejado.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Se distinguen textos religiosos, debate académico y arqueología. La estela de Merneptah no demuestra el Éxodo; la ausencia de prueba no es prueba absoluta de inexistencia. Audio no cotejado. 17-11-2026: nueve anclas existentes auditadas y corregidas: coincidencia literal 9/9 contra TXT de NotebookLM privado. Nuevos contrastes: estela de Merneptah Israel en Canaán, no salida de Egipto; Beni Hasan 37 aamu y Abisha (Ministerio egipcio), no israelitas identificados; Tell el-Dab'a/Qantir son áreas y fases arqueológicas distinguibles; papiro Sallier I (copia ramésida) es ficción histórica posterior a Apofis y Seqenenra; mito natal de Sargón conservado en tablilla neoasiria tardía; crítica de fuentes de Éxodo 14 sigue debate literario. 8 biografías nuevas, 2 previamente disponibles en el mismo módulo. Audio no cotejado, sin minutos verificados.",
+      "lastUpdated": "2026-11-17"
     },
     {
       "order": 56,
@@ -5951,7 +5951,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 54,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_merneptah_benihasan_sallier_sargon_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5962,7 +5962,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5981,19 +5981,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_merneptah_benihasan_sallier_sargon_sin_audio",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 17,
-            "relations": 21,
-            "biographies": 0,
-            "statements": 9,
-            "independentChecks": 4,
+            "entities": 26,
+            "relations": 34,
+            "biographies": 10,
+            "statements": 17,
+            "independentChecks": 13,
             "verifiedTimelineEvents": 0
           },
-          "nextAction": "Cotejar audio y transcripción; ampliar contrastes sobre composición del Éxodo, estela de Merneptah e hipótesis sobre hicsos sin confundir ausencia de prueba con inexistencia."
+          "nextAction": "Cotejar audio y voces; comprobar integridad de la transcripción y ampliar análisis de cronología, epigrafía, arqueología del Sinaí y formación textual sin identificar grupos antiguos con protagonistas bíblicos sin pruebas."
         }
       },
       {

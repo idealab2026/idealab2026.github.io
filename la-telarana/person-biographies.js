@@ -1552,6 +1552,54 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.cambridge.org/core/journals/antiquaries-journal/article/abs/early-romanperiod-nazareth-and-the-sisters-of-nazareth-convent/CC6D566B2F905B663540434FC495A37B",
       "sourceTitle": "Ken Dark · Early Roman-Period Nazareth and the Sisters of Nazareth Convent (Antiquaries Journal, 2012)",
       "reviewedAt": "2026-11-17"
+    },
+    "f55-moises": {
+      "text": "Moisés es el protagonista del relato del Éxodo y una figura fundamental de las tradiciones judía, cristiana e islámica. En la narrativa bíblica es adoptado en Egipto, lidera la salida de los israelitas y recibe la Ley en el Sinaí. Su identidad individual, fechas de vida y actos narrados no han podido corroborarse con una inscripción o hallazgo arqueológico inequívoco. Puede estudiarse la composición y recepción del relato, sin convertirlo automáticamente en biografía histórica ni concluir que la falta de pruebas demuestra su inexistencia absoluta.",
+      "source": "https://www.thetorah.com/article/the-historical-exodus",
+      "sourceTitle": "TheTorah.com · The Historical Exodus",
+      "reviewedAt": "2026-11-17"
+    },
+    "f55-merneptah": {
+      "text": "Merneptah fue un faraón de la dinastía XIX, sucesor de Ramsés II, que reinó en el Egipto del final del siglo XIII a. C. Su estela de victoria, fechada aproximadamente hacia 1208 a. C., contiene una de las referencias extrabíblicas más antiguas aceptadas a un grupo llamado Israel en Canaán. El monumento es testimonio del discurso político y militar egipcio; no documenta la infancia de Moisés, un cautiverio colectivo de israelitas en Egipto ni el nombre del faraón del Éxodo.",
+      "source": "https://www.posenlibrary.com/entry/stela-merneptah",
+      "sourceTitle": "Posen Library · Stela of Merneptah",
+      "reviewedAt": "2026-11-17"
+    },
+    "f55-ahmose": {
+      "text": "Ahmose I fue un faraón de Egipto al comienzo de la dinastía XVIII, hacia mediados del siglo XVI a. C. Concluyó las campañas que pusieron fin al gobierno hicso en el delta oriental y consolidó la autoridad tebana sobre el territorio egipcio, abriendo el Reino Nuevo. La expulsión de la élite hicsa y el relato bíblico del Éxodo pertenecen a tradiciones documentales distintas: la coincidencia temática de una salida de población no identifica a Ahmose como el faraón bíblico ni a los hicsos con los israelitas.",
+      "source": "https://www.metmuseum.org/ja/essays/egypt-in-the-new-kingdom-ca-1550-1070-b-c",
+      "sourceTitle": "The Metropolitan Museum of Art · Egypt in the New Kingdom",
+      "reviewedAt": "2026-11-17"
+    },
+    "f55-ramses-ii": {
+      "text": "Ramsés II, faraón de la dinastía XIX, gobernó Egipto durante gran parte del siglo XIII a. C. y promovió un ambicioso programa constructivo y la residencia de Pi-Ramsés en el delta oriental. Su nombre ha sido asociado repetidamente con el faraón del Éxodo, entre otras razones por el topónimo bíblico Ramsés, pero el texto de Éxodo no identifica al rey y no existe prueba arqueológica decisiva que confirme esa asignación. La historia de Pi-Ramsés debe estudiarse separada de la cronología del relato religioso.",
+      "source": "https://www.oeaw.ac.at/en/oeai/institute/branches/cairo/excavations-projects/tell-el-dab%CA%BFa",
+      "sourceTitle": "Austrian Archaeological Institute · Tell el-Dabʿa/Avaris and Pi-Ramesses",
+      "reviewedAt": "2026-11-17"
+    },
+    "f55-sargon": {
+      "text": "Sargón de Acad fue un rey mesopotámico del III milenio a. C., generalmente situado en el siglo XXIV–XXIII a. C., al que la tradición atribuye la fundación del imperio acadio. Además de los testimonios históricos, una leyenda escrita muchos siglos después narra que fue abandonado de niño en una cesta sobre un río y recogido por otra persona. La versión material conservada en la tablilla K.3401 procede de Nínive y es neoasiria, del siglo VII a. C. Este desfase impide tratar el mito como testimonio contemporáneo de su nacimiento o demostrar que Moisés fue una copia literal.",
+      "source": "https://www.worldhistory.org/image/3128/inscription-of-the-birth-of-king-sargon-of-akkad/",
+      "sourceTitle": "British Museum K.3401 · reproducción documental por World History Encyclopedia",
+      "reviewedAt": "2026-11-17"
+    },
+    "f55-abisha-aamu": {
+      "text": "Abisha(i) es el nombre del jefe de una delegación representada en la tumba de Jnumhotep II en Beni Hasan, en el Reino Medio egipcio, aproximadamente hacia 1900 a. C. La inscripción lo llama «heqa khaset», gobernante de una tierra extranjera, y presenta a un grupo de 37 aamu procedentes de regiones al este o nordeste de Egipto. Poco más se puede afirmar sobre su biografía individual. El título y la procedencia no lo convierten en un israelita identificado, en patriarca bíblico ni en rey del periodo hicso posterior.",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-tomb-of-khnumhotep-ii",
+      "sourceTitle": "Ministerio de Turismo y Antigüedades de Egipto · Tumba de Jnumhotep II",
+      "reviewedAt": "2026-11-17"
+    },
+    "f55-apofis-hicso": {
+      "text": "Apofis, también llamado Apepi, fue un soberano de la dinastía XV hicsa durante el Segundo Periodo Intermedio de Egipto, en el siglo XVI a. C., asociado a la capital Avaris en el delta oriental. Aparece como protagonista del relato egipcio de la disputa con Seqenenra Taa, preservado en el papiro Sallier I. La copia conservada fue escrita durante el reinado de Merneptah, varios siglos después; sus diálogos y el episodio de los hipopótamos son material literario, no declaraciones que puedan verificarse como palabras efectivamente pronunciadas por el rey.",
+      "source": "https://academic.oup.com/book/12232/chapter-abstract/161704304",
+      "sourceTitle": "Colleen Manassa · The Quarrel of Apepi and Seqenenre, OUP",
+      "reviewedAt": "2026-11-17"
+    },
+    "f55-seqenenra-taa": {
+      "text": "Seqenenra Taa fue un gobernante tebano de la dinastía XVII, activo en el final del Segundo Periodo Intermedio egipcio, antes de las campañas que culminaron con Ahmose I. Su momia conserva señales de traumatismos violentos que han sido objeto de investigación sobre su muerte. También es personaje del relato posterior sobre una disputa con Apofis, conservado en el papiro Sallier I. El texto de época ramésida no demuestra que la conversación narrada sobre los hipopótamos ocurriera tal como aparece.",
+      "source": "https://academic.oup.com/book/12232/chapter-abstract/161704304",
+      "sourceTitle": "Colleen Manassa · The Quarrel of Apepi and Seqenenre, OUP",
+      "reviewedAt": "2026-11-17"
     }
   }
 };
