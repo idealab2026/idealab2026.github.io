@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-14",
+  "updatedAt": "2026-11-17",
   "scope": "Registro interno de 74 entradas, 71 fuentes distintas y tres duplicaciones de referencias. Cinco aportaciones manuales F70–F74 (Eric Frattini) tienen transcripciones completas en Google Docs con marcas temporales, leídas de vuelta, pero sin cotejo audiovisual. La web no publica esta tabla ni el texto completo de los documentos.",
   "total": 74,
   "counts": {
@@ -1882,20 +1882,20 @@
       "videoId": "DvcxNoF2MCU",
       "title": "TODA LA VERDAD DETRÁS de la GUERRA PALESTINA-ISRAEL | Alberto Garín #58",
       "sourceUrl": "https://www.youtube.com/watch?v=DvcxNoF2MCU",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "segunda_revision_1948_belen_olp_promesas_lenguas_gaza_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-60-conflicto.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 17,
-      "sourceRelationsDocumented": 20,
+      "sourceNodesDocumented": 29,
+      "sourceRelationsDocumented": 38,
       "personsProfiled": 0,
-      "documentaryChecks": 4,
+      "documentaryChecks": 12,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Se contrastan la declaración Balfour, el plan de 1947, Oslo y el acuerdo de 1994; la opinión de la CIJ se presenta como contexto independiente. Sin audio cotejado.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Revisión documental 17-11-2026: 29 nodos y 38 relaciones, 16/16 anclas literales TXT, sin audio/minutajes comprobados. Contrastes sobre órdenes generales de huida en 1948, cristianos de Belén y causas migratorias, carta OLP de 1964, secuencia de promesas británicas 1915–17, estatutos diferenciados de Gaza/Cisjordania y ley lingüística israelí de 2018. 12 fichas nuevas, dos IDs reaprovechados de F62. Fuentes externas separadas de testimonios del episodio.",
+      "lastUpdated": "2026-11-17"
     },
     {
       "order": 61,
@@ -7643,7 +7643,7 @@
   },
   "analysisProgress": {
     "method": "proxy_v1_2026-11-12",
-    "updatedAt": "2026-11-16",
+    "updatedAt": "2026-11-17",
     "description": "Índice heurístico orientado a decidir la siguiente fuente, no medición de porcentaje real de audio o texto revisado. La mera disponibilidad de una transcripción no suma puntos al análisis.",
     "weights": {
       "inicio": 5,
