@@ -1842,20 +1842,20 @@
       "videoId": "c8MzBddVca0",
       "title": "La huida a Egipto: relato bíblico y contexto histórico",
       "sourceUrl": "https://www.youtube.com/watch?v=c8MzBddVca0",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "segunda_revision_lucas_onias_monacato_copto_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-58-huida-egipto.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 15,
-      "sourceRelationsDocumented": 18,
-      "personsProfiled": 0,
-      "documentaryChecks": 2,
+      "sourceNodesDocumented": 25,
+      "sourceRelationsDocumented": 31,
+      "personsProfiled": 4,
+      "documentaryChecks": 10,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Mateo 2, tradiciones coptas y patrimonio UNESCO se diferencian. El reconocimiento de las fiestas no verifica el viaje antiguo. Presentador y audio pendientes.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Mateo 2, tradiciones coptas y patrimonio UNESCO se diferencian. El reconocimiento de las fiestas no verifica el viaje antiguo. Presentador y audio pendientes. Segunda revisión 17-11-2026: Mateo 2 y Lucas 2 comparados, aplicación tipológica de Oseas 11:1; santuario judío de Onías real pero emplazamiento discutido y ninguna visita personal documentada; monacato Wadi al-Natrun desarrollado siglos después; Ministerio egipcio, Iglesia copta y UNESCO 2022 se usan como testimonios de tradición/patrimonio, no como demostración del viaje. Dos offsets corregidos de nueve; 14 anclas literales exactas; se retiraron dos enlaces erróneos episodio→UNESCO/fiestas porque ninguno aparece en TXT. 3 biografías nuevas, una previa disponible. Sin verificación audiovisual.",
+      "lastUpdated": "2026-11-17"
     },
     {
       "order": 59,
@@ -6116,7 +6116,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 57,
-        "status": "primera_revision_documental_parcial_sin_audio",
+        "status": "segunda_revision_lucas_onias_monacato_copto_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -6127,7 +6127,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-15",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -6146,19 +6146,19 @@
         },
         "analysisCoverage": {
           "percent": 20,
-          "state": "primera_revision_parcial",
+          "state": "segunda_revision_lucas_onias_monacato_copto_sin_audio",
           "readyForDeepReview": true,
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 15,
-            "relations": 18,
-            "biographies": 0,
-            "statements": 9,
-            "independentChecks": 2,
+            "entities": 25,
+            "relations": 31,
+            "biographies": 4,
+            "statements": 14,
+            "independentChecks": 10,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar audio e identificar presentador; contrastar por separado cada lugar y sus tradiciones sin convertir patrimonio cultural en prueba de un viaje histórico."
+          "nextAction": "Cotejar íntegramente audio y voces; verificar la historia de cada tradición copta y la transmisión de sus textos, sin confundir una ruta de peregrinación con un itinerario del siglo I; revisar procedencia de las dos asociaciones UNESCO retiradas."
         }
       },
       {

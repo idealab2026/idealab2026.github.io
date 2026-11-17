@@ -1600,6 +1600,24 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://academic.oup.com/book/12232/chapter-abstract/161704304",
       "sourceTitle": "Colleen Manassa · The Quarrel of Apepi and Seqenenre, OUP",
       "reviewedAt": "2026-11-17"
+    },
+    "f58-maria": {
+      "text": "María de Nazaret es una figura central de las tradiciones cristianas, presentada en los Evangelios como madre de Jesús. Los relatos de infancia de Mateo y Lucas contienen tradiciones diferentes sobre su entorno familiar, el nacimiento y los primeros años de Jesús. Solo Mateo describe la huida de la familia a Egipto; los itinerarios detallados por Tell Basta, Mostorod, Matariya o Wadi al-Natrun pertenecen a tradiciones cristianas egipcias posteriores. La veneración de María y el patrimonio copto son hechos históricos de recepción religiosa, pero no corroboran la presencia personal de María en cada parada.",
+      "source": "https://www.bc.edu/bc-web/schools/stm/sites/crossroads/resources/mini-course/birth-of-jesus/infancy-narrative.html",
+      "sourceTitle": "Boston College · Infancy Narrative Commentaries: comparación Mateo/Lucas",
+      "reviewedAt": "2026-11-17"
+    },
+    "f58-jose": {
+      "text": "José de Nazaret es el personaje descrito en las narraciones cristianas de infancia como esposo de María y responsable del cuidado de Jesús. En Mateo 2:13–23 recibe en sueños la orden de viajar a Egipto y más tarde de regresar a territorio de Israel, pero el Evangelio no proporciona paradas ni fechas exactas de ese viaje. Lucas relata la vuelta a Nazaret sin mencionar la estancia egipcia. No se conoce ninguna inscripción independiente que identifique a José en lugares concretos de la ruta de peregrinación copta; el vínculo con esos santuarios debe atribuirse a la tradición.",
+      "source": "https://www.bc.edu/bc-web/schools/stm/sites/crossroads/resources/mini-course/birth-of-jesus/infancy-narrative.html",
+      "sourceTitle": "Boston College · Infant narratives in Matthew and Luke",
+      "reviewedAt": "2026-11-17"
+    },
+    "f58-herodes": {
+      "text": "Herodes el Grande fue rey cliente de Roma en Judea, gobernó aproximadamente entre 37 y 4 a. C. y llevó a cabo grandes proyectos constructivos, entre ellos la ampliación del Templo de Jerusalén. Su trayectoria y reinado están documentados en fuentes históricas antiguas, especialmente Flavio Josefo, y por la arqueología de sus construcciones. El relato de la matanza de niños de Belén aparece en Mateo 2, pero no dispone de confirmación histórica independiente concluyente. Distinguir la existencia documentada de Herodes de la verificación de todos los episodios que Mateo le atribuye es esencial.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548932360",
+      "sourceTitle": "Oxford Classical Dictionary · Herod the Great, 73/72–5/4 BCE",
+      "reviewedAt": "2026-11-17"
     }
   }
 };
