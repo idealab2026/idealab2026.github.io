@@ -403,7 +403,7 @@ window.IDEA_TELARANA_F59_REVIEW = {
       "name": "Papiros arameos de Elefantina",
       "kind": "Documento",
       "subtitle": "Archivo judeo-arameo bajo dominio persa, siglo V a. C.",
-      "note": "Contratos, peticiones y documentos de una comunidad judía del Egipto persa. Son muchos siglos posteriores a la expulsión de los hicsos del siglo XVI a. C.; no prueban que los dos grupos fueran idénticos.",
+      "note": "Contratos, peticiones y documentos de una comunidad judía del Egipto persa del siglo V a. C. Son muchos siglos posteriores a la expulsión de los hicsos del siglo XVI a. C.; no prueban que los dos grupos fueran idénticos.",
       "source": "https://search.smb.museum/object/obj-823546",
       "topic3d": "historia",
       "photo": "",
