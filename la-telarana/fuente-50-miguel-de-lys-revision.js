@@ -1,4 +1,4 @@
-/* F50 cuarta revisión, sin voz ni minutaje cotejados. */
+/* F50 revisión V: anclas del texto original, hechos contrastados sin audio, voces ni minutajes cotejados. */
 window.IDEA_TELARANA_F50_REVIEW = {
   "metadata": {
     "id": "idealab-f50-miguel-de-lys-wild-project284-2024",
@@ -16,9 +16,9 @@ window.IDEA_TELARANA_F50_REVIEW = {
     "transcriptFormat": "NotebookLM TXT no reliable timecodes",
     "transcriptCharacters": 251787,
     "transcriptPrivateDriveUrl": null,
-    "reviewStage": "cuarta_revision_documental_cleopatra_roma_pirateria_china_sin_audio",
+    "reviewStage": "quinta_revision_teutoburgo_salem_waterloo_vlad_sin_audio",
     "textualEvidenceScheme": "anchor phrase + approximate char offset in private TXT; not audio time",
-    "updatedAt": "2026-11-16",
+    "updatedAt": "2026-11-17",
     "externalCheckSources": [
       "https://www.youtube.com/watch?v=H841XyN9B_4",
       "https://podcasts.apple.com/es/podcast/the-wild-project-284-miguel-de-lys-la-verdad-sobre/id1501968107?i=1000656556125",
@@ -58,9 +58,20 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "https://www.hkmaritimemuseum.org/post/pacifying-the-south-china-sea",
       "https://artsandculture.google.com/asset/pacifying-the-south-china-sea-part-1/YwEzljGT6KkGyQ?hl=en",
       "https://www.guinnessworldrecords.com/world-records/720066-largest-pirate-fleet",
-      "https://eprints.soton.ac.uk/452410/1/Rebecca_James_Final_Submission_PhD_Thesis_The_Pirate_and_his_Fellows_Reading_Editions_of_A_General_History_of_the_Pyrates_1724_1734_1_1_.pdf"
+      "https://eprints.soton.ac.uk/452410/1/Rebecca_James_Final_Submission_PhD_Thesis_The_Pirate_and_his_Fellows_Reading_Editions_of_A_General_History_of_the_Pyrates_1724_1734_1_1_.pdf",
+      "https://digitalarchives.sec.state.ma.us/prelude/",
+      "https://digitalarchives.sec.state.ma.us/early-witches/",
+      "https://salemwitchmuseum.com/faqs-/",
+      "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
+      "https://www.mass.gov/news/witchcraft-law-up-to-the-salem-witchcraft-trials-of-1692",
+      "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "https://www.research-in-germany.org/idw-news/en_US/2026/1/2026-01-30_Research_project__Kalkriese_as_the_site_of_the_Battle_of_the_Teutoburg_Forest____an_ongoing_controversy__.html",
+      "https://www.nam.ac.uk/explore/battle-waterloo",
+      "https://www.allodocteurs.fr/se-soigner-histoire-de-la-medecine-waterloo-les-hemorroides-et-la-vessie-de-l-empereur-16646.html",
+      "https://www.cambridge.org/core/journals/transactions-of-the-royal-historical-society/article/counting-the-stakes-a-reassessment-of-vlad-iii-draculas-practice-of-collective-impalements-in-fifteenthcentury-southeastern-europe/F1B68C737C004D494BBE3B8B9B5E0FF7",
+      "https://www.bramstokerestate.com/resources/what-inspired-dracula"
     ],
-    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive. Segunda revisión 16-11-2026 sobre TXT privado real (251787 caracteres con cabecera): 12 anclas textuales localizadas y verificadas por cadena y posición; distinción explícita entre lo mencionado y el contexto externo. Contrastes con National Museum of Denmark (Gjermundbu), Parks Canada y Nature (L'Anse aux Meadows / tala 1021), Peabody Essex Museum (Salem: 19 ahorcados, Giles Corey aplastado, otros presos muertos), historia inquisitorial vaticana (Gregorio IX, s. XIII), UC Berkeley Law (cazas modernas) y Royal Museums Greenwich (patentes). No se presume que el invitado haya pronunciado nombres externos ni se inventan minutos o voces. El hito 1021 registra actividad, no llegada de Erik/Leif. 16-11-2026 tercera revisión, Egipto/Roma/piratería. Anclas textuales verificadas por cadena exacta en el TXT privado (sin audio ni minutos). Contrastes: organización laboral documentada de Guiza vs. corvea; Heródoto tardío; Vercingétorix permaneció en Alesia aunque envió caballería; Incitatus nunca fue nombrado senador o cónsul en lo acreditado; incendio de Roma 64 sin autoría de Nerón demostrada; bloqueo de Charleston 1718 con rescate médico acreditado pero diagnóstico individual de sífilis no probado; quilla y tablón son castigos distintos. No afirmar que nombres añadidos por fuentes externas fueron pronunciados. Cuarta revisión (16-11-2026) sobre TXT completo F50 reabierto: 27 nuevas anclas literales, posiciones de carácter sin inferir tiempo ni voces. Cleopatra: fuentes ptolemaicas, Plutarco, Accio 31 y anexión 30, estudio del cráneo de Éfeso de 2025 que descarta identificación con Arsínoe. Roma: 509 inicio tradicional de República, Mesalina tercera esposa, anécdotas sexuales antiguas no corroboradas, testimonios hostiles sobre Heliogábalo, anacronismo Calígula/Coliseo. Guangdong: Zheng Yi Sao se identifica como contraste externo, no nombre pronunciado; estimaciones de flota variables, amnistía Qing 1810. Libertalia literaria; origen biográfico de Zheng sin prueba documental suficiente. Audio no cotejado."
+    "methodologicalNote": "Las afirmaciones proceden de subtítulos NotebookLM no cotejados ni diarizados. Las atribuciones personales concretas se mantienen genéricas cuando el texto no identifica hablante; las comparaciones entre personajes no se convierten en relaciones reales. Para Salem se añade contraste institucional sobre la forma de ejecución. Texto íntegro archivado solo en Drive. Segunda revisión 16-11-2026 sobre TXT privado real (251787 caracteres con cabecera): 12 anclas textuales localizadas y verificadas por cadena y posición; distinción explícita entre lo mencionado y el contexto externo. Contrastes con National Museum of Denmark (Gjermundbu), Parks Canada y Nature (L'Anse aux Meadows / tala 1021), Peabody Essex Museum (Salem: 19 ahorcados, Giles Corey aplastado, otros presos muertos), historia inquisitorial vaticana (Gregorio IX, s. XIII), UC Berkeley Law (cazas modernas) y Royal Museums Greenwich (patentes). No se presume que el invitado haya pronunciado nombres externos ni se inventan minutos o voces. El hito 1021 registra actividad, no llegada de Erik/Leif. 16-11-2026 tercera revisión, Egipto/Roma/piratería. Anclas textuales verificadas por cadena exacta en el TXT privado (sin audio ni minutos). Contrastes: organización laboral documentada de Guiza vs. corvea; Heródoto tardío; Vercingétorix permaneció en Alesia aunque envió caballería; Incitatus nunca fue nombrado senador o cónsul en lo acreditado; incendio de Roma 64 sin autoría de Nerón demostrada; bloqueo de Charleston 1718 con rescate médico acreditado pero diagnóstico individual de sífilis no probado; quilla y tablón son castigos distintos. No afirmar que nombres añadidos por fuentes externas fueron pronunciados. Cuarta revisión (16-11-2026) sobre TXT completo F50 reabierto: 27 nuevas anclas literales, posiciones de carácter sin inferir tiempo ni voces. Cleopatra: fuentes ptolemaicas, Plutarco, Accio 31 y anexión 30, estudio del cráneo de Éfeso de 2025 que descarta identificación con Arsínoe. Roma: 509 inicio tradicional de República, Mesalina tercera esposa, anécdotas sexuales antiguas no corroboradas, testimonios hostiles sobre Heliogábalo, anacronismo Calígula/Coliseo. Guangdong: Zheng Yi Sao se identifica como contraste externo, no nombre pronunciado; estimaciones de flota variables, amnistía Qing 1810. Libertalia literaria; origen biográfico de Zheng sin prueba documental suficiente. Audio no cotejado. Quinta revisión 17-11-2026, relectura del TXT privado íntegro F50 (251787 caracteres) con anclas literales: Salem (Samuel Parris, prima Abigail/Betty, Tituba esclavizada y origen incierto, pastel con orina de niñas dado a perro, tribunal colonial civil Oyer and Terminer no juzgado eclesiástico); Teutoburgo 9 y expediciones de Roma hasta retirada 16, atribución Kalkriese discutida en arqueología de 2026; Waterloo 1815, terreno embarrado y ejércitos aliados contra causalidad no verificada de hemorroides; Vlad III real, números de empalamientos sensacionalistas reevaluados en 2025, Stoker toma nombre con inspiración histórica limitada. No usar números de carácter como minutos ni atribuir a interlocutores nombres identificados mediante fuentes externas."
   },
   "nodes": [
     {
@@ -334,8 +345,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Napoleón Bonaparte",
       "kind": "Persona",
       "subtitle": "Militar y emperador francés, protagonista de relatos cinematográficos",
-      "note": "Miguel de Lys comenta detalles y anacronismos que atribuye a la película Napoleón, separando la licencia dramática de la reconstrucción documental. Algunas críticas concretas quedan pendientes de comprobar en el filme.",
-      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "note": "Napoleón dirigió a los franceses en Waterloo el 18 de junio de 1815 frente a una fuerza anglo-aliada de Wellington apoyada por los prusianos de Blücher. Las explicaciones médicas simplistas, como atribuir la derrota a hemorroides, no están demostradas por testimonios contemporáneos suficientes.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -506,8 +517,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Inquisición",
       "kind": "Institución",
       "subtitle": "Tribunales religiosos de distintas épocas y jurisdicciones",
-      "note": "La afirmación F50 de una proto-Inquisición del siglo X contra cátaros requiere corrección histórica: la Inquisición medieval institucional se sitúa especialmente en el pontificado de Gregorio IX (1227–1241), con antecedentes episcopales de fines del siglo XII.",
-      "source": "https://www.vatican.va/roman_curia/congregations/cfaith/storia/documents/rc_con_cfaith_storia_20150319_promuovere-custodire-fede_en.html",
+      "note": "La Inquisición católica europea y los procesos de Salem bajo jurisdicción colonial puritana no son una misma institución. En Salem el gobernador creó un tribunal de jueces civiles, independientemente del peso de las creencias religiosas en las acusaciones.",
+      "source": "https://www.mass.gov/news/witchcraft-law-up-to-the-salem-witchcraft-trials-of-1692",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -549,8 +560,8 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "name": "Juicios por brujería de Salem (1692)",
       "kind": "Acontecimiento",
       "subtitle": "Juicios y ejecuciones en Massachusetts colonial en 1692",
-      "note": "Peabody Essex Museum: 19 personas ejecutadas por ahorcamiento, Giles Corey muerto por aplastamiento y otras personas fallecidas en prisión durante la crisis de 1692-1693. La hoguera es un mito aplicado a Salem.",
-      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "note": "El caso Salem no fue exclusivamente jurisdicción eclesiástica: William Phips nombró el tribunal colonial civil Oyer and Terminer, que aceptó pruebas espectrales. Samuel Parris era ministro y personaje influyente, no juez. Betty Parris y Abigail Williams eran primas; Tituba fue una persona esclavizada cuyo origen exacto no puede reducirse a Haití/Jamaica. Se preparó un witch cake con orina de las niñas para alimentar a un perro, no pasteles orinados por Tituba dados a las menores.",
+      "source": "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
       "photo": "",
       "topic3d": "historia",
       "podcastNotes": [
@@ -1802,6 +1813,552 @@ window.IDEA_TELARANA_F50_REVIEW = {
           "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
           "status": "afirmacion_del_episodio_y_contraste_diferenciados",
           "text": "El podcast afirma un pasado de prostitución de la dirigente. El documento del Museo Marítimo de Hong Kong utilizado para esta revisión no certifica tal etapa biográfica, por lo que no se presenta como hecho acreditado. Evidencia: subtítulos NotebookLM F50 archivados en Drive, carácter aproximado 189239; buscar «había trabajado primero como prostituta». La posición identifica el archivo de texto, no un minuto del vídeo. La mención está localizada en el texto y sus implicaciones se someten a contrastes documentales independientes. No se ha cotejado la voz ni el audio."
+        }
+      ]
+    },
+    {
+      "id": "f50-samuel-parris",
+      "name": "Samuel Parris",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "El nombre aproximado «perrins» en el TXT corresponde al reverendo Samuel Parris, ministro de Salem Village. El archivo colonial documenta su influencia, sus conflictos en la comunidad y la presión ejercida sobre Tituba.",
+      "source": "https://digitalarchives.sec.state.ma.us/prelude/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Samuel Parris · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "El nombre aproximado «perrins» en el TXT corresponde al reverendo Samuel Parris, ministro de Salem Village. El archivo colonial documenta su influencia, sus conflictos en la comunidad y la presión ejercida sobre Tituba. Evidencia textual NotebookLM F50, carácter aproximado 193479, buscar «reverendo perrins». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-betty-parris",
+      "name": "Elizabeth (Betty) Parris",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Betty Parris, de nueve años, fue hija de Samuel Parris y prima de Abigail Williams. Sus síntomas y acusaciones figuran en documentos de 1692; no se dispone de diagnóstico médico retrospectivo fiable.",
+      "source": "https://digitalarchives.sec.state.ma.us/early-witches/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Elizabeth (Betty) Parris · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "Betty Parris, de nueve años, fue hija de Samuel Parris y prima de Abigail Williams. Sus síntomas y acusaciones figuran en documentos de 1692; no se dispone de diagnóstico médico retrospectivo fiable. Evidencia textual NotebookLM F50, carácter aproximado 193520, buscar «una hija Elisabeth». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-abigail-williams",
+      "name": "Abigail Williams",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Corrección: Abigail no era simplemente amiga de Betty sino su prima, sobrina de Samuel Parris. Participó en las primeras acusaciones contra Tituba, Sarah Good y Sarah Osborne.",
+      "source": "https://digitalarchives.sec.state.ma.us/early-witches/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Abigail Williams · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "Corrección: Abigail no era simplemente amiga de Betty sino su prima, sobrina de Samuel Parris. Participó en las primeras acusaciones contra Tituba, Sarah Good y Sarah Osborne. Evidencia textual NotebookLM F50, carácter aproximado 193568, buscar «su amiga se llama Abigail». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-tituba",
+      "name": "Tituba",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Tituba fue una mujer esclavizada de Samuel Parris, acusada de brujería en 1692. El origen étnico y geográfico exacto no es seguro; documentarla como haitiana o jamaicana o definir categóricamente su raza excede la evidencia.",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Tituba · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "Tituba fue una mujer esclavizada de Samuel Parris, acusada de brujería en 1692. El origen étnico y geográfico exacto no es seguro; documentarla como haitiana o jamaicana o definir categóricamente su raza excede la evidencia. Evidencia textual NotebookLM F50, carácter aproximado 194504, buscar «tienen una una criada que se llama». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-john-indian",
+      "name": "John Indian",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "En el ritual del llamado witch cake participaron Tituba y John Indian, ambos esclavizados de Parris, según el Salem Witch Museum; no se usó para alimentar a las niñas.",
+      "source": "https://salemwitchmuseum.com/faqs-/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · John Indian · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "En el ritual del llamado witch cake participaron Tituba y John Indian, ambos esclavizados de Parris, según el Salem Witch Museum; no se usó para alimentar a las niñas. Evidencia textual NotebookLM F50, carácter aproximado 194846, buscar «los pasteles que has estado cocinando». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-mary-sibley",
+      "name": "Mary Sibley",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "La vecina Mary Sibley impulsó el ritual del llamado witch cake para revelar una supuesta bruja; el pastel se preparó con orina de las niñas enfermas y centeno y se ofreció al perro familiar.",
+      "source": "https://salemwitchmuseum.com/faqs-/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Mary Sibley · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "La vecina Mary Sibley impulsó el ritual del llamado witch cake para revelar una supuesta bruja; el pastel se preparó con orina de las niñas enfermas y centeno y se ofreció al perro familiar. Evidencia textual NotebookLM F50, carácter aproximado 194846, buscar «los pasteles que has estado cocinando». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-witch-cake",
+      "name": "Witch cake de Salem",
+      "kind": "Objeto",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "La acusación de que Tituba orinó en los pasteles para los niños confunde el ritual: se mezcló la orina de las muchachas con harina de centeno y se dio el pastel a un perro, según la reconstrucción museística.",
+      "source": "https://salemwitchmuseum.com/faqs-/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Witch cake de Salem · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "La acusación de que Tituba orinó en los pasteles para los niños confunde el ritual: se mezcló la orina de las muchachas con harina de centeno y se dio el pastel a un perro, según la reconstrucción museística. Evidencia textual NotebookLM F50, carácter aproximado 194846, buscar «los pasteles que has estado cocinando». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-tribunal-oyer-terminer",
+      "name": "Tribunal de Oyer and Terminer",
+      "kind": "Institución",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "El proceso penal de Salem de 1692 correspondió a un tribunal colonial especial nombrado por el gobernador William Phips y presidido por jueces civiles, no a una autoridad eclesiástica con poder judicial exclusivo.",
+      "source": "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Tribunal de Oyer and Terminer · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "El proceso penal de Salem de 1692 correspondió a un tribunal colonial especial nombrado por el gobernador William Phips y presidido por jueces civiles, no a una autoridad eclesiástica con poder judicial exclusivo. Evidencia textual NotebookLM F50, carácter aproximado 197751, buscar «tribunal religioso». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-william-phips",
+      "name": "William Phips",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "El gobernador colonial William Phips designó el tribunal especial de Oyer and Terminer en mayo de 1692, desmintiéndose la ausencia de poder gubernamental civil en la región.",
+      "source": "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · William Phips · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "El gobernador colonial William Phips designó el tribunal especial de Oyer and Terminer en mayo de 1692, desmintiéndose la ausencia de poder gubernamental civil en la región. Evidencia textual NotebookLM F50, carácter aproximado 197994, buscar «no había un poder superior al eclesiástico». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-william-stoughton",
+      "name": "William Stoughton",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "William Stoughton presidió el tribunal civil especial de Salem de 1692. Su función judicial no puede atribuirse al reverendo Samuel Parris.",
+      "source": "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · William Stoughton · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "William Stoughton presidió el tribunal civil especial de Salem de 1692. Su función judicial no puede atribuirse al reverendo Samuel Parris. Evidencia textual NotebookLM F50, carácter aproximado 197994, buscar «no había un poder superior al eclesiástico». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-prueba-espectral",
+      "name": "Pruebas espectrales en Salem",
+      "kind": "Tema",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "El tribunal admitió como prueba testimonios de apariciones supuestamente vistas por acusadoras. La posterior exclusión de las pruebas espectrales contribuyó a absoluciones; la admisión inicial fue una falla procesal.",
+      "source": "https://www.mass.gov/news/witchcraft-law-up-to-the-salem-witchcraft-trials-of-1692",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Pruebas espectrales en Salem · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "El tribunal admitió como prueba testimonios de apariciones supuestamente vistas por acusadoras. La posterior exclusión de las pruebas espectrales contribuyó a absoluciones; la admisión inicial fue una falla procesal. Evidencia textual NotebookLM F50, carácter aproximado 195288, buscar «en el tribunal confiesan». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-teutoburgo-9",
+      "name": "Batalla del bosque de Teutoburgo (9 d. C.)",
+      "kind": "Acontecimiento",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "En el año 9, una coalición de grupos germanos al mando de Arminio derrotó tres legiones de Varo. La batalla fue decisiva, pero no supone que Roma cesara toda campaña más allá del Rin de manera inmediata.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Batalla del bosque de Teutoburgo (9 d. C.) · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "En el año 9, una coalición de grupos germanos al mando de Arminio derrotó tres legiones de Varo. La batalla fue decisiva, pero no supone que Roma cesara toda campaña más allá del Rin de manera inmediata. Evidencia textual NotebookLM F50, carácter aproximado 60062, buscar «teutoburgo la batalla». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-arminio",
+      "name": "Arminio",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Arminio fue un dirigente querusco familiarizado con el ejército romano que lideró la coalición vencedora frente a Varo en el año 9. Las lecturas como fundador de una nación alemana moderna son retrospectivas.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Arminio · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "Arminio fue un dirigente querusco familiarizado con el ejército romano que lideró la coalición vencedora frente a Varo en el año 9. Las lecturas como fundador de una nación alemana moderna son retrospectivas. Evidencia textual NotebookLM F50, carácter aproximado 60084, buscar «con arminio». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-varo",
+      "name": "Publio Quintilio Varo",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Varo dirigió las tres legiones romanas derrotadas en 9 d. C. Su desastre afectó a la política imperial en Germania; la cifra exacta de bajas mencionada en el episodio no es una estadística comprobada.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Publio Quintilio Varo · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "Varo dirigió las tres legiones romanas derrotadas en 9 d. C. Su desastre afectó a la política imperial en Germania; la cifra exacta de bajas mencionada en el episodio no es una estadística comprobada. Evidencia textual NotebookLM F50, carácter aproximado 60186, buscar «las legiones 17 18 19». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-legiones-17-19",
+      "name": "Legiones romanas XVII, XVIII y XIX",
+      "kind": "Institución",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Tres legiones romanas, identificadas tradicionalmente como XVII, XVIII y XIX, fueron destruidas en la batalla de Varo. La numeración y el recuerdo de la derrota no prueban cada cifra de muertos citada oralmente.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Legiones romanas XVII, XVIII y XIX · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "Tres legiones romanas, identificadas tradicionalmente como XVII, XVIII y XIX, fueron destruidas en la batalla de Varo. La numeración y el recuerdo de la derrota no prueban cada cifra de muertos citada oralmente. Evidencia textual NotebookLM F50, carácter aproximado 60186, buscar «las legiones 17 18 19». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-retirada-romana-16",
+      "name": "Repliegue romano en Germania hacia 16 d. C.",
+      "kind": "Acontecimiento",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Tras Teutoburgo Roma emprendió nuevas expediciones en Germania; el museo de Kalkriese sitúa en 16 d. C. la decisión de abandonar esas campañas, de modo que la derrota de 9 no equivale a retirada inmediata completa.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Repliegue romano en Germania hacia 16 d. C. · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "Tras Teutoburgo Roma emprendió nuevas expediciones en Germania; el museo de Kalkriese sitúa en 16 d. C. la decisión de abandonar esas campañas, de modo que la derrota de 9 no equivale a retirada inmediata completa. Evidencia textual NotebookLM F50, carácter aproximado 60372, buscar «no no expande». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-kalkriese",
+      "name": "Kalkriese, yacimiento romano-germánico",
+      "kind": "Lugar",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Los hallazgos de Kalkriese muestran un enfrentamiento militar romano en época de Augusto o Tiberio. Una investigación de 2026 subraya que identificar todos los hallazgos con la batalla de Varo sigue siendo una hipótesis arqueológica debatida.",
+      "source": "https://www.research-in-germany.org/idw-news/en_US/2026/1/2026-01-30_Research_project__Kalkriese_as_the_site_of_the_Battle_of_the_Teutoburg_Forest____an_ongoing_controversy__.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Kalkriese, yacimiento romano-germánico · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "Los hallazgos de Kalkriese muestran un enfrentamiento militar romano en época de Augusto o Tiberio. Una investigación de 2026 subraya que identificar todos los hallazgos con la batalla de Varo sigue siendo una hipótesis arqueológica debatida. Evidencia textual NotebookLM F50, carácter aproximado 60062, buscar «teutoburgo». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-batalla-waterloo-1815",
+      "name": "Batalla de Waterloo (18 junio 1815)",
+      "kind": "Acontecimiento",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "El 18 de junio de 1815 la coalición de Wellington y Blücher venció a Napoleón. El estado embarrado del campo, las operaciones francesas y el apoyo prusiano explican la secuencia mejor que una lesión individual no demostrada.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Batalla de Waterloo (18 junio 1815) · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "El 18 de junio de 1815 la coalición de Wellington y Blücher venció a Napoleón. El estado embarrado del campo, las operaciones francesas y el apoyo prusiano explican la secuencia mejor que una lesión individual no demostrada. Evidencia textual NotebookLM F50, carácter aproximado 214179, buscar «la gran derrota en Bélgica». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-wellington",
+      "name": "Arthur Wellesley, duque de Wellington",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Wellington comandó una fuerza multinacional anglo-aliada frente a Napoleón en Waterloo, y resistió hasta la llegada del apoyo prusiano. No representaba únicamente un ejército inglés.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Arthur Wellesley, duque de Wellington · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "Wellington comandó una fuerza multinacional anglo-aliada frente a Napoleón en Waterloo, y resistió hasta la llegada del apoyo prusiano. No representaba únicamente un ejército inglés. Evidencia textual NotebookLM F50, carácter aproximado 214584, buscar «contra los ingleses». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-blucher",
+      "name": "Gebhard Leberecht von Blücher",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Blücher comandó fuerzas prusianas. Tras la derrota de Ligny, sus tropas llegaron a Waterloo y contribuyeron decisivamente al resultado. El episodio alude a prusianos sin nombrar literalmente al mariscal.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Gebhard Leberecht von Blücher · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "Blücher comandó fuerzas prusianas. Tras la derrota de Ligny, sus tropas llegaron a Waterloo y contribuyeron decisivamente al resultado. El episodio alude a prusianos sin nombrar literalmente al mariscal. Evidencia textual NotebookLM F50, carácter aproximado 214541, buscar «ejército prusiano antes». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-hemorroides-waterloo",
+      "name": "Hipótesis de hemorroides de Napoleón en Waterloo",
+      "kind": "Hipótesis",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "La conjetura de que una crisis hemorroidal de Napoleón decidió Waterloo no cuenta con testimonios de primera mano concluyentes y no puede presentarse como causa determinante de la derrota.",
+      "source": "https://www.allodocteurs.fr/se-soigner-histoire-de-la-medecine-waterloo-les-hemorroides-et-la-vessie-de-l-empereur-16646.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Hipótesis de hemorroides de Napoleón en Waterloo · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "La conjetura de que una crisis hemorroidal de Napoleón decidió Waterloo no cuenta con testimonios de primera mano concluyentes y no puede presentarse como causa determinante de la derrota. Evidencia textual NotebookLM F50, carácter aproximado 214212, buscar «hemorroides ese día». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-terreno-waterloo",
+      "name": "Lluvia y terreno embarrado en Waterloo",
+      "kind": "Tema",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "La lluvia del día anterior dejó suelo blando y Napoleón retrasó el inicio del ataque para esperar que secara, según el National Army Museum. Es un elemento logístico, no explicación única de la derrota.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Lluvia y terreno embarrado en Waterloo · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "La lluvia del día anterior dejó suelo blando y Napoleón retrasó el inicio del ataque para esperar que secara, según el National Army Museum. Es un elemento logístico, no explicación única de la derrota. Evidencia textual NotebookLM F50, carácter aproximado 214444, buscar «el mal tiempo». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-vlad-iii",
+      "name": "Vlad III, príncipe de Valaquia",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Vlad III fue un gobernante real del siglo XV conocido como Țepeș por sus empalamientos. Los impresos y cronistas amplificaron sus atrocidades y exigen crítica de fuentes y de cifras.",
+      "source": "https://www.cambridge.org/core/journals/transactions-of-the-royal-historical-society/article/counting-the-stakes-a-reassessment-of-vlad-iii-draculas-practice-of-collective-impalements-in-fifteenthcentury-southeastern-europe/F1B68C737C004D494BBE3B8B9B5E0FF7",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Vlad III, príncipe de Valaquia · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "Vlad III fue un gobernante real del siglo XV conocido como Țepeș por sus empalamientos. Los impresos y cronistas amplificaron sus atrocidades y exigen crítica de fuentes y de cifras. Evidencia textual NotebookLM F50, carácter aproximado 145089, buscar «Drácula existió». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-estudio-vlad-2025",
+      "name": "Reevaluación histórica de empalamientos de Vlad III (2025)",
+      "kind": "Documento",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "Un estudio publicado en Transactions of the Royal Historical Society (2025) considera plausibles solo alrededor del 7–10 % de los empalamientos alegados en relatos antiguos; las cifras masivas no son comprobables literalmente.",
+      "source": "https://www.cambridge.org/core/journals/transactions-of-the-royal-historical-society/article/counting-the-stakes-a-reassessment-of-vlad-iii-draculas-practice-of-collective-impalements-in-fifteenthcentury-southeastern-europe/F1B68C737C004D494BBE3B8B9B5E0FF7",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Reevaluación histórica de empalamientos de Vlad III (2025) · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "contexto_externo_no_pronunciado",
+          "text": "Un estudio publicado en Transactions of the Royal Historical Society (2025) considera plausibles solo alrededor del 7–10 % de los empalamientos alegados en relatos antiguos; las cifras masivas no son comprobables literalmente. Evidencia textual NotebookLM F50, carácter aproximado 145548, buscar «bosques empalados». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. El nombre y su identificación se aportan exclusivamente con documentación independiente; no se atribuyen como palabras literales del episodio. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-bram-stoker",
+      "name": "Bram Stoker",
+      "kind": "Persona",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "El autor irlandés publicó la novela Drácula en 1897. Sus notas apuntan al préstamo del nombre Dracula desde lecturas históricas, pero no demuestran que el conde literario sea una recreación biográfica completa de Vlad III.",
+      "source": "https://www.bramstokerestate.com/resources/what-inspired-dracula",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Bram Stoker · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "El autor irlandés publicó la novela Drácula en 1897. Sus notas apuntan al préstamo del nombre Dracula desde lecturas históricas, pero no demuestran que el conde literario sea una recreación biográfica completa de Vlad III. Evidencia textual NotebookLM F50, carácter aproximado 147279, buscar «braham stocker». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f50-dracula-ficcion",
+      "name": "Drácula, personaje literario",
+      "kind": "Personaje",
+      "subtitle": "F50 · quinta revisión histórica y crítica de fuentes",
+      "note": "El conde vampiro creado por Bram Stoker es ficción. La conexión con el príncipe histórico Vlad se limita a fuentes y préstamos nominales parciales; no es lícito convertir anécdotas de la novela en hechos biográficos.",
+      "source": "https://www.bramstokerestate.com/resources/what-inspired-dracula",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+          "title": "F50 · Drácula, personaje literario · ancla sin minuto",
+          "publishedAt": "2024-05-23",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+          "status": "afirmacion_fuente_diferenciada_del_contraste",
+          "text": "El conde vampiro creado por Bram Stoker es ficción. La conexión con el príncipe histórico Vlad se limita a fuentes y préstamos nominales parciales; no es lícito convertir anécdotas de la novela en hechos biográficos. Evidencia textual NotebookLM F50, carácter aproximado 146941, buscar «un tío que eh es inmortal chupa sangre». Esta cifra es una posición en el TXT, NO un minuto o identidad de voz. La frase consta en el texto del episodio, pero su exactitud se verifica con la referencia independiente. Audio y diarización sin cotejar."
         }
       ]
     }
@@ -3745,6 +4302,676 @@ window.IDEA_TELARANA_F50_REVIEW = {
       "claimStatus": "alegacion_biografica_no_corroborada",
       "confidence": "indicio",
       "note": "Relación documentada en fuente histórica o conexión de contexto con la incertidumbre indicada. No se confunde mención textual con causalidad probada.",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-samuel-parris",
+      "a": "f50-episodio",
+      "b": "f50-samuel-parris",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-betty-parris",
+      "a": "f50-episodio",
+      "b": "f50-betty-parris",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-abigail-williams",
+      "a": "f50-episodio",
+      "b": "f50-abigail-williams",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-tituba",
+      "a": "f50-episodio",
+      "b": "f50-tituba",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-john-indian",
+      "a": "f50-episodio",
+      "b": "f50-john-indian",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-mary-sibley",
+      "a": "f50-episodio",
+      "b": "f50-mary-sibley",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-witch-cake",
+      "a": "f50-episodio",
+      "b": "f50-witch-cake",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-tribunal-oyer-terminer",
+      "a": "f50-episodio",
+      "b": "f50-tribunal-oyer-terminer",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-william-phips",
+      "a": "f50-episodio",
+      "b": "f50-william-phips",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-william-stoughton",
+      "a": "f50-episodio",
+      "b": "f50-william-stoughton",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-prueba-espectral",
+      "a": "f50-episodio",
+      "b": "f50-prueba-espectral",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-teutoburgo-9",
+      "a": "f50-episodio",
+      "b": "f50-teutoburgo-9",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-arminio",
+      "a": "f50-episodio",
+      "b": "f50-arminio",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-varo",
+      "a": "f50-episodio",
+      "b": "f50-varo",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-legiones-17-19",
+      "a": "f50-episodio",
+      "b": "f50-legiones-17-19",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-retirada-romana-16",
+      "a": "f50-episodio",
+      "b": "f50-retirada-romana-16",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-kalkriese",
+      "a": "f50-episodio",
+      "b": "f50-kalkriese",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-batalla-waterloo-1815",
+      "a": "f50-episodio",
+      "b": "f50-batalla-waterloo-1815",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-wellington",
+      "a": "f50-episodio",
+      "b": "f50-wellington",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-blucher",
+      "a": "f50-episodio",
+      "b": "f50-blucher",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-hemorroides-waterloo",
+      "a": "f50-episodio",
+      "b": "f50-hemorroides-waterloo",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-terreno-waterloo",
+      "a": "f50-episodio",
+      "b": "f50-terreno-waterloo",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-vlad-iii",
+      "a": "f50-episodio",
+      "b": "f50-vlad-iii",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-estudio-vlad-2025",
+      "a": "f50-episodio",
+      "b": "f50-estudio-vlad-2025",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-bram-stoker",
+      "a": "f50-episodio",
+      "b": "f50-bram-stoker",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-cobertura-f50-dracula-ficcion",
+      "a": "f50-episodio",
+      "b": "f50-dracula-ficcion",
+      "type": "Tema aludido o contexto externo",
+      "note": "El fragmento contiene ancla relevante; el nombre preciso puede venir de contraste externo y no implica cita literal.",
+      "source": "https://www.youtube.com/watch?v=H841XyN9B_4",
+      "claimStatus": "mencion_editorial_no_vinculo_causal",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-parris-betty",
+      "a": "f50-samuel-parris",
+      "b": "f50-betty-parris",
+      "type": "Padre e hija",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://digitalarchives.sec.state.ma.us/prelude/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-parris-abigail",
+      "a": "f50-samuel-parris",
+      "b": "f50-abigail-williams",
+      "type": "Tío y sobrina",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://digitalarchives.sec.state.ma.us/prelude/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-betty-abigail",
+      "a": "f50-betty-parris",
+      "b": "f50-abigail-williams",
+      "type": "Primas, no amigas sin parentesco",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://digitalarchives.sec.state.ma.us/early-witches/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-parris-tituba",
+      "a": "f50-samuel-parris",
+      "b": "f50-tituba",
+      "type": "Relación de esclavización",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-parris-john",
+      "a": "f50-samuel-parris",
+      "b": "f50-john-indian",
+      "type": "Relación de esclavización",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://salemwitchmuseum.com/faqs-/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-sibly-cake",
+      "a": "f50-mary-sibley",
+      "b": "f50-witch-cake",
+      "type": "Indicó ritual de contramagia",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://salemwitchmuseum.com/faqs-/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-tituba-cake",
+      "a": "f50-tituba",
+      "b": "f50-witch-cake",
+      "type": "Intervención en ritual, no envenenamiento de niñas",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://salemwitchmuseum.com/faqs-/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-john-cake",
+      "a": "f50-john-indian",
+      "b": "f50-witch-cake",
+      "type": "Intervención en ritual",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://salemwitchmuseum.com/faqs-/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-tituba-accuser",
+      "a": "f50-abigail-williams",
+      "b": "f50-tituba",
+      "type": "Acusación de brujería",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://digitalarchives.sec.state.ma.us/early-witches/",
+      "claimStatus": "acusacion_no_prueba_delito",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-betty-accuser",
+      "a": "f50-betty-parris",
+      "b": "f50-tituba",
+      "type": "Acusación de brujería",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://digitalarchives.sec.state.ma.us/early-witches/",
+      "claimStatus": "acusacion_no_prueba_delito",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-tituba-salem",
+      "a": "f50-tituba",
+      "b": "f50-salem",
+      "type": "Acusada en 1692",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-parris-salem",
+      "a": "f50-samuel-parris",
+      "b": "f50-salem",
+      "type": "Contexto familiar y parroquial",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://digitalarchives.sec.state.ma.us/prelude/",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-phips-court",
+      "a": "f50-william-phips",
+      "b": "f50-tribunal-oyer-terminer",
+      "type": "Nombramiento institucional",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-stoughton-court",
+      "a": "f50-william-stoughton",
+      "b": "f50-tribunal-oyer-terminer",
+      "type": "Presidencia judicial",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-court-salem",
+      "a": "f50-tribunal-oyer-terminer",
+      "b": "f50-salem",
+      "type": "Tribunal colonial civil",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.mass.gov/info-details/about-the-supreme-judicial-court",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-court-spectral",
+      "a": "f50-tribunal-oyer-terminer",
+      "b": "f50-prueba-espectral",
+      "type": "Admisión de prueba falible",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.mass.gov/news/witchcraft-law-up-to-the-salem-witchcraft-trials-of-1692",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-teuto-arminio",
+      "a": "f50-teutoburgo-9",
+      "b": "f50-arminio",
+      "type": "Liderazgo de coalición germana",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-teuto-varo",
+      "a": "f50-teutoburgo-9",
+      "b": "f50-varo",
+      "type": "Derrota del gobernador romano",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-varo-legions",
+      "a": "f50-varo",
+      "b": "f50-legiones-17-19",
+      "type": "Mando de legiones",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-teuto-legions",
+      "a": "f50-teutoburgo-9",
+      "b": "f50-legiones-17-19",
+      "type": "Unidades romanas derrotadas",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-teuto-retiro",
+      "a": "f50-teutoburgo-9",
+      "b": "f50-retirada-romana-16",
+      "type": "Secuencia de 9 a 16 d. C.",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-teuto-kalkriese",
+      "a": "f50-teutoburgo-9",
+      "b": "f50-kalkriese",
+      "type": "Localización arqueológica debatida",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.research-in-germany.org/idw-news/en_US/2026/1/2026-01-30_Research_project__Kalkriese_as_the_site_of_the_Battle_of_the_Teutoburg_Forest____an_ongoing_controversy__.html",
+      "claimStatus": "identificacion_arqueologica_no_definitiva",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-napoleon-waterloo",
+      "a": "f50-napoleon",
+      "b": "f50-batalla-waterloo-1815",
+      "type": "Batalla de mando",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-wellington-waterloo",
+      "a": "f50-wellington",
+      "b": "f50-batalla-waterloo-1815",
+      "type": "Mando anglo-aliado",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-blucher-waterloo",
+      "a": "f50-blucher",
+      "b": "f50-batalla-waterloo-1815",
+      "type": "Mando prusiano",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-waterloo-hum",
+      "a": "f50-hemorroides-waterloo",
+      "b": "f50-batalla-waterloo-1815",
+      "type": "Hipótesis médica no demostrada",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.allodocteurs.fr/se-soigner-histoire-de-la-medecine-waterloo-les-hemorroides-et-la-vessie-de-l-empereur-16646.html",
+      "claimStatus": "causalidad_medica_no_demostrada",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-napoleon-hum",
+      "a": "f50-napoleon",
+      "b": "f50-hemorroides-waterloo",
+      "type": "Alegación médica",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.allodocteurs.fr/se-soigner-histoire-de-la-medecine-waterloo-les-hemorroides-et-la-vessie-de-l-empereur-16646.html",
+      "claimStatus": "diagnostico_retroactivo_sin_prueba",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-waterloo-rain",
+      "a": "f50-terreno-waterloo",
+      "b": "f50-batalla-waterloo-1815",
+      "type": "Condiciones logísticas",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.nam.ac.uk/explore/battle-waterloo",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-vlad-ficcion",
+      "a": "f50-vlad-iii",
+      "b": "f50-dracula-ficcion",
+      "type": "Inspiración literaria limitada y debatida",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.bramstokerestate.com/resources/what-inspired-dracula",
+      "claimStatus": "vinculacion_literaria_parcial",
+      "confidence": "indicio",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-stoker-fiction",
+      "a": "f50-bram-stoker",
+      "b": "f50-dracula-ficcion",
+      "type": "Autoría novela",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.bramstokerestate.com/resources/what-inspired-dracula",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-vlad-study",
+      "a": "f50-vlad-iii",
+      "b": "f50-estudio-vlad-2025",
+      "type": "Reevaluación cuantitativa",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.cambridge.org/core/journals/transactions-of-the-royal-historical-society/article/counting-the-stakes-a-reassessment-of-vlad-iii-draculas-practice-of-collective-impalements-in-fifteenthcentury-southeastern-europe/F1B68C737C004D494BBE3B8B9B5E0FF7",
+      "claimStatus": "hecho_documentado_independiente",
+      "confidence": "documentado",
+      "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
+      "podcastNotes": []
+    },
+    {
+      "id": "f50-rev5-study-atrocity",
+      "a": "f50-estudio-vlad-2025",
+      "b": "f50-dracula-ficcion",
+      "type": "No confundir historiografía y vampiro ficticio",
+      "note": "Relación histórica documentada o formulación literaria clasificada con incertidumbre; una mención del podcast no implica prueba de causalidad.",
+      "source": "https://www.cambridge.org/core/journals/transactions-of-the-royal-historical-society/article/counting-the-stakes-a-reassessment-of-vlad-iii-draculas-practice-of-collective-impalements-in-fifteenthcentury-southeastern-europe/F1B68C737C004D494BBE3B8B9B5E0FF7",
+      "claimStatus": "comparacion_no_equivale_identidad",
+      "confidence": "indicio",
       "episodeId": "idealab-f50-miguel-de-lys-wild-project284-2024",
       "podcastNotes": []
     }

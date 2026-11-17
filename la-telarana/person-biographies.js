@@ -1486,6 +1486,30 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "source": "https://www.nature.com/articles/s41598-024-83870-x",
       "sourceTitle": "Scientific Reports (2025) · The cranium from the Octagon in Ephesos",
       "reviewedAt": "2026-11-16"
+    },
+    "f50-samuel-parris": {
+      "text": "Samuel Parris fue un ministro puritano en Salem Village, Massachusetts. Llegó con su familia en 1689 en medio de divisiones vecinales por asuntos religiosos, patrimoniales y salariales. Su hija Betty y su sobrina Abigail Williams estuvieron en el origen de las acusaciones de brujería de 1692. Parris esclavizaba a Tituba y John Indian y ejerció presión para conseguir confesiones, según los documentos conservados. Su influencia espiritual y social fue considerable, pero no debe confundirse con el cargo judicial del tribunal colonial Oyer and Terminer, creado por el gobernador William Phips.",
+      "source": "https://digitalarchives.sec.state.ma.us/prelude/",
+      "sourceTitle": "Massachusetts Archives · Prelude to the Salem Witch Trials",
+      "reviewedAt": "2026-11-17"
+    },
+    "f50-tituba": {
+      "text": "Tituba fue una mujer esclavizada por Samuel Parris en Salem Village y una de las primeras tres personas acusadas de brujería en febrero de 1692. Los documentos judiciales la identifican de maneras variables y su origen preciso sigue debatido; no hay fundamento para asignarle categóricamente una nacionalidad moderna haitiana o jamaicana. Su confesión se produjo bajo presión y alimentó la crisis, pero finalmente sobrevivió al encarcelamiento y fue liberada en 1693 mediante el pago de deudas carcelarias. El relato de un pastel preparado con orina era un ritual dirigido a un perro, no un envenenamiento de niñas.",
+      "source": "https://www.pem.org/the-salem-witch-trials-of-1692",
+      "sourceTitle": "Peabody Essex Museum · The Salem Witch Trials of 1692",
+      "reviewedAt": "2026-11-17"
+    },
+    "f50-arminio": {
+      "text": "Arminio fue un dirigente del pueblo germánico querusco, conocido por haber dirigido una coalición que derrotó a tres legiones romanas bajo Publio Quintilio Varo en el año 9 d. C. en la llamada batalla del bosque de Teutoburgo. La victoria fue un revés enorme para la ocupación romana en Germania, pero no puso fin instantáneo a toda actividad al este del Rin. Roma emprendió nuevas campañas y hacia 16 d. C. optó por abandonar la conquista permanente. La ubicación precisa y secuencia arqueológica del desastre no están completamente resueltas.",
+      "source": "https://www.kalkriese-varusschlacht.de/en/the-varus-battle.html",
+      "sourceTitle": "Museum und Park Kalkriese · The Varus Battle",
+      "reviewedAt": "2026-11-17"
+    },
+    "f50-vlad-iii": {
+      "text": "Vlad III Țepeș fue príncipe de Valaquia durante varios periodos del siglo XV y célebre por practicar el empalamiento como forma de castigo y terror. Las cifras extraordinarias difundidas por relatos contemporáneos y posteriores suelen incluir propaganda hostil y no se deben aceptar sin crítica. Una investigación histórica publicada en 2025 cuestiona la plausibilidad de la mayoría de los recuentos tradicionales. Bram Stoker tomó el nombre Dracula de su documentación histórica, pero sus notas conservadas no permiten afirmar que el vampiro de la novela constituya una biografía fiel de Vlad.",
+      "source": "https://www.cambridge.org/core/journals/transactions-of-the-royal-historical-society/article/counting-the-stakes-a-reassessment-of-vlad-iii-draculas-practice-of-collective-impalements-in-fifteenthcentury-southeastern-europe/F1B68C737C004D494BBE3B8B9B5E0FF7",
+      "sourceTitle": "Transactions of the Royal Historical Society · Counting the Stakes (2025)",
+      "reviewedAt": "2026-11-17"
     }
   }
 };

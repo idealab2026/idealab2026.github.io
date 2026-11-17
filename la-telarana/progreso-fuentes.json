@@ -1189,23 +1189,23 @@
       "videoId": "H841XyN9B_4",
       "title": "The Wild Project #284 - Miguel de Lys | La verdad sobre las Pirámides, La Atlántida, Quema de brujas",
       "sourceUrl": "https://www.youtube.com/watch?v=H841XyN9B_4",
-      "status": "cuarta_revision_documental_sin_minutajes",
+      "status": "quinta_revision_documental_sin_minutajes",
       "reviewComplete": false,
       "rawTranscriptAvailable": true,
       "docTranscriptCreated": false,
       "transcriptDocHasFullText": false,
-      "sourceNodesDocumented": 83,
-      "sourceRelationsDocumented": 164,
-      "contextualizedBiographies": 16,
-      "untimedTranscriptReviewedNotes": 82,
+      "sourceNodesDocumented": 109,
+      "sourceRelationsDocumented": 222,
+      "contextualizedBiographies": 20,
+      "untimedTranscriptReviewedNotes": 108,
       "untimedTranscriptAudioMatched": false,
       "untimedTranscriptAvailable": true,
       "timecodedTranscriptStoredInDrive": false,
       "verifiedMinuteReferences": 0,
-      "verifiedIndependentChecks": 22,
-      "sourceTimelineVerifiedEventsCommitted": 10,
+      "verifiedIndependentChecks": 29,
+      "sourceTimelineVerifiedEventsCommitted": 13,
       "sourcePrimaryModule": "la-telarana/fuente-50-miguel-de-lys-revision.js",
-      "qualityNotes": "12/11/2026: análisis inicial de texto NotebookLM sin marcas temporales. Se añadieron 27 fichas de tema/actor y 32 vínculos, de los cuales la mayoría son MENCIONES EDITORIALES, no relaciones entre actores probadas. 26 anotaciones textuales localizadas por frase y posición aproximada del archivo privado. 1 fuentes de contraste independientes y un acontecimiento histórico documentado. NO existe minutaje fiable ni cotejo audiovisual. Revisión exhaustiva pendiente. 16-11-2026: 12 nodos y 27 relaciones nuevas sobre Gjermundbu, Leif (sagas), Terranova/1021 (Nature), Salem/Corey, Inquisición medieval/Edad Moderna y patentes de corso. Nuevos 12 pasajes con anclas textuales y notas de procedencia; ninguna atribución vocal ni minuto verificado. Se suma un acontecimiento arqueológico fechado 1021. 16-11-2026: tercera revisión temática F50, 17 nuevas entidades y 43 relaciones, 17 anclas textuales literales y sin minutos. Corregidos Alesia/Vercingétorix, Incitatus/consulado, Nerón/incendio y bloqueo Charleston/diagnóstico especulativo, y distinguidos quilla/tablón. Contrastes en AERA, Ministerio egipcio, César, Tácito, Universidad Queensland, North Carolina DNCR y fuentes navales. Nuevos tres eventos documentados: Alesia -52, incendio de 64 y bloqueo de 1718. 16-11-2026: cuarto análisis documental, +27 nodos/+62 relaciones y cuatro biografías. Estudio arqueogenético 2025 descarta cráneo de Arsínoe, Plutarco sobre Cleopatra, Accio/fin ptolemaico, Mesalina tercera esposa (no primera), Elagábalo en fuentes hostiles, Calígula/Coliseo cronológicamente imposible, flotas estimadas y amnistía de Zheng Yi Sao en 1810, Libertalia literaria. Cinco nuevos hitos históricos y bibliográficos, sin audio cotejado."
+      "qualityNotes": "12/11/2026: análisis inicial de texto NotebookLM sin marcas temporales. Se añadieron 27 fichas de tema/actor y 32 vínculos, de los cuales la mayoría son MENCIONES EDITORIALES, no relaciones entre actores probadas. 26 anotaciones textuales localizadas por frase y posición aproximada del archivo privado. 1 fuentes de contraste independientes y un acontecimiento histórico documentado. NO existe minutaje fiable ni cotejo audiovisual. Revisión exhaustiva pendiente. 16-11-2026: 12 nodos y 27 relaciones nuevas sobre Gjermundbu, Leif (sagas), Terranova/1021 (Nature), Salem/Corey, Inquisición medieval/Edad Moderna y patentes de corso. Nuevos 12 pasajes con anclas textuales y notas de procedencia; ninguna atribución vocal ni minuto verificado. Se suma un acontecimiento arqueológico fechado 1021. 16-11-2026: tercera revisión temática F50, 17 nuevas entidades y 43 relaciones, 17 anclas textuales literales y sin minutos. Corregidos Alesia/Vercingétorix, Incitatus/consulado, Nerón/incendio y bloqueo Charleston/diagnóstico especulativo, y distinguidos quilla/tablón. Contrastes en AERA, Ministerio egipcio, César, Tácito, Universidad Queensland, North Carolina DNCR y fuentes navales. Nuevos tres eventos documentados: Alesia -52, incendio de 64 y bloqueo de 1718. 16-11-2026: cuarto análisis documental, +27 nodos/+62 relaciones y cuatro biografías. Estudio arqueogenético 2025 descarta cráneo de Arsínoe, Plutarco sobre Cleopatra, Accio/fin ptolemaico, Mesalina tercera esposa (no primera), Elagábalo en fuentes hostiles, Calígula/Coliseo cronológicamente imposible, flotas estimadas y amnistía de Zheng Yi Sao en 1810, Libertalia literaria. Cinco nuevos hitos históricos y bibliográficos, sin audio cotejado. 17/11/2026: quinta revisión. +26 entidades y +58 relaciones con 26 anclas textuales; Salem (Parris, Tituba, primas Betty/Abigail, ritual de pastel con orina de niñas para un perro y tribunal civil, no religioso), Teutoburgo (9 d. C., campañas hasta 16, incertidumbre arqueológica Kalkriese), Waterloo (18/06/1815, evidencia militar y falta de causalidad probada de hemorroides), Vlad III (real, recuentos de empalamientos cuestionados, conde de Stoker ficticio). +4 biografías; +3 hitos históricos. Se evita datar como historia cualquier supuesto evento vampírico o diagnóstico privado."
     },
     {
       "order": 69,
@@ -2042,9 +2042,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 179,
+    "committedVerifiedEvents": 182,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 135,
+    "fromSourceInReview": 138,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -2273,7 +2273,10 @@
         "study-f50-accio-31ac",
         "study-f50-anexion-egipto-30ac",
         "study-f50-zheng-amnistia-1810",
-        "study-f50-descarte-craneo-arsinoe-2025"
+        "study-f50-descarte-craneo-arsinoe-2025",
+        "study-f50-teutoburgo-varus-9",
+        "study-f50-oyer-terminer-salem-1692",
+        "study-f50-waterloo-1815"
       ],
       "51": [
         "study-f51-tartessos-articulo-2024"
@@ -5668,7 +5671,7 @@
         "type": "youtube",
         "duplicateOf": null,
         "importLine": 49,
-        "status": "cuarta_revision_documental_cleopatra_roma_pirateria_china_sin_audio",
+        "status": "quinta_revision_teutoburgo_salem_waterloo_vlad_sin_audio",
         "reviewComplete": false,
         "tracking": {
           "initiated": true,
@@ -5679,7 +5682,7 @@
           "inReview": true,
           "imageAtGraphNode": "no_iniciada",
           "imageRuntimeVerified": false,
-          "lastUpdated": "2026-11-16",
+          "lastUpdated": "2026-11-17",
           "untimedTranscriptStoredInDrive": true,
           "untimedTranscriptOrigin": "NotebookLM transcript export; no reliable timecodes",
           "untimedTranscriptAudioVerified": false,
@@ -5694,7 +5697,7 @@
           "untimedTranscriptNeedsPriorityIntegrityCheck": false,
           "untimedTranscriptNext": "Extract entities with attributed claims; seek timed transcription independently",
           "untimedTranscriptEditorialAnalysisStarted": true,
-          "untimedTranscriptNotesReviewed": 82
+          "untimedTranscriptNotesReviewed": 108
         },
         "analysisCoverage": {
           "percent": 27,
@@ -5703,18 +5706,18 @@
           "readyForUntimedAnalysis": true,
           "confidence": "estimacion_parcial_no_medicion_exhaustiva",
           "audioVerified": false,
-          "method": "cuarta_capa_documental_temática_sin_audio_cotejado",
+          "method": "quinta_revision_temática_con_contrastes_externos_y_anchors_textuales_sin_audio",
           "signals": {
-            "entities": 83,
-            "relations": 164,
-            "biographies": 16,
-            "statements": 82,
-            "independentChecks": 22,
-            "verifiedTimelineEvents": 10,
+            "entities": 109,
+            "relations": 222,
+            "biographies": 20,
+            "statements": 108,
+            "independentChecks": 29,
+            "verifiedTimelineEvents": 13,
             "textCharacters": 251787,
             "hasTimecodes": false
           },
-          "nextAction": "Verificar integridad completa de TXT contra audio y diarizar; continuar el resto de los bloques aún no revisados de F50 con fuentes primarias; corregir nuevas afirmaciones mediante evidencias independientes y conservar las anclas textuales sin inventar minutos.",
+          "nextAction": "Revisar otros tramos de la transcripción (Japón, mundo medieval y guerras napoleónicas) y cotejar el audio y sus interlocutores. Mantener la diferencia entre hecho, alegación, interpretación y mito y exigir referencias externas para fechas.",
           "percentCapUntilVerified": 49
         }
       },

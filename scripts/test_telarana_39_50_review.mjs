@@ -4,7 +4,7 @@ import fs from "node:fs";
 import vm from "node:vm";
 const specs=[
  {order:39,file:"la-telarana/fuente-39-egiptologia-revision.js",key:"IDEA_TELARANA_F39_REVIEW",nodes:29,edges:33,notes:28,video:"tPZ8wXGmSgA",event:"study-f39-descubrimiento-tumba-tutankamon-1922",score:29},
- {order:50,file:"la-telarana/fuente-50-miguel-de-lys-revision.js",key:"IDEA_TELARANA_F50_REVIEW",nodes:83,edges:164,notes:82,video:"H841XyN9B_4",event:"study-f50-juicios-salem-1692",score:27}
+ {order:50,file:"la-telarana/fuente-50-miguel-de-lys-revision.js",key:"IDEA_TELARANA_F50_REVIEW",nodes:109,edges:222,notes:108,video:"H841XyN9B_4",event:"study-f50-juicios-salem-1692",score:27}
 ];
 const ctx={window:{}};
 const html=fs.readFileSync("la-telarana/index.html","utf8");
@@ -57,7 +57,7 @@ for(const id of ["f50-leif-eriksson","f50-giles-corey"])assert(bCtx.window.IDEA_
 const e1021=events.filter(e=>e.id==="study-f50-actividad-nordica-1021");assert.equal(e1021.length,1);
 assert.equal(e1021[0].investigation.status,"hecho_documentado");assert.equal(e1021[0].investigation.date,"1021");
 assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.percent,27);
-assert.equal(progress.timeline.eventsBySource["50"].length,10);
+assert.equal(progress.timeline.eventsBySource["50"].length,13);
 for(const id of ["f45-herodoto","f50-heit-el-ghurab","f50-corvea-egipto","f50-rampas-hipotesis","f50-vercingetorix","f50-caballeria-alesia","f50-doble-cerco-alesia","f50-incitatus","f50-mito-caballo-senador","f50-gran-incendio-roma-64","f50-tacito","f50-bloqueo-charleston-1718","f50-medicinas-charleston","f50-queen-annes-revenge","f50-sifilis-barbanegra","f50-pasar-por-quilla","f50-caminar-tablon"])assert(f50.nodes.some(n=>n.id===id),"F50 nueva ficha ausente "+id);
 for(const id of ["incitatus-mito","barbanegra-sifilis","tablon-piratas"])assert(f50.edges.some(e=>e.id==="f50-rev3-"+id&&e.confidence==="indicio"),"F50 incertidumbre ausente "+id);
 assert(f50.nodes.find(n=>n.id==="f50-vercingetorix").note.includes("permaneció"));
@@ -65,7 +65,7 @@ assert(f50.nodes.find(n=>n.id==="f50-incitatus").note.includes("CÓNSUL"));
 assert(f50.nodes.find(n=>n.id==="f50-gran-incendio-roma-64").note.toLowerCase().includes("no está demostrado"));
 for(const id of ["f50-vercingetorix","f50-tacito","f50-barbanegra"])assert(bCtx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>200);
 for(const id of ["study-f50-alesia-52ac","study-f50-incendio-roma-64","study-f50-bloqueo-charleston-1718"]){const x=events.find(e=>e.id===id);assert(x&&x.investigation.status==="hecho_documentado"&&x.investigation.sourceOrder===50);assert(x.investigation.relatedTelarana.every(id=>f50.nodes.some(n=>n.id===id)));}
-assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.verifiedTimelineEvents,10);
+assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.verifiedTimelineEvents,13);
 // F50 cuarta revisión: identidad de fuentes y límites probatorios.
 for(const id of ["f50-dinastia-ptolemaica","f50-plutarco","f50-lenguas-cleopatra","f50-arsinoe-iv","f50-estudio-efeso-2025","f50-aspid-cleopatra","f50-marco-antonio","f50-octavio","f50-accio-31ac","f50-anexion-egipto-30ac","f50-republica-509ac","f50-claudio","f50-mesalina","f50-anecdota-mesalina","f50-heliogabalo","f50-casio-dion","f50-coliseo-anacronismo","f50-zheng-yi-sao","f50-zheng-yi","f50-zhang-bao","f50-confederacion-guangdong","f50-amnistia-zheng-1810","f50-cifras-confederacion","f50-libertalia","f50-capitan-misson","f50-rumor-pasado-zheng"])
  assert(f50.nodes.some(n=>n.id===id),"F50 cuarto bloque sin entidad "+id);
@@ -82,10 +82,22 @@ for(const id of ["study-f50-republica-romana-509ac","study-f50-accio-31ac","stud
  assert(e&&e.investigation.sourceOrder===50&&e.investigation.status==="hecho_documentado","Falta hito F50: "+id);
  assert(e.investigation.relatedTelarana.every(id=>f50.nodes.some(n=>n.id===id)),"Hito con referencia huérfana "+id);
 }
-assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.biographies,16);
-assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.relations,164);
-assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.entities,83);
+assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.biographies,20);
+assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.relations,222);
+assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.signals.entities,109);
 assert.equal(progress.sourceCatalog.entries.find(e=>e.order===50).analysisCoverage.percent,27);
-assert(html.includes("fuente-50-miguel-de-lys-revision.js?v=20261116-review4"));
-assert(html.includes("person-biographies.js?v=20261116-f50-context8"));
-console.log("OK F39 F50: 112 fichas, 197 enlaces, 110 notas ancladas sin minutajes y 10 hitos F50 documentados.");
+// Quinta revisión F50: prueba de procedencia y distinciones documentales
+for(const id of ["f50-samuel-parris","f50-betty-parris","f50-abigail-williams","f50-tituba","f50-witch-cake","f50-tribunal-oyer-terminer","f50-william-phips","f50-prueba-espectral","f50-teutoburgo-9","f50-arminio","f50-varo","f50-legiones-17-19","f50-retirada-romana-16","f50-kalkriese","f50-batalla-waterloo-1815","f50-wellington","f50-blucher","f50-hemorroides-waterloo","f50-terreno-waterloo","f50-vlad-iii","f50-estudio-vlad-2025","f50-bram-stoker","f50-dracula-ficcion"])assert(f50.nodes.some(n=>n.id===id),"F50 quinta revisión: falta "+id);
+for(const [id,status] of [["f50-rev5-waterloo-hum","causalidad_medica_no_demostrada"],["f50-rev5-teuto-kalkriese","identificacion_arqueologica_no_definitiva"],["f50-rev5-tituba-accuser","acusacion_no_prueba_delito"]]) {
+ const e=f50.edges.find(e=>e.id===id);
+ assert(e?.claimStatus===status&&e.confidence==="indicio","F50 evidencia no clasificada "+id);
+}
+assert(f50.nodes.find(n=>n.id==="f50-tituba").note.includes("origen étnico y geográfico exacto no es seguro"));
+assert(f50.nodes.find(n=>n.id==="f50-tribunal-oyer-terminer").note.includes("tribunal colonial especial"));
+assert(f50.nodes.find(n=>n.id==="f50-witch-cake").note.includes("un perro"));
+assert(f50.nodes.find(n=>n.id==="f50-teutoburgo-9").note.includes("no supone"));
+for(const id of ["f50-samuel-parris","f50-tituba","f50-arminio","f50-vlad-iii"])assert(bCtx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>200,"Falta biografía "+id);
+for(const id of ["study-f50-teutoburgo-varus-9","study-f50-oyer-terminer-salem-1692","study-f50-waterloo-1815"]) { const event=events.find(e=>e.id===id);assert(event&&event.investigation.sourceOrder===50&&event.investigation.status==="hecho_documentado","Falta hito "+id);assert(event.investigation.relatedTelarana.every(id=>f50.nodes.some(n=>n.id===id)),"Hito con IDs incorrectos "+id); }
+assert(html.includes("fuente-50-miguel-de-lys-revision.js?v=20261117-review5"));
+assert(html.includes("person-biographies.js?v=20261117-f50-context9"));
+console.log("OK F39 F50: 138 fichas, 255 enlaces, 136 notas textuales sin minutajes y 13 hitos F50 documentados.");
