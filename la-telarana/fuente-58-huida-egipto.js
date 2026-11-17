@@ -1,4 +1,4 @@
-/* F58: texto de Mateo, crítica de fuentes y tradiciones coptas; no convertir peregrinación en itinerario probado. */
+/* F58: contraste bíblico y tradición copta, con procedencia separada de menciones no comprobadas. */
 window.IDEA_TELARANA_F58_REVIEW = {
   "metadata": {
     "id": "idealab-f58-egipto",
@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F58_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Se distinguen texto evangélico, tradiciones coptas y patrimonio cultural. La inscripción UNESCO reconoce festividades, no verifica un viaje antiguo. Audio pendiente. 17-11-2026: revisión editorial de Mateo 2 vs Lucas 2:39; tipología literaria de Oseas 11:1 en Mateo 2:15 (Flinders); distinción templo de Onías en Egipto con ubicación historiográfica discutida vs hipótesis de sinagoga localizada cerca de Matariya (Oxford/Posen); Wadi al-Natrun monacato desde siglo IV, no huella material del siglo I (Cambridge); fuentes primarias Iglesia Copta y Ministerio egipcio documentan itinerario patrimonial, UNESCO festividades inmateriales 2022, nunca su verificación histórica. Abu Serga se agrega expresamente solo como contexto externo, no cita del vídeo. Corrección de offsets textuales originales contra TXT privado; ninguna voz ni minuto verificados."
+    "methodologicalNote": "Se distinguen texto evangélico, tradiciones coptas y patrimonio cultural. La inscripción UNESCO reconoce festividades, no verifica un viaje antiguo. Audio pendiente. 17-11-2026: revisión editorial de Mateo 2 vs Lucas 2:39; tipología literaria de Oseas 11:1 en Mateo 2:15 (Flinders); distinción templo de Onías en Egipto con ubicación historiográfica discutida vs hipótesis de sinagoga localizada cerca de Matariya (Oxford/Posen); Wadi al-Natrun monacato desde siglo IV, no huella material del siglo I (Cambridge); fuentes primarias Iglesia Copta y Ministerio egipcio documentan itinerario patrimonial, UNESCO festividades inmateriales 2022, nunca su verificación histórica. Abu Serga se agrega expresamente solo como contexto externo, no cita del vídeo. Corrección de offsets textuales originales contra TXT privado; ninguna voz ni minuto verificados. 17-11-2026: depuración adicional de asociaciones espurias: el TXT F58 no contiene «UNESCO» ni «festividades». Se retiran dos aristas episodio→UNESCO/fiestas que podían presentarse como menciones de vídeo; la nota sobre «árbol» se desplaza a la ficha del Árbol de María y UNESCO queda señalada como fuente externa de contraste."
   },
   "nodes": [
     {
@@ -263,14 +263,12 @@ window.IDEA_TELARANA_F58_REVIEW = {
       "podcastNotes": [
         {
           "episodeId": "idealab-f58-egipto",
-          "title": "F58 · pasaje textual sin minutaje verificado",
-          "source": "https://www.youtube.com/watch?v=c8MzBddVca0",
+          "title": "F58 · UNESCO, documento externo no mencionado en el TXT",
+          "source": "https://ich.unesco.org/en/RL/festivals-related-to-the-journey-of-the-holy-family-in-egypt-01700",
           "timeSec": null,
-          "status": "relato_de_la_charla_sin_audio",
-          "text": "El episodio habla de la tradición y peregrinación; UNESCO documenta por separado festividades contemporáneas y su transmisión cultural.",
-          "transcriptCharOffset": 6626,
-          "transcriptSearch": "árbol",
-          "audioVerified": false
+          "audioVerified": false,
+          "status": "contexto_cultural_externo_no_mencionado_en_video",
+          "text": "La UNESCO inscribe las festividades relacionadas con la Sagrada Familia en Egipto desde 2022. No se atribuye esta información a la grabación F58: los términos UNESCO y festividades no aparecen literalmente en el TXT."
         }
       ]
     },
@@ -583,6 +581,17 @@ window.IDEA_TELARANA_F58_REVIEW = {
           "audioVerified": false,
           "status": "contraste_externo_no_atribuible_a_entrevista",
           "text": "La UNESCO menciona árboles y lugares rituales en el contexto de las festividades de la comunidad."
+        },
+        {
+          "episodeId": "idealab-f58-egipto",
+          "title": "F58 · mención a sombra de un árbol sin audio cotejado",
+          "source": "https://www.youtube.com/watch?v=c8MzBddVca0",
+          "timeSec": null,
+          "status": "mencion_arbol_en_ruta_no_fiestas_unesco",
+          "text": "La transcripción menciona de manera genérica el descanso a la sombra de un árbol entre los motivos devocionales. Ese pasaje no se refiere a una declaración de UNESCO ni prueba que el árbol venerado en Matariya fuera escenario del episodio.",
+          "transcriptCharOffset": 6626,
+          "transcriptSearch": "árbol",
+          "audioVerified": false
         }
       ]
     }
@@ -713,28 +722,6 @@ window.IDEA_TELARANA_F58_REVIEW = {
       "id": "f58-mencion-f58-wadi",
       "a": "f58-episodio",
       "b": "f58-wadi",
-      "type": "Mención o contexto documental",
-      "confidence": "indicio",
-      "claimStatus": "mencion_no_prueba_relacion",
-      "note": "Tema de la charla o contexto documental independiente; la transcripción no ha sido cotejada con el audio.",
-      "source": "https://www.youtube.com/watch?v=c8MzBddVca0",
-      "podcastNotes": []
-    },
-    {
-      "id": "f58-mencion-f58-fiestas",
-      "a": "f58-episodio",
-      "b": "f58-fiestas",
-      "type": "Mención o contexto documental",
-      "confidence": "indicio",
-      "claimStatus": "mencion_no_prueba_relacion",
-      "note": "Tema de la charla o contexto documental independiente; la transcripción no ha sido cotejada con el audio.",
-      "source": "https://www.youtube.com/watch?v=c8MzBddVca0",
-      "podcastNotes": []
-    },
-    {
-      "id": "f58-mencion-f58-unesco",
-      "a": "f58-episodio",
-      "b": "f58-unesco",
       "type": "Mención o contexto documental",
       "confidence": "indicio",
       "claimStatus": "mencion_no_prueba_relacion",
