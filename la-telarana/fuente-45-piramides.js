@@ -1,15 +1,15 @@
-/* F45: segunda revisión documental; sin audio ni voces cotejados; retractación 2026 = contraste externo posterior al vídeo. */
+/* F45: tercera revisión documental; textos sin audio ni voces cotejados; hipótesis separadas de hechos. */
 window.IDEA_TELARANA_F45_REVIEW = {
   "metadata": {
     "id": "idealab-f45-piramides",
     "sourceOrder": 45,
     "title": "F45 · Secretos de las pirámides de Egipto",
     "url": "https://www.youtube.com/watch?v=zYmH-59KakM",
-    "reviewStage": "segunda_revision_documental_piramides_con_retractacion_2026_sin_audio",
+    "reviewStage": "tercera_revision_snefru_seked_imhotep_sin_audio",
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio ni voces cotejadas. El gran vacío y el corredor norte son estructuras diferentes; sus funciones y las hipótesis sobre construcción requieren cautela. Segunda revisión 16-11-2026 sobre TXT NotebookLM F45 (172600 caracteres con cabecera, sin voces/minutajes): Wadi al-Jarf/Merer, mano de obra y asentamientos, muografía, gran vacío 2017, corredor 2023 y SAR controvertido. Actualización independiente posterior a la entrevista: artículo SAR Biondi/Malanga 2022 RETRACTADO 10-08-2026 por MDPI; los autores discrepan. No se acreditan estructuras de 2025 bajo Kefrén. Distinguir documento original, hipótesis de participantes y fuente externa."
+    "methodologicalNote": "Conversación larga sin audio ni voces cotejadas. El gran vacío y el corredor norte son estructuras diferentes; sus funciones y las hipótesis sobre construcción requieren cautela. Segunda revisión 16-11-2026 sobre TXT NotebookLM F45 (172600 caracteres con cabecera, sin voces/minutajes): Wadi al-Jarf/Merer, mano de obra y asentamientos, muografía, gran vacío 2017, corredor 2023 y SAR controvertido. Actualización independiente posterior a la entrevista: artículo SAR Biondi/Malanga 2022 RETRACTADO 10-08-2026 por MDPI; los autores discrepan. No se acreditan estructuras de 2025 bajo Kefrén. Distinguir documento original, hipótesis de participantes y fuente externa. 17-11-2026: nueva lectura con anclas literales del TXT privado, 8 entidades y 10 relaciones sobre Snefru, Meidum, Pirámide Acodada y Roja, paper de Belmonte-Magli (2015) y crítica de Monnier-Puchkov (2016), seked según UCL, tumba de Imhotep según ARCE. Sin voz, audio ni minuto cotejados. Porcentaje público heurístico sin variación."
   },
   "nodes": [
     {
@@ -513,7 +513,7 @@ window.IDEA_TELARANA_F45_REVIEW = {
       "name": "Imhotep",
       "kind": "Persona",
       "subtitle": "Alto funcionario asociado a Djoser",
-      "note": "Figura de la III dinastía vinculada a las construcciones de Djoser; la atribución de un lugar preciso para su tumba en Saqqara sigue siendo una hipótesis.",
+      "note": "Funcionario del entorno de Djoser tradicionalmente asociado a la arquitectura de la III dinastía. Su tumba no está identificada; situarla junto a la pirámide escalonada es una hipótesis.",
       "source": "https://whc.unesco.org/en/list/86",
       "topic3d": "historia",
       "photo": "",
@@ -527,6 +527,26 @@ window.IDEA_TELARANA_F45_REVIEW = {
           "status": "relato_de_la_conversacion_sin_audio",
           "transcriptSearch": "arquitecto de Zoser",
           "text": "Se plantea la expectativa de encontrar la tumba de Imhotep cerca de Saqqara; su ubicación exacta no puede considerarse conocida por esa argumentación."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "la tumba de Injote tiene que estar cerca",
+          "transcriptCharOffset": 144306,
+          "text": "La predicción de que la tumba de Imhotep esté junto al monumento de Djoser es una conjetura y no una localización excavada."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://arce.org/resource/search-imhotep-tomb-architect-turned-god-remains-mystery/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "ARCE documenta búsquedas en Saqqara y Abusir sin identificación concluyente del enterramiento de Imhotep."
         }
       ]
     },
@@ -549,6 +569,242 @@ window.IDEA_TELARANA_F45_REVIEW = {
           "status": "relato_de_la_conversacion_sin_audio",
           "transcriptSearch": "20 años que decía Heródoto",
           "text": "El invitado contrapone la cifra tradicional de Heródoto al diario de Merer. El diario documenta tareas de la fase final del reinado de Jufu, pero no determina por sí solo la duración total exacta."
+        }
+      ]
+    },
+    {
+      "id": "f45-snefru",
+      "name": "Snefru (Seneferu)",
+      "kind": "Persona",
+      "subtitle": "Faraón de la IV dinastía",
+      "note": "Rey ligado a Meidum y las pirámides de Dahshur; las interpretaciones sobre su planificación constructiva son debatidas.",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-pyramid-of-meidum",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "Nefru es el padre de Keobs",
+          "transcriptCharOffset": 33322,
+          "text": "El subtítulo menciona a Snefru antes de Jufu, con grafías fonéticas variables."
+        }
+      ]
+    },
+    {
+      "id": "f45-piramide-acodada",
+      "name": "Pirámide Acodada de Dahshur",
+      "kind": "Lugar",
+      "subtitle": "Obra de Snefru con cambio de pendiente",
+      "note": "La pendiente baja de unos 55° a unos 43°. El Ministerio egipcio lo explica por inestabilidad constructiva; una lectura simbólica también se ha publicado, pero no es concluyente.",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-bent-pyramid/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "las paredes de la pirámide a media altura",
+          "transcriptCharOffset": 80591,
+          "text": "La conversación contrapone el cambio constructivo a una posible planificación simbólica; la dramatización del rey no es un testimonio literal."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://egymonuments.gov.eg/en/monuments/the-bent-pyramid/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "El Ministerio describe la modificación del ángulo por problemas estructurales."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://www.enim-egyptologie.fr/montpellier/CENiM_prix_disponibilite.pdf?n=Puchkov&p=Alexander&page=auteur",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "Monnier y Puchkov (2016) encuentran evidencias de reajustes del proyecto y patologías estructurales."
+        }
+      ]
+    },
+    {
+      "id": "f45-piramide-roja",
+      "name": "Pirámide Roja de Dahshur",
+      "kind": "Lugar",
+      "subtitle": "Pirámide de caras lisas de Snefru",
+      "note": "El tono rojizo procede del aspecto de sus bloques expuestos; originalmente tenía un revestimiento exterior de caliza blanca de Tura, no una cubierta de arenisca roja.",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-red-pyramid/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "cambias de piedra de caliza blanca a piedra arenisca roja",
+          "transcriptCharOffset": 82089,
+          "text": "El TXT afirma un cambio hacia «arenisca roja»: la denominación de Pirámide Roja no acredita ese material para el edificio entero."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://egymonuments.gov.eg/en/monuments/the-red-pyramid/",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "El Ministerio egipcio confirma su tono rojizo actual y su revestimiento original de caliza blanca."
+        }
+      ]
+    },
+    {
+      "id": "f45-piramide-meidum",
+      "name": "Pirámide de Meidum",
+      "kind": "Lugar",
+      "subtitle": "Transición arquitectónica del Reino Antiguo",
+      "note": "Comenzó con diseño escalonado y fue adaptada; su estudio aporta contexto técnico al ciclo de obras de Snefru.",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-pyramid-of-meidum",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://egymonuments.gov.eg/en/monuments/the-pyramid-of-meidum",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "El Ministerio egipcio describe la evolución arquitectónica de Meidum hacia Dahshur; es contexto externo, no una intervención identificada."
+        }
+      ]
+    },
+    {
+      "id": "f45-juan-antonio-belmonte",
+      "name": "Juan Antonio Belmonte",
+      "kind": "Persona",
+      "subtitle": "Investigador de arqueoastronomía del IAC",
+      "note": "Coautor del estudio de 2015 que propone indicios de un programa unitario en Dahshur; citado en la entrevista, no participante.",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "Juan Antonio Belmonte",
+          "transcriptCharOffset": 82404,
+          "text": "Se cita a Belmonte al presentar la interpretación arqueoastronómica de las pirámides."
+        }
+      ]
+    },
+    {
+      "id": "f45-giulio-magli",
+      "name": "Giulio Magli",
+      "kind": "Persona",
+      "subtitle": "Investigador de arqueoastronomía del Politecnico di Milano",
+      "note": "Coautor con Belmonte; el texto automático transcribe su nombre como «Julio», pero la publicación registra Giulio.",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "que se llama Julio Magli",
+          "transcriptCharOffset": 82556,
+          "text": "La grafía del TXT se corrige con la firma verificable del artículo; no se le atribuye voz."
+        }
+      ]
+    },
+    {
+      "id": "f45-estudio-dahshur-2015",
+      "name": "Belmonte y Magli: Dahshur como proyecto unitario (2015)",
+      "kind": "Documento",
+      "subtitle": "Journal for the History of Astronomy",
+      "note": "Artículo que argumenta indicios de una concepción conjunta, astronómica y simbólica de las pirámides Acodada y Roja; hipótesis discutida frente a interpretaciones estructurales.",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "dos astrónomos",
+          "transcriptCharOffset": 82352,
+          "text": "El episodio alude a la propuesta de los dos investigadores; se registra como hipótesis publicada y no como conclusión demostrada."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "El IAC identifica autores, revista y los indicios astronómicos, topográficos, epigráficos y arquitectónicos analizados."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://www.enim-egyptologie.fr/montpellier/CENiM_prix_disponibilite.pdf?n=Puchkov&p=Alexander&page=auteur",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "Una reevaluación de 2016 enfatiza la evidencia material de cambios durante la construcción."
+        }
+      ]
+    },
+    {
+      "id": "f45-seked",
+      "name": "Seked egipcio",
+      "kind": "Tema",
+      "subtitle": "Razón horizontal por codo de altura",
+      "note": "El seked se mide en palmos de desplazamiento horizontal por codo de ascenso vertical; no es un ángulo expresado directamente en grados.",
+      "source": "https://www.ucl.ac.uk/museums-static/digitalegypt/pyramids/angle.html",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · pasaje sin minutaje ni voz cotejados",
+          "source": "https://www.youtube.com/watch?v=zYmH-59KakM",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "relato_de_la_conversacion_sin_audio",
+          "transcriptSearch": "se llama sequet",
+          "transcriptCharOffset": 80115,
+          "text": "Los subtítulos lo denominan «sequet» y lo simplifican como ángulo; es una razón de longitudes que puede convertirse en inclinación."
+        },
+        {
+          "episodeId": "idealab-f45-piramides",
+          "title": "F45 · contraste académico externo",
+          "source": "https://www.ucl.ac.uk/museums-static/digitalegypt/pyramids/angle.html",
+          "timeSec": null,
+          "audioVerified": false,
+          "status": "contraste_documental_posterior_o_independiente",
+          "text": "UCL describe la relación entre distancia horizontal en palmos y elevación vertical de un codo."
         }
       ]
     }
@@ -1035,6 +1291,116 @@ window.IDEA_TELARANA_F45_REVIEW = {
       "source": "https://doi.org/10.3390/rs18162679",
       "note": "La retractación de un trabajo SAR no afecta a las mediciones independientes de muones publicadas por ScanPyramids; técnicas y pruebas diferentes.",
       "claimStatus": "contexto_metodologico",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-snefru-acodada",
+      "a": "f45-snefru",
+      "b": "f45-piramide-acodada",
+      "type": "Monumento de su reinado",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-bent-pyramid/",
+      "note": "Edificación atribuida a Snefru.",
+      "claimStatus": "hecho_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-snefru-roja",
+      "a": "f45-snefru",
+      "b": "f45-piramide-roja",
+      "type": "Monumento de su reinado",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-red-pyramid/",
+      "note": "Edificación atribuida a Snefru.",
+      "claimStatus": "hecho_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-snefru-meidum",
+      "a": "f45-snefru",
+      "b": "f45-piramide-meidum",
+      "type": "Desarrollo arquitectónico asociado",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-pyramid-of-meidum",
+      "note": "Complejo estudiado en el ciclo arquitectónico de Snefru.",
+      "claimStatus": "atribucion_arqueologica",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-acodada-roja",
+      "a": "f45-piramide-acodada",
+      "b": "f45-piramide-roja",
+      "type": "Dos monumentos de Dahshur",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "note": "Asociación histórica acreditada; la planificación simbólica conjunta no está establecida universalmente.",
+      "claimStatus": "hecho_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-belmonte-estudio",
+      "a": "f45-juan-antonio-belmonte",
+      "b": "f45-estudio-dahshur-2015",
+      "type": "Coautoría",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "note": "Autor académico de la publicación.",
+      "claimStatus": "hecho_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-magli-estudio",
+      "a": "f45-giulio-magli",
+      "b": "f45-estudio-dahshur-2015",
+      "type": "Coautoría",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "note": "Autor académico de la publicación.",
+      "claimStatus": "hecho_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-estudio-acodada",
+      "a": "f45-estudio-dahshur-2015",
+      "b": "f45-piramide-acodada",
+      "type": "Interpretación astronómica",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "note": "Planteamiento debatido; considerar evidencia estructural de la obra.",
+      "claimStatus": "hipotesis_publicada_no_consenso",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-estudio-roja",
+      "a": "f45-estudio-dahshur-2015",
+      "b": "f45-piramide-roja",
+      "type": "Interpretación astronómica",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "note": "Hipótesis de un proyecto dual, no prueba histórica directa.",
+      "claimStatus": "hipotesis_publicada_no_consenso",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-seked-acodada",
+      "a": "f45-seked",
+      "b": "f45-piramide-acodada",
+      "type": "Sistema de medición de pendiente",
+      "source": "https://www.ucl.ac.uk/museums-static/digitalegypt/pyramids/angle.html",
+      "note": "Razón horizontal/vertical, no ángulo moderno.",
+      "claimStatus": "contexto_matematico",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-meidum-acodada",
+      "a": "f45-piramide-meidum",
+      "b": "f45-piramide-acodada",
+      "type": "Transición arquitectónica",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-pyramid-of-meidum",
+      "note": "Evolución técnica documentada, no causalidad única.",
+      "claimStatus": "contexto_arqueologico",
       "confidence": "documentado",
       "podcastNotes": []
     }

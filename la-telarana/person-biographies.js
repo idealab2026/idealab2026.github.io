@@ -270,6 +270,18 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
     "usaid-nelson-rockefeller": {
       "lang": "en",
       "title": "Nelson Rockefeller"
+    },
+    "f45-snefru": {
+      "lang": "es",
+      "title": "Seneferu"
+    },
+    "f45-juan-antonio-belmonte": {
+      "lang": "es",
+      "title": "Juan Antonio Belmonte"
+    },
+    "f45-giulio-magli": {
+      "lang": "en",
+      "title": "Giulio Magli"
     }
   },
   "curated": {
@@ -1509,6 +1521,24 @@ window.IDEA_TELARANA_BIOGRAPHIES = {
       "text": "Vlad III Țepeș fue príncipe de Valaquia durante varios periodos del siglo XV y célebre por practicar el empalamiento como forma de castigo y terror. Las cifras extraordinarias difundidas por relatos contemporáneos y posteriores suelen incluir propaganda hostil y no se deben aceptar sin crítica. Una investigación histórica publicada en 2025 cuestiona la plausibilidad de la mayoría de los recuentos tradicionales. Bram Stoker tomó el nombre Dracula de su documentación histórica, pero sus notas conservadas no permiten afirmar que el vampiro de la novela constituya una biografía fiel de Vlad.",
       "source": "https://www.cambridge.org/core/journals/transactions-of-the-royal-historical-society/article/counting-the-stakes-a-reassessment-of-vlad-iii-draculas-practice-of-collective-impalements-in-fifteenthcentury-southeastern-europe/F1B68C737C004D494BBE3B8B9B5E0FF7",
       "sourceTitle": "Transactions of the Royal Historical Society · Counting the Stakes (2025)",
+      "reviewedAt": "2026-11-17"
+    },
+    "f45-snefru": {
+      "text": "Snefru (Seneferu) fue rey de la IV dinastía del Reino Antiguo de Egipto, anterior a su hijo Jufu (Keops). Su reinado estuvo asociado a la transformación de la arquitectura piramidal, especialmente los complejos de Meidum, Dahshur y la Pirámide Roja. Los restos muestran soluciones constructivas y modificaciones de pendientes. La hipótesis de un plan simbólico y astronómico unitario para las pirámides Acodada y Roja ha sido investigada, pero no está establecida como explicación única de las decisiones constructivas.",
+      "source": "https://egymonuments.gov.eg/en/monuments/the-bent-pyramid/",
+      "sourceTitle": "Ministerio de Turismo y Antigüedades de Egipto · Pirámide Acodada",
+      "reviewedAt": "2026-11-17"
+    },
+    "f45-juan-antonio-belmonte": {
+      "text": "Juan Antonio Belmonte es un investigador de arqueoastronomía del Instituto de Astrofísica de Canarias. Sus trabajos examinan la orientación y el simbolismo celeste de monumentos antiguos, entre ellos los edificios faraónicos de Dahshur. Junto con Giulio Magli publicó en 2015 una interpretación de las pirámides de Snefru como elementos de un posible proyecto global, articulado por evidencias arquitectónicas, topográficas, epigráficas y astronómicas. Su propuesta es una hipótesis académica que debe compararse con explicaciones arqueológicas y estructurales alternativas.",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "sourceTitle": "Instituto de Astrofísica de Canarias · Astronomy, architecture, and symbolism (2015)",
+      "reviewedAt": "2026-11-17"
+    },
+    "f45-giulio-magli": {
+      "text": "Giulio Magli es un académico italiano dedicado a la arqueoastronomía y al estudio de relaciones entre arquitectura, paisaje y astronomía en el mundo antiguo, vinculado al Politecnico di Milano. Es coautor junto con Juan Antonio Belmonte de un artículo de 2015 que estudia el posible programa simbólico y astronómico de las pirámides Acodada y Roja de Dahshur. En F45 su nombre aparece transcrito fonéticamente como «Julio»; el registro académico confirma Giulio. La interpretación propuesta por ambos autores no elimina las incertidumbres sobre los cambios técnicos registrados en los monumentos.",
+      "source": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/astronomy-architecture-and-symbolism-global-project-sneferu-dahshur",
+      "sourceTitle": "IAC · publicación académica de Belmonte y Magli (2015)",
       "reviewedAt": "2026-11-17"
     }
   }
