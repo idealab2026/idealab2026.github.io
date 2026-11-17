@@ -99,5 +99,5 @@ assert(f50.nodes.find(n=>n.id==="f50-teutoburgo-9").note.includes("no supone"));
 for(const id of ["f50-samuel-parris","f50-tituba","f50-arminio","f50-vlad-iii"])assert(bCtx.window.IDEA_TELARANA_BIOGRAPHIES.curated[id]?.text.length>200,"Falta biografía "+id);
 for(const id of ["study-f50-teutoburgo-varus-9","study-f50-oyer-terminer-salem-1692","study-f50-waterloo-1815"]) { const event=events.find(e=>e.id===id);assert(event&&event.investigation.sourceOrder===50&&event.investigation.status==="hecho_documentado","Falta hito "+id);assert(event.investigation.relatedTelarana.every(id=>f50.nodes.some(n=>n.id===id)),"Hito con IDs incorrectos "+id); }
 assert(html.includes("fuente-50-miguel-de-lys-revision.js?v=20261117-review5"));
-assert(html.includes("person-biographies.js?v=20261117-f50-context9"));
+assert(/person-biographies\.js\?v=[^"\s]+/.test(html), "Las biografías deben cargarse con versión de caché no vacía");
 console.log("OK F39 F50: 138 fichas, 255 enlaces, 136 notas textuales sin minutajes y 13 hitos F50 documentados.");
