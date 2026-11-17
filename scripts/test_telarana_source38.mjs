@@ -3,7 +3,7 @@ const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};
 vm.runInNewContext(read('la-telarana/fuente-38-debate-arqueologia.js'),ctx);
 vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
 const f=ctx.window.IDEA_TELARANA_F38_REVIEW,ids=new Set(f.nodes.map(n=>n.id));
-assert.equal(ids.size,41);assert.equal(f.edges.length,55);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
+assert.equal(ids.size,45);assert.equal(f.edges.length,61);assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
 assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);
 const notes=f.nodes.flatMap(n=>n.podcastNotes);assert(notes.every(n=>n.timeSec===null));
 assert.equal(notes.filter(n=>n.status==='intervencion_debatida_sin_voz_cotejada').length,10);
@@ -57,7 +57,16 @@ assert(f.nodes.find(n=>n.id==='f38-tassili-cronologia-met').note.includes('incer
 const notesF38New=f.nodes.filter(n=>['f38-pumapunku','f38-saqsaywaman','f38-tassili-cabezas-redondas','f38-tassili-cronologia-met'].includes(n.id)).flatMap(n=>n.podcastNotes);
 assert(notesF38New.every(n=>n.timeSec===null&&n.audioVerified===false));
 for(const term of ['Pumapunku o Sascoamán','Sascoamán','una especie de escafandra','Tassili se descubrió en los años 50'])assert(notesF38New.some(n=>n.transcriptSearch===term&&Number.isInteger(n.transcriptCharOffset)),term);
+// Göbekli Tepe: datación arqueológica, uso doméstico y entierros posteriores al vídeo.
+for(const id of ['f38-gobekli-unesco','f38-gobekli-datacion-estratos','f38-gobekli-habitacion','f38-gobekli-enterramientos-2026'])assert(ids.has(id),'F38 falta ficha '+id);
+assert(f.nodes.find(n=>n.id==='f38-gobekli-unesco').note.includes('9600'));
+assert(f.nodes.find(n=>n.id==='f38-gobekli-habitacion').note.includes('asentamiento permanente'));
+assert(f.nodes.find(n=>n.id==='f38-gobekli-enterramientos-2026').note.includes('septiembre de 2026'));
+assert(f.edges.find(e=>e.id==='f38-gobekli-hallazgo2026').claimStatus==='estudio_externo_posterior_no_declaracion_del_video');
+const gobNotes=f.nodes.filter(n=>['f38-gobekli-unesco','f38-gobekli-datacion-estratos','f38-gobekli-habitacion','f38-gobekli-enterramientos-2026'].includes(n.id)).flatMap(n=>n.podcastNotes);
+assert(gobNotes.every(n=>n.timeSec===null&&n.audioVerified===false));
+for(const term of ['Gobegli Tepe gobegli','cazadores recolectores'])assert(gobNotes.some(n=>n.transcriptSearch===term&&Number.isInteger(n.transcriptCharOffset)),term);
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));const e=h.items.filter(e=>e.id==='study-f38-papiros-wadi-2013');assert.equal(e.length,1);assert.equal(e[0].investigation.date,'2013');
-const p=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===38);assert.equal(p.analysisCoverage.signals.statements,16);assert.equal(p.analysisCoverage.signals.independentChecks,20);assert.equal(p.analysisCoverage.signals.entities,41);assert.equal(p.analysisCoverage.signals.relations,55);assert.equal(p.analysisCoverage.percent,22);assert(!p.reviewComplete);
+const p=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===38);assert.equal(p.analysisCoverage.signals.statements,16);assert.equal(p.analysisCoverage.signals.independentChecks,24);assert.equal(p.analysisCoverage.signals.entities,45);assert.equal(p.analysisCoverage.signals.relations,61);assert.equal(p.analysisCoverage.percent,22);assert(!p.reviewComplete);
 assert(read('la-telarana/index.html').includes('fuente-38-debate-arqueologia.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-38-debate-arqueologia.js'));
 console.log('OK: F38 conserva diferencias entre debate multivoz, textos y hechos documentados');
