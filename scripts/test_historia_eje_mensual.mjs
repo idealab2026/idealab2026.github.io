@@ -10,7 +10,7 @@ const folder=path.resolve(process.argv[2]||path.join(here,"..","linea-historia")
 const read=name=>fs.readFileSync(path.join(folder,name),"utf8");
 const src=read("timeline-v4.js"),html=read("index.html");
 new vm.Script(src,{filename:"timeline-v4.js"});
-assert.match(html,/timeline-v4\.js\?v=20261118-monthly-axis/);
+assert.match(html,/timeline-v4\.js\?v=20261118-zoom-out-x0125/);
 assert.match(html,/\.tick\.month-tick/);
 assert.match(html,/\.year-guide\.month-guide/);
 
