@@ -2022,20 +2022,20 @@
       "videoId": "vPaUnI8nhfU",
       "title": "La HISTORIA DESCONOCIDA de JESÚS DE NAZARET - Luis Antequera | Aladetres 130",
       "sourceUrl": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
-      "status": "revision_documental_ampliada_subtitulos_sin_audio",
+      "status": "segunda_revision_mateo_suet_adriano_pasion_quirinio_20261118",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-68-pasion.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 25,
-      "sourceRelationsDocumented": 30,
-      "personsProfiled": 0,
-      "documentaryChecks": 11,
+      "sourceNodesDocumented": 47,
+      "sourceRelationsDocumented": 64,
+      "personsProfiled": 2,
+      "documentaryChecks": 17,
       "timelineVerifiedEventsCommitted": 0,
-      "qualityNotes": "Ampliada con Mateo 2:16 y Josefo XVII; textos diferenciados de hechos históricos y subtítulos sin cotejo de audio.",
-      "lastUpdated": "2026-11-16"
+      "qualityNotes": "Segunda revisión 18-11-2026: 47 nodos, 64 relaciones, 40/40 anclas literales TXT exactas y 12 referencias externas; 0 audio/minutos cotejados. Mateo Belén/Nazaret, Quirinio c.6 d.C. frente a Herodes c.4 a.C., atribución Suetonio/Tácito, Pilato, culpa colectiva Nostra aetate, medicina forense, Marcos/Juan 14/15 Nisán, fechas 30/33 como hipótesis, Josefo sobre notables vs matanza inocentes, Tito 70/Adriano 132–135. Se reparó además un test de CI heredado de F67.",
+      "lastUpdated": "2026-11-18"
     }
   ],
   "timeline": {
