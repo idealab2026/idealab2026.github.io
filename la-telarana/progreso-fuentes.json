@@ -1250,7 +1250,7 @@
       "videoId": "rLGs5AXE5iQ",
       "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
-      "status": "segunda_revision_archivos_vaticano_curia_cuentas_contrastadas",
+      "status": "tercera_revision_finanzas_vaticanas_moneyval_asif_apelacion",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1259,13 +1259,13 @@
       "transcriptCharacters": 113341,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 13,
-      "sourceRelationsDocumented": 17,
+      "sourceNodesDocumented": 16,
+      "sourceRelationsDocumented": 20,
       "personsProfiled": 6,
       "impersonalAttributedSummaries": 11,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
       "structuredProfiles": 6,
-      "verifiedIndependentChecks": 7,
+      "verifiedIndependentChecks": 10,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 777,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
@@ -1279,8 +1279,8 @@
         "study-f70-pius-xii-archive-open-2020",
         "study-f70-praedicate-evangelium-2022"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11 segunda pasada F70: 5 nuevos nodos, 9 relaciones añadidas; 6 contrastes documentales adicionales (total 7) con normas oficiales del Vaticano y comunicación IOR. La frase sobre acceso exclusivo del papa/cardenales al Archivo no refleja la regla 2025 para investigadores. Los fondos de Pío XII se abrieron 2/03/2020; Praedicate Evangelium reorganizó la Curia en 2022, lo que limita la afirmación de inexistencia de reformas. Publicación de cuentas IOR no demuestra ausencia de irregularidades. Mantener marcadores ASR sin cotejo audiovisual.",
-      "lastUpdated": "2026-11-13"
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11 segunda pasada F70: 5 nuevos nodos, 9 relaciones añadidas; 6 contrastes documentales adicionales (total 7) con normas oficiales del Vaticano y comunicación IOR. La frase sobre acceso exclusivo del papa/cardenales al Archivo no refleja la regla 2025 para investigadores. Los fondos de Pío XII se abrieron 2/03/2020; Praedicate Evangelium reorganizó la Curia en 2022, lo que limita la afirmación de inexistencia de reformas. Publicación de cuentas IOR no demuestra ausencia de irregularidades. Mantener marcadores ASR sin cotejo audiovisual.\n18/11 tercera pasada: +3 nodos y +3 aristas documentales de contexto externo: MONEYVAL 2024 (35/39 recomendaciones conformes o mayormente conformes y 4 parcialmente), ASIF 2025 (78 comunicaciones sospechosas en la jurisdicción, 16 elevaciones a fiscalía y 3 operaciones suspendidas) y decisión de apelación del 17/03/2026 sobre fondos de la Santa Sede. No mezclar jurisdicción, Secretaría de Estado e IOR. Sin citas audiovisuales comprobadas y sin modificar el porcentaje editorial.",
+      "lastUpdated": "2026-11-18"
     },
     {
       "order": 71,
