@@ -71,8 +71,17 @@ for(const n of [72,73]){
  assert(stage?.available,"F"+n+" no se incorpora al grafo público");
 }
 const pagerNotes=ctx.data.edges.filter(e=>Array.isArray(e.podcastNotes)&&e.podcastNotes.some(n=>
- n.episodeId==="idealab-f73-frattini"&&String(n.source||"").includes("reuters.com")&&/buscapersonas|explosiones/i.test(n.text||"")));
-assert(pagerNotes.length>=1,"La evidencia del segundo episodio sobre buscapersonas se ha perdido durante la deduplicación");
+ n.episodeId==="idealab-f73-frattini"&&String(n.source||"").includes("lebanon.un.org")&&/buscapersonas|explosiones/i.test(n.text||"")));
+assert(pagerNotes.length>=1,"La evidencia de ONU sobre víctimas se ha perdido durante la deduplicación F72/F73");
+const pagerIsrael=ctx.data.edges.find(e=>e.id==="f73-doc-israel-pagers");
+assert(pagerIsrael&&pagerIsrael.source.includes("reuters.com")&&pagerIsrael.claimStatus==="hecho_documentado_por_portavoz_citado",
+ "La admisión oficial israelí (Reuters) no debe perderse ni confundirse con comunicado ONU");
+for(const name of ["DGST de Marruecos","Archivo provisional de la investigación Pegasus (22 enero 2026)"]){
+ assert(ctx.data.nodes.filter(n=>n.name===name).length===1,
+  "F69/F73 duplican la misma institución o expediente Pegasus: "+name);
+}
+assert(!ctx.data.edges.some(e=>["vf150-f69-r4-pegasus-dgst","vf150-f69-r4-pegasus-rumor"].includes(e.id)),
+ "El grafo vuelve a representar rumores o ausencia de atribución como vínculos");
 assert(ctx.data.nodes.filter(n=>n.name==="Explosiones de buscapersonas en Líbano (2024)").length===1,
  "La misma operación histórica está duplicada en el grafo");
 assert(ctx.data.nodes.filter(n=>n.name==="Shin Bet").length===1,
