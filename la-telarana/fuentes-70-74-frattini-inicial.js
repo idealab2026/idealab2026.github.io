@@ -1327,9 +1327,9 @@ window.IDEA_TELARANA_F72_REVIEW = {
     "lastMarker": "03:07:18",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "cuarta_revision_cruce_f69_f73_pagers_fuente_primaria_20261118",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: ENISA 2010 confirma funcionamiento y software industrial objetivo de Stuxnet, no autoría estatal. Dos relaciones técnicas incorporadas como contexto externo; sin cotejo del audio. Cuarta revisión 18/11/2026: la arista de víctimas por buscapersonas se respalda con comunicado ONU (18/09/2024); declaración portavoz israelí queda documentada por Reuters en F73, sin concluir que una unidad concreta del Mossad ejecutara el operativo.",
-    "independentDocumentaryRelations": 5,
+    "reviewStage": "quinta_revision_archivo_iran_2018_oiea_2015_distincion_probatoria_20261118",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: ENISA 2010 confirma funcionamiento y software industrial objetivo de Stuxnet, no autoría estatal. Dos relaciones técnicas incorporadas como contexto externo; sin cotejo del audio. Cuarta revisión 18/11/2026: la arista de víctimas por buscapersonas se respalda con comunicado ONU (18/09/2024); declaración portavoz israelí queda documentada por Reuters en F73, sin concluir que una unidad concreta del Mossad ejecutara el operativo. Quinta revisión 18/11/2026: se distinguen cuatro hechos documentales de las inferencias sobre la operación clandestina: discurso público de Netanyahu (30/04/2018), evaluación GOV/2015/68 del OIEA, declaración de 01/05/2018 y su reiteración de las conclusiones de 2015. No se confunde la presentación de una acusación con su validación técnica ni la falta de indicios después de 2009 (evaluada en 2015) con una conclusión sobre la situación de 2026. Audio de F72 no cotejado.",
+    "independentDocumentaryRelations": 9,
     "crossSourceLinks": [
       69,
       73
@@ -1709,6 +1709,58 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "x": 12850,
       "y": 4920,
       "podcastNotes": []
+    },
+    {
+      "id": "f72-netanyahu",
+      "name": "Benjamín Netanyahu",
+      "kind": "Persona",
+      "subtitle": "Primer ministro israelí que presentó públicamente en abril de 2018 documentos que atribuyó a un archivo nuclear iraní.",
+      "note": "El 30/04/2018 Netanyahu afirmó públicamente que Israel había obtenido documentos de un archivo sobre el programa nuclear militar de Irán. Está acreditada la presentación y lo que declaró, pero la transcripción del discurso no permite verificar de forma independiente la procedencia y autenticidad de cada archivo ni demuestra que el OIEA corroborase todas las inferencias de Netanyahu. Nodo de documentación externa, no declaración comprobada del podcast.",
+      "source": "https://www.iranwatch.org/library/governments/israel/office-prime-minister/transcript-israeli-pm-netanyahu-irans-nuclear-program",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13420,
+      "y": 4750,
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-oiea",
+      "name": "Organismo Internacional de Energía Atómica (OIEA)",
+      "kind": "Institución",
+      "subtitle": "Organismo internacional encargado de aplicar salvaguardias nucleares y verificar compromisos.",
+      "note": "Su evaluación GOV/2015/68 concluyó que hubo actividades coordinadas relevantes para desarrollar un artefacto nuclear antes de finales de 2003; encontró algunos trabajos posteriores, sin prueba creíble de actividades relevantes para el desarrollo de un explosivo nuclear después de 2009. La declaración de mayo de 2018 reiteró aquella evaluación y no examinó públicamente la totalidad del archivo difundido por Israel. No extrapolar una evaluación de 2015 a la situación de 2026.",
+      "source": "https://www.iaea.org/sites/default/files/gov-2015-68.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13640,
+      "y": 4780,
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-informe-oiea-2015",
+      "name": "OIEA · Evaluación GOV/2015/68 (2 diciembre 2015)",
+      "kind": "Documento",
+      "subtitle": "Informe oficial del director general del OIEA sobre posibles dimensiones militares del programa nuclear iraní.",
+      "note": "Párrafos 87–88 de GOV/2015/68: actividades coordinadas relevantes para un dispositivo nuclear antes de 2003; trabajos posteriores no coordinados; no hay indicios creíbles de actividades de desarrollo de explosivo nuclear después de 2009 ni de desvío de material nuclear en relación con posibles dimensiones militares. La conclusión se refiere a la información evaluada hasta diciembre de 2015, no a acontecimientos posteriores.",
+      "source": "https://www.iaea.org/sites/default/files/gov-2015-68.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13870,
+      "y": 4780,
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-comunicado-oiea-2018",
+      "name": "OIEA · Declaración de 1 mayo 2018 sobre Irán",
+      "kind": "Documento",
+      "subtitle": "Comunicado del portavoz del OIEA tras la presentación israelí del 30 de abril de 2018.",
+      "note": "El OIEA reiteró los resultados de su evaluación de diciembre de 2015 y explicó que, como práctica general, no discutía públicamente la información sobre salvaguardias recibida. Esa respuesta no puede etiquetarse como prueba de autenticidad de los 55.000 folios o como refutación de su contenido; tampoco acredita un programa de fabricación de armas activo en abril de 2018. Texto del comunicado oficial reproducido por Iran Watch.",
+      "source": "https://www.iranwatch.org/library/multilateral-organizations/international-atomic-energy-agency/iaea-director-generals-statement/statement-iran-iaea-spokesperson-final",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13870,
+      "y": 4980,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1803,7 +1855,7 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "type": "Mención documentada en la fuente, no vínculo operativo acreditado",
       "confidence": "hipotesis",
       "claimStatus": "mencion_temporizada_sin_cotejo_audio",
-      "note": "El capítulo expone el relato del entrevistado sobre la obtención de archivos en Teherán. Su presentación pública el 30/04/2018 consta en documentación estadounidense; los detalles de la operación no se dan por demostrados por la entrevista.",
+      "note": "El capítulo expone el relato del entrevistado sobre la obtención de archivos en Teherán. Su presentación pública el 30/04/2018 consta en documentación estadounidense; los detalles de la operación no se dan por demostrados por la entrevista. Contraste documental posterior: Netanyahu sí presentó públicamente un supuesto archivo el 30/04/2018; el OIEA reiteró su evaluación preexistente el 01/05/2018, sin validar públicamente todo ese archivo. La procedencia y los detalles del supuesto acceso clandestino no se consideran acreditados solo por esta fuente.",
       "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=5121s",
       "episodeId": "idealab-f72-frattini",
       "podcastNotes": []
@@ -1976,6 +2028,54 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "note": "ENISA relaciona Stuxnet con entornos SCADA Siemens SIMATIC WinCC y STEP 7; infección por USB o recursos compartidos y ocultación mediante rootkit. Características técnicas verificadas, no atribución geopolítica.",
       "source": "https://www.enisa.europa.eu/news/enisa-news/stuxnet-analysis",
       "episodeId": "idealab-f72-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-netanyahu-presentacion-archivo-2018",
+      "a": "f72-netanyahu",
+      "b": "f72-archivo",
+      "type": "Netanyahu presentó públicamente el archivo atribuido a Irán el 30/04/2018",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.iranwatch.org/library/governments/israel/office-prime-minister/transcript-israeli-pm-netanyahu-irans-nuclear-program",
+      "episodeId": "idealab-f72-frattini",
+      "note": "Transcripción de la intervención del primer ministro israelí del 30/04/2018: dijo que Israel había obtenido documentación sobre el proyecto Amad. Se acredita que formuló y presentó esas afirmaciones, NO que todas las interpretaciones o los detalles de obtención estén validados por una entidad independiente; no se vincula al Mossad como autor exclusivo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-oiea-evaluacion-2015",
+      "a": "f72-oiea",
+      "b": "f72-informe-oiea-2015",
+      "type": "El OIEA publicó una evaluación oficial sobre las actividades nucleares militares pasadas de Irán",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.iaea.org/sites/default/files/gov-2015-68.pdf",
+      "episodeId": "idealab-f72-frattini",
+      "note": "GOV/2015/68, párrafos 87–88: actividad coordinada hasta 2003, trabajos posteriores no coordinados y ausencia de indicios creíbles de actividades de desarrollo de explosivo nuclear posteriores a 2009, en la evidencia disponible en 2015. La ausencia de indicios en aquella fecha no prueba nada por sí sola sobre la situación de 2026.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-oiea-comunicado-mayo-2018",
+      "a": "f72-oiea",
+      "b": "f72-comunicado-oiea-2018",
+      "type": "El portavoz del OIEA emitió una declaración el 1/05/2018",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.iranwatch.org/library/multilateral-organizations/international-atomic-energy-agency/iaea-director-generals-statement/statement-iran-iaea-spokesperson-final",
+      "episodeId": "idealab-f72-frattini",
+      "note": "Declaración oficial del OIEA del 1/05/2018, reproducida íntegra por Iran Watch: describe las conclusiones previas y la política de no comentar públicamente cada información de salvaguardias. Su emisión no equivale a avalar o desmentir públicamente los documentos israelíes.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-oiea-reitera-2015-en-2018",
+      "a": "f72-comunicado-oiea-2018",
+      "b": "f72-informe-oiea-2015",
+      "type": "Declaración de mayo de 2018 reitera la evaluación anterior sin examinar públicamente el archivo",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.iranwatch.org/library/multilateral-organizations/international-atomic-energy-agency/iaea-director-generals-statement/statement-iran-iaea-spokesperson-final",
+      "episodeId": "idealab-f72-frattini",
+      "note": "La declaración de 1/05/2018 remite a la evaluación final de diciembre de 2015. Por tanto, no debe transformarse en una corroboración pública de la autoría o de la totalidad de los documentos que presentó Netanyahu el 30/04/2018.",
       "podcastNotes": []
     }
   ]
