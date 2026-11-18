@@ -6,12 +6,13 @@ window.IDEA_TELARANA_F67_REVIEW =
     "sourceOrder": 67,
     "title": "F67 · Entrevista sobre Jesús y reliquias",
     "url": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
-    "reviewStage": "tercera_revision_fuentes_historicas_sturp_talmud_no_audio",
+    "reviewStage": "cuarta_revision_sturp_c14_testimonium_iconografia_sin_audio",
     "audioVerified": false,
-    "timecodesAvailable": true,
+    "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP.",
-    "automaticCaptions": true
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar.",
+    "automaticCaptions": true,
+    "captionTimeHintsAvailable": true
   },
   "nodes": [
     {
@@ -37,12 +38,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · pasaje textual sin minutaje verificado",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
           "timeSec": null,
-          "status": "relato_de_la_fuente_sin_audio",
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "El invitado se identifica como presidente del Centro Español de Sindonología y expone sus interpretaciones; la filiación es autorreferida en la entrevista.",
-          "transcriptSearch": "presidente del Centro Español"
+          "transcriptSearch": "presidente del Centro Español",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptCharOffset": 3304
         }
       ]
     },
@@ -84,21 +88,22 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Estudio de radiocarbono de la Sábana Santa",
       "kind": "Estudio",
       "subtitle": "Nature · 1989",
-      "note": "Damon y colaboradores publicaron en Nature (1989) la datación por AMS de muestras del lino en Arizona, Oxford y Zúrich: intervalo calibrado de 1260–1390 d.C. (95% de confianza). Trabajos posteriores discuten representatividad y contaminación de la muestra; cuestionar una prueba no demuestra por sí mismo que la pieza date del siglo I.",
+      "note": "Damon et al. (Nature, 1989): datación AMS de muestras tomadas en 1988 por laboratorios de Arizona, Oxford y ETH-Zúrich. Intervalo calibrado 1260–1390 d. C. con al menos 95 % de confianza. La controversia sobre dispersión o representatividad no establece automáticamente una fecha del siglo I.",
       "source": "https://www.nature.com/articles/337611a0",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=206",
-          "timeSec": 206,
-          "status": "relato_de_la_fuente_sin_audio",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "El invitado cuestiona que el carbono 14 cierre definitivamente el debate. El artículo de Nature de 1989 reportó 1260–1390 d. C. para las muestras; el trabajo de 2026 describe el debate posterior.",
           "transcriptSearch": "carbono 14",
           "minuteVerified": false,
-          "audioVerified": false
+          "audioVerified": false,
+          "transcriptCharOffset": 4031
         }
       ]
     },
@@ -114,14 +119,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=90",
-          "timeSec": 90,
-          "status": "relato_de_la_fuente_sin_audio",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "La conversación sostiene que téktōn significa constructor y descarta carpintero. Marcos 6:3 usa el término; su traducción y alcance requieren análisis lingüístico, no una identificación profesional tajante.",
           "transcriptSearch": "Tectón",
           "minuteVerified": false,
-          "audioVerified": false
+          "audioVerified": false,
+          "transcriptCharOffset": 1421
         }
       ]
     },
@@ -137,14 +143,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=50",
-          "timeSec": 50,
-          "status": "relato_de_la_fuente_sin_audio",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "Se reconoce en la entrevista que han existido reliquias falsificadas; la autenticidad individual requiere contraste específico.",
           "transcriptSearch": "falsificado reliquias",
           "minuteVerified": false,
-          "audioVerified": false
+          "audioVerified": false,
+          "transcriptCharOffset": 809
         }
       ]
     },
@@ -160,25 +167,27 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=240",
-          "timeSec": 240,
-          "status": "relato_de_la_fuente_sin_audio",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "El entrevistado menciona investigadores y publicaciones para defender su posición. La valoración debe atender a muestras, métodos, resultados y debate crítico, no sólo al prestigio.",
           "transcriptSearch": "laboratorio de los Álamos",
           "minuteVerified": false,
-          "audioVerified": false
+          "audioVerified": false,
+          "transcriptCharOffset": 4454
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=1491",
-          "timeSec": 1491,
-          "status": "relato_de_la_fuente_sin_audio",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "Los subtítulos recogen que los relatos desfavorables a los discípulos se interpretan como algo que no pudieron negar. Es un argumento histórico, no una garantía automática de exactitud.",
           "transcriptSearch": "desde el punto de vista del marketing",
           "minuteVerified": false,
-          "audioVerified": false
+          "audioVerified": false,
+          "transcriptCharOffset": 26822
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -186,7 +195,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://www.cambridge.org/core/books/abs/historical-jesus-and-the-temple/demise-of-authenticity-and-the-challenge-of-methodology/2175F425D96405783B2C862DFFBB54BF",
           "timeSec": null,
           "status": "verificacion-externa",
-          "text": "Un capítulo académico examina críticas a los criterios de autenticidad y la influencia de los estudios sobre memoria. El contexto histórico de un relato tampoco verifica por sí solo cada detalle."
+          "text": "Un capítulo académico examina críticas a los criterios de autenticidad y la influencia de los estudios sobre memoria. El contexto histórico de un relato tampoco verifica por sí solo cada detalle.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -195,20 +206,22 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Datación por radiocarbono",
       "kind": "Método",
       "subtitle": "Medición y calibración",
-      "note": "El cociente atmosférico de radiocarbono varía en el tiempo y se utilizan curvas de calibración; no existe un porcentaje universal de aciertos aplicable sin definir muestras y método.",
-      "source": "https://nucleus.iaea.org/sites/accelerators/AMS/SitePages/AMS-applications.aspx?web=1",
+      "note": "La abundancia atmosférica de carbono 14 varía históricamente; se calibran las fechas con curvas como IntCal20. La afirmación del invitado de un 70 % de «aciertos» carece de base, denominador y error tolerado. No equivale al intervalo de confianza de una medición concreta.",
+      "source": "https://ora.ox.ac.uk/objects/uuid:7c3fc66d-ec84-4e1e-bdb0-e6580a120860",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=5279",
-          "timeSec": 5279,
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
           "minuteVerified": false,
           "audioVerified": false,
-          "status": "relato",
-          "text": "La transcripción afirma un 70 % general de aciertos y que la proporción de radiocarbono es constante. No se facilita base para ese porcentaje; la OIEA explica variación atmosférica y calibración."
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La transcripción afirma un 70 % general de aciertos y que la proporción de radiocarbono es constante. No se facilita base para ese porcentaje; la OIEA explica variación atmosférica y calibración.",
+          "transcriptCharOffset": 93215,
+          "transcriptSearch": "70% de aciertos"
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -216,7 +229,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://nucleus.iaea.org/sites/accelerators/AMS/SitePages/AMS-applications.aspx?web=1",
           "timeSec": null,
           "status": "fuente-externa",
-          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha."
+          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -225,20 +240,22 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Análisis de fragmentos de 1988 publicado en 2026",
       "kind": "Estudio",
       "subtitle": "Tejido y contaminación",
-      "note": "El estudio examinó dos fragmentos y concluyó que eran consistentes con el tejido principal y no mostraban contaminación detectable en ese análisis; no equivale a un nuevo fechado de toda la tela.",
+      "note": "Estudio 2026 de npj Heritage Science sobre fragmentos A1A/A1B de las muestras de 1988 archivadas en Arizona. Las dos piezas examinadas son compatibles con el tejido principal y no presentan signos de reparación ni contaminación significativos detectables. No es una nueva datación del lienzo completo.",
       "source": "https://www.nature.com/articles/s40494-026-02530-7",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · contraste científico posterior a la transcripción",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=5370",
-          "timeSec": 5370,
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
           "minuteVerified": false,
           "audioVerified": false,
-          "status": "contraste_editorial_externo_sin_mencion_acreditada_en_txt",
-          "text": "La entrevista atribuye el resultado a contaminación de la esquina. El estudio de 2026 examinó dos fragmentos y no observó contaminación en su análisis; su alcance es limitado y no es un nuevo fechado integral."
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La entrevista atribuye el resultado a contaminación de la esquina. El estudio de 2026 examinó dos fragmentos y no observó contaminación en su análisis; su alcance es limitado y no es un nuevo fechado integral.",
+          "transcriptCharOffset": 95061,
+          "transcriptSearch": "una esquina que estaba negra"
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -246,7 +263,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://www.nature.com/articles/s40494-026-02530-7",
           "timeSec": null,
           "status": "contraste_editorial_externo_sin_mencion_acreditada_en_txt",
-          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha."
+          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -262,13 +281,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=4845",
-          "timeSec": 4845,
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
           "minuteVerified": false,
           "audioVerified": false,
-          "status": "relato",
-          "text": "La fuente interpreta posición y secuencia de manchas como evidencia decisiva. Estudios forenses usan hipótesis y simulaciones diferentes; no se atribuye una conclusión única sin evaluar sus métodos."
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La fuente interpreta posición y secuencia de manchas como evidencia decisiva. Estudios forenses usan hipótesis y simulaciones diferentes; no se atribuye una conclusión única sin evaluar sus métodos.",
+          "transcriptCharOffset": 85388,
+          "transcriptSearch": "la huella del cuerpo y es una proyección"
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -276,7 +297,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://pubmed.ncbi.nlm.nih.gov/29989172/",
           "timeSec": null,
           "status": "fuente-externa",
-          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha."
+          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -314,13 +337,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=5203",
-          "timeSec": 5203,
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
           "minuteVerified": false,
           "audioVerified": false,
-          "status": "relato",
-          "text": "La conversación relaciona el Sudario de Oviedo con Juan 20:7 y con manchas de Turín; esas asociaciones requieren pruebas independientes y no identifican por sí mismas los objetos."
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La conversación relaciona el Sudario de Oviedo con Juan 20:7 y con manchas de Turín; esas asociaciones requieren pruebas independientes y no identifican por sí mismas los objetos.",
+          "transcriptCharOffset": 91968,
+          "transcriptSearch": "el sudario que está en Oviedo"
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -328,7 +353,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://www.biblegateway.com/passage/?search=John+20%3A7&version=NRSVUE",
           "timeSec": null,
           "status": "fuente-externa",
-          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha."
+          "text": "El documento citado aporta contexto para evaluar la afirmación; sus métodos y límites se indican en la ficha.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -337,21 +364,22 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Moneda de Justiniano II con imagen de Cristo",
       "kind": "Objeto",
       "subtitle": "Constantinopla · 692–695",
-      "note": "El Met cataloga un sólido de Justiniano II con imagen de Cristo en 692–695. No se ha identificado la moneda precisa aludida en la entrevista.",
+      "note": "El Met cataloga un sólido bizantino de Justiniano II con Cristo (692–695 d. C.), del siglo VII, mientras que el vídeo habla de monedas de «Justiniano del siglo VI». La semejanza alegada con la Síndone no verifica un vínculo de copia ni identifica el ejemplar concreto.",
       "source": "https://www.metmuseum.org/art/collection/search/463390",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=462",
-          "timeSec": 462,
-          "status": "relato_de_la_fuente_sin_audio",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "Los subtítulos atribuyen a monedas de Justiniano del siglo VI rasgos semejantes a la Sábana y proponen una relación. El objeto concreto y las palabras requieren cotejo con el audio.",
           "transcriptSearch": "monedas del siglo VI de Justiniano",
           "minuteVerified": false,
-          "audioVerified": false
+          "audioVerified": false,
+          "transcriptCharOffset": 8675
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -359,7 +387,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://www.metmuseum.org/art/collection/search/463390",
           "timeSec": null,
           "status": "verificacion-externa",
-          "text": "El Met fecha este ejemplar de Justiniano II en 692–695, siglo VII. Una semejanza visual, por sí sola, no demuestra copia ni identifica su modelo."
+          "text": "El Met fecha este ejemplar de Justiniano II en 692–695, siglo VII. Una semejanza visual, por sí sola, no demuestra copia ni identifica su modelo.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -375,14 +405,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · subtítulos automáticos, tiempo orientativo",
-          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q&t=937",
-          "timeSec": 937,
-          "status": "relato_de_la_fuente_sin_audio",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
           "text": "Los subtítulos recogen una opinión que presenta el Corán como negación de Cristo incluso histórica. Pendiente cotejar audio y voces.",
           "transcriptSearch": "el Corán por ejemplo",
           "minuteVerified": false,
-          "audioVerified": false
+          "audioVerified": false,
+          "transcriptCharOffset": 16521
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -390,7 +421,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://quran.com/3/45",
           "timeSec": null,
           "status": "verificacion-externa",
-          "text": "El pasaje 3:45 nombra a Jesús, hijo de María; esto no equivale a una negación textual de su existencia."
+          "text": "El pasaje 3:45 nombra a Jesús, hijo de María; esto no equivale a una negación textual de su existencia.",
+          "minuteVerified": false,
+          "audioVerified": false
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -398,7 +431,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://quran.com/4/157",
           "timeSec": null,
           "status": "verificacion-externa",
-          "text": "El pasaje 4:157 afirma que no lo mataron ni crucificaron; es una afirmación del texto religioso y no resuelve por sí sola una cuestión histórica."
+          "text": "El pasaje 4:157 afirma que no lo mataron ni crucificaron; es una afirmación del texto religioso y no resuelve por sí sola una cuestión histórica.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -414,11 +449,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · atribución a entrevistado sin minutaje contrastado",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
           "timeSec": null,
-          "status": "afirmacion_de_la_fuente_pendiente_de_contraste_textual",
-          "text": "El invitado menciona interpolaciones cristianas en Flavio Josefo y alude a una versión transmitida por vía árabe. La existencia de tradiciones textuales diferentes no permite aceptar sin cotejo de manuscritos todo el resumen histórico que propone."
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El invitado menciona interpolaciones cristianas en Flavio Josefo y alude a una versión transmitida por vía árabe. La existencia de tradiciones textuales diferentes no permite aceptar sin cotejo de manuscritos todo el resumen histórico que propone.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptCharOffset": 57478,
+          "transcriptSearch": "testimonio Flaviano"
         }
       ]
     },
@@ -427,18 +466,22 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Agapio de Hierápolis y la transmisión árabe de Josefo",
       "kind": "Texto",
       "subtitle": "Crónica medieval · siglo X",
-      "note": "Agapio de Hierápolis, obispo melquita del siglo X, transmitió en su crónica árabe una versión medieval del Testimonium Flavianum. Alice Whealey (2008) concluye que la versión de Agapio y la de Miguel el Sirio derivan de una traducción siríaca de la Historia Eclesiástica de Eusebio de Cesarea; no son dos testimonios independientes de la vida de Jesús. Whealey sostiene que ciertas lecturas de Miguel el Sirio pueden estar más próximas al original que las de Agapio. Esto no resuelve por completo las interpolaciones del texto griego.",
-      "source": "https://doi.org/10.1017/S0028688508000301",
+      "note": "Alice Whealey (New Testament Studies, 2008) sostiene que Agapio y Miguel el Sirio dependen de una misma transmisión siríaca de Eusebio del Testimonium. Son testigos manuscritos posteriores vinculados por filiación textual; no dos narraciones independientes sobre Jesús.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/testimonium-flavianum-in-syriac-and-arabic/B4DEE97CBF8CFE997C9C9CA6C4E583AC",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · versión oriental del Testimonium; cotejo filológico",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
           "timeSec": null,
-          "status": "afirmacion_del_entrevistado_contextualizada_con_bibliografia",
-          "text": "El entrevistado alude a una transmisión por vía musulmana de un pasaje de Josefo supuestamente libre de interpolaciones. La versión de Agapio debe tratarse como testigo textual medieval, no como comprobación automática de cada detalle relatado."
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El entrevistado alude a una transmisión por vía musulmana de un pasaje de Josefo supuestamente libre de interpolaciones. La versión de Agapio debe tratarse como testigo textual medieval, no como comprobación automática de cada detalle relatado.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptCharOffset": 58344,
+          "transcriptSearch": "por la vía musulmana"
         },
         {
           "episodeId": "idealab-f67-entrevista-jesus",
@@ -446,7 +489,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://doi.org/10.1017/S0028688508000301",
           "timeSec": null,
           "status": "contraste_filologico_publicado",
-          "text": "El análisis filológico reconstruye una transmisión común por la versión siríaca de Eusebio. No se deben contar Agapio y Miguel el Sirio como testimonios históricos independientes sobre Jesús."
+          "text": "El análisis filológico reconstruye una transmisión común por la versión siríaca de Eusebio. No se deben contar Agapio y Miguel el Sirio como testimonios históricos independientes sobre Jesús.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -466,7 +511,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://doi.org/10.1017/S0028688508000301",
           "timeSec": null,
           "status": "contexto_documental_no_mencion_confirmada_en_fuente",
-          "text": "Se incorpora a Miguel el Sirio para explicar la transmisión textual del pasaje. No consta que su nombre se mencione explícitamente en el vídeo; no se atribuye al entrevistado."
+          "text": "Se incorpora a Miguel el Sirio para explicar la transmisión textual del pasaje. No consta que su nombre se mencione explícitamente en el vídeo; no se atribuye al entrevistado.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -486,7 +533,9 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://doi.org/10.1093/9780191957697.005.0002",
           "timeSec": null,
           "status": "documentacion_externa_no_cita_verificada_del_video",
-          "text": "El entrevistado discute el Testimonium Flavianum (18.63–64), pero el estudio histórico debe distinguirlo de la mención a Santiago y Jesús de Antigüedades 20.200, cuya autenticidad cuenta con apoyo mayoritario y objeciones minoritarias."
+          "text": "El entrevistado discute el Testimonium Flavianum (18.63–64), pero el estudio histórico debe distinguirlo de la mención a Santiago y Jesús de Antigüedades 20.200, cuya autenticidad cuenta con apoyo mayoritario y objeciones minoritarias.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -495,19 +544,22 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "STURP y el examen de la Sábana Santa (1978)",
       "kind": "Estudio",
       "subtitle": "Investigación instrumental · Applied Optics (1980)",
-      "note": "El Shroud of Turin Research Project (STURP) realizó estudios instrumentales del lienzo en octubre de 1978. Jumper y Mottern (Applied Optics, 1980) describen un equipo de 32 miembros entre científicos y técnicos, y presentan publicaciones sobre espectroscopia, termografía y pruebas ópticas. En el TXT, el invitado menciona 33 científicos, 150.000 horas y 27 artículos; estas cifras precisas no quedan acreditadas por el artículo consultado y requieren recuento bibliográfico independiente. La realización de estudios no establece por sí sola la autenticidad de la reliquia.",
+      "note": "STURP realizó ensayos sobre la Síndone en 1978 y publicó resultados instrumentales en revistas científicas. El invitado afirma 33 científicos, 150.000 horas y 27 publicaciones; no se han comprobado con un inventario y criterio de recuento auditable. Un estudio óptico no equivale a autenticar la tela como mortaja de Jesús.",
       "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-19-12-1909",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · STURP: cifras atribuidas frente a publicación original",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
           "timeSec": null,
-          "status": "declaracion_atribuida_y_contraste_documental_sin_audio",
+          "status": "transcripcion_sin_cotejo_de_audio",
           "transcriptSearch": "150,000 horas de estudio",
-          "text": "El invitado afirma que STURP reunió 33 científicos, nueve de Los Álamos, trabajó 150.000 horas y publicó 27 artículos. Jumper y Mottern (1980) hablan de 32 integrantes entre científicos y técnicos. Los otros recuentos necesitan un inventario bibliográfico y no se presentan como verificados."
+          "text": "El invitado afirma que STURP reunió 33 científicos, nueve de Los Álamos, trabajó 150.000 horas y publicó 27 artículos. Jumper y Mottern (1980) hablan de 32 integrantes entre científicos y técnicos. Los otros recuentos necesitan un inventario bibliográfico y no se presentan como verificados.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptCharOffset": 4643
         }
       ]
     },
@@ -523,12 +575,15 @@ window.IDEA_TELARANA_F67_REVIEW =
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · referencia al Talmud atribuida, sin minuto verificado",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
           "timeSec": null,
-          "status": "testimonio_entrevista_no_prueba_independiente",
+          "status": "transcripcion_sin_cotejo_de_audio",
           "transcriptSearch": "el Talmud no es muy a favor",
-          "text": "El entrevistado cita un relato talmúdico y deduce de él existencia histórica y milagros. El texto es tardío y polémico; corresponde distinguir la narración rabínica de una prueba contemporánea y evitar extrapolaciones al judaísmo en su conjunto."
+          "text": "El entrevistado cita un relato talmúdico y deduce de él existencia histórica y milagros. El texto es tardío y polémico; corresponde distinguir la narración rabínica de una prueba contemporánea y evitar extrapolaciones al judaísmo en su conjunto.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptCharOffset": 424
         }
       ]
     },
@@ -537,19 +592,22 @@ window.IDEA_TELARANA_F67_REVIEW =
       "name": "Afirmación: «solo unos veinte textos» del siglo I",
       "kind": "Declaración",
       "subtitle": "Cifra atribuida al entrevistado · sin inventario",
-      "note": "En el TXT el entrevistado sostiene que sobreviven unos veinte textos romanos del siglo I, de ellos cuatro históricos, y que todos los que podrían citar a Jesús lo hacen. No proporciona corpus, criterio de conservación, tipología ni catálogo bibliográfico que permita comprobar las cifras. No puede inferirse un porcentaje de menciones sin definir previamente el universo y sus exclusiones. Declaración no verificada, no estadística histórica establecida.",
+      "note": "El invitado calcula 20 textos del Imperio romano del siglo I, 4 historiográficos y 100 % de los seleccionados como pertinentes para Jesús, sin aportar inventario ni reglas predefinidas de selección; porcentaje no reproducible y sujeto a sesgo de selección.",
       "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
       "topic3d": "historia",
       "photo": "",
       "podcastNotes": [
         {
           "episodeId": "idealab-f67-entrevista-jesus",
-          "title": "F67 · afirmación numérica pendiente de contraste",
+          "title": "F67 · cita TXT exacta sin minuto cotejado",
           "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
           "timeSec": null,
-          "status": "afirmacion_cuantitativa_no_verificada",
+          "status": "transcripcion_sin_cotejo_de_audio",
           "transcriptSearch": "textos de el siglo primero que hablen de historia",
-          "text": "El invitado afirma que se conservarían unos veinte textos romanos del siglo I y cuatro de historia, con un resultado de 100 % de menciones entre los que considera pertinentes. Falta definir el corpus, los criterios de selección y la bibliografía; no se presenta como dato probado."
+          "text": "El invitado afirma que se conservarían unos veinte textos romanos del siglo I y cuatro de historia, con un resultado de 100 % de menciones entre los que considera pertinentes. Falta definir el corpus, los criterios de selección y la bibliografía; no se presenta como dato probado.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptCharOffset": 56934
         }
       ]
     },
@@ -569,7 +627,308 @@ window.IDEA_TELARANA_F67_REVIEW =
           "source": "https://doi.org/10.1017/S0028688508000301",
           "timeSec": null,
           "status": "contraste_filologico_externo_no_mencion_entrevista",
-          "text": "Whealey reconstruye la dependencia común de versiones árabe y siríaca de Josefo por la traducción siríaca de la Historia eclesiástica de Eusebio."
+          "text": "Whealey reconstruye la dependencia común de versiones árabe y siríaca de Josefo por la traducción siríaca de la Historia eclesiástica de Eusebio.",
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f67-paper-sturp-1980",
+      "name": "STURP: Jumper y Mottern (1980)",
+      "kind": "Estudio",
+      "subtitle": "Applied Optics 19, 1909–1912",
+      "note": "Publicación que introduce tres estudios instrumentales de STURP. Confirma experimentos concretos, no autentifica identidad ni corrobora automáticamente 150.000 horas o 27 artículos.",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-19-12-1909",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "La entrevista da un número no comprobado en este artículo.",
+          "transcriptCharOffset": 4700,
+          "transcriptSearch": "publicaron 27 publicaciones en revistas científicas"
+        }
+      ]
+    },
+    {
+      "id": "f67-paper-pellicori-1980",
+      "name": "STURP: espectros de Pellicori (1980)",
+      "kind": "Estudio",
+      "subtitle": "Applied Optics 19, 1913–1920",
+      "note": "Análisis espectrofotométrico y posible degradación localizada de celulosa. La química de la impronta no establece identidad del cuerpo ni año de manufactura.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20221155/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "Observación de fibras, no prueba de autenticidad.",
+          "transcriptCharOffset": 88255,
+          "transcriptSearch": "la degradación de la celosa del lino"
+        }
+      ]
+    },
+    {
+      "id": "f67-sturp-count",
+      "name": "Cifras no auditadas de STURP",
+      "kind": "Declaración",
+      "subtitle": "150.000 horas / 27 publicaciones / 33 integrantes",
+      "note": "La entrevista aporta estas cantidades sin listado de horas-persona, títulos de artículos o relación oficial de integrantes. Mantener como alegación atribuida, no como hecho demostrado.",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-19-12-1909",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "El número no se ha acreditado mediante un inventario completo.",
+          "transcriptCharOffset": 4643,
+          "transcriptSearch": "150,000 horas de estudio"
+        }
+      ]
+    },
+    {
+      "id": "f67-labs-1988",
+      "name": "Tres laboratorios AMS del fechado de 1988",
+      "kind": "Tema",
+      "subtitle": "Arizona, Oxford y ETH-Zúrich",
+      "note": "Las mediciones realizadas por los tres laboratorios fueron publicadas conjuntamente en Nature (1989). Las diferencias entre mediciones deben analizarse según incertidumbres y el protocolo de muestreo.",
+      "source": "https://www.nature.com/articles/337611a0",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "La entrevista alude a diferencias; la publicación identifica los tres laboratorios.",
+          "transcriptCharOffset": 95987,
+          "transcriptSearch": "tres laboratorios"
+        }
+      ]
+    },
+    {
+      "id": "f67-1988-sampling",
+      "name": "Muestreo del lienzo el 21 de abril de 1988",
+      "kind": "Acontecimiento",
+      "subtitle": "Muestras tomadas para AMS",
+      "note": "El artículo textil de 2026 reconstruye la extracción de muestras en 1988. Arizona conservó los fragmentos A1A y A1B que el estudio reexaminó, sin datar todo el lienzo.",
+      "source": "https://www.nature.com/articles/s40494-026-02530-7",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "La entrevista objeta la representatividad; las piezas estudiadas en 2026 no mostraron reparación significativa.",
+          "transcriptCharOffset": 95061,
+          "transcriptSearch": "una esquina que estaba negra"
+        }
+      ]
+    },
+    {
+      "id": "f67-intcal20",
+      "name": "Curva IntCal20 de calibración 14C",
+      "kind": "Documento",
+      "subtitle": "Calibración internacional · 2020",
+      "note": "Las fluctuaciones del carbono 14 en la atmósfera se compensan con curvas basadas en fechas independientemente conocidas. El supuesto de concentración invariable citado en el vídeo es una simplificación errónea.",
+      "source": "https://ora.ox.ac.uk/objects/uuid:7c3fc66d-ec84-4e1e-bdb0-e6580a120860",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "El método actual requiere calibración.",
+          "transcriptCharOffset": 93569,
+          "transcriptSearch": "esa es una proporción que permanece constante"
+        }
+      ]
+    },
+    {
+      "id": "f67-claim70",
+      "name": "Afirmación «70 % de aciertos» del carbono 14",
+      "kind": "Declaración",
+      "subtitle": "Estadística sin metodología",
+      "note": "La entrevista ofrece un supuesto 70 % de precisión del radiocarbono sin especificar muestra de validación, margen de error ni criterio de acierto. No se puede tomar como probabilidad universal.",
+      "source": "https://ora.ox.ac.uk/objects/uuid:7c3fc66d-ec84-4e1e-bdb0-e6580a120860",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "No hay denominador ni definición para esa tasa.",
+          "transcriptCharOffset": 93215,
+          "transcriptSearch": "70% de aciertos"
+        }
+      ]
+    },
+    {
+      "id": "f67-interlab",
+      "name": "Reanálisis estadístico de laboratorios (2019/2020)",
+      "kind": "Estudio",
+      "subtitle": "Journal of Archaeological Science: Reports",
+      "note": "Discute la heterogeneidad de medidas de 1988 e hipótesis sobre dispersión de datos. La discrepancia estadística no demuestra automáticamente una fecha de fabricación antigua.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S2352409X19301865",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "Una comparación de resultados requiere sus distribuciones, incertidumbres y modelización.",
+          "transcriptCharOffset": 96007,
+          "transcriptSearch": "hay dos que son incompatibles"
+        }
+      ]
+    },
+    {
+      "id": "f67-dna2026",
+      "name": "Metagenómica de muestras de la Síndone (2026)",
+      "kind": "Estudio",
+      "subtitle": "Scientific Reports · julio de 2026",
+      "note": "Trabajo sobre rastros de ADN en muestras del lienzo. Sus autores no pudieron fecharlo mediante metagenómica. Es un estudio independiente y posterior, que no se atribuye a la conversación.",
+      "source": "https://www.nature.com/articles/s41598-026-60684-7",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-justiniano-i",
+      "name": "Justiniano I",
+      "kind": "Persona",
+      "subtitle": "Emperador bizantino · 527–565",
+      "note": "Gobernó en el siglo VI; es distinto de Justiniano II, en cuyo reinado aparecieron monedas con imagen de Cristo como el sólido del Met de 692–695.",
+      "source": "https://www.ngccoin.com/news/article/5792/Christ-portrait-ancient-coins/",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "El nombre en el vídeo es ambiguo, no se atribuye el ejemplar a Justiniano I.",
+          "transcriptCharOffset": 8675,
+          "transcriptSearch": "monedas del siglo VI de Justiniano"
+        }
+      ]
+    },
+    {
+      "id": "f67-justiniano-ii",
+      "name": "Justiniano II",
+      "kind": "Persona",
+      "subtitle": "Emperador bizantino · 685–695 y 705–711",
+      "note": "El sólido de 692–695 catalogado por el Met se acuñó bajo Justiniano II. No demuestra la antigüedad de la Síndone ni que sirviera como modelo para acuñar el Cristo de la moneda.",
+      "source": "https://www.metmuseum.org/art/collection/search/463390",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "La identificación del tipo numismático es externa, no del objeto preciso del vídeo.",
+          "transcriptCharOffset": 8675,
+          "transcriptSearch": "monedas del siglo VI de Justiniano"
+        }
+      ]
+    },
+    {
+      "id": "f67-hyp-radiacion",
+      "name": "Hipótesis de radiación para la Síndone",
+      "kind": "Tema",
+      "subtitle": "Mecanismo de formación no verificado",
+      "note": "El invitado menciona radiación como explicación de la imagen sin especificar experimento reproducido ni mecanismo confirmado. Una incógnita de formación no acredita identidad histórica ni hipótesis sobrenatural.",
+      "source": "https://doi.org/10.3390/textiles5010008",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "La propuesta física no se trata como hecho establecido.",
+          "transcriptCharOffset": 88357,
+          "transcriptSearch": "algún tipo de radiación"
+        }
+      ]
+    },
+    {
+      "id": "f67-clases-prueba",
+      "name": "Pruebas distintas: edad, imagen e identidad",
+      "kind": "Método",
+      "subtitle": "No equiparar datación con procedencia",
+      "note": "STURP examina propiedades físicas; AMS fecha muestras; metagenómica encuentra trazas; monedas ofrecen iconografía. Cada pregunta tiene inferencias y límites distintos. Ninguna demuestra por sí misma que envolviera a Jesús.",
+      "source": "https://doi.org/10.3390/textiles5010008",
+      "topic3d": "historia",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f67-entrevista-jesus",
+          "title": "F67 · texto exacto, minutaje no verificado",
+          "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "transcripcion_sin_audio",
+          "text": "Una anomalía física no demuestra procedencia histórica.",
+          "transcriptCharOffset": 88950,
+          "transcriptSearch": "la física y la química de la síndone no tiene explicación"
         }
       ]
     }
@@ -936,6 +1295,248 @@ window.IDEA_TELARANA_F67_REVIEW =
       "confidence": "documentado",
       "source": "https://doi.org/10.1017/S0028688508000301",
       "note": "Según Whealey, Miguel el Sirio conserva otra versión derivada de la traducción siríaca de Eusebio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-sturp-pub",
+      "a": "f67-sturp-1978",
+      "b": "f67-paper-sturp-1980",
+      "type": "Publicación científica específica",
+      "confidence": "documentado",
+      "claimStatus": "publicacion_documentada",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-19-12-1909",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-sturp-spect",
+      "a": "f67-sturp-1978",
+      "b": "f67-paper-pellicori-1980",
+      "type": "Datos espectroscópicos",
+      "confidence": "documentado",
+      "claimStatus": "publicacion_documentada",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20221155/",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-sturp-count",
+      "a": "f67-sturp-1978",
+      "b": "f67-sturp-count",
+      "type": "Alegación numérica no auditada",
+      "confidence": "indicio",
+      "claimStatus": "cifra_en_transcripcion",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-sturp-video",
+      "a": "f67-episodio",
+      "b": "f67-sturp-count",
+      "type": "Mención textual de cifras",
+      "confidence": "indicio",
+      "claimStatus": "afirmacion_sin_inventario",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-pellicori-pattern",
+      "a": "f67-paper-pellicori-1980",
+      "b": "f67-patrones",
+      "type": "Estudio de fibras sin identidad",
+      "confidence": "documentado",
+      "claimStatus": "metodo_documentado",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20221155/",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-labs-date",
+      "a": "f67-labs-1988",
+      "b": "f42-radiocarbono",
+      "type": "Tres laboratorios AMS",
+      "confidence": "documentado",
+      "claimStatus": "resultados_cientificos",
+      "source": "https://www.nature.com/articles/337611a0",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-sampling-date",
+      "a": "f67-1988-sampling",
+      "b": "f67-labs-1988",
+      "type": "Toma previa a análisis AMS",
+      "confidence": "documentado",
+      "claimStatus": "protocolo_documentado",
+      "source": "https://www.nature.com/articles/s40494-026-02530-7",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-sampling-2026",
+      "a": "f67-1988-sampling",
+      "b": "f67-muestra2026",
+      "type": "Fragmentos conservados y reexaminados",
+      "confidence": "documentado",
+      "claimStatus": "material_documentado",
+      "source": "https://www.nature.com/articles/s40494-026-02530-7",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-14c-cal",
+      "a": "f67-intcal20",
+      "b": "f67-datacion",
+      "type": "Calibración para variaciones atmosféricas",
+      "confidence": "documentado",
+      "claimStatus": "metodo_documentado",
+      "source": "https://ora.ox.ac.uk/objects/uuid:7c3fc66d-ec84-4e1e-bdb0-e6580a120860",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-claim70-video",
+      "a": "f67-episodio",
+      "b": "f67-claim70",
+      "type": "Afirmación porcentual del invitado",
+      "confidence": "indicio",
+      "claimStatus": "cita_no_comprobada",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-claim70-cal",
+      "a": "f67-claim70",
+      "b": "f67-intcal20",
+      "type": "Porcentaje no universal",
+      "confidence": "documentado",
+      "claimStatus": "limite_de_inferencia",
+      "source": "https://ora.ox.ac.uk/objects/uuid:7c3fc66d-ec84-4e1e-bdb0-e6580a120860",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-interlab-c14",
+      "a": "f67-interlab",
+      "b": "f42-radiocarbono",
+      "type": "Heterogeneidad de resultados",
+      "confidence": "documentado",
+      "claimStatus": "reevaluacion_estadistica",
+      "source": "https://www.sciencedirect.com/science/article/pii/S2352409X19301865",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-dna-sindone",
+      "a": "f67-dna2026",
+      "b": "f42-sudario",
+      "type": "Estudio posterior no citado",
+      "confidence": "documentado",
+      "claimStatus": "estudio_externo",
+      "source": "https://www.nature.com/articles/s41598-026-60684-7",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-dna-fragments",
+      "a": "f67-dna2026",
+      "b": "f67-muestra2026",
+      "type": "Estudios 2026 distintos",
+      "confidence": "documentado",
+      "claimStatus": "metodos_diferentes",
+      "source": "https://www.nature.com/articles/s41598-026-60684-7",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-justinian-comparison",
+      "a": "f67-justiniano-i",
+      "b": "f67-justiniano-ii",
+      "type": "Personas y siglos distintos",
+      "confidence": "documentado",
+      "claimStatus": "cronologia_historica",
+      "source": "https://www.ngccoin.com/news/article/5792/Christ-portrait-ancient-coins/",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-justinian-coin",
+      "a": "f67-justiniano-ii",
+      "b": "f67-moneda-justiniano",
+      "type": "Sólido 692–695",
+      "confidence": "documentado",
+      "claimStatus": "catalogacion_museo",
+      "source": "https://www.metmuseum.org/art/collection/search/463390",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-justinian-video",
+      "a": "f67-episodio",
+      "b": "f67-justiniano-i",
+      "type": "Mención sin número identificador",
+      "confidence": "indicio",
+      "claimStatus": "atribucion_no_univoca",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-radiation-video",
+      "a": "f67-episodio",
+      "b": "f67-hyp-radiacion",
+      "type": "Hipótesis citada",
+      "confidence": "indicio",
+      "claimStatus": "hipotesis_testimonio",
+      "source": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-radiation-shroud",
+      "a": "f67-hyp-radiacion",
+      "b": "f42-sudario",
+      "type": "Sin experimento que valide la hipótesis",
+      "confidence": "hipotesis",
+      "claimStatus": "hipotesis_no_comprobada",
+      "source": "https://doi.org/10.3390/textiles5010008",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-classes-carbon",
+      "a": "f67-clases-prueba",
+      "b": "f42-radiocarbono",
+      "type": "Datación de muestra no implica identidad",
+      "confidence": "documentado",
+      "claimStatus": "distincion_metodologica",
+      "source": "https://www.nature.com/articles/337611a0",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-classes-spect",
+      "a": "f67-clases-prueba",
+      "b": "f67-paper-pellicori-1980",
+      "type": "Imagen no equivale a autenticidad",
+      "confidence": "documentado",
+      "claimStatus": "distincion_metodologica",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20221155/",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-r4-agapius-eusebio",
+      "a": "f67-agapio-testimonium",
+      "b": "f67-eusebio-historia-eclesiastica",
+      "type": "Transmisión siríaca común",
+      "confidence": "documentado",
+      "claimStatus": "revision_filologica",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/testimonium-flavianum-in-syriac-and-arabic/B4DEE97CBF8CFE997C9C9CA6C4E583AC",
+      "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
       "podcastNotes": []
     }
   ]
