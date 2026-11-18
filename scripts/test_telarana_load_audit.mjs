@@ -99,6 +99,43 @@ for(const name of ["Theodor Morell","Identificación odontológica de Hitler"]){
   "Pérdida de aportaciones de F71/F74 por fusión: "+name);
 }
 
+// La deduplicación de parejas no elimina la procedencia individual.
+const checkEvidence=(edgeId,expected)=>{
+ const edge=ctx.data.edges.find(x=>x.id===edgeId);
+ assert(edge&&Array.isArray(edge.relationEvidence)&&edge.relationEvidence.length>=expected.length,
+  "La relación ha perdido afirmaciones en "+edgeId);
+ for(const [episode,host,status] of expected){
+  assert(edge.relationEvidence.some(x=>x.episodeId.includes(episode)&&x.source.includes(host)&&x.claimStatus===status),
+   "Fuente o calificación omitida en "+edgeId+" / "+episode);
+ }
+};
+checkEvidence("vf150-f69-r4-pegasus-sanchez",[
+ ["vaquero-150","efe.com","resolucion_judicial_reportada"],
+ ["idealab-f73","reuters.com","hecho_verificado_independiente"]
+]);
+checkEvidence("vf150-edge-006",[
+ ["vaquero-150","yadvashem.org","hecho_verificado_independiente"],
+ ["idealab-f72","main.knesset.gov.il","hecho_verificado_independiente"]
+]);
+checkEvidence("f72-doc-pagers-hizbula",[
+ ["idealab-f72","lebanon.un.org","hecho_verificado_independiente"],
+ ["idealab-f73","lebanon.un.org","hecho_verificado_independiente"]
+]);
+// Cada enlace documental usado en F69–F74 debe estar autorizado para abrirse.
+const hostsMatch=html.match(/var hosts=(\[[^;]+\]);/);
+assert(hostsMatch,"Falta la lista de dominios públicos admitidos");
+const allowedHosts=new Set(JSON.parse(hostsMatch[1]));
+for(const mod of [ctx.window.IDEA_TELARANA_PODCAST_150,
+ ...[70,71,72,73,74].map(n=>ctx.window["IDEA_TELARANA_F"+n+"_REVIEW"])]){
+ for(const item of [...mod.nodes,...mod.edges]){
+  for(const url of [item.source,...(item.podcastNotes||[]).map(n=>n.source)]){
+   if(!/^https:\/\//i.test(String(url||"")))continue;
+   assert(allowedHosts.has(new URL(url).hostname),"Enlace invisible en panel: "+url);
+  }
+ }
+}
+assert(!allowedHosts.has("example-attacker.invalid"),"No se deben permitir dominios arbitrarios");
+
 const summary=audit.reduce((n,r)=>n+r.added,0);
 assert.equal(summary,ctx.data.nodes.length,"Las altas de cada etapa no cuadran con el total");
 const ids=new Set(ctx.data.nodes.map(n=>n.id));
