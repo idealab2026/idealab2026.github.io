@@ -11,7 +11,7 @@ const isolate=(start,end)=>{
  return html.slice(a,b);
 };
 const methods=isolate("function sanitizePodcastNotes(value){","function mergePodcastStudy(v){")+
- "\n"+isolate("function mergeNewEpisode(v){","function mergeStudy(v){");
+ "\n"+isolate("function relationClaimRecord(edge,defaultEpisodeId){","function mergeStudy(v){");
 const data={nodes:[{
  id:"f39-howard-carter",name:"Howard Carter",kind:"Persona",subtitle:"Arqueólogo",
  note:"Descripción previa preservada",source:"https://www.youtube.com/watch?v=example",
