@@ -15,7 +15,7 @@ const html=read("index.html");
 assert.match(html,/id="history-search-results"/);
 assert.match(html,/id="history-search-matches"/);
 assert.match(html,/id="history-search-status"/);
-assert.match(html,/timeline-v4\.js\?v=20261116-acad-search/);
+assert.match(html,/timeline-v4\.js\?v=20261118-monthly-axis/);
 
 const begin=src.indexOf("var historySearchAliases=");
 const end=src.indexOf("function visible(){",begin);
