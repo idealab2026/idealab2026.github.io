@@ -1327,8 +1327,8 @@ window.IDEA_TELARANA_F72_REVIEW = {
     "lastMarker": "03:07:18",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "tercera_revision_stuxnet_enisa_tecnica_y_atribucion_separadas",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: ENISA 2010 confirma funcionamiento y software industrial objetivo de Stuxnet, no autoría estatal. Dos relaciones técnicas incorporadas como contexto externo; sin cotejo del audio.",
+    "reviewStage": "cuarta_revision_cruce_f69_f73_pagers_fuente_primaria_20261118",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: ENISA 2010 confirma funcionamiento y software industrial objetivo de Stuxnet, no autoría estatal. Dos relaciones técnicas incorporadas como contexto externo; sin cotejo del audio. Cuarta revisión 18/11/2026: la arista de víctimas por buscapersonas se respalda con comunicado ONU (18/09/2024); declaración portavoz israelí queda documentada por Reuters en F73, sin concluir que una unidad concreta del Mossad ejecutara el operativo.",
     "independentDocumentaryRelations": 5,
     "crossSourceLinks": [
       69,
@@ -1949,9 +1949,9 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "type": "Explosiones de dispositivos empleados también por miembros de Hizbulá",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
-      "source": "https://www.reuters.com/world/middle-east/netanyahu-approved-pager-attacks-against-hezbollah-spokesman-says-2024-11-11/",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
       "episodeId": "idealab-f72-frattini",
-      "note": "La oficina de derechos humanos de la ONU documentó las explosiones el 17/09/2024 y víctimas civiles, incluidos menores. La pertenencia individual de las personas afectadas no puede darse por probada.",
+      "note": "Comunicado del Alto Comisionado de Naciones Unidas, 18/09/2024: detonaciones de buscapersonas en Líbano y Siria el 17 de septiembre causaron muertes —incluidas dos menores— y miles de heridos. El comunicado documenta el daño civil y el acontecimiento, NO la afiliación individual de las víctimas ni la unidad israelí ejecutora. La autoría política declarada se trata en una arista diferente respaldada por Reuters.",
       "podcastNotes": []
     },
     {
@@ -1997,8 +1997,8 @@ window.IDEA_TELARANA_F73_REVIEW = {
     "lastMarker": "01:45:19",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "tercera_revision_pegasus_dgst_amnesty_y_sobreseimiento_2026",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual.",
+    "reviewStage": "cuarta_revision_cruce_f69_f72_identidades_y_autoria_20261118",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual. Cuarta revisión 18/11/2026: F73 reutiliza nombres canónicos de F69 para DGST y archivo judicial Pegasus 2026; evitar dos nodos del mismo servicio y del mismo proceso. La noticia judicial no valida acusaciones a terceros. Declaración israelí sobre buscapersonas y daño civil ONU se respaldan con fuentes diferentes.",
     "independentDocumentaryRelations": 10,
     "crossSourceLinks": [
       69,
@@ -2424,9 +2424,9 @@ window.IDEA_TELARANA_F73_REVIEW = {
     },
     {
       "id": "f73-dgst",
-      "name": "DGST (Dirección General de Vigilancia del Territorio de Marruecos)",
-      "kind": "Institución",
-      "subtitle": "Servicio de inteligencia interior marroquí al que Amnistía Internacional atribuye operaciones de vigilancia con Pegasus.",
+      "name": "DGST de Marruecos",
+      "kind": "Organización",
+      "subtitle": "Dirección General de Vigilancia del Territorio, servicio de inteligencia interior de Marruecos.",
       "note": "Investigación de Amnistía Internacional Security Lab, publicada el 01/10/2026, atribuye a la DGST la utilización de Pegasus contra periodistas y personas defensoras de derechos humanos dentro y fuera de Marruecos entre 2017 y 2021. Se basa en testimonios, material interno y análisis forense. NO establece por sí misma autoría del espionaje contra miembros del Gobierno español.",
       "source": "https://securitylab.amnesty.org/es/latest/2026/10/we-start-with-the-verdict-inside-moroccos-surveillance-machine/",
       "topic3d": "inteligencia",
@@ -2463,9 +2463,9 @@ window.IDEA_TELARANA_F73_REVIEW = {
     },
     {
       "id": "f73-archivo-pegasus-2026",
-      "name": "Archivo provisional de la causa Pegasus (enero de 2026)",
-      "kind": "Resolución judicial referida por prensa",
-      "subtitle": "Sobreseimiento provisional de la investigación sobre Pegasus y el Gobierno español, difundido el 22/01/2026.",
+      "name": "Archivo provisional de la investigación Pegasus (22 enero 2026)",
+      "kind": "Acontecimiento",
+      "subtitle": "Audiencia Nacional de España: causa por infección de dispositivos del Gobierno, autor no identificado.",
       "note": "Reuters informó de que el juez Calama cerró de nuevo el procedimiento al no poder identificar a un sospechoso tras la falta de colaboración de las autoridades israelíes. Existencia del procedimiento y su resultado procesal documentados por prensa judicial, sin acceso al auto íntegro en este registro. La causa podía reabrirse si aparecían nuevos elementos; no se determina aquí autor material.",
       "source": "https://www.reuters.com/technology/spain-closes-pegasus-spyware-probe-again-saying-israel-has-not-responded-2026-01-22/",
       "topic3d": "inteligencia",
@@ -2781,9 +2781,9 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "type": "La ONU documenta explosiones de buscapersonas, víctimas civiles y alarma humanitaria",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
-      "source": "https://www.reuters.com/world/middle-east/netanyahu-approved-pager-attacks-against-hezbollah-spokesman-says-2024-11-11/",
+      "source": "https://lebanon.un.org/en/278971-comment-un-high-commissioner-human-rights-volker-t%C3%BCrk-explosions-across-lebanon-and-syria",
       "episodeId": "idealab-f73-frattini",
-      "note": "Las comunicaciones oficiales de la ONU del 18/09/2024 registran víctimas por explosiones masivas, incluidas menores. El foco sobre miembros de Hizbulá no transforma a todos los afectados en combatientes.",
+      "note": "Comunicado del Alto Comisionado de Naciones Unidas, 18/09/2024: detonaciones de buscapersonas en Líbano y Siria el 17 de septiembre causaron muertes —incluidas dos menores— y miles de heridos. El comunicado documenta el daño civil y el acontecimiento, NO la afiliación individual de las víctimas ni la unidad israelí ejecutora. La autoría política declarada se trata en una arista diferente respaldada por Reuters.",
       "podcastNotes": []
     },
     {
@@ -2795,7 +2795,7 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "claimStatus": "hecho_documentado_por_portavoz_citado",
       "source": "https://www.reuters.com/world/middle-east/netanyahu-approved-pager-attacks-against-hezbollah-spokesman-says-2024-11-11/",
       "episodeId": "idealab-f73-frattini",
-      "note": "Reuters, el 11/11/2024, atribuye a Omer Dostri, portavoz del primer ministro, la confirmación de que Netanyahu había aprobado los ataques contra buscapersonas. Es una declaración oficial reportada, no una constatación independiente de cada detalle operativo.",
+      "note": "Reuters, el 11/11/2024, atribuye a Omer Dostri, portavoz del primer ministro, la confirmación de que Netanyahu había aprobado los ataques contra buscapersonas. Es una declaración oficial reportada, no una constatación independiente de cada detalle operativo. La confirmación del portavoz se refiere a la responsabilidad del Gobierno israelí; no especifica que el Mossad, frente a otro organismo, ejecutase todos los elementos del operativo.",
       "podcastNotes": []
     },
     {

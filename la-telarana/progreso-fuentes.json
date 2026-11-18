@@ -1212,15 +1212,15 @@
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
       "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-      "status": "quinta_pasada_etiopia_libano_cronologia_20261118",
+      "status": "sexta_revision_identidades_cruzadas_y_relaciones_no_demostradas_20261118",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": false,
       "sourceNodesDocumented": 116,
-      "sourceRelationsDocumented": 163,
+      "sourceRelationsDocumented": 161,
       "imageRuntimeVerified": false,
       "timelineVerifiedEventsCommitted": 7,
-      "qualityNotes": "Quinta revisión 18-11-2026: 116 entidades y 163 relaciones. +5 hitos históricos comprobados F69 (total 7); Hermanos 1979–84, Moisés 1984–85, Salomón 1991 y récord 747; Litani 1978, Paz para Galilea 1982, retirada ONU 2000. Cifra de 1500 pasajeras/os no atribuible con certeza al audio; agua como hipótesis. 1 nota HispantTV sin texto localizable; 0 audio/minutos comprobados.",
+      "qualityNotes": "Quinta revisión 18-11-2026: 116 entidades y 163 relaciones. +5 hitos históricos comprobados F69 (total 7); Hermanos 1979–84, Moisés 1984–85, Salomón 1991 y récord 747; Litani 1978, Paz para Galilea 1982, retirada ONU 2000. Cifra de 1500 pasajeras/os no atribuible con certeza al audio; agua como hipótesis. 1 nota HispantTV sin texto localizable; 0 audio/minutos comprobados.\n18/11 sexta revisión cruzada: 2 aristas de F69 retiradas (no identificación de autor judicial y rumor sobre particular), con contexto preservado en nodos. Las 39 relaciones independientes verificadas no cambian; un testimonio sobre ejecución por Mossad no es confirmación oficial de unidad. Relación judicial y DGST se vinculan en F73 por su nombre común, sin atribuir ataque a Gobierno español.",
       "sourcePrimaryModule": "la-telarana/podcast-vaquero-150.js",
       "transcriptDocUrl": null,
       "untimedTranscriptDriveId": null,
@@ -1322,7 +1322,7 @@
       "videoId": "z-0I92HGceY",
       "title": "Experto en espionaje: el Mossad y sus operaciones | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=z-0I92HGceY",
-      "status": "tercera_revision_stuxnet_enisa_20261118",
+      "status": "cuarta_revision_ataques_dispositivos_onu_cruce_20261118",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1349,7 +1349,7 @@
         "study-f72-presentacion-archivo-nuclear-iran-2018",
         "study-f72-dispositivos-libano-septiembre-2024"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F72 ampliada con Kidón, sayanim, Natanz, Hizbulá y explosiones de dispositivos. 14 nodos, 16 relaciones, 16 notas de subtítulos, 3 relaciones respaldadas por Knéset, CRS y ONU; 2018 archivo iraní ya documentado como hito propio. 2 acontecimientos de F72 (2018 y 2024), y 2 referencias cruzadas a hechos F69/F24 sin duplicación. La alegación sobre conocimiento previo del 7/10 y la lista de 5 estados en Stuxnet siguen no acreditadas. Los «sayanim» se registran como afirmación de la fuente, NO atributo de la población judía.\n18/11 QA de reconciliación: 4 contrastes editoriales consultados, pero solo 3 aristas del módulo califican como relaciones verificadas independientemente. Se corrige el contador estructural a 3 sin añadir evidencia ficticia.\n18/11/2026 tercera pasada: +2 entidades ENISA y software Siemens; +2 aristas documentales técnicas sobre WinCC/STEP 7 y Stuxnet. No se establece autoría estatal, cinco países participantes ni responsabilidades personales. Audio 0 minutos cotejados.",
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F72 ampliada con Kidón, sayanim, Natanz, Hizbulá y explosiones de dispositivos. 14 nodos, 16 relaciones, 16 notas de subtítulos, 3 relaciones respaldadas por Knéset, CRS y ONU; 2018 archivo iraní ya documentado como hito propio. 2 acontecimientos de F72 (2018 y 2024), y 2 referencias cruzadas a hechos F69/F24 sin duplicación. La alegación sobre conocimiento previo del 7/10 y la lista de 5 estados en Stuxnet siguen no acreditadas. Los «sayanim» se registran como afirmación de la fuente, NO atributo de la población judía.\n18/11 QA de reconciliación: 4 contrastes editoriales consultados, pero solo 3 aristas del módulo califican como relaciones verificadas independientemente. Se corrige el contador estructural a 3 sin añadir evidencia ficticia.\n18/11/2026 tercera pasada: +2 entidades ENISA y software Siemens; +2 aristas documentales técnicas sobre WinCC/STEP 7 y Stuxnet. No se establece autoría estatal, cinco países participantes ni responsabilidades personales. Audio 0 minutos cotejados.\n18/11 cuarta revisión: fuente de evidencia humanitaria del ataque de buscapersonas reemplazada por el Alto Comisionado ONU 18/09/2024; se distingue de declaración oficial política israelí reportada por Reuters en F73. Sin cotejo de audio.",
       "lastUpdated": "2026-11-18"
     },
     {
@@ -1357,7 +1357,7 @@
       "videoId": "KxrKZU9T_6I",
       "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I",
-      "status": "tercera_revision_pegasus_dgst_audiencia_20261118",
+      "status": "cuarta_revision_identidades_canonicas_y_buscapersonas_20261118",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1383,7 +1383,7 @@
       "timelineEventIds": [
         "study-f73-israel-marruecos-declaracion-2020"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F73 pasa a 16 nodos, 21 relaciones y 20 notas. 6 relaciones con evidencia externa (tratado Marruecos–Israel, acuerdos de 2020, infecciones CCN/Pegasus, explosiones ONU y portavoz citado por Reuters). Marruecos no se equipara a autor acreditado de Pegasus contra Sánchez: La Moncloa confirmó infección, no perpetrador. Emiratos y Baréin firmaron acuerdos 15/09/2020, antes de la normalización con Marruecos en diciembre, lo que debilita la causalidad atribuida a Mohamed VI. Un hito propio de 22/12/2020 y referencias cruzadas al 7/10, Pegasus 2022 y Líbano 2024 sin duplicar. Todos los tiempos proceden de transcripción manual sin cotejo audiovisual.\n18/11/2026 tercera pasada: +4 entidades y +4 aristas (informe Amnistía 01/10/2026 sobre DGST y Pegasus 2017–2021; decisión judicial española 22/01/2026 sin autor identificado). Evidencia de la ONG sobre DGST no demuestra autoría del espionaje al Gobierno español. 0 audio minutos cotejados.",
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F73 pasa a 16 nodos, 21 relaciones y 20 notas. 6 relaciones con evidencia externa (tratado Marruecos–Israel, acuerdos de 2020, infecciones CCN/Pegasus, explosiones ONU y portavoz citado por Reuters). Marruecos no se equipara a autor acreditado de Pegasus contra Sánchez: La Moncloa confirmó infección, no perpetrador. Emiratos y Baréin firmaron acuerdos 15/09/2020, antes de la normalización con Marruecos en diciembre, lo que debilita la causalidad atribuida a Mohamed VI. Un hito propio de 22/12/2020 y referencias cruzadas al 7/10, Pegasus 2022 y Líbano 2024 sin duplicar. Todos los tiempos proceden de transcripción manual sin cotejo audiovisual.\n18/11/2026 tercera pasada: +4 entidades y +4 aristas (informe Amnistía 01/10/2026 sobre DGST y Pegasus 2017–2021; decisión judicial española 22/01/2026 sin autor identificado). Evidencia de la ONG sobre DGST no demuestra autoría del espionaje al Gobierno español. 0 audio minutos cotejados.\n18/11 cuarta revisión: DGST y archivo judicial Pegasus de 22/01/2026 pasan a coincidir literalmente con entidades F69; fusión por nombre canónico existente en la web (sin perder el ID interno de cada fuente). El daño civil por buscapersonas pasa a comunicado ONU y la admisión política israelí permanece separada en Reuters. Ninguna operación sobre Pedro Sánchez se atribuye judicialmente a Marruecos.",
       "lastUpdated": "2026-11-18"
     },
     {

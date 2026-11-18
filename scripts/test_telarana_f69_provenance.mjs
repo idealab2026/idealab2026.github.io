@@ -7,7 +7,7 @@ const ctx={window:{}};
 vm.runInNewContext(src,ctx,{timeout:8000});
 const data=ctx.window.IDEA_TELARANA_PODCAST_150;
 assert(data?.metadata?.sourceOrder===69,"Módulo y fuente F69 no reconciliados");
-assert(data.nodes.length===116&&data.edges.length===163,"F69 no debe perder entidades ni relaciones nuevas");
+assert(data.nodes.length===116&&data.edges.length===161,"F69 no debe perder entidades ni relaciones nuevas");
 assert(data.metadata.transcriptAudioMatched===false&&data.metadata.verifiedMinuteReferences===0&&data.metadata.speakerDiarizationVerified===false,"No se ha cotejado el audio");
 const notes=data.nodes.flatMap(n=>n.podcastNotes||[]);
 assert.equal(notes.length,116,"Notas F69 deben coincidir con las fichas");
@@ -18,6 +18,8 @@ assert(!data.edges.some(e=>/REHYGPW0c8k[&?]t=/.test(e.source||"")),"Aristas con 
 assert(!notes.some(n=>/REHYGPW0c8k[&?]t=/.test(n.source||"")),"Notas con enlaces temporales ficticios");
 const ids=new Set(data.nodes.map(n=>n.id));
 assert(ids.size===116&&data.edges.every(e=>ids.has(e.a)&&ids.has(e.b)),"Duplicados o aristas huérfanas");
+assert(!data.edges.some(e=>["vf150-f69-r4-pegasus-dgst","vf150-f69-r4-pegasus-rumor"].includes(e.id)),
+ "Las negaciones judiciales y rumores sin corroborar no deben formar aristas contra terceros");
 const docs=data.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente");
 assert.equal(docs.length,39,"Recuento documentado actualizado");
 assert(docs.every(e=>e.confidence==="documentado"&&/^https:\/\//.test(e.source)&&!e.source.includes("youtube.com")),"Vínculo oficial sin fuente externa");
@@ -29,7 +31,7 @@ for(const id of ["vf150-adolf-eichmann","vf150-david-ben-gurion","vf150-meir-ami
 }
 const progression=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
 const record=progression.sourceCatalog.entries.find(e=>e.order===69),review=progression.inReview.find(e=>e.order===69);
-assert(record?.analysisCoverage?.percent===61&&review?.sourceNodesDocumented===116&&review?.sourceRelationsDocumented===163,"F69 no conciliado");
+assert(record?.analysisCoverage?.percent===61&&review?.sourceNodesDocumented===116&&review?.sourceRelationsDocumented===161,"F69 no conciliado");
 assert(record?.tracking?.docTranscriptionCreated===true&&record?.tracking?.transcriptContentImported===false&&record?.tracking?.manualTranscriptBlankConfirmed===true,"Documento manual no se debe confundir con transcripción");
 assert(review.verifiedMinuteReferences===0&&record.analysisCoverage.audioVerified===false,"La medición heurística no es cobertura real");
 const history=JSON.parse(fs.readFileSync("linea-historia/estudios-telarana.json","utf8"));
@@ -43,4 +45,4 @@ assert.equal(history.items.filter(e=>e.id==="study-vf150-lillehammer-1973").leng
 assert(!src.includes("drive.google.com/file/d/")&&!src.includes("docs.google.com/document/d/"),"Material privado en el paquete público");
 assert.equal(notes.filter(n=>n.transcriptSearch).length,105,"Citas TXT F69 verificadas por posición literal");
 assert.equal(notes.filter(n=>!n.transcriptSearch&&n.source.includes("youtube.com")).length,1,"Resto sin pasaje localizable debe estar identificado");
-console.log("OK: F69 116 entidades, 163 relaciones, 105 anclas exactas, 39 relaciones documentadas; cero audio/minutos.");
+console.log("OK: F69 116 entidades, 161 relaciones, 105 anclas exactas, 39 relaciones documentadas; cero audio/minutos.");
