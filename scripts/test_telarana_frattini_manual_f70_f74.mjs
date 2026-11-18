@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,14,14,16,13],expectedEdges=[20,18,16,21,16],
+const expectedNodes=[16,16,14,16,16],expectedEdges=[20,20,16,21,19],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===32,
+assert(totalNotes===78&&totalExternal===37,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -133,13 +133,15 @@ assert(f71.metadata.explicitContradictionReviews===2&&f74.metadata.explicitContr
  "F71/F74: faltan contrastes explícitos de afirmaciones sensibles");
 assert(f71.metadata.transcriptAudioMatched===false&&f74.metadata.transcriptAudioMatched===false,
  "Los textos no se han escuchado aún: cero validación del audio");
-assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===7&&
- f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===6,
+assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===9&&
+ f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===9,
  "Falta contrastar polifarmacia, más de un estudio dental y fin de Hitler");
 for(const id of ["f71-doc-morell-hitler","f71-doc-diarios-medicos","f71-doc-pervitin-wehrmacht",
  "f71-doc-trevor-hitler","f71-doc-dental-hitler","f71-doc-blaschke-hitler",
  "f74-doc-morell-hitler","f74-doc-dental-hitler","f74-doc-blaschke-hitler",
- "f74-doc-skull-dental","f74-doc-eva-hitler","f74-doc-trevor-hitler"]){
+ "f74-doc-skull-dental","f74-doc-eva-hitler","f74-doc-trevor-hitler",
+ "f71-doc-ndb-fin-morell","f71-doc-odontologia-1973",
+ "f74-doc-heusermann-blaschke","f74-doc-echtmann-blaschke","f74-doc-odontologia-1973"]){
  const e=[...f71.edges,...f74.edges].find(x=>x.id===id);
  assert(e&&e.source.startsWith("https://")&&!e.source.includes("youtube.com"),
   "Vínculo documental sin respaldo externo: "+id);
