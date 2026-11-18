@@ -128,6 +128,38 @@ assert(feed.items.find(e=>e.id==="study-f24-ataques-hamas-israel-2023")?.investi
 assert(reg.sourceCatalog.entries.find(e=>e.order===72)?.analysisCoverage.percent===27&&reg.sourceCatalog.entries.find(e=>e.order===73)?.analysisCoverage.percent===26,"Ranking editorial F72/F73 no sincronizado");
 
 
+// Cruce de entidades F69–F72–F73: los nombres canónicos fusionan fichas, no atribuyen operaciones.
+const f69ctx={window:{}};
+vm.runInNewContext(read("la-telarana/podcast-vaquero-150.js"),f69ctx,{timeout:8000});
+const f69=f69ctx.window.IDEA_TELARANA_PODCAST_150;
+const canon=s=>String(s||"").normalize("NFD").replace(/\\p{M}/gu,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ");
+const sharedPairs=[
+ ["vf150-dgst-marruecos","f73-dgst"],
+ ["vf150-pegasus-archivo-2026","f73-archivo-pegasus-2026"],
+ ["vf150-mossad","f72-mossad"],
+ ["vf150-mossad","f73-mossad"],
+ ["vf150-hizbula","f72-hizbula"],
+ ["vf150-hizbula","f73-hizbula"],
+ ["vf150-adolf-eichmann","f72-eichmann"]
+];
+for(const [a,b] of sharedPairs){
+ const before=f69.nodes.find(x=>x.id===a),after=[...f72.nodes,...f73.nodes].find(x=>x.id===b);
+ assert(before&&after&&canon(before.name)===canon(after.name),
+  "Las fichas F69 y F72/F73 se están duplicando en el grafo: "+a+" / "+b);
+}
+for(const name of ["Stuxnet","Explosiones de buscapersonas en Líbano (2024)"]){
+ assert(f72.nodes.some(x=>x.name===name)&&f73.nodes.some(x=>x.name===name),
+  "F72/F73 no comparten una identidad canónica: "+name);
+}
+assert(f69.edges.length===161&&!f69.edges.some(x=>["vf150-f69-r4-pegasus-dgst","vf150-f69-r4-pegasus-rumor"].includes(x.id)),
+ "Rumores, ausencias probatorias o personas sin autoría judicial no deben conectarse como operaciones");
+for(const [edgeId,mod] of [["f72-doc-pagers-hizbula",f72],["f73-doc-pagers-hizbula",f73]]){
+ assert(mod.edges.find(x=>x.id===edgeId)?.source.includes("lebanon.un.org"),
+  "La documentación de víctimas de buscapersonas debe citar directamente a la ONU");
+}
+assert(f73.edges.find(x=>x.id==="f73-doc-israel-pagers")?.source.includes("reuters.com"),
+ "La declaración del portavoz israelí es una fuente distinta del comunicado ONU");
+
 const f71=ctx.window.IDEA_TELARANA_F71_REVIEW,f74=ctx.window.IDEA_TELARANA_F74_REVIEW;
 assert(f71.metadata.explicitContradictionReviews===2&&f74.metadata.explicitContradictionReviews===2,
  "F71/F74: faltan contrastes explícitos de afirmaciones sensibles");
