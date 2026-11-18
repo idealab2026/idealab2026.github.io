@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,16,14,16,16],expectedEdges=[20,20,16,21,19],
+const expectedNodes=[16,16,16,20,16],expectedEdges=[20,20,18,25,19],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===37,
+assert(totalNotes===78&&totalExternal===43,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -108,7 +108,7 @@ assert(f72.metadata.crossSourceLinks.includes(69)&&f72.metadata.crossSourceLinks
 assert(f73.metadata.crossSourceLinks.includes(69)&&f73.metadata.crossSourceLinks.includes(72), "F73 sin contraste cruzado");
 assert(f72.metadata.verifiedMinuteReferences===0&&f73.metadata.verifiedMinuteReferences===0, "No elevar subtítulos a escucha audiovisual");
 assert(f72.nodes.find(x=>x.id==="f72-shinbet")?.name==="Shin Bet", "F72 debe reutilizar el nombre canónico de Shin Bet de F69");
-for(const id of ["f72-doc-stuxnet-natanz","f72-doc-eichmann-mossad","f72-doc-pagers-hizbula","f73-doc-morocco-israel","f73-doc-israel-abraham","f73-doc-pegasus-sanchez","f73-doc-ccn-pegasus","f73-doc-pagers-hizbula","f73-doc-israel-pagers"]){
+for(const id of ["f72-doc-stuxnet-natanz","f72-doc-eichmann-mossad","f72-doc-pagers-hizbula","f72-doc-enisa-stuxnet","f72-doc-stuxnet-siemens","f73-doc-morocco-israel","f73-doc-israel-abraham","f73-doc-pegasus-sanchez","f73-doc-ccn-pegasus","f73-doc-pagers-hizbula","f73-doc-israel-pagers","f73-doc-dgst-pegasus-amnistia","f73-doc-informe-dgst-amnistia","f73-doc-audiencia-archivo-2026","f73-doc-archivo-sanchez-2026"]){
  const e=[...f72.edges,...f73.edges].find(x=>x.id===id);
  assert(e&&e.source.startsWith("https://")&&/documentado/.test(e.confidence), "Falta evidencia independiente: "+id);
 }
