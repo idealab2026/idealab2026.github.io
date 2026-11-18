@@ -81,8 +81,10 @@ for(const id of ["f39-howard-carter","f53-clavijo","f53-pedro-paez"]){
 const res67=context.mergeNewEpisode(f67);
 assert(res67.nodes>=20&&res67.edges>=25);
 const carbon=data.nodes.find(x=>x.id==="f42-radiocarbono");
-const note=carbon.podcastNotes.find(x=>x.timeSec===206);
+const note=carbon.podcastNotes.find(x=>x.transcriptSearch==="carbono 14");
 assert(note,"No aparece el ancla de F67");
+assert.equal(note.timeSec,null,"Sin audio cotejado el minuto orientativo debe estar vacío");
+assert(Number.isInteger(note.transcriptCharOffset)&&note.transcriptCharOffset>=0,"El ancla F67 debe conservar su posición literal en la transcripción");
 assert.equal(note.minuteVerified,false,"No marcar como cotejado un minuto orientativo");
 assert.equal(note.audioVerified,false,"No marcar el audio sin escucharlo");
 assert.equal(note.transcriptSearch,"carbono 14","No perder localizador del TXT");
