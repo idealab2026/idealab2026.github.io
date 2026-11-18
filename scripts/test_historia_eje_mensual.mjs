@@ -83,6 +83,7 @@ const recentSource=JSON.parse(read("data.json")).items.filter(d=>Number(d.y)>=20
 const fractional=recentSource.filter(d=>Number(d.y)%1!==0);
 assert.ok(fractional.length>300,"Source monthly precision disappeared");
 
+ctx.yearText=y=>y<0?Math.abs(y)+" a. C.":y+" d. C.";
 ctx.el=(tag,text,className)=>({
  tag,text,className,style:{},children:[],
  append(child){this.children.push(child)},
