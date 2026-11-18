@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[13,14,14,16,13],expectedEdges=[17,18,16,21,16],
+const expectedNodes=[16,14,14,16,13],expectedEdges=[20,18,16,21,16],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -34,6 +34,9 @@ for(let i=0;i<videos.length;i++){
  assert(mod,"No existe el módulo F"+n);
  assert(mod.metadata.sourceOrder===n&&mod.metadata.url.includes(videos[i]),"Fuente mezclada F"+n);
  assert(mod.nodes.length===expectedNodes[i]&&mod.edges.length===expectedEdges[i],"Conteo modular no reconciliado F"+n);
+ const progress=reg.inReview.find(x=>x.order===n);
+ assert(progress?.sourceNodesDocumented===mod.nodes.length&&progress?.sourceRelationsDocumented===mod.edges.length&&progress?.verifiedIndependentChecks===mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente"||x.claimStatus==="hecho_documentado_por_portavoz_citado").length,
+   "Inventario editorial y datos modulares no reconciliados F"+n);
  const ids=new Set(mod.nodes.map(x=>x.id));
  assert(ids.size===mod.nodes.length&&mod.edges.every(x=>ids.has(x.a)&&ids.has(x.b)),"Aristas huérfanas o IDs repetidos F"+n);
  assert(mod.metadata.timecodeMarkersDetected===expectedMarkers[i],
@@ -66,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===29,
+assert(totalNotes===78&&totalExternal===32,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -80,10 +83,11 @@ assert(history72.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),
 const f70=ctx.window.IDEA_TELARANA_F70_REVIEW;
 assert(f70.metadata.explicitContradictionReviews===3&&f70.metadata.transcriptAudioMatched===false,
  "F70: conservar tres contrastes documentales sin atribuir escucha del audio");
-assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===7,
- "F70: siete relaciones con evidencia oficial, no confundir las menciones");
+assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===10,
+ "F70: diez relaciones con evidencia oficial, no confundir las menciones");
 for(const e of ["f70-doc-archive-access","f70-doc-archive-rename-2019","f70-doc-pio-xii-open-2020",
- "f70-doc-francisco-praedicate","f70-doc-praedicate-curia","f70-doc-ior-2025-report"]){
+ "f70-doc-francisco-praedicate","f70-doc-praedicate-curia","f70-doc-ior-2025-report",
+ "f70-doc-moneyval-2024","f70-doc-asif-ior-2025","f70-doc-apelacion-fondos-2026"]){
  const link=f70.edges.find(x=>x.id===e);
  assert(link&&link.source.startsWith("https://")&&!link.source.includes("youtube.com"),
   "Falta respaldo institucional de "+e);
