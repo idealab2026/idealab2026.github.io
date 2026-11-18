@@ -132,7 +132,7 @@ assert(reg.sourceCatalog.entries.find(e=>e.order===72)?.analysisCoverage.percent
 const f69ctx={window:{}};
 vm.runInNewContext(read("la-telarana/podcast-vaquero-150.js"),f69ctx,{timeout:8000});
 const f69=f69ctx.window.IDEA_TELARANA_PODCAST_150;
-const canon=s=>String(s||"").normalize("NFD").replace(/\\p{M}/gu,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ");
+const canon=s=>String(s||"").normalize("NFD").replace(/\p{M}/gu,"").trim().toLocaleLowerCase("es").replace(/[^a-z0-9]+/g," ");
 const sharedPairs=[
  ["vf150-dgst-marruecos","f73-dgst"],
  ["vf150-pegasus-archivo-2026","f73-archivo-pegasus-2026"],
