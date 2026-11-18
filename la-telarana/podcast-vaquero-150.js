@@ -14,15 +14,15 @@ window.IDEA_TELARANA_PODCAST_150 = {
     "speakerDiarizationVerified": false,
     "transcriptCompletenessVerified": false,
     "provenanceAuditDate": "2026-11-18",
-    "independentDocumentaryEvidenceCount": 8,
+    "independentDocumentaryEvidenceCount": 39,
     "sourceOrder": 69,
-    "reviewStatus": "cuarta_pasada_anclas_politica_internacional_y_rumores_20261118",
+    "reviewStatus": "quinta_pasada_etiopia_libano_cronologia_20261118",
     "editorialAudit": {
       "totalNodeBiosUpdated": 11,
       "documentedEdgesUpgraded": 8,
       "oldUnverifiedMinutesRemoved": null
     },
-    "methodologicalNote": "18-11-2026. La transcripción TXT no lleva tiempos y no se ha cotejado audio ni voces. Las anclas transcriptSearch/transcriptCharOffset se han comprobado contra 99.744 caracteres del TXT para declaraciones seleccionadas; las restantes fichas mantienen sinopsis no verificadas al nivel de cita. Separar: 1948 Tobianski/Isser Be’eri/inteligencia militar vs 1949 fundación Mossad/Reuven Shiloah y reestructuración 1951; colaboración genérica de comunidades judías no probada; proceso de supuestos «juicios secretos» sin documento; sentencia HCJ769/02 2006 no implica revisión judicial preventiva de operaciones secretas. NOU 2000:6 confirma Lillehammer 1973, Biblioteca Clinton Meshaal 1997, Yad Vashem Eichmann 1960, decreto gobierno israelí Gofman 2026. «Boda Roja» es operación de mandos militares junio 2025, «Narnia» científicos de 2025; entrevista les atribuye marzo 2026 y 26 científicos sin corroboración. Informe ISC 2025 registra que Stuxnet se atribuye a EE. UU./Israel, sin reconocimiento formal. Cuarta revisión, 18-11-2026: 54 anclas textuales adicionales a notas de personas e instituciones con equivalencias fonéticas ASR marcadas como no verificadas cuando procede; una ficha de Hispantv carece de referencia literal y el vínculo con Pablo Iglesias se degrada a no acreditado. No confundir que una cita figure en subtítulos con veracidad de su contenido. Camp David 11–24 julio 2000, parámetros Clinton 23 diciembre y Taba 21–27 enero 2001 (no reunión final secreta única en Ramala). Pegasus: segundo archivo judicial provisional 22 enero 2026, infecciones reconocidas, autoría sin esclarecer; los rumores personales no se infieren de la investigación. Reuters: Mojtabá sucedió a Alí Jameneí en marzo 2026, nombre ASR defectuoso; JTA marzo 1965 hallazgo de Herberts Cukurs, sin atribución judicial de autoría. Ningún minuto verificado, sin escucha ni diarización."
+    "methodologicalNote": "18-11-2026. La transcripción TXT no lleva tiempos y no se ha cotejado audio ni voces. Las anclas transcriptSearch/transcriptCharOffset se han comprobado contra 99.744 caracteres del TXT para declaraciones seleccionadas; las restantes fichas mantienen sinopsis no verificadas al nivel de cita. Separar: 1948 Tobianski/Isser Be’eri/inteligencia militar vs 1949 fundación Mossad/Reuven Shiloah y reestructuración 1951; colaboración genérica de comunidades judías no probada; proceso de supuestos «juicios secretos» sin documento; sentencia HCJ769/02 2006 no implica revisión judicial preventiva de operaciones secretas. NOU 2000:6 confirma Lillehammer 1973, Biblioteca Clinton Meshaal 1997, Yad Vashem Eichmann 1960, decreto gobierno israelí Gofman 2026. «Boda Roja» es operación de mandos militares junio 2025, «Narnia» científicos de 2025; entrevista les atribuye marzo 2026 y 26 científicos sin corroboración. Informe ISC 2025 registra que Stuxnet se atribuye a EE. UU./Israel, sin reconocimiento formal. Cuarta revisión, 18-11-2026: 54 anclas textuales adicionales a notas de personas e instituciones con equivalencias fonéticas ASR marcadas como no verificadas cuando procede; una ficha de Hispantv carece de referencia literal y el vínculo con Pablo Iglesias se degrada a no acreditado. No confundir que una cita figure en subtítulos con veracidad de su contenido. Camp David 11–24 julio 2000, parámetros Clinton 23 diciembre y Taba 21–27 enero 2001 (no reunión final secreta única en Ramala). Pegasus: segundo archivo judicial provisional 22 enero 2026, infecciones reconocidas, autoría sin esclarecer; los rumores personales no se infieren de la investigación. Reuters: Mojtabá sucedió a Alí Jameneí en marzo 2026, nombre ASR defectuoso; JTA marzo 1965 hallazgo de Herberts Cukurs, sin atribución judicial de autoría. Ningún minuto verificado, sin escucha ni diarización. Quinta revisión 18-11-2026: Hermanos 1979–84 (Arous Sudán), Moisés 1984–85 (Sudán), Salomón 24–25 mayo 1991 (Addis Abeba, más de 14.300); vuelo 747 récord Guinness ~1088 (1.087/1.122 recuentos alternativos). El TXT dice «15 personas» y «más de 1500» sin base para atribuir literalmente 1500 pasajeros a una nave. Litani marzo 1978 y Paz para Galilea junio 1982 hasta Beirut son operaciones distintas; ONU certificó retirada del sur libanés junio 2000. Hipótesis de motivo hídrico no confirmada. Sin cotejo audiovisual o minutajes."
   },
   "nodes": [
     {
@@ -1198,9 +1198,9 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Ariel Sharon",
       "kind": "Persona",
       "subtitle": "Ex primer ministro israelí",
-      "note": "",
+      "note": "Ariel Sharon fue ministro de Defensa durante la operación Paz para Galilea en junio de 1982. Esta invasión llegó a Beirut, mientras que Operación Litani fue una intervención distinta de marzo de 1978. Naciones Unidas documenta la retirada israelí del sur de Líbano en 2000.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.idf.il/en/mini-sites/wars-and-operations/first-lebanon-war/",
       "x": 3375,
       "y": 1290,
       "podcastNotes": [
@@ -2020,9 +2020,9 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Fuerzas de Defensa de Israel (FDI)",
       "kind": "Organización",
       "subtitle": "Fuerzas armadas israelíes",
-      "note": "",
+      "note": "Las FDI actuaron en Operación Litani de marzo 1978 y en la invasión Paz para Galilea de junio de 1982. El Secretario General de ONU confirmó la retirada del sur libanés en junio de 2000. Las fechas y operaciones deben distinguirse.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://unifil.unmissions.org/en/background",
       "x": 3100,
       "y": 2240,
       "podcastNotes": [
@@ -2917,6 +2917,292 @@ window.IDEA_TELARANA_PODCAST_150 = {
           "source": "https://www.jta.org/archive/nazi-involved-in-killing-jews-in-riga-found-dead-in-uruguay",
           "status": "contraste_externo_independiente",
           "text": "La Jewish Telegraphic Agency documentó el 8-03-1965 el hallazgo del cuerpo de Cukurs en el área de Montevideo y la carta hallada que reivindicaba el hecho. La hemeroteca acredita el suceso y el comunicado, no identifica judicialmente a los autores materiales."
+        }
+      ]
+    },
+    {
+      "id": "vf150-op-hermanos",
+      "name": "Operación Hermanos (Brothers)",
+      "kind": "Acontecimiento",
+      "subtitle": "1979–1984, evacuaciones desde Sudán",
+      "note": "Operación encubierta del Mossad que ayudó a evacuar judíos etíopes desde Sudán mediante una cobertura turística. No sucedió después de Salomón ni produjo el récord del Boeing 747.",
+      "source": "https://time.com/5638572/the-red-sea-diving-resort-true-story/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "El complejo turístico pertenece al rescate desde Sudán; el récord de 747 es de otra operación.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "operación Hermano",
+          "transcriptCharOffset": 8258
+        }
+      ]
+    },
+    {
+      "id": "vf150-arous",
+      "name": "Complejo de buceo Arous",
+      "kind": "Lugar",
+      "subtitle": "Sudán, costa del mar Rojo",
+      "note": "Complejo turístico de buceo empleado como cobertura de la operación Hermanos en los años 1980. No es el aeropuerto de Adís Abeba desde el que partió Salomón en 1991.",
+      "source": "https://www.timesofisrael.com/hollywood-dives-deep-into-1980s-israeli-spy-resort-in-sudan/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "El complejo Arous fue cobertura operativa, no prueba de los detalles numéricos de la entrevista.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "centro vacacional",
+          "transcriptCharOffset": 8424
+        }
+      ]
+    },
+    {
+      "id": "vf150-op-moises",
+      "name": "Operación Moisés (1984–1985)",
+      "kind": "Acontecimiento",
+      "subtitle": "Evacuaciones desde campos de Sudán",
+      "note": "Operativo que trasladó aproximadamente 8.000 judíos etíopes desde Sudán a Israel, comenzado en noviembre de 1984. Se diferencia de Hermanos y del gran puente aéreo de 1991.",
+      "source": "https://main.knesset.gov.il/EN/About/Lexicon/Pages/yom_zik_ethiopian.aspx",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "Se conservan por separado rutas, fechas y participantes de cada rescate.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "operación Moisés",
+          "transcriptCharOffset": 7614
+        }
+      ]
+    },
+    {
+      "id": "vf150-op-salomon",
+      "name": "Operación Salomón (mayo de 1991)",
+      "kind": "Acontecimiento",
+      "subtitle": "Más de 14.300 judíos etíopes en 36 horas",
+      "note": "Operativo del 24–25 mayo de 1991 desde Adís Abeba a Israel. La Agencia Judía confirma que más de 14.300 personas fueron trasladadas; el vuelo récord del Boeing 747 pertenece a esta operación.",
+      "source": "https://www.jewishagency.org/operation-solomon/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "La entrevista menciona Salomón y Hermanos sin separar el avión del balneario clandestino.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "operación Salomón",
+          "transcriptCharOffset": 7591
+        }
+      ]
+    },
+    {
+      "id": "vf150-vuelo-747",
+      "name": "Vuelo récord de El Al Boeing 747 (1991)",
+      "kind": "Acontecimiento",
+      "subtitle": "Guinness: aproximadamente 1.088 pasajeros",
+      "note": "Guinness World Records sitúa la marca en unas 1.088 personas en un Boeing 747 de El Al durante Salomón, mayo 1991; hay recuentos divergentes de 1.087 a 1.122. No se documentan 1.500 pasajeros en ese vuelo.",
+      "source": "https://www.guinnessworldrecords.com/world-records/most-passengers-on-an-aircraft",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "La cifra exacta tiene discrepancias documentales. La operación histórica es Salomón, no Hermanos.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "un Boeing 747",
+          "transcriptCharOffset": 8874
+        }
+      ]
+    },
+    {
+      "id": "vf150-cifra-1500",
+      "name": "Cifra «más de 1.500» y mezcla de operaciones",
+      "kind": "Declaración",
+      "subtitle": "El TXT no dice claramente 1.500 pasajeros en el avión",
+      "note": "El subtítulo automático registra «15 personas» al hablar del Boeing y «más de 1500» sobre evacuaciones desde Sudán. No se puede afirmar que el entrevistado dijera «1.500 pasajeros en un avión» sin escuchar el audio. La atribución de récord a Hermanos sí aparece mezclada.",
+      "source": "https://blog.nli.org.il/en/hoi-operation-solomon/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "Alegación numérica del TXT de significado ambiguo, no corregir inventando una cita literal del audio.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "más de 1500",
+          "transcriptCharOffset": 9083
+        }
+      ]
+    },
+    {
+      "id": "vf150-litani",
+      "name": "Operación Litani (marzo 1978)",
+      "kind": "Acontecimiento",
+      "subtitle": "Invasión israelí del sur de Líbano",
+      "note": "Operación militar de marzo de 1978. Naciones Unidas constituyó UNIFIL en respuesta a la invasión; esta campaña no llegó hasta Beirut en 1982.",
+      "source": "https://unifil.unmissions.org/sites/default/files/al-janoub_issue22_en.pdf",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "La entrevista confunde la ofensiva de 1978 con la invasión que cercó Beirut en 1982.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "operación Litani",
+          "transcriptCharOffset": 49576
+        }
+      ]
+    },
+    {
+      "id": "vf150-paz-galilea",
+      "name": "Paz para Galilea (junio 1982)",
+      "kind": "Acontecimiento",
+      "subtitle": "Segunda invasión israelí de Líbano; Beirut",
+      "note": "En junio de 1982 Israel volvió a invadir Líbano. Según la ONU, sus tropas alcanzaron y rodearon Beirut. Ariel Sharon era ministro de Defensa; campaña diferente de Litani 1978.",
+      "source": "https://unifil.unmissions.org/en/background",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "La ofensiva de 1982 se distingue del operativo del río Litani de 1978.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "operación paz para Galilea",
+          "transcriptCharOffset": 48562
+        }
+      ]
+    },
+    {
+      "id": "vf150-retirada-2000",
+      "name": "Retirada israelí del sur de Líbano (junio 2000)",
+      "kind": "Acontecimiento",
+      "subtitle": "Constatada por ONU el 16 de junio",
+      "note": "UNIFIL informa que el Secretario General declaró el 16-06-2000 completada la retirada israelí conforme a la línea establecida. No respalda una predicción histórica absoluta de que Israel jamás se retiraría.",
+      "source": "https://unifil.unmissions.org/en/background",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "Predicción oral y fecha documental deben constar como tipos de evidencia diferentes.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "los israelíes no se van a ir nunca",
+          "transcriptCharOffset": 49300
+        }
+      ]
+    },
+    {
+      "id": "vf150-agua-litani",
+      "name": "Hipótesis de motivo hídrico en el río Litani",
+      "kind": "Declaración",
+      "subtitle": "Interpretación estratégica no probada como causa única",
+      "note": "El invitado atribuye las operaciones al interés por el agua del río Litani. Sin documentos internos de decisión no es posible demostrar que fuera la motivación única o decisiva de las invasiones de 1978 y 1982.",
+      "source": "https://unifil.unmissions.org/en/background",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "El interés por el agua es una hipótesis causal del hablante, no hecho corroborado por la cronología ONU.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "necesita Israel siempre agua",
+          "transcriptCharOffset": 49664
+        }
+      ]
+    },
+    {
+      "id": "vf150-beta-israel",
+      "name": "Beta Israel, comunidad judía de Etiopía",
+      "kind": "Comunidad",
+      "subtitle": "Protagonista de rescates entre los años 1980 y 1991",
+      "note": "Comunidad judía etíope reconocida en fuentes oficiales de la Knéset. La expresión «duodécima tribu perdida» en el vídeo es una tradición cultural o genealógica, no una filiación histórica o genética demostrada.",
+      "source": "https://main.knesset.gov.il/EN/About/Lexicon/Pages/yom_zik_ethiopian.aspx",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · coincidencia literal TXT, sin audio",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "declaracion_automaticamente_transcrita_no_cotejada",
+          "text": "Una tradición sobre origen tribal no constituye comprobación genética.",
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptSearch": "doceava tribu de Israel",
+          "transcriptCharOffset": 7719
         }
       ]
     }
@@ -4565,6 +4851,234 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "episodeId": "vaquero-150-frattini-2026-09-28",
       "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-brothers-mossad",
+      "a": "vf150-op-hermanos",
+      "b": "vf150-mossad",
+      "type": "Operación de evacuación atribuida al Mossad",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://time.com/5638572/the-red-sea-diving-resort-true-story/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-brothers-arous",
+      "a": "vf150-op-hermanos",
+      "b": "vf150-arous",
+      "type": "Cobertura turística Arous",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.timesofisrael.com/hollywood-dives-deep-into-1980s-israeli-spy-resort-in-sudan/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-brothers-beta",
+      "a": "vf150-op-hermanos",
+      "b": "vf150-beta-israel",
+      "type": "Rescate desde Sudán",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://time.com/5638572/the-red-sea-diving-resort-true-story/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-moses-beta",
+      "a": "vf150-op-moises",
+      "b": "vf150-beta-israel",
+      "type": "Evacuación desde Sudán",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://main.knesset.gov.il/EN/About/Lexicon/Pages/yom_zik_ethiopian.aspx",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-moses-brothers",
+      "a": "vf150-op-moises",
+      "b": "vf150-op-hermanos",
+      "type": "Distinción de dos operaciones con periodos próximos",
+      "confidence": "documentado",
+      "claimStatus": "distincion_historica_documentada",
+      "source": "https://time.com/5638572/the-red-sea-diving-resort-true-story/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-solomon-beta",
+      "a": "vf150-op-salomon",
+      "b": "vf150-beta-israel",
+      "type": "Puente aéreo con más de 14.300 evacuados",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.jewishagency.org/operation-solomon/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-solomon-moses",
+      "a": "vf150-op-salomon",
+      "b": "vf150-op-moises",
+      "type": "Operaciones de fechas y rutas diferentes",
+      "confidence": "documentado",
+      "claimStatus": "distincion_historica_documentada",
+      "source": "https://main.knesset.gov.il/EN/About/Lexicon/Pages/yom_zik_ethiopian.aspx",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-solomon-flight",
+      "a": "vf150-op-salomon",
+      "b": "vf150-vuelo-747",
+      "type": "Vuelo récord perteneciente a Salomón",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.guinnessworldrecords.com/world-records/most-passengers-on-an-aircraft",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-solomon-mossad",
+      "a": "vf150-op-salomon",
+      "b": "vf150-mossad",
+      "type": "Cooperación del Mossad con otras instituciones",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.jewishagency.org/operation-solomon/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-claim-flight",
+      "a": "vf150-cifra-1500",
+      "b": "vf150-vuelo-747",
+      "type": "Guinness no corrobora 1.500 pasajeros",
+      "confidence": "documentado",
+      "claimStatus": "distincion_historica_documentada",
+      "source": "https://www.guinnessworldrecords.com/world-records/most-passengers-on-an-aircraft",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-claim-brothers",
+      "a": "vf150-cifra-1500",
+      "b": "vf150-op-hermanos",
+      "type": "El subtítulo mezcla evacuaciones y avión",
+      "confidence": "indicio",
+      "claimStatus": "interpretacion_del_entrevistado_no_probada",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-litani-idf",
+      "a": "vf150-litani",
+      "b": "vf150-fuerzas-israel",
+      "type": "Invasión del sur de Líbano en 1978",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://unifil.unmissions.org/sites/default/files/al-janoub_issue22_en.pdf",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-galilee-idf",
+      "a": "vf150-paz-galilea",
+      "b": "vf150-fuerzas-israel",
+      "type": "Invasión hasta Beirut en 1982",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://unifil.unmissions.org/en/background",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-galilee-sharon",
+      "a": "vf150-paz-galilea",
+      "b": "vf150-ariel-sharon",
+      "type": "Ministro de Defensa durante 1982",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.idf.il/en/mini-sites/wars-and-operations/first-lebanon-war/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-different-wars",
+      "a": "vf150-litani",
+      "b": "vf150-paz-galilea",
+      "type": "Campañas de 1978 y 1982 distintas",
+      "confidence": "documentado",
+      "claimStatus": "distincion_historica_documentada",
+      "source": "https://unifil.unmissions.org/en/background",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-withdraw-2000",
+      "a": "vf150-retirada-2000",
+      "b": "vf150-fuerzas-israel",
+      "type": "Retirada verificada por ONU en 2000",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://unifil.unmissions.org/en/background",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-withdraw-1982",
+      "a": "vf150-retirada-2000",
+      "b": "vf150-paz-galilea",
+      "type": "Fin de ocupación de zona de seguridad posterior",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://unifil.unmissions.org/en/background",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-water-1978",
+      "a": "vf150-agua-litani",
+      "b": "vf150-litani",
+      "type": "Motivo hídrico interpretativo no demostrado",
+      "confidence": "indicio",
+      "claimStatus": "interpretacion_del_entrevistado_no_probada",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r5-water-1982",
+      "a": "vf150-agua-litani",
+      "b": "vf150-paz-galilea",
+      "type": "Motivo hídrico interpretativo no demostrado",
+      "confidence": "indicio",
+      "claimStatus": "interpretacion_del_entrevistado_no_probada",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Quinta revisión F69: separar fecha, alcance, atribución y cifras; audio y minutos no cotejados.",
       "podcastNotes": []
     }
   ]
