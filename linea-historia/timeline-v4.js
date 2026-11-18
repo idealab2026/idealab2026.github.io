@@ -917,10 +917,13 @@ function groupedDetail(group){selected=group;showGroupNote(group);if(group.child
 function grouped(items,c){
  if(c!=="Actualidad"||query)return items;
  var oldStep=zoom<=1?1:zoom<=2?.5:zoom<=4?.25:1/12,g=new Map();
+ // At wide overview levels, group recent events into quarters, semesters
+ // or years rather than piling up 245px cards every 7–28px.
+ var modernMonths=zoom<=.125?12:zoom<=.25?6:zoom<=.5?3:1;
  items.forEach(function(d){
   var date=sy(d),monthly=date>=MONTH_START_YEAR;
-  var step=monthly?1/12:oldStep;
-  var key=monthly?"m:"+Math.floor((date-MONTH_START_YEAR)*12+.000001):
+  var step=monthly?modernMonths/12:oldStep;
+  var key=monthly?"m:"+Math.floor((date-MONTH_START_YEAR)*12/modernMonths+.000001):
    "h:"+Math.floor((date+.0000001)/step);
   if(!g.has(key))g.set(key,[]);
   g.get(key).push(d);
@@ -929,10 +932,14 @@ function grouped(items,c){
  g.forEach(function(a,key){
   if(a.length===1){rows.push(a[0]);return}
   var monthly=key.startsWith("m:"),index=Number(key.slice(2));
-  var yr=monthly?MONTH_START_YEAR+Math.floor(index/12):Math.floor(index*oldStep+.000001);
-  var month=monthly?((index%12)+12)%12:null;
+  var offset=monthly?index*modernMonths:0;
+  var yr=monthly?MONTH_START_YEAR+Math.floor(offset/12):Math.floor(index*oldStep+.000001);
+  var month=monthly?((offset%12)+12)%12:null;
   var y=monthly?yr+month/12:index*oldStep,sub="";
-  if(monthly)sub=MONTH_LABELS[month]+" "+yr;
+  if(monthly)sub=modernMonths===12?String(yr):
+   modernMonths===6?yr+" · S"+(1+Math.floor(month/6)):
+   modernMonths===3?yr+" · T"+(1+Math.floor(month/3)):
+   MONTH_LABELS[month]+" "+yr;
   else if(zoom===2)sub=yr+" · S"+(1+Math.floor((y-yr)*2+.00001));
   else if(zoom===4)sub=yr+" · T"+(1+Math.floor((y-yr)*4+.00001));
   else if(zoom===8)sub=yr+" · mes "+(1+Math.floor((y-yr)*12+.00001));
@@ -1353,22 +1360,32 @@ function updateAnnualHeader(){
  // Month labels and lane dividers use identical axisX coordinates; never
  // create a repeated CSS gradient that can drift from fractional event dates.
  var ticks=[],positions=[];
+ // At ×0.125 years before 2010 are only 12px wide: label 1/10 years.
+ // Modern years have 84px even at the smallest zoom, so each year stays visible.
+ var yearLabelEvery=zoom<=.125?10:zoom<=.25?5:zoom<=.5?2:1;
+ var monthLabelEvery=zoom<=.125?6:zoom<=.25?3:zoom<=.5?2:1;
  for(var year=first;year<=last;year++){
   var x=axisX(year),milestone=year%100===0,decade=year%10===0;
   var monthly=year>=MONTH_START_YEAR&&year<2031;
-  var tick=el("div",null,"tick year-tick"+(decade?" year-decade":"")+
-   (milestone?" year-century":"")+(monthly?" monthly-year-tick":""));
-  tick.style.left=x+"px";
-  tick.append(el("span",monthly?String(year):year===0?"Cambio de era":yearText(year)));
-  ticks.push(tick);
-  positions.push({x:x,decade:decade,century:milestone,month:false});
+  var labelYear=monthly||year%yearLabelEvery===0;
+  if(labelYear){
+   var tick=el("div",null,"tick year-tick"+(decade?" year-decade":"")+
+    (milestone?" year-century":"")+(monthly?" monthly-year-tick":""));
+   tick.style.left=x+"px";
+   tick.append(el("span",monthly?String(year):year===0?"Cambio de era":yearText(year)));
+   ticks.push(tick);
+  }
+  // Keep the underlying annual/monthly coordinates exact at every zoom.
+  if(labelYear)positions.push({x:x,decade:decade,century:milestone,month:false});
   if(!monthly)continue;
   for(var month=0;month<12;month++){
    var monthX=axisX(year+month/12);
-   var monthTick=el("div",null,"tick month-tick"+(month===0?" january-tick":""));
-   monthTick.style.left=monthX+"px";
-   monthTick.append(el("span",MONTH_LABELS[month]));
-   ticks.push(monthTick);
+   if(month%monthLabelEvery===0){
+    var monthTick=el("div",null,"tick month-tick"+(month===0?" january-tick":""));
+    monthTick.style.left=monthX+"px";
+    monthTick.append(el("span",MONTH_LABELS[month]));
+    ticks.push(monthTick);
+   }
    if(month>0)positions.push({x:monthX,decade:false,century:false,month:true});
   }
  }
@@ -1397,7 +1414,8 @@ function render(){
  if(viewMode==="atlas"){window.dispatchEvent(new Event("historia:render"));return;}
  var can=$("canvas");can.replaceChildren();
  $("period-name").textContent="Historia universal · eje continuo · "+yearText(periods[0].a)+" — "+yearText(2026);
- $("zoom-level").textContent="Zoom ×"+zoom;$("zoom-out").disabled=zoom<=1;$("zoom-in").disabled=zoom>=8;
+ $("zoom-level").textContent="Zoom ×"+String(zoom).replace(".",",");
+ $("zoom-out").disabled=zoom<=.125;$("zoom-in").disabled=zoom>=8;
  var width=canvasWidth();can.style.width=width+"px";
  var regions=el("div",null,"era-strip"),axis=el("div",null,"ticks");
  periods.forEach(function(p){
@@ -1485,7 +1503,7 @@ function jumpToYear(year){
 }
 function setZoom(next){
  var v=$("viewport"),y=yearAt(v.scrollLeft+v.clientWidth/2);
- zoom=Math.max(1,Math.min(8,next));render();jumpToYear(y);
+ zoom=Math.max(.125,Math.min(8,next));render();jumpToYear(y);
 }
 function init(){
  periodUI();categoryUI();initMinimap();initCountryControls();
