@@ -6,6 +6,8 @@ on:
       - 'stats.js'
       - 'data/traffic.json'
       - 'scripts/**'
+      - 'la-telarana/**'
+      - 'linea-historia/**'
       - 'docs/ESTADISTICAS.md'
       - '.github/workflows/pages.yml'
       - '.github/workflows/stats-pr.yml'
@@ -45,6 +47,8 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_notebooklm_lote7_publicar.py' -v
           node --check stats.js
           node --test scripts/test_stats_ui.mjs
+          node scripts/test_telarana_timeline.mjs
+          node scripts/test_telarana_f69_provenance.mjs
       - name: Verificar generación sin secretos ni datos simulados
         run: |
           python3 scripts/build_traffic.py
