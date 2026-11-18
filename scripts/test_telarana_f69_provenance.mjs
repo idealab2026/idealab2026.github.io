@@ -21,7 +21,7 @@ assert(ids.size===116&&data.edges.every(e=>ids.has(e.a)&&ids.has(e.b)),"Duplicad
 const docs=data.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente");
 assert.equal(docs.length,39,"Recuento documentado actualizado");
 assert(docs.every(e=>e.confidence==="documentado"&&/^https:\/\//.test(e.source)&&!e.source.includes("youtube.com")),"Vínculo oficial sin fuente externa");
-const evidenceHosts=["wwv.yadvashem.org","www.regjeringen.no","mossad.gov.il","www.worldjewishcongress.org","jewishvirtuallibrary.org","www.nli.org.il","www.jta.org","www.clintonlibrary.gov","www.gov.il","1997-2001.state.gov","time.com","www.timesofisrael.com","main.knesset.gov.il","www.jewishagency.org","www.guinnessworldrecords.com","unifil.unmissions.org"];
+const evidenceHosts=["wwv.yadvashem.org","www.regjeringen.no","mossad.gov.il","www.worldjewishcongress.org","jewishvirtuallibrary.org","www.nli.org.il","www.jta.org","www.clintonlibrary.gov","www.gov.il","1997-2001.state.gov","time.com","www.timesofisrael.com","main.knesset.gov.il","www.jewishagency.org","www.guinnessworldrecords.com","unifil.unmissions.org","www.idf.il"];
 assert(docs.every(e=>evidenceHosts.some(h=>e.source.includes(h))),"Fuente documental ajena al expediente revisado");
 for(const id of ["vf150-adolf-eichmann","vf150-david-ben-gurion","vf150-meir-amit","vf150-golda-meir","vf150-ahmed-bouchiki","vf150-ali-hassan-salameh","vf150-danny-yatom","vf150-meir-dagan","vf150-tamir-pardo","vf150-yossi-cohen","vf150-mossad"]){
  const n=data.nodes.find(e=>e.id===id);
