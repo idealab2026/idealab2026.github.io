@@ -7,7 +7,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
     "publishedAt": "2026-09-28",
     "url": "https://www.youtube.com/watch?v=REHYGPW0c8k",
     "transcriptLanguage": "es",
-    "sourceNote": "Investigación inicial basada en un resumen previo y TXT NotebookLM de 99.744 caracteres verificado en Drive; sin marcas temporales fiables ni cotejo del audio. Los antiguos enlaces a minutos se retiran por falta de trazabilidad. Las declaraciones se atribuyen a la fuente y se distinguen de hechos documentados independientemente. Revisión 18-11-2026: citas literales con offsets de NotebookLM para un subconjunto de declaraciones; resto de resúmenes sin cotejo individual de pasaje. Nuevos contrastes institucionales y cronológicos (1949/1951, Tobianski, Lillehammer, Meshaal, Gofman, Irán). Las fuentes posteriores se identifican como investigación editorial, no contenido citado.",
+    "sourceNote": "Investigación inicial basada en un resumen previo y TXT NotebookLM de 99.744 caracteres verificado en Drive; sin marcas temporales fiables ni cotejo del audio. Los antiguos enlaces a minutos se retiran por falta de trazabilidad. Las declaraciones se atribuyen a la fuente y se distinguen de hechos documentados independientemente. Revisión 18-11-2026: citas literales con offsets de NotebookLM para un subconjunto de declaraciones; resto de resúmenes sin cotejo individual de pasaje. Nuevos contrastes institucionales y cronológicos (1949/1951, Tobianski, Lillehammer, Meshaal, Gofman, Irán). Las fuentes posteriores se identifican como investigación editorial, no contenido citado. Cuarta revisión: casi todas las sinopsis se han vinculado a una expresión exacta del TXT, con identidades ASR no confirmadas; Hispantv sin referencia localizada. Contrastes con documentos oficiales sobre Camp David, Clinton, Pegasus y sucesión iraní, y hemeroteca de Cukurs. No se ha cotejado audio.",
     "transcriptProvenance": "NotebookLM TXT privado no minutado; documento editable F69 pendiente de transcripción manual",
     "transcriptAudioMatched": false,
     "verifiedMinuteReferences": 0,
@@ -16,13 +16,13 @@ window.IDEA_TELARANA_PODCAST_150 = {
     "provenanceAuditDate": "2026-11-18",
     "independentDocumentaryEvidenceCount": 8,
     "sourceOrder": 69,
-    "reviewStatus": "tercera_pasada_contrastes_historia_1949_2026_sin_audio",
+    "reviewStatus": "cuarta_pasada_anclas_politica_internacional_y_rumores_20261118",
     "editorialAudit": {
       "totalNodeBiosUpdated": 11,
       "documentedEdgesUpgraded": 8,
       "oldUnverifiedMinutesRemoved": null
     },
-    "methodologicalNote": "18-11-2026. La transcripción TXT no lleva tiempos y no se ha cotejado audio ni voces. Las anclas transcriptSearch/transcriptCharOffset se han comprobado contra 99.744 caracteres del TXT para declaraciones seleccionadas; las restantes fichas mantienen sinopsis no verificadas al nivel de cita. Separar: 1948 Tobianski/Isser Be’eri/inteligencia militar vs 1949 fundación Mossad/Reuven Shiloah y reestructuración 1951; colaboración genérica de comunidades judías no probada; proceso de supuestos «juicios secretos» sin documento; sentencia HCJ769/02 2006 no implica revisión judicial preventiva de operaciones secretas. NOU 2000:6 confirma Lillehammer 1973, Biblioteca Clinton Meshaal 1997, Yad Vashem Eichmann 1960, decreto gobierno israelí Gofman 2026. «Boda Roja» es operación de mandos militares junio 2025, «Narnia» científicos de 2025; entrevista les atribuye marzo 2026 y 26 científicos sin corroboración. Informe ISC 2025 registra que Stuxnet se atribuye a EE. UU./Israel, sin reconocimiento formal."
+    "methodologicalNote": "18-11-2026. La transcripción TXT no lleva tiempos y no se ha cotejado audio ni voces. Las anclas transcriptSearch/transcriptCharOffset se han comprobado contra 99.744 caracteres del TXT para declaraciones seleccionadas; las restantes fichas mantienen sinopsis no verificadas al nivel de cita. Separar: 1948 Tobianski/Isser Be’eri/inteligencia militar vs 1949 fundación Mossad/Reuven Shiloah y reestructuración 1951; colaboración genérica de comunidades judías no probada; proceso de supuestos «juicios secretos» sin documento; sentencia HCJ769/02 2006 no implica revisión judicial preventiva de operaciones secretas. NOU 2000:6 confirma Lillehammer 1973, Biblioteca Clinton Meshaal 1997, Yad Vashem Eichmann 1960, decreto gobierno israelí Gofman 2026. «Boda Roja» es operación de mandos militares junio 2025, «Narnia» científicos de 2025; entrevista les atribuye marzo 2026 y 26 científicos sin corroboración. Informe ISC 2025 registra que Stuxnet se atribuye a EE. UU./Israel, sin reconocimiento formal. Cuarta revisión, 18-11-2026: 54 anclas textuales adicionales a notas de personas e instituciones con equivalencias fonéticas ASR marcadas como no verificadas cuando procede; una ficha de Hispantv carece de referencia literal y el vínculo con Pablo Iglesias se degrada a no acreditado. No confundir que una cita figure en subtítulos con veracidad de su contenido. Camp David 11–24 julio 2000, parámetros Clinton 23 diciembre y Taba 21–27 enero 2001 (no reunión final secreta única en Ramala). Pegasus: segundo archivo judicial provisional 22 enero 2026, infecciones reconocidas, autoría sin esclarecer; los rumores personales no se infieren de la investigación. Reuters: Mojtabá sucedió a Alí Jameneí en marzo 2026, nombre ASR defectuoso; JTA marzo 1965 hallazgo de Herberts Cukurs, sin atribución judicial de autoría. Ningún minuto verificado, sin escucha ni diarización."
   },
   "nodes": [
     {
@@ -206,9 +206,9 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Herberts Cukurs",
       "kind": "Persona",
       "subtitle": "Aviador letón vinculado al nazismo",
-      "note": "",
+      "note": "Exaviador letón señalado por su implicación en los crímenes nazis en Riga. La prensa contemporánea informó de su hallazgo muerto cerca de Montevideo en marzo 1965 y de una carta firmada por «los que nunca olvidan». El documento de 1965 NO es una confirmación oficial de que agentes concretos del Mossad lo mataran.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.jta.org/archive/nazi-involved-in-killing-jews-in-riga-found-dead-in-uruguay",
       "x": 2000,
       "y": 340,
       "podcastNotes": [
@@ -242,13 +242,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Vaquero pregunta por su colaboración posterior con el Mossad; Frattini describe operaciones vinculadas a científicos alemanes y recuerda su estancia en España, bajo protección de Franco.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Oto Scorceni",
+          "transcriptCharOffset": 10842,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -265,13 +270,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Es citado como el 'espía del champán' y como uno de los agentes israelíes que operaron durante el gobierno egipcio de Nasser.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Bolfan Lots",
+          "transcriptCharOffset": 10983,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -288,13 +298,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini aborda su vida en Argentina y Brasil, la búsqueda israelí y un supuesto aviso de Eichmann sobre los riesgos de permanecer en Argentina.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Menguele menguele",
+          "transcriptCharOffset": 13335,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -311,13 +326,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Se le vincula con programas balísticos egipcios que preocuparon a Israel y con el contexto de la infiltración de Wolfgang Lotz y la colaboración atribuida a Skorzeny.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Gamal Abd Naser",
+          "transcriptCharOffset": 14655,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -334,13 +354,19 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "identificacion_por_ASR_pendiente_de_audio",
           "text": "Se menciona al hablar del rescate de Mussolini, operación asociada históricamente a Skorzeny. El episodio no profundiza en su biografía.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "rescató a al duche",
+          "transcriptCharOffset": 15410,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true,
+          "identityAudioVerified": false
         }
       ]
     },
@@ -357,13 +383,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Mencionado en relación con la trayectoria militar de Otto Skorzeny y una frase que se le atribuye acerca del oficial; sin nueva evidencia presentada.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Adolf Hitler",
+          "transcriptCharOffset": 15623,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -380,13 +411,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Los interlocutores hablan de la presencia de antiguos nazis en la España franquista y de la supuesta protección de Skorzeny y Léon Degrelle.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "protegido por Franco",
+          "transcriptCharOffset": 16087,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -403,13 +439,19 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "identificacion_por_ASR_pendiente_de_audio",
           "text": "Frattini lo incluye entre los antiguos colaboradores del nazismo establecidos en la España franquista.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "león de Grel",
+          "transcriptCharOffset": 16331,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true,
+          "identityAudioVerified": false
         }
       ]
     },
@@ -426,13 +468,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini recomienda su investigación sobre los nazis refugiados en España y alude a la 'lista de los 103' remitida por autoridades británicas.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "José María Irujo",
+          "transcriptCharOffset": 16691,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -449,13 +496,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "incierto",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini lo menciona como posible destinatario de una comunicación británica sobre nazis refugiados en España, pero expresa explícitamente dudas sobre el dato.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Martín Artajo",
+          "transcriptCharOffset": 17683,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -472,13 +524,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Vaquero lo identifica como uno de los prologuistas de la reedición de su libro sobre posmodernismo; mención tangencial al tema del espionaje.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "David Rubio",
+          "transcriptCharOffset": 13209,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -495,13 +552,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Vaquero lo identifica como uno de los prologuistas de la reedición de su libro sobre posmodernismo; mención tangencial.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Denis Paredes",
+          "transcriptCharOffset": 13221,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -518,13 +580,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Vaquero menciona su participación como prologuista de una nueva edición de su libro; mención tangencial.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Pau Botella",
+          "transcriptCharOffset": 13270,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -541,13 +608,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini recuerda su relación profesional y señala que Dezcallar le escribió el prólogo de uno de sus libros; lo cita reflexionando sobre éxitos y errores de los servicios secretos.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Jorge Dezcallar",
+          "transcriptCharOffset": 18241,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -624,13 +696,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini menciona al 'Carlos el Chacal' como parte de los contactos atribuidos a Ali Hassan Salameh; el episodio no aporta documentación adicional.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Carlos el Chacal",
+          "transcriptCharOffset": 19958,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -677,13 +754,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini le atribuye la negociación de una indemnización con Noruega por el asesinato de Ahmed Bouchiki en Lillehammer.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Simón Pérez",
+          "transcriptCharOffset": 21611,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -758,13 +840,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini relata su asesinato en Gaza mediante un ataque israelí y describe, como explicación propia, una supuesta preparación previa con una silla de ruedas.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Ahmed Yasim",
+          "transcriptCharOffset": 24476,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -781,13 +868,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Citado como sucesor de Ahmed Yassin dentro de Hamás y como objetivo de otro ataque israelí en Gaza.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Abdelas Irrantisi",
+          "transcriptCharOffset": 25180,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -804,13 +896,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Aparece en una inserción comercial del episodio y presenta su agencia y su trabajo anterior con Roberto Vaquero; mención no vinculada al contenido geopolítico.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Alicia Sanz",
+          "transcriptCharOffset": 25453,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -827,13 +924,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini lo menciona en su relato sobre las restricciones y acreditaciones de prensa que sufrió como corresponsal en Israel.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Isaac Shamir",
+          "transcriptCharOffset": 30441,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -850,13 +952,19 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "incierto",
+          "status": "identificacion_por_ASR_pendiente_de_audio",
           "text": "Frattini recuerda a una persona cuyo nombre suena como 'Robert Zasler', jefe de prensa en el entorno de Yitzhak Shamir. La transcripción automática podría haber deformado el nombre.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Robert Zasler",
+          "transcriptCharOffset": 30395,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true,
+          "identityAudioVerified": false
         }
       ]
     },
@@ -873,13 +981,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini explica que pedía información a este colega del Daily Telegraph cuando tenía suspendidas sus acreditaciones de prensa israelíes.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Juan Carlos Gumucio",
+          "transcriptCharOffset": 31093,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -896,13 +1009,19 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "incierto",
+          "status": "identificacion_por_ASR_pendiente_de_audio",
           "text": "Frattini recuerda que un cónsul español en Jerusalén, transcrito como 'Juan Serrat', intervino tras su detención en Jabalia. Identificación pendiente de confirmación.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Juan Serrat",
+          "transcriptCharOffset": 36258,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true,
+          "identityAudioVerified": false
         }
       ]
     },
@@ -919,13 +1038,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini expresa críticas severas a la gestión de Mahmud Abás y a la corrupción atribuida a la Autoridad Palestina. Son valoraciones del entrevistado, sin acreditación adicional en el episodio.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Mahmud Davas",
+          "transcriptCharOffset": 37892,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -934,7 +1058,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Angela Merkel",
       "kind": "Persona",
       "subtitle": "Excanciller alemana",
-      "note": "",
+      "note": "La entrevista alega una financiación alemana de un hospital obstétrico en Gaza y un desvío completo de la ayuda. No se aportan memorias oficiales, contratos, auditorías, cifras ni documentos que corroboren el episodio, por lo que permanece como relato no verificado. No inferir responsabilidad de personas específicas.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 2000,
@@ -942,13 +1066,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini relata un episodio sobre financiación alemana de un hospital en Gaza y acusa a responsables palestinos de desviar fondos; no presenta documentación verificable en el podcast.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Ángela Merkel dio dinero",
+          "transcriptCharOffset": 38394,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -957,21 +1086,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Bill Clinton",
       "kind": "Persona",
       "subtitle": "Expresidente de Estados Unidos",
-      "note": "",
+      "note": "Presidente estadounidense y mediador en Camp David (11–24 julio 2000); el comunicado trilateral de 25 julio confirma su papel. El 23 diciembre de 2000 propuso los «parámetros de Clinton». La reunión final secreta en Ramala descrita por Frattini no queda acreditada en estos documentos; no se confunde con el proceso negociador documentado.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://1997-2001.state.gov/regions/nea/000725_trilateral_stmt.html",
       "x": 2275,
       "y": 1290,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini le atribuye, junto a Ehud Barak, conversaciones con Yasser Arafat sobre una propuesta de Estado palestino y Jerusalén al final de su presidencia.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Bill Clinton",
+          "transcriptCharOffset": 42612,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -980,21 +1114,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Ehud Barak",
       "kind": "Persona",
       "subtitle": "Ex primer ministro israelí",
-      "note": "",
+      "note": "Primer ministro israelí en las negociaciones de Camp David (11–24 julio 2000), seguidas de propuestas de diciembre de 2000 y conversaciones de enero 2001. La existencia de negociaciones está confirmada por fuentes oficiales, pero el relato de una oferta cerrada, única e irrevocable en Ramala simplifica etapas y posiciones.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://1997-2001.state.gov/regions/nea/000725_trilateral_stmt.html",
       "x": 2550,
       "y": 1290,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Se le menciona como interlocutor de Arafat y Clinton en negociaciones de paz y como antiguo mando de la unidad Sayeret Matkal.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Ejud Barak",
+          "transcriptCharOffset": 42684,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1003,21 +1142,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Yasser Arafat",
       "kind": "Persona",
       "subtitle": "Dirigente palestino",
-      "note": "",
+      "note": "Presidente de la Autoridad Palestina y participante en Camp David (julio 2000). Los «parámetros de Clinton» del 23 diciembre 2000 fueron aceptados por israelíes y palestinos como base para negociaciones posteriores con reservas; no fue una simple negativa definitiva atribuible a una reunión secreta en Ramala.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.un.org/unispal/document/auto-insert-209471/",
       "x": 2825,
       "y": 1290,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini analiza las negociaciones con Clinton y Barak y su decisión de no aceptar la propuesta descrita; también aborda su relación con Jordania y Líbano.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Yaser Arafat",
+          "transcriptCharOffset": 42962,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1026,21 +1170,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "George W. Bush",
       "kind": "Persona",
       "subtitle": "Expresidente de Estados Unidos",
-      "note": "",
+      "note": "Presidente de Estados Unidos desde el 20 enero 2001. El cambio de Administración coincidió con las últimas negociaciones de paz de Clinton; no acredita que en su última semana Clinton y Barak ofrecieran un ultimátum en Ramala tal como se relata.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.un.org/unispal/document/auto-insert-209471/",
       "x": 3100,
       "y": 1290,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Mencionado por el relevo de Clinton en la Casa Blanca durante el contexto de las negociaciones con Arafat.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "llegaba Bush",
+          "transcriptCharOffset": 43049,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1057,13 +1206,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Se habla de la intervención israelí en Líbano durante su etapa como ministro de Defensa y de un plan estratégico contra el Irán nuclear que habría preparado con Meir Dagan.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Ariel Sharon",
+          "transcriptCharOffset": 48466,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1080,13 +1234,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "El invitado relata un regalo a Donald Trump relativo a la operación de buscas y describe el papel de Netanyahu en la política de inteligencia frente a Irán.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "monta en una pieza de madera un bíper",
+          "transcriptCharOffset": 60381,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1103,13 +1262,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Citado en el relato de la operación de buscapersonas contra Hizbulá y como predecesor de David Barnea en la dirección del Mossad.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Josie Cohen",
+          "transcriptCharOffset": 75605,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://mossad.gov.il/en/history",
@@ -1186,13 +1350,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Citado en la secuencia de sucesión de directores del Mossad y de sus prioridades frente al programa nuclear de Irán.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Tamir Pardo",
+          "transcriptCharOffset": 75457,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://mossad.gov.il/en/history",
@@ -1231,21 +1400,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Alí Jameneí",
       "kind": "Persona",
       "subtitle": "Dirigente supremo iraní mencionado",
-      "note": "",
+      "note": "Alí Jameneí fue líder supremo de Irán hasta 2026. Según Reuters, el 8 marzo 2026 la Asamblea de Expertos nombró a su hijo Mojtabá para sucederlo. La forma «José Nicenei» del TXT es reconocimiento automático defectuoso de su nombre, no una figura distinta.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.reuters.com/world/middle-east/iran-names-khameneis-son-mojtaba-new-supreme-leader-state-media-report-2026-03-08/",
       "x": 2000,
       "y": 1670,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "La entrevista trata su papel en la estrategia israelí contra Irán y comenta un presunto intento de ataque autorizado o desautorizado por dirigentes estadounidenses.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "José Nicenei",
+          "transcriptCharOffset": 81103,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1254,21 +1428,27 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Mojtabá Jameneí",
       "kind": "Persona",
       "subtitle": "Dirigente iraní mencionado",
-      "note": "",
+      "note": "Mojtabá Jameneí, hijo de Alí Jameneí, fue designado líder supremo iraní el 8 marzo 2026, según Reuters citando a medios estatales iraníes. El TXT transcribe defectuosamente varios nombres de este pasaje y no se ha cotejado audio; fecha e identidad se fundamentan externamente.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.reuters.com/world/middle-east/iran-names-khameneis-son-mojtaba-new-supreme-leader-state-media-report-2026-03-08/",
       "x": 2275,
       "y": 1670,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "incierto",
+          "status": "identificacion_por_ASR_pendiente_de_audio",
           "text": "Frattini lo presenta como sucesor e hijo del dirigente iraní Alí Jameneí; la transcripción automática de este pasaje contiene errores y la cronología no se ha contrastado.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "el líder supremo Jameney el hijo",
+          "transcriptCharOffset": 81052,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true,
+          "identityAudioVerified": false
         }
       ]
     },
@@ -1285,13 +1465,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini dice que Israel solicitó permiso a Trump y a Ratcliffe para un ataque contra Jameneí y que no lo obtuvo; afirmación procedente del podcast.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "John Ratcliff",
+          "transcriptCharOffset": 78190,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1308,13 +1493,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini menciona un regalo de Netanyahu tras la operación de los buscapersonas y una consulta de Israel sobre un ataque a Jameneí; atribución exclusiva al episodio.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Donald Trump",
+          "transcriptCharOffset": 60552,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1331,13 +1521,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini le vincula a una operación, presuntamente realizada con la CIA, para evacuar a un científico norcoreano y su familia; no aporta documentos públicos en el episodio.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Alberto Saiz",
+          "transcriptCharOffset": 87869,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1354,13 +1549,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Frattini sitúa la presunta extracción de un científico norcoreano durante su gobierno, bajo la dirección del CNI de Alberto Saiz.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "bajo el gobierno de Zapatero",
+          "transcriptCharOffset": 87930,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1369,21 +1569,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Fernando Grande-Marlaska",
       "kind": "Persona",
       "subtitle": "Ministro del Interior citado",
-      "note": "",
+      "note": "Ministro del Interior español; la entrevista le atribuye responsabilidad por presuntas advertencias de inteligencia relacionadas con Ceuta. En agosto 2026 se hicieron públicas versiones divergentes de ministros sobre avisos del CNI. Las afirmaciones del podcast sobre instrucciones específicas y ocultación no están demostradas por esos reportes.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.rtve.es/noticias/20260825/robles-comparencia-congreso-crisis-ceuta/17199784.shtml",
       "x": 2000,
       "y": 1860,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini critica su actuación respecto a advertencias del CNI sobre Marruecos y Ceuta; es una valoración controvertida presentada por el invitado.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "el ministro Marlasca",
+          "transcriptCharOffset": 90758,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1392,7 +1597,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Manuel Llamas (nombre sin cotejar)",
       "kind": "Persona",
       "subtitle": "Mando de la Guardia Civil citado",
-      "note": "",
+      "note": "El TXT menciona «teniente general Manuel Llamas» como supuesto responsable de una instrucción a Guardia Civil Ceuta. La identidad, denominación del cargo y la orden no se han comprobado en documento oficial; no atribuir la instrucción a una persona real solo por un nombre ASR, susceptible de error.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 2275,
@@ -1400,13 +1605,19 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini menciona una presunta instrucción dirigida a mandos de Ceuta para evitar ciertas palabras en un informe sobre Marruecos. La identidad y las afirmaciones requieren verificación.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "teniente general Manuel Llamas",
+          "transcriptCharOffset": 91454,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true,
+          "identityAudioVerified": false
         }
       ]
     },
@@ -1415,9 +1626,9 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Pedro Sánchez",
       "kind": "Persona",
       "subtitle": "Presidente del Gobierno español",
-      "note": "",
+      "note": "El móvil de Pedro Sánchez fue afectado por Pegasus, según las investigaciones españolas. La Audiencia Nacional archivó de nuevo provisionalmente el caso el 22-01-2026, sin poder identificar al responsable, debido en parte a falta de respuesta a comisiones rogatorias. La entrevista formula hipótesis sobre autores y motivaciones sin acreditarlas.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
       "x": 2550,
       "y": 1860,
       "podcastNotes": [
@@ -1443,21 +1654,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Begoña Gómez",
       "kind": "Persona",
       "subtitle": "Esposa de Pedro Sánchez",
-      "note": "",
+      "note": "Se cita a Begoña Gómez en rumores sobre su esfera personal e hipotéticas operaciones marroquíes. NO se han verificado ni aportado pruebas de esas imputaciones. La resolución comunicada en enero 2026 no identificó autor del espionaje Pegasus y tampoco respalda esos rumores. Su presencia en el grafo no indica implicación.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
       "x": 2825,
       "y": 1860,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "rumor",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini relata expresamente como rumor unas acusaciones graves que dice haber oído sobre una supuesta operación marroquí y la esfera personal de la esposa del presidente. El podcast no presenta pruebas verificables; no debe interpretarse como hecho ni vínculo acreditado.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Begoña Gómez",
+          "transcriptCharOffset": 94872,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1474,13 +1690,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Se alude a su trabajo en televisión vinculada a Irán y más adelante se le critica políticamente. Las imputaciones genéricas de financiación a partidos no se verifican en el episodio.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Pablo Iglesias",
+          "transcriptCharOffset": 99145,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1667,13 +1888,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Incluido por Frattini entre los servicios con cooperación estrecha con el Mossad.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "el MI6",
+          "transcriptCharOffset": 88463,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1690,13 +1916,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "El podcast trata su influencia en Líbano y la operación contra buscapersonas en 2024, y alude al papel de Irán.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Jesbolá",
+          "transcriptCharOffset": 57032,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1713,13 +1944,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Se abordan sus dirigentes, ataques israelíes y su relación conflictiva con la Autoridad Palestina y otras facciones.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "un alto miembro de jamás",
+          "transcriptCharOffset": 5892,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1764,13 +2000,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Entrevistado y presentador debaten sus dirigentes, corrupción presunta y conflicto interno con Hamás.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Autoridad Nacional Palestina",
+          "transcriptCharOffset": 37586,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1787,13 +2028,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Mencionadas por sus operaciones, estructuras de inteligencia y acciones militares en distintos periodos.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "las IDF las fuerzas de defensa israelíes",
+          "transcriptCharOffset": 7118,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1838,13 +2084,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Se habla de sus mandos, actividades exteriores y posición dentro del poder iraní.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Guardia Revolucionaria Islámica",
+          "transcriptCharOffset": 81235,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1853,9 +2104,9 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "DGST de Marruecos",
       "kind": "Organización",
       "subtitle": "Servicio marroquí de inteligencia interior",
-      "note": "",
+      "note": "La entrevista atribuye sin prueba una posible operación del servicio de seguridad marroquí alrededor de Pegasus. El caso judicial español sobre espionaje al presidente y ministros se archivó provisionalmente el 22-01-2026 sin identificar autor. No convertir rumor de tercero en operación documentada por la DGST.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
       "x": 2275,
       "y": 2430,
       "podcastNotes": [
@@ -1889,13 +2140,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Se menciona como unidad de élite que dirigió Ehud Barak.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Sayeret Metcal",
+          "transcriptCharOffset": 42779,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1904,7 +2160,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "HispanTV",
       "kind": "Organización",
       "subtitle": "Canal de televisión iraní",
-      "note": "",
+      "note": "La ficha sobre HispantTV procede de una sinopsis previa, pero el TXT completo de NotebookLM F69 (99.744 caracteres) no contiene un pasaje localizable que mencione el canal. No hay prueba independiente añadida que fundamente una relación concreta en este episodio. No presentar como hecho comprobado ni como cita del invitado.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 2825,
@@ -1916,8 +2172,8 @@ window.IDEA_TELARANA_PODCAST_150 = {
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
-          "text": "Mencionado en valoraciones del invitado sobre figuras políticas españolas y medios públicos iraníes.",
+          "status": "sin_pasaje_localizable_en_txt_entrevista_pendiente",
+          "text": "Sinopsis editorial anterior cuya referencia al canal HispantTV no se ha encontrado en el TXT de F69. La relación requiere fuente independiente o comprobación audiovisual.",
           "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
         }
       ]
@@ -1927,7 +2183,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Cooperación alemana",
       "kind": "Organización",
       "subtitle": "Organismo de ayuda internacional citado",
-      "note": "",
+      "note": "Entidad genérica de cooperación alemana citada en el podcast en relación con un supuesto hospital obstétrico no construido por malversación. La ausencia de un programa identificado, cuantía y fuente de auditoría impide verificar una acusación. La ficha no implica que toda la cooperación alemana haya cometido irregularidades.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 3100,
@@ -1935,13 +2191,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Frattini alega que financió un hospital en Gaza; el relato de corrupción no viene acompañado de documentos verificables.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "la cooperación alemana",
+          "transcriptCharOffset": 38588,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1958,13 +2219,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Mencionado entre los servicios aliados o colaboradores del Mossad.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Dirección General para la Seguridad Exterior",
+          "transcriptCharOffset": 88611,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1981,13 +2247,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "sinopsis_vinculada_a_pasaje_txt_sin_audio",
           "text": "Aludidos como parte de los servicios internacionales próximos al Mossad.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "servicio de inteligencia australiano",
+          "transcriptCharOffset": 88480,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -2004,13 +2275,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · localizador literal NotebookLM, sin audio ni minuto",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "alegacion",
+          "status": "alegacion_textual_sin_prueba_independiente",
           "text": "Se habla de mandos de Ceuta y de una presunta instrucción transmitida por la cadena de mando.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "jefe de la Guardia Civil en Ceuta",
+          "transcriptCharOffset": 91488,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -2497,6 +2773,150 @@ window.IDEA_TELARANA_PODCAST_150 = {
           "text": "Investigación académica independiente incorporada como contexto, no cita literal del entrevistado.",
           "minuteVerified": false,
           "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "vf150-camp-david-2000",
+      "name": "Camp David: comunicado trilateral (25 julio 2000)",
+      "kind": "Documento",
+      "subtitle": "Clinton, Barak y Arafat · 11–24 julio 2000",
+      "note": "Documento del Departamento de Estado de Estados Unidos que confirma las negociaciones de estatus final en Camp David entre el 11 y el 24 de julio de 2000, bajo Clinton, y la continuación del esfuerzo. No acredita una oferta final secreta y única en Ramala.",
+      "source": "https://1997-2001.state.gov/regions/nea/000725_trilateral_stmt.html",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contraste documental externo (no afirmación literal)",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://1997-2001.state.gov/regions/nea/000725_trilateral_stmt.html",
+          "status": "contraste_externo_independiente",
+          "text": "Documento del Departamento de Estado de Estados Unidos que confirma las negociaciones de estatus final en Camp David entre el 11 y el 24 de julio de 2000, bajo Clinton, y la continuación del esfuerzo. No acredita una oferta final secreta y única en Ramala."
+        }
+      ]
+    },
+    {
+      "id": "vf150-clinton-params-2000",
+      "name": "Parámetros de Clinton (23 diciembre 2000)",
+      "kind": "Documento",
+      "subtitle": "Propuesta de paz estadounidense",
+      "note": "Propuestas presentadas por Clinton a equipos negociadores israelí y palestino en la Casa Blanca el 23-12-2000, relativas a fronteras, seguridad, Jerusalén y refugiados. Las partes expresaron reservas, no una aceptación incondicional ni una negativa única irreversible.",
+      "source": "https://fmep.org/resource/clinton-parameters/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contraste documental externo (no afirmación literal)",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://fmep.org/resource/clinton-parameters/",
+          "status": "contraste_externo_independiente",
+          "text": "Propuestas presentadas por Clinton a equipos negociadores israelí y palestino en la Casa Blanca el 23-12-2000, relativas a fronteras, seguridad, Jerusalén y refugiados. Las partes expresaron reservas, no una aceptación incondicional ni una negativa única irreversible."
+        }
+      ]
+    },
+    {
+      "id": "vf150-taba2001",
+      "name": "Negociaciones de Taba (21–27 enero 2001)",
+      "kind": "Acontecimiento",
+      "subtitle": "Continuación de negociaciones israelí-palestinas",
+      "note": "La ONU documenta negociaciones en Taba entre enero 21 y 27 de 2001, basadas en parámetros de Clinton; desmiente que todas las conversaciones concluyeran de forma definitiva en una supuesta reunión final de Ramala de diciembre.",
+      "source": "https://www.un.org/unispal/document/auto-insert-209471/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contraste documental externo (no afirmación literal)",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.un.org/unispal/document/auto-insert-209471/",
+          "status": "contraste_externo_independiente",
+          "text": "La ONU documenta negociaciones en Taba entre enero 21 y 27 de 2001, basadas en parámetros de Clinton; desmiente que todas las conversaciones concluyeran de forma definitiva en una supuesta reunión final de Ramala de diciembre."
+        }
+      ]
+    },
+    {
+      "id": "vf150-pegasus-archivo-2026",
+      "name": "Archivo provisional de la investigación Pegasus (22 enero 2026)",
+      "kind": "Acontecimiento",
+      "subtitle": "Audiencia Nacional de España · autoría no esclarecida",
+      "note": "La Audiencia Nacional archivó provisionalmente por segunda vez la investigación sobre infecciones de Pegasus de teléfonos gubernamentales: faltó cooperación judicial de Israel y la instrucción no determinó autor o autores. Las imputaciones del entrevistado a Marruecos y alusiones personales quedan sin acreditar.",
+      "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contraste documental externo (no afirmación literal)",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
+          "status": "contraste_externo_independiente",
+          "text": "La Audiencia Nacional archivó provisionalmente por segunda vez la investigación sobre infecciones de Pegasus de teléfonos gubernamentales: faltó cooperación judicial de Israel y la instrucción no determinó autor o autores. Las imputaciones del entrevistado a Marruecos y alusiones personales quedan sin acreditar."
+        }
+      ]
+    },
+    {
+      "id": "vf150-mojtaba-sucesion2026",
+      "name": "Mojtabá Jameneí nombrado líder supremo (8 marzo 2026)",
+      "kind": "Acontecimiento",
+      "subtitle": "Iran · Asamblea de Expertos",
+      "note": "Reuters informó el 8 marzo 2026 de la designación de Mojtabá Jameneí como sucesor de su padre Alí Jameneí por la Asamblea de Expertos iraní. La fecha constituye evidencia de un relevo institucional, no confirma otras teorías operativas narradas en el podcast.",
+      "source": "https://www.reuters.com/world/middle-east/iran-names-khameneis-son-mojtaba-new-supreme-leader-state-media-report-2026-03-08/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contraste documental externo (no afirmación literal)",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.reuters.com/world/middle-east/iran-names-khameneis-son-mojtaba-new-supreme-leader-state-media-report-2026-03-08/",
+          "status": "contraste_externo_independiente",
+          "text": "Reuters informó el 8 marzo 2026 de la designación de Mojtabá Jameneí como sucesor de su padre Alí Jameneí por la Asamblea de Expertos iraní. La fecha constituye evidencia de un relevo institucional, no confirma otras teorías operativas narradas en el podcast."
+        }
+      ]
+    },
+    {
+      "id": "vf150-cukurs-uruguay1965",
+      "name": "Herberts Cukurs hallado muerto en Uruguay (marzo 1965)",
+      "kind": "Acontecimiento",
+      "subtitle": "Hemeroteca contemporánea sobre un crimen",
+      "note": "La Jewish Telegraphic Agency documentó el 8-03-1965 el hallazgo del cuerpo de Cukurs en el área de Montevideo y la carta hallada que reivindicaba el hecho. La hemeroteca acredita el suceso y el comunicado, no identifica judicialmente a los autores materiales.",
+      "source": "https://www.jta.org/archive/nazi-involved-in-killing-jews-in-riga-found-dead-in-uruguay",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contraste documental externo (no afirmación literal)",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.jta.org/archive/nazi-involved-in-killing-jews-in-riga-found-dead-in-uruguay",
+          "status": "contraste_externo_independiente",
+          "text": "La Jewish Telegraphic Agency documentó el 8-03-1965 el hallazgo del cuerpo de Cukurs en el área de Montevideo y la carta hallada que reivindicaba el hecho. La hemeroteca acredita el suceso y el comunicado, no identifica judicialmente a los autores materiales."
         }
       ]
     }
@@ -3247,11 +3667,11 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "a": "vf150-pablo-iglesias",
       "b": "vf150-hispantv",
       "type": "Vínculo profesional mencionado",
-      "confidence": "indicio",
-      "note": "Frattini alude a trabajo televisivo de una figura política española.",
+      "confidence": "hipotesis",
+      "note": "No se ha encontrado cita de HispantTV en el TXT de F69. No inferir financiación ni colaboración a partir de la sinopsis previa.",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "episodeId": "vaquero-150-frattini-2026-09-28",
-      "claimStatus": "relación mencionada por el entrevistado"
+      "claimStatus": "relacion_no_localizada_en_txt_no_acreditada"
     },
     {
       "id": "vf150-edge-068",
@@ -3989,6 +4409,162 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "source": "https://academic.oup.com/ehr/article/140/604-605/777/8140798",
       "episodeId": "vaquero-150-frattini-2026-09-28",
       "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-camp-clinton",
+      "a": "vf150-bill-clinton",
+      "b": "vf150-camp-david-2000",
+      "type": "Mediador de Camp David",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://1997-2001.state.gov/regions/nea/000725_trilateral_stmt.html",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-camp-barak",
+      "a": "vf150-ehud-barak",
+      "b": "vf150-camp-david-2000",
+      "type": "Participante en Camp David",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://1997-2001.state.gov/regions/nea/000725_trilateral_stmt.html",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-camp-arafat",
+      "a": "vf150-yasser-arafat",
+      "b": "vf150-camp-david-2000",
+      "type": "Participante en Camp David",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://1997-2001.state.gov/regions/nea/000725_trilateral_stmt.html",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-params-clinton",
+      "a": "vf150-bill-clinton",
+      "b": "vf150-clinton-params-2000",
+      "type": "Propuestas de 23 diciembre 2000",
+      "confidence": "documentado",
+      "claimStatus": "propuesta_documentada",
+      "source": "https://fmep.org/resource/clinton-parameters/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-params-arafat",
+      "a": "vf150-yasser-arafat",
+      "b": "vf150-clinton-params-2000",
+      "type": "Recibió propuestas con reservas",
+      "confidence": "documentado",
+      "claimStatus": "negociacion_documentada",
+      "source": "https://www.un.org/unispal/document/auto-insert-209471/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-params-taba",
+      "a": "vf150-clinton-params-2000",
+      "b": "vf150-taba2001",
+      "type": "Continuación de negociación en enero 2001",
+      "confidence": "documentado",
+      "claimStatus": "cronologia_documentada",
+      "source": "https://www.un.org/unispal/document/auto-insert-209471/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-pegasus-sanchez",
+      "a": "vf150-pegasus-archivo-2026",
+      "b": "vf150-pedro-sanchez",
+      "type": "Infecciones investigadas, autoría no determinada",
+      "confidence": "documentado",
+      "claimStatus": "resolucion_judicial_reportada",
+      "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-pegasus-dgst",
+      "a": "vf150-pegasus-archivo-2026",
+      "b": "vf150-dgst-marruecos",
+      "type": "No se identifica a Marruecos como autor",
+      "confidence": "documentado",
+      "claimStatus": "ausencia_de_atribucion_judicial",
+      "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-pegasus-rumor",
+      "a": "vf150-pegasus-archivo-2026",
+      "b": "vf150-begona-gomez",
+      "type": "Las acusaciones personales del podcast carecen de corroboración",
+      "confidence": "indicio",
+      "claimStatus": "rumor_no_corroborrado_por_expediente_judicial",
+      "source": "https://efe.com/espana/2026-01-22/pegasus-archivado-espionaje-politicos-israel/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-succession-father",
+      "a": "vf150-ali-khamenei",
+      "b": "vf150-mojtaba-sucesion2026",
+      "type": "Relevo padre a hijo",
+      "confidence": "documentado",
+      "claimStatus": "noticia_de_designacion_oficial",
+      "source": "https://www.reuters.com/world/middle-east/iran-names-khameneis-son-mojtaba-new-supreme-leader-state-media-report-2026-03-08/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-succession-son",
+      "a": "vf150-mojtaba-khamenei",
+      "b": "vf150-mojtaba-sucesion2026",
+      "type": "Designación 8 marzo 2026",
+      "confidence": "documentado",
+      "claimStatus": "noticia_de_designacion_oficial",
+      "source": "https://www.reuters.com/world/middle-east/iran-names-khameneis-son-mojtaba-new-supreme-leader-state-media-report-2026-03-08/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-cukurs-death",
+      "a": "vf150-herbert-cukurs",
+      "b": "vf150-cukurs-uruguay1965",
+      "type": "Hallado muerto en 1965",
+      "confidence": "documentado",
+      "claimStatus": "noticia_contemporanea_documentada",
+      "source": "https://www.jta.org/archive/nazi-involved-in-killing-jews-in-riga-found-dead-in-uruguay",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r4-cukurs-mossad",
+      "a": "vf150-cukurs-uruguay1965",
+      "b": "vf150-mossad",
+      "type": "Vinculación de Mossad alegada; hemeroteca no prueba autoría",
+      "confidence": "indicio",
+      "claimStatus": "atribucion_del_entrevistado_no_probada_por_hemeroteca",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "F69 4ª revisión: distinguir texto automático, fuente documental y límite de inferencia; no imputar delitos ni vínculos secretos por rumor.",
       "podcastNotes": []
     }
   ]
