@@ -1337,7 +1337,7 @@
       "impersonalAttributedSummaries": 16,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
       "structuredProfiles": 2,
-      "verifiedIndependentChecks": 4,
+      "verifiedIndependentChecks": 3,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 1483,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
@@ -1349,7 +1349,7 @@
         "study-f72-presentacion-archivo-nuclear-iran-2018",
         "study-f72-dispositivos-libano-septiembre-2024"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F72 ampliada con Kidón, sayanim, Natanz, Hizbulá y explosiones de dispositivos. 14 nodos, 16 relaciones, 16 notas de subtítulos, 3 relaciones respaldadas por Knéset, CRS y ONU; 2018 archivo iraní ya documentado como hito propio. 2 acontecimientos de F72 (2018 y 2024), y 2 referencias cruzadas a hechos F69/F24 sin duplicación. La alegación sobre conocimiento previo del 7/10 y la lista de 5 estados en Stuxnet siguen no acreditadas. Los «sayanim» se registran como afirmación de la fuente, NO atributo de la población judía.",
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F72 ampliada con Kidón, sayanim, Natanz, Hizbulá y explosiones de dispositivos. 14 nodos, 16 relaciones, 16 notas de subtítulos, 3 relaciones respaldadas por Knéset, CRS y ONU; 2018 archivo iraní ya documentado como hito propio. 2 acontecimientos de F72 (2018 y 2024), y 2 referencias cruzadas a hechos F69/F24 sin duplicación. La alegación sobre conocimiento previo del 7/10 y la lista de 5 estados en Stuxnet siguen no acreditadas. Los «sayanim» se registran como afirmación de la fuente, NO atributo de la población judía.\n18/11 QA de reconciliación: 4 contrastes editoriales consultados, pero solo 3 aristas del módulo califican como relaciones verificadas independientemente. Se corrige el contador estructural a 3 sin añadir evidencia ficticia.",
       "lastUpdated": "2026-11-13"
     },
     {
