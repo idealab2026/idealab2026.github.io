@@ -15,9 +15,9 @@ window.IDEA_TELARANA_F70_REVIEW = {
     "lastMarker": "01:37:14",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "segunda_revision_archivo_cuentas_y_reforma_curial_con_contrastes_primarios",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar.",
-    "independentDocumentaryRelations": 7,
+    "reviewStage": "tercera_revision_control_externo_asif_moneyval_proceso_financiero",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados.",
+    "independentDocumentaryRelations": 10,
     "explicitContradictionReviews": 3
   },
   "nodes": [
@@ -299,6 +299,45 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "x": 12300,
       "y": 4650,
       "podcastNotes": []
+    },
+    {
+      "id": "f70-moneyval",
+      "name": "MONEYVAL (Consejo de Europa)",
+      "kind": "Institución",
+      "subtitle": "Órgano intergubernamental de evaluación de prevención de blanqueo y financiación del terrorismo.",
+      "note": "Contexto documental externo, no una afirmación de Eric Frattini ni prueba sobre episodios concretos. En mayo de 2024 MONEYVAL calificó 35 de 39 recomendaciones aplicables como cumplidas o mayormente cumplidas y cuatro como parcialmente cumplidas. Evalúa conformidad con estándares AML/CFT; no equivale a absolución de todos los casos históricos ni a certificación de inexistencia de delitos.",
+      "source": "https://www.coe.int/en/web/moneyval/-/the-holy-see-including-vatican-city-state-improved-anti-money-laundering-and-combating-the-financing-of-terrorism-measures-with-respect-to-banking-and-legal-persons",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12600,
+      "y": 4650,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-asif",
+      "name": "ASIF (Autoridad de Supervisión e Información Financiera)",
+      "kind": "Institución",
+      "subtitle": "Organismo de vigilancia financiera y unidad de inteligencia financiera de la Santa Sede y Ciudad del Vaticano.",
+      "note": "Contexto institucional externo, no testimonio del episodio. Según su memoria de 2025, publicada en abril de 2026, ASIF recibió 78 comunicaciones de actividad sospechosa, elevó 16 informes a la oficina del promotor de justicia y suspendió tres operaciones por unos 522.000 euros. Las comunicaciones no son condenas ni prueban por sí mismas hechos ilícitos de personas específicas.",
+      "source": "https://www.vaticannews.va/en/vatican-city/news/2026-04/supervisory-financial-information-authority-asif-annual-report.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12400,
+      "y": 4800,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-resolucion-londres-2026",
+      "name": "Resolución de apelación sobre fondos de la Santa Sede (2026)",
+      "kind": "Documento",
+      "subtitle": "Resolución judicial vaticana del 17 de marzo de 2026 relativa al procedimiento por inversiones inmobiliarias y gestión de fondos.",
+      "note": "Documento de contexto independiente de la entrevista. El Tribunal de Apelación ordenó repetir parcialmente determinadas actuaciones del proceso financiero, por defectos procedimentales y acceso incompleto de las defensas al expediente. No anuló íntegramente todos los efectos de la sentencia de primera instancia. No implica culpabilidad o absolución automática, ni se refiere específicamente al IOR. Conviene no mezclar inversiones de la Secretaría de Estado con cuentas del IOR.",
+      "source": "https://www.vaticannews.va/en/vatican-city/news/2026-03/holy-see-partial-mistrial-financial-management-court-appeals.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 12240,
+      "y": 4920,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -534,6 +573,42 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "source": "https://www.ior.va/en/contents/press-2026/annual-report-2025/",
       "episodeId": "idealab-f70-frattini",
       "note": "El comunicado del propio IOR, 11/05/2026, reporta 51 M€ de beneficio neto y dividendo de 24,3 M€ al papa. Son cifras declaradas por la entidad y no una validación externa de operaciones discutidas en el podcast.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-moneyval-2024",
+      "a": "f70-moneyval",
+      "b": "f70-santa-sede",
+      "type": "Evaluación externa de estándares contra blanqueo (2024)",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.coe.int/en/web/moneyval/-/the-holy-see-including-vatican-city-state-improved-anti-money-laundering-and-combating-the-financing-of-terrorism-measures-with-respect-to-banking-and-legal-persons",
+      "episodeId": "idealab-f70-frattini",
+      "note": "MONEYVAL (Consejo de Europa), 28/05/2024: 35 de 39 recomendaciones aplicables conformes o mayormente conformes y cuatro parcialmente conformes. La evaluación del marco regulador no permite concluir por sí sola inexistencia de delitos financieros ni equipara la Santa Sede con el IOR.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-asif-ior-2025",
+      "a": "f70-asif",
+      "b": "f70-ior",
+      "type": "Supervisión financiera y prevención de blanqueo (informe 2025)",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vaticannews.va/en/vatican-city/news/2026-04/supervisory-financial-information-authority-asif-annual-report.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La memoria ASIF 2025, difundida el 30/04/2026, describe supervisión al IOR y 78 reportes de actividad sospechosa para la jurisdicción, 16 transmisiones a la fiscalía vaticana y tres suspensiones por unos 522.000 €. No atribuir los totales jurisdiccionales al IOR ni traducir alertas en delitos probados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-apelacion-fondos-2026",
+      "a": "f70-santa-sede",
+      "b": "f70-resolucion-londres-2026",
+      "type": "Procedimiento judicial financiero: revisión parcial en apelación (2026)",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vaticannews.va/en/vatican-city/news/2026-03/holy-see-partial-mistrial-financial-management-court-appeals.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Según comunicación de Vatican News del 17/03/2026, el Tribunal de Apelación ordenó repetir parcialmente actuaciones del caso de fondos de la Santa Sede por defectos procesales; no anuló íntegramente los efectos jurídicos de la primera instancia. Caso no atribuible de forma automática al IOR ni al contenido del podcast.",
       "podcastNotes": []
     }
   ]
