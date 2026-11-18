@@ -1212,15 +1212,15 @@
       "videoId": "REHYGPW0c8k",
       "title": "El lado más oscuro del Mossad que nadie se atreve a contar · Eric Frattini · Vaquero #150",
       "sourceUrl": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-      "status": "cuarta_pasada_anclas_politica_internacional_y_rumores_20261118",
+      "status": "quinta_pasada_etiopia_libano_cronologia_20261118",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": false,
-      "sourceNodesDocumented": 105,
-      "sourceRelationsDocumented": 144,
+      "sourceNodesDocumented": 116,
+      "sourceRelationsDocumented": 163,
       "imageRuntimeVerified": false,
-      "timelineVerifiedEventsCommitted": 2,
-      "qualityNotes": "Cuarta revisión 18-11-2026: 105 entidades, 144 relaciones. 94/94 anclas literales TXT exactas (54 nuevas), 10 notas con fuente independiente, 1 sinopsis sin pasaje localizable (HispanTV); 0 minutos/audio cotejados. 27 relaciones marcadas hecho_documentado apoyadas en 10 URLs distintas. Nuevos contrastes Camp David/Clinton/Taba 2000–01, Pegasus archivo provisional 22-01-2026 sin autor identificado, Mojtabá marzo 2026, Cukurs Uruguay 1965; las acusaciones personales y operativas siguen como alegaciones. Varias grafías ASR sin cotejar.",
+      "timelineVerifiedEventsCommitted": 7,
+      "qualityNotes": "Quinta revisión 18-11-2026: 116 entidades y 163 relaciones. +5 hitos históricos comprobados F69 (total 7); Hermanos 1979–84, Moisés 1984–85, Salomón 1991 y récord 747; Litani 1978, Paz para Galilea 1982, retirada ONU 2000. Cifra de 1500 pasajeras/os no atribuible con certeza al audio; agua como hipótesis. 1 nota HispantTV sin texto localizable; 0 audio/minutos comprobados.",
       "sourcePrimaryModule": "la-telarana/podcast-vaquero-150.js",
       "transcriptDocUrl": null,
       "untimedTranscriptDriveId": null,
@@ -1231,14 +1231,19 @@
       "organisationsProfiled": 2,
       "structuredStatements": 4,
       "untimedAttributedSummaries": 80,
-      "verifiedIndependentChecks": 10,
+      "verifiedIndependentChecks": 14,
       "additionalRelatedSupplementalEvents": 7,
       "timelineEventIds": [
         "study-f69-eichmann-juicio-1961",
-        "study-f69-lillehammer-condenas-1974"
+        "study-f69-lillehammer-condenas-1974",
+        "study-f69-litani-1978",
+        "study-f69-galilea-1982",
+        "study-f69-moises-1984",
+        "study-f69-salomon-1991",
+        "study-f69-retirada-libano-2000"
       ],
       "lastUpdated": "2026-11-18",
-      "documentaryChecks": 10
+      "documentaryChecks": 14
     },
     {
       "order": 70,
@@ -2043,9 +2048,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 182,
+    "committedVerifiedEvents": 187,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 138,
+    "fromSourceInReview": 143,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -2313,7 +2318,12 @@
       ],
       "69": [
         "study-f69-eichmann-juicio-1961",
-        "study-f69-lillehammer-condenas-1974"
+        "study-f69-lillehammer-condenas-1974",
+        "study-f69-litani-1978",
+        "study-f69-galilea-1982",
+        "study-f69-moises-1984",
+        "study-f69-salomon-1991",
+        "study-f69-retirada-libano-2000"
       ],
       "70": [
         "study-f70-benedicto-gabriele-indulto-2012",
@@ -6746,12 +6756,12 @@
           "confidence": "indice_editorial_heuristico_no_porcentaje_real_de_audio_ni_transcripcion",
           "audioVerified": false,
           "signals": {
-            "entities": 80,
-            "relations": 99,
+            "entities": 116,
+            "relations": 163,
             "biographies": 10,
             "statements": 0,
-            "independentChecks": 8,
-            "verifiedTimelineEvents": 9,
+            "independentChecks": 14,
+            "verifiedTimelineEvents": 14,
             "captionSegments": 0,
             "expectedEntities": 12,
             "expectedStatements": 20,
@@ -6768,7 +6778,7 @@
             "cronologia": 5,
             "qa": 2
           },
-          "nextAction": "Cotejar contra audio los nombres, los turnos y las 80 notas sin tiempo; diferenciar 8 relaciones documentales de 91 vínculos todavía no confirmados externamente."
+          "nextAction": "Cotejar audio del segmento de Boeing 747 y la identificación de voces/nombres; HispantTV no figura en TXT; distinguir 1.500 evacuados de viajeros de un solo vuelo."
         }
       },
       {
