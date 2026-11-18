@@ -916,20 +916,27 @@ function detail(d){selected=d;showNote(d);window.dispatchEvent(new CustomEvent("
 function groupedDetail(group){selected=group;showGroupNote(group);if(group.children&&group.children[0])window.dispatchEvent(new CustomEvent("historia:focus",{detail:{item:group.children[0]}}))}
 function grouped(items,c){
  if(c!=="Actualidad"||query)return items;
- var step=zoom<=1?1:zoom<=2?.5:zoom<=4?.25:1/12,g=new Map();
+ var oldStep=zoom<=1?1:zoom<=2?.5:zoom<=4?.25:1/12,g=new Map();
  items.forEach(function(d){
-  var key=Math.floor((sy(d)+.0000001)/step);
+  var date=sy(d),monthly=date>=MONTH_START_YEAR;
+  var step=monthly?1/12:oldStep;
+  var key=monthly?"m:"+Math.floor((date-MONTH_START_YEAR)*12+.000001):
+   "h:"+Math.floor((date+.0000001)/step);
   if(!g.has(key))g.set(key,[]);
   g.get(key).push(d);
  });
  var rows=[];
  g.forEach(function(a,key){
   if(a.length===1){rows.push(a[0]);return}
-  var y=key*step,yr=Math.floor(y+.000001),sub="";
-  if(zoom===2)sub=" · S"+(1+Math.floor((y-yr)*2+.00001));
-  if(zoom===4)sub=" · T"+(1+Math.floor((y-yr)*4+.00001));
-  if(zoom===8)sub=" · mes "+(1+Math.floor((y-yr)*12+.00001));
-  rows.push({id:"group-"+key+"-"+zoom,t:a[0].t,y:y,c:c,children:a,groupLabel:yr+sub,count:a.length});
+  var monthly=key.startsWith("m:"),index=Number(key.slice(2));
+  var yr=monthly?MONTH_START_YEAR+Math.floor(index/12):Math.floor(index*oldStep+.000001);
+  var month=monthly?((index%12)+12)%12:null;
+  var y=monthly?yr+month/12:index*oldStep,sub="";
+  if(monthly)sub=MONTH_LABELS[month]+" "+yr;
+  else if(zoom===2)sub=yr+" · S"+(1+Math.floor((y-yr)*2+.00001));
+  else if(zoom===4)sub=yr+" · T"+(1+Math.floor((y-yr)*4+.00001));
+  else if(zoom===8)sub=yr+" · mes "+(1+Math.floor((y-yr)*12+.00001));
+  rows.push({id:"group-"+key+"-"+zoom,t:a[0].t,y:y,c:c,children:a,groupLabel:monthly?sub:sub||String(yr),count:a.length});
  });
  return rows.sort(function(a,b){return sy(a)-sy(b)});
 }
