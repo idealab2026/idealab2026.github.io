@@ -74,7 +74,7 @@ for(const [level,monthsPerGroup,groupName] of [
  ];
  const actual=ctx.grouped(items,"Actualidad");
  assert.equal(actual[0].groupLabel,groupName,"Wrong overview label at zoom "+level);
- assert.equal(actual[0].count,2,"Incorrect compact summary size at zoom "+level);
+ assert.equal(actual[0].count,monthsPerGroup===12?3:2,"Incorrect compact summary size at zoom "+level);
  assert.equal(actual.length,monthsPerGroup===12?1:2,"Wrong number of groups at zoom "+level);
 }
 
