@@ -30,7 +30,7 @@ vm.runInContext(code,ctx,{filename:"month-geometry.js"});
 const close=(actual,expected,label)=>assert.ok(Math.abs(actual-expected)<1e-5,
  label+": expected "+expected+", got "+actual);
 
-for(const zoom of [1,2,4,8]){
+for(const zoom of [.125,.25,.5,1,2,4,8]){
  ctx.zoom=zoom;
  close(ctx.axisX(2009)-ctx.axisX(2008),96*zoom,"Old annual width");
  close(ctx.axisX(2010)-ctx.axisX(2009),96*zoom,"Transition to January 2010");
@@ -59,7 +59,25 @@ assert.equal(recent.length,2,"Separate January and February groups");
 assert.equal(recent[0].groupLabel,"Ene 2010");
 assert.equal(recent[1].groupLabel,"Feb 2010");
 assert.equal(recent[0].count,2);
+
 assert.equal(recent[1].count,2);
+
+// Lower zoom retains exact monthly geometry, but uses summaries for readability.
+for(const [level,monthsPerGroup,groupName] of [
+ [.125,12,"2010"],[.25,6,"2010 · S1"],[.5,3,"2010 · T1"]
+]){
+ ctx.zoom=level;
+ const items=[
+  {id:"january",y:2010+1/24,c:"Actualidad"},
+  {id:"february",y:2010+1/12+1/48,c:"Actualidad"},
+  {id:"july",y:2010+6/12+1/48,c:"Actualidad"}
+ ];
+ const actual=ctx.grouped(items,"Actualidad");
+ assert.equal(actual[0].groupLabel,groupName,"Wrong overview label at zoom "+level);
+ assert.equal(actual[0].count,2,"Incorrect compact summary size at zoom "+level);
+ assert.equal(actual.length,monthsPerGroup===12?1:2,"Wrong number of groups at zoom "+level);
+}
+
 
 const recentSource=JSON.parse(read("data.json")).items.filter(d=>Number(d.y)>=2010);
 const fractional=recentSource.filter(d=>Number(d.y)%1!==0);
@@ -83,4 +101,27 @@ const monthGuide=lane.children.filter(el=>el.className.includes("month-guide"));
 assert.ok(monthGuide.length>=22,"Vertical monthly grid must cover every lane");
 const labels=new Set(months.map(el=>el.children[0]?.text));
 assert.ok(labels.has("Ene")&&labels.has("Dic"),"All 12 month names must be present");
+for(const [level,monthlyStride,annualStride] of [
+ [.125,6,10],[.25,3,5],[.5,2,2],[1,1,1]
+]){
+ ctx.zoom=level;
+ ctx.yearWindowKey="";
+ const v={scrollLeft:ctx.axisX(2005)-150,clientWidth:2300};
+ ctx.$=id=>id==="viewport"?v:null;
+ ctx.updateAnnualHeader();
+ const row=ctx.yearAxisLayer.children;
+ const modern=row.filter(el=>el.className.includes("month-tick"));
+ assert.ok(modern.length>0,"Expected at least one modern calendar month at "+level);
+ const names=modern.map(t=>t.children[0].text);
+ assert.ok(names.includes("Ene"),"January label missing at "+level);
+ if(level<=.25)assert.ok(!names.includes("Feb"),"Small zoom must not crowd February label");
+ const oldYears=row.filter(el=>el.className.includes("year-tick")&&!el.className.includes("monthly-year-tick"))
+  .map(el=>el.children[0].text);
+ assert.ok(oldYears.length>0,"Missing historic years at "+level);
+ if(level===.125)assert.ok(oldYears.every(label=>/0 (?:a|d)\. C\./.test(label)||label==="Cambio de era"),"Low-zoom annual labels too dense");
+ // The original coordinate is preserved; center year is recovered after changing zoom.
+ const target=2016.5;
+ close(ctx.yearAt(ctx.axisX(target)),target,"Center year after zoom "+level);
+}
+
 console.log("OK: 2010 monthly axis, 12 months/year, year/pixel inverse, grid and grouped Actualidad");
