@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,16,20,20,16],expectedEdges=[20,20,22,25,19],
+const expectedNodes=[16,16,20,26,16],expectedEdges=[20,20,22,33,19],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===47,
+assert(totalNotes===78&&totalExternal===53,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -115,6 +115,34 @@ for(const eid of ["f72-doc-netanyahu-presentacion-archivo-2018","f72-doc-oiea-ev
 assert(f72Iran.nodes.find(n=>n.id==="f72-informe-oiea-2015")?.note.includes("2015")&&
  f72Iran.nodes.find(n=>n.id==="f72-comunicado-oiea-2018")?.note.includes("no puede etiquetarse como prueba"),
  "F72: no se distinguen los límites temporales y la falta de aval público del OIEA");
+
+
+const f73Iran=ctx.window.IDEA_TELARANA_F73_REVIEW;
+assert(f73Iran.metadata.independentDocumentaryRelations===16,
+ "F73: recuento documental no conciliado");
+for(const id of ["f73-doc-israel-ataques-jun2025","f73-doc-ataques-natanz-2025",
+ "f73-doc-oiea-acta-onu-2025","f73-doc-acta-natanz-2025"]){
+ const e=f73Iran.edges.find(x=>x.id===id);
+ assert(e&&e.claimStatus==="hecho_verificado_independiente"&&e.confidence==="documentado"&&/^https:\/\//.test(e.source),
+  "F73: faltan los contrastes oficiales de ataque y daños de junio 2025: "+id);
+}
+for(const id of ["f73-alleg-mossad-reuters-2025","f73-alleg-reuters-ataques-2025"]){
+ const e=f73Iran.edges.find(x=>x.id===id);
+ assert(e&&e.claimStatus==="alegacion_no_verificada"&&e.confidence==="hipotesis"&&/reuters.com/.test(e.source)&&/NO pudo|no cuenta/i.test(e.note),
+  "F73: versiones de fuentes anónimas convertidas en operaciones acreditadas: "+id);
+}
+for(const id of ["f73-doc-oiea-comparecencia-2026","f73-doc-grossi-iran-inspeccion-2026"]){
+ const e=f73Iran.edges.find(x=>x.id===id);
+ assert(e&&e.claimStatus==="hecho_documentado_por_portavoz_citado"&&e.temporalContext==="posterior_a_entrevista"&&e.source.includes("transcripts.un.org"),
+  "F73: intervención ONU posterior al podcast interpretada como afirmación del entrevistado: "+id);
+}
+assert(f73Iran.nodes.find(x=>x.id==="f73-onu-grossi-oct2026")?.note.includes("NO es acta oficial"),
+ "F73: falta advertencia sobre la transcripción automatizada de Naciones Unidas");
+for(const [a,b] of [["f72-oiea","f73-oiea"],["f72-natanz","f73-natanz"]]){
+ const aa=ctx.window.IDEA_TELARANA_F72_REVIEW.nodes.find(x=>x.id===a),
+ bb=f73Iran.nodes.find(x=>x.id===b);
+ assert(aa&&bb&&aa.name===bb.name,"F72/F73 duplicarán la misma instalación u organismo: "+a);
+}
 
 const f72=ctx.window.IDEA_TELARANA_F72_REVIEW, f73=ctx.window.IDEA_TELARANA_F73_REVIEW;
 assert(f72.metadata.crossSourceLinks.includes(69)&&f72.metadata.crossSourceLinks.includes(73), "F72 sin contraste cruzado");

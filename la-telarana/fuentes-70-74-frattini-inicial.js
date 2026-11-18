@@ -2097,9 +2097,9 @@ window.IDEA_TELARANA_F73_REVIEW = {
     "lastMarker": "01:45:19",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "cuarta_revision_cruce_f69_f72_identidades_y_autoria_20261118",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual. Cuarta revisión 18/11/2026: F73 reutiliza nombres canónicos de F69 para DGST y archivo judicial Pegasus 2026; evitar dos nodos del mismo servicio y del mismo proceso. La noticia judicial no valida acusaciones a terceros. Declaración israelí sobre buscapersonas y daño civil ONU se respaldan con fuentes diferentes.",
-    "independentDocumentaryRelations": 10,
+    "reviewStage": "quinta_revision_iran_ataques_2025_mossad_anonymous_oiea_2026",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual. Cuarta revisión 18/11/2026: F73 reutiliza nombres canónicos de F69 para DGST y archivo judicial Pegasus 2026; evitar dos nodos del mismo servicio y del mismo proceso. La noticia judicial no valida acusaciones a terceros. Declaración israelí sobre buscapersonas y daño civil ONU se respaldan con fuentes diferentes. Quinta revisión 18/11/2026: acta provisional ONU S/PV.9939 (20/06/2025) confirma daños en Natanz; Reuters (13/06/2025) reporta fuentes israelíes anónimas sobre Mossad que no pudo verificar; UN Transcripts 10253 (27/10/2026), de reconocimiento automático ASR y NO acta oficial, recoge intervención de Grossi sobre acceso limitado, un día posterior al episodio F73 (26/10/2026). Las alegaciones clandestinas NO son aristas verificadas; los hechos posteriores NO se atribuyen al entrevistado. Audio del podcast 0 minutos cotejados.",
+    "independentDocumentaryRelations": 16,
     "crossSourceLinks": [
       69,
       72
@@ -2573,6 +2573,84 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "x": 12800,
       "y": 5030,
       "podcastNotes": []
+    },
+    {
+      "id": "f73-oiea",
+      "name": "Organismo Internacional de Energía Atómica (OIEA)",
+      "kind": "Institución",
+      "subtitle": "Organismo intergubernamental encargado de la verificación y salvaguardias nucleares.",
+      "note": "Es el mismo organismo que figura en F72; reutilizar identidad por nombre canónico. Las declaraciones institucionales deben separarse de hipótesis sobre operaciones del Mossad.",
+      "source": "https://digitallibrary.un.org/record/4084933/files/S_PV.9939-EN.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13080,
+      "y": 5210,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-natanz",
+      "name": "Instalación nuclear de Natanz",
+      "kind": "Instalación",
+      "subtitle": "Complejo de enriquecimiento iraní atacado en junio de 2025.",
+      "note": "El OIEA describió en el Consejo de Seguridad el 20/06/2025 daños en instalaciones de enriquecimiento de Natanz tras ataques iniciados el 13/06/2025. No confundir daño constatado con atribución de comandos clandestinos concretos.",
+      "source": "https://digitallibrary.un.org/record/4084933/files/S_PV.9939-EN.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13320,
+      "y": 5210,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-ataques-junio-2025",
+      "name": "Ataques a instalaciones nucleares de Irán (junio de 2025)",
+      "kind": "Acontecimiento",
+      "subtitle": "Campaña de ataques de Israel iniciada el 13 de junio de 2025.",
+      "note": "Ataques contra instalaciones nucleares y objetivos militares iraníes. Reuters documenta el anuncio israelí del 13/06/2025 y el OIEA comunicó daños materiales en Natanz el 20/06. La existencia de ataques aéreos está documentada; los detalles sobre comandos del Mossad proceden de fuentes anónimas que Reuters no pudo corroborar.",
+      "source": "https://digitallibrary.un.org/record/4084933/files/S_PV.9939-EN.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13560,
+      "y": 5210,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-acta-onu-9939",
+      "name": "ONU · Acta S/PV.9939 (20 junio 2025)",
+      "kind": "Documento",
+      "subtitle": "Acta provisional de la sesión 9939 del Consejo de Seguridad de la ONU.",
+      "note": "La intervención del director general Rafael Grossi contiene una evaluación técnica de los daños en Natanz: parte superficial de la planta piloto inutilizada; daños en cámaras subterráneas; a 20/06/2025 no había aumento de radiactividad fuera del recinto. La fuente NO identifica a los responsables de supuestos comandos del Mossad.",
+      "source": "https://digitallibrary.un.org/record/4084933/files/S_PV.9939-EN.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13800,
+      "y": 5140,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-reuters-operaciones-2025",
+      "name": "Reuters · Operaciones del Mossad alegadas en Irán (13 junio 2025)",
+      "kind": "Documento",
+      "subtitle": "Información periodística de Reuters basada en fuentes israelíes anónimas.",
+      "note": "Reuters informó que funcionarios israelíes anónimos afirmaron que comandos del Mossad habían desplegado drones y sistemas de precisión en Irán. Reuters declaró que no podía verificar independientemente la reconstrucción. El texto acredita que estas fuentes lo afirmaron, no que la operación y sus detalles sean hechos corroborados por el medio.",
+      "source": "https://www.reuters.com/world/middle-east/israel-used-long-planned-subterfuge-attack-iranian-nuclear-targets-israeli-2025-06-13/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13650,
+      "y": 5440,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-onu-grossi-oct2026",
+      "name": "ONU · Intervención de Grossi (27 octubre 2026)",
+      "kind": "Documento",
+      "subtitle": "Transcripción automática de la comparecencia de Rafael Grossi en el Consejo de Seguridad.",
+      "note": "La plataforma de transcripciones de la ONU publica una versión ASR (NO es acta oficial), relativa a la sesión 10253 del 27/10/2026, un día DESPUÉS de la fecha de publicación del episodio F73 (26/10). Grossi declaró que el OIEA carecía de acceso para verificar buena parte del material nuclear iraní, con Bushehr como excepción de inspección. Este contexto posterior no puede presentarse como afirmación del entrevistado ni como prueba de fabricación actual de armas.",
+      "source": "https://transcripts.un.org/en/sc/10253",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13800,
+      "y": 5360,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -2945,6 +3023,104 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "source": "https://www.reuters.com/technology/spain-closes-pegasus-spyware-probe-again-saying-israel-has-not-responded-2026-01-22/",
       "episodeId": "idealab-f73-frattini",
       "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-israel-ataques-jun2025",
+      "a": "f73-israel",
+      "b": "f73-ataques-junio-2025",
+      "type": "Israel anunció ataques aéreos contra instalaciones nucleares y objetivos militares iraníes el 13/06/2025",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "Reuters documenta el inicio de ataques israelíes el 13/06/2025, incluyendo instalaciones nucleares; la existencia de ataques no demuestra por sí sola el despliegue operativo específico del Mossad.",
+      "source": "https://www.reuters.com/world/middle-east/israel-used-long-planned-subterfuge-attack-iranian-nuclear-targets-israeli-2025-06-13/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-ataques-natanz-2025",
+      "a": "f73-ataques-junio-2025",
+      "b": "f73-natanz",
+      "type": "El OIEA documentó daños en Natanz tras los ataques de 13/06/2025",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "Sesión del Consejo de Seguridad S/PV.9939 (20/06/2025), intervención de Grossi: daños confirmados en la planta piloto superficial y en salas subterráneas. A esa fecha no había aumento observado de radiactividad exterior; NO equivale a descartar todos los riesgos químicos o cambios futuros.",
+      "source": "https://digitallibrary.un.org/record/4084933/files/S_PV.9939-EN.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-oiea-acta-onu-2025",
+      "a": "f73-oiea",
+      "b": "f73-acta-onu-9939",
+      "type": "El director del OIEA informó al Consejo de Seguridad sobre los daños nucleares iraníes el 20/06/2025",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "Acta provisional de Naciones Unidas S/PV.9939: declaración técnica de Rafael Grossi, distinta de las comunicaciones de los Gobiernos beligerantes. Acredita que el OIEA informó de los daños con la información disponible en aquel momento.",
+      "source": "https://digitallibrary.un.org/record/4084933/files/S_PV.9939-EN.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-acta-natanz-2025",
+      "a": "f73-acta-onu-9939",
+      "b": "f73-natanz",
+      "type": "El acta de la ONU recoge la evaluación de daños en Natanz realizada por el OIEA",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "En S/PV.9939, Grossi declaró que el 13 de junio quedó inutilizada la parte superficial de la planta piloto de Natanz y que hubo daños graves subterráneos; fuera del sitio no se detectó incremento radiológico a fecha 20/06/2025. No confirma identidad de comandos terrestres.",
+      "source": "https://digitallibrary.un.org/record/4084933/files/S_PV.9939-EN.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-alleg-mossad-reuters-2025",
+      "a": "f73-mossad",
+      "b": "f73-reuters-operaciones-2025",
+      "type": "Atribución periodística a fuentes israelíes anónimas de operaciones encubiertas del Mossad",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "note": "Reuters (13/06/2025) recogió la versión de fuentes anónimas israelíes sobre agentes terrestres, drones y sistemas de ataque. Reuters dijo expresamente que NO pudo corroborar independientemente esas versiones. Relación entre servicio y relato atribuido: NO operación demostrada.",
+      "source": "https://www.reuters.com/world/middle-east/israel-used-long-planned-subterfuge-attack-iranian-nuclear-targets-israeli-2025-06-13/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-alleg-reuters-ataques-2025",
+      "a": "f73-reuters-operaciones-2025",
+      "b": "f73-ataques-junio-2025",
+      "type": "Reconstrucción anónima sobre contribuciones encubiertas a los ataques de junio de 2025",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "note": "La noticia trata del ataque ocurrido y de presuntas acciones de agentes secretos; el operativo concreto atribuido por fuentes de seguridad anónimas no cuenta con verificación autónoma de Reuters. Se mantiene como alegación, no como confirmación de una misión del Mossad.",
+      "source": "https://www.reuters.com/world/middle-east/israel-used-long-planned-subterfuge-attack-iranian-nuclear-targets-israeli-2025-06-13/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-oiea-comparecencia-2026",
+      "a": "f73-oiea",
+      "b": "f73-onu-grossi-oct2026",
+      "type": "Intervención atribuida al director del OIEA en sesión de la ONU del 27/10/2026",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "La plataforma web de Naciones Unidas ofrece transcripción ASR de la intervención de Grossi el 27/10/2026. El contenido incluye limitaciones de acceso e inspección en Irán; la versión ASR puede tener errores y NO es acta oficial. Contexto posterior a la fecha de publicación del episodio F73.",
+      "source": "https://transcripts.un.org/en/sc/10253",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [],
+      "temporalContext": "posterior_a_entrevista"
+    },
+    {
+      "id": "f73-doc-grossi-iran-inspeccion-2026",
+      "a": "f73-onu-grossi-oct2026",
+      "b": "f73-iran",
+      "type": "El OIEA describió dificultades de inspección nuclear en Irán, octubre de 2026",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "Según la intervención transcrita automáticamente por la ONU (27/10/2026), la agencia no tenía acceso para verificar la mayor parte del material nuclear iraní y Bushehr era la excepción de inspección. La incertidumbre impide afirmar que se haya demostrado una bomba en fabricación o que no exista actividad irregular. No consta en el podcast F73 del día anterior.",
+      "source": "https://transcripts.un.org/en/sc/10253",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": [],
+      "temporalContext": "posterior_a_entrevista"
     }
   ]
 };
