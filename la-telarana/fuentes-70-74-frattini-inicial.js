@@ -1327,9 +1327,9 @@ window.IDEA_TELARANA_F72_REVIEW = {
     "lastMarker": "03:07:18",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "segunda_revision_multifuente_documental_con_cruces_f69_y_audio_pendiente",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado.",
-    "independentDocumentaryRelations": 3,
+    "reviewStage": "tercera_revision_stuxnet_enisa_tecnica_y_atribucion_separadas",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: ENISA 2010 confirma funcionamiento y software industrial objetivo de Stuxnet, no autoría estatal. Dos relaciones técnicas incorporadas como contexto externo; sin cotejo del audio.",
+    "independentDocumentaryRelations": 5,
     "crossSourceLinks": [
       69,
       73
@@ -1683,6 +1683,32 @@ window.IDEA_TELARANA_F72_REVIEW = {
           "text": "Las comunicaciones de la ONU sobre los ataques a buscapersonas incluyeron víctimas civiles y pidieron una investigación. No todos los afectados han de tratarse como integrantes de esta organización."
         }
       ]
+    },
+    {
+      "id": "f72-enisa",
+      "name": "ENISA (Agencia de Ciberseguridad de la Unión Europea)",
+      "kind": "Institución",
+      "subtitle": "Organismo de la UE que publicó un análisis técnico sobre Stuxnet en 2010.",
+      "note": "ENISA describe el malware Stuxnet y su especialización contra sistemas SCADA de Siemens; su análisis técnico permite distinguir funcionamiento observado de hipótesis de autoría y órdenes estatales. Este nodo incorpora documentación externa, no una declaración del podcast.",
+      "source": "https://www.enisa.europa.eu/news/enisa-news/stuxnet-analysis",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12700,
+      "y": 5090,
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-siemens-step7",
+      "name": "Siemens SIMATIC WinCC y STEP 7",
+      "kind": "Tecnología",
+      "subtitle": "Software industrial de supervisión y programación de controladores lógicos programables (PLC).",
+      "note": "La ficha técnica de ENISA indica que Stuxnet se diseñó para atacar entornos industriales que ejecutaban Siemens WinCC y STEP 7; propagación a través de memorias USB o recursos de red, con mecanismos de ocultación. No permite deducir por sí sola qué gobierno lo desarrolló.",
+      "source": "https://www.enisa.europa.eu/news/enisa-news/stuxnet-analysis",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12850,
+      "y": 4920,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1927,6 +1953,30 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "episodeId": "idealab-f72-frattini",
       "note": "La oficina de derechos humanos de la ONU documentó las explosiones el 17/09/2024 y víctimas civiles, incluidos menores. La pertenencia individual de las personas afectadas no puede darse por probada.",
       "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-enisa-stuxnet",
+      "a": "f72-enisa",
+      "b": "f72-stuxnet",
+      "type": "ENISA documenta técnicamente Stuxnet y su superficie industrial en 2010",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "El análisis publicado por ENISA identifica capacidades técnicas y mecanismos de infección. El documento no es una confesión de autoría de ningún Estado ni prueba las especulaciones de la entrevista acerca de un equipo de cinco países.",
+      "source": "https://www.enisa.europa.eu/news/enisa-news/stuxnet-analysis",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-stuxnet-siemens",
+      "a": "f72-stuxnet",
+      "b": "f72-siemens-step7",
+      "type": "Software malicioso dirigido contra sistemas Siemens WinCC y STEP 7",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "ENISA relaciona Stuxnet con entornos SCADA Siemens SIMATIC WinCC y STEP 7; infección por USB o recursos compartidos y ocultación mediante rootkit. Características técnicas verificadas, no atribución geopolítica.",
+      "source": "https://www.enisa.europa.eu/news/enisa-news/stuxnet-analysis",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": []
     }
   ]
 };
@@ -1947,9 +1997,9 @@ window.IDEA_TELARANA_F73_REVIEW = {
     "lastMarker": "01:45:19",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "segunda_revision_multifuente_documental_con_cruces_f69_y_audio_pendiente",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado.",
-    "independentDocumentaryRelations": 6,
+    "reviewStage": "tercera_revision_pegasus_dgst_amnesty_y_sobreseimiento_2026",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual.",
+    "independentDocumentaryRelations": 10,
     "crossSourceLinks": [
       69,
       72
@@ -2170,7 +2220,7 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "name": "Marruecos",
       "kind": "País",
       "subtitle": "Estado norteafricano con relaciones diplomáticas y de seguridad relevantes para España e Israel.",
-      "note": "Estado norteafricano con relaciones diplomáticas y de seguridad relevantes para España e Israel. El entrevistado analiza relaciones internacionales de Marruecos con Israel y España; atribuciones de vigilancia concretas quedan sin verificar.",
+      "note": "Estado norteafricano con relaciones diplomáticas y de seguridad relevantes para España e Israel. El entrevistado analiza relaciones internacionales de Marruecos con Israel y España; atribuciones de vigilancia concretas quedan sin verificar. Investigación posterior de Amnistía Internacional (01/10/2026) documenta espionaje marroquí con Pegasus contra periodistas y activistas; NO acredita que Marruecos realizara el ataque a Pedro Sánchez.",
       "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=310s",
       "topic3d": "oriente",
       "photo": "",
@@ -2371,6 +2421,58 @@ window.IDEA_TELARANA_F73_REVIEW = {
           "text": "La entrevista presenta como objetivo a dispositivos vinculados a Hizbulá, mientras la ONU registró víctimas civiles entre los afectados; no equiparar a todos los lesionados con miembros de la organización."
         }
       ]
+    },
+    {
+      "id": "f73-dgst",
+      "name": "DGST (Dirección General de Vigilancia del Territorio de Marruecos)",
+      "kind": "Institución",
+      "subtitle": "Servicio de inteligencia interior marroquí al que Amnistía Internacional atribuye operaciones de vigilancia con Pegasus.",
+      "note": "Investigación de Amnistía Internacional Security Lab, publicada el 01/10/2026, atribuye a la DGST la utilización de Pegasus contra periodistas y personas defensoras de derechos humanos dentro y fuera de Marruecos entre 2017 y 2021. Se basa en testimonios, material interno y análisis forense. NO establece por sí misma autoría del espionaje contra miembros del Gobierno español.",
+      "source": "https://securitylab.amnesty.org/es/latest/2026/10/we-start-with-the-verdict-inside-moroccos-surveillance-machine/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12570,
+      "y": 4800,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-amnistia-pegasus-2026",
+      "name": "Investigación de Amnistía sobre vigilancia marroquí (2026)",
+      "kind": "Documento",
+      "subtitle": "Informe publicado el 1 de octubre de 2026: «Empezamos por la sentencia».",
+      "note": "Informe de investigación de Amnistía Internacional Security Lab sobre el uso de Pegasus, telecomunicaciones, filtraciones y vigilancia contra la sociedad civil marroquí. Su investigación relaciona la DGST con despliegue y ataques a periodistas/activistas. Los hallazgos de una ONG no son sentencia penal y no atribuyen de forma demostrada el ataque a Pedro Sánchez.",
+      "source": "https://securitylab.amnesty.org/es/latest/2026/10/we-start-with-the-verdict-inside-moroccos-surveillance-machine/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12800,
+      "y": 4800,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-audiencia-nacional",
+      "name": "Audiencia Nacional (España)",
+      "kind": "Institución",
+      "subtitle": "Tribunal español que investigó la infección con Pegasus de móviles de miembros del Gobierno.",
+      "note": "La investigación judicial sobre Pegasus en móviles de miembros del Gobierno español fue archivada provisionalmente de nuevo el 22/01/2026, según información de Reuters basada en la resolución del juez José Luis Calama. No se identificó a persona responsable; la falta de respuesta a solicitudes de cooperación a Israel fue un obstáculo. No equivale a exculpar o inculpar a Marruecos.",
+      "source": "https://www.reuters.com/technology/spain-closes-pegasus-spyware-probe-again-saying-israel-has-not-responded-2026-01-22/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12570,
+      "y": 5030,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-archivo-pegasus-2026",
+      "name": "Archivo provisional de la causa Pegasus (enero de 2026)",
+      "kind": "Resolución judicial referida por prensa",
+      "subtitle": "Sobreseimiento provisional de la investigación sobre Pegasus y el Gobierno español, difundido el 22/01/2026.",
+      "note": "Reuters informó de que el juez Calama cerró de nuevo el procedimiento al no poder identificar a un sospechoso tras la falta de colaboración de las autoridades israelíes. Existencia del procedimiento y su resultado procesal documentados por prensa judicial, sin acceso al auto íntegro en este registro. La causa podía reabrirse si aparecían nuevos elementos; no se determina aquí autor material.",
+      "source": "https://www.reuters.com/technology/spain-closes-pegasus-spyware-probe-again-saying-israel-has-not-responded-2026-01-22/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 12800,
+      "y": 5030,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -2543,7 +2645,7 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "type": "Mención o interpretación atribuida a la entrevista; no es evidencia causal independiente",
       "confidence": "hipotesis",
       "claimStatus": "alegacion_no_verificada",
-      "note": "Desde 07:12 el episodio vincula el móvil de Pedro Sánchez con Pegasus y especula sobre Marruecos. La infección está acreditada; atribuirla a un gobierno concreto requiere pruebas adicionales.",
+      "note": "Desde 07:12 el episodio vincula el móvil de Pedro Sánchez con Pegasus y especula sobre Marruecos. La infección está acreditada; atribuirla a un gobierno concreto requiere pruebas adicionales. La investigación judicial española volvió a archivarse provisionalmente el 22/01/2026 sin autor identificado (Reuters); no es prueba de la autoría marroquí.",
       "source": "https://www.youtube.com/watch?v=KxrKZU9T_6I&t=432s",
       "episodeId": "idealab-f73-frattini",
       "podcastNotes": [
@@ -2694,6 +2796,54 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "source": "https://www.reuters.com/world/middle-east/netanyahu-approved-pager-attacks-against-hezbollah-spokesman-says-2024-11-11/",
       "episodeId": "idealab-f73-frattini",
       "note": "Reuters, el 11/11/2024, atribuye a Omer Dostri, portavoz del primer ministro, la confirmación de que Netanyahu había aprobado los ataques contra buscapersonas. Es una declaración oficial reportada, no una constatación independiente de cada detalle operativo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-dgst-pegasus-amnistia",
+      "a": "f73-dgst",
+      "b": "f73-pegasus",
+      "type": "Uso de Pegasus atribuido a la DGST por investigación forense de Amnistía (2017–2021)",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "El informe de Amnistía Internacional del 01/10/2026 atribuye a la DGST marroquí operaciones con Pegasus contra activistas y periodistas. Se documenta la atribución de la investigación independiente, NO una condena judicial ni vinculación directa con el ataque al teléfono de Pedro Sánchez.",
+      "source": "https://securitylab.amnesty.org/es/latest/2026/10/we-start-with-the-verdict-inside-moroccos-surveillance-machine/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-informe-dgst-amnistia",
+      "a": "f73-amnistia-pegasus-2026",
+      "b": "f73-dgst",
+      "type": "Informe externo identifica y examina prácticas de vigilancia de la DGST",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "Investigación de Amnistía publicada el 01/10/2026 mediante entrevistas, datos filtrados y análisis técnico. Se incorpora como informe externo contextual, no como declaración literal del episodio ni como imputación probada ante un tribunal.",
+      "source": "https://securitylab.amnesty.org/es/latest/2026/10/we-start-with-the-verdict-inside-moroccos-surveillance-machine/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-audiencia-archivo-2026",
+      "a": "f73-audiencia-nacional",
+      "b": "f73-archivo-pegasus-2026",
+      "type": "Investigación sobre Pegasus cerrada provisionalmente sin identificar autor (enero de 2026)",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "Reuters, 22/01/2026: el juez José Luis Calama volvió a archivar la investigación por falta de elementos para identificar a los responsables; solicitudes de cooperación a Israel sin respuesta. No permite asignar autoría a Marruecos, Israel ni al Mossad.",
+      "source": "https://www.reuters.com/technology/spain-closes-pegasus-spyware-probe-again-saying-israel-has-not-responded-2026-01-22/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-archivo-sanchez-2026",
+      "a": "f73-archivo-pegasus-2026",
+      "b": "f73-sanchez",
+      "type": "Resolución sobre investigación de infección del móvil del presidente, sin autor identificado",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "La causa judicial incluía el espionaje sufrido por Pedro Sánchez y otros miembros del Gobierno. Su archivo provisional no cuestiona la infección forense anteriormente confirmada ni revela el país responsable. Es una relación procesal, no operativa ni de colaboración.",
+      "source": "https://www.reuters.com/technology/spain-closes-pegasus-spyware-probe-again-saying-israel-has-not-responded-2026-01-22/",
+      "episodeId": "idealab-f73-frattini",
       "podcastNotes": []
     }
   ]
