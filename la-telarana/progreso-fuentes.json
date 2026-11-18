@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-17",
+  "updatedAt": "2026-11-18",
   "scope": "Registro interno de 74 entradas, 71 fuentes distintas y tres duplicaciones de referencias. Cinco aportaciones manuales F70–F74 (Eric Frattini) tienen transcripciones completas en Google Docs con marcas temporales, leídas de vuelta, pero sin cotejo audiovisual. La web no publica esta tabla ni el texto completo de los documentos.",
   "total": 74,
   "counts": {
@@ -1942,20 +1942,20 @@
       "videoId": "jfN3dUHdt2c",
       "title": "✅ La HISTORIA DE LOS JUDÍOS en 12 minutos | Todo lo que tienes que saber sobre el judaísmo",
       "sourceUrl": "https://www.youtube.com/watch?v=jfN3dUHdt2c",
-      "status": "primera_revision_documental_parcial_sin_audio",
+      "status": "segunda_revision_exilio_templo_talmud_sionismo_poblacion_sin_audio",
       "reviewComplete": false,
       "sourcePrimaryModule": "la-telarana/fuente-63-historia-judia.js",
       "rawTranscriptAvailable": true,
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 18,
-      "sourceRelationsDocumented": 19,
-      "personsProfiled": 0,
-      "documentaryChecks": 4,
+      "sourceNodesDocumented": 38,
+      "sourceRelationsDocumented": 50,
+      "personsProfiled": 4,
+      "documentaryChecks": 14,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Se distingue tradición religiosa y evidencia; se contrastan sionismo anterior al Holocausto, destrucción del templo y ley española. Sin audio cotejado.",
-      "lastUpdated": "2026-11-15"
+      "qualityNotes": "Segunda revisión 18-11-2026: 38 fichas y 50 relaciones; 29/29 anclas textuales exactas en TXT NotebookLM. Contraste documental: cronologías asiria 722, babilónica 586, Ciro 539, macabeos 167, Tito 70, Mishná c. 200, edicto 1492, emancipación francesa 1791, sionismo 1897, Ley 12/2015 y fecha límite 2019. Estimación mundial 2024: 15.736.800 judíos (core; no cifra actual). Diversidad ashkenazi/sefardí/mizrají y Beta Israel; estereotipos económicos. Dos enlaces previos atribuyendo documento externo/persona no mencionados explícitamente eliminados o reemplazados. 0 cotejo audiovisual y 0 minutajes; revisión aún abierta.",
+      "lastUpdated": "2026-11-18"
     },
     {
       "order": 64,
@@ -7643,7 +7643,7 @@
   },
   "analysisProgress": {
     "method": "proxy_v1_2026-11-12",
-    "updatedAt": "2026-11-17",
+    "updatedAt": "2026-11-18",
     "description": "Índice heurístico orientado a decidir la siguiente fuente, no medición de porcentaje real de audio o texto revisado. La mera disponibilidad de una transcripción no suma puntos al análisis.",
     "weights": {
       "inicio": 5,
