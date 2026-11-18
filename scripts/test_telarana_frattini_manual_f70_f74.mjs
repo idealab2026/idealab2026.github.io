@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,16,16,20,16],expectedEdges=[20,20,18,25,19],
+const expectedNodes=[16,16,20,20,16],expectedEdges=[20,20,22,25,19],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===43,
+assert(totalNotes===78&&totalExternal===47,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -102,6 +102,19 @@ for(const e of [
 }
 assert(reg.sourceCatalog.entries.find(e=>e.order===70)?.analysisCoverage.percent===29,
  "El porcentaje editorial F70 debe reflejar la segunda revisión sin sugerir audio completo");
+
+const f72Iran=ctx.window.IDEA_TELARANA_F72_REVIEW;
+assert(f72Iran.metadata.independentDocumentaryRelations===9&&f72Iran.metadata.verifiedMinuteReferences===0,
+ "F72: el contraste institucional no equivale a minutos de audio verificados");
+for(const eid of ["f72-doc-netanyahu-presentacion-archivo-2018","f72-doc-oiea-evaluacion-2015",
+ "f72-doc-oiea-comunicado-mayo-2018","f72-doc-oiea-reitera-2015-en-2018"]){
+ const e=f72Iran.edges.find(e=>e.id===eid);
+ assert(e&&e.confidence==="documentado"&&e.claimStatus==="hecho_verificado_independiente"&&/^https:\/\//.test(e.source),
+ "F72: falta separar discurso, informe OIEA y declaración pública 2018: "+eid);
+}
+assert(f72Iran.nodes.find(n=>n.id==="f72-informe-oiea-2015")?.note.includes("2015")&&
+ f72Iran.nodes.find(n=>n.id==="f72-comunicado-oiea-2018")?.note.includes("no puede etiquetarse como prueba"),
+ "F72: no se distinguen los límites temporales y la falta de aval público del OIEA");
 
 const f72=ctx.window.IDEA_TELARANA_F72_REVIEW, f73=ctx.window.IDEA_TELARANA_F73_REVIEW;
 assert(f72.metadata.crossSourceLinks.includes(69)&&f72.metadata.crossSourceLinks.includes(73), "F72 sin contraste cruzado");
