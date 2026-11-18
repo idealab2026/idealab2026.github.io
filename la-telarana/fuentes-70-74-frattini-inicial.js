@@ -630,9 +630,9 @@ window.IDEA_TELARANA_F71_REVIEW = {
     "lastMarker": "02:14:02",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "segunda_revision_historia_medica_y_muerte_con_verificacion_documental",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado.",
-    "independentDocumentaryRelations": 7,
+    "reviewStage": "tercera_revision_morell_fecha_y_odontologia_1973",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio.",
+    "independentDocumentaryRelations": 9,
     "crossSourceLinks": [
       74,
       13,
@@ -670,7 +670,7 @@ window.IDEA_TELARANA_F71_REVIEW = {
           "timeSec": 1577,
           "source": "https://www.youtube.com/watch?v=WPW8yHSduFA&t=1577s",
           "status": "contradiccion",
-          "text": "En ≈26:17 la transcripción atribuye a Frattini que Morell seguía en el búnker cuando Hitler se suicidó. La reconstrucción histórica sitúa su salida de Berlín el 22–23/04/1945, una semana antes del suicidio del 30/04/1945. Es una afirmación histórica incorrecta, pendiente de cotejo audiovisual."
+          "text": "En ≈26:17 la transcripción parece atribuir a Frattini que Morell estuvo en el búnker cuando Hitler se suicidó. La NDB fecha el fin de su actividad médica el 21/04/1945 y otra historiografía sitúa su último contacto el 22/04; no hay respaldo para situarlo allí el 30/04. Fecha exacta discutida, contradicción histórica identificada en el texto, pendiente de cotejo audiovisual."
         },
         {
           "episodeId": "idealab-f71-frattini",
@@ -989,6 +989,32 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "x": 11815,
       "y": 5715,
       "podcastNotes": []
+    },
+    {
+      "id": "f71-biografia-morell-ndb",
+      "name": "Biografía académica de Theodor Morell (1997)",
+      "kind": "Documento",
+      "subtitle": "Entrada de la Neue Deutsche Biographie sobre el médico de Hitler, autor Ernst Günther Schenck.",
+      "note": "Fuente secundaria independiente de la entrevista. La entrada de 1997 de la NDB fecha el fin de la actividad médica de Morell el 21/04/1945. Otras reconstrucciones sitúan el último contacto el 22/04; el día exacto varía en la bibliografía. Ninguna de estas fuentes lo sitúa junto a Hitler cuando este murió el 30/04. La NDB enumera 92 preparados entre 1941 y 1945, pero la enumeración retrospectiva no prueba efectos causales sobre el comportamiento político.",
+      "source": "https://www.deutsche-biographie.de/gnd118583999.html#ndbcontent",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12070,
+      "y": 5840,
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-estudio-odontologia-1973",
+      "name": "Estudio odontológico de Sognnaes y Strøm (1973)",
+      "kind": "Documento",
+      "subtitle": "Artículo histórico en Acta Odontologica Scandinavica sobre radiografías y documentación dental de Hitler.",
+      "note": "El registro bibliográfico PubMed PMID 4575430 documenta el estudio de 1973, que confrontó radiografías, interrogatorios y resultados de autopsia para la identificación dental. Es una línea de evidencia previa al trabajo de Charlier et al. de 2018, no una pieza testimonial del podcast y no un análisis de la muestra craneal UConn 2009.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/4575430/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12250,
+      "y": 5840,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1256,6 +1282,30 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
       "episodeId": "idealab-f71-frattini",
       "note": "Revisión de odontología forense de 2026 identifica a Blaschke como dentista del dictador y explica el papel de sus prótesis en la identificación post mortem.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-ndb-fin-morell",
+      "a": "f71-biografia-morell-ndb",
+      "b": "f71-morell",
+      "type": "Biografía académica: actividad médica concluida en abril de 1945",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.deutsche-biographie.de/gnd118583999.html#ndbcontent",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Neue Deutsche Biographie, entrada de Schenck (1997): actividad de Morell concluida el 21/04/1945. Algunas fuentes señalan el 22 como último encuentro. Conviene no imponer una sola fecha, pero se descarta su supuesta presencia en la muerte de Hitler el 30/04/1945.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-odontologia-1973",
+      "a": "f71-estudio-odontologia-1973",
+      "b": "f71-identificacion-dental",
+      "type": "Identificación odontológica publicada en 1973",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/4575430/",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Sognnaes y Strøm, Acta Odontologica Scandinavica 31(1), 43–69 (1973), PMID 4575430: documentación de rayos X, interrogatorios y hallazgos post mortem. El estudio de 2018 constituye un examen posterior y diferente, no la única investigación identificativa.",
       "podcastNotes": []
     }
   ]
@@ -2665,9 +2715,9 @@ window.IDEA_TELARANA_F74_REVIEW = {
     "lastMarker": "02:02:30",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "segunda_revision_historia_medica_y_muerte_con_verificacion_documental",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado.",
-    "independentDocumentaryRelations": 6,
+    "reviewStage": "tercera_revision_identificacion_dental_cadena_1945_1973_2018",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado.",
+    "independentDocumentaryRelations": 9,
     "crossSourceLinks": [
       71,
       70,
@@ -3002,6 +3052,45 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "x": 11815,
       "y": 5715,
       "podcastNotes": []
+    },
+    {
+      "id": "f74-heusermann",
+      "name": "Käthe Heusermann",
+      "kind": "Persona",
+      "subtitle": "Asistente dental de Hugo Blaschke, consultada por investigadores soviéticos en 1945.",
+      "note": "Asistente dental que recordaba aspectos específicos de los trabajos dentales de Hitler. La revisión odontológica de 2026 describe su papel en la cadena de identificación junto al técnico de prótesis Fritz Echtmann y las radiografías. Su declaración histórica constituye evidencia documental externa y no debe atribuirse a Eric Frattini salvo cita literal verificada.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12120,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-echtmann",
+      "name": "Fritz Echtmann",
+      "kind": "Persona",
+      "subtitle": "Técnico de prótesis dentales relacionado con trabajos odontológicos del entorno de Hitler.",
+      "note": "Técnico dental citado en el estudio retrospectivo de 2026 y reconstrucciones odontológicas de 1945. La atribución específica de cada prótesis se debe contrastar con el registro de interrogatorios y no inferirse de su relación laboral con Blaschke. Ficha procedente de fuente científica externa, no del audio del episodio.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12350,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-estudio-1973",
+      "name": "Identificación dental de Hitler: Sognnaes–Strøm (1973)",
+      "kind": "Documento",
+      "subtitle": "Estudio histórico en Acta Odontologica Scandinavica, PMID 4575430.",
+      "note": "La publicación de 1973 evaluó radiografías, testimonios e informes forenses; es un eslabón previo a la publicación de Charlier y colaboradores en 2018. El registro PubMed confirma su existencia y referencia, mientras la discusión técnica se apoya en la publicación de origen. No confundir mandíbulas y piezas dentales con fragmento craneal investigado en 2009.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/4575430/",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12550,
+      "y": 5950,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -3235,6 +3324,42 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "source": "https://text-message.blogs.archives.gov/2015/12/23/hunting-hitler-part-viii-the-search-ends/",
       "episodeId": "idealab-f74-frattini",
       "note": "Correspondencia de inteligencia preservada por el National Archives refiere investigación de Trevor-Roper y el contraste de relatos de testigos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-heusermann-blaschke",
+      "a": "f74-heusermann",
+      "b": "f74-blaschke",
+      "type": "Asistente dental; testimonio en identificación forense de 1945",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Revisión odontológica publicada en 2026: Heusermann trabajó con el dentista Hugo Blaschke; sus testimonios sobre prótesis y rasgos dentales formaron parte de la identificación histórica. No constituye declaración de la entrevista.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-echtmann-blaschke",
+      "a": "f74-echtmann",
+      "b": "f74-blaschke",
+      "type": "Técnico dental vinculado a trabajos protésicos y cotejo de 1945",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/42676221/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La revisión de 2026 identifica a Fritz Echtmann como técnico de prótesis en el proceso histórico de identificación; su vínculo profesional es documental, no una inferencia de culpabilidad o participación en las decisiones del régimen.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-odontologia-1973",
+      "a": "f74-estudio-1973",
+      "b": "f74-identificacion-dental",
+      "type": "Estudio odontológico de 1973 anterior al reexamen de 2018",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/4575430/",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Sognnaes y Strøm, 1973, PMID 4575430: identificación mediante contraste de radiografías, documentación odontológica e interrogatorios. Fuente científica independiente del podcast; distinta de los resultados de cráneo UConn 2009.",
       "podcastNotes": []
     }
   ]
