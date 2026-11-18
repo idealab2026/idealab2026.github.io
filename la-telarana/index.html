@@ -868,6 +868,26 @@ function mergeSourceProfiles(orderFilter){
  }
 }
 
+// Una pareja de nodos puede reunir declaraciones de distintas fuentes.
+function relationClaimRecord(edge,defaultEpisodeId){
+ return {
+  id:String(edge.id||"").slice(0,150),
+  episodeId:String(edge.episodeId||defaultEpisodeId||"").slice(0,120),
+  type:String(edge.type||"Relación").slice(0,140),
+  claimStatus:String(edge.claimStatus||"").slice(0,120),
+  confidence:["documentado","indicio","hipotesis"].includes(edge.confidence)?edge.confidence:"hipotesis",
+  source:String(edge.source||"").slice(0,600),
+  note:String(edge.note||"").slice(0,3000)
+ };
+}
+function appendRelationEvidence(target,incoming,defaultEpisodeId){
+ if(!Array.isArray(target.relationEvidence))target.relationEvidence=[relationClaimRecord(target,target.episodeId)];
+ var claim=relationClaimRecord(incoming,defaultEpisodeId);
+ var key=function(r){return[r.episodeId,r.type,r.claimStatus,r.source,r.note].join("|")};
+ if(!target.relationEvidence.some(function(r){return key(r)===key(claim)}))
+  target.relationEvidence.push(claim);
+}
+
 function mergeNewEpisode(v){
  if(!v||!Array.isArray(v.nodes)||!Array.isArray(v.edges))return{nodes:0,edges:0,notes:0,enrichedRelations:0};
  var aliases={"jose luis corcuera":"jose luis corcuera","juan carlos i":"juan carlos i","cesid":"cesid","centro nacional de inteligencia cni":"centro nacional de inteligencia cni"};
@@ -913,6 +933,8 @@ function mergeNewEpisode(v){
    var norm=normalizeEntityName(e.type);
    // Preferir conservar el vínculo que se parece más al del episodio.
    var matched=existing.find(function(x){return normalizeEntityName(x.type)===norm})||existing[0];
+   // Conservar ambas tesis con su estado y URL sin añadir otra arista visual.
+   appendRelationEvidence(matched,e,v.metadata&&v.metadata.id);
    var extraEvidence=Array.isArray(e.podcastNotes)&&e.podcastNotes.length?e.podcastNotes:[{episodeId:v.metadata.id,title:v.metadata.title,publishedAt:v.metadata.publishedAt,timeSec:null,text:e.note,source:e.source,status:e.claimStatus||"alegacion"}];
    newNotes+=appendPodcastNotes(matched,extraEvidence);
    if(!Array.isArray(matched.relatedTypes))matched.relatedTypes=[];
@@ -1241,7 +1263,7 @@ function youtubeTimeLabel(sec){
 function podcastSourceLink(parent,url,title){
  var parsed;try{parsed=new URL(String(url||""))}catch(e){return}
  if(parsed.protocol!=="https:")return;
- var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com","jewishvirtuallibrary.org","www.jewishvirtuallibrary.org","www.everycrsreport.com","everycrsreport.com","ecfr.eu","www.ecfr.eu","www.cfr.org","cfr.org","www.un.org","un.org","www.theguardian.com","theguardian.com","podcasts.happyscribe.com","podcasts.apple.com","docs.google.com","jordiwild.com","www.jordiwild.com","web.gencat.cat","www.parlament.cat","metacast.app","www.history.navy.mil","www.congreso.es","congreso.es","investigacionapi.com","books.apple.com","es.wikipedia.org","www.poderjudicial.es","poderjudicial.es","www.ivoox.com","ivoox.com","www.celtiberia.net","celtiberia.net","classics.mit.edu","pmc.ncbi.nlm.nih.gov","www.tandfonline.com","www.metmuseum.org","quran.com","oi.uchicago.edu","dcc.dickinson.edu","www.biblegateway.com","www.imj.org.il","www.nature.com","penelope.uchicago.edu","www.cambridge.org","www.vatican.va","resources.metmuseum.org","discovery.ucl.ac.uk","www.thetorah.com","cadenaser.com","digitallibrary.un.org","unispal.un.org","encyclopedia.ushmm.org","www.pewresearch.org","www.columbia.edu","www.loc.gov","open.spotify.com","www.vatican.va","ich.unesco.org","bibleinterp.arizona.edu","www.cambridge.org","www.vatican.va","history.state.gov","api.icj-cij.org","lobbyingdisclosure.house.gov","mandates.un.org","www.metmuseum.org","oi.uchicago.edu","dcc.dickinson.edu","www.biblegateway.com","www.imj.org.il","www.nature.com","penelope.uchicago.edu","www.cambridge.org","www.vatican.va","www.boe.es","www.fiscal.es","latramapsoe.es","www.ipcc.ch","www.usgs.gov","eol.jsc.nasa.gov","www.uspto.gov","support.google.com","pubmed.ncbi.nlm.nih.gov","nucleus.iaea.org","main.un.org","www.opcw.org","yalebiblestudy.org","trumpwhitehouse.archives.gov","www.defense.gov"];
+ var hosts=["youtube.com","www.youtube.com","youtu.be","www.elconfidencial.com","elconfidencial.com","www.elespanol.com","elespanol.com","www.rtve.es","rtve.es","hj.tribunalconstitucional.es","www.tribunalconstitucional.es","elpais.com","www.elpais.com","www.lamoncloa.gob.es","www.cervantesvirtual.com","cervantesvirtual.com","jewishvirtuallibrary.org","www.jewishvirtuallibrary.org","www.everycrsreport.com","everycrsreport.com","ecfr.eu","www.ecfr.eu","www.cfr.org","cfr.org","www.un.org","un.org","www.theguardian.com","theguardian.com","podcasts.happyscribe.com","podcasts.apple.com","docs.google.com","jordiwild.com","www.jordiwild.com","web.gencat.cat","www.parlament.cat","metacast.app","www.history.navy.mil","www.congreso.es","congreso.es","investigacionapi.com","books.apple.com","es.wikipedia.org","www.poderjudicial.es","poderjudicial.es","www.ivoox.com","ivoox.com","www.celtiberia.net","celtiberia.net","classics.mit.edu","pmc.ncbi.nlm.nih.gov","www.tandfonline.com","www.metmuseum.org","quran.com","oi.uchicago.edu","dcc.dickinson.edu","www.biblegateway.com","www.imj.org.il","www.nature.com","penelope.uchicago.edu","www.cambridge.org","www.vatican.va","resources.metmuseum.org","discovery.ucl.ac.uk","www.thetorah.com","cadenaser.com","digitallibrary.un.org","unispal.un.org","encyclopedia.ushmm.org","www.pewresearch.org","www.columbia.edu","www.loc.gov","open.spotify.com","www.vatican.va","ich.unesco.org","bibleinterp.arizona.edu","www.cambridge.org","www.vatican.va","history.state.gov","api.icj-cij.org","lobbyingdisclosure.house.gov","mandates.un.org","www.metmuseum.org","oi.uchicago.edu","dcc.dickinson.edu","www.biblegateway.com","www.imj.org.il","www.nature.com","penelope.uchicago.edu","www.cambridge.org","www.vatican.va","www.boe.es","www.fiscal.es","latramapsoe.es","www.ipcc.ch","www.usgs.gov","eol.jsc.nasa.gov","www.uspto.gov","support.google.com","pubmed.ncbi.nlm.nih.gov","nucleus.iaea.org","main.un.org","www.opcw.org","yalebiblestudy.org","trumpwhitehouse.archives.gov","www.defense.gov","1997-2001.state.gov","2021-2025.state.gov","academic.oup.com","blog.nli.org.il","doi.org","efe.com","embassies.gov.il","fmep.org","genome.center.uconn.edu","germanhistorydocs.org","isc.independent.gov.uk","lebanon.un.org","main.knesset.gov.il","mossad.gov.il","press.vatican.va","securitylab.amnesty.org","text-message.blogs.archives.gov","time.com","unifil.unmissions.org","versa.cardozo.yu.edu","wwv.yadvashem.org","www.archivioapostolicovaticano.va","www.clintonlibrary.gov","www.coe.int","www.deutsche-biographie.de","www.enisa.europa.eu","www.gov.il","www.guinnessworldrecords.com","www.idf.il","www.ior.va","www.jewishagency.org","www.jta.org","www.nli.org.il","www.regjeringen.no","www.reuters.com","www.timesofisrael.com","www.vaticannews.va","www.worldjewishcongress.org"];
  if(!hosts.includes(parsed.hostname)&&!["zarza.com","www.zarza.com","newtral.es","www.newtral.es"].includes(parsed.hostname))return;
  var link=N("a",title||"Consultar fuente");link.href=parsed.href;link.target="_blank";link.rel="noopener noreferrer";link.className="podcast-link";parent.append(link)
 }
@@ -1472,6 +1494,8 @@ function showPodcastNotes(panel,notes,heading){
 }
 function relationStatusLabel(edge){
  if(isSourceMentionEdge(edge))return "Mención en la fuente";
+ if(Array.isArray(edge.relationEvidence)&&edge.relationEvidence.length>1)
+  return edge.relationEvidence.length+" afirmaciones/documentos · ver procedencia";
  if(edge.claimStatus==="relacion_historica_indirecta")return "Vínculo histórico indirecto";
  if(edge.claimStatus==="hecho_verificado_independiente")return "Contrastada externamente";
  if(edge.confidence==="documentado"&&/youtu(?:be\.com|\.be)/i.test(edge.source||""))return "Afirmada en una fuente";
@@ -1588,6 +1612,33 @@ function showNodeRelationships(panel,node){
  }
  panel.append(section);
 }
+function showRelationshipEvidence(panel,edge){
+ var records=Array.isArray(edge.relationEvidence)?edge.relationEvidence:[];
+ if(records.length<2)return false;
+ var section=N("section",null,"podcast-section");
+ section.append(N("h3","Procedencia de cada afirmación ("+records.length+")"));
+ section.append(N("p","Estas referencias comparten entidades, pero no necesariamente tesis, autoría ni nivel de prueba.","source-hint"));
+ records.forEach(function(item){
+  var entry=N("div",null,"podcast-entry");
+  var match=String(item.episodeId||"").match(/idealab-f(\d+)-/i);
+  var origin=match?"Fuente "+Number(match[1]):/vaquero-150-frattini/i.test(item.episodeId||"")?"Fuente 69":"Registro documental";
+  entry.append(N("small",origin+" · "+(item.episodeId||"sin episodio asociado")));
+  entry.append(N("strong",item.type||"Relación"));
+  var status=String(item.claimStatus||"");
+  var label=status==="hecho_verificado_independiente"?"Evidencia independiente de la entrevista":
+   status==="hecho_documentado_por_portavoz_citado"?"Declaración oficial citada por prensa":
+   status==="resolucion_judicial_reportada"?"Resolución judicial referida por prensa":
+   status==="alegacion_no_verificada"||/rumor|mencion|relaci[oó]n mencionada|sin cotejo/i.test(status)?"Alegación o mención sin validación independiente":
+   item.confidence==="documentado"?"Documentada según la fuente indicada":"Indicio o hipótesis";
+  entry.append(N("div",label,"source-claim-caution"));
+  if(item.note)entry.append(N("p",item.note));
+  podcastSourceLink(entry,item.source,/youtu(?:be\.com|\.be)/i.test(item.source||"")?"Consultar entrevista · audio sin cotejo en esta auditoría":"Abrir documento original");
+  section.append(entry);
+ });
+ panel.append(section);
+ return true;
+}
+
 function showRelationshipEndpoints(panel,edge){
  var section=N("div",null,"relation-endpoints");
  [edge.a,edge.b].forEach(function(id){
@@ -1603,7 +1654,7 @@ var obj=selection.kind==="node"?getNode(selection.id):data.edges.find(function(x
 if(selection.kind==="node"){var image=displayPhoto(obj);if(!image){var fallback=N("div",iconForEntity(obj),"icon-fallback portrait");fallback.setAttribute("role","img");fallback.setAttribute("aria-label","Icono de "+(obj.kind||"entidad"));p.append(fallback)}if(image){var img=N("img",null,"portrait");img.src=image;img.alt=obj.name;
 img.onerror=function(){var replacement=N("div",iconForEntity(obj),"icon-fallback portrait");replacement.setAttribute("role","img");replacement.setAttribute("aria-label","Icono de "+(obj.kind||"entidad"));img.replaceWith(replacement)};
 p.append(img);var wikipediaPage=wikipediaPhotoPage(obj);if(wikipediaPage){var credit=N("a","Fotografía y licencia: Wikimedia Commons / Wikipedia", "photo-credit");credit.href=wikipediaPage;credit.target="_blank";credit.rel="noopener noreferrer";p.append(credit)}}p.append(N("h2",obj.name));p.append(N("span",obj.kind||"Entidad","badge"));if(obj.subtitle)p.append(N("span",obj.subtitle,"badge"));if(obj.kind==="Persona"){showPersonBiography(p,obj);showPersonResearch(p,obj)}else{if(obj.archiveNote){p.append(N("div","Texto original de OneNote · material sin verificar","source-hint original-label"));p.append(N("div",obj.archiveNote,"original-note"))}else if(obj.note){p.append(N("p",obj.note))}showPodcastNotes(p,obj.podcastNotes)}if(obj.source&&!/^https:\/\//.test(obj.source))p.append(N("p","Fuente de ficha: "+obj.source,"source-hint"));showTimelineForNode(p,obj);showNodeRelationships(p,obj);}
-else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",relationStatusLabel(obj),"badge"));showRelationshipEndpoints(p,obj);if(obj.note)p.append(N("p",obj.note));if(Array.isArray(obj.relatedTypes)&&obj.relatedTypes.length){var tags=N("p","Otros tipos de vínculo descritos: "+obj.relatedTypes.join(" · "),"source-hint");p.append(tags)}showPodcastNotes(p,obj.podcastNotes);if(obj.source){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,/^(https:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i.test(obj.source)?"Abrir minuto de la relación":"Consultar documento de evidencia");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
+else{p.append(N("h2",obj.type||"Relación"));p.append(N("span",(getNode(obj.a)||{}).name+" ↔ "+(getNode(obj.b)||{}).name,"badge"));p.append(N("span",relationStatusLabel(obj),"badge"));showRelationshipEndpoints(p,obj);var hasEvidence=showRelationshipEvidence(p,obj);if(obj.note&&!hasEvidence)p.append(N("p",obj.note));if(!hasEvidence&&Array.isArray(obj.relatedTypes)&&obj.relatedTypes.length){var tags=N("p","Otros tipos de vínculo descritos: "+obj.relatedTypes.join(" · "),"source-hint");p.append(tags)}showPodcastNotes(p,obj.podcastNotes);if(obj.source&&!hasEvidence){var src=N("p");src.append(N("span","Fuente: "));podcastSourceLink(src,obj.source,/^(https:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//i.test(obj.source)?"Abrir minuto de la relación":"Consultar documento de evidencia");if(!/^https:\/\//.test(obj.source))src.append(N("span",obj.source));p.append(src)}}
 }
 // Solo lectura: no existen acciones de editar o eliminar.
 $("mode").addEventListener("click",function(){view=view==="graph"?"gallery":"graph";render()});
