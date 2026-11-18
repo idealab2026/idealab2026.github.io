@@ -13,8 +13,16 @@ var periods=[
    Unknown locations remain unclassified; users may override with g: []. */
 var GEO=["Europa","Asia","África","América","Oceanía","Antártida","Mundial"];
 var continent="Todos",country="Todos",countryLinks=Object.create(null),worldGeo=null,worldShapesBuilt=false,worldPaths=new Map(),countryNames=new Map(),mapYearActive=false,mapYear=1900,mapListLimit=60,YEAR_PX=96,yearAxisLayer=null,yearGridLayers=[],yearWindowKey="";
-for(var pi=2;pi<periods.length;pi++)
- periods[pi].w=(periods[pi].b-periods[pi].a)*YEAR_PX;
+var MONTH_START_YEAR=2010,MONTH_PX=56,MONTH_YEAR_PX=12*MONTH_PX;
+var MONTH_LABELS=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+// Before 2010: 96 px/year. From January 2010: twelve legible months/year.
+// Keep a continuous, strictly monotonic coordinate system for ALL categories.
+for(var pi=2;pi<periods.length;pi++){
+ var pp=periods[pi];
+ pp.w=(pp.b-pp.a)*YEAR_PX;
+ if(pp.a<MONTH_START_YEAR&&pp.b>MONTH_START_YEAR)
+  pp.w=(MONTH_START_YEAR-pp.a)*YEAR_PX+(pp.b-MONTH_START_YEAR)*MONTH_YEAR_PX;
+}
 function geoFold(str){
  return String(str||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 }
@@ -245,11 +253,28 @@ function handleHistorySearchInput(text){
   if(hits.length)jumpToYear(sy(hits[0]));
  },230);
 }
+// Both directions use the same piecewise scale, preserving fractional event years.
+function withinPeriodWidth(p,year){
+ var n=Math.max(p.a,Math.min(p.b,Number(year)));
+ if(p.a<MONTH_START_YEAR&&p.b>MONTH_START_YEAR)
+  return n<=MONTH_START_YEAR?(n-p.a)*YEAR_PX:
+   (MONTH_START_YEAR-p.a)*YEAR_PX+(n-MONTH_START_YEAR)*MONTH_YEAR_PX;
+ return (n-p.a)*p.w/(p.b-p.a);
+}
+function withinPeriodYear(p,dx){
+ var distance=Math.max(0,Math.min(dx,p.w*zoom))/zoom;
+ if(p.a<MONTH_START_YEAR&&p.b>MONTH_START_YEAR){
+  var before=(MONTH_START_YEAR-p.a)*YEAR_PX;
+  return distance<=before?p.a+distance/YEAR_PX:
+   MONTH_START_YEAR+(distance-before)/MONTH_YEAR_PX;
+ }
+ return p.a+distance*(p.b-p.a)/p.w;
+}
 function axisX(y){
  var x=170,n=Number(y);
  for(var i=0;i<periods.length;i++){
   var p=periods[i],w=p.w*zoom;
-  if(n<p.b||i===periods.length-1)return x+Math.max(0,Math.min(1,(n-p.a)/(p.b-p.a)))*w;
+  if(n<p.b||i===periods.length-1)return x+withinPeriodWidth(p,n)*zoom;
   x+=w;
  }
  return x;
@@ -259,10 +284,10 @@ function yearAt(px){
  var x=Math.max(0,px-170);
  for(var i=0;i<periods.length;i++){
   var p=periods[i],w=p.w*zoom;
-  if(x<=w||i===periods.length-1)return p.a+(Math.max(0,Math.min(1,x/w)))*(p.b-p.a);
+  if(x<=w||i===periods.length-1)return withinPeriodYear(p,x);
   x-=w;
  }
- return 2026;
+ return 2031;
 }
 function eraAt(year){return periods.find(function(p){return year>=p.a&&year<p.b})||periods[periods.length-1]}
 function categoryUI(){
@@ -1197,8 +1222,8 @@ function setView(next){
  window.dispatchEvent(new CustomEvent("historia:view",{detail:{view:next}}));
 }
 
-/* Every annual mark is real and exact; only the visible tick labels are
-   mounted to keep the 500k-pixel continuous canvas responsive. */
+/* Annual marks before 2010, monthly marks from January 2010 onward.
+   Tick labels are virtualized to preserve a responsive continuous canvas. */
 
 /* Compact overview navigation. Its six segments deliberately have equal width:
    time scales differ by epoch, so a uniformly linear miniature would make
@@ -1303,7 +1328,7 @@ function initMinimap(){
 
 function updateAnnualHeader(){
  if(viewMode!=="timeline"||!yearAxisLayer)return;
- var viewport=$("viewport"),pad=YEAR_PX*zoom*2;
+ var viewport=$("viewport"),pad=MONTH_YEAR_PX*zoom*2;
  var left=Math.max(axisX(-3000),viewport.scrollLeft-pad);
  var right=Math.min(axisX(2031),viewport.scrollLeft+(viewport.clientWidth||1400)+pad);
  if(right<left){
@@ -1318,22 +1343,34 @@ function updateAnnualHeader(){
  var last=Math.min(2031,Math.ceil(yearAt(right))+1);
  var key=first+":"+last+":"+zoom;
  if(key===yearWindowKey)return;
- // Render header ticks and lane guides from the exact SAME x coordinates.
- // CSS repeating gradients over the ~500,000px canvas can drift by several
- // pixels under browser compositing / fractional zoom, so never use them.
+ // Month labels and lane dividers use identical axisX coordinates; never
+ // create a repeated CSS gradient that can drift from fractional event dates.
  var ticks=[],positions=[];
  for(var year=first;year<=last;year++){
   var x=axisX(year),milestone=year%100===0,decade=year%10===0;
-  var tick=el("div",null,"tick year-tick"+(decade?" year-decade":"")+(milestone?" year-century":""));
+  var monthly=year>=MONTH_START_YEAR&&year<2031;
+  var tick=el("div",null,"tick year-tick"+(decade?" year-decade":"")+
+   (milestone?" year-century":"")+(monthly?" monthly-year-tick":""));
   tick.style.left=x+"px";
-  tick.append(el("span",year===0?"Cambio de era":yearText(year)));
+  tick.append(el("span",monthly?String(year):year===0?"Cambio de era":yearText(year)));
   ticks.push(tick);
-  positions.push({x:x,decade:decade,century:milestone});
+  positions.push({x:x,decade:decade,century:milestone,month:false});
+  if(!monthly)continue;
+  for(var month=0;month<12;month++){
+   var monthX=axisX(year+month/12);
+   var monthTick=el("div",null,"tick month-tick"+(month===0?" january-tick":""));
+   monthTick.style.left=monthX+"px";
+   monthTick.append(el("span",MONTH_LABELS[month]));
+   ticks.push(monthTick);
+   if(month>0)positions.push({x:monthX,decade:false,century:false,month:true});
+  }
  }
  yearAxisLayer.replaceChildren(...ticks);
  yearGridLayers.forEach(function(layer){
   var guides=positions.map(function(pos){
-   var line=el("span",null,"year-guide"+(pos.decade?" decade-guide":"")+(pos.century?" century-guide":""));
+   var cls="year-guide"+(pos.month?" month-guide":
+    (pos.decade?" decade-guide":"")+(pos.century?" century-guide":""));
+   var line=el("span",null,cls);
    line.style.left=pos.x+"px";
    line.setAttribute("aria-hidden","true");
    return line;
