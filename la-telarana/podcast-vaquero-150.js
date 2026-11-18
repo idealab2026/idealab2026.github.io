@@ -7,21 +7,22 @@ window.IDEA_TELARANA_PODCAST_150 = {
     "publishedAt": "2026-09-28",
     "url": "https://www.youtube.com/watch?v=REHYGPW0c8k",
     "transcriptLanguage": "es",
-    "sourceNote": "Investigación inicial basada en un resumen previo y TXT NotebookLM de 99.744 caracteres verificado en Drive; sin marcas temporales fiables ni cotejo del audio. Los antiguos enlaces a minutos se retiran por falta de trazabilidad. Las declaraciones se atribuyen a la fuente y se distinguen de hechos documentados independientemente.",
+    "sourceNote": "Investigación inicial basada en un resumen previo y TXT NotebookLM de 99.744 caracteres verificado en Drive; sin marcas temporales fiables ni cotejo del audio. Los antiguos enlaces a minutos se retiran por falta de trazabilidad. Las declaraciones se atribuyen a la fuente y se distinguen de hechos documentados independientemente. Revisión 18-11-2026: citas literales con offsets de NotebookLM para un subconjunto de declaraciones; resto de resúmenes sin cotejo individual de pasaje. Nuevos contrastes institucionales y cronológicos (1949/1951, Tobianski, Lillehammer, Meshaal, Gofman, Irán). Las fuentes posteriores se identifican como investigación editorial, no contenido citado.",
     "transcriptProvenance": "NotebookLM TXT privado no minutado; documento editable F69 pendiente de transcripción manual",
     "transcriptAudioMatched": false,
     "verifiedMinuteReferences": 0,
     "speakerDiarizationVerified": false,
     "transcriptCompletenessVerified": false,
-    "provenanceAuditDate": "2026-11-13",
+    "provenanceAuditDate": "2026-11-18",
     "independentDocumentaryEvidenceCount": 8,
     "sourceOrder": 69,
-    "reviewStatus": "segunda_pasada_proveniencia_y_biografias_abierta",
+    "reviewStatus": "tercera_pasada_contrastes_historia_1949_2026_sin_audio",
     "editorialAudit": {
       "totalNodeBiosUpdated": 11,
       "documentedEdgesUpgraded": 8,
       "oldUnverifiedMinutesRemoved": null
-    }
+    },
+    "methodologicalNote": "18-11-2026. La transcripción TXT no lleva tiempos y no se ha cotejado audio ni voces. Las anclas transcriptSearch/transcriptCharOffset se han comprobado contra 99.744 caracteres del TXT para declaraciones seleccionadas; las restantes fichas mantienen sinopsis no verificadas al nivel de cita. Separar: 1948 Tobianski/Isser Be’eri/inteligencia militar vs 1949 fundación Mossad/Reuven Shiloah y reestructuración 1951; colaboración genérica de comunidades judías no probada; proceso de supuestos «juicios secretos» sin documento; sentencia HCJ769/02 2006 no implica revisión judicial preventiva de operaciones secretas. NOU 2000:6 confirma Lillehammer 1973, Biblioteca Clinton Meshaal 1997, Yad Vashem Eichmann 1960, decreto gobierno israelí Gofman 2026. «Boda Roja» es operación de mandos militares junio 2025, «Narnia» científicos de 2025; entrevista les atribuye marzo 2026 y 26 científicos sin corroboración. Informe ISC 2025 registra que Stuxnet se atribuye a EE. UU./Israel, sin reconocimiento formal."
   },
   "nodes": [
     {
@@ -37,13 +38,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Entrevistado por Roberto Vaquero. Expone investigaciones y recuerdos personales de su trabajo como corresponsal en Beirut y Jerusalén y de sus libros sobre el Mossad.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Eric Fratini",
+          "transcriptCharOffset": 1310,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -60,13 +66,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Entrevista a Eric Frattini sobre espionaje, historia de Israel, Irán y política española. Plantea preguntas y valoraciones políticas propias.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Vaquero Podcast",
+          "transcriptCharOffset": 1280,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "photoCredit": "La Esfera de los Libros",
@@ -77,21 +88,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "David Ben-Gurión",
       "kind": "Persona",
       "subtitle": "Primer ministro israelí (1948–1954 y 1955–1963); respaldó la captura de Eichmann en 1960.",
-      "note": "Primer jefe de Gobierno de Israel, con mandatos entre 1948–1954 y 1955–1963. Según Yad Vashem, respaldó el operativo que capturó a Adolf Eichmann en 1960. Frattini también describe decisiones fundacionales de los servicios israelíes; tales interpretaciones deben distinguirse de actos oficiales y fechas acreditadas.",
+      "note": "Primer ministro de Israel; el 13-12-1949 nombró a Reuven Shiloah para coordinar la inteligencia estatal y el 2-3-1951 reforzó funciones exteriores. El caso del capitán Tobianski generó investigaciones internas separadas; no se prueba que fuese la causa directa y única de la creación del Mossad.",
       "photo": "",
-      "source": "https://wwv.yadvashem.org/yv/es/exhibitions/eichmann/operation-eichmann.asp",
+      "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
       "x": 2550,
       "y": 150,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini lo vincula con la consolidación de la inteligencia israelí tras 1948 y la reorganización posterior a la ejecución de Meir Tobianski.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "David Bengurión",
+          "transcriptCharOffset": 1834,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://wwv.yadvashem.org/yv/es/exhibitions/eichmann/operation-eichmann.asp",
@@ -102,21 +118,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Meir Tobianski",
       "kind": "Persona",
       "subtitle": "Ingeniero israelí",
-      "note": "",
+      "note": "Oficial del Ejército israelí ejecutado sumariamente el 30 de junio de 1948 por un consejo de guerra dirigido por Isser Be’eri, responsable de inteligencia militar. Fue exonerado en 1949. El caso no corresponde a una condena por el Mossad constituido en 1949, ni basta para demostrar causalidad entre este crimen y la creación del servicio.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.nli.org.il/en/a-topic/987007299897205171",
       "x": 2825,
       "y": 150,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini relata su ejecución por una acusación de traición que se habría demostrado errónea; utiliza el episodio para contextualizar la reorganización de los servicios de inteligencia.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "caso Meirtuiamski",
+          "transcriptCharOffset": 2347,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -133,13 +154,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini atribuye a Meir Amit reflexiones sobre el papel del servicio en operaciones letales. La literalidad y el contexto de la cita no se han contrastado.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Meiramit",
+          "transcriptCharOffset": 6385,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://mossad.gov.il/en/history",
@@ -158,13 +184,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini repasa su captura en Argentina por agentes israelíes, traslado a juicio en Israel y ejecución en 1962; también menciona su trato con Josef Mengele.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "caso de Eichman",
+          "transcriptCharOffset": 685,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://wwv.yadvashem.org/yv/es/exhibitions/eichmann/operation-eichmann.asp",
@@ -183,13 +214,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "El invitado describe cómo agentes del Mossad lo habrían atraído de Brasil a Uruguay y ejecutado en una operación clandestina.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Herbert Cucurs",
+          "transcriptCharOffset": 756,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -528,13 +564,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini relaciona su mandato con la lista de objetivos de represalia elaborada tras el atentado contra atletas israelíes en Múnich de 1972.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Golda Meyer",
+          "transcriptCharOffset": 19222,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://main.knesset.gov.il/EN/About/Lexicon/Pages/Meir_Golda.aspx",
@@ -545,7 +586,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Ali Hassan Salameh",
       "kind": "Persona",
       "subtitle": "Dirigente palestino señalado como objetivo supuesto de la operación fallida de Lillehammer.",
-      "note": "Dirigente palestino vinculado en la historiografía a la organización Septiembre Negro. La comisión oficial noruega de 2000 recoge que se consideraba a Ali Hassan Salameh el objetivo presumido de la operación de Lillehammer de 1973; Ahmed Bouchikhi murió por identificación errónea. La vinculación personal de Salameh con cada operación discutida por Frattini exige pruebas específicas.",
+      "note": "Figura palestina a la que agentes israelíes creyeron haber identificado en Lillehammer (Noruega) en 1973. La comisión noruega confirma el error que costó la vida a Ahmed Bouchikhi; no hace falta dar por ciertas otras conexiones personales relatadas en el episodio para acreditar ese caso.",
       "photo": "",
       "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
       "x": 3100,
@@ -553,13 +594,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "El invitado lo vincula a Septiembre Negro y al episodio de Lillehammer, donde agentes israelíes mataron por error a otra persona a la que confundieron con él.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Aliassan Salame",
+          "transcriptCharOffset": 19719,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
@@ -593,7 +639,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Ahmed Bouchiki",
       "kind": "Persona",
       "subtitle": "Trabajador marroquí residente en Noruega, asesinado por error en Lillehammer en 1973.",
-      "note": "Ahmed Bouchikhi fue un trabajador de origen marroquí residente en Lillehammer, Noruega. Agentes vinculados a la inteligencia israelí lo mataron el 21 de julio de 1973 tras confundirlo con un objetivo buscado. Una investigación oficial noruega de 2000 detalla los hechos, las condenas judiciales de 1974 y la falta de prueba de colaboración de autoridades noruegas. La fuente oral no es la base probatoria de esta relación.",
+      "note": "Trabajador marroquí asesinado en Lillehammer por agentes vinculados al Mossad el 21 de julio de 1973 al ser confundido con Ali Hassan Salameh. La comisión noruega NOU 2000:6 recoge fecha, investigación y consecuencias judiciales. La filiación, etnia o culpa de cualquier tercero no puede inferirse del objetivo equivocado.",
       "photo": "",
       "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
       "x": 2000,
@@ -601,13 +647,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini explica que el camarero marroquí fue asesinado por agentes israelíes en Noruega al ser confundido con Ali Hassan Salameh.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "ahmed Buchiki",
+          "transcriptCharOffset": 21062,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
@@ -649,13 +700,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Se describe su exigencia de que Israel proporcionara un antídoto tras un atentado fallido contra un dirigente de Hamás y sus relaciones con líderes palestinos en 1970.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "rey Jusín de Jordania",
+          "transcriptCharOffset": 22958,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -664,21 +720,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Danny Yatom",
       "kind": "Persona",
       "subtitle": "Director del Mossad entre 1996 y 1998.",
-      "note": "Exmilitar y político israelí que dirigió el Mossad entre 1996 y 1998, de acuerdo con la cronología institucional del organismo. Frattini comenta su gestión durante la fallida operación contra Khaled Mashal en Jordania (1997); la descripción del hecho histórico se contrasta en documentación separada, no se asume exactitud de todos los detalles del podcast.",
+      "note": "Director del Mossad en 1996–1998. La tentativa de envenenar a Khaled Meshaal en Amán (1997) desencadenó una crisis diplomática; la documentación de la Biblioteca Clinton registra que el rey Hussein exigió el antídoto y se suministró. La afirmación de que Yatom lo entregó físicamente en persona sigue siendo detalle del relato oral no verificado aquí.",
       "photo": "",
-      "source": "https://mossad.gov.il/en/history",
+      "source": "https://www.clintonlibrary.gov/research/archives/finding-aids/khalid-mishal",
       "x": 2825,
       "y": 910,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "El invitado cuenta que, por exigencia del rey Hussein, entregó personalmente un antídoto tras una operación israelí fallida en Jordania.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Dani Yatón",
+          "transcriptCharOffset": 23420,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://mossad.gov.il/en/history",
@@ -1067,13 +1128,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini lo relaciona con Ariel Sharon y un supuesto 'plan de batalla' contra el programa nuclear iraní; también describe contactos de cooperación con el CNI español.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Meir Dagan",
+          "transcriptCharOffset": 75139,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://mossad.gov.il/en/history",
@@ -1084,7 +1150,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "David Barnea",
       "kind": "Persona",
       "subtitle": "Director del Mossad, según episodio",
-      "note": "",
+      "note": "Director del Mossad desde 2021 hasta el 2 de junio de 2026, cuando le sustituyó Roman Gofman; la fecha del relevo se comprueba en documentación gubernamental israelí. La entrevista incluye apreciaciones sobre prioridades ante Irán que requieren análisis distinto.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 2825,
@@ -1092,13 +1158,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini y Vaquero valoran críticamente su estrategia en la guerra contra Irán y la expectativa de un levantamiento interior.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "David Barnea",
+          "transcriptCharOffset": 59216,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1132,21 +1203,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Roman Gofman",
       "kind": "Persona",
       "subtitle": "Director del Mossad, según episodio",
-      "note": "",
+      "note": "Roman Gofman fue nombrado director del Mossad con efecto desde el 2 de junio de 2026, en sustitución de David Barnea, conforme al documento del Gobierno israelí. Este nombramiento sí está documentado y es independiente de las hipótesis geopolíticas del entrevistado.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://www.gov.il/BlobFolder/news/spoke-mosad120426/en/Gov_Dec_roman120426.pdf",
       "x": 3375,
       "y": 1480,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini lo presenta como nuevo director a partir de junio de 2026, dentro de una serie de responsables centrados en el programa nuclear iraní.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Roman Gofman",
+          "transcriptCharOffset": 75636,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1347,13 +1423,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "rumor",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini interpreta decisiones sobre Marruecos y Sáhara y plantea especulaciones sobre posibles presiones. Ninguna acusación de chantaje queda demostrada en el episodio.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Sánchez",
+          "transcriptCharOffset": 93250,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1408,21 +1489,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Mossad",
       "kind": "Organización",
       "subtitle": "Servicio de inteligencia exterior de Israel; se conservan por separado operaciones documentadas y alegaciones.",
-      "note": "Servicio de inteligencia exterior de Israel, cuya cronología pública recoge los sucesivos directores desde Reuven Shiloah hasta la década de 2020. La entrevista de Frattini mezcla historia institucional, operaciones documentadas, testimonios personales e hipótesis. Esta ficha distingue hechos confirmados en fuentes primarias de afirmaciones cuya comprobación audiovisual sigue pendiente.",
+      "note": "Servicio israelí de inteligencia exterior. El 13-12-1949 Ben-Gurión encargó a Reuven Shiloah crear un instituto coordinador; el 2-3-1951 reorganizó allí operaciones exteriores. No es correcto reducir la génesis del Mossad al incidente Tobianski; la represión a éste correspondió a inteligencia militar en 1948. Las cifras de efectivos y colaboradores descritas por Frattini no constan como datos públicos auditados.",
       "photo": "",
-      "source": "https://mossad.gov.il/en/history",
+      "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
       "x": 3375,
       "y": 1860,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Institución central del episodio. Frattini repasa su historia, unidades, operaciones especiales y prioridades frente al programa nuclear iraní.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "en diciembre del 49",
+          "transcriptCharOffset": 3086,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ],
       "biographyEvidenceUrl": "https://mossad.gov.il/en/history",
@@ -1433,7 +1519,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Kidón",
       "kind": "Organización",
       "subtitle": "Unidad operativa citada",
-      "note": "",
+      "note": "El invitado describe a Kidón como una unidad de asesinatos selectivos dentro del Mossad, pero los organigramas y procedimientos clasificados no son públicamente comprobables en detalle. La existencia de debate legal sobre operaciones letales no confirma un «juicio secreto» dirigido por un magistrado.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 2000,
@@ -1441,13 +1527,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini la describe como unidad dedicada a misiones letales dentro del aparato de operaciones especiales atribuido al Mossad.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Quidón",
+          "transcriptCharOffset": 4841,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1456,7 +1547,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Metsada",
       "kind": "Organización",
       "subtitle": "Unidad de operaciones especiales citada",
-      "note": "",
+      "note": "Frattini atribuye a Metsada el mando de acciones encubiertas y Kidón como unidad subordinada. La estructura exacta de unidades clandestinas no queda confirmada por una publicación primaria en este expediente. Se conserva como descripción atribuida a la entrevista.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 2275,
@@ -1464,13 +1555,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Se presenta como estructura de operaciones especiales del Mossad que integra Kidón, según el relato de Frattini.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "metsadá",
+          "transcriptCharOffset": 4674,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1487,13 +1583,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Se define como servicio de seguridad interior y contrainteligencia israelí, diferenciado del Mossad.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "shimbet",
+          "transcriptCharOffset": 5522,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1502,7 +1603,7 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Centro Nacional de Inteligencia (CNI)",
       "kind": "Organización",
       "subtitle": "Servicio de inteligencia español",
-      "note": "",
+      "note": "Organismo estatal español de inteligencia. Las afirmaciones de cooperación concreta con otros servicios, Pegasus o la política de Marruecos deben documentarse en cada caso; la entrevista no constituye prueba de que las imputaciones a personas concretas sean verdaderas.",
       "photo": "",
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "x": 2825,
@@ -1510,13 +1611,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Mencionado por sus directores, colaboración atribuida con agencias extranjeras y alertas sobre Marruecos. Parte de esas operaciones son relatos no contrastados del entrevistado.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "CNI",
+          "transcriptCharOffset": 91940,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1533,13 +1639,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini la relaciona con la supuesta solicitud de ayuda al CNI y, junto con el Mossad, con el ámbito de cooperación en inteligencia.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "CIA",
+          "transcriptCharOffset": 78222,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1625,13 +1736,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini la relaciona con los atentados de Múnich 1972 y con Ali Hassan Salameh.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Septiembre negro",
+          "transcriptCharOffset": 19101,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1686,21 +1802,26 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "name": "Unidad 8200",
       "kind": "Organización",
       "subtitle": "Inteligencia de señales militar israelí",
-      "note": "",
+      "note": "Unidad de inteligencia de señales/ciberoperaciones de las Fuerzas de Defensa de Israel. El Parlamento británico (ISC, informe Irán 2025) recoge atribución ampliamente publicada de Stuxnet a una operación conjunta de EE. UU. e Israel, sin reconocimiento oficial. No acreditar participación de una unidad específica o del Mossad como hecho gubernamental confirmado.",
       "photo": "",
-      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "source": "https://isc.independent.gov.uk/wp-content/uploads/2025/07/Intelligence-and-Security-Committee-of-Parliament-Iran.pdf",
       "x": 3375,
       "y": 2240,
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "relato",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Frattini vincula la unidad con Stuxnet y con operaciones de ciberinteligencia y sabotaje en Irán.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "8200",
+          "transcriptCharOffset": 66693,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1740,13 +1861,18 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "podcastNotes": [
         {
           "episodeId": "vaquero-150-frattini-2026-09-28",
-          "title": "Vaquero Podcast #150 · Eric Frattini",
+          "title": "F69 · resumen atribuido al TXT, ancla exacta; audio no verificado",
           "publishedAt": "2026-09-28",
           "timeSec": null,
           "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
-          "status": "rumor",
+          "status": "resumen_editorial_declaracion_en_subtitulos_sin_audio",
           "text": "Mencionada dentro de un rumor no corroborado sobre presuntas operaciones contra personas próximas al gobierno español; no se acredita ninguna conducta concreta.",
-          "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "transcriptSearch": "Dirección General de la Seguridad",
+          "transcriptCharOffset": 93682,
+          "audioVerified": false,
+          "minuteVerified": false,
+          "transcriptVerified": true
         }
       ]
     },
@@ -1885,6 +2011,492 @@ window.IDEA_TELARANA_PODCAST_150 = {
           "status": "alegacion",
           "text": "Se habla de mandos de Ceuta y de una presunta instrucción transmitida por la cadena de mando.",
           "temporalStatus": "sin_minutaje_validado_en_archivo_f69"
+        }
+      ]
+    },
+    {
+      "id": "vf150-reuven-shiloah",
+      "name": "Reuven Shiloah",
+      "kind": "Persona",
+      "subtitle": "Primer director del Mossad, 1949–1952",
+      "note": "Ben-Gurión le confió el 13-12-1949 la organización del instituto de coordinación de inteligencia; presidió la estructura inicial y su expansión de competencias exteriores en 1951. No confundirlo con Isser Be’eri, de inteligencia militar.",
+      "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contexto documental externo, no citado literalmente",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
+          "status": "contraste_externo_no_testimonio_del_video",
+          "text": "Fuente institucional externa, vínculo con la fecha de creación del Mossad.",
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "vf150-creacion1949",
+      "name": "Fundación formal del Mossad (13 diciembre 1949)",
+      "kind": "Acontecimiento",
+      "subtitle": "Nombramiento de Reuven Shiloah",
+      "note": "Fecha documental de la designación por Ben-Gurión para establecer el instituto coordinador de servicios de inteligencia. El gobierno reorganizó las funciones exteriores en marzo de 1951.",
+      "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "El invitado identifica el mes correctamente, pero asocia su explicación causal al caso Tobianski sin demostrarla.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "en diciembre del 49",
+          "transcriptCharOffset": 3086
+        }
+      ]
+    },
+    {
+      "id": "vf150-reorganizacion1951",
+      "name": "Reorganización de inteligencia exterior (2 marzo 1951)",
+      "kind": "Acontecimiento",
+      "subtitle": "Ben-Gurión refuerza la dirección operativa",
+      "note": "La reorganización de 1951 consolidó operaciones de inteligencia exterior bajo la estructura del Mossad. Es un hito distinto de la designación de diciembre de 1949.",
+      "source": "https://jewishvirtuallibrary.org/jsource/Society_%26_Culture/mossad.html",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "La entrevista simplifica las fases de creación y organización.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "es cuando comienza a operar como tal",
+          "transcriptCharOffset": 3106
+        }
+      ]
+    },
+    {
+      "id": "vf150-isser-beeri",
+      "name": "Isser Be’eri",
+      "kind": "Persona",
+      "subtitle": "Responsable de inteligencia militar en 1948",
+      "note": "Dirigía inteligencia militar al intervenir en el consejo de guerra sumario que ejecutó a Meir Tobianski en junio de 1948. En 1949 fue investigado y condenado, después indultado. No fue director del Mossad creado posteriormente.",
+      "source": "https://www.nli.org.il/en/a-topic/987007299897205171",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "Identificación histórica externa del responsable; el nombre no consta en los subtítulos de la entrevista.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "deciden fusilarlo",
+          "transcriptCharOffset": 2612
+        }
+      ]
+    },
+    {
+      "id": "vf150-tobianski1948",
+      "name": "Ejecución de Meir Tobianski (30 junio 1948)",
+      "kind": "Acontecimiento",
+      "subtitle": "Consejo de guerra sumario de inteligencia militar",
+      "note": "Tras una acusación de traición, Tobianski fue ejecutado el 30-06-1948 por orden de un tribunal de campaña improvisado vinculado a Isser Be’eri. La acción se considera un error judicial grave, no una operación del Mossad de 1949.",
+      "source": "https://www.nli.org.il/en/a-topic/987007299897205171",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "El vídeo recuerda el episodio; el marco institucional real era inteligencia militar.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "caso Meirtuiamski",
+          "transcriptCharOffset": 2347
+        }
+      ]
+    },
+    {
+      "id": "vf150-exoneracion1949",
+      "name": "Exoneración de Tobianski (1949)",
+      "kind": "Acontecimiento",
+      "subtitle": "Rehabilitación y responsabilidades posteriores",
+      "note": "La inocencia de Tobianski fue reconocida en 1949. El tratamiento judicial posterior a Isser Be’eri pertenece a la historia de la justicia e inteligencia israelí en 1948–49.",
+      "source": "https://www.jta.org/archive/court-proceedings-begin-against-prosecutor-responsible-for-tobianskys-execution",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "El vídeo afirma correctamente que fue rehabilitado, pero el nexo causal con la fundación del Mossad no está acreditado.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "era inocente",
+          "transcriptCharOffset": 2771
+        }
+      ]
+    },
+    {
+      "id": "vf150-sayanim-generalizacion",
+      "name": "Alegación sobre sayanim y comunidades judías",
+      "kind": "Declaración",
+      "subtitle": "El vídeo generaliza una supuesta colaboración mundial",
+      "note": "El invitado sostiene que habría numerosos ayudantes del Mossad en cualquier comunidad judía. No aporta censo, muestreo o expediente identificable: pertenecer a una comunidad judía no implica colaboración con ningún servicio. Distinguir alegaciones operativas sobre colaboradores individuales de atribuciones colectivas.",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "Generalización sobre comunidades étnico-religiosas no demostrada por la entrevista.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "en cualquier comunidad judía hay muchos",
+          "transcriptCharOffset": 4389
+        }
+      ]
+    },
+    {
+      "id": "vf150-juicio-secreto-mossad",
+      "name": "Alegación de tribunal clandestino de asesinatos",
+      "kind": "Declaración",
+      "subtitle": "«Un juez del Tribunal Supremo» autorizaría objetivos",
+      "note": "Frattini describe un procedimiento con fiscal, abogado y magistrado del Tribunal Supremo para aprobar asesinatos selectivos en el exterior. No presenta norma, nombre de la comisión ni sentencia que acrediten esta estructura. No validarla por su similitud superficial con revisiones judiciales posteriores.",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "Procedimiento afirmado sin documentos institucionales identificados.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "un juez del Tribunal Supremo",
+          "transcriptCharOffset": 5786
+        }
+      ]
+    },
+    {
+      "id": "vf150-hcj769-2002",
+      "name": "Corte Suprema de Israel: HCJ 769/02 (2006)",
+      "kind": "Documento",
+      "subtitle": "Sentencia sobre asesinatos selectivos y derecho internacional",
+      "note": "La Corte Suprema analizó la legalidad de ataques preventivos y estableció evaluación individual, proporcionalidad y revisión posterior en ciertos casos. Esa revisión NO es prueba de un juez secreto que autoriza previamente cada ejecución del Mossad en el extranjero.",
+      "source": "https://versa.cardozo.yu.edu/opinions/public-committee-against-torture-v-government",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contexto documental externo, no citado literalmente",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://versa.cardozo.yu.edu/opinions/public-committee-against-torture-v-government",
+          "status": "contraste_externo_no_testimonio_del_video",
+          "text": "Contraste jurídico externo: sentencia judicial de 2006, no una cita identificada en el vídeo.",
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "vf150-operacion-lillehammer1973",
+      "name": "Caso Lillehammer (21 julio 1973)",
+      "kind": "Acontecimiento",
+      "subtitle": "Asesinato de Ahmed Bouchikhi por error de identidad",
+      "note": "Agentes israelíes asesinaron en Noruega a un trabajador marroquí al confundirlo con Ali Hassan Salameh. NOU 2000:6, investigación gubernamental noruega, documenta el crimen y el proceso judicial de 1974.",
+      "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "La identificación de la víctima y fecha están confirmadas por una investigación estatal.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "un camarero marroquí ahmed Buchiki",
+          "transcriptCharOffset": 21041
+        }
+      ]
+    },
+    {
+      "id": "vf150-comision-noruega2000",
+      "name": "NOU 2000:6, investigación noruega de Lillehammer",
+      "kind": "Documento",
+      "subtitle": "Comisión estatal sobre asesinato y actuación policial",
+      "note": "Investigación oficial de los hechos del 21-07-1973, colaboración de agentes e instituciones, y actuaciones judiciales. Se distingue lo probado en expediente de especulaciones atribuidas a participantes.",
+      "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contexto documental externo, no citado literalmente",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
+          "status": "contraste_externo_no_testimonio_del_video",
+          "text": "Documento oficial de contraste externo, no citado expresamente por título en el TXT.",
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "vf150-khaled-meshaal",
+      "name": "Khaled Meshaal",
+      "kind": "Persona",
+      "subtitle": "Dirigente político de Hamás, objetivo de 1997",
+      "note": "Dirigente palestino de Hamás contra el que operativos israelíes intentaron un envenenamiento en Amán en septiembre de 1997. La exigencia de antídoto por Hussein se conserva en documentación de la Biblioteca Clinton.",
+      "source": "https://www.clintonlibrary.gov/research/archives/finding-aids/khalid-mishal",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "La fuente no nombra con claridad en el primer pasaje; identificación confirmada independientemente.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "uno de los líderes de jamás en Jordania",
+          "transcriptCharOffset": 22226
+        }
+      ]
+    },
+    {
+      "id": "vf150-meshaal1997",
+      "name": "Intento de asesinato de Meshaal (25 septiembre 1997)",
+      "kind": "Acontecimiento",
+      "subtitle": "Amán: envenenamiento frustrado y crisis diplomática",
+      "note": "Agentes del Mossad intentaron envenenar a Khaled Meshaal en Amán. El rey Hussein exigió información y antídoto, suministrado por Israel. No hay que confundir el hecho documentado con la anécdota de entrega personal por Yatom.",
+      "source": "https://www.clintonlibrary.gov/research/archives/finding-aids/khalid-mishal",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "Crónica contrastada en la Biblioteca Presidencial Clinton.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "rey Jusín de Jordania",
+          "transcriptCharOffset": 22958
+        }
+      ]
+    },
+    {
+      "id": "vf150-gofman2026",
+      "name": "Gofman asume el Mossad (2 junio 2026)",
+      "kind": "Acontecimiento",
+      "subtitle": "Relevo oficial de David Barnea",
+      "note": "Nombramiento y toma de posesión de Roman Gofman con efecto 02-06-2026, según documento del Gobierno israelí. La fecha es un acontecimiento verificado, separado de predicciones geopolíticas del entrevistado.",
+      "source": "https://www.gov.il/BlobFolder/news/spoke-mosad120426/en/Gov_Dec_roman120426.pdf",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "El dato temporal sí está contrastado por acto institucional.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "Roman Gofman",
+          "transcriptCharOffset": 75636
+        }
+      ]
+    },
+    {
+      "id": "vf150-boda-roja2025",
+      "name": "Operación «Boda Roja» (13 junio 2025)",
+      "kind": "Acontecimiento",
+      "subtitle": "Ataques israelíes a mandos militares iraníes",
+      "note": "En las operaciones iniciales del conflicto de junio de 2025, el nombre «Boda Roja» se asoció a los ataques contra altos mandos militares de Irán. No a una operación de 26 científicos de marzo de 2026. Los detalles proceden de informes periodísticos, no una atribución oficial universal.",
+      "source": "https://www.timesofisrael.com/the-stars-aligned-why-israel-set-out-for-a-war-against-iran-and-what-it-achieved/amp/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "El vídeo confunde año, tipo de objetivos y número de víctimas.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "operación boda roja",
+          "transcriptCharOffset": 77032
+        }
+      ]
+    },
+    {
+      "id": "vf150-narnia2025",
+      "name": "Operación «Narnia» contra científicos (junio 2025)",
+      "kind": "Acontecimiento",
+      "subtitle": "Ataques contra investigadores iraníes",
+      "note": "El Ejército israelí anunció el 14-06-2025 haber matado a nueve científicos y expertos asociados a programas nucleares durante el inicio de la operación Rising Lion; la prensa ha descrito un operativo separado como «Narnia». No es el nombre Boda Roja ni fecha marzo 2026.",
+      "source": "https://www.idf.il/en/mini-sites/idf-press-releases-israel-at-war/june-25-pr/the-idf-eliminated-nine-senior-scientists-and-experts-in-the-iranian-nuclear-project/",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "La cifra 26 atribuida al vídeo no se comprueba como cifra de la operación Narnia.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "26 científicos",
+          "transcriptCharOffset": 77120
+        }
+      ]
+    },
+    {
+      "id": "vf150-alegacion-boda-roja2026",
+      "name": "Alegación «Boda Roja, marzo 2026, 26 científicos»",
+      "kind": "Declaración",
+      "subtitle": "Combinación cronológica no corroborada",
+      "note": "Frattini dice que en marzo 2026 una operación llamada Boda Roja mató a 26 científicos iraníes. Los registros de junio 2025 identifican Boda Roja con ataques a mandos y Narnia con científicos. Sin expediente independiente para la cifra 26 y esa denominación en marzo 2026.",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "La transcripción contiene mezcla de dos operaciones conocidas de junio 2025.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "marzo del 2026 que mataron a 26 científicos",
+          "transcriptCharOffset": 77091
+        }
+      ]
+    },
+    {
+      "id": "vf150-stuxnet-no-atribucion",
+      "name": "Stuxnet: atribución US/Israel no reconocida",
+      "kind": "Tema",
+      "subtitle": "Informe parlamentario británico de 2025",
+      "note": "El informe británico sobre Irán señala que el ataque Stuxnet, descubierto en 2010, se atribuye ampliamente a una operación conjunta de EE. UU. e Israel, sin reconocimiento formal. No afirma una operación única del Mossad como hecho adjudicado oficialmente.",
+      "source": "https://isc.independent.gov.uk/wp-content/uploads/2025/07/Intelligence-and-Security-Committee-of-Parliament-Iran.pdf",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · fragmento exacto NotebookLM sin minutos",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+          "status": "subtitulos_automaticos_atribucion_sin_audio",
+          "text": "El invitado lo atribuye a Israel; se mantiene como atribución informada, no confesión estatal.",
+          "minuteVerified": false,
+          "audioVerified": false,
+          "transcriptSearch": "una de las grandes operaciones prodigiosas",
+          "transcriptCharOffset": 1009
+        }
+      ]
+    },
+    {
+      "id": "vf150-club-berna",
+      "name": "Club de Berna e intercambio europeo de inteligencia",
+      "kind": "Institución",
+      "subtitle": "Cooperación documentada en archivos europeos",
+      "note": "Investigación del European Historical Review, 2025, estudia archivos sobre colaboración de agencias europeas con servicios israelíes para operaciones contra palestinos. Los acuerdos de intercambio no implican que todos los países ni comunidades religiosas colaboraran.",
+      "source": "https://academic.oup.com/ehr/article/140/604-605/777/8140798",
+      "topic3d": "oriente",
+      "photo": "",
+      "podcastNotes": [
+        {
+          "episodeId": "vaquero-150-frattini-2026-09-28",
+          "title": "F69 · contexto documental externo, no citado literalmente",
+          "publishedAt": "2026-09-28",
+          "timeSec": null,
+          "temporalStatus": "sin_minutaje_validado_en_archivo_f69",
+          "source": "https://academic.oup.com/ehr/article/140/604-605/777/8140798",
+          "status": "contraste_externo_no_testimonio_del_video",
+          "text": "Investigación académica independiente incorporada como contexto, no cita literal del entrevistado.",
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     }
@@ -2994,6 +3606,390 @@ window.IDEA_TELARANA_PODCAST_150 = {
       "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
       "episodeId": "vaquero-150-frattini-2026-09-28",
       "claimStatus": "relación mencionada por participantes; sin cotejo externo"
+    },
+    {
+      "id": "vf150-f69-r3-founder",
+      "a": "vf150-reuven-shiloah",
+      "b": "vf150-mossad",
+      "type": "Primer director 1949–1952",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-1949-ben",
+      "a": "vf150-david-ben-gurion",
+      "b": "vf150-creacion1949",
+      "type": "Encargó crear estructura 1949",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-1949-mossad",
+      "a": "vf150-creacion1949",
+      "b": "vf150-mossad",
+      "type": "Fundación por acto de 1949",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.worldjewishcongress.org/en/news/this-week-in-jewish-history--israeli-prime-minister-david-ben-gurion-creates-the-mossad",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-1951-shiloah",
+      "a": "vf150-reuven-shiloah",
+      "b": "vf150-reorganizacion1951",
+      "type": "Consolidación operativa 1951",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://jewishvirtuallibrary.org/jsource/Society_%26_Culture/mossad.html",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-1951-mossad",
+      "a": "vf150-reorganizacion1951",
+      "b": "vf150-mossad",
+      "type": "Ampliación de competencias exteriores",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://jewishvirtuallibrary.org/jsource/Society_%26_Culture/mossad.html",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-tobianski-beeri",
+      "a": "vf150-isser-beeri",
+      "b": "vf150-tobianski1948",
+      "type": "Ordenó juicio sumario en inteligencia militar",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.nli.org.il/en/a-topic/987007299897205171",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-tobianski-victim",
+      "a": "vf150-meir-tobianski",
+      "b": "vf150-tobianski1948",
+      "type": "Ejecutado el 30-06-1948",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.nli.org.il/en/a-topic/987007299897205171",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-tobianski-cleared",
+      "a": "vf150-meir-tobianski",
+      "b": "vf150-exoneracion1949",
+      "type": "Exonerado en 1949",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.jta.org/archive/court-proceedings-begin-against-prosecutor-responsible-for-tobianskys-execution",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-1948-vs1949",
+      "a": "vf150-tobianski1948",
+      "b": "vf150-creacion1949",
+      "type": "Suceso anterior a fundación; causalidad no establecida",
+      "confidence": "documentado",
+      "claimStatus": "cronologia_documentada_sin_nexo_causal",
+      "source": "https://www.nli.org.il/en/a-topic/987007299897205171",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-sayanim-episode",
+      "a": "vf150-eric-frattini",
+      "b": "vf150-sayanim-generalizacion",
+      "type": "Alegación sobre comunidad judía sin datos poblacionales",
+      "confidence": "indicio",
+      "claimStatus": "declaracion_no_demostrada",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-sayanim-mossad",
+      "a": "vf150-sayanim-generalizacion",
+      "b": "vf150-mossad",
+      "type": "Supuesto contacto de colaboradores, no de colectividad",
+      "confidence": "indicio",
+      "claimStatus": "afirmacion_sin_prueba_generalizable",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-secrettrial-episode",
+      "a": "vf150-eric-frattini",
+      "b": "vf150-juicio-secreto-mossad",
+      "type": "Tribunal secreto atribuido al Mossad",
+      "confidence": "indicio",
+      "claimStatus": "procedimiento_no_documentado",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-secrettrial-legal",
+      "a": "vf150-hcj769-2002",
+      "b": "vf150-juicio-secreto-mossad",
+      "type": "Control judicial general no prueba tribunal previo secreto",
+      "confidence": "documentado",
+      "claimStatus": "contraste_juridico_documentado",
+      "source": "https://versa.cardozo.yu.edu/opinions/public-committee-against-torture-v-government",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-court-context",
+      "a": "vf150-hcj769-2002",
+      "b": "vf150-mossad",
+      "type": "Límites de extrapolación: sentencia centrada en operaciones de seguridad",
+      "confidence": "documentado",
+      "claimStatus": "contexto_juridico_no_procedimiento_mossad",
+      "source": "https://versa.cardozo.yu.edu/opinions/public-committee-against-torture-v-government",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-norway-case",
+      "a": "vf150-operacion-lillehammer1973",
+      "b": "vf150-ahmed-bouchiki",
+      "type": "Asesinato por error de identidad",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-norway-salameh",
+      "a": "vf150-operacion-lillehammer1973",
+      "b": "vf150-ali-hassan-salameh",
+      "type": "Objetivo supuesto confundido con víctima",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-norway-gov",
+      "a": "vf150-comision-noruega2000",
+      "b": "vf150-operacion-lillehammer1973",
+      "type": "Comisión estatal investigó el crimen",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.regjeringen.no/no/dokumenter/nou-2000-6/id142668/?ch=3",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-mashal-mossad",
+      "a": "vf150-meshaal1997",
+      "b": "vf150-mossad",
+      "type": "Atentado fallido en Amán 1997",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.clintonlibrary.gov/research/archives/finding-aids/khalid-mishal",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-mashal-person",
+      "a": "vf150-khaled-meshaal",
+      "b": "vf150-meshaal1997",
+      "type": "Objetivo de envenenamiento",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.clintonlibrary.gov/research/archives/finding-aids/khalid-mishal",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-mashal-king",
+      "a": "vf150-hussein-jordania",
+      "b": "vf150-meshaal1997",
+      "type": "Reclamó antídoto tras atentado",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.clintonlibrary.gov/research/archives/finding-aids/khalid-mishal",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-mashal-yatom",
+      "a": "vf150-danny-yatom",
+      "b": "vf150-meshaal1997",
+      "type": "Dirigía el Mossad, no consta entrega personal",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_con_limites",
+      "source": "https://www.clintonlibrary.gov/research/archives/finding-aids/khalid-mishal",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-gofman-appoint",
+      "a": "vf150-roman-gofman",
+      "b": "vf150-gofman2026",
+      "type": "Asumió dirección 2-6-2026",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.gov.il/BlobFolder/news/spoke-mosad120426/en/Gov_Dec_roman120426.pdf",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-gofman-agency",
+      "a": "vf150-gofman2026",
+      "b": "vf150-mossad",
+      "type": "Nuevo director en 2026",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.gov.il/BlobFolder/news/spoke-mosad120426/en/Gov_Dec_roman120426.pdf",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-gofman-barnea",
+      "a": "vf150-david-barnea",
+      "b": "vf150-gofman2026",
+      "type": "Relevo de dirección",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado",
+      "source": "https://www.gov.il/BlobFolder/news/spoke-mosad120426/en/Gov_Dec_roman120426.pdf",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-red-video",
+      "a": "vf150-eric-frattini",
+      "b": "vf150-alegacion-boda-roja2026",
+      "type": "Cifra y operación en marzo 2026 cuestionadas",
+      "confidence": "indicio",
+      "claimStatus": "alegacion_del_podcast_sin_corroborrar",
+      "source": "https://www.youtube.com/watch?v=REHYGPW0c8k",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-red-history",
+      "a": "vf150-boda-roja2025",
+      "b": "vf150-alegacion-boda-roja2026",
+      "type": "Boda Roja documentada como 2025 / mandos",
+      "confidence": "documentado",
+      "claimStatus": "cronologia_incompatible",
+      "source": "https://www.timesofisrael.com/the-stars-aligned-why-israel-set-out-for-a-war-against-iran-and-what-it-achieved/amp/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-red-narnia",
+      "a": "vf150-boda-roja2025",
+      "b": "vf150-narnia2025",
+      "type": "Operaciones distintas en junio 2025",
+      "confidence": "documentado",
+      "claimStatus": "distincion_operativa_documentada",
+      "source": "https://www.timesofisrael.com/the-stars-aligned-why-israel-set-out-for-a-war-against-iran-and-what-it-achieved/amp/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-narnia-claim",
+      "a": "vf150-narnia2025",
+      "b": "vf150-alegacion-boda-roja2026",
+      "type": "Narnia: nueve científicos según FDI, no 26 confirmados",
+      "confidence": "documentado",
+      "claimStatus": "cifra_del_video_no_corroborrada",
+      "source": "https://www.idf.il/en/mini-sites/idf-press-releases-israel-at-war/june-25-pr/the-idf-eliminated-nine-senior-scientists-and-experts-in-the-iranian-nuclear-project/",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-stuxnet-report",
+      "a": "vf150-stuxnet-no-atribucion",
+      "b": "vf150-unidad-8200",
+      "type": "Participación atribuida, no confirmación institucional",
+      "confidence": "documentado",
+      "claimStatus": "atribucion_institucional_no_reconocida",
+      "source": "https://isc.independent.gov.uk/wp-content/uploads/2025/07/Intelligence-and-Security-Committee-of-Parliament-Iran.pdf",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-stuxnet-mossad",
+      "a": "vf150-stuxnet-no-atribucion",
+      "b": "vf150-mossad",
+      "type": "Atribución no confirmada formalmente",
+      "confidence": "indicio",
+      "claimStatus": "atribucion_periodistica",
+      "source": "https://isc.independent.gov.uk/wp-content/uploads/2025/07/Intelligence-and-Security-Committee-of-Parliament-Iran.pdf",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-club-mossad",
+      "a": "vf150-club-berna",
+      "b": "vf150-mossad",
+      "type": "Colaboración de agencias europeas en operaciones",
+      "confidence": "documentado",
+      "claimStatus": "investigacion_archivistica_publicada",
+      "source": "https://academic.oup.com/ehr/article/140/604-605/777/8140798",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
+    },
+    {
+      "id": "vf150-f69-r3-club-europe",
+      "a": "vf150-club-berna",
+      "b": "vf150-mi6",
+      "type": "Club de Berna reúne agencias europeas; no implica operación puntual MI6 aquí",
+      "confidence": "documentado",
+      "claimStatus": "contexto_archivistico",
+      "source": "https://academic.oup.com/ehr/article/140/604-605/777/8140798",
+      "episodeId": "vaquero-150-frattini-2026-09-28",
+      "note": "Contraste documental F69, 18-11-2026. No se convierte relato del invitado en hecho probado ni se atribuye colaboración de un servicio a una colectividad.",
+      "podcastNotes": []
     }
   ]
 };
