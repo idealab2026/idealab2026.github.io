@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,16,26,38,16],expectedEdges=[20,20,32,47,19],
+const expectedNodes=[16,16,30,38,16],expectedEdges=[20,20,38,47,19],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===75,
+assert(totalNotes===78&&totalExternal===81,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -104,7 +104,7 @@ assert(reg.sourceCatalog.entries.find(e=>e.order===70)?.analysisCoverage.percent
  "El porcentaje editorial F70 debe reflejar la segunda revisión sin sugerir audio completo");
 
 const f72Iran=ctx.window.IDEA_TELARANA_F72_REVIEW;
-assert(f72Iran.metadata.independentDocumentaryRelations===17&&f72Iran.metadata.verifiedMinuteReferences===0,
+assert(f72Iran.metadata.independentDocumentaryRelations===23&&f72Iran.metadata.verifiedMinuteReferences===0,
  "F72: el contraste institucional no equivale a minutos de audio verificados");
 for(const eid of ["f72-doc-netanyahu-presentacion-archivo-2018","f72-doc-oiea-evaluacion-2015",
  "f72-doc-oiea-comunicado-mayo-2018","f72-doc-oiea-reitera-2015-en-2018"]){
@@ -202,7 +202,7 @@ assert(c73.edges.find(x=>x.id==="f73-doc-haniyeh-muerte-2024")?.claimStatus==="h
  "F73: la muerte de Haniyeh no está documentada");
 assert(!c73.edges.some(x=>x.a==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.b)||x.b==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.a)),
  "F73: no crear aristas de Mossad a asesinatos por inferencias");
-assert(c72.metadata.independentDocumentaryRelations===17&&c73.metadata.independentDocumentaryRelations===30,
+assert(c72.metadata.independentDocumentaryRelations===23&&c73.metadata.independentDocumentaryRelations===30,
  "F72/F73: metadatos de relaciones documentales desincronizados");
 
 
@@ -233,6 +233,38 @@ assert(iaea2021&&iaea2021.note.includes("24/05/2021")&&iaea2021.note.includes("N
  "F72: la observación del OIEA de mayo de 2021 no debe tratarse como certificación del sabotaje");
 assert(natanzF72.nodes.find(x=>x.id==="f72-natanz-incendio-2020")?.name!==natanzF72.nodes.find(x=>x.id==="f72-natanz-apagon-2021")?.name,
  "F72: se están confundiendo los incidentes de julio 2020 y abril 2021");
+
+
+// F72: los testimonios de dos fechas no son la misma observación,
+// una admisión de Cohen en 2026 supera la atribución anónima de 2021.
+const natanzCohen=ctx.window.IDEA_TELARANA_F72_REVIEW;
+for(const id of [
+ "f72-quote-cohen-lepoint-2026","f72-quote-lepoint-apagon-2021",
+ "f72-quote-lepoint-mossad-2026","f72-doc-evolucion-cohen-2021-2026"
+]){
+ const e=natanzCohen.edges.find(x=>x.id===id);
+ assert(e&&e.claimStatus==="hecho_documentado_por_portavoz_citado"&&
+  e.confidence==="documentado"&&e.source.startsWith("https://www.lepoint.fr/"),
+  "F72: nueva declaración de Cohen incorrectamente clasificada: "+id);
+}
+for(const id of ["f72-quote-zarif-iranintl-2025","f72-quote-iranintl-plataforma-sin-fecha"]){
+ const e=natanzCohen.edges.find(x=>x.id===id);
+ assert(e&&e.claimStatus==="hecho_documentado_por_portavoz_citado"&&
+  e.source.includes("iranintl.com")&&/sin|fecha|ubicaci[oó]n|instalaci[oó]n/i.test(e.note),
+  "F72: declaración de Zarif interpretada como prueba del mismo sabotaje: "+id);
+}
+assert(!natanzCohen.edges.some(x=>
+ ["f72-mohammad-javad-zarif","f72-iranintl-zarif-2025","f72-plataforma-zarif-sin-fecha"].includes(x.a)&&
+ ["f72-natanz-apagon-2021","f72-natanz-incendio-2020"].includes(x.b)||
+ ["f72-mohammad-javad-zarif","f72-iranintl-zarif-2025","f72-plataforma-zarif-sin-fecha"].includes(x.b)&&
+ ["f72-natanz-apagon-2021","f72-natanz-incendio-2020"].includes(x.a)),
+ "F72: no vincular la plataforma indeterminada de Zarif a Natanz 2020/2021");
+assert(natanzCohen.nodes.find(n=>n.id==="f72-lepoint-cohen-2026")?.note.includes("NO queda demostrada")&&
+ natanzCohen.nodes.find(n=>n.id==="f72-natanz-apagon-2021")?.note.includes("CONTRASTE POSTERIOR")&&
+ natanzCohen.nodes.find(n=>n.id==="f72-yossi-cohen")?.note.includes("10/06/2021"),
+ "F72: omisión del límite probatorio, confesión posterior o cronología");
+assert(natanzCohen.metadata.verifiedMinuteReferences===0&&natanzCohen.metadata.transcriptAudioMatched===false,
+ "F72: contrastar un artículo no implica cotejo del audio");
 
 const f72=ctx.window.IDEA_TELARANA_F72_REVIEW, f73=ctx.window.IDEA_TELARANA_F73_REVIEW;
 assert(f72.metadata.crossSourceLinks.includes(69)&&f72.metadata.crossSourceLinks.includes(73), "F72 sin contraste cruzado");
