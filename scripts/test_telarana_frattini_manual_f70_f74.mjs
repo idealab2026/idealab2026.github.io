@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[73,28,30,38,28],expectedEdges=[106,36,38,47,35],
+const expectedNodes=[82,28,30,38,28],expectedEdges=[128,36,38,47,35],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===86&&totalExternal===170,
+assert(totalNotes===86&&totalExternal===191,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -81,9 +81,9 @@ assert(history72.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),
   "F73 requiere vínculo cruzado con el hito F72, no duplicación");
 
 const f70=ctx.window.IDEA_TELARANA_F70_REVIEW;
-assert(f70.metadata.explicitContradictionReviews===10&&f70.metadata.transcriptAudioMatched===false,
+assert(f70.metadata.explicitContradictionReviews===12&&f70.metadata.transcriptAudioMatched===false,
  "F70: conservar tres contrastes documentales sin atribuir escucha del audio");
-assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===47,
+assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===64,
  "F70: diez relaciones con evidencia oficial, no confundir las menciones");
 // F70 cuarta pasada: fuente judicial primaria y separación de responsabilidades.
 for(const id of ["f70-tribunal-vaticano","f70-sentencia-gabriele-2012",
@@ -102,7 +102,7 @@ for(const id of ["f70-doc-tribunal-gabriele-fallo","f70-doc-gabriele-condena",
 }
 assert(f70.nodes.find(x=>x.id==="f70-sentencia-gabriele-2012")?.note.includes("REDUJO")&&
  f70.nodes.find(x=>x.id==="f70-sentencia-sciarpelletti-2012")?.note.includes("suspendida")&&
- f70.metadata.independentDocumentaryRelations===69&&
+ f70.metadata.independentDocumentaryRelations===90&&
  f70.metadata.transcriptAudioMatched===false&&f70.metadata.verifiedMinuteReferences===0,
  "F70: no confundir pena inicial, pena final, suspensión y escucha de audio");
 // Quinta revisión F70: no confundir 224 millones sin moneda del pódcast con pagos de 1984 en USD.
@@ -154,7 +154,7 @@ for(const id of ["f70-stmt-apelacion-becciu-2026","f70-stmt-apelacion-marz-oct20
   "F70: el estado procesal de 2026 se eleva indebidamente a sentencia definitiva "+id);
 }
 assert(f70.edges.find(e=>e.id==="f70-alleg-becciu-tribunal-uk")?.claimStatus==="alegacion_no_verificada"&&
- f70.metadata.independentDocumentaryRelations===69&&f70.metadata.explicitContradictionReviews===10&&
+ f70.metadata.independentDocumentaryRelations===90&&f70.metadata.explicitContradictionReviews===12&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: no atribuir sentencia penal inglesa ni certificar audio");
 // F70 séptima revisión: tres alegaciones de Óbolo vs autodeclaración financiera de fuentes primarias.
@@ -196,7 +196,7 @@ for(const id of ["f70-stmt-obolo-2024-mision","f70-stmt-obolo-2025-mision",
  assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado",
  "F70: autodeclaración del Óbolo o prefecto confundida con auditoría independiente: "+id);
 }
-assert(f70.metadata.independentDocumentaryRelations===69&&
+assert(f70.metadata.independentDocumentaryRelations===90&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: no se ha escuchado audio ni acreditado recepción del 50 por ciento");
 // F70 octava revisión: separar recibo individual, contabilidad y diligencia AML.
@@ -235,8 +235,8 @@ for(const id of ["f70-stmt-portal-registro-donante","f70-stmt-asif-r5-obolo",
  assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado",
  "F70: declaración institucional convertida indebidamente en auditoría "+id);
 }
-assert(f70.metadata.independentDocumentaryRelations===69&&
- f70.metadata.explicitContradictionReviews===10&&
+assert(f70.metadata.independentDocumentaryRelations===90&&
+ f70.metadata.explicitContradictionReviews===12&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: anotación textual no acredita escucha del audio");
 // F70 novena revisión: institución denunciante, elogio público, visita y motivación son proposiciones diferentes.
@@ -278,7 +278,7 @@ for(const id of ["f70-alleg-maciel-donativos","f70-alleg-maciel-motivo-jp2",
  "F70: falta mantener el móvil financiero como alegación "+id);
 }
 assert(f70.edges.find(x=>x.id==="f70-mention-maciel-episodio")?.claimStatus==="mencion_temporizada_sin_cotejo_audio"&&
- f70.metadata.independentDocumentaryRelations===69&&f70.metadata.explicitContradictionReviews===10&&
+ f70.metadata.independentDocumentaryRelations===90&&f70.metadata.explicitContradictionReviews===12&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: ninguna cita se ha validado mediante audio");
 // F70 décima revisión: la atribución de un relato no acredita pago, soborno ni conocimiento del papa.
@@ -298,7 +298,7 @@ assert(berryDoc?.source.includes("ncronline.org")&&
  canon1302?.source.includes("vatican.va/archive/cod-iuris-canonici/")&&
  canon1302.note.includes("NO constan hechos de aplicación individual")&&
  berryWitness?.note.includes("no prueba")&&
- f70.metadata.independentDocumentaryRelations===69,
+ f70.metadata.independentDocumentaryRelations===90,
  "F70: faltan investigación original, canon 1302 o cautelas probatorias");
 for(const [name,keyword] of berryPayments){
  const n=f70.nodes.find(x=>x.id==="f70-berry-afirm-"+name);
@@ -320,6 +320,40 @@ assert(f70.edges.find(e=>e.id==="f70-doc-canon-1302-reportaje")?.claimStatus==="
  f70.edges.find(e=>e.id==="f70-stmt-berry-cafardi-criterio")?.claimStatus==="hecho_documentado_por_portavoz_citado"&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: la norma canónica y existencia del reportaje no verifican pagos reales ni audio");
+// F70 undécima revisión: sentencia sobre donativos y limitaciones del fallo, no sobornos probados.
+const n70=id=>f70.nodes.find(n=>n.id===id),e70=id=>f70.edges.find(e=>e.id===id);
+const mee=n70("f70-gabrielle-mee"),court=n70("f70-fallo-dauray-2015"),claim90=n70("f70-berry-afirm-martinez-90k-2013"),ncr13=n70("f70-ncr-berry-2013");
+assert(mee?.source.includes("courts.ri.gov")&&mee.note.includes("60 M USD")&&
+ court?.note.includes("FALTA DE LEGITIMACIÓN")&&
+ court?.note.includes("1,21 M USD")&&court?.note.includes("590.000 USD")&&
+ court?.note.includes("400.000 USD")&&
+ ncr13?.source.includes("ncronline.org")&&claim90?.note.includes("NO documento bancario")&&
+ n70("f70-martinez-somalo")?.note.includes("21/01/1992")&&
+ n70("f70-dziwisz")?.note.includes("24/03/2006"),
+ "F70: faltan fuentes de Dauray, 1992–2004, 1997 no cardenal o moneda/fechas de transacciones");
+for(const id of ["f70-doc-supremo-fallo-dauray","f70-doc-fallo-dauray-legitimacion",
+ "f70-doc-fallo-mee-benefactora","f70-doc-dauray-litigo-mee",
+ "f70-doc-caso-litigio-legionarios","f70-doc-mee-donacion-inicial",
+ "f70-doc-mee-donacion-2006","f70-doc-mee-donacion-2007",
+ "f70-doc-mee-transferencia-2008","f70-doc-fleet-fiducia-mee",
+ "f70-doc-thornwood-legionarios","f70-doc-fleet-thornwood-financiacion",
+ "f70-doc-supremo-caso-dauray"]){
+ const e=e70(id);
+ assert(e?.claimStatus==="hecho_verificado_independiente"&&e.source===court.source,
+  "F70: movimiento o resolución judicial sin respaldo documental: "+id);
+}
+for(const id of ["f70-stmt-dauray-60m-alleg","f70-stmt-berry-2013-martinez-90k",
+ "f70-stmt-berry-2013-martinez-2010-link","f70-stmt-berry-2013-fichter"]){
+ assert(e70(id)?.claimStatus==="hecho_documentado_por_portavoz_citado",
+  "F70: alegación judicial o periodística tratada como transacción: "+id);
+}
+assert(e70("f70-alleg-martinez-90k-solo-testimonio")?.claimStatus==="alegacion_no_verificada"&&
+ n70("f70-fleet-bank-of-america")?.note.includes("NO es el IOR")&&
+ n70("f70-thornwood-legionarios")?.note.includes("25 M USD")&&
+ f70.metadata.independentDocumentaryRelations===90&&
+ f70.metadata.explicitContradictionReviews===12&&f70.metadata.verifiedMinuteReferences===0&&
+ !f70.metadata.transcriptAudioMatched,
+ "F70: no inferir fraude de datos contables, no dar audio como verificado");
 for(const e of ["f70-doc-archive-access","f70-doc-archive-rename-2019","f70-doc-pio-xii-open-2020",
  "f70-doc-francisco-praedicate","f70-doc-praedicate-curia","f70-doc-ior-2025-report",
  "f70-doc-moneyval-2024","f70-doc-asif-ior-2025","f70-doc-apelacion-fondos-2026"]){
