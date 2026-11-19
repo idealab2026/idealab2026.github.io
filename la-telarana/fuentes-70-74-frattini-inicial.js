@@ -630,9 +630,9 @@ window.IDEA_TELARANA_F71_REVIEW = {
     "lastMarker": "02:14:02",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "cuarta_revision_gibbels_dosis_y_wade_pervitin_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast.",
-    "independentDocumentaryRelations": 11,
+    "reviewStage": "quinta_revision_anexo_xvi_cir4_fuente_primaria_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio.",
+    "independentDocumentaryRelations": 14,
     "crossSourceLinks": [
       74,
       13,
@@ -1041,6 +1041,32 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "x": 12710,
       "y": 5840,
       "podcastNotes": []
+    },
+    {
+      "id": "f71-cir4-inteligencia-eeuu",
+      "name": "CIR n.º 4 · Hitler as Seen by His Doctors",
+      "kind": "Documento",
+      "subtitle": "Informe de interrogatorios médicos de las fuerzas estadounidenses tras la guerra; copia desclasificada custodiada por la CIA.",
+      "note": "Documento histórico de inteligencia militar estadounidense: CIR n.º 4, «Hitler as Seen by His Doctors». El informe identifica a Theodor Morell como principal fuente e incorpora aportaciones de otros facultativos. La propia introducción advierte que mezcla memoria y papeles del médico, y pide especial cautela con sus declaraciones sobre su persona. El anexo XVI contiene la traducción de notas clínicas de Morell con una referencia a un ECG fechado el 4 de mayo de 1944. La copia digital se conserva en la sala de lectura de la CIA; ser una fuente primaria de declaraciones no demuestra que todas sean correctas.",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12980,
+      "y": 5840,
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-vitamultin",
+      "name": "Vitamultin (preparado de Morell)",
+      "kind": "Fármaco histórico",
+      "subtitle": "Comprimidos registrados en las notas de Morell; su composición no queda determinada por el informe estadounidense.",
+      "note": "El anexo XVI del informe estadounidense CIR n.º 4 transcribe notas de Morell que incluyen «Vitamultin tablets, 4–6 a day, at meals» asociadas a la revisión fechada el 4 de mayo de 1944. El documento permite acreditar una pauta registrada, no el número realmente ingerido ni la composición química de cada lote. La historia del supuesto análisis que habría hallado Pervitin se atribuye a Schenck en una nota bibliográfica de Owen Wade (2003); el análisis químico original no ha sido examinado. No deducir dependencia de metanfetamina a partir de esta anotación.",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 13230,
+      "y": 5840,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1368,6 +1394,42 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "source": "https://journals.sagepub.com/doi/abs/10.1177/096777200301100216",
       "episodeId": "idealab-f71-frattini",
       "note": "Owen Wade (2003), nota 5, refiere el relato de Schenck sobre un análisis de tabletas Vitamultin que habría detectado Pervitin. No implica que Hitler ingiriera regularmente esas tabletas, ni acredita dosis, intoxicación crónica, dependencia o causa de decisiones bélicas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-cir4-morell",
+      "a": "f71-cir4-inteligencia-eeuu",
+      "b": "f71-morell",
+      "type": "Informe de interrogatorio de Morell; sus autores advierten sobre sesgos de memoria",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La copia de CIR n.º 4 es un documento archivístico desclasificado. Su introducción identifica a Morell como fuente principal y distingue recuerdos de documentación anexa. La existencia del informe y sus advertencias sí son verificables; no se certifica la veracidad de cada respuesta.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-stmt-cir4-vitamultin",
+      "a": "f71-cir4-inteligencia-eeuu",
+      "b": "f71-vitamultin",
+      "type": "Anexo XVI: traducción de nota con pauta de 4–6 comprimidos diarios",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La traducción del anexo XVI, asociada al ECG del 4 de mayo de 1944, documenta que Morell anotó «Vitamultin tablets, 4–6 a day, at meals». Es una pauta atribuida al médico, no análisis químico de los comprimidos ni corroboración independiente de ingesta.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-stmt-vitamultin-hitler",
+      "a": "f71-vitamultin",
+      "b": "f71-hitler",
+      "type": "Pauta terapéutica atribuida al médico, no confirmación de ingestión ni composición",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "CIR n.º 4, anexo XVI: nota clínica relativa a Hitler registra administración oral indicada de Vitamultin 4–6 comprimidos/día. No se sigue de ello que cada dosis fuese efectivamente ingerida o que los comprimidos contuviesen metanfetamina.",
       "podcastNotes": []
     }
   ]
@@ -3849,9 +3911,9 @@ window.IDEA_TELARANA_F74_REVIEW = {
     "lastMarker": "02:02:30",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "cuarta_revision_gibbels_dosis_y_wade_pervitin_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast.",
-    "independentDocumentaryRelations": 11,
+    "reviewStage": "quinta_revision_anexo_xvi_cir4_fuente_primaria_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio.",
+    "independentDocumentaryRelations": 14,
     "crossSourceLinks": [
       71,
       70,
@@ -4251,6 +4313,32 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "x": 12970,
       "y": 5950,
       "podcastNotes": []
+    },
+    {
+      "id": "f74-cir4-inteligencia-eeuu",
+      "name": "CIR n.º 4 · Hitler as Seen by His Doctors",
+      "kind": "Documento",
+      "subtitle": "Informe de interrogatorios médicos de las fuerzas estadounidenses tras la guerra; copia desclasificada custodiada por la CIA.",
+      "note": "Documento histórico de inteligencia militar estadounidense: CIR n.º 4, «Hitler as Seen by His Doctors». El informe identifica a Theodor Morell como principal fuente e incorpora aportaciones de otros facultativos. La propia introducción advierte que mezcla memoria y papeles del médico, y pide especial cautela con sus declaraciones sobre su persona. El anexo XVI contiene la traducción de notas clínicas de Morell con una referencia a un ECG fechado el 4 de mayo de 1944. La copia digital se conserva en la sala de lectura de la CIA; ser una fuente primaria de declaraciones no demuestra que todas sean correctas.",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 13240,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-vitamultin",
+      "name": "Vitamultin (preparado de Morell)",
+      "kind": "Fármaco histórico",
+      "subtitle": "Comprimidos registrados en las notas de Morell; su composición no queda determinada por el informe estadounidense.",
+      "note": "El anexo XVI del informe estadounidense CIR n.º 4 transcribe notas de Morell que incluyen «Vitamultin tablets, 4–6 a day, at meals» asociadas a la revisión fechada el 4 de mayo de 1944. El documento permite acreditar una pauta registrada, no el número realmente ingerido ni la composición química de cada lote. La historia del supuesto análisis que habría hallado Pervitin se atribuye a Schenck en una nota bibliográfica de Owen Wade (2003); el análisis químico original no ha sido examinado. No deducir dependencia de metanfetamina a partir de esta anotación.",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 13490,
+      "y": 5950,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -4556,6 +4644,42 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "source": "https://journals.sagepub.com/doi/abs/10.1177/096777200301100216",
       "episodeId": "idealab-f74-frattini",
       "note": "Owen Wade (2003), nota 5, refiere el relato de Schenck sobre un análisis de tabletas Vitamultin que habría detectado Pervitin. No implica que Hitler ingiriera regularmente esas tabletas, ni acredita dosis, intoxicación crónica, dependencia o causa de decisiones bélicas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-cir4-morell",
+      "a": "f74-cir4-inteligencia-eeuu",
+      "b": "f74-morell",
+      "type": "Informe de interrogatorio de Morell; sus autores advierten sobre sesgos de memoria",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La copia de CIR n.º 4 es un documento archivístico desclasificado. Su introducción identifica a Morell como fuente principal y distingue recuerdos de documentación anexa. La existencia del informe y sus advertencias sí son verificables; no se certifica la veracidad de cada respuesta.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-stmt-cir4-vitamultin",
+      "a": "f74-cir4-inteligencia-eeuu",
+      "b": "f74-vitamultin",
+      "type": "Anexo XVI: traducción de nota con pauta de 4–6 comprimidos diarios",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La traducción del anexo XVI, asociada al ECG del 4 de mayo de 1944, documenta que Morell anotó «Vitamultin tablets, 4–6 a day, at meals». Es una pauta atribuida al médico, no análisis químico de los comprimidos ni corroboración independiente de ingesta.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-stmt-vitamultin-hitler",
+      "a": "f74-vitamultin",
+      "b": "f74-hitler",
+      "type": "Pauta terapéutica atribuida al médico, no confirmación de ingestión ni composición",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "CIR n.º 4, anexo XVI: nota clínica relativa a Hitler registra administración oral indicada de Vitamultin 4–6 comprimidos/día. No se sigue de ello que cada dosis fuese efectivamente ingerida o que los comprimidos contuviesen metanfetamina.",
       "podcastNotes": []
     }
   ]

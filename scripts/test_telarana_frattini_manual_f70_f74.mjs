@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,18,30,38,18],expectedEdges=[20,23,38,47,22],
+const expectedNodes=[16,20,30,38,20],expectedEdges=[20,26,38,47,25],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===85,
+assert(totalNotes===78&&totalExternal===91,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -328,8 +328,8 @@ assert(f71.metadata.explicitContradictionReviews===2&&f74.metadata.explicitContr
  "F71/F74: faltan contrastes explícitos de afirmaciones sensibles");
 assert(f71.metadata.transcriptAudioMatched===false&&f74.metadata.transcriptAudioMatched===false,
  "Los textos no se han escuchado aún: cero validación del audio");
-assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===11&&
- f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===11,
+assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===12&&
+ f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===12,
  "Falta contrastar polifarmacia, más de un estudio dental y fin de Hitler");
 for(const id of ["f71-doc-morell-hitler","f71-doc-diarios-medicos","f71-doc-pervitin-wehrmacht",
  "f71-doc-trevor-hitler","f71-doc-dental-hitler","f71-doc-blaschke-hitler",
@@ -360,6 +360,27 @@ for(const [tag,module] of [["f71",f71],["f74",f74]]){
   a?.claimStatus==="alegacion_no_verificada"&&a.confidence==="hipotesis"&&
   /no implica/i.test(a.note),
   tag+": Vitamultin/Pervitin no debe elevarse a prueba de ingesta o adicción");
+}
+// Quinta revisión: anexo clínico de 1944, prescripción documentada no = ingesta ni composición probada.
+for(const [tag,mod] of [["f71",f71],["f74",f74]]){
+ const cir=mod.nodes.find(n=>n.id===tag+"-cir4-inteligencia-eeuu");
+ const vita=mod.nodes.find(n=>n.id===tag+"-vitamultin");
+ assert(cir&&cir.source.includes("cia.gov/readingroom/docs/")&&
+  /cautela|cautel/i.test(cir.note)&&mod.metadata.independentDocumentaryRelations===14,
+  tag+": CIR4 sin procedencia o advertencia crítica");
+ assert(vita?.note.includes("4–6")&&vita.note.includes("no queda")===false&&
+  vita.note.includes("no ha sido examinado"),
+  tag+": Vitamultin debe distinguir pauta original de análisis indirecto");
+ for(const suffix of ["stmt-cir4-vitamultin","stmt-vitamultin-hitler"]){
+  const e=mod.edges.find(x=>x.id===tag+"-"+suffix);
+  assert(e&&e.claimStatus==="hecho_documentado_por_portavoz_citado"&&
+   e.confidence==="documentado"&&e.source===cir.source&&/no /i.test(e.note),
+   tag+": el documento no acredita ingesta ni composición: "+suffix);
+ }
+ const source=mod.edges.find(x=>x.id===tag+"-doc-cir4-morell");
+ assert(source?.claimStatus==="hecho_verificado_independiente"&&
+  mod.metadata.verifiedMinuteReferences===0&&mod.metadata.transcriptAudioMatched===false,
+  tag+": la existencia del documento no confirma la entrevista en audio");
 }
 for(const id of ["f71-mention-fuga","f74-mention-fuga"]){
  const e=[...f71.edges,...f74.edges].find(x=>x.id===id);
