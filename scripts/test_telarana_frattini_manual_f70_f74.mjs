@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,16,20,32,16],expectedEdges=[20,20,22,42,19],
+const expectedNodes=[16,16,22,38,16],expectedEdges=[20,20,26,47,19],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===62,
+assert(totalNotes===78&&totalExternal===71,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -118,7 +118,7 @@ assert(f72Iran.nodes.find(n=>n.id==="f72-informe-oiea-2015")?.note.includes("201
 
 
 const f73Iran=ctx.window.IDEA_TELARANA_F73_REVIEW;
-assert(f73Iran.metadata.independentDocumentaryRelations===25,
+assert(f73Iran.metadata.independentDocumentaryRelations===30,
  "F73: recuento documental no conciliado");
 for(const id of ["f73-doc-israel-ataques-jun2025","f73-doc-ataques-natanz-2025",
  "f73-doc-oiea-acta-onu-2025","f73-doc-acta-natanz-2025"]){
@@ -148,7 +148,7 @@ for(const [a,b] of [["f72-oiea","f73-oiea"],["f72-natanz","f73-natanz"]]){
 // Sexta revisión: Midnight Hammer de EE. UU. no es sinónimo de la
 // operación israelí del 13/06 ni valida atribuciones al Mossad.
 const f73June=ctx.window.IDEA_TELARANA_F73_REVIEW;
-assert(f73June.metadata.independentDocumentaryRelations===25&&f73June.metadata.verifiedMinuteReferences===0,
+assert(f73June.metadata.independentDocumentaryRelations===30&&f73June.metadata.verifiedMinuteReferences===0,
  "F73: ampliar respaldo documental no equivale a audio verificado");
 const statements=[
  "f73-doc-eeuu-midnight-hammer","f73-doc-midnight-fordow","f73-doc-midnight-natanz",
@@ -174,6 +174,35 @@ assert(report?.note.includes("440,9 kg")&&report.note.includes("13/06/2025")&&
 assert(f73June.nodes.find(x=>x.id==="f73-midnight-hammer")?.note.includes("distinta")&&
  f73June.nodes.find(x=>x.id==="f73-isfahan")?.note.includes("medios de ataque"),
  "F73: no se separan fecha, mando militar y armamento entre Fordow/Natanz/Isfahán");
+
+
+// Auditoría: una admisión de responsabilidad estatal no identifica la unidad que ejecutó
+// el asesinato, y una acusación iraní tampoco.
+const c72=ctx.window.IDEA_TELARANA_F72_REVIEW,c73=ctx.window.IDEA_TELARANA_F73_REVIEW;
+for(const id of ["f72-doc-cohen-entrevista-2021","f72-doc-entrevista-archivo-2018","f72-doc-mossad-archivo-relato-cohen"]){
+ const e=c72.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado"&&e.confidence==="documentado"&&e.source.includes("timesofisrael.com"),
+  "F72: relato del exdirector de Mossad convertido en hecho independiente: "+id);
+}
+assert(c72.edges.find(x=>x.id==="f72-doc-yossi-cohen-direccion")?.claimStatus==="hecho_verificado_independiente",
+ "F72: cargo institucional de Cohen no documentado");
+assert(c72.nodes.find(x=>x.id==="f72-archivo")?.note.includes("10/06/2021"),
+ "F72: no se distingue archivo presentado en abril 2018 de descripción pública de Cohen de 2021");
+assert(c73.edges.find(x=>x.id==="f73-doc-fakhrizadeh-muerte-2020")?.claimStatus==="hecho_verificado_independiente",
+ "F73: el asesinato de Fakhrizadeh no está documentado");
+assert(c73.nodes.find(x=>x.id==="f73-mohsen-fakhrizadeh")?.note.includes("no se demostró públicamente"),
+ "F73: se ha omitido la distinción entre muerte documentada y atribución iraní");
+for(const id of ["f73-doc-katz-reuters-haniyeh","f73-doc-reuters-katz-asesinato","f73-doc-israel-katz-declaracion"]){
+ const e=c73.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado"&&e.source.includes("reuters.com")&&!/Mossad (llev[oó] a cabo|ejecut[oó])/.test(e.note),
+  "F73: admisión estatal sobre Haniyeh interpretada como ejecución por Mossad: "+id);
+}
+assert(c73.edges.find(x=>x.id==="f73-doc-haniyeh-muerte-2024")?.claimStatus==="hecho_verificado_independiente",
+ "F73: la muerte de Haniyeh no está documentada");
+assert(!c73.edges.some(x=>x.a==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.b)||x.b==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.a)),
+ "F73: no crear aristas de Mossad a asesinatos por inferencias");
+assert(c72.metadata.independentDocumentaryRelations===13&&c73.metadata.independentDocumentaryRelations===30,
+ "F72/F73: metadatos de relaciones documentales desincronizados");
 
 const f72=ctx.window.IDEA_TELARANA_F72_REVIEW, f73=ctx.window.IDEA_TELARANA_F73_REVIEW;
 assert(f72.metadata.crossSourceLinks.includes(69)&&f72.metadata.crossSourceLinks.includes(73), "F72 sin contraste cruzado");
