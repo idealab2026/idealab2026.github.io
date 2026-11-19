@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,26,30,38,26],expectedEdges=[20,33,38,47,32],
+const expectedNodes=[16,28,30,38,28],expectedEdges=[20,36,38,47,35],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===105,
+assert(totalNotes===78&&totalExternal===111,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -426,6 +426,21 @@ for(const [tag,mod] of [["f71",f71],["f74",f74]]){
  }
  assert(mod.metadata.transcriptAudioMatched===false&&mod.metadata.verifiedMinuteReferences===0,
   tag+": documentación externa no equivale a minutos de audio comprobados");
+}
+// Octava revisión: enunciados secundarios Doyle 2005 no equivalen a análisis químicos.
+for(const [tag,mod] of [["f71",f71],["f74",f74]]){
+ const article=mod.nodes.find(n=>n.id===tag+"-doyle-2005");
+ const inj=mod.nodes.find(n=>n.id===tag+"-vitamultin-calcium");
+ assert(article?.source.includes("www.rcpe.ac.uk/journal/issue/")&&article.note.includes("Irving")&&
+  inj?.note.includes("no proporciona")&&inj.note.includes("metanfetamina")&&
+  mod.metadata.independentDocumentaryRelations===24,tag+": incompleta la advertencia de procedencia Doyle");
+ for(const id of ["stmt-doyle-vitamultin-calcium","stmt-doyle-morell","stmt-doyle-pervitin"]){
+  const e=mod.edges.find(e=>e.id===tag+"-"+id);
+  assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado"&&e.confidence==="documentado"&&
+   e.source===article.source&&e.note.includes("no "),tag+": declaracion Doyle elevada a prueba clínica: "+id);
+ }
+ assert(mod.metadata.verifiedMinuteReferences===0&&!mod.metadata.transcriptAudioMatched,
+  tag+": lectura bibliográfica no valida audio del podcast");
 }
 for(const id of ["f71-mention-fuga","f74-mention-fuga"]){
  const e=[...f71.edges,...f74.edges].find(x=>x.id===id);

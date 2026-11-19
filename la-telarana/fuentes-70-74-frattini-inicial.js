@@ -630,9 +630,9 @@ window.IDEA_TELARANA_F71_REVIEW = {
     "lastMarker": "02:14:02",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "septima_revision_archivo_bundesarchiv_schenck_catalogo_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado. Séptima revisión (19/11/2026): se localiza expediente primario Bundesarchiv RH 12-23/1884 por ficha oficial DDB, cuya descripción incluye «Zulassung von Vitamultin», además de documentos sobre Pervitin. Coincidencia de catálogo no demuestra composición ni uso. Registro NLM 100935363 certifica libro de Schenck 1998, NO sus afirmaciones internas; supuesto cambio de opinión no contrastado con texto de origen. Se marca pendiente solicitud de legajo y página del libro. Sin audio cotejado.",
-    "independentDocumentaryRelations": 21,
+    "reviewStage": "octava_revision_doyle_2005_formulaciones_y_limites_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado. Séptima revisión (19/11/2026): se localiza expediente primario Bundesarchiv RH 12-23/1884 por ficha oficial DDB, cuya descripción incluye «Zulassung von Vitamultin», además de documentos sobre Pervitin. Coincidencia de catálogo no demuestra composición ni uso. Registro NLM 100935363 certifica libro de Schenck 1998, NO sus afirmaciones internas; supuesto cambio de opinión no contrastado con texto de origen. Se marca pendiente solicitud de legajo y página del libro. Sin audio cotejado. Octava revisión (19/11/2026): Doyle (2005), apéndice p.82, incluye anfetamina/cafeína en Vitamultin-Calcium intramuscular y afirma Pervitin empleado por Morell. La tabla deriva parcialmente de Irving; no es un certificado analítico y no deshace la incertidumbre que Hartmann (2021) mantiene sobre Pervitin administrado a Hitler. Separar anfetamina de metanfetamina y comprimidos Vitamultin de Vitamultin-Calcium inyectable. Tres aristas solo registran afirmaciones documentadas de Doyle, no hechos clínicos nuevos. 0 minutos audio cotejados.",
+    "independentDocumentaryRelations": 24,
     "crossSourceLinks": [
       74,
       13,
@@ -1145,6 +1145,32 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "x": 14880,
       "y": 5840,
       "podcastNotes": []
+    },
+    {
+      "id": "f71-doyle-2005",
+      "name": "Derek Doyle · Adolf Hitler's medical care (2005)",
+      "kind": "Documento",
+      "subtitle": "Revisión médica en Journal of the Royal College of Physicians of Edinburgh 35, pp. 75–82.",
+      "note": "Doyle (2005), «Adolf Hitler's medical care», Journal of the Royal College of Physicians of Edinburgh 35:75–82, apéndice 2 (pág. 82). Su tabla describe Vitamultin-Calcium como mezcla de anfetamina, cafeína, vitaminas y calcio administrada mediante inyección intramuscular; presenta por separado Pervitin (metanfetamina) como fármaco prescrito por Morell. El autor declara que su tabla parte de información publicada por David Irving y revisada, no de un análisis químico original reproducido en el artículo. Las afirmaciones sobre ingredientes/administración son reconstrucciones publicadas, no resultados analíticos nuevos. Hartmann (2021) considera no demostrada con seguridad la administración de Pervitin a Hitler: una mención genérica de anfetamina no demuestra metanfetamina ni contradice necesariamente esta incertidumbre. Diferenciar tabletas orales Vitamultin de Vitamultin-Calcium inyectable y Vitamultin-Forte.",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 15100,
+      "y": 5840,
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-vitamultin-calcium",
+      "name": "Vitamultin-Calcium (formulación inyectable)",
+      "kind": "Fármaco histórico",
+      "subtitle": "Preparado inyectable distinto de las tabletas Vitamultin que mencionan CIR n.º 4 y Schenck.",
+      "note": "Doyle (2005), apéndice 2, atribuye a Vitamultin-Calcium de Hamma una mezcla de anfetamina (término farmacológico amplio), cafeína, vitaminas y calcio y afirma administración intramuscular. No proporciona una ficha analítica primaria del lote administrado ni muestra química. Su tabla deriva en parte de material de David Irving, por lo que debe conservarse como afirmación secundaria atribuida. No fusionar la fórmula con Vitamultin en comprimidos, Vitamultin-Forte o Pervitin, denominación comercial de metanfetamina; anfetamina ≠ necesariamente metanfetamina.",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 15340,
+      "y": 5840,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1592,6 +1618,42 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
       "episodeId": "idealab-f71-frattini",
       "note": "La ficha NLM documenta tema, título y autor de la monografía de 1998. No documenta pruebas de que Vitamultin contuviera metanfetamina ni de su uso real en Hitler.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-stmt-doyle-vitamultin-calcium",
+      "a": "f71-doyle-2005",
+      "b": "f71-vitamultin-calcium",
+      "type": "Doyle atribuye anfetamina/cafeína a Vitamultin-Calcium inyectable",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Apéndice 2, p. 82, enumera anfetamina, cafeína, vitaminas y calcio para Vitamultin-Calcium. Es una composición afirmada en una revisión secundaria basada parcialmente en Irving, no prueba química de una muestra; no equivale automáticamente a Pervitin (metanfetamina).",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-stmt-doyle-morell",
+      "a": "f71-vitamultin-calcium",
+      "b": "f71-morell",
+      "type": "Doyle atribuye a Morell uso intramuscular de Vitamultin-Calcium",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Doyle 2005 describe Vitamultin-Calcium como inyectable empleado para depresión y cansancio; no consta en el artículo un diario clínico original cotejado que confirme fecha, lote, dosis o ingestión; conservar como afirmación bibliográfica atribuida.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-stmt-doyle-pervitin",
+      "a": "f71-doyle-2005",
+      "b": "f71-pervitin",
+      "type": "Doyle afirma uso de Pervitin por Morell, sin aportar un análisis primario",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "El apéndice 2 de Doyle también enumera Pervitin como metanfetamina y lo vincula con tratamiento de depresión/fatiga. Es un enunciado de 2005, no una verificación independiente de administración a Hitler; Hartmann (2021) considera que no puede demostrarse con seguridad. No equiparar anfetamina genérica, metanfetamina y las tres variantes de Vitamultin.",
       "podcastNotes": []
     }
   ]
@@ -4073,9 +4135,9 @@ window.IDEA_TELARANA_F74_REVIEW = {
     "lastMarker": "02:02:30",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "septima_revision_archivo_bundesarchiv_schenck_catalogo_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado. Séptima revisión (19/11/2026): se localiza expediente primario Bundesarchiv RH 12-23/1884 por ficha oficial DDB, cuya descripción incluye «Zulassung von Vitamultin», además de documentos sobre Pervitin. Coincidencia de catálogo no demuestra composición ni uso. Registro NLM 100935363 certifica libro de Schenck 1998, NO sus afirmaciones internas; supuesto cambio de opinión no contrastado con texto de origen. Se marca pendiente solicitud de legajo y página del libro. Sin audio cotejado.",
-    "independentDocumentaryRelations": 21,
+    "reviewStage": "octava_revision_doyle_2005_formulaciones_y_limites_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado. Séptima revisión (19/11/2026): se localiza expediente primario Bundesarchiv RH 12-23/1884 por ficha oficial DDB, cuya descripción incluye «Zulassung von Vitamultin», además de documentos sobre Pervitin. Coincidencia de catálogo no demuestra composición ni uso. Registro NLM 100935363 certifica libro de Schenck 1998, NO sus afirmaciones internas; supuesto cambio de opinión no contrastado con texto de origen. Se marca pendiente solicitud de legajo y página del libro. Sin audio cotejado. Octava revisión (19/11/2026): Doyle (2005), apéndice p.82, incluye anfetamina/cafeína en Vitamultin-Calcium intramuscular y afirma Pervitin empleado por Morell. La tabla deriva parcialmente de Irving; no es un certificado analítico y no deshace la incertidumbre que Hartmann (2021) mantiene sobre Pervitin administrado a Hitler. Separar anfetamina de metanfetamina y comprimidos Vitamultin de Vitamultin-Calcium inyectable. Tres aristas solo registran afirmaciones documentadas de Doyle, no hechos clínicos nuevos. 0 minutos audio cotejados.",
+    "independentDocumentaryRelations": 24,
     "crossSourceLinks": [
       71,
       70,
@@ -4579,6 +4641,32 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "x": 15140,
       "y": 5950,
       "podcastNotes": []
+    },
+    {
+      "id": "f74-doyle-2005",
+      "name": "Derek Doyle · Adolf Hitler's medical care (2005)",
+      "kind": "Documento",
+      "subtitle": "Revisión médica en Journal of the Royal College of Physicians of Edinburgh 35, pp. 75–82.",
+      "note": "Doyle (2005), «Adolf Hitler's medical care», Journal of the Royal College of Physicians of Edinburgh 35:75–82, apéndice 2 (pág. 82). Su tabla describe Vitamultin-Calcium como mezcla de anfetamina, cafeína, vitaminas y calcio administrada mediante inyección intramuscular; presenta por separado Pervitin (metanfetamina) como fármaco prescrito por Morell. El autor declara que su tabla parte de información publicada por David Irving y revisada, no de un análisis químico original reproducido en el artículo. Las afirmaciones sobre ingredientes/administración son reconstrucciones publicadas, no resultados analíticos nuevos. Hartmann (2021) considera no demostrada con seguridad la administración de Pervitin a Hitler: una mención genérica de anfetamina no demuestra metanfetamina ni contradice necesariamente esta incertidumbre. Diferenciar tabletas orales Vitamultin de Vitamultin-Calcium inyectable y Vitamultin-Forte.",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 15360,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-vitamultin-calcium",
+      "name": "Vitamultin-Calcium (formulación inyectable)",
+      "kind": "Fármaco histórico",
+      "subtitle": "Preparado inyectable distinto de las tabletas Vitamultin que mencionan CIR n.º 4 y Schenck.",
+      "note": "Doyle (2005), apéndice 2, atribuye a Vitamultin-Calcium de Hamma una mezcla de anfetamina (término farmacológico amplio), cafeína, vitaminas y calcio y afirma administración intramuscular. No proporciona una ficha analítica primaria del lote administrado ni muestra química. Su tabla deriva en parte de material de David Irving, por lo que debe conservarse como afirmación secundaria atribuida. No fusionar la fórmula con Vitamultin en comprimidos, Vitamultin-Forte o Pervitin, denominación comercial de metanfetamina; anfetamina ≠ necesariamente metanfetamina.",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 15600,
+      "y": 5950,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -5004,6 +5092,42 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
       "episodeId": "idealab-f74-frattini",
       "note": "La ficha NLM documenta tema, título y autor de la monografía de 1998. No documenta pruebas de que Vitamultin contuviera metanfetamina ni de su uso real en Hitler.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-stmt-doyle-vitamultin-calcium",
+      "a": "f74-doyle-2005",
+      "b": "f74-vitamultin-calcium",
+      "type": "Doyle atribuye anfetamina/cafeína a Vitamultin-Calcium inyectable",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Apéndice 2, p. 82, enumera anfetamina, cafeína, vitaminas y calcio para Vitamultin-Calcium. Es una composición afirmada en una revisión secundaria basada parcialmente en Irving, no prueba química de una muestra; no equivale automáticamente a Pervitin (metanfetamina).",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-stmt-doyle-morell",
+      "a": "f74-vitamultin-calcium",
+      "b": "f74-morell",
+      "type": "Doyle atribuye a Morell uso intramuscular de Vitamultin-Calcium",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Doyle 2005 describe Vitamultin-Calcium como inyectable empleado para depresión y cansancio; no consta en el artículo un diario clínico original cotejado que confirme fecha, lote, dosis o ingestión; conservar como afirmación bibliográfica atribuida.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-stmt-doyle-pervitin",
+      "a": "f74-doyle-2005",
+      "b": "f74-pervitin",
+      "type": "Doyle afirma uso de Pervitin por Morell, sin aportar un análisis primario",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.rcpe.ac.uk/journal/issue/journal_35_1/Hitler%27s_medical_care.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "El apéndice 2 de Doyle también enumera Pervitin como metanfetamina y lo vincula con tratamiento de depresión/fatiga. Es un enunciado de 2005, no una verificación independiente de administración a Hitler; Hartmann (2021) considera que no puede demostrarse con seguridad. No equiparar anfetamina genérica, metanfetamina y las tres variantes de Vitamultin.",
       "podcastNotes": []
     }
   ]
