@@ -630,9 +630,9 @@ window.IDEA_TELARANA_F71_REVIEW = {
     "lastMarker": "02:14:02",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "tercera_revision_morell_fecha_y_odontologia_1973",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio.",
-    "independentDocumentaryRelations": 9,
+    "reviewStage": "cuarta_revision_gibbels_dosis_y_wade_pervitin_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast.",
+    "independentDocumentaryRelations": 11,
     "crossSourceLinks": [
       74,
       13,
@@ -1015,6 +1015,32 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "x": 12250,
       "y": 5840,
       "podcastNotes": []
+    },
+    {
+      "id": "f71-estudio-gibbels-1994",
+      "name": "Ellen Gibbels · análisis médico-histórico (1994)",
+      "kind": "Documento",
+      "subtitle": "Artículo en Vierteljahrshefte für Zeitgeschichte, 42(2), p. 216; examen de las anotaciones de Morell.",
+      "note": "Estudio histórico de Ellen Gibbels, publicado por el Institut für Zeitgeschichte de Múnich (1994), pág. 216. A partir de los registros médicos de Morell y el análisis de Schenck, contabiliza inyecciones conjuntas Eukodal–Eupaverin: 6 en 129 días registrados de 1943, 20 distribuidas en siete meses de 1944 y ninguna en los cuatro últimos meses de vida, enero–abril de 1945. No son recuentos de todas las inyecciones ni de toda la medicación. La conclusión de Gibbels contra una dependencia como explicación del comportamiento nazi es una interpretación historiográfica y clínica, no una demostración experimental de ausencia absoluta de dependencia.",
+      "source": "https://www.ifz-muenchen.de/heftarchiv/1994_2.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12490,
+      "y": 5840,
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-estudio-wade-2003",
+      "name": "Owen Wade · The Treatment of a Dictator (2003)",
+      "kind": "Documento",
+      "subtitle": "Artículo en Journal of Medical Biography 11(2), 118–122; revisión clínica de los registros de Morell.",
+      "note": "En un artículo de 2003, Owen Wade reproduce y comenta un análisis médico anterior de registros de Morell. En notas bibliográficas recoge el relato de Ernst Günther Schenck sobre pruebas de comprimidos Vitamultin que, según Schenck, revelaron Pervitin (metanfetamina). Es testimonio retrospectivo de un tercero citado por Wade: no prueba por sí solo dosis ingeridas, administración sostenida, dependencia ni causalidad política. El artículo no equivale a una prueba toxicológica realizada sobre Hitler.",
+      "source": "https://journals.sagepub.com/doi/abs/10.1177/096777200301100216",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12710,
+      "y": 5840,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1306,6 +1332,42 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "source": "https://pubmed.ncbi.nlm.nih.gov/4575430/",
       "episodeId": "idealab-f71-frattini",
       "note": "Sognnaes y Strøm, Acta Odontologica Scandinavica 31(1), 43–69 (1973), PMID 4575430: documentación de rayos X, interrogatorios y hallazgos post mortem. El estudio de 2018 constituye un examen posterior y diferente, no la única investigación identificativa.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-gibbels-morell",
+      "a": "f71-estudio-gibbels-1994",
+      "b": "f71-morell",
+      "type": "Revisión de registros de Morell y cuantificación de inyecciones Eukodal–Eupaverin",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ifz-muenchen.de/heftarchiv/1994_2.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Ellen Gibbels (1994), pág. 216, examina anotaciones de Morell: 6 inyecciones registradas en 129 días documentados de 1943, 20 en 1944 y ninguna de este preparado combinado entre enero y abril de 1945. La cuantificación procede de la historiografía sobre registros, no de una comprobación nueva de cada hoja original.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-gibbels-hitler",
+      "a": "f71-estudio-gibbels-1994",
+      "b": "f71-hitler",
+      "type": "Estudio de exposición documentada a Eukodal–Eupaverin; no prueba explicación causal de decisiones",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ifz-muenchen.de/heftarchiv/1994_2.pdf",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La investigación de Gibbels cuestiona que la exposición registrada baste para explicar el comportamiento político y los crímenes de Hitler mediante dependencia farmacológica. Se registra la existencia y el análisis del trabajo; no se convierte una opinión clínica retrospectiva en certeza absoluta sobre ausencia de adicción.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-alleg-wade-pervitin",
+      "a": "f71-estudio-wade-2003",
+      "b": "f71-pervitin",
+      "type": "Relato indirecto de análisis de Vitamultin con Pervitin; administración individual no demostrada",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://journals.sagepub.com/doi/abs/10.1177/096777200301100216",
+      "episodeId": "idealab-f71-frattini",
+      "note": "Owen Wade (2003), nota 5, refiere el relato de Schenck sobre un análisis de tabletas Vitamultin que habría detectado Pervitin. No implica que Hitler ingiriera regularmente esas tabletas, ni acredita dosis, intoxicación crónica, dependencia o causa de decisiones bélicas.",
       "podcastNotes": []
     }
   ]
@@ -3787,9 +3849,9 @@ window.IDEA_TELARANA_F74_REVIEW = {
     "lastMarker": "02:02:30",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "tercera_revision_identificacion_dental_cadena_1945_1973_2018",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado.",
-    "independentDocumentaryRelations": 9,
+    "reviewStage": "cuarta_revision_gibbels_dosis_y_wade_pervitin_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast.",
+    "independentDocumentaryRelations": 11,
     "crossSourceLinks": [
       71,
       70,
@@ -4163,6 +4225,32 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "x": 12550,
       "y": 5950,
       "podcastNotes": []
+    },
+    {
+      "id": "f74-estudio-gibbels-1994",
+      "name": "Ellen Gibbels · análisis médico-histórico (1994)",
+      "kind": "Documento",
+      "subtitle": "Artículo en Vierteljahrshefte für Zeitgeschichte, 42(2), p. 216; examen de las anotaciones de Morell.",
+      "note": "Estudio histórico de Ellen Gibbels, publicado por el Institut für Zeitgeschichte de Múnich (1994), pág. 216. A partir de los registros médicos de Morell y el análisis de Schenck, contabiliza inyecciones conjuntas Eukodal–Eupaverin: 6 en 129 días registrados de 1943, 20 distribuidas en siete meses de 1944 y ninguna en los cuatro últimos meses de vida, enero–abril de 1945. No son recuentos de todas las inyecciones ni de toda la medicación. La conclusión de Gibbels contra una dependencia como explicación del comportamiento nazi es una interpretación historiográfica y clínica, no una demostración experimental de ausencia absoluta de dependencia.",
+      "source": "https://www.ifz-muenchen.de/heftarchiv/1994_2.pdf",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12750,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-estudio-wade-2003",
+      "name": "Owen Wade · The Treatment of a Dictator (2003)",
+      "kind": "Documento",
+      "subtitle": "Artículo en Journal of Medical Biography 11(2), 118–122; revisión clínica de los registros de Morell.",
+      "note": "En un artículo de 2003, Owen Wade reproduce y comenta un análisis médico anterior de registros de Morell. En notas bibliográficas recoge el relato de Ernst Günther Schenck sobre pruebas de comprimidos Vitamultin que, según Schenck, revelaron Pervitin (metanfetamina). Es testimonio retrospectivo de un tercero citado por Wade: no prueba por sí solo dosis ingeridas, administración sostenida, dependencia ni causalidad política. El artículo no equivale a una prueba toxicológica realizada sobre Hitler.",
+      "source": "https://journals.sagepub.com/doi/abs/10.1177/096777200301100216",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 12970,
+      "y": 5950,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -4432,6 +4520,42 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "source": "https://pubmed.ncbi.nlm.nih.gov/4575430/",
       "episodeId": "idealab-f74-frattini",
       "note": "Sognnaes y Strøm, 1973, PMID 4575430: identificación mediante contraste de radiografías, documentación odontológica e interrogatorios. Fuente científica independiente del podcast; distinta de los resultados de cráneo UConn 2009.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-gibbels-morell",
+      "a": "f74-estudio-gibbels-1994",
+      "b": "f74-morell",
+      "type": "Revisión de registros de Morell y cuantificación de inyecciones Eukodal–Eupaverin",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ifz-muenchen.de/heftarchiv/1994_2.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Ellen Gibbels (1994), pág. 216, examina anotaciones de Morell: 6 inyecciones registradas en 129 días documentados de 1943, 20 en 1944 y ninguna de este preparado combinado entre enero y abril de 1945. La cuantificación procede de la historiografía sobre registros, no de una comprobación nueva de cada hoja original.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-gibbels-hitler",
+      "a": "f74-estudio-gibbels-1994",
+      "b": "f74-hitler",
+      "type": "Estudio de exposición documentada a Eukodal–Eupaverin; no prueba explicación causal de decisiones",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ifz-muenchen.de/heftarchiv/1994_2.pdf",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La investigación de Gibbels cuestiona que la exposición registrada baste para explicar el comportamiento político y los crímenes de Hitler mediante dependencia farmacológica. Se registra la existencia y el análisis del trabajo; no se convierte una opinión clínica retrospectiva en certeza absoluta sobre ausencia de adicción.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-alleg-wade-pervitin",
+      "a": "f74-estudio-wade-2003",
+      "b": "f74-pervitin",
+      "type": "Relato indirecto de análisis de Vitamultin con Pervitin; administración individual no demostrada",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://journals.sagepub.com/doi/abs/10.1177/096777200301100216",
+      "episodeId": "idealab-f74-frattini",
+      "note": "Owen Wade (2003), nota 5, refiere el relato de Schenck sobre un análisis de tabletas Vitamultin que habría detectado Pervitin. No implica que Hitler ingiriera regularmente esas tabletas, ni acredita dosis, intoxicación crónica, dependencia o causa de decisiones bélicas.",
       "podcastNotes": []
     }
   ]
