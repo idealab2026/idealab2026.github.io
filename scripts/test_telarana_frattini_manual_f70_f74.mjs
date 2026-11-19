@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,16,20,26,16],expectedEdges=[20,20,22,33,19],
+const expectedNodes=[16,16,20,32,16],expectedEdges=[20,20,22,42,19],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===53,
+assert(totalNotes===78&&totalExternal===62,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -143,6 +143,37 @@ for(const [a,b] of [["f72-oiea","f73-oiea"],["f72-natanz","f73-natanz"]]){
  bb=f73Iran.nodes.find(x=>x.id===b);
  assert(aa&&bb&&aa.name===bb.name,"F72/F73 duplicarán la misma instalación u organismo: "+a);
 }
+
+
+// Sexta revisión: Midnight Hammer de EE. UU. no es sinónimo de la
+// operación israelí del 13/06 ni valida atribuciones al Mossad.
+const f73June=ctx.window.IDEA_TELARANA_F73_REVIEW;
+assert(f73June.metadata.independentDocumentaryRelations===25&&f73June.metadata.verifiedMinuteReferences===0,
+ "F73: ampliar respaldo documental no equivale a audio verificado");
+const statements=[
+ "f73-doc-eeuu-midnight-hammer","f73-doc-midnight-fordow","f73-doc-midnight-natanz",
+ "f73-doc-midnight-isfahan","f73-doc-pentagono-midnight"
+];
+for(const id of statements){
+ const e=f73June.edges.find(x=>x.id===id);
+ assert(e&&e.confidence==="documentado"&&e.claimStatus==="hecho_documentado_por_portavoz_citado"&&
+ e.source.includes("defense.gov")&&!e.note.includes("Mossad ejecutó"),
+  "F73: comunicado militar propio presentado como constatación de autoría clandestina: "+id);
+}
+for(const id of ["f73-doc-oiea-informe-sept2025","f73-doc-gov2025-50-iran",
+ "f73-doc-gov2025-50-fordow","f73-doc-gov2025-50-natanz"]){
+ const e=f73June.edges.find(x=>x.id===id);
+ assert(e&&e.confidence==="documentado"&&e.claimStatus==="hecho_verificado_independiente"&&
+ e.source.includes("/gov2025-50.pdf"),
+  "F73: informe OIEA ausente o confundido con afirmación del Pentágono: "+id);
+}
+const report=f73June.nodes.find(x=>x.id==="f73-oiea-gov2025-50");
+assert(report?.note.includes("440,9 kg")&&report.note.includes("13/06/2025")&&
+ report.note.includes("no acredita fabricación de armas"),
+ "F73: estimación anterior al ataque incorrectamente interpretada como armamento nuclear");
+assert(f73June.nodes.find(x=>x.id==="f73-midnight-hammer")?.note.includes("distinta")&&
+ f73June.nodes.find(x=>x.id==="f73-isfahan")?.note.includes("medios de ataque"),
+ "F73: no se separan fecha, mando militar y armamento entre Fordow/Natanz/Isfahán");
 
 const f72=ctx.window.IDEA_TELARANA_F72_REVIEW, f73=ctx.window.IDEA_TELARANA_F73_REVIEW;
 assert(f72.metadata.crossSourceLinks.includes(69)&&f72.metadata.crossSourceLinks.includes(73), "F72 sin contraste cruzado");
