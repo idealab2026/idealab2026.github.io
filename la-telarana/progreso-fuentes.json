@@ -1250,7 +1250,7 @@
       "videoId": "rLGs5AXE5iQ",
       "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
-      "status": "cuarta_revision_vatileaks_sentencias_primarias",
+      "status": "quinta_revision_224m_ambrosiano_benedicto_contraste",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1259,13 +1259,13 @@
       "transcriptCharacters": 113341,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 21,
-      "sourceRelationsDocumented": 27,
+      "sourceNodesDocumented": 26,
+      "sourceRelationsDocumented": 34,
       "personsProfiled": 6,
       "impersonalAttributedSummaries": 11,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
       "structuredProfiles": 6,
-      "verifiedIndependentChecks": 17,
+      "verifiedIndependentChecks": 22,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 777,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
@@ -1279,7 +1279,7 @@
         "study-f70-pius-xii-archive-open-2020",
         "study-f70-praedicate-evangelium-2022"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11 segunda pasada F70: 5 nuevos nodos, 9 relaciones añadidas; 6 contrastes documentales adicionales (total 7) con normas oficiales del Vaticano y comunicación IOR. La frase sobre acceso exclusivo del papa/cardenales al Archivo no refleja la regla 2025 para investigadores. Los fondos de Pío XII se abrieron 2/03/2020; Praedicate Evangelium reorganizó la Curia en 2022, lo que limita la afirmación de inexistencia de reformas. Publicación de cuentas IOR no demuestra ausencia de irregularidades. Mantener marcadores ASR sin cotejo audiovisual.\n18/11 tercera pasada: +3 nodos y +3 aristas documentales de contexto externo: MONEYVAL 2024 (35/39 recomendaciones conformes o mayormente conformes y 4 parcialmente), ASIF 2025 (78 comunicaciones sospechosas en la jurisdicción, 16 elevaciones a fiscalía y 3 operaciones suspendidas) y decisión de apelación del 17/03/2026 sobre fondos de la Santa Sede. No mezclar jurisdicción, Secretaría de Estado e IOR. Sin citas audiovisuales comprobadas y sin modificar el porcentaje editorial.\n19/11 cuarta revisión: sentencias primarias Sala Stampa Vaticana. Gabriele 06/10/2012 condenado por hurto agravado a 3 años reducidos en el propio fallo a 18 meses; ejecutoria firme comunicada 25/10; indulto 22/12 ya documentado. Sciarpelletti juicio separado y condena por favorecimiento personal (10/11, publicación 01/12), 4 meses reducidos a 2 con suspensión de ejecución por cinco años; no condenado por sustracción. +5 entidades y +7 vínculos judiciales independientes. Nada de ello prueba una trama de la Curia. Sin cotejo de audio.",
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11 segunda pasada F70: 5 nuevos nodos, 9 relaciones añadidas; 6 contrastes documentales adicionales (total 7) con normas oficiales del Vaticano y comunicación IOR. La frase sobre acceso exclusivo del papa/cardenales al Archivo no refleja la regla 2025 para investigadores. Los fondos de Pío XII se abrieron 2/03/2020; Praedicate Evangelium reorganizó la Curia en 2022, lo que limita la afirmación de inexistencia de reformas. Publicación de cuentas IOR no demuestra ausencia de irregularidades. Mantener marcadores ASR sin cotejo audiovisual.\n18/11 tercera pasada: +3 nodos y +3 aristas documentales de contexto externo: MONEYVAL 2024 (35/39 recomendaciones conformes o mayormente conformes y 4 parcialmente), ASIF 2025 (78 comunicaciones sospechosas en la jurisdicción, 16 elevaciones a fiscalía y 3 operaciones suspendidas) y decisión de apelación del 17/03/2026 sobre fondos de la Santa Sede. No mezclar jurisdicción, Secretaría de Estado e IOR. Sin citas audiovisuales comprobadas y sin modificar el porcentaje editorial.\n19/11 cuarta revisión: sentencias primarias Sala Stampa Vaticana. Gabriele 06/10/2012 condenado por hurto agravado a 3 años reducidos en el propio fallo a 18 meses; ejecutoria firme comunicada 25/10; indulto 22/12 ya documentado. Sciarpelletti juicio separado y condena por favorecimiento personal (10/11, publicación 01/12), 4 meses reducidos a 2 con suspensión de ejecución por cinco años; no condenado por sustracción. +5 entidades y +7 vínculos judiciales independientes. Nada de ello prueba una trama de la Curia. Sin cotejo de audio.\n19/11 quinta revisión: recuperada transcripción privada y extraídos los turnos 1:17:24–44. La pregunta cita «224 millones» y «responsabilidad moral» sin moneda; Frattini atribuye el pago a Benedicto XVI y abusos en EE. UU. Banca d'Italia describe un acuerdo IOR–Ambrosiano de 25/05/1984, UPI reportó pago de 240,9 millones USD en julio 1984 y otras crónicas contemporáneas 241 millones comprometidos. Otras versiones retrospectivas mencionan 224 millones USD. No se ha verificado el audio ni desambiguado definitivamente la referencia de la pregunta: marcar afirmación como no verificada, no añadir euros ni atribuir por certeza a Ambrosiano la pregunta. +5 nodos, +7 aristas (4 hechos institucionales, 1 declaración periodística, 2 afirmaciones del episodio sin audio).",
       "lastUpdated": "2026-11-19"
     },
     {
@@ -6830,16 +6830,16 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica",
           "audioVerified": false,
           "signals": {
-            "entities": 21,
-            "relations": 27,
+            "entities": 26,
+            "relations": 34,
             "biographies": 6,
-            "statements": 11,
-            "independentChecks": 17,
+            "statements": 12,
+            "independentChecks": 22,
             "verifiedTimelineEvents": 4,
             "manualTimestampMarkers": 777,
             "chapters": 26
           },
-          "nextAction": "Contrastar extractos específicos de Vatileaks en F70 con el texto de la sentencia motivada de 23/10/2012 y la causa Sciarpelletti. No inferir red organizada ni corrupción de terceros. Cotejar el audio original antes de validar minutajes; revisar tesis de los 224 M€ y delimitar IOR frente a Secretaría de Estado."
+          "nextAction": "Revisar en el audio F70 1:13:26–1:17:52 el contexto de «224 millones» y turnos de voz; comprobar si se trata del IOR/Banco Ambrosiano (1984, USD) o de indemnizaciones por abusos. Recuperar texto original del acuerdo de Ginebra 25/05/1984 y movimientos/recibos para conciliar 224/240,9/241/244/250 millones USD. No convertir dólares a euros ni imputar a Benedicto XVI pagos de 1984."
         }
       },
       {
