@@ -250,7 +250,7 @@ for(const id of [
 for(const id of ["f72-quote-zarif-iranintl-2025","f72-quote-iranintl-plataforma-sin-fecha"]){
  const e=natanzCohen.edges.find(x=>x.id===id);
  assert(e&&e.claimStatus==="hecho_documentado_por_portavoz_citado"&&
-  e.source.includes("iranintl.com")&&/sin|fecha|ubicaci[oó]n|instalaci[oó]n/i.test(e.note),
+  e.source.includes("iranintl.com")&&e.note.includes("Natanz")&&/(no equivale|no conectarla)/i.test(e.note),
   "F72: declaración de Zarif interpretada como prueba del mismo sabotaje: "+id);
 }
 assert(!natanzCohen.edges.some(x=>
