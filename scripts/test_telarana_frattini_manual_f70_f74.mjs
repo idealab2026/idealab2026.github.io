@@ -190,7 +190,8 @@ assert(c72.nodes.find(x=>x.id==="f72-archivo")?.note.includes("10/06/2021"),
  "F72: no se distingue archivo presentado en abril 2018 de descripción pública de Cohen de 2021");
 assert(c73.edges.find(x=>x.id==="f73-doc-fakhrizadeh-muerte-2020")?.claimStatus==="hecho_verificado_independiente",
  "F73: el asesinato de Fakhrizadeh no está documentado");
-assert(c73.nodes.find(x=>x.id==="f73-mohsen-fakhrizadeh")?.note.includes("no se demostró públicamente"),
+assert(c73.nodes.find(x=>x.id==="f73-mohsen-fakhrizadeh")?.note.includes("ni se demostró públicamente")&&
+ c73.nodes.find(x=>x.id==="f73-mohsen-fakhrizadeh")?.note.includes("Israel no reconoció"),
  "F73: se ha omitido la distinción entre muerte documentada y atribución iraní");
 for(const id of ["f73-doc-katz-reuters-haniyeh","f73-doc-reuters-katz-asesinato","f73-doc-israel-katz-declaracion"]){
  const e=c73.edges.find(x=>x.id===id);
