@@ -104,7 +104,7 @@ assert(reg.sourceCatalog.entries.find(e=>e.order===70)?.analysisCoverage.percent
  "El porcentaje editorial F70 debe reflejar la segunda revisión sin sugerir audio completo");
 
 const f72Iran=ctx.window.IDEA_TELARANA_F72_REVIEW;
-assert(f72Iran.metadata.independentDocumentaryRelations===9&&f72Iran.metadata.verifiedMinuteReferences===0,
+assert(f72Iran.metadata.independentDocumentaryRelations===13&&f72Iran.metadata.verifiedMinuteReferences===0,
  "F72: el contraste institucional no equivale a minutos de audio verificados");
 for(const eid of ["f72-doc-netanyahu-presentacion-archivo-2018","f72-doc-oiea-evaluacion-2015",
  "f72-doc-oiea-comunicado-mayo-2018","f72-doc-oiea-reitera-2015-en-2018"]){
