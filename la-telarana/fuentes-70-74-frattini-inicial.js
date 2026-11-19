@@ -630,9 +630,9 @@ window.IDEA_TELARANA_F71_REVIEW = {
     "lastMarker": "02:14:02",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "sexta_revision_hartmann_2021_brandt_1947_cronologia_cir4_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado.",
-    "independentDocumentaryRelations": 18,
+    "reviewStage": "septima_revision_archivo_bundesarchiv_schenck_catalogo_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): historiografía NDB 1997 sitúa el fin de funciones de Morell el 21/04/1945, frente al 22 de otras reconstrucciones: diferencia cronológica explicitada. Añadido estudio odontológico de Sognnaes y Strøm (1973), antecedente documental de Charlier 2018. Sin verificación del audio. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado. Séptima revisión (19/11/2026): se localiza expediente primario Bundesarchiv RH 12-23/1884 por ficha oficial DDB, cuya descripción incluye «Zulassung von Vitamultin», además de documentos sobre Pervitin. Coincidencia de catálogo no demuestra composición ni uso. Registro NLM 100935363 certifica libro de Schenck 1998, NO sus afirmaciones internas; supuesto cambio de opinión no contrastado con texto de origen. Se marca pendiente solicitud de legajo y página del libro. Sin audio cotejado.",
+    "independentDocumentaryRelations": 21,
     "crossSourceLinks": [
       74,
       13,
@@ -1060,7 +1060,7 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "name": "Vitamultin (preparado de Morell)",
       "kind": "Fármaco histórico",
       "subtitle": "Comprimidos registrados en las notas de Morell; su composición no queda determinada por el informe estadounidense.",
-      "note": "El anexo XVI del CIR n.º 4 transcribe una pauta atribuida a las notas de Theodor Morell: «Vitamultin tablets, 4–6 a day, at meals». En el mismo anexo figura un ECG del 4 de mayo de 1944, PERO esa fecha no demuestra cuándo comenzó ni si se mantuvo la pauta de comprimidos. La traducción tiene además una referencia introductoria incompleta a «1 May 19__», sin año concluyente. El documento prueba la existencia de la anotación, no la ingestión efectiva, dosis acumuladas ni composición química de cada lote. Wade (2003) atribuye indirectamente a Schenck un análisis de Vitamultin que habría detectado Pervitin, sin publicar aquí el ensayo químico original. No se deduce dependencia.",
+      "note": "El anexo XVI del CIR n.º 4 transcribe una pauta atribuida a las notas de Theodor Morell: «Vitamultin tablets, 4–6 a day, at meals». En el mismo anexo figura un ECG del 4 de mayo de 1944, PERO esa fecha no demuestra cuándo comenzó ni si se mantuvo la pauta de comprimidos. La traducción tiene además una referencia introductoria incompleta a «1 May 19__», sin año concluyente. El documento prueba la existencia de la anotación, no la ingestión efectiva, dosis acumuladas ni composición química de cada lote. Wade (2003) atribuye indirectamente a Schenck un análisis de Vitamultin que habría detectado Pervitin, sin publicar aquí el ensayo químico original. No se deduce dependencia. Un expediente oficial del Bundesarchiv (RH 12-23/1884) incluye documentación catalogada sobre la autorización de Vitamultin; los documentos interiores aún no se han consultado y la mera coexistencia con Pervitin en el archivo no implica identidad de ingredientes.",
       "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
       "topic3d": "historia",
       "photo": "",
@@ -1104,6 +1104,45 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "topic3d": "historia",
       "photo": "",
       "x": 14150,
+      "y": 5840,
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-barch-rh12-23-1884",
+      "name": "Bundesarchiv · RH 12-23/1884",
+      "kind": "Documento",
+      "subtitle": "Expediente 1939–1943 de medicina militar que incluye documentación sobre autorización de Vitamultin.",
+      "note": "La Deutsche Digitale Bibliothek registra el expediente del Bundesarchiv RH 12-23/1884 (signatura anterior H 20/285/7), perteneciente a la inspección sanitaria del Ejército. Su descripción incluye correspondencia sobre Pervitin, estadísticas de suministro de 1940 y «Zulassung von Vitamultin» (autorización de Vitamultin). Es solo una ficha de catálogo, no el examen de los documentos internos ni de fórmulas de fabricación. Que ambos preparados consten en el mismo legajo no significa que uno contuviera el otro; no demuestra la composición de Vitamultin-Forte ni de lotes especiales para Hitler.",
+      "source": "https://www.deutsche-digitale-bibliothek.de/item/DDEYAU3SJS44I25TUZ4VQXIB55VLEIIP",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 14400,
+      "y": 5840,
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-schenck",
+      "name": "Ernst Günther Schenck",
+      "kind": "Persona",
+      "subtitle": "Médico del aparato sanitario de las SS; autor de estudios retrospectivos sobre Theodor Morell.",
+      "note": "Ernst Günther Schenck (1904–1998), médico y antiguo inspector de nutrición de las Waffen-SS, citado por Owen Wade (2003) como origen del relato de un presunto análisis de comprimidos Vitamultin. La National Library of Medicine cataloga su libro sobre Morell publicado en 1998. La identidad del autor y la existencia del libro están documentadas, pero no se ha podido examinar el supuesto informe químico original ni verificar directamente pasajes de esa edición sobre Pervitin. Su testimonio y posibles revisiones posteriores deben distinguirse de un análisis de laboratorio preservado.",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 14650,
+      "y": 5840,
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-schenck-1998",
+      "name": "Schenck · Hitlers Leibarzt und seine Medikamente (1998)",
+      "kind": "Obra",
+      "subtitle": "E. G. Schenck, biografía documental sobre Theodor Morell; Bublies, 1998, 559 páginas.",
+      "note": "Registro bibliográfico NLM ID 100935363 del libro de Ernst Günther Schenck «Prof. Dr. med. Theodor Gilbert Morell: Hitlers Leibarzt und seine Medikamente», publicado por Verlag S. Bublies en 1998, 559 páginas, ISBN 9783926584526. El registro establece autor, título, año y extensión; no demuestra las afirmaciones farmacológicas que puedan hacerse en su interior. Algunas fuentes secundarias atribuyen a Schenck una rectificación en 1998 sobre la exposición crónica a Pervitin; no se adopta esa cita ni se da por verificada sin consulta directa del libro y página.",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 14880,
       "y": 5840,
       "podcastNotes": []
     }
@@ -1517,6 +1556,42 @@ window.IDEA_TELARANA_F71_REVIEW = {
       "source": "https://nuremberg.law.harvard.edu/transcripts/1-transcript-for-nmt-1-medical-case?seq=2389",
       "episodeId": "idealab-f71-frattini",
       "note": "Durante su testimonio del 03/02/1947, Karl Brandt afirmó haber sabido por un sirviente de un encargo de comprimidos con estricnina en enero de 1944 y de una dosis máxima diaria. Esa información es indirecta y contextualizada por su conflicto profesional con Morell, no certificación analítica del compuesto o de cuánto tomó Hitler.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-barch-catalogo-vitamultin",
+      "a": "f71-barch-rh12-23-1884",
+      "b": "f71-vitamultin",
+      "type": "Catálogo Bundesarchiv: el expediente contiene documentación sobre autorización de Vitamultin",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.deutsche-digitale-bibliothek.de/item/DDEYAU3SJS44I25TUZ4VQXIB55VLEIIP",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La descripción archivística de RH 12-23/1884 menciona «Zulassung von Vitamultin». Solo acredita que el catálogo identifica esa materia dentro del expediente, no su composición, autorización efectiva de una fórmula concreta ni relación química con Pervitin. El legajo físico no ha sido inspeccionado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-schenck-autor-1998",
+      "a": "f71-schenck",
+      "b": "f71-schenck-1998",
+      "type": "Autoría de obra sobre Morell, catalogada por la National Library of Medicine",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La NLM identifica a Ernst Günther Schenck como autor del libro de 1998, 559 páginas, ISBN 9783926584526. No se transcriben ni se consideran corroboradas sus conclusiones sin acceso a sus páginas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f71-doc-schenck-libro-morell",
+      "a": "f71-schenck-1998",
+      "b": "f71-morell",
+      "type": "El libro de Schenck tiene por objeto al médico Theodor Morell",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "episodeId": "idealab-f71-frattini",
+      "note": "La ficha NLM documenta tema, título y autor de la monografía de 1998. No documenta pruebas de que Vitamultin contuviera metanfetamina ni de su uso real en Hitler.",
       "podcastNotes": []
     }
   ]
@@ -3998,9 +4073,9 @@ window.IDEA_TELARANA_F74_REVIEW = {
     "lastMarker": "02:02:30",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "sexta_revision_hartmann_2021_brandt_1947_cronologia_cir4_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado.",
-    "independentDocumentaryRelations": 18,
+    "reviewStage": "septima_revision_archivo_bundesarchiv_schenck_catalogo_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada: contraste de diarios y medicación de Morell, literatura médica, evidencia de odontología forense, fecha de salida del médico antes del suicidio, y uso de Pervitin. Los rumores sobre orientación/vida sexual, supuestas parafilias o fuga a Argentina no son datos históricos o diagnósticos probados; audio no cotejado. Tercera pasada (18/11/2026): testigos dentales Heusermann y Echtmann, estudio Sognnaes/Strøm 1973 y examen de 2018 separados metodológicamente del fragmento craneal UConn 2009. Evidencia científica externa, no palabras verificadas del entrevistado. Cuarta pasada (19/11/2026): Gibbels (IfZ, 1994, pág. 216) separa las 6 inyecciones combinadas Eukodal–Eupaverin registradas en 1943, 20 en 1944 y ninguna en enero–abril de 1945 de otras medicaciones. Wade (2003) recoge indirectamente un informe de Schenck sobre Pervitin en Vitamultin, sin demostrar ingestión, dependencia ni causalidad. Estudios externos, no palabras o audio contrastados del pódcast. Quinta revisión (19/11/2026): informe de interrogatorios militares estadounidenses CIR n.º 4, anexo XVI, contiene una traducción de notas clínicas de Morell vinculadas al 4/05/1944, con pauta Vitamultin 4–6 comprimidos/día. Es documentación primaria de prescripción declarada, no prueba toxicológica ni ingestión acreditada; la introducción alerta sobre testimonios de memoria. El anexo no identifica Pervitin. No se atribuye a Frattini ni se coteja el audio. Sexta pasada (19/11/2026): Hartmann (Wehrmedizinische Monatsschrift, 2021) distingue uso histórico militar de Pervitin y falta de prueba de empleo personal por Morell. Transcripción judicial NMT 1, 03/02/1947, contiene el testimonio de Karl Brandt sobre estricnina; se marca como declaración indirecta y potencialmente interesada, no análisis toxicológico. Corrección de precisión: CIR4 anexo XVI contiene ECG 4/05/1944 y pauta Vitamultin en contexto próximo, pero no fecha inequívoca de inicio de esta última. Ningún audio de F71/F74 cotejado. Séptima revisión (19/11/2026): se localiza expediente primario Bundesarchiv RH 12-23/1884 por ficha oficial DDB, cuya descripción incluye «Zulassung von Vitamultin», además de documentos sobre Pervitin. Coincidencia de catálogo no demuestra composición ni uso. Registro NLM 100935363 certifica libro de Schenck 1998, NO sus afirmaciones internas; supuesto cambio de opinión no contrastado con texto de origen. Se marca pendiente solicitud de legajo y página del libro. Sin audio cotejado.",
+    "independentDocumentaryRelations": 21,
     "crossSourceLinks": [
       71,
       70,
@@ -4419,7 +4494,7 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "name": "Vitamultin (preparado de Morell)",
       "kind": "Fármaco histórico",
       "subtitle": "Comprimidos registrados en las notas de Morell; su composición no queda determinada por el informe estadounidense.",
-      "note": "El anexo XVI del CIR n.º 4 transcribe una pauta atribuida a las notas de Theodor Morell: «Vitamultin tablets, 4–6 a day, at meals». En el mismo anexo figura un ECG del 4 de mayo de 1944, PERO esa fecha no demuestra cuándo comenzó ni si se mantuvo la pauta de comprimidos. La traducción tiene además una referencia introductoria incompleta a «1 May 19__», sin año concluyente. El documento prueba la existencia de la anotación, no la ingestión efectiva, dosis acumuladas ni composición química de cada lote. Wade (2003) atribuye indirectamente a Schenck un análisis de Vitamultin que habría detectado Pervitin, sin publicar aquí el ensayo químico original. No se deduce dependencia.",
+      "note": "El anexo XVI del CIR n.º 4 transcribe una pauta atribuida a las notas de Theodor Morell: «Vitamultin tablets, 4–6 a day, at meals». En el mismo anexo figura un ECG del 4 de mayo de 1944, PERO esa fecha no demuestra cuándo comenzó ni si se mantuvo la pauta de comprimidos. La traducción tiene además una referencia introductoria incompleta a «1 May 19__», sin año concluyente. El documento prueba la existencia de la anotación, no la ingestión efectiva, dosis acumuladas ni composición química de cada lote. Wade (2003) atribuye indirectamente a Schenck un análisis de Vitamultin que habría detectado Pervitin, sin publicar aquí el ensayo químico original. No se deduce dependencia. Un expediente oficial del Bundesarchiv (RH 12-23/1884) incluye documentación catalogada sobre la autorización de Vitamultin; los documentos interiores aún no se han consultado y la mera coexistencia con Pervitin en el archivo no implica identidad de ingredientes.",
       "source": "https://www.cia.gov/readingroom/docs/HITLER%2C%20ADOLF%20%20MEDICAL%20ASSESSMENT%20%28DI%20FILE%29_0004.pdf",
       "topic3d": "historia",
       "photo": "",
@@ -4463,6 +4538,45 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "topic3d": "historia",
       "photo": "",
       "x": 14410,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-barch-rh12-23-1884",
+      "name": "Bundesarchiv · RH 12-23/1884",
+      "kind": "Documento",
+      "subtitle": "Expediente 1939–1943 de medicina militar que incluye documentación sobre autorización de Vitamultin.",
+      "note": "La Deutsche Digitale Bibliothek registra el expediente del Bundesarchiv RH 12-23/1884 (signatura anterior H 20/285/7), perteneciente a la inspección sanitaria del Ejército. Su descripción incluye correspondencia sobre Pervitin, estadísticas de suministro de 1940 y «Zulassung von Vitamultin» (autorización de Vitamultin). Es solo una ficha de catálogo, no el examen de los documentos internos ni de fórmulas de fabricación. Que ambos preparados consten en el mismo legajo no significa que uno contuviera el otro; no demuestra la composición de Vitamultin-Forte ni de lotes especiales para Hitler.",
+      "source": "https://www.deutsche-digitale-bibliothek.de/item/DDEYAU3SJS44I25TUZ4VQXIB55VLEIIP",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 14660,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-schenck",
+      "name": "Ernst Günther Schenck",
+      "kind": "Persona",
+      "subtitle": "Médico del aparato sanitario de las SS; autor de estudios retrospectivos sobre Theodor Morell.",
+      "note": "Ernst Günther Schenck (1904–1998), médico y antiguo inspector de nutrición de las Waffen-SS, citado por Owen Wade (2003) como origen del relato de un presunto análisis de comprimidos Vitamultin. La National Library of Medicine cataloga su libro sobre Morell publicado en 1998. La identidad del autor y la existencia del libro están documentadas, pero no se ha podido examinar el supuesto informe químico original ni verificar directamente pasajes de esa edición sobre Pervitin. Su testimonio y posibles revisiones posteriores deben distinguirse de un análisis de laboratorio preservado.",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 14910,
+      "y": 5950,
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-schenck-1998",
+      "name": "Schenck · Hitlers Leibarzt und seine Medikamente (1998)",
+      "kind": "Obra",
+      "subtitle": "E. G. Schenck, biografía documental sobre Theodor Morell; Bublies, 1998, 559 páginas.",
+      "note": "Registro bibliográfico NLM ID 100935363 del libro de Ernst Günther Schenck «Prof. Dr. med. Theodor Gilbert Morell: Hitlers Leibarzt und seine Medikamente», publicado por Verlag S. Bublies en 1998, 559 páginas, ISBN 9783926584526. El registro establece autor, título, año y extensión; no demuestra las afirmaciones farmacológicas que puedan hacerse en su interior. Algunas fuentes secundarias atribuyen a Schenck una rectificación en 1998 sobre la exposición crónica a Pervitin; no se adopta esa cita ni se da por verificada sin consulta directa del libro y página.",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "topic3d": "historia",
+      "photo": "",
+      "x": 15140,
       "y": 5950,
       "podcastNotes": []
     }
@@ -4854,6 +4968,42 @@ window.IDEA_TELARANA_F74_REVIEW = {
       "source": "https://nuremberg.law.harvard.edu/transcripts/1-transcript-for-nmt-1-medical-case?seq=2389",
       "episodeId": "idealab-f74-frattini",
       "note": "Durante su testimonio del 03/02/1947, Karl Brandt afirmó haber sabido por un sirviente de un encargo de comprimidos con estricnina en enero de 1944 y de una dosis máxima diaria. Esa información es indirecta y contextualizada por su conflicto profesional con Morell, no certificación analítica del compuesto o de cuánto tomó Hitler.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-barch-catalogo-vitamultin",
+      "a": "f74-barch-rh12-23-1884",
+      "b": "f74-vitamultin",
+      "type": "Catálogo Bundesarchiv: el expediente contiene documentación sobre autorización de Vitamultin",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.deutsche-digitale-bibliothek.de/item/DDEYAU3SJS44I25TUZ4VQXIB55VLEIIP",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La descripción archivística de RH 12-23/1884 menciona «Zulassung von Vitamultin». Solo acredita que el catálogo identifica esa materia dentro del expediente, no su composición, autorización efectiva de una fórmula concreta ni relación química con Pervitin. El legajo físico no ha sido inspeccionado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-schenck-autor-1998",
+      "a": "f74-schenck",
+      "b": "f74-schenck-1998",
+      "type": "Autoría de obra sobre Morell, catalogada por la National Library of Medicine",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La NLM identifica a Ernst Günther Schenck como autor del libro de 1998, 559 páginas, ISBN 9783926584526. No se transcriben ni se consideran corroboradas sus conclusiones sin acceso a sus páginas.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f74-doc-schenck-libro-morell",
+      "a": "f74-schenck-1998",
+      "b": "f74-morell",
+      "type": "El libro de Schenck tiene por objeto al médico Theodor Morell",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363",
+      "episodeId": "idealab-f74-frattini",
+      "note": "La ficha NLM documenta tema, título y autor de la monografía de 1998. No documenta pruebas de que Vitamultin contuviera metanfetamina ni de su uso real en Hitler.",
       "podcastNotes": []
     }
   ]
