@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "scope": "Registro interno de 74 entradas, 71 fuentes distintas y tres duplicaciones de referencias. Cinco aportaciones manuales F70–F74 (Eric Frattini) tienen transcripciones completas en Google Docs con marcas temporales, leídas de vuelta, pero sin cotejo audiovisual. La web no publica esta tabla ni el texto completo de los documentos.",
   "total": 74,
   "counts": {
@@ -1357,7 +1357,7 @@
       "videoId": "KxrKZU9T_6I",
       "title": "Mossad, Irán, Marruecos y Gaza | Eric Frattini",
       "sourceUrl": "https://www.youtube.com/watch?v=KxrKZU9T_6I",
-      "status": "quinta_revision_iran_ataques_2025_mossad_anonymous_oiea_2026",
+      "status": "sexta_revision_operacion_midnight_hammer_evaluacion_oiea_20261119",
       "reviewComplete": false,
       "docTranscriptCreated": true,
       "transcriptDocHasFullText": true,
@@ -1366,13 +1366,13 @@
       "transcriptCharacters": 121620,
       "rawTranscriptAvailable": true,
       "transcriptStoredInDrive": true,
-      "sourceNodesDocumented": 26,
-      "sourceRelationsDocumented": 33,
+      "sourceNodesDocumented": 32,
+      "sourceRelationsDocumented": 42,
       "personsProfiled": 4,
       "impersonalAttributedSummaries": 20,
       "sourcePrimaryModule": "la-telarana/fuentes-70-74-frattini-inicial.js",
       "structuredProfiles": 4,
-      "verifiedIndependentChecks": 16,
+      "verifiedIndependentChecks": 25,
       "timecodedTranscriptSegmentsStoredInNativeDoc": 840,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
@@ -1383,8 +1383,8 @@
       "timelineEventIds": [
         "study-f73-israel-marruecos-declaracion-2020"
       ],
-      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F73 pasa a 16 nodos, 21 relaciones y 20 notas. 6 relaciones con evidencia externa (tratado Marruecos–Israel, acuerdos de 2020, infecciones CCN/Pegasus, explosiones ONU y portavoz citado por Reuters). Marruecos no se equipara a autor acreditado de Pegasus contra Sánchez: La Moncloa confirmó infección, no perpetrador. Emiratos y Baréin firmaron acuerdos 15/09/2020, antes de la normalización con Marruecos en diciembre, lo que debilita la causalidad atribuida a Mohamed VI. Un hito propio de 22/12/2020 y referencias cruzadas al 7/10, Pegasus 2022 y Líbano 2024 sin duplicar. Todos los tiempos proceden de transcripción manual sin cotejo audiovisual.\n18/11/2026 tercera pasada: +4 entidades y +4 aristas (informe Amnistía 01/10/2026 sobre DGST y Pegasus 2017–2021; decisión judicial española 22/01/2026 sin autor identificado). Evidencia de la ONG sobre DGST no demuestra autoría del espionaje al Gobierno español. 0 audio minutos cotejados.\n18/11 cuarta revisión: DGST y archivo judicial Pegasus de 22/01/2026 pasan a coincidir literalmente con entidades F69; fusión por nombre canónico existente en la web (sin perder el ID interno de cada fuente). El daño civil por buscapersonas pasa a comunicado ONU y la admisión política israelí permanece separada en Reuters. Ninguna operación sobre Pedro Sánchez se atribuye judicialmente a Marruecos.\n18/11 quinta revisión: +6 nodos (OIEA/Natanz canónicos, ataques junio 2025, acta ONU 20/06, noticia Reuters 13/06, intervención Grossi 27/10/2026) y +8 aristas: 4 hechos documentales 2025, 2 alegaciones sin verificación autónoma sobre comandos Mossad, 2 declaraciones OIEA transcritas mediante ASR ONU (contexto posterior a F73). 16 contrastes documentales clasificados; 0 minutos de audio cotejados. La intervención ASR ONU NO es acta oficial y la falta de inspección NO demuestra ni descarta un arma.",
-      "lastUpdated": "2026-11-18"
+      "qualityNotes": "Texto íntegro en Google Doc validado por lectura de vuelta. Capítulos y marcas temporales detectadas automáticamente; NO verificadas contra audio. Fichas iniciales con quién es cada entidad y qué dice Frattini; separar citas, hipótesis y documentos oficiales. Sin cierre editorial, cotejo de voces ni QA visual.\n13/11/2026: F73 pasa a 16 nodos, 21 relaciones y 20 notas. 6 relaciones con evidencia externa (tratado Marruecos–Israel, acuerdos de 2020, infecciones CCN/Pegasus, explosiones ONU y portavoz citado por Reuters). Marruecos no se equipara a autor acreditado de Pegasus contra Sánchez: La Moncloa confirmó infección, no perpetrador. Emiratos y Baréin firmaron acuerdos 15/09/2020, antes de la normalización con Marruecos en diciembre, lo que debilita la causalidad atribuida a Mohamed VI. Un hito propio de 22/12/2020 y referencias cruzadas al 7/10, Pegasus 2022 y Líbano 2024 sin duplicar. Todos los tiempos proceden de transcripción manual sin cotejo audiovisual.\n18/11/2026 tercera pasada: +4 entidades y +4 aristas (informe Amnistía 01/10/2026 sobre DGST y Pegasus 2017–2021; decisión judicial española 22/01/2026 sin autor identificado). Evidencia de la ONG sobre DGST no demuestra autoría del espionaje al Gobierno español. 0 audio minutos cotejados.\n18/11 cuarta revisión: DGST y archivo judicial Pegasus de 22/01/2026 pasan a coincidir literalmente con entidades F69; fusión por nombre canónico existente en la web (sin perder el ID interno de cada fuente). El daño civil por buscapersonas pasa a comunicado ONU y la admisión política israelí permanece separada en Reuters. Ninguna operación sobre Pedro Sánchez se atribuye judicialmente a Marruecos.\n18/11 quinta revisión: +6 nodos (OIEA/Natanz canónicos, ataques junio 2025, acta ONU 20/06, noticia Reuters 13/06, intervención Grossi 27/10/2026) y +8 aristas: 4 hechos documentales 2025, 2 alegaciones sin verificación autónoma sobre comandos Mossad, 2 declaraciones OIEA transcritas mediante ASR ONU (contexto posterior a F73). 16 contrastes documentales clasificados; 0 minutos de audio cotejados. La intervención ASR ONU NO es acta oficial y la falta de inspección NO demuestra ni descarta un arma.\n19/11 sexta revisión: +6 nodos (Estados Unidos, Midnight Hammer, Fordow, Isfahán, comparecencia del Pentágono, GOV/2025/50) y +9 vínculos documentales. La intervención de EE. UU. del 22/06/2025 es distinta de la campaña israelí iniciada el 13/06. Cinco aristas registran declaraciones oficiales del Pentágono y cuatro documentan evaluación institucional del OIEA. Daños satelitales sin inspección interna, inventario de uranio enriquecido estimado a 13/06 y pérdida posterior de continuidad de conocimiento. Cero cotejos audiovisuales nuevos; sin incremento artificial del porcentaje.",
+      "lastUpdated": "2026-11-19"
     },
     {
       "order": 74,
