@@ -15,10 +15,10 @@ window.IDEA_TELARANA_F70_REVIEW = {
     "lastMarker": "01:37:14",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "cuarta_revision_vatileaks_sentencias_primarias_2012_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados.",
-    "independentDocumentaryRelations": 17,
-    "explicitContradictionReviews": 4
+    "reviewStage": "quinta_revision_224m_ambrosiano_benedicto_contraste_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados. Quinta revisión (19/11/2026): recuperado Google Doc privado de transcripción F70; 1:17:24 pregunta por «224 millones» y «responsabilidad moral» SIN moneda; la respuesta 1:17:31–44 los atribuye a Benedicto XVI/abusos. Se documenta de forma independiente la firma el 25/05/1984 del acuerdo IOR–acreedores del Banco Ambrosiano (Banca d'Italia, 1984) y el reporte UPI julio 1984 de 240,9 millones de USD abonados. Otras fuentes posteriores citan 224 millones USD, no euros: importes no conciliados aún con recibos primarios. Se califica como discrepancia plausible y atribución no comprobada, NO confusión demostrada del interlocutor; audio sin cotejar y nota existente sin inventar moneda.",
+    "independentDocumentaryRelations": 22,
+    "explicitContradictionReviews": 5
   },
   "nodes": [
     {
@@ -26,7 +26,7 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "name": "Podcast · Fuente 70 · Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Fratt",
       "kind": "Fuente",
       "subtitle": "Tiene Sentido Pódcast",
-      "note": "Texto aportado en Google Doc privado con marcas temporales. No se ha cotejado el audio ni la atribución de todas las intervenciones. El resumen público solo representa una primera lectura de capítulos.",
+      "note": "Texto aportado en Google Doc privado con marcas temporales. No se ha cotejado el audio ni la atribución de todas las intervenciones. El resumen público solo representa una primera lectura de capítulos. Quinta revisión (19/11/2026): el pasaje hacia 1:17:24 pregunta por 224 millones sin expresar moneda; la respuesta de Frattini menciona a Benedicto XVI y abusos. Documentación primaria de Banca d'Italia demuestra acuerdo IOR–Banco Ambrosiano de 1984 y prensa de aquel año recoge valores en dólares. No identificar de manera concluyente el referente exacto de la pregunta sin audio y contexto adicional.",
       "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ",
       "topic3d": "iglesia",
       "photo": "",
@@ -40,7 +40,7 @@ window.IDEA_TELARANA_F70_REVIEW = {
           "timeSec": 4644,
           "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4644s",
           "status": "alegacion_no_verificada",
-          "text": "Frattini alude a una cifra de 224 millones de euros relacionada con asuntos del Vaticano; su concepto, cuantía y atribución no están comprobados documentalmente en esta revisión."
+          "text": "El texto de transcripción hacia 1:17:24 recoge pregunta sobre 224 millones por «responsabilidad moral», sin especificar moneda, y respuesta que los atribuye a una decisión de Benedicto XVI por abusos sexuales. El acuerdo IOR–acreedores Ambrosiano (25/05/1984) se documenta independientemente; la similitud de cifras y fórmula no demuestra que el interlocutor se refiera a ese expediente. El pago de 240,9 millones USD fue referido en prensa contemporánea. No se ha cotejado el audio."
         }
       ]
     },
@@ -403,6 +403,81 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "x": 13250,
       "y": 4580,
       "podcastNotes": []
+    },
+    {
+      "id": "f70-ambrosiano",
+      "name": "Banco Ambrosiano",
+      "kind": "Institución financiera histórica",
+      "subtitle": "Entidad italiana en liquidación tras el colapso de 1982, relacionada financieramente con el IOR.",
+      "note": "La Banca d'Italia describió en su Bollettino Economico de 1984 la crisis y liquidación del Banco Ambrosiano y la relación de sus filiales extranjeras con el Instituto para las Obras de Religión (IOR), incluyendo sociedades panameñas respaldadas por cartas de patronazgo. El Banco Ambrosiano NO equivale al IOR, ni a la Secretaría de Estado. Un acuerdo por sus pasivos no es una indemnización por abusos sexuales.",
+      "source": "https://www.bancaditalia.it/pubblicazioni/bollettino-economico/1984-2/boleco_3_84.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13000,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-banca-italia-1984",
+      "name": "Banca d'Italia · revisión Banco Ambrosiano (1984)",
+      "kind": "Documento institucional",
+      "subtitle": "Bollettino Economico 1984, sección documentos, páginas impresas 42*–44*, sobre crisis y acuerdo.",
+      "note": "Documento primario del banco central de Italia, Bollettino Economico 1984, sección Documenti, págs. impresas 42*–44*: detalla el colapso de filiales extranjeras, su relación financiera con el IOR y el acuerdo firmado el 25 de mayo de 1984. El texto no establece una indemnización por abusos sexuales ni un pago ordenado por Benedicto XVI. El importe pagado específico no se cuantifica en el pasaje consultado y debe cotejarse con información contemporánea separada.",
+      "source": "https://www.bancaditalia.it/pubblicazioni/bollettino-economico/1984-2/boleco_3_84.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13230,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-acuerdo-ambrosiano-1984",
+      "name": "Acuerdo IOR–acreedores Ambrosiano (25/05/1984)",
+      "kind": "Acuerdo financiero histórico",
+      "subtitle": "Transacción negociada sobre acreedores de filiales del Banco Ambrosiano, formalizada en Ginebra en 1984.",
+      "note": "La Banca d'Italia verifica un conjunto de acuerdos firmados el 25/05/1984 que incluía pacto entre IOR, liquidadores y bancos acreedores de filiales del Ambrosiano. Crónicas contemporáneas cifraron compromiso de pago único en alrededor de 241 millones de dólares; UPI informó en julio de 1984 de un desembolso de 240,9 millones de dólares. Otras fuentes retrospectivas hablan de 224 millones de dólares: existe variación entre referencias históricas que impide fijar ese valor como cantidad liquidada sin conciliar documentos de la transacción. La motivación divulgada era solución negociada y responsabilidad moral; no casos de abusos sexuales.",
+      "source": "https://www.bancaditalia.it/pubblicazioni/bollettino-economico/1984-2/boleco_3_84.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13460,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-upi-pago-1984",
+      "name": "UPI · noticia del pago de julio de 1984",
+      "kind": "Documento periodístico",
+      "subtitle": "United Press International, 3/07/1984: pago comunicado de 240,9 millones USD a acreedores extranjeros.",
+      "note": "Crónica UPI de 3/07/1984 que atribuye a fuentes del Vaticano un pago de 240,9 millones de dólares a acreedores extranjeros del Banco Ambrosiano, conforme al acuerdo de mayo de 1984. La cifra es un reporte periodístico contemporáneo basado en fuentes, NO una transferencia bancaria aquí examinada. El reportaje AFP publicado por El País el 26/05/1984 también describe compromiso de 241 millones USD. No equiparar estas cifras con la referencia retrospectiva de 224 millones ni expresar dólares como euros.",
+      "source": "https://www.upi.com/Archives/1984/07/03/The-Vatican-has-paid-2409-million-to-the-foreign/1295457675200/",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13690,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-afirmacion-224-millones",
+      "name": "F70 · atribución de 224 millones a Benedicto XVI",
+      "kind": "Afirmación de entrevista",
+      "subtitle": "Transcripción privada con ancla ~1:17:24–1:17:44, todavía sin cotejo del audio.",
+      "note": "Según el texto de transcripción del episodio, hacia 1:17:24 el entrevistador pregunta por «224 millones por responsabilidad moral» sin señalar moneda; hacia 1:17:31–44 Frattini lo atribuye a una decisión de Benedicto XVI por casos de abusos sexuales en Estados Unidos. Las cifras históricas divulgadas de «224 millones» y «responsabilidad moral» remiten también, con denominación en USD, al acuerdo IOR–Banco Ambrosiano de 1984, dos décadas antes del pontificado de Benedicto XVI (2005–2013). Esto constituye una discrepancia de contexto plausible, pero sin audio cotejado ni identificación expresa de Banco Ambrosiano en ese turno no se puede demostrar qué referencia concreta tenía en mente la pregunta. No presentar el importe, moneda o causa de indemnizaciones como hecho probado.",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4644s",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13920,
+      "y": 4960,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 4644,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4644s",
+          "status": "alegacion_no_verificada",
+          "text": "La transcripción recoge una pregunta por 224 millones y «responsabilidad moral» y una respuesta que los vincula a Benedicto XVI y abusos sexuales. La moneda no consta en ese pasaje; el audio no ha sido cotejado. La referencia histórica a pagos del IOR por Ambrosiano (1984) requiere diferenciarse de este relato."
+        }
+      ]
     }
   ],
   "edges": [
@@ -758,6 +833,90 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/01/0701/01611.html",
       "episodeId": "idealab-f70-frattini",
       "note": "Ambos estuvieron inicialmente en un procedimiento con instrucción relacionada; separados los procesos el 29/09/2012, Sciarpelletti condenado solo por favorecimiento personal. No hay condena judicial contra Sciarpelletti por participación en el hurto agravado atribuido a Gabriele.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-mention-224m",
+      "a": "f70-episodio",
+      "b": "f70-afirmacion-224-millones",
+      "type": "En el texto del episodio se plantea una cifra de 224 millones por responsabilidad moral, moneda no indicada",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4644s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Ancla de transcripción 1:17:24: pregunta por 224 millones, sin moneda indicada. La atribución de turnos y el audio no están verificados; no equiparar la cifra con importes contables históricos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-224m-benedicto",
+      "a": "f70-afirmacion-224-millones",
+      "b": "f70-benedicto",
+      "type": "Frattini atribuye el pago a Benedicto XVI y reparaciones por abusos, sin documento respaldatorio",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4644s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "En la transcripción, hacia 1:17:31–44 el entrevistado atribuye el pago a una decisión de Benedicto XVI por abusos sexuales en Estados Unidos. No se aporta acto, fecha, moneda o expediente financiero que confirme esa atribución. Una referencia similar a responsabilidad moral existió en el acuerdo del IOR con acreedores del Ambrosiano en 1984; no afirmar que el entrevistador se refería con certeza a éste.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-banco-italia-ambrosiano",
+      "a": "f70-banca-italia-1984",
+      "b": "f70-ambrosiano",
+      "type": "El banco central italiano documentó la crisis y liquidación del Ambrosiano en 1984",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.bancaditalia.it/pubblicazioni/bollettino-economico/1984-2/boleco_3_84.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Banca d'Italia, Bollettino Economico 1984, Documenti, pp. 42*–44*, explica crisis, liquidación de 1982, filiales y relación con IOR. No es prueba de abuso sexual ni involucra a Benedicto XVI.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-ior-ambrosiano",
+      "a": "f70-ior",
+      "b": "f70-ambrosiano",
+      "type": "Relaciones financieras y negociación oficial IOR–Banco Ambrosiano",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.bancaditalia.it/pubblicazioni/bollettino-economico/1984-2/boleco_3_84.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Banca d'Italia, documentos de 1984, documenta exposición de filiales frente al IOR y sociedades asistidas por cartas de patronage. La negociación fue financiera, no sobre indemnizaciones por abusos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-italia-acuerdo-1984",
+      "a": "f70-banca-italia-1984",
+      "b": "f70-acuerdo-ambrosiano-1984",
+      "type": "Banca d'Italia confirma el acuerdo de Ginebra de 25 de mayo de 1984",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.bancaditalia.it/pubblicazioni/bollettino-economico/1984-2/boleco_3_84.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Bollettino Economico 1984, p. 44*, fecha exactamente 25/05/1984 para la firma del conjunto de acuerdos de liquidación y acreedores, incluyendo convenio con IOR.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-ior-acuerdo-1984",
+      "a": "f70-ior",
+      "b": "f70-acuerdo-ambrosiano-1984",
+      "type": "El IOR fue parte del acuerdo financiero de mayo de 1984",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.bancaditalia.it/pubblicazioni/bollettino-economico/1984-2/boleco_3_84.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El texto de Banca d'Italia describe convenio entre IOR y entidades acreedoras/liquidadores. Esa participación no prueba aceptación de responsabilidad penal; se negoció un arreglo financiero.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-upi-pago-1984",
+      "a": "f70-upi-pago-1984",
+      "b": "f70-acuerdo-ambrosiano-1984",
+      "type": "UPI informó en julio de 1984 del desembolso de 240,9 millones USD",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.upi.com/Archives/1984/07/03/The-Vatican-has-paid-2409-million-to-the-foreign/1295457675200/",
+      "episodeId": "idealab-f70-frattini",
+      "note": "UPI (3/07/1984) atribuyó a fuentes del Vaticano que se habían abonado 240,9 millones de dólares a acreedores del Ambrosiano. Cifra periodística de pago reportado, no comprobación propia de transferencia; distinta de las referencias de 224 millones USD, de 241 millones comprometidos y de una cifra en euros.",
       "podcastNotes": []
     }
   ]
