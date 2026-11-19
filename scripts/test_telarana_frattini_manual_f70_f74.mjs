@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[105,28,30,57,28],expectedEdges=[181,36,38,78,35],
+const expectedNodes=[105,28,30,78,28],expectedEdges=[181,36,38,106,35],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -73,7 +73,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===86&&totalExternal===270,
+assert(totalNotes===90&&totalExternal===287,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -432,7 +432,7 @@ assert(f72Iran.nodes.find(n=>n.id==="f72-informe-oiea-2015")?.note.includes("201
 
 
 const f73Iran=ctx.window.IDEA_TELARANA_F73_REVIEW;
-assert(f73Iran.metadata.independentDocumentaryRelations===58,
+assert(f73Iran.metadata.independentDocumentaryRelations===75,
  "F73: recuento documental no conciliado");
 for(const id of ["f73-doc-israel-ataques-jun2025","f73-doc-ataques-natanz-2025",
  "f73-doc-oiea-acta-onu-2025","f73-doc-acta-natanz-2025"]){
@@ -462,7 +462,7 @@ for(const [a,b] of [["f72-oiea","f73-oiea"],["f72-natanz","f73-natanz"]]){
 // Sexta revisión: Midnight Hammer de EE. UU. no es sinónimo de la
 // operación israelí del 13/06 ni valida atribuciones al Mossad.
 const f73June=ctx.window.IDEA_TELARANA_F73_REVIEW;
-assert(f73June.metadata.independentDocumentaryRelations===58&&f73June.metadata.verifiedMinuteReferences===0,
+assert(f73June.metadata.independentDocumentaryRelations===75&&f73June.metadata.verifiedMinuteReferences===0,
  "F73: ampliar respaldo documental no equivale a audio verificado");
 const statements=[
  "f73-doc-eeuu-midnight-hammer","f73-doc-midnight-fordow","f73-doc-midnight-natanz",
@@ -516,7 +516,7 @@ assert(c73.edges.find(x=>x.id==="f73-doc-haniyeh-muerte-2024")?.claimStatus==="h
  "F73: la muerte de Haniyeh no está documentada");
 assert(!c73.edges.some(x=>x.a==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.b)||x.b==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.a)),
  "F73: no crear aristas de Mossad a asesinatos por inferencias");
-assert(c72.metadata.independentDocumentaryRelations===23&&c73.metadata.independentDocumentaryRelations===58,
+assert(c72.metadata.independentDocumentaryRelations===23&&c73.metadata.independentDocumentaryRelations===75,
  "F72/F73: metadatos de relaciones documentales desincronizados");
 
 
@@ -631,10 +631,36 @@ for(const id of ["f73-alleg-f73-marruecos-sanchez","f73-alleg-f73-sanchez-marrue
  assert(edge?.claimStatus==="alegacion_no_verificada"&&edge.confidence==="hipotesis",
   "F73: inferencia de autoría marroquí presentada como hecho: "+id);
 }
-assert(f73Pegasus.metadata.independentDocumentaryRelations===58&&
+assert(f73Pegasus.metadata.independentDocumentaryRelations===75&&
  f73Pegasus.metadata.transcriptAudioMatched===false&&f73Pegasus.metadata.verifiedMinuteReferences===0&&
  reg.sourceCatalog.entries.find(x=>x.order===73)?.analysisCoverage.percent===26,
  "F73: cobertura heurística y minutos acústicos indebidamente incrementados");
+// Novena revisión F73: distinguir detección/avisos previos, autoría y complacencia deliberada.
+const f73Oct=ctx.window.IDEA_TELARANA_F73_REVIEW;
+for(const x of ["hamas","ataque-7oct-2023","shinbet","aman","unidad8200","plan-jericho-walls","toi-investigacion-2025","idf-inquiries-oct7","declaracion-halevi-feb2025","onu-comision-2024","onu-informe-ahrc56-26","david-barnea","barnea-biografia-2021","advertencia-egipto-2023","mccaul-2023","advertencia-emiratos-2026","desmentido-uae-netanyahu-2026","afirmacion-shinbet-culpa","afirmacion-israel-sabia","afirmacion-dos-avisos","afirmacion-barnea-shinbet"]){
+ assert(f73Oct.nodes.some(n=>n.id==="f73-"+x&&n.note.length>120),"F73: ficha 7/10 incompleta "+x);
+}
+const claimed=["afirmacion-shinbet-culpa","afirmacion-israel-sabia","afirmacion-dos-avisos","afirmacion-barnea-shinbet"];
+const expected=[4078,4326,4392,4443];
+for(let i=0;i<claimed.length;i++){
+ const n=f73Oct.nodes.find(n=>n.id==="f73-"+claimed[i]);
+ assert(n.podcastNotes.length===1&&n.podcastNotes[0].timeSec===expected[i]&&
+ n.podcastNotes[0].status==="alegacion_no_verificada"&&n.source.includes("youtube.com")&&
+ !n.source.includes("docs.google.com"),"F73: minuto de ASR o privacidad alterados");
+}
+assert(f73Oct.nodes.find(n=>n.id==="f73-plan-jericho-walls").note.includes("no se ha consultado")&&
+ f73Oct.nodes.find(n=>n.id==="f73-advertencia-emiratos-2026").note.includes("no confirmó oficialmente")&&
+ f73Oct.nodes.find(n=>n.id==="f73-barnea-biografia-2021").note.includes("Tzomet"),
+ "F73: errores en Jericho, aviso emiratí o historial Barnea");
+for(const id of ["f73-alleg-frattini-shinbet","f73-alleg-frattini-foreknowledge","f73-alleg-emiratos-advertencia","f73-alleg-egipto-advertencia","f73-alleg-frattini-barnea"]){
+ const e=f73Oct.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="alegacion_no_verificada"&&e.confidence==="hipotesis",
+  "F73: conocimientos, autoría o complicidad no verificados dados por hechos "+id);
+}
+assert(f73Oct.metadata.independentDocumentaryRelations===75&&
+ f73Oct.metadata.transcriptAudioMatched===false&&f73Oct.metadata.verifiedMinuteReferences===0&&
+ reg.sourceCatalog.entries.find(x=>x.order===73)?.analysisCoverage.percent===26,
+ "F73: cobertura y audio no deben inflarse por contrastes externos");
 // Cruce de entidades F69–F72–F73: los nombres canónicos fusionan fichas, no atribuyen operaciones.
 const f69ctx={window:{}};
 vm.runInNewContext(read("la-telarana/podcast-vaquero-150.js"),f69ctx,{timeout:8000});
