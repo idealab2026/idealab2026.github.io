@@ -118,7 +118,7 @@ assert(f72Iran.nodes.find(n=>n.id==="f72-informe-oiea-2015")?.note.includes("201
 
 
 const f73Iran=ctx.window.IDEA_TELARANA_F73_REVIEW;
-assert(f73Iran.metadata.independentDocumentaryRelations===16,
+assert(f73Iran.metadata.independentDocumentaryRelations===25,
  "F73: recuento documental no conciliado");
 for(const id of ["f73-doc-israel-ataques-jun2025","f73-doc-ataques-natanz-2025",
  "f73-doc-oiea-acta-onu-2025","f73-doc-acta-natanz-2025"]){
