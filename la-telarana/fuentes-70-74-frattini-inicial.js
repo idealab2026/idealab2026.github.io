@@ -15,10 +15,10 @@ window.IDEA_TELARANA_F70_REVIEW = {
     "lastMarker": "01:37:14",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "tercera_revision_control_externo_asif_moneyval_proceso_financiero",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados.",
-    "independentDocumentaryRelations": 10,
-    "explicitContradictionReviews": 3
+    "reviewStage": "cuarta_revision_vatileaks_sentencias_primarias_2012_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados.",
+    "independentDocumentaryRelations": 17,
+    "explicitContradictionReviews": 4
   },
   "nodes": [
     {
@@ -338,6 +338,71 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "x": 12240,
       "y": 4920,
       "podcastNotes": []
+    },
+    {
+      "id": "f70-tribunal-vaticano",
+      "name": "Tribunal del Estado de la Ciudad del Vaticano",
+      "kind": "Institución judicial",
+      "subtitle": "Órgano de justicia estatal que conoció las causas penales del caso Vatileaks de 2012.",
+      "note": "El Tribunal del Estado de la Ciudad del Vaticano dictó la sentencia del 6/10/2012 en el proceso a Paolo Gabriele (prot. 8/12) y la del 10/11/2012 en el proceso separado a Claudio Sciarpelletti (prot. 19/12). El contenido de las decisiones se consulta directamente en los textos originales publicados por la Sala Stampa vaticana; la existencia de procedimientos individuales no implica que el tribunal declarara probada una red de filtraciones o corrupción generalizada.",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/10/06/0566/01290.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13000,
+      "y": 4300,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-sentencia-gabriele-2012",
+      "name": "Sentencia judicial contra Paolo Gabriele (6/10/2012)",
+      "kind": "Documento judicial",
+      "subtitle": "Tribunal vaticano, prot. 8/12, fallo por hurto agravado publicado el 6 de octubre de 2012.",
+      "note": "En fallo original del 6 de octubre de 2012, el Tribunal declaró a Paolo Gabriele culpable de sustracción con abuso de confianza, tipificada conforme al art. 404, primer párrafo, n.º 1 del Código Penal vaticano. Estableció pena de 3 años y la REDUJO, por atenuantes indicadas expresamente, a 1 año y 6 meses; impuso costas. La pena efectiva del fallo no fue de tres años. El texto motivado publicado el 23 de octubre de 2012 ofrece las limitaciones y controversias de prueba. Sentencia sobre hechos procesados, no prueba de red conspirativa ni financiación de terceros.",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/10/06/0566/01290.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13250,
+      "y": 4300,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-firmeza-gabriele-2012",
+      "name": "Comunicado sobre firmeza de sentencia (25/10/2012)",
+      "kind": "Documento institucional",
+      "subtitle": "Declaración del portavoz Federico Lombardi sobre falta de apelación y ejecución de sentencia.",
+      "note": "Federico Lombardi, portavoz de la Santa Sede, declaró el 25/10/2012 que, al no haberse presentado apelación contra la sentencia del 6/10/2012, esta adquirió firmeza y el promotor de justicia dispuso su ejecución penitenciaria ese día. Es declaración institucional de la fase procesal, anterior al indulto comunicado el 22/12/2012. Firmeza de sentencia no excluye ejercicio posterior de la gracia papal.",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/10/25/0610/01389.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13500,
+      "y": 4300,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-sciarpelletti",
+      "name": "Claudio Sciarpelletti",
+      "kind": "Persona",
+      "subtitle": "Empleado de la Secretaría de Estado vaticana, procesado separadamente por favorecimiento en Vatileaks.",
+      "note": "Claudio Sciarpelletti fue acusado de favorecimiento personal, art. 225 del Código Penal; la instrucción no permitió proceder por violación de secreto ni colaboración en el hurto agravado por insuficiencia probatoria. La vista se separó del caso Gabriele el 29/09/2012. Sentencia dictada 10/11/2012, depositada y publicada 01/12/2012: condenado por favorecimiento a cuatro meses reducidos a dos y ejecución suspendida durante cinco años. No fue condenado por el hurto de Gabriele ni se acredita una red organizada.",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/01/0701/01611.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13000,
+      "y": 4580,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-sentencia-sciarpelletti-2012",
+      "name": "Sentencia judicial contra Sciarpelletti (10/11/2012)",
+      "kind": "Documento judicial",
+      "subtitle": "Tribunal vaticano, prot. 19/12; fallo dictado 10/11 y publicado 01/12/2012.",
+      "note": "El Tribunal condenó a Sciarpelletti por favorecimiento personal a cuatro meses y redujo a dos meses por atenuantes, con ejecución de la pena suspendida por cinco años. El propio fallo describe separación de causas y rechazo de las imputaciones iniciales de violación del secreto y complicidad en el hurto por falta de pruebas suficientes. Fecha del fallo 10/11/2012; depósito y publicación íntegra 01/12/2012. Distinguir favorecimiento posterior de participación en sustracción original; la sentencia no prueba conspiración de la Curia.",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/01/0701/01611.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 13250,
+      "y": 4580,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -609,6 +674,90 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "source": "https://www.vaticannews.va/en/vatican-city/news/2026-03/holy-see-partial-mistrial-financial-management-court-appeals.html",
       "episodeId": "idealab-f70-frattini",
       "note": "Según comunicación de Vatican News del 17/03/2026, el Tribunal de Apelación ordenó repetir parcialmente actuaciones del caso de fondos de la Santa Sede por defectos procesales; no anuló íntegramente los efectos jurídicos de la primera instancia. Caso no atribuible de forma automática al IOR ni al contenido del podcast.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-tribunal-gabriele-fallo",
+      "a": "f70-tribunal-vaticano",
+      "b": "f70-sentencia-gabriele-2012",
+      "type": "Tribunal vaticano emitió sentencia contra Gabriele el 6/10/2012",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/10/06/0566/01290.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La fuente judicial original, prot. 8/12, acredita la existencia de la sentencia dictada el 6/10/2012. No se infiere del proceso una red criminal ajena a la causa.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-gabriele-condena",
+      "a": "f70-sentencia-gabriele-2012",
+      "b": "f70-gabriele",
+      "type": "Hurto agravado: tres años establecidos, reducidos a 18 meses por atenuantes",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/10/06/0566/01290.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Fallo de 06/10/2012: declaración de culpabilidad por hurto con abuso de confianza; pena inicial tres años, reducida explícitamente a un año y seis meses por atenuantes. No afirmar que cumplió los tres años ni que la pena fue de tres años efectivos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-gabriele-firme",
+      "a": "f70-firmeza-gabriele-2012",
+      "b": "f70-gabriele",
+      "type": "Sentencia firme sin apelación y orden de ejecución el 25/10/2012",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/10/25/0610/01389.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El portavoz Federico Lombardi comunicó que la sentencia del 6/10/2012 era firme por ausencia de recurso y que el promotor dispuso ese 25/10/2012 su ejecución. No es la fecha del indulto, que se produjo el 22/12/2012.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-tribunal-sciarpelletti",
+      "a": "f70-tribunal-vaticano",
+      "b": "f70-sentencia-sciarpelletti-2012",
+      "type": "Causa 19/12; fallo sobre Sciarpelletti separado del de Gabriele",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/01/0701/01611.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Sentencia original contra Claudio Sciarpelletti, dictada el 10/11/2012 y depositada el 01/12/2012; procedimiento judicial distinto del de Paolo Gabriele, no una condena común de una supuesta organización.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-sciarpelletti-condena",
+      "a": "f70-sentencia-sciarpelletti-2012",
+      "b": "f70-sciarpelletti",
+      "type": "Favorecimiento: cuatro meses reducidos a dos y pena suspendida cinco años",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/01/0701/01611.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El Tribunal condenó por favorecimiento personal (art. 225), no por robo de documentos: cuatro meses de prisión reducidos a dos por atenuantes; ejecución suspendida por cinco años. El proceso concluyó con esta calificación diferenciada.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-dos-procesos-conexos",
+      "a": "f70-sentencia-sciarpelletti-2012",
+      "b": "f70-sentencia-gabriele-2012",
+      "type": "Dos procedimientos relacionados, separados el 29/09/2012",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/01/0701/01611.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La sentencia Sciarpelletti explica que el 29/09/2012 se dividió el juicio inicialmente seguido por ambos: Gabriele (hurto agravado) y Sciarpelletti (favorecimiento personal). La conexión procesal no acredita implicación conjunta en el hurto ni existencia de red criminal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-sciarpelletti-gabriele-vinculo",
+      "a": "f70-sciarpelletti",
+      "b": "f70-gabriele",
+      "type": "Coincidencia en instrucción Vatileaks; responsabilidades penales distintas",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2012/12/01/0701/01611.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Ambos estuvieron inicialmente en un procedimiento con instrucción relacionada; separados los procesos el 29/09/2012, Sciarpelletti condenado solo por favorecimiento personal. No hay condena judicial contra Sciarpelletti por participación en el hurto agravado atribuido a Gabriele.",
       "podcastNotes": []
     }
   ]

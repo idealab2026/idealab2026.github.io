@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,28,30,38,28],expectedEdges=[20,36,38,47,35],
+const expectedNodes=[21,28,30,38,28],expectedEdges=[27,36,38,47,35],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===111,
+assert(totalNotes===78&&totalExternal===118,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -81,10 +81,30 @@ assert(history72.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),
   "F73 requiere vínculo cruzado con el hito F72, no duplicación");
 
 const f70=ctx.window.IDEA_TELARANA_F70_REVIEW;
-assert(f70.metadata.explicitContradictionReviews===3&&f70.metadata.transcriptAudioMatched===false,
+assert(f70.metadata.explicitContradictionReviews===4&&f70.metadata.transcriptAudioMatched===false,
  "F70: conservar tres contrastes documentales sin atribuir escucha del audio");
-assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===10,
+assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===17,
  "F70: diez relaciones con evidencia oficial, no confundir las menciones");
+// F70 cuarta pasada: fuente judicial primaria y separación de responsabilidades.
+for(const id of ["f70-tribunal-vaticano","f70-sentencia-gabriele-2012",
+ "f70-firmeza-gabriele-2012","f70-sciarpelletti","f70-sentencia-sciarpelletti-2012"]){
+ const n=f70.nodes.find(x=>x.id===id);
+ assert(n?.source.includes("press.vatican.va/")&&n.note.length>90,
+  "F70: falta nodo judicial Vatileaks "+id);
+}
+for(const id of ["f70-doc-tribunal-gabriele-fallo","f70-doc-gabriele-condena",
+ "f70-doc-gabriele-firme","f70-doc-tribunal-sciarpelletti","f70-doc-sciarpelletti-condena",
+ "f70-doc-dos-procesos-conexos","f70-doc-sciarpelletti-gabriele-vinculo"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="hecho_verificado_independiente"&&e.source.includes("press.vatican.va")&&
+  e.confidence==="documentado"&&e.note.length>60,
+  "F70: falta referencia judicial precisa "+id);
+}
+assert(f70.nodes.find(x=>x.id==="f70-sentencia-gabriele-2012")?.note.includes("REDUJO")&&
+ f70.nodes.find(x=>x.id==="f70-sentencia-sciarpelletti-2012")?.note.includes("suspendida")&&
+ f70.metadata.independentDocumentaryRelations===17&&
+ f70.metadata.transcriptAudioMatched===false&&f70.metadata.verifiedMinuteReferences===0,
+ "F70: no confundir pena inicial, pena final, suspensión y escucha de audio");
 for(const e of ["f70-doc-archive-access","f70-doc-archive-rename-2019","f70-doc-pio-xii-open-2020",
  "f70-doc-francisco-praedicate","f70-doc-praedicate-curia","f70-doc-ior-2025-report",
  "f70-doc-moneyval-2024","f70-doc-asif-ior-2025","f70-doc-apelacion-fondos-2026"]){
