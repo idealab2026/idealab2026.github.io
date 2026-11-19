@@ -45,6 +45,10 @@ for(let i=0;i<videos.length;i++){
    "No dar por cotejados los turnos y minutajes de F"+n);
  const row=reg.sourceCatalog.entries.find(x=>x.order===n),review=reg.inReview.find(x=>x.order===n);
  assert(row&&review&&row.videoId===videos[i],"Falta seguimiento de F"+n);
+ assert(row.analysisCoverage.signals.entities===mod.nodes.length&&
+  row.analysisCoverage.signals.relations===mod.edges.length&&
+  row.analysisCoverage.signals.independentChecks===documented.length,
+  "Se desincronizo el contador publico del catalogo F"+n);
  assert(row.tracking.docTranscriptionCreated&&row.tracking.manualTranscriptReceived&&row.tracking.transcriptContentImported,
    "La transcripción manual de F"+n+" no está registrada como recibida");
  assert(row.tracking.transcriptCharactersReadBack>100000&&row.tracking.manualTimestampMarkers===expectedMarkers[i],
