@@ -107,6 +107,11 @@ assert(f70.edges.find(x=>x.id==="f70-stmt-aul-2017-alega")?.claimStatus==="hecho
   f70.edges.find(x=>x.id==="f70-alleg-aul-legionarios-influencia")?.claimStatus==="alegacion_no_verificada"&&
   f70.metadata.transcriptAudioMatched===false&&f70.metadata.verifiedMinuteReferences===0,
   "F70: pretensiones procesales indebidamente equiparadas a fraude probado o audio verificado");
+for(const id of ["f70-mention-cepillo-sin-recibo","f70-mention-cepillo-obolo","f70-mention-maciel-episodio"]){
+ const mention=f70.edges.find(e=>e.id===id);
+ assert(mention?.claimStatus==="mencion_temporizada_sin_cotejo_audio"&&mention.confidence==="hipotesis",
+ "F70: mención ASR no debe constar documentada sin cotejo audio: "+id);
+}
 // F70: control de decisiones Dauray 2012, Fleet 2001/2003 y desprecinto 2013.
 for(const id of ["f70-fallo-dauray-superior-2012","f70-analisis-subsidiario-dauray-2012","f70-litigio-fleet-2001","f70-acuerdo-fleet-2003","f70-fideicomiso-gabrielle-1987","f70-fideicomiso-timothy-charitable","f70-poder-bannon-2000","f70-criterios-inversion-1999","f70-codicilo-brackett-2002","f70-christopher-brackett","f70-fallo-desprecinto-2013","f70-medios-acceso-2013","f70-riesgo-fiduciario-alegado","f70-carta-maciel-1991","f70-jose-alonso"]){
  assert(f70.nodes.some(n=>n.id===id&&n.note.length>110),"F70: nueva fuente incompleta "+id);
