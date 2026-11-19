@@ -1327,9 +1327,9 @@ window.IDEA_TELARANA_F72_REVIEW = {
     "lastMarker": "03:07:18",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "quinta_revision_archivo_iran_2018_oiea_2015_distincion_probatoria_20261118",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: ENISA 2010 confirma funcionamiento y software industrial objetivo de Stuxnet, no autoría estatal. Dos relaciones técnicas incorporadas como contexto externo; sin cotejo del audio. Cuarta revisión 18/11/2026: la arista de víctimas por buscapersonas se respalda con comunicado ONU (18/09/2024); declaración portavoz israelí queda documentada por Reuters en F73, sin concluir que una unidad concreta del Mossad ejecutara el operativo. Quinta revisión 18/11/2026: se distinguen cuatro hechos documentales de las inferencias sobre la operación clandestina: discurso público de Netanyahu (30/04/2018), evaluación GOV/2015/68 del OIEA, declaración de 01/05/2018 y su reiteración de las conclusiones de 2015. No se confunde la presentación de una acusación con su validación técnica ni la falta de indicios después de 2009 (evaluada en 2015) con una conclusión sobre la situación de 2026. Audio de F72 no cotejado.",
-    "independentDocumentaryRelations": 9,
+    "reviewStage": "sexta_revision_yossi_cohen_archivo_iran_autoria_atribuida_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: ENISA 2010 confirma funcionamiento y software industrial objetivo de Stuxnet, no autoría estatal. Dos relaciones técnicas incorporadas como contexto externo; sin cotejo del audio. Cuarta revisión 18/11/2026: la arista de víctimas por buscapersonas se respalda con comunicado ONU (18/09/2024); declaración portavoz israelí queda documentada por Reuters en F73, sin concluir que una unidad concreta del Mossad ejecutara el operativo. Quinta revisión 18/11/2026: se distinguen cuatro hechos documentales de las inferencias sobre la operación clandestina: discurso público de Netanyahu (30/04/2018), evaluación GOV/2015/68 del OIEA, declaración de 01/05/2018 y su reiteración de las conclusiones de 2015. No se confunde la presentación de una acusación con su validación técnica ni la falta de indicios después de 2009 (evaluada en 2015) con una conclusión sobre la situación de 2026. Audio de F72 no cotejado. Sexta revisión 19/11/2026: entrevista de Yossi Cohen difundida por Channel 12 en 2021, tras dejar de dirigir el Mossad, reconoce la recuperación del archivo nuclear iraní de enero 2018. Sus declaraciones se clasifican 'hecho_documentado_por_portavoz_citado', no como verificación independiente de cada detalle; el cargo del director sí se contrasta en el historial oficial. La insinuación de sabotaje en Natanz 2021 no equivale a admisión explícita. La presentación pública del archivo fue el 30/04/2018. Sin cotejo de audio F72.",
+    "independentDocumentaryRelations": 13,
     "crossSourceLinks": [
       69,
       73
@@ -1551,7 +1551,7 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "name": "Archivo nuclear iraní presentado en 2018",
       "kind": "Acontecimiento",
       "subtitle": "Conjunto documental sobre actividades nucleares iraníes obtenido por Israel y presentado públicamente el 30/04/2018.",
-      "note": "Conjunto documental sobre actividades nucleares iraníes obtenido por Israel y presentado públicamente el 30/04/2018. El capítulo expone el relato del entrevistado sobre la obtención de archivos en Teherán. Su presentación pública el 30/04/2018 consta en documentación estadounidense; los detalles de la operación no se dan por demostrados por la entrevista.",
+      "note": "Conjunto documental sobre actividades nucleares iraníes obtenido por Israel y presentado públicamente el 30/04/2018. El capítulo expone el relato del entrevistado sobre la obtención de archivos en Teherán. Su presentación pública el 30/04/2018 consta en documentación estadounidense; los detalles de la operación no se dan por demostrados por la entrevista. Contraste adicional publicado: Yossi Cohen, antiguo director del Mossad, describió en Channel 12 (10/06/2021) cómo su servicio extrajo documentación del almacén de Teherán en enero de 2018. Se reconoce la atribución pública del antiguo director; no se convierte en prueba autónoma de cada detalle, ni en confirmación del OIEA de la totalidad del archivo.",
       "source": "https://www.youtube.com/watch?v=z-0I92HGceY&t=5121s",
       "topic3d": "inteligencia",
       "photo": "",
@@ -1760,6 +1760,32 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "photo": "",
       "x": 13870,
       "y": 4980,
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-yossi-cohen",
+      "name": "Yossi Cohen",
+      "kind": "Persona",
+      "subtitle": "Director del Mossad de 2016 a 2021; intervino públicamente en junio de 2021.",
+      "note": "Fue director del Mossad hasta junio de 2021. Al dejar el cargo concedió una entrevista televisiva a Uvda (Channel 12), el 10 de junio de 2021, en la que describió la obtención del archivo nuclear iraní en Teherán. Es testimonio explícito de un antiguo jefe del servicio, no una auditoría independiente de todos los pormenores del operativo; sus insinuaciones sobre sabotaje en Natanz no equivalen a una admisión oficial categórica de esa acción.",
+      "source": "https://www.timesofisrael.com/key-passages-from-outgoing-mossad-chiefs-revelatory-tv-interview/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13900,
+      "y": 4480,
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-entrevista-cohen-2021",
+      "name": "Channel 12 · Entrevista a Yossi Cohen (10 junio 2021)",
+      "kind": "Documento",
+      "subtitle": "Entrevista de Uvda sobre la extracción del archivo iraní; transcripción inglesa difundida por Channel 12.",
+      "note": "Transcripción inglesa proporcionada por Channel 12 y publicada por Times of Israel el 11/06/2021. Cohen describió preparativos y ejecución de la obtención del archivo en enero de 2018, y atribuyó la operación al servicio que dirigía. No autoriza a declarar verificados los detalles del número de agentes, la identidad de operativos, ni un presunto sabotaje en Natanz que Cohen no confirmó expresamente. La fecha del discurso público de Netanyahu fue 30/04/2018; no reproducir errores de cronología del resumen de la entrevista.",
+      "source": "https://www.timesofisrael.com/key-passages-from-outgoing-mossad-chiefs-revelatory-tv-interview/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14120,
+      "y": 4470,
       "podcastNotes": []
     }
   ],
@@ -2077,6 +2103,54 @@ window.IDEA_TELARANA_F72_REVIEW = {
       "episodeId": "idealab-f72-frattini",
       "note": "La declaración de 1/05/2018 remite a la evaluación final de diciembre de 2015. Por tanto, no debe transformarse en una corroboración pública de la autoría o de la totalidad de los documentos que presentó Netanyahu el 30/04/2018.",
       "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-yossi-cohen-direccion",
+      "a": "f72-yossi-cohen",
+      "b": "f72-mossad",
+      "type": "Yossi Cohen dirigió el Mossad entre 2016 y 2021",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "El historial oficial de directores del Mossad identifica a Yossi Cohen como responsable del servicio antes de su sucesión en 2021. Esta relación institucional está documentada; no prueba ninguna operación individual de una persona por el hecho de dirigir el organismo.",
+      "source": "https://mossad.gov.il/en/history",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-cohen-entrevista-2021",
+      "a": "f72-yossi-cohen",
+      "b": "f72-entrevista-cohen-2021",
+      "type": "Yossi Cohen describió en Channel 12 una operación de extracción del archivo nuclear iraní",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "El 10/06/2021 Cohen, exdirector del Mossad, describió la operación de acceso a un almacén de Teherán en enero de 2018. La pieza transcribe lo que él afirmó; no representa una verificación independiente de todos sus detalles.",
+      "source": "https://www.timesofisrael.com/key-passages-from-outgoing-mossad-chiefs-revelatory-tv-interview/",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-entrevista-archivo-2018",
+      "a": "f72-entrevista-cohen-2021",
+      "b": "f72-archivo",
+      "type": "La entrevista de 2021 atribuye al Mossad la extracción del archivo iraní de 2018",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "En Uvda (10/06/2021), el antiguo jefe del Mossad relató la obtención del archivo iraní. El documento demuestra que atribuyó esa actuación al servicio bajo su mando; no implica que las declaraciones sobre autenticidad de cada archivo o la dimensión militar de un programa en fechas posteriores hayan sido confirmadas por el OIEA.",
+      "source": "https://www.timesofisrael.com/key-passages-from-outgoing-mossad-chiefs-revelatory-tv-interview/",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f72-doc-mossad-archivo-relato-cohen",
+      "a": "f72-mossad",
+      "b": "f72-archivo",
+      "type": "Operación de obtención del archivo de Teherán atribuida por un antiguo director del Mossad",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "Yossi Cohen explicó públicamente en 2021 que el Mossad ejecutó la recuperación del archivo iraní en enero de 2018. Es un reconocimiento del exdirector difundido por Channel 12, NO una verificación independiente de identidad de agentes, de todas las técnicas clandestinas o del contenido y las inferencias nucleares. Netanyahu presentó el material después, el 30/04/2018.",
+      "source": "https://www.timesofisrael.com/key-passages-from-outgoing-mossad-chiefs-revelatory-tv-interview/",
+      "episodeId": "idealab-f72-frattini",
+      "podcastNotes": []
     }
   ]
 };
@@ -2097,9 +2171,9 @@ window.IDEA_TELARANA_F73_REVIEW = {
     "lastMarker": "01:45:19",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "sexta_revision_operacion_midnight_hammer_evaluacion_oiea_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual. Cuarta revisión 18/11/2026: F73 reutiliza nombres canónicos de F69 para DGST y archivo judicial Pegasus 2026; evitar dos nodos del mismo servicio y del mismo proceso. La noticia judicial no valida acusaciones a terceros. Declaración israelí sobre buscapersonas y daño civil ONU se respaldan con fuentes diferentes. Quinta revisión 18/11/2026: acta provisional ONU S/PV.9939 (20/06/2025) confirma daños en Natanz; Reuters (13/06/2025) reporta fuentes israelíes anónimas sobre Mossad que no pudo verificar; UN Transcripts 10253 (27/10/2026), de reconocimiento automático ASR y NO acta oficial, recoge intervención de Grossi sobre acceso limitado, un día posterior al episodio F73 (26/10/2026). Las alegaciones clandestinas NO son aristas verificadas; los hechos posteriores NO se atribuyen al entrevistado. Audio del podcast 0 minutos cotejados. Sexta revisión 19/11/2026: se diferencia el inicio de ataques israelíes el 13/06/2025 de Midnight Hammer estadounidense el 22/06/2025; se distingue la confirmación de ataques por el Pentágono de su valoración política sobre daños. El OIEA GOV/2025/50 (septiembre 2025) describe daños observados por satélite, inspecciones suspendidas y ausencia de certeza posterior sobre el material. El dato 440,9 kg UF6 enriquecido hasta 60% es estimación a 13/06/2025, no material verificado tras bombardeos ni arma construida. La intervención de 2025 no es operación del Mossad por coincidencia temporal. Audio F73 0 cotejos.",
-    "independentDocumentaryRelations": 25,
+    "reviewStage": "septima_revision_fakhrizadeh_haniyeh_autoria_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual. Cuarta revisión 18/11/2026: F73 reutiliza nombres canónicos de F69 para DGST y archivo judicial Pegasus 2026; evitar dos nodos del mismo servicio y del mismo proceso. La noticia judicial no valida acusaciones a terceros. Declaración israelí sobre buscapersonas y daño civil ONU se respaldan con fuentes diferentes. Quinta revisión 18/11/2026: acta provisional ONU S/PV.9939 (20/06/2025) confirma daños en Natanz; Reuters (13/06/2025) reporta fuentes israelíes anónimas sobre Mossad que no pudo verificar; UN Transcripts 10253 (27/10/2026), de reconocimiento automático ASR y NO acta oficial, recoge intervención de Grossi sobre acceso limitado, un día posterior al episodio F73 (26/10/2026). Las alegaciones clandestinas NO son aristas verificadas; los hechos posteriores NO se atribuyen al entrevistado. Audio del podcast 0 minutos cotejados. Sexta revisión 19/11/2026: se diferencia el inicio de ataques israelíes el 13/06/2025 de Midnight Hammer estadounidense el 22/06/2025; se distingue la confirmación de ataques por el Pentágono de su valoración política sobre daños. El OIEA GOV/2025/50 (septiembre 2025) describe daños observados por satélite, inspecciones suspendidas y ausencia de certeza posterior sobre el material. El dato 440,9 kg UF6 enriquecido hasta 60% es estimación a 13/06/2025, no material verificado tras bombardeos ni arma construida. La intervención de 2025 no es operación del Mossad por coincidencia temporal. Audio F73 0 cotejos. Séptima revisión 19/11/2026: AP confirma el asesinato de Fakhrizadeh (2020) pero registra la acusación iraní contra Israel sin prueba concluyente ni admisión israelí. Reuters 23/12/2024 recoge declaración de Israel Katz reconociendo responsabilidad estatal israelí por la muerte de Haniyeh en Teherán 31/07/2024, sin identificar al Mossad como ejecutor. Se evita crear aristas entre el Mossad y estas muertes a partir de inferencias. La ficha del archivo de 2018 se estudia por separado en F72. Sin minutos de audio verificados.",
+    "independentDocumentaryRelations": 30,
     "crossSourceLinks": [
       69,
       72
@@ -2729,6 +2803,84 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "x": 14530,
       "y": 5720,
       "podcastNotes": []
+    },
+    {
+      "id": "f73-mohsen-fakhrizadeh",
+      "name": "Mohsen Fakhrizadeh",
+      "kind": "Persona",
+      "subtitle": "Físico iraní vinculado por gobiernos occidentales a investigaciones militares nucleares anteriores.",
+      "note": "Fakhrizadeh murió asesinado el 27/11/2020 cerca de Teherán. Su muerte está documentada por el Ministerio de Defensa iraní y por AP. El ministro iraní Mohammad Javad Zarif atribuyó indicios de participación a Israel, pero Israel no reconoció entonces autoría ni se demostró públicamente la identidad de una unidad ejecutora del Mossad. No confundir asesinato verificado con perpetrador verificado.",
+      "source": "https://www.pbs.org/newshour/world/iran-scientist-linked-to-military-nuclear-program-killed",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14350,
+      "y": 4700,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-asesinato-fakhrizadeh-2020",
+      "name": "Asesinato de Mohsen Fakhrizadeh (27 noviembre 2020)",
+      "kind": "Acontecimiento",
+      "subtitle": "Muerte del científico iraní en un ataque armado cerca de Teherán.",
+      "note": "El 27/11/2020 murió Mohsen Fakhrizadeh, confirmado por las autoridades iraníes y reportado por Associated Press. Irán acusó a Israel sin presentar públicamente pruebas concluyentes y el Estado israelí no asumió entonces responsabilidad. Las versiones posteriores sobre armas automáticas o equipos del Mossad son atribuciones que requieren corroboración propia; no forman en esta ficha una conexión operativa probada.",
+      "source": "https://www.pbs.org/newshour/world/iran-scientist-linked-to-military-nuclear-program-killed",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14580,
+      "y": 4710,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-ismail-haniyeh",
+      "name": "Ismail Haniyeh",
+      "kind": "Persona",
+      "subtitle": "Dirigente político de Hamás asesinado en Teherán el 31 de julio de 2024.",
+      "note": "Murió asesinado en Teherán el 31/07/2024. En diciembre de 2024 Israel Katz reconoció públicamente, en nombre de la posición del Gobierno israelí, que Israel había matado a Haniyeh. La admisión estatal no identifica por sí sola el servicio o los operativos que ejecutaron el asesinato. La noticia Reuters documenta las declaraciones y la muerte, no una autoría personal de Katz.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14180,
+      "y": 4910,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-asesinato-haniyeh-2024",
+      "name": "Asesinato de Ismail Haniyeh en Teherán (31 julio 2024)",
+      "kind": "Acontecimiento",
+      "subtitle": "Muerte del dirigente de Hamás en Irán en julio de 2024.",
+      "note": "El 31/07/2024 fue asesinado Ismail Haniyeh en Teherán. Israel no asumió públicamente responsabilidad en aquel momento, pero el ministro israelí Israel Katz la reconoció el 23/12/2024. Reuters recoge el reconocimiento del ministro; no identifica formalmente el Mossad como unidad ejecutora ni demuestra los relatos específicos sobre el método.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14410,
+      "y": 4910,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-israel-katz",
+      "name": "Israel Katz",
+      "kind": "Persona",
+      "subtitle": "Ministro de Defensa de Israel en diciembre de 2024.",
+      "note": "El 23/12/2024 Israel Katz reconoció públicamente la responsabilidad de Israel por el asesinato de Ismail Haniyeh en Teherán en julio de ese año. La declaración puede acreditarse periodísticamente; no significa que el ministro ejecutara personalmente el asesinato ni constituye confirmación de que el Mossad llevó a cabo la operación.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14620,
+      "y": 4930,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-reuters-katz-2024",
+      "name": "Reuters · Declaración de Israel Katz sobre Haniyeh (23 diciembre 2024)",
+      "kind": "Documento",
+      "subtitle": "Información de Reuters sobre la primera admisión pública israelí del asesinato de Haniyeh.",
+      "note": "Reuters publicó el 23/12/2024 que Israel Katz reconoció que Israel había matado a Haniyeh en Teherán el 31/07/2024. Lo documentado directamente es el reconocimiento ministerial y el hecho del asesinato; el anuncio no identifica el método ni la unidad israelí encargada, por lo que no debe promoverse una acusación concreta al Mossad a hecho demostrado.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14840,
+      "y": 4920,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -3305,6 +3457,66 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "claimStatus": "hecho_verificado_independiente",
       "note": "GOV/2025/50 párrafos 25–26: la planta de enriquecimiento y la planta piloto sufrieron daños extensos según imágenes satelitales, incluidos impactos en partes subterráneas. El OIEA no pudo determinar presencialmente las condiciones operativas posteriores ni verificar el paradero del material.",
       "source": "https://www.iaea.org/sites/default/files/documents/gov2025-50.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-fakhrizadeh-muerte-2020",
+      "a": "f73-mohsen-fakhrizadeh",
+      "b": "f73-asesinato-fakhrizadeh-2020",
+      "type": "Fakhrizadeh murió asesinado cerca de Teherán el 27/11/2020",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "La agencia Associated Press reportó que las autoridades iraníes confirmaron la muerte de Fakhrizadeh en un ataque cerca de Teherán el 27/11/2020. El hecho de su muerte es verificable; AP también recogió acusaciones iraníes contra Israel que NO constituyen por sí mismas prueba de autoría ni participación del Mossad.",
+      "source": "https://www.pbs.org/newshour/world/iran-scientist-linked-to-military-nuclear-program-killed",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-haniyeh-muerte-2024",
+      "a": "f73-ismail-haniyeh",
+      "b": "f73-asesinato-haniyeh-2024",
+      "type": "Haniyeh murió asesinado en Teherán el 31/07/2024",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "Reuters documenta el asesinato de Haniyeh en Teherán el 31/07/2024. La atribución posterior de Israel Katz es una declaración política específica; no equivale a identificar formalmente a un equipo del Mossad ni a probar métodos clandestinos concretos.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-katz-reuters-haniyeh",
+      "a": "f73-israel-katz",
+      "b": "f73-reuters-katz-2024",
+      "type": "Reuters recoge la admisión de Israel Katz de responsabilidad israelí en la muerte de Haniyeh",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "El 23/12/2024 el ministro de Defensa Israel Katz dijo que Israel había causado la muerte de Haniyeh en Teherán. Se verifica que Katz formuló esa declaración, no su participación operativa ni el nombre del servicio encargado.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-reuters-katz-asesinato",
+      "a": "f73-reuters-katz-2024",
+      "b": "f73-asesinato-haniyeh-2024",
+      "type": "La noticia documenta que Katz reconoció el asesinato de Haniyeh como acción de Israel",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "Reuters informó el 23/12/2024 sobre el reconocimiento ministerial del asesinato cometido el 31/07/2024. No se atribuye al Mossad porque Katz no identificó el servicio ejecutor. La arista une noticia y declaración sobre el hecho, no una operación clandestina determinada.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-israel-katz-declaracion",
+      "a": "f73-israel",
+      "b": "f73-reuters-katz-2024",
+      "type": "Un ministro de Israel asumió responsabilidad estatal por el asesinato de Haniyeh",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "El ministro israelí Katz reconoció públicamente el 23/12/2024 que Israel mató a Haniyeh en Teherán. La confirmación política del Estado no debe transformarse en atribución específica al Mossad, Shin Bet u otra unidad sin evidencia separada.",
+      "source": "https://www.reuters.com/world/middle-east/israeli-defense-minister-claims-responsibility-first-time-hamas-leader-haniyehs-2024-12-23/",
       "episodeId": "idealab-f73-frattini",
       "podcastNotes": []
     }
