@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[33,28,30,38,28],expectedEdges=[44,36,38,47,35],
+const expectedNodes=[42,28,30,38,28],expectedEdges=[58,36,38,47,35],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===80&&totalExternal===132,
+assert(totalNotes===83&&totalExternal===140,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -81,9 +81,9 @@ assert(history72.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),
   "F73 requiere vínculo cruzado con el hito F72, no duplicación");
 
 const f70=ctx.window.IDEA_TELARANA_F70_REVIEW;
-assert(f70.metadata.explicitContradictionReviews===6&&f70.metadata.transcriptAudioMatched===false,
+assert(f70.metadata.explicitContradictionReviews===7&&f70.metadata.transcriptAudioMatched===false,
  "F70: conservar tres contrastes documentales sin atribuir escucha del audio");
-assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===28,
+assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===31,
  "F70: diez relaciones con evidencia oficial, no confundir las menciones");
 // F70 cuarta pasada: fuente judicial primaria y separación de responsabilidades.
 for(const id of ["f70-tribunal-vaticano","f70-sentencia-gabriele-2012",
@@ -102,7 +102,7 @@ for(const id of ["f70-doc-tribunal-gabriele-fallo","f70-doc-gabriele-condena",
 }
 assert(f70.nodes.find(x=>x.id==="f70-sentencia-gabriele-2012")?.note.includes("REDUJO")&&
  f70.nodes.find(x=>x.id==="f70-sentencia-sciarpelletti-2012")?.note.includes("suspendida")&&
- f70.metadata.independentDocumentaryRelations===31&&
+ f70.metadata.independentDocumentaryRelations===39&&
  f70.metadata.transcriptAudioMatched===false&&f70.metadata.verifiedMinuteReferences===0,
  "F70: no confundir pena inicial, pena final, suspensión y escucha de audio");
 // Quinta revisión F70: no confundir 224 millones sin moneda del pódcast con pagos de 1984 en USD.
@@ -154,9 +154,51 @@ for(const id of ["f70-stmt-apelacion-becciu-2026","f70-stmt-apelacion-marz-oct20
   "F70: el estado procesal de 2026 se eleva indebidamente a sentencia definitiva "+id);
 }
 assert(f70.edges.find(e=>e.id==="f70-alleg-becciu-tribunal-uk")?.claimStatus==="alegacion_no_verificada"&&
- f70.metadata.independentDocumentaryRelations===31&&f70.metadata.explicitContradictionReviews===6&&
+ f70.metadata.independentDocumentaryRelations===39&&f70.metadata.explicitContradictionReviews===7&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: no atribuir sentencia penal inglesa ni certificar audio");
+// F70 séptima revisión: tres alegaciones de Óbolo vs autodeclaración financiera de fuentes primarias.
+const b24=f70.nodes.find(n=>n.id==="f70-obolo-informe-2024");
+const b25=f70.nodes.find(n=>n.id==="f70-obolo-informe-2025");
+const bsee=f70.nodes.find(n=>n.id==="f70-estados-see-2024");
+const bfund=f70.nodes.find(n=>n.id==="f70-obolo-san-pedro");
+assert(b24?.source.includes("obolodisanpietro.va")&&b24.note.includes("61,2")&&b24.note.includes("13,3")&&
+ b25?.source.includes("obolodisanpietro.va")&&b25.note.includes("41,2")&&b25.note.includes("13,3")&&
+ bsee?.source.includes("spe.va")&&bsee.note.includes("-44,4")&&bsee.note.includes("+1,6")&&
+ bfund?.note.includes("no constituye el conjunto de limosnas parroquiales"),
+ "F70: importes o perímetros del Óbolo 2024/2025 y Santa Sede 2024 mal conciliados");
+const oboloClaims=[
+ ["f70-afirmacion-obolo-mitad",4437],
+ ["f70-afirmacion-obolo-caridad",4467],
+ ["f70-afirmacion-obolo-13m",4475]
+];
+for(const [id,time] of oboloClaims){
+ const node=f70.nodes.find(x=>x.id===id);
+ assert(node?.podcastNotes?.some(p=>p.timeSec===time&&p.status.includes("sin_cotejo_audio"))&&
+ node.note.includes("audio")&&node.source.includes("youtube.com/watch?v="),
+ "F70: 3 menciones no pueden darse como minuto cotejado: "+id);
+}
+for(const id of ["f70-alleg-obolo-50-episodio","f70-alleg-obolo-50-fondo",
+ "f70-alleg-obolo-solo-caridad","f70-alleg-obolo-caridad-fondo",
+ "f70-alleg-obolo-13m-episodio","f70-alleg-obolo-13m-francisco"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="alegacion_no_verificada", "F70: alegación del audio elevada a hecho: "+id);
+}
+for(const id of ["f70-doc-obolo-memoria-2024","f70-doc-obolo-memoria-2025",
+ "f70-doc-see-cuentas-2024"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="hecho_verificado_independiente", "F70: falta documento institucional: "+id);
+}
+for(const id of ["f70-stmt-obolo-2024-mision","f70-stmt-obolo-2025-mision",
+ "f70-stmt-obolo-2025-asistencia","f70-stmt-guerrero-2021-mision",
+ "f70-stmt-guerrero-2021-reservas"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado",
+ "F70: autodeclaración del Óbolo o prefecto confundida con auditoría independiente: "+id);
+}
+assert(f70.metadata.independentDocumentaryRelations===39&&
+ f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
+ "F70: no se ha escuchado audio ni acreditado recepción del 50 por ciento");
 for(const e of ["f70-doc-archive-access","f70-doc-archive-rename-2019","f70-doc-pio-xii-open-2020",
  "f70-doc-francisco-praedicate","f70-doc-praedicate-curia","f70-doc-ior-2025-report",
  "f70-doc-moneyval-2024","f70-doc-asif-ior-2025","f70-doc-apelacion-fondos-2026"]){
