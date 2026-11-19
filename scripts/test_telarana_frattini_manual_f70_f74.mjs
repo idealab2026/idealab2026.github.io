@@ -154,7 +154,7 @@ for(const id of ["f70-stmt-apelacion-becciu-2026","f70-stmt-apelacion-marz-oct20
   "F70: el estado procesal de 2026 se eleva indebidamente a sentencia definitiva "+id);
 }
 assert(f70.edges.find(e=>e.id==="f70-alleg-becciu-tribunal-uk")?.claimStatus==="alegacion_no_verificada"&&
- f70.metadata.independentDocumentaryRelations===31&&f70.metadata.explicitContradictionReviews===6&&
+ f70.metadata.independentDocumentaryRelations===39&&f70.metadata.explicitContradictionReviews===7&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: no atribuir sentencia penal inglesa ni certificar audio");
 // F70 séptima revisión: tres alegaciones de Óbolo vs autodeclaración financiera de fuentes primarias.
