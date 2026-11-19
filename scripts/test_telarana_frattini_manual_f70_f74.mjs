@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[42,28,30,38,28],expectedEdges=[58,36,38,47,35],
+const expectedNodes=[49,28,30,38,28],expectedEdges=[70,36,38,47,35],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===83&&totalExternal===140,
+assert(totalNotes===85&&totalExternal===148,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -81,9 +81,9 @@ assert(history72.investigation.otherSourceMentions.some(x=>x.sourceOrder===73),
   "F73 requiere vínculo cruzado con el hito F72, no duplicación");
 
 const f70=ctx.window.IDEA_TELARANA_F70_REVIEW;
-assert(f70.metadata.explicitContradictionReviews===7&&f70.metadata.transcriptAudioMatched===false,
+assert(f70.metadata.explicitContradictionReviews===8&&f70.metadata.transcriptAudioMatched===false,
  "F70: conservar tres contrastes documentales sin atribuir escucha del audio");
-assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===31,
+assert(f70.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===36,
  "F70: diez relaciones con evidencia oficial, no confundir las menciones");
 // F70 cuarta pasada: fuente judicial primaria y separación de responsabilidades.
 for(const id of ["f70-tribunal-vaticano","f70-sentencia-gabriele-2012",
@@ -102,7 +102,7 @@ for(const id of ["f70-doc-tribunal-gabriele-fallo","f70-doc-gabriele-condena",
 }
 assert(f70.nodes.find(x=>x.id==="f70-sentencia-gabriele-2012")?.note.includes("REDUJO")&&
  f70.nodes.find(x=>x.id==="f70-sentencia-sciarpelletti-2012")?.note.includes("suspendida")&&
- f70.metadata.independentDocumentaryRelations===39&&
+ f70.metadata.independentDocumentaryRelations===47&&
  f70.metadata.transcriptAudioMatched===false&&f70.metadata.verifiedMinuteReferences===0,
  "F70: no confundir pena inicial, pena final, suspensión y escucha de audio");
 // Quinta revisión F70: no confundir 224 millones sin moneda del pódcast con pagos de 1984 en USD.
@@ -154,7 +154,7 @@ for(const id of ["f70-stmt-apelacion-becciu-2026","f70-stmt-apelacion-marz-oct20
   "F70: el estado procesal de 2026 se eleva indebidamente a sentencia definitiva "+id);
 }
 assert(f70.edges.find(e=>e.id==="f70-alleg-becciu-tribunal-uk")?.claimStatus==="alegacion_no_verificada"&&
- f70.metadata.independentDocumentaryRelations===39&&f70.metadata.explicitContradictionReviews===7&&
+ f70.metadata.independentDocumentaryRelations===47&&f70.metadata.explicitContradictionReviews===8&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: no atribuir sentencia penal inglesa ni certificar audio");
 // F70 séptima revisión: tres alegaciones de Óbolo vs autodeclaración financiera de fuentes primarias.
@@ -196,9 +196,49 @@ for(const id of ["f70-stmt-obolo-2024-mision","f70-stmt-obolo-2025-mision",
  assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado",
  "F70: autodeclaración del Óbolo o prefecto confundida con auditoría independiente: "+id);
 }
-assert(f70.metadata.independentDocumentaryRelations===39&&
+assert(f70.metadata.independentDocumentaryRelations===47&&
  f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
  "F70: no se ha escuchado audio ni acreditado recepción del 50 por ciento");
+// F70 octava revisión: separar recibo individual, contabilidad y diligencia AML.
+const donorReg=f70.nodes.find(x=>x.id==="f70-donacion-registro-afirmacion");
+const donorReceipt=f70.nodes.find(x=>x.id==="f70-donacion-recibo-cepillo-afirmacion");
+const donorMotu=f70.nodes.find(x=>x.id==="f70-motu-fondos-papales-2020");
+const donorPortal=f70.nodes.find(x=>x.id==="f70-portal-donaciones-obolo");
+const donorAsif=f70.nodes.find(x=>x.id==="f70-asif-r5-donaciones-2018");
+const donorFaq=f70.nodes.find(x=>x.id==="f70-faq-obolo-deduccion-italia");
+assert(donorReg?.podcastNotes.some(x=>x.timeSec===4501)&&
+ donorReceipt?.podcastNotes.some(x=>x.timeSec===4531)&&
+ donorReg.note.includes("NO")===false&&donorReceipt.note.includes("recibo personal")&&
+ donorMotu?.note.includes("contabilidad separada")&&
+ donorPortal?.source.includes("obolodisanpietro.va/es/dona.html")&&
+ donorAsif?.note.includes("NO evidencia")&&
+ donorFaq?.note.includes("no son fiscalmente deducibles"),
+ "F70: declaraciones de efectivo y normas de registro mezcladas");
+for(const id of ["f70-alleg-donativos-no-registro","f70-alleg-no-registro-obolo"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="alegacion_no_verificada","F70: afirmar falta de registro como hecho "+id);
+}
+for(const id of ["f70-mention-cepillo-sin-recibo","f70-mention-cepillo-obolo"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="mencion_temporizada_sin_cotejo_audio",
+ "F70: ausencia de justificante individual no implica falta de asiento contable "+id);
+}
+for(const id of ["f70-doc-motu-2020-obolo","f70-doc-motu-2020-apsa",
+ "f70-doc-apsa-gestiona-obolo","f70-doc-portal-obolo","f70-doc-asif-r5-indicadores"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="hecho_verificado_independiente",
+ "F70: falta prueba documental de norma o portal "+id);
+}
+for(const id of ["f70-stmt-portal-registro-donante","f70-stmt-asif-r5-obolo",
+ "f70-stmt-faq-obolo-italia"]){
+ const e=f70.edges.find(x=>x.id===id);
+ assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado",
+ "F70: declaración institucional convertida indebidamente en auditoría "+id);
+}
+assert(f70.metadata.independentDocumentaryRelations===47&&
+ f70.metadata.explicitContradictionReviews===8&&
+ f70.metadata.verifiedMinuteReferences===0&&!f70.metadata.transcriptAudioMatched,
+ "F70: anotación textual no acredita escucha del audio");
 for(const e of ["f70-doc-archive-access","f70-doc-archive-rename-2019","f70-doc-pio-xii-open-2020",
  "f70-doc-francisco-praedicate","f70-doc-praedicate-curia","f70-doc-ior-2025-report",
  "f70-doc-moneyval-2024","f70-doc-asif-ior-2025","f70-doc-apelacion-fondos-2026"]){
