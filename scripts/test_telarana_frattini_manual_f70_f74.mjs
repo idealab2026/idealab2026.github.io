@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,23,30,38,23],expectedEdges=[20,30,38,47,29],
+const expectedNodes=[16,26,30,38,26],expectedEdges=[20,33,38,47,32],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===99,
+assert(totalNotes===78&&totalExternal===105,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -328,8 +328,8 @@ assert(f71.metadata.explicitContradictionReviews===2&&f74.metadata.explicitContr
  "F71/F74: faltan contrastes explícitos de afirmaciones sensibles");
 assert(f71.metadata.transcriptAudioMatched===false&&f74.metadata.transcriptAudioMatched===false,
  "Los textos no se han escuchado aún: cero validación del audio");
-assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===13&&
- f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===13,
+assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===16&&
+ f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===16,
  "Falta contrastar polifarmacia, más de un estudio dental y fin de Hitler");
 for(const id of ["f71-doc-morell-hitler","f71-doc-diarios-medicos","f71-doc-pervitin-wehrmacht",
  "f71-doc-trevor-hitler","f71-doc-dental-hitler","f71-doc-blaschke-hitler",
@@ -403,6 +403,29 @@ for(const [tag,mod] of [["f71",f71],["f74",f74]]){
  const e=mod.edges.find(e=>e.id===tag+"-stmt-cir4-vitamultin");
  assert(vita?.note.includes("fecha no demuestra")&&e?.note.includes("datación propia de la pauta no queda acreditada"),
   tag+": el ECG 4/05/1944 no permite fechar exactamente la pauta Vitamultin");
+}
+// Séptima revisión: catálogo archivístico ≠ fórmula química o ingestión; bibliografía ≠ páginas comprobadas.
+for(const [tag,mod] of [["f71",f71],["f74",f74]]){
+ const archive=mod.nodes.find(n=>n.id===tag+"-barch-rh12-23-1884");
+ const author=mod.nodes.find(n=>n.id===tag+"-schenck");
+ const book=mod.nodes.find(n=>n.id===tag+"-schenck-1998");
+ assert(archive?.source.includes("deutsche-digitale-bibliothek.de")&&
+  archive?.note.includes("RH 12-23/1884")&&archive.note.includes("no significa")&&
+  archive.note.includes("Zulassung von Vitamultin"),
+  tag+": el catálogo no demuestra la composición de Vitamultin");
+ assert(book?.source==="https://www.ncbi.nlm.nih.gov/nlmcatalog/100935363"&&
+  author?.source===book.source&&book.note.includes("no se adopta")&&
+  mod.metadata.independentDocumentaryRelations===21,
+  tag+": existencia de la monografía confundida con prueba del análisis químico");
+ for(const suffix of ["doc-barch-catalogo-vitamultin","doc-schenck-autor-1998","doc-schenck-libro-morell"]){
+  const e=mod.edges.find(e=>e.id===tag+"-"+suffix);
+  assert(e?.claimStatus==="hecho_verificado_independiente"&&
+   (e.source===archive.source||e.source===book.source)&&
+   !e.note.includes("contuviera metanfetamina confirmado"),
+   tag+": registro bibliográfico mal clasificado: "+suffix);
+ }
+ assert(mod.metadata.transcriptAudioMatched===false&&mod.metadata.verifiedMinuteReferences===0,
+  tag+": documentación externa no equivale a minutos de audio comprobados");
 }
 for(const id of ["f71-mention-fuga","f74-mention-fuga"]){
  const e=[...f71.edges,...f74.edges].find(x=>x.id===id);
