@@ -2097,9 +2097,9 @@ window.IDEA_TELARANA_F73_REVIEW = {
     "lastMarker": "01:45:19",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "quinta_revision_iran_ataques_2025_mossad_anonymous_oiea_2026",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual. Cuarta revisión 18/11/2026: F73 reutiliza nombres canónicos de F69 para DGST y archivo judicial Pegasus 2026; evitar dos nodos del mismo servicio y del mismo proceso. La noticia judicial no valida acusaciones a terceros. Declaración israelí sobre buscapersonas y daño civil ONU se respaldan con fuentes diferentes. Quinta revisión 18/11/2026: acta provisional ONU S/PV.9939 (20/06/2025) confirma daños en Natanz; Reuters (13/06/2025) reporta fuentes israelíes anónimas sobre Mossad que no pudo verificar; UN Transcripts 10253 (27/10/2026), de reconocimiento automático ASR y NO acta oficial, recoge intervención de Grossi sobre acceso limitado, un día posterior al episodio F73 (26/10/2026). Las alegaciones clandestinas NO son aristas verificadas; los hechos posteriores NO se atribuyen al entrevistado. Audio del podcast 0 minutos cotejados.",
-    "independentDocumentaryRelations": 16,
+    "reviewStage": "sexta_revision_operacion_midnight_hammer_evaluacion_oiea_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Comparativa F69/F72/F73 (identidades unificables por nombre): separar operaciones públicas, actores estatales confirmados, declaraciones del entrevistado y narraciones sin respaldo independiente. No se atribuye a todos los miembros de una comunidad religiosa vínculo con inteligencia. El audio no está cotejado. Tercera pasada 18/11/2026: Amnistía (1/10/2026) documenta y atribuye a DGST uso de Pegasus contra activistas y periodistas. Reuters (22/01/2026) informa nuevo sobreseimiento provisional de causa española sin autor identificado. NO inferir que casos distintos comparten operador, objetivo o autoría. Sin cotejo audiovisual. Cuarta revisión 18/11/2026: F73 reutiliza nombres canónicos de F69 para DGST y archivo judicial Pegasus 2026; evitar dos nodos del mismo servicio y del mismo proceso. La noticia judicial no valida acusaciones a terceros. Declaración israelí sobre buscapersonas y daño civil ONU se respaldan con fuentes diferentes. Quinta revisión 18/11/2026: acta provisional ONU S/PV.9939 (20/06/2025) confirma daños en Natanz; Reuters (13/06/2025) reporta fuentes israelíes anónimas sobre Mossad que no pudo verificar; UN Transcripts 10253 (27/10/2026), de reconocimiento automático ASR y NO acta oficial, recoge intervención de Grossi sobre acceso limitado, un día posterior al episodio F73 (26/10/2026). Las alegaciones clandestinas NO son aristas verificadas; los hechos posteriores NO se atribuyen al entrevistado. Audio del podcast 0 minutos cotejados. Sexta revisión 19/11/2026: se diferencia el inicio de ataques israelíes el 13/06/2025 de Midnight Hammer estadounidense el 22/06/2025; se distingue la confirmación de ataques por el Pentágono de su valoración política sobre daños. El OIEA GOV/2025/50 (septiembre 2025) describe daños observados por satélite, inspecciones suspendidas y ausencia de certeza posterior sobre el material. El dato 440,9 kg UF6 enriquecido hasta 60% es estimación a 13/06/2025, no material verificado tras bombardeos ni arma construida. La intervención de 2025 no es operación del Mossad por coincidencia temporal. Audio F73 0 cotejos.",
+    "independentDocumentaryRelations": 25,
     "crossSourceLinks": [
       69,
       72
@@ -2651,6 +2651,84 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "x": 13800,
       "y": 5360,
       "podcastNotes": []
+    },
+    {
+      "id": "f73-eeuu",
+      "name": "Estados Unidos",
+      "kind": "Estado",
+      "subtitle": "País cuyas Fuerzas Armadas ejecutaron la operación Midnight Hammer el 22 de junio de 2025.",
+      "note": "El Pentágono identificó expresamente su ataque contra Fordow, Natanz e Isfahán el 22/06/2025. El OIEA GOV/2025/50 constató que Estados Unidos participó después del inicio de las operaciones israelíes del 13/06. Esto no implica que una operación del Mossad y la operación estadounidense fueran la misma misión.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 13860,
+      "y": 5520,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-midnight-hammer",
+      "name": "Operación Midnight Hammer (22 junio 2025)",
+      "kind": "Acontecimiento",
+      "subtitle": "Ataques estadounidenses contra Fordow, Natanz e Isfahán el 22 de junio de 2025.",
+      "note": "El 22/06/2025 el Pentágono reconoció oficialmente la operación estadounidense Midnight Hammer. Describió el empleo de aviones B-2 contra objetivos en Fordow y Natanz y misiles Tomahawk contra objetivos de superficie en Isfahán. El general Dan Caine reconoció que la evaluación final de daños seguía en curso; la frase política «programa nuclear destruido» no es un hecho técnicamente demostrado por esa comparecencia. Es una intervención distinta, posterior a los ataques israelíes iniciados el 13/06/2025.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14090,
+      "y": 5520,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-fordow",
+      "name": "Instalación de enriquecimiento de Fordow",
+      "kind": "Instalación",
+      "subtitle": "Planta de enriquecimiento iraní, objetivo de los ataques del 22/06/2025.",
+      "note": "El Pentágono identificó Fordow como objetivo de Midnight Hammer y afirmó haber utilizado municiones penetrantes GBU-57. El OIEA GOV/2025/50, septiembre de 2025, evaluó a partir de imágenes satelitales que Fordow probablemente sufrió daños muy importantes, pero no pudo inspeccionar físicamente la instalación ni precisar el estado del material nuclear situado dentro.",
+      "source": "https://www.iaea.org/sites/default/files/documents/gov2025-50.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14320,
+      "y": 5510,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-isfahan",
+      "name": "Instalaciones nucleares de Isfahán",
+      "kind": "Instalación",
+      "subtitle": "Conjunto de instalaciones nucleares iraníes en Isfahán.",
+      "note": "El Pentágono declaró que un submarino estadounidense lanzó misiles Tomahawk contra infraestructura superficial en Isfahán durante Midnight Hammer. No debe decirse que las bombas penetrantes GBU-57 empleadas contra Fordow y Natanz impactaron también allí; los medios de ataque fueron diferentes.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14320,
+      "y": 5710,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-pentagono-comunicado-22jun",
+      "name": "Pentágono · Comparecencia sobre Midnight Hammer (22 junio 2025)",
+      "kind": "Documento",
+      "subtitle": "Declaraciones oficiales del secretario de Defensa estadounidense y el presidente del Estado Mayor Conjunto.",
+      "note": "Transcripción del Pentágono de 22/06/2025. Dan Caine describió las instalaciones atacadas y reconoció que la evaluación final de daños seguía pendiente. Las afirmaciones del secretario Pete Hegseth acerca de que las capacidades iraníes habían sido destruidas son estimaciones y declaraciones políticas; no una certificación técnica independiente del OIEA.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14540,
+      "y": 5520,
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-oiea-gov2025-50",
+      "name": "OIEA · Informe GOV/2025/50 (septiembre 2025)",
+      "kind": "Documento",
+      "subtitle": "Informe de salvaguardias del OIEA tras los ataques de junio de 2025; difundido el 11/09/2025.",
+      "note": "El OIEA describe ataques israelíes entre el 13 y 24/06/2025 con participación posterior de EE. UU.; suspensión de verificaciones desde el 13/06 y retirada de inspectores a finales de mes. Desde entonces no tuvo acceso a instalaciones salvaguardadas salvo Bushehr. Estimó, PARA EL 13/06/2025, 440,9 kg de uranio en forma de UF6 enriquecido hasta el 60 % (432,9 kg verificados), sin capacidad posterior de precisar el inventario y paradero con igual confianza. El dato no acredita fabricación de armas ni describe existencias verificadas tras el ataque.",
+      "source": "https://www.iaea.org/sites/default/files/documents/gov2025-50.pdf",
+      "topic3d": "inteligencia",
+      "photo": "",
+      "x": 14530,
+      "y": 5720,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -3121,6 +3199,114 @@ window.IDEA_TELARANA_F73_REVIEW = {
       "episodeId": "idealab-f73-frattini",
       "podcastNotes": [],
       "temporalContext": "posterior_a_entrevista"
+    },
+    {
+      "id": "f73-doc-eeuu-midnight-hammer",
+      "a": "f73-eeuu",
+      "b": "f73-midnight-hammer",
+      "type": "El Pentágono confirma la ejecución estadounidense de Midnight Hammer (22/06/2025)",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "El 22/06/2025 el Pentágono reconoció explícitamente una operación militar estadounidense sobre tres instalaciones nucleares iraníes. El OIEA GOV/2025/50 confirmó por separado la participación posterior de Estados Unidos en la campaña iniciada por Israel; no prueba las evaluaciones políticas sobre la destrucción completa del programa.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-midnight-fordow",
+      "a": "f73-midnight-hammer",
+      "b": "f73-fordow",
+      "type": "Fordow fue objetivo reconocido del ataque estadounidense del 22/06/2025",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "El general Caine declaró que los B-2 atacaron Fordow con GBU-57. Se documenta la confirmación oficial del objetivo, no una evaluación independiente del daño subterráneo ni la destrucción irreversible de todas las capacidades iraníes.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-midnight-natanz",
+      "a": "f73-midnight-hammer",
+      "b": "f73-natanz",
+      "type": "Natanz fue objetivo declarado de la operación estadounidense",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "El Pentágono identificó Natanz entre los tres blancos de Midnight Hammer el 22/06/2025. El ataque estadounidense no debe confundirse con los daños ya registrados por el OIEA tras la campaña israelí iniciada el 13/06/2025.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-midnight-isfahan",
+      "a": "f73-midnight-hammer",
+      "b": "f73-isfahan",
+      "type": "Misiles Tomahawk estadounidenses dirigidos contra infraestructura de Isfahán",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "La comparecencia del Pentágono detalló que un submarino lanzó misiles Tomahawk contra instalaciones superficiales de Isfahán. No se afirma que las GBU-57 de los B-2 se utilizaran contra este emplazamiento.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-pentagono-midnight",
+      "a": "f73-pentagono-comunicado-22jun",
+      "b": "f73-midnight-hammer",
+      "type": "Comparecencia oficial militar sobre Midnight Hammer y evaluación de daños pendiente",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "note": "La comparecencia del 22/06/2025 identifica los tres objetivos; Dan Caine señaló que el análisis final de daños aún no estaba terminado. Las afirmaciones de destrucción completa son declaraciones de responsables estadounidenses, no una constatación científica externa.",
+      "source": "https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-oiea-informe-sept2025",
+      "a": "f73-oiea",
+      "b": "f73-oiea-gov2025-50",
+      "type": "El OIEA publicó GOV/2025/50 sobre las consecuencias de los ataques de junio de 2025",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "Informe institucional difundido el 11/09/2025: el OIEA documenta el impacto en sus salvaguardias, la retirada de inspectores y restricciones de acceso después de la campaña con participación de Israel y EE. UU.",
+      "source": "https://www.iaea.org/sites/default/files/documents/gov2025-50.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-gov2025-50-iran",
+      "a": "f73-oiea-gov2025-50",
+      "b": "f73-iran",
+      "type": "El OIEA perdió capacidad de verificar sobre el terreno material nuclear y existencias en Irán",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "GOV/2025/50 (secciones C.2 y D): sin acceso físico a instalaciones salvaguardadas excepto Bushehr; el OIEA ya no podía determinar el inventario y paradero posteriores con la misma precisión. Los 440,9 kg de UF6 enriquecido hasta 60 % corresponden a estimación del 13/06/2025, ANTES de los ataques, y no equivalen a armas nucleares.",
+      "source": "https://www.iaea.org/sites/default/files/documents/gov2025-50.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-gov2025-50-fordow",
+      "a": "f73-oiea-gov2025-50",
+      "b": "f73-fordow",
+      "type": "Evaluación por satélite de daños importantes en Fordow sin inspección presencial",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "GOV/2025/50 párrafo 24: Fordow probablemente sufrió daños muy importantes según imágenes satelitales. El OIEA no conocía tras el ataque el funcionamiento interior ni el estado del material declarado anteriormente en la planta; no podía certificar la destrucción completa de su inventario.",
+      "source": "https://www.iaea.org/sites/default/files/documents/gov2025-50.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
+    },
+    {
+      "id": "f73-doc-gov2025-50-natanz",
+      "a": "f73-oiea-gov2025-50",
+      "b": "f73-natanz",
+      "type": "El informe de septiembre evaluó daños extensos en instalaciones de Natanz",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "note": "GOV/2025/50 párrafos 25–26: la planta de enriquecimiento y la planta piloto sufrieron daños extensos según imágenes satelitales, incluidos impactos en partes subterráneas. El OIEA no pudo determinar presencialmente las condiciones operativas posteriores ni verificar el paradero del material.",
+      "source": "https://www.iaea.org/sites/default/files/documents/gov2025-50.pdf",
+      "episodeId": "idealab-f73-frattini",
+      "podcastNotes": []
     }
   ]
 };
