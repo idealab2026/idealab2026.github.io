@@ -15,10 +15,10 @@ window.IDEA_TELARANA_F70_REVIEW = {
     "lastMarker": "01:37:14",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "septima_revision_obolo_balance_2024_2025_y_declaraciones",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados. Quinta revisión (19/11/2026): recuperado Google Doc privado de transcripción F70; 1:17:24 pregunta por «224 millones» y «responsabilidad moral» SIN moneda; la respuesta 1:17:31–44 los atribuye a Benedicto XVI/abusos. Se documenta de forma independiente la firma el 25/05/1984 del acuerdo IOR–acreedores del Banco Ambrosiano (Banca d'Italia, 1984) y el reporte UPI julio 1984 de 240,9 millones de USD abonados. Otras fuentes posteriores citan 224 millones USD, no euros: importes no conciliados aún con recibos primarios. Se califica como discrepancia plausible y atribución no comprobada, NO confusión demostrada del interlocutor; audio sin cotejar y nota existente sin inventar moneda. Sexta revisión 19/11/2026: transcripción F70 24:49–25:19 atribuye a justicia británica condena de Becciu, pero sentencia penal 16/12/2023 procede del Tribunal del Estado de la Ciudad del Vaticano, 5 años 6 meses y multa 8.000 €. El tribunal cifró inversión 2013–2014 en Athena en 200,5 millones USD y describió separadamente 125.000 € para cooperativa SPES del hermano Antonino. Sentencia civil inglesa [2025] EWHC 355 (Comm) relaciona a fondos Athena, Mincione y Secretaría de Estado, NO condena al cardenal. Tras nulidad relativa marzo 2026, audiencia vaticana octubre fijó próximas 26–29/01/2027: procedimiento no concluido definitivamente. 0 minutos de audio cotejados; notas ASR privadamente leídas, no audio. Séptima revisión 19/11/2026: confrontación de afirmaciones privadas de F70 en 1:13:57–1:14:43 (reparto automático del 50 % del cepillo; destino exclusivamente caritativo; supuesto uso de 13 M€ de déficit por Francisco) con informes oficiales completos del Óbolo 2024/2025, estados consolidados Santa Sede 2024 y declaración 2021 del prefecto de Economía. Cuentas: Óbolo 2024 58,0 M€ ingresos/75,4 gastos, 61,2 misión+13,3 proyectos; Óbolo 2025 57,6/59,8, 41,2 misión+13,3 proyectos; Santa Sede 2024 operativo -44,4 M€, financiero +46 M€, superávit +1,6 M€. No existe en estos documentos verificación del flujo automático 50 % ni de la operación concreta 13 M€; financiaciones a misión sí figuran. Entrevista no equivale a chequeo de audio; no publicada transcripción privada.",
-    "independentDocumentaryRelations": 39,
-    "explicitContradictionReviews": 7
+    "reviewStage": "octava_revision_registro_donaciones_normativa_asif_20261119",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados. Quinta revisión (19/11/2026): recuperado Google Doc privado de transcripción F70; 1:17:24 pregunta por «224 millones» y «responsabilidad moral» SIN moneda; la respuesta 1:17:31–44 los atribuye a Benedicto XVI/abusos. Se documenta de forma independiente la firma el 25/05/1984 del acuerdo IOR–acreedores del Banco Ambrosiano (Banca d'Italia, 1984) y el reporte UPI julio 1984 de 240,9 millones de USD abonados. Otras fuentes posteriores citan 224 millones USD, no euros: importes no conciliados aún con recibos primarios. Se califica como discrepancia plausible y atribución no comprobada, NO confusión demostrada del interlocutor; audio sin cotejar y nota existente sin inventar moneda. Sexta revisión 19/11/2026: transcripción F70 24:49–25:19 atribuye a justicia británica condena de Becciu, pero sentencia penal 16/12/2023 procede del Tribunal del Estado de la Ciudad del Vaticano, 5 años 6 meses y multa 8.000 €. El tribunal cifró inversión 2013–2014 en Athena en 200,5 millones USD y describió separadamente 125.000 € para cooperativa SPES del hermano Antonino. Sentencia civil inglesa [2025] EWHC 355 (Comm) relaciona a fondos Athena, Mincione y Secretaría de Estado, NO condena al cardenal. Tras nulidad relativa marzo 2026, audiencia vaticana octubre fijó próximas 26–29/01/2027: procedimiento no concluido definitivamente. 0 minutos de audio cotejados; notas ASR privadamente leídas, no audio. Séptima revisión 19/11/2026: confrontación de afirmaciones privadas de F70 en 1:13:57–1:14:43 (reparto automático del 50 % del cepillo; destino exclusivamente caritativo; supuesto uso de 13 M€ de déficit por Francisco) con informes oficiales completos del Óbolo 2024/2025, estados consolidados Santa Sede 2024 y declaración 2021 del prefecto de Economía. Cuentas: Óbolo 2024 58,0 M€ ingresos/75,4 gastos, 61,2 misión+13,3 proyectos; Óbolo 2025 57,6/59,8, 41,2 misión+13,3 proyectos; Santa Sede 2024 operativo -44,4 M€, financiero +46 M€, superávit +1,6 M€. No existe en estos documentos verificación del flujo automático 50 % ni de la operación concreta 13 M€; financiaciones a misión sí figuran. Entrevista no equivale a chequeo de audio; no publicada transcripción privada. Octava revisión 19/11/2026: texto privado F70 1:15:01 afirma ausencia universal de registro de donaciones; 1:15:31–39 habla de ausencia de recibo por billetes en cepillo. Son enunciados distintos: el motu proprio de 26/12/2020 exige subcuentas segregadas del Óbolo y otros fondos; portal oficial solicita datos identificativos para canales electrónicos, y declara tratamiento de datos; anexo R5/ASIF sobre donaciones aborda anonimato y efectivo como indicadores de riesgo; FAQ Óbolo distingue ausencia de deducción fiscal en ITALIA de documentación bancaria. Ninguna fuente acredita identidad de cada donante anónimo o cumplimiento perfecto ni condenas. Dos notas solo de transcripción, audio 0 cotejado. Distinción recibir recibo/registro agregado/identificación AML.",
+    "independentDocumentaryRelations": 47,
+    "explicitContradictionReviews": 8
   },
   "nodes": [
     {
@@ -724,6 +724,117 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "topic3d": "iglesia",
       "photo": "",
       "x": 17920,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-donacion-registro-afirmacion",
+      "name": "F70 · afirmación de donaciones sin registro",
+      "kind": "Afirmación de entrevista",
+      "subtitle": "Texto manual a 1:15:01: afirmación absoluta de ausencia de registro de donaciones.",
+      "note": "En la transcripción privada del episodio, hacia 1:15:01 se declara que las donaciones al Vaticano «no quedan registradas en ningún sitio». Esa GENERALIZACIÓN contradice que el Óbolo ofrezca canales de pago identificados, publique su política de gestión de datos personales y esté sujeto a cuentas separadas por normativa vaticana. Sin embargo, tales evidencias no certifican que todas las donaciones en efectivo sean individualmente identificables o que no haya habido irregularidades. Tampoco está cotejada la voz ni el audio del episodio.",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4501s",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 18200,
+      "y": 5260,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 4501,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4501s",
+          "status": "alegacion_sin_cotejo_audio",
+          "text": "La transcripción dice que las donaciones al Vaticano no quedan registradas en ningún sitio. Confrontar con cuentas separadas, canales de pago y control antilavado; el audio NO se ha cotejado."
+        }
+      ]
+    },
+    {
+      "id": "f70-donacion-recibo-cepillo-afirmacion",
+      "name": "F70 · falta de recibo en colecta anónima",
+      "kind": "Afirmación de entrevista",
+      "subtitle": "Texto manual a 1:15:31–1:15:39: se habla de no obtener recibo por efectivo depositado en cepillo.",
+      "note": "En la transcripción del episodio se afirma a 1:15:31–39 que una persona que introduce billetes en un cepillo de colecta no recibe recibo individual. La falta de recibo personal puede ocurrir en una colecta anónima en efectivo y no implica que el total de la recaudación no se registre. No se ha analizado el protocolo de recuento de parroquias o diócesis concretas. La cita y la atribución del hablante proceden del texto recibido, no de escuchar el audio.",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4531s",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 18450,
+      "y": 5260,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 4531,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4531s",
+          "status": "alegacion_sin_cotejo_audio",
+          "text": "Aproximadamente 1:15:31–39: ausencia de recibo para una limosna en efectivo. Es diferente de ausencia de registro contable de los fondos; audio no verificado."
+        }
+      ]
+    },
+    {
+      "id": "f70-motu-fondos-papales-2020",
+      "name": "Francisco · norma de fondos papales (26/12/2020)",
+      "kind": "Norma",
+      "subtitle": "Motu proprio con subcuentas separadas del Óbolo, fondo discrecional y fondos afectados.",
+      "note": "Artículo 2 del motu proprio de Francisco fechado 26/12/2020: desde 2021 la Administración del Patrimonio de la Sede Apostólica (APSA) debe incluir los fondos papales en los estados financieros consolidados, llevar contabilidad separada para el Óbolo, fondo discrecional y fondos de destino restringido, y someter gastos e inversiones a autorizaciones previstas. Artículo 1 §4 regula ingreso de contribuciones eclesiales en presupuesto general. La existencia de obligación normativa no prueba cumplimiento perfecto de todos sus asientos y tampoco atribuye nombre de donante a una limosna anónima.",
+      "source": "https://www.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20201226_una-migliore-organizzazione.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 18700,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-apsa",
+      "name": "Administración del Patrimonio de la Sede Apostólica (APSA)",
+      "kind": "Institución",
+      "subtitle": "Organismo que gestiona patrimonio y fondos papales según reparto de competencias de 2020.",
+      "note": "APSA administra inversiones y liquidez de la Santa Sede, con subcuentas específicas de fondos papales establecidas por el motu proprio de diciembre de 2020. Debe distinguirse del IOR (instituto financiero), de la Secretaría de Estado y de la Secretaría para la Economía (supervisión/controles). La atribución de competencias no demuestra que todas las transferencias individuales hayan sido auditadas o que todo donante de efectivo pueda identificarse.",
+      "source": "https://www.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20201226_una-migliore-organizzazione.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 18950,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-portal-donaciones-obolo",
+      "name": "Óbolo · portal de donaciones y privacidad",
+      "kind": "Documento institucional",
+      "subtitle": "Página oficial con tarjeta, PayPal, transferencia y tratamiento de información personal de donantes.",
+      "note": "La web oficial del Óbolo de San Pedro permite donaciones con tarjeta, PayPal, transferencia bancaria y postal; para tarjetas pide nombre, apellidos y correo, para transferencias nombre, apellidos y dirección. En su política de privacidad declara recoger y custodiar datos personales para donaciones puntuales o periódicas, y detalla medidas de almacenamiento. Son indicios verificables de pagos identificables y tratamiento declarado de datos; no constancia de recibo fiscal universal, verificación externa del libro mayor ni demostración sobre cada colecta en metálico.",
+      "source": "https://www.obolodisanpietro.va/es/dona.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 19200,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-asif-r5-donaciones-2018",
+      "name": "ASIF · indicadores de anomalía en donaciones (R5)",
+      "kind": "Norma",
+      "subtitle": "Anexo 1 del Reglamento n.º 5 (19/09/2018), apartado A: riesgos de donante, anonimato y efectivo.",
+      "note": "Anexo 1 de Reglamento n.º 5 de ASIF, sección II A Donaciones: considera indicadores de anomalía que un donante se niegue a facilitar información, use intermediarios para ocultar beneficiario real, no aclare procedencia de fondos, o proponga grandes entregas en metálico sin razón aparente. El reglamento instruye evaluación basada en riesgos: cada indicador no prueba delito y su ausencia no excluye sospecha. Es regulación sobre actividades sujetas a información/supervisión, NO evidencia de que todas las limosnas parroquiales se investiguen o todos los controles se apliquen sin fallos.",
+      "source": "https://www.asif.va/ENG/pdf/Regolamenti/EN-R5_Annex.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 19450,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-faq-obolo-deduccion-italia",
+      "name": "Óbolo · respuesta fiscal sobre donaciones en Italia",
+      "kind": "Documento institucional",
+      "subtitle": "Preguntas frecuentes: el donativo al Óbolo no es deducible ni genera crédito fiscal en Italia.",
+      "note": "En las preguntas frecuentes oficiales del Óbolo se declara expresamente que sus donaciones no son fiscalmente deducibles ni permiten crédito en Italia, por considerarse un pago a la Santa Sede, Estado extranjero. Esta norma tributaria italiana no demuestra ni desmiente un asiento financiero de donación, y no permite extender la deducibilidad a España u otras jurisdicciones. Una transferencia puede dejar justificante bancario aunque no otorgue deducción fiscal.",
+      "source": "https://www.obolodisanpietro.va/es/domande-frequenti.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 19700,
       "y": 5260,
       "podcastNotes": []
     }
@@ -1453,6 +1564,150 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "source": "https://www.vaticannews.va/en/vatican-city/news/2021-03/holy-see-budget-coronavirus-finances-pope-francis-economy.html",
       "episodeId": "idealab-f70-frattini",
       "note": "Guerrero indicó en entrevista de 2021 que en 2019 hubo 81 M€ contribuciones del Óbolo frente a 53,8 M€ ingreso neto, con reducción de reservas de 27,2 M€. Es dato histórico institucional atribuido, no corroboración de una operación de 13 M€.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-donativos-no-registro",
+      "a": "f70-episodio",
+      "b": "f70-donacion-registro-afirmacion",
+      "type": "El texto atribuye ausencia absoluta de registro de donaciones",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4501s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Texto privado del episodio a 1:15:01, sin verificación de voz ni audio. La frase universal es incompatible con canales identificados, contabilidad separada y mecanismos de información reglados; no se afirma que todo donante en metálico esté identificado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-mention-cepillo-sin-recibo",
+      "a": "f70-episodio",
+      "b": "f70-donacion-recibo-cepillo-afirmacion",
+      "type": "Se menciona ausencia de recibo personal para una colecta anónima en efectivo",
+      "confidence": "documentado",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4531s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Transcripción a 1:15:31–39: habla de no dar recibo individual por billetes en un cepillo. La ausencia de recibo es compatible con registro agregado de colectas, no hay verificación acústica ni examen de controles parroquiales.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-no-registro-obolo",
+      "a": "f70-donacion-registro-afirmacion",
+      "b": "f70-obolo-san-pedro",
+      "type": "Generalización atribuida al episodio, incompatible con obligaciones y prácticas publicadas",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4501s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La afirmación sobre ninguna donación registrada no se demuestra; deben distinguirse el Óbolo y otras donaciones a la Santa Sede, y el registro de ingresos de la identificación individual.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-mention-cepillo-obolo",
+      "a": "f70-donacion-recibo-cepillo-afirmacion",
+      "b": "f70-obolo-san-pedro",
+      "type": "Referencia a colecta en efectivo sin justificante no demuestra ausencia de contabilidad",
+      "confidence": "documentado",
+      "claimStatus": "mencion_temporizada_sin_cotejo_audio",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4531s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "No equivale una colecta común al Óbolo ni el recibo individual a los registros internos. Se documenta únicamente que el texto plantea esa hipótesis.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-motu-2020-obolo",
+      "a": "f70-motu-fondos-papales-2020",
+      "b": "f70-obolo-san-pedro",
+      "type": "Norma exige subcuentas contables separadas para el Óbolo y los demás fondos papales",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20201226_una-migliore-organizzazione.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Francisco, 26/12/2020 art. 2 §1–3: fondos papales bajo subcuentas separadas en estados consolidados, con fines propios y patrimonio identificado. Se verifica la obligación normativa, no su cumplimiento absoluto en todos los casos.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-motu-2020-apsa",
+      "a": "f70-motu-fondos-papales-2020",
+      "b": "f70-apsa",
+      "type": "Motu proprio 2020 atribuye administración de fondos papales a APSA",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20201226_una-migliore-organizzazione.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Artículo 2 identifica a APSA como administradora, con autorización del prefecto de Economía para supuestos específicos. Diferenciar APSA de IOR y Secretaría de Estado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-apsa-gestiona-obolo",
+      "a": "f70-apsa",
+      "b": "f70-obolo-san-pedro",
+      "type": "APSA administra contablemente el Óbolo según norma de 2020",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.vatican.va/content/francesco/en/motu_proprio/documents/papa-francesco-motu-proprio-20201226_una-migliore-organizzazione.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El mandato normativo de contabilidad segregada y registro presupuestario no demuestra recepción o auditoría de todas las colectas anónimas en parroquias de otros países.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-portal-obolo",
+      "a": "f70-portal-donaciones-obolo",
+      "b": "f70-obolo-san-pedro",
+      "type": "Portal oficial ofrece pagos identificables y formulario de privacidad",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.obolodisanpietro.va/es/dona.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La web ofrece tarjeta, PayPal, transferencias, y solicita datos personales según modalidad; su política de privacidad confirma su tratamiento declarado. Ello contradice la ausencia universal de todo registro, no prueba que cada limosna anónima genere asiento personal.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-portal-registro-donante",
+      "a": "f70-portal-donaciones-obolo",
+      "b": "f70-donacion-registro-afirmacion",
+      "type": "El portal declara recogida de datos de donantes en pagos electrónicos",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.obolodisanpietro.va/es/dona.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La web institucional informa tratamiento de datos para donaciones periódicas y puntuales, y muestra campos de nombre/apellidos/correo en pago por tarjeta; dato autodeclarado, no prueba de auditoría externa.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-asif-r5-indicadores",
+      "a": "f70-asif-r5-donaciones-2018",
+      "b": "f70-asif",
+      "type": "ASIF publica indicadores de anomalías para donaciones y operaciones en efectivo",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.asif.va/ENG/pdf/Regolamenti/EN-R5_Annex.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El anexo I del Reglamento n.º 5 (2018), sección II A, describe perfil de donante, anonimato, origen de fondos y efectivo como elementos de evaluación AML basada en riesgo; no es constatación de delito ni de eficacia perfecta.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-asif-r5-obolo",
+      "a": "f70-asif-r5-donaciones-2018",
+      "b": "f70-obolo-san-pedro",
+      "type": "Reglamento R5 contempla riesgos de donación en jurisdicción vaticana",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.asif.va/ENG/pdf/Regolamenti/EN-R5_Annex.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Los indicadores regulan valoración por sujetos obligados y supervisados e informan el contexto del Óbolo. No afirmar que todos los donativos parroquiales se sometan a identificación individual, o que el cumplimiento se haya comprobado operación por operación.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-faq-obolo-italia",
+      "a": "f70-faq-obolo-deduccion-italia",
+      "b": "f70-obolo-san-pedro",
+      "type": "FAQ oficial: Óbolo no deducible en Italia; no determina registro contable",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.obolodisanpietro.va/es/domande-frequenti.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La propia web declara ausencia de deducción o crédito fiscal en Italia; recibo de transferencia y tratamiento fiscal son cuestiones separadas. No extrapolar a España ni inferir irregularidad por falta de beneficio fiscal.",
       "podcastNotes": []
     }
   ]
