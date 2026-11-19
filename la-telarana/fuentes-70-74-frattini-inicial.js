@@ -15,10 +15,10 @@ window.IDEA_TELARANA_F70_REVIEW = {
     "lastMarker": "01:37:14",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "sexta_revision_becciu_jurisdiccion_vaticana_y_apelacion_oct2026",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados. Quinta revisión (19/11/2026): recuperado Google Doc privado de transcripción F70; 1:17:24 pregunta por «224 millones» y «responsabilidad moral» SIN moneda; la respuesta 1:17:31–44 los atribuye a Benedicto XVI/abusos. Se documenta de forma independiente la firma el 25/05/1984 del acuerdo IOR–acreedores del Banco Ambrosiano (Banca d'Italia, 1984) y el reporte UPI julio 1984 de 240,9 millones de USD abonados. Otras fuentes posteriores citan 224 millones USD, no euros: importes no conciliados aún con recibos primarios. Se califica como discrepancia plausible y atribución no comprobada, NO confusión demostrada del interlocutor; audio sin cotejar y nota existente sin inventar moneda. Sexta revisión 19/11/2026: transcripción F70 24:49–25:19 atribuye a justicia británica condena de Becciu, pero sentencia penal 16/12/2023 procede del Tribunal del Estado de la Ciudad del Vaticano, 5 años 6 meses y multa 8.000 €. El tribunal cifró inversión 2013–2014 en Athena en 200,5 millones USD y describió separadamente 125.000 € para cooperativa SPES del hermano Antonino. Sentencia civil inglesa [2025] EWHC 355 (Comm) relaciona a fondos Athena, Mincione y Secretaría de Estado, NO condena al cardenal. Tras nulidad relativa marzo 2026, audiencia vaticana octubre fijó próximas 26–29/01/2027: procedimiento no concluido definitivamente. 0 minutos de audio cotejados; notas ASR privadamente leídas, no audio.",
-    "independentDocumentaryRelations": 31,
-    "explicitContradictionReviews": 6
+    "reviewStage": "septima_revision_obolo_balance_2024_2025_y_declaraciones",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados. Quinta revisión (19/11/2026): recuperado Google Doc privado de transcripción F70; 1:17:24 pregunta por «224 millones» y «responsabilidad moral» SIN moneda; la respuesta 1:17:31–44 los atribuye a Benedicto XVI/abusos. Se documenta de forma independiente la firma el 25/05/1984 del acuerdo IOR–acreedores del Banco Ambrosiano (Banca d'Italia, 1984) y el reporte UPI julio 1984 de 240,9 millones de USD abonados. Otras fuentes posteriores citan 224 millones USD, no euros: importes no conciliados aún con recibos primarios. Se califica como discrepancia plausible y atribución no comprobada, NO confusión demostrada del interlocutor; audio sin cotejar y nota existente sin inventar moneda. Sexta revisión 19/11/2026: transcripción F70 24:49–25:19 atribuye a justicia británica condena de Becciu, pero sentencia penal 16/12/2023 procede del Tribunal del Estado de la Ciudad del Vaticano, 5 años 6 meses y multa 8.000 €. El tribunal cifró inversión 2013–2014 en Athena en 200,5 millones USD y describió separadamente 125.000 € para cooperativa SPES del hermano Antonino. Sentencia civil inglesa [2025] EWHC 355 (Comm) relaciona a fondos Athena, Mincione y Secretaría de Estado, NO condena al cardenal. Tras nulidad relativa marzo 2026, audiencia vaticana octubre fijó próximas 26–29/01/2027: procedimiento no concluido definitivamente. 0 minutos de audio cotejados; notas ASR privadamente leídas, no audio. Séptima revisión 19/11/2026: confrontación de afirmaciones privadas de F70 en 1:13:57–1:14:43 (reparto automático del 50 % del cepillo; destino exclusivamente caritativo; supuesto uso de 13 M€ de déficit por Francisco) con informes oficiales completos del Óbolo 2024/2025, estados consolidados Santa Sede 2024 y declaración 2021 del prefecto de Economía. Cuentas: Óbolo 2024 58,0 M€ ingresos/75,4 gastos, 61,2 misión+13,3 proyectos; Óbolo 2025 57,6/59,8, 41,2 misión+13,3 proyectos; Santa Sede 2024 operativo -44,4 M€, financiero +46 M€, superávit +1,6 M€. No existe en estos documentos verificación del flujo automático 50 % ni de la operación concreta 13 M€; financiaciones a misión sí figuran. Entrevista no equivale a chequeo de audio; no publicada transcripción privada.",
+    "independentDocumentaryRelations": 39,
+    "explicitContradictionReviews": 7
   },
   "nodes": [
     {
@@ -579,6 +579,153 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "x": 15700,
       "y": 4960,
       "podcastNotes": []
+    },
+    {
+      "id": "f70-obolo-san-pedro",
+      "name": "Óbolo de San Pedro",
+      "kind": "Fondo de donaciones",
+      "subtitle": "Fondo de donaciones al papa para la misión de la Iglesia universal y proyectos directos de asistencia.",
+      "note": "Fondo específicamente ligado a contribuciones para la misión universal del papa; no constituye el conjunto de limosnas parroquiales, el presupuesto completo de la Santa Sede ni un organismo equiparable al IOR. Los informes propios desglosan uso en misión apostólica y asistencia directa. En 2024 atribuye 61,2 M€ a misión y 13,3 M€ a ayuda directa; en 2025, 41,2 M€ y 13,3 M€ respectivamente. Estas cantidades son cifras declaradas institucionalmente, no auditoría externa de cada proyecto ni certificación de ausencia de irregularidades.",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2025/Annual-Disclosure-2025-EN.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 16000,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-obolo-informe-2024",
+      "name": "Óbolo de San Pedro · informe anual 2024",
+      "kind": "Documento financiero oficial",
+      "subtitle": "Disclosure 2024, publicado en junio de 2025: ingresos 58,0 M€, gastos 75,4 M€.",
+      "note": "Documento oficial Annual Disclosure 2024, PDF, 5 páginas. Ingresos totales 58,0 M€ (54,3 donaciones y 3,7 rendimientos/otros); gastos totales 75,4 M€; contribuciones concedidas 74,5 M€ (61,2 misión apostólica mediante entidades de la Santa Sede, 13,3 asistencia directa a 239 proyectos), financiadas también mediante 16,5 M€ de patrimonio del fondo. Diferencia de resultado del fondo: -17,4 M€. La cifra de 13,3 M€ se refiere a asistencia directa, NO al déficit del Vaticano de 13 millones alegado en el audio; son partidas y ejercicios distintos.",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2024/Rapporto-Obolo-2024-in-EUR-ENG.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 16240,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-obolo-informe-2025",
+      "name": "Óbolo de San Pedro · informe anual 2025",
+      "kind": "Documento financiero oficial",
+      "subtitle": "Disclosure 2025, publicado el 30/06/2026: ingresos 57,6 M€, gastos 59,8 M€.",
+      "note": "Documento oficial Annual Disclosure 2025, PDF, 5 páginas. Ingresos 57,6 M€, de los que 54,5 M€ son donativos y 3,1 M€ rendimientos/otros. Gastos 59,8 M€: contribuciones concedidas 54,5 M€ (41,2 misión apostólica mediante entidades, 13,3 asistencia directa) y 5,3 M€ de financieros/otros. Resultado -2,2 M€, que el propio documento atribuye a fluctuaciones de tipos de cambio. Documenta 252 proyectos directos en 74 países. No demuestra por sí solo destino contable de una colecta de cada parroquia ni ausencia de operaciones irregulares.",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2025/Annual-Disclosure-2025-EN.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 16480,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-estados-see-2024",
+      "name": "Santa Sede · estados financieros consolidados 2024",
+      "kind": "Documento financiero oficial",
+      "subtitle": "Secretaría para la Economía: déficit operativo -44,4 M€, resultado financiero +46 M€ y superávit +1,6 M€.",
+      "note": "Estados financieros consolidados de la Santa Sede 2024, publicados en 2025 por Secretaría para la Economía. Para total entidades: resultado operativo -44,4 M€ (2023: -83,5 M€), resultado financiero +46 M€, resultado del ejercicio +1,6 M€ (2023: -51,2 M€); a escala sin hospitales las magnitudes cambian. No confundir déficit operativo con saldo final, resultado del Fondo Óbolo (-17,4 M€ 2024) o una cifra indeterminada de «13 M€ en números rojos» sin año. Balance institucional publicado no es una auditoría independiente de los donativos parroquiales.",
+      "source": "https://www.spe.va/content/dam/spe/documenti/2024_Holy_See_Financial_Statements.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 16720,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-guerrero-obolo-2021",
+      "name": "Juan Antonio Guerrero · explicaciones del Óbolo (2021)",
+      "kind": "Documento periodístico institucional",
+      "subtitle": "Entrevista del prefecto para la Economía en Vatican News sobre presupuestos, misión y reservas.",
+      "note": "Entrevista de 2021 al entonces prefecto Juan Antonio Guerrero Alves: aclaró que el Óbolo costea actividades de misión papal y dicasterios, y que hablar de «cubrir el déficit» contable resulta incompleto porque esos servicios no generan ingresos propios. Aportó ejemplo 2019: contribución del Fondo 81 M€ y renta neta 53,8 M€, con reducción de reservas de 27,2 M€. Explicación institucional documentada, no un examen externo de todos los gastos. Incluye previsiones de 2021, no equivalentes al resultado definitivo de 2024 o 2025.",
+      "source": "https://www.vaticannews.va/en/vatican-city/news/2021-03/holy-see-budget-coronavirus-finances-pope-francis-economy.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 16960,
+      "y": 5260,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-afirmacion-obolo-mitad",
+      "name": "F70 · alegación de reparto parroquial del 50 %",
+      "kind": "Afirmación de entrevista",
+      "subtitle": "Tramo privado de transcripción 1:13:57–1:14:22; regla general sin norma aportada.",
+      "note": "En transcripción manual no cotejada con audio, se afirma hacia 1:13:57–1:14:22 que de cada euro depositado en el cepillo de una parroquia, 50 céntimos quedarían en la parroquia y otros 50 pasarían por la conferencia episcopal al papa. Los informes oficiales describen una colecta específica del Óbolo para San Pedro y San Pablo y otras donaciones, pero no establecen reparto obligatorio del 50 % de todas las colectas parroquiales. Ausencia de evidencia encontrada de regla universal ≠ demostrar que no exista ningún acuerdo particular en una diócesis. Audio y hablante aún sin verificación.",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4437s",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 17200,
+      "y": 5260,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 4437,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4437s",
+          "status": "alegacion_no_verificada_sin_cotejo_audio",
+          "text": "El texto atribuye una regla universal del 50 % de las limosnas parroquiales al Óbolo de San Pedro; los informes oficiales no la documentan. Marcador de transcripción sin cotejo audiovisual."
+        }
+      ]
+    },
+    {
+      "id": "f70-afirmacion-obolo-caridad",
+      "name": "F70 · alegación de destino exclusivamente caritativo",
+      "kind": "Afirmación de entrevista",
+      "subtitle": "Tramo privado de transcripción 1:14:27; incompatible con los fines publicados del Fondo.",
+      "note": "El texto del episodio hacia 1:14:27 declara que el Óbolo «solo puede ser utilizado para obras de caridad». Los informes oficiales 2024 y 2025 declaran expresamente contribuciones para actividades de misión apostólica (61,2 y 41,2 M€, respectivamente) además de proyectos de ayuda directa (13,3 M€ ambos años). La afirmación absoluta contradice los fines institucionales publicados. Que el Óbolo financie actividad de la Santa Sede no demuestra por sí solo malversación, uso contrario a la voluntad de donantes con fines especiales ni ausencia de controversias en otros años. Audio no cotejado.",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4467s",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 17440,
+      "y": 5260,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 4467,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4467s",
+          "status": "alegacion_no_verificada_sin_cotejo_audio",
+          "text": "La transcripción presenta el Óbolo como exclusivamente destinado a caridad. Los informes 2024–2025 incluyen gastos de misión apostólica además de ayudas directas. El audio no ha sido cotejado."
+        }
+      ]
+    },
+    {
+      "id": "f70-afirmacion-obolo-13m",
+      "name": "F70 · alegación de 13 M€ de déficit cubiertos",
+      "kind": "Afirmación de entrevista",
+      "subtitle": "Tramo privado de transcripción 1:14:35–1:14:43, sin fecha ni cuenta detallada.",
+      "note": "En el texto atribuido a Frattini hacia 1:14:35–1:14:43 se afirma que Francisco usó el Óbolo para cubrir «13 millones de euros en números rojos». No se identifica año, entidad económica, estado contable ni acto de autorización. El estado consolidado 2024 registra déficit operativo -44,4 M€ y superávit final +1,6 M€; el informe del Óbolo 2024 muestra 13,3 M€ de ayuda directa y -17,4 M€ de resultado, y el de 2025 -2,2 M€. Ninguna de esas cifras corrobora la operación específica de 13 M€; no concluir que ocurrió ni que se debió a uso ilícito. La existencia de financiamiento estructural de misión tampoco prueba la cifra. Audio no cotejado.",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4475s",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 17680,
+      "y": 5260,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 4475,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4475s",
+          "status": "alegacion_no_verificada_sin_cotejo_audio",
+          "text": "Se atribuye a Francisco financiación con el Óbolo de un déficit de 13 M€ sin ejercicio o asiento especificado. Las cuentas públicas 2024 y el Fondo no corroboran ese episodio concreto. Audio sin cotejar."
+        }
+      ]
+    },
+    {
+      "id": "f70-secretaria-economia",
+      "name": "Secretaría para la Economía de la Santa Sede",
+      "kind": "Institución",
+      "subtitle": "Organismo responsable de coordinar el presupuesto y publicar los estados financieros consolidados de la Santa Sede.",
+      "note": "Secretaría para la Economía (SPE), distinta de Secretaría de Estado y del IOR, publica estados financieros consolidados de la Santa Sede y aporta explicaciones sobre el uso de donaciones y patrimonio. Publicó informe del ejercicio 2024 y entrevistó públicamente a su prefecto Juan Antonio Guerrero en 2021. La transparencia de datos agregados no sustituye trazabilidad de cada donativo ni auditoría externa de operaciones denunciadas.",
+      "source": "https://www.spe.va/content/dam/spe/documenti/2024_Holy_See_Financial_Statements.pdf",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 17920,
+      "y": 5260,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1138,6 +1285,174 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "source": "https://www.vaticannews.va/es/vaticano/news/2026-10/vaticano-juicio-apelacion-fondos-santa-sede-audiencias-2027.html",
       "episodeId": "idealab-f70-frattini",
       "note": "La crónica de 29/10/2026 recuerda la nulidad relativa decretada el 17/03/2026, que no anuló por completo sentencia y procedimiento previos, y fija 26–29/01/2027 para cuestiones preliminares. No equivale a sentencia firme sobre el fondo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-obolo-50-episodio",
+      "a": "f70-episodio",
+      "b": "f70-afirmacion-obolo-mitad",
+      "type": "La transcripción atribuye reparto parroquial del 50 % sin norma respaldatoria",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4437s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Tramo manual a 1:13:57–1:14:22; afirmación atribuida al entrevistado por transcripción privada. No se ha verificado audio ni encontrado regla general de remisión obligatoria del 50 % de toda limosna.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-obolo-50-fondo",
+      "a": "f70-afirmacion-obolo-mitad",
+      "b": "f70-obolo-san-pedro",
+      "type": "Alegación del reparto fijo de colectas parroquiales, sin base normativa encontrada",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4437s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El informe oficial describe una colecta específica de San Pedro y San Pablo, donaciones directas y legados, no una retención automática universal de 50 % de cada cepillo.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-obolo-solo-caridad",
+      "a": "f70-episodio",
+      "b": "f70-afirmacion-obolo-caridad",
+      "type": "La entrevista afirma que el Óbolo únicamente puede financiar caridad",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4467s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La afirmación absoluta del texto (1:14:27) es incompatible con las partidas 2024/2025 publicadas de misión apostólica y asistencia directa; no validar audio.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-obolo-caridad-fondo",
+      "a": "f70-afirmacion-obolo-caridad",
+      "b": "f70-obolo-san-pedro",
+      "type": "Alegación de finalidad exclusiva de obras benéficas frente a misión apostólica declarada",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4467s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "No confundir el destino directo a personas necesitadas con el sostenimiento de la misión de la Santa Sede, que constituye un destino expreso en informes oficiales.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-obolo-13m-episodio",
+      "a": "f70-episodio",
+      "b": "f70-afirmacion-obolo-13m",
+      "type": "La transcripción menciona 13 millones de euros de déficit sin año verificable",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4475s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "A 1:14:35–43 se alude a 13 M€ de «números rojos» cubiertos con Óbolo por Francisco. No se identifica ejercicio, cuenta o acuerdo que permita cotejo; el audio no se ha escuchado.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-obolo-13m-francisco",
+      "a": "f70-afirmacion-obolo-13m",
+      "b": "f70-papa-francisco",
+      "type": "Uso atribuido al papa Francisco del Óbolo para cubrir supuesto déficit de 13 M€",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=4475s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Alegación específica no demostrada con documento primario. Que el fondo apoye estructuras deficitarias no acredita dicho episodio o irregularidad; distinguir déficit operativo, balance del fondo y financiación de misión.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-obolo-memoria-2024",
+      "a": "f70-obolo-informe-2024",
+      "b": "f70-obolo-san-pedro",
+      "type": "Existe publicación oficial del Óbolo 2024",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2024/Rapporto-Obolo-2024-in-EUR-ENG.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Informe oficial PDF de 5 páginas para 2024: ingresos 58 M€, gastos 75,4 M€, donaciones 54,3 M€. Verificar aquí existencia y contenido autodeclarado, no cada asiento como auditado externamente.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-obolo-2024-mision",
+      "a": "f70-obolo-informe-2024",
+      "b": "f70-santa-sede",
+      "type": "Informe 2024 declara 61,2 M€ misión apostólica y 13,3 M€ ayuda directa",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2024/Rapporto-Obolo-2024-in-EUR-ENG.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El propio fondo declara 74,5 M€ contribuciones: 61,2 M€ para actividades de la Santa Sede a través de dicasterios y 13,3 M€ para 239 proyectos de ayuda directa. Son cifras reportadas por la institución, no verificación externa del gasto de cada receptor.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-obolo-memoria-2025",
+      "a": "f70-obolo-informe-2025",
+      "b": "f70-obolo-san-pedro",
+      "type": "Existe publicación oficial del Óbolo 2025",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2025/Annual-Disclosure-2025-EN.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Informe oficial PDF del ejercicio 2025 publicado junio 2026: ingresos 57,6 M€ y gastos 59,8 M€. Los detalles son autodeclaración financiera institucional, no prueba de que todos los usos estén contrastados por terceros.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-obolo-2025-mision",
+      "a": "f70-obolo-informe-2025",
+      "b": "f70-santa-sede",
+      "type": "Informe 2025 declara financiación de misión apostólica por 41,2 M€",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2025/Annual-Disclosure-2025-EN.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "En 2025 el Óbolo informa de 41,2 M€ de contribuciones a la misión de la Santa Sede y 13,3 M€ de proyectos directos. El porcentaje 75,6 % aplica solo a 54,5 M€ de contribuciones, no al total de gastos de 59,8 M€.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-obolo-2025-asistencia",
+      "a": "f70-obolo-informe-2025",
+      "b": "f70-obolo-san-pedro",
+      "type": "Informe 2025 declara 13,3 M€ para asistencia directa en 74 países",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.obolodisanpietro.va/content/dam/obolodisanpietro/rapporti-annuali/ad-2025/Annual-Disclosure-2025-EN.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "En 2025 el fondo declaró 252 proyectos en 74 países, por 13,3 M€ de ayuda directa: 24,4 % de las contribuciones concedidas (54,5 M€). Es diferente del supuesto déficit de 13 millones en el pódcast.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-see-cuentas-2024",
+      "a": "f70-estados-see-2024",
+      "b": "f70-secretaria-economia",
+      "type": "La Secretaría publicó estados financieros de la Santa Sede de 2024",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.spe.va/content/dam/spe/documenti/2024_Holy_See_Financial_Statements.pdf",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La Secretaría para la Economía publica estados 2024: déficit operativo -44,4 M€ y resultado financiero +46 M€ conducen a +1,6 M€ resultado del ejercicio. Son magnitudes del consolidado, no del fondo Óbolo independiente.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-guerrero-2021-mision",
+      "a": "f70-guerrero-obolo-2021",
+      "b": "f70-obolo-san-pedro",
+      "type": "Prefecto Guerrero explica en 2021 uso del Óbolo para financiar misión, no solo ayudas directas",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.vaticannews.va/en/vatican-city/news/2021-03/holy-see-budget-coronavirus-finances-pope-francis-economy.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El prefecto Juan Antonio Guerrero explicó a Vatican News en 2021 que el fondo apoya costes de misión y dicasterios sin ingresos propios; la reducción de déficit contable no prueba apropiación ilícita.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-guerrero-2021-reservas",
+      "a": "f70-guerrero-obolo-2021",
+      "b": "f70-santa-sede",
+      "type": "Guerrero atribuye a 2019 uso de reservas del fondo por 27,2 M€",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.vaticannews.va/en/vatican-city/news/2021-03/holy-see-budget-coronavirus-finances-pope-francis-economy.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Guerrero indicó en entrevista de 2021 que en 2019 hubo 81 M€ contribuciones del Óbolo frente a 53,8 M€ ingreso neto, con reducción de reservas de 27,2 M€. Es dato histórico institucional atribuido, no corroboración de una operación de 13 M€.",
       "podcastNotes": []
     }
   ]
