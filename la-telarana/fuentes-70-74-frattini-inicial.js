@@ -15,10 +15,10 @@ window.IDEA_TELARANA_F70_REVIEW = {
     "lastMarker": "01:37:14",
     "verifiedMinuteReferences": 0,
     "transcriptAudioMatched": false,
-    "reviewStage": "quinta_revision_224m_ambrosiano_benedicto_contraste_20261119",
-    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados. Quinta revisión (19/11/2026): recuperado Google Doc privado de transcripción F70; 1:17:24 pregunta por «224 millones» y «responsabilidad moral» SIN moneda; la respuesta 1:17:31–44 los atribuye a Benedicto XVI/abusos. Se documenta de forma independiente la firma el 25/05/1984 del acuerdo IOR–acreedores del Banco Ambrosiano (Banca d'Italia, 1984) y el reporte UPI julio 1984 de 240,9 millones de USD abonados. Otras fuentes posteriores citan 224 millones USD, no euros: importes no conciliados aún con recibos primarios. Se califica como discrepancia plausible y atribución no comprobada, NO confusión demostrada del interlocutor; audio sin cotejar y nota existente sin inventar moneda.",
-    "independentDocumentaryRelations": 22,
-    "explicitContradictionReviews": 5
+    "reviewStage": "sexta_revision_becciu_jurisdiccion_vaticana_y_apelacion_oct2026",
+    "methodologicalNote": "Minutajes obtenidos del texto pegado; no del audio. Biografías separadas de opiniones, denuncias y hechos documentados. NO publicar el Google Doc privado ni tratar una imputación verbal como prueba. Los minutajes en los enlaces indican capítulos, no citas comprobadas palabra a palabra. Segunda pasada documental: Archivo Apostólico abierto a investigadores acreditados, fondos Pío XII abiertos en 2020, reforma Praedicate Evangelium vigente en 2022, cuentas IOR 2025 publicadas en 2026. Se distingue el texto primario de las valoraciones del episodio; audio sin cotejar. Tercera pasada (18/11/2026): evaluación técnica externa MONEYVAL 2024, informe ASIF 2025 y decisión judicial del caso financiero de Londres (marzo de 2026). Contexto externo separado del testimonio; IOR, Secretaría de Estado y Santa Sede no se equiparan como responsables de una misma actuación. Sin nuevos minutajes de audio verificados. Cuarta pasada (19/11/2026): examen directo de resoluciones vaticanas oficiales de Vatileaks 2012: Gabriele (fallo 06/10, 3 años reducidos a 18 meses), falta de apelación y ejecución (25/10), Sciarpelletti (fallo 10/11 y publicación 01/12, 4 meses reducidos a 2, suspendidos cinco años), y gracia papal ya recogida (22/12). Existen procesos y sentencias individuales; no constituyen prueba por sí solos de una red criminal de filtraciones ni atribuyen a Frattini las conclusiones judiciales. 0 minutos de audio cotejados. Quinta revisión (19/11/2026): recuperado Google Doc privado de transcripción F70; 1:17:24 pregunta por «224 millones» y «responsabilidad moral» SIN moneda; la respuesta 1:17:31–44 los atribuye a Benedicto XVI/abusos. Se documenta de forma independiente la firma el 25/05/1984 del acuerdo IOR–acreedores del Banco Ambrosiano (Banca d'Italia, 1984) y el reporte UPI julio 1984 de 240,9 millones de USD abonados. Otras fuentes posteriores citan 224 millones USD, no euros: importes no conciliados aún con recibos primarios. Se califica como discrepancia plausible y atribución no comprobada, NO confusión demostrada del interlocutor; audio sin cotejar y nota existente sin inventar moneda. Sexta revisión 19/11/2026: transcripción F70 24:49–25:19 atribuye a justicia británica condena de Becciu, pero sentencia penal 16/12/2023 procede del Tribunal del Estado de la Ciudad del Vaticano, 5 años 6 meses y multa 8.000 €. El tribunal cifró inversión 2013–2014 en Athena en 200,5 millones USD y describió separadamente 125.000 € para cooperativa SPES del hermano Antonino. Sentencia civil inglesa [2025] EWHC 355 (Comm) relaciona a fondos Athena, Mincione y Secretaría de Estado, NO condena al cardenal. Tras nulidad relativa marzo 2026, audiencia vaticana octubre fijó próximas 26–29/01/2027: procedimiento no concluido definitivamente. 0 minutos de audio cotejados; notas ASR privadamente leídas, no audio.",
+    "independentDocumentaryRelations": 31,
+    "explicitContradictionReviews": 6
   },
   "nodes": [
     {
@@ -478,6 +478,107 @@ window.IDEA_TELARANA_F70_REVIEW = {
           "text": "La transcripción recoge una pregunta por 224 millones y «responsabilidad moral» y una respuesta que los vincula a Benedicto XVI y abusos sexuales. La moneda no consta en ese pasaje; el audio no ha sido cotejado. La referencia histórica a pagos del IOR por Ambrosiano (1984) requiere diferenciarse de este relato."
         }
       ]
+    },
+    {
+      "id": "f70-becciu",
+      "name": "Giovanni Angelo Becciu",
+      "kind": "Persona",
+      "subtitle": "Cardenal italiano, antiguo sustituto para Asuntos Generales de la Secretaría de Estado; condenado en primera instancia por tribunal vaticano en 2023, con apelación pendiente en 2026.",
+      "note": "Angelo Becciu fue sustituto de Asuntos Generales de la Secretaría de Estado de la Santa Sede en 2013–2014. En transcripción privada de F70 hacia 24:49–25:19, el entrevistado (identificado por ASR como «Bechu») le atribuye condena por justicia británica en la City de Londres y mezcla una suma aproximada de 300 millones de euros con una fundación de su hermano. CONTRASTE: Tribunal del Estado de la Ciudad del Vaticano, no tribunal inglés, dictó la condena de primera instancia el 16/12/2023 (5 años y 6 meses y multa 8.000 €) por hechos financieros de diferentes capítulos. La inversión de 200,5 millones de DÓLARES en Athena Capital (2013–2014) y los 125.000 € remitidos vía Caritas Ozieri a la cooperativa SPES, presidida por su hermano Antonino, son capítulos distintos. La apelación vaticana declaró nulidad relativa en marzo de 2026 y seguía abierta tras audiencia de octubre, con cuestiones preliminares previstas en enero 2027. Sin cotejo audiovisual; no se convierte el texto ASR en cita literal o sentencia firme.",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 14200,
+      "y": 4960,
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f70-frattini",
+          "title": "Experto en el Vaticano: archivos, Curia y Vatileaks | Eric Frattini",
+          "publishedAt": "2026-04-02",
+          "timeSec": 1489,
+          "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=1489s",
+          "status": "declaracion_contrastada_documentalmente_sin_cotejo_audio",
+          "text": "En el texto privado del pódcast, alrededor de 24:49, se atribuye por error a tribunales británicos la condena del cardenal Becciu. El comunicado del Tribunal del Estado de la Ciudad del Vaticano del 16/12/2023 acredita jurisdicción vaticana. Distintos capítulos financieros: 200,5 M USD al fondo Athena y 125.000 € a cooperativa SPES del hermano Antonino. Audiencia de apelación todavía pendiente en octubre 2026; audio y hablante sin verificar."
+        }
+      ]
+    },
+    {
+      "id": "f70-secretaria-estado",
+      "name": "Secretaría de Estado de la Santa Sede",
+      "kind": "Institución",
+      "subtitle": "Órgano de gobierno de la Santa Sede; inversor en el caso del edificio de 60 Sloane Avenue, Londres.",
+      "note": "La Secretaría de Estado, institución de la Santa Sede distinta del IOR, invirtió entre 2013–2014 un total de 200,5 millones de dólares en participaciones del fondo Athena Capital Commodities. Este importe y su moneda constan en el comunicado judicial del Tribunal vaticano del 16/12/2023, dentro de la motivación de su condena en primera instancia; no es una operación de la cooperativa SPES de un hermano de Becciu ni indica una condena inglesa.",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 14450,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-athena-capital",
+      "name": "Athena Capital Commodities",
+      "kind": "Vehículo financiero histórico",
+      "subtitle": "Fondo de inversión vinculado a Raffaele Mincione utilizado por la Secretaría de Estado en 2013–2014.",
+      "note": "El Tribunal vaticano describió un desembolso de 200.500.000 dólares en 2013–2014 para suscribir participaciones en Athena Capital Commodities, fondo vinculado a Raffaele Mincione; una parte de su capital participó posteriormente en la operación del edificio londinense. La cifra no equivale a 300 millones de euros de la afirmación del pódcast. El litigio civil inglés de 2025 sobre inversiones relacionadas incluye a vehículos Athena y Mincione como demandantes, pero no es el proceso penal que condenó a Becciu.",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 14700,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-cooperativa-spes",
+      "name": "Cooperativa SPES (Cerdeña)",
+      "kind": "Organización",
+      "subtitle": "Cooperativa presidida por Antonino Becciu, hermano del cardenal, citada en la sentencia vaticana de 2023.",
+      "note": "El comunicado de 2023 del Tribunal vaticano relata dos transferencias que sumaban 125.000 euros a una cuenta de Caritas-Diócesis de Ozieri, con finalidad de canalizarlas hacia la cooperativa SPES que presidía Antonino Becciu. La sentencia en primera instancia calificó irregularidad en la disposición de fondos por un conflicto normativo de intereses familiares, sin afirmar que la cooperativa adquiriese el inmueble de Londres con los 200,5 millones de dólares ni que su financiación equivalga a la inversión londinense. Apelación abierta en 2026.",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 14950,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-fallo-becciu-2023",
+      "name": "Tribunal Vaticano · fallo de Becciu (16/12/2023)",
+      "kind": "Documento judicial",
+      "subtitle": "Comunicado judicial oficial vaticano con condena de primera instancia, causa financiera de la Secretaría de Estado.",
+      "note": "El Tribunal del Estado de la Ciudad del Vaticano, en comunicado de 16/12/2023, anunció pena de cinco años y seis meses de prisión y multa de 8.000 euros a Giovanni Angelo Becciu en la causa sobre fondos de la Secretaría de Estado. En el caso se diferenciaron: inversión de 200.500.000 USD en Athena Capital Commodities (2013–2014), otras operaciones sobre edificio londinense y transferencias 125.000 EUR canalizadas hacia cooperativa SPES del hermano Antonino. Este tribunal NO es la justicia del Reino Unido, y la sentencia de primera instancia fue recurrida, con decisión de nulidad parcial en marzo de 2026. No llamar firme a la condena.",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 15200,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-litigio-londres-uk-2025",
+      "name": "High Court inglesa · Athena v. Santa Sede (2025)",
+      "kind": "Documento judicial",
+      "subtitle": "Sentencia civil/comercial inglesa [2025] EWHC 355 (Comm); partes enumeradas en registro judicial oficial.",
+      "note": "Registro oficial Courts and Tribunals Judiciary de Reino Unido, [2025] EWHC 355 (Comm), 21/02/2025: litigio mercantil ante la Commercial Court inglesa entre fondos Athena y Raffaele Mincione como demandantes, y la Secretaría de Estado de la Santa Sede como demandada. El cardenal Becciu no aparece como acusado o parte en la carátula de esa causa, que NO es la condena penal de 2023. La coincidencia del inmueble en Londres no transfiere la jurisdicción penal del tribunal vaticano a un tribunal británico.",
+      "source": "https://www.judiciary.uk/judgments/athena-capital-fund-sicav-fis-sca-and-others-v-secretariat-of-state-of-the-holy-see/",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 15450,
+      "y": 4960,
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-audiencia-becciu-oct2026",
+      "name": "Apelación del Vaticano · audiencia 29/10/2026",
+      "kind": "Documento periodístico institucional",
+      "subtitle": "Información de Vatican News sobre señalamiento de cuestiones preliminares para 26–29/01/2027.",
+      "note": "Vatican News informó el 29/10/2026 de que la séptima audiencia de apelación sobre fondos de la Santa Sede duró once minutos y fijó audiencias para 26–29/01/2027 centradas en cuestiones preliminares. Becciu acudió a la sesión; no se decidió el fondo ni se dictó nueva sentencia definitiva. Se mencionó nulidad RELATIVA declarada en marzo 2026, preservando efectos parciales de la sentencia previa. Es una crónica institucional contemporánea, no acta judicial original del 29 de octubre.",
+      "source": "https://www.vaticannews.va/es/vaticano/news/2026-10/vaticano-juicio-apelacion-fondos-santa-sede-audiencias-2027.html",
+      "topic3d": "iglesia",
+      "photo": "",
+      "x": 15700,
+      "y": 4960,
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -917,6 +1018,126 @@ window.IDEA_TELARANA_F70_REVIEW = {
       "source": "https://www.upi.com/Archives/1984/07/03/The-Vatican-has-paid-2409-million-to-the-foreign/1295457675200/",
       "episodeId": "idealab-f70-frattini",
       "note": "UPI (3/07/1984) atribuyó a fuentes del Vaticano que se habían abonado 240,9 millones de dólares a acreedores del Ambrosiano. Cifra periodística de pago reportado, no comprobación propia de transferencia; distinta de las referencias de 224 millones USD, de 241 millones comprometidos y de una cifra en euros.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-alleg-becciu-tribunal-uk",
+      "a": "f70-episodio",
+      "b": "f70-becciu",
+      "type": "La transcripción atribuye a tribunales británicos una condena dictada por el Vaticano",
+      "confidence": "hipotesis",
+      "claimStatus": "alegacion_no_verificada",
+      "source": "https://www.youtube.com/watch?v=rLGs5AXE5iQ&t=1489s",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Según texto ASR del pódcast alrededor de 24:49–25:19 se afirma que Becciu fue condenado por justicia británica en Londres, y se vincula al caso una cifra de 300 millones de euros y la fundación de su hermano. El tribunal penal fue el del Estado de la Ciudad del Vaticano (16/12/2023). La afirmación original está reflejada sin audio cotejado y se contradice en su jurisdicción con una fuente primaria.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-tribunal-sentencia-becciu",
+      "a": "f70-tribunal-vaticano",
+      "b": "f70-fallo-becciu-2023",
+      "type": "El Tribunal del Vaticano emitió sentencia de primera instancia contra Becciu el 16/12/2023",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Comunicado oficial del Tribunal vaticano 16/12/2023. Es competencia penal vaticana, no inglesa; resolución de primera instancia recurrida y afectada por nulidad relativa de actuaciones en 2026.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-becciu-sentencia-2023",
+      "a": "f70-fallo-becciu-2023",
+      "b": "f70-becciu",
+      "type": "Becciu: 5 años y 6 meses de prisión y multa 8.000 euros en primera instancia",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Sentencia oficial de 16/12/2023 condena a Angelo Becciu a 5 años y 6 meses y multa 8.000 euros; no firme ni ejecutoria definitiva confirmada aquí. Apelación abierta tras nulidad relativa marzo 2026, señalamiento octubre 2026.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-secretaria-athena-2013",
+      "a": "f70-secretaria-estado",
+      "b": "f70-athena-capital",
+      "type": "El Tribunal cifra inversión de Secretaría de Estado en fondo Athena en 200,5 M USD",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El tribunal vaticano estableció que la Secretaría de Estado suscribió entre 2013 y 2014 participaciones de Athena Capital Commodities por 200.500.000 dólares; atribuyó la iniciativa al entonces sustituto Becciu. No confundir USD con EUR ni el dinero con subvención a SPES.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-becciu-secretaria-estado",
+      "a": "f70-becciu",
+      "b": "f70-secretaria-estado",
+      "type": "Becciu ejerció como sustituto de Secretaría de Estado durante la inversión de 2013–2014",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Comunicado tribunal vaticano 16/12/2023 identifica a Becciu como entonces sustituto de la Secretaría de Estado al ordenarse la inversión de 200,5 M USD de 2013–2014.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-fallo-cooperativa-spes",
+      "a": "f70-fallo-becciu-2023",
+      "b": "f70-cooperativa-spes",
+      "type": "Sentencia distingue 125.000 € de Caritas Ozieri destinados a SPES de la operación londinense",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2023/12/16/231216g.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "El Tribunal vaticano describe dos pagos con total 125.000 euros, remitidos a cuenta de Caritas-Diócesis de Ozieri, destinados a SPES, cooperativa presidida por Antonino Becciu. No atribuye a esta cooperativa la adquisición del inmueble londinense por 200,5 M USD.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-uk-litigio-secretaria",
+      "a": "f70-litigio-londres-uk-2025",
+      "b": "f70-secretaria-estado",
+      "type": "Tribunal británico tramitó litigio civil con Secretaría de Estado, no condena penal de Becciu",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.judiciary.uk/judgments/athena-capital-fund-sicav-fis-sca-and-others-v-secretariat-of-state-of-the-holy-see/",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Registro judicial británico [2025] EWHC 355 (Comm): demandada Secretaría de Estado de la Santa Sede; demandantes Athena Capital y Raffaele Mincione. No hay condena penal de Becciu por tribunal inglés.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-doc-uk-litigio-athena",
+      "a": "f70-litigio-londres-uk-2025",
+      "b": "f70-athena-capital",
+      "type": "Vehículos financieros Athena y Mincione aparecen como demandantes en causa mercantil inglesa",
+      "confidence": "documentado",
+      "claimStatus": "hecho_verificado_independiente",
+      "source": "https://www.judiciary.uk/judgments/athena-capital-fund-sicav-fis-sca-and-others-v-secretariat-of-state-of-the-holy-see/",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La carátula judicial oficial británica enumera a Athena Capital Fund y otros vehículos Athena y a Raffaele Mincione como litigantes civiles contra la Secretaría de Estado; el cardenal Becciu no es parte demandante ni demandada.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-apelacion-becciu-2026",
+      "a": "f70-audiencia-becciu-oct2026",
+      "b": "f70-becciu",
+      "type": "Vatican News informa que Becciu asistió a audiencia de apelación 29/10/2026",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.vaticannews.va/es/vaticano/news/2026-10/vaticano-juicio-apelacion-fondos-santa-sede-audiencias-2027.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "Según Vatican News (29/10/2026), Becciu compareció en la audiencia del proceso vaticano; se señalaron cuestiones preliminares del 26 al 29/01/2027, no una absolución o condena final nueva.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f70-stmt-apelacion-marz-oct2026",
+      "a": "f70-audiencia-becciu-oct2026",
+      "b": "f70-resolucion-londres-2026",
+      "type": "Seguimiento de nulidad relativa de marzo de 2026 y audiencias para enero de 2027",
+      "confidence": "documentado",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
+      "source": "https://www.vaticannews.va/es/vaticano/news/2026-10/vaticano-juicio-apelacion-fondos-santa-sede-audiencias-2027.html",
+      "episodeId": "idealab-f70-frattini",
+      "note": "La crónica de 29/10/2026 recuerda la nulidad relativa decretada el 17/03/2026, que no anuló por completo sentencia y procedimiento previos, y fija 26–29/01/2027 para cuestiones preliminares. No equivale a sentencia firme sobre el fondo.",
       "podcastNotes": []
     }
   ]
