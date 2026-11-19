@@ -6960,11 +6960,11 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_de_transcripcion_ni_audio",
           "audioVerified": false,
           "signals": {
-            "entities": 14,
-            "relations": 16,
+            "entities": 30,
+            "relations": 38,
             "biographies": 2,
             "statements": 16,
-            "independentChecks": 4,
+            "independentChecks": 23,
             "verifiedTimelineEvents": 2,
             "manualTimestampMarkers": 1483,
             "chapters": 29
@@ -7024,11 +7024,11 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_de_transcripcion_ni_audio",
           "audioVerified": false,
           "signals": {
-            "entities": 16,
-            "relations": 21,
+            "entities": 38,
+            "relations": 47,
             "biographies": 4,
             "statements": 20,
-            "independentChecks": 6,
+            "independentChecks": 30,
             "verifiedTimelineEvents": 1,
             "manualTimestampMarkers": 840,
             "chapters": 14
