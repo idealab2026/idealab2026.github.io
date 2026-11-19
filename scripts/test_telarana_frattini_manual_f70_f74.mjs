@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[16,20,30,38,20],expectedEdges=[20,26,38,47,25],
+const expectedNodes=[16,23,30,38,23],expectedEdges=[20,30,38,47,29],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -69,7 +69,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===78&&totalExternal===91,
+assert(totalNotes===78&&totalExternal===99,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -328,8 +328,8 @@ assert(f71.metadata.explicitContradictionReviews===2&&f74.metadata.explicitContr
  "F71/F74: faltan contrastes explícitos de afirmaciones sensibles");
 assert(f71.metadata.transcriptAudioMatched===false&&f74.metadata.transcriptAudioMatched===false,
  "Los textos no se han escuchado aún: cero validación del audio");
-assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===12&&
- f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===12,
+assert(f71.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===13&&
+ f74.edges.filter(e=>e.claimStatus==="hecho_verificado_independiente").length===13,
  "Falta contrastar polifarmacia, más de un estudio dental y fin de Hitler");
 for(const id of ["f71-doc-morell-hitler","f71-doc-diarios-medicos","f71-doc-pervitin-wehrmacht",
  "f71-doc-trevor-hitler","f71-doc-dental-hitler","f71-doc-blaschke-hitler",
@@ -381,6 +381,28 @@ for(const [tag,mod] of [["f71",f71],["f74",f74]]){
  assert(source?.claimStatus==="hecho_verificado_independiente"&&
   mod.metadata.verifiedMinuteReferences===0&&mod.metadata.transcriptAudioMatched===false,
   tag+": la existencia del documento no confirma la entrevista en audio");
+}
+// Sexta revisión: crítica de fuentes Hartmann 2021 / Brandt 1947 y datación CIR4.
+for(const [tag,mod] of [["f71",f71],["f74",f74]]){
+ assert(mod.metadata.independentDocumentaryRelations===18&&mod.metadata.transcriptAudioMatched===false,
+  tag+": bibliografía adicional no acredita verificación de audio");
+ const h=mod.nodes.find(n=>n.id===tag+"-hartmann-2021");
+ const k=mod.nodes.find(n=>n.id===tag+"-karl-brandt");
+ const tr=mod.nodes.find(n=>n.id===tag+"-acta-brandt-1947");
+ assert(h?.source.includes("wmm.pic-mediaserver.de")&&h.note.includes("no se podía demostrar")&&
+  k?.source.includes("nuremberg.law.harvard.edu")&&tr?.note.includes("03/02/1947"),
+  tag+": faltan las fuentes históricas 2021 o 1947");
+ for(const id of ["stmt-hartmann-pervitin","stmt-hartmann-morell","stmt-brandt-morell"]){
+  const e=mod.edges.find(e=>e.id===tag+"-"+id);
+  assert(e?.claimStatus==="hecho_documentado_por_portavoz_citado"&&e.confidence==="documentado",
+   tag+": conclusión o testimonio personal elevado a verificación material: "+id);
+ }
+ assert(mod.edges.find(e=>e.id===tag+"-doc-acta-brandt")?.claimStatus==="hecho_verificado_independiente",
+  tag+": falta registro judicial de la declaración");
+ const vita=mod.nodes.find(n=>n.id===tag+"-vitamultin");
+ const e=mod.edges.find(e=>e.id===tag+"-stmt-cir4-vitamultin");
+ assert(vita?.note.includes("fecha no demuestra")&&e?.note.includes("datación propia de la pauta no queda acreditada"),
+  tag+": el ECG 4/05/1944 no permite fechar exactamente la pauta Vitamultin");
 }
 for(const id of ["f71-mention-fuga","f74-mention-fuga"]){
  const e=[...f71.edges,...f74.edges].find(x=>x.id===id);
