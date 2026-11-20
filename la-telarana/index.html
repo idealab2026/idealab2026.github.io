@@ -714,6 +714,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./usaid-rockefeller-antecedentes.js?v=20261111-rockefeller-2"></script>
 <script src="./usaid-rockefeller-segunda-fase.js?v=20261111-rockefeller-v2-1"></script>
 <script src="./relaciones-verificadas-hunter.js?v=20261110-evidence-1"></script>
+<script src="./redes-politicas-verificadas-20261120.js?v=20261120-1"></script>
 <script src="./layout-seed-v2.js?v=20261109-1"></script>
 <script src="./graph-3d.js?v=20261116-source-kind-hover"></script>
 <script src="./local-relations-2d.js?v=20261116-multi-type-filter-5"></script>
@@ -1054,6 +1055,9 @@ function load(){
  auditLoadStep("Relaciones contrastadas · Hunter Biden",function(){
   mergeNewEpisode(window.IDEA_TELARANA_HUNTER_VERIFIED);
  },Boolean(window.IDEA_TELARANA_HUNTER_VERIFIED),"extra:hunter-contrastado",window.IDEA_TELARANA_HUNTER_VERIFIED);
+ auditLoadStep("Redes políticas · relaciones documentadas (20/11/2026)",function(){
+  mergeNewEpisode(window.IDEA_TELARANA_REDES_POLITICAS_VERIFICADAS);
+ },Boolean(window.IDEA_TELARANA_REDES_POLITICAS_VERIFICADAS),"extra:redes-politicas-verificadas",window.IDEA_TELARANA_REDES_POLITICAS_VERIFICADAS);
  seedError=!data.nodes.length;
  showLoadAudit();
 }
