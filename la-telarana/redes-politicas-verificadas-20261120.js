@@ -112,7 +112,7 @@ window.IDEA_TELARANA_REDES_POLITICAS_VERIFICADAS = {
     },
     {
       "id": "rd26-acom",
-      "name": "ACOM (Acción y Comunicación sobre Oriente Medio)",
+      "name": "ACOM",
       "kind": "Organización",
       "subtitle": "Asociación española centrada en relaciones España–Israel",
       "note": "David Hatchwell figura como cofundador. Juan Carlos Girauta declaró 1.000 €/mes por asesoría jurídica para ACOM antes de incorporarse a la Eurocámara en 2024.",
@@ -134,7 +134,7 @@ window.IDEA_TELARANA_REDES_POLITICAS_VERIFICADAS = {
     },
     {
       "id": "rd26-pp",
-      "name": "Partido Popular (PP)",
+      "name": "Partido Popular",
       "kind": "Partido político",
       "subtitle": "Partido político español",
       "note": "Alberto Ruiz-Gallardón fue dirigente del PP, pero dejó sus cargos políticos en 2014: su participación en una fundación desde 2016 no demuestra participación o financiación del PP.",
