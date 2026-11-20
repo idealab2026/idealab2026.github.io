@@ -14,7 +14,7 @@ const html=read("la-telarana/index.html");
 const graph3d=read("la-telarana/graph-3d.js");
 const wf=read(".github/workflows/pages.yml");
 const videos=["rLGs5AXE5iQ","WPW8yHSduFA","z-0I92HGceY","KxrKZU9T_6I","82W2taMMsTo"];
-const expectedNodes=[105,28,30,92,28],expectedEdges=[181,36,38,131,35],
+const expectedNodes=[105,28,30,110,28],expectedEdges=[181,36,38,162,35],
       expectedMarkers=[777,1006,1483,840,1019];
 assert(reg.total===74&&reg.counts.uniqueSources===71&&reg.counts.inReview===reg.inReview.length,
   "El inventario 74/71 está desincronizado");
@@ -73,7 +73,7 @@ for(let i=0;i<videos.length;i++){
    "F"+n+": mención en entrevista codificada como relación probada");
  totalNotes+=notes.length;totalExternal+=documented.length;
 }
-assert(totalNotes===90&&totalExternal===312,
+assert(totalNotes===90&&totalExternal===343,
   "No cuadran las notas ni los vínculos independientes de F70–F74");
 const history70=feed.items.find(x=>x.id==="study-f70-benedicto-gabriele-indulto-2012"),
       history72=feed.items.find(x=>x.id==="study-f72-presentacion-archivo-nuclear-iran-2018");
@@ -432,7 +432,7 @@ assert(f72Iran.nodes.find(n=>n.id==="f72-informe-oiea-2015")?.note.includes("201
 
 
 const f73Iran=ctx.window.IDEA_TELARANA_F73_REVIEW;
-assert(f73Iran.metadata.independentDocumentaryRelations===100,
+assert(f73Iran.metadata.independentDocumentaryRelations===131,
  "F73: recuento documental no conciliado");
 for(const id of ["f73-doc-israel-ataques-jun2025","f73-doc-ataques-natanz-2025",
  "f73-doc-oiea-acta-onu-2025","f73-doc-acta-natanz-2025"]){
@@ -462,7 +462,7 @@ for(const [a,b] of [["f72-oiea","f73-oiea"],["f72-natanz","f73-natanz"]]){
 // Sexta revisión: Midnight Hammer de EE. UU. no es sinónimo de la
 // operación israelí del 13/06 ni valida atribuciones al Mossad.
 const f73June=ctx.window.IDEA_TELARANA_F73_REVIEW;
-assert(f73June.metadata.independentDocumentaryRelations===100&&f73June.metadata.verifiedMinuteReferences===0,
+assert(f73June.metadata.independentDocumentaryRelations===131&&f73June.metadata.verifiedMinuteReferences===0,
  "F73: ampliar respaldo documental no equivale a audio verificado");
 const statements=[
  "f73-doc-eeuu-midnight-hammer","f73-doc-midnight-fordow","f73-doc-midnight-natanz",
@@ -516,7 +516,7 @@ assert(c73.edges.find(x=>x.id==="f73-doc-haniyeh-muerte-2024")?.claimStatus==="h
  "F73: la muerte de Haniyeh no está documentada");
 assert(!c73.edges.some(x=>x.a==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.b)||x.b==="f73-mossad"&&/fakhrizadeh|haniyeh/.test(x.a)),
  "F73: no crear aristas de Mossad a asesinatos por inferencias");
-assert(c72.metadata.independentDocumentaryRelations===23&&c73.metadata.independentDocumentaryRelations===100,
+assert(c72.metadata.independentDocumentaryRelations===23&&c73.metadata.independentDocumentaryRelations===131,
  "F72/F73: metadatos de relaciones documentales desincronizados");
 
 
@@ -631,7 +631,7 @@ for(const id of ["f73-alleg-f73-marruecos-sanchez","f73-alleg-f73-sanchez-marrue
  assert(edge?.claimStatus==="alegacion_no_verificada"&&edge.confidence==="hipotesis",
   "F73: inferencia de autoría marroquí presentada como hecho: "+id);
 }
-assert(f73Pegasus.metadata.independentDocumentaryRelations===100&&
+assert(f73Pegasus.metadata.independentDocumentaryRelations===131&&
  f73Pegasus.metadata.transcriptAudioMatched===false&&f73Pegasus.metadata.verifiedMinuteReferences===0&&
  reg.sourceCatalog.entries.find(x=>x.order===73)?.analysisCoverage.percent===26,
  "F73: cobertura heurística y minutos acústicos indebidamente incrementados");
@@ -657,7 +657,7 @@ for(const id of ["f73-alleg-frattini-shinbet","f73-alleg-frattini-foreknowledge"
  assert(e?.claimStatus==="alegacion_no_verificada"&&e.confidence==="hipotesis",
   "F73: conocimientos, autoría o complicidad no verificados dados por hechos "+id);
 }
-assert(f73Oct.metadata.independentDocumentaryRelations===100&&
+assert(f73Oct.metadata.independentDocumentaryRelations===131&&
  f73Oct.metadata.transcriptAudioMatched===false&&f73Oct.metadata.verifiedMinuteReferences===0&&
  reg.sourceCatalog.entries.find(x=>x.order===73)?.analysisCoverage.percent===26,
  "F73: cobertura y audio no deben inflarse por contrastes externos");
@@ -678,9 +678,43 @@ for(const id of ["doc-ronen-informe-shinbet","stmt-shinbet-sim45","stmt-shinbet-
 }
 assert(f73Latest.edges.find(e=>e.id==="f73-doc-idf-analista-v")?.source==="https://www.idf.il/352288"&&
  f73Latest.edges.find(e=>e.id==="f73-doc-comp-informe-2025")?.source==="https://www.mevaker.gov.il/en/newsroom/2025-11-11-special-report"&&
- f73Latest.metadata.independentDocumentaryRelations===100&&
+ f73Latest.metadata.independentDocumentaryRelations===131&&
  !f73Latest.metadata.transcriptAudioMatched&&f73Latest.metadata.verifiedMinuteReferences===0,
  "F73: fuente primaria o audio cotejado indebidamente declarado");
+// Undécima revisión F73: el comunicado PRIMARIO del Shin Bet y el texto reproducido de los dos fallos.
+const f73Primary=ctx.window.IDEA_TELARANA_F73_REVIEW;
+const f73Pdf="https://img.haarets.co.il/bs/00000195-621b-d593-a1b5-ee9b1e6e0000/bd/7f/ff144bea4e43b64f4f1ce80cabd1/";
+const courtMirror="https://bagats.org.il/judgments/";
+for(const suffix of ["shinbet-comunicado-original-2025","shinbet-primera-sim-5oct","shinbet-evaluacion-0100","shinbet-alerta-0303","shinbet-valoracion-0430","shinbet-comparacion-sims","shinbet-aman-indicios-perdidos","shinbet-jericho-versiones-2018-2022","shinbet-informe-completo-secreto","tribunal-fallo-reproducido-2026","hcj8136-06-25","hcj31082-09-25","tribunal-cuatro-auditorias-vedadas","tribunal-cuatro-auditorias-reiniciar","juez-ofer-groskopf","tribunal-groskopf-distinto-fundamento","interventor-respuesta-oficial-2026"]){
+ const n=f73Primary.nodes.find(x=>x.id==="f73-"+suffix);
+ assert(n&&n.note.length>160&&n.source.startsWith("https://"),"F73: no existe fuente original/justificación "+suffix);
+}
+for(const suffix of ["shinbet-investigacion-mar2025","shinbet-senales-6oct","shinbet-sim45","shinbet-idf-competencias"]){
+ const n=f73Primary.nodes.find(x=>x.id==="f73-"+suffix);
+ assert(n?.source.startsWith(f73Pdf)&&n.note.includes("04/03/2025"),"F73: sigue habiendo fuente secundaria como sustento de secuencia "+suffix);
+}
+const sim=f73Primary.nodes.find(n=>n.id==="f73-shinbet-sim45");
+assert(sim.note.includes("5/10")&&sim.note.includes("04:30")&&sim.note.includes("38")&&sim.note.includes("37"),
+ "F73: la serie SIM contiene fecha/tasa base equivocadas");
+for(const suffix of ["stmt-shinbet-detecta-5oct","stmt-shinbet-estimacion-0100","stmt-shinbet-alerta-0303","stmt-reunion-shinbet-0430","stmt-sim-comparacion","stmt-dos-indicios-aman","stmt-plan-shinbet-2018-2022"]){
+ const r=f73Primary.edges.find(x=>x.id==="f73-"+suffix);
+ assert(r?.claimStatus==="hecho_documentado_por_portavoz_citado"&&r.confidence==="documentado"&&r.source.startsWith(f73Pdf),
+ "F73: informes de la propia agencia indebidamente declarados hechos independientes "+suffix);
+}
+assert(f73Primary.nodes.find(x=>x.id==="f73-shinbet-informe-completo-secreto").note.includes("NO acceso integral")&&
+ f73Primary.nodes.find(x=>x.id==="f73-tribunal-fallo-reproducido-2026").note.includes("NO oficial")&&
+ f73Primary.nodes.find(x=>x.id==="f73-tribunal-groskopf-distinto-fundamento").note.includes("no la invalidez")&&
+ f73Primary.nodes.find(x=>x.id==="f73-hcj31082-09-25").note.includes("audiencia PREVIA"),
+ "F73: pérdida de cautelas metodológicas, diferencia de votos o garantía procesal");
+assert(f73Primary.nodes.find(x=>x.id==="f73-tribunal-fallo-reproducido-2026").source.startsWith(courtMirror)&&
+ f73Primary.nodes.find(x=>x.id==="f73-interventor-respuesta-oficial-2026").source==="https://www.mevaker.gov.il/newsroom/2026-06-29"&&
+ f73Primary.metadata.independentDocumentaryRelations===131&&
+ f73Primary.metadata.verifiedMinuteReferences===0&&f73Primary.metadata.transcriptAudioMatched===false,
+ "F73: sentencia, cuenta documental o audio falsamente validados");
+assert(f73Primary.nodes.find(n=>n.id==="f73-fdi")?.source.includes("www.idf.il")&&
+ f73Primary.edges.find(e=>e.id==="f73-doc-aman-direccion-fdi")?.claimStatus==="hecho_verificado_independiente"&&
+ ["f73-stmt-shinbet-alerta-inicial-fdi","f73-stmt-alerta-0303-idf"].every(id=>f73Primary.edges.find(e=>e.id===id)?.b==="f73-fdi"),
+ "F73: no equiparar FDI destinataria con Aman como lector individual");
 // Cruce de entidades F69–F72–F73: los nombres canónicos fusionan fichas, no atribuyen operaciones.
 const f69ctx={window:{}};
 vm.runInNewContext(read("la-telarana/podcast-vaquero-150.js"),f69ctx,{timeout:8000});
