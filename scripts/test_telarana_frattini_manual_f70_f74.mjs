@@ -1,5 +1,17 @@
 /* F70–F74 · auditoría de textos privados recibidos, fichas atribuidas y sector eclesial. */
-import assert from "node:assert/strict";
+import assertStrict from "node:assert/strict";
+// Acumular errores para diagnosticar TODO el inventario, sin permitir publicar si falla una sola aserción.
+const qualityErrors=[];
+function assert(condition,description){
+ try{assertStrict(condition,description)}
+ catch(error){qualityErrors.push(description);console.error("QA Frattini: "+description)}
+}
+process.on("beforeExit",()=>{
+ if(qualityErrors.length){
+  console.error("QA Frattini: "+qualityErrors.length+" controles incumplidos; se bloquea la publicación.");
+  process.exitCode=1;
+ }
+});
 import fs from "node:fs";
 import vm from "node:vm";
 
@@ -117,7 +129,8 @@ for(const id of ["f70-fallo-dauray-superior-2012","f70-analisis-subsidiario-daur
  assert(f70.nodes.some(n=>n.id===id&&n.note.length>110),"F70: nueva fuente incompleta "+id);
 }
 assert(f70.nodes.find(n=>n.id==="f70-fallo-dauray-superior-2012").note.includes("ESTIMÓ")&&
- f70.nodes.find(n=>n.id==="f70-analisis-subsidiario-dauray-2012").note.includes("HIPOTÉTICO")&&
+ f70.nodes.find(n=>n.id==="f70-analisis-subsidiario-dauray-2012").note.includes("condicionalmente")&&
+ f70.nodes.find(n=>n.id==="f70-analisis-subsidiario-dauray-2012").note.includes("no establece que las alegaciones sean ciertas")&&
  f70.nodes.find(n=>n.id==="f70-fallo-desprecinto-2013").note.includes("NO dio acceso universal"),
  "F70: diferenciar fallo real, razonamiento subsidiario y apertura limitada de documentos");
 for(const id of ["f70-doc-superior-2012-fallo","f70-doc-fleet-acuerdo-2003","f70-doc-fleet-fondo-timothy","f70-doc-bannon-poder-2000","f70-doc-2012-carta-maciel"]){
