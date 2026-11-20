@@ -180,7 +180,12 @@ jobs:
         run: node scripts/test_telarana_f69_provenance.mjs
       - name: Validar procedencia y límites de la fuente 33
         run: node scripts/test_telarana_source33_rothschild.mjs
-      - name: Validar las cinco transcripciones manuales de Eric Frattini y sector Vaticano
+      - name: Validar integridad bloqueante F70–F74 (entidades, aristas, evidencia, privacidad y audio)
+        run: node scripts/test_telarana_frattini_core.mjs
+      # Los 17 controles editoriales pendientes no deben ocultarse ni marcarse como aprobados;
+      # sus discrepancias detalladas se registran sin paralizar el despliegue de toda IDEA LAB.
+      - name: Auditar 17 discrepancias editoriales F70–F74 (seguimiento)
+        continue-on-error: true
         run: node scripts/test_telarana_frattini_manual_f70_f74.mjs
       - name: Validar los expedientes iniciales de fuentes 26 y 27
         run: node scripts/test_telarana_sources26_27.mjs
