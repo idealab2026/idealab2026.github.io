@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const html=fs.readFileSync("dist/la-telarana/index.html","utf8");
-const refs=Array.from(html.matchAll(/<script\\b[^>]*\\bsrc=["'](\\.\\/[^"']+\\.js(?:\\?[^"']*)?)["']/g),m=>m[1]);
+const refs=Array.from(html.matchAll(/<script\b[^>]*\bsrc=["'](\.\/[^"']+\.js(?:\?[^"']*)?)["']/g),m=>m[1]);
 assert(refs.length>=90,"El HTML no conserva el inventario de scripts públicos");
 const missing=[];
 for(const ref of refs){
