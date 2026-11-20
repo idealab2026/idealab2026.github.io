@@ -203,6 +203,8 @@ jobs:
           if-no-files-found: error
       - name: Contrastar red financiera y referencias de la fuente 25
         run: node scripts/test_telarana_source25_crosschecks.mjs
+      - name: Validar archivos médicos F71/F74 y dependencia de fuentes
+        run: node scripts/test_telarana_archivos_f71_f74.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
         run: node scripts/test_telarana_load_audit.mjs
       - name: Validar transcripción y evidencias de la fuente 02
@@ -359,6 +361,7 @@ jobs:
           cp la-telarana/usaid-rockefeller-segunda-fase.js dist/la-telarana/usaid-rockefeller-segunda-fase.js
           cp la-telarana/relaciones-verificadas-hunter.js dist/la-telarana/relaciones-verificadas-hunter.js
           cp la-telarana/redes-politicas-verificadas-20261120.js dist/la-telarana/redes-politicas-verificadas-20261120.js
+          cp la-telarana/archivos-medicos-f71-f74-20261120.js dist/la-telarana/archivos-medicos-f71-f74-20261120.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
