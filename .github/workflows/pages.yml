@@ -203,6 +203,8 @@ jobs:
           if-no-files-found: error
       - name: Contrastar red financiera y referencias de la fuente 25
         run: node scripts/test_telarana_source25_crosschecks.mjs
+      - name: Validar archivos médicos F71/F74 y dependencia de fuentes
+        run: node scripts/test_telarana_archivos_f71_f74.mjs
       - name: Auditar crecimiento de entidades y presencia de todas las fuentes
         run: node scripts/test_telarana_load_audit.mjs
       - name: Validar transcripción y evidencias de la fuente 02
