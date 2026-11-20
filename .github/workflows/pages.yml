@@ -352,6 +352,7 @@ jobs:
           cp la-telarana/usaid-rockefeller-antecedentes.js dist/la-telarana/usaid-rockefeller-antecedentes.js
           cp la-telarana/usaid-rockefeller-segunda-fase.js dist/la-telarana/usaid-rockefeller-segunda-fase.js
           cp la-telarana/relaciones-verificadas-hunter.js dist/la-telarana/relaciones-verificadas-hunter.js
+          cp la-telarana/redes-politicas-verificadas-20261120.js dist/la-telarana/redes-politicas-verificadas-20261120.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
@@ -462,6 +463,8 @@ jobs:
           test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 6
           test -f dist/data/traffic.json
           test -f dist/data/traffic-snapshot.json
+      - name: Verificar que todos los scripts públicos están en Pages
+        run: node scripts/test_telarana_dist_scripts.mjs
       - name: Empaquetar web corporativa
         uses: actions/upload-pages-artifact@v4
         with:

@@ -43,6 +43,7 @@ for(let i=0;i<videos.length;i++){
    "Los marcadores de F"+n+" no coinciden con la transcripción");
  assert(mod.metadata.transcriptAudioMatched===false&&mod.metadata.verifiedMinuteReferences===0,
    "No dar por cotejados los turnos y minutajes de F"+n);
+ const documented=mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente"||x.claimStatus==="hecho_documentado_por_portavoz_citado");
  const row=reg.sourceCatalog.entries.find(x=>x.order===n),review=reg.inReview.find(x=>x.order===n);
  assert(row&&review&&row.videoId===videos[i],"Falta seguimiento de F"+n);
  assert(row.analysisCoverage.signals.entities===mod.nodes.length&&
@@ -65,7 +66,6 @@ for(let i=0;i<videos.length;i++){
  const notes=mod.nodes.flatMap(x=>x.podcastNotes||[]);
  assert(notes.length>=6&&notes.every(x=>Number.isInteger(x.timeSec)&&x.timeSec>=0&&x.source.includes("youtube.com/watch?v=")&&x.status),
    "F"+n+": faltan notas con tiempos y estado probatorio");
- const documented=mod.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente"||x.claimStatus==="hecho_documentado_por_portavoz_citado");
  assert(documented.every(x=>x.confidence==="documentado"&&x.source.startsWith("https://")&&!x.source.includes("youtube.com")),
    "F"+n+": se ha elevado un testimonio a vínculo contrastado");
  const remaining=mod.edges.filter(x=>x.claimStatus!=="hecho_verificado_independiente"&&x.claimStatus!=="hecho_documentado_por_portavoz_citado");
