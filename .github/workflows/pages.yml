@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  statuses: write
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -472,3 +473,21 @@ jobs:
       - name: Publicar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      # El estado asociado al SHA proporciona un runId verificable y evita confundir un merge con un despliegue.
+      - name: Publicar estado verificable de GitHub Pages
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [[ "${{ job.status }}" == "success" ]]; then
+            state=success
+            description="Sitio IDEA LAB publicado en GitHub Pages con pruebas superadas"
+          else
+            state=failure
+            description="Publicación detenida: revisar el log de GitHub Actions"
+          fi
+          gh api -X POST "repos/${{ github.repository }}/statuses/${{ github.sha }}" \
+            -f state="$state" \
+            -f context="IDEA LAB / Pages" \
+            -f description="$description" \
+            -f target_url="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
