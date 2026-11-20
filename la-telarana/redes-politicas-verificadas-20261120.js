@@ -72,7 +72,7 @@ window.IDEA_TELARANA_REDES_POLITICAS_VERIFICADAS = {
       "kind": "Persona",
       "subtitle": "Presidente del Gobierno y dirigente del PSOE",
       "note": "La resolución R/0580/2019 recoge la reunión con George Soros en La Moncloa el 27 de junio de 2018; el objeto o consecuencias políticas no quedan probados.",
-      "source": "https://www.consejodetransparencia.es/ct_Home/dam/jcr%3A9765a83e-96df-48ea-b290-e0982b3d2683/R-0580-2019.pdf",
+      "source": "https://consejodetransparencia.es/content/dam/ctransparencia/portal-ctbg/actividad/resoluciones/resolucionesage/age2019/11noviembre/descomprimidas/estimadas/R-0580-2019.pdf",
       "topic3d": "global",
       "x": 8100,
       "y": 1450
@@ -217,7 +217,7 @@ window.IDEA_TELARANA_REDES_POLITICAS_VERIFICADAS = {
       "b": "rd26-sanchez",
       "type": "Reunión institucional (27/06/2018)",
       "note": "Presidencia confirmó que Pedro Sánchez se reunió con George Soros en el complejo de La Moncloa el 27 de junio de 2018 (Resolución 580/2019). No implica financiación, instrucciones o subordinación.",
-      "source": "https://www.consejodetransparencia.es/ct_Home/dam/jcr%3A9765a83e-96df-48ea-b290-e0982b3d2683/R-0580-2019.pdf",
+      "source": "https://consejodetransparencia.es/content/dam/ctransparencia/portal-ctbg/actividad/resoluciones/resolucionesage/age2019/11noviembre/descomprimidas/estimadas/R-0580-2019.pdf",
       "confidence": "documentado",
       "claimStatus": "hecho_verificado_independiente",
       "episodeId": "idealab-redes-politicas-documentadas-20261120"
