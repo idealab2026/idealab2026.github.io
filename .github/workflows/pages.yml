@@ -117,6 +117,8 @@ jobs:
         run: node scripts/test_telarana_source61.mjs
       - name: Validar registros financieros FEC y declaraciones de parte F61 (2026)
         run: node scripts/test_telarana_f61_fec_20261124.mjs
+      - name: Auditar operaciones electorales F61 en Schedule E y declaraciones atribuidas
+        run: node scripts/test_telarana_f61_operaciones_20261124.mjs
       - name: Comprobar cronología e identidades de fuente 62
         run: node scripts/test_telarana_source62.mjs
       - name: Validar fuentes 18 y 21, Lorenzo y presencia en Pages
