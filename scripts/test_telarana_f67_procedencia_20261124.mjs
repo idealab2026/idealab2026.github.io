@@ -1,0 +1,27 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+const path="la-telarana/fuente-67-procedencia-medieval-20261124.js";
+const ctx={window:{}};
+vm.runInNewContext(fs.readFileSync(path,"utf8"),ctx,{timeout:4000});
+const d=ctx.window.IDEA_TELARANA_F67_PROCEDENCIA_20261124;
+assert.equal(d.metadata.sourceOrder,67);
+assert(!d.metadata.audioVerified&&!d.metadata.timecodesAvailable&&!d.metadata.reviewComplete);
+assert.equal(d.nodes.length,18);assert.equal(d.edges.length,20);
+const n=new Map(d.nodes.map(n=>[n.id,n])),e=new Map(d.edges.map(e=>[e.id,e]));
+assert.equal(n.size,18);assert.equal(e.size,20);
+for(const r of d.edges){assert(n.has(r.a)&&n.has(r.b));assert(/^https:\/\//.test(r.source));}
+assert(n.get("f67x-problemata").name.includes("1355–1382"));
+assert(n.get("f67x-paper").note.includes("403"));
+assert(n.get("f67x-badge").note.includes("primera mitad del XV"));
+assert(n.get("f67x-badge").note.includes("antes de 1453"));
+assert.equal(e.get("f67x-problemata-shroud").claimStatus,"testimonio_textual_atribuido");
+assert.equal(e.get("f67x-memo-shroud").claimStatus,"testimonio_textual_atribuido");
+assert.equal(e.get("f67x-paper-shroud").confidence,"indicio");
+assert(e.get("f67x-letter-shroud").note.includes("No constituye autentificación"));
+assert(n.get("f67x-carbon").note.includes("1260–1390"));
+const html=fs.readFileSync("la-telarana/index.html","utf8"),wf=fs.readFileSync(".github/workflows/pages.yml","utf8");
+assert(html.includes('src="./fuente-67-procedencia-medieval-20261124.js'));
+assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_F67_PROCEDENCIA_20261124)"));
+assert(wf.includes("cp "+path+" dist/"+path));
+console.log("OK F67: procedencia, testimonio atribuido, cronología museística y límites de las fuentes.");
