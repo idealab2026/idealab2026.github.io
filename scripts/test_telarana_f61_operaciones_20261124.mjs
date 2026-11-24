@@ -27,8 +27,8 @@ assert(targets.every(x=>x.claimStatus==="hecho_documentado_por_portavoz_citado"&
 const node=id=>d.nodes.find(x=>x.id===id);
 assert(node("f61v4-fec-march12").source===f,"Falta documento Schedule E original");
 assert(node("f61v4-fec-march12").note.includes("51.860 USD"),"Subtotal declarado incorrecto");
-assert(node("f61v4-transaction50").note.includes("503002921")&&node("f61v4-transaction50").note.includes("50.000 USD"));
-assert(node("f61v4-transaction1860").note.includes("503002922")&&node("f61v4-transaction1860").note.includes("1.860 USD"));
+assert(node("f61v4-transaction50").subtitle.includes("503002921")&&node("f61v4-transaction50").note.includes("50.000 USD"));
+assert(node("f61v4-transaction1860").subtitle.includes("503002922")&&node("f61v4-transaction1860").note.includes("1.860 USD"));
 assert(primaryFiled.filter(x=>x.b==="f61v4-biss").length===2,"Falta vincular correctamente los gastos declarados a Biss");
 assert(d.metadata.methodologicalNote.includes("NO afirmaciones")===false,"Revisar texto de descargo probatorio");
 const html=fs.readFileSync("la-telarana/index.html","utf8");
