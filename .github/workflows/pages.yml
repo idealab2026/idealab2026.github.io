@@ -337,6 +337,7 @@ jobs:
           cp la-telarana/fuente-59-exodo-clip.js dist/la-telarana/fuente-59-exodo-clip.js
           cp la-telarana/fuente-60-conflicto.js dist/la-telarana/fuente-60-conflicto.js
           cp la-telarana/fuente-61-influencia.js dist/la-telarana/fuente-61-influencia.js
+          cp la-telarana/fuente-61-fec-jstreet-20261124.js dist/la-telarana/fuente-61-fec-jstreet-20261124.js
           cp la-telarana/fuente-62-conflicto.js dist/la-telarana/fuente-62-conflicto.js
           cp la-telarana/fuente-63-historia-judia.js dist/la-telarana/fuente-63-historia-judia.js
           cp la-telarana/fuente-64-historia-antigua.js dist/la-telarana/fuente-64-historia-antigua.js
