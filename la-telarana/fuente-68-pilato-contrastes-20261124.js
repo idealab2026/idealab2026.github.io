@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio. Ampliación jurisdiccional: resúmenes académicos, revisión y contexto histórico; distinguir atribución textual de potestad jurídica y reconstrucción del juicio. Sin cotejo de audio."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio. Ampliación jurisdiccional: resúmenes académicos, revisión y contexto histórico; distinguir atribución textual de potestad jurídica y reconstrucción del juicio. Sin cotejo de audio. Ampliación censo: testimonio antiguo y lecturas académicas contrapuestas, consultadas en sus páginas y resúmenes; no se acredita un censo previo independiente. Sin cotejo de audio."
   },
   "nodes": [
     {
@@ -439,6 +439,56 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "Journal of Theological Studies · 2017",
       "note": "La reseña expone la conclusión de Chapman y Schnabel sobre la jurisdicción limitada del Sanedrín y cuestiona aspectos del encuadre jurídico del procedimiento romano.",
       "source": "https://academic.oup.com/jts/article-abstract/68/1/290/2989965",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-josefo",
+      "name": "Josefo: Antigüedades 18.1–6 y 18.26",
+      "kind": "Fuente",
+      "subtitle": "Testimonio antiguo · censo y anexión",
+      "note": "Josefo vincula la valoración de bienes al cambio de administración tras la destitución de Arquelao; sitúa su conclusión en el año 37 desde Actium. No describe el viaje de la familia de Jesús.",
+      "source": "https://penelope.uchicago.edu/josephus/ant-18.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-iowa",
+      "name": "University of Iowa: problema cronológico del censo de Lucas",
+      "kind": "Fuente",
+      "subtitle": "Comentario académico de divulgación",
+      "note": "Explica la discrepancia entre el marco herodiano y el censo de 6 d. C.; distingue la valoración de propiedades de un desplazamiento al lugar de origen ancestral.",
+      "source": "https://bam.sites.uiowa.edu/faq/can-you-explain-problem-census-gospel-luke",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-greece",
+      "name": "The Nativity Census: What Does Luke Actually Say?",
+      "kind": "Fuente",
+      "subtitle": "Greece & Rome · análisis filológico",
+      "note": "Examina la lectura del texto griego y posibles escenarios de gobernación anterior; admite que Lucas podría haber confundido nombres y que el caso permanece abierto.",
+      "source": "https://www.cambridge.org/core/journals/greece-and-rome/article/abs/nativity-census-what-does-luke-actually-say/09F87E230993C1D68CE2027E41007795",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-armitage",
+      "name": "David J. Armitage (2018): Detaching the Census",
+      "kind": "Fuente",
+      "subtitle": "Tyndale Bulletin 69(1), 75–95",
+      "note": "Propone una lectura alternativa de Lucas 2:1–7 que separa el censo de la cronología del nacimiento. Hipótesis exegética, no registro romano de un censo previo.",
+      "source": "https://www.tyndalebulletin.org/article/27652-detaching-the-census-an-alternative-reading-of-luke-2-1-7",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-oliveira",
+      "name": "Maviael Alves de Oliveira Neto: While Quirinius was governing Syria",
+      "kind": "Fuente",
+      "subtitle": "Kerygma · plausibilidad histórica de Lucas 2:2",
+      "note": "Defiende la plausibilidad contextual de Lucas pero reconoce expresamente que no dispone de evidencia directa independiente de un censo de Quirinio anterior a la muerte de Herodes.",
+      "source": "https://revistas.unasp.edu.br/kerygma/article/view/1329",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -1144,6 +1194,105 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "type": "Paralelo temático",
       "note": "Ambas publicaciones discuten jurisdicción romana; no implica dependencia bibliográfica.",
       "source": "https://academic.oup.com/jts/article-abstract/68/1/290/2989965",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-0",
+      "a": "f68x-censo-josefo",
+      "b": "f68x-josefo",
+      "type": "Testimonio del autor antiguo",
+      "note": "Pasajes del mismo autor, no corroboración independiente.",
+      "source": "https://penelope.uchicago.edu/josephus/ant-18.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-1",
+      "a": "f68x-censo-josefo",
+      "b": "f68-quirinio-6ce",
+      "type": "Testimonio textual del censo",
+      "note": "El texto vincula el censo con la anexión de Judea y el patrimonio de Arquelao.",
+      "source": "https://penelope.uchicago.edu/josephus/ant-18.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-2",
+      "a": "f68x-censo-iowa",
+      "b": "f68-censo-contradiccion",
+      "type": "Evaluación de discrepancia",
+      "note": "Expone la cronología incompatible según la lectura habitual.",
+      "source": "https://bam.sites.uiowa.edu/faq/can-you-explain-problem-census-gospel-luke",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-3",
+      "a": "f68x-censo-iowa",
+      "b": "f68-lucas-censo",
+      "type": "Contexto del empadronamiento",
+      "note": "Discute la dificultad de un viaje a la ciudad ancestral.",
+      "source": "https://bam.sites.uiowa.edu/faq/can-you-explain-problem-census-gospel-luke",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-4",
+      "a": "f68x-censo-greece",
+      "b": "f68-quirinio",
+      "type": "Alternativas de interpretación",
+      "note": "El estudio deja abierta la posibilidad de error o de un cargo previo no confirmado.",
+      "source": "https://www.cambridge.org/core/journals/greece-and-rome/article/abs/nativity-census-what-does-luke-actually-say/09F87E230993C1D68CE2027E41007795",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-5",
+      "a": "f68x-censo-armitage",
+      "b": "f68-lucas-censo",
+      "type": "Hipótesis exegética alternativa",
+      "note": "Propone separar cronológicamente censo y nacimiento.",
+      "source": "https://www.tyndalebulletin.org/article/27652-detaching-the-census-an-alternative-reading-of-luke-2-1-7",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-6",
+      "a": "f68x-censo-armitage",
+      "b": "f68-censo-contradiccion",
+      "type": "Propuesta de conciliación textual",
+      "note": "No aporta constatación independiente de un censo anterior.",
+      "source": "https://www.tyndalebulletin.org/article/27652-detaching-the-census-an-alternative-reading-of-luke-2-1-7",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-7",
+      "a": "f68x-censo-oliveira",
+      "b": "f68-censo-contradiccion",
+      "type": "Hipótesis de plausibilidad",
+      "note": "Reconoce falta de evidencia directa independiente.",
+      "source": "https://revistas.unasp.edu.br/kerygma/article/view/1329",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-censo-20261124-8",
+      "a": "f68x-censo-oliveira",
+      "b": "f68-quirinio",
+      "type": "Evaluación de contexto romano",
+      "note": "Plausibilidad contextual distinta de corroboración histórica.",
+      "source": "https://revistas.unasp.edu.br/kerygma/article/view/1329",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
