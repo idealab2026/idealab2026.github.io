@@ -9,3 +9,5 @@ La edición generativa del original de la [solicitud #70](https://github.com/ide
 - PNG público saneado SHA-256: `31c186e2b329186286948625dd06d94b8b332cc0255c11ef47cd0431662124e5`, 1678 × 937; la edición tiene menor resolución que el original.
 
 El PNG público conserva solo IHDR, IDAT e IEND. Se comprobaron CRC, descompresión y hash Git. La revisión se limita a esta versión.
+
+El primer despliegue de esta publicación falló al recuperar los metadatos del artefacto de Pages. Su reintento generó dos artefactos con el mismo nombre y también falló; se inicia una nueva ejecución independiente para comprobar la publicación sin duplicados de intento.
