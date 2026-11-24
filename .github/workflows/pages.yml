@@ -362,6 +362,7 @@ jobs:
           cp la-telarana/relaciones-verificadas-hunter.js dist/la-telarana/relaciones-verificadas-hunter.js
           cp la-telarana/redes-politicas-verificadas-20261120.js dist/la-telarana/redes-politicas-verificadas-20261120.js
           cp la-telarana/archivos-medicos-f71-f74-20261120.js dist/la-telarana/archivos-medicos-f71-f74-20261120.js
+          cp la-telarana/fuente-37-contrastes-20261124.js dist/la-telarana/fuente-37-contrastes-20261124.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
