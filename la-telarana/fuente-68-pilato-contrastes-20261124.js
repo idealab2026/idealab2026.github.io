@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio. Ampliación jurisdiccional: resúmenes académicos, revisión y contexto histórico; distinguir atribución textual de potestad jurídica y reconstrucción del juicio. Sin cotejo de audio."
   },
   "nodes": [
     {
@@ -379,6 +379,66 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "Revisión crítica de la hipótesis de asfixia",
       "note": "Cuestiona el respaldo histórico y experimental de la asfixia como mecanismo principal. El trabajo no pretende establecer una causa alternativa definitiva.",
       "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009142/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-juan",
+      "name": "John 18.31 and the ‘Trial’ of Jesus",
+      "kind": "Fuente",
+      "subtitle": "New Testament Studies · estudio exegético",
+      "note": "Examina la interpretación de Juan 18:31 como indicio de restricciones romanas a la jurisdicción capital del Sanedrín. El pasaje no equivale a una disposición legal romana conservada.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/john-1831-and-the-trial-of-jesus/4859F37AF5DE055EAB2389655F91C8EB",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-judea",
+      "name": "Judea as a Roman Province, AD 6–66",
+      "kind": "Fuente",
+      "subtitle": "Religious Studies Center · contexto histórico",
+      "note": "Expone la autoridad capital del gobernador romano y discute la interpretación de las competencias locales y las razones posibles de la remisión a Pilato.",
+      "source": "https://rsc.byu.edu/new-testament-history-culture-society/judea-roman-province-ad-6-66",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-bond",
+      "name": "The Trial and Death of Jesus",
+      "kind": "Fuente",
+      "subtitle": "St Andrews Encyclopaedia of Theology",
+      "note": "Distingue las narraciones evangélicas y el contexto de jurisdicción penal provincial. No permite recuperar actas ni diálogos exactos del proceso.",
+      "source": "https://www.saet.ac.uk/Christianity/TrialandDeathofJesus",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-agamben",
+      "name": "The Judgment of Pontius Pilate: A Critique of Giorgio Agamben",
+      "kind": "Fuente",
+      "subtitle": "Journal of Law and Religion",
+      "note": "Discute las competencias judiciales del prefecto, la jurisdicción capital y la interpretación jurídica de la narración joánica; reconoce controversia en la literatura.",
+      "source": "https://www.cambridge.org/core/journals/journal-of-law-and-religion/article/judgment-of-pontius-pilate-a-critique-of-giorgio-agamben/213B4E09DF4DB1367A1D62E14A235339",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-barrabas",
+      "name": "Pilate, Barabbas, and the Privilegium Paschale",
+      "kind": "Fuente",
+      "subtitle": "Journal for the Study of the New Testament · 2025",
+      "note": "Propone reconsiderar la historicidad de la oferta de liberación mediante derecho provincial y comparación jurídica. Es un argumento académico, no prueba de una costumbre anual documentada independientemente.",
+      "source": "https://journals.sagepub.com/doi/10.1177/0142064X241307204",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-resena",
+      "name": "The Trial and Crucifixion of Jesus: Texts and Commentary — reseña",
+      "kind": "Fuente",
+      "subtitle": "Journal of Theological Studies · 2017",
+      "note": "La reseña expone la conclusión de Chapman y Schnabel sobre la jurisdicción limitada del Sanedrín y cuestiona aspectos del encuadre jurídico del procedimiento romano.",
+      "source": "https://academic.oup.com/jts/article-abstract/68/1/290/2989965",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -987,6 +1047,105 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545147/",
       "claimStatus": "contexto_documentado",
       "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-0",
+      "a": "f68x-jur-juan",
+      "b": "f68x-pilato",
+      "type": "Interpretación de competencias judiciales",
+      "note": "El pasaje joánico se utiliza para discutir los límites de jurisdicción local.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/john-1831-and-the-trial-of-jesus/4859F37AF5DE055EAB2389655F91C8EB",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-1",
+      "a": "f68x-jur-judea",
+      "b": "f68x-pilato",
+      "type": "Contexto de autoridad provincial",
+      "note": "Expone competencias del gobernador y problemas de reconstrucción jurídica.",
+      "source": "https://rsc.byu.edu/new-testament-history-culture-society/judea-roman-province-ad-6-66",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-2",
+      "a": "f68x-jur-judea",
+      "b": "f68x-jur-juan",
+      "type": "Contraste de interpretación textual",
+      "note": "Compara testimonios antiguos sobre jurisdicción con Juan 18:31.",
+      "source": "https://rsc.byu.edu/new-testament-history-culture-society/judea-roman-province-ad-6-66",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-3",
+      "a": "f68x-jur-bond",
+      "b": "f68-pilato-intenciones",
+      "type": "Crítica de reconstrucción narrativa",
+      "note": "Distinguir retrato evangélico de motivación histórica no demostrada.",
+      "source": "https://www.saet.ac.uk/Christianity/TrialandDeathofJesus",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-4",
+      "a": "f68x-jur-bond",
+      "b": "f42-jesus",
+      "type": "Contexto historiográfico del proceso",
+      "note": "El relato no es una transcripción judicial.",
+      "source": "https://www.saet.ac.uk/Christianity/TrialandDeathofJesus",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-5",
+      "a": "f68x-jur-agamben",
+      "b": "f68x-pilato",
+      "type": "Interpretación de jurisdicción romana",
+      "note": "Analiza la potestad capital del prefecto y debates sobre competencias locales.",
+      "source": "https://www.cambridge.org/core/journals/journal-of-law-and-religion/article/judgment-of-pontius-pilate-a-critique-of-giorgio-agamben/213B4E09DF4DB1367A1D62E14A235339",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-6",
+      "a": "f68x-jur-barrabas",
+      "b": "f68x-pilato",
+      "type": "Hipótesis de liberación pascual",
+      "note": "Reconsideración académica; no demuestra una práctica anual independiente.",
+      "source": "https://journals.sagepub.com/doi/10.1177/0142064X241307204",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-7",
+      "a": "f68x-jur-resena",
+      "b": "f68x-pilato",
+      "type": "Contraste jurídico bibliográfico",
+      "note": "La reseña expone y discute interpretaciones sobre el proceso romano.",
+      "source": "https://academic.oup.com/jts/article-abstract/68/1/290/2989965",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-jur-20261124-8",
+      "a": "f68x-jur-resena",
+      "b": "f68x-jur-agamben",
+      "type": "Paralelo temático",
+      "note": "Ambas publicaciones discuten jurisdicción romana; no implica dependencia bibliográfica.",
+      "source": "https://academic.oup.com/jts/article-abstract/68/1/290/2989965",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
       "podcastNotes": []
     }
   ]
