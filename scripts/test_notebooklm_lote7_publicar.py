@@ -13,6 +13,13 @@ from notebooklm_publicar_lote7_aprobadas import (
     verify_approval, read_review_zip,
 )
 
+# La aprobación del lote 7 sigue fijando los originales. La revisión posterior
+# del capítulo 60 sustituyó solo su ilustración del telégrafo y documentó la
+# nueva versión por hash; no autoriza otros cambios ni modifica el importador.
+PUBLISHED_REPLACEMENT_SHA256 = {
+    39: "ec2e71c4b54afaa20529ee119c883d6604f7471077dc325ab235340c6cd93ba6",
+}
+
 
 class Lote7AprobadasTests(unittest.TestCase):
     def test_only_two_originals_are_approved_with_pinned_hashes(self):
@@ -73,7 +80,7 @@ class Lote7AprobadasTests(unittest.TestCase):
                 self.assertTrue(path.is_file())
                 self.assertEqual(
                     hashlib.sha256(path.read_bytes()).hexdigest(),
-                    row["export_sha256"],
+                    PUBLISHED_REPLACEMENT_SHA256.get(row["issue"], row["export_sha256"]),
                 )
 
 
