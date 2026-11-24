@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción."
   },
   "nodes": [
     {
@@ -119,6 +119,56 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "New Testament Studies 52(4) · estudio académico",
       "note": "La autora relaciona los motivos numismáticos, la inscripción de Cesarea y el episodio de los escudos descrito por Filón. Interpreta que Pilato promovía formas del culto romano; es una interpretación histórica, no prueba de su motivación en el juicio de Jesús.",
       "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/pontius-pilate-and-the-imperial-cult-in-roman-judaea/EE98624114D0CE312959BC7264677667",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-tf",
+      "name": "Josefo: Antigüedades 18.63–64",
+      "kind": "Fuente",
+      "subtitle": "Testimonium Flavianum",
+      "note": "El texto transmitido menciona a Jesús; se discute si conserva un núcleo original, si fue interpolado íntegramente o si es sustancialmente auténtico. No constituye verificación independiente de la resurrección.",
+      "source": "https://onlinelibrary.wiley.com/doi/10.1002/9781118325162.ch22",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-juan",
+      "name": "Josefo: Antigüedades 18.116–119",
+      "kind": "Fuente",
+      "subtitle": "Testimonio sobre Juan el Bautista",
+      "note": "Pasaje distinto sobre Juan. No constituye otro autor independiente; su transmisión también puede someterse a crítica textual.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-santiago",
+      "name": "Josefo: Antigüedades 20.200",
+      "kind": "Fuente",
+      "subtitle": "Testimonio sobre Santiago",
+      "note": "El texto identifica a Santiago por su relación con Jesús llamado Cristo y relata su condena bajo Anano. Distinguir contenido transmitido de autenticidad textual.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-oxford",
+      "name": "Revisión Oxford de los testimonios de Josefo (2026)",
+      "kind": "Fuente",
+      "subtitle": "Capítulo académico · 20 febrero 2026",
+      "note": "El resumen examina los tres pasajes y señala que el Testimonium es el más sospechoso de interpolación, sin excluir intervenciones en los otros dos. Consultado el resumen, no el capítulo íntegro.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-bmcr",
+      "name": "BMCR: comentario de Antigüedades 18–20 (2026)",
+      "kind": "Fuente",
+      "subtitle": "Reseña académica · noviembre 2026",
+      "note": "Reseña del comentario de Schwartz: distingue autenticidad total, inautenticidad total y autenticidad parcial; recoge argumentos contra la autenticidad íntegra. Es una reseña, no un manuscrito independiente.",
+      "source": "https://bmcr.brynmawr.edu/2026/2026.11.03/",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -263,6 +313,105 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "type": "Interpretación sobre promoción del culto imperial",
       "note": "Conclusión interpretativa de Taylor, no prueba de convicción íntima ni de motivaciones específicas de Pilato.",
       "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/pontius-pilate-and-the-imperial-cult-in-roman-judaea/EE98624114D0CE312959BC7264677667",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-0",
+      "a": "f68x-tf",
+      "b": "f68x-josefo",
+      "type": "Pasaje atribuido a Josefo",
+      "note": "Autoría exacta disputada.",
+      "source": "https://onlinelibrary.wiley.com/doi/10.1002/9781118325162.ch22",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-1",
+      "a": "f68x-juan",
+      "b": "f68x-josefo",
+      "type": "Pasaje atribuido a Josefo",
+      "note": "Testimonio del mismo autor.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-2",
+      "a": "f68x-santiago",
+      "b": "f68x-josefo",
+      "type": "Pasaje atribuido a Josefo",
+      "note": "Testimonio del mismo autor.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-3",
+      "a": "f68x-santiago",
+      "b": "f42-santiago-justo",
+      "type": "Identificación textual",
+      "note": "El pasaje identifica a Santiago por su relación con Jesús.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-4",
+      "a": "f68x-tf",
+      "b": "f42-jesus",
+      "type": "Referencia textual discutida",
+      "note": "No acredita por sí sola afirmaciones sobrenaturales.",
+      "source": "https://onlinelibrary.wiley.com/doi/10.1002/9781118325162.ch22",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-5",
+      "a": "f68x-oxford",
+      "b": "f68x-tf",
+      "type": "Crítica textual",
+      "note": "El resumen señala mayor sospecha de interpolación.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-6",
+      "a": "f68x-oxford",
+      "b": "f68x-juan",
+      "type": "Crítica textual",
+      "note": "Incluido en el examen comparado.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-7",
+      "a": "f68x-oxford",
+      "b": "f68x-santiago",
+      "type": "Crítica textual",
+      "note": "Incluido en el examen comparado.",
+      "source": "https://academic.oup.com/edited-volume/62350/chapter-abstract/554396080",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-josefo-20261124-8",
+      "a": "f68x-bmcr",
+      "b": "f68x-tf",
+      "type": "Contraste historiográfico",
+      "note": "Reseña las tres hipótesis de autenticidad.",
+      "source": "https://bmcr.brynmawr.edu/2026/2026.11.03/",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
