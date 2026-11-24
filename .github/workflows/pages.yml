@@ -483,7 +483,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           for attempt in $(seq 1 20); do
-            count=$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?per_page=100" --jq '[.[].artifacts[] | select(.name == "github-pages" and .expired == false)] | length') || count=0
+            count=$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?per_page=100" | jq '[.[].artifacts[] | select(.name == "github-pages" and .expired == false)] | length') || {
+              echo "No se pudo consultar la lista de artefactos." >&2
+              exit 1
+            }
             if [ "$count" = "1" ]; then
               echo "Artefacto de Pages disponible."
               exit 0
