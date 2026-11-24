@@ -1,0 +1,42 @@
+/* F61: controla el límite entre anuncios declarados por un grupo y gastos primarios FEC. */
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+const code=fs.readFileSync("la-telarana/fuente-61-operaciones-fec-20261124.js","utf8");
+const ctx={window:{}};vm.runInNewContext(code,ctx,{timeout:4000});
+const d=ctx.window.IDEA_TELARANA_F61_OPERACIONES_FEC_20261124;
+assert(d&&d.metadata.sourceOrder===61,"F61 no identificado");
+assert(d.metadata.audioVerified===false&&d.metadata.reviewComplete===false&&d.metadata.transcriptComplete===false,"Audio del clip falsamente verificado");
+assert.equal(d.nodes.length,14);assert.equal(d.edges.length,16);
+const ids=new Set(d.nodes.map(x=>x.id)),edIds=new Set(d.edges.map(x=>x.id));
+assert.equal(ids.size,d.nodes.length);assert.equal(edIds.size,d.edges.length);
+const j="https://jstreet.org/press-releases/j-street-action-fund-announces-3-million-ad-campaign-taking-on-aipac-backed-anti-democracy-candidates/";
+const f="https://docquery.fec.gov/pdf/644/202603129837939644/202603129837939644.pdf";
+const citedByGroup=d.edges.filter(x=>x.claimStatus==="hecho_documentado_por_portavoz_citado");
+const primaryFiled=d.edges.filter(x=>x.claimStatus==="hecho_verificado_independiente");
+assert.equal(citedByGroup.length,7,"Posición de J Street elevada a prueba independiente");
+assert.equal(primaryFiled.length,9,"Operaciones FEC insuficientemente verificadas");
+for(const e of d.edges){
+ assert(ids.has(e.a)&&ids.has(e.b),"Arista huérfana: "+e.id);
+ assert(e.confidence==="documentado","Nivel probatorio alterado "+e.id);
+ assert(e.source===(e.claimStatus==="hecho_documentado_por_portavoz_citado"?j:f),"Afirmación atribuida a fuente incorrecta: "+e.id);
+}
+const targets=d.edges.filter(x=>x.id.startsWith("f61v4-announcement-target-"));
+assert.equal(targets.length,5,"Deben constar las cinco candidaturas y solo como anuncio");
+assert(targets.every(x=>x.claimStatus==="hecho_documentado_por_portavoz_citado"&&!/\b\d[\d,.]*\s*USD\b/.test(x.note)),"No inventar importes por candidatura");
+const node=id=>d.nodes.find(x=>x.id===id);
+assert(node("f61v4-fec-march12").source===f,"Falta documento Schedule E original");
+assert(node("f61v4-fec-march12").note.includes("51.860 USD"),"Subtotal declarado incorrecto");
+assert(node("f61v4-transaction50").note.includes("503002921")&&node("f61v4-transaction50").note.includes("50.000 USD"));
+assert(node("f61v4-transaction1860").note.includes("503002922")&&node("f61v4-transaction1860").note.includes("1.860 USD"));
+assert(primaryFiled.filter(x=>x.b==="f61v4-biss").length===2,"Falta vincular correctamente los gastos declarados a Biss");
+assert(d.metadata.methodologicalNote.includes("NO afirmaciones")===false,"Revisar texto de descargo probatorio");
+const html=fs.readFileSync("la-telarana/index.html","utf8");
+const workflow=fs.readFileSync(".github/workflows/pages.yml","utf8");
+assert(html.includes('src="./fuente-61-operaciones-fec-20261124.js'),"JS F61 no se importa");
+assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_F61_OPERACIONES_FEC_20261124)"),"Sin fusión de módulo en el grafo");
+assert(html.includes('"docquery.fec.gov"'),"Enlace al informe FEC no autorizado");
+assert(workflow.includes("cp la-telarana/fuente-61-operaciones-fec-20261124.js dist/la-telarana/fuente-61-operaciones-fec-20261124.js"),"Módulo ausente de Pages");
+const reg=JSON.parse(fs.readFileSync("la-telarana/progreso-fuentes.json","utf8"));
+assert.equal(reg.sourceCatalog.entries.find(x=>x.order===61).analysisCoverage.percent,20,"No inflar avance de audio incompleto");
+console.log("OK: F61, cinco anuncios como declaraciones, dos gastos FEC individualizados por 51.860 USD");
