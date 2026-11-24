@@ -1,0 +1,25 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+const path="la-telarana/fuente-67-rogers-20261124.js";
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path,"utf8"),ctx,{timeout:4000});
+const d=ctx.window.IDEA_TELARANA_F67_ROGERS_20261124;
+assert.equal(d.metadata.sourceOrder,67);
+assert(!d.metadata.audioVerified&&!d.metadata.reviewComplete&&!d.metadata.timecodesAvailable);
+const n=new Map(d.nodes.map(x=>[x.id,x])),e=new Map(d.edges.map(x=>[x.id,x]));
+assert.equal(n.size,d.nodes.length);assert.equal(e.size,d.edges.length);
+for(const r of d.edges){assert(n.has(r.a)&&n.has(r.b));assert(/^https:\/\//.test(r.source));}
+assert(n.get("f67r-vanillin").note.includes("1.319 años a 25 °C"));
+assert(n.get("f67r-vanillin").note.includes("1.845 a 23 °C"));
+assert(n.get("f67r-raes").note.includes("no confundir Raes"));
+assert.equal(e.get("f67r-gonella-rogers").claimStatus,"testimonio_textual_atribuido");
+assert.equal(e.get("f67r-repair-shroud").confidence,"hipotesis");
+assert.equal(e.get("f67r-vanillin-shroud").confidence,"hipotesis");
+assert(n.get("f67r-bella").note.includes("No es análisis experimental nuevo"));
+assert(n.get("f67r-2026").note.includes("Acceso directo"));
+const html=fs.readFileSync("la-telarana/index.html","utf8"),wf=fs.readFileSync(".github/workflows/pages.yml","utf8");
+assert(html.includes('src="./fuente-67-rogers-20261124.js'));
+assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_F67_ROGERS_20261124)"));
+assert(wf.includes("cp "+path+" dist/"+path));
+for(const r of [...d.nodes,...d.edges])assert(html.includes('"'+new URL(r.source).hostname+'"'));
+console.log("OK F67: vanilina condicional, procedencia Raes y contraste microscópico.");
