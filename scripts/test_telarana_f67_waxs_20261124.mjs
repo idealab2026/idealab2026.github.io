@@ -1,0 +1,24 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+const path="la-telarana/fuente-67-waxs-20261124.js";
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path,"utf8"),ctx,{timeout:4000});
+const d=ctx.window.IDEA_TELARANA_F67_WAXS_20261124;
+assert.equal(d.metadata.sourceOrder,67);
+assert(!d.metadata.audioVerified&&!d.metadata.reviewComplete&&!d.metadata.timecodesAvailable);
+const n=new Map(d.nodes.map(x=>[x.id,x])),e=new Map(d.edges.map(x=>[x.id,x]));
+assert.equal(n.size,d.nodes.length);assert.equal(e.size,d.edges.length);
+for(const r of d.edges){assert(n.has(r.a)&&n.has(r.b));assert(/^https:\/\//.test(r.source));}
+assert(n.get("f67w-ap").subtitle.includes("0,60 ± 0,02"));
+assert(n.get("f67w-conditions").note.includes("22,5 ± 0,5 °C"));
+assert(n.get("f67w-conditions").note.includes("55 ± 5 %"));
+assert(n.get("f67w-sample").note.includes("misma pieza"));
+assert(n.get("f67w-follow").note.includes("no replicación independiente"));
+assert.equal(e.get("f67w-conditions-shroud").confidence,"indicio");
+assert.equal(e.get("f67w-compare").confidence,"indicio");
+const html=fs.readFileSync("la-telarana/index.html","utf8"),wf=fs.readFileSync(".github/workflows/pages.yml","utf8");
+assert(html.includes('src="./fuente-67-waxs-20261124.js'));
+assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_F67_WAXS_20261124)"));
+assert(wf.includes("cp "+path+" dist/"+path));
+for(const r of [...d.nodes,...d.edges])assert(html.includes('"'+new URL(r.source).hostname+'"'));
+console.log("OK F67: WAXS condicional, incertidumbre ambiental, procedencia y no replicación.");

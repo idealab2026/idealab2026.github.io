@@ -11,7 +11,7 @@ assert.equal(n.size,13);assert.equal(e.size,15);
 for(const r of d.edges){assert(n.has(r.a)&&n.has(r.b));assert(/^https:\/\//.test(r.source));}
 assert(n.get("f67tx-erratum").note.includes("1.030")&&n.get("f67tx-erratum").note.includes("531"));
 assert(n.get("f67tx-ak").note.includes("95 a. C.–53 d. C."));
-assert(n.get("f67tx-carbon").note.includes("1260–1390"));
+assert(n.get("f67tx-carbon").subtitle.includes("1260–1390"));
 assert(n.get("f67tx-masada").note.includes("No es un paralelo exacto"));
 assert(n.get("f67tx-ar").note.includes("21 × 30"));
 assert.equal(e.get("f67tx-paper-shroud").confidence,"indicio");

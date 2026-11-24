@@ -131,6 +131,8 @@ jobs:
         run: node scripts/test_telarana_f67_templarios_20261124.mjs
       - name: Validar corpus textil corregido y paralelos arqueológicos F67
         run: node scripts/test_telarana_f67_textiles_20261124.mjs
+      - name: Validar datación WAXS y límites ambientales F67
+        run: node scripts/test_telarana_f67_waxs_20261124.mjs
       - name: Comprobar cronología e identidades de fuente 62
         run: node scripts/test_telarana_source62.mjs
       - name: Validar fuentes 18 y 21, Lorenzo y presencia en Pages
@@ -365,6 +367,7 @@ jobs:
           cp la-telarana/fuente-67-mandylion-20261124.js dist/la-telarana/fuente-67-mandylion-20261124.js
           cp la-telarana/fuente-67-templarios-20261124.js dist/la-telarana/fuente-67-templarios-20261124.js
           cp la-telarana/fuente-67-textiles-20261124.js dist/la-telarana/fuente-67-textiles-20261124.js
+          cp la-telarana/fuente-67-waxs-20261124.js dist/la-telarana/fuente-67-waxs-20261124.js
           cp la-telarana/fuente-68-pasion.js dist/la-telarana/fuente-68-pasion.js
           cp la-telarana/fuente-68-pilato-contrastes-20261124.js dist/la-telarana/fuente-68-pilato-contrastes-20261124.js
           cp la-telarana/fuente-33-rothschild-inicial.js dist/la-telarana/fuente-33-rothschild-inicial.js
