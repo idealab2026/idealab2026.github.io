@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio."
   },
   "nodes": [
     {
@@ -239,6 +239,66 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "Past & Present · investigación histórica",
       "note": "Analiza las denuncias como mecanismo de persecución y utiliza la correspondencia como ejemplo.",
       "source": "https://academic.oup.com/past/article/261/1/3/6982747",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton",
+      "name": "Fenstanton: enterramiento romano 4925",
+      "kind": "Lugar",
+      "subtitle": "Excavación de 2017",
+      "note": "Hallazgo de restos humanos con evidencia compatible con crucifixión; no demuestra una técnica universal.",
+      "source": "https://www.albionarchaeology.co.uk/news/2021/12/8/roman-crucifixion-burial-at-fenstanton-cambridgeshire",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-esqueleto4926",
+      "name": "Esqueleto 4926 de Fenstanton",
+      "kind": "Objeto",
+      "subtitle": "Evidencia osteoarqueológica",
+      "note": "Los investigadores consideran la crucifixión la explicación más plausible, sin calificarla de prueba incontrovertible.",
+      "source": "https://www.cam.ac.uk/stories/romancrucifixion",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ingham",
+      "name": "David Ingham",
+      "kind": "Persona",
+      "subtitle": "Arqueólogo",
+      "note": "Dirigió la excavación de Albion Archaeology y cofirmó el estudio.",
+      "source": "https://www.archaeologyuk.org/resource/free-access-to-crucifixion-in-the-fens-life-and-death-in-roman-fenstanton.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-duhig",
+      "name": "Corinne Duhig",
+      "kind": "Persona",
+      "subtitle": "Especialista en osteoarqueología",
+      "note": "Coautora del estudio del hallazgo.",
+      "source": "https://www.archaeologyuk.org/resource/free-access-to-crucifixion-in-the-fens-life-and-death-in-roman-fenstanton.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fen-estudio",
+      "name": "Crucifixion in the Fens",
+      "kind": "Fuente",
+      "subtitle": "British Archaeology · Ingham y Duhig",
+      "note": "Informe sobre el asentamiento y la interpretación de los restos; no es una prueba de detalles biográficos de Jesús.",
+      "source": "https://www.archaeologyuk.org/resource/free-access-to-crucifixion-in-the-fens-life-and-death-in-roman-fenstanton.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fen-expo",
+      "name": "Legion: life in the Roman army (2024)",
+      "kind": "Evento",
+      "subtitle": "British Museum",
+      "note": "Exposición que incluyó los restos de Fenstanton; no constituye una nueva excavación ni evidencia independiente.",
+      "source": "https://www.cambridgeshire.gov.uk/news/cambridgeshire-crucifixion-remains-go-on-display-at-the-british-museum",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -592,6 +652,83 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "type": "Análisis del procedimiento",
       "note": "Interpretación académica de la correspondencia, no corroboración independiente del episodio.",
       "source": "https://academic.oup.com/past/article/261/1/3/6982747",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton-0",
+      "a": "f68x-fenstanton",
+      "b": "f68x-esqueleto4926",
+      "type": "Procedencia arqueológica",
+      "note": "Relación documentada en la fuente indicada.",
+      "source": "https://www.albionarchaeology.co.uk/news/2021/12/8/roman-crucifixion-burial-at-fenstanton-cambridgeshire",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton-1",
+      "a": "f68x-ingham",
+      "b": "f68x-fen-estudio",
+      "type": "Coautoría",
+      "note": "Relación documentada en la fuente indicada.",
+      "source": "https://www.archaeologyuk.org/resource/free-access-to-crucifixion-in-the-fens-life-and-death-in-roman-fenstanton.html",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton-2",
+      "a": "f68x-duhig",
+      "b": "f68x-fen-estudio",
+      "type": "Coautoría",
+      "note": "Relación documentada en la fuente indicada.",
+      "source": "https://www.archaeologyuk.org/resource/free-access-to-crucifixion-in-the-fens-life-and-death-in-roman-fenstanton.html",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton-3",
+      "a": "f68x-fen-estudio",
+      "b": "f68x-esqueleto4926",
+      "type": "Interpretación osteoarqueológica",
+      "note": "Interpretación de los investigadores, no certeza incontrovertible.",
+      "source": "https://www.archaeologyuk.org/resource/free-access-to-crucifixion-in-the-fens-life-and-death-in-roman-fenstanton.html",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton-4",
+      "a": "f68x-fen-estudio",
+      "b": "f68x-fenstanton",
+      "type": "Informe de excavación",
+      "note": "Relación documentada en la fuente indicada.",
+      "source": "https://www.archaeologyuk.org/resource/free-access-to-crucifixion-in-the-fens-life-and-death-in-roman-fenstanton.html",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton-5",
+      "a": "f68x-fen-expo",
+      "b": "f68x-esqueleto4926",
+      "type": "Exposición de los restos",
+      "note": "Relación documentada en la fuente indicada.",
+      "source": "https://www.cambridgeshire.gov.uk/news/cambridgeshire-crucifixion-remains-go-on-display-at-the-british-museum",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-fenstanton-6",
+      "a": "f68x-esqueleto4926",
+      "b": "f42-yehohanan",
+      "type": "Paralelo arqueológico",
+      "note": "Paralelo de evidencia material; no implica identidad de procedimiento ni prueba de la muerte de Jesús.",
+      "source": "https://www.cam.ac.uk/stories/romancrucifixion",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
