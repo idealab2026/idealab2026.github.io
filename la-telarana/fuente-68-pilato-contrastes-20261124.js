@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio."
   },
   "nodes": [
     {
@@ -329,6 +329,56 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "New Testament Studies 59(4), 461–475",
       "note": "DOI 10.1017/S0028688513000131. Discute el 7 de abril de 30 y la tradición cronológica de Juan y Marcos; sostiene que no puede recuperarse el día exacto y propone un intervalo aproximado de Pascua entre 29 y 34 d. C. como conclusión historiográfica prudente.",
       "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-edwards",
+      "name": "Edwards, Gabel y Hosmer (1986): On the Physical Death of Jesus Christ",
+      "kind": "Fuente",
+      "subtitle": "JAMA 255(11), 1455–1463",
+      "note": "Propone una combinación de shock hipovolémico y asfixia. Reconstrucción retrospectiva basada en fuentes históricas y religiosas, no en una autopsia del individuo.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3512867/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-maslen",
+      "name": "Maslen y Mitchell (2006): Medical theories on the cause of death in crucifixion",
+      "kind": "Fuente",
+      "subtitle": "Journal of the Royal Society of Medicine 99(4), 185–188",
+      "note": "Revisión crítica: evidencia insuficiente para fijar un mecanismo universal; probablemente variaba entre víctimas. Las recreaciones tienen validez externa limitada.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1420788/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-bergeron",
+      "name": "Bergeron (2012): The crucifixion of Jesus: review of hypothesized mechanisms of death",
+      "kind": "Fuente",
+      "subtitle": "Journal of Forensic and Legal Medicine",
+      "note": "Revisa mecanismos propuestos y examina shock y coagulopatía traumática. No existe acuerdo sobre un mecanismo específico; se trata de hipótesis retrospectivas.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22390994/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-review2021",
+      "name": "Medical views on the death by crucifixion of Jesus Christ (2021)",
+      "kind": "Fuente",
+      "subtitle": "Revisión de publicaciones y opiniones",
+      "note": "Los autores encuentran predominio de hipótesis de asfixia en las publicaciones recopiladas; el recuento de opiniones no es una estimación clínica de probabilidad ni evidencia independiente de cada caso.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545147/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-suffocation",
+      "name": "Did Jesus Die by Suffocation? An Appraisal of the Evidence (2023)",
+      "kind": "Fuente",
+      "subtitle": "Revisión crítica de la hipótesis de asfixia",
+      "note": "Cuestiona el respaldo histórico y experimental de la asfixia como mecanismo principal. El trabajo no pretende establecer una causa alternativa definitiva.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009142/",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -838,6 +888,105 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-0",
+      "a": "f68x-med-edwards",
+      "b": "f68-fisiopatologia-cruz",
+      "type": "Hipótesis clínica retrospectiva",
+      "note": "Propone mecanismo combinado; no diagnóstico comprobado.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3512867/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-1",
+      "a": "f68x-med-maslen",
+      "b": "f68-fisiopatologia-cruz",
+      "type": "Límite de evidencia médica",
+      "note": "Revisión crítica que subraya insuficiencia de datos directos.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1420788/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-2",
+      "a": "f68x-med-bergeron",
+      "b": "f68-fisiopatologia-cruz",
+      "type": "Hipótesis alternativa",
+      "note": "Estudia shock y coagulopatía como hipótesis.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22390994/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-3",
+      "a": "f68x-med-review2021",
+      "b": "f68-fisiopatologia-cruz",
+      "type": "Revisión de opiniones publicadas",
+      "note": "Predominio bibliográfico de asfixia, no prueba clínica.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545147/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-4",
+      "a": "f68x-med-suffocation",
+      "b": "f68-fisiopatologia-cruz",
+      "type": "Crítica de la hipótesis de asfixia",
+      "note": "Cuestiona el apoyo disponible sin establecer otra causa definitiva.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009142/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-5",
+      "a": "f68x-med-review2021",
+      "b": "f68x-med-maslen",
+      "type": "Cita y debate revisión previa",
+      "note": "La revisión de 2021 cita explícitamente a Maslen y Mitchell.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545147/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-6",
+      "a": "f68x-med-suffocation",
+      "b": "f68x-med-review2021",
+      "type": "Discusión crítica de revisión anterior",
+      "note": "El artículo de 2023 cuestiona que la frecuencia de opiniones demuestre causalidad.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009142/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-7",
+      "a": "f68x-med-suffocation",
+      "b": "f68x-med-edwards",
+      "type": "Discusión crítica de hipótesis previa",
+      "note": "Discute el mecanismo de asfixia propuesto en JAMA.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009142/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-med-20261124-8",
+      "a": "f68x-med-review2021",
+      "b": "f68x-med-bergeron",
+      "type": "Referencia bibliográfica",
+      "note": "Incluye a Bergeron en su clasificación de hipótesis.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545147/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
       "podcastNotes": []
     }
   ]
