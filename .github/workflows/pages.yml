@@ -478,6 +478,24 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: dist/
+      - name: Esperar al artefacto de GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 20); do
+            count=$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?per_page=100" --jq '[.[].artifacts[] | select(.name == "github-pages" and .expired == false)] | length') || count=0
+            if [ "$count" = "1" ]; then
+              echo "Artefacto de Pages disponible."
+              exit 0
+            fi
+            if [ "$count" != "0" ]; then
+              echo "Número inesperado de artefactos de Pages: $count" >&2
+              exit 1
+            fi
+            sleep 3
+          done
+          echo "El artefacto de Pages no apareció en el tiempo previsto." >&2
+          exit 1
       - name: Publicar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
