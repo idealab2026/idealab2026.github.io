@@ -1,0 +1,24 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+const path="la-telarana/fuente-67-textiles-20261124.js";
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path,"utf8"),ctx,{timeout:4000});
+const d=ctx.window.IDEA_TELARANA_F67_TEXTILES_20261124;
+assert.equal(d.metadata.sourceOrder,67);
+assert(!d.metadata.audioVerified&&!d.metadata.reviewComplete&&!d.metadata.timecodesAvailable);
+const n=new Map(d.nodes.map(x=>[x.id,x])),e=new Map(d.edges.map(x=>[x.id,x]));
+assert.equal(n.size,13);assert.equal(e.size,15);
+for(const r of d.edges){assert(n.has(r.a)&&n.has(r.b));assert(/^https:\/\//.test(r.source));}
+assert(n.get("f67tx-erratum").note.includes("1.030")&&n.get("f67tx-erratum").note.includes("531"));
+assert(n.get("f67tx-ak").note.includes("95 a. C.–53 d. C."));
+assert(n.get("f67tx-carbon").note.includes("1260–1390"));
+assert(n.get("f67tx-masada").note.includes("No es un paralelo exacto"));
+assert(n.get("f67tx-ar").note.includes("21 × 30"));
+assert.equal(e.get("f67tx-paper-shroud").confidence,"indicio");
+assert.equal(e.get("f67tx-seam-shroud").confidence,"indicio");
+const html=fs.readFileSync("la-telarana/index.html","utf8"),wf=fs.readFileSync(".github/workflows/pages.yml","utf8");
+assert(html.includes('src="./fuente-67-textiles-20261124.js'));
+assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_F67_TEXTILES_20261124)"));
+assert(wf.includes("cp "+path+" dist/"+path));
+for(const r of [...d.nodes,...d.edges])assert(html.includes('"'+new URL(r.source).hostname+'"'));
+console.log("OK F67: corpus corregido, datación Akeldama y límites tipológicos.");
