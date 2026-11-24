@@ -23,7 +23,7 @@ for(const e of m.edges){
  }
 }
 const byId=id=>m.nodes.find(n=>n.id===id);
-assert(byId("f37x-plos2026")?.note.includes("22/09/2026")&&byId("f37x-plos2026").source.includes("10.1371/journal.pone.0358979"),"Publicación científica F37 incompleta");
+assert(byId("f37x-plos2026")?.subtitle.includes("22/09/2026")&&byId("f37x-plos2026").source.includes("10.1371/journal.pone.0358979"),"Publicación científica F37 incompleta");
 assert(byId("f37x-dr1")?.note.includes("al menos tres")&&byId("f37x-l0965")?.note.includes("2022"),"Dos enterramientos confundidos");
 assert(byId("f37x-redeposicion")?.note.includes("inferencia plausible"),"Hipótesis de erosión elevada a certeza");
 assert(byId("f37x-glaciar-superficie")?.note.includes("7.075,51 km²")&&byId("f37x-glaciar-superficie").note.includes("no necesariamente simultáneos"),"No se distinguen máximos glaciares locales");
