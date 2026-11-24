@@ -6,8 +6,8 @@ import path from "node:path";
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const html=readFileSync(path.join(root,"index.html"),"utf8");
 const items=[...html.matchAll(/<article class="card"><div class="cardtop with-project-icon"><div class="project-icon-title"><img src="([^"]+)"[^>]+><h3>([^<]+)<\/h3>/g)];
-assert.equal(items.length,7,"All seven projects must show a logo");
-const names=["España en Datos","LAREALIDAD","PSICOHISTORIA","MIDAS",
+assert.equal(items.length,6,"All six public projects must show a logo");
+const names=["España en Datos","PSICOHISTORIA","MIDAS",
   "Línea de la Historia","La Telaraña","La Biblioteca de Montecristo"];
 for(const [i,name] of names.entries()){
  const item=items[i];
@@ -27,4 +27,5 @@ for(const [i,name] of names.entries()){
 }
 assert.match(html,/\.project-icon-title img\{[^}]*width:60px;height:60px/);
 assert.match(html,/@media\(max-width:620px\)/);
-console.log("OK: 7 project icons, local paths, SVG metadata, responsive styles");
+assert.doesNotMatch(html,/https:\/\/x\.com\/LARREALIDAD|Visitar el canal en X|<h3>LAREALIDAD<\/h3>/,"X editorial channel should not appear on IDEA LAB homepage");
+console.log("OK: 6 project icons, no X channel, local paths, SVG metadata, responsive styles");
