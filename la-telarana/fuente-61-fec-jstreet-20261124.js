@@ -227,7 +227,7 @@ window.IDEA_TELARANA_F61_2026_CONTRASTES = {
       "type": "Comunicado institucional (04/11/2026)",
       "note": "El documento prueba que J Street formuló esta declaración, no la verdad de todos los resultados citados.",
       "source": "https://jstreet.org/press/midterm-results-are-resounding-victory-new-politics-israel-and-palestine",
-      "claimStatus": "hecho_verificado_independiente",
+      "claimStatus": "hecho_documentado_por_portavoz_citado",
       "confidence": "documentado",
       "episodeId": "idealab-f61-fec-20261124"
     },
