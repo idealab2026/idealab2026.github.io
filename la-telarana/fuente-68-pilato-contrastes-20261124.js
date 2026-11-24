@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio."
   },
   "nodes": [
     {
@@ -169,6 +169,76 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "Reseña académica · noviembre 2026",
       "note": "Reseña del comentario de Schwartz: distingue autenticidad total, inautenticidad total y autenticidad parcial; recoge argumentos contra la autenticidad íntegra. Es una reseña, no un manuscrito independiente.",
       "source": "https://bmcr.brynmawr.edu/2026/2026.11.03/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio",
+      "name": "Plinio el Joven",
+      "kind": "Persona",
+      "subtitle": "Gobernador romano de Bitinia-Ponto",
+      "note": "Consulta a Trajano sobre el tratamiento de denunciados como cristianos; no fue testigo de la vida de Jesús.",
+      "source": "https://dcc.dickinson.edu/pliny-letters/10-96",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-trajano",
+      "name": "Trajano",
+      "kind": "Persona",
+      "subtitle": "Emperador romano",
+      "note": "Su respuesta a Plinio dispone que no se busque activamente a los cristianos, que se proceda ante acusaciones probadas y que se rechacen denuncias anónimas.",
+      "source": "https://www.yorku.ca/pswarney/Texts/pliny-10-96-97.htm",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-bitinia",
+      "name": "Bitinia-Ponto",
+      "kind": "Lugar",
+      "subtitle": "Provincia romana",
+      "note": "Contexto provincial de la correspondencia, aproximadamente 112 d. C.",
+      "source": "https://durham-repository.worktribe.com/output/1359446/trouble-in-pontus-the-pliny-trajan-correspondence-on-the-christians-reconsidered",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-carta96",
+      "name": "Plinio: Epístolas 10.96",
+      "kind": "Fuente",
+      "subtitle": "Consulta administrativa",
+      "note": "Relata interrogatorios y prácticas atribuidas a los acusados, incluyendo culto a Cristo; no contiene un relato presencial de su vida.",
+      "source": "https://dcc.dickinson.edu/pliny-letters/10-96",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-carta97",
+      "name": "Trajano: Epístolas 10.97",
+      "kind": "Fuente",
+      "subtitle": "Respuesta imperial",
+      "note": "Instrucciones sobre acusaciones, retractación y denuncias anónimas; su alcance general es discutido.",
+      "source": "https://www.yorku.ca/pswarney/Texts/pliny-10-96-97.htm",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-pontus-estudio",
+      "name": "Trouble in Pontus: correspondencia Plinio-Trajano",
+      "kind": "Fuente",
+      "subtitle": "Investigación académica",
+      "note": "El resumen interpreta la respuesta imperial como local y limitada, no prueba de política universal.",
+      "source": "https://durham-repository.worktribe.com/output/1359446/trouble-in-pontus-the-pliny-trajan-correspondence-on-the-christians-reconsidered",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-delacion-estudio",
+      "name": "By Whom Were Early Christians Persecuted?",
+      "kind": "Fuente",
+      "subtitle": "Past & Present · investigación histórica",
+      "note": "Analiza las denuncias como mecanismo de persecución y utiliza la correspondencia como ejemplo.",
+      "source": "https://academic.oup.com/past/article/261/1/3/6982747",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -412,6 +482,116 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "type": "Contraste historiográfico",
       "note": "Reseña las tres hipótesis de autenticidad.",
       "source": "https://bmcr.brynmawr.edu/2026/2026.11.03/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-0",
+      "a": "f68x-plinio",
+      "b": "f68x-carta96",
+      "type": "Autor de la consulta",
+      "note": "Relación documentada en la correspondencia o su contexto.",
+      "source": "https://dcc.dickinson.edu/pliny-letters/10-96",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-1",
+      "a": "f68x-trajano",
+      "b": "f68x-carta97",
+      "type": "Autor de la respuesta",
+      "note": "Relación documentada en la correspondencia o su contexto.",
+      "source": "https://www.yorku.ca/pswarney/Texts/pliny-10-96-97.htm",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-2",
+      "a": "f68x-carta96",
+      "b": "f68x-carta97",
+      "type": "Consulta y respuesta",
+      "note": "Relación documentada en la correspondencia o su contexto.",
+      "source": "https://www.yorku.ca/pswarney/Texts/pliny-10-96-97.htm",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-3",
+      "a": "f68x-plinio",
+      "b": "f68x-bitinia",
+      "type": "Administración provincial",
+      "note": "Relación documentada en la correspondencia o su contexto.",
+      "source": "https://durham-repository.worktribe.com/output/1359446/trouble-in-pontus-the-pliny-trajan-correspondence-on-the-christians-reconsidered",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-4",
+      "a": "f68x-carta96",
+      "b": "f68x-bitinia",
+      "type": "Contexto de la consulta",
+      "note": "Relación documentada en la correspondencia o su contexto.",
+      "source": "https://dcc.dickinson.edu/pliny-letters/10-96",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-5",
+      "a": "f68x-carta96",
+      "b": "f42-jesus",
+      "type": "Testimonio indirecto del culto a Cristo",
+      "note": "Evidencia de prácticas de comunidades cristianas, no testimonio directo de la biografía de Jesús.",
+      "source": "https://www.yorku.ca/pswarney/Texts/pliny-10-96-97.htm",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-6",
+      "a": "f68x-pontus-estudio",
+      "b": "f68x-carta96",
+      "type": "Análisis del contexto local",
+      "note": "Interpretación académica de la correspondencia, no corroboración independiente del episodio.",
+      "source": "https://durham-repository.worktribe.com/output/1359446/trouble-in-pontus-the-pliny-trajan-correspondence-on-the-christians-reconsidered",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-7",
+      "a": "f68x-pontus-estudio",
+      "b": "f68x-carta97",
+      "type": "Interpretación del alcance limitado",
+      "note": "Interpretación académica de la correspondencia, no corroboración independiente del episodio.",
+      "source": "https://durham-repository.worktribe.com/output/1359446/trouble-in-pontus-the-pliny-trajan-correspondence-on-the-christians-reconsidered",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-8",
+      "a": "f68x-delacion-estudio",
+      "b": "f68x-carta96",
+      "type": "Análisis histórico de las denuncias",
+      "note": "Interpretación académica de la correspondencia, no corroboración independiente del episodio.",
+      "source": "https://academic.oup.com/past/article/261/1/3/6982747",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-plinio-20261124-9",
+      "a": "f68x-delacion-estudio",
+      "b": "f68x-carta97",
+      "type": "Análisis del procedimiento",
+      "note": "Interpretación académica de la correspondencia, no corroboración independiente del episodio.",
+      "source": "https://academic.oup.com/past/article/261/1/3/6982747",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
