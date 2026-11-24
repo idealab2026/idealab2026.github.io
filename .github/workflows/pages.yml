@@ -24,6 +24,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Reconciliar y verificar porcentajes públicos de fuentes
+        run: |
+          node scripts/sync_telarana_public_percent.mjs
+          node scripts/sync_telarana_public_percent.mjs --check
       - name: Validar iconos de todos los proyectos y adaptación responsive
         run: node scripts/test_project_icons.mjs
       - name: Validar agregados y separación de cuentas
@@ -53,6 +57,8 @@ jobs:
         run: node scripts/test_telarana_fullscreen_search.mjs
       - name: Validar distribución 3D y gestos de zoom
         run: node scripts/test_telarana_3d.mjs
+      - name: Validar evidencia arqueológica F37 (2026) y límites de atribución
+        run: node scripts/test_telarana_f37_nuevas_fuentes_20261124.mjs
       - name: Validar esquema 2D de vecinos directos y navegación
         run: node scripts/test_telarana_local_relations.mjs
       - name: Validar filtro multifuente y deselección del inspector
@@ -362,6 +368,7 @@ jobs:
           cp la-telarana/relaciones-verificadas-hunter.js dist/la-telarana/relaciones-verificadas-hunter.js
           cp la-telarana/redes-politicas-verificadas-20261120.js dist/la-telarana/redes-politicas-verificadas-20261120.js
           cp la-telarana/archivos-medicos-f71-f74-20261120.js dist/la-telarana/archivos-medicos-f71-f74-20261120.js
+          cp la-telarana/fuente-37-contrastes-20261124.js dist/la-telarana/fuente-37-contrastes-20261124.js
           cp la-telarana/person-biographies.js dist/la-telarana/person-biographies.js
           cp la-telarana/layout-seed-v2.js dist/la-telarana/layout-seed-v2.js
           cp la-telarana/graph-3d.js dist/la-telarana/graph-3d.js
