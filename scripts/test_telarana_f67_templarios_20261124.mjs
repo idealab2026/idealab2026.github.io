@@ -1,0 +1,23 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+const path="la-telarana/fuente-67-templarios-20261124.js";
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path,"utf8"),ctx,{timeout:4000});
+const d=ctx.window.IDEA_TELARANA_F67_TEMPLARIOS_20261124;
+assert.equal(d.metadata.sourceOrder,67);
+assert(!d.metadata.audioVerified&&!d.metadata.reviewComplete&&!d.metadata.timecodesAvailable);
+const n=new Map(d.nodes.map(x=>[x.id,x])),e=new Map(d.edges.map(x=>[x.id,x]));
+assert.equal(n.size,d.nodes.length);assert.equal(e.size,d.edges.length);
+for(const r of d.edges){assert(n.has(r.a)&&n.has(r.b));assert(/^https:\/\//.test(r.source));}
+for(const id of ["kinship","order-shroud","wilson-order","book-shroud"])assert.equal(e.get("f67t-"+id).confidence,"hipotesis");
+assert.notEqual(n.get("f67t-templar").name,n.get("f67t-lirey").name);
+assert(n.get("f67t-bos").note.includes("fusteum")&&n.get("f67t-bos").note.includes("fustanium"));
+assert(n.get("f67t-sabbatier").note.includes("lineum")&&n.get("f67t-sabbatier").note.includes("lignum"));
+assert.equal(e.get("f67t-nicolotti-sabbatier").confidence,"indicio");
+assert(n.get("f67t-trial").note.includes("manuscrito original"));
+const html=fs.readFileSync("la-telarana/index.html","utf8"),wf=fs.readFileSync(".github/workflows/pages.yml","utf8");
+assert(html.includes('src="./fuente-67-templarios-20261124.js'));
+assert(html.includes("mergeNewEpisode(window.IDEA_TELARANA_F67_TEMPLARIOS_20261124)"));
+assert(wf.includes("cp "+path+" dist/"+path));
+for(const r of [...d.nodes,...d.edges])assert(html.includes('"'+new URL(r.source).hostname+'"'));
+console.log("OK F67: homonimia, hipótesis templaria, crítica filológica y procedencia no acreditada.");
