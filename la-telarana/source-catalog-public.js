@@ -61,7 +61,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Artículo o web",
     "sourceUrl": "https://latramapsoe.es/",
-    "percent": 16,
+    "percent": 20,
     "percentInherited": false,
     "creator": null,
     "participants": []
@@ -446,7 +446,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Vídeo",
     "sourceUrl": "https://www.youtube.com/watch?v=aLZZsl74_VQ",
-    "percent": 12,
+    "percent": 25,
     "percentInherited": false,
     "creator": null,
     "participants": []
@@ -471,7 +471,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Podcast / entrevista",
     "sourceUrl": "https://www.youtube.com/watch?v=-5HzKQ9amDw",
-    "percent": 8,
+    "percent": 23,
     "percentInherited": false,
     "creator": null,
     "participants": [
@@ -484,7 +484,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Vídeo",
     "sourceUrl": "https://www.youtube.com/watch?v=aiN_M5fykfg",
-    "percent": 20,
+    "percent": 22,
     "percentInherited": false,
     "creator": null,
     "participants": []
@@ -754,7 +754,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Podcast / entrevista",
     "sourceUrl": "https://www.youtube.com/watch?v=ej2RrEljROE",
-    "percent": 10,
+    "percent": 20,
     "percentInherited": false,
     "creator": null,
     "participants": [
@@ -824,7 +824,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Podcast / entrevista",
     "sourceUrl": "https://www.youtube.com/watch?v=RTXTbYvbn9Q",
-    "percent": 10,
+    "percent": 20,
     "percentInherited": false,
     "creator": null,
     "participants": [
@@ -837,7 +837,7 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "duplicateOf": null,
     "type": "Podcast / entrevista",
     "sourceUrl": "https://www.youtube.com/watch?v=vPaUnI8nhfU",
-    "percent": 10,
+    "percent": 23,
     "percentInherited": false,
     "creator": "Aladetres",
     "participants": [
