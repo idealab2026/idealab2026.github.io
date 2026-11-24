@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F61_OPERACIONES_FEC_20261124 = {
     "transcriptComplete": false,
     "reviewComplete": false,
     "timecodesAvailable": false,
-    "methodologicalNote": "Contraste EXTERNO no extraído del clip F61. Cinco candidaturas se incorporan SOLO como objetivos declarados por J Street el 10/09/2026. Sus 3 M USD son un objetivo agregado de campaña, no asignación comprobada a cada candidato. El informe FEC Schedule E del 12/03/2026 acredita declaración de dos gastos independientes (50.000 y 1.860 USD) a favor de Daniel Biss; destinatarios económicos son los proveedores. La declaración jurada de independencia no prueba por sí sola una fiscalización de inexistencia de coordinación. El medio/anécdota original del clip y el audio continúan sin cotejo."
+    "methodologicalNote": "Contraste EXTERNO no extraído del clip F61. Cinco candidaturas se incorporan SOLO como objetivos declarados por J Street el 10/09/2026. Sus 3 M USD son un objetivo agregado de campaña, no asignación comprobada a cada candidato. El informe FEC Schedule E del 12/03/2026 acredita declaración de dos gastos independientes (50.000 y 1.860 USD) a favor de Daniel Biss; destinatarios económicos son los proveedores. La declaración jurada de independencia no prueba por sí sola una fiscalización de inexistencia de coordinación. El medio/anécdota original del clip y el audio continúan sin cotejo. Auditoría 24/11/2026 (#502): discrepancia 470.000/940.000 USD para Collins; probable duplicación o reclasificación, no demostrada. Datos secundarios en notas de contraste, sin nuevas aristas monetarias ni importes acreditados. Formularios primarios inaccesibles."
   },
   "nodes": [
     {
@@ -51,7 +51,48 @@ window.IDEA_TELARANA_F61_OPERACIONES_FEC_20261124 = {
       "note": "J Street lo incluyó en una lista de cinco candidatos frente a quienes su super PAC anunció publicidad negativa. Fuente de la afirmación: la organización contraria; las cuantías atribuibles a Collins requieren cotejo con Schedule E individualizado.",
       "source": "https://jstreet.org/press-releases/j-street-action-fund-announces-3-million-ad-campaign-taking-on-aipac-backed-anti-democracy-candidates/",
       "topic3d": "global",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f61-operaciones-fec-20261124",
+          "title": "F61 · auditoría documental externa (24/11/2026)",
+          "source": "https://election.org/committee/j-street-action-fund-c00815753",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_documental_externo_pendiente_conciliacion",
+          "text": "Election.org muestra una fila de 470.000 USD contra Collins. Fuente secundaria basada en datos FEC, no se ha abierto el formulario original."
+        },
+        {
+          "episodeId": "idealab-f61-operaciones-fec-20261124",
+          "title": "F61 · auditoría documental externa (24/11/2026)",
+          "source": "https://www.wheretheystand.vote/pacs/C00815753-j-street-action-fund",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_documental_externo_pendiente_conciliacion",
+          "text": "Where They Stand suma dos filas por 940.000 USD, pero registra un neto de 470.000 USD para Gambit Strategies y un ajuste negativo de 470.000 USD en Schedule B referido al pago de 08/09/2026. Probable doble cómputo; no confirmado."
+        },
+        {
+          "episodeId": "idealab-f61-operaciones-fec-20261124",
+          "title": "F61 · auditoría documental externa (24/11/2026)",
+          "source": "https://votelog.org/investigations/georgia-senate-general-money",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_documental_externo_pendiente_conciliacion",
+          "text": "VoteLog vincula 470.000 USD a Gambit Strategies LLC con fecha 13/10/2026 y a imagen FEC 202610159909218511. El documento primario devuelve 403."
+        },
+        {
+          "episodeId": "idealab-f61-operaciones-fec-20261124",
+          "title": "F61 · auditoría documental externa (24/11/2026)",
+          "source": "https://www.fec.gov/help-candidates-and-committees/filing-pac-reports/paying-ie-first-and-disseminating-later-reporting-period/",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_documental_externo_pendiente_conciliacion",
+          "text": "La FEC permite reclasificar pagos anticipados de Schedule B a E con ajuste compensatorio; las notificaciones rápidas pueden reaparecer en informes regulares. No sumar sin conciliación."
+        }
+      ]
     },
     {
       "id": "f61v4-maxmiller",
@@ -81,7 +122,18 @@ window.IDEA_TELARANA_F61_OPERACIONES_FEC_20261124 = {
       "note": "J Street lo identificó como objetivo electoral. No confundir su mención en un anuncio de campaña con evidencia de financiación directa a él.",
       "source": "https://jstreet.org/press-releases/j-street-action-fund-announces-3-million-ad-campaign-taking-on-aipac-backed-anti-democracy-candidates/",
       "topic3d": "global",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f61-operaciones-fec-20261124",
+          "title": "F61 · auditoría documental externa (24/11/2026)",
+          "source": "https://election.org/committee/j-street-action-fund-c00815753",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_documental_externo_pendiente_conciliacion",
+          "text": "Election.org informa de 278.581,54 USD en dos filas de gasto independiente contra Mackenzie, con actividad hasta 20/10/2026. Pendiente verificar originales FEC; no incorporar como importe acreditado."
+        }
+      ]
     },
     {
       "id": "f61v4-millermeeks",
@@ -91,7 +143,18 @@ window.IDEA_TELARANA_F61_OPERACIONES_FEC_20261124 = {
       "note": "J Street la identificó como objetivo electoral. Importes específicos de anuncios no deben inferirse del presupuesto agregado anunciado.",
       "source": "https://jstreet.org/press-releases/j-street-action-fund-announces-3-million-ad-campaign-taking-on-aipac-backed-anti-democracy-candidates/",
       "topic3d": "global",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f61-operaciones-fec-20261124",
+          "title": "F61 · auditoría documental externa (24/11/2026)",
+          "source": "https://election.org/committee/j-street-action-fund-c00815753",
+          "timeSec": null,
+          "minuteVerified": false,
+          "audioVerified": false,
+          "status": "contraste_documental_externo_pendiente_conciliacion",
+          "text": "Election.org informa de 218.493 USD en tres filas de gasto independiente contra Miller-Meeks, con actividad hasta 20/10/2026. Pendiente verificar originales FEC; no incorporar como importe acreditado."
+        }
+      ]
     },
     {
       "id": "f61v4-biss",
