@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio. Ampliación jurisdiccional: resúmenes académicos, revisión y contexto histórico; distinguir atribución textual de potestad jurídica y reconstrucción del juicio. Sin cotejo de audio. Ampliación censo: testimonio antiguo y lecturas académicas contrapuestas, consultadas en sus páginas y resúmenes; no se acredita un censo previo independiente. Sin cotejo de audio."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio. Ampliación jurisdiccional: resúmenes académicos, revisión y contexto histórico; distinguir atribución textual de potestad jurídica y reconstrucción del juicio. Sin cotejo de audio. Ampliación censo: testimonio antiguo y lecturas académicas contrapuestas, consultadas en sus páginas y resúmenes; no se acredita un censo previo independiente. Sin cotejo de audio. Ampliación Navidad: edición de texto antiguo, resúmenes académicos y referencias bibliográficas; distinguir fecha litúrgica, hipótesis de origen y fecha biográfica. Sin cotejo de audio."
   },
   "nodes": [
     {
@@ -489,6 +489,56 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "Kerygma · plausibilidad histórica de Lucas 2:2",
       "note": "Defiende la plausibilidad contextual de Lucas pero reconoce expresamente que no dispone de evidencia directa independiente de un censo de Quirinio anterior a la muerte de Herodes.",
       "source": "https://revistas.unasp.edu.br/kerygma/article/view/1329",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-cronografo",
+      "name": "Cronógrafo de 354: Depositio Martyrum",
+      "kind": "Fuente",
+      "subtitle": "Fuente antigua · edición MGH",
+      "note": "La lista sitúa el nacimiento de Cristo en Belén el octavo día antes de las calendas de enero, es decir, el 25 de diciembre. Testimonio de una tradición calendárica, no de la fecha biográfica real.",
+      "source": "https://www.tertullian.org/fathers/chronography_of_354_12_depositions_martyrs.htm",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-nothaft2012",
+      "name": "Nothaft (2012): The Origins of the Christmas Date",
+      "kind": "Fuente",
+      "subtitle": "Church History 81(4), 903–911",
+      "note": "La revisión propone un enfoque que contemple tanto la influencia interreligiosa como el pensamiento cronológico cristiano, sin reducir el problema a una sola explicación.",
+      "source": "https://www.cambridge.org/core/journals/church-history/article/abs/origins-of-the-christmas-date-some-recent-trends-in-historical-research/3767138672A4C2DFBED6BD1B004FB78A",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-nothaft2013",
+      "name": "Nothaft (2013): Early Christian Chronology and the Origins of the Christmas Date",
+      "kind": "Fuente",
+      "subtitle": "Questions Liturgiques · teoría del cálculo",
+      "note": "Defiende el cálculo cronológico como explicación del origen de la fecha mediante fuentes del siglo III. No es corroboración independiente de la revisión del mismo autor.",
+      "source": "https://poj.peeters-leuven.be/content.php?id=3007366&journal_code=QL&url=article",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-schmidt",
+      "name": "Schmidt (2015): Calculating December 25 as the Birth of Jesus in Hippolytus’ Canon and Chronicon",
+      "kind": "Fuente",
+      "subtitle": "Vigiliae Christianae 69(5), 542–564 · DOI 10.1163/15700720-12341243",
+      "note": "Argumenta que los cálculos atribuidos a Hipólito hacia 235 implican probablemente un nacimiento el 25 de diciembre. Es reconstrucción de una creencia cronológica, no evidencia de celebración litúrgica en esa fecha ni del nacimiento histórico.",
+      "source": "https://doi.org/10.1163/15700720-12341243",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-hijmans",
+      "name": "Hijmans (2003): Sol Invictus, the Winter Solstice, and the Origins of Christmas",
+      "kind": "Fuente",
+      "subtitle": "Mouseion 47(3), 377–398",
+      "note": "Cuestiona una derivación directa de Navidad de una festividad solar preexistente en esa fecha; el solsticio y la simbología solar deben distinguirse del origen documental del calendario.",
+      "source": "https://www.academia.edu/968841/_Sol_Invictus_the_Winter_Solstice_and_the_Origins_of_Christmas_Mouseion_Number_47_3_2003_377_398",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -1295,6 +1345,94 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "source": "https://revistas.unasp.edu.br/kerygma/article/view/1329",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-0",
+      "a": "f68x-nav-cronografo",
+      "b": "f68-25diciembre",
+      "type": "Testimonio calendárico antiguo",
+      "note": "Registra la fecha tradicional, no el cumpleaños histórico.",
+      "source": "https://www.tertullian.org/fathers/chronography_of_354_12_depositions_martyrs.htm",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-1",
+      "a": "f68x-nav-nothaft2012",
+      "b": "f68-25diciembre",
+      "type": "Revisión historiográfica",
+      "note": "Examina las dos explicaciones principales y su posible interacción.",
+      "source": "https://www.cambridge.org/core/journals/church-history/article/abs/origins-of-the-christmas-date-some-recent-trends-in-historical-research/3767138672A4C2DFBED6BD1B004FB78A",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-2",
+      "a": "f68x-nav-nothaft2013",
+      "b": "f68-25diciembre",
+      "type": "Defensa de teoría del cálculo",
+      "note": "Argumentación cronológica cristiana; no prueba biográfica.",
+      "source": "https://poj.peeters-leuven.be/content.php?id=3007366&journal_code=QL&url=article",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-3",
+      "a": "f68x-nav-nothaft2013",
+      "b": "f68x-nav-nothaft2012",
+      "type": "Continuidad bibliográfica del mismo autor",
+      "note": "No tratar como dos investigadores independientes.",
+      "source": "https://poj.peeters-leuven.be/content.php?id=3007366&journal_code=QL&url=article",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-4",
+      "a": "f68x-nav-schmidt",
+      "b": "f68-25diciembre",
+      "type": "Reconstrucción de cronología del siglo III",
+      "note": "La hipótesis deriva de cálculos atribuidos a Hipólito.",
+      "source": "https://doi.org/10.1163/15700720-12341243",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-5",
+      "a": "f68x-nav-hijmans",
+      "b": "f68-25diciembre",
+      "type": "Crítica de explicación solar directa",
+      "note": "Cuestiona la suficiencia de la evidencia de una sustitución pagana.",
+      "source": "https://www.academia.edu/968841/_Sol_Invictus_the_Winter_Solstice_and_the_Origins_of_Christmas_Mouseion_Number_47_3_2003_377_398",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-6",
+      "a": "f68x-nav-nothaft2012",
+      "b": "f68x-nav-hijmans",
+      "type": "Discusión historiográfica",
+      "note": "La revisión considera los trabajos sobre el culto solar y la cronología cristiana.",
+      "source": "https://www.cambridge.org/core/journals/church-history/article/abs/origins-of-the-christmas-date-some-recent-trends-in-historical-research/3767138672A4C2DFBED6BD1B004FB78A",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-nav-20261124-7",
+      "a": "f68x-nav-cronografo",
+      "b": "f68-nacimiento",
+      "type": "Tradición posterior de datación",
+      "note": "Un calendario del siglo IV no permite determinar la fecha del nacimiento real.",
+      "source": "https://www.tertullian.org/fathers/chronography_of_354_12_depositions_martyrs.htm",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
       "podcastNotes": []
     }
   ]
