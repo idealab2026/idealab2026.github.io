@@ -482,20 +482,25 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          stable=0
           for attempt in $(seq 1 20); do
             count=$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?per_page=100" | jq '[.[].artifacts[] | select(.name == "github-pages" and .expired == false)] | length') || {
               echo "No se pudo consultar la lista de artefactos." >&2
               exit 1
             }
             if [ "$count" = "1" ]; then
-              echo "Artefacto de Pages disponible."
-              exit 0
-            fi
-            if [ "$count" != "0" ]; then
+              stable=$((stable + 1))
+              if [ "$stable" -ge 4 ]; then
+                echo "Artefacto de Pages disponible en cuatro consultas consecutivas."
+                exit 0
+              fi
+            elif [ "$count" = "0" ]; then
+              stable=0
+            else
               echo "Número inesperado de artefactos de Pages: $count" >&2
               exit 1
             fi
-            sleep 3
+            sleep 5
           done
           echo "El artefacto de Pages no apareció en el tiempo previsto." >&2
           exit 1
