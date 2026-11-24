@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio."
   },
   "nodes": [
     {
@@ -299,6 +299,36 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "British Museum",
       "note": "Exposición que incluyó los restos de Fenstanton; no constituye una nueva excavación ni evidencia independiente.",
       "source": "https://www.cambridgeshire.gov.uk/news/cambridgeshire-crucifixion-remains-go-on-display-at-the-british-museum",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-nature",
+      "name": "Humphreys y Waddington (1983): Dating the Crucifixion",
+      "kind": "Fuente",
+      "subtitle": "Nature 306, 743–746",
+      "note": "Los autores defienden el 3 de abril de 33 d. C. a partir de una reconstrucción del calendario y argumentos astronómicos. Es una hipótesis dependiente de premisas históricas; no una fecha observada directamente.",
+      "source": "https://www.nature.com/articles/306743a0",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-tyndale",
+      "name": "Humphreys y Waddington (1992): The Jewish Calendar, A Lunar Eclipse and the Date of Christ’s Crucifixion",
+      "kind": "Fuente",
+      "subtitle": "Tyndale Bulletin 43(2)",
+      "note": "Desarrolla la reconstrucción y el argumento del eclipse lunar. Es trabajo de los mismos autores que Nature 1983: no contar como corroboración independiente de la hipótesis.",
+      "source": "https://www.tyndalebulletin.org/article/30487",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-bond",
+      "name": "Helen K. Bond (2013): Dating the Death of Jesus",
+      "kind": "Fuente",
+      "subtitle": "New Testament Studies 59(4), 461–475",
+      "note": "DOI 10.1017/S0028688513000131. Discute el 7 de abril de 30 y la tradición cronológica de Juan y Marcos; sostiene que no puede recuperarse el día exacto y propone un intervalo aproximado de Pascua entre 29 y 34 d. C. como conclusión historiográfica prudente.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -729,6 +759,83 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "type": "Paralelo arqueológico",
       "note": "Paralelo de evidencia material; no implica identidad de procedimiento ni prueba de la muerte de Jesús.",
       "source": "https://www.cam.ac.uk/stories/romancrucifixion",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-20261124-0",
+      "a": "f68x-cron-nature",
+      "b": "f68-fecha-30-33",
+      "type": "Hipótesis cronológica",
+      "note": "Propone 3 de abril de 33; depende de premisas históricas y calendáricas.",
+      "source": "https://www.nature.com/articles/306743a0",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-20261124-1",
+      "a": "f68x-cron-tyndale",
+      "b": "f68x-cron-nature",
+      "type": "Ampliación por los mismos autores",
+      "note": "No equivale a una corroboración independiente.",
+      "source": "https://www.tyndalebulletin.org/article/30487",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-20261124-2",
+      "a": "f68x-cron-tyndale",
+      "b": "f68-fecha-crucifixion",
+      "type": "Reconstrucción astronómica",
+      "note": "El eclipse y el calendario son argumentos condicionados por la identificación de los relatos.",
+      "source": "https://www.tyndalebulletin.org/article/30487",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-20261124-3",
+      "a": "f68x-cron-bond",
+      "b": "f68-fecha-crucifixion",
+      "type": "Crítica de precisión cronológica",
+      "note": "La autora considera irrecuperable el día exacto.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-20261124-4",
+      "a": "f68x-cron-bond",
+      "b": "f68-fecha-30-33",
+      "type": "Evaluación de las hipótesis",
+      "note": "Discute las fechas candidatas sin convertirlas en hechos.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-20261124-5",
+      "a": "f68x-cron-bond",
+      "b": "f68-marcos-pascua",
+      "type": "Contraste textual sinóptico",
+      "note": "Discute la relación entre el relato de Marcos y la Pascua.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-cron-20261124-6",
+      "a": "f68x-cron-bond",
+      "b": "f68-juan-pascua",
+      "type": "Contraste textual joánico",
+      "note": "Discute la preparación de la Pascua y los límites de su valor cronológico.",
+      "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
