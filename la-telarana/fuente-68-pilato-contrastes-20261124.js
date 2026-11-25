@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio. Ampliación jurisdiccional: resúmenes académicos, revisión y contexto histórico; distinguir atribución textual de potestad jurídica y reconstrucción del juicio. Sin cotejo de audio. Ampliación censo: testimonio antiguo y lecturas académicas contrapuestas, consultadas en sus páginas y resúmenes; no se acredita un censo previo independiente. Sin cotejo de audio. Ampliación Navidad: edición de texto antiguo, resúmenes académicos y referencias bibliográficas; distinguir fecha litúrgica, hipótesis de origen y fecha biográfica. Sin cotejo de audio."
+    "methodologicalNote": "Contexto externo a F68: no se afirma que estos pasajes se citen en la entrevista. Distinguir existencia y cargo, contenido de textos antiguos e interpretación académica. Dos obras de Josefo no son dos autores independientes. No reconstruir intenciones íntimas de Pilato ni elevar relatos a actas judiciales. Ampliación Josefo: revisión de resúmenes académicos y reseña; sin atribución al audio ni incremento de cobertura de transcripción. Ampliación Plinio-Trajano: contexto externo, fuentes textuales y estudios académicos; sin cotejo del audio. Ampliación Fenstanton: evidencia comparativa externa, no cotejada con el audio. Ampliación cronológica: tres publicaciones (dos de los mismos autores), hipótesis diferenciadas y referencias a nodos existentes; sin cotejo de audio. Ampliación médica: cinco publicaciones; distinguir revisión de opiniones, hipótesis retrospectivas y evidencia clínica directa. Sin cotejo de audio. Ampliación jurisdiccional: resúmenes académicos, revisión y contexto histórico; distinguir atribución textual de potestad jurídica y reconstrucción del juicio. Sin cotejo de audio. Ampliación censo: testimonio antiguo y lecturas académicas contrapuestas, consultadas en sus páginas y resúmenes; no se acredita un censo previo independiente. Sin cotejo de audio. Ampliación Navidad: edición de texto antiguo, resúmenes académicos y referencias bibliográficas; distinguir fecha litúrgica, hipótesis de origen y fecha biográfica. Sin cotejo de audio. Ampliación lingüística 25-11-2026: tres textos web y un resumen académico; sin cotejo del audio ni certeza sobre el idioma del diálogo."
   },
   "nodes": [
     {
@@ -539,6 +539,46 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "subtitle": "Mouseion 47(3), 377–398",
       "note": "Cuestiona una derivación directa de Navidad de una festividad solar preexistente en esa fecha; el solsticio y la simbología solar deben distinguirse del origen documental del calendario.",
       "source": "https://www.academia.edu/968841/_Sol_Invictus_the_Winter_Solstice_and_the_Origins_of_Christmas_Mouseion_Number_47_3_2003_377_398",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-fitzmyer",
+      "name": "Joseph A. Fitzmyer (1992): Did Jesus Speak Greek?",
+      "kind": "Fuente",
+      "subtitle": "Biblical Archaeology Review 18(5)",
+      "note": "Defiende el arameo como lengua habitual de Jesús y considera probable el diálogo con Pilato en griego, infiriéndolo del contexto y de la ausencia de intérprete mencionado. No hay registro directo del idioma del juicio.",
+      "source": "https://cojs.org/joseph-a-fitzmyer-did-jesus-speak-greek-biblical-archaeology-review-18-5-1992/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-chancey",
+      "name": "Mark A. Chancey (2005): The use of Greek in Jesus’ Galilee",
+      "kind": "Fuente",
+      "subtitle": "Cambridge University Press · capítulo, pp. 122–165",
+      "note": "El resumen cuestiona la seguridad de las generalizaciones sobre el uso del griego en Galilea en tiempos de Jesús; señala limitaciones de la evidencia contemporánea y argumentos circulares. Consultado el resumen.",
+      "source": "https://www.cambridge.org/core/books/abs/grecoroman-culture-and-the-galilee-of-jesus/use-of-greek-in-jesus-galilee/72F51297BEEE6BC620B24AC9C320B0A2",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-bas",
+      "name": "Did Jesus Speak Greek? — evidencia epigráfica galilea",
+      "kind": "Fuente",
+      "subtitle": "Biblical Archaeology Society · texto complementario",
+      "note": "Examina monedas, inscripciones y pesas; advierte que gran parte de la evidencia es posterior al siglo I y que los cambios demográficos dificultan extrapolarla. No usar como testimonio personal sobre Jesús.",
+      "source": "https://library.biblicalarchaeology.org/sidebar/did-jesus-speak-greek/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-houtman",
+      "name": "Dineke Houtman (2023): What language did Jesus speak?",
+      "kind": "Fuente",
+      "subtitle": "Protestant Theological University · divulgación académica",
+      "note": "Considera muy probable el arameo como lengua materna, posible conocimiento de hebreo y griego, y poco probable el dominio del latín. Distingue competencia lingüística posible de certeza sobre un diálogo concreto.",
+      "source": "https://www.pthu.nl/en/bibleblog/2023/05/what-language-did-jesus-speak/",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -1433,6 +1473,72 @@ window.IDEA_TELARANA_F68_PILATO_20261124 = {
       "source": "https://www.tertullian.org/fathers/chronography_of_354_12_depositions_martyrs.htm",
       "claimStatus": "testimonio_textual_atribuido",
       "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-20261125-0",
+      "a": "f68x-ling-fitzmyer",
+      "b": "f68-dialogo-griego",
+      "type": "Hipótesis de diálogo en griego",
+      "note": "Inferencia a partir del contexto y del relato, no testimonio lingüístico directo.",
+      "source": "https://cojs.org/joseph-a-fitzmyer-did-jesus-speak-greek-biblical-archaeology-review-18-5-1992/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-20261125-1",
+      "a": "f68x-ling-fitzmyer",
+      "b": "f42-jesus",
+      "type": "Reconstrucción de competencia lingüística",
+      "note": "Arameo habitual y posible uso del griego.",
+      "source": "https://cojs.org/joseph-a-fitzmyer-did-jesus-speak-greek-biblical-archaeology-review-18-5-1992/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-20261125-2",
+      "a": "f68x-ling-chancey",
+      "b": "f68-dialogo-griego",
+      "type": "Límites de inferencia sociolingüística",
+      "note": "La evidencia regional no establece la competencia de un individuo.",
+      "source": "https://www.cambridge.org/core/books/abs/grecoroman-culture-and-the-galilee-of-jesus/use-of-greek-in-jesus-galilee/72F51297BEEE6BC620B24AC9C320B0A2",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-20261125-3",
+      "a": "f68x-ling-bas",
+      "b": "f68-dialogo-griego",
+      "type": "Contraste epigráfico contextual",
+      "note": "La extrapolación de inscripciones posteriores es problemática.",
+      "source": "https://library.biblicalarchaeology.org/sidebar/did-jesus-speak-greek/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-20261125-4",
+      "a": "f68x-ling-houtman",
+      "b": "f68-dialogo-griego",
+      "type": "Evaluación de plausibilidad lingüística",
+      "note": "El diálogo en griego es posible; no se conoce el idioma exacto.",
+      "source": "https://www.pthu.nl/en/bibleblog/2023/05/what-language-did-jesus-speak/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f68x-ling-20261125-5",
+      "a": "f68x-ling-houtman",
+      "b": "f42-jesus",
+      "type": "Evaluación comparativa de lenguas",
+      "note": "Distingue arameo, hebreo, griego y latín según evidencia disponible.",
+      "source": "https://www.pthu.nl/en/bibleblog/2023/05/what-language-did-jesus-speak/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
       "podcastNotes": []
     }
   ]
