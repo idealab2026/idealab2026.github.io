@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F67_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color. Contraste externo Sudario de Oviedo 26-11-2026: resúmenes históricos, reproducciones HTML de dos comunicaciones de congreso y resumen indexado 2026 con acceso editorial 403. No se auditan datos originales de datación ni se demuestra identidad común; sin cotejo de audio. Contraste externo 26-11-2026: estudios ADN 2015 y 2026, corrección 2021 y preprint. Resúmenes indexados y corrección íntegra; acceso directo a los artículos limitado por redirecciones. No análisis de secuencias ni cotejo de audio.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color. Contraste externo Sudario de Oviedo 26-11-2026: resúmenes históricos, reproducciones HTML de dos comunicaciones de congreso y resumen indexado 2026 con acceso editorial 403. No se auditan datos originales de datación ni se demuestra identidad común; sin cotejo de audio. Contraste externo 26-11-2026: estudios ADN 2015 y 2026, corrección 2021 y preprint. Resúmenes indexados y corrección íntegra; acceso directo a los artículos limitado por redirecciones. No análisis de secuencias ni cotejo de audio. Contraste externo 26-11-2026: palinología, divergencia taxonómica y posibles ungüentos; consultados resúmenes, bibliografía y registro universitario, sin inspección de muestras originales ni cotejo de audio.",
     "automaticCaptions": true,
     "captionTimeHintsAvailable": true
   },
@@ -1151,6 +1151,46 @@ window.IDEA_TELARANA_F67_REVIEW =
       "source": "https://pubmed.ncbi.nlm.nih.gov/42426126/",
       "topic3d": "historia",
       "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-frei",
+      "name": "Frei (1982): Nine years of palynological studies on the Shroud",
+      "kind": "Fuente",
+      "subtitle": "Shroud Spectrum International 1(3), 2–7",
+      "note": "Propone identificaciones de polen y un itinerario oriental. Consultada la referencia y el texto indexado, no las preparaciones originales; las inferencias de procedencia siguen discutidas.",
+      "source": "https://shroud.com/pdfs/ssi03part3.pdf",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-bryant",
+      "name": "Bryant (2000): Does Pollen Prove the Shroud Authentic?",
+      "kind": "Fuente",
+      "subtitle": "Biblical Archaeology Review 26(6), 36–44, 75",
+      "note": "Crítica de la fuerza probatoria de los resultados botánicos. Consultados registro bibliográfico y noticia contemporánea de AP; no el artículo completo.",
+      "source": "https://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=1148555",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-fanti",
+      "name": "Fanti, Calliari y Canovaro (2012): Analysis of micro-particles vacuumed from the Turin Shroud",
+      "kind": "Fuente",
+      "subtitle": "Comunicación de congreso · Universidad de Padua",
+      "note": "El resumen comunica compatibilidad parcial de los resultados de polen con Frei y de partículas minerales con suelo de Jerusalén. Sin datos completos ni prueba de procedencia geográfica exclusiva.",
+      "source": "https://www.research.unipd.it/handle/11577/2688196",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-boi",
+      "name": "Boi (2017): Pollen on the Shroud of Turin",
+      "kind": "Fuente",
+      "subtitle": "Archaeometry · DOI 10.1111/arcm.12269",
+      "note": "Propone que el polen más abundante corresponda a Helichrysum y no a Gundelia tournefortii. Compara imágenes bibliográficas con polen moderno mediante microscopía óptica y electrónica; interpreta una posible asociación con ungüentos funerarios. No es un análisis directo nuevo de los granos originales ni prueba de identidad.",
+      "source": "https://doi.org/10.1111/arcm.12269",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -2184,6 +2224,83 @@ window.IDEA_TELARANA_F67_REVIEW =
       "type": "Límite metodológico",
       "note": "Los autores no establecen edad del tejido mediante metagenómica.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/42426126/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-20261126-0",
+      "a": "f67-pol-frei",
+      "b": "f42-sudario",
+      "type": "Hipótesis de procedencia botánica",
+      "note": "Atribución de identificaciones y recorrido al autor; no verificación independiente.",
+      "source": "https://shroud.com/pdfs/ssi03part3.pdf",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-20261126-1",
+      "a": "f67-pol-bryant",
+      "b": "f67-pol-frei",
+      "type": "Crítica de valor probatorio",
+      "note": "Crítica documentada por la referencia bibliográfica y cobertura contemporánea; texto completo no consultado.",
+      "source": "https://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=1148555",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-20261126-2",
+      "a": "f67-pol-fanti",
+      "b": "f67-pol-frei",
+      "type": "Comparación de resultados",
+      "note": "El resumen afirma compatibilidad parcial con Frei; no demuestra itinerario.",
+      "source": "https://www.research.unipd.it/handle/11577/2688196",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-20261126-3",
+      "a": "f67-pol-fanti",
+      "b": "f42-sudario",
+      "type": "Análisis de partículas",
+      "note": "Comunicación de congreso; datos originales no auditados.",
+      "source": "https://www.research.unipd.it/handle/11577/2688196",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-20261126-4",
+      "a": "f67-pol-boi",
+      "b": "f67-pol-frei",
+      "type": "Reinterpretación taxonómica",
+      "note": "Propone Helichrysum en lugar de Gundelia; cita las investigaciones de Frei.",
+      "source": "https://doi.org/10.1111/arcm.12269",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-20261126-5",
+      "a": "f67-pol-boi",
+      "b": "f42-sudario",
+      "type": "Hipótesis de ungüentos funerarios",
+      "note": "Compatibilidad con usos históricos no determina época ni identidad.",
+      "source": "https://doi.org/10.1111/arcm.12269",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-pol-20261126-6",
+      "a": "f67-pol-boi",
+      "b": "f67-clases-prueba",
+      "type": "Límite de inferencia",
+      "note": "Polen y posibles ungüentos no datan directamente el tejido ni identifican al individuo.",
+      "source": "https://doi.org/10.1111/arcm.12269",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
