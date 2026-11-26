@@ -691,7 +691,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-63-historia-judia.js?v=20261115-1"></script>
 <script src="./fuente-64-historia-antigua.js?v=20261115-1"></script>
 <script src="./fuente-66-jesus-historico.js?v=20261115-1"></script>
-<script src="./fuente-67-reliquias.js?v=20261116-f67-contrastestextos4"></script>
+<script src="./fuente-67-reliquias.js?v=20261126-1decd8c7"></script>
 <script src="./fuente-67-procedencia-medieval-20261124.js?v=20261124-1"></script>
 <script src="./fuente-67-mandylion-20261124.js?v=20261124-1"></script>
 <script src="./fuente-67-templarios-20261124.js?v=20261124-1"></script>
@@ -700,7 +700,7 @@ body.graph-expanded{overflow:hidden}
 <script src="./fuente-67-rogers-20261124.js?v=20261124-1"></script>
 <script src="./fuente-67-auditoria-c14-20261124.js?v=20261124-1"></script>
 <script src="./fuente-68-pasion.js?v=20261116-2"></script>
-<script src="./fuente-68-pilato-contrastes-20261124.js?v=20261124-1"></script>
+<script src="./fuente-68-pilato-contrastes-20261124.js?v=20261126-3200d364"></script>
 <script src="./fuente-33-rothschild-inicial.js?v=20261116-f33-oppenheimer3"></script>
 <script src="./fuente-34-francisco-primera-revision.js?v=20261113-f34-curia-boston-2"></script>
 <script src="./fuente-39-egiptologia-revision.js?v=20261114privacy"></script>
@@ -795,20 +795,27 @@ function sanitizeIndependentBiography(value){
  return{text:bio.slice(0,1800),source:url.slice(0,600),
   sourceTitle:String(value.sourceTitle||"Fuente biográfica independiente").slice(0,140)};
 }
+// Identificadores originales de todos los módulos ya fusionados en esta carga.
+var canonicalEpisodeIds=new Map();
+function rememberEpisodeId(original,canonical){canonicalEpisodeIds.set(original,canonical);}
+function resolveEpisodeId(id,local,byId){
+ var resolved=local.get(id)||canonicalEpisodeIds.get(id)||id;
+ return byId.has(resolved)?resolved:(byId.has(id)?id:null);
+}
 function mergePodcastStudy(v){
  if(!v||!Array.isArray(v.nodes)||!Array.isArray(v.edges))return{nodes:0,edges:0,notes:0};
  var byId=new Map(data.nodes.map(function(n){return[n.id,n]})),byName=new Map(data.nodes.map(function(n){return[String(n.name).trim().toLocaleLowerCase("es"),n]})),mapIds=new Map(),addedNodes=0,addedEdges=0,addedNotes=0;
  v.nodes.forEach(function(n){
   if(!n||typeof n.name!=="string"||typeof n.id!=="string")return;
   var match=byId.get(n.id)||byName.get(String(n.name).trim().toLocaleLowerCase("es"));
-  if(match){mapIds.set(n.id,match.id);addedNotes+=appendPodcastNotes(match,n.podcastNotes);return}
+  if(match){mapIds.set(n.id,match.id);rememberEpisodeId(n.id,match.id);addedNotes+=appendPodcastNotes(match,n.podcastNotes);return}
   var copy={id:n.id,name:n.name.slice(0,140),kind:String(n.kind||"Persona").slice(0,60),subtitle:String(n.subtitle||"").slice(0,240),note:String(n.note||"").slice(0,3000),source:String(n.source||"").slice(0,600),archiveNote:"",podcastNotes:sanitizePodcastNotes(n.podcastNotes),photo:safePhoto(n.photo),x:Number(n.x)||150,y:Number(n.y)||150};
-  data.nodes.push(copy);byId.set(copy.id,copy);byName.set(copy.name.trim().toLocaleLowerCase("es"),copy);mapIds.set(n.id,copy.id);addedNodes++;
+  data.nodes.push(copy);byId.set(copy.id,copy);byName.set(copy.name.trim().toLocaleLowerCase("es"),copy);mapIds.set(n.id,copy.id);rememberEpisodeId(n.id,copy.id);addedNodes++;
  });
  var existingEdgeIds=new Set(data.edges.map(function(e){return e.id}));
  var existingEdgeKeys=new Set(data.edges.map(function(e){return[e.a,e.b].sort().join(":")+"|"+String(e.type||"")}));
  v.edges.forEach(function(e){
-  var a=mapIds.get(e.a),b=mapIds.get(e.b);if(!a||!b||a===b)return;
+  var a=resolveEpisodeId(e.a,mapIds,byId),b=resolveEpisodeId(e.b,mapIds,byId);if(!a||!b||a===b)return;
   var key=[a,b].sort().join(":")+"|"+String(e.type||"");
   if(existingEdgeKeys.has(key))return;
   var edgeId=String(e.id||"vf150-connection-"+addedEdges);
@@ -913,7 +920,7 @@ function mergeNewEpisode(v){
   var key=normalizeEntityName(n.name);
   var matched=byId.get(n.id)||byName.get(key)||byName.get(aliases[key]||key);
   if(matched){
-   translated.set(n.id,matched.id);
+   translated.set(n.id,matched.id);rememberEpisodeId(n.id,matched.id);
    // Nunca sustituir biografías anteriores ni convertir el relato de la entrevista en biografía.
    var incomingBio=sanitizeIndependentBiography(n.verifiedBiography);
    if(matched.kind==="Persona"&&incomingBio&&!matched.verifiedBiography)matched.verifiedBiography=incomingBio;
@@ -929,7 +936,7 @@ function mergeNewEpisode(v){
    photo:safePhoto(n.photo),x:Number(n.x)||150,y:Number(n.y)||150,
    topic3d:String(n.topic3d||"").slice(0,40)
   };
-  data.nodes.push(copy);byId.set(copy.id,copy);byName.set(key,copy);translated.set(n.id,copy.id);nodeAdded++;
+  data.nodes.push(copy);byId.set(copy.id,copy);byName.set(key,copy);translated.set(n.id,copy.id);rememberEpisodeId(n.id,copy.id);nodeAdded++;
  });
  var edgesByPair=new Map();
  data.edges.forEach(function(e){
@@ -940,7 +947,7 @@ function mergeNewEpisode(v){
  var usedIds=new Set(data.edges.map(function(e){return e.id}));
  v.edges.forEach(function(e){
   if(!e)return;
-  var a=translated.get(e.a),b=translated.get(e.b);
+  var a=resolveEpisodeId(e.a,translated,byId),b=resolveEpisodeId(e.b,translated,byId);
   if(!a||!b||a===b)return;
   var key=[a,b].sort().join("::"),existing=edgesByPair.get(key)||[];
   if(existing.length){
@@ -1050,7 +1057,7 @@ function showLoadAudit(){
 }
 function load(){
  // La fuente publicada es canónica y los visitantes no modifican el inventario.
- data={nodes:[],edges:[]};demo=false;loadAudit=[];
+ data={nodes:[],edges:[]};demo=false;loadAudit=[];canonicalEpisodeIds.clear();
  auditLoadStep("Base OneNote",function(){data=JSON.parse(JSON.stringify(window.IDEA_TELARANA_ONENOTE))},Boolean(window.IDEA_TELARANA_ONENOTE),"archive:onenote",window.IDEA_TELARANA_ONENOTE);
  var modules=[{"key":"IDEA_TELARANA_PODCAST_150","kind":"mergePodcastStudy","label":"Vaquero 150"},{"key":"IDEA_TELARANA_FRATTINI_EXTERNAL","kind":"mergePodcastStudy","label":"Frattini · contexto"},{"key":"IDEA_TELARANA_PODCAST_CORONEL_VILLAREJO","kind":"mergeNewEpisode","label":"Coronel · Villarejo"},{"key":"IDEA_TELARANA_EPISODE_CEUTA_2026","kind":"mergeNewEpisode","label":"Ceuta · episodio"},{"key":"IDEA_TELARANA_CEUTA_TRANSCRIPT_REVIEW","kind":"mergeNewEpisode","label":"Ceuta · transcripción"},{"key":"IDEA_TELARANA_SOURCE03_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 03"},{"key":"IDEA_TELARANA_SOURCE04_HISTORICAL","kind":"mergeNewEpisode","label":"Fuente 04"},{"key":"IDEA_TELARANA_SOURCE05_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 05"},{"key":"IDEA_TELARANA_SOURCE06_PODCAST","kind":"mergeNewEpisode","label":"Fuente 06"},{"key":"IDEA_TELARANA_SOURCE07_PODCAST","kind":"mergeNewEpisode","label":"Fuente 07"},{"key":"IDEA_TELARANA_SOURCE08_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 08"},{"key":"IDEA_TELARANA_SOURCE18_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 18"},{"key":"IDEA_TELARANA_SOURCE21_EDITORIAL","kind":"mergeNewEpisode","label":"Fuente 21"},{"key":"IDEA_TELARANA_SOURCE09_REVIEW","kind":"mergeNewEpisode","label":"Fuente 09"},{"key":"IDEA_TELARANA_F10_REVIEW","kind":"mergeNewEpisode","label":"Fuente 10"},{"key":"IDEA_TELARANA_F11_REVIEW","kind":"mergeNewEpisode","label":"Fuente 11"},{"key":"IDEA_TELARANA_F12_REVIEW","kind":"mergeNewEpisode","label":"Fuente 12"},{"key":"IDEA_TELARANA_F13_REVIEW","kind":"mergeNewEpisode","label":"Fuente 13"},{"key":"IDEA_TELARANA_F14_REVIEW","kind":"mergeNewEpisode","label":"Fuente 14"},{"key":"IDEA_TELARANA_F15_PRIMARY","kind":"mergeNewEpisode","label":"Fuente 15"},{"key":"IDEA_TELARANA_F16_REVIEW","kind":"mergeNewEpisode","label":"Fuente 16"},{"key":"IDEA_TELARANA_F17_REVIEW","kind":"mergeNewEpisode","label":"Fuente 17"},{"key":"IDEA_TELARANA_F19_REVIEW","kind":"mergeNewEpisode","label":"Fuente 19"},{"key":"IDEA_TELARANA_F20_REVIEW","kind":"mergeNewEpisode","label":"Fuente 20"},{"key":"IDEA_TELARANA_F22_REVIEW","kind":"mergeNewEpisode","label":"Fuente 22"},{"key":"IDEA_TELARANA_F23_REVIEW","kind":"mergeNewEpisode","label":"Fuente 23"},{"key":"IDEA_TELARANA_F24_REVIEW","kind":"mergeNewEpisode","label":"Fuente 24"},{"key":"IDEA_TELARANA_F25_REVIEW","kind":"mergeNewEpisode","label":"Fuente 25"},{"key":"IDEA_TELARANA_F26_REVIEW","kind":"mergeNewEpisode","label":"Fuente 26"},{"key":"IDEA_TELARANA_F27_REVIEW","kind":"mergeNewEpisode","label":"Fuente 27"},{"key":"IDEA_TELARANA_F28_REVIEW","kind":"mergeNewEpisode","label":"Fuente 28"},{"key":"IDEA_TELARANA_F29_REVIEW","kind":"mergeNewEpisode","label":"Fuente 29"},{"key":"IDEA_TELARANA_F30_REVIEW","kind":"mergeNewEpisode","label":"Fuente 30"},{"key":"IDEA_TELARANA_F31_REVIEW","kind":"mergeNewEpisode","label":"Fuente 31"},{"key":"IDEA_TELARANA_F32_REVIEW","kind":"mergeNewEpisode","label":"Fuente 32"},{"key":"IDEA_TELARANA_F35_REVIEW","kind":"mergeNewEpisode","label":"Fuente 35"},{"key":"IDEA_TELARANA_F37_REVIEW","kind":"mergeNewEpisode","label":"Fuente 37"},{"key":"IDEA_TELARANA_F38_REVIEW","kind":"mergeNewEpisode","label":"Fuente 38"},{"key":"IDEA_TELARANA_F40_REVIEW","kind":"mergeNewEpisode","label":"Fuente 40"},{"key":"IDEA_TELARANA_F41_REVIEW","kind":"mergeNewEpisode","label":"Fuente 41"},{"key":"IDEA_TELARANA_F42_REVIEW","kind":"mergeNewEpisode","label":"Fuente 42"},{"key":"IDEA_TELARANA_F43_REVIEW","kind":"mergeNewEpisode","label":"Fuente 43"},{"key":"IDEA_TELARANA_F44_REVIEW","kind":"mergeNewEpisode","label":"Fuente 44"},{"key":"IDEA_TELARANA_F45_REVIEW","kind":"mergeNewEpisode","label":"Fuente 45"},{"key":"IDEA_TELARANA_F47_REVIEW","kind":"mergeNewEpisode","label":"Fuente 47"},{"key":"IDEA_TELARANA_F51_REVIEW","kind":"mergeNewEpisode","label":"Fuente 51"},{"key":"IDEA_TELARANA_F52_REVIEW","kind":"mergeNewEpisode","label":"Fuente 52"},{"key":"IDEA_TELARANA_F53_REVIEW","kind":"mergeNewEpisode","label":"Fuente 53"},{"key":"IDEA_TELARANA_F54_REVIEW","kind":"mergeNewEpisode","label":"Fuente 54"},{"key":"IDEA_TELARANA_F48_EXTERNAL","kind":"mergeNewEpisode","label":"Lectura externa sobre Platón · PDF F48 no localizado"},{"key":"IDEA_TELARANA_F49_CANDIDATE","kind":"mergeNewEpisode","label":"Artículo candidato a F49"},{"key":"IDEA_TELARANA_F55_REVIEW","kind":"mergeNewEpisode","label":"Fuente 55"},{"key":"IDEA_TELARANA_F56_REVIEW","kind":"mergeNewEpisode","label":"Fuente 56"},{"key":"IDEA_TELARANA_F57_REVIEW","kind":"mergeNewEpisode","label":"Fuente 57"},{"key":"IDEA_TELARANA_F58_REVIEW","kind":"mergeNewEpisode","label":"Fuente 58"},{"key":"IDEA_TELARANA_F59_REVIEW","kind":"mergeNewEpisode","label":"Fuente 59"},{"key":"IDEA_TELARANA_F60_REVIEW","kind":"mergeNewEpisode","label":"Fuente 60"},{"key":"IDEA_TELARANA_F61_REVIEW","kind":"mergeNewEpisode","label":"Fuente 61"},{"key":"IDEA_TELARANA_F62_REVIEW","kind":"mergeNewEpisode","label":"Fuente 62"},{"key":"IDEA_TELARANA_F63_REVIEW","kind":"mergeNewEpisode","label":"Fuente 63"},{"key":"IDEA_TELARANA_F64_REVIEW","kind":"mergeNewEpisode","label":"Fuente 64"},{"key":"IDEA_TELARANA_F66_REVIEW","kind":"mergeNewEpisode","label":"Fuente 66"},{"key":"IDEA_TELARANA_F67_REVIEW","kind":"mergeNewEpisode","label":"Fuente 67"},{"key":"IDEA_TELARANA_F68_REVIEW","kind":"mergeNewEpisode","label":"Fuente 68"},{"key":"IDEA_TELARANA_F33_REVIEW","kind":"mergeNewEpisode","label":"Fuente 33"},{"key":"IDEA_TELARANA_F34_REVIEW","kind":"mergeNewEpisode","label":"Fuente 34 · Eric Frattini · Francisco"},{"key":"IDEA_TELARANA_F39_REVIEW","kind":"mergeNewEpisode","label":"Fuente 39 · Egiptología"},{"key":"IDEA_TELARANA_F50_REVIEW","kind":"mergeNewEpisode","label":"Fuente 50 · Historia"},{"key":"IDEA_TELARANA_F70_REVIEW","kind":"mergeNewEpisode","label":"Fuente 70 · Eric Frattini"},{"key":"IDEA_TELARANA_F71_REVIEW","kind":"mergeNewEpisode","label":"Fuente 71 · Eric Frattini"},{"key":"IDEA_TELARANA_F72_REVIEW","kind":"mergeNewEpisode","label":"Fuente 72 · Eric Frattini"},{"key":"IDEA_TELARANA_F73_REVIEW","kind":"mergeNewEpisode","label":"Fuente 73 · Eric Frattini"},{"key":"IDEA_TELARANA_F74_REVIEW","kind":"mergeNewEpisode","label":"Fuente 74 · Eric Frattini"}];
  modules.forEach(function(m){
