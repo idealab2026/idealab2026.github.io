@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F67_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color. Contraste externo Sudario de Oviedo 26-11-2026: resúmenes históricos, reproducciones HTML de dos comunicaciones de congreso y resumen indexado 2026 con acceso editorial 403. No se auditan datos originales de datación ni se demuestra identidad común; sin cotejo de audio. Contraste externo 26-11-2026: estudios ADN 2015 y 2026, corrección 2021 y preprint. Resúmenes indexados y corrección íntegra; acceso directo a los artículos limitado por redirecciones. No análisis de secuencias ni cotejo de audio. Contraste externo 26-11-2026: palinología, divergencia taxonómica y posibles ungüentos; consultados resúmenes, bibliografía y registro universitario, sin inspección de muestras originales ni cotejo de audio. Contraste externo 26-11-2026: tres artículos de coloración UV, consultados resúmenes editoriales y registros PubMed; equipo parcialmente compartido. No reproducción integral, datación ni prueba de origen histórico; sin cotejo de audio.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color. Contraste externo Sudario de Oviedo 26-11-2026: resúmenes históricos, reproducciones HTML de dos comunicaciones de congreso y resumen indexado 2026 con acceso editorial 403. No se auditan datos originales de datación ni se demuestra identidad común; sin cotejo de audio. Contraste externo 26-11-2026: estudios ADN 2015 y 2026, corrección 2021 y preprint. Resúmenes indexados y corrección íntegra; acceso directo a los artículos limitado por redirecciones. No análisis de secuencias ni cotejo de audio. Contraste externo 26-11-2026: palinología, divergencia taxonómica y posibles ungüentos; consultados resúmenes, bibliografía y registro universitario, sin inspección de muestras originales ni cotejo de audio. Contraste externo 26-11-2026: tres artículos de coloración UV, consultados resúmenes editoriales y registros PubMed; equipo parcialmente compartido. No reproducción integral, datación ni prueba de origen histórico; sin cotejo de audio. Contraste externo 26-11-2026: catálogos numismáticos, traducción del canon 82, estudio histórico y resumen de actas de Fanti. No auditado modelo probabilístico ni cotejado audio; semejanza no prueba copia o antigüedad.",
     "automaticCaptions": true,
     "captionTimeHintsAvailable": true
   },
@@ -1221,6 +1221,56 @@ window.IDEA_TELARANA_F67_REVIEW =
       "source": "https://doi.org/10.1364/ao.51.008567",
       "topic3d": "historia",
       "podcastNotes": []
+    },
+    {
+      "id": "f67-num-smith",
+      "name": "Sólido de Justiniano II (705–711), Smithsonian",
+      "kind": "Objeto",
+      "subtitle": "National Museum of American History · nmah_1251772",
+      "note": "Catálogo de una moneda de oro del segundo reinado con busto frontal de Cristo y cruz detrás de la cabeza. Acredita el tipo monetario, no la identidad del modelo iconográfico.",
+      "source": "https://americanhistory.si.edu/collections/object/nmah_1251772",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-cleveland",
+      "name": "Sólido de Justiniano II con busto de Cristo (705), Cleveland",
+      "kind": "Objeto",
+      "subtitle": "Cleveland Museum of Art · 2012.47.a",
+      "note": "Ejemplar catalogado en 705. Permite comparar el tipo de retrato del segundo reinado con el sólido de 692–695; la variación iconográfica no demuestra una relación causal con la Síndone.",
+      "source": "https://www.clevelandart.org/art/2012.47.a",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-trullo",
+      "name": "Concilio de Trullo: canon 82 (692)",
+      "kind": "Fuente",
+      "subtitle": "Texto conciliar · traducción inglesa",
+      "note": "Prescribe la representación humana de Cristo en lugar del cordero en las imágenes religiosas. No menciona la Síndone de Turín ni ordena específicamente un tipo monetario.",
+      "source": "https://www.newadvent.org/fathers/3814.htm",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-humphreys",
+      "name": "Humphreys (2013): The War of Images Revisited",
+      "kind": "Fuente",
+      "subtitle": "The Numismatic Chronicle 173, 229–244",
+      "note": "Analiza la reforma monetaria y el califato. Señala que el canon 82 no establece un nexo causal inequívoco con la acuñación; la proximidad temporal no demuestra causalidad.",
+      "source": "https://www.academia.edu/27642323/The_Numismatic_Chronicle_173_Offprint_The_War_of_Images_Revisited_Justinian_IIs_Coinage_Reform_and_the_Caliphate",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-fanti",
+      "name": "Fanti (2017): Numismatic dating of the Turin Shroud through the analysis of Byzantine coins",
+      "kind": "Fuente",
+      "subtitle": "Actas de congreso · Universidad de Padua",
+      "note": "El resumen defiende conocimiento de la Síndone desde 692 a partir de semejanzas faciales y una estimación probabilística. El repositorio no ofrece el texto completo. No se han auditado las frecuencias de rasgos, dependencias, selección de monedas ni el modelo nulo. No constituye una datación física.",
+      "source": "https://www.research.unipd.it/handle/11577/3271776",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -2397,6 +2447,105 @@ window.IDEA_TELARANA_F67_REVIEW =
       "type": "Límite de inferencia",
       "note": "La semejanza de coloración no identifica persona, antigüedad ni fuente histórica de radiación.",
       "source": "https://doi.org/10.1364/ao.51.008567",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-0",
+      "a": "f67-num-smith",
+      "b": "f67-justiniano-ii",
+      "type": "Acuñación durante el segundo reinado",
+      "note": "Catálogo del museo fecha el ejemplar entre 705 y 711.",
+      "source": "https://americanhistory.si.edu/collections/object/nmah_1251772",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-1",
+      "a": "f67-num-cleveland",
+      "b": "f67-justiniano-ii",
+      "type": "Acuñación catalogada en 705",
+      "note": "Registro del museo.",
+      "source": "https://www.clevelandart.org/art/2012.47.a",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-2",
+      "a": "f67-num-smith",
+      "b": "f67-moneda-justiniano",
+      "type": "Comparación de tipos monetarios",
+      "note": "Ejemplares de dos reinados; no prueba de un modelo común concreto.",
+      "source": "https://americanhistory.si.edu/collections/object/nmah_1251772",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-3",
+      "a": "f67-num-trullo",
+      "b": "f67-moneda-justiniano",
+      "type": "Contexto normativo contemporáneo",
+      "note": "Proximidad temporal, no mandato monetario explícito.",
+      "source": "https://www.newadvent.org/fathers/3814.htm",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-4",
+      "a": "f67-num-humphreys",
+      "b": "f67-num-trullo",
+      "type": "Crítica de causalidad histórica",
+      "note": "El autor distingue proximidad cronológica de causalidad.",
+      "source": "https://www.academia.edu/27642323/The_Numismatic_Chronicle_173_Offprint_The_War_of_Images_Revisited_Justinian_IIs_Coinage_Reform_and_the_Caliphate",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-5",
+      "a": "f67-num-humphreys",
+      "b": "f67-moneda-justiniano",
+      "type": "Contexto de reforma monetaria",
+      "note": "Interpretación histórica del cambio iconográfico.",
+      "source": "https://www.academia.edu/27642323/The_Numismatic_Chronicle_173_Offprint_The_War_of_Images_Revisited_Justinian_IIs_Coinage_Reform_and_the_Caliphate",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-6",
+      "a": "f67-num-fanti",
+      "b": "f67-moneda-justiniano",
+      "type": "Hipótesis de modelo iconográfico",
+      "note": "Semejanzas alegadas por el autor, no copia demostrada.",
+      "source": "https://www.research.unipd.it/handle/11577/3271776",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-7",
+      "a": "f67-num-fanti",
+      "b": "f42-sudario",
+      "type": "Hipótesis de antigüedad iconográfica",
+      "note": "La inferencia no constituye datación física ni identificación documental.",
+      "source": "https://www.research.unipd.it/handle/11577/3271776",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-num-20261126-8",
+      "a": "f67-num-fanti",
+      "b": "f67-clases-prueba",
+      "type": "Límite de inferencia estadística",
+      "note": "No se dispone del texto completo para auditar el modelo probabilístico; distinguir similitud, dependencia y datación.",
+      "source": "https://www.research.unipd.it/handle/11577/3271776",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
