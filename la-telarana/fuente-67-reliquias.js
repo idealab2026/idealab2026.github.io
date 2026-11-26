@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F67_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico.",
     "automaticCaptions": true,
     "captionTimeHintsAvailable": true
   },
@@ -931,6 +931,66 @@ window.IDEA_TELARANA_F67_REVIEW =
           "transcriptSearch": "la física y la química de la síndone no tiene explicación"
         }
       ]
+    },
+    {
+      "id": "f67-img-moraes",
+      "name": "Moraes (2025/2026): Image Formation on the Holy Shroud—A Digital 3D Approach",
+      "kind": "Fuente",
+      "subtitle": "Archaeometry 68(1), 84–93; publicado en línea 28-07-2025",
+      "note": "Compara simulaciones de contacto con cuerpo volumétrico y bajorrelieve. El segundo reproduce mejor los contornos en los escenarios simulados; no determina la química del original ni demuestra que se empleara tal matriz.",
+      "source": "https://doi.org/10.1111/arcm.70030",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-critica",
+      "name": "Casabianca, Marinelli y Piana (2026): Commentary on Moraes",
+      "kind": "Fuente",
+      "subtitle": "Archaeometry 68(4), 861–863",
+      "note": "Los autores objetan que la reconstrucción digital omite características esenciales y no sustenta la hipótesis del bajorrelieve. El comentario no genera ni analiza nuevos conjuntos de datos, según su declaración de disponibilidad.",
+      "source": "https://doi.org/10.1111/arcm.70109",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-custodia",
+      "name": "Comunicado del custodio pontificio de la Síndone (04-08-2025)",
+      "kind": "Fuente",
+      "subtitle": "Respuesta institucional",
+      "note": "La custodia sostiene que análisis fisicoquímicos anteriores contradicen varios procedimientos artísticos propuestos. Es una respuesta institucional, no un nuevo ensayo experimental.",
+      "source": "https://www.sindone.it/en/2025/comunicato-stampa-moraes",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-sturp82",
+      "name": "Schwalbe y Rogers (1982): Physics and Chemistry of the Shroud of Turin",
+      "kind": "Fuente",
+      "subtitle": "Analytica Chimica Acta 135, 3–49",
+      "note": "Síntesis de resultados de la investigación STURP de 1978; los autores consideran necesaria la datación por radiocarbono para evaluar hipótesis dependientes de la cronología. No constituye demostración de identidad individual.",
+      "source": "https://doi.org/10.1016/S0003-2670(01)85263-6",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-garlaschelli",
+      "name": "Garlaschelli (2010): Life-size Reproduction of the Shroud of Turin and its Image",
+      "kind": "Fuente",
+      "subtitle": "Journal of Imaging Science and Technology 54(4), 040301",
+      "note": "Ensayo de reproducción a escala real que aporta evidencia de viabilidad de determinados rasgos mediante procedimientos artísticos. Una reproducción parcial no identifica el mecanismo histórico original.",
+      "source": "https://doi.org/10.2352/J.ImagingSci.Technol.2010.54.4.040301",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-fanti",
+      "name": "Fanti y Heimburger (2011): Comments on Life-size Reproduction",
+      "kind": "Fuente",
+      "subtitle": "Journal of Imaging Science and Technology 55(2), 020102",
+      "note": "Carta crítica sobre la reproducción de Garlaschelli. Registrar como debate académico, no como una reproducción experimental independiente.",
+      "source": "https://doi.org/10.2352/J.ImagingSci.Technol.2011.55.2.020102",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1537,6 +1597,116 @@ window.IDEA_TELARANA_F67_REVIEW =
       "claimStatus": "revision_filologica",
       "source": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/testimonium-flavianum-in-syriac-and-arabic/B4DEE97CBF8CFE997C9C9CA6C4E583AC",
       "note": "Crítica editorial: declaraciones del episodio distintas de estudios externos, sin atribuir minutajes no cotejados.",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-0",
+      "a": "f67-img-moraes",
+      "b": "f42-sudario",
+      "type": "Simulación geométrica",
+      "note": "Compatibilidad de contornos en modelos comparados; no identificación de proceso histórico.",
+      "source": "https://doi.org/10.1111/arcm.70030",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-1",
+      "a": "f67-img-critica",
+      "b": "f67-img-moraes",
+      "type": "Crítica metodológica publicada",
+      "note": "Discute alcance y rasgos omitidos; no nuevos datos experimentales.",
+      "source": "https://doi.org/10.1111/arcm.70109",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-2",
+      "a": "f67-img-custodia",
+      "b": "f67-img-moraes",
+      "type": "Respuesta institucional",
+      "note": "Objeta la interpretación de origen artístico.",
+      "source": "https://www.sindone.it/en/2025/comunicato-stampa-moraes",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-3",
+      "a": "f67-img-sturp82",
+      "b": "f67-sturp-1978",
+      "type": "Síntesis de resultados",
+      "note": "Revisión del mismo examen de 1978, no una nueva campaña.",
+      "source": "https://doi.org/10.1016/S0003-2670(01)85263-6",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-4",
+      "a": "f67-img-garlaschelli",
+      "b": "f42-sudario",
+      "type": "Reproducción experimental",
+      "note": "Comparación de rasgos de réplica con el original.",
+      "source": "https://doi.org/10.2352/J.ImagingSci.Technol.2010.54.4.040301",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-5",
+      "a": "f67-img-fanti",
+      "b": "f67-img-garlaschelli",
+      "type": "Crítica publicada de reproducción",
+      "note": "Carta de discusión científica.",
+      "source": "https://doi.org/10.2352/J.ImagingSci.Technol.2011.55.2.020102",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-6",
+      "a": "f67-img-critica",
+      "b": "f67-img-garlaschelli",
+      "type": "Referencia bibliográfica",
+      "note": "La publicación cita explícitamente el trabajo de 2010.",
+      "source": "https://doi.org/10.1111/arcm.70109",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-7",
+      "a": "f67-img-critica",
+      "b": "f67-img-sturp82",
+      "type": "Referencia bibliográfica",
+      "note": "Cita la síntesis de 1982.",
+      "source": "https://doi.org/10.1111/arcm.70109",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-8",
+      "a": "f67-img-critica",
+      "b": "f67-img-fanti",
+      "type": "Referencia bibliográfica",
+      "note": "Cita la carta de 2011.",
+      "source": "https://doi.org/10.1111/arcm.70109",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-img-20261126-9",
+      "a": "f67-img-moraes",
+      "b": "f67-clases-prueba",
+      "type": "Límite de inferencia",
+      "note": "La geometría no determina edad del tejido ni identidad de la persona.",
+      "source": "https://doi.org/10.1111/arcm.70030",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
       "podcastNotes": []
     }
   ]
