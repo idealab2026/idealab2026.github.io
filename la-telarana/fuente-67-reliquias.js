@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F67_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color.",
     "automaticCaptions": true,
     "captionTimeHintsAvailable": true
   },
@@ -991,6 +991,66 @@ window.IDEA_TELARANA_F67_REVIEW =
       "source": "https://doi.org/10.2352/J.ImagingSci.Technol.2011.55.2.020102",
       "topic3d": "historia",
       "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-heller80",
+      "name": "Heller y Adler (1980): Blood on the Shroud of Turin",
+      "kind": "Fuente",
+      "subtitle": "Applied Optics 19(16), 2742–2744",
+      "note": "Los autores informaron detección de sangre mediante pruebas espectroscópicas y conversión de hemo a porfirina. El resultado comunicado se refiere a muestras analizadas, no identifica a una persona ni determina edad.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20234501/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-heller81",
+      "name": "Heller y Adler (1981): A Chemical Investigation of the Shroud of Turin",
+      "kind": "Fuente",
+      "subtitle": "Canadian Society of Forensic Science Journal · DOI 10.1080/00085030.1981.10756882",
+      "note": "Los autores informaron derivados del hemo, pigmentos biliares y proteínas; interpretaron la distribución del hierro como compatible con procesos naturales. Es una ampliación de los mismos investigadores, no corroboración de un equipo independiente.",
+      "source": "https://doi.org/10.1080/00085030.1981.10756882",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-mccrone80",
+      "name": "McCrone y Skirius (1980): Light Microscopical Study of the Turin Shroud I",
+      "kind": "Fuente",
+      "subtitle": "The Microscope 28, 105–113",
+      "note": "Los autores identificaron partículas de óxido de hierro en cintas de muestreo y las interpretaron como pigmento artístico. Distinguir detección de partículas de explicación de toda la imagen.",
+      "source": "https://mccroneinstitute.org/28-3-4-light-microscopical-study-of-the-turin-shroud-1/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-mccrone90",
+      "name": "McCrone (1990): The Shroud of Turin: Blood or Artist’s Pigment?",
+      "kind": "Fuente",
+      "subtitle": "Accounts of Chemical Research · DOI 10.1021/ar00171a004",
+      "note": "Presenta la interpretación artística de McCrone; sus análisis de pigmentos se documentan también en el catálogo del Smithsonian. El debate no queda resuelto por contar artículos del mismo autor.",
+      "source": "https://doi.org/10.1021/ar00171a004",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-color18",
+      "name": "Investigating the color of the blood stains on archaeological cloths (2018)",
+      "kind": "Fuente",
+      "subtitle": "Applied Optics 57(23), 6626 · DOI 10.1364/AO.57.006626",
+      "note": "Evalúa carboxihemoglobina y exposición UV de sangre rica en bilirrubina; las tablas recogen distintos cambios de color en muestras experimentales tras cuatro años. No equivale a datar la reliquia ni reproducir siglos de envejecimiento.",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-57-23-6626",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-heger24",
+      "name": "Heger et al. (2024): Further experiments and remarks regarding the possible formation of blood stains on the Turin Shroud",
+      "kind": "Fuente",
+      "subtitle": "International Journal of Legal Medicine 138, 1573–1581",
+      "note": "Obtiene patrones similares a determinadas marcas de muñeca bajo condiciones experimentales. El equipo continúa el trabajo de König et al.; las semejanzas no establecen una secuencia histórica única ni identidad.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164752/",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1705,6 +1765,127 @@ window.IDEA_TELARANA_F67_REVIEW =
       "type": "Límite de inferencia",
       "note": "La geometría no determina edad del tejido ni identidad de la persona.",
       "source": "https://doi.org/10.1111/arcm.70030",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-0",
+      "a": "f67-sang-heller80",
+      "b": "f67-patrones",
+      "type": "Análisis químico de las manchas",
+      "note": "Identificación de sangre comunicada por los autores; no identificación personal.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20234501/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-1",
+      "a": "f67-sang-heller81",
+      "b": "f67-sang-heller80",
+      "type": "Continuidad de investigación",
+      "note": "Mismos autores, no replicación independiente.",
+      "source": "https://doi.org/10.1080/00085030.1981.10756882",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-2",
+      "a": "f67-sang-heller81",
+      "b": "f67-patrones",
+      "type": "Interpretación química",
+      "note": "Resultados atribuidos a los investigadores.",
+      "source": "https://doi.org/10.1080/00085030.1981.10756882",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-3",
+      "a": "f67-sang-mccrone80",
+      "b": "f67-patrones",
+      "type": "Identificación de pigmento",
+      "note": "Interpretación de partículas como pigmento artístico.",
+      "source": "https://mccroneinstitute.org/28-3-4-light-microscopical-study-of-the-turin-shroud-1/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-4",
+      "a": "f67-sang-mccrone90",
+      "b": "f67-sang-mccrone80",
+      "type": "Continuidad de investigación",
+      "note": "Mismo investigador principal; no replicación independiente.",
+      "source": "https://doi.org/10.1021/ar00171a004",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-5",
+      "a": "f67-sang-color18",
+      "b": "f67-sang-mccrone80",
+      "type": "Discusión bibliográfica",
+      "note": "Tabla 1 incluye la propuesta de pigmentos de McCrone.",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-57-23-6626",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-6",
+      "a": "f67-sang-color18",
+      "b": "f67-patrones",
+      "type": "Contraste experimental de color",
+      "note": "Cambios en muestras de ensayo no establecen edad del original.",
+      "source": "https://opg.optica.org/ao/abstract.cfm?uri=ao-57-23-6626",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-7",
+      "a": "f67-sang-heger24",
+      "b": "f67-forense2024",
+      "type": "Continuación de estudio forense",
+      "note": "El artículo identifica explícitamente el trabajo previo de König et al.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164752/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-8",
+      "a": "f67-sang-heger24",
+      "b": "f67-forense2019",
+      "type": "Contraste experimental previo",
+      "note": "El texto cita y discute a Borrini y Garlaschelli.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164752/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-9",
+      "a": "f67-sang-heger24",
+      "b": "f67-patrones",
+      "type": "Simulación de patrones",
+      "note": "Compatibilidad de patrones en experimentos, no identificación histórica.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164752/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-sang-20261126-10",
+      "a": "f67-sang-heller80",
+      "b": "f67-clases-prueba",
+      "type": "Límite de inferencia",
+      "note": "Identificación química no equivale a prueba de edad o identidad.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20234501/",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
