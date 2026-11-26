@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F67_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color. Contraste externo Sudario de Oviedo 26-11-2026: resúmenes históricos, reproducciones HTML de dos comunicaciones de congreso y resumen indexado 2026 con acceso editorial 403. No se auditan datos originales de datación ni se demuestra identidad común; sin cotejo de audio.",
     "automaticCaptions": true,
     "captionTimeHintsAvailable": true
   },
@@ -1051,6 +1051,56 @@ window.IDEA_TELARANA_F67_REVIEW =
       "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164752/",
       "topic3d": "historia",
       "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-nicolotti",
+      "name": "Nicolotti (2017): El Sudario de Oviedo: historia antigua y moderna",
+      "kind": "Fuente",
+      "subtitle": "Territorio, Sociedad y Poder 11, 89–111",
+      "note": "El resumen sitúa la fabricación del tejido aproximadamente en el siglo VIII y las primeras referencias documentales en el último cuarto del XI; es la conclusión histórica del autor, no una nueva datación realizada en esta investigación. No se consultaron los informes originales de radiocarbono.",
+      "source": "https://reunido.uniovi.es/index.php/TSP/article/view/11790",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-yarza",
+      "name": "Yarza Urquiola (2020): Algunas observaciones sobre las reliquias del Arca Santa de Oviedo y nueva edición del Acta de Apertura de 1075",
+      "kind": "Fuente",
+      "subtitle": "Territorio, Sociedad y Poder 15, 67–85",
+      "note": "El resumen anuncia una edición crítica del acta de 1075 y compara testimonios divergentes de finales del XI y principios del XII. No acredita por sí solo un itinerario desde Jerusalén ni la identidad del tejido con el sudario evangélico.",
+      "source": "https://reunido.uniovi.es/index.php/TSP/article/view/14860",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-sanchez",
+      "name": "Sánchez Hermosilla (2015): Commonalities between the Shroud of Turin and the Sudarium of Oviedo",
+      "kind": "Fuente",
+      "subtitle": "SHS Web of Conferences 15, 00007",
+      "note": "Comunicación de congreso de EDICES. Propone compatibilidad de manchas y dimensiones; el propio autor reconoce que cabezas distintas pueden producir patrones similares. La comparación no constituye identificación individual ni validación ciega.",
+      "source": "https://doi.org/10.1051/shsconf/20151500007",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-barta",
+      "name": "Barta et al. (2015): New coincidence between Shroud of Turin and Sudarium of Oviedo",
+      "kind": "Fuente",
+      "subtitle": "SHS Web of Conferences 15, 00008",
+      "note": "Comunicación de congreso: análisis XRF de 57 puntos del Sudario; informa mayor presencia de calcio en zonas manchadas y compara depósitos con los de la Síndone. La coincidencia elemental no demuestra procedencia geográfica única ni identidad individual. Equipo vinculado a EDICES, con Sánchez como coautor.",
+      "source": "https://doi.org/10.1051/shsconf/20151500008",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-peinado",
+      "name": "Peinado Rocamora et al. (2026): Morphometric and experimental evidence for a cranial bandage hypothesis in the Sudarium of Oviedo",
+      "kind": "Fuente",
+      "subtitle": "Journal of Cultural Heritage · investigación experimental",
+      "note": "El resumen indexado describe la evaluación de marcas lineales mediante una hipótesis de vendaje craneal durante la manipulación post mortem. El acceso directo al artículo devolvió 403; no se han evaluado datos, resultados cuantitativos ni controles. No se atribuye al estudio una demostración de identidad o antigüedad.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S1296207426001676",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1886,6 +1936,105 @@ window.IDEA_TELARANA_F67_REVIEW =
       "type": "Límite de inferencia",
       "note": "Identificación química no equivale a prueba de edad o identidad.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/20234501/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-0",
+      "a": "f67-ov-nicolotti",
+      "b": "f67-oviedo",
+      "type": "Evaluación histórica y cronológica",
+      "note": "Conclusiones del autor sobre cronología medieval; sin auditoría de datos originales de carbono 14.",
+      "source": "https://reunido.uniovi.es/index.php/TSP/article/view/11790",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-1",
+      "a": "f67-ov-yarza",
+      "b": "f67-oviedo",
+      "type": "Contexto documental medieval",
+      "note": "Edición crítica del acta y comparación de inventarios; no establece procedencia anterior.",
+      "source": "https://reunido.uniovi.es/index.php/TSP/article/view/14860",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-2",
+      "a": "f67-ov-sanchez",
+      "b": "f67-oviedo",
+      "type": "Comparación morfológica",
+      "note": "El investigador defiende compatibilidad de patrones.",
+      "source": "https://doi.org/10.1051/shsconf/20151500007",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-3",
+      "a": "f67-ov-sanchez",
+      "b": "f42-sudario",
+      "type": "Hipótesis de identidad común",
+      "note": "Compatibilidad no equivale a identificación.",
+      "source": "https://doi.org/10.1051/shsconf/20151500007",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-4",
+      "a": "f67-ov-barta",
+      "b": "f67-oviedo",
+      "type": "Análisis elemental XRF",
+      "note": "Resultados comunicados por el equipo de investigación.",
+      "source": "https://doi.org/10.1051/shsconf/20151500008",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-5",
+      "a": "f67-ov-barta",
+      "b": "f42-sudario",
+      "type": "Comparación de depósitos minerales",
+      "note": "Similitud elemental sin atribución geográfica única.",
+      "source": "https://doi.org/10.1051/shsconf/20151500008",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-6",
+      "a": "f67-ov-barta",
+      "b": "f67-ov-sanchez",
+      "type": "Solapamiento de equipo investigador",
+      "note": "Ambas comunicaciones de 2015 tienen participación de Alfonso Sánchez Hermosilla y EDICES; no constituyen equipos plenamente independientes.",
+      "source": "https://doi.org/10.1051/shsconf/20151500008",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-7",
+      "a": "f67-ov-peinado",
+      "b": "f67-oviedo",
+      "type": "Evaluación de hipótesis de vendaje",
+      "note": "Solo alcance del resumen indexado; resultados completos no consultados.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S1296207426001676",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-ov-20261126-8",
+      "a": "f67-ov-sanchez",
+      "b": "f67-clases-prueba",
+      "type": "Límite de inferencia forense",
+      "note": "Semejanza de manchas no acredita identidad ni edad del tejido.",
+      "source": "https://doi.org/10.1051/shsconf/20151500007",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
