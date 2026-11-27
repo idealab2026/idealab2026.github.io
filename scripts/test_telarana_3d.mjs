@@ -184,3 +184,48 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
 }
 for(const mode of ["orb","cloud","galaxy","orbs","web","brain","2d"])assert(page.includes('<option value="'+mode+'">'));
 console.log('OK: seis geometrías 3D, vista 2D, etiquetas, filtros y zoom en seis resoluciones');
+
+// Synthetic real-scale population from the screenshot. Test painted boundaries.
+const dense=[];
+for(const [topic,total] of Object.entries({historia:985,global:389,oriente:170,inteligencia:129,iglesia:116,espana:84,finanzas:60,tecnologia:25})){
+ for(let i=0;i<total;i++)dense.push({id:"dense-"+topic+i,name:topic+" "+i,topic3d:topic,kind:"Persona",note:""});
+}
+assert.equal(dense.length,1958);
+const denseEdges=dense.slice(1).map((n,i)=>({id:"de"+i,a:dense[i].id,b:n.id,confidence:"documentado",type:"Test"}));
+function overlapRate(points){
+ const grid=new Map(),cell=28;let overlap=new Set();
+ for(let i=0;i<points.length;i++){
+  const p=points[i],x=Math.floor(p.x/cell),y=Math.floor(p.y/cell);
+  for(let dx=-1;dx<=1;dx++)for(let dy=-1;dy<=1;dy++)
+   for(const j of grid.get((x+dx)+","+(y+dy))||[]){
+    const q=points[j];if(Math.hypot(p.x-q.x,p.y-q.y)+.08<p.r+q.r){overlap.add(i);overlap.add(j)}
+   }
+  const k=x+","+y;if(!grid.has(k))grid.set(k,[]);grid.get(k).push(i);
+ }
+ return overlap.size/points.length;
+}
+for(const [width,height] of [[1280,720],[390,844]]){
+ let painted=[],lastArc=null;const events={};
+ const ctx=new Proxy({},{
+  get(target,key){
+   if(key==="createRadialGradient")return()=>({addColorStop(){}});
+   if(key==="beginPath")return()=>{lastArc=null};
+   if(key==="arc")return(x,y,r)=>{lastArc={x,y,r}};
+   if(key==="stroke")return()=>{if(lastArc&&tint.has(target.strokeStyle))painted.push({...lastArc,r:lastArc.r+(Number(target.lineWidth)||0)/2});lastArc=null};
+   if(key==="setTransform")return()=>{painted=[]};
+   if(key==="measureText")return s=>({width:s.length*8});
+   return()=>{};
+  },set(target,key,value){target[key]=value;return true}
+ });
+ const canvas={getContext:()=>ctx,getBoundingClientRect:()=>({width,height,left:0,top:0}),addEventListener:(name,fn)=>{events[name]=fn},closest:()=>null,setPointerCapture(){},style:{}};
+ const graph=Graph.create({canvas,tooltip:{hidden:true,style:{},textContent:""},getPhoto:()=>null});
+ graph.setMotion(false);graph.setData(dense,denseEdges);graph.fit();flush(time+60);
+ for(const layout of ["orb","cloud","galaxy","orbs","web","brain"]){
+  graph.setLayout(layout);graph.fit();flush(time+60);
+  assert.equal(painted.length,dense.length,"all dense nodes remain visible");
+  const rate=overlapRate(painted),median=painted.map(p=>p.r).sort((a,b)=>a-b)[Math.floor(painted.length/2)];
+  console.log("density "+layout+" "+width+"x"+height+": "+(100*rate).toFixed(2)+"% overlap; median radius "+median.toFixed(2));
+  assert(rate<.04,"overlapping circles must stay below 4%: "+layout+" "+width+" "+rate);
+  assert(median>.45,"markers should not disappear: "+layout+" "+width+" "+median);
+ }
+}

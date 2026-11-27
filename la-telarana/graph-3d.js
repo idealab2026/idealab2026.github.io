@@ -94,7 +94,7 @@ function make(options){
    orbCentres.set(bySize[0],{x:0,y:0,z:-110});
    bySize.slice(1).forEach((id,j)=>{
     const a=-PI/2+j*2*PI/Math.max(1,bySize.length-1);
-    orbCentres.set(id,{x:1100*Math.cos(a),y:790*Math.sin(a),z:135*Math.sin(j*2.4)});
+    orbCentres.set(id,{x:(1100+clip((Math.sqrt(counts.get(bySize[0]))-10)*10,0,250))*Math.cos(a),y:(790+clip((Math.sqrt(counts.get(bySize[0]))-10)*10,0,250))*Math.sin(a),z:135*Math.sin(j*2.4)});
    });
   }
   // Schematic hemispheres: thematic zones only; no anatomical meaning.
@@ -107,11 +107,11 @@ function make(options){
    const subset=nodes.filter(n=>group(n)===name)
     .sort((a,b)=>(degree.get(b.id)||0)-(degree.get(a.id)||0)||a.name.localeCompare(b.name,"es"));
    const n=normals.get(name),{u,v}=basis(n);
-   const cap=clip(.32+.035*Math.sqrt(subset.length),.35,.63);
+   const cap=clip(.32+.035*Math.sqrt(subset.length),.35,.63)+clip((Math.sqrt(subset.length)-10)*.012,0,.26);
    if(["orbs","web","brain"].includes(representation)){
     if(!subset.length)continue;
     const i=topics.findIndex(t=>t[0]===name),theta=-PI/2+i*2*PI/topics.length;
-    const radius=clip(110+7.5*Math.sqrt(subset.length),145,355);
+    const radius=clip(110+7.5*Math.sqrt(subset.length),145,355)+clip((Math.sqrt(subset.length)-10)*6,0,180);
     const zone=brainZones[i];
     const centre=representation==="orbs"?orbCentres.get(name):representation==="brain"?{x:zone[0],y:zone[1],z:zone[2]}:{x:690*Math.cos(theta),y:690*Math.sin(theta),z:0};
     caps.set(name,{centre,count:subset.length,radius});
@@ -125,7 +125,7 @@ function make(options){
      }else if(representation==="web"){
       // Eight thematic radial sectors with several curved tiers. Highly connected
       // nodes are nearer the hub; all lines between entities remain actual edges.
-      const rr=185+860*Math.sqrt(f),angle=theta+.31*Math.sin(a)+.045*Math.sin(rr*.012);
+      const rr=185+(860+clip((Math.sqrt(subset.length)-10)*10,0,230))*Math.sqrt(f),angle=theta+.31*Math.sin(a)+.045*Math.sin(rr*.012);
       const zz=(80+125*f)*Math.sin(a*.5+theta)+55*Math.cos(rr*.01+theta);
       p={x:rr*Math.cos(angle),y:rr*Math.sin(angle),z:zz};
      }else{
@@ -136,7 +136,7 @@ function make(options){
       x=Math.sign(centre.x)*Math.max(65,Math.abs(x));
       // Keep the outside contour rounded rather than a rectangular block.
       const maxX=95+760*Math.sqrt(Math.max(.10,1-(y/760)**2));
-      x=clip(x,-maxX,maxX);
+      x=clip(x,-maxX-radius*.2,maxX+radius*.2);
       p={x,y,z:centre.z+rz*d*latitude+28*Math.sin(y*.025)};
      }
      pos.set(node.id,p);extent=Math.max(extent,Math.hypot(p.x,p.y,p.z));
@@ -148,7 +148,7 @@ function make(options){
     const i=topics.findIndex(t=>t[0]===name),theta=i*2*PI/topics.length;
     const r=630+260*(i%2);
     const centre=representation==="cloud"?(centres.get(name)||{x:0,y:0,z:0}):{x:r*Math.cos(theta+.23*(i%2)),y:r*Math.sin(theta+.23*(i%2)),z:35*Math.sin(theta)};
-    const spread=clip(155+10*Math.sqrt(subset.length),180,430);
+    const spread=clip(155+10*Math.sqrt(subset.length),180,430)+clip((Math.sqrt(subset.length)-10)*7,0,200);
     caps.set(name,{centre,count:subset.length});
     subset.forEach((node,j)=>{
      const f=(j+.5)/Math.max(1,subset.length),a=j*GOLDEN_ANGLE;
@@ -174,6 +174,44 @@ function make(options){
     pos.set(node.id,surfacePoint(n,u,v,theta,angle,radius));
    });
   }
+  if(nodes.length>=500)relaxWorld();
+ }
+ // Spatial hash: local neighbours only, not all N² pairs.
+ function nearbyPairs(items,cell,dimensions,visit){
+  const grid=new Map(),key=(x,y,z)=>x+","+y+","+z;
+  const coords=p=>[Math.floor(p.x/cell),Math.floor(p.y/cell),dimensions===3?Math.floor(p.z/cell):0];
+  const cells=items.map(a=>coords(a.p));
+  for(let i=0;i<items.length;i++){
+   const k=key(...cells[i]);if(!grid.has(k))grid.set(k,[]);grid.get(k).push(i);
+  }
+  for(let i=0;i<items.length;i++){
+   const [x,y,z]=cells[i],zRange=dimensions===3?1:0;
+   for(let dx=-1;dx<=1;dx++)for(let dy=-1;dy<=1;dy++)for(let dz=-zRange;dz<=zRange;dz++)
+    for(const j of grid.get(key(x+dx,y+dy,z+dz))||[])if(j>i)visit(i,j);
+  }
+ }
+ function relaxWorld(){
+  const items=nodes.map(n=>({p:pos.get(n.id),topic:group(n)})).filter(a=>a.p);
+  for(let iter=0;iter<4;iter++){
+   const delta=items.map(()=>({x:0,y:0,z:0}));
+   nearbyPairs(items,32,3,(i,j)=>{
+    const a=items[i].p,b=items[j].p;let x=b.x-a.x,y=b.y-a.y,z=b.z-a.z,d=Math.hypot(x,y,z);
+    if(d>=32)return;
+    if(d<.001){x=Math.cos(i*GOLDEN_ANGLE);y=Math.sin(i*GOLDEN_ANGLE);z=.3;d=Math.hypot(x,y,z)}
+    const k=(32-d)*.27/d;
+    delta[i].x-=x*k;delta[i].y-=y*k;delta[i].z-=z*k;
+    delta[j].x+=x*k;delta[j].y+=y*k;delta[j].z+=z*k;
+   });
+   items.forEach((a,i)=>{
+    const p=a.p,d=delta[i],cap=caps.get(a.topic);
+    const c=representation==="orbs"?cap.centre:representation==="orb"?{x:0,y:0,z:0}:null;
+    const r=c?Math.hypot(p.x-c.x,p.y-c.y,p.z-c.z):0;
+    for(const k of ["x","y","z"])p[k]+=clip(d[k],-9,9);
+    if(c){const u=unit({x:p.x-c.x,y:p.y-c.y,z:p.z-c.z});for(const k of ["x","y","z"])p[k]=c[k]+u[k]*r}
+    if(representation==="brain")p.x=Math.sign(cap.centre.x)*Math.max(58,Math.abs(p.x));
+    if(representation!=="orb")extent=Math.max(extent,Math.hypot(p.x,p.y,p.z));
+   });
+  }
  }
  function proj(v){
   const x=v.x*Math.cos(yaw)-v.z*Math.sin(yaw),z=v.x*Math.sin(yaw)+v.z*Math.cos(yaw);
@@ -192,6 +230,46 @@ function make(options){
   const multiplier=density+(1-density)*detail;
   const size=(emphasized?30:22)*p.scale*multiplier;
   return clip(size,1.5,emphasized?116:96);
+ }
+ // Bounded screen-space relaxation for dense maps. Limit the marker radius
+ // by nearest-neighbour distance, including the stroke, to avoid overpainting.
+ function separateProjection(pr,visible){
+  if(visible.length<500)return;
+  const items=visible.map(n=>({n,p:pr.get(n.id)})).filter(({p})=>p.x>=-110&&p.x<=w+110&&p.y>=-110&&p.y<=h+110);
+  for(const a of items){
+   a.ox=a.p.x;a.oy=a.p.y;
+   const count=caps.get(group(a.n))?.count||1;
+   a.want=visualRadius(a.p)*clip(1.05-.13*Math.log10(Math.max(1,count/70)),.72,1);
+  }
+  const maxShift=clip(10+zoom*10,10,26);
+  for(let iter=0;iter<6;iter++){
+   const delta=items.map(()=>({x:0,y:0}));
+   nearbyPairs(items,14,2,(i,j)=>{
+    const a=items[i],b=items[j];let x=b.p.x-a.p.x,y=b.p.y-a.p.y,d=Math.hypot(x,y);
+    const target=clip(a.want+b.want+2,5.5,13);
+    if(d>=target)return;
+    if(d<.001){x=Math.cos(i*GOLDEN_ANGLE);y=Math.sin(i*GOLDEN_ANGLE);d=1}
+    const k=(target-d)*.32/d;
+    delta[i].x-=x*k;delta[i].y-=y*k;delta[j].x+=x*k;delta[j].y+=y*k;
+   });
+   items.forEach((a,i)=>{
+    const p=a.p,d=delta[i];p.x+=clip(d.x,-5,5);p.y+=clip(d.y,-5,5);
+    const x=p.x-a.ox,y=p.y-a.oy,len=Math.hypot(x,y);
+    if(len>maxShift){p.x=a.ox+x*maxShift/len;p.y=a.oy+y*maxShift/len}
+   });
+  }
+  let largest=0;
+  for(const a of items){a.outer=a.want+Math.min(1.5,a.want*.35);largest=Math.max(largest,a.outer)}
+  nearbyPairs(items,Math.max(8,largest*2.3+2),2,(i,j)=>{
+   const a=items[i],b=items[j],d=Math.hypot(a.p.x-b.p.x,a.p.y-b.p.y);
+   // Painted radius <= 1.14 times the path radius; leave a visible gap.
+   const max=Math.max(.035,(d-.55)/2.30);
+   a.outer=Math.min(a.outer,max);b.outer=Math.min(b.outer,max);
+  });
+  for(const a of items){
+   a.p.outerRadius=a.outer;
+   a.p.drawRadius=Math.max(.025,a.outer-Math.min(1.2,a.outer*.27));
+  }
  }
  function drawOrb(){
   const cx=w/2+panX,cy=h/2+panY,rr=ORB_RADIUS*Math.min(w/1450,h/950)*zoom;
@@ -338,7 +416,7 @@ function make(options){
  }
  function drawLabels(labels,pr){
   // Spatial occupancy grid: label placement is cheap even with thousands of entities.
-  const cell=24,grid=new Map(),points=Array.from(pr.values()).map(p=>({...p,r:visualRadius(p)+5}));
+  const cell=24,grid=new Map(),points=Array.from(pr.values()).map(p=>({...p,r:(p.outerRadius??visualRadius(p))+5}));
   for(const p of points){
    if(p.x<-p.r||p.x>w+p.r||p.y<-p.r||p.y>h+p.r)continue;
    for(let x=Math.floor((p.x-p.r)/cell);x<=Math.floor((p.x+p.r)/cell);x++)
@@ -371,7 +449,7 @@ function make(options){
    let dx=anchor.x-middle.x,dy=anchor.y-middle.y,len=Math.hypot(dx,dy);
    if(len<10){const angle=topics.findIndex(row=>row[0]===t.id)*GOLDEN_ANGLE;dx=Math.cos(angle);dy=Math.sin(angle);len=1}
    const vx=dx/len,vy=dy/len;
-   const support=groupPoints.reduce((best,p)=>Math.max(best,(p.x-anchor.x)*vx+(p.y-anchor.y)*vy+visualRadius(p)),0);
+   const support=groupPoints.reduce((best,p)=>Math.max(best,(p.x-anchor.x)*vx+(p.y-anchor.y)*vy+(p.outerRadius??visualRadius(p))),0);
    const desired={x:anchor.x+vx*(support+38+bw*.38),y:anchor.y+vy*(support+38+bh*.4)};
    const candidates=[];
    function add(cx,cy){
@@ -424,9 +502,10 @@ function make(options){
   const matched=queryKey?(names.length?names:nodes.filter(n=>normalize((n.subtitle||"")+" "+(n.note||"")).includes(queryKey))):nodes;
   const seeds=new Set(matched.map(n=>n.id)),displayed=new Set(seeds);
   if(queryKey)edges.forEach(e=>{if(seeds.has(e.a)||seeds.has(e.b)){displayed.add(e.a);displayed.add(e.b)}});
-  const visible=queryKey?nodes.filter(n=>displayed.has(n.id)):nodes;
+  const visible=queryKey?nodes.filter(n=>displayed.has(n.id)):nodes.slice();
   drawBackdrop(visible);
   const pr=new Map(visible.map(n=>[n.id,proj(pos.get(n.id)||{x:0,y:0,z:0})]));
+  separateProjection(pr,visible);
   const labels=drawRegions(visible,pr);
   const focus=hover||(selection?.kind==="node"?selection.id:null);
   const selectedEdge=selection?.kind==="edge"?edges.find(e=>e.id===selection.id):null;
@@ -462,19 +541,20 @@ function make(options){
   });
   visible.sort((a,b)=>pr.get(b.id).depth-pr.get(a.id).depth).forEach(n=>{
    const p=pr.get(n.id),selected=selection?.kind==="node"&&selection.id===n.id,isHover=hover===n.id,isEndpoint=activeEndpoints.has(n.id),tint=topics.find(t=>t[0]===group(n))[2],onTheme=theme==="todos"||group(n)===theme;
-   const rad=visualRadius(p,selected||isHover||isEndpoint);
+   const rad=p.drawRadius??visualRadius(p,selected||isHover||isEndpoint);
    const density=clip(Math.min(w/1600,h/900),.36,1);
    const detail=clip((p.scale-.16)/1.30,0,1);
    const ringDensity=density+(1-density)*detail;
    const visibleDepth=clip(.70-p.depth/(ORB_RADIUS*2.9),.27,1);
    ctx.globalAlpha=(isEndpoint?1:(onTheme?focus&&mode==="focus"&&n.id!==focus?.58:1:.20))*visibleDepth;
-   ctx.beginPath();ctx.arc(p.x,p.y,rad+Math.max(1,2*ringDensity),0,2*PI);
+   const outer=p.outerRadius??rad+Math.max(1,2*ringDensity);
+   ctx.beginPath();ctx.arc(p.x,p.y,outer,0,2*PI);
    ctx.fillStyle="#1a2b39";ctx.fill();
-   ctx.lineWidth=(selected||isEndpoint?3.4:2)*ringDensity;
+   ctx.lineWidth=p.outerRadius!==undefined?Math.min((selected||isEndpoint?2:1.2)*ringDensity,outer*.28):(selected||isEndpoint?3.4:2)*ringDensity;
    ctx.strokeStyle=isEndpoint?"#fff2cb":tint;ctx.stroke();
    if(rad<5){
     // En la vista panorámica los avatares y letras diminutas se vuelven ilegibles.
-    ctx.beginPath();ctx.arc(p.x,p.y,Math.max(1,rad*.72),0,2*PI);
+    ctx.beginPath();ctx.arc(p.x,p.y,p.outerRadius!==undefined?Math.max(.02,rad*.72):Math.max(1,rad*.72),0,2*PI);
     ctx.fillStyle=tint;ctx.fill();
    }else{
    const photo=options.getPhoto?.(n);
@@ -491,7 +571,7 @@ function make(options){
     ctx.strokeStyle=color(tint,.8);ctx.lineWidth=1;ctx.strokeRect(p.x-lw/2,p.y+rad+6,lw,22);
     ctx.fillStyle="#f8faff";ctx.fillText(name,p.x,p.y+rad+21);
    }
-   ctx.globalAlpha=1;hits.push({id:n.id,x:p.x,y:p.y,r:Math.max(12,rad+6)});
+   ctx.globalAlpha=1;hits.push({id:n.id,x:p.x,y:p.y,r:p.outerRadius!==undefined?Math.max(5,outer+2):Math.max(12,rad+6)});
   });
   drawLabels(labels,pr);
   // Las etiquetas de los temas se muestran en las cabeceras de sus regiones.
@@ -556,7 +636,9 @@ function make(options){
   // distancia real al segmento, no por el orden de dibujo.
   // Labels are drawn last and therefore take precedence in their own rectangles.
   for(let i=bandHits.length-1;i>=0;i--){const b=bandHits[i];if(p.x>=b.x&&p.x<=b.x+b.w&&p.y>=b.y&&p.y<=b.y+b.h)return{kind:"theme",id:b.id}}
-  for(let i=hits.length-1;i>=0;i--){const n=hits[i];if(Math.hypot(p.x-n.x,p.y-n.y)<=n.r)return{kind:"node",id:n.id}}
+  let nearestNode=null,nodeDistance=Infinity;
+  for(let i=hits.length-1;i>=0;i--){const n=hits[i],d=Math.hypot(p.x-n.x,p.y-n.y);if(d<=n.r&&d<nodeDistance){nearestNode=n;nodeDistance=d}}
+  if(nearestNode)return{kind:"node",id:nearestNode.id};
   let nearest=null,nearestDistance=14;
   edgeHits.forEach(e=>{
    let previous=e.a;
