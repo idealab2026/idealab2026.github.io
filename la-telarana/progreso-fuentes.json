@@ -1735,12 +1735,12 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 45,
-      "sourceRelationsDocumented": 52,
+      "sourceNodesDocumented": 59,
+      "sourceRelationsDocumented": 67,
       "personsProfiled": 1,
-      "documentaryChecks": 23,
+      "documentaryChecks": 28,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas. Contraste externo de Nerón y Domus Aurea, seis nodos y ocho relaciones. Sin atribuciones nuevas al audio. Primera auditoría de lectura y extracción con hash coincidente: tramo 7488–9610. Tres notas originales nuevas, sin minuto ni audio. Tramo 2 leído y extraído con hash coincidente; distinción entre leyenda, texto literario y evidencia material. Tramo 3 revisado con SHA-256 coincidente; distinción entre arqueología, tradición y discrepancias del ASR.",
+      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas. Contraste externo de Nerón y Domus Aurea, seis nodos y ocho relaciones. Sin atribuciones nuevas al audio. Primera auditoría de lectura y extracción con hash coincidente: tramo 7488–9610. Tres notas originales nuevas, sin minuto ni audio. Tramo 2 leído y extraído con hash coincidente; distinción entre leyenda, texto literario y evidencia material. Tramo 3 revisado con SHA-256 coincidente; distinción entre arqueología, tradición y discrepancias del ASR. Tramo 4 con SHA-256 coincidente; tradición de monarquía y República, discrepancias textuales pendientes de audio.",
       "lastUpdated": "2026-11-27"
     },
     {
@@ -6917,14 +6917,14 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 45,
-            "relations": 52,
+            "entities": 59,
+            "relations": 67,
             "biographies": 1,
-            "statements": 28,
-            "independentChecks": 23,
+            "statements": 38,
+            "independentChecks": 28,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar audio y hablantes; continuar revisión de la conversación y contrastar anécdotas y detalles sociales con fuentes históricas. Contraste externo de Tácito, Suetonio y arqueología de las residencias imperiales incorporado 27-11-2026; no cotejo del audio. Continuar revisión por tramos del TXT; tramo 7488–9610 leído y extraído, 0,9 % de cobertura de texto registrada. No equivale a verificar todas sus afirmaciones. Revisado tramo 9610–19704; continuar en 19704. Contrastes literarios y arqueológicos, sin verificación audiovisual. Tramo 19704–28932 leído y extraído; continuar en 28932. Dos discrepancias textuales pendientes de cotejo audiovisual.",
+          "nextAction": "Cotejar audio y hablantes; continuar revisión de la conversación y contrastar anécdotas y detalles sociales con fuentes históricas. Contraste externo de Tácito, Suetonio y arqueología de las residencias imperiales incorporado 27-11-2026; no cotejo del audio. Continuar revisión por tramos del TXT; tramo 7488–9610 leído y extraído, 0,9 % de cobertura de texto registrada. No equivale a verificar todas sus afirmaciones. Revisado tramo 9610–19704; continuar en 19704. Contrastes literarios y arqueológicos, sin verificación audiovisual. Tramo 19704–28932 leído y extraído; continuar en 28932. Dos discrepancias textuales pendientes de cotejo audiovisual. Tramo 28932–42091 leído y extraído; continuar en 42091. Pendientes audio, población y evidencia de conjura.",
           "textAudit": {
             "sha256": "48b40fc65451c5e0862485772f929e65d97158022905656c28a176555a0687b1",
             "totalCharacters": 235957,
@@ -6940,6 +6940,10 @@
               [
                 19704,
                 28932
+              ],
+              [
+                28932,
+                42091
               ]
             ],
             "method": "lectura_y_extraccion_editorial_sin_cotejo_audio",

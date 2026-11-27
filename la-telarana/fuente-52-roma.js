@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F52_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido. Revisión de extracción 27-11-2026: intervalo UTF-16 [9610,19704), presentación del invitado y relato fundacional de Tarpeya, sabinas, Palatino, Tito Tacio y Quirino. Se cotejan extractos indexados de fuentes antiguas, bibliografía filológica y fichas arqueológicas; varias páginas no permitieron consulta íntegra. No se atribuye voz ni minutaje; no se da historicidad por demostrada. Revisión de extracción 27-11-2026: intervalo UTF-16 [19704,28932), poblamiento arcaico, Porsena, tradición épica, Sant’Omobono, obras hidráulicas y ejemplos literarios. Dos discrepancias del TXT registradas sin atribuir error al hablante. Contrastados extractos y fichas académicas; sin audio, sin inferir historicidad de episodios ni frecuencia de duelos."
+    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido. Revisión de extracción 27-11-2026: intervalo UTF-16 [9610,19704), presentación del invitado y relato fundacional de Tarpeya, sabinas, Palatino, Tito Tacio y Quirino. Se cotejan extractos indexados de fuentes antiguas, bibliografía filológica y fichas arqueológicas; varias páginas no permitieron consulta íntegra. No se atribuye voz ni minutaje; no se da historicidad por demostrada. Revisión de extracción 27-11-2026: intervalo UTF-16 [19704,28932), poblamiento arcaico, Porsena, tradición épica, Sant’Omobono, obras hidráulicas y ejemplos literarios. Dos discrepancias del TXT registradas sin atribuir error al hablante. Contrastados extractos y fichas académicas; sin audio, sin inferir historicidad de episodios ni frecuencia de duelos. Revisión de extracción 27-11-2026: intervalo UTF-16 [28932,42091), monarquía tardía, elección regia, transición republicana, secesión y magistraturas. Contrastes epigráficos y literarios, tres discrepancias del TXT, hipótesis de conjura y demografía no acreditadas. Sin cotejo de audio. Los enlaces documentan atribuciones textuales, no historicidad de las leyendas."
   },
   "nodes": [
     {
@@ -42,6 +42,18 @@ window.IDEA_TELARANA_F52_REVIEW = {
           "text": "La presentación recoge que el invitado estudió Historia y empezó su proyecto de divulgación en mayo de 2020; se registra como autodescripción, no como credencial verificada.",
           "transcriptSearch": "en 2020 en plena pandemia",
           "transcriptCharOffset": 10462,
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo plantea como opinión la existencia de una conjura anterior al episodio de Lucrecia; no aporta una prueba independiente.",
+          "transcriptSearch": "yo estoy seguro de que lo tenían previsto",
+          "transcriptCharOffset": 35905,
           "minuteVerified": false,
           "audioVerified": false
         }
@@ -96,6 +108,18 @@ window.IDEA_TELARANA_F52_REVIEW = {
           "text": "El diálogo usa 509 a. C. y 27 a. C. como límites convencionales de la República y advierte que las transiciones institucionales son graduales. Presenta 753 a. C. como fecha tradicional de fundación de Roma, no como fecha arqueológica exacta.",
           "transcriptSearch": "República en el año 509",
           "transcriptCharOffset": 8457,
+          "minuteVerified": false,
+          "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT estima entre 50.000 y 100.000 habitantes en el momento de transición; no se ha verificado esa cifra concreta. Distinguir población urbana y territorio de la ciudad-estado.",
+          "transcriptSearch": "entre 50,000 100,000",
+          "transcriptCharOffset": 38262,
           "minuteVerified": false,
           "audioVerified": false
         }
@@ -804,6 +828,250 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/15%2A.html",
       "topic3d": "historia",
       "podcastNotes": []
+    },
+    {
+      "id": "f52-servio-tulio",
+      "name": "Servio Tulio",
+      "kind": "Persona",
+      "subtitle": "Sexto rey según la tradición",
+      "note": "La Tabla de Lyon transmite dos versiones de sus orígenes, romana y etrusca; no acredita biográficamente todos los detalles.",
+      "source": "https://ancientrome.ru/art/artworken/img.htm?id=9483",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT recoge la identificación de Servio Tulio con Mastarna atribuida a Claudio.",
+          "transcriptSearch": "se llamaba Mastarna",
+          "transcriptCharOffset": 30265,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-tabla-lyon",
+      "name": "Tabla de Lyon (CIL XIII 1668)",
+      "kind": "Documento",
+      "subtitle": "Inscripción de bronce, 48 d. C.",
+      "note": "Conserva parte del discurso de Claudio favorable al acceso de notables galos al Senado. Menciona la tradición de Mastarna; evidencia de la tradición en época imperial, no contemporánea de Servio.",
+      "source": "https://collections-lugdunum.grandlyon.com/flora_portail/ark%3A/53354/0021209",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tulia",
+      "name": "Tulia la Menor",
+      "kind": "Persona",
+      "subtitle": "Figura de la tradición monárquica",
+      "note": "Livio I.46–48 transmite su papel en la caída de Servio Tulio. No se acredita la historicidad del relato ni la motivación individual.",
+      "source": "https://adfonteslibrary.org/work-livy-history-1-10",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La conversación narra el papel de Tulia en el derrocamiento de Servio.",
+          "transcriptSearch": "Tuliada Menor",
+          "transcriptCharOffset": 32121,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-tarquinio-soberbio",
+      "name": "Tarquinio el Soberbio",
+      "kind": "Persona",
+      "subtitle": "Último rey según la tradición",
+      "note": "Livio I.46–60 y el resumen del libro II narran su ascenso, expulsión y transición republicana. Se distingue relato y reconstrucción histórica.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-senado-arcaico",
+      "name": "Senado romano arcaico",
+      "kind": "Institución",
+      "subtitle": "Tradición sobre las primeras instituciones",
+      "note": "Livio I.8 refiere cien senadores, no cincuenta. El procedimiento descrito en I.17–18 incluye intervención del pueblo y ratificación senatorial; no equivale a democracia moderna ni prueba que todos los reyes fueran elegidos del mismo modo.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT menciona cincuenta familias; Livio I.8 indica cien senadores. Discrepancia pendiente de audio.",
+          "transcriptSearch": "50 primeras cabezas de familia",
+          "transcriptCharOffset": 34009,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-numa",
+      "name": "Numa Pompilio",
+      "kind": "Persona",
+      "subtitle": "Segundo rey según la tradición",
+      "note": "Livio I.17–18 relata la elección y el interregno con participación popular y senatorial. En el caso de Numa, el pueblo delega la decisión al Senado.",
+      "source": "https://cts.perseids.org/read/latinLit/phi0914/phi001/perseus-eng3/1.17.7-1.18.5",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT generaliza la elección al Senado; el relato de Livio presenta un procedimiento más complejo.",
+          "transcriptSearch": "lo elegía al Senado directamente",
+          "transcriptCharOffset": 33715,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-lucrecia",
+      "name": "Lucrecia",
+      "kind": "Persona",
+      "subtitle": "Figura de la tradición fundacional republicana",
+      "note": "Livio I.57–60 la presenta como esposa de Colatino, no hija. La narración es una tradición posterior; no confirma una conspiración previamente organizada.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/sandra-joshel-2002-the-female-body-and-the-body-politic-livys-lucretia-and-verginia-in-amy-richlin-ed-pornography-and-representation-in-greece-and-rome/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La transcripción dice hija de Colatino; el relato antiguo la presenta como esposa. Pendiente cotejo.",
+          "transcriptSearch": "Lucrecia era la hija de de Colatino",
+          "transcriptCharOffset": 36072,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-colatino",
+      "name": "Lucio Tarquinio Colatino",
+      "kind": "Persona",
+      "subtitle": "Primer cónsul según la tradición",
+      "note": "El resumen de Livio II.2 recoge su posterior renuncia al consulado por su parentesco con los Tarquinios.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-bruto-lucio",
+      "name": "Lucio Junio Bruto",
+      "kind": "Persona",
+      "subtitle": "Primer cónsul según la tradición",
+      "note": "Distinto de Marco Junio Bruto, figura de la República tardía. Livio lo vincula a la expulsión del último rey y al consulado inicial.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT identifica a Bruto y Colatino como primeros cónsules; corresponde al relato tradicional.",
+          "transcriptSearch": "Bruto y Colatino son los primeros cónsules",
+          "transcriptCharOffset": 40696,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-secesion-494",
+      "name": "Primera secesión de la plebe",
+      "kind": "Evento",
+      "subtitle": "494 a. C. según cronología tradicional",
+      "note": "Livio II.32–33 recoge la retirada y el establecimiento de magistrados plebeyos; también transmite una variante que sitúa la retirada en el Aventino.",
+      "source": "https://lectito.app/livy/ab-urbe-condita-2/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo relaciona la secesión de la plebe con la creación del tribunado.",
+          "transcriptSearch": "Monte Sacro",
+          "transcriptCharOffset": 40070,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-tribunado-plebe",
+      "name": "Tribunado de la plebe",
+      "kind": "Institución",
+      "subtitle": "Magistratura de protección plebeya",
+      "note": "Livio II.33 vincula su creación a la reconciliación; las tradiciones discrepan incluso sobre el número inicial de tribunos.",
+      "source": "https://lectito.app/livy/ab-urbe-condita-2/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-consulado",
+      "name": "Consulado romano",
+      "kind": "Institución",
+      "subtitle": "Magistratura colegiada anual",
+      "note": "La tradición atribuye a los primeros cónsules autoridad anual y alternancia de insignias. No significa que el otro cónsul dejase de ser titular; el ejercicio del mando depende del contexto.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 28932–42091, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT describe alternancia mensual y anualidad del consulado; matizar titularidad y ejercicio.",
+          "transcriptSearch": "cada mes se van turnando",
+          "transcriptCharOffset": 41323,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-livio-monarquia",
+      "name": "Tito Livio: Ab urbe condita I, 17–18 y 46–60",
+      "kind": "Fuente",
+      "subtitle": "Tradición literaria de la monarquía",
+      "note": "Pasajes sobre elección regia, Servio, Tulia y Lucrecia. Se consultaron extractos de traducciones y estudio de Joshel; no equivalen a evidencia contemporánea.",
+      "source": "https://adfonteslibrary.org/work-livy-history-1-10",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-livio-plebe",
+      "name": "Tito Livio: Ab urbe condita II, 32–33",
+      "kind": "Fuente",
+      "subtitle": "Relato de la primera secesión",
+      "note": "Registra variantes de lugar y número de tribunos; distinguir texto literario y hecho probado.",
+      "source": "https://lectito.app/livy/ab-urbe-condita-2/",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1374,6 +1642,171 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "b": "f52-horacios-curiacios",
       "type": "Discrepancia geográfica textual",
       "note": "TXT: Cures; Livio: Alba Longa. Pendiente audio.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-0",
+      "a": "f52-tabla-lyon",
+      "b": "f52-servio-tulio",
+      "type": "Tradición epigráfica de Mastarna",
+      "note": "La inscripción transmite una versión etrusca posterior al reinado.",
+      "source": "https://ancientrome.ru/art/artworken/img.htm?id=9483",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-1",
+      "a": "f52-livio-monarquia",
+      "b": "f52-numa",
+      "type": "Procedimiento de elección narrado",
+      "note": "El relato incluye al pueblo y al Senado.",
+      "source": "https://cts.perseids.org/read/latinLit/phi0914/phi001/perseus-eng3/1.17.7-1.18.5",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-2",
+      "a": "f52-numa",
+      "b": "f52-senado-arcaico",
+      "type": "Elección en la tradición",
+      "note": "No prueba un sistema uniforme de elección regia.",
+      "source": "https://cts.perseids.org/read/latinLit/phi0914/phi001/perseus-eng3/1.17.7-1.18.5",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-3",
+      "a": "f52-livio-monarquia",
+      "b": "f52-senado-arcaico",
+      "type": "Discrepancia de número",
+      "note": "Livio I.8 indica cien; TXT cincuenta.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-4",
+      "a": "f52-livio-monarquia",
+      "b": "f52-tulia",
+      "type": "Relato literario",
+      "note": "Tradición de la caída de Servio.",
+      "source": "https://adfonteslibrary.org/work-livy-history-1-10",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-5",
+      "a": "f52-tulia",
+      "b": "f52-servio-tulio",
+      "type": "Parentesco en la tradición",
+      "note": "Relato de Livio, historicidad no acreditada.",
+      "source": "https://adfonteslibrary.org/work-livy-history-1-10",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-6",
+      "a": "f52-tulia",
+      "b": "f52-tarquinio-soberbio",
+      "type": "Alianza en la tradición",
+      "note": "Matrimonio y ascenso descritos por Livio.",
+      "source": "https://adfonteslibrary.org/work-livy-history-1-10",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-7",
+      "a": "f52-lucrecia",
+      "b": "f52-colatino",
+      "type": "Parentesco corregido en el relato",
+      "note": "Esposa, no hija.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/sandra-joshel-2002-the-female-body-and-the-body-politic-livys-lucretia-and-verginia-in-amy-richlin-ed-pornography-and-representation-in-greece-and-rome/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-8",
+      "a": "f52-livio-monarquia",
+      "b": "f52-lucrecia",
+      "type": "Relato fundacional",
+      "note": "El episodio es narración literaria posterior.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/sandra-joshel-2002-the-female-body-and-the-body-politic-livys-lucretia-and-verginia-in-amy-richlin-ed-pornography-and-representation-in-greece-and-rome/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-9",
+      "a": "f52-bruto-lucio",
+      "b": "f52-colatino",
+      "type": "Colegas consulares en la tradición",
+      "note": "Identificados como primeros cónsules.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-10",
+      "a": "f52-consulado",
+      "b": "f44-republica-romana",
+      "type": "Institución republicana",
+      "note": "Colegialidad y anualidad; evitar equiparación con el cargo diplomático moderno.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-11",
+      "a": "f52-secesion-494",
+      "b": "f52-tribunado-plebe",
+      "type": "Origen tradicional de magistratura",
+      "note": "Livio II.32–33; versiones divergentes.",
+      "source": "https://lectito.app/livy/ab-urbe-condita-2/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-12",
+      "a": "f52-livio-plebe",
+      "b": "f52-secesion-494",
+      "type": "Testimonio literario",
+      "note": "Contiene una variante sobre el lugar.",
+      "source": "https://lectito.app/livy/ab-urbe-condita-2/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-13",
+      "a": "f52-episodio",
+      "b": "f52-lucrecia",
+      "type": "Discrepancia textual",
+      "note": "La relación de parentesco debe comprobarse contra audio.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/sandra-joshel-2002-the-female-body-and-the-body-politic-livys-lucretia-and-verginia-in-amy-richlin-ed-pornography-and-representation-in-greece-and-rome/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo4-14",
+      "a": "f52-episodio",
+      "b": "f52-senado-arcaico",
+      "type": "Discrepancia textual institucional",
+      "note": "Número y procedimiento de elección requieren matices.",
       "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
       "claimStatus": "testimonio_textual_atribuido",
       "confidence": "documentado",
