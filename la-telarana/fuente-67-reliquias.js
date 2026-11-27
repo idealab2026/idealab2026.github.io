@@ -10,7 +10,7 @@ window.IDEA_TELARANA_F67_REVIEW =
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color. Contraste externo Sudario de Oviedo 26-11-2026: resúmenes históricos, reproducciones HTML de dos comunicaciones de congreso y resumen indexado 2026 con acceso editorial 403. No se auditan datos originales de datación ni se demuestra identidad común; sin cotejo de audio. Contraste externo 26-11-2026: estudios ADN 2015 y 2026, corrección 2021 y preprint. Resúmenes indexados y corrección íntegra; acceso directo a los artículos limitado por redirecciones. No análisis de secuencias ni cotejo de audio. Contraste externo 26-11-2026: palinología, divergencia taxonómica y posibles ungüentos; consultados resúmenes, bibliografía y registro universitario, sin inspección de muestras originales ni cotejo de audio. Contraste externo 26-11-2026: tres artículos de coloración UV, consultados resúmenes editoriales y registros PubMed; equipo parcialmente compartido. No reproducción integral, datación ni prueba de origen histórico; sin cotejo de audio. Contraste externo 26-11-2026: catálogos numismáticos, traducción del canon 82, estudio histórico y resumen de actas de Fanti. No auditado modelo probabilístico ni cotejado audio; semejanza no prueba copia o antigüedad.",
+    "methodologicalNote": "Revisión parcial ampliada de una entrevista de 1:46:12. Subtítulos automáticos con tiempos orientativos hasta 1:46:10; audio, voces e integridad sin cotejar. Se distinguen texto religioso, testimonio, hipótesis iconográfica y crítica histórica. Revisión de trazabilidad: artículos científicos de 2019, 2024 y 2026 son contexto editorial externo, NO citas identificadas del vídeo. Las cifras 20 textos/4 históricos/100% y 150.000 horas/27 artículos de STURP figuran solo como declaraciones atribuidas pendientes de acreditación; un artículo de 1980 describe 32 miembros del equipo STURP. Cuarta revisión 18-11-2026: se comprobó texto NotebookLM y se retiraron marcas ?t= sin cotejo audiovisual. STURP documentado mediante Applied Optics 1980, 150.000 horas/27 publicaciones/33 miembros siguen como alegaciones; carbono 14 Nature 1989 y estudio textil Arizona 2026 que no encontró reparación en fragmentos A1A/A1B. ADN Scientific Reports 2026 no determina edad. IntCal20 distingue calibración de falsa tasa 70 %. Interlaboratorio 2019/2020 no establece nueva fecha. Justiniano II 692–695 no siglo VI. Whealey 2008: Josefo transmitido por Eusebio/Agapio/Miguel con dependencia, no testimonios independientes. Voz y minutos sin verificar. Contraste externo 26-11-2026: simulación geométrica, réplica experimental y críticas publicadas (resúmenes y bibliografía editorial, comunicado institucional); no cotejo de audio ni prueba de mecanismo histórico. Contraste externo 26-11-2026: composición de manchas, pigmentos y patrones; consultados resúmenes de Heller/Adler, McCrone, tablas de Applied Optics y texto HTML de Heger et al. Sin cotejo de audio. No inferir identidad ni edad de composición o color. Contraste externo Sudario de Oviedo 26-11-2026: resúmenes históricos, reproducciones HTML de dos comunicaciones de congreso y resumen indexado 2026 con acceso editorial 403. No se auditan datos originales de datación ni se demuestra identidad común; sin cotejo de audio. Contraste externo 26-11-2026: estudios ADN 2015 y 2026, corrección 2021 y preprint. Resúmenes indexados y corrección íntegra; acceso directo a los artículos limitado por redirecciones. No análisis de secuencias ni cotejo de audio. Contraste externo 26-11-2026: palinología, divergencia taxonómica y posibles ungüentos; consultados resúmenes, bibliografía y registro universitario, sin inspección de muestras originales ni cotejo de audio. Contraste externo 26-11-2026: tres artículos de coloración UV, consultados resúmenes editoriales y registros PubMed; equipo parcialmente compartido. No reproducción integral, datación ni prueba de origen histórico; sin cotejo de audio. Contraste externo 26-11-2026: catálogos numismáticos, traducción del canon 82, estudio histórico y resumen de actas de Fanti. No auditado modelo probabilístico ni cotejado audio; semejanza no prueba copia o antigüedad. Contraste externo 27-11-2026: téktōn, variantes manuscritas, tradición patrística y contexto socioeconómico; consultados texto bíblico, traducción de Justino, notas de Batey, resumen de Robinson y secciones HTML de 2025 y Häkkinen. Sin cotejo de audio ni prueba laboral individual.",
     "automaticCaptions": true,
     "captionTimeHintsAvailable": true
   },
@@ -1269,6 +1269,66 @@ window.IDEA_TELARANA_F67_REVIEW =
       "subtitle": "Actas de congreso · Universidad de Padua",
       "note": "El resumen defiende conocimiento de la Síndone desde 692 a partir de semejanzas faciales y una estimación probabilística. El repositorio no ofrece el texto completo. No se han auditado las frecuencias de rasgos, dependencias, selección de monedas ni el modelo nulo. No constituye una datación física.",
       "source": "https://www.research.unipd.it/handle/11577/3271776",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-evangelios",
+      "name": "Marcos 6:3 y Mateo 13:55: atribución del oficio",
+      "kind": "Fuente",
+      "subtitle": "NRSVUE · comparación textual",
+      "note": "Marcos atribuye directamente el oficio a Jesús en la lectura habitual; Mateo lo identifica como hijo del artesano. La nota de NRSVUE recoge una variante manuscrita de Marcos. Dos relatos paralelos no constituyen automáticamente testimonios independientes.",
+      "source": "https://www.biblegateway.com/passage/?search=Matthew+13%3A55%2CMark+6%3A3%2CGalatians+1%3A19&version=NRSVUE",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-justino",
+      "name": "Justino Mártir: Diálogo con Trifón 88",
+      "kind": "Fuente",
+      "subtitle": "Siglo II · traducción inglesa",
+      "note": "Atribuye a Jesús la fabricación de arados y yugos y les confiere un sentido moral. Testimonio de la tradición cristiana posterior, no registro laboral contemporáneo ni corroboración independiente garantizada.",
+      "source": "https://www.newadvent.org/fathers/01286.htm",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-batey",
+      "name": "Batey (1984): Is not this the Carpenter?",
+      "kind": "Fuente",
+      "subtitle": "New Testament Studies 30(2), 249–258",
+      "note": "En las notas accesibles distingue el sentido general de artesano del uso más frecuente para trabajadores de madera; defiende carpintero como traducción de Marcos 6:3. No se consultó el artículo completo.",
+      "source": "https://doi.org/10.1017/S0028688500013783",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-robinson",
+      "name": "Robinson (2021): Is This Not the Τέκτων?",
+      "kind": "Fuente",
+      "subtitle": "Neotestamentica 55(2)",
+      "note": "El resumen compara usos griegos y contexto sociohistórico de Nazaret y propone constructor-artesano. No demuestra qué tareas desempeñó personalmente Jesús. Consultado resumen de EBSCO; editorial 403.",
+      "source": "https://doi.org/10.1353/neo.2021.0038",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-variantes",
+      "name": "Mark’s Mothers and the Matronymic (2025)",
+      "kind": "Fuente",
+      "subtitle": "New Testament Studies 71(1), 92–104",
+      "note": "La sección de crítica textual discute una variante que convierte a Jesús en hijo del artesano. Considera más probable la lectura habitual que atribuye el oficio a Jesús. No determina su especialidad.",
+      "source": "https://doi.org/10.1017/S0028688524000262",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-hakkinen",
+      "name": "Häkkinen (2016): Poverty in the first-century Galilee",
+      "kind": "Fuente",
+      "subtitle": "HTS Teologiese Studies / Theological Studies",
+      "note": "Estudia la economía galilea; analiza el oficio y recoge la evaluación de Meier de un posible empleo en Séforis como posible pero no probable. No aporta evidencia directa de contratación de Jesús.",
+      "source": "https://hts.org.za/index.php/hts/article/view/3398/8356",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -2546,6 +2606,105 @@ window.IDEA_TELARANA_F67_REVIEW =
       "type": "Límite de inferencia estadística",
       "note": "No se dispone del texto completo para auditar el modelo probabilístico; distinguir similitud, dependencia y datación.",
       "source": "https://www.research.unipd.it/handle/11577/3271776",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-0",
+      "a": "f67-tek-evangelios",
+      "b": "f67-tecton",
+      "type": "Testimonio textual paralelo",
+      "note": "Marcos atribuye el oficio a Jesús; Mateo al padre. Distinguir variante y dependencia literaria.",
+      "source": "https://www.biblegateway.com/passage/?search=Matthew+13%3A55%2CMark+6%3A3%2CGalatians+1%3A19&version=NRSVUE",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-1",
+      "a": "f67-tek-justino",
+      "b": "f67-tecton",
+      "type": "Tradición cristiana posterior",
+      "note": "Atribuye trabajos de madera a Jesús con sentido moral; no testimonio laboral contemporáneo.",
+      "source": "https://www.newadvent.org/fathers/01286.htm",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-2",
+      "a": "f67-tek-batey",
+      "b": "f67-tecton",
+      "type": "Interpretación léxica",
+      "note": "Defiende carpintero como traducción preferente.",
+      "source": "https://doi.org/10.1017/S0028688500013783",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-3",
+      "a": "f67-tek-robinson",
+      "b": "f67-tecton",
+      "type": "Interpretación sociohistórica",
+      "note": "Propone constructor-artesano sin descartar trabajo con madera.",
+      "source": "https://doi.org/10.1353/neo.2021.0038",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-4",
+      "a": "f67-tek-variantes",
+      "b": "f67-tecton",
+      "type": "Crítica textual",
+      "note": "Examina variantes y prefiere la atribución directa del oficio.",
+      "source": "https://doi.org/10.1017/S0028688524000262",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-5",
+      "a": "f67-tek-variantes",
+      "b": "f67-tek-justino",
+      "type": "Discusión de testimonio patrístico",
+      "note": "La sección 2 cita Diálogo con Trifón 88.8 al analizar variantes.",
+      "source": "https://doi.org/10.1017/S0028688524000262",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-6",
+      "a": "f67-tek-hakkinen",
+      "b": "f67-tecton",
+      "type": "Contexto socioeconómico",
+      "note": "Analiza la amplitud del oficio y el contexto galileo.",
+      "source": "https://hts.org.za/index.php/hts/article/view/3398/8356",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-7",
+      "a": "f67-tek-hakkinen",
+      "b": "f42-sepphoris",
+      "type": "Hipótesis laboral no confirmada",
+      "note": "El artículo recoge la valoración de Meier: empleo posible pero no probable; no acredita presencia de Jesús.",
+      "source": "https://hts.org.za/index.php/hts/article/view/3398/8356",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f67-tek-20261127-8",
+      "a": "f67-tek-robinson",
+      "b": "f67-tek-batey",
+      "type": "Contraste de traducciones",
+      "note": "Dos propuestas interpretativas distintas; la divergencia no prueba una especialización individual.",
+      "source": "https://doi.org/10.1353/neo.2021.0038",
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "podcastNotes": []
