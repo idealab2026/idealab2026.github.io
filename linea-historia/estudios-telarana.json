@@ -5897,6 +5897,38 @@
         ],
         "methodologicalLimits": "Se fecha la atribución de poder en 69 conforme a la ficha del museo, no la elaboración exacta de la tabla (69–70). El texto conservado es parcial y no demuestra que el Principado naciera entonces. Audio de F52 sin cotejar."
       }
+    },
+    {
+      "id": "study-f52-leyes-licinio-sextias-367ac",
+      "y": -367,
+      "t": "Reforma constitucional de las leyes Licinio-Sextias",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F52 · contexto historiográfico",
+      "d": "La tradición y la historiografía sitúan en 367 a. C. una reforma que restauró el consulado dual y abrió el acceso a la magistratura a los plebeyos. Los detalles del texto legal y de la obligación de elegir un cónsul plebeyo siguen siendo discutidos.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ITA"
+      ],
+      "investigation": {
+        "sourceOrder": 52,
+        "sourceTitle": "The Wild Project #342 - Iban Martín (Historiador) | Los Secretos más morbosos del Imperio Romano",
+        "sourceUrl": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+        "status": "hecho_documentado",
+        "datePrecision": "año_ac",
+        "date": "367 a. C.",
+        "confirmedBy": {
+          "label": "Classical Quarterly · A peculiar episode from the struggle of the orders?",
+          "url": "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/peculiar-episode-from-the-struggle-of-the-orders-livy-and-the-liciniosextian-rogations/A88E4AB815402BBD8441672193DF58E9"
+        },
+        "relatedTelarana": [
+          "f52-licinio-sextias",
+          "f52-consulado",
+          "f52-pretura"
+        ],
+        "methodologicalLimits": "Fecha convencional de una reforma aceptada por la historiografía; los pormenores de las leyes no se conservan de forma contemporánea. Contexto documental externo de F52, no cita literal ni audio cotejado."
+      }
     }
   ]
 }

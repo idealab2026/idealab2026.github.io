@@ -1384,13 +1384,13 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
       "targetEntities": 40,
       "targetStatements": 68,
       "targetReferences": 23,
-      "textCoverage": 14.7,
+      "textCoverage": 18.3,
       "textBasis": "characters",
       "anchorRecovery": null,
       "closed": false,
       "audioVerified": false,
-      "recordedStatements": 38,
-      "recordedChecks": 28,
+      "recordedStatements": 51,
+      "recordedChecks": 37,
       "originalUnavailable": false
     }
   },

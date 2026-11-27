@@ -23,3 +23,11 @@ assert.equal(f52Events.length,tracker.analysisCoverage.signals.verifiedTimelineE
 assert.equal(f52Events.length,progress52.inReview.find(e=>e.order===52).timelineVerifiedEventsCommitted);
 assert.deepEqual(f52Events.map(e=>e.id).sort(),[...progress52.timeline.eventsBySource['52']].sort());
 for(const [id,y,node] of [['study-f52-claudio-discurso-senado-48',48,'f52-tabla-lyon'],['study-f52-vespasiano-investidura-69',69,'f52-lex-vespasiani']]){const event=f52Events.find(e=>e.id===id);assert(event&&event.y===y&&event.investigation.datePrecision==='año'&&event.investigation.relatedTelarana.includes(node));assert(event.investigation.relatedTelarana.every(id=>ids.has(id)));}
+
+assert(audit.reviewedRanges.some(([a,b])=>a===42091&&b===50643));
+for(const id of ['f52-regilo','f52-vindicio','f52-dictadura','f52-comicios-centuriados','f52-proletarii','f52-licinio-sextias'])assert(ids.has(id));
+assert(f.nodes.find(n=>n.id==='f52-regilo').note.includes('Cumas'));
+assert(f.nodes.find(n=>n.id==='f52-dictadura').note.includes('rituales'));
+assert(f.nodes.find(n=>n.id==='f52-proletarii').note.includes('privados de voto'));
+assert(h.items.some(e=>e.id==='study-f52-leyes-licinio-sextias-367ac'&&e.y===-367&&e.investigation.datePrecision==='año_ac'&&e.investigation.methodologicalLimits.includes('no cita literal')));
+assert.equal(tracker.analysisCoverage.signals.statements,f.nodes.flatMap(n=>n.podcastNotes).length);

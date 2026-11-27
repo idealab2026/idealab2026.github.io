@@ -1,4 +1,3 @@
-/* F52: revisión documental parcial sin cotejo de audio. */
 window.IDEA_TELARANA_F52_REVIEW = {
   "metadata": {
     "id": "idealab-f52-roma",
@@ -9,7 +8,7 @@ window.IDEA_TELARANA_F52_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido. Revisión de extracción 27-11-2026: intervalo UTF-16 [9610,19704), presentación del invitado y relato fundacional de Tarpeya, sabinas, Palatino, Tito Tacio y Quirino. Se cotejan extractos indexados de fuentes antiguas, bibliografía filológica y fichas arqueológicas; varias páginas no permitieron consulta íntegra. No se atribuye voz ni minutaje; no se da historicidad por demostrada. Revisión de extracción 27-11-2026: intervalo UTF-16 [19704,28932), poblamiento arcaico, Porsena, tradición épica, Sant’Omobono, obras hidráulicas y ejemplos literarios. Dos discrepancias del TXT registradas sin atribuir error al hablante. Contrastados extractos y fichas académicas; sin audio, sin inferir historicidad de episodios ni frecuencia de duelos. Revisión de extracción 27-11-2026: intervalo UTF-16 [28932,42091), monarquía tardía, elección regia, transición republicana, secesión y magistraturas. Contrastes epigráficos y literarios, tres discrepancias del TXT, hipótesis de conjura y demografía no acreditadas. Sin cotejo de audio. Los enlaces documentan atribuciones textuales, no historicidad de las leyendas."
+    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido. Revisión de extracción 27-11-2026: intervalo UTF-16 [9610,19704), presentación del invitado y relato fundacional de Tarpeya, sabinas, Palatino, Tito Tacio y Quirino. Se cotejan extractos indexados de fuentes antiguas, bibliografía filológica y fichas arqueológicas; varias páginas no permitieron consulta íntegra. No se atribuye voz ni minutaje; no se da historicidad por demostrada. Revisión de extracción 27-11-2026: intervalo UTF-16 [19704,28932), poblamiento arcaico, Porsena, tradición épica, Sant’Omobono, obras hidráulicas y ejemplos literarios. Dos discrepancias del TXT registradas sin atribuir error al hablante. Contrastados extractos y fichas académicas; sin audio, sin inferir historicidad de episodios ni frecuencia de duelos. Revisión de extracción 27-11-2026: intervalo UTF-16 [28932,42091), monarquía tardía, elección regia, transición republicana, secesión y magistraturas. Contrastes epigráficos y literarios, tres discrepancias del TXT, hipótesis de conjura y demografía no acreditadas. Sin cotejo de audio. Los enlaces documentan atribuciones textuales, no historicidad de las leyendas. Tramo 5 [42091,50643) leído con SHA-256 coincidente; 13 anclas textuales y contrastes de Regilo/Cumas, conjura de Bruto, magistraturas, dictadura y representación censitaria. Reforma de 367 a. C. como contexto historiográfico, no cita literal. Sin audio cotejado ni atribución de voces."
   },
   "nodes": [
     {
@@ -893,7 +892,20 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "note": "Livio I.46–60 y el resumen del libro II narran su ascenso, expulsión y transición republicana. Se distingue relato y reconstrucción histórica.",
       "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
       "topic3d": "historia",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo vacila entre muerte en Regilo y exilio posterior; Livio II.21 sitúa su muerte en Cumas y reconoce divergencia cronológica sobre la batalla.",
+          "transcriptSearch": "él muere en esa batalla",
+          "transcriptCharOffset": 42868,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
     },
     {
       "id": "f52-senado-arcaico",
@@ -994,6 +1006,18 @@ window.IDEA_TELARANA_F52_REVIEW = {
           "transcriptCharOffset": 40696,
           "minuteVerified": false,
           "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El episodio de la conjura restauradora y los hijos de Bruto procede de la tradición literaria, no de documentación contemporánea.",
+          "transcriptSearch": "Bruto como primer cónsul",
+          "transcriptCharOffset": 43152,
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -1028,7 +1052,20 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "note": "Livio II.33 vincula su creación a la reconciliación; las tradiciones discrepan incluso sobre el número inicial de tribunos.",
       "source": "https://lectito.app/livy/ab-urbe-condita-2/",
       "topic3d": "historia",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El veto y la protección plebeya deben distinguirse de un poder legislativo individual moderno; las asambleas aprobaban propuestas.",
+          "transcriptSearch": "tribuno de la plebe puede vetarla",
+          "transcriptCharOffset": 46935,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
     },
     {
       "id": "f52-consulado",
@@ -1072,6 +1109,236 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "source": "https://lectito.app/livy/ab-urbe-condita-2/",
       "topic3d": "historia",
       "podcastNotes": []
+    },
+    {
+      "id": "f52-regilo",
+      "name": "Batalla del lago Regilo",
+      "kind": "Evento",
+      "subtitle": "Tradición de la República temprana",
+      "note": "Livio II.19–21 relata la victoria romana y reconoce discrepancias cronológicas. No sitúa allí la muerte de Tarquinio el Soberbio; el propio relato la ubica más tarde en Cumas. No se publica una fecha exacta como hecho demostrado.",
+      "source": "https://lectito.app/livy/ab-urbe-condita-2/21/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El texto menciona el intento de restauración monárquica y la batalla; distinguir cronología literaria y evidencia histórica.",
+          "transcriptSearch": "batalla del lago Regilo",
+          "transcriptCharOffset": 42689,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-vindicio",
+      "name": "Vindicio (Vindicius)",
+      "kind": "Persona",
+      "subtitle": "Figura del relato de Livio",
+      "note": "El resumen del libro II describe la concesión de libertad al esclavo que descubrió la conjura. El caso no demuestra que todos los esclavos informantes recibieran automáticamente libertad o inmunidad.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo generaliza el premio a esclavos informantes; se registra solo el caso concreto narrado.",
+          "transcriptSearch": "se les da la libertad",
+          "transcriptCharOffset": 44392,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-pretura",
+      "name": "Pretura romana",
+      "kind": "Institución",
+      "subtitle": "Magistratura con imperium",
+      "note": "La reforma del siglo IV a. C. se vincula a la pretura y al desarrollo de funciones judiciales. No proyectar la pretura peregrina ni el cursus tardorrepublicano a los primeros años.",
+      "source": "https://www.cambridge.org/core/books/cambridge-companion-to-the-roman-republic/power-and-process-under-the-republican-constitution/72F9A38F210BBF2B5FD9D7EF6AC59DBB",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La exposición enumera pretores; su desarrollo institucional no fue simultáneo al origen de la República.",
+          "transcriptSearch": "tenemos pretores",
+          "transcriptCharOffset": 45353,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-edilidad",
+      "name": "Edilidad romana",
+      "kind": "Institución",
+      "subtitle": "Magistratura urbana",
+      "note": "En la República desarrollada los ediles organizaban espectáculos y atendían funciones urbanas; el cargo no equivale jurídicamente a un concejal moderno.",
+      "source": "https://www.cambridge.org/core/books/rome-and-the-making-of-a-world-state-150-bce20-ce/city-of-rome-scene-of-politics-and-growing-metropolis/6248904FDF5D1A1D83AB182CF5A3101B",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "Se contrasta la función de organizar juegos con el desarrollo posterior de la magistratura.",
+          "transcriptSearch": "luego tenemos los ediles",
+          "transcriptCharOffset": 45535,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-cuestura",
+      "name": "Cuestura romana",
+      "kind": "Institución",
+      "subtitle": "Magistratura financiera",
+      "note": "Polibio VI.12 menciona al cuestor que acompaña a los cónsules en campaña y gestiona fondos; sus funciones no se reducían al botín militar.",
+      "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/polybius/6%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La descripción del tesoro militar es parcial; las funciones financieras eran más amplias.",
+          "transcriptSearch": "luego tenemos los cuestores",
+          "transcriptCharOffset": 45746,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-censura",
+      "name": "Censura romana",
+      "kind": "Institución",
+      "subtitle": "Censo y supervisión senatorial",
+      "note": "Los censores realizaban el censo, revisaban la composición del Senado y supervisaban costumbres y contratos. Su prestigio no implicaba superioridad ejecutiva general sobre los cónsules.",
+      "source": "https://www.cambridge.org/core/books/rome-and-the-making-of-a-world-state-150-bce20-ce/city-of-rome-scene-of-politics-and-growing-metropolis/6248904FDF5D1A1D83AB182CF5A3101B",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El texto presenta la censura como cargo simbólicamente superior; distinguir prestigio y competencia ejecutiva.",
+          "transcriptSearch": "después de Consul",
+          "transcriptCharOffset": 46290,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-dictadura",
+      "name": "Dictadura republicana romana",
+      "kind": "Institución",
+      "subtitle": "Magistratura extraordinaria",
+      "note": "El Oxford Classical Dictionary describe una comisión específica y la renuncia tras cumplirla; también se empleó para tareas rituales y administrativas. No se acredita un único origen destinado al control de reclutas.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548723827",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El texto afirma eliminación de magistraturas: la autoridad dictatorial podía subordinarlas, no suprimirlas necesariamente.",
+          "transcriptSearch": "se eliminan todas las demás",
+          "transcriptCharOffset": 48344,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-comicios-centuriados",
+      "name": "Comicios centuriados",
+      "kind": "Institución",
+      "subtitle": "Asamblea censitaria",
+      "note": "El estudio de Classical Quarterly distingue 193 centurias en el sistema anterior a la reforma y voto prioritario de las clases ricas; su configuración cambió con el tiempo. Las centurias de menor riqueza podían quedar sin votar si se alcanzaba mayoría antes.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/geography-and-the-reform-of-the-comitia-centvriata/43C5F7259AC095146B22CDF6086F76F3",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La concentración de capacidad electoral en los grupos ricos no equivale a exclusión jurídica universal de los pobres.",
+          "transcriptSearch": "acaban votando las primeras centurias",
+          "transcriptCharOffset": 49931,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-proletarii",
+      "name": "Proletarii romanos",
+      "kind": "Grupo social",
+      "subtitle": "Ciudadanos de escaso patrimonio",
+      "note": "La organización centuriada incluía una unidad para los ciudadanos sin patrimonio suficiente para el servicio ordinario. La categoría no demuestra que todos carecieran de vivienda ni que estuviesen privados de voto por ley.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/geography-and-the-reform-of-the-comitia-centvriata/43C5F7259AC095146B22CDF6086F76F3",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El pasaje confunde baja influencia efectiva con ausencia de derecho de voto.",
+          "transcriptSearch": "los plebellos proletarios tampoco",
+          "transcriptCharOffset": 49104,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-licinio-sextias",
+      "name": "Leyes Licinio-Sextias",
+      "kind": "Documento",
+      "subtitle": "Reforma constitucional de 367 a. C.",
+      "note": "La historiografía acepta una reforma importante hacia 367 a. C. que restableció el consulado dual y abrió su acceso a los plebeyos; se debate el alcance exacto de las disposiciones y si la presencia de un plebeyo se exigió inmediatamente. Contexto externo, no cita literal del episodio.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/peculiar-episode-from-the-struggle-of-the-orders-livy-and-the-liciniosextian-rogations/A88E4AB815402BBD8441672193DF58E9",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 42091–50643, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "Se añade el contexto histórico de la apertura del consulado sin afirmar que el episodio cite por nombre estas leyes.",
+          "transcriptSearch": "con el tiempo sí",
+          "transcriptCharOffset": 46117,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
     }
   ],
   "edges": [
@@ -1809,6 +2076,160 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "note": "Número y procedimiento de elección requieren matices.",
       "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
       "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-0",
+      "a": "f52-regilo",
+      "b": "f52-tarquinio-soberbio",
+      "type": "Relato tradicional",
+      "note": "Livio II.21 diferencia derrota latina y muerte posterior en Cumas.",
+      "source": "https://lectito.app/livy/ab-urbe-condita-2/21/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-1",
+      "a": "f52-vindicio",
+      "b": "f52-bruto-lucio",
+      "type": "Relato de conjura",
+      "note": "El resumen de Livio II recoge la liberación del informante, sin prueba contemporánea.",
+      "source": "https://www.livius.org/sources/content/livy/livy-periochae-1-5/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-2",
+      "a": "f52-pretura",
+      "b": "f44-republica-romana",
+      "type": "Institución republicana",
+      "note": "Contexto institucional; evitar aplicar sin matices la estructura tardía a la República inicial.",
+      "source": "https://www.cambridge.org/core/books/cambridge-companion-to-the-roman-republic/power-and-process-under-the-republican-constitution/72F9A38F210BBF2B5FD9D7EF6AC59DBB",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-3",
+      "a": "f52-edilidad",
+      "b": "f44-republica-romana",
+      "type": "Institución republicana",
+      "note": "Contexto institucional; evitar aplicar sin matices la estructura tardía a la República inicial.",
+      "source": "https://www.cambridge.org/core/books/rome-and-the-making-of-a-world-state-150-bce20-ce/city-of-rome-scene-of-politics-and-growing-metropolis/6248904FDF5D1A1D83AB182CF5A3101B",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-4",
+      "a": "f52-cuestura",
+      "b": "f44-republica-romana",
+      "type": "Institución republicana",
+      "note": "Contexto institucional; evitar aplicar sin matices la estructura tardía a la República inicial.",
+      "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/polybius/6%2A.html",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-5",
+      "a": "f52-censura",
+      "b": "f44-republica-romana",
+      "type": "Institución republicana",
+      "note": "Contexto institucional; evitar aplicar sin matices la estructura tardía a la República inicial.",
+      "source": "https://www.cambridge.org/core/books/rome-and-the-making-of-a-world-state-150-bce20-ce/city-of-rome-scene-of-politics-and-growing-metropolis/6248904FDF5D1A1D83AB182CF5A3101B",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-6",
+      "a": "f52-dictadura",
+      "b": "f44-republica-romana",
+      "type": "Institución republicana",
+      "note": "Contexto institucional; evitar aplicar sin matices la estructura tardía a la República inicial.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548723827",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-7",
+      "a": "f52-comicios-centuriados",
+      "b": "f44-republica-romana",
+      "type": "Institución republicana",
+      "note": "Contexto institucional; evitar aplicar sin matices la estructura tardía a la República inicial.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/geography-and-the-reform-of-the-comitia-centvriata/43C5F7259AC095146B22CDF6086F76F3",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-8",
+      "a": "f52-dictadura",
+      "b": "f52-consulado",
+      "type": "Subordinación temporal",
+      "note": "La superioridad dictatorial no extingue necesariamente el cargo ordinario; estudio de magistraturas de Oxford.",
+      "source": "https://academic.oup.com/book/44172/chapter-abstract/372404043",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-9",
+      "a": "f52-proletarii",
+      "b": "f52-comicios-centuriados",
+      "type": "Participación censitaria",
+      "note": "Representación formal de una centuria de ciudadanos sin patrimonio, con escaso peso efectivo.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/geography-and-the-reform-of-the-comitia-centvriata/43C5F7259AC095146B22CDF6086F76F3",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-10",
+      "a": "f52-licinio-sextias",
+      "b": "f52-consulado",
+      "type": "Reforma institucional",
+      "note": "El acceso plebeyo al consulado se vincula a la reforma; la formulación y aplicación exactas se discuten.",
+      "source": "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/peculiar-episode-from-the-struggle-of-the-orders-livy-and-the-liciniosextian-rogations/A88E4AB815402BBD8441672193DF58E9",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-11",
+      "a": "f52-licinio-sextias",
+      "b": "f52-pretura",
+      "type": "Reorganización magistratural",
+      "note": "La bibliografía relaciona el restablecimiento consular con la pretura.",
+      "source": "https://www.cambridge.org/core/books/cambridge-companion-to-the-roman-republic/power-and-process-under-the-republican-constitution/72F9A38F210BBF2B5FD9D7EF6AC59DBB",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-12",
+      "a": "f52-tribunado-plebe",
+      "b": "f52-consulado",
+      "type": "Contrapeso institucional",
+      "note": "Protección y veto, no un sistema moderno de separación de poderes.",
+      "source": "https://www.cambridge.org/core/books/cambridge-companion-to-the-roman-republic/power-and-process-under-the-republican-constitution/72F9A38F210BBF2B5FD9D7EF6AC59DBB",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo5-13",
+      "a": "f52-censura",
+      "b": "f52-senado-arcaico",
+      "type": "Revisión de composición en época republicana",
+      "note": "No se atribuye esta competencia a la institución monárquica; se trata del Senado en su desarrollo republicano.",
+      "source": "https://www.cambridge.org/core/books/rome-and-the-making-of-a-world-state-150-bce20-ce/city-of-rome-scene-of-politics-and-growing-metropolis/6248904FDF5D1A1D83AB182CF5A3101B",
+      "claimStatus": "interpretacion_academica",
       "confidence": "documentado",
       "podcastNotes": []
     }
