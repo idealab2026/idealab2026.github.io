@@ -6,4 +6,8 @@ assert(f.nodes.find(n=>n.id==='f52-lapis-niger').note.includes('no nombra'));
 assert(audit.reviewedRanges.some(([a,b])=>a===9610&&b===19704));
 for(const id of ["f44-romulo","f44-sabinas","f52-tarpeya","f52-tito-tacio","f52-roca-tarpeya","f52-palatino","f52-livio-1","f52-plutarco-romulo","f52-propercio-tarpeya","f52-palatino-sapienza","f52-quirino"])assert(ids.has(id));
 assert(f.nodes.find(n=>n.id==='f52-tarpeya').note.includes('variantes literarias'));
+assert(audit.reviewedRanges.some(([a,b])=>a===19704&&b===28932));
+for(const id of ["f52-necropolis-foro","f52-porsena","f52-tacito-porsena","f52-eneida","f52-omobono","f52-tarquinio-prisco","f52-cloaca","f52-brock-roma","f52-horacios-curiacios","f52-alba-longa","f52-valerio-corvo","f52-dionisio-corvo"])assert(ids.has(id));
+assert(f.nodes.find(n=>n.id==='f52-tarquinio-prisco').note.includes('quinto'));
+assert(f.nodes.find(n=>n.id==='f52-horacios-curiacios').note.includes('Alba Longa'));
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));assert.equal(h.items.filter(e=>e.id==='study-f52-inauguracion-coliseo-80').length,1);assert.equal(h.items.find(e=>e.id==='study-f52-inauguracion-coliseo-80').y,80);assert(read('la-telarana/index.html').includes('fuente-52-roma.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-52-roma.js'));console.log('OK: F52 distingue evidencia, anécdotas y contexto de esclavitud');

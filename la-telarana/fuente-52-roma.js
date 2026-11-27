@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F52_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido. Revisión de extracción 27-11-2026: intervalo UTF-16 [9610,19704), presentación del invitado y relato fundacional de Tarpeya, sabinas, Palatino, Tito Tacio y Quirino. Se cotejan extractos indexados de fuentes antiguas, bibliografía filológica y fichas arqueológicas; varias páginas no permitieron consulta íntegra. No se atribuye voz ni minutaje; no se da historicidad por demostrada."
+    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido. Revisión de extracción 27-11-2026: intervalo UTF-16 [9610,19704), presentación del invitado y relato fundacional de Tarpeya, sabinas, Palatino, Tito Tacio y Quirino. Se cotejan extractos indexados de fuentes antiguas, bibliografía filológica y fichas arqueológicas; varias páginas no permitieron consulta íntegra. No se atribuye voz ni minutaje; no se da historicidad por demostrada. Revisión de extracción 27-11-2026: intervalo UTF-16 [19704,28932), poblamiento arcaico, Porsena, tradición épica, Sant’Omobono, obras hidráulicas y ejemplos literarios. Dos discrepancias del TXT registradas sin atribuir error al hablante. Contrastados extractos y fichas académicas; sin audio, sin inferir historicidad de episodios ni frecuencia de duelos."
   },
   "nodes": [
     {
@@ -434,6 +434,18 @@ window.IDEA_TELARANA_F52_REVIEW = {
           "transcriptCharOffset": 17937,
           "minuteVerified": false,
           "audioVerified": false
+        },
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo expresa una preferencia personal por la variante amorosa de la leyenda. No aporta evidencia histórica para escogerla.",
+          "transcriptSearch": "yo creo que el amor",
+          "transcriptCharOffset": 25600,
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -568,6 +580,230 @@ window.IDEA_TELARANA_F52_REVIEW = {
           "audioVerified": false
         }
       ]
+    },
+    {
+      "id": "f52-necropolis-foro",
+      "name": "Necrópolis arcaica del Foro romano",
+      "kind": "Lugar",
+      "subtitle": "Excavaciones de Giacomo Boni, 1902–1905",
+      "note": "El museo del Foro documenta enterramientos de la Edad del Hierro, incluidos del siglo X a. C., cerca del templo de Antonino y Faustina. Evidencia de poblamiento, no de la biografía de Rómulo.",
+      "source": "https://colosseo.it/en/area/museums/the-new-roman-forum-museum/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo menciona sepulcros humanos antiguos en las inmediaciones del templo de Antonino y Faustina.",
+          "transcriptSearch": "hay sepulcros humanos",
+          "transcriptCharOffset": 20360,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-porsena",
+      "name": "Lars Porsena",
+      "kind": "Persona",
+      "subtitle": "Rey etrusco de Clusium en la tradición",
+      "note": "Tácito, Historias III.72, alude a la rendición de Roma; existen versiones divergentes. No está acreditado que Porsena fuese un octavo rey romano.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/549702400",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT plantea la conquista de Roma por Porsena y la posibilidad de contarlo como otro rey. La segunda inferencia no está demostrada.",
+          "transcriptSearch": "Lars por Porsena",
+          "transcriptCharOffset": 20750,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-tacito-porsena",
+      "name": "Tácito: Historias III.72",
+      "kind": "Fuente",
+      "subtitle": "Testimonio historiográfico posterior",
+      "note": "El pasaje alude a la entrega de Roma a Porsena, no demuestra una investidura regia romana.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/3C%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-eneida",
+      "name": "Eneida",
+      "kind": "Documento",
+      "subtitle": "Poema épico de Virgilio",
+      "note": "La obra enlaza el pasado troyano y el futuro romano dentro de la tradición épica. No es prueba genealógica o arqueológica de la fundación.",
+      "source": "https://onlinelibrary.wiley.com/doi/10.1002/9781118351352.wbve9999",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La entrevista presenta la Eneida como formulación literaria del origen troyano y del destino de Roma.",
+          "transcriptSearch": "Virgilio en la Eneida",
+          "transcriptCharOffset": 21384,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-omobono",
+      "name": "Sant’Omobono",
+      "kind": "Lugar",
+      "subtitle": "Santuario arcaico del Foro Boario",
+      "note": "El proyecto arqueológico documenta una secuencia compleja de edificios de culto. No se puede inferir directamente de ella una caída violenta de la monarquía; la hipótesis del incendio requiere contraste estratigráfico específico.",
+      "source": "https://intarch.ac.uk/journal/issue31/1/index.html",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT propone relacionar posibles señales de incendio en Sant’Omobono con una transición monárquica violenta. Se registra como hipótesis, no como prueba.",
+          "transcriptSearch": "Sanobono",
+          "transcriptCharOffset": 22103,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-tarquinio-prisco",
+      "name": "Tarquinio Prisco",
+      "kind": "Persona",
+      "subtitle": "Quinto rey de Roma según la tradición",
+      "note": "El diccionario clásico de Oxford lo sitúa quinto, no cuarto. Cronología tradicional 616–579 a. C.; no se presenta como fecha arqueológica exacta.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548207521?login=false",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La transcripción lo llama cuarto rey con una expresión de duda; el orden tradicional lo sitúa quinto. Pendiente comprobar si el error corresponde al ASR o al hablante.",
+          "transcriptSearch": "el cuarto rey",
+          "transcriptCharOffset": 23451,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-cloaca",
+      "name": "Cloaca Máxima",
+      "kind": "Lugar",
+      "subtitle": "Infraestructura hidráulica de Roma",
+      "note": "La infraestructura tiene fases desde época arcaica hasta imperial. La cronología y el recorrido inicial precisos siguen discutidos; no demuestra una unificación urbana en un único año.",
+      "source": "https://research.uniroma1.it/en/pubblicazioni/51600",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo vincula el drenaje de la zona del Foro y el origen de la Cloaca Máxima con la formación de una ciudad unificada.",
+          "transcriptSearch": "se empieza a construir la colaca máxima",
+          "transcriptCharOffset": 23801,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-brock-roma",
+      "name": "On the Banks of the Tiber: Opportunity and Transformation in Early Rome",
+      "kind": "Fuente",
+      "subtitle": "Journal of Roman Studies (2021)",
+      "note": "Estudio de transformación urbana, relleno, pavimentación y drenaje; advierte que la cronología de la red arcaica es incierta debido a reconstrucciones.",
+      "source": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/on-the-banks-of-the-tiber-opportunity-and-transformation-in-early-rome/2102BC2695CC0D6CA991BCCEC3E1C097",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-horacios-curiacios",
+      "name": "Relato de los Horacios y Curiacios",
+      "kind": "Evento",
+      "subtitle": "Tradición literaria sobre Roma y Alba Longa",
+      "note": "Tito Livio I.23–26 sitúa el relato en un conflicto con Alba Longa, no Cures. La existencia de la narración no demuestra la historicidad del duelo ni su frecuencia.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El TXT atribuye a los Curiacios procedencia de Cures. La fuente literaria consultada sitúa el episodio en la guerra con Alba Longa; discrepancia pendiente de audio.",
+          "transcriptSearch": "tres curiaceos de cures",
+          "transcriptCharOffset": 26630,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-alba-longa",
+      "name": "Alba Longa",
+      "kind": "Lugar",
+      "subtitle": "Ciudad del Lacio en la tradición romana",
+      "note": "Es el otro pueblo del conflicto en el relato de Livio I.23–26; no se confunde con Cures.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-valerio-corvo",
+      "name": "Marco Valerio Corvo",
+      "kind": "Persona",
+      "subtitle": "Personaje de la tradición republicana",
+      "note": "Livio VII.26 y Dionisio de Halicarnaso XV.1 transmiten el relato del duelo y el cuervo. La coincidencia literaria no garantiza independencia ni la historicidad de los elementos prodigiosos.",
+      "source": "https://cts.perseids.org/read/latinLit/phi0914/phi001/perseus-eng3/7.26.1-7.26.13",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 19704–28932, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo menciona el episodio de Marco Valerio y el cuervo como ejemplo de combate singular. La frecuencia histórica no se deduce de los relatos seleccionados.",
+          "transcriptSearch": "Marco Valiro",
+          "transcriptCharOffset": 27749,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-dionisio-corvo",
+      "name": "Dionisio de Halicarnaso: Antigüedades romanas XV.1",
+      "kind": "Fuente",
+      "subtitle": "Tradición historiográfica sobre Valerio",
+      "note": "Versión antigua del episodio de Valerio; no se presume independencia de las tradiciones.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/15%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -996,6 +1232,149 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "type": "Relato fundacional",
       "note": "El texto antiguo vincula la fundación con la incorporación de las sabinas.",
       "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/livy/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-0",
+      "a": "f52-necropolis-foro",
+      "b": "f52-palatino",
+      "type": "Contexto de poblamiento arcaico",
+      "note": "Evidencias materiales de la Roma temprana; no establecen el año de fundación.",
+      "source": "https://colosseo.it/en/area/museums/the-new-roman-forum-museum/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-1",
+      "a": "f52-tacito-porsena",
+      "b": "f52-porsena",
+      "type": "Testimonio de rendición",
+      "note": "El texto alude a la entrega de la ciudad, no a una coronación.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/3C%2A.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-2",
+      "a": "f52-porsena",
+      "b": "f44-republica-romana",
+      "type": "Tradición sobre transición política",
+      "note": "Versiones antiguas contradictorias sobre el papel de Porsena.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/549702400",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-3",
+      "a": "f52-eneida",
+      "b": "f44-romulo",
+      "type": "Tradición fundacional literaria",
+      "note": "La genealogía épica no demuestra la existencia de Rómulo.",
+      "source": "https://onlinelibrary.wiley.com/doi/10.1002/9781118351352.wbve9999",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-4",
+      "a": "f52-omobono",
+      "b": "f44-republica-romana",
+      "type": "Hipótesis de transición violenta",
+      "note": "El sitio tiene una secuencia compleja; el incendio y su nexo político no están confirmados.",
+      "source": "https://intarch.ac.uk/journal/issue31/1/index.html",
+      "claimStatus": "hipotesis_no_verificada",
+      "confidence": "hipotesis",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-5",
+      "a": "f52-tarquinio-prisco",
+      "b": "f52-cloaca",
+      "type": "Atribución tradicional de obras hidráulicas",
+      "note": "La cronología exacta no queda establecida por la atribución literaria.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548207521?login=false",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-6",
+      "a": "f52-brock-roma",
+      "b": "f52-cloaca",
+      "type": "Reconstrucción arqueológica de drenajes",
+      "note": "El estudio advierte incertidumbre cronológica.",
+      "source": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/on-the-banks-of-the-tiber-opportunity-and-transformation-in-early-rome/2102BC2695CC0D6CA991BCCEC3E1C097",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-7",
+      "a": "f52-brock-roma",
+      "b": "f52-omobono",
+      "type": "Contexto de urbanización arcaica",
+      "note": "El estudio incluye el santuario y su paisaje urbano.",
+      "source": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/on-the-banks-of-the-tiber-opportunity-and-transformation-in-early-rome/2102BC2695CC0D6CA991BCCEC3E1C097",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-8",
+      "a": "f52-horacios-curiacios",
+      "b": "f52-alba-longa",
+      "type": "Conflicto en la tradición literaria",
+      "note": "Livio sitúa el relato en la guerra con Alba Longa.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-9",
+      "a": "f52-livio-1",
+      "b": "f52-horacios-curiacios",
+      "type": "Continuidad del corpus de Livio",
+      "note": "El episodio es I.23–26, distinto de I.8–13 registrado previamente.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-10",
+      "a": "f52-dionisio-corvo",
+      "b": "f52-valerio-corvo",
+      "type": "Variante historiográfica",
+      "note": "Relato antiguo; no confirma el prodigio ni su independencia.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/15%2A.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-11",
+      "a": "f52-episodio",
+      "b": "f52-tarquinio-prisco",
+      "type": "Discrepancia de orden tradicional",
+      "note": "TXT: cuarto; referencia clásica: quinto. Pendiente audio.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548207521?login=false",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo3-12",
+      "a": "f52-episodio",
+      "b": "f52-horacios-curiacios",
+      "type": "Discrepancia geográfica textual",
+      "note": "TXT: Cures; Livio: Alba Longa. Pendiente audio.",
+      "source": "https://cmuntz.hosted.uark.edu/texts/livy/book-1-part-1.html",
       "claimStatus": "testimonio_textual_atribuido",
       "confidence": "documentado",
       "podcastNotes": []
