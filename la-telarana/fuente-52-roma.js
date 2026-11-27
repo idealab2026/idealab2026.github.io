@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F52_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual."
+    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido."
   },
   "nodes": [
     {
@@ -73,6 +73,18 @@ window.IDEA_TELARANA_F52_REVIEW = {
           "timeSec": null,
           "status": "relato_de_la_conversacion_sin_audio",
           "text": "El episodio distingue la República del Imperio y alude a la continuidad oriental. Son procesos históricos extensos y no una frontera simple para todos los temas."
+        },
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 7488–9610, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo usa 509 a. C. y 27 a. C. como límites convencionales de la República y advierte que las transiciones institucionales son graduales. Presenta 753 a. C. como fecha tradicional de fundación de Roma, no como fecha arqueológica exacta.",
+          "transcriptSearch": "República en el año 509",
+          "transcriptCharOffset": 8457,
+          "minuteVerified": false,
+          "audioVerified": false
         }
       ]
     },
@@ -284,6 +296,62 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "subtitle": "Testimonio historiográfico posterior",
       "note": "Atribuye a Vespasiano la construcción de un anfiteatro en el centro de Roma. El texto no demuestra por sí solo todos los detalles arqueológicos del emplazamiento.",
       "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/suetonius/12caesars/vespasian%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-lex-vespasiani",
+      "name": "Lex de imperio Vespasiani",
+      "kind": "Documento",
+      "subtitle": "Tabla de bronce, CIL VI 930",
+      "note": "La tabla conservada en los Museos Capitolinos registra cláusulas de atribución de poderes a Vespasiano, en 69–70 d. C. Es una parte de un texto perdido y no acredita que el poder imperial naciera entonces. El texto automático simplifica su alcance.",
+      "source": "https://www.museicapitolini.org/es/opera/tavola-bronzea-con-la-lex-de-imperio-vespasiani",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 7488–9610, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo presenta la ley como fijación de los títulos y poderes del emperador. La inscripción conservada permite contrastar parcialmente esa interpretación.",
+          "transcriptSearch": "lex de Imperio Vespasiani",
+          "transcriptCharOffset": 9014,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-lapis-niger",
+      "name": "Lapis Niger e inscripción arcaica del Comitium",
+      "kind": "Objeto",
+      "subtitle": "Foro romano · identificación contextual",
+      "note": "La mención de una piedra del comicio es compatible con el cipo arcaico bajo el Lapis Niger, pero el pasaje no nombra el objeto. La inscripción menciona rex; su interpretación y el carácter político o ritual del título exigen cautela. No prueba la lista tradicional de siete reyes.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/Forum_Romanum/_Texts/Huelsen%2A/2/17.html",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 7488–9610, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "Se menciona una piedra del comicio como indicio de la existencia de reyes. Identificación del monumento inferida, no confirmada por este tramo.",
+          "transcriptSearch": "en el comicio hay una piedra",
+          "transcriptCharOffset": 8318,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f44-vespasiano",
+      "name": "Vespasiano",
+      "kind": "Persona",
+      "subtitle": "Emperador romano",
+      "note": "La legislación de investidura conservada corresponde a su gobierno; no prueba un comienzo tardío del Principado.",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550527909?login=false",
       "topic3d": "historia",
       "podcastNotes": []
     }
@@ -540,6 +608,50 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/suetonius/12caesars/vespasian%2A.html",
       "claimStatus": "testimonio_textual_atribuido",
       "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo1-lex",
+      "a": "f52-lex-vespasiani",
+      "b": "f44-vespasiano",
+      "type": "Atribución legislativa de poderes",
+      "note": "Documento parcialmente conservado; la concesión no equivale a creación de todos los poderes imperiales.",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "source": "https://www.museicapitolini.org/es/opera/tavola-bronzea-con-la-lex-de-imperio-vespasiani",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo1-lex-imp",
+      "a": "f52-lex-vespasiani",
+      "b": "f44-imperio-romano",
+      "type": "Evidencia epigráfica de la investidura",
+      "note": "La fecha de investidura y el alcance de las cláusulas se distinguen de la periodización del Principado.",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550527909?login=false",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo1-piedra",
+      "a": "f52-episodio",
+      "b": "f52-lapis-niger",
+      "type": "Identificación contextual tentativa",
+      "note": "El fragmento no nombra la inscripción; no se atribuye identificación explícita al hablante.",
+      "claimStatus": "hipotesis_no_verificada",
+      "confidence": "hipotesis",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo1-rex",
+      "a": "f52-lapis-niger",
+      "b": "f44-republica-romana",
+      "type": "Contexto institucional arcaico",
+      "note": "La interpretación de rex político o ritual no permite certificar el año de transición ni los siete reyes.",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/Forum_Romanum/_Texts/Huelsen%2A/2/17.html",
       "podcastNotes": []
     }
   ]

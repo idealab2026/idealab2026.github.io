@@ -1735,12 +1735,12 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 19,
-      "sourceRelationsDocumented": 23,
+      "sourceNodesDocumented": 22,
+      "sourceRelationsDocumented": 27,
       "personsProfiled": 1,
-      "documentaryChecks": 9,
+      "documentaryChecks": 11,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas. Contraste externo de Nerón y Domus Aurea, seis nodos y ocho relaciones. Sin atribuciones nuevas al audio.",
+      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas. Contraste externo de Nerón y Domus Aurea, seis nodos y ocho relaciones. Sin atribuciones nuevas al audio. Primera auditoría de lectura y extracción con hash coincidente: tramo 7488–9610. Tres notas originales nuevas, sin minuto ni audio.",
       "lastUpdated": "2026-11-27"
     },
     {
@@ -5832,14 +5832,27 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 19,
-            "relations": 23,
+            "entities": 22,
+            "relations": 27,
             "biographies": 1,
-            "statements": 8,
-            "independentChecks": 9,
+            "statements": 11,
+            "independentChecks": 11,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar audio y hablantes; continuar revisión de la conversación y contrastar anécdotas y detalles sociales con fuentes históricas. Contraste externo de Tácito, Suetonio y arqueología de las residencias imperiales incorporado 27-11-2026; no cotejo del audio."
+          "nextAction": "Cotejar audio y hablantes; continuar revisión de la conversación y contrastar anécdotas y detalles sociales con fuentes históricas. Contraste externo de Tácito, Suetonio y arqueología de las residencias imperiales incorporado 27-11-2026; no cotejo del audio. Continuar revisión por tramos del TXT; tramo 7488–9610 leído y extraído, 0,9 % de cobertura de texto registrada. No equivale a verificar todas sus afirmaciones.",
+          "textAudit": {
+            "sha256": "48b40fc65451c5e0862485772f929e65d97158022905656c28a176555a0687b1",
+            "totalCharacters": 235957,
+            "reviewedRanges": [
+              [
+                7488,
+                9610
+              ]
+            ],
+            "method": "lectura_y_extraccion_editorial_sin_cotejo_audio",
+            "offsetUnit": "utf16",
+            "lastReviewed": "2026-11-27"
+          }
         }
       },
       {
