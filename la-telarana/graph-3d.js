@@ -18,6 +18,9 @@ function make(options){
  let nodes=[],edges=[],pos=new Map(),selection=null,hover=null,mode="focus",theme="todos",search="",yaw=-.45,pitch=.24,basePitch=.24,zoom=1,panX=0,panY=0,w=1000,h=700,dpr=1,drag=null,down=new Map(),hits=[],edgeHits=[],bandHits=[],cached=new Map(),queued=false,hoverEdge=null;
  let motionEnabled=!(typeof window.matchMedia==="function"&&window.matchMedia("(prefers-reduced-motion: reduce)").matches);
  let motionStarted=false,quietUntil=0,lastMotionFrame=0;
+ let representation="orb",fittedZoom=1;
+ const layouts=[{id:"orb",label:"Orbe 3D"},{id:"cloud",label:"Nube 3D"},{id:"galaxy",label:"Galaxia 3D"}];
+ let extent=1080;
  const index=new Map(),PI=Math.PI;
  function group(n){
   if(n&&n.topic3d&&topics.some(t=>t[0]===n.topic3d))return n.topic3d;
@@ -45,16 +48,71 @@ function make(options){
    y:radius*(n.y*ca+(u.y*c+v.y*t)*sa),
    z:radius*(n.z*ca+(u.z*c+v.z*t)*sa)};
  }
+ // Nube: fuerzas entre centros temáticos (8), ponderadas por enlaces del subgrafo.
+ // No se interpreta la cercanía como causalidad; no hay simulación O(N²) de entidades.
+ function cloudCentres(degreeByTopic,pairs,counts){
+  const active=topics.map(t=>t[0]).filter(id=>counts.get(id)>0);
+  const c=new Map(active.map(id=>{const n=normals.get(id);return[id,{x:n.x*850,y:n.y*850,z:n.z*850}]}));
+  for(let iter=0;iter<110;iter++){
+   const forces=new Map(active.map(id=>[id,{x:0,y:0,z:0}]));
+   for(let i=0;i<active.length;i++)for(let j=i+1;j<active.length;j++){
+    const a=active[i],b=active[j],p=c.get(a),q=c.get(b);
+    const dx=q.x-p.x,dy=q.y-p.y,dz=q.z-p.z,d=Math.max(1,Math.hypot(dx,dy,dz));
+    const links=pairs.get([a,b].sort().join("|"))||0;
+    const strength=clip(links/Math.sqrt(Math.max(1,degreeByTopic.get(a))*Math.max(1,degreeByTopic.get(b))),0,1);
+    const target=1450-640*Math.sqrt(strength);
+    const force=(d-target)*(.013+.025*Math.sqrt(strength));
+    const u=forces.get(a),v=forces.get(b);
+    for(const [key,delta] of [["x",dx],["y",dy],["z",dz]]){u[key]+=delta/d*force;v[key]-=delta/d*force}
+   }
+   for(const id of active){
+    const p=c.get(id),v=forces.get(id);
+    for(const key of ["x","y","z"])p[key]+=clip(v[key]-p[key]*.003,-35,35);
+   }
+  }
+  return c;
+ }
  function arrange(){
+
   pos=new Map();caps.clear();
   const degree=new Map(nodes.map(n=>[n.id,0]));
   for(const e of edges){degree.set(e.a,(degree.get(e.a)||0)+1);degree.set(e.b,(degree.get(e.b)||0)+1)}
+  const counts=new Map(topics.map(t=>[t[0],0])),degreeByTopic=new Map(topics.map(t=>[t[0],0])),pairs=new Map();
+  for(const node of nodes)counts.set(group(node),counts.get(group(node))+1);
+  for(const edge of edges){
+   const a=index.get(edge.a),b=index.get(edge.b);if(!a||!b)continue;
+   const x=group(a),y=group(b);degreeByTopic.set(x,degreeByTopic.get(x)+1);degreeByTopic.set(y,degreeByTopic.get(y)+1);
+   if(x!==y){const key=[x,y].sort().join("|");pairs.set(key,(pairs.get(key)||0)+1)}
+  }
+  const centres=representation==="cloud"?cloudCentres(degreeByTopic,pairs,counts):null;
+  extent=ORB_RADIUS;
   for(const [name] of topics){
    const subset=nodes.filter(n=>group(n)===name)
     .sort((a,b)=>(degree.get(b.id)||0)-(degree.get(a.id)||0)||a.name.localeCompare(b.name,"es"));
    const n=normals.get(name),{u,v}=basis(n);
    const cap=clip(.32+.035*Math.sqrt(subset.length),.35,.63);
-   caps.set(name,{n,u,v,angle:cap+.065,count:subset.length});
+   if(representation!=="orb"){
+    const i=topics.findIndex(t=>t[0]===name),theta=i*2*PI/topics.length;
+    const r=630+260*(i%2);
+    const centre=representation==="cloud"?(centres.get(name)||{x:0,y:0,z:0}):{x:r*Math.cos(theta+.23*(i%2)),y:r*Math.sin(theta+.23*(i%2)),z:35*Math.sin(theta)};
+    const spread=clip(155+10*Math.sqrt(subset.length),180,430);
+    caps.set(name,{centre,count:subset.length});
+    subset.forEach((node,j)=>{
+     const f=(j+.5)/Math.max(1,subset.length),a=j*GOLDEN_ANGLE;
+     let x,y,z;
+     if(representation==="cloud"){
+      const latitude=1-2*((j*.61803398875+.5)%1),ring=Math.sqrt(1-latitude*latitude),d=spread*Math.cbrt(f);
+      x=d*ring*Math.cos(a);y=d*ring*Math.sin(a);z=d*latitude;
+     }else{
+      // Disco con brazos curvos y grosor variable; orden por conectividad dentro de cada tema.
+      const d=spread*Math.sqrt(f),angle=a+.9*f,dx=d*Math.cos(angle)*1.12,dy=d*Math.sin(angle)*.70,twist=theta+.8;
+      x=dx*Math.cos(twist)-dy*Math.sin(twist);y=dx*Math.sin(twist)+dy*Math.cos(twist);z=spread*.24*Math.sin(j*1.73)*Math.sqrt(f);
+     }
+     const p={x:centre.x+x,y:centre.y+y,z:centre.z+z};pos.set(node.id,p);extent=Math.max(extent,Math.hypot(p.x,p.y,p.z));
+    });
+    continue;
+   }
+   caps.set(name,{n,u,v,angle:cap+.065,count:subset.length,centre:{x:n.x*ORB_RADIUS,y:n.y*ORB_RADIUS,z:n.z*ORB_RADIUS}});
    subset.forEach((node,j)=>{
     const f=Math.sqrt((j+.55)/Math.max(1,subset.length));
     const theta=j*GOLDEN_ANGLE;
@@ -105,14 +163,32 @@ function make(options){
    ctx.stroke();
   }
  }
+ function drawBackdrop(){
+  if(representation==="orb"){drawOrb();return}
+  // La nube no tiene contorno esférico. La galaxia incluye pistas de su plano de giro.
+  if(representation==="galaxy"){
+   ctx.strokeStyle="rgba(115,176,213,.10)";ctx.lineWidth=.8;
+   for(const radius of [400,730,1080]){
+    ctx.beginPath();for(let j=0;j<=96;j++){
+     const a=j*2*PI/96,p=proj({x:radius*Math.cos(a),y:radius*Math.sin(a),z:0});
+     if(!j)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);
+    }ctx.stroke();
+   }
+   for(let arm=0;arm<3;arm++){
+    ctx.beginPath();for(let j=0;j<=80;j++){
+     const r=150+j*12,a=arm*2*PI/3+j*.035,p=proj({x:r*Math.cos(a),y:r*Math.sin(a),z:0});
+     if(!j)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);
+    }ctx.stroke();
+   }
+  }
+ }
  function drawRegions(visible,pr){
   bandHits=[];
   const middle={x:w/2+panX,y:h/2+panY};
   const radius=ORB_RADIUS*Math.min(w/1450,h/950)*zoom;
   const groups=topics.map(([id,label,tint])=>{
    const cap=caps.get(id),members=visible.filter(n=>group(n)===id&&pr.has(n.id));
-   return{id,label,tint,cap,members,centre:cap?proj({
-    x:cap.n.x*ORB_RADIUS,y:cap.n.y*ORB_RADIUS,z:cap.n.z*ORB_RADIUS}):null};
+   return{id,label,tint,cap,members,centre:cap?proj(cap.centre):null};
   }).filter(t=>t.cap&&t.members.length).sort((a,b)=>b.centre.depth-a.centre.depth);
   const labels=[];
   for(const t of groups){
@@ -122,11 +198,12 @@ function make(options){
    // Nube cromática proyectada sobre la superficie, sin bordes ni anillos temáticos.
    // La huella sigue la perspectiva del orbe y se desvanece suavemente hacia el exterior.
    const edgePoints=[];
-   for(let j=0;j<64;j++){
-    const world=surfacePoint(t.cap.n,t.cap.u,t.cap.v,
-      j*2*PI/64,t.cap.angle,ORB_RADIUS+8);
-    edgePoints.push(proj(world));
-   }
+   if(representation==="orb"){
+    for(let j=0;j<64;j++){
+     const world=surfacePoint(t.cap.n,t.cap.u,t.cap.v,j*2*PI/64,t.cap.angle,ORB_RADIUS+8);
+     edgePoints.push(proj(world));
+    }
+   }else for(const node of t.members)edgePoints.push(pr.get(node.id));
    const bx=edgePoints.map(p=>p.x),by=edgePoints.map(p=>p.y);
    const left=Math.min(...bx),right=Math.max(...bx),top=Math.min(...by),bottom=Math.max(...by);
    const fogCx=(left+right)/2,fogCy=(top+bottom)/2;
@@ -143,36 +220,79 @@ function make(options){
    ctx.beginPath();ctx.arc(0,0,1,0,2*PI);
    ctx.fillStyle=fog;ctx.fill();
    ctx.restore();
-   const dx=t.centre.x-middle.x,dy=t.centre.y-middle.y,len=Math.hypot(dx,dy);
-   const d=len>22?len:radius*.7;
-   const vx=len>22?dx/len:Math.cos(topics.findIndex(row=>row[0]===t.id)*GOLDEN_ANGLE);
-   const vy=len>22?dy/len:Math.sin(topics.findIndex(row=>row[0]===t.id)*GOLDEN_ANGLE);
-   const labelR=Math.max(radius*.70,Math.min(radius*1.18,d+46));
-   labels.push({...t,alpha,active,x:middle.x+vx*labelR,y:middle.y+vy*labelR});
+   labels.push({...t,alpha,active});
   }
-  // Etiquetas flotantes, compactas, sin rectángulos temáticos sobre las neuronas.
-  const rects=[];
-  for(const t of labels){
-   const bw=clip(t.label.length*7.15+38,118,215),bh=43;
-   let px=clip(t.x-bw/2,12,w-bw-12),py=clip(t.y-bh/2,108,h-bh-15);
-   for(let iteration=0;iteration<18;iteration++){
-    const collide=rects.find(r=>px<r.x+r.w+8&&px+bw+8>r.x&&py<r.y+r.h+7&&py+bh+7>r.y);
-    if(!collide)break;
-    py=clip(py+(py+bh/2<collide.y+collide.h/2?-15:15),108,h-bh-15);
-    if(iteration===9)px=clip(px+35,12,w-bw-12);
+  return labels;
+ }
+ function drawLabels(labels,pr){
+  // Spatial occupancy grid: label placement is cheap even with thousands of entities.
+  const cell=24,grid=new Map(),points=Array.from(pr.values()).map(p=>({...p,r:visualRadius(p)+5}));
+  for(const p of points){
+   if(p.x<-p.r||p.x>w+p.r||p.y<-p.r||p.y>h+p.r)continue;
+   for(let x=Math.floor((p.x-p.r)/cell);x<=Math.floor((p.x+p.r)/cell);x++)
+    for(let y=Math.floor((p.y-p.r)/cell);y<=Math.floor((p.y+p.r)/cell);y++){
+     const k=x+","+y;if(!grid.has(k))grid.set(k,[]);grid.get(k).push(p);
+    }
+  }
+  const middle={x:w/2+panX,y:h/2+panY},rects=[];
+  const top=w<=600?125:105,bottom=h-55;
+  const panel=canvas.closest(".graph-panel"),aside=panel&&panel.classList.contains("drawer-open")?panel.querySelector(".inspector"):null;
+  const availableRight=w-(aside?Math.min(aside.getBoundingClientRect().width,w*.55):0)-10;
+  function occupancy(b){
+   const nearby=new Set();
+   for(let x=Math.floor((b.x-6)/cell);x<=Math.floor((b.x+b.w+6)/cell);x++)
+    for(let y=Math.floor((b.y-6)/cell);y<=Math.floor((b.y+b.h+6)/cell);y++)
+     for(const p of grid.get(x+","+y)||[])nearby.add(p);
+   let count=0;
+   for(const p of nearby){
+    const dx=p.x-clip(p.x,b.x-6,b.x+b.w+6),dy=p.y-clip(p.y,b.y-6,b.y+b.h+6);
+    if(dx*dx+dy*dy<p.r*p.r)count++;
    }
-   rects.push({x:px,y:py,w:bw,h:bh});
-   ctx.save();ctx.globalAlpha=theme!=="todos"&&!t.active?.25:clip(t.alpha+.20,.4,1);
-   ctx.beginPath();ctx.roundRect(px,py,bw,bh,13);
-   ctx.fillStyle="rgba(12,26,39,.89)";ctx.fill();
-   ctx.strokeStyle=color(t.tint,t.active?.9:.55);ctx.lineWidth=t.active?1.7:1;ctx.stroke();
+   return count;
+  }
+  const ordered=labels.slice().sort((a,b)=>Number(b.active)-Number(a.active)||b.members.length-a.members.length||a.id.localeCompare(b.id));
+  for(const t of ordered){
+   const bw=clip(t.label.length*6.8+28,110,190),bh=40;
+   if(availableRight-bw<10||bottom-top<bh)continue;
+   const groupPoints=t.members.map(n=>pr.get(n.id));
+   const anchor=groupPoints.reduce((a,p)=>({x:a.x+p.x/groupPoints.length,y:a.y+p.y/groupPoints.length}),{x:0,y:0});
+   let dx=anchor.x-middle.x,dy=anchor.y-middle.y,len=Math.hypot(dx,dy);
+   if(len<10){const angle=topics.findIndex(row=>row[0]===t.id)*GOLDEN_ANGLE;dx=Math.cos(angle);dy=Math.sin(angle);len=1}
+   const vx=dx/len,vy=dy/len;
+   const support=groupPoints.reduce((best,p)=>Math.max(best,(p.x-anchor.x)*vx+(p.y-anchor.y)*vy+visualRadius(p)),0);
+   const desired={x:anchor.x+vx*(support+38+bw*.38),y:anchor.y+vy*(support+38+bh*.4)};
+   const candidates=[];
+   function add(cx,cy){
+    const box={x:clip(cx-bw/2,10,availableRight-bw),y:clip(cy-bh/2,top,bottom-bh),w:bw,h:bh};
+    if(rects.some(r=>box.x<r.x+r.w+6&&box.x+bw+6>r.x&&box.y<r.y+r.h+5&&box.y+bh+5>r.y))return;
+    const overlap=occupancy(box);
+    const distance=Math.hypot(box.x+bw/2-desired.x,box.y+bh/2-desired.y);
+    candidates.push({...box,overlap,cost:overlap*1800+distance});
+   }
+   add(desired.x,desired.y);
+   for(let i=0;i<16;i++){
+    const a=i*2*PI/16,rx=Math.max(80,support+60);
+    add(anchor.x+Math.cos(a)*(rx+bw*.4),anchor.y+Math.sin(a)*(rx+bh*.5));
+   }
+   // Rails at screen edges keep labels outside dense projections, including the rear hemisphere.
+   for(let y=top+bh/2;y<=bottom-bh/2+1;y+=bh+7){add(10+bw/2,y);add(availableRight-bw/2,y)}
+   for(let x=10+bw/2;x<=availableRight-bw/2+1;x+=Math.max(55,bw*.55)){add(x,top+bh/2);add(x,bottom-bh/2)}
+   candidates.sort((a,b)=>a.cost-b.cost);
+   const best=candidates[0];if(!best)continue;
+   // At close zoom a clear label may not fit. Prefer omission to covering entity nodes.
+   if(best.overlap>0&&zoom>fittedZoom*1.8&&!t.active)continue;
+   const px=best.x,py=best.y;rects.push(best);
+   const target={x:clip(anchor.x,px,px+bw),y:clip(anchor.y,py,py+bh)};
+   ctx.save();ctx.globalAlpha=theme!=="todos"&&!t.active?.32:clip(t.alpha+.42,.67,1);
+   ctx.beginPath();ctx.moveTo(anchor.x,anchor.y);ctx.lineTo(target.x,target.y);
+   ctx.strokeStyle=color(t.tint,.64);ctx.lineWidth=.9;ctx.stroke();
+   ctx.beginPath();ctx.roundRect(px,py,bw,bh,10);
+   ctx.fillStyle="rgba(12,26,39,.96)";ctx.fill();
+   ctx.strokeStyle=color(t.tint,t.active?.9:.65);ctx.lineWidth=t.active?1.7:1;ctx.stroke();
    ctx.textAlign="left";ctx.textBaseline="top";
-   ctx.fillStyle=t.tint;ctx.font="700 12px system-ui";
-   ctx.fillText(t.label,px+11,py+7,bw-22);
-   ctx.fillStyle="#a9bbca";ctx.font="600 10px system-ui";
-   ctx.fillText(t.members.length+" entidades",px+11,py+25);
-   ctx.restore();
-   bandHits.push({id:t.id,x:px,y:py,w:bw,h:bh});
+   ctx.fillStyle=t.tint;ctx.font="700 12px system-ui";ctx.fillText(t.label,px+9,py+6,bw-18);
+   ctx.fillStyle="#a9bbca";ctx.font="600 10px system-ui";ctx.fillText(t.members.length+" entidades",px+9,py+23);
+   ctx.restore();bandHits.push({id:t.id,x:px,y:py,w:bw,h:bh});
   }
  }
  function render(){
@@ -186,7 +306,7 @@ function make(options){
   ctx.strokeStyle="rgba(115,153,182,.055)";ctx.lineWidth=.7;
   for(let x=0;x<w;x+=44){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke()}
   for(let y=0;y<h;y+=44){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke()}
-  drawOrb();
+  drawBackdrop();
   const queryKey=String(search||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
   const normalize=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
   const names=queryKey?nodes.filter(n=>normalize(n.name).includes(queryKey)):[];
@@ -195,7 +315,7 @@ function make(options){
   if(queryKey)edges.forEach(e=>{if(seeds.has(e.a)||seeds.has(e.b)){displayed.add(e.a);displayed.add(e.b)}});
   const visible=queryKey?nodes.filter(n=>displayed.has(n.id)):nodes;
   const pr=new Map(visible.map(n=>[n.id,proj(pos.get(n.id)||{x:0,y:0,z:0})]));
-  drawRegions(visible,pr);
+  const labels=drawRegions(visible,pr);
   const focus=hover||(selection?.kind==="node"?selection.id:null);
   const selectedEdge=selection?.kind==="edge"?edges.find(e=>e.id===selection.id):null;
   const activeEndpoints=new Set(selectedEdge?[selectedEdge.a,selectedEdge.b]:[]);
@@ -209,8 +329,7 @@ function make(options){
    // Arco suave cercano a la superficie de la esfera: apariencia neuronal.
    const p1=pos.get(e.a),p2=pos.get(e.b),joint=unit({
     x:p1.x+p2.x,y:p1.y+p2.y,z:p1.z+p2.z});
-   const c=proj({x:joint.x*ORB_RADIUS*.89,y:joint.y*ORB_RADIUS*.89,
-    z:joint.z*ORB_RADIUS*.89});
+   const c=representation==="orb"?proj({x:joint.x*ORB_RADIUS*.89,y:joint.y*ORB_RADIUS*.89,z:joint.z*ORB_RADIUS*.89}):proj({x:(p1.x+p2.x)*.46,y:(p1.y+p2.y)*.46,z:(p1.z+p2.z)*.46});
    ctx.beginPath();ctx.moveTo(a.x,a.y);
    ctx.quadraticCurveTo(c.x,c.y,b.x,b.y);
    ctx.lineWidth=selected?3.8:hot?3:linked?2.6:same?2:1.3;
@@ -253,6 +372,7 @@ function make(options){
    }
    ctx.globalAlpha=1;hits.push({id:n.id,x:p.x,y:p.y,r:Math.max(12,rad+6)});
   });
+  drawLabels(labels,pr);
   // Las etiquetas de los temas se muestran en las cabeceras de sus regiones.
   const title=theme==="todos"?"Todas las comunidades":topics.find(t=>t[0]===theme)[1];
   // En móvil la barra de controles ocupa una segunda fila; reservarle espacio.
@@ -274,8 +394,9 @@ function make(options){
   const left=30,right=w-reserved-30,top=h<530?76:105,bottom=h-(h<530?58:80);
   const usableX=Math.max(70,right-left),usableY=Math.max(70,bottom-top);
   const base=Math.min(w/1450,h/950);
-  const outerRadius=ORB_RADIUS*base*1.33;
+  const outerRadius=extent*base*1.33;
   zoom=clip(Math.min(usableX/(2*outerRadius),usableY/(2*outerRadius)),.055,7);
+  fittedZoom=zoom;
   panX=(left+right)/2-w/2;
   panY=(top+bottom)/2-h/2;
   redraw();
@@ -304,8 +425,9 @@ function make(options){
  function hit(p){
   // Los nodos están por delante de las líneas; las líneas se detectan por
   // distancia real al segmento, no por el orden de dibujo.
-  for(let i=hits.length-1;i>=0;i--){const n=hits[i];if(Math.hypot(p.x-n.x,p.y-n.y)<=n.r)return{kind:"node",id:n.id}}
+  // Labels are drawn last and therefore take precedence in their own rectangles.
   for(let i=bandHits.length-1;i>=0;i--){const b=bandHits[i];if(p.x>=b.x&&p.x<=b.x+b.w&&p.y>=b.y&&p.y<=b.y+b.h)return{kind:"theme",id:b.id}}
+  for(let i=hits.length-1;i>=0;i--){const n=hits[i];if(Math.hypot(p.x-n.x,p.y-n.y)<=n.r)return{kind:"node",id:n.id}}
   let nearest=null,nearestDistance=14;
   edgeHits.forEach(e=>{
    let previous=e.a;
@@ -391,11 +513,19 @@ function make(options){
    redraw();startMotion()
   },
   setSelection(s){selection=s;redraw()},setQuery(s){search=s||"";redraw()},setEdgeMode(s){mode=s;redraw()},
+  setLayout(next){
+   if(!layouts.some(x=>x.id===next))return false;
+   if(next===representation)return true;
+   representation=next;hover=null;hoverEdge=null;hint.hidden=true;hits=[];edgeHits=[];bandHits=[];
+   arrange();this.reset();return true;
+  },
+  getLayout(){return representation},
   setTheme(s){markInteraction();theme=topics.some(t=>t[0]===s)?s:"todos";hover=null;hoverEdge=null;hint.hidden=true;
    yaw=-.45;pitch=.24;basePitch=.24;zoom=1;panX=panY=0;fitView()},
   focusNode(id){
    const p=pos.get(id);if(!p)return false;
    markInteraction();hover=null;hoverEdge=null;
+   if(representation!=="orb"){zoom=Math.max(zoom,.65);panX=panY=0;const screen=proj(p);panX=w/2-screen.x;panY=h/2-screen.y;redraw();return true;}
    // Gira el hemisferio visible hacia el nodo y amplía la ficha seleccionada.
    yaw=Math.atan2(p.x,p.z);
    const r=Math.hypot(p.x,p.z);
@@ -405,7 +535,7 @@ function make(options){
   },
   zoom(f){zoomAt(w/2,h/2,f)},
   fit:fitView,
-  reset(){markInteraction();yaw=-.45;pitch=.24;basePitch=.24;zoom=1;panX=panY=0;fitView()},
+  reset(){markInteraction();yaw=-.45;pitch=representation==="galaxy"?.46:.24;basePitch=pitch;zoom=1;panX=panY=0;fitView()},
   organize(){arrange();this.reset()},
   setMotion(enabled){motionEnabled=!!enabled;markInteraction();return motionEnabled},
   isMotionEnabled(){return motionEnabled},redraw

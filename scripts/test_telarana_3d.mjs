@@ -104,6 +104,7 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  assert(gradients>=10,'each thematic region must use a radial fading gradient');
  assert.equal(rings.length,242,'thematic outlines must not add circular strokes');
  assert(pillBoxes.every(b=>b.h<=50),'no large rectangular theme panels');
+ for(let i=0;i<pillBoxes.length;i++)for(let j=i+1;j<pillBoxes.length;j++){const a=pillBoxes[i],b=pillBoxes[j];assert(a.x+a.w<=b.x||b.x+b.w<=a.x||a.y+a.h<=b.y||b.y+b.h<=a.y,"theme labels must not overlap");}
  const body=sphere[0],cx=width/2,cy=height/2;
  assert(rings.every(p=>Math.hypot(p.x-cx,p.y-cy)<body.r*1.36),
   'nodes must stay near the sphere, not on a flat external grid');
@@ -166,5 +167,19 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  flush(time+60);
  assert.equal(rings.length,241,"Ocultar un tipo elimina su nodo del orbe, no solo de las estadísticas");
  assert.equal(pillBoxes.length,8,"Conservar las etiquetas de las comunidades activas");
+ // New layouts reuse the filtered data and all camera gestures.
+ for(const mode of ["cloud","galaxy"]){
+  assert(graph.setLayout(mode));flush(time+60);
+  assert.equal(graph.getLayout(),mode);
+  assert.equal(rings.length,241,"all filtered nodes in "+mode);
+  assert.equal(sphere.length,0,"no spherical outline in "+mode);
+  assert(rings.every(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)));
+  assert(Number.isFinite(graph.fit().zoom));flush(time+60);
+  assert(graph.focusNode(subset[0].id));flush(time+60);
+  graph.reset();flush(time+60);
+ }
+ assert(graph.setLayout("orb"));flush(time+60);assert.equal(sphere.length,1);
+ assert.equal(graph.setLayout("invalid"),false);
 }
-console.log('OK: 8 zonas difuminadas sin círculos perimetrales, Historia e Iglesia, mano agarrando, 242 nodos, 5 resoluciones y zoom');
+for(const mode of ["orb","cloud","galaxy","2d"])assert(page.includes('<option value="'+mode+'">'));
+console.log('OK: orbe, nube, galaxia, 2D, etiquetas no solapadas, filtros y zoom en seis resoluciones');

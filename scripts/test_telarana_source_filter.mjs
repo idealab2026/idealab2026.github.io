@@ -188,7 +188,7 @@ assert(html.includes('renderGraph(q)'));
 assert(html.includes('renderGallery(q)'));
 assert(/src="\.\/source-filter\.js\?v=[^"]+"/.test(html),"El filtro debe cargarse con versión de caché");
 assert.equal(typeof mod.scoreProgress,"function","El índice editorial dinámico debe estar disponible");
-assert(html.includes('graph-3d.js?v=20261116-source-kind-hover'));
+assert(/src="\.\/graph-3d\.js\?v=[^"]+"/.test(html));
 assert(html.includes('id="source-filter-toggle"')&&html.includes('id="source-filter-panel"'));
 assert(html.includes('id="inspector-drawer-close"')&&html.includes('aria-label="Deseleccionar entidad o relación"'));
 assert(html.includes('$("inspector-drawer-close").hidden=!selection'));
