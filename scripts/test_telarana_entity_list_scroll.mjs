@@ -39,7 +39,7 @@ function element(id){
  }
  return state[id];
 }
-const context={$:element,view:"graph",dimensionMode:"3d",syncProductHeader:()=>{}};
+const context={$:element,view:"graph",dimensionMode:"3d",layoutMode:"orb",syncProductHeader:()=>{}};
 vm.createContext(context);
 vm.runInContext(code,context,{timeout:2000});
 context.setView();
@@ -47,6 +47,18 @@ assert(element("gallery").classes.has("hidden"),"Con el mapa activo, se oculta e
 assert(!element("graph-panel").classes.has("entity-list-view"),"Sin scroll especial en modo orbe");
 assert.equal(element("mode").textContent,"Ver listado de entidades");
 assert.equal(element("view-title").textContent,"Mapa relacional 3D");
+assert.equal(element("dimension-toggle").value,"orb");
+for(const [layout,title] of [["cloud","Nube relacional 3D"],["galaxy","Galaxia relacional 3D"]]){
+ context.layoutMode=layout;context.setView();
+ assert.equal(element("dimension-toggle").value,layout);
+ assert.equal(element("view-title").textContent,title);
+ assert(!element("stage3d").classes.has("hidden"));
+}
+context.dimensionMode="2d";context.setView();
+assert.equal(element("dimension-toggle").value,"2d");
+assert(element("stage3d").classes.has("hidden"));
+assert(!element("network").classes.has("hidden"));
+context.dimensionMode="3d";context.layoutMode="orb";context.setView();
 context.view="gallery";
 context.setView();
 assert(!element("gallery").classes.has("hidden"),"La galería se muestra al seleccionar listado");
