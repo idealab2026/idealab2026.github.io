@@ -27,7 +27,7 @@ function scoreProgress(config,counts){
   qa:(config.closed?5:0)+(config.audioVerified?5:0)};
  if(config.originalUnavailable){for(const k of Object.keys(parts))if(parts[k]!==null)parts[k]=0;}
  const score=Math.round(Object.values(parts).reduce((a,b)=>a+(b||0),0));
- return {score,parts,textCoverage:text,nodes:n,edges:e,claims,references:refs,recordedChecks:checks,closed:config.closed,audioVerified:config.audioVerified,originalUnavailable:config.originalUnavailable};
+ return {score,parts,textCoverage:text,textBasis:config.textBasis||null,anchorRecovery:config.anchorRecovery||null,nodes:n,edges:e,claims,references:refs,recordedChecks:checks,closed:config.closed,audioVerified:config.audioVerified,originalUnavailable:config.originalUnavailable};
 }
 function sourceLink(value){
  var s=String(value||"").trim(),m=s.match(/^https?:\/\/([^/?#]+)([^#]*)/i);

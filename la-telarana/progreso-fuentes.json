@@ -2548,7 +2548,14 @@
             "cronologia": 5,
             "qa": 5
           },
-          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias"
+          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias",
+          "recoveryNote": {
+            "date": "2026-11-27",
+            "legacyTimeReferences": 116,
+            "literalAnchorsAvailable": 0,
+            "status": "pendiente_cotejo_con_subtitulos",
+            "note": "Referencias temporales históricas del módulo principal; no validadas en esta iteración ni computadas como cobertura."
+          }
         }
       },
       {
@@ -3726,7 +3733,8 @@
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
-          "timecodedTranscriptContentImported": true
+          "timecodedTranscriptContentImported": true,
+          "timecodedTranscriptSha256": "e139a71caf655f85a24a5ddb1ef2a3b21294f21f321e26d59bb5e11ab534d301"
         },
         "analysisCoverage": {
           "percent": 88,
@@ -3755,7 +3763,536 @@
             "cronologia": 3.8,
             "qa": 5
           },
-          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias"
+          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias Auditoría 27-11-2026: primeras secciones leídas; anclas históricas localizadas en subtítulos. No equivalen a revisión integral ni verificación de las afirmaciones.",
+          "timedTextAudit": {
+            "sha256": "e139a71caf655f85a24a5ddb1ef2a3b21294f21f321e26d59bb5e11ab534d301",
+            "totalSegments": 3578,
+            "reviewedRanges": [
+              [
+                0,
+                71
+              ]
+            ],
+            "method": "lectura_editorial_de_subtitulos_sin_cotejo_audio",
+            "offsetUnit": "segment_index",
+            "lastReviewed": "2026-11-27",
+            "scope": "Presentación de la entrevista y contexto editorial inicial; autodescripciones y opiniones no contrastadas."
+          },
+          "anchorAudit": {
+            "sha256": "e139a71caf655f85a24a5ddb1ef2a3b21294f21f321e26d59bb5e11ab534d301",
+            "total": 36,
+            "unique": 36,
+            "ambiguous": 0,
+            "missing": 0,
+            "locations": [
+              {
+                "profile": "Rubén Gisbert",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      21,
+                      23
+                    ],
+                    "startSec": 41,
+                    "endSec": 49
+                  }
+                ]
+              },
+              {
+                "profile": "Lorenzo Ramírez",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      19,
+                      21
+                    ],
+                    "startSec": 37,
+                    "endSec": 44
+                  }
+                ]
+              },
+              {
+                "profile": "Jeffrey Epstein",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2591,
+                      2593
+                    ],
+                    "startSec": 4919,
+                    "endSec": 4926
+                  }
+                ]
+              },
+              {
+                "profile": "Donald Trump",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      95,
+                      97
+                    ],
+                    "startSec": 187,
+                    "endSec": 191
+                  }
+                ]
+              },
+              {
+                "profile": "Benjamin Netanyahu",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      726,
+                      728
+                    ],
+                    "startSec": 1375,
+                    "endSec": 1382
+                  }
+                ]
+              },
+              {
+                "profile": "Bill Gates",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1084,
+                      1085
+                    ],
+                    "startSec": 2082,
+                    "endSec": 2086
+                  }
+                ]
+              },
+              {
+                "profile": "Melinda French Gates",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1093,
+                      1095
+                    ],
+                    "startSec": 2099,
+                    "endSec": 2104
+                  }
+                ]
+              },
+              {
+                "profile": "George Soros",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2550,
+                      2552
+                    ],
+                    "startSec": 4843,
+                    "endSec": 4849
+                  }
+                ]
+              },
+              {
+                "profile": "Peter Thiel",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2496,
+                      2498
+                    ],
+                    "startSec": 4727,
+                    "endSec": 4733
+                  }
+                ]
+              },
+              {
+                "profile": "Alex Karp",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2646,
+                      2648
+                    ],
+                    "startSec": 5024,
+                    "endSec": 5031
+                  }
+                ]
+              },
+              {
+                "profile": "Elon Musk",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2721,
+                      2722
+                    ],
+                    "startSec": 5170,
+                    "endSec": 5175
+                  }
+                ]
+              },
+              {
+                "profile": "Mark Zuckerberg",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2501,
+                      2503
+                    ],
+                    "startSec": 4739,
+                    "endSec": 4747
+                  }
+                ]
+              },
+              {
+                "profile": "Jamie Dimon",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      660,
+                      661
+                    ],
+                    "startSec": 1243,
+                    "endSec": 1248
+                  }
+                ]
+              },
+              {
+                "profile": "Larry Fink",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2038,
+                      2039
+                    ],
+                    "startSec": 3895,
+                    "endSec": 3901
+                  }
+                ]
+              },
+              {
+                "profile": "Klaus Schwab",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2037,
+                      2039
+                    ],
+                    "startSec": 3894,
+                    "endSec": 3901
+                  }
+                ]
+              },
+              {
+                "profile": "Whitney Webb",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      336,
+                      337
+                    ],
+                    "startSec": 630,
+                    "endSec": 634
+                  }
+                ]
+              },
+              {
+                "profile": "César Vidal",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      40,
+                      42
+                    ],
+                    "startSec": 81,
+                    "endSec": 87
+                  }
+                ]
+              },
+              {
+                "profile": "Pam Bondi",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      241,
+                      243
+                    ],
+                    "startSec": 450,
+                    "endSec": 455
+                  }
+                ]
+              },
+              {
+                "profile": "Susan Rice",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2588,
+                      2590
+                    ],
+                    "startSec": 4915,
+                    "endSec": 4919
+                  }
+                ]
+              },
+              {
+                "profile": "Scott Bessent",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1514,
+                      1516
+                    ],
+                    "startSec": 2898,
+                    "endSec": 2904
+                  }
+                ]
+              },
+              {
+                "profile": "Kenneth F. McKenzie Jr.",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1223,
+                      1225
+                    ],
+                    "startSec": 2344,
+                    "endSec": 2351
+                  }
+                ]
+              },
+              {
+                "profile": "Bill Clinton",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      749,
+                      751
+                    ],
+                    "startSec": 1420,
+                    "endSec": 1425
+                  }
+                ]
+              },
+              {
+                "profile": "Hillary Clinton",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      749,
+                      751
+                    ],
+                    "startSec": 1420,
+                    "endSec": 1425
+                  }
+                ]
+              },
+              {
+                "profile": "Barack Obama",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2518,
+                      2520
+                    ],
+                    "startSec": 4780,
+                    "endSec": 4787
+                  }
+                ]
+              },
+              {
+                "profile": "Joe Biden",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1249,
+                      1250
+                    ],
+                    "startSec": 2398,
+                    "endSec": 2402
+                  }
+                ]
+              },
+              {
+                "profile": "Xi Jinping",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      146,
+                      148
+                    ],
+                    "startSec": 272,
+                    "endSec": 278
+                  }
+                ]
+              },
+              {
+                "profile": "Vladímir Putin",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      915,
+                      917
+                    ],
+                    "startSec": 1758,
+                    "endSec": 1765
+                  }
+                ]
+              },
+              {
+                "profile": "Volodímir Zelenski",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1948,
+                      1949
+                    ],
+                    "startSec": 3715,
+                    "endSec": 3719
+                  }
+                ]
+              },
+              {
+                "profile": "Pedro Sánchez",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2720,
+                      2722
+                    ],
+                    "startSec": 5167,
+                    "endSec": 5175
+                  }
+                ]
+              },
+              {
+                "profile": "Alberto Núñez Feijóo",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      3023,
+                      3025
+                    ],
+                    "startSec": 5736,
+                    "endSec": 5742
+                  }
+                ]
+              },
+              {
+                "profile": "Javier Milei",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2115,
+                      2117
+                    ],
+                    "startSec": 4037,
+                    "endSec": 4043
+                  }
+                ]
+              },
+              {
+                "profile": "Emmanuel Macron",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2753,
+                      2754
+                    ],
+                    "startSec": 5228,
+                    "endSec": 5232
+                  }
+                ]
+              },
+              {
+                "profile": "J. D. Vance",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      400,
+                      401
+                    ],
+                    "startSec": 753,
+                    "endSec": 759
+                  }
+                ]
+              },
+              {
+                "profile": "Ursula von der Leyen",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2769,
+                      2771
+                    ],
+                    "startSec": 5258,
+                    "endSec": 5264
+                  }
+                ]
+              },
+              {
+                "profile": "José María de Pablo",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      44,
+                      46
+                    ],
+                    "startSec": 89,
+                    "endSec": 95
+                  }
+                ]
+              },
+              {
+                "profile": "Ignacio López Brú",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      45,
+                      46
+                    ],
+                    "startSec": 91,
+                    "endSec": 95
+                  }
+                ]
+              }
+            ],
+            "method": "coincidencia_literal_normalizada_en_subtitulos_no_cotejados; no valida el significado completo de la declaracion ni identidad de voz",
+            "date": "2026-11-27"
+          }
         }
       },
       {
@@ -3934,7 +4471,8 @@
           "timecodedTranscriptAudioVerified": false,
           "timecodedTranscriptEditorialReviewComplete": false,
           "timecodedTranscriptImportedAt": "2026-11-12",
-          "timecodedTranscriptContentImported": true
+          "timecodedTranscriptContentImported": true,
+          "timecodedTranscriptSha256": "ea5660211b06e2b527e65adb9543bde12d099474329280e57e374c417e4a9baf"
         },
         "analysisCoverage": {
           "percent": 91,
@@ -3963,7 +4501,554 @@
             "cronologia": 5,
             "qa": 5
           },
-          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias"
+          "nextAction": "Mantenimiento: cotejo de audio y comprobación de fuentes primarias Auditoría 27-11-2026: primeras secciones leídas; anclas históricas localizadas en subtítulos. No equivalen a revisión integral ni verificación de las afirmaciones.",
+          "timedTextAudit": {
+            "sha256": "ea5660211b06e2b527e65adb9543bde12d099474329280e57e374c417e4a9baf",
+            "totalSegments": 3743,
+            "reviewedRanges": [
+              [
+                0,
+                160
+              ]
+            ],
+            "method": "lectura_editorial_de_subtitulos_sin_cotejo_audio",
+            "offsetUnit": "segment_index",
+            "lastReviewed": "2026-11-27",
+            "scope": "Presentación, extracto inicial, continuidad política alegada, integración europea, gasto militar y marco de la entrevista; opiniones e hipótesis no contrastadas."
+          },
+          "anchorAudit": {
+            "sha256": "ea5660211b06e2b527e65adb9543bde12d099474329280e57e374c417e4a9baf",
+            "total": 35,
+            "unique": 31,
+            "ambiguous": 4,
+            "missing": 0,
+            "locations": [
+              {
+                "profile": "Lorenzo Ramírez",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      59,
+                      60
+                    ],
+                    "startSec": 99,
+                    "endSec": 104
+                  }
+                ]
+              },
+              {
+                "profile": "Luis Miguel Ortiz",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      72,
+                      74
+                    ],
+                    "startSec": 137,
+                    "endSec": 145
+                  }
+                ]
+              },
+              {
+                "profile": "Donald Trump",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      18,
+                      20
+                    ],
+                    "startSec": 32,
+                    "endSec": 37
+                  },
+                  {
+                    "segmentRange": [
+                      338,
+                      340
+                    ],
+                    "startSec": 659,
+                    "endSec": 664
+                  }
+                ]
+              },
+              {
+                "profile": "George Soros",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      391,
+                      393
+                    ],
+                    "startSec": 769,
+                    "endSec": 774
+                  }
+                ]
+              },
+              {
+                "profile": "George Soros",
+                "index": 1,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2213,
+                      2215
+                    ],
+                    "startSec": 4256,
+                    "endSec": 4262
+                  }
+                ]
+              },
+              {
+                "profile": "Peter Thiel",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2770,
+                      2773
+                    ],
+                    "startSec": 5305,
+                    "endSec": 5312
+                  }
+                ]
+              },
+              {
+                "profile": "Elon Musk",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2702,
+                      2704
+                    ],
+                    "startSec": 5184,
+                    "endSec": 5190
+                  }
+                ]
+              },
+              {
+                "profile": "Bill Clinton",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      534,
+                      536
+                    ],
+                    "startSec": 1050,
+                    "endSec": 1055
+                  }
+                ]
+              },
+              {
+                "profile": "Bill Clinton",
+                "index": 1,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      862,
+                      863
+                    ],
+                    "startSec": 1678,
+                    "endSec": 1682
+                  }
+                ]
+              },
+              {
+                "profile": "Barack Obama",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      21,
+                      23
+                    ],
+                    "startSec": 37,
+                    "endSec": 43
+                  },
+                  {
+                    "segmentRange": [
+                      342,
+                      344
+                    ],
+                    "startSec": 666,
+                    "endSec": 671
+                  }
+                ]
+              },
+              {
+                "profile": "Joe Biden",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      18,
+                      20
+                    ],
+                    "startSec": 32,
+                    "endSec": 37
+                  },
+                  {
+                    "segmentRange": [
+                      338,
+                      340
+                    ],
+                    "startSec": 659,
+                    "endSec": 664
+                  }
+                ]
+              },
+              {
+                "profile": "Vladímir Putin",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      520,
+                      522
+                    ],
+                    "startSec": 1020,
+                    "endSec": 1026
+                  }
+                ]
+              },
+              {
+                "profile": "Volodímir Zelenski",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      982,
+                      984
+                    ],
+                    "startSec": 1929,
+                    "endSec": 1935
+                  }
+                ]
+              },
+              {
+                "profile": "Emmanuel Macron",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1486,
+                      1488
+                    ],
+                    "startSec": 2898,
+                    "endSec": 2905
+                  }
+                ]
+              },
+              {
+                "profile": "Ursula von der Leyen",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1458,
+                      1460
+                    ],
+                    "startSec": 2847,
+                    "endSec": 2852
+                  }
+                ]
+              },
+              {
+                "profile": "Jean Monnet",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      31,
+                      33
+                    ],
+                    "startSec": 53,
+                    "endSec": 58
+                  },
+                  {
+                    "segmentRange": [
+                      1499,
+                      1501
+                    ],
+                    "startSec": 2921,
+                    "endSec": 2925
+                  }
+                ]
+              },
+              {
+                "profile": "Robert Schuman",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      30,
+                      31
+                    ],
+                    "startSec": 52,
+                    "endSec": 55
+                  }
+                ]
+              },
+              {
+                "profile": "Zbigniew Brzezinski",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      506,
+                      508
+                    ],
+                    "startSec": 993,
+                    "endSec": 998
+                  }
+                ]
+              },
+              {
+                "profile": "Henry Kissinger",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      506,
+                      508
+                    ],
+                    "startSec": 993,
+                    "endSec": 998
+                  }
+                ]
+              },
+              {
+                "profile": "Giorgia Meloni",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1703,
+                      1704
+                    ],
+                    "startSec": 3307,
+                    "endSec": 3312
+                  }
+                ]
+              },
+              {
+                "profile": "Viktor Orbán",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1476,
+                      1478
+                    ],
+                    "startSec": 2879,
+                    "endSec": 2885
+                  }
+                ]
+              },
+              {
+                "profile": "Keir Starmer",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1486,
+                      1488
+                    ],
+                    "startSec": 2898,
+                    "endSec": 2905
+                  }
+                ]
+              },
+              {
+                "profile": "Marco Rubio",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1033,
+                      1035
+                    ],
+                    "startSec": 2025,
+                    "endSec": 2030
+                  }
+                ]
+              },
+              {
+                "profile": "Steve Witkoff",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1039,
+                      1040
+                    ],
+                    "startSec": 2034,
+                    "endSec": 2038
+                  }
+                ]
+              },
+              {
+                "profile": "Robert F. Kennedy Jr.",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2126,
+                      2128
+                    ],
+                    "startSec": 4095,
+                    "endSec": 4101
+                  }
+                ]
+              },
+              {
+                "profile": "John F. Kennedy",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2120,
+                      2121
+                    ],
+                    "startSec": 4083,
+                    "endSec": 4087
+                  }
+                ]
+              },
+              {
+                "profile": "Sam Altman",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2887,
+                      2889
+                    ],
+                    "startSec": 5529,
+                    "endSec": 5535
+                  }
+                ]
+              },
+              {
+                "profile": "Larry Ellison",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2932,
+                      2934
+                    ],
+                    "startSec": 5626,
+                    "endSec": 5631
+                  }
+                ]
+              },
+              {
+                "profile": "Adam Tooze",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      387,
+                      389
+                    ],
+                    "startSec": 762,
+                    "endSec": 767
+                  }
+                ]
+              },
+              {
+                "profile": "Nelson Rockefeller",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2177,
+                      2179
+                    ],
+                    "startSec": 4189,
+                    "endSec": 4194
+                  }
+                ]
+              },
+              {
+                "profile": "Muamar el Gadafi",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2511,
+                      2514
+                    ],
+                    "startSec": 4805,
+                    "endSec": 4814
+                  }
+                ]
+              },
+              {
+                "profile": "Seymour Hersh",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      1185,
+                      1187
+                    ],
+                    "startSec": 2329,
+                    "endSec": 2337
+                  }
+                ]
+              },
+              {
+                "profile": "Edward Snowden",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      2849,
+                      2850
+                    ],
+                    "startSec": 5455,
+                    "endSec": 5459
+                  }
+                ]
+              },
+              {
+                "profile": "Daniel Baeza",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      3579,
+                      3580
+                    ],
+                    "startSec": 6882,
+                    "endSec": 6885
+                  }
+                ]
+              },
+              {
+                "profile": "Lunaticoin",
+                "index": 0,
+                "matches": [
+                  {
+                    "segmentRange": [
+                      85,
+                      87
+                    ],
+                    "startSec": 165,
+                    "endSec": 171
+                  }
+                ]
+              }
+            ],
+            "method": "coincidencia_literal_normalizada_en_subtitulos_no_cotejados; no valida el significado completo de la declaracion ni identidad de voz",
+            "date": "2026-11-27"
+          }
         }
       },
       {

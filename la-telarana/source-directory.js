@@ -54,7 +54,8 @@ function mount(opts){
     fill.style.width=Math.min(100,Math.max(0,score(s)))+"%";bar.appendChild(fill);coverage.appendChild(bar);
     if(s.progress){
      var p=s.progress,b=p.parts;
-     coverage.appendChild(el("small",null,p.originalUnavailable?"Original no localizado":"Texto: "+(p.textCoverage===null?"sin medir":p.textCoverage+" %")+(p.closed?" · cierre editorial":"")));
+     coverage.appendChild(el("small",null,p.originalUnavailable?"Original no localizado":"Texto: "+(p.textCoverage===null?"sin medir":p.textCoverage+" %"+(p.textBasis==="caption_segments"?" de segmentos":""))+(p.closed?" · cierre editorial":"")));
+     if(p.anchorRecovery)coverage.appendChild(el("small",null,"Anclas únicas: "+p.anchorRecovery.unique+"/"+p.anchorRecovery.total+(p.anchorRecovery.ambiguous?" · "+p.anchorRecovery.ambiguous+" ambiguas":"")));
      coverage.appendChild(el("small",null,p.nodes+" ent. · "+p.edges+" vínc."));
      coverage.title="Texto "+(b.text===null?"sin medir":b.text.toFixed(1))+"/30 · Entidades y relaciones "+b.extraction.toFixed(1)+"/20 · Declaraciones "+b.statements.toFixed(1)+"/20 ("+p.claims+" registradas) · Documentación "+b.documents.toFixed(1)+"/20 ("+p.references+" enlaces externos distintos; "+p.recordedChecks+" contrastes registrados) · QA "+b.qa+"/10. Audio "+(p.audioVerified?"verificado":"sin cotejo");
     }

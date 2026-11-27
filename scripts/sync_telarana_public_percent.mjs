@@ -35,9 +35,19 @@ function progressV2(parent,registry){
    textCoverage=Math.round(1000*covered/chars)/10;
   }
  }
+ // Alternate audited text basis: numbered caption segments, not audio time.
+ const timed=parent.analysisCoverage?.timedTextAudit;
+ let textBasis=textCoverage===null?null:"characters";
+ if(textCoverage===null&&timed&&t.timecodedTranscriptSha256&&timed.sha256===t.timecodedTranscriptSha256&&Number.isInteger(segments)&&segments>0&&timed.totalSegments===segments&&Array.isArray(timed.reviewedRanges)&&timed.reviewedRanges.every(r=>Array.isArray(r)&&r.length===2&&Number.isInteger(r[0])&&Number.isInteger(r[1])&&r[0]>=0&&r[1]>r[0]&&r[1]<=segments)){
+  let end=0,covered=0;
+  for(const [a,b] of timed.reviewedRanges.slice().sort((x,y)=>x[0]-y[0])){covered+=Math.max(0,b-Math.max(a,end));end=Math.max(end,b)}
+  textCoverage=Math.round(1000*covered/segments)/10;textBasis="caption_segments";
+ }
+ const aa=parent.analysisCoverage?.anchorAudit;
+ const anchorRecovery=aa&&aa.sha256===t.timecodedTranscriptSha256&&[aa.total,aa.unique,aa.ambiguous,aa.missing].every(n=>Number.isInteger(n)&&n>=0)&&aa.unique+aa.ambiguous+aa.missing===aa.total?{total:aa.total,unique:aa.unique,ambiguous:aa.ambiguous,missing:aa.missing}:null;
  const closed=parent.reviewComplete===true&&t.complete===true&&registry.reviewed.some(r=>r.order===parent.order);
  const audio=t.audioVerified===true||t.audioMatched===true||t.timecodedTranscriptAudioVerified===true||t.untimedTranscriptAudioVerified===true;
- return {version:2,targetEntities,targetStatements,targetReferences:Math.max(5,Math.ceil(targetStatements/3)),textCoverage,closed,audioVerified:audio,recordedStatements:Math.max(0,Number(s.statements)||0),recordedChecks:Math.max(0,Number(s.independentChecks)||0),originalUnavailable:parent.order===48||parent.order===49};
+ return {version:2,targetEntities,targetStatements,targetReferences:Math.max(5,Math.ceil(targetStatements/3)),textCoverage,textBasis,anchorRecovery,closed,audioVerified:audio,recordedStatements:Math.max(0,Number(s.statements)||0),recordedChecks:Math.max(0,Number(s.independentChecks)||0),originalUnavailable:parent.order===48||parent.order===49};
 }
 const mismatches=[];
 for(const row of rows){
