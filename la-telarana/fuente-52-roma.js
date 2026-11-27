@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F52_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido."
+    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual. 27-11-2026: revisión de extracción del tramo 7488–9610 (offsets UTF-16, intervalo semiabierto) del TXT identificado por hash; periodización de Roma, indicio epigráfico arcaico y ley de Vespasiano. La revisión de extracción no acredita todas las afirmaciones del tramo ni coteja audio. Contexto externo distinguido. Revisión de extracción 27-11-2026: intervalo UTF-16 [9610,19704), presentación del invitado y relato fundacional de Tarpeya, sabinas, Palatino, Tito Tacio y Quirino. Se cotejan extractos indexados de fuentes antiguas, bibliografía filológica y fichas arqueológicas; varias páginas no permitieron consulta íntegra. No se atribuye voz ni minutaje; no se da historicidad por demostrada."
   },
   "nodes": [
     {
@@ -32,7 +32,20 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
       "topic3d": "historia",
       "photo": "",
-      "podcastNotes": []
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La presentación recoge que el invitado estudió Historia y empezó su proyecto de divulgación en mayo de 2020; se registra como autodescripción, no como credencial verificada.",
+          "transcriptSearch": "en 2020 en plena pandemia",
+          "transcriptCharOffset": 10462,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
     },
     {
       "id": "f30-jordi-wild",
@@ -354,6 +367,207 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "source": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550527909?login=false",
       "topic3d": "historia",
       "podcastNotes": []
+    },
+    {
+      "id": "f44-romulo",
+      "name": "Rómulo",
+      "kind": "Persona",
+      "subtitle": "Figura de la tradición fundacional romana",
+      "note": "La entrevista reconoce la incertidumbre sobre su existencia individual. Los relatos sobre la fundación y su destino pertenecen a la tradición literaria, no a una biografía demostrada.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo presenta a Rómulo y Remo dentro de la tradición fundacional y expresa dudas sobre la existencia histórica de Rómulo.",
+          "transcriptSearch": "Rómulo no sabemos si existió",
+          "transcriptCharOffset": 14257,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f44-sabinas",
+      "name": "Relato de las mujeres sabinas",
+      "kind": "Evento",
+      "subtitle": "Tradición literaria de la Roma arcaica",
+      "note": "La narración de rapto y guerra es un relato fundacional. Su transmisión antigua no prueba que ocurriera exactamente como se describe.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/livy/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "La entrevista cuenta la fiesta y el rapto de las sabinas como parte del relato tradicional.",
+          "transcriptSearch": "el rapto de las Sabinas",
+          "transcriptCharOffset": 16856,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-tarpeya",
+      "name": "Tarpeya",
+      "kind": "Persona",
+      "subtitle": "Figura legendaria romana",
+      "note": "El relato de la entrevista ofrece motivaciones alternativas: joyas o amor por Tito Tacio. Son variantes literarias; no atribuir historicidad ni motivación probada.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo menciona a Tarpeya como figura de la tradición sobre la entrega de la ciudadela y ofrece versiones alternativas de su motivación.",
+          "transcriptSearch": "según otra tradición cuentan que estaba enamorada",
+          "transcriptCharOffset": 17937,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-tito-tacio",
+      "name": "Tito Tacio",
+      "kind": "Persona",
+      "subtitle": "Rey sabino en la tradición romana",
+      "note": "La entrevista lo presenta como jefe de los sabinos y cogobernante de Rómulo; carácter legendario y no documentado por testimonios contemporáneos.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo presenta el gobierno conjunto de Tito Tacio y Rómulo como parte de la tradición narrativa.",
+          "transcriptSearch": "acaban reinando los dos",
+          "transcriptCharOffset": 19284,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-roca-tarpeya",
+      "name": "Roca Tarpeya",
+      "kind": "Lugar",
+      "subtitle": "Capitolio de Roma",
+      "note": "La entrevista asocia el nombre y la tradición de castigo por traición con Tarpeya. La narración etiológica no demuestra la identidad ni el destino de la figura legendaria.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El episodio vincula el relato de Tarpeya con el significado de la roca como lugar de castigo. El relato no constituye prueba histórica de su origen.",
+          "transcriptSearch": "la traición de Tarpella",
+          "transcriptCharOffset": 13948,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-palatino",
+      "name": "Palatino",
+      "kind": "Lugar",
+      "subtitle": "Asentamientos de la Edad del Hierro",
+      "note": "El Parque Arqueológico documenta restos de cabañas en Cermalus. La identificación tradicional de una cabaña con Rómulo no establece su ocupante real.",
+      "source": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo distingue la tradición de Rómulo de la evidencia arqueológica del núcleo del Palatino.",
+          "transcriptSearch": "el núcleo fundacional",
+          "transcriptCharOffset": 14719,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
+    },
+    {
+      "id": "f52-livio-1",
+      "name": "Tito Livio: Ab urbe condita I, 8–13",
+      "kind": "Fuente",
+      "subtitle": "Relatos de Roma arcaica · texto literario posterior",
+      "note": "Recoge el relato de las sabinas, Tarpeya y la reconciliación; no es testimonio contemporáneo. Se consultó el extracto indexado de la traducción, no el texto completo por bloqueo del sitio.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/livy/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-plutarco-romulo",
+      "name": "Plutarco: Vida de Rómulo 17",
+      "kind": "Fuente",
+      "subtitle": "Biografía antigua posterior",
+      "note": "El extracto indexado recoge la versión de las joyas y variantes narrativas. No debe contarse como demostración independiente de un episodio histórico.",
+      "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/plutarch/lives/romulus%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-propercio-tarpeya",
+      "name": "Propercio, Elegías IV.4: variante amorosa",
+      "kind": "Fuente",
+      "subtitle": "Contraste mediante estudio filológico de 2018",
+      "note": "La investigación de Cambridge analiza la versión poética en la que Tarpeya se enamora de Tito Tacio. Es una interpretación literaria de la leyenda, no evidencia biográfica.",
+      "source": "https://www.cambridge.org/core/journals/greece-and-rome/article/abs/didos-of-book-four-gender-genre-and-the-aeneid-in-propertius-43-and-44/993C1230B4C694309BF0925DAE1BD228",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-palatino-sapienza",
+      "name": "Excavaciones de la ladera nororiental del Palatino",
+      "kind": "Fuente",
+      "subtitle": "Sapienza Università di Roma",
+      "note": "La descripción institucional registra terrazas y cabañas de la Edad del Hierro. Corrobora poblamiento temprano, no los relatos individuales de la fundación.",
+      "source": "https://dipantichita.web.uniroma1.it/index.php/en/northeastern-slopes-palatine-hill",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-quirino",
+      "name": "Quirino",
+      "kind": "Concepto",
+      "subtitle": "Tradición religiosa romana",
+      "note": "El diálogo relaciona la desaparición de Rómulo con su identificación con Quirino. Se registra como tradición mencionada, sin confirmar el episodio ni su explicación religiosa.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "topic3d": "historia",
+      "podcastNotes": [
+        {
+          "episodeId": "idealab-f52-roma",
+          "title": "F52 · tramo TXT 9610–19704, sin cotejo audiovisual",
+          "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+          "timeSec": null,
+          "status": "transcripcion_sin_cotejo_de_audio",
+          "text": "El diálogo menciona versiones de la desaparición de Rómulo y su identificación con Quirino.",
+          "transcriptSearch": "se convierte en el dios Quirino",
+          "transcriptCharOffset": 19588,
+          "minuteVerified": false,
+          "audioVerified": false
+        }
+      ]
     }
   ],
   "edges": [
@@ -652,6 +866,138 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "claimStatus": "interpretacion_academica",
       "confidence": "indicio",
       "source": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/Forum_Romanum/_Texts/Huelsen%2A/2/17.html",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-0",
+      "a": "f52-episodio",
+      "b": "f52-tarpeya",
+      "type": "Relato fundacional mencionado",
+      "note": "Tradición narrada en el TXT; sin atribución de voz confirmada.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-1",
+      "a": "f52-tarpeya",
+      "b": "f52-tito-tacio",
+      "type": "Variante literaria de motivación amorosa",
+      "note": "La elegía de Propercio ofrece esa versión, no un hecho acreditado.",
+      "source": "https://www.cambridge.org/core/journals/greece-and-rome/article/abs/didos-of-book-four-gender-genre-and-the-aeneid-in-propertius-43-and-44/993C1230B4C694309BF0925DAE1BD228",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-2",
+      "a": "f52-tarpeya",
+      "b": "f52-roca-tarpeya",
+      "type": "Tradición etiológica",
+      "note": "El relato asocia el lugar con Tarpeya; no prueba su origen histórico.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-3",
+      "a": "f52-livio-1",
+      "b": "f44-sabinas",
+      "type": "Relato literario",
+      "note": "Testimonio posterior sobre la tradición fundacional.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/livy/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-4",
+      "a": "f52-livio-1",
+      "b": "f52-tarpeya",
+      "type": "Variante narrativa",
+      "note": "El texto indexado recoge el relato de la entrega de la ciudadela.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/livy/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-5",
+      "a": "f52-plutarco-romulo",
+      "b": "f52-tarpeya",
+      "type": "Tradiciones alternativas",
+      "note": "El extracto transmite la variante de las joyas y otras versiones.",
+      "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/plutarch/lives/romulus%2A.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-6",
+      "a": "f52-propercio-tarpeya",
+      "b": "f52-tarpeya",
+      "type": "Lectura filológica",
+      "note": "La bibliografía académica identifica la versión de enamoramiento.",
+      "source": "https://www.cambridge.org/core/journals/greece-and-rome/article/abs/didos-of-book-four-gender-genre-and-the-aeneid-in-propertius-43-and-44/993C1230B4C694309BF0925DAE1BD228",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-7",
+      "a": "f52-tito-tacio",
+      "b": "f44-romulo",
+      "type": "Cogobierno en la tradición",
+      "note": "Mención en el TXT, no acreditación histórica.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-8",
+      "a": "f44-romulo",
+      "b": "f52-quirino",
+      "type": "Identificación religiosa legendaria",
+      "note": "El diálogo recoge la tradición de apoteosis.",
+      "source": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-9",
+      "a": "f52-palatino-sapienza",
+      "b": "f52-palatino",
+      "type": "Contexto arqueológico",
+      "note": "Excavación de terrazas y cabañas de la Edad del Hierro.",
+      "source": "https://dipantichita.web.uniroma1.it/index.php/en/northeastern-slopes-palatine-hill",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-10",
+      "a": "f52-palatino",
+      "b": "f44-romulo",
+      "type": "Identificación tradicional no demostrada",
+      "note": "Los restos de cabañas no permiten identificar a Rómulo como ocupante.",
+      "source": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tramo2-11",
+      "a": "f44-romulo",
+      "b": "f44-sabinas",
+      "type": "Relato fundacional",
+      "note": "El texto antiguo vincula la fundación con la incorporación de las sabinas.",
+      "source": "https://pressbooks.claremont.edu/clas112pomonavalentine/chapter/livy/",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
       "podcastNotes": []
     }
   ]
