@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-27",
   "scope": "Acontecimientos fechados verificados durante la revisión de fuentes de La Telaraña. El episodio puede referirse al hecho, pero no constituye la fuente probatoria principal.",
   "reviewProtocol": {
     "required": [
@@ -5831,6 +5831,71 @@
           "vf150-fuerzas-israel"
         ],
         "methodologicalLimits": "Fecha respaldada por fuente independiente; no inferir causalidades no probadas ni atribuir al invitado citas no cotejadas con el audio."
+      }
+    },
+    {
+      "id": "study-f52-claudio-discurso-senado-48",
+      "y": 48,
+      "t": "Discurso de Claudio sobre el acceso de notables galos al Senado",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F52 · epigrafía romana",
+      "d": "En el año 48 d. C., Claudio defendió ante el Senado romano la admisión de élites de la Galia a las magistraturas y al Senado. Parte de su discurso se conserva en una inscripción de bronce hallada en Lyon, la Tabla claudiana.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ITA",
+        "FRA"
+      ],
+      "investigation": {
+        "sourceOrder": 52,
+        "sourceTitle": "The Wild Project #342 - Iban Martín (Historiador) | Los Secretos más morbosos del Imperio Romano",
+        "sourceUrl": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "0048",
+        "confirmedBy": {
+          "label": "Lugdunum · ficha de la Tabla claudiana",
+          "url": "https://lugdunum.grandlyon.com/Oeuvre/1209-Table-claudienne-discours-prononce-en-faveur-des-Gaulois-par-l-empereur-Claude"
+        },
+        "relatedTelarana": [
+          "f52-tabla-lyon",
+          "f52-servio-tulio",
+          "f52-episodio"
+        ],
+        "methodologicalLimits": "El año corresponde al discurso, no a una fecha exacta de admisión de todos los galos. La inscripción acredita lo que Claudio dijo en 48, no la historicidad de las tradiciones sobre la monarquía arcaica. Audio de F52 sin cotejar."
+      }
+    },
+    {
+      "id": "study-f52-vespasiano-investidura-69",
+      "y": 69,
+      "t": "Atribución de poderes imperiales a Vespasiano",
+      "c": "Acontecimientos",
+      "s": "IDEA LAB · F52 · epigrafía romana",
+      "d": "En 69 d. C., el Senado confirió poderes imperiales a Vespasiano. La tabla de bronce conocida como Lex de imperio Vespasiani, datada entre 69 y 70, conserva parte del texto jurídico que documenta esa atribución de poderes.",
+      "g": [
+        "Europa"
+      ],
+      "p": [
+        "ITA"
+      ],
+      "investigation": {
+        "sourceOrder": 52,
+        "sourceTitle": "The Wild Project #342 - Iban Martín (Historiador) | Los Secretos más morbosos del Imperio Romano",
+        "sourceUrl": "https://www.youtube.com/watch?v=vh7fQnbLAmA",
+        "status": "hecho_documentado",
+        "datePrecision": "año",
+        "date": "0069",
+        "confirmedBy": {
+          "label": "Museos Capitolinos · Lex de imperio Vespasiani",
+          "url": "https://www.museicapitolini.org/es/node/2681"
+        },
+        "relatedTelarana": [
+          "f52-lex-vespasiani",
+          "f44-vespasiano",
+          "f44-imperio-romano"
+        ],
+        "methodologicalLimits": "Se fecha la atribución de poder en 69 conforme a la ficha del museo, no la elaboración exacta de la tabla (69–70). El texto conservado es parcial y no demuestra que el Principado naciera entonces. Audio de F52 sin cotejar."
       }
     }
   ]

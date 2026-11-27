@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-27",
   "scope": "Registro interno de 74 entradas, 71 fuentes distintas y tres duplicaciones de referencias. Cinco aportaciones manuales F70–F74 (Eric Frattini) tienen transcripciones completas en Google Docs con marcas temporales, leídas de vuelta, pero sin cotejo audiovisual. La web no publica esta tabla ni el texto completo de los documentos.",
   "total": 74,
   "counts": {
@@ -1739,8 +1739,8 @@
       "sourceRelationsDocumented": 67,
       "personsProfiled": 1,
       "documentaryChecks": 28,
-      "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas. Contraste externo de Nerón y Domus Aurea, seis nodos y ocho relaciones. Sin atribuciones nuevas al audio. Primera auditoría de lectura y extracción con hash coincidente: tramo 7488–9610. Tres notas originales nuevas, sin minuto ni audio. Tramo 2 leído y extraído con hash coincidente; distinción entre leyenda, texto literario y evidencia material. Tramo 3 revisado con SHA-256 coincidente; distinción entre arqueología, tradición y discrepancias del ASR. Tramo 4 con SHA-256 coincidente; tradición de monarquía y República, discrepancias textuales pendientes de audio.",
+      "timelineVerifiedEventsCommitted": 3,
+      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas. Contraste externo de Nerón y Domus Aurea, seis nodos y ocho relaciones. Sin atribuciones nuevas al audio. Primera auditoría de lectura y extracción con hash coincidente: tramo 7488–9610. Tres notas originales nuevas, sin minuto ni audio. Tramo 2 leído y extraído con hash coincidente; distinción entre leyenda, texto literario y evidencia material. Tramo 3 revisado con SHA-256 coincidente; distinción entre arqueología, tradición y discrepancias del ASR. Tramo 4 con SHA-256 coincidente; tradición de monarquía y República, discrepancias textuales pendientes de audio. Dos hitos epigráficos F52 conciliados con Línea de la Historia: discurso de Claudio (48) y atribución de poderes a Vespasiano (69), con fuente museística y límites de datación.",
       "lastUpdated": "2026-11-27"
     },
     {
@@ -2048,9 +2048,9 @@
     "dataset": "../linea-historia/estudios-telarana.json",
     "workflow": "Al revisar una fuente, registrar personas/instituciones/tramas y vínculos en La Telaraña. Registrar además los acontecimientos con fecha sustentada en Línea de la Historia. La fuente del podcast se conserva separada de la referencia que acredita el evento.",
     "evidenceRules": "No publicar una alegación, un delito imputado sin prueba o una fecha inferida como hecho histórico. Conservar nivel probatorio, fecha y precisión, documento externo y entidades enlazadas. Evitar duplicados por ID y evento. Los episodios sin orden identificado en el catálogo conservan sourceOrder nulo y no incrementan el porcentaje de las 33 fuentes.",
-    "committedVerifiedEvents": 187,
+    "committedVerifiedEvents": 189,
     "fromReviewedSource": 37,
-    "fromSourceInReview": 143,
+    "fromSourceInReview": 145,
     "publishedInPages": true,
     "eventsBySource": {
       "1": [
@@ -2288,7 +2288,9 @@
         "study-f51-tartessos-articulo-2024"
       ],
       "52": [
-        "study-f52-inauguracion-coliseo-80"
+        "study-f52-inauguracion-coliseo-80",
+        "study-f52-claudio-discurso-senado-48",
+        "study-f52-vespasiano-investidura-69"
       ],
       "53": [
         "study-f53-carter-antecamara-1922",
@@ -6922,7 +6924,7 @@
             "biographies": 1,
             "statements": 38,
             "independentChecks": 28,
-            "verifiedTimelineEvents": 1
+            "verifiedTimelineEvents": 3
           },
           "nextAction": "Cotejar audio y hablantes; continuar revisión de la conversación y contrastar anécdotas y detalles sociales con fuentes históricas. Contraste externo de Tácito, Suetonio y arqueología de las residencias imperiales incorporado 27-11-2026; no cotejo del audio. Continuar revisión por tramos del TXT; tramo 7488–9610 leído y extraído, 0,9 % de cobertura de texto registrada. No equivale a verificar todas sus afirmaciones. Revisado tramo 9610–19704; continuar en 19704. Contrastes literarios y arqueológicos, sin verificación audiovisual. Tramo 19704–28932 leído y extraído; continuar en 28932. Dos discrepancias textuales pendientes de cotejo audiovisual. Tramo 28932–42091 leído y extraído; continuar en 42091. Pendientes audio, población y evidencia de conjura.",
           "textAudit": {

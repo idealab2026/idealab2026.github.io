@@ -15,3 +15,11 @@ for(const id of ["f52-servio-tulio","f52-tabla-lyon","f52-tulia","f52-tarquinio-
 assert(f.nodes.find(n=>n.id==='f52-lucrecia').note.includes('esposa'));
 assert(f.nodes.find(n=>n.id==='f52-senado-arcaico').note.includes('cien'));
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));assert.equal(h.items.filter(e=>e.id==='study-f52-inauguracion-coliseo-80').length,1);assert.equal(h.items.find(e=>e.id==='study-f52-inauguracion-coliseo-80').y,80);assert(read('la-telarana/index.html').includes('fuente-52-roma.js'));assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-52-roma.js'));console.log('OK: F52 distingue evidencia, anécdotas y contexto de esclavitud');
+
+// Conciliación epigráfica F52 con la cronología, sin fabricar fechas ni duplicar hitos.
+const f52Events=h.items.filter(e=>e.investigation?.sourceOrder===52);
+const progress52=JSON.parse(read('la-telarana/progreso-fuentes.json'));
+assert.equal(f52Events.length,tracker.analysisCoverage.signals.verifiedTimelineEvents);
+assert.equal(f52Events.length,progress52.inReview.find(e=>e.order===52).timelineVerifiedEventsCommitted);
+assert.deepEqual(f52Events.map(e=>e.id).sort(),[...progress52.timeline.eventsBySource['52']].sort());
+for(const [id,y,node] of [['study-f52-claudio-discurso-senado-48',48,'f52-tabla-lyon'],['study-f52-vespasiano-investidura-69',69,'f52-lex-vespasiani']]){const event=f52Events.find(e=>e.id===id);assert(event&&event.y===y&&event.investigation.datePrecision==='año'&&event.investigation.relatedTelarana.includes(node));assert(event.investigation.relatedTelarana.every(id=>ids.has(id)));}
