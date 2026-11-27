@@ -5,7 +5,11 @@ const read=p=>fs.readFileSync(p,'utf8'),ctx={window:{}};
 vm.runInNewContext(read('la-telarana/fuente-44-roma.js'),ctx);
 vm.runInNewContext(read('la-telarana/person-biographies.js'),ctx);
 const f=ctx.window.IDEA_TELARANA_F44_REVIEW,ids=new Set(f.nodes.map(n=>n.id)),eids=new Set(f.edges.map(e=>e.id));
-assert.equal(ids.size,30);assert.equal(eids.size,46);assert.equal(f.nodes.length,30);assert.equal(f.edges.length,46);
+assert.equal(ids.size,f.nodes.length);assert.equal(eids.size,f.edges.length);
+for(const id of ["f44-episodio","f50-julio-cesar","f50-cleopatra","f44-augusto","f44-marco-antonio","f44-marco-aurelio","f44-romulo","f44-sabinas","f44-imperio-romano","f44-republica-romana","f44-gladiadores","f44-estoicismo","f44-rubicon","f44-coliseo","f44-esclavitud","f44-galias","f44-breno","f44-marco-furio-camilo","f44-saqueo-galo","f44-tito-livio","f44-anibal","f44-cannas","f44-tiberio-graco","f44-numancia","f44-diocles","f44-trajano","f44-vespasiano","f52-tito","f44-domiciano","f44-hipogeo"])assert(ids.has(id),'Falta nodo original '+id);
+for(const id of ["f44-mencion-f50-julio-cesar","f44-mencion-f50-cleopatra","f44-mencion-f44-augusto","f44-mencion-f44-marco-antonio","f44-mencion-f44-marco-aurelio","f44-mencion-f44-romulo","f44-mencion-f44-sabinas","f44-mencion-f44-imperio-romano","f44-mencion-f44-republica-romana","f44-mencion-f44-gladiadores","f44-mencion-f44-estoicismo","f44-mencion-f44-rubicon","f44-mencion-f44-coliseo","f44-mencion-f44-esclavitud","f44-mencion-f44-galias","f44-cesar-rubicon","f44-augusto-imperio","f44-aurelio-estoicismo","f44-antonio-cleopatra","f44-mencion-f44-breno","f44-mencion-f44-marco-furio-camilo","f44-mencion-f44-saqueo-galo","f44-mencion-f44-tito-livio","f44-mencion-f44-anibal","f44-mencion-f44-cannas","f44-mencion-f44-tiberio-graco","f44-mencion-f44-numancia","f44-mencion-f44-diocles","f44-mencion-f44-trajano","f44-mencion-f44-vespasiano","f44-mencion-f52-tito","f44-mencion-f44-domiciano","f44-mencion-f44-hipogeo","f44-livio-saqueo","f44-breno-saqueo","f44-camilo-saqueo","f44-anibal-cannas","f44-cannas-republica","f44-graco-numancia","f44-graco-republica","f44-diocles-imperio","f44-trajano-imperio","f44-vespasiano-coliseo","f44-tito-coliseo","f44-domiciano-hipogeo","f44-hipogeo-coliseo"])assert(eids.has(id),'Falta vínculo original '+id);
+for(const id of ["f44-efeso-cementerio","f44-efeso-isotopos","f44-coliseo-categorias","f44-pompeya-jacobelli"])assert(ids.has(id),'Falta contraste nuevo '+id);
+for(const id of ["f44-glad-20261127-0","f44-glad-20261127-1","f44-glad-20261127-2","f44-glad-20261127-3","f44-glad-20261127-4"])assert(eids.has(id),'Falta contraste nuevo '+id);
 assert(f.edges.every(e=>ids.has(e.a)&&ids.has(e.b)&&e.a!==e.b));
 assert(!f.metadata.audioVerified&&!f.metadata.timecodesAvailable&&!f.metadata.reviewComplete);
 const notes=f.nodes.flatMap(n=>n.podcastNotes);
@@ -21,9 +25,9 @@ assert(f.nodes.find(n=>n.id==='f44-tiberio-graco').podcastNotes[0].timeSec===nul
 const h=JSON.parse(read('linea-historia/estudios-telarana.json'));
 for(const [id,year] of [['study-f44-rubicon-49ac',-49],['study-f44-augusto-27ac',-27]]){const a=h.items.filter(e=>e.id===id);assert.equal(a.length,1);assert.equal(a[0].y,year);assert.equal(a[0].investigation.datePrecision,'año_ac');}
 const tracker=JSON.parse(read('la-telarana/progreso-fuentes.json')).sourceCatalog.entries.find(e=>e.order===44);
-assert.equal(tracker.analysisCoverage.signals.entities,30);assert.equal(tracker.analysisCoverage.signals.relations,46);
-assert.equal(tracker.analysisCoverage.signals.biographies,7);assert.equal(tracker.analysisCoverage.signals.independentChecks,11);
+assert.equal(tracker.analysisCoverage.signals.entities,f.nodes.length);assert.equal(tracker.analysisCoverage.signals.relations,f.edges.length);
+assert.equal(tracker.analysisCoverage.signals.biographies,7);assert(tracker.analysisCoverage.signals.independentChecks>=14);
 assert.equal(tracker.analysisCoverage.percent,20);
 assert(read('la-telarana/index.html').includes('fuente-44-roma.js?v=20261116-1'));
 assert(read('.github/workflows/pages.yml').includes('cp la-telarana/fuente-44-roma.js'));
-console.log('OK: F44, 30 entidades, 46 relaciones, 7 biografías; tradición y evidencia separadas, audio sin verificar');
+console.log('OK: F44, integridad de entidades y relaciones, 7 biografías; tradición y evidencia separadas, audio sin verificar');

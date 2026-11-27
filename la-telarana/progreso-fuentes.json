@@ -5365,14 +5365,14 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 30,
-            "relations": 46,
+            "entities": 34,
+            "relations": 51,
             "biographies": 7,
             "statements": 17,
-            "independentChecks": 11,
+            "independentChecks": 14,
             "verifiedTimelineEvents": 2
           },
-          "nextAction": "Cotejar audio, minuto y voces; validar identidad de figuras legendarias; ampliar crítica de fuentes antiguas y divergencias sobre víctimas de Cannas, cifras de Numancia y equivalencias de premios de Diocles."
+          "nextAction": "Cotejar audio, minuto y voces; validar identidad de figuras legendarias; ampliar crítica de fuentes antiguas y divergencias sobre víctimas de Cannas, cifras de Numancia y equivalencias de premios de Diocles. Contraste externo de gladiadores de Éfeso, Coliseo y Pompeya incorporado 27-11-2026; pendiente revisar pasajes y audio."
         }
       },
       {

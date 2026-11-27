@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F44_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga con transcripción automática sin minutajes ni voces cotejadas. Se distingue tradición fundacional, testimonio antiguo, análisis histórico y opinión. 16-11-2026: ampliados saqueo galo y Camilo (tradición de Livio), Cannas (cifras antiguas divergentes), acuerdo de Numancia (137 a. C.), Diocles (inscripción), extensión con Trajano y fases de obra del Coliseo; 6 contrastes bibliográficos independientes. El texto F44 sigue sin audio, minutos ni voces verificados."
+    "methodologicalNote": "Conversación larga con transcripción automática sin minutajes ni voces cotejadas. Se distingue tradición fundacional, testimonio antiguo, análisis histórico y opinión. 16-11-2026: ampliados saqueo galo y Camilo (tradición de Livio), Cannas (cifras antiguas divergentes), acuerdo de Numancia (137 a. C.), Diocles (inscripción), extensión con Trajano y fases de obra del Coliseo; 6 contrastes bibliográficos independientes. El texto F44 sigue sin audio, minutos ni voces verificados. Contraste externo 27-11-2026: artículo HTML PLOS ONE (resumen y métodos), exposición del Coliseo y reseña BMCR; no atribuidos al audio. Sin auditoría estadística de datos brutos ni incremento de cobertura textual."
   },
   "nodes": [
     {
@@ -576,6 +576,46 @@ window.IDEA_TELARANA_F44_REVIEW = {
           "text": "El episodio describe el hipogeo como laberinto funcional. La investigación arqueológica verifica pasadizos, mecanismos y fases constructivas diferentes."
         }
       ]
+    },
+    {
+      "id": "f44-efeso-cementerio",
+      "name": "Cementerio de gladiadores de Éfeso (DAM93G)",
+      "kind": "Lugar",
+      "subtitle": "Excavación de 1993 · siglos II–III",
+      "note": "El contexto arqueológico, las lápidas y los análisis antropológicos apoyan la identificación de los enterrados como gladiadores; no representa necesariamente a todos los combatientes del Imperio.",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110489",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-efeso-isotopos",
+      "name": "Lösch et al. (2014): Stable Isotope and Trace Element Studies on Gladiators",
+      "kind": "Fuente",
+      "subtitle": "PLOS ONE 9(10): e110489",
+      "note": "53 individuos, 22 gladiadores; 35 individuos analizados para Sr/Ca. Cereales C3 como base dietética; la proporción Sr/Ca elevada en gladiadores permite proponer, no demostrar, el consumo de bebida de cenizas vegetales. Resultados locales; no prueban vegetarianismo estricto ni dieta universal.",
+      "source": "https://doi.org/10.1371/journal.pone.0110489",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-coliseo-categorias",
+      "name": "Spectacles in the Colosseum Arena: The Superstars",
+      "kind": "Fuente",
+      "subtitle": "Parque Arqueológico del Coliseo",
+      "note": "La exposición documenta categorías de combatientes y grados de experiencia, además de una inscripción de una asociación funeraria de Roma fechada en 177. No establece una tasa general de supervivencia.",
+      "source": "https://colosseo.it/en/digital_exhibitions/spectacles-colosseum-arena/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-pompeya-jacobelli",
+      "name": "Gladiators at Pompeii — reseña de Jacobelli (2005)",
+      "kind": "Fuente",
+      "subtitle": "Bryn Mawr Classical Review 2005.07.59",
+      "note": "Reseña del libro de Luciana Jacobelli; expone la diversidad de evidencias de Pompeya, como anuncios, grafitos, tumbas e instalaciones. No es una excavación independiente ni una auditoría de las fuentes primarias del libro.",
+      "source": "https://bmcr.brynmawr.edu/2005/2005.07.59/",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1083,6 +1123,61 @@ window.IDEA_TELARANA_F44_REVIEW = {
       "claimStatus": "hecho_documentado",
       "note": "Estructuras arqueológicas para preparación de espectáculos con trampillas y elevadores.",
       "source": "https://colosseo.it/en/marvels/the-underground-levels-of-the-colosseum/",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-glad-20261127-0",
+      "a": "f44-efeso-isotopos",
+      "b": "f44-efeso-cementerio",
+      "type": "Análisis de muestras arqueológicas",
+      "note": "El artículo documenta el origen de las muestras y controles de conservación.",
+      "source": "https://doi.org/10.1371/journal.pone.0110489",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-glad-20261127-1",
+      "a": "f44-efeso-isotopos",
+      "b": "f44-gladiadores",
+      "type": "Interpretación dietética de alcance local",
+      "note": "Dieta con base vegetal y posible bebida de cenizas; no establece una dieta universal.",
+      "source": "https://doi.org/10.1371/journal.pone.0110489",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-glad-20261127-2",
+      "a": "f44-efeso-cementerio",
+      "b": "f44-gladiadores",
+      "type": "Contexto osteoarqueológico",
+      "note": "Identificación sustentada por contexto funerario y análisis antropológicos.",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110489",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-glad-20261127-3",
+      "a": "f44-coliseo-categorias",
+      "b": "f44-gladiadores",
+      "type": "Categorías y experiencia profesional",
+      "note": "Síntesis institucional de testimonios y objetos.",
+      "source": "https://colosseo.it/en/digital_exhibitions/spectacles-colosseum-arena/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f44-glad-20261127-4",
+      "a": "f44-pompeya-jacobelli",
+      "b": "f44-gladiadores",
+      "type": "Revisión de evidencia pompeyana",
+      "note": "La reseña describe el corpus arqueológico y epigráfico del libro.",
+      "source": "https://bmcr.brynmawr.edu/2005/2005.07.59/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
       "podcastNotes": []
     }
   ]
