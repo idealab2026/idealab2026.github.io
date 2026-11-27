@@ -1675,13 +1675,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 36,
-      "sourceRelationsDocumented": 54,
+      "sourceNodesDocumented": 41,
+      "sourceRelationsDocumented": 63,
       "personsProfiled": 8,
-      "documentaryChecks": 17,
+      "documentaryChecks": 21,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "F45/F46 es el mismo vídeo. Tres fases editoriales: contrastes sobre muografía, SAR retractado, transporte y Wadi al-Jarf; nueva revisión Snefru-Dahshur (debate arqueológico/astronómico), seked egipcio y tumba de Imhotep. 8 entidades, 10 relaciones añadidas; 0 minutos o voces cotejados. Porcentaje público se mantiene en 20% heurístico. Se añaden biografías breves y documentadas de Snefru, Belmonte y Magli.",
-      "lastUpdated": "2026-11-17"
+      "qualityNotes": "F45/F46 es el mismo vídeo. Tres fases editoriales: contrastes sobre muografía, SAR retractado, transporte y Wadi al-Jarf; nueva revisión Snefru-Dahshur (debate arqueológico/astronómico), seked egipcio y tumba de Imhotep. 8 entidades, 10 relaciones añadidas; 0 minutos o voces cotejados. Porcentaje público se mantiene en 20% heurístico. Se añaden biografías breves y documentadas de Snefru, Belmonte y Magli. Contraste logístico externo 27-11-2026: cinco nodos y nueve relaciones, cuatro líneas documentales; sin cotejo audiovisual.",
+      "lastUpdated": "2026-11-27"
     },
     {
       "order": 47,
@@ -5420,14 +5420,14 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 36,
-            "relations": 54,
+            "entities": 41,
+            "relations": 63,
             "biographies": 8,
             "statements": 15,
-            "independentChecks": 17,
+            "independentChecks": 21,
             "verifiedTimelineEvents": 3
           },
-          "nextAction": "Cotejar voces y audio; revisar integridad del TXT; ampliar conexiones de Snefru y arquitectura faraónica; conservar separado el debate Belmonte–Magli/Monnier–Puchkov y la retractación SAR, sin afirmar consenso inexistente."
+          "nextAction": "Cotejar voces y audio; revisar integridad del TXT; ampliar conexiones de Snefru y arquitectura faraónica; conservar separado el debate Belmonte–Magli/Monnier–Puchkov y la retractación SAR, sin afirmar consenso inexistente. Contraste externo de Hatnub, crítica 2019, Ahramat e IER 2026 incorporado 27-11-2026; cotejo original pendiente."
         }
       },
       {

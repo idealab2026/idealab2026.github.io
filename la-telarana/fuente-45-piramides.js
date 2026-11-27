@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F45_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio ni voces cotejadas. El gran vacío y el corredor norte son estructuras diferentes; sus funciones y las hipótesis sobre construcción requieren cautela. Segunda revisión 16-11-2026 sobre TXT NotebookLM F45 (172600 caracteres con cabecera, sin voces/minutajes): Wadi al-Jarf/Merer, mano de obra y asentamientos, muografía, gran vacío 2017, corredor 2023 y SAR controvertido. Actualización independiente posterior a la entrevista: artículo SAR Biondi/Malanga 2022 RETRACTADO 10-08-2026 por MDPI; los autores discrepan. No se acreditan estructuras de 2025 bajo Kefrén. Distinguir documento original, hipótesis de participantes y fuente externa. 17-11-2026: nueva lectura con anclas literales del TXT privado, 8 entidades y 10 relaciones sobre Snefru, Meidum, Pirámide Acodada y Roja, paper de Belmonte-Magli (2015) y crítica de Monnier-Puchkov (2016), seked según UCL, tumba de Imhotep según ARCE. Sin voz, audio ni minuto cotejados. Porcentaje público heurístico sin variación."
+    "methodologicalNote": "Conversación larga sin audio ni voces cotejadas. El gran vacío y el corredor norte son estructuras diferentes; sus funciones y las hipótesis sobre construcción requieren cautela. Segunda revisión 16-11-2026 sobre TXT NotebookLM F45 (172600 caracteres con cabecera, sin voces/minutajes): Wadi al-Jarf/Merer, mano de obra y asentamientos, muografía, gran vacío 2017, corredor 2023 y SAR controvertido. Actualización independiente posterior a la entrevista: artículo SAR Biondi/Malanga 2022 RETRACTADO 10-08-2026 por MDPI; los autores discrepan. No se acreditan estructuras de 2025 bajo Kefrén. Distinguir documento original, hipótesis de participantes y fuente externa. 17-11-2026: nueva lectura con anclas literales del TXT privado, 8 entidades y 10 relaciones sobre Snefru, Meidum, Pirámide Acodada y Roja, paper de Belmonte-Magli (2015) y crítica de Monnier-Puchkov (2016), seked según UCL, tumba de Imhotep según ARCE. Sin voz, audio ni minuto cotejados. Porcentaje público heurístico sin variación. Contraste externo 27-11-2026: IFAO/Liverpool, crítica de Hatnub (registro indexado), Ahramat (resumen y comunicado) y modelo IER 2026 (secciones HTML). Distinguir hallazgo, interpretación y simulación. Sin cotejo del audio, anexos ni reproducción del modelo."
   },
   "nodes": [
     {
@@ -807,6 +807,56 @@ window.IDEA_TELARANA_F45_REVIEW = {
           "text": "UCL describe la relación entre distancia horizontal en palmos y elevación vertical de un codo."
         }
       ]
+    },
+    {
+      "id": "f45-hatnub",
+      "name": "Canteras de Hatnub",
+      "kind": "Lugar",
+      "subtitle": "Cantera de travertino egipcio",
+      "note": "El IFAO documenta explotación desde al menos la III dinastía y un sistema de arrastre con pendientes locales de hasta el 22 %. No equivale al hallazgo de una rampa de la Gran Pirámide.",
+      "source": "https://www.ifao.egnet.net/recherche/archeologie/hatnoub/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-hatnub-mision",
+      "name": "Misión de Hatnub: resultados de 2018",
+      "kind": "Fuente",
+      "subtitle": "Universidad de Liverpool e IFAO",
+      "note": "La comunicación del equipo describe la rampa central y escaleras laterales con orificios para postes, e interpreta su empleo para arrastrar piedra mediante cuerdas y trineos. La misión y la nota de prensa no son replicaciones independientes.",
+      "source": "https://news.liverpool.ac.uk/2018/11/02/ANCIENT-QUARRY-RAMP-SYSTEM-MAY-HAVE-HELPED-WORKERS-BUILD-EGYPTS-GREAT-PYRAMIDS/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-hatnub-critica",
+      "name": "Brichieri-Colombi (2019): The Ramp at Hatnub Quarry: No Solution for Pyramids",
+      "kind": "Fuente",
+      "subtitle": "PalArch’s Journal of Archaeology of Egypt/Egyptology 16(1), 1–21",
+      "note": "Cuestiona la aplicación del sistema de cantera a las pirámides. Consultada ficha indexada y referencia bibliográfica en el estudio de 2026; no texto íntegro. No niega la existencia arqueológica de la rampa.",
+      "source": "https://archives.palarch.nl/index.php/jae/article/view/339",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-ahramat",
+      "name": "Ghoneim et al. (2024): antiguo brazo del Nilo Ahramat",
+      "kind": "Fuente",
+      "subtitle": "Communications Earth & Environment 5, 233",
+      "note": "La investigación combina imágenes de radar, geofísica, sondeos y cartografía de complejos piramidales. Identifica segmentos de un antiguo cauce próximo a las pirámides y propone su importancia logística. No acredita todas las rutas de transporte individuales. Consulta del resumen indexado y comunicado de publicación; texto íntegro bloqueado.",
+      "source": "https://doi.org/10.1038/s43247-024-01379-7",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-ier-2026",
+      "name": "Modelo computacional de rampas integradas en los bordes (2026)",
+      "kind": "Fuente",
+      "subtitle": "npj Heritage Science · DOI 10.1038/s40494-026-02405-x",
+      "note": "El modelo IER evalúa geometría, flujo paralelo, fricción y estabilidad idealizada. Propone predicciones contrastables de rellenos y desgaste en esquinas. La coincidencia geométrica no identifica el procedimiento histórico; el modelo estructural no representa explícitamente todas las discontinuidades de la mampostería. Consultadas secciones HTML, sin ejecutar código ni auditar anexos.",
+      "source": "https://doi.org/10.1038/s40494-026-02405-x",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -1402,6 +1452,105 @@ window.IDEA_TELARANA_F45_REVIEW = {
       "note": "Evolución técnica documentada, no causalidad única.",
       "claimStatus": "contexto_arqueologico",
       "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-0",
+      "a": "f45-hatnub-mision",
+      "b": "f45-hatnub",
+      "type": "Excavación y descripción del sistema de arrastre",
+      "note": "Documentación del mismo proyecto arqueológico; no dos replicaciones.",
+      "source": "https://news.liverpool.ac.uk/2018/11/02/ANCIENT-QUARRY-RAMP-SYSTEM-MAY-HAVE-HELPED-WORKERS-BUILD-EGYPTS-GREAT-PYRAMIDS/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-1",
+      "a": "f45-hatnub",
+      "b": "f45-rampas",
+      "type": "Paralelo arqueológico de transporte",
+      "note": "La tecnología de cantera no demuestra la geometría usada en Guiza.",
+      "source": "https://www.ifao.egnet.net/recherche/archeologie/hatnoub/",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-2",
+      "a": "f45-hatnub-critica",
+      "b": "f45-hatnub-mision",
+      "type": "Crítica de extrapolación",
+      "note": "Cuestiona la traslación del sistema al problema de construir pirámides.",
+      "source": "https://archives.palarch.nl/index.php/jae/article/view/339",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-3",
+      "a": "f45-ahramat",
+      "b": "f39-piramides-egipto",
+      "type": "Reconstrucción del paisaje fluvial",
+      "note": "La proximidad de antiguos cauces y complejos apoya una hipótesis logística regional.",
+      "source": "https://doi.org/10.1038/s43247-024-01379-7",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-4",
+      "a": "f45-ahramat",
+      "b": "f45-wadi-al-jarf",
+      "type": "Contexto complementario de transporte fluvial",
+      "note": "No identifica el itinerario exacto de cada viaje documentado por Merer.",
+      "source": "https://doi.org/10.1038/s43247-024-01379-7",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-5",
+      "a": "f45-ier-2026",
+      "b": "f45-rampas",
+      "type": "Hipótesis constructiva modelizada",
+      "note": "Viabilidad condicionada a parámetros; no prueba de ejecución histórica.",
+      "source": "https://doi.org/10.1038/s40494-026-02405-x",
+      "claimStatus": "hipotesis_publicada_no_consenso",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-6",
+      "a": "f45-ier-2026",
+      "b": "f45-hatnub-critica",
+      "type": "Referencia bibliográfica explícita",
+      "note": "El artículo cita y discute el estudio de 2019.",
+      "source": "https://doi.org/10.1038/s40494-026-02405-x",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-7",
+      "a": "f45-ier-2026",
+      "b": "f45-ahramat",
+      "type": "Referencia logística explícita",
+      "note": "El modelo cita el trabajo de Ghoneim y lo usa como contexto de suministro.",
+      "source": "https://doi.org/10.1038/s40494-026-02405-x",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f45-log-20261127-8",
+      "a": "f45-ier-2026",
+      "b": "f39-gran-piramide-jufu",
+      "type": "Predicciones falsables",
+      "note": "Predice huellas de relleno y desgaste; requiere comprobación arqueológica independiente.",
+      "source": "https://doi.org/10.1038/s40494-026-02405-x",
+      "claimStatus": "hipotesis_publicada_no_consenso",
+      "confidence": "indicio",
       "podcastNotes": []
     }
   ]
