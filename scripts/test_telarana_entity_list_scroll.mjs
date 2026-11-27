@@ -48,7 +48,7 @@ assert(!element("graph-panel").classes.has("entity-list-view"),"Sin scroll espec
 assert.equal(element("mode").textContent,"Ver listado de entidades");
 assert.equal(element("view-title").textContent,"Mapa relacional 3D");
 assert.equal(element("dimension-toggle").value,"orb");
-for(const [layout,title] of [["cloud","Nube relacional 3D"],["galaxy","Galaxia relacional 3D"]]){
+for(const [layout,title] of [["cloud","Nube relacional 3D"],["galaxy","Galaxia relacional 3D"],["orbs","Orbes separados 3D"],["web","Telaraña relacional 3D"],["brain","Cerebro relacional 3D"]]){
  context.layoutMode=layout;context.setView();
  assert.equal(element("dimension-toggle").value,layout);
  assert.equal(element("view-title").textContent,title);

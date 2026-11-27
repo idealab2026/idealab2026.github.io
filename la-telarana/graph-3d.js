@@ -19,7 +19,7 @@ function make(options){
  let motionEnabled=!(typeof window.matchMedia==="function"&&window.matchMedia("(prefers-reduced-motion: reduce)").matches);
  let motionStarted=false,quietUntil=0,lastMotionFrame=0;
  let representation="orb",fittedZoom=1;
- const layouts=[{id:"orb",label:"Orbe 3D"},{id:"cloud",label:"Nube 3D"},{id:"galaxy",label:"Galaxia 3D"}];
+ const layouts=[{id:"orb",label:"Orbe 3D"},{id:"cloud",label:"Nube 3D"},{id:"galaxy",label:"Galaxia 3D"},{id:"orbs",label:"Orbes separados"},{id:"web",label:"Telaraña 3D"},{id:"brain",label:"Cerebro 3D"}];
  let extent=1080;
  const index=new Map(),PI=Math.PI;
  function group(n){
@@ -85,12 +85,65 @@ function make(options){
    if(x!==y){const key=[x,y].sort().join("|");pairs.set(key,(pairs.get(key)||0)+1)}
   }
   const centres=representation==="cloud"?cloudCentres(degreeByTopic,pairs,counts):null;
+  // Multi-orb constellation: largest community at centre, others on a wide,
+  // staggered ring. Explicit separation in world space, not a second shared sphere.
+  const active=topics.map(t=>t[0]).filter(id=>counts.get(id)>0);
+  const bySize=active.slice().sort((a,b)=>counts.get(b)-counts.get(a)||a.localeCompare(b));
+  const orbCentres=new Map();
+  if(representation==="orbs"&&bySize.length){
+   orbCentres.set(bySize[0],{x:0,y:0,z:-110});
+   bySize.slice(1).forEach((id,j)=>{
+    const a=-PI/2+j*2*PI/Math.max(1,bySize.length-1);
+    orbCentres.set(id,{x:1100*Math.cos(a),y:790*Math.sin(a),z:135*Math.sin(j*2.4)});
+   });
+  }
+  // Schematic hemispheres: thematic zones only; no anatomical meaning.
+  const brainZones=[
+   [-480,-330,50], [485,165,25], [-470,265,-55],[-540,-25,0],
+   [465,-250,-35],[335,-55,-160],[570,-55,145],[525,395,0]
+  ];
   extent=ORB_RADIUS;
   for(const [name] of topics){
    const subset=nodes.filter(n=>group(n)===name)
     .sort((a,b)=>(degree.get(b.id)||0)-(degree.get(a.id)||0)||a.name.localeCompare(b.name,"es"));
    const n=normals.get(name),{u,v}=basis(n);
    const cap=clip(.32+.035*Math.sqrt(subset.length),.35,.63);
+   if(["orbs","web","brain"].includes(representation)){
+    if(!subset.length)continue;
+    const i=topics.findIndex(t=>t[0]===name),theta=-PI/2+i*2*PI/topics.length;
+    const radius=clip(110+7.5*Math.sqrt(subset.length),145,355);
+    const zone=brainZones[i];
+    const centre=representation==="orbs"?orbCentres.get(name):representation==="brain"?{x:zone[0],y:zone[1],z:zone[2]}:{x:690*Math.cos(theta),y:690*Math.sin(theta),z:0};
+    caps.set(name,{centre,count:subset.length,radius});
+    subset.forEach((node,j)=>{
+     const f=(j+.5)/subset.length,a=j*GOLDEN_ANGLE;
+     let p;
+     if(representation==="orbs"){
+      // Fibonacci points on each local sphere, with mild depth variation.
+      const yy=1-2*f,ring=Math.sqrt(1-yy*yy),r=radius*(.97+.045*Math.sin(j*1.83));
+      p={x:centre.x+r*ring*Math.cos(a),y:centre.y+r*yy,z:centre.z+r*ring*Math.sin(a)};
+     }else if(representation==="web"){
+      // Eight thematic radial sectors with several curved tiers. Highly connected
+      // nodes are nearer the hub; all lines between entities remain actual edges.
+      const rr=185+860*Math.sqrt(f),angle=theta+.31*Math.sin(a)+.045*Math.sin(rr*.012);
+      const zz=(80+125*f)*Math.sin(a*.5+theta)+55*Math.cos(rr*.01+theta);
+      p={x:rr*Math.cos(angle),y:rr*Math.sin(angle),z:zz};
+     }else{
+      // Dense ellipsoidal lobes, constrained to two separated hemispheres.
+      const latitude=1-2*((j*.61803398875+.5)%1),ring=Math.sqrt(1-latitude*latitude);
+      const d=Math.cbrt(f),rx=radius*(i===3?1.12:.9),ry=radius*(i===3?1.18:.82),rz=radius*.86;
+      let x=centre.x+rx*d*ring*Math.cos(a),y=centre.y+ry*d*ring*Math.sin(a);
+      x=Math.sign(centre.x)*Math.max(65,Math.abs(x));
+      // Keep the outside contour rounded rather than a rectangular block.
+      const maxX=95+760*Math.sqrt(Math.max(.10,1-(y/760)**2));
+      x=clip(x,-maxX,maxX);
+      p={x,y,z:centre.z+rz*d*latitude+28*Math.sin(y*.025)};
+     }
+     pos.set(node.id,p);extent=Math.max(extent,Math.hypot(p.x,p.y,p.z));
+    });
+    if(representation==="orbs")extent=Math.max(extent,Math.hypot(centre.x,centre.y,centre.z)+radius);
+    continue;
+   }
    if(representation!=="orb"){
     const i=topics.findIndex(t=>t[0]===name),theta=i*2*PI/topics.length;
     const r=630+260*(i%2);
@@ -163,8 +216,67 @@ function make(options){
    ctx.stroke();
   }
  }
- function drawBackdrop(){
+ function drawCurve3D(points){
+  ctx.beginPath();points.forEach((v,j)=>{const p=proj(v);if(j===0)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y)});ctx.stroke();
+ }
+ function drawBackdrop(visible){
   if(representation==="orb"){drawOrb();return}
+  if(representation==="orbs"){
+   const active=new Set(visible.map(group));
+   for(const [id,,tint] of topics){
+    const c=caps.get(id);if(!c||!active.has(id))continue;
+    const p=proj(c.centre),r=c.radius*p.scale;
+    ctx.save();ctx.globalAlpha=theme==="todos"||theme===id?1:.22;
+    const aura=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,r*1.13);
+    aura.addColorStop(0,color(tint,.11));aura.addColorStop(.8,color(tint,.05));aura.addColorStop(1,color(tint,0));
+    ctx.beginPath();ctx.arc(p.x,p.y,r*1.13,0,2*PI);ctx.fillStyle=aura;ctx.fill();
+    // A projected circular rim and meridians make each local orb legible.
+    ctx.strokeStyle=color(tint,.35);ctx.lineWidth=1;
+    drawCurve3D(Array.from({length:73},(_,j)=>{
+     const t=j*2*PI/72;
+     // Billboard in world coordinates, perpendicular to the current camera.
+     const x=c.radius*Math.cos(t),y=c.radius*Math.sin(t);
+     return{x:c.centre.x+x*Math.cos(yaw)+y*Math.sin(pitch)*Math.sin(yaw),
+     y:c.centre.y+y*Math.cos(pitch),z:c.centre.z-x*Math.sin(yaw)+y*Math.sin(pitch)*Math.cos(yaw)};
+    }));
+    ctx.strokeStyle=color(tint,.14);
+    for(let k=0;k<2;k++)drawCurve3D(Array.from({length:61},(_,j)=>{
+     const t=j*2*PI/60;return{x:c.centre.x+c.radius*Math.cos(t)*(k===0?1:0),y:c.centre.y+c.radius*Math.sin(t),z:c.centre.z+c.radius*Math.cos(t)*(k===1?1:0)};
+    }));
+    ctx.restore();
+   }
+   return;
+  }
+  if(representation==="web"){
+   // Guide threads are deliberately distinct from actual relationship strokes.
+   ctx.save();ctx.strokeStyle="rgba(115,176,213,.12)";ctx.lineWidth=.85;ctx.setLineDash([2,6]);
+   for(const r of [185,350,525,700,875,1045]){
+    drawCurve3D(Array.from({length:97},(_,j)=>{const t=j*2*PI/96;return{x:r*Math.cos(t),y:r*Math.sin(t),z:48*Math.sin(3*t+r*.01)}}));
+   }
+   for(let i=0;i<16;i++){
+    const t=i*2*PI/16;drawCurve3D(Array.from({length:26},(_,j)=>{const r=j*42;return{x:r*Math.cos(t),y:r*Math.sin(t),z:48*Math.sin(3*t+r*.01)}}));
+   }
+   ctx.setLineDash([]);ctx.restore();return;
+  }
+  if(representation==="brain"){
+   ctx.save();ctx.strokeStyle="rgba(145,188,216,.20)";ctx.lineWidth=1.15;
+   // Rounded bilateral outlines and subdued folds; schematic, not anatomical.
+   for(const side of [-1,1]){
+    for(const z of [-130,130]){
+     drawCurve3D(Array.from({length:97},(_,j)=>{
+      const t=j*2*PI/96,scallop=1+.035*Math.sin(t*9);
+      return{x:side*(445+390*Math.cos(t)*scallop),y:680*Math.sin(t)*scallop,z};
+     }));
+    }
+    ctx.strokeStyle="rgba(145,188,216,.085)";
+    for(let k=0;k<5;k++)drawCurve3D(Array.from({length:49},(_,j)=>{
+     const t=j/48,yy=-540+k*225+55*Math.sin(t*2*PI+k);
+     return{x:side*(95+t*660),y:yy,z:155*Math.sin(t*PI)};
+    }));
+    ctx.strokeStyle="rgba(145,188,216,.20)";
+   }
+   ctx.restore();return;
+  }
   // La nube no tiene contorno esférico. La galaxia incluye pistas de su plano de giro.
   if(representation==="galaxy"){
    ctx.strokeStyle="rgba(115,176,213,.10)";ctx.lineWidth=.8;
@@ -306,7 +418,6 @@ function make(options){
   ctx.strokeStyle="rgba(115,153,182,.055)";ctx.lineWidth=.7;
   for(let x=0;x<w;x+=44){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke()}
   for(let y=0;y<h;y+=44){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke()}
-  drawBackdrop();
   const queryKey=String(search||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
   const normalize=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es");
   const names=queryKey?nodes.filter(n=>normalize(n.name).includes(queryKey)):[];
@@ -314,6 +425,7 @@ function make(options){
   const seeds=new Set(matched.map(n=>n.id)),displayed=new Set(seeds);
   if(queryKey)edges.forEach(e=>{if(seeds.has(e.a)||seeds.has(e.b)){displayed.add(e.a);displayed.add(e.b)}});
   const visible=queryKey?nodes.filter(n=>displayed.has(n.id)):nodes;
+  drawBackdrop(visible);
   const pr=new Map(visible.map(n=>[n.id,proj(pos.get(n.id)||{x:0,y:0,z:0})]));
   const labels=drawRegions(visible,pr);
   const focus=hover||(selection?.kind==="node"?selection.id:null);
@@ -329,7 +441,16 @@ function make(options){
    // Arco suave cercano a la superficie de la esfera: apariencia neuronal.
    const p1=pos.get(e.a),p2=pos.get(e.b),joint=unit({
     x:p1.x+p2.x,y:p1.y+p2.y,z:p1.z+p2.z});
-   const c=representation==="orb"?proj({x:joint.x*ORB_RADIUS*.89,y:joint.y*ORB_RADIUS*.89,z:joint.z*ORB_RADIUS*.89}):proj({x:(p1.x+p2.x)*.46,y:(p1.y+p2.y)*.46,z:(p1.z+p2.z)*.46});
+   let control={x:(p1.x+p2.x)*.46,y:(p1.y+p2.y)*.46,z:(p1.z+p2.z)*.46};
+   if(representation==="orbs"){
+    const sameGroup=group(aNode)===group(bNode);
+    const centre=caps.get(group(aNode))?.centre;
+    if(sameGroup&&centre)control={x:(p1.x+p2.x)*.45+centre.x*.1,y:(p1.y+p2.y)*.45+centre.y*.1,z:(p1.z+p2.z)*.45+centre.z*.1};
+    else control={x:(p1.x+p2.x)*.48,y:(p1.y+p2.y)*.48,z:(p1.z+p2.z)*.5-95};
+   }else if(representation==="web"){
+    control={x:(p1.x+p2.x)*.34,y:(p1.y+p2.y)*.34,z:(p1.z+p2.z)*.5+70};
+   }
+   const c=representation==="orb"?proj({x:joint.x*ORB_RADIUS*.89,y:joint.y*ORB_RADIUS*.89,z:joint.z*ORB_RADIUS*.89}):proj(control);
    ctx.beginPath();ctx.moveTo(a.x,a.y);
    ctx.quadraticCurveTo(c.x,c.y,b.x,b.y);
    ctx.lineWidth=selected?3.8:hot?3:linked?2.6:same?2:1.3;
@@ -396,9 +517,17 @@ function make(options){
   const base=Math.min(w/1450,h/950);
   const outerRadius=extent*base*1.33;
   zoom=clip(Math.min(usableX/(2*outerRadius),usableY/(2*outerRadius)),.055,7);
+  panX=(left+right)/2-w/2;panY=(top+bottom)/2-h/2;
+  if(["orbs","web","brain"].includes(representation)){
+   zoom=1;panX=panY=0;
+   const projected=Array.from(pos.values()).map(proj);
+   const minX=Math.min(...projected.map(p=>p.x)),maxX=Math.max(...projected.map(p=>p.x));
+   const minY=Math.min(...projected.map(p=>p.y)),maxY=Math.max(...projected.map(p=>p.y));
+   zoom=clip(Math.min(Math.max(70,usableX-100)/(Math.max(1,maxX-minX)),Math.max(70,usableY-65)/(Math.max(1,maxY-minY)),1.6),.055,7);
+   panX=(left+right)/2-w/2-((minX+maxX)/2-w/2)*zoom;
+   panY=(top+bottom)/2-h/2-((minY+maxY)/2-h/2)*zoom;
+  }
   fittedZoom=zoom;
-  panX=(left+right)/2-w/2;
-  panY=(top+bottom)/2-h/2;
   redraw();
   return{zoom,visible:nodes.length,availableWidth:usableX,availableHeight:usableY};
  }
@@ -521,7 +650,7 @@ function make(options){
   },
   getLayout(){return representation},
   setTheme(s){markInteraction();theme=topics.some(t=>t[0]===s)?s:"todos";hover=null;hoverEdge=null;hint.hidden=true;
-   yaw=-.45;pitch=.24;basePitch=.24;zoom=1;panX=panY=0;fitView()},
+   this.reset()},
   focusNode(id){
    const p=pos.get(id);if(!p)return false;
    markInteraction();hover=null;hoverEdge=null;
@@ -535,7 +664,7 @@ function make(options){
   },
   zoom(f){zoomAt(w/2,h/2,f)},
   fit:fitView,
-  reset(){markInteraction();yaw=-.45;pitch=representation==="galaxy"?.46:.24;basePitch=pitch;zoom=1;panX=panY=0;fitView()},
+  reset(){markInteraction();yaw=["orbs","web","brain"].includes(representation)?-.12:-.45;pitch=representation==="galaxy"?.46:representation==="web"?.36:representation==="brain"?.12:.24;basePitch=pitch;zoom=1;panX=panY=0;fitView()},
   organize(){arrange();this.reset()},
   setMotion(enabled){motionEnabled=!!enabled;markInteraction();return motionEnabled},
   isMotionEnabled(){return motionEnabled},redraw

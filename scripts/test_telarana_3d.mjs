@@ -168,12 +168,13 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  assert.equal(rings.length,241,"Ocultar un tipo elimina su nodo del orbe, no solo de las estadísticas");
  assert.equal(pillBoxes.length,8,"Conservar las etiquetas de las comunidades activas");
  // New layouts reuse the filtered data and all camera gestures.
- for(const mode of ["cloud","galaxy"]){
+ for(const mode of ["cloud","galaxy","orbs","web","brain"]){
   assert(graph.setLayout(mode));flush(time+60);
   assert.equal(graph.getLayout(),mode);
   assert.equal(rings.length,241,"all filtered nodes in "+mode);
-  assert.equal(sphere.length,0,"no spherical outline in "+mode);
+  assert.equal(sphere.length,0,"no single global spherical outline in "+mode);
   assert(rings.every(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)));
+  assert(rings.every(p=>p.x>=0&&p.x<=width&&p.y>=0&&p.y<=height),"fit must frame nodes in "+mode);
   assert(Number.isFinite(graph.fit().zoom));flush(time+60);
   assert(graph.focusNode(subset[0].id));flush(time+60);
   graph.reset();flush(time+60);
@@ -181,5 +182,5 @@ for(const [width,height] of [[1600,900],[1280,720],[1000,660],[820,600],[600,540
  assert(graph.setLayout("orb"));flush(time+60);assert.equal(sphere.length,1);
  assert.equal(graph.setLayout("invalid"),false);
 }
-for(const mode of ["orb","cloud","galaxy","2d"])assert(page.includes('<option value="'+mode+'">'));
-console.log('OK: orbe, nube, galaxia, 2D, etiquetas no solapadas, filtros y zoom en seis resoluciones');
+for(const mode of ["orb","cloud","galaxy","orbs","web","brain","2d"])assert(page.includes('<option value="'+mode+'">'));
+console.log('OK: seis geometrías 3D, vista 2D, etiquetas, filtros y zoom en seis resoluciones');
