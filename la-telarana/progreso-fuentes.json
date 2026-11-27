@@ -1735,13 +1735,13 @@
       "transcriptDocHasFullText": false,
       "verifiedMinuteReferences": 0,
       "transcriptAudioMatched": false,
-      "sourceNodesDocumented": 13,
-      "sourceRelationsDocumented": 15,
+      "sourceNodesDocumented": 19,
+      "sourceRelationsDocumented": 23,
       "personsProfiled": 1,
-      "documentaryChecks": 5,
+      "documentaryChecks": 9,
       "timelineVerifiedEventsCommitted": 1,
-      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas.",
-      "lastUpdated": "2026-11-14"
+      "qualityNotes": "Transcripción larga sin voces verificadas. La esclavitud por deudas en Atenas requiere contexto temporal e historiográfico; las anécdotas sobre emperadores no se dan por probadas. Contraste externo de Nerón y Domus Aurea, seis nodos y ocho relaciones. Sin atribuciones nuevas al audio.",
+      "lastUpdated": "2026-11-27"
     },
     {
       "order": 53,
@@ -5832,14 +5832,14 @@
           "confidence": "indice_editorial_heuristico_no_cobertura_semantica_ni_audiovisual",
           "audioVerified": false,
           "signals": {
-            "entities": 13,
-            "relations": 15,
+            "entities": 19,
+            "relations": 23,
             "biographies": 1,
             "statements": 8,
-            "independentChecks": 5,
+            "independentChecks": 9,
             "verifiedTimelineEvents": 1
           },
-          "nextAction": "Cotejar audio y hablantes; continuar revisión de la conversación y contrastar anécdotas y detalles sociales con fuentes históricas."
+          "nextAction": "Cotejar audio y hablantes; continuar revisión de la conversación y contrastar anécdotas y detalles sociales con fuentes históricas. Contraste externo de Tácito, Suetonio y arqueología de las residencias imperiales incorporado 27-11-2026; no cotejo del audio."
         }
       },
       {

@@ -9,7 +9,7 @@ window.IDEA_TELARANA_F52_REVIEW = {
     "audioVerified": false,
     "timecodesAvailable": false,
     "reviewComplete": false,
-    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados."
+    "methodologicalNote": "Conversación larga sin audio, turnos ni integridad cotejados. Se separan anécdotas de fuentes antiguas, condiciones sociales y hechos institucionales contrastados. Contraste externo 27-11-2026: Tácito, Suetonio y documentación del Parque Arqueológico del Coliseo; las fuentes antiguas son posteriores y no se presume independencia. No se atribuyen los contrastes al audio ni se altera la cobertura textual."
   },
   "nodes": [
     {
@@ -226,6 +226,66 @@ window.IDEA_TELARANA_F52_REVIEW = {
           "text": "La conversación describe cacerías, combates y violencia en la arena. El Metropolitan Museum distingue diversos espectáculos y estatus de participantes."
         }
       ]
+    },
+    {
+      "id": "f52-incendio64",
+      "name": "Incendio de Roma del año 64",
+      "kind": "Evento",
+      "subtitle": "Roma · 64 d. C.",
+      "note": "Incendio histórico tras el cual Nerón inició la Domus Aurea. Las fuentes antiguas discrepan sobre la responsabilidad del emperador; la posterior construcción no demuestra causalidad.",
+      "source": "https://dcc.dickinson.edu/tacitus-annals/introduction/annals-outline/annals-38-41-outline",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-tacito-incendio",
+      "name": "Tácito: Anales XV, 38–44",
+      "kind": "Fuente",
+      "subtitle": "Testimonio historiográfico posterior al incendio",
+      "note": "En 15.38 Tácito indica incertidumbre sobre si el origen fue accidental o atribuible al emperador; en 15.39 registra medidas de socorro y distingue el rumor sobre su actuación. No es un testimonio presencial acreditado.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-suetonio-neron",
+      "name": "Suetonio: Vida de Nerón 38",
+      "kind": "Fuente",
+      "subtitle": "Biografía imperial escrita posteriormente",
+      "note": "Atribuye a Nerón la responsabilidad del incendio. La divergencia con Tácito exige crítica de la tradición historiográfica; no constituye prueba independiente concluyente de culpabilidad.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Nero%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-domus-aurea",
+      "name": "Domus Aurea",
+      "kind": "Lugar",
+      "subtitle": "Complejo palaciego de Nerón",
+      "note": "El Parque Arqueológico del Coliseo sitúa la construcción tras el incendio de 64; el complejo incluía un lago artificial en el valle donde se alza el Coliseo. Esta transformación no acredita la responsabilidad de Nerón por el incendio.",
+      "source": "https://colosseo.it/en/area/domus-aurea/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-domus-transitoria",
+      "name": "Domus Transitoria",
+      "kind": "Lugar",
+      "subtitle": "Residencia anterior de Nerón",
+      "note": "El Parque Arqueológico documenta que la Domus Aurea sustituyó al palacio anterior tras su destrucción en el incendio.",
+      "source": "https://colosseo.it/en/marvels/the-domus-transitoria-neros-first-palace/",
+      "topic3d": "historia",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-suetonio-vespasiano",
+      "name": "Suetonio: Vida de Vespasiano 9",
+      "kind": "Fuente",
+      "subtitle": "Testimonio historiográfico posterior",
+      "note": "Atribuye a Vespasiano la construcción de un anfiteatro en el centro de Roma. El texto no demuestra por sí solo todos los detalles arqueológicos del emplazamiento.",
+      "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/suetonius/12caesars/vespasian%2A.html",
+      "topic3d": "historia",
+      "podcastNotes": []
     }
   ],
   "edges": [
@@ -392,6 +452,94 @@ window.IDEA_TELARANA_F52_REVIEW = {
       "claimStatus": "hecho_documentado",
       "note": "El parque arqueológico sitúa el anfiteatro en el antiguo lago de la Domus Aurea.",
       "source": "https://colosseo.it/sito/wp-content/uploads/2018/11/Colosseo_carta-dei-servizi.pdf",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-0",
+      "a": "f52-tacito-incendio",
+      "b": "f52-incendio64",
+      "type": "Relato historiográfico",
+      "note": "Relata el incendio y distingue versiones sobre su causa.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-1",
+      "a": "f52-suetonio-neron",
+      "b": "f52-incendio64",
+      "type": "Atribución antigua de responsabilidad",
+      "note": "Suetonio atribuye el incendio al emperador; afirmación no corroborada de forma concluyente.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Nero%2A.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-2",
+      "a": "f52-tacito-incendio",
+      "b": "f52-suetonio-neron",
+      "type": "Divergencia historiográfica",
+      "note": "Los relatos difieren en su grado de certeza. No se presupone independencia de sus tradiciones.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B%2A.html",
+      "claimStatus": "interpretacion_academica",
+      "confidence": "indicio",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-3",
+      "a": "f52-domus-aurea",
+      "b": "f52-neron",
+      "type": "Patrocinio imperial",
+      "note": "El parque arqueológico atribuye la construcción de la residencia a Nerón.",
+      "source": "https://colosseo.it/en/area/domus-aurea/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-4",
+      "a": "f52-domus-transitoria",
+      "b": "f52-domus-aurea",
+      "type": "Sucesión arquitectónica",
+      "note": "La Domus Aurea sustituyó al palacio anterior tras el incendio.",
+      "source": "https://colosseo.it/en/marvels/the-domus-transitoria-neros-first-palace/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-5",
+      "a": "f52-domus-aurea",
+      "b": "f52-incendio64",
+      "type": "Construcción posterior",
+      "note": "La sucesión cronológica no prueba autoría del incendio.",
+      "source": "https://colosseo.it/en/area/domus-aurea/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-6",
+      "a": "f52-domus-aurea",
+      "b": "f44-coliseo",
+      "type": "Reutilización del emplazamiento del lago",
+      "note": "El anfiteatro se construyó en el valle del antiguo lago artificial del conjunto.",
+      "source": "https://colosseo.it/en/area/domus-aurea/",
+      "claimStatus": "contexto_documentado",
+      "confidence": "documentado",
+      "podcastNotes": []
+    },
+    {
+      "id": "f52-nero-20261127-7",
+      "a": "f52-suetonio-vespasiano",
+      "b": "f44-coliseo",
+      "type": "Testimonio de construcción flavia",
+      "note": "Suetonio atribuye el proyecto del anfiteatro a Vespasiano.",
+      "source": "https://penelope.uchicago.edu/thayer/e/roman/texts/suetonius/12caesars/vespasian%2A.html",
+      "claimStatus": "testimonio_textual_atribuido",
+      "confidence": "documentado",
       "podcastNotes": []
     }
   ]
