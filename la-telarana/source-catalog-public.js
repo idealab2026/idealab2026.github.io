@@ -12,7 +12,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Pedro Baños",
       "José Manuel Villarejo"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 25,
+      "targetReferences": 9,
+      "textCoverage": null,
+      "closed": true,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 7,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 2,
@@ -25,7 +37,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": "El Canal del Coronel",
     "participants": [
       "Pedro Baños"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 15,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 3,
@@ -39,7 +63,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Roberto Vaquero",
       "Joaquín Abad"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 19,
+      "targetReferences": 7,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 4,
@@ -53,7 +89,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Pedro Baños",
       "Margarita Torres Sevilla"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 14,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 5,
@@ -64,7 +112,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 20,
+      "targetReferences": 7,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 3,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 6,
@@ -78,7 +138,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "José Manuel Villarejo"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 20,
+      "targetStatements": 42,
+      "targetReferences": 14,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 13,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 7,
@@ -92,7 +164,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Javier Chicote"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 25,
+      "targetStatements": 48,
+      "targetReferences": 16,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 22,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 8,
@@ -106,7 +190,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Roberto Vaquero",
       "José Manuel Villarejo"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 18,
+      "targetReferences": 6,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 15,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 9,
@@ -119,7 +215,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "José Manuel Villarejo"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 24,
+      "targetReferences": 8,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 33,
+      "recordedChecks": 1,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 10,
@@ -130,7 +238,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 57,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 14,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 12,
+      "recordedChecks": 1,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 11,
@@ -143,7 +263,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": "Aladetres",
     "participants": [
       "Fernando Paz"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 11,
+      "targetStatements": 23,
+      "targetReferences": 8,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 28,
+      "recordedChecks": 1,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 12,
@@ -156,7 +288,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": "Aladetres",
     "participants": [
       "Juan Manuel de Prada"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 13,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 13,
@@ -170,7 +314,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Jesús Hernández"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 21,
+      "targetStatements": 43,
+      "targetReferences": 15,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 20,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 14,
@@ -181,7 +337,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 34,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 13,
+      "targetStatements": 25,
+      "targetReferences": 9,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 2,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 15,
@@ -192,7 +360,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 28,
     "percentInherited": false,
     "creator": "Gobierno de Estados Unidos · Casa Blanca",
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 20,
+      "targetReferences": 7,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 16,
@@ -203,7 +383,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 36,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 18,
+      "targetReferences": 6,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 17,
@@ -216,7 +408,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": "Aladetres",
     "participants": [
       "José Manuel García-Margallo"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 2,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 18,
@@ -230,7 +434,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Rubén Gisbert",
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 11,
+      "targetStatements": 22,
+      "targetReferences": 8,
+      "textCoverage": null,
+      "closed": true,
+      "audioVerified": false,
+      "recordedStatements": 36,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 19,
@@ -246,7 +462,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
       "@jfcalero",
       "Lorenzo Ramírez",
       "@MemoriasDePez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 16,
+      "targetReferences": 6,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 23,
+      "recordedChecks": 3,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 20,
@@ -259,7 +487,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 24,
+      "targetReferences": 8,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 16,
+      "recordedChecks": 6,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 21,
@@ -272,7 +512,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 11,
+      "targetStatements": 23,
+      "targetReferences": 8,
+      "textCoverage": null,
+      "closed": true,
+      "audioVerified": false,
+      "recordedStatements": 35,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 22,
@@ -283,7 +535,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 34,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 2,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 23,
@@ -296,7 +560,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 25,
+      "targetReferences": 9,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 12,
+      "recordedChecks": 7,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 24,
@@ -309,7 +585,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 14,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 2,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 25,
@@ -322,7 +610,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 20,
+      "targetReferences": 7,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 9,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 26,
@@ -335,7 +635,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": "Minimal Design Talks",
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 14,
+      "targetStatements": 28,
+      "targetReferences": 10,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 18,
+      "recordedChecks": 3,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 27,
@@ -348,7 +660,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 24,
+      "targetReferences": 8,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 2,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 28,
@@ -361,7 +685,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Lorenzo Ramírez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 13,
+      "targetStatements": 27,
+      "targetReferences": 9,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 2,
+      "recordedChecks": 7,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 29,
@@ -372,7 +708,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 67,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 4,
+      "recordedChecks": 8,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 30,
@@ -386,7 +734,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Pedro Baños"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 13,
+      "targetStatements": 27,
+      "targetReferences": 9,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 4,
+      "recordedChecks": 11,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 31,
@@ -400,7 +760,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Pedro Baños"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 18,
+      "targetStatements": 36,
+      "targetReferences": 12,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 6,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 32,
@@ -414,7 +786,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Pedro Baños"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 29,
+      "targetStatements": 49,
+      "targetReferences": 17,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 5,
+      "recordedChecks": 3,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 33,
@@ -425,7 +809,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 22,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 10,
+      "recordedChecks": 2,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 34,
@@ -438,7 +834,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Eric Frattini"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 23,
+      "targetStatements": 39,
+      "targetReferences": 13,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 13,
+      "recordedChecks": 17,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 35,
@@ -449,7 +857,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 25,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 8,
+      "recordedChecks": 8,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 36,
@@ -463,7 +883,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Pedro Baños",
       "Margarita Torres Sevilla"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 14,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 37,
@@ -476,7 +908,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "William Miller"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 17,
+      "targetReferences": 6,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 12,
+      "recordedChecks": 10,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 38,
@@ -487,7 +931,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 22,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 34,
+      "targetStatements": 58,
+      "targetReferences": 20,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 16,
+      "recordedChecks": 24,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 39,
@@ -498,7 +954,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 29,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 42,
+      "targetStatements": 72,
+      "targetReferences": 24,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 28,
+      "recordedChecks": 3,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 40,
@@ -509,7 +977,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 25,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 10,
+      "recordedChecks": 7,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 41,
@@ -520,7 +1000,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 25,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 9,
+      "recordedChecks": 5,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 42,
@@ -533,7 +1025,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Tito Vivas"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 27,
+      "targetStatements": 46,
+      "targetReferences": 16,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 12,
+      "recordedChecks": 24,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 43,
@@ -544,7 +1048,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 25,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 7,
+      "recordedChecks": 3,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 44,
@@ -555,7 +1071,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 20,
+      "targetStatements": 34,
+      "targetReferences": 12,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 17,
+      "recordedChecks": 14,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 45,
@@ -566,7 +1094,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 29,
+      "targetStatements": 50,
+      "targetReferences": 17,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 15,
+      "recordedChecks": 21,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 46,
@@ -577,7 +1117,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": true,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 29,
+      "targetStatements": 50,
+      "targetReferences": 17,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 15,
+      "recordedChecks": 21,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 47,
@@ -590,7 +1142,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": "MCL",
     "participants": [
       "Tito Vivas"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 15,
+      "targetStatements": 25,
+      "targetReferences": 9,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 17,
+      "recordedChecks": 12,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 48,
@@ -601,7 +1165,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 0,
     "percentInherited": false,
     "creator": "Platón · autor de la obra original",
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 20,
+      "targetReferences": 7,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": true
+    }
   },
   {
     "order": 49,
@@ -612,7 +1188,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 0,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 20,
+      "targetReferences": 7,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 0,
+      "originalUnavailable": true
+    }
   },
   {
     "order": 50,
@@ -626,7 +1214,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Miguel de Lys"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 42,
+      "targetStatements": 72,
+      "targetReferences": 24,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 108,
+      "recordedChecks": 29,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 51,
@@ -640,7 +1240,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Michael Donnellan"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 23,
+      "targetStatements": 39,
+      "targetReferences": 13,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 17,
+      "recordedChecks": 12,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 52,
@@ -654,7 +1266,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Jordi Wild",
       "Iban Martín"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 40,
+      "targetStatements": 68,
+      "targetReferences": 23,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 8,
+      "recordedChecks": 9,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 53,
@@ -667,7 +1291,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Tito Vivas"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 16,
+      "targetReferences": 6,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 12,
+      "recordedChecks": 11,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 54,
@@ -678,7 +1314,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 17,
+      "targetStatements": 29,
+      "targetReferences": 10,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 9,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 55,
@@ -689,7 +1337,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 16,
+      "targetReferences": 6,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 17,
+      "recordedChecks": 13,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 56,
@@ -700,7 +1360,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 15,
+      "targetStatements": 26,
+      "targetReferences": 9,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 9,
+      "recordedChecks": 5,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 57,
@@ -711,7 +1383,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 22,
+      "targetStatements": 37,
+      "targetReferences": 13,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 10,
+      "recordedChecks": 5,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 58,
@@ -722,7 +1406,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 14,
+      "recordedChecks": 10,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 59,
@@ -733,7 +1429,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 25,
     "percentInherited": false,
     "creator": "The Wild Project",
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 19,
+      "recordedChecks": 12,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 60,
@@ -746,7 +1454,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Alberto Garín"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 20,
+      "targetStatements": 34,
+      "targetReferences": 12,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 9,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 61,
@@ -759,7 +1479,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "David Jiménez"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 10,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 62,
@@ -770,7 +1502,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 25,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 8,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 63,
@@ -781,7 +1525,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 25,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 9,
+      "recordedChecks": 4,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 64,
@@ -792,7 +1548,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 11,
+      "recordedChecks": 3,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 65,
@@ -805,7 +1573,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Tito Vivas"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 27,
+      "targetStatements": 46,
+      "targetReferences": 16,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 12,
+      "recordedChecks": 24,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 66,
@@ -816,7 +1596,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "percent": 20,
     "percentInherited": false,
     "creator": null,
-    "participants": []
+    "participants": [],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 10,
+      "targetStatements": 12,
+      "targetReferences": 5,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 10,
+      "recordedChecks": 5,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 67,
@@ -829,7 +1621,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Jorge Manuel Rodríguez Almenar"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 19,
+      "targetStatements": 33,
+      "targetReferences": 11,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 12,
+      "recordedChecks": 9,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 68,
@@ -842,7 +1646,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": "Aladetres",
     "participants": [
       "Luis Antequera"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 21,
+      "targetStatements": 36,
+      "targetReferences": 12,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 18,
+      "recordedChecks": 11,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 69,
@@ -856,7 +1672,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "participants": [
       "Roberto Vaquero",
       "Eric Frattini"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 12,
+      "targetStatements": 20,
+      "targetReferences": 7,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 0,
+      "recordedChecks": 14,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 70,
@@ -869,7 +1697,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Eric Frattini"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 19,
+      "targetStatements": 33,
+      "targetReferences": 11,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 23,
+      "recordedChecks": 141,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 71,
@@ -882,7 +1722,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Eric Frattini"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 27,
+      "targetStatements": 46,
+      "targetReferences": 16,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 16,
+      "recordedChecks": 24,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 72,
@@ -895,7 +1747,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Eric Frattini"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 37,
+      "targetStatements": 63,
+      "targetReferences": 21,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 16,
+      "recordedChecks": 23,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 73,
@@ -908,7 +1772,19 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Eric Frattini"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 21,
+      "targetStatements": 35,
+      "targetReferences": 12,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 30,
+      "recordedChecks": 160,
+      "originalUnavailable": false
+    }
   },
   {
     "order": 74,
@@ -921,6 +1797,18 @@ window.IDEA_TELARANA_PUBLIC_SOURCES = [
     "creator": null,
     "participants": [
       "Eric Frattini"
-    ]
+    ],
+    "progressV2": {
+      "version": 2,
+      "targetEntities": 26,
+      "targetStatements": 44,
+      "targetReferences": 15,
+      "textCoverage": null,
+      "closed": false,
+      "audioVerified": false,
+      "recordedStatements": 15,
+      "recordedChecks": 24,
+      "originalUnavailable": false
+    }
   }
 ];

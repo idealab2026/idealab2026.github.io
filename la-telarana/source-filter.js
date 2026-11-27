@@ -13,21 +13,64 @@ function sourceForModule(mod){
  var found=label.match(/^Fuente\s+(\d+)/i)||key.match(/(?:_F|_SOURCE)(\d+)_/);
  return found?"f"+Number(found[1]):"extra:"+norm(label).replace(/ /g,"-");
 }
+// Planning index, not measured completeness. Unknown text coverage receives no points.
+function scoreProgress(config,counts){
+ if(!config)return null;
+ const n=counts.nodes||0,e=counts.edges||0;
+ const claims=Math.max(config.recordedStatements||0,counts.claims||0);
+ const refs=counts.references||0,checks=config.recordedChecks||0;
+ const text=config.textCoverage;
+ const parts={text:text===null?null:30*text/100,
+  extraction:10*Math.min(1,n/config.targetEntities)+10*Math.min(1,e/config.targetEntities),
+  statements:20*Math.min(1,claims/config.targetStatements),
+  documents:20*Math.min(1,Math.max(refs,checks)/config.targetReferences),
+  qa:(config.closed?5:0)+(config.audioVerified?5:0)};
+ if(config.originalUnavailable){for(const k of Object.keys(parts))if(parts[k]!==null)parts[k]=0;}
+ const score=Math.round(Object.values(parts).reduce((a,b)=>a+(b||0),0));
+ return {score,parts,textCoverage:text,nodes:n,edges:e,claims,references:refs,recordedChecks:checks,closed:config.closed,audioVerified:config.audioVerified,originalUnavailable:config.originalUnavailable};
+}
+function sourceLink(value){
+ var s=String(value||"").trim(),m=s.match(/^https?:\/\/([^/?#]+)([^#]*)/i);
+ if(!m||/(^|\.)(youtube\.com|youtu\.be|docs\.google\.com|drive\.google\.com|notebooklm\.google\.com)$/i.test(m[1]))return "";
+ return m[1].toLowerCase()+m[2].replace(/([?&])(?:utm_[^=&]+|fbclid|gclid)=[^&]*/gi,"$1").replace(/\?&/g,"?").replace(/&&+/g,"&").replace(/[?&]$/,"").replace(/\/$/,"");
+}
+function sameOriginal(value,original){
+ if(!value||!original)return false;
+ var a=String(value).match(/(?:youtube\.com\/watch\?(?:[^#]*&)?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/i),b=String(original).match(/(?:youtube\.com\/watch\?(?:[^#]*&)?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/i);
+ if(a&&b)return a[1]===b[1];
+ return String(value).split(/[?#]/)[0].replace(/\/$/,"")===String(original).split(/[?#]/)[0].replace(/\/$/,"");
+}
+
 function createTracker(sourceCatalog){
  var publicSources=(sourceCatalog||[]).filter(function(s){return s&&Number.isInteger(s.order)&&s.order>=1&&s.order<=999})
   .map(function(s){return {id:"f"+s.order,order:s.order,title:String(s.title||"Fuente "+s.order),duplicateOf:s.duplicateOf||null,
-   percent:Number.isFinite(s.percent)?s.percent:null,percentInherited:Boolean(s.percentInherited),
+   percent:Number.isFinite(s.percent)?s.percent:null,percentInherited:Boolean(s.percentInherited),progressV2:s.progressV2||null,
    sourceUrl:/^https?:\/\//i.test(s.sourceUrl||"")?s.sourceUrl:null,
    type:String(s.type||"Tipo por determinar"),creator:s.creator||null,
    participants:Array.isArray(s.participants)?s.participants.filter(function(p){return typeof p==="string"&&p.trim()}):[]}});
  var membership=new Map(),labels=new Map(),sourceMeta=new Map();
  function section(key){
-  if(!membership.has(key))membership.set(key,{nodes:new Set(),edges:new Set()});
+  if(!membership.has(key))membership.set(key,{nodes:new Set(),edges:new Set(),claims:new Set(),references:new Set()});
   return membership.get(key);
  }
  function register(key,label,raw,beforeNodeIds,beforeEdgeIds,afterNodes,afterEdges){
   if(!key)return;
   var part=section(key);if(label)labels.set(key,label);
+  var config=publicSources.find(function(s){return s.id===key});
+  if(config&&raw){
+   function collect(item){
+    if(!item)return;
+    var link=sourceLink(item.source);
+    if(link&&!sameOriginal(item.source,config.sourceUrl))part.references.add(link);
+    (Array.isArray(item.podcastNotes)?item.podcastNotes:[]).forEach(function(note){
+     if(!note||!note.text)return;
+     var ref=sourceLink(note.source);
+     if(ref&&!sameOriginal(note.source,config.sourceUrl))part.references.add(ref);
+     if(sameOriginal(note.source,config.sourceUrl)&&!/extern|contexto_documental_no|no_mencion/i.test(String(note.status||"")))part.claims.add(norm(note.text));
+    });
+   }
+   (raw.nodes||[]).forEach(collect);(raw.edges||[]).forEach(collect);
+  }
   // Solo roles explícitos en los metadatos del episodio: un personaje citado NO es necesariamente interviniente.
   if(/^f\d+$/.test(key)&&raw&&raw.metadata&&typeof raw.metadata==="object"){
    var m=raw.metadata,old=sourceMeta.get(key)||{creator:null,participants:[]};
@@ -76,10 +119,12 @@ function createTracker(sourceCatalog){
  function entries(){
   var entries=publicSources.map(function(s){
    var p=membership.get(s.id),count=p?p.nodes.size:0,relations=p?p.edges.size:0;
+   var canonical=membership.get(s.duplicateOf?"f"+s.duplicateOf:s.id);
+   var progress=scoreProgress(s.progressV2,{nodes:canonical?canonical.nodes.size:0,edges:canonical?canonical.edges.size:0,claims:canonical?canonical.claims.size:0,references:canonical?canonical.references.size:0});
    var meta=sourceMeta.get(s.id)||{creator:null,participants:[]};
    var people=Array.from(new Set(s.participants.concat(meta.participants)));
    return {id:s.id,order:s.order,title:s.title,duplicateOf:s.duplicateOf,nodes:count,edges:relations,
-    available:count>0||relations>0,extra:false,percent:s.percent,percentInherited:s.percentInherited,
+    available:count>0||relations>0,extra:false,percent:s.percent,progress:progress,editorialScore:progress?progress.score:s.percent,percentInherited:s.percentInherited,
     sourceUrl:s.sourceUrl,type:s.type,creator:s.creator||meta.creator||null,participants:people};
   });
   membership.forEach(function(p,id){
@@ -138,8 +183,8 @@ function mount(opts){
    var titleLine=document.createElement("div");titleLine.className="source-filter-title-line";
    var title=document.createElement("strong");title.textContent=(source.order?"F"+String(source.order).padStart(2,"0")+" · ":"")+source.title;
    var percent=document.createElement("span");percent.className="source-filter-percent";
-   percent.textContent=source.percent===null?"Sin %":source.percent+" %";
-   percent.title=source.percentInherited?"Avance editorial heredado de F"+source.duplicateOf:"Avance editorial estimado; no mide cobertura real del audio";
+   percent.textContent=source.progress?source.progress.score+" pts":source.percent===null?"Sin %":source.percent+" %";
+   percent.title=source.percentInherited?"Avance editorial heredado de F"+source.duplicateOf:"Puntos editoriales sobre 100; no mide cobertura real del audio";
    titleLine.appendChild(title);titleLine.appendChild(percent);
    var detail=document.createElement("small");
    detail.textContent=source.available?
@@ -247,5 +292,5 @@ function mountTypes(opts){
  renderList();
  return {keys:keys,refresh:renderList,close:function(){open(false)},isFiltering:function(){return selected!==null}};
 }
-global.IdeaLabSourceFilters={createTracker:createTracker,mount:mount,sourceForModule:sourceForModule,entityType:entityType,filterByTypes:filterByTypes,mountTypes:mountTypes};
+global.IdeaLabSourceFilters={scoreProgress:scoreProgress,createTracker:createTracker,mount:mount,sourceForModule:sourceForModule,entityType:entityType,filterByTypes:filterByTypes,mountTypes:mountTypes};
 })(window);
