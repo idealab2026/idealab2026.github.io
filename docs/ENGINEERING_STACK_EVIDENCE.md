@@ -59,3 +59,39 @@ Wheel idea_lab_research_api-0.1.0-py3-none-any.whl. SHA-256 d485b6ded057a39254d9
 - Local reports are CI artifacts with short retention. Keep evidence by rerunning locally or preserving only reviewed, non-sensitive reports.
 - No live Mac execution verified; no access to the global coordinator's private lock state. No merges or production publication in this batch.
 - MIDAS AI semantic retrieval, LangChain and structured date/operation tools remain independent work.
+
+
+## Extension: LLM gateway, GCP and observability — 2026-11-28
+
+All branches remain isolated and unmerged. The actual MIDAS AI assistant development is assigned separately to Codex; no edits to its files. The private local coordinator/credit state is not accessible; no production merge until coordination is verified.
+
+| Component | State at this checkpoint | Evidence |
+| --- | --- | --- |
+| LLM Gateway, FastAPI/Pydantic, HTTP routing, per-app authentication, model ACLs, atomic rate limiting and errors | Implemented and tested with two actual local CPU inference services | [PR 519](https://github.com/idealab2026/idealab2026.github.io/pull/519), [CI](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46137957980) |
+| Docker Compose, networks, volumes and non-root runtime | Built and run with real model weights and HTTP generation | Same CI |
+| Transformers / PyTorch CPU inference | Real Qwen3 0.6B and SmolLM2 135M; pinned Hub revisions | Same CI |
+| Prompt Governance | 4 applications, 2 versions each; render/contract tests, hash, activation and rollback verified; semantic evaluation pending | Same CI |
+| Observability / architecture | Local authenticated metrics dashboard, model inventory, probe and process-resource snapshot, interactive test page; no public traffic, RAG quality, browser telemetry or uptime history | [PR 520](https://github.com/idealab2026/idealab2026.github.io/pull/520), [gateway CI](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138107679) |
+| Kubernetes gateway | Initial run verified pod recovery, scaling, rollout and rollback; failed host port-forward test. Corrected test selects ready pods and uses direct in-cluster HTTP; full shared-rate/metrics verification pending | [initial run](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138102498), [corrected run](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138552564) |
+| LSTM resources and custody | 3 controls and independent-process comparison verified; frozen input digest gate implemented; original full input matrices unavailable | [PR 521](https://github.com/idealab2026/idealab2026.github.io/pull/521), [CI](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138264751) |
+| BigQuery batch contract | Real CI NDJSON artifact reconciled with SQL offline; schema/runbook prepared, actual BigQuery query NOT executed | [PR 522](https://github.com/idealab2026/idealab2026.github.io/pull/522), [CI](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138329664) |
+| Cloud Run / GKE / Cloud Storage / Artifact Registry / Cloud Logging / IAM / Vertex AI | Design/cost review only; no resources or billing activated | Gateway cloud README |
+| Public integration and deployment | Pending. Local-only architecture/observability; no public frontend API keys | Handoff and security boundary in learning guide |
+
+### Real gateway CI measurements (2 calls, not production traffic)
+Qwen3: 75 input tokens, 5 output, 1342.405991 ms. SmolLM2: 78 input, 12 output, 783.789883 ms. Two successful requests, 153 input and 17 output tokens. No paid inference API. Provider cost zero, local energy/hardware cost not measured. No quality inference from this smoke test.
+
+### Separate-process LSTM measurements (synthetic only)
+| Metric | PyTorch | TensorFlow/Keras |
+| --- | ---: | ---: |
+| Parameters | 2617 | 2521 |
+| MAE | 0.0162412580 | 0.0159253217 |
+| RMSE | 0.0200737473 | 0.0197069813 |
+| Train seconds | 0.0559846840 | 0.9898796950 |
+| Inference seconds | 0.0015108790 | 0.0368720450 |
+| Process CPU seconds | 1.976312718 | 5.095009528 |
+| Peak process RSS bytes | 515596288 | 852934656 |
+
+Do not compare the synthetic losses to the actual historical Keras validation MAE 0.0355757088 in the frozen 2026-11-27 forecast. The original source reports 126188 labelled rows and 488 live tickers; the matrices are not committed. Hash 3f0a70f8f3203046b75cc61b9bcdbf2a0f11c1c8f5c95903a81fd374393b0536 cannot be inverted. Both frameworks must use an identical authorized export. The digest does not prove original row order.
+
+See the companion [technical learning guide](LLM_GATEWAY_TECHNICAL_GUIDE.md) for 16 cards, bilingual descriptions, code, reproduction and five interview questions per card.
