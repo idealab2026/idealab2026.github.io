@@ -15,8 +15,6 @@ jobs:
   roundtrip:
     runs-on: ubuntu-latest
     timeout-minutes: 12
-    env:
-      ARTIFACT_REPORT_DIR: ${{ runner.temp }}/artifact-report
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,6 +23,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Build publish retrieve and verify artifacts
+        env:
+          ARTIFACT_REPORT_DIR: ${{ runner.temp }}/artifact-report
         run: bash infrastructure/artifacts/verify.sh
       - name: Preserve provenance only
         uses: actions/upload-artifact@v4
