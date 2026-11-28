@@ -20,3 +20,19 @@ EN: Both frameworks receive the identical 26-lag tensor and target, with a purge
 Q: Why purge? A: Labels extending into validation would reveal future target information.
 Q: Is synthetic MAE proof of trading skill? A: No; it proves execution of the software path only.
 Q: Is this in production? A: No; separate experimental run.
+
+## Separate-process resource comparison and exact input custody
+PyTorch's LSTM has two bias vectors per gate, unlike Keras's single vector. For 24 units and one input feature the trainable counts including the Dense/Linear head are 2,617 versus 2,521. Separate subprocess reports measure cumulative process peak RSS and CPU time; they include runtime/library overhead, not just model tensor memory.
+```sh
+python benchmark.py --synthetic --torch-only --out /tmp/torch-isolated
+python benchmark.py --synthetic --keras-only --out /tmp/keras-isolated
+python compare_reports.py /tmp/torch-isolated/report.json /tmp/keras-isolated/report.json
+```
+For the actual frozen MIDAS input, preserve full labelled and live CSV matrices exported from the original build_dataset output, including every column in original order. Do not fetch a new provider history and call it identical. Supply both plus the immutable forecast JSON:
+```sh
+python benchmark.py --dataset /path/to/labelled.csv --production-live /path/to/live.csv --production-forecast /path/to/frozen-forecast.json --torch-only --out /tmp/torch-real
+python benchmark.py --dataset /path/to/labelled.csv --production-live /path/to/live.csv --production-forecast /path/to/frozen-forecast.json --keras-only --out /tmp/keras-real
+python compare_reports.py /tmp/torch-real/report.json /tmp/keras-real/report.json
+```
+The original 2026-11-27 forecast records 126,188 labelled rows, 488 live tickers, 113,012 train rows, 12,688 validation rows, input_digest 3f0a70f8f3203046b75cc61b9bcdbf2a0f11c1c8f5c95903a81fd374393b0536. It is not possible to invert a SHA-256 digest into the feature matrix. Custody verification uses the exact sorted-frame hash contract. It does not prove original row order or bit-identical environment; preserve both separately. The existing actual Keras MAE 0.03557570881203736 is not comparable to synthetic PyTorch MAE.
+Source: https://github.com/idealab2026/laboratorio-cuantitativo/blob/602f18b5a83b6a6f97987f1143604db4acb8d694/weekly_ml_state/forecasts/2026-11-27.json
