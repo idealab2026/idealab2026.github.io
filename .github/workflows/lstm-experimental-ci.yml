@@ -4,11 +4,6 @@ on:
     paths:
       - 'infrastructure/experiments/midas_lstm/**'
       - '.github/workflows/lstm-experimental-ci.yml'
-  push:
-    branches: ['engineering/research-api-20261128']
-    paths:
-      - 'infrastructure/experiments/midas_lstm/**'
-      - '.github/workflows/lstm-experimental-ci.yml'
 permissions:
   contents: read
 concurrency:
@@ -35,7 +30,7 @@ jobs:
       - name: Test split and gradient loop
         run: python -m pytest -q
       - name: Compare both frameworks and register local runs
-        run: python benchmark.py --synthetic --out "$RUNNER_TEMP/lstm" --tracking
+        run: python benchmark.py --synthetic --out "$RUNNER_TEMP/lstm" --tracking --source-commit 602f18b5a83b6a6f97987f1143604db4acb8d694
       - name: Preserve synthetic benchmark report
         uses: actions/upload-artifact@v4
         with:

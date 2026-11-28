@@ -140,6 +140,11 @@ def main():
     if args.tracking:
         import mlflow
         mlflow.set_tracking_uri("sqlite:///"+str(out/"tracking.db"))
+        mlflow.set_registry_uri("sqlite:///"+str(out/"tracking.db"))
+        client=mlflow.MlflowClient()
+        experiment=client.get_experiment_by_name("midas-lstm-isolated")
+        if experiment is None:
+            client.create_experiment("midas-lstm-isolated",artifact_location=(out/"artifacts").as_uri())
         mlflow.set_experiment("midas-lstm-isolated")
     for name,fit in ([("pytorch",torch_fit)] if args.torch_only else [("pytorch",torch_fit),("keras",keras_fit)]):
         model,p,elapsed,infer,version=fit(x,y,xv,cfg)
@@ -160,10 +165,16 @@ def main():
                 mlflow.log_dict(scale,"normalization.json")
                 mlflow.log_artifact(str(out/("pytorch-state.pt" if name=="pytorch" else "keras-model.keras")))
                 if name=="pytorch":
-                    mlflow.pytorch.log_model(model,"model",registered_model_name="midas-lstm-pytorch-experimental")
+                    mlflow.pytorch.log_model(model,"model",registered_model_name="midas-lstm-pytorch-experimental",pip_requirements=["torch=="+version])
                 else:
-                    mlflow.tensorflow.log_model(model,"model",registered_model_name="midas-lstm-keras-experimental")
+                    mlflow.tensorflow.log_model(model,"model",registered_model_name="midas-lstm-keras-experimental",pip_requirements=["tensorflow-cpu=="+version,"keras==3.9.2"])
                 report["models"][name]["run_id"]=run.info.run_id
+    if args.tracking:
+        for name in report["models"]:
+            versions=client.search_model_versions("name = 'midas-lstm-"+name+"-experimental'")
+            if not any(v.run_id==report["models"][name]["run_id"] for v in versions):
+                raise RuntimeError("Model registration missing")
+            report["models"][name]["registered_versions"]=[v.version for v in versions if v.run_id==report["models"][name]["run_id"]]
     (out/"report.json").write_text(json.dumps(report,indent=2,allow_nan=False)+"\n")
     print(json.dumps(report,indent=2,allow_nan=False))
 
