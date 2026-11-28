@@ -43,9 +43,7 @@ jobs:
       run:
         working-directory: infrastructure/experiments/psico
     env:
-      AIRFLOW_HOME: ${{ runner.temp }}/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
-      IDEALAB_RUN_DIR: ${{ runner.temp }}/coup
     steps:
       - uses: actions/checkout@v4
         with:
@@ -56,6 +54,9 @@ jobs:
       - name: Install Airflow with official constraints
         run: pip install 'apache-airflow==2.10.5' --constraint 'https://raw.githubusercontent.com/apache/airflow/constraints-2.10.5/constraints-3.11.txt'
       - name: Initialize SQLite and execute entire DAG
+        env:
+          AIRFLOW_HOME: ${{ runner.temp }}/airflow
+          IDEALAB_RUN_DIR: ${{ runner.temp }}/coup
         run: |
           airflow db migrate
           python coup_dag.py
