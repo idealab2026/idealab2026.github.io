@@ -95,3 +95,7 @@ Qwen3: 75 input tokens, 5 output, 1342.405991 ms. SmolLM2: 78 input, 12 output, 
 Do not compare the synthetic losses to the actual historical Keras validation MAE 0.0355757088 in the frozen 2026-11-27 forecast. The original source reports 126188 labelled rows and 488 live tickers; the matrices are not committed. Hash 3f0a70f8f3203046b75cc61b9bcdbf2a0f11c1c8f5c95903a81fd374393b0536 cannot be inverted. Both frameworks must use an identical authorized export. The digest does not prove original row order.
 
 See the companion [technical learning guide](LLM_GATEWAY_TECHNICAL_GUIDE.md) for 16 cards, bilingual descriptions, code, reproduction and five interview questions per card.
+
+## Kubernetes gateway final revalidation
+
+[Corrected CI run 46138552564](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138552564) completed successfully: pod deletion/recovery, three replicas, rolling update, rollback, actual SmolLM2 HTTP inference through two distinct pods, shared SQLite metrics and a shared rate limit (two successful calls and one HTTP 429). Single-node kind only, not GKE or distributed storage. Integration candidate unmerged; backend HTML templates retained as .html.txt outside the public Pages allowlist. Public architecture snapshot is read-only and separates CI measurements from public traffic.

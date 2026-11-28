@@ -122,11 +122,11 @@ def create_app(settings=None,transport=None):
           "browser":"not monitored","note":"Point-in-time health only; not historical uptime"}
     @app.get("/architecture",response_class=HTMLResponse)
     def architecture():
-        return HTMLResponse(Path(__file__).with_name("architecture.html").read_text(),
+        return HTMLResponse(Path(__file__).with_name("architecture.html.txt").read_text(),
              headers={"Content-Security-Policy":"default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'","Cache-Control":"no-store"})
     @app.get("/dashboard",response_class=HTMLResponse)
     def dashboard():
-        return HTMLResponse(Path(__file__).with_name("dashboard.html").read_text(),
+        return HTMLResponse(Path(__file__).with_name("dashboard.html.txt").read_text(),
              headers={"Content-Security-Policy":"default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'","Cache-Control":"no-store"})
     return app
 app=create_app()
