@@ -176,9 +176,9 @@ Institutional scope only. The code references point to isolated PR commits, not 
 
 **Funcionamiento interno:** Namespace, Deployment, Service, PVC, ConfigMap, Secret y probes. Deployment crea ReplicaSets; el Service expone endpoint estable.
 
-**Aplicación y estado:** API de investigación probada en kind; gateway con manifiestos y prueba específica de recuperación de pods/SQLite compartido en un nodo.
+**Aplicación y estado:** API de investigación probada en kind; gateway con recuperación de pod, escalado y rollback observados; primera comprobación de HTTP falló, corrección y revalidación en curso.
 
-**Código:** [fichero principal](https://github.com/idealab2026/idealab2026.github.io/blob/819368405e7f3616f40350e793e0a4ea8477945f/infrastructure/gateway/k8s/gateway.yaml). **Reproducción:** [comandos y configuración](https://github.com/idealab2026/idealab2026.github.io/blob/819368405e7f3616f40350e793e0a4ea8477945f/infrastructure/gateway/k8s/README.md). **Evidencia:** [CI](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138102498).
+**Código:** [fichero principal](https://github.com/idealab2026/idealab2026.github.io/blob/819368405e7f3616f40350e793e0a4ea8477945f/infrastructure/gateway/k8s/gateway.yaml). **Reproducción:** [comandos y configuración](https://github.com/idealab2026/idealab2026.github.io/blob/819368405e7f3616f40350e793e0a4ea8477945f/infrastructure/gateway/k8s/README.md). **Evidencia:** [CI](https://github.com/idealab2026/idealab2026.github.io/actions/runs/46138552564).
 
 **Limitaciones y alternativas:** No es GKE ni cluster multi-nodo. ReadWriteOnce limita acceso a un nodo; SQLite no es solución distribuida. Secret no implica cifrado. Alternativas k3d, Minikube, Nomad.
 
