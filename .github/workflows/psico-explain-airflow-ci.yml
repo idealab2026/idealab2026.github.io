@@ -1,0 +1,68 @@
+name: Institutional explainability and Airflow reproduction
+on:
+  push:
+    branches: ['engineering/psico-explain-airflow-20261128']
+    paths:
+      - 'infrastructure/experiments/psico/**'
+      - '.github/workflows/psico-explain-airflow-ci.yml'
+permissions:
+  contents: read
+concurrency:
+  group: psico-explain-airflow-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  explain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: infrastructure/experiments/psico
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned explanation dependencies
+        run: pip install -r requirements.txt
+      - name: Reproduce, explain and register model
+        run: python explain_newconf.py --out "$RUNNER_TEMP/explanation" --tracking
+      - name: Preserve report and visualization
+        uses: actions/upload-artifact@v4
+        with:
+          name: newconf-explanation
+          path: |
+            ${{ runner.temp }}/explanation/report.json
+            ${{ runner.temp }}/explanation/report.html
+          retention-days: 3
+  airflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: infrastructure/experiments/psico
+    env:
+      AIRFLOW_HOME: ${{ runner.temp }}/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
+      IDEALAB_RUN_DIR: ${{ runner.temp }}/coup
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Airflow with official constraints
+        run: pip install 'apache-airflow==2.10.5' --constraint 'https://raw.githubusercontent.com/apache/airflow/constraints-2.10.5/constraints-3.11.txt'
+      - name: Initialize SQLite and execute entire DAG
+        run: |
+          airflow db migrate
+          python coup_dag.py
+          test -s "$IDEALAB_RUN_DIR/local-publication/coup-baseline.json"
+      - name: Preserve local publication
+        uses: actions/upload-artifact@v4
+        with:
+          name: coup-airflow-reproduction
+          path: ${{ runner.temp }}/coup/local-publication/coup-baseline.json
+          retention-days: 3
