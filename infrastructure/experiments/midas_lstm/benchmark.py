@@ -4,6 +4,8 @@ import hashlib
 import json
 import os
 import platform
+import resource
+import sys
 import time
 from pathlib import Path
 import numpy as np
@@ -117,7 +119,11 @@ def main():
     parser.add_argument("--synthetic",action="store_true")
     parser.add_argument("--out",type=Path,required=True)
     parser.add_argument("--tracking",action="store_true")
-    parser.add_argument("--torch-only",action="store_true")
+    frameworks=parser.add_mutually_exclusive_group()
+    frameworks.add_argument("--torch-only",action="store_true")
+    frameworks.add_argument("--keras-only",action="store_true")
+    parser.add_argument("--production-forecast",type=Path)
+    parser.add_argument("--production-live",type=Path)
     parser.add_argument("--source-commit",default="unknown")
     args=parser.parse_args()
     if args.synthetic==bool(args.dataset):
@@ -128,11 +134,17 @@ def main():
     path=args.dataset
     if args.synthetic:
         path=out/"synthetic_fixture.csv";fixture(path)
+    custody=None
+    if args.production_forecast or args.production_live:
+        if args.synthetic or not args.production_forecast or not args.production_live:
+            parser.error('Production custody requires labelled dataset, live matrix and frozen forecast')
+        from verify_production_export import verify
+        custody=verify(path,args.production_live,args.production_forecast)
     frame=load_rows(path)
     train,val=split(frame,cfg["validation_weeks"])
     x,y,xv,yv,scale=arrays(train,val)
     report={"scope":"synthetic_smoke" if args.synthetic else "offline_dataset_comparison",
-            "source_commit":args.source_commit,"dataset_sha256":hashlib.sha256(path.read_bytes()).hexdigest(),
+            "source_commit":args.source_commit,"production_custody":custody,"dataset_sha256":hashlib.sha256(path.read_bytes()).hexdigest(),
             "code_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             "config":cfg,"train_rows":len(train),"validation_rows":len(val),
             "train_last_target":train.target_end_date.max(),"validation_first_signal":val.signal_date.min(),
@@ -146,12 +158,19 @@ def main():
         if experiment is None:
             client.create_experiment("midas-lstm-isolated",artifact_location=(out/"artifacts").as_uri())
         mlflow.set_experiment("midas-lstm-isolated")
-    for name,fit in ([("pytorch",torch_fit)] if args.torch_only else [("pytorch",torch_fit),("keras",keras_fit)]):
+    selected=[("pytorch",torch_fit)] if args.torch_only else [("keras",keras_fit)] if args.keras_only else [("pytorch",torch_fit),("keras",keras_fit)]
+    for name,fit in selected:
+        cpu_start=time.process_time()
         model,p,elapsed,infer,version=fit(x,y,xv,cfg)
         raw=p*scale["y_std"]+scale["y_mean"]
         if not np.isfinite(raw).all():raise ValueError("Non-finite inference")
         m=metrics(yv,raw,elapsed,infer)
-        report["models"][name]={"version":version,**m}
+        params=sum(v.numel() for v in model.parameters() if v.requires_grad) if name=="pytorch" else int(model.count_params())
+        expected=2617 if name=="pytorch" else 2521
+        if cfg["units"]==24 and params!=expected:raise ValueError("Unexpected parameter count")
+        report["models"][name]={"version":version,**m,"trainable_parameters":int(params),
+          "process_cpu_seconds_fit_and_inference":time.process_time()-cpu_start,
+          "peak_rss_bytes_process":resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=="darwin" else 1024) if len(selected)==1 else None}
         if name=="pytorch":
             import torch
             torch.save(model.state_dict(),out/"pytorch-state.pt")
@@ -161,7 +180,7 @@ def main():
                 mlflow.log_params({**cfg,"framework":name,"framework_version":version,
                   "dataset_sha256":report["dataset_sha256"],"code_sha256":report["code_sha256"],"source_commit":args.source_commit,
                   "scope":report["scope"],"train_rows":len(train),"validation_rows":len(val)})
-                mlflow.log_metrics(m)
+                mlflow.log_metrics({**m,"trainable_parameters":params})
                 mlflow.log_dict(scale,"normalization.json")
                 mlflow.log_artifact(str(out/("pytorch-state.pt" if name=="pytorch" else "keras-model.keras")))
                 if name=="pytorch":
