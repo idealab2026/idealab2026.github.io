@@ -1,0 +1,34 @@
+name: Institutional artifact lifecycle validation
+on:
+  push:
+    branches: ['engineering/artifacts-local-20261128']
+    paths:
+      - 'infrastructure/artifacts/**'
+      - 'infrastructure/api/pyproject.toml'
+      - '.github/workflows/artifacts-local-ci.yml'
+permissions:
+  contents: read
+concurrency:
+  group: artifacts-local-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  roundtrip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      ARTIFACT_REPORT_DIR: ${{ runner.temp }}/artifact-report
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build publish retrieve and verify artifacts
+        run: bash infrastructure/artifacts/verify.sh
+      - name: Preserve provenance only
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact-provenance
+          path: ${{ runner.temp }}/artifact-report/provenance.json
+          retention-days: 3
