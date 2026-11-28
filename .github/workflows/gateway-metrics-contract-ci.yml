@@ -1,0 +1,26 @@
+name: Institutional gateway metrics export contract
+on:
+  push:
+    branches: ['engineering/gateway-cloud-contract-20261128']
+    paths:
+      - 'infrastructure/gateway/cloud/**'
+      - '.github/workflows/gateway-metrics-contract-ci.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: llm-gateway-ci-measurements
+          run-id: 46137957980
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/gateway-report
+      - name: Validate actual gateway events against schema and offline SQL
+        run: python3 infrastructure/gateway/cloud/verify_export.py "$RUNNER_TEMP/gateway-report/events.ndjson" "$RUNNER_TEMP/gateway-report/metrics.json" --scope ci_test

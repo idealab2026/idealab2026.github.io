@@ -1,0 +1,40 @@
+services:
+  gateway:
+    build:
+      context: .
+      target: gateway
+    ports: ["127.0.0.1:8080:8080"]
+    env_file: ["${GATEWAY_ENV_FILE:?Set GATEWAY_ENV_FILE to a local secrets file}"]
+    environment:
+      METRICS_SCOPE: "${METRICS_SCOPE:-local_demo}"
+      METRICS_DB: /data/metrics.db
+    volumes: [metrics:/data]
+    networks: [inference]
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  smol:
+    build:
+      context: .
+      target: inference
+    environment: {SERVER_MODEL: smollm2-135m}
+    volumes: [smol-cache:/hf]
+    networks: [inference]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  qwen:
+    build:
+      context: .
+      target: inference
+    environment: {SERVER_MODEL: qwen3-0.6b}
+    volumes: [qwen-cache:/hf]
+    networks: [inference]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+networks:
+  inference: {}
+volumes:
+  metrics: {}
+  smol-cache: {}
+  qwen-cache: {}
