@@ -1,0 +1,1 @@
+{"seed":42,"units":24,"epochs":4,"batch_size":512,"learning_rate":0.002,"validation_weeks":26,"lookback":26,"target":"target_return","loss":"mae","source_commit":"PINNED_IN_README"}

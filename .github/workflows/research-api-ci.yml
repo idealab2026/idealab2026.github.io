@@ -5,7 +5,7 @@ on:
       - 'infrastructure/api/**'
       - '.github/workflows/research-api-ci.yml'
   push:
-    branches: ['main']
+    branches: ['main', 'engineering/research-api-20261128']
     paths:
       - 'infrastructure/api/**'
       - '.github/workflows/research-api-ci.yml'
