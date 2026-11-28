@@ -1,5 +1,5 @@
 """Local CPU inference. Fixed HF model and revision, no remote inference API."""
-import os,threading
+import os,threading,resource,sys
 from contextlib import asynccontextmanager
 from fastapi import FastAPI,HTTPException
 from pydantic import BaseModel,ConfigDict,Field
@@ -27,7 +27,10 @@ async def lifespan(app):
     yield
 app=FastAPI(lifespan=lifespan)
 @app.get("/health")
-def health():return {"status":"ok","model":model_id,"revision":spec["revision"]}
+def health():
+    rs=resource.getrusage(resource.RUSAGE_SELF)
+    return {"status":"ok","model":model_id,"revision":spec["revision"],
+      "process":{"cpu_seconds":rs.ru_utime+rs.ru_stime,"peak_rss_bytes":rs.ru_maxrss*(1 if sys.platform=="darwin" else 1024)}}
 @app.post("/generate")
 def generate(body:Request):
     if not lock.acquire(blocking=False):raise HTTPException(503,"Backend busy")

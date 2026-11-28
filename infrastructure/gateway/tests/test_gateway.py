@@ -63,3 +63,8 @@ def test_governance(tmp_path):
 def test_empty_metrics(tmp_path):
     m=Metrics(str(tmp_path/"m.db"),"local_demo").summary()
     assert m["total"]["requests"]==0 and m["total"]["p95_ms"] is None and m["total"]["input_tokens"] is None
+
+def test_architecture_and_probe_auth(test_client):
+    assert test_client.get("/architecture").status_code==200
+    assert "Live service status" in test_client.get("/architecture").text
+    assert test_client.get("/v1/status").status_code==403
