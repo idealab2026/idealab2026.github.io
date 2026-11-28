@@ -4,8 +4,7 @@ cd "$(dirname "$0")/.."
 N=idealab-gateway
 K=(kubectl -n "$N")
 WORK=$(mktemp -d)
-PIDS=()
-cleanup(){ for p in "${PIDS[@]}"; do kill "$p" 2>/dev/null || true; done; rm -rf "$WORK"; }
+cleanup(){ rm -rf "$WORK"; }
 trap cleanup EXIT
 python make_secrets.py "$WORK/keys.env"
 kubectl apply -f k8s/namespace.yaml
@@ -32,29 +31,35 @@ test "$("${K[@]}" get deployment gateway -o jsonpath='{.spec.template.spec.conta
 "${K[@]}" rollout undo deployment/gateway
 "${K[@]}" rollout status deployment/gateway --timeout=150s
 test "$("${K[@]}" get deployment gateway -o jsonpath='{.spec.template.spec.containers[0].image}')" = idealab-gateway:0.1.0
-P1=$("${K[@]}" get pods -l app=gateway -o jsonpath='{.items[0].metadata.name}')
-P2=$("${K[@]}" get pods -l app=gateway -o jsonpath='{.items[1].metadata.name}')
-"${K[@]}" port-forward "pod/$P1" 18080:8080 >"$WORK/p1.log" 2>&1 & PIDS+=($!)
-"${K[@]}" port-forward "pod/$P2" 18081:8080 >"$WORK/p2.log" 2>&1 & PIDS+=($!)
-for i in $(seq 1 30); do if curl -fsS http://127.0.0.1:18080/health && curl -fsS http://127.0.0.1:18081/health; then break; fi; sleep 1; done
-python - "$WORK/keys.env" <<'PY'
-import json,sys,time,urllib.request,urllib.error
-from pathlib import Path
-keys=dict(l.split("=",1) for l in Path(sys.argv[1]).read_text().splitlines())
-def call(port,path,key,data=None):
-    req=urllib.request.Request(f"http://127.0.0.1:{port}"+path,headers={"X-API-Key":key,"Content-Type":"application/json"},data=json.dumps(data).encode() if data else None)
+# Select only Ready, non-terminating pods from the rolled-back Deployment.
+# Kubernetes may still list terminating old Pods after rollout status succeeds.
+SELECTED=$("${K[@]}" get pods -l app=gateway -o json | python -c 'import json,sys; p=[x for x in json.load(sys.stdin)["items"] if not x["metadata"].get("deletionTimestamp") and x["status"].get("phase")=="Running" and any(c["type"]=="Ready" and c["status"]=="True" for c in x["status"].get("conditions",[]))]; assert len(p)==3; print(p[0]["status"]["podIP"],p[1]["status"]["podIP"],p[2]["metadata"]["name"])')
+read -r IP1 IP2 P3 <<< "$SELECTED"
+# Direct requests from a third pod avoid stale host port-forwards, while
+# proving the two distinct gateway replicas actually share their SQLite PVC.
+# Credentials are read from the injected Secret, never printed.
+"${K[@]}" exec -i "$P3" -- python - "$IP1" "$IP2" <<'PY'
+import json,sys,time,urllib.request,urllib.error,os
+def call(host,path,key=None,data=None):
+    headers={"Content-Type":"application/json"}
+    if key:headers["X-API-Key"]=os.environ[key]
+    req=urllib.request.Request(f"http://{host}:8080"+path,headers=headers,data=json.dumps(data).encode() if data else None)
     try:
         with urllib.request.urlopen(req,timeout=60) as r:return r.status,json.load(r)
     except urllib.error.HTTPError as e:return e.code,json.load(e)
-s,health=call(18080,"/v1/status",keys["OBSERVER_KEY"])
+ip1,ip2=sys.argv[1:]
+assert ip1!=ip2
+s,health=call("gateway","/health")
+assert s==200 and health["status"]=="ok"
+s,health=call(ip1,"/v1/status","OBSERVER_KEY")
 assert s==200 and any(b["model"]=="smollm2-135m" and b["state"]=="ready" for b in health["backends"])
 if time.time()%60>45:time.sleep(61-time.time()%60)
 data={"question":"Say hello in one sentence.","model":"smollm2-135m","max_new_tokens":8}
-for port in (18080,18081):
-    s,r=call(port,"/v1/generate",keys["KEY_OBSERVATORIO"],data)
+for ip in (ip1,ip2):
+    s,r=call(ip,"/v1/generate","KEY_OBSERVATORIO",data)
     assert s==200 and r["model"]=="smollm2-135m" and r["usage"]["output_tokens"]>0,(s,r.get("detail"))
-s,_=call(18081,"/v1/generate",keys["KEY_OBSERVATORIO"],data);assert s==429,s
-s,m=call(18080,"/v1/metrics",keys["OBSERVER_KEY"])
+s,_=call(ip2,"/v1/generate","KEY_OBSERVATORIO",data);assert s==429,s
+s,m=call(ip1,"/v1/metrics","OBSERVER_KEY")
 assert s==200 and m["total"]["success"]==2 and m["total"]["requests"]==3
 print(json.dumps({"scope":"ci_test","pod_recovery":True,"replicas":3,"rolling_update":True,"rollback":True,"shared_rate_limit":True,"shared_metrics":True,"actual_backend":"smollm2-135m","metrics":m["total"]}))
 PY
