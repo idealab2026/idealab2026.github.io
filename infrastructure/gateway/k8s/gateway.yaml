@@ -1,0 +1,81 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-config
+  namespace: idealab-gateway
+data:
+  METRICS_SCOPE: local_demo
+  METRICS_DB: /data/metrics.db
+  REQUESTS_PER_MINUTE: "12"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: gateway-data
+  namespace: idealab-gateway
+spec:
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: 128Mi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway
+  namespace: idealab-gateway
+spec:
+  replicas: 2
+  revisionHistoryLimit: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: {maxSurge: 1, maxUnavailable: 0}
+  selector:
+    matchLabels: {app: gateway}
+  template:
+    metadata:
+      labels: {app: gateway}
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: gateway
+          image: idealab-gateway:0.1.0
+          imagePullPolicy: Never
+          envFrom:
+            - configMapRef: {name: gateway-config}
+            - secretRef: {name: gateway-keys}
+          ports: [{name: http, containerPort: 8080}]
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: ["ALL"]}
+          resources:
+            requests: {cpu: 100m, memory: 96Mi}
+            limits: {cpu: 500m, memory: 256Mi}
+          startupProbe: {httpGet: {path: /health, port: http}, periodSeconds: 2, failureThreshold: 30}
+          readinessProbe: {httpGet: {path: /ready, port: http}, periodSeconds: 3}
+          livenessProbe: {httpGet: {path: /health, port: http}, periodSeconds: 15}
+          volumeMounts:
+            - {name: data, mountPath: /data}
+            - {name: tmp, mountPath: /tmp}
+      volumes:
+        - name: data
+          persistentVolumeClaim: {claimName: gateway-data}
+        - name: tmp
+          emptyDir: {sizeLimit: 32Mi}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gateway
+  namespace: idealab-gateway
+spec:
+  type: ClusterIP
+  selector: {app: gateway}
+  ports: [{port: 8080, targetPort: http}]

@@ -1,0 +1,10 @@
+alibi==0.9.6
+shap==0.44.1
+numpy==1.26.4
+scipy==1.12.0
+pandas==2.2.3
+scikit-learn==1.4.2
+numba==0.59.1
+mlflow==2.22.0
+sqlalchemy==2.0.40
+alembic==1.15.2

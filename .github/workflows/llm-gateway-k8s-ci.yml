@@ -1,0 +1,43 @@
+name: Institutional gateway Kubernetes validation
+on:
+  push:
+    branches: ['engineering/llm-gateway-k8s-20261128']
+    paths:
+      - 'infrastructure/gateway/**'
+      - '.github/workflows/llm-gateway-k8s-ci.yml'
+permissions:
+  contents: read
+concurrency:
+  group: gateway-k8s-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache: false
+      - run: go install sigs.k8s.io/kind@v0.27.0
+      - uses: azure/setup-kubectl@v4
+        with:
+          version: 'v1.32.2'
+      - name: Build and verify local cluster
+        working-directory: infrastructure/gateway
+        run: |
+          docker build --target gateway -t idealab-gateway:0.1.0 .
+          docker build --target gateway --label demo.revision=0.1.1 -t idealab-gateway:0.1.1 .
+          docker build --target inference -t idealab-inference:0.1.0 .
+          kind create cluster --name idea-lab-gateway --image kindest/node:v1.32.2 --wait 120s
+          kind load docker-image --name idea-lab-gateway idealab-gateway:0.1.0 idealab-gateway:0.1.1 idealab-inference:0.1.0
+          bash k8s/verify.sh
+      - name: Delete cluster
+        if: always()
+        run: kind delete cluster --name idea-lab-gateway

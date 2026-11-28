@@ -1,0 +1,33 @@
+name: Institutional engineering integration gate
+on:
+  pull_request:
+    paths:
+      - 'arquitectura/**'
+      - 'infrastructure/**'
+      - 'scripts/test_architecture_public.py'
+      - 'scripts/validate_public.py'
+      - '.github/workflows/engineering-integration-ci.yml'
+permissions:
+  contents: read
+concurrency:
+  group: engineering-integration-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Institutional privacy and architecture checks
+        run: |
+          python3 scripts/validate_public.py
+          python3 scripts/test_architecture_public.py
+          node scripts/test_project_icons.mjs
+          python3 -m compileall -q infrastructure
+      - name: Verify that only public architecture assets are staged
+        run: |
+          mkdir -p "$RUNNER_TEMP/architecture-dist/arquitectura"
+          cp arquitectura/index.html "$RUNNER_TEMP/architecture-dist/arquitectura/"
+          test "$(find "$RUNNER_TEMP/architecture-dist" -type f | wc -l)" = 1

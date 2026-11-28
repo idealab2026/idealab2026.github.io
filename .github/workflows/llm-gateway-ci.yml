@@ -1,0 +1,60 @@
+name: Institutional LLM gateway validation
+on:
+  pull_request:
+    paths:
+      - 'infrastructure/gateway/**'
+      - '.github/workflows/llm-gateway-ci.yml'
+permissions:
+  contents: read
+concurrency:
+  group: gateway-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: infrastructure/gateway
+    env:
+      METRICS_SCOPE: ci_test
+      HF_HUB_DISABLE_TELEMETRY: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install and verify gateway policy and contracts
+        run: |
+          pip install -r requirements.txt pytest==8.3.5
+          python -m pytest -q
+      - name: Build and start isolated gateway and inference services
+        env:
+          GATEWAY_ENV_FILE: ${{ runner.temp }}/gateway.env
+        run: |
+          python make_secrets.py "$GATEWAY_ENV_FILE"
+          docker compose build
+          docker compose up -d
+          for i in $(seq 1 180); do
+            if curl -fsS http://127.0.0.1:8080/health && docker compose exec -T smol python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/health',timeout=2)" 2>/dev/null && docker compose exec -T qwen python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/health',timeout=2)" 2>/dev/null; then exit 0; fi
+            sleep 3
+          done
+          exit 1
+      - name: Actual two-model HTTP inference and metrics export
+        env:
+          GATEWAY_ENV_FILE: ${{ runner.temp }}/gateway.env
+          REPORT_DIR: ${{ runner.temp }}/gateway-report
+        run: python tests/smoke.py
+      - name: Preserve CI-only measurements
+        uses: actions/upload-artifact@v4
+        with:
+          name: llm-gateway-ci-measurements
+          path: ${{ runner.temp }}/gateway-report/
+          retention-days: 7
+      - name: Tear down
+        if: always()
+        env:
+          GATEWAY_ENV_FILE: ${{ runner.temp }}/gateway.env
+        run: docker compose down -v || true

@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smol
+  namespace: idealab-gateway
+spec:
+  replicas: 1
+  strategy: {type: Recreate}
+  selector:
+    matchLabels: {app: smol}
+  template:
+    metadata:
+      labels: {app: smol}
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: inference
+          image: idealab-inference:0.1.0
+          imagePullPolicy: Never
+          env: [{name: SERVER_MODEL, value: smollm2-135m}]
+          ports: [{name: http, containerPort: 8081}]
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities: {drop: ["ALL"]}
+          resources:
+            requests: {cpu: 200m, memory: 512Mi}
+            limits: {cpu: "2", memory: 2Gi}
+          startupProbe: {httpGet: {path: /health, port: http}, periodSeconds: 5, failureThreshold: 120}
+          readinessProbe: {httpGet: {path: /health, port: http}, periodSeconds: 5}
+          livenessProbe: {httpGet: {path: /health, port: http}, periodSeconds: 20}
+          volumeMounts: [{name: cache, mountPath: /hf}]
+      volumes:
+        - name: cache
+          emptyDir: {sizeLimit: 5Gi}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smol
+  namespace: idealab-gateway
+spec:
+  type: ClusterIP
+  selector: {app: smol}
+  ports: [{port: 8081, targetPort: http}]

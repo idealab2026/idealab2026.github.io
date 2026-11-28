@@ -257,13 +257,18 @@ jobs:
           IDEALAB_CF_ACCOUNT_ID: ${{ secrets.IDEALAB_CF_ACCOUNT_ID }}
         run: python3 scripts/build_traffic.py
       - name: Auditar independencia y artefactos
-        run: python3 scripts/validate_public.py
+        run: |
+          python3 scripts/validate_public.py
+          python3 scripts/test_architecture_public.py
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
       - name: Crear distribución de lista blanca
         run: |
           mkdir -p dist
           cp index.html stats.js favicon.svg logo-idea-lab.svg icon-180.svg social-preview.svg dist/
+          mkdir -p dist/arquitectura
+          cp arquitectura/index.html dist/arquitectura/index.html
+          test -s dist/arquitectura/index.html
           mkdir -p dist/project-icons
           cp project-icons/*.svg dist/project-icons/
           for icon in espana-en-datos larealidad psicohistoria midas biblioteca-montecristo; do

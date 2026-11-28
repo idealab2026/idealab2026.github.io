@@ -1,0 +1,18 @@
+{
+  "midas": {
+    "version": "v1",
+    "sha256": "38c66a77a17f71ff55e43afae5b014fcfa609c0c29c64af9c7a0a13ad8a60b7f"
+  },
+  "psicohistoria": {
+    "version": "v1",
+    "sha256": "dc0cf280e7f5411d91ba9aba4bd4a0bcc4c8c3e20ca75acc505d5d3b6be41e04"
+  },
+  "observatorio": {
+    "version": "v1",
+    "sha256": "e3e7672dfb5f529749018ea081c1fa71ac3bcf4b8e8eed4661d9511c1f2c1890"
+  },
+  "la-telarana": {
+    "version": "v1",
+    "sha256": "467e2ac638c204a0ddffe6586eddf5778b08f218d48bdd1b8bd51e7a0582e198"
+  }
+}

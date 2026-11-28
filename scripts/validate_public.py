@@ -26,7 +26,7 @@ for link in scanner.links:
 for token in ("segundo-cerebro", "tfm", "tfg", "personal_mamg", "mamg97", "gmail.com", "cloudflare", "worker", "drive.google.com"):
     # Do not echo any matched private data in errors or action logs.
     if token in html.lower(): errors.append("Unapproved source identity marker detected")
-allowed_html = {"index.html", "linea-historia/index.html", "la-telarana/index.html", "biblioteca-montecristo/index.html", "icsa/index.html", "icsa/privacidad.html"}
+allowed_html = {"arquitectura/index.html", "index.html", "linea-historia/index.html", "la-telarana/index.html", "biblioteca-montecristo/index.html", "icsa/index.html", "icsa/privacidad.html"}
 found_html = {str(path.relative_to(ROOT)) for path in ROOT.rglob("*.html") if ".git" not in path.parts}
 if found_html != allowed_html: errors.append("Unexpected or missing HTML page in public distribution")
 for page in ("icsa/index.html", "icsa/privacidad.html"):
