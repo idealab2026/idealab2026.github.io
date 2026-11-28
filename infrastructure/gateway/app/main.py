@@ -1,4 +1,4 @@
-import asyncio,json,logging,time
+import asyncio,json,logging,time,resource,sys
 from pathlib import Path
 from contextlib import asynccontextmanager
 from typing import Annotated,Literal
@@ -100,6 +100,30 @@ def create_app(settings=None,transport=None):
     def metrics(request:Request):return request.app.state.metrics.summary()
     @app.get("/v1/metrics/export",dependencies=[Depends(observer)],response_class=PlainTextResponse)
     def export(request:Request):return request.app.state.metrics.export()
+    @app.get("/v1/status",dependencies=[Depends(observer)])
+    async def status(request:Request):
+        async def probe(model_id,model):
+            start=time.monotonic()
+            try:
+                async with asyncio.timeout(3):
+                    r=await request.app.state.http.get(model["backend"]+"/health")
+                    r.raise_for_status()
+                    payload=r.json()
+                    if payload.get("model")!=model_id or payload.get("revision")!=model["revision"]:
+                        raise ValueError("Backend identity mismatch")
+                return {"model":model_id,"state":"ready","probe_latency_ms":(time.monotonic()-start)*1000,
+                        "process":payload.get("process")}
+            except (TimeoutError,httpx.HTTPError,ValueError):
+                return {"model":model_id,"state":"unavailable","probe_latency_ms":None,"process":None}
+        rs=resource.getrusage(resource.RUSAGE_SELF)
+        return {"gateway":{"state":"ready","process":{"cpu_seconds":rs.ru_utime+rs.ru_stime,
+          "peak_rss_bytes":rs.ru_maxrss*(1 if sys.platform=="darwin" else 1024)}},
+          "backends":await asyncio.gather(*(probe(k,v) for k,v in MODELS.items() if v["mode"]=="server")),
+          "browser":"not monitored","note":"Point-in-time health only; not historical uptime"}
+    @app.get("/architecture",response_class=HTMLResponse)
+    def architecture():
+        return HTMLResponse(Path(__file__).with_name("architecture.html").read_text(),
+             headers={"Content-Security-Policy":"default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'","Cache-Control":"no-store"})
     @app.get("/dashboard",response_class=HTMLResponse)
     def dashboard():
         return HTMLResponse(Path(__file__).with_name("dashboard.html").read_text(),
